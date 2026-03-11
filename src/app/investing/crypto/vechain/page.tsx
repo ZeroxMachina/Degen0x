@@ -1,0 +1,110 @@
+import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import FAQSection from "@/components/FAQSection";
+import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: `How to Invest in VeChain (VET) ${CURRENT_YEAR} - Complete Guide`,
+  description: `Complete VeChain investment guide for ${CURRENT_YEAR}. Learn about VET fundamentals, supply chain tracking, sustainability, risks, and how to buy VeChain.`,
+  alternates: { canonical: "/investing/crypto/vechain" },
+};
+
+const faqs = [
+  { question: "Is VeChain a good investment?", answer: "VeChain has established real enterprise partnerships with major companies for supply chain management and sustainability tracking. Its dual-token model separates governance from transaction costs. However, enterprise blockchain adoption has been slower than initially expected, and VET faces competition from both other blockchains and traditional supply chain solutions. Real-world usage metrics should be closely monitored." },
+  { question: "What is VeChain's dual-token model?", answer: "VeChain uses two tokens: VET (the main value token used for staking and transfers) and VTHO (VeChainThor Energy, used to pay for transaction fees). Holding VET automatically generates VTHO over time. This model separates the speculative investment aspect (VET) from the utility cost of using the network (VTHO), providing more predictable transaction costs for enterprises." },
+  { question: "Which companies use VeChain?", answer: "VeChain has partnerships with Walmart China (food traceability), BMW (vehicle data), DNV (sustainability reporting), LVMH (luxury goods authentication), and many other enterprises. These partnerships use VeChain's blockchain for supply chain tracking, anti-counterfeiting, carbon footprint monitoring, and product lifecycle management. The VeChain ToolChain platform makes it easy for enterprises to integrate blockchain without deep technical expertise." },
+];
+
+export default function VeChainPage() {
+  return (
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "Crypto Investing", href: "/investing" },
+        { label: "VeChain", href: "/investing/crypto/vechain" },
+      ]} />
+
+      <header className="mb-8">
+        <h1 className="text-4xl font-bold text-white mb-4">
+          How to Invest in VeChain (VET) in {CURRENT_YEAR}
+        </h1>
+        <p className="text-lg text-[var(--color-text-secondary)]">
+          VeChain is an enterprise-focused blockchain platform specializing in supply chain
+          management, sustainability tracking, and real-world business applications. Its dual-token
+          model and enterprise partnerships make it a leader in blockchain-based supply chain solutions.
+        </p>
+        <p className="text-sm text-[var(--color-text-secondary)] mt-2">
+          Last updated: {CURRENT_MONTH} {CURRENT_YEAR}
+        </p>
+      </header>
+
+      <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
+        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">VET</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2018</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">86,712,634,466 VET</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Proof of Authority</p></div>
+        </div>
+      </div>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">What Is VeChain?</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          VeChain was founded in 2015 by Sunny Lu, former CIO of Louis Vuitton China, with a
+          vision to use blockchain technology to solve real-world supply chain and business problems.
+          The VeChainThor blockchain launched in 2018, using a Proof of Authority consensus mechanism
+          with 101 Authority Masternodes operated by vetted entities. This trade-off favors
+          throughput and reliability over maximum decentralization, which appeals to enterprise users.
+        </p>
+        <p className="text-[var(--color-text-secondary)]">
+          VeChain's ToolChain platform provides a blockchain-as-a-service solution that allows
+          enterprises to integrate blockchain tracking without building custom infrastructure. The
+          platform combines IoT hardware (NFC chips, RFID tags, QR codes) with on-chain data to
+          create verifiable product histories from manufacture to consumer. VeChain has increasingly
+          focused on sustainability use cases, partnering with DNV for carbon footprint tracking
+          and ESG reporting solutions.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          VeChain is used for supply chain traceability (tracking products from origin to consumer),
+          anti-counterfeiting (verifying authenticity of luxury goods, pharmaceuticals, and food),
+          sustainability reporting (carbon credit management and ESG compliance), and digital product
+          passports. The platform also supports DeFi through VeSwap, NFTs, and general-purpose
+          smart contracts. VET holders earn VTHO passively, which is consumed as gas for network
+          transactions.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          Enterprise blockchain adoption has progressed more slowly than expected, and many VeChain
+          partnerships have resulted in limited on-chain activity. The Proof of Authority consensus
+          model makes VeChain significantly more centralized than proof-of-stake or proof-of-work
+          networks. Competition from other enterprise blockchain solutions (Hedera, Hyperledger, and
+          traditional SaaS providers) is considerable. The large VET supply and dual-token model can
+          be confusing for new investors. Trading volume and exchange support in some regions have
+          been limited compared to top-10 cryptocurrencies.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">How to Buy VeChain</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          VET is available on exchanges including Binance, Crypto.com, KuCoin, and Gate.io. Note
+          that availability on US exchanges may be limited. After purchasing, VET can be stored in
+          the official VeChainThor wallet or Sync2 wallet, where it will automatically generate
+          VTHO over time. Trust Wallet and Ledger hardware wallets also support VET. Holding VET in
+          a compatible wallet ensures you receive VTHO generation rewards without any additional
+          action required.
+        </p>
+      </section>
+
+      <FAQSection faqs={faqs} />
+    </div>
+  );
+}

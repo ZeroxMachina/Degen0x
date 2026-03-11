@@ -1,0 +1,36 @@
+import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import ProductCard from "@/components/ProductCard";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import FAQSection from "@/components/FAQSection";
+import { Product, FAQ } from "@/lib/types";
+import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+
+export const metadata: Metadata = { title: `Best Crypto Margin Lending Platforms ${CURRENT_YEAR}`, description: `Compare the best crypto margin lending platforms in ${CURRENT_YEAR}. Leverage your positions with borrowed funds for amplified trading returns.` };
+
+const products: Product[] = [
+  { name: "Aave", slug: "aave-loans", rating: 4.7, description: "Aave enables leveraged DeFi positions through recursive borrowing loops. Deposit collateral, borrow, redeposit, and repeat to create leveraged exposure. eMode allows up to 97% LTV on correlated assets, enabling high leverage ratios.", pros: ["High LTV with eMode", "Multi-chain options", "No account or KYC", "Flash loans for efficient leverage"], cons: ["Manual loop creation", "Liquidation risk amplified", "Gas costs for each loop"], fees: "Variable borrow rates", bestFor: "DeFi leverage strategies", affiliateUrl: "https://cryptodegen.com/go/aave", category: "crypto-loans", featured: true },
+  { name: "dYdX", slug: "dydx", rating: 4.5, description: "dYdX is a decentralized perpetual exchange offering up to 20x leverage on crypto derivatives. The protocol operates its own appchain for fast, low-cost trading with an integrated lending and margin system for leveraged positions.", pros: ["Up to 20x leverage", "Own appchain for low costs", "Advanced order types", "Deep liquidity on major pairs"], cons: ["Derivatives-focused only", "Complex for beginners", "Limited spot assets"], fees: "Maker/taker fees", bestFor: "Leveraged derivatives traders", affiliateUrl: "https://cryptodegen.com/go/dydx", category: "crypto-loans" },
+];
+
+const faqs: FAQ[] = [
+  { question: "What is margin lending in crypto?", answer: "Margin lending involves borrowing funds to increase the size of your trading position beyond your initial capital. If you have $1,000 and use 3x leverage, you can open a $3,000 position. Both gains and losses are amplified, making margin trading significantly riskier than spot trading." },
+  { question: "How much leverage is available?", answer: "Leverage varies by platform and asset. DeFi lending protocols like Aave offer effective leverage of 2-5x through recursive borrowing. Derivatives platforms like dYdX offer up to 20x on perpetual contracts. Higher leverage means higher liquidation risk." },
+  { question: "What is the biggest risk of margin lending?", answer: "Liquidation. When the market moves against your leveraged position, losses are amplified. If your position value drops below the maintenance margin, it is forcibly closed at a loss. Higher leverage means a smaller adverse price move can trigger liquidation." },
+];
+
+export default function MarginLendingPage() {
+  return (
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "Margin Lending", href: "/crypto-loans/best/margin-lending" }]} />
+      <AffiliateDisclosure />
+      <h1 className="text-4xl font-bold text-white mb-4">Best Crypto Margin Lending ({CURRENT_YEAR})</h1>
+      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      <div className="prose prose-invert max-w-none mb-10">
+        <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">Margin lending allows traders to amplify their positions by borrowing additional funds. While this can multiply returns in favorable markets, it also amplifies losses and introduces liquidation risk. We compared the top platforms for crypto margin and leverage trading across both DeFi and CeFi options.</p>
+      </div>
+      <div className="space-y-4 mb-12">{products.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
+      <FAQSection faqs={faqs} />
+    </div>
+  );
+}

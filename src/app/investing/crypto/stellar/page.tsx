@@ -1,0 +1,109 @@
+import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import FAQSection from "@/components/FAQSection";
+import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: `How to Invest in Stellar (XLM) ${CURRENT_YEAR} - Complete Guide`,
+  description: `Complete Stellar investment guide for ${CURRENT_YEAR}. Learn about XLM fundamentals, cross-border payments, Soroban smart contracts, risks, and how to buy Stellar.`,
+  alternates: { canonical: "/investing/crypto/stellar" },
+};
+
+const faqs = [
+  { question: "Is Stellar a good investment?", answer: "Stellar focuses on financial inclusion and cross-border payments, with notable partnerships including MoneyGram integration. The launch of Soroban smart contracts expands Stellar's utility beyond payments into DeFi and tokenization. However, XLM faces intense competition from XRP, stablecoins, and newer payment networks. Its low transaction volume relative to competitors is a concern." },
+  { question: "How is Stellar different from XRP?", answer: "Both were co-founded by Jed McCaleb and focus on cross-border payments, but they differ significantly. Stellar targets individuals and underbanked populations with an open, permissionless network, while Ripple primarily targets institutional banking partners. Stellar uses the Stellar Consensus Protocol (SCP), and its Soroban smart contracts bring DeFi capabilities that XRP Ledger is only beginning to develop." },
+  { question: "What are Soroban smart contracts?", answer: "Soroban is Stellar's smart contract platform, launched in 2024. It brings programmable, Rust-based smart contracts to the Stellar network, enabling DeFi protocols, token issuance, decentralized applications, and more complex financial products. Soroban is designed to be developer-friendly while maintaining Stellar's low fees and fast transaction speeds." },
+];
+
+export default function StellarPage() {
+  return (
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "Crypto Investing", href: "/investing" },
+        { label: "Stellar", href: "/investing/crypto/stellar" },
+      ]} />
+
+      <header className="mb-8">
+        <h1 className="text-4xl font-bold text-white mb-4">
+          How to Invest in Stellar (XLM) in {CURRENT_YEAR}
+        </h1>
+        <p className="text-lg text-[var(--color-text-secondary)]">
+          Stellar is an open-source payment network designed to connect financial institutions and
+          enable low-cost cross-border transactions. With the addition of Soroban smart contracts,
+          Stellar is expanding into DeFi and tokenized asset infrastructure.
+        </p>
+        <p className="text-sm text-[var(--color-text-secondary)] mt-2">
+          Last updated: {CURRENT_MONTH} {CURRENT_YEAR}
+        </p>
+      </header>
+
+      <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
+        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">XLM</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2014</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">50,001,806,812 XLM</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Stellar Consensus Protocol (SCP)</p></div>
+        </div>
+      </div>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">What Is Stellar?</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          Stellar was founded in 2014 by Jed McCaleb (co-founder of Ripple) and Joyce Kim with a
+          mission to make financial services more accessible and affordable worldwide. The Stellar
+          network enables fast, low-cost cross-border payments and asset tokenization using the
+          Stellar Consensus Protocol, a federated Byzantine agreement mechanism that achieves
+          consensus without energy-intensive mining while settling transactions in 3-5 seconds.
+        </p>
+        <p className="text-[var(--color-text-secondary)]">
+          The Stellar Development Foundation (SDF), a non-profit organization, oversees the
+          development and growth of the network. Stellar has secured partnerships with MoneyGram
+          for cash-to-crypto on-ramps, and multiple financial institutions use the network for
+          stablecoin issuance and cross-border settlement. The launch of Soroban smart contracts
+          significantly expanded Stellar's capabilities, enabling developers to build DeFi
+          applications and complex financial products on the network.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          Stellar is used for cross-border payments and remittances with negligible fees, stablecoin
+          issuance and settlement (USDC is natively issued on Stellar), tokenization of real-world
+          assets including currencies and securities, and a built-in decentralized exchange for
+          trading issued assets. With Soroban, Stellar now supports DeFi protocols, lending,
+          automated market makers, and more complex programmable financial instruments. The
+          MoneyGram partnership enables cash on and off-ramps across 180 countries.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          Stellar faces significant competition in the payments space from XRP, stablecoins on other
+          networks, and traditional fintech solutions. The Soroban smart contract platform is new
+          and has a much smaller developer ecosystem than Ethereum, Solana, or Cosmos. XLM has
+          underperformed many competitors in previous market cycles. The large circulating supply
+          can dampen per-token price appreciation. Adoption metrics for Stellar's payment use cases
+          have grown slowly compared to initial expectations set by early partnerships.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Stellar</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          XLM is available on most major exchanges including Coinbase, Binance, Kraken, and Crypto.com.
+          It is also accessible through the Stellar network's built-in decentralized exchange. After
+          purchasing, XLM can be stored in wallets like Lobstr (the most popular Stellar wallet),
+          StellarX, hardware wallets like Ledger, or multi-asset wallets like Trust Wallet. Note
+          that Stellar accounts require a minimum balance of 1 XLM as a reserve to remain active on
+          the network.
+        </p>
+      </section>
+
+      <FAQSection faqs={faqs} />
+    </div>
+  );
+}

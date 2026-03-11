@@ -1,0 +1,38 @@
+import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import ComparisonTable from "@/components/ComparisonTable";
+import FAQSection from "@/components/FAQSection";
+import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import Link from "next/link";
+
+export const metadata: Metadata = { title: `Uniswap vs PancakeSwap (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Uniswap vs PancakeSwap DEX comparison for ${CURRENT_YEAR}. Trading volume, fees, supported chains, liquidity, and governance token investment compared.` };
+
+const items = [
+  { name: "Uniswap (UNI)", slug: "uniswap", rating: 4.6, affiliateUrl: "#", features: { "DEX Type": "Automated Market Maker (AMM)", "Trading Volume": "Largest DEX by volume", "Chains": "Ethereum, Arbitrum, Polygon, Optimism, Base, BNB +", "Concentrated Liquidity": "Yes (v3/v4)", "Swap Fees": "0.01% - 1% (pool-dependent)", "Frontend Fee": "0.25% (on app.uniswap.org)", "Governance": "UNI token voting", "Fee Switch": "Proposed but not activated", "UniswapX": "Intent-based routing for better prices", "Token Pairs": "Thousands (permissionless)" } },
+  { name: "PancakeSwap (CAKE)", slug: "pancakeswap", rating: 4.2, affiliateUrl: "#", features: { "DEX Type": "AMM + Order Book", "Trading Volume": "Top 3 DEX by volume", "Chains": "BNB Chain, Ethereum, Arbitrum, Base, zkSync +", "Concentrated Liquidity": "Yes (v3 fork)", "Swap Fees": "0.01% - 0.25%", "Frontend Fee": "None", "Governance": "CAKE staking + voting", "Fee Switch": "Active (revenue to CAKE buyback)", "UniswapX": "N/A", "Token Pairs": "Thousands (permissionless)" } },
+];
+
+const faqs = [
+  { question: "Why does Uniswap have more volume?", answer: "Uniswap processes the most DEX volume due to its dominance on Ethereum mainnet where the largest token trades occur, early deployment on major L2s, concentrated liquidity innovation, and UniswapX which aggregates liquidity sources for optimal execution. Ethereum's deep liquidity for blue-chip tokens naturally flows through Uniswap. Professional market makers and MEV-aware traders prefer Uniswap's established infrastructure." },
+  { question: "Does CAKE have better tokenomics than UNI?", answer: "In some ways, yes. CAKE has active value accrual — protocol revenue funds CAKE buybacks and burns, reducing supply. UNI's fee switch has been proposed but never activated, meaning UNI holders don't receive protocol revenue directly. However, UNI governs a larger treasury and more valuable protocol. CAKE's tokenomics are more immediately rewarding, but UNI's potential fee switch activation represents significant upside if governance approves it." },
+  { question: "Which DEX should I use?", answer: "Use Uniswap for trading on Ethereum mainnet and major L2s, especially for large trades where deep liquidity matters. PancakeSwap offers lower fees on BNB Chain and competitive rates on other chains. For casual traders, PancakeSwap's no-frontend-fee model saves 0.25% per trade compared to using the Uniswap web interface. For best execution on large trades, Uniswap's deeper liquidity and UniswapX routing generally wins." },
+];
+
+export default function Page() {
+  return (
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Uniswap vs PancakeSwap" }]} />
+      <AffiliateDisclosure />
+      <header className="mb-8"><h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Uniswap vs PancakeSwap ({CURRENT_YEAR})</h1><p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p></header>
+      <p className="text-lg text-[var(--color-text-secondary)] mb-8">The two largest decentralized exchanges by volume represent different approaches to DeFi trading. Uniswap pioneered the AMM model and leads in Ethereum ecosystem volume, while PancakeSwap built the dominant DEX on BNB Chain and expanded aggressively to multiple networks. Both protocols and their governance tokens offer distinct investment characteristics worth evaluating.</p>
+      <section className="mb-10"><ComparisonTable items={items} features={["DEX Type", "Trading Volume", "Chains", "Concentrated Liquidity", "Swap Fees", "Frontend Fee", "Governance", "Fee Switch", "UniswapX", "Token Pairs"]} title="Uniswap vs PancakeSwap" /></section>
+      <div className="prose-crypto mb-10">
+        <p>Uniswap&apos;s dominance stems from pioneering innovations that defined the DEX category. The v3 concentrated liquidity model dramatically improved capital efficiency, and UniswapX introduced intent-based trading that routes orders across multiple liquidity sources including private market makers for optimal execution. Uniswap&apos;s deployment on every major Ethereum L2 ensures it captures volume wherever Ethereum ecosystem users trade. The UNI token governs a substantial treasury and the protocol, with the unactivated fee switch representing latent value — if activated, it would direct a portion of the billions in annual trading fees to UNI holders, representing one of the largest potential value unlocks in DeFi.</p>
+        <p>PancakeSwap&apos;s competitive advantage is its value-first approach for everyday traders. No frontend fees, active CAKE buybacks from protocol revenue, and consistent feature delivery have built strong user loyalty on BNB Chain and beyond. PancakeSwap&apos;s multi-chain expansion to Ethereum, Arbitrum, Base, and zkSync demonstrates ambition beyond its BNB Chain roots. The CAKE tokenomics model with regular burns and staking rewards provides immediate, tangible value to token holders — a contrast with UNI&apos;s governance-only utility. For investors, UNI is a bet on the DEX category leader with enormous latent value if the fee switch activates. CAKE is a bet on a profitable, value-accruing DEX token at a lower market capitalization with active revenue distribution.</p>
+      </div>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/aave-vs-compound" className="text-blue-600 hover:underline">Aave vs Compound</Link></li><li><Link href="/investing/learn/yield-farming-vs-staking" className="text-blue-600 hover:underline">Yield Farming vs Staking</Link></li></ul></section>
+      <FAQSection faqs={faqs} />
+    </div>
+  );
+}

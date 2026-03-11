@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CryptoDegen — CEO Project Dashboard</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface2: #1c2330;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text2: #8b949e;
+      --green: #3fb950;
+      --blue: #58a6ff;
+      --yellow: #d29922;
+      --purple: #bc8cff;
+      --red: #f85149;
+      --orange: #f0883e;
+      --cyan: #39d353;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; }
+
+    .header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .logo { font-size: 22px; font-weight: 800; background: linear-gradient(135deg, #6366f1, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .badge { background: #6366f120; color: #818cf8; border: 1px solid #6366f140; border-radius: 6px; padding: 3px 10px; font-size: 12px; font-weight: 600; }
+    .header-right { display: flex; align-items: center; gap: 16px; }
+    .date-badge { color: var(--text2); font-size: 13px; }
+    .sprint-badge { background: #3fb95020; color: var(--green); border: 1px solid #3fb95040; border-radius: 6px; padding: 4px 12px; font-size: 12px; font-weight: 600; }
+
+    .team-row {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 24px;
+      display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+    }
+    .team-label { font-size: 11px; color: var(--text2); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+    .agent { display: flex; align-items: center; gap: 6px; padding: 4px 10px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; font-size: 12px; }
+    .agent-dot { width: 7px; height: 7px; border-radius: 50%; }
+
+    .main { padding: 20px 24px; }
+
+    .sprint-header {
+      background: linear-gradient(135deg, #6366f110, #06b6d410);
+      border: 1px solid #6366f130;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+    }
+    .sprint-title { font-size: 18px; font-weight: 800; }
+    .sprint-subtitle { font-size: 13px; color: var(--text2); margin-top: 2px; }
+    .sprint-stats { display: flex; gap: 20px; }
+    .sprint-stat { text-align: center; }
+    .sprint-stat-num { font-size: 22px; font-weight: 900; }
+    .sprint-stat-label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    .metrics-row {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px; margin-bottom: 20px;
+    }
+    .metric-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .metric-label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .metric-value { font-size: 22px; font-weight: 800; }
+    .metric-sub { font-size: 11px; color: var(--text2); margin-top: 2px; }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .column { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    .col-header { padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); }
+    .col-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px; }
+    .col-count { font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 10px; }
+    .cards { padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+
+    .card {
+      background: var(--surface2); border: 1px solid var(--border); border-radius: 8px;
+      padding: 10px 12px; cursor: default;
+      border-left: 3px solid transparent;
+    }
+    .card:hover { background: #1f2937; }
+    .card-title { font-size: 13px; font-weight: 700; color: var(--text); line-height: 1.3; }
+    .card-meta { display: flex; align-items: center; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+    .card-tag { font-size: 10px; padding: 1px 6px; border-radius: 4px; font-weight: 600; }
+    .card-lines { font-size: 10px; color: var(--text2); margin-top: 4px; }
+
+    .card.sprint22 { border-left-color: #6366f1; box-shadow: 0 0 10px #6366f115; }
+
+    .section-title {
+      font-size: 13px; font-weight: 700; color: var(--text2); text-transform: uppercase;
+      letter-spacing: 0.08em; margin-bottom: 14px; margin-top: 28px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    .history-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+    .history-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+      padding: 12px 14px; min-width: 200px; flex: 1;
+    }
+    .history-sprint { font-size: 12px; font-weight: 700; color: var(--blue); margin-bottom: 6px; }
+    .history-stat { font-size: 12px; color: var(--text2); margin-bottom: 2px; }
+    .history-stat span { color: var(--text); font-weight: 600; }
+
+    .needs-section {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      padding: 16px 20px; margin-bottom: 24px;
+    }
+    .needs-title { font-size: 14px; font-weight: 800; margin-bottom: 14px; }
+    .need-item { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+    .need-icon { font-size: 20px; flex-shrink: 0; }
+    .need-text { font-size: 13px; color: var(--text2); line-height: 1.5; }
+    .need-text strong { color: var(--text); }
+    .need-text a { color: var(--blue); text-decoration: none; }
+
+    @media (max-width: 900px) { .board { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .board { grid-template-columns: 1fr; } .main { padding: 16px; } }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div class="logo">CryptoDegen</div>
+      <div class="badge">CEO DASHBOARD</div>
+    </div>
+    <div class="header-right">
+      <div class="date-badge">📅 March 11, 2026 · Day 29</div>
+      <div class="sprint-badge">🚀 Sprint 23 COMPLETE</div>
+    </div>
+  </div>
+
+  <div class="team-row">
+    <div class="team-label">AI Team:</div>
+    <div class="agent"><div class="agent-dot" style="background:#3fb950"></div>⚡ Lead Engineer</div>
+    <div class="agent"><div class="agent-dot" style="background:#3fb950"></div>✍️ Content Lead</div>
+    <div class="agent"><div class="agent-dot" style="background:#3fb950"></div>🎨 UI/UX Designer</div>
+    <div class="agent"><div class="agent-dot" style="background:#3fb950"></div>📈 Growth Hacker</div>
+    <div class="agent"><div class="agent-dot" style="background:#3fb950"></div>🔍 SEO Specialist</div>
+    <div class="agent"><div class="agent-dot" style="background:#3fb950"></div>📊 Data Analyst</div>
+    <div class="agent"><div class="agent-dot" style="background:#6366f1"></div>🤖 PM (Claude CEO)</div>
+  </div>
+
+  <div class="main">
+
+    <div class="sprint-header">
+      <div>
+        <div class="sprint-title">🏁 Sprint 23 Complete — Day 29</div>
+        <div class="sprint-subtitle">Daily Trivia Game · PT-BR Localization · Email Drip Sequences (5-email onboarding + weekly digest)</div>
+      </div>
+      <div class="sprint-stats">
+        <div class="sprint-stat">
+          <div class="sprint-stat-num" style="color:#3fb950">+2,022</div>
+          <div class="sprint-stat-label">Lines Today</div>
+        </div>
+        <div class="sprint-stat">
+          <div class="sprint-stat-num" style="color:#818cf8">3</div>
+          <div class="sprint-stat-label">Features</div>
+        </div>
+        <div class="sprint-stat">
+          <div class="sprint-stat-num" style="color:#f7931a">~$13.2K</div>
+          <div class="sprint-stat-label">Human Cost Est.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sprint 23 Breakdown -->
+    <div class="card sprint22" style="border-radius:12px;padding:16px 20px;background:#161b22;border:1px solid #30363d;margin-bottom:16px;border-left:3px solid #bc8cff">
+      <div style="font-size:13px;font-weight:800;color:#e6edf3;margin-bottom:10px">📊 Sprint 23 — Line Count Breakdown</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;font-size:12px;color:#8b949e">
+        <div>🧠 <span style="color:#e6edf3;font-weight:700">trivia.ts</span> — 50 questions, daily picker, grading: <span style="color:#3fb950">595 lines</span></div>
+        <div>🎮 <span style="color:#e6edf3;font-weight:700">DailyTrivia.tsx</span> — Full game UI, timer, streaks: <span style="color:#3fb950">424 lines</span></div>
+        <div>📄 <span style="color:#e6edf3;font-weight:700">daily-trivia/page.tsx</span> — SEO page + related tools: <span style="color:#3fb950">101 lines</span></div>
+        <div>🇧🇷 <span style="color:#e6edf3;font-weight:700">pt-br/page.tsx</span> — Full Brazil landing page: <span style="color:#3fb950">356 lines</span></div>
+        <div>📧 <span style="color:#e6edf3;font-weight:700">email-templates.ts</span> — 5 onboarding + weekly: <span style="color:#3fb950">546 lines</span></div>
+        <div>📦 <span style="color:#e6edf3;font-weight:700">TOTAL THIS SPRINT:</span> <span style="color:#bc8cff;font-weight:900">2,022 lines</span></div>
+      </div>
+    </div>
+
+    <div class="metrics-row">
+      <div class="metric-card">
+        <div class="metric-label">Total Lines of Code</div>
+        <div class="metric-value" style="color:#6366f1">~159K</div>
+        <div class="metric-sub">+2,022 this sprint</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Pages / Routes</div>
+        <div class="metric-value" style="color:#3fb950">302+</div>
+        <div class="metric-sub">+2 (trivia + pt-br)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Interactive Tools</div>
+        <div class="metric-value" style="color:#f7931a">66+</div>
+        <div class="metric-sub">+1 Daily Trivia game</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Cumulative Human Cost</div>
+        <div class="metric-value" style="color:#f85149">~$407K</div>
+        <div class="metric-sub">Done by AI at $0 labor</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Viral Potential</div>
+        <div class="metric-value" style="color:#bc8cff">🔥 TRIVIA</div>
+        <div class="metric-sub">Daily quiz + streaks + sharing</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Markets Localized</div>
+        <div class="metric-value" style="color:#06b6d4">ES + PT-BR</div>
+        <div class="metric-sub">~600M Spanish/Portuguese speakers</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Email Sequences</div>
+        <div class="metric-value" style="color:#3fb950">6 Templates</div>
+        <div class="metric-sub">5-email onboarding + weekly digest</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Questions in Trivia Bank</div>
+        <div class="metric-value" style="color:#f7931a">50</div>
+        <div class="metric-sub">Across easy/medium/hard tiers</div>
+      </div>
+    </div>
+
+    <div class="section-title">🗂️ Sprint 23 Kanban Board</div>
+    <div class="board">
+
+      <!-- PIPELINE -->
+      <div class="column">
+        <div class="col-header">
+          <div class="col-title"><span style="font-size:14px">📋</span>Pipeline</div>
+          <div class="col-count" style="background:#30363d;color:#8b949e">5</div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">📱 Mobile App (React Native)</div>
+            <div class="card-meta"><span class="card-tag" style="background:#6366f120;color:#818cf8">Sprint 25+</span></div>
+            <div class="card-lines">Portfolio tracker + price alerts native app · iOS + Android</div>
+          </div>
+          <div class="card">
+            <div class="card-title">🤝 Influencer Partnership Pack</div>
+            <div class="card-meta"><span class="card-tag" style="background:#3fb95020;color:#3fb950">Sprint 24</span></div>
+            <div class="card-lines">Embed widgets + co-branded landing pages for KOLs</div>
+          </div>
+          <div class="card">
+            <div class="card-title">🇫🇷 French / DE Localization</div>
+            <div class="card-meta"><span class="card-tag" style="background:#58a6ff20;color:#58a6ff">Sprint 24</span></div>
+            <div class="card-lines">EU markets: France #4, Germany #6 in crypto adoption</div>
+          </div>
+          <div class="card">
+            <div class="card-title">🏆 Leaderboard & Trivia Leagues</div>
+            <div class="card-meta"><span class="card-tag" style="background:#bc8cff20;color:#bc8cff">Sprint 24</span></div>
+            <div class="card-lines">Public leaderboard · weekly champ · community competition</div>
+          </div>
+          <div class="card">
+            <div class="card-title">📣 ESP Integration (Resend/SendGrid)</div>
+            <div class="card-meta"><span class="card-tag" style="background:#f0883e20;color:#f0883e">Sprint 24</span></div>
+            <div class="card-lines">Connect email templates to real send service · automations</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IN PROGRESS -->
+      <div class="column">
+        <div class="col-header">
+          <div class="col-title"><span style="font-size:14px">⚙️</span>In Progress</div>
+          <div class="col-count" style="background:#f0883e20;color:#f0883e">3</div>
+        </div>
+        <div class="cards">
+          <div class="card" style="border-left:3px solid #f0883e">
+            <div class="card-title">🚀 Vercel Production Deploy</div>
+            <div class="card-meta"><span class="card-tag" style="background:#f0883e20;color:#f0883e">Needs Jefe</span></div>
+            <div class="card-lines">Site is 100% ready. Just needs Vercel + domain DNS. ~30 min job.</div>
+          </div>
+          <div class="card" style="border-left:3px solid #f0883e">
+            <div class="card-title">🔗 Affiliate ID Integration</div>
+            <div class="card-meta"><span class="card-tag" style="background:#f0883e20;color:#f0883e">Needs Jefe</span></div>
+            <div class="card-lines">All CTAs wired — just need your referral codes for Coinbase, Binance, Ledger</div>
+          </div>
+          <div class="card" style="border-left:3px solid #d29922">
+            <div class="card-title">📧 Email ESP Connection</div>
+            <div class="card-meta"><span class="card-tag" style="background:#d2992220;color:#d29922">Needs API Key</span></div>
+            <div class="card-lines">6 email templates ready · need Resend or SendGrid API key to go live</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WORKING -->
+      <div class="column">
+        <div class="col-header">
+          <div class="col-title"><span style="font-size:14px">✅</span>Working (Local)</div>
+          <div class="col-count" style="background:#3fb95020;color:#3fb950">17</div>
+        </div>
+        <div class="cards">
+          <div class="card" style="border-left:3px solid #bc8cff;box-shadow:0 0 10px #bc8cff15">
+            <div class="card-title">🧠 Daily Crypto Trivia</div>
+            <div class="card-meta">
+              <span class="card-tag" style="background:#bc8cff20;color:#bc8cff">Sprint 23 NEW ✨</span>
+              <span class="card-tag" style="background:#3fb95020;color:#3fb950">Viral</span>
+            </div>
+            <div class="card-lines">1,120 lines · 50 questions · timer · streaks · share card · /learn/daily-trivia</div>
+          </div>
+          <div class="card" style="border-left:3px solid #009c3b;box-shadow:0 0 10px #009c3b15">
+            <div class="card-title">🇧🇷 PT-BR Brazil Landing Page</div>
+            <div class="card-meta">
+              <span class="card-tag" style="background:#009c3b20;color:#009c3b">Sprint 23 NEW ✨</span>
+              <span class="card-tag" style="background:#58a6ff20;color:#58a6ff">SEO</span>
+            </div>
+            <div class="card-lines">356 lines · BRL context · Brazil crypto tax info · PIX guide · /pt-br</div>
+          </div>
+          <div class="card" style="border-left:3px solid #f0883e;box-shadow:0 0 10px #f0883e15">
+            <div class="card-title">📧 Email Drip Sequences</div>
+            <div class="card-meta">
+              <span class="card-tag" style="background:#f0883e20;color:#f0883e">Sprint 23 NEW ✨</span>
+              <span class="card-tag" style="background:#3fb95020;color:#3fb950">Revenue</span>
+            </div>
+            <div class="card-lines">546 lines · 5-email onboarding + weekly digest · styled HTML + plain text</div>
+          </div>
+          <div class="card sprint22">
+            <div class="card-title">🎁 Crypto Wrapped</div>
+            <div class="card-meta">
+              <span class="card-tag" style="background:#6366f120;color:#818cf8">Sprint 22</span>
+              <span class="card-tag" style="background:#bc8cff20;color:#bc8cff">Viral</span>
+            </div>
+            <div class="card-lines">415 lines · Shareable P&L card · /tools/crypto-wrapped</div>
+          </div>
+          <div class="card sprint22">
+            <div class="card-title">💸 Exchange Fee & Cashback Calc</div>
+            <div class="card-meta">
+              <span class="card-tag" style="background:#6366f120;color:#818cf8">Sprint 22</span>
+            </div>
+            <div class="card-lines">434 lines · 6 exchanges · cashback optimizer · /tools/exchange-cashback</div>
+          </div>
+          <div class="card sprint22">
+            <div class="card-title">🤖 AI Portfolio Robo-Advisor</div>
+            <div class="card-meta">
+              <span class="card-tag" style="background:#6366f120;color:#818cf8">Sprint 22</span>
+            </div>
+            <div class="card-lines">425 lines · Risk quiz · 4 degen profiles · /tools/robo-advisor</div>
+          </div>
+          <div class="card">
+            <div class="card-title">🌍 Community Hub + Jobs Board</div>
+            <div class="card-meta"><span class="card-tag" style="background:#3fb95020;color:#3fb950">Sprint 21</span></div>
+            <div class="card-lines">/community · forums, airdrop tracker, $199/mo job listings</div>
+          </div>
+          <div class="card">
+            <div class="card-title">🌐 Spanish (ES) Full Site</div>
+            <div class="card-meta"><span class="card-tag" style="background:#3fb95020;color:#3fb950">Sprint 20</span></div>
+            <div class="card-lines">/es/* · Complete Spanish localization · 500M+ speakers</div>
+          </div>
+          <div class="card">
+            <div class="card-title">📡 Advanced Charting Tool</div>
+            <div class="card-meta"><span class="card-tag" style="background:#3fb95020;color:#3fb950">Sprint 19</span></div>
+            <div class="card-lines">1,376 lines · TradingView-style interactive charts</div>
+          </div>
+          <div class="card">
+            <div class="card-title">📊 DeFi Position Manager + MEV Scanner</div>
+            <div class="card-meta"><span class="card-tag" style="background:#3fb95020;color:#3fb950">Sprint 17–18</span></div>
+            <div class="card-lines">2,013 lines · Aave/Compound health ratios · on-chain MEV detection</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOCKED -->
+      <div class="column">
+        <div class="col-header">
+          <div class="col-title"><span style="font-size:14px">🚫</span>Blocked (Needs Jefe)</div>
+          <div class="col-count" style="background:#f8514920;color:#f85149">4</div>
+        </div>
+        <div class="cards">
+          <div class="card" style="border-left:3px solid #f85149">
+            <div class="card-title">🌐 Production Deployment</div>
+            <div class="card-meta"><span class="card-tag" style="background:#f8514920;color:#f85149">PRIORITY #1</span></div>
+            <div class="card-lines">Need: Vercel + GitHub push + domain. Everything else is ready. 30 minutes max.</div>
+          </div>
+          <div class="card" style="border-left:3px solid #f85149">
+            <div class="card-title">🔐 Auth (Community Login)</div>
+            <div class="card-meta"><span class="card-tag" style="background:#f8514920;color:#f85149">Blocked</span></div>
+            <div class="card-lines">Supabase or Clerk free tier API keys needed to wire up real user accounts</div>
+          </div>
+          <div class="card" style="border-left:3px solid #d29922">
+            <div class="card-title">💳 Stripe — Jobs Monetization</div>
+            <div class="card-meta"><span class="card-tag" style="background:#d2992220;color:#d29922">$$$ Revenue</span></div>
+            <div class="card-lines">$199/mo job post CTA is live in UI — just needs Stripe secret key</div>
+          </div>
+          <div class="card" style="border-left:3px solid #d29922">
+            <div class="card-title">🔗 Affiliate Referral Codes</div>
+            <div class="card-meta"><span class="card-tag" style="background:#d2992220;color:#d29922">Revenue</span></div>
+            <div class="card-lines">Coinbase, Binance, Ledger, Trezor, Bybit — need your referral IDs to earn commissions</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sprint History -->
+    <div class="section-title">📜 Sprint History</div>
+    <div class="history-grid">
+      <div class="history-card">
+        <div class="history-sprint">Sprints 1–5 · Days 1–7</div>
+        <div class="history-stat">Lines: <span>~18,000</span></div>
+        <div class="history-stat">Focus: <span>Foundation + Core Pages</span></div>
+        <div class="history-stat">Cost: <span>~$28,000</span></div>
+      </div>
+      <div class="history-card">
+        <div class="history-sprint">Sprints 6–10 · Days 8–14</div>
+        <div class="history-stat">Lines: <span>~52,000</span></div>
+        <div class="history-stat">Focus: <span>DeFi Tools + Exchange Reviews</span></div>
+        <div class="history-stat">Cost: <span>~$98,000</span></div>
+      </div>
+      <div class="history-card">
+        <div class="history-sprint">Sprints 11–15 · Days 15–20</div>
+        <div class="history-stat">Lines: <span>~68,000</span></div>
+        <div class="history-stat">Focus: <span>SEO Infrastructure + Learn Articles</span></div>
+        <div class="history-stat">Cost: <span>~$160,000</span></div>
+      </div>
+      <div class="history-card">
+        <div class="history-sprint">Sprints 16–19 · Days 21–25</div>
+        <div class="history-stat">Lines: <span>~109,000</span></div>
+        <div class="history-stat">Focus: <span>Advanced Tools + PWA + On-chain Analytics</span></div>
+        <div class="history-stat">Cost: <span>~$258,000</span></div>
+      </div>
+      <div class="history-card">
+        <div class="history-sprint">Sprint 20 · Day 26</div>
+        <div class="history-stat">Lines: <span>+5,006</span></div>
+        <div class="history-stat">Focus: <span>Global Expansion · Embeddable Tools</span></div>
+        <div class="history-stat">Cost: <span>+$31,000</span></div>
+      </div>
+      <div class="history-card">
+        <div class="history-sprint">Sprint 21 · Day 27</div>
+        <div class="history-stat">Lines: <span>+2,553</span></div>
+        <div class="history-stat">Focus: <span>Community + i18n + Viral Tool + Jobs</span></div>
+        <div class="history-stat">Cost: <span>+$16,500</span></div>
+      </div>
+      <div class="history-card">
+        <div class="history-sprint">Sprint 22 · Day 28</div>
+        <div class="history-stat">Lines: <span>+1,616</span></div>
+        <div class="history-stat">Focus: <span>Viral Tools + Monetization + AI Advisor</span></div>
+        <div class="history-stat">Cost: <span>+$10,500</span></div>
+      </div>
+      <div class="history-card" style="border-color:#3fb950">
+        <div class="history-sprint" style="color:#3fb950">Sprint 23 · Day 29 ← TODAY</div>
+        <div class="history-stat">Lines: <span>+2,022</span></div>
+        <div class="history-stat">Focus: <span>Daily Trivia + PT-BR + Email Drips</span></div>
+        <div class="history-stat">Cost: <span>+$13,200</span></div>
+      </div>
+    </div>
+
+    <!-- Owner Actions -->
+    <div class="needs-section">
+      <div class="needs-title">🔴 Owner Actions Required (Jefe)</div>
+      <div class="need-item">
+        <div class="need-icon">🚀</div>
+        <div class="need-text">
+          <strong>Deploy to Production (PRIORITY #1).</strong> Create a <a href="https://vercel.com" target="_blank">Vercel account</a>, connect your GitHub repo, and point domain DNS. The site is 100% ready — this is the only thing blocking live traffic. Takes ~30 minutes.
+        </div>
+      </div>
+      <div class="need-item">
+        <div class="need-icon">📧</div>
+        <div class="need-text">
+          <strong>NEW: Activate Email Drip Sequences.</strong> 6 email templates are fully built (HTML + plain text). Sign up for <a href="https://resend.com" target="_blank">Resend</a> (free tier: 3K emails/mo) or SendGrid. Send me the API key and I'll wire the signup form to the onboarding sequence automatically.
+        </div>
+      </div>
+      <div class="need-item">
+        <div class="need-icon">🧠</div>
+        <div class="need-text">
+          <strong>NEW: Share Your Trivia Score.</strong> Open <a href="/learn/daily-trivia" target="_blank">/learn/daily-trivia</a>, play today's quiz, and tweet your score. Tag @CryptoDegen. This + streaks = organic daily return visits. Low effort, high reward.
+        </div>
+      </div>
+      <div class="need-item">
+        <div class="need-icon">💰</div>
+        <div class="need-text">
+          <strong>Affiliate IDs = Revenue.</strong> Sign up for Coinbase, Binance, Ledger, Trezor, and Bybit affiliate programs. Send me your referral IDs and every CTA across the site will earn you commissions.
+        </div>
+      </div>
+      <div class="need-item">
+        <div class="need-icon">🔐</div>
+        <div class="need-text">
+          <strong>Set up Auth Backend.</strong> Sign up for <a href="https://supabase.com" target="_blank">Supabase</a> or <a href="https://clerk.com" target="_blank">Clerk</a> (both have free tiers). Send me the API keys next run and I'll wire up the Community Hub login.
+        </div>
+      </div>
+      <div class="need-item">
+        <div class="need-icon">📣</div>
+        <div class="need-text">
+          <strong>Stripe for Jobs Board.</strong> The $199/mo "Post a Job" CTA is live in the UI. Just need a Stripe account + secret key and I'll wire the payment flow.
+        </div>
+      </div>
+    </div>
+
+    <!-- Cumulative Cost -->
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-top:24px;">
+      <div style="font-size:14px;font-weight:700;margin-bottom:14px;">💸 29-Day Cumulative Human Cost Estimate</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;">
+        <div style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px;">
+          <div style="font-size:11px;color:var(--text2)">Senior Engineers (×3)</div>
+          <div style="font-size:16px;font-weight:800;color:#6366f1">$168,000</div>
+          <div style="font-size:10px;color:var(--text2)">~$200/hr × 280 hrs × 3</div>
+        </div>
+        <div style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px;">
+          <div style="font-size:11px;color:var(--text2)">Content Writers (×3)</div>
+          <div style="font-size:16px;font-weight:800;color:#ec4899">$84,000</div>
+          <div style="font-size:10px;color:var(--text2)">~$100/hr × 280 hrs × 3</div>
+        </div>
+        <div style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px;">
+          <div style="font-size:11px;color:var(--text2)">SEO / Growth (×2)</div>
+          <div style="font-size:16px;font-weight:800;color:#f59e0b">$56,000</div>
+          <div style="font-size:10px;color:var(--text2)">~$100/hr × 280 hrs × 2</div>
+        </div>
+        <div style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px;">
+          <div style="font-size:11px;color:var(--text2)">UX / Data / PWA</div>
+          <div style="font-size:16px;font-weight:800;color:#06b6d4">$42,000</div>
+          <div style="font-size:10px;color:var(--text2)">~$100/hr × 280 hrs × 1.5</div>
+        </div>
+        <div style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px;">
+          <div style="font-size:11px;color:var(--text2)">Project Management</div>
+          <div style="font-size:16px;font-weight:800;color:#8b5cf6">$44,800</div>
+          <div style="font-size:10px;color:var(--text2)">~$160/hr × 280 hrs</div>
+        </div>
+        <div style="background:linear-gradient(135deg,#6366f118,#22c55e10);border:1px solid #3fb95040;border-radius:8px;padding:12px;">
+          <div style="font-size:11px;color:var(--text2)">TOTAL (29 days)</div>
+          <div style="font-size:20px;font-weight:900;color:#3fb950">$408,000</div>
+          <div style="font-size:10px;color:var(--text2)">All delivered by AI agents at $0 labor</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

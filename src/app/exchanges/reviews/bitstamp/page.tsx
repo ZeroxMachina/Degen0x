@@ -1,0 +1,78 @@
+import { Metadata } from "next";
+import ReviewPage from "@/components/ReviewPage";
+import { CURRENT_YEAR } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: `Bitstamp Review (${CURRENT_YEAR}) | CryptoDegen`,
+  description:
+    "Full Bitstamp review covering fees, features, security, and supported countries. One of the oldest crypto exchanges analyzed.",
+};
+
+export default function BitstampReviewPage() {
+  return (
+    <ReviewPage
+      product={{
+        name: "Bitstamp",
+        slug: "bitstamp",
+        rating: 4.0,
+        description:
+          "Bitstamp is one of the world&apos;s oldest cryptocurrency exchanges, founded in 2011 in Slovenia. Acquired by Robinhood in 2024, it offers a reliable, regulated trading experience across Europe, the US, and globally with a focus on simplicity and compliance.",
+        pros: [
+          "One of the longest-operating exchanges with 13+ year track record",
+          "Fully licensed across multiple jurisdictions including EU and US",
+          "Simple and intuitive interface suitable for all experience levels",
+        ],
+        cons: [
+          "Smaller selection of tokens compared to competitors",
+          "Higher fees for low-volume traders",
+        ],
+        bestFor: "Traders who prioritize regulatory compliance, security, and a proven long-term track record",
+        affiliateUrl: "#",
+        category: "exchange",
+      }}
+      categoryName="Exchanges"
+      categorySlug="exchanges"
+      overview="Bitstamp holds the distinction of being one of the oldest active cryptocurrency exchanges in the world. Founded in 2011, it has maintained a strong reputation for security and regulatory compliance throughout its history. The exchange operates with licenses in the EU, UK, and holds registrations for US operations. Following its acquisition by Robinhood in 2024, Bitstamp continues to serve as a trusted platform for both retail and institutional traders. The platform focuses on providing a reliable, straightforward trading experience rather than competing on feature count."
+      sections={[
+        { id: "features", title: "Features", content:
+            "Bitstamp offers spot trading with 80+ trading pairs, staking services, and institutional-grade API access. The platform features a clean trading interface with TradingView charts, limit/market/stop orders, and instant buy options for quick purchases. Bitstamp Earn provides staking rewards on select assets. The institutional arm offers OTC trading, custody solutions, and custom API integration for large clients.",
+        },
+        { id: "fees", title: "Fees", content:
+            "Bitstamp uses a volume-based fee structure. Spot trading fees start at 0.30% for taker and 0.20% for maker for monthly volumes under $10,000. Fees decrease with higher volume, reaching 0.03% taker and 0.00% maker at the highest tier. SEPA deposits are free, while card purchases incur a 5% fee. Crypto deposits are free, and withdrawal fees are competitive across supported networks.",
+        },
+        { id: "security", title: "Security", content:
+            "Bitstamp stores 95%+ of assets in cold storage using multi-signature technology. The exchange maintains insurance coverage through BitGo and implements comprehensive security measures including mandatory 2FA, advanced API key controls, and withdrawal confirmation requirements. Bitstamp has been SOC 2 Type 2 certified and undergoes regular third-party security audits. The platform experienced one significant breach in 2015 but fully covered all losses.",
+        },
+      ]}
+      fees={{
+        "Maker Fee": "0.20% - 0.00%",
+        "Taker Fee": "0.30% - 0.03%",
+        "SEPA Deposit": "Free",
+        "Card Purchase": "5%",
+        "Crypto Withdrawal": "Varies by asset",
+      }}
+      security={["95%+ cold storage", "SOC 2 Type 2 certified", "Insurance via BitGo", "Mandatory 2FA", "Multi-signature wallets", "Regular security audits"]}
+      features={["80+ trading pairs", "Staking services", "Institutional OTC desk", "TradingView charts", "Instant buy/sell", "Comprehensive API"]}
+      faqs={[
+        {
+          question: "Is Bitstamp regulated?",
+          answer:
+            "Yes, Bitstamp is one of the most regulated crypto exchanges. It holds a payment institution license in Luxembourg, is registered with FinCEN in the US, and has FCA registration in the UK. It is also MiCA-compliant in the EU.",
+        },
+        {
+          question: "Did Robinhood acquire Bitstamp?",
+          answer:
+            "Yes, Robinhood completed the acquisition of Bitstamp in 2024. The exchange continues to operate as a separate brand while benefiting from Robinhood&apos;s resources and US market presence.",
+        },
+      ]}
+      relatedReviews={[
+        { name: "Kraken", slug: "/exchanges/reviews/kraken" },
+        { name: "Bitfinex", slug: "/exchanges/reviews/bitfinex" },
+      ]}
+      relatedGuides={[
+        { title: "Bitstamp vs Kraken", href: "/exchanges/compare/bitstamp-vs-kraken" },
+        { title: "Crypto Order Types", href: "/exchanges/learn/crypto-order-types" },
+      ]}
+    />
+  );
+}

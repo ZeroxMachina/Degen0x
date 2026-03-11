@@ -1,0 +1,51 @@
+import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import ProductCard from "@/components/ProductCard";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import FAQSection from "@/components/FAQSection";
+import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: `Best Green & Sustainable Crypto (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  description: `Top environmentally sustainable cryptocurrencies in ${CURRENT_YEAR}. Energy-efficient blockchains and carbon-focused crypto projects.`,
+};
+
+const products = [
+  { name: "Ethereum (ETH)", slug: "ethereum", rating: 4.8, description: "Since transitioning to proof-of-stake in September 2022, Ethereum reduced its energy consumption by over 99.95%. The most impactful green transition in crypto history.", pros: ["99.95% energy reduction after The Merge", "Largest ecosystem on proof-of-stake", "Proven environmental commitment"], cons: ["Previously proof-of-work history", "Validator hardware still consumes some energy", "Indirect energy use from L2 infrastructure"], bestFor: "Sustainable smart contract platform investment", affiliateUrl: "#", category: "investing" },
+  { name: "Algorand (ALGO)", slug: "algorand", rating: 4.3, description: "Carbon-negative blockchain that offsets more carbon than its network produces. Pure proof-of-stake with minimal energy requirements and commitment to sustainability.", pros: ["Carbon-negative operations", "Extremely low energy per transaction", "Partnership with ClimateTrade"], cons: ["Smaller ecosystem", "Lower community engagement", "Foundation token sales concerns"], bestFor: "Carbon-negative blockchain investment", affiliateUrl: "#", category: "investing" },
+  { name: "Cardano (ADA)", slug: "cardano", rating: 4.2, description: "Energy-efficient proof-of-stake blockchain consuming a fraction of Bitcoin's energy. Academic approach to sustainability with research-driven development.", pros: ["Highly energy-efficient PoS consensus", "Academic sustainability research", "Growing DeFi ecosystem"], cons: ["Slower development velocity", "Smaller ecosystem than Ethereum", "Competition from other green chains"], bestFor: "Research-driven sustainable blockchain", affiliateUrl: "#", category: "investing" },
+  { name: "Hedera (HBAR)", slug: "hedera", rating: 4.1, description: "Hashgraph-based network with extremely low energy consumption per transaction. Carbon-negative through purchased offsets with ESG-focused corporate governance council.", pros: ["Ultra-low energy per transaction", "Corporate governance with ESG focus", "Carbon offset commitments"], cons: ["Centralized governance model", "Lower community engagement", "Complex technology differentiation"], bestFor: "Enterprise-grade sustainable distributed ledger", affiliateUrl: "#", category: "investing" },
+  { name: "Tezos (XTZ)", slug: "tezos", rating: 4.0, description: "Self-amending proof-of-stake blockchain with extremely low energy footprint. Used by major art institutions and brands for eco-friendly NFT creation.", pros: ["Very low energy consumption", "Self-amending governance", "Adopted by art and fashion brands for green NFTs"], cons: ["Declining ecosystem activity", "Competition from larger chains", "Limited DeFi growth"], bestFor: "Eco-friendly NFT and art platform", affiliateUrl: "#", category: "investing" },
+];
+
+const faqs = [
+  { question: "Is Bitcoin bad for the environment?", answer: "Bitcoin's proof-of-work mining consumes significant energy — roughly equivalent to a medium-sized country. However, an increasing portion (estimated 50-60%) uses renewable energy sources. The environmental impact is debated, with advocates arguing Bitcoin incentivizes renewable energy development in remote areas." },
+  { question: "Are proof-of-stake blockchains truly sustainable?", answer: "Proof-of-stake chains consume 99%+ less energy than proof-of-work. Ethereum's transition reduced its energy use from the equivalent of a small country to approximately 2,600 homes. While not zero-energy, PoS blockchains have a negligible environmental footprint compared to PoW alternatives." },
+  { question: "Can I invest in crypto carbon credits?", answer: "Yes. Protocols like Toucan Protocol and KlimaDAO tokenize carbon credits on blockchain. However, the quality and legitimacy of tokenized carbon credits varies, and the carbon credit market itself faces criticism about effectiveness. Research specific projects carefully before investing." },
+];
+
+export default function Page() {
+  return (
+    <main className="max-w-4xl mx-auto px-4 py-8">
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Green Crypto" }]} />
+      <AffiliateDisclosure />
+      <header className="mb-8">
+        <h1 className="text-3xl font-bold mb-2">Best Green &amp; Sustainable Crypto ({CURRENT_YEAR})</h1>
+        <p className="text-gray-600">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+        <p className="mt-4 text-lg">Environmentally sustainable cryptocurrencies for ESG-conscious investors. These blockchains prioritize energy efficiency and environmental responsibility while delivering strong technology fundamentals.</p>
+      </header>
+      <div className="space-y-6 mb-12">
+        {products.map((product, i) => (<ProductCard key={product.slug} product={product} rank={i + 1} categorySlug="investing" />))}
+      </div>
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Related Guides</h2>
+        <ul className="space-y-2">
+          <li><Link href="/investing/learn/crypto-valuation-methods" className="text-blue-600 hover:underline">Crypto Valuation Methods</Link></li>
+          <li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li>
+        </ul>
+      </section>
+      <FAQSection faqs={faqs} />
+    </main>
+  );
+}

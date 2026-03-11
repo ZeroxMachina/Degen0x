@@ -1,0 +1,51 @@
+import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import ProductCard from "@/components/ProductCard";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import FAQSection from "@/components/FAQSection";
+import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: `Best Crypto to Mine (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  description: `The most profitable cryptocurrencies to mine in ${CURRENT_YEAR}. Compare Bitcoin, Litecoin, Kaspa, and other mineable coins by profitability and hardware requirements.`,
+};
+
+const products = [
+  { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.8, description: "The original proof-of-work cryptocurrency and largest by market cap. Requires specialized ASIC hardware but offers the most liquid and established mining ecosystem.", pros: ["Most valuable and liquid mined coin", "Established mining infrastructure", "Predictable halving schedule"], cons: ["High ASIC hardware costs", "Dominated by large mining operations", "High electricity requirements"], bestFor: "Serious miners with capital for ASIC hardware", affiliateUrl: "#", category: "investing" },
+  { name: "Litecoin (LTC)", slug: "litecoin", rating: 4.3, description: "Uses the Scrypt algorithm which requires different ASIC hardware than Bitcoin. Lower entry costs and consistent mining rewards make it accessible to mid-scale operations.", pros: ["Lower hardware costs than Bitcoin mining", "Established and liquid", "Merged mining with Dogecoin possible"], cons: ["Lower value than Bitcoin", "Still requires ASIC hardware", "Declining block rewards"], bestFor: "Mid-scale mining operations with Scrypt ASICs", affiliateUrl: "#", category: "investing" },
+  { name: "Kaspa (KAS)", slug: "kaspa", rating: 4.4, description: "BlockDAG-based cryptocurrency with fast block times and growing ASIC mining ecosystem. One of the most profitable GPU and ASIC mineable coins with strong community.", pros: ["High profitability potential", "Growing ecosystem and adoption", "Fast block confirmation times"], cons: ["Newer project with less track record", "ASIC development changing GPU mining viability", "Volatile profitability"], bestFor: "Miners seeking high-growth potential coins", affiliateUrl: "#", category: "investing" },
+  { name: "Monero (XMR)", slug: "monero", rating: 4.5, description: "Privacy-focused cryptocurrency mineable with regular CPUs using the RandomX algorithm. ASIC-resistant design keeps mining accessible to individual participants.", pros: ["CPU mining viable", "ASIC-resistant algorithm", "Strong privacy features add demand"], cons: ["Regulatory risk due to privacy features", "Delisted from some exchanges", "Lower profitability per unit of hardware"], bestFor: "CPU miners and privacy advocates", affiliateUrl: "#", category: "investing" },
+  { name: "Ergo (ERG)", slug: "ergo", rating: 4.2, description: "UTXO-based smart contract platform using the Autolykos v2 GPU-mineable algorithm. Popular among GPU miners post-Ethereum merge with active DeFi development.", pros: ["GPU mineable with consumer cards", "Growing DeFi ecosystem", "Fair launch with no pre-mine"], cons: ["Smaller market cap and liquidity", "Less exchange support", "Profitability fluctuates"], bestFor: "GPU miners seeking smart contract platform exposure", affiliateUrl: "#", category: "investing" },
+];
+
+const faqs = [
+  { question: "Is crypto mining still profitable?", answer: "Mining profitability depends on electricity costs, hardware efficiency, and coin prices. With cheap electricity (under $0.06/kWh), Bitcoin ASIC mining can be profitable. GPU mining is less consistently profitable but offers flexibility to mine different coins. Always calculate expected costs versus revenue using mining profitability calculators before investing in hardware." },
+  { question: "Can I mine crypto on my regular computer?", answer: "Monero can be CPU-mined on regular computers, though profits are modest. GPU mining requires dedicated graphics cards. Bitcoin and Litecoin require specialized ASIC hardware that cannot be used for other purposes. Mining on a laptop or office computer is generally not profitable after electricity costs." },
+  { question: "What about mining pools?", answer: "Mining pools combine hashpower from many miners to find blocks more frequently, distributing rewards proportionally. Solo mining is impractical for most miners due to the time between finding blocks. Major pools include Foundry, Antpool, and F2Pool for Bitcoin, with similar options for other coins." },
+];
+
+export default function Page() {
+  return (
+    <main className="max-w-4xl mx-auto px-4 py-8">
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Crypto to Mine" }]} />
+      <AffiliateDisclosure />
+      <header className="mb-8">
+        <h1 className="text-3xl font-bold mb-2">Best Crypto to Mine ({CURRENT_YEAR})</h1>
+        <p className="text-gray-600">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+        <p className="mt-4 text-lg">Mining cryptocurrency remains a viable way to earn crypto, though profitability varies significantly by coin, hardware, and electricity costs. We evaluated mineable coins on profitability, hardware requirements, liquidity, and long-term potential.</p>
+      </header>
+      <div className="space-y-6 mb-12">
+        {products.map((product, i) => (<ProductCard key={product.slug} product={product} rank={i + 1} categorySlug="investing" />))}
+      </div>
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Related Guides</h2>
+        <ul className="space-y-2">
+          <li><Link href="/investing/learn/crypto-investment-risks" className="text-blue-600 hover:underline">Crypto Investment Risks</Link></li>
+          <li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li>
+        </ul>
+      </section>
+      <FAQSection faqs={faqs} />
+    </main>
+  );
+}

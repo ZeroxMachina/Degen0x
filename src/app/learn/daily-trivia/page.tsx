@@ -1,0 +1,101 @@
+import { Metadata } from "next";
+import DailyTrivia from "@/components/DailyTrivia";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Daily Crypto Trivia Quiz | Test Your Knowledge — CryptoDegen",
+  description:
+    "Play today's daily crypto trivia quiz. 10 questions on DeFi, Bitcoin, Ethereum, NFTs, trading, and blockchain. New quiz every day. Track your streak!",
+  openGraph: {
+    title: "Daily Crypto Trivia — CryptoDegen",
+    description: "10 crypto questions. 20 seconds each. New quiz daily. How much do you really know?",
+    type: "website",
+  },
+};
+
+export default function DailyTriviaPage() {
+  const today = new Date().toLocaleDateString("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  return (
+    <main className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      {/* Breadcrumb */}
+      <nav className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] mb-8">
+        <Link href="/" className="hover:text-[var(--color-primary)]">Home</Link>
+        <span>›</span>
+        <Link href="/learn" className="hover:text-[var(--color-primary)]">Learn</Link>
+        <span>›</span>
+        <span className="text-[var(--color-text)]">Daily Trivia</span>
+      </nav>
+
+      {/* Page Header */}
+      <div className="text-center mb-10">
+        <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-sm text-[var(--color-primary)] font-semibold mb-4">
+          🗓️ {today}
+        </div>
+        <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">
+          Daily Crypto Trivia
+        </h1>
+        <p className="text-[var(--color-text-secondary)] max-w-xl mx-auto text-lg">
+          10 hand-crafted questions on Bitcoin, DeFi, NFTs, trading, and blockchain history.
+          New quiz every day — build your streak!
+        </p>
+      </div>
+
+      {/* Game Component */}
+      <DailyTrivia />
+
+      {/* Info section */}
+      <section className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="glass p-6 text-center">
+          <div className="text-3xl mb-3">🎯</div>
+          <h3 className="font-bold text-[var(--color-text)] mb-2">Score System</h3>
+          <p className="text-sm text-[var(--color-text-secondary)]">
+            Easy questions earn 100 pts, Medium 200 pts, Hard 300 pts. Max score: 1,900 pts. Earn grade S for 90%+.
+          </p>
+        </div>
+        <div className="glass p-6 text-center">
+          <div className="text-3xl mb-3">🔥</div>
+          <h3 className="font-bold text-[var(--color-text)] mb-2">Daily Streaks</h3>
+          <p className="text-sm text-[var(--color-text-secondary)]">
+            Play every day to build your streak. Your streak is saved locally. Don't break the chain!
+          </p>
+        </div>
+        <div className="glass p-6 text-center">
+          <div className="text-3xl mb-3">📤</div>
+          <h3 className="font-bold text-[var(--color-text)] mb-2">Share Results</h3>
+          <p className="text-sm text-[var(--color-text-secondary)]">
+            Share your daily score card to Twitter/X or Telegram. Challenge your friends to beat your streak.
+          </p>
+        </div>
+      </section>
+
+      {/* Related tools */}
+      <section className="mt-12">
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Keep Learning</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {[
+            { title: "Crypto Glossary", href: "/learn/glossary", icon: "📖", desc: "223 crypto terms explained" },
+            { title: "Crypto for Beginners", href: "/learn/crypto-for-beginners", icon: "🎓", desc: "Complete beginner guide" },
+            { title: "What Is DeFi?", href: "/learn/what-is-defi", icon: "💰", desc: "DeFi explained simply" },
+            { title: "NFT Glossary", href: "/nfts/learn/nft-glossary", icon: "🖼️", desc: "Every NFT term decoded" },
+            { title: "Crypto Tax Guide", href: "/taxes/learn/crypto-tax-guide", icon: "🧾", desc: "Tax rules you need to know" },
+            { title: "Fear & Greed Index", href: "/tools/fear-greed-timeline", icon: "😱", desc: "Market sentiment tracker" },
+          ].map((item) => (
+            <Link key={item.href} href={item.href} className="glass p-4 card-hover flex items-start gap-3">
+              <span className="text-2xl">{item.icon}</span>
+              <div>
+                <div className="font-semibold text-sm text-[var(--color-text)]">{item.title}</div>
+                <div className="text-xs text-[var(--color-text-secondary)]">{item.desc}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}

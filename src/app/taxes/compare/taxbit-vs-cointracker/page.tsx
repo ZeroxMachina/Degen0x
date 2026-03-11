@@ -1,0 +1,76 @@
+import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import ComparisonTable from "@/components/ComparisonTable";
+import FAQSection from "@/components/FAQSection";
+import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import { TAX_COMPARISON_ITEMS, TAX_COMPARISON_FEATURES } from "@/data/taxes";
+
+export const metadata: Metadata = {
+  title: `TaxBit vs CoinTracker ${CURRENT_YEAR} - Crypto Tax Software Comparison`,
+  description: `Compare TaxBit vs CoinTracker for crypto tax reporting. Side-by-side comparison of pricing, features, integrations, and which is right for you.`,
+  alternates: { canonical: "/taxes/compare/taxbit-vs-cointracker" },
+};
+
+const items = TAX_COMPARISON_ITEMS.filter(i => ["taxbit", "cointracker"].includes(i.slug));
+
+const faqs = [
+  { question: "Is TaxBit better than CoinTracker?", answer: "It depends on your situation. TaxBit is free through partner exchanges and has enterprise-grade accuracy. CoinTracker offers better portfolio tracking, more integrations, and direct TurboTax integration. Choose TaxBit for free reports from supported exchanges; choose CoinTracker for broader coverage and TurboTax integration." },
+  { question: "Which has better TurboTax integration?", answer: "Both support TurboTax, but CoinTracker has a direct one-click integration. TaxBit generates compatible files that can be imported. CoinTracker's integration is smoother and requires fewer steps." },
+  { question: "Can I use both TaxBit and CoinTracker?", answer: "You could, but it adds complexity. Some users get free reports from TaxBit through their exchange and verify against another tool. However, using one comprehensive platform is generally simpler and reduces the risk of discrepancies between different software calculations." },
+];
+
+export default function TaxBitVsCoinTrackerPage() {
+  return (
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "Crypto Taxes", href: "/taxes" },
+        { label: "TaxBit vs CoinTracker", href: "/taxes/compare/taxbit-vs-cointracker" },
+      ]} />
+
+      <AffiliateDisclosure />
+
+      <h1 className="text-4xl font-bold text-white mb-4">TaxBit vs CoinTracker: Comparison for {CURRENT_YEAR}</h1>
+      <p className="text-lg text-[var(--color-text-secondary)] mb-2">
+        TaxBit offers free tax reports through exchange partnerships, while CoinTracker provides
+        superior portfolio tracking and TurboTax integration. Here is how they compare.
+      </p>
+      <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+
+      <div className="mb-12">
+        <ComparisonTable items={items} features={TAX_COMPARISON_FEATURES} title="TaxBit vs CoinTracker Comparison" />
+      </div>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">Key Differences</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          TaxBit's biggest advantage is cost: it is free through partner exchanges. If your
+          primary exchange is a TaxBit partner (Coinbase, Gemini, etc.), you can generate
+          accurate tax reports without paying anything. CoinTracker charges $59+ per year but
+          provides a more feature-rich experience with better portfolio tracking and wider
+          integration coverage.
+        </p>
+        <p className="text-[var(--color-text-secondary)]">
+          CoinTracker has significantly more integrations (500+ vs 100+) and supports more
+          advanced scenarios through its broader data import capabilities. For users with
+          activity across many exchanges and wallets, CoinTracker provides more comprehensive
+          coverage. TaxBit is stronger for users who consolidate trading on a single major
+          exchange.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">Our Recommendation</h2>
+        <p className="text-[var(--color-text-secondary)]">
+          Choose TaxBit if you trade primarily on a partner exchange and want free, accurate
+          tax reports. Choose CoinTracker if you need broader exchange coverage, direct TurboTax
+          integration, and portfolio tracking features. For the best overall value with the most
+          integrations, also consider Koinly as a third option.
+        </p>
+      </section>
+
+      <FAQSection faqs={faqs} />
+    </div>
+  );
+}

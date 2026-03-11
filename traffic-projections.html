@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CryptoDegen — Traffic & Revenue Projections</title>
+<style>
+  :root {
+    --bg: #0d1117; --surface: #161b22; --surface2: #1c2330;
+    --border: #30363d; --text: #e6edf3; --text2: #8b949e;
+    --green: #3fb950; --blue: #58a6ff; --yellow: #d29922;
+    --purple: #bc8cff; --red: #f85149; --orange: #f0883e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 32px 24px; }
+
+  h1 { font-size: 22px; font-weight: 800; margin-bottom: 6px; }
+  h1 span { background: linear-gradient(135deg, #6366f1, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .subtitle { color: var(--text2); font-size: 13px; margin-bottom: 28px; }
+
+  /* ── Assumptions box ── */
+  .assumptions {
+    display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px;
+  }
+  .pill {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 14px; font-size: 12px; color: var(--text2);
+  }
+  .pill strong { color: var(--text); }
+
+  /* ── Section label ── */
+  .section-label {
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--text2); margin-bottom: 10px; margin-top: 28px;
+  }
+
+  /* ── Table wrapper ── */
+  .tbl-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 8px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+
+  thead tr th {
+    background: var(--surface2); padding: 11px 16px;
+    text-align: center; font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.05em; color: var(--text2);
+    border-bottom: 1px solid var(--border);
+  }
+  thead tr th:first-child { text-align: left; }
+
+  /* column header rows */
+  .col-group th {
+    padding: 8px 16px; font-size: 12px; font-weight: 800;
+    border-bottom: 1px solid var(--border);
+  }
+  .col-0   { color: var(--text2); background: #8b949e10; }
+  .col-50  { color: #58a6ff; background: #58a6ff08; }
+  .col-100 { color: #bc8cff; background: #bc8cff08; }
+  .col-500 { color: #3fb950; background: #3fb95008; }
+
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: #ffffff05; }
+
+  td { padding: 12px 16px; vertical-align: top; }
+  td:first-child { font-weight: 700; color: var(--text); white-space: nowrap; }
+
+  /* time badge */
+  .time-badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 2px 8px; border-radius: 4px; margin-bottom: 2px;
+  }
+  .t1  { background: #8b949e20; color: var(--text2); }
+  .t3  { background: #58a6ff20; color: #58a6ff; }
+  .t6  { background: #bc8cff20; color: #bc8cff; }
+  .t12 { background: #3fb95020; color: #3fb950; }
+
+  .cell { text-align: center; }
+  .visits { font-size: 15px; font-weight: 800; display: block; margin-bottom: 3px; }
+  .impr   { font-size: 11px; color: var(--text2); margin-bottom: 5px; display: block; }
+  .rev    { font-size: 12px; font-weight: 700; display: block; }
+  .rev-range { font-size: 10px; color: var(--text2); display: block; margin-top: 1px; }
+
+  /* color shading by scenario */
+  .c0   .visits { color: var(--text2); }
+  .c0   .rev    { color: #8b949e; }
+  .c50  .visits { color: #58a6ff; }
+  .c50  .rev    { color: #58a6ff; }
+  .c100 .visits { color: #bc8cff; }
+  .c100 .rev    { color: #bc8cff; }
+  .c500 .visits { color: #3fb950; }
+  .c500 .rev    { color: #3fb950; }
+
+  /* highlight best-case cells */
+  .highlight { background: #3fb95008; }
+
+  /* ── Notes ── */
+  .notes {
+    margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+  }
+  .note {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 14px 16px; font-size: 12px; color: var(--text2); line-height: 1.6;
+  }
+  .note strong { color: var(--text); display: block; margin-bottom: 5px; }
+
+  /* ── Revenue summary bar ── */
+  .rev-bar {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 28px;
+  }
+  .rev-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 14px 16px; text-align: center;
+  }
+  .rev-card .label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+  .rev-card .yr-rev { font-size: 20px; font-weight: 900; }
+  .rev-card .yr-sub { font-size: 11px; color: var(--text2); margin-top: 3px; }
+
+  footer { margin-top: 32px; text-align: center; font-size: 11px; color: #30363d; }
+</style>
+</head>
+<body>
+
+<h1><span>CryptoDegen</span> — Traffic & Revenue Projections</h1>
+<p class="subtitle">Organic search projections by backlink count · 2,198 pages · Crypto niche · Based on industry benchmarks</p>
+
+<!-- Assumptions -->
+<div class="assumptions">
+  <div class="pill">📄 <strong>2,198 pages</strong> indexed</div>
+  <div class="pill">🔍 <strong>RPM:</strong> $80 conservative · $150 mid · $300 optimistic</div>
+  <div class="pill">🔗 <strong>Backlink quality:</strong> DA 30–60 referring domains assumed</div>
+  <div class="pill">📊 <strong>CTR avg:</strong> 1–3% (new domain) → 3–6% (with authority)</div>
+  <div class="pill">💰 <strong>Revenue column</strong> uses $150 RPM mid estimate</div>
+  <div class="pill">🚫 <strong>Google sandbox:</strong> ~3–5 month trust-building period for new domains</div>
+</div>
+
+<!-- Year-1 revenue summary cards -->
+<div class="section-label">📈 Year 1 Monthly Revenue Potential (Month 12)</div>
+<div class="rev-bar">
+  <div class="rev-card">
+    <div class="label">0 Backlinks</div>
+    <div class="yr-rev" style="color:var(--text2)">$5K–$15K</div>
+    <div class="yr-sub">per month · year 1</div>
+  </div>
+  <div class="rev-card">
+    <div class="label">50 Backlinks</div>
+    <div class="yr-rev" style="color:#58a6ff">$15K–$45K</div>
+    <div class="yr-sub">per month · year 1</div>
+  </div>
+  <div class="rev-card">
+    <div class="label">100 Backlinks</div>
+    <div class="yr-rev" style="color:#bc8cff">$35K–$90K</div>
+    <div class="yr-sub">per month · year 1</div>
+  </div>
+  <div class="rev-card">
+    <div class="label">500 Backlinks</div>
+    <div class="yr-rev" style="color:#3fb950">$100K–$225K</div>
+    <div class="yr-sub">per month · year 1</div>
+  </div>
+</div>
+
+<!-- Main table -->
+<div class="section-label">🗺️ Full Projections — Visits / Impressions / Revenue by Period</div>
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr class="col-group">
+        <th style="text-align:left;background:var(--surface2);border-bottom:1px solid var(--border);color:var(--text2);">Time Period</th>
+        <th class="col-0"  colspan="1">0 Backlinks<br/><span style="font-weight:400;font-size:10px;">No link building · organic only</span></th>
+        <th class="col-50" colspan="1">50 Backlinks<br/><span style="font-weight:400;font-size:10px;">1–2 links/week from relevant sites</span></th>
+        <th class="col-100" colspan="1">100 Backlinks<br/><span style="font-weight:400;font-size:10px;">Active outreach + content marketing</span></th>
+        <th class="col-500" colspan="1">500 Backlinks<br/><span style="font-weight:400;font-size:10px;">PR + partnerships + aggressive growth</span></th>
+      </tr>
+      <tr>
+        <th style="text-align:left;">Month</th>
+        <th>Visits · Impressions · Revenue/mo</th>
+        <th>Visits · Impressions · Revenue/mo</th>
+        <th>Visits · Impressions · Revenue/mo</th>
+        <th>Visits · Impressions · Revenue/mo</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- Month 1 -->
+      <tr>
+        <td>
+          <span class="time-badge t1">Month 1</span><br/>
+          <span style="font-size:11px;color:var(--text2);">Google crawling &amp; indexing.<br/>Sandbox effect at peak.</span>
+        </td>
+        <td class="cell c0">
+          <span class="visits">500–1,500</span>
+          <span class="impr">~40K impressions</span>
+          <span class="rev">$60–$225</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c50">
+          <span class="visits">2,000–5,000</span>
+          <span class="impr">~120K impressions</span>
+          <span class="rev">$240–$750</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c100">
+          <span class="visits">5,000–12,000</span>
+          <span class="impr">~300K impressions</span>
+          <span class="rev">$600–$1,800</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c500 highlight">
+          <span class="visits">20,000–45,000</span>
+          <span class="impr">~1.2M impressions</span>
+          <span class="rev">$2,400–$6,750</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+      </tr>
+
+      <!-- Month 3 -->
+      <tr>
+        <td>
+          <span class="time-badge t3">Month 3</span><br/>
+          <span style="font-size:11px;color:var(--text2);">Sandbox lifting.<br/>Long-tail starting to rank.</span>
+        </td>
+        <td class="cell c0">
+          <span class="visits">3,000–8,000</span>
+          <span class="impr">~200K impressions</span>
+          <span class="rev">$360–$1,200</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c50">
+          <span class="visits">12,000–25,000</span>
+          <span class="impr">~600K impressions</span>
+          <span class="rev">$1,440–$3,750</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c100">
+          <span class="visits">25,000–55,000</span>
+          <span class="impr">~1.4M impressions</span>
+          <span class="rev">$3,000–$8,250</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c500 highlight">
+          <span class="visits">100,000–220,000</span>
+          <span class="impr">~5M impressions</span>
+          <span class="rev">$12,000–$33,000</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+      </tr>
+
+      <!-- Month 6 -->
+      <tr>
+        <td>
+          <span class="time-badge t6">Month 6</span><br/>
+          <span style="font-size:11px;color:var(--text2);">Mid-tail keywords<br/>hitting page 1–2. Compounding.</span>
+        </td>
+        <td class="cell c0">
+          <span class="visits">15,000–35,000</span>
+          <span class="impr">~900K impressions</span>
+          <span class="rev">$1,800–$5,250</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c50">
+          <span class="visits">45,000–90,000</span>
+          <span class="impr">~2.5M impressions</span>
+          <span class="rev">$5,400–$13,500</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c100">
+          <span class="visits">90,000–180,000</span>
+          <span class="impr">~5M impressions</span>
+          <span class="rev">$10,800–$27,000</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c500 highlight">
+          <span class="visits">350,000–700,000</span>
+          <span class="impr">~18M impressions</span>
+          <span class="rev">$42,000–$105,000</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+      </tr>
+
+      <!-- Month 12 -->
+      <tr>
+        <td>
+          <span class="time-badge t12">Month 12</span><br/>
+          <span style="font-size:11px;color:var(--text2);">High-volume KWs in reach.<br/>Site authority established.</span>
+        </td>
+        <td class="cell c0">
+          <span class="visits">50,000–120,000</span>
+          <span class="impr">~3M impressions</span>
+          <span class="rev">$6,000–$18,000</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c50">
+          <span class="visits">120,000–250,000</span>
+          <span class="impr">~7M impressions</span>
+          <span class="rev">$14,400–$37,500</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c100">
+          <span class="visits">250,000–550,000</span>
+          <span class="impr">~15M impressions</span>
+          <span class="rev">$30,000–$82,500</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+        <td class="cell c500 highlight">
+          <span class="visits">800,000–1,800,000</span>
+          <span class="impr">~45M impressions</span>
+          <span class="rev">$96,000–$270,000</span>
+          <span class="rev-range">$80–$300 RPM range</span>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<!-- How to get backlinks -->
+<div class="section-label">🔗 How to Get the Backlinks</div>
+<div class="notes">
+  <div class="note">
+    <strong>0 → 50 links (Month 1–3)</strong>
+    Submit to crypto directories (CoinGecko, CoinMarketCap), post on Reddit r/CryptoCurrency with tools, add to Product Hunt, publish 2–3 "data studies" (e.g. "Which exchange is cheapest in 2026?") — these get picked up organically.
+  </div>
+  <div class="note">
+    <strong>50 → 100 links (Month 3–6)</strong>
+    Guest posts on mid-DA crypto blogs, outreach to journalists covering crypto tools, get listed on "best crypto resources" roundups, sponsor a small crypto newsletter (often includes a do-follow link).
+  </div>
+  <div class="note">
+    <strong>100 → 500 links (Month 6–12)</strong>
+    One piece of linkable data content (e.g. "State of Crypto Fees 2026 Report") can earn 50–200 links alone. PR to TechCrunch/CoinDesk/Decrypt, partnerships with exchange affiliate programs (they often feature partners), YouTube channel linking back to tools.
+  </div>
+  <div class="note">
+    <strong>Quality over quantity</strong>
+    1 link from CoinDesk (DA 80) beats 50 links from random blogs. Focus on crypto-specific sites, finance publishers, and tools directories. Avoid link farms — Google penalises these fast in YMYL (finance) niches.
+  </div>
+</div>
+
+<!-- Revenue summary table -->
+<div class="section-label">💰 Annual Revenue Summary (Year 1, Mid RPM $150)</div>
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:left;">Scenario</th>
+        <th>Month 1</th>
+        <th>Month 3</th>
+        <th>Month 6</th>
+        <th>Month 12</th>
+        <th>Year 1 Total (est.)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="color:var(--text2);">0 Backlinks</td>
+        <td class="cell" style="color:var(--text2);">~$150</td>
+        <td class="cell" style="color:var(--text2);">~$750</td>
+        <td class="cell" style="color:var(--text2);">~$3,750</td>
+        <td class="cell" style="color:var(--text2);">~$12,750</td>
+        <td class="cell" style="color:var(--text2);font-weight:700;">~$25,000</td>
+      </tr>
+      <tr>
+        <td style="color:#58a6ff;">50 Backlinks</td>
+        <td class="cell" style="color:#58a6ff;">~$525</td>
+        <td class="cell" style="color:#58a6ff;">~$2,775</td>
+        <td class="cell" style="color:#58a6ff;">~$10,125</td>
+        <td class="cell" style="color:#58a6ff;">~$28,125</td>
+        <td class="cell" style="color:#58a6ff;font-weight:700;">~$90,000</td>
+      </tr>
+      <tr>
+        <td style="color:#bc8cff;">100 Backlinks</td>
+        <td class="cell" style="color:#bc8cff;">~$1,275</td>
+        <td class="cell" style="color:#bc8cff;">~$6,000</td>
+        <td class="cell" style="color:#bc8cff;">~$20,700</td>
+        <td class="cell" style="color:#bc8cff;">~$60,000</td>
+        <td class="cell" style="color:#bc8cff;font-weight:700;">~$190,000</td>
+      </tr>
+      <tr class="highlight">
+        <td style="color:#3fb950;">500 Backlinks</td>
+        <td class="cell" style="color:#3fb950;">~$4,875</td>
+        <td class="cell" style="color:#3fb950;">~$24,000</td>
+        <td class="cell" style="color:#3fb950;">~$78,750</td>
+        <td class="cell" style="color:#3fb950;">~$186,750</td>
+        <td class="cell" style="color:#3fb950;font-weight:700;">~$600,000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>CryptoDegen Traffic Projections · March 2026 · Based on crypto niche benchmarks, Ahrefs/SemRush case studies, and similar affiliate sites at comparable content scale. Actual results vary.</footer>
+
+</body>
+</html>

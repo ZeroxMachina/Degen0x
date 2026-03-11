@@ -1,0 +1,145 @@
+import type { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import ProductCard from "@/components/ProductCard";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import FAQSection from "@/components/FAQSection";
+import { exchanges } from "@/data/exchanges";
+import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: `Best Crypto Exchanges in Australia (${CURRENT_YEAR})`,
+  description: `Compare the best crypto exchanges for Australians in ${CURRENT_YEAR}. AUSTRAC-registered platforms with AUD deposits via PayID and bank transfer, low fees, and strong security.`,
+  keywords: [
+    "best crypto exchanges Australia",
+    "Australian crypto exchanges",
+    "buy crypto Australia",
+    "AUSTRAC registered crypto exchange",
+    "best cryptocurrency exchange Australia",
+  ],
+};
+
+const australiaExchanges = [
+  exchanges.find((e) => e.slug === "kraken")!,
+  exchanges.find((e) => e.slug === "coinbase")!,
+  exchanges.find((e) => e.slug === "binance")!,
+  exchanges.find((e) => e.slug === "crypto-com")!,
+  exchanges.find((e) => e.slug === "gemini")!,
+];
+
+const faqs = [
+  {
+    question: "Which crypto exchanges are registered with AUSTRAC?",
+    answer:
+      "All crypto exchanges operating in Australia must be registered with AUSTRAC (Australian Transaction Reports and Analysis Centre). Major registered exchanges include Kraken, Coinbase, Binance Australia, Crypto.com, and several local Australian exchanges like CoinSpot and Swyftx.",
+  },
+  {
+    question: "Can I deposit AUD on crypto exchanges?",
+    answer:
+      "Yes. Most exchanges serving Australian users accept AUD deposits via PayID/Osko (instant, free), bank transfer (1-2 business days, free), POLi payments, and debit cards. PayID is the fastest and most cost-effective method for Australian users.",
+  },
+  {
+    question: "Do I pay tax on crypto in Australia?",
+    answer:
+      "Yes. The ATO treats cryptocurrency as property subject to Capital Gains Tax (CGT). If you hold crypto for over 12 months, you receive a 50% CGT discount. Crypto-to-crypto trades, selling for AUD, and using crypto for purchases are all taxable events.",
+  },
+  {
+    question: "What is the cheapest crypto exchange in Australia?",
+    answer:
+      "Kraken and Binance Australia offer the lowest trading fees, typically starting at 0.1-0.26% per trade. Local exchanges like CoinSpot charge higher fees (around 0.1% for market orders) but offer a simpler experience and dedicated Australian support.",
+  },
+  {
+    question: "Are there Australian-owned crypto exchanges?",
+    answer:
+      "Yes. CoinSpot (Melbourne-based) and Swyftx (Brisbane-based) are popular Australian-owned exchanges. They offer AUD trading pairs, Australian customer support, and integration with Australian tax software. However, global exchanges often have lower fees.",
+  },
+  {
+    question: "Can I use crypto ETFs in my super fund in Australia?",
+    answer:
+      "Some self-managed super funds (SMSFs) can invest in crypto ETFs or directly hold cryptocurrency, though strict compliance rules apply. Consult a financial advisor familiar with SMSF regulations before adding crypto to your retirement fund.",
+  },
+];
+
+export default function AustraliaExchangesPage() {
+  return (
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Exchanges", href: "/exchanges" },
+          { label: "Best Exchanges", href: "/exchanges/best" },
+          { label: "Best in Australia", href: "/exchanges/best/australia" },
+        ]}
+      />
+
+      <h1 className="text-4xl font-bold text-white mb-4">
+        Best Crypto Exchanges in Australia ({CURRENT_YEAR})
+      </h1>
+      <p className="text-sm text-[var(--color-text-secondary)] mb-6">
+        Last updated: {CURRENT_MONTH} {CURRENT_YEAR}
+      </p>
+
+      <AffiliateDisclosure />
+
+      <div className="prose prose-invert max-w-none mb-10">
+        <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
+          Australia has one of the highest crypto adoption rates in the Asia-Pacific region,
+          and the regulatory environment is becoming increasingly clear. AUSTRAC registration
+          is mandatory for all exchanges, and the government has been developing comprehensive
+          crypto licensing frameworks. Australian users benefit from instant AUD deposits via
+          PayID and access to both global and local exchanges.
+        </p>
+        <h2 className="text-xl font-bold text-white mt-8 mb-4">Australian Regulatory Landscape</h2>
+        <p className="text-[var(--color-text-secondary)] leading-relaxed">
+          AUSTRAC registration is the baseline requirement for operating a crypto exchange in
+          Australia. Beyond this, the Australian government has been working on a comprehensive
+          licensing framework that would add requirements around capital adequacy, custody
+          standards, and consumer protection. The ATO has also been proactive in crypto tax
+          enforcement, using data-matching programs with exchanges to identify unreported gains.
+        </p>
+        <h2 className="text-xl font-bold text-white mt-8 mb-4">Global vs Local Exchanges</h2>
+        <p className="text-[var(--color-text-secondary)] leading-relaxed">
+          Australian users can choose between global exchanges like Kraken and Coinbase (lower
+          fees, more trading pairs) and local platforms like CoinSpot and Swyftx (Australian
+          support, simpler experience, local tax integration). For most traders, the lower fees
+          on global exchanges outweigh the convenience of local ones, but beginners may prefer
+          the simplicity of Australian-owned platforms.
+        </p>
+      </div>
+
+      <div className="space-y-4 mb-12">
+        {australiaExchanges.map((exchange, index) => (
+          <ProductCard
+            key={exchange.slug}
+            product={exchange}
+            rank={index + 1}
+            categorySlug="exchanges"
+          />
+        ))}
+      </div>
+
+      <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
+        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods for Australian Users</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
+            <h3 className="text-white font-semibold mb-2">PayID / Osko</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">Instant, free AUD deposits. Supported by most exchanges. The best option for Australians.</p>
+          </div>
+          <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
+            <h3 className="text-white font-semibold mb-2">Bank Transfer (NPP)</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">Free on most platforms. Takes minutes to hours via the New Payments Platform.</p>
+          </div>
+          <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
+            <h3 className="text-white font-semibold mb-2">POLi Payments</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">Online bank payment system. Low or no fees. Supported on some local exchanges.</p>
+          </div>
+          <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
+            <h3 className="text-white font-semibold mb-2">Debit / Credit Card</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">Instant purchase. 2-3.5% fee. Visa and Mastercard accepted on major exchanges.</p>
+          </div>
+        </div>
+      </section>
+
+      <FAQSection faqs={faqs} />
+    </div>
+  );
+}

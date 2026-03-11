@@ -1,0 +1,40 @@
+import type { Metadata } from "next";
+import LearnPageLayout from "@/components/LearnPage";
+import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: `Crypto Travel Rule Explained (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  description: "Guide to the crypto travel rule including FATF requirements, how it works, implementation challenges, and what it means for cryptocurrency transfers.",
+  keywords: ["crypto travel rule", "FATF travel rule", "crypto compliance", "VASP transfer", "cryptocurrency AML", "travel rule crypto"],
+};
+
+export default function CryptoTravelRulePage() {
+  return (
+    <LearnPageLayout title="Crypto Travel Rule Explained" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="The travel rule is a regulatory requirement that mandates financial institutions to share sender and recipient information when transferring funds above certain thresholds. Applied to cryptocurrency, it requires exchanges and virtual asset service providers (VASPs) to share customer identity data with each other during transfers. This rule has significant implications for crypto privacy and operational complexity."
+      toc={[
+        { id: "what-is-it", title: "What Is the Travel Rule?", level: 2 },
+        { id: "how-it-works", title: "How It Works in Crypto", level: 2 },
+        { id: "implementation", title: "Implementation Challenges", level: 2 },
+        { id: "solutions", title: "Technical Solutions", level: 2 },
+        { id: "user-impact", title: "Impact on Users", level: 2 },
+      ]}
+      faqs={[
+        { question: "What is the transfer threshold?", answer: "The FATF recommends applying the travel rule to transfers exceeding $1,000 USD or equivalent. However, individual jurisdictions may set lower thresholds. Some jurisdictions apply it to all transfers regardless of amount. The EU's Transfer of Funds Regulation applies the travel rule to all crypto transfers without a minimum threshold." },
+        { question: "Does the travel rule apply to self-hosted wallets?", answer: "The treatment of self-hosted (non-custodial) wallet transfers varies by jurisdiction. Some regulations require VASPs to collect additional information when customers transfer to self-hosted wallets. Others require proof of wallet ownership. The EU requires VASPs to verify self-hosted wallet ownership for transfers above certain thresholds." },
+        { question: "Does the travel rule affect privacy?", answer: "The travel rule requires sharing personal information between service providers, which does reduce transactional privacy. This is a deliberate regulatory design intended to create transparency for AML purposes. Privacy-preserving compliance solutions are being developed but the fundamental requirement to share identity data remains." },
+      ]}
+      relatedArticles={[
+        { title: "AML/KYC in Crypto", href: "/learn/aml-kyc-crypto-guide", category: "Learn" },
+        { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation-2026", category: "Learn" },
+        { title: "Crypto Licensing Guide", href: "/learn/crypto-licensing-guide", category: "Learn" },
+        { title: "Self-Custody Guide", href: "/learn/self-custody-guide", category: "Learn" },
+      ]}
+    >
+      <section id="what-is-it"><h2>What Is the Travel Rule?</h2><p>The travel rule originates from traditional banking regulation (FATF Recommendation 16) which requires financial institutions to include originator and beneficiary information with fund transfers. The Financial Action Task Force (FATF) extended this requirement to Virtual Asset Service Providers (VASPs) in 2019, recognizing that cryptocurrency transfers carry similar money laundering and terrorist financing risks as traditional wire transfers.</p><p>Under the travel rule, when a VASP transfers virtual assets on behalf of a customer, it must obtain and share the originator's name, account number, and address (or national identity number, date of birth, or customer identification number), along with the beneficiary's name and account number. The receiving VASP must verify this information and may be required to reject transfers with incomplete data.</p></section>
+      <section id="how-it-works"><h2>How It Works in Crypto</h2><p>When you transfer cryptocurrency from one exchange to another, the sending exchange collects your identity information and the recipient's details, then transmits this data to the receiving exchange alongside the on-chain transfer. The receiving exchange verifies the information before crediting the funds. If the data is incomplete or inconsistent, the receiving exchange may delay or reject the transfer.</p><p>This process differs from traditional banking wire transfers primarily in the technical challenge: cryptocurrency transfers are peer-to-peer on public blockchains, and there is no inherent mechanism for attaching identity data to blockchain transactions. The travel rule requires VASPs to create parallel off-chain communication channels to share this information while the on-chain transfer occurs independently.</p></section>
+      <section id="implementation"><h2>Implementation Challenges</h2><p>Implementing the travel rule for crypto faces significant challenges. There is no single universal protocol for inter-VASP communication — multiple competing standards exist. VASPs must identify counterparty VASPs for incoming transfers (determining whether the receiving address belongs to another VASP or a self-hosted wallet). Cross-jurisdictional differences in thresholds, data requirements, and enforcement create compliance complexity for global operators.</p><p>Privacy and data protection concerns add additional complexity: sharing customer data between VASPs creates data security obligations and potential conflicts with privacy regulations like GDPR. The interaction between regulatory data-sharing requirements and data minimization principles of privacy laws remains an evolving area of legal interpretation. VASPs must balance compliance with the travel rule against their obligations to protect customer data.</p></section>
+      <section id="solutions"><h2>Technical Solutions</h2><p>Several technology providers have developed travel rule compliance solutions. Protocols like TRISA, OpenVASP, and Notabene enable secure, standardized communication between VASPs for sharing required identity data. These solutions typically use encryption to protect data in transit and at rest, with various approaches to counterparty discovery (identifying which VASP controls a given address).</p><p>Emerging solutions include blockchain analytics integration for VASP identification, cryptographic protocols for privacy-preserving data sharing, and industry consortiums working on interoperability between different travel rule protocols. The technology is maturing but standardization remains a challenge — different jurisdictions and service providers may use different protocols, requiring interoperability solutions for cross-platform compliance.</p></section>
+      <section id="user-impact"><h2>Impact on Users</h2><p>For individual users, the travel rule means providing identity information for exchange-to-exchange transfers, potential delays as VASPs exchange and verify data, and additional verification steps when transferring to self-hosted wallets. Some exchanges may restrict transfers to or from exchanges in jurisdictions that have not implemented travel rule compliance, potentially limiting cross-border transfer options.</p><p>The travel rule accelerates a broader trend toward increased identity verification in cryptocurrency. While transfers between self-hosted wallets remain unaffected by the travel rule itself, the regulatory treatment of self-hosted wallet transactions is increasingly scrutinized. Users should expect continued evolution toward more identity-linked cryptocurrency transactions, particularly for interactions involving regulated service providers.</p></section>
+    </LearnPageLayout>
+  );
+}

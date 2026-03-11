@@ -1,0 +1,80 @@
+import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import FAQSection from "@/components/FAQSection";
+import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import { CRYPTO_TOKENS } from "@/data/investing";
+
+const token = CRYPTO_TOKENS[5];
+
+export const metadata: Metadata = {
+  title: `How to Invest in Avalanche (AVAX) ${CURRENT_YEAR} - Complete Guide`,
+  description: `Complete Avalanche investment guide for ${CURRENT_YEAR}. Learn about AVAX fundamentals, subnets, DeFi ecosystem, and how to buy Avalanche.`,
+  alternates: { canonical: "/investing/crypto/avalanche" },
+};
+
+const faqs = [
+  { question: "What makes Avalanche unique?", answer: "Avalanche uses a novel consensus mechanism that achieves sub-second finality. Its subnet architecture allows anyone to launch customizable blockchain networks that share AVAX's security. This has attracted enterprise and gaming projects that need dedicated blockchains with specific configurations." },
+  { question: "Can I stake AVAX?", answer: "Yes. AVAX staking requires a minimum of 25 AVAX for delegators and offers approximately 8-10% APY. You can stake through the Avalanche Wallet or through centralized exchanges with lower minimums. Staking helps secure the network and earns rewards paid in AVAX." },
+  { question: "How does Avalanche compare to Ethereum?", answer: "Avalanche offers faster finality and lower fees than Ethereum mainnet. Its C-Chain is EVM-compatible, making it easy for Ethereum developers to deploy. However, Ethereum has a much larger ecosystem and stronger network effects. Avalanche's subnet model provides unique enterprise capabilities." },
+];
+
+export default function AvalanchePage() {
+  return (
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "Crypto Investing", href: "/investing" },
+        { label: "Avalanche", href: "/investing/crypto/avalanche" },
+      ]} />
+
+      <header className="mb-8">
+        <h1 className="text-4xl font-bold text-white mb-4">How to Invest in Avalanche (AVAX) in {CURRENT_YEAR}</h1>
+        <p className="text-lg text-[var(--color-text-secondary)]">
+          Avalanche is a fast, low-cost smart contract platform using subnets for customizable
+          blockchain networks, targeting DeFi, enterprise, and gaming applications.
+        </p>
+        <p className="text-sm text-[var(--color-text-secondary)] mt-2">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      </header>
+
+      <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
+        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">{token.ticker}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">{token.launchYear}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">{token.maxSupply}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">{token.consensus}</p></div>
+        </div>
+      </div>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">What Is Avalanche?</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          Avalanche was created by Ava Labs, founded by Cornell professor Emin Gun Sirer. It
+          features three built-in blockchains: the Exchange Chain (X-Chain) for asset creation,
+          the Platform Chain (P-Chain) for validators and subnets, and the Contract Chain
+          (C-Chain) for EVM-compatible smart contracts. The novel Avalanche consensus achieves
+          finality in under one second.
+        </p>
+        <p className="text-[var(--color-text-secondary)]">
+          The subnet architecture is Avalanche's key differentiator, allowing anyone to launch
+          a customizable blockchain network with its own validators, gas token, and rules. This
+          has attracted enterprises and gaming companies that need dedicated chain infrastructure
+          without the limitations of a shared public blockchain.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <p className="text-[var(--color-text-secondary)]">
+          Avalanche competes for DeFi activity with Ethereum L2s, Solana, and other L1s. While
+          the subnet model is innovative, adoption has been gradual. AVAX has a capped supply
+          of 720 million tokens, but a significant portion is yet to be released. The ecosystem
+          is smaller than Ethereum and Solana by most metrics, and sustaining growth requires
+          continued subnet adoption and DeFi expansion.
+        </p>
+      </section>
+
+      <FAQSection faqs={faqs} />
+    </div>
+  );
+}

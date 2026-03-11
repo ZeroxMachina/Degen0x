@@ -1,0 +1,89 @@
+import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import FAQSection from "@/components/FAQSection";
+import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import { CRYPTO_TOKENS } from "@/data/investing";
+
+const token = CRYPTO_TOKENS[3];
+
+export const metadata: Metadata = {
+  title: `How to Invest in Cardano (ADA) ${CURRENT_YEAR} - Complete Guide`,
+  description: `Complete Cardano investment guide for ${CURRENT_YEAR}. Learn about ADA fundamentals, peer-reviewed development, staking, risks, and how to buy Cardano.`,
+  alternates: { canonical: "/investing/crypto/cardano" },
+};
+
+const faqs = [
+  { question: "Is Cardano a good investment?", answer: "Cardano takes a research-first approach with peer-reviewed academic development. While this makes it slower to ship features than competitors, it aims for more robust and secure implementations. ADA staking provides approximately 4-5% APY. The project has a dedicated community, but faces strong competition from faster-moving ecosystems." },
+  { question: "What makes Cardano different?", answer: "Cardano is built on peer-reviewed academic research and uses the Ouroboros proof-of-stake protocol, which was the first PoS protocol proven secure through academic peer review. Its development follows a structured roadmap with formal verification methods for smart contracts." },
+  { question: "Can I stake Cardano?", answer: "Yes. Cardano staking is non-custodial and has no lock-up period, meaning you can stake and unstake at any time. Staking rewards are approximately 4-5% APY. You can delegate to stake pools directly from wallets like Yoroi or Daedalus without losing custody of your ADA." },
+];
+
+export default function CardanoPage() {
+  return (
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "Crypto Investing", href: "/investing" },
+        { label: "Cardano", href: "/investing/crypto/cardano" },
+      ]} />
+
+      <header className="mb-8">
+        <h1 className="text-4xl font-bold text-white mb-4">How to Invest in Cardano (ADA) in {CURRENT_YEAR}</h1>
+        <p className="text-lg text-[var(--color-text-secondary)]">
+          Cardano is a third-generation blockchain built through peer-reviewed academic research,
+          emphasizing security, sustainability, and formal verification of smart contracts.
+        </p>
+        <p className="text-sm text-[var(--color-text-secondary)] mt-2">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      </header>
+
+      <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
+        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">{token.ticker}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">{token.launchYear}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">{token.maxSupply}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">{token.consensus}</p></div>
+        </div>
+      </div>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">What Is Cardano?</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4">
+          Cardano was founded by Charles Hoskinson, a co-founder of Ethereum, and is developed
+          by IOHK (Input Output Hong Kong). Its development philosophy prioritizes academic rigor,
+          with protocol changes going through peer-reviewed research papers before implementation.
+          The Ouroboros consensus mechanism was the first provably secure proof-of-stake protocol.
+        </p>
+        <p className="text-[var(--color-text-secondary)]">
+          Cardano's smart contract platform uses Plutus (based on Haskell) and supports formal
+          verification, which mathematically proves the correctness of smart contract code. While
+          this approach is more rigorous, it has resulted in slower ecosystem development compared
+          to EVM-compatible chains.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <p className="text-[var(--color-text-secondary)]">
+          Cardano targets smart contracts, decentralized identity, supply chain management,
+          governance systems, and financial infrastructure for developing nations. Its partnership
+          with the Ethiopian government for educational credential tracking and focus on Africa
+          as a growth market differentiate it from Western-focused blockchains.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <p className="text-[var(--color-text-secondary)]">
+          Cardano's deliberate development pace means it often trails competitors in ecosystem
+          growth and DeFi TVL. The Plutus smart contract language has a smaller developer pool
+          than Solidity/EVM. Competition from faster-moving L1s and Ethereum L2s is intense.
+          While ADA has a large retail following, institutional adoption has been limited compared
+          to Bitcoin and Ethereum.
+        </p>
+      </section>
+
+      <FAQSection faqs={faqs} />
+    </div>
+  );
+}
