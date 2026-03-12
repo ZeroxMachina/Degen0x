@@ -13,9 +13,11 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   experimental: {
-    // Reduce static generation concurrency to avoid OOM on Vercel
-    staticGenerationMaxConcurrency: 8,
-    workerThreads: false, // Use child processes (separate memory) instead of worker threads
+    // Balance concurrency: high enough for speed, low enough to avoid OOM
+    // Vercel standard machines have ~8GB RAM; 8192MB heap + 25 concurrent pages works well
+    staticGenerationMaxConcurrency: 25,
+    workerThreads: true, // Worker threads are faster than child processes
+    cpus: 4, // Force 4 workers regardless of detected CPU count
   },
 };
 
