@@ -4,11 +4,6 @@ import { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
 
 // SEO Metadata
-export const metadata = {
-  title: 'Crypto Wallet Analyzer | Check Any Wallet Address | CryptoDegen',
-  description: 'Analyze any cryptocurrency wallet address instantly. Get detailed portfolio breakdown, DeFi activity, transaction history, and risk scores.',
-};
-
 // Types
 interface WalletToken {
   id: string;

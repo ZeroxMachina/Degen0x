@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Foundation Passport Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Foundation Passport Review (${CURRENT_YEAR}) | degen0x`,
   description: "Foundation Passport hardware wallet review covering open-source design, air-gapped QR signing, premium build quality, and Bitcoin-focused features.",
 };
 

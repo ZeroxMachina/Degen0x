@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in New Zealand (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in New Zealand (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges available in New Zealand. Find NZD-friendly platforms with low fees, strong security, and local payment methods.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesNewZealand() {
       readTime="8 min read"
       intro="New Zealand has become a growing hub for cryptocurrency adoption, with the Financial Markets Authority (FMA) providing regulatory guidance for digital asset services. Kiwi traders benefit from several exchanges that support NZD deposits via bank transfer, POLi, and credit card. This guide covers the top platforms available to New Zealand residents, evaluating fees, security, and local payment options."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for New Zealand", level: 2 },
-        { id: "regulation", title: "Crypto Regulation in New Zealand", level: 2 },
-        { id: "payment-methods", title: "NZD Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-new-zealand", title: "Top Exchanges for New Zealand", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-new-zealand", title: "Crypto Regulation in New Zealand", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "nzd-payment-methods", title: "NZD Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
-        { id: "security-tips", title: "Security Tips for Kiwi Traders", level: 2 },
-        { id: "how-to-choose", title: "How to Choose the Right Exchange", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
+        { id: "security-tips-for-kiwi-traders", title: "Security Tips for Kiwi Traders", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "how-to-choose-the-right-exchange", title: "How to Choose the Right Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in New Zealand?", answer: "Yes, cryptocurrency is legal in New Zealand. The FMA treats crypto assets as financial products in certain contexts, and exchanges operating in NZ should be registered with the Financial Service Providers Register (FSPR)." },

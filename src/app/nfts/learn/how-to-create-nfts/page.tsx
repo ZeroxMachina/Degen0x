@@ -17,13 +17,20 @@ export default function HowToCreateNftsPage() {
       readTime="13 min"
       intro="Creating an NFT is surprisingly accessible. You do not need coding skills, expensive software, or a large budget to mint your first token. Whether you are an artist looking to sell digital art, a musician releasing tracks, or a photographer monetizing your portfolio, this guide walks you through the entire process from preparing your files to listing your first NFT for sale."
       toc={[
-        { id: "before-you-start", title: "Before You Start: Planning Your NFT", level: 2 },
-        { id: "choose-blockchain", title: "Step 1: Choose Your Blockchain", level: 2 },
-        { id: "prepare-artwork", title: "Step 2: Prepare Your Artwork", level: 2 },
-        { id: "choose-platform", title: "Step 3: Choose a Minting Platform", level: 2 },
-        { id: "minting-process", title: "Step 4: The Minting Process", level: 2 },
-        { id: "pricing-strategy", title: "Step 5: Set Your Price and Listing", level: 2 },
-        { id: "promote-your-nft", title: "Promoting Your NFT", level: 2 },
+        { id: "before-you-start", title: "before-you-start", level: 2 },
+        { id: "before-you-start-planning-your-nft", title: "Before You Start: Planning Your NFT", level: 2 },
+        { id: "choose-blockchain", title: "choose-blockchain", level: 2 },
+        { id: "step-1-choose-your-blockchain", title: "Step 1: Choose Your Blockchain", level: 2 },
+        { id: "prepare-artwork", title: "prepare-artwork", level: 2 },
+        { id: "step-2-prepare-your-artwork", title: "Step 2: Prepare Your Artwork", level: 2 },
+        { id: "choose-platform", title: "choose-platform", level: 2 },
+        { id: "step-3-choose-a-minting-platform", title: "Step 3: Choose a Minting Platform", level: 2 },
+        { id: "minting-process", title: "minting-process", level: 2 },
+        { id: "step-4-the-minting-process", title: "Step 4: The Minting Process", level: 2 },
+        { id: "pricing-strategy", title: "pricing-strategy", level: 2 },
+        { id: "step-5-set-your-price-and-listing", title: "Step 5: Set Your Price and Listing", level: 2 },
+        { id: "promote-your-nft", title: "promote-your-nft", level: 2 },
+        { id: "promoting-your-nft", title: "Promoting Your NFT", level: 2 }
       ]}
       faqs={[
         {

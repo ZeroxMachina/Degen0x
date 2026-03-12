@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "KuCoin", slug: "kucoin", rating: 4.4, affiliateUrl: "https://cryptodegen.com/go/kucoin", features: { "Trading Fees": "0.1% maker / 0.1% taker", "Coins Listed": "700+", "Futures": "Yes (up to 100x)", "Trading Bots": "Yes (built-in)", "Lending": "Yes (KuCoin Earn)", "KYC Required": "Optional (limits apply)", "Launchpad": "Yes (Spotlight)", "Mobile App": "iOS & Android" } },
-  { name: "Gate.io", slug: "gate-io", rating: 4.3, affiliateUrl: "https://cryptodegen.com/go/gate-io", features: { "Trading Fees": "0.09% maker / 0.09% taker", "Coins Listed": "1,400+", "Futures": "Yes (up to 100x)", "Trading Bots": "Yes (built-in)", "Lending": "Yes (Gate Earn)", "KYC Required": "Optional (limits apply)", "Launchpad": "Yes (Startup)", "Mobile App": "iOS & Android" } },
+  { name: "KuCoin", slug: "kucoin", rating: 4.4, affiliateUrl: "https://degen0x.com/go/kucoin", features: { "Trading Fees": "0.1% maker / 0.1% taker", "Coins Listed": "700+", "Futures": "Yes (up to 100x)", "Trading Bots": "Yes (built-in)", "Lending": "Yes (KuCoin Earn)", "KYC Required": "Optional (limits apply)", "Launchpad": "Yes (Spotlight)", "Mobile App": "iOS & Android" } },
+  { name: "Gate.io", slug: "gate-io", rating: 4.3, affiliateUrl: "https://degen0x.com/go/gate-io", features: { "Trading Fees": "0.09% maker / 0.09% taker", "Coins Listed": "1,400+", "Futures": "Yes (up to 100x)", "Trading Bots": "Yes (built-in)", "Lending": "Yes (Gate Earn)", "KYC Required": "Optional (limits apply)", "Launchpad": "Yes (Startup)", "Mobile App": "iOS & Android" } },
 ];
 
 const features = ["Trading Fees", "Coins Listed", "Futures", "Trading Bots", "Lending", "KYC Required", "Launchpad", "Mobile App"];
@@ -32,7 +32,7 @@ export default function KucoinVsGateIoPage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         KuCoin vs Gate.io: Best Altcoin Exchange in {CURRENT_YEAR}?
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -49,7 +49,7 @@ export default function KucoinVsGateIoPage() {
       <ComparisonTable items={items} features={features} title="KuCoin vs Gate.io: Head-to-Head" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Coin Selection</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Coin Selection</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Gate.io leads by a wide margin with over 1,400 listed cryptocurrencies, making it one
           of the most extensive exchanges in existence. KuCoin offers over 700 coins, which is
@@ -62,7 +62,7 @@ export default function KucoinVsGateIoPage() {
           projects, so due diligence is critical on both platforms.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Fees and Trading</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fees and Trading</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Gate.io has slightly lower base fees at 0.09% maker and taker versus KuCoin&apos;s 0.1%.
           Both offer discounts through their native tokens (KCS and GT respectively) and
@@ -74,7 +74,7 @@ export default function KucoinVsGateIoPage() {
           for passive yield.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Security and Trust</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Security and Trust</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           KuCoin experienced a $280 million hack in 2020 but recovered the majority of funds
           and fully reimbursed affected users. Since then, KuCoin has significantly upgraded its
@@ -87,15 +87,15 @@ export default function KucoinVsGateIoPage() {
           comes with lower withdrawal limits.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose KuCoin if</strong> you want a more user-friendly
+            <strong className="text-[var(--color-text)]">Choose KuCoin if</strong> you want a more user-friendly
             interface, strong trading bot ecosystem, and a proven track record of handling security
             incidents transparently. KuCoin has better liquidity on most pairs.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Gate.io if</strong> you want the absolute widest
+            <strong className="text-[var(--color-text)]">Choose Gate.io if</strong> you want the absolute widest
             selection of altcoins, slightly lower fees, and earliest access to new token listings.
             Gate.io is the ultimate altcoin discovery platform.
           </p>

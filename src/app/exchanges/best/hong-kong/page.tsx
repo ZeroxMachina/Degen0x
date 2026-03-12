@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Hong Kong (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Hong Kong (${CURRENT_YEAR}) | degen0x`,
   description:
     "Find the best cryptocurrency exchanges in Hong Kong. SFC-licensed platforms with HKD pairs, strong compliance, and deep liquidity.",
 };
@@ -17,10 +17,14 @@ export default function BestExchangesHongKongPage() {
       readTime="7 min read"
       intro="Hong Kong has re-emerged as a major crypto hub following its new licensing regime under the Securities and Futures Commission (SFC). The city now requires all crypto trading platforms to be licensed, providing strong investor protections while maintaining its position as a gateway between Asian and global crypto markets."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges in Hong Kong", level: 2 },
-        { id: "licensing", title: "SFC Licensing Framework", level: 2 },
-        { id: "features", title: "Features to Consider", level: 2 },
-        { id: "tips", title: "Tips for HK Traders", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-in-hong-kong", title: "Top Exchanges in Hong Kong", level: 2 },
+        { id: "licensing", title: "licensing", level: 2 },
+        { id: "sfc-licensing-framework", title: "SFC Licensing Framework", level: 2 },
+        { id: "features", title: "features", level: 2 },
+        { id: "features-to-consider", title: "Features to Consider", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-hk-traders", title: "Tips for HK Traders", level: 2 }
       ]}
       faqs={[
         {

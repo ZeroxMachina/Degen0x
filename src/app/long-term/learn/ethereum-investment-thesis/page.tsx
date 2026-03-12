@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Ethereum Investment Thesis (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The Ethereum Investment Thesis (${CURRENT_YEAR}) | degen0x`,
   description: "A comprehensive Ethereum investment thesis. Why ETH could be a foundational asset, the role of staking, EIP-1559, and Ethereum's competitive position.",
 };
 
@@ -12,10 +12,14 @@ export default function EthereumInvestmentThesisPage() {
     <LearnPageLayout title="The Ethereum Investment Thesis" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="9 min read"
       intro="Ethereum is the largest smart contract platform by total value locked, developer activity, and ecosystem breadth. The Ethereum investment thesis rests on the idea that a programmable, decentralized settlement layer will capture immense value as the world moves toward tokenized finance, digital identity, and decentralized applications. With the transition to proof of stake, EIP-1559 fee burning, and a thriving Layer 2 ecosystem, Ethereum's economic model has evolved into one that could support significant long-term value accrual to ETH holders."
       toc={[
-        { id: "value-accrual", title: "How ETH Accrues Value", level: 2 },
-        { id: "developer-ecosystem", title: "The Developer Ecosystem Moat", level: 2 },
+        { id: "value-accrual", title: "value-accrual", level: 2 },
+        { id: "how-eth-accrues-value", title: "How ETH Accrues Value", level: 2 },
+        { id: "developer-ecosystem", title: "developer-ecosystem", level: 2 },
+        { id: "the-developer-ecosystem-moat", title: "The Developer Ecosystem Moat", level: 2 },
+        { id: "staking-economics", title: "staking-economics", level: 2 },
         { id: "staking-economics", title: "Staking Economics", level: 2 },
-        { id: "competitive-risks", title: "Competitive Risks", level: 2 },
+        { id: "competitive-risks", title: "competitive-risks", level: 2 },
+        { id: "competitive-risks", title: "Competitive Risks", level: 2 }
       ]}
       faqs={[
         { question: "What is the bull case for Ethereum?", answer: "Ethereum is the dominant platform for DeFi, NFTs, and dApps with the largest developer community in crypto. EIP-1559 burns ETH with every transaction, reducing supply. Proof of stake allows ETH holders to earn yield by securing the network. If Ethereum becomes the settlement layer for a tokenized global economy, ETH demand could grow dramatically while supply growth remains minimal or even negative." },

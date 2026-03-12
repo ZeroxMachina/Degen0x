@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Token? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Token? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a crypto token is, the difference between tokens and coins, token standards like ERC-20, and how tokens are used across the blockchain ecosystem.",
 };
@@ -17,10 +17,14 @@ export default function TokenPage() {
       readTime="5 min read"
       intro="A token is a digital asset created on an existing blockchain using smart contracts. Unlike coins (which are native to their own blockchain, like ETH on Ethereum or BTC on Bitcoin), tokens are built on top of another chain's infrastructure. Tokens can represent anything from voting rights and utility access to real-world assets and collectibles. They are the fundamental building block of the crypto economy."
       toc={[
-        { id: "definition", title: "What Is a Token?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-token", title: "What Is a Token?", level: 2 },
+        { id: "tokens-vs-coins", title: "tokens-vs-coins", level: 2 },
         { id: "tokens-vs-coins", title: "Tokens vs Coins", level: 2 },
+        { id: "token-standards", title: "token-standards", level: 2 },
         { id: "token-standards", title: "Token Standards", level: 2 },
-        { id: "why-tokens-matter", title: "Why Tokens Matter", level: 2 },
+        { id: "why-tokens-matter", title: "why-tokens-matter", level: 2 },
+        { id: "why-tokens-matter", title: "Why Tokens Matter", level: 2 }
       ]}
       faqs={[
         { question: "What is the difference between a token and a coin?", answer: "A coin is the native cryptocurrency of its own blockchain (BTC, ETH, SOL). A token is created on top of an existing blockchain using smart contracts (UNI on Ethereum, BONK on Solana). Coins are needed to pay transaction fees on their chain, while tokens derive their functionality from the smart contract that created them." },

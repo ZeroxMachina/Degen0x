@@ -25,14 +25,22 @@ export default function WhatAreMemeCoinPage() {
       readTime="9 min"
       intro="Meme coins are cryptocurrencies inspired by internet jokes, memes, or cultural phenomena rather than groundbreaking technology or real-world utility. Despite their humorous origins, meme coins have generated billions in market value and created one of the most speculative — and controversial — segments of the crypto market."
       toc={[
-        { id: "definition", title: "What Defines a Meme Coin", level: 2 },
-        { id: "history", title: "History of Meme Coins", level: 2 },
-        { id: "how-they-work", title: "How Meme Coins Work", level: 2 },
-        { id: "why-popular", title: "Why Are Meme Coins So Popular", level: 2 },
-        { id: "risks", title: "Risks of Meme Coin Investing", level: 2 },
-        { id: "evaluation", title: "How to Evaluate a Meme Coin", level: 2 },
-        { id: "notable-examples", title: "Notable Meme Coins", level: 2 },
-        { id: "future", title: "The Future of Meme Coins", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-defines-a-meme-coin", title: "What Defines a Meme Coin", level: 2 },
+        { id: "history", title: "history", level: 2 },
+        { id: "history-of-meme-coins", title: "History of Meme Coins", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-meme-coins-work", title: "How Meme Coins Work", level: 2 },
+        { id: "why-popular", title: "why-popular", level: 2 },
+        { id: "why-are-meme-coins-so-popular", title: "Why Are Meme Coins So Popular", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-meme-coin-investing", title: "Risks of Meme Coin Investing", level: 2 },
+        { id: "evaluation", title: "evaluation", level: 2 },
+        { id: "how-to-evaluate-a-meme-coin", title: "How to Evaluate a Meme Coin", level: 2 },
+        { id: "notable-examples", title: "notable-examples", level: 2 },
+        { id: "notable-meme-coins", title: "Notable Meme Coins", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-meme-coins", title: "The Future of Meme Coins", level: 2 }
       ]}
       faqs={[
         {

@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "Free download; DEX aggregator fees vary",
   bestFor: "Multi-chain DeFi power users and OKX traders",
-  affiliateUrl: "https://cryptodegen.com/go/okx-wallet",
+  affiliateUrl: "https://degen0x.com/go/okx-wallet",
   category: "wallets",
 };
 

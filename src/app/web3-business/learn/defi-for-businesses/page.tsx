@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DeFi Solutions for Business Treasury (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DeFi Solutions for Business Treasury (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how businesses can use DeFi protocols for treasury management, yield generation, lending, and on-chain financial operations. Covers strategies, risks, and platform selection.",
 };
@@ -17,11 +17,16 @@ export default function DefiForBusinessesPage() {
       readTime="10 min"
       intro="Decentralized finance offers Web3 businesses powerful tools for treasury management that go beyond simple holding. DeFi protocols enable yield generation on idle assets, efficient borrowing against crypto holdings, on-chain liquidity provision, and sophisticated financial operations without banking intermediaries. For businesses with crypto treasuries, DeFi can significantly improve capital efficiency. However, it introduces smart contract risk, impermanent loss exposure, and regulatory complexity that require careful evaluation. This guide covers practical DeFi strategies for business treasuries, from conservative stablecoin yield to advanced protocol strategies."
       toc={[
-        { id: "treasury-yield", title: "Treasury Yield Strategies", level: 2 },
-        { id: "lending-borrowing", title: "Lending and Borrowing for Businesses", level: 2 },
-        { id: "liquidity-provision", title: "Liquidity Provision and Market Making", level: 2 },
-        { id: "risk-management", title: "DeFi Risk Management", level: 2 },
-        { id: "accounting-compliance", title: "Accounting and Compliance", level: 2 },
+        { id: "treasury-yield", title: "treasury-yield", level: 2 },
+        { id: "treasury-yield-strategies", title: "Treasury Yield Strategies", level: 2 },
+        { id: "lending-borrowing", title: "lending-borrowing", level: 2 },
+        { id: "lending-and-borrowing-for-businesses", title: "Lending and Borrowing for Businesses", level: 2 },
+        { id: "liquidity-provision", title: "liquidity-provision", level: 2 },
+        { id: "liquidity-provision-and-market-making", title: "Liquidity Provision and Market Making", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "defi-risk-management", title: "DeFi Risk Management", level: 2 },
+        { id: "accounting-compliance", title: "accounting-compliance", level: 2 },
+        { id: "accounting-and-compliance", title: "Accounting and Compliance", level: 2 }
       ]}
       faqs={[
         {

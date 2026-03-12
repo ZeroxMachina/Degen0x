@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Real World Assets (RWA) Tokenization Explained | CryptoDegen`,
+  title: `Real World Assets (RWA) Tokenization Explained | degen0x`,
   description:
     "Learn what RWAs are, how tokenization works, major protocols, regulatory landscape, and investment opportunities in the booming RWA sector.",
 };
@@ -17,12 +17,18 @@ export default function RWATokenizationPage() {
       readTime="11 min read"
       intro="Real World Assets (RWA) tokenization represents one of crypto's most practical applications - converting physical and financial assets like real estate, bonds, commodities, and credit instruments into blockchain tokens. The RWA sector has grown from theoretical concept to over $10 billion in TVL, attracting institutional capital and major financial firms. This guide explores what RWAs are, how tokenization works, major platforms and protocols, the regulatory landscape, and investment strategies in this rapidly maturing sector."
       toc={[
-        { id: "what-are-rwas", title: "What Are Real World Assets?", level: 2 },
-        { id: "tokenization-mechanics", title: "How Tokenization Works", level: 2 },
-        { id: "major-protocols", title: "Major RWA Protocols", level: 2 },
-        { id: "asset-classes", title: "RWA Asset Classes", level: 2 },
-        { id: "regulatory", title: "Regulatory Landscape", level: 2 },
-        { id: "investment", title: "Investing in RWAs", level: 2 },
+        { id: "what-are-rwas", title: "what-are-rwas", level: 2 },
+        { id: "what-are-real-world-assets", title: "What Are Real World Assets?", level: 2 },
+        { id: "tokenization-mechanics", title: "tokenization-mechanics", level: 2 },
+        { id: "how-tokenization-works", title: "How Tokenization Works", level: 2 },
+        { id: "major-protocols", title: "major-protocols", level: 2 },
+        { id: "major-rwa-protocols", title: "Major RWA Protocols", level: 2 },
+        { id: "asset-classes", title: "asset-classes", level: 2 },
+        { id: "rwa-asset-classes", title: "RWA Asset Classes", level: 2 },
+        { id: "regulatory", title: "regulatory", level: 2 },
+        { id: "regulatory-landscape", title: "Regulatory Landscape", level: 2 },
+        { id: "investment", title: "investment", level: 2 },
+        { id: "investing-in-rwas", title: "Investing in RWAs", level: 2 }
       ]}
       faqs={[
         {

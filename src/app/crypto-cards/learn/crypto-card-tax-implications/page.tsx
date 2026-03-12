@@ -17,11 +17,16 @@ export default function CryptoCardTaxImplicationsPage() {
       readTime="11 min"
       intro="Every time you swipe a crypto card that converts cryptocurrency to fiat, you may be creating a taxable event. The tax treatment of crypto card transactions is one of the most misunderstood aspects of using these products. This guide explains the key tax considerations for US taxpayers and provides guidance for managing your tax obligations when using crypto cards."
       toc={[
-        { id: "spending-as-disposal", title: "Spending Crypto as a Taxable Disposal", level: 2 },
-        { id: "rewards-taxation", title: "How Crypto Rewards Are Taxed", level: 2 },
-        { id: "stablecoin-strategy", title: "The Stablecoin Strategy for Tax Efficiency", level: 2 },
-        { id: "record-keeping", title: "Record-Keeping Best Practices", level: 2 },
-        { id: "minimizing-tax-burden", title: "Strategies for Minimizing Tax Burden", level: 2 },
+        { id: "spending-as-disposal", title: "spending-as-disposal", level: 2 },
+        { id: "spending-crypto-as-a-taxable-disposal", title: "Spending Crypto as a Taxable Disposal", level: 2 },
+        { id: "rewards-taxation", title: "rewards-taxation", level: 2 },
+        { id: "how-crypto-rewards-are-taxed", title: "How Crypto Rewards Are Taxed", level: 2 },
+        { id: "stablecoin-strategy", title: "stablecoin-strategy", level: 2 },
+        { id: "the-stablecoin-strategy-for-tax-efficiency", title: "The Stablecoin Strategy for Tax Efficiency", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping-best-practices", title: "Record-Keeping Best Practices", level: 2 },
+        { id: "minimizing-tax-burden", title: "minimizing-tax-burden", level: 2 },
+        { id: "strategies-for-minimizing-tax-burden", title: "Strategies for Minimizing Tax Burden", level: 2 }
       ]}
       faqs={[
         {

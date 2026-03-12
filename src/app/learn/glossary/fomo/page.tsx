@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is FOMO? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is FOMO? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what FOMO means in crypto, how it drives market behavior, and how to recognize and manage it as an investor.",
 };
@@ -17,11 +17,16 @@ export default function FomoPage() {
       readTime="4 min"
       intro="FOMO stands for Fear Of Missing Out, a psychological phenomenon where investors feel compelled to buy an asset because they believe its price will continue rising and they will miss the opportunity. In crypto markets, FOMO is a powerful force that drives buying frenzies, inflates bubbles, and leads many traders to make impulsive decisions based on emotion rather than analysis."
       toc={[
-        { id: "definition", title: "What Is FOMO?", level: 2 },
-        { id: "how-it-works", title: "How FOMO Drives Markets", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-fomo", title: "What Is FOMO?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-fomo-drives-markets", title: "How FOMO Drives Markets", level: 2 },
+        { id: "recognizing-fomo", title: "recognizing-fomo", level: 2 },
         { id: "recognizing-fomo", title: "Recognizing FOMO", level: 2 },
+        { id: "managing-fomo", title: "managing-fomo", level: 2 },
         { id: "managing-fomo", title: "Managing FOMO", level: 2 },
-        { id: "fomo-vs-conviction", title: "FOMO vs Conviction", level: 2 },
+        { id: "fomo-vs-conviction", title: "fomo-vs-conviction", level: 2 },
+        { id: "fomo-vs-conviction", title: "FOMO vs Conviction", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Popcat (POPCAT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Popcat (POPCAT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Popcat (POPCAT), the Solana meme coin inspired by the viral Popcat internet meme. Discover POPCAT tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function PopcatPage() {
       readTime="8 min read"
       intro="Popcat (POPCAT) is a Solana-based meme coin inspired by the viral Popcat internet meme featuring a cat with an open mouth. Launched in late 2023, POPCAT quickly gained traction within the Solana meme coin ecosystem and reached a market capitalization of over one billion dollars."
       toc={[
-        { id: "what-is", title: "What Is Popcat?", level: 2 },
-        { id: "how-it-works", title: "How Does Popcat Work?", level: 2 },
-        { id: "tokenomics", title: "POPCAT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy POPCAT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-popcat", title: "What Is Popcat?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-popcat-work", title: "How Does Popcat Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "popcat-tokenomics", title: "POPCAT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-popcat", title: "How to Buy POPCAT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

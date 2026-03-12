@@ -17,10 +17,14 @@ export default function CryptoPointOfSalePage() {
       readTime="9 min"
       intro="Accepting cryptocurrency at physical retail locations has become increasingly practical with modern POS integrations, QR code payment flows, and payment networks like Flexa. This guide covers everything brick-and-mortar businesses need to know about setting up crypto payments at the point of sale."
       toc={[
-        { id: "pos-solutions", title: "POS Solutions Overview", level: 2 },
-        { id: "qr-payments", title: "QR Code Payment Flows", level: 2 },
-        { id: "integration", title: "Integration with Existing Systems", level: 2 },
-        { id: "customer-experience", title: "Optimizing Customer Experience", level: 2 },
+        { id: "pos-solutions", title: "pos-solutions", level: 2 },
+        { id: "pos-solutions-overview", title: "POS Solutions Overview", level: 2 },
+        { id: "qr-payments", title: "qr-payments", level: 2 },
+        { id: "qr-code-payment-flows", title: "QR Code Payment Flows", level: 2 },
+        { id: "integration", title: "integration", level: 2 },
+        { id: "integration-with-existing-systems", title: "Integration with Existing Systems", level: 2 },
+        { id: "customer-experience", title: "customer-experience", level: 2 },
+        { id: "optimizing-customer-experience", title: "Optimizing Customer Experience", level: 2 }
       ]}
       faqs={[
         { question: "Do I need new hardware to accept crypto?", answer: "Usually not. Most crypto POS solutions work through existing terminals with software updates, or through a tablet or phone running the payment app. Dedicated crypto terminals are available but not required." },

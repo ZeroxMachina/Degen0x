@@ -12,11 +12,16 @@ export default function StablecoinRegulationPage() {
   return (
     <LearnPageLayout title="Stablecoin Regulation Guide" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Stablecoins have become critical infrastructure for the cryptocurrency ecosystem, with over $100 billion in combined market capitalization. Their role as a bridge between traditional finance and crypto, combined with their systemic importance, has made stablecoin regulation a top priority for governments worldwide. Understanding this regulatory landscape is important for anyone who uses stablecoins."
       toc={[
-        { id: "why-regulate", title: "Why Regulate Stablecoins?", level: 2 },
-        { id: "us-approach", title: "US Stablecoin Regulation", level: 2 },
-        { id: "eu-approach", title: "EU Stablecoin Rules (MiCA)", level: 2 },
+        { id: "why-regulate", title: "why-regulate", level: 2 },
+        { id: "why-regulate-stablecoins", title: "Why Regulate Stablecoins?", level: 2 },
+        { id: "us-approach", title: "us-approach", level: 2 },
+        { id: "us-stablecoin-regulation", title: "US Stablecoin Regulation", level: 2 },
+        { id: "eu-approach", title: "eu-approach", level: 2 },
+        { id: "eu-stablecoin-rules-mica", title: "EU Stablecoin Rules (MiCA)", level: 2 },
+        { id: "global-standards", title: "global-standards", level: 2 },
         { id: "global-standards", title: "Global Standards", level: 2 },
-        { id: "user-implications", title: "Implications for Users", level: 2 },
+        { id: "user-implications", title: "user-implications", level: 2 },
+        { id: "implications-for-users", title: "Implications for Users", level: 2 }
       ]}
       faqs={[
         { question: "Are stablecoins regulated?", answer: "The regulatory status of stablecoins varies by jurisdiction. In the EU, MiCA provides a comprehensive framework. In the US, stablecoin-specific legislation is under development, and existing regulations are being applied in an evolving manner. Major stablecoin issuers like Circle (USDC) voluntarily comply with state-level money transmission regulations." },

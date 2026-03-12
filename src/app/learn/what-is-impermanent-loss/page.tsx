@@ -17,11 +17,16 @@ export default function WhatIsImpermanentLossPage() {
       readTime="8 min"
       intro="Impermanent loss is the difference in value between holding tokens in a liquidity pool versus simply holding them in your wallet. When you provide liquidity to a decentralized exchange, the AMM algorithm automatically rebalances your position as prices change, potentially leaving you with less value than if you had just held the original tokens. Understanding impermanent loss is critical for anyone considering becoming a DeFi liquidity provider."
       toc={[
-        { id: "how-it-works", title: "How Impermanent Loss Works", level: 2 },
-        { id: "calculation", title: "Calculating Impermanent Loss", level: 2 },
-        { id: "when-it-matters", title: "When IL Matters Most", level: 2 },
-        { id: "mitigation", title: "Strategies to Mitigate IL", level: 2 },
-        { id: "fee-income", title: "Fee Income vs Impermanent Loss", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-impermanent-loss-works", title: "How Impermanent Loss Works", level: 2 },
+        { id: "calculation", title: "calculation", level: 2 },
+        { id: "calculating-impermanent-loss", title: "Calculating Impermanent Loss", level: 2 },
+        { id: "when-it-matters", title: "when-it-matters", level: 2 },
+        { id: "when-il-matters-most", title: "When IL Matters Most", level: 2 },
+        { id: "mitigation", title: "mitigation", level: 2 },
+        { id: "strategies-to-mitigate-il", title: "Strategies to Mitigate IL", level: 2 },
+        { id: "fee-income", title: "fee-income", level: 2 },
+        { id: "fee-income-vs-impermanent-loss", title: "Fee Income vs Impermanent Loss", level: 2 }
       ]}
       faqs={[
         { question: "Is impermanent loss really impermanent?", answer: "It is called impermanent because the loss is unrealized while you remain in the pool — if prices return to their original ratio, the loss disappears. However, if you withdraw while prices have diverged, the loss becomes permanent. In practice, prices rarely return to the exact original ratio, so the loss often materializes as real." },

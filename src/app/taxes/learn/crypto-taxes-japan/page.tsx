@@ -18,12 +18,18 @@ export default function CryptoTaxesJapanPage() {
       readTime="10 min read"
       intro="Japan was among the first countries to establish a legal framework for cryptocurrency, but its tax treatment remains one of the most aggressive globally. Crypto profits are classified as miscellaneous income and taxed at progressive rates that can reach 55 percent when combined with local inhabitant tax. Understanding these rules is essential for Japan's large and active crypto community."
       toc={[
-        { id: "classification", title: "How Japan Classifies Crypto Income", level: 2 },
-        { id: "tax-rates", title: "Progressive Tax Rates", level: 2 },
-        { id: "taxable-events", title: "Taxable Events in Japan", level: 2 },
-        { id: "cost-basis", title: "Cost Basis Methods", level: 2 },
-        { id: "reporting", title: "NTA Filing Requirements", level: 2 },
-        { id: "reform", title: "Potential Tax Reform", level: 2 },
+        { id: "classification", title: "classification", level: 2 },
+        { id: "how-japan-classifies-crypto-income", title: "How Japan Classifies Crypto Income", level: 2 },
+        { id: "tax-rates", title: "tax-rates", level: 2 },
+        { id: "progressive-tax-rates", title: "Progressive Tax Rates", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
+        { id: "taxable-events-in-japan", title: "Taxable Events in Japan", level: 2 },
+        { id: "cost-basis", title: "cost-basis", level: 2 },
+        { id: "cost-basis-methods", title: "Cost Basis Methods", level: 2 },
+        { id: "reporting", title: "reporting", level: 2 },
+        { id: "nta-filing-requirements", title: "NTA Filing Requirements", level: 2 },
+        { id: "reform", title: "reform", level: 2 },
+        { id: "potential-tax-reform", title: "Potential Tax Reform", level: 2 }
       ]}
       faqs={[
         { question: "What is the maximum crypto tax rate in Japan?", answer: "The combined maximum rate is approximately 55 percent, consisting of up to 45 percent national income tax plus 10 percent local inhabitant tax. This applies to miscellaneous income exceeding 40 million yen." },

@@ -24,12 +24,12 @@ const product: Product = {
   ],
   fees: "0.5% marketplace fee",
   bestFor: "Budget-conscious NFT traders",
-  affiliateUrl: "https://cryptodegen.com/go/x2y2",
+  affiliateUrl: "https://degen0x.com/go/x2y2",
   category: "nfts",
 };
 
 export const metadata: Metadata = {
-  title: `X2Y2 Review: Low-Fee Ethereum NFT Marketplace (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `X2Y2 Review: Low-Fee Ethereum NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth X2Y2 review covering its ultra-low 0.5% fees, NFT lending, token rewards, bulk trading tools, and whether it's the right marketplace for cost-conscious traders.",
 };

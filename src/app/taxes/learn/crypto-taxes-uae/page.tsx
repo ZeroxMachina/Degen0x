@@ -18,12 +18,18 @@ export default function CryptoTaxesUAEPage() {
       readTime="9 min read"
       intro="The United Arab Emirates has positioned itself as one of the world's most crypto-friendly jurisdictions. With no personal income tax, no capital gains tax, and a comprehensive regulatory framework through VARA (Virtual Asset Regulatory Authority), the UAE has attracted significant crypto business and investment. However, the introduction of a 9 percent corporate tax and evolving regulations mean the landscape is not entirely tax-free for everyone."
       toc={[
-        { id: "personal-tax", title: "Zero Personal Income Tax", level: 2 },
-        { id: "corporate-tax", title: "Corporate Tax & Crypto Businesses", level: 2 },
-        { id: "free-zones", title: "Free Zone Benefits", level: 2 },
-        { id: "vara", title: "VARA Regulatory Framework", level: 2 },
-        { id: "residency", title: "UAE Crypto Tax Residency", level: 2 },
-        { id: "considerations", title: "Important Considerations", level: 2 },
+        { id: "personal-tax", title: "personal-tax", level: 2 },
+        { id: "zero-personal-income-tax", title: "Zero Personal Income Tax", level: 2 },
+        { id: "corporate-tax", title: "corporate-tax", level: 2 },
+        { id: "corporate-tax-crypto-businesses", title: "Corporate Tax & Crypto Businesses", level: 2 },
+        { id: "free-zones", title: "free-zones", level: 2 },
+        { id: "free-zone-benefits", title: "Free Zone Benefits", level: 2 },
+        { id: "vara", title: "vara", level: 2 },
+        { id: "vara-regulatory-framework", title: "VARA Regulatory Framework", level: 2 },
+        { id: "residency", title: "residency", level: 2 },
+        { id: "uae-crypto-tax-residency", title: "UAE Crypto Tax Residency", level: 2 },
+        { id: "considerations", title: "considerations", level: 2 },
+        { id: "important-considerations", title: "Important Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto completely tax-free in the UAE?", answer: "For individuals, yes. The UAE has no personal income tax and no capital gains tax, so individual crypto investors pay zero tax on their gains. However, businesses may be subject to the 9 percent corporate tax on profits exceeding 375,000 AED." },

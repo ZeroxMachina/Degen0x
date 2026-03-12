@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Governance in Crypto? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Governance in Crypto? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what governance means in cryptocurrency, how on-chain governance works, the role of governance tokens, and why decentralized governance matters.",
 };
@@ -17,10 +17,14 @@ export default function GovernancePage() {
       readTime="5 min read"
       intro="Governance in crypto refers to the systems and processes by which decentralized protocols make collective decisions about upgrades, parameters, and resource allocation. Through governance tokens and voting mechanisms, stakeholders can propose and vote on changes to the protocol without relying on a centralized authority. Governance is what makes truly decentralized protocols possible, giving communities ownership over the rules that govern their financial infrastructure."
       toc={[
-        { id: "definition", title: "What Is Governance?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-governance", title: "What Is Governance?", level: 2 },
+        { id: "on-chain-governance", title: "on-chain-governance", level: 2 },
         { id: "on-chain-governance", title: "On-Chain Governance", level: 2 },
+        { id: "governance-tokens", title: "governance-tokens", level: 2 },
         { id: "governance-tokens", title: "Governance Tokens", level: 2 },
-        { id: "importance", title: "Why Governance Matters", level: 2 },
+        { id: "importance", title: "importance", level: 2 },
+        { id: "why-governance-matters", title: "Why Governance Matters", level: 2 }
       ]}
       faqs={[
         { question: "What is a governance token?", answer: "A governance token gives holders the right to vote on protocol decisions. Each token typically represents one vote. Major governance tokens include UNI (Uniswap), AAVE, COMP (Compound), ARB (Arbitrum), and OP (Optimism). Some protocols use vote-escrow models where locking tokens for longer grants more voting power." },

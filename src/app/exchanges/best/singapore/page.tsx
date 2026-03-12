@@ -71,7 +71,7 @@ export default function SingaporeExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in Singapore ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -88,7 +88,7 @@ export default function SingaporeExchangesPage() {
           Digital Payment Token (DPT) service licenses. Here are the best exchanges for
           Singapore-based traders and investors.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Singapore&apos;s Regulatory Approach</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Singapore&apos;s Regulatory Approach</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           MAS has taken a measured approach to crypto regulation, balancing innovation with
           consumer protection. The Payment Services Act requires DPT providers to comply with
@@ -96,7 +96,7 @@ export default function SingaporeExchangesPage() {
           assets. MAS has also introduced strict advertising guidelines to protect retail
           investors from misleading crypto promotions.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Tax Advantages for Singapore Traders</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Tax Advantages for Singapore Traders</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Singapore&apos;s lack of capital gains tax makes it one of the most attractive
           jurisdictions for crypto investors globally. Long-term holders and casual traders do
@@ -118,22 +118,22 @@ export default function SingaporeExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods for Singapore Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods for Singapore Users</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">FAST Transfer</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">FAST Transfer</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant SGD deposits. Free on most exchanges. The most popular method in Singapore.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">PayNow</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">PayNow</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant mobile transfers using phone number or NRIC. Free. Supported by major banks.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Xfers</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Xfers</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Payment gateway popular with Singapore crypto exchanges. Supports bank transfer and PayNow.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Debit / Credit Card</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Debit / Credit Card</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant purchase. 2-3.5% fee. Visa and Mastercard supported on most global exchanges.</p>
           </div>
         </div>

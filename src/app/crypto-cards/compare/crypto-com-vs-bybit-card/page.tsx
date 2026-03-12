@@ -17,7 +17,7 @@ const items: ComparisonItem[] = [
     name: "Crypto.com Visa",
     slug: "crypto-com-visa",
     rating: 4.7,
-    affiliateUrl: "https://cryptodegen.com/go/crypto-com-visa",
+    affiliateUrl: "https://degen0x.com/go/crypto-com-visa",
     features: {
       "Cashback Rate": "Up to 5% in CRO",
       "Annual Fee": "$0",
@@ -34,7 +34,7 @@ const items: ComparisonItem[] = [
     name: "Bybit Card",
     slug: "bybit-card",
     rating: 4.0,
-    affiliateUrl: "https://cryptodegen.com/go/bybit-card",
+    affiliateUrl: "https://degen0x.com/go/bybit-card",
     features: {
       "Cashback Rate": "Up to 10% select, 2% standard",
       "Annual Fee": "$0",
@@ -73,7 +73,7 @@ export default function CryptoComVsBybitCardPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto.com Visa vs Bybit Card ({CURRENT_YEAR})
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -88,7 +88,7 @@ export default function CryptoComVsBybitCardPage() {
       <ComparisonTable items={items} features={features} title="Crypto.com Visa vs Bybit Card" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Cashback Structure</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Cashback Structure</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Bybit Card advertises up to 10% cashback at selected merchants and 2% as a standard rate.
           However, the 10% rate is limited to specific partner merchants that rotate over time.
@@ -96,11 +96,11 @@ export default function CryptoComVsBybitCardPage() {
           For everyday spending, the Crypto.com model is more predictable and applies universally.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; Consistent cashback
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; Consistent cashback
           across all merchants is more valuable than high rates limited to select partners.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Staking Requirements</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Staking Requirements</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           One of Bybit Card&apos;s strongest selling points is that it requires no staking. You get
           cashback simply by using the card. Crypto.com&apos;s best rates require staking substantial
@@ -108,11 +108,11 @@ export default function CryptoComVsBybitCardPage() {
           to users who do not want to commit capital to a native token.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Bybit Card</strong> &mdash; No staking requirement
+          <strong className="text-[var(--color-text)]">Winner: Bybit Card</strong> &mdash; No staking requirement
           lowers the barrier to entry and eliminates token price risk.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Track Record and Trust</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Track Record and Trust</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Crypto.com has operated its card program since 2018 and has millions of cardholders worldwide.
           It holds regulatory licenses in multiple jurisdictions and has weathered multiple market cycles.
@@ -120,23 +120,23 @@ export default function CryptoComVsBybitCardPage() {
           product does not have the same established track record.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; Years of operation
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; Years of operation
           and millions of users provide confidence that is difficult for newer products to match.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Premium Benefits</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Premium Benefits</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Crypto.com offers extensive premium benefits including Spotify, Netflix, and Amazon Prime
           reimbursements, airport lounge access, higher earn rates, and metal card designs. Bybit Card
           has no comparable premium perks, focusing solely on cashback and seamless exchange integration.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; The premium perks
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; The premium perks
           ecosystem is a major differentiator that Bybit has not yet replicated.
         </p>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mt-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             The Crypto.com Visa remains the more complete card with its established program, premium
             perks, and consistent cashback across all merchants. It is the better choice for users

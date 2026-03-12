@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Indonesia (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Indonesia (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare the best crypto exchanges in Indonesia. Bappebti-registered platforms with IDR pairs, local bank transfers, and strong security.",
 };
@@ -17,10 +17,14 @@ export default function BestExchangesIndonesiaPage() {
       readTime="7 min read"
       intro="Indonesia has one of the fastest-growing crypto communities in Southeast Asia, with over 18 million registered crypto investors. The Commodity Futures Trading Regulatory Agency (Bappebti) oversees crypto trading, and all exchanges must be registered to operate legally. Indonesian traders enjoy access to numerous platforms with IDR support."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges in Indonesia", level: 2 },
-        { id: "regulations", title: "Indonesian Regulations", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-in-indonesia", title: "Top Exchanges in Indonesia", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "indonesian-regulations", title: "Indonesian Regulations", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
-        { id: "selection-guide", title: "Selection Guide", level: 2 },
+        { id: "selection-guide", title: "selection-guide", level: 2 },
+        { id: "selection-guide", title: "Selection Guide", level: 2 }
       ]}
       faqs={[
         {

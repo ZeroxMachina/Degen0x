@@ -17,11 +17,16 @@ export default function YieldFarmingStrategiesPage() {
       readTime="12 min"
       intro="Yield farming involves deploying crypto assets across DeFi protocols to maximize returns. From simple single-sided lending to complex leveraged strategies, the spectrum of yield farming approaches offers different risk-reward tradeoffs. This guide breaks down the most common yield farming strategies, their mechanics, risks, and expected returns to help you find the approach that matches your risk tolerance."
       toc={[
+        { id: "single-sided-lending", title: "single-sided-lending", level: 2 },
         { id: "single-sided-lending", title: "Single-Sided Lending", level: 2 },
+        { id: "liquidity-provision", title: "liquidity-provision", level: 2 },
         { id: "liquidity-provision", title: "Liquidity Provision", level: 2 },
-        { id: "leveraged-farming", title: "Leveraged Yield Farming", level: 2 },
+        { id: "leveraged-farming", title: "leveraged-farming", level: 2 },
+        { id: "leveraged-yield-farming", title: "Leveraged Yield Farming", level: 2 },
+        { id: "recursive-borrowing", title: "recursive-borrowing", level: 2 },
         { id: "recursive-borrowing", title: "Recursive Borrowing", level: 2 },
-        { id: "risk-management", title: "Risk Management", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management", title: "Risk Management", level: 2 }
       ]}
       faqs={[
         { question: "What is a realistic yield from farming?", answer: "Sustainable yields on stablecoins typically range from 3-10% APY on major protocols. Higher yields exist but usually involve higher risk, impermanent loss exposure, or unsustainable token emissions. Be skeptical of yields above 20% APY as they often come with significant hidden risks." },

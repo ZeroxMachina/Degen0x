@@ -10,7 +10,7 @@ const product = {
   pros: ["Very beginner-friendly interface", "Direct TurboTax integration", "Established brand (since 2018)", "Good educational content"],
   cons: ["DeFi support less comprehensive", "Higher pricing for active traders", "Limited international support", "Fewer advanced features"],
   bestFor: "US-based beginners who want simple crypto tax filing with TurboTax integration",
-  affiliateUrl: "https://cryptodegen.com/go/coinledger",
+  affiliateUrl: "https://degen0x.com/go/coinledger",
   category: "taxes",
 };
 

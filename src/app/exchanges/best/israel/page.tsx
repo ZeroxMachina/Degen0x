@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Israel (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Israel (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Israel. Find ILS-friendly platforms with local payment support, strong security, and Israeli regulatory compliance.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesIsrael() {
       readTime="8 min read"
       intro="Israel's thriving tech ecosystem has naturally extended to cryptocurrency, with Tel Aviv becoming a hub for blockchain innovation. The Israel Securities Authority (ISA) and the Capital Market Authority oversee digital asset regulation. Israeli traders face unique banking challenges but can access major global exchanges. This guide covers the best platforms and strategies for Israeli crypto traders."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Israel", level: 2 },
-        { id: "regulation", title: "Crypto Regulation in Israel", level: 2 },
-        { id: "payment-methods", title: "ILS Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-israel", title: "Top Exchanges for Israel", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-israel", title: "Crypto Regulation in Israel", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "ils-payment-methods", title: "ILS Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Israel?", answer: "Yes, cryptocurrency is legal in Israel. The ISA has issued guidelines for digital asset regulation. Israel has a thriving blockchain ecosystem with many startups and institutional interest in digital assets." },

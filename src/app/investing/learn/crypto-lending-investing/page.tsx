@@ -16,10 +16,14 @@ export default function CryptoLendingInvestingPage() {
       readTime="11 min"
       intro="Crypto lending allows you to earn interest on your crypto holdings by lending them to borrowers through decentralized protocols or centralized platforms. It is one of the most straightforward ways to generate passive income from crypto. This guide covers how lending works, the best platforms, and the risks you need to understand."
       toc={[
-        { id: "how-lending-works", title: "How Crypto Lending Works", level: 2 },
-        { id: "defi-vs-cefi", title: "DeFi vs CeFi Lending", level: 2 },
-        { id: "yields-and-rates", title: "Understanding Yields and Rates", level: 2 },
-        { id: "risks", title: "Lending Risks", level: 2 },
+        { id: "how-lending-works", title: "how-lending-works", level: 2 },
+        { id: "how-crypto-lending-works", title: "How Crypto Lending Works", level: 2 },
+        { id: "defi-vs-cefi", title: "defi-vs-cefi", level: 2 },
+        { id: "defi-vs-cefi-lending", title: "DeFi vs CeFi Lending", level: 2 },
+        { id: "yields-and-rates", title: "yields-and-rates", level: 2 },
+        { id: "understanding-yields-and-rates", title: "Understanding Yields and Rates", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "lending-risks", title: "Lending Risks", level: 2 }
       ]}
       faqs={[
         { question: "What yields can I earn from crypto lending?", answer: "Yields vary significantly by asset and platform. Stablecoin lending typically yields 2-8% APY on established DeFi protocols. ETH and BTC lending yields are lower, usually 1-3% APY. Rates fluctuate based on borrowing demand. Be cautious of platforms offering yields that seem too high to be sustainable." },

@@ -65,7 +65,7 @@ export default function BestHardwareWalletsPage() {
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-bold mb-4">
           ✅ Updated {CURRENT_MONTH} {CURRENT_YEAR}
         </div>
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Hardware Wallets of {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl leading-relaxed">
@@ -89,7 +89,7 @@ export default function BestHardwareWalletsPage() {
               className="flex items-center gap-2 px-3 py-2 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] hover:border-[var(--color-primary)]/60 transition-colors text-sm"
             >
               <span className="text-[var(--color-text-secondary)] text-xs">{pick.label}</span>
-              <span className="text-white font-semibold text-xs">{pick.name}</span>
+              <span className="text-[var(--color-text)] font-semibold text-xs">{pick.name}</span>
             </a>
           ))}
         </div>
@@ -97,13 +97,13 @@ export default function BestHardwareWalletsPage() {
 
       {/* What's New in 2026 */}
       <section className="mb-10 rounded-xl border border-[var(--color-primary)]/30 bg-[var(--color-primary)]/5 p-6">
-        <h2 className="text-lg font-bold text-white mb-4">🆕 What&apos;s New in Hardware Wallets for 2026</h2>
+        <h2 className="text-lg font-bold text-[var(--color-text)] mb-4">🆕 What&apos;s New in Hardware Wallets for 2026</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {WHATS_NEW_2026.map((item) => (
             <div key={item.title} className="flex gap-3">
               <span className="text-2xl">{item.icon}</span>
               <div>
-                <div className="text-sm font-bold text-white mb-0.5">{item.title}</div>
+                <div className="text-sm font-bold text-[var(--color-text)] mb-0.5">{item.title}</div>
                 <div className="text-sm text-[var(--color-text-secondary)]">{item.desc}</div>
               </div>
             </div>
@@ -113,15 +113,15 @@ export default function BestHardwareWalletsPage() {
 
       {/* Quick Verdict */}
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">Our {CURRENT_YEAR} Verdict at a Glance</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Our {CURRENT_YEAR} Verdict at a Glance</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
-          The <strong className="text-white">Ledger Nano X</strong> remains the top pick for most users — Bluetooth,
+          The <strong className="text-[var(--color-text)]">Ledger Nano X</strong> remains the top pick for most users — Bluetooth,
           5,500+ coin support, and a polished app. Open-source fans should choose the{" "}
-          <strong className="text-white">Trezor Model T</strong> or the new{" "}
-          <strong className="text-white">Trezor Safe 3</strong> ($79 with Secure Element). For Bitcoin maximalists
-          who want uncompromising air-gap security, the <strong className="text-white">Coldcard Mk4</strong> (dual
+          <strong className="text-[var(--color-text)]">Trezor Model T</strong> or the new{" "}
+          <strong className="text-[var(--color-text)]">Trezor Safe 3</strong> ($79 with Secure Element). For Bitcoin maximalists
+          who want uncompromising air-gap security, the <strong className="text-[var(--color-text)]">Coldcard Mk4</strong> (dual
           Secure Element, fully air-gapped) is the new benchmark. If you want open-source hardware down to the PCB
-          schematic, the US-built <strong className="text-white">Foundation Passport 2</strong> is the only option
+          schematic, the US-built <strong className="text-[var(--color-text)]">Foundation Passport 2</strong> is the only option
           with a removable battery and QR-only signing.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-4 text-sm">
@@ -143,7 +143,7 @@ export default function BestHardwareWalletsPage() {
 
       {/* Product Rankings */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">
           Best Hardware Wallets {CURRENT_YEAR}, Ranked
         </h2>
         <div className="space-y-6">
@@ -169,10 +169,10 @@ export default function BestHardwareWalletsPage() {
 
       {/* Airgap vs USB Section */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Air-Gap vs USB: Which Connection Should You Use?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Air-Gap vs USB: Which Connection Should You Use?</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border border-amber-500/30 bg-amber-500/5 p-5">
-            <h3 className="text-white font-bold mb-2 flex items-center gap-2">
+            <h3 className="text-[var(--color-text)] font-bold mb-2 flex items-center gap-2">
               <span>📡</span> Air-Gapped (QR / PSBT / microSD)
             </h3>
             <p className="text-sm text-[var(--color-text-secondary)] mb-3 leading-relaxed">
@@ -183,7 +183,7 @@ export default function BestHardwareWalletsPage() {
             <div className="text-xs font-semibold text-amber-400">Best for: Coldcard Mk4 · Foundation Passport 2</div>
           </div>
           <div className="rounded-xl border border-[var(--color-primary)]/30 bg-[var(--color-primary)]/5 p-5">
-            <h3 className="text-white font-bold mb-2 flex items-center gap-2">
+            <h3 className="text-[var(--color-text)] font-bold mb-2 flex items-center gap-2">
               <span>🔌</span> USB / Bluetooth Connection
             </h3>
             <p className="text-sm text-[var(--color-text-secondary)] mb-3 leading-relaxed">
@@ -198,10 +198,10 @@ export default function BestHardwareWalletsPage() {
 
       {/* What to Look For */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">What to Look for in a Hardware Wallet ({CURRENT_YEAR})</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">What to Look for in a Hardware Wallet ({CURRENT_YEAR})</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">🔒 Secure Element Chip</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">🔒 Secure Element Chip</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               A dedicated Secure Element (like CC EAL5+ or ATECC608A) stores your private keys in tamper-resistant
               hardware, the same tech used in bank cards. In 2026, look for dual-SE designs (Coldcard Mk4) for
@@ -209,7 +209,7 @@ export default function BestHardwareWalletsPage() {
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">📖 Open-Source Firmware</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">📖 Open-Source Firmware</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Open-source code lets security researchers audit every line. Trezor is fully open-source; Foundation
               Passport 2 publishes hardware schematics too. Ledger open-sourced its companion app but keeps
@@ -217,14 +217,14 @@ export default function BestHardwareWalletsPage() {
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">🪙 Coin Coverage</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">🪙 Coin Coverage</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Ledger supports 5,500+ assets; Trezor Safe 3 supports 8,000+. If you&apos;re Bitcoin-only, Coldcard and
               Passport 2 offer a smaller, more focused attack surface. Never store altcoins on a Bitcoin-only device.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">🛠️ Recovery Backup Method</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">🛠️ Recovery Backup Method</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Standard BIP39 (12 or 24-word seed) works everywhere. Trezor supports Shamir Backup (SLIP-39) for
               splitting your seed among multiple shares. Coldcard supports SeedXOR for mathematically combining
@@ -236,7 +236,7 @@ export default function BestHardwareWalletsPage() {
 
       {/* Price Comparison */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Hardware Wallet Prices {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Hardware Wallet Prices {CURRENT_YEAR}</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] overflow-hidden">
           <table className="w-full text-sm">
             <thead>
@@ -259,11 +259,11 @@ export default function BestHardwareWalletsPage() {
                 { name: "Ledger Nano S Plus", price: "$79", coins: "5,500+", se: "✅ CC EAL5+", airgap: "❌", bestFor: "Budget Ledger", highlight: false },
               ].map((row) => (
                 <tr key={row.name} className={`border-b border-[var(--color-border)] ${row.highlight ? "bg-[var(--color-primary)]/5" : ""}`}>
-                  <td className="px-4 py-3 font-semibold text-white">
+                  <td className="px-4 py-3 font-semibold text-[var(--color-text)]">
                     {row.name}
                     {row.highlight && <span className="ml-2 text-xs px-1.5 py-0.5 rounded bg-[var(--color-primary)]/20 text-[var(--color-primary)]">#1</span>}
                   </td>
-                  <td className="px-4 py-3 text-center font-mono font-bold text-white">{row.price}</td>
+                  <td className="px-4 py-3 text-center font-mono font-bold text-[var(--color-text)]">{row.price}</td>
                   <td className="px-4 py-3 text-center text-[var(--color-text-secondary)]">{row.coins}</td>
                   <td className="px-4 py-3 text-center text-[var(--color-text-secondary)]">{row.se}</td>
                   <td className="px-4 py-3 text-center text-[var(--color-text-secondary)]">{row.airgap}</td>
@@ -277,30 +277,30 @@ export default function BestHardwareWalletsPage() {
 
       {/* Related Pages */}
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/compare/ledger-vs-trezor" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Ledger vs Trezor 2026</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Ledger vs Trezor 2026</h3>
             <p className="text-xs text-[var(--color-text-secondary)] mt-1">Head-to-head cold wallet comparison</p>
           </Link>
           <Link href="/wallets/learn/hardware-wallet-setup-guide" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Hardware Wallet Setup Guide</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Hardware Wallet Setup Guide</h3>
             <p className="text-xs text-[var(--color-text-secondary)] mt-1">Step-by-step setup for beginners</p>
           </Link>
           <Link href="/wallets/best/security" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Most Secure Crypto Wallets</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Most Secure Crypto Wallets</h3>
             <p className="text-xs text-[var(--color-text-secondary)] mt-1">Maximum protection for any amount</p>
           </Link>
           <Link href="/wallets/learn/hot-vs-cold-wallets" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Hot vs Cold Wallets Explained</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Hot vs Cold Wallets Explained</h3>
             <p className="text-xs text-[var(--color-text-secondary)] mt-1">Which wallet type do you need?</p>
           </Link>
           <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Wallet Security Best Practices</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Wallet Security Best Practices</h3>
             <p className="text-xs text-[var(--color-text-secondary)] mt-1">Keep your seed phrase safe</p>
           </Link>
           <Link href="/wallets/best/privacy" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best Privacy Wallets</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best Privacy Wallets</h3>
             <p className="text-xs text-[var(--color-text-secondary)] mt-1">Maximum anonymity options</p>
           </Link>
         </div>

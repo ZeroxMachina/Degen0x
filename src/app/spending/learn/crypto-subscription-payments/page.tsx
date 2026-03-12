@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Paying Subscriptions with Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Paying Subscriptions with Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to pay for streaming services, software subscriptions, and recurring bills with Bitcoin and cryptocurrency. Explore direct crypto payments and workarounds.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoSubscriptionPaymentsPage() {
       readTime="8 min"
       intro="More subscription services are accepting cryptocurrency, and even those that do not can be paid with crypto through debit cards and gift cards. From streaming platforms and VPNs to software subscriptions and cloud services, this guide covers how to pay your recurring subscriptions using Bitcoin and other cryptocurrencies, including both direct payment options and creative workarounds."
       toc={[
-        { id: "direct-crypto-subscriptions", title: "Services That Accept Crypto Directly", level: 2 },
-        { id: "gift-card-method", title: "The Gift Card Method", level: 2 },
-        { id: "debit-card-method", title: "Using Crypto Debit Cards", level: 2 },
-        { id: "streaming-payments", title: "Crypto Streaming Payments", level: 2 },
-        { id: "managing-recurring", title: "Managing Recurring Crypto Payments", level: 2 },
+        { id: "direct-crypto-subscriptions", title: "direct-crypto-subscriptions", level: 2 },
+        { id: "services-that-accept-crypto-directly", title: "Services That Accept Crypto Directly", level: 2 },
+        { id: "gift-card-method", title: "gift-card-method", level: 2 },
+        { id: "the-gift-card-method", title: "The Gift Card Method", level: 2 },
+        { id: "debit-card-method", title: "debit-card-method", level: 2 },
+        { id: "using-crypto-debit-cards", title: "Using Crypto Debit Cards", level: 2 },
+        { id: "streaming-payments", title: "streaming-payments", level: 2 },
+        { id: "crypto-streaming-payments", title: "Crypto Streaming Payments", level: 2 },
+        { id: "managing-recurring", title: "managing-recurring", level: 2 },
+        { id: "managing-recurring-crypto-payments", title: "Managing Recurring Crypto Payments", level: 2 }
       ]}
       faqs={[
         { question: "Can I pay Netflix with Bitcoin?", answer: "Netflix does not accept Bitcoin directly, but you can pay for it indirectly. Purchase Netflix gift cards with Bitcoin through Bitrefill or Fold. Use a crypto debit card for your Netflix subscription. Higher-tier Crypto.com cards include Netflix reimbursement as a perk, effectively making your Netflix subscription free while paying with crypto." },

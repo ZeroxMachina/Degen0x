@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `MACD Indicator Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `MACD Indicator Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what MACD is, how to read MACD crossovers, histogram signals, divergence patterns, and practical MACD trading strategies for cryptocurrency.",
 };
 
@@ -16,10 +16,14 @@ export default function MACDPage() {
       readTime="7 min read"
       intro="The Moving Average Convergence Divergence (MACD) is a trend-following momentum indicator that shows the relationship between two exponential moving averages. MACD helps traders identify trend direction, momentum changes, and potential entry or exit points. It is one of the most versatile and widely used indicators in crypto technical analysis, suitable for both trend identification and momentum assessment."
       toc={[
+        { id: "what-is-macd", title: "what-is-macd", level: 2 },
         { id: "what-is-macd", title: "What Is MACD?", level: 2 },
-        { id: "components", title: "MACD Components", level: 2 },
-        { id: "signals", title: "MACD Signals", level: 2 },
-        { id: "strategies", title: "MACD Trading Strategies", level: 2 },
+        { id: "components", title: "components", level: 2 },
+        { id: "macd-components", title: "MACD Components", level: 2 },
+        { id: "signals", title: "signals", level: 2 },
+        { id: "macd-signals", title: "MACD Signals", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "macd-trading-strategies", title: "MACD Trading Strategies", level: 2 }
       ]}
       faqs={[
         { question: "What are the best MACD settings for crypto?", answer: "The default settings (12, 26, 9) work well for most situations. For faster signals on shorter timeframes, try (8, 17, 9). For longer-term trend identification, (19, 39, 9) reduces noise. The key is consistency in using the same settings so you learn to read the signals over time." },

@@ -18,12 +18,18 @@ export default function FlashLoansExplainedPage() {
       readTime="10 min read"
       intro="Flash loans are one of the most innovative and uniquely DeFi financial primitives. They allow anyone to borrow any amount of crypto with zero collateral, as long as the loan is repaid within the same blockchain transaction. If the loan is not repaid, the entire transaction reverts as if it never happened. Flash loans have enabled sophisticated arbitrage, efficient liquidations, and collateral swaps, but have also been used in some of the largest DeFi exploits."
       toc={[
-        { id: "how-they-work", title: "How Flash Loans Work", level: 2 },
-        { id: "use-cases", title: "Legitimate Use Cases", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-flash-loans-work", title: "How Flash Loans Work", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "legitimate-use-cases", title: "Legitimate Use Cases", level: 2 },
+        { id: "flash-loan-attacks", title: "flash-loan-attacks", level: 2 },
         { id: "flash-loan-attacks", title: "Flash Loan Attacks", level: 2 },
-        { id: "providers", title: "Flash Loan Providers", level: 2 },
-        { id: "building", title: "Building with Flash Loans", level: 2 },
-        { id: "future", title: "The Future of Flash Loans", level: 2 },
+        { id: "providers", title: "providers", level: 2 },
+        { id: "flash-loan-providers", title: "Flash Loan Providers", level: 2 },
+        { id: "building", title: "building", level: 2 },
+        { id: "building-with-flash-loans", title: "Building with Flash Loans", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-flash-loans", title: "The Future of Flash Loans", level: 2 }
       ]}
       faqs={[
         { question: "Do I need collateral for a flash loan?", answer: "No. Flash loans require zero collateral because the loan must be repaid within the same transaction. If repayment fails, the entire transaction reverts atomically, meaning the lending protocol never actually loses funds." },

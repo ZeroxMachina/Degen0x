@@ -17,13 +17,20 @@ export default function HowToBuyNftsPage() {
       readTime="11 min"
       intro="Buying your first NFT can feel intimidating with unfamiliar wallets, gas fees, and dozens of marketplaces to choose from. But the process is straightforward once you understand the steps. This guide walks you through everything from setting up a crypto wallet to making your first purchase and storing your NFT safely."
       toc={[
-        { id: "what-you-need", title: "What You Need Before Buying", level: 2 },
-        { id: "set-up-wallet", title: "Step 1: Set Up a Crypto Wallet", level: 2 },
-        { id: "fund-wallet", title: "Step 2: Fund Your Wallet", level: 2 },
-        { id: "choose-marketplace", title: "Step 3: Choose an NFT Marketplace", level: 2 },
-        { id: "find-nft", title: "Step 4: Find and Evaluate NFTs", level: 2 },
-        { id: "make-purchase", title: "Step 5: Make Your Purchase", level: 2 },
-        { id: "after-purchase", title: "What to Do After Buying", level: 2 },
+        { id: "what-you-need", title: "what-you-need", level: 2 },
+        { id: "what-you-need-before-buying", title: "What You Need Before Buying", level: 2 },
+        { id: "set-up-wallet", title: "set-up-wallet", level: 2 },
+        { id: "step-1-set-up-a-crypto-wallet", title: "Step 1: Set Up a Crypto Wallet", level: 2 },
+        { id: "fund-wallet", title: "fund-wallet", level: 2 },
+        { id: "step-2-fund-your-wallet", title: "Step 2: Fund Your Wallet", level: 2 },
+        { id: "choose-marketplace", title: "choose-marketplace", level: 2 },
+        { id: "step-3-choose-an-nft-marketplace", title: "Step 3: Choose an NFT Marketplace", level: 2 },
+        { id: "find-nft", title: "find-nft", level: 2 },
+        { id: "step-4-find-and-evaluate-nfts", title: "Step 4: Find and Evaluate NFTs", level: 2 },
+        { id: "make-purchase", title: "make-purchase", level: 2 },
+        { id: "step-5-make-your-purchase", title: "Step 5: Make Your Purchase", level: 2 },
+        { id: "after-purchase", title: "after-purchase", level: 2 },
+        { id: "what-to-do-after-buying", title: "What to Do After Buying", level: 2 }
       ]}
       faqs={[
         {

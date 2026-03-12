@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Oasis Network (ROSE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Oasis Network (ROSE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Oasis Network (ROSE), the privacy-focused Layer 1 blockchain. Discover ROSE tokenomics, confidential computing, and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function OasisPage() {
       readTime="8 min read"
       intro="Oasis Network (ROSE) is a privacy-focused Layer 1 blockchain that separates consensus from computation, enabling scalable and confidential smart contracts. Using techniques like trusted execution environments (TEEs) and secure enclaves, Oasis allows developers to build privacy-preserving applications that protect sensitive data while maintaining blockchain verifiability."
       toc={[
-        { id: "what-is", title: "What Is Oasis Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Oasis Network Work?", level: 2 },
-        { id: "tokenomics", title: "ROSE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ROSE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-oasis-network", title: "What Is Oasis Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-oasis-network-work", title: "How Does Oasis Network Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "rose-tokenomics", title: "ROSE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-rose", title: "How to Buy ROSE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Oasis Network?", answer: "Oasis Network is a privacy-first Layer 1 blockchain with a unique architecture separating consensus from smart contract execution. ROSE is used for staking, gas fees, and governance." },

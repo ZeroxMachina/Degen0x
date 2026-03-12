@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Moon (Mooning)? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Moon (Mooning)? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what 'moon' and 'mooning' mean in crypto, the psychology behind the term, and its role in crypto culture.",
 };
@@ -17,11 +17,16 @@ export default function MoonPage() {
       readTime="4 min"
       intro="In crypto slang, 'moon' or 'mooning' describes a cryptocurrency experiencing a dramatic and rapid price increase. When someone says an asset is 'going to the moon,' they believe its price will rise significantly. The phrase 'when moon?' is a common question asking when an asset's price will surge. The term reflects the speculative, optimistic culture of the crypto community."
       toc={[
-        { id: "definition", title: "What Does Moon Mean?", level: 2 },
-        { id: "origin", title: "Origin and Usage", level: 2 },
-        { id: "psychology", title: "Psychology of Moon Culture", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-does-moon-mean", title: "What Does Moon Mean?", level: 2 },
+        { id: "origin", title: "origin", level: 2 },
+        { id: "origin-and-usage", title: "Origin and Usage", level: 2 },
+        { id: "psychology", title: "psychology", level: 2 },
+        { id: "psychology-of-moon-culture", title: "Psychology of Moon Culture", level: 2 },
+        { id: "reality-check", title: "reality-check", level: 2 },
         { id: "reality-check", title: "Reality Check", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

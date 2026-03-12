@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Designing Token Economics for Your Project (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Designing Token Economics for Your Project (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to designing token economics (tokenomics) for Web3 projects. Supply schedules, distribution, utility design, and value accrual mechanisms explained.",
 };
 
@@ -12,10 +12,14 @@ export default function TokenEconomicsDesignPage() {
     <LearnPageLayout title="Designing Token Economics for Your Project" categoryName="Web3 Business" categorySlug="web3-business" readTime="9 min read"
       intro="Token economics (tokenomics) is the design of a token's supply, distribution, utility, and value accrual mechanisms. Good tokenomics align incentives between all stakeholders (users, developers, investors, and the protocol) and create sustainable value. Poor tokenomics can doom a project regardless of its technology. Understanding the principles and trade-offs of token design is essential for anyone building or investing in token-based projects."
       toc={[
+        { id: "supply-design", title: "supply-design", level: 2 },
         { id: "supply-design", title: "Supply Design", level: 2 },
-        { id: "distribution", title: "Token Distribution", level: 2 },
-        { id: "utility", title: "Utility and Demand Drivers", level: 2 },
-        { id: "value-accrual", title: "Value Accrual Mechanisms", level: 2 },
+        { id: "distribution", title: "distribution", level: 2 },
+        { id: "token-distribution", title: "Token Distribution", level: 2 },
+        { id: "utility", title: "utility", level: 2 },
+        { id: "utility-and-demand-drivers", title: "Utility and Demand Drivers", level: 2 },
+        { id: "value-accrual", title: "value-accrual", level: 2 },
+        { id: "value-accrual-mechanisms", title: "Value Accrual Mechanisms", level: 2 }
       ]}
       faqs={[
         { question: "What makes good tokenomics?", answer: "Good tokenomics create genuine demand for the token (utility), manage supply carefully (vesting, emission schedules), align incentives for all participants, distribute ownership fairly, and create sustainable value accrual. The token should be necessary for the protocol to function, not just a speculative vehicle. Users should want to hold the token for its utility, not just its potential price appreciation." },

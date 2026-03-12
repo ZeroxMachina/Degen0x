@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Floor Price? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Floor Price? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what floor price means in the NFT market, how it is determined, and why it is a key metric for evaluating collections.",
 };
@@ -17,11 +17,16 @@ export default function FloorPricePage() {
       readTime="4 min"
       intro="Floor price is the lowest price at which an NFT from a specific collection is currently listed for sale on a marketplace. It represents the minimum cost of entry into a collection and serves as the most widely referenced metric for gauging the market value and sentiment around an NFT project. Floor price fluctuations are closely watched by traders and collectors alike."
       toc={[
-        { id: "definition", title: "What Is Floor Price?", level: 2 },
-        { id: "how-determined", title: "How Floor Price Is Determined", level: 2 },
-        { id: "floor-as-metric", title: "Floor Price as a Valuation Metric", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-floor-price", title: "What Is Floor Price?", level: 2 },
+        { id: "how-determined", title: "how-determined", level: 2 },
+        { id: "how-floor-price-is-determined", title: "How Floor Price Is Determined", level: 2 },
+        { id: "floor-as-metric", title: "floor-as-metric", level: 2 },
+        { id: "floor-price-as-a-valuation-metric", title: "Floor Price as a Valuation Metric", level: 2 },
+        { id: "floor-sweeping", title: "floor-sweeping", level: 2 },
         { id: "floor-sweeping", title: "Floor Sweeping", level: 2 },
-        { id: "limitations", title: "Limitations of Floor Price", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-of-floor-price", title: "Limitations of Floor Price", level: 2 }
       ]}
       faqs={[
         {

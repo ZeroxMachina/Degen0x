@@ -71,11 +71,6 @@ interface SimulationResults {
   worstMonth: number;
 }
 
-export const metadata = {
-  title: 'Crypto Index Fund Simulator | Build Your Own Crypto Portfolio | CryptoDegen',
-  description: 'Create and simulate your own crypto index fund. Track performance across different allocations, rebalancing strategies, and DCA contributions. Compare against BTC, ETH, and traditional indices.',
-};
-
 export default function IndexFundSimulator() {
   const [portfolio, setPortfolio] = useState<Portfolio>({ BTC: 100 });
   const [investmentAmount, setInvestmentAmount] = useState(10000);

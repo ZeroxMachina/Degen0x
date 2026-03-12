@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Uniswap vs SushiSwap (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Uniswap vs SushiSwap (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Uniswap vs SushiSwap DEXs. Fees, liquidity, chains, governance, and which decentralized exchange is better for swapping tokens.",
 };
 
@@ -16,12 +16,18 @@ export default function UniswapVsSushiSwap() {
       readTime="8 min read"
       intro="Uniswap and SushiSwap are two of the most well-known decentralized exchanges, sharing a common origin but diverging significantly in their development. Uniswap is the largest DEX by volume and pioneered the AMM model, while SushiSwap forked from Uniswap and built additional DeFi features. This comparison examines their current state and differences."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "liquidity", title: "Liquidity and Volume", level: 2 },
-        { id: "chains", title: "Supported Chains", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "liquidity", title: "liquidity", level: 2 },
+        { id: "liquidity-and-volume", title: "Liquidity and Volume", level: 2 },
+        { id: "chains", title: "chains", level: 2 },
+        { id: "supported-chains", title: "Supported Chains", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Is SushiSwap a copy of Uniswap?", answer: "SushiSwap originally forked Uniswap's code but has since differentiated with unique features like yield farming with SUSHI rewards, a lending platform, and cross-chain expansion." },

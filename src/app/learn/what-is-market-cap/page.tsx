@@ -17,12 +17,18 @@ export default function WhatIsMarketCapPage() {
       readTime="7 min"
       intro="Market capitalization (market cap) is the total value of a cryptocurrency calculated by multiplying the current price per token by the number of tokens in circulation. It is the most common metric used to rank and compare cryptocurrencies, though understanding its nuances and limitations is essential for making informed investment decisions."
       toc={[
-        { id: "what-is-market-cap", title: "Understanding Market Cap", level: 2 },
-        { id: "calculation", title: "How Market Cap Is Calculated", level: 2 },
+        { id: "what-is-market-cap", title: "what-is-market-cap", level: 2 },
+        { id: "understanding-market-cap", title: "Understanding Market Cap", level: 2 },
+        { id: "calculation", title: "calculation", level: 2 },
+        { id: "how-market-cap-is-calculated", title: "How Market Cap Is Calculated", level: 2 },
+        { id: "market-cap-tiers", title: "market-cap-tiers", level: 2 },
         { id: "market-cap-tiers", title: "Market Cap Tiers", level: 2 },
-        { id: "fdv", title: "Fully Diluted Valuation", level: 2 },
-        { id: "limitations", title: "Limitations of Market Cap", level: 2 },
-        { id: "using-market-cap", title: "Using Market Cap for Analysis", level: 2 },
+        { id: "fdv", title: "fdv", level: 2 },
+        { id: "fully-diluted-valuation", title: "Fully Diluted Valuation", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-of-market-cap", title: "Limitations of Market Cap", level: 2 },
+        { id: "using-market-cap", title: "using-market-cap", level: 2 },
+        { id: "using-market-cap-for-analysis", title: "Using Market Cap for Analysis", level: 2 }
       ]}
       faqs={[
         { question: "Is a higher market cap better?", answer: "Higher market cap generally indicates a more established project with greater liquidity and lower volatility. However, it also means less room for growth compared to smaller projects. The best market cap depends on your risk tolerance and investment goals." },

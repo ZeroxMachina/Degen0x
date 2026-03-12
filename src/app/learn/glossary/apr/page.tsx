@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is APR (Annual Percentage Rate)? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is APR (Annual Percentage Rate)? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what APR means in crypto, how it differs from APY, how to calculate it, and how to evaluate APR rates across DeFi protocols.",
 };
 
@@ -11,7 +11,16 @@ export default function AprPage() {
   return (
     <LearnPageLayout title="What Is APR (Annual Percentage Rate)?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="APR (Annual Percentage Rate) is the yearly rate of return earned on an investment or paid on a loan, expressed as a percentage without accounting for compounding. In crypto, APR is commonly used to describe staking rewards, lending yields, and DeFi farming returns. Understanding APR helps you compare different yield opportunities and make informed decisions about where to deploy your capital."
-      toc={[{ id: "definition", title: "What Is APR?", level: 2 }, { id: "apr-vs-apy", title: "APR vs APY", level: 2 }, { id: "apr-in-defi", title: "APR in DeFi", level: 2 }, { id: "evaluating-apr", title: "Evaluating APR Rates", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-apr", title: "What Is APR?", level: 2 },
+        { id: "apr-vs-apy", title: "apr-vs-apy", level: 2 },
+        { id: "apr-vs-apy", title: "APR vs APY", level: 2 },
+        { id: "apr-in-defi", title: "apr-in-defi", level: 2 },
+        { id: "apr-in-defi", title: "APR in DeFi", level: 2 },
+        { id: "evaluating-apr", title: "evaluating-apr", level: 2 },
+        { id: "evaluating-apr-rates", title: "Evaluating APR Rates", level: 2 }
+      ]}
       faqs={[{ question: "Is a higher APR always better?", answer: "Not necessarily. Higher APR often correlates with higher risk. A 100% APR on a new, unaudited protocol carries significantly more risk than a 5% APR on Aave. Extremely high APRs are often unsustainable and funded by token emissions that dilute the token's value. Always assess risk alongside return." },
         { question: "Why do crypto APRs change so frequently?", answer: "DeFi APRs are dynamic and change based on supply and demand. When more capital enters a lending pool, the APR decreases because rewards are spread across more depositors. When capital exits, APR increases. Staking APRs change with the total amount staked and network inflation parameters." }]}
       relatedArticles={[{ title: "APY", href: "/learn/glossary/apy", category: "Glossary" }, { title: "Yield", href: "/learn/glossary/yield", category: "Glossary" }, { title: "What Is Staking?", href: "/learn/what-is-staking", category: "Learn Crypto" }, { title: "DeFi Yield Strategies", href: "/learn/defi-yield-strategies", category: "Learn Crypto" }]}

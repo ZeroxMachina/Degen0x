@@ -1,4 +1,4 @@
-// CryptoDegen Email Drip Sequence Templates
+// degen0x Email Drip Sequence Templates
 // Onboarding (5 emails) + Weekly Digest template
 // Use with SendGrid, Resend, Loops, or any ESP
 
@@ -11,7 +11,7 @@ export interface EmailTemplate {
   text: string;
 }
 
-const BASE_URL = "https://cryptodegen.com";
+const BASE_URL = "https://degen0x.com";
 const UNSUBSCRIBE_URL = "{{unsubscribe_url}}";
 const FIRST_NAME = "{{first_name}}";
 
@@ -52,7 +52,7 @@ const emailStyles = `
 // ─────────────────────────────────────────────
 export const EMAIL_WELCOME: EmailTemplate = {
   id: "welcome",
-  subject: "🎉 Welcome to CryptoDegen — Your Crypto Journey Starts Now",
+  subject: "🎉 Welcome to degen0x — Your Crypto Journey Starts Now",
   preheader: "Here's everything you need to get started in crypto.",
   delayDays: 0,
   html: `<!DOCTYPE html>
@@ -60,13 +60,13 @@ export const EMAIL_WELCOME: EmailTemplate = {
 <body>
 <div class="wrapper">
   <div class="header">
-    <div class="logo">CryptoDegen</div>
+    <div class="logo">degen0x</div>
     <p style="color:#8b949e;font-size:13px;margin:6px 0 0">Your Trusted Guide to the Crypto World</p>
   </div>
   <div class="body">
     <div class="badge">WELCOME</div>
     <h1>Hey ${FIRST_NAME}, you're in! 👋</h1>
-    <p>You just joined <span class="highlight">thousands of crypto degens</span> using CryptoDegen to navigate the digital asset world smarter.</p>
+    <p>You just joined <span class="highlight">thousands of crypto degens</span> using degen0x to navigate the digital asset world smarter.</p>
     <p>Whether you're brand new to crypto or a seasoned degen, we've got the tools, reviews, and guides to help you make better decisions.</p>
 
     <div class="card">
@@ -95,12 +95,12 @@ export const EMAIL_WELCOME: EmailTemplate = {
 
     <br>
     <div style="text-align:center">
-      <a href="${BASE_URL}" class="cta">Explore CryptoDegen →</a>
+      <a href="${BASE_URL}" class="cta">Explore degen0x →</a>
     </div>
 
     <hr class="divider">
 
-    <h2>What's Inside CryptoDegen?</h2>
+    <h2>What's Inside degen0x?</h2>
     <div class="stat-row">
       <div class="stat"><div class="stat-num">2,400+</div><div class="stat-label">Pages & Reviews</div></div>
       <div class="stat"><div class="stat-num">65+</div><div class="stat-label">Free Tools</div></div>
@@ -108,15 +108,15 @@ export const EMAIL_WELCOME: EmailTemplate = {
     </div>
 
     <p>Over the next few days, I'll send you our most powerful guides and tools. Watch for them!</p>
-    <p style="color:#e6edf3;font-weight:600">— The CryptoDegen Team</p>
+    <p style="color:#e6edf3;font-weight:600">— The degen0x Team</p>
   </div>
   <div class="footer">
-    <p>You received this because you signed up at <a href="${BASE_URL}">cryptodegen.com</a></p>
+    <p>You received this because you signed up at <a href="${BASE_URL}">degen0x.com</a></p>
     <p><a href="${UNSUBSCRIBE_URL}">Unsubscribe</a> · <a href="${BASE_URL}/privacy">Privacy Policy</a></p>
   </div>
 </div>
 </body></html>`,
-  text: `Welcome to CryptoDegen, ${FIRST_NAME}!
+  text: `Welcome to degen0x, ${FIRST_NAME}!
 
 Here's what to do first:
 
@@ -131,7 +131,7 @@ Here's what to do first:
 
 Explore everything at ${BASE_URL}
 
-– The CryptoDegen Team
+– The degen0x Team
 
 Unsubscribe: ${UNSUBSCRIBE_URL}`,
 };
@@ -148,7 +148,7 @@ export const EMAIL_BEGINNER_PACK: EmailTemplate = {
 <html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><style>${emailStyles}</style></head>
 <body>
 <div class="wrapper">
-  <div class="header"><div class="logo">CryptoDegen</div></div>
+  <div class="header"><div class="logo">degen0x</div></div>
   <div class="body">
     <div class="badge">STARTER PACK</div>
     <h1>Your Crypto Blueprint 📋</h1>
@@ -189,7 +189,7 @@ export const EMAIL_BEGINNER_PACK: EmailTemplate = {
     </div>
   </div>
   <div class="footer">
-    <p>You received this because you signed up at <a href="${BASE_URL}">cryptodegen.com</a></p>
+    <p>You received this because you signed up at <a href="${BASE_URL}">degen0x.com</a></p>
     <p><a href="${UNSUBSCRIBE_URL}">Unsubscribe</a> · <a href="${BASE_URL}/privacy">Privacy Policy</a></p>
   </div>
 </div>
@@ -221,7 +221,7 @@ export const EMAIL_DEFI_DIVE: EmailTemplate = {
 <html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><style>${emailStyles}</style></head>
 <body>
 <div class="wrapper">
-  <div class="header"><div class="logo">CryptoDegen</div></div>
+  <div class="header"><div class="logo">degen0x</div></div>
   <div class="body">
     <div class="badge">DEFI UNLOCKED</div>
     <h1>The $50B DeFi Opportunity ⚡</h1>
@@ -267,7 +267,7 @@ export const EMAIL_DEFI_DIVE: EmailTemplate = {
     </div>
   </div>
   <div class="footer">
-    <p>You received this because you signed up at <a href="${BASE_URL}">cryptodegen.com</a></p>
+    <p>You received this because you signed up at <a href="${BASE_URL}">degen0x.com</a></p>
     <p><a href="${UNSUBSCRIBE_URL}">Unsubscribe</a> · <a href="${BASE_URL}/privacy">Privacy Policy</a></p>
   </div>
 </div>
@@ -299,11 +299,11 @@ export const EMAIL_POWER_TOOLS: EmailTemplate = {
 <html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><style>${emailStyles}</style></head>
 <body>
 <div class="wrapper">
-  <div class="header"><div class="logo">CryptoDegen</div></div>
+  <div class="header"><div class="logo">degen0x</div></div>
   <div class="body">
     <div class="badge">POWER TOOLS</div>
     <h1>7 Tools That'll Make You a Better Crypto Investor 🛠️</h1>
-    <p>Hey ${FIRST_NAME}, over 65 free tools live on CryptoDegen. Here are the 7 our users keep coming back to.</p>
+    <p>Hey ${FIRST_NAME}, over 65 free tools live on degen0x. Here are the 7 our users keep coming back to.</p>
 
     ${[
       { emoji: "📊", title: "DCA Calculator", desc: "Model how regular investments compound over time. Change amounts, frequencies, and coins.", href: `${BASE_URL}/tools/dca-calculator` },
@@ -325,7 +325,7 @@ export const EMAIL_POWER_TOOLS: EmailTemplate = {
     </div>
   </div>
   <div class="footer">
-    <p>You received this because you signed up at <a href="${BASE_URL}">cryptodegen.com</a></p>
+    <p>You received this because you signed up at <a href="${BASE_URL}">degen0x.com</a></p>
     <p><a href="${UNSUBSCRIBE_URL}">Unsubscribe</a> · <a href="${BASE_URL}/privacy">Privacy Policy</a></p>
   </div>
 </div>
@@ -357,7 +357,7 @@ export const EMAIL_ADVANCED_DEGEN: EmailTemplate = {
 <html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><style>${emailStyles}</style></head>
 <body>
 <div class="wrapper">
-  <div class="header"><div class="logo">CryptoDegen</div></div>
+  <div class="header"><div class="logo">degen0x</div></div>
   <div class="body">
     <div class="badge">ADVANCED DEGEN</div>
     <h1>Going Deeper — Advanced Crypto Strategies 🦍</h1>
@@ -402,7 +402,7 @@ export const EMAIL_ADVANCED_DEGEN: EmailTemplate = {
     </div>
   </div>
   <div class="footer">
-    <p>You received this because you signed up at <a href="${BASE_URL}">cryptodegen.com</a></p>
+    <p>You received this because you signed up at <a href="${BASE_URL}">degen0x.com</a></p>
     <p><a href="${UNSUBSCRIBE_URL}">Unsubscribe</a> · <a href="${BASE_URL}/privacy">Privacy Policy</a></p>
   </div>
 </div>
@@ -427,7 +427,7 @@ Unsubscribe: ${UNSUBSCRIBE_URL}`,
 // ─────────────────────────────────────────────
 export const EMAIL_WEEKLY_DIGEST: EmailTemplate = {
   id: "weekly-digest",
-  subject: "📰 This Week in Crypto | CryptoDegen Weekly [DATE]",
+  subject: "📰 This Week in Crypto | degen0x Weekly [DATE]",
   preheader: "Market recap, DeFi yields, top tools used this week, and your trivia challenge.",
   delayDays: 7,
   html: `<!DOCTYPE html>
@@ -435,7 +435,7 @@ export const EMAIL_WEEKLY_DIGEST: EmailTemplate = {
 <body>
 <div class="wrapper">
   <div class="header">
-    <div class="logo">CryptoDegen</div>
+    <div class="logo">degen0x</div>
     <p style="color:#8b949e;font-size:13px;margin:6px 0 0">Weekly Market Update</p>
   </div>
   <div class="body">
@@ -493,8 +493,8 @@ export const EMAIL_WEEKLY_DIGEST: EmailTemplate = {
       <p>{{TOW_DESC}} <a href="{{TOW_LINK}}">Try it free →</a></p>
     </div>
 
-    <!-- NEW ON CRYPTODEGEN -->
-    <h2>📖 New on CryptoDegen</h2>
+    <!-- NEW ON DEGEN0X -->
+    <h2>📖 New on degen0x</h2>
     <div class="card">
       <p>📝 <a href="{{NEW_1_LINK}}">{{NEW_1_TITLE}}</a></p>
       <p>📝 <a href="{{NEW_2_LINK}}">{{NEW_2_TITLE}}</a></p>
@@ -502,16 +502,16 @@ export const EMAIL_WEEKLY_DIGEST: EmailTemplate = {
     </div>
 
     <div style="text-align:center;margin-top:28px">
-      <a href="${BASE_URL}" class="cta">Go to CryptoDegen →</a>
+      <a href="${BASE_URL}" class="cta">Go to degen0x →</a>
     </div>
   </div>
   <div class="footer">
-    <p>You received this because you signed up at <a href="${BASE_URL}">cryptodegen.com</a></p>
+    <p>You received this because you signed up at <a href="${BASE_URL}">degen0x.com</a></p>
     <p>Want less email? <a href="${UNSUBSCRIBE_URL}">Unsubscribe</a> · <a href="${BASE_URL}/privacy">Privacy Policy</a></p>
   </div>
 </div>
 </body></html>`,
-  text: `CryptoDegen Weekly Digest — {{WEEK_DATE}}
+  text: `degen0x Weekly Digest — {{WEEK_DATE}}
 
 This Week in Crypto, ${FIRST_NAME}
 
@@ -531,7 +531,7 @@ See all: ${BASE_URL}/tools/defi-yields
 
 Trivia Challenge: ${BASE_URL}/learn/daily-trivia
 
-Visit CryptoDegen: ${BASE_URL}
+Visit degen0x: ${BASE_URL}
 
 Unsubscribe: ${UNSUBSCRIBE_URL}`,
 };

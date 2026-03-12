@@ -26,13 +26,20 @@ export default function CryptoAirdropsGuidePage() {
       readTime="10 min"
       intro="Crypto airdrops distribute free tokens to blockchain users or community members. Projects use airdrops to incentivize adoption, reward early users, or distribute tokens fairly. Airdrops have distributed billions in token value: Uniswap's 2020 airdrop gave thousands of users free UNI tokens worth thousands each. However, airdrops attract scammers who create fake airdrop claims to steal funds or personal information. This guide explains how airdrops work, qualification requirements, how to identify legitimate airdrops, safety tips, recent notable airdrops, and common scam tactics."
       toc={[
-        { id: "what-are-airdrops", title: "What Are Crypto Airdrops?", level: 2 },
-        { id: "why-projects-airdrop", title: "Why Do Projects Use Airdrops?", level: 2 },
-        { id: "airdrop-types", title: "Types of Airdrops and Qualification", level: 2 },
-        { id: "finding-airdrops", title: "Finding Legitimate Airdrops", level: 2 },
-        { id: "airdrop-scams", title: "Identifying Airdrop Scams", level: 2 },
-        { id: "airdrop-safety", title: "Airdrop Safety Best Practices", level: 2 },
-        { id: "notable-airdrops", title: "Notable Airdrops and Their Impact", level: 2 },
+        { id: "what-are-airdrops", title: "what-are-airdrops", level: 2 },
+        { id: "what-are-crypto-airdrops", title: "What Are Crypto Airdrops?", level: 2 },
+        { id: "why-projects-airdrop", title: "why-projects-airdrop", level: 2 },
+        { id: "why-do-projects-use-airdrops", title: "Why Do Projects Use Airdrops?", level: 2 },
+        { id: "airdrop-types", title: "airdrop-types", level: 2 },
+        { id: "types-of-airdrops-and-qualification", title: "Types of Airdrops and Qualification", level: 2 },
+        { id: "finding-airdrops", title: "finding-airdrops", level: 2 },
+        { id: "finding-legitimate-airdrops", title: "Finding Legitimate Airdrops", level: 2 },
+        { id: "airdrop-scams", title: "airdrop-scams", level: 2 },
+        { id: "identifying-airdrop-scams", title: "Identifying Airdrop Scams", level: 2 },
+        { id: "airdrop-safety", title: "airdrop-safety", level: 2 },
+        { id: "airdrop-safety-best-practices", title: "Airdrop Safety Best Practices", level: 2 },
+        { id: "notable-airdrops", title: "notable-airdrops", level: 2 },
+        { id: "notable-airdrops-and-their-impact", title: "Notable Airdrops and Their Impact", level: 2 }
       ]}
       faqs={[
         {

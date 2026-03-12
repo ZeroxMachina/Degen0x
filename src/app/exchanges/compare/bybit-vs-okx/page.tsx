@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Bybit", slug: "bybit", rating: 4.5, affiliateUrl: "https://cryptodegen.com/go/bybit", features: { "Trading Fees": "0.1% spot / 0.02% futures maker", "Coins Listed": "500+", "Max Leverage": "100x", "Copy Trading": "Yes", "Trading Bots": "Yes", "Web3 Wallet": "Yes", "Launchpad": "Yes (Bybit Launchpad)", "Unified Account": "Yes" } },
-  { name: "OKX", slug: "okx", rating: 4.6, affiliateUrl: "https://cryptodegen.com/go/okx", features: { "Trading Fees": "0.08% spot maker / 0.02% futures maker", "Coins Listed": "350+", "Max Leverage": "125x", "Copy Trading": "Yes", "Trading Bots": "Yes", "Web3 Wallet": "Yes (multi-chain)", "Launchpad": "Yes (Jumpstart)", "Unified Account": "Yes" } },
+  { name: "Bybit", slug: "bybit", rating: 4.5, affiliateUrl: "https://degen0x.com/go/bybit", features: { "Trading Fees": "0.1% spot / 0.02% futures maker", "Coins Listed": "500+", "Max Leverage": "100x", "Copy Trading": "Yes", "Trading Bots": "Yes", "Web3 Wallet": "Yes", "Launchpad": "Yes (Bybit Launchpad)", "Unified Account": "Yes" } },
+  { name: "OKX", slug: "okx", rating: 4.6, affiliateUrl: "https://degen0x.com/go/okx", features: { "Trading Fees": "0.08% spot maker / 0.02% futures maker", "Coins Listed": "350+", "Max Leverage": "125x", "Copy Trading": "Yes", "Trading Bots": "Yes", "Web3 Wallet": "Yes (multi-chain)", "Launchpad": "Yes (Jumpstart)", "Unified Account": "Yes" } },
 ];
 
 const features = ["Trading Fees", "Coins Listed", "Max Leverage", "Copy Trading", "Trading Bots", "Web3 Wallet", "Launchpad", "Unified Account"];
@@ -32,7 +32,7 @@ export default function BybitVsOkxPage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Bybit vs OKX: Which Derivatives Exchange Is Better in {CURRENT_YEAR}?
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -49,7 +49,7 @@ export default function BybitVsOkxPage() {
       <ComparisonTable items={items} features={features} title="Bybit vs OKX: Head-to-Head" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Derivatives Trading</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Derivatives Trading</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Both platforms offer perpetual contracts, quarterly futures, and options. OKX supports
           up to 125x leverage while Bybit offers up to 100x. Both use mark price and funding
@@ -62,7 +62,7 @@ export default function BybitVsOkxPage() {
           need to transfer funds between sub-accounts.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Copy Trading and Bots</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Copy Trading and Bots</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Bybit has invested heavily in copy trading, offering a large marketplace of lead traders
           with transparent performance metrics. OKX also provides copy trading with detailed
@@ -70,7 +70,7 @@ export default function BybitVsOkxPage() {
           copy trading marketplace is generally considered more extensive.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Web3 Integration</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Web3 Integration</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           OKX is widely regarded as having the best exchange-integrated Web3 wallet. It supports
           dozens of chains, has a built-in DEX aggregator, and offers cross-chain swaps. Bybit&apos;s
@@ -78,15 +78,15 @@ export default function BybitVsOkxPage() {
           protocol access. For Web3-native users, OKX currently leads.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Bybit if</strong> you want a strong copy trading
+            <strong className="text-[var(--color-text)]">Choose Bybit if</strong> you want a strong copy trading
             marketplace, a rapidly growing futures platform, and more listed coins. Bybit excels at
             derivatives trading simplicity and has been gaining market share quickly.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose OKX if</strong> you want the best Web3 wallet
+            <strong className="text-[var(--color-text)]">Choose OKX if</strong> you want the best Web3 wallet
             integration, higher maximum leverage, slightly lower spot maker fees, and a more
             established platform with a unified account system.
           </p>

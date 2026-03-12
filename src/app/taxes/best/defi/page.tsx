@@ -17,10 +17,14 @@ export default function BestDefiTaxSoftwarePage() {
       readTime="9 min"
       intro="DeFi transactions create unique tax reporting challenges that not all crypto tax tools handle well. From DEX swaps and liquidity pool interactions to yield farming, lending, and complex multi-protocol strategies, DeFi activity generates transaction types that require specialized parsing and categorization. This guide identifies the best crypto tax tools for DeFi users based on protocol coverage, chain support, and categorization accuracy."
       toc={[
-        { id: "why-defi-is-hard", title: "Why DeFi Tax Reporting Is Hard", level: 2 },
-        { id: "top-tools", title: "Top DeFi Tax Tools", level: 2 },
+        { id: "why-defi-is-hard", title: "why-defi-is-hard", level: 2 },
+        { id: "why-defi-tax-reporting-is-hard", title: "Why DeFi Tax Reporting Is Hard", level: 2 },
+        { id: "top-tools", title: "top-tools", level: 2 },
+        { id: "top-defi-tax-tools", title: "Top DeFi Tax Tools", level: 2 },
+        { id: "what-to-look-for", title: "what-to-look-for", level: 2 },
         { id: "what-to-look-for", title: "What to Look For", level: 2 },
-        { id: "manual-review", title: "Manual Review Best Practices", level: 2 },
+        { id: "manual-review", title: "manual-review", level: 2 },
+        { id: "manual-review-best-practices", title: "Manual Review Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "Can any tax tool handle all DeFi transactions?", answer: "No tool handles every DeFi protocol perfectly. The best tools cover major protocols well and provide manual editing for edge cases. Always review DeFi transaction categorizations before filing, especially for newer or less common protocols." },

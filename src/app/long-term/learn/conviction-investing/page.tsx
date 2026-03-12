@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Conviction Investing in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Conviction Investing in Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn conviction investing strategies for cryptocurrency. Build deep knowledge, develop investment theses, and hold through volatility with confidence.",
 };
 
@@ -12,10 +12,14 @@ export default function ConvictionInvestingPage() {
     <LearnPageLayout title="Conviction Investing in Crypto" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="8 min read"
       intro="Conviction investing means building deep understanding of an asset and holding through extreme volatility because your thesis gives you confidence in the long-term outcome. In crypto, where 80% drawdowns are common even for the best assets, conviction is what separates successful long-term investors from those who sell at the worst possible time. Developing genuine conviction requires rigorous research, intellectual honesty, and continuous thesis validation."
       toc={[
-        { id: "building-conviction", title: "Building Genuine Conviction", level: 2 },
-        { id: "thesis-development", title: "Developing an Investment Thesis", level: 2 },
+        { id: "building-conviction", title: "building-conviction", level: 2 },
+        { id: "building-genuine-conviction", title: "Building Genuine Conviction", level: 2 },
+        { id: "thesis-development", title: "thesis-development", level: 2 },
+        { id: "developing-an-investment-thesis", title: "Developing an Investment Thesis", level: 2 },
+        { id: "holding-through-volatility", title: "holding-through-volatility", level: 2 },
         { id: "holding-through-volatility", title: "Holding Through Volatility", level: 2 },
-        { id: "thesis-invalidation", title: "When to Abandon Your Thesis", level: 2 },
+        { id: "thesis-invalidation", title: "thesis-invalidation", level: 2 },
+        { id: "when-to-abandon-your-thesis", title: "When to Abandon Your Thesis", level: 2 }
       ]}
       faqs={[
         { question: "What is conviction investing?", answer: "Conviction investing means buying and holding assets you deeply understand and believe in, based on thorough research rather than hype or price action. It means you can articulate exactly why you own an asset, what would make you sell, and why short-term price drops do not change your long-term thesis." },

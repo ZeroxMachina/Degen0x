@@ -17,7 +17,7 @@ const items: ComparisonItem[] = [
     name: "Nexo Card",
     slug: "nexo-card",
     rating: 4.2,
-    affiliateUrl: "https://cryptodegen.com/go/nexo-card",
+    affiliateUrl: "https://degen0x.com/go/nexo-card",
     features: {
       "Cashback Rate": "Up to 2% in NEXO or BTC",
       "Annual Fee": "$0",
@@ -34,7 +34,7 @@ const items: ComparisonItem[] = [
     name: "Crypto.com Visa",
     slug: "crypto-com-visa",
     rating: 4.7,
-    affiliateUrl: "https://cryptodegen.com/go/crypto-com-visa",
+    affiliateUrl: "https://degen0x.com/go/crypto-com-visa",
     features: {
       "Cashback Rate": "Up to 5% in CRO",
       "Annual Fee": "$0",
@@ -73,7 +73,7 @@ export default function NexoVsCryptoComPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Nexo Card vs Crypto.com Visa ({CURRENT_YEAR})
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -88,7 +88,7 @@ export default function NexoVsCryptoComPage() {
       <ComparisonTable items={items} features={features} title="Nexo Card vs Crypto.com Visa" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Spending Model</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Spending Model</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The Nexo Card creates a credit line backed by your deposited crypto. When you spend, you are
           borrowing against your holdings rather than selling them. This means your Bitcoin or Ethereum
@@ -97,23 +97,23 @@ export default function NexoVsCryptoComPage() {
           you spend, that crypto is gone.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Nexo Card</strong> &mdash; For long-term holders who
+          <strong className="text-[var(--color-text)]">Winner: Nexo Card</strong> &mdash; For long-term holders who
           believe their crypto will appreciate, the credit-line model preserves upside potential while
           providing spending power.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Cashback Rewards</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Cashback Rewards</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Crypto.com clearly wins on cashback. Up to 5% back on all purchases with its top tier versus
           Nexo&apos;s maximum of 2%. The gap is significant and translates to hundreds or thousands of
           dollars in additional rewards annually for high spenders.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; More than double the
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; More than double the
           cashback rate at the top tier makes this an easy call for reward-focused users.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Risk Profile</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Risk Profile</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The Nexo Card carries liquidation risk. If the value of your crypto collateral drops below a
           certain threshold, Nexo may sell your assets to cover the credit line. Crypto.com&apos;s staked
@@ -121,23 +121,23 @@ export default function NexoVsCryptoComPage() {
           liquidation; the worst case is your staked CRO loses value.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; No liquidation risk
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; No liquidation risk
           makes the prepaid model safer, even though your staked CRO can still lose value.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Global Availability</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Global Availability</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Nexo Card is available in over 200 countries via the Mastercard network. Crypto.com covers 100
           or more countries via Visa. Both offer zero foreign transaction fees. Nexo has a slight edge in
           reach, though both serve all major markets.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Nexo Card</strong> &mdash; Wider availability gives
+          <strong className="text-[var(--color-text)]">Winner: Nexo Card</strong> &mdash; Wider availability gives
           Nexo a slight edge for users in less-served regions.
         </p>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mt-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Choose the Nexo Card if you are a long-term crypto holder who does not want to sell your
             assets to fund daily spending. The credit-line model is elegant for HODLers, and the zero

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Rocket Pool (RPL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Rocket Pool (RPL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Rocket Pool (RPL), the decentralized Ethereum staking protocol. Discover how it works, tokenomics, use cases, and how to buy RPL.",
 };
@@ -17,12 +17,18 @@ export default function RocketPoolPage() {
       readTime="8 min read"
       intro="Rocket Pool is a decentralized Ethereum staking protocol that allows anyone to run a validator node with as little as 8 ETH (compared to Ethereum's 32 ETH requirement) or stake any amount of ETH to receive rETH, a liquid staking token. Designed with decentralization as a core principle, Rocket Pool distributes validators across a permissionless set of node operators."
       toc={[
-        { id: "what-is", title: "What Is Rocket Pool?", level: 2 },
-        { id: "how-it-works", title: "How Does Rocket Pool Work?", level: 2 },
-        { id: "tokenomics", title: "RPL Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy RPL", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-rocket-pool", title: "What Is Rocket Pool?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-rocket-pool-work", title: "How Does Rocket Pool Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "rpl-tokenomics", title: "RPL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-rpl", title: "How to Buy RPL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

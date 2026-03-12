@@ -16,12 +16,18 @@ export default function GateIoVsMEXCPage() {
       readTime="11 min"
       intro="Gate.io and MEXC are two of the largest centralized exchanges for altcoin trading, both offering massive token selections and competitive fees. If you are looking for early access to new tokens and wide variety, these platforms are natural competitors. This comparison breaks down every key difference to help you choose."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "coin-selection", title: "Coin Selection & Listings", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "futures", title: "Futures & Derivatives", level: 2 },
-        { id: "security", title: "Security & Transparency", level: 2 },
-        { id: "verdict", title: "Verdict", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "coin-selection", title: "coin-selection", level: 2 },
+        { id: "coin-selection-listings", title: "Coin Selection & Listings", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "futures", title: "futures", level: 2 },
+        { id: "futures-derivatives", title: "Futures & Derivatives", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-transparency", title: "Security & Transparency", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "verdict", title: "Verdict", level: 2 }
       ]}
       faqs={[
         {

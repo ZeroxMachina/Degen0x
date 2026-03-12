@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Legal Status of Crypto Around the World (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Legal Status of Crypto Around the World (${CURRENT_YEAR}) | degen0x`,
   description:
     "A global overview of cryptocurrency's legal status: where crypto is legal, restricted, or banned, how different countries approach regulation, and the trend toward comprehensive frameworks.",
 };
@@ -17,11 +17,16 @@ export default function CryptoLegalStatusPage() {
       readTime="9 min read"
       intro="The legal status of cryptocurrency varies dramatically across the globe, from countries that have embraced it as legal tender to those that have imposed outright bans. As the crypto market has grown to trillions of dollars in value, most jurisdictions have moved from ignoring crypto to actively developing regulatory frameworks. Understanding the legal landscape in different regions is essential for anyone investing in, using, or building in the crypto space, as the rules that apply to your activities depend entirely on where you are located."
       toc={[
-        { id: "global-overview", title: "Global Regulatory Overview", level: 2 },
-        { id: "crypto-friendly", title: "Crypto-Friendly Jurisdictions", level: 2 },
-        { id: "restrictive", title: "Restrictive and Ban Jurisdictions", level: 2 },
-        { id: "developing", title: "Developing Regulatory Frameworks", level: 2 },
-        { id: "trends", title: "Global Regulatory Trends", level: 2 },
+        { id: "global-overview", title: "global-overview", level: 2 },
+        { id: "global-regulatory-overview", title: "Global Regulatory Overview", level: 2 },
+        { id: "crypto-friendly", title: "crypto-friendly", level: 2 },
+        { id: "crypto-friendly-jurisdictions", title: "Crypto-Friendly Jurisdictions", level: 2 },
+        { id: "restrictive", title: "restrictive", level: 2 },
+        { id: "restrictive-and-ban-jurisdictions", title: "Restrictive and Ban Jurisdictions", level: 2 },
+        { id: "developing", title: "developing", level: 2 },
+        { id: "developing-regulatory-frameworks", title: "Developing Regulatory Frameworks", level: 2 },
+        { id: "trends", title: "trends", level: 2 },
+        { id: "global-regulatory-trends", title: "Global Regulatory Trends", level: 2 }
       ]}
       faqs={[
         {

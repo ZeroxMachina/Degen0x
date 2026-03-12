@@ -18,12 +18,18 @@ export default function CryptoTaxesSingaporePage() {
       readTime="9 min read"
       intro="Singapore is one of the most crypto-friendly tax jurisdictions in the world. There is no capital gains tax, which means individual investors who buy and sell cryptocurrency for investment purposes generally owe no tax on their profits. However, businesses and individuals whose crypto activities constitute a trade may be subject to income tax. Understanding the line between investment and trading is key to Singapore's crypto tax treatment."
       toc={[
-        { id: "no-cgt", title: "No Capital Gains Tax in Singapore", level: 2 },
-        { id: "income-tax", title: "When Crypto Income Is Taxable", level: 2 },
-        { id: "trading-vs-investing", title: "Trading vs Investing Classification", level: 2 },
-        { id: "gst-treatment", title: "GST Treatment of Crypto", level: 2 },
-        { id: "business-crypto", title: "Businesses Using Crypto", level: 2 },
-        { id: "compliance", title: "IRAS Compliance & Record Keeping", level: 2 },
+        { id: "no-cgt", title: "no-cgt", level: 2 },
+        { id: "no-capital-gains-tax-in-singapore", title: "No Capital Gains Tax in Singapore", level: 2 },
+        { id: "income-tax", title: "income-tax", level: 2 },
+        { id: "when-crypto-income-is-taxable", title: "When Crypto Income Is Taxable", level: 2 },
+        { id: "trading-vs-investing", title: "trading-vs-investing", level: 2 },
+        { id: "trading-vs-investing-classification", title: "Trading vs Investing Classification", level: 2 },
+        { id: "gst-treatment", title: "gst-treatment", level: 2 },
+        { id: "gst-treatment-of-crypto", title: "GST Treatment of Crypto", level: 2 },
+        { id: "business-crypto", title: "business-crypto", level: 2 },
+        { id: "businesses-using-crypto", title: "Businesses Using Crypto", level: 2 },
+        { id: "compliance", title: "compliance", level: 2 },
+        { id: "iras-compliance-record-keeping", title: "IRAS Compliance & Record Keeping", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto tax-free in Singapore?", answer: "Capital gains from crypto investments are tax-free in Singapore since there is no capital gains tax. However, if your crypto activities are deemed to be a trade or business, the profits are taxable as income at prevailing corporate or personal income tax rates." },

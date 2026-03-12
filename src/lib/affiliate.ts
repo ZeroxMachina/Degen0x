@@ -51,7 +51,7 @@ export function getAffiliateUrl(
     position?: string;   // e.g. "rank-1"
   } = {}
 ): string {
-  const { source = "cryptodegen", medium = "affiliate", campaign = "general", position } = options;
+  const { source = "degen0x", medium = "affiliate", campaign = "general", position } = options;
   const params = new URLSearchParams({
     utm_source: source,
     utm_medium: medium,
@@ -67,7 +67,7 @@ export function buildTrackedUrl(
   utmParams: Record<string, string> = {}
 ): string {
   const baseUrl = partner.url !== `/go/${partner.slug}` ? partner.url : partner.fallbackUrl;
-  const url = new URL(baseUrl.startsWith("http") ? baseUrl : `https://cryptodegen.com${baseUrl}`);
+  const url = new URL(baseUrl.startsWith("http") ? baseUrl : `https://degen0x.com${baseUrl}`);
   Object.entries(utmParams).forEach(([k, v]) => url.searchParams.set(k, v));
   return url.toString();
 }

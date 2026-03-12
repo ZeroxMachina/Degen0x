@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Jito (JTO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Jito (JTO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Jito (JTO), the Solana liquid staking and MEV protocol. Discover how it works, tokenomics, use cases, and how to buy JTO.",
 };
@@ -17,12 +17,18 @@ export default function JitoPage() {
       readTime="8 min read"
       intro="Jito is the leading liquid staking protocol on Solana, providing JitoSOL as a liquid staking token that earns enhanced yields through a combination of staking rewards and MEV (Maximal Extractable Value) revenue. Jito also operates the Jito-Solana validator client that optimizes MEV extraction for the Solana network."
       toc={[
-        { id: "what-is", title: "What Is Jito?", level: 2 },
-        { id: "how-it-works", title: "How Does Jito Work?", level: 2 },
-        { id: "tokenomics", title: "JTO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy JTO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-jito", title: "What Is Jito?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-jito-work", title: "How Does Jito Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "jto-tokenomics", title: "JTO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-jto", title: "How to Buy JTO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

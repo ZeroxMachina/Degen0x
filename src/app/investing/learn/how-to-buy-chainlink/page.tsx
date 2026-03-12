@@ -25,13 +25,20 @@ export default function HowToBuyChainlinkPage() {
       readTime="12 min"
       intro="Chainlink (LINK) is the leading decentralized oracle network, providing real-world data to smart contracts across virtually every major blockchain. Chainlink's infrastructure is critical to DeFi, powering price feeds, verifiable randomness, and automation for protocols managing billions of dollars. With the launch of CCIP (Cross-Chain Interoperability Protocol) and LINK staking, Chainlink has expanded beyond oracles into cross-chain infrastructure. This guide covers how to buy LINK, its role in the crypto ecosystem, staking options, and investment considerations."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose an Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-chainlink", title: "Step 4: Buy Chainlink", level: 2 },
-        { id: "store-chainlink", title: "Step 5: Store Your LINK", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-an-exchange", title: "Step 1: Choose an Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-chainlink", title: "buy-chainlink", level: 2 },
+        { id: "step-4-buy-chainlink", title: "Step 4: Buy Chainlink", level: 2 },
+        { id: "store-chainlink", title: "store-chainlink", level: 2 },
+        { id: "step-5-store-your-link", title: "Step 5: Store Your LINK", level: 2 },
+        { id: "link-staking", title: "link-staking", level: 2 },
         { id: "link-staking", title: "LINK Staking", level: 2 },
-        { id: "chainlink-ecosystem", title: "Chainlink's Role in the Ecosystem", level: 2 },
+        { id: "chainlink-ecosystem", title: "chainlink-ecosystem", level: 2 },
+        { id: "chainlink", title: "Chainlink", level: 2 }
       ]}
       faqs={[
         {

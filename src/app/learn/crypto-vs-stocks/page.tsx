@@ -17,12 +17,18 @@ export default function CryptoVsStocksPage() {
       readTime="13 min"
       intro="Both cryptocurrency and stocks represent investment opportunities, but they are fundamentally different asset classes with distinct characteristics, risk profiles, and behaviors. Understanding these differences is essential for making informed investment decisions and building a well-balanced portfolio. This guide compares crypto and stocks across the dimensions that matter most to investors: ownership, regulation, volatility, returns, trading mechanics, and portfolio strategy."
       toc={[
+        { id: "fundamental-differences", title: "fundamental-differences", level: 2 },
         { id: "fundamental-differences", title: "Fundamental Differences", level: 2 },
+        { id: "risk-and-volatility", title: "risk-and-volatility", level: 2 },
         { id: "risk-and-volatility", title: "Risk and Volatility", level: 2 },
-        { id: "regulation-protection", title: "Regulation and Investor Protection", level: 2 },
+        { id: "regulation-protection", title: "regulation-protection", level: 2 },
+        { id: "regulation-and-investor-protection", title: "Regulation and Investor Protection", level: 2 },
+        { id: "trading-mechanics", title: "trading-mechanics", level: 2 },
         { id: "trading-mechanics", title: "Trading Mechanics", level: 2 },
-        { id: "returns-performance", title: "Historical Returns", level: 2 },
-        { id: "portfolio-strategy", title: "Portfolio Strategy", level: 2 },
+        { id: "returns-performance", title: "returns-performance", level: 2 },
+        { id: "historical-returns", title: "Historical Returns", level: 2 },
+        { id: "portfolio-strategy", title: "portfolio-strategy", level: 2 },
+        { id: "portfolio-strategy", title: "Portfolio Strategy", level: 2 }
       ]}
       faqs={[
         {

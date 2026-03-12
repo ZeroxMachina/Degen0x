@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is PayPal USD (PYUSD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is PayPal USD (PYUSD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about PayPal USD (PYUSD), PayPal's regulated stablecoin on Ethereum and Solana. Discover PYUSD reserves, integration, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function PyusdPage() {
       readTime="8 min read"
       intro="PayPal USD (PYUSD) is a regulated stablecoin issued by PayPal in partnership with Paxos Trust Company. Fully backed by US dollar deposits, US Treasuries, and cash equivalents, PYUSD brings the credibility of a major fintech company to the stablecoin space. It is deployed on Ethereum and Solana and integrated into PayPal and Venmo's payment platforms."
       toc={[
-        { id: "what-is", title: "What Is PayPal USD?", level: 2 },
-        { id: "how-it-works", title: "How Does PayPal USD Work?", level: 2 },
-        { id: "tokenomics", title: "PYUSD Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy PYUSD", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-paypal-usd", title: "What Is PayPal USD?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-paypal-usd-work", title: "How Does PayPal USD Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "pyusd-tokenomics", title: "PYUSD Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-pyusd", title: "How to Buy PYUSD", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is PayPal USD?", answer: "PYUSD is a regulated stablecoin from PayPal issued by Paxos Trust Company. It is fully backed by USD and equivalents, deployed on Ethereum and Solana, and integrated into PayPal and Venmo." },

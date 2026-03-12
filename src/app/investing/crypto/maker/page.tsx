@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Maker (MKR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Maker (MKR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Maker (MKR), the governance token behind the MakerDAO protocol and DAI stablecoin. Discover MKR tokenomics, use cases, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function MakerPage() {
       readTime="8 min read"
       intro="Maker (MKR) is the governance token of the MakerDAO protocol, one of the oldest and most influential decentralized finance platforms on Ethereum. MakerDAO enables users to generate DAI, a decentralized stablecoin pegged to the US dollar, by depositing crypto collateral into smart contract vaults. MKR holders govern the protocol and serve as backstop capital."
       toc={[
-        { id: "what-is", title: "What Is Maker?", level: 2 },
-        { id: "how-it-works", title: "How Does Maker Work?", level: 2 },
-        { id: "tokenomics", title: "MKR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MKR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-maker", title: "What Is Maker?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-maker-work", title: "How Does Maker Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mkr-tokenomics", title: "MKR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mkr", title: "How to Buy MKR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -17,12 +17,18 @@ export default function WhatIsInteroperabilityPage() {
       readTime="8 min"
       intro="Blockchain interoperability refers to the ability of different blockchain networks to communicate, share data, and transfer assets with each other seamlessly. As the blockchain ecosystem has expanded to hundreds of networks — each with its own strengths, communities, and applications — interoperability has become critical for creating a connected, user-friendly Web3 experience rather than a collection of isolated digital islands."
       toc={[
-        { id: "why-interop", title: "Why Interoperability Matters", level: 2 },
-        { id: "approaches", title: "Interoperability Approaches", level: 2 },
-        { id: "bridges", title: "Cross-Chain Bridges", level: 2 },
-        { id: "messaging", title: "Cross-Chain Messaging", level: 2 },
-        { id: "risks", title: "Interoperability Risks", level: 2 },
-        { id: "chain-abstraction", title: "Chain Abstraction", level: 2 },
+        { id: "why-interop", title: "why-interop", level: 2 },
+        { id: "why-interoperability-matters", title: "Why Interoperability Matters", level: 2 },
+        { id: "approaches", title: "approaches", level: 2 },
+        { id: "interoperability-approaches", title: "Interoperability Approaches", level: 2 },
+        { id: "bridges", title: "bridges", level: 2 },
+        { id: "cross-chain-bridges", title: "Cross-Chain Bridges", level: 2 },
+        { id: "messaging", title: "messaging", level: 2 },
+        { id: "cross-chain-messaging", title: "Cross-Chain Messaging", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "interoperability-risks", title: "Interoperability Risks", level: 2 },
+        { id: "chain-abstraction", title: "chain-abstraction", level: 2 },
+        { id: "chain-abstraction", title: "Chain Abstraction", level: 2 }
       ]}
       faqs={[
         { question: "Why can't blockchains communicate natively?", answer: "Each blockchain is an independent system with its own consensus rules, state, and programming model. They have no built-in way to verify what happens on other chains. Interoperability solutions bridge this gap by creating mechanisms for one chain to verify and trust information from another." },

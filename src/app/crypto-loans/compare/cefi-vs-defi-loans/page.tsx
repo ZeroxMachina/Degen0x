@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `CeFi vs DeFi Loans Compared (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `CeFi vs DeFi Loans Compared (${CURRENT_YEAR}) | degen0x`,
   description: "Detailed comparison of CeFi and DeFi crypto loans. Understand the trade-offs in security, rates, privacy, and user experience for crypto borrowing.",
 };
 
@@ -16,10 +16,14 @@ export default function CefiVsDefiLoansPage() {
       readTime="10 min read"
       intro="The choice between CeFi and DeFi for crypto loans is one of the most important decisions borrowers face. CeFi platforms like Nexo offer familiar interfaces and fiat access, while DeFi protocols like Aave provide transparency and self-custody. Each approach carries distinct risks and benefits that matter for your financial safety."
       toc={[
+        { id: "key-differences", title: "key-differences", level: 2 },
         { id: "key-differences", title: "Key Differences", level: 2 },
-        { id: "security-models", title: "Security Models Compared", level: 2 },
+        { id: "security-models", title: "security-models", level: 2 },
+        { id: "security-models-compared", title: "Security Models Compared", level: 2 },
+        { id: "user-experience", title: "user-experience", level: 2 },
         { id: "user-experience", title: "User Experience", level: 2 },
-        { id: "choosing", title: "How to Choose", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "how-to-choose", title: "How to Choose", level: 2 }
       ]}
       faqs={[
         { question: "Is DeFi lending safer than CeFi?", answer: "They have different risk profiles. DeFi eliminates counterparty risk but introduces smart contract risk. CeFi offers insurance and support but requires trusting a company with your funds. Neither is universally safer; it depends on the specific platform and your risk tolerance." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Supra (SUPRA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Supra (SUPRA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Supra (SUPRA), the IntraLayer oracle and cross-chain infrastructure platform. Discover how it works, tokenomics, use cases, and how to buy SUPRA.",
 };
@@ -17,12 +17,18 @@ export default function SupraPage() {
       readTime="8 min read"
       intro="Supra is an IntraLayer that provides decentralized oracle services, verifiable randomness, cross-chain communication, and high-performance blockchain infrastructure. Combining a vertically integrated Layer 1 blockchain with oracle and bridge capabilities, Supra aims to be a one-stop infrastructure platform that connects Web2 data sources with Web3 smart contracts across all major blockchains."
       toc={[
-        { id: "what-is", title: "What Is Supra?", level: 2 },
-        { id: "how-it-works", title: "How Does Supra Work?", level: 2 },
-        { id: "tokenomics", title: "SUPRA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SUPRA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-supra", title: "What Is Supra?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-supra-work", title: "How Does Supra Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "supra-tokenomics", title: "SUPRA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-supra", title: "How to Buy SUPRA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

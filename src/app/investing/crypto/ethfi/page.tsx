@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Ether.fi (ETHFI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Ether.fi (ETHFI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Ether.fi (ETHFI), the decentralized liquid restaking protocol. Discover how it works, tokenomics, use cases, and how to buy ETHFI.",
 };
@@ -17,12 +17,18 @@ export default function EthfiPage() {
       readTime="8 min read"
       intro="Ether.fi is a decentralized, non-custodial liquid restaking protocol that allows users to stake ETH, earn staking rewards, restake on EigenLayer for additional yield, and receive eETH as a liquid token representing their position. Ether.fi is the largest liquid restaking protocol by total value locked."
       toc={[
-        { id: "what-is", title: "What Is Ether.fi?", level: 2 },
-        { id: "how-it-works", title: "How Does Ether.fi Work?", level: 2 },
-        { id: "tokenomics", title: "ETHFI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ETHFI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ether-fi", title: "What Is Ether.fi?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-ether-fi-work", title: "How Does Ether.fi Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ethfi-tokenomics", title: "ETHFI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ethfi", title: "How to Buy ETHFI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

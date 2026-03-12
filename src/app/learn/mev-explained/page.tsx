@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `MEV (Maximal Extractable Value) Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `MEV (Maximal Extractable Value) Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand MEV: what maximal extractable value is, how sandwich attacks and frontrunning work, the role of MEV searchers and builders, and how to protect yourself from MEV extraction.",
 };
@@ -17,11 +17,16 @@ export default function MevExplainedPage() {
       readTime="9 min read"
       intro="Maximal Extractable Value (MEV) refers to the profit that block producers and specialized actors (searchers) can extract by including, excluding, or reordering transactions within a block. Originally called Miner Extractable Value when Ethereum used Proof of Work, MEV has become a defining feature of blockchain economics, with billions extracted annually. Understanding MEV is essential for any active DeFi user, as it directly impacts the prices you receive on trades and the costs you incur in transactions."
       toc={[
+        { id: "what-is-mev", title: "what-is-mev", level: 2 },
         { id: "what-is-mev", title: "What Is MEV?", level: 2 },
-        { id: "types-of-mev", title: "Types of MEV Extraction", level: 2 },
-        { id: "mev-supply-chain", title: "The MEV Supply Chain", level: 2 },
-        { id: "impact", title: "Impact on Users", level: 2 },
-        { id: "protection", title: "Protecting Yourself from MEV", level: 2 },
+        { id: "types-of-mev", title: "types-of-mev", level: 2 },
+        { id: "types-of-mev-extraction", title: "Types of MEV Extraction", level: 2 },
+        { id: "mev-supply-chain", title: "mev-supply-chain", level: 2 },
+        { id: "the-mev-supply-chain", title: "The MEV Supply Chain", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-users", title: "Impact on Users", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "protecting-yourself-from-mev", title: "Protecting Yourself from MEV", level: 2 }
       ]}
       faqs={[
         {

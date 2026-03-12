@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Decentralized Governance Models (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Decentralized Governance Models (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about decentralized governance models for DAOs and Web3 protocols. Covers token voting, delegation, optimistic governance, and designing effective on-chain decision-making systems.",
 };
@@ -17,11 +17,16 @@ export default function DecentralizedGovernancePage() {
       readTime="10 min"
       intro="Decentralized governance enables communities to collectively make decisions about protocol development, treasury allocation, and strategic direction without centralized authority. As Web3 projects mature and decentralize, governance design becomes critical to long-term sustainability. Poor governance can lead to voter apathy, whale domination, or governance attacks. Well-designed governance creates efficient decision-making, broad participation, and genuine community ownership. This guide covers the major governance models, their trade-offs, and practical considerations for designing effective decentralized governance systems."
       toc={[
-        { id: "token-voting", title: "Token-Weighted Voting", level: 2 },
-        { id: "delegation", title: "Delegation and Representative Governance", level: 2 },
-        { id: "optimistic-governance", title: "Optimistic and Hybrid Models", level: 2 },
-        { id: "governance-tooling", title: "Governance Tooling and Infrastructure", level: 2 },
-        { id: "design-principles", title: "Governance Design Principles", level: 2 },
+        { id: "token-voting", title: "token-voting", level: 2 },
+        { id: "token-weighted-voting", title: "Token-Weighted Voting", level: 2 },
+        { id: "delegation", title: "delegation", level: 2 },
+        { id: "delegation-and-representative-governance", title: "Delegation and Representative Governance", level: 2 },
+        { id: "optimistic-governance", title: "optimistic-governance", level: 2 },
+        { id: "optimistic-and-hybrid-models", title: "Optimistic and Hybrid Models", level: 2 },
+        { id: "governance-tooling", title: "governance-tooling", level: 2 },
+        { id: "governance-tooling-and-infrastructure", title: "Governance Tooling and Infrastructure", level: 2 },
+        { id: "design-principles", title: "design-principles", level: 2 },
+        { id: "governance-design-principles", title: "Governance Design Principles", level: 2 }
       ]}
       faqs={[
         {

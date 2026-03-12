@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `OpenSea vs Blur (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `OpenSea vs Blur (${CURRENT_YEAR}) | degen0x`,
   description: "Compare OpenSea vs Blur NFT marketplaces. Fees, features, trader tools, and which platform is better for buying and selling NFTs.",
 };
 
@@ -16,12 +16,18 @@ export default function OpenSeaVsBlur() {
       readTime="8 min read"
       intro="OpenSea and Blur are the two dominant NFT marketplaces on Ethereum, each catering to different types of NFT users. OpenSea was the original NFT marketplace leader, while Blur disrupted the market with pro-trading tools and zero fees. This comparison examines their current strengths and which platform suits your NFT activity."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "features", title: "Features and Tools", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "features", title: "features", level: 2 },
+        { id: "features-and-tools", title: "Features and Tools", level: 2 },
+        { id: "user-experience", title: "user-experience", level: 2 },
         { id: "user-experience", title: "User Experience", level: 2 },
-        { id: "collections", title: "Collections and Chains", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "collections", title: "collections", level: 2 },
+        { id: "collections-and-chains", title: "Collections and Chains", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which has lower fees?", answer: "Blur charges 0% marketplace fees, while OpenSea charges 2.5%. This makes Blur significantly cheaper for trading. Both enforce creator royalties to varying degrees." },

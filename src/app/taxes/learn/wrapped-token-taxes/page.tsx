@@ -17,10 +17,14 @@ export default function WrappedTokenTaxesPage() {
       readTime="7 min"
       intro="Wrapped tokens like WETH, WBTC, and various liquid staking derivatives are ubiquitous in DeFi but create tax questions about whether wrapping and unwrapping constitutes a taxable event. The answer depends on the specific wrapping mechanism and how closely the wrapped token tracks the underlying asset. This guide explains the tax treatment of common wrapped token scenarios."
       toc={[
-        { id: "wrapping-basics", title: "Wrapped Tokens Tax Basics", level: 2 },
-        { id: "weth-wbtc", title: "WETH, WBTC, and 1:1 Wraps", level: 2 },
-        { id: "liquid-staking", title: "Liquid Staking Derivatives", level: 2 },
-        { id: "reporting-wrapped", title: "Reporting Wrapped Token Transactions", level: 2 },
+        { id: "wrapping-basics", title: "wrapping-basics", level: 2 },
+        { id: "wrapped-tokens-tax-basics", title: "Wrapped Tokens Tax Basics", level: 2 },
+        { id: "weth-wbtc", title: "weth-wbtc", level: 2 },
+        { id: "weth-wbtc-and-1-1-wraps", title: "WETH, WBTC, and 1:1 Wraps", level: 2 },
+        { id: "liquid-staking", title: "liquid-staking", level: 2 },
+        { id: "liquid-staking-derivatives", title: "Liquid Staking Derivatives", level: 2 },
+        { id: "reporting-wrapped", title: "reporting-wrapped", level: 2 },
+        { id: "reporting-wrapped-token-transactions", title: "Reporting Wrapped Token Transactions", level: 2 }
       ]}
       faqs={[
         { question: "Is wrapping ETH to WETH taxable?", answer: "Most tax professionals consider wrapping ETH to WETH a non-taxable event because WETH is a direct 1:1 representation of ETH on the same chain and can be unwrapped at any time without any economic change. Your cost basis and holding period carry over. However, the IRS has not issued specific guidance on this point." },

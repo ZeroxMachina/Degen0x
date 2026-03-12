@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Theta Network (THETA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Theta Network (THETA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Theta Network (THETA), the decentralized video delivery and AI infrastructure network. Discover how it works, tokenomics, use cases, and how to buy THETA.",
 };
@@ -17,12 +17,18 @@ export default function ThetaPage() {
       readTime="8 min read"
       intro="Theta Network is a decentralized infrastructure for video streaming, AI computation, and edge computing. By leveraging a global network of user-operated nodes, Theta reduces content delivery costs while providing distributed GPU computing for AI workloads. THETA is the governance and staking token of the network."
       toc={[
-        { id: "what-is", title: "What Is Theta Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Theta Work?", level: 2 },
-        { id: "tokenomics", title: "THETA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy THETA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-theta-network", title: "What Is Theta Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-theta-work", title: "How Does Theta Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "theta-tokenomics", title: "THETA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-theta", title: "How to Buy THETA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

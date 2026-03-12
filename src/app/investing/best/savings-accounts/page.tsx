@@ -41,7 +41,7 @@ const PLATFORMS = [
       "Higher APY requires holding NEXO tokens",
       "Not available in some US states",
     ],
-    affiliateUrl: "https://cryptodegen.com/go/nexo",
+    affiliateUrl: "https://degen0x.com/go/nexo",
   },
   {
     rank: 2,
@@ -73,7 +73,7 @@ const PLATFORMS = [
       "Regulatory risk in some jurisdictions",
       "Higher rates require lock-up periods",
     ],
-    affiliateUrl: "https://cryptodegen.com/go/binance",
+    affiliateUrl: "https://degen0x.com/go/binance",
   },
   {
     rank: 3,
@@ -105,7 +105,7 @@ const PLATFORMS = [
       "Limited crypto earn options",
       "No BTC savings rate",
     ],
-    affiliateUrl: "https://cryptodegen.com/go/coinbase",
+    affiliateUrl: "https://degen0x.com/go/coinbase",
   },
   {
     rank: 4,
@@ -137,7 +137,7 @@ const PLATFORMS = [
       "Some staking has unbonding periods",
       "SEC issues forced removal of US staking (workaround via on-chain)",
     ],
-    affiliateUrl: "https://cryptodegen.com/go/kraken",
+    affiliateUrl: "https://degen0x.com/go/kraken",
   },
   {
     rank: 5,
@@ -170,7 +170,7 @@ const PLATFORMS = [
       "Requires understanding of DeFi wallets",
       "Gas fees on Ethereum can eat into returns",
     ],
-    affiliateUrl: "https://cryptodegen.com/go/aave",
+    affiliateUrl: "https://degen0x.com/go/aave",
   },
 ];
 
@@ -222,7 +222,7 @@ export default function CryptoSavingsAccountsPage() {
     "@type": "Article",
     headline: `Best Crypto Savings Accounts of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -240,11 +240,11 @@ export default function CryptoSavingsAccountsPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-3">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-3">
           Best Crypto Savings Accounts {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-2">
-          Last updated: {CURRENT_MONTH} {CURRENT_YEAR} · Reviewed by the CryptoDegen research team
+          Last updated: {CURRENT_MONTH} {CURRENT_YEAR} · Reviewed by the degen0x research team
         </p>
 
         <AffiliateDisclosure />
@@ -262,7 +262,7 @@ export default function CryptoSavingsAccountsPage() {
         {/* Quick Compare Table */}
         <div className="glass rounded-xl overflow-hidden mb-10">
           <div className="p-4 border-b border-[var(--color-border)]">
-            <h2 className="text-lg font-bold text-white">Quick Rate Comparison</h2>
+            <h2 className="text-lg font-bold text-[var(--color-text)]">Quick Rate Comparison</h2>
           </div>
           <div className="overflow-x-auto">
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
@@ -312,7 +312,7 @@ export default function CryptoSavingsAccountsPage() {
         </div>
 
         {/* Full Reviews */}
-        <h2 className="text-2xl font-bold text-white mb-6">In-Depth Platform Reviews</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">In-Depth Platform Reviews</h2>
         <div className="space-y-8">
           {PLATFORMS.map((platform) => (
             <div key={platform.slug} className="glass rounded-xl overflow-hidden">
@@ -428,7 +428,7 @@ export default function CryptoSavingsAccountsPage() {
 
         {/* Internal Links */}
         <div className="glass rounded-xl p-6 mt-8">
-          <h3 className="font-bold text-white mb-4">Related Guides</h3>
+          <h3 className="font-bold text-[var(--color-text)] mb-4">Related Guides</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {[
               { href: "/investing/best/staking", label: "Best Staking Platforms" },

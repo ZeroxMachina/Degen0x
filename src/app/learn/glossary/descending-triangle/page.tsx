@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Descending Triangle Pattern in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Descending Triangle Pattern in Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a descending triangle is, how to identify this bearish chart pattern, volume dynamics, breakdown confirmation, and crypto trading strategies.",
 };
 
@@ -16,10 +16,14 @@ export default function DescendingTrianglePage() {
       readTime="6 min read"
       intro="A descending triangle is a bearish chart pattern characterized by a flat lower support line and a descending upper trendline connecting lower highs. The pattern signals that sellers are becoming increasingly aggressive, pushing price lower with each rally while buyers defend a specific support level. Descending triangles typically resolve with a downside breakdown and are commonly found during crypto downtrends as continuation patterns."
       toc={[
-        { id: "what-is-descending", title: "What Is a Descending Triangle?", level: 2 },
-        { id: "identifying", title: "Identifying the Pattern", level: 2 },
+        { id: "what-is-descending", title: "what-is-descending", level: 2 },
+        { id: "what-is-a-descending-triangle", title: "What Is a Descending Triangle?", level: 2 },
+        { id: "identifying", title: "identifying", level: 2 },
+        { id: "identifying-the-pattern", title: "Identifying the Pattern", level: 2 },
+        { id: "breakdown-signals", title: "breakdown-signals", level: 2 },
         { id: "breakdown-signals", title: "Breakdown Signals", level: 2 },
-        { id: "trading", title: "Trading Descending Triangles", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-descending-triangles", title: "Trading Descending Triangles", level: 2 }
       ]}
       faqs={[
         { question: "Do descending triangles always break down?", answer: "No. While descending triangles break down approximately 65-70% of the time, upside breakouts do occur and can be very powerful because they catch bearish traders off guard. Upside breakouts from descending triangles often occur when the broader market sentiment shifts or unexpected bullish news emerges." },

@@ -7,7 +7,16 @@ export default function SmartContractCoverExplainedPage() {
   return (
     <LearnPageLayout title="Smart Contract Cover Explained" categoryName="Insurance" categorySlug="insurance" readTime="7 min"
       intro="Smart contract cover is the most popular form of DeFi insurance, protecting your deposited funds against losses caused by bugs, vulnerabilities, and exploits in smart contract code. With hundreds of millions lost to DeFi hacks each year, understanding how this coverage works is essential for anyone with significant DeFi positions."
-      toc={[{ id: "what-it-covers", title: "What It Covers", level: 2 }, { id: "how-to-buy", title: "How to Buy Cover", level: 2 }, { id: "claims", title: "The Claim Process", level: 2 }, { id: "choosing", title: "Choosing the Right Cover", level: 2 }]}
+      toc={[
+        { id: "what-it-covers", title: "what-it-covers", level: 2 },
+        { id: "what-it-covers", title: "What It Covers", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-cover", title: "How to Buy Cover", level: 2 },
+        { id: "claims", title: "claims", level: 2 },
+        { id: "the-claim-process", title: "The Claim Process", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-the-right-cover", title: "Choosing the Right Cover", level: 2 }
+      ]}
       faqs={[
         { question: "Does smart contract cover protect against rug pulls?", answer: "It depends on the policy. Some providers include malicious actions by protocol teams as covered events, while others only cover technical exploits by external attackers. Always read the cover wording carefully before purchasing." },
         { question: "What if the insurance protocol itself gets hacked?", answer: "This is a real risk in DeFi insurance. Insurance protocols mitigate this through multiple audits, bug bounties, and formal verification. Some users spread coverage across multiple insurance providers to reduce this risk." },

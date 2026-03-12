@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Key Crypto Market Indicators to Watch (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Key Crypto Market Indicators to Watch (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn the most important crypto market indicators: Bitcoin dominance, Fear and Greed Index, funding rates, exchange flows, stablecoin supply, and on-chain metrics that signal market direction.",
 };
@@ -17,10 +17,14 @@ export default function CryptoMarketIndicatorsPage() {
       readTime="9 min read"
       intro="Crypto market indicators are data points and metrics that help investors gauge market conditions, sentiment, and potential direction. Unlike traditional markets that rely heavily on economic data releases and corporate earnings, crypto has developed its own unique set of indicators leveraging the transparency of blockchain data. Monitoring these indicators provides valuable context for investment decisions and helps you avoid the common trap of relying solely on price action and social media sentiment."
       toc={[
-        { id: "sentiment", title: "Sentiment Indicators", level: 2 },
-        { id: "on-chain", title: "On-Chain Indicators", level: 2 },
-        { id: "derivatives", title: "Derivatives Market Indicators", level: 2 },
-        { id: "macro", title: "Macro and Cross-Market Indicators", level: 2 },
+        { id: "sentiment", title: "sentiment", level: 2 },
+        { id: "sentiment-indicators", title: "Sentiment Indicators", level: 2 },
+        { id: "on-chain", title: "on-chain", level: 2 },
+        { id: "on-chain-indicators", title: "On-Chain Indicators", level: 2 },
+        { id: "derivatives", title: "derivatives", level: 2 },
+        { id: "derivatives-market-indicators", title: "Derivatives Market Indicators", level: 2 },
+        { id: "macro", title: "macro", level: 2 },
+        { id: "macro-and-cross-market-indicators", title: "Macro and Cross-Market Indicators", level: 2 }
       ]}
       faqs={[
         {

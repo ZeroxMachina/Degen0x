@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Spot vs Futures Trading (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Spot vs Futures Trading (${CURRENT_YEAR}) | degen0x`,
   description: "Understand the differences between spot and futures trading in crypto. Mechanics, risks, leverage, funding rates, and which style fits your strategy.",
 };
 
@@ -16,13 +16,20 @@ export default function SpotVsFuturesTrading() {
       readTime="10 min read"
       intro="Spot and futures trading represent fundamentally different approaches to crypto markets. Spot trading involves buying and owning actual cryptocurrency, while futures trading uses contracts to speculate on price movements with leverage. Understanding the mechanics, risks, and use cases of each style is essential for choosing the right approach for your goals."
       toc={[
-        { id: "spot-trading", title: "What Is Spot Trading?", level: 2 },
-        { id: "futures-trading", title: "What Is Futures Trading?", level: 2 },
+        { id: "spot-trading", title: "spot-trading", level: 2 },
+        { id: "what-is-spot-trading", title: "What Is Spot Trading?", level: 2 },
+        { id: "futures-trading", title: "futures-trading", level: 2 },
+        { id: "what-is-futures-trading", title: "What Is Futures Trading?", level: 2 },
+        { id: "key-differences", title: "key-differences", level: 2 },
         { id: "key-differences", title: "Key Differences", level: 2 },
-        { id: "leverage-margin", title: "Leverage and Margin", level: 2 },
+        { id: "leverage-margin", title: "leverage-margin", level: 2 },
+        { id: "leverage-and-margin", title: "Leverage and Margin", level: 2 },
+        { id: "funding-rates", title: "funding-rates", level: 2 },
         { id: "funding-rates", title: "Funding Rates", level: 2 },
-        { id: "risks", title: "Risk Comparison", level: 2 },
-        { id: "choosing", title: "Which Should You Choose?", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risk-comparison", title: "Risk Comparison", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Can you lose more than your investment in futures?", answer: "With isolated margin, your loss is limited to the margin allocated. With cross margin, your entire account balance can be at risk. Liquidation mechanisms prevent negative balances on most exchanges, but losses can be severe." },

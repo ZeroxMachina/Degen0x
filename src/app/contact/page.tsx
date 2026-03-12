@@ -12,7 +12,7 @@ export default function ContactPage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Contact", href: "/contact" }]} />
 
-      <h1 className="text-4xl font-bold text-white mb-6">Contact Us</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-6">Contact Us</h1>
 
       <div className="prose-crypto mb-12">
         <p>
@@ -22,27 +22,27 @@ export default function ContactPage() {
 
       <div className="grid md:grid-cols-2 gap-8">
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h2 className="text-lg font-semibold text-white mb-2">General Inquiries</h2>
+          <h2 className="text-lg font-semibold text-[var(--color-text)] mb-2">General Inquiries</h2>
           <p className="text-sm text-[var(--color-text-secondary)] mb-3">Questions, feedback, or suggestions</p>
-          <p className="text-sm text-[var(--color-primary)]">hello@cryptodegen.com</p>
+          <p className="text-sm text-[var(--color-primary)]">hello@degen0x.com</p>
         </div>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h2 className="text-lg font-semibold text-white mb-2">Partnership & Advertising</h2>
+          <h2 className="text-lg font-semibold text-[var(--color-text)] mb-2">Partnership & Advertising</h2>
           <p className="text-sm text-[var(--color-text-secondary)] mb-3">Business partnerships and advertising opportunities</p>
-          <p className="text-sm text-[var(--color-primary)]">partners@cryptodegen.com</p>
+          <p className="text-sm text-[var(--color-primary)]">partners@degen0x.com</p>
         </div>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h2 className="text-lg font-semibold text-white mb-2">Press & Media</h2>
+          <h2 className="text-lg font-semibold text-[var(--color-text)] mb-2">Press & Media</h2>
           <p className="text-sm text-[var(--color-text-secondary)] mb-3">Press inquiries and media requests</p>
-          <p className="text-sm text-[var(--color-primary)]">press@cryptodegen.com</p>
+          <p className="text-sm text-[var(--color-primary)]">press@degen0x.com</p>
         </div>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h2 className="text-lg font-semibold text-white mb-2">Content Corrections</h2>
+          <h2 className="text-lg font-semibold text-[var(--color-text)] mb-2">Content Corrections</h2>
           <p className="text-sm text-[var(--color-text-secondary)] mb-3">Report errors or outdated information</p>
-          <p className="text-sm text-[var(--color-primary)]">corrections@cryptodegen.com</p>
+          <p className="text-sm text-[var(--color-primary)]">corrections@degen0x.com</p>
         </div>
       </div>
     </div>

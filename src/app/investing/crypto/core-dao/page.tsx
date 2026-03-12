@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Core DAO (CORE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Core DAO (CORE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Core DAO (CORE), the Bitcoin-powered EVM blockchain using Satoshi Plus consensus. Discover how it works, tokenomics, use cases, and how to buy CORE.",
 };
@@ -17,12 +17,18 @@ export default function CoreDaoPage() {
       readTime="8 min read"
       intro="Core DAO is a Layer 1 blockchain that combines Bitcoin mining hash power with a delegated proof-of-stake consensus mechanism called Satoshi Plus. This unique design leverages Bitcoin's security while providing an EVM-compatible smart contract platform, allowing Bitcoin miners to earn additional rewards by delegating their hash power to Core validators without diverting resources from Bitcoin mining."
       toc={[
-        { id: "what-is", title: "What Is Core DAO?", level: 2 },
-        { id: "how-it-works", title: "How Does Core DAO Work?", level: 2 },
-        { id: "tokenomics", title: "CORE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy CORE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-core-dao", title: "What Is Core DAO?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-core-dao-work", title: "How Does Core DAO Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "core-tokenomics", title: "CORE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-core", title: "How to Buy CORE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Core DAO?", answer: "Core DAO is a Layer 1 blockchain using Satoshi Plus consensus that combines Bitcoin mining hash power with delegated proof-of-stake for an EVM-compatible smart contract platform secured by Bitcoin miners." },

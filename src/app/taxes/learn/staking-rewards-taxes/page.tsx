@@ -18,12 +18,18 @@ export default function StakingRewardsTaxesPage() {
       readTime="11 min read"
       intro="Staking has become one of the most popular ways to earn passive income on crypto holdings, especially since Ethereum's transition to proof-of-stake. However, staking rewards are taxable in most jurisdictions, and the timing, classification, and calculation of that tax can be complex. This guide covers how staking rewards are taxed across major jurisdictions and the emerging complexities around liquid staking derivatives."
       toc={[
-        { id: "when-taxed", title: "When Staking Rewards Are Taxed", level: 2 },
-        { id: "income-vs-gains", title: "Income Tax vs Capital Gains", level: 2 },
-        { id: "liquid-staking", title: "Liquid Staking Tax Implications", level: 2 },
-        { id: "validators", title: "Running a Validator Node", level: 2 },
-        { id: "by-country", title: "Staking Taxes by Country", level: 2 },
-        { id: "tracking", title: "Tracking Staking Rewards", level: 2 },
+        { id: "when-taxed", title: "when-taxed", level: 2 },
+        { id: "when-staking-rewards-are-taxed", title: "When Staking Rewards Are Taxed", level: 2 },
+        { id: "income-vs-gains", title: "income-vs-gains", level: 2 },
+        { id: "income-tax-vs-capital-gains", title: "Income Tax vs Capital Gains", level: 2 },
+        { id: "liquid-staking", title: "liquid-staking", level: 2 },
+        { id: "liquid-staking-tax-implications", title: "Liquid Staking Tax Implications", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "running-a-validator-node", title: "Running a Validator Node", level: 2 },
+        { id: "by-country", title: "by-country", level: 2 },
+        { id: "staking-taxes-by-country", title: "Staking Taxes by Country", level: 2 },
+        { id: "tracking", title: "tracking", level: 2 },
+        { id: "tracking-staking-rewards", title: "Tracking Staking Rewards", level: 2 }
       ]}
       faqs={[
         { question: "Are staking rewards taxed as income?", answer: "In most jurisdictions, yes. Staking rewards are treated as ordinary income at fair market value when received. In the US, there is ongoing legal debate about whether newly created staking tokens should be taxed at creation or only when sold, following the Jarrett v. United States case." },

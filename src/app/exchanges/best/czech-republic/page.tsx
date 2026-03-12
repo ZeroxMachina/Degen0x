@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Czech Republic (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Czech Republic (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Czech Republic. Find CZK-friendly platforms with local bank support, competitive fees, and EU regulatory compliance.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesCzechRepublic() {
       readTime="8 min read"
       intro="The Czech Republic has established itself as a crypto-friendly nation in Central Europe, with Prague hosting numerous blockchain companies and a vibrant trading community. The Czech National Bank oversees financial regulations, and Czech traders can access major exchanges with CZK and EUR deposit options. With a strong tech sector and progressive regulatory outlook, the Czech Republic offers excellent conditions for crypto trading."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Czech Republic", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "CZK Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-czech-republic", title: "Top Exchanges for Czech Republic", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "czk-payment-methods", title: "CZK Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Czech Republic?", answer: "Yes, cryptocurrency is legal in the Czech Republic. The country follows EU AML directives and MiCA regulations. Prague is considered one of Europe's most crypto-friendly cities with widespread Bitcoin ATM availability." },

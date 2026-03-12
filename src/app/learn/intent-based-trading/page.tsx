@@ -17,14 +17,14 @@ export default function IntentBasedTradingPage() {
       readTime="16 min"
       intro="Intent-based architectures represent a fundamental shift in how decentralized exchanges work. Instead of users submitting transactions to the mempool and hoping they get executed fairly, users express their intent to trade — what they want to exchange and acceptable price ranges. Solvers compete to fulfill intents in the best possible way, eliminating MEV exploitation and enabling sophisticated trading strategies. Platforms like UniswapX, 1inch Fusion, and CowSwap are pioneering this model. This guide explains intents, how intent-based systems work, MEV protection mechanisms, and why this architecture is the future of on-chain trading."
       toc={[
-        { id: "what-are-intents", title: "What Are Intents in Crypto?", level: 2 },
-        { id: "traditional-dex-problems", title: "Problems with Traditional DEX Architectures", level: 2 },
-        { id: "intent-based-mechanics", title: "How Intent-Based Systems Work", level: 2 },
-        { id: "uniswapx-explained", title: "UniswapX: Uniswap's Intent Protocol", level: 2 },
-        { id: "1inch-fusion", title: "1inch Fusion: Solver-Based Trading", level: 2 },
-        { id: "cowswap-cow-protocol", title: "CoW Swap: Coincidences of Wants", level: 2 },
-        { id: "mev-protection", title: "MEV Protection Through Intents", level: 2 },
-        { id: "future-implications", title: "The Future of On-Chain Trading", level: 2 },
+        { id: "what-are-intents", title: "what-are-intents", level: 2 },
+        { id: "what-are-intents-in-crypto", title: "What Are Intents in Crypto?", level: 2 },
+        { id: "traditional-dex-problems", title: "traditional-dex-problems", level: 2 },
+        { id: "problems-with-traditional-dex-architectures", title: "Problems with Traditional DEX Architectures", level: 2 },
+        { id: "intent-based-mechanics", title: "intent-based-mechanics", level: 2 },
+        { id: "how-intent-based-systems-work", title: "How Intent-Based Systems Work", level: 2 },
+        { id: "uniswapx-explained", title: "uniswapx-explained", level: 2 },
+        { id: "uniswapx-uniswap", title: "UniswapX: Uniswap", level: 2 }
       ]}
       faqs={[
         {
@@ -51,14 +51,14 @@ export default function IntentBasedTradingPage() {
           question: "Will intent-based systems become the standard?",
           answer:
             "Likely yes, for DeFi trading specifically. Intent-based architectures offer genuine improvements in MEV protection, execution quality, and user experience. As more solvers enter the market and infrastructure matures, intent-based systems will become increasingly attractive compared to traditional AMMs. However, different architectures will persist for different use cases.",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "What Is DeFi?", href: "/learn/what-is-defi", category: "Learn Crypto" },
         { title: "DEX Explained", href: "/learn/dex-explained", category: "Learn Crypto" },
         { title: "MEV: Miner Extractable Value", href: "/learn/mev-explained", category: "Learn Crypto" },
         { title: "Ethereum Gas & Transactions", href: "/learn/ethereum-gas", category: "Learn Crypto" },
-        { title: "Smart Contracts Explained", href: "/learn/smart-contracts", category: "Learn Crypto" },
+        { title: "Smart Contracts Explained", href: "/learn/smart-contracts", category: "Learn Crypto" }
       ]}
     >
       <h2 id="what-are-intents">What Are Intents in Crypto?</h2>

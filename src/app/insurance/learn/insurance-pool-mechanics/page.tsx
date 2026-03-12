@@ -16,10 +16,14 @@ export default function InsurancePoolMechanicsPage() {
       readTime="10 min"
       intro="DeFi insurance pools are the capital reserves backing coverage policies. Understanding how pools work, how capital is managed, and how claims affect solvency helps both coverage buyers and capital providers make informed decisions."
       toc={[
-        { id: "section-1", title: "Pool Structure", level: 2 },
-        { id: "section-2", title: "Capital Management", level: 2 },
-        { id: "section-3", title: "Risk and Returns for Providers", level: 2 },
-        { id: "section-4", title: "Pool Health Assessment", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "pool-structure", title: "Pool Structure", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "capital-management", title: "Capital Management", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "risk-and-returns-for-providers", title: "Risk and Returns for Providers", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "pool-health-assessment", title: "Pool Health Assessment", level: 2 }
       ]}
       faqs={[
         { question: "How do insurance pools work?", answer: "Insurance pools aggregate capital from providers who earn yield from premiums paid by coverage buyers. When claims are approved, payouts come from the pool. The pool must maintain sufficient capital to cover potential claims while generating returns for providers." },

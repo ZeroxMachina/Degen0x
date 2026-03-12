@@ -16,10 +16,14 @@ export default function BestFoodDeliveryPage() {
       readTime="7 min"
       intro="Ordering food delivery with cryptocurrency is possible through gift cards, crypto debit cards, and select platforms that accept digital assets directly. Whether you prefer DoorDash, Uber Eats, or Grubhub, there are reliable methods to pay for your meals with Bitcoin and other cryptocurrencies."
       toc={[
-        { id: "gift-cards", title: "Food Delivery Gift Cards with Crypto", level: 2 },
-        { id: "debit-cards", title: "Using Crypto Debit Cards", level: 2 },
-        { id: "direct-payments", title: "Direct Crypto Payment Options", level: 2 },
-        { id: "rewards", title: "Earning Crypto Back on Food Orders", level: 2 },
+        { id: "gift-cards", title: "gift-cards", level: 2 },
+        { id: "food-delivery-gift-cards-with-crypto", title: "Food Delivery Gift Cards with Crypto", level: 2 },
+        { id: "debit-cards", title: "debit-cards", level: 2 },
+        { id: "using-crypto-debit-cards", title: "Using Crypto Debit Cards", level: 2 },
+        { id: "direct-payments", title: "direct-payments", level: 2 },
+        { id: "direct-crypto-payment-options", title: "Direct Crypto Payment Options", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "earning-crypto-back-on-food-orders", title: "Earning Crypto Back on Food Orders", level: 2 }
       ]}
       faqs={[
         { question: "Can I order DoorDash with Bitcoin?", answer: "DoorDash does not accept Bitcoin directly, but you can purchase DoorDash gift cards with crypto through Bitrefill or use a crypto debit card from BitPay or Crypto.com to pay for DoorDash orders." },

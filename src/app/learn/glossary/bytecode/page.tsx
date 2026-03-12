@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function BytecodePage() {
   return (
     <LearnPageLayout title="What Is Bytecode?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="Bytecode is the low-level, machine-readable code that smart contracts are compiled into before deployment on blockchain virtual machines. When developers write smart contracts in Solidity or other high-level languages, the code is compiled into bytecode that the Ethereum Virtual Machine (EVM) can execute. Understanding bytecode is important for contract verification and security analysis."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "compilation", title: "From Source to Bytecode", level: 2 },{ id: "verification", title: "Bytecode Verification", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "compilation", title: "compilation", level: 2 },
+        { id: "from-source-to-bytecode", title: "From Source to Bytecode", level: 2 },
+        { id: "verification", title: "verification", level: 2 },
+        { id: "bytecode-verification", title: "Bytecode Verification", level: 2 }
+      ]}
       faqs={[
         { question: "Can I read bytecode?", answer: "Raw bytecode is a hexadecimal string that is not human-readable. However, decompilers and disassemblers can convert bytecode back to opcodes (individual instructions) or approximate high-level code. Verified contracts on Etherscan show the original source code alongside the bytecode, making analysis straightforward." },
         { question: "Why does bytecode matter for security?", answer: "The bytecode is what actually executes on the blockchain, not the source code. If a project publishes friendly-looking source code but deploys different bytecode, the actual behavior will differ from what is shown. Source code verification on block explorers confirms that the published source compiles to the deployed bytecode." },

@@ -25,7 +25,7 @@ export default function OptimismPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Optimism (OP) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function OptimismPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">OP</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2022</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">4,294,967,296 OP</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Optimistic Rollup (Ethereum security)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">OP</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2022</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">4,294,967,296 OP</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Optimistic Rollup (Ethereum security)</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Optimism?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Optimism?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Optimism is an Ethereum Layer 2 network that uses optimistic rollup technology to bundle
           transactions off-chain and post compressed data to Ethereum for security. This enables
@@ -68,7 +68,7 @@ export default function OptimismPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Optimism hosts major DeFi protocols including Velodrome (the leading DEX on OP), Aave,
           Synthetix, and numerous other applications. The OP token is used for governance in the
@@ -80,7 +80,7 @@ export default function OptimismPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           OP's primary risk is that the Superchain model is still evolving, and revenue sharing
           mechanisms between chains are not yet fully implemented. Competition from Arbitrum (which
@@ -93,7 +93,7 @@ export default function OptimismPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Optimism</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Optimism</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           OP is available on major exchanges including Coinbase, Binance, Kraken, and OKX. You can
           also bridge ETH to Optimism and swap for OP directly on the network using DEXs like

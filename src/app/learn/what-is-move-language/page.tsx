@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is the Move Programming Language? Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is the Move Programming Language? Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what the Move programming language is, how it differs from Solidity, which blockchains use it, and why it's considered a next-generation smart contract language.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsMoveLanguagePage() {
       readTime="8 min read"
       intro="Move is a smart contract programming language originally developed at Meta for the Diem blockchain project. It was designed from the ground up with safety and security as core principles, addressing many of the vulnerabilities common in Solidity and the EVM. Move is now the foundation for several high-performance blockchains including Aptos and Sui, and represents a fundamental evolution in how smart contracts are written and executed."
       toc={[
+        { id: "what-is-move", title: "what-is-move", level: 2 },
         { id: "what-is-move", title: "What Is Move?", level: 2 },
+        { id: "move-vs-solidity", title: "move-vs-solidity", level: 2 },
         { id: "move-vs-solidity", title: "Move vs Solidity", level: 2 },
-        { id: "move-blockchains", title: "Blockchains Using Move", level: 2 },
-        { id: "developer-ecosystem", title: "The Move Developer Ecosystem", level: 2 },
+        { id: "move-blockchains", title: "move-blockchains", level: 2 },
+        { id: "blockchains-using-move", title: "Blockchains Using Move", level: 2 },
+        { id: "developer-ecosystem", title: "developer-ecosystem", level: 2 },
+        { id: "the-move-developer-ecosystem", title: "The Move Developer Ecosystem", level: 2 }
       ]}
       faqs={[
         {

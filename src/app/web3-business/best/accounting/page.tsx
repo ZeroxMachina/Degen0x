@@ -106,7 +106,7 @@ export default function AccountingPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Accounting Software ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -124,16 +124,16 @@ export default function AccountingPage() {
           business sizes and complexities.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Bitwave</strong> leads our rankings for its enterprise-grade
-          capabilities and deep ERP integrations. <strong className="text-white">Cryptio</strong> excels
+          <strong className="text-[var(--color-text)]">Bitwave</strong> leads our rankings for its enterprise-grade
+          capabilities and deep ERP integrations. <strong className="text-[var(--color-text)]">Cryptio</strong> excels
           at producing clean audit trails for companies working with traditional accounting firms. For
-          institutional-grade fund reporting, <strong className="text-white">Tres Finance</strong> provides
+          institutional-grade fund reporting, <strong className="text-[var(--color-text)]">Tres Finance</strong> provides
           the most sophisticated position tracking and valuation tools.
         </p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -147,7 +147,7 @@ export default function AccountingPage() {
       </section>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Key Features to Compare</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Key Features to Compare</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "Multi-Chain Tracking", desc: "The ability to automatically ingest and categorize transactions across all chains your business operates on." },
@@ -158,7 +158,7 @@ export default function AccountingPage() {
             { title: "Multi-Entity Support", desc: "Separate tracking for multiple legal entities, subsidiaries, or DAO structures under one account." },
           ].map((item) => (
             <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-              <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+              <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
             </div>
           ))}

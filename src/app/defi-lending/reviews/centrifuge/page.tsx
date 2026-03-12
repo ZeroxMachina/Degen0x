@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Centrifuge Review (${CURRENT_YEAR}): Real-World Asset DeFi Lending | CryptoDegen`,
+  title: `Centrifuge Review (${CURRENT_YEAR}): Real-World Asset DeFi Lending | degen0x`,
   description: "In-depth Centrifuge review covering real-world asset tokenization, Tinlake pools, CFG token, and bridging traditional finance with DeFi lending.",
 };
 

@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
@@ -865,13 +867,13 @@ export default function NFTPortfolioTracker() {
               <div className="flex gap-2">
                 <button
                   onClick={exportAsJSON}
-                  className="px-4 py-2 rounded-lg text-sm font-medium bg-[#238636] text-white hover:bg-[#2ea043] transition-colors"
+                  className="px-4 py-2 rounded-lg text-sm font-medium bg-[#238636] text-[var(--color-text)] hover:bg-[#2ea043] transition-colors"
                 >
                   Export JSON
                 </button>
                 <button
                   onClick={exportAsCSV}
-                  className="px-4 py-2 rounded-lg text-sm font-medium bg-[#238636] text-white hover:bg-[#2ea043] transition-colors"
+                  className="px-4 py-2 rounded-lg text-sm font-medium bg-[#238636] text-[var(--color-text)] hover:bg-[#2ea043] transition-colors"
                 >
                   Export CSV
                 </button>
@@ -978,9 +980,9 @@ export default function NFTPortfolioTracker() {
                           </p>
                           <p
                             className="text-xs font-medium mt-1"
-                            style={{ color: pctColor(col.pnLPct) }}
+                            style={{ color: pctColor(col.pnlPct) }}
                           >
-                            {pctLabel(col.pnLPct)}
+                            {pctLabel(col.pnlPct)}
                           </p>
                         </div>
                       </div>
@@ -1007,7 +1009,7 @@ export default function NFTPortfolioTracker() {
                                     </p>
                                     <div className="flex gap-2 mt-1">
                                       <span
-                                        className="px-2 py-1 rounded text-xs font-medium text-white"
+                                        className="px-2 py-1 rounded text-xs font-medium text-[var(--color-text)]"
                                         style={{
                                           backgroundColor: rarityBgColor(
                                             nft.rarity
@@ -1161,9 +1163,9 @@ export default function NFTPortfolioTracker() {
                         </td>
                         <td
                           className="px-6 py-4 text-right text-sm font-semibold"
-                          style={{ color: pctColor(col.pnLPct) }}
+                          style={{ color: pctColor(col.pnlPct) }}
                         >
-                          {pctLabel(col.pnLPct)}
+                          {pctLabel(col.pnlPct)}
                         </td>
                       </tr>
                     ))}
@@ -1225,7 +1227,7 @@ export default function NFTPortfolioTracker() {
                       </td>
                       <td className="px-6 py-4">
                         <span
-                          className="px-3 py-1 rounded-full text-xs font-bold text-white"
+                          className="px-3 py-1 rounded-full text-xs font-bold text-[var(--color-text)]"
                           style={{
                             backgroundColor: rarityBgColor(nft.rarity),
                           }}

@@ -3,7 +3,7 @@ import ExchangeComparisonEngine from '@/components/ExchangeComparisonEngine';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Crypto Exchange Comparison Tool | CryptoDegen',
+  title: 'Crypto Exchange Comparison Tool | degen0x',
   description: 'Compare top cryptocurrency exchanges side-by-side. Analyze fees, security, features, and user experience. Find the best exchange for your trading needs.',
   keywords: [
     'crypto exchange comparison',
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     'Coinbase vs Binance',
   ],
   openGraph: {
-    title: 'Crypto Exchange Comparison Tool | CryptoDegen',
+    title: 'Crypto Exchange Comparison Tool | degen0x',
     description: 'Compare top cryptocurrency exchanges side-by-side. Analyze fees, security, features, and user experience.',
     type: 'website',
-    url: 'https://cryptodegen.io/compare',
+    url: 'https://degen0x.com/compare',
     images: [
       {
         url: '/og-compare.png',
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Exchange Comparison Tool | CryptoDegen',
+    title: 'Crypto Exchange Comparison Tool | degen0x',
     description: 'Compare top cryptocurrency exchanges side-by-side.',
     images: ['/og-compare.png'],
   },
   alternates: {
-    canonical: 'https://cryptodegen.io/compare',
+    canonical: 'https://degen0x.com/compare',
   },
 };
 

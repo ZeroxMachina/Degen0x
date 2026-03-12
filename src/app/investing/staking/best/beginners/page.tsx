@@ -48,7 +48,7 @@ export default function BestStakingBeginnersPage() {
     "@type": "Article",
     headline: `Best Staking Platforms for Beginners in ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -64,7 +64,7 @@ export default function BestStakingBeginnersPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Staking Platforms for Beginners in {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -82,15 +82,15 @@ export default function BestStakingBeginnersPage() {
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
             Our top recommendation for beginners is{" "}
-            <strong className="text-white">Coinbase Staking</strong> for its unmatched ease of use
+            <strong className="text-[var(--color-text)]">Coinbase Staking</strong> for its unmatched ease of use
             and regulatory protection. For beginners ready to explore DeFi,{" "}
-            <strong className="text-white">Lido</strong> provides straightforward liquid staking
+            <strong className="text-[var(--color-text)]">Lido</strong> provides straightforward liquid staking
             with just a Web3 wallet connection.
           </p>
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Recommendations</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Recommendations</h2>
           <div className="space-y-4">
             {beginnerPlatforms.map((platform, index) => (
               <ProductCard
@@ -104,7 +104,7 @@ export default function BestStakingBeginnersPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Getting Started: Step by Step</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Getting Started: Step by Step</h2>
           <div className="space-y-4">
             {[
               { step: "1", title: "Choose Your Platform", desc: "Start with Coinbase for the simplest experience, or Lido if you already have a Web3 wallet like MetaMask." },
@@ -113,11 +113,11 @@ export default function BestStakingBeginnersPage() {
               { step: "4", title: "Start Earning", desc: "Rewards begin accruing immediately. Ethereum rewards appear as stETH balance increases or cbETH value appreciation." },
             ].map((item) => (
               <div key={item.step} className="flex gap-4 items-start">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold text-sm">
                   {item.step}
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">{item.title}</h3>
+                  <h3 className="text-[var(--color-text)] font-semibold">{item.title}</h3>
                   <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
                 </div>
               </div>

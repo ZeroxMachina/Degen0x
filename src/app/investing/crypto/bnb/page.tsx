@@ -25,7 +25,7 @@ export default function BNBPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in BNB (BNB) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function BNBPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">BNB</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2017</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">200,000,000 BNB (burning to 100M)</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Proof of Staked Authority</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">BNB</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2017</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">200,000,000 BNB (burning to 100M)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Proof of Staked Authority</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is BNB?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is BNB?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           BNB was originally created in 2017 as an ERC-20 token on Ethereum to provide trading fee
           discounts on the Binance exchange. It has since migrated to its own blockchain, BNB Chain
@@ -66,7 +66,7 @@ export default function BNBPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           BNB serves multiple functions across the Binance ecosystem. On the Binance exchange, holding
           BNB provides up to 25% trading fee discounts and is used for Binance Launchpad token sales.
@@ -77,7 +77,7 @@ export default function BNBPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           BNB's primary risk is its deep dependence on Binance, the centralized exchange. Regulatory
           actions against Binance directly impact BNB's value, as demonstrated by the DOJ settlement
@@ -89,7 +89,7 @@ export default function BNBPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy BNB</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy BNB</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The most direct way to buy BNB is through the Binance exchange, where it is available with
           the lowest fees. BNB is also listed on other major exchanges like Coinbase, Kraken, and

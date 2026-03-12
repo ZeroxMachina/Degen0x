@@ -17,13 +17,20 @@ export default function CryptoForBeginnersPage() {
       readTime="16 min"
       intro="If you are completely new to cryptocurrency and feel overwhelmed by the jargon and complexity, this guide is for you. We assume zero prior knowledge and walk you through everything step by step — what crypto is, why people use it, how to buy your first cryptocurrency, how to keep it safe, and what to watch out for. By the end of this guide, you will have a solid foundation to begin exploring the crypto world with confidence."
       toc={[
-        { id: "what-is-crypto-simplified", title: "What Is Cryptocurrency (Simplified)", level: 2 },
-        { id: "why-people-use-it", title: "Why People Use Crypto", level: 2 },
-        { id: "how-to-buy", title: "How to Buy Your First Crypto", level: 2 },
-        { id: "wallets-explained", title: "Crypto Wallets Explained", level: 2 },
-        { id: "staying-safe", title: "Staying Safe as a Beginner", level: 2 },
-        { id: "common-mistakes", title: "Common Beginner Mistakes", level: 2 },
-        { id: "next-steps", title: "Your Next Steps", level: 2 },
+        { id: "what-is-crypto-simplified", title: "what-is-crypto-simplified", level: 2 },
+        { id: "what-is-cryptocurrency-simplified", title: "What Is Cryptocurrency (Simplified)", level: 2 },
+        { id: "why-people-use-it", title: "why-people-use-it", level: 2 },
+        { id: "why-people-use-crypto", title: "Why People Use Crypto", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-your-first-crypto", title: "How to Buy Your First Crypto", level: 2 },
+        { id: "wallets-explained", title: "wallets-explained", level: 2 },
+        { id: "crypto-wallets-explained", title: "Crypto Wallets Explained", level: 2 },
+        { id: "staying-safe", title: "staying-safe", level: 2 },
+        { id: "staying-safe-as-a-beginner", title: "Staying Safe as a Beginner", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-beginner-mistakes", title: "Common Beginner Mistakes", level: 2 },
+        { id: "next-steps", title: "next-steps", level: 2 },
+        { id: "your-next-steps", title: "Your Next Steps", level: 2 }
       ]}
       faqs={[
         {

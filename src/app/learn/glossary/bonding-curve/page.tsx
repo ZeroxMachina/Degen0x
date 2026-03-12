@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function BondingCurvePage() {
   return (
     <LearnPageLayout title="What Is a Bonding Curve?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="A bonding curve is a mathematical formula that defines the relationship between a token's price and its supply. As more tokens are purchased, the price increases along a predetermined curve; as tokens are sold, the price decreases. Bonding curves create automated, predictable pricing without requiring traditional order books or market makers."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "how-it-works", title: "How It Works", level: 2 },{ id: "applications", title: "Applications", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-it-works", title: "How It Works", level: 2 },
+        { id: "applications", title: "applications", level: 2 },
+        { id: "applications", title: "Applications", level: 2 }
+      ]}
       faqs={[
         { question: "How is a bonding curve different from an AMM?", answer: "AMMs (like Uniswap) use a specific type of bonding curve (constant product formula) with two-token pools. Bonding curves are the broader mathematical concept — they can be linear, exponential, logarithmic, or custom-shaped. AMMs are a practical implementation of bonding curve principles for decentralized trading." },
         { question: "Can bonding curves be manipulated?", answer: "Bonding curves are deterministic — the price at any supply level is fixed by the formula. However, large purchases or sales can move the price significantly along the curve, and early buyers benefit from lower prices. Some designs include fees or circuit breakers to limit rapid speculation." },

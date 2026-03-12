@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Sybil Attack in Crypto Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Sybil Attack in Crypto Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a Sybil attack is, how it affects airdrops and governance, detection methods, and how crypto protocols defend against Sybil manipulation.",
 };
 
@@ -16,10 +16,14 @@ export default function SybilAttackPage() {
       readTime="6 min read"
       intro="A Sybil attack is a security threat where a single entity creates multiple fake identities to gain disproportionate influence or rewards in a decentralized system. Named after the subject of a book about dissociative identity disorder, Sybil attacks in crypto manifest as users creating hundreds of wallets to exploit airdrops, manipulate governance votes, or game reward systems. Understanding Sybil attacks is essential for both protocol designers and users."
       toc={[
-        { id: "what-is-sybil", title: "What Is a Sybil Attack?", level: 2 },
-        { id: "crypto-context", title: "Sybil Attacks in Crypto", level: 2 },
-        { id: "detection", title: "Sybil Detection Methods", level: 2 },
-        { id: "prevention", title: "Prevention Strategies", level: 2 },
+        { id: "what-is-sybil", title: "what-is-sybil", level: 2 },
+        { id: "what-is-a-sybil-attack", title: "What Is a Sybil Attack?", level: 2 },
+        { id: "crypto-context", title: "crypto-context", level: 2 },
+        { id: "sybil-attacks-in-crypto", title: "Sybil Attacks in Crypto", level: 2 },
+        { id: "detection", title: "detection", level: 2 },
+        { id: "sybil-detection-methods", title: "Sybil Detection Methods", level: 2 },
+        { id: "prevention", title: "prevention", level: 2 },
+        { id: "prevention-strategies", title: "Prevention Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Is using multiple wallets a Sybil attack?", answer: "Having multiple wallets for legitimate purposes (security, privacy, organization) is normal. A Sybil attack specifically refers to creating many identities to game systems designed for individual participants. The distinction lies in intent: are you using multiple wallets for personal convenience or to unfairly multiply rewards intended for unique users?" },

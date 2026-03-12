@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Market Maker? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Market Maker? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what market makers are, how they provide liquidity, and their essential role in crypto markets.",
 };
@@ -17,11 +17,16 @@ export default function MarketMakerPage() {
       readTime="5 min"
       intro="A market maker is an entity that continuously places buy and sell orders on an exchange, providing liquidity and facilitating smooth trading. Market makers profit from the spread between their buy (bid) and sell (ask) prices. In crypto, they range from large institutional firms using sophisticated algorithms to DeFi liquidity providers depositing into automated market maker pools."
       toc={[
-        { id: "definition", title: "What Is a Market Maker?", level: 2 },
-        { id: "how-it-works", title: "How Market Making Works", level: 2 },
-        { id: "types", title: "Types of Market Makers in Crypto", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-market-maker", title: "What Is a Market Maker?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-market-making-works", title: "How Market Making Works", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-market-makers-in-crypto", title: "Types of Market Makers in Crypto", level: 2 },
+        { id: "controversies", title: "controversies", level: 2 },
         { id: "controversies", title: "Controversies", level: 2 },
-        { id: "why-it-matters", title: "Why Market Makers Matter", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-market-makers-matter", title: "Why Market Makers Matter", level: 2 }
       ]}
       faqs={[
         {

@@ -17,10 +17,14 @@ export default function CryptoDonationsTaxesPage() {
       readTime="8 min"
       intro="Donating cryptocurrency to qualified charitable organizations can be one of the most tax-efficient ways to give. When done correctly, you can deduct the full fair market value of appreciated crypto without paying capital gains tax on the appreciation. This guide covers the rules, requirements, and strategies for maximizing tax benefits from crypto donations."
       toc={[
-        { id: "donation-basics", title: "Crypto Donation Tax Basics", level: 2 },
-        { id: "deduction-rules", title: "Deduction Rules and Limits", level: 2 },
-        { id: "how-to-donate", title: "How to Donate Crypto", level: 2 },
-        { id: "reporting-donations", title: "Reporting Crypto Donations", level: 2 },
+        { id: "donation-basics", title: "donation-basics", level: 2 },
+        { id: "crypto-donation-tax-basics", title: "Crypto Donation Tax Basics", level: 2 },
+        { id: "deduction-rules", title: "deduction-rules", level: 2 },
+        { id: "deduction-rules-and-limits", title: "Deduction Rules and Limits", level: 2 },
+        { id: "how-to-donate", title: "how-to-donate", level: 2 },
+        { id: "how-to-donate-crypto", title: "How to Donate Crypto", level: 2 },
+        { id: "reporting-donations", title: "reporting-donations", level: 2 },
+        { id: "reporting-crypto-donations", title: "Reporting Crypto Donations", level: 2 }
       ]}
       faqs={[
         { question: "Do I owe taxes when donating crypto?", answer: "No. Donating appreciated crypto to a qualified 501(c)(3) charity is not a taxable event. You do not pay capital gains tax on the appreciation, and you can deduct the fair market value of the donation. This makes donating crypto more tax-efficient than selling and donating cash." },

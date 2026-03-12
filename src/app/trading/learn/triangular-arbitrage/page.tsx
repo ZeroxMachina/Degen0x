@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Triangular Arbitrage in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Triangular Arbitrage in Crypto (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn triangular arbitrage strategies for crypto trading. Exploit price inefficiencies across three trading pairs on the same exchange.",
 };
@@ -17,10 +17,14 @@ export default function TriangularArbitragePage() {
       readTime="8 min read"
       intro="Triangular arbitrage exploits pricing inefficiencies between three related trading pairs on a single exchange. By converting between three currencies in a specific sequence, traders can end up with more of the starting currency than they began with. While opportunities are typically small and short-lived, automated execution can make this a consistently profitable strategy."
       toc={[
-        { id: "how-it-works", title: "How Triangular Arbitrage Works", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-triangular-arbitrage-works", title: "How Triangular Arbitrage Works", level: 2 },
+        { id: "finding-opportunities", title: "finding-opportunities", level: 2 },
         { id: "finding-opportunities", title: "Finding Opportunities", level: 2 },
-        { id: "automation", title: "Automation and Execution", level: 2 },
-        { id: "profitability", title: "Profitability and Limitations", level: 2 },
+        { id: "automation", title: "automation", level: 2 },
+        { id: "automation-and-execution", title: "Automation and Execution", level: 2 },
+        { id: "profitability", title: "profitability", level: 2 },
+        { id: "profitability-and-limitations", title: "Profitability and Limitations", level: 2 }
       ]}
       faqs={[
         { question: "Can triangular arbitrage be done manually?", answer: "Technically yes, but practically it is very difficult. Opportunities typically exist for only seconds before being closed by other traders or bots. The calculation and execution of three trades must happen almost simultaneously, which is extremely challenging without automated tools." },

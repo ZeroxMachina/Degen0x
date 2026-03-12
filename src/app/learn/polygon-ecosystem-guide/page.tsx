@@ -17,12 +17,18 @@ export default function PolygonEcosystemGuidePage() {
       readTime="9 min"
       intro="Polygon is a multi-chain scaling ecosystem for Ethereum, offering multiple scaling solutions including the widely-used Polygon PoS sidechain, the Polygon zkEVM rollup, and the CDK framework for building custom ZK-powered chains. With strong enterprise partnerships and massive DeFi adoption, Polygon bridges the gap between blockchain innovation and mainstream adoption."
       toc={[
-        { id: "overview", title: "Polygon Overview", level: 2 },
-        { id: "pos-chain", title: "Polygon PoS", level: 2 },
-        { id: "zkevm", title: "Polygon zkEVM", level: 2 },
-        { id: "defi", title: "DeFi Ecosystem", level: 2 },
-        { id: "enterprise", title: "Enterprise Adoption", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "polygon-overview", title: "Polygon Overview", level: 2 },
+        { id: "pos-chain", title: "pos-chain", level: 2 },
+        { id: "polygon-pos", title: "Polygon PoS", level: 2 },
+        { id: "zkevm", title: "zkevm", level: 2 },
+        { id: "polygon-zkevm", title: "Polygon zkEVM", level: 2 },
+        { id: "defi", title: "defi", level: 2 },
+        { id: "defi-ecosystem", title: "DeFi Ecosystem", level: 2 },
+        { id: "enterprise", title: "enterprise", level: 2 },
+        { id: "enterprise-adoption", title: "Enterprise Adoption", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What is the difference between MATIC and POL?", answer: "POL is the upgraded version of MATIC, serving as the native token for the Polygon ecosystem. The migration from MATIC to POL introduces new utility including staking across multiple Polygon chains and participating in governance. Existing MATIC holders can migrate to POL through a straightforward process." },

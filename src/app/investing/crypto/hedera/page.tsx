@@ -25,7 +25,7 @@ export default function HederaPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Hedera (HBAR) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function HederaPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">HBAR</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2019</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">50,000,000,000 HBAR</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Hashgraph (aBFT)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">HBAR</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2019</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">50,000,000,000 HBAR</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Hashgraph (aBFT)</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Hedera?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Hedera?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Hedera is a public distributed ledger that uses the hashgraph consensus algorithm, a
           fundamentally different approach from traditional blockchain technology. Founded by
@@ -69,7 +69,7 @@ export default function HederaPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Hedera is used for enterprise applications including supply chain tracking, carbon credit
           tokenization, identity verification, and IoT data integrity. The Hedera Token Service
@@ -81,7 +81,7 @@ export default function HederaPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Hedera's governing council model makes it significantly more centralized than networks
           like Ethereum or Bitcoin, which may deter decentralization-focused investors. A large
@@ -95,7 +95,7 @@ export default function HederaPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Hedera</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Hedera</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           HBAR is available on exchanges including Coinbase, Binance, OKX, and Crypto.com. After
           purchasing, HBAR can be staked natively through the network to earn staking rewards, which

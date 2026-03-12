@@ -17,12 +17,18 @@ export default function StakingRewardsTaxesPage() {
       readTime="13 min"
       intro="Staking rewards create tax obligations in most jurisdictions, but the rules are complex and still evolving. This guide breaks down how staking income is taxed, the difference between regular staking and liquid staking for tax purposes, and practical strategies for tracking and reporting your staking rewards. Note: this is educational content, not tax advice. Consult a tax professional for your specific situation."
       toc={[
-        { id: "reward-taxation", title: "How Staking Rewards Are Taxed", level: 2 },
-        { id: "income-vs-capital-gains", title: "Income Tax vs Capital Gains", level: 2 },
-        { id: "liquid-staking-taxes", title: "Liquid Staking Tax Implications", level: 2 },
-        { id: "restaking-taxes", title: "Restaking Tax Considerations", level: 2 },
-        { id: "record-keeping", title: "Record Keeping Best Practices", level: 2 },
-        { id: "tax-tools", title: "Tax Reporting Tools", level: 2 },
+        { id: "reward-taxation", title: "reward-taxation", level: 2 },
+        { id: "how-staking-rewards-are-taxed", title: "How Staking Rewards Are Taxed", level: 2 },
+        { id: "income-vs-capital-gains", title: "income-vs-capital-gains", level: 2 },
+        { id: "income-tax-vs-capital-gains", title: "Income Tax vs Capital Gains", level: 2 },
+        { id: "liquid-staking-taxes", title: "liquid-staking-taxes", level: 2 },
+        { id: "liquid-staking-tax-implications", title: "Liquid Staking Tax Implications", level: 2 },
+        { id: "restaking-taxes", title: "restaking-taxes", level: 2 },
+        { id: "restaking-tax-considerations", title: "Restaking Tax Considerations", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping-best-practices", title: "Record Keeping Best Practices", level: 2 },
+        { id: "tax-tools", title: "tax-tools", level: 2 },
+        { id: "tax-reporting-tools", title: "Tax Reporting Tools", level: 2 }
       ]}
       faqs={[
         {

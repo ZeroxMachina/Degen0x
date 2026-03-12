@@ -72,7 +72,7 @@ export default function NigeriaExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in Nigeria ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -89,7 +89,7 @@ export default function NigeriaExchangesPage() {
           remains the dominant method for buying crypto with naira, and Nigerian traders have
           access to several reputable exchanges. Here are the best options.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Nigeria&apos;s Evolving Crypto Regulation</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Nigeria&apos;s Evolving Crypto Regulation</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Nigeria&apos;s crypto regulatory journey has been eventful. The CBN banned banks from
           facilitating crypto transactions in 2021, pushing most trading to P2P platforms.
@@ -98,7 +98,7 @@ export default function NigeriaExchangesPage() {
           crypto platforms. This regulatory clarity has strengthened the market and improved
           access for Nigerian users.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Why P2P Trading Dominates in Nigeria</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Why P2P Trading Dominates in Nigeria</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           P2P trading has become deeply embedded in Nigerian crypto culture due to the previous
           banking ban and the flexibility it offers. Buyers can pay with bank transfers,
@@ -121,22 +121,22 @@ export default function NigeriaExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods for Nigerian Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods for Nigerian Users</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">P2P Bank Transfer</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">P2P Bank Transfer</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Trade directly with other users. Pay via bank transfer. Escrow protection on major exchanges.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Direct Bank Deposit</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Direct Bank Deposit</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">NGN deposits to licensed exchanges via bank transfer. Becoming more widely available.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Mobile Money</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Mobile Money</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Paga, OPay, PalmPay accepted by some P2P merchants. Convenient for mobile-first users.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Card Payments</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Card Payments</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Naira debit cards supported on some platforms. Higher fees. Instant purchases.</p>
           </div>
         </div>

@@ -71,7 +71,7 @@ export default function UKWalletsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Wallets in the UK ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -87,7 +87,7 @@ export default function UKWalletsPage() {
           storing Bitcoin long-term or actively using DeFi, choosing the right wallet protects
           your assets and simplifies tax season. Here are the best options for UK residents.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Choosing a Wallet in the UK</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Choosing a Wallet in the UK</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           UK users should consider several factors: security features, supported cryptocurrencies,
           ease of backing up and recovering the wallet, integration with UK-friendly tax tools,
@@ -95,7 +95,7 @@ export default function UKWalletsPage() {
           rules do not affect personal wallet choices, as wallets themselves are not regulated
           products.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Self-Custody vs Exchange Custody</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Self-Custody vs Exchange Custody</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           While FCA-registered exchanges offer convenience, they do not provide FSCS protection
           for crypto holdings. This makes self-custody through personal wallets an attractive
@@ -116,26 +116,26 @@ export default function UKWalletsPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">UK Wallet Security Best Practices</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">UK Wallet Security Best Practices</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Store seed phrases in a fireproof safe</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Store seed phrases in a fireproof safe</h3>
               <p className="text-sm">Consider a metal seed phrase backup for fire and water resistance. Available from Ledger and third parties.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Use separate wallets for different purposes</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Use separate wallets for different purposes</h3>
               <p className="text-sm">Keep a hardware wallet for long-term storage and a software wallet for daily DeFi activities.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Keep transaction records for HMRC</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Keep transaction records for HMRC</h3>
               <p className="text-sm">Export your wallet transactions regularly and keep records for at least 5 years as HMRC requires.</p>
             </div>
           </div>

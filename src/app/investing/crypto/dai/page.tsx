@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Dai Stablecoin (DAI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Dai Stablecoin (DAI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Dai (DAI), the decentralized stablecoin from MakerDAO backed by crypto collateral. Discover DAI mechanics, savings rate, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function DaiPage() {
       readTime="8 min read"
       intro="Dai (DAI) is a decentralized, crypto-collateralized stablecoin created by the MakerDAO protocol on Ethereum. Pegged to the US dollar, DAI is generated when users lock collateral in Maker Vaults and is maintained through overcollateralization and automated liquidation mechanisms. DAI is one of the most widely integrated stablecoins in DeFi."
       toc={[
-        { id: "what-is", title: "What Is Dai Stablecoin?", level: 2 },
-        { id: "how-it-works", title: "How Does Dai Work?", level: 2 },
-        { id: "tokenomics", title: "DAI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy DAI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-dai-stablecoin", title: "What Is Dai Stablecoin?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-dai-work", title: "How Does Dai Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "dai-tokenomics", title: "DAI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-dai", title: "How to Buy DAI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Dai Stablecoin?", answer: "DAI is a decentralized stablecoin on Ethereum created by the MakerDAO protocol. It maintains a $1 peg through crypto overcollateralization in Maker Vaults and is governed by MKR token holders." },

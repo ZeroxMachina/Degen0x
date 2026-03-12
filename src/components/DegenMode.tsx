@@ -66,7 +66,7 @@ export function DegenModeToggle() {
       onClick={isEligible ? toggleDegenMode : undefined}
       className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold transition-all duration-300 ${
         isDegenMode
-          ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-500/30 animate-glow-pulse"
+          ? "bg-gradient-to-r from-amber-500 to-orange-500 text-[var(--color-text)] shadow-lg shadow-amber-500/30 animate-glow-pulse"
           : "glass-pill text-[var(--color-text-secondary)] hover:text-amber-500"
       } ${!isEligible ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
       title={isEligible ? "Toggle Degen Mode" : "Hold $DEGEN tokens to unlock"}

@@ -45,7 +45,7 @@ export default function LedgerVsTrezorPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Ledger vs Trezor: Which Hardware Wallet Is Better in {CURRENT_YEAR}?</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Ledger vs Trezor: Which Hardware Wallet Is Better in {CURRENT_YEAR}?</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Ledger and Trezor are the two dominant hardware wallet brands. We compare them across security
           architecture, coin support, software, pricing, and features to help you choose.
@@ -97,12 +97,12 @@ export default function LedgerVsTrezorPage() {
         <h2 id="verdict">Our Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose Ledger if:</strong> You want Bluetooth mobile management,
+            <strong className="text-[var(--color-text)]">Choose Ledger if:</strong> You want Bluetooth mobile management,
             the broadest coin support, and a certified Secure Element chip. The Ledger Nano X is our recommendation
             for most users.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose Trezor if:</strong> You prioritize open-source transparency,
+            <strong className="text-[var(--color-text)]">Choose Trezor if:</strong> You prioritize open-source transparency,
             Bitcoin privacy (CoinJoin), and advanced backup (Shamir). The Trezor Safe 3 offers the best value
             with both open-source code and a Secure Element chip.
           </p>
@@ -113,11 +113,11 @@ export default function LedgerVsTrezorPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/reviews/ledger" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Review</span>
-            <h3 className="font-semibold text-white text-sm">Ledger Full Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Ledger Full Review</h3>
           </Link>
           <Link href="/wallets/reviews/trezor" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Review</span>
-            <h3 className="font-semibold text-white text-sm">Trezor Full Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Trezor Full Review</h3>
           </Link>
         </div>
       </section>

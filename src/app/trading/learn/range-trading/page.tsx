@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Range Trading Crypto Markets (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Range Trading Crypto Markets (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn range trading strategies for sideways crypto markets. Identify support and resistance zones and profit from predictable price oscillations.",
 };
@@ -17,10 +17,14 @@ export default function RangeTradingPage() {
       readTime="8 min read"
       intro="Markets do not always trend. In fact, most assets spend a significant portion of their time moving sideways within defined ranges. Range trading strategies capitalize on this by buying at support and selling at resistance, profiting from predictable oscillations. For crypto traders, mastering range trading is essential for staying profitable during consolidation phases."
       toc={[
-        { id: "understanding-ranges", title: "Understanding Trading Ranges", level: 2 },
-        { id: "range-strategies", title: "Range Trading Strategies", level: 2 },
-        { id: "identifying-ranges", title: "Identifying Range-Bound Markets", level: 2 },
-        { id: "when-ranges-break", title: "When Ranges Break", level: 2 },
+        { id: "understanding-ranges", title: "understanding-ranges", level: 2 },
+        { id: "understanding-trading-ranges", title: "Understanding Trading Ranges", level: 2 },
+        { id: "range-strategies", title: "range-strategies", level: 2 },
+        { id: "range-trading-strategies", title: "Range Trading Strategies", level: 2 },
+        { id: "identifying-ranges", title: "identifying-ranges", level: 2 },
+        { id: "identifying-range-bound-markets", title: "Identifying Range-Bound Markets", level: 2 },
+        { id: "when-ranges-break", title: "when-ranges-break", level: 2 },
+        { id: "when-ranges-break", title: "When Ranges Break", level: 2 }
       ]}
       faqs={[
         { question: "How do you identify a range-bound market?", answer: "A range-bound market shows price bouncing between clear horizontal support and resistance levels with no sustained directional move. The ADX indicator reading below 20, flat moving averages, and repeated rejection at the same price levels all confirm a ranging market." },

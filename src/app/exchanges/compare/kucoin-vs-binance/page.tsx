@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `KuCoin vs Binance (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `KuCoin vs Binance (${CURRENT_YEAR}) | degen0x`,
   description: "Compare KuCoin vs Binance. Fees, coin selection, features, and which exchange is better for altcoin trading and overall crypto needs.",
 };
 
@@ -16,12 +16,18 @@ export default function KuCoinVsBinance() {
       readTime="8 min read"
       intro="KuCoin and Binance are both major international crypto exchanges with extensive coin selections and competitive features. KuCoin is known as an altcoin paradise for early listings, while Binance dominates in volume and ecosystem breadth. This comparison examines which platform better serves your trading needs."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "coin-selection", title: "coin-selection", level: 2 },
         { id: "coin-selection", title: "Coin Selection", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
+        { id: "security", title: "security", level: 2 },
         { id: "security", title: "Security", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which has more altcoins?", answer: "KuCoin lists 700+ cryptocurrencies and is known for listing new projects early. Binance has 350+ but with deeper liquidity on each listing. KuCoin has the edge for obscure altcoins." },

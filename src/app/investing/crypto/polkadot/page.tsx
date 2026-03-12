@@ -28,7 +28,7 @@ export default function PolkadotPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">How to Invest in Polkadot (DOT) in {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">How to Invest in Polkadot (DOT) in {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Polkadot is a multi-chain protocol designed for cross-blockchain interoperability,
           enabling specialized parachains to share security and communicate seamlessly.
@@ -37,17 +37,17 @@ export default function PolkadotPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">{token.ticker}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">{token.launchYear}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">{token.maxSupply}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">{token.consensus}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.ticker}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.launchYear}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.maxSupply}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.consensus}</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Polkadot?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Polkadot?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Founded by Gavin Wood, co-founder of Ethereum, Polkadot introduces a heterogeneous
           multi-chain architecture where specialized blockchains (parachains) connect to a
@@ -62,7 +62,7 @@ export default function PolkadotPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)]">
           Polkadot's inflationary tokenomics (no hard supply cap) create ongoing dilution for
           holders. The parachain model competes with simpler cross-chain bridges and messaging

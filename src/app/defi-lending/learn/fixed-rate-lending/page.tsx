@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Fixed-Rate DeFi Lending Protocols (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Fixed-Rate DeFi Lending Protocols (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to fixed-rate lending in DeFi. Compare protocols offering predictable rates, understand how they work, and learn when fixed rates make sense.",
 };
 
@@ -11,7 +11,16 @@ export default function FixedRateLendingPage() {
   return (
     <LearnPageLayout title="Fixed-Rate DeFi Lending Protocols" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="8 min read"
       intro="Most DeFi lending uses variable rates that fluctuate with supply and demand, but fixed-rate protocols provide predictable, guaranteed rates for defined periods. Fixed rates are valuable for borrowers who need cost certainty for financial planning and lenders who want guaranteed yield. Several protocols have emerged to fill this gap, each using different mechanisms to lock in rates."
-      toc={[{ id: "why-fixed", title: "Why Fixed Rates Matter", level: 2 }, { id: "mechanisms", title: "Fixed-Rate Mechanisms", level: 2 }, { id: "protocols", title: "Fixed-Rate Protocols", level: 2 }, { id: "tradeoffs", title: "Trade-offs and Considerations", level: 2 }]}
+      toc={[
+        { id: "why-fixed", title: "why-fixed", level: 2 },
+        { id: "why-fixed-rates-matter", title: "Why Fixed Rates Matter", level: 2 },
+        { id: "mechanisms", title: "mechanisms", level: 2 },
+        { id: "fixed-rate-mechanisms", title: "Fixed-Rate Mechanisms", level: 2 },
+        { id: "protocols", title: "protocols", level: 2 },
+        { id: "fixed-rate-protocols", title: "Fixed-Rate Protocols", level: 2 },
+        { id: "tradeoffs", title: "tradeoffs", level: 2 },
+        { id: "trade-offs-and-considerations", title: "Trade-offs and Considerations", level: 2 }
+      ]}
       faqs={[
         { question: "How do fixed rates work in DeFi?", answer: "Fixed-rate DeFi protocols use various mechanisms including zero-coupon bonds (lend at a discount, receive full value at maturity), interest rate swaps (exchange variable for fixed exposure), and term lending (direct fixed-rate loans for specific periods). Each approach has different trade-offs." },
         { question: "Are fixed rates higher or lower than variable?", answer: "Fixed rates typically carry a premium over variable rates because they provide certainty. Lenders accept slightly lower fixed rates for guaranteed yield. Borrowers pay slightly higher fixed rates for cost predictability. The premium varies with market conditions and term length." },

@@ -129,7 +129,7 @@ export default function LearnHubPage() {
       />
 
       <div className="mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
           Learn Crypto: Your Complete Education Hub
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl leading-relaxed">
@@ -151,7 +151,7 @@ export default function LearnHubPage() {
             <span className="inline-block text-xs font-semibold text-[var(--color-primary)] bg-[var(--color-primary)]/10 rounded-full px-3 py-1 mb-2">
               Recommended Starting Point
             </span>
-            <h2 className="text-xl md:text-2xl font-bold text-white mb-2">
+            <h2 className="text-xl md:text-2xl font-bold text-[var(--color-text)] mb-2">
               Crypto for Complete Beginners
             </h2>
             <p className="text-[var(--color-text-secondary)]">
@@ -174,7 +174,7 @@ export default function LearnHubPage() {
               className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 hover:bg-[var(--color-bg-card-hover)] hover:border-[var(--color-primary)]/50 transition-colors"
             >
               <span className="text-2xl mb-3 block">{guide.icon}</span>
-              <h2 className="text-base font-semibold text-white mb-2 group-hover:text-[var(--color-primary)] transition-colors">
+              <h2 className="text-base font-semibold text-[var(--color-text)] mb-2 group-hover:text-[var(--color-primary)] transition-colors">
                 {guide.title}
               </h2>
               <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
@@ -186,43 +186,43 @@ export default function LearnHubPage() {
 
       {/* Quick Links */}
       <div className="mt-16 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 md:p-8">
-        <h2 className="text-xl font-bold text-white mb-4">
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">
           Explore More {SITE_NAME} Resources
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
           <Link
             href="/exchanges"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-white transition-colors"
+            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Compare Crypto Exchanges &rarr;
           </Link>
           <Link
             href="/wallets"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-white transition-colors"
+            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Find the Best Wallets &rarr;
           </Link>
           <Link
             href="/defi-lending"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-white transition-colors"
+            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Explore DeFi Lending &rarr;
           </Link>
           <Link
             href="/investing"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-white transition-colors"
+            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Crypto Investing Guides &rarr;
           </Link>
           <Link
             href="/taxes"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-white transition-colors"
+            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Crypto Tax Help &rarr;
           </Link>
           <Link
             href="/spending"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-white transition-colors"
+            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Spend Your Crypto &rarr;
           </Link>

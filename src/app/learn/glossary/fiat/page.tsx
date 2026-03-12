@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Fiat? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Fiat? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what fiat currency is, how it differs from cryptocurrency, and why it matters in the crypto ecosystem.",
 };
@@ -17,11 +17,16 @@ export default function FiatPage() {
       readTime="4 min"
       intro="Fiat currency is government-issued money that is not backed by a physical commodity like gold. Its value comes from the trust and authority of the issuing government. The US dollar, euro, and Japanese yen are all fiat currencies. In crypto, the term 'fiat' is used to distinguish traditional currencies from digital assets and is the primary on-ramp for entering the crypto market."
       toc={[
-        { id: "definition", title: "What Is Fiat?", level: 2 },
-        { id: "fiat-vs-crypto", title: "Fiat vs Cryptocurrency", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-fiat", title: "What Is Fiat?", level: 2 },
+        { id: "fiat-vs-crypto", title: "fiat-vs-crypto", level: 2 },
+        { id: "fiat-vs-cryptocurrency", title: "Fiat vs Cryptocurrency", level: 2 },
+        { id: "fiat-on-ramps", title: "fiat-on-ramps", level: 2 },
         { id: "fiat-on-ramps", title: "Fiat On-Ramps", level: 2 },
-        { id: "stablecoins-bridge", title: "Stablecoins as a Bridge", level: 2 },
-        { id: "why-it-matters", title: "Why Fiat Matters in Crypto", level: 2 },
+        { id: "stablecoins-bridge", title: "stablecoins-bridge", level: 2 },
+        { id: "stablecoins-as-a-bridge", title: "Stablecoins as a Bridge", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-fiat-matters-in-crypto", title: "Why Fiat Matters in Crypto", level: 2 }
       ]}
       faqs={[
         {

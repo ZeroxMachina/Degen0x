@@ -25,7 +25,7 @@ export async function GET(
   }
 
   // Collect incoming UTM params (from internal links) to pass through
-  const utmSource   = searchParams.get("utm_source")   || "cryptodegen";
+  const utmSource   = searchParams.get("utm_source")   || "degen0x";
   const utmMedium   = searchParams.get("utm_medium")   || "affiliate";
   const utmCampaign = searchParams.get("utm_campaign") || partner.category;
   const utmContent  = searchParams.get("utm_content")  || partnerSlug;
@@ -39,7 +39,7 @@ export async function GET(
   destination.searchParams.set("utm_medium",   utmMedium);
   destination.searchParams.set("utm_campaign", utmCampaign);
   destination.searchParams.set("utm_content",  utmContent);
-  destination.searchParams.set("ref",          "cryptodegen");
+  destination.searchParams.set("ref",          "degen0x");
 
   const response = NextResponse.redirect(destination.toString(), { status: 302 });
 

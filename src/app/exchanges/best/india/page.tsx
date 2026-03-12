@@ -72,7 +72,7 @@ export default function IndiaExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in India ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -89,7 +89,7 @@ export default function IndiaExchangesPage() {
           We have evaluated both local Indian exchanges and global platforms accessible to Indian
           residents, ranking them by fees, INR support, coin selection, and regulatory compliance.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Indian Crypto Tax Landscape</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Indian Crypto Tax Landscape</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           India introduced its crypto tax framework in the 2022 Union Budget. The key provisions
           include a flat 30% tax on all crypto profits with no deductions allowed (except cost
@@ -97,7 +97,7 @@ export default function IndiaExchangesPage() {
           between different crypto assets, and no distinction between short-term and long-term
           holdings. These rules make India one of the most heavily taxed crypto markets globally.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Choosing the Right Exchange</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Choosing the Right Exchange</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Indian users face a unique choice between local exchanges (easier INR deposits, automatic
           TDS compliance) and international platforms (lower fees, more coins). Many experienced
@@ -119,22 +119,22 @@ export default function IndiaExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods for Indian Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods for Indian Users</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">UPI (Unified Payments Interface)</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">UPI (Unified Payments Interface)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant INR deposits. Free on most platforms. The most popular method in India.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">IMPS / NEFT Bank Transfer</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">IMPS / NEFT Bank Transfer</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Low or no fees. IMPS is instant, NEFT takes 30 min to 2 hours. Widely supported.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">P2P Trading</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">P2P Trading</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Buy directly from other users. Flexible payment methods. Available on Binance and others.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Net Banking</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Net Banking</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Direct bank-to-exchange transfers. Supported on most Indian exchanges. Fees vary by bank.</p>
           </div>
         </div>

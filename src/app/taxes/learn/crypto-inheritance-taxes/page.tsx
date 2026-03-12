@@ -17,10 +17,14 @@ export default function CryptoInheritanceTaxesPage() {
       readTime="8 min"
       intro="Inheriting cryptocurrency raises unique tax and practical considerations. From the significant tax advantage of stepped-up basis to the challenge of accessing wallets and private keys, crypto inheritance requires careful planning. This guide covers the tax rules for inherited crypto, estate planning strategies, and practical steps for both those planning their estate and those who have inherited digital assets."
       toc={[
-        { id: "stepped-up-basis", title: "Stepped-Up Basis Explained", level: 2 },
-        { id: "estate-tax", title: "Estate Tax Considerations", level: 2 },
-        { id: "planning-strategies", title: "Estate Planning Strategies", level: 2 },
-        { id: "practical-access", title: "Practical Access Challenges", level: 2 },
+        { id: "stepped-up-basis", title: "stepped-up-basis", level: 2 },
+        { id: "stepped-up-basis-explained", title: "Stepped-Up Basis Explained", level: 2 },
+        { id: "estate-tax", title: "estate-tax", level: 2 },
+        { id: "estate-tax-considerations", title: "Estate Tax Considerations", level: 2 },
+        { id: "planning-strategies", title: "planning-strategies", level: 2 },
+        { id: "estate-planning-strategies", title: "Estate Planning Strategies", level: 2 },
+        { id: "practical-access", title: "practical-access", level: 2 },
+        { id: "practical-access-challenges", title: "Practical Access Challenges", level: 2 }
       ]}
       faqs={[
         { question: "What is stepped-up basis for inherited crypto?", answer: "When you inherit crypto, your cost basis is 'stepped up' to the fair market value on the date of the decedent's death. This means all unrealized gains accumulated during the decedent's lifetime are eliminated for income tax purposes. If someone bought Bitcoin at $1,000 and it was worth $60,000 at their death, your basis is $60,000." },

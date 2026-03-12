@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in the Philippines (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in the Philippines (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in the Philippines. Learn about income tax, capital gains, and BIR reporting for Filipino crypto investors.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesPhilippinesPage() {
       readTime="8 min read"
       intro="The Philippines has seen rapid crypto adoption, driven by play-to-earn gaming, remittances, and speculative trading. While specific crypto tax legislation is limited, the Bureau of Internal Revenue (BIR) treats crypto gains as taxable income under existing tax laws. The BSP (Bangko Sentral ng Pilipinas) regulates virtual currency exchanges as remittance transfer companies. Filipino crypto investors should understand how existing tax rules apply to their crypto activities."
       toc={[
-        { id: "tax-treatment", title: "Tax Treatment of Crypto", level: 2 },
+        { id: "tax-treatment", title: "tax-treatment", level: 2 },
+        { id: "tax-treatment-of-crypto", title: "Tax Treatment of Crypto", level: 2 },
+        { id: "income-tax-rates", title: "income-tax-rates", level: 2 },
         { id: "income-tax-rates", title: "Income Tax Rates", level: 2 },
-        { id: "play-to-earn", title: "Play-to-Earn and Gaming Taxes", level: 2 },
+        { id: "play-to-earn", title: "play-to-earn", level: 2 },
+        { id: "play-to-earn-and-gaming-taxes", title: "Play-to-Earn and Gaming Taxes", level: 2 },
+        { id: "bsp-regulation", title: "bsp-regulation", level: 2 },
         { id: "bsp-regulation", title: "BSP Regulation", level: 2 },
-        { id: "filing-tips", title: "Filing Tips", level: 2 },
+        { id: "filing-tips", title: "filing-tips", level: 2 },
+        { id: "filing-tips", title: "Filing Tips", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto gains taxable in the Philippines?", answer: "Yes. While the Philippines lacks specific crypto tax legislation, the BIR considers crypto gains as taxable income under the National Internal Revenue Code. Gains from selling or trading crypto are subject to income tax. The BIR has signaled intent to issue specific guidance on crypto taxation." },

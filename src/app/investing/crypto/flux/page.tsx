@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Flux (FLUX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Flux (FLUX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Flux (FLUX), the decentralized cloud computing platform. Discover FLUX tokenomics, FluxOS, and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function FluxPage() {
       readTime="8 min read"
       intro="Flux (FLUX) is a decentralized cloud computing platform that enables users to deploy applications across a distributed network of nodes. The Flux ecosystem includes FluxOS for decentralized application hosting, FluxNodes for network infrastructure, and a proof-of-work blockchain that coordinates the network. Flux positions itself as the Web3 alternative to centralized cloud providers like AWS."
       toc={[
-        { id: "what-is", title: "What Is Flux?", level: 2 },
-        { id: "how-it-works", title: "How Does Flux Work?", level: 2 },
-        { id: "tokenomics", title: "FLUX Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy FLUX", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-flux", title: "What Is Flux?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-flux-work", title: "How Does Flux Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "flux-tokenomics", title: "FLUX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-flux", title: "How to Buy FLUX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Flux?", answer: "Flux is a decentralized cloud infrastructure platform. FluxNodes provide computing resources, FluxOS manages application deployment, and the FLUX token is used for payments, node collateral, and governance." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Starknet (STRK)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Starknet (STRK)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Starknet (STRK), the ZK-rollup Layer 2 scaling solution for Ethereum. Discover how it works, tokenomics, use cases, and how to buy STRK.",
 };
@@ -17,12 +17,18 @@ export default function StarknetPage() {
       readTime="9 min read"
       intro="Starknet is a permissionless, decentralized ZK-rollup Layer 2 network built on Ethereum. Developed by StarkWare, it uses STARK proofs to provide scalable, secure computation while maintaining Ethereum's security guarantees. STRK is the native token used for fees, staking, and governance."
       toc={[
-        { id: "what-is", title: "What Is Starknet?", level: 2 },
-        { id: "how-it-works", title: "How Does Starknet Work?", level: 2 },
-        { id: "tokenomics", title: "STRK Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy STRK", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-starknet", title: "What Is Starknet?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-starknet-work", title: "How Does Starknet Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "strk-tokenomics", title: "STRK Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-strk", title: "How to Buy STRK", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

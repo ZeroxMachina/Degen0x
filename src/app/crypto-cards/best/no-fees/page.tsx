@@ -17,10 +17,14 @@ export default function BestNoFeeCryptoCardsPage() {
       readTime="7 min"
       intro="Many crypto cards charge annual fees, monthly maintenance fees, foreign transaction fees, or hidden conversion charges that eat into your rewards. The best no-fee crypto cards eliminate these costs, ensuring that every reward earned is genuine profit. This guide identifies the crypto cards with the lowest fee structures and explains what to watch for in the fine print."
       toc={[
+        { id: "why-fees-matter", title: "why-fees-matter", level: 2 },
         { id: "why-fees-matter", title: "Why Fees Matter", level: 2 },
+        { id: "top-no-fee-cards", title: "top-no-fee-cards", level: 2 },
         { id: "top-no-fee-cards", title: "Top No-Fee Cards", level: 2 },
-        { id: "hidden-fees", title: "Hidden Fees to Watch For", level: 2 },
-        { id: "fee-vs-rewards", title: "Fee vs Rewards Analysis", level: 2 },
+        { id: "hidden-fees", title: "hidden-fees", level: 2 },
+        { id: "hidden-fees-to-watch-for", title: "Hidden Fees to Watch For", level: 2 },
+        { id: "fee-vs-rewards", title: "fee-vs-rewards", level: 2 },
+        { id: "fee-vs-rewards-analysis", title: "Fee vs Rewards Analysis", level: 2 }
       ]}
       faqs={[
         { question: "Do all crypto cards charge fees?", answer: "No. Several crypto cards have no annual fee, no monthly fee, and no foreign transaction fee. However, most cards have some form of conversion spread when converting crypto to fiat at the point of sale. This spread is essentially a hidden fee that varies by card and asset." },

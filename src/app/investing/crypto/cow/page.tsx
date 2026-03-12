@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is CoW Protocol (COW)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is CoW Protocol (COW)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about CoW Protocol (COW), the intent-based DEX aggregator with MEV protection. Discover how it works, tokenomics, use cases, and how to buy COW.",
 };
 
@@ -16,12 +16,18 @@ export default function CowPage() {
       readTime="8 min read"
       intro="CoW Protocol (Coincidence of Wants) is a decentralized exchange protocol that uses batch auctions and intent-based trading to protect users from MEV (Maximal Extractable Value) while finding optimal trade execution. By matching orders peer-to-peer before routing to on-chain liquidity, CoW Protocol can offer better prices and built-in MEV protection compared to standard DEX trades."
       toc={[
-        { id: "what-is", title: "What Is CoW Protocol?", level: 2 },
-        { id: "how-it-works", title: "How Does CoW Protocol Work?", level: 2 },
-        { id: "tokenomics", title: "COW Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy COW", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-cow-protocol", title: "What Is CoW Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-cow-protocol-work", title: "How Does CoW Protocol Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "cow-tokenomics", title: "COW Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-cow", title: "How to Buy COW", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is CoW Protocol?", answer: "CoW Protocol is an intent-based DEX using batch auctions to match trades peer-to-peer with MEV protection, finding optimal execution across on-chain and off-chain liquidity sources." },

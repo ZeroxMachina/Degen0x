@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Jupiter (JUP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Jupiter (JUP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Jupiter (JUP), the leading DEX aggregator on Solana. Discover how it works, tokenomics, use cases, and how to buy JUP tokens.",
 };
@@ -17,12 +17,18 @@ export default function JupiterPage() {
       readTime="8 min read"
       intro="Jupiter is the leading decentralized exchange aggregator on Solana, routing trades across multiple liquidity sources to find the best prices for users. With its expansion into perpetual trading, launchpad services, and LST products, Jupiter has become the primary trading hub of the Solana ecosystem. JUP is the governance token of the Jupiter protocol."
       toc={[
-        { id: "what-is", title: "What Is Jupiter?", level: 2 },
-        { id: "how-it-works", title: "How Jupiter Works", level: 2 },
-        { id: "tokenomics", title: "Jupiter Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy Jupiter", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-jupiter", title: "What Is Jupiter?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-jupiter-works", title: "How Jupiter Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "jupiter-tokenomics", title: "Jupiter Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-jupiter", title: "How to Buy Jupiter", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

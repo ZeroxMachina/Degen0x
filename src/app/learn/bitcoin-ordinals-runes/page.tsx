@@ -26,14 +26,22 @@ export default function BitcoinOrdinalsRunesPage() {
       readTime="13 min"
       intro="Bitcoin Ordinals and Runes represent a paradigm shift in Bitcoin's role from purely a peer-to-peer payment network to a platform for digital assets. Ordinals inscribe arbitrary data (images, videos, contracts) directly into Bitcoin's immutable blockchain, creating native Bitcoin NFTs. Runes expand on this, providing a fungible token standard that's more efficient than earlier approaches. These innovations occurred without requiring Bitcoin protocol changes—instead leveraging existing Bitcoin mechanics in novel ways. The result: Bitcoin now supports NFTs, tokens, and smart contracts, attracting new users and capital while maintaining Bitcoin's core value proposition of decentralization and security. This guide explains Ordinals, Runes, and their implications for Bitcoin's future."
       toc={[
-        { id: "what-are-ordinals", title: "What Are Bitcoin Ordinals?", level: 2 },
-        { id: "how-ordinals-work", title: "How Ordinals Work: The Indexing Theory", level: 2 },
-        { id: "inscriptions-explained", title: "Inscriptions: Storing Data on Bitcoin", level: 2 },
-        { id: "brc-20-tokens", title: "BRC-20 Tokens: Fungible Assets on Bitcoin", level: 2 },
-        { id: "runes-protocol", title: "Runes Protocol: Improved Token Design", level: 2 },
-        { id: "ordinals-use-cases", title: "Use Cases: Digital Art, Gaming, Identity", level: 2 },
-        { id: "ordinals-controversies", title: "Ordinals Debates: Blockchain Bloat and Philosophy", level: 2 },
-        { id: "future-of-ordinals", title: "The Future of Bitcoin Assets", level: 2 },
+        { id: "what-are-ordinals", title: "what-are-ordinals", level: 2 },
+        { id: "what-are-bitcoin-ordinals", title: "What Are Bitcoin Ordinals?", level: 2 },
+        { id: "how-ordinals-work", title: "how-ordinals-work", level: 2 },
+        { id: "how-ordinals-work-the-indexing-theory", title: "How Ordinals Work: The Indexing Theory", level: 2 },
+        { id: "inscriptions-explained", title: "inscriptions-explained", level: 2 },
+        { id: "inscriptions-storing-data-on-bitcoin", title: "Inscriptions: Storing Data on Bitcoin", level: 2 },
+        { id: "brc-20-tokens", title: "brc-20-tokens", level: 2 },
+        { id: "brc-20-tokens-fungible-assets-on-bitcoin", title: "BRC-20 Tokens: Fungible Assets on Bitcoin", level: 2 },
+        { id: "runes-protocol", title: "runes-protocol", level: 2 },
+        { id: "runes-protocol-improved-token-design", title: "Runes Protocol: Improved Token Design", level: 2 },
+        { id: "ordinals-use-cases", title: "ordinals-use-cases", level: 2 },
+        { id: "use-cases-digital-art-gaming-identity", title: "Use Cases: Digital Art, Gaming, Identity", level: 2 },
+        { id: "ordinals-controversies", title: "ordinals-controversies", level: 2 },
+        { id: "ordinals-debates-blockchain-bloat-and-philosophy", title: "Ordinals Debates: Blockchain Bloat and Philosophy", level: 2 },
+        { id: "future-of-ordinals", title: "future-of-ordinals", level: 2 },
+        { id: "the-future-of-bitcoin-assets", title: "The Future of Bitcoin Assets", level: 2 }
       ]}
       faqs={[
         {

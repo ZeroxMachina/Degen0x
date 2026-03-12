@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Complete Guide to Layer 2 Scaling Solutions (2026) — Rollups, Sidechains & More",
   description: "Learn how Layer 2 solutions like Arbitrum, Optimism, Base, zkSync, and Polygon scale Ethereum. Compare rollups, sidechains, state channels, and more in this comprehensive 2026 guide.",
   openGraph: {
-    title: "Layer 2 Scaling Guide 2026 — CryptoDegen",
+    title: "Layer 2 Scaling Guide 2026 — degen0x",
     description: "The definitive guide to L2 scaling solutions. Compare rollups, understand the tech, and find the best L2 for your needs.",
   },
 };
@@ -106,7 +106,7 @@ export default function Layer2GuidePage() {
           <div style={{ display: "flex", gap: 16, marginTop: 16, fontSize: 12, color: "var(--color-text-secondary, #8b949e)" }}>
             <span>📖 18 min read</span>
             <span>📅 Updated March 2026</span>
-            <span>👤 CryptoDegen Research</span>
+            <span>👤 degen0x Research</span>
           </div>
         </div>
 

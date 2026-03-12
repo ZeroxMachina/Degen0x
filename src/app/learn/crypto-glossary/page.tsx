@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import CryptoGlossaryClient from './CryptoGlossaryClient';
 
 export const metadata: Metadata = {
-  title: 'Crypto Glossary | CryptoDegen - Complete Cryptocurrency Terms Dictionary',
+  title: 'Crypto Glossary | degen0x - Complete Cryptocurrency Terms Dictionary',
   description:
     'Comprehensive glossary of 200+ cryptocurrency and blockchain terms. Learn about Bitcoin, Ethereum, DeFi, NFTs, trading, and security concepts with real-world examples and related terms.',
   keywords: [
@@ -18,20 +18,20 @@ export const metadata: Metadata = {
     'digital currency'
   ],
   openGraph: {
-    title: 'Crypto Glossary - CryptoDegen',
+    title: 'Crypto Glossary - degen0x',
     description:
       'Complete glossary of 200+ cryptocurrency and blockchain terms with detailed definitions and examples.',
     type: 'website',
-    url: 'https://cryptodegen.com/learn/crypto-glossary',
+    url: 'https://degen0x.com/learn/crypto-glossary',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Glossary - CryptoDegen',
+    title: 'Crypto Glossary - degen0x',
     description:
       'Complete glossary of 200+ cryptocurrency and blockchain terms with detailed definitions and examples.',
   },
   alternates: {
-    canonical: 'https://cryptodegen.com/learn/crypto-glossary'
+    canonical: 'https://degen0x.com/learn/crypto-glossary'
   }
 };
 
@@ -47,7 +47,7 @@ export default function CryptoGlossaryPage() {
             name: 'Crypto Glossary',
             description:
               'A comprehensive glossary of cryptocurrency and blockchain terminology',
-            url: 'https://cryptodegen.com/learn/crypto-glossary',
+            url: 'https://degen0x.com/learn/crypto-glossary',
             hasDefinedTerm: [
               { '@type': 'DefinedTerm', name: 'Bitcoin', description: 'The first and most widely recognized cryptocurrency, created by Satoshi Nakamoto in 2009.' },
               { '@type': 'DefinedTerm', name: 'Blockchain', description: 'A distributed ledger technology that maintains a continuously growing list of records called blocks.' },

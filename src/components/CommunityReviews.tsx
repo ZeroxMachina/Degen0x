@@ -413,7 +413,7 @@ export default function CommunityReviews({ productSlug, productName }: Community
                 onClick={() => setSortBy(opt)}
                 className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
                   sortBy === opt
-                    ? "bg-[var(--color-primary)] text-white"
+                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
                     : "glass-pill text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >

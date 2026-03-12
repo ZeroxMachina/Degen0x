@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bitcoin-Backed Loans: Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Bitcoin-Backed Loans: Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Everything you need to know about Bitcoin-backed loans. Compare platforms, understand LTV ratios, and learn how to borrow against your BTC without selling.",
 };
@@ -17,11 +17,16 @@ export default function BitcoinBackedLoansPage() {
       readTime="9 min read"
       intro="Bitcoin-backed loans allow you to access liquidity without selling your BTC. By depositing Bitcoin as collateral, you can borrow stablecoins or fiat for expenses, investments, or business needs while maintaining exposure to Bitcoin's upside potential. This strategy is popular among long-term Bitcoin holders who believe in continued price appreciation but need access to cash. Multiple platforms offer Bitcoin-backed loans with varying terms, rates, and LTV ratios."
       toc={[
-        { id: "how-it-works", title: "How Bitcoin-Backed Loans Work", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-bitcoin-backed-loans-work", title: "How Bitcoin-Backed Loans Work", level: 2 },
+        { id: "platform-options", title: "platform-options", level: 2 },
         { id: "platform-options", title: "Platform Options", level: 2 },
-        { id: "ltv-rates", title: "LTV Ratios and Interest Rates", level: 2 },
+        { id: "ltv-rates", title: "ltv-rates", level: 2 },
+        { id: "ltv-ratios-and-interest-rates", title: "LTV Ratios and Interest Rates", level: 2 },
+        { id: "tax-advantages", title: "tax-advantages", level: 2 },
         { id: "tax-advantages", title: "Tax Advantages", level: 2 },
-        { id: "risks-considerations", title: "Risks and Considerations", level: 2 },
+        { id: "risks-considerations", title: "risks-considerations", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Can I borrow against Bitcoin without selling?", answer: "Yes. Bitcoin-backed loans allow you to deposit BTC as collateral and receive a loan in stablecoins or fiat. You retain ownership of your Bitcoin (subject to collateral requirements) and get it back when you repay the loan. This avoids triggering a taxable sale event." },

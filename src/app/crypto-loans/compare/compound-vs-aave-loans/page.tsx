@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Compound vs Aave Loans (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Compound vs Aave Loans (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Compound and Aave for crypto borrowing. Analyze rates, supported assets, governance, and which DeFi lending protocol is better for your needs.",
 };
 
@@ -16,10 +16,14 @@ export default function CompoundVsAaveLoansPage() {
       readTime="10 min read"
       intro="Compound and Aave are the two largest DeFi lending protocols, collectively securing billions in TVL. Both enable permissionless borrowing against crypto collateral, but they differ in features, chain support, rate models, and governance approaches. This comparison helps you decide which protocol best fits your borrowing needs."
       toc={[
-        { id: "overview", title: "Protocol Overview", level: 2 },
-        { id: "rates", title: "Interest Rate Comparison", level: 2 },
-        { id: "features", title: "Feature Differences", level: 2 },
-        { id: "verdict", title: "Which Should You Choose", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "protocol-overview", title: "Protocol Overview", level: 2 },
+        { id: "rates", title: "rates", level: 2 },
+        { id: "interest-rate-comparison", title: "Interest Rate Comparison", level: 2 },
+        { id: "features", title: "features", level: 2 },
+        { id: "feature-differences", title: "Feature Differences", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose", level: 2 }
       ]}
       faqs={[
         { question: "Is Aave or Compound safer?", answer: "Both have strong security track records. Aave has more total audits and a larger safety module. Compound has a simpler codebase which some argue reduces attack surface. Both have operated for years without major exploits on their core contracts." },

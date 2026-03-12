@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Multi-Signature Wallets for Security (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Multi-Signature Wallets for Security (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about multi-signature wallets: how they work, common configurations like 2-of-3, use cases for individuals and organizations, popular multi-sig solutions, and best practices.",
 };
@@ -17,11 +17,16 @@ export default function MultiSigSecurityPage() {
       readTime="8 min read"
       intro="Multi-signature (multi-sig) wallets require multiple private keys to authorize a transaction, providing a critical security upgrade over single-key wallets. Instead of one key controlling all funds, a multi-sig configuration like 2-of-3 requires at least two out of three designated keys to sign any transaction. This eliminates the single point of failure inherent in standard wallets and is the security model of choice for DAO treasuries, crypto businesses, and security-conscious individuals holding significant assets."
       toc={[
-        { id: "how-it-works", title: "How Multi-Sig Wallets Work", level: 2 },
-        { id: "configurations", title: "Common Configurations", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-multi-sig-wallets-work", title: "How Multi-Sig Wallets Work", level: 2 },
+        { id: "configurations", title: "configurations", level: 2 },
+        { id: "common-configurations", title: "Common Configurations", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
         { id: "use-cases", title: "Use Cases", level: 2 },
-        { id: "solutions", title: "Popular Multi-Sig Solutions", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "solutions", title: "solutions", level: 2 },
+        { id: "popular-multi-sig-solutions", title: "Popular Multi-Sig Solutions", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         {

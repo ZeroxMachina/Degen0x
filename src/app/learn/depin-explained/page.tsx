@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DePIN Explained: Decentralized Physical Infrastructure Networks | CryptoDegen`,
+  title: `DePIN Explained: Decentralized Physical Infrastructure Networks | degen0x`,
   description:
     "Learn what DePIN is, explore major projects like Helium, Hivemapper, Render, and io.net, understand tokenomics models, and evaluate the DePIN investment thesis.",
 };
@@ -17,12 +17,18 @@ export default function DePINExplainedPage() {
       readTime="12 min read"
       intro="DePIN (Decentralized Physical Infrastructure Networks) is one of crypto's most ambitious applications. Rather than building blockchain systems, DePIN projects tokenize physical infrastructure—wireless networks, mapping data, GPU compute, storage servers—and incentivize individuals to operate hardware in exchange for token rewards. The category attracted tens of billions in market capitalization and represents a potentially transformative model for how infrastructure gets deployed, owned, and operated globally."
       toc={[
+        { id: "what-is-depin", title: "what-is-depin", level: 2 },
         { id: "what-is-depin", title: "What Is DePIN?", level: 2 },
-        { id: "major-projects", title: "Major DePIN Projects", level: 2 },
-        { id: "tokenomics-models", title: "DePIN Tokenomics Models", level: 2 },
+        { id: "major-projects", title: "major-projects", level: 2 },
+        { id: "major-depin-projects", title: "Major DePIN Projects", level: 2 },
+        { id: "tokenomics-models", title: "tokenomics-models", level: 2 },
+        { id: "depin-tokenomics-models", title: "DePIN Tokenomics Models", level: 2 },
+        { id: "investment-thesis", title: "investment-thesis", level: 2 },
         { id: "investment-thesis", title: "Investment Thesis", level: 2 },
+        { id: "challenges-risks", title: "challenges-risks", level: 2 },
         { id: "challenges-risks", title: "Challenges & Risks", level: 2 },
-        { id: "future-landscape", title: "Future Landscape", level: 2 },
+        { id: "future-landscape", title: "future-landscape", level: 2 },
+        { id: "future-landscape", title: "Future Landscape", level: 2 }
       ]}
       faqs={[
         {

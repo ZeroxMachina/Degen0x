@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Smart Contract Cover: How It Works (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Smart Contract Cover: How It Works (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to smart contract insurance in DeFi. Learn how cover works, how claims are assessed, and which protocols offer the best protection.",
 };
 
@@ -11,7 +11,16 @@ export default function SmartContractCoverPage() {
   return (
     <LearnPageLayout title="Smart Contract Cover: How It Works" categoryName="Crypto Insurance" categorySlug="insurance" readTime="8 min read"
       intro="Smart contract cover is the most established form of DeFi insurance, protecting against financial losses from smart contract bugs, exploits, and vulnerabilities. Protocols like Nexus Mutual pioneered this product category, creating a decentralized insurance marketplace where risk is assessed and underwritten by the community. Understanding how smart contract cover works, its limitations, and how to use it effectively is essential for protecting DeFi positions."
-      toc={[{ id: "how-it-works", title: "How Smart Contract Cover Works", level: 2 }, { id: "claims-process", title: "The Claims Process", level: 2 }, { id: "providers", title: "Cover Providers", level: 2 }, { id: "best-practices", title: "Best Practices", level: 2 }]}
+      toc={[
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-smart-contract-cover-works", title: "How Smart Contract Cover Works", level: 2 },
+        { id: "claims-process", title: "claims-process", level: 2 },
+        { id: "the-claims-process", title: "The Claims Process", level: 2 },
+        { id: "providers", title: "providers", level: 2 },
+        { id: "cover-providers", title: "Cover Providers", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
+      ]}
       faqs={[
         { question: "What does smart contract cover protect against?", answer: "Smart contract cover protects against financial losses resulting from unintended code behavior in the covered protocol's smart contracts. This includes bugs, exploits, and vulnerabilities that cause fund loss. It typically does not cover economic design failures, governance attacks, oracle manipulation, or market-driven losses." },
         { question: "How are claims assessed?", answer: "At Nexus Mutual, claims are assessed by community vote. Claim assessors review the evidence (the exploit, the loss, the policy terms) and vote to approve or deny. InsurAce uses a claims committee. Some newer protocols offer parametric or automated claims. Assessment quality varies by provider." },

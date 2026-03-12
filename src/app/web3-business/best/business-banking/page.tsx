@@ -106,7 +106,7 @@ export default function BusinessBankingPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto-Friendly Business Banks ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -123,17 +123,17 @@ export default function BusinessBankingPage() {
           welcome Web3 businesses and provide the services you actually need.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Mercury</strong> leads our rankings for US-based Web3
+          <strong className="text-[var(--color-text)]">Mercury</strong> leads our rankings for US-based Web3
           startups with its modern platform, startup-friendly features, and demonstrated willingness
           to bank crypto companies. For teams needing an integrated financial stack with cards and
-          expense management, <strong className="text-white">Brex</strong> offers the most comprehensive
-          solution. European teams should consider <strong className="text-white">Multis</strong> for
+          expense management, <strong className="text-[var(--color-text)]">Brex</strong> offers the most comprehensive
+          solution. European teams should consider <strong className="text-[var(--color-text)]">Multis</strong> for
           its crypto-native approach to business banking.
         </p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -147,7 +147,7 @@ export default function BusinessBankingPage() {
       </section>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Banking Checklist for Web3 Companies</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Banking Checklist for Web3 Companies</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Before applying for a business bank account, prepare the following to improve your chances
           of approval and speed up the onboarding process:

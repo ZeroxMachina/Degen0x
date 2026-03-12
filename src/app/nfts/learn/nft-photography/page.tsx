@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Photography: How to Sell Photos as NFTs (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Photography: How to Sell Photos as NFTs (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to mint and sell photography as NFTs. Discover the best platforms, pricing strategies, and how professional photographers are building sustainable income with NFT photography.",
 };
 
@@ -16,11 +16,16 @@ export default function NftPhotographyPage() {
       readTime="10 min"
       intro="NFT photography has emerged as a transformative opportunity for photographers to monetize their work through blockchain technology. Unlike traditional stock photography where images sell for pennies, NFT photography enables direct sales to collectors with ongoing royalty income from secondary sales. From fine art photographers to travel and street photographers, creators are finding new audiences and revenue streams in the NFT space."
       toc={[
-        { id: "why-nft-photography", title: "Why NFT Photography Matters", level: 2 },
-        { id: "best-platforms", title: "Best Platforms for Photo NFTs", level: 2 },
-        { id: "minting-photos", title: "How to Mint Photography NFTs", level: 2 },
-        { id: "pricing-editions", title: "Pricing and Edition Strategies", level: 2 },
-        { id: "building-audience", title: "Building a Collector Audience", level: 2 },
+        { id: "why-nft-photography", title: "why-nft-photography", level: 2 },
+        { id: "why-nft-photography-matters", title: "Why NFT Photography Matters", level: 2 },
+        { id: "best-platforms", title: "best-platforms", level: 2 },
+        { id: "best-platforms-for-photo-nfts", title: "Best Platforms for Photo NFTs", level: 2 },
+        { id: "minting-photos", title: "minting-photos", level: 2 },
+        { id: "how-to-mint-photography-nfts", title: "How to Mint Photography NFTs", level: 2 },
+        { id: "pricing-editions", title: "pricing-editions", level: 2 },
+        { id: "pricing-and-edition-strategies", title: "Pricing and Edition Strategies", level: 2 },
+        { id: "building-audience", title: "building-audience", level: 2 },
+        { id: "building-a-collector-audience", title: "Building a Collector Audience", level: 2 }
       ]}
       faqs={[
         { question: "Do I need to be a professional photographer to sell NFT photos?", answer: "No, but quality and uniqueness matter. The NFT photography market rewards compelling images with strong artistic vision, storytelling, or technical excellence. Amateur photographers with distinctive perspectives can succeed, especially in niches like street photography, abstract, or documentary work." },

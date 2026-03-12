@@ -53,7 +53,7 @@ export default function AdvancedTradersPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges for Advanced Traders ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -70,31 +70,31 @@ export default function AdvancedTradersPage() {
           of active and professional traders to identify which platforms deliver the best
           performance where it matters most.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Key Features for Advanced Traders</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Key Features for Advanced Traders</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div className="rounded-lg border border-[var(--color-border)] p-4">
-            <h3 className="text-white font-semibold mb-2">Order Types</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Order Types</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Beyond market and limit orders, look for OCO (one-cancels-other), trailing stops,
               iceberg orders, post-only orders, and TWAP execution for large positions.
             </p>
           </div>
           <div className="rounded-lg border border-[var(--color-border)] p-4">
-            <h3 className="text-white font-semibold mb-2">API Quality</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">API Quality</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Reliable REST and WebSocket APIs with comprehensive documentation, reasonable
               rate limits, and low latency are essential for algorithmic and automated trading.
             </p>
           </div>
           <div className="rounded-lg border border-[var(--color-border)] p-4">
-            <h3 className="text-white font-semibold mb-2">Liquidity Depth</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Liquidity Depth</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Deep order books with tight bid-ask spreads minimize slippage on large orders.
               This is especially important for high-frequency and large-volume traders.
             </p>
           </div>
           <div className="rounded-lg border border-[var(--color-border)] p-4">
-            <h3 className="text-white font-semibold mb-2">Fee Structure</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Fee Structure</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Volume-based fee tiers that reward active trading. Many exchanges offer negative
               maker fees at the highest tiers, effectively paying you to provide liquidity.

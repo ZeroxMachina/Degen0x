@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Drops: How to Get Allowlisted (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Drops: How to Get Allowlisted (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how NFT drops work, strategies for getting allowlisted, how to evaluate upcoming drops, and best practices for participating in NFT launches.",
 };
 
@@ -11,7 +11,16 @@ export default function NftDropsGuidePage() {
   return (
     <LearnPageLayout title="NFT Drops: How to Get Allowlisted" categoryName="NFTs" categorySlug="nfts" readTime="9 min read"
       intro="NFT drops are timed release events where new collections become available for minting. Getting access to the best drops, particularly through allowlists, can mean the difference between minting at a discount and paying a premium on the secondary market. The allowlisting process has evolved into a complex ecosystem with various strategies and criteria. This guide covers how drops are structured, how to position yourself for allowlist spots, and how to evaluate which drops are worth pursuing."
-      toc={[{ id: "drop-structures", title: "Drop Structures", level: 2 }, { id: "getting-allowlisted", title: "Getting Allowlisted", level: 2 }, { id: "evaluating-drops", title: "Evaluating Upcoming Drops", level: 2 }, { id: "drop-day-strategy", title: "Drop Day Strategy", level: 2 }]}
+      toc={[
+        { id: "drop-structures", title: "drop-structures", level: 2 },
+        { id: "drop-structures", title: "Drop Structures", level: 2 },
+        { id: "getting-allowlisted", title: "getting-allowlisted", level: 2 },
+        { id: "getting-allowlisted", title: "Getting Allowlisted", level: 2 },
+        { id: "evaluating-drops", title: "evaluating-drops", level: 2 },
+        { id: "evaluating-upcoming-drops", title: "Evaluating Upcoming Drops", level: 2 },
+        { id: "drop-day-strategy", title: "drop-day-strategy", level: 2 },
+        { id: "drop-day-strategy", title: "Drop Day Strategy", level: 2 }
+      ]}
       faqs={[{ question: "What is an NFT allowlist?", answer: "An allowlist is a curated list of wallet addresses that receive priority access to mint from a new NFT collection, usually before the public sale and often at a lower price. Allowlist spots are earned through community participation, holding specific NFTs, completing tasks, winning raffles, or being selected by the project team. The allowlist mint phase is less competitive and cheaper than the public mint." },
         { question: "How far in advance should I start preparing for a drop?", answer: "For popular projects, start engaging 2-4 weeks before the mint date. Join the Discord early, participate consistently in community activities, and complete any required tasks promptly. Allowlist selection often happens 1-2 weeks before mint, but some projects reward early and consistent participants. Following project founders and team members on Twitter/X helps you stay informed about allowlist opportunities as they arise." },
         { question: "Is it worth buying an allowlist spot?", answer: "Some people sell allowlist access through marketplace platforms. This carries significant risk: you might overpay relative to the mint price plus expected gains, the project might underperform, or the allowlist sale might be a scam. If you consider buying a spot, ensure the seller can verifiably add your wallet to the allowlist and that the expected post-mint value justifies the total cost (spot price plus mint price plus gas)." }]}

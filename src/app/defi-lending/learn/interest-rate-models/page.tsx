@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DeFi Interest Rate Models Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DeFi Interest Rate Models Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Understand how DeFi lending protocols determine interest rates. Learn about utilization curves, kinked rate models, and how supply and demand drive DeFi yields.",
 };
 
@@ -11,7 +11,16 @@ export default function InterestRateModelsPage() {
   return (
     <LearnPageLayout title="DeFi Interest Rate Models Explained" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="9 min read"
       intro="Interest rate models are the algorithms that determine how much lenders earn and borrowers pay on DeFi lending protocols. Unlike traditional finance where rates are set by committees, DeFi rates are determined by mathematical functions based on supply and demand dynamics. Understanding these models helps you predict rate movements, choose optimal lending times, and understand why rates can spike dramatically during market events."
-      toc={[{ id: "utilization-based", title: "Utilization-Based Rate Models", level: 2 }, { id: "kinked-model", title: "The Kinked Rate Model", level: 2 }, { id: "stable-rates", title: "Stable vs Variable Rates", level: 2 }, { id: "predicting-rates", title: "Predicting Rate Movements", level: 2 }]}
+      toc={[
+        { id: "utilization-based", title: "utilization-based", level: 2 },
+        { id: "utilization-based-rate-models", title: "Utilization-Based Rate Models", level: 2 },
+        { id: "kinked-model", title: "kinked-model", level: 2 },
+        { id: "the-kinked-rate-model", title: "The Kinked Rate Model", level: 2 },
+        { id: "stable-rates", title: "stable-rates", level: 2 },
+        { id: "stable-vs-variable-rates", title: "Stable vs Variable Rates", level: 2 },
+        { id: "predicting-rates", title: "predicting-rates", level: 2 },
+        { id: "predicting-rate-movements", title: "Predicting Rate Movements", level: 2 }
+      ]}
       faqs={[
         { question: "How are DeFi lending rates determined?", answer: "Most DeFi protocols use utilization-based models. The utilization rate is total borrows divided by total supply. As utilization increases (more borrowing relative to supply), interest rates increase to attract deposits and discourage additional borrowing. The specific formula varies by protocol." },
         { question: "Why do DeFi rates spike suddenly?", answer: "Rate spikes occur when utilization suddenly increases above the optimal target. Large borrows, mass withdrawals, or market events can push utilization from 75% to 95%+, causing rates to jump from 3% to 50%+ in the high-utilization zone. This incentivizes rapid rebalancing." },

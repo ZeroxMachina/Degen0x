@@ -17,12 +17,18 @@ export default function WhatIsCryptocurrencyPage() {
       readTime="14 min"
       intro="Cryptocurrency is a form of digital or virtual currency that uses cryptography for security and operates on decentralized networks, typically built on blockchain technology. Unlike traditional currencies issued by governments (fiat money), cryptocurrencies are not controlled by any single entity. This guide explains what cryptocurrency is, how it works, the major types, and how it fits into the broader financial landscape."
       toc={[
-        { id: "definition", title: "What Is Cryptocurrency?", level: 2 },
-        { id: "how-it-works", title: "How Cryptocurrency Works", level: 2 },
-        { id: "types", title: "Types of Cryptocurrency", level: 2 },
-        { id: "buying-and-storing", title: "Buying and Storing Crypto", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-cryptocurrency", title: "What Is Cryptocurrency?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-cryptocurrency-works", title: "How Cryptocurrency Works", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-cryptocurrency", title: "Types of Cryptocurrency", level: 2 },
+        { id: "buying-and-storing", title: "buying-and-storing", level: 2 },
+        { id: "buying-and-storing-crypto", title: "Buying and Storing Crypto", level: 2 },
+        { id: "benefits-and-risks", title: "benefits-and-risks", level: 2 },
         { id: "benefits-and-risks", title: "Benefits and Risks", level: 2 },
-        { id: "future", title: "The Future of Cryptocurrency", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-cryptocurrency", title: "The Future of Cryptocurrency", level: 2 }
       ]}
       faqs={[
         {

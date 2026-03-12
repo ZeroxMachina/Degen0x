@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is an Order Book? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is an Order Book? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what an order book is, how it works in crypto trading, how to read order book data, and the difference between order book and AMM-based exchanges.",
 };
 
@@ -11,7 +11,16 @@ export default function OrderBookPage() {
   return (
     <LearnPageLayout title="What Is an Order Book?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="An order book is a real-time, continuously updated list of buy and sell orders for a specific trading pair, organized by price. Order books are the core mechanism of centralized exchanges and some decentralized exchanges, matching buyers with sellers to facilitate trades. Understanding how to read an order book gives traders insight into supply and demand dynamics, potential support and resistance levels, and the depth of liquidity available at each price point."
-      toc={[{ id: "definition", title: "What Is an Order Book?", level: 2 }, { id: "reading-order-books", title: "How to Read an Order Book", level: 2 }, { id: "order-types", title: "Order Types", level: 2 }, { id: "order-book-vs-amm", title: "Order Book vs AMM", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-an-order-book", title: "What Is an Order Book?", level: 2 },
+        { id: "reading-order-books", title: "reading-order-books", level: 2 },
+        { id: "how-to-read-an-order-book", title: "How to Read an Order Book", level: 2 },
+        { id: "order-types", title: "order-types", level: 2 },
+        { id: "order-types", title: "Order Types", level: 2 },
+        { id: "order-book-vs-amm", title: "order-book-vs-amm", level: 2 },
+        { id: "order-book-vs-amm", title: "Order Book vs AMM", level: 2 }
+      ]}
       faqs={[{ question: "What is the spread in an order book?", answer: "The spread is the difference between the highest bid (buy order) and the lowest ask (sell order). A tight spread indicates high liquidity and efficient pricing. A wide spread suggests low liquidity and potentially higher trading costs. Major trading pairs like BTC/USDT on top exchanges have spreads of $0.01 or less." },
         { question: "Can order books be manipulated?", answer: "Yes. Spoofing involves placing large orders to create the illusion of demand or supply, then canceling before execution. Wash trading creates artificial volume. Layering places multiple orders at different prices to influence perception. While illegal in traditional markets, enforcement in crypto is limited. Read order books critically and be aware of potential manipulation." }]}
       relatedArticles={[{ title: "Spread", href: "/learn/glossary/spread", category: "Glossary" }, { title: "Market Depth", href: "/learn/glossary/market-depth", category: "Glossary" }, { title: "Volume", href: "/learn/glossary/volume", category: "Glossary" }, { title: "What Is a DEX?", href: "/learn/what-is-a-dex", category: "Learn Crypto" }]}

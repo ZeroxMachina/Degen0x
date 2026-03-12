@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is dYdX Chain (DYDX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is dYdX Chain (DYDX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about dYdX Chain (DYDX), the decentralized perpetual futures exchange. Discover how it works, tokenomics, use cases, and how to buy DYDX.",
 };
@@ -17,12 +17,18 @@ export default function DydxChainPage() {
       readTime="9 min read"
       intro="dYdX Chain is the leading decentralized perpetual futures exchange, operating as a sovereign Cosmos SDK appchain with a fully on-chain order book. After migrating from Ethereum to its own chain, dYdX V4 delivers a trading experience comparable to centralized exchanges while maintaining decentralization, processing thousands of orders per second with sub-second finality."
       toc={[
-        { id: "what-is", title: "What Is dYdX Chain?", level: 2 },
-        { id: "how-it-works", title: "How Does dYdX Chain Work?", level: 2 },
-        { id: "tokenomics", title: "DYDX Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy DYDX", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-dydx-chain", title: "What Is dYdX Chain?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-dydx-chain-work", title: "How Does dYdX Chain Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "dydx-tokenomics", title: "DYDX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-dydx", title: "How to Buy DYDX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

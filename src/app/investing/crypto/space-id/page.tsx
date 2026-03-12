@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is SPACE ID (ID)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is SPACE ID (ID)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about SPACE ID (ID), the multi-chain domain name service. Discover how it works, tokenomics, use cases, and how to buy ID.",
 };
 
 export default function SpaceIdPage() {
   return (
-    <LearnPageLayout title="What Is SPACE ID (ID)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="SPACE ID is a universal name service network that enables users to register and manage blockchain domain names across multiple chains. The protocol provides .bnb domains on BNB Chain, .arb domains on Arbitrum, and supports additional networks through its multi-chain architecture. SPACE ID also offers a Web3 Name SDK that allows developers to integrate domain resolution across all major chains." toc={[{id:"what-is",title:"What Is SPACE ID?",level:2},{id:"how-it-works",title:"How Does SPACE ID Work?",level:2},{id:"tokenomics",title:"ID Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy ID",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is SPACE ID?",answer:"SPACE ID is a multi-chain domain name service providing .bnb and .arb domains, with a universal SDK for cross-chain name resolution and decentralized identity."},{question:"Where can I buy ID?",answer:"ID is available on Binance, OKX, Bybit, and PancakeSwap. It trades against USDT and BNB pairs."},{question:"Is SPACE ID a good investment?",answer:"SPACE ID leads in BNB Chain domains and expands multi-chain, but competes with ENS and Unstoppable Domains. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"BNB Chain",href:"/investing/crypto/bnb",category:"Investing"}]}>
+    <LearnPageLayout title="What Is SPACE ID (ID)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="SPACE ID is a universal name service network that enables users to register and manage blockchain domain names across multiple chains. The protocol provides .bnb domains on BNB Chain, .arb domains on Arbitrum, and supports additional networks through its multi-chain architecture. SPACE ID also offers a Web3 Name SDK that allows developers to integrate domain resolution across all major chains." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-space-id", title: "What Is SPACE ID?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-space-id-work", title: "How Does SPACE ID Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "id-tokenomics", title: "ID Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-id", title: "How to Buy ID", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is SPACE ID?",answer:"SPACE ID is a multi-chain domain name service providing .bnb and .arb domains, with a universal SDK for cross-chain name resolution and decentralized identity."},{question:"Where can I buy ID?",answer:"ID is available on Binance, OKX, Bybit, and PancakeSwap. It trades against USDT and BNB pairs."},{question:"Is SPACE ID a good investment?",answer:"SPACE ID leads in BNB Chain domains and expands multi-chain, but competes with ENS and Unstoppable Domains. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"BNB Chain",href:"/investing/crypto/bnb",category:"Investing"}]}>
       <h2 id="what-is">What Is SPACE ID?</h2>
       <p>SPACE ID was created to build a universal identity protocol that works across all blockchain networks. While ENS dominates Ethereum domain names, SPACE ID targeted the BNB Chain ecosystem first with .bnb domains, quickly becoming the standard naming service for the BNB ecosystem. The protocol then expanded to Arbitrum with .arb domains and has continued adding chain-specific top-level domains, positioning itself as the cross-chain alternative to single-chain naming services.</p>
       <p>The Web3 Name SDK is SPACE ID&apos;s developer product that aggregates name resolution across ENS, SPACE ID, and other naming services into a single API. This allows applications to resolve any Web3 domain name regardless of which chain or naming service issued it, simplifying the developer experience and promoting interoperability across the fragmented domain name landscape.</p>

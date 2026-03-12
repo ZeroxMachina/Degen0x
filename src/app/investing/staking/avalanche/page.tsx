@@ -18,12 +18,18 @@ export default function StakeAvalanchePage() {
       readTime="9 min"
       intro="Avalanche staking offers AVAX holders approximately 8-10% APY through its unique consensus mechanism that combines high throughput with strong decentralization. With a minimum delegation of 25 AVAX and a 14-day lock-up period, Avalanche provides a balanced staking experience with competitive yields and reasonable flexibility."
       toc={[
-        { id: "overview", title: "Avalanche Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake AVAX Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Avalanche", level: 2 },
-        { id: "validators", title: "Validators & Delegation", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "avalanche-staking-overview", title: "Avalanche Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-avax-step-by-step", title: "How to Stake AVAX Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-avalanche", title: "Risks of Staking Avalanche", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-delegation", title: "Validators & Delegation", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "What is the minimum AVAX needed to stake?", answer: "You need a minimum of 25 AVAX to delegate to a validator on Avalanche. Running your own validator requires a minimum of 2,000 AVAX. Liquid staking protocols like Benqi offer sAVAX with lower minimums." },

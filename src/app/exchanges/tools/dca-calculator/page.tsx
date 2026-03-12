@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -84,7 +86,7 @@ export default function DcaCalculatorPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Dollar-Cost Averaging (DCA) Calculator
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -97,19 +99,19 @@ export default function DcaCalculatorPage() {
         {/* Input Section */}
         <div className="space-y-6">
           <div>
-            <label className="block text-sm font-medium text-white mb-2">Investment Amount (USD)</label>
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Investment Amount (USD)</label>
             <input
               type="number"
               value={investmentAmount}
               onChange={(e) => setInvestmentAmount(e.target.value)}
               placeholder="100"
               min="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-white mb-2">Frequency</label>
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Frequency</label>
             <div className="grid grid-cols-2 gap-2">
               {FREQUENCIES.map((f) => (
                 <button
@@ -117,8 +119,8 @@ export default function DcaCalculatorPage() {
                   onClick={() => setFrequency(f.value)}
                   className={`rounded-lg px-4 py-3 text-sm font-medium transition-colors ${
                     frequency === f.value
-                      ? "bg-[var(--color-primary)] text-white"
-                      : "border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text-secondary)] hover:text-white"
+                      ? "bg-[var(--color-primary)] text-[var(--color-text)]"
+                      : "border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                   }`}
                 >
                   {f.label}
@@ -128,7 +130,7 @@ export default function DcaCalculatorPage() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-white mb-2">Time Period (Years)</label>
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Time Period (Years)</label>
             <input
               type="number"
               value={timePeriod}
@@ -137,16 +139,16 @@ export default function DcaCalculatorPage() {
               min="0.5"
               max="30"
               step="0.5"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-white mb-2">Estimated Annual Return</label>
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Estimated Annual Return</label>
             <select
               value={selectedReturn}
               onChange={(e) => setSelectedReturn(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
             >
               {Object.keys(HISTORICAL_RETURNS).map((key) => (
                 <option key={key} value={key}>
@@ -158,13 +160,13 @@ export default function DcaCalculatorPage() {
 
           {selectedReturn === "Custom" && (
             <div>
-              <label className="block text-sm font-medium text-white mb-2">Custom Annual Return (%)</label>
+              <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Custom Annual Return (%)</label>
               <input
                 type="number"
                 value={customReturn}
                 onChange={(e) => setCustomReturn(e.target.value)}
                 placeholder="50"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
               />
             </div>
           )}
@@ -173,18 +175,18 @@ export default function DcaCalculatorPage() {
         {/* Results Section */}
         <div className="space-y-4">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-4">Projected Results</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-4">Projected Results</h3>
 
             <div className="space-y-3">
               <div className="flex justify-between items-center">
                 <span className="text-sm text-[var(--color-text-secondary)]">Total Invested</span>
-                <span className="text-sm font-medium text-white">
+                <span className="text-sm font-medium text-[var(--color-text)]">
                   ${results.totalInvested.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                 </span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-sm text-[var(--color-text-secondary)]">Number of Purchases</span>
-                <span className="text-sm font-medium text-white">{results.totalPeriods}</span>
+                <span className="text-sm font-medium text-[var(--color-text)]">{results.totalPeriods}</span>
               </div>
               <div className="border-t border-[var(--color-border)] pt-3">
                 <div className="flex justify-between items-center">
@@ -207,7 +209,7 @@ export default function DcaCalculatorPage() {
 
           {/* Simple Bar Chart */}
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-4">Growth Over Time</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-4">Growth Over Time</h3>
             <div className="space-y-1">
               {results.dataPoints.slice(-12).map((point, idx) => (
                 <div key={idx} className="flex items-center gap-2">
@@ -240,7 +242,7 @@ export default function DcaCalculatorPage() {
 
       {/* Educational Content */}
       <div className="mt-12 prose-crypto">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Dollar-Cost Averaging?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Dollar-Cost Averaging?</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4">
           Dollar-cost averaging (DCA) is an investment strategy where you invest a fixed amount of money at
           regular intervals, regardless of the current price. When prices are low, your fixed amount buys more

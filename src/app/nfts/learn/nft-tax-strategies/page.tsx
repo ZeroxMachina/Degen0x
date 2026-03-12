@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Tax Strategies and Reporting (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Tax Strategies and Reporting (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about NFT tax obligations including capital gains, creator income, reporting requirements, and strategies for minimizing your NFT tax burden legally.",
 };
 
@@ -11,7 +11,16 @@ export default function NftTaxStrategiesPage() {
   return (
     <LearnPageLayout title="NFT Tax Strategies and Reporting" categoryName="NFTs" categorySlug="nfts" readTime="9 min read"
       intro="NFT transactions create tax obligations that many collectors and creators overlook. Buying, selling, minting, and even receiving NFTs can trigger taxable events in most jurisdictions. The tax treatment of NFTs is evolving as regulators catch up with the technology, but current guidance requires careful tracking and reporting. This guide covers the major tax implications of NFT activities, common strategies for minimizing tax burden legally, and tools for maintaining accurate records."
-      toc={[{ id: "taxable-events", title: "NFT Taxable Events", level: 2 }, { id: "creator-taxes", title: "Tax Obligations for Creators", level: 2 }, { id: "record-keeping", title: "Record Keeping and Tools", level: 2 }, { id: "tax-strategies", title: "Legal Tax Strategies", level: 2 }]}
+      toc={[
+        { id: "taxable-events", title: "taxable-events", level: 2 },
+        { id: "nft-taxable-events", title: "NFT Taxable Events", level: 2 },
+        { id: "creator-taxes", title: "creator-taxes", level: 2 },
+        { id: "tax-obligations-for-creators", title: "Tax Obligations for Creators", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping-and-tools", title: "Record Keeping and Tools", level: 2 },
+        { id: "tax-strategies", title: "tax-strategies", level: 2 },
+        { id: "legal-tax-strategies", title: "Legal Tax Strategies", level: 2 }
+      ]}
       faqs={[{ question: "Is buying an NFT a taxable event?", answer: "Buying an NFT with crypto (like ETH) is generally a taxable event because you are disposing of crypto, which triggers capital gains or losses on the ETH used. Buying with fiat currency is not a taxable event for the buyer. The purchase price becomes your cost basis for the NFT, which determines your gain or loss when you eventually sell. Always track the fiat value at the time of purchase for accurate cost basis records." },
         { question: "How are NFT royalties taxed?", answer: "Royalties received from secondary sales of your NFTs are generally treated as ordinary income, taxed at your regular income tax rate. If you are a professional creator, royalties may also be subject to self-employment tax. Track each royalty payment with the date, amount in crypto, and fiat value at the time of receipt. The cost basis of any crypto received as royalties is the fiat value at the time of receipt." },
         { question: "What if I receive an NFT airdrop?", answer: "In most jurisdictions, receiving an NFT airdrop is treated as income equal to the fair market value of the NFT at the time of receipt. This is similar to how crypto airdrops are taxed. If the airdrop has no market value at the time of receipt, it may have a zero cost basis. When you later sell the airdropped NFT, you will owe capital gains tax on the difference between the sale price and your income-reported value." }]}

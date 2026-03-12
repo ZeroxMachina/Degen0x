@@ -17,11 +17,16 @@ export default function CryptoPassiveIncomeGuidePage() {
       readTime="12 min read"
       intro="Passive income in crypto has evolved from speculative yields to sophisticated, sustainable strategies offering real returns in the 2026 market. Whether through staking, lending, yield farming, or liquidity provision, there are numerous ways to earn returns on cryptocurrency holdings. This guide explores legitimate passive income strategies, their risk profiles, and practical implementation approaches for different experience levels."
       toc={[
-        { id: "understanding-passive-income", title: "Understanding Crypto Passive Income", level: 2 },
-        { id: "staking-basics", title: "Staking and Validation", level: 2 },
-        { id: "lending-strategies", title: "Lending and Borrowing", level: 2 },
-        { id: "liquidity-provision", title: "Liquidity Provision Returns", level: 2 },
-        { id: "advanced-strategies", title: "Advanced Yield Strategies", level: 2 },
+        { id: "understanding-passive-income", title: "understanding-passive-income", level: 2 },
+        { id: "understanding-crypto-passive-income", title: "Understanding Crypto Passive Income", level: 2 },
+        { id: "staking-basics", title: "staking-basics", level: 2 },
+        { id: "staking-and-validation", title: "Staking and Validation", level: 2 },
+        { id: "lending-strategies", title: "lending-strategies", level: 2 },
+        { id: "lending-and-borrowing", title: "Lending and Borrowing", level: 2 },
+        { id: "liquidity-provision", title: "liquidity-provision", level: 2 },
+        { id: "liquidity-provision-returns", title: "Liquidity Provision Returns", level: 2 },
+        { id: "advanced-strategies", title: "advanced-strategies", level: 2 },
+        { id: "advanced-yield-strategies", title: "Advanced Yield Strategies", level: 2 }
       ]}
       faqs={[
         {

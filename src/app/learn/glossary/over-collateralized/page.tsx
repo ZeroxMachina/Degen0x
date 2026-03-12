@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Over-Collateralized? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Over-Collateralized? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what over-collateralization means in DeFi lending, why protocols require it, how it protects lenders, and its role in stablecoin design.",
 };
 
@@ -11,7 +11,16 @@ export default function OverCollateralizedPage() {
   return (
     <LearnPageLayout title="What Is Over-Collateralized?" categoryName="Learn Crypto" categorySlug="learn" readTime="4 min read"
       intro="Over-collateralization means providing collateral worth more than the value of the loan or obligation it secures. In DeFi, most lending protocols require borrowers to deposit 110-200% of the loan value in collateral. This excess coverage protects lenders against the volatility of crypto assets and ensures protocol solvency even during rapid market downturns. Over-collateralization is the standard security model in decentralized lending."
-      toc={[{ id: "definition", title: "What Is Over-Collateralization?", level: 2 }, { id: "why-overcollateralize", title: "Why Over-Collateralize?", level: 2 }, { id: "stablecoins", title: "Over-Collateralized Stablecoins", level: 2 }, { id: "tradeoffs", title: "Trade-offs and Limitations", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-over-collateralization", title: "What Is Over-Collateralization?", level: 2 },
+        { id: "why-overcollateralize", title: "why-overcollateralize", level: 2 },
+        { id: "why-over-collateralize", title: "Why Over-Collateralize?", level: 2 },
+        { id: "stablecoins", title: "stablecoins", level: 2 },
+        { id: "over-collateralized-stablecoins", title: "Over-Collateralized Stablecoins", level: 2 },
+        { id: "tradeoffs", title: "tradeoffs", level: 2 },
+        { id: "trade-offs-and-limitations", title: "Trade-offs and Limitations", level: 2 }
+      ]}
       faqs={[{ question: "How much over-collateralization is typical?", answer: "Most DeFi lending protocols require 125-200% collateralization. MakerDAO requires 150% for ETH-backed DAI. Aave allows 80% LTV for ETH (equivalent to 125% collateralization). More volatile assets require higher ratios. The specific requirement depends on the asset's volatility, liquidity, and the protocol's risk parameters." },
         { question: "Is over-collateralization capital efficient?", answer: "No, and this is its main drawback. To borrow $1,000, you need to lock up $1,500-2,000 in collateral. This capital is idle and cannot be used for other purposes. Various innovations like undercollateralized lending, credit scoring, and looping strategies attempt to improve capital efficiency while managing risk." }]}
       relatedArticles={[{ title: "Collateralization", href: "/learn/glossary/collateralization", category: "Glossary" }, { title: "Under-Collateralized", href: "/learn/glossary/under-collateralized", category: "Glossary" }, { title: "Liquidation", href: "/learn/glossary/liquidation", category: "Glossary" }, { title: "Borrowing", href: "/learn/glossary/borrowing", category: "Glossary" }]}

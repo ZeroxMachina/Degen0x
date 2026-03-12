@@ -6,7 +6,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 const product = cryptoCards.find((c) => c.slug === "binance-card")!;
 
 export const metadata: Metadata = {
-  title: `Binance Card Review (${CURRENT_YEAR}): Cashback, Features & Pros/Cons | CryptoDegen`,
+  title: `Binance Card Review (${CURRENT_YEAR}): Cashback, Features & Pros/Cons | degen0x`,
   description: "In-depth Binance Card review covering BNB-tiered cashback, zero transaction fees, supported cryptocurrencies, and regional availability.",
 };
 

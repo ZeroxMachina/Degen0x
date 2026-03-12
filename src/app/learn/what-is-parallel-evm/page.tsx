@@ -27,14 +27,22 @@ export default function ParallelEVMPage() {
       readTime="13 min"
       intro="Traditional EVM execution is inherently sequential: transactions execute one-by-one, with each transaction's state changes becoming visible to the next. This prevents parallelization—if transaction A and B both interact with the same contract, they must execute in order. Parallel EVM execution breaks this constraint by speculatively executing transactions in parallel, detecting conflicts, and resolving them efficiently. This architectural innovation dramatically improves blockchain throughput without sacrificing correctness or security. Monad, Sei, and MegaETH are pioneering parallel EVM approaches, achieving 10-100x throughput improvements. This guide explains parallel execution mechanics, explores leading implementations, and analyzes why this approach is reshaping blockchain design."
       toc={[
-        { id: "sequential-vs-parallel", title: "Sequential vs. Parallel Execution", level: 2 },
-        { id: "parallel-execution-basics", title: "How Parallel Execution Works", level: 2 },
-        { id: "conflict-detection", title: "Conflict Detection and Resolution", level: 2 },
-        { id: "monad-explained", title: "Monad: Parallel EVM Architecture", level: 2 },
-        { id: "sei-design", title: "Sei: Parallel Cosmos Execution", level: 2 },
-        { id: "megaeth-approach", title: "MegaETH: Ethereum-Compatible Parallelization", level: 2 },
-        { id: "benefits-tradeoffs", title: "Benefits and Tradeoffs", level: 2 },
-        { id: "future-parallel", title: "Future of Parallel Execution", level: 2 },
+        { id: "sequential-vs-parallel", title: "sequential-vs-parallel", level: 2 },
+        { id: "sequential-vs-parallel-execution", title: "Sequential vs. Parallel Execution", level: 2 },
+        { id: "parallel-execution-basics", title: "parallel-execution-basics", level: 2 },
+        { id: "how-parallel-execution-works", title: "How Parallel Execution Works", level: 2 },
+        { id: "conflict-detection", title: "conflict-detection", level: 2 },
+        { id: "conflict-detection-and-resolution", title: "Conflict Detection and Resolution", level: 2 },
+        { id: "monad-explained", title: "monad-explained", level: 2 },
+        { id: "monad-parallel-evm-architecture", title: "Monad: Parallel EVM Architecture", level: 2 },
+        { id: "sei-design", title: "sei-design", level: 2 },
+        { id: "sei-parallel-cosmos-execution", title: "Sei: Parallel Cosmos Execution", level: 2 },
+        { id: "megaeth-approach", title: "megaeth-approach", level: 2 },
+        { id: "megaeth-ethereum-compatible-parallelization", title: "MegaETH: Ethereum-Compatible Parallelization", level: 2 },
+        { id: "benefits-tradeoffs", title: "benefits-tradeoffs", level: 2 },
+        { id: "benefits-and-tradeoffs", title: "Benefits and Tradeoffs", level: 2 },
+        { id: "future-parallel", title: "future-parallel", level: 2 },
+        { id: "future-of-parallel-execution", title: "Future of Parallel Execution", level: 2 }
       ]}
       faqs={[
         {

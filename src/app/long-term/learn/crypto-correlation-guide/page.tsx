@@ -18,12 +18,18 @@ export default function CryptoCorrelationGuidePage() {
       readTime="10 min read"
       intro="Understanding correlations within the crypto market and between crypto and traditional assets is essential for effective portfolio management. Bitcoin dominance cycles, alt-season dynamics, and the evolving relationship between crypto and equities all influence investment decisions. This guide explains the key correlation patterns, how they shift across market cycles, and how to use correlation data to optimize your portfolio allocation and timing."
       toc={[
-        { id: "btc-dominance", title: "Bitcoin Dominance Explained", level: 2 },
-        { id: "alt-season", title: "Alt Season: When Altcoins Outperform", level: 2 },
-        { id: "intra-crypto", title: "Intra-Crypto Correlations", level: 2 },
-        { id: "crypto-equity", title: "Crypto-Equity Market Correlation", level: 2 },
-        { id: "using-correlations", title: "Using Correlations for Portfolio Management", level: 2 },
-        { id: "indicators", title: "Key Correlation Indicators", level: 2 },
+        { id: "btc-dominance", title: "btc-dominance", level: 2 },
+        { id: "bitcoin-dominance-explained", title: "Bitcoin Dominance Explained", level: 2 },
+        { id: "alt-season", title: "alt-season", level: 2 },
+        { id: "alt-season-when-altcoins-outperform", title: "Alt Season: When Altcoins Outperform", level: 2 },
+        { id: "intra-crypto", title: "intra-crypto", level: 2 },
+        { id: "intra-crypto-correlations", title: "Intra-Crypto Correlations", level: 2 },
+        { id: "crypto-equity", title: "crypto-equity", level: 2 },
+        { id: "crypto-equity-market-correlation", title: "Crypto-Equity Market Correlation", level: 2 },
+        { id: "using-correlations", title: "using-correlations", level: 2 },
+        { id: "using-correlations-for-portfolio-management", title: "Using Correlations for Portfolio Management", level: 2 },
+        { id: "indicators", title: "indicators", level: 2 },
+        { id: "key-correlation-indicators", title: "Key Correlation Indicators", level: 2 }
       ]}
       faqs={[
         { question: "What is Bitcoin dominance?", answer: "Bitcoin dominance is the percentage of total crypto market capitalization that Bitcoin represents. When dominance rises, Bitcoin is outperforming altcoins. When it falls, altcoins are outperforming. It historically ranges between 40-70% and follows cyclical patterns." },

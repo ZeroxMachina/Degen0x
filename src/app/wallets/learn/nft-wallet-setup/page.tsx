@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Wallets for NFTs (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Wallets for NFTs (${CURRENT_YEAR}) | degen0x`,
   description: "Find the best crypto wallets for NFT collecting, minting, and trading. Compare wallet features for NFT display, marketplace integration, and security.",
 };
 
@@ -11,7 +11,16 @@ export default function NftWalletSetupPage() {
   return (
     <LearnPageLayout title="Best Wallets for NFTs" categoryName="Crypto Wallets" categorySlug="wallets" readTime="7 min read"
       intro="NFTs require wallet features that go beyond basic token management. The best NFT wallets provide rich visual displays, marketplace integration, gas optimization for minting, and security features that protect against the unique risks of NFT trading. Whether you are collecting art, trading PFPs, or minting new projects, choosing the right wallet significantly improves your NFT experience. This guide compares the best wallets for NFT users across major blockchains."
-      toc={[{ id: "nft-wallet-features", title: "Essential NFT Wallet Features", level: 2 }, { id: "best-nft-wallets", title: "Best Wallets for NFTs", level: 2 }, { id: "nft-security", title: "NFT Security Practices", level: 2 }, { id: "multi-chain-nfts", title: "Multi-Chain NFT Management", level: 2 }]}
+      toc={[
+        { id: "nft-wallet-features", title: "nft-wallet-features", level: 2 },
+        { id: "essential-nft-wallet-features", title: "Essential NFT Wallet Features", level: 2 },
+        { id: "best-nft-wallets", title: "best-nft-wallets", level: 2 },
+        { id: "best-wallets-for-nfts", title: "Best Wallets for NFTs", level: 2 },
+        { id: "nft-security", title: "nft-security", level: 2 },
+        { id: "nft-security-practices", title: "NFT Security Practices", level: 2 },
+        { id: "multi-chain-nfts", title: "multi-chain-nfts", level: 2 },
+        { id: "multi-chain-nft-management", title: "Multi-Chain NFT Management", level: 2 }
+      ]}
       faqs={[{ question: "Can I store NFTs on a hardware wallet?", answer: "Yes, NFTs are stored on the blockchain and can be controlled by a hardware wallet just like tokens. Ledger supports NFT display for Ethereum and Polygon NFTs in Ledger Live. You can also use MetaMask connected to a Ledger device to interact with NFT marketplaces while keeping your keys secure. For high-value NFTs, hardware wallet storage is strongly recommended." },
         { question: "What happens to my NFTs if the marketplace shuts down?", answer: "Your NFTs exist on the blockchain independently of any marketplace. If OpenSea or another marketplace closes, your NFTs remain in your wallet and are accessible through other marketplaces or directly via the smart contract. However, the metadata and images may depend on where they are stored. NFTs with IPFS or on-chain storage are more resilient than those stored on centralized servers." },
         { question: "How do I protect against NFT scams?", answer: "Never click links in DMs or emails claiming to offer free mints or exclusive access. Always verify NFT project websites through their official social media. Use a burner wallet for minting unknown projects. Be cautious of airdropped NFTs in your wallet as interacting with them can trigger malicious contracts. Enable phishing protection in your wallet and review all transaction details before signing." }]}

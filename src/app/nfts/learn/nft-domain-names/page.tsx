@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Domain Names: ENS, Unstoppable Domains (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Domain Names: ENS, Unstoppable Domains (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about NFT domain names including ENS and Unstoppable Domains. Understand how blockchain domains work, their uses, and how to register your own Web3 identity.",
 };
 
@@ -16,11 +16,16 @@ export default function NftDomainNamesPage() {
       readTime="9 min"
       intro="NFT domain names are blockchain-based identifiers that replace complex wallet addresses with human-readable names. Instead of sharing a 42-character Ethereum address, you can share 'yourname.eth' or 'yourname.crypto'. These domains function as NFTs that you truly own, without renewal fees from centralized registrars. This guide covers the major NFT domain providers, practical uses, and how to register your own Web3 identity."
       toc={[
-        { id: "how-they-work", title: "How NFT Domains Work", level: 2 },
-        { id: "ens-domains", title: "Ethereum Name Service (ENS)", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-nft-domains-work", title: "How NFT Domains Work", level: 2 },
+        { id: "ens-domains", title: "ens-domains", level: 2 },
+        { id: "ethereum-name-service-ens", title: "Ethereum Name Service (ENS)", level: 2 },
+        { id: "unstoppable-domains", title: "unstoppable-domains", level: 2 },
         { id: "unstoppable-domains", title: "Unstoppable Domains", level: 2 },
-        { id: "use-cases", title: "Practical Use Cases", level: 2 },
-        { id: "registration-guide", title: "How to Register a Domain", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "practical-use-cases", title: "Practical Use Cases", level: 2 },
+        { id: "registration-guide", title: "registration-guide", level: 2 },
+        { id: "how-to-register-a-domain", title: "How to Register a Domain", level: 2 }
       ]}
       faqs={[
         { question: "Do NFT domains replace traditional domains?", answer: "Not currently. NFT domains like .eth and .crypto do not resolve in standard web browsers without extensions. They primarily serve as wallet identifiers and Web3 identity. Some NFT domains can be linked to traditional websites through IPFS, but for standard web presence, traditional domains remain necessary." },

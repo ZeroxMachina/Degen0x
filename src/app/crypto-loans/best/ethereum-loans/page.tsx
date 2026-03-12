@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Ethereum-Backed Loans (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Ethereum-Backed Loans (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best platforms for borrowing against your ETH. Review rates, LTV ratios, and liquidation terms for Ethereum-backed loans.",
 };
 
@@ -16,10 +16,14 @@ export default function EthereumLoansPage() {
       readTime="9 min read"
       intro="Ethereum is one of the most widely accepted collateral assets in crypto lending. Whether you use CeFi or DeFi platforms, borrowing against ETH lets you access liquidity without selling your position. With staking yield now available on ETH, you can even earn while borrowing. Here are the top platforms for Ethereum-backed loans."
       toc={[
-        { id: "top-platforms", title: "Top ETH Loan Platforms", level: 2 },
-        { id: "cefi-vs-defi", title: "CeFi vs DeFi for ETH Loans", level: 2 },
-        { id: "staking-collateral", title: "Using Staked ETH as Collateral", level: 2 },
-        { id: "how-to-borrow", title: "How to Borrow Against ETH", level: 2 },
+        { id: "top-platforms", title: "top-platforms", level: 2 },
+        { id: "top-eth-loan-platforms", title: "Top ETH Loan Platforms", level: 2 },
+        { id: "cefi-vs-defi", title: "cefi-vs-defi", level: 2 },
+        { id: "cefi-vs-defi-for-eth-loans", title: "CeFi vs DeFi for ETH Loans", level: 2 },
+        { id: "staking-collateral", title: "staking-collateral", level: 2 },
+        { id: "using-staked-eth-as-collateral", title: "Using Staked ETH as Collateral", level: 2 },
+        { id: "how-to-borrow", title: "how-to-borrow", level: 2 },
+        { id: "how-to-borrow-against-eth", title: "How to Borrow Against ETH", level: 2 }
       ]}
       faqs={[
         { question: "Can I borrow against staked ETH?", answer: "Yes. Many DeFi protocols accept liquid staking tokens like stETH and rETH as collateral, allowing you to earn staking yield while borrowing simultaneously." },

@@ -16,10 +16,14 @@ export default function SpainExchangesPage() {
       readTime="9 min"
       intro="Spain has a growing crypto market supported by EU regulatory clarity and accessible EUR-based exchange infrastructure. Spanish traders benefit from SEPA payment integration, a growing number of registered platforms, and clear tax reporting obligations. This guide covers the best exchanges available to Spanish residents."
       toc={[
-        { id: "regulation", title: "Spanish Crypto Regulation", level: 2 },
-        { id: "top-exchanges", title: "Best Exchanges for Spanish Users", level: 2 },
-        { id: "payment-methods", title: "EUR Payment Methods", level: 2 },
-        { id: "taxes", title: "Crypto Tax in Spain (Modelo 721)", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "spanish-crypto-regulation", title: "Spanish Crypto Regulation", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "best-exchanges-for-spanish-users", title: "Best Exchanges for Spanish Users", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "eur-payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "taxes", title: "taxes", level: 2 },
+        { id: "crypto-tax-in-spain-modelo-721", title: "Crypto Tax in Spain (Modelo 721)", level: 2 }
       ]}
       faqs={[
         {

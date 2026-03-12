@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Mantle (MNT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Mantle (MNT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Mantle (MNT), the Ethereum Layer 2 scaling solution with a modular architecture. Discover how it works, tokenomics, and how to buy MNT.",
 };
@@ -17,12 +17,18 @@ export default function MantlePage() {
       readTime="8 min read"
       intro="Mantle is an Ethereum Layer 2 scaling solution that uses an optimistic rollup architecture combined with modular data availability. Backed by BitDAO (now Mantle governance), it offers developers a high-performance, low-cost environment for building decentralized applications. MNT is the native gas token of the Mantle network."
       toc={[
-        { id: "what-is", title: "What Is Mantle?", level: 2 },
-        { id: "how-it-works", title: "How Mantle Works", level: 2 },
-        { id: "tokenomics", title: "Mantle Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy Mantle", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-mantle", title: "What Is Mantle?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-mantle-works", title: "How Mantle Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mantle-tokenomics", title: "Mantle Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mantle", title: "How to Buy Mantle", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

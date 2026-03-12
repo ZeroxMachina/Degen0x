@@ -17,10 +17,14 @@ export default function SpendingCryptoVsFiatPage() {
       readTime="7 min"
       intro="Crypto cards give you the option to spend either cryptocurrency or fiat currency. Each choice has different implications for taxes, costs, and your overall financial strategy. Understanding when it makes sense to spend crypto versus fiat can help you minimize taxes, reduce fees, and optimize your overall returns. This guide provides a framework for making smart spending decisions with your crypto card."
       toc={[
+        { id: "tax-implications", title: "tax-implications", level: 2 },
         { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "cost-comparison", title: "cost-comparison", level: 2 },
         { id: "cost-comparison", title: "Cost Comparison", level: 2 },
-        { id: "strategic-spending", title: "Strategic Spending Decisions", level: 2 },
-        { id: "stablecoin-middle", title: "The Stablecoin Middle Ground", level: 2 },
+        { id: "strategic-spending", title: "strategic-spending", level: 2 },
+        { id: "strategic-spending-decisions", title: "Strategic Spending Decisions", level: 2 },
+        { id: "stablecoin-middle", title: "stablecoin-middle", level: 2 },
+        { id: "the-stablecoin-middle-ground", title: "The Stablecoin Middle Ground", level: 2 }
       ]}
       faqs={[
         { question: "Should I spend crypto or hold it?", answer: "This depends on your investment thesis and tax situation. If you believe the crypto will appreciate significantly, holding may be better. If you have crypto gains and need to realize them, spending through a card is a convenient way to do so. Spending stablecoins avoids this dilemma entirely." },

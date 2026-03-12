@@ -16,10 +16,14 @@ export default function BestSmartContractPlatformsPage() {
       readTime="10 min"
       intro="Smart contract development platforms provide tools, frameworks, and infrastructure for building and deploying decentralized applications, from development environments to deployment pipelines."
       toc={[
-        { id: "section-1", title: "Development Platform Overview", level: 2 },
-        { id: "section-2", title: "Top Platforms Compared", level: 2 },
-        { id: "section-3", title: "Choosing a Platform", level: 2 },
-        { id: "section-4", title: "Getting Started", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "development-platform-overview", title: "Development Platform Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "top-platforms-compared", title: "Top Platforms Compared", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What is a smart contract development platform?", answer: "A smart contract development platform provides the tools, frameworks, testing environments, and deployment infrastructure needed to build, test, and deploy smart contracts and decentralized applications on blockchain networks." },

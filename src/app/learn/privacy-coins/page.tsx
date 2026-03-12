@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Privacy Coins Explained: Monero, Zcash & More (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Privacy Coins Explained: Monero, Zcash & More (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about privacy coins: how Monero, Zcash, and other privacy-focused cryptocurrencies work, the technology behind transaction privacy, use cases, and regulatory challenges.",
 };
@@ -17,11 +17,16 @@ export default function PrivacyCoinsPage() {
       readTime="9 min read"
       intro="Privacy coins are cryptocurrencies designed to provide enhanced transaction privacy by obscuring sender identities, recipient addresses, and transaction amounts. While most blockchains like Bitcoin and Ethereum are pseudonymous (transactions are public but linked to addresses rather than real identities), privacy coins use advanced cryptographic techniques to make transactions genuinely private. This guide explores how different privacy technologies work, their legitimate use cases, and the regulatory challenges they face."
       toc={[
-        { id: "why-privacy", title: "Why Privacy Matters in Crypto", level: 2 },
-        { id: "monero", title: "Monero: Ring Signatures and Stealth Addresses", level: 2 },
-        { id: "zcash", title: "Zcash: Zero-Knowledge Proofs", level: 2 },
-        { id: "other-approaches", title: "Other Privacy Approaches", level: 2 },
-        { id: "regulation", title: "Regulatory Challenges", level: 2 },
+        { id: "why-privacy", title: "why-privacy", level: 2 },
+        { id: "why-privacy-matters-in-crypto", title: "Why Privacy Matters in Crypto", level: 2 },
+        { id: "monero", title: "monero", level: 2 },
+        { id: "monero-ring-signatures-and-stealth-addresses", title: "Monero: Ring Signatures and Stealth Addresses", level: 2 },
+        { id: "zcash", title: "zcash", level: 2 },
+        { id: "zcash-zero-knowledge-proofs", title: "Zcash: Zero-Knowledge Proofs", level: 2 },
+        { id: "other-approaches", title: "other-approaches", level: 2 },
+        { id: "other-privacy-approaches", title: "Other Privacy Approaches", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulatory-challenges", title: "Regulatory Challenges", level: 2 }
       ]}
       faqs={[
         {

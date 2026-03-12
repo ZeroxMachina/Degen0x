@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Lido DAO (LDO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Lido DAO (LDO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Lido DAO (LDO), the largest liquid staking protocol on Ethereum. Discover how it works, tokenomics, use cases, and how to buy LDO.",
 };
@@ -17,12 +17,18 @@ export default function LidoPage() {
       readTime="8 min read"
       intro="Lido is the largest liquid staking protocol in crypto, enabling users to stake ETH and receive stETH (staked ETH) tokens that can be used across DeFi while earning staking rewards. With over 28% of all staked ETH flowing through Lido, the protocol is critical infrastructure for the Ethereum ecosystem. LDO is the governance token of the Lido DAO."
       toc={[
-        { id: "what-is", title: "What Is Lido DAO?", level: 2 },
-        { id: "how-it-works", title: "How Does Lido Work?", level: 2 },
-        { id: "tokenomics", title: "LDO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy LDO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-lido-dao", title: "What Is Lido DAO?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-lido-work", title: "How Does Lido Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ldo-tokenomics", title: "LDO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ldo", title: "How to Buy LDO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

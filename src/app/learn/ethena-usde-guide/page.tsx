@@ -17,14 +17,22 @@ export default function EthenaUSDeGuidePage() {
       readTime="16 min"
       intro="Ethena is a DeFi protocol creating USDe, a synthetic stablecoin maintaining a dollar peg through delta-neutral hedging rather than traditional collateralization. USDe combines ETH/BTC spot holdings with synthetic short positions, creating a dollar-value reserve without needing 1:1 USDC backing. The protocol introduces the Internet Bond concept—generating yield on stablecoin holdings through Ethena-controlled hedging income. Understanding Ethena requires knowledge of delta-neutral strategies, synthetic hedging, risks, and how it compares to other stablecoin models."
       toc={[
-        { id: "what-is-ethena", title: "What Is Ethena Protocol?", level: 2 },
-        { id: "how-usde-works", title: "How USDe Works: Delta-Neutral Hedging", level: 2 },
-        { id: "internet-bond", title: "The Internet Bond Concept", level: 2 },
-        { id: "susde-staking", title: "sUSDe Staking and Yield Generation", level: 2 },
-        { id: "stablecoin-comparison", title: "Ethena vs Other Stablecoins", level: 2 },
-        { id: "risks", title: "Risks and Challenges", level: 2 },
-        { id: "tokenomics", title: "ENA Token and Governance", level: 2 },
-        { id: "using-ethena", title: "How to Use Ethena", level: 2 },
+        { id: "what-is-ethena", title: "what-is-ethena", level: 2 },
+        { id: "what-is-ethena-protocol", title: "What Is Ethena Protocol?", level: 2 },
+        { id: "how-usde-works", title: "how-usde-works", level: 2 },
+        { id: "how-usde-works-delta-neutral-hedging", title: "How USDe Works: Delta-Neutral Hedging", level: 2 },
+        { id: "internet-bond", title: "internet-bond", level: 2 },
+        { id: "the-internet-bond-concept", title: "The Internet Bond Concept", level: 2 },
+        { id: "susde-staking", title: "susde-staking", level: 2 },
+        { id: "susde-staking-and-yield-generation", title: "sUSDe Staking and Yield Generation", level: 2 },
+        { id: "stablecoin-comparison", title: "stablecoin-comparison", level: 2 },
+        { id: "ethena-vs-other-stablecoins", title: "Ethena vs Other Stablecoins", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ena-token-and-governance", title: "ENA Token and Governance", level: 2 },
+        { id: "using-ethena", title: "using-ethena", level: 2 },
+        { id: "how-to-use-ethena", title: "How to Use Ethena", level: 2 }
       ]}
       faqs={[
         {

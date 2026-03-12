@@ -18,12 +18,18 @@ export default function DefiRisksGuidePage() {
       readTime="13 min read"
       intro="DeFi offers unprecedented financial opportunities, but it also comes with significant risks that every participant must understand. From smart contract exploits that can drain entire protocols to impermanent loss that quietly erodes LP returns, the DeFi risk landscape is complex and evolving. This guide covers every major risk category, how they manifest, and practical strategies for protecting your capital."
       toc={[
-        { id: "smart-contract", title: "Smart Contract Risks", level: 2 },
-        { id: "impermanent-loss", title: "Impermanent Loss Deep Dive", level: 2 },
-        { id: "oracle-risk", title: "Oracle Manipulation & Failures", level: 2 },
-        { id: "liquidation", title: "Liquidation & Cascading Risks", level: 2 },
-        { id: "economic-risks", title: "Economic & Governance Risks", level: 2 },
-        { id: "protection", title: "How to Protect Yourself", level: 2 },
+        { id: "smart-contract", title: "smart-contract", level: 2 },
+        { id: "smart-contract-risks", title: "Smart Contract Risks", level: 2 },
+        { id: "impermanent-loss", title: "impermanent-loss", level: 2 },
+        { id: "impermanent-loss-deep-dive", title: "Impermanent Loss Deep Dive", level: 2 },
+        { id: "oracle-risk", title: "oracle-risk", level: 2 },
+        { id: "oracle-manipulation-failures", title: "Oracle Manipulation & Failures", level: 2 },
+        { id: "liquidation", title: "liquidation", level: 2 },
+        { id: "liquidation-cascading-risks", title: "Liquidation & Cascading Risks", level: 2 },
+        { id: "economic-risks", title: "economic-risks", level: 2 },
+        { id: "economic-governance-risks", title: "Economic & Governance Risks", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "how-to-protect-yourself", title: "How to Protect Yourself", level: 2 }
       ]}
       faqs={[
         { question: "What is the biggest risk in DeFi?", answer: "Smart contract risk is the most catastrophic, as exploits can result in total loss of deposited funds. However, impermanent loss and token depreciation are more common sources of losses for average users." },

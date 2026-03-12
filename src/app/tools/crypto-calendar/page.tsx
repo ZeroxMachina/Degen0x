@@ -3,11 +3,6 @@
 import { useState, useMemo } from 'react';
 import { ChevronLeft, ChevronRight, Grid3x3, List, Calendar } from 'lucide-react';
 
-export const metadata = {
-  title: 'Crypto Events Calendar',
-  description: 'Track important crypto events including token unlocks, mainnet launches, airdrops, conferences, and governance votes',
-};
-
 interface CryptoEvent {
   id: string;
   title: string;

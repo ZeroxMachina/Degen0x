@@ -17,12 +17,18 @@ export default function NftRoyaltiesExplainedPage() {
       readTime="10 min"
       intro="NFT royalties are fees automatically paid to the original creator every time their NFT is resold on the secondary market. This mechanism was one of the most revolutionary promises of NFTs: artists earning ongoing income from their work as it appreciates in value. However, the reality of royalty enforcement has become one of the most debated topics in the NFT ecosystem."
       toc={[
-        { id: "how-royalties-work", title: "How NFT Royalties Work", level: 2 },
-        { id: "royalty-standards", title: "Royalty Standards and Implementation", level: 2 },
-        { id: "enforcement-debate", title: "The Royalty Enforcement Debate", level: 2 },
-        { id: "marketplace-policies", title: "Marketplace Royalty Policies", level: 2 },
-        { id: "setting-royalties", title: "Setting Royalties as a Creator", level: 2 },
-        { id: "future-of-royalties", title: "The Future of NFT Royalties", level: 2 },
+        { id: "how-royalties-work", title: "how-royalties-work", level: 2 },
+        { id: "how-nft-royalties-work", title: "How NFT Royalties Work", level: 2 },
+        { id: "royalty-standards", title: "royalty-standards", level: 2 },
+        { id: "royalty-standards-and-implementation", title: "Royalty Standards and Implementation", level: 2 },
+        { id: "enforcement-debate", title: "enforcement-debate", level: 2 },
+        { id: "the-royalty-enforcement-debate", title: "The Royalty Enforcement Debate", level: 2 },
+        { id: "marketplace-policies", title: "marketplace-policies", level: 2 },
+        { id: "marketplace-royalty-policies", title: "Marketplace Royalty Policies", level: 2 },
+        { id: "setting-royalties", title: "setting-royalties", level: 2 },
+        { id: "setting-royalties-as-a-creator", title: "Setting Royalties as a Creator", level: 2 },
+        { id: "future-of-royalties", title: "future-of-royalties", level: 2 },
+        { id: "the-future-of-nft-royalties", title: "The Future of NFT Royalties", level: 2 }
       ]}
       faqs={[
         {

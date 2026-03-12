@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DeFi Lending Strategies for Maximizing Returns (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DeFi Lending Strategies for Maximizing Returns (${CURRENT_YEAR}) | degen0x`,
   description: "Advanced DeFi lending strategies to maximize yield. Learn about recursive lending, rate arbitrage, yield optimization, and risk-adjusted return strategies.",
 };
 
@@ -11,7 +11,16 @@ export default function DefiLendingStrategiesPage() {
   return (
     <LearnPageLayout title="DeFi Lending Strategies for Maximizing Returns" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="10 min read"
       intro="Beyond simple deposit-and-earn, DeFi lending protocols enable sophisticated strategies that can significantly boost returns. From recursive lending loops to cross-protocol arbitrage and incentive optimization, experienced DeFi users employ multiple techniques to maximize capital efficiency. This guide covers practical strategies from conservative to advanced, with clear explanations of the risks each approach introduces."
-      toc={[{ id: "basic-strategies", title: "Basic Lending Strategies", level: 2 }, { id: "recursive-lending", title: "Recursive Lending (Looping)", level: 2 }, { id: "yield-optimization", title: "Yield Optimization Techniques", level: 2 }, { id: "risk-adjusted", title: "Risk-Adjusted Approaches", level: 2 }]}
+      toc={[
+        { id: "basic-strategies", title: "basic-strategies", level: 2 },
+        { id: "basic-lending-strategies", title: "Basic Lending Strategies", level: 2 },
+        { id: "recursive-lending", title: "recursive-lending", level: 2 },
+        { id: "recursive-lending-looping", title: "Recursive Lending (Looping)", level: 2 },
+        { id: "yield-optimization", title: "yield-optimization", level: 2 },
+        { id: "yield-optimization-techniques", title: "Yield Optimization Techniques", level: 2 },
+        { id: "risk-adjusted", title: "risk-adjusted", level: 2 },
+        { id: "risk-adjusted-approaches", title: "Risk-Adjusted Approaches", level: 2 }
+      ]}
       faqs={[
         { question: "What is recursive lending?", answer: "Recursive lending (looping) involves depositing collateral, borrowing against it, redepositing the borrowed assets, and repeating. Each loop earns additional supply interest and token incentives. For example, deposit USDC, borrow USDC, redeposit, earning supply APY on each loop minus borrow APY." },
         { question: "How much can strategies boost yields?", answer: "Basic stablecoin lending may earn 3-6% APY. Recursive lending can boost this to 8-15% depending on the spread between supply and borrow rates plus incentives. Cross-protocol optimization can add another 1-3%. Higher returns always carry higher risk." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Axie Infinity (AXS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Axie Infinity (AXS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Axie Infinity (AXS), the pioneering play-to-earn blockchain game. Discover how it works, tokenomics, use cases, and how to buy AXS.",
 };
@@ -17,12 +17,18 @@ export default function AxieInfinityPage() {
       readTime="8 min read"
       intro="Axie Infinity is a blockchain-based game developed by Sky Mavis that pioneered the play-to-earn model. Players collect, breed, and battle fantasy creatures called Axies, which are NFTs with unique attributes. AXS is the governance token used for staking, governance, and in-game payments within the Axie ecosystem."
       toc={[
-        { id: "what-is", title: "What Is Axie Infinity?", level: 2 },
-        { id: "how-it-works", title: "How Does Axie Infinity Work?", level: 2 },
-        { id: "tokenomics", title: "AXS Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy AXS", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-axie-infinity", title: "What Is Axie Infinity?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-axie-infinity-work", title: "How Does Axie Infinity Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "axs-tokenomics", title: "AXS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-axs", title: "How to Buy AXS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

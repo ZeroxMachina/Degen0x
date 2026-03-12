@@ -10,7 +10,16 @@ export default function LiquidityPoolsExplainedPage() {
   return (
     <LearnPageLayout title="Liquidity Pools Explained" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="10 min"
       intro="Liquidity pools are the backbone of decentralized exchanges and DeFi protocols. They replace traditional order books with smart contract-managed pools of tokens that enable permissionless trading. This guide explains how liquidity pools work, how liquidity providers earn returns, and what to consider before adding liquidity."
-      toc={[{ id: "what-are-lps", title: "What Are Liquidity Pools?", level: 2 }, { id: "how-amms-work", title: "How AMMs Work", level: 2 }, { id: "earning-fees", title: "How LPs Earn Fees", level: 2 }, { id: "choosing-pools", title: "Choosing the Right Pool", level: 2 }]}
+      toc={[
+        { id: "what-are-lps", title: "what-are-lps", level: 2 },
+        { id: "what-are-liquidity-pools", title: "What Are Liquidity Pools?", level: 2 },
+        { id: "how-amms-work", title: "how-amms-work", level: 2 },
+        { id: "how-amms-work", title: "How AMMs Work", level: 2 },
+        { id: "earning-fees", title: "earning-fees", level: 2 },
+        { id: "how-lps-earn-fees", title: "How LPs Earn Fees", level: 2 },
+        { id: "choosing-pools", title: "choosing-pools", level: 2 },
+        { id: "choosing-the-right-pool", title: "Choosing the Right Pool", level: 2 }
+      ]}
       faqs={[
         { question: "How much money do I need to provide liquidity?", answer: "There is no minimum on most protocols, but you should consider gas costs. On Ethereum mainnet, the practical minimum is around $500-1000 to make gas costs worthwhile. On L2s, you can start with as little as $50." },
         { question: "Can I lose money providing liquidity?", answer: "Yes. Through impermanent loss, smart contract exploits, or token depegs, LPs can lose money. However, well-chosen pools with high volume and correlated assets often generate net positive returns after accounting for all risks." },

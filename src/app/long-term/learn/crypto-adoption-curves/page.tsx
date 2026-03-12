@@ -16,10 +16,14 @@ export default function CryptoAdoptionCurvesPage() {
       readTime="10 min"
       intro="Analyzing cryptocurrency adoption through technology adoption curves helps estimate where we are in the lifecycle and what growth potential remains, providing a framework for long-term investment decisions."
       toc={[
-        { id: "section-1", title: "Technology Adoption Models", level: 2 },
-        { id: "section-2", title: "Crypto Adoption Metrics", level: 2 },
-        { id: "section-3", title: "Adoption Comparisons", level: 2 },
-        { id: "section-4", title: "Investment Framework", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "technology-adoption-models", title: "Technology Adoption Models", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "crypto-adoption-metrics", title: "Crypto Adoption Metrics", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "adoption-comparisons", title: "Adoption Comparisons", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "investment-framework", title: "Investment Framework", level: 2 }
       ]}
       faqs={[
         { question: "Where is crypto on the adoption curve?", answer: "Estimates place cryptocurrency adoption between the early adopter and early majority phases, roughly comparable to internet adoption in the late 1990s. Global crypto ownership is estimated at 5-10% of the population, suggesting significant growth potential if adoption follows patterns of previous transformative technologies." },

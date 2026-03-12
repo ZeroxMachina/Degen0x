@@ -7,7 +7,16 @@ export default function ExchangeInsuranceFdicPage() {
   return (
     <LearnPageLayout title="Exchange Insurance & FDIC for Crypto" categoryName="Insurance" categorySlug="insurance" readTime="7 min"
       intro="Many crypto users assume their exchange deposits are insured like bank accounts, but the reality is more complex. This guide explains what protections actually exist for funds held on centralized exchanges, the limitations of FDIC coverage in the crypto context, and how to supplement with crypto-native insurance."
-      toc={[{ id: "fdic-limits", title: "FDIC Coverage Limits", level: 2 }, { id: "exchange-insurance", title: "Exchange Insurance Funds", level: 2 }, { id: "crypto-cover", title: "Crypto-Native Exchange Cover", level: 2 }, { id: "protecting-funds", title: "Protecting Your Exchange Funds", level: 2 }]}
+      toc={[
+        { id: "fdic-limits", title: "fdic-limits", level: 2 },
+        { id: "fdic-coverage-limits", title: "FDIC Coverage Limits", level: 2 },
+        { id: "exchange-insurance", title: "exchange-insurance", level: 2 },
+        { id: "exchange-insurance-funds", title: "Exchange Insurance Funds", level: 2 },
+        { id: "crypto-cover", title: "crypto-cover", level: 2 },
+        { id: "crypto-native-exchange-cover", title: "Crypto-Native Exchange Cover", level: 2 },
+        { id: "protecting-funds", title: "protecting-funds", level: 2 },
+        { id: "protecting-your-exchange-funds", title: "Protecting Your Exchange Funds", level: 2 }
+      ]}
       faqs={[
         { question: "Are my crypto holdings on exchanges FDIC insured?", answer: "No. FDIC insurance only covers US dollar deposits at FDIC-member banks, up to $250,000 per depositor. Cryptocurrency holdings are not covered by FDIC, even if the exchange partners with an FDIC-insured bank for fiat deposits." },
         { question: "What happened with exchange insurance during the FTX collapse?", answer: "FTX did not have adequate insurance or reserves to cover customer deposits. Users who held assets on FTX faced significant losses. This event highlighted the importance of not relying solely on exchange promises and considering independent insurance coverage." },

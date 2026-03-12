@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Coinbase", slug: "coinbase", rating: 4.6, affiliateUrl: "https://cryptodegen.com/go/coinbase", features: { "Trading Fees": "0%–0.60% (Advanced)", "Coins Listed": "250+", "Self-Custody Wallet": "Yes (Coinbase Wallet)", "Staking": "Yes (select states)", "Transfers Out": "Yes (any wallet)", "Advanced Trading": "Yes (Coinbase Advanced)", "Asset Types": "Crypto only", "Crypto Card": "Yes" } },
-  { name: "Robinhood", slug: "robinhood", rating: 4.1, affiliateUrl: "https://cryptodegen.com/go/robinhood", features: { "Trading Fees": "0% (spread markup)", "Coins Listed": "20+", "Self-Custody Wallet": "Yes (Robinhood Wallet)", "Staking": "Limited", "Transfers Out": "Yes (limited)", "Advanced Trading": "Limited", "Asset Types": "Stocks + Crypto + Options", "Crypto Card": "No" } },
+  { name: "Coinbase", slug: "coinbase", rating: 4.6, affiliateUrl: "https://degen0x.com/go/coinbase", features: { "Trading Fees": "0%–0.60% (Advanced)", "Coins Listed": "250+", "Self-Custody Wallet": "Yes (Coinbase Wallet)", "Staking": "Yes (select states)", "Transfers Out": "Yes (any wallet)", "Advanced Trading": "Yes (Coinbase Advanced)", "Asset Types": "Crypto only", "Crypto Card": "Yes" } },
+  { name: "Robinhood", slug: "robinhood", rating: 4.1, affiliateUrl: "https://degen0x.com/go/robinhood", features: { "Trading Fees": "0% (spread markup)", "Coins Listed": "20+", "Self-Custody Wallet": "Yes (Robinhood Wallet)", "Staking": "Limited", "Transfers Out": "Yes (limited)", "Advanced Trading": "Limited", "Asset Types": "Stocks + Crypto + Options", "Crypto Card": "No" } },
 ];
 
 const features = ["Trading Fees", "Coins Listed", "Self-Custody Wallet", "Staking", "Transfers Out", "Advanced Trading", "Asset Types", "Crypto Card"];
@@ -32,7 +32,7 @@ export default function CoinbaseVsRobinhoodPage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Coinbase vs Robinhood: Best for Crypto in {CURRENT_YEAR}?
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -50,7 +50,7 @@ export default function CoinbaseVsRobinhoodPage() {
       <ComparisonTable items={items} features={features} title="Coinbase vs Robinhood: Head-to-Head" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Structure</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Structure</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Robinhood advertises commission-free crypto trading, but this is misleading. Robinhood
           makes money through spread markups embedded in the execution price, which can be
@@ -64,7 +64,7 @@ export default function CoinbaseVsRobinhoodPage() {
           shows you the exact fee, while Robinhood hides it in the spread.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Coin Selection and Crypto Features</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Coin Selection and Crypto Features</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Coinbase lists over 250 cryptocurrencies with full support for deposits, withdrawals,
           staking, and self-custody through Coinbase Wallet. It is a complete crypto platform
@@ -78,7 +78,7 @@ export default function CoinbaseVsRobinhoodPage() {
           options, and crypto all in one app.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Ownership and Custody</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Ownership and Custody</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Coinbase gives you full ownership of your crypto with the ability to transfer to any
           external wallet. Coinbase Wallet provides self-custody access to DeFi. Robinhood has
@@ -86,15 +86,15 @@ export default function CoinbaseVsRobinhoodPage() {
           self-custody and want to use your crypto in DeFi, Coinbase is the clear choice.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Coinbase if</strong> you want a serious crypto
+            <strong className="text-[var(--color-text)]">Choose Coinbase if</strong> you want a serious crypto
             platform with wide coin selection, self-custody options, staking, DeFi access, and
             transparent fees. Coinbase is better for anyone who wants to go deeper into crypto.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Robinhood if</strong> you want to buy Bitcoin
+            <strong className="text-[var(--color-text)]">Choose Robinhood if</strong> you want to buy Bitcoin
             or Ethereum alongside your stock portfolio in one app, prefer a simplified interface,
             and do not need advanced crypto features. Robinhood is fine for basic crypto exposure.
           </p>

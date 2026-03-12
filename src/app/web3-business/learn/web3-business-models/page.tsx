@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Web3 Business Models Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Web3 Business Models Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Explore Web3 business models including token economies, protocol fees, NFT royalties, and DAO structures. Learn how Web3 companies generate sustainable revenue.",
 };
 
@@ -12,10 +12,14 @@ export default function Web3BusinessModelsPage() {
     <LearnPageLayout title="Web3 Business Models Explained" categoryName="Web3 Business" categorySlug="web3-business" readTime="9 min read"
       intro="Web3 introduces fundamentally new business models that differ from traditional Web2 approaches. Instead of capturing value through data monetization and platform lock-in, Web3 businesses generate revenue through protocol fees, token appreciation, NFT sales, and community-driven economies. Understanding these models is essential for entrepreneurs building in the space and investors evaluating Web3 projects."
       toc={[
-        { id: "protocol-fees", title: "Protocol Fee Models", level: 2 },
-        { id: "token-models", title: "Token-Based Business Models", level: 2 },
-        { id: "nft-models", title: "NFT Revenue Models", level: 2 },
-        { id: "hybrid-models", title: "Hybrid Web2/Web3 Models", level: 2 },
+        { id: "protocol-fees", title: "protocol-fees", level: 2 },
+        { id: "protocol-fee-models", title: "Protocol Fee Models", level: 2 },
+        { id: "token-models", title: "token-models", level: 2 },
+        { id: "token-based-business-models", title: "Token-Based Business Models", level: 2 },
+        { id: "nft-models", title: "nft-models", level: 2 },
+        { id: "nft-revenue-models", title: "NFT Revenue Models", level: 2 },
+        { id: "hybrid-models", title: "hybrid-models", level: 2 },
+        { id: "hybrid-web2-web3-models", title: "Hybrid Web2/Web3 Models", level: 2 }
       ]}
       faqs={[
         { question: "How do Web3 companies make money?", answer: "Web3 companies generate revenue through several mechanisms: protocol fees (a percentage of transactions processed through the protocol), token sales (initial and ongoing), NFT sales and royalties, premium features and services, infrastructure fees (RPC endpoints, data indexing), and consulting or enterprise services built on top of open-source protocols." },

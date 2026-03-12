@@ -83,7 +83,7 @@ export default function BinanceVsBybitPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <div className="glass rounded-2xl p-8 border border-[var(--color-border)]">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-bold text-white">Binance</h2>
+              <h2 className="text-2xl font-bold text-[var(--color-text)]">Binance</h2>
               <div className="text-3xl font-bold text-orange-400">{binance.rating}/5</div>
             </div>
             <ul className="space-y-2 text-[var(--color-text-secondary)]">
@@ -116,7 +116,7 @@ export default function BinanceVsBybitPage() {
 
           <div className="glass rounded-2xl p-8 border border-[var(--color-border)]">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-bold text-white">Bybit</h2>
+              <h2 className="text-2xl font-bold text-[var(--color-text)]">Bybit</h2>
               <div className="text-3xl font-bold text-cyan-400">{bybit.rating}/5</div>
             </div>
             <ul className="space-y-2 text-[var(--color-text-secondary)]">
@@ -161,7 +161,7 @@ export default function BinanceVsBybitPage() {
         <div className="space-y-12">
           {/* Fee Comparison */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-yellow-400">💰</span> Fee Comparison
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -170,15 +170,15 @@ export default function BinanceVsBybitPage() {
                 <div className="space-y-3 text-[var(--color-text-secondary)]">
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Spot Trading</span>
-                    <span className="font-semibold text-white">0.1% (0.075% w/ BNB)</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.1% (0.075% w/ BNB)</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Futures Maker</span>
-                    <span className="font-semibold text-white">0.02%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.02%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Futures Taker</span>
-                    <span className="font-semibold text-white">0.04%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.04%</span>
                   </div>
                 </div>
               </div>
@@ -188,21 +188,21 @@ export default function BinanceVsBybitPage() {
                 <div className="space-y-3 text-[var(--color-text-secondary)]">
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Spot Trading</span>
-                    <span className="font-semibold text-white">0.1%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.1%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Futures Maker</span>
-                    <span className="font-semibold text-white">0.01%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.01%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Futures Taker</span>
-                    <span className="font-semibold text-white">0.06%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.06%</span>
                   </div>
                 </div>
               </div>
             </div>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)] bg-opacity-50">
-              <h3 className="text-lg font-bold text-white mb-3">Fee Comparison</h3>
+              <h3 className="text-lg font-bold text-[var(--color-text)] mb-3">Fee Comparison</h3>
               <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4">
                 Binance has lower spot trading fees (0.1% vs 0.1%) with BNB discounts available. For futures, Bybit
                 has a slight advantage on maker fees (0.01% vs 0.02%), but Binance is slightly better on taker fees
@@ -216,7 +216,7 @@ export default function BinanceVsBybitPage() {
 
           {/* Derivatives Trading */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-red-400">📈</span> Derivatives & Leverage
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -273,25 +273,25 @@ export default function BinanceVsBybitPage() {
 
           {/* Coin Selection */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-purple-400">🪙</span> Cryptocurrency Selection
             </h2>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)] mb-6">
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-bold text-orange-400 mb-2">Binance</h3>
-                  <p className="text-2xl font-bold text-white mb-2">600+</p>
+                  <p className="text-2xl font-bold text-[var(--color-text)] mb-2">600+</p>
                   <p className="text-[var(--color-text-secondary)]">Spot & futures pairs</p>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-cyan-400 mb-2">Bybit</h3>
-                  <p className="text-2xl font-bold text-white mb-2">500+</p>
+                  <p className="text-2xl font-bold text-[var(--color-text)] mb-2">500+</p>
                   <p className="text-[var(--color-text-secondary)]">Spot & derivatives pairs</p>
                 </div>
               </div>
               <div className="mt-6 pt-6 border-t border-[var(--color-border)]">
                 <div className="flex items-center justify-between">
-                  <span className="font-semibold text-white">Winner</span>
+                  <span className="font-semibold text-[var(--color-text)]">Winner</span>
                   <span className="inline-block bg-orange-500 bg-opacity-20 border border-orange-400 text-orange-400 px-4 py-2 rounded-lg font-semibold">
                     ⭐ Binance: 600 vs 500
                   </span>
@@ -306,7 +306,7 @@ export default function BinanceVsBybitPage() {
 
           {/* Trading Experience */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-blue-400">⚡</span> Trading Experience
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -343,7 +343,7 @@ export default function BinanceVsBybitPage() {
 
           {/* Security & Reputation */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-green-400">🔒</span> Security & Reputation
             </h2>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)]">
@@ -372,7 +372,7 @@ export default function BinanceVsBybitPage() {
 
           {/* Verdict */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-yellow-400">🏆</span> Overall Verdict
             </h2>
             <div className="glass rounded-xl p-8 border border-[var(--color-border)] bg-gradient-to-br from-orange-900 bg-opacity-10 to-transparent">
@@ -402,7 +402,7 @@ export default function BinanceVsBybitPage() {
             </div>
 
             <div className="mt-8 p-6 rounded-xl bg-[var(--color-bg-card)] border border-[var(--color-border)]">
-              <h3 className="text-lg font-bold text-white mb-3">Category Breakdown</h3>
+              <h3 className="text-lg font-bold text-[var(--color-text)] mb-3">Category Breakdown</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="text-center pb-4 border-b md:border-b-0 md:border-r border-[var(--color-border)]">
                   <p className="text-[var(--color-text-secondary)] text-sm mb-2">For Derivatives</p>
@@ -468,7 +468,7 @@ export default function BinanceVsBybitPage() {
             rel="noopener noreferrer sponsored"
             className="glass rounded-xl p-8 border border-orange-400 border-opacity-50 text-center hover:border-opacity-100 transition-all duration-300 group"
           >
-            <h3 className="text-2xl font-bold text-orange-400 mb-2 group-hover:text-white transition-colors">
+            <h3 className="text-2xl font-bold text-orange-400 mb-2 group-hover:text-[var(--color-text)] transition-colors">
               Start with Binance
             </h3>
             <p className="text-[var(--color-text-secondary)] mb-4">
@@ -485,7 +485,7 @@ export default function BinanceVsBybitPage() {
             rel="noopener noreferrer sponsored"
             className="glass rounded-xl p-8 border border-cyan-400 border-opacity-50 text-center hover:border-opacity-100 transition-all duration-300 group"
           >
-            <h3 className="text-2xl font-bold text-cyan-400 mb-2 group-hover:text-white transition-colors">
+            <h3 className="text-2xl font-bold text-cyan-400 mb-2 group-hover:text-[var(--color-text)] transition-colors">
               Start with Bybit
             </h3>
             <p className="text-[var(--color-text-secondary)] mb-4">

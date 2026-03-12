@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Arculus Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Arculus Review (${CURRENT_YEAR}) | degen0x`,
   description: "Arculus cold storage card review covering NFC-based security, credit card form factor, multi-chain support, and three-factor authentication.",
 };
 

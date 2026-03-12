@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -846,9 +848,3 @@ export default function YieldFarmingCalculatorPage() {
   );
 }
 
-// ── SEO Metadata ────────────────────────────────────────────────────────────
-export const metadata: Metadata = {
-  title: "Yield Farming Calculator | CryptoDegen Tools",
-  description: "Calculate estimated yield farming returns with compound interest, impermanent loss, fees, and price changes. Compare APY levels and explore popular DeFi farms.",
-  keywords: "yield farming, DeFi calculator, APY, impermanent loss, Aave, Curve, Uniswap, farming returns",
-};

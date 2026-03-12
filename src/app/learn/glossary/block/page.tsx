@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Block in Blockchain? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Block in Blockchain? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a block is in blockchain technology, what data it contains, how blocks are created, and why they matter for security. A complete guide.",
 };
@@ -17,11 +17,16 @@ export default function BlockPage() {
       readTime="5 min"
       intro="A block is a container of data that holds a batch of validated transactions on a blockchain. Each block is cryptographically linked to the previous block through its hash, forming the 'chain' in blockchain. Blocks are the fundamental building units that make blockchain technology work — they ensure transactions are permanently recorded and tamper-resistant."
       toc={[
-        { id: "definition", title: "What Is a Block?", level: 2 },
-        { id: "structure", title: "Block Structure", level: 2 },
-        { id: "how-created", title: "How Blocks Are Created", level: 2 },
-        { id: "why-it-matters", title: "Why Blocks Matter", level: 2 },
-        { id: "block-sizes", title: "Block Size and Limits", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-block", title: "What Is a Block?", level: 2 },
+        { id: "structure", title: "structure", level: 2 },
+        { id: "block-structure", title: "Block Structure", level: 2 },
+        { id: "how-created", title: "how-created", level: 2 },
+        { id: "how-blocks-are-created", title: "How Blocks Are Created", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-blocks-matter", title: "Why Blocks Matter", level: 2 },
+        { id: "block-sizes", title: "block-sizes", level: 2 },
+        { id: "block-size-and-limits", title: "Block Size and Limits", level: 2 }
       ]}
       faqs={[
         {

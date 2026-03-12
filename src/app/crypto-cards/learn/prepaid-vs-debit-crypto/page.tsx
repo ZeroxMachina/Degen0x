@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Prepaid vs Debit Crypto Cards (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Prepaid vs Debit Crypto Cards (${CURRENT_YEAR}) | degen0x`,
   description: "Understand the differences between prepaid and debit crypto cards. Compare funding models, features, fees, and which card type is best for your needs.",
 };
 
@@ -16,11 +16,16 @@ export default function PrepaidVsDebitCryptoPage() {
       readTime="8 min"
       intro="Crypto cards come in two main varieties: prepaid cards that require loading funds before spending, and debit cards that draw directly from your crypto or exchange balance at the point of sale. Each model has distinct advantages for different use cases. Understanding the differences helps you choose the right card for your spending habits and financial goals."
       toc={[
-        { id: "prepaid-explained", title: "How Prepaid Crypto Cards Work", level: 2 },
-        { id: "debit-explained", title: "How Debit Crypto Cards Work", level: 2 },
-        { id: "credit-line-cards", title: "Credit-Line Crypto Cards", level: 2 },
-        { id: "key-differences", title: "Key Differences Compared", level: 2 },
-        { id: "choosing-right-card", title: "Choosing the Right Card Type", level: 2 },
+        { id: "prepaid-explained", title: "prepaid-explained", level: 2 },
+        { id: "how-prepaid-crypto-cards-work", title: "How Prepaid Crypto Cards Work", level: 2 },
+        { id: "debit-explained", title: "debit-explained", level: 2 },
+        { id: "how-debit-crypto-cards-work", title: "How Debit Crypto Cards Work", level: 2 },
+        { id: "credit-line-cards", title: "credit-line-cards", level: 2 },
+        { id: "credit-line-crypto-cards", title: "Credit-Line Crypto Cards", level: 2 },
+        { id: "key-differences", title: "key-differences", level: 2 },
+        { id: "key-differences-compared", title: "Key Differences Compared", level: 2 },
+        { id: "choosing-right-card", title: "choosing-right-card", level: 2 },
+        { id: "choosing-the-right-card-type", title: "Choosing the Right Card Type", level: 2 }
       ]}
       faqs={[
         { question: "Can I overspend on a prepaid crypto card?", answer: "No, prepaid cards can only spend the balance loaded onto them. This makes them a good budgeting tool since you cannot exceed your loaded amount. Transactions that exceed your balance will be declined." },

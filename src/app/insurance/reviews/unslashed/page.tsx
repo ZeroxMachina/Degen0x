@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Unslashed Finance Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Unslashed Finance Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Unslashed Finance review covering insurance coverage types, capital efficiency, claim process, and comparison with other DeFi insurance protocols.",
 };
 

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is BOB (Build on Bitcoin) (BOB)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is BOB (Build on Bitcoin) (BOB)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about BOB (BOB), the hybrid Layer 2 combining Bitcoin and Ethereum security. Discover how it works, tokenomics, use cases, and how to buy BOB.",
 };
@@ -17,12 +17,18 @@ export default function BobPage() {
       readTime="8 min read"
       intro="BOB (Build on Bitcoin) is a hybrid Layer 2 that combines Bitcoin's security with Ethereum's smart contract capabilities. Built as an OP Stack rollup that settles on Ethereum while incorporating Bitcoin proof-of-work verification, BOB provides an EVM-compatible environment for building BTCfi applications with access to both Bitcoin and Ethereum ecosystems."
       toc={[
-        { id: "what-is", title: "What Is BOB?", level: 2 },
-        { id: "how-it-works", title: "How Does BOB Work?", level: 2 },
-        { id: "tokenomics", title: "BOB Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy BOB", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-bob", title: "What Is BOB?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-bob-work", title: "How Does BOB Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "bob-tokenomics", title: "BOB Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-bob", title: "How to Buy BOB", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is BOB?", answer: "BOB is a hybrid Layer 2 combining Bitcoin PoW verification with Ethereum smart contracts via an OP Stack rollup, creating a bridge between Bitcoin and Ethereum DeFi ecosystems." },

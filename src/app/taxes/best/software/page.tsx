@@ -25,7 +25,7 @@ export default function BestTaxSoftwarePage() {
       />
 
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Tax Software ({CURRENT_YEAR})
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -41,7 +41,7 @@ export default function BestTaxSoftwarePage() {
       <AffiliateDisclosure />
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Crypto Tax Software Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Crypto Tax Software Ranked</h2>
         <div className="grid gap-6">
           {TAX_PRODUCTS.map((product, i) => (
             <ProductCard
@@ -63,7 +63,7 @@ export default function BestTaxSoftwarePage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How We Rank Crypto Tax Software</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Rank Crypto Tax Software</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
           <p className="text-sm text-[var(--color-text-secondary)] mb-4">
             Our editorial team evaluates crypto tax software across multiple criteria to provide
@@ -72,7 +72,7 @@ export default function BestTaxSoftwarePage() {
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <h3 className="text-sm font-semibold text-white mb-2">Evaluation Criteria</h3>
+              <h3 className="text-sm font-semibold text-[var(--color-text)] mb-2">Evaluation Criteria</h3>
               <ul className="space-y-1 text-sm text-[var(--color-text-secondary)]">
                 <li>Accuracy of tax calculations (25%)</li>
                 <li>Exchange and wallet integrations (20%)</li>
@@ -83,7 +83,7 @@ export default function BestTaxSoftwarePage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-white mb-2">Testing Process</h3>
+              <h3 className="text-sm font-semibold text-[var(--color-text)] mb-2">Testing Process</h3>
               <ul className="space-y-1 text-sm text-[var(--color-text-secondary)]">
                 <li>Import real transactions from 5+ exchanges</li>
                 <li>Test DeFi transaction categorization</li>

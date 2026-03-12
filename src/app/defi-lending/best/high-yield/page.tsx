@@ -17,10 +17,14 @@ export default function BestHighYieldDefiLending() {
       readTime="10 min"
       intro="For yield-hungry DeFi users, several lending platforms and strategies can deliver significantly higher returns than standard lending. From rate-optimized aggregators like Morpho to leveraged vault strategies and undercollateralized lending premiums, this guide explores the best options for maximizing your DeFi lending yields while understanding the associated risks."
       toc={[
-        { id: "rate-optimizers", title: "Rate Optimization Protocols", level: 2 },
-        { id: "leveraged-strategies", title: "Leveraged Yield Strategies", level: 2 },
-        { id: "undercollateralized", title: "Undercollateralized Lending Premiums", level: 2 },
-        { id: "risk-reward", title: "Risk vs Reward Analysis", level: 2 },
+        { id: "rate-optimizers", title: "rate-optimizers", level: 2 },
+        { id: "rate-optimization-protocols", title: "Rate Optimization Protocols", level: 2 },
+        { id: "leveraged-strategies", title: "leveraged-strategies", level: 2 },
+        { id: "leveraged-yield-strategies", title: "Leveraged Yield Strategies", level: 2 },
+        { id: "undercollateralized", title: "undercollateralized", level: 2 },
+        { id: "undercollateralized-lending-premiums", title: "Undercollateralized Lending Premiums", level: 2 },
+        { id: "risk-reward", title: "risk-reward", level: 2 },
+        { id: "risk-vs-reward-analysis", title: "Risk vs Reward Analysis", level: 2 }
       ]}
       faqs={[
         { question: "Are high DeFi yields sustainable?", answer: "Yields from token incentives tend to decline over time as emissions decrease. Organic yields from borrowing demand are more sustainable but typically lower. The best approach is focusing on protocols with genuine borrowing demand rather than unsustainable incentive programs." },

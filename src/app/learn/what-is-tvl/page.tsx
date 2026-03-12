@@ -17,11 +17,16 @@ export default function WhatIsTvlPage() {
       readTime="6 min"
       intro="Total Value Locked (TVL) measures the total dollar value of cryptocurrency deposited in a DeFi protocol's smart contracts. It is the most widely cited metric for gauging the size, adoption, and trust level of DeFi protocols and blockchains. While imperfect, TVL provides a useful snapshot of how much capital users have entrusted to a particular protocol."
       toc={[
-        { id: "what-is-tvl", title: "Understanding TVL", level: 2 },
-        { id: "how-calculated", title: "How TVL Is Calculated", level: 2 },
-        { id: "why-it-matters", title: "Why TVL Matters", level: 2 },
-        { id: "limitations", title: "TVL Limitations", level: 2 },
-        { id: "using-tvl", title: "Using TVL for Analysis", level: 2 },
+        { id: "what-is-tvl", title: "what-is-tvl", level: 2 },
+        { id: "understanding-tvl", title: "Understanding TVL", level: 2 },
+        { id: "how-calculated", title: "how-calculated", level: 2 },
+        { id: "how-tvl-is-calculated", title: "How TVL Is Calculated", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-tvl-matters", title: "Why TVL Matters", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "tvl-limitations", title: "TVL Limitations", level: 2 },
+        { id: "using-tvl", title: "using-tvl", level: 2 },
+        { id: "using-tvl-for-analysis", title: "Using TVL for Analysis", level: 2 }
       ]}
       faqs={[
         { question: "What is a good TVL for a DeFi protocol?", answer: "There is no universal threshold, but protocols with over $100M TVL are generally considered established. Top protocols like Aave and Lido manage billions in TVL. Context matters — a lending protocol needs more TVL than a governance tool. Always compare TVL relative to similar protocols in the same category." },

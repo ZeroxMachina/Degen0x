@@ -16,19 +16,17 @@ export default function MetcalfesLawCryptoPage() {
       readTime="10 min"
       intro="Metcalfe's Law states that a network's value is proportional to the square of its users, providing a quantitative framework for valuing cryptocurrency networks based on adoption metrics rather than traditional financial fundamentals."
       toc={[
-        { id: "section-1", title: "Understanding Metcalfe's Law", level: 2 },
-        { id: "section-2", title: "Application to Crypto", level: 2 },
-        { id: "section-3", title: "Valuation Models", level: 2 },
-        { id: "section-4", title: "Limitations and Practical Use", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "understanding-metcalfe", title: "Understanding Metcalfe", level: 2 }
       ]}
       faqs={[
         { question: "What is Metcalfe's Law in crypto?", answer: "Metcalfe's Law applied to crypto suggests that a network's value grows proportionally to the square of its active users. If a crypto network doubles its user base, its value should roughly quadruple. This relationship has been observed empirically in Bitcoin's historical price relative to active address growth, providing a fundamental valuation framework." },
-        { question: "Can Metcalfe's Law predict crypto prices?", answer: "Metcalfe's Law provides a valuation framework based on network adoption rather than precise price predictions. When prices significantly exceed the value implied by Metcalfe's Law, the network may be overvalued. When prices fall below, it may represent value. However, the model has significant limitations and should be used as one input among many rather than as a standalone prediction tool." },
+        { question: "Can Metcalfe's Law predict crypto prices?", answer: "Metcalfe's Law provides a valuation framework based on network adoption rather than precise price predictions. When prices significantly exceed the value implied by Metcalfe's Law, the network may be overvalued. When prices fall below, it may represent value. However, the model has significant limitations and should be used as one input among many rather than as a standalone prediction tool." }
       ]}
       relatedArticles={[
         { title: "Crypto Retirement Complete Guide", href: "/long-term/learn/crypto-retirement-complete-guide", category: "Long-Term Strategies" },
         { title: "Best HODL Coins", href: "/long-term/best/hodl-coins", category: "Long-Term Strategies" },
-        { title: "Best Blue Chip Crypto", href: "/long-term/best/blue-chip-crypto", category: "Long-Term Strategies" },
+        { title: "Best Blue Chip Crypto", href: "/long-term/best/blue-chip-crypto", category: "Long-Term Strategies" }
       ]}
     >
       <section id="section-1">

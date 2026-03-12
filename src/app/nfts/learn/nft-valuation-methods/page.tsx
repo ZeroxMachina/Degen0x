@@ -16,10 +16,14 @@ export default function NftValuationMethodsPage() {
       readTime="10 min"
       intro="Valuing NFTs requires a combination of quantitative analysis and qualitative assessment. From floor price multiples to trait-based pricing and comparable sales analysis, multiple methodologies exist for determining what an NFT is worth."
       toc={[
-        { id: "section-1", title: "Valuation Fundamentals", level: 2 },
-        { id: "section-2", title: "Quantitative Methods", level: 2 },
-        { id: "section-3", title: "Qualitative Assessment", level: 2 },
-        { id: "section-4", title: "Practical Valuation Framework", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "valuation-fundamentals", title: "Valuation Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "quantitative-methods", title: "Quantitative Methods", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "qualitative-assessment", title: "Qualitative Assessment", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "practical-valuation-framework", title: "Practical Valuation Framework", level: 2 }
       ]}
       faqs={[
         { question: "How do you determine the value of an NFT?", answer: "NFT valuation combines quantitative methods like comparable sales analysis and floor price multiples with qualitative factors like rarity, artistic merit, creator reputation, and community strength. No single method is definitive." },

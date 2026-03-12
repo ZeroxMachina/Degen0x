@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Injective (INJ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Injective (INJ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Injective (INJ), the DeFi-focused blockchain with on-chain orderbook trading. Discover how it works, tokenomics, use cases, and how to buy INJ.",
 };
@@ -17,12 +17,18 @@ export default function InjectivePage() {
       readTime="8 min read"
       intro="Injective is a high-performance Layer 1 blockchain purpose-built for decentralized finance. Featuring a fully on-chain orderbook, zero gas fees for users, cross-chain interoperability, and deflationary tokenomics through weekly burn auctions, Injective is a leading platform for advanced DeFi applications."
       toc={[
-        { id: "what-is", title: "What Is Injective?", level: 2 },
-        { id: "how-it-works", title: "How Does Injective Work?", level: 2 },
-        { id: "tokenomics", title: "INJ Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy INJ", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-injective", title: "What Is Injective?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-injective-work", title: "How Does Injective Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "inj-tokenomics", title: "INJ Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-inj", title: "How to Buy INJ", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

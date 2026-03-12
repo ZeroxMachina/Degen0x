@@ -47,7 +47,7 @@ export default function BestCryptosToBuyPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Cryptos to Buy in {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -64,7 +64,7 @@ export default function BestCryptosToBuyPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Crypto Picks for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Crypto Picks for {CURRENT_YEAR}</h2>
         <div className="space-y-4">
           {topPicks.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -73,7 +73,7 @@ export default function BestCryptosToBuyPage() {
       </section>
 
       <section id="how-we-chose" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How We Chose These Cryptos</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Chose These Cryptos</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Our selection process goes far beyond price action. We evaluate each cryptocurrency
           across multiple dimensions to identify projects with genuine long-term potential.
@@ -95,7 +95,7 @@ export default function BestCryptosToBuyPage() {
       </section>
 
       <section id="market-overview" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Crypto Market Overview for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Crypto Market Overview for {CURRENT_YEAR}</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The cryptocurrency market has matured significantly with the approval and success
           of spot Bitcoin and Ethereum ETFs bringing institutional capital into the space.
@@ -119,10 +119,10 @@ export default function BestCryptosToBuyPage() {
       </section>
 
       <section id="investment-strategies" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Strategies for Crypto</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Strategies for Crypto</h2>
         <div className="space-y-4">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Core Holdings (60-70% of portfolio)</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Core Holdings (60-70% of portfolio)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Allocate the majority of your crypto portfolio to established assets like Bitcoin
               and Ethereum. These have the longest track records, deepest liquidity, and are
@@ -131,7 +131,7 @@ export default function BestCryptosToBuyPage() {
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Growth Positions (20-30% of portfolio)</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Growth Positions (20-30% of portfolio)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Allocate a moderate portion to high-quality altcoins with proven technology and
               growing ecosystems. Projects like Solana, Chainlink, and Arbitrum offer exposure
@@ -140,7 +140,7 @@ export default function BestCryptosToBuyPage() {
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Speculative Bets (5-10% of portfolio)</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Speculative Bets (5-10% of portfolio)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               If your risk tolerance allows, a small allocation to higher-risk opportunities
               like emerging L1s, new DeFi protocols, or AI crypto can capture outsized returns.
@@ -152,7 +152,7 @@ export default function BestCryptosToBuyPage() {
       </section>
 
       <section id="risks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Key Risks to Consider</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Key Risks to Consider</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Cryptocurrency investing carries significant risks that every investor should understand
           before allocating capital. Market volatility is the most obvious risk, with even top

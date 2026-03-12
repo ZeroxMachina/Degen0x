@@ -17,10 +17,14 @@ export default function RestakingYieldGuidePage() {
       readTime="12 min"
       intro="Restaking is one of the most significant innovations in DeFi yield generation, allowing staked ETH to simultaneously secure multiple protocols and earn supplementary rewards. EigenLayer pioneered the concept, and a growing ecosystem of liquid restaking protocols, AVS operators, and DeFi integrations has emerged around it. This guide covers how restaking works, yield optimization strategies, and the unique risks involved."
       toc={[
+        { id: "how-restaking-works", title: "how-restaking-works", level: 2 },
         { id: "how-restaking-works", title: "How Restaking Works", level: 2 },
-        { id: "lrt-ecosystem", title: "Liquid Restaking Tokens", level: 2 },
-        { id: "yield-strategies", title: "Restaking Yield Strategies", level: 2 },
-        { id: "risks", title: "Restaking-Specific Risks", level: 2 },
+        { id: "lrt-ecosystem", title: "lrt-ecosystem", level: 2 },
+        { id: "liquid-restaking-tokens", title: "Liquid Restaking Tokens", level: 2 },
+        { id: "yield-strategies", title: "yield-strategies", level: 2 },
+        { id: "restaking-yield-strategies", title: "Restaking Yield Strategies", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "restaking-specific-risks", title: "Restaking-Specific Risks", level: 2 }
       ]}
       faqs={[
         { question: "How much extra yield does restaking provide?", answer: "Additional yield from restaking varies as the AVS reward ecosystem matures. Early estimates suggest 1-5% additional APY on top of base staking yield, but actual rewards depend on which AVSs you opt into and their willingness to pay for security." },

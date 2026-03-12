@@ -18,12 +18,18 @@ export default function BitcoinIRAGuidePage() {
       readTime="11 min read"
       intro="A Bitcoin IRA allows you to hold Bitcoin and other cryptocurrencies in a tax-advantaged retirement account. By using a self-directed IRA, you can invest in Bitcoin with the same tax benefits as traditional retirement investments. This means either tax-deferred growth (Traditional IRA) or completely tax-free gains (Roth IRA). As Bitcoin matures as an asset class, crypto IRAs have become an increasingly popular way to build long-term wealth while minimizing tax obligations."
       toc={[
-        { id: "how-it-works", title: "How Bitcoin IRAs Work", level: 2 },
-        { id: "traditional-vs-roth", title: "Traditional vs Roth Crypto IRA", level: 2 },
-        { id: "providers", title: "Top Bitcoin IRA Providers", level: 2 },
-        { id: "fees", title: "Understanding Fees", level: 2 },
-        { id: "setup-process", title: "Setting Up a Bitcoin IRA", level: 2 },
-        { id: "considerations", title: "Important Considerations", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-bitcoin-iras-work", title: "How Bitcoin IRAs Work", level: 2 },
+        { id: "traditional-vs-roth", title: "traditional-vs-roth", level: 2 },
+        { id: "traditional-vs-roth-crypto-ira", title: "Traditional vs Roth Crypto IRA", level: 2 },
+        { id: "providers", title: "providers", level: 2 },
+        { id: "top-bitcoin-ira-providers", title: "Top Bitcoin IRA Providers", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "understanding-fees", title: "Understanding Fees", level: 2 },
+        { id: "setup-process", title: "setup-process", level: 2 },
+        { id: "setting-up-a-bitcoin-ira", title: "Setting Up a Bitcoin IRA", level: 2 },
+        { id: "considerations", title: "considerations", level: 2 },
+        { id: "important-considerations", title: "Important Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Can I really hold Bitcoin in an IRA?", answer: "Yes. Self-directed IRAs allow alternative investments including Bitcoin and other cryptocurrencies. Several specialized providers facilitate crypto IRAs with qualified custodians that meet IRS requirements." },

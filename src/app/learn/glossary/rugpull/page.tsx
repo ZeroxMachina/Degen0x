@@ -18,10 +18,14 @@ export default function RugpullGlossaryPage() {
       readTime="6 min"
       intro="A rug pull is a type of cryptocurrency scam where developers abandon a project and run away with investor funds. Named after the expression 'pulling the rug out from under someone,' these scams are one of the most common forms of fraud in the crypto space."
       toc={[
+        { id: "definition", title: "definition", level: 2 },
         { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
         { id: "how-it-works", title: "How It Works", level: 2 },
-        { id: "examples", title: "Warning Signs & Examples", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "warning-signs-examples", title: "Warning Signs & Examples", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Renzo (REZ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Renzo (REZ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Renzo (REZ), the liquid restaking protocol for EigenLayer. Discover how it works, tokenomics, use cases, and how to buy REZ.",
 };
 
@@ -16,12 +16,18 @@ export default function RenzoPage() {
       readTime="8 min read"
       intro="Renzo is a liquid restaking protocol that simplifies EigenLayer restaking by issuing ezETH, a liquid restaking token representing ETH restaked across multiple AVSs on EigenLayer. Renzo manages the complexity of operator selection, AVS allocation, and reward optimization, providing a streamlined restaking experience for both retail and institutional users."
       toc={[
-        { id: "what-is", title: "What Is Renzo?", level: 2 },
-        { id: "how-it-works", title: "How Does Renzo Work?", level: 2 },
-        { id: "tokenomics", title: "REZ Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy REZ", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-renzo", title: "What Is Renzo?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-renzo-work", title: "How Does Renzo Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "rez-tokenomics", title: "REZ Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-rez", title: "How to Buy REZ", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Renzo?", answer: "Renzo is a liquid restaking protocol issuing ezETH for simplified EigenLayer restaking with managed AVS allocation and DeFi composability." },

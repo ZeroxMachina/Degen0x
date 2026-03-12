@@ -16,10 +16,14 @@ export default function Web3CustomerAcquisitionPage() {
       readTime="10 min"
       intro="Acquiring users for Web3 products requires blending traditional growth marketing with crypto-native mechanics like airdrops, token incentives, and community-driven referrals."
       toc={[
-        { id: "section-1", title: "Acquisition Fundamentals", level: 2 },
-        { id: "section-2", title: "Crypto-Native Strategies", level: 2 },
-        { id: "section-3", title: "Traditional Strategies Adapted", level: 2 },
-        { id: "section-4", title: "Retention and Growth", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "acquisition-fundamentals", title: "Acquisition Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "crypto-native-strategies", title: "Crypto-Native Strategies", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "traditional-strategies-adapted", title: "Traditional Strategies Adapted", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "retention-and-growth", title: "Retention and Growth", level: 2 }
       ]}
       faqs={[
         { question: "What is the best way to acquire Web3 users?", answer: "The most effective approach combines community building on crypto-native platforms, token-based incentives that align user and protocol interests, strategic partnerships with complementary projects, and traditional content marketing adapted for Web3 audiences." },

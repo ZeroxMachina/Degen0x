@@ -12,10 +12,14 @@ export default function FantomEcosystemGuidePage() {
   return (
     <LearnPageLayout title="Fantom Ecosystem Guide" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Fantom is a high-performance EVM-compatible blockchain known for its DAG-based consensus mechanism and the upcoming Sonic upgrade. With fast finality, low costs, and a dedicated DeFi community shaped by influential builders like Andre Cronje, Fantom has maintained relevance through technical innovation and ecosystem resilience."
       toc={[
-        { id: "overview", title: "Fantom Overview", level: 2 },
-        { id: "sonic", title: "Sonic Upgrade", level: 2 },
-        { id: "defi", title: "DeFi Ecosystem", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "fantom-overview", title: "Fantom Overview", level: 2 },
+        { id: "sonic", title: "sonic", level: 2 },
+        { id: "sonic-upgrade", title: "Sonic Upgrade", level: 2 },
+        { id: "defi", title: "defi", level: 2 },
+        { id: "defi-ecosystem", title: "DeFi Ecosystem", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What is the Sonic upgrade?", answer: "Sonic is Fantom's major network upgrade introducing a new virtual machine, improved consensus, and significantly higher throughput. It represents a generational leap in the network's capabilities, with plans for sub-second finality and dramatically increased transaction capacity." },

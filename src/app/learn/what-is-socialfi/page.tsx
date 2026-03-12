@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is SocialFi? Social Finance Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is SocialFi? Social Finance Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what SocialFi is, how social media meets decentralized finance, key platforms in the space, and how creators are monetizing their social influence on-chain.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsSocialFiPage() {
       readTime="8 min read"
       intro="SocialFi is the intersection of social media and decentralized finance, where social influence and community engagement are tokenized and financialized on the blockchain. SocialFi platforms allow creators to monetize their audience directly, let users invest in social capital, and enable decentralized social networks where users own their content and data. It represents a fundamental shift in how online social interactions create and distribute economic value."
       toc={[
+        { id: "understanding-socialfi", title: "understanding-socialfi", level: 2 },
         { id: "understanding-socialfi", title: "Understanding SocialFi", level: 2 },
-        { id: "key-platforms", title: "Key SocialFi Platforms", level: 2 },
-        { id: "socialfi-mechanics", title: "How SocialFi Mechanics Work", level: 2 },
-        { id: "risks-and-outlook", title: "Risks and Future Outlook", level: 2 },
+        { id: "key-platforms", title: "key-platforms", level: 2 },
+        { id: "key-socialfi-platforms", title: "Key SocialFi Platforms", level: 2 },
+        { id: "socialfi-mechanics", title: "socialfi-mechanics", level: 2 },
+        { id: "how-socialfi-mechanics-work", title: "How SocialFi Mechanics Work", level: 2 },
+        { id: "risks-and-outlook", title: "risks-and-outlook", level: 2 },
+        { id: "risks-and-future-outlook", title: "Risks and Future Outlook", level: 2 }
       ]}
       faqs={[
         {

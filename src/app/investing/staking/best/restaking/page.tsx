@@ -40,7 +40,7 @@ export default function BestRestakingPage() {
     "@type": "Article",
     headline: `Best Restaking Platforms of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -56,7 +56,7 @@ export default function BestRestakingPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Restaking Platforms of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -73,7 +73,7 @@ export default function BestRestakingPage() {
             that creates new revenue streams for ETH stakers.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">EigenLayer</strong> is the dominant restaking protocol,
+            <strong className="text-[var(--color-text)]">EigenLayer</strong> is the dominant restaking protocol,
             supporting both native ETH restaking and liquid staking token restaking. The ecosystem
             around it includes Liquid Restaking Tokens (LRTs) from protocols like EtherFi and Renzo,
             which provide liquidity for restaked positions.
@@ -81,7 +81,7 @@ export default function BestRestakingPage() {
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
           <div className="space-y-4">
             {restakingPlatforms.map((platform, index) => (
               <ProductCard
@@ -95,7 +95,7 @@ export default function BestRestakingPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">How Restaking Works</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How Restaking Works</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Restaking works by allowing staked ETH (either natively staked or through liquid staking
             tokens) to be used as security for additional services beyond the Ethereum base layer.

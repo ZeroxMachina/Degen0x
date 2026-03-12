@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Puffer Finance (PUFFER)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Puffer Finance (PUFFER)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Puffer Finance (PUFFER), the liquid restaking protocol with anti-slashing technology. Discover how it works, tokenomics, use cases, and how to buy PUFFER.",
 };
@@ -17,12 +17,18 @@ export default function PufferPage() {
       readTime="8 min read"
       intro="Puffer Finance is a liquid restaking protocol on Ethereum that combines native liquid staking with EigenLayer restaking through its pufETH token. Featuring proprietary anti-slashing technology called Secure-Signer, Puffer aims to lower the barrier for solo validators while providing a liquid restaking token that earns both Ethereum staking and EigenLayer restaking rewards."
       toc={[
-        { id: "what-is", title: "What Is Puffer Finance?", level: 2 },
-        { id: "how-it-works", title: "How Does Puffer Finance Work?", level: 2 },
-        { id: "tokenomics", title: "PUFFER Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy PUFFER", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-puffer-finance", title: "What Is Puffer Finance?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-puffer-finance-work", title: "How Does Puffer Finance Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "puffer-tokenomics", title: "PUFFER Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-puffer", title: "How to Buy PUFFER", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Puffer Finance?", answer: "Puffer Finance is a liquid restaking protocol issuing pufETH, combining Ethereum staking with EigenLayer restaking yields and anti-slashing technology for enhanced validator security." },

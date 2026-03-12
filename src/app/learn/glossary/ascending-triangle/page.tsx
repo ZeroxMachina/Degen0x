@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Ascending Triangle Pattern in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Ascending Triangle Pattern in Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what an ascending triangle is, how to identify this bullish pattern, volume behavior, breakout confirmation, and trading strategies for crypto.",
 };
 
@@ -16,10 +16,14 @@ export default function AscendingTrianglePage() {
       readTime="6 min read"
       intro="An ascending triangle is a bullish chart pattern formed by a flat upper resistance line and a rising lower trendline connecting higher lows. The pattern shows buyers becoming increasingly aggressive, pushing price higher with each pullback while sellers hold firm at a specific resistance level. Ascending triangles typically resolve with an upside breakout and are common continuation patterns in crypto uptrends."
       toc={[
-        { id: "what-is-ascending", title: "What Is an Ascending Triangle?", level: 2 },
-        { id: "identifying", title: "Identifying the Pattern", level: 2 },
+        { id: "what-is-ascending", title: "what-is-ascending", level: 2 },
+        { id: "what-is-an-ascending-triangle", title: "What Is an Ascending Triangle?", level: 2 },
+        { id: "identifying", title: "identifying", level: 2 },
+        { id: "identifying-the-pattern", title: "Identifying the Pattern", level: 2 },
+        { id: "volume-behavior", title: "volume-behavior", level: 2 },
         { id: "volume-behavior", title: "Volume Behavior", level: 2 },
-        { id: "trading", title: "Trading Ascending Triangles", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-ascending-triangles", title: "Trading Ascending Triangles", level: 2 }
       ]}
       faqs={[
         { question: "How often do ascending triangles break upward?", answer: "Ascending triangles break upward approximately 70-75% of the time. However, downside breakdowns do occur and can be powerful because they trap bullish traders. Always use stop-losses regardless of the statistical edge, and wait for confirmation rather than anticipating the breakout direction." },

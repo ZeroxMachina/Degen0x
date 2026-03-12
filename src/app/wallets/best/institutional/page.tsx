@@ -29,19 +29,19 @@ export default function BestInstitutionalWalletsPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Institutional Wallets", href: "/wallets/best/institutional" }]} />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Institutional Crypto Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Institutional Crypto Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">Institutional wallets provide enterprise-grade security, governance controls, and regulatory compliance for organizations managing significant digital asset portfolios. We evaluated solutions for security, access controls, compliance, and integration capabilities.</p>
       </header>
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Institutional Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Institutional Wallets, Ranked</h2>
         <div className="space-y-6">{products.map((product, index) => (<ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />))}</div>
       </section>
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
-          <Link href="/wallets/reviews/safe-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Safe Wallet Review</h3><p className="text-xs text-[var(--color-text-secondary)]">Industry-standard multisig</p></Link>
-          <Link href="/wallets/learn/multisig-setup-guide" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Multisig Setup Guide</h3><p className="text-xs text-[var(--color-text-secondary)]">Configure multi-signature security</p></Link>
-          <Link href="/wallets/best/security" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Best Security Wallets</h3><p className="text-xs text-[var(--color-text-secondary)]">Top security-focused wallets</p></Link>
+          <Link href="/wallets/reviews/safe-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Safe Wallet Review</h3><p className="text-xs text-[var(--color-text-secondary)]">Industry-standard multisig</p></Link>
+          <Link href="/wallets/learn/multisig-setup-guide" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Multisig Setup Guide</h3><p className="text-xs text-[var(--color-text-secondary)]">Configure multi-signature security</p></Link>
+          <Link href="/wallets/best/security" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Best Security Wallets</h3><p className="text-xs text-[var(--color-text-secondary)]">Top security-focused wallets</p></Link>
         </div>
       </section>
       <FAQSection faqs={faqs} />

@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Exodus", slug: "exodus", rating: 4.4, affiliateUrl: "https://cryptodegen.com/go/exodus", features: { "Type": "Desktop + Mobile", "Chains": "50+ blockchains", "Built-in Exchange": "Yes", "Swap Fees": "Spread markup (2-5%)", "Staking": "Yes (multi-chain)", "Hardware Wallet": "Trezor integration", "Open Source": "No", "Customer Support": "Email + live chat" } },
-  { name: "Coinbase Wallet", slug: "coinbase-wallet", rating: 4.3, affiliateUrl: "https://cryptodegen.com/go/coinbase-wallet", features: { "Type": "Mobile + Browser extension", "Chains": "EVM + Solana + Bitcoin", "Built-in Exchange": "Yes (DEX aggregator)", "Swap Fees": "Network fees only", "Staking": "Limited", "Hardware Wallet": "Ledger integration", "Open Source": "Partial", "Customer Support": "Help center + email" } },
+  { name: "Exodus", slug: "exodus", rating: 4.4, affiliateUrl: "https://degen0x.com/go/exodus", features: { "Type": "Desktop + Mobile", "Chains": "50+ blockchains", "Built-in Exchange": "Yes", "Swap Fees": "Spread markup (2-5%)", "Staking": "Yes (multi-chain)", "Hardware Wallet": "Trezor integration", "Open Source": "No", "Customer Support": "Email + live chat" } },
+  { name: "Coinbase Wallet", slug: "coinbase-wallet", rating: 4.3, affiliateUrl: "https://degen0x.com/go/coinbase-wallet", features: { "Type": "Mobile + Browser extension", "Chains": "EVM + Solana + Bitcoin", "Built-in Exchange": "Yes (DEX aggregator)", "Swap Fees": "Network fees only", "Staking": "Limited", "Hardware Wallet": "Ledger integration", "Open Source": "Partial", "Customer Support": "Help center + email" } },
 ];
 
 const features = ["Type", "Chains", "Built-in Exchange", "Swap Fees", "Staking", "Hardware Wallet", "Open Source", "Customer Support"];
@@ -39,7 +39,7 @@ export default function ExodusVsCoinbaseWalletPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Exodus vs Coinbase Wallet: Beginner Self-Custody in {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Exodus vs Coinbase Wallet: Beginner Self-Custody in {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Exodus and Coinbase Wallet are popular self-custody wallets for users transitioning from
           exchanges. We compare design, fees, DeFi access, and ease of use.
@@ -81,12 +81,12 @@ export default function ExodusVsCoinbaseWalletPage() {
         <h2 id="verdict">Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose Exodus if:</strong> You want the best-looking
+            <strong className="text-[var(--color-text)]">Choose Exodus if:</strong> You want the best-looking
             wallet with a great desktop experience, multi-chain staking, and Trezor hardware
             integration. Accept that built-in swaps carry higher fees.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose Coinbase Wallet if:</strong> You want cheaper
+            <strong className="text-[var(--color-text)]">Choose Coinbase Wallet if:</strong> You want cheaper
             DEX swaps, are already in the Coinbase ecosystem, and prefer a mobile-first wallet
             with Ledger hardware integration.
           </p>
@@ -97,11 +97,11 @@ export default function ExodusVsCoinbaseWalletPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/compare/exodus-vs-trust-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Compare</span>
-            <h3 className="font-semibold text-white text-sm">Exodus vs Trust Wallet</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Exodus vs Trust Wallet</h3>
           </Link>
           <Link href="/wallets/compare/coinbase-wallet-vs-metamask" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Compare</span>
-            <h3 className="font-semibold text-white text-sm">Coinbase Wallet vs MetaMask</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Coinbase Wallet vs MetaMask</h3>
           </Link>
         </div>
       </section>

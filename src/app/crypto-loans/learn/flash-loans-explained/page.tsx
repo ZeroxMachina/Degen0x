@@ -7,7 +7,16 @@ export default function FlashLoansExplainedPage() {
   return (
     <LearnPageLayout title="Flash Loans Explained" categoryName="Crypto Loans" categorySlug="crypto-loans" readTime="8 min"
       intro="Flash loans are one of DeFi's most innovative financial primitives: uncollateralized loans that must be borrowed and repaid within a single blockchain transaction. If the loan is not repaid by the end of the transaction, everything reverts as if nothing happened. This guide explains how flash loans work, their practical applications, and their impact on DeFi."
-      toc={[{ id: "how-they-work", title: "How Flash Loans Work", level: 2 }, { id: "use-cases", title: "Common Use Cases", level: 2 }, { id: "risks", title: "Risks & Controversies", level: 2 }, { id: "future", title: "The Future of Flash Loans", level: 2 }]}
+      toc={[
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-flash-loans-work", title: "How Flash Loans Work", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "common-use-cases", title: "Common Use Cases", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-controversies", title: "Risks & Controversies", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-flash-loans", title: "The Future of Flash Loans", level: 2 }
+      ]}
       faqs={[
         { question: "Can anyone use flash loans?", answer: "Flash loans require smart contract programming skills because the entire borrow-use-repay sequence must execute within a single transaction. Regular users cannot access flash loans through standard interfaces, but tools like DeFi Saver use flash loans behind the scenes to power user-friendly features." },
         { question: "Are flash loans free?", answer: "Most protocols charge a small fee. Aave charges 0.05% of the borrowed amount. Balancer charges no fee for flash loans. The borrower also pays gas costs for the transaction. Since flash loans are atomic, the only risk to the borrower is the gas cost of a failed transaction." },

@@ -28,7 +28,7 @@ export default function PolygonPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">How to Invest in Polygon (POL) in {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">How to Invest in Polygon (POL) in {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Polygon is a comprehensive Ethereum scaling ecosystem offering PoS chain, zkEVM, and
           CDK for custom chains, with strong enterprise adoption and wide protocol support.
@@ -37,17 +37,17 @@ export default function PolygonPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">{token.ticker}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">{token.launchYear}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">{token.maxSupply}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">{token.consensus}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.ticker}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.launchYear}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.maxSupply}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.consensus}</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Polygon?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Polygon?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Polygon has evolved from a single PoS sidechain into a comprehensive suite of Ethereum
           scaling solutions. The ecosystem now includes Polygon PoS (the original chain), Polygon
@@ -64,7 +64,7 @@ export default function PolygonPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)]">
           Polygon faces intense competition from other L2 solutions like Arbitrum, Optimism, and
           Base. The MATIC to POL migration adds complexity for token holders. The PoS chain's

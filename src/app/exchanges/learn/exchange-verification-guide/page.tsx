@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `KYC Verification on Exchanges (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `KYC Verification on Exchanges (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about KYC verification on crypto exchanges. Required documents, verification levels, processing times, privacy considerations, and tips for fast approval.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeVerificationGuide() {
       readTime="8 min read"
       intro="KYC (Know Your Customer) verification is required by most regulated crypto exchanges before you can trade, deposit, or withdraw funds. The process verifies your identity to comply with anti-money laundering regulations. While sometimes frustrating, understanding what is required and preparing documents in advance makes the process smoother and faster."
       toc={[
+        { id: "what-is-kyc", title: "what-is-kyc", level: 2 },
         { id: "what-is-kyc", title: "What Is KYC?", level: 2 },
+        { id: "verification-levels", title: "verification-levels", level: 2 },
         { id: "verification-levels", title: "Verification Levels", level: 2 },
+        { id: "required-documents", title: "required-documents", level: 2 },
         { id: "required-documents", title: "Required Documents", level: 2 },
-        { id: "process", title: "The Verification Process", level: 2 },
-        { id: "common-issues", title: "Common Issues and Solutions", level: 2 },
-        { id: "privacy", title: "Privacy Considerations", level: 2 },
-        { id: "tips", title: "Tips for Fast Approval", level: 2 },
+        { id: "process", title: "process", level: 2 },
+        { id: "the-verification-process", title: "The Verification Process", level: 2 },
+        { id: "common-issues", title: "common-issues", level: 2 },
+        { id: "common-issues-and-solutions", title: "Common Issues and Solutions", level: 2 },
+        { id: "privacy", title: "privacy", level: 2 },
+        { id: "privacy-considerations", title: "Privacy Considerations", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-fast-approval", title: "Tips for Fast Approval", level: 2 }
       ]}
       faqs={[
         { question: "How long does KYC take?", answer: "Automated verification with photo ID can complete in minutes. Manual review may take 1-3 business days. During high demand periods, processing can take up to a week. Complete KYC before you need to trade to avoid delays." },

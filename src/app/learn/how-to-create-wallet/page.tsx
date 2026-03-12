@@ -12,11 +12,16 @@ export default function HowToCreateWalletPage() {
   return (
     <LearnPageLayout title="How to Create a Crypto Wallet" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="A cryptocurrency wallet is your gateway to the blockchain ecosystem. It stores your private keys, enables you to send and receive crypto, and lets you interact with decentralized applications. Creating your first wallet is straightforward, but understanding the options and security implications is essential for protecting your assets."
       toc={[
-        { id: "wallet-types", title: "Choosing a Wallet Type", level: 2 },
-        { id: "software-wallet", title: "Creating a Software Wallet", level: 2 },
-        { id: "hardware-wallet", title: "Setting Up a Hardware Wallet", level: 2 },
-        { id: "securing-wallet", title: "Securing Your Wallet", level: 2 },
-        { id: "first-steps", title: "First Steps After Setup", level: 2 },
+        { id: "wallet-types", title: "wallet-types", level: 2 },
+        { id: "choosing-a-wallet-type", title: "Choosing a Wallet Type", level: 2 },
+        { id: "software-wallet", title: "software-wallet", level: 2 },
+        { id: "creating-a-software-wallet", title: "Creating a Software Wallet", level: 2 },
+        { id: "hardware-wallet", title: "hardware-wallet", level: 2 },
+        { id: "setting-up-a-hardware-wallet", title: "Setting Up a Hardware Wallet", level: 2 },
+        { id: "securing-wallet", title: "securing-wallet", level: 2 },
+        { id: "securing-your-wallet", title: "Securing Your Wallet", level: 2 },
+        { id: "first-steps", title: "first-steps", level: 2 },
+        { id: "first-steps-after-setup", title: "First Steps After Setup", level: 2 }
       ]}
       faqs={[
         { question: "Which wallet should I choose as a beginner?", answer: "For beginners, MetaMask (for Ethereum and EVM chains) or Phantom (for Solana) are popular software wallets that are easy to set up and use. Once you have significant holdings, consider upgrading to a hardware wallet like Ledger or Trezor for enhanced security." },

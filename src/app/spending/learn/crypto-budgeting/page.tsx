@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Budgeting with Cryptocurrency (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Budgeting with Cryptocurrency (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to budgeting with cryptocurrency. Managing expenses, tracking crypto income and spending, and building financial stability with volatile digital assets.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoBudgetingPage() {
     <LearnPageLayout title="Budgeting with Cryptocurrency" categoryName="Crypto Spending" categorySlug="spending" readTime="7 min read"
       intro="Budgeting with cryptocurrency requires adapting traditional financial planning to account for price volatility, tax events on every transaction, and the unique features of digital assets. Whether you receive income in crypto, hold significant crypto wealth, or simply want to integrate crypto into your financial life, a solid budgeting framework helps you maintain financial stability while participating in the crypto economy."
       toc={[
-        { id: "framework", title: "Crypto Budgeting Framework", level: 2 },
-        { id: "income-management", title: "Managing Crypto Income", level: 2 },
+        { id: "framework", title: "framework", level: 2 },
+        { id: "crypto-budgeting-framework", title: "Crypto Budgeting Framework", level: 2 },
+        { id: "income-management", title: "income-management", level: 2 },
+        { id: "managing-crypto-income", title: "Managing Crypto Income", level: 2 },
+        { id: "expense-tracking", title: "expense-tracking", level: 2 },
         { id: "expense-tracking", title: "Expense Tracking", level: 2 },
-        { id: "tools", title: "Tools and Automation", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "tools-and-automation", title: "Tools and Automation", level: 2 }
       ]}
       faqs={[
         { question: "How do I budget when my income is in volatile crypto?", answer: "Convert enough crypto to stablecoins or fiat to cover your fixed monthly expenses immediately upon receiving income. Budget based on this stable amount, not on the potential value of your crypto holdings. Treat any additional crypto held as a separate investment, not as part of your spending budget. Build a stablecoin buffer of two to three months of expenses." },

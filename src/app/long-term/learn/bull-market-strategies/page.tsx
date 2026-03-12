@@ -18,12 +18,18 @@ export default function BullMarketStrategiesPage() {
       readTime="11 min read"
       intro="Bull markets are when crypto portfolios grow dramatically, but they are also when the most money is ultimately lost through poor decisions. The euphoria of rising prices leads to overexposure, excessive leverage, and failure to take profits. Successful bull market navigation requires a profit-taking plan, understanding of market cycle psychology, and the discipline to act on your plan when greed tells you to hold for even more gains."
       toc={[
-        { id: "bull-phases", title: "Understanding Bull Market Phases", level: 2 },
-        { id: "profit-taking", title: "Profit-Taking Strategies", level: 2 },
-        { id: "rotation", title: "Sector Rotation", level: 2 },
-        { id: "leverage-risk", title: "Managing Leverage & Risk", level: 2 },
-        { id: "exit-signals", title: "Bull Market Top Signals", level: 2 },
-        { id: "preserving-gains", title: "Preserving Your Gains", level: 2 },
+        { id: "bull-phases", title: "bull-phases", level: 2 },
+        { id: "understanding-bull-market-phases", title: "Understanding Bull Market Phases", level: 2 },
+        { id: "profit-taking", title: "profit-taking", level: 2 },
+        { id: "profit-taking-strategies", title: "Profit-Taking Strategies", level: 2 },
+        { id: "rotation", title: "rotation", level: 2 },
+        { id: "sector-rotation", title: "Sector Rotation", level: 2 },
+        { id: "leverage-risk", title: "leverage-risk", level: 2 },
+        { id: "managing-leverage-risk", title: "Managing Leverage & Risk", level: 2 },
+        { id: "exit-signals", title: "exit-signals", level: 2 },
+        { id: "bull-market-top-signals", title: "Bull Market Top Signals", level: 2 },
+        { id: "preserving-gains", title: "preserving-gains", level: 2 },
+        { id: "preserving-your-gains", title: "Preserving Your Gains", level: 2 }
       ]}
       faqs={[
         { question: "When should I take profits in a bull market?", answer: "Start taking profits when you have achieved meaningful gains, not when you think the top is in. A systematic approach like selling 10-20% at predetermined price levels or portfolio milestones removes emotion from the decision." },

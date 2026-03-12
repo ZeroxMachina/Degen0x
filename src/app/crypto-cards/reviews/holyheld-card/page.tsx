@@ -10,7 +10,7 @@ const product = {
   pros: ["Non-custodial design", "Spend directly from DeFi positions", "No need to off-ramp to exchange", "Multi-chain support", "Privacy-focused"],
   cons: ["Limited to European Economic Area", "Newer platform with smaller track record", "Gas fees for on-chain settlements", "Fewer supported assets than custodial alternatives"],
   bestFor: "DeFi users in Europe who want to spend directly from their non-custodial wallets without using centralized exchanges",
-  affiliateUrl: "https://cryptodegen.com/go/holyheld",
+  affiliateUrl: "https://degen0x.com/go/holyheld",
   category: "crypto-cards",
 };
 

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Tokenomics Design Guide (${CURRENT_YEAR}) - How to Design Token Economics | CryptoDegen`,
+  title: `Tokenomics Design Guide (${CURRENT_YEAR}) - How to Design Token Economics | degen0x`,
   description: `Master tokenomics design for your Web3 project. Supply mechanics, distribution strategies, vesting schedules, utility design, and common pitfalls explained.`,
 };
 
@@ -16,11 +16,16 @@ export default function TokenomicsDesignPage() {
       readTime="11 min"
       intro="Tokenomics defines the economic model that governs how a cryptocurrency token is created, distributed, and used within its ecosystem. Well-designed tokenomics align incentives between users, developers, and investors while sustaining long-term value. Poor tokenomics can doom even the most technically impressive projects. This guide covers the core principles and practical decisions behind effective token design."
       toc={[
+        { id: "supply-mechanics", title: "supply-mechanics", level: 2 },
         { id: "supply-mechanics", title: "Supply Mechanics", level: 2 },
-        { id: "distribution", title: "Token Distribution", level: 2 },
-        { id: "vesting", title: "Vesting and Unlock Schedules", level: 2 },
-        { id: "utility", title: "Token Utility Design", level: 2 },
-        { id: "common-pitfalls", title: "Common Tokenomics Pitfalls", level: 2 },
+        { id: "distribution", title: "distribution", level: 2 },
+        { id: "token-distribution", title: "Token Distribution", level: 2 },
+        { id: "vesting", title: "vesting", level: 2 },
+        { id: "vesting-and-unlock-schedules", title: "Vesting and Unlock Schedules", level: 2 },
+        { id: "utility", title: "utility", level: 2 },
+        { id: "token-utility-design", title: "Token Utility Design", level: 2 },
+        { id: "common-pitfalls", title: "common-pitfalls", level: 2 },
+        { id: "common-tokenomics-pitfalls", title: "Common Tokenomics Pitfalls", level: 2 }
       ]}
       faqs={[
         { question: "What is the ideal total token supply?", answer: "There is no ideal number. Total supply is largely cosmetic since it is the market capitalization (price times circulating supply) that determines value. Bitcoin has 21 million tokens while Shiba Inu has trillions, yet both function as intended. Choose a supply that produces readable token prices and avoids excessive decimal places for typical transactions. Most projects settle between 100 million and 10 billion total supply." },

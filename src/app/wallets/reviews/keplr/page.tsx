@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Keplr Wallet Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Keplr Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "Keplr wallet review covering Cosmos ecosystem support, IBC transfers, staking, governance, and inter-chain account management.",
 };
 

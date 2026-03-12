@@ -16,10 +16,14 @@ export default function BestYieldFarmingInsurancePage() {
       readTime="10 min"
       intro="Yield farming involves significant smart contract risk that can be mitigated through DeFi insurance protocols. Protecting farming positions against exploits, oracle failures, and protocol insolvency helps preserve capital while pursuing yield."
       toc={[
-        { id: "section-1", title: "Yield Farming Risks", level: 2 },
-        { id: "section-2", title: "Insurance Options for Farmers", level: 2 },
-        { id: "section-3", title: "Cost-Benefit Analysis", level: 2 },
-        { id: "section-4", title: "Insurance Strategy Tips", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "yield-farming-risks", title: "Yield Farming Risks", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "insurance-options-for-farmers", title: "Insurance Options for Farmers", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "cost-benefit-analysis", title: "Cost-Benefit Analysis", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "insurance-strategy-tips", title: "Insurance Strategy Tips", level: 2 }
       ]}
       faqs={[
         { question: "Is yield farming insurance worth the cost?", answer: "For significant DeFi positions, insurance premiums are often worth the cost relative to potential losses. A 2-5% annual premium to protect against total loss of a farming position represents reasonable risk management for serious DeFi participants." },

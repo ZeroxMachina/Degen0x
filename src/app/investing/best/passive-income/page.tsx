@@ -25,7 +25,7 @@ const passiveIncomePicks: Product[] = [
     cons: ["Variable interest rates", "Smart contract risk", "Requires DeFi knowledge", "Gas fees on Ethereum mainnet"],
     fees: "No platform fees (gas only)",
     bestFor: "DeFi lending yield",
-    affiliateUrl: "https://cryptodegen.com/go/aave",
+    affiliateUrl: "https://degen0x.com/go/aave",
     category: "passive-income",
   },
   {
@@ -37,7 +37,7 @@ const passiveIncomePicks: Product[] = [
     cons: ["Complex for beginners", "Smart contract risk", "Newer protocol", "Requires understanding of yield tokens"],
     fees: "Variable protocol fees",
     bestFor: "Advanced yield strategies",
-    affiliateUrl: "https://cryptodegen.com/go/pendle",
+    affiliateUrl: "https://degen0x.com/go/pendle",
     category: "passive-income",
   },
 ];
@@ -62,7 +62,7 @@ export default function BestPassiveIncomePage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Passive Income Strategies for {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -78,7 +78,7 @@ export default function BestPassiveIncomePage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Passive Income Options</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Passive Income Options</h2>
         <div className="space-y-4">
           {passiveIncomePicks.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -87,31 +87,31 @@ export default function BestPassiveIncomePage() {
       </section>
 
       <section id="strategies" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Passive Income Strategies</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Passive Income Strategies</h2>
         <div className="space-y-4">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Staking (3-12% APY)</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Staking (3-12% APY)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               The safest crypto passive income strategy. Lock your PoS tokens to earn rewards for
               securing the network. Liquid staking protocols let you earn while maintaining DeFi access.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">DeFi Lending (2-8% APY)</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">DeFi Lending (2-8% APY)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Supply crypto to lending protocols like Aave or Compound to earn interest from borrowers.
               Rates are variable and depend on market demand for borrowing specific assets.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Liquidity Provision (Variable)</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Liquidity Provision (Variable)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Provide liquidity to DEX trading pairs and earn a share of trading fees. Higher yields
               but carries impermanent loss risk. Best for stablecoin pairs with lower volatility.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Yield Farming (Variable, Higher Risk)</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Yield Farming (Variable, Higher Risk)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Combine multiple DeFi strategies to maximize returns. Often involves earning bonus
               governance tokens on top of base yields. Higher returns come with higher complexity and risk.
@@ -121,7 +121,7 @@ export default function BestPassiveIncomePage() {
       </section>
 
       <section id="risk-reward" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Risk vs Reward</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Risk vs Reward</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           As a general rule, higher yields mean higher risk. Exchange staking at 3-4% APY is
           relatively low risk but offers modest returns. DeFi staking at 4-8% APY adds smart
@@ -138,7 +138,7 @@ export default function BestPassiveIncomePage() {
       </section>
 
       <section id="tax-implications" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Tax Implications</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Tax Implications</h2>
         <p className="text-[var(--color-text-secondary)]">
           Crypto passive income is generally taxable as ordinary income when received. Staking
           rewards, lending interest, and yield farming tokens are all subject to income tax at

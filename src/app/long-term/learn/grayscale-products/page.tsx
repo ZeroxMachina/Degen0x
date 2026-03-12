@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Grayscale Investment Products Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Grayscale Investment Products Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Complete guide to Grayscale crypto investment products. GBTC, ETHE, single-asset trusts, and how Grayscale's products compare to newer crypto ETFs.",
 };
 
@@ -12,10 +12,14 @@ export default function GrayscaleProductsPage() {
     <LearnPageLayout title="Grayscale Investment Products Explained" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="7 min read"
       intro="Grayscale Investments is the largest digital asset manager, offering a range of crypto investment products accessible through traditional brokerage accounts. From its flagship Bitcoin and Ethereum trusts (now ETFs) to single-asset trusts for altcoins and multi-asset funds, Grayscale provides institutional-grade crypto exposure. Understanding their product lineup, fee structures, and how they compare to newer competitors helps investors make informed decisions about accessing crypto through traditional finance."
       toc={[
-        { id: "flagship", title: "Flagship ETF Products", level: 2 },
-        { id: "single-asset", title: "Single-Asset Trusts", level: 2 },
-        { id: "multi-asset", title: "Multi-Asset Funds", level: 2 },
-        { id: "considerations", title: "Investment Considerations", level: 2 },
+        { id: "flagship", title: "flagship", level: 2 },
+        { id: "flagship-etf-products", title: "Flagship ETF Products", level: 2 },
+        { id: "single-asset", title: "single-asset", level: 2 },
+        { id: "single-asset-trusts", title: "Single-Asset Trusts", level: 2 },
+        { id: "multi-asset", title: "multi-asset", level: 2 },
+        { id: "multi-asset-funds", title: "Multi-Asset Funds", level: 2 },
+        { id: "considerations", title: "considerations", level: 2 },
+        { id: "investment-considerations", title: "Investment Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Should I invest in Grayscale products?", answer: "For Bitcoin and Ethereum exposure, Grayscale's ETFs (GBTC and ETHE) are no longer the best option due to their higher fees compared to competitors like BlackRock and Fidelity. However, Grayscale's Mini Trust products offer competitive fees. For altcoin exposure through traditional brokerage accounts, Grayscale's single-asset trusts may be the only available option." },

@@ -16,10 +16,14 @@ export default function NftStakingGuidePage() {
       readTime="10 min"
       intro="NFT staking lets holders lock their NFTs in smart contracts to earn rewards, typically in the form of the project's native token. Staking mechanisms vary widely between projects."
       toc={[
-        { id: "section-1", title: "How NFT Staking Works", level: 2 },
-        { id: "section-2", title: "Staking Mechanics and Models", level: 2 },
-        { id: "section-3", title: "Evaluating Staking Opportunities", level: 2 },
-        { id: "section-4", title: "Risks and Considerations", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "how-nft-staking-works", title: "How NFT Staking Works", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "staking-mechanics-and-models", title: "Staking Mechanics and Models", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "evaluating-staking-opportunities", title: "Evaluating Staking Opportunities", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is NFT staking?", answer: "NFT staking involves locking your NFT in a smart contract to earn rewards, usually in the form of cryptocurrency tokens. The rewards incentivize holding rather than selling, and different projects offer varying reward structures and lock-up periods." },

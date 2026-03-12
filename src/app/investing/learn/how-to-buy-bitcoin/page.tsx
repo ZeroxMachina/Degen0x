@@ -25,13 +25,20 @@ export default function HowToBuyBitcoinPage() {
       readTime="12 min"
       intro="Bitcoin (BTC) is the original and most widely held cryptocurrency, with the largest market capitalization and deepest liquidity of any digital asset. Whether you are making your first crypto purchase or adding to an existing position, buying Bitcoin has never been more accessible. You can purchase BTC through centralized exchanges, Bitcoin ETFs, peer-to-peer platforms, or even Bitcoin ATMs. This guide walks you through every step of the process, from choosing an exchange to securing your investment."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose an Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-bitcoin", title: "Step 4: Buy Bitcoin", level: 2 },
-        { id: "store-bitcoin", title: "Step 5: Store Your Bitcoin Securely", level: 2 },
-        { id: "bitcoin-etfs", title: "Alternative: Bitcoin ETFs", level: 2 },
-        { id: "strategies", title: "Bitcoin Investment Strategies", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-an-exchange", title: "Step 1: Choose an Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-bitcoin", title: "buy-bitcoin", level: 2 },
+        { id: "step-4-buy-bitcoin", title: "Step 4: Buy Bitcoin", level: 2 },
+        { id: "store-bitcoin", title: "store-bitcoin", level: 2 },
+        { id: "step-5-store-your-bitcoin-securely", title: "Step 5: Store Your Bitcoin Securely", level: 2 },
+        { id: "bitcoin-etfs", title: "bitcoin-etfs", level: 2 },
+        { id: "alternative-bitcoin-etfs", title: "Alternative: Bitcoin ETFs", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "bitcoin-investment-strategies", title: "Bitcoin Investment Strategies", level: 2 }
       ]}
       faqs={[
         {

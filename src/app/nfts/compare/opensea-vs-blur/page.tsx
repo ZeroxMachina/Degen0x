@@ -19,7 +19,7 @@ export default function OpenSeaVsBlurPage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "OpenSea vs Blur", href: "#" } ]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">OpenSea vs Blur: Which NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">OpenSea vs Blur: Which NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         OpenSea and Blur represent two fundamentally different approaches to NFT trading. OpenSea is the largest
@@ -29,7 +29,7 @@ export default function OpenSeaVsBlurPage() {
       </p>
       <ComparisonTable items={[opensea, blur]} features={nftComparisonFeatures} title="OpenSea vs Blur: Head-to-Head" />
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Fees are where Blur has a decisive advantage. Blur charges 0% marketplace fees, meaning sellers
           keep their entire sale proceeds minus gas. OpenSea charges 2.5% on every sale. For a 10 ETH NFT,
@@ -41,7 +41,7 @@ export default function OpenSeaVsBlurPage() {
           royalties are optional on both platforms, though OpenSea has historically been more supportive of
           royalty enforcement.
         </p>
-        <h2 className="text-2xl font-bold text-white mb-4">Trading Experience</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Trading Experience</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Blur's trading interface is built for speed and data. Real-time floor tracking, sweep tools, collection
           bids, and portfolio analytics give professional traders everything they need to make informed decisions
@@ -53,15 +53,15 @@ export default function OpenSeaVsBlurPage() {
           Solana, and other chains from a single interface. OpenSea Pro adds professional features but still
           trails Blur in pure trading speed and analytics.
         </p>
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose OpenSea if</strong> you are a beginner, want multi-chain
+            <strong className="text-[var(--color-text)]">Choose OpenSea if</strong> you are a beginner, want multi-chain
             support, prefer visual browsing and auctions, or trade across multiple blockchains including Solana
             and Polygon.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Blur if</strong> you are an active Ethereum NFT trader
+            <strong className="text-[var(--color-text)]">Choose Blur if</strong> you are an active Ethereum NFT trader
             who wants zero fees, real-time analytics, sweep tools, and the fastest possible execution speed.
           </p>
         </div>

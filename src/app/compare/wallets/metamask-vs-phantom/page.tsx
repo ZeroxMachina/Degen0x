@@ -4,12 +4,6 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ToolStructuredData } from '@/components/StructuredData';
 
-export const metadata = {
-  title: 'MetaMask vs Phantom - Browser Wallet Comparison | CryptoDegen',
-  description: 'Compare MetaMask and Phantom browser wallets. Features for DeFi, NFTs, and token trading. Security and ease of use.',
-  keywords: 'metamask, phantom, browser wallet, ethereum, solana, comparison',
-};
-
 export default function MetaMaskVsPhantom() {
   const comparisonData = [
     { feature: 'Primary Chain', metamask: 'Ethereum', phantom: 'Solana' },
@@ -106,15 +100,16 @@ export default function MetaMaskVsPhantom() {
   return (
     <>
       <ToolStructuredData
-        name="MetaMask vs Phantom Browser Wallet Comparison"
+        title="MetaMask vs Phantom Browser Wallet Comparison"
         description="Detailed comparison of MetaMask and Phantom wallets for Ethereum and Solana DeFi and NFTs"
+        slug="compare/wallets/metamask-vs-phantom"
       />
 
       <div style={styles.container}>
         <Breadcrumb items={[
           { label: 'Compare', href: '/compare' },
           { label: 'Wallets', href: '/compare/wallets' },
-          { label: 'MetaMask vs Phantom', href: '/compare/wallets/metamask-vs-phantom', active: true }
+          { label: 'MetaMask vs Phantom', href: '/compare/wallets/metamask-vs-phantom'}
         ]} />
 
         <div style={styles.header}>
@@ -360,272 +355,221 @@ const styles = {
     minHeight: '100vh',
     backgroundColor: 'var(--bg, #0d1117)',
     color: 'var(--text, #e6edf3)',
-    padding: '20px',
-  } as React.CSSProperties,
+    padding: '20px' } as React.CSSProperties,
   header: {
     maxWidth: '1000px',
     margin: '0 auto 60px',
-    textAlign: 'center' as const,
-  },
+    textAlign: 'center' as const },
   title: {
     fontSize: '48px',
     fontWeight: 'bold',
     marginBottom: '16px',
     background: 'linear-gradient(135deg, #0ea5e9, #8b5cf6)',
     WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-  },
+    WebkitTextFillColor: 'transparent' },
   subtitle: {
     fontSize: '18px',
-    color: 'var(--text2, #8b949e)',
-  },
+    color: 'var(--text2, #8b949e)' },
   section: {
     maxWidth: '1000px',
-    margin: '0 auto 60px',
-  },
+    margin: '0 auto 60px' },
   sectionTitle: {
     fontSize: '32px',
     fontWeight: 'bold',
     marginBottom: '30px',
-    color: 'var(--text, #e6edf3)',
-  },
+    color: 'var(--text, #e6edf3)' },
   tableWrapper: {
     overflowX: 'auto' as const,
     backgroundColor: 'var(--surface, #161b22)',
     borderRadius: '12px',
-    border: '1px solid var(--border, #30363d)',
-  },
+    border: '1px solid var(--border, #30363d)' },
   table: {
     width: '100%',
     borderCollapse: 'collapse' as const,
-    fontSize: '14px',
-  },
+    fontSize: '14px' },
   headerRow: {
-    borderBottom: '2px solid var(--border, #30363d)',
-  },
+    borderBottom: '2px solid var(--border, #30363d)' },
   headerCell: {
     padding: '16px',
     textAlign: 'left' as const,
     fontWeight: 'bold',
     backgroundColor: 'var(--surface2, #1c2330)',
-    color: '#0ea5e9',
-  },
+    color: '#0ea5e9' },
   row: {
-    borderBottom: '1px solid var(--border, #30363d)',
-  },
+    borderBottom: '1px solid var(--border, #30363d)' },
   cell: {
     padding: '16px',
-    color: 'var(--text, #e6edf3)',
-  },
+    color: 'var(--text, #e6edf3)' },
   overviewGrid: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
-    gap: '24px',
-  },
+    gap: '24px' },
   overviewCard: {
     backgroundColor: 'var(--surface, #161b22)',
     border: '1px solid var(--border, #30363d)',
     borderRadius: '12px',
-    padding: '24px',
-  },
+    padding: '24px' },
   overviewTitle: {
     fontSize: '20px',
     fontWeight: 'bold',
     marginBottom: '8px',
-    color: 'var(--text, #e6edf3)',
-  },
+    color: 'var(--text, #e6edf3)' },
   overviewBest: {
     fontSize: '14px',
     color: '#0ea5e9',
     fontWeight: '600',
-    marginBottom: '12px',
-  },
+    marginBottom: '12px' },
   overviewText: {
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
     lineHeight: '1.6',
-    marginBottom: '12px',
-  },
+    marginBottom: '12px' },
   overviewStats: {
     fontSize: '12px',
     color: '#8b5cf6',
-    fontWeight: '600',
-  },
+    fontWeight: '600' },
   prosConsGrid: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
-    gap: '30px',
-  },
+    gap: '30px' },
   prosTitle: {
     fontSize: '20px',
     fontWeight: 'bold',
     color: '#10b981',
-    marginBottom: '16px',
-  },
+    marginBottom: '16px' },
   consTitle: {
     fontSize: '20px',
     fontWeight: 'bold',
     color: '#ef4444',
-    marginBottom: '16px',
-  },
+    marginBottom: '16px' },
   prosList: {
     listStyle: 'none',
     padding: 0,
-    margin: 0,
-  },
+    margin: 0 },
   prosItem: {
     padding: '12px 0',
     borderBottom: '1px solid var(--border, #30363d)',
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
-    lineHeight: '1.5',
-  },
+    lineHeight: '1.5' },
   securityTable: {
     backgroundColor: 'var(--surface, #161b22)',
     borderRadius: '12px',
     border: '1px solid var(--border, #30363d)',
-    overflow: 'hidden',
-  },
+    overflow: 'hidden' },
   securityRow: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr',
     borderBottom: '1px solid var(--border, #30363d)',
-    padding: '16px',
-  },
+    padding: '16px' },
   securityAspect: {
     fontWeight: 'bold',
-    color: 'var(--text, #e6edf3)',
-  },
+    color: 'var(--text, #e6edf3)' },
   securityValue: {
     fontSize: '14px',
-    color: 'var(--text2, #8b949e)',
-  },
+    color: 'var(--text2, #8b949e)' },
   chainsGrid: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
-    gap: '24px',
-  },
+    gap: '24px' },
   chainCard: {
     backgroundColor: 'var(--surface, #161b22)',
     border: '1px solid var(--border, #30363d)',
     borderRadius: '12px',
-    padding: '24px',
-  },
+    padding: '24px' },
   chainTitle: {
     fontSize: '18px',
     fontWeight: 'bold',
     marginBottom: '16px',
-    color: '#0ea5e9',
-  },
+    color: '#0ea5e9' },
   chainList: {
     listStyle: 'none',
     padding: 0,
-    margin: 0,
-  },
+    margin: 0 },
   useCaseGrid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-    gap: '24px',
-  },
+    gap: '24px' },
   useCaseCard: {
     backgroundColor: 'var(--surface, #161b22)',
     border: '1px solid var(--border, #30363d)',
     borderRadius: '12px',
-    padding: '20px',
-  },
+    padding: '20px' },
   useCaseTitle: {
     fontSize: '16px',
     fontWeight: 'bold',
     marginBottom: '12px',
-    color: '#0ea5e9',
-  },
+    color: '#0ea5e9' },
   useCaseText: {
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
-    lineHeight: '1.6',
-  },
+    lineHeight: '1.6' },
   ratingGrid: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
-    gap: '24px',
-  },
+    gap: '24px' },
   ratingCard: {
     backgroundColor: 'var(--surface, #161b22)',
     border: '1px solid var(--border, #30363d)',
     borderRadius: '12px',
     padding: '24px',
-    textAlign: 'center' as const,
-  },
+    textAlign: 'center' as const },
   ratingWallet: {
     fontSize: '20px',
     fontWeight: 'bold',
-    marginBottom: '12px',
-  },
+    marginBottom: '12px' },
   ratingScore: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     gap: '12px',
-    marginBottom: '8px',
-  },
+    marginBottom: '8px' },
   stars: {
-    fontSize: '20px',
-  },
+    fontSize: '20px' },
   ratingValue: {
     fontSize: '24px',
     fontWeight: 'bold',
-    color: '#fbbf24',
-  },
+    color: '#fbbf24' },
   ratingCount: {
     fontSize: '12px',
     color: 'var(--text2, #8b949e)',
-    marginBottom: '12px',
-  },
+    marginBottom: '12px' },
   ratingText: {
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
-    lineHeight: '1.6',
-  },
+    lineHeight: '1.6' },
   faqContainer: {
     backgroundColor: 'var(--surface, #161b22)',
     borderRadius: '12px',
     border: '1px solid var(--border, #30363d)',
-    overflow: 'hidden',
-  },
+    overflow: 'hidden' },
   faqItem: {
     padding: '24px',
-    borderBottom: '1px solid var(--border, #30363d)',
-  },
+    borderBottom: '1px solid var(--border, #30363d)' },
   faqQuestion: {
     fontSize: '16px',
     fontWeight: 'bold',
     color: '#0ea5e9',
-    marginBottom: '12px',
-  },
+    marginBottom: '12px' },
   faqAnswer: {
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
     lineHeight: '1.6',
-    margin: 0,
-  },
+    margin: 0 },
   verdict: {
     maxWidth: '1000px',
     margin: '0 auto 60px',
     backgroundColor: 'var(--surface, #161b22)',
     border: '2px solid #0ea5e9',
     borderRadius: '12px',
-    padding: '40px',
-  },
+    padding: '40px' },
   verdictTitle: {
     fontSize: '32px',
     fontWeight: 'bold',
     marginBottom: '24px',
-    color: '#0ea5e9',
-  },
+    color: '#0ea5e9' },
   verdictText: {
     fontSize: '16px',
     color: 'var(--text2, #8b949e)',
     lineHeight: '1.8',
-    marginBottom: '16px',
-  },
-};
+    marginBottom: '16px' } };

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Ultimate Crypto Security Guide: Best Practices & Scam Prevention | CryptoDegen`,
+  title: `Ultimate Crypto Security Guide: Best Practices & Scam Prevention | degen0x`,
   description:
     "Learn wallet security, phishing prevention, seed phrase management, hardware wallets, 2FA best practices, and how to avoid common crypto scams.",
 };
@@ -17,12 +17,18 @@ export default function CryptoSecurityGuidePage() {
       readTime="14 min read"
       intro="Cryptocurrency ownership introduces new security paradigms. Unlike traditional banking where chargebacks and account recovery are standard, crypto transfers are irreversible and self-custody means you alone are responsible for security. This guide covers wallet security, phishing prevention, seed phrase management, hardware wallet best practices, and common scams. Master these concepts and you'll dramatically reduce your risk of theft, loss, or fraud."
       toc={[
-        { id: "wallet-types", title: "Wallet Types & Custody", level: 2 },
-        { id: "seed-phrase-security", title: "Seed Phrase Management", level: 2 },
+        { id: "wallet-types", title: "wallet-types", level: 2 },
+        { id: "wallet-types-custody", title: "Wallet Types & Custody", level: 2 },
+        { id: "seed-phrase-security", title: "seed-phrase-security", level: 2 },
+        { id: "seed-phrase-management", title: "Seed Phrase Management", level: 2 },
+        { id: "hardware-wallets", title: "hardware-wallets", level: 2 },
         { id: "hardware-wallets", title: "Hardware Wallets", level: 2 },
-        { id: "two-factor-auth", title: "2FA & Authentication", level: 2 },
+        { id: "two-factor-auth", title: "two-factor-auth", level: 2 },
+        { id: "2fa-authentication", title: "2FA & Authentication", level: 2 },
+        { id: "phishing-prevention", title: "phishing-prevention", level: 2 },
         { id: "phishing-prevention", title: "Phishing Prevention", level: 2 },
-        { id: "common-scams", title: "Common Scams & How to Avoid Them", level: 2 },
+        { id: "common-scams", title: "common-scams", level: 2 },
+        { id: "common-scams-how-to-avoid-them", title: "Common Scams & How to Avoid Them", level: 2 }
       ]}
       faqs={[
         {

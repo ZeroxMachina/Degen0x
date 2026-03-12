@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Sui (SUI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Sui (SUI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Sui (SUI), the high-performance Layer 1 blockchain built by Mysten Labs. Discover how it works, tokenomics, use cases, and how to buy SUI.",
 };
@@ -17,12 +17,18 @@ export default function SuiPage() {
       readTime="8 min read"
       intro="Sui is a high-performance Layer 1 blockchain developed by Mysten Labs, founded by former Meta (Diem) engineers. It uses a novel object-centric data model and the Move programming language to achieve parallel transaction processing, enabling extremely low latency and high throughput for decentralized applications."
       toc={[
-        { id: "what-is", title: "What Is Sui?", level: 2 },
-        { id: "how-it-works", title: "How Does Sui Work?", level: 2 },
-        { id: "tokenomics", title: "SUI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SUI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-sui", title: "What Is Sui?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-sui-work", title: "How Does Sui Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "sui-tokenomics", title: "SUI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-sui", title: "How to Buy SUI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -17,10 +17,14 @@ export default function BestBusinessTaxPage() {
       readTime="8 min"
       intro="Businesses with cryptocurrency holdings face tax and accounting challenges that consumer crypto tax tools may not adequately address. From corporate treasury management and employee crypto payments to revenue recognition and multi-entity reporting, business crypto tax needs require specialized solutions. This guide covers the best tools and approaches for business crypto tax compliance."
       toc={[
-        { id: "business-challenges", title: "Business Tax Challenges", level: 2 },
+        { id: "business-challenges", title: "business-challenges", level: 2 },
+        { id: "business-tax-challenges", title: "Business Tax Challenges", level: 2 },
+        { id: "enterprise-solutions", title: "enterprise-solutions", level: 2 },
         { id: "enterprise-solutions", title: "Enterprise Solutions", level: 2 },
+        { id: "accounting-integration", title: "accounting-integration", level: 2 },
         { id: "accounting-integration", title: "Accounting Integration", level: 2 },
-        { id: "compliance", title: "Compliance Considerations", level: 2 },
+        { id: "compliance", title: "compliance", level: 2 },
+        { id: "compliance-considerations", title: "Compliance Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Can I use consumer crypto tax tools for my business?", answer: "Consumer tools can handle basic calculations but typically lack business-specific features like multi-entity support, accounting software integration, role-based access, and proper business tax form generation. For significant business crypto activity, enterprise solutions are recommended." },

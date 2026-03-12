@@ -72,7 +72,7 @@ export default function BrazilExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in Brazil ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -89,7 +89,7 @@ export default function BrazilExchangesPage() {
           We have ranked the best crypto exchanges available to Brazilian residents based on
           fees, BRL support, security, and regulatory compliance.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Brazilian Crypto Regulation</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Brazilian Crypto Regulation</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Brazil&apos;s Legal Framework for Virtual Assets (Law 14.478/2022) established the
           Central Bank as the primary regulator for crypto exchanges. The law requires
@@ -97,7 +97,7 @@ export default function BrazilExchangesPage() {
           laundering programs, and comply with consumer protection standards. This legal
           clarity has attracted both global and local platforms to the Brazilian market.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Why PIX Changed the Game</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Why PIX Changed the Game</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           PIX, Brazil&apos;s instant payment system launched by the Central Bank, has
           revolutionized crypto purchases in the country. With PIX, Brazilians can deposit
@@ -119,22 +119,22 @@ export default function BrazilExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods for Brazilian Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods for Brazilian Users</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">PIX</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">PIX</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant, free BRL deposits 24/7. The best option for Brazilian users. Supported by all major exchanges.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">TED Bank Transfer</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">TED Bank Transfer</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Same-day transfer during business hours. Small fee charged by banks. Good for larger amounts.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Boleto Bancario</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Boleto Bancario</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Pay at banks, ATMs, or lottery houses. Takes 1-3 business days. Good for cash-based users.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">P2P Trading</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">P2P Trading</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Buy directly from other users with flexible payment. Available on Binance and others.</p>
           </div>
         </div>

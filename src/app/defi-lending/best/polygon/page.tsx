@@ -17,10 +17,14 @@ export default function BestPolygonDefiLending() {
       readTime="9 min"
       intro="Polygon remains one of the most accessible networks for DeFi lending, offering near-zero gas fees and fast transaction finality. With a mature protocol ecosystem anchored by Aave V3, Polygon provides an excellent entry point for DeFi lending, particularly for users who want to experiment with smaller amounts without high gas costs eroding returns."
       toc={[
-        { id: "why-polygon", title: "Why Polygon for DeFi Lending", level: 2 },
-        { id: "top-protocols", title: "Top Lending Protocols", level: 2 },
-        { id: "yields", title: "Yield Opportunities", level: 2 },
-        { id: "polygon-2", title: "Polygon 2.0 and zkEVM", level: 2 },
+        { id: "why-polygon", title: "why-polygon", level: 2 },
+        { id: "why-polygon-for-defi-lending", title: "Why Polygon for DeFi Lending", level: 2 },
+        { id: "top-protocols", title: "top-protocols", level: 2 },
+        { id: "top-lending-protocols", title: "Top Lending Protocols", level: 2 },
+        { id: "yields", title: "yields", level: 2 },
+        { id: "yield-opportunities", title: "Yield Opportunities", level: 2 },
+        { id: "polygon-2", title: "polygon-2", level: 2 },
+        { id: "polygon-2-0-and-zkevm", title: "Polygon 2.0 and zkEVM", level: 2 }
       ]}
       faqs={[
         { question: "Are Polygon gas fees really near zero?", answer: "Yes, Polygon PoS transactions typically cost fractions of a cent, making it one of the cheapest networks for DeFi lending. Even complex multi-step transactions rarely exceed a few cents." },

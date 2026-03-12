@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState } from "react";
@@ -58,7 +60,7 @@ export default function StakingRewardsCalculatorPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Staking Rewards Calculator</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Staking Rewards Calculator</h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">
         Estimate your staking rewards after platform fees. Compare different protocols side by side
         and see how fees impact your net returns over time.
@@ -66,7 +68,7 @@ export default function StakingRewardsCalculatorPage() {
 
       {/* Presets */}
       <div className="mb-6">
-        <label className="block text-sm font-medium text-white mb-2">Quick Presets</label>
+        <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Quick Presets</label>
         <div className="flex flex-wrap gap-2">
           {presets.map((preset) => (
             <button
@@ -74,8 +76,8 @@ export default function StakingRewardsCalculatorPage() {
               onClick={() => handlePreset(preset.label)}
               className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                 selectedPreset === preset.label
-                  ? "bg-[var(--color-primary)] text-white"
-                  : "border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-white hover:border-[var(--color-primary)]"
+                  ? "bg-[var(--color-primary)] text-[var(--color-text)]"
+                  : "border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)] hover:border-[var(--color-primary)]"
               }`}
             >
               {preset.label}
@@ -87,18 +89,18 @@ export default function StakingRewardsCalculatorPage() {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-white mb-1">
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
               Staked Amount ($)
             </label>
             <input
               type="number"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-white mb-1">
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
               Gross APY (%) <span className="text-[var(--color-text-secondary)] font-normal">- before fees</span>
             </label>
             <input
@@ -106,11 +108,11 @@ export default function StakingRewardsCalculatorPage() {
               value={apy}
               onChange={(e) => { setApy(e.target.value); setSelectedPreset("Custom"); }}
               step="0.1"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-white mb-1">
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
               Platform Fee (%) <span className="text-[var(--color-text-secondary)] font-normal">- % of rewards taken</span>
             </label>
             <input
@@ -118,44 +120,44 @@ export default function StakingRewardsCalculatorPage() {
               value={fee}
               onChange={(e) => { setFee(e.target.value); setSelectedPreset("Custom"); }}
               step="1"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-white mb-1">Duration (months)</label>
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">Duration (months)</label>
             <input
               type="number"
               value={duration}
               onChange={(e) => setDuration(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-white mb-1">
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
               Token Price ($) <span className="text-[var(--color-text-secondary)] font-normal">- optional</span>
             </label>
             <input
               type="number"
               value={tokenPrice}
               onChange={(e) => setTokenPrice(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
         </div>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h2 className="text-lg font-semibold text-white mb-4">Staking Results</h2>
+          <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Staking Results</h2>
           {hasValues ? (
             <div className="space-y-3">
               <div className="flex justify-between">
                 <span className="text-sm text-[var(--color-text-secondary)]">Initial Stake</span>
-                <span className="text-sm text-white">
+                <span className="text-sm text-[var(--color-text)]">
                   ${principal.toLocaleString(undefined, { maximumFractionDigits: 2 })}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-[var(--color-text-secondary)]">Gross Rewards</span>
-                <span className="text-sm text-white">
+                <span className="text-sm text-[var(--color-text)]">
                   ${grossRewards.toLocaleString(undefined, { maximumFractionDigits: 2 })}
                 </span>
               </div>
@@ -174,24 +176,24 @@ export default function StakingRewardsCalculatorPage() {
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-[var(--color-text-secondary)]">Final Value</span>
-                <span className="text-sm font-semibold text-white">
+                <span className="text-sm font-semibold text-[var(--color-text)]">
                   ${finalValue.toLocaleString(undefined, { maximumFractionDigits: 2 })}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-[var(--color-text-secondary)]">Effective APY (after fees)</span>
-                <span className="text-sm text-white">{effectiveApy.toFixed(2)}%</span>
+                <span className="text-sm text-[var(--color-text)]">{effectiveApy.toFixed(2)}%</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-[var(--color-text-secondary)]">Monthly Reward (avg)</span>
-                <span className="text-sm text-white">
+                <span className="text-sm text-[var(--color-text)]">
                   ${monthlyReward.toLocaleString(undefined, { maximumFractionDigits: 2 })}
                 </span>
               </div>
               {price > 0 && (
                 <div className="flex justify-between">
                   <span className="text-sm text-[var(--color-text-secondary)]">Net Rewards in Tokens</span>
-                  <span className="text-sm text-white">{rewardsInTokens.toFixed(4)}</span>
+                  <span className="text-sm text-[var(--color-text)]">{rewardsInTokens.toFixed(4)}</span>
                 </div>
               )}
             </div>
@@ -210,7 +212,7 @@ export default function StakingRewardsCalculatorPage() {
 
       {/* Educational Content */}
       <div className="mt-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Understanding Staking Returns</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Understanding Staking Returns</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Staking returns are expressed as Annual Percentage Yield (APY), which represents the
           annualized rate of return. However, the APY you see advertised is often the gross rate

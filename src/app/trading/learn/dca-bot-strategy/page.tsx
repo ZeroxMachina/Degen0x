@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DCA Bot Strategy Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DCA Bot Strategy Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how DCA bots work and how to configure them. Automate dollar-cost averaging for consistent crypto accumulation and risk reduction.",
 };
@@ -17,10 +17,14 @@ export default function DcaBotStrategyPage() {
       readTime="8 min read"
       intro="Dollar-cost averaging (DCA) bots automate the process of investing a fixed amount into crypto at regular intervals, removing the stress of timing the market. Advanced DCA bots can also incorporate technical signals to enhance returns by buying more aggressively during dips. This guide covers how DCA bots work, configuration strategies, and how to optimize them for different market conditions."
       toc={[
-        { id: "what-is-dca-bot", title: "What Is a DCA Bot?", level: 2 },
-        { id: "configuration", title: "Configuration Options", level: 2 },
-        { id: "smart-dca", title: "Smart DCA Strategies", level: 2 },
-        { id: "performance-tips", title: "Performance Optimization Tips", level: 2 },
+        { id: "what-is-dca-bot", title: "what-is-dca-bot", level: 2 },
+        { id: "what-is-a-dca-bot", title: "What Is a DCA Bot?", level: 2 },
+        { id: "configuration", title: "configuration", level: 2 },
+        { id: "configuration-options", title: "Configuration Options", level: 2 },
+        { id: "smart-dca", title: "smart-dca", level: 2 },
+        { id: "smart-dca-strategies", title: "Smart DCA Strategies", level: 2 },
+        { id: "performance-tips", title: "performance-tips", level: 2 },
+        { id: "performance-optimization-tips", title: "Performance Optimization Tips", level: 2 }
       ]}
       faqs={[
         { question: "Is DCA better than lump sum investing?", answer: "Studies show that lump sum investing outperforms DCA roughly two-thirds of the time because markets trend upward over the long term. However, DCA reduces the risk of investing a large sum at a market peak and provides psychological comfort during volatile periods. DCA is generally recommended for most investors due to its simplicity and risk mitigation." },

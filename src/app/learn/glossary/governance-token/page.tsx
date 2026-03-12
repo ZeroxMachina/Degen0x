@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Governance Token? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Governance Token? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what governance tokens are, how they enable decentralized decision-making, and their role in DAOs and DeFi protocols.",
 };
@@ -17,11 +17,16 @@ export default function GovernanceTokenPage() {
       readTime="5 min"
       intro="A governance token gives holders the right to vote on decisions that shape a protocol or decentralized organization. These decisions can include treasury allocations, fee structures, protocol upgrades, and partnership proposals. Governance tokens are a cornerstone of decentralized governance, transferring control from a founding team to the community of users and stakeholders."
       toc={[
-        { id: "definition", title: "What Is a Governance Token?", level: 2 },
-        { id: "how-it-works", title: "How Governance Tokens Work", level: 2 },
-        { id: "examples", title: "Notable Examples", level: 2 },
-        { id: "challenges", title: "Challenges and Criticisms", level: 2 },
-        { id: "why-it-matters", title: "Why Governance Tokens Matter", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-governance-token", title: "What Is a Governance Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-governance-tokens-work", title: "How Governance Tokens Work", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "notable-examples", title: "Notable Examples", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-and-criticisms", title: "Challenges and Criticisms", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-governance-tokens-matter", title: "Why Governance Tokens Matter", level: 2 }
       ]}
       faqs={[
         {

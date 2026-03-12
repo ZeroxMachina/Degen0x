@@ -17,12 +17,16 @@ export default function NftStoragePage() {
       readTime="11 min"
       intro="Where and how an NFT's media and metadata are stored is one of the most important yet overlooked factors in evaluating digital assets. An NFT on the blockchain is only a token with a pointer to data. If that data disappears because a server goes offline, the NFT becomes a link to nothing. This guide explains the different storage approaches, their trade-offs, and how to evaluate the durability of an NFT before you buy."
       toc={[
-        { id: "on-chain-vs-off-chain", title: "On-Chain vs Off-Chain Storage", level: 2 },
-        { id: "ipfs", title: "IPFS: The Decentralized Standard", level: 2 },
-        { id: "arweave", title: "Arweave: Permanent Storage", level: 2 },
-        { id: "centralized-storage", title: "Centralized Storage Risks", level: 2 },
-        { id: "evaluating-storage", title: "Evaluating an NFT's Storage", level: 2 },
-        { id: "best-practices", title: "Storage Best Practices for Creators", level: 2 },
+        { id: "on-chain-vs-off-chain", title: "on-chain-vs-off-chain", level: 2 },
+        { id: "on-chain-vs-off-chain-storage", title: "On-Chain vs Off-Chain Storage", level: 2 },
+        { id: "ipfs", title: "ipfs", level: 2 },
+        { id: "ipfs-the-decentralized-standard", title: "IPFS: The Decentralized Standard", level: 2 },
+        { id: "arweave", title: "arweave", level: 2 },
+        { id: "arweave-permanent-storage", title: "Arweave: Permanent Storage", level: 2 },
+        { id: "centralized-storage", title: "centralized-storage", level: 2 },
+        { id: "centralized-storage-risks", title: "Centralized Storage Risks", level: 2 },
+        { id: "evaluating-storage", title: "evaluating-storage", level: 2 },
+        { id: "evaluating-an-nft", title: "Evaluating an NFT", level: 2 }
       ]}
       faqs={[
         {
@@ -49,12 +53,12 @@ export default function NftStoragePage() {
           question: "What is the best storage solution for NFT creators?",
           answer:
             "The gold standard is storing metadata on-chain with media on Arweave for permanent storage. A good middle ground is IPFS with a reliable pinning service like Pinata or NFT.Storage. Avoid using centralized servers alone, as they create a single point of failure.",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "What Are NFTs?", href: "/nfts/learn/what-are-nfts", category: "NFTs" },
         { title: "How to Create and Mint NFTs", href: "/nfts/learn/how-to-create-nfts", category: "NFTs" },
-        { title: "NFT Security Best Practices", href: "/nfts/learn/nft-security-tips", category: "NFTs" },
+        { title: "NFT Security Best Practices", href: "/nfts/learn/nft-security-tips", category: "NFTs" }
       ]}
     >
       <h2 id="on-chain-vs-off-chain">On-Chain vs Off-Chain Storage</h2>

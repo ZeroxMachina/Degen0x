@@ -22,7 +22,7 @@ const products: Product[] = [
     cons: ["$15/month Silver or $30/month Gold plan", "Requires investment knowledge", "LLC setup takes 2-3 weeks", "More complex than managed platforms"],
     fees: "$15-$30/month, no per-trade fees",
     bestFor: "Full control self-directed crypto retirement",
-    affiliateUrl: "https://cryptodegen.com/go/rocket-dollar",
+    affiliateUrl: "https://degen0x.com/go/rocket-dollar",
     category: "long-term",
     featured: true,
   },
@@ -36,7 +36,7 @@ const products: Product[] = [
     cons: ["1% crypto trading fee", "$10-$25 monthly fee depending on plan", "Fewer crypto assets than pure crypto IRAs", "Limited DeFi access"],
     fees: "$10-$25/month + 1% crypto trading fee",
     bestFor: "User-friendly self-directed crypto IRA",
-    affiliateUrl: "https://cryptodegen.com/go/alto-ira",
+    affiliateUrl: "https://degen0x.com/go/alto-ira",
     category: "long-term",
   },
   {
@@ -49,7 +49,7 @@ const products: Product[] = [
     cons: ["Higher annual fees than some competitors", "Crypto investment requires LLC setup", "Processing times can be slow", "Interface less modern than competitors"],
     fees: "Annual custodial fee varies by account type",
     bestFor: "Regulated self-directed retirement custody",
-    affiliateUrl: "https://cryptodegen.com/go/directed-ira",
+    affiliateUrl: "https://degen0x.com/go/directed-ira",
     category: "long-term",
   },
   {
@@ -62,7 +62,7 @@ const products: Product[] = [
     cons: ["One-time setup fees", "Requires self-management of investments", "Less hand-holding than managed platforms", "Phone-based customer support primarily"],
     fees: "One-time setup fee + annual maintenance",
     bestFor: "Tax-optimized self-directed retirement investing",
-    affiliateUrl: "https://cryptodegen.com/go/ira-financial",
+    affiliateUrl: "https://degen0x.com/go/ira-financial",
     category: "long-term",
   },
 ];
@@ -92,7 +92,7 @@ export default function SelfDirectedPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Self-Directed", href: "/long-term/best/self-directed" }]} />
       <AffiliateDisclosure />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Best Self-Directed Crypto Retirement Accounts ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Self-Directed Crypto Retirement Accounts ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
 
       <div className="prose prose-invert max-w-none mb-10">
@@ -103,9 +103,9 @@ export default function SelfDirectedPage() {
           your own keys. This flexibility comes with more responsibility but also more opportunity.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          Our top pick is <strong className="text-white">Rocket Dollar</strong> for its streamlined LLC setup,
+          Our top pick is <strong className="text-[var(--color-text)]">Rocket Dollar</strong> for its streamlined LLC setup,
           checkbook control, and flat monthly pricing with no per-transaction fees. For a more user-friendly
-          experience, <strong className="text-white">Alto IRA</strong> offers simplified self-directed crypto
+          experience, <strong className="text-[var(--color-text)]">Alto IRA</strong> offers simplified self-directed crypto
           investing through Coinbase integration without the complexity of LLC management.
         </p>
       </div>
@@ -117,12 +117,12 @@ export default function SelfDirectedPage() {
       </div>
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Self-Directed vs Standard Crypto IRA</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Self-Directed vs Standard Crypto IRA</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <p>Understanding the key differences helps you choose the right structure for your retirement crypto investing:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
             <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-              <h3 className="text-white font-semibold mb-2">Standard Crypto IRA</h3>
+              <h3 className="text-[var(--color-text)] font-semibold mb-2">Standard Crypto IRA</h3>
               <ul className="list-disc pl-4 space-y-1 text-sm">
                 <li>Trade through the provider&apos;s platform only</li>
                 <li>Limited to assets the provider supports</li>
@@ -132,7 +132,7 @@ export default function SelfDirectedPage() {
               </ul>
             </div>
             <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-              <h3 className="text-white font-semibold mb-2">Self-Directed IRA (Checkbook Control)</h3>
+              <h3 className="text-[var(--color-text)] font-semibold mb-2">Self-Directed IRA (Checkbook Control)</h3>
               <ul className="list-disc pl-4 space-y-1 text-sm">
                 <li>Invest through any exchange or platform</li>
                 <li>Access to any cryptocurrency or DeFi protocol</li>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Gala Games (GALA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Gala Games (GALA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Gala Games (GALA), the Web3 entertainment platform for gaming, music, and film. Discover how it works, tokenomics, use cases, and how to buy GALA.",
 };
@@ -17,12 +17,18 @@ export default function GalaPage() {
       readTime="8 min read"
       intro="Gala Games is a Web3 entertainment platform building an ecosystem of blockchain-powered games, music, and film. Founded by Zynga co-founder Eric Schiermeyer, Gala aims to create games where players truly own their in-game items as NFTs and can earn rewards for participating in the ecosystem."
       toc={[
-        { id: "what-is", title: "What Is Gala Games?", level: 2 },
-        { id: "how-it-works", title: "How Does Gala Games Work?", level: 2 },
-        { id: "tokenomics", title: "GALA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy GALA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-gala-games", title: "What Is Gala Games?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-gala-games-work", title: "How Does Gala Games Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "gala-tokenomics", title: "GALA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-gala", title: "How to Buy GALA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

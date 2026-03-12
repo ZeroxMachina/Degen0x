@@ -16,10 +16,14 @@ export default function NetherlandsExchangesPage() {
       readTime="9 min"
       intro="The Netherlands has one of the most regulated crypto markets in Europe, with De Nederlandsche Bank (DNB) overseeing exchange registrations. Dutch traders benefit from EUR accessibility, iDEAL payment integration, and a mature financial infrastructure that supports safe crypto trading."
       toc={[
-        { id: "regulation", title: "DNB Registration & MiCA", level: 2 },
-        { id: "top-exchanges", title: "Best Exchanges for Dutch Users", level: 2 },
-        { id: "payment-methods", title: "EUR Payment Methods & iDEAL", level: 2 },
-        { id: "taxes", title: "Crypto Tax in the Netherlands", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "dnb-registration-mica", title: "DNB Registration & MiCA", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "best-exchanges-for-dutch-users", title: "Best Exchanges for Dutch Users", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "eur-payment-methods-ideal", title: "EUR Payment Methods & iDEAL", level: 2 },
+        { id: "taxes", title: "taxes", level: 2 },
+        { id: "crypto-tax-in-the-netherlands", title: "Crypto Tax in the Netherlands", level: 2 }
       ]}
       faqs={[
         {

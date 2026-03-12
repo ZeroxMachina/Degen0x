@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Flipping: Strategies for Profit (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Flipping: Strategies for Profit (${CURRENT_YEAR}) | degen0x`,
   description: "Learn NFT flipping strategies including mint sniping, floor sweeping, and trend analysis. Understand the risks, tools, and tactics used by successful NFT traders.",
 };
 
@@ -16,11 +16,16 @@ export default function NftFlippingGuidePage() {
       readTime="10 min"
       intro="NFT flipping involves buying NFTs at lower prices and selling them at higher prices for profit, similar to trading in traditional markets. While some flippers earn significant returns, the practice requires market knowledge, quick execution, risk management, and an understanding that most flips do not result in profit. This guide covers the main flipping strategies, essential tools, and the risks you should understand before attempting to flip NFTs."
       toc={[
-        { id: "mint-flipping", title: "Mint Flipping Strategy", level: 2 },
-        { id: "floor-sweeping", title: "Floor Sweeping Strategy", level: 2 },
-        { id: "trait-sniping", title: "Trait and Rarity Sniping", level: 2 },
-        { id: "tools-analytics", title: "Essential Tools and Analytics", level: 2 },
-        { id: "risk-management", title: "Risk Management", level: 2 },
+        { id: "mint-flipping", title: "mint-flipping", level: 2 },
+        { id: "mint-flipping-strategy", title: "Mint Flipping Strategy", level: 2 },
+        { id: "floor-sweeping", title: "floor-sweeping", level: 2 },
+        { id: "floor-sweeping-strategy", title: "Floor Sweeping Strategy", level: 2 },
+        { id: "trait-sniping", title: "trait-sniping", level: 2 },
+        { id: "trait-and-rarity-sniping", title: "Trait and Rarity Sniping", level: 2 },
+        { id: "tools-analytics", title: "tools-analytics", level: 2 },
+        { id: "essential-tools-and-analytics", title: "Essential Tools and Analytics", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management", title: "Risk Management", level: 2 }
       ]}
       faqs={[
         { question: "What percentage of NFT flips are profitable?", answer: "The majority of NFT flips result in losses when accounting for gas fees, marketplace fees, and royalties. Studies have shown that over 50% of NFT trades result in a loss. Profitable flipping requires significant market knowledge, good timing, and disciplined risk management. Do not assume flipping is easy money." },

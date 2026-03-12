@@ -17,11 +17,16 @@ export default function CryptoMortgageGuidePage() {
       readTime="9 min"
       intro="Crypto mortgages allow homebuyers to leverage their cryptocurrency holdings to purchase real estate. Whether using crypto as proof of assets for traditional mortgage qualification, taking a crypto-backed loan for a down payment, or using specialized crypto mortgage providers, there are multiple paths to homeownership for crypto holders. This guide explores the available options and their practical considerations."
       toc={[
-        { id: "options-overview", title: "Crypto Mortgage Options", level: 2 },
-        { id: "crypto-as-assets", title: "Using Crypto as Proof of Assets", level: 2 },
-        { id: "crypto-backed-down-payment", title: "Crypto-Backed Down Payments", level: 2 },
+        { id: "options-overview", title: "options-overview", level: 2 },
+        { id: "crypto-mortgage-options", title: "Crypto Mortgage Options", level: 2 },
+        { id: "crypto-as-assets", title: "crypto-as-assets", level: 2 },
+        { id: "using-crypto-as-proof-of-assets", title: "Using Crypto as Proof of Assets", level: 2 },
+        { id: "crypto-backed-down-payment", title: "crypto-backed-down-payment", level: 2 },
+        { id: "crypto-backed-down-payments", title: "Crypto-Backed Down Payments", level: 2 },
+        { id: "specialized-providers", title: "specialized-providers", level: 2 },
         { id: "specialized-providers", title: "Specialized Providers", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "Can I use Bitcoin to buy a house?", answer: "Not directly in most cases, but you can use Bitcoin as collateral for a loan to make a down payment, or convert Bitcoin to fiat for the purchase. Some specialized lenders consider crypto holdings in mortgage qualification. The tax implications of selling crypto for a home purchase should be carefully considered." },

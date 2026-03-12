@@ -107,7 +107,7 @@ const CryptoTicker: React.FC<{ crypto: CryptoData; isFlashing: boolean }> = ({
           <p className="text-xs text-gray-400">{crypto.name}</p>
         </div>
         <div className="text-right">
-          <p className="text-sm font-bold text-white">{formatPrice(crypto.price)}</p>
+          <p className="text-sm font-bold text-[var(--color-text)]">{formatPrice(crypto.price)}</p>
         </div>
       </div>
 

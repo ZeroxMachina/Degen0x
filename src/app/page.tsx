@@ -10,8 +10,8 @@ import WhaleAlertFeed from "@/components/WhaleAlertFeed";
 import { CATEGORIES, SITE_NAME, CURRENT_MONTH, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `${SITE_NAME} - The NerdWallet of Crypto | Compare Exchanges, Wallets & DeFi`,
-  description: "CryptoDegen is the most trusted crypto comparison platform. Compare exchanges, wallets, DeFi protocols, and more. Expert reviews, tools, and guides.",
+  title: `${SITE_NAME} - Compare Crypto Exchanges, Wallets & DeFi`,
+  description: "degen0x is the most trusted crypto comparison platform. Compare exchanges, wallets, DeFi protocols, and more. Expert reviews, tools, and guides.",
 };
 
 const POPULAR_GUIDES = [
@@ -135,7 +135,7 @@ export default function HomePage() {
           Explore All Categories
         </h2>
         <p className="text-[var(--color-text-secondary)] text-center mb-12 max-w-2xl mx-auto">
-          From exchanges to taxes, wallets to DeFi — we cover every aspect of the crypto ecosystem with expert reviews and analysis.
+          From exchanges to taxes, wallets to DeFi, we cover every aspect of the crypto ecosystem with expert reviews and analysis.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {CATEGORIES.map((cat) => (
@@ -201,11 +201,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why CryptoDegen? */}
+      {/* Why degen0x? */}
       <section className="section-glass">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-3xl font-bold text-[var(--color-text)] mb-4 text-center">
-            Why CryptoDegen?
+            Why degen0x?
           </h2>
           <p className="text-[var(--color-text-secondary)] text-center mb-12 max-w-2xl mx-auto">
             Trusted by thousands of crypto enthusiasts and professionals to navigate the digital asset space with confidence.

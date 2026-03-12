@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Synapse (SYN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Synapse (SYN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Synapse (SYN), the cross-chain bridging and messaging protocol. Discover how it works, tokenomics, use cases, and how to buy SYN.",
 };
@@ -17,12 +17,18 @@ export default function SynapsePage() {
       readTime="8 min read"
       intro="Synapse is a cross-chain communication protocol that enables seamless token bridging and messaging across multiple blockchain networks. With deep liquidity pools and support for numerous chains, Synapse has become one of the most widely used bridges in the DeFi ecosystem, also building its own optimistic rollup chain called Synapse Chain."
       toc={[
-        { id: "what-is", title: "What Is Synapse?", level: 2 },
-        { id: "how-it-works", title: "How Does Synapse Work?", level: 2 },
-        { id: "tokenomics", title: "SYN Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SYN", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-synapse", title: "What Is Synapse?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-synapse-work", title: "How Does Synapse Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "syn-tokenomics", title: "SYN Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-syn", title: "How to Buy SYN", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

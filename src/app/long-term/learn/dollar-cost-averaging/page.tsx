@@ -18,12 +18,18 @@ export default function DollarCostAveragingPage() {
       readTime="10 min read"
       intro="Dollar-cost averaging (DCA) is the strategy of investing a fixed amount at regular intervals regardless of price. For crypto investors, DCA eliminates the impossible task of timing the market and has historically produced excellent results for patient investors in quality assets. This guide covers the mechanics, optimal strategies, and practical setup for crypto DCA."
       toc={[
-        { id: "how-it-works", title: "How DCA Works", level: 2 },
-        { id: "frequency", title: "Choosing Your Frequency", level: 2 },
-        { id: "setup", title: "Setting Up Automatic DCA", level: 2 },
-        { id: "advanced", title: "Advanced DCA Strategies", level: 2 },
-        { id: "dca-vs-lump", title: "DCA vs Lump Sum Investing", level: 2 },
-        { id: "common-mistakes", title: "Common DCA Mistakes", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-dca-works", title: "How DCA Works", level: 2 },
+        { id: "frequency", title: "frequency", level: 2 },
+        { id: "choosing-your-frequency", title: "Choosing Your Frequency", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "setting-up-automatic-dca", title: "Setting Up Automatic DCA", level: 2 },
+        { id: "advanced", title: "advanced", level: 2 },
+        { id: "advanced-dca-strategies", title: "Advanced DCA Strategies", level: 2 },
+        { id: "dca-vs-lump", title: "dca-vs-lump", level: 2 },
+        { id: "dca-vs-lump-sum-investing", title: "DCA vs Lump Sum Investing", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-dca-mistakes", title: "Common DCA Mistakes", level: 2 }
       ]}
       faqs={[
         { question: "Is DCA better than lump-sum investing?", answer: "Studies show lump-sum investing outperforms DCA about 66% of the time in traditional markets because markets tend to rise. However, DCA significantly reduces the risk of buying at a peak and provides psychological comfort. For volatile assets like crypto, DCA's risk reduction is particularly valuable." },

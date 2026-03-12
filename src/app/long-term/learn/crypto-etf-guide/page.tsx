@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto ETFs: Complete Investment Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto ETFs: Complete Investment Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Complete guide to cryptocurrency ETFs. Spot Bitcoin ETFs, Ethereum ETFs, futures ETFs, and how to use crypto ETFs in your investment portfolio.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoEtfGuidePage() {
     <LearnPageLayout title="Crypto ETFs: Complete Investment Guide" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="8 min read"
       intro="Cryptocurrency exchange-traded funds (ETFs) provide regulated, traditional-finance access to crypto assets without the complexity of wallets, private keys, and exchanges. The approval of spot Bitcoin ETFs in January 2024 was a watershed moment for crypto adoption, bringing billions in institutional capital and validating cryptocurrency as an investable asset class. Understanding the different types of crypto ETFs, their costs, and their role in a portfolio is essential for modern investors."
       toc={[
-        { id: "types", title: "Types of Crypto ETFs", level: 2 },
-        { id: "spot-vs-futures", title: "Spot vs. Futures ETFs", level: 2 },
-        { id: "costs", title: "Costs and Considerations", level: 2 },
-        { id: "portfolio-role", title: "Role in a Portfolio", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-crypto-etfs", title: "Types of Crypto ETFs", level: 2 },
+        { id: "spot-vs-futures", title: "spot-vs-futures", level: 2 },
+        { id: "spot-vs-futures-etfs", title: "Spot vs. Futures ETFs", level: 2 },
+        { id: "costs", title: "costs", level: 2 },
+        { id: "costs-and-considerations", title: "Costs and Considerations", level: 2 },
+        { id: "portfolio-role", title: "portfolio-role", level: 2 },
+        { id: "role-in-a-portfolio", title: "Role in a Portfolio", level: 2 }
       ]}
       faqs={[
         { question: "What is a spot Bitcoin ETF?", answer: "A spot Bitcoin ETF holds actual Bitcoin as its underlying asset. When you buy shares, the ETF purchases and custodies real Bitcoin on your behalf. This provides direct price exposure to Bitcoin through a traditional brokerage account, with the ETF handling custody, security, and compliance. Major spot Bitcoin ETFs include those from BlackRock (IBIT), Fidelity (FBTC), and others." },

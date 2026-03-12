@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Funding Rates in Perpetual Futures (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Funding Rates in Perpetual Futures (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how funding rates work in perpetual futures trading. Calculation methods, impact on positions, strategies, and how to use funding rates to your advantage.",
 };
 
@@ -16,13 +16,20 @@ export default function FundingRatesExplained() {
       readTime="9 min read"
       intro="Funding rates are a critical mechanism in perpetual futures trading that keeps contract prices aligned with the underlying spot market. They represent periodic payments between long and short traders, and understanding them is essential for anyone trading perpetual futures. Funding rates affect your profitability, reveal market sentiment, and create unique trading opportunities."
       toc={[
+        { id: "what-are-funding-rates", title: "what-are-funding-rates", level: 2 },
         { id: "what-are-funding-rates", title: "What Are Funding Rates?", level: 2 },
-        { id: "how-calculated", title: "How Funding Rates Are Calculated", level: 2 },
-        { id: "impact", title: "Impact on Your Positions", level: 2 },
-        { id: "market-sentiment", title: "Funding Rates and Market Sentiment", level: 2 },
-        { id: "strategies", title: "Funding Rate Strategies", level: 2 },
-        { id: "across-exchanges", title: "Funding Rates Across Exchanges", level: 2 },
-        { id: "managing", title: "Managing Funding Rate Costs", level: 2 },
+        { id: "how-calculated", title: "how-calculated", level: 2 },
+        { id: "how-funding-rates-are-calculated", title: "How Funding Rates Are Calculated", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-your-positions", title: "Impact on Your Positions", level: 2 },
+        { id: "market-sentiment", title: "market-sentiment", level: 2 },
+        { id: "funding-rates-and-market-sentiment", title: "Funding Rates and Market Sentiment", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "funding-rate-strategies", title: "Funding Rate Strategies", level: 2 },
+        { id: "across-exchanges", title: "across-exchanges", level: 2 },
+        { id: "funding-rates-across-exchanges", title: "Funding Rates Across Exchanges", level: 2 },
+        { id: "managing", title: "managing", level: 2 },
+        { id: "managing-funding-rate-costs", title: "Managing Funding Rate Costs", level: 2 }
       ]}
       faqs={[
         { question: "How often are funding rates paid?", answer: "Most exchanges charge funding every 8 hours (at 00:00, 08:00, and 16:00 UTC). Some exchanges like dYdX charge hourly. The payment happens automatically if you hold a position at the funding timestamp." },

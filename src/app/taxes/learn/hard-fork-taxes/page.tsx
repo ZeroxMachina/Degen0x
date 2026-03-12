@@ -17,10 +17,14 @@ export default function HardForkTaxesPage() {
       readTime="7 min"
       intro="Hard forks occur when a blockchain splits into two separate chains, resulting in holders of the original token receiving an equivalent amount of the new forked token. The IRS has issued specific guidance on the tax treatment of hard forks, creating income recognition and cost basis considerations that affected crypto holders must understand. This guide covers the rules for both the receipt and subsequent sale of forked tokens."
       toc={[
-        { id: "what-is-hard-fork", title: "What Is a Hard Fork for Tax Purposes", level: 2 },
-        { id: "irs-guidance", title: "IRS Guidance on Hard Forks", level: 2 },
+        { id: "what-is-hard-fork", title: "what-is-hard-fork", level: 2 },
+        { id: "what-is-a-hard-fork-for-tax-purposes", title: "What Is a Hard Fork for Tax Purposes", level: 2 },
+        { id: "irs-guidance", title: "irs-guidance", level: 2 },
+        { id: "irs-guidance-on-hard-forks", title: "IRS Guidance on Hard Forks", level: 2 },
+        { id: "cost-basis-allocation", title: "cost-basis-allocation", level: 2 },
         { id: "cost-basis-allocation", title: "Cost Basis Allocation", level: 2 },
-        { id: "reporting-forks", title: "Reporting Fork Income", level: 2 },
+        { id: "reporting-forks", title: "reporting-forks", level: 2 },
+        { id: "reporting-fork-income", title: "Reporting Fork Income", level: 2 }
       ]}
       faqs={[
         { question: "Is receiving a hard fork token taxable?", answer: "According to IRS Revenue Ruling 2019-24, receiving cryptocurrency from a hard fork is taxable as ordinary income if you have dominion and control over the new tokens. The income is the fair market value of the new tokens at the time you can access and transfer them, not at the time of the fork itself." },

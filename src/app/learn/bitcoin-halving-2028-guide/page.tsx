@@ -17,11 +17,16 @@ export default function BitcoinHalving2028Page() {
       readTime="10 min read"
       intro="Bitcoin's next halving is scheduled for 2028, marking the fourth reduction in mining rewards since Bitcoin's inception. Halvings are programmed events that reduce the rate at which new Bitcoin enters circulation, fundamentally affecting mining economics and supply dynamics. Understanding how halvings work, their historical impact, and what 2028 might bring is essential for anyone invested in Bitcoin or the broader crypto market."
       toc={[
-        { id: "what-is-halving", title: "What Is Bitcoin Halving?", level: 2 },
-        { id: "halving-history", title: "Historical Halving Events", level: 2 },
-        { id: "mining-economics", title: "Mining Economics and Impact", level: 2 },
-        { id: "market-effects", title: "Market Effects of Halvings", level: 2 },
-        { id: "2028-expectations", title: "Expectations for 2028", level: 2 },
+        { id: "what-is-halving", title: "what-is-halving", level: 2 },
+        { id: "what-is-bitcoin-halving", title: "What Is Bitcoin Halving?", level: 2 },
+        { id: "halving-history", title: "halving-history", level: 2 },
+        { id: "historical-halving-events", title: "Historical Halving Events", level: 2 },
+        { id: "mining-economics", title: "mining-economics", level: 2 },
+        { id: "mining-economics-and-impact", title: "Mining Economics and Impact", level: 2 },
+        { id: "market-effects", title: "market-effects", level: 2 },
+        { id: "market-effects-of-halvings", title: "Market Effects of Halvings", level: 2 },
+        { id: "2028-expectations", title: "2028-expectations", level: 2 },
+        { id: "expectations-for-2028", title: "Expectations for 2028", level: 2 }
       ]}
       faqs={[
         {

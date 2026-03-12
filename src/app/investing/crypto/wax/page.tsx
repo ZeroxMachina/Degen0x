@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is WAX (WAXP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is WAX (WAXP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about WAX (WAXP), the blockchain for NFTs, gaming, and digital collectibles. Discover how it works, tokenomics, use cases, and how to buy WAXP.",
 };
@@ -17,12 +17,18 @@ export default function WaxPage() {
       readTime="7 min read"
       intro="WAX (Worldwide Asset eXchange) is a purpose-built blockchain for NFTs, digital collectibles, and gaming assets. Founded by the creators of OPSkins (one of the largest virtual asset marketplaces), WAX provides free transactions and a user-friendly environment optimized for high-volume NFT trading and blockchain gaming."
       toc={[
-        { id: "what-is", title: "What Is WAX?", level: 2 },
-        { id: "how-it-works", title: "How Does WAX Work?", level: 2 },
-        { id: "tokenomics", title: "WAXP Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy WAXP", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-wax", title: "What Is WAX?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-wax-work", title: "How Does WAX Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "waxp-tokenomics", title: "WAXP Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-waxp", title: "How to Buy WAXP", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

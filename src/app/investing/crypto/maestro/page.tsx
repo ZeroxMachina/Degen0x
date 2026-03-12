@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Maestro (MAESTRO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Maestro (MAESTRO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Maestro (MAESTRO), the multi-chain Telegram trading and sniper bot. Discover how it works, tokenomics, use cases, and how to buy MAESTRO.",
 };
 
 export default function MaestroPage() {
   return (
-    <LearnPageLayout title="What Is Maestro (MAESTRO)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Maestro is one of the pioneering Telegram trading bots in crypto, supporting automated trading, sniping, and portfolio management across Ethereum, BNB Chain, Solana, and multiple EVM chains. As one of the earliest entries in the Telegram bot trading space, Maestro helped define the category and has processed billions in cumulative trading volume." toc={[{id:"what-is",title:"What Is Maestro?",level:2},{id:"how-it-works",title:"How Does Maestro Work?",level:2},{id:"tokenomics",title:"MAESTRO Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy MAESTRO",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Maestro?",answer:"Maestro is a pioneering multi-chain Telegram trading bot for automated trading, sniping, and portfolio management across Ethereum, BNB Chain, Solana, and other EVM chains."},{question:"Where can I buy MAESTRO?",answer:"MAESTRO can be purchased on Uniswap or through the Maestro bot itself. It primarily trades against ETH on Ethereum DEXs."},{question:"Is Maestro a good investment?",answer:"Maestro is an established Telegram bot with consistent usage, but faces heavy competition from newer bots. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Maestro (MAESTRO)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Maestro is one of the pioneering Telegram trading bots in crypto, supporting automated trading, sniping, and portfolio management across Ethereum, BNB Chain, Solana, and multiple EVM chains. As one of the earliest entries in the Telegram bot trading space, Maestro helped define the category and has processed billions in cumulative trading volume." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-maestro", title: "What Is Maestro?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-maestro-work", title: "How Does Maestro Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "maestro-tokenomics", title: "MAESTRO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-maestro", title: "How to Buy MAESTRO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Maestro?",answer:"Maestro is a pioneering multi-chain Telegram trading bot for automated trading, sniping, and portfolio management across Ethereum, BNB Chain, Solana, and other EVM chains."},{question:"Where can I buy MAESTRO?",answer:"MAESTRO can be purchased on Uniswap or through the Maestro bot itself. It primarily trades against ETH on Ethereum DEXs."},{question:"Is Maestro a good investment?",answer:"Maestro is an established Telegram bot with consistent usage, but faces heavy competition from newer bots. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
       <h2 id="what-is">What Is Maestro?</h2>
       <p>Maestro launched as one of the first Telegram-based crypto trading bots and helped establish the entire category of in-chat token trading. The bot was initially focused on Ethereum token sniping and swap execution but expanded to support BNB Chain, Solana, Arbitrum, and other networks. Maestro&apos;s early mover advantage helped it build a large user base of active traders who rely on the bot for daily token trading across multiple chains.</p>
       <p>The platform offers a comprehensive suite of trading tools including sniper functionality for new token launches, whale wallet tracking, contract auditing, and portfolio analytics. Maestro&apos;s multi-chain router finds optimal trade execution across different DEXs on each supported chain. The bot&apos;s reliability and feature depth have maintained its position as a leading trading bot despite increasing competition.</p>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Finality in Blockchain? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Finality in Blockchain? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what finality means in blockchain, the different types of finality, how long finality takes on major networks, and why it matters for transactions.",
 };
 
@@ -11,7 +11,16 @@ export default function FinalityPage() {
   return (
     <LearnPageLayout title="What Is Finality?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="Finality in blockchain refers to the point at which a transaction is considered irreversible and permanently recorded on the ledger. Once a transaction reaches finality, it cannot be altered, reversed, or double-spent. Different blockchains achieve finality through different mechanisms and at different speeds, ranging from seconds to hours. Understanding finality is crucial for determining when you can safely consider a received payment as confirmed."
-      toc={[{ id: "definition", title: "What Is Finality?", level: 2 }, { id: "types-of-finality", title: "Types of Finality", level: 2 }, { id: "finality-by-chain", title: "Finality Across Chains", level: 2 }, { id: "why-finality-matters", title: "Why Finality Matters", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-finality", title: "What Is Finality?", level: 2 },
+        { id: "types-of-finality", title: "types-of-finality", level: 2 },
+        { id: "types-of-finality", title: "Types of Finality", level: 2 },
+        { id: "finality-by-chain", title: "finality-by-chain", level: 2 },
+        { id: "finality-across-chains", title: "Finality Across Chains", level: 2 },
+        { id: "why-finality-matters", title: "why-finality-matters", level: 2 },
+        { id: "why-finality-matters", title: "Why Finality Matters", level: 2 }
+      ]}
       faqs={[{ question: "How many confirmations do I need for finality?", answer: "It varies by chain. Bitcoin requires 6 confirmations (about 60 minutes) for strong probabilistic finality. Ethereum achieves finality in about 13 minutes (2 epochs). Solana has near-instant finality in about 400 milliseconds. Exchanges often require different confirmation counts depending on the asset and amount." },
         { question: "Can finalized transactions be reversed?", answer: "Practically, no. Reversing a finalized transaction would require reorganizing the blockchain, which on major networks like Bitcoin and Ethereum would require controlling a majority of mining/staking power — an economically infeasible attack. However, theoretical reversibility decreases asymptotically with more confirmations rather than reaching absolute zero." }]}
       relatedArticles={[{ title: "Consensus", href: "/learn/glossary/consensus", category: "Glossary" }, { title: "Epoch", href: "/learn/glossary/epoch", category: "Glossary" }, { title: "Consensus Mechanisms", href: "/learn/consensus-mechanisms", category: "Learn Crypto" }, { title: "What Is Blockchain?", href: "/learn/what-is-blockchain", category: "Learn Crypto" }]}

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Italy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Italy (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Italy. Find EUR-friendly platforms with SEPA support, competitive fees, and MiCA-compliant regulation.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesItaly() {
       readTime="8 min read"
       intro="Italy has emerged as one of Europe's most active crypto markets, with millions of users trading digital assets. The Organismo Agenti e Mediatori (OAM) maintains a register of virtual asset service providers, and Italian traders benefit from full access to EU-regulated exchanges. With SEPA transfers providing fast and affordable EUR deposits, Italian crypto enthusiasts have excellent options for buying and trading digital assets."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Italy", level: 2 },
-        { id: "regulation", title: "Crypto Regulation in Italy", level: 2 },
-        { id: "payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-italy", title: "Top Exchanges for Italy", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-italy", title: "Crypto Regulation in Italy", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "eur-payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
-        { id: "security-tips", title: "Security Tips for Italian Traders", level: 2 },
-        { id: "how-to-choose", title: "How to Choose the Right Exchange", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
+        { id: "security-tips-for-italian-traders", title: "Security Tips for Italian Traders", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "how-to-choose-the-right-exchange", title: "How to Choose the Right Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Italy?", answer: "Yes, cryptocurrency is legal in Italy. Crypto service providers must register with the OAM and comply with EU AML directives. The MiCA regulation provides additional framework for consumer protection." },

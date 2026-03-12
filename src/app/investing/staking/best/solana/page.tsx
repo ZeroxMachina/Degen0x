@@ -44,7 +44,7 @@ export default function BestSolanaStakingPage() {
     "@type": "Article",
     headline: `Best Solana Staking Platforms of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -60,7 +60,7 @@ export default function BestSolanaStakingPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Solana Staking Platforms of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -77,15 +77,15 @@ export default function BestSolanaStakingPage() {
             prioritizes network decentralization by distributing stake across hundreds of validators.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            Our top pick for maximum Solana staking yield is <strong className="text-white">Jito</strong>,
-            while <strong className="text-white">Marinade</strong> is the best choice for users who value
+            Our top pick for maximum Solana staking yield is <strong className="text-[var(--color-text)]">Jito</strong>,
+            while <strong className="text-[var(--color-text)]">Marinade</strong> is the best choice for users who value
             decentralization and flexible staking options. For beginners,{" "}
-            <strong className="text-white">Coinbase Staking</strong> provides the simplest SOL staking experience.
+            <strong className="text-[var(--color-text)]">Coinbase Staking</strong> provides the simplest SOL staking experience.
           </p>
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
           <div className="space-y-4">
             {solPlatforms.map((platform, index) => (
               <ProductCard
@@ -99,7 +99,7 @@ export default function BestSolanaStakingPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Solana Staking Overview</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Solana Staking Overview</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Solana uses a delegated proof-of-stake (DPoS) consensus mechanism where SOL holders can
             delegate their tokens to validators who secure the network. Unlike Ethereum, Solana does not

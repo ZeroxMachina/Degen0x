@@ -16,10 +16,14 @@ export default function NftLicensingRightsPage() {
       readTime="10 min"
       intro="Understanding what rights you actually receive when purchasing an NFT is crucial for collectors and commercial users. NFT licensing ranges from no commercial rights to full intellectual property transfer."
       toc={[
-        { id: "section-1", title: "NFT Ownership vs IP Rights", level: 2 },
-        { id: "section-2", title: "Common License Types", level: 2 },
-        { id: "section-3", title: "Commercial Use Rights", level: 2 },
-        { id: "section-4", title: "Protecting Your Rights", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "nft-ownership-vs-ip-rights", title: "NFT Ownership vs IP Rights", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "common-license-types", title: "Common License Types", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "commercial-use-rights", title: "Commercial Use Rights", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "protecting-your-rights", title: "Protecting Your Rights", level: 2 }
       ]}
       faqs={[
         { question: "Do I own the copyright when I buy an NFT?", answer: "Usually not. Purchasing an NFT typically transfers ownership of the token but not the underlying intellectual property. The creator retains copyright unless explicitly transferred. The specific rights granted depend on the project's license terms." },

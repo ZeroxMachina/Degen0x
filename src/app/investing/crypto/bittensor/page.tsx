@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Bittensor (TAO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Bittensor (TAO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Bittensor (TAO), the decentralized AI network. Discover how its subnet architecture works, tokenomics, and how to buy TAO tokens.",
 };
@@ -17,12 +17,18 @@ export default function BittensorPage() {
       readTime="8 min read"
       intro="Bittensor is a decentralized protocol that creates an open, incentivized marketplace for artificial intelligence. By rewarding AI models and compute providers through a subnet-based architecture, Bittensor aims to democratize AI development and create a network of specialized machine learning models. TAO is the native token that powers the Bittensor ecosystem."
       toc={[
-        { id: "what-is", title: "What Is Bittensor?", level: 2 },
-        { id: "how-it-works", title: "How Bittensor Works", level: 2 },
-        { id: "tokenomics", title: "Bittensor Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy TAO", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-bittensor", title: "What Is Bittensor?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-bittensor-works", title: "How Bittensor Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "bittensor-tokenomics", title: "Bittensor Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-tao", title: "How to Buy TAO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

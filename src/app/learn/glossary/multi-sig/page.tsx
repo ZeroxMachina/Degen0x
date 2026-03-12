@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Multi-Sig? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Multi-Sig? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what multi-signature wallets are, how they work, and why they are essential for securing crypto treasuries and organizations.",
 };
@@ -17,11 +17,16 @@ export default function MultiSigPage() {
       readTime="5 min"
       intro="A multi-sig (multi-signature) wallet requires multiple private keys to authorize a transaction, rather than a single key. Configured as 'm-of-n' (for example, 3-of-5), it requires m signatures from n designated key holders. Multi-sigs are the standard security model for DAO treasuries, protocol funds, and team-managed wallets, eliminating single points of failure and requiring collaborative authorization."
       toc={[
-        { id: "definition", title: "What Is Multi-Sig?", level: 2 },
-        { id: "how-it-works", title: "How Multi-Sig Works", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-multi-sig", title: "What Is Multi-Sig?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-multi-sig-works", title: "How Multi-Sig Works", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
         { id: "use-cases", title: "Use Cases", level: 2 },
-        { id: "popular-solutions", title: "Popular Multi-Sig Solutions", level: 2 },
-        { id: "why-it-matters", title: "Why Multi-Sig Matters", level: 2 },
+        { id: "popular-solutions", title: "popular-solutions", level: 2 },
+        { id: "popular-multi-sig-solutions", title: "Popular Multi-Sig Solutions", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-multi-sig-matters", title: "Why Multi-Sig Matters", level: 2 }
       ]}
       faqs={[
         {

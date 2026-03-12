@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bitstamp Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Bitstamp Review (${CURRENT_YEAR}) | degen0x`,
   description:
     "Full Bitstamp review covering fees, features, security, and supported countries. One of the oldest crypto exchanges analyzed.",
 };

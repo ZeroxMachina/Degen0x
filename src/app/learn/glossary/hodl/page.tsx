@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is HODL? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is HODL? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what HODL means, its origin story, and why it became the defining investment philosophy of the crypto community.",
 };
@@ -17,11 +17,16 @@ export default function HodlPage() {
       readTime="4 min"
       intro="HODL is crypto slang for holding your cryptocurrency rather than selling, regardless of market conditions. Originating from a misspelled 'hold' in a 2013 Bitcoin forum post, it has been retroactively interpreted as an acronym for 'Hold On for Dear Life.' HODL represents a long-term investment philosophy that rejects short-term trading in favor of conviction-based holding through volatility."
       toc={[
-        { id: "definition", title: "What Is HODL?", level: 2 },
-        { id: "origin", title: "Origin of HODL", level: 2 },
-        { id: "hodl-philosophy", title: "The HODL Philosophy", level: 2 },
-        { id: "hodl-vs-trading", title: "HODLing vs Trading", level: 2 },
-        { id: "why-it-matters", title: "Why HODL Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-hodl", title: "What Is HODL?", level: 2 },
+        { id: "origin", title: "origin", level: 2 },
+        { id: "origin-of-hodl", title: "Origin of HODL", level: 2 },
+        { id: "hodl-philosophy", title: "hodl-philosophy", level: 2 },
+        { id: "the-hodl-philosophy", title: "The HODL Philosophy", level: 2 },
+        { id: "hodl-vs-trading", title: "hodl-vs-trading", level: 2 },
+        { id: "hodling-vs-trading", title: "HODLing vs Trading", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-hodl-matters", title: "Why HODL Matters", level: 2 }
       ]}
       faqs={[
         {

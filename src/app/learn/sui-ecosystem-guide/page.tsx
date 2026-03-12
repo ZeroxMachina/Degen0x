@@ -17,11 +17,16 @@ export default function SuiEcosystemGuidePage() {
       readTime="8 min"
       intro="Sui is a high-performance Layer 1 blockchain that uses the Move programming language and an object-centric data model to achieve parallel transaction execution and sub-second finality. Built by former Meta engineers from the Diem project, Sui prioritizes user experience and developer productivity while delivering industry-leading performance."
       toc={[
-        { id: "overview", title: "Sui Overview", level: 2 },
-        { id: "technology", title: "Technology and Move", level: 2 },
-        { id: "defi", title: "DeFi Ecosystem", level: 2 },
-        { id: "gaming", title: "Gaming and Consumer", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "sui-overview", title: "Sui Overview", level: 2 },
+        { id: "technology", title: "technology", level: 2 },
+        { id: "technology-and-move", title: "Technology and Move", level: 2 },
+        { id: "defi", title: "defi", level: 2 },
+        { id: "defi-ecosystem", title: "DeFi Ecosystem", level: 2 },
+        { id: "gaming", title: "gaming", level: 2 },
+        { id: "gaming-and-consumer", title: "Gaming and Consumer", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What is the Move programming language?", answer: "Move is a programming language designed for safe resource management in blockchain applications. Originally developed at Meta for the Diem project, Move prevents common smart contract vulnerabilities through its resource-oriented type system, where digital assets cannot be accidentally duplicated or destroyed." },

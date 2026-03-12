@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Croatia (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Croatia (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Croatia. Find EUR-friendly platforms with SEPA support, low fees, and EU regulatory compliance for Croatian traders.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesCroatia() {
       readTime="7 min read"
       intro="Croatia joined the eurozone in January 2023, making it easier than ever for Croatian traders to access EUR-denominated crypto exchanges via SEPA transfers. The Croatian National Bank and HANFA (Croatian Financial Services Supervisory Agency) oversee financial regulation. With growing tech adoption and EU membership, Croatia offers a favorable environment for cryptocurrency trading."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Croatia", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-croatia", title: "Top Exchanges for Croatia", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "eur-payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Croatia?", answer: "Yes, cryptocurrency is legal in Croatia. The country follows EU AML directives and MiCA regulations as an EU member. HANFA oversees financial services including crypto providers." },

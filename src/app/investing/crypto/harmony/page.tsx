@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Harmony (ONE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Harmony (ONE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Harmony (ONE), the sharded blockchain for cross-chain interoperability. Discover how it works, tokenomics, use cases, and how to buy ONE.",
 };
@@ -17,12 +17,18 @@ export default function HarmonyPage() {
       readTime="7 min read"
       intro="Harmony is a sharded, EVM-compatible blockchain designed for scalability and cross-chain interoperability. Using effective proof-of-stake consensus and random sharding, Harmony aims to provide fast and low-cost transactions. The ONE token is used for staking, governance, and transaction fees across the network."
       toc={[
-        { id: "what-is", title: "What Is Harmony?", level: 2 },
-        { id: "how-it-works", title: "How Does Harmony Work?", level: 2 },
-        { id: "tokenomics", title: "ONE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ONE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-harmony", title: "What Is Harmony?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-harmony-work", title: "How Does Harmony Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "one-tokenomics", title: "ONE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-one", title: "How to Buy ONE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Treasury Management Guide (${CURRENT_YEAR}) - Crypto Business Treasury | CryptoDegen`,
+  title: `Treasury Management Guide (${CURRENT_YEAR}) - Crypto Business Treasury | degen0x`,
   description: `Learn how to manage a Web3 business or DAO treasury. Diversification strategies, multi-sig security, yield generation, reporting, and risk management best practices.`,
 };
 
@@ -16,10 +16,14 @@ export default function TreasuryManagementPage() {
       readTime="9 min"
       intro="Treasury management is arguably the most critical operational function for any Web3 business or DAO. A well-managed treasury ensures the organization can fund development, pay contributors, survive bear markets, and grow sustainably. This guide covers the strategies, tools, and best practices for managing crypto treasuries of any size."
       toc={[
-        { id: "security", title: "Treasury Security Fundamentals", level: 2 },
-        { id: "diversification", title: "Diversification Strategies", level: 2 },
-        { id: "yield", title: "Yield Generation", level: 2 },
-        { id: "reporting", title: "Reporting and Transparency", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "treasury-security-fundamentals", title: "Treasury Security Fundamentals", level: 2 },
+        { id: "diversification", title: "diversification", level: 2 },
+        { id: "diversification-strategies", title: "Diversification Strategies", level: 2 },
+        { id: "yield", title: "yield", level: 2 },
+        { id: "yield-generation", title: "Yield Generation", level: 2 },
+        { id: "reporting", title: "reporting", level: 2 },
+        { id: "reporting-and-transparency", title: "Reporting and Transparency", level: 2 }
       ]}
       faqs={[
         { question: "What percentage of treasury should be in stablecoins?", answer: "A common guideline is to hold 12 to 24 months of operating expenses in stablecoins or fiat equivalents. For a DAO spending $100,000 per month, that means $1.2M to $2.4M in stablecoins. The exact amount depends on your burn rate, revenue predictability, and risk tolerance. During bull markets, consider increasing stablecoin reserves to lock in gains and prepare for potential downturns." },

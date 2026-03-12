@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Kujira (KUJI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Kujira (KUJI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Kujira (KUJI), the Cosmos-based DeFi ecosystem for sustainable yield. Discover how it works, tokenomics, use cases, and how to buy KUJI.",
 };
@@ -17,12 +17,18 @@ export default function KujiraPage() {
       readTime="8 min read"
       intro="Kujira is a Cosmos-based Layer 1 blockchain focused on building a comprehensive DeFi ecosystem centered around sustainable, real-yield economics rather than inflationary token incentives. With products spanning liquidation markets, decentralized exchanges, lending, and stablecoin infrastructure, Kujira aims to democratize access to sophisticated DeFi strategies previously available only to whales."
       toc={[
-        { id: "what-is", title: "What Is Kujira?", level: 2 },
-        { id: "how-it-works", title: "How Does Kujira Work?", level: 2 },
-        { id: "tokenomics", title: "KUJI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy KUJI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-kujira", title: "What Is Kujira?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-kujira-work", title: "How Does Kujira Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "kuji-tokenomics", title: "KUJI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-kuji", title: "How to Buy KUJI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

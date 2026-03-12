@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is an Oracle? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is an Oracle? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what blockchain oracles are, how they bring real-world data on-chain, and why they are critical infrastructure for DeFi.",
 };
@@ -17,11 +17,16 @@ export default function OraclePage() {
       readTime="5 min"
       intro="A blockchain oracle is a service that provides smart contracts with external, real-world data. Since blockchains cannot natively access off-chain information, oracles bridge the gap by feeding data like asset prices, weather conditions, sports scores, and more onto the blockchain. Oracles are critical infrastructure for DeFi, insurance, and any smart contract that depends on real-world information."
       toc={[
-        { id: "definition", title: "What Is an Oracle?", level: 2 },
-        { id: "oracle-problem", title: "The Oracle Problem", level: 2 },
-        { id: "types", title: "Types of Oracles", level: 2 },
-        { id: "chainlink", title: "Chainlink and Oracle Networks", level: 2 },
-        { id: "why-it-matters", title: "Why Oracles Matter", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-an-oracle", title: "What Is an Oracle?", level: 2 },
+        { id: "oracle-problem", title: "oracle-problem", level: 2 },
+        { id: "the-oracle-problem", title: "The Oracle Problem", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-oracles", title: "Types of Oracles", level: 2 },
+        { id: "chainlink", title: "chainlink", level: 2 },
+        { id: "chainlink-and-oracle-networks", title: "Chainlink and Oracle Networks", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-oracles-matter", title: "Why Oracles Matter", level: 2 }
       ]}
       faqs={[
         {

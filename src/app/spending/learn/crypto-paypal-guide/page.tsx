@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Using Crypto on PayPal and Venmo (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Using Crypto on PayPal and Venmo (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to buy, sell, and spend cryptocurrency through PayPal and Venmo. Understand fees, supported coins, checkout integration, and limitations.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoPaypalGuidePage() {
       readTime="8 min"
       intro="PayPal and Venmo have brought cryptocurrency to hundreds of millions of mainstream users. Both platforms let you buy, sell, hold, and spend Bitcoin, Ethereum, Litecoin, and other cryptocurrencies directly within their apps. PayPal's Checkout with Crypto feature enables spending at millions of merchants, while Venmo lets you send crypto to friends. This guide covers how these platforms work, their fees, and their limitations compared to dedicated crypto services."
       toc={[
-        { id: "paypal-crypto", title: "PayPal Crypto Features", level: 2 },
-        { id: "venmo-crypto", title: "Venmo Crypto Features", level: 2 },
+        { id: "paypal-crypto", title: "paypal-crypto", level: 2 },
+        { id: "paypal-crypto-features", title: "PayPal Crypto Features", level: 2 },
+        { id: "venmo-crypto", title: "venmo-crypto", level: 2 },
+        { id: "venmo-crypto-features", title: "Venmo Crypto Features", level: 2 },
+        { id: "checkout-with-crypto", title: "checkout-with-crypto", level: 2 },
         { id: "checkout-with-crypto", title: "Checkout with Crypto", level: 2 },
-        { id: "fees-comparison", title: "Fees and Spread Comparison", level: 2 },
-        { id: "limitations", title: "Limitations and Alternatives", level: 2 },
+        { id: "fees-comparison", title: "fees-comparison", level: 2 },
+        { id: "fees-and-spread-comparison", title: "Fees and Spread Comparison", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-and-alternatives", title: "Limitations and Alternatives", level: 2 }
       ]}
       faqs={[
         { question: "Can I transfer crypto out of PayPal to my own wallet?", answer: "Yes, PayPal now supports transferring crypto to external wallets. You can send Bitcoin, Ethereum, Litecoin, and Bitcoin Cash to external blockchain addresses. This was a significant change from the original launch when crypto could only be held within PayPal. Transfer fees are minimal, though blockchain network fees apply." },

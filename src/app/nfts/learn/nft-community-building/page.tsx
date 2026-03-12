@@ -16,10 +16,14 @@ export default function NftCommunityBuildingPage() {
       readTime="10 min"
       intro="Community is the foundation of successful NFT projects. Building and nurturing an engaged community determines a project's longevity, floor price stability, and cultural impact across the NFT ecosystem."
       toc={[
-        { id: "section-1", title: "Community Fundamentals", level: 2 },
-        { id: "section-2", title: "Building Pre-Launch Community", level: 2 },
-        { id: "section-3", title: "Post-Mint Engagement", level: 2 },
-        { id: "section-4", title: "Long-Term Community Health", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "community-fundamentals", title: "Community Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "building-pre-launch-community", title: "Building Pre-Launch Community", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "post-mint-engagement", title: "Post-Mint Engagement", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "long-term-community-health", title: "Long-Term Community Health", level: 2 }
       ]}
       faqs={[
         { question: "Why is community important for NFT projects?", answer: "Community drives demand, maintains floor prices, creates cultural significance, and enables long-term project development. Projects with strong communities consistently outperform those relying solely on artwork or utility." },

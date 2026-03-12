@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Tunisia (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Tunisia (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchanges accessible in Tunisia. Find TND-friendly platforms with P2P support and trading options for Tunisian users.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesTunisia() {
       readTime="7 min read"
       intro="Tunisia has an emerging crypto community despite regulatory restrictions. The Banque Centrale de Tunisie has cautioned against crypto use, but the country was an early explorer of blockchain technology for its national currency. Tunisian traders primarily access crypto through P2P platforms. This guide covers the available options and regulatory landscape."
       toc={[
+        { id: "available-exchanges", title: "available-exchanges", level: 2 },
         { id: "available-exchanges", title: "Available Exchanges", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "TND Payment Methods", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "tnd-payment-methods", title: "TND Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing a Platform", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Tunisia?", answer: "The BCT has restricted crypto-related activities through financial institutions. Individual P2P trading exists in a gray area. Tunisia has explored blockchain for government applications, signaling nuanced institutional views." },

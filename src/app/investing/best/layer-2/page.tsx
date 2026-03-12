@@ -23,7 +23,7 @@ const layer2Tokens: Product[] = [
     pros: ["Highest L2 TVL", "Largest L2 DeFi ecosystem", "Orbit chain framework", "Ethereum-equivalent EVM"],
     cons: ["Token is governance-only", "Sequencer centralization", "Growing L2 competition"],
     bestFor: "Top L2 DeFi ecosystem",
-    affiliateUrl: "https://cryptodegen.com/go/buy-arbitrum",
+    affiliateUrl: "https://degen0x.com/go/buy-arbitrum",
     category: "layer-2",
   },
   {
@@ -34,7 +34,7 @@ const layer2Tokens: Product[] = [
     pros: ["Superchain ecosystem vision", "Public goods funding model", "OP Stack widely adopted", "Strong governance"],
     cons: ["Lower TVL than Arbitrum", "Sequencer centralization", "Token used for governance only"],
     bestFor: "OP Stack ecosystem exposure",
-    affiliateUrl: "https://cryptodegen.com/go/buy-optimism",
+    affiliateUrl: "https://degen0x.com/go/buy-optimism",
     category: "layer-2",
   },
   {
@@ -45,7 +45,7 @@ const layer2Tokens: Product[] = [
     pros: ["Multiple scaling solutions", "Strong enterprise partnerships", "zkEVM technology", "Large developer community"],
     cons: ["MATIC to POL migration complexity", "Competition from purpose-built L2s", "Fragmented ecosystem"],
     bestFor: "Enterprise-grade Ethereum scaling",
-    affiliateUrl: "https://cryptodegen.com/go/buy-polygon",
+    affiliateUrl: "https://degen0x.com/go/buy-polygon",
     category: "layer-2",
   },
   {
@@ -56,7 +56,7 @@ const layer2Tokens: Product[] = [
     pros: ["Advanced ZK technology", "STARK proofs (no trusted setup)", "Account abstraction native", "Growing ecosystem"],
     cons: ["Cairo language learning curve", "Lower TVL than optimistic L2s", "Slower ecosystem development"],
     bestFor: "ZK-rollup technology exposure",
-    affiliateUrl: "https://cryptodegen.com/go/buy-starknet",
+    affiliateUrl: "https://degen0x.com/go/buy-starknet",
     category: "layer-2",
   },
 ];
@@ -81,7 +81,7 @@ export default function BestLayer2Page() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Layer 2 Tokens for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -97,7 +97,7 @@ export default function BestLayer2Page() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Layer 2 Tokens for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Layer 2 Tokens for {CURRENT_YEAR}</h2>
         <div className="space-y-4">
           {layer2Tokens.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -106,7 +106,7 @@ export default function BestLayer2Page() {
       </section>
 
       <section id="what-are-l2s" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Are Layer 2 Solutions?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Are Layer 2 Solutions?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Layer 2 solutions process transactions off the Ethereum mainnet while inheriting its
           security guarantees. They batch hundreds or thousands of transactions together and
@@ -123,7 +123,7 @@ export default function BestLayer2Page() {
       </section>
 
       <section id="optimistic-vs-zk" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Optimistic vs ZK Rollups</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Optimistic vs ZK Rollups</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Optimistic rollups (Arbitrum, Optimism, Base) assume transactions are valid and use
           fraud proofs if challenged. They have a 7-day withdrawal period to Ethereum mainnet
@@ -139,7 +139,7 @@ export default function BestLayer2Page() {
       </section>
 
       <section id="investing-thesis" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">L2 Investment Thesis</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">L2 Investment Thesis</h2>
         <p className="text-[var(--color-text-secondary)]">
           The investment case for L2 tokens rests on the growing share of Ethereum activity
           migrating to Layer 2s. As L2s capture more of the fee revenue that currently goes to

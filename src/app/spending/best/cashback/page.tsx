@@ -115,7 +115,7 @@ export default function BestCashbackCardsPage() {
     "@type": "Article",
     headline: `Best Crypto Cashback Cards of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -134,7 +134,7 @@ export default function BestCashbackCardsPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Cashback Cards ({CURRENT_YEAR})
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -150,7 +150,7 @@ export default function BestCashbackCardsPage() {
             the best reward rates, the most flexible earning options, and the fewest strings attached.
             Whether you want to stack sats or earn altcoin rewards, there is a card that fits your strategy.
           </p>
-          <h2 className="text-xl font-bold text-white mt-8 mb-4">How We Ranked These Cards</h2>
+          <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">How We Ranked These Cards</h2>
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
             We prioritized effective cashback rate (accounting for fees and staking requirements), reward
             flexibility, ease of earning, and the long-term value proposition of each reward currency.
@@ -167,11 +167,11 @@ export default function BestCashbackCardsPage() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold">
                     {index + 1}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white">{card.name}</h3>
+                    <h3 className="text-lg font-semibold text-[var(--color-text)]">{card.name}</h3>
                     <div className="text-sm text-[var(--color-accent)]">{card.rating}/5</div>
                   </div>
                 </div>
@@ -225,33 +225,33 @@ export default function BestCashbackCardsPage() {
 
         {/* Cashback Strategy Tips */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Maximizing Your Crypto Cashback</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Maximizing Your Crypto Cashback</h2>
           <div className="space-y-4 text-[var(--color-text-secondary)]">
             <div className="flex items-start gap-3">
               <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
               <div>
-                <h3 className="text-white font-semibold">Use your crypto card for recurring bills</h3>
+                <h3 className="text-[var(--color-text)] font-semibold">Use your crypto card for recurring bills</h3>
                 <p className="text-sm">Set up your crypto card for subscriptions and monthly bills. This passive spending accumulates significant rewards over time without changing your habits.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
               <div>
-                <h3 className="text-white font-semibold">Calculate your effective reward rate</h3>
+                <h3 className="text-[var(--color-text)] font-semibold">Calculate your effective reward rate</h3>
                 <p className="text-sm">Factor in conversion spreads and fees. A 4% cashback card with a 2.5% spread only nets you 1.5% in real value. Cards with lower headline rates but zero fees can be more valuable.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
               <div>
-                <h3 className="text-white font-semibold">Consider the reward token long-term</h3>
+                <h3 className="text-[var(--color-text)] font-semibold">Consider the reward token long-term</h3>
                 <p className="text-sm">Earning 8% in a token that drops 50% is worse than earning 2% in Bitcoin. Evaluate the long-term prospects and liquidity of the reward cryptocurrency.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-[var(--color-primary)] font-bold text-lg">4.</span>
               <div>
-                <h3 className="text-white font-semibold">Stack multiple cards strategically</h3>
+                <h3 className="text-[var(--color-text)] font-semibold">Stack multiple cards strategically</h3>
                 <p className="text-sm">Use different cards for different categories. One card might be better for daily spending while another offers bonuses at specific merchants or for travel.</p>
               </div>
             </div>

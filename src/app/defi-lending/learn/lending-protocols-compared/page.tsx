@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Top DeFi Lending Protocols Compared (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Top DeFi Lending Protocols Compared (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the top DeFi lending protocols including Aave, Compound, MakerDAO, and more. Rates, features, security, and TVL analysis.",
 };
 
@@ -11,7 +11,16 @@ export default function LendingProtocolsComparedPage() {
   return (
     <LearnPageLayout title="Top DeFi Lending Protocols Compared" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="10 min read"
       intro="The DeFi lending ecosystem has matured significantly, with multiple battle-tested protocols competing across Ethereum and other chains. Each protocol offers different trade-offs in terms of rates, supported assets, risk management, and innovation. This comparison covers the leading protocols to help you choose the right platform for your lending and borrowing needs."
-      toc={[{ id: "tier-one", title: "Tier-One Protocols", level: 2 }, { id: "emerging", title: "Emerging Protocols", level: 2 }, { id: "chain-specific", title: "Chain-Specific Leaders", level: 2 }, { id: "selection-criteria", title: "How to Choose", level: 2 }]}
+      toc={[
+        { id: "tier-one", title: "tier-one", level: 2 },
+        { id: "tier-one-protocols", title: "Tier-One Protocols", level: 2 },
+        { id: "emerging", title: "emerging", level: 2 },
+        { id: "emerging-protocols", title: "Emerging Protocols", level: 2 },
+        { id: "chain-specific", title: "chain-specific", level: 2 },
+        { id: "chain-specific-leaders", title: "Chain-Specific Leaders", level: 2 },
+        { id: "selection-criteria", title: "selection-criteria", level: 2 },
+        { id: "how-to-choose", title: "How to Choose", level: 2 }
+      ]}
       faqs={[
         { question: "Which DeFi lending protocol is safest?", answer: "Aave and Compound have the longest track records and highest TVL, making them the most battle-tested. MakerDAO has operated since 2017. No protocol is risk-free, but these three have the strongest security histories among lending protocols." },
         { question: "Which offers the best rates?", answer: "Rates fluctuate constantly. Morpho often optimizes rates above Aave/Compound base rates. Newer protocols may offer higher incentivized rates but with more risk. Compare real-time rates on DeFiLlama for the most accurate comparison." },

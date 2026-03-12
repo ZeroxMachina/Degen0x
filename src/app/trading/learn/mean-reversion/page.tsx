@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Mean Reversion Trading Strategy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Mean Reversion Trading Strategy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn mean reversion trading for crypto. Profit when overextended prices revert to their average using Bollinger Bands, RSI, and statistical methods.",
 };
@@ -17,10 +17,14 @@ export default function MeanReversionPage() {
       readTime="8 min read"
       intro="Mean reversion is a trading strategy based on the statistical observation that prices tend to return to their average over time. When an asset moves significantly above or below its mean, mean reversion traders bet on a move back toward the average. This contrarian approach can be highly effective in crypto markets during certain conditions."
       toc={[
+        { id: "mean-reversion-basics", title: "mean-reversion-basics", level: 2 },
         { id: "mean-reversion-basics", title: "Mean Reversion Basics", level: 2 },
-        { id: "indicators-tools", title: "Indicators and Tools", level: 2 },
-        { id: "crypto-application", title: "Applying Mean Reversion to Crypto", level: 2 },
-        { id: "limitations", title: "Limitations and Risk Management", level: 2 },
+        { id: "indicators-tools", title: "indicators-tools", level: 2 },
+        { id: "indicators-and-tools", title: "Indicators and Tools", level: 2 },
+        { id: "crypto-application", title: "crypto-application", level: 2 },
+        { id: "applying-mean-reversion-to-crypto", title: "Applying Mean Reversion to Crypto", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-and-risk-management", title: "Limitations and Risk Management", level: 2 }
       ]}
       faqs={[
         { question: "Does mean reversion work in crypto?", answer: "Mean reversion works in crypto during ranging markets and for mature, large-cap assets with established trading ranges. It is less effective during strong trending periods or for new tokens with limited price history. The key is identifying when mean reversion conditions exist versus when momentum will persist." },

@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToSetUpNodePage() {
   return (
     <LearnPageLayout title="How to Set Up a Node" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Running a blockchain node gives you direct, trustless access to blockchain data without relying on third-party providers. Nodes verify transactions independently, contribute to network decentralization, and provide the infrastructure backbone for DeFi applications. This guide covers the practical steps for setting up and maintaining a blockchain node."
-      toc={[{ id: "why-run", title: "Why Run a Node?", level: 2 },{ id: "types", title: "Node Types", level: 2 },{ id: "requirements", title: "Hardware Requirements", level: 2 },{ id: "setup", title: "Setup Process", level: 2 },{ id: "maintenance", title: "Ongoing Maintenance", level: 2 }]}
+      toc={[
+        { id: "why-run", title: "why-run", level: 2 },
+        { id: "why-run-a-node", title: "Why Run a Node?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "node-types", title: "Node Types", level: 2 },
+        { id: "requirements", title: "requirements", level: 2 },
+        { id: "hardware-requirements", title: "Hardware Requirements", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "setup-process", title: "Setup Process", level: 2 },
+        { id: "maintenance", title: "maintenance", level: 2 },
+        { id: "ongoing-maintenance", title: "Ongoing Maintenance", level: 2 }
+      ]}
       faqs={[
         { question: "How much does it cost to run a node?", answer: "Hardware costs range from $500-$2,000 for a dedicated machine. Cloud hosting costs $50-$200+ per month. Storage is the primary ongoing cost — Ethereum full nodes require 1TB+ SSD with growing requirements. Power and internet costs are modest for home setups." },
         { question: "Do I earn rewards for running a node?", answer: "Running a non-validating node does not earn direct rewards but provides trustless blockchain access. To earn rewards on Ethereum, you need to also run a validator (requiring 32 ETH). Some networks do provide rewards for running specific node types like RPC nodes or archive nodes." },

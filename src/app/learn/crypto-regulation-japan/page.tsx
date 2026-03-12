@@ -25,13 +25,13 @@ export default function CryptoRegulationJapanPage() {
       readTime="14 min"
       intro="Japan was one of the first countries in the world to establish a comprehensive regulatory framework for cryptocurrency, recognizing Bitcoin as legal property in 2017. The Financial Services Agency (FSA) oversees crypto exchange licensing, while the Japan Virtual and Crypto Assets Exchange Association (JVCEA) serves as a self-regulatory body. Despite having one of the most mature regulatory frameworks globally, Japan faces challenges with high tax rates that have dampened market activity. The government's Web3 strategy signals a push to make Japan more competitive in the digital asset space."
       toc={[
-        { id: "regulatory-history", title: "Japan's Regulatory History", level: 2 },
-        { id: "fsa-oversight", title: "FSA Licensing and Oversight", level: 2 },
-        { id: "jvcea", title: "JVCEA Self-Regulation", level: 2 },
-        { id: "stablecoin-framework", title: "Stablecoin Regulation", level: 2 },
-        { id: "web3-strategy", title: "Japan's Web3 National Strategy", level: 2 },
-        { id: "tax-challenges", title: "Tax Challenges and Reform", level: 2 },
-        { id: "future-outlook", title: "Future Regulatory Outlook", level: 2 },
+        { id: "regulatory-history", title: "regulatory-history", level: 2 },
+        { id: "japan", title: "Japan", level: 2 },
+        { id: "s-web3-national-strategy", title: "s Web3 National Strategy", level: 2 },
+        { id: "tax-challenges", title: "tax-challenges", level: 2 },
+        { id: "tax-challenges-and-reform", title: "Tax Challenges and Reform", level: 2 },
+        { id: "future-outlook", title: "future-outlook", level: 2 },
+        { id: "future-regulatory-outlook", title: "Future Regulatory Outlook", level: 2 }
       ]}
       faqs={[
         {
@@ -58,12 +58,12 @@ export default function CryptoRegulationJapanPage() {
           question: "What is the JVCEA?",
           answer:
             "The Japan Virtual and Crypto Assets Exchange Association (JVCEA) is a certified self-regulatory organization recognized by the FSA. All registered crypto exchanges must be JVCEA members. The JVCEA sets rules for its members covering trading practices, listing standards, margin trading limits, advertising, and customer protection. It conducts regular inspections and can discipline member firms.",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "Crypto Taxes in Japan", href: "/taxes/learn/crypto-taxes-japan", category: "Taxes" },
         { title: "Singapore Crypto Regulation", href: "/learn/crypto-regulation-singapore", category: "Learn" },
-        { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation", category: "Learn" },
+        { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation", category: "Learn" }
       ]}
     >
       <h2 id="regulatory-history">Japan&apos;s Regulatory History</h2>

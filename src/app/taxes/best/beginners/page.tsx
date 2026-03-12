@@ -17,10 +17,14 @@ export default function BestBeginnersTaxPage() {
       readTime="7 min"
       intro="Filing crypto taxes for the first time can feel overwhelming, but the right software makes it manageable. Beginner-friendly crypto tax tools offer guided processes, clear explanations, and simple interfaces that walk you through reporting without requiring tax expertise. This guide identifies the best options for crypto tax beginners and explains the key features that make them accessible."
       toc={[
+        { id: "what-beginners-need", title: "what-beginners-need", level: 2 },
         { id: "what-beginners-need", title: "What Beginners Need", level: 2 },
-        { id: "top-picks", title: "Top Picks for Beginners", level: 2 },
-        { id: "getting-started", title: "Getting Started Guide", level: 2 },
-        { id: "common-mistakes", title: "Common Beginner Mistakes", level: 2 },
+        { id: "top-picks", title: "top-picks", level: 2 },
+        { id: "top-picks-for-beginners", title: "Top Picks for Beginners", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started-guide", title: "Getting Started Guide", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-beginner-mistakes", title: "Common Beginner Mistakes", level: 2 }
       ]}
       faqs={[
         { question: "Do I need to report crypto if I only bought and held?", answer: "In the US, simply buying and holding crypto is not a taxable event. However, you must answer yes to the crypto question on your tax return if you acquired any crypto during the year. Taxes only apply when you sell, trade, or receive crypto as income." },

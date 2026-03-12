@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Solana Investment Thesis (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The Solana Investment Thesis (${CURRENT_YEAR}) | degen0x`,
   description: "The Solana investment thesis explained. Why SOL is a contender, performance advantages, ecosystem growth, and risks facing the Solana network.",
 };
 
@@ -12,10 +12,14 @@ export default function SolanaInvestmentThesisPage() {
     <LearnPageLayout title="The Solana Investment Thesis" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="8 min read"
       intro="Solana has emerged as the leading alternative Layer 1 blockchain, known for its high throughput, low transaction costs, and growing ecosystem. The Solana investment thesis centers on the belief that a high-performance monolithic blockchain can capture significant market share from Ethereum's modular approach by offering a better user and developer experience. After surviving the FTX collapse and multiple network outages, Solana's resilience and recovery have strengthened the bull case."
       toc={[
-        { id: "performance", title: "Performance Advantages", level: 2 },
-        { id: "ecosystem", title: "Ecosystem Growth", level: 2 },
-        { id: "tokenomics", title: "SOL Tokenomics", level: 2 },
-        { id: "risks", title: "Risks and Challenges", level: 2 },
+        { id: "performance", title: "performance", level: 2 },
+        { id: "performance-advantages", title: "Performance Advantages", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
+        { id: "ecosystem-growth", title: "Ecosystem Growth", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "sol-tokenomics", title: "SOL Tokenomics", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 }
       ]}
       faqs={[
         { question: "Why invest in Solana over Ethereum?", answer: "Solana offers significantly faster transactions (400ms finality vs Ethereum's 12+ seconds) and dramatically lower fees (fractions of a cent vs dollars on Ethereum L1). The user experience is simpler because there are no Layer 2s to navigate. However, Solana makes different trade-offs on decentralization and has a shorter track record. Many investors hold both as complementary bets on different blockchain architectures." },

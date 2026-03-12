@@ -17,10 +17,14 @@ export default function LsdYieldStrategiesPage() {
       readTime="11 min"
       intro="Liquid Staking Derivatives (LSDs) like stETH, rETH, and cbETH have become foundational DeFi assets, enabling ETH holders to earn staking yield while maintaining liquidity for additional yield strategies. The LSD ecosystem supports a wide range of strategies from simple holding to complex leveraged positions, each adding incremental yield on top of the base staking return."
       toc={[
-        { id: "lsd-basics", title: "LSD Basics & Yield Sources", level: 2 },
-        { id: "lending-strategies", title: "LSD Lending Strategies", level: 2 },
-        { id: "lp-strategies", title: "LSD LP Strategies", level: 2 },
-        { id: "leveraged-lsd", title: "Leveraged LSD Strategies", level: 2 },
+        { id: "lsd-basics", title: "lsd-basics", level: 2 },
+        { id: "lsd-basics-yield-sources", title: "LSD Basics & Yield Sources", level: 2 },
+        { id: "lending-strategies", title: "lending-strategies", level: 2 },
+        { id: "lsd-lending-strategies", title: "LSD Lending Strategies", level: 2 },
+        { id: "lp-strategies", title: "lp-strategies", level: 2 },
+        { id: "lsd-lp-strategies", title: "LSD LP Strategies", level: 2 },
+        { id: "leveraged-lsd", title: "leveraged-lsd", level: 2 },
+        { id: "leveraged-lsd-strategies", title: "Leveraged LSD Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Which LSD has the best yield?", answer: "Base staking yields are similar across major LSDs (3-4%). Jito's jitoSOL may offer slightly higher yields from MEV. The real difference is in DeFi composability and incentive opportunities available for each token." },

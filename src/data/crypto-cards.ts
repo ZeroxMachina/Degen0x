@@ -22,7 +22,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "No annual fee; CRO staking required for higher tiers ($400–$400,000)",
     bestFor: "Crypto enthusiasts who want premium perks and high cashback",
-    affiliateUrl: "https://cryptodegen.com/go/crypto-com-visa",
+    affiliateUrl: "https://degen0x.com/go/crypto-com-visa",
     category: "crypto-cards",
     featured: true,
   },
@@ -47,7 +47,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "No annual fee; 2.49% crypto liquidation spread per transaction",
     bestFor: "Coinbase users who want to spend and earn crypto seamlessly",
-    affiliateUrl: "https://cryptodegen.com/go/coinbase-card",
+    affiliateUrl: "https://degen0x.com/go/coinbase-card",
     category: "crypto-cards",
     featured: true,
   },
@@ -72,7 +72,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "No annual fee; no transaction fees; BNB staking for higher cashback tiers",
     bestFor: "Binance users outside the US who hold BNB",
-    affiliateUrl: "https://cryptodegen.com/go/binance-card",
+    affiliateUrl: "https://degen0x.com/go/binance-card",
     category: "crypto-cards",
     featured: true,
   },
@@ -97,7 +97,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "No annual fee; variable APR on credit line (0%–13.9% based on loyalty tier)",
     bestFor: "HODLers who want liquidity without selling crypto",
-    affiliateUrl: "https://cryptodegen.com/go/nexo-card",
+    affiliateUrl: "https://degen0x.com/go/nexo-card",
     category: "crypto-cards",
   },
   {
@@ -121,7 +121,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "No annual fee; APR 18.24%–25.24% variable",
     bestFor: "Credit-building with crypto rewards on everyday spending",
-    affiliateUrl: "https://cryptodegen.com/go/gemini-card",
+    affiliateUrl: "https://degen0x.com/go/gemini-card",
     category: "crypto-cards",
   },
   {
@@ -145,7 +145,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "$10 card issuance fee; $5/mo inactivity fee; $3 domestic ATM fee",
     bestFor: "Spending Bitcoin and crypto at physical stores and online retailers",
-    affiliateUrl: "https://cryptodegen.com/go/bitpay-card",
+    affiliateUrl: "https://degen0x.com/go/bitpay-card",
     category: "crypto-cards",
   },
   {
@@ -169,7 +169,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "Free tier or Fold+ at $150/year for premium rewards",
     bestFor: "Bitcoin maximalists who want BTC rewards on every purchase",
-    affiliateUrl: "https://cryptodegen.com/go/fold-card",
+    affiliateUrl: "https://degen0x.com/go/fold-card",
     category: "crypto-cards",
   },
   {
@@ -193,7 +193,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "Free standard card; premium plans from $2.99/mo to $29.99/mo",
     bestFor: "Global travelers who want multi-currency crypto and fiat spending",
-    affiliateUrl: "https://cryptodegen.com/go/wirex-card",
+    affiliateUrl: "https://degen0x.com/go/wirex-card",
     category: "crypto-cards",
   },
   {
@@ -217,7 +217,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "Free tier available; Pro $14.99/mo; Premium $49.99/mo",
     bestFor: "Privacy-conscious users in Europe who value decentralized rewards",
-    affiliateUrl: "https://cryptodegen.com/go/plutus-card",
+    affiliateUrl: "https://degen0x.com/go/plutus-card",
     category: "crypto-cards",
   },
   {
@@ -241,7 +241,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "Card issuance fee varies by region; no annual fee",
     bestFor: "DeFi-native users who want to spend directly from their Safe wallet",
-    affiliateUrl: "https://cryptodegen.com/go/gnosis-card",
+    affiliateUrl: "https://degen0x.com/go/gnosis-card",
     category: "crypto-cards",
   },
   {
@@ -265,7 +265,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "No annual fee; standard foreign transaction rates apply",
     bestFor: "Active Bybit traders who want to spend exchange balances directly",
-    affiliateUrl: "https://cryptodegen.com/go/bybit-card",
+    affiliateUrl: "https://degen0x.com/go/bybit-card",
     category: "crypto-cards",
   },
   {
@@ -288,7 +288,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "No annual fee; SXP staking required for best cashback rates",
     bestFor: "SXP token holders seeking cashback on crypto spending",
-    affiliateUrl: "https://cryptodegen.com/go/swipe-card",
+    affiliateUrl: "https://degen0x.com/go/swipe-card",
     category: "crypto-cards",
   },
   {
@@ -312,7 +312,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "No annual fee on basic card; premium tiers available",
     bestFor: "Users who want a crypto-native alternative to traditional banking cards",
-    affiliateUrl: "https://cryptodegen.com/go/baanx-card",
+    affiliateUrl: "https://degen0x.com/go/baanx-card",
     category: "crypto-cards",
   },
   {
@@ -335,7 +335,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "No annual fee; HI token staking for premium tiers",
     bestFor: "Hi Dollar ecosystem participants who want card spending rewards",
-    affiliateUrl: "https://cryptodegen.com/go/hi-card",
+    affiliateUrl: "https://degen0x.com/go/hi-card",
     category: "crypto-cards",
   },
   {
@@ -359,7 +359,7 @@ export const cryptoCards: Product[] = [
     ],
     fees: "No annual fee; APR 17.99%–29.99% variable",
     bestFor: "US residents who want a simple Bitcoin rewards credit card",
-    affiliateUrl: "https://cryptodegen.com/go/rain-card",
+    affiliateUrl: "https://degen0x.com/go/rain-card",
     category: "crypto-cards",
   },
 ];

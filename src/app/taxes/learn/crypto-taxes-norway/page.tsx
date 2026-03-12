@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Norway (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Norway (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Norway. Learn about the 22% capital gains rate, Skatteetaten reporting, and Norwegian crypto tax rules.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesNorwayPage() {
       readTime="8 min read"
       intro="Norway taxes cryptocurrency gains at a 22% rate as capital income, administered by Skatteetaten (the Norwegian Tax Administration). Norway has established clear guidelines for crypto taxation, and Skatteetaten has been active in enforcement, obtaining data from exchanges and providing detailed guidance. Norwegian crypto investors benefit from relatively clear rules but must ensure accurate reporting of all transactions, including crypto-to-crypto trades."
       toc={[
-        { id: "tax-rate", title: "22% Capital Gains Rate", level: 2 },
+        { id: "tax-rate", title: "tax-rate", level: 2 },
+        { id: "22-capital-gains-rate", title: "22% Capital Gains Rate", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
         { id: "taxable-events", title: "Taxable Events", level: 2 },
-        { id: "wealth-tax", title: "Wealth Tax on Crypto", level: 2 },
-        { id: "reporting", title: "Reporting Requirements", level: 2 },
-        { id: "tips-tools", title: "Tips and Tools", level: 2 },
+        { id: "wealth-tax", title: "wealth-tax", level: 2 },
+        { id: "wealth-tax-on-crypto", title: "Wealth Tax on Crypto", level: 2 },
+        { id: "reporting", title: "reporting", level: 2 },
+        { id: "reporting-requirements", title: "Reporting Requirements", level: 2 },
+        { id: "tips-tools", title: "tips-tools", level: 2 },
+        { id: "tips-and-tools", title: "Tips and Tools", level: 2 }
       ]}
       faqs={[
         { question: "What is the crypto tax rate in Norway?", answer: "Crypto gains are taxed at 22% as capital income (kapitalinntekt) in Norway. This flat rate applies to net gains after deducting losses. Additionally, crypto holdings are subject to wealth tax at 1% for net wealth exceeding approximately 1.7 million NOK (with a higher rate of 1.1% above approximately 20 million NOK)." },

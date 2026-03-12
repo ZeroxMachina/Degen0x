@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Smart Contracts Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Smart Contracts Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how NFT smart contracts work, the differences between ERC-721 and ERC-1155, how to read contract code, and what to look for in NFT contract security.",
 };
 
@@ -11,7 +11,16 @@ export default function NftSmartContractsPage() {
   return (
     <LearnPageLayout title="NFT Smart Contracts Explained" categoryName="NFTs" categorySlug="nfts" readTime="10 min read"
       intro="Every NFT is created and managed by a smart contract deployed on a blockchain. Understanding how these contracts work gives you a significant advantage as a collector, trader, or creator. Smart contracts define the rules for minting, transferring, and managing NFTs, including royalty enforcement, access control, and metadata handling. This guide demystifies NFT smart contracts, explaining the major standards, key functions, and what to look for when evaluating a project's contract."
-      toc={[{ id: "nft-standards", title: "NFT Token Standards", level: 2 }, { id: "key-functions", title: "Key Contract Functions", level: 2 }, { id: "reading-contracts", title: "Reading NFT Contracts", level: 2 }, { id: "contract-security", title: "Contract Security", level: 2 }]}
+      toc={[
+        { id: "nft-standards", title: "nft-standards", level: 2 },
+        { id: "nft-token-standards", title: "NFT Token Standards", level: 2 },
+        { id: "key-functions", title: "key-functions", level: 2 },
+        { id: "key-contract-functions", title: "Key Contract Functions", level: 2 },
+        { id: "reading-contracts", title: "reading-contracts", level: 2 },
+        { id: "reading-nft-contracts", title: "Reading NFT Contracts", level: 2 },
+        { id: "contract-security", title: "contract-security", level: 2 },
+        { id: "contract-security", title: "Contract Security", level: 2 }
+      ]}
       faqs={[{ question: "What is the difference between ERC-721 and ERC-1155?", answer: "ERC-721 creates unique, one-of-a-kind tokens where each has a distinct token ID and owner. It is the standard for unique collectibles and art. ERC-1155 supports both unique tokens and fungible batches within the same contract, allowing one contract to manage multiple types of items. ERC-1155 is more gas-efficient for bulk operations and is popular in gaming where you need both unique and identical items." },
         { question: "Can a smart contract be changed after deployment?", answer: "Standard smart contracts are immutable once deployed. However, upgradeable proxy patterns allow the contract logic to be changed while maintaining the same address and token data. This flexibility is useful for bug fixes but introduces risk if the upgrade authority is centralized. Check whether an NFT contract uses upgradeable proxies and who controls the upgrade mechanism. Fully immutable contracts are safer but cannot be updated." },
         { question: "What are creator royalties technically?", answer: "On-chain royalties use standards like EIP-2981, which adds a royaltyInfo function to the contract. When marketplaces check this function, it returns the royalty recipient and percentage. However, marketplaces are not technically required to honor this. Some marketplaces (like Blur) make royalties optional. Newer approaches like operator filtering (used by OpenSea) attempt to enforce royalties at the contract level by blocking marketplaces that do not honor them." }]}

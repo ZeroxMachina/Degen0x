@@ -16,10 +16,14 @@ export default function NftMetadataGuidePage() {
       readTime="10 min"
       intro="NFT metadata defines everything about a token beyond its on-chain ownership record, including the image, attributes, description, and external links. How metadata is stored and structured dramatically affects the long-term durability of NFTs."
       toc={[
-        { id: "section-1", title: "Metadata Structure", level: 2 },
-        { id: "section-2", title: "Storage Solutions", level: 2 },
-        { id: "section-3", title: "Metadata Standards", level: 2 },
-        { id: "section-4", title: "Best Practices", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "metadata-structure", title: "Metadata Structure", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "storage-solutions", title: "Storage Solutions", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "metadata-standards", title: "Metadata Standards", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What is NFT metadata?", answer: "NFT metadata is the descriptive information attached to a token, including name, description, image URL, and attributes like traits and rarity. It is typically stored off-chain and referenced by the smart contract through a URI." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The BNB Chain Ecosystem Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The BNB Chain Ecosystem Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore the BNB Chain ecosystem including DeFi, the Binance connection, opBNB Layer 2, key projects, and the BNB token economics.",
 };
@@ -17,10 +17,14 @@ export default function BnbChainEcosystemPage() {
       readTime="9 min read"
       intro="BNB Chain (formerly Binance Smart Chain) is one of the largest blockchain ecosystems by user count and transaction volume. Developed by the team behind Binance, the world's largest cryptocurrency exchange, BNB Chain offers an EVM-compatible platform with low fees and fast transactions. Its close integration with the Binance exchange provides unmatched access to liquidity and users, making it a major hub for DeFi, gaming, and everyday crypto transactions."
       toc={[
-        { id: "bnb-overview", title: "BNB Chain Overview", level: 2 },
+        { id: "bnb-overview", title: "bnb-overview", level: 2 },
+        { id: "bnb-chain-overview", title: "BNB Chain Overview", level: 2 },
+        { id: "defi-ecosystem", title: "defi-ecosystem", level: 2 },
         { id: "defi-ecosystem", title: "DeFi Ecosystem", level: 2 },
-        { id: "opbnb-scaling", title: "opBNB and Scaling", level: 2 },
-        { id: "bnb-token", title: "BNB Token Economics", level: 2 },
+        { id: "opbnb-scaling", title: "opbnb-scaling", level: 2 },
+        { id: "opbnb-and-scaling", title: "opBNB and Scaling", level: 2 },
+        { id: "bnb-token", title: "bnb-token", level: 2 },
+        { id: "bnb-token-economics", title: "BNB Token Economics", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is SKALE (SKL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is SKALE (SKL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about SKALE (SKL), the gas-free Ethereum scaling network. Discover how it works, tokenomics, use cases, and how to buy SKL.",
 };
@@ -17,12 +17,18 @@ export default function SkalePage() {
       readTime="8 min read"
       intro="SKALE is an Ethereum-native multichain network that provides gas-free, high-throughput blockchain infrastructure for dApps. By offering zero gas fees to end users and elastic sidechains that connect back to Ethereum, SKALE aims to make blockchain applications as seamless as traditional web apps."
       toc={[
-        { id: "what-is", title: "What Is SKALE?", level: 2 },
-        { id: "how-it-works", title: "How Does SKALE Work?", level: 2 },
-        { id: "tokenomics", title: "SKL Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SKL", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-skale", title: "What Is SKALE?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-skale-work", title: "How Does SKALE Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "skl-tokenomics", title: "SKL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-skl", title: "How to Buy SKL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

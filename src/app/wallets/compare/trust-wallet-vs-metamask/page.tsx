@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Trust Wallet", slug: "trust-wallet", rating: 4.4, affiliateUrl: "https://cryptodegen.com/go/trust-wallet", features: { "Native Chains": "100+", "Bitcoin Support": "Yes (native)", "Solana Support": "Yes (native)", "Cosmos Support": "Yes (native)", "Mobile-First": "Yes", "dApp Browser": "Built-in (mobile)", "Staking": "Multi-chain staking", "Backed By": "Binance-affiliated" } },
-  { name: "MetaMask", slug: "metamask", rating: 4.5, affiliateUrl: "https://cryptodegen.com/go/metamask", features: { "Native Chains": "EVM chains only", "Bitcoin Support": "Via Snaps (limited)", "Solana Support": "Via Snaps (limited)", "Cosmos Support": "No", "Mobile-First": "No (browser extension)", "dApp Browser": "Browser extension", "Staking": "ETH staking only", "Backed By": "Consensys" } },
+  { name: "Trust Wallet", slug: "trust-wallet", rating: 4.4, affiliateUrl: "https://degen0x.com/go/trust-wallet", features: { "Native Chains": "100+", "Bitcoin Support": "Yes (native)", "Solana Support": "Yes (native)", "Cosmos Support": "Yes (native)", "Mobile-First": "Yes", "dApp Browser": "Built-in (mobile)", "Staking": "Multi-chain staking", "Backed By": "Binance-affiliated" } },
+  { name: "MetaMask", slug: "metamask", rating: 4.5, affiliateUrl: "https://degen0x.com/go/metamask", features: { "Native Chains": "EVM chains only", "Bitcoin Support": "Via Snaps (limited)", "Solana Support": "Via Snaps (limited)", "Cosmos Support": "No", "Mobile-First": "No (browser extension)", "dApp Browser": "Browser extension", "Staking": "ETH staking only", "Backed By": "Consensys" } },
 ];
 
 const features = ["Native Chains", "Bitcoin Support", "Solana Support", "Cosmos Support", "Mobile-First", "dApp Browser", "Staking", "Backed By"];
@@ -39,7 +39,7 @@ export default function TrustWalletVsMetamaskPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Trust Wallet vs MetaMask: Multi-Chain Perspective ({CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Trust Wallet vs MetaMask: Multi-Chain Perspective ({CURRENT_YEAR})</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           This comparison examines Trust Wallet and MetaMask from a multi-chain perspective,
           focusing on native chain support, mobile experience, and cross-ecosystem capabilities.
@@ -85,12 +85,12 @@ export default function TrustWalletVsMetamaskPage() {
         <h2 id="verdict">Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose Trust Wallet if:</strong> You hold assets on
+            <strong className="text-[var(--color-text)]">Choose Trust Wallet if:</strong> You hold assets on
             multiple non-EVM chains, prefer mobile-first crypto management, and want built-in
             multi-chain staking capabilities.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose MetaMask if:</strong> You primarily use
+            <strong className="text-[var(--color-text)]">Choose MetaMask if:</strong> You primarily use
             Ethereum and EVM L2s, prefer a browser extension workflow for DeFi, and want the
             widest dApp compatibility in the EVM ecosystem.
           </p>
@@ -101,11 +101,11 @@ export default function TrustWalletVsMetamaskPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/compare/metamask-vs-trust-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Compare</span>
-            <h3 className="font-semibold text-white text-sm">MetaMask vs Trust Wallet</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">MetaMask vs Trust Wallet</h3>
           </Link>
           <Link href="/wallets/learn/defi-wallet-guide" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Guide</span>
-            <h3 className="font-semibold text-white text-sm">DeFi Wallet Guide</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">DeFi Wallet Guide</h3>
           </Link>
         </div>
       </section>

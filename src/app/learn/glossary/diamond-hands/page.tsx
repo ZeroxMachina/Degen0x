@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Are Diamond Hands? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Are Diamond Hands? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what diamond hands means in crypto, its origins, the difference between conviction and stubbornness, and when holding makes sense.",
 };
@@ -17,10 +17,14 @@ export default function DiamondHandsPage() {
       readTime="4 min"
       intro="Diamond hands is crypto and stock market slang for an investor who holds their position through significant price volatility without selling, regardless of losses or pressure. The term implies strength and conviction — diamonds being the hardest material. It is the opposite of 'paper hands,' which describes someone who sells at the first sign of trouble."
       toc={[
-        { id: "definition", title: "What Are Diamond Hands?", level: 2 },
-        { id: "origin", title: "Origin and Culture", level: 2 },
-        { id: "when-smart", title: "When Diamond Hands Are Smart", level: 2 },
-        { id: "when-not", title: "When They Are Not", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-are-diamond-hands", title: "What Are Diamond Hands?", level: 2 },
+        { id: "origin", title: "origin", level: 2 },
+        { id: "origin-and-culture", title: "Origin and Culture", level: 2 },
+        { id: "when-smart", title: "when-smart", level: 2 },
+        { id: "when-diamond-hands-are-smart", title: "When Diamond Hands Are Smart", level: 2 },
+        { id: "when-not", title: "when-not", level: 2 },
+        { id: "when-they-are-not", title: "When They Are Not", level: 2 }
       ]}
       faqs={[
         {

@@ -35,7 +35,7 @@ const EXTRA_PAGES = [
   { title: "DCA Calculator", description: "Calculate returns for dollar-cost averaging into crypto", href: "/exchanges/tools/dca-calculator", category: "Tools", icon: "🧮" },
   { title: "Fee Calculator", description: "Compare exchange trading fees side by side", href: "/exchanges/tools/fee-calculator", category: "Tools", icon: "🧮" },
   { title: "Tax Calculator", description: "Estimate your crypto capital gains tax", href: "/taxes/calculators/tax-calculator", category: "Tools", icon: "🧮" },
-  { title: "About CryptoDegen", description: "Our mission, editorial standards and team", href: "/about", category: "Info", icon: "ℹ️" },
+  { title: "About degen0x", description: "Our mission, editorial standards and team", href: "/about", category: "Info", icon: "ℹ️" },
 ];
 
 const ALL_RESULTS = [...SEARCH_INDEX, ...EXTRA_PAGES];

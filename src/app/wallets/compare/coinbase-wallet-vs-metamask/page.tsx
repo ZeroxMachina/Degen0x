@@ -44,7 +44,7 @@ export default function CoinbaseWalletVsMetaMaskPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Coinbase Wallet vs MetaMask: Which Should You Use in {CURRENT_YEAR}?</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Coinbase Wallet vs MetaMask: Which Should You Use in {CURRENT_YEAR}?</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Coinbase Wallet and MetaMask are two of the most popular self-custody wallets. We compare their
           features, chain support, security, and overall experience to help you choose.
@@ -98,12 +98,12 @@ export default function CoinbaseWalletVsMetaMaskPage() {
         <h2 id="verdict">Our Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose Coinbase Wallet if:</strong> You use Coinbase exchange, want
+            <strong className="text-[var(--color-text)]">Choose Coinbase Wallet if:</strong> You use Coinbase exchange, want
             multi-ecosystem support (EVM + Solana + Bitcoin), prefer cloud backup, or value the easiest onboarding
             experience.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose MetaMask if:</strong> You need maximum EVM dApp compatibility,
+            <strong className="text-[var(--color-text)]">Choose MetaMask if:</strong> You need maximum EVM dApp compatibility,
             value open-source transparency, want the Snaps extension system, or are a DeFi power user who needs
             broad protocol support.
           </p>
@@ -114,11 +114,11 @@ export default function CoinbaseWalletVsMetaMaskPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/reviews/coinbase-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Review</span>
-            <h3 className="font-semibold text-white text-sm">Coinbase Wallet Full Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Coinbase Wallet Full Review</h3>
           </Link>
           <Link href="/wallets/reviews/metamask" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Review</span>
-            <h3 className="font-semibold text-white text-sm">MetaMask Full Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">MetaMask Full Review</h3>
           </Link>
         </div>
       </section>

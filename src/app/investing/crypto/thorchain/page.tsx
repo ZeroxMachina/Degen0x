@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is THORChain (RUNE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is THORChain (RUNE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about THORChain (RUNE), the cross-chain decentralized liquidity protocol. Discover how native asset swaps work, tokenomics, and how to buy RUNE.",
 };
@@ -17,12 +17,18 @@ export default function ThorchainPage() {
       readTime="8 min read"
       intro="THORChain is a decentralized cross-chain liquidity protocol that enables native asset swaps between different blockchains without wrapping or bridging. Users can swap real BTC for real ETH directly, without intermediaries or wrapped tokens. RUNE is the native settlement asset and the backbone of the THORChain network."
       toc={[
-        { id: "what-is", title: "What Is THORChain?", level: 2 },
-        { id: "how-it-works", title: "How THORChain Works", level: 2 },
-        { id: "tokenomics", title: "THORChain Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy RUNE", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-thorchain", title: "What Is THORChain?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-thorchain-works", title: "How THORChain Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "thorchain-tokenomics", title: "THORChain Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-rune", title: "How to Buy RUNE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

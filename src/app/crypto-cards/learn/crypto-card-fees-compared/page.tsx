@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Card Fees Compared (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Card Fees Compared (${CURRENT_YEAR}) | degen0x`,
   description: "Compare fees across major crypto debit and credit cards. Understand conversion spreads, annual fees, ATM charges, and hidden costs to find the most cost-effective card.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoCardFeesComparedPage() {
       readTime="8 min"
       intro="Crypto card fees can significantly impact the value you get from your card. While many cards advertise zero annual fees, the real costs hide in conversion spreads, ATM withdrawal fees, inactivity charges, and foreign transaction markups. This guide provides a transparent comparison of fees across all major crypto cards so you can make an informed choice."
       toc={[
-        { id: "conversion-fees", title: "Conversion Spreads and Fees", level: 2 },
-        { id: "annual-monthly", title: "Annual and Monthly Fees", level: 2 },
-        { id: "atm-fees", title: "ATM Withdrawal Fees", level: 2 },
-        { id: "foreign-transaction", title: "Foreign Transaction Fees", level: 2 },
-        { id: "hidden-costs", title: "Hidden Costs to Watch For", level: 2 },
+        { id: "conversion-fees", title: "conversion-fees", level: 2 },
+        { id: "conversion-spreads-and-fees", title: "Conversion Spreads and Fees", level: 2 },
+        { id: "annual-monthly", title: "annual-monthly", level: 2 },
+        { id: "annual-and-monthly-fees", title: "Annual and Monthly Fees", level: 2 },
+        { id: "atm-fees", title: "atm-fees", level: 2 },
+        { id: "atm-withdrawal-fees", title: "ATM Withdrawal Fees", level: 2 },
+        { id: "foreign-transaction", title: "foreign-transaction", level: 2 },
+        { id: "foreign-transaction-fees", title: "Foreign Transaction Fees", level: 2 },
+        { id: "hidden-costs", title: "hidden-costs", level: 2 },
+        { id: "hidden-costs-to-watch-for", title: "Hidden Costs to Watch For", level: 2 }
       ]}
       faqs={[
         { question: "Which crypto card has the lowest fees overall?", answer: "Binance Card has zero transaction fees and no annual fee, making it the lowest-cost option where available. Crypto.com has no annual fee and competitive conversion rates. Coinbase Card charges no fee when spending USDC. The lowest-cost card depends on your spending patterns and location." },

@@ -129,7 +129,7 @@ export default function GasFeeTrackerPage() {
       />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">Gas Fee Tracker</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Gas Fee Tracker</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
           Track current gas fees across major blockchain networks. Use this tool to find the cheapest time
           and network for your transactions.
@@ -145,7 +145,7 @@ export default function GasFeeTrackerPage() {
           <select
             value={selectedNetwork}
             onChange={(e) => setSelectedNetwork(e.target.value)}
-            className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+            className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
           >
             <option value="all">All Networks</option>
             {networks.map((n) => (
@@ -162,7 +162,7 @@ export default function GasFeeTrackerPage() {
           <select
             value={speedFilter}
             onChange={(e) => setSpeedFilter(e.target.value as SpeedFilter)}
-            className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+            className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
           >
             <option value="all">All Speeds</option>
             <option value="slow">Slow</option>
@@ -184,7 +184,7 @@ export default function GasFeeTrackerPage() {
                 className="w-3 h-3 rounded-full"
                 style={{ backgroundColor: network.color }}
               />
-              <h3 className="text-lg font-semibold text-white">{network.name}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)]">{network.name}</h3>
               <span className="text-xs text-[var(--color-text-secondary)] ml-auto">
                 {network.symbol}
               </span>
@@ -220,11 +220,11 @@ export default function GasFeeTrackerPage() {
             <div className="mt-4 pt-4 border-t border-[var(--color-border)]">
               <div className="flex justify-between items-center mb-1">
                 <span className="text-xs text-[var(--color-text-secondary)]">Avg Tx Cost</span>
-                <span className="text-xs font-medium text-white">{network.avgTxCostUsd}</span>
+                <span className="text-xs font-medium text-[var(--color-text)]">{network.avgTxCostUsd}</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-xs text-[var(--color-text-secondary)]">Block Time</span>
-                <span className="text-xs font-medium text-white">{network.blockTime}</span>
+                <span className="text-xs font-medium text-[var(--color-text)]">{network.blockTime}</span>
               </div>
             </div>
           </div>
@@ -233,16 +233,16 @@ export default function GasFeeTrackerPage() {
 
       {/* Cost Comparison Table */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Transaction Cost Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Transaction Cost Comparison</h2>
         <div className="overflow-x-auto rounded-xl border border-[var(--color-border)]">
           <table className="w-full">
             <thead>
               <tr className="bg-[var(--color-bg-card)]">
-                <th className="px-4 py-3 text-left text-sm font-semibold text-white">Network</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-white">Simple Transfer</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-white">Token Swap</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-white">NFT Mint</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-white">Block Time</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Network</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Simple Transfer</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Token Swap</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">NFT Mint</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Block Time</th>
               </tr>
             </thead>
             <tbody>
@@ -256,7 +256,7 @@ export default function GasFeeTrackerPage() {
                 { name: "Solana", transfer: "$0.0001", swap: "$0.001", nft: "$0.002", block: "~0.4 sec" },
               ].map((row) => (
                 <tr key={row.name} className="border-t border-[var(--color-border)]">
-                  <td className="px-4 py-3 text-sm font-medium text-white">{row.name}</td>
+                  <td className="px-4 py-3 text-sm font-medium text-[var(--color-text)]">{row.name}</td>
                   <td className="px-4 py-3 text-sm text-[var(--color-text-secondary)]">{row.transfer}</td>
                   <td className="px-4 py-3 text-sm text-[var(--color-text-secondary)]">{row.swap}</td>
                   <td className="px-4 py-3 text-sm text-[var(--color-text-secondary)]">{row.nft}</td>
@@ -273,31 +273,31 @@ export default function GasFeeTrackerPage() {
 
       {/* Tips Section */}
       <section>
-        <h2 className="text-2xl font-bold text-white mb-4">Tips to Save on Gas Fees</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Tips to Save on Gas Fees</h2>
         <div className="grid md:grid-cols-2 gap-4">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Use Layer 2 Networks</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Use Layer 2 Networks</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Arbitrum, Optimism, and Base offer the same Ethereum security at a fraction of the cost.
               Bridge your assets to L2 and save 90-99% on transaction fees.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Time Your Transactions</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Time Your Transactions</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Ethereum gas fees are lowest during weekends and off-peak hours (UTC late night).
               Non-urgent transactions can save 50% or more by waiting for low-fee periods.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Batch Transactions</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Batch Transactions</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               If you need to make multiple transactions, batch them into a single transaction using
               tools like Safe&apos;s transaction builder to pay gas only once.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Set Custom Gas Limits</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Set Custom Gas Limits</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Most wallets let you set custom gas prices. For non-urgent transactions, set a lower gas
               price and wait for the network to process it during a quieter period.

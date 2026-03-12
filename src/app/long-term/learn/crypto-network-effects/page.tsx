@@ -16,10 +16,14 @@ export default function CryptoNetworkEffectsPage() {
       readTime="10 min"
       intro="Network effects are among the most powerful value drivers in cryptocurrency, where the utility and value of a network increases exponentially with each additional participant, creating winner-take-most dynamics in protocol adoption."
       toc={[
-        { id: "section-1", title: "Network Effects Explained", level: 2 },
-        { id: "section-2", title: "Types of Crypto Network Effects", level: 2 },
-        { id: "section-3", title: "Measuring Network Strength", level: 2 },
-        { id: "section-4", title: "Investment Applications", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "network-effects-explained", title: "Network Effects Explained", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "types-of-crypto-network-effects", title: "Types of Crypto Network Effects", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "measuring-network-strength", title: "Measuring Network Strength", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "investment-applications", title: "Investment Applications", level: 2 }
       ]}
       faqs={[
         { question: "What are network effects in crypto?", answer: "Network effects occur when each additional user or participant makes the network more valuable for all existing users. In crypto, this manifests as increased liquidity, more developer building on the platform, broader merchant acceptance, and growing ecosystem utility. Bitcoin's network effect as money grows with each new holder, merchant, and payment processor that adopts it." },

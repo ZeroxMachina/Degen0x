@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Arweave (AR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Arweave (AR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Arweave (AR), the permanent data storage blockchain. Discover how it works, tokenomics, use cases, and how to buy AR tokens.",
 };
@@ -17,12 +17,18 @@ export default function ArweavePage() {
       readTime="8 min read"
       intro="Arweave is a decentralized storage protocol that enables permanent data storage through a one-time payment model. Unlike traditional cloud storage, Arweave guarantees that data will be stored forever using a novel blockchain-like structure called the blockweave. AR is the native token used to pay for storage and incentivize miners."
       toc={[
-        { id: "what-is", title: "What Is Arweave?", level: 2 },
-        { id: "how-it-works", title: "How Arweave Works", level: 2 },
-        { id: "tokenomics", title: "Arweave Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy Arweave", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-arweave", title: "What Is Arweave?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-arweave-works", title: "How Arweave Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "arweave-tokenomics", title: "Arweave Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-arweave", title: "How to Buy Arweave", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

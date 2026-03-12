@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Cross-Exchange Arbitrage Strategies (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Cross-Exchange Arbitrage Strategies (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about cross-exchange crypto arbitrage. Spatial arbitrage, triangular arbitrage, risks, tools, and whether arbitrage is still profitable.",
 };
 
@@ -16,13 +16,20 @@ export default function CrossExchangeArbitrage() {
       readTime="9 min read"
       intro="Cross-exchange arbitrage exploits price differences for the same asset across different trading venues. When Bitcoin trades at $60,000 on one exchange and $60,100 on another, arbitrageurs profit by buying on the cheaper exchange and selling on the more expensive one. While conceptually simple, profitable arbitrage requires speed, capital, and sophisticated execution. This guide explains the strategies, tools, and realities of crypto arbitrage."
       toc={[
-        { id: "what-is-arbitrage", title: "What Is Crypto Arbitrage?", level: 2 },
-        { id: "types", title: "Types of Arbitrage", level: 2 },
-        { id: "execution", title: "Execution Mechanics", level: 2 },
-        { id: "costs", title: "Hidden Costs and Friction", level: 2 },
-        { id: "tools", title: "Arbitrage Tools and Software", level: 2 },
-        { id: "risks", title: "Risks and Challenges", level: 2 },
-        { id: "realistic-assessment", title: "Is Arbitrage Still Profitable?", level: 2 },
+        { id: "what-is-arbitrage", title: "what-is-arbitrage", level: 2 },
+        { id: "what-is-crypto-arbitrage", title: "What Is Crypto Arbitrage?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-arbitrage", title: "Types of Arbitrage", level: 2 },
+        { id: "execution", title: "execution", level: 2 },
+        { id: "execution-mechanics", title: "Execution Mechanics", level: 2 },
+        { id: "costs", title: "costs", level: 2 },
+        { id: "hidden-costs-and-friction", title: "Hidden Costs and Friction", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "arbitrage-tools-and-software", title: "Arbitrage Tools and Software", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 },
+        { id: "realistic-assessment", title: "realistic-assessment", level: 2 },
+        { id: "is-arbitrage-still-profitable", title: "Is Arbitrage Still Profitable?", level: 2 }
       ]}
       faqs={[
         { question: "How much capital do I need for arbitrage?", answer: "Meaningful arbitrage requires significant capital because profit margins are very thin (often 0.1-0.5% per trade). With $10,000 in capital, a 0.2% margin yields only $20 per trade. Professional arbitrageurs operate with $100,000+ to make the economics work." },

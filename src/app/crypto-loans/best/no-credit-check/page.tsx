@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best No Credit Check Crypto Loans (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best No Credit Check Crypto Loans (${CURRENT_YEAR}) | degen0x`,
   description: "Borrow against crypto without credit checks or credit score requirements. Compare platforms offering instant, permissionless crypto-backed loans.",
 };
 
@@ -16,10 +16,14 @@ export default function NoCreditCheckLoansPage() {
       readTime="8 min read"
       intro="One of the biggest advantages of crypto-backed loans is that they do not require credit checks. Because your cryptocurrency serves as collateral, lenders focus on collateral value rather than your credit history. This makes crypto loans accessible to anyone with crypto holdings, regardless of credit score or financial history."
       toc={[
-        { id: "how-it-works", title: "How No-Credit-Check Loans Work", level: 2 },
-        { id: "best-platforms", title: "Best No-Credit-Check Platforms", level: 2 },
-        { id: "defi-advantage", title: "DeFi: Truly Permissionless", level: 2 },
-        { id: "considerations", title: "Key Considerations", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-no-credit-check-loans-work", title: "How No-Credit-Check Loans Work", level: 2 },
+        { id: "best-platforms", title: "best-platforms", level: 2 },
+        { id: "best-no-credit-check-platforms", title: "Best No-Credit-Check Platforms", level: 2 },
+        { id: "defi-advantage", title: "defi-advantage", level: 2 },
+        { id: "defi-truly-permissionless", title: "DeFi: Truly Permissionless", level: 2 },
+        { id: "considerations", title: "considerations", level: 2 },
+        { id: "key-considerations", title: "Key Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Do any crypto loans check your credit score?", answer: "CeFi platforms require KYC but typically do not perform credit checks. DeFi platforms require neither KYC nor credit checks. Some newer protocols experimenting with undercollateralized lending may use on-chain credit scoring." },

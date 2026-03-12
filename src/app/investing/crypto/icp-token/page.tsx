@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Internet Computer Token (ICP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Internet Computer Token (ICP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Internet Computer Token (ICP), the governance token of the Internet Computer blockchain. Discover ICP tokenomics and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function IcpTokenPage() {
       readTime="8 min read"
       intro="Internet Computer Token (ICP) is the native utility and governance token of the Internet Computer Protocol, a blockchain network developed by the DFINITY Foundation that aims to extend the functionality of the internet by hosting smart contracts and applications at web speed. ICP is used for governance through the Network Nervous System, conversion to cycles for computation, and staking."
       toc={[
-        { id: "what-is", title: "What Is Internet Computer Token?", level: 2 },
-        { id: "how-it-works", title: "How Does Internet Computer Work?", level: 2 },
-        { id: "tokenomics", title: "ICP Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ICP", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-internet-computer-token", title: "What Is Internet Computer Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-internet-computer-work", title: "How Does Internet Computer Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "icp-tokenomics", title: "ICP Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-icp", title: "How to Buy ICP", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Internet Computer Token?", answer: "ICP is the governance and utility token of the Internet Computer blockchain by DFINITY. It powers governance through the NNS, converts to cycles for computation, and is staked by neurons for network governance participation." },

@@ -17,11 +17,16 @@ export default function WhatIsAHashPage() {
       readTime="7 min"
       intro="A hash is a fixed-length string of characters produced by a mathematical function that takes any input data and converts it into a unique digital fingerprint. Cryptographic hashing is the backbone of blockchain technology — it secures transactions, links blocks together, verifies data integrity, and powers the mining process that creates new Bitcoin."
       toc={[
+        { id: "what-is-hashing", title: "what-is-hashing", level: 2 },
         { id: "what-is-hashing", title: "What Is Hashing", level: 2 },
-        { id: "properties", title: "Key Properties of Hash Functions", level: 2 },
-        { id: "blockchain-role", title: "Hashing in Blockchain", level: 2 },
-        { id: "algorithms", title: "Common Hash Algorithms", level: 2 },
-        { id: "practical-uses", title: "Practical Uses of Hashing", level: 2 },
+        { id: "properties", title: "properties", level: 2 },
+        { id: "key-properties-of-hash-functions", title: "Key Properties of Hash Functions", level: 2 },
+        { id: "blockchain-role", title: "blockchain-role", level: 2 },
+        { id: "hashing-in-blockchain", title: "Hashing in Blockchain", level: 2 },
+        { id: "algorithms", title: "algorithms", level: 2 },
+        { id: "common-hash-algorithms", title: "Common Hash Algorithms", level: 2 },
+        { id: "practical-uses", title: "practical-uses", level: 2 },
+        { id: "practical-uses-of-hashing", title: "Practical Uses of Hashing", level: 2 }
       ]}
       faqs={[
         { question: "Can a hash be reversed?", answer: "No. Cryptographic hash functions are one-way functions — you cannot derive the original input from the hash output. This property is called pre-image resistance and is fundamental to blockchain security. The only way to find an input that produces a specific hash is through brute-force guessing." },

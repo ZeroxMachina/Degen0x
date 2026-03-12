@@ -47,7 +47,7 @@ export default function BestCryptoCardsPage() {
     "@type": "Article",
     headline: `15 Best Crypto Cards of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -65,7 +65,7 @@ export default function BestCryptoCardsPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           15 Best Crypto Cards of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -83,18 +83,18 @@ export default function BestCryptoCardsPage() {
             rewards earned, evaluating fee structures, and testing customer support.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            Our top pick for most people is the <strong className="text-white">Crypto.com Visa</strong> for
+            Our top pick for most people is the <strong className="text-[var(--color-text)]">Crypto.com Visa</strong> for
             its unmatched combination of cashback rates, premium perks, and global availability. For
-            US residents seeking a credit card, the <strong className="text-white">Rain Card</strong> delivers
+            US residents seeking a credit card, the <strong className="text-[var(--color-text)]">Rain Card</strong> delivers
             simple Bitcoin rewards with no annual fee. And for Bitcoin maximalists who want BTC on
-            every swipe, the <strong className="text-white">Fold Card</strong> turns everyday spending into
+            every swipe, the <strong className="text-[var(--color-text)]">Fold Card</strong> turns everyday spending into
             a Bitcoin accumulation strategy.
           </p>
         </div>
 
         {/* Rankings */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
           <div className="space-y-4">
             {rankedCards.map((card, index) => (
               <ProductCard
@@ -109,7 +109,7 @@ export default function BestCryptoCardsPage() {
 
         {/* Detailed Reviews Summary */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">
             Quick Summaries
           </h2>
           <div className="space-y-6">
@@ -118,7 +118,7 @@ export default function BestCryptoCardsPage() {
                 key={card.slug}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6"
               >
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-xl font-bold text-[var(--color-text)] mb-2">
                   {index + 1}. {card.name} &mdash; Best for {card.bestFor}
                 </h3>
                 <p className="text-[var(--color-text-secondary)] mb-4">
@@ -169,7 +169,7 @@ export default function BestCryptoCardsPage() {
                   </a>
                   <a
                     href={`/crypto-cards/reviews/${card.slug}`}
-                    className="px-4 py-2 rounded-lg border border-[var(--color-border)] text-white text-sm font-medium hover:bg-[var(--color-bg)]/50 transition-colors"
+                    className="px-4 py-2 rounded-lg border border-[var(--color-border)] text-[var(--color-text)] text-sm font-medium hover:bg-[var(--color-bg)]/50 transition-colors"
                   >
                     Read Full Review
                   </a>
@@ -181,7 +181,7 @@ export default function BestCryptoCardsPage() {
 
         {/* Methodology */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             We evaluate each crypto card across six key categories, each weighted based on
             importance to the average cardholder:
@@ -196,7 +196,7 @@ export default function BestCryptoCardsPage() {
               { title: "User Experience (5%)", desc: "App quality, card management features, customer support responsiveness, and ease of activation." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}
@@ -205,7 +205,7 @@ export default function BestCryptoCardsPage() {
 
         {/* Related Pages */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Explore by Category</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Explore by Category</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { title: "Best Cashback Cards", href: "/crypto-cards/best/cashback" },
@@ -220,7 +220,7 @@ export default function BestCryptoCardsPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >
-                <span className="text-white font-semibold">{link.title}</span>
+                <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                   View rankings &rarr;
                 </span>

@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Manta Token (MANTA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Manta Token (MANTA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Manta Token (MANTA), the modular L2 ecosystem for ZK applications. Discover how it works, tokenomics, use cases, and how to buy MANTA.",
 };
 
 export default function MantaTokenPage() {
   return (
-    <LearnPageLayout title="What Is Manta Token (MANTA)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Manta Network (MANTA) is a modular ecosystem for zero-knowledge applications, consisting of Manta Pacific (an L2 on Ethereum) and Manta Atlantic (on Polkadot). The MANTA token powers governance, gas fees, and staking across the Manta ecosystem." toc={[{id:"what-is",title:"What Is Manta Token?",level:2},{id:"how-it-works",title:"How Does Manta Work?",level:2},{id:"tokenomics",title:"MANTA Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy MANTA",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Manta Token?",answer:"MANTA is the native token of Manta Network, a modular ecosystem for ZK applications on Ethereum and Polkadot. It is used for gas, governance, and staking."},{question:"Where can I buy MANTA?",answer:"MANTA is available on Binance, OKX, and other major exchanges, as well as DEXes on Manta Pacific."},{question:"Is Manta a good investment?",answer:"Manta offers ZK-focused L2 infrastructure, but competes with many L2s and needs to grow adoption. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Manta Token (MANTA)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Manta Network (MANTA) is a modular ecosystem for zero-knowledge applications, consisting of Manta Pacific (an L2 on Ethereum) and Manta Atlantic (on Polkadot). The MANTA token powers governance, gas fees, and staking across the Manta ecosystem." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-manta-token", title: "What Is Manta Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-manta-work", title: "How Does Manta Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "manta-tokenomics", title: "MANTA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-manta", title: "How to Buy MANTA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Manta Token?",answer:"MANTA is the native token of Manta Network, a modular ecosystem for ZK applications on Ethereum and Polkadot. It is used for gas, governance, and staking."},{question:"Where can I buy MANTA?",answer:"MANTA is available on Binance, OKX, and other major exchanges, as well as DEXes on Manta Pacific."},{question:"Is Manta a good investment?",answer:"Manta offers ZK-focused L2 infrastructure, but competes with many L2s and needs to grow adoption. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
       <h2 id="what-is">What Is Manta Token?</h2>
       <p>Manta Network is a modular blockchain ecosystem designed for zero-knowledge applications. Manta Pacific is an EVM-compatible L2 on Ethereum that uses Celestia for data availability, providing low-cost transactions for ZK-enabled dApps. The ecosystem also includes Manta Atlantic on Polkadot for programmable ZK credentials and identity solutions.</p>
       <p>The MANTA token unifies both networks, serving as the gas token, governance instrument, and staking asset across the Manta ecosystem.</p>

@@ -16,11 +16,16 @@ export default function ArgentinaExchangesPage() {
       readTime="10 min"
       intro="Argentina has one of the highest crypto adoption rates globally, driven largely by persistent inflation and currency devaluation. Stablecoins like USDT and USDC serve as a crucial store of value for millions of Argentinians, and crypto exchanges have become essential financial infrastructure. This guide covers the best platforms for Argentine traders."
       toc={[
-        { id: "why-crypto", title: "Why Crypto Matters in Argentina", level: 2 },
-        { id: "regulation", title: "Regulatory Environment", level: 2 },
-        { id: "top-exchanges", title: "Top Exchanges for Argentine Users", level: 2 },
-        { id: "stablecoins", title: "Stablecoin Access & Dollar Peg", level: 2 },
-        { id: "tips", title: "Tips for Argentine Traders", level: 2 },
+        { id: "why-crypto", title: "why-crypto", level: 2 },
+        { id: "why-crypto-matters-in-argentina", title: "Why Crypto Matters in Argentina", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulatory-environment", title: "Regulatory Environment", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-argentine-users", title: "Top Exchanges for Argentine Users", level: 2 },
+        { id: "stablecoins", title: "stablecoins", level: 2 },
+        { id: "stablecoin-access-dollar-peg", title: "Stablecoin Access & Dollar Peg", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-argentine-traders", title: "Tips for Argentine Traders", level: 2 }
       ]}
       faqs={[
         {

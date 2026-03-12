@@ -122,7 +122,7 @@ export default function GrantsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Web3 Grants Programs ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -139,16 +139,16 @@ export default function GrantsPage() {
           the most active grant programs to help you find the right funding source for your project.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          The <strong className="text-white">Ethereum Foundation</strong> remains the largest and most
-          established program, while <strong className="text-white">Gitcoin Grants</strong> offers a
+          The <strong className="text-[var(--color-text)]">Ethereum Foundation</strong> remains the largest and most
+          established program, while <strong className="text-[var(--color-text)]">Gitcoin Grants</strong> offers a
           unique community-driven quadratic funding model. For teams that have already shipped,{" "}
-          <strong className="text-white">Optimism RetroPGF</strong> rewards proven impact retroactively
+          <strong className="text-[var(--color-text)]">Optimism RetroPGF</strong> rewards proven impact retroactively
           with substantial funding rounds.
         </p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Grants Programs</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Grants Programs</h2>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -162,33 +162,33 @@ export default function GrantsPage() {
       </section>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Tips for Getting Funded</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Tips for Getting Funded</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Build first, then apply</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Build first, then apply</h3>
               <p className="text-sm">Applications with working prototypes or prior contributions are significantly more competitive than ideas alone. Ship a minimum viable product before seeking grant funding.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Align with ecosystem priorities</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Align with ecosystem priorities</h3>
               <p className="text-sm">Each grant program has specific focus areas. Research what each ecosystem is actively funding and frame your project around those priorities.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Define clear milestones</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Define clear milestones</h3>
               <p className="text-sm">Break your project into measurable deliverables with realistic timelines. Grant reviewers need to see that you can execute, not just ideate.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">4.</span>
             <div>
-              <h3 className="text-white font-semibold">Engage the community</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Engage the community</h3>
               <p className="text-sm">Active participation in the ecosystem through governance, forums, and social channels builds credibility and relationships with grant reviewers.</p>
             </div>
           </div>

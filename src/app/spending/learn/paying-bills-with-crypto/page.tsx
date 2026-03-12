@@ -17,10 +17,14 @@ export default function PayingBillsWithCryptoPage() {
       readTime="9 min"
       intro="Paying monthly bills with cryptocurrency is now realistic thanks to platforms like BitPay and crypto debit cards. This guide covers every method for converting digital assets into bill payments, including tax implications and best practices for managing recurring expenses."
       toc={[
-        { id: "methods", title: "Bill Payment Methods", level: 2 },
-        { id: "supported-bills", title: "Supported Bill Types", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Process", level: 2 },
-        { id: "taxes", title: "Tax Considerations", level: 2 },
+        { id: "methods", title: "methods", level: 2 },
+        { id: "bill-payment-methods", title: "Bill Payment Methods", level: 2 },
+        { id: "supported-bills", title: "supported-bills", level: 2 },
+        { id: "supported-bill-types", title: "Supported Bill Types", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-process", title: "Step-by-Step Process", level: 2 },
+        { id: "taxes", title: "taxes", level: 2 },
+        { id: "tax-considerations", title: "Tax Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Can I pay my mortgage with Bitcoin?", answer: "Some mortgage servicers accept crypto-funded payments through BitPay. You can also use a crypto debit card if your servicer accepts card payments." },

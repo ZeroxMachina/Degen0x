@@ -71,7 +71,7 @@ export default function CanadaExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in Canada ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -88,7 +88,7 @@ export default function CanadaExchangesPage() {
           that support CAD deposits via Interac e-Transfer. Here are the best options ranked
           by fees, security, and features.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Canadian Regulatory Framework</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Canadian Regulatory Framework</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           The Canadian Securities Administrators (CSA) require crypto trading platforms to
           register as Restricted Dealers. Each province and territory has its own securities
@@ -96,7 +96,7 @@ export default function CanadaExchangesPage() {
           Reports Analysis Centre) handles anti-money laundering compliance. This dual regulatory
           framework provides strong consumer protections.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Key Considerations for Canadian Traders</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Key Considerations for Canadian Traders</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Canadian traders should prioritize exchanges registered with the CSA, support for
           Interac e-Transfer for free CAD deposits, competitive CAD trading pairs, and tax
@@ -118,22 +118,22 @@ export default function CanadaExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods for Canadian Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods for Canadian Users</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Interac e-Transfer</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Interac e-Transfer</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Free or near-free on most exchanges. Instant or within minutes. The preferred method for Canadians.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Bank Wire Transfer</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Bank Wire Transfer</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Fees vary by bank. Takes 1-3 business days. Good for large deposits.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Debit Card</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Debit Card</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant purchase. 2-4% fee. Available on Coinbase, Crypto.com, and others.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Pre-Authorized Debit</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Pre-Authorized Debit</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Set up recurring purchases automatically. Available on select exchanges for DCA strategies.</p>
           </div>
         </div>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Collateral Types in DeFi Lending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Collateral Types in DeFi Lending (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to collateral types in DeFi lending. Understand how different assets perform as collateral, LTV ratios, and choosing the right collateral for your loans.",
 };
 
@@ -11,7 +11,16 @@ export default function CollateralTypesGuidePage() {
   return (
     <LearnPageLayout title="Collateral Types in DeFi Lending" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="9 min read"
       intro="The type of collateral you use in DeFi lending directly impacts your loan terms, liquidation risk, and capital efficiency. Different assets offer different LTV ratios, liquidation thresholds, and risk profiles. From major tokens like ETH and BTC to liquid staking derivatives, stablecoins, LP tokens, and real-world assets, the collateral landscape is expanding rapidly. Understanding these options helps you choose the optimal collateral for your specific needs."
-      toc={[{ id: "major-assets", title: "Major Crypto Assets as Collateral", level: 2 }, { id: "lst-collateral", title: "Liquid Staking Token Collateral", level: 2 }, { id: "stablecoin-collateral", title: "Stablecoin Collateral", level: 2 }, { id: "exotic-collateral", title: "Exotic and Emerging Collateral", level: 2 }]}
+      toc={[
+        { id: "major-assets", title: "major-assets", level: 2 },
+        { id: "major-crypto-assets-as-collateral", title: "Major Crypto Assets as Collateral", level: 2 },
+        { id: "lst-collateral", title: "lst-collateral", level: 2 },
+        { id: "liquid-staking-token-collateral", title: "Liquid Staking Token Collateral", level: 2 },
+        { id: "stablecoin-collateral", title: "stablecoin-collateral", level: 2 },
+        { id: "stablecoin-collateral", title: "Stablecoin Collateral", level: 2 },
+        { id: "exotic-collateral", title: "exotic-collateral", level: 2 },
+        { id: "exotic-and-emerging-collateral", title: "Exotic and Emerging Collateral", level: 2 }
+      ]}
       faqs={[
         { question: "Which collateral type gives the highest LTV?", answer: "Stablecoins offer the highest LTV ratios (up to 90%+) because their value is relatively stable. Among volatile assets, ETH and BTC offer the highest LTVs (75-82.5%) due to their deep liquidity and lower volatility relative to altcoins. Correlated pairs in eMode can reach 90%+." },
         { question: "Can I use LP tokens as collateral?", answer: "Some protocols accept LP tokens as collateral. Aave V3 supports certain LP tokens in specific markets. Specialized protocols are more likely to accept LP tokens. Using LP tokens as collateral adds impermanent loss risk on top of standard liquidation risk." },

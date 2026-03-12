@@ -17,11 +17,16 @@ export default function BestInstitutionalExchangesPage() {
       readTime="11 min"
       intro="Institutional investors require crypto platforms that meet stringent compliance, custody, and reporting standards. This guide covers the exchanges and platforms best suited for hedge funds, asset managers, family offices, and corporate treasuries entering the digital asset space."
       toc={[
+        { id: "institutional-requirements", title: "institutional-requirements", level: 2 },
         { id: "institutional-requirements", title: "Institutional Requirements", level: 2 },
-        { id: "top-picks", title: "Top Institutional Platforms", level: 2 },
+        { id: "top-picks", title: "top-picks", level: 2 },
+        { id: "top-institutional-platforms", title: "Top Institutional Platforms", level: 2 },
+        { id: "custody-solutions", title: "custody-solutions", level: 2 },
         { id: "custody-solutions", title: "Custody Solutions", level: 2 },
-        { id: "compliance-reporting", title: "Compliance and Reporting", level: 2 },
-        { id: "execution-services", title: "Execution and Prime Services", level: 2 },
+        { id: "compliance-reporting", title: "compliance-reporting", level: 2 },
+        { id: "compliance-and-reporting", title: "Compliance and Reporting", level: 2 },
+        { id: "execution-services", title: "execution-services", level: 2 },
+        { id: "execution-and-prime-services", title: "Execution and Prime Services", level: 2 }
       ]}
       faqs={[
         { question: "What do institutions look for in a crypto exchange?", answer: "Institutions prioritize regulatory compliance, institutional-grade custody (qualified custodian status), comprehensive insurance, audit trails, reporting capabilities, and dedicated account management. Execution quality and fee structures are also critical." },

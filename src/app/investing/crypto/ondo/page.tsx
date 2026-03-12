@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Ondo Finance (ONDO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Ondo Finance (ONDO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Ondo Finance (ONDO), the real-world asset tokenization platform. Discover how it works, tokenomics, and how to buy ONDO tokens.",
 };
@@ -17,12 +17,18 @@ export default function OndoPage() {
       readTime="8 min read"
       intro="Ondo Finance is a leading real-world asset (RWA) tokenization platform that brings institutional-grade financial products on-chain. By tokenizing U.S. Treasuries and other fixed-income instruments, Ondo bridges traditional finance and DeFi, making yield-bearing assets accessible to crypto-native users. ONDO is the governance token of the protocol."
       toc={[
-        { id: "what-is", title: "What Is Ondo Finance?", level: 2 },
-        { id: "how-it-works", title: "How Ondo Works", level: 2 },
-        { id: "tokenomics", title: "Ondo Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ONDO", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ondo-finance", title: "What Is Ondo Finance?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-ondo-works", title: "How Ondo Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ondo-tokenomics", title: "Ondo Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ondo", title: "How to Buy ONDO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

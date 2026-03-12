@@ -7,7 +7,18 @@ export const metadata: Metadata = { title: `What Is Proof of Reserves? (${CURREN
 export default function Page() {
   return (
     <LearnPageLayout title="What Is Proof of Reserves?" categoryName="Crypto Exchanges" categorySlug="exchanges" readTime="8 min" intro="Proof of reserves (PoR) has become a critical trust indicator for crypto exchanges following the FTX collapse. It is a method for exchanges to demonstrate cryptographically that they hold sufficient assets to cover all customer deposits. Understanding PoR helps you evaluate exchange trustworthiness."
-      toc={[{id:"what-is-por",title:"What Is Proof of Reserves",level:2},{id:"how-it-works",title:"How Proof of Reserves Works",level:2},{id:"why-ftx",title:"Why FTX Made PoR Essential",level:2},{id:"limitations",title:"Limitations of PoR",level:2},{id:"which-exchanges",title:"Which Exchanges Publish PoR",level:2}]}
+      toc={[
+        { id: "what-is-por", title: "what-is-por", level: 2 },
+        { id: "what-is-proof-of-reserves", title: "What Is Proof of Reserves", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-proof-of-reserves-works", title: "How Proof of Reserves Works", level: 2 },
+        { id: "why-ftx", title: "why-ftx", level: 2 },
+        { id: "why-ftx-made-por-essential", title: "Why FTX Made PoR Essential", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-of-por", title: "Limitations of PoR", level: 2 },
+        { id: "which-exchanges", title: "which-exchanges", level: 2 },
+        { id: "which-exchanges-publish-por", title: "Which Exchanges Publish PoR", level: 2 }
+      ]}
       faqs={[{question:"Does proof of reserves mean an exchange is safe?",answer:"PoR demonstrates that assets exist to cover deposits at a point in time. It does not guarantee ongoing solvency, prevent mismanagement, or prove that liabilities are fully accounted for. It is one important indicator among many."},{question:"How can I verify my own account in a PoR?",answer:"Merkle tree-based PoR systems let you verify your account balance is included in the proof using a verification tool on the exchange's website. Your specific holdings are hashed for privacy."},{question:"How often should exchanges publish PoR?",answer:"Monthly PoR attestations are the emerging standard. Some exchanges publish more frequently. Less frequent than quarterly should raise questions."}]}
       relatedArticles={[{title:"Exchange Security Checklist",href:"/exchanges/learn/exchange-security-checklist",category:"Exchanges"},{title:"Exchange Insurance Funds",href:"/exchanges/learn/exchange-insurance-funds",category:"Exchanges"},{title:"Exchange Hacks History",href:"/exchanges/learn/exchange-hacks-history",category:"Exchanges"}]}
     >

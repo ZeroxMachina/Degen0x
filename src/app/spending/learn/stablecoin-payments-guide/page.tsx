@@ -17,11 +17,16 @@ export default function StablecoinPaymentsGuidePage() {
       readTime="9 min"
       intro="Stablecoins combine the speed and global reach of cryptocurrency with the price stability of traditional currency. Using USDC, USDT, or DAI for payments eliminates the volatility concerns that have historically limited crypto adoption for everyday transactions."
       toc={[
-        { id: "why-stablecoins", title: "Why Stablecoins for Payments", level: 2 },
-        { id: "best-networks", title: "Best Networks for Stablecoin Payments", level: 2 },
-        { id: "use-cases", title: "Payment Use Cases", level: 2 },
+        { id: "why-stablecoins", title: "why-stablecoins", level: 2 },
+        { id: "why-stablecoins-for-payments", title: "Why Stablecoins for Payments", level: 2 },
+        { id: "best-networks", title: "best-networks", level: 2 },
+        { id: "best-networks-for-stablecoin-payments", title: "Best Networks for Stablecoin Payments", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "payment-use-cases", title: "Payment Use Cases", level: 2 },
+        { id: "merchant-acceptance", title: "merchant-acceptance", level: 2 },
         { id: "merchant-acceptance", title: "Merchant Acceptance", level: 2 },
-        { id: "tax-advantages", title: "Tax Advantages", level: 2 },
+        { id: "tax-advantages", title: "tax-advantages", level: 2 },
+        { id: "tax-advantages", title: "Tax Advantages", level: 2 }
       ]}
       faqs={[
         { question: "Which stablecoin is best for payments?", answer: "USDC is generally the best choice for payments due to its regulatory compliance, wide acceptance, and availability on multiple low-fee networks like Solana, Polygon, and Stellar." },

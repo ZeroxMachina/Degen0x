@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Stablecoin Depeg Insurance (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Stablecoin Depeg Insurance (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about stablecoin depeg insurance. Protect your holdings against stablecoin depegging events with DeFi insurance protocols.",
 };
 
@@ -11,7 +11,16 @@ export default function StablecoinDepegInsurancePage() {
   return (
     <LearnPageLayout title="Stablecoin Depeg Insurance" categoryName="Crypto Insurance" categorySlug="insurance" readTime="8 min read"
       intro="Stablecoin depeg events, where a stablecoin loses its peg to its reference asset, have caused billions in losses. From UST's catastrophic collapse to USDC's brief depeg during the SVB crisis, these events demonstrate that stablecoins are not truly risk-free. Depeg insurance products have emerged to protect holders against these tail risks, offering automated payouts when stablecoins trade below defined thresholds."
-      toc={[{ id: "depeg-history", title: "History of Stablecoin Depegs", level: 2 }, { id: "coverage-types", title: "Types of Depeg Coverage", level: 2 }, { id: "providers", title: "Depeg Insurance Providers", level: 2 }, { id: "evaluation", title: "Evaluating Depeg Insurance", level: 2 }]}
+      toc={[
+        { id: "depeg-history", title: "depeg-history", level: 2 },
+        { id: "history-of-stablecoin-depegs", title: "History of Stablecoin Depegs", level: 2 },
+        { id: "coverage-types", title: "coverage-types", level: 2 },
+        { id: "types-of-depeg-coverage", title: "Types of Depeg Coverage", level: 2 },
+        { id: "providers", title: "providers", level: 2 },
+        { id: "depeg-insurance-providers", title: "Depeg Insurance Providers", level: 2 },
+        { id: "evaluation", title: "evaluation", level: 2 },
+        { id: "evaluating-depeg-insurance", title: "Evaluating Depeg Insurance", level: 2 }
+      ]}
       faqs={[
         { question: "What causes stablecoin depegs?", answer: "Depegs can result from: insufficient reserves (algorithmic stablecoins like UST), reserve asset problems (USDC during SVB), massive sell pressure exceeding market maker capacity, smart contract exploits, regulatory actions, or loss of confidence. Different stablecoin types have different depeg risk profiles." },
         { question: "How does depeg insurance work?", answer: "Depeg insurance pays out when a stablecoin trades below a predefined threshold for a specified period. For example, a USDC depeg policy might trigger if USDC trades below $0.95 for more than 1 hour. Payouts can be parametric (automatic based on oracle data) or claims-based." },

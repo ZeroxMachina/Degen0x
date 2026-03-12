@@ -10,7 +10,7 @@ const product = {
   pros: ["In-person tax professional support", "Established tax filing brand", "Includes all income types", "Audit representation available"],
   cons: ["Very limited crypto-specific features", "No automated exchange imports", "Requires manual data entry or CSV", "Expensive for complex crypto portfolios"],
   bestFor: "Users who prefer in-person tax professional assistance and have simple crypto activity",
-  affiliateUrl: "https://cryptodegen.com/go/hrblock",
+  affiliateUrl: "https://degen0x.com/go/hrblock",
   category: "taxes",
 };
 

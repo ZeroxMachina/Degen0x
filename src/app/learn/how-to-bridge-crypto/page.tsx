@@ -12,11 +12,16 @@ export default function HowToBridgeCryptoPage() {
   return (
     <LearnPageLayout title="How to Bridge Crypto" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Bridging allows you to transfer assets between different blockchain networks — for example, moving ETH from Ethereum mainnet to Arbitrum for lower-cost DeFi interactions. As the multi-chain ecosystem grows, bridging has become an essential skill for navigating DeFi across multiple networks."
       toc={[
+        { id: "what-is-bridging", title: "what-is-bridging", level: 2 },
         { id: "what-is-bridging", title: "What Is Bridging?", level: 2 },
-        { id: "bridge-types", title: "Types of Bridges", level: 2 },
+        { id: "bridge-types", title: "bridge-types", level: 2 },
+        { id: "types-of-bridges", title: "Types of Bridges", level: 2 },
+        { id: "how-to-bridge", title: "how-to-bridge", level: 2 },
         { id: "how-to-bridge", title: "How to Bridge", level: 2 },
+        { id: "popular-bridges", title: "popular-bridges", level: 2 },
         { id: "popular-bridges", title: "Popular Bridges", level: 2 },
-        { id: "security", title: "Security Considerations", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-considerations", title: "Security Considerations", level: 2 }
       ]}
       faqs={[
         { question: "How long does bridging take?", answer: "Bridge times vary significantly. Official L2 bridges from Ethereum can take minutes to hours (or 7 days for optimistic rollup withdrawals back to L1). Third-party bridges like Across and Stargate typically complete in minutes. Speed depends on the bridge type, source and destination networks, and network congestion." },

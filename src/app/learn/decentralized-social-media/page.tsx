@@ -16,14 +16,14 @@ export default function DecentralizedSocialMedia() {
       readTime="11 min"
       intro="Centralized social media platforms control user data, content moderation, and monetization. Decentralized social networks (DeSoc) return ownership and control to creators and users. By 2026, platforms like Lens Protocol, Farcaster, and Nostr have proven that Web3 social is viable, offering censorship resistance, creator monetization, and user data sovereignty. Explore how decentralized social media works, token-gated communities, and why this represents the future of online interaction."
       toc={[
-        "Why Decentralized Social Media?",
-        "How DeSoc Works: Core Architecture",
-        "Lens Protocol: Modular Web3 Social",
-        "Farcaster & Frame-Based Social Apps",
-        "Nostr: The Censorship-Resistant Protocol",
-        "Token-Gated Communities & Creator Economies",
-        "Data Ownership & User Control",
-        "Challenges Facing DeSoc Adoption",
+        { id: "why-decentralized-social-media", title: "Why Decentralized Social Media?", level: 2 },
+        { id: "how-desoc-works-core-architecture", title: "How DeSoc Works: Core Architecture", level: 2 },
+        { id: "lens-protocol-modular-web3-social", title: "Lens Protocol: Modular Web3 Social", level: 2 },
+        { id: "farcaster-frame-based-social-apps", title: "Farcaster & Frame-Based Social Apps", level: 2 },
+        { id: "nostr-the-censorship-resistant-protocol", title: "Nostr: The Censorship-Resistant Protocol", level: 2 },
+        { id: "token-gated-communities-creator-economies", title: "Token-Gated Communities & Creator Economies", level: 2 },
+        { id: "data-ownership-user-control", title: "Data Ownership & User Control", level: 2 },
+        { id: "challenges-facing-desoc-adoption", title: "Challenges Facing DeSoc Adoption", level: 2 }
       ]}
       faqs={[
         {

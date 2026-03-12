@@ -16,10 +16,14 @@ export default function MutualVsTraditionalInsurancePage() {
       readTime="10 min"
       intro="The crypto insurance landscape includes both mutual models where members share risk collectively and traditional models backed by company reserves. Each approach has distinct advantages for cost, coverage, claims, and governance."
       toc={[
-        { id: "section-1", title: "Mutual Insurance Model", level: 2 },
-        { id: "section-2", title: "Traditional Insurance Model", level: 2 },
-        { id: "section-3", title: "Comparing the Models", level: 2 },
-        { id: "section-4", title: "Choosing Between Models", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "mutual-insurance-model", title: "Mutual Insurance Model", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "traditional-insurance-model", title: "Traditional Insurance Model", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "comparing-the-models", title: "Comparing the Models", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "choosing-between-models", title: "Choosing Between Models", level: 2 }
       ]}
       faqs={[
         { question: "What is mutual crypto insurance?", answer: "Mutual insurance in crypto operates through decentralized protocols where members pool capital to share risk. Members are both insurers and insured, with governance rights over claims and protocol parameters. Examples include Nexus Mutual." },

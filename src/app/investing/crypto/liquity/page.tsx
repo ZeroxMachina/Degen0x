@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Liquity (LQTY)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Liquity (LQTY)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Liquity (LQTY), the governance-free lending protocol with interest-free borrowing. Discover LQTY tokenomics, LUSD stablecoin, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function LiquityPage() {
       readTime="8 min read"
       intro="Liquity (LQTY) is the utility and reward token of the Liquity protocol, a decentralized borrowing platform that allows users to draw interest-free loans against ETH collateral. The protocol issues LUSD, a fully decentralized stablecoin, and operates with immutable smart contracts and no governance, making it one of the most censorship-resistant lending platforms in DeFi."
       toc={[
-        { id: "what-is", title: "What Is Liquity?", level: 2 },
-        { id: "how-it-works", title: "How Does Liquity Work?", level: 2 },
-        { id: "tokenomics", title: "LQTY Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy LQTY", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-liquity", title: "What Is Liquity?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-liquity-work", title: "How Does Liquity Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "lqty-tokenomics", title: "LQTY Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-lqty", title: "How to Buy LQTY", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Liquity?", answer: "Liquity is a decentralized borrowing protocol with immutable smart contracts and no governance. Users deposit ETH to borrow LUSD (an interest-free stablecoin). LQTY is the reward token earned by stakers and liquidity providers." },

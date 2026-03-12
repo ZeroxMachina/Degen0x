@@ -17,10 +17,14 @@ export default function RefinancingCryptoLoansPage() {
       readTime="7 min"
       intro="Refinancing a crypto loan means replacing your current loan with a new one at better terms, typically a lower interest rate. As the crypto lending market matures and competition increases, opportunities to refinance at better rates arise regularly. Understanding when refinancing makes sense and how to execute it can save you significant money over the life of your loan."
       toc={[
+        { id: "when-to-refinance", title: "when-to-refinance", level: 2 },
         { id: "when-to-refinance", title: "When to Refinance", level: 2 },
+        { id: "how-to-refinance", title: "how-to-refinance", level: 2 },
         { id: "how-to-refinance", title: "How to Refinance", level: 2 },
-        { id: "cost-benefit", title: "Cost-Benefit Analysis", level: 2 },
-        { id: "defi-refinancing", title: "DeFi Refinancing Tools", level: 2 },
+        { id: "cost-benefit", title: "cost-benefit", level: 2 },
+        { id: "cost-benefit-analysis", title: "Cost-Benefit Analysis", level: 2 },
+        { id: "defi-refinancing", title: "defi-refinancing", level: 2 },
+        { id: "defi-refinancing-tools", title: "DeFi Refinancing Tools", level: 2 }
       ]}
       faqs={[
         { question: "Is there a penalty for repaying a crypto loan early?", answer: "Most CeFi platforms and all major DeFi protocols allow early repayment without penalty. Some fixed-rate products may have early termination fees. Check your specific loan terms before refinancing. The absence of prepayment penalties makes crypto loans highly refinanceable." },

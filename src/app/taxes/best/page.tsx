@@ -42,7 +42,7 @@ export default function BestTaxSolutionsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Tax Solutions ({CURRENT_YEAR})
       </h1>
       <p className="text-xl text-[var(--color-text-secondary)] max-w-3xl mb-12">
@@ -58,7 +58,7 @@ export default function BestTaxSolutionsPage() {
             href={cat.href}
             className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 card-hover"
           >
-            <h2 className="text-xl font-semibold text-white mb-3">{cat.name}</h2>
+            <h2 className="text-xl font-semibold text-[var(--color-text)] mb-3">{cat.name}</h2>
             <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
               {cat.description}
             </p>

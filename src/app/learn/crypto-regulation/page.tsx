@@ -17,12 +17,18 @@ export default function CryptoRegulationPage() {
       readTime="14 min"
       intro="Cryptocurrency regulation is one of the most dynamic and impactful topics in the industry. How governments choose to regulate crypto affects what you can buy, where you can trade, how you are taxed, and what protections you have as an investor. The regulatory landscape varies dramatically by country, with some jurisdictions embracing crypto innovation and others imposing strict restrictions. This guide provides an overview of the current regulatory environment across major jurisdictions and explains what these rules mean for crypto users and investors."
       toc={[
-        { id: "why-regulation-matters", title: "Why Crypto Regulation Matters", level: 2 },
-        { id: "us-regulation", title: "United States Regulation", level: 2 },
-        { id: "eu-regulation", title: "European Union (MiCA)", level: 2 },
-        { id: "global-landscape", title: "Global Regulatory Landscape", level: 2 },
-        { id: "defi-regulation", title: "DeFi and Self-Custody Regulation", level: 2 },
-        { id: "what-it-means", title: "What This Means for You", level: 2 },
+        { id: "why-regulation-matters", title: "why-regulation-matters", level: 2 },
+        { id: "why-crypto-regulation-matters", title: "Why Crypto Regulation Matters", level: 2 },
+        { id: "us-regulation", title: "us-regulation", level: 2 },
+        { id: "united-states-regulation", title: "United States Regulation", level: 2 },
+        { id: "eu-regulation", title: "eu-regulation", level: 2 },
+        { id: "european-union-mica", title: "European Union (MiCA)", level: 2 },
+        { id: "global-landscape", title: "global-landscape", level: 2 },
+        { id: "global-regulatory-landscape", title: "Global Regulatory Landscape", level: 2 },
+        { id: "defi-regulation", title: "defi-regulation", level: 2 },
+        { id: "defi-and-self-custody-regulation", title: "DeFi and Self-Custody Regulation", level: 2 },
+        { id: "what-it-means", title: "what-it-means", level: 2 },
+        { id: "what-this-means-for-you", title: "What This Means for You", level: 2 }
       ]}
       faqs={[
         {

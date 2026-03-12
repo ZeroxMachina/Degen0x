@@ -83,7 +83,7 @@ export default function KrakenVsGeminiPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <div className="glass rounded-2xl p-8 border border-[var(--color-border)]">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-bold text-white">Kraken</h2>
+              <h2 className="text-2xl font-bold text-[var(--color-text)]">Kraken</h2>
               <div className="text-3xl font-bold text-red-400">{kraken.rating}/5</div>
             </div>
             <ul className="space-y-2 text-[var(--color-text-secondary)]">
@@ -116,7 +116,7 @@ export default function KrakenVsGeminiPage() {
 
           <div className="glass rounded-2xl p-8 border border-[var(--color-border)]">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-bold text-white">Gemini</h2>
+              <h2 className="text-2xl font-bold text-[var(--color-text)]">Gemini</h2>
               <div className="text-3xl font-bold text-blue-400">{gemini.rating}/5</div>
             </div>
             <ul className="space-y-2 text-[var(--color-text-secondary)]">
@@ -161,7 +161,7 @@ export default function KrakenVsGeminiPage() {
         <div className="space-y-12">
           {/* Fee Comparison */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-yellow-400">💰</span> Fee Comparison
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -170,15 +170,15 @@ export default function KrakenVsGeminiPage() {
                 <div className="space-y-3 text-[var(--color-text-secondary)]">
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Pro Maker</span>
-                    <span className="font-semibold text-white">0.16%–0.26%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.16%–0.26%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Pro Taker</span>
-                    <span className="font-semibold text-white">0.26%–0.36%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.26%–0.36%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>High Volume</span>
-                    <span className="font-semibold text-white">0% maker/taker</span>
+                    <span className="font-semibold text-[var(--color-text)]">0% maker/taker</span>
                   </div>
                 </div>
               </div>
@@ -188,21 +188,21 @@ export default function KrakenVsGeminiPage() {
                 <div className="space-y-3 text-[var(--color-text-secondary)]">
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>ActiveTrader Maker</span>
-                    <span className="font-semibold text-white">0.2%–0.25%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.2%–0.25%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>ActiveTrader Taker</span>
-                    <span className="font-semibold text-white">0.2%–0.25%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.2%–0.25%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Simple Interface</span>
-                    <span className="font-semibold text-white">1%–1.5%</span>
+                    <span className="font-semibold text-[var(--color-text)]">1%–1.5%</span>
                   </div>
                 </div>
               </div>
             </div>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)] bg-opacity-50">
-              <h3 className="text-lg font-bold text-white mb-3">Fee Winner: Kraken</h3>
+              <h3 className="text-lg font-bold text-[var(--color-text)] mb-3">Fee Winner: Kraken</h3>
               <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4">
                 Kraken offers better fees with 0.16% maker at base level vs Gemini's 0.2%. At high volumes, Kraken
                 reaches 0% maker/taker. Gemini's fees are flat 0.2%–0.25% maker/taker, making them consistent but less
@@ -216,7 +216,7 @@ export default function KrakenVsGeminiPage() {
 
           {/* Security & Trust */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-green-400">🔒</span> Security & Trust
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -278,25 +278,25 @@ export default function KrakenVsGeminiPage() {
 
           {/* Coin Selection */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-purple-400">🪙</span> Cryptocurrency Selection
             </h2>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)] mb-6">
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-bold text-red-400 mb-2">Kraken</h3>
-                  <p className="text-2xl font-bold text-white mb-2">200+</p>
+                  <p className="text-2xl font-bold text-[var(--color-text)] mb-2">200+</p>
                   <p className="text-[var(--color-text-secondary)]">Advanced trading pairs</p>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-blue-400 mb-2">Gemini</h3>
-                  <p className="text-2xl font-bold text-white mb-2">100+</p>
+                  <p className="text-2xl font-bold text-[var(--color-text)] mb-2">100+</p>
                   <p className="text-[var(--color-text-secondary)]">Focus on major assets</p>
                 </div>
               </div>
               <div className="mt-6 pt-6 border-t border-[var(--color-border)]">
                 <div className="flex items-center justify-between">
-                  <span className="font-semibold text-white">Winner</span>
+                  <span className="font-semibold text-[var(--color-text)]">Winner</span>
                   <span className="inline-block bg-red-500 bg-opacity-20 border border-red-400 text-red-400 px-4 py-2 rounded-lg font-semibold">
                     ⭐ Kraken: 200 vs 100
                   </span>
@@ -312,7 +312,7 @@ export default function KrakenVsGeminiPage() {
 
           {/* Trading Features */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-blue-400">📊</span> Trading Features
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -351,7 +351,7 @@ export default function KrakenVsGeminiPage() {
 
           {/* Customer Support */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-indigo-400">💬</span> Customer Support
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -388,7 +388,7 @@ export default function KrakenVsGeminiPage() {
 
           {/* User Experience */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-green-400">👤</span> User Experience
             </h2>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)] mb-6">
@@ -416,7 +416,7 @@ export default function KrakenVsGeminiPage() {
 
           {/* Verdict */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-yellow-400">🏆</span> Overall Verdict
             </h2>
             <div className="glass rounded-xl p-8 border border-[var(--color-border)] bg-gradient-to-br from-red-900 bg-opacity-10 to-transparent">
@@ -446,7 +446,7 @@ export default function KrakenVsGeminiPage() {
             </div>
 
             <div className="mt-8 p-6 rounded-xl bg-[var(--color-bg-card)] border border-[var(--color-border)]">
-              <h3 className="text-lg font-bold text-white mb-3">Head-to-Head Scores</h3>
+              <h3 className="text-lg font-bold text-[var(--color-text)] mb-3">Head-to-Head Scores</h3>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="text-center">
                   <p className="text-[var(--color-text-secondary)] text-sm mb-2">Fees</p>
@@ -529,7 +529,7 @@ export default function KrakenVsGeminiPage() {
             rel="noopener noreferrer sponsored"
             className="glass rounded-xl p-8 border border-red-400 border-opacity-50 text-center hover:border-opacity-100 transition-all duration-300 group"
           >
-            <h3 className="text-2xl font-bold text-red-400 mb-2 group-hover:text-white transition-colors">
+            <h3 className="text-2xl font-bold text-red-400 mb-2 group-hover:text-[var(--color-text)] transition-colors">
               Start with Kraken
             </h3>
             <p className="text-[var(--color-text-secondary)] mb-4">
@@ -546,7 +546,7 @@ export default function KrakenVsGeminiPage() {
             rel="noopener noreferrer sponsored"
             className="glass rounded-xl p-8 border border-blue-400 border-opacity-50 text-center hover:border-opacity-100 transition-all duration-300 group"
           >
-            <h3 className="text-2xl font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">
+            <h3 className="text-2xl font-bold text-blue-400 mb-2 group-hover:text-[var(--color-text)] transition-colors">
               Start with Gemini
             </h3>
             <p className="text-[var(--color-text-secondary)] mb-4">

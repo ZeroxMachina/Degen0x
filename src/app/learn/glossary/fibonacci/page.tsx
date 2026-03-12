@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Fibonacci Retracement in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Fibonacci Retracement in Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what Fibonacci retracement is, how to draw Fibonacci levels on crypto charts, key retracement percentages, and strategies for trading with Fibonacci tools.",
 };
 
@@ -16,10 +16,14 @@ export default function FibonacciPage() {
       readTime="7 min read"
       intro="Fibonacci retracement is a technical analysis tool that uses horizontal lines to indicate potential support and resistance levels based on ratios derived from the Fibonacci sequence. Traders draw Fibonacci retracements between a significant high and low to identify where price might pull back before continuing its trend. The key levels of 23.6%, 38.2%, 50%, 61.8%, and 78.6% serve as potential reversal zones and are widely used across all financial markets including crypto."
       toc={[
-        { id: "what-is-fibonacci", title: "What Is Fibonacci Retracement?", level: 2 },
-        { id: "key-levels", title: "Key Fibonacci Levels", level: 2 },
-        { id: "drawing-fibs", title: "How to Draw Fibonacci Levels", level: 2 },
-        { id: "trading-fibs", title: "Trading with Fibonacci", level: 2 },
+        { id: "what-is-fibonacci", title: "what-is-fibonacci", level: 2 },
+        { id: "what-is-fibonacci-retracement", title: "What Is Fibonacci Retracement?", level: 2 },
+        { id: "key-levels", title: "key-levels", level: 2 },
+        { id: "key-fibonacci-levels", title: "Key Fibonacci Levels", level: 2 },
+        { id: "drawing-fibs", title: "drawing-fibs", level: 2 },
+        { id: "how-to-draw-fibonacci-levels", title: "How to Draw Fibonacci Levels", level: 2 },
+        { id: "trading-fibs", title: "trading-fibs", level: 2 },
+        { id: "trading-with-fibonacci", title: "Trading with Fibonacci", level: 2 }
       ]}
       faqs={[
         { question: "Why does Fibonacci work in trading?", answer: "Fibonacci levels work partly as self-fulfilling prophecies because so many traders use them. When thousands of traders place buy orders at the 61.8% retracement, that collective action creates actual support. The mathematical ratios also appear in natural patterns, which some believe reflects fundamental market behavior driven by human psychology." },

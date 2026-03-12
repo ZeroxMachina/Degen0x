@@ -16,10 +16,14 @@ export default function InstitutionalCryptoAdoptionPage() {
       readTime="10 min"
       intro="Institutional adoption by hedge funds, pension funds, endowments, and corporations is reshaping the cryptocurrency market, bringing unprecedented capital flows, regulatory clarity, and market maturity to the digital asset ecosystem."
       toc={[
-        { id: "section-1", title: "The Institutional Landscape", level: 2 },
-        { id: "section-2", title: "Investment Vehicles", level: 2 },
-        { id: "section-3", title: "Market Impact", level: 2 },
-        { id: "section-4", title: "Future Trajectory", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "the-institutional-landscape", title: "The Institutional Landscape", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "investment-vehicles", title: "Investment Vehicles", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "market-impact", title: "Market Impact", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "future-trajectory", title: "Future Trajectory", level: 2 }
       ]}
       faqs={[
         { question: "Which institutions are investing in crypto?", answer: "A growing range of institutions invest in crypto including hedge funds like Brevan Howard and Point72, asset managers like BlackRock and Fidelity, public companies like MicroStrategy and Tesla, endowments like Yale and Harvard, and pension funds exploring pilot allocations. Sovereign wealth funds are also beginning to explore the space." },

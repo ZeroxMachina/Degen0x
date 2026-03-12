@@ -16,10 +16,14 @@ export default function BlockchainDevelopmentGuidePage() {
       readTime="10 min"
       intro="Blockchain development encompasses smart contract programming, decentralized application architecture, and protocol engineering. This guide covers technologies, tools, and best practices."
       toc={[
-        { id: "section-1", title: "Development Fundamentals", level: 2 },
-        { id: "section-2", title: "Technologies and Languages", level: 2 },
-        { id: "section-3", title: "Development Workflow", level: 2 },
-        { id: "section-4", title: "Career and Learning Path", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "development-fundamentals", title: "Development Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "technologies-and-languages", title: "Technologies and Languages", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "development-workflow", title: "Development Workflow", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "career-and-learning-path", title: "Career and Learning Path", level: 2 }
       ]}
       faqs={[
         { question: "What programming languages are used for blockchain development?", answer: "Solidity is the primary language for Ethereum and EVM chains. Rust is used for Solana, Near, and Polkadot. Move is used for Aptos and Sui. JavaScript/TypeScript is used for frontend dApps and scripting. Cairo is used for Starknet." },

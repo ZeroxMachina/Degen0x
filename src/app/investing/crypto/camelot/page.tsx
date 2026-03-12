@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Camelot (GRAIL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Camelot (GRAIL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Camelot (GRAIL), the native DEX and liquidity layer on Arbitrum. Discover GRAIL tokenomics, unique features, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function CamelotPage() {
       readTime="8 min read"
       intro="Camelot (GRAIL) is a native decentralized exchange and liquidity protocol built specifically for the Arbitrum ecosystem. Positioned as the community-focused DEX of Arbitrum, Camelot offers customizable liquidity pools, a launchpad for new projects, and flexible fee structures designed to serve the unique needs of Arbitrum-native protocols."
       toc={[
-        { id: "what-is", title: "What Is Camelot?", level: 2 },
-        { id: "how-it-works", title: "How Does Camelot Work?", level: 2 },
-        { id: "tokenomics", title: "GRAIL Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy GRAIL", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-camelot", title: "What Is Camelot?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-camelot-work", title: "How Does Camelot Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "grail-tokenomics", title: "GRAIL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-grail", title: "How to Buy GRAIL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

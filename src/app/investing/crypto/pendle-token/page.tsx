@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Pendle Token (PENDLE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Pendle Token (PENDLE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Pendle Token (PENDLE), the yield trading protocol enabling tokenized yield strategies. Discover PENDLE tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function PendleTokenPage() {
       readTime="8 min read"
       intro="Pendle Token (PENDLE) is the governance token of the Pendle protocol, a DeFi platform that enables yield tokenization and trading. Pendle splits yield-bearing assets into principal and yield components, allowing users to trade future yield or lock in fixed rates. The protocol has gained massive traction in the liquid staking and points meta across Ethereum, Arbitrum, and other chains."
       toc={[
-        { id: "what-is", title: "What Is Pendle Token?", level: 2 },
-        { id: "how-it-works", title: "How Does Pendle Work?", level: 2 },
-        { id: "tokenomics", title: "PENDLE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy PENDLE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-pendle-token", title: "What Is Pendle Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-pendle-work", title: "How Does Pendle Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "pendle-tokenomics", title: "PENDLE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-pendle", title: "How to Buy PENDLE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Pendle Token?", answer: "PENDLE is the governance token of Pendle, a DeFi protocol for yield tokenization. It allows users to trade future yield, lock in fixed rates, and speculate on yield movements across various DeFi protocols." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is FUD? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is FUD? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what FUD means in crypto, how it spreads, and how to distinguish legitimate concerns from market manipulation.",
 };
@@ -17,11 +17,16 @@ export default function FudPage() {
       readTime="4 min"
       intro="FUD stands for Fear, Uncertainty, and Doubt. In crypto, it refers to negative information or sentiment — whether true, exaggerated, or fabricated — that causes investors to panic and sell. FUD can be spread intentionally to manipulate markets or emerge organically from genuine concerns. Learning to evaluate FUD critically is an essential skill for any crypto investor."
       toc={[
-        { id: "definition", title: "What Is FUD?", level: 2 },
-        { id: "types", title: "Types of FUD", level: 2 },
-        { id: "how-it-spreads", title: "How FUD Spreads", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-fud", title: "What Is FUD?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-fud", title: "Types of FUD", level: 2 },
+        { id: "how-it-spreads", title: "how-it-spreads", level: 2 },
+        { id: "how-fud-spreads", title: "How FUD Spreads", level: 2 },
+        { id: "evaluating-fud", title: "evaluating-fud", level: 2 },
         { id: "evaluating-fud", title: "Evaluating FUD", level: 2 },
-        { id: "fud-vs-criticism", title: "FUD vs Legitimate Criticism", level: 2 },
+        { id: "fud-vs-criticism", title: "fud-vs-criticism", level: 2 },
+        { id: "fud-vs-legitimate-criticism", title: "FUD vs Legitimate Criticism", level: 2 }
       ]}
       faqs={[
         {

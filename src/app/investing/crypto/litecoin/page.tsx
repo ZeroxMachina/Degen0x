@@ -25,7 +25,7 @@ export default function LitecoinPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Litecoin (LTC) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function LitecoinPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">LTC</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2011</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">84,000,000 LTC</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Proof of Work (Scrypt)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">LTC</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2011</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">84,000,000 LTC</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Proof of Work (Scrypt)</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Litecoin?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Litecoin?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Litecoin was created in October 2011 by Charlie Lee, a former Google engineer, as a fork
           of Bitcoin's codebase with modifications designed to improve transaction speed and
@@ -67,7 +67,7 @@ export default function LitecoinPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Litecoin is primarily used as a payment currency, offering faster and cheaper transactions
           than Bitcoin on the base layer. It is widely accepted by merchants through payment
@@ -78,7 +78,7 @@ export default function LitecoinPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Litecoin's main risk is declining relevance in an increasingly competitive landscape.
           Bitcoin's Lightning Network addresses the speed and cost advantages Litecoin once had,
@@ -91,7 +91,7 @@ export default function LitecoinPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Litecoin</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Litecoin</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Litecoin is available on every major cryptocurrency exchange including Coinbase, Binance,
           Kraken, and Gemini. Its long track record means it is also available on traditional

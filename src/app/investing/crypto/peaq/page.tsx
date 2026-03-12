@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is peaq (PEAQ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is peaq (PEAQ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about peaq (PEAQ), the Layer 1 blockchain for DePIN and machine economy. Discover how it works, tokenomics, use cases, and how to buy PEAQ.",
 };
 
 export default function PeaqPage() {
   return (
-    <LearnPageLayout title="What Is peaq (PEAQ)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="peaq is a Layer 1 blockchain built on Polkadot specifically designed for Decentralized Physical Infrastructure Networks (DePIN) and the machine economy. The network provides modular DePIN functions including machine identity (peaq ID), machine data verification, machine payments, and role-based access control, enabling developers to build DePIN applications with pre-built infrastructure components rather than starting from scratch." toc={[{id:"what-is",title:"What Is peaq?",level:2},{id:"how-it-works",title:"How Does peaq Work?",level:2},{id:"tokenomics",title:"PEAQ Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy PEAQ",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is peaq?",answer:"peaq is a Polkadot-based Layer 1 blockchain for DePIN and machine economy, providing modular functions for machine identity, data verification, payments, and access control."},{question:"Where can I buy PEAQ?",answer:"PEAQ is available on Gate.io, KuCoin, and Polkadot ecosystem DEXs. It trades against USDT and DOT pairs."},{question:"Is peaq a good investment?",answer:"peaq is purpose-built for the growing DePIN sector with strong ecosystem development, but DePIN-specific L1s are still proving product-market fit. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Polkadot",href:"/investing/crypto/polkadot",category:"Investing"}]}>
+    <LearnPageLayout title="What Is peaq (PEAQ)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="peaq is a Layer 1 blockchain built on Polkadot specifically designed for Decentralized Physical Infrastructure Networks (DePIN) and the machine economy. The network provides modular DePIN functions including machine identity (peaq ID), machine data verification, machine payments, and role-based access control, enabling developers to build DePIN applications with pre-built infrastructure components rather than starting from scratch." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-peaq", title: "What Is peaq?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-peaq-work", title: "How Does peaq Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "peaq-tokenomics", title: "PEAQ Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-peaq", title: "How to Buy PEAQ", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is peaq?",answer:"peaq is a Polkadot-based Layer 1 blockchain for DePIN and machine economy, providing modular functions for machine identity, data verification, payments, and access control."},{question:"Where can I buy PEAQ?",answer:"PEAQ is available on Gate.io, KuCoin, and Polkadot ecosystem DEXs. It trades against USDT and DOT pairs."},{question:"Is peaq a good investment?",answer:"peaq is purpose-built for the growing DePIN sector with strong ecosystem development, but DePIN-specific L1s are still proving product-market fit. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Polkadot",href:"/investing/crypto/polkadot",category:"Investing"}]}>
       <h2 id="what-is">What Is peaq?</h2>
       <p>peaq was founded to create the blockchain infrastructure layer specifically optimized for machines, vehicles, robots, and IoT devices to interact economically on-chain. Built as a Polkadot parachain, peaq benefits from Polkadot&apos;s shared security and cross-chain interoperability while providing DePIN-specific functionality that general-purpose blockchains lack. The network has attracted over 50 DePIN projects building on its infrastructure, spanning mobility, energy, connectivity, and environmental monitoring sectors.</p>
       <p>The platform distinguishes itself by providing modular DePIN functions as built-in network primitives rather than requiring each project to develop these capabilities independently. peaq ID enables decentralized machine identity, peaq pay handles machine-to-machine payments, peaq access manages role-based permissions for devices, and peaq verify provides data integrity verification. These modules significantly reduce development time and cost for DePIN projects launching on the network.</p>

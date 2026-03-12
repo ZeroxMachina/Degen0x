@@ -17,12 +17,18 @@ export default function NftMarketplacesExplainedPage() {
       readTime="12 min"
       intro="NFT marketplaces are platforms where you can buy, sell, create, and discover non-fungible tokens. They range from general-purpose platforms like OpenSea to specialized venues like SuperRare for premium art or Tensor for Solana trading. Understanding how these marketplaces work, what fees they charge, and what features they offer is essential for making informed decisions as a collector, trader, or creator."
       toc={[
-        { id: "how-marketplaces-work", title: "How NFT Marketplaces Work", level: 2 },
-        { id: "types-of-marketplaces", title: "Types of NFT Marketplaces", level: 2 },
-        { id: "fee-structures", title: "Understanding Fee Structures", level: 2 },
-        { id: "key-features", title: "Key Features to Look For", level: 2 },
-        { id: "choosing-marketplace", title: "How to Choose the Right Marketplace", level: 2 },
-        { id: "multi-marketplace", title: "Using Multiple Marketplaces", level: 2 },
+        { id: "how-marketplaces-work", title: "how-marketplaces-work", level: 2 },
+        { id: "how-nft-marketplaces-work", title: "How NFT Marketplaces Work", level: 2 },
+        { id: "types-of-marketplaces", title: "types-of-marketplaces", level: 2 },
+        { id: "types-of-nft-marketplaces", title: "Types of NFT Marketplaces", level: 2 },
+        { id: "fee-structures", title: "fee-structures", level: 2 },
+        { id: "understanding-fee-structures", title: "Understanding Fee Structures", level: 2 },
+        { id: "key-features", title: "key-features", level: 2 },
+        { id: "key-features-to-look-for", title: "Key Features to Look For", level: 2 },
+        { id: "choosing-marketplace", title: "choosing-marketplace", level: 2 },
+        { id: "how-to-choose-the-right-marketplace", title: "How to Choose the Right Marketplace", level: 2 },
+        { id: "multi-marketplace", title: "multi-marketplace", level: 2 },
+        { id: "using-multiple-marketplaces", title: "Using Multiple Marketplaces", level: 2 }
       ]}
       faqs={[
         {

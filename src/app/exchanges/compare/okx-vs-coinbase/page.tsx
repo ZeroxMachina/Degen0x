@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `OKX vs Coinbase (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `OKX vs Coinbase (${CURRENT_YEAR}) | degen0x`,
   description: "Compare OKX vs Coinbase. Fees, features, regulation, Web3 wallets, and which exchange is better for different user types.",
 };
 
@@ -16,12 +16,18 @@ export default function OKXVsCoinbase() {
       readTime="8 min read"
       intro="OKX and Coinbase represent two different approaches to crypto exchange services. OKX is a feature-rich global platform with advanced trading tools and a leading Web3 wallet, while Coinbase is the most trusted US exchange with strong regulatory compliance. This comparison helps you choose based on your priorities."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
-        { id: "regulation", title: "Regulation and Availability", level: 2 },
-        { id: "web3", title: "Web3 Integration", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulation-and-availability", title: "Regulation and Availability", level: 2 },
+        { id: "web3", title: "web3", level: 2 },
+        { id: "web3-integration", title: "Web3 Integration", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Is OKX available in the US?", answer: "No, OKX is not available to US residents. US-based traders should use Coinbase, Kraken, or other US-licensed exchanges." },

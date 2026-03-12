@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Dymension Token (DYM)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Dymension Token (DYM)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Dymension Token (DYM), the modular blockchain hub for RollApps. Discover how it works, tokenomics, use cases, and how to buy DYM.",
 };
 
 export default function DymensionTokenPage() {
   return (
-    <LearnPageLayout title="What Is Dymension Token (DYM)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Dymension (DYM) is a modular blockchain network that serves as a settlement and coordination hub for RollApps -- application-specific rollup chains. Built using the Cosmos SDK, Dymension enables developers to deploy their own rollup chains that leverage the Dymension Hub for security, liquidity, and interoperability." toc={[{id:"what-is",title:"What Is Dymension?",level:2},{id:"how-it-works",title:"How Does Dymension Work?",level:2},{id:"tokenomics",title:"DYM Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy DYM",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Dymension?",answer:"Dymension is a modular blockchain hub for deploying RollApps (application-specific rollups). DYM is its native token used for gas, governance, and staking."},{question:"Where can I buy DYM?",answer:"DYM is available on Binance, KuCoin, and other exchanges, as well as Cosmos ecosystem DEXes like Osmosis."},{question:"Is Dymension a good investment?",answer:"Dymension has an innovative approach to modular blockchains, but RollApp adoption is still early. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Cosmos",href:"/investing/crypto/cosmos",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Dymension Token (DYM)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Dymension (DYM) is a modular blockchain network that serves as a settlement and coordination hub for RollApps -- application-specific rollup chains. Built using the Cosmos SDK, Dymension enables developers to deploy their own rollup chains that leverage the Dymension Hub for security, liquidity, and interoperability." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-dymension", title: "What Is Dymension?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-dymension-work", title: "How Does Dymension Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "dym-tokenomics", title: "DYM Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-dym", title: "How to Buy DYM", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Dymension?",answer:"Dymension is a modular blockchain hub for deploying RollApps (application-specific rollups). DYM is its native token used for gas, governance, and staking."},{question:"Where can I buy DYM?",answer:"DYM is available on Binance, KuCoin, and other exchanges, as well as Cosmos ecosystem DEXes like Osmosis."},{question:"Is Dymension a good investment?",answer:"Dymension has an innovative approach to modular blockchains, but RollApp adoption is still early. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Cosmos",href:"/investing/crypto/cosmos",category:"Investing"}]}>
       <h2 id="what-is">What Is Dymension?</h2>
       <p>Dymension is a Layer 1 blockchain built on the Cosmos SDK that functions as a settlement hub for application-specific rollups called RollApps. The protocol enables developers to deploy their own rollup chains with minimal infrastructure overhead, using Dymension as the coordination layer for security, inter-rollup communication, and shared liquidity.</p>
       <p>The vision is to create an internet of rollups where each application has its own sovereign execution environment while sharing security and liquidity through the Dymension Hub.</p>

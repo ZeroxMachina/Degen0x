@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Worldcoin (WLD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Worldcoin (WLD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Worldcoin (WLD), the identity and financial network co-founded by Sam Altman. Discover how it works, tokenomics, and how to buy WLD.",
 };
@@ -17,12 +17,18 @@ export default function WorldcoinPage() {
       readTime="8 min read"
       intro="Worldcoin is a digital identity and cryptocurrency project co-founded by Sam Altman, CEO of OpenAI. It aims to create a global identity network using biometric verification through its Orb device, distributing free cryptocurrency to every verified human on Earth. WLD is the native token of the Worldcoin ecosystem."
       toc={[
-        { id: "what-is", title: "What Is Worldcoin?", level: 2 },
-        { id: "how-it-works", title: "How Worldcoin Works", level: 2 },
-        { id: "tokenomics", title: "Worldcoin Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy Worldcoin", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-worldcoin", title: "What Is Worldcoin?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-worldcoin-works", title: "How Worldcoin Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "worldcoin-tokenomics", title: "Worldcoin Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-worldcoin", title: "How to Buy Worldcoin", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

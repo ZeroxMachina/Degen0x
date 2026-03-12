@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Liquidity Pool? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Liquidity Pool? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what liquidity pools are, how they power decentralized exchanges, and the risks and rewards of providing liquidity.",
 };
@@ -17,11 +17,16 @@ export default function LiquidityPoolPage() {
       readTime="5 min"
       intro="A liquidity pool is a collection of funds locked in a smart contract that enables decentralized trading, lending, and other DeFi activities. Instead of matching individual buyers and sellers like a traditional order book, liquidity pools allow anyone to trade against the pooled assets using an automated market maker algorithm. Liquidity providers deposit token pairs and earn fees from every trade."
       toc={[
-        { id: "definition", title: "What Is a Liquidity Pool?", level: 2 },
-        { id: "how-it-works", title: "How Liquidity Pools Work", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-liquidity-pool", title: "What Is a Liquidity Pool?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-liquidity-pools-work", title: "How Liquidity Pools Work", level: 2 },
+        { id: "providing-liquidity", title: "providing-liquidity", level: 2 },
         { id: "providing-liquidity", title: "Providing Liquidity", level: 2 },
-        { id: "risks", title: "Risks for Liquidity Providers", level: 2 },
-        { id: "why-it-matters", title: "Why Liquidity Pools Matter", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-for-liquidity-providers", title: "Risks for Liquidity Providers", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-liquidity-pools-matter", title: "Why Liquidity Pools Matter", level: 2 }
       ]}
       faqs={[
         {

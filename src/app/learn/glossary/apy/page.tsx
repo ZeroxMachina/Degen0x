@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is APY (Annual Percentage Yield)? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is APY (Annual Percentage Yield)? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what APY means in crypto, how compounding works, the difference between APR and APY, and how to maximize your yield through compounding strategies.",
 };
 
@@ -11,7 +11,16 @@ export default function ApyPage() {
   return (
     <LearnPageLayout title="What Is APY (Annual Percentage Yield)?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="APY (Annual Percentage Yield) is the annualized rate of return on an investment that accounts for the effect of compound interest. Unlike APR, which shows simple interest, APY includes the additional returns generated when earned interest is reinvested to earn more interest. In crypto, APY is commonly advertised by yield farms, auto-compounding vaults, and staking platforms to represent the total return including compounding effects."
-      toc={[{ id: "definition", title: "What Is APY?", level: 2 }, { id: "compounding", title: "How Compounding Works", level: 2 }, { id: "apy-in-crypto", title: "APY in Crypto Products", level: 2 }, { id: "realistic-expectations", title: "Setting Realistic Expectations", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-apy", title: "What Is APY?", level: 2 },
+        { id: "compounding", title: "compounding", level: 2 },
+        { id: "how-compounding-works", title: "How Compounding Works", level: 2 },
+        { id: "apy-in-crypto", title: "apy-in-crypto", level: 2 },
+        { id: "apy-in-crypto-products", title: "APY in Crypto Products", level: 2 },
+        { id: "realistic-expectations", title: "realistic-expectations", level: 2 },
+        { id: "setting-realistic-expectations", title: "Setting Realistic Expectations", level: 2 }
+      ]}
       faqs={[{ question: "Why do some protocols show astronomically high APY?", answer: "Extremely high APYs (1,000%+) are usually the result of two factors: high token emission rates that are unsustainable, and compounding math applied to short-term rates. A protocol offering 2% per week looks like 10,000%+ APY when annualized, but this rate rarely persists. Most extremely high APY rates decrease rapidly as more capital enters or token emissions reduce." },
         { question: "Is APY guaranteed?", answer: "No. DeFi APYs are variable and can change at any moment. They depend on market conditions, protocol usage, token prices, and emission schedules. A displayed APY represents the current rate extrapolated over a year. Actual returns may be higher or lower depending on how rates change throughout your holding period." }]}
       relatedArticles={[{ title: "APR", href: "/learn/glossary/apr", category: "Glossary" }, { title: "Yield", href: "/learn/glossary/yield", category: "Glossary" }, { title: "Farming", href: "/learn/glossary/farming", category: "Glossary" }, { title: "Vault", href: "/learn/glossary/vault", category: "Glossary" }]}

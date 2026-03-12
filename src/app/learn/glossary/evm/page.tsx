@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function EvmPage() {
   return (
     <LearnPageLayout title="What Is the EVM?" categoryName="Glossary" categorySlug="learn/glossary" readTime="5 min" intro="The Ethereum Virtual Machine (EVM) is the computation engine that executes smart contracts on Ethereum and all EVM-compatible blockchains. It acts as a decentralized computer — every node in the network runs an identical copy of the EVM, processing the same transactions and arriving at the same state. The EVM has become the de facto standard for smart contract execution, with dozens of blockchains adopting EVM compatibility to leverage Ethereum's vast ecosystem of tools, developers, and applications."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "how-it-works", title: "How It Works", level: 2 },{ id: "evm-compatibility", title: "EVM Compatibility", level: 2 },{ id: "gas-and-execution", title: "Gas and Execution", level: 2 },{ id: "limitations", title: "Limitations and Alternatives", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-it-works", title: "How It Works", level: 2 },
+        { id: "evm-compatibility", title: "evm-compatibility", level: 2 },
+        { id: "evm-compatibility", title: "EVM Compatibility", level: 2 },
+        { id: "gas-and-execution", title: "gas-and-execution", level: 2 },
+        { id: "gas-and-execution", title: "Gas and Execution", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-and-alternatives", title: "Limitations and Alternatives", level: 2 }
+      ]}
       faqs={[
         { question: "What does EVM-compatible mean?", answer: "EVM-compatible means a blockchain can execute the same smart contract bytecode as Ethereum. Developers can deploy their Ethereum smart contracts on EVM-compatible chains (like Polygon, Arbitrum, Avalanche, BSC) with minimal or no modifications. Users can interact with these chains using the same wallets (MetaMask) and tooling. This compatibility is a major advantage, as it allows chains to immediately tap into Ethereum's mature developer ecosystem." },
         { question: "Is Solana EVM-compatible?", answer: "No, Solana uses its own runtime called Sealevel, which executes programs written in Rust (compiled to BPF bytecode). Solana's architecture is fundamentally different from the EVM, designed for parallel transaction processing rather than the EVM's sequential execution model. However, some projects like Neon EVM have built EVM compatibility layers on top of Solana." },

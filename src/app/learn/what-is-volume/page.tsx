@@ -17,11 +17,16 @@ export default function WhatIsVolumePage() {
       readTime="7 min"
       intro="Trading volume measures the total value of a cryptocurrency traded over a specific period, typically 24 hours. Volume is one of the most important market indicators — it reveals the level of interest and activity around a token, confirms price trends, signals potential reversals, and helps identify whether a market has genuine liquidity or is artificially inflated through wash trading."
       toc={[
+        { id: "understanding-volume", title: "understanding-volume", level: 2 },
         { id: "understanding-volume", title: "Understanding Volume", level: 2 },
-        { id: "volume-price", title: "Volume and Price Relationship", level: 2 },
+        { id: "volume-price", title: "volume-price", level: 2 },
+        { id: "volume-and-price-relationship", title: "Volume and Price Relationship", level: 2 },
+        { id: "wash-trading", title: "wash-trading", level: 2 },
         { id: "wash-trading", title: "Wash Trading", level: 2 },
-        { id: "on-chain-volume", title: "On-Chain vs Exchange Volume", level: 2 },
-        { id: "using-volume", title: "Using Volume for Analysis", level: 2 },
+        { id: "on-chain-volume", title: "on-chain-volume", level: 2 },
+        { id: "on-chain-vs-exchange-volume", title: "On-Chain vs Exchange Volume", level: 2 },
+        { id: "using-volume", title: "using-volume", level: 2 },
+        { id: "using-volume-for-analysis", title: "Using Volume for Analysis", level: 2 }
       ]}
       faqs={[
         { question: "What is good trading volume for a crypto?", answer: "Volume should be evaluated relative to market cap. A healthy volume-to-market-cap ratio is typically 5-20% daily. Very low volume (under 1%) suggests illiquidity and potential difficulty exiting positions. Very high volume may indicate exceptional events or wash trading." },

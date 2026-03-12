@@ -16,10 +16,14 @@ export default function HowToBuyCosmosPage() {
       readTime="8 min"
       intro="Cosmos is an ecosystem of interconnected blockchains designed to solve the interoperability problem in crypto. The ATOM token powers the Cosmos Hub, the central chain that connects hundreds of independent blockchains through the Inter-Blockchain Communication (IBC) protocol. This guide walks you through buying ATOM step by step."
       toc={[
+        { id: "what-is-cosmos", title: "what-is-cosmos", level: 2 },
         { id: "what-is-cosmos", title: "What Is Cosmos?", level: 2 },
-        { id: "where-to-buy", title: "Where to Buy Cosmos", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Purchase Guide", level: 2 },
-        { id: "staking-storage", title: "Staking and Storage", level: 2 },
+        { id: "where-to-buy", title: "where-to-buy", level: 2 },
+        { id: "where-to-buy-cosmos", title: "Where to Buy Cosmos", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-purchase-guide", title: "Step-by-Step Purchase Guide", level: 2 },
+        { id: "staking-storage", title: "staking-storage", level: 2 },
+        { id: "staking-and-storage", title: "Staking and Storage", level: 2 }
       ]}
       faqs={[
         { question: "Can I stake ATOM after buying it?", answer: "Yes. ATOM staking is one of its primary features, offering approximately 15-20% APY. You can stake directly through wallets like Keplr by delegating to a validator. Note that unstaking ATOM requires a 21-day unbonding period during which your tokens cannot be transferred or sold." },

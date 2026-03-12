@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Institutional Crypto Lending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Institutional Crypto Lending (${CURRENT_YEAR}) | degen0x`,
   description:
     "Guide to institutional crypto lending. Learn about institutional lending platforms, risk management, regulatory considerations, and how institutional lending differs from retail.",
 };
@@ -17,11 +17,16 @@ export default function InstitutionalCryptoLendingPage() {
       readTime="9 min read"
       intro="Institutional crypto lending has matured significantly, offering sophisticated products for hedge funds, family offices, corporations, and accredited investors. These platforms provide larger loan sizes, negotiated rates, and institutional-grade security compared to retail lending. The 2022 collapses of Genesis, BlockFi, and Celsius reshaped the institutional lending landscape, pushing the market toward greater transparency, risk management, and regulatory compliance."
       toc={[
-        { id: "market-overview", title: "Institutional Lending Market", level: 2 },
-        { id: "platform-types", title: "Types of Institutional Platforms", level: 2 },
-        { id: "risk-management", title: "Risk Management Practices", level: 2 },
+        { id: "market-overview", title: "market-overview", level: 2 },
+        { id: "institutional-lending-market", title: "Institutional Lending Market", level: 2 },
+        { id: "platform-types", title: "platform-types", level: 2 },
+        { id: "types-of-institutional-platforms", title: "Types of Institutional Platforms", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management-practices", title: "Risk Management Practices", level: 2 },
+        { id: "regulatory-landscape", title: "regulatory-landscape", level: 2 },
         { id: "regulatory-landscape", title: "Regulatory Landscape", level: 2 },
-        { id: "future-outlook", title: "Future of Institutional Lending", level: 2 },
+        { id: "future-outlook", title: "future-outlook", level: 2 },
+        { id: "future-of-institutional-lending", title: "Future of Institutional Lending", level: 2 }
       ]}
       faqs={[
         { question: "What is institutional crypto lending?", answer: "Institutional crypto lending provides large-scale borrowing and lending services to institutional participants including hedge funds, market makers, trading firms, and corporations. Loan sizes typically start at $100,000 and can reach hundreds of millions. Terms, rates, and collateral requirements are often negotiated individually." },

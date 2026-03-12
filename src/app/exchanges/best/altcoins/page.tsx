@@ -53,7 +53,7 @@ export default function AltcoinsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges for Altcoins ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -70,7 +70,7 @@ export default function AltcoinsPage() {
           comprehensive ones. We have ranked exchanges by their altcoin offerings, listing
           speed, and the quality of their available trading pairs.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Coin Count Comparison</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Coin Count Comparison</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
           {[
             { name: "Gate.io", count: "1,700+" },

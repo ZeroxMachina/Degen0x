@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Paper Hands? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Paper Hands? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what paper hands means in crypto, how it differs from diamond hands, and the psychology behind selling during dips.",
 };
@@ -17,11 +17,16 @@ export default function PaperHandsPage() {
       readTime="4 min"
       intro="Paper hands is crypto slang for someone who sells their assets quickly at the first sign of a price decline or market uncertainty. The term implies weakness or a lack of conviction — paper is fragile and tears easily, unlike diamond hands who hold through volatility. While used as a taunt in crypto culture, selling during downturns can sometimes be the rational decision depending on circumstances."
       toc={[
-        { id: "definition", title: "What Is Paper Hands?", level: 2 },
-        { id: "origin", title: "Origin and Usage", level: 2 },
-        { id: "psychology", title: "Psychology of Paper Hands", level: 2 },
-        { id: "when-selling-smart", title: "When Selling Is Smart", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-paper-hands", title: "What Is Paper Hands?", level: 2 },
+        { id: "origin", title: "origin", level: 2 },
+        { id: "origin-and-usage", title: "Origin and Usage", level: 2 },
+        { id: "psychology", title: "psychology", level: 2 },
+        { id: "psychology-of-paper-hands", title: "Psychology of Paper Hands", level: 2 },
+        { id: "when-selling-smart", title: "when-selling-smart", level: 2 },
+        { id: "when-selling-is-smart", title: "When Selling Is Smart", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

@@ -62,7 +62,7 @@ export default function BestDebitCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Debit Cards ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -80,7 +80,7 @@ export default function BestDebitCardsPage() {
           credit check or interest charges. We ranked the best crypto debit cards by reward
           rates, supported currencies, fees, and overall spending experience.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Crypto Debit Cards vs Credit Cards</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Crypto Debit Cards vs Credit Cards</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Crypto debit cards spend your existing crypto balance and do not extend credit or
           build your credit score. They are simpler to obtain (no credit check) and have no
@@ -88,13 +88,13 @@ export default function BestDebitCardsPage() {
           which can complicate your tax situation. For users who already hold significant crypto
           and want to spend it, debit cards are the most natural option.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Our Top Picks</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Our Top Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          The <strong className="text-white">Crypto.com Visa</strong> leads with the highest
+          The <strong className="text-[var(--color-text)]">Crypto.com Visa</strong> leads with the highest
           cashback rates and the most comprehensive debit card perks on the market. The{" "}
-          <strong className="text-white">Coinbase Card</strong> offers the easiest experience
+          <strong className="text-[var(--color-text)]">Coinbase Card</strong> offers the easiest experience
           for US users already on Coinbase, with flexible reward token choices. The{" "}
-          <strong className="text-white">Binance Card</strong> delivers the highest cashback
+          <strong className="text-[var(--color-text)]">Binance Card</strong> delivers the highest cashback
           potential at 8% for users outside the US who hold BNB.
         </p>
       </div>
@@ -112,22 +112,22 @@ export default function BestDebitCardsPage() {
 
       {/* Debit Card Features */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Key Features to Compare</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Key Features to Compare</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-[var(--color-text-secondary)]">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-1">Supported Cryptocurrencies</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1">Supported Cryptocurrencies</h3>
             <p className="text-sm">The more crypto assets your card supports for spending, the more flexibility you have. Coinbase leads with 100+ assets, while others support 10-50 tokens.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-1">Conversion Spread</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1">Conversion Spread</h3>
             <p className="text-sm">The hidden cost of converting crypto to fiat at the point of sale. Ranges from 0% (Binance) to 2.49% (Coinbase). This directly impacts the effective value of your spending.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-1">ATM Access</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1">ATM Access</h3>
             <p className="text-sm">Most crypto debit cards allow cash withdrawals at ATMs. Free monthly allowances vary from $200 to $1,000 depending on the card tier, with fees of 2%+ beyond the limit.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-1">Spending Limits</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1">Spending Limits</h3>
             <p className="text-sm">Daily and monthly spending caps vary by card and tier. Higher tiers generally offer higher limits. Check that your card supports your expected spending volume.</p>
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function BestDebitCardsPage() {
 
       {/* Methodology */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
         <p className="text-[var(--color-text-secondary)]">
           Debit card rankings focus on the spending experience and effective cost. We weight
           cashback and rewards (25%), conversion spread and fees (25%), supported cryptocurrencies
@@ -147,7 +147,7 @@ export default function BestDebitCardsPage() {
 
       {/* Related Links */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "Best Crypto Prepaid Cards", href: "/crypto-cards/best/prepaid" },
@@ -160,7 +160,7 @@ export default function BestDebitCardsPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
-              <span className="text-white font-semibold">{link.title}</span>
+              <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
               <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                 Read more &rarr;
               </span>

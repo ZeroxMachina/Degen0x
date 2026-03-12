@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Spend Bitcoin in Everyday Life (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Spend Bitcoin in Everyday Life (${CURRENT_YEAR}) | degen0x`,
   description: "Learn practical ways to spend Bitcoin on everyday purchases, from gift cards and debit cards to direct merchant payments and Lightning Network transactions.",
 };
 
@@ -16,12 +16,18 @@ export default function HowToSpendBitcoinPage() {
       readTime="10 min"
       intro="Bitcoin has evolved far beyond a speculative investment. Today you can use BTC to pay for groceries, book flights, buy electronics, and even pay rent. Whether through crypto debit cards, gift cards, Lightning Network payments, or direct merchant acceptance, spending Bitcoin in everyday life is more accessible than ever. This guide covers every practical method for turning your BTC into real-world purchases."
       toc={[
+        { id: "crypto-debit-cards", title: "crypto-debit-cards", level: 2 },
         { id: "crypto-debit-cards", title: "Crypto Debit Cards", level: 2 },
-        { id: "gift-cards", title: "Buying Gift Cards with Bitcoin", level: 2 },
-        { id: "direct-merchant", title: "Direct Merchant Payments", level: 2 },
-        { id: "lightning-payments", title: "Lightning Network for Instant Spending", level: 2 },
-        { id: "online-shopping", title: "Online Shopping with Bitcoin", level: 2 },
-        { id: "tax-considerations", title: "Tax Considerations When Spending BTC", level: 2 },
+        { id: "gift-cards", title: "gift-cards", level: 2 },
+        { id: "buying-gift-cards-with-bitcoin", title: "Buying Gift Cards with Bitcoin", level: 2 },
+        { id: "direct-merchant", title: "direct-merchant", level: 2 },
+        { id: "direct-merchant-payments", title: "Direct Merchant Payments", level: 2 },
+        { id: "lightning-payments", title: "lightning-payments", level: 2 },
+        { id: "lightning-network-for-instant-spending", title: "Lightning Network for Instant Spending", level: 2 },
+        { id: "online-shopping", title: "online-shopping", level: 2 },
+        { id: "online-shopping-with-bitcoin", title: "Online Shopping with Bitcoin", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
+        { id: "tax-considerations-when-spending-btc", title: "Tax Considerations When Spending BTC", level: 2 }
       ]}
       faqs={[
         { question: "Is spending Bitcoin a taxable event?", answer: "Yes, in most jurisdictions including the US, spending Bitcoin is treated as disposing of a capital asset. You owe capital gains tax on any appreciation between when you acquired the BTC and when you spent it. Keep records of your cost basis for every transaction to accurately report gains or losses at tax time." },

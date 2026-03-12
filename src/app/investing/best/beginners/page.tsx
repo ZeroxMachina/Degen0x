@@ -25,7 +25,7 @@ const beginnerPicks: Product[] = [
     pros: ["Simple mobile interface", "Crypto debit card", "Learn & earn program", "Wide asset selection"],
     cons: ["Complex fee structure", "CRO staking requirements for best rates", "App performance can be slow"],
     bestFor: "All-in-one beginner platform",
-    affiliateUrl: "https://cryptodegen.com/go/crypto-com",
+    affiliateUrl: "https://degen0x.com/go/crypto-com",
     category: "beginners",
   },
   {
@@ -36,7 +36,7 @@ const beginnerPicks: Product[] = [
     pros: ["Strong regulatory compliance", "Clean interface", "SOC 2 certified", "Insurance on hot wallet"],
     cons: ["Higher fees than competitors", "Smaller asset selection", "Limited advanced features"],
     bestFor: "Security-conscious beginners",
-    affiliateUrl: "https://cryptodegen.com/go/gemini",
+    affiliateUrl: "https://degen0x.com/go/gemini",
     category: "beginners",
   },
 ];
@@ -61,7 +61,7 @@ export default function BestForBeginnersPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Platforms for Beginners in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -77,7 +77,7 @@ export default function BestForBeginnersPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Platforms for Beginners</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Platforms for Beginners</h2>
         <div className="space-y-4">
           {beginnerPicks.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -86,7 +86,7 @@ export default function BestForBeginnersPage() {
       </section>
 
       <section id="getting-started" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Getting Started Guide</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Getting Started Guide</h2>
         <div className="space-y-3">
           {[
             { step: "1", title: "Choose a Platform", desc: "Sign up for a regulated exchange like Coinbase. Complete identity verification, which typically takes a few minutes." },
@@ -96,11 +96,11 @@ export default function BestForBeginnersPage() {
             { step: "5", title: "Learn and Grow", desc: "Take advantage of educational resources. Consider dollar-cost averaging to build your position over time rather than investing everything at once." },
           ].map((item) => (
             <div key={item.step} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold text-sm">
                 {item.step}
               </div>
               <div>
-                <h3 className="text-base font-semibold text-white mb-1">{item.title}</h3>
+                <h3 className="text-base font-semibold text-[var(--color-text)] mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             </div>
@@ -109,7 +109,7 @@ export default function BestForBeginnersPage() {
       </section>
 
       <section id="what-to-buy" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What to Buy First</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What to Buy First</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           For beginners, we recommend starting with Bitcoin and Ethereum. Bitcoin is the most
           established cryptocurrency with a 15+ year track record, institutional adoption through
@@ -126,7 +126,7 @@ export default function BestForBeginnersPage() {
       </section>
 
       <section id="mistakes" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Common Beginner Mistakes</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Common Beginner Mistakes</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The most common mistake is investing more than you can afford to lose. Crypto is
           volatile and even established assets can drop 50% or more during bear markets. Other

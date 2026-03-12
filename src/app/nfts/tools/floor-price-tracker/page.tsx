@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState } from "react";
@@ -76,7 +78,7 @@ export default function FloorPriceTrackerPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">NFT Floor Price Tracker</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">NFT Floor Price Tracker</h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         Track and calculate the floor price value of your NFT portfolio. Enter your collections, their
         current and previous floor prices, and get a full portfolio overview with USD valuations and
@@ -84,7 +86,7 @@ export default function FloorPriceTrackerPage() {
       </p>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-xl font-semibold text-white mb-4">Token Prices (USD)</h2>
+        <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Token Prices (USD)</h2>
         <div className="grid grid-cols-2 gap-4 mb-6">
           <div>
             <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">ETH Price</label>
@@ -93,7 +95,7 @@ export default function FloorPriceTrackerPage() {
               value={ethPrice}
               onChange={(e) => setEthPrice(e.target.value)}
               placeholder="3000"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
@@ -103,12 +105,12 @@ export default function FloorPriceTrackerPage() {
               value={solPrice}
               onChange={(e) => setSolPrice(e.target.value)}
               placeholder="150"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
         </div>
 
-        <h2 className="text-xl font-semibold text-white mb-4">Your Collections</h2>
+        <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Your Collections</h2>
         <div className="space-y-4">
           {collections.map((col) => (
             <div key={col.id} className="grid grid-cols-1 md:grid-cols-6 gap-3 items-end">
@@ -119,7 +121,7 @@ export default function FloorPriceTrackerPage() {
                   value={col.name}
                   onChange={(e) => updateCollection(col.id, "name", e.target.value)}
                   placeholder="e.g., Bored Apes"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
@@ -130,7 +132,7 @@ export default function FloorPriceTrackerPage() {
                   value={col.floorPrice}
                   onChange={(e) => updateCollection(col.id, "floorPrice", e.target.value)}
                   placeholder="15.5"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
@@ -141,7 +143,7 @@ export default function FloorPriceTrackerPage() {
                   value={col.previousFloor}
                   onChange={(e) => updateCollection(col.id, "previousFloor", e.target.value)}
                   placeholder="14.0"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
@@ -149,7 +151,7 @@ export default function FloorPriceTrackerPage() {
                 <select
                   value={col.currency}
                   onChange={(e) => updateCollection(col.id, "currency", e.target.value)}
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-white focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
                 >
                   <option value="ETH">ETH</option>
                   <option value="SOL">SOL</option>
@@ -163,7 +165,7 @@ export default function FloorPriceTrackerPage() {
                     value={col.itemsOwned}
                     onChange={(e) => updateCollection(col.id, "itemsOwned", e.target.value)}
                     placeholder="1"
-                    className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                    className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                   />
                 </div>
                 <button
@@ -195,12 +197,12 @@ export default function FloorPriceTrackerPage() {
 
       {calculated && validCollections.length > 0 && (
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h2 className="text-xl font-semibold text-white mb-4">Portfolio Summary</h2>
+          <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Portfolio Summary</h2>
 
           <div className="grid grid-cols-3 gap-4 mb-6">
             <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] p-4 text-center">
               <p className="text-sm text-[var(--color-text-secondary)]">Total Value</p>
-              <p className="text-2xl font-bold text-white">${totalValueUsd.toLocaleString(undefined, { maximumFractionDigits: 2 })}</p>
+              <p className="text-2xl font-bold text-[var(--color-text)]">${totalValueUsd.toLocaleString(undefined, { maximumFractionDigits: 2 })}</p>
             </div>
             <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] p-4 text-center">
               <p className="text-sm text-[var(--color-text-secondary)]">Change</p>
@@ -210,11 +212,11 @@ export default function FloorPriceTrackerPage() {
             </div>
             <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] p-4 text-center">
               <p className="text-sm text-[var(--color-text-secondary)]">Collections</p>
-              <p className="text-2xl font-bold text-white">{validCollections.length}</p>
+              <p className="text-2xl font-bold text-[var(--color-text)]">{validCollections.length}</p>
             </div>
           </div>
 
-          <h3 className="text-lg font-semibold text-white mb-3">Collection Breakdown</h3>
+          <h3 className="text-lg font-semibold text-[var(--color-text)] mb-3">Collection Breakdown</h3>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
@@ -236,15 +238,15 @@ export default function FloorPriceTrackerPage() {
 
                   return (
                     <tr key={col.id} className="border-b border-[var(--color-border)]">
-                      <td className="py-2 text-sm text-white">{col.name}</td>
-                      <td className="py-2 text-sm text-right text-white">
+                      <td className="py-2 text-sm text-[var(--color-text)]">{col.name}</td>
+                      <td className="py-2 text-sm text-right text-[var(--color-text)]">
                         {floor} {col.currency}
                       </td>
                       <td className={`py-2 text-sm text-right font-medium ${change >= 0 ? "text-green-400" : "text-red-400"}`}>
                         {change >= 0 ? "+" : ""}{change.toFixed(2)}%
                       </td>
                       <td className="py-2 text-sm text-right text-[var(--color-text-secondary)]">{items}</td>
-                      <td className="py-2 text-sm text-right text-white">
+                      <td className="py-2 text-sm text-right text-[var(--color-text)]">
                         ${valueUsd.toLocaleString(undefined, { maximumFractionDigits: 2 })}
                       </td>
                     </tr>

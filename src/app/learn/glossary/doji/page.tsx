@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Doji Candlestick Pattern Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Doji Candlestick Pattern Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a doji candlestick is, the different types of doji patterns, what they signal about market indecision, and how to trade doji candles in crypto.",
 };
 
@@ -16,10 +16,14 @@ export default function DojiPage() {
       readTime="6 min read"
       intro="A doji is a candlestick pattern where the opening and closing prices are virtually equal, creating a candle with little to no body but potentially long upper and lower shadows. Doji candles signal indecision between buyers and sellers and often appear at turning points in the market. The specific type of doji and its position within the trend context provides important clues about potential reversals or continuation."
       toc={[
-        { id: "what-is-doji", title: "What Is a Doji?", level: 2 },
-        { id: "types", title: "Types of Doji Patterns", level: 2 },
-        { id: "interpretation", title: "Interpreting Doji Signals", level: 2 },
-        { id: "trading", title: "Trading with Doji Candles", level: 2 },
+        { id: "what-is-doji", title: "what-is-doji", level: 2 },
+        { id: "what-is-a-doji", title: "What Is a Doji?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-doji-patterns", title: "Types of Doji Patterns", level: 2 },
+        { id: "interpretation", title: "interpretation", level: 2 },
+        { id: "interpreting-doji-signals", title: "Interpreting Doji Signals", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-with-doji-candles", title: "Trading with Doji Candles", level: 2 }
       ]}
       faqs={[
         { question: "Is a doji bullish or bearish?", answer: "A doji by itself is neutral and indicates indecision. Its significance depends on context. A doji after a strong uptrend can be bearish (buyers losing control). A doji after a strong downtrend can be bullish (sellers losing control). Always wait for confirmation from the next candle before acting on a doji signal." },

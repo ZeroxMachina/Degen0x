@@ -16,14 +16,14 @@ export default function CryptoGamingGuilds() {
       readTime="12 min"
       intro="Blockchain gaming has evolved from experimental curiosity to a multi-billion dollar industry by 2026. Play-to-earn games enable earning income through gameplay. Gaming guilds coordinate players and share rewards. GameFi tokens create sustainable economics. Ronin and Immutable X have become essential gaming infrastructure. Discover how crypto gaming works, guild economics, play-to-earn mechanics, and why Web3 gaming represents a paradigm shift in game ownership and player monetization."
       toc={[
-        "What is Crypto Gaming?",
-        "Play-to-Earn Mechanics: How Players Earn",
-        "GameFi Tokenomics & Sustainability",
-        "Gaming Guilds & Guild DAOs",
-        "Major Gaming Chains: Ronin & Immutable X",
-        "NFT Gaming & Asset Ownership",
-        "The Challenges: Inflation & Sustainability",
-        "Future of Web3 Gaming",
+        { id: "what-is-crypto-gaming", title: "What is Crypto Gaming?", level: 2 },
+        { id: "play-to-earn-mechanics-how-players-earn", title: "Play-to-Earn Mechanics: How Players Earn", level: 2 },
+        { id: "gamefi-tokenomics-sustainability", title: "GameFi Tokenomics & Sustainability", level: 2 },
+        { id: "gaming-guilds-guild-daos", title: "Gaming Guilds & Guild DAOs", level: 2 },
+        { id: "major-gaming-chains-ronin-immutable-x", title: "Major Gaming Chains: Ronin & Immutable X", level: 2 },
+        { id: "nft-gaming-asset-ownership", title: "NFT Gaming & Asset Ownership", level: 2 },
+        { id: "the-challenges-inflation-sustainability", title: "The Challenges: Inflation & Sustainability", level: 2 },
+        { id: "future-of-web3-gaming", title: "Future of Web3 Gaming", level: 2 }
       ]}
       faqs={[
         {

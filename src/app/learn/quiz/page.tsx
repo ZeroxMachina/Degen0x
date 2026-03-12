@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useCallback } from "react";
@@ -363,7 +365,7 @@ export default function CryptoQuizPage() {
                     onClick={() => setDifficulty(d)}
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                       difficulty === d
-                        ? "bg-[var(--color-accent)] text-white"
+                        ? "bg-[var(--color-accent)] text-[var(--color-text)]"
                         : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                     }`}
                   >

@@ -16,10 +16,14 @@ export default function CryptoComplianceGuidePage() {
       readTime="10 min"
       intro="Regulatory compliance is increasingly important as governments implement cryptocurrency regulations. This guide covers KYC/AML requirements, securities compliance, tax obligations, and jurisdiction rules."
       toc={[
-        { id: "section-1", title: "Compliance Overview", level: 2 },
-        { id: "section-2", title: "KYC and AML Requirements", level: 2 },
-        { id: "section-3", title: "Tax and Reporting Obligations", level: 2 },
-        { id: "section-4", title: "Building a Compliance Program", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "compliance-overview", title: "Compliance Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "kyc-and-aml-requirements", title: "KYC and AML Requirements", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "tax-and-reporting-obligations", title: "Tax and Reporting Obligations", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "building-a-compliance-program", title: "Building a Compliance Program", level: 2 }
       ]}
       faqs={[
         { question: "Do crypto businesses need KYC?", answer: "Most crypto businesses providing financial services need KYC programs. Exchanges, payment processors, and custodians typically must verify customer identities. Requirements vary by jurisdiction and business type but are expanding globally." },

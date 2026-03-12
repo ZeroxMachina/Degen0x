@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Social Engineering Attacks in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Social Engineering Attacks in Crypto (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about social engineering attacks targeting crypto users: impersonation, pretexting, SIM swapping, and psychological manipulation tactics. Get strategies to protect yourself.",
 };
@@ -17,10 +17,14 @@ export default function SocialEngineeringCryptoPage() {
       readTime="8 min read"
       intro="Social engineering attacks exploit human psychology rather than technical vulnerabilities to steal cryptocurrency. These attacks manipulate victims through trust, urgency, fear, or greed to bypass even the strongest technical security measures. From SIM swap attacks that hijack phone numbers to sophisticated impersonation schemes targeting project teams, social engineering is responsible for some of the largest individual and organizational crypto losses. Understanding these tactics is essential because no hardware wallet or multi-sig can protect against a convincing con."
       toc={[
-        { id: "types", title: "Types of Social Engineering Attacks", level: 2 },
-        { id: "sim-swapping", title: "SIM Swapping Attacks", level: 2 },
-        { id: "targeting-teams", title: "Targeting Crypto Teams and DAOs", level: 2 },
-        { id: "defense", title: "Defending Against Social Engineering", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-social-engineering-attacks", title: "Types of Social Engineering Attacks", level: 2 },
+        { id: "sim-swapping", title: "sim-swapping", level: 2 },
+        { id: "sim-swapping-attacks", title: "SIM Swapping Attacks", level: 2 },
+        { id: "targeting-teams", title: "targeting-teams", level: 2 },
+        { id: "targeting-crypto-teams-and-daos", title: "Targeting Crypto Teams and DAOs", level: 2 },
+        { id: "defense", title: "defense", level: 2 },
+        { id: "defending-against-social-engineering", title: "Defending Against Social Engineering", level: 2 }
       ]}
       faqs={[
         {

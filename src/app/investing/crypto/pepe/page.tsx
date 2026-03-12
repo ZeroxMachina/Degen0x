@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Pepe (PEPE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Pepe (PEPE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Pepe (PEPE), the meme coin inspired by the iconic Pepe the Frog internet meme. Discover how PEPE works, its tokenomics, use cases, and how to buy it.",
 };
@@ -17,12 +17,18 @@ export default function PepePage() {
       readTime="8 min read"
       intro="Pepe (PEPE) is a meme coin built on Ethereum that draws its branding from the legendary Pepe the Frog internet meme. Launched in April 2023, PEPE quickly surged to a multi-billion-dollar market cap, making it one of the most successful meme tokens in crypto history. The project has no formal utility but thrives on community enthusiasm and cultural momentum."
       toc={[
-        { id: "what-is", title: "What Is Pepe?", level: 2 },
-        { id: "how-it-works", title: "How Does Pepe Work?", level: 2 },
-        { id: "tokenomics", title: "PEPE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy PEPE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-pepe", title: "What Is Pepe?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-pepe-work", title: "How Does Pepe Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "pepe-tokenomics", title: "PEPE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-pepe", title: "How to Buy PEPE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Pump and Dump? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Pump and Dump? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what pump-and-dump schemes are, how they work in crypto markets, and how to protect yourself from this common fraud.",
 };
@@ -17,11 +17,16 @@ export default function PumpAndDumpPage() {
       readTime="5 min"
       intro="A pump and dump is a market manipulation scheme where promoters artificially inflate the price of an asset through misleading hype (the pump), then sell their holdings at the inflated price (the dump), leaving other buyers with losses. This is one of the most common forms of fraud in crypto, particularly affecting small-cap tokens and memecoins. Pump and dumps are illegal in regulated securities markets but enforcement in crypto remains limited."
       toc={[
-        { id: "definition", title: "What Is a Pump and Dump?", level: 2 },
-        { id: "how-it-works", title: "How Pump and Dumps Work", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-pump-and-dump", title: "What Is a Pump and Dump?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-pump-and-dumps-work", title: "How Pump and Dumps Work", level: 2 },
+        { id: "warning-signs", title: "warning-signs", level: 2 },
         { id: "warning-signs", title: "Warning Signs", level: 2 },
+        { id: "protecting-yourself", title: "protecting-yourself", level: 2 },
         { id: "protecting-yourself", title: "Protecting Yourself", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

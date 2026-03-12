@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Grid Trading Bots Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Grid Trading Bots Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how grid trading bots work on crypto exchanges. Setup, strategies, risks, and best platforms for automated grid trading.",
 };
 
@@ -16,13 +16,20 @@ export default function GridTradingBots() {
       readTime="9 min read"
       intro="Grid trading bots are one of the most popular automated trading strategies in crypto. They place a series of buy and sell orders at preset price intervals, profiting from natural market fluctuations. Grid bots work best in ranging markets and require no manual intervention once configured. This guide explains how they work and how to set one up effectively."
       toc={[
-        { id: "how-it-works", title: "How Grid Trading Works", level: 2 },
-        { id: "types", title: "Types of Grid Bots", level: 2 },
-        { id: "setup", title: "Setting Up a Grid Bot", level: 2 },
-        { id: "parameters", title: "Key Parameters", level: 2 },
-        { id: "risks", title: "Risks and Limitations", level: 2 },
-        { id: "platforms", title: "Best Platforms for Grid Trading", level: 2 },
-        { id: "tips", title: "Optimization Tips", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-grid-trading-works", title: "How Grid Trading Works", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-grid-bots", title: "Types of Grid Bots", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "setting-up-a-grid-bot", title: "Setting Up a Grid Bot", level: 2 },
+        { id: "parameters", title: "parameters", level: 2 },
+        { id: "key-parameters", title: "Key Parameters", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-limitations", title: "Risks and Limitations", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "best-platforms-for-grid-trading", title: "Best Platforms for Grid Trading", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "optimization-tips", title: "Optimization Tips", level: 2 }
       ]}
       faqs={[
         { question: "Are grid bots profitable?", answer: "Grid bots are profitable in ranging (sideways) markets where price oscillates within a predictable range. They underperform in strong trending markets where buy-and-hold would capture more upside or where sustained drops cause losses." },

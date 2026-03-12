@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is ZetaChain (ZETA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is ZetaChain (ZETA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about ZetaChain (ZETA), the omnichain smart contract platform. Discover how it works, tokenomics, use cases, and how to buy ZETA.",
 };
@@ -17,12 +17,18 @@ export default function ZetaChainPage() {
       readTime="8 min read"
       intro="ZetaChain is a Layer 1 blockchain that enables omnichain smart contracts capable of natively connecting to and managing assets on any blockchain, including Bitcoin. Unlike messaging protocols that relay data between chains, ZetaChain allows developers to deploy single smart contracts that orchestrate logic and assets across all connected chains from one place."
       toc={[
-        { id: "what-is", title: "What Is ZetaChain?", level: 2 },
-        { id: "how-it-works", title: "How Does ZetaChain Work?", level: 2 },
-        { id: "tokenomics", title: "ZETA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ZETA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-zetachain", title: "What Is ZetaChain?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-zetachain-work", title: "How Does ZetaChain Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "zeta-tokenomics", title: "ZETA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-zeta", title: "How to Buy ZETA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

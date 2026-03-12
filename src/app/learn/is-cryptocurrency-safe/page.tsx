@@ -12,12 +12,18 @@ export default function IsCryptocurrencySafePage() {
   return (
     <LearnPageLayout title="Is Cryptocurrency Safe?" categoryName="Crypto Education" categorySlug="learn" readTime="9 min" intro="Cryptocurrency technology itself is secured by robust cryptographic protocols and decentralized networks, but the ecosystem around it presents significant risks. Understanding the difference between protocol-level security and user-level risks is essential for anyone entering the crypto space. This guide covers the major risk categories and how to mitigate them."
       toc={[
-        { id: "protocol-security", title: "Protocol-Level Security", level: 2 },
-        { id: "user-risks", title: "User-Level Risks", level: 2 },
-        { id: "exchange-risks", title: "Exchange & Platform Risks", level: 2 },
-        { id: "market-risks", title: "Market & Financial Risks", level: 2 },
-        { id: "best-practices", title: "Security Best Practices", level: 2 },
-        { id: "risk-assessment", title: "Risk Assessment Framework", level: 2 },
+        { id: "protocol-security", title: "protocol-security", level: 2 },
+        { id: "protocol-level-security", title: "Protocol-Level Security", level: 2 },
+        { id: "user-risks", title: "user-risks", level: 2 },
+        { id: "user-level-risks", title: "User-Level Risks", level: 2 },
+        { id: "exchange-risks", title: "exchange-risks", level: 2 },
+        { id: "exchange-platform-risks", title: "Exchange & Platform Risks", level: 2 },
+        { id: "market-risks", title: "market-risks", level: 2 },
+        { id: "market-financial-risks", title: "Market & Financial Risks", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "security-best-practices", title: "Security Best Practices", level: 2 },
+        { id: "risk-assessment", title: "risk-assessment", level: 2 },
+        { id: "risk-assessment-framework", title: "Risk Assessment Framework", level: 2 }
       ]}
       faqs={[
         { question: "Can Bitcoin be hacked?", answer: "The Bitcoin network itself has never been hacked. Its security comes from the enormous computational power securing the network through Proof of Work. However, exchanges, wallets, and services built around Bitcoin can be vulnerable. The distinction between protocol security and application security is critical." },

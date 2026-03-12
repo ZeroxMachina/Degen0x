@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Crypto Arbitrage? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Crypto Arbitrage? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what crypto arbitrage is, how it works, the different types, and why it matters for market efficiency. A complete guide to arbitrage trading in cryptocurrency.",
 };
@@ -17,11 +17,16 @@ export default function ArbitragePage() {
       readTime="5 min"
       intro="Arbitrage is the practice of profiting from price differences for the same asset across different markets or exchanges. In crypto, arbitrage opportunities arise because the same token can trade at slightly different prices on different exchanges, DEXs, or chains. Arbitrageurs play a crucial role in keeping prices consistent across the ecosystem."
       toc={[
-        { id: "definition", title: "What Is Arbitrage?", level: 2 },
-        { id: "how-it-works", title: "How Crypto Arbitrage Works", level: 2 },
-        { id: "types", title: "Types of Arbitrage", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-arbitrage", title: "What Is Arbitrage?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-crypto-arbitrage-works", title: "How Crypto Arbitrage Works", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-arbitrage", title: "Types of Arbitrage", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "challenges", title: "Challenges and Risks", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-and-risks", title: "Challenges and Risks", level: 2 }
       ]}
       faqs={[
         {

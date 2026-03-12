@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is ai16z (AI16Z)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is ai16z (AI16Z)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about ai16z (AI16Z), the AI-powered autonomous agent DAO on Solana. Discover how it works, tokenomics, use cases, and how to buy AI16Z.",
 };
 
 export default function Ai16zPage() {
   return (
-    <LearnPageLayout title="What Is ai16z (AI16Z)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="ai16z (AI16Z) is an AI-driven autonomous venture capital DAO built on Solana. It uses AI agents to manage a decentralized investment fund, combining artificial intelligence with crypto-native governance to make investment decisions in the blockchain and AI sectors." toc={[{id:"what-is",title:"What Is ai16z?",level:2},{id:"how-it-works",title:"How Does ai16z Work?",level:2},{id:"tokenomics",title:"AI16Z Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy AI16Z",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is ai16z?",answer:"ai16z is an AI-powered decentralized autonomous organization on Solana that uses AI agents to manage an investment fund, making autonomous decisions about crypto and AI investments."},{question:"Where can I buy AI16Z?",answer:"AI16Z is available on Solana DEXes like Jupiter and Raydium, and may be listed on select centralized exchanges."},{question:"Is ai16z a good investment?",answer:"ai16z is a novel experiment at the intersection of AI and decentralized finance. It carries high risk as both the AI and DAO mechanisms are experimental. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
+    <LearnPageLayout title="What Is ai16z (AI16Z)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="ai16z (AI16Z) is an AI-driven autonomous venture capital DAO built on Solana. It uses AI agents to manage a decentralized investment fund, combining artificial intelligence with crypto-native governance to make investment decisions in the blockchain and AI sectors." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ai16z", title: "What Is ai16z?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-ai16z-work", title: "How Does ai16z Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ai16z-tokenomics", title: "AI16Z Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ai16z", title: "How to Buy AI16Z", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is ai16z?",answer:"ai16z is an AI-powered decentralized autonomous organization on Solana that uses AI agents to manage an investment fund, making autonomous decisions about crypto and AI investments."},{question:"Where can I buy AI16Z?",answer:"AI16Z is available on Solana DEXes like Jupiter and Raydium, and may be listed on select centralized exchanges."},{question:"Is ai16z a good investment?",answer:"ai16z is a novel experiment at the intersection of AI and decentralized finance. It carries high risk as both the AI and DAO mechanisms are experimental. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
       <h2 id="what-is">What Is ai16z?</h2>
       <p>ai16z is an innovative project that combines autonomous AI agents with decentralized governance to create an AI-managed investment fund. Named as a playful reference to the prominent venture capital firm a16z (Andreessen Horowitz), the project uses advanced language model-powered agents to analyze markets, evaluate opportunities, and execute investment strategies in the crypto ecosystem.</p>
       <p>The project was developed using the Eliza framework, an open-source AI agent framework that enables the creation of autonomous agents capable of interacting with blockchain protocols, social media, and decentralized applications. This positions ai16z at the forefront of the AI agent narrative in crypto.</p>

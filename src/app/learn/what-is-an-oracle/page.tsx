@@ -18,12 +18,18 @@ export default function WhatIsAnOraclePage() {
       readTime="8 min"
       intro="A blockchain oracle is a service that connects smart contracts to real-world data — asset prices, weather conditions, sports results, or any information that exists outside the blockchain. Since smart contracts cannot natively access external data, oracles serve as the critical bridge between on-chain logic and off-chain reality, enabling the vast majority of DeFi and real-world blockchain applications."
       toc={[
-        { id: "oracle-problem", title: "The Oracle Problem", level: 2 },
+        { id: "oracle-problem", title: "oracle-problem", level: 2 },
+        { id: "the-oracle-problem", title: "The Oracle Problem", level: 2 },
+        { id: "how-oracles-work", title: "how-oracles-work", level: 2 },
         { id: "how-oracles-work", title: "How Oracles Work", level: 2 },
+        { id: "types-of-oracles", title: "types-of-oracles", level: 2 },
         { id: "types-of-oracles", title: "Types of Oracles", level: 2 },
-        { id: "major-networks", title: "Major Oracle Networks", level: 2 },
-        { id: "security", title: "Oracle Security", level: 2 },
-        { id: "use-cases", title: "Oracle Use Cases", level: 2 },
+        { id: "major-networks", title: "major-networks", level: 2 },
+        { id: "major-oracle-networks", title: "Major Oracle Networks", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "oracle-security", title: "Oracle Security", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "oracle-use-cases", title: "Oracle Use Cases", level: 2 }
       ]}
       faqs={[
         {

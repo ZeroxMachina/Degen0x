@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is an Altcoin? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is an Altcoin? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what altcoins are, the major categories, how they differ from Bitcoin, and what to consider before investing. A comprehensive guide to alternative cryptocurrencies.",
 };
@@ -17,11 +17,16 @@ export default function AltcoinPage() {
       readTime="5 min"
       intro="An altcoin is any cryptocurrency other than Bitcoin. The term combines 'alternative' and 'coin.' Altcoins range from major projects like Ethereum and Solana to thousands of smaller tokens. While some altcoins introduce genuine technological innovation, others are purely speculative. Understanding the altcoin landscape is essential for navigating crypto markets."
       toc={[
-        { id: "definition", title: "What Is an Altcoin?", level: 2 },
-        { id: "categories", title: "Categories of Altcoins", level: 2 },
-        { id: "examples", title: "Notable Examples", level: 2 },
-        { id: "why-it-matters", title: "Why Altcoins Matter", level: 2 },
-        { id: "risks", title: "Risks of Altcoins", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-an-altcoin", title: "What Is an Altcoin?", level: 2 },
+        { id: "categories", title: "categories", level: 2 },
+        { id: "categories-of-altcoins", title: "Categories of Altcoins", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "notable-examples", title: "Notable Examples", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-altcoins-matter", title: "Why Altcoins Matter", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-altcoins", title: "Risks of Altcoins", level: 2 }
       ]}
       faqs={[
         {

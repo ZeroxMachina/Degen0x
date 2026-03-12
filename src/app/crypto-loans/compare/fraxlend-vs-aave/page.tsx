@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Fraxlend vs Aave (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Fraxlend vs Aave (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare Fraxlend and Aave lending protocols. Analysis of Frax ecosystem integration, isolated lending pairs, interest rate models, and which platform to choose.",
 };
@@ -17,10 +17,14 @@ export default function FraxlendVsAavePage() {
       readTime="8 min read"
       intro="Fraxlend is Frax Finance's lending protocol that enables permissionless creation of isolated lending pairs. Unlike Aave's shared liquidity pool model, Fraxlend creates individual lending markets for specific collateral-debt pairs. This comparison examines how Fraxlend's approach differs from Aave, the advantages of each model, and how the Frax ecosystem integration affects the lending experience."
       toc={[
-        { id: "model-differences", title: "Lending Model Differences", level: 2 },
-        { id: "interest-rates", title: "Interest Rate Models", level: 2 },
-        { id: "frax-ecosystem", title: "Frax Ecosystem Integration", level: 2 },
-        { id: "choosing", title: "Which to Choose", level: 2 },
+        { id: "model-differences", title: "model-differences", level: 2 },
+        { id: "lending-model-differences", title: "Lending Model Differences", level: 2 },
+        { id: "interest-rates", title: "interest-rates", level: 2 },
+        { id: "interest-rate-models", title: "Interest Rate Models", level: 2 },
+        { id: "frax-ecosystem", title: "frax-ecosystem", level: 2 },
+        { id: "frax-ecosystem-integration", title: "Frax Ecosystem Integration", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "which-to-choose", title: "Which to Choose", level: 2 }
       ]}
       faqs={[
         { question: "What is Fraxlend?", answer: "Fraxlend is a permissionless lending protocol from Frax Finance that enables creation of isolated lending pairs. Each pair consists of one collateral asset and one loan asset with its own interest rate curve. It is designed primarily for borrowing FRAX stablecoin against various collateral types." },

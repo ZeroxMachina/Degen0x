@@ -12,22 +12,19 @@ export default function SecCryptoOverviewPage() {
   return (
     <LearnPageLayout title="SEC and Crypto Overview" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="The U.S. Securities and Exchange Commission (SEC) plays a central role in cryptocurrency regulation in the United States. Through enforcement actions, rulemaking, and guidance, the SEC's approach to crypto — particularly the classification of digital assets as securities — has profound implications for projects, exchanges, and investors across the crypto ecosystem."
       toc={[
-        { id: "role", title: "The SEC's Role", level: 2 },
-        { id: "howey-test", title: "The Howey Test", level: 2 },
-        { id: "enforcement", title: "Enforcement Actions", level: 2 },
-        { id: "etfs", title: "Crypto ETFs", level: 2 },
-        { id: "implications", title: "Implications for Investors", level: 2 },
+        { id: "role", title: "role", level: 2 },
+        { id: "the-sec", title: "The SEC", level: 2 }
       ]}
       faqs={[
         { question: "Is Bitcoin a security?", answer: "The SEC has consistently stated that Bitcoin is not a security — it is considered a commodity, overseen by the CFTC. This classification is based on Bitcoin's decentralized nature and the absence of a central issuing entity. However, the SEC has taken the position that many other crypto assets are securities." },
         { question: "What happens if a token is classified as a security?", answer: "If a token is classified as a security, it must be registered with the SEC or qualify for an exemption. Unregistered securities cannot be legally offered or sold in the US. Exchanges listing unregistered securities face enforcement action. This classification can significantly affect a token's accessibility, liquidity, and legal status." },
-        { question: "What is the Howey Test?", answer: "The Howey Test is the legal framework used to determine whether an asset is a security. An investment contract exists when there is: an investment of money, in a common enterprise, with an expectation of profits, derived from the efforts of others. The SEC applies this test to determine whether crypto tokens qualify as securities." },
+        { question: "What is the Howey Test?", answer: "The Howey Test is the legal framework used to determine whether an asset is a security. An investment contract exists when there is: an investment of money, in a common enterprise, with an expectation of profits, derived from the efforts of others. The SEC applies this test to determine whether crypto tokens qualify as securities." }
       ]}
       relatedArticles={[
         { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation-2026", category: "Learn" },
         { title: "Stablecoin Regulation", href: "/learn/stablecoin-regulation", category: "Learn" },
         { title: "DeFi Regulation Outlook", href: "/learn/defi-regulation-outlook", category: "Learn" },
-        { title: "Crypto Licensing Guide", href: "/learn/crypto-licensing-guide", category: "Learn" },
+        { title: "Crypto Licensing Guide", href: "/learn/crypto-licensing-guide", category: "Learn" }
       ]}
     >
       <section id="role"><h2>The SEC's Role</h2><p>The SEC's primary mandate is to protect investors, maintain fair and orderly markets, and facilitate capital formation. In the crypto context, the SEC focuses on whether digital assets qualify as securities under existing law, whether exchanges are operating as unregistered securities exchanges, and whether token offerings constitute unregistered securities sales. The agency has used its enforcement authority extensively in the crypto space.</p><p>The SEC's approach has been controversial within the crypto industry, with many arguing that applying 1930s-era securities laws to novel digital assets creates confusion and stifles innovation. Others maintain that investor protection requires treating many crypto activities like traditional securities activities. This tension between innovation and regulation continues to define the US crypto policy debate.</p></section>

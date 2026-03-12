@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Derivatives: Options, Futures & Swaps (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Derivatives: Options, Futures & Swaps (${CURRENT_YEAR}) | degen0x`,
   description:
     "A complete guide to crypto derivatives including futures, options, swaps, and structured products. Learn how they work, their use cases for hedging and speculation, and associated risks.",
 };
@@ -17,11 +17,16 @@ export default function CryptoDerivativesPage() {
       readTime="10 min read"
       intro="Crypto derivatives are financial instruments whose value is derived from underlying cryptocurrency assets. They include futures, perpetual contracts, options, and swaps, enabling traders to hedge risk, speculate on price movements with leverage, and access exposure to assets without directly holding them. The crypto derivatives market has grown to dwarf the spot market, with daily volumes regularly exceeding hundreds of billions of dollars across centralized and decentralized platforms."
       toc={[
-        { id: "what-are-derivatives", title: "What Are Crypto Derivatives?", level: 2 },
-        { id: "futures", title: "Futures Contracts", level: 2 },
-        { id: "options", title: "Options Contracts", level: 2 },
-        { id: "swaps-structured", title: "Swaps and Structured Products", level: 2 },
-        { id: "defi-derivatives", title: "Derivatives in DeFi", level: 2 },
+        { id: "what-are-derivatives", title: "what-are-derivatives", level: 2 },
+        { id: "what-are-crypto-derivatives", title: "What Are Crypto Derivatives?", level: 2 },
+        { id: "futures", title: "futures", level: 2 },
+        { id: "futures-contracts", title: "Futures Contracts", level: 2 },
+        { id: "options", title: "options", level: 2 },
+        { id: "options-contracts", title: "Options Contracts", level: 2 },
+        { id: "swaps-structured", title: "swaps-structured", level: 2 },
+        { id: "swaps-and-structured-products", title: "Swaps and Structured Products", level: 2 },
+        { id: "defi-derivatives", title: "defi-derivatives", level: 2 },
+        { id: "derivatives-in-defi", title: "Derivatives in DeFi", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Inheritance: Passing Coins to Heirs (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Inheritance: Passing Coins to Heirs (${CURRENT_YEAR}) | degen0x`,
   description: "Complete guide to crypto inheritance planning. Ensure your cryptocurrency can be safely passed to heirs with proper documentation, legal structures, and security.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoInheritancePlanningPage() {
     <LearnPageLayout title="Crypto Inheritance: Passing Coins to Heirs" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="8 min read"
       intro="An estimated billions of dollars in cryptocurrency has been permanently lost because holders died without leaving access instructions for their heirs. Unlike traditional financial accounts, there is no bank or institution to contact for account recovery. If your private keys die with you, your crypto dies too. Proper inheritance planning ensures your cryptocurrency assets can be safely transferred to your beneficiaries, combining legal structures with technical solutions."
       toc={[
-        { id: "challenges", title: "Unique Challenges of Crypto Inheritance", level: 2 },
-        { id: "documentation", title: "Creating an Inheritance Plan", level: 2 },
-        { id: "legal-structures", title: "Legal Structures and Trusts", level: 2 },
-        { id: "technical-solutions", title: "Technical Solutions", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "unique-challenges-of-crypto-inheritance", title: "Unique Challenges of Crypto Inheritance", level: 2 },
+        { id: "documentation", title: "documentation", level: 2 },
+        { id: "creating-an-inheritance-plan", title: "Creating an Inheritance Plan", level: 2 },
+        { id: "legal-structures", title: "legal-structures", level: 2 },
+        { id: "legal-structures-and-trusts", title: "Legal Structures and Trusts", level: 2 },
+        { id: "technical-solutions", title: "technical-solutions", level: 2 },
+        { id: "technical-solutions", title: "Technical Solutions", level: 2 }
       ]}
       faqs={[
         { question: "What happens to my crypto when I die?", answer: "Without an inheritance plan, your crypto is likely lost forever. Unlike bank accounts that can be accessed through probate court orders, self-custodied crypto requires the private keys or seed phrase to access. If no one knows they exist or how to access them, the funds are permanently locked. Even exchange-held crypto can be difficult for heirs to access without proper documentation." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is ParaSwap (PSP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is ParaSwap (PSP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about ParaSwap (PSP), the DeFi aggregation protocol. Discover how it works, tokenomics, use cases, and how to buy PSP.",
 };
 
@@ -16,12 +16,18 @@ export default function ParaSwapPage() {
       readTime="8 min read"
       intro="ParaSwap is a DeFi aggregation protocol that optimizes token swaps across multiple decentralized exchanges and liquidity sources to find the best rates for users. Supporting multiple EVM chains, ParaSwap routes trades through a combination of DEXs, lending protocols, and private market makers to minimize slippage and maximize output for traders."
       toc={[
-        { id: "what-is", title: "What Is ParaSwap?", level: 2 },
-        { id: "how-it-works", title: "How Does ParaSwap Work?", level: 2 },
-        { id: "tokenomics", title: "PSP Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy PSP", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-paraswap", title: "What Is ParaSwap?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-paraswap-work", title: "How Does ParaSwap Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "psp-tokenomics", title: "PSP Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-psp", title: "How to Buy PSP", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is ParaSwap?", answer: "ParaSwap is a DeFi aggregator that routes trades across multiple DEXs and liquidity sources on EVM chains to find optimal swap rates with minimal slippage." },

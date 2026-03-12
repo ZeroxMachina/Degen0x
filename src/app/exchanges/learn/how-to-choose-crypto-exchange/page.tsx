@@ -17,13 +17,20 @@ export default function HowToChooseCryptoExchangePage() {
       readTime="12 min"
       intro="Choosing a crypto exchange is one of the most impactful decisions you will make as a cryptocurrency investor. The right exchange saves you money on fees, keeps your funds secure, and provides the tools you need. The wrong one can cost you dearly. This comprehensive guide walks you through every factor to consider."
       toc={[
-        { id: "security-first", title: "Security Should Be Your Top Priority", level: 2 },
-        { id: "fee-structures", title: "Understanding Fee Structures", level: 2 },
-        { id: "regulation", title: "Regulatory Compliance", level: 2 },
-        { id: "coin-selection", title: "Cryptocurrency Selection", level: 2 },
-        { id: "trading-features", title: "Trading Features and Tools", level: 2 },
-        { id: "user-experience", title: "User Experience and Support", level: 2 },
-        { id: "decision-framework", title: "Decision Framework", level: 2 },
+        { id: "security-first", title: "security-first", level: 2 },
+        { id: "security-should-be-your-top-priority", title: "Security Should Be Your Top Priority", level: 2 },
+        { id: "fee-structures", title: "fee-structures", level: 2 },
+        { id: "understanding-fee-structures", title: "Understanding Fee Structures", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulatory-compliance", title: "Regulatory Compliance", level: 2 },
+        { id: "coin-selection", title: "coin-selection", level: 2 },
+        { id: "cryptocurrency-selection", title: "Cryptocurrency Selection", level: 2 },
+        { id: "trading-features", title: "trading-features", level: 2 },
+        { id: "trading-features-and-tools", title: "Trading Features and Tools", level: 2 },
+        { id: "user-experience", title: "user-experience", level: 2 },
+        { id: "user-experience-and-support", title: "User Experience and Support", level: 2 },
+        { id: "decision-framework", title: "decision-framework", level: 2 },
+        { id: "decision-framework", title: "Decision Framework", level: 2 }
       ]}
       faqs={[
         { question: "What is the safest crypto exchange?", answer: "Coinbase and Kraken are considered among the safest due to strong regulatory compliance, insurance coverage, and clean security track records. No exchange is completely risk-free — consider using hardware wallets for long-term storage." },

@@ -39,7 +39,7 @@ export default function BestSolanaWalletsPage() {
       />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Solana Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Solana Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
           Solana&apos;s fast transactions and low fees make it one of the most popular blockchains for DeFi, NFTs, and
           memecoins. Choosing the right Solana wallet is essential for accessing the ecosystem. We tested every major
@@ -49,17 +49,17 @@ export default function BestSolanaWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">Quick Verdict</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Quick Verdict</h2>
         <p className="text-[var(--color-text-secondary)]">
-          <strong className="text-white">Phantom</strong> is the clear winner for Solana users. It was built for the
+          <strong className="text-[var(--color-text)]">Phantom</strong> is the clear winner for Solana users. It was built for the
           Solana ecosystem and offers the best combination of speed, features, and user experience. For hardware
-          security, pair Phantom with a <strong className="text-white">Ledger Nano X</strong>. If you want multi-chain
-          access beyond Solana, <strong className="text-white">Trust Wallet</strong> supports 100+ chains including Solana.
+          security, pair Phantom with a <strong className="text-[var(--color-text)]">Ledger Nano X</strong>. If you want multi-chain
+          access beyond Solana, <strong className="text-[var(--color-text)]">Trust Wallet</strong> supports 100+ chains including Solana.
         </p>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Solana Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Solana Wallets, Ranked</h2>
         <div className="space-y-6">
           {solanaWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -76,40 +76,40 @@ export default function BestSolanaWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">What to Look for in a Solana Wallet</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">What to Look for in a Solana Wallet</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Native SOL Staking</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Native SOL Staking</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">The best Solana wallets let you stake SOL directly to validators and earn rewards without leaving the wallet interface.</p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Jupiter Swap Integration</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Jupiter Swap Integration</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Jupiter is Solana&apos;s leading DEX aggregator. Wallets with Jupiter integration offer the best swap rates for SPL tokens.</p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">NFT Support</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">NFT Support</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Solana is a major NFT ecosystem. Look for wallets with gallery displays, collection grouping, and marketplace integration.</p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Transaction Speed</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Transaction Speed</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Solana processes transactions in under a second. Your wallet should handle this speed without lag or delays in confirmation display.</p>
           </div>
         </div>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/reviews/phantom" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Phantom Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Phantom Review</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Full Phantom wallet review</p>
           </Link>
           <Link href="/wallets/best/nft" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best NFT Wallets</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best NFT Wallets</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Top wallets for NFT collectors</p>
           </Link>
           <Link href="/wallets/learn/how-to-set-up-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">How to Set Up a Wallet</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">How to Set Up a Wallet</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Step-by-step setup guide</p>
           </Link>
         </div>

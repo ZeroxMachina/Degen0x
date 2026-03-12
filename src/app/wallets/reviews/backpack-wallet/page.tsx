@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Backpack Wallet Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Backpack Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "Backpack Wallet review covering xNFT app platform, Solana and Ethereum support, built-in exchange features, and developer ecosystem.",
 };
 

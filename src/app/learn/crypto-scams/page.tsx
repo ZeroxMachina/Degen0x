@@ -17,12 +17,18 @@ export default function CryptoScamsPage() {
       readTime="14 min"
       intro="The cryptocurrency space, while innovative and full of opportunity, is also rife with scams. The irreversible nature of blockchain transactions, the pseudonymity of wallets, and the lack of centralized consumer protection make crypto an attractive target for fraudsters. Billions of dollars are lost to crypto scams every year. This guide covers the most common types of scams, the red flags to watch for, and practical steps you can take to protect yourself and your assets."
       toc={[
-        { id: "common-scams", title: "Common Types of Crypto Scams", level: 2 },
-        { id: "red-flags", title: "Red Flags to Watch For", level: 2 },
-        { id: "social-engineering", title: "Social Engineering Attacks", level: 2 },
-        { id: "defi-scams", title: "DeFi-Specific Scams", level: 2 },
-        { id: "protection", title: "How to Protect Yourself", level: 2 },
-        { id: "what-to-do", title: "What to Do If You Get Scammed", level: 2 },
+        { id: "common-scams", title: "common-scams", level: 2 },
+        { id: "common-types-of-crypto-scams", title: "Common Types of Crypto Scams", level: 2 },
+        { id: "red-flags", title: "red-flags", level: 2 },
+        { id: "red-flags-to-watch-for", title: "Red Flags to Watch For", level: 2 },
+        { id: "social-engineering", title: "social-engineering", level: 2 },
+        { id: "social-engineering-attacks", title: "Social Engineering Attacks", level: 2 },
+        { id: "defi-scams", title: "defi-scams", level: 2 },
+        { id: "defi-specific-scams", title: "DeFi-Specific Scams", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "how-to-protect-yourself", title: "How to Protect Yourself", level: 2 },
+        { id: "what-to-do", title: "what-to-do", level: 2 },
+        { id: "what-to-do-if-you-get-scammed", title: "What to Do If You Get Scammed", level: 2 }
       ]}
       faqs={[
         {

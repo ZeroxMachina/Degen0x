@@ -17,11 +17,16 @@ export default function FlashLoansGuidePage() {
       readTime="10 min"
       intro="Flash loans are one of the most innovative concepts in DeFi, allowing users to borrow any amount of assets without collateral as long as the loan is repaid within the same transaction. This unique primitive enables arbitrage, collateral swaps, self-liquidation, and complex multi-step strategies that would be impossible in traditional finance. This guide explains how flash loans work and how they are used in practice."
       toc={[
+        { id: "what-are-flash-loans", title: "what-are-flash-loans", level: 2 },
         { id: "what-are-flash-loans", title: "What Are Flash Loans", level: 2 },
-        { id: "how-they-work", title: "How Flash Loans Work", level: 2 },
-        { id: "use-cases", title: "Common Use Cases", level: 2 },
-        { id: "providers", title: "Flash Loan Providers", level: 2 },
-        { id: "risks-considerations", title: "Risks and Considerations", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-flash-loans-work", title: "How Flash Loans Work", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "common-use-cases", title: "Common Use Cases", level: 2 },
+        { id: "providers", title: "providers", level: 2 },
+        { id: "flash-loan-providers", title: "Flash Loan Providers", level: 2 },
+        { id: "risks-considerations", title: "risks-considerations", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Do I need collateral for a flash loan?", answer: "No collateral is required because the loan must be repaid within the same transaction. If the repayment fails, the entire transaction reverts as if it never happened. This atomic execution guarantees the protocol cannot lose funds." },

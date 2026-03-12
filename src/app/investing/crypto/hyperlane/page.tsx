@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Hyperlane (HYPER)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Hyperlane (HYPER)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Hyperlane (HYPER), the permissionless interoperability protocol. Discover how it works, tokenomics, use cases, and how to buy HYPER.",
 };
@@ -17,12 +17,18 @@ export default function HyperlanePage() {
       readTime="8 min read"
       intro="Hyperlane is the first permissionless interoperability protocol that allows anyone to deploy cross-chain messaging to any blockchain without requiring governance approval or whitelisting. With its modular security architecture and Interchain Security Modules, Hyperlane enables developers to customize their cross-chain security models while building on any chain."
       toc={[
-        { id: "what-is", title: "What Is Hyperlane?", level: 2 },
-        { id: "how-it-works", title: "How Does Hyperlane Work?", level: 2 },
-        { id: "tokenomics", title: "HYPER Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy HYPER", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-hyperlane", title: "What Is Hyperlane?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-hyperlane-work", title: "How Does Hyperlane Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "hyper-tokenomics", title: "HYPER Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-hyper", title: "How to Buy HYPER", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

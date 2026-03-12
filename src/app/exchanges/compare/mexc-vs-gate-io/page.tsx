@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `MEXC vs Gate.io (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `MEXC vs Gate.io (${CURRENT_YEAR}) | degen0x`,
   description: "Compare MEXC vs Gate.io. Fees, coin listings, features, and which exchange is better for altcoin discovery and early token access.",
 };
 
@@ -16,12 +16,18 @@ export default function MEXCVsGateIO() {
       readTime="8 min read"
       intro="MEXC and Gate.io are both known for their massive altcoin selections and early token listings. These exchanges compete for traders who want access to new and emerging cryptocurrencies before they appear on larger platforms. This comparison examines which better serves the altcoin-focused trader."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "coin-selection", title: "coin-selection", level: 2 },
         { id: "coin-selection", title: "Coin Selection", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
+        { id: "security", title: "security", level: 2 },
         { id: "security", title: "Security", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which has more coins?", answer: "Both list 2000+ cryptocurrencies. MEXC may have a slight edge in listing speed, but Gate.io has maintained an extensive catalog for longer." },

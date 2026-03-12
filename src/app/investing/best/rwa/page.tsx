@@ -23,7 +23,7 @@ const rwaTokens: Product[] = [
     pros: ["Tokenized US Treasuries", "Institutional backing", "Regulatory-focused approach", "Growing TVL"],
     cons: ["Governance token with limited utility", "Centralized custody of real assets", "Regulatory risk"],
     bestFor: "Tokenized treasury exposure",
-    affiliateUrl: "https://cryptodegen.com/go/ondo",
+    affiliateUrl: "https://degen0x.com/go/ondo",
     category: "rwa",
   },
   {
@@ -34,7 +34,7 @@ const rwaTokens: Product[] = [
     pros: ["Real-world credit markets on-chain", "MakerDAO integration", "Diverse asset types", "Growing institutional adoption"],
     cons: ["Complex credit assessment", "Default risk on underlying assets", "Lower liquidity"],
     bestFor: "Real-world credit exposure",
-    affiliateUrl: "https://cryptodegen.com/go/centrifuge",
+    affiliateUrl: "https://degen0x.com/go/centrifuge",
     category: "rwa",
   },
   {
@@ -45,7 +45,7 @@ const rwaTokens: Product[] = [
     pros: ["Institutional lending yields", "Credit assessment process", "Real revenue generation", "Growing loan book"],
     cons: ["Past default incidents", "Concentrated borrower risk", "Complex risk assessment"],
     bestFor: "Institutional credit yields",
-    affiliateUrl: "https://cryptodegen.com/go/maple",
+    affiliateUrl: "https://degen0x.com/go/maple",
     category: "rwa",
   },
   {
@@ -56,7 +56,7 @@ const rwaTokens: Product[] = [
     pros: ["ETH staking plus RWA yield", "Backed by Mantle Treasury", "Liquid staking token", "Competitive APY"],
     cons: ["Dependent on Mantle ecosystem", "Complex yield sources", "Newer product"],
     bestFor: "Enhanced ETH staking yield",
-    affiliateUrl: "https://cryptodegen.com/go/mantle",
+    affiliateUrl: "https://degen0x.com/go/mantle",
     category: "rwa",
   },
 ];
@@ -81,7 +81,7 @@ export default function BestRWAPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best RWA Crypto Tokens for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -97,7 +97,7 @@ export default function BestRWAPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top RWA Tokens for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top RWA Tokens for {CURRENT_YEAR}</h2>
         <div className="space-y-4">
           {rwaTokens.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -106,7 +106,7 @@ export default function BestRWAPage() {
       </section>
 
       <section id="what-are-rwas" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Are RWA Tokens?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Are RWA Tokens?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           RWA tokens represent real-world assets that have been tokenized on a blockchain. This
           includes US Treasury bonds, real estate, commodities, private credit, and more. The
@@ -123,7 +123,7 @@ export default function BestRWAPage() {
       </section>
 
       <section id="why-rwa" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Why RWA Matters for Crypto</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Why RWA Matters for Crypto</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           RWA tokenization addresses one of crypto's biggest challenges: sustainable yield. Unlike
           speculative DeFi yields that depend on token emissions, RWA yields are backed by
@@ -139,7 +139,7 @@ export default function BestRWAPage() {
       </section>
 
       <section id="risks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">RWA Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">RWA Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)]">
           RWA tokens carry unique risks beyond standard crypto volatility. Custodial risk is
           paramount because someone must physically hold the real assets, creating counterparty

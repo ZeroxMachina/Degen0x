@@ -16,10 +16,14 @@ export default function CryptoTrustSetupPage() {
       readTime="10 min"
       intro="Cryptocurrency trusts provide a legal framework for managing digital assets across generations, offering tax benefits, asset protection, and controlled distribution to beneficiaries."
       toc={[
-        { id: "section-1", title: "Trust Fundamentals", level: 2 },
-        { id: "section-2", title: "Trust Types for Crypto", level: 2 },
-        { id: "section-3", title: "Setup and Administration", level: 2 },
-        { id: "section-4", title: "Ongoing Management", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "trust-fundamentals", title: "Trust Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "trust-types-for-crypto", title: "Trust Types for Crypto", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "setup-and-administration", title: "Setup and Administration", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "ongoing-management", title: "Ongoing Management", level: 2 }
       ]}
       faqs={[
         { question: "What is a crypto trust?", answer: "A crypto trust is a legal entity that holds cryptocurrency on behalf of beneficiaries. It provides a framework for managing digital assets with specified distribution rules, tax treatment, and asset protection that persists beyond the grantor's lifetime." },

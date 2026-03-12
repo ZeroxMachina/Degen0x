@@ -44,7 +44,7 @@ export default function BestMobileWalletsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Mobile Crypto Wallets of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -55,29 +55,29 @@ export default function BestMobileWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">What Makes a Great Mobile Wallet?</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">What Makes a Great Mobile Wallet?</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">Biometric Security</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">Biometric Security</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Face ID and fingerprint authentication add an extra layer of protection.</p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">Clean Interface</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">Clean Interface</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Mobile screens are small, so a well-designed UI is essential.</p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">dApp Browser</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">dApp Browser</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">A built-in browser lets you access DeFi and NFT platforms directly.</p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">Push Notifications</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">Push Notifications</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Alerts for incoming transactions and price movements keep you informed.</p>
           </div>
         </div>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Mobile Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Mobile Wallets, Ranked</h2>
         <div className="space-y-6">
           {mobileWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />

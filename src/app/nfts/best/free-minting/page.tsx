@@ -16,10 +16,14 @@ export default function BestFreeMintingPage() {
       readTime="8 min"
       intro="Free and low-cost NFT minting platforms have made digital asset creation accessible to everyone. Through lazy minting, gasless transactions, and low-fee blockchains, creators can now mint NFTs without spending anything upfront. Here are the best options for minting NFTs at zero or minimal cost."
       toc={[
-        { id: "lazy-minting", title: "Lazy Minting Platforms", level: 2 },
-        { id: "low-fee-chains", title: "Low-Fee Blockchain Options", level: 2 },
-        { id: "gasless", title: "Gasless Minting Solutions", level: 2 },
-        { id: "choosing", title: "Choosing the Right Platform", level: 2 },
+        { id: "lazy-minting", title: "lazy-minting", level: 2 },
+        { id: "lazy-minting-platforms", title: "Lazy Minting Platforms", level: 2 },
+        { id: "low-fee-chains", title: "low-fee-chains", level: 2 },
+        { id: "low-fee-blockchain-options", title: "Low-Fee Blockchain Options", level: 2 },
+        { id: "gasless", title: "gasless", level: 2 },
+        { id: "gasless-minting-solutions", title: "Gasless Minting Solutions", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-the-right-platform", title: "Choosing the Right Platform", level: 2 }
       ]}
       faqs={[
         { question: "Is it really free to mint an NFT?", answer: "Yes. Platforms like OpenSea and Rarible offer lazy minting where the NFT is only minted on-chain when purchased. The gas fee is paid by the buyer. On low-fee chains like Polygon, the gas cost to mint is under one cent." },

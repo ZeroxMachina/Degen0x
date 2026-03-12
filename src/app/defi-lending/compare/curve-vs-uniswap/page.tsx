@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Curve Finance", slug: "curve", rating: 4.7, affiliateUrl: "https://cryptodegen.com/go/curve", features: { "TVL": "$3B+", "Chains": "10+", "Specialization": "Stablecoins & pegged assets", "Fee Model": "0.01-0.04% swap fees", "AMM Type": "StableSwap + CryptoSwap", "Governance Token": "CRV (vote-locking)", "LP Experience": "Passive, gauge rewards", "Unique Feature": "Lowest slippage for stable pairs" } },
-  { name: "Uniswap", slug: "uniswap", rating: 4.8, affiliateUrl: "https://cryptodegen.com/go/uniswap", features: { "TVL": "$5B+", "Chains": "10+", "Specialization": "All token pairs", "Fee Model": "0.01-1% tiered fees", "AMM Type": "Concentrated liquidity V3/V4", "Governance Token": "UNI", "LP Experience": "Active management required", "Unique Feature": "Concentrated liquidity positions" } },
+  { name: "Curve Finance", slug: "curve", rating: 4.7, affiliateUrl: "https://degen0x.com/go/curve", features: { "TVL": "$3B+", "Chains": "10+", "Specialization": "Stablecoins & pegged assets", "Fee Model": "0.01-0.04% swap fees", "AMM Type": "StableSwap + CryptoSwap", "Governance Token": "CRV (vote-locking)", "LP Experience": "Passive, gauge rewards", "Unique Feature": "Lowest slippage for stable pairs" } },
+  { name: "Uniswap", slug: "uniswap", rating: 4.8, affiliateUrl: "https://degen0x.com/go/uniswap", features: { "TVL": "$5B+", "Chains": "10+", "Specialization": "All token pairs", "Fee Model": "0.01-1% tiered fees", "AMM Type": "Concentrated liquidity V3/V4", "Governance Token": "UNI", "LP Experience": "Active management required", "Unique Feature": "Concentrated liquidity positions" } },
 ];
 
 const features = ["TVL", "Chains", "Specialization", "Fee Model", "AMM Type", "Governance Token", "LP Experience", "Unique Feature"];
@@ -29,26 +29,26 @@ export default function CurveVsUniswapPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Curve vs Uniswap", href: "/defi-lending/compare/curve-vs-uniswap" }]} />
-      <h1 className="text-4xl font-bold text-white mb-4">Curve vs Uniswap: Full Comparison ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Curve vs Uniswap: Full Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Curve Finance and Uniswap are the two most important decentralized exchanges in DeFi. Curve dominates stablecoin and pegged asset trading with its specialized StableSwap algorithm, while Uniswap leads in overall trading volume with its versatile concentrated liquidity model. They serve different primary use cases but overlap in the broader DEX ecosystem.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">The short answer:</strong> Use Curve for stablecoin swaps, pegged asset trading, and passive LP yield with CRV rewards. Use Uniswap for volatile token trading, concentrated liquidity positions, and accessing the widest range of token pairs. Most DeFi users benefit from using both.
+          <strong className="text-[var(--color-text)]">The short answer:</strong> Use Curve for stablecoin swaps, pegged asset trading, and passive LP yield with CRV rewards. Use Uniswap for volatile token trading, concentrated liquidity positions, and accessing the widest range of token pairs. Most DeFi users benefit from using both.
         </p>
       </div>
       <section className="mb-12">
         <ComparisonTable items={items} features={features} title="Curve vs Uniswap Feature Comparison" />
       </section>
       <section className="mb-12 prose prose-invert max-w-none">
-        <h2 className="text-2xl font-bold text-white mb-4">Detailed Analysis</h2>
-        <h3 className="text-xl font-bold text-white mt-6 mb-3">AMM Design Philosophy</h3>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">AMM Design Philosophy</h3>
         <p className="text-[var(--color-text-secondary)]">Curve&apos;s StableSwap invariant concentrates liquidity around a 1:1 price ratio, making it extraordinarily efficient for assets that should trade at similar prices. Its CryptoSwap pools extend this to volatile pairs with automatic rebalancing. Uniswap V3&apos;s concentrated liquidity lets LPs manually choose any price range, providing maximum flexibility but requiring active management. These fundamentally different approaches make each protocol superior for different trading needs.</p>
-        <h3 className="text-xl font-bold text-white mt-6 mb-3">Liquidity Provider Experience</h3>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Liquidity Provider Experience</h3>
         <p className="text-[var(--color-text-secondary)]">Curve LP is a more passive experience. Deposit into a pool, stake in a gauge, and earn swap fees plus CRV rewards. Impermanent loss on stable pools is minimal. Uniswap V3 LP requires active management: choosing price ranges, monitoring positions, and adjusting ranges as prices move. Out-of-range positions earn zero fees. This makes Curve more suitable for set-and-forget LPs while Uniswap rewards those willing to actively manage positions.</p>
-        <h3 className="text-xl font-bold text-white mt-6 mb-3">Tokenomics and Governance</h3>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Tokenomics and Governance</h3>
         <p className="text-[var(--color-text-secondary)]">CRV&apos;s vote-locking mechanism (veCRV) creates strong incentive alignment. Locking CRV for up to 4 years boosts LP rewards and grants voting power over emission allocations. This created the Curve Wars ecosystem where protocols compete for veCRV influence. UNI governance is more straightforward, with token holders voting on protocol changes. Uniswap has significant protocol fee revenue potential that has not yet been fully activated through governance.</p>
       </section>
       <FAQSection faqs={faqs} />

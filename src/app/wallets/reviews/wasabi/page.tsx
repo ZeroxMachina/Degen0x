@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Wasabi Wallet Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Wasabi Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "Wasabi Wallet review covering CoinJoin privacy features, Tor integration, coin control, and Bitcoin privacy best practices.",
 };
 

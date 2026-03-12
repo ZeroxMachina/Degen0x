@@ -12,11 +12,16 @@ export default function MantleEcosystemGuidePage() {
   return (
     <LearnPageLayout title="Mantle Ecosystem Guide" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Mantle Network is a modular Layer 2 scaling solution for Ethereum that separates transaction execution from data availability. Backed by one of the largest DAO treasuries in crypto (BitDAO/Mantle), the network offers low-cost EVM-compatible transactions while leveraging innovative data availability solutions to reduce costs further than traditional rollups."
       toc={[
-        { id: "overview", title: "Mantle Overview", level: 2 },
-        { id: "architecture", title: "Modular Architecture", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "mantle-overview", title: "Mantle Overview", level: 2 },
+        { id: "architecture", title: "architecture", level: 2 },
+        { id: "modular-architecture", title: "Modular Architecture", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
         { id: "ecosystem", title: "Ecosystem", level: 2 },
+        { id: "mnt-token", title: "mnt-token", level: 2 },
         { id: "mnt-token", title: "MNT Token", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What makes Mantle different from other L2s?", answer: "Mantle uses a modular architecture that separates execution from data availability. Instead of posting all transaction data to Ethereum (which is expensive), Mantle uses its own data availability solution, significantly reducing costs while maintaining security through fraud proofs and Ethereum settlement." },

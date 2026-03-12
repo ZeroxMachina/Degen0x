@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Fractional NFTs: Shared Ownership Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Fractional NFTs: Shared Ownership Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how fractional NFTs enable shared ownership of expensive digital assets. Understand fractionalization platforms, governance, and how to invest in fractional NFT shares.",
 };
 
@@ -16,11 +16,16 @@ export default function NftFractionalizationPage() {
       readTime="9 min"
       intro="Fractional NFTs allow multiple people to own shares of a single NFT, making expensive digital assets accessible to a broader audience. Instead of needing hundreds of ETH to buy a CryptoPunk, you can own a fraction for a few dollars. Fractionalization divides an NFT's ownership into fungible tokens that can be bought, sold, and traded on decentralized exchanges. This guide explains how fractionalization works, the major platforms, and the considerations for fractional NFT investors."
       toc={[
-        { id: "how-it-works", title: "How NFT Fractionalization Works", level: 2 },
-        { id: "platforms", title: "Fractionalization Platforms", level: 2 },
-        { id: "governance", title: "Governance and Decision Making", level: 2 },
-        { id: "investing", title: "Investing in Fractional NFTs", level: 2 },
-        { id: "risks-considerations", title: "Risks and Considerations", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-nft-fractionalization-works", title: "How NFT Fractionalization Works", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "fractionalization-platforms", title: "Fractionalization Platforms", level: 2 },
+        { id: "governance", title: "governance", level: 2 },
+        { id: "governance-and-decision-making", title: "Governance and Decision Making", level: 2 },
+        { id: "investing", title: "investing", level: 2 },
+        { id: "investing-in-fractional-nfts", title: "Investing in Fractional NFTs", level: 2 },
+        { id: "risks-considerations", title: "risks-considerations", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Can I get the whole NFT if I buy all the fractions?", answer: "In most fractionalization protocols, buying all or a supermajority of fractions triggers a buyout mechanism. The specific threshold and process vary by platform. On Tessera (formerly Fractional.art), anyone can start a buyout by bidding on the whole NFT, and fraction holders vote on whether to accept. Successfully acquiring all fractions reconstitutes the original NFT." },

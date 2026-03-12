@@ -17,11 +17,16 @@ export default function WhatAreLayer3sPage() {
       readTime="9 min read"
       intro="Layer 3 solutions represent the cutting edge of blockchain scaling, building on top of Layer 2s to provide even greater throughput, lower costs, and specialized functionality. While Layer 2s provide significant improvements over Layer 1 blockchains, Layer 3s enable developers to create customized scaling solutions optimized for specific applications. Understanding how Layer 3s fit into the multi-layer blockchain architecture is essential for navigating the future of decentralized applications."
       toc={[
-        { id: "blockchain-layers", title: "Understanding Blockchain Layers", level: 2 },
-        { id: "layer-3-basics", title: "What Are Layer 3s?", level: 2 },
-        { id: "layer-3-types", title: "Types of Layer 3 Solutions", level: 2 },
-        { id: "use-cases", title: "Layer 3 Use Cases", level: 2 },
-        { id: "future-of-l3", title: "The Future of Layer 3s", level: 2 },
+        { id: "blockchain-layers", title: "blockchain-layers", level: 2 },
+        { id: "understanding-blockchain-layers", title: "Understanding Blockchain Layers", level: 2 },
+        { id: "layer-3-basics", title: "layer-3-basics", level: 2 },
+        { id: "what-are-layer-3s", title: "What Are Layer 3s?", level: 2 },
+        { id: "layer-3-types", title: "layer-3-types", level: 2 },
+        { id: "types-of-layer-3-solutions", title: "Types of Layer 3 Solutions", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "layer-3-use-cases", title: "Layer 3 Use Cases", level: 2 },
+        { id: "future-of-l3", title: "future-of-l3", level: 2 },
+        { id: "the-future-of-layer-3s", title: "The Future of Layer 3s", level: 2 }
       ]}
       faqs={[
         {

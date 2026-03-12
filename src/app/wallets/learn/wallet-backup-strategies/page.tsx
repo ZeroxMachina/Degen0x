@@ -16,12 +16,18 @@ export default function WalletBackupStrategiesPage() {
       readTime="9 min"
       intro="Losing access to your cryptocurrency wallet means losing your funds permanently. Unlike a bank, there is no customer support to help you recover lost crypto. A robust backup strategy is the single most important thing you can do to protect your digital assets. This guide covers proven backup methods, common mistakes, and strategies for different levels of holdings."
       toc={[
+        { id: "why-backups-matter", title: "why-backups-matter", level: 2 },
         { id: "why-backups-matter", title: "Why Backups Matter", level: 2 },
+        { id: "what-to-back-up", title: "what-to-back-up", level: 2 },
         { id: "what-to-back-up", title: "What to Back Up", level: 2 },
-        { id: "backup-methods", title: "Backup Methods Compared", level: 2 },
-        { id: "redundancy", title: "Redundancy & Geographic Distribution", level: 2 },
-        { id: "testing", title: "Testing Your Backups", level: 2 },
-        { id: "inheritance", title: "Inheritance & Emergency Access", level: 2 },
+        { id: "backup-methods", title: "backup-methods", level: 2 },
+        { id: "backup-methods-compared", title: "Backup Methods Compared", level: 2 },
+        { id: "redundancy", title: "redundancy", level: 2 },
+        { id: "redundancy-geographic-distribution", title: "Redundancy & Geographic Distribution", level: 2 },
+        { id: "testing", title: "testing", level: 2 },
+        { id: "testing-your-backups", title: "Testing Your Backups", level: 2 },
+        { id: "inheritance", title: "inheritance", level: 2 },
+        { id: "inheritance-emergency-access", title: "Inheritance & Emergency Access", level: 2 }
       ]}
       faqs={[
         {

@@ -39,7 +39,7 @@ export default function BestPrivacyWalletsPage() {
       />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Privacy Crypto Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Privacy Crypto Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
           Financial privacy is a fundamental right. The best privacy wallets minimize data exposure,
           support transaction mixing, run over Tor, require no identity verification, and keep your
@@ -49,18 +49,18 @@ export default function BestPrivacyWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">Quick Verdict</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Quick Verdict</h2>
         <p className="text-[var(--color-text-secondary)]">
-          <strong className="text-white">Trezor</strong> wallets are the privacy leaders with CoinJoin integration,
+          <strong className="text-[var(--color-text)]">Trezor</strong> wallets are the privacy leaders with CoinJoin integration,
           Tor support, passphrase-protected hidden wallets, and fully open-source code. For EVM DeFi users,
-          <strong className="text-white"> Rabby</strong> and <strong className="text-white">MetaMask</strong> are
+          <strong className="text-[var(--color-text)]"> Rabby</strong> and <strong className="text-[var(--color-text)]">MetaMask</strong> are
           solid choices as they require no KYC and offer local key storage. All self-custody wallets provide
           a baseline level of privacy since they do not require identity verification.
         </p>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Privacy Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Privacy Wallets, Ranked</h2>
         <div className="space-y-6">
           {privacyWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -77,18 +77,18 @@ export default function BestPrivacyWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/reviews/trezor" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Trezor Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Trezor Review</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Best privacy hardware wallet</p>
           </Link>
           <Link href="/wallets/best/security" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best for Security</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best for Security</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Most secure wallet options</p>
           </Link>
           <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Security Best Practices</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Security Best Practices</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Protect your privacy</p>
           </Link>
         </div>

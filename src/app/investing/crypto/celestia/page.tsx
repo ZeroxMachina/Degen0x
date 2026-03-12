@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Celestia (TIA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Celestia (TIA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Celestia (TIA), the first modular data availability network. Discover how it works, tokenomics, use cases, and how to buy TIA.",
 };
@@ -17,12 +17,18 @@ export default function CelestiaPage() {
       readTime="9 min read"
       intro="Celestia is the first modular data availability network, providing a dedicated layer for blockchain data publishing that enables rollups and Layer 2 chains to scale efficiently. TIA is the native token used for paying data availability fees, staking, and governance of the network."
       toc={[
-        { id: "what-is", title: "What Is Celestia?", level: 2 },
-        { id: "how-it-works", title: "How Does Celestia Work?", level: 2 },
-        { id: "tokenomics", title: "TIA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy TIA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-celestia", title: "What Is Celestia?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-celestia-work", title: "How Does Celestia Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "tia-tokenomics", title: "TIA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-tia", title: "How to Buy TIA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

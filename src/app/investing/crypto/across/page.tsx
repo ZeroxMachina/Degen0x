@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Across Protocol (ACX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Across Protocol (ACX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Across Protocol (ACX), the optimistic bridge powered by UMA's oracle. Discover how it works, tokenomics, use cases, and how to buy ACX.",
 };
@@ -17,12 +17,18 @@ export default function AcrossPage() {
       readTime="8 min read"
       intro="Across Protocol is a cross-chain bridge that uses an optimistic oracle verification system powered by UMA to provide fast and capital-efficient token transfers between Ethereum and Layer 2 networks. Known for its speed and low fees, Across has become a popular bridge choice for users moving assets between rollups."
       toc={[
-        { id: "what-is", title: "What Is Across Protocol?", level: 2 },
-        { id: "how-it-works", title: "How Does Across Protocol Work?", level: 2 },
-        { id: "tokenomics", title: "ACX Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ACX", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-across-protocol", title: "What Is Across Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-across-protocol-work", title: "How Does Across Protocol Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "acx-tokenomics", title: "ACX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-acx", title: "How to Buy ACX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

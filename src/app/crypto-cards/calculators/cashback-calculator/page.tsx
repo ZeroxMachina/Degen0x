@@ -129,7 +129,7 @@ export default function CashbackCalculatorPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto Cashback Calculator
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -140,7 +140,7 @@ export default function CashbackCalculatorPage() {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="space-y-6">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h2 className="text-xl font-semibold text-white mb-6">Monthly Spending by Category</h2>
+            <h2 className="text-xl font-semibold text-[var(--color-text)] mb-6">Monthly Spending by Category</h2>
 
             <div className="space-y-4">
               {CATEGORIES.map((cat) => (
@@ -156,7 +156,7 @@ export default function CashbackCalculatorPage() {
                       max={50000}
                       value={spending[cat.key]}
                       onChange={(e) => updateSpending(cat.key, Number(e.target.value))}
-                      className="flex-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+                      className="flex-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                     />
                   </div>
                 </div>
@@ -164,14 +164,14 @@ export default function CashbackCalculatorPage() {
               <div className="pt-3 border-t border-[var(--color-border)]">
                 <div className="flex justify-between">
                   <span className="text-sm font-medium text-[var(--color-text-secondary)]">Total Monthly</span>
-                  <span className="text-lg font-bold text-white">${totalSpending.toLocaleString()}</span>
+                  <span className="text-lg font-bold text-[var(--color-text)]">${totalSpending.toLocaleString()}</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h2 className="text-xl font-semibold text-white mb-4">Select Cards to Compare (up to 5)</h2>
+            <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Select Cards to Compare (up to 5)</h2>
             <div className="space-y-2 max-h-64 overflow-y-auto">
               {CARDS.map((card, i) => (
                 <label
@@ -193,7 +193,7 @@ export default function CashbackCalculatorPage() {
 
         <div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h2 className="text-xl font-semibold text-white mb-6">Cashback Comparison</h2>
+            <h2 className="text-xl font-semibold text-[var(--color-text)] mb-6">Cashback Comparison</h2>
 
             {results.length === 0 ? (
               <p className="text-[var(--color-text-secondary)]">Select at least one card to see results.</p>
@@ -207,7 +207,7 @@ export default function CashbackCalculatorPage() {
                     <div key={result.card.name} className="rounded-lg bg-[var(--color-bg)] p-4">
                       <div className="flex justify-between items-start mb-2">
                         <div>
-                          <span className="text-sm font-medium text-white">
+                          <span className="text-sm font-medium text-[var(--color-text)]">
                             {index === 0 && results.length > 1 && result.monthly > 0 ? "🏆 " : ""}
                             {result.card.name}
                           </span>
@@ -233,7 +233,7 @@ export default function CashbackCalculatorPage() {
                         </div>
                         <div>
                           <p className="text-xs text-[var(--color-text-secondary)]">Yearly</p>
-                          <p className="text-lg font-bold text-white">
+                          <p className="text-lg font-bold text-[var(--color-text)]">
                             ${(result.monthly * 12).toFixed(2)}
                           </p>
                         </div>
@@ -243,7 +243,7 @@ export default function CashbackCalculatorPage() {
                         {CATEGORIES.map((cat) => (
                           <div key={cat.key} className="text-center">
                             <p className="text-[10px] text-[var(--color-text-secondary)]">{cat.label}</p>
-                            <p className="text-xs font-medium text-white">
+                            <p className="text-xs font-medium text-[var(--color-text)]">
                               {result.card.rates[cat.key]}%
                             </p>
                           </div>
@@ -256,7 +256,7 @@ export default function CashbackCalculatorPage() {
                 {results.length > 1 && results[0].monthly > results[results.length - 1].monthly && (
                   <div className="rounded-lg border border-[var(--color-primary)] bg-[var(--color-bg)] p-4 mt-4">
                     <p className="text-sm text-[var(--color-text-secondary)]">
-                      <strong className="text-white">{results[0].card.name}</strong> earns you{" "}
+                      <strong className="text-[var(--color-text)]">{results[0].card.name}</strong> earns you{" "}
                       <strong className="text-[var(--color-primary)]">
                         ${((results[0].monthly - results[results.length - 1].monthly) * 12).toFixed(2)} more per year
                       </strong>{" "}

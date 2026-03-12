@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function ParachainPage() {
   return (
     <LearnPageLayout title="What Is a Parachain?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="A parachain is an application-specific blockchain that runs in parallel within the Polkadot or Kusama network, sharing the security of the central relay chain. The name comes from 'parallelized chain' — multiple parachains process transactions simultaneously while the relay chain coordinates consensus and enables cross-chain communication. Parachains allow different blockchains to be purpose-built for specific use cases while benefiting from shared security and native interoperability."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "how-it-works", title: "How It Works", level: 2 },{ id: "parachain-slots", title: "Parachain Slots and Auctions", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-it-works", title: "How It Works", level: 2 },
+        { id: "parachain-slots", title: "parachain-slots", level: 2 },
+        { id: "parachain-slots-and-auctions", title: "Parachain Slots and Auctions", level: 2 }
+      ]}
       faqs={[
         { question: "How many parachains can Polkadot support?", answer: "Polkadot was initially designed to support approximately 100 parachain slots, though this number can increase through governance decisions and technical upgrades. Kusama, Polkadot's canary network, serves as a testing ground where parachains can deploy with lower barriers. Not all slots need to be permanently leased — parathreads provide a pay-as-you-go alternative for chains that do not need continuous block production." },
         { question: "What is the difference between a parachain and a sidechain?", answer: "Parachains inherit security from Polkadot's relay chain — the same validators that secure Polkadot also validate parachain blocks. Sidechains (like Polygon PoS relative to Ethereum) have their own independent validator sets and security assumptions. This shared security model means parachains do not need to bootstrap their own validator network, but they are also more dependent on the relay chain's functionality and must secure a slot through auctions or agile coretime purchases." },

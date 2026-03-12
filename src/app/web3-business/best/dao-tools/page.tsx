@@ -106,7 +106,7 @@ export default function DaoToolsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best DAO Governance Tools ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -123,16 +123,16 @@ export default function DaoToolsPage() {
           flexibility, and adoption to help you choose the right infrastructure for your DAO.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Snapshot</strong> dominates off-chain voting with its gasless
+          <strong className="text-[var(--color-text)]">Snapshot</strong> dominates off-chain voting with its gasless
           approach and massive ecosystem adoption. For binding on-chain governance,{" "}
-          <strong className="text-white">Tally</strong> provides the best user experience for Governor-based
+          <strong className="text-[var(--color-text)]">Tally</strong> provides the best user experience for Governor-based
           DAOs. Teams building a new DAO from the ground up should consider{" "}
-          <strong className="text-white">Aragon</strong> for its comprehensive creation and management toolkit.
+          <strong className="text-[var(--color-text)]">Aragon</strong> for its comprehensive creation and management toolkit.
         </p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -146,26 +146,26 @@ export default function DaoToolsPage() {
       </section>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Governance Stack Recommendations</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Governance Stack Recommendations</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Small Teams (5-20 members)</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Small Teams (5-20 members)</h3>
               <p className="text-sm">Use Snapshot for proposals and voting combined with a Gnosis Safe multi-sig for treasury execution. This gives you transparent decision-making with minimal overhead.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Growing DAOs (50-500 members)</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Growing DAOs (50-500 members)</h3>
               <p className="text-sm">Combine Snapshot for temperature checks with Tally for binding on-chain votes on major decisions. Implement delegation to keep participation high as your community scales.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Large Protocol DAOs (500+ members)</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Large Protocol DAOs (500+ members)</h3>
               <p className="text-sm">Full governance stack with Snapshot signaling, Tally on-chain execution, time-lock contracts, delegation profiles, and governance analytics. Consider a governance council for day-to-day operations.</p>
             </div>
           </div>

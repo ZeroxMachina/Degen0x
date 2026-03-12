@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is AltLayer (ALT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is AltLayer (ALT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about AltLayer (ALT), the rollups-as-a-service protocol for deploying custom rollups. Discover how it works, tokenomics, use cases, and how to buy ALT.",
 };
@@ -17,12 +17,18 @@ export default function AltLayerPage() {
       readTime="8 min read"
       intro="AltLayer is a rollups-as-a-service (RaaS) protocol that allows developers to deploy custom rollups with no-code tooling across multiple rollup stacks including OP Stack, Arbitrum Orbit, and ZK Stack. AltLayer also provides restaked rollups through its integration with EigenLayer, enabling rollups to inherit Ethereum's economic security through restaking. ALT is the governance and utility token that powers the AltLayer ecosystem."
       toc={[
-        { id: "what-is", title: "What Is AltLayer?", level: 2 },
-        { id: "how-it-works", title: "How Does AltLayer Work?", level: 2 },
-        { id: "tokenomics", title: "ALT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ALT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-altlayer", title: "What Is AltLayer?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-altlayer-work", title: "How Does AltLayer Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "alt-tokenomics", title: "ALT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-alt", title: "How to Buy ALT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Market Making in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Market Making in Crypto (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how crypto market making works. Understand bid-ask spreads, inventory management, and how market makers provide liquidity for profit.",
 };
@@ -17,10 +17,14 @@ export default function MarketMakingPage() {
       readTime="9 min read"
       intro="Market making is the practice of providing liquidity by simultaneously placing buy and sell orders, profiting from the bid-ask spread. In crypto markets, market makers play a critical role in ensuring efficient price discovery and tight spreads. This guide explains how market making works, the strategies involved, and the risks that market makers must manage."
       toc={[
+        { id: "how-market-making-works", title: "how-market-making-works", level: 2 },
         { id: "how-market-making-works", title: "How Market Making Works", level: 2 },
-        { id: "strategies", title: "Market Making Strategies", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "market-making-strategies", title: "Market Making Strategies", level: 2 },
+        { id: "inventory-management", title: "inventory-management", level: 2 },
         { id: "inventory-management", title: "Inventory Management", level: 2 },
-        { id: "risks-rewards", title: "Risks and Rewards", level: 2 },
+        { id: "risks-rewards", title: "risks-rewards", level: 2 },
+        { id: "risks-and-rewards", title: "Risks and Rewards", level: 2 }
       ]}
       faqs={[
         { question: "Can individuals be market makers in crypto?", answer: "Yes, individual traders can act as market makers on centralized and decentralized exchanges. However, professional market making requires significant capital, sophisticated software, and deep understanding of microstructure. Providing liquidity on DEX AMMs is a simpler way for individuals to participate in market making." },

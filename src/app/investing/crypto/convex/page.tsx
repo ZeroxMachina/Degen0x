@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Convex Finance (CVX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Convex Finance (CVX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Convex Finance (CVX), the protocol that maximizes Curve Finance yields without locking CRV. Discover CVX tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function ConvexPage() {
       readTime="8 min read"
       intro="Convex Finance (CVX) is a DeFi protocol built on top of Curve Finance that allows Curve liquidity providers and CRV holders to earn enhanced yields without directly locking their CRV tokens. Convex has become the largest holder of veCRV, giving it significant influence over Curve's gauge emissions and positioning it as a central player in the Curve Wars."
       toc={[
-        { id: "what-is", title: "What Is Convex Finance?", level: 2 },
-        { id: "how-it-works", title: "How Does Convex Finance Work?", level: 2 },
-        { id: "tokenomics", title: "CVX Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy CVX", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-convex-finance", title: "What Is Convex Finance?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-convex-finance-work", title: "How Does Convex Finance Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "cvx-tokenomics", title: "CVX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-cvx", title: "How to Buy CVX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

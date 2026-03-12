@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How Exchange Insurance Works (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How Exchange Insurance Works (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how crypto exchange insurance works. FDIC coverage, SAFU funds, custodial insurance, what's covered, and how to protect your crypto assets.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeInsurance() {
       readTime="8 min read"
       intro="Crypto exchange insurance is one of the most misunderstood aspects of the industry. Some exchanges offer robust protection while others provide minimal coverage. After high-profile collapses like FTX, understanding exactly what is and is not insured has become essential for every crypto user. This guide breaks down the different types of exchange insurance and their limitations."
       toc={[
-        { id: "types", title: "Types of Exchange Insurance", level: 2 },
-        { id: "fdic", title: "FDIC and Fiat Insurance", level: 2 },
-        { id: "hot-wallet", title: "Hot Wallet Insurance", level: 2 },
-        { id: "self-insurance", title: "Self-Insurance Funds", level: 2 },
-        { id: "not-covered", title: "What Is NOT Covered", level: 2 },
-        { id: "evaluating", title: "Evaluating Exchange Coverage", level: 2 },
-        { id: "protecting", title: "Protecting Yourself", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-exchange-insurance", title: "Types of Exchange Insurance", level: 2 },
+        { id: "fdic", title: "fdic", level: 2 },
+        { id: "fdic-and-fiat-insurance", title: "FDIC and Fiat Insurance", level: 2 },
+        { id: "hot-wallet", title: "hot-wallet", level: 2 },
+        { id: "hot-wallet-insurance", title: "Hot Wallet Insurance", level: 2 },
+        { id: "self-insurance", title: "self-insurance", level: 2 },
+        { id: "self-insurance-funds", title: "Self-Insurance Funds", level: 2 },
+        { id: "not-covered", title: "not-covered", level: 2 },
+        { id: "what-is-not-covered", title: "What Is NOT Covered", level: 2 },
+        { id: "evaluating", title: "evaluating", level: 2 },
+        { id: "evaluating-exchange-coverage", title: "Evaluating Exchange Coverage", level: 2 },
+        { id: "protecting", title: "protecting", level: 2 },
+        { id: "protecting-yourself", title: "Protecting Yourself", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto insured like bank deposits?", answer: "No. Crypto itself is not FDIC insured. However, USD cash balances held at certain US exchanges may be FDIC insured up to $250,000 through partner banks. This only covers the cash, not your crypto holdings." },

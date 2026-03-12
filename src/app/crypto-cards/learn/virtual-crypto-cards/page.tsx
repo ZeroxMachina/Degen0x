@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Virtual Crypto Cards Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Virtual Crypto Cards Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about virtual crypto cards, how they work for online payments, their security advantages, instant issuance benefits, and the best virtual crypto card options.",
 };
 
@@ -11,7 +11,16 @@ export default function VirtualCryptoCardsPage() {
   return (
     <LearnPageLayout title="Virtual Crypto Cards Explained" categoryName="Crypto Cards" categorySlug="crypto-cards" readTime="7 min read"
       intro="Virtual crypto cards are digital-only payment cards that exist entirely within your phone or computer, with no physical plastic card. They provide instant access to crypto spending for online purchases, subscription management, and contactless payments through mobile wallets like Apple Pay and Google Pay. Virtual cards offer unique security advantages over physical cards, including the ability to generate disposable card numbers and instantly freeze or replace compromised cards. This guide covers how virtual crypto cards work, their benefits, and the best options available."
-      toc={[{ id: "what-are-virtual-cards", title: "What Are Virtual Cards", level: 2 }, { id: "security-advantages", title: "Security Advantages", level: 2 }, { id: "use-cases", title: "Best Use Cases", level: 2 }, { id: "top-virtual-cards", title: "Top Virtual Crypto Cards", level: 2 }]}
+      toc={[
+        { id: "what-are-virtual-cards", title: "what-are-virtual-cards", level: 2 },
+        { id: "what-are-virtual-cards", title: "What Are Virtual Cards", level: 2 },
+        { id: "security-advantages", title: "security-advantages", level: 2 },
+        { id: "security-advantages", title: "Security Advantages", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "best-use-cases", title: "Best Use Cases", level: 2 },
+        { id: "top-virtual-cards", title: "top-virtual-cards", level: 2 },
+        { id: "top-virtual-crypto-cards", title: "Top Virtual Crypto Cards", level: 2 }
+      ]}
       faqs={[{ question: "Can I use a virtual crypto card in physical stores?", answer: "Yes, through mobile wallet integration. Add your virtual card to Apple Pay, Google Pay, or Samsung Pay, and use contactless payment (tap-to-pay) at any terminal that supports NFC payments. This effectively gives you the functionality of a physical card through your phone. However, for chip-and-PIN transactions at merchants without contactless terminals, you would need a physical card." },
         { question: "How quickly can I get a virtual crypto card?", answer: "Virtual cards are typically issued instantly after account verification. Once you complete KYC (identity verification), which can take minutes to hours, you can receive your virtual card details immediately. This is a significant advantage over physical cards, which require manufacturing and shipping (typically 1-3 weeks). Many users start with a virtual card and order a physical card later as a supplement." },
         { question: "Are virtual cards safer than physical cards?", answer: "Virtual cards offer several security advantages: no risk of physical card theft, ability to generate disposable numbers for one-time purchases, instant freeze capability from your phone, and no card details visible to store clerks or security cameras. They are not immune to all fraud (phishing can still compromise card details), but the attack surface is smaller and the response time for compromising events is much faster." }]}

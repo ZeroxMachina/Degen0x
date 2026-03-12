@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Buying Gift Cards with Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Buying Gift Cards with Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to buy gift cards with Bitcoin and other cryptocurrencies. Compare platforms like Bitrefill, Fold, and CoinGate for the best deals and cashback rewards.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoGiftCardsPage() {
       readTime="8 min"
       intro="Gift cards are one of the most popular and practical ways to spend cryptocurrency. Platforms like Bitrefill, Fold, and CoinGate let you convert BTC, ETH, and other cryptocurrencies into gift cards for hundreds of retailers including Amazon, Walmart, Target, and Uber. Many offer cashback in crypto, making it a rewarding way to spend your digital assets on everyday purchases."
       toc={[
-        { id: "top-platforms", title: "Top Gift Card Platforms", level: 2 },
-        { id: "how-it-works", title: "How Buying Gift Cards Works", level: 2 },
-        { id: "supported-retailers", title: "Supported Retailers and Brands", level: 2 },
-        { id: "cashback-rewards", title: "Cashback and Rewards", level: 2 },
-        { id: "tips-best-deals", title: "Tips for Getting the Best Deals", level: 2 },
+        { id: "top-platforms", title: "top-platforms", level: 2 },
+        { id: "top-gift-card-platforms", title: "Top Gift Card Platforms", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-buying-gift-cards-works", title: "How Buying Gift Cards Works", level: 2 },
+        { id: "supported-retailers", title: "supported-retailers", level: 2 },
+        { id: "supported-retailers-and-brands", title: "Supported Retailers and Brands", level: 2 },
+        { id: "cashback-rewards", title: "cashback-rewards", level: 2 },
+        { id: "cashback-and-rewards", title: "Cashback and Rewards", level: 2 },
+        { id: "tips-best-deals", title: "tips-best-deals", level: 2 },
+        { id: "tips-for-getting-the-best-deals", title: "Tips for Getting the Best Deals", level: 2 }
       ]}
       faqs={[
         { question: "Which platform has the most gift card options?", answer: "Bitrefill offers the widest selection with gift cards for over 4,000 businesses across 170+ countries. CoinGate and Coinsbee also have extensive catalogs. The selection varies by country, so check which retailers are available in your region before choosing a platform." },

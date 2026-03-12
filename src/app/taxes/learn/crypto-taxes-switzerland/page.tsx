@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Switzerland (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Switzerland (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Switzerland. Learn about the wealth tax, capital gains exemptions, and how Swiss crypto investors benefit from one of the most favorable tax regimes.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesSwitzerlandPage() {
       readTime="9 min read"
       intro="Switzerland is widely regarded as one of the most crypto-friendly countries for taxation. Private investors benefit from no capital gains tax on crypto profits, though wealth tax applies to holdings and income received in crypto is taxable. The Swiss Federal Tax Administration (FTA) provides official valuations for major cryptocurrencies, and each canton may have different wealth tax rates. Understanding the distinction between private investing and professional trading is crucial, as professional traders lose the capital gains exemption."
       toc={[
-        { id: "capital-gains", title: "Capital Gains Tax Exemption", level: 2 },
-        { id: "wealth-tax", title: "Wealth Tax on Crypto", level: 2 },
-        { id: "income-tax", title: "Income Tax on Crypto", level: 2 },
-        { id: "professional-trading", title: "Professional vs Private Trading", level: 2 },
-        { id: "cantonal-differences", title: "Cantonal Differences", level: 2 },
+        { id: "capital-gains", title: "capital-gains", level: 2 },
+        { id: "capital-gains-tax-exemption", title: "Capital Gains Tax Exemption", level: 2 },
+        { id: "wealth-tax", title: "wealth-tax", level: 2 },
+        { id: "wealth-tax-on-crypto", title: "Wealth Tax on Crypto", level: 2 },
+        { id: "income-tax", title: "income-tax", level: 2 },
+        { id: "income-tax-on-crypto", title: "Income Tax on Crypto", level: 2 },
+        { id: "professional-trading", title: "professional-trading", level: 2 },
+        { id: "professional-vs-private-trading", title: "Professional vs Private Trading", level: 2 },
+        { id: "cantonal-differences", title: "cantonal-differences", level: 2 },
+        { id: "cantonal-differences", title: "Cantonal Differences", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto tax-free in Switzerland?", answer: "Capital gains from crypto are tax-free for private investors in Switzerland. However, crypto holdings are subject to annual wealth tax, and income received in crypto (mining, staking, salary) is subject to income tax. Professional traders do not benefit from the capital gains exemption." },

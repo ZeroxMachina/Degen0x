@@ -17,11 +17,16 @@ export default function CryptoCardFeesExplainedPage() {
       readTime="9 min"
       intro="Crypto cards often advertise 'no annual fee' and 'zero transaction fees,' but the real cost of using these cards extends beyond the headline numbers. Conversion spreads, ATM charges, foreign transaction fees, inactivity penalties, and staking opportunity costs all affect your bottom line. This guide exposes every fee category so you can calculate the true cost of your crypto card."
       toc={[
-        { id: "conversion-fees", title: "Conversion Spreads and Liquidation Fees", level: 2 },
-        { id: "atm-and-foreign", title: "ATM and Foreign Transaction Fees", level: 2 },
-        { id: "hidden-fees", title: "Hidden Fees and Penalties", level: 2 },
-        { id: "staking-costs", title: "The True Cost of Staking", level: 2 },
-        { id: "fee-comparison", title: "Fee Comparison Across Major Cards", level: 2 },
+        { id: "conversion-fees", title: "conversion-fees", level: 2 },
+        { id: "conversion-spreads-and-liquidation-fees", title: "Conversion Spreads and Liquidation Fees", level: 2 },
+        { id: "atm-and-foreign", title: "atm-and-foreign", level: 2 },
+        { id: "atm-and-foreign-transaction-fees", title: "ATM and Foreign Transaction Fees", level: 2 },
+        { id: "hidden-fees", title: "hidden-fees", level: 2 },
+        { id: "hidden-fees-and-penalties", title: "Hidden Fees and Penalties", level: 2 },
+        { id: "staking-costs", title: "staking-costs", level: 2 },
+        { id: "the-true-cost-of-staking", title: "The True Cost of Staking", level: 2 },
+        { id: "fee-comparison", title: "fee-comparison", level: 2 },
+        { id: "fee-comparison-across-major-cards", title: "Fee Comparison Across Major Cards", level: 2 }
       ]}
       faqs={[
         {

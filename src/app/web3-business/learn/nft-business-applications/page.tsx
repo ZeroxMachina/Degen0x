@@ -16,10 +16,14 @@ export default function NftBusinessApplicationsPage() {
       readTime="10 min"
       intro="NFTs offer businesses tools for customer loyalty, digital authentication, ticketing, supply chain tracking, and IP management beyond digital art, creating real value across industries."
       toc={[
-        { id: "section-1", title: "Business Use Cases", level: 2 },
-        { id: "section-2", title: "Implementation Strategies", level: 2 },
-        { id: "section-3", title: "ROI and Metrics", level: 2 },
-        { id: "section-4", title: "Getting Started", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "business-use-cases", title: "Business Use Cases", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "implementation-strategies", title: "Implementation Strategies", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "roi-and-metrics", title: "ROI and Metrics", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "How can businesses use NFTs beyond digital art?", answer: "Businesses use NFTs for loyalty programs, event ticketing, product authentication, supply chain tracking, membership access, digital credentials, and customer engagement. Each application leverages NFTs' unique properties of verifiable ownership and programmable functionality." },

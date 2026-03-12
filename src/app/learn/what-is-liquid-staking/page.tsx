@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Liquid Staking? (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Liquid Staking? (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about liquid staking: how it works, the benefits of liquid staking tokens like stETH, major protocols like Lido and Rocket Pool, and the risks to consider.",
 };
@@ -17,11 +17,16 @@ export default function WhatIsLiquidStakingPage() {
       readTime="8 min read"
       intro="Liquid staking allows you to stake your cryptocurrency to earn staking rewards while simultaneously receiving a liquid derivative token that represents your staked position. This derivative can be used across DeFi — as collateral for borrowing, in liquidity pools, or in other yield strategies — effectively giving you the benefits of staking without the opportunity cost of locked capital. Liquid staking has grown to become one of the largest sectors in DeFi, with protocols like Lido managing tens of billions in staked assets."
       toc={[
-        { id: "how-it-works", title: "How Liquid Staking Works", level: 2 },
-        { id: "major-protocols", title: "Major Liquid Staking Protocols", level: 2 },
-        { id: "benefits", title: "Benefits of Liquid Staking", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
-        { id: "lst-defi", title: "Using LSTs in DeFi", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-liquid-staking-works", title: "How Liquid Staking Works", level: 2 },
+        { id: "major-protocols", title: "major-protocols", level: 2 },
+        { id: "major-liquid-staking-protocols", title: "Major Liquid Staking Protocols", level: 2 },
+        { id: "benefits", title: "benefits", level: 2 },
+        { id: "benefits-of-liquid-staking", title: "Benefits of Liquid Staking", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 },
+        { id: "lst-defi", title: "lst-defi", level: 2 },
+        { id: "using-lsts-in-defi", title: "Using LSTs in DeFi", level: 2 }
       ]}
       faqs={[
         {

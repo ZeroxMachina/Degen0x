@@ -17,13 +17,20 @@ export default function HowToBuyUniswapPage() {
       readTime="10 min"
       intro="Uniswap (UNI) is a leading decentralized exchange protocol built on Ethereum that enables automated token trading. This comprehensive guide walks you through everything you need to know about purchasing UNI, from choosing the right exchange to securing your investment in a personal wallet."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose a Crypto Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-uniswap", title: "Step 4: Buy Uniswap", level: 2 },
-        { id: "storage-options", title: "Step 5: Storage Options", level: 2 },
-        { id: "investment-strategies", title: "Investment Strategies for UNI", level: 2 },
-        { id: "is-good-investment", title: "Is Uniswap a Good Investment?", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-a-crypto-exchange", title: "Step 1: Choose a Crypto Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-uniswap", title: "buy-uniswap", level: 2 },
+        { id: "step-4-buy-uniswap", title: "Step 4: Buy Uniswap", level: 2 },
+        { id: "storage-options", title: "storage-options", level: 2 },
+        { id: "step-5-storage-options", title: "Step 5: Storage Options", level: 2 },
+        { id: "investment-strategies", title: "investment-strategies", level: 2 },
+        { id: "investment-strategies-for-uni", title: "Investment Strategies for UNI", level: 2 },
+        { id: "is-good-investment", title: "is-good-investment", level: 2 },
+        { id: "is-uniswap-a-good-investment", title: "Is Uniswap a Good Investment?", level: 2 }
       ]}
       faqs={[
         { question: "What is the minimum amount needed to buy Uniswap?", answer: "Most exchanges allow you to buy fractional amounts of UNI starting from as little as $1 to $10, making it accessible for investors with any budget. The exact minimum varies by exchange and payment method." },

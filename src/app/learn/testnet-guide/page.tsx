@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Testnet Guide: How to Use Crypto Testnets (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Testnet Guide: How to Use Crypto Testnets (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what crypto testnets are, how to use them, where to get testnet tokens, and how testnet participation can position you for future airdrops.",
 };
@@ -17,10 +17,14 @@ export default function TestnetGuidePage() {
       readTime="8 min read"
       intro="Testnets are sandbox versions of blockchain networks where developers and users can test applications without risking real money. Testnet tokens have no monetary value, making them safe environments for learning, experimentation, and early protocol testing. For airdrop hunters, testnet participation has become an important qualification criterion, as many projects reward users who helped test their platforms before mainnet launch."
       toc={[
+        { id: "what-are-testnets", title: "what-are-testnets", level: 2 },
         { id: "what-are-testnets", title: "What Are Testnets?", level: 2 },
+        { id: "getting-testnet-tokens", title: "getting-testnet-tokens", level: 2 },
         { id: "getting-testnet-tokens", title: "Getting Testnet Tokens", level: 2 },
-        { id: "participating-in-testnets", title: "How to Participate in Testnets", level: 2 },
-        { id: "testnets-and-airdrops", title: "Testnets and Airdrop Opportunities", level: 2 },
+        { id: "participating-in-testnets", title: "participating-in-testnets", level: 2 },
+        { id: "how-to-participate-in-testnets", title: "How to Participate in Testnets", level: 2 },
+        { id: "testnets-and-airdrops", title: "testnets-and-airdrops", level: 2 },
+        { id: "testnets-and-airdrop-opportunities", title: "Testnets and Airdrop Opportunities", level: 2 }
       ]}
       faqs={[
         {

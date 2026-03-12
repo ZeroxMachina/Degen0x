@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Candlestick Chart? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Candlestick Chart? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what candlestick charts are, how to read them, common patterns, and how crypto traders use them for technical analysis.",
 };
@@ -17,10 +17,14 @@ export default function CandlestickPage() {
       readTime="5 min"
       intro="A candlestick is a type of price chart element that displays the open, high, low, and close price of an asset for a specific time period. Originally developed by Japanese rice traders in the 18th century, candlestick charts are now the most widely used chart type in crypto trading. They provide more visual information than simple line charts and form the basis of technical analysis."
       toc={[
-        { id: "definition", title: "What Is a Candlestick?", level: 2 },
-        { id: "how-to-read", title: "How to Read Candlesticks", level: 2 },
-        { id: "patterns", title: "Common Patterns", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-candlestick", title: "What Is a Candlestick?", level: 2 },
+        { id: "how-to-read", title: "how-to-read", level: 2 },
+        { id: "how-to-read-candlesticks", title: "How to Read Candlesticks", level: 2 },
+        { id: "patterns", title: "patterns", level: 2 },
+        { id: "common-patterns", title: "Common Patterns", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

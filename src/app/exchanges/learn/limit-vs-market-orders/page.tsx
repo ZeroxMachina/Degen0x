@@ -17,12 +17,18 @@ export default function LimitVsMarketOrdersPage() {
       readTime="8 min"
       intro="Every trade you make on a crypto exchange starts with an order. The two most fundamental order types are market orders and limit orders. Understanding the difference between them -- and knowing when to use each -- can save you money, reduce risk, and give you greater control over your trades. This guide explains both order types in depth, along with other advanced order types you should know about."
       toc={[
-        { id: "market-orders", title: "What Is a Market Order?", level: 2 },
-        { id: "limit-orders", title: "What Is a Limit Order?", level: 2 },
-        { id: "when-to-use", title: "When to Use Each Order Type", level: 2 },
-        { id: "advanced-orders", title: "Advanced Order Types", level: 2 },
-        { id: "slippage", title: "Understanding Slippage", level: 2 },
-        { id: "tips", title: "Practical Tips for Order Placement", level: 2 },
+        { id: "market-orders", title: "market-orders", level: 2 },
+        { id: "what-is-a-market-order", title: "What Is a Market Order?", level: 2 },
+        { id: "limit-orders", title: "limit-orders", level: 2 },
+        { id: "what-is-a-limit-order", title: "What Is a Limit Order?", level: 2 },
+        { id: "when-to-use", title: "when-to-use", level: 2 },
+        { id: "when-to-use-each-order-type", title: "When to Use Each Order Type", level: 2 },
+        { id: "advanced-orders", title: "advanced-orders", level: 2 },
+        { id: "advanced-order-types", title: "Advanced Order Types", level: 2 },
+        { id: "slippage", title: "slippage", level: 2 },
+        { id: "understanding-slippage", title: "Understanding Slippage", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "practical-tips-for-order-placement", title: "Practical Tips for Order Placement", level: 2 }
       ]}
       faqs={[
         {

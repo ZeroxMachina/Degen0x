@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Lens Protocol (LENS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Lens Protocol (LENS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Lens Protocol (LENS), the decentralized social graph by Aave. Discover how it works, tokenomics, use cases, and how to buy LENS.",
 };
 
 export default function LensPage() {
   return (
-    <LearnPageLayout title="What Is Lens Protocol (LENS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Lens Protocol is a decentralized social graph built by the Aave team that enables users to own their social identity, content, and connections as NFTs on the blockchain. Originally deployed on Polygon, Lens has evolved to run on its own ZK chain (Lens Network) and serves as the foundation for a growing ecosystem of social applications where users maintain full ownership and portability of their social data." toc={[{id:"what-is",title:"What Is Lens Protocol?",level:2},{id:"how-it-works",title:"How Does Lens Protocol Work?",level:2},{id:"tokenomics",title:"LENS Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy LENS",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Lens Protocol?",answer:"Lens Protocol is a decentralized social graph by the Aave team where users own their profiles, content, and social connections as NFTs, enabling portable social identity across apps."},{question:"Where can I buy LENS?",answer:"LENS availability depends on the token launch timeline. Check Uniswap and major exchanges for current listings. It may trade against ETH and USDT."},{question:"Is Lens a good investment?",answer:"Lens is backed by the respected Aave team and has a growing app ecosystem, but decentralized social adoption is still early. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Aave",href:"/investing/crypto/aave",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Lens Protocol (LENS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Lens Protocol is a decentralized social graph built by the Aave team that enables users to own their social identity, content, and connections as NFTs on the blockchain. Originally deployed on Polygon, Lens has evolved to run on its own ZK chain (Lens Network) and serves as the foundation for a growing ecosystem of social applications where users maintain full ownership and portability of their social data." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-lens-protocol", title: "What Is Lens Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-lens-protocol-work", title: "How Does Lens Protocol Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "lens-tokenomics", title: "LENS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-lens", title: "How to Buy LENS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Lens Protocol?",answer:"Lens Protocol is a decentralized social graph by the Aave team where users own their profiles, content, and social connections as NFTs, enabling portable social identity across apps."},{question:"Where can I buy LENS?",answer:"LENS availability depends on the token launch timeline. Check Uniswap and major exchanges for current listings. It may trade against ETH and USDT."},{question:"Is Lens a good investment?",answer:"Lens is backed by the respected Aave team and has a growing app ecosystem, but decentralized social adoption is still early. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Aave",href:"/investing/crypto/aave",category:"Investing"}]}>
       <h2 id="what-is">What Is Lens Protocol?</h2>
       <p>Lens Protocol was created by Stani Kulechov and the Aave Companies team, bringing the credibility and technical expertise of one of DeFi&apos;s most established teams to the social networking space. The core innovation is representing social primitives (profiles, posts, comments, follows, and collects) as on-chain data structures that users truly own. When a user creates a Lens profile, they receive an NFT that represents their identity, and all their social interactions are recorded in a composable, permissionless format.</p>
       <p>The protocol has migrated from Polygon to Lens Network, a dedicated ZK chain built with ZKsync technology that provides the throughput needed for social media interactions while maintaining the security of Ethereum. This dedicated chain allows Lens to optimize for social use cases with gasless transactions, instant finality, and native social primitives built into the chain&apos;s architecture.</p>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Chainflip (FLIP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Chainflip (FLIP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Chainflip (FLIP), the decentralized cross-chain swap protocol. Discover how it works, tokenomics, use cases, and how to buy FLIP.",
 };
@@ -17,12 +17,18 @@ export default function ChainflipPage() {
       readTime="8 min read"
       intro="Chainflip is a decentralized cross-chain swap protocol that enables native asset exchanges between blockchains without wrapping or bridges. Users can swap native BTC for native ETH, SOL, or other assets directly, with Chainflip's validator network handling the entire settlement process using threshold signature schemes and a Just-In-Time AMM."
       toc={[
-        { id: "what-is", title: "What Is Chainflip?", level: 2 },
-        { id: "how-it-works", title: "How Does Chainflip Work?", level: 2 },
-        { id: "tokenomics", title: "FLIP Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy FLIP", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-chainflip", title: "What Is Chainflip?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-chainflip-work", title: "How Does Chainflip Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "flip-tokenomics", title: "FLIP Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-flip", title: "How to Buy FLIP", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

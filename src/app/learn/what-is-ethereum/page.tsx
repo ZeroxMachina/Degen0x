@@ -17,12 +17,18 @@ export default function WhatIsEthereumPage() {
       readTime="14 min"
       intro="Ethereum is a decentralized, open-source blockchain platform that enables developers to build and deploy smart contracts and decentralized applications (dApps). While Bitcoin was designed primarily as digital money, Ethereum was created as a programmable blockchain — a global computer that anyone can use to build trustless applications. Ether (ETH) is the native cryptocurrency of the Ethereum network, used to pay for transactions and computation. This guide explains how Ethereum works, what makes it unique, and why it powers much of the crypto ecosystem."
       toc={[
-        { id: "what-is-ethereum", title: "Ethereum Overview", level: 2 },
-        { id: "smart-contracts", title: "Smart Contracts Explained", level: 2 },
-        { id: "the-merge", title: "The Merge and Proof of Stake", level: 2 },
-        { id: "ecosystem", title: "The Ethereum Ecosystem", level: 2 },
-        { id: "eth-the-asset", title: "ETH as an Investment", level: 2 },
-        { id: "layer-2", title: "Layer 2 Scaling Solutions", level: 2 },
+        { id: "what-is-ethereum", title: "what-is-ethereum", level: 2 },
+        { id: "ethereum-overview", title: "Ethereum Overview", level: 2 },
+        { id: "smart-contracts", title: "smart-contracts", level: 2 },
+        { id: "smart-contracts-explained", title: "Smart Contracts Explained", level: 2 },
+        { id: "the-merge", title: "the-merge", level: 2 },
+        { id: "the-merge-and-proof-of-stake", title: "The Merge and Proof of Stake", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
+        { id: "the-ethereum-ecosystem", title: "The Ethereum Ecosystem", level: 2 },
+        { id: "eth-the-asset", title: "eth-the-asset", level: 2 },
+        { id: "eth-as-an-investment", title: "ETH as an Investment", level: 2 },
+        { id: "layer-2", title: "layer-2", level: 2 },
+        { id: "layer-2-scaling-solutions", title: "Layer 2 Scaling Solutions", level: 2 }
       ]}
       faqs={[
         {

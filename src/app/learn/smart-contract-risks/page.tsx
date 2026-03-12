@@ -12,11 +12,16 @@ export default function SmartContractRisksPage() {
   return (
     <LearnPageLayout title="Smart Contract Risks" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Smart contracts are the foundation of DeFi but also its greatest source of risk. Code vulnerabilities, design flaws, and unexpected interactions between protocols have led to billions in losses. Understanding smart contract risks helps you make informed decisions about which protocols to trust with your funds and how much exposure to take."
       toc={[
-        { id: "overview", title: "Understanding Smart Contract Risk", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "understanding-smart-contract-risk", title: "Understanding Smart Contract Risk", level: 2 },
+        { id: "common-vulnerabilities", title: "common-vulnerabilities", level: 2 },
         { id: "common-vulnerabilities", title: "Common Vulnerabilities", level: 2 },
+        { id: "economic-attacks", title: "economic-attacks", level: 2 },
         { id: "economic-attacks", title: "Economic Attacks", level: 2 },
-        { id: "audits", title: "Audits & Their Limitations", level: 2 },
-        { id: "risk-assessment", title: "Assessing Smart Contract Risk", level: 2 },
+        { id: "audits", title: "audits", level: 2 },
+        { id: "audits-their-limitations", title: "Audits & Their Limitations", level: 2 },
+        { id: "risk-assessment", title: "risk-assessment", level: 2 },
+        { id: "assessing-smart-contract-risk", title: "Assessing Smart Contract Risk", level: 2 }
       ]}
       faqs={[
         { question: "Are audited smart contracts safe?", answer: "Audits significantly reduce risk but do not guarantee safety. Audits are point-in-time reviews that may miss subtle vulnerabilities, and new attack vectors are constantly discovered. Some of the largest exploits have occurred on audited protocols. Think of audits as one risk reduction factor, not a guarantee." },

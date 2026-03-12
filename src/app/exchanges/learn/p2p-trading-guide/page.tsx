@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `P2P Crypto Trading Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `P2P Crypto Trading Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how P2P crypto trading works. Escrow systems, payment methods, safety tips, best platforms, and how to buy and sell crypto directly.",
 };
 
@@ -16,13 +16,20 @@ export default function P2PTradingGuide() {
       readTime="8 min read"
       intro="Peer-to-peer (P2P) crypto trading lets you buy and sell cryptocurrency directly with other users using your preferred payment method. P2P platforms act as intermediaries, providing escrow services and dispute resolution while connecting buyers and sellers. This trading method is especially valuable in regions with limited exchange access or banking restrictions."
       toc={[
-        { id: "how-it-works", title: "How P2P Trading Works", level: 2 },
-        { id: "escrow", title: "The Escrow System", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-p2p-trading-works", title: "How P2P Trading Works", level: 2 },
+        { id: "escrow", title: "escrow", level: 2 },
+        { id: "the-escrow-system", title: "The Escrow System", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
-        { id: "platforms", title: "Best P2P Platforms", level: 2 },
-        { id: "safety", title: "Safety Tips", level: 2 },
-        { id: "advantages", title: "Advantages and Disadvantages", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "best-p2p-platforms", title: "Best P2P Platforms", level: 2 },
+        { id: "safety", title: "safety", level: 2 },
+        { id: "safety-tips", title: "Safety Tips", level: 2 },
+        { id: "advantages", title: "advantages", level: 2 },
+        { id: "advantages-and-disadvantages", title: "Advantages and Disadvantages", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "Is P2P trading safe?", answer: "P2P trading on reputable platforms with escrow is generally safe when you follow best practices. The escrow system protects both parties. Risks come from trading outside escrow, rushing transactions, or ignoring red flags from counterparties." },

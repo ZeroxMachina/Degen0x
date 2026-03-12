@@ -48,7 +48,7 @@ export default function BestLongTermPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best Platforms", href: "/long-term/best" }]} />
       <AffiliateDisclosure />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Best Long-Term Crypto Platforms & Providers ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Long-Term Crypto Platforms & Providers ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
 
       <div className="prose prose-invert max-w-none mb-10">
@@ -67,11 +67,11 @@ export default function BestLongTermPage() {
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Browse by Category</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Browse by Category</h2>
         <div className="grid md:grid-cols-2 gap-4">
           {subCategories.map((cat) => (
             <Link key={cat.href} href={cat.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover block">
-              <h3 className="text-lg font-semibold text-white mb-2">{cat.title}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{cat.desc}</p>
             </Link>
           ))}
@@ -79,7 +79,7 @@ export default function BestLongTermPage() {
       </section>
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How We Evaluate Long-Term Crypto Providers</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Evaluate Long-Term Crypto Providers</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">Our evaluation criteria for long-term investing platforms focuses on factors that matter most over extended holding periods:</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
@@ -91,7 +91,7 @@ export default function BestLongTermPage() {
             { title: "Regulatory Compliance (5%)", desc: "Licensing, regulatory standing, transparency reports, and compliance with applicable securities and financial regulations." },
           ].map((item) => (
             <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-              <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+              <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
             </div>
           ))}

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Support Level in Crypto Trading (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Support Level in Crypto Trading (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what support levels are in crypto trading, how to identify them on charts, why they matter for buy decisions, and strategies for trading support zones.",
 };
 
@@ -16,10 +16,14 @@ export default function SupportLevelPage() {
       readTime="6 min read"
       intro="A support level is a price point where an asset tends to stop falling because buying interest concentrates at that level. When price approaches support, demand increases and sellers lose momentum, creating a floor effect. Support levels are foundational to technical analysis and help traders identify potential entry points, set stop-loss orders, and gauge market sentiment. Understanding support is essential for any crypto trader or investor looking to time entries effectively."
       toc={[
-        { id: "what-is-support", title: "What Is a Support Level?", level: 2 },
-        { id: "identifying-support", title: "Identifying Support Levels", level: 2 },
+        { id: "what-is-support", title: "what-is-support", level: 2 },
+        { id: "what-is-a-support-level", title: "What Is a Support Level?", level: 2 },
+        { id: "identifying-support", title: "identifying-support", level: 2 },
+        { id: "identifying-support-levels", title: "Identifying Support Levels", level: 2 },
+        { id: "types-of-support", title: "types-of-support", level: 2 },
         { id: "types-of-support", title: "Types of Support", level: 2 },
-        { id: "trading-support", title: "Trading Support Levels", level: 2 },
+        { id: "trading-support", title: "trading-support", level: 2 },
+        { id: "trading-support-levels", title: "Trading Support Levels", level: 2 }
       ]}
       faqs={[
         { question: "What happens when support breaks?", answer: "When price falls below a support level on significant volume, that former support often becomes resistance. This breakdown can trigger accelerated selling as stop-loss orders execute and traders who bought at that level begin selling. Broken support signals a shift in market sentiment from bullish to bearish for that price range." },

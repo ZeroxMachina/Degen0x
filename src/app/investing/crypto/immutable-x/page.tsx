@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Immutable X (IMX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Immutable X (IMX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Immutable X (IMX), the Layer 2 scaling solution for NFTs and gaming on Ethereum. Discover how it works, tokenomics, use cases, and how to buy IMX.",
 };
@@ -17,12 +17,18 @@ export default function ImmutableXPage() {
       readTime="8 min read"
       intro="Immutable X is an Ethereum Layer 2 scaling solution specifically designed for NFTs and blockchain gaming. Using StarkEx zero-knowledge rollup technology, Immutable offers gas-free NFT minting and trading with instant confirmation while inheriting Ethereum's security. IMX is the native token used for fees, staking, and governance."
       toc={[
-        { id: "what-is", title: "What Is Immutable X?", level: 2 },
-        { id: "how-it-works", title: "How Does Immutable X Work?", level: 2 },
-        { id: "tokenomics", title: "IMX Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy IMX", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-immutable-x", title: "What Is Immutable X?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-immutable-x-work", title: "How Does Immutable X Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "imx-tokenomics", title: "IMX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-imx", title: "How to Buy IMX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

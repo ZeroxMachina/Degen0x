@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Cross-Chain? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Cross-Chain? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what cross-chain technology is, how it enables interoperability between blockchains, key protocols, and why it matters for the multi-chain future.",
 };
@@ -17,11 +17,16 @@ export default function CrossChainPage() {
       readTime="5 min"
       intro="Cross-chain refers to technology and protocols that enable interaction between different blockchain networks. By default, blockchains are isolated — Bitcoin cannot natively communicate with Ethereum. Cross-chain solutions build connections between these networks, allowing assets, data, and messages to move freely across the multi-chain ecosystem."
       toc={[
-        { id: "definition", title: "What Is Cross-Chain?", level: 2 },
-        { id: "how-it-works", title: "How Cross-Chain Works", level: 2 },
-        { id: "solutions", title: "Cross-Chain Solutions", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-cross-chain", title: "What Is Cross-Chain?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-cross-chain-works", title: "How Cross-Chain Works", level: 2 },
+        { id: "solutions", title: "solutions", level: 2 },
+        { id: "cross-chain-solutions", title: "Cross-Chain Solutions", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "challenges", title: "Challenges", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges", title: "Challenges", level: 2 }
       ]}
       faqs={[
         {

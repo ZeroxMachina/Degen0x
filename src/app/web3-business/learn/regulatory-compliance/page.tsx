@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Web3 Regulatory Compliance (${CURRENT_YEAR}) - Crypto Business Guide | CryptoDegen`,
+  title: `Web3 Regulatory Compliance (${CURRENT_YEAR}) - Crypto Business Guide | degen0x`,
   description: `Navigate Web3 regulatory compliance. SEC, CFTC, AML/KYC requirements, money transmitter licensing, international frameworks, and compliance strategies for crypto businesses.`,
 };
 
@@ -16,11 +16,16 @@ export default function RegulatoryCompliancePage() {
       readTime="11 min"
       intro="Regulatory compliance is one of the most complex and consequential challenges facing Web3 businesses. The regulatory landscape spans multiple agencies, jurisdictions, and evolving frameworks. From securities law and money transmission licensing to AML/KYC requirements and data privacy, this guide maps the key compliance areas every crypto business must understand."
       toc={[
-        { id: "securities", title: "Securities Law and the Howey Test", level: 2 },
-        { id: "aml-kyc", title: "AML/KYC Requirements", level: 2 },
-        { id: "money-transmission", title: "Money Transmission and Licensing", level: 2 },
-        { id: "international", title: "International Regulatory Frameworks", level: 2 },
-        { id: "compliance-strategy", title: "Building a Compliance Strategy", level: 2 },
+        { id: "securities", title: "securities", level: 2 },
+        { id: "securities-law-and-the-howey-test", title: "Securities Law and the Howey Test", level: 2 },
+        { id: "aml-kyc", title: "aml-kyc", level: 2 },
+        { id: "aml-kyc-requirements", title: "AML/KYC Requirements", level: 2 },
+        { id: "money-transmission", title: "money-transmission", level: 2 },
+        { id: "money-transmission-and-licensing", title: "Money Transmission and Licensing", level: 2 },
+        { id: "international", title: "international", level: 2 },
+        { id: "international-regulatory-frameworks", title: "International Regulatory Frameworks", level: 2 },
+        { id: "compliance-strategy", title: "compliance-strategy", level: 2 },
+        { id: "building-a-compliance-strategy", title: "Building a Compliance Strategy", level: 2 }
       ]}
       faqs={[
         { question: "Is my token a security?", answer: "Under US law, the Howey test determines whether a token is a security by asking: is there an investment of money in a common enterprise with an expectation of profits derived primarily from the efforts of others? If all four elements are met, the token is likely a security and subject to SEC registration requirements. Utility tokens used to access a working product, governance tokens for decentralized protocols, and stablecoins are generally less likely to be classified as securities, but each case is fact-specific. Always obtain a legal opinion from a qualified attorney." },

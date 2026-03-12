@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -138,7 +140,7 @@ export default function TokenScreenerPage() {
 
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
+        <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">
           Crypto Token Screener
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -531,7 +533,7 @@ export default function TokenScreenerPage() {
           How to Use the Crypto Token Screener
         </h2>
         <p style={{ color: "var(--color-text-secondary)", lineHeight: 1.7, marginBottom: 12 }}>
-          The CryptoDegen Token Screener lets you filter and rank 100 cryptocurrencies using real metrics. Start by choosing
+          The degen0x Token Screener lets you filter and rank 100 cryptocurrencies using real metrics. Start by choosing
           a <strong style={{ color: "white" }}>category</strong> — Layer 1 blockchains, DeFi protocols, stablecoins, meme coins, AI tokens, and more. Then
           narrow by <strong style={{ color: "white" }}>chain</strong> to focus on assets native to Ethereum, Solana, BNB Chain, Cosmos, or others.
         </p>

@@ -17,10 +17,14 @@ export default function CryptoCardFeesGuidePage() {
       readTime="8 min"
       intro="Understanding the full fee structure of crypto cards is essential for maximizing the value of your rewards and avoiding unexpected charges. Many crypto cards advertise zero fees on the surface but have conversion spreads, withdrawal limits, and conditional charges buried in the fine print. This comprehensive guide breaks down every type of fee you might encounter and how to minimize your total cost."
       toc={[
+        { id: "conversion-spreads", title: "conversion-spreads", level: 2 },
         { id: "conversion-spreads", title: "Conversion Spreads", level: 2 },
-        { id: "card-fees", title: "Card and Account Fees", level: 2 },
+        { id: "card-fees", title: "card-fees", level: 2 },
+        { id: "card-and-account-fees", title: "Card and Account Fees", level: 2 },
+        { id: "transaction-fees", title: "transaction-fees", level: 2 },
         { id: "transaction-fees", title: "Transaction Fees", level: 2 },
-        { id: "minimizing-fees", title: "Minimizing Fees", level: 2 },
+        { id: "minimizing-fees", title: "minimizing-fees", level: 2 },
+        { id: "minimizing-fees", title: "Minimizing Fees", level: 2 }
       ]}
       faqs={[
         { question: "What is a crypto conversion spread?", answer: "A conversion spread is the difference between the market price and the rate at which your crypto card converts crypto to fiat. If the market rate for ETH is $2,000 but the card converts at $1,980, the spread is 1%. This functions as a hidden fee on every transaction where crypto is converted." },

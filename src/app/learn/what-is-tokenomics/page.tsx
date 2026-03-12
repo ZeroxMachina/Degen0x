@@ -17,13 +17,20 @@ export default function WhatIsTokenomicsPage() {
       readTime="9 min"
       intro="Tokenomics — a portmanteau of token and economics — refers to the study of the economic design, incentive structures, and monetary policy of a cryptocurrency. Understanding tokenomics is essential for evaluating any crypto project because it reveals how tokens are created, distributed, used, and valued within an ecosystem."
       toc={[
-        { id: "what-is-tokenomics", title: "Understanding Tokenomics", level: 2 },
+        { id: "what-is-tokenomics", title: "what-is-tokenomics", level: 2 },
+        { id: "understanding-tokenomics", title: "Understanding Tokenomics", level: 2 },
+        { id: "supply-mechanics", title: "supply-mechanics", level: 2 },
         { id: "supply-mechanics", title: "Supply Mechanics", level: 2 },
-        { id: "distribution", title: "Token Distribution", level: 2 },
-        { id: "utility", title: "Token Utility", level: 2 },
+        { id: "distribution", title: "distribution", level: 2 },
+        { id: "token-distribution", title: "Token Distribution", level: 2 },
+        { id: "utility", title: "utility", level: 2 },
+        { id: "token-utility", title: "Token Utility", level: 2 },
+        { id: "incentive-design", title: "incentive-design", level: 2 },
         { id: "incentive-design", title: "Incentive Design", level: 2 },
-        { id: "evaluating", title: "Evaluating Tokenomics", level: 2 },
-        { id: "red-flags", title: "Tokenomics Red Flags", level: 2 },
+        { id: "evaluating", title: "evaluating", level: 2 },
+        { id: "evaluating-tokenomics", title: "Evaluating Tokenomics", level: 2 },
+        { id: "red-flags", title: "red-flags", level: 2 },
+        { id: "tokenomics-red-flags", title: "Tokenomics Red Flags", level: 2 }
       ]}
       faqs={[
         { question: "Why does tokenomics matter?", answer: "Tokenomics determines the long-term supply and demand dynamics of a token. Poor tokenomics — like excessive inflation, concentrated ownership, or misaligned incentives — can doom even technically excellent projects. Good tokenomics aligns incentives between all participants and creates sustainable value capture." },

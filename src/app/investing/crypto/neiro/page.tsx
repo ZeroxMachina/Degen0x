@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Neiro (NEIRO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Neiro (NEIRO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Neiro (NEIRO), the meme coin named after the successor to the original Doge Shiba Inu. Discover NEIRO tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function NeiroPage() {
       readTime="8 min read"
       intro="Neiro (NEIRO) is a meme coin named after the new Shiba Inu puppy adopted by Kabosu's owner, the dog behind the original Doge meme. Launched on Ethereum in 2024, NEIRO gained traction as the spiritual successor to the Doge meme narrative, attracting traders looking for the next chapter in dog-themed meme coin culture."
       toc={[
-        { id: "what-is", title: "What Is Neiro?", level: 2 },
-        { id: "how-it-works", title: "How Does Neiro Work?", level: 2 },
-        { id: "tokenomics", title: "NEIRO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy NEIRO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-neiro", title: "What Is Neiro?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-neiro-work", title: "How Does Neiro Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "neiro-tokenomics", title: "NEIRO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-neiro", title: "How to Buy NEIRO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

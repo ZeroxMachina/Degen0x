@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to File a DeFi Insurance Claim (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to File a DeFi Insurance Claim (${CURRENT_YEAR}) | degen0x`,
   description: "Step-by-step guide to filing DeFi insurance claims. Learn the process for Nexus Mutual, InsurAce, and other protocols, plus tips for successful claims.",
 };
 
@@ -11,7 +11,16 @@ export default function InsuranceClaimsProcessPage() {
   return (
     <LearnPageLayout title="How to File a DeFi Insurance Claim" categoryName="Crypto Insurance" categorySlug="insurance" readTime="7 min read"
       intro="Filing a DeFi insurance claim can be daunting, especially during the stress of experiencing a protocol exploit. Each insurance provider has its own claims process with specific requirements, timelines, and assessment criteria. Understanding these processes before you need them ensures you can act quickly and effectively when a covered event occurs."
-      toc={[{ id: "when-to-file", title: "When to File a Claim", level: 2 }, { id: "documentation", title: "Required Documentation", level: 2 }, { id: "provider-processes", title: "Provider-Specific Processes", level: 2 }, { id: "tips", title: "Tips for Successful Claims", level: 2 }]}
+      toc={[
+        { id: "when-to-file", title: "when-to-file", level: 2 },
+        { id: "when-to-file-a-claim", title: "When to File a Claim", level: 2 },
+        { id: "documentation", title: "documentation", level: 2 },
+        { id: "required-documentation", title: "Required Documentation", level: 2 },
+        { id: "provider-processes", title: "provider-processes", level: 2 },
+        { id: "provider-specific-processes", title: "Provider-Specific Processes", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-successful-claims", title: "Tips for Successful Claims", level: 2 }
+      ]}
       faqs={[
         { question: "How long does the claims process take?", answer: "Timeframes vary by provider. Nexus Mutual claims typically take 1-3 weeks from filing to resolution. InsurAce aims for faster resolution through their claims committee. Parametric products can pay out within hours of a trigger event. Traditional claims-based products are inherently slower." },
         { question: "What if my claim is denied?", answer: "Most providers have an appeal process. At Nexus Mutual, denied claims can be resubmitted with additional evidence. Understanding why the claim was denied helps strengthen the appeal. Some denials are due to the event not meeting the specific covered event definition rather than a dispute about the loss." },

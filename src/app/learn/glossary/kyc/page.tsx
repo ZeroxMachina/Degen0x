@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is KYC? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is KYC? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what KYC (Know Your Customer) means in crypto, why exchanges require it, and how it impacts privacy and access.",
 };
@@ -17,11 +17,16 @@ export default function KycPage() {
       readTime="5 min"
       intro="KYC stands for Know Your Customer, a regulatory process that requires financial service providers to verify the identity of their users. In crypto, centralized exchanges and fiat on-ramps must collect personal information such as government ID, proof of address, and sometimes biometric data. KYC aims to prevent money laundering, fraud, and terrorist financing, but it creates tension with crypto's ethos of privacy and permissionless access."
       toc={[
-        { id: "definition", title: "What Is KYC?", level: 2 },
-        { id: "requirements", title: "KYC Requirements", level: 2 },
-        { id: "why-required", title: "Why KYC Is Required", level: 2 },
-        { id: "kyc-debate", title: "The KYC Debate", level: 2 },
-        { id: "kyc-free-options", title: "KYC-Free Alternatives", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-kyc", title: "What Is KYC?", level: 2 },
+        { id: "requirements", title: "requirements", level: 2 },
+        { id: "kyc-requirements", title: "KYC Requirements", level: 2 },
+        { id: "why-required", title: "why-required", level: 2 },
+        { id: "why-kyc-is-required", title: "Why KYC Is Required", level: 2 },
+        { id: "kyc-debate", title: "kyc-debate", level: 2 },
+        { id: "the-kyc-debate", title: "The KYC Debate", level: 2 },
+        { id: "kyc-free-options", title: "kyc-free-options", level: 2 },
+        { id: "kyc-free-alternatives", title: "KYC-Free Alternatives", level: 2 }
       ]}
       faqs={[
         {

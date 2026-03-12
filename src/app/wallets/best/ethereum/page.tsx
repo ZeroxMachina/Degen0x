@@ -45,7 +45,7 @@ export default function BestEthereumWalletsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Ethereum Wallets of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -56,7 +56,7 @@ export default function BestEthereumWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-3">Why Ethereum Wallets Matter</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-3">Why Ethereum Wallets Matter</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Unlike simple Bitcoin wallets, Ethereum wallets need to handle smart contract interactions,
           token approvals, gas fee estimation, and multi-network switching. A good Ethereum wallet makes
@@ -80,7 +80,7 @@ export default function BestEthereumWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Ethereum Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Ethereum Wallets, Ranked</h2>
         <div className="space-y-6">
           {ethereumWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -89,18 +89,18 @@ export default function BestEthereumWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/compare/metamask-vs-phantom" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">MetaMask vs Phantom</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">MetaMask vs Phantom</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">ETH vs SOL wallet comparison</p>
           </Link>
           <Link href="/wallets/best/defi" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best DeFi Wallets</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best DeFi Wallets</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">For DeFi power users</p>
           </Link>
           <Link href="/wallets/tools/gas-fee-tracker" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Gas Fee Tracker</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Gas Fee Tracker</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Real-time Ethereum gas prices</p>
           </Link>
         </div>

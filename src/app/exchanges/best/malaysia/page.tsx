@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Malaysia (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Malaysia (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Malaysia. Find MYR-friendly platforms with SC-regulated options, local bank support, and competitive fees.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesMalaysia() {
       readTime="8 min read"
       intro="Malaysia has established a clear regulatory framework for cryptocurrency through the Securities Commission Malaysia (SC), making it one of Southeast Asia's most well-regulated crypto markets. Several exchanges hold SC licenses, providing Malaysian traders with regulated MYR on-ramps. This guide covers the best platforms available to Malaysian crypto enthusiasts."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Malaysia", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "MYR Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-malaysia", title: "Top Exchanges for Malaysia", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "myr-payment-methods", title: "MYR Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Malaysia?", answer: "Yes, cryptocurrency is legal and regulated in Malaysia. The SC licenses digital asset exchanges (DAX) and initial exchange offerings. Only SC-registered exchanges can legally operate in Malaysia." },

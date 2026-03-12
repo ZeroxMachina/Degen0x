@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Browser Extension Wallets Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Browser Extension Wallets Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about browser extension crypto wallets like MetaMask, Phantom, and Rabby. Compare features, security, and find the best extension wallet for DeFi.",
 };
 
@@ -11,7 +11,16 @@ export default function BrowserExtensionWalletsPage() {
   return (
     <LearnPageLayout title="Browser Extension Wallets Guide" categoryName="Crypto Wallets" categorySlug="wallets" readTime="9 min read"
       intro="Browser extension wallets are the gateway to decentralized finance, providing seamless integration between your web browser and blockchain applications. They inject a connection interface into web pages, allowing one-click interactions with DEXs, lending protocols, NFT marketplaces, and thousands of other dApps. Understanding how browser wallets work, their security model, and which one fits your needs is essential for anyone exploring DeFi."
-      toc={[{ id: "how-they-work", title: "How Browser Wallets Work", level: 2 }, { id: "top-extension-wallets", title: "Top Extension Wallets", level: 2 }, { id: "security-considerations", title: "Security Considerations", level: 2 }, { id: "advanced-features", title: "Advanced Features", level: 2 }]}
+      toc={[
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-browser-wallets-work", title: "How Browser Wallets Work", level: 2 },
+        { id: "top-extension-wallets", title: "top-extension-wallets", level: 2 },
+        { id: "top-extension-wallets", title: "Top Extension Wallets", level: 2 },
+        { id: "security-considerations", title: "security-considerations", level: 2 },
+        { id: "security-considerations", title: "Security Considerations", level: 2 },
+        { id: "advanced-features", title: "advanced-features", level: 2 },
+        { id: "advanced-features", title: "Advanced Features", level: 2 }
+      ]}
       faqs={[{ question: "Is MetaMask still the best browser wallet?", answer: "MetaMask remains the most widely supported wallet with the largest ecosystem, but alternatives like Rabby offer better security features (transaction simulation, phishing detection) and Phantom provides a superior Solana experience. MetaMask is the safest choice for maximum dApp compatibility, while Rabby is arguably better for security-conscious DeFi users on Ethereum and its L2s." },
         { question: "Can I use multiple browser extension wallets?", answer: "Yes, you can install multiple browser wallets simultaneously. This is common practice: many users run MetaMask for broad compatibility, Phantom for Solana, and Rabby for its security features. However, having multiple wallets can cause conflicts when dApps try to detect your wallet. Most dApps let you choose which wallet to connect if multiple are detected." },
         { question: "How do I protect my browser wallet from phishing?", answer: "Bookmark official dApp URLs and always navigate from bookmarks rather than search results or links. Enable phishing protection in your wallet settings. Use wallets with built-in transaction simulation like Rabby to preview what a transaction will do before signing. Never enter your seed phrase on any website. Revoke unnecessary token approvals regularly using tools like Revoke.cash." }]}

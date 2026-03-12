@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Protocol? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Protocol? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what protocols mean in crypto, how they define the rules of blockchain networks and DeFi applications.",
 };
@@ -17,11 +17,16 @@ export default function ProtocolPage() {
       readTime="5 min"
       intro="In crypto, a protocol is a set of rules and standards that define how a blockchain network or decentralized application operates. At the base layer, protocols like Bitcoin and Ethereum define consensus rules, transaction formats, and network communication. At the application layer, DeFi protocols like Uniswap and Aave define how specific financial services function. Protocols are the code-based equivalents of laws and regulations."
       toc={[
-        { id: "definition", title: "What Is a Protocol?", level: 2 },
-        { id: "types", title: "Types of Protocols", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-protocol", title: "What Is a Protocol?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-protocols", title: "Types of Protocols", level: 2 },
+        { id: "protocol-governance", title: "protocol-governance", level: 2 },
         { id: "protocol-governance", title: "Protocol Governance", level: 2 },
-        { id: "composability", title: "Protocol Composability", level: 2 },
-        { id: "why-it-matters", title: "Why Protocols Matter", level: 2 },
+        { id: "composability", title: "composability", level: 2 },
+        { id: "protocol-composability", title: "Protocol Composability", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-protocols-matter", title: "Why Protocols Matter", level: 2 }
       ]}
       faqs={[
         {

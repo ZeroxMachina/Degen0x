@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Double Bottom Pattern in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Double Bottom Pattern in Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a double bottom pattern is, how to identify this bullish reversal on crypto charts, neckline confirmation, and trading strategies for double bottoms.",
 };
 
@@ -16,10 +16,14 @@ export default function DoubleBottomPage() {
       readTime="6 min read"
       intro="A double bottom is a bullish reversal chart pattern that forms after a downtrend when price reaches a support level twice and bounces both times. The pattern resembles the letter W and signals that selling pressure is exhausting. Double bottoms are reliable reversal indicators in crypto markets and frequently mark the end of significant sell-offs, providing traders with clear entry points and defined risk levels."
       toc={[
-        { id: "what-is-double-bottom", title: "What Is a Double Bottom?", level: 2 },
-        { id: "identifying", title: "Identifying the Pattern", level: 2 },
-        { id: "confirmation", title: "Confirmation Signals", level: 2 },
-        { id: "trading", title: "Trading Double Bottoms", level: 2 },
+        { id: "what-is-double-bottom", title: "what-is-double-bottom", level: 2 },
+        { id: "what-is-a-double-bottom", title: "What Is a Double Bottom?", level: 2 },
+        { id: "identifying", title: "identifying", level: 2 },
+        { id: "identifying-the-pattern", title: "Identifying the Pattern", level: 2 },
+        { id: "confirmation", title: "confirmation", level: 2 },
+        { id: "confirmation-signals", title: "Confirmation Signals", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-double-bottoms", title: "Trading Double Bottoms", level: 2 }
       ]}
       faqs={[
         { question: "How do I tell a double bottom from a continuing downtrend?", answer: "The key differentiator is volume. In a valid double bottom, volume typically increases on the bounce from the second low, showing buying interest returning. RSI divergence (higher RSI low on the second price low) adds confirmation. The pattern is only confirmed when price breaks above the neckline between the two lows." },

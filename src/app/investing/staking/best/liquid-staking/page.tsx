@@ -46,7 +46,7 @@ export default function BestLiquidStakingPage() {
     "@type": "Article",
     headline: `Best Liquid Staking Protocols of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -62,7 +62,7 @@ export default function BestLiquidStakingPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Liquid Staking Protocols of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -79,15 +79,15 @@ export default function BestLiquidStakingPage() {
             underlying stake continues to earn rewards.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Lido</strong> dominates Ethereum liquid staking with stETH
-            and its unparalleled DeFi integration. <strong className="text-white">Jito</strong> leads
-            Solana liquid staking with MEV-enhanced yields. <strong className="text-white">Rocket Pool</strong>
+            <strong className="text-[var(--color-text)]">Lido</strong> dominates Ethereum liquid staking with stETH
+            and its unparalleled DeFi integration. <strong className="text-[var(--color-text)]">Jito</strong> leads
+            Solana liquid staking with MEV-enhanced yields. <strong className="text-[var(--color-text)]">Rocket Pool</strong>
             {" "}offers the most decentralized Ethereum staking with permissionless node operation.
           </p>
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
           <div className="space-y-4">
             {liquidPlatforms.map((platform, index) => (
               <ProductCard
@@ -101,7 +101,7 @@ export default function BestLiquidStakingPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">How Liquid Staking Works</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How Liquid Staking Works</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             When you deposit your crypto into a liquid staking protocol, the protocol stakes it with
             validators on your behalf and mints a derivative token that represents your staked position.

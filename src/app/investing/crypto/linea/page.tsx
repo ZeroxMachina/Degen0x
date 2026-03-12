@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Linea (LINEA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Linea (LINEA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Linea (LINEA), the Consensys-backed zkEVM Layer 2 for Ethereum. Discover how it works, ecosystem, use cases, and how to participate in Linea.",
 };
@@ -17,12 +17,18 @@ export default function LineaPage() {
       readTime="8 min read"
       intro="Linea is an Ethereum Layer 2 network developed by Consensys, the company behind MetaMask, Infura, and other core Ethereum infrastructure. Linea uses a type 2 zkEVM (zero-knowledge Ethereum Virtual Machine) to provide fast, low-cost transactions with Ethereum-grade security. Backed by one of the most established companies in blockchain, Linea benefits from deep integration with the MetaMask wallet and Infura node infrastructure."
       toc={[
-        { id: "what-is", title: "What Is Linea?", level: 2 },
-        { id: "how-it-works", title: "How Does Linea Work?", level: 2 },
-        { id: "tokenomics", title: "LINEA Token & Ecosystem", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Use Linea", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-linea", title: "What Is Linea?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-linea-work", title: "How Does Linea Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "linea-token-ecosystem", title: "LINEA Token & Ecosystem", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-use-linea", title: "How to Use Linea", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

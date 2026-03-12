@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Crypto Bear Market? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Crypto Bear Market? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a crypto bear market is, how to identify one, historical bear markets in crypto, and strategies for surviving prolonged downturns.",
 };
@@ -17,11 +17,16 @@ export default function BearMarketPage() {
       readTime="5 min"
       intro="A bear market is a prolonged period of declining asset prices, typically defined as a drop of 20% or more from recent highs. In crypto, bear markets can be especially severe, with Bitcoin dropping 50-80% and altcoins losing 90% or more of their value. Understanding bear markets helps you prepare psychologically and financially for the inevitable downturns in crypto cycles."
       toc={[
-        { id: "definition", title: "What Is a Bear Market?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-bear-market", title: "What Is a Bear Market?", level: 2 },
+        { id: "characteristics", title: "characteristics", level: 2 },
         { id: "characteristics", title: "Characteristics", level: 2 },
-        { id: "history", title: "Historical Crypto Bear Markets", level: 2 },
+        { id: "history", title: "history", level: 2 },
+        { id: "historical-crypto-bear-markets", title: "Historical Crypto Bear Markets", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "strategies", title: "Bear Market Strategies", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "bear-market-strategies", title: "Bear Market Strategies", level: 2 }
       ]}
       faqs={[
         {

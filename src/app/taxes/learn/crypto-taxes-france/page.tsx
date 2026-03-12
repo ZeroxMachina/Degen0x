@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in France (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in France (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in France. Learn about the flat tax regime, reporting requirements, and how to calculate your crypto tax obligations.",
 };
@@ -17,12 +17,18 @@ export default function CryptoTaxesFrancePage() {
       readTime="9 min read"
       intro="France applies a flat tax regime to cryptocurrency gains, making it one of the more straightforward European countries for crypto taxation. Since 2019, occasional crypto traders benefit from the 30% flat tax (PFU - Prelevement Forfaitaire Unique), while professional traders face income tax rates. Understanding whether you qualify as an occasional or professional trader is critical for determining your tax obligations. This guide covers everything French crypto investors need to know about declaring and paying crypto taxes."
       toc={[
-        { id: "tax-framework", title: "French Crypto Tax Framework", level: 2 },
-        { id: "flat-tax", title: "The 30% Flat Tax (PFU)", level: 2 },
-        { id: "calculating-gains", title: "Calculating Crypto Gains", level: 2 },
+        { id: "tax-framework", title: "tax-framework", level: 2 },
+        { id: "french-crypto-tax-framework", title: "French Crypto Tax Framework", level: 2 },
+        { id: "flat-tax", title: "flat-tax", level: 2 },
+        { id: "the-30-flat-tax-pfu", title: "The 30% Flat Tax (PFU)", level: 2 },
+        { id: "calculating-gains", title: "calculating-gains", level: 2 },
+        { id: "calculating-crypto-gains", title: "Calculating Crypto Gains", level: 2 },
+        { id: "reporting-requirements", title: "reporting-requirements", level: 2 },
         { id: "reporting-requirements", title: "Reporting Requirements", level: 2 },
-        { id: "defi-nft-taxes", title: "DeFi and NFT Taxation", level: 2 },
-        { id: "tax-optimization", title: "Tax Optimization Strategies", level: 2 },
+        { id: "defi-nft-taxes", title: "defi-nft-taxes", level: 2 },
+        { id: "defi-and-nft-taxation", title: "DeFi and NFT Taxation", level: 2 },
+        { id: "tax-optimization", title: "tax-optimization", level: 2 },
+        { id: "tax-optimization-strategies", title: "Tax Optimization Strategies", level: 2 }
       ]}
       faqs={[
         { question: "What is the crypto tax rate in France?", answer: "Occasional crypto traders in France pay a flat tax of 30% (PFU) on net capital gains. This includes 12.8% income tax and 17.2% social contributions. Professional traders are taxed under BIC (industrial and commercial profits) at progressive income tax rates up to 45%." },

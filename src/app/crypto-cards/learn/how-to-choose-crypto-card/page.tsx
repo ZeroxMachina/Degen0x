@@ -17,11 +17,16 @@ export default function HowToChooseCryptoCardPage() {
       readTime="10 min"
       intro="With over a dozen crypto cards on the market, choosing the right one can feel overwhelming. The best card for you depends on where you live, how much you spend, what rewards you value, and how much complexity you are willing to manage. This guide walks you through the key decision factors step by step so you can confidently select a card that matches your needs."
       toc={[
-        { id: "geographic-availability", title: "Step 1: Check Geographic Availability", level: 2 },
-        { id: "card-type", title: "Step 2: Choose Your Card Type", level: 2 },
-        { id: "reward-model", title: "Step 3: Evaluate the Reward Model", level: 2 },
-        { id: "fees-and-costs", title: "Step 4: Calculate Total Costs", level: 2 },
-        { id: "final-selection", title: "Step 5: Make Your Final Selection", level: 2 },
+        { id: "geographic-availability", title: "geographic-availability", level: 2 },
+        { id: "step-1-check-geographic-availability", title: "Step 1: Check Geographic Availability", level: 2 },
+        { id: "card-type", title: "card-type", level: 2 },
+        { id: "step-2-choose-your-card-type", title: "Step 2: Choose Your Card Type", level: 2 },
+        { id: "reward-model", title: "reward-model", level: 2 },
+        { id: "step-3-evaluate-the-reward-model", title: "Step 3: Evaluate the Reward Model", level: 2 },
+        { id: "fees-and-costs", title: "fees-and-costs", level: 2 },
+        { id: "step-4-calculate-total-costs", title: "Step 4: Calculate Total Costs", level: 2 },
+        { id: "final-selection", title: "final-selection", level: 2 },
+        { id: "step-5-make-your-final-selection", title: "Step 5: Make Your Final Selection", level: 2 }
       ]}
       faqs={[
         {

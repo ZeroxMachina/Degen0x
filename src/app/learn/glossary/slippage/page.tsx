@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Slippage? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Slippage? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what slippage is, how it affects your crypto trades, and strategies to minimize its impact on DeFi swaps.",
 };
@@ -17,11 +17,16 @@ export default function SlippagePage() {
       readTime="5 min"
       intro="Slippage is the difference between the expected price of a trade and the actual execution price. It occurs when there is insufficient liquidity to fill an order at the desired price, or when market conditions change between the time a trade is submitted and when it is executed. Slippage is a significant concern in DeFi trading, where low-liquidity pools can result in substantially worse prices than expected."
       toc={[
-        { id: "definition", title: "What Is Slippage?", level: 2 },
-        { id: "causes", title: "Causes of Slippage", level: 2 },
-        { id: "slippage-tolerance", title: "Slippage Tolerance Settings", level: 2 },
-        { id: "minimizing", title: "Minimizing Slippage", level: 2 },
-        { id: "why-it-matters", title: "Why Slippage Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-slippage", title: "What Is Slippage?", level: 2 },
+        { id: "causes", title: "causes", level: 2 },
+        { id: "causes-of-slippage", title: "Causes of Slippage", level: 2 },
+        { id: "slippage-tolerance", title: "slippage-tolerance", level: 2 },
+        { id: "slippage-tolerance-settings", title: "Slippage Tolerance Settings", level: 2 },
+        { id: "minimizing", title: "minimizing", level: 2 },
+        { id: "minimizing-slippage", title: "Minimizing Slippage", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-slippage-matters", title: "Why Slippage Matters", level: 2 }
       ]}
       faqs={[
         {

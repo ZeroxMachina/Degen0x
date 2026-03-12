@@ -384,7 +384,7 @@ export default function TokenVestingPage() {
 
         {/* Header */}
         <div className="mb-10">
-          <h1 className="text-5xl font-black text-white mb-3 gradient-text">Token Vesting & Unlock Tracker</h1>
+          <h1 className="text-5xl font-black text-[var(--color-text)] mb-3 gradient-text">Token Vesting & Unlock Tracker</h1>
           <p className="text-lg text-gray-400 max-w-3xl">
             Monitor token vesting schedules, unlock events, and calculate the price impact of major cryptocurrency releases.
             Track 12+ major tokens with cliff, linear, and milestone-based vesting schedules.
@@ -395,24 +395,24 @@ export default function TokenVestingPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <div className="glass rounded-xl p-4 border border-gray-700">
             <div className="text-xs text-gray-400 mb-1">Current Unlocked</div>
-            <div className="text-2xl font-bold text-white">{current.currentUnlocked}%</div>
+            <div className="text-2xl font-bold text-[var(--color-text)]">{current.currentUnlocked}%</div>
             <div className="text-xs text-green-400 mt-1">On track</div>
           </div>
           <div className="glass rounded-xl p-4 border border-gray-700">
             <div className="text-xs text-gray-400 mb-1">Next Unlock</div>
-            <div className="text-sm font-bold text-white">{current.nextUnlock}</div>
+            <div className="text-sm font-bold text-[var(--color-text)]">{current.nextUnlock}</div>
             <div className="text-xs text-blue-400 mt-1">
               {(current.nextUnlockAmount / 1000000).toFixed(1)}M tokens
             </div>
           </div>
           <div className="glass rounded-xl p-4 border border-gray-700">
             <div className="text-xs text-gray-400 mb-1">Inflation Rate</div>
-            <div className="text-2xl font-bold text-white">{current.inflationRate}%</div>
+            <div className="text-2xl font-bold text-[var(--color-text)]">{current.inflationRate}%</div>
             <div className="text-xs text-orange-400 mt-1">Per unlock</div>
           </div>
           <div className="glass rounded-xl p-4 border border-gray-700">
             <div className="text-xs text-gray-400 mb-1">Total Supply</div>
-            <div className="text-sm font-bold text-white">{(current.totalSupply / 1000000000).toFixed(2)}B</div>
+            <div className="text-sm font-bold text-[var(--color-text)]">{(current.totalSupply / 1000000000).toFixed(2)}B</div>
             <div className="text-xs text-purple-400 mt-1">Tokens</div>
           </div>
         </div>
@@ -421,7 +421,7 @@ export default function TokenVestingPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           {/* Token Selector & Info */}
           <div className="glass rounded-xl p-6 border border-gray-700">
-            <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+            <h2 className="text-xl font-bold text-[var(--color-text)] mb-4 flex items-center gap-2">
               <span className="text-2xl">{current.icon}</span>
               Token Selection
             </h2>
@@ -432,7 +432,7 @@ export default function TokenVestingPage() {
                   onClick={() => setSelectedToken(token.symbol)}
                   className={`w-full text-left p-3 rounded-lg transition-all ${
                     selectedToken === token.symbol
-                      ? 'bg-indigo-500/20 border border-indigo-500 text-white'
+                      ? 'bg-indigo-500/20 border border-indigo-500 text-[var(--color-text)]'
                       : 'bg-gray-800/30 border border-gray-700 text-gray-400 hover:border-gray-600'
                   }`}
                 >
@@ -455,7 +455,7 @@ export default function TokenVestingPage() {
                     onClick={() => setSelectedToken(token.symbol)}
                     className={`p-2 rounded text-xs font-medium transition-all ${
                       selectedToken === token.symbol
-                        ? 'bg-indigo-500/20 border border-indigo-500 text-white'
+                        ? 'bg-indigo-500/20 border border-indigo-500 text-[var(--color-text)]'
                         : 'bg-gray-800/30 border border-gray-700 text-gray-400 hover:border-gray-600'
                     }`}
                   >
@@ -468,7 +468,7 @@ export default function TokenVestingPage() {
 
           {/* Vesting Schedule Timeline */}
           <div className="lg:col-span-2 glass rounded-xl p-6 border border-gray-700">
-            <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
+            <h2 className="text-xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-2">
               <span>📅</span>
               Vesting Schedule Timeline
             </h2>
@@ -488,14 +488,14 @@ export default function TokenVestingPage() {
                           }`}
                         />
                         <div>
-                          <div className="text-sm font-semibold text-white">{unlock.date}</div>
+                          <div className="text-sm font-semibold text-[var(--color-text)]">{unlock.date}</div>
                           <div className="text-xs text-gray-400">
                             {unlock.amount > 0 ? `${(unlock.amount / 1000000).toFixed(1)}M` : 'Cliff Period'} tokens
                           </div>
                         </div>
                       </div>
                       <div className="text-right">
-                        <div className="text-sm font-bold text-white">{unlock.percent}%</div>
+                        <div className="text-sm font-bold text-[var(--color-text)]">{unlock.percent}%</div>
                         <div className={`text-xs ${isPast ? 'text-green-400' : 'text-gray-400'}`}>
                           {isPast ? 'Unlocked' : `${daysUntil}d`}
                         </div>
@@ -532,19 +532,19 @@ export default function TokenVestingPage() {
 
         {/* Vesting Impact Calculator */}
         <div className="glass rounded-xl p-6 border border-gray-700 mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-2">
             <span>🧮</span>
             Vesting Impact Calculator
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <div>
-              <label className="block text-sm font-semibold text-white mb-2">Token Amount</label>
+              <label className="block text-sm font-semibold text-[var(--color-text)] mb-2">Token Amount</label>
               <input
                 type="number"
                 value={tokenAmount}
                 onChange={(e) => setTokenAmount(Number(e.target.value))}
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500"
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-[var(--color-text)] placeholder-gray-500 focus:outline-none focus:border-indigo-500"
                 placeholder="Enter amount"
               />
               <div className="text-xs text-gray-500 mt-1">
@@ -553,11 +553,11 @@ export default function TokenVestingPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-white mb-2">Vesting Type</label>
+              <label className="block text-sm font-semibold text-[var(--color-text)] mb-2">Vesting Type</label>
               <select
                 value={vestingType}
                 onChange={(e) => setVestingType(e.target.value as 'cliff' | 'linear' | 'milestone')}
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-indigo-500"
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-[var(--color-text)] focus:outline-none focus:border-indigo-500"
               >
                 <option value="linear">📈 Linear</option>
                 <option value="cliff">⏸️ Cliff</option>
@@ -566,12 +566,12 @@ export default function TokenVestingPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-white mb-2">Vesting Period (Months)</label>
+              <label className="block text-sm font-semibold text-[var(--color-text)] mb-2">Vesting Period (Months)</label>
               <input
                 type="number"
                 value={monthsToVest}
                 onChange={(e) => setMonthsToVest(Number(e.target.value))}
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500"
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-[var(--color-text)] placeholder-gray-500 focus:outline-none focus:border-indigo-500"
                 min="1"
                 max="60"
               />
@@ -580,7 +580,7 @@ export default function TokenVestingPage() {
 
           {/* Monthly Unlock Chart */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold text-white mb-4">Monthly Unlock Schedule (12 Months)</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-4">Monthly Unlock Schedule (12 Months)</h3>
             <div className="space-y-3">
               {monthlyUnlocks.slice(0, 12).map((month, index) => (
                 <div key={index} className="space-y-1">
@@ -594,7 +594,7 @@ export default function TokenVestingPage() {
                         }}
                       />
                     </div>
-                    <div className="text-right text-sm font-semibold text-white w-24">
+                    <div className="text-right text-sm font-semibold text-[var(--color-text)] w-24">
                       {(month.amount / 1000000).toFixed(1)}M
                     </div>
                   </div>
@@ -607,7 +607,7 @@ export default function TokenVestingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-gray-700">
             <div className="bg-gray-800/30 rounded-lg p-4">
               <div className="text-xs text-gray-400 mb-1">Maximum Monthly Unlock</div>
-              <div className="text-2xl font-bold text-white">
+              <div className="text-2xl font-bold text-[var(--color-text)]">
                 {(maxMonthlyAmount / 1000000).toFixed(1)}M
               </div>
               <div className="text-xs text-orange-400 mt-2">
@@ -637,7 +637,7 @@ export default function TokenVestingPage() {
 
         {/* Token Comparison Table */}
         <div className="glass rounded-xl p-6 border border-gray-700 mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-2">
             <span>📊</span>
             Token Comparison Table
           </h2>
@@ -647,7 +647,7 @@ export default function TokenVestingPage() {
               onClick={() => setSortBy('unlock-percent')}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 sortBy === 'unlock-percent'
-                  ? 'bg-indigo-500 text-white'
+                  ? 'bg-indigo-500 text-[var(--color-text)]'
                   : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
               }`}
             >
@@ -657,7 +657,7 @@ export default function TokenVestingPage() {
               onClick={() => setSortBy('next-unlock')}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 sortBy === 'next-unlock'
-                  ? 'bg-indigo-500 text-white'
+                  ? 'bg-indigo-500 text-[var(--color-text)]'
                   : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
               }`}
             >
@@ -667,7 +667,7 @@ export default function TokenVestingPage() {
               onClick={() => setSortBy('inflation')}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 sortBy === 'inflation'
-                  ? 'bg-indigo-500 text-white'
+                  ? 'bg-indigo-500 text-[var(--color-text)]'
                   : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
               }`}
             >
@@ -694,7 +694,7 @@ export default function TokenVestingPage() {
                     className="border-b border-gray-700/50 hover:bg-gray-800/30 transition-colors cursor-pointer"
                     onClick={() => setSelectedToken(token.symbol)}
                   >
-                    <td className="py-3 px-4 font-semibold text-white">
+                    <td className="py-3 px-4 font-semibold text-[var(--color-text)]">
                       <span className="text-lg mr-2">{token.icon}</span>
                       {token.symbol}
                     </td>
@@ -706,7 +706,7 @@ export default function TokenVestingPage() {
                             style={{ width: `${token.currentUnlocked}%` }}
                           />
                         </div>
-                        <span className="text-white font-medium text-xs">{token.currentUnlocked}%</span>
+                        <span className="text-[var(--color-text)] font-medium text-xs">{token.currentUnlocked}%</span>
                       </div>
                     </td>
                     <td className="py-3 px-4 text-gray-400">{token.nextUnlock}</td>
@@ -736,7 +736,7 @@ export default function TokenVestingPage() {
 
         {/* Vesting Schedule Types Explainer */}
         <div className="glass rounded-xl p-6 border border-gray-700 mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-2">
             <span>📚</span>
             Vesting Schedule Types
           </h2>
@@ -816,7 +816,7 @@ export default function TokenVestingPage() {
           </div>
 
           <div className="mt-6 pt-6 border-t border-gray-700 bg-gray-800/30 rounded-lg p-4">
-            <h4 className="font-semibold text-white mb-3 flex items-center gap-2">
+            <h4 className="font-semibold text-[var(--color-text)] mb-3 flex items-center gap-2">
               <span>💡</span>
               Pro Tips
             </h4>
@@ -842,17 +842,17 @@ export default function TokenVestingPage() {
 
         {/* Alert Simulation Panel */}
         <div className="glass rounded-xl p-6 border border-gray-700">
-          <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-2">
             <span>🔔</span>
             Alert Simulation Panel
           </h2>
 
           <div className="mb-8">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-white">Your Alerts ({alerts.length})</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)]">Your Alerts ({alerts.length})</h3>
               <button
                 onClick={addAlert}
-                className="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg text-sm font-medium transition-colors"
+                className="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-[var(--color-text)] rounded-lg text-sm font-medium transition-colors"
               >
                 + Add Alert
               </button>
@@ -873,7 +873,7 @@ export default function TokenVestingPage() {
                     />
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-white font-semibold">{alert.token}</span>
+                        <span className="text-[var(--color-text)] font-semibold">{alert.token}</span>
                         <span className="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">
                           {alert.type === 'big-unlock'
                             ? '📈 Big Unlock'
@@ -902,25 +902,25 @@ export default function TokenVestingPage() {
 
           {/* Alert Settings */}
           <div className="pt-6 border-t border-gray-700">
-            <h3 className="text-lg font-semibold text-white mb-4">Alert Preferences</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-4">Alert Preferences</h3>
             <div className="space-y-3">
               <div className="flex items-center justify-between p-3 bg-gray-800/30 rounded-lg border border-gray-700">
                 <div>
-                  <div className="text-sm font-medium text-white">Email Notifications</div>
+                  <div className="text-sm font-medium text-[var(--color-text)]">Email Notifications</div>
                   <div className="text-xs text-gray-400">Get notified via email</div>
                 </div>
                 <input type="checkbox" defaultChecked className="w-5 h-5 accent-indigo-500" />
               </div>
               <div className="flex items-center justify-between p-3 bg-gray-800/30 rounded-lg border border-gray-700">
                 <div>
-                  <div className="text-sm font-medium text-white">Push Notifications</div>
+                  <div className="text-sm font-medium text-[var(--color-text)]">Push Notifications</div>
                   <div className="text-xs text-gray-400">Browser push alerts (real-time)</div>
                 </div>
                 <input type="checkbox" defaultChecked className="w-5 h-5 accent-indigo-500" />
               </div>
               <div className="flex items-center justify-between p-3 bg-gray-800/30 rounded-lg border border-gray-700">
                 <div>
-                  <div className="text-sm font-medium text-white">Discord Webhook</div>
+                  <div className="text-sm font-medium text-[var(--color-text)]">Discord Webhook</div>
                   <div className="text-xs text-gray-400">Send alerts to your Discord server</div>
                 </div>
                 <input type="checkbox" className="w-5 h-5 accent-indigo-500" />
@@ -943,15 +943,15 @@ export default function TokenVestingPage() {
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-400">
             <div>
-              <h4 className="font-semibold text-white mb-2">Data Sources</h4>
+              <h4 className="font-semibold text-[var(--color-text)] mb-2">Data Sources</h4>
               <p>Token vesting data aggregated from official project documentation and blockchain records.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-white mb-2">Important Note</h4>
+              <h4 className="font-semibold text-[var(--color-text)] mb-2">Important Note</h4>
               <p>This tool is for educational purposes. Price impact estimates are approximate and not financial advice.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-white mb-2">Last Updated</h4>
+              <h4 className="font-semibold text-[var(--color-text)] mb-2">Last Updated</h4>
               <p>March 2026. Vesting schedules change; verify with official sources before trading.</p>
             </div>
           </div>

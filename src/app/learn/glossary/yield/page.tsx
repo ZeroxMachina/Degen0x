@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Yield in Crypto? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Yield in Crypto? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what yield means in crypto, the different sources of DeFi yield, how to evaluate yield opportunities, and the difference between real yield and emission-based yield.",
 };
 
@@ -11,7 +11,16 @@ export default function YieldPage() {
   return (
     <LearnPageLayout title="What Is Yield?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="Yield in crypto refers to the return earned on cryptocurrency holdings through various DeFi activities such as lending, staking, providing liquidity, or participating in protocol incentives. Yield is typically expressed as an annual percentage (APR or APY) and can come from multiple sources including interest payments, trading fees, token emissions, and protocol revenue sharing. Understanding yield sources is essential for evaluating the sustainability and risk of DeFi opportunities."
-      toc={[{ id: "definition", title: "What Is Yield?", level: 2 }, { id: "yield-sources", title: "Sources of DeFi Yield", level: 2 }, { id: "real-vs-emission", title: "Real Yield vs Emission Yield", level: 2 }, { id: "evaluating-yield", title: "Evaluating Yield Opportunities", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-yield", title: "What Is Yield?", level: 2 },
+        { id: "yield-sources", title: "yield-sources", level: 2 },
+        { id: "sources-of-defi-yield", title: "Sources of DeFi Yield", level: 2 },
+        { id: "real-vs-emission", title: "real-vs-emission", level: 2 },
+        { id: "real-yield-vs-emission-yield", title: "Real Yield vs Emission Yield", level: 2 },
+        { id: "evaluating-yield", title: "evaluating-yield", level: 2 },
+        { id: "evaluating-yield-opportunities", title: "Evaluating Yield Opportunities", level: 2 }
+      ]}
       faqs={[{ question: "What is real yield?", answer: "Real yield comes from actual economic activity: interest paid by borrowers, trading fees from swaps, protocol revenue distributed to token holders. It is sustainable because it is backed by genuine demand. Emission yield comes from token inflation and is only sustainable if the token price holds. The real yield movement emphasizes protocols that generate genuine revenue rather than relying on token printing." },
         { question: "Why are crypto yields so much higher than traditional finance?", answer: "Crypto yields are higher due to the risk premium for smart contract exposure, the nascent and competitive nature of DeFi markets, the efficiency gains from disintermediation, and in many cases, unsustainable token emission subsidies that inflate apparent returns. As DeFi matures and risk decreases, yields are gradually converging toward traditional finance levels for equivalent risk profiles." }]}
       relatedArticles={[{ title: "APR", href: "/learn/glossary/apr", category: "Glossary" }, { title: "APY", href: "/learn/glossary/apy", category: "Glossary" }, { title: "Farming", href: "/learn/glossary/farming", category: "Glossary" }, { title: "DeFi Yield Strategies", href: "/learn/defi-yield-strategies", category: "Learn Crypto" }]}

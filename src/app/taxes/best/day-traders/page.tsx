@@ -17,10 +17,14 @@ export default function BestDayTradersTaxPage() {
       readTime="8 min"
       intro="Day traders face unique crypto tax challenges: thousands of transactions, multiple exchanges, complex cost basis calculations, and the potential benefits of trader tax status. Standard crypto tax tools may struggle with high transaction volumes or lack the advanced features active traders need. This guide covers the best options for high-volume traders and the tax strategies available to frequent traders."
       toc={[
-        { id: "trader-needs", title: "Day Trader Tax Needs", level: 2 },
-        { id: "best-tools", title: "Best Tools for High Volume", level: 2 },
-        { id: "cost-basis", title: "Cost Basis Optimization", level: 2 },
-        { id: "trader-tax-status", title: "Trader Tax Status", level: 2 },
+        { id: "trader-needs", title: "trader-needs", level: 2 },
+        { id: "day-trader-tax-needs", title: "Day Trader Tax Needs", level: 2 },
+        { id: "best-tools", title: "best-tools", level: 2 },
+        { id: "best-tools-for-high-volume", title: "Best Tools for High Volume", level: 2 },
+        { id: "cost-basis", title: "cost-basis", level: 2 },
+        { id: "cost-basis-optimization", title: "Cost Basis Optimization", level: 2 },
+        { id: "trader-tax-status", title: "trader-tax-status", level: 2 },
+        { id: "trader-tax-status", title: "Trader Tax Status", level: 2 }
       ]}
       faqs={[
         { question: "How many transactions can crypto tax tools handle?", answer: "Most major tools handle tens of thousands of transactions. CryptoTaxCalculator, Koinly, and TokenTax all support high-volume portfolios. Performance may slow with very large datasets, so test import speed with your actual data before tax season." },

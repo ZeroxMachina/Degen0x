@@ -17,11 +17,16 @@ export default function HowCryptoLoansWorkPage() {
       readTime="11 min"
       intro="Crypto loans allow you to borrow cash or stablecoins by using your cryptocurrency as collateral, letting you access liquidity without selling your holdings. Whether through centralized platforms like Nexo or decentralized protocols like Aave, the core mechanics involve depositing collateral, receiving a loan, paying interest, and eventually repaying to reclaim your assets. This guide covers the complete process from application to repayment."
       toc={[
-        { id: "basics", title: "Crypto Loan Basics", level: 2 },
-        { id: "collateral-process", title: "The Collateral Process", level: 2 },
-        { id: "cefi-vs-defi", title: "CeFi vs DeFi Loans", level: 2 },
-        { id: "repayment", title: "Repayment and Liquidation", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "basics", title: "basics", level: 2 },
+        { id: "crypto-loan-basics", title: "Crypto Loan Basics", level: 2 },
+        { id: "collateral-process", title: "collateral-process", level: 2 },
+        { id: "the-collateral-process", title: "The Collateral Process", level: 2 },
+        { id: "cefi-vs-defi", title: "cefi-vs-defi", level: 2 },
+        { id: "cefi-vs-defi-loans", title: "CeFi vs DeFi Loans", level: 2 },
+        { id: "repayment", title: "repayment", level: 2 },
+        { id: "repayment-and-liquidation", title: "Repayment and Liquidation", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "Do crypto loans affect my credit score?", answer: "No. Crypto-backed loans do not involve credit checks and are not reported to credit bureaus. Your creditworthiness is determined solely by the value of your collateral, not your credit history." },

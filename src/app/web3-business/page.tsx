@@ -63,7 +63,7 @@ export default function Web3BusinessPage() {
     "@type": "CollectionPage",
     name: `Web3 Business Tools & Guides (${CURRENT_YEAR})`,
     description: `Everything you need to build and manage a Web3 business in ${CURRENT_YEAR}.`,
-    url: "https://cryptodegen.com/web3-business",
+    url: "https://degen0x.com/web3-business",
     isPartOf: { "@type": "WebSite", name: SITE_NAME },
   };
 
@@ -82,7 +82,7 @@ export default function Web3BusinessPage() {
         />
 
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
             Web3 Business Hub
           </h1>
           <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -96,7 +96,7 @@ export default function Web3BusinessPage() {
         {/* Best-Of Categories */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white">Find the Best Web3 Business Tools</h2>
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Find the Best Web3 Business Tools</h2>
             <Link
               href="/web3-business/best"
               className="text-[var(--color-primary)] hover:underline text-sm font-medium"
@@ -111,7 +111,7 @@ export default function Web3BusinessPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
-                <h3 className="text-white font-semibold mb-1">{link.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">
                   {link.description}
                 </p>
@@ -122,7 +122,7 @@ export default function Web3BusinessPage() {
 
         {/* Learn Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Learn: Build Your Web3 Business</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn: Build Your Web3 Business</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {learnLinks.map((link) => (
               <Link
@@ -130,7 +130,7 @@ export default function Web3BusinessPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
-                <h3 className="text-white font-semibold mb-1">{link.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">
                   {link.description}
                 </p>
@@ -141,7 +141,7 @@ export default function Web3BusinessPage() {
 
         {/* About Section */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">How We Evaluate Web3 Business Tools</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Evaluate Web3 Business Tools</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Our Web3 business reviews are based on hands-on testing and real-world usage. We evaluate
             each platform across multiple dimensions including functionality, pricing, security,

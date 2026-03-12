@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Diva Staking (DIVA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Diva Staking (DIVA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Diva Staking (DIVA), the DVT-native liquid staking protocol. Discover how it works, tokenomics, use cases, and how to buy DIVA.",
 };
 
@@ -16,12 +16,18 @@ export default function DivaPage() {
       readTime="8 min read"
       intro="Diva Staking is a liquid staking protocol natively built on Distributed Validator Technology (DVT), distributing each validator's duties across multiple key shares held by independent operators. This design provides maximum resilience and decentralization for Ethereum staking, ensuring no single operator failure can cause slashing or downtime for staked positions."
       toc={[
-        { id: "what-is", title: "What Is Diva Staking?", level: 2 },
-        { id: "how-it-works", title: "How Does Diva Staking Work?", level: 2 },
-        { id: "tokenomics", title: "DIVA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy DIVA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-diva-staking", title: "What Is Diva Staking?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-diva-staking-work", title: "How Does Diva Staking Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "diva-tokenomics", title: "DIVA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-diva", title: "How to Buy DIVA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Diva Staking?", answer: "Diva Staking is a DVT-native liquid staking protocol that distributes validator duties across multiple operators for maximum resilience, issuing divETH as a liquid staking token." },

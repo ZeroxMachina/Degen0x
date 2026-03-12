@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Nexus Mutual Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Nexus Mutual Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Nexus Mutual review covering smart contract cover, claim process, NXM staking, pricing, and how it compares to other DeFi insurance protocols.",
 };
 

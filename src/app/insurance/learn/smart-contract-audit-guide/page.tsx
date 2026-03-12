@@ -18,12 +18,18 @@ export default function SmartContractAuditGuidePage() {
       readTime="11 min read"
       intro="Smart contract audits are the first line of defense in DeFi security. An audit is a systematic review of smart contract code by independent security experts to identify vulnerabilities before they can be exploited. While audits cannot guarantee safety, they significantly reduce risk and are considered a minimum requirement for any serious DeFi protocol. Understanding how audits work, what they cover, and their limitations is essential for evaluating the safety of any DeFi protocol you interact with."
       toc={[
-        { id: "what-is-audit", title: "What Is a Smart Contract Audit?", level: 2 },
-        { id: "audit-process", title: "The Audit Process", level: 2 },
-        { id: "top-firms", title: "Top Audit Firms", level: 2 },
-        { id: "reading-reports", title: "How to Read an Audit Report", level: 2 },
-        { id: "limitations", title: "Limitations of Audits", level: 2 },
-        { id: "beyond-audits", title: "Beyond Audits: Formal Verification & Bug Bounties", level: 2 },
+        { id: "what-is-audit", title: "what-is-audit", level: 2 },
+        { id: "what-is-a-smart-contract-audit", title: "What Is a Smart Contract Audit?", level: 2 },
+        { id: "audit-process", title: "audit-process", level: 2 },
+        { id: "the-audit-process", title: "The Audit Process", level: 2 },
+        { id: "top-firms", title: "top-firms", level: 2 },
+        { id: "top-audit-firms", title: "Top Audit Firms", level: 2 },
+        { id: "reading-reports", title: "reading-reports", level: 2 },
+        { id: "how-to-read-an-audit-report", title: "How to Read an Audit Report", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-of-audits", title: "Limitations of Audits", level: 2 },
+        { id: "beyond-audits", title: "beyond-audits", level: 2 },
+        { id: "beyond-audits-formal-verification-bug-bounties", title: "Beyond Audits: Formal Verification & Bug Bounties", level: 2 }
       ]}
       faqs={[
         { question: "Does an audit mean a protocol is safe?", answer: "No. Audits significantly reduce risk but cannot guarantee safety. Audited protocols have been exploited. Audits are a point-in-time assessment and may not cover all code paths, especially in complex systems. Treat audits as a necessary but not sufficient condition for security." },

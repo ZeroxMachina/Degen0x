@@ -52,7 +52,7 @@ export default function SecurityPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Most Secure Crypto Exchanges ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -69,15 +69,15 @@ export default function SecurityPage() {
           have ranked exchanges based on their security features, hack history, regulatory
           compliance, and asset protection measures.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Security Features Comparison</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Security Features Comparison</h2>
         <div className="overflow-x-auto rounded-xl border border-[var(--color-border)] mt-4">
           <table className="w-full">
             <thead>
               <tr className="bg-[var(--color-bg-card)]">
-                <th className="px-4 py-3 text-left text-sm font-semibold text-white">Feature</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Kraken</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Gemini</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Coinbase</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Feature</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Kraken</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Gemini</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Coinbase</th>
               </tr>
             </thead>
             <tbody>
@@ -91,7 +91,7 @@ export default function SecurityPage() {
                 { feature: "Bug Bounty Program", kraken: "Yes", gemini: "Yes", coinbase: "Yes" },
               ].map((row) => (
                 <tr key={row.feature} className="border-t border-[var(--color-border)]">
-                  <td className="px-4 py-3 text-sm font-medium text-white">{row.feature}</td>
+                  <td className="px-4 py-3 text-sm font-medium text-[var(--color-text)]">{row.feature}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.kraken}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.gemini}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.coinbase}</td>

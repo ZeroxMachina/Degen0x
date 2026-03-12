@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Sentinel (DVPN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Sentinel (DVPN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Sentinel (DVPN), the decentralized VPN protocol built on Cosmos. Discover how it works, tokenomics, use cases, and how to buy DVPN.",
 };
@@ -17,12 +17,18 @@ export default function SentinelPage() {
       readTime="8 min read"
       intro="Sentinel is a decentralized VPN (dVPN) protocol built on the Cosmos blockchain that enables anyone to create, share, and monetize bandwidth through a peer-to-peer network. Unlike traditional VPN services run by centralized companies, Sentinel distributes VPN infrastructure across independent node operators worldwide, providing censorship-resistant internet access without a single point of failure."
       toc={[
-        { id: "what-is", title: "What Is Sentinel?", level: 2 },
-        { id: "how-it-works", title: "How Does Sentinel Work?", level: 2 },
-        { id: "tokenomics", title: "DVPN Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy DVPN", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-sentinel", title: "What Is Sentinel?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-sentinel-work", title: "How Does Sentinel Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "dvpn-tokenomics", title: "DVPN Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-dvpn", title: "How to Buy DVPN", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

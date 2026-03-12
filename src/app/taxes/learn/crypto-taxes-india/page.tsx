@@ -18,23 +18,19 @@ export default function CryptoTaxesIndiaPage() {
       readTime="10 min read"
       intro="India introduced a comprehensive crypto tax framework in the 2022 Union Budget that imposes a flat 30 percent tax on all Virtual Digital Asset (VDA) gains with no deductions allowed except the cost of acquisition. Combined with a 1 percent Tax Deducted at Source (TDS) on all crypto transfers and the inability to offset losses, India has one of the most stringent crypto tax regimes globally."
       toc={[
-        { id: "framework", title: "India's Crypto Tax Framework", level: 2 },
-        { id: "flat-tax", title: "The 30% Flat Tax on Gains", level: 2 },
-        { id: "tds", title: "1% TDS on Transfers", level: 2 },
-        { id: "loss-rules", title: "No Loss Offset Rules", level: 2 },
-        { id: "reporting", title: "ITR Filing & Compliance", level: 2 },
-        { id: "planning", title: "Tax Planning Strategies", level: 2 },
+        { id: "framework", title: "framework", level: 2 },
+        { id: "india", title: "India", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto taxed at 30% in India?", answer: "Yes. All gains from Virtual Digital Assets are taxed at a flat 30 percent rate under Section 115BBH, plus applicable surcharge and 4 percent health and education cess. This rate applies regardless of your income tax slab or holding period." },
         { question: "Can I offset crypto losses against crypto gains?", answer: "No. Losses from one cryptocurrency cannot be set off against gains from another cryptocurrency, and crypto losses cannot be set off against any other income. Losses also cannot be carried forward to future years. Each transaction is taxed independently." },
         { question: "What is the 1% TDS on crypto?", answer: "Under Section 194S, a 1 percent Tax Deducted at Source applies to all crypto transfers exceeding 10,000 INR per year (50,000 INR for specified persons). Indian exchanges deduct this automatically. The TDS can be claimed as a credit when filing your income tax return." },
-        { question: "Is crypto-to-crypto trading taxable in India?", answer: "Yes. Exchanging one VDA for another is a taxable transfer. The gain is calculated as the fair market value of the received asset minus the cost of acquisition of the transferred asset, taxed at the flat 30 percent rate." },
+        { question: "Is crypto-to-crypto trading taxable in India?", answer: "Yes. Exchanging one VDA for another is a taxable transfer. The gain is calculated as the fair market value of the received asset minus the cost of acquisition of the transferred asset, taxed at the flat 30 percent rate." }
       ]}
       relatedArticles={[
         { title: "Best Crypto Tax Software", href: "/taxes/best/software", category: "Taxes" },
         { title: "Airdrop Tax Guide", href: "/taxes/learn/airdrop-tax-guide", category: "Taxes" },
-        { title: "Staking Rewards Taxes", href: "/taxes/learn/staking-rewards-taxes", category: "Taxes" },
+        { title: "Staking Rewards Taxes", href: "/taxes/learn/staking-rewards-taxes", category: "Taxes" }
       ]}
     >
       <h2 id="framework">India&apos;s Crypto Tax Framework</h2>

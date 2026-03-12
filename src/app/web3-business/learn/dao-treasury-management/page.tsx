@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DAO Treasury Management Best Practices (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DAO Treasury Management Best Practices (${CURRENT_YEAR}) | degen0x`,
   description: "Best practices for DAO treasury management. Diversification, spending frameworks, yield strategies, and governance for sustainable DAO finances.",
 };
 
@@ -12,10 +12,14 @@ export default function DaoTreasuryManagementPage() {
     <LearnPageLayout title="DAO Treasury Management Best Practices" categoryName="Web3 Business" categorySlug="web3-business" readTime="8 min read"
       intro="DAO treasuries collectively hold billions of dollars in crypto assets, making treasury management one of the most consequential governance decisions in Web3. A well-managed treasury ensures the DAO can fund development, incentivize contributors, and survive market downturns. Poorly managed treasuries have led to project failures when bear markets decimated concentrated token holdings. Best practices in DAO treasury management draw from both traditional corporate finance and crypto-native strategies."
       toc={[
-        { id: "diversification", title: "Treasury Diversification", level: 2 },
-        { id: "spending", title: "Spending Frameworks", level: 2 },
-        { id: "yield", title: "Yield Strategies", level: 2 },
-        { id: "governance", title: "Treasury Governance", level: 2 },
+        { id: "diversification", title: "diversification", level: 2 },
+        { id: "treasury-diversification", title: "Treasury Diversification", level: 2 },
+        { id: "spending", title: "spending", level: 2 },
+        { id: "spending-frameworks", title: "Spending Frameworks", level: 2 },
+        { id: "yield", title: "yield", level: 2 },
+        { id: "yield-strategies", title: "Yield Strategies", level: 2 },
+        { id: "governance", title: "governance", level: 2 },
+        { id: "treasury-governance", title: "Treasury Governance", level: 2 }
       ]}
       faqs={[
         { question: "Why is DAO treasury management important?", answer: "The treasury is the DAO's financial lifeline. It funds development, pays contributors, finances marketing, provides liquidity, and ensures long-term sustainability. DAOs with poorly managed treasuries (concentrated in their own volatile token, no stablecoin reserves, no spending discipline) can run out of runway during bear markets, forcing them to sell tokens at depressed prices or halt development." },

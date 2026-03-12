@@ -25,7 +25,7 @@ export default function ShibaInuPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Shiba Inu (SHIB) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function ShibaInuPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">SHIB</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2020</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">~589 Trillion SHIB (burning)</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">ERC-20 (Ethereum) + Shibarium L2</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">SHIB</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2020</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">~589 Trillion SHIB (burning)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">ERC-20 (Ethereum) + Shibarium L2</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Shiba Inu?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Shiba Inu?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Shiba Inu was created in August 2020 by an anonymous developer known as Ryoshi. Initially
           launched as an Ethereum-based meme token and self-described Dogecoin killer, SHIB gained
@@ -67,7 +67,7 @@ export default function ShibaInuPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Shiba Inu can be used for decentralized trading on ShibaSwap, as a payment method at
           accepting merchants, for governance voting on ecosystem proposals, and within the Shibarium
@@ -78,7 +78,7 @@ export default function ShibaInuPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           SHIB is an extremely high-risk speculative investment. The token's massive supply means
           even with ongoing burns, significant per-token price appreciation is difficult. The
@@ -90,7 +90,7 @@ export default function ShibaInuPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Shiba Inu</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Shiba Inu</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           SHIB is available on nearly every major exchange including Coinbase, Binance, Kraken, and
           Robinhood. Due to its extremely low per-token price, investors can purchase millions or

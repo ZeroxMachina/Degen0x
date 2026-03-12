@@ -17,11 +17,16 @@ export default function BitcoinLightningPaymentsPage() {
       readTime="11 min"
       intro="The Lightning Network is Bitcoin's Layer 2 payment protocol that enables instant, near-zero-fee transactions. By processing payments off-chain through a network of bidirectional payment channels, Lightning makes Bitcoin practical for everyday purchases, micropayments, and peer-to-peer transfers."
       toc={[
-        { id: "how-it-works", title: "How Lightning Works", level: 2 },
-        { id: "wallets", title: "Best Lightning Wallets", level: 2 },
-        { id: "spending", title: "Spending via Lightning", level: 2 },
-        { id: "receiving", title: "Receiving Lightning Payments", level: 2 },
-        { id: "limitations", title: "Current Limitations", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-lightning-works", title: "How Lightning Works", level: 2 },
+        { id: "wallets", title: "wallets", level: 2 },
+        { id: "best-lightning-wallets", title: "Best Lightning Wallets", level: 2 },
+        { id: "spending", title: "spending", level: 2 },
+        { id: "spending-via-lightning", title: "Spending via Lightning", level: 2 },
+        { id: "receiving", title: "receiving", level: 2 },
+        { id: "receiving-lightning-payments", title: "Receiving Lightning Payments", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "current-limitations", title: "Current Limitations", level: 2 }
       ]}
       faqs={[
         { question: "How fast are Lightning payments?", answer: "Lightning payments confirm in under one second, making them suitable for point-of-sale transactions and real-time payments." },

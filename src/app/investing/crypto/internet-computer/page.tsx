@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Internet Computer (ICP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Internet Computer (ICP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Internet Computer (ICP), the blockchain platform aiming to become the world computer. Discover how it works, tokenomics, and how to buy ICP.",
 };
@@ -17,12 +17,18 @@ export default function InternetComputerPage() {
       readTime="8 min read"
       intro="Internet Computer is a groundbreaking blockchain platform developed by the DFINITY Foundation that aims to extend the public internet into a global computing platform. ICP enables developers to build websites, enterprise systems, and internet services entirely on-chain without traditional cloud infrastructure. The ICP token powers computation and governance on the network."
       toc={[
-        { id: "what-is", title: "What Is Internet Computer?", level: 2 },
-        { id: "how-it-works", title: "How Internet Computer Works", level: 2 },
-        { id: "tokenomics", title: "ICP Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ICP", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-internet-computer", title: "What Is Internet Computer?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-internet-computer-works", title: "How Internet Computer Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "icp-tokenomics", title: "ICP Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-icp", title: "How to Buy ICP", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

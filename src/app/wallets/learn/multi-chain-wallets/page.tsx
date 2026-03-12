@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Multi-Chain Wallets Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Multi-Chain Wallets Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about multi-chain crypto wallets that support multiple blockchains. Compare top options, understand cross-chain features, and choose the right multi-chain wallet.",
 };
 
@@ -11,7 +11,16 @@ export default function MultiChainWalletsPage() {
   return (
     <LearnPageLayout title="Multi-Chain Wallets Explained" categoryName="Crypto Wallets" categorySlug="wallets" readTime="8 min read"
       intro="As the crypto ecosystem expands across dozens of blockchains, managing assets on multiple chains has become a necessity. Multi-chain wallets solve this by supporting multiple blockchains within a single interface, eliminating the need to install separate wallets for each network. From EVM-compatible chains to Solana, Cosmos, and beyond, multi-chain wallets simplify portfolio management while introducing their own set of trade-offs. This guide explores how multi-chain wallets work and which ones best serve different needs."
-      toc={[{ id: "why-multi-chain", title: "Why Multi-Chain Wallets", level: 2 }, { id: "how-they-work", title: "How They Work", level: 2 }, { id: "top-multi-chain-wallets", title: "Top Multi-Chain Wallets", level: 2 }, { id: "trade-offs", title: "Trade-offs and Limitations", level: 2 }]}
+      toc={[
+        { id: "why-multi-chain", title: "why-multi-chain", level: 2 },
+        { id: "why-multi-chain-wallets", title: "Why Multi-Chain Wallets", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-they-work", title: "How They Work", level: 2 },
+        { id: "top-multi-chain-wallets", title: "top-multi-chain-wallets", level: 2 },
+        { id: "top-multi-chain-wallets", title: "Top Multi-Chain Wallets", level: 2 },
+        { id: "trade-offs", title: "trade-offs", level: 2 },
+        { id: "trade-offs-and-limitations", title: "Trade-offs and Limitations", level: 2 }
+      ]}
       faqs={[{ question: "Is one multi-chain wallet enough for everything?", answer: "For most users, a multi-chain wallet covers 80-90% of needs. However, chain-specific wallets often provide better experiences for their native chain. Phantom is better for Solana DeFi than Trust Wallet, and Keplr is essential for Cosmos IBC operations. Many users combine a multi-chain wallet for general management with specialized wallets for their most-used chains." },
         { question: "Do multi-chain wallets use one seed phrase for all chains?", answer: "Yes, most multi-chain wallets derive addresses for all supported chains from a single seed phrase using different derivation paths (BIP-44 standard). Each chain gets its own unique address, but they all trace back to the same master seed. This means one seed phrase backup protects all your accounts across every supported blockchain." },
         { question: "Are multi-chain wallets less secure than single-chain wallets?", answer: "The security is comparable when using reputable wallets. The broader codebase of multi-chain wallets means more potential attack surface, but major wallets undergo extensive security audits. The main risk is that compromising one seed phrase exposes all chains simultaneously. For very large holdings, consider using separate wallets for different chains to compartmentalize risk." }]}

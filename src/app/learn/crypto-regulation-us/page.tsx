@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Regulation in the United States (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Regulation in the United States (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand the current state of crypto regulation in the US: SEC and CFTC jurisdiction, the securities vs commodities debate, stablecoin legislation, tax reporting, and what to expect from future regulation.",
 };
@@ -17,11 +17,16 @@ export default function CryptoRegulationUsPage() {
       readTime="10 min read"
       intro="The United States has taken a complex, multi-agency approach to crypto regulation that has been both influential and controversial. With the SEC, CFTC, FinCEN, IRS, and state regulators all asserting authority over different aspects of the crypto ecosystem, navigating the US regulatory landscape requires understanding the overlapping jurisdictions and evolving interpretations of existing laws. As one of the largest crypto markets in the world, US regulatory decisions have global implications for the entire industry."
       toc={[
-        { id: "regulatory-landscape", title: "The US Regulatory Landscape", level: 2 },
-        { id: "securities-debate", title: "The Securities vs Commodities Debate", level: 2 },
+        { id: "regulatory-landscape", title: "regulatory-landscape", level: 2 },
+        { id: "the-us-regulatory-landscape", title: "The US Regulatory Landscape", level: 2 },
+        { id: "securities-debate", title: "securities-debate", level: 2 },
+        { id: "the-securities-vs-commodities-debate", title: "The Securities vs Commodities Debate", level: 2 },
+        { id: "stablecoin-regulation", title: "stablecoin-regulation", level: 2 },
         { id: "stablecoin-regulation", title: "Stablecoin Regulation", level: 2 },
-        { id: "tax-reporting", title: "Tax and Reporting Requirements", level: 2 },
-        { id: "future-outlook", title: "Future Regulatory Outlook", level: 2 },
+        { id: "tax-reporting", title: "tax-reporting", level: 2 },
+        { id: "tax-and-reporting-requirements", title: "Tax and Reporting Requirements", level: 2 },
+        { id: "future-outlook", title: "future-outlook", level: 2 },
+        { id: "future-regulatory-outlook", title: "Future Regulatory Outlook", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Hardware Wallet? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Hardware Wallet? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what hardware wallets are, how they secure your crypto, and why they are the gold standard for self-custody.",
 };
@@ -17,11 +17,16 @@ export default function HardwareWalletPage() {
       readTime="5 min"
       intro="A hardware wallet is a physical device designed to securely store cryptocurrency private keys offline. By keeping keys isolated from internet-connected devices, hardware wallets protect against malware, phishing attacks, and remote hacking. They are widely considered the most secure method for individual crypto storage and are essential for anyone holding significant amounts of digital assets."
       toc={[
-        { id: "definition", title: "What Is a Hardware Wallet?", level: 2 },
-        { id: "how-it-works", title: "How Hardware Wallets Work", level: 2 },
-        { id: "vs-other-wallets", title: "Hardware vs Software Wallets", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-hardware-wallet", title: "What Is a Hardware Wallet?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-hardware-wallets-work", title: "How Hardware Wallets Work", level: 2 },
+        { id: "vs-other-wallets", title: "vs-other-wallets", level: 2 },
+        { id: "hardware-vs-software-wallets", title: "Hardware vs Software Wallets", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
         { id: "best-practices", title: "Best Practices", level: 2 },
-        { id: "why-it-matters", title: "Why Hardware Wallets Matter", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-hardware-wallets-matter", title: "Why Hardware Wallets Matter", level: 2 }
       ]}
       faqs={[
         {

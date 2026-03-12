@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Testnet? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Testnet? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what testnets are, how they are used for development and testing, and why they are essential for blockchain safety.",
 };
@@ -17,11 +17,16 @@ export default function TestnetPage() {
       readTime="5 min"
       intro="A testnet is an alternative blockchain network used for testing and experimentation without risking real funds. Testnets mirror the functionality of a mainnet but use tokens with no real-world value. Developers use testnets to deploy and test smart contracts, and users interact with testnets to try new protocols before they launch. Testnets are an essential part of the blockchain development lifecycle."
       toc={[
-        { id: "definition", title: "What Is a Testnet?", level: 2 },
-        { id: "how-it-works", title: "How Testnets Work", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-testnet", title: "What Is a Testnet?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-testnets-work", title: "How Testnets Work", level: 2 },
+        { id: "ethereum-testnets", title: "ethereum-testnets", level: 2 },
         { id: "ethereum-testnets", title: "Ethereum Testnets", level: 2 },
-        { id: "testnet-airdrops", title: "Testnets and Airdrops", level: 2 },
-        { id: "why-it-matters", title: "Why Testnets Matter", level: 2 },
+        { id: "testnet-airdrops", title: "testnet-airdrops", level: 2 },
+        { id: "testnets-and-airdrops", title: "Testnets and Airdrops", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-testnets-matter", title: "Why Testnets Matter", level: 2 }
       ]}
       faqs={[
         {

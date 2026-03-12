@@ -16,14 +16,8 @@ export default function StablecoinRegulation() {
       readTime="11 min"
       intro="Stablecoins are crypto's bridge to real-world finance, but they've attracted intense regulatory scrutiny. The EU's MiCA regulation set the global standard for stablecoin oversight. The US is implementing frameworks requiring reserves, capital, and compliance. By 2026, major stablecoins like USDC and USDT navigate complex regulatory landscapes. Understand stablecoin regulation globally, reserve requirements, systemic risk concerns, and how compliance is reshaping crypto finance."
       toc={[
-        "What Are Stablecoins & Why Regulate Them?",
-        "MiCA: Europe's Stablecoin Regulation Framework",
-        "US Stablecoin Regulation: Bills & Frameworks",
-        "Reserve Requirements & Backing Standards",
-        "USDC, USDT & Compliance Timelines",
-        "Cross-Border Regulatory Challenges",
-        "Systemic Risk & Financial Stability",
-        "The Future of Stablecoin Regulation",
+        { id: "what-are-stablecoins-why-regulate-them", title: "What Are Stablecoins & Why Regulate Them?", level: 2 },
+        { id: "mica-europe", title: "MiCA: Europe", level: 2 }
       ]}
       faqs={[
         {
@@ -45,7 +39,7 @@ export default function StablecoinRegulation() {
         {
           question: "Can stablecoins disappear or become worthless?",
           answer: "If a stablecoin issuer loses reserves through fraud or mismanagement, the stablecoin could become worthless. However, regulation is designed to prevent this through: mandatory audits, capital requirements, reserve segregation, and licensing requirements. If these safeguards work as intended, regulated stablecoins should be safer than unregulated ones. However, regulatory failures are possible. Older unregulated stablecoins (Tether) have faced stability concerns; newer regulated ones (USDC) have stronger safeguards.",
-        },
+        }
       ]}
       relatedArticles={[
         {
@@ -67,7 +61,7 @@ export default function StablecoinRegulation() {
           title: "What Are Crypto Exchanges?",
           slug: "what-are-crypto-exchanges",
           category: "Learn Crypto",
-        },
+        }
       ]}
     >
       <section id="what-are-stablecoins-why-regulate">

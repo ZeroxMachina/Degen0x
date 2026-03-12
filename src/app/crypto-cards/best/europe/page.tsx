@@ -17,10 +17,14 @@ export default function BestCryptoCardsEuropePage() {
       readTime="8 min"
       intro="European crypto card users have access to a diverse selection of cards, many of which offer features specifically designed for the European market including SEPA transfers, EUR-denominated accounts, and compliance with EU regulations. This guide ranks the best crypto cards available across Europe, covering rewards, fees, and regional considerations."
       toc={[
-        { id: "european-landscape", title: "European Crypto Card Landscape", level: 2 },
-        { id: "top-cards", title: "Top Crypto Cards for Europe", level: 2 },
-        { id: "regulations", title: "EU Regulatory Considerations", level: 2 },
-        { id: "choosing", title: "Choosing the Right Card", level: 2 },
+        { id: "european-landscape", title: "european-landscape", level: 2 },
+        { id: "european-crypto-card-landscape", title: "European Crypto Card Landscape", level: 2 },
+        { id: "top-cards", title: "top-cards", level: 2 },
+        { id: "top-crypto-cards-for-europe", title: "Top Crypto Cards for Europe", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "eu-regulatory-considerations", title: "EU Regulatory Considerations", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-the-right-card", title: "Choosing the Right Card", level: 2 }
       ]}
       faqs={[
         { question: "Can I use US crypto cards in Europe?", answer: "Some US-based crypto cards like Coinbase Card are available in Europe, but features and terms may differ from the US version. Cards like Bitpay are US-only. European users generally get better features and support from Europe-based card issuers like Crypto.com, Plutus, and Wirex." },

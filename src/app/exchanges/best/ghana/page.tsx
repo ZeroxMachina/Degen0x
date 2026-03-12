@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Ghana (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Ghana (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Ghana. Find GHS-friendly platforms with Mobile Money support, P2P trading, and competitive fees.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesGhana() {
       readTime="8 min read"
       intro="Ghana has become one of West Africa's most active cryptocurrency markets, driven by a tech-savvy youth population and mobile money adoption. The Bank of Ghana has been cautious about crypto regulation while exploring its own digital currency (e-Cedi). Ghanaian traders primarily use P2P platforms with Mobile Money integration. This guide covers the best exchange options for Ghanaian crypto enthusiasts."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Ghana", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "GHS Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-ghana", title: "Top Exchanges for Ghana", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "ghs-payment-methods", title: "GHS Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Ghana?", answer: "Crypto is not explicitly banned in Ghana, but the Bank of Ghana has warned about risks. The SEC Ghana has issued guidelines on digital asset regulation. The regulatory framework continues to develop." },

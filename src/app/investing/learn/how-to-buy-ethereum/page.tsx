@@ -25,13 +25,20 @@ export default function HowToBuyEthereumPage() {
       readTime="13 min"
       intro="Ethereum (ETH) is the second-largest cryptocurrency by market cap and the foundation of the smart contract ecosystem. Ethereum powers decentralized finance (DeFi), NFTs, Layer 2 networks, and thousands of decentralized applications. Buying ETH gives you access to this entire ecosystem, plus the ability to earn staking rewards. This guide covers how to buy Ethereum, where to store it, staking options, and strategies for building an ETH position."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose an Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-ethereum", title: "Step 4: Buy Ethereum", level: 2 },
-        { id: "store-ethereum", title: "Step 5: Store Your Ethereum", level: 2 },
-        { id: "staking", title: "Staking ETH for Rewards", level: 2 },
-        { id: "layer2", title: "Using ETH on Layer 2 Networks", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-an-exchange", title: "Step 1: Choose an Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-ethereum", title: "buy-ethereum", level: 2 },
+        { id: "step-4-buy-ethereum", title: "Step 4: Buy Ethereum", level: 2 },
+        { id: "store-ethereum", title: "store-ethereum", level: 2 },
+        { id: "step-5-store-your-ethereum", title: "Step 5: Store Your Ethereum", level: 2 },
+        { id: "staking", title: "staking", level: 2 },
+        { id: "staking-eth-for-rewards", title: "Staking ETH for Rewards", level: 2 },
+        { id: "layer2", title: "layer2", level: 2 },
+        { id: "using-eth-on-layer-2-networks", title: "Using ETH on Layer 2 Networks", level: 2 }
       ]}
       faqs={[
         {

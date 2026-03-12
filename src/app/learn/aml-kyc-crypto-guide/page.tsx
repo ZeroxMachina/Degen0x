@@ -12,11 +12,16 @@ export default function AmlKycCryptoGuidePage() {
   return (
     <LearnPageLayout title="AML/KYC in Crypto Guide" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Anti-Money Laundering (AML) and Know Your Customer (KYC) regulations are foundational compliance requirements for cryptocurrency businesses worldwide. These regulations require exchanges and service providers to verify user identities and monitor transactions for suspicious activity. Understanding AML/KYC helps you navigate the compliance landscape as a crypto user."
       toc={[
-        { id: "what-is-aml-kyc", title: "What Are AML & KYC?", level: 2 },
-        { id: "crypto-requirements", title: "Crypto-Specific Requirements", level: 2 },
-        { id: "verification-process", title: "The Verification Process", level: 2 },
+        { id: "what-is-aml-kyc", title: "what-is-aml-kyc", level: 2 },
+        { id: "what-are-aml-kyc", title: "What Are AML & KYC?", level: 2 },
+        { id: "crypto-requirements", title: "crypto-requirements", level: 2 },
+        { id: "crypto-specific-requirements", title: "Crypto-Specific Requirements", level: 2 },
+        { id: "verification-process", title: "verification-process", level: 2 },
+        { id: "the-verification-process", title: "The Verification Process", level: 2 },
+        { id: "blockchain-analytics", title: "blockchain-analytics", level: 2 },
         { id: "blockchain-analytics", title: "Blockchain Analytics", level: 2 },
-        { id: "user-perspective", title: "The User Perspective", level: 2 },
+        { id: "user-perspective", title: "user-perspective", level: 2 },
+        { id: "the-user-perspective", title: "The User Perspective", level: 2 }
       ]}
       faqs={[
         { question: "Why do exchanges require KYC?", answer: "Exchanges are legally required to verify customer identities under anti-money laundering regulations in most jurisdictions. Failure to comply can result in criminal penalties, loss of banking relationships, and regulatory shutdown. KYC helps prevent money laundering, terrorist financing, sanctions evasion, and fraud." },

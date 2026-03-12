@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -708,8 +710,3 @@ export default function OptionsCalculatorPage() {
   );
 }
 
-export const metadata = {
-  title: "Options P&L Calculator with Greeks | CryptoDegen",
-  description: "Calculate option payoffs, Greeks (Delta, Gamma, Theta, Vega, Rho), and build complex trading strategies with visual P&L diagrams.",
-  keywords: "options calculator, Greeks, Black-Scholes, call put, trading strategies, crypto options",
-};

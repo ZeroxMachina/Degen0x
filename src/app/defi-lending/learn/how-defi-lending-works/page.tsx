@@ -17,12 +17,18 @@ export default function HowDefiLendingWorksPage() {
       readTime="12 min"
       intro="DeFi lending allows anyone to earn interest by supplying crypto assets to lending pools or borrow assets by posting collateral, all without intermediaries. This guide explains the complete mechanics of how decentralized lending works, from pool-based models and interest rate algorithms to collateral management and liquidation processes."
       toc={[
-        { id: "overview", title: "DeFi Lending Overview", level: 2 },
-        { id: "lending-pools", title: "How Lending Pools Work", level: 2 },
-        { id: "interest-rates", title: "Interest Rate Models", level: 2 },
-        { id: "collateral-borrowing", title: "Collateral and Borrowing", level: 2 },
-        { id: "liquidation", title: "Liquidation Process", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "defi-lending-overview", title: "DeFi Lending Overview", level: 2 },
+        { id: "lending-pools", title: "lending-pools", level: 2 },
+        { id: "how-lending-pools-work", title: "How Lending Pools Work", level: 2 },
+        { id: "interest-rates", title: "interest-rates", level: 2 },
+        { id: "interest-rate-models", title: "Interest Rate Models", level: 2 },
+        { id: "collateral-borrowing", title: "collateral-borrowing", level: 2 },
+        { id: "collateral-and-borrowing", title: "Collateral and Borrowing", level: 2 },
+        { id: "liquidation", title: "liquidation", level: 2 },
+        { id: "liquidation-process", title: "Liquidation Process", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "Is DeFi lending safe?", answer: "DeFi lending on established protocols is relatively safe but not risk-free. Major risks include smart contract vulnerabilities, oracle failures, and market volatility causing liquidation. Using audited protocols with long track records minimizes risk." },

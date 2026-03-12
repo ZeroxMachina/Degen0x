@@ -1,25 +1,7 @@
 "use client";
 
-import type { Metadata } from "next";
 import LearnPageLayout from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
-
-export const metadata: Metadata = {
-  title: `Complete Guide to Crypto ETFs in ${CURRENT_YEAR} | ${SITE_NAME}`,
-  description:
-    "Comprehensive guide to cryptocurrency ETFs: Bitcoin ETFs, Ethereum ETFs, Solana ETFs, fees, tax implications, how to invest, and the future of crypto ETFs.",
-  keywords: [
-    "crypto ETF",
-    "Bitcoin ETF",
-    "Ethereum ETF",
-    "cryptocurrency ETF",
-    "spot ETF",
-    "futures ETF",
-    "ETF fees",
-    "crypto investment",
-    "how to buy crypto ETF",
-  ],
-};
 
 export default function CryptoETFsGuidePage() {
   return (
@@ -30,14 +12,22 @@ export default function CryptoETFsGuidePage() {
       readTime="13 min"
       intro="Cryptocurrency Exchange-Traded Funds (ETFs) have transformed how investors access Bitcoin and Ethereum without managing private keys or using crypto exchanges. Since the approval of Bitcoin spot ETFs in January 2024, the ETF market has exploded with options spanning multiple cryptocurrencies and strategies. This guide covers how crypto ETFs work, the major products available, fee structures, tax implications, how to evaluate options, and the future outlook for this rapidly evolving investment vehicle. Whether you're a traditional investor seeking crypto exposure or a crypto holder looking for tax-efficient strategies, understanding ETF options is essential."
       toc={[
-        { id: "what-are-etfs", title: "What Are Crypto ETFs?", level: 2 },
-        { id: "spot-vs-futures", title: "Spot ETFs vs Futures ETFs", level: 2 },
-        { id: "major-products", title: "Major Crypto ETF Products Available", level: 2 },
-        { id: "fees-comparison", title: "Comparing Crypto ETF Fees", level: 2 },
-        { id: "tax-implications", title: "Tax Implications of Crypto ETFs", level: 2 },
-        { id: "how-to-invest", title: "How to Invest in Crypto ETFs", level: 2 },
-        { id: "evaluation-framework", title: "Evaluating Crypto ETF Options", level: 2 },
-        { id: "future-outlook", title: "The Future of Crypto ETFs", level: 2 },
+        { id: "what-are-etfs", title: "what-are-etfs", level: 2 },
+        { id: "what-are-crypto-etfs", title: "What Are Crypto ETFs?", level: 2 },
+        { id: "spot-vs-futures", title: "spot-vs-futures", level: 2 },
+        { id: "spot-etfs-vs-futures-etfs", title: "Spot ETFs vs Futures ETFs", level: 2 },
+        { id: "major-products", title: "major-products", level: 2 },
+        { id: "major-crypto-etf-products-available", title: "Major Crypto ETF Products Available", level: 2 },
+        { id: "fees-comparison", title: "fees-comparison", level: 2 },
+        { id: "comparing-crypto-etf-fees", title: "Comparing Crypto ETF Fees", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications-of-crypto-etfs", title: "Tax Implications of Crypto ETFs", level: 2 },
+        { id: "how-to-invest", title: "how-to-invest", level: 2 },
+        { id: "how-to-invest-in-crypto-etfs", title: "How to Invest in Crypto ETFs", level: 2 },
+        { id: "evaluation-framework", title: "evaluation-framework", level: 2 },
+        { id: "evaluating-crypto-etf-options", title: "Evaluating Crypto ETF Options", level: 2 },
+        { id: "future-outlook", title: "future-outlook", level: 2 },
+        { id: "the-future-of-crypto-etfs", title: "The Future of Crypto ETFs", level: 2 }
       ]}
       faqs={[
         {

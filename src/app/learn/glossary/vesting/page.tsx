@@ -18,10 +18,14 @@ export default function VestingGlossaryPage() {
       readTime="5 min"
       intro="Vesting in cryptocurrency is a process where tokens allocated to team members, investors, or other stakeholders are locked and released gradually over a predetermined schedule. Vesting aligns long-term incentives and prevents large holders from dumping their tokens immediately after a project launches."
       toc={[
+        { id: "definition", title: "definition", level: 2 },
         { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
         { id: "how-it-works", title: "How It Works", level: 2 },
-        { id: "examples", title: "Examples & Use Cases", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "examples-use-cases", title: "Examples & Use Cases", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         { question: "What is a vesting cliff?", answer: "A vesting cliff is an initial period during which no tokens are released at all. After the cliff ends, a large initial portion unlocks, followed by regular releases. For example, a 4-year vesting schedule with a 1-year cliff means zero tokens are available for the first year, then 25% unlocks at the one-year mark, with the remaining 75% released linearly over the following three years." },

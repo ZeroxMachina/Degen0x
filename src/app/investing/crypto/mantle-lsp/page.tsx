@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Mantle LSP (mETH)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Mantle LSP (mETH)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Mantle LSP (mETH), Mantle's liquid staking protocol for ETH. Discover how it works, tokenomics, use cases, and how to buy mETH.",
 };
@@ -17,12 +17,18 @@ export default function MantleLspPage() {
       readTime="8 min read"
       intro="Mantle LSP (Liquid Staking Protocol) is a permissionless ETH liquid staking protocol developed by Mantle that issues mETH, a liquid staking token representing staked ETH. Backed by Mantle's substantial treasury, mETH offers competitive staking yields and deep DeFi integrations across the Mantle L2 ecosystem and beyond, making it one of the fastest-growing liquid staking tokens."
       toc={[
-        { id: "what-is", title: "What Is Mantle LSP?", level: 2 },
-        { id: "how-it-works", title: "How Does Mantle LSP Work?", level: 2 },
-        { id: "tokenomics", title: "mETH Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy mETH", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-mantle-lsp", title: "What Is Mantle LSP?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-mantle-lsp-work", title: "How Does Mantle LSP Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "meth-tokenomics", title: "mETH Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-meth", title: "How to Buy mETH", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Mantle LSP?", answer: "Mantle LSP is a liquid staking protocol that allows users to stake ETH and receive mETH, a liquid staking token usable in DeFi while earning Ethereum staking rewards." },

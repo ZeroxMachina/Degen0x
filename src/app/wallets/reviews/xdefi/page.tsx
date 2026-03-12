@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `XDEFI Wallet Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `XDEFI Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "XDEFI wallet review covering multi-chain DeFi support, cross-chain swaps, NFT management, and browser extension features.",
 };
 

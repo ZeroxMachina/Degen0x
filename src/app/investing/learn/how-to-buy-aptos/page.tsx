@@ -16,10 +16,14 @@ export default function HowToBuyAptosPage() {
       readTime="8 min"
       intro="Aptos is a Layer 1 blockchain built by former Meta (Facebook) engineers who worked on the Diem project. Using the Move programming language, Aptos focuses on safety, scalability, and reliability. The network launched in October 2022 and has rapidly grown its DeFi and NFT ecosystem. This guide walks you through buying APT."
       toc={[
+        { id: "what-is-aptos", title: "what-is-aptos", level: 2 },
         { id: "what-is-aptos", title: "What Is Aptos?", level: 2 },
-        { id: "where-to-buy", title: "Where to Buy Aptos", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Purchase Guide", level: 2 },
-        { id: "storage", title: "Storing Your APT", level: 2 },
+        { id: "where-to-buy", title: "where-to-buy", level: 2 },
+        { id: "where-to-buy-aptos", title: "Where to Buy Aptos", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-purchase-guide", title: "Step-by-Step Purchase Guide", level: 2 },
+        { id: "storage", title: "storage", level: 2 },
+        { id: "storing-your-apt", title: "Storing Your APT", level: 2 }
       ]}
       faqs={[
         { question: "What is the Move programming language?", answer: "Move is a programming language originally developed at Meta for the Diem blockchain. It was designed with safety as a top priority, featuring resource types that prevent assets from being accidentally duplicated or destroyed. Both Aptos and Sui use Move, though with different implementations." },

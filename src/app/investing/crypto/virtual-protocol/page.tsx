@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Virtuals Protocol (VIRTUAL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Virtuals Protocol (VIRTUAL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Virtuals Protocol (VIRTUAL), the platform for creating and co-owning AI agents. Discover how it works, tokenomics, use cases, and how to buy VIRTUAL.",
 };
 
 export default function VirtualsProtocolPage() {
   return (
-    <LearnPageLayout title="What Is Virtuals Protocol (VIRTUAL)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Virtuals Protocol (VIRTUAL) is a platform for creating, deploying, and co-owning AI agents in crypto and gaming. Built on Base, it enables developers and communities to launch tokenized AI agents that can interact across multiple platforms, generating revenue and value for token holders." toc={[{id:"what-is",title:"What Is Virtuals Protocol?",level:2},{id:"how-it-works",title:"How Does Virtuals Protocol Work?",level:2},{id:"tokenomics",title:"VIRTUAL Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy VIRTUAL",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Virtuals Protocol?",answer:"Virtuals Protocol is a platform on Base that allows users to create, deploy, and co-own tokenized AI agents. These agents can operate across gaming, social media, and DeFi, generating revenue shared with token holders."},{question:"Where can I buy VIRTUAL?",answer:"VIRTUAL is available on major centralized exchanges and Base DEXes. It trades against ETH and USDT pairs."},{question:"Is Virtuals Protocol a good investment?",answer:"Virtuals Protocol is at the forefront of the AI agent narrative with a working platform and growing ecosystem, but the space is highly competitive and speculative. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Virtuals Protocol (VIRTUAL)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Virtuals Protocol (VIRTUAL) is a platform for creating, deploying, and co-owning AI agents in crypto and gaming. Built on Base, it enables developers and communities to launch tokenized AI agents that can interact across multiple platforms, generating revenue and value for token holders." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-virtuals-protocol", title: "What Is Virtuals Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-virtuals-protocol-work", title: "How Does Virtuals Protocol Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "virtual-tokenomics", title: "VIRTUAL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-virtual", title: "How to Buy VIRTUAL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Virtuals Protocol?",answer:"Virtuals Protocol is a platform on Base that allows users to create, deploy, and co-own tokenized AI agents. These agents can operate across gaming, social media, and DeFi, generating revenue shared with token holders."},{question:"Where can I buy VIRTUAL?",answer:"VIRTUAL is available on major centralized exchanges and Base DEXes. It trades against ETH and USDT pairs."},{question:"Is Virtuals Protocol a good investment?",answer:"Virtuals Protocol is at the forefront of the AI agent narrative with a working platform and growing ecosystem, but the space is highly competitive and speculative. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"}]}>
       <h2 id="what-is">What Is Virtuals Protocol?</h2>
       <p>Virtuals Protocol is a decentralized platform that enables the creation and co-ownership of AI agents through tokenization. Each AI agent launched on Virtuals gets its own token, allowing communities to invest in and co-own AI agents that generate revenue across gaming, entertainment, and crypto applications. The platform has become a leading launchpad for AI agent tokens on the Base blockchain.</p>
       <p>The protocol addresses the growing demand for AI agents in crypto by providing infrastructure for agent deployment, tokenization, and revenue sharing. Virtuals agents can operate as NPCs in games, social media personalities, trading assistants, and more, with revenue flowing back to agent token holders.</p>

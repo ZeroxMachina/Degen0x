@@ -17,13 +17,20 @@ export default function HowToBuyCryptoPage() {
       readTime="12 min"
       intro="Buying cryptocurrency for the first time can feel overwhelming, but the process is surprisingly straightforward once you understand the basics. This guide walks you through every step, from choosing an exchange and verifying your identity to placing your first order and securing your assets. Whether you want to buy Bitcoin, Ethereum, or any other cryptocurrency, the fundamentals are the same."
       toc={[
-        { id: "what-you-need", title: "What You Need Before You Start", level: 2 },
-        { id: "choose-exchange", title: "Step 1: Choose a Crypto Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "place-order", title: "Step 4: Place Your First Order", level: 2 },
-        { id: "secure-crypto", title: "Step 5: Secure Your Cryptocurrency", level: 2 },
-        { id: "common-mistakes", title: "Common Mistakes to Avoid", level: 2 },
+        { id: "what-you-need", title: "what-you-need", level: 2 },
+        { id: "what-you-need-before-you-start", title: "What You Need Before You Start", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-a-crypto-exchange", title: "Step 1: Choose a Crypto Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "place-order", title: "place-order", level: 2 },
+        { id: "step-4-place-your-first-order", title: "Step 4: Place Your First Order", level: 2 },
+        { id: "secure-crypto", title: "secure-crypto", level: 2 },
+        { id: "step-5-secure-your-cryptocurrency", title: "Step 5: Secure Your Cryptocurrency", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-mistakes-to-avoid", title: "Common Mistakes to Avoid", level: 2 }
       ]}
       faqs={[
         {

@@ -18,12 +18,18 @@ export default function RugPullProtectionPage() {
       readTime="11 min read"
       intro="Rug pulls are among the most common and devastating scams in crypto. They occur when project developers abandon a project and run off with investor funds, often after deliberately building hype and attracting liquidity. Billions of dollars have been lost to rug pulls across DeFi, NFTs, and token launches. Learning to identify the warning signs and protect yourself is essential for anyone participating in the crypto ecosystem, especially when interacting with newer or unestablished projects."
       toc={[
-        { id: "types", title: "Types of Rug Pulls", level: 2 },
-        { id: "red-flags", title: "Red Flags to Watch For", level: 2 },
-        { id: "due-diligence", title: "Due Diligence Checklist", level: 2 },
-        { id: "tools", title: "Verification Tools", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-rug-pulls", title: "Types of Rug Pulls", level: 2 },
+        { id: "red-flags", title: "red-flags", level: 2 },
+        { id: "red-flags-to-watch-for", title: "Red Flags to Watch For", level: 2 },
+        { id: "due-diligence", title: "due-diligence", level: 2 },
+        { id: "due-diligence-checklist", title: "Due Diligence Checklist", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "verification-tools", title: "Verification Tools", level: 2 },
+        { id: "protection-strategies", title: "protection-strategies", level: 2 },
         { id: "protection-strategies", title: "Protection Strategies", level: 2 },
-        { id: "if-rugged", title: "What to Do If You Get Rugged", level: 2 },
+        { id: "if-rugged", title: "if-rugged", level: 2 },
+        { id: "what-to-do-if-you-get-rugged", title: "What to Do If You Get Rugged", level: 2 }
       ]}
       faqs={[
         { question: "What is a rug pull?", answer: "A rug pull is when crypto project creators drain liquidity, dump their token allocation, or use backdoor functions to steal user funds. The term comes from the idea of pulling the rug out from under investors. They range from planned scams to projects that fail and developers abandon." },

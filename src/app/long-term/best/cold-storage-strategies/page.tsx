@@ -21,7 +21,7 @@ const products: Product[] = [
     cons: ["$149 price point", "Battery needs occasional charging", "Bluetooth adds minor attack surface"],
     fees: "$149 one-time purchase",
     bestFor: "Premium mobile-friendly cold storage",
-    affiliateUrl: "https://cryptodegen.com/go/ledger-nano-x",
+    affiliateUrl: "https://degen0x.com/go/ledger-nano-x",
     category: "long-term",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     cons: ["Fewer supported tokens than Ledger", "Higher price point", "No native staking support"],
     fees: "$219 one-time purchase",
     bestFor: "Open-source security with touchscreen",
-    affiliateUrl: "https://cryptodegen.com/go/trezor-model-t",
+    affiliateUrl: "https://degen0x.com/go/trezor-model-t",
     category: "long-term",
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     cons: ["Bitcoin-only (no altcoin support)", "Steep learning curve", "Less intuitive interface"],
     fees: "$148 one-time purchase",
     bestFor: "Maximum-security Bitcoin cold storage",
-    affiliateUrl: "https://cryptodegen.com/go/coldcard",
+    affiliateUrl: "https://degen0x.com/go/coldcard",
     category: "long-term",
   },
 ];
@@ -63,20 +63,20 @@ export default function ColdStorageStrategiesPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Cold Storage", href: "/long-term/best/cold-storage-strategies" }]} />
       <AffiliateDisclosure />
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Cold Storage Strategies ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Cold Storage Strategies ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">Secure cold storage is the foundation of long-term crypto investing. Hardware wallets keep your private keys offline and protected from the hacks, phishing attacks, and exchange failures that have cost users billions.</p>
         <p className="text-[var(--color-text-secondary)]">We evaluated cold storage solutions on security architecture, token support, backup options, usability, and long-term reliability. The best options combine impenetrable security with practical features for managing your holdings over years and decades.</p>
       </div>
       <div className="space-y-6 mb-12">{products.map((product, index) => (<ProductCard key={product.slug} product={product} rank={index + 1} categorySlug="long-term" />))}</div>
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Cold Storage Best Practices</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Cold Storage Best Practices</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong className="text-white">Seed Phrase Security:</strong> Write your recovery seed on steel plates (not paper) and store in a fireproof safe or safety deposit box.</li>
-            <li><strong className="text-white">Multiple Backups:</strong> Keep 2-3 copies of your seed phrase in different physical locations.</li>
-            <li><strong className="text-white">Test Recovery:</strong> Before sending large amounts, test the recovery process on a secondary device.</li>
-            <li><strong className="text-white">Consider Multisig:</strong> For holdings over $100k, a multi-signature setup provides additional security layers.</li>
-            <li><strong className="text-white">Regular Verification:</strong> Periodically check that your device firmware is updated and your seed phrase backups are intact.</li>
+            <li><strong className="text-[var(--color-text)]">Seed Phrase Security:</strong> Write your recovery seed on steel plates (not paper) and store in a fireproof safe or safety deposit box.</li>
+            <li><strong className="text-[var(--color-text)]">Multiple Backups:</strong> Keep 2-3 copies of your seed phrase in different physical locations.</li>
+            <li><strong className="text-[var(--color-text)]">Test Recovery:</strong> Before sending large amounts, test the recovery process on a secondary device.</li>
+            <li><strong className="text-[var(--color-text)]">Consider Multisig:</strong> For holdings over $100k, a multi-signature setup provides additional security layers.</li>
+            <li><strong className="text-[var(--color-text)]">Regular Verification:</strong> Periodically check that your device firmware is updated and your seed phrase backups are intact.</li>
           </ul>
         </div>
       </section>

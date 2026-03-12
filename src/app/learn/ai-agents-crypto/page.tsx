@@ -17,14 +17,22 @@ export default function AIAgentsInCryptoPage() {
       readTime="17 min"
       intro="Artificial Intelligence and blockchain are converging to create entirely new possibilities in decentralized finance and cryptocurrency. AI agents—autonomous software entities powered by machine learning and large language models that can perceive their environment, make decisions, and take actions—are beginning to transform how trading, arbitrage, lending, and governance operate on-chain. Unlike traditional AI systems deployed on centralized servers, AI agents operating on blockchains can directly execute transactions, manage capital, and coordinate with other agents without central authority. This emerging intersection of AI and crypto is creating autonomous trading systems that optimize capital allocation, DAOs governed by AI, and agent networks that coordinate economic activity transparently. This comprehensive guide explores AI agents in crypto, explains how they work, discusses major protocols and applications, and examines the transformative potential of decentralized AI."
       toc={[
-        { id: "what-are-ai-agents", title: "Understanding AI Agents in Crypto", level: 2 },
-        { id: "ai-trading-agents", title: "Autonomous Trading and Arbitrage Agents", level: 2 },
-        { id: "ai-defi-agents", title: "AI-Powered DeFi and Lending", level: 2 },
-        { id: "ai-dao-governance", title: "AI in DAO Governance and Coordination", level: 2 },
-        { id: "ai-protocols", title: "Leading AI Agent Protocols", level: 2 },
-        { id: "ai-benefits", title: "Benefits and Advantages of AI Agents", level: 2 },
-        { id: "ai-risks", title: "Risks and Challenges", level: 2 },
-        { id: "ai-future", title: "The Future of Decentralized AI Agents", level: 2 },
+        { id: "what-are-ai-agents", title: "what-are-ai-agents", level: 2 },
+        { id: "understanding-ai-agents-in-crypto", title: "Understanding AI Agents in Crypto", level: 2 },
+        { id: "ai-trading-agents", title: "ai-trading-agents", level: 2 },
+        { id: "autonomous-trading-and-arbitrage-agents", title: "Autonomous Trading and Arbitrage Agents", level: 2 },
+        { id: "ai-defi-agents", title: "ai-defi-agents", level: 2 },
+        { id: "ai-powered-defi-and-lending", title: "AI-Powered DeFi and Lending", level: 2 },
+        { id: "ai-dao-governance", title: "ai-dao-governance", level: 2 },
+        { id: "ai-in-dao-governance-and-coordination", title: "AI in DAO Governance and Coordination", level: 2 },
+        { id: "ai-protocols", title: "ai-protocols", level: 2 },
+        { id: "leading-ai-agent-protocols", title: "Leading AI Agent Protocols", level: 2 },
+        { id: "ai-benefits", title: "ai-benefits", level: 2 },
+        { id: "benefits-and-advantages-of-ai-agents", title: "Benefits and Advantages of AI Agents", level: 2 },
+        { id: "ai-risks", title: "ai-risks", level: 2 },
+        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 },
+        { id: "ai-future", title: "ai-future", level: 2 },
+        { id: "the-future-of-decentralized-ai-agents", title: "The Future of Decentralized AI Agents", level: 2 }
       ]}
       faqs={[
         {

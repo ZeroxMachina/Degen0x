@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Margin Call in Crypto? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Margin Call in Crypto? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a margin call means in crypto trading, how it works in both CeFi and DeFi, how to avoid liquidation, and best practices for margin management.",
 };
 
@@ -11,7 +11,16 @@ export default function MarginCallPage() {
   return (
     <LearnPageLayout title="What Is a Margin Call?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="A margin call is a warning that occurs when the value of a trader's collateral falls below the required maintenance margin for their leveraged position. In traditional finance, it is a demand from a broker to deposit additional funds. In crypto, margin calls typically precede automatic liquidation, where the exchange or protocol closes your position to prevent further losses. Understanding margin calls is essential for anyone using leverage in crypto trading."
-      toc={[{ id: "definition", title: "What Is a Margin Call?", level: 2 }, { id: "how-margin-works", title: "How Margin Trading Works", level: 2 }, { id: "avoiding-margin-calls", title: "Avoiding Margin Calls", level: 2 }, { id: "defi-margin", title: "Margin in DeFi", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-margin-call", title: "What Is a Margin Call?", level: 2 },
+        { id: "how-margin-works", title: "how-margin-works", level: 2 },
+        { id: "how-margin-trading-works", title: "How Margin Trading Works", level: 2 },
+        { id: "avoiding-margin-calls", title: "avoiding-margin-calls", level: 2 },
+        { id: "avoiding-margin-calls", title: "Avoiding Margin Calls", level: 2 },
+        { id: "defi-margin", title: "defi-margin", level: 2 },
+        { id: "margin-in-defi", title: "Margin in DeFi", level: 2 }
+      ]}
       faqs={[{ question: "What happens after a margin call in crypto?", answer: "On centralized exchanges, you typically get a notification and a brief window to add collateral. If you do not respond, the exchange liquidates your position. In DeFi, there is usually no warning — liquidation happens automatically when your health factor or margin ratio crosses the threshold. Setting alerts and monitoring positions is your responsibility." },
         { question: "How much leverage is safe in crypto?", answer: "There is no universally safe leverage level, but most experienced traders recommend 2-3x maximum for swing trades and never exceeding 5x. Crypto's high volatility means that even moderate leverage can lead to rapid liquidation. Higher leverage requires tighter stop losses and more active position management." }]}
       relatedArticles={[{ title: "Liquidation", href: "/learn/glossary/liquidation", category: "Glossary" }, { title: "Stop Loss", href: "/learn/glossary/stop-loss", category: "Glossary" }, { title: "Borrowing", href: "/learn/glossary/borrowing", category: "Glossary" }, { title: "Risk Management", href: "/learn/risk-management-crypto", category: "Learn Crypto" }]}

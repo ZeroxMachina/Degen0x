@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How DeFi Lending Pools Work (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How DeFi Lending Pools Work (${CURRENT_YEAR}) | degen0x`,
   description: "Understand DeFi lending pool mechanics. Learn how liquidity pools work, how deposits generate interest, and the math behind lending protocol operations.",
 };
 
@@ -11,7 +11,16 @@ export default function LendingPoolMechanicsPage() {
   return (
     <LearnPageLayout title="How DeFi Lending Pools Work" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="9 min read"
       intro="Lending pools are the fundamental building blocks of DeFi lending protocols. They aggregate deposits from many lenders, making them available for borrowers to draw from. Understanding how these pools operate, how interest accrues, and how liquidation maintains pool solvency helps you make better decisions as both a lender and borrower."
-      toc={[{ id: "pool-structure", title: "Pool Structure and Token Mechanics", level: 2 }, { id: "interest-accrual", title: "How Interest Accrues", level: 2 }, { id: "liquidation-mechanism", title: "Liquidation Mechanism", level: 2 }, { id: "pool-risks", title: "Pool-Level Risks", level: 2 }]}
+      toc={[
+        { id: "pool-structure", title: "pool-structure", level: 2 },
+        { id: "pool-structure-and-token-mechanics", title: "Pool Structure and Token Mechanics", level: 2 },
+        { id: "interest-accrual", title: "interest-accrual", level: 2 },
+        { id: "how-interest-accrues", title: "How Interest Accrues", level: 2 },
+        { id: "liquidation-mechanism", title: "liquidation-mechanism", level: 2 },
+        { id: "liquidation-mechanism", title: "Liquidation Mechanism", level: 2 },
+        { id: "pool-risks", title: "pool-risks", level: 2 },
+        { id: "pool-level-risks", title: "Pool-Level Risks", level: 2 }
+      ]}
       faqs={[
         { question: "How do I earn interest in a lending pool?", answer: "When you deposit into a lending pool, you receive interest-bearing tokens (aTokens on Aave, cTokens on Compound). These tokens appreciate in value over time as borrowers pay interest, representing your growing share of the pool's total value." },
         { question: "Can I withdraw at any time?", answer: "Generally yes, as long as there is available liquidity. If utilization is very high (most deposits are borrowed), you may need to wait until borrowers repay or new deposits arrive. This temporary illiquidity is rare for major assets but can occur during market stress." },

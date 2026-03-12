@@ -71,7 +71,7 @@ export default function USAWalletsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Wallets in the USA ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -88,7 +88,7 @@ export default function USAWalletsPage() {
           wallet that provides clean transaction histories is increasingly important. Here
           are the best crypto wallets for Americans.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Hardware vs Software Wallets</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Hardware vs Software Wallets</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           US users should consider their holdings and usage patterns when choosing between
           hardware and software wallets. Hardware wallets (Ledger, Trezor) are best for
@@ -96,7 +96,7 @@ export default function USAWalletsPage() {
           better for daily use, DeFi interaction, and smaller amounts. Many users combine
           both for different purposes.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Tax Reporting Considerations</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Tax Reporting Considerations</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           With the IRS requiring detailed crypto transaction reporting, US users should choose
           wallets that provide comprehensive transaction histories and integrate with tax
@@ -118,26 +118,26 @@ export default function USAWalletsPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Wallet Security Tips for US Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Wallet Security Tips for US Users</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Buy hardware wallets directly from manufacturers</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Buy hardware wallets directly from manufacturers</h3>
               <p className="text-sm">Never buy from third-party sellers on Amazon or eBay. Tampered devices can steal your crypto.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Store your seed phrase offline</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Store your seed phrase offline</h3>
               <p className="text-sm">Write it on paper or stamp it on metal. Never store digitally, take photos, or put it in cloud storage.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Use a dedicated device for large holdings</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Use a dedicated device for large holdings</h3>
               <p className="text-sm">If using a software wallet for significant amounts, consider a dedicated phone or computer.</p>
             </div>
           </div>

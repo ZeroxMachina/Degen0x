@@ -23,7 +23,7 @@ const products: Product[] = [
     cons: ["Limited self-custody wallet coverage", "Does not cover user error or phishing", "KYC required"],
     fees: "3-8% annually",
     bestFor: "Smart contract wallet users",
-    affiliateUrl: "https://cryptodegen.com/go/nexus-mutual",
+    affiliateUrl: "https://degen0x.com/go/nexus-mutual",
     category: "insurance",
     featured: true,
   },
@@ -37,7 +37,7 @@ const products: Product[] = [
     cons: ["Centralized provider", "Only works with partner wallets", "Premium pricing"],
     fees: "Varies by provider",
     bestFor: "Users wanting key recovery plus insurance",
-    affiliateUrl: "https://cryptodegen.com/go/coincover",
+    affiliateUrl: "https://degen0x.com/go/coincover",
     category: "insurance",
   },
   {
@@ -50,7 +50,7 @@ const products: Product[] = [
     cons: ["Limited wallet-specific coverage options", "Newer in wallet protection space", "Smaller capital pool"],
     fees: "2-6% annually",
     bestFor: "Multi-chain wallet protection",
-    affiliateUrl: "https://cryptodegen.com/go/insurace",
+    affiliateUrl: "https://degen0x.com/go/insurace",
     category: "insurance",
   },
 ];
@@ -85,7 +85,7 @@ export default function WalletProtectionPage() {
       ]} />
       <AffiliateDisclosure />
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Crypto Wallet Protection of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Crypto Wallet Protection of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">
           Self-custody means full control over your crypto, but it also means full responsibility for security. Wallet protection insurance provides a safety net against wallet software vulnerabilities and certain types of compromise.
         </p>
@@ -102,15 +102,15 @@ export default function WalletProtectionPage() {
         ))}
       </div>
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Security Best Practices Beyond Insurance</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Security Best Practices Beyond Insurance</h2>
         <div className="space-y-3 text-[var(--color-text-secondary)]">
           <p>While insurance provides financial protection, prevention is always the first line of defense. Here are essential wallet security practices:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong className="text-white">Use hardware wallets</strong> for large holdings to keep private keys offline and away from internet-connected devices.</li>
-            <li><strong className="text-white">Store seed phrases securely</strong> using metal backups in multiple physical locations. Never store them digitally.</li>
-            <li><strong className="text-white">Use multisig wallets</strong> for significant holdings, requiring multiple keys to authorize transactions.</li>
-            <li><strong className="text-white">Verify transaction details</strong> on your hardware wallet screen before signing. Never blindly sign transactions.</li>
-            <li><strong className="text-white">Keep wallet software updated</strong> to patch known vulnerabilities, but verify updates through official channels.</li>
+            <li><strong className="text-[var(--color-text)]">Use hardware wallets</strong> for large holdings to keep private keys offline and away from internet-connected devices.</li>
+            <li><strong className="text-[var(--color-text)]">Store seed phrases securely</strong> using metal backups in multiple physical locations. Never store them digitally.</li>
+            <li><strong className="text-[var(--color-text)]">Use multisig wallets</strong> for significant holdings, requiring multiple keys to authorize transactions.</li>
+            <li><strong className="text-[var(--color-text)]">Verify transaction details</strong> on your hardware wallet screen before signing. Never blindly sign transactions.</li>
+            <li><strong className="text-[var(--color-text)]">Keep wallet software updated</strong> to patch known vulnerabilities, but verify updates through official channels.</li>
           </ul>
         </div>
       </section>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Web3? The Decentralized Internet (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Web3? The Decentralized Internet (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore Web3: the decentralized internet built on blockchain technology. Learn how Web3 differs from Web1 and Web2, its core principles, key applications, and current limitations.",
 };
@@ -17,11 +17,16 @@ export default function WhatIsWeb3Page() {
       readTime="9 min read"
       intro="Web3 refers to the next evolution of the internet, built on decentralized technologies like blockchain, smart contracts, and token-based economics. Where Web1 was read-only and Web2 introduced user-generated content controlled by platform intermediaries, Web3 envisions an internet where users own their data, digital assets, and identity. It promises to shift power from centralized corporations back to individuals and communities through open, permissionless protocols."
       toc={[
-        { id: "web-evolution", title: "The Evolution: Web1, Web2, Web3", level: 2 },
-        { id: "core-principles", title: "Core Principles of Web3", level: 2 },
-        { id: "key-technologies", title: "Key Technologies Powering Web3", level: 2 },
-        { id: "applications", title: "Web3 Applications Today", level: 2 },
-        { id: "challenges", title: "Challenges and Criticisms", level: 2 },
+        { id: "web-evolution", title: "web-evolution", level: 2 },
+        { id: "the-evolution-web1-web2-web3", title: "The Evolution: Web1, Web2, Web3", level: 2 },
+        { id: "core-principles", title: "core-principles", level: 2 },
+        { id: "core-principles-of-web3", title: "Core Principles of Web3", level: 2 },
+        { id: "key-technologies", title: "key-technologies", level: 2 },
+        { id: "key-technologies-powering-web3", title: "Key Technologies Powering Web3", level: 2 },
+        { id: "applications", title: "applications", level: 2 },
+        { id: "web3-applications-today", title: "Web3 Applications Today", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-and-criticisms", title: "Challenges and Criticisms", level: 2 }
       ]}
       faqs={[
         {

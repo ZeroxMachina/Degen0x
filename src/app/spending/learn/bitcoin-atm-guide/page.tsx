@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Use Bitcoin ATMs (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Use Bitcoin ATMs (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to buy and sell Bitcoin at ATMs. Find locations, understand fees, limits, KYC requirements, and step-by-step instructions for using crypto ATMs.",
 };
 
@@ -16,11 +16,16 @@ export default function BitcoinAtmGuidePage() {
       readTime="8 min"
       intro="Bitcoin ATMs provide a physical bridge between cash and cryptocurrency, allowing you to buy Bitcoin with cash or sell Bitcoin for cash without needing a bank account or exchange. With over 38,000 Bitcoin ATMs installed worldwide, they offer accessibility for unbanked populations and convenience for anyone who prefers cash transactions. This guide walks you through finding, using, and understanding the costs of Bitcoin ATMs."
       toc={[
-        { id: "how-btc-atms-work", title: "How Bitcoin ATMs Work", level: 2 },
-        { id: "finding-atms", title: "Finding a Bitcoin ATM Near You", level: 2 },
-        { id: "buying-bitcoin", title: "Buying Bitcoin at an ATM", level: 2 },
-        { id: "selling-bitcoin", title: "Selling Bitcoin for Cash", level: 2 },
-        { id: "fees-limits", title: "Fees, Limits, and KYC Requirements", level: 2 },
+        { id: "how-btc-atms-work", title: "how-btc-atms-work", level: 2 },
+        { id: "how-bitcoin-atms-work", title: "How Bitcoin ATMs Work", level: 2 },
+        { id: "finding-atms", title: "finding-atms", level: 2 },
+        { id: "finding-a-bitcoin-atm-near-you", title: "Finding a Bitcoin ATM Near You", level: 2 },
+        { id: "buying-bitcoin", title: "buying-bitcoin", level: 2 },
+        { id: "buying-bitcoin-at-an-atm", title: "Buying Bitcoin at an ATM", level: 2 },
+        { id: "selling-bitcoin", title: "selling-bitcoin", level: 2 },
+        { id: "selling-bitcoin-for-cash", title: "Selling Bitcoin for Cash", level: 2 },
+        { id: "fees-limits", title: "fees-limits", level: 2 },
+        { id: "fees-limits-and-kyc-requirements", title: "Fees, Limits, and KYC Requirements", level: 2 }
       ]}
       faqs={[
         { question: "How much do Bitcoin ATMs charge?", answer: "Bitcoin ATM fees typically range from 5-15% above the market price for purchases and 5-10% below market price for sales. The exact fee varies by operator, location, and transaction amount. Major operators like Bitcoin Depot, CoinFlip, and Coinsource tend to have more competitive rates than smaller independent operators." },

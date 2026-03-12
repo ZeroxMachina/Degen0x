@@ -18,12 +18,18 @@ export default function CryptoRetirementPlanningPage() {
       readTime="12 min read"
       intro="Cryptocurrency can play a meaningful role in retirement planning when approached with proper strategy and risk management. From self-directed crypto IRAs to strategic portfolio allocation, there are multiple ways to incorporate digital assets into your long-term retirement strategy. This guide covers the practical considerations including allocation sizing, tax-advantaged accounts, withdrawal strategies, and the unique risks of including volatile assets in a retirement portfolio."
       toc={[
-        { id: "why-crypto", title: "Why Include Crypto in Retirement Planning", level: 2 },
-        { id: "allocation", title: "Retirement Portfolio Allocation", level: 2 },
-        { id: "ira-options", title: "Crypto IRA Options", level: 2 },
-        { id: "tax-optimization", title: "Tax Optimization Strategies", level: 2 },
-        { id: "withdrawal", title: "Withdrawal Planning", level: 2 },
-        { id: "risk-management", title: "Retirement-Specific Risk Management", level: 2 },
+        { id: "why-crypto", title: "why-crypto", level: 2 },
+        { id: "why-include-crypto-in-retirement-planning", title: "Why Include Crypto in Retirement Planning", level: 2 },
+        { id: "allocation", title: "allocation", level: 2 },
+        { id: "retirement-portfolio-allocation", title: "Retirement Portfolio Allocation", level: 2 },
+        { id: "ira-options", title: "ira-options", level: 2 },
+        { id: "crypto-ira-options", title: "Crypto IRA Options", level: 2 },
+        { id: "tax-optimization", title: "tax-optimization", level: 2 },
+        { id: "tax-optimization-strategies", title: "Tax Optimization Strategies", level: 2 },
+        { id: "withdrawal", title: "withdrawal", level: 2 },
+        { id: "withdrawal-planning", title: "Withdrawal Planning", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "retirement-specific-risk-management", title: "Retirement-Specific Risk Management", level: 2 }
       ]}
       faqs={[
         { question: "What percentage of my retirement should be in crypto?", answer: "Most financial advisors recommend 1-10% of your total retirement portfolio in crypto, depending on your age, risk tolerance, and time to retirement. Younger investors with longer time horizons can allocate more. Never allocate more than you can afford to lose." },

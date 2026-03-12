@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Thailand (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Thailand (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Thailand. Learn about the 15% withholding tax, capital gains obligations, and the Revenue Department's crypto tax rules.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesThailandPage() {
       readTime="8 min read"
       intro="Thailand has established formal crypto tax rules through the Revenue Department and the SEC Thailand. Crypto gains are subject to personal income tax at progressive rates up to 35%, and a 15% withholding tax applies to certain crypto income. Thailand briefly considered and then dropped a proposed transaction tax on crypto, but the income tax obligations remain. The regulatory framework balances encouraging the growing Thai crypto market with ensuring tax compliance."
       toc={[
-        { id: "tax-framework", title: "Thai Crypto Tax Framework", level: 2 },
-        { id: "income-tax", title: "Personal Income Tax on Crypto", level: 2 },
+        { id: "tax-framework", title: "tax-framework", level: 2 },
+        { id: "thai-crypto-tax-framework", title: "Thai Crypto Tax Framework", level: 2 },
+        { id: "income-tax", title: "income-tax", level: 2 },
+        { id: "personal-income-tax-on-crypto", title: "Personal Income Tax on Crypto", level: 2 },
+        { id: "withholding-tax", title: "withholding-tax", level: 2 },
         { id: "withholding-tax", title: "Withholding Tax", level: 2 },
+        { id: "vat-exemption", title: "vat-exemption", level: 2 },
         { id: "vat-exemption", title: "VAT Exemption", level: 2 },
-        { id: "reporting-compliance", title: "Reporting and Compliance", level: 2 },
+        { id: "reporting-compliance", title: "reporting-compliance", level: 2 },
+        { id: "reporting-and-compliance", title: "Reporting and Compliance", level: 2 }
       ]}
       faqs={[
         { question: "How are crypto gains taxed in Thailand?", answer: "Crypto gains are treated as assessable income under the Revenue Code. They are subject to personal income tax at progressive rates from 5% to 35% depending on your total income bracket. Gains are calculated as the difference between the selling price and the acquisition cost." },

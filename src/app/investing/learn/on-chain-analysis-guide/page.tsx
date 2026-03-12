@@ -16,10 +16,14 @@ export default function OnChainAnalysisGuidePage() {
       readTime="12 min"
       intro="On-chain analysis examines blockchain data to gain insights into market conditions, investor behavior, and network health. Unlike traditional financial analysis that relies on company reports, on-chain data is publicly available and updated in real-time. This guide teaches you the essential on-chain metrics and tools for making better crypto investment decisions."
       toc={[
-        { id: "what-is-on-chain", title: "What Is On-Chain Analysis?", level: 2 },
-        { id: "key-metrics", title: "Key On-Chain Metrics", level: 2 },
-        { id: "tools", title: "On-Chain Analysis Tools", level: 2 },
-        { id: "practical-application", title: "Practical Application", level: 2 },
+        { id: "what-is-on-chain", title: "what-is-on-chain", level: 2 },
+        { id: "what-is-on-chain-analysis", title: "What Is On-Chain Analysis?", level: 2 },
+        { id: "key-metrics", title: "key-metrics", level: 2 },
+        { id: "key-on-chain-metrics", title: "Key On-Chain Metrics", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "on-chain-analysis-tools", title: "On-Chain Analysis Tools", level: 2 },
+        { id: "practical-application", title: "practical-application", level: 2 },
+        { id: "practical-application", title: "Practical Application", level: 2 }
       ]}
       faqs={[
         { question: "Do I need to be technical to use on-chain analysis?", answer: "No. While raw blockchain data requires technical skills to parse, tools like Glassnode, Dune Analytics, and Nansen provide user-friendly dashboards and charts. You can access most key metrics through these platforms without writing any code. Understanding what the metrics mean is more important than the technical ability to extract them." },

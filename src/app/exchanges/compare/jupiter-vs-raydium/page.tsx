@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Jupiter vs Raydium (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Jupiter vs Raydium (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Jupiter vs Raydium on Solana. Aggregation, liquidity, features, and which Solana DEX is better for swapping tokens.",
 };
 
@@ -16,12 +16,18 @@ export default function JupiterVsRaydium() {
       readTime="8 min read"
       intro="Jupiter and Raydium are the two dominant DeFi platforms on Solana, but they serve different roles. Jupiter is a swap aggregator that finds the best prices across all Solana DEXs, while Raydium is a core liquidity provider with AMM pools. This comparison examines how they complement and compete with each other."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
         { id: "how-they-work", title: "How They Work", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
         { id: "tokenomics", title: "Tokenomics", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Is Jupiter an exchange or aggregator?", answer: "Jupiter is primarily a swap aggregator that routes trades through multiple DEXs including Raydium to find the best price. It has also launched its own perpetuals and launchpad products." },

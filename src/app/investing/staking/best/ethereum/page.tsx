@@ -48,7 +48,7 @@ export default function BestEthereumStakingPage() {
     "@type": "Article",
     headline: `Best Ethereum Staking Platforms of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -64,7 +64,7 @@ export default function BestEthereumStakingPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Ethereum Staking Platforms of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -87,7 +87,7 @@ export default function BestEthereumStakingPage() {
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
           <div className="space-y-4">
             {ethPlatforms.map((platform, index) => (
               <ProductCard
@@ -101,7 +101,7 @@ export default function BestEthereumStakingPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Ethereum Staking Overview</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Ethereum Staking Overview</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Since Ethereum transitioned to proof-of-stake in September 2022 (the Merge), staking has become
             the primary mechanism for securing the network. Validators stake 32 ETH to participate in

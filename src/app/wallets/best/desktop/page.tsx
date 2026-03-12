@@ -44,7 +44,7 @@ export default function BestDesktopWalletsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Desktop Crypto Wallets of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -55,7 +55,7 @@ export default function BestDesktopWalletsPage() {
       </header>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Desktop Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Desktop Wallets, Ranked</h2>
         <div className="space-y-6">
           {desktopWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -64,10 +64,10 @@ export default function BestDesktopWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Types of Desktop Wallets</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Types of Desktop Wallets</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Native Desktop Apps</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Native Desktop Apps</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Standalone applications like Exodus that install on your computer. They typically offer
               richer interfaces with portfolio charts, built-in exchanges, and better performance.
@@ -75,7 +75,7 @@ export default function BestDesktopWalletsPage() {
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Browser Extensions</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Browser Extensions</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Wallets like MetaMask, Phantom, and Rabby that run inside your browser (Chrome, Firefox,
               Brave). They are lighter weight and offer seamless integration with web-based dApps, DEXs,

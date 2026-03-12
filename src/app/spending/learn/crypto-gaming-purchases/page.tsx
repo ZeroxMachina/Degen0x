@@ -17,10 +17,14 @@ export default function CryptoGamingPurchasesPage() {
       readTime="9 min"
       intro="The gaming industry is one of the most crypto-friendly sectors, with multiple pathways to spend digital assets on games, in-game items, subscriptions, and hardware. From blockchain-native gaming economies to traditional game purchases via crypto, this guide covers everything gamers need to know."
       toc={[
-        { id: "pc-games", title: "Buying PC Games with Crypto", level: 2 },
-        { id: "console", title: "Console Games and Credits", level: 2 },
-        { id: "blockchain-gaming", title: "Blockchain Gaming Economies", level: 2 },
-        { id: "hardware", title: "Gaming Hardware", level: 2 },
+        { id: "pc-games", title: "pc-games", level: 2 },
+        { id: "buying-pc-games-with-crypto", title: "Buying PC Games with Crypto", level: 2 },
+        { id: "console", title: "console", level: 2 },
+        { id: "console-games-and-credits", title: "Console Games and Credits", level: 2 },
+        { id: "blockchain-gaming", title: "blockchain-gaming", level: 2 },
+        { id: "blockchain-gaming-economies", title: "Blockchain Gaming Economies", level: 2 },
+        { id: "hardware", title: "hardware", level: 2 },
+        { id: "gaming-hardware", title: "Gaming Hardware", level: 2 }
       ]}
       faqs={[
         { question: "Does Steam accept Bitcoin?", answer: "Steam removed direct Bitcoin support in 2017, but you can buy Steam gift cards with crypto through Bitrefill, CoinGate, or similar services." },

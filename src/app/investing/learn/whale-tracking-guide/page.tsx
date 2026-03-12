@@ -16,10 +16,14 @@ export default function WhaleTrackingGuidePage() {
       readTime="10 min"
       intro="Crypto whales are wallets that hold large amounts of cryptocurrency and have the power to move markets with their transactions. Tracking whale activity can provide early signals about market direction, emerging trends, and new investment opportunities. This guide explains how to track whales effectively and interpret their movements."
       toc={[
-        { id: "what-are-whales", title: "What Are Crypto Whales?", level: 2 },
-        { id: "tracking-tools", title: "Whale Tracking Tools", level: 2 },
-        { id: "interpreting-movements", title: "Interpreting Whale Movements", level: 2 },
-        { id: "limitations", title: "Limitations of Whale Tracking", level: 2 },
+        { id: "what-are-whales", title: "what-are-whales", level: 2 },
+        { id: "what-are-crypto-whales", title: "What Are Crypto Whales?", level: 2 },
+        { id: "tracking-tools", title: "tracking-tools", level: 2 },
+        { id: "whale-tracking-tools", title: "Whale Tracking Tools", level: 2 },
+        { id: "interpreting-movements", title: "interpreting-movements", level: 2 },
+        { id: "interpreting-whale-movements", title: "Interpreting Whale Movements", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-of-whale-tracking", title: "Limitations of Whale Tracking", level: 2 }
       ]}
       faqs={[
         { question: "Should I copy whale trades?", answer: "Blindly copying whale trades is risky. Whales may have different time horizons, risk tolerances, and information than retail investors. They may also be hedging positions you cannot see. Use whale activity as one input among many rather than as a direct trading signal. Understanding the context of whale movements matters more than simply mimicking them." },

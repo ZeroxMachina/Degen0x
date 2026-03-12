@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is DePIN? Decentralized Physical Infrastructure (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is DePIN? Decentralized Physical Infrastructure (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what DePIN is, how decentralized physical infrastructure networks work, key projects in the space, and why DePIN is one of crypto's most promising narratives.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsDepinPage() {
       readTime="9 min read"
       intro="DePIN stands for Decentralized Physical Infrastructure Networks. It refers to blockchain-based protocols that use token incentives to crowdsource the deployment and maintenance of real-world physical infrastructure such as wireless networks, compute resources, storage, sensors, and energy grids. DePIN flips the traditional infrastructure model by replacing centralized corporations with community-owned networks where participants earn tokens for contributing resources."
       toc={[
-        { id: "what-is-depin", title: "Understanding DePIN", level: 2 },
-        { id: "how-depin-works", title: "How DePIN Networks Work", level: 2 },
-        { id: "depin-categories", title: "Major DePIN Categories", level: 2 },
-        { id: "investing-in-depin", title: "DePIN as an Investment", level: 2 },
+        { id: "what-is-depin", title: "what-is-depin", level: 2 },
+        { id: "understanding-depin", title: "Understanding DePIN", level: 2 },
+        { id: "how-depin-works", title: "how-depin-works", level: 2 },
+        { id: "how-depin-networks-work", title: "How DePIN Networks Work", level: 2 },
+        { id: "depin-categories", title: "depin-categories", level: 2 },
+        { id: "major-depin-categories", title: "Major DePIN Categories", level: 2 },
+        { id: "investing-in-depin", title: "investing-in-depin", level: 2 },
+        { id: "depin-as-an-investment", title: "DePIN as an Investment", level: 2 }
       ]}
       faqs={[
         {

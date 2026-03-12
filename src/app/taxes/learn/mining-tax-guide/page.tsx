@@ -18,12 +18,18 @@ export default function MiningTaxGuidePage() {
       readTime="11 min read"
       intro="Cryptocurrency mining generates taxable income in most jurisdictions. Whether you are mining Bitcoin with ASICs, mining altcoins with GPUs, or participating in mining pools, you need to understand when mining rewards become taxable, what expenses you can deduct, and whether your activity qualifies as a hobby or a business. The classification significantly affects both your tax liability and the deductions available to you."
       toc={[
-        { id: "mining-income", title: "Mining Rewards as Taxable Income", level: 2 },
-        { id: "hobby-vs-business", title: "Hobby Mining vs Business Mining", level: 2 },
-        { id: "deductions", title: "Deductible Mining Expenses", level: 2 },
-        { id: "pool-mining", title: "Mining Pool Tax Considerations", level: 2 },
-        { id: "selling-rewards", title: "Selling Mining Rewards", level: 2 },
-        { id: "reporting", title: "Reporting Mining Income", level: 2 },
+        { id: "mining-income", title: "mining-income", level: 2 },
+        { id: "mining-rewards-as-taxable-income", title: "Mining Rewards as Taxable Income", level: 2 },
+        { id: "hobby-vs-business", title: "hobby-vs-business", level: 2 },
+        { id: "hobby-mining-vs-business-mining", title: "Hobby Mining vs Business Mining", level: 2 },
+        { id: "deductions", title: "deductions", level: 2 },
+        { id: "deductible-mining-expenses", title: "Deductible Mining Expenses", level: 2 },
+        { id: "pool-mining", title: "pool-mining", level: 2 },
+        { id: "mining-pool-tax-considerations", title: "Mining Pool Tax Considerations", level: 2 },
+        { id: "selling-rewards", title: "selling-rewards", level: 2 },
+        { id: "selling-mining-rewards", title: "Selling Mining Rewards", level: 2 },
+        { id: "reporting", title: "reporting", level: 2 },
+        { id: "reporting-mining-income", title: "Reporting Mining Income", level: 2 }
       ]}
       faqs={[
         { question: "When are mining rewards taxed?", answer: "Mining rewards are generally taxed as income at fair market value when you receive them (when the block reward or pool payout hits your wallet). This creates ordinary income or self-employment income depending on your classification as a hobbyist or business." },

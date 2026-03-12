@@ -18,12 +18,18 @@ export default function LiquidityProvidingGuidePage() {
       readTime="12 min read"
       intro="Providing liquidity is one of the foundational activities in DeFi. By depositing token pairs into automated market maker (AMM) pools, liquidity providers (LPs) enable decentralized trading and earn fees in return. However, successful liquidity provision requires understanding impermanent loss, fee structures, concentrated liquidity mechanics, and the tradeoffs between different pool types and protocols."
       toc={[
-        { id: "amm-basics", title: "How AMMs & Liquidity Pools Work", level: 2 },
-        { id: "impermanent-loss", title: "Understanding Impermanent Loss", level: 2 },
-        { id: "concentrated-liquidity", title: "Concentrated Liquidity (Uniswap V3)", level: 2 },
-        { id: "pool-selection", title: "Choosing the Right Pool", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step LP Guide", level: 2 },
-        { id: "optimization", title: "Optimizing LP Returns", level: 2 },
+        { id: "amm-basics", title: "amm-basics", level: 2 },
+        { id: "how-amms-liquidity-pools-work", title: "How AMMs & Liquidity Pools Work", level: 2 },
+        { id: "impermanent-loss", title: "impermanent-loss", level: 2 },
+        { id: "understanding-impermanent-loss", title: "Understanding Impermanent Loss", level: 2 },
+        { id: "concentrated-liquidity", title: "concentrated-liquidity", level: 2 },
+        { id: "concentrated-liquidity-uniswap-v3", title: "Concentrated Liquidity (Uniswap V3)", level: 2 },
+        { id: "pool-selection", title: "pool-selection", level: 2 },
+        { id: "choosing-the-right-pool", title: "Choosing the Right Pool", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-lp-guide", title: "Step-by-Step LP Guide", level: 2 },
+        { id: "optimization", title: "optimization", level: 2 },
+        { id: "optimizing-lp-returns", title: "Optimizing LP Returns", level: 2 }
       ]}
       faqs={[
         { question: "What is impermanent loss?", answer: "Impermanent loss occurs when the price ratio of tokens in your LP position changes from when you deposited. The greater the price divergence, the more value you lose compared to simply holding the tokens. It is called impermanent because it reverses if prices return to the original ratio." },

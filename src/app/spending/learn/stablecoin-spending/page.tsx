@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Using Stablecoins for Daily Spending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Using Stablecoins for Daily Spending (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to using stablecoins for everyday spending. USDC, USDT, DAI for payments, benefits over traditional banking, and practical tips for stablecoin spending.",
 };
 
@@ -12,10 +12,14 @@ export default function StablecoinSpendingPage() {
     <LearnPageLayout title="Using Stablecoins for Daily Spending" categoryName="Crypto Spending" categorySlug="spending" readTime="7 min read"
       intro="Stablecoins combine the benefits of cryptocurrency (instant settlement, global accessibility, programmability) with the stability of fiat currency. For daily spending, stablecoins eliminate the volatility concern that makes spending Bitcoin or Ethereum impractical for most people. Whether you use a crypto debit card funded by stablecoins, make peer-to-peer payments, or pay merchants directly, stablecoins are becoming a practical medium for everyday transactions."
       toc={[
-        { id: "why-stablecoins", title: "Why Spend with Stablecoins?", level: 2 },
-        { id: "which-stablecoin", title: "Choosing the Right Stablecoin", level: 2 },
+        { id: "why-stablecoins", title: "why-stablecoins", level: 2 },
+        { id: "why-spend-with-stablecoins", title: "Why Spend with Stablecoins?", level: 2 },
+        { id: "which-stablecoin", title: "which-stablecoin", level: 2 },
+        { id: "choosing-the-right-stablecoin", title: "Choosing the Right Stablecoin", level: 2 },
+        { id: "spending-methods", title: "spending-methods", level: 2 },
         { id: "spending-methods", title: "Spending Methods", level: 2 },
-        { id: "practical-tips", title: "Practical Tips", level: 2 },
+        { id: "practical-tips", title: "practical-tips", level: 2 },
+        { id: "practical-tips", title: "Practical Tips", level: 2 }
       ]}
       faqs={[
         { question: "Are stablecoin transactions taxable?", answer: "In most jurisdictions, spending stablecoins that have maintained their peg does not trigger capital gains because there is no price appreciation. However, if a stablecoin deviates from its peg (you buy USDC at $0.98 and spend it at $1.00), the $0.02 gain per unit could technically be taxable. The tax treatment of stablecoins is still evolving, so consult a tax professional for guidance specific to your jurisdiction." },

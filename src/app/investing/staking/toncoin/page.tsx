@@ -17,12 +17,18 @@ export default function StakeToncoinPage() {
       readTime="9 min"
       intro="Toncoin staking allows TON holders to earn approximately 4-6% APY by participating in The Open Network's proof-of-stake consensus. With deep Telegram integration and accessible nominator pools, TON staking provides a gateway for millions of Telegram users to earn passive rewards while supporting network security."
       toc={[
-        { id: "overview", title: "Toncoin Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake TON Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Toncoin", level: 2 },
-        { id: "validators", title: "Validators & Nominator Pools", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "toncoin-staking-overview", title: "Toncoin Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-ton-step-by-step", title: "How to Stake TON Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-toncoin", title: "Risks of Staking Toncoin", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-nominator-pools", title: "Validators & Nominator Pools", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "What APY can I earn staking TON?", answer: "Toncoin staking currently offers approximately 4-6% APY through nominator pools and liquid staking protocols. Rates vary based on the pool chosen, network conditions, and total TON staked across the network." },

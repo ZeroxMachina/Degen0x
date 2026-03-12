@@ -18,12 +18,18 @@ export default function CryptoInsuranceGuidePage() {
       readTime="12 min read"
       intro="Crypto insurance has emerged as a critical tool for protecting digital assets against the unique risks of the cryptocurrency ecosystem. From smart contract exploits and exchange hacks to stablecoin depegging and custodial failures, crypto insurance covers threats that traditional insurance cannot. This comprehensive guide explains every aspect of crypto insurance, from the different types of coverage available to how to evaluate and purchase the right protection for your needs."
       toc={[
-        { id: "what-is", title: "What Is Crypto Insurance?", level: 2 },
-        { id: "types", title: "Types of Crypto Insurance", level: 2 },
-        { id: "centralized-vs-defi", title: "Centralized vs Decentralized Insurance", level: 2 },
-        { id: "costs", title: "What Does Crypto Insurance Cost?", level: 2 },
-        { id: "choosing", title: "How to Choose the Right Coverage", level: 2 },
-        { id: "limitations", title: "Limitations & Exclusions", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-crypto-insurance", title: "What Is Crypto Insurance?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-crypto-insurance", title: "Types of Crypto Insurance", level: 2 },
+        { id: "centralized-vs-defi", title: "centralized-vs-defi", level: 2 },
+        { id: "centralized-vs-decentralized-insurance", title: "Centralized vs Decentralized Insurance", level: 2 },
+        { id: "costs", title: "costs", level: 2 },
+        { id: "what-does-crypto-insurance-cost", title: "What Does Crypto Insurance Cost?", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "how-to-choose-the-right-coverage", title: "How to Choose the Right Coverage", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-exclusions", title: "Limitations & Exclusions", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto insurance worth it?", answer: "For significant holdings (over $10,000), the 2-6% annual premium is generally worth the protection against catastrophic loss. The value proposition increases with position size. Institutional holders often consider insurance mandatory." },

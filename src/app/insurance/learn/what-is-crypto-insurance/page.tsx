@@ -7,7 +7,16 @@ export default function WhatIsCryptoInsurancePage() {
   return (
     <LearnPageLayout title="What Is Crypto Insurance?" categoryName="Insurance" categorySlug="insurance" readTime="8 min"
       intro="Crypto insurance provides financial protection against losses in the cryptocurrency ecosystem. Unlike traditional insurance backed by regulated companies, crypto insurance operates through decentralized protocols and risk pools. This guide explains the different types of crypto insurance, how they work, and how to evaluate whether you need coverage."
-      toc={[{ id: "overview", title: "What Is Crypto Insurance?", level: 2 }, { id: "types", title: "Types of Coverage", level: 2 }, { id: "how-it-works", title: "How It Works", level: 2 }, { id: "who-needs-it", title: "Who Needs It?", level: 2 }]}
+      toc={[
+        { id: "overview", title: "overview", level: 2 },
+        { id: "what-is-crypto-insurance", title: "What Is Crypto Insurance?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-coverage", title: "Types of Coverage", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-it-works", title: "How It Works", level: 2 },
+        { id: "who-needs-it", title: "who-needs-it", level: 2 },
+        { id: "who-needs-it", title: "Who Needs It?", level: 2 }
+      ]}
       faqs={[
         { question: "Is crypto insurance the same as FDIC insurance?", answer: "No. FDIC insurance is government-backed protection for bank deposits. Crypto insurance is provided by private protocols and risk pools. There is no government guarantee behind crypto insurance, and coverage depends on the capital adequacy of the insurance provider." },
         { question: "How much does crypto insurance cost?", answer: "Premiums typically range from 1.5% to 7% of the covered amount per year, depending on the type of coverage, the protocol being insured, and current demand for insurance. Higher-risk protocols command higher premiums." },

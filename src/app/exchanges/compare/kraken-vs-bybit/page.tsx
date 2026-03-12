@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Kraken vs Bybit (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Kraken vs Bybit (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Kraken vs Bybit side by side. Fees, security, derivatives, features, and which exchange suits your trading style.",
 };
 
@@ -16,12 +16,18 @@ export default function KrakenVsBybit() {
       readTime="8 min read"
       intro="Kraken and Bybit serve different segments of the crypto trading market. Kraken is a US-based exchange renowned for security and regulatory compliance, while Bybit is a derivatives-focused platform popular with active traders. This comparison examines which platform better fits your trading needs."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "security", title: "Security and Regulation", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-and-regulation", title: "Security and Regulation", level: 2 },
+        { id: "trading-features", title: "trading-features", level: 2 },
         { id: "trading-features", title: "Trading Features", level: 2 },
+        { id: "supported-assets", title: "supported-assets", level: 2 },
         { id: "supported-assets", title: "Supported Assets", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which is more secure, Kraken or Bybit?", answer: "Kraken has a longer security track record with no major breaches since its founding in 2011. It maintains proof of reserves and extensive cold storage. Bybit is well-regarded but operates with less regulatory oversight." },

@@ -17,14 +17,22 @@ export default function BitcoinStrategicReservePage() {
       readTime="14 min"
       intro="A Bitcoin Strategic Reserve refers to countries or institutions holding Bitcoin as part of their official reserves, similar to how nations maintain gold reserves. This emerging trend represents a major shift in institutional adoption of crypto assets, with potential implications for Bitcoin's valuation, geopolitics, and the regulatory landscape. Understanding strategic reserves requires knowledge of custody models, adoption drivers, and why nations might choose Bitcoin as a reserve asset."
       toc={[
-        { id: "what-is-strategic-reserve", title: "What Is a Bitcoin Strategic Reserve?", level: 2 },
-        { id: "nations-holding-btc", title: "Which Nations Hold Bitcoin?", level: 2 },
-        { id: "us-proposals", title: "US Strategic Bitcoin Reserve Proposals", level: 2 },
-        { id: "custody-approaches", title: "Bitcoin Custody & Storage Models", level: 2 },
-        { id: "price-implications", title: "Impact on Bitcoin Price", level: 2 },
-        { id: "geopolitical", title: "Geopolitical Dynamics", level: 2 },
-        { id: "regulatory", title: "Regulatory & Compliance Implications", level: 2 },
-        { id: "risks-challenges", title: "Risks and Challenges", level: 2 },
+        { id: "what-is-strategic-reserve", title: "what-is-strategic-reserve", level: 2 },
+        { id: "what-is-a-bitcoin-strategic-reserve", title: "What Is a Bitcoin Strategic Reserve?", level: 2 },
+        { id: "nations-holding-btc", title: "nations-holding-btc", level: 2 },
+        { id: "which-nations-hold-bitcoin", title: "Which Nations Hold Bitcoin?", level: 2 },
+        { id: "us-proposals", title: "us-proposals", level: 2 },
+        { id: "us-strategic-bitcoin-reserve-proposals", title: "US Strategic Bitcoin Reserve Proposals", level: 2 },
+        { id: "custody-approaches", title: "custody-approaches", level: 2 },
+        { id: "bitcoin-custody-storage-models", title: "Bitcoin Custody & Storage Models", level: 2 },
+        { id: "price-implications", title: "price-implications", level: 2 },
+        { id: "impact-on-bitcoin-price", title: "Impact on Bitcoin Price", level: 2 },
+        { id: "geopolitical", title: "geopolitical", level: 2 },
+        { id: "geopolitical-dynamics", title: "Geopolitical Dynamics", level: 2 },
+        { id: "regulatory", title: "regulatory", level: 2 },
+        { id: "regulatory-compliance-implications", title: "Regulatory & Compliance Implications", level: 2 },
+        { id: "risks-challenges", title: "risks-challenges", level: 2 },
+        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 }
       ]}
       faqs={[
         {

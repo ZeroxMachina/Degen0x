@@ -17,14 +17,22 @@ export default function AIAgentsCrypto2026Page() {
       readTime="17 min"
       intro="AI agents in cryptocurrency represent the convergence of artificial intelligence and blockchain technology, enabling autonomous entities that can transact, trade, and interact with DeFi protocols without human intervention. These agents range from simple trading bots executing predefined strategies to complex AI systems making independent decisions based on on-chain data. Understanding crypto AI agents requires knowledge of major frameworks (Virtuals, ai16z ELIZA), trading mechanisms, on-chain capabilities, tokenomics, risks, and regulatory implications as this emerging sector evolves in 2026."
       toc={[
-        { id: "what-are-ai-agents", title: "What Are AI Agents in Crypto?", level: 2 },
-        { id: "virtuals-framework", title: "Virtuals: AI Agent Infrastructure", level: 2 },
-        { id: "eliza-framework", title: "ai16z ELIZA: Agent Architecture", level: 2 },
-        { id: "autonomous-trading", title: "Autonomous Trading Bots", level: 2 },
-        { id: "onchain-ai", title: "On-Chain AI and Smart Contracts", level: 2 },
-        { id: "agent-tokens", title: "Agent Tokens and Tokenomics", level: 2 },
-        { id: "risks-safety", title: "Risks, Safety, and Control", level: 2 },
-        { id: "regulatory-future", title: "Regulatory Outlook and Future", level: 2 },
+        { id: "what-are-ai-agents", title: "what-are-ai-agents", level: 2 },
+        { id: "what-are-ai-agents-in-crypto", title: "What Are AI Agents in Crypto?", level: 2 },
+        { id: "virtuals-framework", title: "virtuals-framework", level: 2 },
+        { id: "virtuals-ai-agent-infrastructure", title: "Virtuals: AI Agent Infrastructure", level: 2 },
+        { id: "eliza-framework", title: "eliza-framework", level: 2 },
+        { id: "ai16z-eliza-agent-architecture", title: "ai16z ELIZA: Agent Architecture", level: 2 },
+        { id: "autonomous-trading", title: "autonomous-trading", level: 2 },
+        { id: "autonomous-trading-bots", title: "Autonomous Trading Bots", level: 2 },
+        { id: "onchain-ai", title: "onchain-ai", level: 2 },
+        { id: "on-chain-ai-and-smart-contracts", title: "On-Chain AI and Smart Contracts", level: 2 },
+        { id: "agent-tokens", title: "agent-tokens", level: 2 },
+        { id: "agent-tokens-and-tokenomics", title: "Agent Tokens and Tokenomics", level: 2 },
+        { id: "risks-safety", title: "risks-safety", level: 2 },
+        { id: "risks-safety-and-control", title: "Risks, Safety, and Control", level: 2 },
+        { id: "regulatory-future", title: "regulatory-future", level: 2 },
+        { id: "regulatory-outlook-and-future", title: "Regulatory Outlook and Future", level: 2 }
       ]}
       faqs={[
         {

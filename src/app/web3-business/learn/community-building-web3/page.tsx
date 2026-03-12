@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Community Building in Web3 (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Community Building in Web3 (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to building thriving Web3 communities. Discord strategies, governance participation, contributor programs, and creating genuine engagement in crypto.",
 };
 
@@ -12,10 +12,14 @@ export default function CommunityBuildingWeb3Page() {
     <LearnPageLayout title="Community Building in Web3" categoryName="Web3 Business" categorySlug="web3-business" readTime="8 min read"
       intro="Community is the most important asset in Web3. Unlike traditional businesses where customers are passive consumers, Web3 communities are active participants who contribute code, provide liquidity, create content, govern protocols, and evangelize the project. Building a genuine, engaged community is both the hardest and most valuable thing a Web3 project can do. Token incentives can bootstrap attention, but only authentic value and culture retain members long-term."
       toc={[
-        { id: "foundations", title: "Community Foundations", level: 2 },
-        { id: "platforms", title: "Platform Strategy", level: 2 },
-        { id: "engagement", title: "Driving Engagement", level: 2 },
-        { id: "scaling", title: "Scaling Community", level: 2 },
+        { id: "foundations", title: "foundations", level: 2 },
+        { id: "community-foundations", title: "Community Foundations", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "platform-strategy", title: "Platform Strategy", level: 2 },
+        { id: "engagement", title: "engagement", level: 2 },
+        { id: "driving-engagement", title: "Driving Engagement", level: 2 },
+        { id: "scaling", title: "scaling", level: 2 },
+        { id: "scaling-community", title: "Scaling Community", level: 2 }
       ]}
       faqs={[
         { question: "How do I start building a Web3 community?", answer: "Start with a clear mission and values that people can rally around. Create a Discord server with well-organized channels. Begin by attracting a small core of passionate members who believe in your vision. These early members set the culture. Engage personally with every member early on. Share development progress transparently. Let the community grow organically before using incentives to scale." },

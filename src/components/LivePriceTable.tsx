@@ -204,7 +204,7 @@ const LivePriceTable: React.FC<LivePriceTableProps> = ({ compact = false }) => {
         <p className="text-sm text-[var(--color-text-secondary)] mb-4">{error}</p>
         <button
           onClick={handleRetry}
-          className="inline-block px-4 py-2 rounded-lg bg-[var(--color-primary)] text-white font-medium hover:opacity-90 transition-opacity"
+          className="inline-block px-4 py-2 rounded-lg bg-[var(--color-primary)] text-[var(--color-text)] font-medium hover:opacity-90 transition-opacity"
         >
           Retry
         </button>

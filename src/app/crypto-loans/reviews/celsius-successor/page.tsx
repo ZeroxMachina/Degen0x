@@ -10,7 +10,7 @@ const product = {
   pros: ["Some creditor recovery occurred", "Lessons for the industry", "Increased transparency requirements"],
   cons: ["Billions in user funds lost", "Ongoing legal proceedings", "Trust permanently damaged", "Successor entities unproven"],
   bestFor: "Understanding CeFi lending risks and the importance of counterparty due diligence",
-  affiliateUrl: "https://cryptodegen.com/go/celsius-successor",
+  affiliateUrl: "https://degen0x.com/go/celsius-successor",
   category: "crypto-loans",
 };
 

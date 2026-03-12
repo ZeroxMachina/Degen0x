@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Mutual Funds and Trusts (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Mutual Funds and Trusts (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to crypto mutual funds and trusts. Compare Grayscale trusts, Bitwise funds, and other institutional crypto investment vehicles for long-term investors.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoMutualFundsPage() {
     <LearnPageLayout title="Crypto Mutual Funds and Trusts" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="7 min read"
       intro="Before Bitcoin ETFs, crypto trusts and mutual funds were the primary way for traditional finance investors to gain crypto exposure. Products like Grayscale's Bitcoin Trust and Bitwise's crypto index funds provided access through brokerage accounts, albeit with higher fees and structural limitations. While ETFs have largely superseded these products for single-asset exposure, trusts and funds still serve niche roles for diversified crypto baskets, accredited investor products, and alternative crypto asset exposure."
       toc={[
-        { id: "trusts", title: "Crypto Trusts Explained", level: 2 },
-        { id: "index-funds", title: "Crypto Index Funds", level: 2 },
-        { id: "hedge-funds", title: "Crypto Hedge Funds", level: 2 },
-        { id: "etf-comparison", title: "Trusts and Funds vs. ETFs", level: 2 },
+        { id: "trusts", title: "trusts", level: 2 },
+        { id: "crypto-trusts-explained", title: "Crypto Trusts Explained", level: 2 },
+        { id: "index-funds", title: "index-funds", level: 2 },
+        { id: "crypto-index-funds", title: "Crypto Index Funds", level: 2 },
+        { id: "hedge-funds", title: "hedge-funds", level: 2 },
+        { id: "crypto-hedge-funds", title: "Crypto Hedge Funds", level: 2 },
+        { id: "etf-comparison", title: "etf-comparison", level: 2 },
+        { id: "trusts-and-funds-vs-etfs", title: "Trusts and Funds vs. ETFs", level: 2 }
       ]}
       faqs={[
         { question: "What is the difference between a crypto trust and an ETF?", answer: "A crypto trust is a closed-end fund that holds crypto but shares can trade at a premium or discount to the underlying value (NAV). ETFs have creation and redemption mechanisms that keep share prices close to NAV. Trusts typically have higher fees and less liquidity. Many crypto trusts (like GBTC) have converted or are converting to ETFs." },

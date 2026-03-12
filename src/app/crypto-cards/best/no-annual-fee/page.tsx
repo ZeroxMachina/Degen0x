@@ -57,7 +57,7 @@ export default function BestNoAnnualFeeCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Free Crypto Cards &mdash; No Annual Fee ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -74,7 +74,7 @@ export default function BestNoAnnualFeeCardsPage() {
           useful perks without an ongoing cost eating into your returns. We identified and
           ranked the top no-annual-fee crypto cards available today.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Why No Annual Fee Matters</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Why No Annual Fee Matters</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           An annual fee represents a guaranteed cost that your rewards need to overcome before
           you break even. With a $150 annual fee card, you need to earn $150 in crypto
@@ -82,14 +82,14 @@ export default function BestNoAnnualFeeCardsPage() {
           profit from day one. For moderate spenders especially, free cards almost always
           deliver better net value.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Our Top Picks</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Our Top Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          The <strong className="text-white">Crypto.com Visa</strong> is our top free card
+          The <strong className="text-[var(--color-text)]">Crypto.com Visa</strong> is our top free card
           with cashback up to 5% and premium perks, all with no annual fee. The{" "}
-          <strong className="text-white">Coinbase Card</strong> offers up to 4% back with the
+          <strong className="text-[var(--color-text)]">Coinbase Card</strong> offers up to 4% back with the
           simplicity of spending from your Coinbase account. For those who want a true credit
-          card, the <strong className="text-white">Gemini Credit Card</strong> and{" "}
-          <strong className="text-white">Rain Card</strong> both earn crypto with no yearly charge
+          card, the <strong className="text-[var(--color-text)]">Gemini Credit Card</strong> and{" "}
+          <strong className="text-[var(--color-text)]">Rain Card</strong> both earn crypto with no yearly charge
           while building your credit score.
         </p>
       </div>
@@ -107,7 +107,7 @@ export default function BestNoAnnualFeeCardsPage() {
 
       {/* Fee Comparison Table */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison: Free vs Paid Cards</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison: Free vs Paid Cards</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Understanding the total cost of ownership beyond the annual fee is critical for
           choosing the right card:
@@ -116,21 +116,21 @@ export default function BestNoAnnualFeeCardsPage() {
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-success)] font-bold shrink-0">FREE</span>
             <div>
-              <h3 className="text-white font-semibold">Cards with zero annual fee and minimal other fees</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Cards with zero annual fee and minimal other fees</h3>
               <p className="text-sm">Crypto.com Visa, Gemini Credit Card, Rain Card, Binance Card, and Bybit Card all charge no annual fee and no foreign transaction fees. The Gemini and Rain cards also have no conversion spread since they function as traditional credit cards.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-warning)] font-bold shrink-0">LOW</span>
             <div>
-              <h3 className="text-white font-semibold">Free cards with notable ancillary fees</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Free cards with notable ancillary fees</h3>
               <p className="text-sm">The Coinbase Card is free but charges a 2.49% spread on crypto spending. BitPay has no annual fee but charges a $5 monthly inactivity fee after 90 days. Factor these costs into your total rewards calculation.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-danger)] font-bold shrink-0">PAID</span>
             <div>
-              <h3 className="text-white font-semibold">Cards that charge annual or subscription fees</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Cards that charge annual or subscription fees</h3>
               <p className="text-sm">Fold Card Premium at $150/year, Plutus Pro at $14.99/month, and Wirex Premium plans starting at $2.99/month. These can be worth it for high spenders but are unnecessary for most users.</p>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function BestNoAnnualFeeCardsPage() {
 
       {/* Methodology */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
         <p className="text-[var(--color-text-secondary)]">
           For no-annual-fee rankings, we evaluate the net value proposition after all costs. We
           calculate the effective reward rate minus any conversion spreads, ATM fees, and other
@@ -152,7 +152,7 @@ export default function BestNoAnnualFeeCardsPage() {
 
       {/* Related Links */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "Best Crypto Cashback Cards", href: "/crypto-cards/best/cashback" },
@@ -165,7 +165,7 @@ export default function BestNoAnnualFeeCardsPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
-              <span className="text-white font-semibold">{link.title}</span>
+              <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
               <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                 Read more &rarr;
               </span>

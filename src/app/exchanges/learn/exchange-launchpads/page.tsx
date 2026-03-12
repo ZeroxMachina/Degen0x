@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Exchange Launchpads: IEOs and Token Sales (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Exchange Launchpads: IEOs and Token Sales (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about crypto exchange launchpads and IEOs. How token sales work, participation requirements, risks, returns, and the best launchpad platforms.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeLaunchpads() {
       readTime="9 min read"
       intro="Exchange launchpads provide curated access to new token sales, giving early investors the opportunity to buy tokens before they begin public trading. Historically, launchpad projects have delivered significant returns, but the landscape has evolved with increased competition and varying quality. This guide explains how launchpads work and how to participate effectively."
       toc={[
-        { id: "what-are-launchpads", title: "What Are Exchange Launchpads?", level: 2 },
-        { id: "how-they-work", title: "How Launchpads Work", level: 2 },
-        { id: "participation", title: "How to Participate", level: 2 },
-        { id: "top-launchpads", title: "Top Launchpad Platforms", level: 2 },
+        { id: "what-are-launchpads", title: "what-are-launchpads", level: 2 },
+        { id: "what-are-exchange-launchpads", title: "What Are Exchange Launchpads?", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-launchpads-work", title: "How Launchpads Work", level: 2 },
+        { id: "participation", title: "participation", level: 2 },
+        { id: "how-to-participate", title: "How to Participate", level: 2 },
+        { id: "top-launchpads", title: "top-launchpads", level: 2 },
+        { id: "top-launchpad-platforms", title: "Top Launchpad Platforms", level: 2 },
+        { id: "evaluating-projects", title: "evaluating-projects", level: 2 },
         { id: "evaluating-projects", title: "Evaluating Projects", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
-        { id: "strategies", title: "Launchpad Strategies", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "launchpad-strategies", title: "Launchpad Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Are launchpad investments guaranteed to profit?", answer: "No. While historically many launchpad tokens traded above their sale price initially, some projects have declined below sale price. Past launchpad performance does not guarantee future results. Research each project individually." },

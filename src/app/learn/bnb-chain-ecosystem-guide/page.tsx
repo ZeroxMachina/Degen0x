@@ -17,11 +17,16 @@ export default function BnbChainEcosystemGuidePage() {
       readTime="8 min"
       intro="BNB Chain is one of the most active blockchain ecosystems, combining the BNB Smart Chain (BSC) for DeFi and dApps, opBNB as a Layer 2 for ultra-low-cost transactions, and BNB Greenfield for decentralized storage. With deep integration with the Binance exchange and a massive global user base, BNB Chain offers an accessible entry point into decentralized applications."
       toc={[
-        { id: "overview", title: "BNB Chain Overview", level: 2 },
-        { id: "bsc", title: "BNB Smart Chain", level: 2 },
-        { id: "defi", title: "DeFi Ecosystem", level: 2 },
-        { id: "opbnb", title: "opBNB Layer 2", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "bnb-chain-overview", title: "BNB Chain Overview", level: 2 },
+        { id: "bsc", title: "bsc", level: 2 },
+        { id: "bnb-smart-chain", title: "BNB Smart Chain", level: 2 },
+        { id: "defi", title: "defi", level: 2 },
+        { id: "defi-ecosystem", title: "DeFi Ecosystem", level: 2 },
+        { id: "opbnb", title: "opbnb", level: 2 },
+        { id: "opbnb-layer-2", title: "opBNB Layer 2", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "Is BNB Chain centralized?", answer: "BNB Smart Chain uses a limited validator set (around 40 active validators) selected through staking and delegated proof of stake. This makes it more centralized than Ethereum but provides higher throughput and lower costs. The trade-off between decentralization and performance is a conscious design choice." },

@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Aragon (ANT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Aragon (ANT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Aragon (ANT), the DAO creation and governance framework. Discover how it works, tokenomics, use cases, and how to buy ANT.",
 };
 
 export default function AragonPage() {
   return (
-    <LearnPageLayout title="What Is Aragon (ANT)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Aragon is a pioneering DAO (Decentralized Autonomous Organization) framework that provides the tools and infrastructure for creating, managing, and governing on-chain organizations. As one of the earliest DAO platforms in crypto, Aragon has powered thousands of DAOs and managed billions in treasury assets, providing modular governance plugins, voting mechanisms, and treasury management tools for decentralized organizations of all sizes." toc={[{id:"what-is",title:"What Is Aragon?",level:2},{id:"how-it-works",title:"How Does Aragon Work?",level:2},{id:"tokenomics",title:"ANT Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy ANT",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Aragon?",answer:"Aragon is a DAO framework providing tools for creating and governing on-chain organizations, including modular governance plugins, voting mechanisms, and treasury management."},{question:"Where can I buy ANT?",answer:"ANT is available on Binance, OKX, and Uniswap. It trades against USDT and ETH pairs."},{question:"Is Aragon a good investment?",answer:"Aragon is an established DAO infrastructure provider, but the DAO tooling market is competitive and evolving. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Aragon (ANT)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Aragon is a pioneering DAO (Decentralized Autonomous Organization) framework that provides the tools and infrastructure for creating, managing, and governing on-chain organizations. As one of the earliest DAO platforms in crypto, Aragon has powered thousands of DAOs and managed billions in treasury assets, providing modular governance plugins, voting mechanisms, and treasury management tools for decentralized organizations of all sizes." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-aragon", title: "What Is Aragon?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-aragon-work", title: "How Does Aragon Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ant-tokenomics", title: "ANT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ant", title: "How to Buy ANT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Aragon?",answer:"Aragon is a DAO framework providing tools for creating and governing on-chain organizations, including modular governance plugins, voting mechanisms, and treasury management."},{question:"Where can I buy ANT?",answer:"ANT is available on Binance, OKX, and Uniswap. It trades against USDT and ETH pairs."},{question:"Is Aragon a good investment?",answer:"Aragon is an established DAO infrastructure provider, but the DAO tooling market is competitive and evolving. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
       <h2 id="what-is">What Is Aragon?</h2>
       <p>Aragon was founded by Luis Cuende and Jorge Izquierdo in 2016, making it one of the first projects dedicated to building decentralized governance infrastructure. The project&apos;s vision was to enable the creation of borderless, permissionless organizations governed by transparent smart contract rules rather than traditional corporate hierarchies. Over the years, Aragon has evolved through multiple iterations, from Aragon Client to Aragon Govern to the current Aragon OSx (Operating System) framework.</p>
       <p>Aragon OSx represents the latest architecture, designed as a modular, plugin-based framework where DAOs can mix and match governance components. This modular approach allows organizations to customize their governance structure by selecting from a library of plugins for voting, permission management, treasury operations, and more. The framework supports both simple multi-sig setups for small teams and complex token-weighted governance systems for large communities.</p>

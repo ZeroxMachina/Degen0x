@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Grid Bot Trading Strategy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Grid Bot Trading Strategy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Master grid bot trading for crypto. Learn how to configure grid parameters, choose optimal pairs, and profit from sideways market movements.",
 };
@@ -17,10 +17,14 @@ export default function GridBotStrategyPage() {
       readTime="8 min read"
       intro="Grid trading is one of the most popular automated strategies in crypto, designed to profit from normal price oscillations within a range. A grid bot places a series of buy and sell limit orders at preset intervals, automatically buying low and selling high as price moves up and down. This guide explains how grid bots work, how to configure them, and when they perform best."
       toc={[
+        { id: "how-grid-bots-work", title: "how-grid-bots-work", level: 2 },
         { id: "how-grid-bots-work", title: "How Grid Bots Work", level: 2 },
-        { id: "configuring-grid", title: "Configuring Your Grid", level: 2 },
-        { id: "optimal-conditions", title: "Optimal Market Conditions", level: 2 },
-        { id: "advanced-techniques", title: "Advanced Grid Techniques", level: 2 },
+        { id: "configuring-grid", title: "configuring-grid", level: 2 },
+        { id: "configuring-your-grid", title: "Configuring Your Grid", level: 2 },
+        { id: "optimal-conditions", title: "optimal-conditions", level: 2 },
+        { id: "optimal-market-conditions", title: "Optimal Market Conditions", level: 2 },
+        { id: "advanced-techniques", title: "advanced-techniques", level: 2 },
+        { id: "advanced-grid-techniques", title: "Advanced Grid Techniques", level: 2 }
       ]}
       faqs={[
         { question: "What is the best grid range?", answer: "The ideal grid range depends on the asset's recent volatility. Analyze the asset's price history over the past 30-90 days to identify typical support and resistance levels. Set the grid range to encompass where price has spent most of its time, typically within one to two standard deviations of the mean." },

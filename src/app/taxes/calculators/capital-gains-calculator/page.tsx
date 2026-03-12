@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState } from "react";
@@ -44,7 +46,7 @@ export default function CapitalGainsCalculatorPage() {
         { label: "Capital Gains Calculator", href: "/taxes/calculators/capital-gains-calculator" },
       ]} />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Crypto Capital Gains Calculator</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Crypto Capital Gains Calculator</h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">
         Calculate your capital gain or loss on a crypto trade and estimate the tax owed based
         on your holding period and tax bracket.
@@ -52,7 +54,7 @@ export default function CapitalGainsCalculatorPage() {
 
       <div className="grid md:grid-cols-2 gap-8">
         <div className="space-y-6">
-          <h2 className="text-xl font-bold text-white">Trade Details</h2>
+          <h2 className="text-xl font-bold text-[var(--color-text)]">Trade Details</h2>
 
           <div>
             <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-1">
@@ -63,7 +65,7 @@ export default function CapitalGainsCalculatorPage() {
               value={buyPrice}
               onChange={(e) => setBuyPrice(e.target.value)}
               placeholder="30000"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -76,7 +78,7 @@ export default function CapitalGainsCalculatorPage() {
               value={sellPrice}
               onChange={(e) => setSellPrice(e.target.value)}
               placeholder="50000"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -90,7 +92,7 @@ export default function CapitalGainsCalculatorPage() {
               onChange={(e) => setQuantity(e.target.value)}
               placeholder="0.5"
               step="any"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -104,7 +106,7 @@ export default function CapitalGainsCalculatorPage() {
                 value={buyFee}
                 onChange={(e) => setBuyFee(e.target.value)}
                 placeholder="0"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
               />
             </div>
             <div>
@@ -116,7 +118,7 @@ export default function CapitalGainsCalculatorPage() {
                 value={sellFee}
                 onChange={(e) => setSellFee(e.target.value)}
                 placeholder="0"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
               />
             </div>
           </div>
@@ -128,7 +130,7 @@ export default function CapitalGainsCalculatorPage() {
             <select
               value={holdingPeriod}
               onChange={(e) => setHoldingPeriod(e.target.value as "short" | "long")}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             >
               <option value="short">Short-Term (under 1 year)</option>
               <option value="long">Long-Term (over 1 year)</option>
@@ -142,7 +144,7 @@ export default function CapitalGainsCalculatorPage() {
             <select
               value={taxBracket}
               onChange={(e) => setTaxBracket(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             >
               <option value="10">10%</option>
               <option value="12">12%</option>
@@ -156,16 +158,16 @@ export default function CapitalGainsCalculatorPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-white mb-6">Results</h2>
+          <h2 className="text-xl font-bold text-[var(--color-text)] mb-6">Results</h2>
           {hasValues ? (
             <div className="space-y-4">
               <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
                 <p className="text-sm text-[var(--color-text-secondary)]">Total Cost Basis</p>
-                <p className="text-2xl font-bold text-white">{fmt(totalCostBasis)}</p>
+                <p className="text-2xl font-bold text-[var(--color-text)]">{fmt(totalCostBasis)}</p>
               </div>
               <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
                 <p className="text-sm text-[var(--color-text-secondary)]">Total Proceeds</p>
-                <p className="text-2xl font-bold text-white">{fmt(totalProceeds)}</p>
+                <p className="text-2xl font-bold text-[var(--color-text)]">{fmt(totalProceeds)}</p>
               </div>
               <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
                 <p className="text-sm text-[var(--color-text-secondary)]">
@@ -180,7 +182,7 @@ export default function CapitalGainsCalculatorPage() {
                 <p className="text-sm text-[var(--color-text-secondary)]">
                   Estimated Tax ({holdingPeriod === "short" ? pct(bracketVal) : pct(longTermRate * 100)} rate)
                 </p>
-                <p className="text-2xl font-bold text-white">{fmt(estimatedTax)}</p>
+                <p className="text-2xl font-bold text-[var(--color-text)]">{fmt(estimatedTax)}</p>
               </div>
               <div className="rounded-xl border-2 border-[var(--color-primary)] bg-[var(--color-bg-card)] p-4">
                 <p className="text-sm text-[var(--color-text-secondary)]">Net Profit After Tax</p>

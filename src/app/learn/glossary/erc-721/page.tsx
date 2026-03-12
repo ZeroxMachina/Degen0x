@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is ERC-721? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is ERC-721? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what ERC-721 is, how non-fungible tokens work, and why this standard revolutionized digital ownership on Ethereum.",
 };
@@ -17,11 +17,16 @@ export default function Erc721Page() {
       readTime="5 min"
       intro="ERC-721 is the Ethereum token standard for non-fungible tokens (NFTs). Unlike ERC-20 tokens where each unit is identical, every ERC-721 token has a unique identifier, making it suitable for representing one-of-a-kind digital assets like artwork, collectibles, domain names, and in-game items. This standard enabled the entire NFT ecosystem."
       toc={[
-        { id: "definition", title: "What Is ERC-721?", level: 2 },
-        { id: "how-it-works", title: "How ERC-721 Works", level: 2 },
-        { id: "vs-erc20", title: "ERC-721 vs ERC-20", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-erc-721", title: "What Is ERC-721?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-erc-721-works", title: "How ERC-721 Works", level: 2 },
+        { id: "vs-erc20", title: "vs-erc20", level: 2 },
+        { id: "erc-721-vs-erc-20", title: "ERC-721 vs ERC-20", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
         { id: "use-cases", title: "Use Cases", level: 2 },
-        { id: "ecosystem-impact", title: "Ecosystem Impact", level: 2 },
+        { id: "ecosystem-impact", title: "ecosystem-impact", level: 2 },
+        { id: "ecosystem-impact", title: "Ecosystem Impact", level: 2 }
       ]}
       faqs={[
         {

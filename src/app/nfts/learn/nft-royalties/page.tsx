@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Royalties: How Creator Royalties Work (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Royalties: How Creator Royalties Work (${CURRENT_YEAR}) | degen0x`,
   description: "Understand how NFT royalties work, which platforms enforce them, the royalty debate, and how creators can maximize ongoing income from secondary sales.",
 };
 
@@ -16,11 +16,16 @@ export default function NftRoyaltiesPage() {
       readTime="9 min"
       intro="NFT royalties enable creators to earn a percentage of every secondary sale of their work, creating ongoing passive income long after the initial mint. When a collector resells an NFT, the original creator automatically receives a royalty payment, typically 2.5-10% of the sale price. However, the enforcement of royalties has become one of the most debated topics in the NFT space. This guide explains how royalties work, the current enforcement landscape, and what creators need to know."
       toc={[
-        { id: "how-royalties-work", title: "How NFT Royalties Work", level: 2 },
-        { id: "enforcement-debate", title: "The Royalty Enforcement Debate", level: 2 },
-        { id: "platform-policies", title: "Platform Royalty Policies", level: 2 },
-        { id: "maximizing-royalties", title: "Maximizing Royalty Income", level: 2 },
-        { id: "future-royalties", title: "The Future of NFT Royalties", level: 2 },
+        { id: "how-royalties-work", title: "how-royalties-work", level: 2 },
+        { id: "how-nft-royalties-work", title: "How NFT Royalties Work", level: 2 },
+        { id: "enforcement-debate", title: "enforcement-debate", level: 2 },
+        { id: "the-royalty-enforcement-debate", title: "The Royalty Enforcement Debate", level: 2 },
+        { id: "platform-policies", title: "platform-policies", level: 2 },
+        { id: "platform-royalty-policies", title: "Platform Royalty Policies", level: 2 },
+        { id: "maximizing-royalties", title: "maximizing-royalties", level: 2 },
+        { id: "maximizing-royalty-income", title: "Maximizing Royalty Income", level: 2 },
+        { id: "future-royalties", title: "future-royalties", level: 2 },
+        { id: "the-future-of-nft-royalties", title: "The Future of NFT Royalties", level: 2 }
       ]}
       faqs={[
         { question: "What is a typical NFT royalty percentage?", answer: "Most NFT collections set royalties between 2.5% and 10% of the secondary sale price. The most common rate is 5%. Higher royalties (7.5-10%) are common for art-focused collections where creators provide significant ongoing value. Lower royalties (2.5%) are sometimes used for large PFP collections where traders prefer lower friction." },

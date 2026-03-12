@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Mining? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Mining? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what cryptocurrency mining is, how proof-of-work mining secures blockchains, and the economics of mining operations.",
 };
@@ -17,11 +17,16 @@ export default function MiningPage() {
       readTime="6 min"
       intro="Mining is the process of using computational power to validate transactions, secure the network, and create new blocks on a proof-of-work blockchain. Miners compete to solve cryptographic puzzles; the winner gets to add the next block and receives a block reward of newly minted cryptocurrency plus transaction fees. Mining is how Bitcoin and other PoW networks achieve decentralized consensus without a central authority."
       toc={[
-        { id: "definition", title: "What Is Mining?", level: 2 },
-        { id: "how-it-works", title: "How Mining Works", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-mining", title: "What Is Mining?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-mining-works", title: "How Mining Works", level: 2 },
+        { id: "mining-hardware", title: "mining-hardware", level: 2 },
         { id: "mining-hardware", title: "Mining Hardware", level: 2 },
+        { id: "mining-pools", title: "mining-pools", level: 2 },
         { id: "mining-pools", title: "Mining Pools", level: 2 },
-        { id: "economics", title: "Mining Economics", level: 2 },
+        { id: "economics", title: "economics", level: 2 },
+        { id: "mining-economics", title: "Mining Economics", level: 2 }
       ]}
       faqs={[
         {

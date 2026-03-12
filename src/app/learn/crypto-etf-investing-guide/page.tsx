@@ -26,14 +26,22 @@ export default function CryptoETFInvestingGuidePage() {
       readTime="14 min"
       intro="Cryptocurrency ETFs have transformed how investors access Bitcoin, Ethereum, and other crypto assets. Rather than managing crypto wallets, exchanges, and custody, investors can purchase crypto ETF shares through traditional brokerage accounts. Spot Bitcoin ETFs approved in January 2024 and Ethereum ETFs approved later that year have attracted institutional capital and democratized crypto access. By 2026, crypto ETFs have become mainstream investment products, available through nearly all major brokers, with over $100 billion in assets under management. This comprehensive guide explains crypto ETF types, compares providers, analyzes fees, discusses advantages and disadvantages, and helps you determine whether crypto ETFs align with your investment goals."
       toc={[
-        { id: "crypto-etf-types", title: "Types of Crypto ETFs", level: 2 },
-        { id: "spot-vs-derivatives", title: "Spot vs. Futures vs. Blockchain ETFs", level: 2 },
-        { id: "bitcoin-ethereum-etfs", title: "Bitcoin and Ethereum ETF Market", level: 2 },
-        { id: "crypto-etf-providers", title: "Major Crypto ETF Providers", level: 2 },
-        { id: "crypto-etf-fees", title: "Understanding Crypto ETF Fees", level: 2 },
-        { id: "crypto-etf-advantages", title: "Advantages of Crypto ETFs", level: 2 },
-        { id: "crypto-etf-disadvantages", title: "Disadvantages of Crypto ETFs", level: 2 },
-        { id: "investing-crypto-etfs", title: "How to Invest in Crypto ETFs", level: 2 },
+        { id: "crypto-etf-types", title: "crypto-etf-types", level: 2 },
+        { id: "types-of-crypto-etfs", title: "Types of Crypto ETFs", level: 2 },
+        { id: "spot-vs-derivatives", title: "spot-vs-derivatives", level: 2 },
+        { id: "spot-vs-futures-vs-blockchain-etfs", title: "Spot vs. Futures vs. Blockchain ETFs", level: 2 },
+        { id: "bitcoin-ethereum-etfs", title: "bitcoin-ethereum-etfs", level: 2 },
+        { id: "bitcoin-and-ethereum-etf-market", title: "Bitcoin and Ethereum ETF Market", level: 2 },
+        { id: "crypto-etf-providers", title: "crypto-etf-providers", level: 2 },
+        { id: "major-crypto-etf-providers", title: "Major Crypto ETF Providers", level: 2 },
+        { id: "crypto-etf-fees", title: "crypto-etf-fees", level: 2 },
+        { id: "understanding-crypto-etf-fees", title: "Understanding Crypto ETF Fees", level: 2 },
+        { id: "crypto-etf-advantages", title: "crypto-etf-advantages", level: 2 },
+        { id: "advantages-of-crypto-etfs", title: "Advantages of Crypto ETFs", level: 2 },
+        { id: "crypto-etf-disadvantages", title: "crypto-etf-disadvantages", level: 2 },
+        { id: "disadvantages-of-crypto-etfs", title: "Disadvantages of Crypto ETFs", level: 2 },
+        { id: "investing-crypto-etfs", title: "investing-crypto-etfs", level: 2 },
+        { id: "how-to-invest-in-crypto-etfs", title: "How to Invest in Crypto ETFs", level: 2 }
       ]}
       faqs={[
         {

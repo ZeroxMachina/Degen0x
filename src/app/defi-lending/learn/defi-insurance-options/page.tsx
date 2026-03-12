@@ -17,11 +17,16 @@ export default function DefiInsuranceOptionsPage() {
       readTime="9 min"
       intro="DeFi insurance provides financial protection against the unique risks of decentralized finance, including smart contract exploits, oracle failures, and stablecoin depegs. While DeFi protocols undergo audits, no code is guaranteed to be bug-free. Insurance protocols offer a way to hedge this residual risk by purchasing coverage that pays out if a covered event occurs. This guide covers the major DeFi insurance options and how to use them."
       toc={[
-        { id: "why-defi-insurance", title: "Why DeFi Insurance Matters", level: 2 },
-        { id: "major-providers", title: "Major Insurance Providers", level: 2 },
-        { id: "coverage-types", title: "Types of Coverage", level: 2 },
+        { id: "why-defi-insurance", title: "why-defi-insurance", level: 2 },
+        { id: "why-defi-insurance-matters", title: "Why DeFi Insurance Matters", level: 2 },
+        { id: "major-providers", title: "major-providers", level: 2 },
+        { id: "major-insurance-providers", title: "Major Insurance Providers", level: 2 },
+        { id: "coverage-types", title: "coverage-types", level: 2 },
+        { id: "types-of-coverage", title: "Types of Coverage", level: 2 },
+        { id: "cost-analysis", title: "cost-analysis", level: 2 },
         { id: "cost-analysis", title: "Cost Analysis", level: 2 },
-        { id: "claims-process", title: "Claims Process", level: 2 },
+        { id: "claims-process", title: "claims-process", level: 2 },
+        { id: "claims-process", title: "Claims Process", level: 2 }
       ]}
       faqs={[
         { question: "Is DeFi insurance worth the cost?", answer: "For large positions, insurance is generally worthwhile as a risk management tool. The cost typically ranges from 2-5% annually, which is reasonable compared to the potential total loss of funds from a smart contract exploit. For smaller positions, the cost may exceed the expected benefit." },

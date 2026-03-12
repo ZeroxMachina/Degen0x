@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Silo Finance Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Silo Finance Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Silo Finance review covering risk-isolated lending, permissionless markets, bridge asset model, multi-chain deployment, and yield opportunities.",
 };
 

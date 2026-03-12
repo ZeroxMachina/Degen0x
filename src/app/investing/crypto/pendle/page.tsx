@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Pendle (PENDLE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Pendle (PENDLE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Pendle (PENDLE), the yield tokenization protocol for DeFi. Discover how yield trading works, tokenomics, and how to buy PENDLE.",
 };
@@ -17,12 +17,18 @@ export default function PendlePage() {
       readTime="8 min read"
       intro="Pendle is a DeFi protocol that enables the tokenization and trading of future yield. By splitting yield-bearing tokens into their principal and yield components, Pendle allows users to trade, hedge, and speculate on future interest rates in a permissionless manner. PENDLE is the governance and utility token of the protocol."
       toc={[
-        { id: "what-is", title: "What Is Pendle?", level: 2 },
-        { id: "how-it-works", title: "How Pendle Works", level: 2 },
-        { id: "tokenomics", title: "Pendle Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy PENDLE", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-pendle", title: "What Is Pendle?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-pendle-works", title: "How Pendle Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "pendle-tokenomics", title: "Pendle Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-pendle", title: "How to Buy PENDLE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Crypto Bridge? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Crypto Bridge? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what blockchain bridges are, how they work, the different types, security considerations, and why cross-chain bridges matter for DeFi.",
 };
@@ -17,11 +17,16 @@ export default function BridgePage() {
       readTime="5 min"
       intro="A blockchain bridge is a protocol that enables the transfer of assets and data between different blockchain networks. Since blockchains are isolated by default, bridges solve the interoperability problem by connecting them, allowing users to move tokens from Ethereum to Solana, for example. Bridges are essential infrastructure for a multi-chain ecosystem."
       toc={[
-        { id: "definition", title: "What Is a Bridge?", level: 2 },
-        { id: "how-it-works", title: "How Bridges Work", level: 2 },
-        { id: "types", title: "Types of Bridges", level: 2 },
-        { id: "why-it-matters", title: "Why Bridges Matter", level: 2 },
-        { id: "risks", title: "Security Risks", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-bridge", title: "What Is a Bridge?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-bridges-work", title: "How Bridges Work", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-bridges", title: "Types of Bridges", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-bridges-matter", title: "Why Bridges Matter", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "security-risks", title: "Security Risks", level: 2 }
       ]}
       faqs={[
         {

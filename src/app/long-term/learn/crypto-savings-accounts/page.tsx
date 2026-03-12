@@ -18,12 +18,18 @@ export default function CryptoSavingsAccountsPage() {
       readTime="10 min read"
       intro="Crypto savings accounts and yield-generating products allow you to earn interest on your cryptocurrency holdings, similar to a traditional savings account but with higher yields and different risk profiles. Options range from centralized lending platforms and exchange savings products to decentralized lending protocols and staking. Understanding the source of yield, the risks involved, and the trade-offs between different platforms is essential for earning sustainable returns without exposing your capital to unnecessary danger."
       toc={[
-        { id: "yield-sources", title: "Where Does Crypto Yield Come From?", level: 2 },
-        { id: "cefi-options", title: "CeFi Savings & Lending", level: 2 },
-        { id: "defi-options", title: "DeFi Yield Options", level: 2 },
-        { id: "staking", title: "Staking as a Savings Strategy", level: 2 },
-        { id: "risks", title: "Risks of Crypto Yield", level: 2 },
-        { id: "comparison", title: "Choosing the Right Option", level: 2 },
+        { id: "yield-sources", title: "yield-sources", level: 2 },
+        { id: "where-does-crypto-yield-come-from", title: "Where Does Crypto Yield Come From?", level: 2 },
+        { id: "cefi-options", title: "cefi-options", level: 2 },
+        { id: "cefi-savings-lending", title: "CeFi Savings & Lending", level: 2 },
+        { id: "defi-options", title: "defi-options", level: 2 },
+        { id: "defi-yield-options", title: "DeFi Yield Options", level: 2 },
+        { id: "staking", title: "staking", level: 2 },
+        { id: "staking-as-a-savings-strategy", title: "Staking as a Savings Strategy", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-crypto-yield", title: "Risks of Crypto Yield", level: 2 },
+        { id: "comparison", title: "comparison", level: 2 },
+        { id: "choosing-the-right-option", title: "Choosing the Right Option", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto savings accounts safe?", answer: "They carry more risk than traditional savings. CeFi platforms have counterparty risk (as shown by Celsius, BlockFi failures). DeFi has smart contract risk. Staking is generally safest but still has slashing risk. Diversify and never put all holdings in one yield product." },

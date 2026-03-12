@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Morpho vs Aave (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Morpho vs Aave (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare Morpho and Aave lending protocols. Analysis of Morpho's peer-to-peer optimization, Morpho Blue vaults, rates, and how Morpho improves on Aave's model.",
 };
@@ -17,21 +17,19 @@ export default function MorphoVsAavePage() {
       readTime="9 min read"
       intro="Morpho started as a rate optimization layer on top of Aave and Compound, and has evolved into a standalone lending protocol with Morpho Blue. Morpho's innovation is peer-to-peer matching that improves rates for both lenders and borrowers, and a modular base layer that enables permissionless lending market creation. This comparison examines how Morpho relates to and competes with Aave across their different product lines."
       toc={[
-        { id: "morpho-evolution", title: "Morpho's Evolution", level: 2 },
-        { id: "rate-optimization", title: "Rate Optimization Mechanism", level: 2 },
-        { id: "morpho-blue", title: "Morpho Blue vs Aave", level: 2 },
-        { id: "choosing", title: "Which to Choose", level: 2 },
+        { id: "morpho-evolution", title: "morpho-evolution", level: 2 },
+        { id: "morpho", title: "Morpho", level: 2 }
       ]}
       faqs={[
         { question: "What is Morpho?", answer: "Morpho is a DeFi lending protocol that started as an optimization layer matching lenders and borrowers peer-to-peer on top of Aave and Compound for better rates. It has expanded to Morpho Blue, a permissionless, minimal lending primitive that enables anyone to create lending markets with custom parameters." },
         { question: "How does Morpho improve on Aave's rates?", answer: "Morpho Optimizer matches individual lenders with individual borrowers, allowing them to share the interest rate spread that Aave keeps between supply and borrow rates. Matched users get a better rate than the pool average. Unmatched users fall back to Aave's standard pool rates." },
         { question: "What is Morpho Blue?", answer: "Morpho Blue is a minimal, immutable lending protocol that provides the core logic for creating lending markets. Anyone can deploy a market by specifying the collateral asset, loan asset, oracle, LTV, and interest rate model. MetaMorpho vaults aggregate these markets for passive lenders." },
-        { question: "Is Morpho safe?", answer: "Morpho's smart contracts have been extensively audited. Morpho Blue is intentionally minimal (around 650 lines of code) to reduce attack surface. However, the permissionless nature of market creation means individual markets can have varying risk levels. MetaMorpho vault curators manage risk for passive depositors." },
+        { question: "Is Morpho safe?", answer: "Morpho's smart contracts have been extensively audited. Morpho Blue is intentionally minimal (around 650 lines of code) to reduce attack surface. However, the permissionless nature of market creation means individual markets can have varying risk levels. MetaMorpho vault curators manage risk for passive depositors." }
       ]}
       relatedArticles={[
         { title: "Aave vs Compound", href: "/crypto-loans/compare/aave-vs-compound-lending", category: "Crypto Loans" },
         { title: "Loan Aggregators", href: "/crypto-loans/learn/loan-aggregators", category: "Crypto Loans" },
-        { title: "DeFi Lending Strategies", href: "/defi-lending/learn/defi-lending-strategies", category: "DeFi Lending" },
+        { title: "DeFi Lending Strategies", href: "/defi-lending/learn/defi-lending-strategies", category: "DeFi Lending" }
       ]}
     >
       <h2 id="morpho-evolution">Morpho&apos;s Evolution</h2>

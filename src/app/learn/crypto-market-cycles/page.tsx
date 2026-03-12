@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Understanding Crypto Market Cycles (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Understanding Crypto Market Cycles (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about crypto market cycles: the four phases of accumulation, markup, distribution, and markdown. Understand Bitcoin halving cycles, market psychology, and how to position for each phase.",
 };
@@ -17,10 +17,14 @@ export default function CryptoMarketCyclesPage() {
       readTime="9 min read"
       intro="Crypto markets move in cycles of boom and bust that have historically repeated with notable regularity. Understanding these cycles — their phases, drivers, and psychological patterns — helps investors make more rational decisions and avoid the emotional extremes that lead to buying at peaks and selling at bottoms. While no cycle repeats exactly, recognizing the structural patterns that drive crypto markets provides a significant edge in long-term investment strategy."
       toc={[
-        { id: "four-phases", title: "The Four Phases of a Market Cycle", level: 2 },
-        { id: "bitcoin-halving", title: "Bitcoin Halving and Cycle Timing", level: 2 },
-        { id: "psychology", title: "Market Psychology Through the Cycle", level: 2 },
-        { id: "positioning", title: "Positioning for Each Phase", level: 2 },
+        { id: "four-phases", title: "four-phases", level: 2 },
+        { id: "the-four-phases-of-a-market-cycle", title: "The Four Phases of a Market Cycle", level: 2 },
+        { id: "bitcoin-halving", title: "bitcoin-halving", level: 2 },
+        { id: "bitcoin-halving-and-cycle-timing", title: "Bitcoin Halving and Cycle Timing", level: 2 },
+        { id: "psychology", title: "psychology", level: 2 },
+        { id: "market-psychology-through-the-cycle", title: "Market Psychology Through the Cycle", level: 2 },
+        { id: "positioning", title: "positioning", level: 2 },
+        { id: "positioning-for-each-phase", title: "Positioning for Each Phase", level: 2 }
       ]}
       faqs={[
         {

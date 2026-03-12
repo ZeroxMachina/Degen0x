@@ -7,7 +7,16 @@ export default function HowToBorrowPage() {
   return (
     <LearnPageLayout title="How to Borrow Against Crypto" categoryName="Crypto Loans" categorySlug="crypto-loans" readTime="9 min"
       intro="Borrowing against your crypto allows you to access liquidity without selling your holdings. This step-by-step guide walks you through the process on both centralized (CeFi) and decentralized (DeFi) platforms, from choosing a platform to managing your loan."
-      toc={[{ id: "choosing-platform", title: "Choosing a Platform", level: 2 }, { id: "cefi-steps", title: "CeFi Borrowing Steps", level: 2 }, { id: "defi-steps", title: "DeFi Borrowing Steps", level: 2 }, { id: "management", title: "Managing Your Loan", level: 2 }]}
+      toc={[
+        { id: "choosing-platform", title: "choosing-platform", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 },
+        { id: "cefi-steps", title: "cefi-steps", level: 2 },
+        { id: "cefi-borrowing-steps", title: "CeFi Borrowing Steps", level: 2 },
+        { id: "defi-steps", title: "defi-steps", level: 2 },
+        { id: "defi-borrowing-steps", title: "DeFi Borrowing Steps", level: 2 },
+        { id: "management", title: "management", level: 2 },
+        { id: "managing-your-loan", title: "Managing Your Loan", level: 2 }
+      ]}
       faqs={[
         { question: "How quickly can I get a crypto loan?", answer: "DeFi loans are instant once your wallet is connected and collateral deposited. CeFi loans typically take minutes to hours after account setup (initial KYC verification may take 1-2 days for new accounts)." },
         { question: "What is the minimum amount I can borrow?", answer: "DeFi protocols generally have no minimum (though gas costs make very small loans impractical). CeFi platforms may have minimums ranging from $50 to $500 depending on the platform." },

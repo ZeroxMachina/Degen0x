@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Aptos (APT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Aptos (APT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Aptos (APT), the high-performance Layer 1 blockchain using Move language. Discover how it works, tokenomics, use cases, and how to buy APT.",
 };
@@ -17,12 +17,18 @@ export default function AptosPage() {
       readTime="8 min read"
       intro="Aptos is a high-performance Layer 1 blockchain founded by former Meta (Diem) engineers, using the Move programming language and Block-STM parallel execution engine to deliver fast, safe, and scalable decentralized applications with sub-second finality."
       toc={[
-        { id: "what-is", title: "What Is Aptos?", level: 2 },
-        { id: "how-it-works", title: "How Does Aptos Work?", level: 2 },
-        { id: "tokenomics", title: "APT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy APT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-aptos", title: "What Is Aptos?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-aptos-work", title: "How Does Aptos Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "apt-tokenomics", title: "APT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-apt", title: "How to Buy APT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

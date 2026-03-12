@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Morocco (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Morocco (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchanges accessible in Morocco. Find MAD-friendly platforms with P2P support and trading options for Moroccan users.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesMorocco() {
       readTime="7 min read"
       intro="Morocco has a complex relationship with cryptocurrency. Bank Al-Maghrib and the Ministry of Economy have previously warned against crypto use, but Morocco is also one of Africa's most active crypto markets by P2P trading volume. The country has been exploring regulatory frameworks, and adoption continues to grow among its tech-savvy population. This guide covers the available options for Moroccan traders."
       toc={[
-        { id: "top-exchanges", title: "Available Exchanges", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "MAD Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "available-exchanges", title: "Available Exchanges", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "mad-payment-methods", title: "MAD Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing a Platform", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Morocco?", answer: "Morocco's stance has been restrictive, with authorities issuing warnings against crypto. However, the country has been exploring a regulatory framework, and P2P trading volume remains high. The situation is evolving." },

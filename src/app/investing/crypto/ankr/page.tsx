@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Ankr (ANKR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Ankr (ANKR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Ankr (ANKR), the decentralized Web3 infrastructure provider. Discover how it works, tokenomics, use cases, and how to buy ANKR.",
 };
@@ -17,12 +17,18 @@ export default function AnkrPage() {
       readTime="8 min read"
       intro="Ankr is a decentralized Web3 infrastructure platform that provides node hosting, RPC endpoints, and liquid staking services for blockchain developers and users. By offering distributed, multi-cloud infrastructure, Ankr lowers the barrier to entry for accessing and building on blockchains across multiple networks."
       toc={[
-        { id: "what-is", title: "What Is Ankr?", level: 2 },
-        { id: "how-it-works", title: "How Does Ankr Work?", level: 2 },
-        { id: "tokenomics", title: "ANKR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ANKR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ankr", title: "What Is Ankr?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-ankr-work", title: "How Does Ankr Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ankr-tokenomics", title: "ANKR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ankr", title: "How to Buy ANKR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

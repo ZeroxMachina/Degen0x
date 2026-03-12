@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "$59-$279 depending on model",
   bestFor: "Open-source advocates seeking affordable hardware wallets",
-  affiliateUrl: "https://cryptodegen.com/go/onekey",
+  affiliateUrl: "https://degen0x.com/go/onekey",
   category: "wallets",
 };
 

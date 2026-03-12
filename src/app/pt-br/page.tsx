@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "CryptoDegen em Português — Comparar Exchanges, Wallets e DeFi no Brasil",
+  title: "degen0x em Português — Comparar Exchanges, Wallets e DeFi no Brasil",
   description:
-    "CryptoDegen é seu guia confiável para cripto em português. Compare exchanges, wallets, protocolos DeFi e mais. Avaliações de especialistas, ferramentas interativas e guias completos para o mercado brasileiro.",
-  alternates: { canonical: "https://cryptodegen.com/pt-br" },
+    "degen0x é seu guia confiável para cripto em português. Compare exchanges, wallets, protocolos DeFi e mais. Avaliações de especialistas, ferramentas interativas e guias completos para o mercado brasileiro.",
+  alternates: { canonical: "https://degen0x.com/pt-br" },
   openGraph: {
-    title: "CryptoDegen em Português — Seu Guia de Cripto no Brasil",
+    title: "degen0x em Português — Seu Guia de Cripto no Brasil",
     description: "Compare as melhores exchanges, wallets e protocolos DeFi. Tudo em português, feito para o mercado brasileiro.",
     locale: "pt_BR",
     type: "website",
@@ -285,7 +285,7 @@ export default function PortuguesLandingPage() {
       <section className="section-glass">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-3xl font-bold text-center mb-12" style={{ color: "var(--color-text)" }}>
-            Por Que Confiar na CryptoDegen?
+            Por Que Confiar na degen0x?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -344,7 +344,7 @@ export default function PortuguesLandingPage() {
       {/* Footer disclaimer */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 text-center">
         <p className="text-xs" style={{ color: "var(--color-text-secondary)" }}>
-          A CryptoDegen é um site informativo. Nada neste site constitui assessoria financeira ou fiscal.
+          A degen0x é um site informativo. Nada neste site constitui assessoria financeira ou fiscal.
           Investir em criptomoedas envolve alto risco de perda.{" "}
           <Link href="/privacy" style={{ color: "var(--color-primary)" }}>Política de Privacidade</Link>
           {" · "}

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Golden Cross in Crypto Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Golden Cross in Crypto Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a golden cross is, how the 50-day and 200-day moving average crossover signals bullish trends, and how to trade golden cross patterns in crypto.",
 };
 
@@ -16,10 +16,14 @@ export default function GoldenCrossPage() {
       readTime="6 min read"
       intro="A golden cross is a bullish technical pattern that occurs when a short-term moving average crosses above a long-term moving average, most commonly the 50-day MA crossing above the 200-day MA. This crossover signals that short-term momentum has shifted bullish relative to the long-term trend and is considered one of the most widely recognized buy signals in technical analysis. Institutional investors and algorithmic systems closely monitor golden crosses across crypto and traditional markets."
       toc={[
-        { id: "what-is-golden-cross", title: "What Is a Golden Cross?", level: 2 },
-        { id: "three-stages", title: "Three Stages of Formation", level: 2 },
-        { id: "reliability", title: "Historical Reliability in Crypto", level: 2 },
-        { id: "trading-strategies", title: "Trading Strategies", level: 2 },
+        { id: "what-is-golden-cross", title: "what-is-golden-cross", level: 2 },
+        { id: "what-is-a-golden-cross", title: "What Is a Golden Cross?", level: 2 },
+        { id: "three-stages", title: "three-stages", level: 2 },
+        { id: "three-stages-of-formation", title: "Three Stages of Formation", level: 2 },
+        { id: "reliability", title: "reliability", level: 2 },
+        { id: "historical-reliability-in-crypto", title: "Historical Reliability in Crypto", level: 2 },
+        { id: "trading-strategies", title: "trading-strategies", level: 2 },
+        { id: "trading-strategies", title: "Trading Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Is a golden cross a guaranteed buy signal?", answer: "No. Golden crosses are lagging indicators and can produce false signals, especially in choppy markets. The signal is more reliable when accompanied by increasing volume, positive momentum indicators, and improving fundamentals. Use the golden cross as confirmation within a broader analysis framework rather than a standalone trading trigger." },

@@ -194,16 +194,16 @@ export function OrganizationStructuredData() {
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
     description:
-      "CryptoDegen is the leading crypto comparison and review platform. Compare exchanges, wallets, DeFi protocols, and more.",
+      "degen0x is the leading crypto comparison and review platform. Compare exchanges, wallets, DeFi protocols, and more.",
     sameAs: [
-      "https://twitter.com/cryptodegen",
-      "https://discord.gg/cryptodegen",
-      "https://github.com/cryptodegen",
+      "https://twitter.com/degen0x",
+      "https://discord.gg/degen0x",
+      "https://github.com/degen0x",
     ],
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Service",
-      email: "support@cryptodegen.com",
+      email: "support@degen0x.com",
     },
     address: {
       "@type": "PostalAddress",

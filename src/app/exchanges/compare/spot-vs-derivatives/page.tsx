@@ -14,7 +14,7 @@ export default function SpotVsDerivativesPage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Spot vs Derivatives", href: "#" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Spot vs Derivatives Trading: Which Is Right for You in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Spot vs Derivatives Trading: Which Is Right for You in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Understanding the difference between spot and derivatives trading is essential for every crypto trader. Spot trading involves buying and owning actual cryptocurrency, while derivatives let you speculate on price movements with leverage. Each approach has distinct risk profiles, costs, and strategic applications.</p>
 
@@ -30,20 +30,20 @@ export default function SpotVsDerivativesPage() {
       </div>
 
       <div className="prose-crypto">
-        <h2 className="text-2xl font-bold text-white mb-4">Spot Trading Explained</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Spot Trading Explained</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Spot trading is the straightforward purchase and sale of actual cryptocurrency. When you buy Bitcoin on the spot market, you own real Bitcoin that you can hold in your wallet, transfer, stake, or use in DeFi. There is no leverage, no expiration dates, and no risk of liquidation. Your maximum loss is limited to your investment. Spot trading is ideal for investors with a long-term thesis who want direct exposure to crypto assets. It is simpler, safer, and appropriate for all experience levels.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Derivatives Trading Explained</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Derivatives Trading Explained</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Derivatives include futures, perpetual contracts, and options — financial instruments whose value derives from the underlying crypto asset. Perpetual futures are the most popular derivative in crypto, allowing traders to go long or short with leverage up to 125x. This means $1,000 in margin can control a $125,000 position. The amplified exposure cuts both ways: gains are magnified, but so are losses. Positions can be liquidated if the market moves against you beyond your margin. Derivatives require understanding of concepts like funding rates, margin, maintenance margin, and liquidation prices. They are designed for experienced traders.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">When to Use Each</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">When to Use Each</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">Use spot trading for long-term investment positions, dollar-cost averaging, portfolio building, and situations where you want actual ownership of crypto assets. Spot is appropriate for all experience levels and carries no risk of liquidation.</p>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Use derivatives for short-term trading, hedging existing positions, capital-efficient speculation, and short selling during bear markets. Derivatives are appropriate only for experienced traders who understand leverage, margin management, and the risks of liquidation. The majority of leveraged traders lose money over time.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-white">Choose spot trading if</strong> you are investing for the medium to long term, are a beginner, or want actual ownership of crypto assets with no liquidation risk.</p>
-          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-white">Choose derivatives if</strong> you are an experienced trader who wants leverage, short selling, hedging, or capital-efficient speculation. Always use proper risk management and never risk more than you can afford to lose.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-[var(--color-text)]">Choose spot trading if</strong> you are investing for the medium to long term, are a beginner, or want actual ownership of crypto assets with no liquidation risk.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose derivatives if</strong> you are an experienced trader who wants leverage, short selling, hedging, or capital-efficient speculation. Always use proper risk management and never risk more than you can afford to lose.</p>
         </div>
       </div>
 

@@ -16,10 +16,14 @@ export default function HowNftsWorkPage() {
       readTime="10 min"
       intro="Understanding the technical foundations of NFTs provides critical context for collectors, creators, and investors. From blockchain mechanics to metadata standards and smart contract interactions, this guide explains the technology powering the NFT ecosystem."
       toc={[
-        { id: "section-1", title: "Blockchain Foundations", level: 2 },
-        { id: "section-2", title: "Token Standards and Smart Contracts", level: 2 },
-        { id: "section-3", title: "Metadata and Storage", level: 2 },
-        { id: "section-4", title: "Marketplace Mechanics", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "blockchain-foundations", title: "Blockchain Foundations", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "token-standards-and-smart-contracts", title: "Token Standards and Smart Contracts", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "metadata-and-storage", title: "Metadata and Storage", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "marketplace-mechanics", title: "Marketplace Mechanics", level: 2 }
       ]}
       faqs={[
         { question: "What should beginners know about how NFTs work?", answer: "Start by understanding the basics covered in this guide. Focus on fundamental concepts before exploring advanced strategies. The space evolves quickly, so staying informed through community engagement and continued learning is essential." },

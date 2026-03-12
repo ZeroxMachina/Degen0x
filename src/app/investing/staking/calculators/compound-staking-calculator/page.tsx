@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState } from "react";
@@ -89,7 +91,7 @@ export default function CompoundStakingCalculatorPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Compound Staking Calculator</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Compound Staking Calculator</h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">
         See how compounding supercharges your staking returns over time. Compare daily, weekly, and
         monthly compounding frequencies and add regular contributions to model your staking growth.
@@ -98,18 +100,18 @@ export default function CompoundStakingCalculatorPage() {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-white mb-1">
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
               Initial Stake ($)
             </label>
             <input
               type="number"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-white mb-1">
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
               Gross APY (%)
             </label>
             <input
@@ -117,11 +119,11 @@ export default function CompoundStakingCalculatorPage() {
               value={apy}
               onChange={(e) => setApy(e.target.value)}
               step="0.1"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-white mb-1">
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
               Platform Fee (% of rewards)
             </label>
             <input
@@ -129,28 +131,28 @@ export default function CompoundStakingCalculatorPage() {
               value={fee}
               onChange={(e) => setFee(e.target.value)}
               step="1"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-white mb-1">
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
               Duration (months)
             </label>
             <input
               type="number"
               value={duration}
               onChange={(e) => setDuration(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-white mb-1">
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
               Compounding Frequency
             </label>
             <select
               value={compounding}
               onChange={(e) => setCompounding(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             >
               <option value="daily">Daily (stETH rebasing)</option>
               <option value="weekly">Weekly</option>
@@ -159,32 +161,32 @@ export default function CompoundStakingCalculatorPage() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium text-white mb-1">
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
               Monthly Contribution ($) <span className="text-[var(--color-text-secondary)] font-normal">- optional</span>
             </label>
             <input
               type="number"
               value={monthlyAdd}
               onChange={(e) => setMonthlyAdd(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
         </div>
 
         <div className="space-y-6">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h2 className="text-lg font-semibold text-white mb-4">Compound Results</h2>
+            <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Compound Results</h2>
             {hasValues ? (
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-sm text-[var(--color-text-secondary)]">Total Contributions</span>
-                  <span className="text-sm text-white">
+                  <span className="text-sm text-[var(--color-text)]">
                     ${totalContributions.toLocaleString(undefined, { maximumFractionDigits: 2 })}
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-sm text-[var(--color-text-secondary)]">Final Value</span>
-                  <span className="text-sm font-semibold text-white">
+                  <span className="text-sm font-semibold text-[var(--color-text)]">
                     ${finalValue.toLocaleString(undefined, { maximumFractionDigits: 2 })}
                   </span>
                 </div>
@@ -196,7 +198,7 @@ export default function CompoundStakingCalculatorPage() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-sm text-[var(--color-text-secondary)]">Effective APY (after fees)</span>
-                  <span className="text-sm text-white">{(netRate * 100).toFixed(2)}%</span>
+                  <span className="text-sm text-[var(--color-text)]">{(netRate * 100).toFixed(2)}%</span>
                 </div>
                 <div className="border-t border-[var(--color-border)] my-2" />
                 <div className="flex justify-between">
@@ -222,7 +224,7 @@ export default function CompoundStakingCalculatorPage() {
           {/* Yearly Breakdown */}
           {hasValues && yearlyBreakdown.length > 0 && (
             <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-              <h2 className="text-lg font-semibold text-white mb-4">Year-by-Year Growth</h2>
+              <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Year-by-Year Growth</h2>
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
@@ -235,8 +237,8 @@ export default function CompoundStakingCalculatorPage() {
                   <tbody>
                     {yearlyBreakdown.map((row) => (
                       <tr key={row.year} className="border-t border-[var(--color-border)]/50">
-                        <td className="py-2 text-sm text-white">{row.year}</td>
-                        <td className="py-2 text-sm text-white text-right">
+                        <td className="py-2 text-sm text-[var(--color-text)]">{row.year}</td>
+                        <td className="py-2 text-sm text-[var(--color-text)] text-right">
                           ${row.value.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                         </td>
                         <td className="py-2 text-sm text-[var(--color-success)] text-right">
@@ -254,7 +256,7 @@ export default function CompoundStakingCalculatorPage() {
 
       {/* Educational Content */}
       <div className="mt-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">The Power of Compounding in Staking</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">The Power of Compounding in Staking</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Compounding in staking occurs when your earned rewards are automatically restaked, allowing
           you to earn rewards on your rewards. Over long time periods, compounding can significantly

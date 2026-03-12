@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Central Bank Digital Currencies (CBDCs) Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Central Bank Digital Currencies (CBDCs) Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about CBDCs: how central bank digital currencies work, the difference from cryptocurrency and stablecoins, global CBDC projects, benefits, concerns, and implications for the crypto industry.",
 };
@@ -17,11 +17,16 @@ export default function CbdcExplainedPage() {
       readTime="9 min read"
       intro="Central Bank Digital Currencies (CBDCs) are digital forms of a country's fiat currency, issued and backed by the central bank. Unlike cryptocurrencies, which are decentralized and typically operate outside government control, CBDCs are centralized digital currencies that give governments new tools for monetary policy, financial inclusion, and payment system efficiency. With over 130 countries exploring or piloting CBDCs, representing more than 98% of global GDP, these digital currencies will likely become a significant part of the global monetary system."
       toc={[
+        { id: "what-are-cbdcs", title: "what-are-cbdcs", level: 2 },
         { id: "what-are-cbdcs", title: "What Are CBDCs?", level: 2 },
-        { id: "types", title: "Types of CBDCs", level: 2 },
-        { id: "global-projects", title: "Global CBDC Projects", level: 2 },
-        { id: "benefits-concerns", title: "Benefits and Concerns", level: 2 },
-        { id: "crypto-implications", title: "Implications for Cryptocurrency", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-cbdcs", title: "Types of CBDCs", level: 2 },
+        { id: "global-projects", title: "global-projects", level: 2 },
+        { id: "global-cbdc-projects", title: "Global CBDC Projects", level: 2 },
+        { id: "benefits-concerns", title: "benefits-concerns", level: 2 },
+        { id: "benefits-and-concerns", title: "Benefits and Concerns", level: 2 },
+        { id: "crypto-implications", title: "crypto-implications", level: 2 },
+        { id: "implications-for-cryptocurrency", title: "Implications for Cryptocurrency", level: 2 }
       ]}
       faqs={[
         {

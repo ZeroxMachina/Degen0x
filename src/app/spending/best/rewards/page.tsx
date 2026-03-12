@@ -109,7 +109,7 @@ export default function BestRewardsCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Rewards Cards ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -125,7 +125,7 @@ export default function BestRewardsCardsPage() {
           purchase rewards, staking bonuses, subscription rebates, and promotional offers. We evaluated
           the total reward value of each card to determine which offers the best overall earning potential.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Beyond Simple Cashback</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Beyond Simple Cashback</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           The most valuable crypto rewards cards go far beyond a simple cashback percentage. Consider the
           Crypto.com Visa: the 5% cashback alone on $3,000 monthly spending is $150/month. Add Spotify ($14.99),
@@ -142,11 +142,11 @@ export default function BestRewardsCardsPage() {
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-center gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold">
                   {index + 1}
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white">{card.name}</h3>
+                  <h3 className="text-lg font-semibold text-[var(--color-text)]">{card.name}</h3>
                   <div className="text-sm text-[var(--color-accent)]">{card.rating}/5</div>
                 </div>
               </div>
@@ -200,16 +200,16 @@ export default function BestRewardsCardsPage() {
 
       {/* Rewards Value Comparison */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Annual Rewards Comparison (on $3,000/mo spending)</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Annual Rewards Comparison (on $3,000/mo spending)</h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-left">
             <thead>
               <tr className="border-b border-[var(--color-border)]">
-                <th className="py-3 px-4 text-white font-semibold">Card</th>
-                <th className="py-3 px-4 text-white font-semibold">Cashback/Year</th>
-                <th className="py-3 px-4 text-white font-semibold">Extra Perks/Year</th>
-                <th className="py-3 px-4 text-white font-semibold">Cost/Year</th>
-                <th className="py-3 px-4 text-white font-semibold">Net Value/Year</th>
+                <th className="py-3 px-4 text-[var(--color-text)] font-semibold">Card</th>
+                <th className="py-3 px-4 text-[var(--color-text)] font-semibold">Cashback/Year</th>
+                <th className="py-3 px-4 text-[var(--color-text)] font-semibold">Extra Perks/Year</th>
+                <th className="py-3 px-4 text-[var(--color-text)] font-semibold">Cost/Year</th>
+                <th className="py-3 px-4 text-[var(--color-text)] font-semibold">Net Value/Year</th>
               </tr>
             </thead>
             <tbody className="text-[var(--color-text-secondary)]">
@@ -221,7 +221,7 @@ export default function BestRewardsCardsPage() {
                 { name: "Wirex (8%)", cashback: "$2,880", perks: "$0", cost: "$180", net: "$2,700" },
               ].map((row) => (
                 <tr key={row.name} className="border-b border-[var(--color-border)]/50">
-                  <td className="py-3 px-4 text-white font-medium">{row.name}</td>
+                  <td className="py-3 px-4 text-[var(--color-text)] font-medium">{row.name}</td>
                   <td className="py-3 px-4">{row.cashback}</td>
                   <td className="py-3 px-4">{row.perks}</td>
                   <td className="py-3 px-4">{row.cost}</td>

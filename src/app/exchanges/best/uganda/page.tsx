@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Uganda (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Uganda (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Uganda. Find UGX-friendly platforms with Mobile Money support, P2P trading, and competitive fees.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesUganda() {
       readTime="7 min read"
       intro="Uganda has an active and growing cryptocurrency community, particularly among its young population. The Bank of Uganda has not formally regulated crypto exchanges but has issued cautions about the risks involved. Mobile money penetration, led by MTN Mobile Money, provides convenient on-ramps for crypto purchases. This guide covers the best platforms for Ugandan crypto traders."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Uganda", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "UGX Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-uganda", title: "Top Exchanges for Uganda", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "ugx-payment-methods", title: "UGX Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Uganda?", answer: "Crypto is not explicitly banned in Uganda. The Bank of Uganda has warned about risks but has not prohibited individual trading. The regulatory framework is still developing." },

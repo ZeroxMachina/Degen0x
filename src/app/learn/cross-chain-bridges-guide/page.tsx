@@ -16,14 +16,14 @@ export default function CrossChainBridges() {
       readTime="13 min"
       intro="In a multi-chain world, blockchain bridges are essential infrastructure enabling assets to move between networks. Whether transferring tokens from Ethereum to Solana, or accessing liquidity across different L2s, bridges unlock capital efficiency and user experience. Understand how bridges work, the security trade-offs, major bridge protocols like Wormhole and LayerZero, and best practices for safe cross-chain interactions in 2026."
       toc={[
-        "What Are Blockchain Bridges?",
-        "Bridge Architecture: How Assets Cross Chains",
-        "Bridge Types: Custodial vs Non-Custodial",
-        "Major Bridge Protocols: Wormhole, LayerZero, Stargate",
-        "Bridge Security & Risk Considerations",
-        "Best Practices for Safe Bridging",
-        "The Risks: Bridge Hacks and Failures",
-        "Future of Cross-Chain Communication",
+        { id: "what-are-blockchain-bridges", title: "What Are Blockchain Bridges?", level: 2 },
+        { id: "bridge-architecture-how-assets-cross-chains", title: "Bridge Architecture: How Assets Cross Chains", level: 2 },
+        { id: "bridge-types-custodial-vs-non-custodial", title: "Bridge Types: Custodial vs Non-Custodial", level: 2 },
+        { id: "major-bridge-protocols-wormhole-layerzero-stargate", title: "Major Bridge Protocols: Wormhole, LayerZero, Stargate", level: 2 },
+        { id: "bridge-security-risk-considerations", title: "Bridge Security & Risk Considerations", level: 2 },
+        { id: "best-practices-for-safe-bridging", title: "Best Practices for Safe Bridging", level: 2 },
+        { id: "the-risks-bridge-hacks-and-failures", title: "The Risks: Bridge Hacks and Failures", level: 2 },
+        { id: "future-of-cross-chain-communication", title: "Future of Cross-Chain Communication", level: 2 }
       ]}
       faqs={[
         {

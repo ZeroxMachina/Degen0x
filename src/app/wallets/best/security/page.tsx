@@ -39,7 +39,7 @@ export default function BestSecurityWalletsPage() {
       />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Most Secure Crypto Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Most Secure Crypto Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
           Security should be the top priority when choosing a crypto wallet. We analyzed hardware security,
           open-source transparency, multi-sig capabilities, and transaction safety features to find the most
@@ -49,18 +49,18 @@ export default function BestSecurityWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">Quick Verdict</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Quick Verdict</h2>
         <p className="text-[var(--color-text-secondary)]">
-          The <strong className="text-white">Ledger Nano X</strong> offers the best hardware security with a certified
-          Secure Element chip. The <strong className="text-white">Trezor Model T</strong> provides the best open-source
-          transparency. <strong className="text-white">Safe</strong> is the gold standard for organizational security
-          with multi-sig. <strong className="text-white">Rabby</strong> is the safest hot wallet for DeFi users with
+          The <strong className="text-[var(--color-text)]">Ledger Nano X</strong> offers the best hardware security with a certified
+          Secure Element chip. The <strong className="text-[var(--color-text)]">Trezor Model T</strong> provides the best open-source
+          transparency. <strong className="text-[var(--color-text)]">Safe</strong> is the gold standard for organizational security
+          with multi-sig. <strong className="text-[var(--color-text)]">Rabby</strong> is the safest hot wallet for DeFi users with
           its pre-transaction simulation.
         </p>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Most Secure Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Most Secure Wallets, Ranked</h2>
         <div className="space-y-6">
           {securityWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -77,18 +77,18 @@ export default function BestSecurityWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/compare/ledger-vs-trezor" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Ledger vs Trezor</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Ledger vs Trezor</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Hardware wallet showdown</p>
           </Link>
           <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Security Best Practices</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Security Best Practices</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Protect your crypto assets</p>
           </Link>
           <Link href="/wallets/learn/multi-sig-wallets" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Multi-Sig Explained</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Multi-Sig Explained</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Advanced wallet security</p>
           </Link>
         </div>

@@ -25,13 +25,19 @@ export default function CryptoRegulationAustraliaPage() {
       readTime="14 min"
       intro="Australia is developing a comprehensive cryptocurrency regulatory framework, with ASIC (Australian Securities and Investments Commission) and AUSTRAC (Australian Transaction Reports and Analysis Centre) as the primary regulators. The government has undertaken a token mapping exercise to classify different types of crypto assets and determine appropriate regulatory treatment. While Australia currently regulates crypto through existing financial services laws, a dedicated digital asset framework is being developed. This guide covers the current regulatory landscape and upcoming changes."
       toc={[
-        { id: "regulatory-framework", title: "Australia's Regulatory Framework", level: 2 },
-        { id: "asic-role", title: "ASIC's Role in Crypto Regulation", level: 2 },
-        { id: "austrac-aml", title: "AUSTRAC and AML/CTF Requirements", level: 2 },
-        { id: "token-mapping", title: "Token Mapping and Classification", level: 2 },
-        { id: "exchange-licensing", title: "Exchange Licensing and Compliance", level: 2 },
+        { id: "regulatory-framework", title: "regulatory-framework", level: 2 },
+        { id: "australia", title: "Australia", level: 2 },
+        { id: "s-role-in-crypto-regulation", title: "s Role in Crypto Regulation", level: 2 },
+        { id: "austrac-aml", title: "austrac-aml", level: 2 },
+        { id: "austrac-and-aml-ctf-requirements", title: "AUSTRAC and AML/CTF Requirements", level: 2 },
+        { id: "token-mapping", title: "token-mapping", level: 2 },
+        { id: "token-mapping-and-classification", title: "Token Mapping and Classification", level: 2 },
+        { id: "exchange-licensing", title: "exchange-licensing", level: 2 },
+        { id: "exchange-licensing-and-compliance", title: "Exchange Licensing and Compliance", level: 2 },
+        { id: "consumer-protection", title: "consumer-protection", level: 2 },
         { id: "consumer-protection", title: "Consumer Protection", level: 2 },
-        { id: "future-framework", title: "Future Regulatory Framework", level: 2 },
+        { id: "future-framework", title: "future-framework", level: 2 },
+        { id: "future-regulatory-framework", title: "Future Regulatory Framework", level: 2 }
       ]}
       faqs={[
         {
@@ -58,12 +64,12 @@ export default function CryptoRegulationAustraliaPage() {
           question: "Can Australian investors access crypto ETFs?",
           answer:
             "Yes. Several crypto ETFs are available on the ASX (Australian Securities Exchange) and CBOE Australia, including Bitcoin and Ethereum spot ETFs. These are regulated as managed investment schemes under ASIC oversight. They provide Australian investors with regulated crypto exposure through traditional brokerage accounts, including self-managed super funds (SMSFs).",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "Crypto Taxes in Australia", href: "/taxes/learn/crypto-taxes-australia", category: "Taxes" },
         { title: "How to Buy Crypto in Australia", href: "/exchanges/learn/how-to-buy-crypto-australia", category: "Exchanges" },
-        { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation", category: "Learn" },
+        { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation", category: "Learn" }
       ]}
     >
       <h2 id="regulatory-framework">Australia&apos;s Regulatory Framework</h2>

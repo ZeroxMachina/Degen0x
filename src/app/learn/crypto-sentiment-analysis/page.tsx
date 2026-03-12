@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Sentiment Analysis: Tools and Techniques (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Sentiment Analysis: Tools and Techniques (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to analyze crypto market sentiment: social media monitoring, the Fear and Greed Index, funding rates, Google Trends, NLP tools, and how to use sentiment as a contrarian indicator.",
 };
@@ -17,10 +17,14 @@ export default function CryptoSentimentAnalysisPage() {
       readTime="8 min read"
       intro="Sentiment analysis measures the collective mood and emotions of market participants to gauge whether the market is bullish, bearish, or neutral. In crypto, where markets are heavily influenced by narrative, social media activity, and collective psychology, sentiment analysis provides a crucial edge. By systematically tracking and quantifying market sentiment, you can identify extremes of fear and greed that historically correspond to major market turning points and make more informed investment decisions."
       toc={[
-        { id: "why-sentiment", title: "Why Sentiment Matters in Crypto", level: 2 },
-        { id: "data-sources", title: "Sentiment Data Sources", level: 2 },
-        { id: "tools", title: "Sentiment Analysis Tools", level: 2 },
-        { id: "contrarian", title: "Using Sentiment as a Contrarian Indicator", level: 2 },
+        { id: "why-sentiment", title: "why-sentiment", level: 2 },
+        { id: "why-sentiment-matters-in-crypto", title: "Why Sentiment Matters in Crypto", level: 2 },
+        { id: "data-sources", title: "data-sources", level: 2 },
+        { id: "sentiment-data-sources", title: "Sentiment Data Sources", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "sentiment-analysis-tools", title: "Sentiment Analysis Tools", level: 2 },
+        { id: "contrarian", title: "contrarian", level: 2 },
+        { id: "using-sentiment-as-a-contrarian-indicator", title: "Using Sentiment as a Contrarian Indicator", level: 2 }
       ]}
       faqs={[
         {

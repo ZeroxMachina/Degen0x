@@ -7,7 +7,18 @@ export const metadata: Metadata = { title: `How to Transfer Crypto Between Excha
 export default function Page() {
   return (
     <LearnPageLayout title="How to Transfer Crypto Between Exchanges" categoryName="Crypto Exchanges" categorySlug="exchanges" readTime="8 min" intro="Transferring crypto between exchanges is a fundamental skill that requires attention to detail. Sending to the wrong address or selecting the wrong network can result in permanent loss of funds. This guide walks you through the process step by step."
-      toc={[{id:"before-transfer",title:"Before You Transfer",level:2},{id:"step-by-step",title:"Step-by-Step Transfer Process",level:2},{id:"network-selection",title:"Choosing the Right Network",level:2},{id:"fees-times",title:"Fees and Confirmation Times",level:2},{id:"common-mistakes",title:"Common Mistakes to Avoid",level:2}]}
+      toc={[
+        { id: "before-transfer", title: "before-transfer", level: 2 },
+        { id: "before-you-transfer", title: "Before You Transfer", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-transfer-process", title: "Step-by-Step Transfer Process", level: 2 },
+        { id: "network-selection", title: "network-selection", level: 2 },
+        { id: "choosing-the-right-network", title: "Choosing the Right Network", level: 2 },
+        { id: "fees-times", title: "fees-times", level: 2 },
+        { id: "fees-and-confirmation-times", title: "Fees and Confirmation Times", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-mistakes-to-avoid", title: "Common Mistakes to Avoid", level: 2 }
+      ]}
       faqs={[{question:"How long do transfers take?",answer:"It depends on the blockchain. Bitcoin transfers typically take 10-60 minutes (1-6 confirmations). Ethereum takes 5-15 minutes. Solana transfers are nearly instant. Exchange processing adds additional time."},{question:"Can I send Bitcoin to an Ethereum address?",answer:"No. Sending crypto to an address on the wrong blockchain will result in permanent loss of funds. Always verify both the token and the network match between sending and receiving exchanges."},{question:"Why does the receiving exchange require multiple confirmations?",answer:"Confirmations add security by making it increasingly difficult to reverse transactions. More confirmations mean more certainty that the transaction is permanent. Exchanges require more confirmations for larger amounts."}]}
       relatedArticles={[{title:"Exchange vs Wallet",href:"/exchanges/learn/exchange-vs-wallet",category:"Exchanges"},{title:"Exchange Fees Explained",href:"/exchanges/learn/exchange-fees-explained",category:"Exchanges"},{title:"What Are Trading Pairs",href:"/exchanges/learn/what-are-trading-pairs",category:"Exchanges"}]}
     >

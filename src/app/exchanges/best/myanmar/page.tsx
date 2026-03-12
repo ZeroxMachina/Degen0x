@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Myanmar (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Myanmar (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchanges accessible in Myanmar. Find MMK-friendly platforms with P2P trading support and important security considerations.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesMyanmar() {
       readTime="7 min read"
       intro="Myanmar's crypto landscape has evolved amid political and economic challenges. Cryptocurrency has gained attention as an alternative financial tool, particularly given banking disruptions. The Central Bank of Myanmar has issued warnings about crypto, but usage has grown through P2P channels. This guide provides information about available options for Myanmar users interested in cryptocurrency."
       toc={[
+        { id: "available-platforms", title: "available-platforms", level: 2 },
         { id: "available-platforms", title: "Available Platforms", level: 2 },
-        { id: "regulation", title: "Regulatory Landscape", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulatory-landscape", title: "Regulatory Landscape", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing a Platform", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Myanmar?", answer: "The Central Bank of Myanmar has declared crypto unauthorized and warned against its use. However, enforcement has been inconsistent, and P2P crypto usage has continued to grow. Users should be aware of the legal risks." },

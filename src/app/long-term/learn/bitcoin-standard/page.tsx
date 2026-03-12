@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Bitcoin Standard: Why Bitcoin as a Store of Value (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The Bitcoin Standard: Why Bitcoin as a Store of Value (${CURRENT_YEAR}) | degen0x`,
   description: "Understanding Bitcoin as a store of value. The Bitcoin Standard thesis, monetary properties, scarcity mechanics, and why Bitcoiners see it as digital gold.",
 };
 
@@ -12,20 +12,18 @@ export default function BitcoinStandardPage() {
     <LearnPageLayout title="The Bitcoin Standard: Why Bitcoin as a Store of Value" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="9 min read"
       intro="The Bitcoin Standard thesis argues that Bitcoin's fixed supply, decentralization, and censorship resistance make it the hardest money ever created, positioning it to serve as a global store of value and eventually a reserve asset. This thesis draws on Austrian economics, monetary history, and network theory to explain why a purely digital asset with no intrinsic use could become the foundation of a new monetary system."
       toc={[
-        { id: "monetary-properties", title: "Bitcoin's Monetary Properties", level: 2 },
-        { id: "scarcity", title: "Digital Scarcity and Halvings", level: 2 },
-        { id: "store-of-value", title: "The Store of Value Argument", level: 2 },
-        { id: "risks", title: "Risks to the Thesis", level: 2 },
+        { id: "monetary-properties", title: "monetary-properties", level: 2 },
+        { id: "bitcoin", title: "Bitcoin", level: 2 }
       ]}
       faqs={[
         { question: "What is the Bitcoin Standard?", answer: "The Bitcoin Standard is both a book by Saifedean Ammous and an investment thesis. It argues that Bitcoin's monetary properties (fixed supply, divisibility, portability, durability, verifiability, and decentralization) make it superior to gold and fiat currency as a store of value. Proponents believe Bitcoin will absorb significant value from gold, bonds, and real estate over time." },
         { question: "Why is Bitcoin compared to gold?", answer: "Bitcoin shares key properties with gold: scarcity (limited supply), durability (the network has operated since 2009 without downtime), and resistance to confiscation. However, Bitcoin improves on gold in portability (can be sent globally in minutes), divisibility (down to 0.00000001 BTC), and verifiability (anyone can verify the total supply). This is why Bitcoin is often called digital gold." },
-        { question: "Can Bitcoin really become a reserve asset?", answer: "It is already happening gradually. Companies like MicroStrategy hold Bitcoin on their balance sheets. Nations like El Salvador have adopted Bitcoin as legal tender. Bitcoin ETFs have attracted billions in institutional capital. Whether Bitcoin becomes a global reserve asset alongside or replacing gold depends on continued adoption, regulatory acceptance, and the network maintaining its security and decentralization." },
+        { question: "Can Bitcoin really become a reserve asset?", answer: "It is already happening gradually. Companies like MicroStrategy hold Bitcoin on their balance sheets. Nations like El Salvador have adopted Bitcoin as legal tender. Bitcoin ETFs have attracted billions in institutional capital. Whether Bitcoin becomes a global reserve asset alongside or replacing gold depends on continued adoption, regulatory acceptance, and the network maintaining its security and decentralization." }
       ]}
       relatedArticles={[
         { title: "The Ethereum Investment Thesis", href: "/long-term/learn/ethereum-investment-thesis", category: "Long-Term" },
         { title: "Bitcoin ETF Guide", href: "/long-term/learn/bitcoin-etf-guide", category: "Long-Term" },
-        { title: "Stacking Sats", href: "/long-term/learn/stacking-sats", category: "Long-Term" },
+        { title: "Stacking Sats", href: "/long-term/learn/stacking-sats", category: "Long-Term" }
       ]}
     >
       <h2 id="monetary-properties">Bitcoin&apos;s Monetary Properties</h2>

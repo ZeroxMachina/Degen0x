@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Engulfing Pattern in Crypto Trading (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Engulfing Pattern in Crypto Trading (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what bullish and bearish engulfing patterns are, how to identify them on crypto charts, confirmation signals, and trading strategies for engulfing candles.",
 };
 
@@ -16,10 +16,14 @@ export default function EngulfingPage() {
       readTime="6 min read"
       intro="An engulfing pattern is a two-candle reversal formation where the second candle completely engulfs the body of the first candle. A bullish engulfing occurs when a large green candle fully engulfs the prior red candle at the bottom of a downtrend. A bearish engulfing occurs when a large red candle engulfs the prior green candle at the top of an uptrend. Engulfing patterns are among the most powerful and reliable candlestick reversal signals in crypto trading."
       toc={[
-        { id: "what-is-engulfing", title: "What Is an Engulfing Pattern?", level: 2 },
+        { id: "what-is-engulfing", title: "what-is-engulfing", level: 2 },
+        { id: "what-is-an-engulfing-pattern", title: "What Is an Engulfing Pattern?", level: 2 },
+        { id: "bullish-engulfing", title: "bullish-engulfing", level: 2 },
         { id: "bullish-engulfing", title: "Bullish Engulfing", level: 2 },
+        { id: "bearish-engulfing", title: "bearish-engulfing", level: 2 },
         { id: "bearish-engulfing", title: "Bearish Engulfing", level: 2 },
-        { id: "trading", title: "Trading Engulfing Patterns", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-engulfing-patterns", title: "Trading Engulfing Patterns", level: 2 }
       ]}
       faqs={[
         { question: "Do engulfing patterns need to engulf the shadows too?", answer: "The traditional definition requires only the body of the second candle to engulf the body of the first. If the second candle also engulfs the shadows of the first, this is an even stronger signal. The key is that the open and close of the engulfing candle exceed the open and close of the prior candle." },

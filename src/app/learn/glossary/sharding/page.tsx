@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Sharding? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Sharding? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what sharding is, how it improves blockchain scalability, and its role in Ethereum's long-term scaling roadmap.",
 };
@@ -17,11 +17,16 @@ export default function ShardingPage() {
       readTime="5 min"
       intro="Sharding is a database scaling technique adapted for blockchains that splits the network into smaller partitions (shards), each capable of processing transactions independently. Instead of every node processing every transaction, nodes only need to handle the data for their assigned shard. This parallel processing dramatically increases throughput while maintaining decentralization. Sharding is a key component of Ethereum's long-term scaling strategy."
       toc={[
-        { id: "definition", title: "What Is Sharding?", level: 2 },
-        { id: "how-it-works", title: "How Sharding Works", level: 2 },
-        { id: "danksharding", title: "Danksharding and Ethereum", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-sharding", title: "What Is Sharding?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-sharding-works", title: "How Sharding Works", level: 2 },
+        { id: "danksharding", title: "danksharding", level: 2 },
+        { id: "danksharding-and-ethereum", title: "Danksharding and Ethereum", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
         { id: "challenges", title: "Challenges", level: 2 },
-        { id: "why-it-matters", title: "Why Sharding Matters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-sharding-matters", title: "Why Sharding Matters", level: 2 }
       ]}
       faqs={[
         {

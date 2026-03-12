@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Breakout Trading Strategies (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Breakout Trading Strategies (${CURRENT_YEAR}) | degen0x`,
   description:
     "Master breakout trading in crypto. Learn to identify, confirm, and trade breakouts from consolidation patterns for maximum profit potential.",
 };
@@ -17,10 +17,14 @@ export default function BreakoutTradingPage() {
       readTime="9 min read"
       intro="Breakout trading is one of the most popular and potentially profitable strategies in crypto markets. It involves entering a position when price decisively moves beyond a defined support or resistance level, signaling the start of a new trend or acceleration of an existing one. This guide covers how to identify breakout setups, confirm genuine breakouts, and manage trades for optimal results."
       toc={[
-        { id: "what-is-breakout", title: "What Is Breakout Trading?", level: 2 },
-        { id: "breakout-patterns", title: "Key Breakout Patterns", level: 2 },
-        { id: "confirming-breakouts", title: "Confirming Genuine Breakouts", level: 2 },
-        { id: "trading-breakouts", title: "Trading and Managing Breakouts", level: 2 },
+        { id: "what-is-breakout", title: "what-is-breakout", level: 2 },
+        { id: "what-is-breakout-trading", title: "What Is Breakout Trading?", level: 2 },
+        { id: "breakout-patterns", title: "breakout-patterns", level: 2 },
+        { id: "key-breakout-patterns", title: "Key Breakout Patterns", level: 2 },
+        { id: "confirming-breakouts", title: "confirming-breakouts", level: 2 },
+        { id: "confirming-genuine-breakouts", title: "Confirming Genuine Breakouts", level: 2 },
+        { id: "trading-breakouts", title: "trading-breakouts", level: 2 },
+        { id: "trading-and-managing-breakouts", title: "Trading and Managing Breakouts", level: 2 }
       ]}
       faqs={[
         { question: "How do you avoid false breakouts?", answer: "Confirm breakouts with above-average volume, wait for a candle close beyond the level (not just a wick), use multiple timeframe confirmation, and consider waiting for a retest of the breakout level before entering. False breakouts are common, so patience and confirmation are essential." },

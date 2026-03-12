@@ -110,7 +110,7 @@ export default function TreasuryToolsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best DAO Treasury Tools ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -128,16 +128,16 @@ export default function TreasuryToolsPage() {
           and ease of use to help you choose the right stack.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          Our top pick is <strong className="text-white">Safe (Gnosis Safe)</strong>, the most widely adopted
+          Our top pick is <strong className="text-[var(--color-text)]">Safe (Gnosis Safe)</strong>, the most widely adopted
           multi-signature wallet in crypto, securing over $100 billion in assets. For teams that need more
           operational features like automated payments and treasury dashboards,{" "}
-          <strong className="text-white">Parcel</strong> and <strong className="text-white">Utopia Labs</strong>{" "}
+          <strong className="text-[var(--color-text)]">Parcel</strong> and <strong className="text-[var(--color-text)]">Utopia Labs</strong>{" "}
           build valuable functionality on top of Safe&apos;s battle-tested infrastructure.
         </p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -151,7 +151,7 @@ export default function TreasuryToolsPage() {
       </section>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">How We Evaluated Treasury Tools</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Evaluated Treasury Tools</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           We tested each platform by creating multi-sig wallets, executing test transactions, setting up
           payment flows, and evaluating the overall user experience from both a signer and administrator
@@ -167,7 +167,7 @@ export default function TreasuryToolsPage() {
             { title: "Ecosystem (10%)", desc: "Third-party app integrations, community size, developer tooling, and accounting platform compatibility." },
           ].map((item) => (
             <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-              <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+              <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
             </div>
           ))}

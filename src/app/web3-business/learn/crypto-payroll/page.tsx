@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Payroll Guide (${CURRENT_YEAR}) - Pay Your Team in Crypto | CryptoDegen`,
+  title: `Crypto Payroll Guide (${CURRENT_YEAR}) - Pay Your Team in Crypto | degen0x`,
   description: `Learn how to set up crypto payroll for your Web3 team. Payment platforms, tax compliance, contractor vs. employee considerations, and multi-chain disbursement.`,
 };
 
@@ -16,10 +16,14 @@ export default function CryptoPayrollPage() {
       readTime="9 min"
       intro="Paying your team in cryptocurrency is a natural fit for Web3 businesses, especially those with globally distributed contributors. Crypto payroll offers faster cross-border settlement, lower transfer fees, and alignment with the industry ethos. However, it introduces specific tax, compliance, and operational challenges that require careful planning."
       toc={[
-        { id: "platforms", title: "Crypto Payroll Platforms", level: 2 },
-        { id: "employee-vs-contractor", title: "Employee vs. Contractor Classification", level: 2 },
-        { id: "tax-compliance", title: "Tax Compliance and Withholding", level: 2 },
-        { id: "best-practices", title: "Operational Best Practices", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "crypto-payroll-platforms", title: "Crypto Payroll Platforms", level: 2 },
+        { id: "employee-vs-contractor", title: "employee-vs-contractor", level: 2 },
+        { id: "employee-vs-contractor-classification", title: "Employee vs. Contractor Classification", level: 2 },
+        { id: "tax-compliance", title: "tax-compliance", level: 2 },
+        { id: "tax-compliance-and-withholding", title: "Tax Compliance and Withholding", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "operational-best-practices", title: "Operational Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "Can I pay my entire salary in crypto?", answer: "Legally, it depends on the jurisdiction. In the US, employers must pay at least the federal minimum wage in fiat currency. Above the minimum, additional compensation can be paid in crypto. Some states have stricter wage payment laws that may further limit crypto compensation. For contractors, there are typically no restrictions on crypto-only payments. Many teams offer a split where contributors choose their fiat-to-crypto ratio each pay period." },

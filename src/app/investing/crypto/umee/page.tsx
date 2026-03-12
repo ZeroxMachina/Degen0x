@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Umee (UX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Umee (UX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Umee (UX), the cross-chain DeFi lending hub in Cosmos. Discover how it works, tokenomics, use cases, and how to buy UX.",
 };
@@ -17,12 +17,18 @@ export default function UmeePage() {
       readTime="8 min read"
       intro="Umee, now rebranded as UX Chain, is a cross-chain DeFi lending and borrowing protocol built as a Cosmos SDK appchain. The protocol aims to be the primary lending hub for the Cosmos ecosystem while connecting to Ethereum and other chains, offering lending markets for Cosmos-native assets and enabling cross-chain collateralization through IBC."
       toc={[
-        { id: "what-is", title: "What Is Umee?", level: 2 },
-        { id: "how-it-works", title: "How Does Umee Work?", level: 2 },
-        { id: "tokenomics", title: "UX Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy UX", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-umee", title: "What Is Umee?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-umee-work", title: "How Does Umee Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ux-tokenomics", title: "UX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ux", title: "How to Buy UX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

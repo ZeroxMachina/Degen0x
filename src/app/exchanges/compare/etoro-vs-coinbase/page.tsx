@@ -14,7 +14,7 @@ export default function EtoroVsCoinbasePage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "eToro vs Coinbase", href: "#" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">eToro vs Coinbase: Which Crypto Platform Is Better in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">eToro vs Coinbase: Which Crypto Platform Is Better in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">eToro and Coinbase are both popular platforms for buying cryptocurrency, but they cater to different audiences. eToro is a social trading platform with copy trading features and multi-asset support. Coinbase is a dedicated crypto exchange with deeper crypto features and broader coin selection. This comparison helps you decide which is the better fit.</p>
 
@@ -30,19 +30,19 @@ export default function EtoroVsCoinbasePage() {
       </div>
 
       <div className="prose-crypto">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Coinbase is significantly cheaper for crypto trading. Coinbase Advanced charges 0% to 0.60% through its maker-taker model, while eToro charges spreads of 1% on Bitcoin and up to 2.9% on smaller altcoins. For a $1,000 Bitcoin purchase, you would pay approximately $6 on Coinbase Advanced versus $10 on eToro. eToro also charges a $5 withdrawal fee and a 0.5% conversion fee on non-USD deposits, adding to costs. If fees are your primary concern, Coinbase wins decisively.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Copy Trading and Social Features</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Copy Trading and Social Features</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">eToro's CopyTrader feature is its most distinctive offering and something Coinbase does not provide. CopyTrader lets you automatically replicate the portfolio and trades of successful investors, making it an attractive option for beginners who want to follow expert strategies. The social feed provides market commentary and community insights. Coinbase offers Coinbase Learn for education but has no social trading features. If you value learning from and copying experienced traders, eToro has a unique advantage.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Coin Selection and Crypto Features</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Coin Selection and Crypto Features</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Coinbase supports over 250 cryptocurrencies compared to eToro's approximately 80. Coinbase also offers staking, Coinbase Wallet for DeFi access, the Base Layer 2 network, and advanced trading tools through Coinbase Advanced. eToro provides a broader asset mix with stocks and ETFs alongside crypto, which is valuable for multi-asset investors, but its crypto-specific features are more limited.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-white">Choose eToro if</strong> you want social and copy trading features, the ability to trade crypto alongside stocks and ETFs, and are willing to pay higher fees for the convenience and social experience.</p>
-          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-white">Choose Coinbase if</strong> you want the widest coin selection, lowest fees, most advanced crypto tools, and a platform built specifically for cryptocurrency trading and investing.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-[var(--color-text)]">Choose eToro if</strong> you want social and copy trading features, the ability to trade crypto alongside stocks and ETFs, and are willing to pay higher fees for the convenience and social experience.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Coinbase if</strong> you want the widest coin selection, lowest fees, most advanced crypto tools, and a platform built specifically for cryptocurrency trading and investing.</p>
         </div>
       </div>
 

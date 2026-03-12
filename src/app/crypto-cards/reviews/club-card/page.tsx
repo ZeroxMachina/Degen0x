@@ -10,7 +10,7 @@ const product = {
   pros: ["Multi-currency support", "Competitive exchange rates", "No hidden fees on transactions", "Works with multiple crypto wallets"],
   cons: ["Limited availability", "Smaller user base", "Fewer rewards than major competitors", "Less established brand"],
   bestFor: "Crypto holders looking for a straightforward way to spend multiple cryptocurrencies with fair exchange rates",
-  affiliateUrl: "https://cryptodegen.com/go/club-card",
+  affiliateUrl: "https://degen0x.com/go/club-card",
   category: "crypto-cards",
 };
 

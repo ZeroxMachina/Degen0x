@@ -16,10 +16,14 @@ export default function OrdinalsInscriptionsGuidePage() {
       readTime="10 min"
       intro="Bitcoin Ordinals bring NFT-like functionality to Bitcoin by assigning serial numbers to individual satoshis and enabling data inscription directly on the Bitcoin blockchain."
       toc={[
-        { id: "section-1", title: "What Are Bitcoin Ordinals", level: 2 },
-        { id: "section-2", title: "How Inscriptions Work", level: 2 },
-        { id: "section-3", title: "Ordinals Ecosystem", level: 2 },
-        { id: "section-4", title: "Collecting and Creating Ordinals", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "what-are-bitcoin-ordinals", title: "What Are Bitcoin Ordinals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "how-inscriptions-work", title: "How Inscriptions Work", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "ordinals-ecosystem", title: "Ordinals Ecosystem", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "collecting-and-creating-ordinals", title: "Collecting and Creating Ordinals", level: 2 }
       ]}
       faqs={[
         { question: "What are Bitcoin Ordinals?", answer: "Bitcoin Ordinals is a system that assigns unique serial numbers to individual satoshis, the smallest unit of Bitcoin. This allows satoshis to be tracked, traded, and collected individually. Inscriptions attach data like images or text directly to these numbered satoshis." },

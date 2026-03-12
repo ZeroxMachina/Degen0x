@@ -32,7 +32,7 @@ const products: Product[] = [
     ],
     fees: "1.3-7% annual premium",
     bestFor: "DeFi power users seeking comprehensive coverage",
-    affiliateUrl: "https://cryptodegen.com/go/nexus-mutual",
+    affiliateUrl: "https://degen0x.com/go/nexus-mutual",
     category: "insurance",
     featured: true,
   },
@@ -54,7 +54,7 @@ const products: Product[] = [
     ],
     fees: "1-5% annual premium",
     bestFor: "Multi-chain DeFi users wanting bundled coverage",
-    affiliateUrl: "https://cryptodegen.com/go/insurace",
+    affiliateUrl: "https://degen0x.com/go/insurace",
     category: "insurance",
   },
   {
@@ -75,7 +75,7 @@ const products: Product[] = [
     ],
     fees: "2-8% annual premium",
     bestFor: "Stakers and exchange users wanting automated payouts",
-    affiliateUrl: "https://cryptodegen.com/go/unslashed",
+    affiliateUrl: "https://degen0x.com/go/unslashed",
     category: "insurance",
   },
   {
@@ -96,7 +96,7 @@ const products: Product[] = [
     ],
     fees: "2-6% annual premium",
     bestFor: "Users seeking fast, dispute-free claim payouts",
-    affiliateUrl: "https://cryptodegen.com/go/neptune-mutual",
+    affiliateUrl: "https://degen0x.com/go/neptune-mutual",
     category: "insurance",
   },
   {
@@ -117,7 +117,7 @@ const products: Product[] = [
     ],
     fees: "1.5-5% annual premium",
     bestFor: "Stablecoin holders seeking depeg protection",
-    affiliateUrl: "https://cryptodegen.com/go/risk-harbor",
+    affiliateUrl: "https://degen0x.com/go/risk-harbor",
     category: "insurance",
   },
 ];
@@ -168,7 +168,7 @@ export default function BestInsurancePage() {
       <AffiliateDisclosure />
 
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Insurance Protocols of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">
@@ -193,7 +193,7 @@ export default function BestInsurancePage() {
 
       {/* Sub-category Links */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Browse by Coverage Type</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Browse by Coverage Type</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {subCategories.map((cat) => (
             <Link
@@ -201,7 +201,7 @@ export default function BestInsurancePage() {
               href={cat.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
-              <h3 className="text-lg font-semibold text-white mb-1">{cat.title}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-1">{cat.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{cat.desc}</p>
             </Link>
           ))}
@@ -210,7 +210,7 @@ export default function BestInsurancePage() {
 
       {/* Methodology */}
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Our insurance protocol ratings are based on extensive analysis of several key factors. We assess capital pool adequacy to ensure protocols can pay out large claims. We review historical claim handling to evaluate how effectively protocols have resolved past incidents. We analyze premium pricing relative to the risk covered, community governance mechanisms, smart contract audit status, and the diversity of coverage options offered.
         </p>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Crypto Airdrops Guide 2026 — How to Find, Qualify & Claim Free Tokens",
   description: "Complete guide to crypto airdrops in 2026. Learn how to find upcoming airdrops, qualify through protocol interaction, avoid scams, and maximize your airdrop rewards safely.",
   openGraph: {
-    title: "Crypto Airdrops Guide 2026 — CryptoDegen",
+    title: "Crypto Airdrops Guide 2026 — degen0x",
     description: "How to find, qualify for, and claim crypto airdrops. Complete strategy guide with safety tips.",
   },
 };
@@ -107,7 +107,7 @@ export default function AirdropsGuidePage() {
           <div style={{ display: "flex", gap: 16, marginTop: 16, fontSize: 12, color: "var(--color-text-secondary, #8b949e)" }}>
             <span>📖 15 min read</span>
             <span>📅 Updated March 2026</span>
-            <span>👤 CryptoDegen Research</span>
+            <span>👤 degen0x Research</span>
           </div>
         </div>
 

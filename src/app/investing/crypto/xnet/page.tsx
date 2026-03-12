@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is XNET (XNET)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is XNET (XNET)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about XNET (XNET), the decentralized mobile carrier network. Discover how it works, tokenomics, use cases, and how to buy XNET.",
 };
 
 export default function XnetPage() {
   return (
-    <LearnPageLayout title="What Is XNET (XNET)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="XNET is a decentralized mobile carrier that uses CBRS (Citizens Broadband Radio Service) spectrum and community-deployed small cell radios to build a wireless network from the ground up. Unlike traditional carriers that invest billions in centralized infrastructure, XNET incentivizes individuals and businesses to deploy small cell nodes that provide real cellular coverage, earning XNET tokens for data offloaded from major carrier networks." toc={[{id:"what-is",title:"What Is XNET?",level:2},{id:"how-it-works",title:"How Does XNET Work?",level:2},{id:"tokenomics",title:"XNET Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy XNET",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is XNET?",answer:"XNET is a decentralized mobile carrier using CBRS spectrum where community members deploy small cell radios to provide cellular coverage and earn tokens for data offloading."},{question:"Where can I buy XNET?",answer:"XNET can be purchased on Jupiter DEX on Solana and select exchanges. It trades against SOL and USDT pairs."},{question:"Is XNET a good investment?",answer:"XNET has real carrier partnerships and data offloading revenue, but scaling a wireless network is capital-intensive. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
+    <LearnPageLayout title="What Is XNET (XNET)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="XNET is a decentralized mobile carrier that uses CBRS (Citizens Broadband Radio Service) spectrum and community-deployed small cell radios to build a wireless network from the ground up. Unlike traditional carriers that invest billions in centralized infrastructure, XNET incentivizes individuals and businesses to deploy small cell nodes that provide real cellular coverage, earning XNET tokens for data offloaded from major carrier networks." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-xnet", title: "What Is XNET?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-xnet-work", title: "How Does XNET Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "xnet-tokenomics", title: "XNET Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-xnet", title: "How to Buy XNET", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is XNET?",answer:"XNET is a decentralized mobile carrier using CBRS spectrum where community members deploy small cell radios to provide cellular coverage and earn tokens for data offloading."},{question:"Where can I buy XNET?",answer:"XNET can be purchased on Jupiter DEX on Solana and select exchanges. It trades against SOL and USDT pairs."},{question:"Is XNET a good investment?",answer:"XNET has real carrier partnerships and data offloading revenue, but scaling a wireless network is capital-intensive. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
       <h2 id="what-is">What Is XNET?</h2>
       <p>XNET was founded to disrupt the traditional telecommunications model by creating a community-owned mobile carrier. The project leverages CBRS spectrum, a shared radio frequency band available in the United States that does not require traditional carrier licensing, to enable anyone to deploy cellular base stations. These small cell nodes provide genuine LTE and 5G coverage that major carriers can offload data onto, creating a real revenue stream from day one.</p>
       <p>Unlike Helium (which pivoted from IoT to cellular), XNET focused exclusively on CBRS cellular coverage from the start, targeting high-demand locations like stadiums, malls, airports, and dense urban areas where carrier networks are congested. XNET has established partnerships with mobile carriers and Mobile Virtual Network Operators (MVNOs) who pay to offload traffic onto the XNET network, creating verifiable real-world revenue that funds the token ecosystem.</p>

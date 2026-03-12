@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function LayerZeroPage() {
   return (
     <LearnPageLayout title="What Is Layer 0?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="Layer 0 refers to the foundational infrastructure protocols that sit beneath Layer 1 blockchains (like Ethereum or Bitcoin), enabling them to communicate, share data, and transfer assets across different networks. Layer 0 protocols provide the underlying framework for building and connecting multiple blockchains, addressing one of crypto's biggest challenges: interoperability between isolated blockchain ecosystems."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "how-it-works", title: "How It Works", level: 2 },{ id: "examples", title: "Key Examples", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-it-works", title: "How It Works", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "key-examples", title: "Key Examples", level: 2 }
+      ]}
       faqs={[
         { question: "What is the difference between Layer 0 and Layer 1?", answer: "Layer 1 blockchains (Ethereum, Solana, Bitcoin) are standalone networks that process and finalize transactions independently. Layer 0 protocols sit beneath Layer 1s, providing the infrastructure for multiple Layer 1s to connect and interoperate. Think of Layer 0 as the foundation or highway system, and Layer 1s as the cities connected by those highways. Layer 0 does not replace Layer 1 — it connects them." },
         { question: "Is LayerZero the same as Layer 0?", answer: "LayerZero (the protocol) is one specific cross-chain messaging protocol that enables communication between blockchains, but 'Layer 0' is the broader category term. Other Layer 0 projects include Polkadot, Cosmos, and Avalanche's subnet architecture. LayerZero (the company) chose its name to reflect its position in the blockchain stack, but it is just one approach among several." },

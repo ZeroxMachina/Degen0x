@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Web3 Marketing Strategies (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Web3 Marketing Strategies (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn effective Web3 marketing strategies including community building, token incentives, airdrop campaigns, influencer partnerships, and decentralized brand growth.",
 };
@@ -17,11 +17,16 @@ export default function Web3MarketingPage() {
       readTime="10 min"
       intro="Marketing in Web3 requires a fundamentally different approach from traditional digital marketing. Community-driven growth, token incentives, and decentralized distribution channels replace paid ads and SEO as primary growth levers. The most successful Web3 projects build passionate communities that become their marketing engine, leveraging token economics and shared ownership to turn users into advocates. This guide covers the core Web3 marketing strategies, channels, and tactics that drive sustainable project growth."
       toc={[
-        { id: "community-building", title: "Community-First Marketing", level: 2 },
-        { id: "token-incentives", title: "Token Incentive Strategies", level: 2 },
-        { id: "airdrop-campaigns", title: "Airdrop Campaign Design", level: 2 },
-        { id: "influencer-kol", title: "Influencer and KOL Partnerships", level: 2 },
-        { id: "content-channels", title: "Content and Distribution Channels", level: 2 },
+        { id: "community-building", title: "community-building", level: 2 },
+        { id: "community-first-marketing", title: "Community-First Marketing", level: 2 },
+        { id: "token-incentives", title: "token-incentives", level: 2 },
+        { id: "token-incentive-strategies", title: "Token Incentive Strategies", level: 2 },
+        { id: "airdrop-campaigns", title: "airdrop-campaigns", level: 2 },
+        { id: "airdrop-campaign-design", title: "Airdrop Campaign Design", level: 2 },
+        { id: "influencer-kol", title: "influencer-kol", level: 2 },
+        { id: "influencer-and-kol-partnerships", title: "Influencer and KOL Partnerships", level: 2 },
+        { id: "content-channels", title: "content-channels", level: 2 },
+        { id: "content-and-distribution-channels", title: "Content and Distribution Channels", level: 2 }
       ]}
       faqs={[
         {

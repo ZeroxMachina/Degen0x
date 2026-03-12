@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Cartesi (CTSI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Cartesi (CTSI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Cartesi (CTSI), the blockchain OS enabling Linux-based dApp development. Discover how it works, tokenomics, use cases, and how to buy CTSI.",
 };
@@ -17,12 +17,18 @@ export default function CartesiPage() {
       readTime="8 min read"
       intro="Cartesi is a blockchain operating system that allows developers to build decentralized applications using mainstream software tools and the Linux environment. By running computations off-chain in a Linux VM and proving them on-chain, Cartesi bridges the gap between traditional software development and blockchain scalability."
       toc={[
-        { id: "what-is", title: "What Is Cartesi?", level: 2 },
-        { id: "how-it-works", title: "How Does Cartesi Work?", level: 2 },
-        { id: "tokenomics", title: "CTSI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy CTSI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-cartesi", title: "What Is Cartesi?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-cartesi-work", title: "How Does Cartesi Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ctsi-tokenomics", title: "CTSI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ctsi", title: "How to Buy CTSI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

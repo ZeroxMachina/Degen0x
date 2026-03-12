@@ -25,13 +25,20 @@ export default function HowToBuyAvalanchePage() {
       readTime="12 min"
       intro="Avalanche (AVAX) is a high-performance Layer 1 blockchain platform known for its unique subnet architecture, sub-second finality, and growing ecosystem of DeFi applications and institutional partnerships. Created by Cornell professor Emin Gun Sirer, Avalanche uses a novel consensus mechanism that enables high throughput while maintaining decentralization. AVAX is the native token used for transaction fees, staking, and securing the network. This guide covers how to buy AVAX, storage options, staking, and the Avalanche ecosystem."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose an Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-avalanche", title: "Step 4: Buy Avalanche", level: 2 },
-        { id: "store-avalanche", title: "Step 5: Store Your AVAX", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-an-exchange", title: "Step 1: Choose an Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-avalanche", title: "buy-avalanche", level: 2 },
+        { id: "step-4-buy-avalanche", title: "Step 4: Buy Avalanche", level: 2 },
+        { id: "store-avalanche", title: "store-avalanche", level: 2 },
+        { id: "step-5-store-your-avax", title: "Step 5: Store Your AVAX", level: 2 },
+        { id: "staking-avax", title: "staking-avax", level: 2 },
         { id: "staking-avax", title: "Staking AVAX", level: 2 },
-        { id: "avalanche-ecosystem", title: "Avalanche Ecosystem and Subnets", level: 2 },
+        { id: "avalanche-ecosystem", title: "avalanche-ecosystem", level: 2 },
+        { id: "avalanche-ecosystem-and-subnets", title: "Avalanche Ecosystem and Subnets", level: 2 }
       ]}
       faqs={[
         {

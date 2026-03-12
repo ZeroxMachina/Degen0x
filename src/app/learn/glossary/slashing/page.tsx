@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Slashing? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Slashing? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what slashing means in proof-of-stake blockchains, the offenses that trigger slashing, how it affects stakers, and how to avoid slashing penalties.",
 };
 
@@ -11,7 +11,16 @@ export default function SlashingPage() {
   return (
     <LearnPageLayout title="What Is Slashing?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="Slashing is a penalty mechanism in proof-of-stake blockchains that punishes validators for provably malicious or negligent behavior by destroying a portion of their staked tokens. The threat of slashing is what keeps validators honest — the economic cost of misbehaving must far exceed any potential gain from an attack. Slashing protects network security by ensuring that validators have a strong financial incentive to follow protocol rules at all times."
-      toc={[{ id: "definition", title: "What Is Slashing?", level: 2 }, { id: "slashable-offenses", title: "Slashable Offenses", level: 2 }, { id: "impact-on-stakers", title: "Impact on Stakers and Delegators", level: 2 }, { id: "preventing-slashing", title: "Preventing Slashing", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-slashing", title: "What Is Slashing?", level: 2 },
+        { id: "slashable-offenses", title: "slashable-offenses", level: 2 },
+        { id: "slashable-offenses", title: "Slashable Offenses", level: 2 },
+        { id: "impact-on-stakers", title: "impact-on-stakers", level: 2 },
+        { id: "impact-on-stakers-and-delegators", title: "Impact on Stakers and Delegators", level: 2 },
+        { id: "preventing-slashing", title: "preventing-slashing", level: 2 },
+        { id: "preventing-slashing", title: "Preventing Slashing", level: 2 }
+      ]}
       faqs={[{ question: "Has slashing actually happened on Ethereum?", answer: "Yes, though it is rare. Most Ethereum slashing events have been caused by technical misconfiguration rather than malicious intent, such as running duplicate validator instances or using outdated software. The penalties for isolated slashing events are relatively small (1 ETH initially), but correlated slashing (many validators slashed simultaneously) triggers much larger penalties." },
         { question: "Can delegators be slashed?", answer: "On some networks, yes. On Cosmos chains, delegator stakes can be partially slashed if their validator misbehaves. On Ethereum, slashing affects the validator's 32 ETH stake directly. Liquid staking protocols may socialize slashing losses across all stakers. This is why choosing reliable validators and diversifying delegation is important." }]}
       relatedArticles={[{ title: "Validator", href: "/learn/glossary/validator", category: "Glossary" }, { title: "Delegator", href: "/learn/glossary/delegator", category: "Glossary" }, { title: "Bonding", href: "/learn/glossary/bonding", category: "Glossary" }, { title: "What Is Staking?", href: "/learn/what-is-staking", category: "Learn Crypto" }]}

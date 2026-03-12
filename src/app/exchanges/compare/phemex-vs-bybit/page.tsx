@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Phemex vs Bybit (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Phemex vs Bybit (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Phemex vs Bybit. Derivatives fees, features, leverage, copy trading, and which exchange is better for futures traders.",
 };
 
@@ -16,12 +16,18 @@ export default function PhemexVsBybit() {
       readTime="8 min read"
       intro="Phemex and Bybit are both derivatives-focused exchanges competing for active traders. Founded by former Morgan Stanley executives, Phemex emphasizes speed and a premium membership model. Bybit has grown into a larger platform with more features. This comparison examines which better serves derivatives traders."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "derivatives", title: "Derivatives Trading", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "derivatives", title: "derivatives", level: 2 },
+        { id: "derivatives-trading", title: "Derivatives Trading", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
+        { id: "security", title: "security", level: 2 },
         { id: "security", title: "Security", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which has lower derivatives fees?", answer: "Both are competitive. Phemex charges 0.01% maker/0.06% taker for contracts. Bybit charges 0.02% maker/0.055% taker. Phemex has a slight maker fee advantage." },

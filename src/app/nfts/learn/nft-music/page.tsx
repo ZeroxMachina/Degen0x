@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Music NFTs: How Musicians Are Using NFTs (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Music NFTs: How Musicians Are Using NFTs (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how musicians are using NFTs to sell music, connect with fans, and earn royalties. Explore platforms, strategies, and the future of music ownership on the blockchain.",
 };
 
@@ -16,11 +16,16 @@ export default function NftMusicPage() {
       readTime="10 min"
       intro="Music NFTs are transforming how artists create, distribute, and monetize their work. By tokenizing songs, albums, and exclusive experiences as NFTs, musicians can sell directly to fans, retain ownership of their masters, and earn ongoing royalties from secondary sales. From independent artists to established names, music NFTs offer a new model that puts creators first and gives fans meaningful ownership of the music they love."
       toc={[
-        { id: "music-nft-landscape", title: "The Music NFT Landscape", level: 2 },
-        { id: "platforms", title: "Music NFT Platforms", level: 2 },
+        { id: "music-nft-landscape", title: "music-nft-landscape", level: 2 },
+        { id: "the-music-nft-landscape", title: "The Music NFT Landscape", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "music-nft-platforms", title: "Music NFT Platforms", level: 2 },
+        { id: "types-of-music-nfts", title: "types-of-music-nfts", level: 2 },
         { id: "types-of-music-nfts", title: "Types of Music NFTs", level: 2 },
-        { id: "for-artists", title: "How Artists Can Get Started", level: 2 },
-        { id: "for-collectors", title: "Collecting Music NFTs", level: 2 },
+        { id: "for-artists", title: "for-artists", level: 2 },
+        { id: "how-artists-can-get-started", title: "How Artists Can Get Started", level: 2 },
+        { id: "for-collectors", title: "for-collectors", level: 2 },
+        { id: "collecting-music-nfts", title: "Collecting Music NFTs", level: 2 }
       ]}
       faqs={[
         { question: "Do I own the copyright when I buy a music NFT?", answer: "Typically no. Buying a music NFT usually grants you ownership of the token and the right to listen to the associated music, similar to buying a vinyl record. Copyright remains with the artist unless explicitly transferred. Some music NFTs include fractional royalty rights, giving holders a share of streaming revenue, but this must be specified in the NFT terms." },

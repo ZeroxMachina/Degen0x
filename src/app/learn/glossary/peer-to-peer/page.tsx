@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Peer-to-Peer (P2P)? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Peer-to-Peer (P2P)? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what peer-to-peer networks are, how they power blockchain technology, and why P2P architecture matters for decentralization.",
 };
@@ -17,11 +17,16 @@ export default function PeerToPeerPage() {
       readTime="5 min"
       intro="Peer-to-peer (P2P) is a network architecture where participants (peers) communicate and transact directly with each other without relying on a central server or intermediary. Blockchain networks are fundamentally P2P systems — every node connects directly to other nodes to share transactions and blocks. P2P architecture is what makes decentralization possible, eliminating single points of failure and central control."
       toc={[
-        { id: "definition", title: "What Is Peer-to-Peer?", level: 2 },
-        { id: "how-it-works", title: "How P2P Networks Work", level: 2 },
-        { id: "p2p-in-crypto", title: "P2P in Cryptocurrency", level: 2 },
-        { id: "p2p-trading", title: "P2P Trading Platforms", level: 2 },
-        { id: "why-it-matters", title: "Why P2P Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-peer-to-peer", title: "What Is Peer-to-Peer?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-p2p-networks-work", title: "How P2P Networks Work", level: 2 },
+        { id: "p2p-in-crypto", title: "p2p-in-crypto", level: 2 },
+        { id: "p2p-in-cryptocurrency", title: "P2P in Cryptocurrency", level: 2 },
+        { id: "p2p-trading", title: "p2p-trading", level: 2 },
+        { id: "p2p-trading-platforms", title: "P2P Trading Platforms", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-p2p-matters", title: "Why P2P Matters", level: 2 }
       ]}
       faqs={[
         {

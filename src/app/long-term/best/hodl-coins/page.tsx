@@ -21,7 +21,7 @@ const products: Product[] = [
     pros: ["Fixed 21M supply creates scarcity", "Largest market cap and liquidity", "Spot ETF approved for institutional access", "15+ year track record of security", "Growing sovereign and corporate adoption"],
     cons: ["High volatility despite maturity", "No native yield without third-party risk", "Energy-intensive proof of work", "Transaction speed limitations on base layer"],
     bestFor: "Core long-term portfolio holding",
-    affiliateUrl: "https://cryptodegen.com/go/buy-bitcoin",
+    affiliateUrl: "https://degen0x.com/go/buy-bitcoin",
     category: "long-term",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     pros: ["Dominant smart contract ecosystem", "Native staking yield (3-5% APR)", "Deflationary tokenomics under EIP-1559", "Spot ETH ETF available", "Largest developer community in crypto"],
     cons: ["Competition from alternative L1s", "High gas fees during peak usage", "Complexity of the staking mechanism", "Regulatory uncertainty as a potential security"],
     bestFor: "Long-term growth with passive staking yield",
-    affiliateUrl: "https://cryptodegen.com/go/buy-ethereum",
+    affiliateUrl: "https://degen0x.com/go/buy-ethereum",
     category: "long-term",
     featured: true,
   },
@@ -47,7 +47,7 @@ const products: Product[] = [
     pros: ["Industry-leading transaction speed and low costs", "Thriving DeFi and consumer app ecosystem", "Native staking yield of 6-7% APR", "Strong institutional interest growing", "Active developer community"],
     cons: ["History of network outages", "More centralized than BTC/ETH", "Younger and less battle-tested", "Token unlock schedule creates sell pressure"],
     bestFor: "High-performance L1 exposure with staking yield",
-    affiliateUrl: "https://cryptodegen.com/go/buy-solana",
+    affiliateUrl: "https://degen0x.com/go/buy-solana",
     category: "long-term",
   },
   {
@@ -59,7 +59,7 @@ const products: Product[] = [
     pros: ["Dominant oracle infrastructure with no close competitor", "Essential middleware for DeFi ecosystem", "LINK staking now available for passive yield", "CCIP enables cross-chain interoperability", "Deeply integrated across all major blockchains"],
     cons: ["Token supply inflation from staking rewards", "Revenue model still maturing", "Competition from emerging oracle networks", "Price has underperformed in recent cycles"],
     bestFor: "Infrastructure-layer crypto investment",
-    affiliateUrl: "https://cryptodegen.com/go/buy-chainlink",
+    affiliateUrl: "https://degen0x.com/go/buy-chainlink",
     category: "long-term",
   },
   {
@@ -71,7 +71,7 @@ const products: Product[] = [
     pros: ["Largest DeFi lending protocol by TVL", "Multi-chain deployment across major networks", "Safety module staking with yield", "Consistent protocol revenue generation", "Institutional DeFi product (Aave Arc)"],
     cons: ["Governance token value tied to protocol growth", "DeFi regulatory risk", "Competition from newer protocols", "Token holder value accrual still evolving"],
     bestFor: "Blue-chip DeFi governance exposure",
-    affiliateUrl: "https://cryptodegen.com/go/buy-aave",
+    affiliateUrl: "https://degen0x.com/go/buy-aave",
     category: "long-term",
   },
 ];
@@ -105,7 +105,7 @@ export default function HodlCoinsPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "HODL Coins", href: "/long-term/best/hodl-coins" }]} />
       <AffiliateDisclosure />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Best Cryptocurrencies for Long-Term Holding ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Cryptocurrencies for Long-Term Holding ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
 
       <div className="prose prose-invert max-w-none mb-10">
@@ -117,10 +117,10 @@ export default function HodlCoinsPage() {
           technology, adoption metrics, tokenomics, and development activity.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Bitcoin</strong> and <strong className="text-white">Ethereum</strong> remain
+          <strong className="text-[var(--color-text)]">Bitcoin</strong> and <strong className="text-[var(--color-text)]">Ethereum</strong> remain
           the consensus picks for the foundation of any long-term crypto portfolio. Beyond these two,
-          <strong className="text-white"> Solana</strong> offers high-performance blockchain exposure with attractive
-          staking yields, while <strong className="text-white">Chainlink</strong> provides essential infrastructure
+          <strong className="text-[var(--color-text)]"> Solana</strong> offers high-performance blockchain exposure with attractive
+          staking yields, while <strong className="text-[var(--color-text)]">Chainlink</strong> provides essential infrastructure
           exposure. Remember: long-term holding means at least one full market cycle (4+ years).
         </p>
       </div>
@@ -132,7 +132,7 @@ export default function HodlCoinsPage() {
       </div>
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Long-Term Evaluation Framework</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Long-Term Evaluation Framework</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-[var(--color-text-secondary)]">
           {[
             { title: "Network Effects (25%)", desc: "User adoption, developer activity, ecosystem size, and the self-reinforcing dynamics that make established networks increasingly difficult to displace." },
@@ -143,7 +143,7 @@ export default function HodlCoinsPage() {
             { title: "Yield Potential (10%)", desc: "Native staking yield, DeFi integration opportunities, and the ability to earn passive income while holding for the long term." },
           ].map((item) => (
             <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-              <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+              <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
               <p className="text-sm">{item.desc}</p>
             </div>
           ))}

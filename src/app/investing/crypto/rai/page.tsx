@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Rai Reflex Index (RAI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Rai Reflex Index (RAI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Rai Reflex Index (RAI), the non-pegged stable asset backed only by ETH. Discover RAI mechanics, its unique design, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function RaiPage() {
       readTime="8 min read"
       intro="Rai Reflex Index (RAI) is a non-pegged stable asset backed entirely by ETH. Unlike traditional stablecoins pegged to the US dollar, RAI uses an algorithmic controller to maintain a floating stable price without relying on fiat reserves or dollar pegs. Created by Reflexer Labs, RAI represents a purely crypto-native approach to stability."
       toc={[
-        { id: "what-is", title: "What Is Rai Reflex Index?", level: 2 },
-        { id: "how-it-works", title: "How Does Rai Reflex Index Work?", level: 2 },
-        { id: "tokenomics", title: "RAI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy RAI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-rai-reflex-index", title: "What Is Rai Reflex Index?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-rai-reflex-index-work", title: "How Does Rai Reflex Index Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "rai-tokenomics", title: "RAI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-rai", title: "How to Buy RAI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Rai Reflex Index?", answer: "RAI is a non-dollar-pegged stable asset backed only by ETH. It uses a PID controller algorithm to maintain a floating stable price, typically around $3, without relying on any fiat reserves or dollar peg." },

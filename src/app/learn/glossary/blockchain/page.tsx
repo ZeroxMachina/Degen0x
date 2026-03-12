@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Blockchain? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Blockchain? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what blockchain technology is, how it works, the different types, and why it matters beyond cryptocurrency. A comprehensive guide to distributed ledger technology.",
 };
@@ -17,11 +17,16 @@ export default function BlockchainPage() {
       readTime="6 min"
       intro="A blockchain is a distributed, immutable digital ledger that records transactions across a network of computers. Each block of transactions is cryptographically linked to the previous one, creating a tamper-resistant chain. This technology underpins all cryptocurrencies and enables trustless, transparent record-keeping without relying on a central authority."
       toc={[
-        { id: "definition", title: "What Is Blockchain?", level: 2 },
-        { id: "how-it-works", title: "How Blockchain Works", level: 2 },
-        { id: "types", title: "Types of Blockchains", level: 2 },
-        { id: "why-it-matters", title: "Why Blockchain Matters", level: 2 },
-        { id: "beyond-crypto", title: "Beyond Cryptocurrency", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-blockchain", title: "What Is Blockchain?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-blockchain-works", title: "How Blockchain Works", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-blockchains", title: "Types of Blockchains", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-blockchain-matters", title: "Why Blockchain Matters", level: 2 },
+        { id: "beyond-crypto", title: "beyond-crypto", level: 2 },
+        { id: "beyond-cryptocurrency", title: "Beyond Cryptocurrency", level: 2 }
       ]}
       faqs={[
         {

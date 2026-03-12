@@ -16,11 +16,16 @@ export default function BestPeerToPeerPage() {
       readTime="8 min"
       intro="Peer-to-peer crypto payments let you send money directly to another person without banks or intermediaries. From splitting dinner to sending money to family, P2P crypto transfers are fast, cheap, and increasingly user-friendly across a range of apps and wallets."
       toc={[
-        { id: "overview", title: "P2P Crypto Payments Overview", level: 2 },
-        { id: "wallets", title: "Best P2P Crypto Wallets", level: 2 },
-        { id: "lightning", title: "Lightning Network for P2P", level: 2 },
-        { id: "stablecoins", title: "Stablecoin P2P Transfers", level: 2 },
-        { id: "tips", title: "Best Practices", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "p2p-crypto-payments-overview", title: "P2P Crypto Payments Overview", level: 2 },
+        { id: "wallets", title: "wallets", level: 2 },
+        { id: "best-p2p-crypto-wallets", title: "Best P2P Crypto Wallets", level: 2 },
+        { id: "lightning", title: "lightning", level: 2 },
+        { id: "lightning-network-for-p2p", title: "Lightning Network for P2P", level: 2 },
+        { id: "stablecoins", title: "stablecoins", level: 2 },
+        { id: "stablecoin-p2p-transfers", title: "Stablecoin P2P Transfers", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What is the cheapest way to send crypto to someone?", answer: "Stablecoins on low-fee networks like Solana, Tron, or Polygon cost fractions of a cent to transfer. Bitcoin Lightning payments are also nearly free and instant." },

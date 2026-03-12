@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Interoperability? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Interoperability? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what blockchain interoperability means, why it matters, and how cross-chain solutions are connecting different networks.",
 };
@@ -17,11 +17,16 @@ export default function InteroperabilityPage() {
       readTime="5 min"
       intro="Interoperability in blockchain refers to the ability of different blockchain networks to communicate, share data, and transfer assets between each other. Just as the internet connects different computer networks, blockchain interoperability aims to connect isolated chains into a cohesive ecosystem. This is a critical challenge because most blockchains operate independently with their own consensus mechanisms and data formats."
       toc={[
-        { id: "definition", title: "What Is Interoperability?", level: 2 },
-        { id: "why-needed", title: "Why Interoperability Is Needed", level: 2 },
-        { id: "approaches", title: "Approaches to Interoperability", level: 2 },
-        { id: "challenges", title: "Challenges and Risks", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-interoperability", title: "What Is Interoperability?", level: 2 },
+        { id: "why-needed", title: "why-needed", level: 2 },
+        { id: "why-interoperability-is-needed", title: "Why Interoperability Is Needed", level: 2 },
+        { id: "approaches", title: "approaches", level: 2 },
+        { id: "approaches-to-interoperability", title: "Approaches to Interoperability", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-and-risks", title: "Challenges and Risks", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

@@ -22,7 +22,7 @@ const products: Product[] = [
     cons: ["Higher management fees than direct buying", "Limited to fund-based crypto exposure", "Minimum investment requirements", "Not direct advisory for individuals"],
     fees: "Fund management fees vary; typically 0.85-2.5%",
     bestFor: "Institutional and advisor-mediated crypto allocation",
-    affiliateUrl: "https://cryptodegen.com/go/bitwise",
+    affiliateUrl: "https://degen0x.com/go/bitwise",
     category: "long-term",
     featured: true,
   },
@@ -36,7 +36,7 @@ const products: Product[] = [
     cons: ["Access through advisors only, not direct", "Limited to supported custodians", "Crypto selection depends on custodian", "Requires advisor relationship"],
     fees: "Platform fee varies; charged to advisor",
     bestFor: "Working with traditional advisors adding crypto",
-    affiliateUrl: "https://cryptodegen.com/go/onramp-invest",
+    affiliateUrl: "https://degen0x.com/go/onramp-invest",
     category: "long-term",
   },
   {
@@ -49,7 +49,7 @@ const products: Product[] = [
     cons: ["Only accessible through financial advisors", "Higher minimums for SMA accounts", "Limited to advisor-approved models", "Management fees on top of advisor fees"],
     fees: "SMA management fee + advisor fee",
     bestFor: "High-net-worth clients seeking advisor-managed crypto",
-    affiliateUrl: "https://cryptodegen.com/go/eaglebrook",
+    affiliateUrl: "https://degen0x.com/go/eaglebrook",
     category: "long-term",
   },
   {
@@ -62,7 +62,7 @@ const products: Product[] = [
     cons: ["Limited crypto asset selection", "No self-custody option", "Cannot customize crypto picks", "Crypto allocation capped as portfolio percentage"],
     fees: "0.25% annual advisory fee",
     bestFor: "Automated crypto allocation within diversified portfolios",
-    affiliateUrl: "https://cryptodegen.com/go/wealthfront",
+    affiliateUrl: "https://degen0x.com/go/wealthfront",
     category: "long-term",
   },
   {
@@ -75,7 +75,7 @@ const products: Product[] = [
     cons: ["Higher minimum investment", "Management fees on assets", "Limited to advisory clients", "Smaller firm than traditional advisors"],
     fees: "1-2% annual management fee based on AUM",
     bestFor: "Dedicated professional crypto portfolio management",
-    affiliateUrl: "https://cryptodegen.com/go/daim",
+    affiliateUrl: "https://degen0x.com/go/daim",
     category: "long-term",
   },
 ];
@@ -105,7 +105,7 @@ export default function AdvisorsPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Advisors", href: "/long-term/best/advisors" }]} />
       <AffiliateDisclosure />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Best Crypto Financial Advisors ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Crypto Financial Advisors ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
 
       <div className="prose prose-invert max-w-none mb-10">
@@ -117,10 +117,10 @@ export default function AdvisorsPage() {
           regulatory status, and client experience.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          Our top recommendation for most investors is <strong className="text-white">Bitwise Asset Management</strong> for
+          Our top recommendation for most investors is <strong className="text-[var(--color-text)]">Bitwise Asset Management</strong> for
           its institutional-grade index funds and advisor integration. For hands-on personal management,
-          <strong className="text-white"> DAiM</strong> offers dedicated crypto-native advisory with fiduciary
-          duty. And for those wanting automated, low-cost exposure, <strong className="text-white">Wealthfront</strong> integrates
+          <strong className="text-[var(--color-text)]"> DAiM</strong> offers dedicated crypto-native advisory with fiduciary
+          duty. And for those wanting automated, low-cost exposure, <strong className="text-[var(--color-text)]">Wealthfront</strong> integrates
           crypto seamlessly into diversified portfolios.
         </p>
       </div>
@@ -132,18 +132,18 @@ export default function AdvisorsPage() {
       </div>
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Types of Crypto Advisory Services</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Types of Crypto Advisory Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-[var(--color-text-secondary)]">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Crypto-Native RIAs</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Crypto-Native RIAs</h3>
             <p className="text-sm">SEC-registered advisors focused exclusively on digital assets. Offer personalized portfolio management, tax planning, and deep crypto market expertise. Best for significant crypto portfolios requiring hands-on management.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Advisor Platforms</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Advisor Platforms</h3>
             <p className="text-sm">Technology platforms that enable traditional financial advisors to add crypto to client portfolios. Provide custody, compliance, and reporting infrastructure. Best for investors who want their existing advisor to manage crypto alongside traditional assets.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Robo-Advisors</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Robo-Advisors</h3>
             <p className="text-sm">Automated platforms that include crypto in diversified model portfolios with algorithmic rebalancing and tax-loss harvesting. Lowest cost option with minimal human interaction. Best for hands-off investors who want crypto exposure within a broader portfolio.</p>
           </div>
         </div>

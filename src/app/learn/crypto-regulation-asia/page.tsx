@@ -12,11 +12,16 @@ export default function CryptoRegulationAsiaPage() {
   return (
     <LearnPageLayout title="Crypto Regulation in Asia" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Asia presents the most diverse cryptocurrency regulatory landscape in the world, ranging from Japan's comprehensive licensing framework to China's complete ban. Understanding the regulatory approaches of major Asian economies is essential for anyone participating in or investing in crypto projects with Asian connections."
       toc={[
+        { id: "japan", title: "japan", level: 2 },
         { id: "japan", title: "Japan", level: 2 },
+        { id: "singapore", title: "singapore", level: 2 },
         { id: "singapore", title: "Singapore", level: 2 },
+        { id: "hong-kong", title: "hong-kong", level: 2 },
         { id: "hong-kong", title: "Hong Kong", level: 2 },
+        { id: "south-korea", title: "south-korea", level: 2 },
         { id: "south-korea", title: "South Korea", level: 2 },
-        { id: "india-china", title: "India & China", level: 2 },
+        { id: "india-china", title: "india-china", level: 2 },
+        { id: "india-china", title: "India & China", level: 2 }
       ]}
       faqs={[
         { question: "Which Asian country is most crypto-friendly?", answer: "Singapore and Hong Kong compete for the position of Asia's leading crypto hub, both offering comprehensive regulatory frameworks designed to attract crypto businesses. Japan has the longest-established regulatory framework. Each has different strengths depending on the type of crypto business or activity." },

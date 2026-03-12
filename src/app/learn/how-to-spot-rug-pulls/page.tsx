@@ -12,11 +12,16 @@ export default function HowToSpotRugPullsPage() {
   return (
     <LearnPageLayout title="How to Spot Rug Pulls" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="A rug pull occurs when cryptocurrency project developers abandon a project and run away with investor funds. These scams are particularly common with new token launches on decentralized exchanges. Learning to identify the warning signs before investing can save you from significant financial losses."
       toc={[
-        { id: "what-is-rug-pull", title: "What Is a Rug Pull?", level: 2 },
-        { id: "types", title: "Types of Rug Pulls", level: 2 },
-        { id: "red-flags", title: "Red Flags to Watch For", level: 2 },
-        { id: "contract-analysis", title: "Smart Contract Red Flags", level: 2 },
-        { id: "due-diligence", title: "Due Diligence Checklist", level: 2 },
+        { id: "what-is-rug-pull", title: "what-is-rug-pull", level: 2 },
+        { id: "what-is-a-rug-pull", title: "What Is a Rug Pull?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-rug-pulls", title: "Types of Rug Pulls", level: 2 },
+        { id: "red-flags", title: "red-flags", level: 2 },
+        { id: "red-flags-to-watch-for", title: "Red Flags to Watch For", level: 2 },
+        { id: "contract-analysis", title: "contract-analysis", level: 2 },
+        { id: "smart-contract-red-flags", title: "Smart Contract Red Flags", level: 2 },
+        { id: "due-diligence", title: "due-diligence", level: 2 },
+        { id: "due-diligence-checklist", title: "Due Diligence Checklist", level: 2 }
       ]}
       faqs={[
         { question: "How common are rug pulls?", answer: "Rug pulls are extremely common, especially among new token launches. During the 2021 bull market, rug pulls accounted for billions in losses. While exact numbers are difficult to track, industry estimates suggest thousands of rug pulls occur each year across various blockchains." },

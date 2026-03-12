@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `MEXC vs Bybit (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `MEXC vs Bybit (${CURRENT_YEAR}) | degen0x`,
   description: "Compare MEXC vs Bybit. Trading fees, coin listings, derivatives, features, and which exchange is better for different trading styles.",
 };
 
@@ -16,12 +16,18 @@ export default function MEXCVsBybit() {
       readTime="8 min read"
       intro="MEXC and Bybit are both popular international crypto exchanges, but they serve different niches. MEXC is known for its massive altcoin selection and early token listings, while Bybit excels in derivatives trading and copy trading. This comparison helps you understand which platform better fits your strategy."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "coin-selection", title: "coin-selection", level: 2 },
         { id: "coin-selection", title: "Coin Selection", level: 2 },
+        { id: "derivatives", title: "derivatives", level: 2 },
         { id: "derivatives", title: "Derivatives", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which has more coins?", answer: "MEXC lists significantly more cryptocurrencies (2000+) compared to Bybit (500+). MEXC is known for listing new tokens earlier than most exchanges." },

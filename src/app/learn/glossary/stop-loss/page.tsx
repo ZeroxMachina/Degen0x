@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Stop Loss? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Stop Loss? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what stop-loss orders are, how they work in crypto trading, different types of stop losses, and how to set them effectively for risk management.",
 };
 
@@ -11,7 +11,16 @@ export default function StopLossPage() {
   return (
     <LearnPageLayout title="What Is a Stop Loss?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="A stop loss is an order that automatically sells an asset when its price falls to a specified level, limiting the trader's loss on a position. Stop losses are one of the most important risk management tools in crypto trading, providing a safety net against unexpected price drops and emotional decision-making. By defining your maximum acceptable loss before entering a trade, stop losses enforce discipline and protect capital in volatile markets."
-      toc={[{ id: "definition", title: "What Is a Stop Loss?", level: 2 }, { id: "types", title: "Types of Stop Losses", level: 2 }, { id: "setting-stop-losses", title: "How to Set Stop Losses", level: 2 }, { id: "common-mistakes", title: "Common Stop Loss Mistakes", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-stop-loss", title: "What Is a Stop Loss?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-stop-losses", title: "Types of Stop Losses", level: 2 },
+        { id: "setting-stop-losses", title: "setting-stop-losses", level: 2 },
+        { id: "how-to-set-stop-losses", title: "How to Set Stop Losses", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-stop-loss-mistakes", title: "Common Stop Loss Mistakes", level: 2 }
+      ]}
       faqs={[{ question: "Should I always use stop losses?", answer: "For active trading, yes. Stop losses protect against catastrophic losses and enforce disciplined risk management. For long-term investing, stop losses are less critical and can actually hurt returns by selling during temporary dips. The appropriate use depends on your strategy, time horizon, and risk tolerance." },
         { question: "Can my stop loss be triggered and then the price recover?", answer: "Yes, this is called a stop-loss hunt or stop run. Market makers and whales sometimes push prices briefly below common stop levels to trigger a cascade of sell orders, then buy the resulting cheap supply. Setting stop losses at less obvious price levels and using slightly wider buffers can help avoid this." }]}
       relatedArticles={[{ title: "Take Profit", href: "/learn/glossary/take-profit", category: "Glossary" }, { title: "Margin Call", href: "/learn/glossary/margin-call", category: "Glossary" }, { title: "Risk Management", href: "/learn/risk-management-crypto", category: "Learn Crypto" }, { title: "Order Book", href: "/learn/glossary/order-book", category: "Glossary" }]}

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Web3 Analytics Tools for Businesses (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Web3 Analytics Tools for Businesses (${CURRENT_YEAR}) | degen0x`,
   description: "Essential Web3 analytics tools for businesses. On-chain analytics, user tracking, DeFi dashboards, and data platforms for informed Web3 decision-making.",
 };
 
@@ -12,10 +12,14 @@ export default function Web3AnalyticsToolsPage() {
     <LearnPageLayout title="Web3 Analytics Tools for Businesses" categoryName="Web3 Business" categorySlug="web3-business" readTime="8 min read"
       intro="Data-driven decision-making in Web3 requires specialized analytics tools that can parse blockchain data, track on-chain user behavior, and provide actionable insights. Unlike traditional web analytics where data is siloed in proprietary platforms, blockchain data is publicly available but requires specialized tools to query and interpret. The Web3 analytics ecosystem has matured significantly, offering tools for every use case from protocol monitoring to competitive intelligence."
       toc={[
-        { id: "on-chain-analytics", title: "On-Chain Analytics Platforms", level: 2 },
-        { id: "defi-dashboards", title: "DeFi Dashboards and Monitoring", level: 2 },
-        { id: "user-analytics", title: "User Analytics and Tracking", level: 2 },
-        { id: "data-infrastructure", title: "Data Infrastructure", level: 2 },
+        { id: "on-chain-analytics", title: "on-chain-analytics", level: 2 },
+        { id: "on-chain-analytics-platforms", title: "On-Chain Analytics Platforms", level: 2 },
+        { id: "defi-dashboards", title: "defi-dashboards", level: 2 },
+        { id: "defi-dashboards-and-monitoring", title: "DeFi Dashboards and Monitoring", level: 2 },
+        { id: "user-analytics", title: "user-analytics", level: 2 },
+        { id: "user-analytics-and-tracking", title: "User Analytics and Tracking", level: 2 },
+        { id: "data-infrastructure", title: "data-infrastructure", level: 2 },
+        { id: "data-infrastructure", title: "Data Infrastructure", level: 2 }
       ]}
       faqs={[
         { question: "What is on-chain analytics?", answer: "On-chain analytics is the practice of analyzing data recorded on public blockchains to derive insights about user behavior, protocol performance, market trends, and economic activity. Because blockchain transactions are public, anyone can analyze this data. On-chain analytics tools make this data accessible through dashboards, APIs, and query interfaces." },

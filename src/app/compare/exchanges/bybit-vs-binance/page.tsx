@@ -4,12 +4,6 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ToolStructuredData } from '@/components/StructuredData';
 
-export const metadata = {
-  title: 'Bybit vs Binance - Crypto Exchange Comparison | CryptoDegen',
-  description: 'Compare Bybit and Binance crypto exchanges. Fees, features, derivatives trading, security, and which exchange is best for your trading style.',
-  keywords: 'bybit, binance, exchange comparison, derivatives, fees, trading',
-};
-
 export default function BybitVsBinance() {
   const comparisonData = [
     { feature: 'Founded', bybit: '2018', binance: '2017' },
@@ -155,15 +149,16 @@ export default function BybitVsBinance() {
   return (
     <>
       <ToolStructuredData
-        name="Bybit vs Binance Crypto Exchange Comparison"
+        title="Bybit vs Binance Crypto Exchange Comparison"
         description="Detailed comparison of Bybit and Binance exchanges for spot trading, derivatives, fees, security, and user experience."
+        slug="compare/exchanges/bybit-vs-binance"
       />
 
       <div style={styles.container}>
         <Breadcrumb items={[
           { label: 'Compare', href: '/compare' },
           { label: 'Exchanges', href: '/compare/exchanges' },
-          { label: 'Bybit vs Binance', href: '/compare/exchanges/bybit-vs-binance', active: true }
+          { label: 'Bybit vs Binance', href: '/compare/exchanges/bybit-vs-binance'}
         ]} />
 
         <div style={styles.header}>
@@ -353,214 +348,174 @@ const styles = {
     minHeight: '100vh',
     backgroundColor: 'var(--bg, #0d1117)',
     color: 'var(--text, #e6edf3)',
-    padding: '20px',
-  } as React.CSSProperties,
+    padding: '20px' } as React.CSSProperties,
   header: {
     maxWidth: '1000px',
     margin: '0 auto 60px',
-    textAlign: 'center' as const,
-  },
+    textAlign: 'center' as const },
   title: {
     fontSize: '48px',
     fontWeight: 'bold',
     marginBottom: '16px',
     background: 'linear-gradient(135deg, #f59e0b, #10b981)',
     WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-  },
+    WebkitTextFillColor: 'transparent' },
   subtitle: {
     fontSize: '18px',
-    color: 'var(--text2, #8b949e)',
-  },
+    color: 'var(--text2, #8b949e)' },
   section: {
     maxWidth: '1000px',
-    margin: '0 auto 60px',
-  },
+    margin: '0 auto 60px' },
   sectionTitle: {
     fontSize: '32px',
     fontWeight: 'bold',
     marginBottom: '30px',
-    color: 'var(--text, #e6edf3)',
-  },
+    color: 'var(--text, #e6edf3)' },
   tableWrapper: {
     overflowX: 'auto' as const,
     backgroundColor: 'var(--surface, #161b22)',
     borderRadius: '12px',
-    border: '1px solid var(--border, #30363d)',
-  },
+    border: '1px solid var(--border, #30363d)' },
   table: {
     width: '100%',
     borderCollapse: 'collapse' as const,
-    fontSize: '14px',
-  },
+    fontSize: '14px' },
   headerRow: {
-    borderBottom: '2px solid var(--border, #30363d)',
-  },
+    borderBottom: '2px solid var(--border, #30363d)' },
   headerCell: {
     padding: '16px',
     textAlign: 'left' as const,
     fontWeight: 'bold',
     backgroundColor: 'var(--surface2, #1c2330)',
-    color: '#f59e0b',
-  },
+    color: '#f59e0b' },
   row: {
-    borderBottom: '1px solid var(--border, #30363d)',
-  },
+    borderBottom: '1px solid var(--border, #30363d)' },
   cell: {
     padding: '16px',
-    color: 'var(--text, #e6edf3)',
-  },
+    color: 'var(--text, #e6edf3)' },
   overviewGrid: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
-    gap: '24px',
-  },
+    gap: '24px' },
   overviewCard: {
     backgroundColor: 'var(--surface, #161b22)',
     border: '1px solid var(--border, #30363d)',
     borderRadius: '12px',
-    padding: '24px',
-  },
+    padding: '24px' },
   overviewTitle: {
     fontSize: '20px',
     fontWeight: 'bold',
     marginBottom: '8px',
-    color: 'var(--text, #e6edf3)',
-  },
+    color: 'var(--text, #e6edf3)' },
   overviewBest: {
     fontSize: '14px',
     color: '#f59e0b',
     fontWeight: '600',
-    marginBottom: '12px',
-  },
+    marginBottom: '12px' },
   overviewText: {
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
     lineHeight: '1.6',
-    marginBottom: '12px',
-  },
+    marginBottom: '12px' },
   overviewStats: {
     fontSize: '12px',
     color: '#10b981',
-    fontWeight: '600',
-  },
+    fontWeight: '600' },
   prosConsGrid: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
-    gap: '30px',
-  },
+    gap: '30px' },
   prosTitle: {
     fontSize: '20px',
     fontWeight: 'bold',
     color: '#10b981',
-    marginBottom: '16px',
-  },
+    marginBottom: '16px' },
   consTitle: {
     fontSize: '20px',
     fontWeight: 'bold',
     color: '#ef4444',
-    marginBottom: '16px',
-  },
+    marginBottom: '16px' },
   prosList: {
     listStyle: 'none',
     padding: 0,
-    margin: 0,
-  },
+    margin: 0 },
   prosItem: {
     padding: '12px 0',
     borderBottom: '1px solid var(--border, #30363d)',
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
-    lineHeight: '1.5',
-  },
+    lineHeight: '1.5' },
   securityTable: {
     backgroundColor: 'var(--surface, #161b22)',
     borderRadius: '12px',
     border: '1px solid var(--border, #30363d)',
-    overflow: 'hidden',
-  },
+    overflow: 'hidden' },
   securityRow: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr',
     borderBottom: '1px solid var(--border, #30363d)',
-    padding: '16px',
-  },
+    padding: '16px' },
   securityAspect: {
     fontWeight: 'bold',
-    color: 'var(--text, #e6edf3)',
-  },
+    color: 'var(--text, #e6edf3)' },
   securityValue: {
     fontSize: '14px',
-    color: 'var(--text2, #8b949e)',
-  },
+    color: 'var(--text2, #8b949e)' },
   useCaseGrid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-    gap: '24px',
-  },
+    gap: '24px' },
   useCaseCard: {
     backgroundColor: 'var(--surface, #161b22)',
     border: '1px solid var(--border, #30363d)',
     borderRadius: '12px',
-    padding: '20px',
-  },
+    padding: '20px' },
   useCaseTitle: {
     fontSize: '16px',
     fontWeight: 'bold',
     marginBottom: '12px',
-    color: '#f59e0b',
-  },
+    color: '#f59e0b' },
   useCaseComparison: {
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
     lineHeight: '1.8',
-    marginBottom: '12px',
-  },
+    marginBottom: '12px' },
   useCaseWinner: {
     fontSize: '14px',
     color: '#10b981',
-    fontWeight: '600',
-  },
+    fontWeight: '600' },
   faqContainer: {
     backgroundColor: 'var(--surface, #161b22)',
     borderRadius: '12px',
     border: '1px solid var(--border, #30363d)',
-    overflow: 'hidden',
-  },
+    overflow: 'hidden' },
   faqItem: {
     padding: '24px',
-    borderBottom: '1px solid var(--border, #30363d)',
-  },
+    borderBottom: '1px solid var(--border, #30363d)' },
   faqQuestion: {
     fontSize: '16px',
     fontWeight: 'bold',
     color: '#f59e0b',
-    marginBottom: '12px',
-  },
+    marginBottom: '12px' },
   faqAnswer: {
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
     lineHeight: '1.6',
-    margin: 0,
-  },
+    margin: 0 },
   verdict: {
     maxWidth: '1000px',
     margin: '0 auto 60px',
     backgroundColor: 'var(--surface, #161b22)',
     border: '2px solid #f59e0b',
     borderRadius: '12px',
-    padding: '40px',
-  },
+    padding: '40px' },
   verdictTitle: {
     fontSize: '32px',
     fontWeight: 'bold',
     marginBottom: '24px',
-    color: '#f59e0b',
-  },
+    color: '#f59e0b' },
   verdictText: {
     fontSize: '16px',
     color: 'var(--text2, #8b949e)',
     lineHeight: '1.8',
-    marginBottom: '16px',
-  },
-};
+    marginBottom: '16px' } };

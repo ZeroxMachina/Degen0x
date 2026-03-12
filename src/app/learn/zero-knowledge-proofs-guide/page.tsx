@@ -1,26 +1,7 @@
 "use client";
 
-import type { Metadata } from "next";
 import LearnPageLayout from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
-
-export const metadata: Metadata = {
-  title: `Zero Knowledge Proofs: Complete Technical Guide | ${SITE_NAME}`,
-  description:
-    "In-depth guide to zero-knowledge proofs: ZK-SNARKs, ZK-STARKs, ZK-rollups, privacy, scaling solutions, top projects (zkSync, StarkNet, Polygon zkEVM), and applications.",
-  keywords: [
-    "zero knowledge proofs",
-    "ZK proofs",
-    "ZK-SNARKs",
-    "ZK-STARKs",
-    "ZK rollups",
-    "zkSync",
-    "StarkNet",
-    "Polygon zkEVM",
-    "blockchain scaling",
-    "blockchain privacy",
-  ],
-};
 
 export default function ZeroKnowledgeProofsGuidePage() {
   return (
@@ -31,14 +12,22 @@ export default function ZeroKnowledgeProofsGuidePage() {
       readTime="14 min"
       intro="Zero-knowledge proofs (ZKPs) represent one of the most important innovations in cryptography and blockchain scaling. They enable one party to prove a statement is true without revealing any information beyond the truth of that statement. In blockchain, ZKPs power scalability through ZK-rollups that compress thousands of transactions into a single proof, and privacy through transaction verification without exposure. This comprehensive guide explores ZK technology in depth, comparing SNARK and STARK approaches, examining how ZK-rollups work, analyzing leading projects, and discussing future applications that could transform how blockchains function."
       toc={[
-        { id: "fundamentals", title: "ZK Proofs Fundamentals", level: 2 },
-        { id: "snarks-explained", title: "Understanding zk-SNARKs", level: 2 },
-        { id: "starks-explained", title: "Understanding zk-STARKs", level: 2 },
-        { id: "zk-rollups", title: "How ZK-Rollups Work", level: 2 },
-        { id: "zk-evm", title: "ZK-EVM and EVM Compatibility", level: 2 },
-        { id: "major-projects", title: "Leading ZK Projects and Implementations", level: 2 },
-        { id: "privacy-applications", title: "ZK Proofs for Privacy", level: 2 },
-        { id: "future-directions", title: "Future Directions and Challenges", level: 2 },
+        { id: "fundamentals", title: "fundamentals", level: 2 },
+        { id: "zk-proofs-fundamentals", title: "ZK Proofs Fundamentals", level: 2 },
+        { id: "snarks-explained", title: "snarks-explained", level: 2 },
+        { id: "understanding-zk-snarks", title: "Understanding zk-SNARKs", level: 2 },
+        { id: "starks-explained", title: "starks-explained", level: 2 },
+        { id: "understanding-zk-starks", title: "Understanding zk-STARKs", level: 2 },
+        { id: "zk-rollups", title: "zk-rollups", level: 2 },
+        { id: "how-zk-rollups-work", title: "How ZK-Rollups Work", level: 2 },
+        { id: "zk-evm", title: "zk-evm", level: 2 },
+        { id: "zk-evm-and-evm-compatibility", title: "ZK-EVM and EVM Compatibility", level: 2 },
+        { id: "major-projects", title: "major-projects", level: 2 },
+        { id: "leading-zk-projects-and-implementations", title: "Leading ZK Projects and Implementations", level: 2 },
+        { id: "privacy-applications", title: "privacy-applications", level: 2 },
+        { id: "zk-proofs-for-privacy", title: "ZK Proofs for Privacy", level: 2 },
+        { id: "future-directions", title: "future-directions", level: 2 },
+        { id: "future-directions-and-challenges", title: "Future Directions and Challenges", level: 2 }
       ]}
       faqs={[
         {

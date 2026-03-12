@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Orca Token (ORCA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Orca Token (ORCA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Orca Token (ORCA), the user-friendly DEX on Solana with concentrated liquidity. Discover ORCA tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function OrcaTokenPage() {
       readTime="8 min read"
       intro="Orca Token (ORCA) is the governance token of Orca, a leading decentralized exchange on Solana known for its user-friendly interface and concentrated liquidity pools (Whirlpools). Orca focuses on simplicity and accessibility, making it one of the most popular DEXs for both retail users and liquidity providers on Solana."
       toc={[
-        { id: "what-is", title: "What Is Orca Token?", level: 2 },
-        { id: "how-it-works", title: "How Does Orca Work?", level: 2 },
-        { id: "tokenomics", title: "ORCA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ORCA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-orca-token", title: "What Is Orca Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-orca-work", title: "How Does Orca Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "orca-tokenomics", title: "ORCA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-orca", title: "How to Buy ORCA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function ConsensusMechanismPage() {
   return (
     <LearnPageLayout title="What Is a Consensus Mechanism?" categoryName="Glossary" categorySlug="learn/glossary" readTime="5 min" intro="A consensus mechanism is the process by which a distributed network of nodes agrees on the current state of the blockchain. Since there is no central authority in a decentralized network, consensus mechanisms provide the rules that determine which transactions are valid and which blocks are added to the chain. The two most prominent consensus mechanisms are Proof of Work (PoW) and Proof of Stake (PoS), each with distinct trade-offs in security, energy consumption, and decentralization."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "proof-of-work", title: "Proof of Work", level: 2 },{ id: "proof-of-stake", title: "Proof of Stake", level: 2 },{ id: "other-mechanisms", title: "Other Mechanisms", level: 2 },{ id: "comparison", title: "Comparison", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "proof-of-work", title: "proof-of-work", level: 2 },
+        { id: "proof-of-work", title: "Proof of Work", level: 2 },
+        { id: "proof-of-stake", title: "proof-of-stake", level: 2 },
+        { id: "proof-of-stake", title: "Proof of Stake", level: 2 },
+        { id: "other-mechanisms", title: "other-mechanisms", level: 2 },
+        { id: "other-mechanisms", title: "Other Mechanisms", level: 2 },
+        { id: "comparison", title: "comparison", level: 2 },
+        { id: "comparison", title: "Comparison", level: 2 }
+      ]}
       faqs={[
         { question: "Why do blockchains need consensus mechanisms?", answer: "Without a central authority, distributed networks face the challenge of agreeing on which transactions are valid and in what order they occurred. Consensus mechanisms solve this by creating economic incentives for honest behavior and making it prohibitively expensive to attack the network. Without consensus, anyone could double-spend tokens or create conflicting versions of the blockchain." },
         { question: "Which consensus mechanism is best?", answer: "There is no universally best consensus mechanism — each involves trade-offs. Proof of Work provides battle-tested security but consumes significant energy. Proof of Stake is energy-efficient but concentrates power among large holders. Newer mechanisms like Delegated Proof of Stake offer high throughput but sacrifice some decentralization. The best choice depends on a network's specific priorities." },

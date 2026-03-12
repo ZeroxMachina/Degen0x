@@ -17,11 +17,16 @@ export default function AccountAbstractionExplainedPage() {
       readTime="10 min read"
       intro="Account abstraction is one of the most significant UX improvements in blockchain technology. By enabling smart contract-based accounts instead of limiting users to externally-owned accounts (EOAs), account abstraction removes friction from cryptocurrency adoption. Understanding how account abstraction works and its implications is essential for anyone navigating the evolution toward more usable blockchain infrastructure."
       toc={[
+        { id: "what-is-account-abstraction", title: "what-is-account-abstraction", level: 2 },
         { id: "what-is-account-abstraction", title: "What Is Account Abstraction?", level: 2 },
-        { id: "eoa-limitations", title: "Limitations of Current Accounts", level: 2 },
-        { id: "smart-contract-accounts", title: "Smart Contract-Based Accounts", level: 2 },
-        { id: "erc-4337", title: "ERC-4337 and Bundlers", level: 2 },
-        { id: "benefits-and-future", title: "Benefits and Future Impact", level: 2 },
+        { id: "eoa-limitations", title: "eoa-limitations", level: 2 },
+        { id: "limitations-of-current-accounts", title: "Limitations of Current Accounts", level: 2 },
+        { id: "smart-contract-accounts", title: "smart-contract-accounts", level: 2 },
+        { id: "smart-contract-based-accounts", title: "Smart Contract-Based Accounts", level: 2 },
+        { id: "erc-4337", title: "erc-4337", level: 2 },
+        { id: "erc-4337-and-bundlers", title: "ERC-4337 and Bundlers", level: 2 },
+        { id: "benefits-and-future", title: "benefits-and-future", level: 2 },
+        { id: "benefits-and-future-impact", title: "Benefits and Future Impact", level: 2 }
       ]}
       faqs={[
         {

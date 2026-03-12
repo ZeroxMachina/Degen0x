@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Low-LTV Crypto Loans (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Low-LTV Crypto Loans (${CURRENT_YEAR}) | degen0x`,
   description: "Find the safest crypto loan platforms with low LTV ratios. Conservative borrowing strategies to minimize liquidation risk while accessing liquidity.",
 };
 
@@ -16,10 +16,14 @@ export default function LowLtvLoansPage() {
       readTime="8 min read"
       intro="Low-LTV crypto loans prioritize safety over maximum borrowing power. By keeping your loan-to-value ratio at 25-40%, you create a substantial buffer against liquidation even during major market downturns. This conservative approach is ideal for long-term holders who want liquidity without the stress of monitoring volatile collateral positions."
       toc={[
-        { id: "why-low-ltv", title: "Why Choose Low LTV", level: 2 },
-        { id: "best-platforms", title: "Best Platforms for Low LTV", level: 2 },
-        { id: "optimal-ratios", title: "Optimal LTV Ratios by Asset", level: 2 },
-        { id: "risk-management", title: "Risk Management Strategies", level: 2 },
+        { id: "why-low-ltv", title: "why-low-ltv", level: 2 },
+        { id: "why-choose-low-ltv", title: "Why Choose Low LTV", level: 2 },
+        { id: "best-platforms", title: "best-platforms", level: 2 },
+        { id: "best-platforms-for-low-ltv", title: "Best Platforms for Low LTV", level: 2 },
+        { id: "optimal-ratios", title: "optimal-ratios", level: 2 },
+        { id: "optimal-ltv-ratios-by-asset", title: "Optimal LTV Ratios by Asset", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management-strategies", title: "Risk Management Strategies", level: 2 }
       ]}
       faqs={[
         { question: "What is a safe LTV ratio for crypto loans?", answer: "Most experts recommend keeping LTV at 25-40% for volatile assets like BTC and ETH. This provides enough buffer to survive 50%+ price drops without liquidation. For stablecoins or less volatile collateral, 50-60% LTV is still considered safe." },

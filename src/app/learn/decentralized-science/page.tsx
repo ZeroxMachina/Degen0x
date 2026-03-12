@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Decentralized Science (DeSci) Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Decentralized Science (DeSci) Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about DeSci: how blockchain is transforming scientific research through decentralized funding, open access publishing, tokenized IP, and community-governed research organizations.",
 };
@@ -17,10 +17,14 @@ export default function DecentralizedSciencePage() {
       readTime="8 min read"
       intro="Decentralized Science (DeSci) is a movement that applies blockchain technology and Web3 principles to address systemic problems in the scientific research ecosystem. Traditional science faces challenges including limited funding access, publication gatekeeping, lack of reproducibility incentives, and barriers to collaboration. DeSci leverages token economics, DAOs, NFTs, and smart contracts to create more open, equitable, and efficient models for funding research, sharing knowledge, and incentivizing scientific discovery."
       toc={[
-        { id: "problems", title: "Problems in Traditional Science", level: 2 },
-        { id: "how-desci-helps", title: "How DeSci Addresses These Problems", level: 2 },
-        { id: "key-projects", title: "Key DeSci Projects", level: 2 },
-        { id: "challenges-future", title: "Challenges and Future Potential", level: 2 },
+        { id: "problems", title: "problems", level: 2 },
+        { id: "problems-in-traditional-science", title: "Problems in Traditional Science", level: 2 },
+        { id: "how-desci-helps", title: "how-desci-helps", level: 2 },
+        { id: "how-desci-addresses-these-problems", title: "How DeSci Addresses These Problems", level: 2 },
+        { id: "key-projects", title: "key-projects", level: 2 },
+        { id: "key-desci-projects", title: "Key DeSci Projects", level: 2 },
+        { id: "challenges-future", title: "challenges-future", level: 2 },
+        { id: "challenges-and-future-potential", title: "Challenges and Future Potential", level: 2 }
       ]}
       faqs={[
         {

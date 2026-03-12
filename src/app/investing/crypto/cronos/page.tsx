@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Cronos (CRO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Cronos (CRO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Cronos (CRO), the EVM-compatible blockchain built by Crypto.com. Discover how it works, tokenomics, use cases, and how to buy CRO.",
 };
@@ -17,12 +17,18 @@ export default function CronosPage() {
       readTime="8 min read"
       intro="Cronos is the EVM-compatible Layer 1 blockchain developed by Crypto.com, designed to bring DeFi, NFTs, and Web3 applications to the masses. Backed by one of the largest crypto exchanges, Cronos aims to make decentralized applications accessible and affordable. CRO is the native utility token powering the Cronos ecosystem."
       toc={[
-        { id: "what-is", title: "What Is Cronos?", level: 2 },
-        { id: "how-it-works", title: "How Cronos Works", level: 2 },
-        { id: "tokenomics", title: "Cronos Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy Cronos", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-cronos", title: "What Is Cronos?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-cronos-works", title: "How Cronos Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "cronos-tokenomics", title: "Cronos Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-cronos", title: "How to Buy Cronos", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

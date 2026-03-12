@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is AR.IO (ARIO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is AR.IO (ARIO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about AR.IO (ARIO), the decentralized gateway network for Arweave. Discover how it works, tokenomics, use cases, and how to buy ARIO.",
 };
 
 export default function ArIoPage() {
   return (
-    <LearnPageLayout title="What Is AR.IO (ARIO)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="AR.IO is a decentralized gateway network built on top of Arweave that provides the infrastructure layer for accessing and serving permanently stored data. While Arweave handles permanent data storage, AR.IO operates a network of gateways that index, cache, and serve that data to end users, functioning as the access layer for the permaweb and managing the Arweave Name System (ArNS) for human-readable names." toc={[{id:"what-is",title:"What Is AR.IO?",level:2},{id:"how-it-works",title:"How Does AR.IO Work?",level:2},{id:"tokenomics",title:"ARIO Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy ARIO",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is AR.IO?",answer:"AR.IO is a decentralized gateway network for Arweave that indexes and serves permanently stored data, managing data access and the Arweave Name System for human-readable permaweb names."},{question:"Where can I buy ARIO?",answer:"ARIO can be purchased on exchanges that list it and through Arweave ecosystem DEXs. Check current listings on major exchanges."},{question:"Is AR.IO a good investment?",answer:"AR.IO provides essential infrastructure for the Arweave ecosystem, but its value is tied to permaweb adoption. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Arweave",href:"/investing/crypto/arweave",category:"Investing"}]}>
+    <LearnPageLayout title="What Is AR.IO (ARIO)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="AR.IO is a decentralized gateway network built on top of Arweave that provides the infrastructure layer for accessing and serving permanently stored data. While Arweave handles permanent data storage, AR.IO operates a network of gateways that index, cache, and serve that data to end users, functioning as the access layer for the permaweb and managing the Arweave Name System (ArNS) for human-readable names." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ar-io", title: "What Is AR.IO?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-ar-io-work", title: "How Does AR.IO Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ario-tokenomics", title: "ARIO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ario", title: "How to Buy ARIO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is AR.IO?",answer:"AR.IO is a decentralized gateway network for Arweave that indexes and serves permanently stored data, managing data access and the Arweave Name System for human-readable permaweb names."},{question:"Where can I buy ARIO?",answer:"ARIO can be purchased on exchanges that list it and through Arweave ecosystem DEXs. Check current listings on major exchanges."},{question:"Is AR.IO a good investment?",answer:"AR.IO provides essential infrastructure for the Arweave ecosystem, but its value is tied to permaweb adoption. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Arweave",href:"/investing/crypto/arweave",category:"Investing"}]}>
       <h2 id="what-is">What Is AR.IO?</h2>
       <p>AR.IO was developed to solve the gateway centralization problem in the Arweave ecosystem. While Arweave provides decentralized permanent data storage, the gateways that serve this data to users were historically centralized, creating a single point of failure for the permaweb. AR.IO decentralizes this access layer by creating an incentivized network of gateway operators who index, cache, and deliver Arweave data to end users through standard web protocols.</p>
       <p>The protocol also manages the Arweave Name System (ArNS), which provides human-readable names for permanently stored content. Instead of using long Arweave transaction IDs, users can register ArNS names that resolve to specific content, making the permaweb navigable like the traditional web. AR.IO&apos;s gateway network and naming system together form the essential infrastructure for making Arweave&apos;s permanent storage practically accessible.</p>

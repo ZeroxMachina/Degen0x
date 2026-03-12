@@ -55,7 +55,7 @@ export default function ReviewPage({
       ratingValue: product.rating,
       bestRating: 5,
     },
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
     datePublished: lastUpdated || `${CURRENT_YEAR}-03-01`,
   };
 

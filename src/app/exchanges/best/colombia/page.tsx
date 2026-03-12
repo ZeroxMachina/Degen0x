@@ -16,10 +16,14 @@ export default function ColombiaExchangesPage() {
       readTime="9 min"
       intro="Colombia has a growing crypto market driven by a tech-savvy population, remittance needs, and increasing interest in digital assets as an alternative to traditional finance. While the regulatory framework is still developing, Colombian traders have access to both global platforms and local exchanges that support COP deposits."
       toc={[
-        { id: "regulation", title: "Crypto Regulation in Colombia", level: 2 },
-        { id: "top-exchanges", title: "Recommended Exchanges", level: 2 },
-        { id: "payment-methods", title: "COP Payment Methods", level: 2 },
-        { id: "tips", title: "Tips for Colombian Traders", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-colombia", title: "Crypto Regulation in Colombia", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "recommended-exchanges", title: "Recommended Exchanges", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "cop-payment-methods", title: "COP Payment Methods", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-colombian-traders", title: "Tips for Colombian Traders", level: 2 }
       ]}
       faqs={[
         {

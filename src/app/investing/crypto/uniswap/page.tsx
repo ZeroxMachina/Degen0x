@@ -25,7 +25,7 @@ export default function UniswapPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Uniswap (UNI) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function UniswapPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">UNI</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2020</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">1,000,000,000 UNI</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">ERC-20 Governance Token</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">UNI</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2020</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">1,000,000,000 UNI</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">ERC-20 Governance Token</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Uniswap?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Uniswap?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Uniswap is a decentralized exchange protocol that allows users to swap ERC-20 tokens
           without intermediaries using an automated market maker (AMM) model. Created by Hayden Adams
@@ -69,7 +69,7 @@ export default function UniswapPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Uniswap enables permissionless token swaps, liquidity provision for earning trading fees,
           price discovery for new tokens, and serves as critical infrastructure for the broader DeFi
@@ -81,7 +81,7 @@ export default function UniswapPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The UNI token currently has no direct revenue capture from protocol fees, making its value
           primarily based on governance rights and the expectation of future fee sharing. Competition
@@ -94,7 +94,7 @@ export default function UniswapPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Uniswap</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Uniswap</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           UNI is available on major centralized exchanges like Coinbase, Binance, and Kraken. You can
           also buy UNI directly on the Uniswap decentralized exchange itself by swapping ETH or other

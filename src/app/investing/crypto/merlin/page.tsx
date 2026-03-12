@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Merlin Chain (MERL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Merlin Chain (MERL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Merlin Chain (MERL), the Bitcoin Layer 2 network for BTC-native DeFi. Discover how it works, tokenomics, use cases, and how to buy MERL.",
 };
@@ -17,12 +17,18 @@ export default function MerlinPage() {
       readTime="8 min read"
       intro="Merlin Chain is a Bitcoin Layer 2 network that aims to bring smart contract functionality and DeFi capabilities to the Bitcoin ecosystem. Built using a ZK-rollup architecture that settles on Bitcoin, Merlin Chain enables BTC holders to participate in decentralized finance, NFTs, and other on-chain applications while keeping their assets within the Bitcoin security model. MERL is the governance and utility token of the Merlin Chain ecosystem."
       toc={[
-        { id: "what-is", title: "What Is Merlin Chain?", level: 2 },
-        { id: "how-it-works", title: "How Does Merlin Chain Work?", level: 2 },
-        { id: "tokenomics", title: "MERL Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MERL", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-merlin-chain", title: "What Is Merlin Chain?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-merlin-chain-work", title: "How Does Merlin Chain Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "merl-tokenomics", title: "MERL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-merl", title: "How to Buy MERL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

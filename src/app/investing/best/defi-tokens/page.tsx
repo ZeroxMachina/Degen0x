@@ -23,7 +23,7 @@ const defiTokens: Product[] = [
     pros: ["Largest DEX by volume", "Multi-chain deployment", "Fee switch potential", "Strong brand recognition"],
     cons: ["Governance token only (no fee sharing yet)", "Competition from aggregators", "Concentrated governance"],
     bestFor: "DEX sector exposure",
-    affiliateUrl: "https://cryptodegen.com/go/buy-uni",
+    affiliateUrl: "https://degen0x.com/go/buy-uni",
     category: "defi-tokens",
   },
   {
@@ -34,7 +34,7 @@ const defiTokens: Product[] = [
     pros: ["Largest DeFi lending protocol", "Real revenue generation", "Safety module staking", "Multi-chain presence"],
     cons: ["Governance-heavy token utility", "Competition from newer protocols", "Complex risk management"],
     bestFor: "DeFi lending exposure",
-    affiliateUrl: "https://cryptodegen.com/go/buy-aave",
+    affiliateUrl: "https://degen0x.com/go/buy-aave",
     category: "defi-tokens",
   },
   {
@@ -45,7 +45,7 @@ const defiTokens: Product[] = [
     pros: ["Dominant market position in liquid staking", "Real protocol revenue", "Critical infrastructure", "Growing stETH adoption"],
     cons: ["Centralization concerns", "Governance token with limited direct value capture", "Regulatory scrutiny possible"],
     bestFor: "Liquid staking exposure",
-    affiliateUrl: "https://cryptodegen.com/go/buy-ldo",
+    affiliateUrl: "https://degen0x.com/go/buy-ldo",
     category: "defi-tokens",
   },
   {
@@ -56,7 +56,7 @@ const defiTokens: Product[] = [
     pros: ["DAI stablecoin backing", "Real revenue from fees and RWA", "Token buyback mechanism", "Established protocol"],
     cons: ["Complex governance", "Centralization through RWA exposure", "Competition from newer stablecoins"],
     bestFor: "Stablecoin protocol exposure",
-    affiliateUrl: "https://cryptodegen.com/go/buy-mkr",
+    affiliateUrl: "https://degen0x.com/go/buy-mkr",
     category: "defi-tokens",
   },
   {
@@ -67,7 +67,7 @@ const defiTokens: Product[] = [
     pros: ["Unique yield trading mechanism", "Rapid TVL growth", "Multi-chain deployment", "Growing ecosystem"],
     cons: ["Complex for new users", "Dependent on yield market demand", "Newer protocol"],
     bestFor: "Yield trading exposure",
-    affiliateUrl: "https://cryptodegen.com/go/buy-pendle",
+    affiliateUrl: "https://degen0x.com/go/buy-pendle",
     category: "defi-tokens",
   },
 ];
@@ -92,7 +92,7 @@ export default function BestDeFiTokensPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best DeFi Tokens for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -108,7 +108,7 @@ export default function BestDeFiTokensPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top DeFi Tokens for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top DeFi Tokens for {CURRENT_YEAR}</h2>
         <div className="space-y-4">
           {defiTokens.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -117,7 +117,7 @@ export default function BestDeFiTokensPage() {
       </section>
 
       <section id="how-to-evaluate" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Evaluate DeFi Tokens</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Evaluate DeFi Tokens</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           DeFi tokens can be evaluated using metrics similar to traditional finance. Total Value
           Locked (TVL) indicates the scale of a protocol. Protocol revenue shows whether it
@@ -134,22 +134,22 @@ export default function BestDeFiTokensPage() {
       </section>
 
       <section id="defi-sectors" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">DeFi Sectors to Watch</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">DeFi Sectors to Watch</h2>
         <div className="space-y-4">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Decentralized Exchanges (DEXs)</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Decentralized Exchanges (DEXs)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Uniswap, Curve, and new DEX models continue to take market share from centralized exchanges.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Lending & Borrowing</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Lending & Borrowing</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Aave and Compound lead the lending sector, with newer protocols innovating on risk management.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Liquid Staking</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Liquid Staking</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Lido, Rocket Pool, and chain-specific staking protocols form critical infrastructure for PoS networks.
             </p>
@@ -158,7 +158,7 @@ export default function BestDeFiTokensPage() {
       </section>
 
       <section id="risks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">DeFi Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">DeFi Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)]">
           DeFi tokens carry smart contract risk (code vulnerabilities), governance risk (hostile
           proposals), tokenomics risk (inflation or poor value capture), and market risk (high

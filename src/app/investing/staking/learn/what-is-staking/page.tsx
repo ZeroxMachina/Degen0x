@@ -17,13 +17,20 @@ export default function WhatIsStakingPage() {
       readTime="10 min"
       intro="Crypto staking is one of the most popular ways to earn passive income in the cryptocurrency world. By locking up your crypto to help secure a blockchain network, you earn rewards similar to interest on a savings account, but with potentially much higher returns. This guide explains everything you need to know about staking, from the basic concept to the different ways you can participate."
       toc={[
+        { id: "how-staking-works", title: "how-staking-works", level: 2 },
         { id: "how-staking-works", title: "How Staking Works", level: 2 },
-        { id: "proof-of-stake", title: "Proof-of-Stake Explained", level: 2 },
-        { id: "staking-rewards", title: "How Staking Rewards Work", level: 2 },
-        { id: "ways-to-stake", title: "Different Ways to Stake", level: 2 },
-        { id: "popular-networks", title: "Popular Staking Networks", level: 2 },
-        { id: "risks", title: "Risks of Staking", level: 2 },
-        { id: "getting-started", title: "Getting Started with Staking", level: 2 },
+        { id: "proof-of-stake", title: "proof-of-stake", level: 2 },
+        { id: "proof-of-stake-explained", title: "Proof-of-Stake Explained", level: 2 },
+        { id: "staking-rewards", title: "staking-rewards", level: 2 },
+        { id: "how-staking-rewards-work", title: "How Staking Rewards Work", level: 2 },
+        { id: "ways-to-stake", title: "ways-to-stake", level: 2 },
+        { id: "different-ways-to-stake", title: "Different Ways to Stake", level: 2 },
+        { id: "popular-networks", title: "popular-networks", level: 2 },
+        { id: "popular-staking-networks", title: "Popular Staking Networks", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking", title: "Risks of Staking", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started-with-staking", title: "Getting Started with Staking", level: 2 }
       ]}
       faqs={[
         {

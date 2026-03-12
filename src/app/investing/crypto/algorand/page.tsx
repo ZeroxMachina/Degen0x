@@ -25,7 +25,7 @@ export default function AlgorandPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Algorand (ALGO) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function AlgorandPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">ALGO</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2019</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">10,000,000,000 ALGO</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Pure Proof of Stake (PPoS)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">ALGO</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2019</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">10,000,000,000 ALGO</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Pure Proof of Stake (PPoS)</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Algorand?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Algorand?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Algorand was founded in 2017 by Silvio Micali, an MIT professor and Turing Award winner
           for his contributions to cryptography. The blockchain launched in 2019 with the goal of
@@ -69,7 +69,7 @@ export default function AlgorandPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Algorand is used for real-world asset tokenization, stablecoin infrastructure (USDC is
           natively issued on Algorand), CBDC pilots with sovereign governments, carbon credit
@@ -81,7 +81,7 @@ export default function AlgorandPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           ALGO has significantly underperformed many competitors across multiple market cycles,
           which raises questions about market demand for the token despite strong technology. The
@@ -94,7 +94,7 @@ export default function AlgorandPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Algorand</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Algorand</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           ALGO is available on major exchanges including Coinbase, Binance, Kraken, and OKX. After
           purchasing, you can participate in Algorand governance by committing ALGO through the

@@ -17,10 +17,14 @@ export default function CryptoCreditLinesPage() {
       readTime="8 min"
       intro="A crypto credit line provides revolving access to funds backed by your crypto collateral, functioning similarly to a home equity line of credit but using cryptocurrency instead of real estate. Unlike term loans with fixed amounts and repayment schedules, credit lines let you draw and repay funds as needed, paying interest only on the amount currently borrowed. This flexibility makes them ideal for ongoing liquidity needs."
       toc={[
-        { id: "how-credit-lines-work", title: "How Crypto Credit Lines Work", level: 2 },
-        { id: "vs-term-loans", title: "Credit Lines vs Term Loans", level: 2 },
-        { id: "platforms", title: "Credit Line Platforms", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "how-credit-lines-work", title: "how-credit-lines-work", level: 2 },
+        { id: "how-crypto-credit-lines-work", title: "How Crypto Credit Lines Work", level: 2 },
+        { id: "vs-term-loans", title: "vs-term-loans", level: 2 },
+        { id: "credit-lines-vs-term-loans", title: "Credit Lines vs Term Loans", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "credit-line-platforms", title: "Credit Line Platforms", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "Do I pay interest on unused credit?", answer: "No. With most crypto credit lines, you only pay interest on the amount you actually draw from the line. Your total available credit is determined by your collateral value, but unused credit incurs no cost." },

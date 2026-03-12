@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Stride (STRD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Stride (STRD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Stride (STRD), the liquid staking protocol for the Cosmos ecosystem. Discover how it works, tokenomics, use cases, and how to buy STRD.",
 };
@@ -17,12 +17,18 @@ export default function StridePage() {
       readTime="8 min read"
       intro="Stride is the leading liquid staking protocol in the Cosmos ecosystem, allowing users to stake their Cosmos-based tokens and receive liquid staking derivatives (stTokens) that can be used in DeFi while earning staking rewards. By unlocking liquidity from staked assets across multiple Cosmos chains, Stride serves as the Lido equivalent for the Cosmos network."
       toc={[
-        { id: "what-is", title: "What Is Stride?", level: 2 },
-        { id: "how-it-works", title: "How Does Stride Work?", level: 2 },
-        { id: "tokenomics", title: "STRD Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy STRD", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-stride", title: "What Is Stride?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-stride-work", title: "How Does Stride Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "strd-tokenomics", title: "STRD Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-strd", title: "How to Buy STRD", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

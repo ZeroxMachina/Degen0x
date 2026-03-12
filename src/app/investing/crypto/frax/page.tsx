@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Frax (FRAX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Frax (FRAX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Frax (FRAX), the fractional-algorithmic stablecoin protocol. Discover FRAX stablecoin mechanics, the Frax ecosystem, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function FraxPage() {
       readTime="8 min read"
       intro="Frax (FRAX) is a decentralized stablecoin that pioneered the fractional-algorithmic model, combining collateral backing with algorithmic mechanisms to maintain its dollar peg. The Frax ecosystem has expanded beyond stablecoins to include Frax Ether (frxETH) for liquid staking, Frax Finance lending, and the Fraxtal Layer 2 blockchain."
       toc={[
-        { id: "what-is", title: "What Is Frax?", level: 2 },
-        { id: "how-it-works", title: "How Does Frax Work?", level: 2 },
-        { id: "tokenomics", title: "FRAX Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy FRAX", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-frax", title: "What Is Frax?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-frax-work", title: "How Does Frax Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "frax-tokenomics", title: "FRAX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-frax", title: "How to Buy FRAX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Frax?", answer: "FRAX is a decentralized stablecoin pegged to the US dollar. Originally using a fractional-algorithmic model, FRAX has moved toward full collateralization. The Frax ecosystem includes stablecoins, liquid staking (frxETH), and the Fraxtal L2 chain." },

@@ -12,11 +12,16 @@ export default function CryptoInsuranceGuidePage() {
   return (
     <LearnPageLayout title="Crypto Insurance Guide" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Cryptocurrency insurance is an emerging field that aims to protect users against the unique risks of digital assets — from smart contract exploits and exchange hacks to stablecoin depegs and validator slashing. Both decentralized insurance protocols and traditional insurance products are developing to fill the coverage gap in the crypto ecosystem."
       toc={[
-        { id: "overview", title: "Insurance in Crypto", level: 2 },
-        { id: "defi-insurance", title: "DeFi Insurance Protocols", level: 2 },
-        { id: "exchange-insurance", title: "Exchange Insurance Funds", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "insurance-in-crypto", title: "Insurance in Crypto", level: 2 },
+        { id: "defi-insurance", title: "defi-insurance", level: 2 },
+        { id: "defi-insurance-protocols", title: "DeFi Insurance Protocols", level: 2 },
+        { id: "exchange-insurance", title: "exchange-insurance", level: 2 },
+        { id: "exchange-insurance-funds", title: "Exchange Insurance Funds", level: 2 },
+        { id: "custodial-insurance", title: "custodial-insurance", level: 2 },
         { id: "custodial-insurance", title: "Custodial Insurance", level: 2 },
-        { id: "choosing-coverage", title: "Choosing Coverage", level: 2 },
+        { id: "choosing-coverage", title: "choosing-coverage", level: 2 },
+        { id: "choosing-coverage", title: "Choosing Coverage", level: 2 }
       ]}
       faqs={[
         { question: "Does FDIC insurance cover crypto?", answer: "No, FDIC insurance does not cover cryptocurrency holdings, even if held on a regulated US exchange. FDIC only covers fiat currency deposits at member banks. Some exchanges hold customer fiat in FDIC-insured accounts, but the crypto assets themselves are not covered." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Avoid Crypto Loan Liquidation (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Avoid Crypto Loan Liquidation (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to prevent liquidation on crypto loans. Strategies for maintaining health factors, managing LTV ratios, and protecting your collateral.",
 };
@@ -17,11 +17,16 @@ export default function LiquidationPreventionPage() {
       readTime="9 min read"
       intro="Liquidation is the biggest risk when borrowing against crypto collateral. When your collateral value drops below the required threshold, liquidators can seize and sell your assets, often at a significant penalty. Understanding how liquidation works and implementing prevention strategies is essential for anyone using crypto-backed loans. This guide covers practical techniques to protect your positions across both DeFi and CeFi platforms."
       toc={[
+        { id: "how-liquidation-works", title: "how-liquidation-works", level: 2 },
         { id: "how-liquidation-works", title: "How Liquidation Works", level: 2 },
-        { id: "monitoring-health", title: "Monitoring Your Health Factor", level: 2 },
+        { id: "monitoring-health", title: "monitoring-health", level: 2 },
+        { id: "monitoring-your-health-factor", title: "Monitoring Your Health Factor", level: 2 },
+        { id: "prevention-strategies", title: "prevention-strategies", level: 2 },
         { id: "prevention-strategies", title: "Prevention Strategies", level: 2 },
-        { id: "automated-tools", title: "Automated Protection Tools", level: 2 },
-        { id: "emergency-actions", title: "Emergency Actions During Crashes", level: 2 },
+        { id: "automated-tools", title: "automated-tools", level: 2 },
+        { id: "automated-protection-tools", title: "Automated Protection Tools", level: 2 },
+        { id: "emergency-actions", title: "emergency-actions", level: 2 },
+        { id: "emergency-actions-during-crashes", title: "Emergency Actions During Crashes", level: 2 }
       ]}
       faqs={[
         { question: "What is crypto loan liquidation?", answer: "Liquidation occurs when your collateral value drops below the required threshold relative to your loan amount. A liquidator repays part or all of your debt and receives your collateral at a discount (the liquidation penalty). This typically costs borrowers 5-15% of the liquidated amount." },

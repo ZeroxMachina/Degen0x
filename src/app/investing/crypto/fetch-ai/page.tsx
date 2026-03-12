@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Fetch.ai (FET)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Fetch.ai (FET)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Fetch.ai (FET), the AI-powered blockchain platform for autonomous agents. Discover how it works, tokenomics, and how to buy FET.",
 };
@@ -17,12 +17,18 @@ export default function FetchAiPage() {
       readTime="8 min read"
       intro="Fetch.ai is a pioneering blockchain platform that combines artificial intelligence with decentralized technology through autonomous economic agents. As part of the Artificial Superintelligence Alliance (ASI), Fetch.ai is building the infrastructure for an AI-powered decentralized digital economy. FET is the utility token that powers agent interactions and network operations."
       toc={[
-        { id: "what-is", title: "What Is Fetch.ai?", level: 2 },
-        { id: "how-it-works", title: "How Fetch.ai Works", level: 2 },
-        { id: "tokenomics", title: "Fetch.ai Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy Fetch.ai", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-fetch-ai", title: "What Is Fetch.ai?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-fetch-ai-works", title: "How Fetch.ai Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "fetch-ai-tokenomics", title: "Fetch.ai Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-fetch-ai", title: "How to Buy Fetch.ai", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

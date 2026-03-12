@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Understanding LTV Ratios in Crypto Lending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Understanding LTV Ratios in Crypto Lending (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to Loan-to-Value ratios in crypto lending. Learn how LTV works, optimal ratios for different strategies, and how to manage your LTV effectively.",
 };
@@ -17,10 +17,14 @@ export default function LtvRatioGuidePage() {
       readTime="8 min read"
       intro="The Loan-to-Value (LTV) ratio is the most fundamental concept in crypto lending. It determines how much you can borrow against your collateral, when you risk liquidation, and the overall safety of your position. Whether you use DeFi protocols or CeFi platforms, understanding LTV is essential for managing crypto loans effectively. This guide explains LTV mechanics, optimal ratios for different strategies, and how to actively manage your LTV."
       toc={[
-        { id: "what-is-ltv", title: "What Is LTV Ratio", level: 2 },
-        { id: "ltv-thresholds", title: "LTV Thresholds Across Platforms", level: 2 },
-        { id: "optimal-ratios", title: "Optimal LTV for Different Strategies", level: 2 },
-        { id: "managing-ltv", title: "Managing Your LTV Actively", level: 2 },
+        { id: "what-is-ltv", title: "what-is-ltv", level: 2 },
+        { id: "what-is-ltv-ratio", title: "What Is LTV Ratio", level: 2 },
+        { id: "ltv-thresholds", title: "ltv-thresholds", level: 2 },
+        { id: "ltv-thresholds-across-platforms", title: "LTV Thresholds Across Platforms", level: 2 },
+        { id: "optimal-ratios", title: "optimal-ratios", level: 2 },
+        { id: "optimal-ltv-for-different-strategies", title: "Optimal LTV for Different Strategies", level: 2 },
+        { id: "managing-ltv", title: "managing-ltv", level: 2 },
+        { id: "managing-your-ltv-actively", title: "Managing Your LTV Actively", level: 2 }
       ]}
       faqs={[
         { question: "What is a good LTV ratio for crypto loans?", answer: "A conservative LTV is 25-40%, providing substantial buffer against market volatility. Moderate risk is 40-60% LTV. Aggressive is 60-75% LTV. The optimal ratio depends on the volatility of your collateral, your risk tolerance, and whether you have reserves to add collateral if prices drop." },

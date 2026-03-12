@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Polygon zkEVM (POL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Polygon zkEVM (POL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Polygon zkEVM (POL), the zero-knowledge scaling solution. Discover how it works, tokenomics, use cases, and how to buy POL.",
 };
@@ -17,12 +17,18 @@ export default function PolygonZkEvmPage() {
       readTime="8 min read"
       intro="Polygon zkEVM is a zero-knowledge rollup developed by Polygon Labs that provides EVM-equivalent scaling for Ethereum. As part of the broader Polygon 2.0 vision, zkEVM uses zero-knowledge proofs to verify transaction batches, offering fast finality and high security while maintaining compatibility with existing Ethereum smart contracts and developer tools."
       toc={[
-        { id: "what-is", title: "What Is Polygon zkEVM?", level: 2 },
-        { id: "how-it-works", title: "How Does Polygon zkEVM Work?", level: 2 },
-        { id: "tokenomics", title: "POL Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy POL", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-polygon-zkevm", title: "What Is Polygon zkEVM?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-polygon-zkevm-work", title: "How Does Polygon zkEVM Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "pol-tokenomics", title: "POL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-pol", title: "How to Buy POL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

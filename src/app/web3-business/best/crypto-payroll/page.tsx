@@ -16,10 +16,14 @@ export default function BestCryptoPayrollPage() {
       readTime="10 min"
       intro="Crypto payroll platforms enable businesses to pay employees and contractors in cryptocurrency efficiently and compliantly, handling conversion, distribution, tax withholding, and reporting across jurisdictions."
       toc={[
-        { id: "section-1", title: "Overview and Fundamentals", level: 2 },
-        { id: "section-2", title: "Key Concepts and Mechanics", level: 2 },
-        { id: "section-3", title: "Practical Applications", level: 2 },
-        { id: "section-4", title: "Best Practices and Tips", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "overview-and-fundamentals", title: "Overview and Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "key-concepts-and-mechanics", title: "Key Concepts and Mechanics", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "practical-applications", title: "Practical Applications", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "best-practices-and-tips", title: "Best Practices and Tips", level: 2 }
       ]}
       faqs={[
         { question: "Can businesses legally pay employees in crypto?", answer: "Legality varies by jurisdiction. Many countries allow crypto salary payments with proper tax reporting. Some require minimum wage to be paid in local fiat currency. Always consult local employment law before implementing crypto payroll." },

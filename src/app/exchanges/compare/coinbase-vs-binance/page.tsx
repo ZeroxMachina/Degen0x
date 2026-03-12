@@ -83,7 +83,7 @@ export default function CoinbaseVsBinancePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <div className="glass rounded-2xl p-8 border border-[var(--color-border)]">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-bold text-white">Coinbase</h2>
+              <h2 className="text-2xl font-bold text-[var(--color-text)]">Coinbase</h2>
               <div className="text-3xl font-bold text-blue-400">{coinbase.rating}/5</div>
             </div>
             <ul className="space-y-2 text-[var(--color-text-secondary)]">
@@ -116,7 +116,7 @@ export default function CoinbaseVsBinancePage() {
 
           <div className="glass rounded-2xl p-8 border border-[var(--color-border)]">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-bold text-white">Binance</h2>
+              <h2 className="text-2xl font-bold text-[var(--color-text)]">Binance</h2>
               <div className="text-3xl font-bold text-orange-400">{binance.rating}/5</div>
             </div>
             <ul className="space-y-2 text-[var(--color-text-secondary)]">
@@ -161,7 +161,7 @@ export default function CoinbaseVsBinancePage() {
         <div className="space-y-12">
           {/* Fee Comparison */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-yellow-400">💰</span> Fee Comparison
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -170,15 +170,15 @@ export default function CoinbaseVsBinancePage() {
                 <div className="space-y-3 text-[var(--color-text-secondary)]">
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Spot Maker</span>
-                    <span className="font-semibold text-white">0.00%–0.40%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.00%–0.40%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Spot Taker</span>
-                    <span className="font-semibold text-white">0.05%–0.60%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.05%–0.60%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Simple Trade</span>
-                    <span className="font-semibold text-white">Up to 1.49%</span>
+                    <span className="font-semibold text-[var(--color-text)]">Up to 1.49%</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span>Winner Badge</span>
@@ -192,15 +192,15 @@ export default function CoinbaseVsBinancePage() {
                 <div className="space-y-3 text-[var(--color-text-secondary)]">
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Spot Trading</span>
-                    <span className="font-semibold text-white">0.1% (0.075% with BNB)</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.1% (0.075% with BNB)</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Futures Maker</span>
-                    <span className="font-semibold text-white">0.02%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.02%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Futures Taker</span>
-                    <span className="font-semibold text-white">0.04%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.04%</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span>Winner Badge</span>
@@ -210,7 +210,7 @@ export default function CoinbaseVsBinancePage() {
               </div>
             </div>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)] bg-opacity-50">
-              <h3 className="text-lg font-bold text-white mb-3">Fee Analysis</h3>
+              <h3 className="text-lg font-bold text-[var(--color-text)] mb-3">Fee Analysis</h3>
               <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4">
                 Binance wins decisively on fees. For spot trading, Binance charges a flat 0.1% regardless of volume,
                 dropping to 0.075% if you hold BNB tokens. Coinbase Advanced starts at 0% maker fees but charges up to
@@ -226,7 +226,7 @@ export default function CoinbaseVsBinancePage() {
 
           {/* Security & Regulation */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-green-400">🔒</span> Security & Regulation
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -296,25 +296,25 @@ export default function CoinbaseVsBinancePage() {
 
           {/* Coin Selection */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-purple-400">🪙</span> Cryptocurrency Selection
             </h2>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)] mb-6">
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-bold text-blue-400 mb-2">Coinbase</h3>
-                  <p className="text-2xl font-bold text-white mb-2">250+</p>
+                  <p className="text-2xl font-bold text-[var(--color-text)] mb-2">250+</p>
                   <p className="text-[var(--color-text-secondary)]">Focus on quality over quantity. All major assets plus Layer 2 tokens.</p>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-orange-400 mb-2">Binance</h3>
-                  <p className="text-2xl font-bold text-white mb-2">600+</p>
+                  <p className="text-2xl font-bold text-[var(--color-text)] mb-2">600+</p>
                   <p className="text-[var(--color-text-secondary)]">Largest selection. Early access to emerging tokens and micro-caps.</p>
                 </div>
               </div>
               <div className="mt-6 pt-6 border-t border-[var(--color-border)]">
                 <div className="flex items-center justify-between">
-                  <span className="font-semibold text-white">Winner</span>
+                  <span className="font-semibold text-[var(--color-text)]">Winner</span>
                   <span className="inline-block bg-orange-500 bg-opacity-20 border border-orange-400 text-orange-400 px-4 py-2 rounded-lg font-semibold">
                     ⭐ Binance: 600+ coins
                   </span>
@@ -331,7 +331,7 @@ export default function CoinbaseVsBinancePage() {
 
           {/* Trading Features */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-blue-400">📊</span> Trading Features
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -370,7 +370,7 @@ export default function CoinbaseVsBinancePage() {
 
           {/* User Experience */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-green-400">👤</span> User Experience
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -401,7 +401,7 @@ export default function CoinbaseVsBinancePage() {
 
           {/* Verdict */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-yellow-400">🏆</span> Overall Verdict
             </h2>
             <div className="glass rounded-xl p-8 border border-[var(--color-border)] bg-gradient-to-br from-blue-900 bg-opacity-10 to-transparent">
@@ -431,7 +431,7 @@ export default function CoinbaseVsBinancePage() {
             </div>
 
             <div className="mt-8 p-6 rounded-xl bg-[var(--color-bg-card)] border border-[var(--color-border)]">
-              <h3 className="text-lg font-bold text-white mb-3">Summary Score</h3>
+              <h3 className="text-lg font-bold text-[var(--color-text)] mb-3">Summary Score</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="text-center">
                   <p className="text-[var(--color-text-secondary)] text-sm mb-2">Beginner Friendliness</p>
@@ -497,7 +497,7 @@ export default function CoinbaseVsBinancePage() {
             rel="noopener noreferrer sponsored"
             className="glass rounded-xl p-8 border border-blue-400 border-opacity-50 text-center hover:border-opacity-100 transition-all duration-300 group"
           >
-            <h3 className="text-2xl font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">
+            <h3 className="text-2xl font-bold text-blue-400 mb-2 group-hover:text-[var(--color-text)] transition-colors">
               Start with Coinbase
             </h3>
             <p className="text-[var(--color-text-secondary)] mb-4">
@@ -514,7 +514,7 @@ export default function CoinbaseVsBinancePage() {
             rel="noopener noreferrer sponsored"
             className="glass rounded-xl p-8 border border-orange-400 border-opacity-50 text-center hover:border-opacity-100 transition-all duration-300 group"
           >
-            <h3 className="text-2xl font-bold text-orange-400 mb-2 group-hover:text-white transition-colors">
+            <h3 className="text-2xl font-bold text-orange-400 mb-2 group-hover:text-[var(--color-text)] transition-colors">
               Start with Binance
             </h3>
             <p className="text-[var(--color-text-secondary)] mb-4">

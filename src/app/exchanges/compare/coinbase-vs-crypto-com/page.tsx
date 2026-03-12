@@ -16,12 +16,18 @@ export default function CoinbaseVsCryptoComPage() {
       readTime="11 min"
       intro="Coinbase and Crypto.com are two of the most popular crypto platforms, both targeting mainstream users with mobile-first experiences. However, they differ significantly in features, fees, and approach. This comprehensive comparison helps you decide which platform better fits your needs."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "features", title: "Features & Products", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "features", title: "features", level: 2 },
+        { id: "features-products", title: "Features & Products", level: 2 },
+        { id: "crypto-cards", title: "crypto-cards", level: 2 },
         { id: "crypto-cards", title: "Crypto Cards", level: 2 },
-        { id: "security", title: "Security & Regulation", level: 2 },
-        { id: "verdict", title: "Verdict", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-regulation", title: "Security & Regulation", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "verdict", title: "Verdict", level: 2 }
       ]}
       faqs={[
         {

@@ -16,10 +16,14 @@ export default function IcoVsIdoVsIeoPage() {
       readTime="10 min"
       intro="Initial Coin Offerings, Initial DEX Offerings, and Initial Exchange Offerings represent three primary token launch methods with distinct advantages, requirements, and risk profiles."
       toc={[
-        { id: "section-1", title: "Launch Method Overview", level: 2 },
-        { id: "section-2", title: "Detailed Comparison", level: 2 },
-        { id: "section-3", title: "Choosing Your Method", level: 2 },
-        { id: "section-4", title: "Best Practices", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "launch-method-overview", title: "Launch Method Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "detailed-comparison", title: "Detailed Comparison", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "choosing-your-method", title: "Choosing Your Method", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What is the difference between ICO, IDO, and IEO?", answer: "ICOs are self-managed token sales by the project team. IEOs are conducted through centralized exchanges that vet projects and host the sale. IDOs launch on decentralized exchanges with immediate on-chain trading. Each offers different levels of trust, accessibility, and regulatory implications." },

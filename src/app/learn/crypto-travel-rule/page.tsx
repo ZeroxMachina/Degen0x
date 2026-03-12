@@ -12,11 +12,16 @@ export default function CryptoTravelRulePage() {
   return (
     <LearnPageLayout title="Crypto Travel Rule Explained" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="The travel rule is a regulatory requirement that mandates financial institutions to share sender and recipient information when transferring funds above certain thresholds. Applied to cryptocurrency, it requires exchanges and virtual asset service providers (VASPs) to share customer identity data with each other during transfers. This rule has significant implications for crypto privacy and operational complexity."
       toc={[
-        { id: "what-is-it", title: "What Is the Travel Rule?", level: 2 },
-        { id: "how-it-works", title: "How It Works in Crypto", level: 2 },
-        { id: "implementation", title: "Implementation Challenges", level: 2 },
-        { id: "solutions", title: "Technical Solutions", level: 2 },
-        { id: "user-impact", title: "Impact on Users", level: 2 },
+        { id: "what-is-it", title: "what-is-it", level: 2 },
+        { id: "what-is-the-travel-rule", title: "What Is the Travel Rule?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-it-works-in-crypto", title: "How It Works in Crypto", level: 2 },
+        { id: "implementation", title: "implementation", level: 2 },
+        { id: "implementation-challenges", title: "Implementation Challenges", level: 2 },
+        { id: "solutions", title: "solutions", level: 2 },
+        { id: "technical-solutions", title: "Technical Solutions", level: 2 },
+        { id: "user-impact", title: "user-impact", level: 2 },
+        { id: "impact-on-users", title: "Impact on Users", level: 2 }
       ]}
       faqs={[
         { question: "What is the transfer threshold?", answer: "The FATF recommends applying the travel rule to transfers exceeding $1,000 USD or equivalent. However, individual jurisdictions may set lower thresholds. Some jurisdictions apply it to all transfers regardless of amount. The EU's Transfer of Funds Regulation applies the travel rule to all crypto transfers without a minimum threshold." },

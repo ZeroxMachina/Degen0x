@@ -16,10 +16,14 @@ export default function BestFractionalNftsPage() {
       readTime="9 min"
       intro="Fractional NFTs allow multiple people to co-own a single NFT by dividing ownership into fungible tokens. This democratizes access to high-value NFTs that would be unaffordable for individual collectors, while creating new liquidity and investment opportunities in the NFT market."
       toc={[
-        { id: "how-it-works", title: "How Fractional NFTs Work", level: 2 },
-        { id: "platforms", title: "Top Fractionalization Platforms", level: 2 },
-        { id: "investing", title: "Investing in Fractional NFTs", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-fractional-nfts-work", title: "How Fractional NFTs Work", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "top-fractionalization-platforms", title: "Top Fractionalization Platforms", level: 2 },
+        { id: "investing", title: "investing", level: 2 },
+        { id: "investing-in-fractional-nfts", title: "Investing in Fractional NFTs", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What are fractional NFTs?", answer: "Fractional NFTs divide a single NFT into multiple fungible tokens, each representing partial ownership. This allows many people to co-own expensive NFTs like CryptoPunks or Bored Apes by buying fraction tokens rather than the entire NFT." },

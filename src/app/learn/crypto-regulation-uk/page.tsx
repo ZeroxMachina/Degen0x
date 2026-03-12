@@ -25,13 +25,8 @@ export default function CryptoRegulationUKPage() {
       readTime="14 min"
       intro="The United Kingdom has been developing a comprehensive cryptocurrency regulatory framework under the Financial Conduct Authority (FCA). While crypto assets themselves are largely unregulated as financial instruments, the UK has implemented strict anti-money-laundering registration for crypto businesses, crypto promotions rules, and is building out a broader regulatory regime for stablecoins and crypto trading. This guide covers the current regulatory landscape, key rules, and upcoming changes for UK crypto users."
       toc={[
-        { id: "fca-overview", title: "FCA's Role in Crypto Regulation", level: 2 },
-        { id: "aml-registration", title: "AML Registration for Crypto Firms", level: 2 },
-        { id: "promotions", title: "Crypto Promotions Rules", level: 2 },
-        { id: "consumer-warnings", title: "Consumer Protection and Risk Warnings", level: 2 },
-        { id: "stablecoin-framework", title: "Stablecoin Regulatory Framework", level: 2 },
-        { id: "tax-hmrc", title: "HMRC and Tax Treatment", level: 2 },
-        { id: "future-regulation", title: "Future Regulatory Plans", level: 2 },
+        { id: "fca-overview", title: "fca-overview", level: 2 },
+        { id: "fca", title: "FCA", level: 2 }
       ]}
       faqs={[
         {
@@ -58,12 +53,12 @@ export default function CryptoRegulationUKPage() {
           question: "How is crypto taxed in the UK?",
           answer:
             "HMRC treats crypto as property subject to Capital Gains Tax (CGT). The annual CGT allowance is GBP 3,000. Gains above this are taxed at 10% (basic rate) or 20% (higher rate). Crypto received as income (mining, staking, salary) is subject to Income Tax and National Insurance. There is no special crypto tax rate in the UK.",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "How to Buy Crypto in the UK", href: "/exchanges/learn/how-to-buy-crypto-uk", category: "Exchanges" },
         { title: "EU Crypto Regulation (MiCA)", href: "/learn/crypto-regulation-eu", category: "Learn" },
-        { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation", category: "Learn" },
+        { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation", category: "Learn" }
       ]}
     >
       <h2 id="fca-overview">FCA&apos;s Role in Crypto Regulation</h2>

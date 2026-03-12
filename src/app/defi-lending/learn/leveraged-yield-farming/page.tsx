@@ -17,11 +17,16 @@ export default function LeveragedYieldFarmingPage() {
       readTime="14 min"
       intro="Leveraged yield farming amplifies DeFi returns by borrowing additional capital to increase the size of yield-generating positions. While leverage can multiply yields from 2x to 10x or more, it equally amplifies risks including impermanent loss, liquidation, and smart contract exposure. This guide explains the mechanics, strategies, and risk management approaches for leveraged farming."
       toc={[
-        { id: "mechanics", title: "How Leveraged Farming Works", level: 2 },
-        { id: "strategies", title: "Leverage Strategy Types", level: 2 },
-        { id: "platforms", title: "Leveraged Farming Platforms", level: 2 },
-        { id: "liquidation", title: "Understanding Liquidation Risk", level: 2 },
-        { id: "risk-management", title: "Risk Management Best Practices", level: 2 },
+        { id: "mechanics", title: "mechanics", level: 2 },
+        { id: "how-leveraged-farming-works", title: "How Leveraged Farming Works", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "leverage-strategy-types", title: "Leverage Strategy Types", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "leveraged-farming-platforms", title: "Leveraged Farming Platforms", level: 2 },
+        { id: "liquidation", title: "liquidation", level: 2 },
+        { id: "understanding-liquidation-risk", title: "Understanding Liquidation Risk", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management-best-practices", title: "Risk Management Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "How much leverage should I use for farming?", answer: "Start with 2x leverage maximum until you understand the mechanics. Higher leverage (3-5x+) dramatically increases liquidation risk. Most experienced farmers use 2-3x leverage on correlated pairs and lower leverage on volatile pairs." },

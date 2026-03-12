@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Lending Explained: How to Earn Interest (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Lending Explained: How to Earn Interest (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how crypto lending works in DeFi and CeFi, how interest rates are determined, the risks of lending and borrowing crypto, and how to choose a lending platform.",
 };
@@ -17,11 +17,16 @@ export default function CryptoLendingExplainedPage() {
       readTime="9 min read"
       intro="Crypto lending allows you to earn interest on your cryptocurrency holdings by depositing them into lending protocols, where borrowers pay interest to use your assets as loans. This concept mirrors traditional banking — depositors earn yield, borrowers pay interest — but operates through smart contracts instead of banks. Both decentralized (DeFi) and centralized (CeFi) platforms offer lending services, each with different risk profiles, interest rates, and user experiences."
       toc={[
-        { id: "how-it-works", title: "How Crypto Lending Works", level: 2 },
-        { id: "defi-lending", title: "DeFi Lending Protocols", level: 2 },
-        { id: "cefi-lending", title: "CeFi Lending Platforms", level: 2 },
-        { id: "interest-rates", title: "Understanding Interest Rates", level: 2 },
-        { id: "risks", title: "Risks and Best Practices", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-crypto-lending-works", title: "How Crypto Lending Works", level: 2 },
+        { id: "defi-lending", title: "defi-lending", level: 2 },
+        { id: "defi-lending-protocols", title: "DeFi Lending Protocols", level: 2 },
+        { id: "cefi-lending", title: "cefi-lending", level: 2 },
+        { id: "cefi-lending-platforms", title: "CeFi Lending Platforms", level: 2 },
+        { id: "interest-rates", title: "interest-rates", level: 2 },
+        { id: "understanding-interest-rates", title: "Understanding Interest Rates", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-best-practices", title: "Risks and Best Practices", level: 2 }
       ]}
       faqs={[
         {

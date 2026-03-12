@@ -132,7 +132,7 @@ export default function BestDebitCardsPage() {
     "@type": "Article",
     headline: `7 Best Crypto Debit Cards of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -151,7 +151,7 @@ export default function BestDebitCardsPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           7 Best Crypto Debit Cards of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -168,17 +168,17 @@ export default function BestDebitCardsPage() {
             supported cryptocurrencies, availability, and overall user experience.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            The <strong className="text-white">Crypto.com Visa Card</strong> earns our top spot for its
-            unmatched combination of cashback rewards and premium perks. The <strong className="text-white">Coinbase Card</strong> is
+            The <strong className="text-[var(--color-text)]">Crypto.com Visa Card</strong> earns our top spot for its
+            unmatched combination of cashback rewards and premium perks. The <strong className="text-[var(--color-text)]">Coinbase Card</strong> is
             the best choice for US users who want flexible reward options, and
-            the <strong className="text-white">Binance Card</strong> offers the highest potential cashback
+            the <strong className="text-[var(--color-text)]">Binance Card</strong> offers the highest potential cashback
             for users outside the United States.
           </p>
         </div>
 
         {/* Rankings */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
           <div className="space-y-4">
             {debitCards.map((card, index) => (
               <div
@@ -187,11 +187,11 @@ export default function BestDebitCardsPage() {
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold">
                       {index + 1}
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-white">{card.name}</h3>
+                      <h3 className="text-lg font-semibold text-[var(--color-text)]">{card.name}</h3>
                       <div className="text-sm text-[var(--color-accent)]">{card.rating}/5</div>
                     </div>
                   </div>
@@ -246,16 +246,16 @@ export default function BestDebitCardsPage() {
 
         {/* Comparison Table */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Quick Comparison</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Quick Comparison</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left">
               <thead>
                 <tr className="border-b border-[var(--color-border)]">
-                  <th className="py-3 px-4 text-white font-semibold">Card</th>
-                  <th className="py-3 px-4 text-white font-semibold">Max Cashback</th>
-                  <th className="py-3 px-4 text-white font-semibold">Annual Fee</th>
-                  <th className="py-3 px-4 text-white font-semibold">Network</th>
-                  <th className="py-3 px-4 text-white font-semibold">Availability</th>
+                  <th className="py-3 px-4 text-[var(--color-text)] font-semibold">Card</th>
+                  <th className="py-3 px-4 text-[var(--color-text)] font-semibold">Max Cashback</th>
+                  <th className="py-3 px-4 text-[var(--color-text)] font-semibold">Annual Fee</th>
+                  <th className="py-3 px-4 text-[var(--color-text)] font-semibold">Network</th>
+                  <th className="py-3 px-4 text-[var(--color-text)] font-semibold">Availability</th>
                 </tr>
               </thead>
               <tbody className="text-[var(--color-text-secondary)]">
@@ -269,7 +269,7 @@ export default function BestDebitCardsPage() {
                   { name: "Nexo Card", cashback: "2% NEXO/BTC", fee: "Free", network: "Mastercard", avail: "EU / Select" },
                 ].map((row) => (
                   <tr key={row.name} className="border-b border-[var(--color-border)]/50">
-                    <td className="py-3 px-4 text-white font-medium">{row.name}</td>
+                    <td className="py-3 px-4 text-[var(--color-text)] font-medium">{row.name}</td>
                     <td className="py-3 px-4">{row.cashback}</td>
                     <td className="py-3 px-4">{row.fee}</td>
                     <td className="py-3 px-4">{row.network}</td>
@@ -283,7 +283,7 @@ export default function BestDebitCardsPage() {
 
         {/* How to Choose */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">How to Choose a Crypto Debit Card</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Choose a Crypto Debit Card</h2>
           <div className="space-y-4 text-[var(--color-text-secondary)]">
             <p>
               Choosing the right crypto debit card depends on your spending habits, location, and
@@ -291,19 +291,19 @@ export default function BestDebitCardsPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">Cashback Rate</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">Cashback Rate</h3>
                 <p className="text-sm">Higher cashback is better, but consider whether you are comfortable holding the reward token. Some cards pay in Bitcoin, others in proprietary tokens with less liquidity.</p>
               </div>
               <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">Staking Requirements</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">Staking Requirements</h3>
                 <p className="text-sm">Many cards require you to lock up tokens to unlock the best reward tiers. Calculate whether the rewards justify the staking commitment and the associated opportunity cost.</p>
               </div>
               <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">Geographic Availability</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">Geographic Availability</h3>
                 <p className="text-sm">Some cards are US-only, others are EU-focused, and some are truly global. Verify availability in your country before getting excited about a particular card.</p>
               </div>
               <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">Total Cost of Ownership</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">Total Cost of Ownership</h3>
                 <p className="text-sm">Factor in conversion spreads, ATM fees, inactivity fees, and monthly subscription costs. A card with high cashback but high fees might not save you money overall.</p>
               </div>
             </div>

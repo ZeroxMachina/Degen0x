@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -382,7 +384,7 @@ function EmbedModal({ isOpen, onClose, portfolioId }: EmbedModalProps) {
   if (!isOpen) return null;
 
   const embedCode = `<iframe
-  src="https://cryptodegen.com/tools/portfolio-widget?embed=${portfolioId}"
+  src="https://degen0x.com/tools/portfolio-widget?embed=${portfolioId}"
   width="100%"
   height="600"
   style="border: 1px solid #30363d; border-radius: 8px; background: #0d1117;"
@@ -502,18 +504,6 @@ function EmbedModal({ isOpen, onClose, portfolioId }: EmbedModalProps) {
   );
 }
 
-export const metadata = {
-  title: "Crypto Portfolio Widget | CryptoDegen",
-  description: "Track your crypto holdings in real-time with our interactive portfolio widget. Add coins, see allocation charts, and export embeddable widgets.",
-  keywords: "crypto portfolio, portfolio tracker, crypto allocation, portfolio widget, DeFi",
-  openGraph: {
-    title: "Crypto Portfolio Widget | CryptoDegen",
-    description: "Track your crypto holdings with real-time prices and allocation charts",
-    url: "https://cryptodegen.com/tools/portfolio-widget",
-    type: "website",
-  },
-};
-
 export default function PortfolioWidgetPage() {
   const [holdings, setHoldings] = useState<Holding[]>([
     {
@@ -563,7 +553,7 @@ export default function PortfolioWidgetPage() {
       totalInvested: totalInvested.toFixed(2),
       totalProfit: totalProfit.toFixed(2),
       totalProfitPercent,
-      profitColor: parseFloat(totalProfit) >= 0 ? "#3fb950" : "#f85149",
+      profitColor: totalProfit >= 0 ? "#3fb950" : "#f85149",
     };
   }, [holdings]);
 

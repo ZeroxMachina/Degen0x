@@ -17,10 +17,14 @@ export default function CryptoCardLimitsPage() {
       readTime="7 min"
       intro="Every crypto card has limits on spending, ATM withdrawals, and card loading that can affect how you use the card in daily life. These limits vary significantly between platforms and card tiers, with premium tiers generally offering much higher limits. Understanding these limits before choosing a card helps ensure it meets your spending needs without inconvenient restrictions."
       toc={[
-        { id: "types-of-limits", title: "Types of Card Limits", level: 2 },
+        { id: "types-of-limits", title: "types-of-limits", level: 2 },
+        { id: "types-of-card-limits", title: "Types of Card Limits", level: 2 },
+        { id: "tier-based-limits", title: "tier-based-limits", level: 2 },
         { id: "tier-based-limits", title: "Tier-Based Limits", level: 2 },
-        { id: "increasing-limits", title: "How to Increase Limits", level: 2 },
-        { id: "working-within-limits", title: "Working Within Limits", level: 2 },
+        { id: "increasing-limits", title: "increasing-limits", level: 2 },
+        { id: "how-to-increase-limits", title: "How to Increase Limits", level: 2 },
+        { id: "working-within-limits", title: "working-within-limits", level: 2 },
+        { id: "working-within-limits", title: "Working Within Limits", level: 2 }
       ]}
       faqs={[
         { question: "What happens if I exceed my spending limit?", answer: "Transactions that exceed your daily or monthly spending limit will be declined. The card platform does not charge an over-limit fee in most cases. The limit typically resets at midnight UTC or at the beginning of the next monthly period, depending on the platform and limit type." },

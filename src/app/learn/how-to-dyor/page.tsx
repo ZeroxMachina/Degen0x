@@ -17,12 +17,18 @@ export default function HowToDYORPage() {
       readTime="14 min"
       intro="DYOR — Do Your Own Research — is more than just a popular crypto slogan. It is the single most important skill for anyone participating in the cryptocurrency market. With thousands of projects, constant hype cycles, and sophisticated scams, the ability to independently evaluate a crypto project's fundamentals, team, technology, and tokenomics is what separates informed investors from those who lose money following the crowd. This guide provides a structured framework for researching crypto projects effectively."
       toc={[
-        { id: "why-dyor", title: "Why DYOR Matters", level: 2 },
-        { id: "evaluating-team", title: "Evaluating the Team", level: 2 },
-        { id: "technology-product", title: "Analyzing Technology and Product", level: 2 },
-        { id: "tokenomics", title: "Understanding Tokenomics", level: 2 },
-        { id: "on-chain-analysis", title: "On-Chain Analysis and Tools", level: 2 },
-        { id: "community-sentiment", title: "Community and Market Sentiment", level: 2 },
+        { id: "why-dyor", title: "why-dyor", level: 2 },
+        { id: "why-dyor-matters", title: "Why DYOR Matters", level: 2 },
+        { id: "evaluating-team", title: "evaluating-team", level: 2 },
+        { id: "evaluating-the-team", title: "Evaluating the Team", level: 2 },
+        { id: "technology-product", title: "technology-product", level: 2 },
+        { id: "analyzing-technology-and-product", title: "Analyzing Technology and Product", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "understanding-tokenomics", title: "Understanding Tokenomics", level: 2 },
+        { id: "on-chain-analysis", title: "on-chain-analysis", level: 2 },
+        { id: "on-chain-analysis-and-tools", title: "On-Chain Analysis and Tools", level: 2 },
+        { id: "community-sentiment", title: "community-sentiment", level: 2 },
+        { id: "community-and-market-sentiment", title: "Community and Market Sentiment", level: 2 }
       ]}
       faqs={[
         {

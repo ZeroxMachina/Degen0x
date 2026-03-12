@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function InitialDexOfferingPage() {
   return (
     <LearnPageLayout title="What Is an Initial DEX Offering (IDO)?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="An Initial DEX Offering (IDO) is a token launch method where a new cryptocurrency is offered to the public through a decentralized exchange (DEX) or launchpad platform. Unlike ICOs (Initial Coin Offerings) that send funds directly to a project team, IDOs typically use smart contract-based mechanisms to create immediate liquidity and fair price discovery. IDOs have become the dominant token launch method in DeFi since 2021."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "how-it-works", title: "How It Works", level: 2 },{ id: "comparison", title: "IDO vs ICO vs IEO", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-it-works", title: "How It Works", level: 2 },
+        { id: "comparison", title: "comparison", level: 2 },
+        { id: "ido-vs-ico-vs-ieo", title: "IDO vs ICO vs IEO", level: 2 }
+      ]}
       faqs={[
         { question: "How can I participate in an IDO?", answer: "IDO participation typically requires holding the launchpad platform's token (like staking CAKE for PancakeSwap launches or holding tier-qualifying amounts on launchpads like DAO Maker or Seedify). Many IDOs use a lottery or tiered allocation system where larger stakers receive guaranteed allocations while smaller participants enter a lottery. Whitelisting through social media tasks or community participation is also common." },
         { question: "Are IDOs safe?", answer: "IDOs carry significant risk. While the decentralized launch mechanism itself is transparent, the underlying project may still fail, deliver a poor product, or turn out to be a scam. The immediate trading available after IDOs can lead to extreme price volatility. Always research the team, audit status, tokenomics, and vesting schedules before participating in any IDO." },

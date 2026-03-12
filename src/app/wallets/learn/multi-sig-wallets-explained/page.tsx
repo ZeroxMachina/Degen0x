@@ -16,12 +16,18 @@ export default function MultiSigWalletsExplainedPage() {
       readTime="11 min"
       intro="Multi-signature (multi-sig) wallets require multiple private keys to authorize a transaction, rather than just one. This creates a security model where no single person can unilaterally move funds. Multi-sig is used by businesses, DAOs, families, and security-conscious individuals to protect crypto assets against single-point-of-failure risks."
       toc={[
-        { id: "what-is-multisig", title: "What Is Multi-Sig?", level: 2 },
-        { id: "how-it-works", title: "How Multi-Sig Works", level: 2 },
-        { id: "use-cases", title: "Common Use Cases", level: 2 },
-        { id: "popular-solutions", title: "Popular Multi-Sig Solutions", level: 2 },
-        { id: "pros-cons", title: "Advantages & Disadvantages", level: 2 },
-        { id: "setup", title: "Setting Up a Multi-Sig Wallet", level: 2 },
+        { id: "what-is-multisig", title: "what-is-multisig", level: 2 },
+        { id: "what-is-multi-sig", title: "What Is Multi-Sig?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-multi-sig-works", title: "How Multi-Sig Works", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "common-use-cases", title: "Common Use Cases", level: 2 },
+        { id: "popular-solutions", title: "popular-solutions", level: 2 },
+        { id: "popular-multi-sig-solutions", title: "Popular Multi-Sig Solutions", level: 2 },
+        { id: "pros-cons", title: "pros-cons", level: 2 },
+        { id: "advantages-disadvantages", title: "Advantages & Disadvantages", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "setting-up-a-multi-sig-wallet", title: "Setting Up a Multi-Sig Wallet", level: 2 }
       ]}
       faqs={[
         {

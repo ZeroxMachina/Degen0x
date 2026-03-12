@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Radiant Capital Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Radiant Capital Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Radiant Capital review covering cross-chain lending, LayerZero integration, dLP tokenomics, security concerns, and yield opportunities.",
 };
 

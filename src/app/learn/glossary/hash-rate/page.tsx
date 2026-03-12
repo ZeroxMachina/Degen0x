@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Hash Rate? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Hash Rate? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what hash rate is, how it measures network security, and why it matters for proof-of-work blockchains.",
 };
@@ -17,11 +17,16 @@ export default function HashRatePage() {
       readTime="5 min"
       intro="Hash rate measures the total computational power being used to mine and process transactions on a proof-of-work blockchain. It represents the number of hash calculations the network can perform per second. A higher hash rate means more miners are competing, making the network more secure and harder to attack. Bitcoin's hash rate is measured in exahashes per second (EH/s)."
       toc={[
-        { id: "definition", title: "What Is Hash Rate?", level: 2 },
-        { id: "measurement", title: "How Hash Rate Is Measured", level: 2 },
-        { id: "security", title: "Hash Rate and Security", level: 2 },
-        { id: "trends", title: "Hash Rate Trends", level: 2 },
-        { id: "why-it-matters", title: "Why Hash Rate Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-hash-rate", title: "What Is Hash Rate?", level: 2 },
+        { id: "measurement", title: "measurement", level: 2 },
+        { id: "how-hash-rate-is-measured", title: "How Hash Rate Is Measured", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "hash-rate-and-security", title: "Hash Rate and Security", level: 2 },
+        { id: "trends", title: "trends", level: 2 },
+        { id: "hash-rate-trends", title: "Hash Rate Trends", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-hash-rate-matters", title: "Why Hash Rate Matters", level: 2 }
       ]}
       faqs={[
         {

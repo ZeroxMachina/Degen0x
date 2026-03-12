@@ -16,10 +16,14 @@ export default function BitcoinSupercycleTheoryPage() {
       readTime="10 min"
       intro="The Bitcoin supercycle theory proposes that institutional adoption, sovereign interest, and monetary trends could drive a prolonged bull market that breaks from Bitcoin's historical four-year boom-and-bust halving cycles."
       toc={[
-        { id: "section-1", title: "Understanding the Supercycle", level: 2 },
-        { id: "section-2", title: "Driving Forces", level: 2 },
-        { id: "section-3", title: "Historical Context", level: 2 },
-        { id: "section-4", title: "Investment Implications", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "understanding-the-supercycle", title: "Understanding the Supercycle", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "driving-forces", title: "Driving Forces", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "historical-context", title: "Historical Context", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "investment-implications", title: "Investment Implications", level: 2 }
       ]}
       faqs={[
         { question: "What is the Bitcoin supercycle theory?", answer: "The supercycle theory suggests that Bitcoin could experience a prolonged bull market lasting years rather than following its traditional four-year halving cycle. This would be driven by unprecedented institutional adoption, sovereign accumulation, and macroeconomic conditions favoring hard assets." },

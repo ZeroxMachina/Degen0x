@@ -22,7 +22,7 @@ export const exchanges: Product[] = [
     ],
     fees: "0%–0.60% (Coinbase Advanced); up to 1.49% on simple trades",
     bestFor: "Beginners & US-based traders",
-    affiliateUrl: "https://cryptodegen.com/go/coinbase",
+    affiliateUrl: "https://degen0x.com/go/coinbase",
     category: "exchanges",
     featured: true,
   },
@@ -47,7 +47,7 @@ export const exchanges: Product[] = [
     ],
     fees: "0.1% spot (0.075% with BNB discount)",
     bestFor: "Advanced traders & altcoin enthusiasts",
-    affiliateUrl: "https://cryptodegen.com/go/binance",
+    affiliateUrl: "https://degen0x.com/go/binance",
     category: "exchanges",
     featured: true,
   },
@@ -72,7 +72,7 @@ export const exchanges: Product[] = [
     ],
     fees: "0%–0.26% maker/taker (Kraken Pro)",
     bestFor: "Security-conscious traders",
-    affiliateUrl: "https://cryptodegen.com/go/kraken",
+    affiliateUrl: "https://degen0x.com/go/kraken",
     category: "exchanges",
     featured: true,
   },
@@ -97,7 +97,7 @@ export const exchanges: Product[] = [
     ],
     fees: "0.2%–0.4% maker/taker (ActiveTrader); higher on simple interface",
     bestFor: "Security-focused US investors",
-    affiliateUrl: "https://cryptodegen.com/go/gemini",
+    affiliateUrl: "https://degen0x.com/go/gemini",
     category: "exchanges",
   },
   {
@@ -121,7 +121,7 @@ export const exchanges: Product[] = [
     ],
     fees: "0.075%–0.1% maker/taker on exchange",
     bestFor: "Crypto spending & rewards",
-    affiliateUrl: "https://cryptodegen.com/go/crypto-com",
+    affiliateUrl: "https://degen0x.com/go/crypto-com",
     category: "exchanges",
   },
   {
@@ -145,7 +145,7 @@ export const exchanges: Product[] = [
     ],
     fees: "0.1% spot (0.08% with KCS discount)",
     bestFor: "Altcoin hunters & early token access",
-    affiliateUrl: "https://cryptodegen.com/go/kucoin",
+    affiliateUrl: "https://degen0x.com/go/kucoin",
     category: "exchanges",
   },
   {
@@ -169,7 +169,7 @@ export const exchanges: Product[] = [
     ],
     fees: "0.1% spot; 0.01%/0.06% futures maker/taker",
     bestFor: "Derivatives & futures traders",
-    affiliateUrl: "https://cryptodegen.com/go/bybit",
+    affiliateUrl: "https://degen0x.com/go/bybit",
     category: "exchanges",
   },
   {
@@ -193,7 +193,7 @@ export const exchanges: Product[] = [
     ],
     fees: "0.08%–0.1% spot maker/taker",
     bestFor: "Multi-asset trading & Web3",
-    affiliateUrl: "https://cryptodegen.com/go/okx",
+    affiliateUrl: "https://degen0x.com/go/okx",
     category: "exchanges",
   },
   {
@@ -217,7 +217,7 @@ export const exchanges: Product[] = [
     ],
     fees: "0.1% spot; 0.02%/0.06% futures maker/taker",
     bestFor: "Copy trading & social trading",
-    affiliateUrl: "https://cryptodegen.com/go/bitget",
+    affiliateUrl: "https://degen0x.com/go/bitget",
     category: "exchanges",
   },
   {
@@ -241,7 +241,7 @@ export const exchanges: Product[] = [
     ],
     fees: "0.1% spot (0.08% with GT discount)",
     bestFor: "Maximum altcoin selection",
-    affiliateUrl: "https://cryptodegen.com/go/gate-io",
+    affiliateUrl: "https://degen0x.com/go/gate-io",
     category: "exchanges",
   },
 ];
@@ -298,7 +298,7 @@ export const exchangeDetailedComparisons: Record<string, ComparisonItem> = {
     name: "Coinbase",
     slug: "coinbase",
     rating: 4.6,
-    affiliateUrl: "https://cryptodegen.com/go/coinbase",
+    affiliateUrl: "https://degen0x.com/go/coinbase",
     features: {
       "Trading Fees": "0%–0.60%",
       "Number of Coins": "250+",
@@ -316,7 +316,7 @@ export const exchangeDetailedComparisons: Record<string, ComparisonItem> = {
     name: "Binance",
     slug: "binance",
     rating: 4.7,
-    affiliateUrl: "https://cryptodegen.com/go/binance",
+    affiliateUrl: "https://degen0x.com/go/binance",
     features: {
       "Trading Fees": "0.1% (0.075% w/ BNB)",
       "Number of Coins": "600+",
@@ -334,7 +334,7 @@ export const exchangeDetailedComparisons: Record<string, ComparisonItem> = {
     name: "Kraken",
     slug: "kraken",
     rating: 4.5,
-    affiliateUrl: "https://cryptodegen.com/go/kraken",
+    affiliateUrl: "https://degen0x.com/go/kraken",
     features: {
       "Trading Fees": "0%–0.26%",
       "Number of Coins": "200+",
@@ -352,7 +352,7 @@ export const exchangeDetailedComparisons: Record<string, ComparisonItem> = {
     name: "Gemini",
     slug: "gemini",
     rating: 4.3,
-    affiliateUrl: "https://cryptodegen.com/go/gemini",
+    affiliateUrl: "https://degen0x.com/go/gemini",
     features: {
       "Trading Fees": "0.2%–0.4%",
       "Number of Coins": "100+",
@@ -370,7 +370,7 @@ export const exchangeDetailedComparisons: Record<string, ComparisonItem> = {
     name: "Crypto.com",
     slug: "crypto-com",
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/crypto-com",
+    affiliateUrl: "https://degen0x.com/go/crypto-com",
     features: {
       "Trading Fees": "0.075%–0.1%",
       "Number of Coins": "250+",
@@ -388,7 +388,7 @@ export const exchangeDetailedComparisons: Record<string, ComparisonItem> = {
     name: "KuCoin",
     slug: "kucoin",
     rating: 4.2,
-    affiliateUrl: "https://cryptodegen.com/go/kucoin",
+    affiliateUrl: "https://degen0x.com/go/kucoin",
     features: {
       "Trading Fees": "0.1% (0.08% w/ KCS)",
       "Number of Coins": "800+",
@@ -406,7 +406,7 @@ export const exchangeDetailedComparisons: Record<string, ComparisonItem> = {
     name: "Bybit",
     slug: "bybit",
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/bybit",
+    affiliateUrl: "https://degen0x.com/go/bybit",
     features: {
       "Trading Fees": "0.1% spot; 0.01%/0.06% futures",
       "Number of Coins": "500+",
@@ -424,7 +424,7 @@ export const exchangeDetailedComparisons: Record<string, ComparisonItem> = {
     name: "OKX",
     slug: "okx",
     rating: 4.3,
-    affiliateUrl: "https://cryptodegen.com/go/okx",
+    affiliateUrl: "https://degen0x.com/go/okx",
     features: {
       "Trading Fees": "0.08%–0.1%",
       "Number of Coins": "350+",
@@ -442,7 +442,7 @@ export const exchangeDetailedComparisons: Record<string, ComparisonItem> = {
     name: "Bitget",
     slug: "bitget",
     rating: 4.1,
-    affiliateUrl: "https://cryptodegen.com/go/bitget",
+    affiliateUrl: "https://degen0x.com/go/bitget",
     features: {
       "Trading Fees": "0.1% spot; 0.02%/0.06% futures",
       "Number of Coins": "600+",
@@ -460,7 +460,7 @@ export const exchangeDetailedComparisons: Record<string, ComparisonItem> = {
     name: "Gate.io",
     slug: "gate-io",
     rating: 4.0,
-    affiliateUrl: "https://cryptodegen.com/go/gate-io",
+    affiliateUrl: "https://degen0x.com/go/gate-io",
     features: {
       "Trading Fees": "0.1% (0.08% w/ GT)",
       "Number of Coins": "1,700+",

@@ -52,7 +52,7 @@ export default function TaxesHubPage() {
       />
 
       <div className="mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Crypto Taxes Hub
         </h1>
         <p className="text-xl text-[var(--color-text-secondary)] max-w-3xl">
@@ -66,7 +66,7 @@ export default function TaxesHubPage() {
 
       {/* Top Products */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">
           Top Crypto Tax Software
         </h2>
         <div className="grid gap-6">
@@ -91,7 +91,7 @@ export default function TaxesHubPage() {
 
       {/* Categories */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Browse by Category</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Browse by Category</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {subcategories.map((cat) => (
             <Link
@@ -99,7 +99,7 @@ export default function TaxesHubPage() {
               href={cat.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover"
             >
-              <h3 className="text-lg font-semibold text-white mb-2">{cat.name}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{cat.description}</p>
             </Link>
           ))}
@@ -108,7 +108,7 @@ export default function TaxesHubPage() {
 
       {/* Guides */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Tax Guides & Education</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Tax Guides & Education</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {guides.map((guide) => (
             <Link
@@ -117,7 +117,7 @@ export default function TaxesHubPage() {
               className="flex items-center gap-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
             >
               <span className="text-[var(--color-primary)]">&#8594;</span>
-              <span className="text-sm font-medium text-white">{guide.name}</span>
+              <span className="text-sm font-medium text-[var(--color-text)]">{guide.name}</span>
             </Link>
           ))}
         </div>
@@ -125,7 +125,7 @@ export default function TaxesHubPage() {
 
       {/* Calculators */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Tax Calculators</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Tax Calculators</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {calculators.map((calc) => (
             <Link
@@ -133,7 +133,7 @@ export default function TaxesHubPage() {
               href={calc.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover"
             >
-              <h3 className="text-lg font-semibold text-white mb-2">{calc.name}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{calc.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{calc.description}</p>
             </Link>
           ))}
@@ -142,7 +142,7 @@ export default function TaxesHubPage() {
 
       {/* Reviews Links */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Software Reviews</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Software Reviews</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {TAX_PRODUCTS.map((product) => (
             <Link
@@ -150,7 +150,7 @@ export default function TaxesHubPage() {
               href={`/taxes/reviews/${product.slug}`}
               className="flex items-center justify-between rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
             >
-              <span className="text-sm font-medium text-white">{product.name} Review</span>
+              <span className="text-sm font-medium text-[var(--color-text)]">{product.name} Review</span>
               <span className="text-xs text-[var(--color-text-secondary)]">{product.rating}/5</span>
             </Link>
           ))}
@@ -159,25 +159,25 @@ export default function TaxesHubPage() {
 
       {/* Comparisons */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Head-to-Head Comparisons</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Head-to-Head Comparisons</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link
             href="/taxes/compare/koinly-vs-cointracker"
             className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
           >
-            <span className="text-sm font-medium text-white">Koinly vs CoinTracker</span>
+            <span className="text-sm font-medium text-[var(--color-text)]">Koinly vs CoinTracker</span>
           </Link>
           <Link
             href="/taxes/compare/taxbit-vs-cointracker"
             className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
           >
-            <span className="text-sm font-medium text-white">TaxBit vs CoinTracker</span>
+            <span className="text-sm font-medium text-[var(--color-text)]">TaxBit vs CoinTracker</span>
           </Link>
           <Link
             href="/taxes/compare/koinly-vs-cryptotaxcalculator"
             className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
           >
-            <span className="text-sm font-medium text-white">Koinly vs CryptoTaxCalculator</span>
+            <span className="text-sm font-medium text-[var(--color-text)]">Koinly vs CryptoTaxCalculator</span>
           </Link>
         </div>
       </section>

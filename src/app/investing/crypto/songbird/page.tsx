@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Songbird (SGB)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Songbird (SGB)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Songbird (SGB), Flare's canary network for testing. Discover how it works, tokenomics, use cases, and how to buy SGB.",
 };
@@ -17,12 +17,18 @@ export default function SongbirdPage() {
       readTime="8 min read"
       intro="Songbird is the canary network for the Flare blockchain, serving as a live testing environment where new features and governance proposals are battle-tested before deployment on Flare mainnet. Similar to Kusama's relationship with Polkadot, Songbird operates as a fully functional blockchain with real economic value, its own token (SGB), and a complete ecosystem including FTSO oracle and DeFi applications."
       toc={[
-        { id: "what-is", title: "What Is Songbird?", level: 2 },
-        { id: "how-it-works", title: "How Does Songbird Work?", level: 2 },
-        { id: "tokenomics", title: "SGB Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SGB", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-songbird", title: "What Is Songbird?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-songbird-work", title: "How Does Songbird Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "sgb-tokenomics", title: "SGB Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-sgb", title: "How to Buy SGB", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

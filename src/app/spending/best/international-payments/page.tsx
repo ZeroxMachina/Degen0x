@@ -16,11 +16,16 @@ export default function BestInternationalPaymentsPage() {
       readTime="10 min"
       intro="Cryptocurrency offers compelling advantages for international payments: lower fees than traditional wire transfers, faster settlement times, and no reliance on correspondent banking networks. Whether sending money to family abroad or paying international suppliers, crypto provides efficient alternatives to legacy cross-border payment systems."
       toc={[
-        { id: "overview", title: "Why Crypto for International Payments", level: 2 },
-        { id: "best-cryptos", title: "Best Cryptocurrencies for Transfers", level: 2 },
-        { id: "platforms", title: "Top International Payment Platforms", level: 2 },
-        { id: "remittances", title: "Crypto Remittance Services", level: 2 },
-        { id: "considerations", title: "Key Considerations", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "why-crypto-for-international-payments", title: "Why Crypto for International Payments", level: 2 },
+        { id: "best-cryptos", title: "best-cryptos", level: 2 },
+        { id: "best-cryptocurrencies-for-transfers", title: "Best Cryptocurrencies for Transfers", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "top-international-payment-platforms", title: "Top International Payment Platforms", level: 2 },
+        { id: "remittances", title: "remittances", level: 2 },
+        { id: "crypto-remittance-services", title: "Crypto Remittance Services", level: 2 },
+        { id: "considerations", title: "considerations", level: 2 },
+        { id: "key-considerations", title: "Key Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Is it cheaper to send money internationally with crypto?", answer: "Generally yes. Traditional wire transfers cost $25-50 and take 2-5 business days. Crypto transfers using stablecoins on efficient networks like Stellar or Tron cost pennies and settle in minutes, though the recipient may incur conversion fees." },

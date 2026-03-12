@@ -55,7 +55,7 @@ export default function BestBitcoinPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Exchanges to Buy Bitcoin ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -71,13 +71,13 @@ export default function BestBitcoinPage() {
           dramatically. We have ranked the best platforms for purchasing Bitcoin based on fees,
           payment methods, speed, and overall user experience.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">How to Buy Bitcoin: Step by Step</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">How to Buy Bitcoin: Step by Step</h2>
         <div className="space-y-3 text-[var(--color-text-secondary)]">
-          <p><strong className="text-white">Step 1:</strong> Choose an exchange from our ranked list below and create an account.</p>
-          <p><strong className="text-white">Step 2:</strong> Complete identity verification (KYC). Have your ID and proof of address ready.</p>
-          <p><strong className="text-white">Step 3:</strong> Deposit funds via bank transfer, debit card, or other supported payment method.</p>
-          <p><strong className="text-white">Step 4:</strong> Navigate to the Bitcoin (BTC) trading page and place your buy order.</p>
-          <p><strong className="text-white">Step 5:</strong> Consider transferring large holdings to a personal wallet for safekeeping.</p>
+          <p><strong className="text-[var(--color-text)]">Step 1:</strong> Choose an exchange from our ranked list below and create an account.</p>
+          <p><strong className="text-[var(--color-text)]">Step 2:</strong> Complete identity verification (KYC). Have your ID and proof of address ready.</p>
+          <p><strong className="text-[var(--color-text)]">Step 3:</strong> Deposit funds via bank transfer, debit card, or other supported payment method.</p>
+          <p><strong className="text-[var(--color-text)]">Step 4:</strong> Navigate to the Bitcoin (BTC) trading page and place your buy order.</p>
+          <p><strong className="text-[var(--color-text)]">Step 5:</strong> Consider transferring large holdings to a personal wallet for safekeeping.</p>
         </div>
       </div>
 

@@ -49,7 +49,7 @@ export default function USExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in the US ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -66,7 +66,7 @@ export default function USExchangesPage() {
           compliance. Here are the best crypto exchanges for US-based traders, all of which
           are fully licensed and compliant with federal and state regulations.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">US Regulatory Landscape</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">US Regulatory Landscape</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           The US crypto regulatory environment is complex, with oversight from the SEC, CFTC,
           FinCEN, and individual state regulators. Exchanges operating in the US must register
@@ -89,18 +89,18 @@ export default function USExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">State-by-State Availability</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">State-by-State Availability</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Not all exchanges operate in every US state. New York and Hawaii have particularly
           strict requirements. Here is a general overview:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Available in All 50 States</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Available in All 50 States</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Coinbase is the only major exchange available in all 50 US states, including New York.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Most States</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Most States</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Kraken and Gemini are available in most states. Check their websites for specific state restrictions.</p>
           </div>
         </div>

@@ -180,7 +180,7 @@ export default function MarketHeatmapPage() {
                 key={tf}
                 onClick={() => setTimeframe(tf)}
                 className={`px-4 py-2 text-sm font-bold transition-colors ${
-                  timeframe === tf ? 'bg-indigo-600 text-white' : 'text-gray-400 hover:text-white hover:bg-[#1c2330]'
+                  timeframe === tf ? 'bg-indigo-600 text-[var(--color-text)]' : 'text-gray-400 hover:text-[var(--color-text)] hover:bg-[#1c2330]'
                 }`}
               >
                 {tf}
@@ -193,7 +193,7 @@ export default function MarketHeatmapPage() {
                 key={mode}
                 onClick={() => setSortMode(mode)}
                 className={`px-4 py-2 text-sm font-bold transition-colors ${
-                  sortMode === mode ? 'bg-cyan-600 text-white' : 'text-gray-400 hover:text-white hover:bg-[#1c2330]'
+                  sortMode === mode ? 'bg-cyan-600 text-[var(--color-text)]' : 'text-gray-400 hover:text-[var(--color-text)] hover:bg-[#1c2330]'
                 }`}
               >
                 {label}
@@ -206,7 +206,7 @@ export default function MarketHeatmapPage() {
                 key={s}
                 onClick={() => setSelectedSector(s)}
                 className={`px-3 py-2 text-xs font-bold transition-colors ${
-                  selectedSector === s ? 'bg-purple-600 text-white' : 'text-gray-400 hover:text-white hover:bg-[#1c2330]'
+                  selectedSector === s ? 'bg-purple-600 text-[var(--color-text)]' : 'text-gray-400 hover:text-[var(--color-text)] hover:bg-[#1c2330]'
                 }`}
               >
                 {s}
@@ -268,12 +268,12 @@ export default function MarketHeatmapPage() {
                   onMouseLeave={() => setHoveredCoin(null)}
                 >
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-2 text-center">
-                    <div className="text-white font-black text-sm md:text-base drop-shadow-lg">{coin.symbol}</div>
-                    <div className="text-white/90 font-bold text-xs drop-shadow" style={{ color: textColor(change) }}>
+                    <div className="text-[var(--color-text)] font-black text-sm md:text-base drop-shadow-lg">{coin.symbol}</div>
+                    <div className="text-[var(--color-text)]/90 font-bold text-xs drop-shadow" style={{ color: textColor(change) }}>
                       {change > 0 ? '+' : ''}{change.toFixed(1)}%
                     </div>
                     {size > 100 && (
-                      <div className="text-white/60 text-[10px] mt-0.5">{formatMcap(coin.marketCap)}</div>
+                      <div className="text-[var(--color-text)]/60 text-[10px] mt-0.5">{formatMcap(coin.marketCap)}</div>
                     )}
                   </div>
                 </div>

@@ -17,10 +17,14 @@ export default function CashbackVsRewardsPage() {
       readTime="8 min"
       intro="Crypto cards offer two main reward models: flat-rate cashback in crypto and category-based rewards with variable rates. Some cards pay in their native token, others let you choose, and true credit cards use traditional reward structures with a crypto twist. Understanding these models helps you pick the card that delivers the most value for your specific spending patterns."
       toc={[
-        { id: "flat-rate-cashback", title: "Flat-Rate Crypto Cashback", level: 2 },
-        { id: "category-based", title: "Category-Based Rewards", level: 2 },
-        { id: "token-vs-choice", title: "Native Token vs Choose-Your-Own", level: 2 },
-        { id: "which-is-better", title: "Which Model Wins for You?", level: 2 },
+        { id: "flat-rate-cashback", title: "flat-rate-cashback", level: 2 },
+        { id: "flat-rate-crypto-cashback", title: "Flat-Rate Crypto Cashback", level: 2 },
+        { id: "category-based", title: "category-based", level: 2 },
+        { id: "category-based-rewards", title: "Category-Based Rewards", level: 2 },
+        { id: "token-vs-choice", title: "token-vs-choice", level: 2 },
+        { id: "native-token-vs-choose-your-own", title: "Native Token vs Choose-Your-Own", level: 2 },
+        { id: "which-is-better", title: "which-is-better", level: 2 },
+        { id: "which-model-wins-for-you", title: "Which Model Wins for You?", level: 2 }
       ]}
       faqs={[
         {

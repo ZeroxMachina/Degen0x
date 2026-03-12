@@ -16,10 +16,14 @@ export default function CryptoBusinessGuidePage() {
       readTime="10 min"
       intro="Building a successful crypto business requires navigating regulatory compliance, volatile markets, technical infrastructure, and rapidly evolving technology. This guide covers essential steps from concept to scaling."
       toc={[
-        { id: "section-1", title: "Business Foundation", level: 2 },
-        { id: "section-2", title: "Regulatory and Legal Setup", level: 2 },
-        { id: "section-3", title: "Technical Infrastructure", level: 2 },
-        { id: "section-4", title: "Growth and Scaling", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "business-foundation", title: "Business Foundation", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "regulatory-and-legal-setup", title: "Regulatory and Legal Setup", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "technical-infrastructure", title: "Technical Infrastructure", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "growth-and-scaling", title: "Growth and Scaling", level: 2 }
       ]}
       faqs={[
         { question: "What do I need to start a crypto business?", answer: "You need a clear business model, legal entity structure, regulatory compliance plan, technical infrastructure, funding, and a go-to-market strategy. Engaging legal and compliance advisors early is essential for navigating the complex regulatory landscape." },

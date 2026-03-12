@@ -25,7 +25,7 @@ export default function AaveTokenPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Aave (AAVE) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function AaveTokenPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">AAVE</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2020</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">16,000,000 AAVE</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">ERC-20 Governance Token</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">AAVE</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2020</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">16,000,000 AAVE</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">ERC-20 Governance Token</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Aave?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Aave?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Aave (Finnish for "ghost") is a decentralized, non-custodial lending and borrowing protocol
           originally launched as ETHLend in 2017 and rebranded to Aave in 2020. Founded by Stani
@@ -69,7 +69,7 @@ export default function AaveTokenPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           AAVE is used for governance voting on protocol parameters, risk management decisions,
           and strategic direction. Staking AAVE in the Safety Module earns rewards while providing
@@ -81,7 +81,7 @@ export default function AaveTokenPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Smart contract risk is inherent to any DeFi protocol, though Aave has undergone extensive
           auditing and has a strong security track record. Protocol revenue sharing with token
@@ -94,7 +94,7 @@ export default function AaveTokenPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Aave</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Aave</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           AAVE is available on major exchanges including Coinbase, Binance, Kraken, and Gemini. You
           can also acquire AAVE through decentralized exchanges like Uniswap. After purchasing, AAVE

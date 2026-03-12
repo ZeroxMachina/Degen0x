@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Oracle Risk in DeFi Lending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Oracle Risk in DeFi Lending (${CURRENT_YEAR}) | degen0x`,
   description: "Understanding oracle risk in DeFi lending protocols. Learn how price oracles work, common attack vectors, and how protocols mitigate oracle manipulation.",
 };
 
@@ -11,7 +11,16 @@ export default function OracleRiskLendingPage() {
   return (
     <LearnPageLayout title="Oracle Risk in DeFi Lending" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="8 min read"
       intro="Oracles are the critical infrastructure that connects DeFi lending protocols to real-world price data. Lending protocols rely on accurate, timely price feeds to determine collateral values, trigger liquidations, and calculate borrowing limits. Oracle failures or manipulation have been responsible for some of the largest DeFi exploits, making oracle risk one of the most important factors in evaluating lending protocol safety."
-      toc={[{ id: "how-oracles-work", title: "How Lending Oracles Work", level: 2 }, { id: "attack-vectors", title: "Oracle Attack Vectors", level: 2 }, { id: "mitigation", title: "How Protocols Mitigate Risk", level: 2 }, { id: "evaluating-risk", title: "Evaluating Oracle Risk", level: 2 }]}
+      toc={[
+        { id: "how-oracles-work", title: "how-oracles-work", level: 2 },
+        { id: "how-lending-oracles-work", title: "How Lending Oracles Work", level: 2 },
+        { id: "attack-vectors", title: "attack-vectors", level: 2 },
+        { id: "oracle-attack-vectors", title: "Oracle Attack Vectors", level: 2 },
+        { id: "mitigation", title: "mitigation", level: 2 },
+        { id: "how-protocols-mitigate-risk", title: "How Protocols Mitigate Risk", level: 2 },
+        { id: "evaluating-risk", title: "evaluating-risk", level: 2 },
+        { id: "evaluating-oracle-risk", title: "Evaluating Oracle Risk", level: 2 }
+      ]}
       faqs={[
         { question: "What oracle do most lending protocols use?", answer: "Chainlink is the most widely used oracle for DeFi lending, providing decentralized price feeds for hundreds of assets across multiple chains. Other oracles include Pyth Network (popular on Solana), Uniswap TWAP oracles, and Chronicle (used by MakerDAO). Some protocols use multiple oracle sources." },
         { question: "How can oracles be manipulated?", answer: "On-chain oracles using DEX spot prices can be manipulated through large trades or flash loans that temporarily move prices. Centralized oracle nodes can be compromised. Price feed delays during extreme volatility can cause stale data. Low-liquidity assets are particularly vulnerable to price manipulation." },

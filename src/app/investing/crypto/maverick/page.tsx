@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Maverick Protocol (MAV)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Maverick Protocol (MAV)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Maverick Protocol (MAV), the DEX with directional liquidity management. Discover MAV tokenomics, innovative AMM features, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function MaverickPage() {
       readTime="8 min read"
       intro="Maverick Protocol (MAV) is a decentralized exchange that introduced directional liquidity management, allowing LPs to automatically concentrate their liquidity based on expected price movements. Deployed on Ethereum and zkSync Era, Maverick's innovative AMM design aims to solve the capital inefficiency and impermanent loss challenges that plague traditional liquidity providers."
       toc={[
-        { id: "what-is", title: "What Is Maverick Protocol?", level: 2 },
-        { id: "how-it-works", title: "How Does Maverick Protocol Work?", level: 2 },
-        { id: "tokenomics", title: "MAV Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MAV", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-maverick-protocol", title: "What Is Maverick Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-maverick-protocol-work", title: "How Does Maverick Protocol Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mav-tokenomics", title: "MAV Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mav", title: "How to Buy MAV", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -7,7 +7,16 @@ export default function StablecoinDepegRisksPage() {
   return (
     <LearnPageLayout title="Stablecoin Depeg Risks & Protection" categoryName="Insurance" categorySlug="insurance" readTime="8 min"
       intro="Stablecoins are designed to maintain a constant value, but history has shown they can and do lose their peg. From the UST collapse that wiped out $40 billion to USDC's temporary depeg during the Silicon Valley Bank crisis, stablecoin risk is real. This guide explains why stablecoins depeg, the different risk profiles of major stablecoins, and how depeg insurance can protect your holdings."
-      toc={[{ id: "why-depeg", title: "Why Stablecoins Depeg", level: 2 }, { id: "risk-profiles", title: "Risk Profiles by Type", level: 2 }, { id: "depeg-insurance", title: "Depeg Insurance", level: 2 }, { id: "protection-strategies", title: "Protection Strategies", level: 2 }]}
+      toc={[
+        { id: "why-depeg", title: "why-depeg", level: 2 },
+        { id: "why-stablecoins-depeg", title: "Why Stablecoins Depeg", level: 2 },
+        { id: "risk-profiles", title: "risk-profiles", level: 2 },
+        { id: "risk-profiles-by-type", title: "Risk Profiles by Type", level: 2 },
+        { id: "depeg-insurance", title: "depeg-insurance", level: 2 },
+        { id: "depeg-insurance", title: "Depeg Insurance", level: 2 },
+        { id: "protection-strategies", title: "protection-strategies", level: 2 },
+        { id: "protection-strategies", title: "Protection Strategies", level: 2 }
+      ]}
       faqs={[
         { question: "Which stablecoins are safest from depeg risk?", answer: "No stablecoin is completely risk-free, but fiat-backed stablecoins from regulated issuers (USDC, USDT) with transparent reserves tend to have the lowest depeg risk. Crypto-backed stablecoins like DAI have proven resilient. Algorithmic stablecoins carry the highest depeg risk due to their reliance on market mechanisms rather than collateral." },
         { question: "How much does depeg insurance cost?", answer: "Depeg cover premiums typically range from 1-4% annually, depending on the stablecoin's perceived risk level and the coverage terms. Algorithmic stablecoins have higher premiums. Coverage usually triggers when the stablecoin trades below a specific threshold (e.g., $0.95) for a defined period." },

@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "$119-$169 depending on model",
   bestFor: "Security-focused users who want air-gapped transaction signing",
-  affiliateUrl: "https://cryptodegen.com/go/keystone",
+  affiliateUrl: "https://degen0x.com/go/keystone",
   category: "wallets",
 };
 

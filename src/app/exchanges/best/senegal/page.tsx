@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Senegal (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Senegal (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchanges accessible in Senegal. Find XOF-friendly platforms with Orange Money support and P2P trading options.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesSenegal() {
       readTime="7 min read"
       intro="Senegal, a leading economy in Francophone West Africa, has a growing crypto community driven by its young population and mobile money adoption. The BCEAO (Central Bank of West African States) oversees monetary policy for the CFA franc zone. While crypto regulation is still developing, Senegalese traders access digital assets through P2P platforms with local payment methods."
       toc={[
-        { id: "top-exchanges", title: "Available Exchanges", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "XOF Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "available-exchanges", title: "Available Exchanges", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "xof-payment-methods", title: "XOF Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing a Platform", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Senegal?", answer: "The BCEAO has cautioned against crypto usage in the WAEMU zone. Crypto is not explicitly banned in Senegal, but the regulatory framework is unclear. Individual P2P trading continues without formal prohibition." },

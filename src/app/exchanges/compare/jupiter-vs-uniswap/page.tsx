@@ -14,7 +14,7 @@ export default function JupiterVsUniswapPage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Jupiter vs Uniswap", href: "#" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Jupiter vs Uniswap: Which DEX Is Better in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Jupiter vs Uniswap: Which DEX Is Better in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Jupiter and Uniswap are the dominant decentralized exchanges on their respective chains — Jupiter on Solana and Uniswap on Ethereum. They represent fundamentally different approaches to decentralized trading, from chain architecture to transaction costs. This comparison helps you understand the tradeoffs between these two DeFi giants.</p>
 
@@ -30,19 +30,19 @@ export default function JupiterVsUniswapPage() {
       </div>
 
       <div className="prose-crypto">
-        <h2 className="text-2xl font-bold text-white mb-4">Cost Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Cost Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Jupiter on Solana is dramatically cheaper than Uniswap on Ethereum mainnet. A typical swap on Jupiter costs less than $0.01 in gas, while Uniswap on Ethereum mainnet can cost $5 to $50 or more depending on network congestion. Uniswap on Layer 2s like Arbitrum and Base is cheaper but still more expensive than Solana. Jupiter itself charges no platform fee and routes through multiple DEXs to find the best price. Uniswap charges a 0.3% pool fee that goes to liquidity providers. For cost-sensitive traders, Jupiter has a massive advantage.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Features and Functionality</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Features and Functionality</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Jupiter has expanded well beyond simple token swaps. The platform offers limit orders, dollar-cost averaging (DCA), perpetual futures trading through Jupiter Perps, and a launchpad for new Solana tokens. Jupiter functions as a DEX aggregator, routing trades through Raydium, Orca, and other Solana DEXs for optimal pricing. Uniswap focuses on being the best AMM with concentrated liquidity in v3, allowing liquidity providers to set custom price ranges. Uniswap is deployed across multiple chains including Ethereum, Polygon, Arbitrum, Base, and Optimism. For pure swap functionality, both are excellent. For a broader trading toolkit, Jupiter offers more.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Token Ecosystem</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Token Ecosystem</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Uniswap on Ethereum provides access to the largest DeFi ecosystem by total value locked, including thousands of ERC-20 tokens, established DeFi protocols, and institutional liquidity. Jupiter provides access to the Solana ecosystem, which has become a hub for memecoins, new token launches, and high-speed DeFi. The choice between them often depends on which blockchain ecosystem you want to participate in rather than the DEX features themselves.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-white">Choose Jupiter if</strong> you want the cheapest, fastest DEX trading with advanced features like limit orders, DCA, and perpetuals on Solana. Best for active traders and those involved in the Solana ecosystem.</p>
-          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-white">Choose Uniswap if</strong> you want access to the Ethereum DeFi ecosystem with the deepest liquidity for established tokens. Best for Ethereum-native users and those trading ERC-20 tokens.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-[var(--color-text)]">Choose Jupiter if</strong> you want the cheapest, fastest DEX trading with advanced features like limit orders, DCA, and perpetuals on Solana. Best for active traders and those involved in the Solana ecosystem.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Uniswap if</strong> you want access to the Ethereum DeFi ecosystem with the deepest liquidity for established tokens. Best for Ethereum-native users and those trading ERC-20 tokens.</p>
         </div>
       </div>
 

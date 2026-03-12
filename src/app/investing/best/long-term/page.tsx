@@ -46,7 +46,7 @@ export default function BestLongTermPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Long-Term Crypto Investments for {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -59,7 +59,7 @@ export default function BestLongTermPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Long-Term Crypto Picks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Long-Term Crypto Picks</h2>
         <div className="space-y-4">
           {longTermPicks.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -68,7 +68,7 @@ export default function BestLongTermPage() {
       </section>
 
       <section id="what-makes-good-long-term" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Makes a Good Long-Term Crypto Hold</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Makes a Good Long-Term Crypto Hold</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Not every cryptocurrency is suitable for long-term holding. The projects that perform
           best over multi-year periods share several characteristics. First, they solve a real
@@ -93,7 +93,7 @@ export default function BestLongTermPage() {
       </section>
 
       <section id="hodl-strategy" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">HODL Strategy Guide</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">HODL Strategy Guide</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Successful long-term crypto investing is as much about psychology as it is about
           picking the right assets. The HODL strategy (Hold On for Dear Life) was born from
@@ -109,11 +109,11 @@ export default function BestLongTermPage() {
             { step: "5", title: "Ignore Short-Term Noise", desc: "Daily price movements are noise. Focus on fundamental developments, adoption metrics, and long-term trends rather than daily chart patterns." },
           ].map((item) => (
             <div key={item.step} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold text-sm">
                 {item.step}
               </div>
               <div>
-                <h3 className="text-base font-semibold text-white mb-1">{item.title}</h3>
+                <h3 className="text-base font-semibold text-[var(--color-text)] mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function BestLongTermPage() {
       </section>
 
       <section id="common-mistakes" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Common Long-Term Investing Mistakes</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Common Long-Term Investing Mistakes</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Even experienced investors make avoidable mistakes when holding crypto long-term.
           The most common is panic selling during bear markets. Historically, crypto bear

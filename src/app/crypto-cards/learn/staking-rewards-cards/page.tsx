@@ -17,10 +17,14 @@ export default function StakingRewardsCardsPage() {
       readTime="8 min"
       intro="Many of the most popular crypto cards use token staking as a mechanism to unlock higher reward tiers. By locking up a platform's native token for a specified period, you gain access to better cashback rates, additional perks like streaming service rebates, and premium card designs. But staking also means concentrating risk in a single token. This guide examines the staking-rewards relationship across major crypto cards and helps you decide whether staking for card benefits makes financial sense."
       toc={[
-        { id: "how-staking-works", title: "How Card Staking Works", level: 2 },
-        { id: "platform-comparison", title: "Platform Staking Comparison", level: 2 },
-        { id: "risk-analysis", title: "Risk vs Reward Analysis", level: 2 },
-        { id: "alternatives", title: "No-Staking Alternatives", level: 2 },
+        { id: "how-staking-works", title: "how-staking-works", level: 2 },
+        { id: "how-card-staking-works", title: "How Card Staking Works", level: 2 },
+        { id: "platform-comparison", title: "platform-comparison", level: 2 },
+        { id: "platform-staking-comparison", title: "Platform Staking Comparison", level: 2 },
+        { id: "risk-analysis", title: "risk-analysis", level: 2 },
+        { id: "risk-vs-reward-analysis", title: "Risk vs Reward Analysis", level: 2 },
+        { id: "alternatives", title: "alternatives", level: 2 },
+        { id: "no-staking-alternatives", title: "No-Staking Alternatives", level: 2 }
       ]}
       faqs={[
         { question: "Can I unstake my tokens after locking them?", answer: "Most platforms have a fixed lock-up period, typically 180 days for Crypto.com. After the lock-up period, you can unstake, but you may lose the associated card tier benefits. Some platforms allow unstaking at any time but immediately downgrade your card tier. Check specific platform terms before staking." },

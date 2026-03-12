@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is zkSync (ZK)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is zkSync (ZK)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about zkSync (ZK), the Ethereum Layer 2 scaling solution using zero-knowledge proofs. Discover how it works, tokenomics, use cases, and how to buy ZK.",
 };
@@ -17,12 +17,18 @@ export default function ZkSyncPage() {
       readTime="9 min read"
       intro="zkSync is an Ethereum Layer 2 scaling solution developed by Matter Labs that uses zero-knowledge rollup (ZK-rollup) technology to provide fast, low-cost transactions while inheriting Ethereum's security guarantees. zkSync Era, the mainnet version, supports full EVM compatibility through its custom zkEVM compiler, enabling developers to deploy existing Solidity smart contracts with minimal modifications. ZK is the native governance token of the zkSync ecosystem."
       toc={[
-        { id: "what-is", title: "What Is zkSync?", level: 2 },
-        { id: "how-it-works", title: "How Does zkSync Work?", level: 2 },
-        { id: "tokenomics", title: "ZK Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ZK", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-zksync", title: "What Is zkSync?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-zksync-work", title: "How Does zkSync Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "zk-tokenomics", title: "ZK Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-zk", title: "How to Buy ZK", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

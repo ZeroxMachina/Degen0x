@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState } from "react";
@@ -97,14 +99,14 @@ export default function RarityCheckerPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">NFT Rarity Checker</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">NFT Rarity Checker</h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         Calculate the rarity score of any NFT based on its traits. Enter the collection size and each
         trait&apos;s occurrence count to get a statistical rarity breakdown and overall rarity ranking.
       </p>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-xl font-semibold text-white mb-4">Collection Details</h2>
+        <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Collection Details</h2>
         <div className="mb-6">
           <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">
             Total Collection Size
@@ -114,11 +116,11 @@ export default function RarityCheckerPage() {
             value={collectionSize}
             onChange={(e) => setCollectionSize(e.target.value)}
             placeholder="e.g., 10000"
-            className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+            className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
           />
         </div>
 
-        <h2 className="text-xl font-semibold text-white mb-4">NFT Traits</h2>
+        <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">NFT Traits</h2>
         <div className="space-y-4">
           {traits.map((trait) => (
             <div key={trait.id} className="grid grid-cols-1 md:grid-cols-4 gap-3 items-end">
@@ -129,7 +131,7 @@ export default function RarityCheckerPage() {
                   value={trait.traitType}
                   onChange={(e) => updateTrait(trait.id, "traitType", e.target.value)}
                   placeholder="e.g., Background"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
@@ -139,7 +141,7 @@ export default function RarityCheckerPage() {
                   value={trait.traitValue}
                   onChange={(e) => updateTrait(trait.id, "traitValue", e.target.value)}
                   placeholder="e.g., Gold"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
@@ -151,7 +153,7 @@ export default function RarityCheckerPage() {
                   value={trait.traitCount}
                   onChange={(e) => updateTrait(trait.id, "traitCount", e.target.value)}
                   placeholder="e.g., 50"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <button
@@ -182,12 +184,12 @@ export default function RarityCheckerPage() {
 
       {results && (
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h2 className="text-xl font-semibold text-white mb-4">Rarity Results</h2>
+          <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Rarity Results</h2>
 
           <div className="grid grid-cols-2 gap-4 mb-6">
             <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] p-4 text-center">
               <p className="text-sm text-[var(--color-text-secondary)]">Overall Score</p>
-              <p className="text-2xl font-bold text-white">{results.overallScore.toFixed(2)}</p>
+              <p className="text-2xl font-bold text-[var(--color-text)]">{results.overallScore.toFixed(2)}</p>
             </div>
             <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] p-4 text-center">
               <p className="text-sm text-[var(--color-text-secondary)]">Rarity Rank</p>
@@ -195,7 +197,7 @@ export default function RarityCheckerPage() {
             </div>
           </div>
 
-          <h3 className="text-lg font-semibold text-white mb-3">Trait Breakdown</h3>
+          <h3 className="text-lg font-semibold text-[var(--color-text)] mb-3">Trait Breakdown</h3>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
@@ -210,12 +212,12 @@ export default function RarityCheckerPage() {
               <tbody>
                 {results.traitRarities.map((trait, index) => (
                   <tr key={index} className="border-b border-[var(--color-border)]">
-                    <td className="py-2 text-sm text-white">{trait.traitType}</td>
-                    <td className="py-2 text-sm text-white">{trait.traitValue}</td>
+                    <td className="py-2 text-sm text-[var(--color-text)]">{trait.traitType}</td>
+                    <td className="py-2 text-sm text-[var(--color-text)]">{trait.traitValue}</td>
                     <td className="py-2 text-sm text-right text-[var(--color-text-secondary)]">
                       {trait.percentage.toFixed(2)}%
                     </td>
-                    <td className="py-2 text-sm text-right text-white">{trait.score.toFixed(2)}</td>
+                    <td className="py-2 text-sm text-right text-[var(--color-text)]">{trait.score.toFixed(2)}</td>
                     <td className={`py-2 text-sm text-right font-medium ${getRarityColor(trait.percentage)}`}>
                       {getRarityLabel(trait.percentage)}
                     </td>
@@ -226,7 +228,7 @@ export default function RarityCheckerPage() {
           </div>
 
           <div className="mt-6 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] p-4">
-            <h4 className="text-sm font-semibold text-white mb-2">How Rarity Score Works</h4>
+            <h4 className="text-sm font-semibold text-[var(--color-text)] mb-2">How Rarity Score Works</h4>
             <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed">
               Each trait&apos;s rarity score is calculated as 1 / (trait count / collection size). Rarer
               traits produce higher scores. The overall score is the sum of all individual trait scores.

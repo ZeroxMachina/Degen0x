@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Ledger Nano X", slug: "ledger-nano-x", rating: 4.7, affiliateUrl: "https://cryptodegen.com/go/ledger", features: { "Type": "Connected hardware wallet", "Price": "$149", "Connection": "USB-C + Bluetooth", "Air-Gapped": "No", "Supported Coins": "5,500+", "Display": "128x64 OLED", "Open Source": "Partial", "DeFi Access": "Ledger Live + browser" } },
-  { name: "Keystone 3 Pro", slug: "keystone-3-pro", rating: 4.5, affiliateUrl: "https://cryptodegen.com/go/keystone", features: { "Type": "Air-gapped hardware wallet", "Price": "$149", "Connection": "QR code only", "Air-Gapped": "Yes (100%)", "Supported Coins": "5,500+", "Display": "4-inch touchscreen", "Open Source": "Yes (fully)", "DeFi Access": "MetaMask, Rabby, OKX" } },
+  { name: "Ledger Nano X", slug: "ledger-nano-x", rating: 4.7, affiliateUrl: "https://degen0x.com/go/ledger", features: { "Type": "Connected hardware wallet", "Price": "$149", "Connection": "USB-C + Bluetooth", "Air-Gapped": "No", "Supported Coins": "5,500+", "Display": "128x64 OLED", "Open Source": "Partial", "DeFi Access": "Ledger Live + browser" } },
+  { name: "Keystone 3 Pro", slug: "keystone-3-pro", rating: 4.5, affiliateUrl: "https://degen0x.com/go/keystone", features: { "Type": "Air-gapped hardware wallet", "Price": "$149", "Connection": "QR code only", "Air-Gapped": "Yes (100%)", "Supported Coins": "5,500+", "Display": "4-inch touchscreen", "Open Source": "Yes (fully)", "DeFi Access": "MetaMask, Rabby, OKX" } },
 ];
 
 const features = ["Type", "Price", "Connection", "Air-Gapped", "Supported Coins", "Display", "Open Source", "DeFi Access"];
@@ -39,7 +39,7 @@ export default function LedgerVsKeystonePage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Ledger vs Keystone: Connected vs Air-Gapped ({CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Ledger vs Keystone: Connected vs Air-Gapped ({CURRENT_YEAR})</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Ledger connects via USB and Bluetooth. Keystone communicates exclusively through QR
           codes. We compare these two approaches to hardware wallet security.
@@ -86,12 +86,12 @@ export default function LedgerVsKeystonePage() {
         <h2 id="verdict">Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose Ledger if:</strong> You value convenience,
+            <strong className="text-[var(--color-text)]">Choose Ledger if:</strong> You value convenience,
             Bluetooth mobile management, the largest ecosystem of supported apps, and the
             most established brand in hardware wallets.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose Keystone if:</strong> You want air-gapped
+            <strong className="text-[var(--color-text)]">Choose Keystone if:</strong> You want air-gapped
             security, a large touchscreen for transaction verification, fully open-source
             firmware, and are comfortable with QR code workflows.
           </p>
@@ -102,11 +102,11 @@ export default function LedgerVsKeystonePage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/compare/ledger-vs-trezor" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Compare</span>
-            <h3 className="font-semibold text-white text-sm">Ledger vs Trezor</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Ledger vs Trezor</h3>
           </Link>
           <Link href="/wallets/learn/hardware-wallet-setup-guide" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Guide</span>
-            <h3 className="font-semibold text-white text-sm">Hardware Wallet Setup Guide</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Hardware Wallet Setup Guide</h3>
           </Link>
         </div>
       </section>

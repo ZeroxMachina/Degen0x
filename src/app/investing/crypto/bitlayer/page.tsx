@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Bitlayer (BTR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Bitlayer (BTR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Bitlayer (BTR), the Bitcoin Layer 2 with BitVM verification. Discover how it works, tokenomics, use cases, and how to buy BTR.",
 };
@@ -17,12 +17,18 @@ export default function BitlayerPage() {
       readTime="8 min read"
       intro="Bitlayer is a Bitcoin Layer 2 network that uses BitVM-based verification to inherit Bitcoin's security while providing a fully EVM-compatible smart contract environment. As one of the first Bitcoin L2s to leverage BitVM technology for trustless verification, Bitlayer aims to bring general-purpose smart contract functionality to Bitcoin without requiring changes to the Bitcoin protocol."
       toc={[
-        { id: "what-is", title: "What Is Bitlayer?", level: 2 },
-        { id: "how-it-works", title: "How Does Bitlayer Work?", level: 2 },
-        { id: "tokenomics", title: "BTR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy BTR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-bitlayer", title: "What Is Bitlayer?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-bitlayer-work", title: "How Does Bitlayer Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "btr-tokenomics", title: "BTR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-btr", title: "How to Buy BTR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Bitlayer?", answer: "Bitlayer is a Bitcoin Layer 2 using BitVM verification for trustless security inheritance from Bitcoin, providing EVM-compatible smart contracts for BTCfi and DeFi applications." },

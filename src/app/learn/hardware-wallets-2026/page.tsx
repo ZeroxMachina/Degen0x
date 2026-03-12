@@ -18,17 +18,28 @@ export default function HardwareWallets2026Page() {
       lastUpdated="March 2026"
       intro="Hardware wallets are the gold standard for securing cryptocurrency assets. Unlike software wallets that connect to the internet, hardware wallets keep your private keys offline on a dedicated device, protecting them from hacking attempts, malware, and phishing attacks. This comprehensive 2026 guide compares the top eight hardware wallets available today, helping you choose the best solution for your security needs and asset holdings."
       toc={[
-        { id: "comparison-table", title: "Hardware Wallet Comparison Table", level: 2 },
-        { id: "ledger-nano-x", title: "Ledger Nano X Review", level: 2 },
-        { id: "ledger-stax", title: "Ledger Stax Review", level: 2 },
-        { id: "trezor-safe-5", title: "Trezor Safe 5 Review", level: 2 },
-        { id: "trezor-model-one", title: "Trezor Model One Review", level: 2 },
-        { id: "gridplus", title: "GridPlus Lattice1 Review", level: 2 },
-        { id: "keystone-3-pro", title: "Keystone 3 Pro Review", level: 2 },
-        { id: "tangem", title: "Tangem Review", level: 2 },
-        { id: "ngrave", title: "NGRAVE ZERO Review", level: 2 },
-        { id: "how-to-choose", title: "How to Choose a Hardware Wallet", level: 2 },
-        { id: "security-best-practices", title: "Security Best Practices", level: 2 },
+        { id: "comparison-table", title: "comparison-table", level: 2 },
+        { id: "hardware-wallet-comparison-table", title: "Hardware Wallet Comparison Table", level: 2 },
+        { id: "ledger-nano-x", title: "ledger-nano-x", level: 2 },
+        { id: "ledger-nano-x-review", title: "Ledger Nano X Review", level: 2 },
+        { id: "ledger-stax", title: "ledger-stax", level: 2 },
+        { id: "ledger-stax-review", title: "Ledger Stax Review", level: 2 },
+        { id: "trezor-safe-5", title: "trezor-safe-5", level: 2 },
+        { id: "trezor-safe-5-review", title: "Trezor Safe 5 Review", level: 2 },
+        { id: "trezor-model-one", title: "trezor-model-one", level: 2 },
+        { id: "trezor-model-one-review", title: "Trezor Model One Review", level: 2 },
+        { id: "gridplus", title: "gridplus", level: 2 },
+        { id: "gridplus-lattice1-review", title: "GridPlus Lattice1 Review", level: 2 },
+        { id: "keystone-3-pro", title: "keystone-3-pro", level: 2 },
+        { id: "keystone-3-pro-review", title: "Keystone 3 Pro Review", level: 2 },
+        { id: "tangem", title: "tangem", level: 2 },
+        { id: "tangem-review", title: "Tangem Review", level: 2 },
+        { id: "ngrave", title: "ngrave", level: 2 },
+        { id: "ngrave-zero-review", title: "NGRAVE ZERO Review", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "how-to-choose-a-hardware-wallet", title: "How to Choose a Hardware Wallet", level: 2 },
+        { id: "security-best-practices", title: "security-best-practices", level: 2 },
+        { id: "security-best-practices", title: "Security Best Practices", level: 2 }
       ]}
       faqs={[
         {

@@ -17,12 +17,18 @@ export default function KycExplainedPage() {
       readTime="8 min"
       intro="If you have signed up for any major cryptocurrency exchange, you have encountered KYC -- Know Your Customer. This identity verification process requires you to submit personal documents before you can trade. While some crypto enthusiasts view KYC as antithetical to the principles of decentralization, it serves important purposes in the regulated financial world. This guide explains what KYC involves, why it exists, and what it means for you as a crypto user."
       toc={[
+        { id: "what-is-kyc", title: "what-is-kyc", level: 2 },
         { id: "what-is-kyc", title: "What Is KYC?", level: 2 },
-        { id: "why-required", title: "Why Do Exchanges Require KYC?", level: 2 },
-        { id: "kyc-process", title: "The KYC Verification Process", level: 2 },
-        { id: "kyc-levels", title: "KYC Levels and What They Unlock", level: 2 },
-        { id: "privacy-concerns", title: "Privacy Concerns and Data Security", level: 2 },
-        { id: "no-kyc-options", title: "Trading Without KYC: Options and Limitations", level: 2 },
+        { id: "why-required", title: "why-required", level: 2 },
+        { id: "why-do-exchanges-require-kyc", title: "Why Do Exchanges Require KYC?", level: 2 },
+        { id: "kyc-process", title: "kyc-process", level: 2 },
+        { id: "the-kyc-verification-process", title: "The KYC Verification Process", level: 2 },
+        { id: "kyc-levels", title: "kyc-levels", level: 2 },
+        { id: "kyc-levels-and-what-they-unlock", title: "KYC Levels and What They Unlock", level: 2 },
+        { id: "privacy-concerns", title: "privacy-concerns", level: 2 },
+        { id: "privacy-concerns-and-data-security", title: "Privacy Concerns and Data Security", level: 2 },
+        { id: "no-kyc-options", title: "no-kyc-options", level: 2 },
+        { id: "trading-without-kyc-options-and-limitations", title: "Trading Without KYC: Options and Limitations", level: 2 }
       ]}
       faqs={[
         {

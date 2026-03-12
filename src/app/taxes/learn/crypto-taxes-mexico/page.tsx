@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Mexico (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Mexico (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Mexico. Learn about income tax obligations, SAT reporting, and how Mexican crypto investors should handle their tax filings.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesMexicoPage() {
       readTime="8 min read"
       intro="Mexico does not have specific cryptocurrency tax legislation, but crypto gains fall under existing income tax rules administered by the SAT (Servicio de Administracion Tributaria). Crypto is treated as a virtual asset under the Fintech Law, and gains from trading are subject to income tax. The lack of specific crypto tax guidance creates ambiguity, making it important for Mexican crypto investors to understand how general tax principles apply to their crypto activities."
       toc={[
-        { id: "tax-treatment", title: "Tax Treatment of Crypto", level: 2 },
+        { id: "tax-treatment", title: "tax-treatment", level: 2 },
+        { id: "tax-treatment-of-crypto", title: "Tax Treatment of Crypto", level: 2 },
+        { id: "income-tax-rates", title: "income-tax-rates", level: 2 },
         { id: "income-tax-rates", title: "Income Tax Rates", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
         { id: "taxable-events", title: "Taxable Events", level: 2 },
-        { id: "sat-reporting", title: "SAT Reporting Requirements", level: 2 },
-        { id: "compliance", title: "Compliance Strategies", level: 2 },
+        { id: "sat-reporting", title: "sat-reporting", level: 2 },
+        { id: "sat-reporting-requirements", title: "SAT Reporting Requirements", level: 2 },
+        { id: "compliance", title: "compliance", level: 2 },
+        { id: "compliance-strategies", title: "Compliance Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto gains taxable in Mexico?", answer: "Yes. While Mexico lacks specific crypto tax legislation, gains from selling or trading cryptocurrency are considered taxable income under the general Income Tax Law (Ley del ISR). The SAT treats crypto as property, and profits from its sale are subject to income tax at your applicable rate." },

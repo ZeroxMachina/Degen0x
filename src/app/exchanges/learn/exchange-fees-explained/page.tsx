@@ -17,12 +17,18 @@ export default function ExchangeFeesExplainedPage() {
       readTime="9 min"
       intro="Every time you buy, sell, or move cryptocurrency, fees are involved. Understanding these fees is essential because they directly impact your returns. A trader paying 1% in fees instead of 0.1% will lose thousands of dollars over the course of a year on moderate-volume trades. This guide breaks down every type of fee you will encounter on crypto exchanges and shows you how to minimize them."
       toc={[
-        { id: "trading-fees", title: "Trading Fees: Maker vs Taker", level: 2 },
-        { id: "spread-costs", title: "Spread Costs and Hidden Fees", level: 2 },
-        { id: "deposit-withdrawal", title: "Deposit and Withdrawal Fees", level: 2 },
-        { id: "network-fees", title: "Blockchain Network Fees", level: 2 },
-        { id: "fee-comparison", title: "Fee Comparison Across Major Exchanges", level: 2 },
-        { id: "minimize-fees", title: "How to Minimize Your Fees", level: 2 },
+        { id: "trading-fees", title: "trading-fees", level: 2 },
+        { id: "trading-fees-maker-vs-taker", title: "Trading Fees: Maker vs Taker", level: 2 },
+        { id: "spread-costs", title: "spread-costs", level: 2 },
+        { id: "spread-costs-and-hidden-fees", title: "Spread Costs and Hidden Fees", level: 2 },
+        { id: "deposit-withdrawal", title: "deposit-withdrawal", level: 2 },
+        { id: "deposit-and-withdrawal-fees", title: "Deposit and Withdrawal Fees", level: 2 },
+        { id: "network-fees", title: "network-fees", level: 2 },
+        { id: "blockchain-network-fees", title: "Blockchain Network Fees", level: 2 },
+        { id: "fee-comparison", title: "fee-comparison", level: 2 },
+        { id: "fee-comparison-across-major-exchanges", title: "Fee Comparison Across Major Exchanges", level: 2 },
+        { id: "minimize-fees", title: "minimize-fees", level: 2 },
+        { id: "how-to-minimize-your-fees", title: "How to Minimize Your Fees", level: 2 }
       ]}
       faqs={[
         {

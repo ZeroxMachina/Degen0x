@@ -16,10 +16,14 @@ export default function OrdinalsVsEthereumNftsComparePage() {
       readTime="10 min"
       intro="Bitcoin Ordinals and Ethereum NFTs represent fundamentally different approaches to digital ownership. This comparison examines their technical architectures, cost structures, ecosystem maturity, and cultural communities."
       toc={[
-        { id: "section-1", title: "Architecture Comparison", level: 2 },
-        { id: "section-2", title: "Storage and Permanence", level: 2 },
-        { id: "section-3", title: "Ecosystem and Culture", level: 2 },
-        { id: "section-4", title: "Investment Considerations", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "architecture-comparison", title: "Architecture Comparison", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "storage-and-permanence", title: "Storage and Permanence", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "ecosystem-and-culture", title: "Ecosystem and Culture", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "investment-considerations", title: "Investment Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Are Bitcoin Ordinals better than Ethereum NFTs?", answer: "Neither is inherently better. Ordinals offer on-chain permanence and Bitcoin's security but lack smart contract functionality. Ethereum NFTs offer programmability, royalties, and a mature ecosystem but typically store media off-chain. The best choice depends on your priorities." },

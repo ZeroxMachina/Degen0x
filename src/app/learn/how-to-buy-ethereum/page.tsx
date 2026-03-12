@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Breadcrumb } from "@/components/Breadcrumb";
+import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -385,7 +385,7 @@ export default function HowToBuyEthereumPage() {
 
         {/* Disclaimer */}
         <div style={{ background: "#d2992215", border: "1px solid #d2992240", borderRadius: 10, padding: 14, marginTop: 32, fontSize: 12, color: S.yellow, lineHeight: 1.7 }}>
-          ⚠️ <strong>Disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice. Cryptocurrency investments are highly volatile and risky. You could lose all invested capital. Always consult a financial advisor before investing. CryptoDegen may earn a commission from affiliate links above.
+          ⚠️ <strong>Disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice. Cryptocurrency investments are highly volatile and risky. You could lose all invested capital. Always consult a financial advisor before investing. degen0x may earn a commission from affiliate links above.
         </div>
       </article>
     </main>

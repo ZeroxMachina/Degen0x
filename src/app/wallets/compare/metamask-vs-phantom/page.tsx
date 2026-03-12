@@ -44,7 +44,7 @@ export default function MetaMaskVsPhantomPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">MetaMask vs Phantom: Which Wallet Should You Choose in {CURRENT_YEAR}?</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">MetaMask vs Phantom: Which Wallet Should You Choose in {CURRENT_YEAR}?</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           MetaMask and Phantom are the two most popular software wallets for DeFi and dApp access. We compare
           their chain support, features, user experience, and security to help you decide.
@@ -99,11 +99,11 @@ export default function MetaMaskVsPhantomPage() {
         <h2 id="verdict">Our Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose MetaMask if:</strong> You are an Ethereum and EVM-focused DeFi user
+            <strong className="text-[var(--color-text)]">Choose MetaMask if:</strong> You are an Ethereum and EVM-focused DeFi user
             who needs maximum dApp compatibility, or you need the MetaMask Snaps extension system.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose Phantom if:</strong> You use Solana, want the best NFT experience,
+            <strong className="text-[var(--color-text)]">Choose Phantom if:</strong> You use Solana, want the best NFT experience,
             prefer a more polished UI, or need multi-ecosystem support (Solana + Ethereum + Bitcoin).
           </p>
         </div>
@@ -113,11 +113,11 @@ export default function MetaMaskVsPhantomPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/reviews/metamask" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Review</span>
-            <h3 className="font-semibold text-white text-sm">MetaMask Full Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">MetaMask Full Review</h3>
           </Link>
           <Link href="/wallets/reviews/phantom" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Review</span>
-            <h3 className="font-semibold text-white text-sm">Phantom Full Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Phantom Full Review</h3>
           </Link>
         </div>
       </section>

@@ -26,14 +26,22 @@ export default function IntentBasedTradingPage() {
       readTime="12 min"
       intro="Intent-based trading represents a paradigm shift in how cryptocurrency swaps execute on decentralized exchanges. Rather than submitting explicit transactions that publicly broadcast your swap details to the mempool—allowing frontrunners and MEV extractors to sandwich your trade—intent-based trading lets you express your desired outcome and delegate execution to solvers who compete to fulfill your intent at the best price. Protocols like Across, UniswapX, and CoW Swap are pioneering this approach, fundamentally improving user experience, reducing MEV losses, and enabling more efficient price discovery. This guide explains intent-based trading mechanics, compares major protocols, and explores why this architecture represents the future of decentralized trading."
       toc={[
+        { id: "what-is-intent-based-trading", title: "what-is-intent-based-trading", level: 2 },
         { id: "what-is-intent-based-trading", title: "What Is Intent-Based Trading?", level: 2 },
-        { id: "how-intents-work", title: "How Intents Work: Solvers and Sequencing", level: 2 },
-        { id: "mev-protection-benefits", title: "MEV Protection and User Benefits", level: 2 },
-        { id: "across-protocol", title: "Across Protocol: Cross-Chain Intents", level: 2 },
-        { id: "uniswapx-explained", title: "UniswapX: Intent Auctions at Scale", level: 2 },
-        { id: "cow-swap-vision", title: "CoW Swap: Coincidence of Wants", level: 2 },
-        { id: "intent-comparison", title: "Comparing Intent Protocols", level: 2 },
-        { id: "future-of-intents", title: "The Future of Intent-Based Trading", level: 2 },
+        { id: "how-intents-work", title: "how-intents-work", level: 2 },
+        { id: "how-intents-work-solvers-and-sequencing", title: "How Intents Work: Solvers and Sequencing", level: 2 },
+        { id: "mev-protection-benefits", title: "mev-protection-benefits", level: 2 },
+        { id: "mev-protection-and-user-benefits", title: "MEV Protection and User Benefits", level: 2 },
+        { id: "across-protocol", title: "across-protocol", level: 2 },
+        { id: "across-protocol-cross-chain-intents", title: "Across Protocol: Cross-Chain Intents", level: 2 },
+        { id: "uniswapx-explained", title: "uniswapx-explained", level: 2 },
+        { id: "uniswapx-intent-auctions-at-scale", title: "UniswapX: Intent Auctions at Scale", level: 2 },
+        { id: "cow-swap-vision", title: "cow-swap-vision", level: 2 },
+        { id: "cow-swap-coincidence-of-wants", title: "CoW Swap: Coincidence of Wants", level: 2 },
+        { id: "intent-comparison", title: "intent-comparison", level: 2 },
+        { id: "comparing-intent-protocols", title: "Comparing Intent Protocols", level: 2 },
+        { id: "future-of-intents", title: "future-of-intents", level: 2 },
+        { id: "the-future-of-intent-based-trading", title: "The Future of Intent-Based Trading", level: 2 }
       ]}
       faqs={[
         {

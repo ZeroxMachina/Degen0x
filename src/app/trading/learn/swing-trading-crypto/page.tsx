@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Swing Trading Crypto Strategies (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Swing Trading Crypto Strategies (${CURRENT_YEAR}) | degen0x`,
   description:
     "Master swing trading strategies for crypto. Learn to capture multi-day price swings using technical analysis, trend identification, and risk management.",
 };
@@ -17,10 +17,14 @@ export default function SwingTradingCryptoPage() {
       readTime="9 min read"
       intro="Swing trading sits between day trading and long-term investing, aiming to capture price movements over days to weeks. This approach allows traders to profit from medium-term trends without the constant screen time required by day trading. In the volatile crypto market, swing trading can be highly effective when combined with proper technical analysis and risk management."
       toc={[
+        { id: "what-is-swing-trading", title: "what-is-swing-trading", level: 2 },
         { id: "what-is-swing-trading", title: "What Is Swing Trading?", level: 2 },
-        { id: "key-strategies", title: "Key Swing Trading Strategies", level: 2 },
-        { id: "technical-indicators", title: "Technical Indicators for Swing Traders", level: 2 },
-        { id: "managing-swing-trades", title: "Managing Swing Trades", level: 2 },
+        { id: "key-strategies", title: "key-strategies", level: 2 },
+        { id: "key-swing-trading-strategies", title: "Key Swing Trading Strategies", level: 2 },
+        { id: "technical-indicators", title: "technical-indicators", level: 2 },
+        { id: "technical-indicators-for-swing-traders", title: "Technical Indicators for Swing Traders", level: 2 },
+        { id: "managing-swing-trades", title: "managing-swing-trades", level: 2 },
+        { id: "managing-swing-trades", title: "Managing Swing Trades", level: 2 }
       ]}
       faqs={[
         { question: "How long do swing trades typically last?", answer: "Swing trades typically last from 2 days to several weeks. The exact duration depends on the market conditions, the strength of the trend, and your profit targets. Some swing traders hold positions for a few days, while others may hold for a month or more if the trend remains intact." },

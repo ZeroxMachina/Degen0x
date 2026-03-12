@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useRef } from "react";
@@ -262,7 +264,7 @@ export default function CryptoWrappedPage() {
               <div className="p-6 border-b" style={{ borderColor: "#30363d" }}>
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <div className="text-xs font-bold mb-1" style={{ color: "var(--color-text-secondary)", letterSpacing: "0.1em" }}>CRYPTODEGEN.IO</div>
+                    <div className="text-xs font-bold mb-1" style={{ color: "var(--color-text-secondary)", letterSpacing: "0.1em" }}>DEGEN0X.COM</div>
                     <div className="text-2xl font-extrabold" style={{ color: "var(--color-text)" }}>
                       {username || "Anon Degen"}&apos;s
                     </div>
@@ -362,7 +364,7 @@ export default function CryptoWrappedPage() {
               {/* Footer */}
               <div className="px-6 py-3" style={{ background: "#ffffff05", borderTop: "1px solid #30363d" }}>
                 <div className="text-center text-xs" style={{ color: "var(--color-text-secondary)" }}>
-                  cryptodegen.io • The NerdWallet of Crypto • {selectedYear} in Review
+                  degen0x.com • Your Crypto Companion • {selectedYear} in Review
                 </div>
               </div>
             </div>
@@ -371,7 +373,7 @@ export default function CryptoWrappedPage() {
             <div className="flex gap-3 mb-6 flex-wrap">
               <button
                 onClick={() => {
-                  const text = `My ${selectedYear} Crypto Wrapped: ${results.totalPct >= 0 ? "+" : ""}${results.totalPct.toFixed(1)}% return (${fmt(results.totalInvested)} → ${fmt(results.totalValue)}) ${personality.emoji} ${personality.label} — generate yours at cryptodegen.io/tools/crypto-wrapped`;
+                  const text = `My ${selectedYear} Crypto Wrapped: ${results.totalPct >= 0 ? "+" : ""}${results.totalPct.toFixed(1)}% return (${fmt(results.totalInvested)} → ${fmt(results.totalValue)}) ${personality.emoji} ${personality.label} — generate yours at degen0x.com/tools/crypto-wrapped`;
                   if (navigator.share) {
                     navigator.share({ text });
                   } else {

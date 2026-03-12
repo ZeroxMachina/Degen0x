@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in the Philippines (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in the Philippines (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare the best crypto exchanges in the Philippines. BSP-licensed platforms with PHP support, GCash funding, and local compliance.",
 };
@@ -17,10 +17,14 @@ export default function BestExchangesPhilippinesPage() {
       readTime="7 min read"
       intro="The Philippines is a leading crypto adopter in Southeast Asia, driven by remittance use cases and a tech-savvy young population. The Bangko Sentral ng Pilipinas (BSP) regulates crypto exchanges as Virtual Asset Service Providers (VASPs). Filipino traders have access to several licensed platforms with PHP support and popular local payment methods."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges in the Philippines", level: 2 },
-        { id: "regulations", title: "BSP Regulations", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-in-the-philippines", title: "Top Exchanges in the Philippines", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "bsp-regulations", title: "BSP Regulations", level: 2 },
+        { id: "payment-options", title: "payment-options", level: 2 },
         { id: "payment-options", title: "Payment Options", level: 2 },
-        { id: "choosing-platform", title: "Choosing a Platform", level: 2 },
+        { id: "choosing-platform", title: "choosing-platform", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 }
       ]}
       faqs={[
         {

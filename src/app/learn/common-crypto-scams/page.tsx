@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Common Crypto Scams and How to Avoid Them (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Common Crypto Scams and How to Avoid Them (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about the most common cryptocurrency scams including phishing, rug pulls, Ponzi schemes, fake airdrops, and romance scams. Get practical tips to identify and avoid them.",
 };
@@ -17,11 +17,16 @@ export default function CommonCryptoScamsPage() {
       readTime="10 min read"
       intro="Cryptocurrency scams have cost investors billions of dollars, and new schemes emerge as fast as old ones are exposed. The irreversible nature of blockchain transactions, combined with the complexity of the technology and the promise of quick profits, creates an ideal environment for scammers. Educating yourself about common scam types and red flags is the best defense against becoming a victim. This guide covers the most prevalent crypto scams and actionable strategies to protect yourself."
       toc={[
-        { id: "phishing-scams", title: "Phishing and Impersonation Scams", level: 2 },
-        { id: "investment-scams", title: "Investment and Ponzi Scams", level: 2 },
-        { id: "rug-pulls", title: "Rug Pulls and Token Scams", level: 2 },
-        { id: "social-scams", title: "Social Engineering and Romance Scams", level: 2 },
-        { id: "protection", title: "How to Protect Yourself", level: 2 },
+        { id: "phishing-scams", title: "phishing-scams", level: 2 },
+        { id: "phishing-and-impersonation-scams", title: "Phishing and Impersonation Scams", level: 2 },
+        { id: "investment-scams", title: "investment-scams", level: 2 },
+        { id: "investment-and-ponzi-scams", title: "Investment and Ponzi Scams", level: 2 },
+        { id: "rug-pulls", title: "rug-pulls", level: 2 },
+        { id: "rug-pulls-and-token-scams", title: "Rug Pulls and Token Scams", level: 2 },
+        { id: "social-scams", title: "social-scams", level: 2 },
+        { id: "social-engineering-and-romance-scams", title: "Social Engineering and Romance Scams", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "how-to-protect-yourself", title: "How to Protect Yourself", level: 2 }
       ]}
       faqs={[
         {

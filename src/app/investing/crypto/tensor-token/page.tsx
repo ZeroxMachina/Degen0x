@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Tensor (TNSR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Tensor (TNSR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Tensor (TNSR), Solana's leading NFT marketplace and trading platform. Discover how it works, tokenomics, use cases, and how to buy TNSR.",
 };
 
 export default function TensorTokenPage() {
   return (
-    <LearnPageLayout title="What Is Tensor (TNSR)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Tensor is the dominant NFT marketplace and trading platform on Solana, offering professional-grade tools including real-time order books, collection-wide bids, automated market making for NFTs, and advanced analytics. Tensor has captured the majority of Solana NFT trading volume by providing a trading experience that rivals professional financial platforms." toc={[{id:"what-is",title:"What Is Tensor?",level:2},{id:"how-it-works",title:"How Does Tensor Work?",level:2},{id:"tokenomics",title:"TNSR Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy TNSR",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Tensor?",answer:"Tensor is Solana's leading NFT marketplace offering pro trading tools including real-time order books, collection bids, NFT AMMs, and advanced analytics for NFT traders."},{question:"Where can I buy TNSR?",answer:"TNSR is available on Bybit, Gate.io, and Jupiter DEX on Solana. It trades against USDT and SOL pairs."},{question:"Is Tensor a good investment?",answer:"Tensor dominates Solana NFT trading but NFT market volume is cyclical and dependent on broader crypto sentiment. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Tensor (TNSR)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Tensor is the dominant NFT marketplace and trading platform on Solana, offering professional-grade tools including real-time order books, collection-wide bids, automated market making for NFTs, and advanced analytics. Tensor has captured the majority of Solana NFT trading volume by providing a trading experience that rivals professional financial platforms." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-tensor", title: "What Is Tensor?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-tensor-work", title: "How Does Tensor Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "tnsr-tokenomics", title: "TNSR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-tnsr", title: "How to Buy TNSR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Tensor?",answer:"Tensor is Solana's leading NFT marketplace offering pro trading tools including real-time order books, collection bids, NFT AMMs, and advanced analytics for NFT traders."},{question:"Where can I buy TNSR?",answer:"TNSR is available on Bybit, Gate.io, and Jupiter DEX on Solana. It trades against USDT and SOL pairs."},{question:"Is Tensor a good investment?",answer:"Tensor dominates Solana NFT trading but NFT market volume is cyclical and dependent on broader crypto sentiment. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
       <h2 id="what-is">What Is Tensor?</h2>
       <p>Tensor was built to bring professional trading infrastructure to the Solana NFT ecosystem. Unlike traditional NFT marketplaces that focus on browsing and listing, Tensor provides a TradingView-style interface with real-time charts, depth of market visualization, and advanced order types. The platform popularized collection-wide bids on Solana, allowing traders to place buy orders across entire NFT collections at specified price levels.</p>
       <p>Tensor also pioneered NFT AMM pools on Solana, enabling automated market making for NFT collections where users can create liquidity pools that automatically buy and sell NFTs along a bonding curve. This innovation brought DeFi-style liquidity to the NFT market, reducing friction for both buyers and sellers. Tensor&apos;s compressed NFT support and TensorSwap protocol have become critical infrastructure for the Solana NFT ecosystem.</p>

@@ -17,14 +17,22 @@ export default function BitcoinETFGuidePage() {
       readTime="15 min"
       intro="Bitcoin ETFs represent one of the most significant institutional breakthroughs for cryptocurrency. An ETF (Exchange-Traded Fund) is a regulated investment fund that tracks an underlying asset, enabling investors to gain exposure without directly owning or managing the asset. Spot Bitcoin ETFs, approved in the United States in January 2024 and expanding globally throughout 2025-2026, enable traditional investors to own Bitcoin through their brokerage accounts using familiar investment structures. Rather than navigating crypto exchanges, crypto wallets, and private key management, investors can simply buy Bitcoin ETF shares from their broker. This has democratized Bitcoin access and triggered unprecedented institutional adoption. This comprehensive guide explains how Bitcoin ETFs work, compares major providers, analyzes fees, discusses advantages and disadvantages, and helps you determine whether a Bitcoin ETF is right for your portfolio."
       toc={[
-        { id: "what-are-bitcoin-etfs", title: "Understanding Bitcoin ETFs", level: 2 },
-        { id: "spot-vs-futures", title: "Spot Bitcoin ETFs vs. Futures ETFs", level: 2 },
-        { id: "bitcoin-etf-providers", title: "Major Bitcoin ETF Providers", level: 2 },
-        { id: "bitcoin-etf-fees", title: "Comparing Bitcoin ETF Fees", level: 2 },
-        { id: "bitcoin-etf-advantages", title: "Advantages of Bitcoin ETFs", level: 2 },
-        { id: "bitcoin-etf-disadvantages", title: "Disadvantages and Limitations", level: 2 },
-        { id: "which-bitcoin-etf", title: "Choosing the Right Bitcoin ETF", level: 2 },
-        { id: "bitcoin-etf-future", title: "The Future of Bitcoin ETFs", level: 2 },
+        { id: "what-are-bitcoin-etfs", title: "what-are-bitcoin-etfs", level: 2 },
+        { id: "understanding-bitcoin-etfs", title: "Understanding Bitcoin ETFs", level: 2 },
+        { id: "spot-vs-futures", title: "spot-vs-futures", level: 2 },
+        { id: "spot-bitcoin-etfs-vs-futures-etfs", title: "Spot Bitcoin ETFs vs. Futures ETFs", level: 2 },
+        { id: "bitcoin-etf-providers", title: "bitcoin-etf-providers", level: 2 },
+        { id: "major-bitcoin-etf-providers", title: "Major Bitcoin ETF Providers", level: 2 },
+        { id: "bitcoin-etf-fees", title: "bitcoin-etf-fees", level: 2 },
+        { id: "comparing-bitcoin-etf-fees", title: "Comparing Bitcoin ETF Fees", level: 2 },
+        { id: "bitcoin-etf-advantages", title: "bitcoin-etf-advantages", level: 2 },
+        { id: "advantages-of-bitcoin-etfs", title: "Advantages of Bitcoin ETFs", level: 2 },
+        { id: "bitcoin-etf-disadvantages", title: "bitcoin-etf-disadvantages", level: 2 },
+        { id: "disadvantages-and-limitations", title: "Disadvantages and Limitations", level: 2 },
+        { id: "which-bitcoin-etf", title: "which-bitcoin-etf", level: 2 },
+        { id: "choosing-the-right-bitcoin-etf", title: "Choosing the Right Bitcoin ETF", level: 2 },
+        { id: "bitcoin-etf-future", title: "bitcoin-etf-future", level: 2 },
+        { id: "the-future-of-bitcoin-etfs", title: "The Future of Bitcoin ETFs", level: 2 }
       ]}
       faqs={[
         {

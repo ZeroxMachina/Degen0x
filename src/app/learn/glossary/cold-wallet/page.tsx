@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Cold Wallet? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Cold Wallet? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a cold wallet is, how cold storage works, the best cold wallets, and why offline storage is the gold standard for crypto security.",
 };
@@ -17,11 +17,16 @@ export default function ColdWalletPage() {
       readTime="5 min"
       intro="A cold wallet is a cryptocurrency storage solution that keeps your private keys completely offline, disconnected from the internet. This makes cold wallets virtually immune to remote hacking, phishing attacks, and malware. Hardware wallets from companies like Ledger and Trezor are the most popular form of cold storage and are widely recommended for securing significant crypto holdings."
       toc={[
-        { id: "definition", title: "What Is a Cold Wallet?", level: 2 },
-        { id: "how-it-works", title: "How Cold Wallets Work", level: 2 },
-        { id: "types", title: "Types of Cold Wallets", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-cold-wallet", title: "What Is a Cold Wallet?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-cold-wallets-work", title: "How Cold Wallets Work", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-cold-wallets", title: "Types of Cold Wallets", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         {

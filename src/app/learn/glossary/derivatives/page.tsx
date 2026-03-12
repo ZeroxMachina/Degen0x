@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function DerivativesPage() {
   return (
     <LearnPageLayout title="What Are Crypto Derivatives?" categoryName="Glossary" categorySlug="learn/glossary" readTime="5 min" intro="Crypto derivatives are financial contracts whose value is derived from the price of an underlying cryptocurrency. Rather than buying and selling actual tokens, derivatives allow traders to speculate on price movements, hedge existing positions, and access leverage. The crypto derivatives market dwarfs spot trading, with perpetual swap contracts generating trillions of dollars in monthly volume across centralized and decentralized exchanges."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "types", title: "Types of Derivatives", level: 2 },{ id: "perpetual-swaps", title: "Perpetual Swaps", level: 2 },{ id: "defi-derivatives", title: "DeFi Derivatives", level: 2 },{ id: "risks", title: "Risks", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-derivatives", title: "Types of Derivatives", level: 2 },
+        { id: "perpetual-swaps", title: "perpetual-swaps", level: 2 },
+        { id: "perpetual-swaps", title: "Perpetual Swaps", level: 2 },
+        { id: "defi-derivatives", title: "defi-derivatives", level: 2 },
+        { id: "defi-derivatives", title: "DeFi Derivatives", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks", title: "Risks", level: 2 }
+      ]}
       faqs={[
         { question: "What are perpetual swaps?", answer: "Perpetual swaps (perps) are the most popular crypto derivative — they are futures contracts with no expiration date. Traders maintain positions indefinitely, paying or receiving a funding rate every 8 hours that keeps the perpetual price close to the spot price. When most traders are long, longs pay shorts (positive funding rate); when most are short, shorts pay longs. This mechanism ensures the contract price tracks the underlying asset." },
         { question: "How does leverage work in crypto derivatives?", answer: "Leverage allows traders to control a larger position than their deposited capital. With 10x leverage, a $1,000 deposit controls a $10,000 position. This amplifies both gains and losses — a 5% price move creates a 50% gain or loss on the deposited margin. If losses approach the deposited margin, the position is liquidated (forcibly closed), and the trader loses their deposit." },

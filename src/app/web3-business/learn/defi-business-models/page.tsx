@@ -16,10 +16,14 @@ export default function DefiBusinessModelsPage() {
       readTime="10 min"
       intro="Decentralized finance has created novel business models generating revenue through protocol fees, token appreciation, MEV capture, and liquidity provision across the DeFi ecosystem."
       toc={[
-        { id: "section-1", title: "DeFi Revenue Models", level: 2 },
-        { id: "section-2", title: "Protocol Business Models", level: 2 },
-        { id: "section-3", title: "Infrastructure Models", level: 2 },
-        { id: "section-4", title: "Sustainability Analysis", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "defi-revenue-models", title: "DeFi Revenue Models", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "protocol-business-models", title: "Protocol Business Models", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "infrastructure-models", title: "Infrastructure Models", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "sustainability-analysis", title: "Sustainability Analysis", level: 2 }
       ]}
       faqs={[
         { question: "How do DeFi protocols make money?", answer: "DeFi protocols generate revenue through trading fees, lending spreads, liquidation penalties, protocol fees from token swaps, and value accrual to governance tokens. Different protocol types have different primary revenue sources." },

@@ -16,10 +16,14 @@ export default function HowToBuyNearPage() {
       readTime="8 min"
       intro="NEAR Protocol is a high-performance Layer 1 blockchain known for its developer-friendly approach and innovative sharding technology called Nightshade. NEAR has gained significant attention for its focus on user experience, account abstraction, and chain abstraction technology. This guide shows you how to buy NEAR tokens."
       toc={[
-        { id: "what-is-near", title: "What Is NEAR Protocol?", level: 2 },
-        { id: "where-to-buy", title: "Where to Buy NEAR", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Purchase Guide", level: 2 },
-        { id: "storage", title: "Storing Your NEAR", level: 2 },
+        { id: "what-is-near", title: "what-is-near", level: 2 },
+        { id: "what-is-near-protocol", title: "What Is NEAR Protocol?", level: 2 },
+        { id: "where-to-buy", title: "where-to-buy", level: 2 },
+        { id: "where-to-buy-near", title: "Where to Buy NEAR", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-purchase-guide", title: "Step-by-Step Purchase Guide", level: 2 },
+        { id: "storage", title: "storage", level: 2 },
+        { id: "storing-your-near", title: "Storing Your NEAR", level: 2 }
       ]}
       faqs={[
         { question: "What makes NEAR Protocol unique?", answer: "NEAR uses Nightshade sharding to achieve high throughput while maintaining decentralization. It offers human-readable account names instead of long hex addresses, has a strong focus on developer experience with support for Rust and JavaScript, and is pioneering chain abstraction technology to simplify multi-chain interactions." },

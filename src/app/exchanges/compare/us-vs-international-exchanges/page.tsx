@@ -14,7 +14,7 @@ export default function UsVsInternationalExchangesPage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "US vs International Exchanges", href: "#" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">US vs International Crypto Exchanges: Which Are Better in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">US vs International Crypto Exchanges: Which Are Better in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">US-based crypto exchanges like Coinbase and Kraken operate under strict regulatory oversight, while international platforms like Binance and OKX offer more features and lower fees. Understanding the tradeoffs between regulatory protection and platform capability helps you make an informed choice about where to trade.</p>
 
@@ -30,19 +30,19 @@ export default function UsVsInternationalExchangesPage() {
       </div>
 
       <div className="prose-crypto">
-        <h2 className="text-2xl font-bold text-white mb-4">Regulatory Protection</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Regulatory Protection</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">US exchanges operate under stringent regulatory frameworks including SEC oversight, FinCEN registration, state money transmitter licenses, and sometimes NYDFS BitLicenses. This provides tangible consumer protections: FDIC insurance on USD balances, crime insurance on crypto holdings, financial audits, and legal recourse if something goes wrong. International exchanges operate under varying regulatory standards. Some hold licenses in multiple jurisdictions (Binance has over 19 regulatory approvals globally), while others operate in more permissive environments. The FTX collapse highlighted the risks of trading on insufficiently regulated platforms.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Features and Fees</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Features and Fees</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">International exchanges typically offer significantly more features: higher leverage, more trading pairs, copy trading, launchpads, lending products, and a wider range of derivatives. Fees are also generally lower, with Binance charging as low as 0.02%/0.04% versus Coinbase Advanced's 0%/0.60%. For active traders who want maximum capability, international exchanges have a substantial feature advantage. The regulatory restrictions on US platforms mean fewer coins, limited or no leverage, and restricted access to products like staking in certain states.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Risk Considerations</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Risk Considerations</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Using international exchanges as a US resident may violate the exchange's terms of service and potentially expose you to legal risk. Platforms like Binance.com explicitly prohibit US users. Some traders use VPNs to access these platforms, but this is risky — exchanges can freeze accounts that violate geographic restrictions. US residents are safest using US-regulated exchanges or the US-specific versions of international platforms (like Binance.US), even though they offer fewer features.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-white">US exchanges are best for</strong> US residents who want regulatory protection, FDIC insurance, legal compliance, and a simple onboarding experience. Coinbase, Kraken, and Gemini are top choices.</p>
-          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-white">International exchanges are best for</strong> non-US residents who want the lowest fees, widest coin selection, highest leverage, and most advanced features. Binance, OKX, and Bybit lead in this category.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-[var(--color-text)]">US exchanges are best for</strong> US residents who want regulatory protection, FDIC insurance, legal compliance, and a simple onboarding experience. Coinbase, Kraken, and Gemini are top choices.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">International exchanges are best for</strong> non-US residents who want the lowest fees, widest coin selection, highest leverage, and most advanced features. Binance, OKX, and Bybit lead in this category.</p>
         </div>
       </div>
 

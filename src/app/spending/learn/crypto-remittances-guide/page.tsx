@@ -17,10 +17,14 @@ export default function CryptoRemittancesGuidePage() {
       readTime="10 min"
       intro="Cryptocurrency remittances offer a faster, cheaper alternative to traditional money transfer services. With fees averaging 6-7% through legacy providers, crypto transfers that cost under 1% represent a transformative option for migrant workers sending money home to their families."
       toc={[
-        { id: "overview", title: "Crypto vs Traditional Remittances", level: 2 },
-        { id: "services", title: "Top Crypto Remittance Services", level: 2 },
-        { id: "corridors", title: "Key Remittance Corridors", level: 2 },
-        { id: "last-mile", title: "The Last Mile Challenge", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "crypto-vs-traditional-remittances", title: "Crypto vs Traditional Remittances", level: 2 },
+        { id: "services", title: "services", level: 2 },
+        { id: "top-crypto-remittance-services", title: "Top Crypto Remittance Services", level: 2 },
+        { id: "corridors", title: "corridors", level: 2 },
+        { id: "key-remittance-corridors", title: "Key Remittance Corridors", level: 2 },
+        { id: "last-mile", title: "last-mile", level: 2 },
+        { id: "the-last-mile-challenge", title: "The Last Mile Challenge", level: 2 }
       ]}
       faqs={[
         { question: "How much cheaper are crypto remittances?", answer: "Traditional remittances average 6-7% in fees. Crypto remittances through platforms like Strike or direct stablecoin transfers can reduce costs to under 1%, saving families hundreds of dollars annually." },

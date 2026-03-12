@@ -24,13 +24,20 @@ export default function HowToBuyCryptoCanadaPage() {
       readTime="13 min"
       intro="Canada is one of the most crypto-forward countries globally, with regulated exchanges, approved Bitcoin ETFs, and clear CRA tax guidelines. Buying crypto as a Canadian is simple with Interac e-Transfer support on most exchanges. This guide walks you through choosing an exchange, funding your account with CAD, understanding tax implications, and securing your assets."
       toc={[
-        { id: "choose-exchange", title: "Choosing a CSA-Registered Exchange", level: 2 },
-        { id: "verification", title: "Account Verification in Canada", level: 2 },
-        { id: "deposit-cad", title: "Depositing CAD: Interac e-Transfer and More", level: 2 },
-        { id: "buying-steps", title: "Step-by-Step Buying Guide", level: 2 },
-        { id: "crypto-etfs", title: "Canadian Crypto ETFs as an Alternative", level: 2 },
-        { id: "cra-taxes", title: "CRA Crypto Tax Requirements", level: 2 },
-        { id: "security", title: "Protecting Your Crypto", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "choosing-a-csa-registered-exchange", title: "Choosing a CSA-Registered Exchange", level: 2 },
+        { id: "verification", title: "verification", level: 2 },
+        { id: "account-verification-in-canada", title: "Account Verification in Canada", level: 2 },
+        { id: "deposit-cad", title: "deposit-cad", level: 2 },
+        { id: "depositing-cad-interac-e-transfer-and-more", title: "Depositing CAD: Interac e-Transfer and More", level: 2 },
+        { id: "buying-steps", title: "buying-steps", level: 2 },
+        { id: "step-by-step-buying-guide", title: "Step-by-Step Buying Guide", level: 2 },
+        { id: "crypto-etfs", title: "crypto-etfs", level: 2 },
+        { id: "canadian-crypto-etfs-as-an-alternative", title: "Canadian Crypto ETFs as an Alternative", level: 2 },
+        { id: "cra-taxes", title: "cra-taxes", level: 2 },
+        { id: "cra-crypto-tax-requirements", title: "CRA Crypto Tax Requirements", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "protecting-your-crypto", title: "Protecting Your Crypto", level: 2 }
       ]}
       faqs={[
         {

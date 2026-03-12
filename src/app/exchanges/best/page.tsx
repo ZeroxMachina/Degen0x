@@ -48,7 +48,7 @@ export default function BestExchangesPage() {
     "@type": "Article",
     headline: `10 Best Crypto Exchanges of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -66,7 +66,7 @@ export default function BestExchangesPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           10 Best Crypto Exchanges of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -83,18 +83,18 @@ export default function BestExchangesPage() {
             creating accounts, making trades, and evaluating customer support on each one.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            Our top pick for most people is <strong className="text-white">Coinbase</strong> for
+            Our top pick for most people is <strong className="text-[var(--color-text)]">Coinbase</strong> for
             its unmatched ease of use and strong US regulatory compliance. For traders seeking the
-            lowest fees and widest selection, <strong className="text-white">Binance</strong> leads
+            lowest fees and widest selection, <strong className="text-[var(--color-text)]">Binance</strong> leads
             the pack globally. And for those who prioritize security above all else,{" "}
-            <strong className="text-white">Kraken</strong> is hard to beat with its decade-long
+            <strong className="text-[var(--color-text)]">Kraken</strong> is hard to beat with its decade-long
             clean security record.
           </p>
         </div>
 
         {/* Rankings */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
           <div className="space-y-4">
             {rankedExchanges.map((exchange, index) => (
               <ProductCard
@@ -109,7 +109,7 @@ export default function BestExchangesPage() {
 
         {/* Comparison Table */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">
             Top 5 Exchanges Compared
           </h2>
           <ComparisonTable
@@ -121,7 +121,7 @@ export default function BestExchangesPage() {
 
         {/* Methodology */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             We evaluate each exchange across six key categories, each weighted based on importance
             to the average user:
@@ -136,7 +136,7 @@ export default function BestExchangesPage() {
               { title: "Support (5%)", desc: "Customer support channels, response times, and quality of help documentation." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}
@@ -145,7 +145,7 @@ export default function BestExchangesPage() {
 
         {/* Detailed Reviews Summary */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">
             Quick Summaries
           </h2>
           <div className="space-y-6">
@@ -154,7 +154,7 @@ export default function BestExchangesPage() {
                 key={exchange.slug}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6"
               >
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-xl font-bold text-[var(--color-text)] mb-2">
                   {index + 1}. {exchange.name} &mdash; Best for {exchange.bestFor}
                 </h3>
                 <p className="text-[var(--color-text-secondary)] mb-4">
@@ -205,7 +205,7 @@ export default function BestExchangesPage() {
                   </a>
                   <a
                     href={`/exchanges/reviews/${exchange.slug}`}
-                    className="px-4 py-2 rounded-lg border border-[var(--color-border)] text-white text-sm font-medium hover:bg-[var(--color-bg)]/50 transition-colors"
+                    className="px-4 py-2 rounded-lg border border-[var(--color-border)] text-[var(--color-text)] text-sm font-medium hover:bg-[var(--color-bg)]/50 transition-colors"
                   >
                     Read Full Review
                   </a>

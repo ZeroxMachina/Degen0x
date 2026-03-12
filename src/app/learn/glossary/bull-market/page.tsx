@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Bull Market? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Bull Market? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a crypto bull market is, how to identify one, historical bull runs, and strategies for maximizing gains while managing risk.",
 };
@@ -17,11 +17,16 @@ export default function BullMarketPage() {
       readTime="5 min"
       intro="A bull market is a sustained period of rising asset prices characterized by optimism, growing investment, and increasing confidence. In crypto, bull markets can produce extraordinary gains — Bitcoin has risen over 1,000% in previous bull cycles. Understanding bull market dynamics helps you capitalize on opportunities while preparing for the inevitable correction."
       toc={[
-        { id: "definition", title: "What Is a Bull Market?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-bull-market", title: "What Is a Bull Market?", level: 2 },
+        { id: "characteristics", title: "characteristics", level: 2 },
         { id: "characteristics", title: "Characteristics", level: 2 },
-        { id: "history", title: "Historical Crypto Bull Markets", level: 2 },
+        { id: "history", title: "history", level: 2 },
+        { id: "historical-crypto-bull-markets", title: "Historical Crypto Bull Markets", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "strategies", title: "Bull Market Strategies", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "bull-market-strategies", title: "Bull Market Strategies", level: 2 }
       ]}
       faqs={[
         {

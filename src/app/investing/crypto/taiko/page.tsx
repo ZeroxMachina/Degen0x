@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Taiko (TAIKO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Taiko (TAIKO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Taiko (TAIKO), the Type-1 ZK-EVM rollup for Ethereum. Discover how it works, tokenomics, use cases, and how to buy TAIKO.",
 };
@@ -17,12 +17,18 @@ export default function TaikoPage() {
       readTime="8 min read"
       intro="Taiko is a Type-1 (fully Ethereum-equivalent) ZK-EVM rollup that aims to be the most Ethereum-aligned Layer 2. Unlike other ZK rollups that modify the EVM for proof generation efficiency, Taiko prioritizes complete EVM equivalence, meaning any Ethereum application can deploy on Taiko without any code changes. The protocol also features a decentralized and permissionless prover and proposer system."
       toc={[
-        { id: "what-is", title: "What Is Taiko?", level: 2 },
-        { id: "how-it-works", title: "How Does Taiko Work?", level: 2 },
-        { id: "tokenomics", title: "TAIKO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy TAIKO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-taiko", title: "What Is Taiko?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-taiko-work", title: "How Does Taiko Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "taiko-tokenomics", title: "TAIKO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-taiko", title: "How to Buy TAIKO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Saga (SAGA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Saga (SAGA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Saga (SAGA), the protocol for automatically deploying dedicated blockchains (Chainlets). Discover how it works, tokenomics, use cases, and how to buy SAGA.",
 };
@@ -17,12 +17,18 @@ export default function SagaPage() {
       readTime="8 min read"
       intro="Saga is a Layer 1 protocol that enables developers to automatically launch dedicated blockchains called Chainlets with just a few clicks. Built on the Cosmos SDK, Saga provides infrastructure for deploying application-specific chains that share security through the Saga mainnet validators. The protocol targets gaming and entertainment applications that need dedicated blockspace and customizable execution environments without the complexity of bootstrapping a new blockchain from scratch."
       toc={[
-        { id: "what-is", title: "What Is Saga?", level: 2 },
-        { id: "how-it-works", title: "How Does Saga Work?", level: 2 },
-        { id: "tokenomics", title: "SAGA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SAGA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-saga", title: "What Is Saga?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-saga-work", title: "How Does Saga Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "saga-tokenomics", title: "SAGA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-saga", title: "How to Buy SAGA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

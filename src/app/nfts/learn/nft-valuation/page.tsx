@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Value NFTs (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Value NFTs (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to value NFTs using floor price analysis, rarity scoring, trait valuation, historical sales data, and qualitative assessment methods.",
 };
 
@@ -11,7 +11,16 @@ export default function NftValuationPage() {
   return (
     <LearnPageLayout title="How to Value NFTs" categoryName="NFTs" categorySlug="nfts" readTime="9 min read"
       intro="Valuing NFTs is one of the most challenging aspects of the crypto space. Unlike fungible tokens with clear market prices, each NFT is unique with value determined by a complex interplay of rarity, aesthetics, utility, community strength, and market sentiment. There is no single formula for NFT valuation, but understanding the key factors and analytical frameworks helps you make more informed buying and selling decisions. This guide breaks down the major valuation approaches used by experienced NFT traders and collectors."
-      toc={[{ id: "floor-price-analysis", title: "Floor Price Analysis", level: 2 }, { id: "rarity-and-traits", title: "Rarity and Trait Valuation", level: 2 }, { id: "qualitative-factors", title: "Qualitative Factors", level: 2 }, { id: "valuation-tools", title: "Valuation Tools and Data", level: 2 }]}
+      toc={[
+        { id: "floor-price-analysis", title: "floor-price-analysis", level: 2 },
+        { id: "floor-price-analysis", title: "Floor Price Analysis", level: 2 },
+        { id: "rarity-and-traits", title: "rarity-and-traits", level: 2 },
+        { id: "rarity-and-trait-valuation", title: "Rarity and Trait Valuation", level: 2 },
+        { id: "qualitative-factors", title: "qualitative-factors", level: 2 },
+        { id: "qualitative-factors", title: "Qualitative Factors", level: 2 },
+        { id: "valuation-tools", title: "valuation-tools", level: 2 },
+        { id: "valuation-tools-and-data", title: "Valuation Tools and Data", level: 2 }
+      ]}
       faqs={[{ question: "What is floor price?", answer: "Floor price is the lowest listed price for any NFT in a collection. It represents the minimum cost to enter a collection and serves as the baseline valuation reference. Floor price alone is insufficient for valuation since it does not account for rarity or specific trait values. A rare NFT in a collection might be worth 10-100x the floor price. However, floor price trends indicate overall collection health and market sentiment." },
         { question: "How important is rarity in NFT valuation?", answer: "Rarity is one of the strongest price drivers for PFP and generative collections. Rare traits can multiply an NFT's value 5-50x above floor price. However, rarity must be contextualized: a rare trait is only valuable if people actually want it. Statistically rare but aesthetically unappealing traits may not command premium prices. The most valuable NFTs typically combine statistical rarity with strong visual appeal and cultural significance." },
         { question: "Can NFTs go to zero?", answer: "Yes. Many NFT collections have seen their floor prices drop to near zero, effectively making individual NFTs worthless in market terms. This typically happens when the team abandons the project, community engagement collapses, or the broader market shifts away from the collection's category. The non-fungible nature means there may be zero buy demand for a specific NFT even if the collection has some residual activity." }]}

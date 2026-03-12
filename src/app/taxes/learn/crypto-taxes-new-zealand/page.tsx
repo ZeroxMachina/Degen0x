@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in New Zealand (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in New Zealand (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in New Zealand. Learn about income tax on crypto, IRD guidelines, and when crypto gains are taxable for NZ investors.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesNewZealandPage() {
       readTime="8 min read"
       intro="New Zealand does not have a specific capital gains tax, but cryptocurrency gains are often taxable under income tax rules. The Inland Revenue Department (IRD) treats crypto as property, and gains are taxable if you acquired crypto with the purpose of disposal or if you are in the business of trading crypto. The IRD has issued specific guidance on crypto taxation, making New Zealand one of the more clearly defined jurisdictions in the Asia-Pacific region."
       toc={[
-        { id: "tax-treatment", title: "How Crypto Is Taxed in NZ", level: 2 },
-        { id: "when-taxable", title: "When Crypto Gains Are Taxable", level: 2 },
-        { id: "income-types", title: "Types of Crypto Income", level: 2 },
+        { id: "tax-treatment", title: "tax-treatment", level: 2 },
+        { id: "how-crypto-is-taxed-in-nz", title: "How Crypto Is Taxed in NZ", level: 2 },
+        { id: "when-taxable", title: "when-taxable", level: 2 },
+        { id: "when-crypto-gains-are-taxable", title: "When Crypto Gains Are Taxable", level: 2 },
+        { id: "income-types", title: "income-types", level: 2 },
+        { id: "types-of-crypto-income", title: "Types of Crypto Income", level: 2 },
+        { id: "gst-implications", title: "gst-implications", level: 2 },
         { id: "gst-implications", title: "GST Implications", level: 2 },
-        { id: "reporting-filing", title: "Reporting and Filing", level: 2 },
+        { id: "reporting-filing", title: "reporting-filing", level: 2 },
+        { id: "reporting-and-filing", title: "Reporting and Filing", level: 2 }
       ]}
       faqs={[
         { question: "Does New Zealand have a capital gains tax on crypto?", answer: "New Zealand does not have a general capital gains tax. However, crypto gains are taxable as income if you bought crypto with the intention of selling it at a profit, if you are in the business of trading crypto, or if you are a dealer or miner. The key factor is the purpose behind your crypto activities." },

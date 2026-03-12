@@ -17,10 +17,14 @@ export default function CryptoCardForBusinessPage() {
       readTime="8 min"
       intro="Businesses increasingly use cryptocurrency for treasury management, payments, and operations. Crypto cards designed for business use enable companies to spend from their crypto holdings on business expenses, manage employee spending, and earn rewards on corporate purchases. This guide covers the options available for business crypto card use, the accounting implications, and strategies for integrating crypto cards into business operations."
       toc={[
+        { id: "business-use-cases", title: "business-use-cases", level: 2 },
         { id: "business-use-cases", title: "Business Use Cases", level: 2 },
+        { id: "business-card-options", title: "business-card-options", level: 2 },
         { id: "business-card-options", title: "Business Card Options", level: 2 },
-        { id: "accounting-tax", title: "Accounting and Tax Implications", level: 2 },
-        { id: "implementation", title: "Implementation Considerations", level: 2 },
+        { id: "accounting-tax", title: "accounting-tax", level: 2 },
+        { id: "accounting-and-tax-implications", title: "Accounting and Tax Implications", level: 2 },
+        { id: "implementation", title: "implementation", level: 2 },
+        { id: "implementation-considerations", title: "Implementation Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Can I use a personal crypto card for business expenses?", answer: "While technically possible, it is not recommended. Using personal cards for business expenses complicates accounting, tax reporting, and expense tracking. Business crypto cards provide separate accounts, expense management features, and proper business tax documentation that personal cards do not." },

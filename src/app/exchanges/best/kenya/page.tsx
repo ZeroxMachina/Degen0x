@@ -16,10 +16,14 @@ export default function KenyaExchangesPage() {
       readTime="9 min"
       intro="Kenya is one of Africa's fastest-growing crypto markets, driven by high mobile money penetration, a young tech-savvy population, and strong demand for alternative financial services. M-Pesa's dominance in the payment landscape creates unique opportunities for crypto onboarding."
       toc={[
-        { id: "regulation", title: "Regulatory Status in Kenya", level: 2 },
-        { id: "top-exchanges", title: "Best Exchanges for Kenyan Users", level: 2 },
-        { id: "payment-methods", title: "KES Payment Methods & M-Pesa", level: 2 },
-        { id: "tips", title: "Tips for Kenyan Traders", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulatory-status-in-kenya", title: "Regulatory Status in Kenya", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "best-exchanges-for-kenyan-users", title: "Best Exchanges for Kenyan Users", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "kes-payment-methods-m-pesa", title: "KES Payment Methods & M-Pesa", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-kenyan-traders", title: "Tips for Kenyan Traders", level: 2 }
       ]}
       faqs={[
         {

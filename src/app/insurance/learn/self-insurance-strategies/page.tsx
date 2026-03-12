@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Self-Insurance Strategies for Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Self-Insurance Strategies for Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn self-insurance strategies for crypto investors. Build your own protection through diversification, reserves, and risk management without buying insurance.",
 };
 
@@ -11,7 +11,16 @@ export default function SelfInsuranceStrategiesPage() {
   return (
     <LearnPageLayout title="Self-Insurance Strategies for Crypto" categoryName="Crypto Insurance" categorySlug="insurance" readTime="8 min read"
       intro="Self-insurance is the practice of managing risk through your own strategies rather than purchasing formal insurance products. For many crypto investors, the cost of DeFi insurance premiums, the limitations of coverage, and the immaturity of insurance protocols make self-insurance an attractive complement or alternative. Effective self-insurance requires disciplined risk management, diversification, and reserve building."
-      toc={[{ id: "diversification", title: "Diversification as Insurance", level: 2 }, { id: "reserve-fund", title: "Building a Reserve Fund", level: 2 }, { id: "position-sizing", title: "Position Sizing Rules", level: 2 }, { id: "combined-approach", title: "Combining Self and Formal Insurance", level: 2 }]}
+      toc={[
+        { id: "diversification", title: "diversification", level: 2 },
+        { id: "diversification-as-insurance", title: "Diversification as Insurance", level: 2 },
+        { id: "reserve-fund", title: "reserve-fund", level: 2 },
+        { id: "building-a-reserve-fund", title: "Building a Reserve Fund", level: 2 },
+        { id: "position-sizing", title: "position-sizing", level: 2 },
+        { id: "position-sizing-rules", title: "Position Sizing Rules", level: 2 },
+        { id: "combined-approach", title: "combined-approach", level: 2 },
+        { id: "combining-self-and-formal-insurance", title: "Combining Self and Formal Insurance", level: 2 }
+      ]}
       faqs={[
         { question: "What is self-insurance?", answer: "Self-insurance means managing risk through your own actions rather than buying insurance from a third party. This includes diversifying across protocols, maintaining cash reserves for unexpected losses, limiting position sizes, and using only battle-tested protocols. You accept the risk but manage it actively." },
         { question: "Is self-insurance better than buying DeFi insurance?", answer: "It depends. Self-insurance avoids premium costs and insurance protocol risk, but leaves you fully exposed to tail-risk events. Formal insurance provides a backstop for catastrophic losses. The best approach combines both: self-insurance for manageable risks and formal insurance for catastrophic ones." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Risk Management for DeFi Lenders (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Risk Management for DeFi Lenders (${CURRENT_YEAR}) | degen0x`,
   description: "Complete guide to risk management in DeFi lending. Learn how to assess protocol risk, diversify positions, and protect your capital across lending protocols.",
 };
 
@@ -11,7 +11,16 @@ export default function LendingRiskManagementPage() {
   return (
     <LearnPageLayout title="Risk Management for DeFi Lenders" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="9 min read"
       intro="Effective risk management is the difference between successful DeFi lending and catastrophic losses. While DeFi offers attractive yields, every basis point of return carries risk. Smart contract exploits, oracle failures, economic attacks, and protocol governance issues have caused billions in losses across the DeFi ecosystem. This guide provides a practical framework for managing lending risk across protocols, chains, and strategies."
-      toc={[{ id: "risk-types", title: "Types of DeFi Lending Risk", level: 2 }, { id: "assessment-framework", title: "Risk Assessment Framework", level: 2 }, { id: "diversification", title: "Diversification Strategies", level: 2 }, { id: "monitoring", title: "Monitoring and Response", level: 2 }]}
+      toc={[
+        { id: "risk-types", title: "risk-types", level: 2 },
+        { id: "types-of-defi-lending-risk", title: "Types of DeFi Lending Risk", level: 2 },
+        { id: "assessment-framework", title: "assessment-framework", level: 2 },
+        { id: "risk-assessment-framework", title: "Risk Assessment Framework", level: 2 },
+        { id: "diversification", title: "diversification", level: 2 },
+        { id: "diversification-strategies", title: "Diversification Strategies", level: 2 },
+        { id: "monitoring", title: "monitoring", level: 2 },
+        { id: "monitoring-and-response", title: "Monitoring and Response", level: 2 }
+      ]}
       faqs={[
         { question: "What is the biggest risk in DeFi lending?", answer: "Smart contract risk (the possibility that protocol code has a bug or vulnerability that can be exploited) is the most fundamental risk. Even the most careful code review cannot guarantee zero bugs. This risk is why protocol age, audit history, and TVL track record matter so much." },
         { question: "How much should I diversify?", answer: "A common framework: never put more than 25-30% of your DeFi lending portfolio in a single protocol. Diversify across at least 3 protocols and 2+ chains. For larger portfolios, include a mix of tier-one protocols (majority) and emerging protocols (smaller allocation)." },

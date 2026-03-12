@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `MEXC Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `MEXC Review (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth MEXC exchange review covering fees, features, security, and supported assets. Is MEXC the right exchange for you?",
 };

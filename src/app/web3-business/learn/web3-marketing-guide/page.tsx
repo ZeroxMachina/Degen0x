@@ -16,10 +16,14 @@ export default function Web3MarketingGuidePage() {
       readTime="10 min"
       intro="Marketing Web3 products requires strategies distinct from traditional digital marketing, including community building, token incentives, decentralized social media, and crypto-native distribution."
       toc={[
-        { id: "section-1", title: "Web3 Marketing Fundamentals", level: 2 },
-        { id: "section-2", title: "Community-First Strategy", level: 2 },
-        { id: "section-3", title: "Growth Channels", level: 2 },
-        { id: "section-4", title: "Measuring Success", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "web3-marketing-fundamentals", title: "Web3 Marketing Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "community-first-strategy", title: "Community-First Strategy", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "growth-channels", title: "Growth Channels", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "measuring-success", title: "Measuring Success", level: 2 }
       ]}
       faqs={[
         { question: "How is Web3 marketing different?", answer: "Web3 marketing prioritizes community ownership and transparent communication over traditional advertising. Token incentives, decentralized social platforms, and community-driven growth replace many traditional marketing channels. Trust and authenticity matter more than polished messaging." },

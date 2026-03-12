@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Delegator? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Delegator? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a delegator is in proof-of-stake networks, how delegation works, the benefits and risks, and how to choose the right validator.",
 };
 
@@ -11,7 +11,16 @@ export default function DelegatorPage() {
   return (
     <LearnPageLayout title="What Is a Delegator?" categoryName="Learn Crypto" categorySlug="learn" readTime="4 min read"
       intro="A delegator is a token holder who stakes their cryptocurrency with a validator without running their own node infrastructure. Delegation allows anyone to participate in network security and earn staking rewards by lending their economic weight to a chosen validator. The delegator retains ownership of their tokens while the validator uses the delegated stake to increase their consensus power and share a portion of rewards back to delegators."
-      toc={[{ id: "definition", title: "What Is a Delegator?", level: 2 }, { id: "how-delegation-works", title: "How Delegation Works", level: 2 }, { id: "benefits-and-risks", title: "Benefits and Risks", level: 2 }, { id: "choosing-validators", title: "Best Practices for Delegators", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-delegator", title: "What Is a Delegator?", level: 2 },
+        { id: "how-delegation-works", title: "how-delegation-works", level: 2 },
+        { id: "how-delegation-works", title: "How Delegation Works", level: 2 },
+        { id: "benefits-and-risks", title: "benefits-and-risks", level: 2 },
+        { id: "benefits-and-risks", title: "Benefits and Risks", level: 2 },
+        { id: "choosing-validators", title: "choosing-validators", level: 2 },
+        { id: "best-practices-for-delegators", title: "Best Practices for Delegators", level: 2 }
+      ]}
       faqs={[{ question: "Do I lose custody of my tokens when delegating?", answer: "On most networks, no. Delegation is a non-custodial operation where your tokens remain in your wallet or a staking contract you control. You can undelegate at any time, subject to the network's unbonding period. Validators cannot spend your delegated tokens. This is different from depositing tokens on a centralized exchange for staking." },
         { question: "Can I delegate to multiple validators?", answer: "On many networks, yes. Cosmos chains, Polkadot, and Solana all support multi-validator delegation. Spreading your delegation across multiple validators reduces concentration risk and supports network decentralization. Ethereum's native staking requires 32 ETH per validator, but liquid staking protocols effectively delegate across many validators." }]}
       relatedArticles={[{ title: "Validator", href: "/learn/glossary/validator", category: "Glossary" }, { title: "Slashing", href: "/learn/glossary/slashing", category: "Glossary" }, { title: "Bonding", href: "/learn/glossary/bonding", category: "Glossary" }, { title: "What Is Staking?", href: "/learn/what-is-staking", category: "Learn Crypto" }]}

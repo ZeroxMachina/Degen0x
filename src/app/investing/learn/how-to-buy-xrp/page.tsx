@@ -25,13 +25,18 @@ export default function HowToBuyXRPPage() {
       readTime="12 min"
       intro="XRP is the native cryptocurrency of the XRP Ledger, a blockchain designed for fast, low-cost cross-border payments. XRP is closely associated with Ripple, the company that created the XRP Ledger and uses it for its payment solutions. Following a prolonged legal battle with the SEC, XRP's legal status has been significantly clarified. XRP remains one of the most traded cryptocurrencies by market capitalization. This guide covers how to buy XRP, which exchanges support it, storage options, and key investment considerations."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose an Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-xrp", title: "Step 4: Buy XRP", level: 2 },
-        { id: "store-xrp", title: "Step 5: Store Your XRP", level: 2 },
-        { id: "xrp-use-case", title: "Understanding XRP's Use Case", level: 2 },
-        { id: "legal-status", title: "XRP Legal Status and SEC Case", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-an-exchange", title: "Step 1: Choose an Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-xrp", title: "buy-xrp", level: 2 },
+        { id: "step-4-buy-xrp", title: "Step 4: Buy XRP", level: 2 },
+        { id: "store-xrp", title: "store-xrp", level: 2 },
+        { id: "step-5-store-your-xrp", title: "Step 5: Store Your XRP", level: 2 },
+        { id: "xrp-use-case", title: "xrp-use-case", level: 2 },
+        { id: "understanding-xrp", title: "Understanding XRP", level: 2 }
       ]}
       faqs={[
         {
@@ -58,12 +63,12 @@ export default function HowToBuyXRPPage() {
           question: "What makes XRP different from Bitcoin?",
           answer:
             "XRP was designed specifically for fast, low-cost payments. XRP transactions settle in 3-5 seconds and cost fractions of a cent, compared to Bitcoin's 10+ minute blocks and higher fees. However, XRP has a different consensus mechanism and was premined (100 billion XRP created at launch). Bitcoin emphasizes decentralization and scarcity, while XRP emphasizes payment utility.",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "How to Buy Bitcoin", href: "/investing/learn/how-to-buy-bitcoin", category: "Investing" },
         { title: "How to Buy Cardano", href: "/investing/learn/how-to-buy-cardano", category: "Investing" },
-        { title: "Best Crypto Exchanges", href: "/exchanges/best/usa", category: "Exchanges" },
+        { title: "Best Crypto Exchanges", href: "/exchanges/best/usa", category: "Exchanges" }
       ]}
     >
       <h2 id="choose-exchange">Step 1: Choose an Exchange</h2>

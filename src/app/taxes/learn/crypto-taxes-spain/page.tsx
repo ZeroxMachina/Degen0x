@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Spain (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Spain (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Spain. Learn about capital gains rates, Modelo 721 reporting, and wealth tax obligations for crypto investors.",
 };
@@ -17,12 +17,18 @@ export default function CryptoTaxesSpainPage() {
       readTime="9 min read"
       intro="Spain has implemented comprehensive crypto tax regulations with progressive capital gains rates and strict reporting requirements. The Agencia Tributaria (Spanish Tax Agency) requires crypto investors to report gains, declare holdings on foreign platforms, and in some regions, pay wealth tax on crypto assets. Spain introduced Modelo 721 specifically for declaring crypto held on foreign platforms, demonstrating the government's focus on crypto tax compliance."
       toc={[
-        { id: "capital-gains", title: "Capital Gains Tax Rates", level: 2 },
+        { id: "capital-gains", title: "capital-gains", level: 2 },
+        { id: "capital-gains-tax-rates", title: "Capital Gains Tax Rates", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
         { id: "taxable-events", title: "Taxable Events", level: 2 },
-        { id: "modelo-721", title: "Modelo 721 Reporting", level: 2 },
-        { id: "wealth-tax", title: "Wealth Tax on Crypto", level: 2 },
-        { id: "defi-taxes", title: "DeFi and Staking Taxes", level: 2 },
-        { id: "compliance-tips", title: "Compliance Tips", level: 2 },
+        { id: "modelo-721", title: "modelo-721", level: 2 },
+        { id: "modelo-721-reporting", title: "Modelo 721 Reporting", level: 2 },
+        { id: "wealth-tax", title: "wealth-tax", level: 2 },
+        { id: "wealth-tax-on-crypto", title: "Wealth Tax on Crypto", level: 2 },
+        { id: "defi-taxes", title: "defi-taxes", level: 2 },
+        { id: "defi-and-staking-taxes", title: "DeFi and Staking Taxes", level: 2 },
+        { id: "compliance-tips", title: "compliance-tips", level: 2 },
+        { id: "compliance-tips", title: "Compliance Tips", level: 2 }
       ]}
       faqs={[
         { question: "What is the crypto capital gains rate in Spain?", answer: "Spain applies progressive capital gains rates: 19% on the first 6,000 euros of gains, 21% on gains between 6,000 and 50,000 euros, 23% on gains between 50,000 and 200,000 euros, 27% on gains between 200,000 and 300,000 euros, and 28% on gains exceeding 300,000 euros." },

@@ -7,7 +7,16 @@ export default function LtvRatioPage() {
   return (
     <LearnPageLayout title="LTV Ratio Explained" categoryName="Crypto Loans" categorySlug="crypto-loans" readTime="7 min"
       intro="The Loan-to-Value (LTV) ratio is the most important metric in crypto-backed lending. It determines how much you can borrow, how close you are to liquidation, and how much price movement your position can withstand."
-      toc={[{ id: "what-is-ltv", title: "What Is LTV?", level: 2 }, { id: "calculating", title: "Calculating LTV", level: 2 }, { id: "safe-levels", title: "Safe LTV Levels", level: 2 }, { id: "managing", title: "Managing Your LTV", level: 2 }]}
+      toc={[
+        { id: "what-is-ltv", title: "what-is-ltv", level: 2 },
+        { id: "what-is-ltv", title: "What Is LTV?", level: 2 },
+        { id: "calculating", title: "calculating", level: 2 },
+        { id: "calculating-ltv", title: "Calculating LTV", level: 2 },
+        { id: "safe-levels", title: "safe-levels", level: 2 },
+        { id: "safe-ltv-levels", title: "Safe LTV Levels", level: 2 },
+        { id: "managing", title: "managing", level: 2 },
+        { id: "managing-your-ltv", title: "Managing Your LTV", level: 2 }
+      ]}
       faqs={[
         { question: "What is a safe LTV ratio?", answer: "A conservative LTV of 30-40% provides substantial buffer against liquidation. Moderate risk is 50-60% LTV. Aggressive positions above 70% LTV leave little room for price drops and should only be used by experienced users with active monitoring." },
         { question: "What is the difference between LTV and liquidation threshold?", answer: "LTV is the maximum percentage you can borrow. The liquidation threshold is the level at which your position can be liquidated. The liquidation threshold is typically higher than the LTV limit, providing a buffer zone between maximum borrowing and liquidation." },

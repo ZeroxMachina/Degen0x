@@ -17,12 +17,18 @@ export default function WhatIsAccountAbstractionPage() {
       readTime="9 min"
       intro="Account abstraction is a blockchain upgrade that transforms wallets from simple key pairs into programmable smart contracts, enabling features like gasless transactions, social recovery, multi-signature security, and session keys. It represents the most significant improvement to crypto user experience since the invention of wallet software, and is widely considered essential for mainstream blockchain adoption."
       toc={[
-        { id: "the-problem", title: "The Wallet Problem", level: 2 },
-        { id: "how-it-works", title: "How Account Abstraction Works", level: 2 },
-        { id: "erc-4337", title: "ERC-4337 Standard", level: 2 },
+        { id: "the-problem", title: "the-problem", level: 2 },
+        { id: "the-wallet-problem", title: "The Wallet Problem", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-account-abstraction-works", title: "How Account Abstraction Works", level: 2 },
+        { id: "erc-4337", title: "erc-4337", level: 2 },
+        { id: "erc-4337-standard", title: "ERC-4337 Standard", level: 2 },
+        { id: "key-features", title: "key-features", level: 2 },
         { id: "key-features", title: "Key Features", level: 2 },
-        { id: "smart-wallets", title: "Smart Contract Wallets", level: 2 },
-        { id: "adoption", title: "Adoption and Future", level: 2 },
+        { id: "smart-wallets", title: "smart-wallets", level: 2 },
+        { id: "smart-contract-wallets", title: "Smart Contract Wallets", level: 2 },
+        { id: "adoption", title: "adoption", level: 2 },
+        { id: "adoption-and-future", title: "Adoption and Future", level: 2 }
       ]}
       faqs={[
         { question: "What is ERC-4337?", answer: "ERC-4337 is the Ethereum standard for account abstraction that works without requiring protocol-level changes. It introduces UserOperations, a separate mempool, and bundler nodes that package user intent into regular transactions. This allows smart contract wallets to operate with enhanced features on existing Ethereum infrastructure." },

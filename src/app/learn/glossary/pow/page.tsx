@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Proof of Work (PoW)? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Proof of Work (PoW)? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what proof of work is, how it secures Bitcoin, and the trade-offs between PoW and proof of stake consensus.",
 };
@@ -17,11 +17,16 @@ export default function PowPage() {
       readTime="6 min"
       intro="Proof of Work (PoW) is the original blockchain consensus mechanism, first implemented by Bitcoin. Miners compete to solve computationally intensive cryptographic puzzles, and the winner earns the right to add the next block and receive the block reward. PoW secures the network by making attacks prohibitively expensive in terms of hardware and electricity. It remains the consensus mechanism used by Bitcoin, the largest cryptocurrency."
       toc={[
-        { id: "definition", title: "What Is Proof of Work?", level: 2 },
-        { id: "how-it-works", title: "How PoW Works", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-proof-of-work", title: "What Is Proof of Work?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-pow-works", title: "How PoW Works", level: 2 },
+        { id: "security-model", title: "security-model", level: 2 },
         { id: "security-model", title: "Security Model", level: 2 },
-        { id: "energy-debate", title: "The Energy Debate", level: 2 },
-        { id: "why-it-matters", title: "Why PoW Matters", level: 2 },
+        { id: "energy-debate", title: "energy-debate", level: 2 },
+        { id: "the-energy-debate", title: "The Energy Debate", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-pow-matters", title: "Why PoW Matters", level: 2 }
       ]}
       faqs={[
         {

@@ -39,7 +39,7 @@ export default function TokenTaxReviewPage() {
 
       <article>
         <header className="mb-8">
-          <h1 className="text-4xl font-bold text-white mb-4">TokenTax Review {CURRENT_YEAR}</h1>
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">TokenTax Review {CURRENT_YEAR}</h1>
           <div className="flex items-center gap-4 mb-4">
             <StarRating rating={4.4} size="lg" />
             <span className="text-sm text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</span>
@@ -51,14 +51,14 @@ export default function TokenTaxReviewPage() {
             DIY software and full-service accounting.
           </p>
           <div className="mt-4">
-            <a href="https://cryptodegen.com/go/tokentax" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try TokenTax</a>
+            <a href="https://degen0x.com/go/tokentax" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try TokenTax</a>
           </div>
         </header>
 
         <TableOfContents items={toc} />
 
         <section id="overview" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Overview</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Overview</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             TokenTax was founded in 2017 and has carved out a niche as the premium crypto tax
             solution. While its software capabilities are solid with support for exchange imports,
@@ -76,7 +76,7 @@ export default function TokenTaxReviewPage() {
         </section>
 
         <section id="cpa-services" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">CPA Services</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">CPA Services</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             TokenTax's VIP plan provides access to CPAs who specialize in cryptocurrency taxation.
             These professionals can handle your complete tax return, advise on tax optimization
@@ -92,7 +92,7 @@ export default function TokenTaxReviewPage() {
         </section>
 
         <section id="pricing" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Pricing</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Pricing</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { plan: "Basic", price: "$65", txns: "500 transactions", notes: "Software only" },
@@ -100,7 +100,7 @@ export default function TokenTaxReviewPage() {
               { plan: "VIP", price: "$3,500+", txns: "Unlimited", notes: "Full CPA filing service" },
             ].map((p) => (
               <div key={p.plan} className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 text-center">
-                <h3 className="text-sm font-semibold text-white">{p.plan}</h3>
+                <h3 className="text-sm font-semibold text-[var(--color-text)]">{p.plan}</h3>
                 <p className="text-2xl font-bold text-[var(--color-primary)] my-2">{p.price}</p>
                 <p className="text-xs text-[var(--color-text-secondary)]">{p.txns}</p>
                 <p className="text-xs text-[var(--color-text-secondary)] mt-1">{p.notes}</p>
@@ -110,7 +110,7 @@ export default function TokenTaxReviewPage() {
         </section>
 
         <section id="pros-cons" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Pros & Cons</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Pros & Cons</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
               <h3 className="text-lg font-semibold text-[var(--color-success)] mb-3">Pros</h3>
@@ -135,7 +135,7 @@ export default function TokenTaxReviewPage() {
         </section>
 
         <section id="verdict" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
             <StarRating rating={4.4} size="lg" />
             <p className="text-[var(--color-text-secondary)] mt-4 mb-4">
@@ -145,7 +145,7 @@ export default function TokenTaxReviewPage() {
               TokenTax truly shines, offering peace of mind for complex tax situations that
               software alone cannot handle.
             </p>
-            <a href="https://cryptodegen.com/go/tokentax" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try TokenTax</a>
+            <a href="https://degen0x.com/go/tokentax" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try TokenTax</a>
           </div>
         </section>
 

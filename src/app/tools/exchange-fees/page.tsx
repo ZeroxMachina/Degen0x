@@ -468,7 +468,7 @@ export default function ExchangeFeesPage() {
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-3">
+          <h1 className="text-4xl sm:text-5xl font-bold text-[var(--color-text)] mb-3">
             Multi-Exchange Fee Comparison
           </h1>
           <p className="text-gray-300 text-lg">
@@ -478,7 +478,7 @@ export default function ExchangeFeesPage() {
 
         {/* Volume Tier Quick Select */}
         <div className="bg-gray-800 rounded-lg p-6 mb-8 border border-gray-700">
-          <h2 className="text-xl font-semibold text-white mb-4">Your Trading Volume</h2>
+          <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Your Trading Volume</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
             {volumeTiers.map((tier, idx) => (
               <button
@@ -489,7 +489,7 @@ export default function ExchangeFeesPage() {
                 }}
                 className={`p-3 rounded-lg font-medium transition-all ${
                   selectedVolumeTier === idx
-                    ? 'bg-blue-600 text-white border-2 border-blue-400'
+                    ? 'bg-blue-600 text-[var(--color-text)] border-2 border-blue-400'
                     : 'bg-gray-700 text-gray-300 border-2 border-gray-600 hover:border-gray-500'
                 }`}
               >
@@ -498,30 +498,30 @@ export default function ExchangeFeesPage() {
             ))}
           </div>
           <div className="flex items-center gap-4">
-            <label className="text-white font-medium">Custom Volume ($):</label>
+            <label className="text-[var(--color-text)] font-medium">Custom Volume ($):</label>
             <input
               type="number"
               value={monthlyVolume}
               onChange={(e) => setMonthlyVolume(Number(e.target.value))}
-              className="flex-1 px-4 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:border-blue-500 focus:outline-none"
+              className="flex-1 px-4 py-2 bg-gray-700 text-[var(--color-text)] rounded-lg border border-gray-600 focus:border-blue-500 focus:outline-none"
             />
           </div>
         </div>
 
         {/* Trade Amount Calculator */}
         <div className="bg-gray-800 rounded-lg p-6 mb-8 border border-gray-700">
-          <h2 className="text-xl font-semibold text-white mb-4">Trade Amount Analysis</h2>
+          <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Trade Amount Analysis</h2>
           <div className="flex items-center gap-4">
-            <label className="text-white font-medium whitespace-nowrap">Single Trade ($):</label>
+            <label className="text-[var(--color-text)] font-medium whitespace-nowrap">Single Trade ($):</label>
             <input
               type="number"
               value={tradeAmount}
               onChange={(e) => setTradeAmount(Number(e.target.value))}
-              className="flex-1 px-4 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:border-blue-500 focus:outline-none"
+              className="flex-1 px-4 py-2 bg-gray-700 text-[var(--color-text)] rounded-lg border border-gray-600 focus:border-blue-500 focus:outline-none"
             />
             <div className="text-right">
               <div className="text-gray-400 text-sm">Monthly Volume</div>
-              <div className="text-white text-xl font-bold">${(monthlyVolume / 1000).toFixed(1)}K</div>
+              <div className="text-[var(--color-text)] text-xl font-bold">${(monthlyVolume / 1000).toFixed(1)}K</div>
             </div>
           </div>
         </div>
@@ -529,7 +529,7 @@ export default function ExchangeFeesPage() {
         {/* Exchange Selection */}
         <div className="bg-gray-800 rounded-lg p-6 mb-8 border border-gray-700">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-semibold text-white">Select Exchanges (2-4)</h2>
+            <h2 className="text-xl font-semibold text-[var(--color-text)]">Select Exchanges (2-4)</h2>
             <span className="text-sm text-gray-400">{Object.values(selectedExchanges).filter(Boolean).length} selected</span>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">
@@ -540,7 +540,7 @@ export default function ExchangeFeesPage() {
                 disabled={!selectedExchanges[exchange.id] && Object.values(selectedExchanges).filter(Boolean).length >= 4}
                 className={`p-3 rounded-lg font-medium transition-all text-center ${
                   selectedExchanges[exchange.id]
-                    ? 'bg-green-700 text-white border-2 border-green-500 shadow-lg shadow-green-500/20'
+                    ? 'bg-green-700 text-[var(--color-text)] border-2 border-green-500 shadow-lg shadow-green-500/20'
                     : 'bg-gray-700 text-gray-400 border-2 border-gray-600 hover:border-gray-500 disabled:opacity-50 disabled:cursor-not-allowed'
                 }`}
               >
@@ -553,13 +553,13 @@ export default function ExchangeFeesPage() {
 
         {/* Sort & Comparison Controls */}
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-white">Fee Comparison Results</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)]">Fee Comparison Results</h2>
           <div className="flex gap-2">
             <button
               onClick={() => setSortBy('cheapest')}
               className={`px-4 py-2 rounded-lg font-medium transition-all ${
                 sortBy === 'cheapest'
-                  ? 'bg-blue-600 text-white'
+                  ? 'bg-blue-600 text-[var(--color-text)]'
                   : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
               }`}
             >
@@ -569,7 +569,7 @@ export default function ExchangeFeesPage() {
               onClick={() => setSortBy('trust')}
               className={`px-4 py-2 rounded-lg font-medium transition-all ${
                 sortBy === 'trust'
-                  ? 'bg-blue-600 text-white'
+                  ? 'bg-blue-600 text-[var(--color-text)]'
                   : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
               }`}
             >
@@ -582,7 +582,7 @@ export default function ExchangeFeesPage() {
           <>
             {/* SVG Bar Chart */}
             <div className="bg-gray-800 rounded-lg p-8 mb-8 border border-gray-700 overflow-x-auto">
-              <h3 className="text-lg font-semibold text-white mb-6">Estimated Fees for ${tradeAmount.toLocaleString()} Trade</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-6">Estimated Fees for ${tradeAmount.toLocaleString()} Trade</h3>
               <svg viewBox="0 0 800 400" className="w-full min-w-max">
                 {/* Grid lines */}
                 {[0, 0.25, 0.5, 0.75, 1].map((ratio, i) => {
@@ -661,15 +661,15 @@ export default function ExchangeFeesPage() {
                 <table className="w-full">
                   <thead className="bg-gray-700">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Exchange</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Trust Score</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Security</th>
-                      <th className="px-6 py-4 text-right text-sm font-semibold text-white">Spot Fees</th>
-                      <th className="px-6 py-4 text-right text-sm font-semibold text-white">Withdrawal Avg</th>
-                      <th className="px-6 py-4 text-right text-sm font-semibold text-white text-green-400">
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-[var(--color-text)]">Exchange</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-[var(--color-text)]">Trust Score</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-[var(--color-text)]">Security</th>
+                      <th className="px-6 py-4 text-right text-sm font-semibold text-[var(--color-text)]">Spot Fees</th>
+                      <th className="px-6 py-4 text-right text-sm font-semibold text-[var(--color-text)]">Withdrawal Avg</th>
+                      <th className="px-6 py-4 text-right text-sm font-semibold text-[var(--color-text)] text-green-400">
                         Total Fees (${tradeAmount.toLocaleString()})
                       </th>
-                      <th className="px-6 py-4 text-right text-sm font-semibold text-white">VIP Tier</th>
+                      <th className="px-6 py-4 text-right text-sm font-semibold text-[var(--color-text)]">VIP Tier</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-700">
@@ -685,7 +685,7 @@ export default function ExchangeFeesPage() {
                             isLowest ? 'bg-green-900/20' : ''
                           }`}
                         >
-                          <td className="px-6 py-4 text-white font-semibold">{exchange.name}</td>
+                          <td className="px-6 py-4 text-[var(--color-text)] font-semibold">{exchange.name}</td>
                           <td className="px-6 py-4">
                             <div className="flex items-center gap-2">
                               <div className="w-24 bg-gray-700 rounded-full h-2 overflow-hidden">
@@ -694,10 +694,10 @@ export default function ExchangeFeesPage() {
                                   style={{ width: `${exchange.trustScore}%` }}
                                 />
                               </div>
-                              <span className="text-white font-medium">{exchange.trustScore}</span>
+                              <span className="text-[var(--color-text)] font-medium">{exchange.trustScore}</span>
                             </div>
                           </td>
-                          <td className="px-6 py-4 text-white">
+                          <td className="px-6 py-4 text-[var(--color-text)]">
                             <span
                               className={`px-3 py-1 rounded-full text-sm font-medium ${
                                 exchange.securityRating === 'A+'
@@ -710,13 +710,13 @@ export default function ExchangeFeesPage() {
                               {exchange.securityRating}
                             </span>
                           </td>
-                          <td className="px-6 py-4 text-right text-white">
+                          <td className="px-6 py-4 text-right text-[var(--color-text)]">
                             {((tier.spotMaker + tier.spotTaker) * 100).toFixed(3)}%
                           </td>
-                          <td className="px-6 py-4 text-right text-white">
+                          <td className="px-6 py-4 text-right text-[var(--color-text)]">
                             ${((exchange.withdrawalBTC + exchange.withdrawalETH + exchange.withdrawalUSDT) / 3).toFixed(2)}
                           </td>
-                          <td className={`px-6 py-4 text-right font-bold ${isLowest ? 'text-green-400' : 'text-white'}`}>
+                          <td className={`px-6 py-4 text-right font-bold ${isLowest ? 'text-green-400' : 'text-[var(--color-text)]'}`}>
                             ${fees.toFixed(2)}
                             {isLowest && <span className="ml-2 text-green-400">✓</span>}
                           </td>
@@ -731,12 +731,12 @@ export default function ExchangeFeesPage() {
 
             {/* Savings Analysis */}
             <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-8">
-              <h3 className="text-lg font-semibold text-white mb-6">Savings Analysis</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-6">Savings Analysis</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {savingsChart.map((item) => (
                   <div key={item.name} className="bg-gray-700 rounded-lg p-4">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-white font-medium">{item.name}</span>
+                      <span className="text-[var(--color-text)] font-medium">{item.name}</span>
                       <span className="text-green-400 font-bold">${item.savings.toFixed(2)}</span>
                     </div>
                     <div className="w-full bg-gray-600 rounded-full h-2 overflow-hidden">
@@ -761,7 +761,7 @@ export default function ExchangeFeesPage() {
 
         {/* Educational Breakdown */}
         <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg p-8 border border-blue-700/30 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-6">Understanding Crypto Exchange Fees</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Understanding Crypto Exchange Fees</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h3 className="text-lg font-semibold text-blue-200 mb-3">Spot Trading Fees</h3>
@@ -808,7 +808,7 @@ export default function ExchangeFeesPage() {
             Fee data updated as of March 2026. Actual fees may vary based on promotions, loyalty programs, and market conditions.
           </p>
           <p className="text-gray-500 text-xs">
-            For the most accurate and current fee schedules, visit each exchange directly. CryptoDegen provides educational comparison only.
+            For the most accurate and current fee schedules, visit each exchange directly. degen0x provides educational comparison only.
           </p>
         </div>
       </div>
@@ -822,7 +822,7 @@ export default function ExchangeFeesPage() {
             '@type': 'WebApplication',
             name: 'Multi-Exchange Fee Comparison Tool',
             description: 'Compare trading fees, withdrawal costs, and VIP tiers across 15+ major crypto exchanges',
-            url: 'https://cryptodegen.com/tools/exchange-fees',
+            url: 'https://degen0x.com/tools/exchange-fees',
             applicationCategory: 'FinanceApplication',
             offers: {
               '@type': 'Offer',

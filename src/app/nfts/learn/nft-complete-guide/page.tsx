@@ -16,10 +16,14 @@ export default function NftCompleteGuidePage() {
       readTime="10 min"
       intro="Non-fungible tokens have revolutionized digital ownership, creating new markets for art, gaming, music, and real-world assets. This comprehensive guide covers everything from the basics of how NFTs work to advanced strategies for collecting, creating, and investing in non-fungible tokens."
       toc={[
-        { id: "section-1", title: "Overview and Fundamentals", level: 2 },
-        { id: "section-2", title: "Key Concepts and Mechanics", level: 2 },
-        { id: "section-3", title: "Practical Applications", level: 2 },
-        { id: "section-4", title: "Best Practices and Tips", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "overview-and-fundamentals", title: "Overview and Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "key-concepts-and-mechanics", title: "Key Concepts and Mechanics", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "practical-applications", title: "Practical Applications", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "best-practices-and-tips", title: "Best Practices and Tips", level: 2 }
       ]}
       faqs={[
         { question: "What should beginners know about nft complete guide?", answer: "Start by understanding the basics covered in this guide. Focus on fundamental concepts before exploring advanced strategies. The space evolves quickly, so staying informed through community engagement and continued learning is essential." },

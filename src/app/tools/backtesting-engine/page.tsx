@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -754,8 +756,3 @@ export default function BacktestingEnginePage() {
   );
 }
 
-export const metadata = {
-  title: "Strategy Backtesting Engine | CryptoDegen Tools",
-  description: "Backtest crypto trading strategies (DCA, Golden Cross, RSI, MACD, Bollinger Bands) with realistic simulations. Compare strategies and analyze equity curves side-by-side.",
-  keywords: ["backtest", "trading", "strategy", "DCA", "technical analysis", "simulator"],
-};

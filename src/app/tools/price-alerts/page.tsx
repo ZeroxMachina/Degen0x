@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
@@ -51,8 +53,7 @@ const FALLBACK_PRICES: PriceData = {
   polkadot:      { usd: 7.80,   eur: 7.17,   gbp: 6.22 },
   chainlink:     { usd: 18.4,   eur: 16.9,   gbp: 14.7 },
   litecoin:      { usd: 102,    eur: 93.8,   gbp: 81.4 },
-  uniswap:       { usd: 11.8,   eur: 10.9,   gbp: 9.42 },
-};
+  uniswap:       { usd: 11.8,   eur: 10.9,   gbp: 9.42 } };
 
 const CURRENCY_SYMBOLS: Record<string, string> = { usd: "$", eur: "€", gbp: "£" };
 
@@ -127,8 +128,7 @@ export default function PriceAlertsPage() {
           usd: raw[id].usd,
           eur: raw[id].eur,
           gbp: raw[id].gbp,
-          change24h: raw[id].usd_24h_change,
-        };
+          change24h: raw[id].usd_24h_change };
       }
       setPrices(normalized);
       setPriceError(false);
@@ -159,8 +159,7 @@ export default function PriceAlertsPage() {
         newNotifs.push({
           id: genId(),
           msg: `🎯 ${alert.coinSymbol} is ${alert.condition} ${formatPrice(alert.targetPrice, alert.currency)}! Current: ${formatPrice(price, alert.currency)}`,
-          color: alert.condition === "above" ? "#3fb950" : "#f85149",
-        });
+          color: alert.condition === "above" ? "#3fb950" : "#f85149" });
         return { ...alert, triggered: true, triggeredAt: Date.now(), triggeredPrice: price };
       }
       return alert;
@@ -196,7 +195,7 @@ export default function PriceAlertsPage() {
       currency: formCurrency,
       createdAt: Date.now(),
       triggered: false,
-      active: true,
+      active: true
     };
     setAlerts(prev => [newAlert, ...prev]);
     setFormPrice("");
@@ -225,8 +224,7 @@ export default function PriceAlertsPage() {
             padding: "12px 16px", borderRadius: 10, background: "rgba(22,27,34,0.98)",
             border: `1px solid ${n.color}60`, color: "#e6edf3", fontSize: 14, fontWeight: 600,
             display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12,
-            boxShadow: `0 4px 20px ${n.color}30`,
-          }}>
+            boxShadow: `0 4px 20px ${n.color}30` }}>
             <span>{n.msg}</span>
             <button onClick={() => dismissNotif(n.id)} style={{ background: "none", border: "none", color: "#8b949e", cursor: "pointer", fontSize: 16, padding: 0, flexShrink: 0 }}>×</button>
           </div>
@@ -330,8 +328,7 @@ export default function PriceAlertsPage() {
               <button onClick={handleAddAlert} style={{
                 width: "100%", padding: "0.75rem", borderRadius: 10, border: "none",
                 background: "linear-gradient(135deg, #F0B90B, #f0883e)", color: "#0d1117",
-                fontWeight: 800, fontSize: 14, cursor: "pointer", letterSpacing: "0.02em",
-              }}>
+                fontWeight: 800, fontSize: 14, cursor: "pointer", letterSpacing: "0.02em" }}>
                 🔔 Set Alert
               </button>
             </div>
@@ -350,8 +347,7 @@ export default function PriceAlertsPage() {
                     <div key={coin.id} onClick={() => setFormCoin(coin.id)} style={{
                       padding: "0.6rem 1rem", display: "flex", justifyContent: "space-between", alignItems: "center",
                       borderBottom: "1px solid rgba(48,54,61,0.3)", cursor: "pointer",
-                      background: formCoin === coin.id ? `${coin.color}10` : "transparent",
-                    }}>
+                      background: formCoin === coin.id ? `${coin.color}10` : "transparent" }}>
                       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                         <div style={{ width: 28, height: 28, borderRadius: 8, background: `${coin.color}20`, border: `1px solid ${coin.color}40`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 700, color: coin.color }}>
                           {coin.symbol.slice(0, 2)}
@@ -397,8 +393,7 @@ export default function PriceAlertsPage() {
                   flex: 1, padding: "0.5rem", borderRadius: 7, border: "none", cursor: "pointer", fontSize: 13, fontWeight: 700,
                   background: activeTab === tab ? "rgba(99,102,241,0.2)" : "transparent",
                   color: activeTab === tab ? "#818cf8" : "#8b949e",
-                  textTransform: "capitalize",
-                }}>
+                  textTransform: "capitalize" }}>
                   {tab}
                 </button>
               ))}
@@ -425,8 +420,7 @@ export default function PriceAlertsPage() {
                   <div key={alert.id} style={{
                     background: alert.triggered ? "rgba(63,185,80,0.06)" : "rgba(22,27,34,0.9)",
                     border: `1px solid ${alert.triggered ? "rgba(63,185,80,0.3)" : !alert.active ? "rgba(48,54,61,0.4)" : "rgba(48,54,61,0.6)"}`,
-                    borderRadius: 12, padding: "1rem 1.25rem", opacity: !alert.active ? 0.6 : 1,
-                  }}>
+                    borderRadius: 12, padding: "1rem 1.25rem", opacity: !alert.active ? 0.6 : 1 }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
                       <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                         <div style={{ width: 36, height: 36, borderRadius: 10, background: `${coin?.color ?? "#6366f1"}20`, border: `1px solid ${coin?.color ?? "#6366f1"}40`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 800, color: coin?.color ?? "#6366f1" }}>

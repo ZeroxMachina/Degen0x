@@ -17,14 +17,22 @@ export default function EthereumPectraUpgradePage() {
       readTime="15 min"
       intro="Ethereum Pectra is a major protocol upgrade introducing several significant improvements to Ethereum's scalability and usability. The upgrade includes EIP-7702 enabling smart contract accounts to temporarily act as EOAs (externally owned accounts), enhanced blob throughput for Layer 2 scaling, validator-related improvements, and various other enhancements. Pectra represents a major step toward account abstraction and Layer 2 efficiency while maintaining Ethereum's core security model."
       toc={[
-        { id: "what-is-pectra", title: "What Is the Pectra Upgrade?", level: 2 },
-        { id: "eip-7702", title: "EIP-7702: Account Abstraction for Smart Contracts", level: 2 },
-        { id: "blob-scaling", title: "Blob Throughput Scaling Improvements", level: 2 },
-        { id: "validator-changes", title: "Validator and Consensus Changes", level: 2 },
-        { id: "other-eips", title: "Other Important EIPs Included", level: 2 },
-        { id: "timeline", title: "Pectra Timeline and Deployment", level: 2 },
-        { id: "implications", title: "Implications for Users and Developers", level: 2 },
-        { id: "preparation", title: "Preparing for Pectra", level: 2 },
+        { id: "what-is-pectra", title: "what-is-pectra", level: 2 },
+        { id: "what-is-the-pectra-upgrade", title: "What Is the Pectra Upgrade?", level: 2 },
+        { id: "eip-7702", title: "eip-7702", level: 2 },
+        { id: "eip-7702-account-abstraction-for-smart-contracts", title: "EIP-7702: Account Abstraction for Smart Contracts", level: 2 },
+        { id: "blob-scaling", title: "blob-scaling", level: 2 },
+        { id: "blob-throughput-scaling-improvements", title: "Blob Throughput Scaling Improvements", level: 2 },
+        { id: "validator-changes", title: "validator-changes", level: 2 },
+        { id: "validator-and-consensus-changes", title: "Validator and Consensus Changes", level: 2 },
+        { id: "other-eips", title: "other-eips", level: 2 },
+        { id: "other-important-eips-included", title: "Other Important EIPs Included", level: 2 },
+        { id: "timeline", title: "timeline", level: 2 },
+        { id: "pectra-timeline-and-deployment", title: "Pectra Timeline and Deployment", level: 2 },
+        { id: "implications", title: "implications", level: 2 },
+        { id: "implications-for-users-and-developers", title: "Implications for Users and Developers", level: 2 },
+        { id: "preparation", title: "preparation", level: 2 },
+        { id: "preparing-for-pectra", title: "Preparing for Pectra", level: 2 }
       ]}
       faqs={[
         {

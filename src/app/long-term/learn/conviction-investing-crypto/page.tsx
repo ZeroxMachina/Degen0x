@@ -16,10 +16,14 @@ export default function ConvictionInvestingCryptoPage() {
       readTime="10 min"
       intro="Conviction investing involves concentrated bets on high-confidence positions backed by deep fundamental analysis, a strategy that has produced the largest crypto fortunes but requires genuine understanding, patience, and extraordinary psychological discipline."
       toc={[
-        { id: "section-1", title: "What is Conviction Investing", level: 2 },
-        { id: "section-2", title: "Building Conviction", level: 2 },
-        { id: "section-3", title: "Risks and Pitfalls", level: 2 },
-        { id: "section-4", title: "Practical Framework", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "what-is-conviction-investing", title: "What is Conviction Investing", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "building-conviction", title: "Building Conviction", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "risks-and-pitfalls", title: "Risks and Pitfalls", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "practical-framework", title: "Practical Framework", level: 2 }
       ]}
       faqs={[
         { question: "What is conviction investing in crypto?", answer: "Conviction investing means taking concentrated positions in cryptocurrencies you deeply understand and believe in fundamentally, then holding through extreme volatility and multiple market cycles. It contrasts with diversified approaches by concentrating capital in a few high-confidence bets rather than spreading across many positions." },

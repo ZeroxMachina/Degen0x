@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Cold Storage Best Practices for Long-Term Holders (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Cold Storage Best Practices for Long-Term Holders (${CURRENT_YEAR}) | degen0x`,
   description: "Complete guide to cold storage for cryptocurrency. Hardware wallets, seed phrase security, multisig setups, and best practices for long-term holders.",
 };
 
@@ -12,10 +12,14 @@ export default function ColdStorageGuidePage() {
     <LearnPageLayout title="Cold Storage Best Practices for Long-Term Holders" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="9 min read"
       intro="Cold storage means keeping your cryptocurrency private keys completely offline, disconnected from the internet. For long-term holders, cold storage is the gold standard of security because it eliminates the risk of remote hacking, phishing, and exchange failures. Proper cold storage setup requires careful attention to key generation, backup procedures, and physical security to ensure your crypto remains accessible for years or decades."
       toc={[
-        { id: "hardware-wallets", title: "Hardware Wallet Selection", level: 2 },
-        { id: "seed-phrase", title: "Seed Phrase Security", level: 2 },
-        { id: "multisig", title: "Multisignature Setups", level: 2 },
-        { id: "maintenance", title: "Ongoing Maintenance", level: 2 },
+        { id: "hardware-wallets", title: "hardware-wallets", level: 2 },
+        { id: "hardware-wallet-selection", title: "Hardware Wallet Selection", level: 2 },
+        { id: "seed-phrase", title: "seed-phrase", level: 2 },
+        { id: "seed-phrase-security", title: "Seed Phrase Security", level: 2 },
+        { id: "multisig", title: "multisig", level: 2 },
+        { id: "multisignature-setups", title: "Multisignature Setups", level: 2 },
+        { id: "maintenance", title: "maintenance", level: 2 },
+        { id: "ongoing-maintenance", title: "Ongoing Maintenance", level: 2 }
       ]}
       faqs={[
         { question: "What is the best hardware wallet?", answer: "Ledger and Trezor are the two most established hardware wallet manufacturers. Ledger uses a secure element chip and supports a wide range of assets. Trezor is fully open-source. Both are excellent choices. For large holdings, consider using devices from different manufacturers in a multisig setup to avoid single-vendor risk." },

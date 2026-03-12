@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Hungary (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Hungary (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Hungary. Find HUF and EUR-friendly platforms with local payment support, low fees, and EU compliance.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesHungary() {
       readTime="8 min read"
       intro="Hungary has a growing crypto community, with Budapest emerging as a blockchain technology hub in Central Europe. The Hungarian National Bank (MNB) oversees financial regulation, and Hungarian traders benefit from EU membership with access to major European exchanges. While Hungary uses the forint (HUF), SEPA transfers in EUR provide affordable access to global crypto platforms."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Hungary", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "HUF Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-hungary", title: "Top Exchanges for Hungary", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "huf-payment-methods", title: "HUF Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Hungary?", answer: "Yes, cryptocurrency is legal in Hungary. The country follows EU AML directives and MiCA regulations. VASPs must comply with registration and KYC requirements under Hungarian and EU law." },

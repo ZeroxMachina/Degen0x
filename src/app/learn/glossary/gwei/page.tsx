@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Gwei? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Gwei? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what gwei is, how Ethereum denominations work, and why gwei is the standard unit for measuring gas prices.",
 };
@@ -17,11 +17,16 @@ export default function GweiPage() {
       readTime="4 min"
       intro="Gwei is a denomination of Ether (ETH), where 1 gwei equals 0.000000001 ETH (one billionth of an ETH). It is the standard unit for expressing gas prices on the Ethereum network. The name comes from 'giga-wei,' with wei being the smallest possible unit of ETH. When someone says gas is '30 gwei,' they mean each unit of gas costs 0.00000003 ETH."
       toc={[
-        { id: "definition", title: "What Is Gwei?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-gwei", title: "What Is Gwei?", level: 2 },
+        { id: "eth-denominations", title: "eth-denominations", level: 2 },
         { id: "eth-denominations", title: "ETH Denominations", level: 2 },
-        { id: "gas-prices", title: "Gwei and Gas Prices", level: 2 },
-        { id: "calculating-fees", title: "Calculating Transaction Fees", level: 2 },
-        { id: "why-it-matters", title: "Why Gwei Matters", level: 2 },
+        { id: "gas-prices", title: "gas-prices", level: 2 },
+        { id: "gwei-and-gas-prices", title: "Gwei and Gas Prices", level: 2 },
+        { id: "calculating-fees", title: "calculating-fees", level: 2 },
+        { id: "calculating-transaction-fees", title: "Calculating Transaction Fees", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-gwei-matters", title: "Why Gwei Matters", level: 2 }
       ]}
       faqs={[
         {

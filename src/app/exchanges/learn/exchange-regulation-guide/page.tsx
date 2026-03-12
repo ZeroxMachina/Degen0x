@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Exchange Regulations by Region (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Exchange Regulations by Region (${CURRENT_YEAR}) | degen0x`,
   description: "Overview of crypto exchange regulations worldwide. US, EU, UK, Asia, and emerging market regulatory frameworks, licensing requirements, and compliance trends.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeRegulationGuide() {
       readTime="10 min read"
       intro="Crypto exchange regulations vary dramatically across jurisdictions, shaping which platforms you can access and how they operate. The regulatory landscape has evolved rapidly, with some regions embracing crypto through clear frameworks while others impose restrictions or outright bans. Understanding regulations in your region helps you choose compliant exchanges and anticipate future changes that may affect your trading."
       toc={[
-        { id: "overview", title: "Global Regulatory Overview", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "global-regulatory-overview", title: "Global Regulatory Overview", level: 2 },
+        { id: "united-states", title: "united-states", level: 2 },
         { id: "united-states", title: "United States", level: 2 },
-        { id: "european-union", title: "European Union (MiCA)", level: 2 },
+        { id: "european-union", title: "european-union", level: 2 },
+        { id: "european-union-mica", title: "European Union (MiCA)", level: 2 },
+        { id: "united-kingdom", title: "united-kingdom", level: 2 },
         { id: "united-kingdom", title: "United Kingdom", level: 2 },
+        { id: "asia-pacific", title: "asia-pacific", level: 2 },
         { id: "asia-pacific", title: "Asia-Pacific", level: 2 },
+        { id: "emerging-markets", title: "emerging-markets", level: 2 },
         { id: "emerging-markets", title: "Emerging Markets", level: 2 },
-        { id: "trends", title: "Regulatory Trends", level: 2 },
+        { id: "trends", title: "trends", level: 2 },
+        { id: "regulatory-trends", title: "Regulatory Trends", level: 2 }
       ]}
       faqs={[
         { question: "Why do regulations matter to me?", answer: "Regulations determine which exchanges you can legally use, what protections you receive, how your crypto is taxed, and what trading features are available. Using unregulated exchanges in a jurisdiction that requires licensing carries legal and financial risks." },

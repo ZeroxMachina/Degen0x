@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Participate in a DAO (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Participate in a DAO (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to join and participate in DAOs, the different types of DAOs, contribution opportunities, and how to get started with decentralized governance.",
 };
@@ -17,10 +17,14 @@ export default function DaoParticipationPage() {
       readTime="9 min read"
       intro="Decentralized Autonomous Organizations (DAOs) are community-governed entities that use smart contracts and token voting to make collective decisions. DAOs manage billions in treasury funds, govern major DeFi protocols, fund public goods, and coordinate communities around shared goals. Participating in a DAO can be as simple as buying a governance token and voting, or as involved as becoming a core contributor shaping the organization's direction."
       toc={[
+        { id: "types-of-daos", title: "types-of-daos", level: 2 },
         { id: "types-of-daos", title: "Types of DAOs", level: 2 },
-        { id: "getting-started", title: "Getting Started with DAOs", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started-with-daos", title: "Getting Started with DAOs", level: 2 },
+        { id: "contribution-opportunities", title: "contribution-opportunities", level: 2 },
         { id: "contribution-opportunities", title: "Contribution Opportunities", level: 2 },
-        { id: "dao-compensation", title: "DAO Compensation and Incentives", level: 2 },
+        { id: "dao-compensation", title: "dao-compensation", level: 2 },
+        { id: "dao-compensation-and-incentives", title: "DAO Compensation and Incentives", level: 2 }
       ]}
       faqs={[
         {

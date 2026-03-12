@@ -18,12 +18,18 @@ export default function YieldFarmingGuidePage() {
       readTime="12 min read"
       intro="Yield farming is the practice of deploying crypto assets across DeFi protocols to maximize returns. By providing liquidity, lending, staking, or performing other actions that protocols incentivize, yield farmers earn rewards in the form of trading fees, interest payments, and token incentives. While yield farming can be highly profitable, it requires understanding the risks, costs, and strategies involved to avoid the many pitfalls."
       toc={[
-        { id: "what-is-farming", title: "What Is Yield Farming?", level: 2 },
-        { id: "strategies", title: "Common Yield Farming Strategies", level: 2 },
-        { id: "apy-calculations", title: "Understanding APY & APR", level: 2 },
-        { id: "risks", title: "Yield Farming Risks", level: 2 },
-        { id: "getting-started", title: "Getting Started with Yield Farming", level: 2 },
-        { id: "advanced", title: "Advanced Farming Techniques", level: 2 },
+        { id: "what-is-farming", title: "what-is-farming", level: 2 },
+        { id: "what-is-yield-farming", title: "What Is Yield Farming?", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "common-yield-farming-strategies", title: "Common Yield Farming Strategies", level: 2 },
+        { id: "apy-calculations", title: "apy-calculations", level: 2 },
+        { id: "understanding-apy-apr", title: "Understanding APY & APR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "yield-farming-risks", title: "Yield Farming Risks", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started-with-yield-farming", title: "Getting Started with Yield Farming", level: 2 },
+        { id: "advanced", title: "advanced", level: 2 },
+        { id: "advanced-farming-techniques", title: "Advanced Farming Techniques", level: 2 }
       ]}
       faqs={[
         { question: "How much can you earn yield farming?", answer: "Returns vary enormously, from 2-5% on stablecoin strategies to 50-200%+ on new protocols with token incentives. Higher yields almost always come with higher risk. Sustainable real yields on established protocols typically range from 3-15% APY." },

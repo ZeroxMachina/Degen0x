@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Axelar (AXL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Axelar (AXL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Axelar (AXL), the cross-chain communication network connecting Web3. Discover how it works, tokenomics, use cases, and how to buy AXL.",
 };
@@ -17,12 +17,18 @@ export default function AxelarPage() {
       readTime="8 min read"
       intro="Axelar is a decentralized cross-chain communication network that connects blockchain ecosystems including EVM chains, Cosmos, and other networks. Built using the Cosmos SDK with a proof-of-stake validator set, Axelar provides a permissionless overlay network for secure cross-chain messaging, token transfers, and general message passing."
       toc={[
-        { id: "what-is", title: "What Is Axelar?", level: 2 },
-        { id: "how-it-works", title: "How Does Axelar Work?", level: 2 },
-        { id: "tokenomics", title: "AXL Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy AXL", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-axelar", title: "What Is Axelar?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-axelar-work", title: "How Does Axelar Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "axl-tokenomics", title: "AXL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-axl", title: "How to Buy AXL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

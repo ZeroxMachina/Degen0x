@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Trend Trading Strategies for Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Trend Trading Strategies for Crypto (${CURRENT_YEAR}) | degen0x`,
   description:
     "Master trend trading in crypto markets. Learn to identify, follow, and profit from sustained price trends using proven technical strategies.",
 };
@@ -17,10 +17,14 @@ export default function TrendTradingPage() {
       readTime="9 min read"
       intro="Trend trading is one of the most reliable and widely used strategies in financial markets. The core philosophy is simple: identify the direction of the prevailing trend and trade in that direction until the trend shows clear signs of reversing. In crypto markets, where strong trends can persist for weeks or months, trend trading offers some of the best risk-adjusted returns available."
       toc={[
-        { id: "identifying-trends", title: "Identifying Crypto Trends", level: 2 },
+        { id: "identifying-trends", title: "identifying-trends", level: 2 },
+        { id: "identifying-crypto-trends", title: "Identifying Crypto Trends", level: 2 },
+        { id: "trend-following-strategies", title: "trend-following-strategies", level: 2 },
         { id: "trend-following-strategies", title: "Trend Following Strategies", level: 2 },
-        { id: "trend-indicators", title: "Best Trend Indicators", level: 2 },
-        { id: "avoiding-traps", title: "Avoiding Trend Traps", level: 2 },
+        { id: "trend-indicators", title: "trend-indicators", level: 2 },
+        { id: "best-trend-indicators", title: "Best Trend Indicators", level: 2 },
+        { id: "avoiding-traps", title: "avoiding-traps", level: 2 },
+        { id: "avoiding-trend-traps", title: "Avoiding Trend Traps", level: 2 }
       ]}
       faqs={[
         { question: "How do you know when a trend has started?", answer: "A trend is confirmed when price makes higher highs and higher lows (uptrend) or lower highs and lower lows (downtrend). Additional confirmation comes from moving average alignment, increasing volume in the trend direction, and momentum indicators like MACD showing sustained positive or negative readings." },

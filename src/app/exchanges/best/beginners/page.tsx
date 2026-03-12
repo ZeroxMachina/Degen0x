@@ -54,7 +54,7 @@ export default function BestForBeginnersPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges for Beginners ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -71,7 +71,7 @@ export default function BestForBeginnersPage() {
           focusing on ease of use, educational resources, customer support quality, and how
           quickly you can go from zero to your first crypto purchase.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">What Makes an Exchange Beginner-Friendly?</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">What Makes an Exchange Beginner-Friendly?</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           A good beginner exchange should offer a clean, uncluttered interface that does not
           overwhelm you with charts and technical jargon. It should provide simple buy/sell
@@ -80,12 +80,12 @@ export default function BestForBeginnersPage() {
           understand what you are doing. Security is also paramount since beginners are more
           susceptible to scams and phishing attacks.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Our Top Picks</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Our Top Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          <strong className="text-white">Coinbase</strong> takes the top spot for beginners with
+          <strong className="text-[var(--color-text)]">Coinbase</strong> takes the top spot for beginners with
           its intuitive interface, earn-while-you-learn program, and strong US regulatory
-          compliance. <strong className="text-white">Kraken</strong> comes in second with its
-          excellent customer support and solid educational content. <strong className="text-white">Gemini</strong> rounds
+          compliance. <strong className="text-[var(--color-text)]">Kraken</strong> comes in second with its
+          excellent customer support and solid educational content. <strong className="text-[var(--color-text)]">Gemini</strong> rounds
           out the top three with its SOC 2 security certification giving newcomers peace of mind.
         </p>
       </div>
@@ -102,40 +102,40 @@ export default function BestForBeginnersPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Tips for Crypto Beginners</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Tips for Crypto Beginners</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Start small</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Start small</h3>
               <p className="text-sm">Only invest money you can afford to lose. Start with $50 or $100 to learn the ropes before committing larger amounts.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Enable two-factor authentication</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Enable two-factor authentication</h3>
               <p className="text-sm">Use an authenticator app (not SMS) for 2FA on your exchange account. This is the single most important security step.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Learn about fees before trading</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Learn about fees before trading</h3>
               <p className="text-sm">Understand the fee structure of your chosen exchange. Simple buy/sell interfaces often charge higher fees than advanced trading views.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">4.</span>
             <div>
-              <h3 className="text-white font-semibold">Consider dollar-cost averaging</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Consider dollar-cost averaging</h3>
               <p className="text-sm">Instead of trying to time the market, set up recurring purchases to buy a fixed dollar amount regularly, smoothing out price volatility.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">5.</span>
             <div>
-              <h3 className="text-white font-semibold">Never share your seed phrase</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Never share your seed phrase</h3>
               <p className="text-sm">If you move crypto to a personal wallet, your seed phrase is the master key. Never share it, and store it offline in a secure location.</p>
             </div>
           </div>

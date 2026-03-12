@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Whale Watching: Tracking Large Crypto Holders (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Whale Watching: Tracking Large Crypto Holders (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to track whale activity in crypto: monitoring large wallets, interpreting whale transactions, tools for whale watching, and how to use whale data in your investment strategy.",
 };
@@ -17,10 +17,14 @@ export default function WhaleWatchingPage() {
       readTime="8 min read"
       intro="In cryptocurrency markets, 'whales' are entities that hold large amounts of a specific token — large enough that their buying or selling activity can move market prices. Tracking whale behavior provides insights into the actions of the most informed and capitalized market participants, including institutional investors, early adopters, project insiders, and venture capital funds. While whale watching should not be your sole strategy, understanding whale activity adds a valuable dimension to your market analysis toolkit."
       toc={[
-        { id: "who-are-whales", title: "Who Are Crypto Whales?", level: 2 },
-        { id: "tracking-methods", title: "Methods for Tracking Whales", level: 2 },
-        { id: "interpreting", title: "Interpreting Whale Activity", level: 2 },
-        { id: "tools-resources", title: "Whale Watching Tools and Resources", level: 2 },
+        { id: "who-are-whales", title: "who-are-whales", level: 2 },
+        { id: "who-are-crypto-whales", title: "Who Are Crypto Whales?", level: 2 },
+        { id: "tracking-methods", title: "tracking-methods", level: 2 },
+        { id: "methods-for-tracking-whales", title: "Methods for Tracking Whales", level: 2 },
+        { id: "interpreting", title: "interpreting", level: 2 },
+        { id: "interpreting-whale-activity", title: "Interpreting Whale Activity", level: 2 },
+        { id: "tools-resources", title: "tools-resources", level: 2 },
+        { id: "whale-watching-tools-and-resources", title: "Whale Watching Tools and Resources", level: 2 }
       ]}
       faqs={[
         {

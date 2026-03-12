@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Bahrain (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Bahrain (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Bahrain. Find BHD-friendly platforms with CBB-regulated options, local bank support, and competitive fees.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesBahrain() {
       readTime="7 min read"
       intro="Bahrain has positioned itself as a leading crypto hub in the Middle East, with the Central Bank of Bahrain (CBB) creating one of the region's most comprehensive regulatory frameworks for digital assets. Home to Rain, the first CBB-licensed crypto exchange, Bahrain offers a regulated and accessible crypto trading environment. This guide covers the best platforms for Bahraini traders."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Bahrain", level: 2 },
-        { id: "regulation", title: "Crypto Regulation in Bahrain", level: 2 },
-        { id: "payment-methods", title: "BHD Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-bahrain", title: "Top Exchanges for Bahrain", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-bahrain", title: "Crypto Regulation in Bahrain", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "bhd-payment-methods", title: "BHD Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Bahrain?", answer: "Yes, cryptocurrency is legal and regulated in Bahrain. The CBB has established a comprehensive licensing framework for crypto-asset service providers, making Bahrain one of the most crypto-friendly jurisdictions in the Middle East." },

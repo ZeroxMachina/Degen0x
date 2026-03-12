@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is an ICO? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is an ICO? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what an Initial Coin Offering is, how it works, and the history of ICOs as a crypto fundraising mechanism.",
 };
@@ -17,11 +17,16 @@ export default function IcoPage() {
       readTime="5 min"
       intro="An Initial Coin Offering (ICO) is a fundraising method where a crypto project sells tokens to early investors before or during development. ICOs were the dominant fundraising model during the 2017 crypto boom, raising billions of dollars. While they democratized access to early-stage investing, the lack of regulation led to widespread fraud, and most ICO tokens ultimately lost significant value."
       toc={[
-        { id: "definition", title: "What Is an ICO?", level: 2 },
-        { id: "how-it-works", title: "How ICOs Work", level: 2 },
-        { id: "history", title: "ICO History", level: 2 },
-        { id: "risks", title: "Risks and Problems", level: 2 },
-        { id: "evolution", title: "Evolution Beyond ICOs", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-an-ico", title: "What Is an ICO?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-icos-work", title: "How ICOs Work", level: 2 },
+        { id: "history", title: "history", level: 2 },
+        { id: "ico-history", title: "ICO History", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-problems", title: "Risks and Problems", level: 2 },
+        { id: "evolution", title: "evolution", level: 2 },
+        { id: "evolution-beyond-icos", title: "Evolution Beyond ICOs", level: 2 }
       ]}
       faqs={[
         {

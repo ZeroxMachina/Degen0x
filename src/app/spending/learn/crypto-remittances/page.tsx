@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Sending Remittances with Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Sending Remittances with Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to send money abroad using Bitcoin and stablecoins. Compare crypto remittance platforms, fees, and corridors versus traditional services like Western Union.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoRemittancesPage() {
       readTime="9 min"
       intro="Cryptocurrency is transforming the $800 billion global remittance industry by offering faster, cheaper alternatives to traditional money transfer services. Where Western Union and MoneyGram charge 5-10% fees and take days, crypto remittance services can transfer value across borders in minutes for a fraction of the cost. This guide covers how crypto remittances work, the best platforms, and which corridors benefit most."
       toc={[
-        { id: "why-crypto-remittances", title: "Why Use Crypto for Remittances", level: 2 },
-        { id: "platforms", title: "Crypto Remittance Platforms", level: 2 },
-        { id: "how-it-works", title: "How Crypto Remittances Work", level: 2 },
-        { id: "best-corridors", title: "Best Remittance Corridors", level: 2 },
-        { id: "challenges", title: "Challenges and Considerations", level: 2 },
+        { id: "why-crypto-remittances", title: "why-crypto-remittances", level: 2 },
+        { id: "why-use-crypto-for-remittances", title: "Why Use Crypto for Remittances", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "crypto-remittance-platforms", title: "Crypto Remittance Platforms", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-crypto-remittances-work", title: "How Crypto Remittances Work", level: 2 },
+        { id: "best-corridors", title: "best-corridors", level: 2 },
+        { id: "best-remittance-corridors", title: "Best Remittance Corridors", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-and-considerations", title: "Challenges and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "How much can I save using crypto for remittances?", answer: "Savings vary by corridor but can be substantial. Traditional services charge 5-10% while crypto platforms typically charge 1-3%. On a $500 remittance you might save $20-40 per transfer. Over a year of monthly remittances, savings can reach $250-500." },

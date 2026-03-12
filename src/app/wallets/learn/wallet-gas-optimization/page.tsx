@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Save on Gas Fees (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Save on Gas Fees (${CURRENT_YEAR}) | degen0x`,
   description: "Learn strategies to minimize gas fees in your crypto wallet. Tips for timing transactions, using L2s, gas tokens, and wallet settings to reduce costs.",
 };
 
@@ -11,7 +11,16 @@ export default function WalletGasOptimizationPage() {
   return (
     <LearnPageLayout title="How to Save on Gas Fees" categoryName="Crypto Wallets" categorySlug="wallets" readTime="8 min read"
       intro="Gas fees are an unavoidable cost of using blockchains, but the amount you pay can vary dramatically based on timing, network choice, and wallet configuration. On Ethereum mainnet, a poorly timed transaction can cost 10 times more than the same transaction during off-peak hours. Layer 2 networks can reduce costs by 100x or more. This guide covers every practical strategy for minimizing gas costs, from wallet-level settings to architectural decisions about which networks to use."
-      toc={[{ id: "understanding-gas", title: "Understanding Gas Costs", level: 2 }, { id: "timing-strategies", title: "Timing Strategies", level: 2 }, { id: "l2-migration", title: "Moving to Layer 2s", level: 2 }, { id: "wallet-settings", title: "Wallet Gas Settings", level: 2 }]}
+      toc={[
+        { id: "understanding-gas", title: "understanding-gas", level: 2 },
+        { id: "understanding-gas-costs", title: "Understanding Gas Costs", level: 2 },
+        { id: "timing-strategies", title: "timing-strategies", level: 2 },
+        { id: "timing-strategies", title: "Timing Strategies", level: 2 },
+        { id: "l2-migration", title: "l2-migration", level: 2 },
+        { id: "moving-to-layer-2s", title: "Moving to Layer 2s", level: 2 },
+        { id: "wallet-settings", title: "wallet-settings", level: 2 },
+        { id: "wallet-gas-settings", title: "Wallet Gas Settings", level: 2 }
+      ]}
       faqs={[{ question: "Why are gas fees so high on Ethereum?", answer: "Ethereum mainnet gas fees are determined by demand for block space. When many users want to transact simultaneously, they bid up the gas price. Complex DeFi transactions require more computational steps (gas units) than simple transfers. During peak usage, a single swap can cost $50-100+. This is why L2s exist: they batch transactions and settle them on Ethereum, spreading the mainnet cost across many users." },
         { question: "Are L2 gas fees always cheaper?", answer: "L2s are dramatically cheaper than Ethereum mainnet for individual transactions. A swap on Arbitrum or Base typically costs under $0.10 compared to $5-50 on mainnet. However, you must pay a bridge fee to move assets to the L2 initially. If you are making many transactions, the L2 savings quickly exceed the one-time bridge cost. For single transactions, mainnet may actually be more cost-effective since you avoid bridging." },
         { question: "Can I cancel a transaction to save gas?", answer: "You cannot cancel a submitted transaction, but you can replace it with a higher gas price transaction (speed up) or a zero-value transaction to the same nonce (effective cancellation). Both require paying gas. If a transaction is stuck due to low gas, you must either wait or pay more gas to replace it. To avoid this, use your wallet gas estimation carefully and add a small buffer above the suggested gas price." }]}

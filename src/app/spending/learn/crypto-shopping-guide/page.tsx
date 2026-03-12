@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Online Shopping with Cryptocurrency (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Online Shopping with Cryptocurrency (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to shop online with Bitcoin and crypto. Discover platforms, browser extensions, and payment methods for spending crypto at your favorite online stores.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoShoppingGuidePage() {
       readTime="9 min"
       intro="Online shopping with cryptocurrency has never been easier. From browser extensions that earn Bitcoin cashback at thousands of stores to direct crypto checkout at major retailers, there are multiple ways to use your digital assets for online purchases. This guide covers the best methods, platforms, and strategies for spending crypto while shopping online."
       toc={[
-        { id: "direct-checkout", title: "Stores with Direct Crypto Checkout", level: 2 },
-        { id: "browser-extensions", title: "Cashback Browser Extensions", level: 2 },
-        { id: "payment-gateways", title: "Crypto Payment Gateways", level: 2 },
-        { id: "marketplace-shopping", title: "Crypto-Native Marketplaces", level: 2 },
-        { id: "maximizing-value", title: "Maximizing Value When Shopping", level: 2 },
+        { id: "direct-checkout", title: "direct-checkout", level: 2 },
+        { id: "stores-with-direct-crypto-checkout", title: "Stores with Direct Crypto Checkout", level: 2 },
+        { id: "browser-extensions", title: "browser-extensions", level: 2 },
+        { id: "cashback-browser-extensions", title: "Cashback Browser Extensions", level: 2 },
+        { id: "payment-gateways", title: "payment-gateways", level: 2 },
+        { id: "crypto-payment-gateways", title: "Crypto Payment Gateways", level: 2 },
+        { id: "marketplace-shopping", title: "marketplace-shopping", level: 2 },
+        { id: "crypto-native-marketplaces", title: "Crypto-Native Marketplaces", level: 2 },
+        { id: "maximizing-value", title: "maximizing-value", level: 2 },
+        { id: "maximizing-value-when-shopping", title: "Maximizing Value When Shopping", level: 2 }
       ]}
       faqs={[
         { question: "Which major retailers accept crypto directly?", answer: "Newegg, Overstock, and Microsoft accept Bitcoin directly. Shopify enables thousands of independent merchants to accept crypto. AT&T accepts Bitcoin for bill payments. However, most major retailers like Amazon, Walmart, and Target do not accept crypto directly. For these stores, use gift cards from Bitrefill or a crypto debit card to complete your purchase." },

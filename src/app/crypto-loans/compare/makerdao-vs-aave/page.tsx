@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `MakerDAO vs Aave (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `MakerDAO vs Aave (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare MakerDAO and Aave lending protocols. Understand the differences between Maker's CDP model and Aave's lending pool approach for DeFi borrowing.",
 };
@@ -17,11 +17,16 @@ export default function MakerdaoVsAavePage() {
       readTime="9 min read"
       intro="MakerDAO and Aave are both foundational DeFi lending protocols, but they operate on fundamentally different models. MakerDAO allows users to mint DAI stablecoins against crypto collateral through its vault system, while Aave operates a peer-to-pool lending model where users supply and borrow existing assets. Understanding these structural differences is key to choosing the right protocol for your needs."
       toc={[
-        { id: "model-differences", title: "Fundamental Model Differences", level: 2 },
-        { id: "borrowing-comparison", title: "Borrowing Experience", level: 2 },
-        { id: "rates-costs", title: "Rates and Costs", level: 2 },
+        { id: "model-differences", title: "model-differences", level: 2 },
+        { id: "fundamental-model-differences", title: "Fundamental Model Differences", level: 2 },
+        { id: "borrowing-comparison", title: "borrowing-comparison", level: 2 },
+        { id: "borrowing-experience", title: "Borrowing Experience", level: 2 },
+        { id: "rates-costs", title: "rates-costs", level: 2 },
+        { id: "rates-and-costs", title: "Rates and Costs", level: 2 },
+        { id: "risk-profiles", title: "risk-profiles", level: 2 },
         { id: "risk-profiles", title: "Risk Profiles", level: 2 },
-        { id: "use-cases", title: "Best Use Cases for Each", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "best-use-cases-for-each", title: "Best Use Cases for Each", level: 2 }
       ]}
       faqs={[
         { question: "What is the main difference between MakerDAO and Aave?", answer: "MakerDAO lets you mint new DAI stablecoins against collateral (creating new money), while Aave lets you borrow existing assets from liquidity pools supplied by other users. Maker is essentially a decentralized central bank, while Aave is a decentralized lending marketplace." },

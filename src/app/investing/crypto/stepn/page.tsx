@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is STEPN (GMT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is STEPN (GMT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about STEPN (GMT), the move-to-earn lifestyle app. Discover how it works, tokenomics, use cases, and how to buy GMT.",
 };
@@ -17,12 +17,18 @@ export default function StepnPage() {
       readTime="7 min read"
       intro="STEPN is a move-to-earn lifestyle app that rewards users with crypto tokens for walking, jogging, or running outdoors. Built on Solana with multi-chain support, STEPN combines fitness tracking with GameFi elements through NFT sneakers that generate token rewards based on physical activity."
       toc={[
-        { id: "what-is", title: "What Is STEPN?", level: 2 },
-        { id: "how-it-works", title: "How Does STEPN Work?", level: 2 },
-        { id: "tokenomics", title: "GMT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy GMT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-stepn", title: "What Is STEPN?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-stepn-work", title: "How Does STEPN Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "gmt-tokenomics", title: "GMT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-gmt", title: "How to Buy GMT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Web3 Business Taxes (${CURRENT_YEAR}) - Crypto Company Tax Guide | CryptoDegen`,
+  title: `Web3 Business Taxes (${CURRENT_YEAR}) - Crypto Company Tax Guide | degen0x`,
   description: `Navigate crypto business taxes. Entity taxation, token treasury accounting, payroll obligations, multi-jurisdiction compliance, and deductions for Web3 companies.`,
 };
 
@@ -16,11 +16,16 @@ export default function BusinessTaxesPage() {
       readTime="10 min"
       intro="Taxation for Web3 businesses involves unique complexities that traditional tax advisors may not fully understand. From treasury token holdings and contributor payments to multi-jurisdiction obligations and token sale proceeds, this guide covers the key tax considerations that every crypto business operator needs to understand."
       toc={[
-        { id: "entity-taxation", title: "Entity Taxation Basics", level: 2 },
-        { id: "treasury-accounting", title: "Treasury and Token Accounting", level: 2 },
-        { id: "payroll-taxes", title: "Payroll and Contractor Obligations", level: 2 },
-        { id: "deductions", title: "Common Deductions for Web3 Companies", level: 2 },
-        { id: "multi-jurisdiction", title: "Multi-Jurisdiction Considerations", level: 2 },
+        { id: "entity-taxation", title: "entity-taxation", level: 2 },
+        { id: "entity-taxation-basics", title: "Entity Taxation Basics", level: 2 },
+        { id: "treasury-accounting", title: "treasury-accounting", level: 2 },
+        { id: "treasury-and-token-accounting", title: "Treasury and Token Accounting", level: 2 },
+        { id: "payroll-taxes", title: "payroll-taxes", level: 2 },
+        { id: "payroll-and-contractor-obligations", title: "Payroll and Contractor Obligations", level: 2 },
+        { id: "deductions", title: "deductions", level: 2 },
+        { id: "common-deductions-for-web3-companies", title: "Common Deductions for Web3 Companies", level: 2 },
+        { id: "multi-jurisdiction", title: "multi-jurisdiction", level: 2 },
+        { id: "multi-jurisdiction-considerations", title: "Multi-Jurisdiction Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Are token sales taxable for the issuing company?", answer: "Generally yes. In the US, proceeds from token sales are typically treated as income to the issuing entity. The tax treatment depends on how the token is classified (utility token, governance token, or security) and the entity structure. Some structures, like non-profit foundations in favorable jurisdictions, may reduce or defer the tax obligation. Consult a crypto-specialized tax attorney for your specific situation." },

@@ -12,11 +12,16 @@ export default function HowToUseMultisigPage() {
   return (
     <LearnPageLayout title="How to Use a Multisig Wallet" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="A multisig (multi-signature) wallet requires multiple private keys to authorize transactions, eliminating single points of failure. Used by DAOs, project treasuries, and security-conscious individuals, multisig wallets provide institutional-grade security by ensuring no single person can unilaterally move funds."
       toc={[
-        { id: "what-is-multisig", title: "What Is a Multisig?", level: 2 },
-        { id: "setup", title: "Setting Up a Multisig", level: 2 },
-        { id: "using", title: "Using a Multisig", level: 2 },
-        { id: "configurations", title: "Configuration Options", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "what-is-multisig", title: "what-is-multisig", level: 2 },
+        { id: "what-is-a-multisig", title: "What Is a Multisig?", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "setting-up-a-multisig", title: "Setting Up a Multisig", level: 2 },
+        { id: "using", title: "using", level: 2 },
+        { id: "using-a-multisig", title: "Using a Multisig", level: 2 },
+        { id: "configurations", title: "configurations", level: 2 },
+        { id: "configuration-options", title: "Configuration Options", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What does 2-of-3 multisig mean?", answer: "A 2-of-3 multisig requires any 2 out of 3 designated signers to approve a transaction. This means one key can be lost or compromised without affecting fund access. Common configurations include 2-of-3, 3-of-5, and 4-of-7, balancing security with operational convenience." },

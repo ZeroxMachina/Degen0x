@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Accepting Bitcoin as a Merchant (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Accepting Bitcoin as a Merchant (${CURRENT_YEAR}) | degen0x`,
   description: "Complete guide for merchants accepting Bitcoin payments. Payment processors, setup guides, tax considerations, and best practices for business crypto acceptance.",
 };
 
@@ -12,10 +12,14 @@ export default function BitcoinPaymentsMerchantsPage() {
     <LearnPageLayout title="Accepting Bitcoin as a Merchant" categoryName="Crypto Spending" categorySlug="spending" readTime="8 min read"
       intro="Accepting Bitcoin payments opens your business to a global customer base of crypto holders, reduces payment processing fees compared to credit cards, eliminates chargeback fraud, and positions your brand as innovative and forward-thinking. Whether you run an online store, a physical retail location, or a service business, multiple solutions exist to integrate Bitcoin payments with minimal technical complexity and full control over your currency exposure."
       toc={[
-        { id: "why-accept", title: "Why Accept Bitcoin?", level: 2 },
+        { id: "why-accept", title: "why-accept", level: 2 },
+        { id: "why-accept-bitcoin", title: "Why Accept Bitcoin?", level: 2 },
+        { id: "payment-processors", title: "payment-processors", level: 2 },
         { id: "payment-processors", title: "Payment Processors", level: 2 },
-        { id: "implementation", title: "Implementation Guide", level: 2 },
-        { id: "accounting-tax", title: "Accounting and Tax Considerations", level: 2 },
+        { id: "implementation", title: "implementation", level: 2 },
+        { id: "implementation-guide", title: "Implementation Guide", level: 2 },
+        { id: "accounting-tax", title: "accounting-tax", level: 2 },
+        { id: "accounting-and-tax-considerations", title: "Accounting and Tax Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Do I have to hold Bitcoin if I accept it?", answer: "No. Payment processors like BTCPay Server, BitPay, and Strike can automatically convert Bitcoin payments to fiat currency (USD, EUR) and deposit to your bank account. You can accept Bitcoin from customers while receiving 100% fiat, eliminating cryptocurrency price risk. Some merchants choose to keep a percentage in Bitcoin as an investment." },

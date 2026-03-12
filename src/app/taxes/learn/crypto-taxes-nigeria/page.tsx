@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Nigeria (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Nigeria (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Nigeria. Learn about capital gains tax, SEC regulation, and how Nigerian crypto investors should handle tax obligations.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesNigeriaPage() {
       readTime="8 min read"
       intro="Nigeria has the largest crypto market in Africa, with massive peer-to-peer trading volumes. Despite the Central Bank of Nigeria's previous restrictions on banks servicing crypto exchanges, the regulatory landscape has been evolving with the SEC establishing a framework for digital asset regulation. Crypto gains are potentially subject to Capital Gains Tax under Nigerian tax law, though enforcement has been limited. Nigerian crypto investors should understand their potential tax obligations as the regulatory environment matures."
       toc={[
+        { id: "regulatory-landscape", title: "regulatory-landscape", level: 2 },
         { id: "regulatory-landscape", title: "Regulatory Landscape", level: 2 },
+        { id: "capital-gains-tax", title: "capital-gains-tax", level: 2 },
         { id: "capital-gains-tax", title: "Capital Gains Tax", level: 2 },
-        { id: "income-tax", title: "Income Tax on Crypto", level: 2 },
-        { id: "sec-framework", title: "SEC Digital Asset Framework", level: 2 },
-        { id: "practical-guidance", title: "Practical Guidance", level: 2 },
+        { id: "income-tax", title: "income-tax", level: 2 },
+        { id: "income-tax-on-crypto", title: "Income Tax on Crypto", level: 2 },
+        { id: "sec-framework", title: "sec-framework", level: 2 },
+        { id: "sec-digital-asset-framework", title: "SEC Digital Asset Framework", level: 2 },
+        { id: "practical-guidance", title: "practical-guidance", level: 2 },
+        { id: "practical-guidance", title: "Practical Guidance", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto taxed in Nigeria?", answer: "Under Nigerian tax law, gains from disposing of assets including cryptocurrency may be subject to Capital Gains Tax at 10%. Additionally, income received in crypto is subject to personal income tax at progressive rates up to 24%. However, the lack of specific crypto tax legislation and limited enforcement means practical application has been inconsistent." },

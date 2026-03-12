@@ -16,10 +16,14 @@ export default function BestNoCodeCreatorsPage() {
       readTime="8 min"
       intro="No-code NFT tools have democratized digital asset creation, allowing artists, brands, and entrepreneurs to mint NFTs and deploy entire collections without writing a single line of code. These platforms handle the smart contract deployment, metadata generation, and marketplace listing process through intuitive visual interfaces."
       toc={[
-        { id: "overview", title: "No-Code NFT Creation Overview", level: 2 },
-        { id: "minting-tools", title: "Best Minting Platforms", level: 2 },
-        { id: "collection-generators", title: "Collection Generator Tools", level: 2 },
-        { id: "choosing", title: "Choosing the Right Tool", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "no-code-nft-creation-overview", title: "No-Code NFT Creation Overview", level: 2 },
+        { id: "minting-tools", title: "minting-tools", level: 2 },
+        { id: "best-minting-platforms", title: "Best Minting Platforms", level: 2 },
+        { id: "collection-generators", title: "collection-generators", level: 2 },
+        { id: "collection-generator-tools", title: "Collection Generator Tools", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-the-right-tool", title: "Choosing the Right Tool", level: 2 }
       ]}
       faqs={[
         { question: "Can I create NFTs without coding?", answer: "Yes. Platforms like OpenSea, Rarible, Manifold, and Zora allow you to create individual NFTs and even deploy custom smart contracts without any programming knowledge through visual interfaces." },

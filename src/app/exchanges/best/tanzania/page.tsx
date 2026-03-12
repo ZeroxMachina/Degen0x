@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Tanzania (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Tanzania (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges accessible in Tanzania. Find TZS-friendly platforms with Mobile Money support and P2P trading options.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesTanzania() {
       readTime="7 min read"
       intro="Tanzania has shown growing interest in cryptocurrency, with the government exploring blockchain technology and digital financial services. The Bank of Tanzania has not formally regulated crypto exchanges, but mobile money adoption provides natural on-ramps for crypto purchases. This guide covers the best platforms available to Tanzanian traders."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Tanzania", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "TZS Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-tanzania", title: "Top Exchanges for Tanzania", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "tzs-payment-methods", title: "TZS Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Tanzania?", answer: "Tanzania's regulatory stance is evolving. The Bank of Tanzania has cautioned about crypto risks but the government has expressed interest in exploring digital currencies. A clear regulatory framework is still being developed." },

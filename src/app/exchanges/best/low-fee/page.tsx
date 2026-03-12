@@ -55,7 +55,7 @@ export default function LowFeeExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Cheapest Crypto Exchanges ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -72,7 +72,7 @@ export default function LowFeeExchangesPage() {
           lowest overall fee structures, considering trading fees, deposit costs, withdrawal charges,
           and any hidden fees.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Understanding Crypto Exchange Fees</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Understanding Crypto Exchange Fees</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Most exchanges use a maker/taker fee model. Maker fees apply when you add liquidity
           to the order book (limit orders that do not fill immediately), while taker fees apply
@@ -84,16 +84,16 @@ export default function LowFeeExchangesPage() {
 
       {/* Fee Comparison Table */}
       <section className="mb-12 overflow-x-auto">
-        <h2 className="text-2xl font-bold text-white mb-6">Fee Comparison Table</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Fee Comparison Table</h2>
         <div className="rounded-xl border border-[var(--color-border)]">
           <table className="w-full">
             <thead>
               <tr className="bg-[var(--color-bg-card)]">
-                <th className="px-4 py-3 text-left text-sm font-semibold text-white">Exchange</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Maker Fee</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Taker Fee</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Token Discount</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">BTC Withdrawal</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Exchange</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Maker Fee</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Taker Fee</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Token Discount</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">BTC Withdrawal</th>
               </tr>
             </thead>
             <tbody>
@@ -110,7 +110,7 @@ export default function LowFeeExchangesPage() {
                 { name: "Gemini", maker: "0.20%", taker: "0.40%", discount: "None", btcFee: "Network fee" },
               ].map((row) => (
                 <tr key={row.name} className="border-t border-[var(--color-border)]">
-                  <td className="px-4 py-3 text-sm font-medium text-white">{row.name}</td>
+                  <td className="px-4 py-3 text-sm font-medium text-[var(--color-text)]">{row.name}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.maker}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.taker}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.discount}</td>

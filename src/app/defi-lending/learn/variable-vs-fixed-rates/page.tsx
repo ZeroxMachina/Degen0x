@@ -17,11 +17,16 @@ export default function VariableVsFixedRatesPage() {
       readTime="9 min"
       intro="DeFi lending offers both variable and fixed interest rate options, each with distinct advantages and tradeoffs. Variable rates dynamically adjust based on market conditions and pool utilization, while fixed rates provide predictability at the cost of potentially missing out on favorable rate movements. Understanding the mechanics and appropriate use cases for each is essential for optimizing your DeFi lending and borrowing strategy."
       toc={[
-        { id: "variable-rates", title: "Variable Rate Mechanics", level: 2 },
-        { id: "fixed-rates", title: "Fixed Rate Options", level: 2 },
-        { id: "comparison", title: "Comparing the Two", level: 2 },
+        { id: "variable-rates", title: "variable-rates", level: 2 },
+        { id: "variable-rate-mechanics", title: "Variable Rate Mechanics", level: 2 },
+        { id: "fixed-rates", title: "fixed-rates", level: 2 },
+        { id: "fixed-rate-options", title: "Fixed Rate Options", level: 2 },
+        { id: "comparison", title: "comparison", level: 2 },
+        { id: "comparing-the-two", title: "Comparing the Two", level: 2 },
+        { id: "fixed-rate-protocols", title: "fixed-rate-protocols", level: 2 },
         { id: "fixed-rate-protocols", title: "Fixed Rate Protocols", level: 2 },
-        { id: "choosing-right-rate", title: "Choosing the Right Rate", level: 2 },
+        { id: "choosing-right-rate", title: "choosing-right-rate", level: 2 },
+        { id: "choosing-the-right-rate", title: "Choosing the Right Rate", level: 2 }
       ]}
       faqs={[
         { question: "Are fixed rates truly fixed in DeFi?", answer: "Most DeFi fixed rates are fixed for a specific term or until certain conditions are met. Aave's stable rate can be rebalanced under extreme market conditions. True fixed-rate protocols like Notional or Term Finance lock in rates for defined periods through different mechanisms." },

@@ -535,7 +535,7 @@ export default function TokenUnlocksPage() {
   }, [sortBy, filterRisk])
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-6">
+    <div className="min-h-screen bg-gray-900 text-[var(--color-text)] p-6">
       <Breadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Token Unlocks', href: '/tools/token-unlocks' }]} />
 
       <div className="max-w-7xl mx-auto">
@@ -590,7 +590,7 @@ export default function TokenUnlocksPage() {
               </div>
               <button
                 onClick={() => setSelectedToken(null)}
-                className="text-gray-400 hover:text-white transition-colors text-2xl"
+                className="text-gray-400 hover:text-[var(--color-text)] transition-colors text-2xl"
               >
                 ×
               </button>
@@ -676,7 +676,7 @@ export default function TokenUnlocksPage() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as any)}
-                className="bg-gray-700 text-white rounded px-3 py-2 border border-gray-600 text-sm"
+                className="bg-gray-700 text-[var(--color-text)] rounded px-3 py-2 border border-gray-600 text-sm"
               >
                 <option value="date">Next Unlock Date</option>
                 <option value="size">% of Supply</option>
@@ -690,7 +690,7 @@ export default function TokenUnlocksPage() {
               <select
                 value={filterRisk}
                 onChange={(e) => setFilterRisk(e.target.value as any)}
-                className="bg-gray-700 text-white rounded px-3 py-2 border border-gray-600 text-sm"
+                className="bg-gray-700 text-[var(--color-text)] rounded px-3 py-2 border border-gray-600 text-sm"
               >
                 <option value="all">All Risk Levels</option>
                 <option value="critical">Critical (&gt;5%)</option>

@@ -31,7 +31,7 @@ const products: Product[] = [
     ],
     fees: "1.5-5% annually",
     bestFor: "Protecting large exchange balances",
-    affiliateUrl: "https://cryptodegen.com/go/nexus-mutual",
+    affiliateUrl: "https://degen0x.com/go/nexus-mutual",
     category: "insurance",
     featured: true,
   },
@@ -53,7 +53,7 @@ const products: Product[] = [
     ],
     fees: "2-6% annually",
     bestFor: "Automated exchange hack protection",
-    affiliateUrl: "https://cryptodegen.com/go/unslashed",
+    affiliateUrl: "https://degen0x.com/go/unslashed",
     category: "insurance",
   },
   {
@@ -74,7 +74,7 @@ const products: Product[] = [
     ],
     fees: "2-5% annually",
     bestFor: "Bundling exchange cover with DeFi insurance",
-    affiliateUrl: "https://cryptodegen.com/go/insurace",
+    affiliateUrl: "https://degen0x.com/go/insurace",
     category: "insurance",
   },
 ];
@@ -117,7 +117,7 @@ export default function ExchangeCoverPage() {
       <AffiliateDisclosure />
 
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Exchange Cover Insurance of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">
@@ -138,22 +138,22 @@ export default function ExchangeCoverPage() {
       </div>
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Understanding Exchange Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Understanding Exchange Risks</h2>
         <div className="grid md:grid-cols-2 gap-6 text-[var(--color-text-secondary)]">
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Hack Risk</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Hack Risk</h3>
             <p>Exchanges are high-value targets for hackers. Even major platforms have suffered breaches that resulted in significant user losses. Exchange cover typically kicks in when an exchange is hacked and users lose access to their deposited assets.</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Insolvency Risk</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Insolvency Risk</h3>
             <p>Exchange insolvency occurs when a platform cannot meet its obligations to depositors. This can result from mismanagement of customer funds, fraud, or market conditions that deplete exchange reserves. Coverage protects against total loss in these scenarios.</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Withdrawal Freeze Risk</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Withdrawal Freeze Risk</h3>
             <p>Some exchange covers trigger when withdrawals are halted for an extended period, typically 90 days or more. This protects against situations where an exchange remains technically operational but prevents users from accessing their funds.</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Regulatory Risk</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Regulatory Risk</h3>
             <p>Regulatory actions can freeze exchange operations, preventing user withdrawals. While not all policies cover regulatory-driven freezes, some providers include this in their coverage scope, making it important to read policy terms carefully.</p>
           </div>
         </div>

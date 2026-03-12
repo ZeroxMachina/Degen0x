@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Whale in Crypto? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Whale in Crypto? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a crypto whale is, how whale activity affects markets, how to track whale movements, and strategies for trading around whale behavior.",
 };
 
@@ -11,7 +11,16 @@ export default function WhalePage() {
   return (
     <LearnPageLayout title="What Is a Whale?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="A whale is an individual or entity that holds a large amount of cryptocurrency, enough to significantly influence market prices through their trading activity. In Bitcoin, a whale typically holds 1,000+ BTC. In smaller-cap tokens, whale status may require far less. Whale movements are closely watched by traders because large buy or sell orders can cause significant price swings, and on-chain data makes it possible to track whale wallets in real-time."
-      toc={[{ id: "definition", title: "What Is a Whale?", level: 2 }, { id: "whale-impact", title: "How Whales Impact Markets", level: 2 }, { id: "tracking-whales", title: "Tracking Whale Activity", level: 2 }, { id: "whale-strategies", title: "Trading Around Whales", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-whale", title: "What Is a Whale?", level: 2 },
+        { id: "whale-impact", title: "whale-impact", level: 2 },
+        { id: "how-whales-impact-markets", title: "How Whales Impact Markets", level: 2 },
+        { id: "tracking-whales", title: "tracking-whales", level: 2 },
+        { id: "tracking-whale-activity", title: "Tracking Whale Activity", level: 2 },
+        { id: "whale-strategies", title: "whale-strategies", level: 2 },
+        { id: "trading-around-whales", title: "Trading Around Whales", level: 2 }
+      ]}
       faqs={[{ question: "Who are the biggest crypto whales?", answer: "The largest Bitcoin whales include Satoshi Nakamoto (estimated 1.1M BTC), government seizure wallets (US, China), MicroStrategy, Tesla, and early miners. For Ethereum, the Ethereum Foundation, Vitalik Buterin, and large DeFi protocols hold significant amounts. Many whales are anonymous, known only by their wallet addresses." },
         { question: "Can whales manipulate the market?", answer: "Yes. Whales can place large buy or sell walls to influence price direction, execute wash trades to create false volume signals, and use their holdings to influence governance votes. In low-liquidity markets, a single whale trade can move prices by 10% or more. This is why liquidity and trading volume are important considerations when evaluating token investments." }]}
       relatedArticles={[{ title: "Whale Watching", href: "/learn/whale-watching", category: "Learn Crypto" }, { title: "Volume", href: "/learn/glossary/volume", category: "Glossary" }, { title: "Market Depth", href: "/learn/glossary/market-depth", category: "Glossary" }, { title: "Liquidation", href: "/learn/glossary/liquidation", category: "Glossary" }]}

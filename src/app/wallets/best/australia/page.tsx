@@ -71,7 +71,7 @@ export default function AustraliaWalletsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Wallets in Australia ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -87,7 +87,7 @@ export default function AustraliaWalletsPage() {
           organized for tax time while keeping your assets secure. We have evaluated the best
           hardware and software wallets available to Australian residents.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Self-Custody in Australia</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Self-Custody in Australia</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           While Australian exchanges are AUSTRAC-registered, crypto assets are not covered by
           government compensation schemes. Self-custody through personal wallets gives
@@ -95,7 +95,7 @@ export default function AustraliaWalletsPage() {
           for securing Bitcoin and Ethereum long-term, while software wallets serve DeFi and
           daily transactions.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Tax-Smart Wallet Management</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Tax-Smart Wallet Management</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           The ATO has been proactive in crypto tax enforcement through data-matching programs.
           Australians should choose wallets that provide detailed transaction records and
@@ -117,26 +117,26 @@ export default function AustraliaWalletsPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Wallet Tips for Australian Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Wallet Tips for Australian Users</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Track your 12-month holding period</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Track your 12-month holding period</h3>
               <p className="text-sm">Record acquisition dates carefully to qualify for the 50% CGT discount on holdings over 12 months.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Use ATO-compatible tax software</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Use ATO-compatible tax software</h3>
               <p className="text-sm">Integrate your wallet with Koinly or Syla for automatic ATO-ready tax reports at the end of the financial year.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Separate hot and cold storage</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Separate hot and cold storage</h3>
               <p className="text-sm">Keep long-term holdings on a hardware wallet and use a software wallet for smaller amounts and DeFi.</p>
             </div>
           </div>

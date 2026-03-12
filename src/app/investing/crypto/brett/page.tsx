@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Brett (BRETT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Brett (BRETT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Brett (BRETT), the leading meme coin on the Base blockchain. Discover BRETT tokenomics, its cultural origins, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function BrettPage() {
       readTime="8 min read"
       intro="Brett (BRETT) is the largest meme coin on the Base blockchain, inspired by the character Brett from Matt Furie's Boys' Club comic series. Launched in early 2024, BRETT quickly became the dominant cultural token on Coinbase's Layer 2 network, attracting a loyal community of meme enthusiasts and speculative traders."
       toc={[
-        { id: "what-is", title: "What Is Brett?", level: 2 },
-        { id: "how-it-works", title: "How Does Brett Work?", level: 2 },
-        { id: "tokenomics", title: "BRETT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy BRETT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-brett", title: "What Is Brett?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-brett-work", title: "How Does Brett Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "brett-tokenomics", title: "BRETT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-brett", title: "How to Buy BRETT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

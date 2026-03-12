@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Web3 Security Best Practices for Businesses (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Web3 Security Best Practices for Businesses (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn essential Web3 security practices for businesses including smart contract auditing, key management, operational security, incident response, and protecting user funds.",
 };
@@ -17,11 +17,16 @@ export default function Web3SecurityBestPracticesPage() {
       readTime="10 min"
       intro="Security is the most critical concern for any Web3 business. The irreversible nature of blockchain transactions means that security failures can result in immediate, permanent loss of user funds with no recourse. Billions of dollars have been lost to smart contract exploits, private key compromises, and social engineering attacks. Unlike traditional software where bugs can be patched after discovery, on-chain vulnerabilities are exploited within minutes of detection. This guide covers the comprehensive security practices that Web3 businesses must implement across smart contracts, operations, key management, and incident response."
       toc={[
+        { id: "smart-contract-security", title: "smart-contract-security", level: 2 },
         { id: "smart-contract-security", title: "Smart Contract Security", level: 2 },
-        { id: "key-management", title: "Key Management and Access Control", level: 2 },
+        { id: "key-management", title: "key-management", level: 2 },
+        { id: "key-management-and-access-control", title: "Key Management and Access Control", level: 2 },
+        { id: "operational-security", title: "operational-security", level: 2 },
         { id: "operational-security", title: "Operational Security", level: 2 },
-        { id: "monitoring-detection", title: "Monitoring and Threat Detection", level: 2 },
-        { id: "incident-response", title: "Incident Response Planning", level: 2 },
+        { id: "monitoring-detection", title: "monitoring-detection", level: 2 },
+        { id: "monitoring-and-threat-detection", title: "Monitoring and Threat Detection", level: 2 },
+        { id: "incident-response", title: "incident-response", level: 2 },
+        { id: "incident-response-planning", title: "Incident Response Planning", level: 2 }
       ]}
       faqs={[
         {

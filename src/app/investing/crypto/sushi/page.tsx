@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is SushiSwap (SUSHI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is SushiSwap (SUSHI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about SushiSwap (SUSHI), the community-driven multi-chain DEX. Discover SUSHI tokenomics, cross-chain features, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function SushiPage() {
       readTime="8 min read"
       intro="SushiSwap (SUSHI) is a community-driven decentralized exchange deployed across multiple blockchain networks. Originally launched in 2020 as a fork of Uniswap V2, SushiSwap has evolved into a multi-chain DeFi platform offering token swaps, lending, and cross-chain trading capabilities. SUSHI serves as the governance and fee-sharing token."
       toc={[
-        { id: "what-is", title: "What Is SushiSwap?", level: 2 },
-        { id: "how-it-works", title: "How Does SushiSwap Work?", level: 2 },
-        { id: "tokenomics", title: "SUSHI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SUSHI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-sushiswap", title: "What Is SushiSwap?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-sushiswap-work", title: "How Does SushiSwap Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "sushi-tokenomics", title: "SUSHI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-sushi", title: "How to Buy SUSHI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

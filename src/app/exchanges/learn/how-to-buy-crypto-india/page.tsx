@@ -25,13 +25,16 @@ export default function HowToBuyCryptoIndiaPage() {
       readTime="14 min"
       intro="India is one of the world's largest cryptocurrency markets by user count, despite having some of the most challenging tax regulations. With a flat 30% tax on gains, 1% TDS on transactions, and no loss offsetting, understanding the rules before you buy is essential. This guide covers everything Indian residents need to know about purchasing cryptocurrency legally and cost-effectively."
       toc={[
-        { id: "legal-status", title: "Legal Status of Crypto in India", level: 2 },
-        { id: "choose-exchange", title: "Choosing an Exchange in India", level: 2 },
-        { id: "deposit-inr", title: "Depositing INR: UPI, IMPS, and P2P", level: 2 },
-        { id: "buying-guide", title: "Step-by-Step Buying Process", level: 2 },
-        { id: "tax-rules", title: "Understanding India's 30% Tax and 1% TDS", level: 2 },
-        { id: "p2p-trading", title: "P2P Trading in India", level: 2 },
-        { id: "security", title: "Security Tips", level: 2 },
+        { id: "legal-status", title: "legal-status", level: 2 },
+        { id: "legal-status-of-crypto-in-india", title: "Legal Status of Crypto in India", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "choosing-an-exchange-in-india", title: "Choosing an Exchange in India", level: 2 },
+        { id: "deposit-inr", title: "deposit-inr", level: 2 },
+        { id: "depositing-inr-upi-imps-and-p2p", title: "Depositing INR: UPI, IMPS, and P2P", level: 2 },
+        { id: "buying-guide", title: "buying-guide", level: 2 },
+        { id: "step-by-step-buying-process", title: "Step-by-Step Buying Process", level: 2 },
+        { id: "tax-rules", title: "tax-rules", level: 2 },
+        { id: "understanding-india", title: "Understanding India", level: 2 }
       ]}
       faqs={[
         {
@@ -63,12 +66,12 @@ export default function HowToBuyCryptoIndiaPage() {
           question: "Is crypto income taxed differently from crypto trading gains?",
           answer:
             "All crypto income (including mining, staking, airdrops, and salary paid in crypto) is taxed at the flat 30% rate. The 1% TDS also applies to all transactions. There is no distinction between income types for crypto taxation in India.",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "Best Crypto Exchanges in India", href: "/exchanges/best/india", category: "Exchanges" },
         { title: "Crypto Taxes in India", href: "/taxes/learn/crypto-taxes-india", category: "Taxes" },
-        { title: "Indian Crypto Regulation Guide", href: "/learn/crypto-regulation-india", category: "Learn" },
+        { title: "Indian Crypto Regulation Guide", href: "/learn/crypto-regulation-india", category: "Learn" }
       ]}
     >
       <h2 id="legal-status">Legal Status of Crypto in India</h2>

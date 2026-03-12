@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Card Tax Implications (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Card Tax Implications (${CURRENT_YEAR}) | degen0x`,
   description: "Understand the tax implications of using crypto debit and credit cards. Learn about capital gains on spending, cashback taxation, and reporting requirements.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoCardTaxesPage() {
       readTime="9 min"
       intro="Using a crypto debit card creates tax obligations that many cardholders overlook. Every time you spend cryptocurrency through a card, you are technically disposing of a capital asset, which triggers capital gains or losses. This guide explains the tax implications of crypto card usage, how cashback rewards are treated, and strategies for minimizing your tax burden while still enjoying the benefits of crypto spending."
       toc={[
-        { id: "spending-as-disposal", title: "Spending Crypto as a Taxable Disposal", level: 2 },
-        { id: "cashback-taxation", title: "How Cashback Rewards Are Taxed", level: 2 },
-        { id: "stablecoin-strategy", title: "The Stablecoin Strategy", level: 2 },
-        { id: "record-keeping", title: "Record Keeping and Reporting", level: 2 },
-        { id: "minimizing-taxes", title: "Strategies for Minimizing Taxes", level: 2 },
+        { id: "spending-as-disposal", title: "spending-as-disposal", level: 2 },
+        { id: "spending-crypto-as-a-taxable-disposal", title: "Spending Crypto as a Taxable Disposal", level: 2 },
+        { id: "cashback-taxation", title: "cashback-taxation", level: 2 },
+        { id: "how-cashback-rewards-are-taxed", title: "How Cashback Rewards Are Taxed", level: 2 },
+        { id: "stablecoin-strategy", title: "stablecoin-strategy", level: 2 },
+        { id: "the-stablecoin-strategy", title: "The Stablecoin Strategy", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping-and-reporting", title: "Record Keeping and Reporting", level: 2 },
+        { id: "minimizing-taxes", title: "minimizing-taxes", level: 2 },
+        { id: "strategies-for-minimizing-taxes", title: "Strategies for Minimizing Taxes", level: 2 }
       ]}
       faqs={[
         { question: "Is every crypto card purchase a taxable event?", answer: "Yes, in most jurisdictions including the US, every purchase made with cryptocurrency through a debit card is treated as selling that crypto at its current market value. You owe capital gains tax on any appreciation since you acquired the crypto. Spending stablecoins like USDC results in negligible or zero capital gains." },

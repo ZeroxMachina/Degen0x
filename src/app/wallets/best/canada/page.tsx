@@ -71,7 +71,7 @@ export default function CanadaWalletsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Wallets in Canada ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -88,14 +88,14 @@ export default function CanadaWalletsPage() {
           best crypto wallets for Canadians, evaluated for security, ease of use, and
           compatibility with Canadian tax requirements.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Why Self-Custody Matters in Canada</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Why Self-Custody Matters in Canada</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Canada&apos;s crypto exchange landscape has seen significant turbulence. The QuadrigaCX
           collapse resulted in $190 million in lost customer funds, and several exchanges have
           exited the Canadian market due to regulatory requirements. A personal wallet ensures
           your crypto remains accessible regardless of what happens to any particular exchange.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">CRA Tax Reporting with Wallets</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">CRA Tax Reporting with Wallets</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           The CRA uses the Adjusted Cost Base (ACB) method for calculating crypto capital
           gains. This requires tracking the average cost of all your purchases. Wallets that
@@ -117,26 +117,26 @@ export default function CanadaWalletsPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Wallet Tips for Canadian Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Wallet Tips for Canadian Users</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Order hardware wallets from official sources</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Order hardware wallets from official sources</h3>
               <p className="text-sm">Buy directly from Ledger or Trezor websites. Canadian authorized resellers are also safe options.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Track all wallet transactions for the CRA</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Track all wallet transactions for the CRA</h3>
               <p className="text-sm">Use portfolio tracking software to automatically calculate your Adjusted Cost Base for tax filing.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Consider a multi-wallet strategy</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Consider a multi-wallet strategy</h3>
               <p className="text-sm">Use a hardware wallet for long-term HODL and a software wallet for DeFi and daily transactions.</p>
             </div>
           </div>

@@ -51,7 +51,7 @@ export default function InvestingHubPage() {
 
       {/* Best-of Categories */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-2">Best-of Guides</h2>
+        <h2 className="text-3xl font-bold text-[var(--color-text)] mb-2">Best-of Guides</h2>
         <p className="text-[var(--color-text-secondary)] mb-8">
           Our editors rigorously compare and rank the top options in each investing category.
         </p>
@@ -62,7 +62,7 @@ export default function InvestingHubPage() {
               href={`/investing/best/${cat.slug}`}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
-              <h3 className="text-base font-semibold text-white mb-1">{cat.name}</h3>
+              <h3 className="text-base font-semibold text-[var(--color-text)] mb-1">{cat.name}</h3>
               <p className="text-xs text-[var(--color-text-secondary)]">{cat.description}</p>
             </Link>
           ))}
@@ -71,7 +71,7 @@ export default function InvestingHubPage() {
 
       {/* Featured Tokens */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-2">Crypto Token Guides</h2>
+        <h2 className="text-3xl font-bold text-[var(--color-text)] mb-2">Crypto Token Guides</h2>
         <p className="text-[var(--color-text-secondary)] mb-8">
           Deep-dive investment analyses of the most important cryptocurrencies.
         </p>
@@ -83,7 +83,7 @@ export default function InvestingHubPage() {
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover text-center"
             >
               <div className="text-2xl font-bold gradient-text mb-1">{token.ticker}</div>
-              <h3 className="text-sm font-semibold text-white mb-1">{token.name}</h3>
+              <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">{token.name}</h3>
               <span className="inline-block rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-medium px-2 py-0.5">
                 {token.category}
               </span>
@@ -94,7 +94,7 @@ export default function InvestingHubPage() {
 
       {/* Learn Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-2">Investment Guides & Education</h2>
+        <h2 className="text-3xl font-bold text-[var(--color-text)] mb-2">Investment Guides & Education</h2>
         <p className="text-[var(--color-text-secondary)] mb-8">
           Master the fundamentals of crypto investing with our comprehensive guides.
         </p>
@@ -105,7 +105,7 @@ export default function InvestingHubPage() {
               href={`/investing/learn/${article.slug}`}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover flex items-center justify-between"
             >
-              <h3 className="text-sm font-semibold text-white">{article.title}</h3>
+              <h3 className="text-sm font-semibold text-[var(--color-text)]">{article.title}</h3>
               <span className="text-xs text-[var(--color-text-secondary)] whitespace-nowrap ml-4">{article.readTime}</span>
             </Link>
           ))}
@@ -114,7 +114,7 @@ export default function InvestingHubPage() {
 
       {/* Calculators */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-2">Free Crypto Calculators</h2>
+        <h2 className="text-3xl font-bold text-[var(--color-text)] mb-2">Free Crypto Calculators</h2>
         <p className="text-[var(--color-text-secondary)] mb-8">
           Plan your investments and estimate returns with our interactive tools.
         </p>
@@ -128,7 +128,7 @@ export default function InvestingHubPage() {
               <div className="w-12 h-12 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center mx-auto mb-3">
                 <span className="text-xl">&#128200;</span>
               </div>
-              <h3 className="text-base font-semibold text-white mb-1">{calc.title}</h3>
+              <h3 className="text-base font-semibold text-[var(--color-text)] mb-1">{calc.title}</h3>
               <p className="text-xs text-[var(--color-text-secondary)]">{calc.description}</p>
             </Link>
           ))}
@@ -137,7 +137,7 @@ export default function InvestingHubPage() {
 
       {/* How We Evaluate */}
       <section className="mb-16 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">How We Evaluate Crypto Investments</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Evaluate Crypto Investments</h2>
         <p className="text-[var(--color-text-secondary)] mb-6">
           Our editorial team uses a rigorous methodology to evaluate every cryptocurrency,
           platform, and investment product we feature. Here is what we analyze:
@@ -150,7 +150,7 @@ export default function InvestingHubPage() {
             { title: "Risk & Reward Profile", desc: "Volatility analysis, liquidity depth, regulatory status, and potential upside vs. downside." },
           ].map((item) => (
             <div key={item.title}>
-              <h3 className="text-base font-semibold text-white mb-2">{item.title}</h3>
+              <h3 className="text-base font-semibold text-[var(--color-text)] mb-2">{item.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
             </div>
           ))}

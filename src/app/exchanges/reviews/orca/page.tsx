@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "Variable by pool (0.01%-1%)",
   bestFor: "Solana LPs and users seeking clean DeFi UX",
-  affiliateUrl: "https://cryptodegen.com/go/orca",
+  affiliateUrl: "https://degen0x.com/go/orca",
   category: "exchanges",
 };
 

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Optimism Ecosystem Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The Optimism Ecosystem Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore the Optimism ecosystem including the Superchain vision, OP Stack, DeFi protocols, OP token governance, and retroactive public goods funding.",
 };
@@ -17,10 +17,14 @@ export default function OptimismEcosystemPage() {
       readTime="9 min read"
       intro="Optimism is an Ethereum Layer 2 network and the creator of the OP Stack, the open-source framework powering Base, Worldchain, and dozens of other chains in the Superchain collective. Beyond just a single rollup, Optimism envisions a network of interoperable L2 chains that share security, communication standards, and a commitment to funding public goods. Its innovative governance model combines token voting with citizen governance to allocate resources toward ecosystem health."
       toc={[
+        { id: "optimism-overview", title: "optimism-overview", level: 2 },
         { id: "optimism-overview", title: "Optimism Overview", level: 2 },
-        { id: "superchain", title: "The Superchain Vision", level: 2 },
-        { id: "defi-and-apps", title: "DeFi and Applications", level: 2 },
-        { id: "op-token", title: "OP Token and Governance", level: 2 },
+        { id: "superchain", title: "superchain", level: 2 },
+        { id: "the-superchain-vision", title: "The Superchain Vision", level: 2 },
+        { id: "defi-and-apps", title: "defi-and-apps", level: 2 },
+        { id: "defi-and-applications", title: "DeFi and Applications", level: 2 },
+        { id: "op-token", title: "op-token", level: 2 },
+        { id: "op-token-and-governance", title: "OP Token and Governance", level: 2 }
       ]}
       faqs={[
         {

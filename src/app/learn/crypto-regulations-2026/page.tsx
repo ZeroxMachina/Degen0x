@@ -1,25 +1,7 @@
 "use client";
 
-import type { Metadata } from "next";
 import LearnPageLayout from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
-
-export const metadata: Metadata = {
-  title: `Crypto Regulations Worldwide 2026 | ${SITE_NAME}`,
-  description:
-    "Complete guide to cryptocurrency regulations in 2026: US legislation, EU MiCA, Asia regulations, what it means for investors, compliance landscape, and regulatory trends.",
-  keywords: [
-    "crypto regulation",
-    "cryptocurrency law",
-    "MiCA",
-    "crypto compliance",
-    "SEC crypto",
-    "crypto regulations 2026",
-    "global crypto law",
-    "stablecoin regulation",
-    "crypto securities",
-  ],
-};
 
 export default function CryptoRegulations2026Page() {
   return (
@@ -30,14 +12,22 @@ export default function CryptoRegulations2026Page() {
       readTime="13 min"
       intro="The regulatory landscape for cryptocurrency has transformed dramatically from complete lack of guidance in the early 2010s to comprehensive frameworks emerging globally by 2026. Major jurisdictions including the United States, European Union, United Kingdom, and Asian nations have implemented or are finalizing laws governing crypto exchanges, stablecoins, DeFi, and consumer protection. This guide explores the key regulatory frameworks emerging worldwide, explains what they mean for investors and businesses, discusses compliance requirements, and analyzes the impact on crypto adoption and innovation. Understanding these regulations is essential for anyone participating in modern cryptocurrency markets."
       toc={[
-        { id: "us-regulation", title: "US Crypto Regulation Landscape", level: 2 },
-        { id: "mica-eu", title: "EU Markets in Crypto-Assets (MiCA) Regulation", level: 2 },
-        { id: "uk-regulation", title: "United Kingdom Regulatory Framework", level: 2 },
-        { id: "asia-singapore", title: "Asia-Pacific: Singapore, Hong Kong, Japan", level: 2 },
-        { id: "compliance-requirements", title: "Key Compliance Requirements for Businesses", level: 2 },
-        { id: "stablecoins", title: "Stablecoin Regulation", level: 2 },
-        { id: "investor-implications", title: "What Regulations Mean for Investors", level: 2 },
-        { id: "future-outlook", title: "Future Regulatory Outlook", level: 2 },
+        { id: "us-regulation", title: "us-regulation", level: 2 },
+        { id: "us-crypto-regulation-landscape", title: "US Crypto Regulation Landscape", level: 2 },
+        { id: "mica-eu", title: "mica-eu", level: 2 },
+        { id: "eu-markets-in-crypto-assets-mica-regulation", title: "EU Markets in Crypto-Assets (MiCA) Regulation", level: 2 },
+        { id: "uk-regulation", title: "uk-regulation", level: 2 },
+        { id: "united-kingdom-regulatory-framework", title: "United Kingdom Regulatory Framework", level: 2 },
+        { id: "asia-singapore", title: "asia-singapore", level: 2 },
+        { id: "asia-pacific-singapore-hong-kong-japan", title: "Asia-Pacific: Singapore, Hong Kong, Japan", level: 2 },
+        { id: "compliance-requirements", title: "compliance-requirements", level: 2 },
+        { id: "key-compliance-requirements-for-businesses", title: "Key Compliance Requirements for Businesses", level: 2 },
+        { id: "stablecoins", title: "stablecoins", level: 2 },
+        { id: "stablecoin-regulation", title: "Stablecoin Regulation", level: 2 },
+        { id: "investor-implications", title: "investor-implications", level: 2 },
+        { id: "what-regulations-mean-for-investors", title: "What Regulations Mean for Investors", level: 2 },
+        { id: "future-outlook", title: "future-outlook", level: 2 },
+        { id: "future-regulatory-outlook", title: "Future Regulatory Outlook", level: 2 }
       ]}
       faqs={[
         {

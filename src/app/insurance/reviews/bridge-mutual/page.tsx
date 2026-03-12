@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Bridge Mutual Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Bridge Mutual Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Bridge Mutual review covering community-driven insurance, permissionless pool creation, coverage options, and comparison with larger DeFi insurance protocols.",
 };
 

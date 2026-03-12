@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function CryptographyPage() {
   return (
     <LearnPageLayout title="What Is Cryptography?" categoryName="Glossary" categorySlug="learn/glossary" readTime="5 min" intro="Cryptography is the mathematical foundation that makes blockchain technology possible. It provides the tools for securing transactions, proving ownership of assets, ensuring data integrity, and maintaining privacy — all without requiring trust in any central authority. The 'crypto' in cryptocurrency directly refers to the cryptographic techniques that underpin every aspect of how blockchains function."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "public-key", title: "Public-Key Cryptography", level: 2 },{ id: "hash-functions", title: "Hash Functions", level: 2 },{ id: "digital-signatures", title: "Digital Signatures", level: 2 },{ id: "applications", title: "Blockchain Applications", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "public-key", title: "public-key", level: 2 },
+        { id: "public-key-cryptography", title: "Public-Key Cryptography", level: 2 },
+        { id: "hash-functions", title: "hash-functions", level: 2 },
+        { id: "hash-functions", title: "Hash Functions", level: 2 },
+        { id: "digital-signatures", title: "digital-signatures", level: 2 },
+        { id: "digital-signatures", title: "Digital Signatures", level: 2 },
+        { id: "applications", title: "applications", level: 2 },
+        { id: "blockchain-applications", title: "Blockchain Applications", level: 2 }
+      ]}
       faqs={[
         { question: "Can quantum computers break blockchain cryptography?", answer: "Current quantum computers cannot break the cryptographic algorithms used in blockchains, but sufficiently powerful future quantum computers could theoretically break elliptic curve cryptography (used for wallet keys) and weaken hash functions. The blockchain industry is actively researching quantum-resistant algorithms, and most experts believe there is time to transition before quantum computers become a practical threat." },
         { question: "What happens if someone cracks the cryptography behind Bitcoin?", answer: "If the elliptic curve cryptography (secp256k1) used by Bitcoin were broken, an attacker could derive private keys from public keys and steal funds. However, addresses that have never sent a transaction only expose a hash of the public key, providing an additional layer of protection. Breaking SHA-256 would require a complete rethinking of all digital security, not just cryptocurrency." },

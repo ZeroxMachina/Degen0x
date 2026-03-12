@@ -21,7 +21,7 @@ const products: Product[] = [
     cons: ["Requires understanding of PT/YT mechanics", "Fixed rate locked until maturity", "Complexity can deter beginners"],
     fees: "Trading spread on PT/YT",
     bestFor: "Users wanting guaranteed DeFi yields",
-    affiliateUrl: "https://cryptodegen.com/go/pendle",
+    affiliateUrl: "https://degen0x.com/go/pendle",
     category: "defi-lending",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     cons: ["Funds locked until maturity", "Lower flexibility than variable rates", "Ethereum mainnet gas costs"],
     fees: "Fixed rate spread",
     bestFor: "Fixed-term yield seekers",
-    affiliateUrl: "https://cryptodegen.com/go/notional",
+    affiliateUrl: "https://degen0x.com/go/notional",
     category: "defi-lending",
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     cons: ["Must participate in auction timing", "Newer protocol", "Smaller market size"],
     fees: "Auction spread",
     bestFor: "Sophisticated fixed-rate investors",
-    affiliateUrl: "https://cryptodegen.com/go/term-finance",
+    affiliateUrl: "https://degen0x.com/go/term-finance",
     category: "defi-lending",
   },
 ];
@@ -62,14 +62,14 @@ export default function FixedRatePage() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Fixed Rate", href: "/defi-lending/best/fixed-rate" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-4xl font-bold text-white mb-4">Best Fixed Rate DeFi Lending ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Fixed Rate DeFi Lending ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Variable DeFi yields can swing wildly with market conditions, making it difficult to plan around expected returns. Fixed-rate protocols solve this by allowing you to lock in a guaranteed yield for a specific period. Whether you are managing treasury funds, planning for known expenses, or simply want peace of mind, fixed-rate DeFi lending provides the predictability that variable-rate protocols cannot match.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Pendle Finance</strong> leads fixed-rate DeFi with its innovative yield tokenization model that supports a wide range of underlying yield sources. <strong className="text-white">Notional Finance</strong> offers traditional fixed-term lending markets. <strong className="text-white">Term Finance</strong> provides auction-based rate discovery for the most market-efficient fixed rates.
+          <strong className="text-[var(--color-text)]">Pendle Finance</strong> leads fixed-rate DeFi with its innovative yield tokenization model that supports a wide range of underlying yield sources. <strong className="text-[var(--color-text)]">Notional Finance</strong> offers traditional fixed-term lending markets. <strong className="text-[var(--color-text)]">Term Finance</strong> provides auction-based rate discovery for the most market-efficient fixed rates.
         </p>
       </div>
       <div className="space-y-4 mb-12">

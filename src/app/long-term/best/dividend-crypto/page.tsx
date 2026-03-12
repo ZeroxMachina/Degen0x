@@ -21,7 +21,7 @@ const products: Product[] = [
     pros: ["3-5% APR on the second largest crypto asset", "Liquid staking maintains full liquidity", "Deflationary tokenomics amplify real yield", "Institutional-grade staking infrastructure", "Battle-tested proof-of-stake mechanism"],
     cons: ["Validator staking requires 32 ETH minimum", "Liquid staking introduces smart contract risk", "APR varies with network participation rate", "Potential slashing risk for validators"],
     bestFor: "Reliable long-term crypto yield",
-    affiliateUrl: "https://cryptodegen.com/go/stake-ethereum",
+    affiliateUrl: "https://degen0x.com/go/stake-ethereum",
     category: "long-term",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     pros: ["6-7% APR staking yield", "Easy native delegation to validators", "Liquid staking options available", "Low barriers to entry for staking", "Growing DeFi ecosystem for composability"],
     cons: ["Higher inflation rate than Ethereum", "Network stability concerns from past outages", "More centralized validator set", "Liquid staking less mature than ETH ecosystem"],
     bestFor: "Higher-yield staking on a growth L1",
-    affiliateUrl: "https://cryptodegen.com/go/stake-solana",
+    affiliateUrl: "https://degen0x.com/go/stake-solana",
     category: "long-term",
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     pros: ["High staking APR of 15-20%", "Frequent ecosystem airdrops for stakers", "Growing interchain ecosystem via IBC", "21-day unbonding period (relatively short)", "Multiple liquid staking options"],
     cons: ["High inflation dilutes non-stakers", "ATOM value accrual debate ongoing", "21-day unbonding locks funds", "Airdrop value is unpredictable"],
     bestFor: "High-yield staking with airdrop potential",
-    affiliateUrl: "https://cryptodegen.com/go/stake-cosmos",
+    affiliateUrl: "https://degen0x.com/go/stake-cosmos",
     category: "long-term",
   },
   {
@@ -59,7 +59,7 @@ const products: Product[] = [
     cons: ["Yield varies with trading volume", "Smart contract and protocol risk", "Governance concentration concerns", "More volatile than major asset staking"],
     fees: "No staking fees",
     bestFor: "Real yield from DeFi protocol revenue",
-    affiliateUrl: "https://cryptodegen.com/go/buy-gmx",
+    affiliateUrl: "https://degen0x.com/go/buy-gmx",
     category: "long-term",
   },
   {
@@ -72,7 +72,7 @@ const products: Product[] = [
     cons: ["Complex protocol mechanics", "Smaller market cap means higher volatility", "vePENDLE lock-up required for full benefits", "Dependent on DeFi yield market health"],
     fees: "No fees for holding; protocol takes swap fees",
     bestFor: "DeFi yield infrastructure investment with revenue share",
-    affiliateUrl: "https://cryptodegen.com/go/buy-pendle",
+    affiliateUrl: "https://degen0x.com/go/buy-pendle",
     category: "long-term",
   },
 ];
@@ -106,7 +106,7 @@ export default function DividendCryptoPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Dividend Crypto", href: "/long-term/best/dividend-crypto" }]} />
       <AffiliateDisclosure />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Best Dividend & Yield Earning Crypto ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Dividend & Yield Earning Crypto ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
 
       <div className="prose prose-invert max-w-none mb-10">
@@ -118,10 +118,10 @@ export default function DividendCryptoPage() {
           opportunities for long-term investors prioritizing sustainability, risk-adjusted returns, and convenience.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          For most long-term investors, <strong className="text-white">ETH staking</strong> (via liquid staking
+          For most long-term investors, <strong className="text-[var(--color-text)]">ETH staking</strong> (via liquid staking
           tokens like stETH or rETH) provides the best risk-adjusted passive income. For higher yields,
-          <strong className="text-white"> SOL staking</strong> offers 6-7% APR on a high-growth L1. And for
-          real-yield DeFi exposure, <strong className="text-white">GMX</strong> distributes actual protocol
+          <strong className="text-[var(--color-text)]"> SOL staking</strong> offers 6-7% APR on a high-growth L1. And for
+          real-yield DeFi exposure, <strong className="text-[var(--color-text)]">GMX</strong> distributes actual protocol
           revenue to stakers in ETH.
         </p>
       </div>
@@ -133,22 +133,22 @@ export default function DividendCryptoPage() {
       </div>
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Understanding Crypto Yield Sources</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Understanding Crypto Yield Sources</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-[var(--color-text-secondary)]">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Proof-of-Stake Staking</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Proof-of-Stake Staking</h3>
             <p className="text-sm">Earn block rewards by staking tokens to secure PoS networks. Yields are generally stable and predictable, paid in the native token. Risk is primarily smart contract risk (for liquid staking) or slashing risk (for validators).</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Protocol Revenue Sharing</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Protocol Revenue Sharing</h3>
             <p className="text-sm">Governance tokens that distribute actual protocol revenue (trading fees, lending interest) to holders. This is real yield tied to protocol usage. Risk includes protocol adoption and smart contract vulnerabilities.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Liquidity Provision</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Liquidity Provision</h3>
             <p className="text-sm">Earn trading fees by providing liquidity to DEX pools. Can be lucrative but carries impermanent loss risk. Best for stablecoin pairs or correlated asset pairs where impermanent loss is minimal.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Lending Interest</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Lending Interest</h3>
             <p className="text-sm">Earn interest by lending crypto on platforms like Aave or Compound. Variable rates depend on borrowing demand. Lower risk than LP positions but typically lower yields as well. Good for stablecoin holders.</p>
           </div>
         </div>

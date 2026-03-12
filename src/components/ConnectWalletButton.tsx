@@ -27,7 +27,7 @@ export default function ConnectWalletButton({ compact = false }: { compact?: boo
         className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-300 ${
           connected
             ? "glass-pill text-[var(--color-text)]"
-            : "bg-gradient-to-r from-indigo-500 to-cyan-500 text-white shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40"
+            : "bg-gradient-to-r from-indigo-500 to-cyan-500 text-[var(--color-text)] shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40"
         }`}
       >
         {connected ? (
@@ -53,7 +53,7 @@ export default function ConnectWalletButton({ compact = false }: { compact?: boo
       className={`flex items-center gap-3 px-6 py-3 rounded-2xl font-semibold transition-all duration-300 ${
         connected
           ? "glass glass-hover text-[var(--color-text)]"
-          : "bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-white shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-[1.02]"
+          : "bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-[var(--color-text)] shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-[1.02]"
       }`}
     >
       {connected ? (

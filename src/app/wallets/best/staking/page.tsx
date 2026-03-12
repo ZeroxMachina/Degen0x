@@ -99,7 +99,7 @@ export default function BestStakingWalletsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Wallets for Staking ({CURRENT_MONTH} {CURRENT_YEAR})
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -110,7 +110,7 @@ export default function BestStakingWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-3">Why Staking Wallets Matter</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-3">Why Staking Wallets Matter</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           While you can stake through centralized exchanges, staking through your own wallet
           means you retain full control of your keys and avoid counterparty risk. The best staking
@@ -134,7 +134,7 @@ export default function BestStakingWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Staking Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Staking Wallets, Ranked</h2>
         <div className="space-y-6">
           {products.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -143,18 +143,18 @@ export default function BestStakingWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/learn/wallet-for-defi-guide" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Wallet for DeFi Guide</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Wallet for DeFi Guide</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Using wallets for DeFi activities</p>
           </Link>
           <Link href="/investing/learn/yield-farming-vs-staking" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Yield Farming vs Staking</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Yield Farming vs Staking</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Compare passive income strategies</p>
           </Link>
           <Link href="/wallets/best/security" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best Security Wallets</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best Security Wallets</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Maximum protection for your assets</p>
           </Link>
         </div>

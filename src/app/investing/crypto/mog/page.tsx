@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Mog Coin (MOG)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Mog Coin (MOG)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Mog Coin (MOG), the Ethereum meme coin inspired by internet mogger culture. Discover MOG tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function MogCoinPage() {
       readTime="8 min read"
       intro="Mog Coin (MOG) is an Ethereum-based meme coin inspired by internet 'mogger' culture, a term used to describe someone who dominates or outshines others. Launched in 2023, MOG has built a cult-like following within crypto meme communities and became one of the top-performing meme tokens on Ethereum."
       toc={[
-        { id: "what-is", title: "What Is Mog Coin?", level: 2 },
-        { id: "how-it-works", title: "How Does Mog Coin Work?", level: 2 },
-        { id: "tokenomics", title: "MOG Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MOG", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-mog-coin", title: "What Is Mog Coin?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-mog-coin-work", title: "How Does Mog Coin Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mog-tokenomics", title: "MOG Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mog", title: "How to Buy MOG", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

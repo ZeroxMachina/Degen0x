@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState } from "react";
@@ -131,7 +133,7 @@ export default function TaxCalculatorPage() {
         { label: "Tax Calculator", href: "/taxes/calculators/tax-calculator" },
       ]} />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Crypto Tax Calculator</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Crypto Tax Calculator</h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">
         Estimate your cryptocurrency tax liability based on your gains, losses, and income. This
         calculator uses 2024 single filer tax brackets for estimation purposes.
@@ -139,7 +141,7 @@ export default function TaxCalculatorPage() {
 
       <div className="grid md:grid-cols-2 gap-8">
         <div className="space-y-6">
-          <h2 className="text-xl font-bold text-white">Your Information</h2>
+          <h2 className="text-xl font-bold text-[var(--color-text)]">Your Information</h2>
 
           <div>
             <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-1">
@@ -150,7 +152,7 @@ export default function TaxCalculatorPage() {
               value={income}
               onChange={(e) => setIncome(e.target.value)}
               placeholder="50000"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -163,7 +165,7 @@ export default function TaxCalculatorPage() {
               value={cryptoIncome}
               onChange={(e) => setCryptoIncome(e.target.value)}
               placeholder="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -176,7 +178,7 @@ export default function TaxCalculatorPage() {
               value={shortTermGains}
               onChange={(e) => setShortTermGains(e.target.value)}
               placeholder="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -189,7 +191,7 @@ export default function TaxCalculatorPage() {
               value={longTermGains}
               onChange={(e) => setLongTermGains(e.target.value)}
               placeholder="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -202,7 +204,7 @@ export default function TaxCalculatorPage() {
               value={shortTermLosses}
               onChange={(e) => setShortTermLosses(e.target.value)}
               placeholder="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -215,24 +217,24 @@ export default function TaxCalculatorPage() {
               value={longTermLosses}
               onChange={(e) => setLongTermLosses(e.target.value)}
               placeholder="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold text-white mb-6">Estimated Tax Liability</h2>
+          <h2 className="text-xl font-bold text-[var(--color-text)] mb-6">Estimated Tax Liability</h2>
           {result ? (
             <div className="space-y-4">
               <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
                 <p className="text-sm text-[var(--color-text-secondary)]">Net Short-Term Gains</p>
-                <p className={`text-2xl font-bold ${result.netShortTerm >= 0 ? "text-white" : "text-[var(--color-danger)]"}`}>
+                <p className={`text-2xl font-bold ${result.netShortTerm >= 0 ? "text-[var(--color-text)]" : "text-[var(--color-danger)]"}`}>
                   {fmt(result.netShortTerm)}
                 </p>
               </div>
               <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
                 <p className="text-sm text-[var(--color-text-secondary)]">Net Long-Term Gains</p>
-                <p className={`text-2xl font-bold ${result.netLongTerm >= 0 ? "text-white" : "text-[var(--color-danger)]"}`}>
+                <p className={`text-2xl font-bold ${result.netLongTerm >= 0 ? "text-[var(--color-text)]" : "text-[var(--color-danger)]"}`}>
                   {fmt(result.netLongTerm)}
                 </p>
               </div>
@@ -246,11 +248,11 @@ export default function TaxCalculatorPage() {
               )}
               <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
                 <p className="text-sm text-[var(--color-text-secondary)]">Tax on Ordinary Income + Short-Term Gains</p>
-                <p className="text-2xl font-bold text-white">{fmt(result.ordinaryTax)}</p>
+                <p className="text-2xl font-bold text-[var(--color-text)]">{fmt(result.ordinaryTax)}</p>
               </div>
               <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
                 <p className="text-sm text-[var(--color-text-secondary)]">Tax on Long-Term Gains</p>
-                <p className="text-2xl font-bold text-white">{fmt(result.longTermTax)}</p>
+                <p className="text-2xl font-bold text-[var(--color-text)]">{fmt(result.longTermTax)}</p>
               </div>
               <div className="rounded-xl border-2 border-[var(--color-primary)] bg-[var(--color-bg-card)] p-4">
                 <p className="text-sm text-[var(--color-text-secondary)]">Estimated Total Tax</p>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Sri Lanka (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Sri Lanka (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges accessible in Sri Lanka. Find LKR-friendly platforms with P2P support, secure trading, and competitive fees.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesSriLanka() {
       readTime="7 min read"
       intro="Sri Lanka's crypto market is growing amid an evolving regulatory landscape. The Central Bank of Sri Lanka has issued warnings about crypto but has not imposed an outright ban. Sri Lankan traders primarily access crypto through international platforms using P2P trading in LKR. This guide covers the best options available and important considerations for Sri Lankan crypto enthusiasts."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Sri Lanka", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "LKR Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-sri-lanka", title: "Top Exchanges for Sri Lanka", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "lkr-payment-methods", title: "LKR Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Sri Lanka?", answer: "Crypto is not explicitly banned in Sri Lanka, but the CBSL has cautioned against its use. There is no formal licensing framework for exchanges. Individual trading on international platforms continues without clear legal prohibition." },

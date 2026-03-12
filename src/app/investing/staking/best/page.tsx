@@ -44,7 +44,7 @@ export default function BestStakingPage() {
     "@type": "Article",
     headline: `8 Best Crypto Staking Platforms of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -63,7 +63,7 @@ export default function BestStakingPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           8 Best Crypto Staking Platforms of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -80,18 +80,18 @@ export default function BestStakingPage() {
             real assets, and evaluating smart contract security on each one.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            Our top pick for Ethereum staking is <strong className="text-white">Lido</strong> for
+            Our top pick for Ethereum staking is <strong className="text-[var(--color-text)]">Lido</strong> for
             its unmatched DeFi composability and battle-tested security. For Solana staking,{" "}
-            <strong className="text-white">Jito</strong> delivers the highest yields through MEV
+            <strong className="text-[var(--color-text)]">Jito</strong> delivers the highest yields through MEV
             reward sharing. And for beginners who want the simplest experience,{" "}
-            <strong className="text-white">Coinbase Staking</strong> provides regulated, one-click
+            <strong className="text-[var(--color-text)]">Coinbase Staking</strong> provides regulated, one-click
             staking with no technical knowledge required.
           </p>
         </div>
 
         {/* Rankings */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
           <div className="space-y-4">
             {rankedPlatforms.map((platform, index) => (
               <ProductCard
@@ -106,7 +106,7 @@ export default function BestStakingPage() {
 
         {/* Comparison Table */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">
             Top 5 Platforms Compared
           </h2>
           <ComparisonTable
@@ -118,7 +118,7 @@ export default function BestStakingPage() {
 
         {/* Methodology */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             We evaluate each staking platform across six key categories, each weighted based on
             importance to the average staker:
@@ -133,7 +133,7 @@ export default function BestStakingPage() {
               { title: "Ease of Use (5%)", desc: "Onboarding experience, documentation quality, and UI/UX design." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}
@@ -142,14 +142,14 @@ export default function BestStakingPage() {
 
         {/* Quick Summaries */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Quick Summaries</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Quick Summaries</h2>
           <div className="space-y-6">
             {rankedPlatforms.slice(0, 5).map((platform, index) => (
               <div
                 key={platform.slug}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6"
               >
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-xl font-bold text-[var(--color-text)] mb-2">
                   {index + 1}. {platform.name} &mdash; Best for {platform.bestFor}
                 </h3>
                 <p className="text-[var(--color-text-secondary)] mb-4">
@@ -200,7 +200,7 @@ export default function BestStakingPage() {
                   </a>
                   <a
                     href={`/investing/staking/reviews/${platform.slug}`}
-                    className="px-4 py-2 rounded-lg border border-[var(--color-border)] text-white text-sm font-medium hover:bg-[var(--color-bg)]/50 transition-colors"
+                    className="px-4 py-2 rounded-lg border border-[var(--color-border)] text-[var(--color-text)] text-sm font-medium hover:bg-[var(--color-bg)]/50 transition-colors"
                   >
                     Read Full Review
                   </a>

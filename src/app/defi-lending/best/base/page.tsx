@@ -17,11 +17,16 @@ export default function BestBaseDefiLending() {
       readTime="9 min"
       intro="Base, Coinbase's Layer 2 network built on the OP Stack, has rapidly grown into a major DeFi hub with a thriving lending ecosystem. With ultra-low gas fees, seamless Coinbase integration, and a growing roster of top-tier lending protocols, Base offers an excellent environment for both new and experienced DeFi lenders. This guide covers the best lending platforms available on Base."
       toc={[
-        { id: "why-base", title: "Why Base for DeFi Lending", level: 2 },
-        { id: "top-protocols", title: "Top Lending Protocols on Base", level: 2 },
-        { id: "yields", title: "Current Yield Landscape", level: 2 },
-        { id: "getting-started", title: "Getting Started on Base", level: 2 },
-        { id: "risks", title: "Base-Specific Considerations", level: 2 },
+        { id: "why-base", title: "why-base", level: 2 },
+        { id: "why-base-for-defi-lending", title: "Why Base for DeFi Lending", level: 2 },
+        { id: "top-protocols", title: "top-protocols", level: 2 },
+        { id: "top-lending-protocols-on-base", title: "Top Lending Protocols on Base", level: 2 },
+        { id: "yields", title: "yields", level: 2 },
+        { id: "current-yield-landscape", title: "Current Yield Landscape", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started-on-base", title: "Getting Started on Base", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "base-specific-considerations", title: "Base-Specific Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Is Base safe for DeFi lending?", answer: "Base inherits Ethereum's security as an OP Stack rollup. Coinbase operates the sequencer, adding an institutional trust layer. However, standard DeFi risks like smart contract bugs and market volatility still apply." },

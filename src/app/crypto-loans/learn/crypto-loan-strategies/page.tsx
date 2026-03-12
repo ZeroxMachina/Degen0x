@@ -17,10 +17,14 @@ export default function CryptoLoanStrategiesPage() {
       readTime="10 min"
       intro="Crypto loans are not just a way to access cash. Strategic borrowers use them for tax optimization, leveraged investing, yield generation, and portfolio management. Understanding these strategies and their risk profiles helps you extract maximum value from your crypto holdings while managing downside risk appropriately."
       toc={[
-        { id: "tax-efficient", title: "Tax-Efficient Borrowing", level: 2 },
+        { id: "tax-efficient", title: "tax-efficient", level: 2 },
+        { id: "tax-efficient-borrowing", title: "Tax-Efficient Borrowing", level: 2 },
+        { id: "leveraged-investing", title: "leveraged-investing", level: 2 },
         { id: "leveraged-investing", title: "Leveraged Investing", level: 2 },
+        { id: "yield-strategies", title: "yield-strategies", level: 2 },
         { id: "yield-strategies", title: "Yield Strategies", level: 2 },
-        { id: "risk-management", title: "Strategy Risk Management", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "strategy-risk-management", title: "Strategy Risk Management", level: 2 }
       ]}
       faqs={[
         { question: "Is it better to borrow or sell crypto?", answer: "Borrowing is generally better when you have large unrealized gains (avoiding capital gains tax), believe the asset will appreciate further, or need temporary liquidity. Selling is better when you have losses to harvest, need to reduce crypto exposure, or cannot manage the risk of a leveraged position." },

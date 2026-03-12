@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Base (BASE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Base (BASE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Base, the Coinbase-incubated Ethereum Layer 2 built on the OP Stack. Discover how it works, ecosystem, use cases, and how to use Base.",
 };
@@ -17,12 +17,18 @@ export default function BaseChainPage() {
       readTime="9 min read"
       intro="Base is an Ethereum Layer 2 network incubated by Coinbase, built on Optimism's OP Stack as an optimistic rollup. Launched in August 2023, Base aims to bring the next billion users to the Ethereum ecosystem by providing a low-cost, developer-friendly platform backed by the credibility and user base of Coinbase, one of the largest publicly-traded cryptocurrency exchanges. Base has no native token and has stated no plans to launch one."
       toc={[
-        { id: "what-is", title: "What Is Base?", level: 2 },
-        { id: "how-it-works", title: "How Does Base Work?", level: 2 },
-        { id: "tokenomics", title: "Token Status & Economics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Use Base", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-base", title: "What Is Base?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-base-work", title: "How Does Base Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "token-status-economics", title: "Token Status & Economics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-use-base", title: "How to Use Base", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

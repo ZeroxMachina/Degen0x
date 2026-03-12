@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Account Abstraction Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Account Abstraction Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about account abstraction: how smart contract wallets improve crypto UX with social recovery, gas sponsorship, batched transactions, and why AA is key to mainstream blockchain adoption.",
 };
@@ -17,11 +17,16 @@ export default function AccountAbstractionPage() {
       readTime="8 min read"
       intro="Account abstraction is a blockchain upgrade that transforms user accounts from simple key pairs into programmable smart contracts, enabling features like social recovery, gas sponsorship, transaction batching, and custom authentication methods. By making wallets smarter and more flexible, account abstraction removes many of the usability barriers that have prevented mainstream adoption of blockchain technology. It represents a fundamental shift in how users interact with blockchains, making the experience closer to traditional web applications while preserving the benefits of decentralization."
       toc={[
-        { id: "problem", title: "The Problem with Traditional Accounts", level: 2 },
-        { id: "how-it-works", title: "How Account Abstraction Works", level: 2 },
-        { id: "key-features", title: "Key Features Enabled by AA", level: 2 },
-        { id: "erc4337", title: "ERC-4337 and Implementation", level: 2 },
-        { id: "adoption", title: "Current Adoption and Future Outlook", level: 2 },
+        { id: "problem", title: "problem", level: 2 },
+        { id: "the-problem-with-traditional-accounts", title: "The Problem with Traditional Accounts", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-account-abstraction-works", title: "How Account Abstraction Works", level: 2 },
+        { id: "key-features", title: "key-features", level: 2 },
+        { id: "key-features-enabled-by-aa", title: "Key Features Enabled by AA", level: 2 },
+        { id: "erc4337", title: "erc4337", level: 2 },
+        { id: "erc-4337-and-implementation", title: "ERC-4337 and Implementation", level: 2 },
+        { id: "adoption", title: "adoption", level: 2 },
+        { id: "current-adoption-and-future-outlook", title: "Current Adoption and Future Outlook", level: 2 }
       ]}
       faqs={[
         {

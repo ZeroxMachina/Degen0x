@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToDoCryptoTaxesPage() {
   return (
     <LearnPageLayout title="How to Do Crypto Taxes" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Cryptocurrency transactions are taxable events in most jurisdictions, and failure to report them can result in penalties. With DeFi activity, multiple chains, and various transaction types, crypto tax reporting can be complex. This guide breaks down what you need to know about crypto taxation and how to prepare your returns."
-      toc={[{ id: "taxable-events", title: "Taxable Events", level: 2 },{ id: "calculation", title: "Calculating Gains", level: 2 },{ id: "defi-taxes", title: "DeFi Tax Implications", level: 2 },{ id: "record-keeping", title: "Record Keeping", level: 2 },{ id: "tools", title: "Tax Preparation Tools", level: 2 }]}
+      toc={[
+        { id: "taxable-events", title: "taxable-events", level: 2 },
+        { id: "taxable-events", title: "Taxable Events", level: 2 },
+        { id: "calculation", title: "calculation", level: 2 },
+        { id: "calculating-gains", title: "Calculating Gains", level: 2 },
+        { id: "defi-taxes", title: "defi-taxes", level: 2 },
+        { id: "defi-tax-implications", title: "DeFi Tax Implications", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping", title: "Record Keeping", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "tax-preparation-tools", title: "Tax Preparation Tools", level: 2 }
+      ]}
       faqs={[
         { question: "Is holding crypto taxable?", answer: "Simply holding cryptocurrency is not a taxable event in most jurisdictions. Tax obligations arise when you dispose of crypto (sell, trade, spend) or receive it as income (mining, staking, airdrops). However, some jurisdictions have wealth taxes that may apply to crypto holdings." },
         { question: "Are crypto-to-crypto trades taxable?", answer: "Yes, in most jurisdictions including the US, trading one cryptocurrency for another is a taxable event. The gain or loss is calculated based on the difference between your cost basis in the disposed crypto and its fair market value at the time of the trade." },

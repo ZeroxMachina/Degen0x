@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Centralized Exchange (CEX)? Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Centralized Exchange (CEX)? Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what centralized crypto exchanges are, how they work, top examples, and their advantages and disadvantages compared to decentralized exchanges.",
 };
@@ -17,11 +17,16 @@ export default function CentralizedExchangePage() {
       readTime="5 min"
       intro="A centralized exchange (CEX) is a cryptocurrency trading platform operated by a company that acts as an intermediary between buyers and sellers. CEXs like Coinbase, Binance, and Kraken are the most common way people buy, sell, and trade cryptocurrency. They offer user-friendly interfaces, fiat currency support, and high liquidity, but require users to trust the exchange with their funds."
       toc={[
-        { id: "definition", title: "What Is a CEX?", level: 2 },
-        { id: "how-it-works", title: "How CEXs Work", level: 2 },
-        { id: "pros-cons", title: "Advantages and Disadvantages", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-cex", title: "What Is a CEX?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-cexs-work", title: "How CEXs Work", level: 2 },
+        { id: "pros-cons", title: "pros-cons", level: 2 },
+        { id: "advantages-and-disadvantages", title: "Advantages and Disadvantages", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "safety", title: "Staying Safe on CEXs", level: 2 },
+        { id: "safety", title: "safety", level: 2 },
+        { id: "staying-safe-on-cexs", title: "Staying Safe on CEXs", level: 2 }
       ]}
       faqs={[
         {

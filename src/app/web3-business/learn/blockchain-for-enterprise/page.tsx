@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Blockchain for Enterprise: Use Cases (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Blockchain for Enterprise: Use Cases (${CURRENT_YEAR}) | degen0x`,
   description: "Enterprise blockchain use cases and implementation strategies. Supply chain, identity, finance, and real-world asset tokenization for businesses.",
 };
 
@@ -12,10 +12,14 @@ export default function BlockchainForEnterprisePage() {
     <LearnPageLayout title="Blockchain for Enterprise: Use Cases" categoryName="Web3 Business" categorySlug="web3-business" readTime="9 min read"
       intro="Enterprise blockchain adoption has moved beyond proof-of-concept into production deployments across supply chain management, financial services, identity verification, and asset tokenization. While the hype around private enterprise blockchains has moderated, the convergence of public blockchain maturity, Layer 2 scaling, and regulatory clarity is creating practical opportunities for businesses to leverage blockchain technology. Understanding which use cases deliver genuine value helps enterprises focus on impactful implementations."
       toc={[
-        { id: "supply-chain", title: "Supply Chain and Provenance", level: 2 },
+        { id: "supply-chain", title: "supply-chain", level: 2 },
+        { id: "supply-chain-and-provenance", title: "Supply Chain and Provenance", level: 2 },
+        { id: "financial-services", title: "financial-services", level: 2 },
         { id: "financial-services", title: "Financial Services", level: 2 },
-        { id: "identity", title: "Identity and Credentials", level: 2 },
-        { id: "tokenization", title: "Real-World Asset Tokenization", level: 2 },
+        { id: "identity", title: "identity", level: 2 },
+        { id: "identity-and-credentials", title: "Identity and Credentials", level: 2 },
+        { id: "tokenization", title: "tokenization", level: 2 },
+        { id: "real-world-asset-tokenization", title: "Real-World Asset Tokenization", level: 2 }
       ]}
       faqs={[
         { question: "Should my enterprise use blockchain?", answer: "Blockchain is most valuable when you need shared data integrity across multiple parties who do not fully trust each other, transparent and auditable records, programmable business logic (smart contracts), or tokenization of assets. If your use case involves a single organization with a trusted database, traditional technology is usually simpler and more efficient. Blockchain adds value in multi-party, trust-deficient environments." },

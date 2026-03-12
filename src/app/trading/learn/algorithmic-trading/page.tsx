@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Algorithmic Crypto Trading Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Algorithmic Crypto Trading Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn algorithmic trading for crypto. Build, backtest, and deploy automated trading strategies using Python, APIs, and quantitative methods.",
 };
@@ -17,10 +17,14 @@ export default function AlgorithmicTradingPage() {
       readTime="10 min read"
       intro="Algorithmic trading uses computer programs to execute trading strategies automatically based on predefined rules. In crypto's 24/7 markets, algo trading offers a significant advantage by eliminating emotional bias, executing at machine speed, and monitoring multiple markets simultaneously. This guide covers the fundamentals of building, testing, and deploying crypto trading algorithms."
       toc={[
-        { id: "what-is-algo-trading", title: "What Is Algorithmic Trading?", level: 2 },
-        { id: "building-algorithms", title: "Building Trading Algorithms", level: 2 },
-        { id: "backtesting", title: "Backtesting and Optimization", level: 2 },
-        { id: "deployment", title: "Deployment and Monitoring", level: 2 },
+        { id: "what-is-algo-trading", title: "what-is-algo-trading", level: 2 },
+        { id: "what-is-algorithmic-trading", title: "What Is Algorithmic Trading?", level: 2 },
+        { id: "building-algorithms", title: "building-algorithms", level: 2 },
+        { id: "building-trading-algorithms", title: "Building Trading Algorithms", level: 2 },
+        { id: "backtesting", title: "backtesting", level: 2 },
+        { id: "backtesting-and-optimization", title: "Backtesting and Optimization", level: 2 },
+        { id: "deployment", title: "deployment", level: 2 },
+        { id: "deployment-and-monitoring", title: "Deployment and Monitoring", level: 2 }
       ]}
       faqs={[
         { question: "What programming language is best for algo trading?", answer: "Python is the most popular choice due to its extensive libraries for data analysis (pandas, numpy), backtesting (backtrader, zipline), machine learning (scikit-learn, TensorFlow), and exchange connectivity (ccxt). JavaScript/TypeScript is also common for web-based bots, while C++ and Rust are used for ultra-low-latency applications." },

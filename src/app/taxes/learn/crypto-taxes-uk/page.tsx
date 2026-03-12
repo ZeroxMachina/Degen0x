@@ -18,12 +18,18 @@ export default function CryptoTaxesUKPage() {
       readTime="12 min read"
       intro="HMRC classifies cryptocurrency as a cryptoasset subject to Capital Gains Tax on disposals and Income Tax when received as earnings. With the annual CGT allowance reduced to just 3,000 pounds, more UK crypto holders than ever must file returns. This guide covers everything from taxable events and reporting requirements to DeFi-specific rules and recommended software."
       toc={[
-        { id: "hmrc-overview", title: "How HMRC Classifies Crypto", level: 2 },
-        { id: "capital-gains", title: "Capital Gains Tax Rules", level: 2 },
-        { id: "income-tax", title: "Income Tax on Crypto", level: 2 },
-        { id: "taxable-events", title: "Taxable vs Non-Taxable Events", level: 2 },
-        { id: "reporting", title: "Self Assessment & Reporting", level: 2 },
-        { id: "tax-tools", title: "Recommended UK Tax Software", level: 2 },
+        { id: "hmrc-overview", title: "hmrc-overview", level: 2 },
+        { id: "how-hmrc-classifies-crypto", title: "How HMRC Classifies Crypto", level: 2 },
+        { id: "capital-gains", title: "capital-gains", level: 2 },
+        { id: "capital-gains-tax-rules", title: "Capital Gains Tax Rules", level: 2 },
+        { id: "income-tax", title: "income-tax", level: 2 },
+        { id: "income-tax-on-crypto", title: "Income Tax on Crypto", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
+        { id: "taxable-vs-non-taxable-events", title: "Taxable vs Non-Taxable Events", level: 2 },
+        { id: "reporting", title: "reporting", level: 2 },
+        { id: "self-assessment-reporting", title: "Self Assessment & Reporting", level: 2 },
+        { id: "tax-tools", title: "tax-tools", level: 2 },
+        { id: "recommended-uk-tax-software", title: "Recommended UK Tax Software", level: 2 }
       ]}
       faqs={[
         { question: "What is the CGT allowance for crypto in the UK?", answer: "The annual Capital Gains Tax allowance is 3,000 pounds for the 2024/25 tax year. Only gains above this threshold are taxable, and it applies to all capital gains combined, not just crypto." },

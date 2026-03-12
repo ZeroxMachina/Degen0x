@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Bedrock (uniETH)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Bedrock (uniETH)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Bedrock (uniETH), the multi-asset liquid restaking protocol. Discover how it works, tokenomics, use cases, and how to buy uniETH.",
 };
@@ -17,12 +17,18 @@ export default function BedrockPage() {
       readTime="8 min read"
       intro="Bedrock is a multi-asset liquid restaking protocol that issues uniETH, a liquid restaking token backed by diversified ETH staking and restaking strategies. Built in partnership with RockX, Bedrock provides a unified token that represents exposure to multiple restaking protocols, simplifying the restaking experience while maintaining DeFi composability across Ethereum and Layer 2 ecosystems."
       toc={[
-        { id: "what-is", title: "What Is Bedrock?", level: 2 },
-        { id: "how-it-works", title: "How Does Bedrock Work?", level: 2 },
-        { id: "tokenomics", title: "uniETH Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy uniETH", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-bedrock", title: "What Is Bedrock?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-bedrock-work", title: "How Does Bedrock Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "unieth-tokenomics", title: "uniETH Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-unieth", title: "How to Buy uniETH", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Bedrock?", answer: "Bedrock is a multi-asset liquid restaking protocol issuing uniETH, a token representing diversified ETH restaking positions across multiple protocols for simplified yield and DeFi composability." },

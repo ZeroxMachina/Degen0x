@@ -25,13 +25,20 @@ export default function HowToBuyCryptoEuropePage() {
       readTime="13 min"
       intro="Europe is one of the best regions in the world for buying cryptocurrency. The MiCA regulation provides a clear legal framework, SEPA transfers enable free EUR deposits across the eurozone, and tax treatment varies from highly favorable (Germany's 1-year exemption) to straightforward flat rates (France's 30%). This guide covers everything European residents need to know."
       toc={[
-        { id: "mica-exchanges", title: "Choosing a MiCA-Licensed Exchange", level: 2 },
-        { id: "verification", title: "KYC Verification for Europeans", level: 2 },
-        { id: "deposit-eur", title: "Depositing EUR: SEPA and Local Methods", level: 2 },
-        { id: "buying-guide", title: "Placing Your First Order", level: 2 },
-        { id: "country-taxes", title: "Tax Rules by Country", level: 2 },
-        { id: "travel-rule", title: "The Travel Rule and Self-Custody", level: 2 },
-        { id: "security", title: "Security Best Practices", level: 2 },
+        { id: "mica-exchanges", title: "mica-exchanges", level: 2 },
+        { id: "choosing-a-mica-licensed-exchange", title: "Choosing a MiCA-Licensed Exchange", level: 2 },
+        { id: "verification", title: "verification", level: 2 },
+        { id: "kyc-verification-for-europeans", title: "KYC Verification for Europeans", level: 2 },
+        { id: "deposit-eur", title: "deposit-eur", level: 2 },
+        { id: "depositing-eur-sepa-and-local-methods", title: "Depositing EUR: SEPA and Local Methods", level: 2 },
+        { id: "buying-guide", title: "buying-guide", level: 2 },
+        { id: "placing-your-first-order", title: "Placing Your First Order", level: 2 },
+        { id: "country-taxes", title: "country-taxes", level: 2 },
+        { id: "tax-rules-by-country", title: "Tax Rules by Country", level: 2 },
+        { id: "travel-rule", title: "travel-rule", level: 2 },
+        { id: "the-travel-rule-and-self-custody", title: "The Travel Rule and Self-Custody", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-best-practices", title: "Security Best Practices", level: 2 }
       ]}
       faqs={[
         {

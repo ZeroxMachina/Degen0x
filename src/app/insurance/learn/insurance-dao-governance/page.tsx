@@ -16,10 +16,14 @@ export default function InsuranceDaoGovernancePage() {
       readTime="10 min"
       intro="Decentralized insurance protocols are governed by their communities through DAO mechanisms. Understanding governance for claims assessment, risk parameter setting, and protocol upgrades is essential for participants."
       toc={[
-        { id: "section-1", title: "Governance Structure", level: 2 },
-        { id: "section-2", title: "Claims Governance", level: 2 },
-        { id: "section-3", title: "Risk Parameter Governance", level: 2 },
-        { id: "section-4", title: "Participating Effectively", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "governance-structure", title: "Governance Structure", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "claims-governance", title: "Claims Governance", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "risk-parameter-governance", title: "Risk Parameter Governance", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "participating-effectively", title: "Participating Effectively", level: 2 }
       ]}
       faqs={[
         { question: "How does insurance DAO governance work?", answer: "Token holders vote on key decisions including claims assessment, risk parameters, coverage expansion, and protocol upgrades. Governance mechanisms vary between protocols but typically involve proposal submission, discussion periods, and on-chain voting." },

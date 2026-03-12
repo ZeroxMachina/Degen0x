@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Desktop Crypto Wallets Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Desktop Crypto Wallets Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Explore the best desktop crypto wallets for Windows, Mac, and Linux. Compare Exodus, Electrum, Sparrow, and more for portfolio management and security.",
 };
 
@@ -11,7 +11,16 @@ export default function DesktopWalletGuidePage() {
   return (
     <LearnPageLayout title="Desktop Crypto Wallets Guide" categoryName="Crypto Wallets" categorySlug="wallets" readTime="7 min read"
       intro="Desktop wallets are standalone applications installed on your computer, offering a middle ground between the convenience of browser wallets and the security of hardware devices. They provide more features and larger interfaces than mobile wallets, making them ideal for portfolio management, advanced transaction handling, and running full or light blockchain nodes. This guide covers the best desktop wallets, their unique advantages, and when a desktop wallet is the right choice."
-      toc={[{ id: "desktop-wallet-advantages", title: "Desktop Wallet Advantages", level: 2 }, { id: "top-desktop-wallets", title: "Top Desktop Wallets", level: 2 }, { id: "security-practices", title: "Desktop Security Practices", level: 2 }, { id: "when-to-use", title: "When to Use a Desktop Wallet", level: 2 }]}
+      toc={[
+        { id: "desktop-wallet-advantages", title: "desktop-wallet-advantages", level: 2 },
+        { id: "desktop-wallet-advantages", title: "Desktop Wallet Advantages", level: 2 },
+        { id: "top-desktop-wallets", title: "top-desktop-wallets", level: 2 },
+        { id: "top-desktop-wallets", title: "Top Desktop Wallets", level: 2 },
+        { id: "security-practices", title: "security-practices", level: 2 },
+        { id: "desktop-security-practices", title: "Desktop Security Practices", level: 2 },
+        { id: "when-to-use", title: "when-to-use", level: 2 },
+        { id: "when-to-use-a-desktop-wallet", title: "When to Use a Desktop Wallet", level: 2 }
+      ]}
       faqs={[{ question: "Are desktop wallets more secure than browser wallets?", answer: "Desktop wallets can be more secure because they run as standalone applications outside the browser environment, reducing exposure to web-based attacks like phishing. However, they are still vulnerable to malware, keyloggers, and physical access attacks. The security advantage depends on your computer hygiene. A well-maintained computer with a desktop wallet is more secure than a browser wallet, but a hardware wallet surpasses both." },
         { question: "Can I run a desktop wallet and browser wallet simultaneously?", answer: "Yes, and many users do. A common setup is using a desktop wallet like Exodus for portfolio management and a browser extension like MetaMask for DeFi interactions. Some desktop wallets even include browser extension components. Running both gives you the interface advantages of desktop apps with the dApp connectivity of browser extensions." },
         { question: "Do desktop wallets work offline?", answer: "Desktop wallets need internet to broadcast transactions and sync balances, but you can sign transactions offline with some wallets (air-gapped signing). Electrum and Sparrow support offline transaction signing, where you create the transaction on an online computer and sign it on an offline computer. This provides hardware-wallet-level security without a dedicated device." }]}

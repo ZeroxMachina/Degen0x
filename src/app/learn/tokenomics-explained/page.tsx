@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Tokenomics Explained: Evaluating Token Economics (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Tokenomics Explained: Evaluating Token Economics (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to evaluate tokenomics: supply mechanics, distribution, vesting schedules, value accrual, inflation vs deflation, and what makes sustainable token economic models.",
 };
@@ -17,11 +17,16 @@ export default function TokenomicsExplainedPage() {
       readTime="9 min read"
       intro="Tokenomics — a portmanteau of 'token' and 'economics' — describes the economic design and incentive structure of a cryptocurrency. It encompasses supply mechanics, distribution, utility, governance rights, value capture, and the incentive alignment between different stakeholders. Good tokenomics can drive sustainable growth and value creation, while poor tokenomics can doom even technically excellent projects. Understanding tokenomics is essential for evaluating whether a token is likely to appreciate, stagnate, or decline over time."
       toc={[
+        { id: "supply-mechanics", title: "supply-mechanics", level: 2 },
         { id: "supply-mechanics", title: "Supply Mechanics", level: 2 },
-        { id: "distribution", title: "Token Distribution and Vesting", level: 2 },
-        { id: "utility-value", title: "Token Utility and Value Accrual", level: 2 },
-        { id: "inflation-deflation", title: "Inflation vs Deflation Models", level: 2 },
-        { id: "evaluating", title: "Evaluating Tokenomics in Practice", level: 2 },
+        { id: "distribution", title: "distribution", level: 2 },
+        { id: "token-distribution-and-vesting", title: "Token Distribution and Vesting", level: 2 },
+        { id: "utility-value", title: "utility-value", level: 2 },
+        { id: "token-utility-and-value-accrual", title: "Token Utility and Value Accrual", level: 2 },
+        { id: "inflation-deflation", title: "inflation-deflation", level: 2 },
+        { id: "inflation-vs-deflation-models", title: "Inflation vs Deflation Models", level: 2 },
+        { id: "evaluating", title: "evaluating", level: 2 },
+        { id: "evaluating-tokenomics-in-practice", title: "Evaluating Tokenomics in Practice", level: 2 }
       ]}
       faqs={[
         {

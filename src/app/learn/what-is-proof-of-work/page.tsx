@@ -18,12 +18,18 @@ export default function WhatIsProofOfWorkPage() {
       readTime="9 min"
       intro="Proof of Work (PoW) is the original blockchain consensus mechanism, first implemented by Bitcoin in 2009. It secures the network by requiring miners to expend computational energy solving complex mathematical puzzles, making it prohibitively expensive for attackers to manipulate the blockchain while rewarding honest participants with newly minted coins."
       toc={[
-        { id: "how-pow-works", title: "How Proof of Work Works", level: 2 },
-        { id: "mining-process", title: "The Mining Process", level: 2 },
+        { id: "how-pow-works", title: "how-pow-works", level: 2 },
+        { id: "how-proof-of-work-works", title: "How Proof of Work Works", level: 2 },
+        { id: "mining-process", title: "mining-process", level: 2 },
+        { id: "the-mining-process", title: "The Mining Process", level: 2 },
+        { id: "difficulty-adjustment", title: "difficulty-adjustment", level: 2 },
         { id: "difficulty-adjustment", title: "Difficulty Adjustment", level: 2 },
-        { id: "energy-debate", title: "The Energy Debate", level: 2 },
+        { id: "energy-debate", title: "energy-debate", level: 2 },
+        { id: "the-energy-debate", title: "The Energy Debate", level: 2 },
+        { id: "pow-vs-pos", title: "pow-vs-pos", level: 2 },
         { id: "pow-vs-pos", title: "PoW vs PoS", level: 2 },
-        { id: "future-of-pow", title: "Future of Proof of Work", level: 2 },
+        { id: "future-of-pow", title: "future-of-pow", level: 2 },
+        { id: "future-of-proof-of-work", title: "Future of Proof of Work", level: 2 }
       ]}
       faqs={[
         {

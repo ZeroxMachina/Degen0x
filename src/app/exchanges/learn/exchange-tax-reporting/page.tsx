@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Tax Reporting Tools on Exchanges (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Tax Reporting Tools on Exchanges (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about crypto tax reporting tools on exchanges. Transaction history, tax reports, third-party integrations, and how to simplify crypto tax compliance.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeTaxReporting() {
       readTime="8 min read"
       intro="Crypto tax reporting is increasingly important as tax authorities worldwide tighten enforcement. Most major exchanges now offer built-in tools to help you track transactions and generate tax reports. Understanding these tools and how to use them effectively can save significant time and money during tax season."
       toc={[
-        { id: "tax-basics", title: "Crypto Tax Basics", level: 2 },
-        { id: "exchange-tools", title: "Built-In Exchange Tools", level: 2 },
-        { id: "transaction-history", title: "Transaction History Exports", level: 2 },
-        { id: "third-party", title: "Third-Party Tax Software", level: 2 },
-        { id: "common-events", title: "Taxable Events", level: 2 },
-        { id: "record-keeping", title: "Record-Keeping Best Practices", level: 2 },
-        { id: "tips", title: "Tax Reporting Tips", level: 2 },
+        { id: "tax-basics", title: "tax-basics", level: 2 },
+        { id: "crypto-tax-basics", title: "Crypto Tax Basics", level: 2 },
+        { id: "exchange-tools", title: "exchange-tools", level: 2 },
+        { id: "built-in-exchange-tools", title: "Built-In Exchange Tools", level: 2 },
+        { id: "transaction-history", title: "transaction-history", level: 2 },
+        { id: "transaction-history-exports", title: "Transaction History Exports", level: 2 },
+        { id: "third-party", title: "third-party", level: 2 },
+        { id: "third-party-tax-software", title: "Third-Party Tax Software", level: 2 },
+        { id: "common-events", title: "common-events", level: 2 },
+        { id: "taxable-events", title: "Taxable Events", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping-best-practices", title: "Record-Keeping Best Practices", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tax-reporting-tips", title: "Tax Reporting Tips", level: 2 }
       ]}
       faqs={[
         { question: "Do I need to report crypto taxes?", answer: "In most countries, yes. The US, UK, EU, Australia, Canada, and many other jurisdictions require reporting crypto gains and income. Tax treatment varies by country, so consult a tax professional familiar with crypto regulations in your jurisdiction." },

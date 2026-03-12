@@ -7,7 +7,18 @@ export const metadata: Metadata = { title: `How Crypto Exchange Listings Work ($
 export default function Page() {
   return (
     <LearnPageLayout title="How Crypto Exchange Listings Work" categoryName="Crypto Exchanges" categorySlug="exchanges" readTime="8 min" intro="Exchange listings can make or break a cryptocurrency project. Understanding how the listing process works, what exchanges look for, and the impact on token prices helps you make better investment decisions around listing events."
-      toc={[{id:"listing-process",title:"The Listing Process",level:2},{id:"listing-criteria",title:"What Exchanges Evaluate",level:2},{id:"listing-fees",title:"Listing Fees and Costs",level:2},{id:"price-impact",title:"Impact on Token Prices",level:2},{id:"trading-listings",title:"Trading Around Listings",level:2}]}
+      toc={[
+        { id: "listing-process", title: "listing-process", level: 2 },
+        { id: "the-listing-process", title: "The Listing Process", level: 2 },
+        { id: "listing-criteria", title: "listing-criteria", level: 2 },
+        { id: "what-exchanges-evaluate", title: "What Exchanges Evaluate", level: 2 },
+        { id: "listing-fees", title: "listing-fees", level: 2 },
+        { id: "listing-fees-and-costs", title: "Listing Fees and Costs", level: 2 },
+        { id: "price-impact", title: "price-impact", level: 2 },
+        { id: "impact-on-token-prices", title: "Impact on Token Prices", level: 2 },
+        { id: "trading-listings", title: "trading-listings", level: 2 },
+        { id: "trading-around-listings", title: "Trading Around Listings", level: 2 }
+      ]}
       faqs={[{question:"Do projects pay to get listed?",answer:"Yes, many exchanges charge listing fees ranging from $50,000 to several million dollars for top-tier exchanges. Some exchanges deny charging fees but may require token deposits or market-making commitments."},{question:"Why do prices spike on listings?",answer:"Listings increase visibility and accessibility, bringing new buyers who could not previously access the token. The anticipation effect and exchange credibility also drive demand."},{question:"Where do tokens list first?",answer:"Most tokens launch on DEXs first (Uniswap, Raydium) where listing is permissionless. Centralized exchange listings typically come later after the project gains traction."}]}
       relatedArticles={[{title:"How to Choose a Crypto Exchange",href:"/exchanges/learn/how-to-choose-crypto-exchange",category:"Exchanges"},{title:"What Are Trading Pairs",href:"/exchanges/learn/what-are-trading-pairs",category:"Exchanges"}]}
     >

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Smart Contract Development Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Smart Contract Development Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn smart contract development from fundamentals to deployment. Covers Solidity, development frameworks, testing, auditing, and best practices for building secure on-chain applications.",
 };
@@ -17,11 +17,16 @@ export default function SmartContractDevelopmentPage() {
       readTime="11 min"
       intro="Smart contracts are self-executing programs deployed on blockchains that automate agreements without intermediaries. They power DeFi protocols, NFT marketplaces, DAOs, and virtually every Web3 application. For businesses building on blockchain, understanding smart contract development is essential whether you are writing contracts yourself or managing a development team. This guide covers the development lifecycle from language fundamentals through testing, auditing, and deployment, with emphasis on security practices that protect user funds."
       toc={[
-        { id: "languages", title: "Smart Contract Languages", level: 2 },
-        { id: "frameworks", title: "Development Frameworks and Tools", level: 2 },
-        { id: "testing", title: "Testing and Quality Assurance", level: 2 },
-        { id: "security", title: "Security Best Practices", level: 2 },
-        { id: "deployment", title: "Deployment and Upgradability", level: 2 },
+        { id: "languages", title: "languages", level: 2 },
+        { id: "smart-contract-languages", title: "Smart Contract Languages", level: 2 },
+        { id: "frameworks", title: "frameworks", level: 2 },
+        { id: "development-frameworks-and-tools", title: "Development Frameworks and Tools", level: 2 },
+        { id: "testing", title: "testing", level: 2 },
+        { id: "testing-and-quality-assurance", title: "Testing and Quality Assurance", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-best-practices", title: "Security Best Practices", level: 2 },
+        { id: "deployment", title: "deployment", level: 2 },
+        { id: "deployment-and-upgradability", title: "Deployment and Upgradability", level: 2 }
       ]}
       faqs={[
         {

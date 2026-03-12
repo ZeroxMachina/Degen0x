@@ -17,11 +17,16 @@ export default function BestMiddleEastExchangesPage() {
       readTime="10 min"
       intro="The Middle East has emerged as a global crypto hub, with the UAE leading the way through progressive regulation. Dubai's VARA framework and Abu Dhabi's ADGM have attracted major exchanges to establish regional headquarters. This guide covers the best exchanges available to Middle Eastern traders and investors."
       toc={[
-        { id: "regulatory-landscape", title: "Middle East Crypto Regulations", level: 2 },
-        { id: "top-picks", title: "Top Exchanges for the Middle East", level: 2 },
-        { id: "uae-exchanges", title: "UAE-Licensed Exchanges", level: 2 },
-        { id: "payment-methods", title: "Payment Methods and Local Currency", level: 2 },
-        { id: "sharia-compliance", title: "Sharia Compliance Considerations", level: 2 },
+        { id: "regulatory-landscape", title: "regulatory-landscape", level: 2 },
+        { id: "middle-east-crypto-regulations", title: "Middle East Crypto Regulations", level: 2 },
+        { id: "top-picks", title: "top-picks", level: 2 },
+        { id: "top-exchanges-for-the-middle-east", title: "Top Exchanges for the Middle East", level: 2 },
+        { id: "uae-exchanges", title: "uae-exchanges", level: 2 },
+        { id: "uae-licensed-exchanges", title: "UAE-Licensed Exchanges", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "payment-methods-and-local-currency", title: "Payment Methods and Local Currency", level: 2 },
+        { id: "sharia-compliance", title: "sharia-compliance", level: 2 },
+        { id: "sharia-compliance-considerations", title: "Sharia Compliance Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in the UAE?", answer: "Yes, crypto is legal and regulated in the UAE. Dubai's VARA (Virtual Assets Regulatory Authority) and Abu Dhabi's ADGM provide comprehensive regulatory frameworks. Many major exchanges have obtained VARA licenses to operate in the region." },

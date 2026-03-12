@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Tezos (XTZ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Tezos (XTZ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Tezos (XTZ), the self-amending blockchain with on-chain governance. Discover XTZ tokenomics, baking, and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function TezosPage() {
       readTime="8 min read"
       intro="Tezos (XTZ) is a self-amending blockchain platform that features on-chain governance, enabling the protocol to upgrade itself without hard forks. Launched in 2018 after a record-breaking ICO, Tezos uses a liquid proof-of-stake consensus mechanism where token holders can delegate their XTZ to validators (bakers) and participate in governance while earning staking rewards."
       toc={[
-        { id: "what-is", title: "What Is Tezos?", level: 2 },
-        { id: "how-it-works", title: "How Does Tezos Work?", level: 2 },
-        { id: "tokenomics", title: "XTZ Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy XTZ", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-tezos", title: "What Is Tezos?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-tezos-work", title: "How Does Tezos Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "xtz-tokenomics", title: "XTZ Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-xtz", title: "How to Buy XTZ", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Tezos?", answer: "Tezos is a self-amending blockchain with built-in on-chain governance. It upgrades without hard forks through community voting. XTZ (tez) is used for staking (baking), governance, and transaction fees." },

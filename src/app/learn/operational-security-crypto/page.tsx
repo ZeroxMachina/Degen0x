@@ -12,11 +12,16 @@ export default function OperationalSecurityCryptoPage() {
   return (
     <LearnPageLayout title="Operational Security for Crypto" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Operational security (OpSec) encompasses the practices and habits that protect your cryptocurrency beyond just wallet security. From device hygiene and network safety to identity management and threat modeling, a comprehensive OpSec approach addresses the full attack surface that crypto users face in an increasingly sophisticated threat environment."
       toc={[
+        { id: "threat-modeling", title: "threat-modeling", level: 2 },
         { id: "threat-modeling", title: "Threat Modeling", level: 2 },
+        { id: "device-security", title: "device-security", level: 2 },
         { id: "device-security", title: "Device Security", level: 2 },
+        { id: "network-security", title: "network-security", level: 2 },
         { id: "network-security", title: "Network Security", level: 2 },
+        { id: "identity-management", title: "identity-management", level: 2 },
         { id: "identity-management", title: "Identity Management", level: 2 },
-        { id: "daily-practices", title: "Daily OpSec Practices", level: 2 },
+        { id: "daily-practices", title: "daily-practices", level: 2 },
+        { id: "daily-opsec-practices", title: "Daily OpSec Practices", level: 2 }
       ]}
       faqs={[
         { question: "What is a threat model?", answer: "A threat model identifies what you are protecting (assets), who might attack you (threat actors), how they might attack (attack vectors), and what defenses are appropriate. A casual user with small holdings faces different threats than a whale or project team member, and security measures should be proportional to the risk." },

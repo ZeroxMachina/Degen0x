@@ -16,10 +16,14 @@ export default function TimeInMarketVsTimingPage() {
       readTime="10 min"
       intro="The time-in-market versus timing debate takes unique dimensions in cryptocurrency, where extreme volatility creates both the temptation and the danger of trying to time entries and exits rather than maintaining consistent exposure."
       toc={[
-        { id: "section-1", title: "The Timing Temptation", level: 2 },
-        { id: "section-2", title: "Time in Market Evidence", level: 2 },
-        { id: "section-3", title: "Hybrid Approaches", level: 2 },
-        { id: "section-4", title: "Practical Implementation", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "the-timing-temptation", title: "The Timing Temptation", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "time-in-market-evidence", title: "Time in Market Evidence", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "hybrid-approaches", title: "Hybrid Approaches", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "practical-implementation", title: "Practical Implementation", level: 2 }
       ]}
       faqs={[
         { question: "Is it better to time crypto or hold long-term?", answer: "Historical data overwhelmingly favors time in market over market timing for most investors. Studies show that missing even a few of Bitcoin's best days dramatically reduces returns. Dollar-cost averaging and holding through cycles has outperformed most timing strategies, especially after accounting for transaction costs, taxes, and the psychological difficulty of timing decisions." },

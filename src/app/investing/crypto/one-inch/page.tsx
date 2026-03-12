@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is 1inch (1INCH)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is 1inch (1INCH)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about 1inch (1INCH), the leading DEX aggregator that finds optimal swap routes. Discover 1INCH tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function OneInchPage() {
       readTime="8 min read"
       intro="1inch (1INCH) is a decentralized exchange aggregator that routes trades across multiple DEXs to find the most favorable swap rates for users. By splitting orders across protocols like Uniswap, SushiSwap, Curve, and Balancer, 1inch minimizes slippage and reduces trading costs. The 1INCH token is used for governance and staking within the ecosystem."
       toc={[
-        { id: "what-is", title: "What Is 1inch?", level: 2 },
-        { id: "how-it-works", title: "How Does 1inch Work?", level: 2 },
-        { id: "tokenomics", title: "1INCH Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy 1INCH", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-1inch", title: "What Is 1inch?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-1inch-work", title: "How Does 1inch Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "1inch-tokenomics", title: "1INCH Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-1inch", title: "How to Buy 1INCH", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

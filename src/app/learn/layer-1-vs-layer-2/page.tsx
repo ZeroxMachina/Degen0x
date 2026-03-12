@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Layer 1 vs Layer 2 Blockchains Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Layer 1 vs Layer 2 Blockchains Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand the difference between Layer 1 and Layer 2 blockchains, how scaling solutions work, rollups, sidechains, and which approach is best for different use cases.",
 };
@@ -17,11 +17,16 @@ export default function Layer1VsLayer2Page() {
       readTime="10 min read"
       intro="As blockchain adoption grows, the need for greater transaction throughput has given rise to a multi-layered scaling architecture. Layer 1 (L1) blockchains like Ethereum, Bitcoin, and Solana form the base settlement layer, while Layer 2 (L2) solutions like Arbitrum, Optimism, and Base build on top of L1s to process transactions faster and cheaper. Understanding the relationship between these layers is essential for navigating the modern blockchain ecosystem."
       toc={[
-        { id: "layer-1-explained", title: "What Is a Layer 1 Blockchain?", level: 2 },
-        { id: "layer-2-explained", title: "What Is a Layer 2 Solution?", level: 2 },
-        { id: "rollup-types", title: "Optimistic vs ZK Rollups", level: 2 },
-        { id: "other-solutions", title: "Other Scaling Approaches", level: 2 },
-        { id: "choosing", title: "Choosing Between L1 and L2", level: 2 },
+        { id: "layer-1-explained", title: "layer-1-explained", level: 2 },
+        { id: "what-is-a-layer-1-blockchain", title: "What Is a Layer 1 Blockchain?", level: 2 },
+        { id: "layer-2-explained", title: "layer-2-explained", level: 2 },
+        { id: "what-is-a-layer-2-solution", title: "What Is a Layer 2 Solution?", level: 2 },
+        { id: "rollup-types", title: "rollup-types", level: 2 },
+        { id: "optimistic-vs-zk-rollups", title: "Optimistic vs ZK Rollups", level: 2 },
+        { id: "other-solutions", title: "other-solutions", level: 2 },
+        { id: "other-scaling-approaches", title: "Other Scaling Approaches", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-between-l1-and-l2", title: "Choosing Between L1 and L2", level: 2 }
       ]}
       faqs={[
         {

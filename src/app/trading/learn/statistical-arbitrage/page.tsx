@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Statistical Arbitrage Strategies (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Statistical Arbitrage Strategies (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn statistical arbitrage strategies for crypto. Use quantitative models, pair trading, and statistical analysis for market-neutral profits.",
 };
@@ -17,10 +17,14 @@ export default function StatisticalArbitragePage() {
       readTime="9 min read"
       intro="Statistical arbitrage uses quantitative models and statistical analysis to identify mispricings between related crypto assets. Unlike simple arbitrage, stat arb relies on historical correlations and mean reversion patterns to generate market-neutral returns. This guide covers the fundamental concepts, pair trading techniques, and how to build a basic stat arb strategy for crypto markets."
       toc={[
-        { id: "what-is-stat-arb", title: "What Is Statistical Arbitrage?", level: 2 },
-        { id: "pair-trading", title: "Pair Trading in Crypto", level: 2 },
-        { id: "building-models", title: "Building Stat Arb Models", level: 2 },
-        { id: "practical-considerations", title: "Practical Considerations", level: 2 },
+        { id: "what-is-stat-arb", title: "what-is-stat-arb", level: 2 },
+        { id: "what-is-statistical-arbitrage", title: "What Is Statistical Arbitrage?", level: 2 },
+        { id: "pair-trading", title: "pair-trading", level: 2 },
+        { id: "pair-trading-in-crypto", title: "Pair Trading in Crypto", level: 2 },
+        { id: "building-models", title: "building-models", level: 2 },
+        { id: "building-stat-arb-models", title: "Building Stat Arb Models", level: 2 },
+        { id: "practical-considerations", title: "practical-considerations", level: 2 },
+        { id: "practical-considerations", title: "Practical Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Is statistical arbitrage the same as regular arbitrage?", answer: "No. Regular arbitrage exploits a guaranteed price difference for risk-free profit. Statistical arbitrage relies on statistical probabilities and historical patterns, meaning there is a real risk that the expected reversion does not occur. Stat arb is a probabilistic strategy, not a risk-free one." },

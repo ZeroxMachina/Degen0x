@@ -16,10 +16,14 @@ export default function Erc721VsErc1155LearnPage() {
       readTime="10 min"
       intro="ERC-721 and ERC-1155 are the two primary NFT token standards on Ethereum. Each has distinct advantages for different use cases, from unique art pieces to gaming items and semi-fungible tokens."
       toc={[
-        { id: "section-1", title: "Overview and Fundamentals", level: 2 },
-        { id: "section-2", title: "Key Concepts and Mechanics", level: 2 },
-        { id: "section-3", title: "Practical Applications", level: 2 },
-        { id: "section-4", title: "Best Practices and Tips", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "overview-and-fundamentals", title: "Overview and Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "key-concepts-and-mechanics", title: "Key Concepts and Mechanics", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "practical-applications", title: "Practical Applications", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "best-practices-and-tips", title: "Best Practices and Tips", level: 2 }
       ]}
       faqs={[
         { question: "What should beginners know about ERC-721 vs ERC-1155?", answer: "Start by understanding the basics covered in this guide. ERC-721 creates individually unique tokens ideal for one-of-one art, while ERC-1155 supports both fungible and non-fungible tokens in a single contract, offering gas savings for collections and gaming items." },

@@ -17,11 +17,16 @@ export default function DefiCreditScoringPage() {
       readTime="9 min"
       intro="On-chain credit scoring represents the next evolution of DeFi lending, moving beyond overcollateralized loans toward reputation-based borrowing. By analyzing wallet history, protocol interactions, and repayment behavior, emerging credit systems aim to enable undercollateralized or even unsecured lending in DeFi. This guide explores the current state of DeFi credit scoring, its approaches, and its implications for the lending landscape."
       toc={[
-        { id: "why-credit-scoring", title: "Why DeFi Needs Credit Scoring", level: 2 },
-        { id: "approaches", title: "Current Approaches", level: 2 },
+        { id: "why-credit-scoring", title: "why-credit-scoring", level: 2 },
+        { id: "why-defi-needs-credit-scoring", title: "Why DeFi Needs Credit Scoring", level: 2 },
+        { id: "approaches", title: "approaches", level: 2 },
+        { id: "current-approaches", title: "Current Approaches", level: 2 },
+        { id: "credit-delegation", title: "credit-delegation", level: 2 },
         { id: "credit-delegation", title: "Credit Delegation", level: 2 },
-        { id: "challenges", title: "Challenges and Limitations", level: 2 },
-        { id: "future-outlook", title: "Future Outlook", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-and-limitations", title: "Challenges and Limitations", level: 2 },
+        { id: "future-outlook", title: "future-outlook", level: 2 },
+        { id: "future-outlook", title: "Future Outlook", level: 2 }
       ]}
       faqs={[
         { question: "Can I get an unsecured loan in DeFi?", answer: "Currently, unsecured DeFi loans are primarily available to institutional borrowers through protocols like Maple Finance and TrueFi. Retail unsecured lending is still limited but emerging through credit delegation and reputation-based systems." },

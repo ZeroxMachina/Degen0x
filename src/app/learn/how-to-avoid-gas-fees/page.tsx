@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToAvoidGasFeesPage() {
   return (
     <LearnPageLayout title="How to Avoid High Gas Fees" categoryName="Crypto Education" categorySlug="learn" readTime="6 min" intro="Gas fees can make Ethereum mainnet transactions prohibitively expensive, especially during periods of network congestion. However, several strategies can dramatically reduce your transaction costs — from using Layer 2 networks to timing your transactions and optimizing how you interact with DeFi protocols."
-      toc={[{ id: "use-l2", title: "Use Layer 2 Networks", level: 2 },{ id: "timing", title: "Time Your Transactions", level: 2 },{ id: "optimization", title: "Transaction Optimization", level: 2 },{ id: "alternatives", title: "Alternative Chains", level: 2 },{ id: "tools", title: "Gas Monitoring Tools", level: 2 }]}
+      toc={[
+        { id: "use-l2", title: "use-l2", level: 2 },
+        { id: "use-layer-2-networks", title: "Use Layer 2 Networks", level: 2 },
+        { id: "timing", title: "timing", level: 2 },
+        { id: "time-your-transactions", title: "Time Your Transactions", level: 2 },
+        { id: "optimization", title: "optimization", level: 2 },
+        { id: "transaction-optimization", title: "Transaction Optimization", level: 2 },
+        { id: "alternatives", title: "alternatives", level: 2 },
+        { id: "alternative-chains", title: "Alternative Chains", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "gas-monitoring-tools", title: "Gas Monitoring Tools", level: 2 }
+      ]}
       faqs={[
         { question: "What is the cheapest way to use DeFi?", answer: "Layer 2 networks like Arbitrum, Base, and Optimism offer the cheapest way to use Ethereum-ecosystem DeFi, with gas fees typically under $0.10. Solana and other L1s also offer very low fees. The cheapest option depends on the specific protocols and liquidity available on each network." },
         { question: "Why are Ethereum gas fees so high?", answer: "Ethereum gas fees are determined by supply and demand for block space. When many users want to transact simultaneously (during popular NFT mints, market volatility, or viral dApp launches), competition for limited block space drives fees up. Layer 2 solutions were specifically designed to address this by processing transactions off the main chain." },

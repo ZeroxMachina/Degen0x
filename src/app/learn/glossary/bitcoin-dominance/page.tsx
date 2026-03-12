@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Bitcoin Dominance? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Bitcoin Dominance? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what Bitcoin dominance is, how it's calculated, what it signals about market trends, and how traders use it. A complete guide to BTC.D.",
 };
@@ -17,11 +17,16 @@ export default function BitcoinDominancePage() {
       readTime="5 min"
       intro="Bitcoin dominance (BTC.D) measures Bitcoin's market capitalization as a percentage of the total cryptocurrency market cap. It serves as a gauge for how capital flows between Bitcoin and altcoins. A rising dominance suggests money is flowing into Bitcoin, while falling dominance indicates capital is rotating into altcoins."
       toc={[
-        { id: "definition", title: "What Is Bitcoin Dominance?", level: 2 },
-        { id: "how-it-works", title: "How It Is Calculated", level: 2 },
-        { id: "trends", title: "Historical Trends", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-bitcoin-dominance", title: "What Is Bitcoin Dominance?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-it-is-calculated", title: "How It Is Calculated", level: 2 },
+        { id: "trends", title: "trends", level: 2 },
+        { id: "historical-trends", title: "Historical Trends", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "using-it", title: "How Traders Use It", level: 2 },
+        { id: "using-it", title: "using-it", level: 2 },
+        { id: "how-traders-use-it", title: "How Traders Use It", level: 2 }
       ]}
       faqs={[
         {

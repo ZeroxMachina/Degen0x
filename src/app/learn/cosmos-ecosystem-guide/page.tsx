@@ -17,12 +17,18 @@ export default function CosmosEcosystemGuidePage() {
       readTime="9 min"
       intro="Cosmos is a decentralized network of independent blockchains connected through the Inter-Blockchain Communication (IBC) protocol. Often called the internet of blockchains, Cosmos enables sovereign app-chains to communicate seamlessly, creating an interoperable multi-chain ecosystem where each blockchain can optimize for its specific use case while sharing liquidity and data."
       toc={[
-        { id: "overview", title: "Cosmos Overview", level: 2 },
-        { id: "ibc", title: "IBC Protocol", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "cosmos-overview", title: "Cosmos Overview", level: 2 },
+        { id: "ibc", title: "ibc", level: 2 },
+        { id: "ibc-protocol", title: "IBC Protocol", level: 2 },
+        { id: "cosmos-sdk", title: "cosmos-sdk", level: 2 },
         { id: "cosmos-sdk", title: "Cosmos SDK", level: 2 },
-        { id: "defi", title: "DeFi Ecosystem", level: 2 },
-        { id: "atom", title: "ATOM and Cosmos Hub", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "defi", title: "defi", level: 2 },
+        { id: "defi-ecosystem", title: "DeFi Ecosystem", level: 2 },
+        { id: "atom", title: "atom", level: 2 },
+        { id: "atom-and-cosmos-hub", title: "ATOM and Cosmos Hub", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What is IBC?", answer: "Inter-Blockchain Communication (IBC) is a protocol that enables trustless communication between Cosmos-based blockchains. It allows token transfers, data sharing, and cross-chain smart contract calls without relying on centralized bridges. IBC is one of the most secure cross-chain communication protocols in existence." },

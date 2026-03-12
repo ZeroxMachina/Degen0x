@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Ledger Nano X", slug: "ledger-nano-x", rating: 4.7, affiliateUrl: "https://cryptodegen.com/go/ledger", features: { "Type": "Multi-coin hardware wallet", "Price": "$149", "Supported Coins": "5,500+", "Bitcoin-Only Mode": "No", "Air-Gapped": "No (USB + Bluetooth)", "Secure Element": "Yes (CC EAL5+)", "Open Source": "Partial", "Display": "128x64 OLED" } },
-  { name: "Coldcard Mk4", slug: "coldcard-mk4", rating: 4.6, affiliateUrl: "https://cryptodegen.com/go/coldcard", features: { "Type": "Bitcoin-only hardware wallet", "Price": "$149", "Supported Coins": "Bitcoin only", "Bitcoin-Only Mode": "Yes (only)", "Air-Gapped": "Yes (microSD + NFC)", "Secure Element": "Yes (dual SE)", "Open Source": "Yes (fully)", "Display": "128x64 OLED" } },
+  { name: "Ledger Nano X", slug: "ledger-nano-x", rating: 4.7, affiliateUrl: "https://degen0x.com/go/ledger", features: { "Type": "Multi-coin hardware wallet", "Price": "$149", "Supported Coins": "5,500+", "Bitcoin-Only Mode": "No", "Air-Gapped": "No (USB + Bluetooth)", "Secure Element": "Yes (CC EAL5+)", "Open Source": "Partial", "Display": "128x64 OLED" } },
+  { name: "Coldcard Mk4", slug: "coldcard-mk4", rating: 4.6, affiliateUrl: "https://degen0x.com/go/coldcard", features: { "Type": "Bitcoin-only hardware wallet", "Price": "$149", "Supported Coins": "Bitcoin only", "Bitcoin-Only Mode": "Yes (only)", "Air-Gapped": "Yes (microSD + NFC)", "Secure Element": "Yes (dual SE)", "Open Source": "Yes (fully)", "Display": "128x64 OLED" } },
 ];
 
 const features = ["Type", "Price", "Supported Coins", "Bitcoin-Only Mode", "Air-Gapped", "Secure Element", "Open Source", "Display"];
@@ -39,7 +39,7 @@ export default function LedgerVsColdcardPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Ledger vs Coldcard: Multi-Coin vs Bitcoin Maximalist ({CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Ledger vs Coldcard: Multi-Coin vs Bitcoin Maximalist ({CURRENT_YEAR})</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Ledger is the most popular multi-coin hardware wallet. Coldcard is the gold standard
           for Bitcoin-only security. We compare security architecture, features, and use cases.
@@ -82,12 +82,12 @@ export default function LedgerVsColdcardPage() {
         <h2 id="verdict">Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose Ledger if:</strong> You hold multiple
+            <strong className="text-[var(--color-text)]">Choose Ledger if:</strong> You hold multiple
             cryptocurrencies and want one device to manage them all, prefer Bluetooth mobile
             management, and want a polished software experience through Ledger Live.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose Coldcard if:</strong> You are a Bitcoin
+            <strong className="text-[var(--color-text)]">Choose Coldcard if:</strong> You are a Bitcoin
             maximalist who wants the highest possible security with air-gapped signing, fully
             open-source firmware, and advanced Bitcoin features.
           </p>
@@ -98,11 +98,11 @@ export default function LedgerVsColdcardPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/reviews/ledger" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Review</span>
-            <h3 className="font-semibold text-white text-sm">Ledger Full Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Ledger Full Review</h3>
           </Link>
           <Link href="/wallets/learn/hardware-wallet-setup-guide" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Guide</span>
-            <h3 className="font-semibold text-white text-sm">Hardware Wallet Setup Guide</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Hardware Wallet Setup Guide</h3>
           </Link>
         </div>
       </section>

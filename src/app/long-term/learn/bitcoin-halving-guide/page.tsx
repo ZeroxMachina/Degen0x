@@ -18,12 +18,18 @@ export default function BitcoinHalvingGuidePage() {
       readTime="10 min read"
       intro="The Bitcoin halving is one of the most anticipated events in crypto, occurring approximately every four years and reducing the mining reward by 50%. This programmatic supply reduction is central to Bitcoin's monetary policy and has historically preceded significant bull markets. Understanding the halving mechanism, its impact on mining economics, and its historical correlation with price cycles is essential for any long-term Bitcoin investor."
       toc={[
-        { id: "how-it-works", title: "How the Halving Works", level: 2 },
-        { id: "history", title: "Halving History & Price Impact", level: 2 },
-        { id: "mining-impact", title: "Impact on Mining Economics", level: 2 },
-        { id: "supply-dynamics", title: "Supply & Demand Dynamics", level: 2 },
-        { id: "investment-strategy", title: "Halving Investment Strategies", level: 2 },
-        { id: "future-halvings", title: "Future Halvings & Long-Term Outlook", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-the-halving-works", title: "How the Halving Works", level: 2 },
+        { id: "history", title: "history", level: 2 },
+        { id: "halving-history-price-impact", title: "Halving History & Price Impact", level: 2 },
+        { id: "mining-impact", title: "mining-impact", level: 2 },
+        { id: "impact-on-mining-economics", title: "Impact on Mining Economics", level: 2 },
+        { id: "supply-dynamics", title: "supply-dynamics", level: 2 },
+        { id: "supply-demand-dynamics", title: "Supply & Demand Dynamics", level: 2 },
+        { id: "investment-strategy", title: "investment-strategy", level: 2 },
+        { id: "halving-investment-strategies", title: "Halving Investment Strategies", level: 2 },
+        { id: "future-halvings", title: "future-halvings", level: 2 },
+        { id: "future-halvings-long-term-outlook", title: "Future Halvings & Long-Term Outlook", level: 2 }
       ]}
       faqs={[
         { question: "When is the next Bitcoin halving?", answer: "Bitcoin halvings occur every 210,000 blocks, approximately every 4 years. The most recent halving occurred in April 2024, reducing the block reward from 6.25 to 3.125 BTC. The next halving is expected around 2028." },

@@ -12,11 +12,16 @@ export default function HowToMintNftPage() {
   return (
     <LearnPageLayout title="How to Mint an NFT" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Minting an NFT means creating a unique digital token on a blockchain that represents ownership of a digital asset. Whether you are an artist creating your first collection or a collector minting from a new project, understanding the minting process helps you participate confidently in the NFT ecosystem."
       toc={[
+        { id: "what-is-minting", title: "what-is-minting", level: 2 },
         { id: "what-is-minting", title: "What Is Minting?", level: 2 },
-        { id: "creating", title: "Creating Your Own NFT", level: 2 },
-        { id: "collecting", title: "Minting as a Collector", level: 2 },
-        { id: "costs", title: "Minting Costs", level: 2 },
-        { id: "safety", title: "Safety Considerations", level: 2 },
+        { id: "creating", title: "creating", level: 2 },
+        { id: "creating-your-own-nft", title: "Creating Your Own NFT", level: 2 },
+        { id: "collecting", title: "collecting", level: 2 },
+        { id: "minting-as-a-collector", title: "Minting as a Collector", level: 2 },
+        { id: "costs", title: "costs", level: 2 },
+        { id: "minting-costs", title: "Minting Costs", level: 2 },
+        { id: "safety", title: "safety", level: 2 },
+        { id: "safety-considerations", title: "Safety Considerations", level: 2 }
       ]}
       faqs={[
         { question: "How much does it cost to mint an NFT?", answer: "Costs vary by blockchain. Ethereum minting can cost $5-50+ in gas fees depending on network congestion. Layer 2 networks and Solana offer minting for cents. Some platforms offer gasless or lazy minting where the gas fee is paid by the buyer rather than the creator." },

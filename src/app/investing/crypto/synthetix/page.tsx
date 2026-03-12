@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Synthetix (SNX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Synthetix (SNX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Synthetix (SNX), the DeFi protocol for synthetic assets and perpetual futures. Discover SNX tokenomics, staking, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function SynthetixPage() {
       readTime="8 min read"
       intro="Synthetix (SNX) is a decentralized protocol that enables the creation and trading of synthetic assets on Ethereum and Optimism. By staking SNX as collateral, users can mint synthetic tokens (Synths) that track the price of real-world assets, cryptocurrencies, and other financial instruments. Synthetix also powers several DeFi derivatives platforms."
       toc={[
-        { id: "what-is", title: "What Is Synthetix?", level: 2 },
-        { id: "how-it-works", title: "How Does Synthetix Work?", level: 2 },
-        { id: "tokenomics", title: "SNX Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SNX", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-synthetix", title: "What Is Synthetix?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-synthetix-work", title: "How Does Synthetix Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "snx-tokenomics", title: "SNX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-snx", title: "How to Buy SNX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

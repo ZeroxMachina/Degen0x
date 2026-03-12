@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Launch a Token (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Launch a Token (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to launching a cryptocurrency token including tokenomics design, smart contract deployment, liquidity provision, exchange listings, and regulatory considerations.",
 };
@@ -17,11 +17,16 @@ export default function TokenLaunchGuidePage() {
       readTime="11 min"
       intro="Launching a token is one of the most consequential decisions a Web3 project can make. A well-designed token launch creates aligned incentives, funds development, and builds community ownership. A poorly executed launch can destroy trust, attract regulatory scrutiny, and undermine the project's long-term viability. This guide covers the complete token launch process from tokenomics design through deployment, liquidity, and exchange listings, with emphasis on the strategic and regulatory considerations that determine success."
       toc={[
-        { id: "tokenomics-design", title: "Tokenomics Design Fundamentals", level: 2 },
-        { id: "smart-contract", title: "Smart Contract Development", level: 2 },
-        { id: "launch-strategies", title: "Launch Strategy Options", level: 2 },
-        { id: "liquidity-listings", title: "Liquidity and Exchange Listings", level: 2 },
-        { id: "regulatory", title: "Regulatory Considerations", level: 2 },
+        { id: "tokenomics-design", title: "tokenomics-design", level: 2 },
+        { id: "tokenomics-design-fundamentals", title: "Tokenomics Design Fundamentals", level: 2 },
+        { id: "smart-contract", title: "smart-contract", level: 2 },
+        { id: "smart-contract-development", title: "Smart Contract Development", level: 2 },
+        { id: "launch-strategies", title: "launch-strategies", level: 2 },
+        { id: "launch-strategy-options", title: "Launch Strategy Options", level: 2 },
+        { id: "liquidity-listings", title: "liquidity-listings", level: 2 },
+        { id: "liquidity-and-exchange-listings", title: "Liquidity and Exchange Listings", level: 2 },
+        { id: "regulatory", title: "regulatory", level: 2 },
+        { id: "regulatory-considerations", title: "Regulatory Considerations", level: 2 }
       ]}
       faqs={[
         {

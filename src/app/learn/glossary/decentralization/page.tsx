@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Decentralization? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Decentralization? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what decentralization means in crypto, why it matters, the spectrum of decentralization, and how it affects security, censorship resistance, and governance.",
 };
@@ -17,11 +17,16 @@ export default function DecentralizationPage() {
       readTime="5 min"
       intro="Decentralization is the distribution of control, decision-making, and data away from a single central authority to a network of participants. In crypto, decentralization means no single entity controls the network — power is spread across thousands of nodes, miners, or validators. It is the foundational principle that gives blockchain technology its unique properties of censorship resistance, trustlessness, and resilience."
       toc={[
-        { id: "definition", title: "What Is Decentralization?", level: 2 },
-        { id: "spectrum", title: "The Decentralization Spectrum", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-decentralization", title: "What Is Decentralization?", level: 2 },
+        { id: "spectrum", title: "spectrum", level: 2 },
+        { id: "the-decentralization-spectrum", title: "The Decentralization Spectrum", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "trade-offs", title: "trade-offs", level: 2 },
         { id: "trade-offs", title: "Trade-Offs", level: 2 },
-        { id: "measuring", title: "Measuring Decentralization", level: 2 },
+        { id: "measuring", title: "measuring", level: 2 },
+        { id: "measuring-decentralization", title: "Measuring Decentralization", level: 2 }
       ]}
       faqs={[
         {

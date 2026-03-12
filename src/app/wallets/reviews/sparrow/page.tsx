@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Sparrow Wallet Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Sparrow Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "Sparrow Wallet review covering Bitcoin transaction analysis, PSBT support, hardware wallet integration, and privacy features for power users.",
 };
 

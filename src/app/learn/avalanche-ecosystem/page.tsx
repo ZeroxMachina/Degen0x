@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Avalanche Ecosystem Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The Avalanche Ecosystem Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore the Avalanche ecosystem including subnets, DeFi protocols, gaming, and institutional adoption. Learn about AVAX and Avalanche's unique multi-chain architecture.",
 };
@@ -17,10 +17,14 @@ export default function AvalancheEcosystemPage() {
       readTime="9 min read"
       intro="Avalanche is a high-performance Layer 1 blockchain platform known for its fast finality, subnet architecture, and strong institutional adoption. Built by Ava Labs and led by Cornell professor Emin Gun Sirer, Avalanche uses a novel consensus mechanism that achieves sub-second finality while maintaining decentralization. Its subnet model allows anyone to launch customized blockchains that benefit from Avalanche's validator network, making it attractive for both DeFi and enterprise applications."
       toc={[
+        { id: "avalanche-overview", title: "avalanche-overview", level: 2 },
         { id: "avalanche-overview", title: "Avalanche Overview", level: 2 },
-        { id: "subnets", title: "Subnets and Custom Chains", level: 2 },
-        { id: "defi-gaming", title: "DeFi and Gaming", level: 2 },
-        { id: "avax-token", title: "AVAX Token and Economics", level: 2 },
+        { id: "subnets", title: "subnets", level: 2 },
+        { id: "subnets-and-custom-chains", title: "Subnets and Custom Chains", level: 2 },
+        { id: "defi-gaming", title: "defi-gaming", level: 2 },
+        { id: "defi-and-gaming", title: "DeFi and Gaming", level: 2 },
+        { id: "avax-token", title: "avax-token", level: 2 },
+        { id: "avax-token-and-economics", title: "AVAX Token and Economics", level: 2 }
       ]}
       faqs={[
         {

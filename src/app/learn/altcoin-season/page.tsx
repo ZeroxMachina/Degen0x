@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Altcoin Season: What It Is and How to Profit (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Altcoin Season: What It Is and How to Profit (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what altcoin season is, how to identify when it starts, the best strategies for profiting during altseason, and how to manage risk during volatile periods.",
 };
@@ -17,10 +17,14 @@ export default function AltcoinSeasonPage() {
       readTime="9 min read"
       intro="Altcoin season, or altseason, is a period in the crypto market cycle when alternative cryptocurrencies significantly outperform Bitcoin. During these periods, capital rotates from Bitcoin into altcoins, driving explosive price gains across mid-cap and small-cap tokens. Altcoin seasons have historically produced the largest percentage returns in crypto, but they are also the most volatile and dangerous periods for inexperienced investors. Understanding the dynamics of altseason is essential for maximizing gains and managing risk."
       toc={[
-        { id: "what-is-altseason", title: "What Is Altcoin Season?", level: 2 },
-        { id: "identifying-altseason", title: "How to Identify Altcoin Season", level: 2 },
-        { id: "strategies", title: "Altseason Strategies", level: 2 },
-        { id: "risk-management", title: "Risk Management During Altseason", level: 2 },
+        { id: "what-is-altseason", title: "what-is-altseason", level: 2 },
+        { id: "what-is-altcoin-season", title: "What Is Altcoin Season?", level: 2 },
+        { id: "identifying-altseason", title: "identifying-altseason", level: 2 },
+        { id: "how-to-identify-altcoin-season", title: "How to Identify Altcoin Season", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "altseason-strategies", title: "Altseason Strategies", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management-during-altseason", title: "Risk Management During Altseason", level: 2 }
       ]}
       faqs={[
         {

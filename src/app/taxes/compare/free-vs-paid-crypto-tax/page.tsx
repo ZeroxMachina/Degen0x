@@ -27,26 +27,26 @@ export default function FreeVsPaidCryptoTaxPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/free-vs-paid-crypto-tax" }, { label: "Free vs Paid", href: "/taxes/compare/free-vs-paid-crypto-tax" }]} />
-      <h1 className="text-4xl font-bold text-white mb-4">Free vs Paid Crypto Tax Software ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Free vs Paid Crypto Tax Software ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Several crypto tax tools offer free tiers, but are they good enough for accurate reporting? This comparison examines the trade-offs between free and paid crypto tax software, helping you decide whether the investment in a paid tool is worthwhile for your situation.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">The short answer:</strong> Free tools work for simple portfolios with few transactions on major exchanges. If you have DeFi activity, many transactions, or want tax optimization through cost basis method selection, paid tools are worth the investment.
+          <strong className="text-[var(--color-text)]">The short answer:</strong> Free tools work for simple portfolios with few transactions on major exchanges. If you have DeFi activity, many transactions, or want tax optimization through cost basis method selection, paid tools are worth the investment.
         </p>
       </div>
       <section className="mb-12">
         <ComparisonTable items={items} features={features} title="Free vs Paid Crypto Tax Software Comparison" />
       </section>
       <section className="mb-12 prose prose-invert max-w-none">
-        <h2 className="text-2xl font-bold text-white mb-4">Detailed Analysis</h2>
-        <h3 className="text-xl font-bold text-white mt-6 mb-3">Transaction Limits</h3>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Transaction Limits</h3>
         <p className="text-[var(--color-text-secondary)]">The most immediate limitation of free tools is transaction count. Most free tiers support only 25 to 100 transactions. Active traders can exceed this in a single day. Even occasional traders may have more transactions than they realize when counting all trades, conversions, and transfers. Paid tools typically start at 1,000 transactions and scale to unlimited. Exceeding your free tier limit means losing access to reports until you upgrade.</p>
-        <h3 className="text-xl font-bold text-white mt-6 mb-3">DeFi and Advanced Features</h3>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">DeFi and Advanced Features</h3>
         <p className="text-[var(--color-text-secondary)]">Free tools almost universally lack comprehensive DeFi support. If you have used any DeFi protocols for lending, borrowing, swapping, providing liquidity, or yield farming, a free tool will likely misclassify or miss transactions entirely. This can lead to inaccurate tax reports that either overstate your gains or fail to capture taxable income. Paid tools invest significantly in DeFi transaction parsing and offer much better accuracy for on-chain activity.</p>
-        <h3 className="text-xl font-bold text-white mt-6 mb-3">Cost Basis Optimization</h3>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Cost Basis Optimization</h3>
         <p className="text-[var(--color-text-secondary)]">Most free tools default to FIFO cost basis and do not offer alternatives. Paid tools allow you to compare different methods like HIFO, LIFO, and specific identification. Choosing the optimal cost basis method can reduce your tax liability by thousands of dollars. This single feature alone often justifies the cost of paid software. Some paid tools let you preview your tax liability under each method before choosing, making the optimization process straightforward.</p>
       </section>
       <FAQSection faqs={faqs} />

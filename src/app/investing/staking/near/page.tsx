@@ -17,12 +17,18 @@ export default function StakeNearPage() {
       readTime="9 min"
       intro="NEAR Protocol staking offers token holders approximately 8-11% APY by delegating to validators who secure the sharded Nightshade network. With a user-friendly wallet experience and liquid staking options through Meta Pool, NEAR staking is accessible to both beginners and experienced crypto participants."
       toc={[
-        { id: "overview", title: "NEAR Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake NEAR Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking NEAR", level: 2 },
-        { id: "validators", title: "Validators & Staking Pools", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "near-staking-overview", title: "NEAR Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-near-step-by-step", title: "How to Stake NEAR Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-near", title: "Risks of Staking NEAR", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-staking-pools", title: "Validators & Staking Pools", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "What APY can I earn staking NEAR?", answer: "NEAR staking typically yields 8-11% APY depending on the validator chosen and their commission rate. The reward rate adjusts based on the total NEAR staked network-wide and the network's 5% annual inflation rate." },

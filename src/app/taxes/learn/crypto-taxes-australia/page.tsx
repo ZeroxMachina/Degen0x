@@ -18,12 +18,18 @@ export default function CryptoTaxesAustraliaPage() {
       readTime="11 min read"
       intro="The Australian Taxation Office (ATO) has been one of the most active regulators globally when it comes to crypto taxation. The ATO treats cryptocurrency as property and a CGT asset, meaning disposals trigger capital gains tax obligations. Australian investors benefit from a 50 percent CGT discount for assets held longer than 12 months, making long-term holding strategies particularly tax-efficient."
       toc={[
-        { id: "ato-classification", title: "How the ATO Classifies Crypto", level: 2 },
-        { id: "cgt-rules", title: "Capital Gains Tax & the 50% Discount", level: 2 },
-        { id: "personal-use", title: "Personal Use Asset Exemption", level: 2 },
-        { id: "income-events", title: "Crypto as Income", level: 2 },
-        { id: "reporting", title: "Reporting & myTax Integration", level: 2 },
-        { id: "tools", title: "ATO-Compatible Tax Software", level: 2 },
+        { id: "ato-classification", title: "ato-classification", level: 2 },
+        { id: "how-the-ato-classifies-crypto", title: "How the ATO Classifies Crypto", level: 2 },
+        { id: "cgt-rules", title: "cgt-rules", level: 2 },
+        { id: "capital-gains-tax-the-50-discount", title: "Capital Gains Tax & the 50% Discount", level: 2 },
+        { id: "personal-use", title: "personal-use", level: 2 },
+        { id: "personal-use-asset-exemption", title: "Personal Use Asset Exemption", level: 2 },
+        { id: "income-events", title: "income-events", level: 2 },
+        { id: "crypto-as-income", title: "Crypto as Income", level: 2 },
+        { id: "reporting", title: "reporting", level: 2 },
+        { id: "reporting-mytax-integration", title: "Reporting & myTax Integration", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "ato-compatible-tax-software", title: "ATO-Compatible Tax Software", level: 2 }
       ]}
       faqs={[
         { question: "Do I get a CGT discount on crypto in Australia?", answer: "Yes. If you hold cryptocurrency for more than 12 months before disposing, you receive a 50 percent discount on the capital gain. This means only half the gain is added to your taxable income, significantly reducing your tax liability for long-term holdings." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Loan Aggregators: Finding Best Rates (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Loan Aggregators: Finding Best Rates (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how crypto loan aggregators help you find the best lending and borrowing rates. Compare aggregator platforms and understand how they optimize your DeFi lending.",
 };
@@ -17,10 +17,14 @@ export default function LoanAggregatorsPage() {
       readTime="8 min read"
       intro="Crypto loan aggregators scan multiple lending protocols and platforms to find the best rates for borrowers and lenders. Rather than manually comparing rates across Aave, Compound, MakerDAO, and other protocols, aggregators automate the process, sometimes even splitting positions across multiple platforms for optimal returns. As the number of lending protocols grows across multiple chains, aggregators play an increasingly important role in helping users maximize capital efficiency."
       toc={[
-        { id: "what-are-aggregators", title: "What Are Loan Aggregators", level: 2 },
-        { id: "top-aggregators", title: "Top Loan Aggregators", level: 2 },
-        { id: "how-they-optimize", title: "How They Optimize Rates", level: 2 },
-        { id: "risks-tradeoffs", title: "Risks and Trade-offs", level: 2 },
+        { id: "what-are-aggregators", title: "what-are-aggregators", level: 2 },
+        { id: "what-are-loan-aggregators", title: "What Are Loan Aggregators", level: 2 },
+        { id: "top-aggregators", title: "top-aggregators", level: 2 },
+        { id: "top-loan-aggregators", title: "Top Loan Aggregators", level: 2 },
+        { id: "how-they-optimize", title: "how-they-optimize", level: 2 },
+        { id: "how-they-optimize-rates", title: "How They Optimize Rates", level: 2 },
+        { id: "risks-tradeoffs", title: "risks-tradeoffs", level: 2 },
+        { id: "risks-and-trade-offs", title: "Risks and Trade-offs", level: 2 }
       ]}
       faqs={[
         { question: "What is a crypto loan aggregator?", answer: "A crypto loan aggregator is a platform or protocol that compares lending and borrowing rates across multiple DeFi protocols and helps users find the best available rates. Some aggregators simply display comparisons, while others actively route funds to optimize returns or minimize borrowing costs." },

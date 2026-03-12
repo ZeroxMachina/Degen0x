@@ -12,11 +12,16 @@ export default function DefiRegulationOutlookPage() {
   return (
     <LearnPageLayout title="DeFi Regulation Outlook" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Decentralized Finance represents one of the most challenging regulatory puzzles in the crypto space. Permissionless protocols operating without traditional intermediaries do not fit neatly into existing regulatory frameworks designed for centralized entities. Regulators worldwide are grappling with how to address DeFi risks while preserving the innovation benefits of open financial infrastructure."
       toc={[
-        { id: "challenge", title: "The Regulatory Challenge", level: 2 },
+        { id: "challenge", title: "challenge", level: 2 },
+        { id: "the-regulatory-challenge", title: "The Regulatory Challenge", level: 2 },
+        { id: "current-approaches", title: "current-approaches", level: 2 },
         { id: "current-approaches", title: "Current Approaches", level: 2 },
-        { id: "key-issues", title: "Key Regulatory Issues", level: 2 },
-        { id: "compliance-tools", title: "Compliance Solutions", level: 2 },
-        { id: "outlook", title: "Future Outlook", level: 2 },
+        { id: "key-issues", title: "key-issues", level: 2 },
+        { id: "key-regulatory-issues", title: "Key Regulatory Issues", level: 2 },
+        { id: "compliance-tools", title: "compliance-tools", level: 2 },
+        { id: "compliance-solutions", title: "Compliance Solutions", level: 2 },
+        { id: "outlook", title: "outlook", level: 2 },
+        { id: "future-outlook", title: "Future Outlook", level: 2 }
       ]}
       faqs={[
         { question: "Can DeFi protocols be regulated?", answer: "Truly decentralized protocols with no identifiable operators or control points are difficult to regulate through traditional means. However, many DeFi protocols have identifiable teams, governance token holders, and front-end interfaces that can be regulatory touchpoints. The degree of decentralization matters significantly for regulatory treatment." },

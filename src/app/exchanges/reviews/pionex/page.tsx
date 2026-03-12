@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.05% maker/taker",
   bestFor: "Automated trading and passive strategy execution",
-  affiliateUrl: "https://cryptodegen.com/go/pionex",
+  affiliateUrl: "https://degen0x.com/go/pionex",
   category: "exchanges",
 };
 

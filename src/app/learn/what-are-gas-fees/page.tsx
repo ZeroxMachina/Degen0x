@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Are Gas Fees and How to Reduce Them (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Are Gas Fees and How to Reduce Them (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what gas fees are in crypto, how they are calculated on Ethereum and other blockchains, why they fluctuate, and practical strategies to minimize your transaction costs.",
 };
@@ -17,11 +17,16 @@ export default function WhatAreGasFeesPage() {
       readTime="8 min read"
       intro="Gas fees are the transaction costs paid to blockchain validators for processing and confirming your transactions. On Ethereum, gas fees are denominated in gwei (a fraction of ETH) and fluctuate based on network demand. High gas fees have been one of the biggest pain points for blockchain users, sometimes making small transactions uneconomical. Understanding how gas works and knowing strategies to reduce costs can save you significant money when interacting with decentralized applications."
       toc={[
+        { id: "what-is-gas", title: "what-is-gas", level: 2 },
         { id: "what-is-gas", title: "What Is Gas?", level: 2 },
-        { id: "how-calculated", title: "How Gas Fees Are Calculated", level: 2 },
-        { id: "why-fluctuate", title: "Why Gas Fees Fluctuate", level: 2 },
-        { id: "reduce-fees", title: "Strategies to Reduce Gas Fees", level: 2 },
-        { id: "other-chains", title: "Gas Fees on Other Blockchains", level: 2 },
+        { id: "how-calculated", title: "how-calculated", level: 2 },
+        { id: "how-gas-fees-are-calculated", title: "How Gas Fees Are Calculated", level: 2 },
+        { id: "why-fluctuate", title: "why-fluctuate", level: 2 },
+        { id: "why-gas-fees-fluctuate", title: "Why Gas Fees Fluctuate", level: 2 },
+        { id: "reduce-fees", title: "reduce-fees", level: 2 },
+        { id: "strategies-to-reduce-gas-fees", title: "Strategies to Reduce Gas Fees", level: 2 },
+        { id: "other-chains", title: "other-chains", level: 2 },
+        { id: "gas-fees-on-other-blockchains", title: "Gas Fees on Other Blockchains", level: 2 }
       ]}
       faqs={[
         {

@@ -16,10 +16,14 @@ export default function CryptoAccountingGuidePage() {
       readTime="10 min"
       intro="Cryptocurrency accounting requires tracking complex transactions across wallets, exchanges, DeFi protocols, and blockchains. Understanding crypto-specific challenges ensures accurate financial reporting."
       toc={[
-        { id: "section-1", title: "Accounting Challenges", level: 2 },
-        { id: "section-2", title: "Transaction Categorization", level: 2 },
-        { id: "section-3", title: "Tax Reporting", level: 2 },
-        { id: "section-4", title: "Tools and Processes", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "accounting-challenges", title: "Accounting Challenges", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "transaction-categorization", title: "Transaction Categorization", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "tax-reporting", title: "Tax Reporting", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "tools-and-processes", title: "Tools and Processes", level: 2 }
       ]}
       faqs={[
         { question: "How do I account for crypto transactions?", answer: "Track all transactions including buys, sells, swaps, transfers, staking rewards, and DeFi interactions. Record fair market value in fiat at the time of each transaction. Use FIFO, LIFO, or specific identification for cost basis calculation as permitted by your jurisdiction." },

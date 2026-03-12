@@ -18,12 +18,18 @@ export default function DefiInsuranceGuidePage() {
       readTime="10 min read"
       intro="DeFi insurance provides financial protection against smart contract exploits, protocol failures, and other covered events. As billions continue to be lost to DeFi hacks, insurance has evolved from a niche product to an essential risk management tool for serious DeFi participants. This guide explains how to evaluate, purchase, and manage DeFi insurance to protect your positions."
       toc={[
-        { id: "why-insure", title: "Why Insure Your DeFi Positions?", level: 2 },
-        { id: "coverage-types", title: "Types of DeFi Coverage", level: 2 },
-        { id: "protocols", title: "Major Insurance Protocols", level: 2 },
-        { id: "cost-benefit", title: "Cost-Benefit Analysis", level: 2 },
-        { id: "how-to-buy", title: "How to Buy DeFi Insurance", level: 2 },
-        { id: "claims", title: "Making a Claim", level: 2 },
+        { id: "why-insure", title: "why-insure", level: 2 },
+        { id: "why-insure-your-defi-positions", title: "Why Insure Your DeFi Positions?", level: 2 },
+        { id: "coverage-types", title: "coverage-types", level: 2 },
+        { id: "types-of-defi-coverage", title: "Types of DeFi Coverage", level: 2 },
+        { id: "protocols", title: "protocols", level: 2 },
+        { id: "major-insurance-protocols", title: "Major Insurance Protocols", level: 2 },
+        { id: "cost-benefit", title: "cost-benefit", level: 2 },
+        { id: "cost-benefit-analysis", title: "Cost-Benefit Analysis", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-defi-insurance", title: "How to Buy DeFi Insurance", level: 2 },
+        { id: "claims", title: "claims", level: 2 },
+        { id: "making-a-claim", title: "Making a Claim", level: 2 }
       ]}
       faqs={[
         { question: "Is DeFi insurance worth it?", answer: "For large positions (over $10,000), the 2-6% annual cost is often worth the protection against a potential total loss. For smaller positions, the cost may exceed the expected value of protection. Consider it mandatory for six-figure or larger DeFi positions." },

@@ -24,13 +24,20 @@ export default function HowToBuyCryptoUKPage() {
       readTime="12 min"
       intro="Buying cryptocurrency in the United Kingdom is straightforward thanks to a well-developed financial infrastructure and clear regulatory framework. UK residents benefit from instant GBP deposits via Faster Payments, FCA-registered exchanges, and established HMRC tax guidelines. This guide walks you through every step from choosing an exchange to securing your first crypto purchase."
       toc={[
-        { id: "choose-exchange", title: "Choosing an FCA-Registered Exchange", level: 2 },
-        { id: "verification", title: "Account Verification for UK Users", level: 2 },
-        { id: "deposit-gbp", title: "Depositing GBP: Faster Payments and More", level: 2 },
-        { id: "first-purchase", title: "Making Your First Purchase", level: 2 },
-        { id: "uk-taxes", title: "HMRC Crypto Tax Rules", level: 2 },
-        { id: "fca-rules", title: "FCA Crypto Promotion Rules", level: 2 },
-        { id: "security", title: "Securing Your Crypto in the UK", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "choosing-an-fca-registered-exchange", title: "Choosing an FCA-Registered Exchange", level: 2 },
+        { id: "verification", title: "verification", level: 2 },
+        { id: "account-verification-for-uk-users", title: "Account Verification for UK Users", level: 2 },
+        { id: "deposit-gbp", title: "deposit-gbp", level: 2 },
+        { id: "depositing-gbp-faster-payments-and-more", title: "Depositing GBP: Faster Payments and More", level: 2 },
+        { id: "first-purchase", title: "first-purchase", level: 2 },
+        { id: "making-your-first-purchase", title: "Making Your First Purchase", level: 2 },
+        { id: "uk-taxes", title: "uk-taxes", level: 2 },
+        { id: "hmrc-crypto-tax-rules", title: "HMRC Crypto Tax Rules", level: 2 },
+        { id: "fca-rules", title: "fca-rules", level: 2 },
+        { id: "fca-crypto-promotion-rules", title: "FCA Crypto Promotion Rules", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "securing-your-crypto-in-the-uk", title: "Securing Your Crypto in the UK", level: 2 }
       ]}
       faqs={[
         {

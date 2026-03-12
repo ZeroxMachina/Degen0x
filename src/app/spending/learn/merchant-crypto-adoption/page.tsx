@@ -17,11 +17,16 @@ export default function MerchantCryptoAdoptionPage() {
       readTime="10 min"
       intro="More merchants are accepting cryptocurrency as payment infrastructure matures and consumer demand grows. This guide covers everything businesses need to know about accepting crypto, from payment processor selection to tax compliance and customer experience optimization."
       toc={[
-        { id: "why-accept", title: "Why Accept Crypto Payments", level: 2 },
+        { id: "why-accept", title: "why-accept", level: 2 },
+        { id: "why-accept-crypto-payments", title: "Why Accept Crypto Payments", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
         { id: "getting-started", title: "Getting Started", level: 2 },
-        { id: "payment-processors", title: "Choosing a Payment Processor", level: 2 },
-        { id: "implementation", title: "Implementation Guide", level: 2 },
-        { id: "compliance", title: "Tax and Compliance", level: 2 },
+        { id: "payment-processors", title: "payment-processors", level: 2 },
+        { id: "choosing-a-payment-processor", title: "Choosing a Payment Processor", level: 2 },
+        { id: "implementation", title: "implementation", level: 2 },
+        { id: "implementation-guide", title: "Implementation Guide", level: 2 },
+        { id: "compliance", title: "compliance", level: 2 },
+        { id: "tax-and-compliance", title: "Tax and Compliance", level: 2 }
       ]}
       faqs={[
         { question: "Is it expensive to start accepting crypto?", answer: "Most crypto payment processors have no setup fees and charge 0.5-1% per transaction, which is cheaper than credit card processing at 2.5-3.5%. The main cost is the time to integrate the payment option." },

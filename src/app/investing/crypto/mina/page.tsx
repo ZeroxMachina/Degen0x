@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Mina Protocol (MINA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Mina Protocol (MINA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Mina Protocol (MINA), the world's lightest blockchain using zero-knowledge proofs. Discover how it works, tokenomics, use cases, and how to buy MINA.",
 };
@@ -17,12 +17,18 @@ export default function MinaPage() {
       readTime="8 min read"
       intro="Mina Protocol is the world's lightest blockchain, maintaining a constant size of approximately 22 KB regardless of how many transactions have been processed. Using recursive zero-knowledge proofs (zk-SNARKs), Mina enables anyone to verify the entire blockchain state from a phone, making it the most accessible and decentralized blockchain by design."
       toc={[
-        { id: "what-is", title: "What Is Mina Protocol?", level: 2 },
-        { id: "how-it-works", title: "How Does Mina Work?", level: 2 },
-        { id: "tokenomics", title: "MINA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MINA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-mina-protocol", title: "What Is Mina Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-mina-work", title: "How Does Mina Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mina-tokenomics", title: "MINA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mina", title: "How to Buy MINA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Setting Up a Wallet for DeFi (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Setting Up a Wallet for DeFi (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to set up and configure your crypto wallet for DeFi participation. Cover network setup, dApp connections, gas management, and security practices.",
 };
 
@@ -11,7 +11,16 @@ export default function DefiWalletSetupPage() {
   return (
     <LearnPageLayout title="Setting Up a Wallet for DeFi" categoryName="Crypto Wallets" categorySlug="wallets" readTime="9 min read"
       intro="Participating in DeFi requires more than just a basic wallet setup. You need to configure multiple networks, understand gas management, connect safely to dApps, and implement security practices that protect you from the unique risks of decentralized finance. This guide walks you through everything you need to set up a wallet optimized for DeFi, from choosing the right wallet software to configuring it for the protocols you want to use."
-      toc={[{ id: "choosing-defi-wallet", title: "Choosing a DeFi Wallet", level: 2 }, { id: "network-configuration", title: "Network Configuration", level: 2 }, { id: "connecting-to-dapps", title: "Connecting to dApps", level: 2 }, { id: "defi-security-setup", title: "DeFi Security Setup", level: 2 }]}
+      toc={[
+        { id: "choosing-defi-wallet", title: "choosing-defi-wallet", level: 2 },
+        { id: "choosing-a-defi-wallet", title: "Choosing a DeFi Wallet", level: 2 },
+        { id: "network-configuration", title: "network-configuration", level: 2 },
+        { id: "network-configuration", title: "Network Configuration", level: 2 },
+        { id: "connecting-to-dapps", title: "connecting-to-dapps", level: 2 },
+        { id: "connecting-to-dapps", title: "Connecting to dApps", level: 2 },
+        { id: "defi-security-setup", title: "defi-security-setup", level: 2 },
+        { id: "defi-security-setup", title: "DeFi Security Setup", level: 2 }
+      ]}
       faqs={[{ question: "Do I need different wallets for different DeFi protocols?", answer: "No, one wallet can connect to multiple DeFi protocols on the same chain. However, using separate wallets for different risk levels is a best practice. Keep a main wallet for established protocols like Aave and Uniswap, and use a separate burner wallet for testing new or unaudited protocols. This limits your exposure if a new protocol turns out to be malicious." },
         { question: "How do I add a new network to my wallet?", answer: "For MetaMask, go to Settings > Networks > Add Network. Use Chainlist.org to find correct RPC details and add networks with one click. For Rabby, networks are auto-detected when you visit a dApp. Always verify RPC endpoints against official documentation. Malicious RPC endpoints can show incorrect balances or redirect transactions. Chainlist.org is a trusted source for network configuration details." },
         { question: "How much ETH do I need for gas to start DeFi?", answer: "On Ethereum mainnet, keep at least 0.05-0.1 ETH for gas. A single DeFi transaction costs $2-50 depending on complexity and network congestion. On L2s like Arbitrum or Base, $5-10 worth of ETH covers hundreds of transactions. Start with L2s to minimize costs while learning. You can always bridge more ETH from mainnet or buy directly on L2s through exchanges." }]}

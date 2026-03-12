@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Band Protocol (BAND)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Band Protocol (BAND)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Band Protocol (BAND), the cross-chain oracle platform. Discover how it works, tokenomics, use cases, and how to buy BAND.",
 };
@@ -17,12 +17,18 @@ export default function BandProtocolPage() {
       readTime="8 min read"
       intro="Band Protocol is a cross-chain oracle platform built on the Cosmos SDK that provides reliable, tamper-proof data feeds to smart contracts across multiple blockchain networks. Operating as a sovereign appchain with its own validator set, Band Protocol offers decentralized oracle services for price feeds, random number generation, and real-world data delivery to DeFi and other Web3 applications."
       toc={[
-        { id: "what-is", title: "What Is Band Protocol?", level: 2 },
-        { id: "how-it-works", title: "How Does Band Protocol Work?", level: 2 },
-        { id: "tokenomics", title: "BAND Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy BAND", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-band-protocol", title: "What Is Band Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-band-protocol-work", title: "How Does Band Protocol Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "band-tokenomics", title: "BAND Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-band", title: "How to Buy BAND", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

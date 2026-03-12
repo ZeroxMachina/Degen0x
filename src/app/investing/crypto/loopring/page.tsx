@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Loopring (LRC)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Loopring (LRC)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Loopring (LRC), the zkRollup Layer 2 protocol for trading and payments. Discover how it works, tokenomics, use cases, and how to buy LRC.",
 };
@@ -17,12 +17,18 @@ export default function LoopringPage() {
       readTime="8 min read"
       intro="Loopring is an Ethereum Layer 2 zkRollup protocol focused on decentralized trading and payments. As one of the earliest ZK rollup implementations, Loopring provides a high-throughput order book and AMM exchange with Ethereum-level security at a fraction of the gas cost. The protocol gained widespread attention through its partnership with GameStop for their NFT marketplace."
       toc={[
-        { id: "what-is", title: "What Is Loopring?", level: 2 },
-        { id: "how-it-works", title: "How Does Loopring Work?", level: 2 },
-        { id: "tokenomics", title: "LRC Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy LRC", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-loopring", title: "What Is Loopring?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-loopring-work", title: "How Does Loopring Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "lrc-tokenomics", title: "LRC Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-lrc", title: "How to Buy LRC", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

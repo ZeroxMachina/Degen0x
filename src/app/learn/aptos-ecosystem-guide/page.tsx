@@ -12,10 +12,14 @@ export default function AptosEcosystemGuidePage() {
   return (
     <LearnPageLayout title="Aptos Ecosystem Guide" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Aptos is a Layer 1 blockchain built by former Meta engineers using the Move programming language. With its parallel execution engine (Block-STM), Aptos achieves high throughput while maintaining safety guarantees. The ecosystem is growing across DeFi, gaming, and social applications with strong institutional backing and developer tooling."
       toc={[
-        { id: "overview", title: "Aptos Overview", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "aptos-overview", title: "Aptos Overview", level: 2 },
+        { id: "technology", title: "technology", level: 2 },
         { id: "technology", title: "Technology", level: 2 },
-        { id: "ecosystem", title: "Key Applications", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
+        { id: "key-applications", title: "Key Applications", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "How does Aptos differ from Sui?", answer: "Both use Move but implement it differently. Aptos uses an account-based model while Sui uses an object-centric model. Aptos focuses on the Block-STM parallel execution engine for high throughput. The ecosystems have different DeFi protocols and developer communities despite sharing the Move language." },

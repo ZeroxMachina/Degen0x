@@ -16,10 +16,14 @@ export default function Web3LegalConsiderationsPage() {
       readTime="10 min"
       intro="Legal considerations for Web3 businesses span securities regulation, data privacy, intellectual property, and cross-jurisdictional compliance. Navigating this landscape requires regulatory understanding."
       toc={[
-        { id: "section-1", title: "Regulatory Landscape", level: 2 },
-        { id: "section-2", title: "Securities and Token Law", level: 2 },
-        { id: "section-3", title: "Data Privacy and IP", level: 2 },
-        { id: "section-4", title: "Compliance Framework", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "regulatory-landscape", title: "Regulatory Landscape", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "securities-and-token-law", title: "Securities and Token Law", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "data-privacy-and-ip", title: "Data Privacy and IP", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "compliance-framework", title: "Compliance Framework", level: 2 }
       ]}
       faqs={[
         { question: "Do Web3 businesses need legal counsel?", answer: "Absolutely. Web3 businesses operate at the intersection of technology, finance, and evolving regulation. Experienced crypto-legal counsel helps navigate securities law, entity structuring, compliance requirements, and cross-border regulatory issues that are unique to this industry." },

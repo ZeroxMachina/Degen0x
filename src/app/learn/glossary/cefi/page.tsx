@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is CeFi? Centralized Finance Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is CeFi? Centralized Finance Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what CeFi (Centralized Finance) is, how it differs from DeFi, its advantages and risks, and the role centralized platforms play in the crypto ecosystem.",
 };
@@ -17,11 +17,16 @@ export default function CefiPage() {
       readTime="5 min"
       intro="CeFi (Centralized Finance) refers to cryptocurrency financial services provided by centralized companies that act as intermediaries. This includes centralized exchanges, lending platforms, and custodial services. CeFi offers familiar user experiences and customer support but requires trusting a third party with your assets, which introduces counterparty risk."
       toc={[
-        { id: "definition", title: "What Is CeFi?", level: 2 },
-        { id: "how-it-works", title: "How CeFi Works", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-cefi", title: "What Is CeFi?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-cefi-works", title: "How CeFi Works", level: 2 },
+        { id: "cefi-vs-defi", title: "cefi-vs-defi", level: 2 },
         { id: "cefi-vs-defi", title: "CeFi vs DeFi", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "risks", title: "CeFi Risks", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "cefi-risks", title: "CeFi Risks", level: 2 }
       ]}
       faqs={[
         {

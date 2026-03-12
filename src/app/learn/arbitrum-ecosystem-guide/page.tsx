@@ -17,12 +17,18 @@ export default function ArbitrumEcosystemGuidePage() {
       readTime="10 min"
       intro="Arbitrum is the largest Ethereum Layer 2 by total value locked, processing more transactions than Ethereum itself while offering dramatically lower fees. Built as an optimistic rollup, Arbitrum inherits Ethereum's security while providing a fast, affordable environment for DeFi, gaming, and social applications."
       toc={[
-        { id: "overview", title: "Arbitrum Overview", level: 2 },
-        { id: "technology", title: "Technology and Architecture", level: 2 },
-        { id: "defi", title: "DeFi Ecosystem", level: 2 },
-        { id: "nfts-gaming", title: "NFTs and Gaming", level: 2 },
-        { id: "arb-token", title: "The ARB Token", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "arbitrum-overview", title: "Arbitrum Overview", level: 2 },
+        { id: "technology", title: "technology", level: 2 },
+        { id: "technology-and-architecture", title: "Technology and Architecture", level: 2 },
+        { id: "defi", title: "defi", level: 2 },
+        { id: "defi-ecosystem", title: "DeFi Ecosystem", level: 2 },
+        { id: "nfts-gaming", title: "nfts-gaming", level: 2 },
+        { id: "nfts-and-gaming", title: "NFTs and Gaming", level: 2 },
+        { id: "arb-token", title: "arb-token", level: 2 },
+        { id: "the-arb-token", title: "The ARB Token", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "How do I bridge to Arbitrum?", answer: "You can bridge from Ethereum using the official Arbitrum Bridge or faster third-party bridges like Across or Hop. Many centralized exchanges also support direct withdrawals to Arbitrum, which is the simplest onramp." },

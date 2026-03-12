@@ -28,7 +28,7 @@ export default function ArbitrumPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">How to Invest in Arbitrum (ARB) in {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">How to Invest in Arbitrum (ARB) in {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Arbitrum is the leading Ethereum Layer 2 rollup by TVL, powering the largest L2 DeFi
           ecosystem with fast, cheap Ethereum transactions.
@@ -37,17 +37,17 @@ export default function ArbitrumPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">{token.ticker}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">{token.launchYear}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">{token.maxSupply}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">{token.consensus}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.ticker}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.launchYear}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.maxSupply}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.consensus}</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Arbitrum?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Arbitrum?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Built by Offchain Labs, Arbitrum is an optimistic rollup that batches transactions
           and posts compressed data to Ethereum mainnet. It is fully EVM-compatible, meaning
@@ -64,7 +64,7 @@ export default function ArbitrumPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)]">
           ARB is currently a governance-only token without direct fee sharing, meaning its value
           does not directly capture the network's revenue. The sequencer remains centralized,

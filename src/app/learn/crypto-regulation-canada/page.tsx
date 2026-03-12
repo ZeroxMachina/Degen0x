@@ -25,13 +25,8 @@ export default function CryptoRegulationCanadaPage() {
       readTime="14 min"
       intro="Canada has established itself as a progressive yet regulated jurisdiction for cryptocurrency. The Canadian Securities Administrators (CSA) oversee crypto trading platforms as securities dealers, while FINTRAC enforces anti-money-laundering requirements. Canada was the first country to approve a spot Bitcoin ETF in 2021, ahead of the United States by nearly three years. This guide covers the full Canadian crypto regulatory framework, including federal and provincial rules, compliance requirements, and what it means for Canadian crypto users."
       toc={[
-        { id: "regulatory-framework", title: "Canada's Regulatory Framework", level: 2 },
-        { id: "csa-oversight", title: "CSA and Securities Regulation", level: 2 },
-        { id: "fintrac", title: "FINTRAC and AML Requirements", level: 2 },
-        { id: "registered-platforms", title: "Registered Crypto Trading Platforms", level: 2 },
-        { id: "bitcoin-etf", title: "Bitcoin and Crypto ETFs in Canada", level: 2 },
-        { id: "tax-cra", title: "CRA Tax Treatment", level: 2 },
-        { id: "future-outlook", title: "Future Regulatory Outlook", level: 2 },
+        { id: "regulatory-framework", title: "regulatory-framework", level: 2 },
+        { id: "canada", title: "Canada", level: 2 }
       ]}
       faqs={[
         {
@@ -58,12 +53,12 @@ export default function CryptoRegulationCanadaPage() {
           question: "What was Canada's role in Bitcoin ETF history?",
           answer:
             "Canada approved the world's first spot Bitcoin ETF, the Purpose Bitcoin ETF (BTCC), in February 2021, nearly three years before the US approved similar products. Canada also approved Ethereum ETFs ahead of the US. This early adoption gave Canadian investors regulated crypto exposure through traditional brokerage accounts well ahead of most other jurisdictions.",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "How to Buy Crypto in Canada", href: "/exchanges/learn/how-to-buy-crypto-canada", category: "Exchanges" },
         { title: "US Crypto Regulation", href: "/learn/crypto-regulation-usa", category: "Learn" },
-        { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation", category: "Learn" },
+        { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation", category: "Learn" }
       ]}
     >
       <h2 id="regulatory-framework">Canada&apos;s Regulatory Framework</h2>

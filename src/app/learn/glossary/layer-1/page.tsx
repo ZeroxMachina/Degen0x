@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Layer 1? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Layer 1? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what Layer 1 blockchains are, how they differ from Layer 2 solutions, and why they form the foundation of the crypto ecosystem.",
 };
@@ -17,11 +17,16 @@ export default function Layer1Page() {
       readTime="5 min"
       intro="Layer 1 (L1) refers to the base blockchain network itself — the foundational layer that processes and finalizes transactions without relying on any other network. Bitcoin, Ethereum, Solana, and Avalanche are all Layer 1 blockchains. L1s define the core rules for consensus, security, and data availability. They are the settlement layer upon which Layer 2 solutions and applications are built."
       toc={[
-        { id: "definition", title: "What Is Layer 1?", level: 2 },
-        { id: "examples", title: "Major Layer 1 Blockchains", level: 2 },
-        { id: "l1-vs-l2", title: "Layer 1 vs Layer 2", level: 2 },
-        { id: "scalability-trilemma", title: "The Scalability Trilemma", level: 2 },
-        { id: "why-it-matters", title: "Why Layer 1 Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-layer-1", title: "What Is Layer 1?", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "major-layer-1-blockchains", title: "Major Layer 1 Blockchains", level: 2 },
+        { id: "l1-vs-l2", title: "l1-vs-l2", level: 2 },
+        { id: "layer-1-vs-layer-2", title: "Layer 1 vs Layer 2", level: 2 },
+        { id: "scalability-trilemma", title: "scalability-trilemma", level: 2 },
+        { id: "the-scalability-trilemma", title: "The Scalability Trilemma", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-layer-1-matters", title: "Why Layer 1 Matters", level: 2 }
       ]}
       faqs={[
         {

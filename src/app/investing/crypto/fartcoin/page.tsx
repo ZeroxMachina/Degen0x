@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Fartcoin (FARTCOIN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Fartcoin (FARTCOIN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Fartcoin (FARTCOIN), the viral meme coin on Solana. Discover how it works, tokenomics, use cases, and how to buy FARTCOIN.",
 };
 
 export default function FartcoinPage() {
   return (
-    <LearnPageLayout title="What Is Fartcoin (FARTCOIN)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Fartcoin (FARTCOIN) is a meme coin on Solana that achieved viral status through its irreverent branding and strong community engagement. Despite its humorous name, the token reached a significant market capitalization and became one of the standout meme coins of the cycle, demonstrating that humor and community can drive massive market value in crypto." toc={[{id:"what-is",title:"What Is Fartcoin?",level:2},{id:"how-it-works",title:"How Does Fartcoin Work?",level:2},{id:"tokenomics",title:"FARTCOIN Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy FARTCOIN",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Fartcoin?",answer:"Fartcoin is a Solana-based meme coin that went viral due to its humorous branding. It has a dedicated community and reached a substantial market cap despite having no traditional utility."},{question:"Where can I buy FARTCOIN?",answer:"FARTCOIN is available on Solana DEXes like Jupiter and Raydium, and has been listed on various centralized exchanges."},{question:"Is Fartcoin a good investment?",answer:"Fartcoin is a speculative meme coin driven entirely by community sentiment and social media hype. It has no underlying utility or revenue model. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Fartcoin (FARTCOIN)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Fartcoin (FARTCOIN) is a meme coin on Solana that achieved viral status through its irreverent branding and strong community engagement. Despite its humorous name, the token reached a significant market capitalization and became one of the standout meme coins of the cycle, demonstrating that humor and community can drive massive market value in crypto." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-fartcoin", title: "What Is Fartcoin?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-fartcoin-work", title: "How Does Fartcoin Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "fartcoin-tokenomics", title: "FARTCOIN Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-fartcoin", title: "How to Buy FARTCOIN", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Fartcoin?",answer:"Fartcoin is a Solana-based meme coin that went viral due to its humorous branding. It has a dedicated community and reached a substantial market cap despite having no traditional utility."},{question:"Where can I buy FARTCOIN?",answer:"FARTCOIN is available on Solana DEXes like Jupiter and Raydium, and has been listed on various centralized exchanges."},{question:"Is Fartcoin a good investment?",answer:"Fartcoin is a speculative meme coin driven entirely by community sentiment and social media hype. It has no underlying utility or revenue model. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
       <h2 id="what-is">What Is Fartcoin?</h2>
       <p>Fartcoin is a Solana-based meme coin that embodies the absurdist humor of crypto culture. Launched through Solana's meme coin ecosystem, it gained traction through viral social media moments and a highly engaged community. The token's success illustrates how meme coins can capture market attention through humor and community building rather than traditional utility or technology.</p>
       <p>The project has cultivated a loyal following that actively promotes the token across social media platforms, contributing to sustained trading volume and cultural relevance within the crypto meme coin ecosystem.</p>

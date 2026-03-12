@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Validator Slashing Insurance (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Validator Slashing Insurance (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about validator slashing insurance for Ethereum stakers. Protect your staked ETH against slashing penalties from validator misbehavior or downtime.",
 };
 
@@ -11,7 +11,16 @@ export default function ValidatorSlashingInsurancePage() {
   return (
     <LearnPageLayout title="Validator Slashing Insurance" categoryName="Crypto Insurance" categorySlug="insurance" readTime="7 min read"
       intro="Ethereum validators face slashing penalties if they misbehave or fail to perform their duties correctly. For solo stakers and liquid staking protocol users, slashing represents a real risk to staked ETH. Slashing insurance products protect stakers against these penalties, providing a safety net for what is otherwise an unavoidable risk of proof-of-stake participation."
-      toc={[{ id: "what-is-slashing", title: "What Is Validator Slashing?", level: 2 }, { id: "insurance-options", title: "Slashing Insurance Options", level: 2 }, { id: "lsd-protection", title: "Liquid Staking Protocol Protection", level: 2 }, { id: "risk-assessment", title: "Assessing Slashing Risk", level: 2 }]}
+      toc={[
+        { id: "what-is-slashing", title: "what-is-slashing", level: 2 },
+        { id: "what-is-validator-slashing", title: "What Is Validator Slashing?", level: 2 },
+        { id: "insurance-options", title: "insurance-options", level: 2 },
+        { id: "slashing-insurance-options", title: "Slashing Insurance Options", level: 2 },
+        { id: "lsd-protection", title: "lsd-protection", level: 2 },
+        { id: "liquid-staking-protocol-protection", title: "Liquid Staking Protocol Protection", level: 2 },
+        { id: "risk-assessment", title: "risk-assessment", level: 2 },
+        { id: "assessing-slashing-risk", title: "Assessing Slashing Risk", level: 2 }
+      ]}
       faqs={[
         { question: "What causes slashing?", answer: "Slashing occurs when a validator commits an offense: double signing (proposing two blocks for the same slot), surround voting (attestation contradictions), or extended inactivity. The penalty ranges from a small fraction to the full 32 ETH stake depending on the offense severity and how many other validators are slashed simultaneously." },
         { question: "How likely is slashing?", answer: "Slashing is relatively rare. Since the Ethereum Beacon Chain launch, only a few hundred validators have been slashed out of hundreds of thousands. Most slashing events result from technical misconfiguration rather than intentional misbehavior. Running redundant validator setups (which can cause double signing) is the most common cause." },

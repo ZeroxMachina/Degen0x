@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Loan Risks Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Loan Risks Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Complete guide to crypto loan risks including liquidation, smart contract vulnerabilities, counterparty risk, and strategies to protect your collateral.",
 };
 
@@ -16,10 +16,14 @@ export default function LoanRisksGuidePage() {
       readTime="11 min read"
       intro="Crypto loans offer powerful financial flexibility, but they come with significant risks that every borrower must understand. From liquidation to platform failure, this guide covers every major risk category and provides actionable strategies to protect your collateral and minimize potential losses."
       toc={[
+        { id: "liquidation-risk", title: "liquidation-risk", level: 2 },
         { id: "liquidation-risk", title: "Liquidation Risk", level: 2 },
-        { id: "platform-risk", title: "Platform and Smart Contract Risk", level: 2 },
-        { id: "interest-rate-risk", title: "Interest Rate and Market Risk", level: 2 },
-        { id: "mitigation", title: "Risk Mitigation Strategies", level: 2 },
+        { id: "platform-risk", title: "platform-risk", level: 2 },
+        { id: "platform-and-smart-contract-risk", title: "Platform and Smart Contract Risk", level: 2 },
+        { id: "interest-rate-risk", title: "interest-rate-risk", level: 2 },
+        { id: "interest-rate-and-market-risk", title: "Interest Rate and Market Risk", level: 2 },
+        { id: "mitigation", title: "mitigation", level: 2 },
+        { id: "risk-mitigation-strategies", title: "Risk Mitigation Strategies", level: 2 }
       ]}
       faqs={[
         { question: "What is the biggest risk with crypto loans?", answer: "Liquidation risk is the most immediate threat. If your collateral value drops below the liquidation threshold, your assets are sold automatically, often at a penalty. In volatile markets, this can happen very quickly with no warning." },

@@ -17,13 +17,20 @@ export default function ValidatorGuidePage() {
       readTime="15 min"
       intro="Running your own staking validator is the most decentralized and potentially most profitable way to participate in proof-of-stake networks. This guide covers everything from hardware requirements and initial setup to ongoing maintenance and profitability analysis. Whether you are considering solo staking on Ethereum or running a Solana validator, this guide provides the knowledge you need."
       toc={[
-        { id: "why-run-validator", title: "Why Run Your Own Validator?", level: 2 },
-        { id: "eth-requirements", title: "Ethereum Validator Requirements", level: 2 },
-        { id: "sol-requirements", title: "Solana Validator Requirements", level: 2 },
-        { id: "setup-process", title: "Setup Process Overview", level: 2 },
-        { id: "profitability", title: "Profitability Analysis", level: 2 },
-        { id: "maintenance", title: "Ongoing Maintenance", level: 2 },
-        { id: "alternatives", title: "Alternatives to Solo Validation", level: 2 },
+        { id: "why-run-validator", title: "why-run-validator", level: 2 },
+        { id: "why-run-your-own-validator", title: "Why Run Your Own Validator?", level: 2 },
+        { id: "eth-requirements", title: "eth-requirements", level: 2 },
+        { id: "ethereum-validator-requirements", title: "Ethereum Validator Requirements", level: 2 },
+        { id: "sol-requirements", title: "sol-requirements", level: 2 },
+        { id: "solana-validator-requirements", title: "Solana Validator Requirements", level: 2 },
+        { id: "setup-process", title: "setup-process", level: 2 },
+        { id: "setup-process-overview", title: "Setup Process Overview", level: 2 },
+        { id: "profitability", title: "profitability", level: 2 },
+        { id: "profitability-analysis", title: "Profitability Analysis", level: 2 },
+        { id: "maintenance", title: "maintenance", level: 2 },
+        { id: "ongoing-maintenance", title: "Ongoing Maintenance", level: 2 },
+        { id: "alternatives", title: "alternatives", level: 2 },
+        { id: "alternatives-to-solo-validation", title: "Alternatives to Solo Validation", level: 2 }
       ]}
       faqs={[
         {

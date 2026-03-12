@@ -17,13 +17,20 @@ export default function OrderTypesExplainedPage() {
       readTime="10 min"
       intro="Understanding order types is fundamental to effective crypto trading. Using the right order type can save you money on fees, protect you from losses, and ensure you enter and exit positions at the prices you want. This guide explains every major order type available on crypto exchanges."
       toc={[
+        { id: "market-orders", title: "market-orders", level: 2 },
         { id: "market-orders", title: "Market Orders", level: 2 },
+        { id: "limit-orders", title: "limit-orders", level: 2 },
         { id: "limit-orders", title: "Limit Orders", level: 2 },
-        { id: "stop-loss", title: "Stop-Loss Orders", level: 2 },
-        { id: "stop-limit", title: "Stop-Limit Orders", level: 2 },
-        { id: "oco-orders", title: "OCO (One-Cancels-Other) Orders", level: 2 },
-        { id: "trailing-stop", title: "Trailing Stop Orders", level: 2 },
-        { id: "advanced-orders", title: "Advanced Order Types", level: 2 },
+        { id: "stop-loss", title: "stop-loss", level: 2 },
+        { id: "stop-loss-orders", title: "Stop-Loss Orders", level: 2 },
+        { id: "stop-limit", title: "stop-limit", level: 2 },
+        { id: "stop-limit-orders", title: "Stop-Limit Orders", level: 2 },
+        { id: "oco-orders", title: "oco-orders", level: 2 },
+        { id: "oco-one-cancels-other-orders", title: "OCO (One-Cancels-Other) Orders", level: 2 },
+        { id: "trailing-stop", title: "trailing-stop", level: 2 },
+        { id: "trailing-stop-orders", title: "Trailing Stop Orders", level: 2 },
+        { id: "advanced-orders", title: "advanced-orders", level: 2 },
+        { id: "advanced-order-types", title: "Advanced Order Types", level: 2 }
       ]}
       faqs={[
         { question: "Should I use market or limit orders?", answer: "Limit orders are generally preferred because they give you price control and usually incur lower fees (maker vs taker). Use market orders only when you need immediate execution and are willing to pay a slightly worse price." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DeFi Yield Insurance: Protecting Your Returns (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DeFi Yield Insurance: Protecting Your Returns (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about DeFi yield insurance. Protect against yield drops, smart contract risks, and protocol failures that could affect your lending returns.",
 };
 
@@ -11,7 +11,16 @@ export default function YieldInsurancePage() {
   return (
     <LearnPageLayout title="DeFi Yield Insurance: Protecting Your Returns" categoryName="Crypto Insurance" categorySlug="insurance" readTime="8 min read"
       intro="DeFi yield insurance protects lenders and yield farmers against losses from smart contract exploits, protocol failures, and dramatic yield drops. As DeFi lending becomes a significant income source for many investors, protecting that income stream against downside risks becomes increasingly important. Several protocols offer coverage products designed specifically for yield-generating activities."
-      toc={[{ id: "what-is-covered", title: "What Yield Insurance Covers", level: 2 }, { id: "providers", title: "Yield Insurance Providers", level: 2 }, { id: "cost-benefit", title: "Cost-Benefit Analysis", level: 2 }, { id: "alternatives", title: "Alternatives to Insurance", level: 2 }]}
+      toc={[
+        { id: "what-is-covered", title: "what-is-covered", level: 2 },
+        { id: "what-yield-insurance-covers", title: "What Yield Insurance Covers", level: 2 },
+        { id: "providers", title: "providers", level: 2 },
+        { id: "yield-insurance-providers", title: "Yield Insurance Providers", level: 2 },
+        { id: "cost-benefit", title: "cost-benefit", level: 2 },
+        { id: "cost-benefit-analysis", title: "Cost-Benefit Analysis", level: 2 },
+        { id: "alternatives", title: "alternatives", level: 2 },
+        { id: "alternatives-to-insurance", title: "Alternatives to Insurance", level: 2 }
+      ]}
       faqs={[
         { question: "What does yield insurance cover?", answer: "Yield insurance typically covers smart contract exploits that result in fund loss, protocol economic failures, and sometimes significant yield reduction. Coverage varies by provider and policy. It generally does not cover market-driven yield drops caused by normal supply-demand dynamics." },
         { question: "How much does yield insurance cost?", answer: "Coverage costs typically range from 2-6% of the covered amount annually. The cost depends on the protocol being covered, the coverage amount, and market conditions. Higher-risk protocols command higher premiums. The cost directly reduces your net yield." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Copy Trading: How It Works (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Copy Trading: How It Works (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how copy trading works on crypto exchanges. Platforms, strategies, risks, fees, and how to choose the right traders to follow.",
 };
 
@@ -16,13 +16,20 @@ export default function CopyTradingGuide() {
       readTime="9 min read"
       intro="Copy trading lets you automatically replicate the trades of experienced traders on crypto exchanges. Instead of making every trading decision yourself, you allocate funds to follow successful traders whose positions are mirrored in your account. This guide explains how copy trading works, where to find it, and the risks you need to understand before starting."
       toc={[
-        { id: "how-it-works", title: "How Copy Trading Works", level: 2 },
-        { id: "platforms", title: "Copy Trading Platforms", level: 2 },
-        { id: "choosing-traders", title: "Choosing Traders to Follow", level: 2 },
-        { id: "costs", title: "Costs and Fee Structure", level: 2 },
-        { id: "risks", title: "Risks and Limitations", level: 2 },
-        { id: "strategies", title: "Copy Trading Strategies", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-copy-trading-works", title: "How Copy Trading Works", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "copy-trading-platforms", title: "Copy Trading Platforms", level: 2 },
+        { id: "choosing-traders", title: "choosing-traders", level: 2 },
+        { id: "choosing-traders-to-follow", title: "Choosing Traders to Follow", level: 2 },
+        { id: "costs", title: "costs", level: 2 },
+        { id: "costs-and-fee-structure", title: "Costs and Fee Structure", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-limitations", title: "Risks and Limitations", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "copy-trading-strategies", title: "Copy Trading Strategies", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "Is copy trading profitable?", answer: "It depends entirely on the trader you follow. Past performance does not guarantee future results. Many top-ranked traders had lucky streaks or took excessive risks. Diversifying across multiple traders and setting strict loss limits is essential." },

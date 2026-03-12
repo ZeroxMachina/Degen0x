@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Smart Contract Wallets Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Smart Contract Wallets Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about smart contract wallets, account abstraction, social recovery, multi-sig features, and how they differ from traditional externally owned accounts.",
 };
 
@@ -11,7 +11,16 @@ export default function SmartContractWalletsPage() {
   return (
     <LearnPageLayout title="Smart Contract Wallets Explained" categoryName="Crypto Wallets" categorySlug="wallets" readTime="9 min read"
       intro="Smart contract wallets represent the next evolution of crypto wallets, replacing traditional externally owned accounts (EOAs) with programmable smart contracts that serve as your account. This architecture enables features impossible with traditional wallets: social recovery, multi-signature security, transaction batching, gas sponsorship, and spending limits. With Ethereum's ERC-4337 account abstraction standard gaining adoption, smart contract wallets are becoming increasingly practical and accessible for everyday users."
-      toc={[{ id: "eoa-vs-smart-wallet", title: "EOA vs Smart Contract Wallets", level: 2 }, { id: "key-features", title: "Key Features", level: 2 }, { id: "account-abstraction", title: "Account Abstraction (ERC-4337)", level: 2 }, { id: "smart-wallet-options", title: "Smart Wallet Options", level: 2 }]}
+      toc={[
+        { id: "eoa-vs-smart-wallet", title: "eoa-vs-smart-wallet", level: 2 },
+        { id: "eoa-vs-smart-contract-wallets", title: "EOA vs Smart Contract Wallets", level: 2 },
+        { id: "key-features", title: "key-features", level: 2 },
+        { id: "key-features", title: "Key Features", level: 2 },
+        { id: "account-abstraction", title: "account-abstraction", level: 2 },
+        { id: "account-abstraction-erc-4337", title: "Account Abstraction (ERC-4337)", level: 2 },
+        { id: "smart-wallet-options", title: "smart-wallet-options", level: 2 },
+        { id: "smart-wallet-options", title: "Smart Wallet Options", level: 2 }
+      ]}
       faqs={[{ question: "Can I lose funds if I lose my seed phrase with a smart contract wallet?", answer: "Smart contract wallets can implement social recovery, meaning you can designate trusted guardians (friends, family, or a service) who can collectively approve a key change if you lose access. This eliminates the single point of failure of seed phrases. However, the recovery mechanism must be set up in advance. Some smart wallets like Safe require multiple signers by default, providing inherent redundancy." },
         { question: "Do smart contract wallets work on all chains?", answer: "Smart contract wallets are chain-specific since they are deployed as contracts on each blockchain. They work best on Ethereum and EVM-compatible chains. Each chain requires a separate deployment. Cross-chain smart wallet solutions are emerging but are not yet mature. Safe (formerly Gnosis Safe) is available on Ethereum, Arbitrum, Optimism, Polygon, BNB Chain, and several other EVM chains." },
         { question: "Are smart contract wallets more expensive to use?", answer: "Smart contract wallet transactions cost more gas than EOA transactions because executing smart contract logic is more expensive than simple transfers. However, features like transaction batching (combining multiple operations into one transaction) can reduce overall costs. Gas sponsorship through paymasters can eliminate gas costs entirely for users, with the dApp or wallet provider covering the fees." }]}

@@ -17,11 +17,16 @@ export default function WhatIsSlashingPage() {
       readTime="7 min"
       intro="Slashing is a penalty mechanism in Proof of Stake blockchains that destroys a portion of a validator's staked cryptocurrency when they engage in provably malicious or negligent behavior. Slashing serves as the primary enforcement mechanism for honest behavior in PoS systems — the threat of losing staked capital creates a powerful economic deterrent against attacks."
       toc={[
-        { id: "why-slashing", title: "Why Slashing Exists", level: 2 },
+        { id: "why-slashing", title: "why-slashing", level: 2 },
+        { id: "why-slashing-exists", title: "Why Slashing Exists", level: 2 },
+        { id: "slashable-offenses", title: "slashable-offenses", level: 2 },
         { id: "slashable-offenses", title: "Slashable Offenses", level: 2 },
+        { id: "penalty-mechanics", title: "penalty-mechanics", level: 2 },
         { id: "penalty-mechanics", title: "Penalty Mechanics", level: 2 },
-        { id: "impact-delegators", title: "Impact on Delegators", level: 2 },
-        { id: "protection", title: "Slashing Protection", level: 2 },
+        { id: "impact-delegators", title: "impact-delegators", level: 2 },
+        { id: "impact-on-delegators", title: "Impact on Delegators", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "slashing-protection", title: "Slashing Protection", level: 2 }
       ]}
       faqs={[
         { question: "How much do you lose from slashing?", answer: "On Ethereum, the initial slashing penalty is at least 1/32 of the validator's stake (1 ETH from a 32 ETH stake). Additional correlation penalties apply if many validators are slashed simultaneously — in a mass slashing event, validators could lose their entire stake. Other networks have different penalty structures." },

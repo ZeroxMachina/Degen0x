@@ -82,7 +82,7 @@ export default function NoKycPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best No-KYC Crypto Exchanges ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -99,7 +99,7 @@ export default function NoKycPage() {
           are the primary way to trade without KYC, as they operate through smart contracts
           rather than centralized entities.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Important Considerations</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Important Considerations</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           While no-KYC trading is legitimate, be aware that you are still legally required to
           report crypto gains for tax purposes in most jurisdictions. Using no-KYC platforms
@@ -115,11 +115,11 @@ export default function NoKycPage() {
             className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6"
           >
             <div className="flex items-center gap-4 mb-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold">
                 {index + 1}
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">{option.name}</h3>
+                <h3 className="text-xl font-bold text-[var(--color-text)]">{option.name}</h3>
                 <span className="text-sm text-[var(--color-primary)]">{option.type}</span>
               </div>
             </div>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Nonce? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Nonce? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a nonce is in blockchain, how it is used in mining and transactions, and why it matters for network security.",
 };
@@ -17,11 +17,16 @@ export default function NoncePage() {
       readTime="4 min"
       intro="A nonce (number used once) is a number that serves a specific one-time purpose in blockchain systems. In mining, the nonce is the variable that miners change repeatedly to find a valid block hash. In Ethereum transactions, the nonce is a sequential counter that tracks the number of transactions sent from an address, preventing replay attacks and ensuring transactions are processed in order."
       toc={[
-        { id: "definition", title: "What Is a Nonce?", level: 2 },
-        { id: "mining-nonce", title: "Nonce in Mining", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-nonce", title: "What Is a Nonce?", level: 2 },
+        { id: "mining-nonce", title: "mining-nonce", level: 2 },
+        { id: "nonce-in-mining", title: "Nonce in Mining", level: 2 },
+        { id: "transaction-nonce", title: "transaction-nonce", level: 2 },
         { id: "transaction-nonce", title: "Transaction Nonce", level: 2 },
-        { id: "nonce-issues", title: "Common Nonce Issues", level: 2 },
-        { id: "why-it-matters", title: "Why Nonces Matter", level: 2 },
+        { id: "nonce-issues", title: "nonce-issues", level: 2 },
+        { id: "common-nonce-issues", title: "Common Nonce Issues", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-nonces-matter", title: "Why Nonces Matter", level: 2 }
       ]}
       faqs={[
         {

@@ -17,14 +17,22 @@ export default function TypesOfCryptoWalletsPage() {
       readTime="10 min"
       intro="Crypto wallets come in many forms, each with different security properties, convenience levels, and ideal use cases. Understanding the distinctions between hardware, software, mobile, desktop, and custodial wallets is essential for choosing the right tool for your needs."
       toc={[
-        { id: "hardware", title: "Hardware Wallets", level: 2 },
-        { id: "software", title: "Software Wallets", level: 2 },
-        { id: "mobile", title: "Mobile Wallets", level: 2 },
-        { id: "desktop", title: "Desktop Wallets", level: 2 },
-        { id: "browser", title: "Browser Extension Wallets", level: 2 },
-        { id: "paper", title: "Paper Wallets", level: 2 },
-        { id: "custodial", title: "Custodial Wallets", level: 2 },
-        { id: "choosing", title: "Choosing the Right Type", level: 2 },
+        { id: "hardware", title: "hardware", level: 2 },
+        { id: "hardware-wallets", title: "Hardware Wallets", level: 2 },
+        { id: "software", title: "software", level: 2 },
+        { id: "software-wallets", title: "Software Wallets", level: 2 },
+        { id: "mobile", title: "mobile", level: 2 },
+        { id: "mobile-wallets", title: "Mobile Wallets", level: 2 },
+        { id: "desktop", title: "desktop", level: 2 },
+        { id: "desktop-wallets", title: "Desktop Wallets", level: 2 },
+        { id: "browser", title: "browser", level: 2 },
+        { id: "browser-extension-wallets", title: "Browser Extension Wallets", level: 2 },
+        { id: "paper", title: "paper", level: 2 },
+        { id: "paper-wallets", title: "Paper Wallets", level: 2 },
+        { id: "custodial", title: "custodial", level: 2 },
+        { id: "custodial-wallets", title: "Custodial Wallets", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-the-right-type", title: "Choosing the Right Type", level: 2 }
       ]}
       faqs={[
         { question: "What type of wallet is best for beginners?", answer: "Mobile wallets like Trust Wallet or Coinbase Wallet offer the easiest onboarding experience. They provide biometric security, intuitive interfaces, and often include guided setup processes. As you become more comfortable, consider adding a hardware wallet for long-term storage." },

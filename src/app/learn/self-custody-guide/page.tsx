@@ -12,12 +12,18 @@ export default function SelfCustodyGuidePage() {
   return (
     <LearnPageLayout title="Self-Custody Guide" categoryName="Crypto Education" categorySlug="learn" readTime="9 min" intro="Self-custody means holding your own private keys and taking personal responsibility for securing your cryptocurrency. The phrase 'not your keys, not your coins' encapsulates the principle that true ownership in crypto requires controlling your own keys rather than trusting a third party. This guide covers everything you need to know to safely self-custody your digital assets."
       toc={[
-        { id: "why-self-custody", title: "Why Self-Custody Matters", level: 2 },
+        { id: "why-self-custody", title: "why-self-custody", level: 2 },
+        { id: "why-self-custody-matters", title: "Why Self-Custody Matters", level: 2 },
+        { id: "wallet-types", title: "wallet-types", level: 2 },
         { id: "wallet-types", title: "Wallet Types", level: 2 },
-        { id: "seed-phrases", title: "Seed Phrase Management", level: 2 },
+        { id: "seed-phrases", title: "seed-phrases", level: 2 },
+        { id: "seed-phrase-management", title: "Seed Phrase Management", level: 2 },
+        { id: "security-setup", title: "security-setup", level: 2 },
         { id: "security-setup", title: "Security Setup", level: 2 },
+        { id: "backup-recovery", title: "backup-recovery", level: 2 },
         { id: "backup-recovery", title: "Backup & Recovery", level: 2 },
-        { id: "common-mistakes", title: "Common Mistakes", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-mistakes", title: "Common Mistakes", level: 2 }
       ]}
       faqs={[
         { question: "What happens if I lose my seed phrase?", answer: "If you lose your seed phrase and your wallet device fails, your funds are permanently inaccessible. No one — not the wallet manufacturer, not blockchain developers, not law enforcement — can recover funds without the seed phrase or private keys. This is why secure backup of your seed phrase is the most critical aspect of self-custody." },

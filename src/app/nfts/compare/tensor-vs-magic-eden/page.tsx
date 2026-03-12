@@ -19,7 +19,7 @@ export default function TensorVsMagicEdenPage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "Tensor vs Magic Eden", href: "#" } ]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Tensor vs Magic Eden: Which Solana NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Tensor vs Magic Eden: Which Solana NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         Tensor and Magic Eden are the two dominant NFT marketplaces on Solana, but they target different
@@ -29,7 +29,7 @@ export default function TensorVsMagicEdenPage() {
       </p>
       <ComparisonTable items={[tensor, magicEden]} features={nftComparisonFeatures} title="Tensor vs Magic Eden: Head-to-Head" />
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Tensor charges a 1.5% marketplace fee that can be reduced by holding TNSR tokens. Active
           traders who stake TNSR can achieve significantly lower effective rates. Magic Eden charges
@@ -42,7 +42,7 @@ export default function TensorVsMagicEdenPage() {
           depends on the current value of these reward tokens and how actively you participate in the
           reward programs.
         </p>
-        <h2 className="text-2xl font-bold text-white mb-4">Trading Tools and Analytics</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Trading Tools and Analytics</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Tensor stands out with its professional trading interface inspired by DeFi platforms. Real-time
           floor tracking, advanced order types including limit orders and collection bids, portfolio
@@ -56,15 +56,15 @@ export default function TensorVsMagicEdenPage() {
           Eden&apos;s multi-chain expansion also means it can serve users who trade across Solana,
           Ethereum, and Bitcoin simultaneously.
         </p>
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Tensor if</strong> you are an active Solana NFT trader
+            <strong className="text-[var(--color-text)]">Choose Tensor if</strong> you are an active Solana NFT trader
             who wants the best analytics, advanced order types, lower fees with TNSR, and a
             professional-grade trading experience.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Magic Eden if</strong> you want multi-chain support
+            <strong className="text-[var(--color-text)]">Choose Magic Eden if</strong> you want multi-chain support
             (Solana, Bitcoin, Ethereum), access to the Launchpad for new mints, a more beginner-friendly
             experience, or you trade across multiple blockchains.
           </p>

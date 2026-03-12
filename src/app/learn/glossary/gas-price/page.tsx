@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Gas Price? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Gas Price? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what gas price means in blockchain, how gas prices are determined, the role of base fees and priority fees, and how to optimize your transaction costs.",
 };
 
@@ -11,7 +11,16 @@ export default function GasPricePage() {
   return (
     <LearnPageLayout title="What Is Gas Price?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="Gas price is the amount of cryptocurrency you pay per unit of gas consumed in a blockchain transaction. On Ethereum, gas price is denominated in gwei (one billionth of an ETH). Higher gas prices incentivize validators to include your transaction sooner, while lower gas prices mean longer wait times. Gas price fluctuates based on network demand and is the primary variable that determines your total transaction cost."
-      toc={[{ id: "definition", title: "What Is Gas Price?", level: 2 }, { id: "base-and-priority", title: "Base Fee and Priority Fee", level: 2 }, { id: "price-fluctuations", title: "Why Gas Prices Fluctuate", level: 2 }, { id: "optimizing", title: "Optimizing Gas Price", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-gas-price", title: "What Is Gas Price?", level: 2 },
+        { id: "base-and-priority", title: "base-and-priority", level: 2 },
+        { id: "base-fee-and-priority-fee", title: "Base Fee and Priority Fee", level: 2 },
+        { id: "price-fluctuations", title: "price-fluctuations", level: 2 },
+        { id: "why-gas-prices-fluctuate", title: "Why Gas Prices Fluctuate", level: 2 },
+        { id: "optimizing", title: "optimizing", level: 2 },
+        { id: "optimizing-gas-price", title: "Optimizing Gas Price", level: 2 }
+      ]}
       faqs={[{ question: "How is the total transaction fee calculated?", answer: "Total fee = gas used × gas price. On post-EIP-1559 Ethereum: total fee = gas used × (base fee + priority fee). The base fee is burned and adjusts automatically based on block utilization. The priority fee (tip) goes to validators. Your wallet calculates this automatically, but understanding the components helps you optimize costs." },
         { question: "When are gas prices lowest?", answer: "Gas prices are typically lowest during weekends and off-peak hours (late night to early morning in US time zones). Network congestion from NFT mints, popular token launches, and market volatility spikes drive prices higher. Gas tracking tools like Etherscan Gas Tracker and GasNow show current and historical gas price data." }]}
       relatedArticles={[{ title: "Gas", href: "/learn/glossary/gas", category: "Glossary" }, { title: "Gas Limit", href: "/learn/glossary/gas-limit", category: "Glossary" }, { title: "Gwei", href: "/learn/glossary/gwei", category: "Glossary" }, { title: "Wei", href: "/learn/glossary/wei", category: "Glossary" }]}

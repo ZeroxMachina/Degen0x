@@ -16,10 +16,14 @@ export default function BestTokenLaunchPlatformsPage() {
       readTime="10 min"
       intro="Token launch platforms provide infrastructure for creating, distributing, and listing new cryptocurrency tokens through launchpads, IDO platforms, and liquidity bootstrapping tools."
       toc={[
-        { id: "section-1", title: "Token Launch Overview", level: 2 },
-        { id: "section-2", title: "Platform Comparison", level: 2 },
-        { id: "section-3", title: "Launch Mechanics", level: 2 },
-        { id: "section-4", title: "Launch Strategy Tips", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "token-launch-overview", title: "Token Launch Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "platform-comparison", title: "Platform Comparison", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "launch-mechanics", title: "Launch Mechanics", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "launch-strategy-tips", title: "Launch Strategy Tips", level: 2 }
       ]}
       faqs={[
         { question: "What is a token launchpad?", answer: "A token launchpad is a platform that helps new crypto projects distribute their tokens to early supporters through structured sale events. Launchpads provide infrastructure for token sales, vesting, and initial liquidity while connecting projects with investor communities." },

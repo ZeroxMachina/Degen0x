@@ -17,13 +17,20 @@ export default function WhatIsConsensusPage() {
       readTime="9 min"
       intro="Consensus mechanisms are the protocols that allow distributed networks of computers to agree on the current state of a blockchain without trusting any single participant. They solve the fundamental challenge of distributed computing: how can independent nodes reach agreement when some participants may be faulty, offline, or actively malicious?"
       toc={[
-        { id: "why-consensus", title: "Why Consensus Matters", level: 2 },
-        { id: "byzantine-generals", title: "The Byzantine Generals Problem", level: 2 },
+        { id: "why-consensus", title: "why-consensus", level: 2 },
+        { id: "why-consensus-matters", title: "Why Consensus Matters", level: 2 },
+        { id: "byzantine-generals", title: "byzantine-generals", level: 2 },
+        { id: "the-byzantine-generals-problem", title: "The Byzantine Generals Problem", level: 2 },
+        { id: "proof-of-work", title: "proof-of-work", level: 2 },
         { id: "proof-of-work", title: "Proof of Work", level: 2 },
+        { id: "proof-of-stake", title: "proof-of-stake", level: 2 },
         { id: "proof-of-stake", title: "Proof of Stake", level: 2 },
+        { id: "bft-variants", title: "bft-variants", level: 2 },
         { id: "bft-variants", title: "BFT Variants", level: 2 },
-        { id: "other-mechanisms", title: "Other Consensus Mechanisms", level: 2 },
-        { id: "tradeoffs", title: "Consensus Trade-offs", level: 2 },
+        { id: "other-mechanisms", title: "other-mechanisms", level: 2 },
+        { id: "other-consensus-mechanisms", title: "Other Consensus Mechanisms", level: 2 },
+        { id: "tradeoffs", title: "tradeoffs", level: 2 },
+        { id: "consensus-trade-offs", title: "Consensus Trade-offs", level: 2 }
       ]}
       faqs={[
         { question: "Which consensus mechanism is best?", answer: "There is no universally best consensus mechanism — each makes different trade-offs between security, decentralization, speed, and energy efficiency. PoW provides the strongest security guarantees, PoS offers energy efficiency and participation accessibility, and BFT variants provide fast finality. The best choice depends on the specific requirements of the network." },

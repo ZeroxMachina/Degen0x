@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Laos (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Laos (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchanges accessible in Laos. Find LAK-friendly platforms with P2P support and trading options for Laotian crypto users.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesLaos() {
       readTime="7 min read"
       intro="Laos has taken interesting steps in the crypto space, with the government approving crypto mining and trading pilot programs. The Bank of Lao PDR oversees financial regulation, and while the crypto framework is still developing, Laotian residents can access international platforms. This guide covers the available options for crypto trading in Laos."
       toc={[
+        { id: "available-exchanges", title: "available-exchanges", level: 2 },
         { id: "available-exchanges", title: "Available Exchanges", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing a Platform", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Laos?", answer: "Laos has taken a relatively open approach, approving pilot programs for crypto mining and trading. The government authorized select companies to engage in crypto activities, though comprehensive regulations are still developing." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Card Security Tips (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Card Security Tips (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to protect your crypto card from fraud, scams, and unauthorized transactions. Essential security practices for crypto debit and credit card holders.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoCardSecurityPage() {
       readTime="8 min"
       intro="Crypto card security requires attention to both traditional card fraud prevention and crypto-specific risks. Unlike traditional bank cards where unauthorized charges can often be reversed, crypto transactions are irreversible once confirmed on the blockchain. This guide covers essential security practices to protect your crypto card, your linked exchange account, and the funds backing your card."
       toc={[
-        { id: "account-security", title: "Exchange Account Security", level: 2 },
-        { id: "card-protection", title: "Physical Card Protection", level: 2 },
-        { id: "online-safety", title: "Online Transaction Safety", level: 2 },
-        { id: "monitoring", title: "Transaction Monitoring", level: 2 },
-        { id: "incident-response", title: "What to Do If Compromised", level: 2 },
+        { id: "account-security", title: "account-security", level: 2 },
+        { id: "exchange-account-security", title: "Exchange Account Security", level: 2 },
+        { id: "card-protection", title: "card-protection", level: 2 },
+        { id: "physical-card-protection", title: "Physical Card Protection", level: 2 },
+        { id: "online-safety", title: "online-safety", level: 2 },
+        { id: "online-transaction-safety", title: "Online Transaction Safety", level: 2 },
+        { id: "monitoring", title: "monitoring", level: 2 },
+        { id: "transaction-monitoring", title: "Transaction Monitoring", level: 2 },
+        { id: "incident-response", title: "incident-response", level: 2 },
+        { id: "what-to-do-if-compromised", title: "What to Do If Compromised", level: 2 }
       ]}
       faqs={[
         { question: "Can I get a refund if my crypto card is used fraudulently?", answer: "Most crypto cards carry Visa or Mastercard Zero Liability protection, which covers unauthorized transactions similar to traditional cards. Report suspicious activity immediately to your card provider. The chargeback process works the same as for any Visa or Mastercard. However, if someone gains access to your exchange account directly, recovery may be more difficult." },

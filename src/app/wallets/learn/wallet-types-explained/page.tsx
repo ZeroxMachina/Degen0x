@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Types of Crypto Wallets Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Types of Crypto Wallets Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about the different types of crypto wallets including hardware, software, mobile, browser extension, and paper wallets. Find the right wallet for your needs.",
 };
 
@@ -11,7 +11,16 @@ export default function WalletTypesExplainedPage() {
   return (
     <LearnPageLayout title="Types of Crypto Wallets Explained" categoryName="Crypto Wallets" categorySlug="wallets" readTime="9 min read"
       intro="Crypto wallets come in many forms, each offering different trade-offs between security, convenience, and functionality. From hardware devices that keep your keys offline to browser extensions that integrate seamlessly with DeFi, understanding the wallet landscape is essential for choosing the right tool for your needs. This guide breaks down every type of crypto wallet, their strengths and weaknesses, and the best use case for each."
-      toc={[{ id: "wallet-categories", title: "Wallet Categories Overview", level: 2 }, { id: "hardware-wallets", title: "Hardware Wallets", level: 2 }, { id: "software-wallets", title: "Software Wallets", level: 2 }, { id: "choosing-right-type", title: "Choosing the Right Type", level: 2 }]}
+      toc={[
+        { id: "wallet-categories", title: "wallet-categories", level: 2 },
+        { id: "wallet-categories-overview", title: "Wallet Categories Overview", level: 2 },
+        { id: "hardware-wallets", title: "hardware-wallets", level: 2 },
+        { id: "hardware-wallets", title: "Hardware Wallets", level: 2 },
+        { id: "software-wallets", title: "software-wallets", level: 2 },
+        { id: "software-wallets", title: "Software Wallets", level: 2 },
+        { id: "choosing-right-type", title: "choosing-right-type", level: 2 },
+        { id: "choosing-the-right-type", title: "Choosing the Right Type", level: 2 }
+      ]}
       faqs={[{ question: "Which type of wallet is most secure?", answer: "Hardware wallets are the most secure for storing large amounts because they keep private keys offline, immune to malware and phishing. However, security also depends on user practices. A hardware wallet improperly backed up is less secure than a well-managed software wallet. Multi-signature wallets offer the highest security for organizations." },
         { question: "Can I use multiple wallet types?", answer: "Yes, and this is recommended. Most experienced users keep a hardware wallet for long-term holdings, a browser extension wallet for DeFi interaction, and possibly a mobile wallet for on-the-go transactions. This layered approach balances security with convenience for different activities." },
         { question: "Are custodial wallets safe?", answer: "Custodial wallets (where an exchange holds your keys) are convenient but carry counterparty risk. If the exchange is hacked or goes bankrupt (like FTX), you may lose your funds. For small amounts and active trading, exchange wallets are practical. For long-term storage of significant amounts, non-custodial wallets are strongly recommended." }]}

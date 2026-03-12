@@ -71,7 +71,7 @@ export default function AustraliaExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in Australia ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -88,7 +88,7 @@ export default function AustraliaExchangesPage() {
           crypto licensing frameworks. Australian users benefit from instant AUD deposits via
           PayID and access to both global and local exchanges.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Australian Regulatory Landscape</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Australian Regulatory Landscape</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           AUSTRAC registration is the baseline requirement for operating a crypto exchange in
           Australia. Beyond this, the Australian government has been working on a comprehensive
@@ -96,7 +96,7 @@ export default function AustraliaExchangesPage() {
           standards, and consumer protection. The ATO has also been proactive in crypto tax
           enforcement, using data-matching programs with exchanges to identify unreported gains.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Global vs Local Exchanges</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Global vs Local Exchanges</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Australian users can choose between global exchanges like Kraken and Coinbase (lower
           fees, more trading pairs) and local platforms like CoinSpot and Swyftx (Australian
@@ -118,22 +118,22 @@ export default function AustraliaExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods for Australian Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods for Australian Users</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">PayID / Osko</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">PayID / Osko</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant, free AUD deposits. Supported by most exchanges. The best option for Australians.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Bank Transfer (NPP)</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Bank Transfer (NPP)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Free on most platforms. Takes minutes to hours via the New Payments Platform.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">POLi Payments</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">POLi Payments</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Online bank payment system. Low or no fees. Supported on some local exchanges.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Debit / Credit Card</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Debit / Credit Card</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant purchase. 2-3.5% fee. Visa and Mastercard accepted on major exchanges.</p>
           </div>
         </div>

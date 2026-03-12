@@ -7,7 +7,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Lowest Fee NFT Marketplaces in ${CURRENT_YEAR} | CryptoDegen`,
+  title: `Lowest Fee NFT Marketplaces in ${CURRENT_YEAR} | degen0x`,
   description: `Compare the NFT marketplaces with the lowest fees in ${CURRENT_YEAR}. Find platforms with zero or minimal marketplace fees to maximize your NFT trading profits.`,
 };
 
@@ -42,7 +42,7 @@ export default function LowestFeeMarketplacesPage() {
     "@type": "Article",
     headline: `Lowest Fee NFT Marketplaces ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -58,7 +58,7 @@ export default function LowestFeeMarketplacesPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Lowest Fee NFT Marketplaces in {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -77,7 +77,7 @@ export default function LowestFeeMarketplacesPage() {
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Marketplaces Ranked by Fees (Lowest First)</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Marketplaces Ranked by Fees (Lowest First)</h2>
           <div className="space-y-4">
             {ranked.map((marketplace, index) => (
               <ProductCard
@@ -91,19 +91,19 @@ export default function LowestFeeMarketplacesPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison Overview</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison Overview</h2>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr className="border-b border-[var(--color-border)]">
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-white">Marketplace</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-white">Fee</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Marketplace</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Fee</th>
                 </tr>
               </thead>
               <tbody>
                 {ranked.map((m) => (
                   <tr key={m.slug} className="border-b border-[var(--color-border)]/50">
-                    <td className="px-4 py-3 text-sm text-white">{m.name}</td>
+                    <td className="px-4 py-3 text-sm text-[var(--color-text)]">{m.name}</td>
                     <td className="px-4 py-3 text-sm text-[var(--color-text-secondary)]">{m.fees}</td>
                   </tr>
                 ))}

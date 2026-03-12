@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Secret Network (SCRT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Secret Network (SCRT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Secret Network (SCRT), the privacy-preserving blockchain with encrypted smart contracts. Discover SCRT tokenomics and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function SecretPage() {
       readTime="8 min read"
       intro="Secret Network (SCRT) is a blockchain with privacy-preserving smart contracts built on the Cosmos SDK. Secret contracts encrypt inputs, outputs, and state by default using trusted execution environments, enabling confidential DeFi, private NFTs, and encrypted data processing. SCRT is the native token used for staking, governance, and gas fees."
       toc={[
-        { id: "what-is", title: "What Is Secret Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Secret Network Work?", level: 2 },
-        { id: "tokenomics", title: "SCRT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SCRT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-secret-network", title: "What Is Secret Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-secret-network-work", title: "How Does Secret Network Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "scrt-tokenomics", title: "SCRT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-scrt", title: "How to Buy SCRT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Secret Network?", answer: "Secret Network is a privacy-focused blockchain where smart contracts process encrypted data by default. Built on Cosmos SDK, it enables confidential DeFi, private NFTs, and secure data computation." },

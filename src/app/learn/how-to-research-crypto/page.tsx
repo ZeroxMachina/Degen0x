@@ -11,7 +11,20 @@ export const metadata: Metadata = {
 export default function HowToResearchCryptoPage() {
   return (
     <LearnPageLayout title="How to Research Crypto Projects" categoryName="Crypto Education" categorySlug="learn" readTime="9 min" intro="Thorough research (DYOR — Do Your Own Research) is the most important skill for cryptocurrency investors. With thousands of projects claiming revolutionary potential, the ability to critically evaluate projects separates informed investors from those who lose money chasing hype. This guide provides a systematic framework for evaluating any crypto project."
-      toc={[{ id: "framework", title: "Research Framework", level: 2 },{ id: "team", title: "Team & Background", level: 2 },{ id: "technology", title: "Technology Assessment", level: 2 },{ id: "tokenomics", title: "Tokenomics Analysis", level: 2 },{ id: "on-chain", title: "On-Chain Analysis", level: 2 },{ id: "red-flags", title: "Red Flags", level: 2 }]}
+      toc={[
+        { id: "framework", title: "framework", level: 2 },
+        { id: "research-framework", title: "Research Framework", level: 2 },
+        { id: "team", title: "team", level: 2 },
+        { id: "team-background", title: "Team & Background", level: 2 },
+        { id: "technology", title: "technology", level: 2 },
+        { id: "technology-assessment", title: "Technology Assessment", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "tokenomics-analysis", title: "Tokenomics Analysis", level: 2 },
+        { id: "on-chain", title: "on-chain", level: 2 },
+        { id: "on-chain-analysis", title: "On-Chain Analysis", level: 2 },
+        { id: "red-flags", title: "red-flags", level: 2 },
+        { id: "red-flags", title: "Red Flags", level: 2 }
+      ]}
       faqs={[
         { question: "How long should I research before investing?", answer: "Spend at least several hours researching any project before investing significant funds. Read the whitepaper, review team backgrounds, analyze tokenomics, check on-chain metrics, and read community discussions. For larger investments, days or weeks of research is appropriate. Never invest based solely on social media recommendations." },
         { question: "What is the most important research factor?", answer: "There is no single most important factor — good research is holistic. However, team quality and track record are among the strongest predictors of project success. A strong team with a mediocre idea can pivot, but a weak team with a great idea often fails to execute." },

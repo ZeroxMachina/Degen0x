@@ -16,10 +16,14 @@ export default function TokenSaleGuidePage() {
       readTime="10 min"
       intro="Launching a token sale is one of the most significant events for a crypto project. This guide covers tokenomics design, legal structuring, marketing, and distribution mechanics."
       toc={[
-        { id: "section-1", title: "Token Sale Planning", level: 2 },
-        { id: "section-2", title: "Tokenomics Design", level: 2 },
-        { id: "section-3", title: "Legal and Compliance", level: 2 },
-        { id: "section-4", title: "Execution and Distribution", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "token-sale-planning", title: "Token Sale Planning", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "tokenomics-design", title: "Tokenomics Design", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "legal-and-compliance", title: "Legal and Compliance", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "execution-and-distribution", title: "Execution and Distribution", level: 2 }
       ]}
       faqs={[
         { question: "What is a token sale?", answer: "A token sale is the structured distribution of a new cryptocurrency token to buyers, typically to raise funds for project development and to distribute tokens to an initial holder community. Sales can be public or private with various mechanisms." },

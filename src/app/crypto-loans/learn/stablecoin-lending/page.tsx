@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Stablecoin Lending Strategies (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Stablecoin Lending Strategies (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to earn yield by lending stablecoins. Compare rates across DeFi protocols and CeFi platforms, understand risks, and optimize your stablecoin lending strategy.",
 };
@@ -17,11 +17,16 @@ export default function StablecoinLendingPage() {
       readTime="9 min read"
       intro="Stablecoin lending is one of the lowest-risk ways to earn yield in the crypto ecosystem. By lending stablecoins like USDC, USDT, or DAI through DeFi protocols or CeFi platforms, you can earn interest rates that often exceed traditional savings accounts. Since stablecoins maintain a roughly constant value, you avoid the price volatility that makes other crypto lending strategies risky. However, stablecoin lending is not risk-free, and understanding the sources of yield, platform risks, and optimization strategies is essential."
       toc={[
-        { id: "how-it-works", title: "How Stablecoin Lending Works", level: 2 },
-        { id: "rate-comparison", title: "Rate Comparison Across Platforms", level: 2 },
-        { id: "yield-sources", title: "Understanding Yield Sources", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-stablecoin-lending-works", title: "How Stablecoin Lending Works", level: 2 },
+        { id: "rate-comparison", title: "rate-comparison", level: 2 },
+        { id: "rate-comparison-across-platforms", title: "Rate Comparison Across Platforms", level: 2 },
+        { id: "yield-sources", title: "yield-sources", level: 2 },
+        { id: "understanding-yield-sources", title: "Understanding Yield Sources", level: 2 },
+        { id: "risk-factors", title: "risk-factors", level: 2 },
         { id: "risk-factors", title: "Risk Factors", level: 2 },
-        { id: "optimization", title: "Optimization Strategies", level: 2 },
+        { id: "optimization", title: "optimization", level: 2 },
+        { id: "optimization-strategies", title: "Optimization Strategies", level: 2 }
       ]}
       faqs={[
         { question: "What returns can I expect from stablecoin lending?", answer: "Stablecoin lending yields typically range from 3% to 12% APY depending on the platform, stablecoin, and market conditions. During high-demand periods, rates can spike significantly. Conservative, established protocols usually offer 3-6%, while newer or higher-risk platforms may advertise higher rates." },

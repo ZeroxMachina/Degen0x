@@ -24,13 +24,20 @@ export default function HowToBuyCryptoAustraliaPage() {
       readTime="12 min"
       intro="Australia has a thriving cryptocurrency market with strong regulatory oversight, instant AUD deposits via PayID, and a favorable capital gains tax discount for long-term holders. This guide covers everything Australian residents need to know about buying crypto, from choosing an AUSTRAC-registered exchange to understanding ATO tax obligations."
       toc={[
-        { id: "choose-exchange", title: "Choosing an AUSTRAC-Registered Exchange", level: 2 },
-        { id: "verification", title: "Account Verification in Australia", level: 2 },
-        { id: "deposit-aud", title: "Depositing AUD: PayID, NPP, and Cards", level: 2 },
-        { id: "buying-guide", title: "Making Your First Purchase", level: 2 },
-        { id: "ato-taxes", title: "ATO Crypto Tax Rules and CGT Discount", level: 2 },
-        { id: "local-vs-global", title: "Local vs Global Exchanges", level: 2 },
-        { id: "security", title: "Securing Your Crypto", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "choosing-an-austrac-registered-exchange", title: "Choosing an AUSTRAC-Registered Exchange", level: 2 },
+        { id: "verification", title: "verification", level: 2 },
+        { id: "account-verification-in-australia", title: "Account Verification in Australia", level: 2 },
+        { id: "deposit-aud", title: "deposit-aud", level: 2 },
+        { id: "depositing-aud-payid-npp-and-cards", title: "Depositing AUD: PayID, NPP, and Cards", level: 2 },
+        { id: "buying-guide", title: "buying-guide", level: 2 },
+        { id: "making-your-first-purchase", title: "Making Your First Purchase", level: 2 },
+        { id: "ato-taxes", title: "ato-taxes", level: 2 },
+        { id: "ato-crypto-tax-rules-and-cgt-discount", title: "ATO Crypto Tax Rules and CGT Discount", level: 2 },
+        { id: "local-vs-global", title: "local-vs-global", level: 2 },
+        { id: "local-vs-global-exchanges", title: "Local vs Global Exchanges", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "securing-your-crypto", title: "Securing Your Crypto", level: 2 }
       ]}
       faqs={[
         {

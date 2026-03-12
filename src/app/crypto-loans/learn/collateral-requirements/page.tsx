@@ -17,10 +17,14 @@ export default function CollateralRequirementsPage() {
       readTime="8 min"
       intro="Collateral requirements determine how much you need to deposit, which assets are accepted, and how much you can borrow. Different platforms have different requirements based on the risk profile of each collateral type. Understanding these requirements helps you choose the right platform and plan your borrowing strategy to maximize capital efficiency while maintaining safety."
       toc={[
-        { id: "accepted-assets", title: "Accepted Collateral Assets", level: 2 },
-        { id: "ratios-explained", title: "Collateral Ratios Explained", level: 2 },
-        { id: "platform-comparison", title: "Platform Requirements", level: 2 },
-        { id: "multi-collateral", title: "Multi-Collateral Strategies", level: 2 },
+        { id: "accepted-assets", title: "accepted-assets", level: 2 },
+        { id: "accepted-collateral-assets", title: "Accepted Collateral Assets", level: 2 },
+        { id: "ratios-explained", title: "ratios-explained", level: 2 },
+        { id: "collateral-ratios-explained", title: "Collateral Ratios Explained", level: 2 },
+        { id: "platform-comparison", title: "platform-comparison", level: 2 },
+        { id: "platform-requirements", title: "Platform Requirements", level: 2 },
+        { id: "multi-collateral", title: "multi-collateral", level: 2 },
+        { id: "multi-collateral-strategies", title: "Multi-Collateral Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Can I use stablecoins as collateral?", answer: "Yes, most platforms accept stablecoins as collateral with higher LTV ratios (typically 75-90%) due to their low volatility. This is useful for borrowing other stablecoins or volatile assets while maintaining stable collateral value." },

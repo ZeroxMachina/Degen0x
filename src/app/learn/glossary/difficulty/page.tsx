@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Difficulty? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Difficulty? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what mining difficulty is, how it adjusts, and why it matters for blockchain security and stability.",
 };
@@ -17,11 +17,16 @@ export default function DifficultyPage() {
       readTime="5 min"
       intro="Difficulty is a measure of how hard it is to find a valid hash for a new block on a proof-of-work blockchain. The network automatically adjusts difficulty to keep block production at a consistent rate, regardless of how much total computing power (hash rate) is participating. As more miners join, difficulty rises; as miners leave, it falls."
       toc={[
-        { id: "definition", title: "What Is Difficulty?", level: 2 },
-        { id: "how-adjustment-works", title: "How Difficulty Adjustment Works", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-difficulty", title: "What Is Difficulty?", level: 2 },
+        { id: "how-adjustment-works", title: "how-adjustment-works", level: 2 },
+        { id: "how-difficulty-adjustment-works", title: "How Difficulty Adjustment Works", level: 2 },
+        { id: "bitcoin-difficulty", title: "bitcoin-difficulty", level: 2 },
         { id: "bitcoin-difficulty", title: "Bitcoin Difficulty", level: 2 },
-        { id: "why-it-matters", title: "Why Difficulty Matters", level: 2 },
-        { id: "difficulty-and-profitability", title: "Difficulty and Mining Profitability", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-difficulty-matters", title: "Why Difficulty Matters", level: 2 },
+        { id: "difficulty-and-profitability", title: "difficulty-and-profitability", level: 2 },
+        { id: "difficulty-and-mining-profitability", title: "Difficulty and Mining Profitability", level: 2 }
       ]}
       faqs={[
         {

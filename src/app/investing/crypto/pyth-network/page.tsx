@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Pyth Network (PYTH)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Pyth Network (PYTH)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Pyth Network (PYTH), the decentralized oracle providing real-time financial data. Discover how it works, tokenomics, and how to buy PYTH.",
 };
@@ -17,12 +17,18 @@ export default function PythNetworkPage() {
       readTime="8 min read"
       intro="Pyth Network is a decentralized oracle protocol that delivers high-fidelity financial market data to blockchain applications. Unlike traditional oracles, Pyth sources data directly from first-party providers such as exchanges, market makers, and financial institutions. PYTH is the governance token of the network."
       toc={[
-        { id: "what-is", title: "What Is Pyth Network?", level: 2 },
-        { id: "how-it-works", title: "How Pyth Network Works", level: 2 },
-        { id: "tokenomics", title: "Pyth Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy PYTH", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-pyth-network", title: "What Is Pyth Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-pyth-network-works", title: "How Pyth Network Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "pyth-tokenomics", title: "Pyth Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-pyth", title: "How to Buy PYTH", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

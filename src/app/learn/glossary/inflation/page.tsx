@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function InflationPage() {
   return (
     <LearnPageLayout title="What Is Inflation in Crypto?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="Inflation in cryptocurrency refers to the increase in a token's total supply over time through the creation of new tokens. Most blockchain networks issue new tokens as rewards for validators, miners, or stakers who secure the network. The rate of inflation, the schedule on which new tokens are created, and whether supply is capped or uncapped are critical aspects of a token's economic design that directly affect its long-term value proposition."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "emission-schedules", title: "Emission Schedules", level: 2 },{ id: "impact", title: "Impact on Value", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "emission-schedules", title: "emission-schedules", level: 2 },
+        { id: "emission-schedules", title: "Emission Schedules", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-value", title: "Impact on Value", level: 2 }
+      ]}
       faqs={[
         { question: "Is inflation bad for a cryptocurrency?", answer: "Not necessarily. Controlled inflation serves a vital purpose — it pays for network security by incentivizing validators and miners. Without inflation (block rewards), a network must rely entirely on transaction fees to compensate those who secure it, which may be insufficient or create unstable security budgets. The key question is whether the value created by a secure, functional network exceeds the dilution caused by new token issuance." },
         { question: "How does crypto inflation differ from fiat inflation?", answer: "Crypto inflation is typically programmatic, predictable, and transparent — the emission schedule is defined in the protocol's code and cannot be changed without governance approval. Fiat inflation is determined by central bank policy, which can change based on economic conditions and political pressures. Crypto inflation rates are known in advance, while fiat money supply expansion is discretionary and often unpredictable." },

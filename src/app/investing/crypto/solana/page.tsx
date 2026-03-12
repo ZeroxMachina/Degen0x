@@ -28,7 +28,7 @@ export default function SolanaPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">How to Invest in Solana (SOL) in {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">How to Invest in Solana (SOL) in {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Solana is a high-performance Layer 1 blockchain designed for speed and low costs, powering
           a rapidly growing ecosystem of DeFi, NFT, and consumer applications.
@@ -37,17 +37,17 @@ export default function SolanaPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">{token.ticker}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">{token.launchYear}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">{token.maxSupply}</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">{token.consensus}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.ticker}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.launchYear}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.maxSupply}</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">{token.consensus}</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Solana?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Solana?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Solana is a high-throughput blockchain using a unique combination of Proof of Stake and
           Proof of History to achieve sub-second transaction finality and fees measured in fractions
@@ -64,7 +64,7 @@ export default function SolanaPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)]">
           Solana excels at DeFi applications requiring high throughput (DEXs, perpetual exchanges),
           NFT minting and trading, consumer applications (social, gaming), point-of-sale payments
@@ -74,7 +74,7 @@ export default function SolanaPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)]">
           Solana's main risks include past network reliability issues (though improving), validator
           centralization concerns, significant VC token holdings that could create selling pressure,
@@ -85,7 +85,7 @@ export default function SolanaPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Solana</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Solana</h2>
         <p className="text-[var(--color-text-secondary)]">
           Buy SOL on major exchanges like Coinbase, Binance, or Kraken. After purchasing, consider
           staking through liquid staking protocols like Marinade Finance or Jito to earn 6-8% APY.

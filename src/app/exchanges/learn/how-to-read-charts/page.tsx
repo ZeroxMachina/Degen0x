@@ -17,12 +17,18 @@ export default function HowToReadChartsPage() {
       readTime="13 min"
       intro="Trading charts are the visual language of the market. They display price history, volume, and patterns that traders use to make informed decisions about when to buy and sell. While chart reading (technical analysis) is not a crystal ball, it provides a framework for understanding market behavior and managing risk. This guide teaches you the essential concepts of reading crypto charts, from basic candlestick patterns to key technical indicators."
       toc={[
-        { id: "candlesticks", title: "Understanding Candlestick Charts", level: 2 },
-        { id: "timeframes", title: "Choosing the Right Timeframe", level: 2 },
-        { id: "support-resistance", title: "Support and Resistance Levels", level: 2 },
-        { id: "volume", title: "Reading Volume", level: 2 },
-        { id: "indicators", title: "Essential Technical Indicators", level: 2 },
-        { id: "patterns", title: "Common Chart Patterns", level: 2 },
+        { id: "candlesticks", title: "candlesticks", level: 2 },
+        { id: "understanding-candlestick-charts", title: "Understanding Candlestick Charts", level: 2 },
+        { id: "timeframes", title: "timeframes", level: 2 },
+        { id: "choosing-the-right-timeframe", title: "Choosing the Right Timeframe", level: 2 },
+        { id: "support-resistance", title: "support-resistance", level: 2 },
+        { id: "support-and-resistance-levels", title: "Support and Resistance Levels", level: 2 },
+        { id: "volume", title: "volume", level: 2 },
+        { id: "reading-volume", title: "Reading Volume", level: 2 },
+        { id: "indicators", title: "indicators", level: 2 },
+        { id: "essential-technical-indicators", title: "Essential Technical Indicators", level: 2 },
+        { id: "patterns", title: "patterns", level: 2 },
+        { id: "common-chart-patterns", title: "Common Chart Patterns", level: 2 }
       ]}
       faqs={[
         {

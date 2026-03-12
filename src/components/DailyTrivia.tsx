@@ -158,13 +158,13 @@ export default function DailyTrivia() {
     const emojis = game.answers
       .map((a, i) => (a === questions[i]?.correct ? "🟩" : a === null ? "⬛" : "🟥"))
       .join("");
-    return `CryptoDegen Daily Trivia 🎮
+    return `degen0x Daily Trivia 🎮
 ${new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
 ${correct}/10 correct · ${game.score} pts · Grade ${grade} ${emoji}
 ${emojis}
 🔥 ${streak}-day streak
 
-Play at cryptodegen.com/learn/daily-trivia`;
+Play at degen0x.com/learn/daily-trivia`;
   };
 
   const copyShare = async () => {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Halving? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Halving? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what Bitcoin halving is, how it affects supply and price, and why it is one of the most anticipated events in crypto.",
 };
@@ -17,11 +17,16 @@ export default function HalvingPage() {
       readTime="5 min"
       intro="Halving is an event where the reward for mining new blocks is cut in half, reducing the rate at which new coins are created. Bitcoin's halving occurs every 210,000 blocks (roughly every four years). This mechanism enforces Bitcoin's fixed supply of 21 million coins and creates a predictable disinflationary monetary policy. Halvings are among the most closely watched events in the cryptocurrency market."
       toc={[
-        { id: "definition", title: "What Is Halving?", level: 2 },
-        { id: "bitcoin-halvings", title: "Bitcoin Halving History", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-halving", title: "What Is Halving?", level: 2 },
+        { id: "bitcoin-halvings", title: "bitcoin-halvings", level: 2 },
+        { id: "bitcoin-halving-history", title: "Bitcoin Halving History", level: 2 },
+        { id: "price-impact", title: "price-impact", level: 2 },
         { id: "price-impact", title: "Price Impact", level: 2 },
-        { id: "miner-economics", title: "Impact on Miners", level: 2 },
-        { id: "why-it-matters", title: "Why Halving Matters", level: 2 },
+        { id: "miner-economics", title: "miner-economics", level: 2 },
+        { id: "impact-on-miners", title: "Impact on Miners", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-halving-matters", title: "Why Halving Matters", level: 2 }
       ]}
       faqs={[
         {

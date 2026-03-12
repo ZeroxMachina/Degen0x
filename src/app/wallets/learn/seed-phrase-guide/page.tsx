@@ -17,11 +17,16 @@ export default function SeedPhraseGuidePage() {
       readTime="9 min"
       intro="Your seed phrase is the master key to all your cryptocurrency. These 12 or 24 words can restore your entire wallet on any compatible device, making them the single most critical piece of information in your crypto security. This guide covers everything you need to know about creating, storing, and protecting your seed phrase."
       toc={[
-        { id: "what-is", title: "What Is a Seed Phrase?", level: 2 },
-        { id: "how-it-works", title: "How Seed Phrases Work", level: 2 },
-        { id: "storage", title: "Secure Storage Methods", level: 2 },
-        { id: "mistakes", title: "Common Mistakes to Avoid", level: 2 },
-        { id: "metal-backup", title: "Metal Backup Solutions", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-a-seed-phrase", title: "What Is a Seed Phrase?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-seed-phrases-work", title: "How Seed Phrases Work", level: 2 },
+        { id: "storage", title: "storage", level: 2 },
+        { id: "secure-storage-methods", title: "Secure Storage Methods", level: 2 },
+        { id: "mistakes", title: "mistakes", level: 2 },
+        { id: "common-mistakes-to-avoid", title: "Common Mistakes to Avoid", level: 2 },
+        { id: "metal-backup", title: "metal-backup", level: 2 },
+        { id: "metal-backup-solutions", title: "Metal Backup Solutions", level: 2 }
       ]}
       faqs={[
         { question: "Can someone steal my crypto with just my seed phrase?", answer: "Yes. Anyone who has your seed phrase can fully recreate your wallet on their device and drain all funds. Never share your seed phrase with anyone, never enter it on a website, and never store it digitally where it could be hacked. Legitimate wallet companies and support staff will never ask for your seed phrase." },

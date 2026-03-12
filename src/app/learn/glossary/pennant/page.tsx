@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Pennant Pattern in Crypto Trading (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Pennant Pattern in Crypto Trading (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a pennant pattern is, how to identify bullish and bearish pennants, the flagpole, and how to trade pennant breakouts in cryptocurrency markets.",
 };
 
@@ -16,10 +16,14 @@ export default function PennantPage() {
       readTime="6 min read"
       intro="A pennant is a short-term continuation pattern that forms after a strong price move (the flagpole), followed by a brief period of consolidation with converging trendlines before the price continues in the original direction. Pennants resemble small symmetrical triangles and indicate a pause in the trend as the market digests the prior move. In crypto, pennants frequently appear during rapid rallies or sell-offs and can signal the resumption of powerful trends."
       toc={[
-        { id: "what-is-pennant", title: "What Is a Pennant?", level: 2 },
-        { id: "bullish-bearish", title: "Bullish vs Bearish Pennants", level: 2 },
-        { id: "vs-flag", title: "Pennant vs Flag Pattern", level: 2 },
-        { id: "trading", title: "Trading Pennant Breakouts", level: 2 },
+        { id: "what-is-pennant", title: "what-is-pennant", level: 2 },
+        { id: "what-is-a-pennant", title: "What Is a Pennant?", level: 2 },
+        { id: "bullish-bearish", title: "bullish-bearish", level: 2 },
+        { id: "bullish-vs-bearish-pennants", title: "Bullish vs Bearish Pennants", level: 2 },
+        { id: "vs-flag", title: "vs-flag", level: 2 },
+        { id: "pennant-vs-flag-pattern", title: "Pennant vs Flag Pattern", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-pennant-breakouts", title: "Trading Pennant Breakouts", level: 2 }
       ]}
       faqs={[
         { question: "How long do pennant patterns last?", answer: "Pennants typically last one to three weeks on daily charts. Patterns lasting more than three weeks begin to resemble symmetrical triangles and lose the sharp continuation characteristics of pennants. The brevity of the pattern reflects a quick pause before the trend resumes rather than extended indecision." },

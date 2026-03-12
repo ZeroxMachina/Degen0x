@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Blockchain Trilemma: Security, Scalability, Decentralization (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The Blockchain Trilemma: Security, Scalability, Decentralization (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand the blockchain trilemma: why blockchains struggle to achieve security, scalability, and decentralization simultaneously, and how different projects approach this fundamental trade-off.",
 };
@@ -17,10 +17,14 @@ export default function BlockchainTrilemmaPage() {
       readTime="8 min read"
       intro="The blockchain trilemma, a term coined by Ethereum co-founder Vitalik Buterin, describes the fundamental challenge of simultaneously achieving three desirable properties in a blockchain network: security, scalability, and decentralization. Most blockchains can optimize for two of these three properties but must compromise on the third. Understanding this trade-off is essential for evaluating blockchain projects and their architectural choices."
       toc={[
-        { id: "three-pillars", title: "The Three Pillars Explained", level: 2 },
-        { id: "trade-offs", title: "Trade-offs in Practice", level: 2 },
-        { id: "solutions", title: "Approaches to Solving the Trilemma", level: 2 },
-        { id: "project-comparisons", title: "How Major Projects Approach It", level: 2 },
+        { id: "three-pillars", title: "three-pillars", level: 2 },
+        { id: "the-three-pillars-explained", title: "The Three Pillars Explained", level: 2 },
+        { id: "trade-offs", title: "trade-offs", level: 2 },
+        { id: "trade-offs-in-practice", title: "Trade-offs in Practice", level: 2 },
+        { id: "solutions", title: "solutions", level: 2 },
+        { id: "approaches-to-solving-the-trilemma", title: "Approaches to Solving the Trilemma", level: 2 },
+        { id: "project-comparisons", title: "project-comparisons", level: 2 },
+        { id: "how-major-projects-approach-it", title: "How Major Projects Approach It", level: 2 }
       ]}
       faqs={[
         {

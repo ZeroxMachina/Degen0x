@@ -16,10 +16,14 @@ export default function CryptoInheritanceGuidePage() {
       readTime="10 min"
       intro="Ensuring cryptocurrency passes to heirs requires specific planning that traditional estate frameworks do not cover. Self-custodied crypto can be permanently lost without proper inheritance procedures."
       toc={[
-        { id: "section-1", title: "Inheritance Challenges", level: 2 },
-        { id: "section-2", title: "Planning Strategies", level: 2 },
-        { id: "section-3", title: "Tools and Solutions", level: 2 },
-        { id: "section-4", title: "Implementation Steps", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "inheritance-challenges", title: "Inheritance Challenges", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "planning-strategies", title: "Planning Strategies", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "tools-and-solutions", title: "Tools and Solutions", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "implementation-steps", title: "Implementation Steps", level: 2 }
       ]}
       faqs={[
         { question: "What happens to crypto when someone dies?", answer: "If no inheritance plan exists, self-custodied crypto may be permanently lost since no one else has the private keys. Exchange-held crypto may be recoverable through the platform's estate process. Proper planning ensures assets transfer to designated heirs." },

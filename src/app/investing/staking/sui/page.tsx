@@ -17,12 +17,18 @@ export default function StakeSuiPage() {
       readTime="9 min"
       intro="Sui staking lets SUI holders earn approximately 3-5% APY by delegating to validators on this high-performance layer-1 blockchain built with the Move programming language. With easy delegation through Sui Wallet and liquid staking options, participating in Sui network security is straightforward."
       toc={[
-        { id: "overview", title: "Sui Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake SUI Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Sui", level: 2 },
-        { id: "validators", title: "Validators & Staking Pools", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "sui-staking-overview", title: "Sui Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-sui-step-by-step", title: "How to Stake SUI Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-sui", title: "Risks of Staking Sui", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-staking-pools", title: "Validators & Staking Pools", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "What APY can I earn staking SUI?", answer: "SUI staking currently offers approximately 3-5% APY. The rate depends on validator commission, network stake subsidy distribution, and total SUI staked. Rewards are distributed at the end of each epoch (approximately 24 hours)." },

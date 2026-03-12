@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Aerodrome Finance (AERO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Aerodrome Finance (AERO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Aerodrome Finance (AERO), the leading DEX and liquidity layer on Base chain. Discover AERO tokenomics, ve(3,3) model, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function AerodromePage() {
       readTime="8 min read"
       intro="Aerodrome Finance (AERO) is the dominant decentralized exchange on Coinbase's Base Layer 2 network. Launched by the Velodrome team as its sister protocol on Base, Aerodrome uses the proven ve(3,3) tokenomics model to create an efficient liquidity marketplace. AERO has become the highest TVL protocol on Base and one of the highest-revenue DEXs across all chains."
       toc={[
-        { id: "what-is", title: "What Is Aerodrome Finance?", level: 2 },
-        { id: "how-it-works", title: "How Does Aerodrome Finance Work?", level: 2 },
-        { id: "tokenomics", title: "AERO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy AERO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-aerodrome-finance", title: "What Is Aerodrome Finance?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-aerodrome-finance-work", title: "How Does Aerodrome Finance Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "aero-tokenomics", title: "AERO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-aero", title: "How to Buy AERO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

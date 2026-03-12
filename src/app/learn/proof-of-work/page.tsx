@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Proof of Work (PoW) Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Proof of Work (PoW) Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand how Proof of Work consensus works, its role in securing Bitcoin and other blockchains, the mining process, energy debate, and comparison with Proof of Stake.",
 };
@@ -17,11 +17,16 @@ export default function ProofOfWorkPage() {
       readTime="9 min read"
       intro="Proof of Work (PoW) is the original consensus mechanism used by Bitcoin and several other blockchains to validate transactions and secure the network. It requires participants called miners to expend computational energy solving complex mathematical puzzles, with the winner earning the right to add the next block of transactions and receive a reward. PoW is the foundation upon which the first decentralized digital currency was built and remains one of the most battle-tested security models in blockchain."
       toc={[
-        { id: "what-is-pow", title: "What Is Proof of Work?", level: 2 },
-        { id: "mining-process", title: "The Mining Process", level: 2 },
-        { id: "security-model", title: "Security Model and 51% Attacks", level: 2 },
-        { id: "energy-debate", title: "The Energy Debate", level: 2 },
-        { id: "pow-vs-pos", title: "PoW vs PoS: Key Differences", level: 2 },
+        { id: "what-is-pow", title: "what-is-pow", level: 2 },
+        { id: "what-is-proof-of-work", title: "What Is Proof of Work?", level: 2 },
+        { id: "mining-process", title: "mining-process", level: 2 },
+        { id: "the-mining-process", title: "The Mining Process", level: 2 },
+        { id: "security-model", title: "security-model", level: 2 },
+        { id: "security-model-and-51-attacks", title: "Security Model and 51% Attacks", level: 2 },
+        { id: "energy-debate", title: "energy-debate", level: 2 },
+        { id: "the-energy-debate", title: "The Energy Debate", level: 2 },
+        { id: "pow-vs-pos", title: "pow-vs-pos", level: 2 },
+        { id: "pow-vs-pos-key-differences", title: "PoW vs PoS: Key Differences", level: 2 }
       ]}
       faqs={[
         {

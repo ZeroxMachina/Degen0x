@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Bitcoin Ecosystem Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The Bitcoin Ecosystem Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore the Bitcoin ecosystem including Ordinals, BRC-20 tokens, Lightning Network, Layer 2s, and the growing DeFi landscape building on Bitcoin.",
 };
@@ -17,10 +17,14 @@ export default function BitcoinEcosystemGuidePage() {
       readTime="10 min read"
       intro="Bitcoin is more than just digital gold. While BTC remains the dominant store-of-value cryptocurrency, the Bitcoin ecosystem has expanded dramatically with Ordinals, BRC-20 tokens, the Lightning Network, and emerging Layer 2 solutions. This new wave of Bitcoin innovation is bringing DeFi, NFTs, and programmability to the most secure and decentralized blockchain in existence, creating an entirely new economy built on Bitcoin's unmatched foundation."
       toc={[
-        { id: "bitcoin-ecosystem", title: "The Evolving Bitcoin Ecosystem", level: 2 },
-        { id: "ordinals-brc20", title: "Ordinals and BRC-20 Tokens", level: 2 },
+        { id: "bitcoin-ecosystem", title: "bitcoin-ecosystem", level: 2 },
+        { id: "the-evolving-bitcoin-ecosystem", title: "The Evolving Bitcoin Ecosystem", level: 2 },
+        { id: "ordinals-brc20", title: "ordinals-brc20", level: 2 },
+        { id: "ordinals-and-brc-20-tokens", title: "Ordinals and BRC-20 Tokens", level: 2 },
+        { id: "lightning-network", title: "lightning-network", level: 2 },
         { id: "lightning-network", title: "Lightning Network", level: 2 },
-        { id: "bitcoin-layer2s", title: "Bitcoin Layer 2s and DeFi", level: 2 },
+        { id: "bitcoin-layer2s", title: "bitcoin-layer2s", level: 2 },
+        { id: "bitcoin-layer-2s-and-defi", title: "Bitcoin Layer 2s and DeFi", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How Crypto Loans Are Taxed (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How Crypto Loans Are Taxed (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to crypto loan taxation. Learn when crypto loans trigger tax events, how interest is treated, and the tax implications of liquidation.",
 };
@@ -17,11 +17,16 @@ export default function CryptoLoanTaxesPage() {
       readTime="9 min read"
       intro="Crypto loans offer a way to access liquidity without triggering a taxable sale, but the tax implications are more complex than many realize. While borrowing itself is generally not a taxable event, activities surrounding the loan, including providing collateral in some DeFi protocols, earning interest from lending, and particularly getting liquidated, all have potential tax consequences. Understanding the complete tax picture of crypto loans is essential for proper compliance."
       toc={[
-        { id: "borrowing-tax", title: "Is Borrowing Taxable?", level: 2 },
-        { id: "interest-earned", title: "Tax on Interest Earned", level: 2 },
-        { id: "liquidation-tax", title: "Tax Implications of Liquidation", level: 2 },
-        { id: "defi-complications", title: "DeFi-Specific Tax Complications", level: 2 },
-        { id: "record-keeping", title: "Record Keeping Requirements", level: 2 },
+        { id: "borrowing-tax", title: "borrowing-tax", level: 2 },
+        { id: "is-borrowing-taxable", title: "Is Borrowing Taxable?", level: 2 },
+        { id: "interest-earned", title: "interest-earned", level: 2 },
+        { id: "tax-on-interest-earned", title: "Tax on Interest Earned", level: 2 },
+        { id: "liquidation-tax", title: "liquidation-tax", level: 2 },
+        { id: "tax-implications-of-liquidation", title: "Tax Implications of Liquidation", level: 2 },
+        { id: "defi-complications", title: "defi-complications", level: 2 },
+        { id: "defi-specific-tax-complications", title: "DeFi-Specific Tax Complications", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping-requirements", title: "Record Keeping Requirements", level: 2 }
       ]}
       faqs={[
         { question: "Is taking out a crypto loan a taxable event?", answer: "Generally no. In most jurisdictions, borrowing funds is not a taxable event because a loan is not income and there is an obligation to repay. This applies to both crypto-backed loans and traditional loans. However, some DeFi mechanisms may involve token swaps that could trigger tax events." },

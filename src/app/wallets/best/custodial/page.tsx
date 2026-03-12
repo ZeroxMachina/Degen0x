@@ -30,19 +30,19 @@ export default function BestCustodialWalletsPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Custodial Wallets", href: "/wallets/best/custodial" }]} />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Custodial Crypto Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Custodial Crypto Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">Custodial wallets manage your private keys on your behalf, trading self-sovereignty for convenience and recovery options. We evaluated the best custodial solutions for security practices, insurance, ease of use, and regulatory compliance.</p>
       </header>
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Custodial Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Custodial Wallets, Ranked</h2>
         <div className="space-y-6">{products.map((product, index) => (<ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />))}</div>
       </section>
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
-          <Link href="/wallets/compare/custodial-vs-non-custodial" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Custodial vs Non-Custodial</h3><p className="text-xs text-[var(--color-text-secondary)]">Compare custody models</p></Link>
-          <Link href="/wallets/best/beginners" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Best Beginner Wallets</h3><p className="text-xs text-[var(--color-text-secondary)]">Easy wallets for new users</p></Link>
-          <Link href="/wallets/learn/what-is-a-crypto-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">What Is a Crypto Wallet?</h3><p className="text-xs text-[var(--color-text-secondary)]">Wallet fundamentals</p></Link>
+          <Link href="/wallets/compare/custodial-vs-non-custodial" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Custodial vs Non-Custodial</h3><p className="text-xs text-[var(--color-text-secondary)]">Compare custody models</p></Link>
+          <Link href="/wallets/best/beginners" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Best Beginner Wallets</h3><p className="text-xs text-[var(--color-text-secondary)]">Easy wallets for new users</p></Link>
+          <Link href="/wallets/learn/what-is-a-crypto-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">What Is a Crypto Wallet?</h3><p className="text-xs text-[var(--color-text-secondary)]">Wallet fundamentals</p></Link>
         </div>
       </section>
       <FAQSection faqs={faqs} />

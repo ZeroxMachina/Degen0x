@@ -17,12 +17,18 @@ export default function StablecoinYieldStrategiesPage() {
       readTime="14 min"
       intro="Stablecoin yield strategies are among the most popular and accessible DeFi opportunities, offering returns on dollar-pegged assets without the price volatility of crypto. From simple lending on Aave to complex yield optimization through Pendle or Convex, stablecoin strategies span the full risk spectrum. This guide covers every major approach to earning yield on stablecoins, helping you match your risk tolerance with the right strategy."
       toc={[
-        { id: "lending-strategies", title: "Lending Protocol Strategies", level: 2 },
-        { id: "lp-strategies", title: "Liquidity Provision Strategies", level: 2 },
-        { id: "yield-aggregators", title: "Yield Aggregator Approaches", level: 2 },
-        { id: "advanced-strategies", title: "Advanced Stablecoin Strategies", level: 2 },
-        { id: "risk-comparison", title: "Risk Comparison Across Strategies", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "lending-strategies", title: "lending-strategies", level: 2 },
+        { id: "lending-protocol-strategies", title: "Lending Protocol Strategies", level: 2 },
+        { id: "lp-strategies", title: "lp-strategies", level: 2 },
+        { id: "liquidity-provision-strategies", title: "Liquidity Provision Strategies", level: 2 },
+        { id: "yield-aggregators", title: "yield-aggregators", level: 2 },
+        { id: "yield-aggregator-approaches", title: "Yield Aggregator Approaches", level: 2 },
+        { id: "advanced-strategies", title: "advanced-strategies", level: 2 },
+        { id: "advanced-stablecoin-strategies", title: "Advanced Stablecoin Strategies", level: 2 },
+        { id: "risk-comparison", title: "risk-comparison", level: 2 },
+        { id: "risk-comparison-across-strategies", title: "Risk Comparison Across Strategies", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What is the safest stablecoin yield strategy?", answer: "Lending USDC or DAI on Aave V3 on Ethereum mainnet is generally considered the safest DeFi stablecoin strategy. It offers modest yields (2-5%) but benefits from Aave's extensive security track record and deep liquidity. For even lower risk, consider T-bill backed stablecoins that pass through traditional finance yields." },

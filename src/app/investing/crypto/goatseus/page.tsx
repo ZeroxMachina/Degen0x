@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Goatseus Maximus (GOAT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Goatseus Maximus (GOAT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Goatseus Maximus (GOAT), the AI-promoted meme coin on Solana. Discover how it works, tokenomics, use cases, and how to buy GOAT.",
 };
 
 export default function GoatseusMaximusPage() {
   return (
-    <LearnPageLayout title="What Is Goatseus Maximus (GOAT)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Goatseus Maximus (GOAT) is a Solana-based meme coin that gained fame as the first cryptocurrency to be significantly promoted by an AI agent. The token was boosted by the AI agent Truth Terminal, sparking a broader narrative around AI agents and meme coins that defined a new era in crypto culture." toc={[{id:"what-is",title:"What Is Goatseus Maximus?",level:2},{id:"how-it-works",title:"How Does Goatseus Maximus Work?",level:2},{id:"tokenomics",title:"GOAT Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy GOAT",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Goatseus Maximus?",answer:"Goatseus Maximus (GOAT) is a Solana meme coin that became the first token significantly promoted by an AI agent called Truth Terminal, pioneering the AI-meme coin crossover narrative."},{question:"Where can I buy GOAT?",answer:"GOAT is available on Solana DEXes like Jupiter and Raydium, and has been listed on several centralized exchanges."},{question:"Is Goatseus Maximus a good investment?",answer:"GOAT is a speculative meme coin. While it has historical significance as the first AI-promoted meme coin, its value is driven by narrative and sentiment. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"ai16z",href:"/investing/crypto/ai16z",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Goatseus Maximus (GOAT)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Goatseus Maximus (GOAT) is a Solana-based meme coin that gained fame as the first cryptocurrency to be significantly promoted by an AI agent. The token was boosted by the AI agent Truth Terminal, sparking a broader narrative around AI agents and meme coins that defined a new era in crypto culture." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-goatseus-maximus", title: "What Is Goatseus Maximus?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-goatseus-maximus-work", title: "How Does Goatseus Maximus Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "goat-tokenomics", title: "GOAT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-goat", title: "How to Buy GOAT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Goatseus Maximus?",answer:"Goatseus Maximus (GOAT) is a Solana meme coin that became the first token significantly promoted by an AI agent called Truth Terminal, pioneering the AI-meme coin crossover narrative."},{question:"Where can I buy GOAT?",answer:"GOAT is available on Solana DEXes like Jupiter and Raydium, and has been listed on several centralized exchanges."},{question:"Is Goatseus Maximus a good investment?",answer:"GOAT is a speculative meme coin. While it has historical significance as the first AI-promoted meme coin, its value is driven by narrative and sentiment. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"ai16z",href:"/investing/crypto/ai16z",category:"Investing"}]}>
       <h2 id="what-is">What Is Goatseus Maximus?</h2>
       <p>Goatseus Maximus (GOAT) is a meme coin on Solana that became a cultural phenomenon when it was promoted by Truth Terminal, an AI agent that had received funding and began autonomously posting about the token on social media. This marked the first time an AI agent meaningfully influenced a cryptocurrency's price through organic promotion, creating an entirely new narrative category in crypto.</p>
       <p>The token's rise highlighted the intersection of AI agents and meme coin culture, sparking a wave of AI-themed tokens and AI agent projects. GOAT became a symbol of the emerging AI agent economy in crypto, where autonomous agents can influence markets and create cultural moments.</p>

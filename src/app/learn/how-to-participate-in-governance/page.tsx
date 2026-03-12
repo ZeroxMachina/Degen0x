@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToParticipateInGovernancePage() {
   return (
     <LearnPageLayout title="How to Participate in Governance" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Cryptocurrency governance allows token holders to shape protocol development, treasury spending, and parameter changes through voting. Participation in governance is a fundamental right of token ownership and a responsibility that strengthens the decentralized ecosystem. This guide explains how governance works and how to participate effectively."
-      toc={[{ id: "overview", title: "How Governance Works", level: 2 },{ id: "platforms", title: "Governance Platforms", level: 2 },{ id: "voting", title: "Voting on Proposals", level: 2 },{ id: "delegation", title: "Delegation", level: 2 },{ id: "getting-involved", title: "Getting More Involved", level: 2 }]}
+      toc={[
+        { id: "overview", title: "overview", level: 2 },
+        { id: "how-governance-works", title: "How Governance Works", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "governance-platforms", title: "Governance Platforms", level: 2 },
+        { id: "voting", title: "voting", level: 2 },
+        { id: "voting-on-proposals", title: "Voting on Proposals", level: 2 },
+        { id: "delegation", title: "delegation", level: 2 },
+        { id: "delegation", title: "Delegation", level: 2 },
+        { id: "getting-involved", title: "getting-involved", level: 2 },
+        { id: "getting-more-involved", title: "Getting More Involved", level: 2 }
+      ]}
       faqs={[
         { question: "Do I need to lock my tokens to vote?", answer: "It depends on the protocol. Some governance systems use snapshot voting where tokens stay in your wallet. Others require locking or staking tokens in a governance contract. Some use vote-escrow models (veTokens) where longer lock periods give more voting power." },
         { question: "What is governance delegation?", answer: "Delegation allows you to assign your voting power to another address (a delegate) who votes on your behalf. You retain ownership of your tokens and can undelegate at any time. This is useful if you want to participate indirectly without following every proposal." },

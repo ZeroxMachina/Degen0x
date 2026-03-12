@@ -31,7 +31,7 @@ const products: Product[] = [
     ],
     fees: "2-6% annually",
     bestFor: "Comprehensive smart contract protection",
-    affiliateUrl: "https://cryptodegen.com/go/nexus-mutual",
+    affiliateUrl: "https://degen0x.com/go/nexus-mutual",
     category: "insurance",
     featured: true,
   },
@@ -53,7 +53,7 @@ const products: Product[] = [
     ],
     fees: "1.5-5% annually",
     bestFor: "Multi-chain DeFi users",
-    affiliateUrl: "https://cryptodegen.com/go/insurace",
+    affiliateUrl: "https://degen0x.com/go/insurace",
     category: "insurance",
   },
   {
@@ -74,7 +74,7 @@ const products: Product[] = [
     ],
     fees: "2-5% annually",
     bestFor: "Users wanting automated, dispute-free claims",
-    affiliateUrl: "https://cryptodegen.com/go/neptune-mutual",
+    affiliateUrl: "https://degen0x.com/go/neptune-mutual",
     category: "insurance",
   },
 ];
@@ -117,7 +117,7 @@ export default function SmartContractCoverPage() {
       <AffiliateDisclosure />
 
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Smart Contract Insurance of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">
@@ -143,16 +143,16 @@ export default function SmartContractCoverPage() {
       </div>
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Choose Smart Contract Cover</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Choose Smart Contract Cover</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <p>
             When selecting smart contract insurance, start by identifying which protocols you have funds deposited in and check which insurance providers offer coverage for those specific protocols. Consider the following factors:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong className="text-white">Covered Events:</strong> Read the policy wording carefully. Some covers only protect against code exploits, while others also cover economic design failures and governance attacks.</li>
-            <li><strong className="text-white">Claim Process:</strong> Understand whether claims are assessed by community vote (discretionary) or triggered automatically (parametric). Parametric covers provide faster payouts but may not cover all scenarios.</li>
-            <li><strong className="text-white">Capital Adequacy:</strong> Check the insurance protocol&apos;s capital pool relative to total active cover. A well-capitalized protocol can pay out even large claims.</li>
-            <li><strong className="text-white">Premium Cost:</strong> Compare premium rates across providers. Bundling multiple covers can reduce costs if you have positions in several protocols.</li>
+            <li><strong className="text-[var(--color-text)]">Covered Events:</strong> Read the policy wording carefully. Some covers only protect against code exploits, while others also cover economic design failures and governance attacks.</li>
+            <li><strong className="text-[var(--color-text)]">Claim Process:</strong> Understand whether claims are assessed by community vote (discretionary) or triggered automatically (parametric). Parametric covers provide faster payouts but may not cover all scenarios.</li>
+            <li><strong className="text-[var(--color-text)]">Capital Adequacy:</strong> Check the insurance protocol&apos;s capital pool relative to total active cover. A well-capitalized protocol can pay out even large claims.</li>
+            <li><strong className="text-[var(--color-text)]">Premium Cost:</strong> Compare premium rates across providers. Bundling multiple covers can reduce costs if you have positions in several protocols.</li>
           </ul>
         </div>
       </section>

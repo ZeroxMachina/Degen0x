@@ -17,10 +17,14 @@ export default function BestVirtualCryptoCardsPage() {
       readTime="7 min"
       intro="Virtual crypto cards provide instant access to crypto spending without waiting for a physical card to arrive. They are ideal for online purchases, subscriptions, and digital services. Many crypto card platforms now offer virtual cards that can be added to Apple Pay or Google Pay for contactless in-store payments. This guide covers the best virtual crypto card options and their unique advantages."
       toc={[
-        { id: "virtual-advantages", title: "Advantages of Virtual Cards", level: 2 },
-        { id: "top-virtual-cards", title: "Top Virtual Crypto Cards", level: 2 },
-        { id: "mobile-wallets", title: "Mobile Wallet Integration", level: 2 },
-        { id: "security-privacy", title: "Security and Privacy Benefits", level: 2 },
+        { id: "virtual-advantages", title: "virtual-advantages", level: 2 },
+        { id: "advantages-of-virtual-cards", title: "Advantages of Virtual Cards", level: 2 },
+        { id: "top-virtual-cards", title: "top-virtual-cards", level: 2 },
+        { id: "top-virtual-crypto-cards", title: "Top Virtual Crypto Cards", level: 2 },
+        { id: "mobile-wallets", title: "mobile-wallets", level: 2 },
+        { id: "mobile-wallet-integration", title: "Mobile Wallet Integration", level: 2 },
+        { id: "security-privacy", title: "security-privacy", level: 2 },
+        { id: "security-and-privacy-benefits", title: "Security and Privacy Benefits", level: 2 }
       ]}
       faqs={[
         { question: "Can I use a virtual crypto card in stores?", answer: "Yes, if the virtual card supports Apple Pay, Google Pay, or Samsung Pay. Once added to your mobile wallet, you can tap to pay at any contactless terminal. This effectively gives you the same in-store functionality as a physical card without carrying one." },

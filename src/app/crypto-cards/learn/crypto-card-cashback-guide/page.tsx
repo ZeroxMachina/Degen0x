@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Maximizing Crypto Card Cashback (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Maximizing Crypto Card Cashback (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to maximize cashback rewards on crypto debit cards. Compare cashback rates, bonus categories, stacking strategies, and the best cards for rewards.",
 };
 
@@ -11,7 +11,16 @@ export default function CryptoCardCashbackGuidePage() {
   return (
     <LearnPageLayout title="Maximizing Crypto Card Cashback" categoryName="Crypto Cards" categorySlug="crypto-cards" readTime="8 min read"
       intro="Crypto card cashback rewards can significantly offset your spending costs and even build your crypto portfolio passively. With rates ranging from 1% to 8% depending on the card tier and provider, optimizing your cashback strategy matters. However, the complexity of staking requirements, token volatility, and category restrictions means that the highest advertised rate is not always the best deal. This guide breaks down how crypto cashback works, compares the top reward programs, and shares strategies for maximizing your returns."
-      toc={[{ id: "how-cashback-works", title: "How Crypto Cashback Works", level: 2 }, { id: "comparing-rates", title: "Comparing Cashback Rates", level: 2 }, { id: "maximizing-rewards", title: "Maximizing Your Rewards", level: 2 }, { id: "cashback-pitfalls", title: "Common Pitfalls", level: 2 }]}
+      toc={[
+        { id: "how-cashback-works", title: "how-cashback-works", level: 2 },
+        { id: "how-crypto-cashback-works", title: "How Crypto Cashback Works", level: 2 },
+        { id: "comparing-rates", title: "comparing-rates", level: 2 },
+        { id: "comparing-cashback-rates", title: "Comparing Cashback Rates", level: 2 },
+        { id: "maximizing-rewards", title: "maximizing-rewards", level: 2 },
+        { id: "maximizing-your-rewards", title: "Maximizing Your Rewards", level: 2 },
+        { id: "cashback-pitfalls", title: "cashback-pitfalls", level: 2 },
+        { id: "common-pitfalls", title: "Common Pitfalls", level: 2 }
+      ]}
       faqs={[{ question: "Is crypto cashback better than traditional card cashback?", answer: "It depends. Crypto cashback rates (1-8%) can be higher than traditional cards (1-2%). However, crypto rewards are typically paid in the platform's native token, which can be volatile. A 5% cashback in CRO (Crypto.com's token) is only better than 2% cash back if CRO maintains or increases in value. If CRO drops 50%, your effective cashback is only 2.5%. Consider this volatility when comparing programs." },
         { question: "Do I need to stake tokens to earn cashback?", answer: "Many cards require staking the platform's native token to unlock higher cashback tiers. For example, Crypto.com requires staking CRO for 180 days to access premium card tiers. Higher stakes unlock higher cashback rates and additional perks. Some cards like the Coinbase Card offer cashback without staking requirements, though typically at lower rates. Factor in the staking capital requirement when evaluating the effective return." },
         { question: "Can I convert my crypto cashback to fiat immediately?", answer: "Most platforms allow you to sell crypto rewards for fiat at any time. Some have minimum withdrawal amounts or brief hold periods. If you want to lock in the fiat value of your cashback immediately, sell the reward tokens as soon as they arrive. Alternatively, many reward-savvy users hold their cashback tokens as a form of dollar-cost averaging into the platform's ecosystem token." }]}

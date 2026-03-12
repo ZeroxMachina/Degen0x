@@ -229,8 +229,8 @@ export default function VolatilityScannerPage() {
                   style={{ backgroundColor: bg }}
                   title={`${coin.name}: ${coin.vol1d}% 1d volatility`}
                 >
-                  <div className="text-xs font-black text-white drop-shadow">{coin.symbol}</div>
-                  <div className="text-[10px] font-bold text-white/80">{coin.vol1d.toFixed(1)}%</div>
+                  <div className="text-xs font-black text-[var(--color-text)] drop-shadow">{coin.symbol}</div>
+                  <div className="text-[10px] font-bold text-[var(--color-text)]/80">{coin.vol1d.toFixed(1)}%</div>
                 </div>
               );
             })}
@@ -252,7 +252,7 @@ export default function VolatilityScannerPage() {
                 key={r}
                 onClick={() => setRiskFilter(r)}
                 className={`px-3 py-2 text-xs font-bold capitalize transition-colors ${
-                  riskFilter === r ? 'bg-orange-600 text-white' : 'text-gray-400 hover:text-white hover:bg-[#1c2330]'
+                  riskFilter === r ? 'bg-orange-600 text-[var(--color-text)]' : 'text-gray-400 hover:text-[var(--color-text)] hover:bg-[#1c2330]'
                 }`}
               >
                 {r === 'all' ? 'All Risk' : r}
@@ -265,7 +265,7 @@ export default function VolatilityScannerPage() {
                 key={s}
                 onClick={() => setSectorFilter(s)}
                 className={`px-3 py-2 text-xs font-bold transition-colors ${
-                  sectorFilter === s ? 'bg-purple-600 text-white' : 'text-gray-400 hover:text-white hover:bg-[#1c2330]'
+                  sectorFilter === s ? 'bg-purple-600 text-[var(--color-text)]' : 'text-gray-400 hover:text-[var(--color-text)] hover:bg-[#1c2330]'
                 }`}
               >
                 {s}
@@ -284,22 +284,22 @@ export default function VolatilityScannerPage() {
                   <th className="p-3 text-left">Coin</th>
                   <th className="p-3 text-left">Risk</th>
                   <th className="p-3 text-left">Trend</th>
-                  <th className="p-3 text-right cursor-pointer hover:text-white" onClick={() => handleSort('vol1d')}>
+                  <th className="p-3 text-right cursor-pointer hover:text-[var(--color-text)]" onClick={() => handleSort('vol1d')}>
                     Vol 1d {sortKey === 'vol1d' ? (sortDir === 'desc' ? '▼' : '▲') : ''}
                   </th>
-                  <th className="p-3 text-right cursor-pointer hover:text-white" onClick={() => handleSort('vol7d')}>
+                  <th className="p-3 text-right cursor-pointer hover:text-[var(--color-text)]" onClick={() => handleSort('vol7d')}>
                     Vol 7d {sortKey === 'vol7d' ? (sortDir === 'desc' ? '▼' : '▲') : ''}
                   </th>
-                  <th className="p-3 text-right cursor-pointer hover:text-white" onClick={() => handleSort('vol30d')}>
+                  <th className="p-3 text-right cursor-pointer hover:text-[var(--color-text)]" onClick={() => handleSort('vol30d')}>
                     Vol 30d {sortKey === 'vol30d' ? (sortDir === 'desc' ? '▼' : '▲') : ''}
                   </th>
-                  <th className="p-3 text-right cursor-pointer hover:text-white" onClick={() => handleSort('atr14')}>
+                  <th className="p-3 text-right cursor-pointer hover:text-[var(--color-text)]" onClick={() => handleSort('atr14')}>
                     ATR(14) {sortKey === 'atr14' ? (sortDir === 'desc' ? '▼' : '▲') : ''}
                   </th>
-                  <th className="p-3 text-right cursor-pointer hover:text-white" onClick={() => handleSort('bollingerWidth')}>
+                  <th className="p-3 text-right cursor-pointer hover:text-[var(--color-text)]" onClick={() => handleSort('bollingerWidth')}>
                     BB Width {sortKey === 'bollingerWidth' ? (sortDir === 'desc' ? '▼' : '▲') : ''}
                   </th>
-                  <th className="p-3 text-right cursor-pointer hover:text-white" onClick={() => handleSort('avgDailyRange')}>
+                  <th className="p-3 text-right cursor-pointer hover:text-[var(--color-text)]" onClick={() => handleSort('avgDailyRange')}>
                     Avg Range {sortKey === 'avgDailyRange' ? (sortDir === 'desc' ? '▼' : '▲') : ''}
                   </th>
                   <th className="p-3 text-right">30d Range</th>

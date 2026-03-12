@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Denmark (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Denmark (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Denmark. Find DKK and EUR-friendly platforms with MobilePay support, low fees, and Danish regulatory compliance.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesDenmark() {
       readTime="8 min read"
       intro="Denmark has a progressive stance on cryptocurrency, with the Danish Financial Supervisory Authority (Finanstilsynet) overseeing digital asset services. Danish traders enjoy access to major global exchanges with EUR and DKK deposit options. With strong digital infrastructure and high rates of fintech adoption, Denmark provides an excellent environment for crypto trading."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Denmark", level: 2 },
-        { id: "regulation", title: "Crypto Regulation in Denmark", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-denmark", title: "Top Exchanges for Denmark", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-denmark", title: "Crypto Regulation in Denmark", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "How to Choose an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "how-to-choose-an-exchange", title: "How to Choose an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Denmark?", answer: "Yes, cryptocurrency is legal in Denmark. The Finanstilsynet regulates virtual asset service providers under the Danish AML Act. Denmark follows EU-wide MiCA regulations for comprehensive crypto oversight." },

@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Mother Iggy (MOTHER)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Mother Iggy (MOTHER)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Mother Iggy (MOTHER), the celebrity-backed meme coin on Solana. Discover how it works, tokenomics, use cases, and how to buy MOTHER.",
 };
 
 export default function MotherIggyPage() {
   return (
-    <LearnPageLayout title="What Is Mother Iggy (MOTHER)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Mother Iggy (MOTHER) is a celebrity-backed meme coin on Solana associated with musician Iggy Azalea. The token represents a growing trend of celebrities and public figures launching their own crypto tokens, leveraging their existing fanbases to create community-driven digital assets." toc={[{id:"what-is",title:"What Is Mother Iggy?",level:2},{id:"how-it-works",title:"How Does Mother Iggy Work?",level:2},{id:"tokenomics",title:"MOTHER Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy MOTHER",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Mother Iggy?",answer:"Mother Iggy (MOTHER) is a Solana-based meme coin backed by musician Iggy Azalea. It combines celebrity influence with meme coin culture to build a community-driven token."},{question:"Where can I buy MOTHER?",answer:"MOTHER is available on Solana DEXes like Jupiter and Raydium, and has been listed on select centralized exchanges."},{question:"Is Mother Iggy a good investment?",answer:"MOTHER is a celebrity-driven meme coin with speculative value tied to continued celebrity engagement. Celebrity tokens carry unique risks. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Mother Iggy (MOTHER)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Mother Iggy (MOTHER) is a celebrity-backed meme coin on Solana associated with musician Iggy Azalea. The token represents a growing trend of celebrities and public figures launching their own crypto tokens, leveraging their existing fanbases to create community-driven digital assets." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-mother-iggy", title: "What Is Mother Iggy?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-mother-iggy-work", title: "How Does Mother Iggy Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mother-tokenomics", title: "MOTHER Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mother", title: "How to Buy MOTHER", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Mother Iggy?",answer:"Mother Iggy (MOTHER) is a Solana-based meme coin backed by musician Iggy Azalea. It combines celebrity influence with meme coin culture to build a community-driven token."},{question:"Where can I buy MOTHER?",answer:"MOTHER is available on Solana DEXes like Jupiter and Raydium, and has been listed on select centralized exchanges."},{question:"Is Mother Iggy a good investment?",answer:"MOTHER is a celebrity-driven meme coin with speculative value tied to continued celebrity engagement. Celebrity tokens carry unique risks. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
       <h2 id="what-is">What Is Mother Iggy?</h2>
       <p>Mother Iggy (MOTHER) is a Solana-based meme token launched by musician and cultural figure Iggy Azalea. The token taps into the celebrity coin trend where public figures leverage their social media following and cultural influence to create crypto communities. Iggy Azalea actively promoted the token across her social media platforms, driving initial interest and trading volume.</p>
       <p>The project represents the intersection of celebrity culture and decentralized finance, where fan engagement is tokenized and communities form around shared cultural affinity rather than technological utility.</p>

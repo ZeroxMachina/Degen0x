@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0% platform fee on swaps; 0.1%/0.12% perp fees",
   bestFor: "Solana traders seeking optimal swap execution",
-  affiliateUrl: "https://cryptodegen.com/go/jupiter",
+  affiliateUrl: "https://degen0x.com/go/jupiter",
   category: "exchanges",
 };
 

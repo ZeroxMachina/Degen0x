@@ -26,11 +26,16 @@ export default function LiquidStakingGuidePage() {
       readTime="10 min"
       intro="Liquid staking has revolutionized how crypto holders earn staking rewards. Instead of locking up your tokens, liquid staking protocols issue derivative tokens that represent your staked position, allowing you to earn yield while still participating in DeFi. This guide covers everything from the basics to advanced strategies."
       toc={[
+        { id: "what-is-liquid-staking", title: "what-is-liquid-staking", level: 2 },
         { id: "what-is-liquid-staking", title: "What Is Liquid Staking?", level: 2 },
-        { id: "how-it-works", title: "How Liquid Staking Works", level: 2 },
-        { id: "top-protocols", title: "Top Liquid Staking Protocols", level: 2 },
-        { id: "strategies", title: "Liquid Staking Strategies", level: 2 },
-        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-liquid-staking-works", title: "How Liquid Staking Works", level: 2 },
+        { id: "top-protocols", title: "top-protocols", level: 2 },
+        { id: "top-liquid-staking-protocols", title: "Top Liquid Staking Protocols", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "liquid-staking-strategies", title: "Liquid Staking Strategies", level: 2 },
+        { id: "risks-and-considerations", title: "risks-and-considerations", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Akash Network (AKT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Akash Network (AKT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Akash Network (AKT), the decentralized cloud computing marketplace. Discover how it works, tokenomics, use cases, and how to buy AKT.",
 };
@@ -17,12 +17,18 @@ export default function AkashPage() {
       readTime="8 min read"
       intro="Akash Network is a decentralized open-source cloud computing marketplace that connects users needing compute resources with providers who have spare capacity. Built on the Cosmos SDK, Akash offers GPU and CPU computing at significantly lower costs than centralized cloud providers, positioning itself as the decentralized alternative to AWS and Google Cloud."
       toc={[
-        { id: "what-is", title: "What Is Akash Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Akash Work?", level: 2 },
-        { id: "tokenomics", title: "AKT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy AKT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-akash-network", title: "What Is Akash Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-akash-work", title: "How Does Akash Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "akt-tokenomics", title: "AKT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-akt", title: "How to Buy AKT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

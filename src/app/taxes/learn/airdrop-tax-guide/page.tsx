@@ -18,12 +18,18 @@ export default function AirdropTaxGuidePage() {
       readTime="10 min read"
       intro="Crypto airdrops have become a major wealth creation event, with some airdrops worth thousands or even tens of thousands of dollars per recipient. But these free tokens come with tax obligations in most jurisdictions. Understanding when airdrops become taxable, how to value them, and the difference between claimed and unsolicited airdrops is crucial for anyone participating in the crypto ecosystem."
       toc={[
-        { id: "taxable-event", title: "When Airdrops Become Taxable", level: 2 },
-        { id: "valuation", title: "Determining Fair Market Value", level: 2 },
-        { id: "claimed-vs-received", title: "Claimed vs Unsolicited Airdrops", level: 2 },
-        { id: "retroactive", title: "Retroactive & Governance Airdrops", level: 2 },
-        { id: "by-country", title: "Airdrop Tax Rules by Country", level: 2 },
-        { id: "strategies", title: "Airdrop Tax Strategies", level: 2 },
+        { id: "taxable-event", title: "taxable-event", level: 2 },
+        { id: "when-airdrops-become-taxable", title: "When Airdrops Become Taxable", level: 2 },
+        { id: "valuation", title: "valuation", level: 2 },
+        { id: "determining-fair-market-value", title: "Determining Fair Market Value", level: 2 },
+        { id: "claimed-vs-received", title: "claimed-vs-received", level: 2 },
+        { id: "claimed-vs-unsolicited-airdrops", title: "Claimed vs Unsolicited Airdrops", level: 2 },
+        { id: "retroactive", title: "retroactive", level: 2 },
+        { id: "retroactive-governance-airdrops", title: "Retroactive & Governance Airdrops", level: 2 },
+        { id: "by-country", title: "by-country", level: 2 },
+        { id: "airdrop-tax-rules-by-country", title: "Airdrop Tax Rules by Country", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "airdrop-tax-strategies", title: "Airdrop Tax Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Are all airdrops taxable?", answer: "In most jurisdictions, yes. Airdrops are generally treated as ordinary income at fair market value when you receive or claim them. Some countries like the UK make a distinction between airdrops received for a service (taxable) and truly unsolicited airdrops (not immediately taxable)." },

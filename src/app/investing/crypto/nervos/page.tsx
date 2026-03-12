@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Nervos Network (CKB)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Nervos Network (CKB)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Nervos Network (CKB), the layered blockchain infrastructure for Bitcoin interoperability. Discover how it works, tokenomics, use cases, and how to buy CKB.",
 };
@@ -17,12 +17,18 @@ export default function NervosPage() {
       readTime="8 min read"
       intro="Nervos Network is a layered blockchain infrastructure that uses the Common Knowledge Base (CKB) as its Layer 1 proof-of-work blockchain. Designed for interoperability and flexibility, Nervos has positioned itself as a key infrastructure for Bitcoin Layer 2 solutions and cross-chain applications through its UTXO-based Cell Model."
       toc={[
-        { id: "what-is", title: "What Is Nervos Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Nervos Work?", level: 2 },
-        { id: "tokenomics", title: "CKB Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy CKB", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-nervos-network", title: "What Is Nervos Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-nervos-work", title: "How Does Nervos Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ckb-tokenomics", title: "CKB Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ckb", title: "How to Buy CKB", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

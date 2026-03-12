@@ -16,13 +16,20 @@ export default function HowToUseMetaMaskPage() {
       readTime="12 min"
       intro="MetaMask is the most widely used Ethereum wallet and your gateway to the world of DeFi, NFTs, and Web3. This guide walks you through everything from installation and setup to connecting to decentralized applications and managing your assets securely."
       toc={[
-        { id: "install", title: "Installing MetaMask", level: 2 },
-        { id: "setup", title: "Setting Up Your Wallet", level: 2 },
-        { id: "fund", title: "Funding Your Wallet", level: 2 },
-        { id: "send-receive", title: "Sending & Receiving Crypto", level: 2 },
-        { id: "networks", title: "Adding Networks (Polygon, Arbitrum, etc.)", level: 2 },
-        { id: "defi", title: "Connecting to DeFi & dApps", level: 2 },
-        { id: "security", title: "Security Best Practices", level: 2 },
+        { id: "install", title: "install", level: 2 },
+        { id: "installing-metamask", title: "Installing MetaMask", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "setting-up-your-wallet", title: "Setting Up Your Wallet", level: 2 },
+        { id: "fund", title: "fund", level: 2 },
+        { id: "funding-your-wallet", title: "Funding Your Wallet", level: 2 },
+        { id: "send-receive", title: "send-receive", level: 2 },
+        { id: "sending-receiving-crypto", title: "Sending & Receiving Crypto", level: 2 },
+        { id: "networks", title: "networks", level: 2 },
+        { id: "adding-networks-polygon-arbitrum-etc", title: "Adding Networks (Polygon, Arbitrum, etc.)", level: 2 },
+        { id: "defi", title: "defi", level: 2 },
+        { id: "connecting-to-defi-dapps", title: "Connecting to DeFi & dApps", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-best-practices", title: "Security Best Practices", level: 2 }
       ]}
       faqs={[
         {

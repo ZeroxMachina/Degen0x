@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `MEV (Maximal Extractable Value) Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `MEV (Maximal Extractable Value) Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what MEV is, how miners and validators extract value from transaction ordering, types of MEV including frontrunning and sandwich attacks, and how to protect yourself.",
 };
 
@@ -16,10 +16,14 @@ export default function MEVPage() {
       readTime="8 min read"
       intro="Maximal Extractable Value (MEV) refers to the profit that block producers (miners or validators) can extract by including, excluding, or reordering transactions within a block. MEV has become one of the most significant issues in blockchain design, affecting transaction costs, fairness, and the user experience. Understanding MEV is critical for any DeFi user because it directly impacts the prices you receive on trades and the costs you pay for transactions."
       toc={[
+        { id: "what-is-mev", title: "what-is-mev", level: 2 },
         { id: "what-is-mev", title: "What Is MEV?", level: 2 },
-        { id: "types", title: "Types of MEV", level: 2 },
-        { id: "impact", title: "Impact on Users", level: 2 },
-        { id: "protection", title: "Protecting Against MEV", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-mev", title: "Types of MEV", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-users", title: "Impact on Users", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "protecting-against-mev", title: "Protecting Against MEV", level: 2 }
       ]}
       faqs={[
         { question: "How much MEV is extracted daily?", answer: "MEV extraction on Ethereum alone amounts to millions of dollars daily. The total value extracted has exceeded billions cumulatively since DeFi's growth. This represents a hidden tax on DeFi users whose transactions are frontrun, sandwiched, or otherwise exploited by MEV searchers and block producers." },

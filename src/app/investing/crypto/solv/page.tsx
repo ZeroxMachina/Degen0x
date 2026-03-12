@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Solv Protocol (SOLV)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Solv Protocol (SOLV)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Solv Protocol (SOLV), the Bitcoin staking abstraction layer. Discover how it works, tokenomics, use cases, and how to buy SOLV.",
 };
@@ -17,12 +17,18 @@ export default function SolvPage() {
       readTime="8 min read"
       intro="Solv Protocol is a Bitcoin staking abstraction layer that unifies Bitcoin staking across multiple protocols and chains through SolvBTC, a yield-bearing Bitcoin token. By aggregating BTC staking opportunities from Babylon, Ethena, CoreDAO, and other sources, Solv provides a single interface for Bitcoin holders to access diverse yield strategies while maintaining Bitcoin-denominated exposure."
       toc={[
-        { id: "what-is", title: "What Is Solv Protocol?", level: 2 },
-        { id: "how-it-works", title: "How Does Solv Protocol Work?", level: 2 },
-        { id: "tokenomics", title: "SOLV Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SOLV", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-solv-protocol", title: "What Is Solv Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-solv-protocol-work", title: "How Does Solv Protocol Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "solv-tokenomics", title: "SOLV Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-solv", title: "How to Buy SOLV", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Solv Protocol?", answer: "Solv Protocol is a Bitcoin staking abstraction layer that unifies BTC yield opportunities across multiple protocols through SolvBTC, providing a single entry point for diverse Bitcoin staking strategies." },

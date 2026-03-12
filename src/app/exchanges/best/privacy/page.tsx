@@ -17,11 +17,16 @@ export default function BestPrivacyExchangesPage() {
       readTime="10 min"
       intro="Privacy-focused crypto traders want exchanges that minimize data collection, support privacy coins, and offer trading with reduced or no KYC requirements. While the regulatory landscape has made truly anonymous trading harder, several options still exist for privacy-conscious users."
       toc={[
-        { id: "privacy-landscape", title: "The Privacy Exchange Landscape", level: 2 },
-        { id: "dex-options", title: "Decentralized Exchanges (Best Privacy)", level: 2 },
-        { id: "low-kyc-cex", title: "Low-KYC Centralized Exchanges", level: 2 },
-        { id: "privacy-coins", title: "Privacy Coin Support", level: 2 },
-        { id: "privacy-tips", title: "Privacy Best Practices", level: 2 },
+        { id: "privacy-landscape", title: "privacy-landscape", level: 2 },
+        { id: "the-privacy-exchange-landscape", title: "The Privacy Exchange Landscape", level: 2 },
+        { id: "dex-options", title: "dex-options", level: 2 },
+        { id: "decentralized-exchanges-best-privacy", title: "Decentralized Exchanges (Best Privacy)", level: 2 },
+        { id: "low-kyc-cex", title: "low-kyc-cex", level: 2 },
+        { id: "low-kyc-centralized-exchanges", title: "Low-KYC Centralized Exchanges", level: 2 },
+        { id: "privacy-coins", title: "privacy-coins", level: 2 },
+        { id: "privacy-coin-support", title: "Privacy Coin Support", level: 2 },
+        { id: "privacy-tips", title: "privacy-tips", level: 2 },
+        { id: "privacy-best-practices", title: "Privacy Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "Can I trade crypto without KYC?", answer: "Yes, decentralized exchanges like Uniswap, Jupiter, and dYdX require no KYC — you connect a wallet and trade. Some centralized exchanges allow limited trading without full KYC, though this is becoming less common." },

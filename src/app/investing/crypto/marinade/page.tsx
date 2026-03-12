@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Marinade Finance (MNDE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Marinade Finance (MNDE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Marinade Finance (MNDE), the Solana liquid staking protocol for network decentralization. Discover how it works, tokenomics, and how to buy MNDE.",
 };
@@ -17,12 +17,18 @@ export default function MarinadePage() {
       readTime="7 min read"
       intro="Marinade Finance is a liquid staking protocol on Solana that focuses on decentralizing the network's validator set. By algorithmically distributing stake across hundreds of validators based on performance and decentralization metrics, Marinade strengthens Solana's network security while providing mSOL as a liquid staking token for DeFi use."
       toc={[
-        { id: "what-is", title: "What Is Marinade Finance?", level: 2 },
-        { id: "how-it-works", title: "How Does Marinade Work?", level: 2 },
-        { id: "tokenomics", title: "MNDE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MNDE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-marinade-finance", title: "What Is Marinade Finance?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-marinade-work", title: "How Does Marinade Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mnde-tokenomics", title: "MNDE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mnde", title: "How to Buy MNDE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

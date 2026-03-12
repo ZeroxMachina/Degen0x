@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Argentina (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Argentina (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Argentina. Learn about income tax on digital assets, personal assets tax, and navigating crypto compliance in Argentina's complex tax system.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesArgentinaPage() {
       readTime="8 min read"
       intro="Argentina has one of the highest crypto adoption rates in Latin America, driven by persistent inflation and currency controls. The tax treatment of crypto in Argentina is complex, involving income tax on gains, personal assets tax on holdings, and the challenge of valuation in a country with multiple exchange rates. The AFIP (Administracion Federal de Ingresos Publicos) has been increasing scrutiny of crypto transactions while the regulatory framework continues to evolve."
       toc={[
-        { id: "income-tax", title: "Income Tax on Crypto", level: 2 },
-        { id: "personal-assets", title: "Personal Assets Tax (Bienes Personales)", level: 2 },
-        { id: "valuation-challenges", title: "Valuation and Exchange Rate Challenges", level: 2 },
-        { id: "reporting-afip", title: "AFIP Reporting Requirements", level: 2 },
-        { id: "practical-tips", title: "Practical Tips for Argentine Investors", level: 2 },
+        { id: "income-tax", title: "income-tax", level: 2 },
+        { id: "income-tax-on-crypto", title: "Income Tax on Crypto", level: 2 },
+        { id: "personal-assets", title: "personal-assets", level: 2 },
+        { id: "personal-assets-tax-bienes-personales", title: "Personal Assets Tax (Bienes Personales)", level: 2 },
+        { id: "valuation-challenges", title: "valuation-challenges", level: 2 },
+        { id: "valuation-and-exchange-rate-challenges", title: "Valuation and Exchange Rate Challenges", level: 2 },
+        { id: "reporting-afip", title: "reporting-afip", level: 2 },
+        { id: "afip-reporting-requirements", title: "AFIP Reporting Requirements", level: 2 },
+        { id: "practical-tips", title: "practical-tips", level: 2 },
+        { id: "practical-tips-for-argentine-investors", title: "Practical Tips for Argentine Investors", level: 2 }
       ]}
       faqs={[
         { question: "How is crypto taxed in Argentina?", answer: "Crypto gains in Argentina are subject to income tax (Impuesto a las Ganancias). For individuals, digital currency gains from Argentine sources are taxed at 15%. The personal assets tax (Bienes Personales) also applies to crypto holdings at rates up to 2.25% on the value of assets held as of December 31st." },

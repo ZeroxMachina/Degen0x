@@ -482,8 +482,8 @@ export default function NarrativeTracker() {
                 )} p-4 rounded-lg hover:scale-105 transition duration-200 cursor-pointer`}
               >
                 <div className="text-2xl mb-2">{narrative.emoji}</div>
-                <div className="font-semibold text-sm text-white mb-2">{narrative.name}</div>
-                <div className="text-3xl font-bold text-white">{narrative.heat}°</div>
+                <div className="font-semibold text-sm text-[var(--color-text)] mb-2">{narrative.name}</div>
+                <div className="text-3xl font-bold text-[var(--color-text)]">{narrative.heat}°</div>
                 <div className="text-xs mt-2 opacity-80">
                   {narrative.momentum === 'up' && '📈 +5.2%'}
                   {narrative.momentum === 'down' && '📉 -3.8%'}

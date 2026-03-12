@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Belgium (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Belgium (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Belgium. Find EUR-friendly platforms with SEPA support, Bancontact deposits, and strong regulatory compliance.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesBelgium() {
       readTime="8 min read"
       intro="Belgium, home to the European Union's capital, has a well-developed crypto market with access to major European and international exchanges. The Financial Services and Markets Authority (FSMA) oversees crypto regulation, and Belgian traders benefit from excellent banking infrastructure with SEPA and Bancontact payment options. This guide helps Belgian crypto enthusiasts find the best platforms for their trading needs."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Belgium", level: 2 },
-        { id: "regulation", title: "Crypto Regulation in Belgium", level: 2 },
-        { id: "payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-belgium", title: "Top Exchanges for Belgium", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-belgium", title: "Crypto Regulation in Belgium", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "eur-payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "How to Choose an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "how-to-choose-an-exchange", title: "How to Choose an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Belgium?", answer: "Yes, cryptocurrency is legal in Belgium. The FSMA regulates crypto advertising and warns about risky products. Under MiCA, Belgium benefits from harmonized EU-wide crypto regulations." },

@@ -18,12 +18,18 @@ export default function StakePolkadotPage() {
       readTime="10 min"
       intro="Polkadot offers robust staking rewards of 10-15% APY through its Nominated Proof-of-Stake (NPoS) consensus mechanism. With the introduction of nomination pools, DOT holders of any size can now participate in staking without the technical complexity of running a validator. This guide covers everything from basic delegation to advanced nomination strategies."
       toc={[
-        { id: "overview", title: "Polkadot Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake DOT Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Polkadot", level: 2 },
-        { id: "validators", title: "Validators & Nomination Pools", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "polkadot-staking-overview", title: "Polkadot Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-dot-step-by-step", title: "How to Stake DOT Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-polkadot", title: "Risks of Staking Polkadot", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-nomination-pools", title: "Validators & Nomination Pools", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         {

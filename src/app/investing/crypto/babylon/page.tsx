@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Babylon (BABY)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Babylon (BABY)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Babylon (BABY), the Bitcoin staking protocol. Discover how it works, tokenomics, use cases, and how to buy BABY.",
 };
@@ -17,12 +17,18 @@ export default function BabylonPage() {
       readTime="9 min read"
       intro="Babylon is a Bitcoin staking protocol that enables BTC holders to stake their Bitcoin to provide economic security for proof-of-stake blockchains, without bridging or wrapping their BTC. Through cryptographic innovations, Babylon allows Bitcoin to be self-custodially staked on the Bitcoin network itself, earning staking rewards from PoS chains while maintaining full control over private keys."
       toc={[
-        { id: "what-is", title: "What Is Babylon?", level: 2 },
-        { id: "how-it-works", title: "How Does Babylon Work?", level: 2 },
-        { id: "tokenomics", title: "BABY Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy BABY", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-babylon", title: "What Is Babylon?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-babylon-work", title: "How Does Babylon Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "baby-tokenomics", title: "BABY Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-baby", title: "How to Buy BABY", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Babylon?", answer: "Babylon is a Bitcoin staking protocol that lets BTC holders stake their Bitcoin to secure PoS chains, earning rewards without bridging, wrapping, or giving up custody of their BTC." },

@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.1% spot; 0.02%/0.05% futures maker/taker",
   bestFor: "Copy traders and derivatives enthusiasts",
-  affiliateUrl: "https://cryptodegen.com/go/bingx",
+  affiliateUrl: "https://degen0x.com/go/bingx",
   category: "exchanges",
 };
 

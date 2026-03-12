@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Flow (FLOW)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Flow (FLOW)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Flow (FLOW), the blockchain built by Dapper Labs for consumer applications and digital collectibles. Discover how it works, tokenomics, and how to buy FLOW.",
 };
@@ -17,12 +17,18 @@ export default function FlowPage() {
       readTime="8 min read"
       intro="Flow is a Layer 1 blockchain built by Dapper Labs, the creators of CryptoKitties and NBA Top Shot. Designed for mainstream consumer applications, Flow uses a multi-role architecture that separates consensus from execution to achieve high throughput without sharding, making it a platform for digital collectibles, gaming, and entertainment."
       toc={[
-        { id: "what-is", title: "What Is Flow?", level: 2 },
-        { id: "how-it-works", title: "How Does Flow Work?", level: 2 },
-        { id: "tokenomics", title: "FLOW Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy FLOW", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-flow", title: "What Is Flow?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-flow-work", title: "How Does Flow Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "flow-tokenomics", title: "FLOW Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-flow", title: "How to Buy FLOW", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

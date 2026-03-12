@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Trezor Safe 3", slug: "trezor-safe-3", rating: 4.6, affiliateUrl: "https://cryptodegen.com/go/trezor", features: { "Type": "Multi-coin hardware wallet", "Price": "$79", "Supported Coins": "8,000+", "Air-Gapped": "No (USB-C)", "Secure Element": "Yes", "Open Source": "Yes (fully)", "Shamir Backup": "Yes", "Bitcoin-Specific": "CoinJoin privacy" } },
-  { name: "Coldcard Mk4", slug: "coldcard-mk4", rating: 4.6, affiliateUrl: "https://cryptodegen.com/go/coldcard", features: { "Type": "Bitcoin-only wallet", "Price": "$149", "Supported Coins": "Bitcoin only", "Air-Gapped": "Yes (microSD + NFC)", "Secure Element": "Yes (dual)", "Open Source": "Yes (fully)", "Shamir Backup": "No (BIP-85 instead)", "Bitcoin-Specific": "PSBT, duress wallet, dice roll" } },
+  { name: "Trezor Safe 3", slug: "trezor-safe-3", rating: 4.6, affiliateUrl: "https://degen0x.com/go/trezor", features: { "Type": "Multi-coin hardware wallet", "Price": "$79", "Supported Coins": "8,000+", "Air-Gapped": "No (USB-C)", "Secure Element": "Yes", "Open Source": "Yes (fully)", "Shamir Backup": "Yes", "Bitcoin-Specific": "CoinJoin privacy" } },
+  { name: "Coldcard Mk4", slug: "coldcard-mk4", rating: 4.6, affiliateUrl: "https://degen0x.com/go/coldcard", features: { "Type": "Bitcoin-only wallet", "Price": "$149", "Supported Coins": "Bitcoin only", "Air-Gapped": "Yes (microSD + NFC)", "Secure Element": "Yes (dual)", "Open Source": "Yes (fully)", "Shamir Backup": "No (BIP-85 instead)", "Bitcoin-Specific": "PSBT, duress wallet, dice roll" } },
 ];
 
 const features = ["Type", "Price", "Supported Coins", "Air-Gapped", "Secure Element", "Open Source", "Shamir Backup", "Bitcoin-Specific"];
@@ -39,7 +39,7 @@ export default function TrezorVsColdcardPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Trezor vs Coldcard: Open-Source Wallet Showdown ({CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Trezor vs Coldcard: Open-Source Wallet Showdown ({CURRENT_YEAR})</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Both Trezor and Coldcard are fully open-source hardware wallets, but they serve different
           audiences. We compare their security models, features, and ideal use cases.
@@ -84,12 +84,12 @@ export default function TrezorVsColdcardPage() {
         <h2 id="verdict">Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose Trezor if:</strong> You want an open-source
+            <strong className="text-[var(--color-text)]">Choose Trezor if:</strong> You want an open-source
             wallet with broad coin support, CoinJoin privacy, Shamir Backup, and a polished
             desktop experience. Trezor Safe 3 offers the best value at $79.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose Coldcard if:</strong> You are a Bitcoin-only
+            <strong className="text-[var(--color-text)]">Choose Coldcard if:</strong> You are a Bitcoin-only
             holder who wants maximum security through air-gapped signing, dual secure elements,
             and advanced features like duress wallets and dice roll entropy.
           </p>
@@ -100,11 +100,11 @@ export default function TrezorVsColdcardPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/reviews/trezor" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Review</span>
-            <h3 className="font-semibold text-white text-sm">Trezor Full Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Trezor Full Review</h3>
           </Link>
           <Link href="/wallets/compare/ledger-vs-coldcard" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Compare</span>
-            <h3 className="font-semibold text-white text-sm">Ledger vs Coldcard</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Ledger vs Coldcard</h3>
           </Link>
         </div>
       </section>

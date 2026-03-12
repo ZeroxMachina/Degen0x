@@ -16,10 +16,14 @@ export default function Erc721VsErc1155ComparePage() {
       readTime="10 min"
       intro="A detailed comparison of Ethereum's two primary NFT token standards, examining technical differences, gas efficiency, use cases, and which standard best suits different project requirements."
       toc={[
-        { id: "section-1", title: "Standards Overview", level: 2 },
-        { id: "section-2", title: "Technical Comparison", level: 2 },
-        { id: "section-3", title: "Use Case Analysis", level: 2 },
-        { id: "section-4", title: "Choosing the Right Standard", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "standards-overview", title: "Standards Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "technical-comparison", title: "Technical Comparison", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "use-case-analysis", title: "Use Case Analysis", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "choosing-the-right-standard", title: "Choosing the Right Standard", level: 2 }
       ]}
       faqs={[
         { question: "What is the main difference between ERC-721 and ERC-1155?", answer: "ERC-721 creates individually unique tokens where each has a distinct ID. ERC-1155 supports multiple token types in a single contract, including both unique and fungible tokens, with batch transfer support for gas efficiency." },

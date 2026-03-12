@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Card Staking Benefits Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Card Staking Benefits Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Understand how staking works for crypto card tiers, calculate if staking is worth it, and compare staking requirements across major crypto card providers.",
 };
 
@@ -11,7 +11,16 @@ export default function CryptoCardStakingBenefitsPage() {
   return (
     <LearnPageLayout title="Crypto Card Staking Benefits Explained" categoryName="Crypto Cards" categorySlug="crypto-cards" readTime="8 min read"
       intro="Many crypto card providers use a tiered system where staking their native token unlocks progressively better card benefits. Higher staking amounts grant better cashback rates, premium perks like airport lounge access, and additional rebates on services. Understanding how staking tiers work, calculating whether the benefits justify the locked capital, and managing the risks of token price volatility is essential for choosing the right card tier. This guide analyzes staking-based card programs in detail."
-      toc={[{ id: "how-staking-tiers-work", title: "How Staking Tiers Work", level: 2 }, { id: "calculating-roi", title: "Calculating Staking ROI", level: 2 }, { id: "staking-risks", title: "Staking Risks", level: 2 }, { id: "staking-strategies", title: "Staking Strategies", level: 2 }]}
+      toc={[
+        { id: "how-staking-tiers-work", title: "how-staking-tiers-work", level: 2 },
+        { id: "how-staking-tiers-work", title: "How Staking Tiers Work", level: 2 },
+        { id: "calculating-roi", title: "calculating-roi", level: 2 },
+        { id: "calculating-staking-roi", title: "Calculating Staking ROI", level: 2 },
+        { id: "staking-risks", title: "staking-risks", level: 2 },
+        { id: "staking-risks", title: "Staking Risks", level: 2 },
+        { id: "staking-strategies", title: "staking-strategies", level: 2 },
+        { id: "staking-strategies", title: "Staking Strategies", level: 2 }
+      ]}
       faqs={[{ question: "What happens to my staked tokens when the lock-up period ends?", answer: "After the lock-up period (typically 180 days for Crypto.com), your staked tokens remain staked but you can choose to unstake them at any time. If you unstake, your card tier may be downgraded to the benefits of the tier below your current stake level. Many users continue staking to maintain their tier benefits. Some providers offer staking rewards (APR) on top of card benefits, providing additional incentive to maintain the stake." },
         { question: "Can I upgrade or downgrade my card tier?", answer: "Yes, most providers allow tier changes. Upgrading requires staking additional tokens to meet the higher tier threshold. Some providers charge a fee for issuing a new physical card with the upgraded tier design. Downgrading happens automatically if you unstake below your tier threshold. When downgrading, you retain the physical card but lose the associated benefits until you re-stake. Plan tier changes carefully considering both the staking cost and any card replacement fees." },
         { question: "Is it worth staking for the highest tier?", answer: "The highest tiers (like Crypto.com Obsidian at $400,000 CRO stake) are only worthwhile for very high spenders who can fully utilize the benefits. For most users, mid-tier cards (like Jade Green at $4,000 stake) offer the best value-to-stake ratio. Calculate your expected annual cashback and perks value, then compare it to the staking amount and the opportunity cost of those locked funds. Often the mid-tier sweet spot provides the best risk-adjusted return." }]}

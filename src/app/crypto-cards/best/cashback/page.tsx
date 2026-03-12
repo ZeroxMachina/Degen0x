@@ -61,7 +61,7 @@ export default function BestCashbackCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Cashback Cards ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -77,7 +77,7 @@ export default function BestCashbackCardsPage() {
           tank, or pay for dinner. The best cards offer rates ranging from 1% to 8% back, though
           the highest tiers often require staking the platform native token.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">How We Ranked These Cards</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">How We Ranked These Cards</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           We ranked cashback cards primarily by the effective cashback rate available to most
           users without extreme staking requirements. We also factored in the liquidity and
@@ -85,13 +85,13 @@ export default function BestCashbackCardsPage() {
           reliability of the issuer. A card paying 8% in an illiquid token you cannot easily
           sell is worth less than a card paying 3% in Bitcoin.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Our Top Picks</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Our Top Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          The <strong className="text-white">Crypto.com Visa</strong> leads our cashback rankings
+          The <strong className="text-[var(--color-text)]">Crypto.com Visa</strong> leads our cashback rankings
           thanks to its tiered rewards up to 5% with accessible staking thresholds and zero
-          annual fees. The <strong className="text-white">Binance Card</strong> offers the absolute
+          annual fees. The <strong className="text-[var(--color-text)]">Binance Card</strong> offers the absolute
           highest rate at 8% but requires substantial BNB holdings. For a no-staking option,
-          the <strong className="text-white">Fold Card</strong> earns Bitcoin on every purchase
+          the <strong className="text-[var(--color-text)]">Fold Card</strong> earns Bitcoin on every purchase
           with its unique spin-the-wheel rewards.
         </p>
       </div>
@@ -109,40 +109,40 @@ export default function BestCashbackCardsPage() {
 
       {/* Cashback Comparison */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Cashback Rate Breakdown</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Cashback Rate Breakdown</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg shrink-0">8%</span>
             <div>
-              <h3 className="text-white font-semibold">Binance Card / Wirex Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Binance Card / Wirex Card</h3>
               <p className="text-sm">Maximum tier requiring significant token staking (600+ BNB or high WXT holdings). Achievable for large portfolio holders.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg shrink-0">5%</span>
             <div>
-              <h3 className="text-white font-semibold">Crypto.com Visa (Icy White / Obsidian)</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Crypto.com Visa (Icy White / Obsidian)</h3>
               <p className="text-sm">Requires $40,000+ CRO staking. Includes premium perks like airport lounges and streaming reimbursements.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg shrink-0">4%</span>
             <div>
-              <h3 className="text-white font-semibold">Coinbase Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Coinbase Card</h3>
               <p className="text-sm">Up to 4% back in select crypto rewards. No staking required, though top rates are limited to certain reward tokens.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg shrink-0">3%</span>
             <div>
-              <h3 className="text-white font-semibold">Gemini Credit Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Gemini Credit Card</h3>
               <p className="text-sm">3% at restaurants, 2% at groceries, 1% on everything else. No staking needed; true credit card.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg shrink-0">1.5%</span>
             <div>
-              <h3 className="text-white font-semibold">Fold Card (Premium) / Rain Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Fold Card (Premium) / Rain Card</h3>
               <p className="text-sm">Guaranteed flat rates in Bitcoin. Fold+ costs $150/year; Rain has no annual fee.</p>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function BestCashbackCardsPage() {
 
       {/* Methodology */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           For cashback-focused rankings, we weight our evaluation criteria to prioritize
           effective reward rates and the real-world value of the rewards earned:
@@ -159,30 +159,30 @@ export default function BestCashbackCardsPage() {
         <ul className="space-y-2 text-[var(--color-text-secondary)]">
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>
-            <span><strong className="text-white">Effective cashback rate (35%):</strong> The actual percentage earned by a typical user without extreme staking requirements.</span>
+            <span><strong className="text-[var(--color-text)]">Effective cashback rate (35%):</strong> The actual percentage earned by a typical user without extreme staking requirements.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>
-            <span><strong className="text-white">Reward token quality (25%):</strong> Liquidity, market cap, and exchange availability of the reward cryptocurrency.</span>
+            <span><strong className="text-[var(--color-text)]">Reward token quality (25%):</strong> Liquidity, market cap, and exchange availability of the reward cryptocurrency.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>
-            <span><strong className="text-white">Fee impact (20%):</strong> Annual fees, conversion spreads, and hidden costs that could offset cashback earnings.</span>
+            <span><strong className="text-[var(--color-text)]">Fee impact (20%):</strong> Annual fees, conversion spreads, and hidden costs that could offset cashback earnings.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>
-            <span><strong className="text-white">Accessibility (10%):</strong> Geographic availability and ease of qualifying for the card.</span>
+            <span><strong className="text-[var(--color-text)]">Accessibility (10%):</strong> Geographic availability and ease of qualifying for the card.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>
-            <span><strong className="text-white">Issuer reliability (10%):</strong> Track record of honoring cashback rates and financial stability of the issuer.</span>
+            <span><strong className="text-[var(--color-text)]">Issuer reliability (10%):</strong> Track record of honoring cashback rates and financial stability of the issuer.</span>
           </li>
         </ul>
       </section>
 
       {/* Related Links */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "Best Crypto Rewards Cards", href: "/crypto-cards/best/rewards" },
@@ -195,7 +195,7 @@ export default function BestCashbackCardsPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
-              <span className="text-white font-semibold">{link.title}</span>
+              <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
               <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                 Read more &rarr;
               </span>

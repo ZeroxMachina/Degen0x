@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Smart Contract Security: Audits and Best Practices (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Smart Contract Security: Audits and Best Practices (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about smart contract security: common vulnerabilities, the audit process, formal verification, bug bounties, and how to evaluate the security of DeFi protocols before using them.",
 };
@@ -17,11 +17,16 @@ export default function SmartContractSecurityPage() {
       readTime="9 min read"
       intro="Smart contract security is one of the most critical aspects of the blockchain ecosystem. Since smart contracts are immutable once deployed and often manage millions or billions in user funds, vulnerabilities can lead to catastrophic, irreversible losses. Billions of dollars have been lost to smart contract exploits throughout DeFi's history. Understanding common vulnerabilities, the audit process, and how to evaluate a protocol's security posture is essential for anyone interacting with decentralized applications."
       toc={[
+        { id: "common-vulnerabilities", title: "common-vulnerabilities", level: 2 },
         { id: "common-vulnerabilities", title: "Common Vulnerabilities", level: 2 },
-        { id: "audit-process", title: "The Audit Process", level: 2 },
-        { id: "beyond-audits", title: "Beyond Audits: Bug Bounties and Formal Verification", level: 2 },
-        { id: "evaluating-security", title: "Evaluating Protocol Security as a User", level: 2 },
-        { id: "incident-response", title: "Incident Response and Recovery", level: 2 },
+        { id: "audit-process", title: "audit-process", level: 2 },
+        { id: "the-audit-process", title: "The Audit Process", level: 2 },
+        { id: "beyond-audits", title: "beyond-audits", level: 2 },
+        { id: "beyond-audits-bug-bounties-and-formal-verification", title: "Beyond Audits: Bug Bounties and Formal Verification", level: 2 },
+        { id: "evaluating-security", title: "evaluating-security", level: 2 },
+        { id: "evaluating-protocol-security-as-a-user", title: "Evaluating Protocol Security as a User", level: 2 },
+        { id: "incident-response", title: "incident-response", level: 2 },
+        { id: "incident-response-and-recovery", title: "Incident Response and Recovery", level: 2 }
       ]}
       faqs={[
         {

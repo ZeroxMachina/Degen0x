@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Euler Finance Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Euler Finance Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Euler Finance review covering the V2 modular vault architecture, permissionless lending, security improvements after the V1 exploit, and yield opportunities.",
 };
 

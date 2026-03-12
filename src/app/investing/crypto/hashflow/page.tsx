@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Hashflow (HFT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Hashflow (HFT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Hashflow (HFT), the RFQ-based DEX for zero-slippage trading. Discover how it works, tokenomics, use cases, and how to buy HFT.",
 };
 
@@ -16,12 +16,18 @@ export default function HashflowPage() {
       readTime="8 min read"
       intro="Hashflow is a decentralized exchange that uses a Request-for-Quote (RFQ) model with professional market makers to provide guaranteed zero-slippage trading and MEV protection. Unlike AMM-based DEXs where prices change between transaction submission and execution, Hashflow quotes are locked in, ensuring users get exactly the price they see."
       toc={[
-        { id: "what-is", title: "What Is Hashflow?", level: 2 },
-        { id: "how-it-works", title: "How Does Hashflow Work?", level: 2 },
-        { id: "tokenomics", title: "HFT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy HFT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-hashflow", title: "What Is Hashflow?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-hashflow-work", title: "How Does Hashflow Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "hft-tokenomics", title: "HFT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-hft", title: "How to Buy HFT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Hashflow?", answer: "Hashflow is an RFQ-based DEX where professional market makers provide guaranteed zero-slippage quotes with built-in MEV protection across multiple chains." },

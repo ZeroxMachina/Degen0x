@@ -17,7 +17,7 @@ const items: ComparisonItem[] = [
     name: "Coinbase Card",
     slug: "coinbase-card",
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/coinbase-card",
+    affiliateUrl: "https://degen0x.com/go/coinbase-card",
     features: {
       "Cashback Rate": "Up to 4% in select crypto",
       "Annual Fee": "$0",
@@ -34,7 +34,7 @@ const items: ComparisonItem[] = [
     name: "Gemini Credit Card",
     slug: "gemini-card",
     rating: 4.1,
-    affiliateUrl: "https://cryptodegen.com/go/gemini-card",
+    affiliateUrl: "https://degen0x.com/go/gemini-card",
     features: {
       "Cashback Rate": "3% dining, 2% groceries, 1% other",
       "Annual Fee": "$0",
@@ -73,7 +73,7 @@ export default function CoinbaseVsGeminiCardPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Coinbase Card vs Gemini Credit Card ({CURRENT_YEAR})
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -88,7 +88,7 @@ export default function CoinbaseVsGeminiCardPage() {
       <ComparisonTable items={items} features={features} title="Coinbase Card vs Gemini Credit Card" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Card Type: Debit vs Credit</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Card Type: Debit vs Credit</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           This is the most important distinction. The Coinbase Card is a Visa debit card that draws from
           your Coinbase balance, converting crypto to USD at the time of purchase. The Gemini card is a
@@ -96,12 +96,12 @@ export default function CoinbaseVsGeminiCardPage() {
           reports to credit bureaus to help build your credit score.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Gemini Credit Card</strong> &mdash; For users who want
+          <strong className="text-[var(--color-text)]">Winner: Gemini Credit Card</strong> &mdash; For users who want
           credit-building benefits and the consumer protections that come with credit cards, Gemini is
           the better choice.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Reward Structure</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Reward Structure</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Coinbase offers a flat rate of up to 4% back in select cryptocurrencies on all purchases. The
           actual rate depends on which token you choose as your reward currency. Gemini takes a
@@ -109,24 +109,24 @@ export default function CoinbaseVsGeminiCardPage() {
           heavily on dining and groceries, Gemini can yield higher effective returns.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Tie</strong> &mdash; It depends on your spending
+          <strong className="text-[var(--color-text)]">Winner: Tie</strong> &mdash; It depends on your spending
           pattern. Heavy restaurant and grocery shoppers favor Gemini; those with diverse spending prefer
           Coinbase&apos;s flat rate.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Fees and Costs</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fees and Costs</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Both cards have no annual fee. Coinbase charges a 2.49% liquidation spread when spending
           crypto, but this can be avoided by spending USDC. Gemini charges a 3% foreign transaction fee,
           making it poor for international spending. Neither card charges monthly maintenance fees.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Coinbase Card</strong> &mdash; If you fund with USDC,
+          <strong className="text-[var(--color-text)]">Winner: Coinbase Card</strong> &mdash; If you fund with USDC,
           you avoid the liquidation spread entirely. Gemini&apos;s 3% foreign transaction fee is a
           significant drawback for travelers.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Crypto Reward Flexibility</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Crypto Reward Flexibility</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Coinbase lets you choose from a selection of cryptocurrencies for your rewards, though the
           best rates are reserved for less mainstream tokens. Gemini offers rewards in 60 or more
@@ -134,12 +134,12 @@ export default function CoinbaseVsGeminiCardPage() {
           directly to your exchange account.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Gemini Credit Card</strong> &mdash; Greater selection
+          <strong className="text-[var(--color-text)]">Winner: Gemini Credit Card</strong> &mdash; Greater selection
           and the ability to switch reward currencies easily give Gemini the edge in flexibility.
         </p>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mt-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             The Gemini Credit Card is the better choice if you want to build credit, earn categorized
             rewards on dining and groceries, and receive your cashback in a wide variety of cryptos.

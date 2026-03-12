@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function CustodialPage() {
   return (
     <LearnPageLayout title="What Does Custodial Mean?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="In cryptocurrency, custodial refers to any arrangement where a third party holds and manages your private keys on your behalf. When you keep crypto on a centralized exchange like Coinbase or Binance, you are using custodial storage — the exchange controls the private keys and you access your funds through their platform. The alternative, non-custodial (self-custody), means you directly control your own private keys."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "custodial-vs-non-custodial", title: "Custodial vs Non-Custodial", level: 2 },{ id: "trade-offs", title: "Trade-Offs", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "custodial-vs-non-custodial", title: "custodial-vs-non-custodial", level: 2 },
+        { id: "custodial-vs-non-custodial", title: "Custodial vs Non-Custodial", level: 2 },
+        { id: "trade-offs", title: "trade-offs", level: 2 },
+        { id: "trade-offs", title: "Trade-Offs", level: 2 }
+      ]}
       faqs={[
         { question: "Is keeping crypto on an exchange custodial?", answer: "Yes, when you store cryptocurrency on a centralized exchange, the exchange holds the private keys to your assets. You have an account balance on their platform, but you do not directly control the underlying keys. This is why the crypto community uses the phrase 'not your keys, not your coins' — if the exchange is hacked, goes bankrupt, or freezes your account, you may lose access to your funds." },
         { question: "Which is safer, custodial or non-custodial?", answer: "Neither is inherently safer — it depends on the individual's technical ability and risk tolerance. Custodial solutions protect against user error (losing keys) but introduce counterparty risk (exchange hacks, bankruptcies like FTX). Non-custodial solutions eliminate counterparty risk but place full responsibility on the user to secure their private keys and seed phrases." },

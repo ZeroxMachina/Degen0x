@@ -12,11 +12,16 @@ export default function HowToProvideLiquidityPage() {
   return (
     <LearnPageLayout title="How to Provide Liquidity" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Providing liquidity to decentralized exchanges is one of the fundamental ways to earn yield in DeFi. By depositing tokens into liquidity pools, you enable trading activity and earn a share of trading fees. Understanding the mechanics, risks, and strategies of liquidity provision is essential for making informed decisions about this yield-generating activity."
       toc={[
-        { id: "how-it-works", title: "How Liquidity Provision Works", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-liquidity-provision-works", title: "How Liquidity Provision Works", level: 2 },
+        { id: "concentrated-liquidity", title: "concentrated-liquidity", level: 2 },
         { id: "concentrated-liquidity", title: "Concentrated Liquidity", level: 2 },
-        { id: "impermanent-loss", title: "Understanding Impermanent Loss", level: 2 },
-        { id: "strategies", title: "LP Strategies", level: 2 },
-        { id: "step-by-step", title: "Getting Started", level: 2 },
+        { id: "impermanent-loss", title: "impermanent-loss", level: 2 },
+        { id: "understanding-impermanent-loss", title: "Understanding Impermanent Loss", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "lp-strategies", title: "LP Strategies", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "How much can I earn providing liquidity?", answer: "Returns vary dramatically based on the trading pair, fee tier, pool volume, and your position's range. Stablecoin pairs might earn 2-10% APY, while volatile pairs can earn 20-100%+ but carry higher impermanent loss risk. Actual returns depend on market conditions and cannot be guaranteed." },

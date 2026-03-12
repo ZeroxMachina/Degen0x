@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Stacking Sats: The Bitcoin DCA Strategy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Stacking Sats: The Bitcoin DCA Strategy (${CURRENT_YEAR}) | degen0x`,
   description: "Complete guide to stacking sats (satoshis). The Bitcoin DCA strategy explained, best tools, frequency optimization, and building a Bitcoin position over time.",
 };
 
@@ -12,10 +12,14 @@ export default function StackingSatsPage() {
     <LearnPageLayout title="Stacking Sats: The Bitcoin DCA Strategy" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="7 min read"
       intro="Stacking sats is the practice of regularly accumulating satoshis (the smallest unit of Bitcoin, where 1 BTC equals 100 million sats) through consistent, disciplined purchases. Born from Bitcoin community culture, the stacking sats philosophy embraces long-term accumulation without concern for short-term price movements. It is the simplest and most psychologically sustainable approach to building a Bitcoin position over time."
       toc={[
-        { id: "philosophy", title: "The Stacking Sats Philosophy", level: 2 },
-        { id: "setup", title: "Setting Up Your Stack", level: 2 },
-        { id: "optimization", title: "Optimizing Your Strategy", level: 2 },
-        { id: "security", title: "Securing Your Sats", level: 2 },
+        { id: "philosophy", title: "philosophy", level: 2 },
+        { id: "the-stacking-sats-philosophy", title: "The Stacking Sats Philosophy", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "setting-up-your-stack", title: "Setting Up Your Stack", level: 2 },
+        { id: "optimization", title: "optimization", level: 2 },
+        { id: "optimizing-your-strategy", title: "Optimizing Your Strategy", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "securing-your-sats", title: "Securing Your Sats", level: 2 }
       ]}
       faqs={[
         { question: "What is a satoshi?", answer: "A satoshi (sat) is the smallest unit of Bitcoin: 1 Bitcoin equals 100,000,000 satoshis. Thinking in sats rather than whole Bitcoin makes accumulation feel more achievable. Instead of saying you own 0.005 BTC, you own 500,000 sats. At current prices, even small regular purchases add up to meaningful sat amounts over time." },

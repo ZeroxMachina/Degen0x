@@ -4,12 +4,6 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ToolStructuredData } from '@/components/StructuredData';
 
-export const metadata = {
-  title: 'Crypto Wallet Comparisons - CryptoDegen',
-  description: 'Compare popular crypto wallets: Ledger vs Trezor, MetaMask vs Phantom, Exodus vs Trust Wallet',
-  keywords: 'crypto wallet comparison, ledger trezor, metamask phantom, exodus trust wallet',
-};
-
 export default function WalletComparisonsHub() {
   const comparisons = [
     {
@@ -41,14 +35,15 @@ export default function WalletComparisonsHub() {
   return (
     <>
       <ToolStructuredData
-        name="Crypto Wallet Comparisons"
+        title="Crypto Wallet Comparisons"
         description="Comprehensive comparison guides for popular cryptocurrency wallets"
+        slug="compare/wallets"
       />
 
       <div style={styles.container}>
         <Breadcrumb items={[
           { label: 'Compare', href: '/compare' },
-          { label: 'Wallets', href: '/compare/wallets', active: true }
+          { label: 'Wallets', href: '/compare/wallets'}
         ]} />
 
         <div style={styles.header}>
@@ -128,38 +123,32 @@ const styles = {
     minHeight: '100vh',
     backgroundColor: 'var(--bg, #0d1117)',
     color: 'var(--text, #e6edf3)',
-    padding: '20px',
-  } as React.CSSProperties,
+    padding: '20px' } as React.CSSProperties,
   header: {
     maxWidth: '1200px',
     margin: '0 auto 60px',
-    textAlign: 'center' as const,
-  },
+    textAlign: 'center' as const },
   title: {
     fontSize: '48px',
     fontWeight: 'bold',
     marginBottom: '16px',
     background: 'linear-gradient(135deg, #0ea5e9, #8b5cf6)',
     WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-  },
+    WebkitTextFillColor: 'transparent' },
   subtitle: {
     fontSize: '18px',
     color: 'var(--text2, #8b949e)',
     maxWidth: '600px',
-    margin: '0 auto',
-  },
+    margin: '0 auto' },
   grid: {
     maxWidth: '1200px',
     margin: '0 auto 80px',
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-    gap: '24px',
-  },
+    gap: '24px' },
   cardLink: {
     textDecoration: 'none',
-    color: 'inherit',
-  },
+    color: 'inherit' },
   card: {
     backgroundColor: 'var(--surface, #161b22)',
     border: '1px solid var(--border, #30363d)',
@@ -169,36 +158,29 @@ const styles = {
     cursor: 'pointer',
     ':hover': {
       borderColor: '#0ea5e9',
-      boxShadow: '0 0 20px rgba(14, 165, 233, 0.2)',
-    },
-  } as React.CSSProperties,
+      boxShadow: '0 0 20px rgba(14, 165, 233, 0.2)' } } as React.CSSProperties,
   cardIcon: {
     fontSize: '48px',
-    marginBottom: '16px',
-  },
+    marginBottom: '16px' },
   cardTitle: {
     fontSize: '24px',
     fontWeight: 'bold',
     marginBottom: '8px',
-    color: 'var(--text, #e6edf3)',
-  },
+    color: 'var(--text, #e6edf3)' },
   cardCategory: {
     fontSize: '14px',
     color: '#0ea5e9',
     fontWeight: '600',
-    marginBottom: '12px',
-  },
+    marginBottom: '12px' },
   cardDescription: {
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
     marginBottom: '16px',
-    lineHeight: '1.6',
-  },
+    lineHeight: '1.6' },
   walletBadges: {
     display: 'flex',
     gap: '8px',
-    flexWrap: 'wrap' as const,
-  },
+    flexWrap: 'wrap' as const },
   badge: {
     backgroundColor: 'var(--surface2, #1c2330)',
     color: '#0ea5e9',
@@ -206,41 +188,34 @@ const styles = {
     borderRadius: '20px',
     fontSize: '12px',
     fontWeight: '600',
-    border: '1px solid #0ea5e9',
-  },
+    border: '1px solid #0ea5e9' },
   infoSection: {
     maxWidth: '1200px',
-    margin: '0 auto 80px',
-  },
+    margin: '0 auto 80px' },
   sectionTitle: {
     fontSize: '36px',
     fontWeight: 'bold',
     marginBottom: '40px',
-    textAlign: 'center' as const,
-  },
+    textAlign: 'center' as const },
   infoGrid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
     gap: '24px',
-    marginBottom: '40px',
-  },
+    marginBottom: '40px' },
   infoCard: {
     backgroundColor: 'var(--surface, #161b22)',
     border: '1px solid var(--border, #30363d)',
     borderRadius: '12px',
-    padding: '24px',
-  },
+    padding: '24px' },
   infoTitle: {
     fontSize: '18px',
     fontWeight: 'bold',
     marginBottom: '12px',
-    color: 'var(--text, #e6edf3)',
-  },
+    color: 'var(--text, #e6edf3)' },
   infoText: {
     fontSize: '14px',
     color: 'var(--text2, #8b949e)',
-    lineHeight: '1.6',
-  },
+    lineHeight: '1.6' },
   ctaSection: {
     maxWidth: '1200px',
     margin: '0 auto',
@@ -248,13 +223,10 @@ const styles = {
     border: '1px solid var(--border, #30363d)',
     borderRadius: '12px',
     padding: '40px',
-    textAlign: 'center' as const,
-  },
+    textAlign: 'center' as const },
   ctaText: {
     fontSize: '16px',
     color: 'var(--text2, #8b949e)',
     maxWidth: '600px',
     margin: '0 auto',
-    lineHeight: '1.6',
-  },
-};
+    lineHeight: '1.6' } };

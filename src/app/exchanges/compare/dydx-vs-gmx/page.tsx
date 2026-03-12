@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `dYdX vs GMX (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `dYdX vs GMX (${CURRENT_YEAR}) | degen0x`,
   description: "Compare dYdX vs GMX decentralized perpetual exchanges. Fees, chains, liquidity, governance, and which DEX is better for perpetual futures.",
 };
 
@@ -16,12 +16,18 @@ export default function DYDXVsGMX() {
       readTime="8 min read"
       intro="dYdX and GMX are the leading decentralized perpetual futures platforms, each with unique approaches to on-chain derivatives trading. dYdX runs its own appchain with an order book model, while GMX uses a liquidity pool model on Arbitrum and Avalanche. This comparison helps DeFi traders choose the right decentralized derivatives platform."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "architecture", title: "architecture", level: 2 },
         { id: "architecture", title: "Architecture", level: 2 },
-        { id: "trading", title: "Trading Experience", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-experience", title: "Trading Experience", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
         { id: "tokenomics", title: "Tokenomics", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Do I need KYC for dYdX or GMX?", answer: "Neither platform requires KYC. Both are decentralized and can be accessed with just a crypto wallet. This is a key advantage over centralized exchanges." },

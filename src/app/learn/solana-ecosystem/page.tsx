@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Solana Ecosystem Deep Dive: DeFi, NFTs & Performance | CryptoDegen`,
+  title: `Solana Ecosystem Deep Dive: DeFi, NFTs & Performance | degen0x`,
   description:
     "Explore Solana's architecture, key DeFi protocols like Jupiter and Raydium, NFT marketplaces, meme coin culture, the Firedancer upgrade, and performance metrics.",
 };
@@ -17,12 +17,18 @@ export default function SolanaEcosystemPage() {
       readTime="13 min read"
       intro="Solana has evolved from a high-speed blockchain project to one of crypto's most dynamic ecosystems. With transaction costs under 0.001 SOL and throughput supporting millions of daily active users, Solana hosts thriving DeFi protocols, the second-largest NFT marketplace after Ethereum, and a unique meme coin culture that rivals even Ethereum's. This guide explores Solana's technical architecture, major DeFi protocols, NFT infrastructure, the upcoming Firedancer upgrade, and what drives the ecosystem's rapid innovation."
       toc={[
-        { id: "solana-architecture", title: "Solana Architecture & Speed", level: 2 },
+        { id: "solana-architecture", title: "solana-architecture", level: 2 },
+        { id: "solana-architecture-speed", title: "Solana Architecture & Speed", level: 2 },
+        { id: "key-defi-protocols", title: "key-defi-protocols", level: 2 },
         { id: "key-defi-protocols", title: "Key DeFi Protocols", level: 2 },
-        { id: "nft-marketplace", title: "Solana NFT Ecosystem", level: 2 },
-        { id: "meme-coin-culture", title: "Meme Coins & Community", level: 2 },
-        { id: "firedancer-upgrade", title: "Firedancer Upgrade & Future", level: 2 },
-        { id: "performance-metrics", title: "Performance Metrics", level: 2 },
+        { id: "nft-marketplace", title: "nft-marketplace", level: 2 },
+        { id: "solana-nft-ecosystem", title: "Solana NFT Ecosystem", level: 2 },
+        { id: "meme-coin-culture", title: "meme-coin-culture", level: 2 },
+        { id: "meme-coins-community", title: "Meme Coins & Community", level: 2 },
+        { id: "firedancer-upgrade", title: "firedancer-upgrade", level: 2 },
+        { id: "firedancer-upgrade-future", title: "Firedancer Upgrade & Future", level: 2 },
+        { id: "performance-metrics", title: "performance-metrics", level: 2 },
+        { id: "performance-metrics", title: "Performance Metrics", level: 2 }
       ]}
       faqs={[
         {

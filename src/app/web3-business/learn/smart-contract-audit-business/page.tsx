@@ -16,10 +16,14 @@ export default function SmartContractAuditBusinessPage() {
       readTime="10 min"
       intro="Smart contract audits are essential for any business deploying code handling user funds. Understanding the audit process, selecting auditors, and interpreting results ensures security before launch."
       toc={[
-        { id: "section-1", title: "Why Audits Matter", level: 2 },
-        { id: "section-2", title: "The Audit Process", level: 2 },
-        { id: "section-3", title: "Selecting an Auditor", level: 2 },
-        { id: "section-4", title: "Post-Audit Best Practices", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "why-audits-matter", title: "Why Audits Matter", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "the-audit-process", title: "The Audit Process", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "selecting-an-auditor", title: "Selecting an Auditor", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "post-audit-best-practices", title: "Post-Audit Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "How much does a smart contract audit cost?", answer: "Costs range from a few thousand dollars for simple contracts to hundreds of thousands for complex DeFi protocols. Pricing depends on codebase size, complexity, timeline, and auditor reputation. Budget for audits early in your development planning." },

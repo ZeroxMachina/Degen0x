@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Bulgaria (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Bulgaria (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Bulgaria. Find BGN and EUR-friendly platforms with local payment support, low fees, and EU regulatory compliance.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesBulgaria() {
       readTime="7 min read"
       intro="Bulgaria has a surprisingly active crypto community, with the country rumored to hold significant Bitcoin reserves. The Bulgarian National Revenue Agency oversees tax compliance for crypto, and Bulgarian traders can access major exchanges with BGN and EUR deposit options. With a strong IT sector and low cost of living, Bulgaria attracts crypto traders and blockchain developers alike."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Bulgaria", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-bulgaria", title: "Top Exchanges for Bulgaria", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Bulgaria?", answer: "Yes, cryptocurrency is legal in Bulgaria. The country follows EU AML directives, and VASPs must comply with registration requirements. Bulgaria is working toward eurozone membership, which will further harmonize its financial regulations." },

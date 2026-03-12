@@ -17,12 +17,18 @@ export default function WhatIsALiquidityPoolPage() {
       readTime="8 min"
       intro="A liquidity pool is a collection of cryptocurrency deposited in a smart contract that provides the trading liquidity for a decentralized exchange. Instead of matching individual buyers with sellers through an order book, DEXs use liquidity pools where anyone can deposit tokens and earn trading fees in return. This innovation democratized market making and enabled permissionless token trading."
       toc={[
-        { id: "how-pools-work", title: "How Liquidity Pools Work", level: 2 },
+        { id: "how-pools-work", title: "how-pools-work", level: 2 },
+        { id: "how-liquidity-pools-work", title: "How Liquidity Pools Work", level: 2 },
+        { id: "amm-mechanics", title: "amm-mechanics", level: 2 },
         { id: "amm-mechanics", title: "AMM Mechanics", level: 2 },
-        { id: "becoming-lp", title: "Becoming a Liquidity Provider", level: 2 },
+        { id: "becoming-lp", title: "becoming-lp", level: 2 },
+        { id: "becoming-a-liquidity-provider", title: "Becoming a Liquidity Provider", level: 2 },
+        { id: "lp-tokens", title: "lp-tokens", level: 2 },
         { id: "lp-tokens", title: "LP Tokens", level: 2 },
-        { id: "pool-types", title: "Types of Pools", level: 2 },
-        { id: "risks", title: "Liquidity Pool Risks", level: 2 },
+        { id: "pool-types", title: "pool-types", level: 2 },
+        { id: "types-of-pools", title: "Types of Pools", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "liquidity-pool-risks", title: "Liquidity Pool Risks", level: 2 }
       ]}
       faqs={[
         { question: "How do liquidity pools make money?", answer: "Liquidity pools generate revenue from trading fees charged on every swap. Uniswap V3 pools charge between 0.01% and 1% per trade. These fees are distributed proportionally to liquidity providers based on their share of the pool. Some pools also receive additional token incentives from the protocol." },

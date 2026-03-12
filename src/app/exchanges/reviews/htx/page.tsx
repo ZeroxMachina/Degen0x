@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `HTX Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `HTX Review (${CURRENT_YEAR}) | degen0x`,
   description:
     "Comprehensive HTX (formerly Huobi) exchange review. Fees, security, features, and trading experience analyzed in detail.",
 };

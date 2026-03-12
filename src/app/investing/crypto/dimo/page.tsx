@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is DIMO (DIMO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is DIMO (DIMO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about DIMO (DIMO), the decentralized vehicle data network. Discover how it works, tokenomics, use cases, and how to buy DIMO.",
 };
 
 export default function DimoPage() {
   return (
-    <LearnPageLayout title="What Is DIMO (DIMO)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="DIMO is a decentralized IoT platform that enables vehicle owners to collect, own, and monetize their car data. By connecting their vehicles through OBD-II dongles, the DIMO app, or native vehicle integrations, users earn DIMO tokens while building a comprehensive vehicle data network. This data powers applications for insurance, maintenance, fleet management, and automotive market intelligence." toc={[{id:"what-is",title:"What Is DIMO?",level:2},{id:"how-it-works",title:"How Does DIMO Work?",level:2},{id:"tokenomics",title:"DIMO Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy DIMO",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is DIMO?",answer:"DIMO is a decentralized vehicle data network where car owners earn tokens by sharing vehicle data, which powers applications for insurance, maintenance, and automotive intelligence."},{question:"Where can I buy DIMO?",answer:"DIMO is available on Coinbase, Uniswap, and other DEXs. It trades against ETH and USDT pairs on Polygon."},{question:"Is DIMO a good investment?",answer:"DIMO has strong real-world utility and growing vehicle connections, but automotive data monetization is competitive. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
+    <LearnPageLayout title="What Is DIMO (DIMO)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="DIMO is a decentralized IoT platform that enables vehicle owners to collect, own, and monetize their car data. By connecting their vehicles through OBD-II dongles, the DIMO app, or native vehicle integrations, users earn DIMO tokens while building a comprehensive vehicle data network. This data powers applications for insurance, maintenance, fleet management, and automotive market intelligence." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-dimo", title: "What Is DIMO?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-dimo-work", title: "How Does DIMO Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "dimo-tokenomics", title: "DIMO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-dimo", title: "How to Buy DIMO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is DIMO?",answer:"DIMO is a decentralized vehicle data network where car owners earn tokens by sharing vehicle data, which powers applications for insurance, maintenance, and automotive intelligence."},{question:"Where can I buy DIMO?",answer:"DIMO is available on Coinbase, Uniswap, and other DEXs. It trades against ETH and USDT pairs on Polygon."},{question:"Is DIMO a good investment?",answer:"DIMO has strong real-world utility and growing vehicle connections, but automotive data monetization is competitive. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
       <h2 id="what-is">What Is DIMO?</h2>
       <p>DIMO was founded to give vehicle owners control over their car data, which is traditionally captured exclusively by automakers and their affiliated service providers. The project recognizes that modern vehicles generate enormous amounts of data (location, speed, diagnostics, battery health, fuel consumption) that has significant commercial value, yet vehicle owners typically have no access to or benefit from this data. DIMO changes this dynamic by putting data ownership in the hands of drivers.</p>
       <p>The network has connected hundreds of thousands of vehicles across multiple countries. Users connect their vehicles through DIMO-certified hardware devices (OBD-II dongles like the AutoPi or Macaron), smart car APIs for Tesla, Rivian, and other connected vehicles, or software integrations. The collected data is stored in a user-controlled data vault, and vehicle owners decide which applications can access their data, maintaining sovereignty over their information while earning DIMO tokens for network participation.</p>

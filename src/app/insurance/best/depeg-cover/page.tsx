@@ -23,7 +23,7 @@ const products: Product[] = [
     cons: ["Limited stablecoin selection", "Complex mechanism for beginners", "Smaller liquidity pool"],
     fees: "1-4% annually",
     bestFor: "Automated stablecoin depeg protection",
-    affiliateUrl: "https://cryptodegen.com/go/risk-harbor",
+    affiliateUrl: "https://degen0x.com/go/risk-harbor",
     category: "insurance",
     featured: true,
   },
@@ -37,7 +37,7 @@ const products: Product[] = [
     cons: ["KYC required", "Sustained depeg required (not flash crashes)", "Higher premiums than specialists"],
     fees: "2-6% annually",
     bestFor: "Large stablecoin positions needing reliable coverage",
-    affiliateUrl: "https://cryptodegen.com/go/nexus-mutual",
+    affiliateUrl: "https://degen0x.com/go/nexus-mutual",
     category: "insurance",
   },
   {
@@ -50,7 +50,7 @@ const products: Product[] = [
     cons: ["Trigger threshold may differ from actual loss", "Smaller capital reserves", "Limited customization"],
     fees: "2-5% annually",
     bestFor: "Parametric depeg protection with clear terms",
-    affiliateUrl: "https://cryptodegen.com/go/unslashed",
+    affiliateUrl: "https://degen0x.com/go/unslashed",
     category: "insurance",
   },
 ];
@@ -85,7 +85,7 @@ export default function DepegCoverPage() {
       ]} />
       <AffiliateDisclosure />
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Stablecoin Depeg Cover of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Stablecoin Depeg Cover of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">
           Stablecoins are supposed to maintain a fixed value, but history has shown that depegging events can and do happen. Depeg cover insurance provides a financial safety net when stablecoins fail to hold their peg.
         </p>
@@ -102,18 +102,18 @@ export default function DepegCoverPage() {
         ))}
       </div>
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Understanding Depeg Risks by Stablecoin Type</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Understanding Depeg Risks by Stablecoin Type</h2>
         <div className="grid md:grid-cols-3 gap-6 text-[var(--color-text-secondary)]">
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Fiat-Backed</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Fiat-Backed</h3>
             <p>Stablecoins like USDC and USDT are backed by reserves of fiat currency and equivalents. Depeg risks include reserve inadequacy, banking partner failures, and regulatory freezes. These stablecoins are generally considered lower risk but are not immune to depegging.</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Crypto-Collateralized</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Crypto-Collateralized</h3>
             <p>DAI and similar stablecoins are backed by crypto collateral. Depeg risks include rapid collateral price drops that outpace liquidation mechanisms, oracle failures, and governance attacks. These carry moderate risk due to their dependence on volatile collateral.</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Algorithmic</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Algorithmic</h3>
             <p>Purely algorithmic stablecoins use supply-demand mechanics rather than collateral to maintain their peg. These carry the highest depeg risk, as demonstrated by several high-profile failures. Insurance premiums for algorithmic stablecoins are typically much higher.</p>
           </div>
         </div>

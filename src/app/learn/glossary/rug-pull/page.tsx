@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Rug Pull? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Rug Pull? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what rug pulls are, the different types, and how to identify and avoid this common crypto scam.",
 };
@@ -17,11 +17,16 @@ export default function RugPullPage() {
       readTime="5 min"
       intro="A rug pull is a crypto scam where the developers of a project suddenly abandon it and run away with investor funds. The name comes from the expression 'pulling the rug out from under someone.' Rug pulls typically involve creating a token, generating hype, attracting investment, and then draining the liquidity pool or dumping the developer's token holdings, leaving investors with worthless tokens."
       toc={[
-        { id: "definition", title: "What Is a Rug Pull?", level: 2 },
-        { id: "types", title: "Types of Rug Pulls", level: 2 },
-        { id: "red-flags", title: "Red Flags to Watch For", level: 2 },
-        { id: "protecting-yourself", title: "How to Protect Yourself", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-rug-pull", title: "What Is a Rug Pull?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-rug-pulls", title: "Types of Rug Pulls", level: 2 },
+        { id: "red-flags", title: "red-flags", level: 2 },
+        { id: "red-flags-to-watch-for", title: "Red Flags to Watch For", level: 2 },
+        { id: "protecting-yourself", title: "protecting-yourself", level: 2 },
+        { id: "how-to-protect-yourself", title: "How to Protect Yourself", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

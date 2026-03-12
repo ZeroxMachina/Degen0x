@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Credit Lines (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Credit Lines (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto-backed credit lines. Draw funds on demand, pay interest only on what you use, and maintain flexible repayment schedules.",
 };
 
@@ -16,10 +16,14 @@ export default function CreditLinesPage() {
       readTime="8 min read"
       intro="Crypto credit lines offer flexible, revolving access to funds backed by your cryptocurrency. Unlike fixed-term loans, credit lines let you draw and repay funds on demand, paying interest only on the amount you actually use. This makes them ideal for ongoing liquidity needs, irregular expenses, or as a financial safety net."
       toc={[
-        { id: "how-they-work", title: "How Crypto Credit Lines Work", level: 2 },
-        { id: "top-providers", title: "Top Credit Line Providers", level: 2 },
-        { id: "vs-fixed-loans", title: "Credit Lines vs Fixed Loans", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-crypto-credit-lines-work", title: "How Crypto Credit Lines Work", level: 2 },
+        { id: "top-providers", title: "top-providers", level: 2 },
+        { id: "top-credit-line-providers", title: "Top Credit Line Providers", level: 2 },
+        { id: "vs-fixed-loans", title: "vs-fixed-loans", level: 2 },
+        { id: "credit-lines-vs-fixed-loans", title: "Credit Lines vs Fixed Loans", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "How is a crypto credit line different from a loan?", answer: "A credit line gives you a revolving limit you can draw from anytime, paying interest only on drawn amounts. A fixed loan disburses the full amount upfront with a set repayment schedule. Credit lines offer more flexibility for variable needs." },

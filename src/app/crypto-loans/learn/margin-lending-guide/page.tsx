@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Margin Lending Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Margin Lending Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how crypto margin lending works. Understand leverage, margin calls, liquidation risks, and strategies for lending your crypto to margin traders.",
 };
@@ -17,10 +17,14 @@ export default function MarginLendingGuidePage() {
       readTime="8 min read"
       intro="Margin lending in crypto allows traders to borrow funds for leveraged trading while providing lenders with a relatively safe way to earn interest. As a margin lender, you provide capital to traders who use it for leveraged positions, earning interest on your funds. As a margin borrower, you use borrowed funds to amplify your trading positions. This guide explains both sides of margin lending, the platforms involved, and the risks to understand."
       toc={[
-        { id: "how-it-works", title: "How Margin Lending Works", level: 2 },
-        { id: "lending-side", title: "Earning from Margin Lending", level: 2 },
-        { id: "borrowing-side", title: "Borrowing for Leverage", level: 2 },
-        { id: "risks", title: "Risks on Both Sides", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-margin-lending-works", title: "How Margin Lending Works", level: 2 },
+        { id: "lending-side", title: "lending-side", level: 2 },
+        { id: "earning-from-margin-lending", title: "Earning from Margin Lending", level: 2 },
+        { id: "borrowing-side", title: "borrowing-side", level: 2 },
+        { id: "borrowing-for-leverage", title: "Borrowing for Leverage", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-on-both-sides", title: "Risks on Both Sides", level: 2 }
       ]}
       faqs={[
         { question: "What is crypto margin lending?", answer: "Margin lending is providing funds to traders who use them for leveraged positions. Lenders earn interest, and borrowers access leverage. The exchange typically guarantees the loan through automatic liquidation of the borrower's position if their losses approach the borrowed amount." },

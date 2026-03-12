@@ -31,7 +31,7 @@ export default function KoinlyVsCoinTrackerPage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Koinly vs CoinTracker: Which Is Better in {CURRENT_YEAR}?</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Koinly vs CoinTracker: Which Is Better in {CURRENT_YEAR}?</h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-2">
         Koinly and CoinTracker are two of the most popular crypto tax platforms. Koinly leads
         in integrations and pricing, while CoinTracker excels with its TurboTax integration
@@ -44,7 +44,7 @@ export default function KoinlyVsCoinTrackerPage() {
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Key Differences</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Key Differences</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The biggest differentiator is CoinTracker's direct TurboTax integration. If you use
           TurboTax for tax filing, CoinTracker provides the smoothest workflow with one-click
@@ -65,7 +65,7 @@ export default function KoinlyVsCoinTrackerPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Recommendation</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Recommendation</h2>
         <p className="text-[var(--color-text-secondary)]">
           Choose Koinly if you want the best overall value, use multiple exchanges, have
           international tax needs, or are active in DeFi. Choose CoinTracker if you use TurboTax

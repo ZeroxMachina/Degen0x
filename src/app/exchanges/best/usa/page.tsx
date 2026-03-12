@@ -71,7 +71,7 @@ export default function USAExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in the USA ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -88,7 +88,7 @@ export default function USAExchangesPage() {
           We have tested every major platform available to US users and ranked them based on
           fees, security, coin selection, and regulatory compliance.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">US Regulatory Environment</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">US Regulatory Environment</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Crypto regulation in the US spans multiple agencies: the SEC oversees securities
           aspects, the CFTC handles commodities and derivatives, FinCEN manages anti-money
@@ -97,7 +97,7 @@ export default function USAExchangesPage() {
           in. The regulatory landscape continues to evolve with new legislation being debated
           in Congress around stablecoin frameworks and market structure.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">How We Ranked These Exchanges</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">How We Ranked These Exchanges</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Our rankings prioritize regulatory compliance and security track record above all else
           for US users. We then evaluated trading fees, supported cryptocurrencies, deposit
@@ -118,22 +118,22 @@ export default function USAExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods in the USA</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods in the USA</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">ACH Bank Transfer</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">ACH Bank Transfer</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Free on most exchanges. Takes 1-5 business days to settle. Best for cost-conscious buyers.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Wire Transfer</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Wire Transfer</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">$10-$25 fee. Same-day settlement. Ideal for larger deposits over $10,000.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Debit Card</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Debit Card</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant purchase. 2-4% fee. Best for small, time-sensitive buys.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">PayPal / Apple Pay</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">PayPal / Apple Pay</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Supported on select exchanges. Fees vary. Convenient for users already in these ecosystems.</p>
           </div>
         </div>

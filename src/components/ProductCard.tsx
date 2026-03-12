@@ -12,7 +12,7 @@ function TrustScoreBadge({ score }: { score: number }) {
   const label = score >= 90 ? "Excellent" : score >= 80 ? "Very Good" : score >= 70 ? "Good" : "Fair";
   const color = score >= 90 ? "#3fb950" : score >= 80 ? "#58a6ff" : score >= 70 ? "#f59e0b" : "#8b949e";
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: 6 }} title={`CryptoDegen Trust Score: ${score}/100`}>
+    <div style={{ display: "flex", alignItems: "center", gap: 6 }} title={`degen0x Trust Score: ${score}/100`}>
       <div style={{
         width: 32, height: 32, borderRadius: "50%",
         border: `2px solid ${color}`,
@@ -37,7 +37,7 @@ export default function ProductCard({ product, rank, categorySlug }: Props) {
     <div className="glass p-6 card-hover">
       <div className="flex items-start justify-between gap-4">
         <div className="flex items-center gap-4">
-          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)]/80 backdrop-blur-sm flex items-center justify-center text-white font-bold shadow-lg shadow-indigo-500/20">
+          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)]/80 backdrop-blur-sm flex items-center justify-center text-[var(--color-text)] font-bold shadow-lg shadow-indigo-500/20">
             {rank}
           </div>
           <div>

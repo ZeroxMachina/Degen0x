@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Galxe (GAL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Galxe (GAL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Galxe (GAL), the leading Web3 credential and loyalty platform. Discover how it works, tokenomics, use cases, and how to buy GAL.",
 };
 
 export default function GalxePage() {
   return (
-    <LearnPageLayout title="What Is Galxe (GAL)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Galxe is the largest Web3 credential data network and community engagement platform, used by projects to create quests, distribute rewards, and build on-chain loyalty programs. With millions of unique users, Galxe has become the primary infrastructure for Web3 user acquisition, community building, and credential-based identity through its quest platform, Galxe ID, and Gravity blockchain." toc={[{id:"what-is",title:"What Is Galxe?",level:2},{id:"how-it-works",title:"How Does Galxe Work?",level:2},{id:"tokenomics",title:"GAL Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy GAL",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Galxe?",answer:"Galxe is the leading Web3 credential and quest platform where projects create campaigns and users earn rewards by completing on-chain and off-chain tasks."},{question:"Where can I buy GAL?",answer:"GAL is available on Binance, OKX, Bybit, and Uniswap. It trades against USDT, USDC, and ETH pairs."},{question:"Is Galxe a good investment?",answer:"Galxe is the dominant Web3 quest platform with millions of users, but revenue depends on crypto project marketing budgets. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Galxe (GAL)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Galxe is the largest Web3 credential data network and community engagement platform, used by projects to create quests, distribute rewards, and build on-chain loyalty programs. With millions of unique users, Galxe has become the primary infrastructure for Web3 user acquisition, community building, and credential-based identity through its quest platform, Galxe ID, and Gravity blockchain." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-galxe", title: "What Is Galxe?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-galxe-work", title: "How Does Galxe Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "gal-tokenomics", title: "GAL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-gal", title: "How to Buy GAL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Galxe?",answer:"Galxe is the leading Web3 credential and quest platform where projects create campaigns and users earn rewards by completing on-chain and off-chain tasks."},{question:"Where can I buy GAL?",answer:"GAL is available on Binance, OKX, Bybit, and Uniswap. It trades against USDT, USDC, and ETH pairs."},{question:"Is Galxe a good investment?",answer:"Galxe is the dominant Web3 quest platform with millions of users, but revenue depends on crypto project marketing budgets. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
       <h2 id="what-is">What Is Galxe?</h2>
       <p>Galxe (formerly Project Galaxy) was founded to create the infrastructure layer for Web3 credential data and community engagement. The platform allows any project to create campaigns where users complete specific tasks (like bridging assets, making swaps, or following social accounts) to earn points, NFT badges, and token rewards. This quest-based model has become the standard approach for crypto projects to attract users, incentivize protocol testing, and build engaged communities.</p>
       <p>Beyond quests, Galxe has expanded into a comprehensive Web3 identity and loyalty stack. Galxe ID provides a decentralized identity system that aggregates a user&apos;s credentials, quest completions, and on-chain activity into a verifiable profile. The Galxe Passport offers KYC verification for projects requiring compliance. Most recently, Galxe launched Gravity, a dedicated Layer 1 blockchain designed for omnichain smart contracts and cross-chain identity verification.</p>

@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Grass (GRASS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Grass (GRASS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Grass (GRASS), the decentralized web scraping and AI data network. Discover how it works, tokenomics, use cases, and how to buy GRASS.",
 };
 
 export default function GrassPage() {
   return (
-    <LearnPageLayout title="What Is Grass (GRASS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Grass is a decentralized data layer for AI that enables users to sell their unused internet bandwidth to create structured web datasets for AI training. By running the Grass browser extension or desktop node, users contribute to a distributed network that scrapes and processes public web data, which is then sold to AI companies. Grass aims to democratize access to web data that is currently monopolized by large tech companies." toc={[{id:"what-is",title:"What Is Grass?",level:2},{id:"how-it-works",title:"How Does Grass Work?",level:2},{id:"tokenomics",title:"GRASS Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy GRASS",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Grass?",answer:"Grass is a decentralized network where users share unused bandwidth to scrape public web data for AI training, earning GRASS tokens for contributing to the data collection network."},{question:"Where can I buy GRASS?",answer:"GRASS is available on Bybit, Gate.io, and Jupiter DEX on Solana. It trades against USDT and SOL pairs."},{question:"Is Grass a good investment?",answer:"Grass taps into AI data demand with millions of node operators, but the bandwidth-sharing model has regulatory and privacy considerations. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Grass (GRASS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Grass is a decentralized data layer for AI that enables users to sell their unused internet bandwidth to create structured web datasets for AI training. By running the Grass browser extension or desktop node, users contribute to a distributed network that scrapes and processes public web data, which is then sold to AI companies. Grass aims to democratize access to web data that is currently monopolized by large tech companies." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-grass", title: "What Is Grass?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-grass-work", title: "How Does Grass Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "grass-tokenomics", title: "GRASS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-grass", title: "How to Buy GRASS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Grass?",answer:"Grass is a decentralized network where users share unused bandwidth to scrape public web data for AI training, earning GRASS tokens for contributing to the data collection network."},{question:"Where can I buy GRASS?",answer:"GRASS is available on Bybit, Gate.io, and Jupiter DEX on Solana. It trades against USDT and SOL pairs."},{question:"Is Grass a good investment?",answer:"Grass taps into AI data demand with millions of node operators, but the bandwidth-sharing model has regulatory and privacy considerations. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
       <h2 id="what-is">What Is Grass?</h2>
       <p>Grass was founded by Andrej Ramaswami and Aravind Srinivas to address a fundamental asymmetry in the AI industry: large tech companies use the public internet to train AI models, but the individuals whose bandwidth and data contribute to this process receive nothing in return. Grass creates a decentralized network where users voluntarily share their excess internet bandwidth, which is collectively used to access and structure publicly available web data for AI model training.</p>
       <p>The project has attracted millions of node operators who run the Grass browser extension or desktop application. Each node contributes bandwidth that is routed through the Grass network to collect structured datasets from public websites. This distributed approach makes web data collection more resilient, geographically diverse, and democratically controlled compared to centralized scraping operations run by big tech companies. The data is processed, structured, and sold to AI companies, with revenue shared back to the network participants.</p>

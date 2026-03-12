@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Modular Blockchains Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Modular Blockchains Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about modular blockchains: how separating execution, settlement, consensus, and data availability creates more scalable and flexible blockchain architectures.",
 };
@@ -17,11 +17,16 @@ export default function ModularBlockchainsPage() {
       readTime="9 min read"
       intro="Modular blockchains represent a paradigm shift in how blockchain systems are designed. Instead of a single chain handling all functions (execution, consensus, settlement, and data availability), modular architectures separate these functions across specialized layers. This separation allows each layer to be independently optimized, creating a more scalable, flexible, and efficient system. The modular approach is central to Ethereum's scaling roadmap and has spawned a new generation of specialized blockchain infrastructure."
       toc={[
-        { id: "monolithic-vs-modular", title: "Monolithic vs Modular Architecture", level: 2 },
-        { id: "four-functions", title: "The Four Core Functions", level: 2 },
-        { id: "modular-stack", title: "The Modular Blockchain Stack", level: 2 },
-        { id: "key-projects", title: "Key Projects in the Modular Ecosystem", level: 2 },
-        { id: "implications", title: "Implications and Trade-offs", level: 2 },
+        { id: "monolithic-vs-modular", title: "monolithic-vs-modular", level: 2 },
+        { id: "monolithic-vs-modular-architecture", title: "Monolithic vs Modular Architecture", level: 2 },
+        { id: "four-functions", title: "four-functions", level: 2 },
+        { id: "the-four-core-functions", title: "The Four Core Functions", level: 2 },
+        { id: "modular-stack", title: "modular-stack", level: 2 },
+        { id: "the-modular-blockchain-stack", title: "The Modular Blockchain Stack", level: 2 },
+        { id: "key-projects", title: "key-projects", level: 2 },
+        { id: "key-projects-in-the-modular-ecosystem", title: "Key Projects in the Modular Ecosystem", level: 2 },
+        { id: "implications", title: "implications", level: 2 },
+        { id: "implications-and-trade-offs", title: "Implications and Trade-offs", level: 2 }
       ]}
       faqs={[
         {

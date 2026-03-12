@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `BitBox02 Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `BitBox02 Review (${CURRENT_YEAR}) | degen0x`,
   description: "BitBox02 hardware wallet review covering Swiss security, open-source firmware, minimalist design, and Bitcoin-only edition features.",
 };
 

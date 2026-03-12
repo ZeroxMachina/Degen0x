@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Hammer Candlestick Pattern Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Hammer Candlestick Pattern Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a hammer candlestick is, how it signals potential bullish reversals, the inverted hammer, and how to trade hammer patterns in crypto markets.",
 };
 
@@ -16,10 +16,14 @@ export default function HammerPage() {
       readTime="6 min read"
       intro="A hammer is a bullish reversal candlestick pattern with a small body near the top of the candle and a long lower shadow at least twice the length of the body. It forms during downtrends when sellers push price significantly lower during the session, but buyers step in and drive price back up to close near the open. The hammer signals that selling pressure is being overcome by buying interest and a potential reversal may be forming."
       toc={[
-        { id: "what-is-hammer", title: "What Is a Hammer?", level: 2 },
+        { id: "what-is-hammer", title: "what-is-hammer", level: 2 },
+        { id: "what-is-a-hammer", title: "What Is a Hammer?", level: 2 },
+        { id: "inverted-hammer", title: "inverted-hammer", level: 2 },
         { id: "inverted-hammer", title: "Inverted Hammer", level: 2 },
-        { id: "confirmation", title: "Confirmation Requirements", level: 2 },
-        { id: "trading", title: "Trading Hammer Patterns", level: 2 },
+        { id: "confirmation", title: "confirmation", level: 2 },
+        { id: "confirmation-requirements", title: "Confirmation Requirements", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-hammer-patterns", title: "Trading Hammer Patterns", level: 2 }
       ]}
       faqs={[
         { question: "What is the difference between a hammer and a hanging man?", answer: "Both have identical shapes (small body, long lower shadow), but their position differs. A hammer appears after a downtrend and is bullish. A hanging man appears after an uptrend and is bearish. The same candle shape carries opposite implications depending on the preceding trend. Both require confirmation from the following candle." },

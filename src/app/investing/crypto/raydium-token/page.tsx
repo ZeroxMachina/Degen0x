@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Raydium Token (RAY)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Raydium Token (RAY)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Raydium Token (RAY), the AMM and liquidity provider on Solana. Discover RAY tokenomics, concentrated liquidity, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function RaydiumTokenPage() {
       readTime="8 min read"
       intro="Raydium Token (RAY) is the native token of Raydium, one of the leading automated market makers on the Solana blockchain. Raydium provides liquidity infrastructure for the Solana ecosystem, offering concentrated liquidity pools, a token launchpad, and integration with the broader Solana DeFi stack. RAY is used for staking, governance, and fee revenue."
       toc={[
-        { id: "what-is", title: "What Is Raydium Token?", level: 2 },
-        { id: "how-it-works", title: "How Does Raydium Work?", level: 2 },
-        { id: "tokenomics", title: "RAY Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy RAY", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-raydium-token", title: "What Is Raydium Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-raydium-work", title: "How Does Raydium Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ray-tokenomics", title: "RAY Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ray", title: "How to Buy RAY", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

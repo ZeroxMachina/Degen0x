@@ -17,14 +17,22 @@ export default function CryptoSecurityChecklistPage() {
       readTime="20 min"
       intro="Crypto security is not a single action — it's a combination of practices, habits, and precautions that work together to keep your funds safe. This comprehensive checklist covers everything you need to know: wallet security, seed phrase management, phishing detection, smart contract approvals, multi-factor authentication, hardware wallet setup, and emergency procedures if your account is compromised. By following this checklist, you can dramatically reduce your risk of losing funds to hacks, scams, or accidental mistakes."
       toc={[
-        { id: "wallet-security", title: "Wallet Security Fundamentals", level: 2 },
-        { id: "seed-phrase", title: "Seed Phrase Protection", level: 2 },
-        { id: "2fa-authentication", title: "Two-Factor Authentication", level: 2 },
-        { id: "phishing-prevention", title: "Phishing Detection & Prevention", level: 2 },
-        { id: "smart-contract-approvals", title: "Smart Contract Approval Hygiene", level: 2 },
+        { id: "wallet-security", title: "wallet-security", level: 2 },
+        { id: "wallet-security-fundamentals", title: "Wallet Security Fundamentals", level: 2 },
+        { id: "seed-phrase", title: "seed-phrase", level: 2 },
+        { id: "seed-phrase-protection", title: "Seed Phrase Protection", level: 2 },
+        { id: "2fa-authentication", title: "2fa-authentication", level: 2 },
+        { id: "two-factor-authentication", title: "Two-Factor Authentication", level: 2 },
+        { id: "phishing-prevention", title: "phishing-prevention", level: 2 },
+        { id: "phishing-detection-prevention", title: "Phishing Detection & Prevention", level: 2 },
+        { id: "smart-contract-approvals", title: "smart-contract-approvals", level: 2 },
+        { id: "smart-contract-approval-hygiene", title: "Smart Contract Approval Hygiene", level: 2 },
+        { id: "hardware-wallet-setup", title: "hardware-wallet-setup", level: 2 },
         { id: "hardware-wallet-setup", title: "Hardware Wallet Setup", level: 2 },
+        { id: "cold-storage-strategy", title: "cold-storage-strategy", level: 2 },
         { id: "cold-storage-strategy", title: "Cold Storage Strategy", level: 2 },
-        { id: "emergency-procedures", title: "Emergency Procedures if Compromised", level: 2 },
+        { id: "emergency-procedures", title: "emergency-procedures", level: 2 },
+        { id: "emergency-procedures-if-compromised", title: "Emergency Procedures if Compromised", level: 2 }
       ]}
       faqs={[
         {

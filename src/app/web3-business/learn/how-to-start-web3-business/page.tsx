@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Start a Web3 Business (${CURRENT_YEAR}) - Complete Guide | CryptoDegen`,
+  title: `How to Start a Web3 Business (${CURRENT_YEAR}) - Complete Guide | degen0x`,
   description: `Learn how to start a Web3 business from scratch. Entity formation, token strategy, fundraising, hiring, and operational guides for blockchain entrepreneurs.`,
 };
 
@@ -16,12 +16,18 @@ export default function HowToStartWeb3BusinessPage() {
       readTime="12 min"
       intro="Starting a Web3 business combines traditional entrepreneurship with the unique opportunities and challenges of blockchain technology. From choosing a legal structure and jurisdiction to deciding whether to launch a token, this guide walks you through the essential steps to build a compliant, fundable, and sustainable Web3 company."
       toc={[
-        { id: "ideation", title: "Ideation and Market Validation", level: 2 },
-        { id: "legal-structure", title: "Choosing Your Legal Structure", level: 2 },
-        { id: "token-strategy", title: "Token vs. No-Token Strategy", level: 2 },
-        { id: "fundraising", title: "Fundraising Options", level: 2 },
-        { id: "building-team", title: "Building Your Team", level: 2 },
-        { id: "operations", title: "Operational Setup", level: 2 },
+        { id: "ideation", title: "ideation", level: 2 },
+        { id: "ideation-and-market-validation", title: "Ideation and Market Validation", level: 2 },
+        { id: "legal-structure", title: "legal-structure", level: 2 },
+        { id: "choosing-your-legal-structure", title: "Choosing Your Legal Structure", level: 2 },
+        { id: "token-strategy", title: "token-strategy", level: 2 },
+        { id: "token-vs-no-token-strategy", title: "Token vs. No-Token Strategy", level: 2 },
+        { id: "fundraising", title: "fundraising", level: 2 },
+        { id: "fundraising-options", title: "Fundraising Options", level: 2 },
+        { id: "building-team", title: "building-team", level: 2 },
+        { id: "building-your-team", title: "Building Your Team", level: 2 },
+        { id: "operations", title: "operations", level: 2 },
+        { id: "operational-setup", title: "Operational Setup", level: 2 }
       ]}
       faqs={[
         { question: "Do I need to launch a token to start a Web3 business?", answer: "No. Many successful Web3 businesses operate without a native token. SaaS models, infrastructure providers, and service companies can thrive with traditional revenue models. A token should only be launched if it genuinely enhances your product through governance, utility, or network incentive alignment. Launching a token introduces significant regulatory, legal, and operational complexity." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Neutron (NTRN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Neutron (NTRN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Neutron (NTRN), the CosmWasm smart contract platform secured by Cosmos Hub. Discover how it works, tokenomics, use cases, and how to buy NTRN.",
 };
@@ -17,12 +17,18 @@ export default function NeutronPage() {
       readTime="8 min read"
       intro="Neutron is the leading smart contract platform in the Cosmos ecosystem, secured by the Cosmos Hub through Interchain Security. Built with CosmWasm, Neutron enables developers to deploy permissionless smart contracts that can interact with any IBC-connected blockchain, positioning it as the DeFi hub of the Cosmos network."
       toc={[
-        { id: "what-is", title: "What Is Neutron?", level: 2 },
-        { id: "how-it-works", title: "How Does Neutron Work?", level: 2 },
-        { id: "tokenomics", title: "NTRN Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy NTRN", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-neutron", title: "What Is Neutron?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-neutron-work", title: "How Does Neutron Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ntrn-tokenomics", title: "NTRN Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ntrn", title: "How to Buy NTRN", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

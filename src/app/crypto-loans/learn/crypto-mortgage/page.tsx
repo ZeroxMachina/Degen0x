@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Mortgages Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Mortgages Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how crypto mortgages work, which lenders accept crypto as collateral for home purchases, and the pros and cons of using Bitcoin to buy real estate.",
 };
 
@@ -16,10 +16,14 @@ export default function CryptoMortgagePage() {
       readTime="10 min read"
       intro="Crypto mortgages allow you to use cryptocurrency holdings as collateral or proof of assets to secure a home loan. As crypto wealth grows, a new category of lenders has emerged to serve borrowers whose net worth is primarily in digital assets. This guide covers how crypto mortgages work, available options, and important considerations."
       toc={[
-        { id: "how-they-work", title: "How Crypto Mortgages Work", level: 2 },
-        { id: "providers", title: "Available Providers", level: 2 },
-        { id: "pros-cons", title: "Pros and Cons", level: 2 },
-        { id: "alternatives", title: "Alternatives to Crypto Mortgages", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-crypto-mortgages-work", title: "How Crypto Mortgages Work", level: 2 },
+        { id: "providers", title: "providers", level: 2 },
+        { id: "available-providers", title: "Available Providers", level: 2 },
+        { id: "pros-cons", title: "pros-cons", level: 2 },
+        { id: "pros-and-cons", title: "Pros and Cons", level: 2 },
+        { id: "alternatives", title: "alternatives", level: 2 },
+        { id: "alternatives-to-crypto-mortgages", title: "Alternatives to Crypto Mortgages", level: 2 }
       ]}
       faqs={[
         { question: "Can I use Bitcoin as a down payment for a house?", answer: "Some lenders accept crypto for down payments after conversion to fiat. Others accept crypto as collateral for the mortgage itself. Milo and USDC.homes pioneered this space, though availability varies by jurisdiction and lender." },

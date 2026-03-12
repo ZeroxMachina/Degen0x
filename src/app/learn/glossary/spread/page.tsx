@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Spread in Trading? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Spread in Trading? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what spread means in crypto trading, how it affects your trading costs, what causes wide spreads, and how to minimize spread costs.",
 };
 
@@ -11,7 +11,16 @@ export default function SpreadPage() {
   return (
     <LearnPageLayout title="What Is Spread?" categoryName="Learn Crypto" categorySlug="learn" readTime="4 min read"
       intro="The spread is the difference between the highest price a buyer is willing to pay (bid) and the lowest price a seller is willing to accept (ask) for an asset. Spread is a hidden cost of trading that affects every transaction. Tight spreads indicate a liquid, efficient market, while wide spreads signal low liquidity and higher trading costs. Understanding spread helps you choose better trading venues and minimize the cost of executing trades."
-      toc={[{ id: "definition", title: "What Is Spread?", level: 2 }, { id: "factors", title: "What Affects Spread", level: 2 }, { id: "spread-types", title: "Types of Spread", level: 2 }, { id: "minimizing-spread", title: "Minimizing Spread Costs", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-spread", title: "What Is Spread?", level: 2 },
+        { id: "factors", title: "factors", level: 2 },
+        { id: "what-affects-spread", title: "What Affects Spread", level: 2 },
+        { id: "spread-types", title: "spread-types", level: 2 },
+        { id: "types-of-spread", title: "Types of Spread", level: 2 },
+        { id: "minimizing-spread", title: "minimizing-spread", level: 2 },
+        { id: "minimizing-spread-costs", title: "Minimizing Spread Costs", level: 2 }
+      ]}
       faqs={[{ question: "Why do different exchanges have different spreads?", answer: "Spread depends on liquidity depth, market maker activity, and trading volume. Major exchanges like Binance with high volume have tight spreads on popular pairs. Smaller exchanges or illiquid pairs have wider spreads. DEXs have variable spread equivalent (slippage) based on pool depth and trade size." },
         { question: "Is spread the same as slippage?", answer: "They are related but different. Spread is the static difference between bid and ask. Slippage is the difference between your expected price and actual execution price, which can be caused by spread plus price movement during execution. On AMM DEXs, slippage replaces spread as the primary trading cost." }]}
       relatedArticles={[{ title: "Order Book", href: "/learn/glossary/order-book", category: "Glossary" }, { title: "Market Depth", href: "/learn/glossary/market-depth", category: "Glossary" }, { title: "Slippage", href: "/learn/glossary/slippage", category: "Glossary" }, { title: "Volume", href: "/learn/glossary/volume", category: "Glossary" }]}

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Debit Cards Explained (${CURRENT_YEAR}) - How They Work | CryptoDegen`,
+  title: `Crypto Debit Cards Explained (${CURRENT_YEAR}) - How They Work | degen0x`,
   description: `Understand how crypto debit cards work. Card types, conversion mechanics, reward structures, fee breakdowns, and how to choose the right crypto card for your needs.`,
 };
 
@@ -16,11 +16,16 @@ export default function CryptoDebitCardsExplainedPage() {
       readTime="8 min"
       intro="Crypto debit cards bridge the gap between your digital asset holdings and everyday spending. They let you use Bitcoin, Ethereum, stablecoins, and other cryptocurrencies at any merchant that accepts Visa or Mastercard. This guide explains how they work, the different types available, and what to consider before choosing one."
       toc={[
-        { id: "how-they-work", title: "How Crypto Debit Cards Work", level: 2 },
-        { id: "card-types", title: "Types of Crypto Cards", level: 2 },
-        { id: "rewards", title: "Understanding Reward Structures", level: 2 },
-        { id: "fees", title: "Fee Breakdown", level: 2 },
-        { id: "choosing", title: "How to Choose the Right Card", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-crypto-debit-cards-work", title: "How Crypto Debit Cards Work", level: 2 },
+        { id: "card-types", title: "card-types", level: 2 },
+        { id: "types-of-crypto-cards", title: "Types of Crypto Cards", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "understanding-reward-structures", title: "Understanding Reward Structures", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-breakdown", title: "Fee Breakdown", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "how-to-choose-the-right-card", title: "How to Choose the Right Card", level: 2 }
       ]}
       faqs={[
         { question: "Do merchants need to accept crypto for me to use a crypto debit card?", answer: "No. Crypto debit cards work on the Visa or Mastercard network, so they are accepted everywhere these networks are. The card provider handles the conversion from crypto to fiat behind the scenes. The merchant receives a standard fiat payment and never knows crypto was involved." },

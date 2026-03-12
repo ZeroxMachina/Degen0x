@@ -12,11 +12,16 @@ export default function CryptoExchangeHacksHistoryPage() {
   return (
     <LearnPageLayout title="History of Crypto Exchange Hacks" categoryName="Crypto Education" categorySlug="learn" readTime="9 min" intro="Cryptocurrency exchange hacks have resulted in billions of dollars in losses since Bitcoin's early days. From the Mt. Gox collapse to the FTX implosion, these events have shaped industry security practices, regulatory frameworks, and user behavior. Understanding this history helps you evaluate exchange risks and make informed decisions about where to keep your assets."
       toc={[
-        { id: "early-era", title: "Early Exchange Hacks", level: 2 },
-        { id: "major-hacks", title: "Major Hacks & Collapses", level: 2 },
-        { id: "defi-exploits", title: "DeFi Protocol Exploits", level: 2 },
-        { id: "lessons", title: "Lessons Learned", level: 2 },
-        { id: "modern-security", title: "Modern Exchange Security", level: 2 },
+        { id: "early-era", title: "early-era", level: 2 },
+        { id: "early-exchange-hacks", title: "Early Exchange Hacks", level: 2 },
+        { id: "major-hacks", title: "major-hacks", level: 2 },
+        { id: "major-hacks-collapses", title: "Major Hacks & Collapses", level: 2 },
+        { id: "defi-exploits", title: "defi-exploits", level: 2 },
+        { id: "defi-protocol-exploits", title: "DeFi Protocol Exploits", level: 2 },
+        { id: "lessons", title: "lessons", level: 2 },
+        { id: "lessons-learned", title: "Lessons Learned", level: 2 },
+        { id: "modern-security", title: "modern-security", level: 2 },
+        { id: "modern-exchange-security", title: "Modern Exchange Security", level: 2 }
       ]}
       faqs={[
         { question: "What was the largest crypto exchange hack?", answer: "The Mt. Gox hack, discovered in 2014, remains one of the most significant with approximately 850,000 BTC lost (worth billions at current prices). In terms of dollar value at the time of the hack, the Ronin Network bridge exploit in 2022 resulted in approximately $620 million in losses." },

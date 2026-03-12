@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Understanding Wallet Permissions and Approvals (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Understanding Wallet Permissions and Approvals (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how token approvals and wallet permissions work, why they matter for security, and how to review and revoke dangerous approvals to protect your funds.",
 };
 
@@ -11,7 +11,16 @@ export default function WalletPermissionsGuidePage() {
   return (
     <LearnPageLayout title="Understanding Wallet Permissions and Approvals" categoryName="Crypto Wallets" categorySlug="wallets" readTime="8 min read"
       intro="Every time you interact with a DeFi protocol, you grant permissions that can have significant security implications. Token approvals, wallet connections, and signing permissions form a complex web of access that most users never review after granting. Malicious or excessive approvals are one of the leading causes of fund theft in DeFi. Understanding how permissions work and regularly auditing them is essential for protecting your crypto assets."
-      toc={[{ id: "token-approvals", title: "Token Approvals Explained", level: 2 }, { id: "wallet-connections", title: "Wallet Connections", level: 2 }, { id: "reviewing-permissions", title: "Reviewing Your Permissions", level: 2 }, { id: "revoking-approvals", title: "Revoking Dangerous Approvals", level: 2 }]}
+      toc={[
+        { id: "token-approvals", title: "token-approvals", level: 2 },
+        { id: "token-approvals-explained", title: "Token Approvals Explained", level: 2 },
+        { id: "wallet-connections", title: "wallet-connections", level: 2 },
+        { id: "wallet-connections", title: "Wallet Connections", level: 2 },
+        { id: "reviewing-permissions", title: "reviewing-permissions", level: 2 },
+        { id: "reviewing-your-permissions", title: "Reviewing Your Permissions", level: 2 },
+        { id: "revoking-approvals", title: "revoking-approvals", level: 2 },
+        { id: "revoking-dangerous-approvals", title: "Revoking Dangerous Approvals", level: 2 }
+      ]}
       faqs={[{ question: "What is an unlimited token approval?", answer: "An unlimited (or infinite) token approval grants a smart contract permission to spend any amount of a specific token from your wallet, indefinitely. This means that even if you only swap 100 USDC, the protocol could access your entire USDC balance at any time in the future. If the contract is compromised or malicious, an attacker can drain all approved tokens. Always set custom approval limits matching the amount you actually intend to use." },
         { question: "Does disconnecting my wallet revoke approvals?", answer: "No. Disconnecting your wallet from a dApp only removes the website's ability to see your address and request new transactions. Existing token approvals remain active on the blockchain because they are recorded in the token's smart contract, not in your wallet. To revoke an approval, you must submit an on-chain transaction that sets the approval amount to zero. Disconnecting and revoking are completely separate actions." },
         { question: "How much does it cost to revoke an approval?", answer: "Revoking an approval requires a small on-chain transaction that costs gas. On Ethereum mainnet this might cost a few dollars depending on gas prices. On L2s like Arbitrum or Base, revocations cost fractions of a cent. The cost is minimal compared to the potential loss from a compromised approval. Prioritize revoking approvals for protocols you no longer use or for unlimited approvals to high-value tokens." }]}

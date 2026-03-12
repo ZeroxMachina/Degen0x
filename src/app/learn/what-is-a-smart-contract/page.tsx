@@ -25,13 +25,20 @@ export default function WhatIsASmartContractPage() {
       readTime="10 min"
       intro="A smart contract is a self-executing program stored on a blockchain that automatically enforces the terms of an agreement when predetermined conditions are met. Smart contracts eliminate the need for intermediaries by replacing human enforcement with transparent, immutable code — forming the foundation of DeFi, NFTs, DAOs, and the broader Web3 ecosystem."
       toc={[
-        { id: "definition", title: "Understanding Smart Contracts", level: 2 },
-        { id: "how-they-work", title: "How Smart Contracts Work", level: 2 },
-        { id: "platforms", title: "Smart Contract Platforms", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "security", title: "Smart Contract Security", level: 2 },
-        { id: "limitations", title: "Limitations and Challenges", level: 2 },
-        { id: "development", title: "Smart Contract Development", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "understanding-smart-contracts", title: "Understanding Smart Contracts", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-smart-contracts-work", title: "How Smart Contracts Work", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "smart-contract-platforms", title: "Smart Contract Platforms", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "smart-contract-security", title: "Smart Contract Security", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-and-challenges", title: "Limitations and Challenges", level: 2 },
+        { id: "development", title: "development", level: 2 },
+        { id: "smart-contract-development", title: "Smart Contract Development", level: 2 }
       ]}
       faqs={[
         {

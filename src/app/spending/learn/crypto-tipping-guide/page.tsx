@@ -17,10 +17,14 @@ export default function CryptoTippingGuidePage() {
       readTime="8 min"
       intro="Cryptocurrency tipping has emerged as a powerful way to support content creators, streamers, and service providers directly. With Lightning Network micropayments and social media tipping integrations, sending small crypto tips is fast, cheap, and accessible."
       toc={[
-        { id: "lightning-tips", title: "Lightning Network Tipping", level: 2 },
-        { id: "social-media", title: "Social Media Tipping", level: 2 },
-        { id: "streaming", title: "Tipping Streamers and Creators", level: 2 },
-        { id: "platforms", title: "Tipping Platforms and Tools", level: 2 },
+        { id: "lightning-tips", title: "lightning-tips", level: 2 },
+        { id: "lightning-network-tipping", title: "Lightning Network Tipping", level: 2 },
+        { id: "social-media", title: "social-media", level: 2 },
+        { id: "social-media-tipping", title: "Social Media Tipping", level: 2 },
+        { id: "streaming", title: "streaming", level: 2 },
+        { id: "tipping-streamers-and-creators", title: "Tipping Streamers and Creators", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "tipping-platforms-and-tools", title: "Tipping Platforms and Tools", level: 2 }
       ]}
       faqs={[
         { question: "What is the cheapest way to tip crypto?", answer: "Lightning Network tips cost fractions of a cent regardless of tip size, making it practical to send tips as small as a few cents." },

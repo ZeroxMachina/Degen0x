@@ -17,12 +17,18 @@ export default function WhatIsBitcoinPage() {
       readTime="15 min"
       intro="Bitcoin (BTC) is the first and most valuable cryptocurrency, created in 2009 by the pseudonymous developer Satoshi Nakamoto. It introduced the concept of a peer-to-peer electronic cash system that operates without banks, governments, or any central authority. With a fixed supply of 21 million coins and a decentralized network secured by proof-of-work mining, Bitcoin has grown from a niche experiment into a globally recognized store of value and medium of exchange. This guide covers everything you need to know about how Bitcoin works and why it matters."
       toc={[
-        { id: "origins", title: "The Origins of Bitcoin", level: 2 },
+        { id: "origins", title: "origins", level: 2 },
+        { id: "the-origins-of-bitcoin", title: "The Origins of Bitcoin", level: 2 },
+        { id: "how-bitcoin-works", title: "how-bitcoin-works", level: 2 },
         { id: "how-bitcoin-works", title: "How Bitcoin Works", level: 2 },
+        { id: "mining-and-supply", title: "mining-and-supply", level: 2 },
         { id: "mining-and-supply", title: "Mining and Supply", level: 2 },
-        { id: "store-of-value", title: "Bitcoin as a Store of Value", level: 2 },
+        { id: "store-of-value", title: "store-of-value", level: 2 },
+        { id: "bitcoin-as-a-store-of-value", title: "Bitcoin as a Store of Value", level: 2 },
+        { id: "using-bitcoin", title: "using-bitcoin", level: 2 },
         { id: "using-bitcoin", title: "Using Bitcoin", level: 2 },
-        { id: "risks-criticisms", title: "Risks and Criticisms", level: 2 },
+        { id: "risks-criticisms", title: "risks-criticisms", level: 2 },
+        { id: "risks-and-criticisms", title: "Risks and Criticisms", level: 2 }
       ]}
       faqs={[
         {

@@ -17,12 +17,18 @@ export default function NftArtGuidePage() {
       readTime="13 min"
       intro="NFT art has created a new paradigm for digital artists and collectors. For the first time, digital artworks can be owned, traded, and collected with the same provenance and scarcity guarantees that physical art has always enjoyed. From generative art algorithms to hand-crafted masterpieces, the NFT art ecosystem spans an enormous range of styles, price points, and platforms. This guide helps you understand and navigate the NFT art world."
       toc={[
-        { id: "nft-art-landscape", title: "The NFT Art Landscape", level: 2 },
-        { id: "art-categories", title: "Categories of NFT Art", level: 2 },
-        { id: "evaluating-art", title: "Evaluating NFT Art", level: 2 },
-        { id: "art-platforms", title: "Top NFT Art Platforms", level: 2 },
+        { id: "nft-art-landscape", title: "nft-art-landscape", level: 2 },
+        { id: "the-nft-art-landscape", title: "The NFT Art Landscape", level: 2 },
+        { id: "art-categories", title: "art-categories", level: 2 },
+        { id: "categories-of-nft-art", title: "Categories of NFT Art", level: 2 },
+        { id: "evaluating-art", title: "evaluating-art", level: 2 },
+        { id: "evaluating-nft-art", title: "Evaluating NFT Art", level: 2 },
+        { id: "art-platforms", title: "art-platforms", level: 2 },
+        { id: "top-nft-art-platforms", title: "Top NFT Art Platforms", level: 2 },
+        { id: "collecting-strategies", title: "collecting-strategies", level: 2 },
         { id: "collecting-strategies", title: "Collecting Strategies", level: 2 },
-        { id: "future-of-nft-art", title: "The Future of NFT Art", level: 2 },
+        { id: "future-of-nft-art", title: "future-of-nft-art", level: 2 },
+        { id: "the-future-of-nft-art", title: "The Future of NFT Art", level: 2 }
       ]}
       faqs={[
         {

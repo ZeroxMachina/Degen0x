@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Electrum Wallet Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Electrum Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Electrum wallet review. The veteran Bitcoin-only wallet with advanced features, hardware wallet support, and Lightning Network integration.",
 };
 

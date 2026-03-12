@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Exchange VIP and Fee Tiers (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Exchange VIP and Fee Tiers (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about crypto exchange VIP programs and fee tiers. Volume requirements, fee discounts, exclusive benefits, and how to unlock the best trading rates.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeVIPPrograms() {
       readTime="8 min read"
       intro="Every major crypto exchange operates a tiered fee structure that rewards higher trading volumes with lower fees. VIP programs extend beyond fees to include priority support, exclusive products, and personalized services. Understanding these tiers helps you optimize your trading costs and determine whether consolidating volume on a single exchange makes financial sense."
       toc={[
-        { id: "fee-tiers", title: "How Fee Tiers Work", level: 2 },
+        { id: "fee-tiers", title: "fee-tiers", level: 2 },
+        { id: "how-fee-tiers-work", title: "How Fee Tiers Work", level: 2 },
+        { id: "volume-requirements", title: "volume-requirements", level: 2 },
         { id: "volume-requirements", title: "Volume Requirements", level: 2 },
-        { id: "vip-benefits", title: "VIP Benefits Beyond Fees", level: 2 },
-        { id: "exchange-comparison", title: "Exchange VIP Comparison", level: 2 },
-        { id: "token-discounts", title: "Exchange Token Discounts", level: 2 },
-        { id: "strategies", title: "Optimizing Your Fee Tier", level: 2 },
-        { id: "worth-it", title: "Is VIP Worth Pursuing?", level: 2 },
+        { id: "vip-benefits", title: "vip-benefits", level: 2 },
+        { id: "vip-benefits-beyond-fees", title: "VIP Benefits Beyond Fees", level: 2 },
+        { id: "exchange-comparison", title: "exchange-comparison", level: 2 },
+        { id: "exchange-vip-comparison", title: "Exchange VIP Comparison", level: 2 },
+        { id: "token-discounts", title: "token-discounts", level: 2 },
+        { id: "exchange-token-discounts", title: "Exchange Token Discounts", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "optimizing-your-fee-tier", title: "Optimizing Your Fee Tier", level: 2 },
+        { id: "worth-it", title: "worth-it", level: 2 },
+        { id: "is-vip-worth-pursuing", title: "Is VIP Worth Pursuing?", level: 2 }
       ]}
       faqs={[
         { question: "How is trading volume calculated?", answer: "Most exchanges calculate 30-day rolling trading volume in USD equivalent. Both buy and sell sides of a trade count. Spot and futures volume may be counted separately with different tier tables. Some exchanges combine both for tier qualification." },

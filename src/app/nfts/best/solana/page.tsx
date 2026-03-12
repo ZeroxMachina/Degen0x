@@ -7,7 +7,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Solana NFT Marketplaces in ${CURRENT_YEAR} | CryptoDegen`,
+  title: `Best Solana NFT Marketplaces in ${CURRENT_YEAR} | degen0x`,
   description: `Compare the best Solana NFT marketplaces in ${CURRENT_YEAR}. Fast transactions, low fees, and vibrant collections on the Solana blockchain.`,
 };
 
@@ -44,7 +44,7 @@ export default function BestForSolanaPage() {
     "@type": "Article",
     headline: `Best Solana NFT Marketplaces ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -60,7 +60,7 @@ export default function BestForSolanaPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Solana NFT Marketplaces in {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -80,7 +80,7 @@ export default function BestForSolanaPage() {
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Best Solana NFT Platforms</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Solana NFT Platforms</h2>
           <div className="space-y-4">
             {filtered.map((marketplace, index) => (
               <ProductCard
@@ -94,7 +94,7 @@ export default function BestForSolanaPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Why Solana for NFTs</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Why Solana for NFTs</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Near-Zero Fees", desc: "Transaction costs under $0.01 make frequent trading and experimentation affordable." },
@@ -103,7 +103,7 @@ export default function BestForSolanaPage() {
               { title: "Growing Ecosystem", desc: "Vibrant creator community with unique collections, gaming projects, and DeFi integrations." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}

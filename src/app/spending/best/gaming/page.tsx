@@ -16,11 +16,16 @@ export default function BestCryptoGamingPage() {
       readTime="9 min"
       intro="Gaming is one of the most natural use cases for cryptocurrency spending, with platforms accepting crypto for game purchases, in-game items, subscriptions, and hardware. From Steam gift cards to direct crypto payments for gaming PCs, here are the best options for spending your digital assets in the gaming world."
       toc={[
-        { id: "game-purchases", title: "Buying Games with Crypto", level: 2 },
-        { id: "gaming-platforms", title: "Top Crypto Gaming Platforms", level: 2 },
-        { id: "hardware", title: "Gaming Hardware with Crypto", level: 2 },
-        { id: "in-game-items", title: "In-Game Purchases and Items", level: 2 },
-        { id: "subscriptions", title: "Gaming Subscriptions", level: 2 },
+        { id: "game-purchases", title: "game-purchases", level: 2 },
+        { id: "buying-games-with-crypto", title: "Buying Games with Crypto", level: 2 },
+        { id: "gaming-platforms", title: "gaming-platforms", level: 2 },
+        { id: "top-crypto-gaming-platforms", title: "Top Crypto Gaming Platforms", level: 2 },
+        { id: "hardware", title: "hardware", level: 2 },
+        { id: "gaming-hardware-with-crypto", title: "Gaming Hardware with Crypto", level: 2 },
+        { id: "in-game-items", title: "in-game-items", level: 2 },
+        { id: "in-game-purchases-and-items", title: "In-Game Purchases and Items", level: 2 },
+        { id: "subscriptions", title: "subscriptions", level: 2 },
+        { id: "gaming-subscriptions", title: "Gaming Subscriptions", level: 2 }
       ]}
       faqs={[
         { question: "Can I buy Steam games with Bitcoin?", answer: "Steam removed direct Bitcoin payments in 2017, but you can purchase Steam gift cards with crypto through services like Bitrefill, CoinGate, and Keys4Coins. These gift cards work identically to those purchased with fiat currency." },

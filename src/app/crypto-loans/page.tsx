@@ -48,7 +48,7 @@ const toolLinks = [
 
 export default function CryptoLoansPage() {
   const topPlatforms = CRYPTO_LOAN_PRODUCTS.filter((p) => p.slug !== "celsius").sort((a, b) => b.rating - a.rating).slice(0, 4);
-  const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: `Crypto Loans Hub ${CURRENT_YEAR}`, url: "https://cryptodegen.com/crypto-loans", isPartOf: { "@type": "WebSite", name: SITE_NAME } };
+  const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: `Crypto Loans Hub ${CURRENT_YEAR}`, url: "https://degen0x.com/crypto-loans", isPartOf: { "@type": "WebSite", name: SITE_NAME } };
 
   return (
     <>
@@ -56,49 +56,49 @@ export default function CryptoLoansPage() {
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }]} />
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">Crypto Loans Hub</h1>
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Crypto Loans Hub</h1>
           <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">Your complete resource for crypto-backed loans. Compare CeFi and DeFi loan platforms, read expert reviews, and learn how to borrow against your crypto without selling. Last updated {CURRENT_MONTH} {CURRENT_YEAR}.</p>
         </div>
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white">Top Loan Platforms</h2>
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Top Loan Platforms</h2>
             <Link href="/crypto-loans/best" className="text-[var(--color-primary)] hover:underline text-sm font-medium">View all rankings &rarr;</Link>
           </div>
           <AffiliateDisclosure />
           <div className="space-y-4">{topPlatforms.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
         </section>
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Find the Right Loan</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Find the Right Loan</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {bestOfLinks.map((l) => (<Link key={l.href} href={l.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"><h3 className="text-white font-semibold mb-1">{l.title}</h3><p className="text-sm text-[var(--color-text-secondary)]">{l.desc}</p></Link>))}
+            {bestOfLinks.map((l) => (<Link key={l.href} href={l.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"><h3 className="text-[var(--color-text)] font-semibold mb-1">{l.title}</h3><p className="text-sm text-[var(--color-text-secondary)]">{l.desc}</p></Link>))}
           </div>
         </section>
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Platform Reviews</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Platform Reviews</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {reviewLinks.map((r) => (<Link key={r.slug} href={`/crypto-loans/reviews/${r.slug}`} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover text-center block"><span className="text-white font-semibold">{r.name}</span><span className="block text-xs text-[var(--color-text-secondary)] mt-1">Full Review</span></Link>))}
+            {reviewLinks.map((r) => (<Link key={r.slug} href={`/crypto-loans/reviews/${r.slug}`} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover text-center block"><span className="text-[var(--color-text)] font-semibold">{r.name}</span><span className="block text-xs text-[var(--color-text-secondary)] mt-1">Full Review</span></Link>))}
           </div>
         </section>
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Comparisons</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Comparisons</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {compareLinks.map((l) => (<Link key={l.href} href={l.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"><span className="text-white font-semibold">{l.title}</span><span className="block text-xs text-[var(--color-text-secondary)] mt-1">Detailed comparison &rarr;</span></Link>))}
+            {compareLinks.map((l) => (<Link key={l.href} href={l.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"><span className="text-[var(--color-text)] font-semibold">{l.title}</span><span className="block text-xs text-[var(--color-text-secondary)] mt-1">Detailed comparison &rarr;</span></Link>))}
           </div>
         </section>
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Tools & Calculators</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Tools & Calculators</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {toolLinks.map((t) => (<Link key={t.href} href={t.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"><h3 className="text-white font-semibold mb-1">{t.title}</h3><p className="text-sm text-[var(--color-text-secondary)]">{t.desc}</p></Link>))}
+            {toolLinks.map((t) => (<Link key={t.href} href={t.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"><h3 className="text-[var(--color-text)] font-semibold mb-1">{t.title}</h3><p className="text-sm text-[var(--color-text-secondary)]">{t.desc}</p></Link>))}
           </div>
         </section>
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Learn About Crypto Loans</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn About Crypto Loans</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {learnLinks.map((l) => (<Link key={l.href} href={l.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"><span className="text-white font-semibold">{l.title}</span><span className="block text-xs text-[var(--color-text-secondary)] mt-1">Read guide &rarr;</span></Link>))}
+            {learnLinks.map((l) => (<Link key={l.href} href={l.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"><span className="text-[var(--color-text)] font-semibold">{l.title}</span><span className="block text-xs text-[var(--color-text-secondary)] mt-1">Read guide &rarr;</span></Link>))}
           </div>
         </section>
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">How We Review Loan Platforms</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Review Loan Platforms</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">Our crypto loan platform reviews evaluate interest rates, LTV ratios, supported collateral, liquidation policies, platform security, regulatory status, and user experience. We test each platform with real deposits and monitor terms over time. The collapse of Celsius in 2022 reinforced the importance of thorough due diligence, especially for centralized lending platforms.</p>
           <p className="text-[var(--color-text-secondary)]">We evaluate both CeFi platforms (which require KYC but offer simpler experiences) and DeFi protocols (which are permissionless but require more technical knowledge). Our recommendations consider platform risk, borrower experience, and overall value.</p>
         </section>

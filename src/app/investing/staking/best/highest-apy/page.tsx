@@ -38,7 +38,7 @@ export default function HighestAPYStakingPage() {
     "@type": "Article",
     headline: `Highest Staking APY Platforms of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -54,7 +54,7 @@ export default function HighestAPYStakingPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Highest Staking APY Platforms of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -71,17 +71,17 @@ export default function HighestAPYStakingPage() {
             yield opportunities like MEV sharing and restaking.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Jito</strong> leads with the highest base staking APY
-            for SOL through MEV rewards. <strong className="text-white">EigenLayer</strong> offers
+            <strong className="text-[var(--color-text)]">Jito</strong> leads with the highest base staking APY
+            for SOL through MEV rewards. <strong className="text-[var(--color-text)]">EigenLayer</strong> offers
             the highest combined yields for ETH through restaking. For set-and-forget staking,{" "}
-            <strong className="text-white">Lido</strong> provides competitive ETH yields with
+            <strong className="text-[var(--color-text)]">Lido</strong> provides competitive ETH yields with
             automatic compounding through stETH rebasing.
           </p>
         </div>
 
         {/* APY Comparison Card */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Current APY Ranges</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Current APY Ranges</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
               { name: "Jito (SOL)", apy: "6.5%–8.0%", note: "Includes MEV rewards" },
@@ -92,7 +92,7 @@ export default function HighestAPYStakingPage() {
               { name: "StakeWise (ETH)", apy: "3.0%–3.5%", note: "Vault-based staking" },
             ].map((item) => (
               <div key={item.name} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-                <h3 className="text-white font-semibold mb-1">{item.name}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.name}</h3>
                 <p className="text-2xl font-bold text-[var(--color-success)]">{item.apy}</p>
                 <p className="text-xs text-[var(--color-text-secondary)] mt-1">{item.note}</p>
               </div>
@@ -104,7 +104,7 @@ export default function HighestAPYStakingPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">All Platforms Ranked</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">All Platforms Ranked</h2>
           <div className="space-y-4">
             {sortedPlatforms.map((platform, index) => (
               <ProductCard

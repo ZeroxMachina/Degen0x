@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToDollarCostAveragePage() {
   return (
     <LearnPageLayout title="How to Dollar Cost Average Crypto" categoryName="Crypto Education" categorySlug="learn" readTime="6 min" intro="Dollar cost averaging (DCA) is an investment strategy where you invest a fixed amount at regular intervals regardless of price. In the volatile crypto market, DCA reduces the impact of timing risk and emotional decision-making, providing a disciplined approach to building a position over time."
-      toc={[{ id: "what-is-dca", title: "What Is DCA?", level: 2 },{ id: "why-dca", title: "Why DCA Works for Crypto", level: 2 },{ id: "setup", title: "Setting Up a DCA Plan", level: 2 },{ id: "automation", title: "Automation Options", level: 2 },{ id: "optimization", title: "Optimizing Your DCA", level: 2 }]}
+      toc={[
+        { id: "what-is-dca", title: "what-is-dca", level: 2 },
+        { id: "what-is-dca", title: "What Is DCA?", level: 2 },
+        { id: "why-dca", title: "why-dca", level: 2 },
+        { id: "why-dca-works-for-crypto", title: "Why DCA Works for Crypto", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "setting-up-a-dca-plan", title: "Setting Up a DCA Plan", level: 2 },
+        { id: "automation", title: "automation", level: 2 },
+        { id: "automation-options", title: "Automation Options", level: 2 },
+        { id: "optimization", title: "optimization", level: 2 },
+        { id: "optimizing-your-dca", title: "Optimizing Your DCA", level: 2 }
+      ]}
       faqs={[
         { question: "Is DCA better than lump sum investing?", answer: "Historically, lump sum investing outperforms DCA in rising markets because money is invested earlier. However, DCA provides better risk-adjusted outcomes in volatile markets and is psychologically easier. For most people in crypto, DCA's discipline and risk reduction outweigh the theoretical advantage of lump sum investing." },
         { question: "How often should I DCA?", answer: "Weekly or bi-weekly purchases are most common. Daily DCA provides the smoothest averaging but may incur more trading fees. Monthly purchases work for larger amounts. The optimal frequency depends on your budget, fee structure, and personal preference. Consistency matters more than frequency." },

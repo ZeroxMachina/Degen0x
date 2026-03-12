@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Lightning Network Payments Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Lightning Network Payments Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how Lightning Network enables instant, low-cost Bitcoin payments. Understand payment channels, wallets, and how to use Lightning for everyday transactions.",
 };
 
@@ -16,11 +16,16 @@ export default function LightningNetworkPaymentsPage() {
       readTime="11 min"
       intro="The Lightning Network is a second-layer protocol built on top of Bitcoin that enables near-instant payments with fees of less than a cent. By moving transactions off the main blockchain into payment channels, Lightning solves Bitcoin's scalability challenges and makes it practical for everyday purchases like coffee, groceries, and transit. This guide explains how Lightning works, the best wallets to use, and where you can spend with Lightning today."
       toc={[
-        { id: "how-lightning-works", title: "How the Lightning Network Works", level: 2 },
-        { id: "lightning-wallets", title: "Best Lightning Wallets", level: 2 },
-        { id: "making-payments", title: "Making Lightning Payments", level: 2 },
-        { id: "where-to-spend", title: "Where to Spend with Lightning", level: 2 },
-        { id: "advantages-limitations", title: "Advantages and Limitations", level: 2 },
+        { id: "how-lightning-works", title: "how-lightning-works", level: 2 },
+        { id: "how-the-lightning-network-works", title: "How the Lightning Network Works", level: 2 },
+        { id: "lightning-wallets", title: "lightning-wallets", level: 2 },
+        { id: "best-lightning-wallets", title: "Best Lightning Wallets", level: 2 },
+        { id: "making-payments", title: "making-payments", level: 2 },
+        { id: "making-lightning-payments", title: "Making Lightning Payments", level: 2 },
+        { id: "where-to-spend", title: "where-to-spend", level: 2 },
+        { id: "where-to-spend-with-lightning", title: "Where to Spend with Lightning", level: 2 },
+        { id: "advantages-limitations", title: "advantages-limitations", level: 2 },
+        { id: "advantages-and-limitations", title: "Advantages and Limitations", level: 2 }
       ]}
       faqs={[
         { question: "How much does a Lightning payment cost?", answer: "Lightning payments typically cost less than one cent regardless of the amount. Fees are based on a base fee per hop plus a proportional fee. For a typical payment routed through 2-3 nodes the total fee is usually 1-10 satoshis, a fraction of a cent." },

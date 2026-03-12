@@ -21,7 +21,7 @@ const products: Product[] = [
     cons: ["No native smart contracts", "Slower transaction speed", "Energy-intensive mining"],
     fees: "N/A (network fees for transactions)",
     bestFor: "Core long-term crypto allocation",
-    affiliateUrl: "https://cryptodegen.com/go/bitcoin",
+    affiliateUrl: "https://degen0x.com/go/bitcoin",
     category: "long-term",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     cons: ["High gas fees on mainnet", "Competition from L1 alternatives", "Complexity of ecosystem"],
     fees: "N/A (staking yields available)",
     bestFor: "Smart contract ecosystem exposure",
-    affiliateUrl: "https://cryptodegen.com/go/ethereum",
+    affiliateUrl: "https://degen0x.com/go/ethereum",
     category: "long-term",
     featured: true,
   },
@@ -47,7 +47,7 @@ const products: Product[] = [
     cons: ["Historical network outages", "Higher inflation than BTC/ETH", "More centralized validator set"],
     fees: "N/A (staking yields available)",
     bestFor: "High-performance L1 exposure",
-    affiliateUrl: "https://cryptodegen.com/go/solana",
+    affiliateUrl: "https://degen0x.com/go/solana",
     category: "long-term",
   },
   {
@@ -59,7 +59,7 @@ const products: Product[] = [
     cons: ["Token utility debates", "Revenue not fully distributed to holders", "Competition from newer oracles"],
     fees: "N/A",
     bestFor: "DeFi infrastructure exposure",
-    affiliateUrl: "https://cryptodegen.com/go/chainlink",
+    affiliateUrl: "https://degen0x.com/go/chainlink",
     category: "long-term",
   },
 ];
@@ -76,7 +76,7 @@ export default function BlueChipCryptoPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Blue-Chip Crypto", href: "/long-term/best/blue-chip-crypto" }]} />
       <AffiliateDisclosure />
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Blue-Chip Cryptocurrencies ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Blue-Chip Cryptocurrencies ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">Blue-chip cryptocurrencies are the established, battle-tested digital assets that form the foundation of any serious long-term crypto portfolio. These assets have survived multiple market cycles, have the deepest liquidity, and benefit from the strongest network effects in the industry.</p>
         <p className="text-[var(--color-text-secondary)]">We evaluated blue-chip candidates based on market capitalization, technology fundamentals, ecosystem strength, institutional adoption, regulatory positioning, and resilience through market downturns. These are the assets best positioned for long-term wealth accumulation in the crypto space.</p>
       </div>

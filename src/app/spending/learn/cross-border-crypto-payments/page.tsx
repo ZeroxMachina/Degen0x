@@ -17,10 +17,14 @@ export default function CrossBorderCryptoPaymentsPage() {
       readTime="10 min"
       intro="Cross-border cryptocurrency payments bypass the correspondent banking system, offering faster settlement, lower fees, and 24/7 availability. For businesses paying international suppliers and individuals sending money across borders, crypto provides a compelling alternative to SWIFT transfers and traditional remittance services."
       toc={[
-        { id: "business-payments", title: "Business Cross-Border Payments", level: 2 },
-        { id: "personal-transfers", title: "Personal International Transfers", level: 2 },
-        { id: "regulatory", title: "Regulatory Considerations", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "business-payments", title: "business-payments", level: 2 },
+        { id: "business-cross-border-payments", title: "Business Cross-Border Payments", level: 2 },
+        { id: "personal-transfers", title: "personal-transfers", level: 2 },
+        { id: "personal-international-transfers", title: "Personal International Transfers", level: 2 },
+        { id: "regulatory", title: "regulatory", level: 2 },
+        { id: "regulatory-considerations", title: "Regulatory Considerations", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto cross-border payments legal?", answer: "Crypto transfers are legal in most countries, but regulations vary. Both sender and recipient should understand their local laws. Some countries restrict or ban cryptocurrency entirely." },

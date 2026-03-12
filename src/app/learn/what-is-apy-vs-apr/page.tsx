@@ -17,11 +17,16 @@ export default function WhatIsApyVsAprPage() {
       readTime="6 min"
       intro="APR (Annual Percentage Rate) and APY (Annual Percentage Yield) are two ways of expressing the return on your crypto investments, but they can produce very different numbers for the same underlying opportunity. Understanding the distinction is essential for accurately comparing DeFi yields, staking rewards, and lending rates — and avoiding the common trap of chasing headline numbers that do not reflect actual returns."
       toc={[
+        { id: "apr-explained", title: "apr-explained", level: 2 },
         { id: "apr-explained", title: "APR Explained", level: 2 },
+        { id: "apy-explained", title: "apy-explained", level: 2 },
         { id: "apy-explained", title: "APY Explained", level: 2 },
-        { id: "key-difference", title: "The Key Difference", level: 2 },
-        { id: "defi-context", title: "APY and APR in DeFi", level: 2 },
-        { id: "comparing-yields", title: "How to Compare Yields", level: 2 },
+        { id: "key-difference", title: "key-difference", level: 2 },
+        { id: "the-key-difference", title: "The Key Difference", level: 2 },
+        { id: "defi-context", title: "defi-context", level: 2 },
+        { id: "apy-and-apr-in-defi", title: "APY and APR in DeFi", level: 2 },
+        { id: "comparing-yields", title: "comparing-yields", level: 2 },
+        { id: "how-to-compare-yields", title: "How to Compare Yields", level: 2 }
       ]}
       faqs={[
         { question: "Which is higher, APY or APR?", answer: "APY is always equal to or higher than APR for the same opportunity because APY includes the effect of compounding. The more frequently rewards are compounded, the larger the gap between APY and APR. A 100% APR compounded daily equals approximately 171.5% APY." },

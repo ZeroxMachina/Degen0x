@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Overcollateralization Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Overcollateralization Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Understand how overcollateralization works in crypto lending, why it's required, optimal ratios, and how it protects both borrowers and lenders.",
 };
 
@@ -16,10 +16,14 @@ export default function OvercollateralizationExplainedPage() {
       readTime="9 min read"
       intro="Overcollateralization is the foundation of crypto lending security. It requires borrowers to deposit collateral worth more than the loan amount, creating a buffer that protects lenders against price volatility. Understanding how overcollateralization works is essential for anyone borrowing or lending in crypto markets."
       toc={[
-        { id: "what-is-it", title: "What Is Overcollateralization", level: 2 },
-        { id: "why-required", title: "Why It Is Required", level: 2 },
-        { id: "ratios", title: "Common Ratios and Thresholds", level: 2 },
-        { id: "managing", title: "Managing Your Collateral", level: 2 },
+        { id: "what-is-it", title: "what-is-it", level: 2 },
+        { id: "what-is-overcollateralization", title: "What Is Overcollateralization", level: 2 },
+        { id: "why-required", title: "why-required", level: 2 },
+        { id: "why-it-is-required", title: "Why It Is Required", level: 2 },
+        { id: "ratios", title: "ratios", level: 2 },
+        { id: "common-ratios-and-thresholds", title: "Common Ratios and Thresholds", level: 2 },
+        { id: "managing", title: "managing", level: 2 },
+        { id: "managing-your-collateral", title: "Managing Your Collateral", level: 2 }
       ]}
       faqs={[
         { question: "Why can't I borrow the full value of my collateral?", answer: "Overcollateralization protects against price volatility. If you borrowed 100% of your collateral value and prices dropped even slightly, the loan would be undercollateralized. The buffer ensures lenders can be repaid even during market downturns." },

@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Ethereum Name Service (ENS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Ethereum Name Service (ENS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Ethereum Name Service (ENS), the decentralized domain name system for Ethereum. Discover how it works, tokenomics, use cases, and how to buy ENS.",
 };
 
 export default function EnsPage() {
   return (
-    <LearnPageLayout title="What Is Ethereum Name Service (ENS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Ethereum Name Service (ENS) is the decentralized naming system for Ethereum that maps human-readable names like 'vitalik.eth' to machine-readable identifiers such as Ethereum addresses, content hashes, and metadata. ENS has become critical Web3 infrastructure, with millions of registered .eth domains serving as digital identities, wallet addresses, and decentralized website hosts across the Ethereum ecosystem." toc={[{id:"what-is",title:"What Is ENS?",level:2},{id:"how-it-works",title:"How Does ENS Work?",level:2},{id:"tokenomics",title:"ENS Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy ENS",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is ENS?",answer:"ENS is the decentralized naming system for Ethereum, mapping human-readable .eth names to wallet addresses, content hashes, and other identifiers as core Web3 identity infrastructure."},{question:"Where can I buy ENS?",answer:"ENS is available on Binance, Coinbase, OKX, Bybit, and Uniswap. It trades against USDT, USDC, and ETH pairs."},{question:"Is ENS a good investment?",answer:"ENS is the established domain name standard for Ethereum with strong adoption, but domain registration revenue fluctuates with market cycles. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Ethereum Name Service (ENS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Ethereum Name Service (ENS) is the decentralized naming system for Ethereum that maps human-readable names like 'vitalik.eth' to machine-readable identifiers such as Ethereum addresses, content hashes, and metadata. ENS has become critical Web3 infrastructure, with millions of registered .eth domains serving as digital identities, wallet addresses, and decentralized website hosts across the Ethereum ecosystem." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ens", title: "What Is ENS?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-ens-work", title: "How Does ENS Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ens-tokenomics", title: "ENS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ens", title: "How to Buy ENS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is ENS?",answer:"ENS is the decentralized naming system for Ethereum, mapping human-readable .eth names to wallet addresses, content hashes, and other identifiers as core Web3 identity infrastructure."},{question:"Where can I buy ENS?",answer:"ENS is available on Binance, Coinbase, OKX, Bybit, and Uniswap. It trades against USDT, USDC, and ETH pairs."},{question:"Is ENS a good investment?",answer:"ENS is the established domain name standard for Ethereum with strong adoption, but domain registration revenue fluctuates with market cycles. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
       <h2 id="what-is">What Is ENS?</h2>
       <p>Ethereum Name Service was created by Nick Johnson and launched in 2017 as the native naming protocol for the Ethereum ecosystem. ENS operates as a set of smart contracts on Ethereum that function similarly to the traditional DNS (Domain Name System) of the internet, but for blockchain addresses and decentralized resources. The .eth domain has become the most recognized and widely used blockchain domain extension, adopted by millions of users as their primary Web3 identity.</p>
       <p>ENS domains serve multiple purposes beyond simple address resolution. They function as portable digital identities across Web3 applications, decentralized website hosting through IPFS integration, and social identity markers displayed in wallets, marketplaces, and social platforms. Major wallets, exchanges, and dApps integrate ENS resolution, making .eth names universally recognized across the Ethereum ecosystem and increasingly across other chains through CCIP-Read and ENSv2 expansion.</p>

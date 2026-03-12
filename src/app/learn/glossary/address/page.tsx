@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Crypto Address? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Crypto Address? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a cryptocurrency address is, how it works, the different types, and best practices for using addresses safely. A complete guide for beginners.",
 };
@@ -17,11 +17,16 @@ export default function AddressPage() {
       readTime="5 min"
       intro="A crypto address is a unique string of alphanumeric characters that serves as a destination for sending and receiving cryptocurrency on a blockchain. Think of it like a bank account number — you share it with others so they can send you funds, but unlike traditional banking, addresses are generated from cryptographic key pairs and do not require personal identity to create."
       toc={[
-        { id: "definition", title: "What Is a Crypto Address?", level: 2 },
-        { id: "how-it-works", title: "How Addresses Work", level: 2 },
-        { id: "types", title: "Types of Addresses", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-crypto-address", title: "What Is a Crypto Address?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-addresses-work", title: "How Addresses Work", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-addresses", title: "Types of Addresses", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         {

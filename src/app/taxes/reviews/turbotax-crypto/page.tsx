@@ -10,7 +10,7 @@ const product = {
   pros: ["Integrated into TurboTax filing", "Coinbase direct import", "Familiar interface for existing users", "Backed by Intuit"],
   cons: ["Limited exchange support", "Basic DeFi handling", "Requires Premier or higher tier", "Less specialized than dedicated tools"],
   bestFor: "Casual crypto investors who already use TurboTax and have simple exchange-based transactions",
-  affiliateUrl: "https://cryptodegen.com/go/turbotax",
+  affiliateUrl: "https://degen0x.com/go/turbotax",
   category: "taxes",
 };
 

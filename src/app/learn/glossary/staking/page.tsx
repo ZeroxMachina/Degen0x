@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Staking? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Staking? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what staking is, how it earns rewards, and the different ways to stake your cryptocurrency safely.",
 };
@@ -17,11 +17,16 @@ export default function StakingPage() {
       readTime="5 min"
       intro="Staking is the process of locking up cryptocurrency to support the operation of a proof-of-stake blockchain network. In return for staking tokens, participants earn rewards, typically paid in the same cryptocurrency. Staking serves two purposes: it secures the network by requiring validators to have economic skin in the game, and it provides token holders with a way to earn passive yield on their holdings."
       toc={[
-        { id: "definition", title: "What Is Staking?", level: 2 },
-        { id: "how-it-works", title: "How Staking Works", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-staking", title: "What Is Staking?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-staking-works", title: "How Staking Works", level: 2 },
+        { id: "ways-to-stake", title: "ways-to-stake", level: 2 },
         { id: "ways-to-stake", title: "Ways to Stake", level: 2 },
-        { id: "risks", title: "Staking Risks", level: 2 },
-        { id: "why-it-matters", title: "Why Staking Matters", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "staking-risks", title: "Staking Risks", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-staking-matters", title: "Why Staking Matters", level: 2 }
       ]}
       faqs={[
         {

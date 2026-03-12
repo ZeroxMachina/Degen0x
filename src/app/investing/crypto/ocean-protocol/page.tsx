@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Ocean Protocol (OCEAN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Ocean Protocol (OCEAN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Ocean Protocol (OCEAN), the decentralized data exchange platform for AI. Discover how it works, tokenomics, use cases, and how to buy OCEAN.",
 };
@@ -17,12 +17,18 @@ export default function OceanProtocolPage() {
       readTime="8 min read"
       intro="Ocean Protocol is a decentralized data exchange protocol that enables individuals and organizations to share, monetize, and consume data while maintaining privacy and control. As part of the Artificial Superintelligence Alliance (ASI), Ocean is building the data infrastructure for a decentralized AI economy."
       toc={[
-        { id: "what-is", title: "What Is Ocean Protocol?", level: 2 },
-        { id: "how-it-works", title: "How Does Ocean Protocol Work?", level: 2 },
-        { id: "tokenomics", title: "OCEAN Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy OCEAN", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ocean-protocol", title: "What Is Ocean Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-ocean-protocol-work", title: "How Does Ocean Protocol Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ocean-tokenomics", title: "OCEAN Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ocean", title: "How to Buy OCEAN", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

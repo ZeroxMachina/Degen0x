@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function ColdStoragePage() {
   return (
     <LearnPageLayout title="What Is Cold Storage?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="Cold storage refers to keeping cryptocurrency private keys completely offline, disconnected from the internet. By removing internet connectivity, cold storage eliminates the primary attack vector for cryptocurrency theft — remote hacking. Cold storage is considered the most secure method for holding cryptocurrency long-term."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "methods", title: "Cold Storage Methods", level: 2 },{ id: "best-practices", title: "Best Practices", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "methods", title: "methods", level: 2 },
+        { id: "cold-storage-methods", title: "Cold Storage Methods", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
+      ]}
       faqs={[
         { question: "What is the difference between cold storage and a cold wallet?", answer: "The terms are often used interchangeably. Cold storage is the broader concept of keeping keys offline. A cold wallet is a specific device or method used for cold storage. Hardware wallets are the most common cold wallet type, but air-gapped computers, paper wallets, and metal seed backups are also forms of cold storage." },
         { question: "Is cold storage necessary?", answer: "For significant cryptocurrency holdings, cold storage is strongly recommended. Hot wallets (connected to the internet) are convenient for daily use but vulnerable to malware, phishing, and remote attacks. Cold storage eliminates these risks for long-term holdings while hot wallets can hold smaller amounts for active use." },

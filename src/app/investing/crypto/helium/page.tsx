@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Helium (HNT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Helium (HNT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Helium (HNT), the decentralized wireless network for IoT and mobile connectivity. Discover how it works, tokenomics, use cases, and how to buy HNT.",
 };
@@ -17,12 +17,18 @@ export default function HeliumPage() {
       readTime="8 min read"
       intro="Helium is a decentralized wireless infrastructure network that incentivizes individuals to deploy hotspots providing wireless coverage for IoT devices and mobile phones. After migrating to the Solana blockchain, Helium has become the largest decentralized physical infrastructure network (DePIN), powering connectivity through community-owned hardware."
       toc={[
-        { id: "what-is", title: "What Is Helium?", level: 2 },
-        { id: "how-it-works", title: "How Does Helium Work?", level: 2 },
-        { id: "tokenomics", title: "HNT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy HNT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-helium", title: "What Is Helium?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-helium-work", title: "How Does Helium Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "hnt-tokenomics", title: "HNT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-hnt", title: "How to Buy HNT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

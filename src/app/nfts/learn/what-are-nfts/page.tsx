@@ -17,13 +17,20 @@ export default function WhatAreNftsPage() {
       readTime="14 min"
       intro="Non-fungible tokens (NFTs) have transformed how we think about digital ownership, art, and collectibles. An NFT is a unique digital asset stored on a blockchain that proves ownership of a specific item, whether it is digital art, music, a video clip, or even virtual real estate. Unlike cryptocurrencies such as Bitcoin, where each unit is identical, every NFT is one of a kind. This guide explains how NFTs work, what makes them valuable, and how you can get started."
       toc={[
-        { id: "nft-basics", title: "NFT Basics: What Makes Them Unique", level: 2 },
-        { id: "how-nfts-work", title: "How NFTs Work on the Blockchain", level: 2 },
+        { id: "nft-basics", title: "nft-basics", level: 2 },
+        { id: "nft-basics-what-makes-them-unique", title: "NFT Basics: What Makes Them Unique", level: 2 },
+        { id: "how-nfts-work", title: "how-nfts-work", level: 2 },
+        { id: "how-nfts-work-on-the-blockchain", title: "How NFTs Work on the Blockchain", level: 2 },
+        { id: "types-of-nfts", title: "types-of-nfts", level: 2 },
         { id: "types-of-nfts", title: "Types of NFTs", level: 2 },
+        { id: "why-nfts-have-value", title: "why-nfts-have-value", level: 2 },
         { id: "why-nfts-have-value", title: "Why NFTs Have Value", level: 2 },
-        { id: "nft-use-cases", title: "Real-World NFT Use Cases", level: 2 },
-        { id: "getting-started", title: "How to Get Started with NFTs", level: 2 },
-        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 },
+        { id: "nft-use-cases", title: "nft-use-cases", level: 2 },
+        { id: "real-world-nft-use-cases", title: "Real-World NFT Use Cases", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "how-to-get-started-with-nfts", title: "How to Get Started with NFTs", level: 2 },
+        { id: "risks-and-challenges", title: "risks-and-challenges", level: 2 },
+        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 }
       ]}
       faqs={[
         {

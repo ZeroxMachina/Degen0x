@@ -24,12 +24,12 @@ const product: Product = {
   ],
   fees: "2% marketplace fee",
   bestFor: "Reward-seeking NFT traders",
-  affiliateUrl: "https://cryptodegen.com/go/looksrare",
+  affiliateUrl: "https://degen0x.com/go/looksrare",
   category: "nfts",
 };
 
 export const metadata: Metadata = {
-  title: `LooksRare Review: Community-First NFT Marketplace (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `LooksRare Review: Community-First NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth LooksRare review covering LOOKS token rewards, staking, trading features, fees, and whether this community-governed marketplace is right for you.",
 };

@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
@@ -561,7 +563,7 @@ export default function PortfolioAnalyticsPage() {
             key={period}
             onClick={() => setTimePeriod(period)}
             className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
-              timePeriod === period ? "bg-[var(--color-primary)] text-white" : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
+              timePeriod === period ? "bg-[var(--color-primary)] text-[var(--color-text)]" : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
             }`}
           >
             {period.toUpperCase()}
@@ -882,7 +884,7 @@ export default function PortfolioAnalyticsPage() {
             "@type": "SoftwareApplication",
             "name": "Crypto Portfolio Analytics",
             "description": "Advanced crypto portfolio analytics with risk metrics, performance attribution, diversification analysis, and historical tracking",
-            "url": "https://cryptodegen.io/tools/portfolio-analytics",
+            "url": "https://degen0x.com/tools/portfolio-analytics",
             "applicationCategory": "FinanceApplication",
             "offers": {
               "@type": "Offer",
@@ -896,13 +898,3 @@ export default function PortfolioAnalyticsPage() {
   );
 }
 
-export const metadata = {
-  title: "Crypto Portfolio Analytics | CryptoDegen",
-  description: "Advanced portfolio analytics dashboard for crypto assets. Track allocation, risk metrics (Sharpe ratio, beta, volatility), performance attribution, diversification score, and correlation matrix.",
-  openGraph: {
-    title: "Crypto Portfolio Analytics | CryptoDegen",
-    description: "Comprehensive portfolio analytics with SVG charts, risk metrics, and performance tracking across 15+ crypto assets.",
-    url: "https://cryptodegen.io/tools/portfolio-analytics",
-    type: "website",
-  },
-};

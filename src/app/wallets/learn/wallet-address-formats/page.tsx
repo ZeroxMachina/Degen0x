@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Wallet Address Formats Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Wallet Address Formats Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Understand different crypto wallet address formats including Bitcoin, Ethereum, Solana, and Cosmos. Learn how addresses work and how to avoid sending to wrong addresses.",
 };
 
@@ -11,7 +11,16 @@ export default function WalletAddressFormatsPage() {
   return (
     <LearnPageLayout title="Crypto Wallet Address Formats Explained" categoryName="Crypto Wallets" categorySlug="wallets" readTime="7 min read"
       intro="Every blockchain uses its own address format, and understanding these formats is crucial for safely sending and receiving crypto. Sending tokens to a wrong address format can result in permanent loss of funds. From Bitcoin's multiple address types to Ethereum's hexadecimal addresses and Cosmos's bech32 format, each blockchain has distinct conventions. This guide demystifies address formats across major blockchains and teaches you how to verify addresses before sending transactions."
-      toc={[{ id: "address-basics", title: "Address Basics", level: 2 }, { id: "bitcoin-addresses", title: "Bitcoin Address Types", level: 2 }, { id: "evm-addresses", title: "EVM Chain Addresses", level: 2 }, { id: "other-formats", title: "Other Blockchain Formats", level: 2 }]}
+      toc={[
+        { id: "address-basics", title: "address-basics", level: 2 },
+        { id: "address-basics", title: "Address Basics", level: 2 },
+        { id: "bitcoin-addresses", title: "bitcoin-addresses", level: 2 },
+        { id: "bitcoin-address-types", title: "Bitcoin Address Types", level: 2 },
+        { id: "evm-addresses", title: "evm-addresses", level: 2 },
+        { id: "evm-chain-addresses", title: "EVM Chain Addresses", level: 2 },
+        { id: "other-formats", title: "other-formats", level: 2 },
+        { id: "other-blockchain-formats", title: "Other Blockchain Formats", level: 2 }
+      ]}
       faqs={[{ question: "Can I send ETH to a Bitcoin address?", answer: "No. Sending ETH to a Bitcoin address (or vice versa) will result in permanent loss of funds. Different blockchains are completely separate networks, and addresses are not interchangeable. Always verify you are sending to an address on the correct blockchain. Most wallets will prevent you from entering an invalid format, but some cross-chain scenarios (like EVM chains sharing the same format) can be confusing." },
         { question: "Are Ethereum addresses the same on L2s?", answer: "Yes. Your Ethereum address works on all EVM-compatible chains including Arbitrum, Optimism, Base, Polygon, and BNB Chain. Your MetaMask address is the same on all these networks. However, you must ensure you are sending tokens on the correct network. Sending USDC on Ethereum to your address on Arbitrum requires using the Ethereum network, not the Arbitrum network, unless bridging." },
         { question: "What is an ENS name?", answer: "Ethereum Name Service (ENS) maps human-readable names like 'vitalik.eth' to Ethereum addresses. Instead of sharing a long hexadecimal address, you can share your ENS name. Wallets resolve the ENS name to the underlying address. Similar services exist on other chains: Solana Name Service (.sol), Unstoppable Domains (.crypto), and Cosmos name services. Always verify the resolved address before sending large amounts." }]}

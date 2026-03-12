@@ -51,7 +51,7 @@ export default function FuturesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Futures Exchanges ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -78,16 +78,16 @@ export default function FuturesPage() {
           </p>
         </div>
 
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Futures Features Comparison</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Futures Features Comparison</h2>
         <div className="overflow-x-auto rounded-xl border border-[var(--color-border)] mt-4">
           <table className="w-full">
             <thead>
               <tr className="bg-[var(--color-bg-card)]">
-                <th className="px-4 py-3 text-left text-sm font-semibold text-white">Exchange</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Max Leverage</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Futures Pairs</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Maker Fee</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Taker Fee</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Exchange</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Max Leverage</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Futures Pairs</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Maker Fee</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Taker Fee</th>
               </tr>
             </thead>
             <tbody>
@@ -100,7 +100,7 @@ export default function FuturesPage() {
                 { name: "KuCoin", leverage: "100x", pairs: "200+", maker: "0.02%", taker: "0.06%" },
               ].map((row) => (
                 <tr key={row.name} className="border-t border-[var(--color-border)]">
-                  <td className="px-4 py-3 text-sm font-medium text-white">{row.name}</td>
+                  <td className="px-4 py-3 text-sm font-medium text-[var(--color-text)]">{row.name}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.leverage}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.pairs}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.maker}</td>

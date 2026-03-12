@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DEX vs CEX: Which Should You Use? (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DEX vs CEX: Which Should You Use? (${CURRENT_YEAR}) | degen0x`,
   description: "Compare decentralized exchanges (DEX) vs centralized exchanges (CEX). Self-custody, liquidity, fees, features, and which type is right for your needs.",
 };
 
@@ -16,13 +16,20 @@ export default function DecentralizedVsCentralized() {
       readTime="9 min read"
       intro="The choice between decentralized exchanges (DEXs) and centralized exchanges (CEXs) represents one of the most fundamental decisions in crypto trading. CEXs offer convenience, speed, and deep liquidity. DEXs provide self-custody, permissionless access, and censorship resistance. Understanding the tradeoffs helps you determine which type serves your needs better or whether using both is the optimal approach."
       toc={[
-        { id: "cex-overview", title: "Centralized Exchanges (CEX)", level: 2 },
-        { id: "dex-overview", title: "Decentralized Exchanges (DEX)", level: 2 },
+        { id: "cex-overview", title: "cex-overview", level: 2 },
+        { id: "centralized-exchanges-cex", title: "Centralized Exchanges (CEX)", level: 2 },
+        { id: "dex-overview", title: "dex-overview", level: 2 },
+        { id: "decentralized-exchanges-dex", title: "Decentralized Exchanges (DEX)", level: 2 },
+        { id: "key-differences", title: "key-differences", level: 2 },
         { id: "key-differences", title: "Key Differences", level: 2 },
-        { id: "security-custody", title: "Security and Custody", level: 2 },
-        { id: "liquidity-fees", title: "Liquidity and Fees", level: 2 },
-        { id: "use-cases", title: "When to Use Each", level: 2 },
-        { id: "future", title: "The Future of Exchanges", level: 2 },
+        { id: "security-custody", title: "security-custody", level: 2 },
+        { id: "security-and-custody", title: "Security and Custody", level: 2 },
+        { id: "liquidity-fees", title: "liquidity-fees", level: 2 },
+        { id: "liquidity-and-fees", title: "Liquidity and Fees", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "when-to-use-each", title: "When to Use Each", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-exchanges", title: "The Future of Exchanges", level: 2 }
       ]}
       faqs={[
         { question: "Are DEXs safer than CEXs?", answer: "DEXs eliminate custodial risk since you control your keys. However, they introduce smart contract risk, front-running, and impermanent loss risks. Neither type is inherently safer overall, they have different risk profiles." },

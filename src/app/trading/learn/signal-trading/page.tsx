@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Trading Signals: How to Use Them (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Trading Signals: How to Use Them (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to use crypto trading signals effectively. Understand signal types, evaluate providers, and integrate signals into your trading strategy.",
 };
@@ -17,10 +17,14 @@ export default function SignalTradingPage() {
       readTime="8 min read"
       intro="Trading signals are trade recommendations that specify when to buy or sell a crypto asset, including entry price, stop-loss, and take-profit levels. They can come from experienced traders, algorithmic systems, or technical analysis tools. This guide explains how trading signals work, how to evaluate their quality, and how to integrate them into your trading strategy without blindly following them."
       toc={[
-        { id: "what-are-signals", title: "What Are Trading Signals?", level: 2 },
-        { id: "types-of-signals", title: "Types of Trading Signals", level: 2 },
-        { id: "evaluating-providers", title: "Evaluating Signal Providers", level: 2 },
-        { id: "using-signals", title: "Using Signals Effectively", level: 2 },
+        { id: "what-are-signals", title: "what-are-signals", level: 2 },
+        { id: "what-are-trading-signals", title: "What Are Trading Signals?", level: 2 },
+        { id: "types-of-signals", title: "types-of-signals", level: 2 },
+        { id: "types-of-trading-signals", title: "Types of Trading Signals", level: 2 },
+        { id: "evaluating-providers", title: "evaluating-providers", level: 2 },
+        { id: "evaluating-signal-providers", title: "Evaluating Signal Providers", level: 2 },
+        { id: "using-signals", title: "using-signals", level: 2 },
+        { id: "using-signals-effectively", title: "Using Signals Effectively", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto trading signals worth paying for?", answer: "Some paid signal services provide value, but many are scams or underperform. Evaluate providers based on verified track records, transparent performance metrics, and reasonable claims. Free signals from reputable communities can be just as good as paid services. Never pay for signals that guarantee profits." },

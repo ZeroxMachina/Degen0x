@@ -18,10 +18,14 @@ export default function TreasuryGlossaryPage() {
       readTime="5 min"
       intro="A treasury in cryptocurrency refers to a pool of funds controlled by a protocol, DAO, or project that is used to fund development, incentivize contributors, and support the long-term growth of the ecosystem. Treasuries are typically managed through governance votes by token holders."
       toc={[
+        { id: "definition", title: "definition", level: 2 },
         { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
         { id: "how-it-works", title: "How It Works", level: 2 },
-        { id: "examples", title: "Examples & Use Cases", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "examples-use-cases", title: "Examples & Use Cases", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         { question: "Who controls a protocol treasury?", answer: "In decentralized protocols, the treasury is controlled by governance token holders who vote on spending proposals. Some treasuries use multisig wallets requiring multiple signers to approve transactions. The level of decentralization in treasury control varies by project, with some being fully community-governed and others having more centralized oversight." },

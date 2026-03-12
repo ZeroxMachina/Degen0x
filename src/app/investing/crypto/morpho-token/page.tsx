@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Morpho Token (MORPHO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Morpho Token (MORPHO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Morpho Token (MORPHO), the governance token of the Morpho lending protocol. Discover MORPHO tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function MorphoTokenPage() {
       readTime="8 min read"
       intro="Morpho Token (MORPHO) is the governance token of Morpho, an innovative lending protocol that optimizes interest rates by matching lenders and borrowers peer-to-peer on top of existing lending pools. Morpho Blue, its latest iteration, provides a permissionless, minimal lending primitive that enables anyone to create isolated lending markets with customizable risk parameters."
       toc={[
-        { id: "what-is", title: "What Is Morpho Token?", level: 2 },
-        { id: "how-it-works", title: "How Does Morpho Work?", level: 2 },
-        { id: "tokenomics", title: "MORPHO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MORPHO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-morpho-token", title: "What Is Morpho Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-morpho-work", title: "How Does Morpho Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "morpho-tokenomics", title: "MORPHO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-morpho", title: "How to Buy MORPHO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Morpho Token?", answer: "MORPHO is the governance token of the Morpho protocol, which optimizes DeFi lending through peer-to-peer matching and permissionless isolated markets via Morpho Blue." },

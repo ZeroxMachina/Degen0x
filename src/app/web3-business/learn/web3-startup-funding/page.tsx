@@ -16,10 +16,14 @@ export default function Web3StartupFundingPage() {
       readTime="10 min"
       intro="Funding a Web3 startup involves unique mechanisms beyond traditional venture capital, including token sales, grants, community funding, and decentralized fundraising approaches."
       toc={[
-        { id: "section-1", title: "Funding Landscape", level: 2 },
-        { id: "section-2", title: "Funding Mechanisms", level: 2 },
-        { id: "section-3", title: "Practical Applications", level: 2 },
-        { id: "section-4", title: "Best Practices", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "funding-landscape", title: "Funding Landscape", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "funding-mechanisms", title: "Funding Mechanisms", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "practical-applications", title: "Practical Applications", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "How do Web3 startups raise funding?", answer: "Web3 startups use a mix of traditional VC funding, token sales, ecosystem grants, community raises, and retroactive funding. The optimal approach depends on the project type, stage, regulatory situation, and team preferences." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Fundamental Analysis for Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Fundamental Analysis for Crypto (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to evaluate cryptocurrency projects through fundamental analysis: tokenomics, team assessment, technology evaluation, market fit, and on-chain metrics that reveal a project's true health.",
 };
@@ -17,11 +17,16 @@ export default function FundamentalAnalysisCryptoPage() {
       readTime="10 min read"
       intro="Fundamental analysis in crypto involves evaluating a project's intrinsic value by examining its technology, team, tokenomics, market fit, competitive positioning, and on-chain activity. Unlike traditional stock analysis, which relies on revenue, earnings, and cash flows, crypto fundamental analysis must assess open-source protocols, token economic models, community strength, and technical innovation. Mastering these techniques helps you distinguish genuinely valuable projects from hype-driven speculation."
       toc={[
-        { id: "team-technology", title: "Evaluating the Team and Technology", level: 2 },
-        { id: "tokenomics", title: "Analyzing Tokenomics", level: 2 },
-        { id: "on-chain-metrics", title: "Key On-Chain Metrics", level: 2 },
-        { id: "market-competitive", title: "Market Fit and Competitive Analysis", level: 2 },
-        { id: "red-flags", title: "Red Flags to Watch For", level: 2 },
+        { id: "team-technology", title: "team-technology", level: 2 },
+        { id: "evaluating-the-team-and-technology", title: "Evaluating the Team and Technology", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "analyzing-tokenomics", title: "Analyzing Tokenomics", level: 2 },
+        { id: "on-chain-metrics", title: "on-chain-metrics", level: 2 },
+        { id: "key-on-chain-metrics", title: "Key On-Chain Metrics", level: 2 },
+        { id: "market-competitive", title: "market-competitive", level: 2 },
+        { id: "market-fit-and-competitive-analysis", title: "Market Fit and Competitive Analysis", level: 2 },
+        { id: "red-flags", title: "red-flags", level: 2 },
+        { id: "red-flags-to-watch-for", title: "Red Flags to Watch For", level: 2 }
       ]}
       faqs={[
         {

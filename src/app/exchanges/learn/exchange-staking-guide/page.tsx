@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Staking on Exchanges: A Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Staking on Exchanges: A Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how staking works on crypto exchanges. APY rates, lock periods, risks, liquid staking, and the best exchanges for staking rewards.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeStakingGuide() {
       readTime="9 min read"
       intro="Staking on exchanges lets you earn passive income on your crypto holdings without the technical complexity of running your own validator node. Major exchanges handle the infrastructure while you collect rewards. This guide covers how exchange staking works, expected returns, risks, and the best platforms for earning staking rewards."
       toc={[
-        { id: "how-it-works", title: "How Exchange Staking Works", level: 2 },
-        { id: "apy-rates", title: "APY Rates and Rewards", level: 2 },
-        { id: "lock-periods", title: "Lock Periods and Flexibility", level: 2 },
-        { id: "liquid-staking", title: "Liquid Staking on Exchanges", level: 2 },
-        { id: "risks", title: "Staking Risks", level: 2 },
-        { id: "platforms", title: "Best Exchanges for Staking", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-exchange-staking-works", title: "How Exchange Staking Works", level: 2 },
+        { id: "apy-rates", title: "apy-rates", level: 2 },
+        { id: "apy-rates-and-rewards", title: "APY Rates and Rewards", level: 2 },
+        { id: "lock-periods", title: "lock-periods", level: 2 },
+        { id: "lock-periods-and-flexibility", title: "Lock Periods and Flexibility", level: 2 },
+        { id: "liquid-staking", title: "liquid-staking", level: 2 },
+        { id: "liquid-staking-on-exchanges", title: "Liquid Staking on Exchanges", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "staking-risks", title: "Staking Risks", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "best-exchanges-for-staking", title: "Best Exchanges for Staking", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "Is staking on exchanges safe?", answer: "Exchange staking carries custodial risk since the exchange holds your assets. Use reputable, regulated exchanges and avoid staking more than you can afford to lose. The underlying staking mechanism is generally safe, but exchange failures (like FTX) can result in loss of staked assets." },

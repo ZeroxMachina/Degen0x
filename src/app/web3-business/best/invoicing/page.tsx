@@ -16,10 +16,14 @@ export default function BestCryptoInvoicingPage() {
       readTime="10 min"
       intro="Crypto invoicing tools enable businesses and freelancers to create, send, and track invoices with cryptocurrency payment options, streamlining billing for Web3 businesses."
       toc={[
-        { id: "section-1", title: "Crypto Invoicing Overview", level: 2 },
-        { id: "section-2", title: "Top Invoicing Platforms", level: 2 },
-        { id: "section-3", title: "Features to Look For", level: 2 },
-        { id: "section-4", title: "Implementation Tips", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "crypto-invoicing-overview", title: "Crypto Invoicing Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "top-invoicing-platforms", title: "Top Invoicing Platforms", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "features-to-look-for", title: "Features to Look For", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "implementation-tips", title: "Implementation Tips", level: 2 }
       ]}
       faqs={[
         { question: "Can I invoice clients in cryptocurrency?", answer: "Yes. Crypto invoicing tools create professional invoices with crypto payment options. Clients receive a payment link and can pay in supported cryptocurrencies. Some platforms also offer automatic fiat conversion." },

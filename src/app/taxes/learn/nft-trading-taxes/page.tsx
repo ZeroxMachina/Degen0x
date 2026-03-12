@@ -17,10 +17,14 @@ export default function NFTTradingTaxesPage() {
       readTime="8 min"
       intro="NFT trading has become a significant part of the crypto ecosystem, but the tax treatment of buying, selling, minting, and receiving NFTs is complex and still evolving. NFTs are treated as property by the IRS, meaning each transaction may trigger capital gains or losses. Additionally, the IRS has proposed treating certain NFTs as collectibles subject to higher tax rates. This guide covers the comprehensive tax implications of NFT trading."
       toc={[
-        { id: "buying-selling", title: "Buying and Selling NFTs", level: 2 },
-        { id: "minting-creating", title: "Minting and Creating NFTs", level: 2 },
-        { id: "collectibles-treatment", title: "Collectibles Tax Treatment", level: 2 },
-        { id: "nft-specific-issues", title: "NFT-Specific Tax Issues", level: 2 },
+        { id: "buying-selling", title: "buying-selling", level: 2 },
+        { id: "buying-and-selling-nfts", title: "Buying and Selling NFTs", level: 2 },
+        { id: "minting-creating", title: "minting-creating", level: 2 },
+        { id: "minting-and-creating-nfts", title: "Minting and Creating NFTs", level: 2 },
+        { id: "collectibles-treatment", title: "collectibles-treatment", level: 2 },
+        { id: "collectibles-tax-treatment", title: "Collectibles Tax Treatment", level: 2 },
+        { id: "nft-specific-issues", title: "nft-specific-issues", level: 2 },
+        { id: "nft-specific-tax-issues", title: "NFT-Specific Tax Issues", level: 2 }
       ]}
       faqs={[
         { question: "Is buying an NFT with crypto a taxable event?", answer: "Yes. When you use cryptocurrency to purchase an NFT, you are disposing of the crypto, which triggers a capital gain or loss on the crypto used for payment. The gain or loss is calculated based on the difference between the fair market value of the crypto at the time of purchase and your cost basis in that crypto." },

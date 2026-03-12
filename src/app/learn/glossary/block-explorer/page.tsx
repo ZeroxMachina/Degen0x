@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Block Explorer? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Block Explorer? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a block explorer is, how to use one, popular explorers for different blockchains, and why they matter for transparency. A complete guide.",
 };
@@ -17,10 +17,14 @@ export default function BlockExplorerPage() {
       readTime="4 min"
       intro="A block explorer is a web-based tool that allows anyone to search and view all activity on a blockchain network. You can look up individual transactions, wallet addresses, blocks, and smart contracts. Block explorers are essential for verifying transactions, researching projects, and understanding on-chain activity."
       toc={[
-        { id: "definition", title: "What Is a Block Explorer?", level: 2 },
-        { id: "how-to-use", title: "How to Use a Block Explorer", level: 2 },
-        { id: "popular-explorers", title: "Popular Block Explorers", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-block-explorer", title: "What Is a Block Explorer?", level: 2 },
+        { id: "how-to-use", title: "how-to-use", level: 2 },
+        { id: "how-to-use-a-block-explorer", title: "How to Use a Block Explorer", level: 2 },
+        { id: "popular-explorers", title: "popular-explorers", level: 2 },
+        { id: "popular-block-explorers", title: "Popular Block Explorers", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

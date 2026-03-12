@@ -1,11 +1,7 @@
 'use client';
 
+import React from 'react';
 import { useState, useEffect } from 'react';
-
-export const metadata = {
-  title: 'Portfolio Performance Tracker | Crypto Portfolio Manager',
-  description: 'Track your cryptocurrency portfolio with real-time price updates, P&L analysis, and allocation visualization.',
-};
 
 interface Holding {
   id: string;
@@ -184,7 +180,7 @@ export default function PortfolioTracker() {
           {/* Portfolio Allocation Pie Chart */}
           <div className="lg:col-span-1">
             <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6">
-              <h2 className="text-xl font-semibold mb-6 text-white">Allocation</h2>
+              <h2 className="text-xl font-semibold mb-6 text-[var(--color-text)]">Allocation</h2>
 
               {holdings.length > 0 ? (
                 <div className="flex flex-col items-center">
@@ -218,7 +214,7 @@ export default function PortfolioTracker() {
                       );
 
                       return { angle: endAngle, elements: acc.elements };
-                    }, { angle: 0, elements: [] as JSX.Element[] }).elements}
+                    }, { angle: 0, elements: [] as React.ReactElement[] }).elements}
                   </svg>
 
                   <div className="w-full space-y-2">
@@ -234,7 +230,7 @@ export default function PortfolioTracker() {
                             <div className={`w-3 h-3 rounded-full bg-${colors[idx % colors.length]}-400`}></div>
                             <span className="text-[#8b949e]">{holding.name}</span>
                           </div>
-                          <span className="font-semibold text-white">{percent.toFixed(1)}%</span>
+                          <span className="font-semibold text-[var(--color-text)]">{percent.toFixed(1)}%</span>
                         </div>
                       );
                     })}
@@ -249,7 +245,7 @@ export default function PortfolioTracker() {
           {/* Holdings Table */}
           <div className="lg:col-span-2">
             <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6">
-              <h2 className="text-xl font-semibold mb-6 text-white">Holdings</h2>
+              <h2 className="text-xl font-semibold mb-6 text-[var(--color-text)]">Holdings</h2>
 
               {holdings.length > 0 ? (
                 <div className="overflow-x-auto">
@@ -274,7 +270,7 @@ export default function PortfolioTracker() {
 
                         return (
                           <tr key={holding.id} className="border-b border-[#30363d] hover:bg-[#0d1117] transition">
-                            <td className="py-3 px-2 font-semibold text-white">{holding.name}</td>
+                            <td className="py-3 px-2 font-semibold text-[var(--color-text)]">{holding.name}</td>
                             <td className="text-right py-3 px-2 text-[#e6edf3]">{holding.amount.toFixed(4)}</td>
                             <td className="text-right py-3 px-2 text-[#e6edf3]">${holding.buyPrice.toFixed(2)}</td>
                             <td className="text-right py-3 px-2 text-blue-400 font-semibold">${currentPrice.toFixed(2)}</td>
@@ -304,7 +300,7 @@ export default function PortfolioTracker() {
 
         {/* Add Holding Form */}
         <div className="mt-8 bg-[#161b22] border border-[#30363d] rounded-lg p-6">
-          <h2 className="text-xl font-semibold mb-4 text-white">Add New Holding</h2>
+          <h2 className="text-xl font-semibold mb-4 text-[var(--color-text)]">Add New Holding</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             <div>
@@ -312,7 +308,7 @@ export default function PortfolioTracker() {
               <select
                 value={newHolding.name}
                 onChange={e => setNewHolding({ ...newHolding, name: e.target.value })}
-                className="w-full bg-[#0d1117] border border-[#30363d] rounded px-3 py-2 text-white focus:outline-none focus:border-blue-500 transition"
+                className="w-full bg-[#0d1117] border border-[#30363d] rounded px-3 py-2 text-[var(--color-text)] focus:outline-none focus:border-blue-500 transition"
               >
                 {Object.keys(INITIAL_PRICES).map(coin => (
                   <option key={coin} value={coin}>{coin}</option>
@@ -328,7 +324,7 @@ export default function PortfolioTracker() {
                 value={newHolding.amount}
                 onChange={e => setNewHolding({ ...newHolding, amount: e.target.value })}
                 placeholder="0.5"
-                className="w-full bg-[#0d1117] border border-[#30363d] rounded px-3 py-2 text-white placeholder-[#6e7681] focus:outline-none focus:border-blue-500 transition"
+                className="w-full bg-[#0d1117] border border-[#30363d] rounded px-3 py-2 text-[var(--color-text)] placeholder-[#6e7681] focus:outline-none focus:border-blue-500 transition"
               />
             </div>
 
@@ -340,14 +336,14 @@ export default function PortfolioTracker() {
                 value={newHolding.buyPrice}
                 onChange={e => setNewHolding({ ...newHolding, buyPrice: e.target.value })}
                 placeholder="35000"
-                className="w-full bg-[#0d1117] border border-[#30363d] rounded px-3 py-2 text-white placeholder-[#6e7681] focus:outline-none focus:border-blue-500 transition"
+                className="w-full bg-[#0d1117] border border-[#30363d] rounded px-3 py-2 text-[var(--color-text)] placeholder-[#6e7681] focus:outline-none focus:border-blue-500 transition"
               />
             </div>
 
             <div className="flex items-end">
               <button
                 onClick={addHolding}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-2 px-4 rounded transition"
+                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-[var(--color-text)] font-semibold py-2 px-4 rounded transition"
               >
                 Add Holding
               </button>
@@ -359,7 +355,7 @@ export default function PortfolioTracker() {
                   setHoldings([]);
                   setHoldings(SAMPLE_HOLDINGS);
                 }}
-                className="w-full bg-[#30363d] hover:bg-[#484f58] text-white font-semibold py-2 px-4 rounded transition"
+                className="w-full bg-[#30363d] hover:bg-[#484f58] text-[var(--color-text)] font-semibold py-2 px-4 rounded transition"
               >
                 Reset
               </button>

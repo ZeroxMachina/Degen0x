@@ -17,11 +17,16 @@ export default function BestCopyTradingExchangesPage() {
       readTime="9 min"
       intro="Copy trading lets you automatically replicate the trades of experienced crypto traders. It is an accessible way for beginners to participate in active trading strategies without the knowledge required to develop their own. Here are the best platforms that offer robust copy trading features."
       toc={[
+        { id: "how-copy-trading-works", title: "how-copy-trading-works", level: 2 },
         { id: "how-copy-trading-works", title: "How Copy Trading Works", level: 2 },
-        { id: "top-picks", title: "Top Copy Trading Platforms", level: 2 },
-        { id: "choosing-traders", title: "How to Choose Traders to Copy", level: 2 },
-        { id: "risks", title: "Copy Trading Risks", level: 2 },
-        { id: "tips", title: "Copy Trading Tips", level: 2 },
+        { id: "top-picks", title: "top-picks", level: 2 },
+        { id: "top-copy-trading-platforms", title: "Top Copy Trading Platforms", level: 2 },
+        { id: "choosing-traders", title: "choosing-traders", level: 2 },
+        { id: "how-to-choose-traders-to-copy", title: "How to Choose Traders to Copy", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "copy-trading-risks", title: "Copy Trading Risks", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "copy-trading-tips", title: "Copy Trading Tips", level: 2 }
       ]}
       faqs={[
         { question: "Is copy trading profitable?", answer: "Copy trading can be profitable if you select skilled traders with consistent track records. However, past performance does not guarantee future results. Diversify across multiple traders and use risk management settings to limit losses." },

@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Banana Gun (BANANA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Banana Gun (BANANA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Banana Gun (BANANA), the multi-chain Telegram trading bot. Discover how it works, tokenomics, use cases, and how to buy BANANA.",
 };
 
 export default function BananaGunPage() {
   return (
-    <LearnPageLayout title="What Is Banana Gun (BANANA)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Banana Gun is a multi-chain Telegram trading bot supporting Ethereum, Solana, Base, and Blast. The bot enables users to snipe token launches, execute fast swaps, and set automated trading strategies directly from Telegram. Banana Gun has become one of the highest-revenue Telegram bots in crypto, processing billions in cumulative trading volume." toc={[{id:"what-is",title:"What Is Banana Gun?",level:2},{id:"how-it-works",title:"How Does Banana Gun Work?",level:2},{id:"tokenomics",title:"BANANA Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy BANANA",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Banana Gun?",answer:"Banana Gun is a multi-chain Telegram trading bot for sniping token launches and fast swaps on Ethereum, Solana, Base, and Blast with automated trading strategies."},{question:"Where can I buy BANANA?",answer:"BANANA is available on Binance, OKX, Bybit, and Uniswap. It trades against USDT and ETH pairs."},{question:"Is Banana Gun a good investment?",answer:"Banana Gun generates substantial revenue from trading fees across multiple chains, but bot competition is intense. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Banana Gun (BANANA)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Banana Gun is a multi-chain Telegram trading bot supporting Ethereum, Solana, Base, and Blast. The bot enables users to snipe token launches, execute fast swaps, and set automated trading strategies directly from Telegram. Banana Gun has become one of the highest-revenue Telegram bots in crypto, processing billions in cumulative trading volume." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-banana-gun", title: "What Is Banana Gun?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-banana-gun-work", title: "How Does Banana Gun Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "banana-tokenomics", title: "BANANA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-banana", title: "How to Buy BANANA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Banana Gun?",answer:"Banana Gun is a multi-chain Telegram trading bot for sniping token launches and fast swaps on Ethereum, Solana, Base, and Blast with automated trading strategies."},{question:"Where can I buy BANANA?",answer:"BANANA is available on Binance, OKX, Bybit, and Uniswap. It trades against USDT and ETH pairs."},{question:"Is Banana Gun a good investment?",answer:"Banana Gun generates substantial revenue from trading fees across multiple chains, but bot competition is intense. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
       <h2 id="what-is">What Is Banana Gun?</h2>
       <p>Banana Gun launched as an Ethereum-focused sniping bot and rapidly expanded to become one of the most popular multi-chain trading bots in the crypto ecosystem. The bot specializes in token launch sniping, where it automatically purchases tokens the moment liquidity is added to a decentralized exchange, giving users a speed advantage over manual traders. This capability became essential during the memecoin trading boom across Ethereum, Solana, and Layer 2 networks.</p>
       <p>The platform distinguishes itself through its multi-chain support, anti-rug protection features, and consistent execution speed. Banana Gun&apos;s private transaction infrastructure helps protect users from MEV attacks and sandwich bots. The bot processes significant daily volume and has established itself as critical infrastructure for active token traders who need speed and reliability across multiple blockchain networks.</p>

@@ -330,7 +330,7 @@ export default function BestCryptoForBeginnersPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto to Buy for Beginners in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] mb-4 leading-relaxed">
@@ -349,7 +349,7 @@ export default function BestCryptoForBeginnersPage() {
           }}
         >
           <span>📅 Updated: {CURRENT_MONTH} {CURRENT_YEAR}</span>
-          <span>👤 Reviewed by CryptoDegen Editorial Team</span>
+          <span>👤 Reviewed by degen0x Editorial Team</span>
           <span>⏱ 8-min read</span>
         </div>
       </header>
@@ -618,13 +618,13 @@ export default function BestCryptoForBeginnersPage() {
 
       {/* How We Chose */}
       <div id="how-we-chose" style={{ marginTop: 56 }}>
-        <h2 className="text-2xl font-bold text-white mb-4">How We Ranked These Picks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Ranked These Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4">
-          Every coin on this list was evaluated across five dimensions: <strong className="text-white">liquidity</strong> (can you easily buy and sell?),{" "}
-          <strong className="text-white">risk profile</strong> (how volatile is it?),{" "}
-          <strong className="text-white">fundamentals</strong> (is there real technology and adoption behind it?),{" "}
-          <strong className="text-white">beginner accessibility</strong> (available on major exchanges, in-wallet staking, clear use case), and{" "}
-          <strong className="text-white">long-term potential</strong> (5-year outlook based on roadmap and ecosystem trajectory).
+          Every coin on this list was evaluated across five dimensions: <strong className="text-[var(--color-text)]">liquidity</strong> (can you easily buy and sell?),{" "}
+          <strong className="text-[var(--color-text)]">risk profile</strong> (how volatile is it?),{" "}
+          <strong className="text-[var(--color-text)]">fundamentals</strong> (is there real technology and adoption behind it?),{" "}
+          <strong className="text-[var(--color-text)]">beginner accessibility</strong> (available on major exchanges, in-wallet staking, clear use case), and{" "}
+          <strong className="text-[var(--color-text)]">long-term potential</strong> (5-year outlook based on roadmap and ecosystem trajectory).
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           We deliberately excluded meme coins, unvetted DeFi tokens, and projects with less than two years of track record from the top 8 — with SHIB listed only as an optional, small-allocation meme exposure for those who want it. Risk-ranked from lowest to highest.
@@ -633,7 +633,7 @@ export default function BestCryptoForBeginnersPage() {
 
       {/* How to Buy */}
       <div id="how-to-buy" style={{ marginTop: 40 }}>
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Your First Crypto (5 Steps)</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Your First Crypto (5 Steps)</h2>
         <ol style={{ paddingLeft: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 16 }}>
           {[
             ["Choose a regulated exchange", "Create a free account on Coinbase (US), Kraken (low fees), or Binance (global). All three are regulated, insured, and beginner-friendly."],
@@ -683,9 +683,9 @@ export default function BestCryptoForBeginnersPage() {
 
       {/* Portfolio Sizing */}
       <div id="portfolio-size" style={{ marginTop: 40 }}>
-        <h2 className="text-2xl font-bold text-white mb-4">How Much to Invest as a Beginner</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How Much to Invest as a Beginner</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mb-6">
-          There is no perfect number, but a common framework used by financial advisors is the <strong className="text-white">5–10% rule</strong> — never put more than 5–10% of your total investment portfolio into crypto. Within that crypto allocation, here is a simple beginner-friendly split:
+          There is no perfect number, but a common framework used by financial advisors is the <strong className="text-[var(--color-text)]">5–10% rule</strong> — never put more than 5–10% of your total investment portfolio into crypto. Within that crypto allocation, here is a simple beginner-friendly split:
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 14 }}>
           {[

@@ -45,7 +45,7 @@ export default function BestSoftwareWalletsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Software Wallets of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -56,25 +56,25 @@ export default function BestSoftwareWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">Why Use a Software Wallet?</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Why Use a Software Wallet?</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">Instant Access</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">Instant Access</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">No hardware needed. Install and start using immediately from your browser or phone.</p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">DeFi Ready</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">DeFi Ready</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Connect to thousands of DeFi protocols, DEXs, and dApps with a single click.</p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">Free to Use</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">Free to Use</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">All software wallets are free to download. You only pay network transaction fees.</p>
           </div>
         </div>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Software Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Software Wallets, Ranked</h2>
         <div className="space-y-6">
           {softwareWallets.map((product, index) => (
             <ProductCard
@@ -88,7 +88,7 @@ export default function BestSoftwareWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Software Wallet Security Tips</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Software Wallet Security Tips</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
           <ul className="space-y-3 text-[var(--color-text-secondary)]">
             <li className="flex items-start gap-2">
@@ -116,18 +116,18 @@ export default function BestSoftwareWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/best/hot-wallets" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best Hot Wallets</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best Hot Wallets</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">All internet-connected wallets</p>
           </Link>
           <Link href="/wallets/best/mobile" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best Mobile Wallets</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best Mobile Wallets</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Top iOS and Android picks</p>
           </Link>
           <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Security Best Practices</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Security Best Practices</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Stay safe with hot wallets</p>
           </Link>
         </div>

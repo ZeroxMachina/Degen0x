@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `AI and Crypto: Where They Intersect (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `AI and Crypto: Where They Intersect (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore the intersection of AI and crypto: decentralized compute networks, on-chain AI agents, verifiable inference, tokenized AI models, and how blockchain solves AI's trust and coordination challenges.",
 };
@@ -17,11 +17,16 @@ export default function CryptoAiIntersectionPage() {
       readTime="9 min read"
       intro="Artificial intelligence and cryptocurrency are two of the most transformative technologies of our era, and their intersection is creating entirely new possibilities. Blockchain addresses critical challenges in AI — trust, coordination, incentive alignment, and decentralized access to compute and data — while AI can enhance blockchain applications through intelligent automation, predictive analytics, and autonomous agents. The convergence of these technologies is spawning a rapidly growing sector of crypto-AI projects that aim to democratize access to AI capabilities."
       toc={[
-        { id: "why-converge", title: "Why AI and Crypto Converge", level: 2 },
-        { id: "decentralized-compute", title: "Decentralized Compute Networks", level: 2 },
-        { id: "ai-agents", title: "On-Chain AI Agents", level: 2 },
-        { id: "verifiable-ai", title: "Verifiable AI and Inference", level: 2 },
-        { id: "outlook", title: "Challenges and Outlook", level: 2 },
+        { id: "why-converge", title: "why-converge", level: 2 },
+        { id: "why-ai-and-crypto-converge", title: "Why AI and Crypto Converge", level: 2 },
+        { id: "decentralized-compute", title: "decentralized-compute", level: 2 },
+        { id: "decentralized-compute-networks", title: "Decentralized Compute Networks", level: 2 },
+        { id: "ai-agents", title: "ai-agents", level: 2 },
+        { id: "on-chain-ai-agents", title: "On-Chain AI Agents", level: 2 },
+        { id: "verifiable-ai", title: "verifiable-ai", level: 2 },
+        { id: "verifiable-ai-and-inference", title: "Verifiable AI and Inference", level: 2 },
+        { id: "outlook", title: "outlook", level: 2 },
+        { id: "challenges-and-outlook", title: "Challenges and Outlook", level: 2 }
       ]}
       faqs={[
         {

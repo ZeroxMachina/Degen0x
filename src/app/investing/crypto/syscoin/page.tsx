@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Syscoin (SYS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Syscoin (SYS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Syscoin (SYS), the blockchain combining Bitcoin security with Ethereum smart contracts. Discover SYS tokenomics and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function SyscoinPage() {
       readTime="8 min read"
       intro="Syscoin (SYS) is a blockchain platform that combines Bitcoin's merge-mined security with Ethereum-compatible smart contracts through its NEVM (Network-Enhanced Virtual Machine) layer. Launched in 2014, Syscoin offers a dual-chain architecture where a UTXO layer handles fast, scalable asset transfers and the NEVM layer supports EVM-compatible DeFi applications."
       toc={[
-        { id: "what-is", title: "What Is Syscoin?", level: 2 },
-        { id: "how-it-works", title: "How Does Syscoin Work?", level: 2 },
-        { id: "tokenomics", title: "SYS Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SYS", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-syscoin", title: "What Is Syscoin?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-syscoin-work", title: "How Does Syscoin Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "sys-tokenomics", title: "SYS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-sys", title: "How to Buy SYS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Syscoin?", answer: "Syscoin is a blockchain platform combining Bitcoin merge-mining security with EVM-compatible smart contracts through NEVM. It offers a dual-layer architecture for both fast asset transfers and DeFi applications." },

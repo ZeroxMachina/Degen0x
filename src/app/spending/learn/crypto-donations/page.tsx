@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Donations: Tax Benefits and How-To (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Donations: Tax Benefits and How-To (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to donating cryptocurrency. Tax benefits, eligible charities, donation process, and how to maximize your impact with crypto charitable giving.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoDonationsPage() {
     <LearnPageLayout title="Crypto Donations: Tax Benefits and How-To" categoryName="Crypto Spending" categorySlug="spending" readTime="8 min read"
       intro="Donating cryptocurrency to charity can be one of the most tax-efficient forms of charitable giving. When you donate appreciated crypto directly to a qualified charity, you may receive a tax deduction for the full fair market value while avoiding capital gains tax on the appreciation. This double benefit makes crypto donations an attractive option for holders with significant unrealized gains who want to support causes they care about."
       toc={[
-        { id: "tax-benefits", title: "Tax Benefits of Crypto Donations", level: 2 },
-        { id: "how-to-donate", title: "How to Donate Crypto", level: 2 },
-        { id: "platforms", title: "Donation Platforms", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "tax-benefits", title: "tax-benefits", level: 2 },
+        { id: "tax-benefits-of-crypto-donations", title: "Tax Benefits of Crypto Donations", level: 2 },
+        { id: "how-to-donate", title: "how-to-donate", level: 2 },
+        { id: "how-to-donate-crypto", title: "How to Donate Crypto", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "donation-platforms", title: "Donation Platforms", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What are the tax benefits of donating crypto?", answer: "In the US, if you donate cryptocurrency held for more than one year to a qualified 501(c)(3) charity, you can deduct the full fair market value of the donation and pay no capital gains tax on the appreciation. For example, if you bought Bitcoin at $10,000 and donate it when it is worth $60,000, you get a $60,000 deduction and avoid $50,000 in taxable capital gains." },

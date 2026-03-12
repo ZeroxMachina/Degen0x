@@ -25,13 +25,20 @@ export default function HowToBuySolanaPage() {
       readTime="12 min"
       intro="Solana (SOL) has emerged as one of the leading Layer 1 blockchains, known for its high throughput, low transaction costs, and growing ecosystem. Solana processes thousands of transactions per second at a fraction of a cent per transaction, making it popular for DeFi, NFTs, and consumer applications. SOL is the native token used for transaction fees, staking, and governance. This guide covers how to buy SOL, where to store it, staking opportunities, and how to participate in the Solana ecosystem."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose an Exchange", level: 2 },
-        { id: "create-verify", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-solana", title: "Step 4: Buy Solana", level: 2 },
-        { id: "store-solana", title: "Step 5: Store Your SOL", level: 2 },
-        { id: "staking-sol", title: "Staking SOL for Rewards", level: 2 },
-        { id: "solana-ecosystem", title: "Exploring the Solana Ecosystem", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-an-exchange", title: "Step 1: Choose an Exchange", level: 2 },
+        { id: "create-verify", title: "create-verify", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-solana", title: "buy-solana", level: 2 },
+        { id: "step-4-buy-solana", title: "Step 4: Buy Solana", level: 2 },
+        { id: "store-solana", title: "store-solana", level: 2 },
+        { id: "step-5-store-your-sol", title: "Step 5: Store Your SOL", level: 2 },
+        { id: "staking-sol", title: "staking-sol", level: 2 },
+        { id: "staking-sol-for-rewards", title: "Staking SOL for Rewards", level: 2 },
+        { id: "solana-ecosystem", title: "solana-ecosystem", level: 2 },
+        { id: "exploring-the-solana-ecosystem", title: "Exploring the Solana Ecosystem", level: 2 }
       ]}
       faqs={[
         {

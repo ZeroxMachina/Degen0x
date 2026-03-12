@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Hedera Hashgraph Token (HBAR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Hedera Hashgraph Token (HBAR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Hedera Hashgraph Token (HBAR), the enterprise-grade distributed ledger. Discover HBAR tokenomics and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function HbarPage() {
       readTime="8 min read"
       intro="Hedera Hashgraph Token (HBAR) is the native cryptocurrency of the Hedera network, an enterprise-grade distributed ledger that uses hashgraph consensus instead of a traditional blockchain. Governed by a council of up to 39 major organizations including Google, IBM, and Boeing, Hedera offers fast, fair, and secure services for payments, token creation, consensus, and smart contracts."
       toc={[
-        { id: "what-is", title: "What Is Hedera Hashgraph Token?", level: 2 },
-        { id: "how-it-works", title: "How Does Hedera Work?", level: 2 },
-        { id: "tokenomics", title: "HBAR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy HBAR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-hedera-hashgraph-token", title: "What Is Hedera Hashgraph Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-hedera-work", title: "How Does Hedera Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "hbar-tokenomics", title: "HBAR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-hbar", title: "How to Buy HBAR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Hedera Hashgraph Token?", answer: "HBAR is the native token of the Hedera network, which uses hashgraph consensus for high-speed, low-cost transactions. It is governed by a council of major global corporations and institutions." },

@@ -18,12 +18,18 @@ export default function WhatIsATokenPage() {
       readTime="8 min"
       intro="A crypto token is a digital asset created on an existing blockchain using smart contracts, as opposed to coins like Bitcoin or Ether that are native to their own blockchain. Tokens can represent virtually anything — from voting rights and access passes to real-world assets and financial instruments — making them the most versatile building blocks of the Web3 economy."
       toc={[
+        { id: "tokens-vs-coins", title: "tokens-vs-coins", level: 2 },
         { id: "tokens-vs-coins", title: "Tokens vs Coins", level: 2 },
+        { id: "token-standards", title: "token-standards", level: 2 },
         { id: "token-standards", title: "Token Standards", level: 2 },
+        { id: "types-of-tokens", title: "types-of-tokens", level: 2 },
         { id: "types-of-tokens", title: "Types of Tokens", level: 2 },
+        { id: "how-tokens-work", title: "how-tokens-work", level: 2 },
         { id: "how-tokens-work", title: "How Tokens Work", level: 2 },
-        { id: "token-creation", title: "Creating Tokens", level: 2 },
-        { id: "evaluating-tokens", title: "Evaluating Tokens", level: 2 },
+        { id: "token-creation", title: "token-creation", level: 2 },
+        { id: "creating-tokens", title: "Creating Tokens", level: 2 },
+        { id: "evaluating-tokens", title: "evaluating-tokens", level: 2 },
+        { id: "evaluating-tokens", title: "Evaluating Tokens", level: 2 }
       ]}
       faqs={[
         {

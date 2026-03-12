@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.1% spot; 0.02%/0.06% futures maker/taker",
   bestFor: "Solana ecosystem traders and NFT enthusiasts",
-  affiliateUrl: "https://cryptodegen.com/go/backpack",
+  affiliateUrl: "https://degen0x.com/go/backpack",
   category: "exchanges",
 };
 

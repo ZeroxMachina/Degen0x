@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is an NFT? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is an NFT? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what non-fungible tokens are, how they work, and their applications in art, gaming, and digital ownership.",
 };
@@ -17,11 +17,16 @@ export default function NftPage() {
       readTime="6 min"
       intro="An NFT (Non-Fungible Token) is a unique digital asset verified on a blockchain that represents ownership of a specific item — digital art, music, video, in-game items, virtual real estate, or other digital and physical assets. Unlike fungible tokens where each unit is identical, every NFT has unique properties and cannot be exchanged one-for-one with another. NFTs enable verifiable digital ownership and provenance."
       toc={[
-        { id: "definition", title: "What Is an NFT?", level: 2 },
-        { id: "how-it-works", title: "How NFTs Work", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-an-nft", title: "What Is an NFT?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-nfts-work", title: "How NFTs Work", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
         { id: "use-cases", title: "Use Cases", level: 2 },
+        { id: "market-history", title: "market-history", level: 2 },
         { id: "market-history", title: "Market History", level: 2 },
-        { id: "why-it-matters", title: "Why NFTs Matter", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-nfts-matter", title: "Why NFTs Matter", level: 2 }
       ]}
       faqs={[
         {

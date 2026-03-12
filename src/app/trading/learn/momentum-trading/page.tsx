@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Momentum Trading in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Momentum Trading in Crypto (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn momentum trading strategies for crypto. Identify and ride strong price movements using volume, RSI, MACD, and other momentum indicators.",
 };
@@ -17,10 +17,14 @@ export default function MomentumTradingPage() {
       readTime="8 min read"
       intro="Momentum trading is based on the principle that assets moving strongly in one direction tend to continue moving in that direction. By identifying and riding these momentum waves, traders can capture significant gains in fast-moving crypto markets. This guide covers the key momentum indicators, entry and exit techniques, and how to distinguish genuine momentum from noise."
       toc={[
-        { id: "what-is-momentum", title: "What Is Momentum Trading?", level: 2 },
-        { id: "momentum-indicators", title: "Key Momentum Indicators", level: 2 },
-        { id: "entry-exit", title: "Entry and Exit Strategies", level: 2 },
-        { id: "momentum-risks", title: "Risks of Momentum Trading", level: 2 },
+        { id: "what-is-momentum", title: "what-is-momentum", level: 2 },
+        { id: "what-is-momentum-trading", title: "What Is Momentum Trading?", level: 2 },
+        { id: "momentum-indicators", title: "momentum-indicators", level: 2 },
+        { id: "key-momentum-indicators", title: "Key Momentum Indicators", level: 2 },
+        { id: "entry-exit", title: "entry-exit", level: 2 },
+        { id: "entry-and-exit-strategies", title: "Entry and Exit Strategies", level: 2 },
+        { id: "momentum-risks", title: "momentum-risks", level: 2 },
+        { id: "risks-of-momentum-trading", title: "Risks of Momentum Trading", level: 2 }
       ]}
       faqs={[
         { question: "What is the best momentum indicator for crypto?", answer: "The RSI and MACD are the most widely used momentum indicators. RSI helps identify overbought and oversold conditions, while MACD shows momentum direction and strength. Many traders combine both with volume analysis for the most reliable signals." },

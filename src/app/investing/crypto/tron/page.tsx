@@ -25,7 +25,7 @@ export default function TRONPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in TRON (TRX) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function TRONPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">TRX</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2017</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">No hard cap (deflationary via burns)</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Delegated Proof of Stake</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">TRX</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2017</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">No hard cap (deflationary via burns)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Delegated Proof of Stake</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is TRON?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is TRON?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           TRON is a blockchain platform founded in 2017 by Justin Sun with the original vision of
           decentralizing the entertainment industry. Over time, TRON pivoted to become a general-purpose
@@ -67,7 +67,7 @@ export default function TRONPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           TRON's primary use case is stablecoin transfers, with USDT on TRON being the most widely
           used stablecoin format for peer-to-peer payments and remittances, especially in developing
@@ -78,7 +78,7 @@ export default function TRONPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           TRON's centralization is a significant concern, with only 27 Super Representatives
           controlling block production and Justin Sun wielding outsized influence over the ecosystem.
@@ -90,7 +90,7 @@ export default function TRONPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy TRON</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy TRON</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           TRX is available on major exchanges including Binance, Kraken, KuCoin, and HTX. After
           purchasing, you can stake TRX by voting for Super Representatives through wallets like

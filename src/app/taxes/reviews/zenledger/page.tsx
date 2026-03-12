@@ -10,7 +10,7 @@ const product = {
   pros: ["Supports 400+ exchanges", "CPA access feature for accountants", "DeFi and NFT support", "Tax-loss harvesting tools"],
   cons: ["Higher pricing than some competitors", "Interface can be complex", "Slower import for large portfolios", "Limited free tier"],
   bestFor: "Users with complex portfolios who work with CPAs and need comprehensive exchange coverage",
-  affiliateUrl: "https://cryptodegen.com/go/zenledger",
+  affiliateUrl: "https://degen0x.com/go/zenledger",
   category: "taxes",
 };
 

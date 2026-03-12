@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Layer 2 Scaling Solutions Compared: Arbitrum, Optimism, zkSync | CryptoDegen`,
+  title: `Layer 2 Scaling Solutions Compared: Arbitrum, Optimism, zkSync | degen0x`,
   description:
     "Compare Optimistic rollups vs ZK rollups, explore Arbitrum, Optimism, zkSync, StarkNet, and Base, understand trade-offs, and learn how to bridge assets.",
 };
@@ -17,12 +17,18 @@ export default function Layer2ScalingSolutionsPage() {
       readTime="13 min read"
       intro="Ethereum's success created a problem: the network became so popular that transaction costs (gas fees) exceeded $50-100 during peak usage, making small transactions economically unfeasible. Layer 2 solutions solve this by moving transactions off the main Ethereum chain while maintaining security guarantees. This guide compares Optimistic and ZK rollups, explores leading L2s like Arbitrum and Optimism, discusses emerging solutions, and explains how to bridge assets across networks."
       toc={[
-        { id: "what-are-l2s", title: "What Are Layer 2s?", level: 2 },
-        { id: "optimistic-vs-zk", title: "Optimistic vs ZK Rollups", level: 2 },
+        { id: "what-are-l2s", title: "what-are-l2s", level: 2 },
+        { id: "what-are-layer-2s", title: "What Are Layer 2s?", level: 2 },
+        { id: "optimistic-vs-zk", title: "optimistic-vs-zk", level: 2 },
+        { id: "optimistic-vs-zk-rollups", title: "Optimistic vs ZK Rollups", level: 2 },
+        { id: "major-l2-projects", title: "major-l2-projects", level: 2 },
         { id: "major-l2-projects", title: "Major L2 Projects", level: 2 },
-        { id: "l2-tradeoffs", title: "L2 Tradeoffs & Considerations", level: 2 },
-        { id: "bridging-guide", title: "Bridging Assets Across L2s", level: 2 },
-        { id: "future-scaling", title: "Future of L2 Scaling", level: 2 },
+        { id: "l2-tradeoffs", title: "l2-tradeoffs", level: 2 },
+        { id: "l2-tradeoffs-considerations", title: "L2 Tradeoffs & Considerations", level: 2 },
+        { id: "bridging-guide", title: "bridging-guide", level: 2 },
+        { id: "bridging-assets-across-l2s", title: "Bridging Assets Across L2s", level: 2 },
+        { id: "future-scaling", title: "future-scaling", level: 2 },
+        { id: "future-of-l2-scaling", title: "Future of L2 Scaling", level: 2 }
       ]}
       faqs={[
         {

@@ -17,11 +17,16 @@ export default function HowCryptoCardsWorkPage() {
       readTime="10 min"
       intro="Crypto cards bridge the gap between your digital assets and everyday spending. They let you use Bitcoin, Ethereum, and other cryptocurrencies at millions of merchants worldwide, just like a regular Visa or Mastercard. But how exactly does the conversion happen, and what should you understand before getting one? This guide explains the complete mechanics behind crypto cards."
       toc={[
+        { id: "what-are-crypto-cards", title: "what-are-crypto-cards", level: 2 },
         { id: "what-are-crypto-cards", title: "What Are Crypto Cards?", level: 2 },
-        { id: "how-conversion-works", title: "How Crypto-to-Fiat Conversion Works", level: 2 },
+        { id: "how-conversion-works", title: "how-conversion-works", level: 2 },
+        { id: "how-crypto-to-fiat-conversion-works", title: "How Crypto-to-Fiat Conversion Works", level: 2 },
+        { id: "types-of-crypto-cards", title: "types-of-crypto-cards", level: 2 },
         { id: "types-of-crypto-cards", title: "Types of Crypto Cards", level: 2 },
-        { id: "getting-started", title: "Getting Started with a Crypto Card", level: 2 },
-        { id: "pros-and-cons", title: "Pros and Cons of Crypto Cards", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started-with-a-crypto-card", title: "Getting Started with a Crypto Card", level: 2 },
+        { id: "pros-and-cons", title: "pros-and-cons", level: 2 },
+        { id: "pros-and-cons-of-crypto-cards", title: "Pros and Cons of Crypto Cards", level: 2 }
       ]}
       faqs={[
         {

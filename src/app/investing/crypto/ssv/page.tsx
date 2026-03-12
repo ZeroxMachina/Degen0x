@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is SSV Network (SSV)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is SSV Network (SSV)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about SSV Network (SSV), the DVT infrastructure for Ethereum staking. Discover how it works, tokenomics, use cases, and how to buy SSV.",
 };
 
@@ -16,12 +16,18 @@ export default function SsvPage() {
       readTime="8 min read"
       intro="SSV Network is a Distributed Validator Technology (DVT) infrastructure layer for Ethereum that allows validators to be operated by multiple non-trusting nodes. By splitting validator keys across multiple operators, SSV provides fault tolerance, active-active redundancy, and enhanced security for Ethereum staking, serving as critical infrastructure for both solo stakers and large staking services."
       toc={[
-        { id: "what-is", title: "What Is SSV Network?", level: 2 },
-        { id: "how-it-works", title: "How Does SSV Network Work?", level: 2 },
-        { id: "tokenomics", title: "SSV Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SSV", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ssv-network", title: "What Is SSV Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-ssv-network-work", title: "How Does SSV Network Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ssv-tokenomics", title: "SSV Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ssv", title: "How to Buy SSV", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is SSV Network?", answer: "SSV Network is a DVT infrastructure layer that splits Ethereum validator keys across multiple operators, providing fault tolerance, redundancy, and enhanced security for staking operations." },

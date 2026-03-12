@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Romania (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Romania (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Romania. Find RON and EUR-friendly platforms with local payment support, low fees, and EU regulatory compliance.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesRomania() {
       readTime="8 min read"
       intro="Romania has a growing cryptocurrency community fueled by a strong tech workforce and increasing digital adoption. The country follows EU financial regulations, and Romanian traders can access major European exchanges with RON and EUR deposit options. With competitive internet infrastructure and an expanding fintech ecosystem, Romania provides solid conditions for crypto trading."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Romania", level: 2 },
-        { id: "regulation", title: "Crypto Regulation in Romania", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-romania", title: "Top Exchanges for Romania", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-romania", title: "Crypto Regulation in Romania", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Romania?", answer: "Yes, cryptocurrency is legal in Romania. The country follows EU AML directives, and VASPs must comply with KYC regulations. Romania benefits from MiCA providing comprehensive EU-wide crypto regulation." },

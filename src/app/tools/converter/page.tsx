@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     title: "Crypto Converter - Real-Time BTC to USD & More",
     description:
       "Convert top 20 cryptocurrencies to fiat currencies. Free, live converter powered by CoinGecko API.",
-    url: "https://cryptodegen.xyz/tools/converter",
+    url: "https://degen0x.com/tools/converter",
     type: "website",
     images: [
       {
-        url: "https://cryptodegen.xyz/og-crypto-converter.png",
+        url: "https://degen0x.com/og-crypto-converter.png",
         width: 1200,
         height: 630,
         alt: "Crypto Converter Tool",

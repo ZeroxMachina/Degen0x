@@ -40,7 +40,7 @@ export default function BestValidatorsPage() {
     "@type": "Article",
     headline: `Best Staking Validators of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -56,7 +56,7 @@ export default function BestValidatorsPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Staking Validators of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -73,16 +73,16 @@ export default function BestValidatorsPage() {
             across all major staking platforms.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Lido</strong> offers a curated set of professional
-            validators for ETH staking. <strong className="text-white">Rocket Pool</strong> provides
+            <strong className="text-[var(--color-text)]">Lido</strong> offers a curated set of professional
+            validators for ETH staking. <strong className="text-[var(--color-text)]">Rocket Pool</strong> provides
             a permissionless validator network where anyone can operate a node. For Solana,{" "}
-            <strong className="text-white">Marinade</strong> distributes stake across 400+ validators
+            <strong className="text-[var(--color-text)]">Marinade</strong> distributes stake across 400+ validators
             using its algorithmic scoring system.
           </p>
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
           <div className="space-y-4">
             {validatorPlatforms.map((platform, index) => (
               <ProductCard
@@ -96,7 +96,7 @@ export default function BestValidatorsPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">What Makes a Good Validator</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Makes a Good Validator</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             {[
               { title: "Uptime", desc: "Top validators maintain 99.9%+ uptime. Downtime directly reduces your staking rewards and can result in penalties." },
@@ -105,7 +105,7 @@ export default function BestValidatorsPage() {
               { title: "Geographic Distribution", desc: "Validators operating from diverse locations improve network resilience and reduce correlated failure risks." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}

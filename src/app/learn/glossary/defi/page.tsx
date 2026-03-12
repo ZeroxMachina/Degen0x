@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is DeFi? Decentralized Finance Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is DeFi? Decentralized Finance Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what DeFi is, how decentralized finance works, the major DeFi categories, risks involved, and how to get started with DeFi protocols.",
 };
@@ -17,11 +17,16 @@ export default function DefiPage() {
       readTime="6 min"
       intro="DeFi (Decentralized Finance) is an ecosystem of financial applications built on blockchain networks using smart contracts, operating without traditional intermediaries like banks or brokerages. DeFi enables lending, borrowing, trading, insurance, and complex financial instruments that are permissionless, transparent, and available 24/7 to anyone with an internet connection and a crypto wallet."
       toc={[
-        { id: "definition", title: "What Is DeFi?", level: 2 },
-        { id: "how-it-works", title: "How DeFi Works", level: 2 },
-        { id: "categories", title: "DeFi Categories", level: 2 },
-        { id: "why-it-matters", title: "Why DeFi Matters", level: 2 },
-        { id: "risks", title: "DeFi Risks", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-defi", title: "What Is DeFi?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-defi-works", title: "How DeFi Works", level: 2 },
+        { id: "categories", title: "categories", level: 2 },
+        { id: "defi-categories", title: "DeFi Categories", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-defi-matters", title: "Why DeFi Matters", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "defi-risks", title: "DeFi Risks", level: 2 }
       ]}
       faqs={[
         {

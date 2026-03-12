@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Mars Protocol (MARS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Mars Protocol (MARS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Mars Protocol (MARS), the Cosmos lending and credit protocol. Discover how it works, tokenomics, use cases, and how to buy MARS.",
 };
@@ -17,12 +17,18 @@ export default function MarsProtocolPage() {
       readTime="8 min read"
       intro="Mars Protocol is a lending and credit protocol in the Cosmos ecosystem that introduces the concept of 'credit accounts' allowing users to combine lending, borrowing, and leveraged yield farming in a single interface. Operating across multiple Cosmos chains including Osmosis and Neutron, Mars aims to become the primary credit layer for Cosmos DeFi."
       toc={[
-        { id: "what-is", title: "What Is Mars Protocol?", level: 2 },
-        { id: "how-it-works", title: "How Does Mars Protocol Work?", level: 2 },
-        { id: "tokenomics", title: "MARS Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MARS", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-mars-protocol", title: "What Is Mars Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-mars-protocol-work", title: "How Does Mars Protocol Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mars-tokenomics", title: "MARS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mars", title: "How to Buy MARS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

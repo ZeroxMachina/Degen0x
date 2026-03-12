@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Crypto Airdrop? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Crypto Airdrop? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a crypto airdrop is, how airdrops work, the different types, and how to qualify for them. A complete guide to free token distributions.",
 };
@@ -17,11 +17,16 @@ export default function AirdropPage() {
       readTime="5 min"
       intro="A crypto airdrop is a distribution of free tokens or coins sent directly to wallet addresses. Projects use airdrops to reward early adopters, incentivize usage, distribute governance tokens, or generate awareness. While some airdrops have been worth thousands of dollars, they also carry risks including scams and tax implications."
       toc={[
-        { id: "definition", title: "What Is an Airdrop?", level: 2 },
-        { id: "how-it-works", title: "How Airdrops Work", level: 2 },
-        { id: "types", title: "Types of Airdrops", level: 2 },
-        { id: "why-it-matters", title: "Why Airdrops Matter", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-an-airdrop", title: "What Is an Airdrop?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-airdrops-work", title: "How Airdrops Work", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-airdrops", title: "Types of Airdrops", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-airdrops-matter", title: "Why Airdrops Matter", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

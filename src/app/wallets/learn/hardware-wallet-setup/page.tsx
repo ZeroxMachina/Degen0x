@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Hardware Wallet Setup Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Hardware Wallet Setup Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Step-by-step guide to setting up a hardware wallet. Learn how to initialize Ledger and Trezor devices, secure your seed phrase, and connect to DeFi.",
 };
 
@@ -11,7 +11,18 @@ export default function HardwareWalletSetupPage() {
   return (
     <LearnPageLayout title="Hardware Wallet Setup Guide" categoryName="Crypto Wallets" categorySlug="wallets" readTime="10 min read"
       intro="Hardware wallets provide the highest level of security for crypto storage by keeping your private keys on a dedicated device that never exposes them to the internet. Setting up a hardware wallet correctly is critical because mistakes during initialization, especially with seed phrase backup, can lead to permanent loss of funds. This guide walks you through the complete setup process for the most popular hardware wallets, from unboxing to your first transaction, with security best practices at every step."
-      toc={[{ id: "before-you-start", title: "Before You Start", level: 2 }, { id: "initial-setup", title: "Initial Device Setup", level: 2 }, { id: "seed-phrase-backup", title: "Seed Phrase Backup", level: 2 }, { id: "connecting-to-software", title: "Connecting to Software", level: 2 }, { id: "first-transaction", title: "Your First Transaction", level: 2 }]}
+      toc={[
+        { id: "before-you-start", title: "before-you-start", level: 2 },
+        { id: "before-you-start", title: "Before You Start", level: 2 },
+        { id: "initial-setup", title: "initial-setup", level: 2 },
+        { id: "initial-device-setup", title: "Initial Device Setup", level: 2 },
+        { id: "seed-phrase-backup", title: "seed-phrase-backup", level: 2 },
+        { id: "seed-phrase-backup", title: "Seed Phrase Backup", level: 2 },
+        { id: "connecting-to-software", title: "connecting-to-software", level: 2 },
+        { id: "connecting-to-software", title: "Connecting to Software", level: 2 },
+        { id: "first-transaction", title: "first-transaction", level: 2 },
+        { id: "your-first-transaction", title: "Your First Transaction", level: 2 }
+      ]}
       faqs={[{ question: "Should I buy a Ledger or Trezor?", answer: "Both are excellent choices. Ledger uses a secure element chip (similar to credit cards) and supports more tokens natively. Trezor is fully open-source and has a larger touchscreen on premium models. Ledger Nano S Plus ($79) and Trezor Safe 3 ($79) are the best entry-level options. Choose based on whether you prioritize open-source transparency (Trezor) or wider native token support (Ledger)." },
         { question: "Is it safe to buy a used hardware wallet?", answer: "You should only buy hardware wallets new from the manufacturer or authorized resellers. Used devices could have compromised firmware or pre-generated seed phrases that allow the previous owner to steal your funds. Always verify the tamper-evident packaging is intact and the device prompts you to set up as a new device during initialization." },
         { question: "What happens if my hardware wallet breaks?", answer: "Your crypto is on the blockchain, not on the device. If your hardware wallet breaks, you can restore your accounts on a new device using your seed phrase. This is why the seed phrase backup is the most important part of the setup process. Without it, a broken device means permanent loss of access to your funds." }]}

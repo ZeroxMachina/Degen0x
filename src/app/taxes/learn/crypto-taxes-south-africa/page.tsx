@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in South Africa (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in South Africa (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in South Africa. Learn about income tax vs CGT treatment, SARS requirements, and how to report crypto gains.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesSouthAfricaPage() {
       readTime="8 min read"
       intro="South Africa has established relatively clear cryptocurrency tax rules through SARS (South African Revenue Service) guidance. Crypto is treated as an intangible asset, and gains are taxed either as income tax or capital gains tax depending on the nature of your activities. Frequent traders pay income tax at marginal rates up to 45%, while long-term investors benefit from the more favorable CGT regime. SARS has been proactive in issuing crypto tax guidance and collecting data from exchanges."
       toc={[
-        { id: "tax-classification", title: "Income Tax vs Capital Gains", level: 2 },
-        { id: "income-tax-rates", title: "Income Tax on Crypto Trading", level: 2 },
-        { id: "cgt-treatment", title: "Capital Gains Tax Treatment", level: 2 },
-        { id: "reporting-sars", title: "Reporting to SARS", level: 2 },
-        { id: "defi-mining", title: "DeFi, Mining, and Staking", level: 2 },
+        { id: "tax-classification", title: "tax-classification", level: 2 },
+        { id: "income-tax-vs-capital-gains", title: "Income Tax vs Capital Gains", level: 2 },
+        { id: "income-tax-rates", title: "income-tax-rates", level: 2 },
+        { id: "income-tax-on-crypto-trading", title: "Income Tax on Crypto Trading", level: 2 },
+        { id: "cgt-treatment", title: "cgt-treatment", level: 2 },
+        { id: "capital-gains-tax-treatment", title: "Capital Gains Tax Treatment", level: 2 },
+        { id: "reporting-sars", title: "reporting-sars", level: 2 },
+        { id: "reporting-to-sars", title: "Reporting to SARS", level: 2 },
+        { id: "defi-mining", title: "defi-mining", level: 2 },
+        { id: "defi-mining-and-staking", title: "DeFi, Mining, and Staking", level: 2 }
       ]}
       faqs={[
         { question: "How does SARS classify crypto?", answer: "SARS classifies cryptocurrency as an intangible asset of a financial nature. It is not legal tender, not a financial instrument, and not a security. Gains from disposal are taxed either as revenue (income tax) or capital gains depending on the taxpayer's intention and trading pattern." },

@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -442,18 +444,6 @@ function RiskMeter({ healthFactor }: RiskMeterProps) {
   );
 }
 
-export const metadata = {
-  title: "DeFi Position Manager | CryptoDegen",
-  description: "Track and manage your DeFi positions across Aave, Compound, Uniswap, Curve, Lido, Maker, and Yearn. Monitor health factors, APY, and liquidation risk.",
-  keywords: "DeFi, position manager, Aave, Compound, Uniswap, Curve, Lido, health factor, liquidation risk",
-  openGraph: {
-    title: "DeFi Position Manager | CryptoDegen",
-    description: "Comprehensive DeFi position tracking across major protocols",
-    url: "https://cryptodegen.com/tools/defi-position-manager",
-    type: "website",
-  },
-};
-
 export default function DefiPositionManagerPage() {
   const [showAddModal, setShowAddModal] = useState(false);
   const [positions, setPositions] = useState<Position[]>([
@@ -514,8 +504,14 @@ export default function DefiPositionManagerPage() {
     } as LPPosition,
   ]);
 
+
+  const getPositionValue = (p: Position): number => {
+    if (isLendingPosition(p)) return p.supplied.value;
+    return (p as LPPosition | StakingPosition).value;
+  };
+
   const stats = useMemo(() => {
-    const totalValue = positions.reduce((sum, p) => sum + p.value, 0);
+    const totalValue = positions.reduce((sum, p) => sum + getPositionValue(p), 0);
 
     let totalLentValue = 0;
     let aggregateHealthFactor = 0;
@@ -536,7 +532,7 @@ export default function DefiPositionManagerPage() {
 
     const chainExposure: Record<string, number> = {};
     positions.forEach((p) => {
-      chainExposure[p.chain] = (chainExposure[p.chain] || 0) + p.value;
+      chainExposure[p.chain] = (chainExposure[p.chain] || 0) + getPositionValue(p);
     });
 
     return {

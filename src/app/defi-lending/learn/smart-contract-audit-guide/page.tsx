@@ -17,11 +17,16 @@ export default function SmartContractAuditGuidePage() {
       readTime="10 min"
       intro="Smart contract audits are the primary line of defense against code vulnerabilities in DeFi protocols. Before depositing funds, understanding how to evaluate a protocol's audit history, the reputation of auditing firms, and the limitations of audits themselves is critical for protecting your assets. This guide explains the audit process, what to look for, and how to assess the security posture of any DeFi protocol."
       toc={[
-        { id: "what-are-audits", title: "What Are Smart Contract Audits", level: 2 },
-        { id: "audit-firms", title: "Top Audit Firms", level: 2 },
-        { id: "reading-audits", title: "How to Read an Audit Report", level: 2 },
-        { id: "beyond-audits", title: "Security Beyond Audits", level: 2 },
-        { id: "evaluating-security", title: "Evaluating Protocol Security", level: 2 },
+        { id: "what-are-audits", title: "what-are-audits", level: 2 },
+        { id: "what-are-smart-contract-audits", title: "What Are Smart Contract Audits", level: 2 },
+        { id: "audit-firms", title: "audit-firms", level: 2 },
+        { id: "top-audit-firms", title: "Top Audit Firms", level: 2 },
+        { id: "reading-audits", title: "reading-audits", level: 2 },
+        { id: "how-to-read-an-audit-report", title: "How to Read an Audit Report", level: 2 },
+        { id: "beyond-audits", title: "beyond-audits", level: 2 },
+        { id: "security-beyond-audits", title: "Security Beyond Audits", level: 2 },
+        { id: "evaluating-security", title: "evaluating-security", level: 2 },
+        { id: "evaluating-protocol-security", title: "Evaluating Protocol Security", level: 2 }
       ]}
       faqs={[
         { question: "Does an audit guarantee a protocol is safe?", answer: "No. Audits significantly reduce risk but cannot guarantee safety. Auditors may miss vulnerabilities, and new attack vectors emerge over time. Multiple audits from different firms, active bug bounties, and formal verification provide stronger security assurances than a single audit." },

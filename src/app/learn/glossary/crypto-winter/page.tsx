@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Crypto Winter? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Crypto Winter? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what crypto winter means, how it differs from a bear market, historical crypto winters, and strategies for surviving extended downturns.",
 };
@@ -17,11 +17,16 @@ export default function CryptoWinterPage() {
       readTime="5 min"
       intro="Crypto winter is an extended period of severely depressed cryptocurrency prices and negative market sentiment that goes beyond a typical bear market. Characterized by project failures, layoffs, reduced investment, and a general exodus of retail interest, crypto winters can last for years and test the resolve of even the most committed participants."
       toc={[
-        { id: "definition", title: "What Is Crypto Winter?", level: 2 },
-        { id: "vs-bear-market", title: "Crypto Winter vs Bear Market", level: 2 },
-        { id: "history", title: "Historical Crypto Winters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-crypto-winter", title: "What Is Crypto Winter?", level: 2 },
+        { id: "vs-bear-market", title: "vs-bear-market", level: 2 },
+        { id: "crypto-winter-vs-bear-market", title: "Crypto Winter vs Bear Market", level: 2 },
+        { id: "history", title: "history", level: 2 },
+        { id: "historical-crypto-winters", title: "Historical Crypto Winters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "surviving", title: "Surviving Crypto Winter", level: 2 },
+        { id: "surviving", title: "surviving", level: 2 },
+        { id: "surviving-crypto-winter", title: "Surviving Crypto Winter", level: 2 }
       ]}
       faqs={[
         {

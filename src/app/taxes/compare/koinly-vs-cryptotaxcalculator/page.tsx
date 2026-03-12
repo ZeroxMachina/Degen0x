@@ -31,7 +31,7 @@ export default function KoinlyVsCryptoTaxCalculatorPage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Koinly vs CryptoTaxCalculator: {CURRENT_YEAR} Comparison</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Koinly vs CryptoTaxCalculator: {CURRENT_YEAR} Comparison</h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-2">
         Both are top-tier crypto tax solutions but serve different strengths. Koinly leads in
         integrations and value, while CryptoTaxCalculator excels at DeFi and NFT tax tracking.
@@ -43,7 +43,7 @@ export default function KoinlyVsCryptoTaxCalculatorPage() {
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Key Differences</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Key Differences</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The primary differentiator is DeFi support depth. CryptoTaxCalculator was built with
           DeFi as a first-class citizen, automatically classifying complex DeFi transactions
@@ -65,7 +65,7 @@ export default function KoinlyVsCryptoTaxCalculatorPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Recommendation</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Recommendation</h2>
         <p className="text-[var(--color-text-secondary)]">
           Choose Koinly for the best overall value, most exchange integrations, and solid
           all-around coverage. Choose CryptoTaxCalculator if DeFi and NFTs make up a significant

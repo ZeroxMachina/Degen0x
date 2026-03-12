@@ -16,10 +16,14 @@ export default function EgyptExchangesPage() {
       readTime="9 min"
       intro="Egypt has a growing cryptocurrency community, though the market operates within a cautious regulatory environment. The Central Bank of Egypt has historically been wary of digital currencies, but P2P trading has enabled millions of Egyptians to access crypto. This guide covers the best platforms and methods for Egyptian traders."
       toc={[
-        { id: "regulation", title: "Regulatory Status in Egypt", level: 2 },
-        { id: "top-exchanges", title: "Recommended Exchanges", level: 2 },
-        { id: "payment-methods", title: "EGP Payment Methods", level: 2 },
-        { id: "tips", title: "Tips for Egyptian Traders", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulatory-status-in-egypt", title: "Regulatory Status in Egypt", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "recommended-exchanges", title: "Recommended Exchanges", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "egp-payment-methods", title: "EGP Payment Methods", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-egyptian-traders", title: "Tips for Egyptian Traders", level: 2 }
       ]}
       faqs={[
         {

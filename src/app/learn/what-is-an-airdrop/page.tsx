@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Crypto Airdrop? Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Crypto Airdrop? Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what crypto airdrops are, how they work, the different types, and how to position yourself for future airdrop opportunities.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsAnAirdropPage() {
       readTime="8 min read"
       intro="A crypto airdrop is a distribution of free tokens or coins to wallet addresses, typically used by blockchain projects to reward early users, incentivize adoption, or decentralize token ownership. Airdrops have become a major part of the crypto ecosystem, with some distributing tokens worth thousands of dollars to eligible participants. Understanding how airdrops work is essential for anyone looking to maximize their opportunities in crypto."
       toc={[
-        { id: "what-are-airdrops", title: "What Are Crypto Airdrops?", level: 2 },
+        { id: "what-are-airdrops", title: "what-are-airdrops", level: 2 },
+        { id: "what-are-crypto-airdrops", title: "What Are Crypto Airdrops?", level: 2 },
+        { id: "types-of-airdrops", title: "types-of-airdrops", level: 2 },
         { id: "types-of-airdrops", title: "Types of Airdrops", level: 2 },
-        { id: "how-to-qualify", title: "How to Qualify for Airdrops", level: 2 },
-        { id: "risks-and-scams", title: "Risks and Scams to Avoid", level: 2 },
+        { id: "how-to-qualify", title: "how-to-qualify", level: 2 },
+        { id: "how-to-qualify-for-airdrops", title: "How to Qualify for Airdrops", level: 2 },
+        { id: "risks-and-scams", title: "risks-and-scams", level: 2 },
+        { id: "risks-and-scams-to-avoid", title: "Risks and Scams to Avoid", level: 2 }
       ]}
       faqs={[
         {

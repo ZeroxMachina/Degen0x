@@ -29,7 +29,7 @@ export default function LidoVsRocketPoolPage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Lido vs Rocket Pool: Which Is Better in {CURRENT_YEAR}?
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -51,7 +51,7 @@ export default function LidoVsRocketPoolPage() {
       />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Lido charges 10% of staking rewards, split equally between node operators (5%) and the Lido DAO
           treasury (5%). Rocket Pool has a higher effective fee of approximately 14%, which goes to node
@@ -65,7 +65,7 @@ export default function LidoVsRocketPoolPage() {
           by other factors like decentralization preferences.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Decentralization</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Decentralization</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           This is where the two protocols differ most significantly. Rocket Pool operates a permissionless
           validator network where anyone with 8 ETH and RPL collateral can run a node. This results in
@@ -78,7 +78,7 @@ export default function LidoVsRocketPoolPage() {
           who prioritize Ethereum&apos;s health and decentralization, Rocket Pool is the clear choice.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">DeFi Composability</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">DeFi Composability</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Lido&apos;s stETH dominates DeFi integration with acceptance on over 100 protocols. The Curve
           stETH-ETH pool alone holds billions in liquidity. Rocket Pool&apos;s rETH has grown its integration
@@ -91,15 +91,15 @@ export default function LidoVsRocketPoolPage() {
           equally well.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Lido if</strong> you want maximum DeFi composability,
+            <strong className="text-[var(--color-text)]">Choose Lido if</strong> you want maximum DeFi composability,
             the deepest liquidity for your liquid staking token, and slightly higher net yields. Lido
             is the better choice for users who plan to actively use stETH in DeFi strategies.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Rocket Pool if</strong> you value decentralization and
+            <strong className="text-[var(--color-text)]">Choose Rocket Pool if</strong> you value decentralization and
             want your staking to actively strengthen the Ethereum network. Rocket Pool is also the better
             choice if you want to run your own node with just 8 ETH rather than the standard 32.
           </p>

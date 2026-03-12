@@ -18,7 +18,7 @@ const cpas = [
     services: ["Tax return preparation", "DeFi tax analysis", "Audit defense", "Tax planning consultation"],
     priceRange: "$500 - $5,000+",
     bestFor: "Active traders needing full-service filing",
-    url: "https://cryptodegen.com/go/tokentax",
+    url: "https://degen0x.com/go/tokentax",
   },
   {
     name: "Gordon Law Group",
@@ -27,7 +27,7 @@ const cpas = [
     services: ["Tax law consultation", "IRS audit representation", "Tax return preparation", "Entity structuring"],
     priceRange: "$1,000 - $10,000+",
     bestFor: "High-net-worth investors and businesses",
-    url: "https://cryptodegen.com/go/gordon-law",
+    url: "https://degen0x.com/go/gordon-law",
   },
   {
     name: "Crypto Tax Girl (Laura Shin)",
@@ -36,7 +36,7 @@ const cpas = [
     services: ["Individual tax returns", "DeFi tax consulting", "Staking income reporting", "Tax planning"],
     priceRange: "$300 - $3,000",
     bestFor: "Individual investors seeking affordable CPA help",
-    url: "https://cryptodegen.com/go/crypto-tax-girl",
+    url: "https://degen0x.com/go/crypto-tax-girl",
   },
   {
     name: "Coinledger CPA Network",
@@ -45,7 +45,7 @@ const cpas = [
     services: ["CPA matching service", "Tax return preparation", "Planning consultation", "State-specific guidance"],
     priceRange: "Varies by CPA",
     bestFor: "Finding a local crypto-savvy CPA",
-    url: "https://cryptodegen.com/go/coinledger",
+    url: "https://degen0x.com/go/coinledger",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function BestAccountantsPage() {
       />
 
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto CPAs & Tax Accountants ({CURRENT_YEAR})
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -97,17 +97,17 @@ export default function BestAccountantsPage() {
       <AffiliateDisclosure />
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Crypto Tax Professionals</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Crypto Tax Professionals</h2>
         <div className="grid gap-6">
           {cpas.map((cpa, index) => (
             <div key={cpa.name} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
               <div className="flex items-start justify-between gap-4 flex-wrap">
                 <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold">
                     {index + 1}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white">{cpa.name}</h3>
+                    <h3 className="text-lg font-semibold text-[var(--color-text)]">{cpa.name}</h3>
                     <p className="text-sm text-[var(--color-primary)]">{cpa.specialty}</p>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default function BestAccountantsPage() {
               <p className="mt-3 text-sm text-[var(--color-text-secondary)]">{cpa.description}</p>
               <div className="mt-4 grid sm:grid-cols-3 gap-4">
                 <div>
-                  <h4 className="text-xs font-semibold text-white mb-1">Services</h4>
+                  <h4 className="text-xs font-semibold text-[var(--color-text)] mb-1">Services</h4>
                   <ul className="space-y-1">
                     {cpa.services.map((s) => (
                       <li key={s} className="text-xs text-[var(--color-text-secondary)]">&#8226; {s}</li>
@@ -131,11 +131,11 @@ export default function BestAccountantsPage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-xs font-semibold text-white mb-1">Price Range</h4>
+                  <h4 className="text-xs font-semibold text-[var(--color-text)] mb-1">Price Range</h4>
                   <p className="text-xs text-[var(--color-text-secondary)]">{cpa.priceRange}</p>
                 </div>
                 <div>
-                  <h4 className="text-xs font-semibold text-white mb-1">Best For</h4>
+                  <h4 className="text-xs font-semibold text-[var(--color-text)] mb-1">Best For</h4>
                   <p className="text-xs text-[var(--color-text-secondary)]">{cpa.bestFor}</p>
                 </div>
               </div>
@@ -145,7 +145,7 @@ export default function BestAccountantsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Software + CPA: The Best Approach</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Software + CPA: The Best Approach</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
           <p className="text-sm text-[var(--color-text-secondary)] mb-4">
             For most crypto investors, the optimal approach combines tax software with professional

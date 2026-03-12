@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Spark vs Aave (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Spark vs Aave (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare Spark Protocol (MakerDAO's lending arm) and Aave. Analysis of rates, DAI integration, features, and which lending protocol is the better choice.",
 };
@@ -17,10 +17,14 @@ export default function SparkVsAavePage() {
       readTime="8 min read"
       intro="Spark Protocol is MakerDAO's dedicated lending platform, forked from Aave V3 and tailored for the Maker ecosystem. It serves as the primary lending interface for DAI and integrates deeply with MakerDAO's stability mechanisms. This comparison examines how Spark, as an Aave fork with Maker-specific enhancements, compares to Aave itself in terms of rates, features, risk, and use cases."
       toc={[
-        { id: "origins", title: "Origins and Relationship", level: 2 },
+        { id: "origins", title: "origins", level: 2 },
+        { id: "origins-and-relationship", title: "Origins and Relationship", level: 2 },
+        { id: "rates-comparison", title: "rates-comparison", level: 2 },
         { id: "rates-comparison", title: "Rates Comparison", level: 2 },
-        { id: "unique-features", title: "Unique Features of Each", level: 2 },
-        { id: "choosing", title: "Which to Choose", level: 2 },
+        { id: "unique-features", title: "unique-features", level: 2 },
+        { id: "unique-features-of-each", title: "Unique Features of Each", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "which-to-choose", title: "Which to Choose", level: 2 }
       ]}
       faqs={[
         { question: "What is Spark Protocol?", answer: "Spark Protocol is a lending platform created by MakerDAO (now Sky), forked from Aave V3. It provides lending and borrowing services with deep integration into the Maker ecosystem, including direct access to DAI (now USDS) minting and the DAI Savings Rate. Spark is governed by MakerDAO governance." },

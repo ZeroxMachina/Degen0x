@@ -16,11 +16,16 @@ export default function VietnamExchangesPage() {
       readTime="10 min"
       intro="Vietnam has one of the highest crypto adoption rates in the world, with millions of Vietnamese actively trading and investing in digital assets. Despite the lack of a formal regulatory framework for cryptocurrencies, the market thrives with significant P2P trading activity and widespread use of global exchanges. This guide covers the best platforms available to Vietnamese traders."
       toc={[
-        { id: "regulatory-landscape", title: "Regulatory Landscape in Vietnam", level: 2 },
-        { id: "top-exchanges", title: "Top Exchanges for Vietnamese Traders", level: 2 },
-        { id: "payment-methods", title: "Payment Methods & VND On-Ramps", level: 2 },
+        { id: "regulatory-landscape", title: "regulatory-landscape", level: 2 },
+        { id: "regulatory-landscape-in-vietnam", title: "Regulatory Landscape in Vietnam", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-vietnamese-traders", title: "Top Exchanges for Vietnamese Traders", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "payment-methods-vnd-on-ramps", title: "Payment Methods & VND On-Ramps", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
-        { id: "security-tips", title: "Security Tips for Vietnamese Users", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
+        { id: "security-tips-for-vietnamese-users", title: "Security Tips for Vietnamese Users", level: 2 }
       ]}
       faqs={[
         {

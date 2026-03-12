@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Collateral in Crypto? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Collateral in Crypto? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what collateral means in crypto, how it works in DeFi lending, over-collateralization, liquidation risks, and why it matters for borrowing.",
 };
@@ -17,11 +17,16 @@ export default function CollateralPage() {
       readTime="5 min"
       intro="Collateral in crypto refers to assets pledged as security for a loan or leveraged position. Because crypto lending often occurs without traditional credit checks, borrowers must deposit cryptocurrency worth more than the loan value (over-collateralization). If the collateral value drops below a certain threshold, the position is liquidated to repay the lender."
       toc={[
-        { id: "definition", title: "What Is Collateral?", level: 2 },
-        { id: "how-it-works", title: "How It Works in Crypto", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-collateral", title: "What Is Collateral?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-it-works-in-crypto", title: "How It Works in Crypto", level: 2 },
+        { id: "over-collateralization", title: "over-collateralization", level: 2 },
         { id: "over-collateralization", title: "Over-Collateralization", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "risks", title: "Risks", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks", title: "Risks", level: 2 }
       ]}
       faqs={[
         {

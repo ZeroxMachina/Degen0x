@@ -12,10 +12,14 @@ export default function SeiEcosystemGuidePage() {
   return (
     <LearnPageLayout title="Sei Ecosystem Guide" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Sei is a Layer 1 blockchain optimized for trading and financial applications. With its parallelized EVM execution, twin-turbo consensus, and built-in order matching engine, Sei delivers the performance needed for high-frequency trading applications while maintaining EVM compatibility for easy developer adoption."
       toc={[
-        { id: "overview", title: "Sei Overview", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "sei-overview", title: "Sei Overview", level: 2 },
+        { id: "technology", title: "technology", level: 2 },
         { id: "technology", title: "Technology", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
         { id: "ecosystem", title: "Ecosystem", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What is Sei V2?", answer: "Sei V2 introduced parallelized EVM execution and backward compatibility with Ethereum smart contracts. This upgrade combined Sei's optimized consensus with EVM compatibility, allowing developers to deploy Ethereum apps while benefiting from Sei's performance advantages." },

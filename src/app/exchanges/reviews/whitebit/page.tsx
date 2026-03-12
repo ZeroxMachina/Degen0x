@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.1% spot maker/taker",
   bestFor: "European and CIS traders seeking fiat integration",
-  affiliateUrl: "https://cryptodegen.com/go/whitebit",
+  affiliateUrl: "https://degen0x.com/go/whitebit",
   category: "exchanges",
 };
 

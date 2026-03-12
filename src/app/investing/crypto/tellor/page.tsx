@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Tellor (TRB)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Tellor (TRB)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Tellor (TRB), the decentralized oracle protocol with staking-based security. Discover how it works, tokenomics, use cases, and how to buy TRB.",
 };
@@ -17,12 +17,18 @@ export default function TellorPage() {
       readTime="8 min read"
       intro="Tellor is a decentralized oracle protocol that uses a staking-based incentive system to deliver reliable off-chain data to on-chain smart contracts. Reporters stake TRB tokens to submit data values, with a dispute mechanism allowing anyone to challenge and remove incorrect data. Tellor emphasizes censorship resistance and permissionless participation in its oracle network."
       toc={[
-        { id: "what-is", title: "What Is Tellor?", level: 2 },
-        { id: "how-it-works", title: "How Does Tellor Work?", level: 2 },
-        { id: "tokenomics", title: "TRB Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy TRB", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-tellor", title: "What Is Tellor?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-tellor-work", title: "How Does Tellor Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "trb-tokenomics", title: "TRB Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-trb", title: "How to Buy TRB", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

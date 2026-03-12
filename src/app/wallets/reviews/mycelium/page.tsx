@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Mycelium Wallet Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Mycelium Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "Detailed Mycelium wallet review covering Bitcoin features, local trader marketplace, hardware wallet support, and privacy features.",
 };
 

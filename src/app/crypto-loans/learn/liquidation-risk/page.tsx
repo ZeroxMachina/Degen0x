@@ -7,7 +7,16 @@ export default function LiquidationRiskPage() {
   return (
     <LearnPageLayout title="Understanding Liquidation Risk" categoryName="Crypto Loans" categorySlug="crypto-loans" readTime="8 min"
       intro="Liquidation is the biggest risk when borrowing against crypto. When your collateral value drops below a critical threshold, your position is forcibly closed and you lose a portion of your collateral. Understanding liquidation mechanics and how to avoid them is essential for anyone taking crypto-backed loans."
-      toc={[{ id: "how-liquidation-works", title: "How Liquidation Works", level: 2 }, { id: "triggers", title: "What Triggers Liquidation", level: 2 }, { id: "prevention", title: "Preventing Liquidation", level: 2 }, { id: "recovery", title: "After Liquidation", level: 2 }]}
+      toc={[
+        { id: "how-liquidation-works", title: "how-liquidation-works", level: 2 },
+        { id: "how-liquidation-works", title: "How Liquidation Works", level: 2 },
+        { id: "triggers", title: "triggers", level: 2 },
+        { id: "what-triggers-liquidation", title: "What Triggers Liquidation", level: 2 },
+        { id: "prevention", title: "prevention", level: 2 },
+        { id: "preventing-liquidation", title: "Preventing Liquidation", level: 2 },
+        { id: "recovery", title: "recovery", level: 2 },
+        { id: "after-liquidation", title: "After Liquidation", level: 2 }
+      ]}
       faqs={[
         { question: "Can I get liquidated instantly?", answer: "In fast-moving markets, yes. Flash crashes can trigger liquidation before you have time to react. This is why maintaining a healthy buffer above the liquidation threshold is critical. DeFi management tools can automate protection, but gas costs during congestion can delay automated responses." },
         { question: "How much do I lose in a liquidation?", answer: "In a partial liquidation, you lose the collateral needed to bring your position back to health, plus a liquidation penalty (typically 5-13% depending on the platform). You keep the borrowed assets. In a full liquidation, you may lose all collateral above the borrowed amount." },

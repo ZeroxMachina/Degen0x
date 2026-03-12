@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "$54.90 for 3-card set",
   bestFor: "Users wanting simple, portable hardware security",
-  affiliateUrl: "https://cryptodegen.com/go/tangem",
+  affiliateUrl: "https://degen0x.com/go/tangem",
   category: "wallets",
 };
 

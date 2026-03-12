@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is 1000SATS (SATS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is 1000SATS (SATS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about 1000SATS (SATS), the BRC-20 token on Bitcoin named after satoshis. Discover how it works, tokenomics, use cases, and how to buy SATS.",
 };
 
 export default function SatsPage() {
   return (
-    <LearnPageLayout title="What Is 1000SATS (SATS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="1000SATS (SATS) is a BRC-20 token on the Bitcoin blockchain named after satoshis, the smallest unit of Bitcoin. It is one of the most popular BRC-20 tokens by trading volume and community size, representing the growing ecosystem of fungible tokens built natively on Bitcoin." toc={[{id:"what-is",title:"What Is 1000SATS?",level:2},{id:"how-it-works",title:"How Does 1000SATS Work?",level:2},{id:"tokenomics",title:"SATS Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy SATS",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is 1000SATS?",answer:"1000SATS is a BRC-20 token on Bitcoin named after satoshis (sats), the smallest unit of Bitcoin. It is one of the most traded BRC-20 tokens."},{question:"Where can I buy SATS?",answer:"SATS is available on Binance, OKX, and other major exchanges. On-chain trading is available through Bitcoin Ordinals marketplaces."},{question:"Is 1000SATS a good investment?",answer:"SATS is a speculative BRC-20 token with strong community support but no fundamental utility. BRC-20 technology is experimental. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"ORDI",href:"/investing/crypto/ordi",category:"Investing"}]}>
+    <LearnPageLayout title="What Is 1000SATS (SATS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="1000SATS (SATS) is a BRC-20 token on the Bitcoin blockchain named after satoshis, the smallest unit of Bitcoin. It is one of the most popular BRC-20 tokens by trading volume and community size, representing the growing ecosystem of fungible tokens built natively on Bitcoin." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-1000sats", title: "What Is 1000SATS?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-1000sats-work", title: "How Does 1000SATS Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "sats-tokenomics", title: "SATS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-sats", title: "How to Buy SATS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is 1000SATS?",answer:"1000SATS is a BRC-20 token on Bitcoin named after satoshis (sats), the smallest unit of Bitcoin. It is one of the most traded BRC-20 tokens."},{question:"Where can I buy SATS?",answer:"SATS is available on Binance, OKX, and other major exchanges. On-chain trading is available through Bitcoin Ordinals marketplaces."},{question:"Is 1000SATS a good investment?",answer:"SATS is a speculative BRC-20 token with strong community support but no fundamental utility. BRC-20 technology is experimental. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"ORDI",href:"/investing/crypto/ordi",category:"Investing"}]}>
       <h2 id="what-is">What Is 1000SATS?</h2>
       <p>1000SATS (commonly called SATS) is a BRC-20 token on Bitcoin that takes its name from satoshis, the smallest denomination of Bitcoin (1 BTC = 100 million satoshis). The token resonates with the Bitcoin community because of its direct naming connection to Bitcoin's fundamental unit, making it one of the most culturally significant BRC-20 tokens after ORDI.</p>
       <p>Listed on major exchanges as 1000SATS (representing 1000 units for pricing convenience), the token has built a large community of holders who view it as a way to participate in Bitcoin's expanding token ecosystem.</p>

@@ -17,11 +17,16 @@ export default function WhatIsAFlashLoanPage() {
       readTime="7 min"
       intro="A flash loan is a DeFi innovation that allows users to borrow any amount of cryptocurrency without collateral, as long as the loan is repaid within the same blockchain transaction. If the loan is not repaid by the end of the transaction, the entire operation reverts as if it never happened. Flash loans have enabled novel applications in arbitrage and collateral management while also becoming a tool for sophisticated protocol exploits."
       toc={[
+        { id: "how-flash-loans-work", title: "how-flash-loans-work", level: 2 },
         { id: "how-flash-loans-work", title: "How Flash Loans Work", level: 2 },
-        { id: "use-cases", title: "Legitimate Use Cases", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "legitimate-use-cases", title: "Legitimate Use Cases", level: 2 },
+        { id: "flash-loan-attacks", title: "flash-loan-attacks", level: 2 },
         { id: "flash-loan-attacks", title: "Flash Loan Attacks", level: 2 },
-        { id: "providers", title: "Flash Loan Providers", level: 2 },
-        { id: "impact", title: "Impact on DeFi", level: 2 },
+        { id: "providers", title: "providers", level: 2 },
+        { id: "flash-loan-providers", title: "Flash Loan Providers", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-defi", title: "Impact on DeFi", level: 2 }
       ]}
       faqs={[
         { question: "Do flash loans require collateral?", answer: "No. Flash loans are the only form of uncollateralized borrowing in DeFi. The key constraint is that the loan must be repaid within the same transaction. If repayment fails, the entire transaction reverts, meaning the loan never effectively occurred, which eliminates the lender's risk." },

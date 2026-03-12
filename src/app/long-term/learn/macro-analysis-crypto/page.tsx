@@ -18,12 +18,18 @@ export default function MacroAnalysisCryptoPage() {
       readTime="11 min read"
       intro="Cryptocurrency was born from a desire to escape traditional financial systems, but as the market has matured and institutional adoption has grown, crypto prices have become increasingly influenced by macroeconomic factors. Interest rates, inflation data, central bank policy, and global liquidity conditions now play significant roles in driving crypto market cycles. Understanding these macro forces helps investors make better-informed decisions about timing, allocation, and risk management."
       toc={[
-        { id: "interest-rates", title: "Interest Rates & Fed Policy", level: 2 },
-        { id: "inflation", title: "Inflation & the Bitcoin Narrative", level: 2 },
-        { id: "liquidity", title: "Global Liquidity Cycles", level: 2 },
-        { id: "dollar-strength", title: "US Dollar Strength (DXY)", level: 2 },
-        { id: "correlation", title: "Crypto-Macro Correlation Trends", level: 2 },
-        { id: "using-macro", title: "Using Macro Analysis for Crypto", level: 2 },
+        { id: "interest-rates", title: "interest-rates", level: 2 },
+        { id: "interest-rates-fed-policy", title: "Interest Rates & Fed Policy", level: 2 },
+        { id: "inflation", title: "inflation", level: 2 },
+        { id: "inflation-the-bitcoin-narrative", title: "Inflation & the Bitcoin Narrative", level: 2 },
+        { id: "liquidity", title: "liquidity", level: 2 },
+        { id: "global-liquidity-cycles", title: "Global Liquidity Cycles", level: 2 },
+        { id: "dollar-strength", title: "dollar-strength", level: 2 },
+        { id: "us-dollar-strength-dxy", title: "US Dollar Strength (DXY)", level: 2 },
+        { id: "correlation", title: "correlation", level: 2 },
+        { id: "crypto-macro-correlation-trends", title: "Crypto-Macro Correlation Trends", level: 2 },
+        { id: "using-macro", title: "using-macro", level: 2 },
+        { id: "using-macro-analysis-for-crypto", title: "Using Macro Analysis for Crypto", level: 2 }
       ]}
       faqs={[
         { question: "Does Bitcoin go up when interest rates go down?", answer: "Historically, Bitcoin has performed well during periods of low or declining interest rates when liquidity is abundant. Rate cuts and quantitative easing tend to be bullish for risk assets including crypto. However, Bitcoin has also rallied during some periods of rising rates, so the relationship is not absolute." },

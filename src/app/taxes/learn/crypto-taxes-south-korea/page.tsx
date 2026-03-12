@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in South Korea (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in South Korea (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in South Korea. Learn about the delayed crypto tax implementation, reporting requirements, and how Korean crypto investors should prepare.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesSouthKoreaPage() {
       readTime="8 min read"
       intro="South Korea has repeatedly delayed implementing its crypto capital gains tax, reflecting both the political sensitivity of taxing the country's large crypto investor base and the complexity of creating a workable framework. When implemented, gains exceeding 2.5 million KRW annually will be taxed at 20%. Korean crypto investors should understand the planned rules, current obligations, and how to prepare for the eventual implementation of full crypto taxation."
       toc={[
-        { id: "tax-status", title: "Current Tax Status", level: 2 },
-        { id: "planned-framework", title: "Planned Tax Framework", level: 2 },
-        { id: "reporting-exchanges", title: "Exchange Reporting Requirements", level: 2 },
-        { id: "business-income", title: "Business and Corporate Crypto", level: 2 },
-        { id: "preparation", title: "Preparing for Crypto Taxes", level: 2 },
+        { id: "tax-status", title: "tax-status", level: 2 },
+        { id: "current-tax-status", title: "Current Tax Status", level: 2 },
+        { id: "planned-framework", title: "planned-framework", level: 2 },
+        { id: "planned-tax-framework", title: "Planned Tax Framework", level: 2 },
+        { id: "reporting-exchanges", title: "reporting-exchanges", level: 2 },
+        { id: "exchange-reporting-requirements", title: "Exchange Reporting Requirements", level: 2 },
+        { id: "business-income", title: "business-income", level: 2 },
+        { id: "business-and-corporate-crypto", title: "Business and Corporate Crypto", level: 2 },
+        { id: "preparation", title: "preparation", level: 2 },
+        { id: "preparing-for-crypto-taxes", title: "Preparing for Crypto Taxes", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto gains taxed in South Korea?", answer: "As of the latest postponement, the crypto capital gains tax has been delayed. When implemented, gains exceeding 2.5 million KRW (approximately 1,900 USD) per year will be taxed at 20% plus local income tax, bringing the effective rate to 22%. Check current legislation for the latest implementation timeline." },

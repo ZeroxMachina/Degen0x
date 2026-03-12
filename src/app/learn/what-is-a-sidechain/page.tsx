@@ -17,11 +17,16 @@ export default function WhatIsASidechainPage() {
       readTime="7 min"
       intro="A sidechain is an independent blockchain that runs parallel to a main blockchain (like Ethereum or Bitcoin) and is connected to it through a two-way bridge. Unlike Layer 2 rollups that derive security from the main chain, sidechains have their own consensus mechanism and validator set, offering different trade-offs between security, cost, and performance."
       toc={[
+        { id: "how-sidechains-work", title: "how-sidechains-work", level: 2 },
         { id: "how-sidechains-work", title: "How Sidechains Work", level: 2 },
-        { id: "sidechain-vs-l2", title: "Sidechains vs Layer 2", level: 2 },
+        { id: "sidechain-vs-l2", title: "sidechain-vs-l2", level: 2 },
+        { id: "sidechains-vs-layer-2", title: "Sidechains vs Layer 2", level: 2 },
+        { id: "security-model", title: "security-model", level: 2 },
         { id: "security-model", title: "Security Model", level: 2 },
+        { id: "popular-sidechains", title: "popular-sidechains", level: 2 },
         { id: "popular-sidechains", title: "Popular Sidechains", level: 2 },
-        { id: "use-cases", title: "When to Use Sidechains", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "when-to-use-sidechains", title: "When to Use Sidechains", level: 2 }
       ]}
       faqs={[
         { question: "Is Polygon a sidechain?", answer: "Polygon PoS was originally a sidechain with its own validator set. It has been transitioning toward becoming a ZK-validium, which would derive more security from Ethereum. The distinction illustrates how the boundaries between sidechains and L2s are blurring as projects upgrade their security models." },

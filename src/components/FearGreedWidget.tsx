@@ -160,7 +160,7 @@ const FearGreedWidget: React.FC<FearGreedWidgetProps> = ({ compact = false }) =>
             <path
               d="M 20 100 A 80 80 0 0 1 180 100"
               fill="none"
-              stroke="#333333"
+              stroke="var(--color-text-secondary)"
               strokeWidth="12"
               strokeLinecap="round"
             />
@@ -198,7 +198,7 @@ const FearGreedWidget: React.FC<FearGreedWidgetProps> = ({ compact = false }) =>
               dominantBaseline="middle"
               style={{
                 fontSize: '14px',
-                fill: '#999999',
+                fill: 'var(--color-text-secondary)',
                 fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
               }}
             >
@@ -316,8 +316,8 @@ const styles = {
   
   container: (compact: boolean) => ({
     padding: compact ? '12px 16px' : '24px',
-    backgroundColor: 'rgba(17, 24, 39, 0.6)',
-    border: '1px solid rgba(255, 255, 255, 0.1)',
+    backgroundColor: 'var(--glass-bg)',
+    border: '1px solid var(--glass-border)',
     borderRadius: '12px',
     backdropFilter: 'blur(10px)',
     animation: 'fadeIn 0.4s ease-out',
@@ -325,8 +325,8 @@ const styles = {
 
   compactContainer: {
     padding: '12px 16px',
-    backgroundColor: 'rgba(17, 24, 39, 0.6)',
-    border: '1px solid rgba(255, 255, 255, 0.1)',
+    backgroundColor: 'var(--glass-bg)',
+    border: '1px solid var(--glass-border)',
     borderRadius: '12px',
     backdropFilter: 'blur(10px)',
     animation: 'fadeIn 0.4s ease-out',
@@ -341,7 +341,7 @@ const styles = {
   compactLabel: {
     fontSize: '12px',
     fontWeight: '600',
-    color: '#9ca3af',
+    color: 'var(--color-text-secondary)',
     textTransform: 'uppercase',
     letterSpacing: '0.5px',
   } as React.CSSProperties,
@@ -359,13 +359,13 @@ const styles = {
 
   compactClassification: {
     fontSize: '12px',
-    color: '#d1d5db',
+    color: 'var(--color-text-secondary)',
   } as React.CSSProperties,
 
   fullContainer: {
     padding: '24px',
-    backgroundColor: 'rgba(17, 24, 39, 0.6)',
-    border: '1px solid rgba(255, 255, 255, 0.1)',
+    backgroundColor: 'var(--glass-bg)',
+    border: '1px solid var(--glass-border)',
     borderRadius: '12px',
     backdropFilter: 'blur(10px)',
     animation: 'fadeIn 0.4s ease-out',
@@ -390,7 +390,7 @@ const styles = {
   } as React.CSSProperties,
 
   loadingText: {
-    color: '#9ca3af',
+    color: 'var(--color-text-secondary)',
     fontSize: '14px',
     margin: 0,
   } as React.CSSProperties,
@@ -415,7 +415,7 @@ const styles = {
 
   header: {
     marginBottom: '24px',
-    borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
+    borderBottom: '1px solid var(--glass-border)',
     paddingBottom: '16px',
   } as React.CSSProperties,
 
@@ -423,13 +423,13 @@ const styles = {
     margin: '0 0 8px 0',
     fontSize: '20px',
     fontWeight: '700',
-    color: '#f3f4f6',
+    color: 'var(--color-text)',
   } as React.CSSProperties,
 
   updateTime: {
     margin: 0,
     fontSize: '13px',
-    color: '#9ca3af',
+    color: 'var(--color-text-secondary)',
   } as React.CSSProperties,
 
   currentScoreSection: {
@@ -460,7 +460,7 @@ const styles = {
     alignItems: 'center',
     gap: '10px',
     fontSize: '13px',
-    color: '#d1d5db',
+    color: 'var(--color-text-secondary)',
   } as React.CSSProperties,
 
   legendColor: {
@@ -472,14 +472,14 @@ const styles = {
 
   historySection: {
     paddingTop: '24px',
-    borderTop: '1px solid rgba(255, 255, 255, 0.05)',
+    borderTop: '1px solid var(--glass-border)',
   } as React.CSSProperties,
 
   historyTitle: {
     margin: '0 0 16px 0',
     fontSize: '16px',
     fontWeight: '600',
-    color: '#f3f4f6',
+    color: 'var(--color-text)',
   } as React.CSSProperties,
 
   barChartContainer: {
@@ -505,7 +505,7 @@ const styles = {
     bottom: '100%',
     marginBottom: '8px',
     backgroundColor: 'rgba(0, 0, 0, 0.8)',
-    color: '#f3f4f6',
+    color: '#ffffff',
     padding: '4px 8px',
     borderRadius: '6px',
     fontSize: '12px',
@@ -524,7 +524,7 @@ const styles = {
 
   barLabel: {
     fontSize: '12px',
-    color: '#9ca3af',
+    color: 'var(--color-text-secondary)',
     textAlign: 'center',
   } as React.CSSProperties,
 };

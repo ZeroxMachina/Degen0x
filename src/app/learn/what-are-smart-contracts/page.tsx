@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Are Smart Contracts? (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Are Smart Contracts? (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand smart contracts: self-executing programs on blockchains that automate agreements without intermediaries. Learn how they work, their uses in DeFi and NFTs, and security considerations.",
 };
@@ -17,11 +17,16 @@ export default function WhatAreSmartContractsPage() {
       readTime="8 min read"
       intro="Smart contracts are self-executing programs stored on a blockchain that automatically enforce the terms of an agreement when predetermined conditions are met. They eliminate the need for intermediaries by encoding rules directly into code that runs exactly as written, without the possibility of downtime, censorship, or third-party interference. Smart contracts are the building blocks of decentralized applications and the entire DeFi ecosystem."
       toc={[
-        { id: "how-they-work", title: "How Smart Contracts Work", level: 2 },
-        { id: "platforms", title: "Smart Contract Platforms", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "security", title: "Security Considerations", level: 2 },
-        { id: "future", title: "The Future of Smart Contracts", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-smart-contracts-work", title: "How Smart Contracts Work", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "smart-contract-platforms", title: "Smart Contract Platforms", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-considerations", title: "Security Considerations", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-smart-contracts", title: "The Future of Smart Contracts", level: 2 }
       ]}
       faqs={[
         {

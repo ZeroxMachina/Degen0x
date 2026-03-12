@@ -25,7 +25,7 @@ export default function FantomPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Fantom (FTM) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function FantomPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">FTM</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2019</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">3,175,000,000 FTM</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Lachesis (aBFT Proof of Stake)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">FTM</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2019</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">3,175,000,000 FTM</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Lachesis (aBFT Proof of Stake)</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Fantom?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Fantom?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Fantom is a DAG-based (Directed Acyclic Graph) smart contract platform that uses the
           Lachesis consensus mechanism to achieve asynchronous Byzantine Fault Tolerance. Launched
@@ -69,7 +69,7 @@ export default function FantomPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Fantom hosts a DeFi ecosystem including SpookySwap (DEX), Beethoven X (balancer-style
           protocol), Geist Finance (lending), and various yield farming opportunities. FTM is used
@@ -81,7 +81,7 @@ export default function FantomPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Fantom's TVL declined significantly from its 2022 peaks, and the Multichain bridge
           exploit in 2023 caused hundreds of millions in losses for ecosystem participants, damaging
@@ -94,7 +94,7 @@ export default function FantomPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Fantom</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Fantom</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           FTM is available on major exchanges including Binance, Coinbase, Kraken, and OKX. After
           purchasing, you can stake FTM through the official Fantom wallet (fWallet) or through

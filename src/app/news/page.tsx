@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: `Crypto News — Latest Crypto & Web3 News | ${SITE_NAME}`,
   description: `Stay up to date with the latest crypto news, DeFi updates, exchange announcements, regulatory changes, and market analysis. Curated by the ${SITE_NAME} editorial team.`,
   keywords: "crypto news, bitcoin news, ethereum news, DeFi news, blockchain updates, web3 news, regulatory updates, market analysis",
-  alternates: { canonical: "https://cryptodegen.com/news" },
+  alternates: { canonical: "https://degen0x.com/news" },
   openGraph: {
     title: `Crypto News — Latest Crypto & Web3 News | ${SITE_NAME}`,
     description: "Expert analysis, breaking news, and in-depth coverage of Bitcoin, Ethereum, DeFi, and the broader Web3 ecosystem.",
-    url: "https://cryptodegen.com/news",
+    url: "https://degen0x.com/news",
     type: "website",
     siteName: SITE_NAME,
   },
@@ -63,7 +63,7 @@ export default function NewsPage() {
     "@type": "Blog",
     name: `${SITE_NAME} Crypto News`,
     description: `Latest crypto news, DeFi updates, and market analysis from ${SITE_NAME}`,
-    url: "https://cryptodegen.com/news",
+    url: "https://degen0x.com/news",
     publisher: { "@type": "Organization", name: SITE_NAME },
   };
 
@@ -93,7 +93,7 @@ export default function NewsPage() {
         <div className="flex flex-wrap gap-2 mb-10">
           <Link
             href="/news"
-            className="px-4 py-1.5 rounded-full text-sm font-medium bg-[var(--color-primary)] text-white"
+            className="px-4 py-1.5 rounded-full text-sm font-medium bg-[var(--color-primary)] text-[var(--color-text)]"
           >
             All
           </Link>
@@ -118,7 +118,7 @@ export default function NewsPage() {
               <div className="p-8 md:p-12">
                 <div className="flex items-center gap-3 mb-4">
                   <span
-                    className="px-3 py-1 rounded-full text-xs font-semibold text-white"
+                    className="px-3 py-1 rounded-full text-xs font-semibold text-[var(--color-text)]"
                     style={{ backgroundColor: CATEGORY_COLORS[mainFeatured.category] }}
                   >
                     {CATEGORY_LABELS[mainFeatured.category]}
@@ -158,7 +158,7 @@ export default function NewsPage() {
                 className="block rounded-xl glass p-6 card-hover group"
               >
                 <span
-                  className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-white mb-3"
+                  className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-[var(--color-text)] mb-3"
                   style={{ backgroundColor: CATEGORY_COLORS[article.category] }}
                 >
                   {CATEGORY_LABELS[article.category]}

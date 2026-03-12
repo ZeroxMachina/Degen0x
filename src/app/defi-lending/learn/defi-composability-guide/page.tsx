@@ -17,11 +17,16 @@ export default function DefiComposabilityGuidePage() {
       readTime="10 min"
       intro="Composability is often called DeFi's superpower. It means that protocols can interact with each other seamlessly, like building blocks or money legos, creating complex financial strategies by combining simple primitives. A lending protocol's receipt token can be used as collateral in another protocol, which can then be deposited into a yield optimizer. This guide explains how composability works and how to leverage it effectively."
       toc={[
+        { id: "what-is-composability", title: "what-is-composability", level: 2 },
         { id: "what-is-composability", title: "What Is Composability", level: 2 },
-        { id: "money-legos", title: "Money Legos in Practice", level: 2 },
+        { id: "money-legos", title: "money-legos", level: 2 },
+        { id: "money-legos-in-practice", title: "Money Legos in Practice", level: 2 },
+        { id: "composable-strategies", title: "composable-strategies", level: 2 },
         { id: "composable-strategies", title: "Composable Strategies", level: 2 },
-        { id: "risks", title: "Composability Risks", level: 2 },
-        { id: "future", title: "The Future of Composability", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "composability-risks", title: "Composability Risks", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-composability", title: "The Future of Composability", level: 2 }
       ]}
       faqs={[
         { question: "Why is composability unique to DeFi?", answer: "Traditional finance systems use closed, proprietary infrastructure that prevents interoperability. DeFi protocols are built on open, permissionless smart contracts on shared blockchains, allowing any protocol to integrate with any other without requiring permission or partnership agreements." },

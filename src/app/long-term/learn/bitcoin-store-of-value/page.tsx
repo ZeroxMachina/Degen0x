@@ -16,10 +16,14 @@ export default function BitcoinStoreOfValuePage() {
       readTime="10 min"
       intro="Bitcoin's store of value narrative has become its dominant investment thesis, comparing the digital asset to gold as a hedge against monetary debasement and long-term wealth preservation."
       toc={[
-        { id: "section-1", title: "The Store of Value Thesis", level: 2 },
-        { id: "section-2", title: "Supply and Scarcity", level: 2 },
-        { id: "section-3", title: "Institutional Adoption", level: 2 },
-        { id: "section-4", title: "Investment Implications", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "the-store-of-value-thesis", title: "The Store of Value Thesis", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "supply-and-scarcity", title: "Supply and Scarcity", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "institutional-adoption", title: "Institutional Adoption", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "investment-implications", title: "Investment Implications", level: 2 }
       ]}
       faqs={[
         { question: "Is Bitcoin digital gold?", answer: "Bitcoin shares key properties with gold including scarcity, durability, and divisibility while adding digital advantages like portability, verifiability, and programmability. The comparison is useful but imperfect since Bitcoin's shorter history means it has less proven track record as a store of value." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Blockchain Technology? Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Blockchain Technology? Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how blockchain technology works, its core components, types of blockchains, real-world applications, and why it matters for the future of finance and beyond.",
 };
@@ -17,11 +17,16 @@ export default function WhatIsBlockchainPage() {
       readTime="10 min read"
       intro="Blockchain is a decentralized, distributed ledger technology that records transactions across many computers so that no single entity controls or can retroactively alter the data. Originally developed as the backbone of Bitcoin, blockchain has since evolved into a foundational technology powering thousands of cryptocurrencies, decentralized applications, and enterprise solutions across industries ranging from finance to healthcare."
       toc={[
-        { id: "how-it-works", title: "How Blockchain Works", level: 2 },
-        { id: "core-components", title: "Core Components of a Blockchain", level: 2 },
-        { id: "types", title: "Types of Blockchains", level: 2 },
-        { id: "use-cases", title: "Real-World Use Cases", level: 2 },
-        { id: "limitations", title: "Limitations and Challenges", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-blockchain-works", title: "How Blockchain Works", level: 2 },
+        { id: "core-components", title: "core-components", level: 2 },
+        { id: "core-components-of-a-blockchain", title: "Core Components of a Blockchain", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-blockchains", title: "Types of Blockchains", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "real-world-use-cases", title: "Real-World Use Cases", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-and-challenges", title: "Limitations and Challenges", level: 2 }
       ]}
       faqs={[
         {

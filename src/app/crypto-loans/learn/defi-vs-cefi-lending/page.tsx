@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DeFi vs CeFi Lending: Complete Comparison (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DeFi vs CeFi Lending: Complete Comparison (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare DeFi and CeFi crypto lending platforms. Understand the differences in rates, security, features, and risks between decentralized and centralized lending.",
 };
@@ -17,11 +17,16 @@ export default function DefiVsCefiLendingPage() {
       readTime="10 min read"
       intro="The crypto lending landscape is divided between DeFi (decentralized finance) protocols and CeFi (centralized finance) platforms. Each approach has distinct advantages and risks. DeFi offers transparency, permissionless access, and self-custody, while CeFi provides a familiar user experience, customer support, and often fixed rates. The collapse of major CeFi lenders in 2022 highlighted counterparty risk, while DeFi exploits demonstrated smart contract risk. Understanding both options is essential for making informed lending and borrowing decisions."
       toc={[
-        { id: "defi-lending", title: "How DeFi Lending Works", level: 2 },
-        { id: "cefi-lending", title: "How CeFi Lending Works", level: 2 },
-        { id: "rates-comparison", title: "Rates and Fees Comparison", level: 2 },
+        { id: "defi-lending", title: "defi-lending", level: 2 },
+        { id: "how-defi-lending-works", title: "How DeFi Lending Works", level: 2 },
+        { id: "cefi-lending", title: "cefi-lending", level: 2 },
+        { id: "how-cefi-lending-works", title: "How CeFi Lending Works", level: 2 },
+        { id: "rates-comparison", title: "rates-comparison", level: 2 },
+        { id: "rates-and-fees-comparison", title: "Rates and Fees Comparison", level: 2 },
+        { id: "risk-comparison", title: "risk-comparison", level: 2 },
         { id: "risk-comparison", title: "Risk Comparison", level: 2 },
-        { id: "choosing", title: "Choosing Between DeFi and CeFi", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-between-defi-and-cefi", title: "Choosing Between DeFi and CeFi", level: 2 }
       ]}
       faqs={[
         { question: "Is DeFi lending safer than CeFi?", answer: "Neither is inherently safer; they have different risk profiles. DeFi eliminates counterparty risk (you maintain custody) but introduces smart contract risk. CeFi eliminates smart contract risk but introduces counterparty risk (the platform could fail). The collapse of Celsius, BlockFi, and Voyager demonstrated catastrophic CeFi counterparty risk." },

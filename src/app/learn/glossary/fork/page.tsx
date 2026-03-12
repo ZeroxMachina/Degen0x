@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Fork? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Fork? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what blockchain forks are, the difference between hard and soft forks, and how they shape cryptocurrency evolution.",
 };
@@ -17,11 +17,16 @@ export default function ForkPage() {
       readTime="5 min"
       intro="A fork is a change to a blockchain's protocol rules. Soft forks are backward-compatible upgrades that tighten rules, while hard forks create a permanent divergence requiring all nodes to upgrade. Hard forks can result in two separate chains, as happened when Bitcoin Cash split from Bitcoin and Ethereum Classic split from Ethereum. Forks are a fundamental governance mechanism in decentralized networks."
       toc={[
-        { id: "definition", title: "What Is a Fork?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-fork", title: "What Is a Fork?", level: 2 },
+        { id: "soft-forks", title: "soft-forks", level: 2 },
         { id: "soft-forks", title: "Soft Forks", level: 2 },
+        { id: "hard-forks", title: "hard-forks", level: 2 },
         { id: "hard-forks", title: "Hard Forks", level: 2 },
-        { id: "notable-forks", title: "Notable Forks in History", level: 2 },
-        { id: "why-it-matters", title: "Why Forks Matter", level: 2 },
+        { id: "notable-forks", title: "notable-forks", level: 2 },
+        { id: "notable-forks-in-history", title: "Notable Forks in History", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-forks-matter", title: "Why Forks Matter", level: 2 }
       ]}
       faqs={[
         {

@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -127,7 +129,7 @@ export default function GlossaryPage() {
         <div className="flex flex-wrap gap-2 mb-6">
           <button
             onClick={() => setSelectedCategory(null)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${!selectedCategory ? "bg-[var(--color-accent)] text-white" : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"}`}
+            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${!selectedCategory ? "bg-[var(--color-accent)] text-[var(--color-text)]" : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"}`}
           >
             All ({GLOSSARY.length})
           </button>
@@ -137,7 +139,7 @@ export default function GlossaryPage() {
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(selectedCategory === cat ? null : cat)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${selectedCategory === cat ? "bg-[var(--color-accent)] text-white" : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"}`}
+                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${selectedCategory === cat ? "bg-[var(--color-accent)] text-[var(--color-text)]" : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"}`}
               >
                 {cat} ({count})
               </button>
@@ -150,7 +152,7 @@ export default function GlossaryPage() {
             <a
               key={letter}
               href={grouped[letter] ? `#letter-${letter}` : undefined}
-              className={`w-8 h-8 flex items-center justify-center rounded text-xs font-bold transition-all ${grouped[letter] ? "glass text-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-white cursor-pointer" : "text-[var(--color-text-secondary)]/30 cursor-default"}`}
+              className={`w-8 h-8 flex items-center justify-center rounded text-xs font-bold transition-all ${grouped[letter] ? "glass text-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-[var(--color-text)] cursor-pointer" : "text-[var(--color-text-secondary)]/30 cursor-default"}`}
             >
               {letter}
             </a>

@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Rabby Wallet", slug: "rabby", rating: 4.6, affiliateUrl: "https://cryptodegen.com/go/rabby", features: { "Type": "Browser extension + mobile", "Transaction Simulation": "Yes (built-in)", "Auto Chain Switch": "Yes", "Security Alerts": "Yes (pre-sign checks)", "Multi-Chain": "EVM chains auto-detect", "Open Source": "Yes (fully)", "Hardware Support": "Ledger, Trezor, Keystone", "Built By": "DeBank team" } },
-  { name: "MetaMask", slug: "metamask", rating: 4.5, affiliateUrl: "https://cryptodegen.com/go/metamask", features: { "Type": "Browser extension + mobile", "Transaction Simulation": "Partial (Blockaid)", "Auto Chain Switch": "No (manual)", "Security Alerts": "Yes (Blockaid)", "Multi-Chain": "Manual chain switching", "Open Source": "Yes (fully)", "Hardware Support": "Ledger, Trezor, Lattice", "Built By": "Consensys" } },
+  { name: "Rabby Wallet", slug: "rabby", rating: 4.6, affiliateUrl: "https://degen0x.com/go/rabby", features: { "Type": "Browser extension + mobile", "Transaction Simulation": "Yes (built-in)", "Auto Chain Switch": "Yes", "Security Alerts": "Yes (pre-sign checks)", "Multi-Chain": "EVM chains auto-detect", "Open Source": "Yes (fully)", "Hardware Support": "Ledger, Trezor, Keystone", "Built By": "DeBank team" } },
+  { name: "MetaMask", slug: "metamask", rating: 4.5, affiliateUrl: "https://degen0x.com/go/metamask", features: { "Type": "Browser extension + mobile", "Transaction Simulation": "Partial (Blockaid)", "Auto Chain Switch": "No (manual)", "Security Alerts": "Yes (Blockaid)", "Multi-Chain": "Manual chain switching", "Open Source": "Yes (fully)", "Hardware Support": "Ledger, Trezor, Lattice", "Built By": "Consensys" } },
 ];
 
 const features = ["Type", "Transaction Simulation", "Auto Chain Switch", "Security Alerts", "Multi-Chain", "Open Source", "Hardware Support", "Built By"];
@@ -39,7 +39,7 @@ export default function RabbyVsMetamaskPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Rabby vs MetaMask: Best DeFi Wallet in {CURRENT_YEAR}?</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Rabby vs MetaMask: Best DeFi Wallet in {CURRENT_YEAR}?</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Rabby is the upstart DeFi wallet challenging MetaMask with transaction simulation,
           auto chain switching, and enhanced security. We compare the DeFi power user experience.
@@ -86,12 +86,12 @@ export default function RabbyVsMetamaskPage() {
         <h2 id="verdict">Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose Rabby if:</strong> You are a DeFi power user
+            <strong className="text-[var(--color-text)]">Choose Rabby if:</strong> You are a DeFi power user
             who values transaction simulation, auto chain switching, and enhanced pre-sign
             security checks. Rabby offers a superior DeFi UX.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose MetaMask if:</strong> You want guaranteed
+            <strong className="text-[var(--color-text)]">Choose MetaMask if:</strong> You want guaranteed
             compatibility with every dApp, prefer the most established wallet, and value the
             extensive ecosystem of Snaps extensions.
           </p>
@@ -102,11 +102,11 @@ export default function RabbyVsMetamaskPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/compare/metamask-vs-trust-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Compare</span>
-            <h3 className="font-semibold text-white text-sm">MetaMask vs Trust Wallet</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">MetaMask vs Trust Wallet</h3>
           </Link>
           <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Guide</span>
-            <h3 className="font-semibold text-white text-sm">Wallet Security Best Practices</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Wallet Security Best Practices</h3>
           </Link>
         </div>
       </section>

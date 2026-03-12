@@ -19,7 +19,7 @@ export default function MagicEdenVsOpenSeaPage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "Magic Eden vs OpenSea", href: "#" } ]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Magic Eden vs OpenSea: Which NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Magic Eden vs OpenSea: Which NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         Magic Eden and OpenSea are two of the most popular multi-chain NFT marketplaces, but they serve
@@ -29,7 +29,7 @@ export default function MagicEdenVsOpenSeaPage() {
       </p>
       <ComparisonTable items={[magicEden, opensea]} features={nftComparisonFeatures} title="Magic Eden vs OpenSea: Head-to-Head" />
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Magic Eden charges a 2% marketplace fee on Solana transactions, while OpenSea charges 2.5%
           across all chains. On Ethereum, Magic Eden has introduced competitive fee structures to
@@ -42,7 +42,7 @@ export default function MagicEdenVsOpenSeaPage() {
           its partnership with Metaplex. For Solana creators, this makes Magic Eden a more supportive
           platform for sustaining royalty income.
         </p>
-        <h2 className="text-2xl font-bold text-white mb-4">Chain Support and Specialization</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Chain Support and Specialization</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           OpenSea supports the widest range of blockchains: Ethereum, Polygon, Solana, Arbitrum,
           Avalanche, BNB Chain, Base, and more. This makes it the most versatile single platform for
@@ -55,15 +55,15 @@ export default function MagicEdenVsOpenSeaPage() {
           trade Bitcoin Ordinals or primarily collect on Solana, Magic Eden is the clear leader. For
           broad Ethereum collection browsing, OpenSea remains the standard.
         </p>
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Magic Eden if</strong> you trade primarily on Solana
+            <strong className="text-[var(--color-text)]">Choose Magic Eden if</strong> you trade primarily on Solana
             or Bitcoin Ordinals, want lower fees on Solana, or are interested in the Launchpad for
             new collection mints across multiple chains.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose OpenSea if</strong> you want the widest blockchain
+            <strong className="text-[var(--color-text)]">Choose OpenSea if</strong> you want the widest blockchain
             support, the largest collection library, beginner-friendly tools, or advanced features
             through OpenSea Pro.
           </p>

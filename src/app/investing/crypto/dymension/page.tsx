@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Dymension (DYM)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Dymension (DYM)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Dymension (DYM), the protocol for easily deploying rollups (RollApps). Discover how it works, tokenomics, use cases, and how to buy DYM.",
 };
@@ -17,12 +17,18 @@ export default function DymensionPage() {
       readTime="8 min read"
       intro="Dymension is a network of easily deployable modular blockchains called RollApps. Built on the Cosmos SDK, Dymension provides the settlement layer, sequencing, and inter-rollup communication for application-specific rollups that can be deployed with minimal configuration. DYM is the native token used for gas, staking, and governance."
       toc={[
-        { id: "what-is", title: "What Is Dymension?", level: 2 },
-        { id: "how-it-works", title: "How Does Dymension Work?", level: 2 },
-        { id: "tokenomics", title: "DYM Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy DYM", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-dymension", title: "What Is Dymension?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-dymension-work", title: "How Does Dymension Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "dym-tokenomics", title: "DYM Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-dym", title: "How to Buy DYM", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

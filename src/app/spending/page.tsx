@@ -56,7 +56,7 @@ export default function SpendingPage() {
     "@type": "CollectionPage",
     name: `Crypto Spending Hub - ${CURRENT_YEAR}`,
     description: `Everything you need to spend cryptocurrency in the real world. Compare the best crypto debit cards, payment apps, and more.`,
-    url: "https://cryptodegen.com/spending",
+    url: "https://degen0x.com/spending",
     isPartOf: { "@type": "WebSite", name: SITE_NAME },
   };
 
@@ -75,7 +75,7 @@ export default function SpendingPage() {
         />
 
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
             Crypto Spending Hub
           </h1>
           <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -108,7 +108,7 @@ export default function SpendingPage() {
 
         {/* Best-Of Categories */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Find the Best Way to Spend Crypto</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Find the Best Way to Spend Crypto</h2>
           <AffiliateDisclosure />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {bestOfLinks.map((link) => (
@@ -117,7 +117,7 @@ export default function SpendingPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
-                <h3 className="text-white font-semibold mb-1">{link.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">
                   {link.description}
                 </p>
@@ -128,7 +128,7 @@ export default function SpendingPage() {
 
         {/* How It Works */}
         <section className="mb-16 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-6">How Spending Crypto Works</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">How Spending Crypto Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
@@ -148,10 +148,10 @@ export default function SpendingPage() {
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
-                <div className="w-12 h-12 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-xl mx-auto mb-3">
+                <div className="w-12 h-12 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold text-xl mx-auto mb-3">
                   {item.step}
                 </div>
-                <h3 className="text-white font-semibold mb-2">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}
@@ -160,7 +160,7 @@ export default function SpendingPage() {
 
         {/* Learn Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Learn About Spending Crypto</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn About Spending Crypto</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {learnLinks.map((link) => (
               <Link
@@ -168,7 +168,7 @@ export default function SpendingPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >
-                <span className="text-white font-semibold">{link.title}</span>
+                <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                   {link.description}
                 </span>
@@ -179,7 +179,7 @@ export default function SpendingPage() {
 
         {/* About Section */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">How We Review Crypto Spending Products</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Review Crypto Spending Products</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Every crypto debit card and payment app we recommend has been personally tested by our team. We
             order each card, make real purchases, test ATM withdrawals, and evaluate the full user experience

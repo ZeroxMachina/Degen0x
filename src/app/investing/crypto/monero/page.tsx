@@ -25,7 +25,7 @@ export default function MoneroPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Monero (XMR) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function MoneroPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">XMR</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2014</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">No hard cap (tail emission: 0.6 XMR/block)</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Proof of Work (RandomX)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">XMR</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2014</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">No hard cap (tail emission: 0.6 XMR/block)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Proof of Work (RandomX)</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Monero?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Monero?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Monero was launched in April 2014 as a fork of the Bytecoin protocol, based on the
           CryptoNote technology. Unlike Bitcoin, where all transactions are transparent on the
@@ -68,7 +68,7 @@ export default function MoneroPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Monero is used for private financial transactions, protecting personal and business
           financial data from surveillance and blockchain analysis. Use cases include salary
@@ -80,7 +80,7 @@ export default function MoneroPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Regulatory risk is Monero's most significant challenge. Multiple major exchanges have
           delisted XMR in various jurisdictions due to anti-money laundering compliance requirements.
@@ -93,7 +93,7 @@ export default function MoneroPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Monero</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Monero</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Due to delistings on some major exchanges, buying Monero requires checking which platforms
           support it in your jurisdiction. Kraken, KuCoin, and Binance (in some regions) still list

@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useEffect, useCallback, useMemo } from "react";
@@ -160,22 +162,6 @@ function formatUsd(value: number): string {
   if (value < 1) return `$${value.toFixed(4)}`;
   return `$${value.toFixed(2)}`;
 }
-
-export const metadata = {
-  title: "Multi-Chain Gas Dashboard | CryptoDegen",
-  description:
-    "Compare real-time gas prices across 10+ blockchain networks. See transaction costs for transfers, swaps, NFT mints, and contract deployments.",
-  keywords: [
-    "gas prices",
-    "multi-chain",
-    "ethereum",
-    "layer 2",
-    "arbitrum",
-    "optimism",
-    "polygon",
-    "transaction costs",
-  ],
-};
 
 export default function MultiChainGasDashboard() {
   const [chains, setChains] = useState<ChainGasData[]>([]);

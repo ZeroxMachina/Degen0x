@@ -16,10 +16,14 @@ export default function NftRarityGuidePage() {
       readTime="10 min"
       intro="Rarity is a primary driver of NFT value within generative collections. Understanding how rarity is calculated, which traits drive premiums, and how to use rarity tools helps collectors make informed purchasing decisions."
       toc={[
-        { id: "section-1", title: "Rarity Fundamentals", level: 2 },
-        { id: "section-2", title: "Rarity Calculation Methods", level: 2 },
-        { id: "section-3", title: "Rarity Tools and Platforms", level: 2 },
-        { id: "section-4", title: "Using Rarity Strategically", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "rarity-fundamentals", title: "Rarity Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "rarity-calculation-methods", title: "Rarity Calculation Methods", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "rarity-tools-and-platforms", title: "Rarity Tools and Platforms", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "using-rarity-strategically", title: "Using Rarity Strategically", level: 2 }
       ]}
       faqs={[
         { question: "How is NFT rarity calculated?", answer: "Rarity is typically calculated by examining how uncommon each trait is within a collection. Statistical rarity scores combine the frequency of each trait an NFT possesses. Multiple calculation methods exist including trait frequency, information content, and custom scoring models." },

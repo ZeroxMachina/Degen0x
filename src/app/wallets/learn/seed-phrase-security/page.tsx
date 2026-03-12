@@ -16,12 +16,18 @@ export default function SeedPhraseSecurityPage() {
       readTime="10 min"
       intro="Your seed phrase (also called a recovery phrase or mnemonic phrase) is the master key to your cryptocurrency wallet. If someone obtains your seed phrase, they have complete access to all your funds. If you lose it, your funds may be permanently inaccessible. This guide covers everything you need to know about protecting this critical piece of information."
       toc={[
-        { id: "what-is-seed-phrase", title: "What Is a Seed Phrase?", level: 2 },
-        { id: "storage-methods", title: "Best Storage Methods", level: 2 },
-        { id: "common-mistakes", title: "Common Mistakes to Avoid", level: 2 },
-        { id: "metal-backups", title: "Metal Seed Phrase Backups", level: 2 },
-        { id: "multi-location", title: "Multi-Location Storage Strategy", level: 2 },
-        { id: "advanced", title: "Advanced Techniques", level: 2 },
+        { id: "what-is-seed-phrase", title: "what-is-seed-phrase", level: 2 },
+        { id: "what-is-a-seed-phrase", title: "What Is a Seed Phrase?", level: 2 },
+        { id: "storage-methods", title: "storage-methods", level: 2 },
+        { id: "best-storage-methods", title: "Best Storage Methods", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-mistakes-to-avoid", title: "Common Mistakes to Avoid", level: 2 },
+        { id: "metal-backups", title: "metal-backups", level: 2 },
+        { id: "metal-seed-phrase-backups", title: "Metal Seed Phrase Backups", level: 2 },
+        { id: "multi-location", title: "multi-location", level: 2 },
+        { id: "multi-location-storage-strategy", title: "Multi-Location Storage Strategy", level: 2 },
+        { id: "advanced", title: "advanced", level: 2 },
+        { id: "advanced-techniques", title: "Advanced Techniques", level: 2 }
       ]}
       faqs={[
         {

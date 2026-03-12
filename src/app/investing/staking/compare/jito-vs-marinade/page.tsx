@@ -29,7 +29,7 @@ export default function JitoVsMariadePage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Jito vs Marinade: Which Solana Staking Protocol Is Better in {CURRENT_YEAR}?
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -50,7 +50,7 @@ export default function JitoVsMariadePage() {
       />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Yield Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Yield Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Jito consistently delivers higher yields than Marinade, primarily due to its MEV reward
           sharing mechanism. JitoSOL typically yields 7-8% APY compared to mSOL&apos;s 6-7.5% APY.
@@ -63,7 +63,7 @@ export default function JitoVsMariadePage() {
           both maximum yield and liquidity, Jito remains the clear leader.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Decentralization</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Decentralization</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Marinade significantly outperforms Jito on decentralization metrics. Marinade distributes
           stake across 400+ validators using an algorithmic scoring system that actively promotes
@@ -76,7 +76,7 @@ export default function JitoVsMariadePage() {
           stake concentration, which strengthens the network against censorship and downtime risks.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Structure</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Structure</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Jito charges 4% of staking rewards, making it the lower-fee liquid staking option. Marinade
           charges 6% for liquid staking (mSOL) but offers native staking at 0%. For users who want
@@ -84,16 +84,16 @@ export default function JitoVsMariadePage() {
           liquidity needs, Marinade native staking is unbeatable at zero cost.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Jito if</strong> maximizing yield is your primary
+            <strong className="text-[var(--color-text)]">Choose Jito if</strong> maximizing yield is your primary
             goal. JitoSOL&apos;s MEV-enhanced returns are the highest available for Solana staking, and
             its 4% fee is competitive. Jito is the best choice for yield-focused stakers who want
             DeFi composability.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Marinade if</strong> you value Solana network
+            <strong className="text-[var(--color-text)]">Choose Marinade if</strong> you value Solana network
             decentralization and want flexible staking options. Marinade&apos;s native staking at 0%
             fee is ideal for long-term holders, while mSOL provides liquid staking for those who
             need DeFi access.

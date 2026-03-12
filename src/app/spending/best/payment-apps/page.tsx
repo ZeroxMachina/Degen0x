@@ -122,7 +122,7 @@ export default function BestPaymentAppsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Payment Apps ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -139,10 +139,10 @@ export default function BestPaymentAppsPage() {
           you choose the best one for your needs.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">BitPay</strong> leads our ranking with the largest merchant
+          <strong className="text-[var(--color-text)]">BitPay</strong> leads our ranking with the largest merchant
           network and most comprehensive feature set. For Lightning-fast Bitcoin payments,{" "}
-          <strong className="text-white">Strike</strong> is unmatched. And for in-store retail payments,{" "}
-          <strong className="text-white">Flexa (via SPEDN)</strong> offers a unique barcode-scanning
+          <strong className="text-[var(--color-text)]">Strike</strong> is unmatched. And for in-store retail payments,{" "}
+          <strong className="text-[var(--color-text)]">Flexa (via SPEDN)</strong> offers a unique barcode-scanning
           experience at major chains.
         </p>
       </div>
@@ -155,11 +155,11 @@ export default function BestPaymentAppsPage() {
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-center gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold">
                   {index + 1}
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white">{app.name}</h3>
+                  <h3 className="text-lg font-semibold text-[var(--color-text)]">{app.name}</h3>
                   <div className="text-sm text-[var(--color-accent)]">{app.rating}/5</div>
                 </div>
               </div>
@@ -213,20 +213,20 @@ export default function BestPaymentAppsPage() {
 
       {/* Payment Methods Comparison */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Crypto Payment Methods Compared</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Crypto Payment Methods Compared</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Crypto Debit Cards</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Crypto Debit Cards</h3>
             <p className="text-sm text-[var(--color-text-secondary)] mb-2">Convert crypto to fiat at POS. Works everywhere Visa/MC is accepted.</p>
             <div className="text-xs text-[var(--color-text-secondary)]">Speed: Instant | Fees: 0.5-2.5% spread</div>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Lightning Network Apps</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Lightning Network Apps</h3>
             <p className="text-sm text-[var(--color-text-secondary)] mb-2">Instant BTC payments with near-zero fees. Growing merchant adoption.</p>
             <div className="text-xs text-[var(--color-text-secondary)]">Speed: Instant | Fees: &lt;$0.01</div>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Direct Crypto Payments</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Direct Crypto Payments</h3>
             <p className="text-sm text-[var(--color-text-secondary)] mb-2">Pay merchants who accept crypto natively. No intermediary conversion.</p>
             <div className="text-xs text-[var(--color-text-secondary)]">Speed: 1-60 min | Fees: Network gas fees</div>
           </div>

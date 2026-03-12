@@ -16,10 +16,14 @@ export default function HowToBuySuiPage() {
       readTime="8 min"
       intro="Sui is a next-generation Layer 1 blockchain built by Mysten Labs, also founded by former Meta engineers. Like Aptos, Sui uses the Move programming language but with a unique object-centric data model that enables parallel transaction processing. Sui has experienced rapid ecosystem growth and is particularly strong in gaming and consumer applications."
       toc={[
+        { id: "what-is-sui", title: "what-is-sui", level: 2 },
         { id: "what-is-sui", title: "What Is Sui?", level: 2 },
-        { id: "where-to-buy", title: "Where to Buy Sui", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Purchase Guide", level: 2 },
-        { id: "storage", title: "Storing Your SUI", level: 2 },
+        { id: "where-to-buy", title: "where-to-buy", level: 2 },
+        { id: "where-to-buy-sui", title: "Where to Buy Sui", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-purchase-guide", title: "Step-by-Step Purchase Guide", level: 2 },
+        { id: "storage", title: "storage", level: 2 },
+        { id: "storing-your-sui", title: "Storing Your SUI", level: 2 }
       ]}
       faqs={[
         { question: "How is Sui different from Aptos?", answer: "While both use the Move language, Sui uses an object-centric model where each asset is a unique object, enabling transactions that touch different objects to process in parallel without coordination. Aptos uses a more traditional account-based model. Sui also features a unique consensus mechanism called Narwhal and Bullshark." },

@@ -6,7 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 /**
  * Metadata for Embed Widget Generator
  *
- * Page Title: CryptoDegen - Embed Widget Generator
+ * Page Title: degen0x - Embed Widget Generator
  * Description: Create customizable crypto widgets for your website or blog.
  *              Choose from price tickers, charts, market stats, and more.
  */
@@ -150,7 +150,7 @@ function PriceTickerPreview({ config }: { config: WidgetConfig }) {
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
       {config.showTitle && (
-        <h3 className={`font-bold text-lg ${config.theme === "dark" ? "text-white" : "text-gray-900"}`}>
+        <h3 className={`font-bold text-lg ${config.theme === "dark" ? "text-[var(--color-text)]" : "text-gray-900"}`}>
           BTC / USD
         </h3>
       )}
@@ -186,7 +186,7 @@ function MiniChartPreview({ config }: { config: WidgetConfig }) {
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
       {config.showTitle && (
-        <h3 className={`font-bold ${config.theme === "dark" ? "text-white" : "text-gray-900"}`}>Ethereum - 7 Day</h3>
+        <h3 className={`font-bold ${config.theme === "dark" ? "text-[var(--color-text)]" : "text-gray-900"}`}>Ethereum - 7 Day</h3>
       )}
       <div className="flex-1 flex items-end justify-between gap-1">
         {[42, 38, 45, 40, 48, 52, 58, 55, 62, 68, 72, 75, 78, 82, 85, 88].map((h, i) => (
@@ -219,7 +219,7 @@ function MarketStatsPreview({ config }: { config: WidgetConfig }) {
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
       {config.showTitle && (
-        <h3 className={`font-bold text-lg ${config.theme === "dark" ? "text-white" : "text-gray-900"}`}>Market Stats</h3>
+        <h3 className={`font-bold text-lg ${config.theme === "dark" ? "text-[var(--color-text)]" : "text-gray-900"}`}>Market Stats</h3>
       )}
       <div className={`text-sm ${config.theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>
         <div className="flex justify-between py-1">
@@ -260,7 +260,7 @@ function FearGreedPreview({ config }: { config: WidgetConfig }) {
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
       {config.showTitle && (
-        <h3 className={`font-bold ${config.theme === "dark" ? "text-white" : "text-gray-900"}`}>Market Sentiment</h3>
+        <h3 className={`font-bold ${config.theme === "dark" ? "text-[var(--color-text)]" : "text-gray-900"}`}>Market Sentiment</h3>
       )}
       <div className="relative w-32 h-32 flex items-center justify-center">
         <svg className="transform -rotate-90 w-32 h-32">
@@ -305,7 +305,7 @@ function PortfolioPreview({ config }: { config: WidgetConfig }) {
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
       {config.showTitle && (
-        <h3 className={`font-bold text-lg ${config.theme === "dark" ? "text-white" : "text-gray-900"}`}>
+        <h3 className={`font-bold text-lg ${config.theme === "dark" ? "text-[var(--color-text)]" : "text-gray-900"}`}>
           My Portfolio
         </h3>
       )}
@@ -354,7 +354,7 @@ function TrendingCoinsPreview({ config }: { config: WidgetConfig }) {
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
       {config.showTitle && (
-        <h3 className={`font-bold text-lg ${config.theme === "dark" ? "text-white" : "text-gray-900"} mb-2`}>
+        <h3 className={`font-bold text-lg ${config.theme === "dark" ? "text-[var(--color-text)]" : "text-gray-900"} mb-2`}>
           Trending Now 🔥
         </h3>
       )}
@@ -367,7 +367,7 @@ function TrendingCoinsPreview({ config }: { config: WidgetConfig }) {
         >
           <div className="flex items-center gap-2">
             <span className="text-lg">{coin.icon}</span>
-            <span className={config.theme === "dark" ? "text-white" : "text-gray-900"}>{coin.symbol}</span>
+            <span className={config.theme === "dark" ? "text-[var(--color-text)]" : "text-gray-900"}>{coin.symbol}</span>
           </div>
           <div className="flex gap-2 items-center">
             <span style={{ color: config.accentColor }} className="font-semibold">
@@ -444,12 +444,12 @@ export default function EmbedWidgetsPage() {
   };
 
   const generateEmbedCode = (): string => {
-    const embedUrl = `https://cryptodegen.com/embed/${config.type}?theme=${config.theme}&w=${config.width}&h=${config.height}&color=${encodeURIComponent(config.accentColor)}&radius=${config.borderRadius}`;
+    const embedUrl = `https://degen0x.com/embed/${config.type}?theme=${config.theme}&w=${config.width}&h=${config.height}&color=${encodeURIComponent(config.accentColor)}&radius=${config.borderRadius}`;
     return `<iframe src="${embedUrl}" width="${config.width}" height="${config.height}" frameborder="0" style="border-radius: ${config.borderRadius}px; border: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"></iframe>`;
   };
 
   const generateReactCode = (): string => {
-    return `import { CryptoWidget } from '@cryptodegen/widgets';
+    return `import { CryptoWidget } from '@degen0x/widgets';
 
 export default function MyComponent() {
   return (
@@ -483,7 +483,7 @@ export default function MyComponent() {
 
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-3">Embed Widget Generator</h1>
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-3">Embed Widget Generator</h1>
           <p className="text-gray-400 text-lg">
             Create customizable crypto widgets to embed on your website or blog. Choose from price tickers, charts,
             market stats, and more.
@@ -492,7 +492,7 @@ export default function MyComponent() {
 
         {/* Templates Section */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Predefined Templates</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Predefined Templates</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {Object.entries(TEMPLATES).map(([key, template]) => (
               <button
@@ -500,7 +500,7 @@ export default function MyComponent() {
                 onClick={() => handleTemplateSelect(key as TemplateType)}
                 className="p-4 rounded-lg border border-gray-700 hover:border-blue-500 hover:bg-[#1a1a2e] transition-all duration-200"
               >
-                <h3 className="text-white font-semibold mb-2">{template.name}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-2">{template.name}</h3>
                 <p className="text-gray-400 text-sm">
                   {template.width}x{template.height}px • {template.widgets.length} widgets
                 </p>
@@ -511,7 +511,7 @@ export default function MyComponent() {
 
         {/* Widget Gallery */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Widget Gallery</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Widget Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
             {WIDGET_TYPES.map((widget) => (
               <button
@@ -524,7 +524,7 @@ export default function MyComponent() {
                 }`}
               >
                 <div className="text-2xl mb-2">{widget.icon}</div>
-                <h3 className="text-white text-sm font-semibold">{widget.name}</h3>
+                <h3 className="text-[var(--color-text)] text-sm font-semibold">{widget.name}</h3>
                 <p className="text-gray-500 text-xs mt-1">{widget.defaultWidth}x{widget.defaultHeight}</p>
               </button>
             ))}
@@ -536,17 +536,17 @@ export default function MyComponent() {
           {/* Customization Panel */}
           <div className="lg:col-span-1">
             <div className="bg-[#1a1a2e] rounded-lg p-6 border border-gray-700">
-              <h2 className="text-xl font-bold text-white mb-6">Customization</h2>
+              <h2 className="text-xl font-bold text-[var(--color-text)] mb-6">Customization</h2>
 
               {/* Widget Type Info */}
               <div className="mb-6">
-                <h3 className="text-white font-semibold text-lg mb-2">{widgetInfo.name}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold text-lg mb-2">{widgetInfo.name}</h3>
                 <p className="text-gray-400 text-sm">{widgetInfo.description}</p>
               </div>
 
               {/* Theme */}
               <div className="mb-6">
-                <label className="block text-white font-semibold mb-3">Theme</label>
+                <label className="block text-[var(--color-text)] font-semibold mb-3">Theme</label>
                 <div className="flex gap-2">
                   {["light", "dark"].map((theme) => (
                     <button
@@ -554,7 +554,7 @@ export default function MyComponent() {
                       onClick={() => setConfig((prev) => ({ ...prev, theme: theme as ThemeType }))}
                       className={`flex-1 py-2 rounded font-semibold transition-all ${
                         config.theme === theme
-                          ? "bg-blue-600 text-white"
+                          ? "bg-blue-600 text-[var(--color-text)]"
                           : "bg-gray-700 text-gray-300 hover:bg-gray-600"
                       }`}
                     >
@@ -566,7 +566,7 @@ export default function MyComponent() {
 
               {/* Dimensions */}
               <div className="mb-6">
-                <label className="block text-white font-semibold mb-3">Dimensions</label>
+                <label className="block text-[var(--color-text)] font-semibold mb-3">Dimensions</label>
                 <div className="space-y-3">
                   <div>
                     <label className="text-gray-400 text-sm">Width: {config.width}px</label>
@@ -595,7 +595,7 @@ export default function MyComponent() {
 
               {/* Accent Color */}
               <div className="mb-6">
-                <label className="block text-white font-semibold mb-3">Accent Color</label>
+                <label className="block text-[var(--color-text)] font-semibold mb-3">Accent Color</label>
                 <div className="grid grid-cols-4 gap-2">
                   {ACCENT_COLORS.map((color) => (
                     <button
@@ -613,7 +613,7 @@ export default function MyComponent() {
 
               {/* Border Radius */}
               <div className="mb-6">
-                <label className="block text-white font-semibold mb-3">Border Radius: {config.borderRadius}px</label>
+                <label className="block text-[var(--color-text)] font-semibold mb-3">Border Radius: {config.borderRadius}px</label>
                 <input
                   type="range"
                   min="0"
@@ -626,7 +626,7 @@ export default function MyComponent() {
 
               {/* Element Toggles */}
               <div className="space-y-3">
-                <label className="block text-white font-semibold mb-3">Elements to Show</label>
+                <label className="block text-[var(--color-text)] font-semibold mb-3">Elements to Show</label>
                 {[
                   { key: "showTitle" as const, label: "Title" },
                   { key: "showPrice" as const, label: "Price" },
@@ -652,7 +652,7 @@ export default function MyComponent() {
           <div className="lg:col-span-2 space-y-8">
             {/* Live Preview */}
             <div className="bg-[#1a1a2e] rounded-lg p-6 border border-gray-700">
-              <h2 className="text-xl font-bold text-white mb-6">Live Preview</h2>
+              <h2 className="text-xl font-bold text-[var(--color-text)] mb-6">Live Preview</h2>
               <div className="flex justify-center items-start overflow-auto p-4 bg-[#0f0f1a] rounded-lg min-h-80">
                 {renderWidgetPreview(config)}
               </div>
@@ -660,11 +660,11 @@ export default function MyComponent() {
 
             {/* Code Output */}
             <div className="bg-[#1a1a2e] rounded-lg p-6 border border-gray-700">
-              <h2 className="text-xl font-bold text-white mb-6">Code Output</h2>
+              <h2 className="text-xl font-bold text-[var(--color-text)] mb-6">Code Output</h2>
 
               {/* Tabs */}
               <div className="flex gap-2 mb-6 border-b border-gray-700">
-                <button className="px-4 py-2 text-white font-semibold border-b-2 border-blue-600">
+                <button className="px-4 py-2 text-[var(--color-text)] font-semibold border-b-2 border-blue-600">
                   HTML / iframe
                 </button>
               </div>
@@ -682,14 +682,14 @@ export default function MyComponent() {
                   navigator.clipboard.writeText(generateEmbedCode());
                   alert("Code copied to clipboard!");
                 }}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition-colors"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-[var(--color-text)] font-semibold py-2 px-4 rounded transition-colors"
               >
                 Copy Embed Code
               </button>
 
               {/* React Code Option */}
               <div className="mt-8 pt-6 border-t border-gray-700">
-                <h3 className="text-white font-semibold mb-4">React Component</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-4">React Component</h3>
                 <div className="bg-[#0f0f1a] rounded-lg p-4 mb-4">
                   <pre className="text-gray-300 text-sm overflow-x-auto font-mono whitespace-pre-wrap break-words">
                     {generateReactCode()}
@@ -700,7 +700,7 @@ export default function MyComponent() {
                     navigator.clipboard.writeText(generateReactCode());
                     alert("React code copied to clipboard!");
                   }}
-                  className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded transition-colors"
+                  className="w-full bg-purple-600 hover:bg-purple-700 text-[var(--color-text)] font-semibold py-2 px-4 rounded transition-colors"
                 >
                   Copy React Code
                 </button>
@@ -708,7 +708,7 @@ export default function MyComponent() {
 
               {/* Installation Instructions */}
               <div className="mt-8 pt-6 border-t border-gray-700">
-                <h3 className="text-white font-semibold mb-4">Installation Instructions</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-4">Installation Instructions</h3>
                 <div className="space-y-3 text-gray-300 text-sm">
                   <div>
                     <p className="font-semibold mb-1">For HTML/iframe:</p>
@@ -717,7 +717,7 @@ export default function MyComponent() {
                   <div>
                     <p className="font-semibold mb-1">For React:</p>
                     <ol className="list-decimal list-inside space-y-1">
-                      <li>Install the package: npm install @cryptodegen/widgets</li>
+                      <li>Install the package: npm install @degen0x/widgets</li>
                       <li>Copy the component code above into your project</li>
                       <li>Import and use it in your component</li>
                     </ol>
@@ -735,19 +735,19 @@ export default function MyComponent() {
         {/* Help & Features */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-[#1a1a2e] rounded-lg p-6 border border-gray-700">
-            <h3 className="text-white font-bold text-lg mb-3">✨ Responsive Design</h3>
+            <h3 className="text-[var(--color-text)] font-bold text-lg mb-3">✨ Responsive Design</h3>
             <p className="text-gray-400">
               All widgets automatically adapt to mobile, tablet, and desktop screens without any additional configuration.
             </p>
           </div>
           <div className="bg-[#1a1a2e] rounded-lg p-6 border border-gray-700">
-            <h3 className="text-white font-bold text-lg mb-3">🎨 Full Customization</h3>
+            <h3 className="text-[var(--color-text)] font-bold text-lg mb-3">🎨 Full Customization</h3>
             <p className="text-gray-400">
               Control colors, dimensions, themes, and which elements to display with our intuitive customization panel.
             </p>
           </div>
           <div className="bg-[#1a1a2e] rounded-lg p-6 border border-gray-700">
-            <h3 className="text-white font-bold text-lg mb-3">⚡ Real-Time Updates</h3>
+            <h3 className="text-[var(--color-text)] font-bold text-lg mb-3">⚡ Real-Time Updates</h3>
             <p className="text-gray-400">
               All crypto data updates in real-time, so your website always displays the latest prices and market data.
             </p>
@@ -756,36 +756,36 @@ export default function MyComponent() {
 
         {/* FAQ Section */}
         <div className="mt-16 bg-[#1a1a2e] rounded-lg p-8 border border-gray-700">
-          <h2 className="text-2xl font-bold text-white mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-8">Frequently Asked Questions</h2>
           <div className="space-y-6">
             <div>
-              <h4 className="text-white font-semibold mb-2">Can I customize the widget colors and size?</h4>
+              <h4 className="text-[var(--color-text)] font-semibold mb-2">Can I customize the widget colors and size?</h4>
               <p className="text-gray-400">
                 Yes! Use the customization panel on the left to adjust colors, width, height, border radius, and which
                 elements are displayed.
               </p>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-2">Is the data updated in real-time?</h4>
+              <h4 className="text-[var(--color-text)] font-semibold mb-2">Is the data updated in real-time?</h4>
               <p className="text-gray-400">
                 Yes, all crypto prices and market data are updated in real-time directly from our API endpoints.
               </p>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-2">Which frameworks do you support?</h4>
+              <h4 className="text-[var(--color-text)] font-semibold mb-2">Which frameworks do you support?</h4>
               <p className="text-gray-400">
                 We provide HTML/iframe embeds (universal) and React components. The iframe version works with any
                 website, CMS, or platform.
               </p>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-2">Do I need to sign up to use widgets?</h4>
+              <h4 className="text-[var(--color-text)] font-semibold mb-2">Do I need to sign up to use widgets?</h4>
               <p className="text-gray-400">
                 No! Widgets are free to use. Simply copy the code and embed it on your site. No API key required.
               </p>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-2">Can I use multiple widgets on one page?</h4>
+              <h4 className="text-[var(--color-text)] font-semibold mb-2">Can I use multiple widgets on one page?</h4>
               <p className="text-gray-400">
                 Absolutely! You can embed as many widgets as you like. Each will load independently and update in
                 real-time.

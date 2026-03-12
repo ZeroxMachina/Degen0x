@@ -17,10 +17,14 @@ export default function BestCryptoCardsCanadaPage() {
       readTime="7 min"
       intro="Canadian crypto card users have fewer options than US or European users, but several quality cards are available specifically for the Canadian market. Key considerations include CAD denomination, Interac compatibility, and compliance with Canadian securities and money services business regulations. This guide covers the best crypto cards available to Canadian residents."
       toc={[
-        { id: "canadian-market", title: "Canadian Crypto Card Market", level: 2 },
-        { id: "top-canadian-cards", title: "Top Cards for Canadians", level: 2 },
-        { id: "regulations", title: "Canadian Regulations", level: 2 },
-        { id: "tax-considerations", title: "Canadian Tax Considerations", level: 2 },
+        { id: "canadian-market", title: "canadian-market", level: 2 },
+        { id: "canadian-crypto-card-market", title: "Canadian Crypto Card Market", level: 2 },
+        { id: "top-canadian-cards", title: "top-canadian-cards", level: 2 },
+        { id: "top-cards-for-canadians", title: "Top Cards for Canadians", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "canadian-regulations", title: "Canadian Regulations", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
+        { id: "canadian-tax-considerations", title: "Canadian Tax Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Can I use US crypto cards in Canada?", answer: "Most US-only crypto cards like Bitpay and Fold are not available to Canadian residents. Some global cards like Crypto.com are available in Canada. Always verify Canadian availability on the card issuer's website, as terms and features may differ from US versions." },

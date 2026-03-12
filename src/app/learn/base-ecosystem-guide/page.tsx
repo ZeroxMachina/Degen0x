@@ -17,11 +17,16 @@ export default function BaseEcosystemGuidePage() {
       readTime="9 min"
       intro="Base is an Ethereum Layer 2 network built by Coinbase using the OP Stack. Launched in August 2023, Base has rapidly grown to become one of the most active L2s, driven by Coinbase's massive user base, a thriving creator economy, and innovative social and consumer applications that are bringing new users into crypto."
       toc={[
-        { id: "overview", title: "Base Overview", level: 2 },
-        { id: "technology", title: "Technology Stack", level: 2 },
-        { id: "ecosystem", title: "Key Applications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "base-overview", title: "Base Overview", level: 2 },
+        { id: "technology", title: "technology", level: 2 },
+        { id: "technology-stack", title: "Technology Stack", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
+        { id: "key-applications", title: "Key Applications", level: 2 },
+        { id: "onchain-culture", title: "onchain-culture", level: 2 },
         { id: "onchain-culture", title: "Onchain Culture", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "Does Base have its own token?", answer: "No. Base does not have a native token and Coinbase has stated there are no plans to launch one. Gas fees on Base are paid in ETH. This distinguishes Base from many other L2s that have issued governance tokens." },

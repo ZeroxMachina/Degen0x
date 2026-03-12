@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Turkey (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Turkey (${CURRENT_YEAR}) | degen0x`,
   description:
     "Find the best cryptocurrency exchanges in Turkey. Platforms with TRY pairs, fast bank transfers, and compliance with Turkish crypto regulations.",
 };
@@ -17,10 +17,14 @@ export default function BestExchangesTurkeyPage() {
       readTime="7 min read"
       intro="Turkey ranks among the top countries globally for crypto adoption, driven partly by high inflation and lira depreciation. Turkish traders actively use both domestic and international exchanges for hedging and investment. New regulations under the Capital Markets Board (SPK) are shaping the compliance landscape for crypto platforms serving Turkish users."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges in Turkey", level: 2 },
-        { id: "regulations", title: "Turkish Crypto Regulations", level: 2 },
-        { id: "funding", title: "Funding Your Account", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-in-turkey", title: "Top Exchanges in Turkey", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "turkish-crypto-regulations", title: "Turkish Crypto Regulations", level: 2 },
+        { id: "funding", title: "funding", level: 2 },
+        { id: "funding-your-account", title: "Funding Your Account", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         {

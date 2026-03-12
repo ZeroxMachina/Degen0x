@@ -61,7 +61,7 @@ export default function BestRewardsCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Rewards Cards ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -79,7 +79,7 @@ export default function BestRewardsCardsPage() {
           rewards program, including cashback rates, bonus categories, perks, and the quality
           of the reward token.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">What Sets Rewards Cards Apart from Cashback Cards</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">What Sets Rewards Cards Apart from Cashback Cards</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           While cashback and rewards overlap, we define rewards cards more broadly to include
           cards with tiered earning categories, sign-up bonuses, loyalty perks like streaming
@@ -87,13 +87,13 @@ export default function BestRewardsCardsPage() {
           cashback card might offer a flat rate, while a rewards card provides a richer
           ecosystem of earning opportunities.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Our Top Picks</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Our Top Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          The <strong className="text-white">Crypto.com Visa</strong> dominates with its
+          The <strong className="text-[var(--color-text)]">Crypto.com Visa</strong> dominates with its
           combination of high cashback, Spotify and Netflix reimbursements, airport lounge
-          access, and earn-rate boosts. The <strong className="text-white">Fold Card</strong> offers
+          access, and earn-rate boosts. The <strong className="text-[var(--color-text)]">Fold Card</strong> offers
           a unique gamified Bitcoin rewards experience with its spin-the-wheel mechanic. The{" "}
-          <strong className="text-white">Gemini Credit Card</strong> is the best traditional
+          <strong className="text-[var(--color-text)]">Gemini Credit Card</strong> is the best traditional
           credit card option with tiered category rewards and 60+ crypto choices.
         </p>
       </div>
@@ -111,33 +111,33 @@ export default function BestRewardsCardsPage() {
 
       {/* Rewards Ecosystem Comparison */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Rewards Ecosystem Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Rewards Ecosystem Comparison</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Most comprehensive rewards: Crypto.com Visa</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Most comprehensive rewards: Crypto.com Visa</h3>
               <p className="text-sm">Cashback plus streaming reimbursements, airport lounges, earn-rate boosts, and ATM withdrawal allowances. The richest total rewards package available.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Most fun to use: Fold Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Most fun to use: Fold Card</h3>
               <p className="text-sm">Spin-the-wheel after every purchase with a chance to earn up to 100% back in Bitcoin. Gamified rewards keep you engaged with every swipe.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Best category earnings: Gemini Credit Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Best category earnings: Gemini Credit Card</h3>
               <p className="text-sm">3% at dining, 2% at groceries, 1% everywhere else. Choose from 60+ cryptocurrencies. Functions exactly like a traditional rewards credit card.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">4.</span>
             <div>
-              <h3 className="text-white font-semibold">Most flexible reward choices: Coinbase Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Most flexible reward choices: Coinbase Card</h3>
               <p className="text-sm">Pick your reward crypto from over 100 options in the Coinbase ecosystem. Switch reward tokens anytime without penalty.</p>
             </div>
           </div>
@@ -146,37 +146,37 @@ export default function BestRewardsCardsPage() {
 
       {/* Methodology */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Our rewards card rankings consider the full value proposition beyond raw cashback rates:
         </p>
         <ul className="space-y-2 text-[var(--color-text-secondary)]">
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>
-            <span><strong className="text-white">Total reward value (30%):</strong> Combined value of cashback, bonuses, and ancillary perks like streaming and lounge access.</span>
+            <span><strong className="text-[var(--color-text)]">Total reward value (30%):</strong> Combined value of cashback, bonuses, and ancillary perks like streaming and lounge access.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>
-            <span><strong className="text-white">Reward flexibility (20%):</strong> Choice of reward tokens, ease of redemption, and ability to customize earning preferences.</span>
+            <span><strong className="text-[var(--color-text)]">Reward flexibility (20%):</strong> Choice of reward tokens, ease of redemption, and ability to customize earning preferences.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>
-            <span><strong className="text-white">Earning consistency (20%):</strong> Reliability of earning rates and the issuer track record of maintaining reward programs.</span>
+            <span><strong className="text-[var(--color-text)]">Earning consistency (20%):</strong> Reliability of earning rates and the issuer track record of maintaining reward programs.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>
-            <span><strong className="text-white">Fees and costs (15%):</strong> Net reward value after accounting for annual fees, staking costs, and conversion spreads.</span>
+            <span><strong className="text-[var(--color-text)]">Fees and costs (15%):</strong> Net reward value after accounting for annual fees, staking costs, and conversion spreads.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>
-            <span><strong className="text-white">Ecosystem benefits (15%):</strong> Additional platform perks, loyalty tiers, and synergies with the issuer broader product suite.</span>
+            <span><strong className="text-[var(--color-text)]">Ecosystem benefits (15%):</strong> Additional platform perks, loyalty tiers, and synergies with the issuer broader product suite.</span>
           </li>
         </ul>
       </section>
 
       {/* Related Links */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "Best Crypto Cashback Cards", href: "/crypto-cards/best/cashback" },
@@ -189,7 +189,7 @@ export default function BestRewardsCardsPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
-              <span className="text-white font-semibold">{link.title}</span>
+              <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
               <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                 Read more &rarr;
               </span>

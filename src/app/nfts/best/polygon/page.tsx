@@ -16,10 +16,14 @@ export default function BestPolygonNftsPage() {
       readTime="8 min"
       intro="Polygon has become a popular blockchain for NFTs thanks to its extremely low gas fees and fast transaction speeds. For creators and collectors who want to avoid Ethereum's high costs, Polygon offers a vibrant NFT ecosystem with multiple marketplace options and growing collection quality."
       toc={[
-        { id: "why-polygon", title: "Why Polygon for NFTs", level: 2 },
-        { id: "top-marketplaces", title: "Top Polygon NFT Marketplaces", level: 2 },
-        { id: "creating", title: "Creating NFTs on Polygon", level: 2 },
-        { id: "bridging", title: "Bridging Assets to Polygon", level: 2 },
+        { id: "why-polygon", title: "why-polygon", level: 2 },
+        { id: "why-polygon-for-nfts", title: "Why Polygon for NFTs", level: 2 },
+        { id: "top-marketplaces", title: "top-marketplaces", level: 2 },
+        { id: "top-polygon-nft-marketplaces", title: "Top Polygon NFT Marketplaces", level: 2 },
+        { id: "creating", title: "creating", level: 2 },
+        { id: "creating-nfts-on-polygon", title: "Creating NFTs on Polygon", level: 2 },
+        { id: "bridging", title: "bridging", level: 2 },
+        { id: "bridging-assets-to-polygon", title: "Bridging Assets to Polygon", level: 2 }
       ]}
       faqs={[
         { question: "How much does it cost to mint an NFT on Polygon?", answer: "Minting an NFT on Polygon costs fractions of a cent in gas fees, compared to $5-50+ on Ethereum mainnet. This makes Polygon ideal for creators who want to mint large collections affordably." },

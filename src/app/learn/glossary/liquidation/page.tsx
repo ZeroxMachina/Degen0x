@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Liquidation? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Liquidation? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what liquidation means in crypto, how it works in leveraged trading and DeFi lending, and how to avoid it.",
 };
@@ -17,11 +17,16 @@ export default function LiquidationPage() {
       readTime="5 min"
       intro="Liquidation is the forced closing of a leveraged position or the seizure of collateral in a lending protocol when the value of the trader's margin or collateral falls below the required threshold. In leveraged trading, liquidation occurs when losses approach the deposited margin. In DeFi lending, liquidation happens when the value of collateral drops below the minimum required to back a loan."
       toc={[
-        { id: "definition", title: "What Is Liquidation?", level: 2 },
-        { id: "trading-liquidation", title: "Liquidation in Leveraged Trading", level: 2 },
-        { id: "defi-liquidation", title: "Liquidation in DeFi Lending", level: 2 },
-        { id: "cascading", title: "Cascading Liquidations", level: 2 },
-        { id: "avoiding-liquidation", title: "How to Avoid Liquidation", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-liquidation", title: "What Is Liquidation?", level: 2 },
+        { id: "trading-liquidation", title: "trading-liquidation", level: 2 },
+        { id: "liquidation-in-leveraged-trading", title: "Liquidation in Leveraged Trading", level: 2 },
+        { id: "defi-liquidation", title: "defi-liquidation", level: 2 },
+        { id: "liquidation-in-defi-lending", title: "Liquidation in DeFi Lending", level: 2 },
+        { id: "cascading", title: "cascading", level: 2 },
+        { id: "cascading-liquidations", title: "Cascading Liquidations", level: 2 },
+        { id: "avoiding-liquidation", title: "avoiding-liquidation", level: 2 },
+        { id: "how-to-avoid-liquidation", title: "How to Avoid Liquidation", level: 2 }
       ]}
       faqs={[
         {

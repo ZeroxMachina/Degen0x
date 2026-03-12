@@ -18,12 +18,18 @@ export default function CryptoTaxesGermanyPage() {
       readTime="11 min read"
       intro="Germany has one of the most favorable crypto tax regimes in the world. Cryptocurrency held for more than one year is completely tax-free upon sale, regardless of the gain amount. Short-term gains under 600 EUR are also exempt. However, the rules around staking, lending, and DeFi activities add complexity that German crypto holders must understand to remain compliant with the Finanzamt."
       toc={[
-        { id: "german-classification", title: "How Germany Classifies Crypto", level: 2 },
-        { id: "one-year-rule", title: "The 1-Year Holding Period Exemption", level: 2 },
-        { id: "short-term-gains", title: "Short-Term Gains & the 600 EUR Threshold", level: 2 },
-        { id: "staking-lending", title: "Staking & Lending Tax Treatment", level: 2 },
-        { id: "reporting", title: "Reporting to the Finanzamt", level: 2 },
-        { id: "tools", title: "German Crypto Tax Tools", level: 2 },
+        { id: "german-classification", title: "german-classification", level: 2 },
+        { id: "how-germany-classifies-crypto", title: "How Germany Classifies Crypto", level: 2 },
+        { id: "one-year-rule", title: "one-year-rule", level: 2 },
+        { id: "the-1-year-holding-period-exemption", title: "The 1-Year Holding Period Exemption", level: 2 },
+        { id: "short-term-gains", title: "short-term-gains", level: 2 },
+        { id: "short-term-gains-the-600-eur-threshold", title: "Short-Term Gains & the 600 EUR Threshold", level: 2 },
+        { id: "staking-lending", title: "staking-lending", level: 2 },
+        { id: "staking-lending-tax-treatment", title: "Staking & Lending Tax Treatment", level: 2 },
+        { id: "reporting", title: "reporting", level: 2 },
+        { id: "reporting-to-the-finanzamt", title: "Reporting to the Finanzamt", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "german-crypto-tax-tools", title: "German Crypto Tax Tools", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto tax-free after 1 year in Germany?", answer: "Yes. If you hold cryptocurrency for more than one year (366 days), any gains from selling are completely tax-free under Section 23 of the German Income Tax Act. This applies regardless of the gain amount." },

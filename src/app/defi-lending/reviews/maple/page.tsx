@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Maple Finance Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Maple Finance Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Maple Finance review covering institutional lending, credit delegation, pool management, yield opportunities, and lessons from past defaults.",
 };
 

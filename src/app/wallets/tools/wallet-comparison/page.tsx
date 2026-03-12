@@ -42,7 +42,7 @@ const allWallets: WalletFeature[] = [
     backupMethod: "24-word seed phrase",
     swapFeature: "Yes (via providers)",
     bestFor: "Overall best hardware wallet",
-    affiliateUrl: "https://cryptodegen.com/go/ledger",
+    affiliateUrl: "https://degen0x.com/go/ledger",
   },
   {
     name: "Trezor Model T",
@@ -61,7 +61,7 @@ const allWallets: WalletFeature[] = [
     backupMethod: "Shamir / 24-word seed",
     swapFeature: "Yes (built-in)",
     bestFor: "Open-source security",
-    affiliateUrl: "https://cryptodegen.com/go/trezor",
+    affiliateUrl: "https://degen0x.com/go/trezor",
   },
   {
     name: "MetaMask",
@@ -80,7 +80,7 @@ const allWallets: WalletFeature[] = [
     backupMethod: "12-word seed phrase",
     swapFeature: "Yes (0.875% fee)",
     bestFor: "Ethereum DeFi & dApps",
-    affiliateUrl: "https://cryptodegen.com/go/metamask",
+    affiliateUrl: "https://degen0x.com/go/metamask",
   },
   {
     name: "Phantom",
@@ -99,7 +99,7 @@ const allWallets: WalletFeature[] = [
     backupMethod: "12-word seed phrase",
     swapFeature: "Yes (0.85% fee)",
     bestFor: "Solana ecosystem",
-    affiliateUrl: "https://cryptodegen.com/go/phantom",
+    affiliateUrl: "https://degen0x.com/go/phantom",
   },
   {
     name: "Trust Wallet",
@@ -118,7 +118,7 @@ const allWallets: WalletFeature[] = [
     backupMethod: "12-word seed phrase",
     swapFeature: "Yes (DEX aggregator)",
     bestFor: "Multi-chain mobile",
-    affiliateUrl: "https://cryptodegen.com/go/trust-wallet",
+    affiliateUrl: "https://degen0x.com/go/trust-wallet",
   },
   {
     name: "Exodus",
@@ -137,7 +137,7 @@ const allWallets: WalletFeature[] = [
     backupMethod: "12-word seed phrase",
     swapFeature: "Yes (2-5% spread)",
     bestFor: "Beginners",
-    affiliateUrl: "https://cryptodegen.com/go/exodus",
+    affiliateUrl: "https://degen0x.com/go/exodus",
   },
   {
     name: "Coinbase Wallet",
@@ -156,7 +156,7 @@ const allWallets: WalletFeature[] = [
     backupMethod: "12-word / Cloud backup",
     swapFeature: "Yes (DEX aggregator)",
     bestFor: "Coinbase users",
-    affiliateUrl: "https://cryptodegen.com/go/coinbase-wallet",
+    affiliateUrl: "https://degen0x.com/go/coinbase-wallet",
   },
   {
     name: "Rabby",
@@ -175,7 +175,7 @@ const allWallets: WalletFeature[] = [
     backupMethod: "12-word seed phrase",
     swapFeature: "Yes (DEX aggregator)",
     bestFor: "DeFi security",
-    affiliateUrl: "https://cryptodegen.com/go/rabby",
+    affiliateUrl: "https://degen0x.com/go/rabby",
   },
   {
     name: "Safe (Gnosis)",
@@ -194,7 +194,7 @@ const allWallets: WalletFeature[] = [
     backupMethod: "Smart contract based",
     swapFeature: "Via Safe Apps",
     bestFor: "DAOs & teams",
-    affiliateUrl: "https://cryptodegen.com/go/safe",
+    affiliateUrl: "https://degen0x.com/go/safe",
   },
 ];
 
@@ -242,7 +242,7 @@ export default function WalletComparisonToolPage() {
       />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">Interactive Wallet Comparison Tool</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Interactive Wallet Comparison Tool</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
           Select 2-4 wallets to compare their features side by side. Choose from hardware wallets, software
           wallets, and smart contract wallets.
@@ -251,7 +251,7 @@ export default function WalletComparisonToolPage() {
 
       {/* Wallet Selector */}
       <section className="mb-8">
-        <h2 className="text-sm font-semibold text-white mb-3 uppercase tracking-wide">
+        <h2 className="text-sm font-semibold text-[var(--color-text)] mb-3 uppercase tracking-wide">
           Select Wallets to Compare (2-4)
         </h2>
         <div className="flex flex-wrap gap-2">
@@ -263,8 +263,8 @@ export default function WalletComparisonToolPage() {
                 onClick={() => toggleWallet(wallet.slug)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isSelected
-                    ? "bg-[var(--color-primary)] text-white"
-                    : "border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text-secondary)] hover:text-white hover:border-[var(--color-primary)]"
+                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
+                    : "border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)] hover:border-[var(--color-primary)]"
                 }`}
               >
                 {wallet.name}
@@ -285,13 +285,13 @@ export default function WalletComparisonToolPage() {
           <table className="w-full">
             <thead>
               <tr className="bg-[var(--color-bg-card)]">
-                <th className="px-4 py-3 text-left text-sm font-semibold text-white min-w-[160px]">
+                <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)] min-w-[160px]">
                   Feature
                 </th>
                 {selectedWallets.map((wallet) => (
                   <th
                     key={wallet.slug}
-                    className="px-4 py-3 text-center text-sm font-semibold text-white min-w-[160px]"
+                    className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)] min-w-[160px]"
                   >
                     {wallet.name}
                   </th>
@@ -356,28 +356,28 @@ export default function WalletComparisonToolPage() {
 
       {/* Quick Recommendation */}
       <section>
-        <h2 className="text-2xl font-bold text-white mb-4">Quick Recommendations</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Quick Recommendations</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Best for Security</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Best for Security</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
-              <strong className="text-white">Ledger Nano X</strong> for individuals with its Secure Element chip.
-              <strong className="text-white"> Safe</strong> for organizations with multi-sig protection.
+              <strong className="text-[var(--color-text)]">Ledger Nano X</strong> for individuals with its Secure Element chip.
+              <strong className="text-[var(--color-text)]"> Safe</strong> for organizations with multi-sig protection.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Best for DeFi</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Best for DeFi</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
-              <strong className="text-white">MetaMask</strong> for broadest EVM compatibility.
-              <strong className="text-white"> Rabby</strong> for transaction simulation and safety.
-              <strong className="text-white"> Phantom</strong> for Solana DeFi.
+              <strong className="text-[var(--color-text)]">MetaMask</strong> for broadest EVM compatibility.
+              <strong className="text-[var(--color-text)]"> Rabby</strong> for transaction simulation and safety.
+              <strong className="text-[var(--color-text)]"> Phantom</strong> for Solana DeFi.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5">
-            <h3 className="text-white font-semibold mb-2">Best for Beginners</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Best for Beginners</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
-              <strong className="text-white">Exodus</strong> for the most intuitive interface.
-              <strong className="text-white"> Coinbase Wallet</strong> for easy Coinbase integration.
+              <strong className="text-[var(--color-text)]">Exodus</strong> for the most intuitive interface.
+              <strong className="text-[var(--color-text)]"> Coinbase Wallet</strong> for easy Coinbase integration.
             </p>
           </div>
         </div>

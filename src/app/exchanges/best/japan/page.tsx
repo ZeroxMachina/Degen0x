@@ -71,7 +71,7 @@ export default function JapanExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in Japan ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -88,7 +88,7 @@ export default function JapanExchangesPage() {
           but also limit the number of available tokens. Here are the best crypto exchanges for
           Japanese residents.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Japanese Regulatory Framework</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Japanese Regulatory Framework</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Japan&apos;s crypto regulatory framework is built on the Payment Services Act and the
           Financial Instruments and Exchange Act. The JFSA licenses all crypto exchanges and
@@ -96,7 +96,7 @@ export default function JapanExchangesPage() {
           self-regulatory organization. Key requirements include cold wallet custody for 95%+
           of assets, segregation of customer funds, annual audits, and minimum capital reserves.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Tax Considerations for Japanese Traders</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Tax Considerations for Japanese Traders</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Crypto gains in Japan are classified as miscellaneous income and taxed at progressive
           rates that can reach 55% (including 10% local inhabitant tax). This steep rate applies
@@ -119,22 +119,22 @@ export default function JapanExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods for Japanese Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods for Japanese Users</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Bank Transfer (Furikomi)</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Bank Transfer (Furikomi)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Standard bank transfer. Low fees. Arrives same day during business hours.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Quick Deposit (Internet Banking)</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Quick Deposit (Internet Banking)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant deposits through linked online banking. Free on many exchanges. Very popular in Japan.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Convenience Store (Konbini)</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Convenience Store (Konbini)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Pay at 7-Eleven, Lawson, or FamilyMart. Small fee. Good for cash users without bank accounts.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Pay-easy</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Pay-easy</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">ATM-based payment system. Available at banks and post offices. Low fees, near-instant.</p>
           </div>
         </div>

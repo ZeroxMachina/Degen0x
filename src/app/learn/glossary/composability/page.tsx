@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function ComposabilityGlossaryPage() {
   return (
     <LearnPageLayout title="What Is Composability?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="Composability is the ability for different protocols and smart contracts to interact with and build upon each other seamlessly. Often described as 'money legos,' composable DeFi protocols can be combined in novel ways — for example, using a lending protocol's receipt token as collateral in another protocol. This property is a key driver of innovation in decentralized finance."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "examples", title: "Examples", level: 2 },{ id: "implications", title: "Implications", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "examples", title: "Examples", level: 2 },
+        { id: "implications", title: "implications", level: 2 },
+        { id: "implications", title: "Implications", level: 2 }
+      ]}
       faqs={[
         { question: "Why is composability important?", answer: "Composability enables permissionless innovation — anyone can build new financial products by combining existing protocols without needing approval. This creates an accelerating cycle of innovation as each new protocol adds building blocks that others can use, similar to how software libraries enable rapid development." },
         { question: "Are there risks to composability?", answer: "Yes, composability creates dependency chains. If one protocol in a composed strategy has a vulnerability, it can cascade to affect all protocols built on top of it. This systemic risk is unique to DeFi and means that evaluating a protocol's security requires understanding the security of all its dependencies." },

@@ -16,11 +16,16 @@ export default function BestBillPaymentPage() {
       readTime="8 min"
       intro="Paying bills with cryptocurrency has evolved from a novelty into a practical option for crypto holders who want to use their digital assets for everyday expenses. From utility bills to rent payments, several platforms now facilitate crypto bill pay with minimal friction and reasonable fees."
       toc={[
-        { id: "platforms", title: "Top Bill Pay Platforms", level: 2 },
-        { id: "utilities", title: "Paying Utility Bills", level: 2 },
-        { id: "rent", title: "Paying Rent with Crypto", level: 2 },
-        { id: "recurring", title: "Managing Recurring Payments", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "top-bill-pay-platforms", title: "Top Bill Pay Platforms", level: 2 },
+        { id: "utilities", title: "utilities", level: 2 },
+        { id: "paying-utility-bills", title: "Paying Utility Bills", level: 2 },
+        { id: "rent", title: "rent", level: 2 },
+        { id: "paying-rent-with-crypto", title: "Paying Rent with Crypto", level: 2 },
+        { id: "recurring", title: "recurring", level: 2 },
+        { id: "managing-recurring-payments", title: "Managing Recurring Payments", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "Can I pay my electric bill with Bitcoin?", answer: "Yes. BitPay Bill Pay supports utility payments including electric, gas, and water bills. You can also use a crypto debit card to pay any biller that accepts card payments." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Gemini vs Crypto.com (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Gemini vs Crypto.com (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Gemini vs Crypto.com side by side. Fees, security, features, supported coins, and which exchange is better for your trading needs.",
 };
 
@@ -16,12 +16,18 @@ export default function GeminiVsCryptoCom() {
       readTime="9 min read"
       intro="Gemini and Crypto.com represent two different approaches to crypto exchange services. Gemini, founded by the Winklevoss twins, emphasizes security and regulatory compliance with a curated selection of assets. Crypto.com offers a broader ecosystem including a Visa card, DeFi wallet, and NFT marketplace. This comparison helps you choose the right platform for your needs."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "security", title: "Security Features", level: 2 },
-        { id: "features", title: "Features and Tools", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-features", title: "Security Features", level: 2 },
+        { id: "features", title: "features", level: 2 },
+        { id: "features-and-tools", title: "Features and Tools", level: 2 },
+        { id: "supported-assets", title: "supported-assets", level: 2 },
         { id: "supported-assets", title: "Supported Assets", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which has lower fees, Gemini or Crypto.com?", answer: "Crypto.com generally offers lower trading fees, especially with CRO staking discounts. Gemini's ActiveTrader platform has competitive fees starting at 0.2%, but its standard platform charges higher convenience fees." },

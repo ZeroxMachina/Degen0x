@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Venus vs BENQI (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Venus vs BENQI (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare Venus Protocol on BNB Chain and BENQI on Avalanche. Analysis of rates, features, TVL, and which alternative chain lending protocol is better for you.",
 };
@@ -17,10 +17,14 @@ export default function VenusVsBenqiPage() {
       readTime="8 min read"
       intro="Venus and BENQI are the leading lending protocols on BNB Chain and Avalanche respectively. Both offer lower transaction costs compared to Ethereum-based protocols, making them attractive for smaller positions and frequent transactions. Venus is the dominant lending protocol on BNB Chain with additional stablecoin minting capabilities, while BENQI serves the Avalanche ecosystem with lending and liquid staking features."
       toc={[
-        { id: "overview", title: "Protocol Overview", level: 2 },
-        { id: "rates-assets", title: "Rates and Assets", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "protocol-overview", title: "Protocol Overview", level: 2 },
+        { id: "rates-assets", title: "rates-assets", level: 2 },
+        { id: "rates-and-assets", title: "Rates and Assets", level: 2 },
+        { id: "unique-features", title: "unique-features", level: 2 },
         { id: "unique-features", title: "Unique Features", level: 2 },
-        { id: "risk-comparison", title: "Risk and Security", level: 2 },
+        { id: "risk-comparison", title: "risk-comparison", level: 2 },
+        { id: "risk-and-security", title: "Risk and Security", level: 2 }
       ]}
       faqs={[
         { question: "What chain is Venus on?", answer: "Venus Protocol operates on BNB Chain (formerly Binance Smart Chain). It is the largest lending protocol on BNB Chain with billions in TVL. Venus benefits from BNB Chain's low gas fees and fast transaction times." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is the Flippening? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is the Flippening? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what the Flippening is, why it matters to the Ethereum and Bitcoin communities, and what metrics are tracked.",
 };
@@ -17,11 +17,16 @@ export default function FlippeningPage() {
       readTime="4 min"
       intro="The Flippening refers to a hypothetical event where Ethereum surpasses Bitcoin in total market capitalization, becoming the most valuable cryptocurrency. The term emerged during the 2017 bull run when Ethereum's rapid growth led some to believe it would overtake Bitcoin. While it has not happened yet, the concept represents a broader debate about which blockchain will dominate the future of crypto."
       toc={[
-        { id: "definition", title: "What Is the Flippening?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-the-flippening", title: "What Is the Flippening?", level: 2 },
+        { id: "metrics-tracked", title: "metrics-tracked", level: 2 },
         { id: "metrics-tracked", title: "Metrics Tracked", level: 2 },
-        { id: "arguments-for", title: "Arguments For the Flippening", level: 2 },
+        { id: "arguments-for", title: "arguments-for", level: 2 },
+        { id: "arguments-for-the-flippening", title: "Arguments For the Flippening", level: 2 },
+        { id: "arguments-against", title: "arguments-against", level: 2 },
         { id: "arguments-against", title: "Arguments Against", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

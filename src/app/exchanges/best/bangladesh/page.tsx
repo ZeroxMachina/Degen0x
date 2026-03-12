@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Bangladesh (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Bangladesh (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchanges accessible in Bangladesh. Find BDT-friendly platforms with P2P support and secure trading options for Bangladeshi users.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesBangladesh() {
       readTime="7 min read"
       intro="Bangladesh has a growing but restricted crypto market. Bangladesh Bank has issued warnings about cryptocurrency, though enforcement has varied. Despite restrictions, many Bangladeshi residents access crypto through international P2P platforms. This guide covers the available options and important considerations for Bangladeshi crypto users."
       toc={[
-        { id: "top-exchanges", title: "Available Exchanges", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "BDT Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "available-exchanges", title: "Available Exchanges", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "bdt-payment-methods", title: "BDT Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing a Platform", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Bangladesh?", answer: "Bangladesh Bank has warned against cryptocurrency transactions, and formal exchange operations are not permitted. However, individual use of international platforms persists. Traders should be aware of the legal risks." },

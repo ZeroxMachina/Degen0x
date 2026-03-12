@@ -1,14 +1,14 @@
 import { CategoryInfo } from "./types";
 
-export const SITE_NAME = "CryptoDegen";
-export const SITE_URL = "https://cryptodegen.com";
-export const SITE_DESCRIPTION = "CryptoDegen is the leading crypto comparison and review platform. Compare exchanges, wallets, DeFi protocols, and more. Expert reviews, tools, and guides to help you navigate the crypto world.";
+export const SITE_NAME = "degen0x";
+export const SITE_URL = "https://degen0x.com";
+export const SITE_DESCRIPTION = "degen0x is the leading crypto comparison and review platform. Compare exchanges, wallets, DeFi protocols, and more. Expert reviews, tools, and guides to help you navigate the crypto world.";
 export const CURRENT_YEAR = new Date().getFullYear();
 export const CURRENT_MONTH = new Date().toLocaleString('default', { month: 'long' });
 
 export const CATEGORIES: CategoryInfo[] = [
   {
-    name: "Crypto Exchanges",
+    name: "Exchanges",
     slug: "exchanges",
     description: "Compare and find the best crypto exchanges. Expert reviews, fee comparisons, and security analysis.",
     icon: "⇄",
@@ -22,7 +22,7 @@ export const CATEGORIES: CategoryInfo[] = [
     ],
   },
   {
-    name: "Crypto Wallets",
+    name: "Wallets",
     slug: "wallets",
     description: "Find the perfect crypto wallet. Hardware wallets, software wallets, and mobile wallets compared.",
     icon: "🔐",
@@ -36,7 +36,7 @@ export const CATEGORIES: CategoryInfo[] = [
     ],
   },
   {
-    name: "Crypto Investing",
+    name: "Investing",
     slug: "investing",
     description: "Crypto investment guides, portfolio strategies, and token analysis. Build your crypto portfolio with confidence.",
     icon: "📈",
@@ -64,7 +64,7 @@ export const CATEGORIES: CategoryInfo[] = [
     ],
   },
   {
-    name: "Crypto Loans",
+    name: "Loans",
     slug: "crypto-loans",
     description: "Compare crypto-backed loan platforms. Borrow against your crypto without selling.",
     icon: "💰",
@@ -78,7 +78,7 @@ export const CATEGORIES: CategoryInfo[] = [
     ],
   },
   {
-    name: "Crypto Taxes",
+    name: "Taxes",
     slug: "taxes",
     description: "Navigate crypto taxes with confidence. Best tax software, guides, and calculators.",
     icon: "📋",
@@ -92,7 +92,7 @@ export const CATEGORIES: CategoryInfo[] = [
     ],
   },
   {
-    name: "Crypto Insurance",
+    name: "Insurance",
     slug: "insurance",
     description: "Protect your crypto assets. Smart contract cover, exchange insurance, and DeFi protection.",
     icon: "🛡️",
@@ -131,7 +131,7 @@ export const CATEGORIES: CategoryInfo[] = [
     ],
   },
   {
-    name: "Crypto Cards",
+    name: "Cards",
     slug: "crypto-cards",
     description: "Compare the best crypto credit cards, debit cards, and rewards cards. Earn Bitcoin, ETH, and cashback on every purchase.",
     icon: "💎",
@@ -159,7 +159,7 @@ export const CATEGORIES: CategoryInfo[] = [
     ],
   },
   {
-    name: "Crypto Spending",
+    name: "Spending",
     slug: "spending",
     description: "Spend your crypto in the real world. Debit cards, payment apps, and merchant guides.",
     icon: "💳",

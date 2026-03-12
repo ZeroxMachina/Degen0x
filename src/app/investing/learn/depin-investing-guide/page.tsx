@@ -16,10 +16,14 @@ export default function DePINInvestingGuidePage() {
       readTime="12 min"
       intro="Decentralized Physical Infrastructure Networks (DePIN) represent one of the most compelling use cases for blockchain technology: using token incentives to build real-world infrastructure. From wireless networks to computing power to mapping, DePIN projects are creating physical infrastructure owned and operated by their users. This guide covers how to evaluate and invest in the DePIN sector."
       toc={[
+        { id: "what-is-depin", title: "what-is-depin", level: 2 },
         { id: "what-is-depin", title: "What Is DePIN?", level: 2 },
-        { id: "categories", title: "DePIN Categories", level: 2 },
-        { id: "investment-thesis", title: "The DePIN Investment Thesis", level: 2 },
-        { id: "risks", title: "Risks and Challenges", level: 2 },
+        { id: "categories", title: "categories", level: 2 },
+        { id: "depin-categories", title: "DePIN Categories", level: 2 },
+        { id: "investment-thesis", title: "investment-thesis", level: 2 },
+        { id: "the-depin-investment-thesis", title: "The DePIN Investment Thesis", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 }
       ]}
       faqs={[
         { question: "What are the top DePIN projects?", answer: "Leading DePIN projects include Helium (wireless networks), Filecoin (storage), Render Network (GPU computing), Hivemapper (mapping), and Akash Network (cloud computing). Each targets a different type of physical infrastructure and has different adoption metrics and revenue models." },

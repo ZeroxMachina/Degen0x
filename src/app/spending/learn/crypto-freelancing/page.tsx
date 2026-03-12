@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Getting Paid in Crypto as a Freelancer (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Getting Paid in Crypto as a Freelancer (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to freelancing with crypto payments. How to invoice in crypto, manage volatility, handle taxes, and find crypto-paying clients as a freelancer.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoFreelancingPage() {
     <LearnPageLayout title="Getting Paid in Crypto as a Freelancer" categoryName="Crypto Spending" categorySlug="spending" readTime="8 min read"
       intro="Freelancers working with crypto-native companies, DAOs, and international clients are increasingly receiving payment in cryptocurrency. Crypto payments offer instant global settlement, lower transaction fees than international wire transfers, and access to clients worldwide without banking complications. However, freelancing with crypto introduces unique challenges around invoicing, volatility management, tax reporting, and financial planning that require specific strategies."
       toc={[
+        { id: "getting-started", title: "getting-started", level: 2 },
         { id: "getting-started", title: "Getting Started", level: 2 },
-        { id: "invoicing", title: "Invoicing and Payment", level: 2 },
-        { id: "volatility", title: "Managing Volatility", level: 2 },
-        { id: "taxes", title: "Tax and Financial Planning", level: 2 },
+        { id: "invoicing", title: "invoicing", level: 2 },
+        { id: "invoicing-and-payment", title: "Invoicing and Payment", level: 2 },
+        { id: "volatility", title: "volatility", level: 2 },
+        { id: "managing-volatility", title: "Managing Volatility", level: 2 },
+        { id: "taxes", title: "taxes", level: 2 },
+        { id: "tax-and-financial-planning", title: "Tax and Financial Planning", level: 2 }
       ]}
       faqs={[
         { question: "How do I find clients that pay in crypto?", answer: "Web3-native companies and DAOs commonly pay contributors in crypto. Platforms like Gitcoin, Dework, Layer3, and Superteam connect freelancers with crypto-paying opportunities. Remote job boards like CryptoJobsList, Web3 Career, and Remote3 list crypto-compensated positions. Contributing to DAOs through bounties and grants is another pathway. Networking in crypto Discord communities and Twitter also leads to opportunities." },

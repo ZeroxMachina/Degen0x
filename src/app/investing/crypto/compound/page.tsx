@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Compound (COMP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Compound (COMP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Compound (COMP), the DeFi lending protocol that pioneered algorithmic interest rates. Discover COMP tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function CompoundPage() {
       readTime="8 min read"
       intro="Compound (COMP) is the governance token of the Compound protocol, a pioneering decentralized lending platform on Ethereum. Compound introduced the concept of algorithmic, autonomous interest rate markets, allowing users to supply and borrow crypto assets without intermediaries. COMP launched in 2020 and kickstarted the DeFi summer by introducing governance token distribution to users."
       toc={[
-        { id: "what-is", title: "What Is Compound?", level: 2 },
-        { id: "how-it-works", title: "How Does Compound Work?", level: 2 },
-        { id: "tokenomics", title: "COMP Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy COMP", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-compound", title: "What Is Compound?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-compound-work", title: "How Does Compound Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "comp-tokenomics", title: "COMP Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-comp", title: "How to Buy COMP", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Run a Blockchain Node (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Run a Blockchain Node (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to run a blockchain node, the hardware requirements, different node types, and why running your own node contributes to network decentralization.",
 };
@@ -17,10 +17,14 @@ export default function NodeRunningGuidePage() {
       readTime="10 min read"
       intro="Running a blockchain node means operating software that maintains a copy of the blockchain, validates transactions, and participates in the network's peer-to-peer communication. Node operators are the backbone of decentralized networks, ensuring that no single entity controls the truth of the blockchain. Whether you want to contribute to decentralization, verify your own transactions, or prepare to become a validator, this guide covers everything you need to know about running a node."
       toc={[
+        { id: "why-run-a-node", title: "why-run-a-node", level: 2 },
         { id: "why-run-a-node", title: "Why Run a Node?", level: 2 },
-        { id: "node-types", title: "Types of Nodes", level: 2 },
+        { id: "node-types", title: "node-types", level: 2 },
+        { id: "types-of-nodes", title: "Types of Nodes", level: 2 },
+        { id: "hardware-requirements", title: "hardware-requirements", level: 2 },
         { id: "hardware-requirements", title: "Hardware Requirements", level: 2 },
-        { id: "setup-guide", title: "Setting Up Your Node", level: 2 },
+        { id: "setup-guide", title: "setup-guide", level: 2 },
+        { id: "setting-up-your-node", title: "Setting Up Your Node", level: 2 }
       ]}
       faqs={[
         {

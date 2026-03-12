@@ -34,7 +34,7 @@ export default function BestCryptoETFsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto ETFs for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -50,7 +50,7 @@ export default function BestCryptoETFsPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Crypto ETFs for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Crypto ETFs for {CURRENT_YEAR}</h2>
         <div className="space-y-4">
           {CRYPTO_ETFS.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -59,7 +59,7 @@ export default function BestCryptoETFsPage() {
       </section>
 
       <section id="what-are-crypto-etfs" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Are Crypto ETFs?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Are Crypto ETFs?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Cryptocurrency Exchange-Traded Funds are regulated investment vehicles that track the
           price of cryptocurrencies like Bitcoin or Ethereum. Spot crypto ETFs hold the actual
@@ -77,7 +77,7 @@ export default function BestCryptoETFsPage() {
       </section>
 
       <section id="bitcoin-vs-ethereum" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Bitcoin ETFs vs Ethereum ETFs</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Bitcoin ETFs vs Ethereum ETFs</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Bitcoin ETFs like IBIT and FBTC offer exposure to Bitcoin, the largest cryptocurrency
           by market cap. Bitcoin is primarily valued as a digital store of value and inflation
@@ -94,7 +94,7 @@ export default function BestCryptoETFsPage() {
       </section>
 
       <section id="how-to-buy" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Crypto ETFs</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Crypto ETFs</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Buying crypto ETFs is as simple as purchasing any stock or ETF through your brokerage
           account. Open or log into your account at Fidelity, Schwab, Vanguard, or any other
@@ -111,7 +111,7 @@ export default function BestCryptoETFsPage() {
       </section>
 
       <section id="etf-vs-direct" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">ETFs vs Buying Crypto Directly</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">ETFs vs Buying Crypto Directly</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Crypto ETFs offer convenience, regulation, and tax-advantaged account access but come
           with annual expense ratios (typically 0.20-0.25%) and no ability to use your crypto

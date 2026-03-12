@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Kuwait (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Kuwait (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges accessible in Kuwait. Find KWD-friendly platforms with Gulf region support, strong security, and competitive fees.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesKuwait() {
       readTime="7 min read"
       intro="Kuwait has a cautious regulatory approach to cryptocurrency, with the Central Bank of Kuwait (CBK) and the Capital Markets Authority (CMA) overseeing financial services. Despite regulatory restrictions on some activities, many Kuwaiti residents actively trade crypto through international platforms. This guide helps Kuwaiti traders navigate the available options and understand the local landscape."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Kuwait", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "KWD Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-kuwait", title: "Top Exchanges for Kuwait", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "kwd-payment-methods", title: "KWD Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Kuwait?", answer: "Kuwait's regulatory stance is cautious. The CBK has restricted banks and financial institutions from dealing in crypto, but individual trading on international platforms is not explicitly banned. The CMA has issued warnings about crypto risks." },

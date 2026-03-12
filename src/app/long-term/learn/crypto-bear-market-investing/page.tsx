@@ -16,10 +16,14 @@ export default function CryptoBearMarketInvestingPage() {
       readTime="10 min"
       intro="Bear markets present both challenges and opportunities for cryptocurrency investors, with disciplined accumulation strategies during downturns historically producing the strongest long-term returns for those with conviction and patience."
       toc={[
-        { id: "section-1", title: "Bear Market Characteristics", level: 2 },
-        { id: "section-2", title: "Accumulation Strategies", level: 2 },
-        { id: "section-3", title: "Psychological Challenges", level: 2 },
-        { id: "section-4", title: "Recovery Positioning", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "bear-market-characteristics", title: "Bear Market Characteristics", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "accumulation-strategies", title: "Accumulation Strategies", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "psychological-challenges", title: "Psychological Challenges", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "recovery-positioning", title: "Recovery Positioning", level: 2 }
       ]}
       faqs={[
         { question: "How long do crypto bear markets last?", answer: "Historical crypto bear markets have lasted approximately one to two years from peak to trough, with recovery to new highs taking an additional one to two years. The 2018 bear market lasted about a year, and the 2022 downturn followed a similar timeframe. However, each cycle has unique characteristics and past durations do not guarantee future patterns." },

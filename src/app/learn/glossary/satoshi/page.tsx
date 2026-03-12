@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Satoshi? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Satoshi? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a satoshi is, how Bitcoin denominations work, and why the smallest unit of Bitcoin matters for adoption.",
 };
@@ -17,11 +17,16 @@ export default function SatoshiPage() {
       readTime="4 min"
       intro="A satoshi (sat) is the smallest unit of Bitcoin, equal to 0.00000001 BTC (one hundred-millionth of a Bitcoin). Named after Bitcoin's pseudonymous creator, Satoshi Nakamoto, satoshis make Bitcoin practical for small transactions even as the price of a whole Bitcoin rises. Pricing things in sats rather than BTC helps people understand that you do not need to buy a whole Bitcoin to participate."
       toc={[
-        { id: "definition", title: "What Is a Satoshi?", level: 2 },
-        { id: "denominations", title: "Bitcoin Denominations", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-satoshi", title: "What Is a Satoshi?", level: 2 },
+        { id: "denominations", title: "denominations", level: 2 },
+        { id: "bitcoin-denominations", title: "Bitcoin Denominations", level: 2 },
+        { id: "stacking-sats", title: "stacking-sats", level: 2 },
         { id: "stacking-sats", title: "Stacking Sats", level: 2 },
-        { id: "sat-standard", title: "The Sat Standard", level: 2 },
-        { id: "why-it-matters", title: "Why Satoshis Matter", level: 2 },
+        { id: "sat-standard", title: "sat-standard", level: 2 },
+        { id: "the-sat-standard", title: "The Sat Standard", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-satoshis-matter", title: "Why Satoshis Matter", level: 2 }
       ]}
       faqs={[
         {

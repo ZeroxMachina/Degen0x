@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Tether (USDT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Tether (USDT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Tether (USDT), the world's largest stablecoin by market cap. Discover USDT reserves, deployment, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function UsdtPage() {
       readTime="8 min read"
       intro="Tether (USDT) is the world's largest stablecoin by market capitalization, with over $100 billion in circulation. Issued by Tether Limited, USDT is pegged to the US dollar and backed by a reserve of cash, cash equivalents, US Treasuries, and other assets. USDT is the most traded cryptocurrency by volume and serves as the primary dollar-denominated asset across global crypto markets."
       toc={[
-        { id: "what-is", title: "What Is Tether?", level: 2 },
-        { id: "how-it-works", title: "How Does Tether Work?", level: 2 },
-        { id: "tokenomics", title: "USDT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy USDT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-tether", title: "What Is Tether?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-tether-work", title: "How Does Tether Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "usdt-tokenomics", title: "USDT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-usdt", title: "How to Buy USDT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Tether?", answer: "USDT (Tether) is the largest stablecoin by market cap, pegged to the US dollar and backed by reserves including US Treasuries, cash, and other assets. It is the most traded crypto asset by daily volume." },

@@ -23,7 +23,7 @@ const products: Product[] = [
     cons: ["KYC membership required", "Higher premiums for riskier protocols", "Community vote for claims"],
     fees: "2-7% annually",
     bestFor: "Comprehensive DeFi protocol protection",
-    affiliateUrl: "https://cryptodegen.com/go/nexus-mutual",
+    affiliateUrl: "https://degen0x.com/go/nexus-mutual",
     category: "insurance",
     featured: true,
   },
@@ -37,7 +37,7 @@ const products: Product[] = [
     cons: ["Smaller coverage pool", "Less proven claim history", "Fewer covered protocols"],
     fees: "1.5-5% annually",
     bestFor: "Multi-chain DeFi portfolios",
-    affiliateUrl: "https://cryptodegen.com/go/insurace",
+    affiliateUrl: "https://degen0x.com/go/insurace",
     category: "insurance",
   },
   {
@@ -50,7 +50,7 @@ const products: Product[] = [
     cons: ["Limited protocol selection", "Parametric may not cover full loss", "Newer with less track record"],
     fees: "2-6% annually",
     bestFor: "Hassle-free parametric protocol protection",
-    affiliateUrl: "https://cryptodegen.com/go/neptune-mutual",
+    affiliateUrl: "https://degen0x.com/go/neptune-mutual",
     category: "insurance",
   },
 ];
@@ -87,7 +87,7 @@ export default function ProtocolCoverPage() {
       />
       <AffiliateDisclosure />
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Protocol Cover Insurance of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Protocol Cover Insurance of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">
           DeFi protocols can fail in many ways beyond simple code bugs. Protocol cover provides the broadest protection against losses from governance attacks, oracle manipulation, economic design flaws, and smart contract exploits.
         </p>
@@ -104,22 +104,22 @@ export default function ProtocolCoverPage() {
         ))}
       </div>
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Types of Protocol Risks Covered</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Types of Protocol Risks Covered</h2>
         <div className="grid md:grid-cols-2 gap-6 text-[var(--color-text-secondary)]">
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Governance Attacks</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Governance Attacks</h3>
             <p>Malicious governance proposals that alter protocol parameters to drain funds or redirect assets. Protocol cover protects against both hostile governance takeovers and compromised admin keys.</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Oracle Manipulation</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Oracle Manipulation</h3>
             <p>Price oracle manipulation can enable attackers to borrow against artificially inflated collateral or trigger unfair liquidations. Protocol cover typically includes oracle failure as a covered event.</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Economic Design Flaws</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Economic Design Flaws</h3>
             <p>Complex DeFi protocols can have economic vulnerabilities that allow sophisticated attackers to extract value through flash loans or other financial engineering without any code bug being present.</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Smart Contract Bugs</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Smart Contract Bugs</h3>
             <p>The most straightforward category: code bugs that allow attackers to drain funds. Protocol cover includes all forms of smart contract exploits including reentrancy, integer overflow, and access control issues.</p>
           </div>
         </div>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Kava (KAVA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Kava (KAVA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Kava (KAVA), the DeFi blockchain combining Cosmos and Ethereum ecosystems. Discover how it works, tokenomics, use cases, and how to buy KAVA.",
 };
@@ -17,12 +17,18 @@ export default function KavaPage() {
       readTime="7 min read"
       intro="Kava is a Layer 1 blockchain that combines the speed and interoperability of the Cosmos SDK with the developer tooling of Ethereum's EVM. Designed as a DeFi hub, Kava provides a co-chain architecture where Cosmos and EVM environments run side by side, enabling developers from both ecosystems to build lending, borrowing, and stablecoin applications."
       toc={[
-        { id: "what-is", title: "What Is Kava?", level: 2 },
-        { id: "how-it-works", title: "How Does Kava Work?", level: 2 },
-        { id: "tokenomics", title: "KAVA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy KAVA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-kava", title: "What Is Kava?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-kava-work", title: "How Does Kava Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "kava-tokenomics", title: "KAVA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-kava", title: "How to Buy KAVA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

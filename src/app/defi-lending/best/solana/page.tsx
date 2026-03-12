@@ -21,7 +21,7 @@ const products: Product[] = [
     cons: ["Solana-only ecosystem", "Newer than Ethereum protocols", "Solana network outage risk"],
     fees: "Variable supply/borrow spread",
     bestFor: "Solana DeFi power users",
-    affiliateUrl: "https://cryptodegen.com/go/kamino",
+    affiliateUrl: "https://degen0x.com/go/kamino",
     category: "defi-lending",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     cons: ["Token not yet launched", "Competitive Solana lending market", "Governance still centralizing"],
     fees: "Variable borrow rates",
     bestFor: "Solana lending diversification",
-    affiliateUrl: "https://cryptodegen.com/go/marginfi",
+    affiliateUrl: "https://degen0x.com/go/marginfi",
     category: "defi-lending",
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     cons: ["Past governance controversy", "Competition from newer protocols", "Smaller TVL than Kamino"],
     fees: "Variable supply/borrow spread",
     bestFor: "Solana lending beginners",
-    affiliateUrl: "https://cryptodegen.com/go/solend",
+    affiliateUrl: "https://degen0x.com/go/solend",
     category: "defi-lending",
   },
 ];
@@ -62,14 +62,14 @@ export default function SolanaPage() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Solana", href: "/defi-lending/best/solana" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-4xl font-bold text-white mb-4">Best Solana DeFi Lending Protocols ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Solana DeFi Lending Protocols ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Solana has emerged as the second-largest DeFi ecosystem by activity, offering lightning-fast transactions at near-zero cost. The Solana lending landscape has matured significantly, with several protocols now managing billions in total value locked. For users who want to earn yield on SOL and SPL tokens without the gas costs of Ethereum, these Solana-native protocols offer compelling alternatives.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Kamino Finance</strong> leads Solana DeFi lending with its integrated lending and liquidity platform. <strong className="text-white">Marginfi</strong> offers the widest asset selection, and <strong className="text-white">Solend</strong> provides a straightforward experience for Solana lending beginners.
+          <strong className="text-[var(--color-text)]">Kamino Finance</strong> leads Solana DeFi lending with its integrated lending and liquidity platform. <strong className="text-[var(--color-text)]">Marginfi</strong> offers the widest asset selection, and <strong className="text-[var(--color-text)]">Solend</strong> provides a straightforward experience for Solana lending beginners.
         </p>
       </div>
       <div className="space-y-4 mb-12">

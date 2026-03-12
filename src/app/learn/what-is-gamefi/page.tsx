@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is GameFi? Play-to-Earn Gaming Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is GameFi? Play-to-Earn Gaming Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what GameFi is, how blockchain gaming and play-to-earn economies work, key projects shaping the industry, and the future of gaming on the blockchain.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsGameFiPage() {
       readTime="9 min read"
       intro="GameFi combines gaming and decentralized finance, creating ecosystems where players can earn real economic value through gameplay. Unlike traditional games where in-game items and currencies are controlled by the developer, GameFi uses blockchain technology to give players true ownership of their digital assets through NFTs and tokens. This model transforms gaming from pure entertainment into an economic activity where time and skill invested can generate tangible financial returns."
       toc={[
-        { id: "what-is-gamefi", title: "Understanding GameFi", level: 2 },
-        { id: "play-to-earn", title: "Play-to-Earn Models", level: 2 },
-        { id: "major-projects", title: "Major GameFi Projects", level: 2 },
-        { id: "future-of-gamefi", title: "The Future of GameFi", level: 2 },
+        { id: "what-is-gamefi", title: "what-is-gamefi", level: 2 },
+        { id: "understanding-gamefi", title: "Understanding GameFi", level: 2 },
+        { id: "play-to-earn", title: "play-to-earn", level: 2 },
+        { id: "play-to-earn-models", title: "Play-to-Earn Models", level: 2 },
+        { id: "major-projects", title: "major-projects", level: 2 },
+        { id: "major-gamefi-projects", title: "Major GameFi Projects", level: 2 },
+        { id: "future-of-gamefi", title: "future-of-gamefi", level: 2 },
+        { id: "the-future-of-gamefi", title: "The Future of GameFi", level: 2 }
       ]}
       faqs={[
         {

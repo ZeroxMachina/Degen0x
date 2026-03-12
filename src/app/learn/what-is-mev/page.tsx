@@ -17,12 +17,18 @@ export default function WhatIsMevPage() {
       readTime="9 min"
       intro="Maximal Extractable Value (MEV) refers to the profit that block producers can capture by strategically ordering, including, or excluding transactions within a block. MEV is an invisible tax on DeFi users — every swap, liquidation, and arbitrage opportunity can be exploited by sophisticated actors who see pending transactions and profit from their knowledge of upcoming trades."
       toc={[
-        { id: "what-is-mev", title: "Understanding MEV", level: 2 },
+        { id: "what-is-mev", title: "what-is-mev", level: 2 },
+        { id: "understanding-mev", title: "Understanding MEV", level: 2 },
+        { id: "types-of-mev", title: "types-of-mev", level: 2 },
         { id: "types-of-mev", title: "Types of MEV", level: 2 },
-        { id: "supply-chain", title: "The MEV Supply Chain", level: 2 },
-        { id: "impact", title: "Impact on Users", level: 2 },
-        { id: "protection", title: "MEV Protection Strategies", level: 2 },
-        { id: "future", title: "The Future of MEV", level: 2 },
+        { id: "supply-chain", title: "supply-chain", level: 2 },
+        { id: "the-mev-supply-chain", title: "The MEV Supply Chain", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-users", title: "Impact on Users", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "mev-protection-strategies", title: "MEV Protection Strategies", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-mev", title: "The Future of MEV", level: 2 }
       ]}
       faqs={[
         { question: "How much MEV is extracted daily?", answer: "MEV extraction on Ethereum generates millions of dollars daily, with cumulative extraction since 2020 exceeding billions of dollars. The actual amount varies with market volatility and DeFi activity levels, as more trading creates more MEV opportunities." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Boba Network (BOBA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Boba Network (BOBA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Boba Network (BOBA), the multichain Layer 2 with hybrid compute capabilities. Discover how it works, tokenomics, use cases, and how to buy BOBA.",
 };
@@ -17,12 +17,18 @@ export default function BobaPage() {
       readTime="8 min read"
       intro="Boba Network is a multichain Layer 2 scaling solution that extends the capabilities of smart contracts through Hybrid Compute technology. Originally an Optimistic Rollup on Ethereum, Boba has expanded to multiple chains and introduced the ability for smart contracts to call external Web2 APIs and run off-chain computations, bridging the gap between on-chain logic and off-chain data."
       toc={[
-        { id: "what-is", title: "What Is Boba Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Boba Network Work?", level: 2 },
-        { id: "tokenomics", title: "BOBA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy BOBA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-boba-network", title: "What Is Boba Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-boba-network-work", title: "How Does Boba Network Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "boba-tokenomics", title: "BOBA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-boba", title: "How to Buy BOBA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

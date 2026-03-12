@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is NEAR Protocol (NEAR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is NEAR Protocol (NEAR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about NEAR Protocol (NEAR), the sharded blockchain focused on chain abstraction and AI. Discover how it works, tokenomics, use cases, and how to buy NEAR.",
 };
@@ -17,12 +17,18 @@ export default function NEARPage() {
       readTime="8 min read"
       intro="NEAR Protocol is a sharded proof-of-stake Layer 1 blockchain designed for usability and scalability. Co-founded by Illia Polosukhin, co-author of the Transformer paper that underpins modern AI, NEAR focuses on chain abstraction and AI integration to make Web3 accessible to mainstream users."
       toc={[
-        { id: "what-is", title: "What Is NEAR Protocol?", level: 2 },
-        { id: "how-it-works", title: "How Does NEAR Work?", level: 2 },
-        { id: "tokenomics", title: "NEAR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy NEAR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-near-protocol", title: "What Is NEAR Protocol?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-near-work", title: "How Does NEAR Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "near-tokenomics", title: "NEAR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-near", title: "How to Buy NEAR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

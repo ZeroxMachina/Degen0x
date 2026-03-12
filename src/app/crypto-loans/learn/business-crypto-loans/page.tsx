@@ -17,10 +17,14 @@ export default function BusinessCryptoLoansPage() {
       readTime="9 min"
       intro="Businesses holding crypto assets can leverage them for operational financing without selling their positions. From startups using Bitcoin treasury as collateral to DeFi-native companies borrowing through on-chain protocols, crypto-backed business lending offers unique advantages for companies with digital asset holdings. This guide covers the available options, requirements, and considerations for business crypto borrowing."
       toc={[
-        { id: "overview", title: "Business Crypto Lending Overview", level: 2 },
-        { id: "use-cases", title: "Business Use Cases", level: 2 },
-        { id: "platforms", title: "Business Lending Platforms", level: 2 },
-        { id: "considerations", title: "Corporate Considerations", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "business-crypto-lending-overview", title: "Business Crypto Lending Overview", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "business-use-cases", title: "Business Use Cases", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "business-lending-platforms", title: "Business Lending Platforms", level: 2 },
+        { id: "considerations", title: "considerations", level: 2 },
+        { id: "corporate-considerations", title: "Corporate Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Can my company borrow against its Bitcoin holdings?", answer: "Yes. Several platforms offer corporate crypto-backed loans. Requirements typically include business registration documents, KYC for authorized signers, and minimum collateral amounts that are higher than retail minimums. Both CeFi platforms and DeFi protocols can serve corporate borrowers." },

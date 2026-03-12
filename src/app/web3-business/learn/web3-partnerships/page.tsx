@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Building Partnerships in Web3 (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Building Partnerships in Web3 (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to building strategic partnerships in Web3. Protocol integrations, cross-chain collaborations, ecosystem alliances, and partnership frameworks.",
 };
 
@@ -12,10 +12,14 @@ export default function Web3PartnershipsPage() {
     <LearnPageLayout title="Building Partnerships in Web3" categoryName="Web3 Business" categorySlug="web3-business" readTime="8 min read"
       intro="Partnerships in Web3 are fundamentally different from traditional business partnerships. The composable, open-source nature of blockchain protocols means that integrations can happen permissionlessly, but strategic partnerships still provide significant advantages in growth, credibility, and ecosystem development. Understanding how to identify, structure, and maintain Web3 partnerships is essential for projects seeking to expand their reach and capabilities."
       toc={[
-        { id: "types", title: "Types of Web3 Partnerships", level: 2 },
-        { id: "identifying", title: "Identifying Partnership Opportunities", level: 2 },
-        { id: "structuring", title: "Structuring Deals", level: 2 },
-        { id: "maintaining", title: "Maintaining Partnerships", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-web3-partnerships", title: "Types of Web3 Partnerships", level: 2 },
+        { id: "identifying", title: "identifying", level: 2 },
+        { id: "identifying-partnership-opportunities", title: "Identifying Partnership Opportunities", level: 2 },
+        { id: "structuring", title: "structuring", level: 2 },
+        { id: "structuring-deals", title: "Structuring Deals", level: 2 },
+        { id: "maintaining", title: "maintaining", level: 2 },
+        { id: "maintaining-partnerships", title: "Maintaining Partnerships", level: 2 }
       ]}
       faqs={[
         { question: "How are Web3 partnerships different from Web2?", answer: "Web3 partnerships are often more open and collaborative because the technology is open-source and composable. Any protocol can integrate with another without permission. Strategic partnerships add value through joint marketing, shared resources, token swaps, co-development, and ecosystem alignment. The barrier to basic integration is lower, so partnerships must provide value beyond what permissionless composability already enables." },

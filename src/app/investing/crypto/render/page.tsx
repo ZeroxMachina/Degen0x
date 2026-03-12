@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Render (RNDR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Render (RNDR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Render (RNDR), the decentralized GPU computing network for rendering and AI. Discover how it works, tokenomics, use cases, and how to buy RENDER.",
 };
@@ -17,12 +17,18 @@ export default function RenderPage() {
       readTime="8 min read"
       intro="Render is a decentralized GPU computing network that connects artists, developers, and enterprises needing rendering and compute power with GPU owners worldwide. As AI drives unprecedented demand for GPU resources, Render provides a decentralized marketplace for distributed computing at a fraction of centralized cloud costs."
       toc={[
-        { id: "what-is", title: "What Is Render?", level: 2 },
-        { id: "how-it-works", title: "How Does Render Work?", level: 2 },
-        { id: "tokenomics", title: "RENDER Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy RENDER", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-render", title: "What Is Render?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-render-work", title: "How Does Render Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "render-tokenomics", title: "RENDER Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-render", title: "How to Buy RENDER", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

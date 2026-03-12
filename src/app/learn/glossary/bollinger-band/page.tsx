@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bollinger Bands Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Bollinger Bands Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what Bollinger Bands are, how they measure volatility, how to interpret band squeezes and expansions, and trading strategies using Bollinger Bands in crypto.",
 };
 
@@ -16,10 +16,14 @@ export default function BollingerBandPage() {
       readTime="7 min read"
       intro="Bollinger Bands are a volatility indicator consisting of a middle band (typically a 20-period simple moving average) flanked by an upper and lower band set two standard deviations away. The bands automatically widen during volatile periods and contract during calm periods, providing a dynamic framework for assessing whether prices are relatively high or low. Created by John Bollinger, this indicator is invaluable for crypto traders navigating the market's notorious volatility."
       toc={[
-        { id: "what-are-bollinger", title: "What Are Bollinger Bands?", level: 2 },
-        { id: "reading-bands", title: "Reading the Bands", level: 2 },
-        { id: "squeeze", title: "The Bollinger Squeeze", level: 2 },
-        { id: "strategies", title: "Bollinger Band Strategies", level: 2 },
+        { id: "what-are-bollinger", title: "what-are-bollinger", level: 2 },
+        { id: "what-are-bollinger-bands", title: "What Are Bollinger Bands?", level: 2 },
+        { id: "reading-bands", title: "reading-bands", level: 2 },
+        { id: "reading-the-bands", title: "Reading the Bands", level: 2 },
+        { id: "squeeze", title: "squeeze", level: 2 },
+        { id: "the-bollinger-squeeze", title: "The Bollinger Squeeze", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "bollinger-band-strategies", title: "Bollinger Band Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Do Bollinger Bands work for crypto?", answer: "Bollinger Bands are particularly useful for crypto because they adapt to volatility. Crypto markets experience extreme volatility shifts, and Bollinger Bands automatically adjust their width to reflect current conditions. The squeeze pattern is especially effective for anticipating breakouts in crypto pairs." },

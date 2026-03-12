@@ -17,10 +17,14 @@ export default function MarginCallGuidePage() {
       readTime="8 min"
       intro="A margin call occurs when the value of your crypto collateral drops close to the liquidation threshold, signaling that you need to take action to protect your loan position. Understanding margin call mechanics, thresholds, and response strategies is critical for any crypto borrower to avoid the costly consequences of liquidation."
       toc={[
-        { id: "what-is-margin-call", title: "What Is a Margin Call", level: 2 },
-        { id: "thresholds", title: "Margin Call Thresholds", level: 2 },
+        { id: "what-is-margin-call", title: "what-is-margin-call", level: 2 },
+        { id: "what-is-a-margin-call", title: "What Is a Margin Call", level: 2 },
+        { id: "thresholds", title: "thresholds", level: 2 },
+        { id: "margin-call-thresholds", title: "Margin Call Thresholds", level: 2 },
+        { id: "response-strategies", title: "response-strategies", level: 2 },
         { id: "response-strategies", title: "Response Strategies", level: 2 },
-        { id: "prevention", title: "Prevention Tips", level: 2 },
+        { id: "prevention", title: "prevention", level: 2 },
+        { id: "prevention-tips", title: "Prevention Tips", level: 2 }
       ]}
       faqs={[
         { question: "How quickly do I need to respond to a margin call?", answer: "CeFi platforms typically give 24-72 hours to respond. DeFi protocols have no grace period; liquidation can occur immediately when thresholds are breached. Always have a plan ready before a margin call happens." },

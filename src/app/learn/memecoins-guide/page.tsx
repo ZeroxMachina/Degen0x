@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Complete Guide to Memecoins in 2026 | CryptoDegen`,
+  title: `The Complete Guide to Memecoins in 2026 | degen0x`,
   description:
     "Learn what memecoins are, their history from DOGE to WIF, how to evaluate them, trading strategies, and how to detect rug pulls and scams.",
 };
@@ -17,12 +17,18 @@ export default function MemecoinsGuidePage() {
       readTime="12 min read"
       intro="Memecoins started as internet jokes but have evolved into a significant force in crypto markets, generating billions in market cap and creating millionaires overnight. From Dogecoin's humble beginnings as a parody of Bitcoin to PEPE's viral phenomenon, memecoins operate on community, hype, and narrative rather than fundamental technology. This guide explores what drives memecoins, how to evaluate them, trading strategies, and critical risk management techniques to avoid catastrophic losses from rug pulls and exit scams."
       toc={[
+        { id: "what-are-memecoins", title: "what-are-memecoins", level: 2 },
         { id: "what-are-memecoins", title: "What Are Memecoins?", level: 2 },
-        { id: "history", title: "Memecoin History & Evolution", level: 2 },
-        { id: "psychology", title: "Psychology Behind Memecoins", level: 2 },
-        { id: "evaluation", title: "How to Evaluate Memecoins", level: 2 },
+        { id: "history", title: "history", level: 2 },
+        { id: "memecoin-history-evolution", title: "Memecoin History & Evolution", level: 2 },
+        { id: "psychology", title: "psychology", level: 2 },
+        { id: "psychology-behind-memecoins", title: "Psychology Behind Memecoins", level: 2 },
+        { id: "evaluation", title: "evaluation", level: 2 },
+        { id: "how-to-evaluate-memecoins", title: "How to Evaluate Memecoins", level: 2 },
+        { id: "trading-strategies", title: "trading-strategies", level: 2 },
         { id: "trading-strategies", title: "Trading Strategies", level: 2 },
-        { id: "rug-pull-detection", title: "Rug Pull Detection", level: 2 },
+        { id: "rug-pull-detection", title: "rug-pull-detection", level: 2 },
+        { id: "rug-pull-detection", title: "Rug Pull Detection", level: 2 }
       ]}
       faqs={[
         {

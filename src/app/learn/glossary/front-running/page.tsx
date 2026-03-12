@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Front-Running in Crypto Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Front-Running in Crypto Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what front-running is in crypto, how bots detect and exploit pending transactions, the impact on DeFi traders, and strategies to protect your trades.",
 };
 
@@ -16,10 +16,14 @@ export default function FrontRunningPage() {
       readTime="6 min read"
       intro="Front-running in crypto occurs when an entity detects a pending transaction in the mempool and submits their own transaction ahead of it with a higher gas price to profit from the anticipated price impact. This practice exploits the transparency of blockchain mempools where pending transactions are visible before confirmation. Front-running is a major component of MEV extraction and directly harms DeFi users by worsening their trade execution prices."
       toc={[
-        { id: "what-is-frontrunning", title: "What Is Front-Running?", level: 2 },
-        { id: "how-it-works", title: "How Front-Running Works", level: 2 },
-        { id: "impact", title: "Impact on Traders", level: 2 },
-        { id: "protection", title: "How to Protect Yourself", level: 2 },
+        { id: "what-is-frontrunning", title: "what-is-frontrunning", level: 2 },
+        { id: "what-is-front-running", title: "What Is Front-Running?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-front-running-works", title: "How Front-Running Works", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-traders", title: "Impact on Traders", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "how-to-protect-yourself", title: "How to Protect Yourself", level: 2 }
       ]}
       faqs={[
         { question: "Is front-running the same as insider trading?", answer: "They are related but different. Traditional front-running involves trading ahead of known client orders based on privileged information. In crypto, front-running exploits the public mempool where anyone can see pending transactions. While the mechanism differs, the effect is similar: the front-runner profits at the expense of the original trader." },

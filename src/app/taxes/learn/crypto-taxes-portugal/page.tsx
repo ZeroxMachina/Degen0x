@@ -18,23 +18,19 @@ export default function CryptoTaxesPortugalPage() {
       readTime="9 min read"
       intro="Portugal was once considered a crypto tax haven with zero taxation on individual crypto gains. That changed with the 2023 State Budget, which introduced a 28 percent tax on short-term crypto gains (assets held less than 365 days). However, crypto held for more than one year remains tax-free for individuals, preserving Portugal's appeal for long-term crypto investors."
       toc={[
-        { id: "new-framework", title: "Portugal's New Crypto Tax Rules", level: 2 },
-        { id: "short-term", title: "28% Tax on Short-Term Gains", level: 2 },
-        { id: "long-term", title: "Tax-Free Long-Term Holdings", level: 2 },
-        { id: "nhr", title: "Non-Habitual Resident (NHR) Status", level: 2 },
-        { id: "reporting", title: "Reporting Requirements", level: 2 },
-        { id: "planning", title: "Tax Planning for Portugal", level: 2 },
+        { id: "new-framework", title: "new-framework", level: 2 },
+        { id: "portugal", title: "Portugal", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto still tax-free in Portugal?", answer: "Partially. Crypto held for more than 365 days is still tax-free upon sale for individual investors. Short-term gains (held less than 365 days) are now taxed at 28 percent since the 2023 budget changes." },
         { question: "Does the 28% rate apply to crypto-to-crypto trades?", answer: "Yes. Exchanging one cryptocurrency for another is a taxable event if the disposed asset was held for less than 365 days. The gain is calculated based on the EUR value at the time of the trade." },
         { question: "Does NHR status help with crypto taxes?", answer: "The traditional NHR program offered tax benefits, though new applications are now under a revised framework. Existing NHR holders may benefit from reduced rates on certain foreign-source income. The domestic crypto tax rules apply regardless of NHR status for Portugal-sourced crypto gains." },
-        { question: "Are staking rewards taxable in Portugal?", answer: "Staking rewards and other crypto income may be classified as income from capital (rendimentos de capitais) and taxed at 28 percent. The exact treatment depends on the nature of the activity and how it is classified under Portuguese tax categories." },
+        { question: "Are staking rewards taxable in Portugal?", answer: "Staking rewards and other crypto income may be classified as income from capital (rendimentos de capitais) and taxed at 28 percent. The exact treatment depends on the nature of the activity and how it is classified under Portuguese tax categories." }
       ]}
       relatedArticles={[
         { title: "Crypto Taxes in Singapore", href: "/taxes/learn/crypto-taxes-singapore", category: "Taxes" },
         { title: "Crypto Taxes in UAE & Dubai", href: "/taxes/learn/crypto-taxes-uae", category: "Taxes" },
-        { title: "Best Crypto Tax Software", href: "/taxes/best/software", category: "Taxes" },
+        { title: "Best Crypto Tax Software", href: "/taxes/best/software", category: "Taxes" }
       ]}
     >
       <h2 id="new-framework">Portugal&apos;s New Crypto Tax Rules</h2>

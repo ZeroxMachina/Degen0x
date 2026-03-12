@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Web3 Growth Strategies (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Web3 Growth Strategies (${CURRENT_YEAR}) | degen0x`,
   description: "Web3 growth strategies and tactics. Token incentives, airdrop campaigns, partnerships, content marketing, and user acquisition for crypto projects.",
 };
 
@@ -12,10 +12,14 @@ export default function Web3GrowthHackingPage() {
     <LearnPageLayout title="Web3 Growth Strategies" categoryName="Web3 Business" categorySlug="web3-business" readTime="8 min read"
       intro="Growth in Web3 follows different rules than traditional tech. Open-source protocols compete for users through token incentives, composability, and community rather than paid advertising and platform lock-in. The most effective Web3 growth strategies combine crypto-native mechanisms (airdrops, liquidity mining, token incentives) with proven marketing fundamentals (content, partnerships, product excellence). Understanding what works and what does not helps projects grow efficiently and sustainably."
       toc={[
-        { id: "token-incentives", title: "Token Incentive Programs", level: 2 },
-        { id: "airdrops", title: "Airdrop Strategy", level: 2 },
-        { id: "partnerships", title: "Strategic Partnerships", level: 2 },
-        { id: "content-education", title: "Content and Education", level: 2 },
+        { id: "token-incentives", title: "token-incentives", level: 2 },
+        { id: "token-incentive-programs", title: "Token Incentive Programs", level: 2 },
+        { id: "airdrops", title: "airdrops", level: 2 },
+        { id: "airdrop-strategy", title: "Airdrop Strategy", level: 2 },
+        { id: "partnerships", title: "partnerships", level: 2 },
+        { id: "strategic-partnerships", title: "Strategic Partnerships", level: 2 },
+        { id: "content-education", title: "content-education", level: 2 },
+        { id: "content-and-education", title: "Content and Education", level: 2 }
       ]}
       faqs={[
         { question: "Do airdrops work for growth?", answer: "Airdrops can generate massive awareness and user acquisition, but most airdrop recipients sell immediately and do not become long-term users. Effective airdrops target users who have already demonstrated genuine interest (early users, active community members) rather than distributing broadly. The best airdrops create a sense of reward for loyalty rather than free money." },

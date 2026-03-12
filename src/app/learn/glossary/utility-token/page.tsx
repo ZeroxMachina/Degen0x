@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Utility Token? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Utility Token? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what utility tokens are, how they differ from security tokens, examples of utility tokens, and how they provide access to blockchain products and services.",
 };
@@ -17,10 +17,14 @@ export default function UtilityTokenPage() {
       readTime="5 min read"
       intro="A utility token is a cryptocurrency that provides access to a product, service, or functionality within a blockchain ecosystem. Unlike security tokens that represent investment contracts, utility tokens are designed to be used rather than held purely for appreciation. They serve as the fuel for decentralized applications, granting holders the ability to participate in network activities, access features, or pay for services."
       toc={[
-        { id: "definition", title: "What Is a Utility Token?", level: 2 },
-        { id: "examples", title: "Utility Token Examples", level: 2 },
-        { id: "utility-vs-security", title: "Utility vs Security Tokens", level: 2 },
-        { id: "evaluating", title: "Evaluating Utility Tokens", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-utility-token", title: "What Is a Utility Token?", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "utility-token-examples", title: "Utility Token Examples", level: 2 },
+        { id: "utility-vs-security", title: "utility-vs-security", level: 2 },
+        { id: "utility-vs-security-tokens", title: "Utility vs Security Tokens", level: 2 },
+        { id: "evaluating", title: "evaluating", level: 2 },
+        { id: "evaluating-utility-tokens", title: "Evaluating Utility Tokens", level: 2 }
       ]}
       faqs={[
         { question: "Are utility tokens a good investment?", answer: "Utility tokens derive value from demand for the service they provide access to. If the underlying platform grows in usage, demand for the token increases. However, many utility tokens have poor tokenomics or serve platforms with limited adoption. Evaluate the token's actual utility, supply dynamics, and platform growth before investing." },

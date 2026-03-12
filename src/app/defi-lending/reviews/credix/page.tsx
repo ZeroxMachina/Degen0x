@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Credix Review (${CURRENT_YEAR}): Emerging Market DeFi Credit | CryptoDegen`,
+  title: `Credix Review (${CURRENT_YEAR}): Emerging Market DeFi Credit | degen0x`,
   description: "In-depth Credix review covering emerging market lending on Solana, fintech borrower network, tranched credit pools, and risk-adjusted yields.",
 };
 

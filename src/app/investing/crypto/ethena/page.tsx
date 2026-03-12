@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Ethena (ENA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Ethena (ENA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Ethena (ENA), the synthetic dollar protocol built on Ethereum. Discover how USDe works, tokenomics, and how to buy ENA tokens.",
 };
@@ -17,12 +17,18 @@ export default function EthenaPage() {
       readTime="8 min read"
       intro="Ethena is a synthetic dollar protocol built on Ethereum that offers USDe, a crypto-native dollar backed by delta-hedged staked Ethereum positions. By combining staking yield with perpetual futures basis trading, Ethena provides one of the highest yields in DeFi on a dollar-denominated asset. ENA is the governance token of the Ethena protocol."
       toc={[
-        { id: "what-is", title: "What Is Ethena?", level: 2 },
-        { id: "how-it-works", title: "How Ethena Works", level: 2 },
-        { id: "tokenomics", title: "Ethena Tokenomics", level: 2 },
-        { id: "use-cases", title: "Use Cases & Ecosystem", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ENA", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ethena", title: "What Is Ethena?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-ethena-works", title: "How Ethena Works", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ethena-tokenomics", title: "Ethena Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-ecosystem", title: "Use Cases & Ecosystem", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ena", title: "How to Buy ENA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

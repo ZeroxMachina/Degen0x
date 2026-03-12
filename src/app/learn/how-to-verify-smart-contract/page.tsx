@@ -12,11 +12,16 @@ export default function HowToVerifySmartContractPage() {
   return (
     <LearnPageLayout title="How to Verify a Smart Contract" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Verifying smart contracts before interacting with them is a critical safety practice in DeFi. Verification includes checking source code publication, reviewing audit reports, analyzing contract permissions, and assessing risk factors. This guide teaches you practical techniques for evaluating smart contract safety."
       toc={[
-        { id: "why-verify", title: "Why Verify Contracts?", level: 2 },
-        { id: "source-code", title: "Source Code Verification", level: 2 },
-        { id: "audit-review", title: "Reviewing Audits", level: 2 },
-        { id: "permissions", title: "Checking Permissions", level: 2 },
-        { id: "tools", title: "Verification Tools", level: 2 },
+        { id: "why-verify", title: "why-verify", level: 2 },
+        { id: "why-verify-contracts", title: "Why Verify Contracts?", level: 2 },
+        { id: "source-code", title: "source-code", level: 2 },
+        { id: "source-code-verification", title: "Source Code Verification", level: 2 },
+        { id: "audit-review", title: "audit-review", level: 2 },
+        { id: "reviewing-audits", title: "Reviewing Audits", level: 2 },
+        { id: "permissions", title: "permissions", level: 2 },
+        { id: "checking-permissions", title: "Checking Permissions", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "verification-tools", title: "Verification Tools", level: 2 }
       ]}
       faqs={[
         { question: "What does 'verified' mean on Etherscan?", answer: "A verified contract on Etherscan means the developer has published the source code and it matches the deployed bytecode. This allows anyone to read the code and understand what the contract does. It does not mean the code has been audited or is free of vulnerabilities — it simply means the source code is publicly available." },

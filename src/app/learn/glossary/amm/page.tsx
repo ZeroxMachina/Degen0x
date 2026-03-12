@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is an AMM? Automated Market Maker Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is an AMM? Automated Market Maker Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what an Automated Market Maker (AMM) is, how AMMs work, the constant product formula, and their role in DeFi. Complete guide with examples.",
 };
@@ -17,11 +17,16 @@ export default function AmmPage() {
       readTime="6 min"
       intro="An Automated Market Maker (AMM) is a type of decentralized exchange protocol that uses mathematical formulas and liquidity pools to determine asset prices, replacing the traditional order book model. AMMs allow anyone to trade tokens or earn fees by providing liquidity, and they form the backbone of decentralized finance."
       toc={[
-        { id: "definition", title: "What Is an AMM?", level: 2 },
-        { id: "how-it-works", title: "How AMMs Work", level: 2 },
-        { id: "examples", title: "Popular AMM Protocols", level: 2 },
-        { id: "why-it-matters", title: "Why AMMs Matter", level: 2 },
-        { id: "limitations", title: "Limitations", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-an-amm", title: "What Is an AMM?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-amms-work", title: "How AMMs Work", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "popular-amm-protocols", title: "Popular AMM Protocols", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-amms-matter", title: "Why AMMs Matter", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations", title: "Limitations", level: 2 }
       ]}
       faqs={[
         {

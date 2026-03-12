@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in the UAE (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in the UAE (${CURRENT_YEAR}) | degen0x`,
   description:
     "Discover the best cryptocurrency exchanges in the UAE. VARA-regulated platforms with AED support, low fees, and institutional-grade security.",
 };
@@ -17,10 +17,14 @@ export default function BestExchangesUAEPage() {
       readTime="7 min read"
       intro="The United Arab Emirates has rapidly become a global crypto hub, with Dubai&apos;s Virtual Assets Regulatory Authority (VARA) and Abu Dhabi&apos;s ADGM providing clear licensing frameworks. The UAE&apos;s zero income tax policy and pro-innovation stance attract both retail and institutional traders. Here are the best exchanges for UAE-based traders."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges in the UAE", level: 2 },
-        { id: "regulations", title: "UAE Crypto Regulations", level: 2 },
-        { id: "features", title: "Key Features for UAE Traders", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-in-the-uae", title: "Top Exchanges in the UAE", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "uae-crypto-regulations", title: "UAE Crypto Regulations", level: 2 },
+        { id: "features", title: "features", level: 2 },
+        { id: "key-features-for-uae-traders", title: "Key Features for UAE Traders", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         {

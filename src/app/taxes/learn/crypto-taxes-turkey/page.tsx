@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Turkey (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Turkey (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Turkey. Learn about current tax obligations, upcoming regulations, and how Turkish crypto investors should handle reporting.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesTurkeyPage() {
       readTime="8 min read"
       intro="Turkey has one of the highest crypto adoption rates globally, yet the regulatory and tax framework for cryptocurrency remains evolving. While there is no specific crypto capital gains tax in Turkey currently, crypto activities may fall under existing income tax provisions. The Turkish government has been developing comprehensive crypto legislation that will establish clear rules for taxation, licensing, and oversight. Turkish crypto investors should understand both current obligations and prepare for incoming regulations."
       toc={[
-        { id: "current-status", title: "Current Tax Status", level: 2 },
-        { id: "income-tax", title: "Income Tax Considerations", level: 2 },
+        { id: "current-status", title: "current-status", level: 2 },
+        { id: "current-tax-status", title: "Current Tax Status", level: 2 },
+        { id: "income-tax", title: "income-tax", level: 2 },
+        { id: "income-tax-considerations", title: "Income Tax Considerations", level: 2 },
+        { id: "upcoming-regulation", title: "upcoming-regulation", level: 2 },
         { id: "upcoming-regulation", title: "Upcoming Regulation", level: 2 },
+        { id: "exchange-oversight", title: "exchange-oversight", level: 2 },
         { id: "exchange-oversight", title: "Exchange Oversight", level: 2 },
-        { id: "practical-guidance", title: "Practical Guidance", level: 2 },
+        { id: "practical-guidance", title: "practical-guidance", level: 2 },
+        { id: "practical-guidance", title: "Practical Guidance", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto taxed in Turkey?", answer: "Turkey does not currently have a specific crypto capital gains tax. However, crypto income may be subject to general income tax provisions. The government has been developing comprehensive crypto legislation that is expected to introduce clear tax rules. It is advisable to treat crypto gains as taxable under existing income tax law until specific legislation is enacted." },

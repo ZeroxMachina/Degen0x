@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Using NFTs as Collateral in DeFi (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Using NFTs as Collateral in DeFi (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to NFT-collateralized lending. Learn how to borrow against NFTs, the platforms available, pricing challenges, and risks of NFT lending.",
 };
 
@@ -11,7 +11,16 @@ export default function NftCollateralLendingPage() {
   return (
     <LearnPageLayout title="Using NFTs as Collateral in DeFi" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="8 min read"
       intro="NFT lending allows holders of valuable NFTs to borrow against their digital assets without selling them. As NFT collections like CryptoPunks, Bored Ape Yacht Club, and Pudgy Penguins achieved significant floor prices, demand emerged for lending products that unlock liquidity from these illiquid assets. Several protocols now enable NFT-collateralized borrowing, each with different approaches to the unique challenges of pricing and liquidating NFTs."
-      toc={[{ id: "how-it-works", title: "How NFT Lending Works", level: 2 }, { id: "platforms", title: "NFT Lending Platforms", level: 2 }, { id: "pricing-challenges", title: "Pricing and Valuation Challenges", level: 2 }, { id: "risks", title: "Risks and Considerations", level: 2 }]}
+      toc={[
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-nft-lending-works", title: "How NFT Lending Works", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "nft-lending-platforms", title: "NFT Lending Platforms", level: 2 },
+        { id: "pricing-challenges", title: "pricing-challenges", level: 2 },
+        { id: "pricing-and-valuation-challenges", title: "Pricing and Valuation Challenges", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]}
       faqs={[
         { question: "Can I borrow against my NFTs?", answer: "Yes. Several protocols allow you to deposit blue-chip NFTs as collateral and borrow ETH or stablecoins. Available LTV ratios are typically 20-50% of the floor price, lower than fungible token collateral due to the higher risk and illiquidity of NFTs." },
         { question: "Which NFTs are accepted as collateral?", answer: "Most NFT lending platforms only accept established, liquid collections. CryptoPunks, BAYC, MAYC, Azuki, Pudgy Penguins, and other blue-chip collections are typically supported. Lower-value or illiquid collections are generally not accepted due to pricing and liquidation difficulties." },

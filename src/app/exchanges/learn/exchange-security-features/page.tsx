@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Exchange Security Features Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Exchange Security Features Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about crypto exchange security features. 2FA, cold storage, withdrawal whitelists, insurance funds, and how to protect your assets on exchanges.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeSecurityFeatures() {
       readTime="9 min read"
       intro="Security is the most critical factor when choosing a crypto exchange. Billions of dollars have been lost to exchange hacks throughout crypto history. Understanding the security features available and how to use them properly can mean the difference between protecting your assets and losing everything. This guide covers every major security feature modern exchanges offer."
       toc={[
-        { id: "two-factor", title: "Two-Factor Authentication", level: 2 },
-        { id: "cold-storage", title: "Cold Storage and Hot Wallets", level: 2 },
+        { id: "two-factor", title: "two-factor", level: 2 },
+        { id: "two-factor-authentication", title: "Two-Factor Authentication", level: 2 },
+        { id: "cold-storage", title: "cold-storage", level: 2 },
+        { id: "cold-storage-and-hot-wallets", title: "Cold Storage and Hot Wallets", level: 2 },
+        { id: "withdrawal-protection", title: "withdrawal-protection", level: 2 },
         { id: "withdrawal-protection", title: "Withdrawal Protection", level: 2 },
-        { id: "insurance-funds", title: "Insurance and Reserve Funds", level: 2 },
+        { id: "insurance-funds", title: "insurance-funds", level: 2 },
+        { id: "insurance-and-reserve-funds", title: "Insurance and Reserve Funds", level: 2 },
+        { id: "proof-of-reserves", title: "proof-of-reserves", level: 2 },
         { id: "proof-of-reserves", title: "Proof of Reserves", level: 2 },
-        { id: "advanced-features", title: "Advanced Security Features", level: 2 },
-        { id: "best-practices", title: "Security Best Practices", level: 2 },
+        { id: "advanced-features", title: "advanced-features", level: 2 },
+        { id: "advanced-security-features", title: "Advanced Security Features", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "security-best-practices", title: "Security Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "Is SMS 2FA safe?", answer: "SMS 2FA is better than nothing but vulnerable to SIM-swap attacks. Hardware security keys (YubiKey) or authenticator apps (Google Authenticator, Authy) are significantly more secure. Use hardware keys if your exchange supports them." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Participating in DeFi Protocol Governance (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Participating in DeFi Protocol Governance (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to DeFi governance participation. Learn how to vote on protocol proposals, delegate voting power, and influence DeFi lending protocol decisions.",
 };
 
@@ -11,7 +11,16 @@ export default function GovernanceParticipationPage() {
   return (
     <LearnPageLayout title="Participating in DeFi Protocol Governance" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="8 min read"
       intro="DeFi lending protocols are governed by their token holders who vote on critical decisions including risk parameters, asset listings, fee structures, and protocol upgrades. Active governance participation helps protect your deposits by ensuring sound risk management and keeps protocols responsive to user needs. Whether you hold AAVE, COMP, MKR, or other governance tokens, understanding how to effectively participate in governance maximizes the value of your investment."
-      toc={[{ id: "how-governance-works", title: "How DeFi Governance Works", level: 2 }, { id: "key-decisions", title: "Key Governance Decisions", level: 2 }, { id: "delegation", title: "Voting and Delegation", level: 2 }, { id: "getting-involved", title: "Getting Involved", level: 2 }]}
+      toc={[
+        { id: "how-governance-works", title: "how-governance-works", level: 2 },
+        { id: "how-defi-governance-works", title: "How DeFi Governance Works", level: 2 },
+        { id: "key-decisions", title: "key-decisions", level: 2 },
+        { id: "key-governance-decisions", title: "Key Governance Decisions", level: 2 },
+        { id: "delegation", title: "delegation", level: 2 },
+        { id: "voting-and-delegation", title: "Voting and Delegation", level: 2 },
+        { id: "getting-involved", title: "getting-involved", level: 2 },
+        { id: "getting-involved", title: "Getting Involved", level: 2 }
+      ]}
       faqs={[
         { question: "Do I need governance tokens to participate?", answer: "Yes, voting requires holding or being delegated the protocol's governance token. However, you can participate in governance discussions on forums without holding tokens. Some protocols have minimum token thresholds for creating proposals but no minimum for voting." },
         { question: "What is delegation?", answer: "Delegation allows you to assign your voting power to another address without transferring your tokens. The delegate votes on your behalf. You can revoke delegation at any time. This allows passive token holders to have their voice represented by active governance participants." },

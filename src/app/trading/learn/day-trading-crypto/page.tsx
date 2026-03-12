@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Day Trading Crypto: Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Day Trading Crypto: Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to day trade cryptocurrency effectively. Strategies, risk management, tools, and tips for profitable intraday crypto trading.",
 };
@@ -17,10 +17,14 @@ export default function DayTradingCryptoPage() {
       readTime="10 min read"
       intro="Day trading crypto involves opening and closing positions within the same trading day to profit from short-term price movements. Unlike traditional markets, crypto markets operate 24/7, giving day traders around-the-clock opportunities. This guide covers essential strategies, tools, risk management techniques, and common mistakes to avoid as a crypto day trader."
       toc={[
-        { id: "what-is-day-trading", title: "What Is Crypto Day Trading?", level: 2 },
-        { id: "strategies", title: "Popular Day Trading Strategies", level: 2 },
+        { id: "what-is-day-trading", title: "what-is-day-trading", level: 2 },
+        { id: "what-is-crypto-day-trading", title: "What Is Crypto Day Trading?", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "popular-day-trading-strategies", title: "Popular Day Trading Strategies", level: 2 },
+        { id: "tools-and-platforms", title: "tools-and-platforms", level: 2 },
         { id: "tools-and-platforms", title: "Tools and Platforms", level: 2 },
-        { id: "risk-management", title: "Risk Management for Day Traders", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management-for-day-traders", title: "Risk Management for Day Traders", level: 2 }
       ]}
       faqs={[
         { question: "How much money do I need to start day trading crypto?", answer: "You can start with as little as $100 on most exchanges, but many experienced traders recommend starting with at least $1,000 to $5,000 to have enough capital for proper position sizing and to absorb transaction fees without significantly eating into profits." },

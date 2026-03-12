@@ -25,7 +25,7 @@ export default function StellarPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Stellar (XLM) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function StellarPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">XLM</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2014</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">50,001,806,812 XLM</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Stellar Consensus Protocol (SCP)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">XLM</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2014</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">50,001,806,812 XLM</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Stellar Consensus Protocol (SCP)</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Stellar?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Stellar?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Stellar was founded in 2014 by Jed McCaleb (co-founder of Ripple) and Joyce Kim with a
           mission to make financial services more accessible and affordable worldwide. The Stellar
@@ -68,7 +68,7 @@ export default function StellarPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Stellar is used for cross-border payments and remittances with negligible fees, stablecoin
           issuance and settlement (USDC is natively issued on Stellar), tokenization of real-world
@@ -80,7 +80,7 @@ export default function StellarPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Stellar faces significant competition in the payments space from XRP, stablecoins on other
           networks, and traditional fintech solutions. The Soroban smart contract platform is new
@@ -92,7 +92,7 @@ export default function StellarPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Stellar</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Stellar</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           XLM is available on most major exchanges including Coinbase, Binance, Kraken, and Crypto.com.
           It is also accessible through the Stellar network's built-in decentralized exchange. After

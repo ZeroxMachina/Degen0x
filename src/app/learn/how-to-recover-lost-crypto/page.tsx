@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToRecoverLostCryptoPage() {
   return (
     <LearnPageLayout title="How to Recover Lost Crypto" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Losing access to cryptocurrency is unfortunately common — whether from forgotten passwords, lost seed phrases, corrupted wallet files, or exchange account issues. While not all situations are recoverable, understanding your options and acting methodically can maximize your chances of regaining access to lost funds."
-      toc={[{ id: "assess", title: "Assessing Your Situation", level: 2 },{ id: "seed-phrase", title: "Seed Phrase Recovery", level: 2 },{ id: "password", title: "Password Recovery", level: 2 },{ id: "exchange", title: "Exchange Account Recovery", level: 2 },{ id: "prevention", title: "Prevention Strategies", level: 2 }]}
+      toc={[
+        { id: "assess", title: "assess", level: 2 },
+        { id: "assessing-your-situation", title: "Assessing Your Situation", level: 2 },
+        { id: "seed-phrase", title: "seed-phrase", level: 2 },
+        { id: "seed-phrase-recovery", title: "Seed Phrase Recovery", level: 2 },
+        { id: "password", title: "password", level: 2 },
+        { id: "password-recovery", title: "Password Recovery", level: 2 },
+        { id: "exchange", title: "exchange", level: 2 },
+        { id: "exchange-account-recovery", title: "Exchange Account Recovery", level: 2 },
+        { id: "prevention", title: "prevention", level: 2 },
+        { id: "prevention-strategies", title: "Prevention Strategies", level: 2 }
+      ]}
       faqs={[
         { question: "Can lost Bitcoin be recovered?", answer: "It depends on the situation. If you have a seed phrase or wallet backup, recovery is straightforward. If you have partial information (some seed phrase words, password hints), specialized services may help. If all key material is completely lost, recovery is typically impossible. An estimated 20% of all Bitcoin is believed to be lost permanently." },
         { question: "Should I use a crypto recovery service?", answer: "Be extremely cautious. While legitimate data recovery firms exist, the space is rife with scams targeting desperate people. Never share your complete seed phrase with anyone. Legitimate services work with encrypted wallet files or partial information — they should never need your full seed phrase." },

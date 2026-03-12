@@ -17,13 +17,20 @@ export default function RealWorldAssetsPage() {
       readTime="16 min"
       intro="Real World Assets (RWA) represent one of the most transformative developments in blockchain technology, bridging the gap between traditional finance and decentralized systems. RWAs are digital tokens that represent ownership or claims on physical or off-chain assets such as real estate, bonds, commodities, artwork, or company equity. By tokenizing these assets on a blockchain, RWA protocols enable fractional ownership, increased liquidity, 24/7 trading, and programmable settlement without intermediaries. The RWA market has grown exponentially, with institutional adoption accelerating as regulatory frameworks mature. This comprehensive guide explains how RWA tokenization works, explores major use cases, discusses leading RWA protocols, and examines why this segment is becoming central to the future of finance."
       toc={[
-        { id: "what-are-rwa", title: "Understanding Real World Assets", level: 2 },
-        { id: "rwa-mechanics", title: "How RWA Tokenization Works", level: 2 },
-        { id: "rwa-use-cases", title: "RWA Use Cases: Real Estate, Bonds & Beyond", level: 2 },
-        { id: "rwa-protocols", title: "Leading RWA Protocols", level: 2 },
-        { id: "rwa-benefits", title: "Benefits and Advantages of RWAs", level: 2 },
-        { id: "rwa-challenges", title: "Challenges and Regulatory Considerations", level: 2 },
-        { id: "rwa-future", title: "The Future of Tokenized Assets", level: 2 },
+        { id: "what-are-rwa", title: "what-are-rwa", level: 2 },
+        { id: "understanding-real-world-assets", title: "Understanding Real World Assets", level: 2 },
+        { id: "rwa-mechanics", title: "rwa-mechanics", level: 2 },
+        { id: "how-rwa-tokenization-works", title: "How RWA Tokenization Works", level: 2 },
+        { id: "rwa-use-cases", title: "rwa-use-cases", level: 2 },
+        { id: "rwa-use-cases-real-estate-bonds-beyond", title: "RWA Use Cases: Real Estate, Bonds & Beyond", level: 2 },
+        { id: "rwa-protocols", title: "rwa-protocols", level: 2 },
+        { id: "leading-rwa-protocols", title: "Leading RWA Protocols", level: 2 },
+        { id: "rwa-benefits", title: "rwa-benefits", level: 2 },
+        { id: "benefits-and-advantages-of-rwas", title: "Benefits and Advantages of RWAs", level: 2 },
+        { id: "rwa-challenges", title: "rwa-challenges", level: 2 },
+        { id: "challenges-and-regulatory-considerations", title: "Challenges and Regulatory Considerations", level: 2 },
+        { id: "rwa-future", title: "rwa-future", level: 2 },
+        { id: "the-future-of-tokenized-assets", title: "The Future of Tokenized Assets", level: 2 }
       ]}
       faqs={[
         {

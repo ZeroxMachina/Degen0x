@@ -71,7 +71,7 @@ export default function EuropeWalletsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Wallets in Europe ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -88,7 +88,7 @@ export default function EuropeWalletsPage() {
           privacy standards in mind. Whether you hold Bitcoin, Ethereum, or a diverse
           portfolio, here are the best wallets for European residents.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">European-Made Security</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">European-Made Security</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Ledger (France) uses certified secure element chips and has sold over 6 million
           devices globally. Trezor (Czech Republic) pioneered the hardware wallet concept
@@ -96,7 +96,7 @@ export default function EuropeWalletsPage() {
           regulations, providing strong data privacy protections. European users benefit
           from EU consumer protection laws, including 2-year warranty requirements.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">MiCA and Self-Custody</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">MiCA and Self-Custody</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           The EU&apos;s MiCA regulation does not restrict personal crypto wallet usage. Self-custody
           remains a fundamental right for European crypto holders. However, the Travel Rule
@@ -118,26 +118,26 @@ export default function EuropeWalletsPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Wallet Tips for European Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Wallet Tips for European Users</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Buy European-made hardware wallets</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Buy European-made hardware wallets</h3>
               <p className="text-sm">Ledger and Trezor ship from within the EU, meaning no customs, fast delivery, and EU warranty protection.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Use country-specific tax software</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Use country-specific tax software</h3>
               <p className="text-sm">Blockpit (Austria) specializes in EU tax reporting. Koinly supports most European countries. Choose based on your location.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Register your wallet addresses with exchanges</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Register your wallet addresses with exchanges</h3>
               <p className="text-sm">Under MiCA Travel Rule requirements, pre-registering your wallet addresses speeds up withdrawals from exchanges.</p>
             </div>
           </div>

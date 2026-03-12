@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Web3 Fundraising Guide (${CURRENT_YEAR}) - Grants, VCs & Token Sales | CryptoDegen`,
+  title: `Web3 Fundraising Guide (${CURRENT_YEAR}) - Grants, VCs & Token Sales | degen0x`,
   description: `Learn how to fundraise for your Web3 project. Ecosystem grants, crypto venture capital, token sales, SAFTs, and alternative funding strategies explained.`,
 };
 
@@ -16,10 +16,14 @@ export default function FundraisingPage() {
       readTime="10 min"
       intro="Fundraising in Web3 offers a broader toolkit than traditional startups, ranging from ecosystem grants and retroactive funding to token sales and crypto-native venture capital. Understanding which funding sources match your project stage, token model, and growth objectives is critical to raising capital on favorable terms while maintaining alignment with your community."
       toc={[
-        { id: "grants", title: "Ecosystem Grants", level: 2 },
-        { id: "venture-capital", title: "Crypto Venture Capital", level: 2 },
-        { id: "token-sales", title: "Token Sales and IDOs", level: 2 },
-        { id: "alternative", title: "Alternative Funding Models", level: 2 },
+        { id: "grants", title: "grants", level: 2 },
+        { id: "ecosystem-grants", title: "Ecosystem Grants", level: 2 },
+        { id: "venture-capital", title: "venture-capital", level: 2 },
+        { id: "crypto-venture-capital", title: "Crypto Venture Capital", level: 2 },
+        { id: "token-sales", title: "token-sales", level: 2 },
+        { id: "token-sales-and-idos", title: "Token Sales and IDOs", level: 2 },
+        { id: "alternative", title: "alternative", level: 2 },
+        { id: "alternative-funding-models", title: "Alternative Funding Models", level: 2 }
       ]}
       faqs={[
         { question: "What is a SAFT agreement?", answer: "A SAFT (Simple Agreement for Future Tokens) is a legal instrument where investors provide capital in exchange for the right to receive tokens at a future date, typically at a discount to the public launch price. SAFTs are commonly used in pre-token seed and Series A rounds. They are structured to comply with securities regulations by selling to accredited investors under Regulation D exemptions." },

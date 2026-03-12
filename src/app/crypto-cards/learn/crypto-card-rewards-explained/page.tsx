@@ -17,11 +17,16 @@ export default function CryptoCardRewardsExplainedPage() {
       readTime="9 min"
       intro="Crypto cards offer rewards that look similar to traditional credit card cashback but work quite differently under the hood. Instead of dollars back, you earn tokens, Bitcoin, or other cryptocurrencies. The value of these rewards depends on the token you earn, when you sell, and how the reward program is structured. This guide explains every reward model so you can choose wisely."
       toc={[
-        { id: "reward-types", title: "Types of Crypto Card Rewards", level: 2 },
-        { id: "token-rewards", title: "Native Token Rewards (CRO, WXT, PLU)", level: 2 },
-        { id: "crypto-choice", title: "Choose-Your-Crypto Rewards", level: 2 },
-        { id: "staking-boosts", title: "Staking Boosts and Tier Systems", level: 2 },
-        { id: "maximizing-rewards", title: "Maximizing Your Reward Value", level: 2 },
+        { id: "reward-types", title: "reward-types", level: 2 },
+        { id: "types-of-crypto-card-rewards", title: "Types of Crypto Card Rewards", level: 2 },
+        { id: "token-rewards", title: "token-rewards", level: 2 },
+        { id: "native-token-rewards-cro-wxt-plu", title: "Native Token Rewards (CRO, WXT, PLU)", level: 2 },
+        { id: "crypto-choice", title: "crypto-choice", level: 2 },
+        { id: "choose-your-crypto-rewards", title: "Choose-Your-Crypto Rewards", level: 2 },
+        { id: "staking-boosts", title: "staking-boosts", level: 2 },
+        { id: "staking-boosts-and-tier-systems", title: "Staking Boosts and Tier Systems", level: 2 },
+        { id: "maximizing-rewards", title: "maximizing-rewards", level: 2 },
+        { id: "maximizing-your-reward-value", title: "Maximizing Your Reward Value", level: 2 }
       ]}
       faqs={[
         {

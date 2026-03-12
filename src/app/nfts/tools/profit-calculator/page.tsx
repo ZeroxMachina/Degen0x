@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState } from "react";
@@ -92,7 +94,7 @@ export default function ProfitCalculatorPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">NFT Profit Calculator</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">NFT Profit Calculator</h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         Calculate your actual profit or loss from an NFT trade. This calculator accounts for marketplace
         fees, creator royalties, gas costs, and crypto price changes between buy and sell dates for an
@@ -101,7 +103,7 @@ export default function ProfitCalculatorPage() {
 
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h2 className="text-xl font-semibold text-white mb-4">Purchase Details</h2>
+          <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Purchase Details</h2>
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-3">
               <div>
@@ -112,7 +114,7 @@ export default function ProfitCalculatorPage() {
                   value={buyPrice}
                   onChange={(e) => setBuyPrice(e.target.value)}
                   placeholder="1.5"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
@@ -120,7 +122,7 @@ export default function ProfitCalculatorPage() {
                 <select
                   value={buyCurrency}
                   onChange={(e) => setBuyCurrency(e.target.value)}
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
                 >
                   <option value="ETH">ETH</option>
                   <option value="SOL">SOL</option>
@@ -135,7 +137,7 @@ export default function ProfitCalculatorPage() {
                 value={buyGas}
                 onChange={(e) => setBuyGas(e.target.value)}
                 placeholder="0.01"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
               />
             </div>
             <div>
@@ -147,14 +149,14 @@ export default function ProfitCalculatorPage() {
                 value={buyCurrency === "ETH" ? ethPriceAtBuy : solPriceAtBuy}
                 onChange={(e) => buyCurrency === "ETH" ? setEthPriceAtBuy(e.target.value) : setSolPriceAtBuy(e.target.value)}
                 placeholder="3000"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
               />
             </div>
           </div>
         </div>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h2 className="text-xl font-semibold text-white mb-4">Sale Details</h2>
+          <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Sale Details</h2>
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-3">
               <div>
@@ -165,7 +167,7 @@ export default function ProfitCalculatorPage() {
                   value={sellPrice}
                   onChange={(e) => setSellPrice(e.target.value)}
                   placeholder="3.0"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
@@ -173,7 +175,7 @@ export default function ProfitCalculatorPage() {
                 <select
                   value={sellCurrency}
                   onChange={(e) => setSellCurrency(e.target.value)}
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white focus:border-[var(--color-primary)] focus:outline-none"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
                 >
                   <option value="ETH">ETH</option>
                   <option value="SOL">SOL</option>
@@ -188,7 +190,7 @@ export default function ProfitCalculatorPage() {
                 value={sellGas}
                 onChange={(e) => setSellGas(e.target.value)}
                 placeholder="0.01"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
               />
             </div>
             <div>
@@ -200,7 +202,7 @@ export default function ProfitCalculatorPage() {
                 value={sellCurrency === "ETH" ? ethPriceAtSell : solPriceAtSell}
                 onChange={(e) => sellCurrency === "ETH" ? setEthPriceAtSell(e.target.value) : setSolPriceAtSell(e.target.value)}
                 placeholder="3000"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
               />
             </div>
           </div>
@@ -208,7 +210,7 @@ export default function ProfitCalculatorPage() {
       </div>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-xl font-semibold text-white mb-4">Fees</h2>
+        <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Fees</h2>
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">Marketplace Fee (%)</label>
@@ -218,7 +220,7 @@ export default function ProfitCalculatorPage() {
               value={marketplaceFee}
               onChange={(e) => setMarketplaceFee(e.target.value)}
               placeholder="2.5"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
@@ -229,7 +231,7 @@ export default function ProfitCalculatorPage() {
               value={royaltyFee}
               onChange={(e) => setRoyaltyFee(e.target.value)}
               placeholder="5"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-white placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
         </div>
@@ -251,7 +253,7 @@ export default function ProfitCalculatorPage() {
 
       {results && (
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h2 className="text-xl font-semibold text-white mb-4">Profit Analysis</h2>
+          <h2 className="text-xl font-semibold text-[var(--color-text)] mb-4">Profit Analysis</h2>
 
           <div className="grid grid-cols-3 gap-4 mb-6">
             <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] p-4 text-center">
@@ -277,11 +279,11 @@ export default function ProfitCalculatorPage() {
           <div className="space-y-3">
             <div className="flex justify-between text-sm border-b border-[var(--color-border)] pb-2">
               <span className="text-[var(--color-text-secondary)]">Total Cost (inc. gas)</span>
-              <span className="text-white">{results.totalCostCrypto.toFixed(4)} / ${results.totalCostUsd.toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
+              <span className="text-[var(--color-text)]">{results.totalCostCrypto.toFixed(4)} / ${results.totalCostUsd.toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
             </div>
             <div className="flex justify-between text-sm border-b border-[var(--color-border)] pb-2">
               <span className="text-[var(--color-text-secondary)]">Gross Sale Revenue</span>
-              <span className="text-white">{results.grossRevenueCrypto.toFixed(4)} / ${results.grossRevenueUsd.toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
+              <span className="text-[var(--color-text)]">{results.grossRevenueCrypto.toFixed(4)} / ${results.grossRevenueUsd.toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
             </div>
             <div className="flex justify-between text-sm border-b border-[var(--color-border)] pb-2">
               <span className="text-[var(--color-text-secondary)]">Marketplace Fee</span>
@@ -293,10 +295,10 @@ export default function ProfitCalculatorPage() {
             </div>
             <div className="flex justify-between text-sm border-b border-[var(--color-border)] pb-2">
               <span className="text-[var(--color-text-secondary)]">Net Revenue (after fees &amp; gas)</span>
-              <span className="text-white">{results.netRevenueCrypto.toFixed(4)} / ${results.netRevenueUsd.toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
+              <span className="text-[var(--color-text)]">{results.netRevenueCrypto.toFixed(4)} / ${results.netRevenueUsd.toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
             </div>
             <div className="flex justify-between text-sm font-bold pt-2">
-              <span className="text-white">Net Profit / Loss</span>
+              <span className="text-[var(--color-text)]">Net Profit / Loss</span>
               <span className={results.profitUsd >= 0 ? "text-green-400" : "text-red-400"}>
                 {results.profitUsd >= 0 ? "+" : ""}${results.profitUsd.toLocaleString(undefined, { maximumFractionDigits: 2 })}
               </span>

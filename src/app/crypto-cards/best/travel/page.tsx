@@ -60,7 +60,7 @@ export default function BestTravelCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Cards for Travel ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -78,7 +78,7 @@ export default function BestTravelCardsPage() {
           ranked the best crypto cards for travelers based on international usability, fees
           abroad, and travel-specific perks.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">What Makes a Good Travel Crypto Card</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">What Makes a Good Travel Crypto Card</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           The ideal travel crypto card should charge no foreign transaction fees, offer
           competitive exchange rates with minimal spread, provide worldwide acceptance on a
@@ -86,13 +86,13 @@ export default function BestTravelCardsPage() {
           insurance, or free ATM withdrawals abroad. Multi-currency support is a bonus, letting
           you hold and spend in local currencies without repeated conversion fees.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Our Top Picks</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Our Top Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          The <strong className="text-white">Crypto.com Visa</strong> is our top travel card
+          The <strong className="text-[var(--color-text)]">Crypto.com Visa</strong> is our top travel card
           with zero foreign fees, airport lounge access on premium tiers, and free ATM
-          withdrawals. The <strong className="text-white">Wirex Card</strong> shines for multi-currency
+          withdrawals. The <strong className="text-[var(--color-text)]">Wirex Card</strong> shines for multi-currency
           travel with support for 60+ fiat and crypto currencies in a single app. The{" "}
-          <strong className="text-white">Nexo Card</strong> lets you borrow against your crypto
+          <strong className="text-[var(--color-text)]">Nexo Card</strong> lets you borrow against your crypto
           in 200+ countries without selling your holdings or worrying about foreign fees.
         </p>
       </div>
@@ -110,33 +110,33 @@ export default function BestTravelCardsPage() {
 
       {/* Travel Features Comparison */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Travel Feature Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Travel Feature Comparison</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Airport lounge access: Crypto.com Visa</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Airport lounge access: Crypto.com Visa</h3>
               <p className="text-sm">Icy White and Obsidian tiers include complimentary LoungeKey access at 1,000+ airport lounges worldwide. A premium perk typically found only on high-end traditional travel cards.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Multi-currency flexibility: Wirex Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Multi-currency flexibility: Wirex Card</h3>
               <p className="text-sm">Hold and spend in 60+ fiat currencies and cryptocurrencies. Convert between them in-app at competitive rates. Ideal for frequent travelers visiting multiple countries.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Spend without selling: Nexo Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Spend without selling: Nexo Card</h3>
               <p className="text-sm">Travel and spend against your crypto portfolio as collateral in 200+ countries. Your assets stay invested while you enjoy instant purchasing power abroad.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">4.</span>
             <div>
-              <h3 className="text-white font-semibold">Free ATM withdrawals: Crypto.com Visa</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Free ATM withdrawals: Crypto.com Visa</h3>
               <p className="text-sm">Monthly free ATM allowance from $200 (Ruby) to $1,000 (Obsidian). Access local currency cash when traveling in areas with limited card acceptance.</p>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function BestTravelCardsPage() {
 
       {/* Methodology */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
         <p className="text-[var(--color-text-secondary)]">
           Travel card rankings prioritize international usability and cost efficiency abroad.
           We weight zero foreign transaction fees heavily (30%), followed by travel-specific
@@ -158,7 +158,7 @@ export default function BestTravelCardsPage() {
 
       {/* Related Links */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "Best Crypto Cards Overall", href: "/crypto-cards/best" },
@@ -171,7 +171,7 @@ export default function BestTravelCardsPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
-              <span className="text-white font-semibold">{link.title}</span>
+              <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
               <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                 Read more &rarr;
               </span>

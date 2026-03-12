@@ -17,11 +17,16 @@ export default function LiquidationMechanicsPage() {
       readTime="11 min"
       intro="Liquidation is the enforcement mechanism that keeps DeFi lending protocols solvent. When a borrower's collateral value drops below a critical threshold, anyone can repay part of the debt and claim collateral at a discount. Understanding exactly how liquidation works, who performs it, and what it costs is essential for every DeFi borrower to protect their positions and avoid unnecessary losses."
       toc={[
+        { id: "how-liquidation-works", title: "how-liquidation-works", level: 2 },
         { id: "how-liquidation-works", title: "How Liquidation Works", level: 2 },
+        { id: "health-factor-mechanics", title: "health-factor-mechanics", level: 2 },
         { id: "health-factor-mechanics", title: "Health Factor Mechanics", level: 2 },
-        { id: "liquidation-bots", title: "Liquidation Bots and MEV", level: 2 },
+        { id: "liquidation-bots", title: "liquidation-bots", level: 2 },
+        { id: "liquidation-bots-and-mev", title: "Liquidation Bots and MEV", level: 2 },
+        { id: "liquidation-cascades", title: "liquidation-cascades", level: 2 },
         { id: "liquidation-cascades", title: "Liquidation Cascades", level: 2 },
-        { id: "protection-strategies", title: "Protection Strategies", level: 2 },
+        { id: "protection-strategies", title: "protection-strategies", level: 2 },
+        { id: "protection-strategies", title: "Protection Strategies", level: 2 }
       ]}
       faqs={[
         { question: "What happens to my funds during liquidation?", answer: "During liquidation, a liquidator repays a portion of your debt (typically up to 50%) and receives an equivalent value of your collateral plus a liquidation bonus (typically 5-15%). You keep the remaining collateral and borrowed assets, but lose the penalty amount." },

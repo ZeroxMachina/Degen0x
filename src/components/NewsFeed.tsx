@@ -17,7 +17,7 @@ const newsData: NewsItem[] = [
     slug: "bitcoin-etf-inflows-surge-march-2026",
     title: "Bitcoin ETF Inflows Hit $2.1B in a Single Week",
     summary: "Spot Bitcoin ETFs recorded their largest single-week inflows since approval as institutional demand accelerates. BlackRock's iShares Bitcoin Trust captured $890 million.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-03-08",
     category: "Bitcoin",
   },
@@ -25,7 +25,7 @@ const newsData: NewsItem[] = [
     slug: "ethereum-pectra-upgrade-what-to-know",
     title: "Ethereum Pectra Upgrade: Everything You Need to Know",
     summary: "The Pectra upgrade brings account abstraction, validator improvements, and major UX wins. EIP-7702 allows EOAs to behave like smart contracts during transactions.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-03-07",
     category: "Ethereum",
   },
@@ -33,7 +33,7 @@ const newsData: NewsItem[] = [
     slug: "solana-defi-tvl-record-2026",
     title: "Solana DeFi TVL Breaks $12B — Which Protocols Are Driving Growth",
     summary: "Solana's total value locked in DeFi protocols has hit an all-time high of $12.4 billion. Marinade Finance leads with $2.1B, followed by Raydium at $1.8B.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-03-06",
     category: "DeFi",
   },
@@ -41,7 +41,7 @@ const newsData: NewsItem[] = [
     slug: "sec-crypto-broker-dealer-rules-2026",
     title: "SEC Finalizes Crypto Broker-Dealer Rules: What Changes for US Exchanges",
     summary: "The SEC's new framework for crypto broker-dealers provides long-awaited regulatory clarity but imposes significant compliance costs. Coinbase and Kraken are well-positioned.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-03-05",
     category: "Regulation",
   },
@@ -49,7 +49,7 @@ const newsData: NewsItem[] = [
     slug: "best-hardware-wallets-2026-comparison",
     title: "Best Hardware Wallets of 2026: Ledger vs Trezor vs Coldcard",
     summary: "We tested the top hardware wallets of 2026 for security, usability, and multi-chain support. Ledger Flex leads with touchscreen and 5,500+ coin support.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-03-04",
     category: "Bitcoin",
   },
@@ -57,7 +57,7 @@ const newsData: NewsItem[] = [
     slug: "aave-v4-launch-features-breakdown",
     title: "Aave v4 Launches: The Biggest DeFi Upgrade of 2026 Explained",
     summary: "Aave v4 introduces a unified liquidity layer, GHO native integration, and cross-chain capabilities. This eliminates fragmentation across separate pools.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-03-03",
     category: "DeFi",
   },
@@ -65,7 +65,7 @@ const newsData: NewsItem[] = [
     slug: "coinbase-q4-2025-earnings-analysis",
     title: "Coinbase Q4 2025 Earnings: $1.8B Revenue, Institutional Business Doubles",
     summary: "Coinbase posted its strongest quarterly results since going public with $1.83B revenue. Institutional business doubled with Coinbase Prime reaching $220B AUM.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-03-02",
     category: "Markets",
   },
@@ -73,7 +73,7 @@ const newsData: NewsItem[] = [
     slug: "top-nft-collections-march-2026",
     title: "Top NFT Collections to Watch in March 2026 — Volume & Floor Prices",
     summary: "NFT market volume is recovering after an 18-month decline. CryptoPunks lead with $145M in 30-day volume, followed by BAYC at $89M.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-03-01",
     category: "NFTs",
   },
@@ -81,7 +81,7 @@ const newsData: NewsItem[] = [
     slug: "bitcoin-lightning-network-growth-2026",
     title: "Lightning Network Capacity Hits 10,000 BTC — Is Bitcoin Payments Ready?",
     summary: "Bitcoin Lightning Network crossed 10,000 BTC in capacity for the first time. Payment reliability has improved dramatically with 99% success rates for small payments.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-02-28",
     category: "Bitcoin",
   },
@@ -89,7 +89,7 @@ const newsData: NewsItem[] = [
     slug: "crypto-tax-season-guide-2026",
     title: "Crypto Tax Season 2026: What's New and How to File Correctly",
     summary: "New IRS rules, the first year of mandatory 1099-DA reporting, and DeFi tax treatment updates make 2026 the most complex crypto tax season yet.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-02-25",
     category: "Regulation",
   },
@@ -97,7 +97,7 @@ const newsData: NewsItem[] = [
     slug: "stablecoin-regulations-2026-update",
     title: "Global Stablecoin Regulations: EU, US, and Asia's New Rules Explained",
     summary: "Regulatory frameworks for stablecoins are finalizing across major jurisdictions. The EU's Markets in Crypto Regulation takes effect January 2026.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-02-24",
     category: "Regulation",
   },
@@ -105,7 +105,7 @@ const newsData: NewsItem[] = [
     slug: "defi-yield-farming-strategies-2026",
     title: "Best DeFi Yield Farming Strategies for 2026 — Updated Analysis",
     summary: "Yields on major DeFi platforms vary widely. We analyze the risk-return profiles of Aave, Compound, Lido, and emerging protocols.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-02-22",
     category: "DeFi",
   },
@@ -113,7 +113,7 @@ const newsData: NewsItem[] = [
     slug: "ethereum-layer-2-battle-2026",
     title: "Ethereum Layer 2 Battle: Arbitrum vs Optimism vs Base in 2026",
     summary: "Layer 2 networks continue to fragment the Ethereum ecosystem. We compare transaction costs, security models, and developer adoption across major L2s.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-02-20",
     category: "Ethereum",
   },
@@ -121,7 +121,7 @@ const newsData: NewsItem[] = [
     slug: "ai-crypto-tokens-march-2026",
     title: "AI + Crypto Tokens: Which Projects Are Building Real Products?",
     summary: "The convergence of AI and blockchain is creating thousands of new tokens. We separate genuine innovation from hype in the AI-crypto space.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-02-18",
     category: "Markets",
   },
@@ -129,7 +129,7 @@ const newsData: NewsItem[] = [
     slug: "nft-gaming-renaissance-2026",
     title: "NFT Gaming Renaissance: Top Play-to-Earn Games Gaining Mainstream Traction",
     summary: "Play-to-earn gaming is evolving beyond speculative tokens. Axie Infinity, Decentraland, and new competitors show real gameplay and monetization.",
-    source: "CryptoDegen News",
+    source: "degen0x News",
     date: "2026-02-16",
     category: "NFTs",
   },
@@ -182,7 +182,7 @@ export default function NewsFeed() {
           onClick={() => setActiveCategory("All")}
           className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
             activeCategory === "All"
-              ? "bg-[var(--color-primary)] text-white"
+              ? "bg-[var(--color-primary)] text-[var(--color-text)]"
               : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)] hover:bg-[var(--glass-bg-hover)]"
           }`}
         >
@@ -194,7 +194,7 @@ export default function NewsFeed() {
             onClick={() => setActiveCategory(category)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
               activeCategory === category
-                ? "text-white"
+                ? "text-[var(--color-text)]"
                 : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)] hover:bg-[var(--glass-bg-hover)]"
             }`}
             style={
@@ -219,7 +219,7 @@ export default function NewsFeed() {
             {/* Category Tag */}
             <div className="mb-4 flex items-center justify-between">
               <span
-                className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-white"
+                className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-[var(--color-text)]"
                 style={{ backgroundColor: CATEGORY_COLORS[article.category] }}
               >
                 {article.category}

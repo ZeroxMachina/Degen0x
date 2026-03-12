@@ -17,12 +17,18 @@ export default function StakeCelestiaPage() {
       readTime="9 min"
       intro="Celestia staking allows TIA holders to earn approximately 10-15% APY while supporting the first modular data availability network. Beyond staking rewards, TIA stakers may qualify for airdrops from rollups and projects built on Celestia, making it one of the most strategically valuable staking positions in the modular blockchain ecosystem."
       toc={[
-        { id: "overview", title: "Celestia Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake TIA Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Celestia", level: 2 },
-        { id: "validators", title: "Validators & Delegation", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "celestia-staking-overview", title: "Celestia Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-tia-step-by-step", title: "How to Stake TIA Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-celestia", title: "Risks of Staking Celestia", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-delegation", title: "Validators & Delegation", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "What APY does Celestia staking offer?", answer: "Celestia staking currently offers approximately 10-15% APY, with the exact rate depending on validator commission and total TIA staked. The network's inflation schedule targets incentivizing early participation." },

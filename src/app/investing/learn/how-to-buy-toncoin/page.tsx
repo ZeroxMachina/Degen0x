@@ -16,10 +16,14 @@ export default function HowToBuyToncoinPage() {
       readTime="8 min"
       intro="Toncoin is the native cryptocurrency of The Open Network (TON), a blockchain originally designed by Telegram and now maintained by the open-source community. TON has gained significant traction due to its deep integration with Telegram's 900+ million user base, making it one of the most accessible blockchain platforms for mainstream adoption."
       toc={[
+        { id: "what-is-toncoin", title: "what-is-toncoin", level: 2 },
         { id: "what-is-toncoin", title: "What Is Toncoin?", level: 2 },
-        { id: "where-to-buy", title: "Where to Buy Toncoin", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Purchase Guide", level: 2 },
-        { id: "storage", title: "Storing Your TON", level: 2 },
+        { id: "where-to-buy", title: "where-to-buy", level: 2 },
+        { id: "where-to-buy-toncoin", title: "Where to Buy Toncoin", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-purchase-guide", title: "Step-by-Step Purchase Guide", level: 2 },
+        { id: "storage", title: "storage", level: 2 },
+        { id: "storing-your-ton", title: "Storing Your TON", level: 2 }
       ]}
       faqs={[
         { question: "What is the connection between TON and Telegram?", answer: "TON was originally developed by Telegram but was handed over to the open-source community after SEC regulatory action in 2020. Telegram has since reintegrated TON by embedding a crypto wallet directly into the Telegram app, enabling peer-to-peer payments, bot-based mini apps, and advertising payments in TON." },

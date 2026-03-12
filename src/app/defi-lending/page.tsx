@@ -64,7 +64,7 @@ export default function DefiLendingPage() {
     "@type": "CollectionPage",
     name: `DeFi Lending Hub - Compare Protocols ${CURRENT_YEAR}`,
     description: "Compare the best DeFi lending protocols. Earn yield, borrow crypto, and explore liquidity pools.",
-    url: "https://cryptodegen.com/defi-lending",
+    url: "https://degen0x.com/defi-lending",
     isPartOf: { "@type": "WebSite", name: SITE_NAME },
   };
 
@@ -75,7 +75,7 @@ export default function DefiLendingPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }]} />
 
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">DeFi Lending Hub</h1>
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">DeFi Lending Hub</h1>
           <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
             Your complete resource for decentralized lending and borrowing. Compare protocols, find the best yields,
             read expert reviews, and learn how to earn passive income on your crypto assets. Last updated {CURRENT_MONTH} {CURRENT_YEAR}.
@@ -84,7 +84,7 @@ export default function DefiLendingPage() {
 
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white">Top-Rated Protocols</h2>
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Top-Rated Protocols</h2>
             <Link href="/defi-lending/best" className="text-[var(--color-primary)] hover:underline text-sm font-medium">
               View all rankings &rarr;
             </Link>
@@ -98,11 +98,11 @@ export default function DefiLendingPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Find the Best Protocol For You</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Find the Best Protocol For You</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {bestOfLinks.map((link) => (
               <Link key={link.href} href={link.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block">
-                <h3 className="text-white font-semibold mb-1">{link.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{link.desc}</p>
               </Link>
             ))}
@@ -110,11 +110,11 @@ export default function DefiLendingPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Protocol Reviews</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Protocol Reviews</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {reviewLinks.map((review) => (
               <Link key={review.slug} href={`/defi-lending/reviews/${review.slug}`} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover text-center block">
-                <span className="text-white font-semibold">{review.name}</span>
+                <span className="text-[var(--color-text)] font-semibold">{review.name}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">Full Review</span>
               </Link>
             ))}
@@ -122,11 +122,11 @@ export default function DefiLendingPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Head-to-Head Comparisons</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Head-to-Head Comparisons</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {compareLinks.map((link) => (
               <Link key={link.href} href={link.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block">
-                <span className="text-white font-semibold">{link.title}</span>
+                <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">Detailed comparison &rarr;</span>
               </Link>
             ))}
@@ -134,11 +134,11 @@ export default function DefiLendingPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Tools & Calculators</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Tools & Calculators</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {toolLinks.map((tool) => (
               <Link key={tool.href} href={tool.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block">
-                <h3 className="text-white font-semibold mb-1">{tool.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{tool.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{tool.desc}</p>
               </Link>
             ))}
@@ -146,11 +146,11 @@ export default function DefiLendingPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Learn About DeFi Lending</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn About DeFi Lending</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {learnLinks.map((link) => (
               <Link key={link.href} href={link.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block">
-                <span className="text-white font-semibold">{link.title}</span>
+                <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">Read guide &rarr;</span>
               </Link>
             ))}
@@ -158,7 +158,7 @@ export default function DefiLendingPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">How We Review DeFi Protocols</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Review DeFi Protocols</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Our DeFi protocol reviews are based on rigorous analysis including hands-on testing of each platform.
             We evaluate protocols across multiple categories including security audit history, total value locked,

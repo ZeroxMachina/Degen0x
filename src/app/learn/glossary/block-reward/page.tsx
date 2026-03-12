@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Block Reward? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Block Reward? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what block rewards are, how they work in different consensus mechanisms, their role in tokenomics, and how halvings affect them.",
 };
@@ -17,10 +17,14 @@ export default function BlockRewardPage() {
       readTime="4 min"
       intro="A block reward is the cryptocurrency paid to miners or validators for successfully adding a new block to the blockchain. It is the primary incentive mechanism that motivates network participants to secure the blockchain and process transactions. Block rewards consist of newly minted coins plus transaction fees from the transactions included in the block."
       toc={[
-        { id: "definition", title: "What Is a Block Reward?", level: 2 },
-        { id: "how-it-works", title: "How Block Rewards Work", level: 2 },
-        { id: "halvings", title: "Halvings and Supply Reduction", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-block-reward", title: "What Is a Block Reward?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-block-rewards-work", title: "How Block Rewards Work", level: 2 },
+        { id: "halvings", title: "halvings", level: 2 },
+        { id: "halvings-and-supply-reduction", title: "Halvings and Supply Reduction", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

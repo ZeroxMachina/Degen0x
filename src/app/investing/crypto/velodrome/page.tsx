@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Velodrome Finance (VELO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Velodrome Finance (VELO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Velodrome Finance (VELO), the dominant DEX and liquidity layer on Optimism. Discover VELO tokenomics, ve(3,3) mechanics, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function VelodromePage() {
       readTime="8 min read"
       intro="Velodrome Finance (VELO) is the dominant decentralized exchange and liquidity hub on the Optimism Layer 2 network. Built on the Solidly ve(3,3) model pioneered by Andre Cronje, Velodrome uses vote-escrow tokenomics and emission voting to efficiently direct liquidity incentives across the Optimism ecosystem."
       toc={[
-        { id: "what-is", title: "What Is Velodrome Finance?", level: 2 },
-        { id: "how-it-works", title: "How Does Velodrome Finance Work?", level: 2 },
-        { id: "tokenomics", title: "VELO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy VELO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-velodrome-finance", title: "What Is Velodrome Finance?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-velodrome-finance-work", title: "How Does Velodrome Finance Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "velo-tokenomics", title: "VELO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-velo", title: "How to Buy VELO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

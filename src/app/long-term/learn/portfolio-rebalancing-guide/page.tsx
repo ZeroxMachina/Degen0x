@@ -16,10 +16,14 @@ export default function PortfolioRebalancingGuidePage() {
       readTime="10 min"
       intro="Regular portfolio rebalancing maintains target allocation as crypto prices fluctuate dramatically, providing a disciplined framework for systematically buying low and selling high while managing portfolio risk."
       toc={[
-        { id: "section-1", title: "Rebalancing Fundamentals", level: 2 },
-        { id: "section-2", title: "Rebalancing Strategies", level: 2 },
-        { id: "section-3", title: "Crypto-Specific Considerations", level: 2 },
-        { id: "section-4", title: "Implementation Guide", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "rebalancing-fundamentals", title: "Rebalancing Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "rebalancing-strategies", title: "Rebalancing Strategies", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "crypto-specific-considerations", title: "Crypto-Specific Considerations", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "implementation-guide", title: "Implementation Guide", level: 2 }
       ]}
       faqs={[
         { question: "How often should I rebalance my crypto portfolio?", answer: "Most investors benefit from rebalancing quarterly or when allocations drift more than 5% from targets. More frequent rebalancing increases transaction costs and tax events without significantly improving returns. Less frequent rebalancing may allow excessive drift that changes portfolio risk characteristics beyond acceptable levels." },

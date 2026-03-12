@@ -18,12 +18,18 @@ export default function WhatIsLiquidityPage() {
       readTime="8 min"
       intro="Liquidity refers to how easily an asset can be bought or sold without significantly affecting its price. In cryptocurrency markets, liquidity determines trade execution quality, price stability, and overall market health. Understanding liquidity is essential for any crypto participant, from traders seeking tight spreads to DeFi users providing capital to liquidity pools."
       toc={[
-        { id: "definition", title: "Understanding Liquidity", level: 2 },
-        { id: "why-it-matters", title: "Why Liquidity Matters", level: 2 },
-        { id: "measuring", title: "Measuring Liquidity", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "understanding-liquidity", title: "Understanding Liquidity", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-liquidity-matters", title: "Why Liquidity Matters", level: 2 },
+        { id: "measuring", title: "measuring", level: 2 },
+        { id: "measuring-liquidity", title: "Measuring Liquidity", level: 2 },
+        { id: "market-makers", title: "market-makers", level: 2 },
         { id: "market-makers", title: "Market Makers", level: 2 },
-        { id: "defi-liquidity", title: "Liquidity in DeFi", level: 2 },
-        { id: "liquidity-risks", title: "Liquidity Risks", level: 2 },
+        { id: "defi-liquidity", title: "defi-liquidity", level: 2 },
+        { id: "liquidity-in-defi", title: "Liquidity in DeFi", level: 2 },
+        { id: "liquidity-risks", title: "liquidity-risks", level: 2 },
+        { id: "liquidity-risks", title: "Liquidity Risks", level: 2 }
       ]}
       faqs={[
         {

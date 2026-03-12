@@ -33,7 +33,7 @@ const features = [
     icon: "💰",
     title: "Revenue Sharing",
     description:
-      "CryptoDegen earns affiliate commissions from exchanges and platforms. A portion of revenue is used for $DEGEN buybacks and distributed to stakers.",
+      "degen0x earns affiliate commissions from exchanges and platforms. A portion of revenue is used for $DEGEN buybacks and distributed to stakers.",
     requirement: "Stake $DEGEN",
   },
   {
@@ -130,7 +130,7 @@ export default function TokenPage() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-[var(--color-text-secondary)] max-w-3xl mx-auto mb-4 font-medium">
-            The NerdWallet of Crypto, Owned by Degens
+            Your Crypto Companion, Owned by Degens
           </p>
 
           <p className="text-base text-[var(--color-text-secondary)] max-w-2xl mx-auto mb-10">
@@ -141,7 +141,7 @@ export default function TokenPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
               href="#"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-white rounded-2xl font-bold text-lg shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-[1.02] transition-all duration-300"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-[var(--color-text)] rounded-2xl font-bold text-lg shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-[1.02] transition-all duration-300"
             >
               <span className="text-2xl">🚀</span>
               Buy {TOKEN_NAME} on Pump.fun
@@ -207,7 +207,7 @@ export default function TokenPage() {
               {
                 step: "02",
                 title: "Connect Your Wallet",
-                desc: "Connect Phantom, Solflare, or any Solana wallet to CryptoDegen.com. Your wallet is your identity.",
+                desc: "Connect Phantom, Solflare, or any Solana wallet to degen0x.com. Your wallet is your identity.",
                 color: "from-purple-500 to-cyan-500",
               },
               {
@@ -225,7 +225,7 @@ export default function TokenPage() {
             ].map((item) => (
               <div key={item.step} className="glass p-6 flex gap-6 items-start group glass-hover">
                 <div
-                  className={`flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-110 transition-transform`}
+                  className={`flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center text-[var(--color-text)] font-bold text-lg shadow-lg group-hover:scale-110 transition-transform`}
                 >
                   {item.step}
                 </div>
@@ -303,7 +303,7 @@ export default function TokenPage() {
                 className={`glass p-6 relative overflow-hidden ${phase.status === "current" ? "ring-2 ring-[var(--color-primary)]" : ""}`}
               >
                 {phase.status === "current" && (
-                  <div className="absolute top-0 right-0 bg-[var(--color-primary)] text-white text-[10px] font-bold px-2 py-0.5 rounded-bl-lg">
+                  <div className="absolute top-0 right-0 bg-[var(--color-primary)] text-[var(--color-text)] text-[10px] font-bold px-2 py-0.5 rounded-bl-lg">
                     CURRENT
                   </div>
                 )}
@@ -337,7 +337,7 @@ export default function TokenPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-white rounded-2xl font-bold text-lg shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-[1.02] transition-all duration-300"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-[var(--color-text)] rounded-2xl font-bold text-lg shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-[1.02] transition-all duration-300"
             >
               🚀 Buy {TOKEN_NAME}
             </a>

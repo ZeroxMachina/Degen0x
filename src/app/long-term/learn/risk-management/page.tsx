@@ -7,7 +7,16 @@ export default function RiskManagementPage() {
   return (
     <LearnPageLayout title="Crypto Risk Management" categoryName="Long-Term" categorySlug="long-term" readTime="9 min"
       intro="Effective risk management is the difference between building lasting wealth and losing everything in crypto. While the upside potential of digital assets attracts investors, the downside risks including hacks, scams, regulation, and market crashes require deliberate management. This guide covers the essential risk management frameworks for long-term crypto investors."
-      toc={[{ id: "types-of-risk", title: "Types of Crypto Risk", level: 2 }, { id: "position-sizing", title: "Position Sizing", level: 2 }, { id: "diversification", title: "Diversification Strategy", level: 2 }, { id: "security", title: "Security Practices", level: 2 }]}
+      toc={[
+        { id: "types-of-risk", title: "types-of-risk", level: 2 },
+        { id: "types-of-crypto-risk", title: "Types of Crypto Risk", level: 2 },
+        { id: "position-sizing", title: "position-sizing", level: 2 },
+        { id: "position-sizing", title: "Position Sizing", level: 2 },
+        { id: "diversification", title: "diversification", level: 2 },
+        { id: "diversification-strategy", title: "Diversification Strategy", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-practices", title: "Security Practices", level: 2 }
+      ]}
       faqs={[
         { question: "How much of my net worth should be in crypto?", answer: "There is no universal answer, but most financial advisors suggest limiting crypto to 5-20% of your total investment portfolio based on your risk tolerance, age, and financial goals. Younger investors with longer time horizons may lean toward the higher end. Never invest more than you can afford to lose entirely." },
         { question: "Should I use stop-losses for long-term crypto holdings?", answer: "Stop-losses can be counterproductive for long-term holdings because crypto regularly experiences sharp drawdowns followed by recovery. A 50% drop that triggers a stop-loss might be followed by a 200% recovery you miss. Instead of stop-losses, manage risk through position sizing and diversification." },

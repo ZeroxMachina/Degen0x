@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Mint an NFT: Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Mint an NFT: Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to mint NFTs step by step. Cover the minting process, gas optimization, allowlist strategies, and common mistakes to avoid when minting.",
 };
 
@@ -11,7 +11,16 @@ export default function NftMintingGuidePage() {
   return (
     <LearnPageLayout title="How to Mint an NFT: Complete Guide" categoryName="NFTs" categorySlug="nfts" readTime="9 min read"
       intro="Minting is the process of creating a new NFT on the blockchain by executing a smart contract function that generates a unique token and assigns it to your wallet. Whether you are minting from a new collection's launch, creating your own artwork as an NFT, or participating in a free mint, understanding the minting process helps you avoid costly mistakes and scams. This guide covers everything from preparation to post-mint best practices."
-      toc={[{ id: "minting-basics", title: "Minting Basics", level: 2 }, { id: "preparing-to-mint", title: "Preparing to Mint", level: 2 }, { id: "mint-day-execution", title: "Mint Day Execution", level: 2 }, { id: "post-mint-actions", title: "Post-Mint Actions", level: 2 }]}
+      toc={[
+        { id: "minting-basics", title: "minting-basics", level: 2 },
+        { id: "minting-basics", title: "Minting Basics", level: 2 },
+        { id: "preparing-to-mint", title: "preparing-to-mint", level: 2 },
+        { id: "preparing-to-mint", title: "Preparing to Mint", level: 2 },
+        { id: "mint-day-execution", title: "mint-day-execution", level: 2 },
+        { id: "mint-day-execution", title: "Mint Day Execution", level: 2 },
+        { id: "post-mint-actions", title: "post-mint-actions", level: 2 },
+        { id: "post-mint-actions", title: "Post-Mint Actions", level: 2 }
+      ]}
       faqs={[{ question: "How much does it cost to mint an NFT?", answer: "Minting costs include the mint price (set by the project, can be free) plus gas fees. On Ethereum mainnet, gas for a mint typically costs $5-50 depending on network congestion and contract complexity. During popular mints, gas can spike much higher due to competition. On Solana, minting costs under $0.01 in gas. On L2s like Base or Polygon, gas costs are negligible. Always budget for gas above the mint price." },
         { question: "What is an allowlist mint?", answer: "An allowlist (formerly whitelist) gives specific wallet addresses priority access to mint before the public sale, often at a lower price. Projects grant allowlist spots through community participation, social media engagement, holding specific tokens, or completing tasks. Allowlist mints are less competitive and cheaper than public mints since fewer people can participate simultaneously, reducing gas wars." },
         { question: "Can a mint fail and still cost gas?", answer: "Yes. If a mint transaction fails (because the collection sold out, your wallet is not allowlisted, or the contract reverts for any reason), you still pay the gas fee for the failed transaction. This is because validators process the transaction regardless of outcome. To minimize failed mint costs, verify eligibility before minting, use wallets with transaction simulation, and avoid minting in the final seconds of competitive launches." }]}

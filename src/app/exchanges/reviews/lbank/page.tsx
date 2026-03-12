@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.1% maker/taker",
   bestFor: "Altcoin hunters seeking early-stage listings",
-  affiliateUrl: "https://cryptodegen.com/go/lbank",
+  affiliateUrl: "https://degen0x.com/go/lbank",
   category: "exchanges",
 };
 

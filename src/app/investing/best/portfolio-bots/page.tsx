@@ -49,7 +49,7 @@ export default function BestPortfolioBotsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Portfolio Bots for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -65,7 +65,7 @@ export default function BestPortfolioBotsPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Portfolio Bots for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Portfolio Bots for {CURRENT_YEAR}</h2>
         <div className="space-y-4">
           {PORTFOLIO_BOTS.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -74,7 +74,7 @@ export default function BestPortfolioBotsPage() {
       </section>
 
       <section id="what-are-bots" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Are Crypto Trading Bots?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Are Crypto Trading Bots?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Crypto trading bots are software programs that automatically execute trades on your behalf
           based on predefined strategies. They connect to your exchange account via API keys and
@@ -91,24 +91,24 @@ export default function BestPortfolioBotsPage() {
       </section>
 
       <section id="bot-types" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Types of Trading Bots</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Types of Trading Bots</h2>
         <div className="space-y-4">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">DCA Bots</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">DCA Bots</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Automatically buy a fixed amount at regular intervals, regardless of price. Ideal
               for long-term accumulation and reducing the impact of volatility on your average cost.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Grid Bots</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Grid Bots</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Place buy and sell orders at preset intervals within a price range. Profits from
               natural price oscillations. Works best in ranging, sideways markets.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Rebalancing Bots</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Rebalancing Bots</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Automatically maintain your desired portfolio allocation by selling overweight
               positions and buying underweight ones. Enforces disciplined portfolio management.
@@ -118,7 +118,7 @@ export default function BestPortfolioBotsPage() {
       </section>
 
       <section id="getting-started" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Getting Started with Trading Bots</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Getting Started with Trading Bots</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Start by choosing a bot platform that supports your preferred exchange. Create API keys
           on your exchange with trading permissions only and disable withdrawals for security.

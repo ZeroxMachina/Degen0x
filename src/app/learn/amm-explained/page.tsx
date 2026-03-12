@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Automated Market Makers (AMMs) Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Automated Market Makers (AMMs) Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how Automated Market Makers work, the constant product formula, concentrated liquidity, different AMM designs, and how they power decentralized trading across DeFi.",
 };
@@ -17,11 +17,16 @@ export default function AmmExplainedPage() {
       readTime="9 min read"
       intro="Automated Market Makers (AMMs) are the pricing engines that power most decentralized exchanges. Instead of using an order book to match buyers and sellers like traditional exchanges, AMMs use mathematical formulas and liquidity pools to determine token prices automatically. This innovation, pioneered by protocols like Uniswap and Bancor, made it possible to create always-available liquidity for any token pair without requiring professional market makers, fundamentally transforming how digital assets are traded."
       toc={[
+        { id: "how-amms-work", title: "how-amms-work", level: 2 },
         { id: "how-amms-work", title: "How AMMs Work", level: 2 },
-        { id: "constant-product", title: "The Constant Product Formula", level: 2 },
-        { id: "amm-designs", title: "Different AMM Designs", level: 2 },
+        { id: "constant-product", title: "constant-product", level: 2 },
+        { id: "the-constant-product-formula", title: "The Constant Product Formula", level: 2 },
+        { id: "amm-designs", title: "amm-designs", level: 2 },
+        { id: "different-amm-designs", title: "Different AMM Designs", level: 2 },
+        { id: "concentrated-liquidity", title: "concentrated-liquidity", level: 2 },
         { id: "concentrated-liquidity", title: "Concentrated Liquidity", level: 2 },
-        { id: "risks-limitations", title: "Risks and Limitations", level: 2 },
+        { id: "risks-limitations", title: "risks-limitations", level: 2 },
+        { id: "risks-and-limitations", title: "Risks and Limitations", level: 2 }
       ]}
       faqs={[
         {

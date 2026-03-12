@@ -17,10 +17,14 @@ export default function CryptoLoansVsSellingPage() {
       readTime="9 min"
       intro="When you need liquidity, the choice between taking a crypto loan and selling your holdings has significant tax, financial, and strategic implications. Borrowing preserves your crypto exposure and avoids capital gains taxes but introduces interest costs and liquidation risk. Selling provides clean liquidity but triggers taxes and eliminates future upside. This guide provides a framework for making this critical decision."
       toc={[
+        { id: "tax-comparison", title: "tax-comparison", level: 2 },
         { id: "tax-comparison", title: "Tax Comparison", level: 2 },
+        { id: "financial-analysis", title: "financial-analysis", level: 2 },
         { id: "financial-analysis", title: "Financial Analysis", level: 2 },
-        { id: "when-to-borrow", title: "When Borrowing Wins", level: 2 },
-        { id: "when-to-sell", title: "When Selling Wins", level: 2 },
+        { id: "when-to-borrow", title: "when-to-borrow", level: 2 },
+        { id: "when-borrowing-wins", title: "When Borrowing Wins", level: 2 },
+        { id: "when-to-sell", title: "when-to-sell", level: 2 },
+        { id: "when-selling-wins", title: "When Selling Wins", level: 2 }
       ]}
       faqs={[
         { question: "Is it always better to borrow instead of sell?", answer: "No. Borrowing is better when you have large unrealized gains and strong conviction the asset will appreciate. Selling is better when you have losses to harvest, need to reduce exposure, or cannot manage loan risk. The right choice depends on your specific tax situation, market outlook, and risk tolerance." },

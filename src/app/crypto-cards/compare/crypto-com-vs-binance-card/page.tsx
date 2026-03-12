@@ -17,7 +17,7 @@ const items: ComparisonItem[] = [
     name: "Crypto.com Visa",
     slug: "crypto-com-visa",
     rating: 4.7,
-    affiliateUrl: "https://cryptodegen.com/go/crypto-com-visa",
+    affiliateUrl: "https://degen0x.com/go/crypto-com-visa",
     features: {
       "Cashback Rate": "Up to 5% in CRO",
       "Annual Fee": "$0",
@@ -34,7 +34,7 @@ const items: ComparisonItem[] = [
     name: "Binance Card",
     slug: "binance-card",
     rating: 4.3,
-    affiliateUrl: "https://cryptodegen.com/go/binance-card",
+    affiliateUrl: "https://degen0x.com/go/binance-card",
     features: {
       "Cashback Rate": "Up to 8% based on BNB",
       "Annual Fee": "$0",
@@ -73,7 +73,7 @@ export default function CryptoComVsBinanceCardPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto.com vs Binance Card ({CURRENT_YEAR})
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -87,7 +87,7 @@ export default function CryptoComVsBinanceCardPage() {
       <ComparisonTable items={items} features={features} title="Crypto.com Visa vs Binance Card" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Cashback Rewards</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Cashback Rewards</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Binance Card offers the higher headline rate at up to 8% cashback, but achieving it requires
           holding 600 or more BNB (over $150,000 at typical prices). Crypto.com tops out at 5% for its
@@ -95,34 +95,34 @@ export default function CryptoComVsBinanceCardPage() {
           at $400 staked while Binance offers 2% with just 1 BNB held.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Binance Card</strong> &mdash; The higher ceiling and
+          <strong className="text-[var(--color-text)]">Winner: Binance Card</strong> &mdash; The higher ceiling and
           lower entry point for mid-tier cashback rates give Binance the edge purely on reward percentages.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Premium Perks and Benefits</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Premium Perks and Benefits</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Crypto.com leads decisively with its premium perks. Higher tiers include Spotify, Netflix, and
           Amazon Prime reimbursements, plus airport lounge access. The metal card designs also add a
           premium feel. The Binance Card has no comparable lifestyle perks, focusing purely on cashback.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; For cardholders who
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; For cardholders who
           value subscription reimbursements and travel perks, Crypto.com delivers substantially more value
           beyond the cashback rate.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Availability and Regulation</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Availability and Regulation</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Crypto.com is available in over 100 countries and holds multiple regulatory licenses. The
           Binance Card is more limited, primarily serving EEA and UK users. Binance has also faced
           regulatory challenges across multiple jurisdictions, which introduces additional uncertainty.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; Broader availability
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; Broader availability
           and a stronger regulatory position give Crypto.com the advantage for most users globally.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Spending Experience</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Spending Experience</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Both cards offer real-time crypto-to-fiat conversion at the point of sale. The Binance Card
           draws directly from your Binance spot wallet and supports 15+ cryptocurrencies for spending.
@@ -130,12 +130,12 @@ export default function CryptoComVsBinanceCardPage() {
           which adds an extra step but gives you more control over which assets to convert.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Binance Card</strong> &mdash; Direct spot wallet
+          <strong className="text-[var(--color-text)]">Winner: Binance Card</strong> &mdash; Direct spot wallet
           spending is more convenient than the manual top-up process on Crypto.com.
         </p>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mt-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Choose the Crypto.com Visa if you want premium lifestyle perks, broader global availability,
             and a well-established card program. The streaming reimbursements and lounge access create

@@ -11,7 +11,20 @@ export default function HowToReadOrderBookPage() {
   return (
     <LearnPageLayout title="How to Read a Crypto Order Book" categoryName="Crypto Exchanges" categorySlug="exchanges" readTime="9 min"
       intro="The order book is the central mechanism of every exchange, showing all pending buy and sell orders at different prices. Learning to read an order book gives you insight into market liquidity, supply and demand, and potential price movements."
-      toc={[{id:"anatomy",title:"Anatomy of an Order Book",level:2},{id:"bids-asks",title:"Understanding Bids and Asks",level:2},{id:"spread",title:"The Bid-Ask Spread",level:2},{id:"depth",title:"Order Book Depth",level:2},{id:"reading-signals",title:"Reading Order Book Signals",level:2},{id:"limitations",title:"Limitations and Spoofing",level:2}]}
+      toc={[
+        { id: "anatomy", title: "anatomy", level: 2 },
+        { id: "anatomy-of-an-order-book", title: "Anatomy of an Order Book", level: 2 },
+        { id: "bids-asks", title: "bids-asks", level: 2 },
+        { id: "understanding-bids-and-asks", title: "Understanding Bids and Asks", level: 2 },
+        { id: "spread", title: "spread", level: 2 },
+        { id: "the-bid-ask-spread", title: "The Bid-Ask Spread", level: 2 },
+        { id: "depth", title: "depth", level: 2 },
+        { id: "order-book-depth", title: "Order Book Depth", level: 2 },
+        { id: "reading-signals", title: "reading-signals", level: 2 },
+        { id: "reading-order-book-signals", title: "Reading Order Book Signals", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-and-spoofing", title: "Limitations and Spoofing", level: 2 }
+      ]}
       faqs={[{question:"What is the bid-ask spread?",answer:"The spread is the difference between the highest bid (buy) price and the lowest ask (sell) price. A tight spread indicates high liquidity. A wide spread indicates low liquidity or high volatility."},{question:"What are buy and sell walls?",answer:"Walls are large orders at specific price levels that appear as prominent spikes in the depth chart. They can indicate strong support or resistance but can also be spoofing attempts."},{question:"Do DEXs have order books?",answer:"Most DEXs use automated market makers (AMMs) instead of order books. Exceptions include Hyperliquid and dYdX, which use on-chain order books."}]}
       relatedArticles={[{title:"Order Types Explained",href:"/exchanges/learn/order-types-explained",category:"Exchanges"},{title:"Liquidity Explained",href:"/exchanges/learn/liquidity-explained",category:"Exchanges"},{title:"Slippage Explained",href:"/exchanges/learn/slippage-explained",category:"Exchanges"}]}
     >

@@ -18,12 +18,18 @@ export default function BearMarketStrategiesPage() {
       readTime="11 min read"
       intro="Crypto bear markets test every investor's resolve, with 70-90% drawdowns being common across market cycles. But bear markets are also where the foundation for the next bull run's wealth is built. Those who survive bear markets with capital and conviction intact historically achieve the greatest returns in subsequent bull cycles. This guide covers practical strategies for both protecting what you have and positioning for the recovery."
       toc={[
-        { id: "recognizing-bears", title: "Recognizing a Bear Market", level: 2 },
-        { id: "capital-preservation", title: "Capital Preservation Strategies", level: 2 },
-        { id: "accumulation", title: "Smart Accumulation During Bears", level: 2 },
-        { id: "psychology", title: "Managing Bear Market Psychology", level: 2 },
-        { id: "yield-strategies", title: "Earning Yield in a Bear Market", level: 2 },
-        { id: "positioning", title: "Positioning for the Next Cycle", level: 2 },
+        { id: "recognizing-bears", title: "recognizing-bears", level: 2 },
+        { id: "recognizing-a-bear-market", title: "Recognizing a Bear Market", level: 2 },
+        { id: "capital-preservation", title: "capital-preservation", level: 2 },
+        { id: "capital-preservation-strategies", title: "Capital Preservation Strategies", level: 2 },
+        { id: "accumulation", title: "accumulation", level: 2 },
+        { id: "smart-accumulation-during-bears", title: "Smart Accumulation During Bears", level: 2 },
+        { id: "psychology", title: "psychology", level: 2 },
+        { id: "managing-bear-market-psychology", title: "Managing Bear Market Psychology", level: 2 },
+        { id: "yield-strategies", title: "yield-strategies", level: 2 },
+        { id: "earning-yield-in-a-bear-market", title: "Earning Yield in a Bear Market", level: 2 },
+        { id: "positioning", title: "positioning", level: 2 },
+        { id: "positioning-for-the-next-cycle", title: "Positioning for the Next Cycle", level: 2 }
       ]}
       faqs={[
         { question: "How long do crypto bear markets last?", answer: "Historical crypto bear markets have lasted 12-24 months from peak to bottom, with recovery to new highs taking an additional 6-18 months. The 2018 bear lasted about 12 months to the bottom, while the 2022 bear lasted roughly 13 months." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is PancakeSwap Token (CAKE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is PancakeSwap Token (CAKE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about PancakeSwap Token (CAKE), the governance token of the largest DEX on BNB Chain. Discover CAKE tokenomics, features, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function PancakeSwapTokenPage() {
       readTime="8 min read"
       intro="PancakeSwap Token (CAKE) is the native governance and utility token of PancakeSwap, the largest decentralized exchange on BNB Chain. PancakeSwap offers AMM trading, yield farming, lottery, NFTs, and perpetual trading. CAKE is used for staking, governance, and accessing premium features across the ecosystem."
       toc={[
-        { id: "what-is", title: "What Is PancakeSwap Token?", level: 2 },
-        { id: "how-it-works", title: "How Does PancakeSwap Work?", level: 2 },
-        { id: "tokenomics", title: "CAKE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy CAKE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-pancakeswap-token", title: "What Is PancakeSwap Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-pancakeswap-work", title: "How Does PancakeSwap Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "cake-tokenomics", title: "CAKE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-cake", title: "How to Buy CAKE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

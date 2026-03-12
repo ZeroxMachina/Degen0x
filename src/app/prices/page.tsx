@@ -145,7 +145,7 @@ export default function PricesPage() {
         <section className="mb-6">
           <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Browse by Category</h2>
           <div className="flex flex-wrap gap-2">
-            <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-[var(--color-primary)] text-white cursor-default">
+            <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-[var(--color-primary)] text-[var(--color-text)] cursor-default">
               All ({tokens.length})
             </span>
             {TOKEN_CATEGORIES.map((cat) => {

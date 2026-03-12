@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Cup and Handle Pattern in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Cup and Handle Pattern in Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what the cup and handle pattern is, how to identify this bullish continuation pattern, volume confirmation, and trading strategies for crypto markets.",
 };
 
@@ -16,10 +16,14 @@ export default function CupAndHandlePage() {
       readTime="6 min read"
       intro="The cup and handle is a bullish continuation pattern that resembles a tea cup on the chart. It consists of a rounded bottom (the cup) followed by a small consolidation (the handle) before a breakout to new highs. Popularized by William O'Neil, this pattern indicates a period of consolidation and accumulation before the prior uptrend resumes with renewed momentum."
       toc={[
-        { id: "what-is-cup-handle", title: "What Is Cup and Handle?", level: 2 },
-        { id: "cup-formation", title: "The Cup Formation", level: 2 },
-        { id: "handle-formation", title: "The Handle Formation", level: 2 },
-        { id: "trading", title: "Trading the Breakout", level: 2 },
+        { id: "what-is-cup-handle", title: "what-is-cup-handle", level: 2 },
+        { id: "what-is-cup-and-handle", title: "What Is Cup and Handle?", level: 2 },
+        { id: "cup-formation", title: "cup-formation", level: 2 },
+        { id: "the-cup-formation", title: "The Cup Formation", level: 2 },
+        { id: "handle-formation", title: "handle-formation", level: 2 },
+        { id: "the-handle-formation", title: "The Handle Formation", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-the-breakout", title: "Trading the Breakout", level: 2 }
       ]}
       faqs={[
         { question: "How long does a cup and handle take to form?", answer: "In traditional markets, the pattern typically takes 1-6 months to form. In crypto, the accelerated market cycles can compress this to weeks or a few months. The cup should have a rounded bottom rather than a sharp V-shape, and the handle should be proportionally smaller, lasting about one-third to one-quarter of the cup duration." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Arbitrum Ecosystem Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The Arbitrum Ecosystem Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore the Arbitrum ecosystem including its DeFi landscape, Orbit chains, ARB token, and why Arbitrum is the leading Ethereum Layer 2 network.",
 };
@@ -17,10 +17,14 @@ export default function ArbitrumEcosystemPage() {
       readTime="9 min read"
       intro="Arbitrum is the largest Ethereum Layer 2 network by total value locked and transaction volume. Built by Offchain Labs, Arbitrum uses optimistic rollup technology to provide fast, low-cost transactions while inheriting Ethereum's security. Its ecosystem has grown into a thriving hub for DeFi innovation, with protocols like GMX, Pendle, and Camelot pioneering new financial primitives. Arbitrum's EVM equivalence means any Ethereum application can deploy without modification."
       toc={[
+        { id: "arbitrum-overview", title: "arbitrum-overview", level: 2 },
         { id: "arbitrum-overview", title: "Arbitrum Overview", level: 2 },
+        { id: "defi-landscape", title: "defi-landscape", level: 2 },
         { id: "defi-landscape", title: "DeFi Landscape", level: 2 },
-        { id: "orbit-chains", title: "Arbitrum Orbit Chains", level: 2 },
-        { id: "arb-token", title: "ARB Token and Governance", level: 2 },
+        { id: "orbit-chains", title: "orbit-chains", level: 2 },
+        { id: "arbitrum-orbit-chains", title: "Arbitrum Orbit Chains", level: 2 },
+        { id: "arb-token", title: "arb-token", level: 2 },
+        { id: "arb-token-and-governance", title: "ARB Token and Governance", level: 2 }
       ]}
       faqs={[
         {

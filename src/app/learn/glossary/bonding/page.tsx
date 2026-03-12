@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Bonding in Crypto? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Bonding in Crypto? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what bonding means in crypto, how it works in staking and DeFi protocols, bonding curves, and the relationship between bonding and unbonding periods.",
 };
 
@@ -11,7 +11,16 @@ export default function BondingPage() {
   return (
     <LearnPageLayout title="What Is Bonding?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="Bonding in crypto refers to the process of locking up tokens for a specific purpose, typically to secure a proof-of-stake network, provide liquidity, or participate in a protocol's economic mechanism. When you bond tokens, they become illiquid for a defined period and serve as collateral or commitment. Bonding is fundamental to proof-of-stake security, DeFi protocol mechanics, and tokenomics design."
-      toc={[{ id: "definition", title: "What Is Bonding?", level: 2 }, { id: "staking-bonds", title: "Bonding in Staking", level: 2 }, { id: "defi-bonding", title: "Bonding in DeFi", level: 2 }, { id: "bonding-curves", title: "Bonding Curves", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-bonding", title: "What Is Bonding?", level: 2 },
+        { id: "staking-bonds", title: "staking-bonds", level: 2 },
+        { id: "bonding-in-staking", title: "Bonding in Staking", level: 2 },
+        { id: "defi-bonding", title: "defi-bonding", level: 2 },
+        { id: "bonding-in-defi", title: "Bonding in DeFi", level: 2 },
+        { id: "bonding-curves", title: "bonding-curves", level: 2 },
+        { id: "bonding-curves", title: "Bonding Curves", level: 2 }
+      ]}
       faqs={[{ question: "What is the difference between bonding and staking?", answer: "Staking is a form of bonding specific to proof-of-stake consensus. Bonding is the broader concept of locking tokens for any purpose. You can bond tokens for protocol governance, DeFi liquidity provision, or purchasing discounted tokens through protocol-owned liquidity mechanisms. All staking involves bonding, but not all bonding is staking." },
         { question: "How long are bonding periods?", answer: "Bonding periods vary by network and purpose. Cosmos staking has a 21-day unbonding period. Polkadot has a 28-day unbonding period. DeFi bonding periods range from days to years depending on the protocol. Some protocols offer higher rewards for longer bonding commitments. Liquid staking bypasses bonding periods by issuing tradeable receipt tokens." }]}
       relatedArticles={[{ title: "Unbonding", href: "/learn/glossary/unbonding", category: "Glossary" }, { title: "Validator", href: "/learn/glossary/validator", category: "Glossary" }, { title: "What Is Staking?", href: "/learn/what-is-staking", category: "Learn Crypto" }, { title: "Liquid Staking", href: "/learn/glossary/liquid-staking", category: "Glossary" }]}

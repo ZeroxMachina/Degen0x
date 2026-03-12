@@ -39,7 +39,7 @@ export default function BestMultiChainWalletsPage() {
       />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Multi-Chain Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Multi-Chain Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
           The crypto ecosystem spans dozens of blockchains. A multi-chain wallet lets you manage assets
           across Ethereum, Solana, Bitcoin, Polygon, and many more networks from a single interface. We
@@ -49,17 +49,17 @@ export default function BestMultiChainWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">Quick Verdict</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Quick Verdict</h2>
         <p className="text-[var(--color-text-secondary)]">
-          <strong className="text-white">Trust Wallet</strong> wins for sheer chain coverage with 100+ supported networks.
-          <strong className="text-white"> Exodus</strong> offers the best user experience for managing a diverse portfolio.
-          For hardware security across multiple chains, the <strong className="text-white">Ledger Nano X</strong> is unbeatable
+          <strong className="text-[var(--color-text)]">Trust Wallet</strong> wins for sheer chain coverage with 100+ supported networks.
+          <strong className="text-[var(--color-text)]"> Exodus</strong> offers the best user experience for managing a diverse portfolio.
+          For hardware security across multiple chains, the <strong className="text-[var(--color-text)]">Ledger Nano X</strong> is unbeatable
           with 5,500+ asset support and Bluetooth connectivity.
         </p>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Multi-Chain Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Multi-Chain Wallets, Ranked</h2>
         <div className="space-y-6">
           {multiChainWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -76,18 +76,18 @@ export default function BestMultiChainWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/reviews/trust-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Trust Wallet Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Trust Wallet Review</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Detailed Trust Wallet analysis</p>
           </Link>
           <Link href="/wallets/best/beginners" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best for Beginners</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best for Beginners</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Easiest wallets to start with</p>
           </Link>
           <Link href="/wallets/learn/how-to-transfer-crypto" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">How to Transfer Crypto</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">How to Transfer Crypto</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Move crypto between wallets</p>
           </Link>
         </div>

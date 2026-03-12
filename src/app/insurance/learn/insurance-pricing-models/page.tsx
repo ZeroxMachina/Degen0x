@@ -16,10 +16,14 @@ export default function InsurancePricingModelsPage() {
       readTime="10 min"
       intro="Understanding how DeFi insurance premiums are calculated helps evaluate whether coverage is fairly priced and compare offerings across providers. Pricing models incorporate risk assessment, capital costs, and market dynamics."
       toc={[
-        { id: "section-1", title: "Pricing Fundamentals", level: 2 },
-        { id: "section-2", title: "Risk Assessment Factors", level: 2 },
-        { id: "section-3", title: "Market-Based Pricing", level: 2 },
-        { id: "section-4", title: "Evaluating Premium Value", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "pricing-fundamentals", title: "Pricing Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "risk-assessment-factors", title: "Risk Assessment Factors", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "market-based-pricing", title: "Market-Based Pricing", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "evaluating-premium-value", title: "Evaluating Premium Value", level: 2 }
       ]}
       faqs={[
         { question: "How are DeFi insurance premiums calculated?", answer: "Premiums are based on risk assessment of the covered protocol, coverage amount, duration, capital costs for underwriters, and market supply and demand dynamics. Higher-risk protocols and larger coverage amounts result in higher premiums." },

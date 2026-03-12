@@ -16,10 +16,14 @@ export default function CryptoInsuranceCompleteGuidePage() {
       readTime="10 min"
       intro="Cryptocurrency insurance has evolved from a niche concept into an essential risk management tool for DeFi participants. This comprehensive guide covers every aspect of crypto insurance, from decentralized coverage protocols to traditional custodial insurance."
       toc={[
-        { id: "section-1", title: "Overview and Fundamentals", level: 2 },
-        { id: "section-2", title: "Types of Crypto Insurance", level: 2 },
-        { id: "section-3", title: "Choosing Coverage", level: 2 },
-        { id: "section-4", title: "Best Practices", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "overview-and-fundamentals", title: "Overview and Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "types-of-crypto-insurance", title: "Types of Crypto Insurance", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "choosing-coverage", title: "Choosing Coverage", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What is crypto insurance?", answer: "Crypto insurance protects digital asset holders against losses from smart contract exploits, exchange hacks, stablecoin depegs, and other covered events. It includes both decentralized protocols and traditional insurance products designed for crypto." },

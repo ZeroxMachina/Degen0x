@@ -17,12 +17,18 @@ export default function AvalancheEcosystemGuidePage() {
       readTime="9 min"
       intro="Avalanche is a high-performance blockchain platform known for its unique subnet architecture, sub-second finality, and growing institutional adoption. The platform enables anyone to launch customized blockchain networks (subnets) while maintaining interoperability with the main Avalanche ecosystem, making it attractive for both DeFi applications and enterprise use cases."
       toc={[
-        { id: "overview", title: "Avalanche Overview", level: 2 },
-        { id: "architecture", title: "Multi-Chain Architecture", level: 2 },
-        { id: "subnets", title: "Subnets and Customization", level: 2 },
-        { id: "defi", title: "DeFi Ecosystem", level: 2 },
-        { id: "institutional", title: "Institutional Adoption", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "avalanche-overview", title: "Avalanche Overview", level: 2 },
+        { id: "architecture", title: "architecture", level: 2 },
+        { id: "multi-chain-architecture", title: "Multi-Chain Architecture", level: 2 },
+        { id: "subnets", title: "subnets", level: 2 },
+        { id: "subnets-and-customization", title: "Subnets and Customization", level: 2 },
+        { id: "defi", title: "defi", level: 2 },
+        { id: "defi-ecosystem", title: "DeFi Ecosystem", level: 2 },
+        { id: "institutional", title: "institutional", level: 2 },
+        { id: "institutional-adoption", title: "Institutional Adoption", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What makes Avalanche different from Ethereum?", answer: "Avalanche uses the Avalanche consensus protocol which achieves sub-second finality without the need for leader-based block production. Its subnet architecture allows creating custom blockchain networks. The C-Chain is EVM-compatible, providing a familiar environment for Ethereum developers." },

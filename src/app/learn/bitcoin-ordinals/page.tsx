@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bitcoin Ordinals and Inscriptions Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Bitcoin Ordinals and Inscriptions Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Bitcoin Ordinals: how inscriptions work, the difference from Ethereum NFTs, BRC-20 tokens, the impact on Bitcoin block space, and the debate within the Bitcoin community.",
 };
@@ -17,11 +17,16 @@ export default function BitcoinOrdinalsPage() {
       readTime="9 min read"
       intro="Bitcoin Ordinals are a system for numbering and tracking individual satoshis (the smallest unit of Bitcoin, one hundred millionth of a BTC) and inscribing them with arbitrary data — images, text, video, or code. Launched in January 2023 by developer Casey Rodarmor, Ordinals brought NFT-like functionality to Bitcoin without requiring any protocol changes, sparking a wave of innovation, controversy, and a fundamental debate about Bitcoin's purpose. The technology has created a vibrant ecosystem of Bitcoin-native digital artifacts, collectibles, and fungible tokens."
       toc={[
+        { id: "how-ordinals-work", title: "how-ordinals-work", level: 2 },
         { id: "how-ordinals-work", title: "How Ordinals Work", level: 2 },
-        { id: "inscriptions", title: "Inscriptions: Bitcoin-Native Digital Artifacts", level: 2 },
-        { id: "brc20", title: "BRC-20 Tokens", level: 2 },
-        { id: "ecosystem", title: "The Ordinals Ecosystem", level: 2 },
-        { id: "debate", title: "The Bitcoin Community Debate", level: 2 },
+        { id: "inscriptions", title: "inscriptions", level: 2 },
+        { id: "inscriptions-bitcoin-native-digital-artifacts", title: "Inscriptions: Bitcoin-Native Digital Artifacts", level: 2 },
+        { id: "brc20", title: "brc20", level: 2 },
+        { id: "brc-20-tokens", title: "BRC-20 Tokens", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
+        { id: "the-ordinals-ecosystem", title: "The Ordinals Ecosystem", level: 2 },
+        { id: "debate", title: "debate", level: 2 },
+        { id: "the-bitcoin-community-debate", title: "The Bitcoin Community Debate", level: 2 }
       ]}
       faqs={[
         {

@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Fraxlend Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Fraxlend Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Fraxlend review covering isolated pair lending, Frax ecosystem integration, dynamic interest rates, frxETH collateral, and yield opportunities.",
 };
 

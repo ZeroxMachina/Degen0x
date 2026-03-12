@@ -16,10 +16,14 @@ export default function GamingCryptoGuidePage() {
       readTime="11 min"
       intro="Blockchain gaming combines video games with cryptocurrency and NFT technology, enabling true ownership of in-game assets and play-to-earn mechanics. The sector has evolved significantly from early experiments like Axie Infinity to more sophisticated games with sustainable economies. This guide covers how blockchain gaming works and how to evaluate gaming crypto investments."
       toc={[
-        { id: "overview", title: "Blockchain Gaming Overview", level: 2 },
-        { id: "token-models", title: "Gaming Token Models", level: 2 },
-        { id: "top-platforms", title: "Top Gaming Platforms", level: 2 },
-        { id: "evaluation", title: "Evaluating Gaming Crypto Projects", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "blockchain-gaming-overview", title: "Blockchain Gaming Overview", level: 2 },
+        { id: "token-models", title: "token-models", level: 2 },
+        { id: "gaming-token-models", title: "Gaming Token Models", level: 2 },
+        { id: "top-platforms", title: "top-platforms", level: 2 },
+        { id: "top-gaming-platforms", title: "Top Gaming Platforms", level: 2 },
+        { id: "evaluation", title: "evaluation", level: 2 },
+        { id: "evaluating-gaming-crypto-projects", title: "Evaluating Gaming Crypto Projects", level: 2 }
       ]}
       faqs={[
         { question: "Is play-to-earn gaming still viable?", answer: "Pure play-to-earn models have largely proven unsustainable. The industry has shifted toward play-and-earn and play-to-own models where gameplay is the primary draw and earning is a secondary benefit. Sustainable gaming economies require fun gameplay that attracts players regardless of earning potential." },

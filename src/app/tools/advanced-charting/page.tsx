@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useEffect, useRef, useMemo } from "react";
@@ -302,7 +304,7 @@ export default function AdvancedChartingPage() {
   }, [ohlcvData]);
 
   useEffect(() => {
-    document.title = `Advanced Charting - ${state.pair} ${state.timeframe} | CryptoDegen`;
+    document.title = `Advanced Charting - ${state.pair} ${state.timeframe} | degen0x`;
   }, [state.pair, state.timeframe]);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {

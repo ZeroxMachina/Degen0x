@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Exchange Earn Products Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Exchange Earn Products Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about crypto exchange earn products. Savings, staking, lending, dual investment, and how to earn passive income on your crypto holdings.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeEarnProducts() {
       readTime="9 min read"
       intro="Major crypto exchanges offer a growing range of earn products that let you generate passive income on your holdings. From simple savings accounts to complex structured products, the options can be overwhelming. This guide explains each type of earn product, expected returns, and the risks associated with each to help you make informed decisions about where to put your idle crypto to work."
       toc={[
-        { id: "overview", title: "Earn Products Overview", level: 2 },
-        { id: "savings", title: "Flexible and Fixed Savings", level: 2 },
-        { id: "staking", title: "Staking Products", level: 2 },
-        { id: "lending", title: "Crypto Lending", level: 2 },
-        { id: "structured", title: "Structured Products", level: 2 },
-        { id: "risks", title: "Understanding the Risks", level: 2 },
-        { id: "choosing", title: "Choosing the Right Products", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "earn-products-overview", title: "Earn Products Overview", level: 2 },
+        { id: "savings", title: "savings", level: 2 },
+        { id: "flexible-and-fixed-savings", title: "Flexible and Fixed Savings", level: 2 },
+        { id: "staking", title: "staking", level: 2 },
+        { id: "staking-products", title: "Staking Products", level: 2 },
+        { id: "lending", title: "lending", level: 2 },
+        { id: "crypto-lending", title: "Crypto Lending", level: 2 },
+        { id: "structured", title: "structured", level: 2 },
+        { id: "structured-products", title: "Structured Products", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "understanding-the-risks", title: "Understanding the Risks", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-the-right-products", title: "Choosing the Right Products", level: 2 }
       ]}
       faqs={[
         { question: "Are exchange earn products safe?", answer: "They carry varying degrees of risk. Simple savings and staking are generally lower risk. Structured products like dual investment carry significant market risk. All carry custodial risk since the exchange holds your assets. Only use reputable exchanges." },

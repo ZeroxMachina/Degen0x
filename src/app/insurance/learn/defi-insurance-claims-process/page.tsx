@@ -16,10 +16,14 @@ export default function DefiInsuranceClaimsProcessPage() {
       readTime="10 min"
       intro="Filing a DeFi insurance claim involves a process fundamentally different from traditional insurance. From incident verification to governance voting and payout distribution, understanding the claims process ensures effective navigation when coverage is needed."
       toc={[
-        { id: "section-1", title: "Claims Process Overview", level: 2 },
-        { id: "section-2", title: "Filing a Claim", level: 2 },
-        { id: "section-3", title: "Assessment and Voting", level: 2 },
-        { id: "section-4", title: "Payout and Resolution", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "claims-process-overview", title: "Claims Process Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "filing-a-claim", title: "Filing a Claim", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "assessment-and-voting", title: "Assessment and Voting", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "payout-and-resolution", title: "Payout and Resolution", level: 2 }
       ]}
       faqs={[
         { question: "How long does a DeFi insurance claim take?", answer: "Claims processing timelines vary by protocol, typically ranging from a few days to several weeks. Governance-based assessment can take longer due to voting periods. Automated systems with on-chain verification tend to be faster." },

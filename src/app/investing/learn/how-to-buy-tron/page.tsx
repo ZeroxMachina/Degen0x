@@ -16,10 +16,14 @@ export default function HowToBuyTronPage() {
       readTime="8 min"
       intro="TRON is a high-throughput blockchain platform focused on content sharing and entertainment. Founded by Justin Sun in 2017, TRX has become one of the most widely used networks for stablecoin transfers, particularly USDT. This guide explains how to buy TRON step by step."
       toc={[
+        { id: "what-is-tron", title: "what-is-tron", level: 2 },
         { id: "what-is-tron", title: "What Is TRON?", level: 2 },
-        { id: "where-to-buy", title: "Where to Buy TRON", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Purchase Guide", level: 2 },
-        { id: "storage", title: "Storing Your TRX", level: 2 },
+        { id: "where-to-buy", title: "where-to-buy", level: 2 },
+        { id: "where-to-buy-tron", title: "Where to Buy TRON", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-purchase-guide", title: "Step-by-Step Purchase Guide", level: 2 },
+        { id: "storage", title: "storage", level: 2 },
+        { id: "storing-your-trx", title: "Storing Your TRX", level: 2 }
       ]}
       faqs={[
         { question: "What is TRON used for?", answer: "TRON is primarily used for fast and cheap stablecoin transfers (USDT on TRON is one of the most active blockchain use cases globally), decentralized applications, content sharing, and DeFi. The network processes millions of transactions daily with minimal fees." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Layer 2? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Layer 2? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what Layer 2 scaling solutions are, how they work, and why they are critical for blockchain scalability.",
 };
@@ -17,11 +17,16 @@ export default function Layer2Page() {
       readTime="6 min"
       intro="Layer 2 (L2) refers to a secondary protocol built on top of a Layer 1 blockchain to improve its scalability and efficiency. L2 solutions process transactions off the main chain while inheriting the security of the underlying L1. They significantly reduce fees and increase throughput, making blockchain technology practical for everyday use. Rollups (optimistic and zero-knowledge) are the dominant L2 technology for Ethereum."
       toc={[
-        { id: "definition", title: "What Is Layer 2?", level: 2 },
-        { id: "how-it-works", title: "How Layer 2 Works", level: 2 },
-        { id: "types", title: "Types of Layer 2 Solutions", level: 2 },
-        { id: "examples", title: "Major Layer 2 Networks", level: 2 },
-        { id: "why-it-matters", title: "Why Layer 2 Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-layer-2", title: "What Is Layer 2?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-layer-2-works", title: "How Layer 2 Works", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-layer-2-solutions", title: "Types of Layer 2 Solutions", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "major-layer-2-networks", title: "Major Layer 2 Networks", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-layer-2-matters", title: "Why Layer 2 Matters", level: 2 }
       ]}
       faqs={[
         {

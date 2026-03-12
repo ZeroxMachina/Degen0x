@@ -60,7 +60,7 @@ export default function BestBusinessCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Business Cards ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -77,7 +77,7 @@ export default function BestBusinessCardsPage() {
           right crypto card can simplify spending while keeping your digital assets working for
           you. We evaluated cards specifically suited for business and professional use cases.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Business Use Cases for Crypto Cards</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Business Use Cases for Crypto Cards</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           The most common business use cases include spending from a crypto treasury without
           selling assets (using the Nexo Card credit-line model), managing DAO operational
@@ -85,13 +85,13 @@ export default function BestBusinessCardsPage() {
           expenses to grow company holdings, and simplifying international payments for remote
           teams with zero foreign transaction fees.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Our Top Picks</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Our Top Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          The <strong className="text-white">Nexo Card</strong> is our top business pick for its
+          The <strong className="text-[var(--color-text)]">Nexo Card</strong> is our top business pick for its
           credit-line model that lets businesses spend against crypto holdings without triggering
-          taxable events. <strong className="text-white">Gnosis Pay</strong> is revolutionary for
+          taxable events. <strong className="text-[var(--color-text)]">Gnosis Pay</strong> is revolutionary for
           DAOs and Web3-native organizations spending directly from Safe wallets. The{" "}
-          <strong className="text-white">Crypto.com Visa</strong> offers high cashback rates that
+          <strong className="text-[var(--color-text)]">Crypto.com Visa</strong> offers high cashback rates that
           can offset significant business expenses.
         </p>
       </div>
@@ -109,33 +109,33 @@ export default function BestBusinessCardsPage() {
 
       {/* Business Scenarios */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Best Card by Business Type</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Best Card by Business Type</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Freelancers paid in crypto: Nexo Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Freelancers paid in crypto: Nexo Card</h3>
               <p className="text-sm">Deposit your crypto earnings as collateral and spend from the credit line for daily expenses. Your crypto stays invested and you only pay interest on what you spend. Ideal for freelancers who earn in BTC or ETH.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">DAOs and Web3 organizations: Gnosis Pay</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">DAOs and Web3 organizations: Gnosis Pay</h3>
               <p className="text-sm">Spend directly from a Gnosis Safe multisig wallet. No need to bridge funds to centralized platforms. Governance-approved spending flows directly to the card.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Small businesses wanting crypto rewards: Crypto.com Visa</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Small businesses wanting crypto rewards: Crypto.com Visa</h3>
               <p className="text-sm">High cashback rates on operational spending build your crypto position passively. Zero foreign fees help international businesses save on cross-border expenses.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">4.</span>
             <div>
-              <h3 className="text-white font-semibold">Crypto-native startups: Baanx Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Crypto-native startups: Baanx Card</h3>
               <p className="text-sm">White-label card infrastructure and crypto-native banking features. Designed for businesses operating in the digital asset space with direct crypto-to-fiat spending.</p>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function BestBusinessCardsPage() {
 
       {/* Methodology */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
         <p className="text-[var(--color-text-secondary)]">
           Business card rankings prioritize spending limits and flexibility (25%), treasury
           management capabilities (25%), expense tracking and reporting features (20%), reward
@@ -156,7 +156,7 @@ export default function BestBusinessCardsPage() {
 
       {/* Related Links */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "Best Crypto Cards for High Spenders", href: "/crypto-cards/best/high-spenders" },
@@ -169,7 +169,7 @@ export default function BestBusinessCardsPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
-              <span className="text-white font-semibold">{link.title}</span>
+              <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
               <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                 Read more &rarr;
               </span>

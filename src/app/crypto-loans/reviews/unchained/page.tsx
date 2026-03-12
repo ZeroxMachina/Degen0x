@@ -10,7 +10,7 @@ const product = {
   pros: ["Collaborative custody (you hold keys)", "Bitcoin-native security model", "No rehypothecation of collateral", "Strong privacy focus"],
   cons: ["Bitcoin-only collateral", "Higher minimum loan amounts", "More complex setup process", "US-focused platform"],
   bestFor: "Bitcoin holders who want loan access without giving up custody of their keys",
-  affiliateUrl: "https://cryptodegen.com/go/unchained",
+  affiliateUrl: "https://degen0x.com/go/unchained",
   category: "crypto-loans",
 };
 

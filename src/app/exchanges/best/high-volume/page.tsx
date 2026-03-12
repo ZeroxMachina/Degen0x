@@ -17,11 +17,16 @@ export default function BestHighVolumeExchangesPage() {
       readTime="9 min"
       intro="High-volume traders executing millions of dollars monthly need exchanges that offer VIP fee tiers, deep liquidity with minimal slippage, OTC trading desks for large blocks, and dedicated account management. Here are the exchanges that best serve serious traders."
       toc={[
-        { id: "what-high-volume-needs", title: "What High-Volume Traders Need", level: 2 },
-        { id: "top-picks", title: "Top Exchanges for High Volume", level: 2 },
-        { id: "vip-fees", title: "VIP Fee Tier Comparison", level: 2 },
-        { id: "otc-trading", title: "OTC Trading Desks", level: 2 },
-        { id: "liquidity-depth", title: "Liquidity and Slippage", level: 2 },
+        { id: "what-high-volume-needs", title: "what-high-volume-needs", level: 2 },
+        { id: "what-high-volume-traders-need", title: "What High-Volume Traders Need", level: 2 },
+        { id: "top-picks", title: "top-picks", level: 2 },
+        { id: "top-exchanges-for-high-volume", title: "Top Exchanges for High Volume", level: 2 },
+        { id: "vip-fees", title: "vip-fees", level: 2 },
+        { id: "vip-fee-tier-comparison", title: "VIP Fee Tier Comparison", level: 2 },
+        { id: "otc-trading", title: "otc-trading", level: 2 },
+        { id: "otc-trading-desks", title: "OTC Trading Desks", level: 2 },
+        { id: "liquidity-depth", title: "liquidity-depth", level: 2 },
+        { id: "liquidity-and-slippage", title: "Liquidity and Slippage", level: 2 }
       ]}
       faqs={[
         { question: "What volume qualifies for VIP fees?", answer: "VIP tiers typically start at $1-10 million monthly volume. Binance VIP 1 starts at $1M/month, Bybit at $1M, and OKX at $5M. Higher tiers offer progressively lower fees." },

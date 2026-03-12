@@ -52,7 +52,7 @@ export default function StakingRewardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges for Staking ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -68,16 +68,16 @@ export default function StakingRewardsPage() {
           staking them on a supported exchange. We have compared the best exchanges for staking
           based on available assets, reward rates, lock-up flexibility, and platform reliability.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Sample Staking Rates</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Sample Staking Rates</h2>
         <div className="overflow-x-auto rounded-xl border border-[var(--color-border)] mt-4">
           <table className="w-full">
             <thead>
               <tr className="bg-[var(--color-bg-card)]">
-                <th className="px-4 py-3 text-left text-sm font-semibold text-white">Asset</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Binance</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Kraken</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Crypto.com</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-white">Coinbase</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Asset</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Binance</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Kraken</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Crypto.com</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-[var(--color-text)]">Coinbase</th>
               </tr>
             </thead>
             <tbody>
@@ -89,7 +89,7 @@ export default function StakingRewardsPage() {
                 { asset: "Cosmos (ATOM)", binance: "8-12%", kraken: "8-14%", crypto: "6-10%", coinbase: "7-10%" },
               ].map((row) => (
                 <tr key={row.asset} className="border-t border-[var(--color-border)]">
-                  <td className="px-4 py-3 text-sm font-medium text-white">{row.asset}</td>
+                  <td className="px-4 py-3 text-sm font-medium text-[var(--color-text)]">{row.asset}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.binance}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.kraken}</td>
                   <td className="px-4 py-3 text-sm text-center text-[var(--color-text-secondary)]">{row.crypto}</td>

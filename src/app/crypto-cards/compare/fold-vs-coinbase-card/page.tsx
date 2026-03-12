@@ -17,7 +17,7 @@ const items: ComparisonItem[] = [
     name: "Fold Card",
     slug: "fold-card",
     rating: 4.3,
-    affiliateUrl: "https://cryptodegen.com/go/fold-card",
+    affiliateUrl: "https://degen0x.com/go/fold-card",
     features: {
       "Cashback Rate": "1%+ back in BTC (Fold+)",
       "Annual Fee": "Free or $150/yr (Fold+)",
@@ -34,7 +34,7 @@ const items: ComparisonItem[] = [
     name: "Coinbase Card",
     slug: "coinbase-card",
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/coinbase-card",
+    affiliateUrl: "https://degen0x.com/go/coinbase-card",
     features: {
       "Cashback Rate": "Up to 4% in select crypto",
       "Annual Fee": "$0",
@@ -73,7 +73,7 @@ export default function FoldVsCoinbaseCardPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Fold Card vs Coinbase Card ({CURRENT_YEAR})
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -88,7 +88,7 @@ export default function FoldVsCoinbaseCardPage() {
       <ComparisonTable items={items} features={features} title="Fold Card vs Coinbase Card" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Reward Structure</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Reward Structure</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Fold Card takes a unique approach with its spin-the-wheel mechanic that can award between 0.5%
           and 100% back in Bitcoin on every purchase. The Fold+ premium subscription guarantees a 1.5%
@@ -96,12 +96,12 @@ export default function FoldVsCoinbaseCardPage() {
           cryptocurrencies, with higher rates for less popular tokens and around 1% for BTC or ETH.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Coinbase Card</strong> &mdash; The guaranteed up to 4%
+          <strong className="text-[var(--color-text)]">Winner: Coinbase Card</strong> &mdash; The guaranteed up to 4%
           rate is more predictable and potentially higher than Fold&apos;s variable rewards. However, if
           you specifically want Bitcoin, Fold is purpose-built for that.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Cost to Use</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Cost to Use</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Coinbase Card is completely free with no subscription. Fold offers a free tier but the best
           rewards require Fold+ at $150 per year. When you factor in the Coinbase 2.49% liquidation
@@ -110,12 +110,12 @@ export default function FoldVsCoinbaseCardPage() {
           while Coinbase&apos;s liquidation spread costs about $50 monthly on crypto spend.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Fold Card</strong> &mdash; The Fold+ subscription is
+          <strong className="text-[var(--color-text)]">Winner: Fold Card</strong> &mdash; The Fold+ subscription is
           predictable and often cheaper than Coinbase&apos;s liquidation spread, assuming you spend
           crypto rather than USDC on Coinbase.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Funding Model</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Funding Model</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Fold Card connects to your existing bank account. You spend dollars and earn Bitcoin back,
           meaning you never need to own or manage crypto beforehand. Coinbase Card draws from your
@@ -124,11 +124,11 @@ export default function FoldVsCoinbaseCardPage() {
           balances.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Fold Card</strong> &mdash; Bank-connected spending is
+          <strong className="text-[var(--color-text)]">Winner: Fold Card</strong> &mdash; Bank-connected spending is
           simpler and does not require pre-loading crypto.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Bitcoin-Specific Features</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Bitcoin-Specific Features</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Fold is built exclusively for Bitcoin enthusiasts. It offers Lightning Network integration for
           instant BTC transfers, purchase round-ups to stack sats, and a community focused on Bitcoin
@@ -136,12 +136,12 @@ export default function FoldVsCoinbaseCardPage() {
           offer any Bitcoin-specific features.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Fold Card</strong> &mdash; For Bitcoin maximalists,
+          <strong className="text-[var(--color-text)]">Winner: Fold Card</strong> &mdash; For Bitcoin maximalists,
           Fold&apos;s dedicated Bitcoin features are unmatched.
         </p>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mt-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             The Fold Card is the superior choice for users who want to accumulate Bitcoin through everyday
             spending without managing crypto exchange balances. Its gamified rewards, Lightning Network

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Insurance: Protecting Your Collection (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Insurance: Protecting Your Collection (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to NFT insurance options. Learn how to protect your NFT collection against theft, smart contract exploits, and marketplace failures.",
 };
 
@@ -11,7 +11,16 @@ export default function NftInsurancePage() {
   return (
     <LearnPageLayout title="NFT Insurance: Protecting Your Collection" categoryName="Crypto Insurance" categorySlug="insurance" readTime="8 min read"
       intro="High-value NFT collections represent significant financial assets that face unique risks including theft, phishing, smart contract exploits, and marketplace failures. As NFTs worth millions of dollars are held in personal wallets, the need for insurance protection has grown. Several solutions are emerging to protect NFT holders, from wallet security tools to formal insurance products."
-      toc={[{ id: "nft-risks", title: "Risks to NFT Collections", level: 2 }, { id: "coverage-options", title: "NFT Insurance Options", level: 2 }, { id: "security-practices", title: "Security Best Practices", level: 2 }, { id: "valuation", title: "NFT Valuation for Insurance", level: 2 }]}
+      toc={[
+        { id: "nft-risks", title: "nft-risks", level: 2 },
+        { id: "risks-to-nft-collections", title: "Risks to NFT Collections", level: 2 },
+        { id: "coverage-options", title: "coverage-options", level: 2 },
+        { id: "nft-insurance-options", title: "NFT Insurance Options", level: 2 },
+        { id: "security-practices", title: "security-practices", level: 2 },
+        { id: "security-best-practices", title: "Security Best Practices", level: 2 },
+        { id: "valuation", title: "valuation", level: 2 },
+        { id: "nft-valuation-for-insurance", title: "NFT Valuation for Insurance", level: 2 }
+      ]}
       faqs={[
         { question: "Can I insure my NFTs?", answer: "Formal NFT insurance is still emerging. Some DeFi insurance protocols cover smart contract risk for NFT platforms. Specialized NFT insurance products are being developed. Currently, the best protection is a combination of security practices, cold storage, and selective use of available coverage products." },
         { question: "What risks do NFT holders face?", answer: "Key risks include: wallet theft through phishing or malware, smart contract vulnerabilities in NFT contracts or marketplaces, marketplace failures or delistings, rug pulls by NFT project teams, and loss of access to wallet keys. Each risk requires different mitigation strategies." },

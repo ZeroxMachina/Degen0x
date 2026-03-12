@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Mexico (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Mexico (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare the best cryptocurrency exchanges in Mexico. Platforms with MXN support, SPEI transfers, and compliance with Mexican fintech law.",
 };
@@ -17,10 +17,14 @@ export default function BestExchangesMexicoPage() {
       readTime="7 min read"
       intro="Mexico is Latin America&apos;s second-largest crypto market, regulated under the Fintech Law (Ley Fintech). Mexican traders can access both local and international exchanges offering MXN trading pairs and fast SPEI bank transfers. Here are the top platforms for buying and trading crypto in Mexico."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges in Mexico", level: 2 },
-        { id: "regulations", title: "Mexican Crypto Regulations", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-in-mexico", title: "Top Exchanges in Mexico", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "mexican-crypto-regulations", title: "Mexican Crypto Regulations", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
-        { id: "choosing-exchange", title: "How to Choose", level: 2 },
+        { id: "choosing-exchange", title: "choosing-exchange", level: 2 },
+        { id: "how-to-choose", title: "How to Choose", level: 2 }
       ]}
       faqs={[
         {

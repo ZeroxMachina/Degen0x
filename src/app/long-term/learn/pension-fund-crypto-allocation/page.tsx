@@ -16,10 +16,14 @@ export default function PensionFundCryptoAllocationPage() {
       readTime="10 min"
       intro="Pension funds are cautiously exploring cryptocurrency as a portfolio diversifier, with early movers allocating small percentages to Bitcoin and digital asset infrastructure while the broader industry develops frameworks for responsible crypto inclusion."
       toc={[
-        { id: "section-1", title: "Pension Fund Considerations", level: 2 },
-        { id: "section-2", title: "Current Pension Crypto Activity", level: 2 },
-        { id: "section-3", title: "Allocation Frameworks", level: 2 },
-        { id: "section-4", title: "Risks and Challenges", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "pension-fund-considerations", title: "Pension Fund Considerations", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "current-pension-crypto-activity", title: "Current Pension Crypto Activity", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "allocation-frameworks", title: "Allocation Frameworks", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 }
       ]}
       faqs={[
         { question: "Are pension funds investing in crypto?", answer: "Some pension funds have begun allocating to crypto. The Houston Firefighters' Relief and Retirement Fund made an early direct Bitcoin investment. Wisconsin's state pension invested through Bitcoin ETFs. Several Canadian and European pension funds have indirect exposure through crypto company investments. However, most pension funds remain in the evaluation stage." },

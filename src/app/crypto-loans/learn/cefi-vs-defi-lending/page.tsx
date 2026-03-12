@@ -7,7 +7,16 @@ export default function CefiVsDefiPage() {
   return (
     <LearnPageLayout title="CeFi vs DeFi Lending" categoryName="Crypto Loans" categorySlug="crypto-loans" readTime="9 min"
       intro="The crypto lending landscape is split between centralized platforms (CeFi) like Nexo and decentralized protocols (DeFi) like Aave. Each approach offers distinct advantages and carries different risks. Understanding these trade-offs is crucial for choosing the right lending solution for your needs."
-      toc={[{ id: "cefi-overview", title: "CeFi Lending Overview", level: 2 }, { id: "defi-overview", title: "DeFi Lending Overview", level: 2 }, { id: "risk-comparison", title: "Risk Comparison", level: 2 }, { id: "which-to-choose", title: "Which Should You Choose?", level: 2 }]}
+      toc={[
+        { id: "cefi-overview", title: "cefi-overview", level: 2 },
+        { id: "cefi-lending-overview", title: "CeFi Lending Overview", level: 2 },
+        { id: "defi-overview", title: "defi-overview", level: 2 },
+        { id: "defi-lending-overview", title: "DeFi Lending Overview", level: 2 },
+        { id: "risk-comparison", title: "risk-comparison", level: 2 },
+        { id: "risk-comparison", title: "Risk Comparison", level: 2 },
+        { id: "which-to-choose", title: "which-to-choose", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
+      ]}
       faqs={[
         { question: "Is DeFi safer than CeFi after the Celsius collapse?", answer: "DeFi eliminates counterparty risk (no company can mismanage your funds), but introduces smart contract risk. After Celsius, many users moved to DeFi for transparency. However, DeFi has also had exploits. The key difference is that DeFi risks are transparent and auditable, while CeFi risks can be hidden." },
         { question: "Can I switch between CeFi and DeFi easily?", answer: "Yes. You can move assets between CeFi platforms and DeFi protocols freely. Many users use both: CeFi for simplicity and fiat access, DeFi for transparency and permissionless borrowing." },

@@ -17,12 +17,18 @@ export default function NftInvestingGuidePage() {
       readTime="14 min"
       intro="NFT investing combines elements of art collecting, venture capital, and speculative trading. While some early collectors have made enormous returns, the vast majority of NFTs lose value over time. This guide teaches you how to evaluate projects, build an investment strategy, manage risk, and avoid the most common pitfalls that trap new NFT investors."
       toc={[
-        { id: "investment-landscape", title: "The NFT Investment Landscape", level: 2 },
-        { id: "evaluating-projects", title: "How to Evaluate NFT Projects", level: 2 },
-        { id: "investment-strategies", title: "NFT Investment Strategies", level: 2 },
+        { id: "investment-landscape", title: "investment-landscape", level: 2 },
+        { id: "the-nft-investment-landscape", title: "The NFT Investment Landscape", level: 2 },
+        { id: "evaluating-projects", title: "evaluating-projects", level: 2 },
+        { id: "how-to-evaluate-nft-projects", title: "How to Evaluate NFT Projects", level: 2 },
+        { id: "investment-strategies", title: "investment-strategies", level: 2 },
+        { id: "nft-investment-strategies", title: "NFT Investment Strategies", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
         { id: "risk-management", title: "Risk Management", level: 2 },
-        { id: "portfolio-building", title: "Building an NFT Portfolio", level: 2 },
-        { id: "common-mistakes", title: "Common Investing Mistakes", level: 2 },
+        { id: "portfolio-building", title: "portfolio-building", level: 2 },
+        { id: "building-an-nft-portfolio", title: "Building an NFT Portfolio", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-investing-mistakes", title: "Common Investing Mistakes", level: 2 }
       ]}
       faqs={[
         {

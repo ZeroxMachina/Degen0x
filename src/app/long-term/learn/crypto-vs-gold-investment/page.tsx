@@ -16,10 +16,14 @@ export default function CryptoVsGoldInvestmentPage() {
       readTime="10 min"
       intro="The comparison between cryptocurrency and gold as long-term stores of value and inflation hedges is one of investing's most debated topics, with different risk profiles and practical considerations."
       toc={[
-        { id: "section-1", title: "Asset Comparison", level: 2 },
-        { id: "section-2", title: "Performance Analysis", level: 2 },
-        { id: "section-3", title: "Practical Considerations", level: 2 },
-        { id: "section-4", title: "Portfolio Allocation", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "asset-comparison", title: "Asset Comparison", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "performance-analysis", title: "Performance Analysis", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "practical-considerations", title: "Practical Considerations", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "portfolio-allocation", title: "Portfolio Allocation", level: 2 }
       ]}
       faqs={[
         { question: "Is Bitcoin better than gold as an investment?", answer: "Each has advantages. Bitcoin offers higher growth potential, digital portability, and verifiable scarcity. Gold offers thousands of years of history, lower volatility, broader acceptance, and physical tangibility. Many investors hold both for complementary diversification benefits." },

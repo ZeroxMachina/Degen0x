@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Smart Contract? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Smart Contract? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what smart contracts are, how they work, and why they are the building blocks of DeFi, NFTs, and decentralized applications.",
 };
@@ -17,11 +17,16 @@ export default function SmartContractPage() {
       readTime="6 min"
       intro="A smart contract is a self-executing program stored on a blockchain that automatically enforces the terms of an agreement when predefined conditions are met. Written in languages like Solidity (Ethereum) or Rust (Solana), smart contracts eliminate the need for intermediaries by encoding rules directly into code. They power everything from DeFi protocols and NFT marketplaces to DAOs and token standards."
       toc={[
-        { id: "definition", title: "What Is a Smart Contract?", level: 2 },
-        { id: "how-it-works", title: "How Smart Contracts Work", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-smart-contract", title: "What Is a Smart Contract?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-smart-contracts-work", title: "How Smart Contracts Work", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
         { id: "use-cases", title: "Use Cases", level: 2 },
-        { id: "risks", title: "Risks and Limitations", level: 2 },
-        { id: "why-it-matters", title: "Why Smart Contracts Matter", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-limitations", title: "Risks and Limitations", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-smart-contracts-matter", title: "Why Smart Contracts Matter", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Liquid Staking? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Liquid Staking? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what liquid staking is, how it works, major liquid staking protocols, and why liquid staking has become the dominant way to stake cryptocurrency.",
 };
 
@@ -11,7 +11,16 @@ export default function LiquidStakingPage() {
   return (
     <LearnPageLayout title="What Is Liquid Staking?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="Liquid staking allows users to stake their cryptocurrency and receive a tradeable receipt token that represents their staked position plus accumulated rewards. This solves the liquidity problem of traditional staking, where tokens are locked and unusable during the staking period. With liquid staking, you earn staking rewards while simultaneously using your liquid staking token in DeFi for lending, borrowing, and liquidity provision."
-      toc={[{ id: "definition", title: "What Is Liquid Staking?", level: 2 }, { id: "how-it-works", title: "How Liquid Staking Works", level: 2 }, { id: "major-protocols", title: "Major Liquid Staking Protocols", level: 2 }, { id: "risks", title: "Liquid Staking Risks", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-liquid-staking", title: "What Is Liquid Staking?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-liquid-staking-works", title: "How Liquid Staking Works", level: 2 },
+        { id: "major-protocols", title: "major-protocols", level: 2 },
+        { id: "major-liquid-staking-protocols", title: "Major Liquid Staking Protocols", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "liquid-staking-risks", title: "Liquid Staking Risks", level: 2 }
+      ]}
       faqs={[{ question: "Is liquid staking safe?", answer: "Liquid staking introduces smart contract risk on top of base staking risk. Major protocols like Lido have billions in TVL and multiple audits, but they are not risk-free. The liquid staking token can trade at a discount during market stress. Validator performance and slashing also affect the value of liquid staking tokens. Diversifying across multiple liquid staking providers reduces concentration risk." },
         { question: "What is the difference between stETH and rETH?", answer: "stETH (Lido) is a rebasing token that increases in balance daily to reflect earned rewards. rETH (Rocket Pool) is a value-accruing token whose price increases relative to ETH as rewards accumulate. Both represent staked ETH, but they differ in mechanism, decentralization level, and DeFi integration depth." }]}
       relatedArticles={[{ title: "What Is Liquid Staking?", href: "/learn/what-is-liquid-staking", category: "Learn Crypto" }, { title: "Restaking", href: "/learn/glossary/restaking", category: "Glossary" }, { title: "What Is Staking?", href: "/learn/what-is-staking", category: "Learn Crypto" }, { title: "Unbonding", href: "/learn/glossary/unbonding", category: "Glossary" }]}

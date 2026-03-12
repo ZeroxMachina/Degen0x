@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Liquidation in Crypto Trading Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Liquidation in Crypto Trading Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how liquidation works in crypto trading. Margin calls, liquidation prices, cascade effects, and how to avoid getting liquidated on leveraged positions.",
 };
 
@@ -16,13 +16,20 @@ export default function LiquidationExplained() {
       readTime="9 min read"
       intro="Liquidation is the forced closure of a leveraged position when your margin falls below the required maintenance level. It is the single biggest risk in leveraged crypto trading and has wiped out billions of dollars in positions during volatile market events. Understanding how liquidation works and how to prevent it is essential for anyone trading with leverage."
       toc={[
+        { id: "what-is-liquidation", title: "what-is-liquidation", level: 2 },
         { id: "what-is-liquidation", title: "What Is Liquidation?", level: 2 },
-        { id: "how-it-works", title: "How Liquidation Works", level: 2 },
-        { id: "liquidation-price", title: "Calculating Liquidation Price", level: 2 },
-        { id: "margin-types", title: "Isolated vs Cross Margin", level: 2 },
-        { id: "cascade-effects", title: "Liquidation Cascades", level: 2 },
-        { id: "prevention", title: "Preventing Liquidation", level: 2 },
-        { id: "recovery", title: "After Getting Liquidated", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-liquidation-works", title: "How Liquidation Works", level: 2 },
+        { id: "liquidation-price", title: "liquidation-price", level: 2 },
+        { id: "calculating-liquidation-price", title: "Calculating Liquidation Price", level: 2 },
+        { id: "margin-types", title: "margin-types", level: 2 },
+        { id: "isolated-vs-cross-margin", title: "Isolated vs Cross Margin", level: 2 },
+        { id: "cascade-effects", title: "cascade-effects", level: 2 },
+        { id: "liquidation-cascades", title: "Liquidation Cascades", level: 2 },
+        { id: "prevention", title: "prevention", level: 2 },
+        { id: "preventing-liquidation", title: "Preventing Liquidation", level: 2 },
+        { id: "recovery", title: "recovery", level: 2 },
+        { id: "after-getting-liquidated", title: "After Getting Liquidated", level: 2 }
       ]}
       faqs={[
         { question: "Can I lose more than my deposit?", answer: "With isolated margin, your loss is limited to the margin allocated to that position. With cross margin, you can lose your entire account balance. Most exchanges have insurance funds that prevent negative balances, so you typically will not owe money beyond your account." },

@@ -16,10 +16,14 @@ export default function NftMarketingGuidePage() {
       readTime="10 min"
       intro="Marketing an NFT project requires a unique blend of Web3 community building, social media strategy, and traditional marketing principles. Effective marketing is essential for NFT project success from pre-launch through post-mint phases."
       toc={[
-        { id: "section-1", title: "NFT Marketing Fundamentals", level: 2 },
-        { id: "section-2", title: "Social Media Strategy", level: 2 },
-        { id: "section-3", title: "Launch Marketing", level: 2 },
-        { id: "section-4", title: "Post-Mint Marketing", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "nft-marketing-fundamentals", title: "NFT Marketing Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "social-media-strategy", title: "Social Media Strategy", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "launch-marketing", title: "Launch Marketing", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "post-mint-marketing", title: "Post-Mint Marketing", level: 2 }
       ]}
       faqs={[
         { question: "How do you market an NFT project?", answer: "NFT marketing combines community building on Discord and Twitter, influencer partnerships, collaborative promotions with other projects, content marketing showcasing the creative process, and strategic use of allowlists and pre-launch events to build anticipation." },

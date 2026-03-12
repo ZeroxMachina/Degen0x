@@ -18,12 +18,18 @@ export default function OnChainAnalysisGuidePage() {
       readTime="12 min read"
       intro="On-chain analysis examines data directly from the blockchain to understand investor behavior, network health, and market conditions. Unlike technical analysis which reads price charts, on-chain analysis looks at actual transaction flows, wallet balances, and network activity. This provides unique insights into what participants are doing, not just what prices are showing. For long-term investors, on-chain metrics can help identify market cycle extremes and improve accumulation and exit timing."
       toc={[
-        { id: "what-is-onchain", title: "What Is On-Chain Analysis?", level: 2 },
-        { id: "key-metrics", title: "Key On-Chain Metrics", level: 2 },
-        { id: "exchange-flows", title: "Exchange Flow Analysis", level: 2 },
-        { id: "holder-behavior", title: "Holder Behavior & Whale Watching", level: 2 },
-        { id: "cycle-indicators", title: "Market Cycle Indicators", level: 2 },
-        { id: "tools", title: "On-Chain Analysis Tools", level: 2 },
+        { id: "what-is-onchain", title: "what-is-onchain", level: 2 },
+        { id: "what-is-on-chain-analysis", title: "What Is On-Chain Analysis?", level: 2 },
+        { id: "key-metrics", title: "key-metrics", level: 2 },
+        { id: "key-on-chain-metrics", title: "Key On-Chain Metrics", level: 2 },
+        { id: "exchange-flows", title: "exchange-flows", level: 2 },
+        { id: "exchange-flow-analysis", title: "Exchange Flow Analysis", level: 2 },
+        { id: "holder-behavior", title: "holder-behavior", level: 2 },
+        { id: "holder-behavior-whale-watching", title: "Holder Behavior & Whale Watching", level: 2 },
+        { id: "cycle-indicators", title: "cycle-indicators", level: 2 },
+        { id: "market-cycle-indicators", title: "Market Cycle Indicators", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "on-chain-analysis-tools", title: "On-Chain Analysis Tools", level: 2 }
       ]}
       faqs={[
         { question: "Is on-chain analysis reliable?", answer: "On-chain analysis provides objective data about network activity and investor behavior. However, it is not a crystal ball. Metrics can be misinterpreted, and the relationship between on-chain data and price is not always immediate. Use it as one input alongside other analysis methods." },

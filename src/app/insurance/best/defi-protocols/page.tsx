@@ -31,7 +31,7 @@ const products: Product[] = [
     ],
     fees: "2-6% annually",
     bestFor: "Broad DeFi protocol coverage",
-    affiliateUrl: "https://cryptodegen.com/go/nexus-mutual",
+    affiliateUrl: "https://degen0x.com/go/nexus-mutual",
     category: "insurance",
     featured: true,
   },
@@ -53,7 +53,7 @@ const products: Product[] = [
     ],
     fees: "1.5-5% annually",
     bestFor: "Multi-chain DeFi users",
-    affiliateUrl: "https://cryptodegen.com/go/insurace",
+    affiliateUrl: "https://degen0x.com/go/insurace",
     category: "insurance",
   },
   {
@@ -74,7 +74,7 @@ const products: Product[] = [
     ],
     fees: "2-4% annually",
     bestFor: "Cost-effective coverage for major protocols",
-    affiliateUrl: "https://cryptodegen.com/go/unslashed",
+    affiliateUrl: "https://degen0x.com/go/unslashed",
     category: "insurance",
   },
 ];
@@ -117,7 +117,7 @@ export default function DefiProtocolsInsurancePage() {
       <AffiliateDisclosure />
 
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best DeFi Protocol Insurance of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">
@@ -143,16 +143,16 @@ export default function DefiProtocolsInsurancePage() {
       </div>
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How DeFi Protocol Insurance Works</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How DeFi Protocol Insurance Works</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <p>
             DeFi protocol insurance creates a financial safety net for your deposited funds. When you purchase cover, you pay a premium (typically 2-6% annually) for a specific coverage amount and duration. If the covered protocol suffers a qualifying event, you can file a claim to recover your losses.
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong className="text-white">Covered Events:</strong> Smart contract exploits, oracle manipulation, governance attacks, economic design failures, and admin key compromises depending on the policy.</li>
-            <li><strong className="text-white">Claim Process:</strong> After an incident, you submit a claim with evidence of loss. Claims may be assessed by community vote (discretionary) or triggered automatically (parametric).</li>
-            <li><strong className="text-white">Coverage Duration:</strong> Most covers run for 30, 90, or 365 days. Some protocols offer perpetual cover that auto-renews until cancelled.</li>
-            <li><strong className="text-white">Payout Limits:</strong> Claims are paid up to your coverage amount, minus any applicable deductibles. Ensure your coverage matches your deposit size.</li>
+            <li><strong className="text-[var(--color-text)]">Covered Events:</strong> Smart contract exploits, oracle manipulation, governance attacks, economic design failures, and admin key compromises depending on the policy.</li>
+            <li><strong className="text-[var(--color-text)]">Claim Process:</strong> After an incident, you submit a claim with evidence of loss. Claims may be assessed by community vote (discretionary) or triggered automatically (parametric).</li>
+            <li><strong className="text-[var(--color-text)]">Coverage Duration:</strong> Most covers run for 30, 90, or 365 days. Some protocols offer perpetual cover that auto-renews until cancelled.</li>
+            <li><strong className="text-[var(--color-text)]">Payout Limits:</strong> Claims are paid up to your coverage amount, minus any applicable deductibles. Ensure your coverage matches your deposit size.</li>
           </ul>
         </div>
       </section>

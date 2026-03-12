@@ -16,10 +16,14 @@ export default function IpfsNftStoragePage() {
       readTime="10 min"
       intro="Where NFT media and metadata are stored is one of the most important yet overlooked aspects of NFT ownership. IPFS, Arweave, and on-chain storage each offer different guarantees for the permanence and accessibility of your NFT content."
       toc={[
-        { id: "section-1", title: "The Storage Problem", level: 2 },
-        { id: "section-2", title: "IPFS Deep Dive", level: 2 },
-        { id: "section-3", title: "Arweave and Alternatives", level: 2 },
-        { id: "section-4", title: "Best Practices for Creators", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "the-storage-problem", title: "The Storage Problem", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "ipfs-deep-dive", title: "IPFS Deep Dive", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "arweave-and-alternatives", title: "Arweave and Alternatives", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "best-practices-for-creators", title: "Best Practices for Creators", level: 2 }
       ]}
       faqs={[
         { question: "What is IPFS and why does it matter for NFTs?", answer: "IPFS is a decentralized file storage network that uses content addressing. Instead of storing files at a specific server URL, files are identified by their content hash. This means the data persists as long as any node on the network hosts it, making NFT content more durable." },

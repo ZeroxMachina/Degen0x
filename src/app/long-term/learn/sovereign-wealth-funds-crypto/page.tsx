@@ -16,10 +16,14 @@ export default function SovereignWealthFundsCryptoPage() {
       readTime="10 min"
       intro="Sovereign wealth funds managing trillions in assets are beginning to explore cryptocurrency allocations, representing a potentially transformative source of demand for digital assets with implications for long-term price trajectories."
       toc={[
-        { id: "section-1", title: "Sovereign Fund Landscape", level: 2 },
-        { id: "section-2", title: "Crypto Allocation Rationale", level: 2 },
-        { id: "section-3", title: "Current Activity", level: 2 },
-        { id: "section-4", title: "Implications for Investors", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "sovereign-fund-landscape", title: "Sovereign Fund Landscape", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "crypto-allocation-rationale", title: "Crypto Allocation Rationale", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "current-activity", title: "Current Activity", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "implications-for-investors", title: "Implications for Investors", level: 2 }
       ]}
       faqs={[
         { question: "Are sovereign wealth funds investing in crypto?", answer: "Several sovereign wealth funds have begun exploring or making crypto investments. Norway's Government Pension Fund has indirect exposure through MicroStrategy holdings. Abu Dhabi's Mubadala and Singapore's GIC have invested in crypto infrastructure companies. Direct Bitcoin holdings by sovereign funds remain limited but growing as regulatory frameworks mature." },

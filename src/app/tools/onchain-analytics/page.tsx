@@ -152,16 +152,6 @@ function generateGasData(): GasData[] {
 }
 
 /* ──────────────── Metadata ──────────────── */
-export const metadata: Metadata = {
-  title: 'On-Chain Analytics Dashboard | Real-Time Blockchain Metrics',
-  description: 'Monitor network activity, TVL, TPS, and gas fees across top blockchains. Track DeFi protocol health with live metrics for Ethereum, Solana, Bitcoin, Arbitrum, Base, and Polygon.',
-  keywords: 'blockchain analytics, on-chain metrics, network activity, TVL, TPS, gas fees, DeFi protocols',
-  openGraph: {
-    title: 'On-Chain Analytics Dashboard',
-    description: 'Real-time blockchain metrics and DeFi protocol health tracking.',
-    type: 'website',
-  },
-};
 
 /* ──────────────── Color Helpers ──────────────── */
 function getChangeColor(val: number): string {
@@ -268,8 +258,8 @@ export default function OnChainAnalyticsDashboard() {
                 onClick={() => setSelectedChain(chain)}
                 className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all ${
                   selectedChain === chain
-                    ? 'bg-cyan-600 text-white'
-                    : 'bg-[#161b22] border border-gray-700 text-gray-400 hover:text-white hover:bg-[#1c2330]'
+                    ? 'bg-cyan-600 text-[var(--color-text)]'
+                    : 'bg-[#161b22] border border-gray-700 text-gray-400 hover:text-[var(--color-text)] hover:bg-[#1c2330]'
                 }`}
               >
                 {chain}
@@ -363,7 +353,7 @@ export default function OnChainAnalyticsDashboard() {
                       className="h-full bg-gradient-to-r from-cyan-500 to-blue-600 transition-all duration-300 flex items-center justify-end pr-2"
                       style={{ width: `${percentage}%` }}
                     >
-                      {percentage > 15 && <span className="text-xs font-bold text-white">{percentage.toFixed(0)}%</span>}
+                      {percentage > 15 && <span className="text-xs font-bold text-[var(--color-text)]">{percentage.toFixed(0)}%</span>}
                     </div>
                   </div>
                 </div>
@@ -383,8 +373,8 @@ export default function OnChainAnalyticsDashboard() {
                   onClick={() => setSortBy(sort)}
                   className={`px-3 py-1 text-xs font-bold rounded transition-colors ${
                     sortBy === sort
-                      ? 'bg-purple-600 text-white'
-                      : 'bg-[#0d1117] text-gray-400 hover:text-white'
+                      ? 'bg-purple-600 text-[var(--color-text)]'
+                      : 'bg-[#0d1117] text-gray-400 hover:text-[var(--color-text)]'
                   }`}
                 >
                   {sort === 'tvl' ? 'TVL' : sort === 'users' ? 'Users' : 'Revenue'}

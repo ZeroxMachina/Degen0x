@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Mode Network (MODE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Mode Network (MODE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Mode Network (MODE), the Ethereum L2 focused on DeFi growth through sequencer fee sharing. Discover how it works, tokenomics, and how to buy MODE.",
 };
@@ -17,12 +17,18 @@ export default function ModePage() {
       readTime="8 min read"
       intro="Mode Network is an Ethereum Layer 2 built on the OP Stack (Optimism's technology) that focuses on growing DeFi through a unique economic model of sequencer fee sharing and developer incentives. Mode shares a portion of its sequencer revenue directly with developers and protocols building on the network, creating a cooperative flywheel where ecosystem growth benefits all participants. MODE is the governance token of the network."
       toc={[
-        { id: "what-is", title: "What Is Mode Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Mode Work?", level: 2 },
-        { id: "tokenomics", title: "MODE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MODE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-mode-network", title: "What Is Mode Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-mode-work", title: "How Does Mode Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mode-tokenomics", title: "MODE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mode", title: "How to Buy MODE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

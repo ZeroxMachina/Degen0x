@@ -7,7 +7,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best NFT Marketplaces for Beginners in ${CURRENT_YEAR} | CryptoDegen`,
+  title: `Best NFT Marketplaces for Beginners in ${CURRENT_YEAR} | degen0x`,
   description: `Discover the best NFT marketplaces for beginners in ${CURRENT_YEAR}. Easy-to-use platforms with simple minting, intuitive browsing, and helpful onboarding for first-time NFT buyers and creators.`,
 };
 
@@ -41,7 +41,7 @@ export default function BestForBeginnersPage() {
     "@type": "Article",
     headline: `Best NFT Marketplaces for Beginners ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -57,7 +57,7 @@ export default function BestForBeginnersPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best NFT Marketplaces for Beginners in {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -77,7 +77,7 @@ export default function BestForBeginnersPage() {
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Top Picks for Beginners</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Top Picks for Beginners</h2>
           <div className="space-y-4">
             {filtered.map((marketplace, index) => (
               <ProductCard
@@ -91,7 +91,7 @@ export default function BestForBeginnersPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">What Beginners Should Look For</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Beginners Should Look For</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Simple Interface", desc: "Clean design with clear navigation, easy search, and straightforward buy/sell flows." },
@@ -100,7 +100,7 @@ export default function BestForBeginnersPage() {
               { title: "Educational Content", desc: "Built-in guides, tooltips, and help documentation for NFT newcomers." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}

@@ -8,11 +8,6 @@ import { CURRENT_YEAR } from "@/lib/constants";
 import { FAQ } from "@/lib/types";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Best Crypto Staking Platforms 2026 - Complete Comparison Guide",
-  description: "Compare 15+ crypto staking platforms including CEX staking (Coinbase, Kraken, Binance), liquid staking (Lido, Rocket Pool), and restaking (EigenLayer). Find the best APY, fees, and risk profiles.",
-  alternates: { canonical: "/investing/best/staking" },
-};
 
 interface StakingPlatform {
   rank: number;
@@ -58,7 +53,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "Custodial - Coinbase holds your keys",
       "Limited DeFi integrations for cbETH"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/coinbase",
+    affiliateUrl: "https://degen0x.com/go/coinbase",
     liquidStakingToken: "cbETH"
   },
   {
@@ -86,7 +81,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "No liquid staking derivatives",
       "Commission rates vary and not always transparent"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/kraken"
+    affiliateUrl: "https://degen0x.com/go/kraken"
   },
   {
     rank: 3,
@@ -113,7 +108,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "Limited liquid staking token integrations",
       "Platform complexity can overwhelm beginners"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/binance"
+    affiliateUrl: "https://degen0x.com/go/binance"
   },
   {
     rank: 4,
@@ -140,7 +135,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "Not available in all jurisdictions",
       "Limited DeFi composability"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/crypto.com"
+    affiliateUrl: "https://degen0x.com/go/crypto.com"
   },
 
   // Liquid Staking - Ethereum
@@ -169,7 +164,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "stETH can trade at small discount during volatility",
       "Governance by LDO token holders"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/lido",
+    affiliateUrl: "https://degen0x.com/go/lido",
     liquidStakingToken: "stETH"
   },
   {
@@ -197,7 +192,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "Node operators must stake RPL collateral",
       "Lower rETH liquidity compared to stETH"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/rocket-pool",
+    affiliateUrl: "https://degen0x.com/go/rocket-pool",
     liquidStakingToken: "rETH"
   },
   {
@@ -225,7 +220,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "More complex user experience",
       "Newer protocol (less battle-tested)"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/stakewise",
+    affiliateUrl: "https://degen0x.com/go/stakewise",
     liquidStakingToken: "osETH"
   },
 
@@ -255,7 +250,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "Curated validator set (not fully permissionless)",
       "JitoSOL liquidity can thin during network stress"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/jito",
+    affiliateUrl: "https://degen0x.com/go/jito",
     liquidStakingToken: "JitoSOL"
   },
   {
@@ -283,7 +278,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "Lower mSOL liquidity in some venues",
       "Native staking has longer unstaking periods"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/marinade",
+    affiliateUrl: "https://degen0x.com/go/marinade",
     liquidStakingToken: "mSOL"
   },
 
@@ -314,7 +309,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "Reward structures still evolving",
       "Emerging risks not fully understood"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/eigenlayer"
+    affiliateUrl: "https://degen0x.com/go/eigenlayer"
   },
   {
     rank: 11,
@@ -341,7 +336,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "Limited DeFi integrations compared to stETH",
       "Smart contract complexity risks"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/etherfi",
+    affiliateUrl: "https://degen0x.com/go/etherfi",
     liquidStakingToken: "eETH"
   },
   {
@@ -369,7 +364,7 @@ const stakingPlatforms: StakingPlatform[] = [
       "ezETH still building liquidity",
       "Complex reward mechanisms"
     ],
-    affiliateUrl: "https://cryptodegen.com/go/renzo",
+    affiliateUrl: "https://degen0x.com/go/renzo",
     liquidStakingToken: "ezETH"
   },
 ];
@@ -434,7 +429,7 @@ export default function BestStakingPage() {
 
       {/* Hero Section */}
       <header className="mb-12">
-        <h1 className="text-5xl font-bold text-white mb-4">
+        <h1 className="text-5xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Staking Platforms {CURRENT_YEAR}
         </h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">
@@ -443,17 +438,17 @@ export default function BestStakingPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
             <div className="text-sm text-[var(--color-text-secondary)]">Average APY Range</div>
-            <div className="text-2xl font-bold text-white mt-1">1% - 15%</div>
+            <div className="text-2xl font-bold text-[var(--color-text)] mt-1">1% - 15%</div>
             <div className="text-xs text-[var(--color-text-secondary)] mt-2">Varies by asset and platform</div>
           </div>
           <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
             <div className="text-sm text-[var(--color-text-secondary)]">Minimum Stake</div>
-            <div className="text-2xl font-bold text-white mt-1">$0 - $50</div>
+            <div className="text-2xl font-bold text-[var(--color-text)] mt-1">$0 - $50</div>
             <div className="text-xs text-[var(--color-text-secondary)] mt-2">Most platforms have no minimum</div>
           </div>
           <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
             <div className="text-sm text-[var(--color-text-secondary)]">Risk Levels</div>
-            <div className="text-2xl font-bold text-white mt-1">Low - High</div>
+            <div className="text-2xl font-bold text-[var(--color-text)] mt-1">Low - High</div>
             <div className="text-xs text-[var(--color-text-secondary)] mt-2">Choose based on your profile</div>
           </div>
         </div>
@@ -461,24 +456,24 @@ export default function BestStakingPage() {
 
       {/* Comprehensive Comparison Grid */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8">Staking Platforms Comparison</h2>
+        <h2 className="text-3xl font-bold text-[var(--color-text)] mb-8">Staking Platforms Comparison</h2>
 
         <div className="overflow-x-auto rounded-lg border border-[var(--color-border)]">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-[var(--color-border)] bg-[var(--color-bg-card)]">
-                <th className="px-6 py-4 text-left text-white font-semibold">Platform</th>
-                <th className="px-6 py-4 text-left text-white font-semibold">Type</th>
-                <th className="px-6 py-4 text-left text-white font-semibold">APY</th>
-                <th className="px-6 py-4 text-left text-white font-semibold">Min Stake</th>
-                <th className="px-6 py-4 text-left text-white font-semibold">Risk</th>
-                <th className="px-6 py-4 text-center text-white font-semibold">Rating</th>
+                <th className="px-6 py-4 text-left text-[var(--color-text)] font-semibold">Platform</th>
+                <th className="px-6 py-4 text-left text-[var(--color-text)] font-semibold">Type</th>
+                <th className="px-6 py-4 text-left text-[var(--color-text)] font-semibold">APY</th>
+                <th className="px-6 py-4 text-left text-[var(--color-text)] font-semibold">Min Stake</th>
+                <th className="px-6 py-4 text-left text-[var(--color-text)] font-semibold">Risk</th>
+                <th className="px-6 py-4 text-center text-[var(--color-text)] font-semibold">Rating</th>
               </tr>
             </thead>
             <tbody>
               {stakingPlatforms.map((platform, idx) => (
                 <tr key={idx} className="border-b border-[var(--color-border)] hover:bg-[var(--color-bg-hover)] transition-colors">
-                  <td className="px-6 py-4 text-white font-semibold">{platform.name}</td>
+                  <td className="px-6 py-4 text-[var(--color-text)] font-semibold">{platform.name}</td>
                   <td className="px-6 py-4 text-[var(--color-text-secondary)]">{platform.type}</td>
                   <td className="px-6 py-4 text-[var(--color-text-secondary)]">{platform.apyRange}</td>
                   <td className="px-6 py-4 text-[var(--color-text-secondary)]">{platform.minStake}</td>
@@ -491,7 +486,7 @@ export default function BestStakingPage() {
                       {platform.riskLevel}
                     </span>
                   </td>
-                  <td className="px-6 py-4 text-center text-white font-semibold">{platform.ourRating}/5.0</td>
+                  <td className="px-6 py-4 text-center text-[var(--color-text)] font-semibold">{platform.ourRating}/5.0</td>
                 </tr>
               ))}
             </tbody>
@@ -501,12 +496,12 @@ export default function BestStakingPage() {
 
       {/* Detailed Platform Cards */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8">Detailed Platform Reviews</h2>
+        <h2 className="text-3xl font-bold text-[var(--color-text)] mb-8">Detailed Platform Reviews</h2>
 
         <div className="space-y-8">
           {/* CEX Staking Section */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <h3 className="text-2xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="w-1 h-8 bg-blue-500 rounded"></span>
               Centralized Exchange (CEX) Staking
             </h3>
@@ -515,7 +510,7 @@ export default function BestStakingPage() {
                 <div key={idx} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 hover:border-blue-500/50 transition-colors">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h4 className="text-xl font-bold text-white">{platform.name}</h4>
+                      <h4 className="text-xl font-bold text-[var(--color-text)]">{platform.name}</h4>
                       <p className="text-sm text-[var(--color-text-secondary)] mt-1">{platform.type}</p>
                     </div>
                     <div className="text-right">
@@ -528,11 +523,11 @@ export default function BestStakingPage() {
                   <div className="grid grid-cols-2 gap-3 mb-4 text-sm">
                     <div>
                       <div className="text-xs text-[var(--color-text-secondary)]">APY Range</div>
-                      <div className="font-semibold text-white">{platform.apyRange}</div>
+                      <div className="font-semibold text-[var(--color-text)]">{platform.apyRange}</div>
                     </div>
                     <div>
                       <div className="text-xs text-[var(--color-text-secondary)]">Min Stake</div>
-                      <div className="font-semibold text-white">{platform.minStake}</div>
+                      <div className="font-semibold text-[var(--color-text)]">{platform.minStake}</div>
                     </div>
                   </div>
 
@@ -577,7 +572,7 @@ export default function BestStakingPage() {
                     </div>
                   </div>
 
-                  <Link href={platform.affiliateUrl} target="_blank" className="w-full block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">
+                  <Link href={platform.affiliateUrl} target="_blank" className="w-full block text-center bg-blue-600 hover:bg-blue-700 text-[var(--color-text)] font-semibold py-2 rounded-lg transition-colors">
                     Visit Platform
                   </Link>
                 </div>
@@ -587,7 +582,7 @@ export default function BestStakingPage() {
 
           {/* Liquid Staking Section */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <h3 className="text-2xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="w-1 h-8 bg-purple-500 rounded"></span>
               Liquid Staking Protocols
             </h3>
@@ -596,7 +591,7 @@ export default function BestStakingPage() {
                 <div key={idx} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 hover:border-purple-500/50 transition-colors">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h4 className="text-xl font-bold text-white">{platform.name}</h4>
+                      <h4 className="text-xl font-bold text-[var(--color-text)]">{platform.name}</h4>
                       <p className="text-sm text-[var(--color-text-secondary)] mt-1">{platform.type}</p>
                     </div>
                     <div className="text-right">
@@ -609,11 +604,11 @@ export default function BestStakingPage() {
                   <div className="grid grid-cols-2 gap-3 mb-4 text-sm">
                     <div>
                       <div className="text-xs text-[var(--color-text-secondary)]">APY Range</div>
-                      <div className="font-semibold text-white">{platform.apyRange}</div>
+                      <div className="font-semibold text-[var(--color-text)]">{platform.apyRange}</div>
                     </div>
                     <div>
                       <div className="text-xs text-[var(--color-text-secondary)]">Min Stake</div>
-                      <div className="font-semibold text-white">{platform.minStake}</div>
+                      <div className="font-semibold text-[var(--color-text)]">{platform.minStake}</div>
                     </div>
                   </div>
 
@@ -651,7 +646,7 @@ export default function BestStakingPage() {
                     </div>
                   </div>
 
-                  <Link href={platform.affiliateUrl} target="_blank" className="w-full block text-center bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 rounded-lg transition-colors">
+                  <Link href={platform.affiliateUrl} target="_blank" className="w-full block text-center bg-purple-600 hover:bg-purple-700 text-[var(--color-text)] font-semibold py-2 rounded-lg transition-colors">
                     Visit Protocol
                   </Link>
                 </div>
@@ -661,7 +656,7 @@ export default function BestStakingPage() {
 
           {/* Restaking Section */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <h3 className="text-2xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="w-1 h-8 bg-orange-500 rounded"></span>
               Restaking Protocols (Advanced)
             </h3>
@@ -670,7 +665,7 @@ export default function BestStakingPage() {
                 <div key={idx} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 hover:border-orange-500/50 transition-colors">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h4 className="text-xl font-bold text-white">{platform.name}</h4>
+                      <h4 className="text-xl font-bold text-[var(--color-text)]">{platform.name}</h4>
                       <p className="text-sm text-[var(--color-text-secondary)] mt-1">{platform.type}</p>
                     </div>
                     <div className="text-right">
@@ -683,11 +678,11 @@ export default function BestStakingPage() {
                   <div className="grid grid-cols-2 gap-3 mb-4 text-sm">
                     <div>
                       <div className="text-xs text-[var(--color-text-secondary)]">APY Range</div>
-                      <div className="font-semibold text-white">{platform.apyRange}</div>
+                      <div className="font-semibold text-[var(--color-text)]">{platform.apyRange}</div>
                     </div>
                     <div>
                       <div className="text-xs text-[var(--color-text-secondary)]">Lock Period</div>
-                      <div className="font-semibold text-white">{platform.lockPeriod}</div>
+                      <div className="font-semibold text-[var(--color-text)]">{platform.lockPeriod}</div>
                     </div>
                   </div>
 
@@ -725,7 +720,7 @@ export default function BestStakingPage() {
                     </div>
                   </div>
 
-                  <Link href={platform.affiliateUrl} target="_blank" className="w-full block text-center bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 rounded-lg transition-colors">
+                  <Link href={platform.affiliateUrl} target="_blank" className="w-full block text-center bg-orange-600 hover:bg-orange-700 text-[var(--color-text)] font-semibold py-2 rounded-lg transition-colors">
                     Visit Protocol
                   </Link>
                 </div>
@@ -737,7 +732,7 @@ export default function BestStakingPage() {
 
       {/* How Staking Works Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8">How Cryptocurrency Staking Works</h2>
+        <h2 className="text-3xl font-bold text-[var(--color-text)] mb-8">How Cryptocurrency Staking Works</h2>
 
         <div className="space-y-6">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
@@ -746,28 +741,28 @@ export default function BestStakingPage() {
                 <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-blue-400">1</span>
                 </div>
-                <h4 className="text-lg font-bold text-white mb-2">Deposit Cryptocurrency</h4>
+                <h4 className="text-lg font-bold text-[var(--color-text)] mb-2">Deposit Cryptocurrency</h4>
                 <p className="text-sm text-[var(--color-text-secondary)]">Send your crypto to a staking platform (CEX, liquid staking protocol, or restaking service)</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-purple-400">2</span>
                 </div>
-                <h4 className="text-lg font-bold text-white mb-2">Become a Validator</h4>
+                <h4 className="text-lg font-bold text-[var(--color-text)] mb-2">Become a Validator</h4>
                 <p className="text-sm text-[var(--color-text-secondary)]">Your coins are locked to validate transactions and secure the network</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-green-400">3</span>
                 </div>
-                <h4 className="text-lg font-bold text-white mb-2">Earn Rewards</h4>
+                <h4 className="text-lg font-bold text-[var(--color-text)] mb-2">Earn Rewards</h4>
                 <p className="text-sm text-[var(--color-text-secondary)]">Receive newly issued tokens and transaction fees as validator rewards</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-orange-400">4</span>
                 </div>
-                <h4 className="text-lg font-bold text-white mb-2">Withdraw Anytime</h4>
+                <h4 className="text-lg font-bold text-[var(--color-text)] mb-2">Withdraw Anytime</h4>
                 <p className="text-sm text-[var(--color-text-secondary)]">Unstake your coins (instant on liquid protocols, days on others)</p>
               </div>
             </div>
@@ -785,17 +780,17 @@ export default function BestStakingPage() {
 
       {/* Comparison Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8">Staking vs Yield Farming vs Lending</h2>
+        <h2 className="text-3xl font-bold text-[var(--color-text)] mb-8">Staking vs Yield Farming vs Lending</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-            <h3 className="text-xl font-bold text-white mb-4">Staking</h3>
+            <h3 className="text-xl font-bold text-[var(--color-text)] mb-4">Staking</h3>
             <div className="space-y-3 text-sm text-[var(--color-text-secondary)]">
-              <p><span className="font-semibold text-white">APY:</span> 1-15% (varies by asset)</p>
-              <p><span className="font-semibold text-white">Risk:</span> Low to Medium (depends on platform)</p>
-              <p><span className="font-semibold text-white">Process:</span> Lock coins to validate network transactions</p>
-              <p><span className="font-semibold text-white">Lock:</span> None to 30 days (flexible on liquid protocols)</p>
-              <p><span className="font-semibold text-white">Best For:</span> Long-term holders wanting passive income</p>
+              <p><span className="font-semibold text-[var(--color-text)]">APY:</span> 1-15% (varies by asset)</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Risk:</span> Low to Medium (depends on platform)</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Process:</span> Lock coins to validate network transactions</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Lock:</span> None to 30 days (flexible on liquid protocols)</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Best For:</span> Long-term holders wanting passive income</p>
               <p className="text-xs border-t border-[var(--color-border)] pt-3 mt-3">
                 Safest passive crypto income. Your coins help secure the network. Minimal lock-up with liquid staking.
               </p>
@@ -803,13 +798,13 @@ export default function BestStakingPage() {
           </div>
 
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-            <h3 className="text-xl font-bold text-white mb-4">Yield Farming</h3>
+            <h3 className="text-xl font-bold text-[var(--color-text)] mb-4">Yield Farming</h3>
             <div className="space-y-3 text-sm text-[var(--color-text-secondary)]">
-              <p><span className="font-semibold text-white">APY:</span> 5-100%+ (highly variable)</p>
-              <p><span className="font-semibold text-white">Risk:</span> Medium to High (smart contract risk)</p>
-              <p><span className="font-semibold text-white">Process:</span> Provide liquidity to DEX pools or lend to protocols</p>
-              <p><span className="font-semibold text-white">Lock:</span> None (but impermanent loss exposure)</p>
-              <p><span className="font-semibold text-white">Best For:</span> Active traders with high risk tolerance</p>
+              <p><span className="font-semibold text-[var(--color-text)]">APY:</span> 5-100%+ (highly variable)</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Risk:</span> Medium to High (smart contract risk)</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Process:</span> Provide liquidity to DEX pools or lend to protocols</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Lock:</span> None (but impermanent loss exposure)</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Best For:</span> Active traders with high risk tolerance</p>
               <p className="text-xs border-t border-[var(--color-border)] pt-3 mt-3">
                 Higher yields but volatile. Exposed to smart contract risk and impermanent loss if prices move.
               </p>
@@ -817,13 +812,13 @@ export default function BestStakingPage() {
           </div>
 
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-            <h3 className="text-xl font-bold text-white mb-4">Lending</h3>
+            <h3 className="text-xl font-bold text-[var(--color-text)] mb-4">Lending</h3>
             <div className="space-y-3 text-sm text-[var(--color-text-secondary)]">
-              <p><span className="font-semibold text-white">APY:</span> 2-20% (varies by token/platform)</p>
-              <p><span className="font-semibold text-white">Risk:</span> Medium (lending/liquidation risks)</p>
-              <p><span className="font-semibold text-white">Process:</span> Deposit coins to lending protocol, earn interest</p>
-              <p><span className="font-semibold text-white">Lock:</span> None (can withdraw anytime)</p>
-              <p><span className="font-semibold text-white">Best For:</span> Conservative income-seekers</p>
+              <p><span className="font-semibold text-[var(--color-text)]">APY:</span> 2-20% (varies by token/platform)</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Risk:</span> Medium (lending/liquidation risks)</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Process:</span> Deposit coins to lending protocol, earn interest</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Lock:</span> None (can withdraw anytime)</p>
+              <p><span className="font-semibold text-[var(--color-text)]">Best For:</span> Conservative income-seekers</p>
               <p className="text-xs border-t border-[var(--color-border)] pt-3 mt-3">
                 Middle ground between staking and yield farming. Flexible but less risk-adjusted returns than staking.
               </p>
@@ -834,7 +829,7 @@ export default function BestStakingPage() {
 
       {/* Risk Considerations Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8">Risk Considerations When Staking</h2>
+        <h2 className="text-3xl font-bold text-[var(--color-text)] mb-8">Risk Considerations When Staking</h2>
 
         <div className="space-y-6">
           <div className="rounded-xl border border-red-500/20 bg-red-500/5 p-8">

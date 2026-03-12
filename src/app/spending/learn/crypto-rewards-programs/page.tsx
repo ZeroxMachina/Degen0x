@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Rewards Programs (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Rewards Programs (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto rewards programs. Earn Bitcoin, Ethereum, and other crypto through cashback, shopping, browsing, and everyday activities.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoRewardsProgramsPage() {
     <LearnPageLayout title="Best Crypto Rewards Programs" categoryName="Crypto Spending" categorySlug="spending" readTime="8 min read"
       intro="Crypto rewards programs let you earn cryptocurrency through activities you already do: shopping, using credit cards, browsing the web, exercising, and more. These programs provide a low-risk way to accumulate crypto without making direct purchases. While individual rewards may seem small, they compound over time, and if the earned crypto appreciates, the effective reward rate can be significantly higher than traditional cashback programs."
       toc={[
-        { id: "card-rewards", title: "Credit and Debit Card Rewards", level: 2 },
-        { id: "shopping-rewards", title: "Shopping and Cashback", level: 2 },
-        { id: "browser-rewards", title: "Browser and App Rewards", level: 2 },
-        { id: "maximizing", title: "Maximizing Your Rewards", level: 2 },
+        { id: "card-rewards", title: "card-rewards", level: 2 },
+        { id: "credit-and-debit-card-rewards", title: "Credit and Debit Card Rewards", level: 2 },
+        { id: "shopping-rewards", title: "shopping-rewards", level: 2 },
+        { id: "shopping-and-cashback", title: "Shopping and Cashback", level: 2 },
+        { id: "browser-rewards", title: "browser-rewards", level: 2 },
+        { id: "browser-and-app-rewards", title: "Browser and App Rewards", level: 2 },
+        { id: "maximizing", title: "maximizing", level: 2 },
+        { id: "maximizing-your-rewards", title: "Maximizing Your Rewards", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto rewards taxable?", answer: "Generally, yes. In the US, crypto rewards are typically treated as ordinary income at the fair market value when received. Some argue that credit card cashback is a discount rather than income, but the IRS has not provided clear guidance on crypto-specific cashback. Keep records of all rewards received for tax reporting. Consult a tax professional for guidance specific to your situation." },

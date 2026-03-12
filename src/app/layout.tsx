@@ -14,12 +14,13 @@ import ReadingProgress from "@/components/ReadingProgress";
 import BackToTop from "@/components/BackToTop";
 import CookieConsent from "@/components/CookieConsent";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/constants";
+import RiskDisclaimer from "@/components/RiskDisclaimer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_NAME} - The NerdWallet of Crypto | Compare Exchanges, Wallets & DeFi`,
+    default: `${SITE_NAME} - Compare Crypto Exchanges, Wallets & DeFi`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: `${SITE_NAME} - The NerdWallet of Crypto`,
+        alt: `${SITE_NAME} - Compare Crypto Exchanges, Wallets & DeFi`,
         type: "image/png",
       },
     ],
@@ -82,6 +83,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-D043RT3BPM" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-D043RT3BPM');`,
+          }}
+        />
         <link rel="dns-prefetch" href="https://api.coingecko.com" />
         <link rel="preconnect" href="https://api.coingecko.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
@@ -97,7 +104,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t)}else if(window.matchMedia('(prefers-color-scheme:dark)').matches){document.documentElement.setAttribute('data-theme','dark')}else{document.documentElement.setAttribute('data-theme','light')}}catch(e){}})()`,
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t)}else{document.documentElement.setAttribute('data-theme','light')}}catch(e){}})()`,
           }}
         />
       </head>
@@ -105,11 +112,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WalletProvider>
           <DegenModeProvider>
             <ThemeProvider>
-              <MarketStatsBar />
               <Header />
-              <PriceTicker />
-              <TrustBar />
-              <main className="min-h-screen">{children}</main>
+              <main className="min-h-screen">
+                {children}
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                  <RiskDisclaimer />
+                </div>
+              </main>
               <Footer />
               <ReadingProgress />
               <BackToTop />

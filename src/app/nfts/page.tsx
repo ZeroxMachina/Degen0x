@@ -101,7 +101,7 @@ export default function NftsPage() {
     "@type": "CollectionPage",
     name: `Best NFT Marketplaces of ${CURRENT_YEAR}`,
     description: `Compare the best NFT marketplaces of ${CURRENT_YEAR}. Expert reviews, fee comparisons, and creator tools analysis.`,
-    url: "https://cryptodegen.com/nfts",
+    url: "https://degen0x.com/nfts",
     isPartOf: { "@type": "WebSite", name: SITE_NAME },
   };
 
@@ -120,7 +120,7 @@ export default function NftsPage() {
         />
 
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
             NFT Marketplaces Hub
           </h1>
           <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -133,7 +133,7 @@ export default function NftsPage() {
         {/* Top Marketplaces Quick Look */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white">Top-Rated NFT Marketplaces</h2>
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Top-Rated NFT Marketplaces</h2>
             <Link
               href="/nfts/best"
               className="text-[var(--color-primary)] hover:underline text-sm font-medium"
@@ -156,7 +156,7 @@ export default function NftsPage() {
 
         {/* Best-Of Categories */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Find the Best NFT Marketplace For You</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Find the Best NFT Marketplace For You</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {bestOfLinks.map((link) => (
               <Link
@@ -164,7 +164,7 @@ export default function NftsPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
-                <h3 className="text-white font-semibold mb-1">{link.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">
                   {link.description}
                 </p>
@@ -175,7 +175,7 @@ export default function NftsPage() {
 
         {/* Marketplace Reviews */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Marketplace Reviews</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Marketplace Reviews</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {reviewLinks.map((review) => (
               <Link
@@ -183,7 +183,7 @@ export default function NftsPage() {
                 href={`/nfts/reviews/${review.slug}`}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover text-center block"
               >
-                <span className="text-white font-semibold">{review.name}</span>
+                <span className="text-[var(--color-text)] font-semibold">{review.name}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                   Full Review
                 </span>
@@ -194,7 +194,7 @@ export default function NftsPage() {
 
         {/* Comparisons */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Head-to-Head Comparisons</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Head-to-Head Comparisons</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {compareLinks.map((link) => (
               <Link
@@ -202,7 +202,7 @@ export default function NftsPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >
-                <span className="text-white font-semibold">{link.title}</span>
+                <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                   Detailed comparison &rarr;
                 </span>
@@ -213,7 +213,7 @@ export default function NftsPage() {
 
         {/* Tools */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Tools & Calculators</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Tools & Calculators</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {toolLinks.map((tool) => (
               <Link
@@ -221,7 +221,7 @@ export default function NftsPage() {
                 href={tool.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
-                <h3 className="text-white font-semibold mb-1">{tool.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{tool.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">
                   {tool.description}
                 </p>
@@ -232,7 +232,7 @@ export default function NftsPage() {
 
         {/* Learn Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Learn About NFTs</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn About NFTs</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {learnLinks.map((link) => (
               <Link
@@ -240,7 +240,7 @@ export default function NftsPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >
-                <span className="text-white font-semibold">{link.title}</span>
+                <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                   Read guide &rarr;
                 </span>
@@ -251,7 +251,7 @@ export default function NftsPage() {
 
         {/* About Section */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">How We Review NFT Marketplaces</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Review NFT Marketplaces</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Our NFT marketplace reviews are based on rigorous hands-on testing. Each platform is evaluated
             across multiple categories including fees, user experience, creator tools, supported blockchains,

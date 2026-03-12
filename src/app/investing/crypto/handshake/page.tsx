@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Handshake (HNS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Handshake (HNS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Handshake (HNS), the decentralized naming and certificate authority. Discover how it works, tokenomics, use cases, and how to buy HNS.",
 };
 
 export default function HandshakePage() {
   return (
-    <LearnPageLayout title="What Is Handshake (HNS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Handshake is a decentralized, permissionless naming protocol that aims to replace the centralized certificate authority and naming system that underpins the internet. Rather than offering subdomains under existing extensions, Handshake enables the creation and ownership of entirely new top-level domains (TLDs) through an on-chain auction system, directly challenging ICANN's monopoly over internet naming." toc={[{id:"what-is",title:"What Is Handshake?",level:2},{id:"how-it-works",title:"How Does Handshake Work?",level:2},{id:"tokenomics",title:"HNS Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy HNS",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Handshake?",answer:"Handshake is a decentralized protocol for creating and owning internet top-level domains through blockchain auctions, aiming to decentralize DNS and certificate authorities."},{question:"Where can I buy HNS?",answer:"HNS is available on Gate.io and Namebase. It trades against USDT and BTC pairs. Handshake names are auctioned on Namebase or Bob Wallet."},{question:"Is Handshake a good investment?",answer:"Handshake tackles internet infrastructure decentralization, but adoption of alternative TLDs has been slow. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Handshake (HNS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Handshake is a decentralized, permissionless naming protocol that aims to replace the centralized certificate authority and naming system that underpins the internet. Rather than offering subdomains under existing extensions, Handshake enables the creation and ownership of entirely new top-level domains (TLDs) through an on-chain auction system, directly challenging ICANN's monopoly over internet naming." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-handshake", title: "What Is Handshake?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-handshake-work", title: "How Does Handshake Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "hns-tokenomics", title: "HNS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-hns", title: "How to Buy HNS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Handshake?",answer:"Handshake is a decentralized protocol for creating and owning internet top-level domains through blockchain auctions, aiming to decentralize DNS and certificate authorities."},{question:"Where can I buy HNS?",answer:"HNS is available on Gate.io and Namebase. It trades against USDT and BTC pairs. Handshake names are auctioned on Namebase or Bob Wallet."},{question:"Is Handshake a good investment?",answer:"Handshake tackles internet infrastructure decentralization, but adoption of alternative TLDs has been slow. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"}]}>
       <h2 id="what-is">What Is Handshake?</h2>
       <p>Handshake was conceived by a team of experienced crypto developers including Joseph Poon (co-creator of the Lightning Network) and Andrew Lee, backed by prominent crypto investors and venture firms. The project tackles a fundamental internet infrastructure challenge: the centralized control of domain names and TLS certificates by ICANN and a small number of certificate authorities. Handshake proposes replacing this centralized trust model with a blockchain-based system where TLD ownership is determined by permissionless auctions.</p>
       <p>Unlike blockchain naming services that operate as subdomains (like .eth under ENS), Handshake enables ownership of root-level TLDs like .wallet, .crypto, or entirely custom extensions. These TLDs are resolved through a peer-to-peer DNS system that replaces the traditional root zone file. The project reserved all existing ICANN TLDs and Alexa top 100,000 domain names to avoid conflicts with the existing internet naming system.</p>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Become a Blockchain Validator (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Become a Blockchain Validator (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to become a blockchain validator, the requirements for different networks, staking economics, and the responsibilities of running a validator node.",
 };
@@ -17,10 +17,14 @@ export default function ValidatorGuidePage() {
       readTime="10 min read"
       intro="Validators are the nodes responsible for proposing and attesting to new blocks on proof-of-stake blockchains. Running a validator requires staking tokens as collateral, maintaining high-uptime infrastructure, and accepting the responsibility of honest block production. In return, validators earn staking rewards and transaction fees. This guide covers the requirements, economics, and operational considerations for becoming a validator across major networks."
       toc={[
+        { id: "what-is-a-validator", title: "what-is-a-validator", level: 2 },
         { id: "what-is-a-validator", title: "What Is a Validator?", level: 2 },
-        { id: "requirements", title: "Validator Requirements by Network", level: 2 },
-        { id: "economics", title: "Validator Economics", level: 2 },
-        { id: "operational-best-practices", title: "Operational Best Practices", level: 2 },
+        { id: "requirements", title: "requirements", level: 2 },
+        { id: "validator-requirements-by-network", title: "Validator Requirements by Network", level: 2 },
+        { id: "economics", title: "economics", level: 2 },
+        { id: "validator-economics", title: "Validator Economics", level: 2 },
+        { id: "operational-best-practices", title: "operational-best-practices", level: 2 },
+        { id: "operational-best-practices", title: "Operational Best Practices", level: 2 }
       ]}
       faqs={[
         {

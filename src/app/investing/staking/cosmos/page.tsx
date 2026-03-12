@@ -18,12 +18,18 @@ export default function StakeCosmosPage() {
       readTime="9 min"
       intro="Cosmos staking lets ATOM holders earn approximately 14-20% APY while participating in governance of the Internet of Blockchains. Beyond regular staking rewards, ATOM stakers frequently receive airdrops from new Cosmos ecosystem projects, making it one of the most rewarding staking opportunities in crypto."
       toc={[
-        { id: "overview", title: "Cosmos Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake ATOM Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Cosmos", level: 2 },
-        { id: "validators", title: "Validators & Delegation", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "cosmos-staking-overview", title: "Cosmos Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-atom-step-by-step", title: "How to Stake ATOM Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-cosmos", title: "Risks of Staking Cosmos", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-delegation", title: "Validators & Delegation", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         {

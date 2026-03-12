@@ -30,7 +30,7 @@ export const CRYPTO_TOKENS: CryptoToken[] = [
     useCase: "Digital gold, store of value, peer-to-peer payments",
     website: "https://bitcoin.org",
     rating: 4.8,
-    affiliateUrl: "https://cryptodegen.com/go/buy-bitcoin",
+    affiliateUrl: "https://degen0x.com/go/buy-bitcoin",
   },
   {
     name: "Ethereum",
@@ -44,7 +44,7 @@ export const CRYPTO_TOKENS: CryptoToken[] = [
     useCase: "Smart contracts, DeFi, NFTs, dApps platform",
     website: "https://ethereum.org",
     rating: 4.7,
-    affiliateUrl: "https://cryptodegen.com/go/buy-ethereum",
+    affiliateUrl: "https://degen0x.com/go/buy-ethereum",
   },
   {
     name: "Solana",
@@ -58,7 +58,7 @@ export const CRYPTO_TOKENS: CryptoToken[] = [
     useCase: "High-speed DeFi, NFTs, payments, consumer apps",
     website: "https://solana.com",
     rating: 4.5,
-    affiliateUrl: "https://cryptodegen.com/go/buy-solana",
+    affiliateUrl: "https://degen0x.com/go/buy-solana",
   },
   {
     name: "Cardano",
@@ -72,7 +72,7 @@ export const CRYPTO_TOKENS: CryptoToken[] = [
     useCase: "Smart contracts, identity, supply chain, governance",
     website: "https://cardano.org",
     rating: 4.1,
-    affiliateUrl: "https://cryptodegen.com/go/buy-cardano",
+    affiliateUrl: "https://degen0x.com/go/buy-cardano",
   },
   {
     name: "Polkadot",
@@ -86,7 +86,7 @@ export const CRYPTO_TOKENS: CryptoToken[] = [
     useCase: "Cross-chain interoperability, parachains, shared security",
     website: "https://polkadot.network",
     rating: 4.0,
-    affiliateUrl: "https://cryptodegen.com/go/buy-polkadot",
+    affiliateUrl: "https://degen0x.com/go/buy-polkadot",
   },
   {
     name: "Avalanche",
@@ -100,7 +100,7 @@ export const CRYPTO_TOKENS: CryptoToken[] = [
     useCase: "DeFi, subnets, enterprise blockchains, gaming",
     website: "https://avax.network",
     rating: 4.2,
-    affiliateUrl: "https://cryptodegen.com/go/buy-avalanche",
+    affiliateUrl: "https://degen0x.com/go/buy-avalanche",
   },
   {
     name: "Chainlink",
@@ -114,7 +114,7 @@ export const CRYPTO_TOKENS: CryptoToken[] = [
     useCase: "Price feeds, VRF, cross-chain (CCIP), data oracles",
     website: "https://chain.link",
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/buy-chainlink",
+    affiliateUrl: "https://degen0x.com/go/buy-chainlink",
   },
   {
     name: "Polygon",
@@ -128,7 +128,7 @@ export const CRYPTO_TOKENS: CryptoToken[] = [
     useCase: "Ethereum scaling, zkEVM, enterprise solutions, gaming",
     website: "https://polygon.technology",
     rating: 4.1,
-    affiliateUrl: "https://cryptodegen.com/go/buy-polygon",
+    affiliateUrl: "https://degen0x.com/go/buy-polygon",
   },
   {
     name: "NEAR Protocol",
@@ -142,7 +142,7 @@ export const CRYPTO_TOKENS: CryptoToken[] = [
     useCase: "dApps, AI integration, chain abstraction, user-friendly Web3",
     website: "https://near.org",
     rating: 4.0,
-    affiliateUrl: "https://cryptodegen.com/go/buy-near",
+    affiliateUrl: "https://degen0x.com/go/buy-near",
   },
   {
     name: "Arbitrum",
@@ -156,7 +156,7 @@ export const CRYPTO_TOKENS: CryptoToken[] = [
     useCase: "Ethereum scaling, DeFi, Orbit chains, gaming",
     website: "https://arbitrum.io",
     rating: 4.3,
-    affiliateUrl: "https://cryptodegen.com/go/buy-arbitrum",
+    affiliateUrl: "https://degen0x.com/go/buy-arbitrum",
   },
 ];
 
@@ -172,7 +172,7 @@ export const TRADING_PLATFORMS: Product[] = [
     cons: ["Higher fees on simple trades", "Customer support can be slow", "Limited advanced charting"],
     fees: "0%-0.60%",
     bestFor: "Beginners & US investors",
-    affiliateUrl: "https://cryptodegen.com/go/coinbase",
+    affiliateUrl: "https://degen0x.com/go/coinbase",
     category: "trading-platforms",
     featured: true,
   },
@@ -185,7 +185,7 @@ export const TRADING_PLATFORMS: Product[] = [
     cons: ["Regulatory challenges in some regions", "Complex interface for beginners", "US version is limited"],
     fees: "0.01%-0.10%",
     bestFor: "Active traders & global users",
-    affiliateUrl: "https://cryptodegen.com/go/binance",
+    affiliateUrl: "https://degen0x.com/go/binance",
     category: "trading-platforms",
     featured: true,
   },
@@ -198,7 +198,7 @@ export const TRADING_PLATFORMS: Product[] = [
     cons: ["No credit card purchases in US", "Fewer altcoins than competitors", "Mobile app could improve"],
     fees: "0%-0.26%",
     bestFor: "Security-focused investors",
-    affiliateUrl: "https://cryptodegen.com/go/kraken",
+    affiliateUrl: "https://degen0x.com/go/kraken",
     category: "trading-platforms",
   },
   {
@@ -210,7 +210,7 @@ export const TRADING_PLATFORMS: Product[] = [
     cons: ["Not available in the US", "Less regulated", "Newer to spot trading"],
     fees: "0.01%-0.10%",
     bestFor: "Derivatives & copy trading",
-    affiliateUrl: "https://cryptodegen.com/go/bybit",
+    affiliateUrl: "https://degen0x.com/go/bybit",
     category: "trading-platforms",
   },
   {
@@ -222,7 +222,7 @@ export const TRADING_PLATFORMS: Product[] = [
     cons: ["Not available in US", "Can be complex for beginners", "Customer support varies"],
     fees: "0.02%-0.10%",
     bestFor: "All-in-one crypto platform",
-    affiliateUrl: "https://cryptodegen.com/go/okx",
+    affiliateUrl: "https://degen0x.com/go/okx",
     category: "trading-platforms",
   },
 ];
@@ -237,7 +237,7 @@ export const STAKING_PLATFORMS: Product[] = [
     cons: ["Smart contract risk", "Staking spread fee", "Concentration concerns"],
     fees: "10% of rewards",
     bestFor: "ETH liquid staking",
-    affiliateUrl: "https://cryptodegen.com/go/lido",
+    affiliateUrl: "https://degen0x.com/go/lido",
     category: "staking",
     featured: true,
   },
@@ -250,7 +250,7 @@ export const STAKING_PLATFORMS: Product[] = [
     cons: ["Lower TVL than Lido", "Slightly lower APY", "More complex for node operators"],
     fees: "5-15% of rewards",
     bestFor: "Decentralized ETH staking",
-    affiliateUrl: "https://cryptodegen.com/go/rocket-pool",
+    affiliateUrl: "https://degen0x.com/go/rocket-pool",
     category: "staking",
   },
   {
@@ -262,7 +262,7 @@ export const STAKING_PLATFORMS: Product[] = [
     cons: ["Higher commission (25-35%)", "Custodial staking", "Lower net yields"],
     fees: "25-35% of rewards",
     bestFor: "Beginner stakers",
-    affiliateUrl: "https://cryptodegen.com/go/coinbase",
+    affiliateUrl: "https://degen0x.com/go/coinbase",
     category: "staking",
   },
   {
@@ -274,7 +274,7 @@ export const STAKING_PLATFORMS: Product[] = [
     cons: ["Solana-only", "Smart contract risk", "Variable APY"],
     fees: "~6% of rewards",
     bestFor: "SOL staking",
-    affiliateUrl: "https://cryptodegen.com/go/marinade",
+    affiliateUrl: "https://degen0x.com/go/marinade",
     category: "staking",
   },
   {
@@ -286,7 +286,7 @@ export const STAKING_PLATFORMS: Product[] = [
     cons: ["MEV rewards variable", "Solana-only", "Newer protocol", "Concentration risk"],
     fees: "4% of rewards",
     bestFor: "Maximum SOL staking yield",
-    affiliateUrl: "https://cryptodegen.com/go/jito",
+    affiliateUrl: "https://degen0x.com/go/jito",
     category: "staking",
   },
 ];
@@ -301,7 +301,7 @@ export const CRYPTO_ETFS: Product[] = [
     cons: ["No direct BTC ownership", "Management fee", "No staking/yield", "Market hours only"],
     fees: "0.25% expense ratio",
     bestFor: "Low-cost BTC exposure",
-    affiliateUrl: "https://cryptodegen.com/go/ibit",
+    affiliateUrl: "https://degen0x.com/go/ibit",
     category: "crypto-etfs",
     featured: true,
   },
@@ -314,7 +314,7 @@ export const CRYPTO_ETFS: Product[] = [
     cons: ["Slightly higher expense ratio", "No BTC ownership", "No staking", "Market hours only"],
     fees: "0.25% expense ratio",
     bestFor: "Fidelity account holders",
-    affiliateUrl: "https://cryptodegen.com/go/fbtc",
+    affiliateUrl: "https://degen0x.com/go/fbtc",
     category: "crypto-etfs",
   },
   {
@@ -326,7 +326,7 @@ export const CRYPTO_ETFS: Product[] = [
     cons: ["No staking rewards", "Management fee", "No smart contract interaction", "Market hours only"],
     fees: "0.25% expense ratio",
     bestFor: "ETH exposure in brokerage",
-    affiliateUrl: "https://cryptodegen.com/go/etha",
+    affiliateUrl: "https://degen0x.com/go/etha",
     category: "crypto-etfs",
   },
   {
@@ -338,7 +338,7 @@ export const CRYPTO_ETFS: Product[] = [
     cons: ["Highest expense ratio (1.5%)", "Ongoing fund outflows", "More expensive than competitors"],
     fees: "1.50% expense ratio",
     bestFor: "Existing GBTC holders",
-    affiliateUrl: "https://cryptodegen.com/go/gbtc",
+    affiliateUrl: "https://degen0x.com/go/gbtc",
     category: "crypto-etfs",
   },
   {
@@ -350,7 +350,7 @@ export const CRYPTO_ETFS: Product[] = [
     cons: ["Smaller AUM", "Less brand recognition", "Lower liquidity"],
     fees: "0.20% expense ratio",
     bestFor: "Crypto-native investors wanting ETF exposure",
-    affiliateUrl: "https://cryptodegen.com/go/bitb",
+    affiliateUrl: "https://degen0x.com/go/bitb",
     category: "crypto-etfs",
   },
 ];
@@ -365,7 +365,7 @@ export const PORTFOLIO_BOTS: Product[] = [
     cons: ["Monthly subscription cost", "Learning curve", "Past security incident"],
     fees: "From $29/month",
     bestFor: "Automated DCA strategies",
-    affiliateUrl: "https://cryptodegen.com/go/3commas",
+    affiliateUrl: "https://degen0x.com/go/3commas",
     category: "portfolio-bots",
     featured: true,
   },
@@ -378,7 +378,7 @@ export const PORTFOLIO_BOTS: Product[] = [
     cons: ["Limited to Pionex exchange", "Smaller asset selection", "Less customization"],
     fees: "0.05% trading fee",
     bestFor: "Free automated trading",
-    affiliateUrl: "https://cryptodegen.com/go/pionex",
+    affiliateUrl: "https://degen0x.com/go/pionex",
     category: "portfolio-bots",
   },
   {
@@ -390,7 +390,7 @@ export const PORTFOLIO_BOTS: Product[] = [
     cons: ["Limited bot strategies", "Monthly fee", "Smaller user base"],
     fees: "From $15/month",
     bestFor: "Portfolio rebalancing",
-    affiliateUrl: "https://cryptodegen.com/go/shrimpy",
+    affiliateUrl: "https://degen0x.com/go/shrimpy",
     category: "portfolio-bots",
   },
   {
@@ -402,7 +402,7 @@ export const PORTFOLIO_BOTS: Product[] = [
     cons: ["Expensive higher tiers", "Complex setup", "Variable signal quality"],
     fees: "From $24.16/month",
     bestFor: "Strategy marketplace",
-    affiliateUrl: "https://cryptodegen.com/go/cryptohopper",
+    affiliateUrl: "https://degen0x.com/go/cryptohopper",
     category: "portfolio-bots",
   },
 ];
@@ -417,7 +417,7 @@ export const COPY_TRADING_PLATFORMS: Product[] = [
     cons: ["Not available in US", "Profit sharing fees", "Past performance not guaranteed"],
     fees: "10% profit sharing",
     bestFor: "Derivatives copy trading",
-    affiliateUrl: "https://cryptodegen.com/go/bybit",
+    affiliateUrl: "https://degen0x.com/go/bybit",
     category: "copy-trading",
     featured: true,
   },
@@ -430,7 +430,7 @@ export const COPY_TRADING_PLATFORMS: Product[] = [
     cons: ["Not available in US", "Fee structure complex", "Variable trader quality"],
     fees: "8-10% profit sharing",
     bestFor: "Spot copy trading",
-    affiliateUrl: "https://cryptodegen.com/go/okx",
+    affiliateUrl: "https://degen0x.com/go/okx",
     category: "copy-trading",
   },
   {
@@ -442,7 +442,7 @@ export const COPY_TRADING_PLATFORMS: Product[] = [
     cons: ["Higher spreads", "Limited crypto selection", "Withdrawal fees"],
     fees: "Spread-based",
     bestFor: "Social investing",
-    affiliateUrl: "https://cryptodegen.com/go/etoro",
+    affiliateUrl: "https://degen0x.com/go/etoro",
     category: "copy-trading",
   },
 ];
@@ -457,7 +457,7 @@ export const CRYPTO_APPS: Product[] = [
     cons: ["Higher fees on simple trades", "Can be slow during high traffic"],
     fees: "0%-0.60%",
     bestFor: "Beginners on mobile",
-    affiliateUrl: "https://cryptodegen.com/go/coinbase",
+    affiliateUrl: "https://degen0x.com/go/coinbase",
     category: "apps",
     featured: true,
   },
@@ -470,7 +470,7 @@ export const CRYPTO_APPS: Product[] = [
     cons: ["Complex fee structure", "CRO staking requirements", "App can be slow"],
     fees: "0%-0.075%",
     bestFor: "All-in-one crypto app",
-    affiliateUrl: "https://cryptodegen.com/go/crypto-com",
+    affiliateUrl: "https://degen0x.com/go/crypto-com",
     category: "apps",
   },
   {
@@ -482,7 +482,7 @@ export const CRYPTO_APPS: Product[] = [
     cons: ["No fiat on-ramp in all regions", "No customer support for lost keys", "Learning curve for DeFi"],
     fees: "No platform fees",
     bestFor: "Self-custody mobile wallet",
-    affiliateUrl: "https://cryptodegen.com/go/trust-wallet",
+    affiliateUrl: "https://degen0x.com/go/trust-wallet",
     category: "apps",
   },
   {
@@ -494,7 +494,7 @@ export const CRYPTO_APPS: Product[] = [
     cons: ["Limited to three chains", "No advanced trading", "Newer to ETH/BTC"],
     fees: "0.85% swap fee",
     bestFor: "Solana & multi-chain mobile",
-    affiliateUrl: "https://cryptodegen.com/go/phantom",
+    affiliateUrl: "https://degen0x.com/go/phantom",
     category: "apps",
   },
 ];
@@ -514,7 +514,7 @@ export const PLATFORM_COMPARISON: ComparisonItem[] = [
       "Minimum Deposit": "$1",
     },
     rating: 4.6,
-    affiliateUrl: "https://cryptodegen.com/go/coinbase",
+    affiliateUrl: "https://degen0x.com/go/coinbase",
   },
   {
     name: "Binance",
@@ -528,7 +528,7 @@ export const PLATFORM_COMPARISON: ComparisonItem[] = [
       "Minimum Deposit": "$1",
     },
     rating: 4.5,
-    affiliateUrl: "https://cryptodegen.com/go/binance",
+    affiliateUrl: "https://degen0x.com/go/binance",
   },
   {
     name: "Kraken",
@@ -542,7 +542,7 @@ export const PLATFORM_COMPARISON: ComparisonItem[] = [
       "Minimum Deposit": "$1",
     },
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/kraken",
+    affiliateUrl: "https://degen0x.com/go/kraken",
   },
 ];
 
@@ -559,7 +559,7 @@ export const ETF_COMPARISON: ComparisonItem[] = [
       "IRA Eligible": "Yes",
     },
     rating: 4.7,
-    affiliateUrl: "https://cryptodegen.com/go/ibit",
+    affiliateUrl: "https://degen0x.com/go/ibit",
   },
   {
     name: "FBTC (Fidelity)",
@@ -573,7 +573,7 @@ export const ETF_COMPARISON: ComparisonItem[] = [
       "IRA Eligible": "Yes",
     },
     rating: 4.5,
-    affiliateUrl: "https://cryptodegen.com/go/fbtc",
+    affiliateUrl: "https://degen0x.com/go/fbtc",
   },
   {
     name: "ETHA (BlackRock)",
@@ -587,7 +587,7 @@ export const ETF_COMPARISON: ComparisonItem[] = [
       "IRA Eligible": "Yes",
     },
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/etha",
+    affiliateUrl: "https://degen0x.com/go/etha",
   },
 ];
 
@@ -604,7 +604,7 @@ export const STAKING_COMPARISON: ComparisonItem[] = [
       "Type": "DeFi Protocol",
     },
     rating: 4.6,
-    affiliateUrl: "https://cryptodegen.com/go/lido",
+    affiliateUrl: "https://degen0x.com/go/lido",
   },
   {
     name: "Rocket Pool",
@@ -618,7 +618,7 @@ export const STAKING_COMPARISON: ComparisonItem[] = [
       "Type": "Decentralized Protocol",
     },
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/rocket-pool",
+    affiliateUrl: "https://degen0x.com/go/rocket-pool",
   },
   {
     name: "Coinbase",
@@ -632,7 +632,7 @@ export const STAKING_COMPARISON: ComparisonItem[] = [
       "Type": "Centralized Exchange",
     },
     rating: 4.3,
-    affiliateUrl: "https://cryptodegen.com/go/coinbase",
+    affiliateUrl: "https://degen0x.com/go/coinbase",
   },
 ];
 

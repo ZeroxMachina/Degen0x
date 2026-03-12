@@ -17,12 +17,18 @@ export default function BitcoinOrdinalsExplainedPage() {
       readTime="12 min"
       intro="Bitcoin Ordinals have brought NFT-like functionality to the world's oldest and most secure blockchain. Launched in January 2023, the Ordinals protocol allows users to inscribe data directly onto individual satoshis (the smallest unit of Bitcoin), creating unique digital artifacts that live permanently on the Bitcoin blockchain. This guide explains how Ordinals work, how they differ from traditional NFTs, and how to participate in this rapidly growing ecosystem."
       toc={[
-        { id: "what-are-ordinals", title: "What Are Bitcoin Ordinals?", level: 2 },
+        { id: "what-are-ordinals", title: "what-are-ordinals", level: 2 },
+        { id: "what-are-bitcoin-ordinals", title: "What Are Bitcoin Ordinals?", level: 2 },
+        { id: "how-inscriptions-work", title: "how-inscriptions-work", level: 2 },
         { id: "how-inscriptions-work", title: "How Inscriptions Work", level: 2 },
-        { id: "ordinals-vs-nfts", title: "Ordinals vs Ethereum NFTs", level: 2 },
-        { id: "buying-ordinals", title: "How to Buy Ordinals", level: 2 },
-        { id: "creating-inscriptions", title: "Creating Your Own Inscriptions", level: 2 },
-        { id: "brc20-and-runes", title: "BRC-20 Tokens and Runes", level: 2 },
+        { id: "ordinals-vs-nfts", title: "ordinals-vs-nfts", level: 2 },
+        { id: "ordinals-vs-ethereum-nfts", title: "Ordinals vs Ethereum NFTs", level: 2 },
+        { id: "buying-ordinals", title: "buying-ordinals", level: 2 },
+        { id: "how-to-buy-ordinals", title: "How to Buy Ordinals", level: 2 },
+        { id: "creating-inscriptions", title: "creating-inscriptions", level: 2 },
+        { id: "creating-your-own-inscriptions", title: "Creating Your Own Inscriptions", level: 2 },
+        { id: "brc20-and-runes", title: "brc20-and-runes", level: 2 },
+        { id: "brc-20-tokens-and-runes", title: "BRC-20 Tokens and Runes", level: 2 }
       ]}
       faqs={[
         {

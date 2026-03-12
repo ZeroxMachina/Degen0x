@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is an ASIC? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is an ASIC? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what ASIC miners are, how they work, their role in cryptocurrency mining, and how they compare to GPU mining. A complete guide to Application-Specific Integrated Circuits.",
 };
@@ -17,11 +17,16 @@ export default function AsicPage() {
       readTime="5 min"
       intro="An ASIC (Application-Specific Integrated Circuit) is a specialized piece of hardware designed to perform a single task with maximum efficiency. In cryptocurrency, ASICs are purpose-built to mine specific hashing algorithms, making them far more powerful and energy-efficient than general-purpose hardware like GPUs for mining."
       toc={[
-        { id: "definition", title: "What Is an ASIC?", level: 2 },
-        { id: "how-it-works", title: "How ASIC Mining Works", level: 2 },
-        { id: "asic-vs-gpu", title: "ASIC vs GPU Mining", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-an-asic", title: "What Is an ASIC?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-asic-mining-works", title: "How ASIC Mining Works", level: 2 },
+        { id: "asic-vs-gpu", title: "asic-vs-gpu", level: 2 },
+        { id: "asic-vs-gpu-mining", title: "ASIC vs GPU Mining", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "controversy", title: "The ASIC Debate", level: 2 },
+        { id: "controversy", title: "controversy", level: 2 },
+        { id: "the-asic-debate", title: "The ASIC Debate", level: 2 }
       ]}
       faqs={[
         {

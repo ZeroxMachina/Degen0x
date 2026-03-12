@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Kaspa (KAS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Kaspa (KAS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Kaspa (KAS), the fastest proof-of-work blockchain using BlockDAG technology. Discover how it works, tokenomics, use cases, and how to buy KAS.",
 };
@@ -17,12 +17,18 @@ export default function KaspaPage() {
       readTime="8 min read"
       intro="Kaspa is the fastest proof-of-work cryptocurrency, using a revolutionary BlockDAG (Directed Acyclic Graph) architecture called GhostDAG that allows multiple blocks to be created simultaneously. Unlike traditional blockchains where only one block can be added at a time, Kaspa processes blocks in parallel while maintaining full security."
       toc={[
-        { id: "what-is", title: "What Is Kaspa?", level: 2 },
-        { id: "how-it-works", title: "How Does Kaspa Work?", level: 2 },
-        { id: "tokenomics", title: "KAS Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy KAS", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-kaspa", title: "What Is Kaspa?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-kaspa-work", title: "How Does Kaspa Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "kas-tokenomics", title: "KAS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-kas", title: "How to Buy KAS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

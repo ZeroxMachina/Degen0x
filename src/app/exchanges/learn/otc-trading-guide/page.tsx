@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `OTC Crypto Trading Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `OTC Crypto Trading Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how OTC crypto trading works. Large block trades, OTC desks, pricing, settlement, and when over-the-counter trading makes sense.",
 };
 
@@ -16,13 +16,20 @@ export default function OTCTradingGuide() {
       readTime="8 min read"
       intro="Over-the-counter (OTC) crypto trading facilitates large trades without impacting public market prices. When institutions, high-net-worth individuals, or companies need to buy or sell significant amounts of cryptocurrency, OTC desks provide a discreet and efficient alternative to exchange order books. This guide explains how OTC trading works and who benefits from it."
       toc={[
-        { id: "what-is-otc", title: "What Is OTC Trading?", level: 2 },
-        { id: "how-it-works", title: "How OTC Desks Work", level: 2 },
-        { id: "pricing", title: "OTC Pricing and Fees", level: 2 },
-        { id: "types", title: "Types of OTC Services", level: 2 },
-        { id: "who-uses", title: "Who Uses OTC Trading?", level: 2 },
-        { id: "platforms", title: "Major OTC Platforms", level: 2 },
-        { id: "considerations", title: "Key Considerations", level: 2 },
+        { id: "what-is-otc", title: "what-is-otc", level: 2 },
+        { id: "what-is-otc-trading", title: "What Is OTC Trading?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-otc-desks-work", title: "How OTC Desks Work", level: 2 },
+        { id: "pricing", title: "pricing", level: 2 },
+        { id: "otc-pricing-and-fees", title: "OTC Pricing and Fees", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-otc-services", title: "Types of OTC Services", level: 2 },
+        { id: "who-uses", title: "who-uses", level: 2 },
+        { id: "who-uses-otc-trading", title: "Who Uses OTC Trading?", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "major-otc-platforms", title: "Major OTC Platforms", level: 2 },
+        { id: "considerations", title: "considerations", level: 2 },
+        { id: "key-considerations", title: "Key Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is the minimum for OTC trades?", answer: "OTC desk minimums typically range from $50,000 to $100,000, though some platforms have lowered minimums to $10,000. The exact minimum depends on the OTC desk and the asset being traded." },

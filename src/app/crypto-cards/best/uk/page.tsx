@@ -17,10 +17,14 @@ export default function BestCryptoCardsUKPage() {
       readTime="8 min"
       intro="UK crypto card users have unique considerations including GBP denomination, Faster Payments integration, and FCA regulatory requirements. Since Brexit, some EU crypto cards have changed their UK availability, making it important to verify current access. This guide covers the best crypto cards available specifically to UK residents and highlights UK-specific features and considerations."
       toc={[
-        { id: "uk-market", title: "UK Crypto Card Market", level: 2 },
-        { id: "top-uk-cards", title: "Top Cards for UK Users", level: 2 },
-        { id: "uk-regulations", title: "UK Regulatory Landscape", level: 2 },
-        { id: "tax-implications", title: "UK Tax Implications", level: 2 },
+        { id: "uk-market", title: "uk-market", level: 2 },
+        { id: "uk-crypto-card-market", title: "UK Crypto Card Market", level: 2 },
+        { id: "top-uk-cards", title: "top-uk-cards", level: 2 },
+        { id: "top-cards-for-uk-users", title: "Top Cards for UK Users", level: 2 },
+        { id: "uk-regulations", title: "uk-regulations", level: 2 },
+        { id: "uk-regulatory-landscape", title: "UK Regulatory Landscape", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "uk-tax-implications", title: "UK Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto cards legal in the UK?", answer: "Yes, crypto cards are legal in the UK. Card issuers that operate in the UK must comply with FCA regulations and anti-money laundering requirements. Most major crypto cards available in the UK are issued through FCA-registered entities or electronic money institutions." },

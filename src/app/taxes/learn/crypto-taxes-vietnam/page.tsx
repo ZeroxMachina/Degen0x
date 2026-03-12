@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Vietnam (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Vietnam (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Vietnam. Learn about the legal gray area, potential tax obligations, and how Vietnamese crypto users should approach compliance.",
 };
@@ -17,10 +17,14 @@ export default function CryptoTaxesVietnamPage() {
       readTime="7 min read"
       intro="Vietnam has one of the highest crypto adoption rates in the world, yet cryptocurrency exists in a legal and tax gray area. Crypto is not recognized as legal tender, and using it as a payment method is banned, but owning and trading crypto is not explicitly illegal. The Vietnamese government has been developing a regulatory framework, but comprehensive crypto tax legislation has not yet been enacted. Vietnamese crypto investors should understand the current landscape and prepare for upcoming regulations."
       toc={[
-        { id: "legal-status", title: "Legal Status of Crypto in Vietnam", level: 2 },
-        { id: "current-tax", title: "Current Tax Obligations", level: 2 },
+        { id: "legal-status", title: "legal-status", level: 2 },
+        { id: "legal-status-of-crypto-in-vietnam", title: "Legal Status of Crypto in Vietnam", level: 2 },
+        { id: "current-tax", title: "current-tax", level: 2 },
+        { id: "current-tax-obligations", title: "Current Tax Obligations", level: 2 },
+        { id: "upcoming-regulation", title: "upcoming-regulation", level: 2 },
         { id: "upcoming-regulation", title: "Upcoming Regulation", level: 2 },
-        { id: "practical-steps", title: "Practical Steps for Compliance", level: 2 },
+        { id: "practical-steps", title: "practical-steps", level: 2 },
+        { id: "practical-steps-for-compliance", title: "Practical Steps for Compliance", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Vietnam?", answer: "Crypto exists in a legal gray area. The State Bank of Vietnam has banned using crypto as a payment method, and crypto is not recognized as legal tender. However, owning, buying, and selling crypto as an investment or asset is not explicitly prohibited. The legal framework is evolving." },

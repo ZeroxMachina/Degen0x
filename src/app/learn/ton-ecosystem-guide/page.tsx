@@ -12,11 +12,16 @@ export default function TonEcosystemGuidePage() {
   return (
     <LearnPageLayout title="TON Ecosystem Guide" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="The Open Network (TON) is a Layer 1 blockchain deeply integrated with Telegram, the messaging app with over 900 million users. This unprecedented distribution advantage has made TON one of the fastest-growing blockchain ecosystems, with mini apps, games, and financial services reaching massive audiences directly through the Telegram interface."
       toc={[
-        { id: "overview", title: "TON Overview", level: 2 },
-        { id: "telegram", title: "Telegram Integration", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "ton-overview", title: "TON Overview", level: 2 },
+        { id: "telegram", title: "telegram", level: 2 },
+        { id: "telegram-integration", title: "Telegram Integration", level: 2 },
+        { id: "technology", title: "technology", level: 2 },
         { id: "technology", title: "Technology", level: 2 },
-        { id: "ecosystem", title: "Key Applications", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
+        { id: "key-applications", title: "Key Applications", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "Is TON owned by Telegram?", answer: "TON was originally developed by Telegram but became an independent open-source project after regulatory challenges. The TON Foundation now coordinates ecosystem development. However, Telegram actively integrates TON into its platform, providing the wallet infrastructure and mini app platform that drives adoption." },

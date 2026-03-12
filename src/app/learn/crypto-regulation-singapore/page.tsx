@@ -25,13 +25,20 @@ export default function CryptoRegulationSingaporePage() {
       readTime="14 min"
       intro="Singapore has positioned itself as one of the world's leading crypto and fintech hubs through a progressive yet rigorous regulatory framework. The Monetary Authority of Singapore (MAS) regulates crypto through the Payment Services Act 2019, which established a licensing regime for digital payment token (DPT) service providers. Singapore balances promoting innovation through its regulatory sandbox and forward-looking approach with strict consumer protection, AML compliance, and advertising restrictions. This guide covers the full regulatory landscape for crypto in Singapore."
       toc={[
-        { id: "mas-overview", title: "MAS and the Regulatory Approach", level: 2 },
-        { id: "payment-services-act", title: "Payment Services Act and DPT Licensing", level: 2 },
+        { id: "mas-overview", title: "mas-overview", level: 2 },
+        { id: "mas-and-the-regulatory-approach", title: "MAS and the Regulatory Approach", level: 2 },
+        { id: "payment-services-act", title: "payment-services-act", level: 2 },
+        { id: "payment-services-act-and-dpt-licensing", title: "Payment Services Act and DPT Licensing", level: 2 },
+        { id: "licensing-requirements", title: "licensing-requirements", level: 2 },
         { id: "licensing-requirements", title: "Licensing Requirements", level: 2 },
-        { id: "consumer-protection", title: "Consumer Protection and Advertising Rules", level: 2 },
-        { id: "stablecoin-framework", title: "Stablecoin Regulatory Framework", level: 2 },
-        { id: "tax-treatment", title: "Tax Treatment of Crypto", level: 2 },
-        { id: "future-outlook", title: "Future Regulatory Outlook", level: 2 },
+        { id: "consumer-protection", title: "consumer-protection", level: 2 },
+        { id: "consumer-protection-and-advertising-rules", title: "Consumer Protection and Advertising Rules", level: 2 },
+        { id: "stablecoin-framework", title: "stablecoin-framework", level: 2 },
+        { id: "stablecoin-regulatory-framework", title: "Stablecoin Regulatory Framework", level: 2 },
+        { id: "tax-treatment", title: "tax-treatment", level: 2 },
+        { id: "tax-treatment-of-crypto", title: "Tax Treatment of Crypto", level: 2 },
+        { id: "future-outlook", title: "future-outlook", level: 2 },
+        { id: "future-regulatory-outlook", title: "Future Regulatory Outlook", level: 2 }
       ]}
       faqs={[
         {

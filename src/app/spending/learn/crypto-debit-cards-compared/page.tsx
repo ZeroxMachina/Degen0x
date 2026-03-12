@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Debit Cards Compared (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Debit Cards Compared (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto debit cards. Fees, rewards, supported currencies, and features of top crypto cards for spending your digital assets.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoDebitCardsComparedPage() {
     <LearnPageLayout title="Crypto Debit Cards Compared" categoryName="Crypto Spending" categorySlug="spending" readTime="8 min read"
       intro="Crypto debit cards bridge the gap between your digital asset holdings and everyday spending. They convert cryptocurrency to fiat at the point of sale, allowing you to spend crypto anywhere that accepts traditional card payments. With multiple providers competing on rewards, fees, supported currencies, and features, choosing the right crypto debit card can significantly impact your spending experience and costs."
       toc={[
-        { id: "how-they-work", title: "How Crypto Debit Cards Work", level: 2 },
-        { id: "top-cards", title: "Top Crypto Debit Cards", level: 2 },
-        { id: "fees-rewards", title: "Fees and Rewards Comparison", level: 2 },
-        { id: "choosing", title: "Choosing the Right Card", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-crypto-debit-cards-work", title: "How Crypto Debit Cards Work", level: 2 },
+        { id: "top-cards", title: "top-cards", level: 2 },
+        { id: "top-crypto-debit-cards", title: "Top Crypto Debit Cards", level: 2 },
+        { id: "fees-rewards", title: "fees-rewards", level: 2 },
+        { id: "fees-and-rewards-comparison", title: "Fees and Rewards Comparison", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-the-right-card", title: "Choosing the Right Card", level: 2 }
       ]}
       faqs={[
         { question: "How do crypto debit cards work?", answer: "Crypto debit cards connect to your crypto holdings on the card provider's platform. When you make a purchase, the card provider automatically converts your crypto to fiat currency (USD, EUR, etc.) at the current market rate and processes the payment through Visa or Mastercard networks. The merchant receives fiat, and your crypto balance decreases by the equivalent amount plus any conversion fees." },

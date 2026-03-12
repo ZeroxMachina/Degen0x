@@ -17,10 +17,14 @@ export default function CryptoPayrollGuidePage() {
       readTime="10 min"
       intro="Crypto payroll is growing as more employees request salary payments in Bitcoin and other digital assets, and as companies with global teams seek efficient ways to pay international contractors. This guide covers the platforms, regulations, and best practices for implementing crypto payroll."
       toc={[
-        { id: "platforms", title: "Crypto Payroll Platforms", level: 2 },
-        { id: "employee-options", title: "Employee Payment Options", level: 2 },
-        { id: "contractor-payments", title: "International Contractor Payments", level: 2 },
-        { id: "compliance", title: "Tax and Compliance", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "crypto-payroll-platforms", title: "Crypto Payroll Platforms", level: 2 },
+        { id: "employee-options", title: "employee-options", level: 2 },
+        { id: "employee-payment-options", title: "Employee Payment Options", level: 2 },
+        { id: "contractor-payments", title: "contractor-payments", level: 2 },
+        { id: "international-contractor-payments", title: "International Contractor Payments", level: 2 },
+        { id: "compliance", title: "compliance", level: 2 },
+        { id: "tax-and-compliance", title: "Tax and Compliance", level: 2 }
       ]}
       faqs={[
         { question: "Can employers pay salaries in Bitcoin?", answer: "Yes, though regulations vary by jurisdiction. Most US states allow partial crypto salary payments with employee consent. Some states have specific requirements about minimum wage being paid in fiat." },

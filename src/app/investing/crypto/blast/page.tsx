@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Blast (BLAST)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Blast (BLAST)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Blast (BLAST), the Ethereum Layer 2 with native yield for ETH and stablecoins. Discover how it works, tokenomics, use cases, and how to buy BLAST.",
 };
@@ -17,12 +17,18 @@ export default function BlastPage() {
       readTime="8 min read"
       intro="Blast is an Ethereum Layer 2 optimistic rollup that distinguishes itself by providing native yield on ETH and stablecoins deposited on the network. Founded by Tieshun Roquerre (Pacman), the creator of Blur NFT marketplace, Blast automatically yields ETH deposits through Lido staking and stablecoin deposits through MakerDAO's DAI Savings Rate, passing this yield directly to users and dApps built on the network."
       toc={[
-        { id: "what-is", title: "What Is Blast?", level: 2 },
-        { id: "how-it-works", title: "How Does Blast Work?", level: 2 },
-        { id: "tokenomics", title: "BLAST Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy BLAST", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-blast", title: "What Is Blast?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-blast-work", title: "How Does Blast Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "blast-tokenomics", title: "BLAST Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-blast", title: "How to Buy BLAST", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

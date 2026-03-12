@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Wedge Pattern in Crypto Trading (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Wedge Pattern in Crypto Trading (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what wedge patterns are, the difference between rising and falling wedges, how they signal reversals or continuations, and trading strategies for crypto.",
 };
 
@@ -16,10 +16,14 @@ export default function WedgePage() {
       readTime="6 min read"
       intro="A wedge pattern is a chart formation where price converges between two sloping trendlines that move in the same direction. Rising wedges (both lines sloping upward) are typically bearish, while falling wedges (both lines sloping downward) are typically bullish. Wedges can appear as both reversal and continuation patterns depending on the context of the prior trend. They are common in crypto markets and provide clear breakout levels."
       toc={[
-        { id: "what-is-wedge", title: "What Is a Wedge Pattern?", level: 2 },
+        { id: "what-is-wedge", title: "what-is-wedge", level: 2 },
+        { id: "what-is-a-wedge-pattern", title: "What Is a Wedge Pattern?", level: 2 },
+        { id: "rising-wedge", title: "rising-wedge", level: 2 },
         { id: "rising-wedge", title: "Rising Wedge", level: 2 },
+        { id: "falling-wedge", title: "falling-wedge", level: 2 },
         { id: "falling-wedge", title: "Falling Wedge", level: 2 },
-        { id: "trading", title: "Trading Wedge Patterns", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-wedge-patterns", title: "Trading Wedge Patterns", level: 2 }
       ]}
       faqs={[
         { question: "How is a wedge different from a triangle?", answer: "In a wedge, both trendlines slope in the same direction (both up in a rising wedge, both down in a falling wedge). In triangles, the lines either converge from opposite directions (symmetrical), one is flat (ascending/descending), or both are flat. Wedges carry directional bias based on their slope direction." },

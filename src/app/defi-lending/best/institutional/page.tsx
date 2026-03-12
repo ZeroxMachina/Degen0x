@@ -17,10 +17,14 @@ export default function BestInstitutionalDefiLending() {
       readTime="10 min"
       intro="Institutional participation in DeFi lending has grown significantly, driven by attractive yield opportunities and improving compliance infrastructure. This guide examines the best DeFi lending platforms that meet institutional requirements including KYC/AML compliance, large transaction capacity, professional reporting, and risk management frameworks suitable for regulated entities."
       toc={[
+        { id: "institutional-requirements", title: "institutional-requirements", level: 2 },
         { id: "institutional-requirements", title: "Institutional Requirements", level: 2 },
-        { id: "compliant-protocols", title: "Compliance-Ready Protocols", level: 2 },
-        { id: "risk-management", title: "Institutional Risk Management", level: 2 },
-        { id: "operational", title: "Operational Considerations", level: 2 },
+        { id: "compliant-protocols", title: "compliant-protocols", level: 2 },
+        { id: "compliance-ready-protocols", title: "Compliance-Ready Protocols", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "institutional-risk-management", title: "Institutional Risk Management", level: 2 },
+        { id: "operational", title: "operational", level: 2 },
+        { id: "operational-considerations", title: "Operational Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Can regulated institutions use DeFi lending?", answer: "Yes, many regulated institutions participate in DeFi lending through compliance-ready platforms that offer KYC/AML, permissioned pools, and institutional reporting. The regulatory landscape varies by jurisdiction." },

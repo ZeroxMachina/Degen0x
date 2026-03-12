@@ -18,12 +18,18 @@ export default function ExchangeInsuranceExplainedPage() {
       readTime="10 min read"
       intro="One of the most common misconceptions in crypto is that funds on exchanges are fully insured. While major exchanges do provide some level of protection, the coverage is far more limited than most users realize. Understanding exactly what is and is not insured on crypto exchanges is essential for making informed decisions about where and how to store your digital assets."
       toc={[
-        { id: "fdic-coverage", title: "FDIC Coverage for USD Balances", level: 2 },
-        { id: "crime-insurance", title: "Exchange Crime Insurance", level: 2 },
-        { id: "self-funded", title: "Self-Funded Reserves (SAFU & Others)", level: 2 },
-        { id: "not-covered", title: "What Exchanges Do NOT Insure", level: 2 },
-        { id: "exchange-comparison", title: "Insurance by Exchange", level: 2 },
-        { id: "protecting-yourself", title: "Protecting Yourself Beyond Insurance", level: 2 },
+        { id: "fdic-coverage", title: "fdic-coverage", level: 2 },
+        { id: "fdic-coverage-for-usd-balances", title: "FDIC Coverage for USD Balances", level: 2 },
+        { id: "crime-insurance", title: "crime-insurance", level: 2 },
+        { id: "exchange-crime-insurance", title: "Exchange Crime Insurance", level: 2 },
+        { id: "self-funded", title: "self-funded", level: 2 },
+        { id: "self-funded-reserves-safu-others", title: "Self-Funded Reserves (SAFU & Others)", level: 2 },
+        { id: "not-covered", title: "not-covered", level: 2 },
+        { id: "what-exchanges-do-not-insure", title: "What Exchanges Do NOT Insure", level: 2 },
+        { id: "exchange-comparison", title: "exchange-comparison", level: 2 },
+        { id: "insurance-by-exchange", title: "Insurance by Exchange", level: 2 },
+        { id: "protecting-yourself", title: "protecting-yourself", level: 2 },
+        { id: "protecting-yourself-beyond-insurance", title: "Protecting Yourself Beyond Insurance", level: 2 }
       ]}
       faqs={[
         { question: "Is my crypto insured on Coinbase?", answer: "Coinbase maintains crime insurance covering a portion of crypto held in hot wallets against theft by hackers or employees. USD balances are held in FDIC-insured banks up to $250,000. However, crypto held in cold storage and losses from your own account compromise are not covered." },

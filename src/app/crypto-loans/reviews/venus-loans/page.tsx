@@ -10,7 +10,7 @@ const product = {
   pros: ["Very low BNB Chain gas fees", "Large TVL for BNB Chain", "Broad asset support", "VAI stablecoin minting"],
   cons: ["BNB Chain only", "Past exploit history", "VAI stability concerns", "Centralization of BNB Chain"],
   bestFor: "BNB Chain users seeking a comprehensive lending protocol with low fees and broad asset support",
-  affiliateUrl: "https://cryptodegen.com/go/venus",
+  affiliateUrl: "https://degen0x.com/go/venus",
   category: "crypto-loans",
 };
 

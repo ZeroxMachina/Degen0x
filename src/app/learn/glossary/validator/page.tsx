@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Validator? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Validator? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a validator is in proof-of-stake blockchains, how validators work, their responsibilities, and how they earn rewards for securing the network.",
 };
 
@@ -11,7 +11,16 @@ export default function ValidatorGlossaryPage() {
   return (
     <LearnPageLayout title="What Is a Validator?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="A validator is a node operator on a proof-of-stake blockchain who stakes cryptocurrency as collateral and participates in the consensus process by proposing and verifying new blocks. Validators are the equivalent of miners in proof-of-work systems, providing network security through economic incentives rather than computational power. They earn rewards for honest participation and face slashing penalties for malicious behavior or excessive downtime."
-      toc={[{ id: "definition", title: "What Is a Validator?", level: 2 }, { id: "how-validators-work", title: "How Validators Work", level: 2 }, { id: "rewards-and-penalties", title: "Rewards and Penalties", level: 2 }, { id: "choosing-validators", title: "Choosing a Validator to Delegate To", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-validator", title: "What Is a Validator?", level: 2 },
+        { id: "how-validators-work", title: "how-validators-work", level: 2 },
+        { id: "how-validators-work", title: "How Validators Work", level: 2 },
+        { id: "rewards-and-penalties", title: "rewards-and-penalties", level: 2 },
+        { id: "rewards-and-penalties", title: "Rewards and Penalties", level: 2 },
+        { id: "choosing-validators", title: "choosing-validators", level: 2 },
+        { id: "choosing-a-validator-to-delegate-to", title: "Choosing a Validator to Delegate To", level: 2 }
+      ]}
       faqs={[{ question: "How many validators does Ethereum have?", answer: "Ethereum has over 900,000 active validators as of 2025, making it one of the most decentralized proof-of-stake networks. Each validator stakes 32 ETH. The large validator set increases censorship resistance and reduces the risk of any single entity controlling the network." },
         { question: "What is the difference between a validator and a delegator?", answer: "A validator runs the actual node infrastructure and participates directly in consensus. A delegator stakes their tokens with a validator without running their own node. Delegators share in the validator's rewards minus a commission fee. The validator bears the operational responsibility while delegators provide additional economic security." }]}
       relatedArticles={[{ title: "Delegator", href: "/learn/glossary/delegator", category: "Glossary" }, { title: "Slashing", href: "/learn/glossary/slashing", category: "Glossary" }, { title: "Validator Guide", href: "/learn/validator-guide", category: "Learn Crypto" }, { title: "What Is Staking?", href: "/learn/what-is-staking", category: "Learn Crypto" }]}

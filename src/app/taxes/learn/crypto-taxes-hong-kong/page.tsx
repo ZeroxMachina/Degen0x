@@ -17,10 +17,14 @@ export default function CryptoTaxesHongKongPage() {
       readTime="7 min"
       intro="Hong Kong's territorial tax system and absence of capital gains tax make it one of the most favorable jurisdictions for cryptocurrency investors. However, the tax treatment is not entirely straightforward. Crypto profits may be taxable as business income depending on the nature and frequency of trading activity. This guide explains how Hong Kong's tax framework applies to different types of crypto activity."
       toc={[
-        { id: "tax-framework", title: "Hong Kong Tax Framework", level: 2 },
-        { id: "capital-vs-business", title: "Capital vs Business Income", level: 2 },
-        { id: "defi-nft-treatment", title: "DeFi and NFT Treatment", level: 2 },
-        { id: "compliance-reporting", title: "Compliance and Reporting", level: 2 },
+        { id: "tax-framework", title: "tax-framework", level: 2 },
+        { id: "hong-kong-tax-framework", title: "Hong Kong Tax Framework", level: 2 },
+        { id: "capital-vs-business", title: "capital-vs-business", level: 2 },
+        { id: "capital-vs-business-income", title: "Capital vs Business Income", level: 2 },
+        { id: "defi-nft-treatment", title: "defi-nft-treatment", level: 2 },
+        { id: "defi-and-nft-treatment", title: "DeFi and NFT Treatment", level: 2 },
+        { id: "compliance-reporting", title: "compliance-reporting", level: 2 },
+        { id: "compliance-and-reporting", title: "Compliance and Reporting", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto trading tax-free in Hong Kong?", answer: "It depends. Hong Kong has no capital gains tax, so investment gains from crypto are generally tax-free. However, if your crypto trading is classified as carrying on a business, profits are subject to profits tax at 8.25% on the first HKD 2 million and 16.5% thereafter. The classification depends on factors like trading frequency and intent." },

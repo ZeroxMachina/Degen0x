@@ -18,12 +18,18 @@ export default function HodlStrategyPage() {
       readTime="10 min read"
       intro="HODL, a misspelling of 'hold' that became crypto culture, represents the strategy of buying cryptocurrency and holding through all market conditions regardless of short-term price movements. Historically, HODLing Bitcoin through its volatile cycles has outperformed nearly every active trading strategy. But successful HODLing requires more than just buying and forgetting: it demands conviction, proper asset selection, and a framework for managing the psychological challenges of extreme volatility."
       toc={[
-        { id: "what-is-hodl", title: "What Is the HODL Strategy?", level: 2 },
-        { id: "historical-returns", title: "Historical HODL Returns", level: 2 },
-        { id: "what-to-hodl", title: "What Assets to HODL", level: 2 },
-        { id: "psychology", title: "HODL Psychology & Conviction", level: 2 },
-        { id: "drawdown-management", title: "Managing Drawdowns", level: 2 },
-        { id: "when-to-sell", title: "When HODLing Stops Making Sense", level: 2 },
+        { id: "what-is-hodl", title: "what-is-hodl", level: 2 },
+        { id: "what-is-the-hodl-strategy", title: "What Is the HODL Strategy?", level: 2 },
+        { id: "historical-returns", title: "historical-returns", level: 2 },
+        { id: "historical-hodl-returns", title: "Historical HODL Returns", level: 2 },
+        { id: "what-to-hodl", title: "what-to-hodl", level: 2 },
+        { id: "what-assets-to-hodl", title: "What Assets to HODL", level: 2 },
+        { id: "psychology", title: "psychology", level: 2 },
+        { id: "hodl-psychology-conviction", title: "HODL Psychology & Conviction", level: 2 },
+        { id: "drawdown-management", title: "drawdown-management", level: 2 },
+        { id: "managing-drawdowns", title: "Managing Drawdowns", level: 2 },
+        { id: "when-to-sell", title: "when-to-sell", level: 2 },
+        { id: "when-hodling-stops-making-sense", title: "When HODLing Stops Making Sense", level: 2 }
       ]}
       faqs={[
         { question: "Is HODLing better than trading?", answer: "For most investors, yes. Studies consistently show that the majority of active traders underperform buy-and-hold strategies, especially after fees and taxes. HODLing avoids trading fees, minimizes tax events, and removes the emotional decision-making that causes most trading losses." },

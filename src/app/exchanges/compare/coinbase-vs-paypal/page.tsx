@@ -14,7 +14,7 @@ export default function CoinbaseVsPayPalPage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Coinbase vs PayPal", href: "#" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Coinbase vs PayPal: Which Is Better for Crypto in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Coinbase vs PayPal: Which Is Better for Crypto in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Coinbase is a purpose-built crypto exchange, while PayPal added crypto as a feature within its payment platform. The difference in approach results in dramatically different capabilities, fees, and user experiences. This comparison helps you decide whether the convenience of PayPal justifies its limitations compared to Coinbase.</p>
 
@@ -30,19 +30,19 @@ export default function CoinbaseVsPayPalPage() {
       </div>
 
       <div className="prose-crypto">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Coinbase is substantially cheaper for crypto transactions. Coinbase Advanced charges 0% to 0.60% depending on volume, while PayPal charges approximately 1.8% to 2.5% per transaction. For a $500 Bitcoin purchase, Coinbase Advanced would cost roughly $3 in fees versus $9 to $12.50 on PayPal. The fee gap is significant for regular purchases and compounds over time for dollar-cost averaging strategies.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Crypto Capabilities</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Crypto Capabilities</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Coinbase is a full-featured crypto platform with 250+ coins, advanced trading, staking, DeFi access, and an NFT marketplace. PayPal supports only about six cryptocurrencies with no trading tools, no staking, and minimal portfolio management. PayPal's unique feature is Checkout with Crypto, which lets you pay at 26 million merchants using your crypto balance. PayPal's PYUSD stablecoin adds on-chain functionality. But for actual crypto trading and investing, Coinbase is leagues ahead.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Convenience Factor</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Convenience Factor</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">PayPal's strength is convenience. With 400 million existing users, buying crypto requires no new account creation or learning curve. The integration with PayPal's payment ecosystem means crypto purchases, merchant payments, and peer-to-peer transfers all happen within a familiar app. For someone who uses PayPal daily and wants to dabble in Bitcoin, the low-friction experience has genuine value despite the higher fees.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-white">Choose PayPal if</strong> you want the absolute simplest way to buy Bitcoin or Ethereum with zero learning curve, and you value the ability to spend crypto at merchants through your existing PayPal account.</p>
-          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-white">Choose Coinbase if</strong> you want lower fees, 250+ cryptocurrencies, advanced trading tools, staking, and a platform purpose-built for cryptocurrency. Coinbase is the right choice for anyone who takes crypto seriously.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-[var(--color-text)]">Choose PayPal if</strong> you want the absolute simplest way to buy Bitcoin or Ethereum with zero learning curve, and you value the ability to spend crypto at merchants through your existing PayPal account.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Coinbase if</strong> you want lower fees, 250+ cryptocurrencies, advanced trading tools, staking, and a platform purpose-built for cryptocurrency. Coinbase is the right choice for anyone who takes crypto seriously.</p>
         </div>
       </div>
 

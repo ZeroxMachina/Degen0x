@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Radiant Capital Token (RDNT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Radiant Capital Token (RDNT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Radiant Capital Token (RDNT), the cross-chain lending protocol token. Discover RDNT tokenomics, omnichain features, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function RadiantTokenPage() {
       readTime="8 min read"
       intro="Radiant Capital Token (RDNT) is the governance and utility token of Radiant Capital, a cross-chain lending protocol that aims to unify fragmented DeFi liquidity across multiple blockchains. Using LayerZero's omnichain technology, Radiant enables users to deposit collateral on one chain and borrow on another, targeting a seamless multi-chain lending experience."
       toc={[
-        { id: "what-is", title: "What Is Radiant Capital Token?", level: 2 },
-        { id: "how-it-works", title: "How Does Radiant Capital Work?", level: 2 },
-        { id: "tokenomics", title: "RDNT Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy RDNT", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-radiant-capital-token", title: "What Is Radiant Capital Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-radiant-capital-work", title: "How Does Radiant Capital Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "rdnt-tokenomics", title: "RDNT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-rdnt", title: "How to Buy RDNT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Radiant Capital Token?", answer: "RDNT is the governance token of Radiant Capital, a cross-chain lending protocol using LayerZero technology to enable omnichain borrowing and lending across Arbitrum, BNB Chain, Ethereum, and Base." },

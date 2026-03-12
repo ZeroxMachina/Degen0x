@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in South Korea (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in South Korea (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare the best cryptocurrency exchanges available in South Korea. Regulated platforms with KRW trading pairs, low fees, and strong security.",
 };
@@ -17,10 +17,14 @@ export default function BestExchangesSouthKoreaPage() {
       readTime="8 min read"
       intro="South Korea is one of the most active crypto markets in the world, with strict regulatory oversight from the Financial Services Commission (FSC). Korean exchanges must register with the Korea Financial Intelligence Unit (KoFIU) and partner with real-name verified bank accounts. Here are the top exchanges serving Korean traders."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges in South Korea", level: 2 },
-        { id: "regulations", title: "Regulatory Landscape", level: 2 },
-        { id: "features", title: "Key Features to Look For", level: 2 },
-        { id: "how-to-choose", title: "How to Choose an Exchange", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-in-south-korea", title: "Top Exchanges in South Korea", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "regulatory-landscape", title: "Regulatory Landscape", level: 2 },
+        { id: "features", title: "features", level: 2 },
+        { id: "key-features-to-look-for", title: "Key Features to Look For", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "how-to-choose-an-exchange", title: "How to Choose an Exchange", level: 2 }
       ]}
       faqs={[
         {

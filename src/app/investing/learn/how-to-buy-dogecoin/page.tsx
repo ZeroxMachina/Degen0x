@@ -25,13 +25,20 @@ export default function HowToBuyDogecoinPage() {
       readTime="11 min"
       intro="Dogecoin (DOGE) started as a joke cryptocurrency in 2013 but has grown into one of the most recognized and widely held digital assets. Known for its Shiba Inu mascot and enthusiastic community, Dogecoin has attracted attention from high-profile supporters and has been accepted as payment by several major companies. DOGE uses a Proof of Work consensus mechanism similar to Bitcoin but with faster block times and no supply cap. This guide covers how to buy Dogecoin, where to store it, and what you should know before investing."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose an Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-dogecoin", title: "Step 4: Buy Dogecoin", level: 2 },
-        { id: "store-dogecoin", title: "Step 5: Store Your Dogecoin", level: 2 },
-        { id: "doge-payments", title: "Using Dogecoin for Payments", level: 2 },
-        { id: "risks", title: "Investment Risks and Considerations", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-an-exchange", title: "Step 1: Choose an Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-dogecoin", title: "buy-dogecoin", level: 2 },
+        { id: "step-4-buy-dogecoin", title: "Step 4: Buy Dogecoin", level: 2 },
+        { id: "store-dogecoin", title: "store-dogecoin", level: 2 },
+        { id: "step-5-store-your-dogecoin", title: "Step 5: Store Your Dogecoin", level: 2 },
+        { id: "doge-payments", title: "doge-payments", level: 2 },
+        { id: "using-dogecoin-for-payments", title: "Using Dogecoin for Payments", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "investment-risks-and-considerations", title: "Investment Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

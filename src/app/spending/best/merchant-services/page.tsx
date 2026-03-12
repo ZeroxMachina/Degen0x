@@ -16,10 +16,14 @@ export default function BestMerchantServicesPage() {
       readTime="9 min"
       intro="Crypto merchant services enable businesses to accept cryptocurrency payments from customers while receiving settlement in their preferred currency. From small e-commerce shops to enterprise retailers, these payment processors handle the complexity of crypto acceptance, conversion, and compliance."
       toc={[
-        { id: "top-processors", title: "Top Payment Processors", level: 2 },
-        { id: "ecommerce", title: "E-Commerce Integrations", level: 2 },
-        { id: "pos", title: "Point-of-Sale Solutions", level: 2 },
-        { id: "choosing", title: "Choosing a Provider", level: 2 },
+        { id: "top-processors", title: "top-processors", level: 2 },
+        { id: "top-payment-processors", title: "Top Payment Processors", level: 2 },
+        { id: "ecommerce", title: "ecommerce", level: 2 },
+        { id: "e-commerce-integrations", title: "E-Commerce Integrations", level: 2 },
+        { id: "pos", title: "pos", level: 2 },
+        { id: "point-of-sale-solutions", title: "Point-of-Sale Solutions", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-a-provider", title: "Choosing a Provider", level: 2 }
       ]}
       faqs={[
         { question: "What is the best crypto payment processor for small businesses?", answer: "CoinGate and NOWPayments are excellent for small businesses due to low fees, easy setup, and no minimum volume requirements. Both offer Shopify and WooCommerce plugins for quick e-commerce integration." },

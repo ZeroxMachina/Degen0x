@@ -25,13 +25,20 @@ export default function HowToBuyCardanoPage() {
       readTime="12 min"
       intro="Cardano (ADA) is a third-generation blockchain platform built on peer-reviewed academic research and a methodical development approach. Founded by Ethereum co-founder Charles Hoskinson, Cardano aims to be a more scalable, sustainable, and interoperable blockchain. ADA is the native cryptocurrency used for transaction fees, staking, and governance. Cardano's Ouroboros Proof of Stake protocol allows ADA holders to earn staking rewards while maintaining full control of their coins. This guide covers how to buy ADA, staking options, and the Cardano ecosystem."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose an Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-cardano", title: "Step 4: Buy Cardano", level: 2 },
-        { id: "store-cardano", title: "Step 5: Store and Stake Your ADA", level: 2 },
-        { id: "staking-delegation", title: "ADA Staking and Delegation", level: 2 },
-        { id: "cardano-ecosystem", title: "Exploring the Cardano Ecosystem", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-an-exchange", title: "Step 1: Choose an Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-cardano", title: "buy-cardano", level: 2 },
+        { id: "step-4-buy-cardano", title: "Step 4: Buy Cardano", level: 2 },
+        { id: "store-cardano", title: "store-cardano", level: 2 },
+        { id: "step-5-store-and-stake-your-ada", title: "Step 5: Store and Stake Your ADA", level: 2 },
+        { id: "staking-delegation", title: "staking-delegation", level: 2 },
+        { id: "ada-staking-and-delegation", title: "ADA Staking and Delegation", level: 2 },
+        { id: "cardano-ecosystem", title: "cardano-ecosystem", level: 2 },
+        { id: "exploring-the-cardano-ecosystem", title: "Exploring the Cardano Ecosystem", level: 2 }
       ]}
       faqs={[
         {

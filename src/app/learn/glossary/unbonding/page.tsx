@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Unbonding? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Unbonding? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what unbonding means in crypto staking, why unbonding periods exist, how long they take on different networks, and strategies for managing unbonding.",
 };
 
@@ -11,7 +11,16 @@ export default function UnbondingPage() {
   return (
     <LearnPageLayout title="What Is Unbonding?" categoryName="Learn Crypto" categorySlug="learn" readTime="4 min read"
       intro="Unbonding is the process of withdrawing staked tokens from a proof-of-stake network, returning them to a liquid, transferable state. During the unbonding period, tokens are locked and do not earn rewards but also cannot be transferred or traded. Unbonding periods exist as a security mechanism, giving the network time to detect and punish malicious validators before they can withdraw their stake and escape penalties."
-      toc={[{ id: "definition", title: "What Is Unbonding?", level: 2 }, { id: "unbonding-periods", title: "Unbonding Periods by Network", level: 2 }, { id: "why-unbonding-exists", title: "Why Unbonding Periods Exist", level: 2 }, { id: "strategies", title: "Managing Unbonding", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-unbonding", title: "What Is Unbonding?", level: 2 },
+        { id: "unbonding-periods", title: "unbonding-periods", level: 2 },
+        { id: "unbonding-periods-by-network", title: "Unbonding Periods by Network", level: 2 },
+        { id: "why-unbonding-exists", title: "why-unbonding-exists", level: 2 },
+        { id: "why-unbonding-periods-exist", title: "Why Unbonding Periods Exist", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "managing-unbonding", title: "Managing Unbonding", level: 2 }
+      ]}
       faqs={[{ question: "Can I cancel an unbonding request?", answer: "On some networks, yes. Cosmos chains allow you to cancel unbonding and redelegate to a new validator. Ethereum allows validators to rejoin the active set during the exit queue. Check your specific network's rules, as cancellation policies vary. Some protocols charge fees for cancelling unbonding requests." },
         { question: "Do I earn rewards during unbonding?", answer: "No. Once you initiate unbonding, your tokens stop earning staking rewards immediately. They remain locked for the full unbonding period but generate no yield. This creates an opportunity cost that you should factor into any decision to unstake, especially during market volatility when you might want quick access to your tokens." }]}
       relatedArticles={[{ title: "Bonding", href: "/learn/glossary/bonding", category: "Glossary" }, { title: "Liquid Staking", href: "/learn/glossary/liquid-staking", category: "Glossary" }, { title: "What Is Staking?", href: "/learn/what-is-staking", category: "Learn Crypto" }, { title: "Delegator", href: "/learn/glossary/delegator", category: "Glossary" }]}

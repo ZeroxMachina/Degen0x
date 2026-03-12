@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Seed Phrase? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Seed Phrase? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what seed phrases are, how they protect your crypto, and best practices for storing them securely.",
 };
@@ -17,11 +17,16 @@ export default function SeedPhrasePage() {
       readTime="5 min"
       intro="A seed phrase (also called a recovery phrase or mnemonic phrase) is a list of 12 or 24 words that serves as the master backup for a cryptocurrency wallet. These words, generated when you first create a wallet, can restore all your private keys and access to your funds on any compatible wallet software or hardware. The seed phrase is the single most important thing to protect in all of crypto self-custody."
       toc={[
-        { id: "definition", title: "What Is a Seed Phrase?", level: 2 },
-        { id: "how-it-works", title: "How Seed Phrases Work", level: 2 },
-        { id: "storage", title: "How to Store Your Seed Phrase", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-seed-phrase", title: "What Is a Seed Phrase?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-seed-phrases-work", title: "How Seed Phrases Work", level: 2 },
+        { id: "storage", title: "storage", level: 2 },
+        { id: "how-to-store-your-seed-phrase", title: "How to Store Your Seed Phrase", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
         { id: "common-mistakes", title: "Common Mistakes", level: 2 },
-        { id: "why-it-matters", title: "Why Seed Phrases Matter", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-seed-phrases-matter", title: "Why Seed Phrases Matter", level: 2 }
       ]}
       faqs={[
         {

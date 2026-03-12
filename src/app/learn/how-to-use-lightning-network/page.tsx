@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToUseLightningNetworkPage() {
   return (
     <LearnPageLayout title="How to Use the Lightning Network" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="The Lightning Network is Bitcoin's Layer 2 payment solution enabling instant, near-zero-fee transactions. By conducting transactions off-chain through payment channels, Lightning makes Bitcoin practical for everyday payments, micropayments, and high-frequency transactions that would be too slow or expensive on the Bitcoin base layer."
-      toc={[{ id: "overview", title: "Lightning Overview", level: 2 },{ id: "wallets", title: "Lightning Wallets", level: 2 },{ id: "sending-receiving", title: "Sending & Receiving", level: 2 },{ id: "use-cases", title: "Use Cases", level: 2 },{ id: "tips", title: "Tips & Considerations", level: 2 }]}
+      toc={[
+        { id: "overview", title: "overview", level: 2 },
+        { id: "lightning-overview", title: "Lightning Overview", level: 2 },
+        { id: "wallets", title: "wallets", level: 2 },
+        { id: "lightning-wallets", title: "Lightning Wallets", level: 2 },
+        { id: "sending-receiving", title: "sending-receiving", level: 2 },
+        { id: "sending-receiving", title: "Sending & Receiving", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases", title: "Use Cases", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-considerations", title: "Tips & Considerations", level: 2 }
+      ]}
       faqs={[
         { question: "Is the Lightning Network safe?", answer: "The Lightning Network has a strong security model backed by Bitcoin's base layer. Funds in Lightning channels are secured by on-chain Bitcoin transactions. However, Lightning requires that nodes stay online to monitor for fraud attempts. Custodial Lightning wallets simplify this but introduce counterparty risk." },
         { question: "How cheap are Lightning transactions?", answer: "Lightning fees are typically less than 1 satoshi (a fraction of a cent) for small payments, making it one of the cheapest payment networks in existence. Fees scale with payment amount and routing distance but remain negligible compared to on-chain Bitcoin fees." },

@@ -7,7 +7,16 @@ export default function HowToInsureYourCryptoPage() {
   return (
     <LearnPageLayout title="How to Insure Your Crypto" categoryName="Insurance" categorySlug="insurance" readTime="9 min"
       intro="Protecting your cryptocurrency with insurance is becoming increasingly important as the ecosystem grows and attacks become more sophisticated. This step-by-step guide walks you through the entire process, from assessing your risk exposure to purchasing coverage and managing your policies."
-      toc={[{ id: "assess-risk", title: "Assess Your Risk Exposure", level: 2 }, { id: "choose-coverage", title: "Choose Your Coverage", level: 2 }, { id: "buy-cover", title: "Buy Insurance Cover", level: 2 }, { id: "manage-policies", title: "Manage Your Policies", level: 2 }]}
+      toc={[
+        { id: "assess-risk", title: "assess-risk", level: 2 },
+        { id: "assess-your-risk-exposure", title: "Assess Your Risk Exposure", level: 2 },
+        { id: "choose-coverage", title: "choose-coverage", level: 2 },
+        { id: "choose-your-coverage", title: "Choose Your Coverage", level: 2 },
+        { id: "buy-cover", title: "buy-cover", level: 2 },
+        { id: "buy-insurance-cover", title: "Buy Insurance Cover", level: 2 },
+        { id: "manage-policies", title: "manage-policies", level: 2 },
+        { id: "manage-your-policies", title: "Manage Your Policies", level: 2 }
+      ]}
       faqs={[
         { question: "How much of my portfolio should I insure?", answer: "Focus on insuring your largest positions and those in higher-risk protocols. As a guideline, if losing the position would significantly impact your finances, it is worth insuring. For small positions, the premium cost may exceed the expected benefit." },
         { question: "Can I get insurance for centralized exchange deposits?", answer: "Yes, some providers offer exchange cover that protects against exchange hacks or insolvency. However, coverage options for centralized platforms are more limited than DeFi protocol cover. Nexus Mutual and InsurAce both offer some exchange-related coverage." },

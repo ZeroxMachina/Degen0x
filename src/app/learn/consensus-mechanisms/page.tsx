@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Consensus Mechanisms Explained: PoW, PoS, DPoS & More (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Consensus Mechanisms Explained: PoW, PoS, DPoS & More (${CURRENT_YEAR}) | degen0x`,
   description:
     "A comprehensive guide to blockchain consensus mechanisms including Proof of Work, Proof of Stake, Delegated PoS, Proof of History, and more. Compare how different blockchains achieve agreement.",
 };
@@ -17,11 +17,16 @@ export default function ConsensusMechanismsPage() {
       readTime="10 min read"
       intro="Consensus mechanisms are the protocols that enable a distributed network of computers to agree on the current state of a blockchain without relying on a central authority. They solve the fundamental challenge of distributed computing: how do thousands of independent, potentially adversarial nodes reach agreement on a single version of truth? Different consensus mechanisms make different trade-offs between security, speed, energy efficiency, and decentralization, shaping the characteristics of the blockchains they power."
       toc={[
-        { id: "why-consensus", title: "Why Consensus Mechanisms Matter", level: 2 },
-        { id: "proof-of-work", title: "Proof of Work (PoW)", level: 2 },
-        { id: "proof-of-stake", title: "Proof of Stake (PoS) and Its Variants", level: 2 },
-        { id: "other-mechanisms", title: "Other Notable Mechanisms", level: 2 },
-        { id: "comparing", title: "Comparing Consensus Mechanisms", level: 2 },
+        { id: "why-consensus", title: "why-consensus", level: 2 },
+        { id: "why-consensus-mechanisms-matter", title: "Why Consensus Mechanisms Matter", level: 2 },
+        { id: "proof-of-work", title: "proof-of-work", level: 2 },
+        { id: "proof-of-work-pow", title: "Proof of Work (PoW)", level: 2 },
+        { id: "proof-of-stake", title: "proof-of-stake", level: 2 },
+        { id: "proof-of-stake-pos-and-its-variants", title: "Proof of Stake (PoS) and Its Variants", level: 2 },
+        { id: "other-mechanisms", title: "other-mechanisms", level: 2 },
+        { id: "other-notable-mechanisms", title: "Other Notable Mechanisms", level: 2 },
+        { id: "comparing", title: "comparing", level: 2 },
+        { id: "comparing-consensus-mechanisms", title: "Comparing Consensus Mechanisms", level: 2 }
       ]}
       faqs={[
         {

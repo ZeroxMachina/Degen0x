@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -417,7 +419,7 @@ export default function RoboAdvisorPage() {
 
         {/* Disclaimer */}
         <div className="mt-8 p-4 rounded-xl text-xs" style={{ background: "var(--color-surface)", color: "var(--color-text-secondary)", border: "1px solid #30363d" }}>
-          ⚠️ <strong>Not Financial Advice.</strong> CryptoDegen&apos;s Robo-Advisor is an educational tool based on general risk profiles. Cryptocurrency investments are highly volatile. Always do your own research and consult a licensed financial advisor before investing.
+          ⚠️ <strong>Not Financial Advice.</strong> degen0x&apos;s Robo-Advisor is an educational tool based on general risk profiles. Cryptocurrency investments are highly volatile. Always do your own research and consult a licensed financial advisor before investing.
         </div>
       </div>
     </div>

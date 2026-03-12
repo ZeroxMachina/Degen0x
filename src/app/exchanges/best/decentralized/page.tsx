@@ -102,7 +102,7 @@ export default function DecentralizedExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Decentralized Exchanges (DEXs) in {CURRENT_YEAR}
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -119,7 +119,7 @@ export default function DecentralizedExchangesPage() {
           volume across multiple blockchains. Here are the best DEXs across different categories
           and chains.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">CEX vs DEX: When to Use Each</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">CEX vs DEX: When to Use Each</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Use a CEX when you need fiat on/off ramps, customer support, or insurance protection.
           Use a DEX when you want maximum privacy, custody of your funds, access to tokens not
@@ -136,11 +136,11 @@ export default function DecentralizedExchangesPage() {
           >
             <div className="flex items-start justify-between gap-4 mb-4">
               <div className="flex items-center gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold">
                   {index + 1}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white">{dex.name}</h3>
+                  <h3 className="text-xl font-bold text-[var(--color-text)]">{dex.name}</h3>
                   <p className="text-sm text-[var(--color-text-secondary)]">{dex.chain}</p>
                 </div>
               </div>

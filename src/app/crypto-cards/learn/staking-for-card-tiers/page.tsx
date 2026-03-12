@@ -17,11 +17,16 @@ export default function StakingForCardTiersPage() {
       readTime="11 min"
       intro="Many crypto cards offer tiered reward systems where staking native tokens unlocks higher cashback rates and premium perks. Crypto.com requires CRO staking from $400 to $400,000. Binance uses BNB holdings. But does the math actually work out? This guide calculates the real economics of staking for card tiers and helps you determine the right tier for your spending level."
       toc={[
+        { id: "how-staking-tiers-work", title: "how-staking-tiers-work", level: 2 },
         { id: "how-staking-tiers-work", title: "How Staking Tiers Work", level: 2 },
-        { id: "breakeven-analysis", title: "Breakeven Analysis by Tier", level: 2 },
-        { id: "risk-factors", title: "Risk Factors to Consider", level: 2 },
+        { id: "breakeven-analysis", title: "breakeven-analysis", level: 2 },
+        { id: "breakeven-analysis-by-tier", title: "Breakeven Analysis by Tier", level: 2 },
+        { id: "risk-factors", title: "risk-factors", level: 2 },
+        { id: "risk-factors-to-consider", title: "Risk Factors to Consider", level: 2 },
+        { id: "alternative-approaches", title: "alternative-approaches", level: 2 },
         { id: "alternative-approaches", title: "Alternative Approaches", level: 2 },
-        { id: "recommendations", title: "Tier Recommendations by Spending Level", level: 2 },
+        { id: "recommendations", title: "recommendations", level: 2 },
+        { id: "tier-recommendations-by-spending-level", title: "Tier Recommendations by Spending Level", level: 2 }
       ]}
       faqs={[
         {

@@ -16,12 +16,18 @@ export default function HowToBridgeCryptoPage() {
       readTime="10 min"
       intro="Bridging allows you to move cryptocurrency assets from one blockchain to another. As crypto has expanded across dozens of networks — Ethereum, Solana, Arbitrum, Base, Polygon, BNB Chain, and more — bridging has become an essential skill. This guide explains how bridges work, which ones to use, and how to bridge safely without losing funds."
       toc={[
+        { id: "what-is-bridging", title: "what-is-bridging", level: 2 },
         { id: "what-is-bridging", title: "What Is Bridging?", level: 2 },
-        { id: "how-bridges-work", title: "How Crypto Bridges Work", level: 2 },
+        { id: "how-bridges-work", title: "how-bridges-work", level: 2 },
+        { id: "how-crypto-bridges-work", title: "How Crypto Bridges Work", level: 2 },
+        { id: "popular-bridges", title: "popular-bridges", level: 2 },
         { id: "popular-bridges", title: "Popular Bridges", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Bridging Guide", level: 2 },
-        { id: "risks", title: "Bridge Risks & Security", level: 2 },
-        { id: "tips", title: "Tips for Safe Bridging", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-bridging-guide", title: "Step-by-Step Bridging Guide", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "bridge-risks-security", title: "Bridge Risks & Security", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-safe-bridging", title: "Tips for Safe Bridging", level: 2 }
       ]}
       faqs={[
         {

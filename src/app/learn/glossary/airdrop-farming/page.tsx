@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Airdrop Farming Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Airdrop Farming Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what airdrop farming is, how to find and qualify for crypto airdrops, strategies for maximizing airdrop eligibility, risks, and tools for airdrop hunters.",
 };
 
@@ -16,10 +16,14 @@ export default function AirdropFarmingPage() {
       readTime="8 min read"
       intro="Airdrop farming is the practice of strategically using protocols and blockchains to qualify for future token distributions (airdrops). Protocols often reward early users with governance tokens based on their historical activity. Airdrop farmers actively interact with unannounced or upcoming token projects to maximize their chances of receiving valuable token allocations. This strategy has generated substantial returns for early participants in protocols like Uniswap, Optimism, and Arbitrum."
       toc={[
+        { id: "what-is-airdrop-farming", title: "what-is-airdrop-farming", level: 2 },
         { id: "what-is-airdrop-farming", title: "What Is Airdrop Farming?", level: 2 },
-        { id: "strategies", title: "Farming Strategies", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "farming-strategies", title: "Farming Strategies", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "Is airdrop farming still profitable?", answer: "Airdrop farming can still be profitable but has become more competitive and complex. Protocols are increasingly using sophisticated criteria to filter genuine users from farmers. Focus on providing real value to protocols through meaningful interactions rather than minimum transactions. Quality of engagement matters more than quantity of wallets." },

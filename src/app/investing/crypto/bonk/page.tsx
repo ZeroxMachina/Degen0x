@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Bonk (BONK)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Bonk (BONK)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Bonk (BONK), the Solana-based meme coin that was airdropped to the community. Discover BONK tokenomics, ecosystem integrations, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function BonkPage() {
       readTime="8 min read"
       intro="Bonk (BONK) is a Shiba Inu-themed meme coin built on the Solana blockchain. Launched on Christmas Day 2022, BONK was airdropped to Solana NFT holders and DeFi users, revitalizing the Solana ecosystem during a challenging market period. It has since become the most prominent meme coin on Solana."
       toc={[
-        { id: "what-is", title: "What Is Bonk?", level: 2 },
-        { id: "how-it-works", title: "How Does Bonk Work?", level: 2 },
-        { id: "tokenomics", title: "BONK Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy BONK", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-bonk", title: "What Is Bonk?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-bonk-work", title: "How Does Bonk Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "bonk-tokenomics", title: "BONK Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-bonk", title: "How to Buy BONK", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

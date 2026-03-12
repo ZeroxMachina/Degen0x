@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Dynamic NFTs: What Are They? (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Dynamic NFTs: What Are They? (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Dynamic NFTs that change based on external data, time, or user interaction. Understand how they work, their use cases, and the technology behind them.",
 };
 
@@ -16,11 +16,16 @@ export default function DynamicNftsPage() {
       readTime="9 min"
       intro="Dynamic NFTs (dNFTs) are tokens whose metadata and visual appearance can change after minting based on external conditions, time, user interaction, or real-world data. Unlike static NFTs that remain the same forever, dynamic NFTs evolve, respond to events, and create living digital assets. This technology opens up entirely new possibilities for art, gaming, sports, real estate, and identity applications that require NFTs to reflect changing real-world conditions."
       toc={[
-        { id: "static-vs-dynamic", title: "Static vs. Dynamic NFTs", level: 2 },
-        { id: "how-they-work", title: "How Dynamic NFTs Work", level: 2 },
-        { id: "use-cases", title: "Real-World Use Cases", level: 2 },
+        { id: "static-vs-dynamic", title: "static-vs-dynamic", level: 2 },
+        { id: "static-vs-dynamic-nfts", title: "Static vs. Dynamic NFTs", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-dynamic-nfts-work", title: "How Dynamic NFTs Work", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "real-world-use-cases", title: "Real-World Use Cases", level: 2 },
+        { id: "oracle-integration", title: "oracle-integration", level: 2 },
         { id: "oracle-integration", title: "Oracle Integration", level: 2 },
-        { id: "creating-dnfts", title: "Creating Dynamic NFTs", level: 2 },
+        { id: "creating-dnfts", title: "creating-dnfts", level: 2 },
+        { id: "creating-dynamic-nfts", title: "Creating Dynamic NFTs", level: 2 }
       ]}
       faqs={[
         { question: "Do dynamic NFTs lose their previous states?", answer: "It depends on the implementation. Some dynamic NFTs overwrite their metadata, losing the previous version. Others maintain a history of all states, preserving the evolution. On-chain dynamic NFTs can store state changes in contract storage. Off-chain metadata changes depend on how the creator manages the metadata server or IPFS updates." },

@@ -110,7 +110,7 @@ export default function PaymentProcessingPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Payment Processors ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -128,16 +128,16 @@ export default function PaymentProcessingPage() {
           managed enterprise platforms.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">BitPay</strong> is our top pick for most businesses, combining
+          <strong className="text-[var(--color-text)]">BitPay</strong> is our top pick for most businesses, combining
           reliability, easy integration, and automatic fiat settlement. For maximum control and zero fees,{" "}
-          <strong className="text-white">BTCPay Server</strong> is the gold standard for self-hosted
-          payment processing. <strong className="text-white">Coinbase Commerce</strong> offers the
+          <strong className="text-[var(--color-text)]">BTCPay Server</strong> is the gold standard for self-hosted
+          payment processing. <strong className="text-[var(--color-text)]">Coinbase Commerce</strong> offers the
           simplest setup for businesses that want to get started quickly.
         </p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -151,7 +151,7 @@ export default function PaymentProcessingPage() {
       </section>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Integration Options by Business Type</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Integration Options by Business Type</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "E-Commerce Stores", desc: "Use Shopify or WooCommerce plugins from BitPay, Coinbase Commerce, or NOWPayments. Setup takes minutes with pre-built integrations." },
@@ -160,7 +160,7 @@ export default function PaymentProcessingPage() {
             { title: "Physical Retail", desc: "BitPay and BTCPay Server offer point-of-sale apps. Generate QR codes for in-store payments with instant confirmation." },
           ].map((item) => (
             <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-              <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+              <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
             </div>
           ))}

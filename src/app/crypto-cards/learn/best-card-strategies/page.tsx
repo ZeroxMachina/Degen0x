@@ -17,11 +17,16 @@ export default function BestCardStrategiesPage() {
       readTime="9 min"
       intro="Getting a crypto card is just the first step. How you use it determines whether you earn modest rewards or significantly boost your crypto portfolio over time. From multi-card strategies to timing your reward conversions, these proven approaches help you extract maximum value from every transaction."
       toc={[
-        { id: "multi-card-strategy", title: "The Multi-Card Strategy", level: 2 },
-        { id: "stablecoin-optimization", title: "Stablecoin Spending Optimization", level: 2 },
-        { id: "perk-stacking", title: "Perk Stacking and Rebate Maximization", level: 2 },
-        { id: "reward-timing", title: "Timing Your Reward Conversions", level: 2 },
-        { id: "spending-habits", title: "Optimizing Your Spending Habits", level: 2 },
+        { id: "multi-card-strategy", title: "multi-card-strategy", level: 2 },
+        { id: "the-multi-card-strategy", title: "The Multi-Card Strategy", level: 2 },
+        { id: "stablecoin-optimization", title: "stablecoin-optimization", level: 2 },
+        { id: "stablecoin-spending-optimization", title: "Stablecoin Spending Optimization", level: 2 },
+        { id: "perk-stacking", title: "perk-stacking", level: 2 },
+        { id: "perk-stacking-and-rebate-maximization", title: "Perk Stacking and Rebate Maximization", level: 2 },
+        { id: "reward-timing", title: "reward-timing", level: 2 },
+        { id: "timing-your-reward-conversions", title: "Timing Your Reward Conversions", level: 2 },
+        { id: "spending-habits", title: "spending-habits", level: 2 },
+        { id: "optimizing-your-spending-habits", title: "Optimizing Your Spending Habits", level: 2 }
       ]}
       faqs={[
         {

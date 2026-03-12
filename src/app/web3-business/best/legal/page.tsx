@@ -110,7 +110,7 @@ export default function LegalPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Web3 Law Firms ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -128,17 +128,17 @@ export default function LegalPage() {
           track record, client satisfaction, and specialization.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Anderson Kill</strong> leads our rankings as a
+          <strong className="text-[var(--color-text)]">Anderson Kill</strong> leads our rankings as a
           pioneer in blockchain law with deep regulatory defense experience.{" "}
-          <strong className="text-white">DLx Law</strong> stands out as the top
+          <strong className="text-[var(--color-text)]">DLx Law</strong> stands out as the top
           crypto-native boutique for DAO and DeFi-specific matters, while{" "}
-          <strong className="text-white">Fenwick &amp; West</strong> is ideal for
+          <strong className="text-[var(--color-text)]">Fenwick &amp; West</strong> is ideal for
           venture-backed Web3 startups leveraging Silicon Valley networks.
         </p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Web3 Law Firms</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Web3 Law Firms</h2>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -152,33 +152,33 @@ export default function LegalPage() {
       </section>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Key Legal Considerations for Web3 Projects</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Key Legal Considerations for Web3 Projects</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Entity Structure</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Entity Structure</h3>
               <p className="text-sm">Choose the right legal entity (LLC, Foundation, DAO wrapper) based on your jurisdiction, token model, and operational needs. The entity structure affects liability, taxation, and regulatory obligations.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Token Classification</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Token Classification</h3>
               <p className="text-sm">Determine whether your token is a utility token, governance token, or could be classified as a security. This classification dictates your regulatory obligations and distribution strategy.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Regulatory Compliance</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Regulatory Compliance</h3>
               <p className="text-sm">Navigate SEC, CFTC, FinCEN, and international regulatory frameworks. AML/KYC obligations, money transmitter licensing, and securities registration requirements vary by activity and jurisdiction.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">4.</span>
             <div>
-              <h3 className="text-white font-semibold">Intellectual Property</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Intellectual Property</h3>
               <p className="text-sm">Protect your brand, code, and innovations through trademarks, open-source licensing strategy, and patent filings where appropriate. NFT projects need particular attention to IP rights and licensing terms.</p>
             </div>
           </div>

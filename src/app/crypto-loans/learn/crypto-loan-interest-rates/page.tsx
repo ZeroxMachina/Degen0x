@@ -17,11 +17,16 @@ export default function CryptoLoanInterestRatesPage() {
       readTime="9 min"
       intro="Interest rates on crypto loans vary dramatically depending on the platform, collateral type, loan terms, and market conditions. CeFi platforms typically charge 2-12% APR while DeFi protocols offer variable rates driven by supply and demand. Understanding what drives these rates and how to compare them effectively can save you significant money over the life of your loan."
       toc={[
-        { id: "rate-landscape", title: "Current Rate Landscape", level: 2 },
+        { id: "rate-landscape", title: "rate-landscape", level: 2 },
+        { id: "current-rate-landscape", title: "Current Rate Landscape", level: 2 },
+        { id: "what-affects-rates", title: "what-affects-rates", level: 2 },
         { id: "what-affects-rates", title: "What Affects Rates", level: 2 },
-        { id: "fixed-vs-variable", title: "Fixed vs Variable Rates", level: 2 },
-        { id: "hidden-costs", title: "Hidden Costs to Watch", level: 2 },
-        { id: "finding-best-rate", title: "Finding the Best Rate", level: 2 },
+        { id: "fixed-vs-variable", title: "fixed-vs-variable", level: 2 },
+        { id: "fixed-vs-variable-rates", title: "Fixed vs Variable Rates", level: 2 },
+        { id: "hidden-costs", title: "hidden-costs", level: 2 },
+        { id: "hidden-costs-to-watch", title: "Hidden Costs to Watch", level: 2 },
+        { id: "finding-best-rate", title: "finding-best-rate", level: 2 },
+        { id: "finding-the-best-rate", title: "Finding the Best Rate", level: 2 }
       ]}
       faqs={[
         { question: "What is a good interest rate for a crypto loan?", answer: "For Bitcoin-backed loans, rates below 8% APR are competitive. DeFi variable rates for major assets typically range from 2-6%. Rates above 12% should be scrutinized carefully. Always compare the total cost including fees, not just the headline rate." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Communities: Building and Joining (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Communities: Building and Joining (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about NFT communities, how to evaluate them, how to participate effectively, and how community strength impacts NFT project success and value.",
 };
 
@@ -11,7 +11,16 @@ export default function NftCommunitiesPage() {
   return (
     <LearnPageLayout title="NFT Communities: Building and Joining" categoryName="NFTs" categorySlug="nfts" readTime="8 min read"
       intro="Community is the backbone of successful NFT projects. Unlike traditional art or collectibles markets, NFTs thrive on active, engaged communities that drive demand, create culture, and provide ongoing value to holders. The strength of a project's community is often a better predictor of long-term success than the art itself. This guide explores how NFT communities function, how to evaluate them before investing, and how to participate effectively as a community member or builder."
-      toc={[{ id: "why-community-matters", title: "Why Community Matters", level: 2 }, { id: "evaluating-communities", title: "Evaluating NFT Communities", level: 2 }, { id: "participating-effectively", title: "Participating Effectively", level: 2 }, { id: "building-community", title: "Building an NFT Community", level: 2 }]}
+      toc={[
+        { id: "why-community-matters", title: "why-community-matters", level: 2 },
+        { id: "why-community-matters", title: "Why Community Matters", level: 2 },
+        { id: "evaluating-communities", title: "evaluating-communities", level: 2 },
+        { id: "evaluating-nft-communities", title: "Evaluating NFT Communities", level: 2 },
+        { id: "participating-effectively", title: "participating-effectively", level: 2 },
+        { id: "participating-effectively", title: "Participating Effectively", level: 2 },
+        { id: "building-community", title: "building-community", level: 2 },
+        { id: "building-an-nft-community", title: "Building an NFT Community", level: 2 }
+      ]}
       faqs={[{ question: "How do I find good NFT communities to join?", answer: "Start on Twitter/X where most NFT community activity happens. Follow collectors and artists whose taste aligns with yours. Join Discord servers of projects you find interesting and observe before buying. Look for communities with genuine conversations rather than just price speculation. Attend Twitter Spaces and virtual events to discover new projects. Quality communities are usually welcoming to newcomers and share knowledge freely." },
         { question: "Do I need to own an NFT to join the community?", answer: "Many NFT communities have public channels open to everyone, but the most valuable access is usually token-gated, requiring NFT ownership. Some projects offer tiered access where basic participation is free but premium content and governance require holding the NFT. Before buying, join the public channels to assess community quality and culture. This due diligence helps you avoid investing in communities that do not match your interests." },
         { question: "What are the signs of a dying NFT community?", answer: "Warning signs include: declining Discord activity, team members leaving without explanation, missed roadmap milestones, increasing floor price drops without recovery, token-gated channels becoming inactive, founders pivoting to new projects, and conversations dominated by price complaints rather than productive discussion. A healthy community maintains engagement even during market downturns because the value extends beyond speculation." }]}

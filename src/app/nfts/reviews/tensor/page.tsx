@@ -24,12 +24,12 @@ const product: Product = {
   ],
   fees: "1.5% marketplace fee (reduced with TNSR)",
   bestFor: "Professional Solana NFT traders",
-  affiliateUrl: "https://cryptodegen.com/go/tensor",
+  affiliateUrl: "https://degen0x.com/go/tensor",
   category: "nfts",
 };
 
 export const metadata: Metadata = {
-  title: `Tensor Review: Professional Solana NFT Trading (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Tensor Review: Professional Solana NFT Trading (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth Tensor review covering Solana NFT trading tools, TNSR rewards, compressed NFT support, advanced analytics, and whether it's the right platform for you.",
 };

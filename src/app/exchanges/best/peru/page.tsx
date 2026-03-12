@@ -24,12 +24,18 @@ export default function BestCryptoExchangesPeru() {
       readTime="8 min"
       intro="Peru's cryptocurrency market continues to grow as more Peruvians seek alternatives for savings and investments. This guide reviews the best crypto exchanges available to Peruvian users, including platforms that accept the Peruvian sol and offer local payment integration."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges Available", level: 2 },
-        { id: "regulations", title: "Local Regulations", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-available", title: "Top Exchanges Available", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "local-regulations", title: "Local Regulations", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
-        { id: "fees", title: "Fees Comparison", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fees-comparison", title: "Fees Comparison", level: 2 },
+        { id: "tax-overview", title: "tax-overview", level: 2 },
         { id: "tax-overview", title: "Tax Overview", level: 2 },
-        { id: "security-tips", title: "Security Tips", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
+        { id: "security-tips", title: "Security Tips", level: 2 }
       ]}
       faqs={[
         {

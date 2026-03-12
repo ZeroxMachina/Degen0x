@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -392,7 +394,7 @@ export default function ExchangeCashbackPage() {
                   <div className="flex-shrink-0">
                     <Link
                       href={calc.exchange.affiliateUrl}
-                      className="block text-center px-4 py-2 rounded-xl font-bold text-sm text-white"
+                      className="block text-center px-4 py-2 rounded-xl font-bold text-sm text-[var(--color-text)]"
                       style={{ background: calc.exchange.color }}
                     >
                       Start Trading →

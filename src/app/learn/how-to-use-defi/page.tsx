@@ -12,11 +12,16 @@ export default function HowToUseDefiPage() {
   return (
     <LearnPageLayout title="How to Use DeFi" categoryName="Crypto Education" categorySlug="learn" readTime="9 min" intro="Decentralized Finance (DeFi) offers financial services — trading, lending, borrowing, saving — without traditional intermediaries. Using DeFi requires a self-custodial wallet and some understanding of how protocols work. This guide walks you through the key DeFi activities and how to get started safely."
       toc={[
+        { id: "prerequisites", title: "prerequisites", level: 2 },
         { id: "prerequisites", title: "Prerequisites", level: 2 },
-        { id: "swapping", title: "Token Swapping", level: 2 },
+        { id: "swapping", title: "swapping", level: 2 },
+        { id: "token-swapping", title: "Token Swapping", level: 2 },
+        { id: "lending-borrowing", title: "lending-borrowing", level: 2 },
         { id: "lending-borrowing", title: "Lending & Borrowing", level: 2 },
+        { id: "yield-farming", title: "yield-farming", level: 2 },
         { id: "yield-farming", title: "Yield Farming", level: 2 },
-        { id: "safety", title: "DeFi Safety Tips", level: 2 },
+        { id: "safety", title: "safety", level: 2 },
+        { id: "defi-safety-tips", title: "DeFi Safety Tips", level: 2 }
       ]}
       faqs={[
         { question: "How much money do I need to start in DeFi?", answer: "You can start with any amount, but gas fees matter. On Ethereum mainnet, high gas fees make DeFi impractical for small amounts. Layer 2 networks (Arbitrum, Base, Optimism) and alternative L1s (Solana, Avalanche) offer much lower fees, making DeFi accessible with smaller amounts." },

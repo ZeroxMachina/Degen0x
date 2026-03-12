@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Arbitrage Trading Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Arbitrage Trading Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn crypto arbitrage trading strategies. Exploit price differences across exchanges, trading pairs, and markets for low-risk profits.",
 };
@@ -17,10 +17,14 @@ export default function ArbitrageTradingPage() {
       readTime="9 min read"
       intro="Arbitrage trading involves exploiting price differences for the same asset across different exchanges or markets. In the fragmented crypto ecosystem with hundreds of exchanges, price discrepancies occur frequently, creating opportunities for traders who can execute quickly. This guide covers the main types of crypto arbitrage, required tools, and practical considerations."
       toc={[
-        { id: "what-is-arbitrage", title: "What Is Crypto Arbitrage?", level: 2 },
-        { id: "types-of-arbitrage", title: "Types of Crypto Arbitrage", level: 2 },
-        { id: "tools-execution", title: "Tools and Execution", level: 2 },
-        { id: "risks-challenges", title: "Risks and Challenges", level: 2 },
+        { id: "what-is-arbitrage", title: "what-is-arbitrage", level: 2 },
+        { id: "what-is-crypto-arbitrage", title: "What Is Crypto Arbitrage?", level: 2 },
+        { id: "types-of-arbitrage", title: "types-of-arbitrage", level: 2 },
+        { id: "types-of-crypto-arbitrage", title: "Types of Crypto Arbitrage", level: 2 },
+        { id: "tools-execution", title: "tools-execution", level: 2 },
+        { id: "tools-and-execution", title: "Tools and Execution", level: 2 },
+        { id: "risks-challenges", title: "risks-challenges", level: 2 },
+        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto arbitrage still profitable?", answer: "Crypto arbitrage remains profitable but has become more competitive as more traders and bots enter the space. Opportunities tend to be smaller and shorter-lived than in earlier years. Success now requires faster execution, lower fees, and more sophisticated strategies." },

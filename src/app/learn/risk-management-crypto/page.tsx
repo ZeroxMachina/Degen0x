@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Risk Management in Crypto Investing (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Risk Management in Crypto Investing (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn essential risk management strategies for crypto: position sizing, stop-losses, portfolio allocation, risk-reward ratios, and how to protect your capital in volatile markets.",
 };
@@ -17,11 +17,16 @@ export default function RiskManagementCryptoPage() {
       readTime="9 min read"
       intro="Risk management is the most important skill in crypto investing, yet it is the one most beginners overlook in favor of searching for the next big winner. In a market where 80-90% drawdowns are not uncommon and entire projects can go to zero, surviving to participate in the next cycle is more important than maximizing gains in the current one. Effective risk management does not prevent losses — it ensures that losses are small enough to be recoverable while keeping you positioned to benefit from the market's significant upside potential."
       toc={[
+        { id: "position-sizing", title: "position-sizing", level: 2 },
         { id: "position-sizing", title: "Position Sizing", level: 2 },
-        { id: "stop-losses", title: "Stop-Losses and Exit Strategies", level: 2 },
-        { id: "risk-types", title: "Understanding Different Risk Types", level: 2 },
-        { id: "risk-reward", title: "Risk-Reward Ratios", level: 2 },
-        { id: "emotional", title: "Emotional Risk Management", level: 2 },
+        { id: "stop-losses", title: "stop-losses", level: 2 },
+        { id: "stop-losses-and-exit-strategies", title: "Stop-Losses and Exit Strategies", level: 2 },
+        { id: "risk-types", title: "risk-types", level: 2 },
+        { id: "understanding-different-risk-types", title: "Understanding Different Risk Types", level: 2 },
+        { id: "risk-reward", title: "risk-reward", level: 2 },
+        { id: "risk-reward-ratios", title: "Risk-Reward Ratios", level: 2 },
+        { id: "emotional", title: "emotional", level: 2 },
+        { id: "emotional-risk-management", title: "Emotional Risk Management", level: 2 }
       ]}
       faqs={[
         {

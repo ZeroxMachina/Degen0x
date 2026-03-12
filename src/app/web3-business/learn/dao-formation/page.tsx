@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DAO Formation Guide (${CURRENT_YEAR}) - How to Create a DAO | CryptoDegen`,
+  title: `DAO Formation Guide (${CURRENT_YEAR}) - How to Create a DAO | degen0x`,
   description: `Learn how to form a DAO from scratch. Legal wrappers, governance frameworks, treasury setup, tooling selection, and operational best practices for decentralized organizations.`,
 };
 
@@ -16,11 +16,16 @@ export default function DAOFormationPage() {
       readTime="10 min"
       intro="Decentralized Autonomous Organizations (DAOs) are internet-native entities governed by smart contracts and community voting. Whether you are forming an investment club, protocol governance body, or community treasury, this guide covers the legal, technical, and operational foundations for creating a functional DAO."
       toc={[
-        { id: "what-is-dao", title: "What Is a DAO?", level: 2 },
-        { id: "legal-wrappers", title: "Legal Wrappers and Jurisdiction", level: 2 },
+        { id: "what-is-dao", title: "what-is-dao", level: 2 },
+        { id: "what-is-a-dao", title: "What Is a DAO?", level: 2 },
+        { id: "legal-wrappers", title: "legal-wrappers", level: 2 },
+        { id: "legal-wrappers-and-jurisdiction", title: "Legal Wrappers and Jurisdiction", level: 2 },
+        { id: "governance-design", title: "governance-design", level: 2 },
         { id: "governance-design", title: "Governance Design", level: 2 },
+        { id: "treasury-setup", title: "treasury-setup", level: 2 },
         { id: "treasury-setup", title: "Treasury Setup", level: 2 },
-        { id: "tooling", title: "Essential DAO Tooling", level: 2 },
+        { id: "tooling", title: "tooling", level: 2 },
+        { id: "essential-dao-tooling", title: "Essential DAO Tooling", level: 2 }
       ]}
       faqs={[
         { question: "How much does it cost to form a DAO?", answer: "Technical setup can be done for a few hundred dollars in gas fees using free tools like Aragon or DAOhaus. However, proper legal structuring with a DAO wrapper LLC typically costs $5,000 to $30,000 in legal fees depending on the jurisdiction. Wyoming DAO LLCs have lower formation costs while more complex multi-jurisdictional structures cost more. Budget for both technical and legal setup." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Loan Interest Rates Compared (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Loan Interest Rates Compared (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto loan interest rates across CeFi and DeFi platforms. Understand variable vs fixed rates, how rates are set, and how to find the best deal.",
 };
 
@@ -16,10 +16,14 @@ export default function InterestRatesComparisonPage() {
       readTime="9 min read"
       intro="Interest rates on crypto loans vary dramatically across platforms, ranging from 0% APR on select CeFi tiers to over 15% during high-demand periods in DeFi. Understanding how rates are determined, what drives changes, and where to find the best deals can save you thousands in borrowing costs."
       toc={[
-        { id: "rate-landscape", title: "Current Rate Landscape", level: 2 },
-        { id: "variable-vs-fixed", title: "Variable vs Fixed Rates", level: 2 },
-        { id: "what-drives-rates", title: "What Drives Rate Changes", level: 2 },
-        { id: "finding-best-rates", title: "Finding the Best Rates", level: 2 },
+        { id: "rate-landscape", title: "rate-landscape", level: 2 },
+        { id: "current-rate-landscape", title: "Current Rate Landscape", level: 2 },
+        { id: "variable-vs-fixed", title: "variable-vs-fixed", level: 2 },
+        { id: "variable-vs-fixed-rates", title: "Variable vs Fixed Rates", level: 2 },
+        { id: "what-drives-rates", title: "what-drives-rates", level: 2 },
+        { id: "what-drives-rate-changes", title: "What Drives Rate Changes", level: 2 },
+        { id: "finding-best-rates", title: "finding-best-rates", level: 2 },
+        { id: "finding-the-best-rates", title: "Finding the Best Rates", level: 2 }
       ]}
       faqs={[
         { question: "Why do DeFi rates change so frequently?", answer: "DeFi rates are algorithmically determined based on pool utilization. When many people borrow and utilization rises, rates increase to attract more depositors. When demand drops, rates decrease. This can change block by block." },

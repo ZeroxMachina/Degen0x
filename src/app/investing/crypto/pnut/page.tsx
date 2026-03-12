@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Peanut the Squirrel (PNUT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Peanut the Squirrel (PNUT)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Peanut the Squirrel (PNUT), the viral meme coin on Solana. Discover how it works, tokenomics, use cases, and how to buy PNUT.",
 };
 
 export default function PnutPage() {
   return (
-    <LearnPageLayout title="What Is Peanut the Squirrel (PNUT)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Peanut the Squirrel (PNUT) is a Solana-based meme coin inspired by the viral internet story of Peanut, a beloved pet squirrel. The token captured widespread attention through its emotional narrative and community support, reaching a significant market capitalization and listings on major exchanges." toc={[{id:"what-is",title:"What Is Peanut the Squirrel?",level:2},{id:"how-it-works",title:"How Does Peanut the Squirrel Work?",level:2},{id:"tokenomics",title:"PNUT Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy PNUT",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Peanut the Squirrel?",answer:"PNUT is a Solana meme coin inspired by the viral story of Peanut the squirrel. It gained massive traction through social media and emotional community engagement."},{question:"Where can I buy PNUT?",answer:"PNUT is available on major exchanges including Binance and Coinbase, as well as Solana DEXes like Jupiter and Raydium."},{question:"Is Peanut the Squirrel a good investment?",answer:"PNUT is a meme coin driven by narrative and community sentiment rather than utility. It is highly speculative. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Peanut the Squirrel (PNUT)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Peanut the Squirrel (PNUT) is a Solana-based meme coin inspired by the viral internet story of Peanut, a beloved pet squirrel. The token captured widespread attention through its emotional narrative and community support, reaching a significant market capitalization and listings on major exchanges." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-peanut-the-squirrel", title: "What Is Peanut the Squirrel?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-peanut-the-squirrel-work", title: "How Does Peanut the Squirrel Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "pnut-tokenomics", title: "PNUT Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-pnut", title: "How to Buy PNUT", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Peanut the Squirrel?",answer:"PNUT is a Solana meme coin inspired by the viral story of Peanut the squirrel. It gained massive traction through social media and emotional community engagement."},{question:"Where can I buy PNUT?",answer:"PNUT is available on major exchanges including Binance and Coinbase, as well as Solana DEXes like Jupiter and Raydium."},{question:"Is Peanut the Squirrel a good investment?",answer:"PNUT is a meme coin driven by narrative and community sentiment rather than utility. It is highly speculative. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
       <h2 id="what-is">What Is Peanut the Squirrel?</h2>
       <p>Peanut the Squirrel (PNUT) emerged from a viral internet story about a beloved pet squirrel named Peanut. The emotional narrative surrounding the squirrel resonated with a massive audience across social media, and the associated meme coin on Solana capitalized on this attention to become one of the top-performing meme tokens of its cycle.</p>
       <p>The token's success demonstrates how real-world viral moments can translate into crypto market activity, with emotional narratives driving community formation and speculative trading. PNUT was listed on major centralized exchanges, giving it broader accessibility.</p>

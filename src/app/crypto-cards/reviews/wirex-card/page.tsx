@@ -6,7 +6,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 const product = cryptoCards.find((c) => c.slug === "wirex-card")!;
 
 export const metadata: Metadata = {
-  title: `Wirex Card Review (${CURRENT_YEAR}): Multi-Currency, Rewards & Pros/Cons | CryptoDegen`,
+  title: `Wirex Card Review (${CURRENT_YEAR}): Multi-Currency, Rewards & Pros/Cons | degen0x`,
   description: "In-depth Wirex Card review covering multi-currency support, cryptoback rewards, X-Accounts yield, and whether it is the best card for global travelers.",
 };
 

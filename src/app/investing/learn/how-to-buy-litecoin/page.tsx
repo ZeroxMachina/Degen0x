@@ -16,10 +16,14 @@ export default function HowToBuyLitecoinPage() {
       readTime="8 min"
       intro="Litecoin is one of the oldest and most established cryptocurrencies, often called the silver to Bitcoin's gold. Created in 2011 by Charlie Lee, LTC offers faster transaction times and lower fees than Bitcoin, making it a popular choice for payments and transfers. This guide walks you through buying Litecoin step by step."
       toc={[
+        { id: "what-is-litecoin", title: "what-is-litecoin", level: 2 },
         { id: "what-is-litecoin", title: "What Is Litecoin?", level: 2 },
-        { id: "where-to-buy", title: "Where to Buy Litecoin", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Purchase Guide", level: 2 },
-        { id: "storage", title: "Storing Your Litecoin", level: 2 },
+        { id: "where-to-buy", title: "where-to-buy", level: 2 },
+        { id: "where-to-buy-litecoin", title: "Where to Buy Litecoin", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-purchase-guide", title: "Step-by-Step Purchase Guide", level: 2 },
+        { id: "storage", title: "storage", level: 2 },
+        { id: "storing-your-litecoin", title: "Storing Your Litecoin", level: 2 }
       ]}
       faqs={[
         { question: "Is Litecoin a good investment?", answer: "Litecoin has a long track record and consistent development since 2011. It benefits from strong brand recognition and wide exchange support. However, it faces competition from newer payment-focused cryptocurrencies. LTC is best suited for investors who value proven reliability over cutting-edge technology." },

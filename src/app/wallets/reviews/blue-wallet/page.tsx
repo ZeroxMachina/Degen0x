@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `BlueWallet Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `BlueWallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "BlueWallet review covering Lightning Network support, Bitcoin features, multi-wallet management, and user experience on iOS and Android.",
 };
 

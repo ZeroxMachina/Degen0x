@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Mempool? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Mempool? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what the mempool is, how pending transactions are managed, and why it matters for gas fees and MEV.",
 };
@@ -17,11 +17,16 @@ export default function MempoolPage() {
       readTime="5 min"
       intro="The mempool (memory pool) is a waiting area where valid but unconfirmed transactions sit before being included in a block. When you submit a transaction to a blockchain, it first enters the mempool of the nodes that receive it. Miners or validators then select transactions from the mempool, typically prioritizing those with higher fees, to include in the next block."
       toc={[
-        { id: "definition", title: "What Is the Mempool?", level: 2 },
-        { id: "how-it-works", title: "How the Mempool Works", level: 2 },
-        { id: "congestion", title: "Mempool Congestion", level: 2 },
-        { id: "mev", title: "Mempool and MEV", level: 2 },
-        { id: "why-it-matters", title: "Why the Mempool Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-the-mempool", title: "What Is the Mempool?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-the-mempool-works", title: "How the Mempool Works", level: 2 },
+        { id: "congestion", title: "congestion", level: 2 },
+        { id: "mempool-congestion", title: "Mempool Congestion", level: 2 },
+        { id: "mev", title: "mev", level: 2 },
+        { id: "mempool-and-mev", title: "Mempool and MEV", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-the-mempool-matters", title: "Why the Mempool Matters", level: 2 }
       ]}
       faqs={[
         {

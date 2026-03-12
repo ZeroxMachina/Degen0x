@@ -7,7 +7,16 @@ export default function WhatAreCryptoLoansPage() {
   return (
     <LearnPageLayout title="What Are Crypto-Backed Loans?" categoryName="Crypto Loans" categorySlug="crypto-loans" readTime="10 min"
       intro="Crypto-backed loans allow you to borrow money using your cryptocurrency as collateral, similar to how a traditional secured loan uses your home or car. The key advantage is accessing liquidity without selling your crypto, which avoids triggering a taxable event and lets you maintain your long-term positions."
-      toc={[{ id: "how-they-work", title: "How Crypto Loans Work", level: 2 }, { id: "benefits", title: "Benefits of Crypto Loans", level: 2 }, { id: "risks", title: "Key Risks", level: 2 }, { id: "getting-started", title: "How to Get Started", level: 2 }]}
+      toc={[
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-crypto-loans-work", title: "How Crypto Loans Work", level: 2 },
+        { id: "benefits", title: "benefits", level: 2 },
+        { id: "benefits-of-crypto-loans", title: "Benefits of Crypto Loans", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "key-risks", title: "Key Risks", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "how-to-get-started", title: "How to Get Started", level: 2 }
+      ]}
       faqs={[
         { question: "Do I keep my crypto when I take a loan?", answer: "Yes and no. Your crypto is deposited as collateral and is locked while the loan is active. You maintain ownership and get it back when you repay. However, if you are liquidated due to price drops, you may lose some or all of your collateral." },
         { question: "Are crypto loans a taxable event?", answer: "In most jurisdictions, borrowing against crypto is not a taxable event because you are not selling. However, liquidation is typically treated as a sale and subject to capital gains tax. Consult a tax professional for your specific situation." },

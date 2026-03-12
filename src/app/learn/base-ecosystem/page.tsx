@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Base Ecosystem Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The Base Ecosystem Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore the Base ecosystem including DeFi, social apps, memecoins, and why Coinbase's Layer 2 has become one of the fastest-growing Ethereum L2 networks.",
 };
@@ -17,10 +17,14 @@ export default function BaseEcosystemPage() {
       readTime="9 min read"
       intro="Base is an Ethereum Layer 2 network built by Coinbase using the Optimism OP Stack. Despite having no native token, Base has rapidly grown to become one of the most active L2 networks, driven by its seamless Coinbase integration, social applications, and a vibrant memecoin culture. Base's mission is to bring the next billion users on-chain by providing an accessible, low-cost platform that benefits from Coinbase's massive user base and brand trust."
       toc={[
+        { id: "base-overview", title: "base-overview", level: 2 },
         { id: "base-overview", title: "Base Overview", level: 2 },
+        { id: "ecosystem-highlights", title: "ecosystem-highlights", level: 2 },
         { id: "ecosystem-highlights", title: "Ecosystem Highlights", level: 2 },
-        { id: "social-and-culture", title: "Social Apps and Culture", level: 2 },
-        { id: "coinbase-integration", title: "Coinbase Integration and Growth", level: 2 },
+        { id: "social-and-culture", title: "social-and-culture", level: 2 },
+        { id: "social-apps-and-culture", title: "Social Apps and Culture", level: 2 },
+        { id: "coinbase-integration", title: "coinbase-integration", level: 2 },
+        { id: "coinbase-integration-and-growth", title: "Coinbase Integration and Growth", level: 2 }
       ]}
       faqs={[
         {

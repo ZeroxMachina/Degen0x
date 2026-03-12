@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Lombard (LBTC)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Lombard (LBTC)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Lombard (LBTC), the liquid Bitcoin staking protocol. Discover how it works, tokenomics, use cases, and how to buy LBTC.",
 };
@@ -17,12 +17,18 @@ export default function LombardPage() {
       readTime="8 min read"
       intro="Lombard is a liquid Bitcoin staking protocol that allows users to stake BTC through Babylon and receive LBTC, a liquid staking token representing their staked Bitcoin position. LBTC enables Bitcoin holders to earn Babylon staking yield while maintaining DeFi composability, using their staked BTC as collateral across Ethereum, Layer 2s, and other DeFi ecosystems."
       toc={[
-        { id: "what-is", title: "What Is Lombard?", level: 2 },
-        { id: "how-it-works", title: "How Does Lombard Work?", level: 2 },
-        { id: "tokenomics", title: "LBTC Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy LBTC", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-lombard", title: "What Is Lombard?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-lombard-work", title: "How Does Lombard Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "lbtc-tokenomics", title: "LBTC Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-lbtc", title: "How to Buy LBTC", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Lombard?", answer: "Lombard is a liquid Bitcoin staking protocol that stakes BTC through Babylon and issues LBTC, a liquid staking token usable across DeFi while earning Bitcoin staking yields." },

@@ -18,12 +18,18 @@ export default function StakeSolanaPage() {
       readTime="10 min"
       intro="Solana staking offers attractive yields of 6-8% APY for SOL holders who want to earn passive income while supporting one of the fastest blockchain networks. With native delegation, liquid staking through Marinade and Jito, and exchange-based options, there are multiple paths to start earning rewards on your SOL holdings."
       toc={[
-        { id: "overview", title: "Solana Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake SOL Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Solana", level: 2 },
-        { id: "validators", title: "Validators & Staking Pools", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "solana-staking-overview", title: "Solana Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-sol-step-by-step", title: "How to Stake SOL Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-solana", title: "Risks of Staking Solana", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-staking-pools", title: "Validators & Staking Pools", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         {

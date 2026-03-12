@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -105,7 +107,7 @@ export default function DeFiYieldsPage() {
       if (sort === "apy") return dir * (a.apy - b.apy);
       if (sort === "tvl") return dir * (a.tvl - b.tvl);
       if (sort === "riskLevel") {
-        const order = { Low: 0, Medium: 1, High: 2 };
+        const order: Record<string, number> = { Low: 0, Medium: 1, High: 2 };
         return dir * (order[a.riskLevel] - order[b.riskLevel]);
       }
       return dir * a.name.localeCompare(b.name);

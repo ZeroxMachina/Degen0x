@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Building a Metaverse Business (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Building a Metaverse Business (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to building businesses in the metaverse. Virtual real estate, digital goods, virtual events, and monetization strategies for metaverse entrepreneurs.",
 };
 
@@ -12,10 +12,14 @@ export default function MetaverseBusinessPage() {
     <LearnPageLayout title="Building a Metaverse Business" categoryName="Web3 Business" categorySlug="web3-business" readTime="8 min read"
       intro="The metaverse represents a convergence of virtual worlds, augmented reality, blockchain technology, and social interaction. For businesses, it creates opportunities in virtual real estate, digital goods, virtual events, immersive experiences, and new forms of commerce. While the metaverse is still in early stages, understanding the business opportunities and challenges prepares entrepreneurs and businesses to capitalize on this emerging market."
       toc={[
+        { id: "virtual-real-estate", title: "virtual-real-estate", level: 2 },
         { id: "virtual-real-estate", title: "Virtual Real Estate", level: 2 },
-        { id: "digital-goods", title: "Digital Goods and Commerce", level: 2 },
-        { id: "virtual-events", title: "Virtual Events and Experiences", level: 2 },
-        { id: "monetization", title: "Monetization Strategies", level: 2 },
+        { id: "digital-goods", title: "digital-goods", level: 2 },
+        { id: "digital-goods-and-commerce", title: "Digital Goods and Commerce", level: 2 },
+        { id: "virtual-events", title: "virtual-events", level: 2 },
+        { id: "virtual-events-and-experiences", title: "Virtual Events and Experiences", level: 2 },
+        { id: "monetization", title: "monetization", level: 2 },
+        { id: "monetization-strategies", title: "Monetization Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Is the metaverse a good business opportunity?", answer: "The metaverse is a long-term opportunity with significant uncertainty. Virtual worlds, digital goods, and immersive experiences are growing trends, but the specific platforms and business models that will dominate are still unclear. Early movers may capture valuable positions, but many early metaverse investments have lost value. Approach with measured optimism and capital you can afford to risk." },

@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Koinly", slug: "koinly", rating: 4.5, affiliateUrl: "https://cryptodegen.com/go/koinly", features: { "Free Tier": "Up to 10,000 transactions", "Paid Plans": "From $49/year", "Exchanges": "800+", "DeFi Support": "Excellent", "International": "20+ countries", "Tax Filing": "CSV export, TurboTax CSV", "Cost Basis Methods": "FIFO, LIFO, HIFO, ACB", "NFT Support": "Good" } },
-  { name: "TaxBit", slug: "taxbit", rating: 4.0, affiliateUrl: "https://cryptodegen.com/go/taxbit", features: { "Free Tier": "Free for individuals", "Paid Plans": "Free consumer, Enterprise paid", "Exchanges": "500+", "DeFi Support": "Moderate", "International": "US focused", "Tax Filing": "Direct TurboTax integration", "Cost Basis Methods": "FIFO, LIFO, HIFO, Specific ID", "NFT Support": "Basic" } },
+  { name: "Koinly", slug: "koinly", rating: 4.5, affiliateUrl: "https://degen0x.com/go/koinly", features: { "Free Tier": "Up to 10,000 transactions", "Paid Plans": "From $49/year", "Exchanges": "800+", "DeFi Support": "Excellent", "International": "20+ countries", "Tax Filing": "CSV export, TurboTax CSV", "Cost Basis Methods": "FIFO, LIFO, HIFO, ACB", "NFT Support": "Good" } },
+  { name: "TaxBit", slug: "taxbit", rating: 4.0, affiliateUrl: "https://degen0x.com/go/taxbit", features: { "Free Tier": "Free for individuals", "Paid Plans": "Free consumer, Enterprise paid", "Exchanges": "500+", "DeFi Support": "Moderate", "International": "US focused", "Tax Filing": "Direct TurboTax integration", "Cost Basis Methods": "FIFO, LIFO, HIFO, Specific ID", "NFT Support": "Basic" } },
 ];
 
 const features = ["Free Tier", "Paid Plans", "Exchanges", "DeFi Support", "International", "Tax Filing", "Cost Basis Methods", "NFT Support"];
@@ -27,26 +27,26 @@ export default function KoinlyVsTaxBitPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/koinly-vs-taxbit" }, { label: "Koinly vs TaxBit", href: "/taxes/compare/koinly-vs-taxbit" }]} />
-      <h1 className="text-4xl font-bold text-white mb-4">Koinly vs TaxBit: Full Comparison ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Koinly vs TaxBit: Full Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Koinly and TaxBit take different approaches to crypto tax software. Koinly is a comprehensive paid platform with excellent international and DeFi support, while TaxBit offers a free consumer product backed by its enterprise business. This comparison examines where each tool excels and which is right for your situation.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">The short answer:</strong> Koinly is better for DeFi users, international users, and those needing comprehensive exchange coverage. TaxBit is better for US-based users with straightforward exchange trading who want a free solution with TurboTax integration.
+          <strong className="text-[var(--color-text)]">The short answer:</strong> Koinly is better for DeFi users, international users, and those needing comprehensive exchange coverage. TaxBit is better for US-based users with straightforward exchange trading who want a free solution with TurboTax integration.
         </p>
       </div>
       <section className="mb-12">
         <ComparisonTable items={items} features={features} title="Koinly vs TaxBit Feature Comparison" />
       </section>
       <section className="mb-12 prose prose-invert max-w-none">
-        <h2 className="text-2xl font-bold text-white mb-4">Detailed Analysis</h2>
-        <h3 className="text-xl font-bold text-white mt-6 mb-3">Exchange and Wallet Support</h3>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Exchange and Wallet Support</h3>
         <p className="text-[var(--color-text-secondary)]">Koinly supports over 800 exchanges and wallets, making it one of the most broadly compatible crypto tax tools available. TaxBit supports around 500 integrations, which still covers all major exchanges but may miss some smaller or regional platforms. For users with accounts across many exchanges, Koinly provides more comprehensive coverage.</p>
-        <h3 className="text-xl font-bold text-white mt-6 mb-3">DeFi and On-Chain Support</h3>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">DeFi and On-Chain Support</h3>
         <p className="text-[var(--color-text-secondary)]">This is where the tools diverge most significantly. Koinly has invested heavily in DeFi transaction parsing and supports a wide range of protocols across multiple chains. It can automatically categorize complex DeFi interactions including lending, borrowing, liquidity provision, and yield farming. TaxBit's DeFi support is more basic, handling straightforward swaps well but struggling with complex multi-step DeFi transactions.</p>
-        <h3 className="text-xl font-bold text-white mt-6 mb-3">Pricing and Value</h3>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Pricing and Value</h3>
         <p className="text-[var(--color-text-secondary)]">TaxBit's free consumer offering is its biggest advantage for budget-conscious users. However, the free tier has limitations in DeFi tracking and international support. Koinly's paid plans start at $49 per year and scale based on transaction count. For users who need DeFi support or international tax reports, Koinly provides better value despite the cost.</p>
       </section>
       <FAQSection faqs={faqs} />

@@ -19,7 +19,7 @@ export default function OpenSeaVsRariblePage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "OpenSea vs Rarible", href: "#" } ]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">OpenSea vs Rarible: Which NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">OpenSea vs Rarible: Which NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         OpenSea and Rarible are both established multi-chain NFT marketplaces that cater to creators
@@ -29,7 +29,7 @@ export default function OpenSeaVsRariblePage() {
       </p>
       <ComparisonTable items={[opensea, rarible]} features={nftComparisonFeatures} title="OpenSea vs Rarible: Head-to-Head" />
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           OpenSea charges a flat 2.5% marketplace fee on each sale. Rarible charges 1% from both the
           buyer and seller, for a total marketplace fee of 2%. This makes Rarible slightly cheaper
@@ -41,7 +41,7 @@ export default function OpenSeaVsRariblePage() {
           optional on most collections. For creators who depend on secondary sale royalties, Rarible
           provides a more supportive environment.
         </p>
-        <h2 className="text-2xl font-bold text-white mb-4">Creator Tools and Experience</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Creator Tools and Experience</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Rarible excels with its creator-focused features. Custom storefronts allow artists and brands
           to create dedicated, branded pages for their collections. The minting interface supports
@@ -55,14 +55,14 @@ export default function OpenSeaVsRariblePage() {
           listing process are compelling advantages. OpenSea Pro adds professional features but is
           aimed at traders rather than creators.
         </p>
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose OpenSea if</strong> you want the largest audience,
+            <strong className="text-[var(--color-text)]">Choose OpenSea if</strong> you want the largest audience,
             broadest blockchain support, lazy minting, and the most familiar NFT marketplace experience.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Rarible if</strong> you are a creator who values
+            <strong className="text-[var(--color-text)]">Choose Rarible if</strong> you are a creator who values
             royalty enforcement, custom storefronts, community governance via RARI, or a platform that
             prioritizes creator interests.
           </p>

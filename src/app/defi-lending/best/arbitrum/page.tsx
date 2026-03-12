@@ -17,11 +17,16 @@ export default function BestArbitrumDefiLending() {
       readTime="9 min"
       intro="Arbitrum has emerged as a leading Layer 2 network for DeFi lending, offering Ethereum-level security with dramatically lower gas fees. The network hosts a thriving ecosystem of lending protocols from battle-tested giants like Aave to Arbitrum-native innovators like Radiant Capital. This guide covers the best platforms for lending and borrowing on Arbitrum."
       toc={[
-        { id: "why-arbitrum", title: "Why Arbitrum for DeFi Lending", level: 2 },
-        { id: "top-protocols", title: "Top Lending Protocols", level: 2 },
+        { id: "why-arbitrum", title: "why-arbitrum", level: 2 },
+        { id: "why-arbitrum-for-defi-lending", title: "Why Arbitrum for DeFi Lending", level: 2 },
+        { id: "top-protocols", title: "top-protocols", level: 2 },
+        { id: "top-lending-protocols", title: "Top Lending Protocols", level: 2 },
+        { id: "yield-opportunities", title: "yield-opportunities", level: 2 },
         { id: "yield-opportunities", title: "Yield Opportunities", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
         { id: "getting-started", title: "Getting Started", level: 2 },
-        { id: "risks", title: "Arbitrum-Specific Risks", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "arbitrum-specific-risks", title: "Arbitrum-Specific Risks", level: 2 }
       ]}
       faqs={[
         { question: "Is Arbitrum safe for DeFi lending?", answer: "Arbitrum inherits Ethereum's security through its optimistic rollup architecture. Transactions settle on Ethereum mainnet. The main additional risk is the bridge, but the network has processed billions in value with a strong safety record." },

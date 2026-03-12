@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Bag Holder? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Bag Holder? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a bag holder is in crypto, how to avoid becoming one, and why understanding this concept matters for managing your portfolio.",
 };
@@ -17,11 +17,16 @@ export default function BagHolderPage() {
       readTime="4 min"
       intro="A bag holder is an investor left holding a cryptocurrency that has significantly declined in value, often to the point where selling would crystallize a major loss. The term comes from the image of being stuck holding a heavy 'bag' of worthless assets. Understanding this concept helps you make better decisions about when to cut losses versus when to hold."
       toc={[
-        { id: "definition", title: "What Is a Bag Holder?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-bag-holder", title: "What Is a Bag Holder?", level: 2 },
+        { id: "how-it-happens", title: "how-it-happens", level: 2 },
         { id: "how-it-happens", title: "How It Happens", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
         { id: "examples", title: "Examples", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "avoiding", title: "How to Avoid Becoming One", level: 2 },
+        { id: "avoiding", title: "avoiding", level: 2 },
+        { id: "how-to-avoid-becoming-one", title: "How to Avoid Becoming One", level: 2 }
       ]}
       faqs={[
         {

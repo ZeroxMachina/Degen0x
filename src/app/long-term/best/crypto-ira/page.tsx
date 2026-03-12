@@ -22,7 +22,7 @@ const products: Product[] = [
     cons: ["1% per-trade fee", "No staking within IRA", "US-only availability", "No managed portfolio option"],
     fees: "1% per trade, no monthly fees",
     bestFor: "Low-cost crypto IRA investing",
-    affiliateUrl: "https://cryptodegen.com/go/itrustcapital",
+    affiliateUrl: "https://degen0x.com/go/itrustcapital",
     category: "long-term",
     featured: true,
   },
@@ -36,7 +36,7 @@ const products: Product[] = [
     cons: ["Higher fee structure than competitors", "Minimum investment required", "Complex tiered fee schedule", "Setup fees apply"],
     fees: "Varies: setup fee + trading spread + custody fee",
     bestFor: "Investors wanting managed crypto retirement portfolios",
-    affiliateUrl: "https://cryptodegen.com/go/bitcoin-ira",
+    affiliateUrl: "https://degen0x.com/go/bitcoin-ira",
     category: "long-term",
   },
   {
@@ -49,7 +49,7 @@ const products: Product[] = [
     cons: ["$25/month account fee", "1% trading fee on each transaction", "Limited customer support hours", "No managed portfolio option"],
     fees: "$25/month + 1% trading fee",
     bestFor: "Broadest crypto selection in a retirement account",
-    affiliateUrl: "https://cryptodegen.com/go/alto-crypto",
+    affiliateUrl: "https://degen0x.com/go/alto-crypto",
     category: "long-term",
   },
   {
@@ -62,7 +62,7 @@ const products: Product[] = [
     cons: ["Bitcoin only - no altcoins", "Higher learning curve", "Annual custody fee", "Requires understanding of multi-sig"],
     fees: "Annual subscription + trading fees",
     bestFor: "Bitcoin maximalists wanting key control",
-    affiliateUrl: "https://cryptodegen.com/go/unchained",
+    affiliateUrl: "https://degen0x.com/go/unchained",
     category: "long-term",
   },
   {
@@ -75,7 +75,7 @@ const products: Product[] = [
     cons: ["Bitcoin only - no other cryptocurrencies", "Limited IRA account types", "Smaller company than competitors", "No managed portfolio option"],
     fees: "0.99% on purchases under $10K, lower for larger amounts",
     bestFor: "Automated Bitcoin retirement saving via DCA",
-    affiliateUrl: "https://cryptodegen.com/go/swan-bitcoin",
+    affiliateUrl: "https://degen0x.com/go/swan-bitcoin",
     category: "long-term",
   },
 ];
@@ -113,7 +113,7 @@ export default function CryptoIraPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Crypto IRA", href: "/long-term/best/crypto-ira" }]} />
       <AffiliateDisclosure />
 
-      <h1 className="text-4xl font-bold text-white mb-4">Best Crypto IRA Providers ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Crypto IRA Providers ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
 
       <div className="prose prose-invert max-w-none mb-10">
@@ -125,10 +125,10 @@ export default function CryptoIraPage() {
           structure, custody security, IRA type support, and overall user experience.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          Our top pick for most investors is <strong className="text-white">iTrustCapital</strong> for its
+          Our top pick for most investors is <strong className="text-[var(--color-text)]">iTrustCapital</strong> for its
           zero monthly fees, broad asset selection, and 24/7 trading. For investors wanting managed portfolios,
-          <strong className="text-white"> Bitcoin IRA</strong> offers professional management with institutional
-          custody. And for maximum asset selection, <strong className="text-white">Alto Crypto IRA</strong> provides
+          <strong className="text-[var(--color-text)]"> Bitcoin IRA</strong> offers professional management with institutional
+          custody. And for maximum asset selection, <strong className="text-[var(--color-text)]">Alto Crypto IRA</strong> provides
           access to 200+ cryptocurrencies through Coinbase.
         </p>
       </div>
@@ -140,15 +140,15 @@ export default function CryptoIraPage() {
       </div>
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Understanding Crypto IRA Tax Benefits</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Understanding Crypto IRA Tax Benefits</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <p>The primary advantage of a crypto IRA is tax optimization for long-term crypto investments:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong className="text-white">Traditional IRA:</strong> Contributions may be tax-deductible. Investments grow tax-deferred until withdrawal in retirement, when they are taxed as ordinary income.</li>
-            <li><strong className="text-white">Roth IRA:</strong> Contributions are made with after-tax dollars. Investments grow tax-free, and qualified withdrawals in retirement are completely tax-free, including all gains.</li>
-            <li><strong className="text-white">SEP IRA:</strong> Available for self-employed individuals with much higher contribution limits. Same tax-deferred structure as Traditional IRA but allows contributions up to $69,000 per year.</li>
-            <li><strong className="text-white">No Capital Gains Events:</strong> Trading within any IRA type does not trigger capital gains tax, allowing you to rebalance your crypto portfolio freely without tax consequences.</li>
-            <li><strong className="text-white">Contribution Limits:</strong> {CURRENT_YEAR} limits are $7,000/year ($8,000 if age 50+) for Traditional and Roth IRAs. SEP IRA limits are substantially higher.</li>
+            <li><strong className="text-[var(--color-text)]">Traditional IRA:</strong> Contributions may be tax-deductible. Investments grow tax-deferred until withdrawal in retirement, when they are taxed as ordinary income.</li>
+            <li><strong className="text-[var(--color-text)]">Roth IRA:</strong> Contributions are made with after-tax dollars. Investments grow tax-free, and qualified withdrawals in retirement are completely tax-free, including all gains.</li>
+            <li><strong className="text-[var(--color-text)]">SEP IRA:</strong> Available for self-employed individuals with much higher contribution limits. Same tax-deferred structure as Traditional IRA but allows contributions up to $69,000 per year.</li>
+            <li><strong className="text-[var(--color-text)]">No Capital Gains Events:</strong> Trading within any IRA type does not trigger capital gains tax, allowing you to rebalance your crypto portfolio freely without tax consequences.</li>
+            <li><strong className="text-[var(--color-text)]">Contribution Limits:</strong> {CURRENT_YEAR} limits are $7,000/year ($8,000 if age 50+) for Traditional and Roth IRAs. SEP IRA limits are substantially higher.</li>
           </ul>
         </div>
       </section>

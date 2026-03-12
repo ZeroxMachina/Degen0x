@@ -17,13 +17,20 @@ export default function StakingRisksPage() {
       readTime="11 min"
       intro="While staking is often presented as a way to earn passive income, it comes with real risks that every participant should understand. From slashing penalties to smart contract vulnerabilities to regulatory uncertainty, the staking landscape has multiple risk vectors. This guide provides an honest assessment of each risk and practical strategies for mitigation."
       toc={[
+        { id: "slashing-risk", title: "slashing-risk", level: 2 },
         { id: "slashing-risk", title: "Slashing Risk", level: 2 },
+        { id: "smart-contract-risk", title: "smart-contract-risk", level: 2 },
         { id: "smart-contract-risk", title: "Smart Contract Risk", level: 2 },
-        { id: "depeg-risk", title: "De-Peg Risk", level: 2 },
-        { id: "market-risk", title: "Market & Volatility Risk", level: 2 },
+        { id: "depeg-risk", title: "depeg-risk", level: 2 },
+        { id: "de-peg-risk", title: "De-Peg Risk", level: 2 },
+        { id: "market-risk", title: "market-risk", level: 2 },
+        { id: "market-volatility-risk", title: "Market & Volatility Risk", level: 2 },
+        { id: "regulatory-risk", title: "regulatory-risk", level: 2 },
         { id: "regulatory-risk", title: "Regulatory Risk", level: 2 },
-        { id: "liquidity-risk", title: "Liquidity & Lock-Up Risk", level: 2 },
-        { id: "mitigation", title: "Risk Mitigation Strategies", level: 2 },
+        { id: "liquidity-risk", title: "liquidity-risk", level: 2 },
+        { id: "liquidity-lock-up-risk", title: "Liquidity & Lock-Up Risk", level: 2 },
+        { id: "mitigation", title: "mitigation", level: 2 },
+        { id: "risk-mitigation-strategies", title: "Risk Mitigation Strategies", level: 2 }
       ]}
       faqs={[
         {

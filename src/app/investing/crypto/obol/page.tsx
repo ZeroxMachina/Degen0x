@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Obol Network (OBOL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Obol Network (OBOL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Obol Network (OBOL), the DVT middleware for Ethereum staking. Discover how it works, tokenomics, use cases, and how to buy OBOL.",
 };
 
@@ -16,12 +16,18 @@ export default function ObolPage() {
       readTime="8 min read"
       intro="Obol Network is a Distributed Validator Technology (DVT) middleware protocol that enables trust-minimized Ethereum staking through distributed validators using the Charon client. Obol's approach allows multiple independent parties to collectively operate validators, improving resilience and decentralization while reducing the risk of slashing and downtime."
       toc={[
-        { id: "what-is", title: "What Is Obol Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Obol Network Work?", level: 2 },
-        { id: "tokenomics", title: "OBOL Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy OBOL", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-obol-network", title: "What Is Obol Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-obol-network-work", title: "How Does Obol Network Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "obol-tokenomics", title: "OBOL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-obol", title: "How to Buy OBOL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Obol Network?", answer: "Obol Network is a DVT middleware protocol using the Charon client to enable distributed validators where multiple operators collectively run a single Ethereum validator for enhanced resilience and decentralization." },

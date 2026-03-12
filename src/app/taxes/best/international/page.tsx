@@ -17,10 +17,14 @@ export default function BestInternationalTaxPage() {
       readTime="9 min"
       intro="Crypto tax rules vary dramatically between countries, from tax-free jurisdictions to complex reporting requirements. Many crypto tax tools are US-centric, but several platforms offer comprehensive international support with country-specific calculations, forms, and cost basis methods. This guide identifies the best options for non-US crypto taxpayers and covers key considerations for international tax compliance."
       toc={[
-        { id: "why-it-matters", title: "Why Country-Specific Tools Matter", level: 2 },
-        { id: "top-international", title: "Top International Tax Tools", level: 2 },
-        { id: "country-specific", title: "Country-Specific Considerations", level: 2 },
-        { id: "choosing", title: "Choosing the Right Tool", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-country-specific-tools-matter", title: "Why Country-Specific Tools Matter", level: 2 },
+        { id: "top-international", title: "top-international", level: 2 },
+        { id: "top-international-tax-tools", title: "Top International Tax Tools", level: 2 },
+        { id: "country-specific", title: "country-specific", level: 2 },
+        { id: "country-specific-considerations", title: "Country-Specific Considerations", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-the-right-tool", title: "Choosing the Right Tool", level: 2 }
       ]}
       faqs={[
         { question: "Can US-focused tools work for international users?", answer: "Basic gain/loss calculations may work, but country-specific rules around holding periods, tax-free thresholds, and reporting formats differ significantly. Using a tool with proper support for your country ensures accurate calculations and generates the correct forms." },

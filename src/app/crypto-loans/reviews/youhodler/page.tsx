@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `YouHodler Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `YouHodler Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth YouHodler review covering crypto loans, Multi HODL feature, turbocharge loans, rates, and whether YouHodler is right for your needs.",
 };
 

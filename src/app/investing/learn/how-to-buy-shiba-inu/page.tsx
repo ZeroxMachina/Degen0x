@@ -16,10 +16,14 @@ export default function HowToBuyShibaInuPage() {
       readTime="8 min"
       intro="Shiba Inu is one of the most popular meme coins, originally created as a Dogecoin competitor. Since its launch in 2020, SHIB has evolved beyond a simple meme token with the introduction of Shibarium (a Layer 2 network), ShibaSwap (a DEX), and various ecosystem tokens. This guide covers how to buy SHIB and important risk considerations."
       toc={[
-        { id: "what-is-shib", title: "What Is Shiba Inu?", level: 2 },
-        { id: "where-to-buy", title: "Where to Buy SHIB", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Purchase Guide", level: 2 },
-        { id: "risks", title: "Risks and Storage", level: 2 },
+        { id: "what-is-shib", title: "what-is-shib", level: 2 },
+        { id: "what-is-shiba-inu", title: "What Is Shiba Inu?", level: 2 },
+        { id: "where-to-buy", title: "where-to-buy", level: 2 },
+        { id: "where-to-buy-shib", title: "Where to Buy SHIB", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-purchase-guide", title: "Step-by-Step Purchase Guide", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-storage", title: "Risks and Storage", level: 2 }
       ]}
       faqs={[
         { question: "Why does SHIB have so many zeros in its price?", answer: "SHIB has a massive total supply of nearly 589 trillion tokens (after burns), which results in a very low per-token price. This is by design and does not inherently mean SHIB is cheap. Market cap (price multiplied by supply) is a more meaningful metric for comparing value across different cryptocurrencies." },

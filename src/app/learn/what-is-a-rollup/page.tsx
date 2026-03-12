@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Rollup? Optimistic vs ZK Rollups (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Rollup? Optimistic vs ZK Rollups (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what rollups are, how optimistic and ZK rollups differ, and why they are critical to blockchain scaling. A comprehensive guide to Layer 2 rollup technology.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsARollupPage() {
       readTime="10 min read"
       intro="Rollups are Layer 2 scaling solutions that execute transactions off the main blockchain (Layer 1) but post transaction data back to it for security. By bundling hundreds of transactions into a single batch, rollups dramatically reduce costs while inheriting the security guarantees of the underlying chain. They are the primary scaling strategy for Ethereum and have become the foundation of the multi-chain future."
       toc={[
+        { id: "what-are-rollups", title: "what-are-rollups", level: 2 },
         { id: "what-are-rollups", title: "What Are Rollups?", level: 2 },
+        { id: "optimistic-rollups", title: "optimistic-rollups", level: 2 },
         { id: "optimistic-rollups", title: "Optimistic Rollups", level: 2 },
+        { id: "zk-rollups", title: "zk-rollups", level: 2 },
         { id: "zk-rollups", title: "ZK Rollups", level: 2 },
-        { id: "comparison", title: "Optimistic vs ZK: Key Differences", level: 2 },
+        { id: "comparison", title: "comparison", level: 2 },
+        { id: "optimistic-vs-zk-key-differences", title: "Optimistic vs ZK: Key Differences", level: 2 }
       ]}
       faqs={[
         {

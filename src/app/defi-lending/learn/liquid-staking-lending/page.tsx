@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Liquid Staking Tokens in DeFi Lending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Liquid Staking Tokens in DeFi Lending (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to using liquid staking tokens (LSTs) in DeFi lending. Learn how to earn staking yield plus lending yield with stETH, rETH, and other LSTs.",
 };
 
@@ -11,7 +11,16 @@ export default function LiquidStakingLendingPage() {
   return (
     <LearnPageLayout title="Liquid Staking Tokens in DeFi Lending" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="8 min read"
       intro="Liquid staking tokens (LSTs) like stETH, rETH, and cbETH have become some of the most popular collateral types in DeFi lending. By combining staking yield with lending opportunities, LSTs offer a capital-efficient way to earn multiple layers of return on your ETH. This guide covers how to use LSTs effectively in lending protocols, the strategies available, and the risks to understand."
-      toc={[{ id: "what-are-lsts", title: "What Are Liquid Staking Tokens?", level: 2 }, { id: "lending-strategies", title: "LST Lending Strategies", level: 2 }, { id: "emode-leverage", title: "eMode and Leveraged Staking", level: 2 }, { id: "risks", title: "LST-Specific Risks", level: 2 }]}
+      toc={[
+        { id: "what-are-lsts", title: "what-are-lsts", level: 2 },
+        { id: "what-are-liquid-staking-tokens", title: "What Are Liquid Staking Tokens?", level: 2 },
+        { id: "lending-strategies", title: "lending-strategies", level: 2 },
+        { id: "lst-lending-strategies", title: "LST Lending Strategies", level: 2 },
+        { id: "emode-leverage", title: "emode-leverage", level: 2 },
+        { id: "emode-and-leveraged-staking", title: "eMode and Leveraged Staking", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "lst-specific-risks", title: "LST-Specific Risks", level: 2 }
+      ]}
       faqs={[
         { question: "What are the main LSTs?", answer: "The largest liquid staking tokens are stETH (Lido), rETH (Rocket Pool), cbETH (Coinbase), sfrxETH (Frax), and swETH (Swell). Each represents staked ETH plus accumulated rewards, but they differ in decentralization, fee structures, and DeFi integrations." },
         { question: "Can I earn staking yield and lending yield simultaneously?", answer: "Yes. When you deposit an LST as collateral in a lending protocol, the LST continues to accrue staking rewards while serving as collateral. You earn staking yield plus any lending supply rate, and can borrow against it for additional strategies." },

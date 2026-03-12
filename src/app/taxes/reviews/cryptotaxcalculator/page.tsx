@@ -39,7 +39,7 @@ export default function CryptoTaxCalculatorReviewPage() {
 
       <article>
         <header className="mb-8">
-          <h1 className="text-4xl font-bold text-white mb-4">CryptoTaxCalculator Review {CURRENT_YEAR}</h1>
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">CryptoTaxCalculator Review {CURRENT_YEAR}</h1>
           <div className="flex items-center gap-4 mb-4">
             <StarRating rating={4.7} size="lg" />
             <span className="text-sm text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</span>
@@ -50,14 +50,14 @@ export default function CryptoTaxCalculatorReviewPage() {
             complexity that other tools struggle with.
           </p>
           <div className="mt-4">
-            <a href="https://cryptodegen.com/go/cryptotaxcalculator" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try CryptoTaxCalculator</a>
+            <a href="https://degen0x.com/go/cryptotaxcalculator" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try CryptoTaxCalculator</a>
           </div>
         </header>
 
         <TableOfContents items={toc} />
 
         <section id="overview" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Overview</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Overview</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Founded in Australia, CryptoTaxCalculator has built its reputation on handling the
             most complex crypto tax scenarios. While most tax software handles simple exchange
@@ -75,7 +75,7 @@ export default function CryptoTaxCalculatorReviewPage() {
         </section>
 
         <section id="defi-support" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">DeFi & NFT Support</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">DeFi & NFT Support</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             This is where CryptoTaxCalculator truly excels. It automatically handles Uniswap
             and SushiSwap trades, Aave and Compound lending/borrowing, Curve and Balancer LP
@@ -92,7 +92,7 @@ export default function CryptoTaxCalculatorReviewPage() {
         </section>
 
         <section id="pricing" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Pricing</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Pricing</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { plan: "Rookie", price: "$49", txns: "100 transactions" },
@@ -101,7 +101,7 @@ export default function CryptoTaxCalculatorReviewPage() {
               { plan: "Trader", price: "$299", txns: "100,000 transactions" },
             ].map((p) => (
               <div key={p.plan} className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 text-center">
-                <h3 className="text-sm font-semibold text-white">{p.plan}</h3>
+                <h3 className="text-sm font-semibold text-[var(--color-text)]">{p.plan}</h3>
                 <p className="text-2xl font-bold text-[var(--color-primary)] my-2">{p.price}</p>
                 <p className="text-xs text-[var(--color-text-secondary)]">{p.txns}</p>
               </div>
@@ -110,7 +110,7 @@ export default function CryptoTaxCalculatorReviewPage() {
         </section>
 
         <section id="pros-cons" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Pros & Cons</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Pros & Cons</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
               <h3 className="text-lg font-semibold text-[var(--color-success)] mb-3">Pros</h3>
@@ -135,7 +135,7 @@ export default function CryptoTaxCalculatorReviewPage() {
         </section>
 
         <section id="verdict" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
             <StarRating rating={4.7} size="lg" />
             <p className="text-[var(--color-text-secondary)] mt-4 mb-4">
@@ -145,7 +145,7 @@ export default function CryptoTaxCalculatorReviewPage() {
               offers a more cost-effective solution, but for DeFi complexity, CryptoTaxCalculator
               is unmatched.
             </p>
-            <a href="https://cryptodegen.com/go/cryptotaxcalculator" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try CryptoTaxCalculator</a>
+            <a href="https://degen0x.com/go/cryptotaxcalculator" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try CryptoTaxCalculator</a>
           </div>
         </section>
 

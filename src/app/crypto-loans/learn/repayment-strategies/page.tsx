@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Loan Repayment Strategies (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Loan Repayment Strategies (${CURRENT_YEAR}) | degen0x`,
   description: "Learn effective strategies for repaying crypto loans. Compare lump-sum, gradual, and yield-based repayment approaches to minimize costs.",
 };
 
@@ -16,10 +16,14 @@ export default function RepaymentStrategiesPage() {
       readTime="8 min read"
       intro="Having a solid repayment strategy before taking a crypto loan is just as important as choosing the right platform. The right approach depends on your financial situation, market outlook, and risk tolerance. This guide covers proven repayment strategies to help you manage your crypto loans efficiently and minimize total interest paid."
       toc={[
-        { id: "strategies", title: "Common Repayment Strategies", level: 2 },
-        { id: "yield-repayment", title: "Using Yield to Repay", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "common-repayment-strategies", title: "Common Repayment Strategies", level: 2 },
+        { id: "yield-repayment", title: "yield-repayment", level: 2 },
+        { id: "using-yield-to-repay", title: "Using Yield to Repay", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
-        { id: "avoiding-mistakes", title: "Common Mistakes to Avoid", level: 2 },
+        { id: "avoiding-mistakes", title: "avoiding-mistakes", level: 2 },
+        { id: "common-mistakes-to-avoid", title: "Common Mistakes to Avoid", level: 2 }
       ]}
       faqs={[
         { question: "Should I repay my crypto loan early?", answer: "It depends on the interest rate and alternative use of funds. If your loan rate exceeds what you earn on the borrowed funds, repay early. Most crypto loans have no prepayment penalties, making early repayment straightforward." },

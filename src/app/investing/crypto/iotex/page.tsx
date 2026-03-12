@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is IoTeX (IOTX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is IoTeX (IOTX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about IoTeX (IOTX), the blockchain platform for IoT and DePIN. Discover how it works, tokenomics, use cases, and how to buy IOTX.",
 };
 
 export default function IotexPage() {
   return (
-    <LearnPageLayout title="What Is IoTeX (IOTX)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="IoTeX is a modular blockchain platform purpose-built for the Internet of Things (IoT) and Decentralized Physical Infrastructure Networks (DePIN). Founded in 2017, IoTeX provides the infrastructure for connecting real-world devices to blockchain, enabling verifiable data from IoT sensors, machine identity management, and token incentives for physical infrastructure networks. IoTeX has become a foundational layer for the DePIN ecosystem." toc={[{id:"what-is",title:"What Is IoTeX?",level:2},{id:"how-it-works",title:"How Does IoTeX Work?",level:2},{id:"tokenomics",title:"IOTX Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy IOTX",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is IoTeX?",answer:"IoTeX is a blockchain platform for IoT and DePIN that connects real-world devices to blockchain, enabling verifiable device data, machine identity, and infrastructure token incentives."},{question:"Where can I buy IOTX?",answer:"IOTX is available on Binance, Coinbase, Gate.io, and Uniswap. It trades against USDT, USDC, and ETH pairs."},{question:"Is IoTeX a good investment?",answer:"IoTeX is well-positioned in the growing DePIN sector with years of development, but IoT blockchain adoption is still early. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
+    <LearnPageLayout title="What Is IoTeX (IOTX)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="IoTeX is a modular blockchain platform purpose-built for the Internet of Things (IoT) and Decentralized Physical Infrastructure Networks (DePIN). Founded in 2017, IoTeX provides the infrastructure for connecting real-world devices to blockchain, enabling verifiable data from IoT sensors, machine identity management, and token incentives for physical infrastructure networks. IoTeX has become a foundational layer for the DePIN ecosystem." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-iotex", title: "What Is IoTeX?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-iotex-work", title: "How Does IoTeX Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "iotx-tokenomics", title: "IOTX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-iotx", title: "How to Buy IOTX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is IoTeX?",answer:"IoTeX is a blockchain platform for IoT and DePIN that connects real-world devices to blockchain, enabling verifiable device data, machine identity, and infrastructure token incentives."},{question:"Where can I buy IOTX?",answer:"IOTX is available on Binance, Coinbase, Gate.io, and Uniswap. It trades against USDT, USDC, and ETH pairs."},{question:"Is IoTeX a good investment?",answer:"IoTeX is well-positioned in the growing DePIN sector with years of development, but IoT blockchain adoption is still early. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
       <h2 id="what-is">What Is IoTeX?</h2>
       <p>IoTeX was founded by Raullen Chai, a former Google engineer and Uber security lead, along with Qevan Guo and Jing Sun. The project was among the first blockchain platforms specifically designed for IoT use cases, launching years before the DePIN narrative gained mainstream attention in crypto. IoTeX&apos;s long development history has resulted in a mature technology stack that includes the IoTeX L1 blockchain, W3bstream (an off-chain compute layer for IoT data), and DePINscan (a DePIN analytics platform).</p>
       <p>The platform has positioned itself as the foundational infrastructure layer for DePIN projects, providing the tools for device registration, data verification, token economics, and cross-chain interoperability that DePIN applications need. IoTeX&apos;s 2.0 upgrade introduced a modular architecture with a DePIN-specific infrastructure layer, making it easier for projects to launch and manage DePIN networks using IoTeX&apos;s proven technology stack.</p>

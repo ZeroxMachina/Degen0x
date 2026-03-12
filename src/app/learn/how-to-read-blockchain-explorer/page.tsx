@@ -12,11 +12,16 @@ export default function HowToReadBlockchainExplorerPage() {
   return (
     <LearnPageLayout title="How to Read a Blockchain Explorer" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Blockchain explorers are essential tools for verifying transactions, researching addresses, analyzing smart contracts, and understanding on-chain activity. Etherscan is the most popular explorer for Ethereum, but similar tools exist for every major blockchain. Learning to navigate these tools gives you direct access to transparent, verifiable blockchain data."
       toc={[
-        { id: "overview", title: "What Is a Block Explorer?", level: 2 },
-        { id: "transactions", title: "Reading Transactions", level: 2 },
-        { id: "addresses", title: "Exploring Addresses", level: 2 },
-        { id: "contracts", title: "Smart Contract Info", level: 2 },
-        { id: "tools", title: "Popular Explorers", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "what-is-a-block-explorer", title: "What Is a Block Explorer?", level: 2 },
+        { id: "transactions", title: "transactions", level: 2 },
+        { id: "reading-transactions", title: "Reading Transactions", level: 2 },
+        { id: "addresses", title: "addresses", level: 2 },
+        { id: "exploring-addresses", title: "Exploring Addresses", level: 2 },
+        { id: "contracts", title: "contracts", level: 2 },
+        { id: "smart-contract-info", title: "Smart Contract Info", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "popular-explorers", title: "Popular Explorers", level: 2 }
       ]}
       faqs={[
         { question: "What is a transaction hash?", answer: "A transaction hash (txid) is a unique identifier for every blockchain transaction. It is a long alphanumeric string that you can paste into a block explorer to view the full details of the transaction including status, sender, recipient, amount, gas used, and timestamp." },

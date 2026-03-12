@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Atomic Wallet Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Atomic Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "Comprehensive Atomic Wallet review covering features, security, atomic swaps, staking, and supported assets. Is Atomic Wallet right for you?",
 };
 

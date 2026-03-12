@@ -48,7 +48,7 @@ export default function BestNftMarketplacesPage() {
     "@type": "Article",
     headline: `10 Best NFT Marketplaces of ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -66,7 +66,7 @@ export default function BestNftMarketplacesPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           10 Best NFT Marketplaces of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -83,17 +83,17 @@ export default function BestNftMarketplacesPage() {
             overall experience on each platform.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            Our top pick for most users is <strong className="text-white">OpenSea</strong> for
+            Our top pick for most users is <strong className="text-[var(--color-text)]">OpenSea</strong> for
             its unmatched collection breadth and multi-chain support. For professional traders seeking zero
-            fees and advanced tools, <strong className="text-white">Blur</strong> dominates Ethereum
-            volume. And for Solana enthusiasts, <strong className="text-white">Magic Eden</strong> is
+            fees and advanced tools, <strong className="text-[var(--color-text)]">Blur</strong> dominates Ethereum
+            volume. And for Solana enthusiasts, <strong className="text-[var(--color-text)]">Magic Eden</strong> is
             the clear leader with additional Bitcoin Ordinals support.
           </p>
         </div>
 
         {/* Rankings */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
           <div className="space-y-4">
             {rankedMarketplaces.map((marketplace, index) => (
               <ProductCard
@@ -108,7 +108,7 @@ export default function BestNftMarketplacesPage() {
 
         {/* Comparison Table */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">
             Top 5 Marketplaces Compared
           </h2>
           <ComparisonTable
@@ -120,7 +120,7 @@ export default function BestNftMarketplacesPage() {
 
         {/* Methodology */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             We evaluate each NFT marketplace across six key categories, each weighted based on importance
             to the average user:
@@ -135,7 +135,7 @@ export default function BestNftMarketplacesPage() {
               { title: "Trading Features (10%)", desc: "Advanced order types, analytics, portfolio tracking, and bulk tools." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}
@@ -144,7 +144,7 @@ export default function BestNftMarketplacesPage() {
 
         {/* Detailed Reviews Summary */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">
             Quick Summaries
           </h2>
           <div className="space-y-6">
@@ -153,7 +153,7 @@ export default function BestNftMarketplacesPage() {
                 key={marketplace.slug}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6"
               >
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-xl font-bold text-[var(--color-text)] mb-2">
                   {index + 1}. {marketplace.name} &mdash; Best for {marketplace.bestFor}
                 </h3>
                 <p className="text-[var(--color-text-secondary)] mb-4">
@@ -204,7 +204,7 @@ export default function BestNftMarketplacesPage() {
                   </a>
                   <a
                     href={`/nfts/reviews/${marketplace.slug}`}
-                    className="px-4 py-2 rounded-lg border border-[var(--color-border)] text-white text-sm font-medium hover:bg-[var(--color-bg)]/50 transition-colors"
+                    className="px-4 py-2 rounded-lg border border-[var(--color-border)] text-[var(--color-text)] text-sm font-medium hover:bg-[var(--color-bg)]/50 transition-colors"
                   >
                     Read Full Review
                   </a>

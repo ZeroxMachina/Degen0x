@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Node? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Node? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what blockchain nodes are, the different types of nodes, and why they are essential for network decentralization.",
 };
@@ -17,11 +17,16 @@ export default function NodePage() {
       readTime="5 min"
       intro="A node is a computer that runs blockchain software and participates in the network by validating, relaying, and storing transaction data. Nodes are the infrastructure of any blockchain — they enforce the protocol rules, maintain copies of the ledger, and ensure the network operates correctly. The more nodes a blockchain has, the more decentralized and resilient it becomes."
       toc={[
-        { id: "definition", title: "What Is a Node?", level: 2 },
-        { id: "types", title: "Types of Nodes", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-node", title: "What Is a Node?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-nodes", title: "Types of Nodes", level: 2 },
+        { id: "running-a-node", title: "running-a-node", level: 2 },
         { id: "running-a-node", title: "Running a Node", level: 2 },
+        { id: "node-incentives", title: "node-incentives", level: 2 },
         { id: "node-incentives", title: "Node Incentives", level: 2 },
-        { id: "why-it-matters", title: "Why Nodes Matter", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-nodes-matter", title: "Why Nodes Matter", level: 2 }
       ]}
       faqs={[
         {

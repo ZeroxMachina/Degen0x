@@ -17,10 +17,14 @@ export default function CryptoPaymentAppsGuidePage() {
       readTime="10 min"
       intro="Crypto payment apps make it easy to spend, send, and receive digital assets from your phone. From dedicated crypto wallets to mainstream fintech apps with crypto features, this guide compares the best options for managing your crypto spending on the go."
       toc={[
-        { id: "dedicated-apps", title: "Dedicated Crypto Payment Apps", level: 2 },
-        { id: "mainstream", title: "Mainstream Apps with Crypto", level: 2 },
-        { id: "lightning-apps", title: "Lightning Payment Apps", level: 2 },
-        { id: "comparing", title: "Comparing Features and Fees", level: 2 },
+        { id: "dedicated-apps", title: "dedicated-apps", level: 2 },
+        { id: "dedicated-crypto-payment-apps", title: "Dedicated Crypto Payment Apps", level: 2 },
+        { id: "mainstream", title: "mainstream", level: 2 },
+        { id: "mainstream-apps-with-crypto", title: "Mainstream Apps with Crypto", level: 2 },
+        { id: "lightning-apps", title: "lightning-apps", level: 2 },
+        { id: "lightning-payment-apps", title: "Lightning Payment Apps", level: 2 },
+        { id: "comparing", title: "comparing", level: 2 },
+        { id: "comparing-features-and-fees", title: "Comparing Features and Fees", level: 2 }
       ]}
       faqs={[
         { question: "What is the best crypto payment app?", answer: "It depends on your needs. BitPay is best for debit card spending and bill pay. Cash App is best for casual Bitcoin and Lightning payments. For maximum crypto variety, Crypto.com offers broad asset support with a rewards card." },

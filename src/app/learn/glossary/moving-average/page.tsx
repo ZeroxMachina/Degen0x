@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Moving Average in Crypto Trading (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Moving Average in Crypto Trading (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what moving averages are, how SMA and EMA work in crypto trading, how to use them for trend identification, and common moving average strategies.",
 };
 
@@ -16,10 +16,14 @@ export default function MovingAveragePage() {
       readTime="7 min read"
       intro="A moving average is a technical indicator that smooths price data by calculating the average price over a specific number of periods. Moving averages help traders identify trends, filter market noise, and generate buy or sell signals. They are among the most widely used tools in crypto technical analysis, forming the foundation for more complex indicators like MACD and Bollinger Bands."
       toc={[
-        { id: "what-is-ma", title: "What Is a Moving Average?", level: 2 },
+        { id: "what-is-ma", title: "what-is-ma", level: 2 },
+        { id: "what-is-a-moving-average", title: "What Is a Moving Average?", level: 2 },
+        { id: "sma-vs-ema", title: "sma-vs-ema", level: 2 },
         { id: "sma-vs-ema", title: "SMA vs EMA", level: 2 },
-        { id: "common-periods", title: "Common MA Periods", level: 2 },
-        { id: "trading-strategies", title: "MA Trading Strategies", level: 2 },
+        { id: "common-periods", title: "common-periods", level: 2 },
+        { id: "common-ma-periods", title: "Common MA Periods", level: 2 },
+        { id: "trading-strategies", title: "trading-strategies", level: 2 },
+        { id: "ma-trading-strategies", title: "MA Trading Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Which moving average is best for crypto?", answer: "There is no single best moving average. The 50-day and 200-day SMAs are most popular for identifying long-term trends. The 20-day EMA works well for swing trading. Shorter EMAs (9-day, 12-day) suit active traders. The best choice depends on your trading timeframe and strategy." },

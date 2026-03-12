@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Exchange Referral Programs (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Exchange Referral Programs (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchange referral programs. Commission rates, structures, payout methods, and how to maximize referral earnings across major platforms.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeReferralPrograms() {
       readTime="8 min read"
       intro="Crypto exchange referral programs reward you for bringing new users to their platforms. Commission rates, payout structures, and bonus conditions vary significantly between exchanges. Whether you are sharing with friends or building a larger referral network, understanding these programs helps you maximize rewards while providing genuine value to the people you refer."
       toc={[
-        { id: "how-they-work", title: "How Referral Programs Work", level: 2 },
-        { id: "top-programs", title: "Top Exchange Referral Programs", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-referral-programs-work", title: "How Referral Programs Work", level: 2 },
+        { id: "top-programs", title: "top-programs", level: 2 },
+        { id: "top-exchange-referral-programs", title: "Top Exchange Referral Programs", level: 2 },
+        { id: "commission-structures", title: "commission-structures", level: 2 },
         { id: "commission-structures", title: "Commission Structures", level: 2 },
-        { id: "maximizing-earnings", title: "Maximizing Referral Earnings", level: 2 },
-        { id: "referee-benefits", title: "Benefits for Referred Users", level: 2 },
-        { id: "rules-compliance", title: "Rules and Compliance", level: 2 },
-        { id: "tips", title: "Referral Tips", level: 2 },
+        { id: "maximizing-earnings", title: "maximizing-earnings", level: 2 },
+        { id: "maximizing-referral-earnings", title: "Maximizing Referral Earnings", level: 2 },
+        { id: "referee-benefits", title: "referee-benefits", level: 2 },
+        { id: "benefits-for-referred-users", title: "Benefits for Referred Users", level: 2 },
+        { id: "rules-compliance", title: "rules-compliance", level: 2 },
+        { id: "rules-and-compliance", title: "Rules and Compliance", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "referral-tips", title: "Referral Tips", level: 2 }
       ]}
       faqs={[
         { question: "How much can I earn from referrals?", answer: "Earnings depend on the exchange, your commission rate, and your referrals' trading activity. Active referrals can generate $1-50+ per month each depending on their trading volume. Top affiliates with large networks earn thousands monthly." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Parametric Crypto Insurance Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Parametric Crypto Insurance Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how parametric insurance works in crypto. Automated payouts based on predefined conditions, no claims process needed.",
 };
 
@@ -11,7 +11,16 @@ export default function ParametricInsurancePage() {
   return (
     <LearnPageLayout title="Parametric Crypto Insurance Explained" categoryName="Crypto Insurance" categorySlug="insurance" readTime="8 min read"
       intro="Parametric insurance is a revolutionary approach to crypto protection that pays out automatically when predefined conditions are met, without requiring a traditional claims process. Instead of proving losses and waiting for assessment, parametric policies use on-chain data and oracles to trigger instant payouts when specific events occur, such as a stablecoin depeg, smart contract exploit, or oracle failure."
-      toc={[{ id: "how-it-works", title: "How Parametric Insurance Works", level: 2 }, { id: "vs-traditional", title: "Parametric vs Traditional Insurance", level: 2 }, { id: "use-cases", title: "Crypto Use Cases", level: 2 }, { id: "limitations", title: "Limitations and Considerations", level: 2 }]}
+      toc={[
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-parametric-insurance-works", title: "How Parametric Insurance Works", level: 2 },
+        { id: "vs-traditional", title: "vs-traditional", level: 2 },
+        { id: "parametric-vs-traditional-insurance", title: "Parametric vs Traditional Insurance", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "crypto-use-cases", title: "Crypto Use Cases", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-and-considerations", title: "Limitations and Considerations", level: 2 }
+      ]}
       faqs={[
         { question: "What is parametric insurance?", answer: "Parametric insurance pays out automatically when a predefined trigger condition is met, regardless of actual loss amount. For example, a policy might pay if ETH drops more than 30% in 24 hours or if a stablecoin depegs below $0.95. The payout is predetermined and automatic." },
         { question: "How are payouts triggered?", answer: "Payouts are triggered by on-chain data verified through oracles. When the monitored parameter crosses the trigger threshold, the smart contract automatically executes the payout. No claims filing, no human assessment, no waiting period." },

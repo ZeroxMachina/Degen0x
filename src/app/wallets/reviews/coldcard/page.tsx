@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Coldcard Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Coldcard Review (${CURRENT_YEAR}) | degen0x`,
   description: "Coldcard hardware wallet review covering air-gapped security, advanced Bitcoin features, seed management, and why it is the gold standard for Bitcoin cold storage.",
 };
 

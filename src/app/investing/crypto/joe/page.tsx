@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Trader Joe (JOE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Trader Joe (JOE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Trader Joe (JOE), the leading DEX on Avalanche with the innovative Liquidity Book AMM. Discover JOE tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function TraderJoePage() {
       readTime="8 min read"
       intro="Trader Joe (JOE) is the governance token of Trader Joe, the dominant decentralized exchange on the Avalanche blockchain. Known for its innovative Liquidity Book AMM design, Trader Joe has expanded to Arbitrum and BNB Chain while maintaining its position as the primary trading venue on Avalanche. JOE is used for staking, governance, and fee sharing."
       toc={[
-        { id: "what-is", title: "What Is Trader Joe?", level: 2 },
-        { id: "how-it-works", title: "How Does Trader Joe Work?", level: 2 },
-        { id: "tokenomics", title: "JOE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy JOE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-trader-joe", title: "What Is Trader Joe?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-trader-joe-work", title: "How Does Trader Joe Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "joe-tokenomics", title: "JOE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-joe", title: "How to Buy JOE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

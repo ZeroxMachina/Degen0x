@@ -16,10 +16,14 @@ export default function DynamicNftsGuidePage() {
       readTime="10 min"
       intro="Dynamic NFTs change over time based on external data, user interactions, or on-chain events. Unlike static NFTs with fixed metadata, dynamic NFTs can evolve and respond to real-world conditions."
       toc={[
-        { id: "section-1", title: "What Are Dynamic NFTs", level: 2 },
-        { id: "section-2", title: "How Dynamic NFTs Work", level: 2 },
-        { id: "section-3", title: "Use Cases and Examples", level: 2 },
-        { id: "section-4", title: "Future of Dynamic NFTs", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "what-are-dynamic-nfts", title: "What Are Dynamic NFTs", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "how-dynamic-nfts-work", title: "How Dynamic NFTs Work", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "use-cases-and-examples", title: "Use Cases and Examples", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "future-of-dynamic-nfts", title: "Future of Dynamic NFTs", level: 2 }
       ]}
       faqs={[
         { question: "What makes an NFT dynamic?", answer: "Dynamic NFTs have metadata that can change based on external conditions, oracle data, user interactions, or on-chain events. The visual appearance or attributes of the NFT update automatically when trigger conditions are met." },

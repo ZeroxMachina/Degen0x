@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DeFi Yield Strategies for Different Risk Profiles (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DeFi Yield Strategies for Different Risk Profiles (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore DeFi yield strategies for conservative, moderate, and aggressive risk profiles. Learn about stablecoin lending, liquid staking, LP strategies, leveraged yield, and how to evaluate yield sustainability.",
 };
@@ -17,11 +17,16 @@ export default function DefiYieldStrategiesPage() {
       readTime="10 min read"
       intro="DeFi offers a spectrum of yield-generating opportunities ranging from conservative stablecoin lending at 3-5% APY to aggressive leveraged strategies potentially exceeding 50% APY. The key to successful DeFi yield generation is matching your strategy to your risk tolerance, understanding the sources and sustainability of yield, and managing the multiple layers of risk inherent in decentralized protocols. This guide breaks down strategies by risk profile to help you find the right approach for your situation."
       toc={[
-        { id: "conservative", title: "Conservative Strategies (3-8% APY)", level: 2 },
-        { id: "moderate", title: "Moderate Strategies (8-20% APY)", level: 2 },
-        { id: "aggressive", title: "Aggressive Strategies (20%+ APY)", level: 2 },
-        { id: "sustainability", title: "Evaluating Yield Sustainability", level: 2 },
-        { id: "risk-management", title: "Risk Management for Yield Strategies", level: 2 },
+        { id: "conservative", title: "conservative", level: 2 },
+        { id: "conservative-strategies-3-8-apy", title: "Conservative Strategies (3-8% APY)", level: 2 },
+        { id: "moderate", title: "moderate", level: 2 },
+        { id: "moderate-strategies-8-20-apy", title: "Moderate Strategies (8-20% APY)", level: 2 },
+        { id: "aggressive", title: "aggressive", level: 2 },
+        { id: "aggressive-strategies-20-apy", title: "Aggressive Strategies (20%+ APY)", level: 2 },
+        { id: "sustainability", title: "sustainability", level: 2 },
+        { id: "evaluating-yield-sustainability", title: "Evaluating Yield Sustainability", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management-for-yield-strategies", title: "Risk Management for Yield Strategies", level: 2 }
       ]}
       faqs={[
         {

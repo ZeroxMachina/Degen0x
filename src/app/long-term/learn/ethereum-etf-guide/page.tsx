@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Ethereum ETF Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Ethereum ETF Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Complete Ethereum ETF guide. Spot ETH ETFs, staking considerations, fee comparison, and how Ethereum ETFs fit into a diversified crypto portfolio.",
 };
 
@@ -12,10 +12,14 @@ export default function EthereumEtfGuidePage() {
     <LearnPageLayout title="Ethereum ETF Guide" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="7 min read"
       intro="Ethereum ETFs provide traditional finance access to the second-largest cryptocurrency by market capitalization. Following the success of spot Bitcoin ETFs, Ethereum ETFs have opened the door for institutional and retail investors to gain ETH exposure through familiar brokerage accounts. Understanding the nuances of Ethereum ETFs, including the staking question and how they compare to holding ETH directly, is important for making informed allocation decisions."
       toc={[
-        { id: "available-etfs", title: "Available Ethereum ETFs", level: 2 },
-        { id: "staking-question", title: "The Staking Question", level: 2 },
-        { id: "etf-vs-direct", title: "ETF vs. Direct ETH Ownership", level: 2 },
-        { id: "allocation", title: "Portfolio Allocation", level: 2 },
+        { id: "available-etfs", title: "available-etfs", level: 2 },
+        { id: "available-ethereum-etfs", title: "Available Ethereum ETFs", level: 2 },
+        { id: "staking-question", title: "staking-question", level: 2 },
+        { id: "the-staking-question", title: "The Staking Question", level: 2 },
+        { id: "etf-vs-direct", title: "etf-vs-direct", level: 2 },
+        { id: "etf-vs-direct-eth-ownership", title: "ETF vs. Direct ETH Ownership", level: 2 },
+        { id: "allocation", title: "allocation", level: 2 },
+        { id: "portfolio-allocation", title: "Portfolio Allocation", level: 2 }
       ]}
       faqs={[
         { question: "Is there a spot Ethereum ETF?", answer: "Yes. Spot Ethereum ETFs were approved by the SEC in 2024. Major issuers including BlackRock (ETHA), Fidelity (FETH), Grayscale (ETHE), and others offer spot Ethereum ETFs that hold actual ETH. These ETFs provide direct price exposure to Ethereum through traditional brokerage accounts." },

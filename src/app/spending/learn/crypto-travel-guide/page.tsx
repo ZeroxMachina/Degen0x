@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Traveling with Crypto: Spending Abroad (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Traveling with Crypto: Spending Abroad (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to use cryptocurrency while traveling abroad. Avoid foreign exchange fees, find crypto-friendly destinations, and use Bitcoin for flights and hotels.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoTravelGuidePage() {
       readTime="10 min"
       intro="Cryptocurrency offers travelers a compelling alternative to traditional foreign exchange. With zero or minimal foreign transaction fees, instant cross-border transfers, and growing merchant acceptance worldwide, crypto is becoming a practical travel companion. From booking flights and hotels with Bitcoin to spending at local merchants via Lightning Network, this guide covers everything you need to know about traveling with crypto."
       toc={[
-        { id: "booking-travel", title: "Booking Flights and Hotels", level: 2 },
+        { id: "booking-travel", title: "booking-travel", level: 2 },
+        { id: "booking-flights-and-hotels", title: "Booking Flights and Hotels", level: 2 },
+        { id: "crypto-friendly-destinations", title: "crypto-friendly-destinations", level: 2 },
         { id: "crypto-friendly-destinations", title: "Crypto-Friendly Destinations", level: 2 },
-        { id: "spending-abroad", title: "Spending Crypto Abroad", level: 2 },
-        { id: "avoiding-fx-fees", title: "Avoiding Foreign Exchange Fees", level: 2 },
-        { id: "safety-tips", title: "Travel Safety Tips", level: 2 },
+        { id: "spending-abroad", title: "spending-abroad", level: 2 },
+        { id: "spending-crypto-abroad", title: "Spending Crypto Abroad", level: 2 },
+        { id: "avoiding-fx-fees", title: "avoiding-fx-fees", level: 2 },
+        { id: "avoiding-foreign-exchange-fees", title: "Avoiding Foreign Exchange Fees", level: 2 },
+        { id: "safety-tips", title: "safety-tips", level: 2 },
+        { id: "travel-safety-tips", title: "Travel Safety Tips", level: 2 }
       ]}
       faqs={[
         { question: "Which countries accept Bitcoin for everyday purchases?", answer: "El Salvador made Bitcoin legal tender in 2021. Crypto-friendly cities include Lugano in Switzerland, Ljubljana in Slovenia, and parts of Portugal. Many tourist areas in Southeast Asia, particularly Thailand and Bali, have growing networks of crypto-accepting merchants." },

@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.05-0.07% position open/close; swap fees vary",
   bestFor: "DeFi traders seeking decentralized perpetual futures",
-  affiliateUrl: "https://cryptodegen.com/go/gmx",
+  affiliateUrl: "https://degen0x.com/go/gmx",
   category: "exchanges",
 };
 

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Flag Pattern in Crypto Trading (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Flag Pattern in Crypto Trading (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a flag pattern is, how to identify bull and bear flags, the flagpole component, and how to trade flag pattern breakouts in cryptocurrency.",
 };
 
@@ -16,10 +16,14 @@ export default function FlagPage() {
       readTime="6 min read"
       intro="A flag pattern is a short-term continuation pattern that forms after a sharp price move (the flagpole), followed by a rectangular consolidation channel that slopes against the prior trend. Bull flags slope downward after an upward flagpole, while bear flags slope upward after a downward flagpole. Flags are among the most reliable continuation patterns in crypto trading and frequently appear during strong trending markets."
       toc={[
-        { id: "what-is-flag", title: "What Is a Flag Pattern?", level: 2 },
-        { id: "bull-flag", title: "Bull Flag Pattern", level: 2 },
-        { id: "bear-flag", title: "Bear Flag Pattern", level: 2 },
-        { id: "trading", title: "Trading Flag Patterns", level: 2 },
+        { id: "what-is-flag", title: "what-is-flag", level: 2 },
+        { id: "what-is-a-flag-pattern", title: "What Is a Flag Pattern?", level: 2 },
+        { id: "bull-flag", title: "bull-flag", level: 2 },
+        { id: "bull-flag-pattern", title: "Bull Flag Pattern", level: 2 },
+        { id: "bear-flag", title: "bear-flag", level: 2 },
+        { id: "bear-flag-pattern", title: "Bear Flag Pattern", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-flag-patterns", title: "Trading Flag Patterns", level: 2 }
       ]}
       faqs={[
         { question: "What is the difference between a flag and a channel?", answer: "A flag is a short-term pattern lasting days to weeks that follows a strong directional move. A channel is a longer-term pattern that can last months. Flags have a clear flagpole component and are continuation patterns. Channels can be continuation or reversal patterns depending on context and do not require a sharp preceding move." },

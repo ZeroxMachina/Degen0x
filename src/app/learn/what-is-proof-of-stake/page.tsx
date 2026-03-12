@@ -18,12 +18,18 @@ export default function WhatIsProofOfStakePage() {
       readTime="9 min"
       intro="Proof of Stake (PoS) is a blockchain consensus mechanism where validators are chosen to create new blocks based on the amount of cryptocurrency they have staked as collateral. Since Ethereum's historic transition to PoS in 2022, it has become the dominant consensus mechanism in the blockchain industry, offering network security through economic incentives rather than computational work."
       toc={[
-        { id: "how-pos-works", title: "How Proof of Stake Works", level: 2 },
-        { id: "validator-role", title: "The Role of Validators", level: 2 },
+        { id: "how-pos-works", title: "how-pos-works", level: 2 },
+        { id: "how-proof-of-stake-works", title: "How Proof of Stake Works", level: 2 },
+        { id: "validator-role", title: "validator-role", level: 2 },
+        { id: "the-role-of-validators", title: "The Role of Validators", level: 2 },
+        { id: "staking-rewards", title: "staking-rewards", level: 2 },
         { id: "staking-rewards", title: "Staking Rewards", level: 2 },
-        { id: "slashing", title: "Slashing Penalties", level: 2 },
+        { id: "slashing", title: "slashing", level: 2 },
+        { id: "slashing-penalties", title: "Slashing Penalties", level: 2 },
+        { id: "pos-variations", title: "pos-variations", level: 2 },
         { id: "pos-variations", title: "PoS Variations", level: 2 },
-        { id: "advantages-disadvantages", title: "Advantages and Disadvantages", level: 2 },
+        { id: "advantages-disadvantages", title: "advantages-disadvantages", level: 2 },
+        { id: "advantages-and-disadvantages", title: "Advantages and Disadvantages", level: 2 }
       ]}
       faqs={[
         {

@@ -25,7 +25,7 @@ export default function VeChainPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in VeChain (VET) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function VeChainPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">VET</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2018</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">86,712,634,466 VET</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Proof of Authority</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">VET</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2018</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">86,712,634,466 VET</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Proof of Authority</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is VeChain?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is VeChain?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           VeChain was founded in 2015 by Sunny Lu, former CIO of Louis Vuitton China, with a
           vision to use blockchain technology to solve real-world supply chain and business problems.
@@ -68,7 +68,7 @@ export default function VeChainPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           VeChain is used for supply chain traceability (tracking products from origin to consumer),
           anti-counterfeiting (verifying authenticity of luxury goods, pharmaceuticals, and food),
@@ -80,7 +80,7 @@ export default function VeChainPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Enterprise blockchain adoption has progressed more slowly than expected, and many VeChain
           partnerships have resulted in limited on-chain activity. The Proof of Authority consensus
@@ -93,7 +93,7 @@ export default function VeChainPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy VeChain</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy VeChain</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           VET is available on exchanges including Binance, Crypto.com, KuCoin, and Gate.io. Note
           that availability on US exchanges may be limited. After purchasing, VET can be stored in

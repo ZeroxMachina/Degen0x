@@ -18,10 +18,14 @@ export default function SubnetGlossaryPage() {
       readTime="5 min"
       intro="A subnet (subnetwork) is a sovereign, customizable blockchain network that operates within a larger blockchain ecosystem. Most commonly associated with Avalanche, subnets allow developers to create application-specific blockchains with their own rules, validators, and virtual machines."
       toc={[
+        { id: "definition", title: "definition", level: 2 },
         { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
         { id: "how-it-works", title: "How It Works", level: 2 },
-        { id: "examples", title: "Examples & Use Cases", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "examples-use-cases", title: "Examples & Use Cases", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

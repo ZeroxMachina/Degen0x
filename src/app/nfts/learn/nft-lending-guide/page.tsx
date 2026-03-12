@@ -16,10 +16,14 @@ export default function NftLendingGuidePage() {
       readTime="10 min"
       intro="NFT lending allows holders to borrow against their NFTs without selling them, or lend their NFTs to earn yield. This emerging DeFi category unlocks liquidity from otherwise illiquid NFT holdings."
       toc={[
-        { id: "section-1", title: "NFT Lending Overview", level: 2 },
-        { id: "section-2", title: "Lending Protocols and Models", level: 2 },
-        { id: "section-3", title: "Borrowing Against NFTs", level: 2 },
-        { id: "section-4", title: "Risks and Best Practices", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "nft-lending-overview", title: "NFT Lending Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "lending-protocols-and-models", title: "Lending Protocols and Models", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "borrowing-against-nfts", title: "Borrowing Against NFTs", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "risks-and-best-practices", title: "Risks and Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "How does NFT lending work?", answer: "NFT lending platforms allow holders to use their NFTs as collateral for loans. The NFT is locked in a smart contract, and the borrower receives cryptocurrency. The loan must be repaid with interest to reclaim the NFT, or the lender can claim the collateral." },

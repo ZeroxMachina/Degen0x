@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Stargate Finance (STG)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Stargate Finance (STG)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Stargate Finance (STG), the omnichain liquidity transport protocol built on LayerZero. Discover how it works, tokenomics, use cases, and how to buy STG.",
 };
@@ -17,12 +17,18 @@ export default function StargatePage() {
       readTime="8 min read"
       intro="Stargate Finance is an omnichain liquidity transport protocol built on LayerZero that enables native asset cross-chain transfers with unified liquidity pools. As the first dApp built on LayerZero, Stargate solves the bridging trilemma of instant finality, native assets, and unified liquidity across multiple blockchain networks."
       toc={[
-        { id: "what-is", title: "What Is Stargate Finance?", level: 2 },
-        { id: "how-it-works", title: "How Does Stargate Finance Work?", level: 2 },
-        { id: "tokenomics", title: "STG Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy STG", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-stargate-finance", title: "What Is Stargate Finance?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-stargate-finance-work", title: "How Does Stargate Finance Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "stg-tokenomics", title: "STG Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-stg", title: "How to Buy STG", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

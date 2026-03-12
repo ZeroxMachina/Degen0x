@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Complete Guide to Crypto ETFs in 2026 | CryptoDegen`,
+  title: `Complete Guide to Crypto ETFs in 2026 | degen0x`,
   description:
     "Learn about Bitcoin and Ethereum spot ETFs, how crypto ETFs work, advantages over direct ownership, top ETF options by AUM, and fee comparisons for 2026.",
 };
@@ -17,12 +17,18 @@ export default function CryptoETFsGuidePage() {
       readTime="11 min read"
       intro="Crypto ETFs have revolutionized how investors gain exposure to Bitcoin and Ethereum without managing private keys or using cryptocurrency exchanges. Spot Bitcoin ETFs launched in 2024 opened the market to institutional investors and simplified retail participation. This guide explains how crypto ETFs work, compares different types, analyzes top products by assets under management, and helps you understand whether ETFs or direct crypto ownership makes sense for your investment strategy."
       toc={[
+        { id: "what-are-crypto-etfs", title: "what-are-crypto-etfs", level: 2 },
         { id: "what-are-crypto-etfs", title: "What Are Crypto ETFs?", level: 2 },
-        { id: "spot-vs-futures", title: "Spot ETFs vs Futures ETFs", level: 2 },
-        { id: "major-crypto-etfs", title: "Major Crypto ETFs by AUM", level: 2 },
-        { id: "etf-vs-direct", title: "ETFs vs Direct Ownership", level: 2 },
-        { id: "fee-comparison", title: "Fee Comparison & Analysis", level: 2 },
-        { id: "regulatory-considerations", title: "Regulatory Considerations", level: 2 },
+        { id: "spot-vs-futures", title: "spot-vs-futures", level: 2 },
+        { id: "spot-etfs-vs-futures-etfs", title: "Spot ETFs vs Futures ETFs", level: 2 },
+        { id: "major-crypto-etfs", title: "major-crypto-etfs", level: 2 },
+        { id: "major-crypto-etfs-by-aum", title: "Major Crypto ETFs by AUM", level: 2 },
+        { id: "etf-vs-direct", title: "etf-vs-direct", level: 2 },
+        { id: "etfs-vs-direct-ownership", title: "ETFs vs Direct Ownership", level: 2 },
+        { id: "fee-comparison", title: "fee-comparison", level: 2 },
+        { id: "fee-comparison-analysis", title: "Fee Comparison & Analysis", level: 2 },
+        { id: "regulatory-considerations", title: "regulatory-considerations", level: 2 },
+        { id: "regulatory-considerations", title: "Regulatory Considerations", level: 2 }
       ]}
       faqs={[
         {

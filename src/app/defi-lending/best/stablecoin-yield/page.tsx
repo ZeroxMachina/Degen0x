@@ -21,7 +21,7 @@ const products: Product[] = [
     cons: ["Variable rates can drop during low demand", "Gas fees on Ethereum mainnet", "No fixed rate option natively"],
     fees: "Variable supply/borrow spread",
     bestFor: "Most stablecoin lenders",
-    affiliateUrl: "https://cryptodegen.com/go/aave",
+    affiliateUrl: "https://degen0x.com/go/aave",
     category: "defi-lending",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     cons: ["Complex gauge and voting system", "Returns depend on CRV price", "UI can be intimidating for newcomers"],
     fees: "0.04% swap fee to LPs",
     bestFor: "Stablecoin liquidity providers",
-    affiliateUrl: "https://cryptodegen.com/go/curve",
+    affiliateUrl: "https://degen0x.com/go/curve",
     category: "defi-lending",
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     cons: ["Only DAI supported", "Rate changes via governance votes", "Lower than aggressive DeFi strategies"],
     fees: "No fees on DSR",
     bestFor: "DAI holders seeking stable returns",
-    affiliateUrl: "https://cryptodegen.com/go/spark",
+    affiliateUrl: "https://degen0x.com/go/spark",
     category: "defi-lending",
   },
   {
@@ -58,7 +58,7 @@ const products: Product[] = [
     cons: ["2% management + 20% performance fees", "Strategy risks beyond simple lending", "Returns vary based on market conditions"],
     fees: "2% management + 20% performance",
     bestFor: "Passive stablecoin yield seekers",
-    affiliateUrl: "https://cryptodegen.com/go/yearn",
+    affiliateUrl: "https://degen0x.com/go/yearn",
     category: "defi-lending",
   },
   {
@@ -70,7 +70,7 @@ const products: Product[] = [
     cons: ["Dependent on underlying protocols", "Improvement margin varies", "Lower brand recognition"],
     fees: "Improved spread vs base protocols",
     bestFor: "Stablecoin rate optimizers",
-    affiliateUrl: "https://cryptodegen.com/go/morpho",
+    affiliateUrl: "https://degen0x.com/go/morpho",
     category: "defi-lending",
   },
 ];
@@ -87,14 +87,14 @@ export default function StablecoinYieldPage() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Stablecoin Yield", href: "/defi-lending/best/stablecoin-yield" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-4xl font-bold text-white mb-4">Best Stablecoin Yield Platforms ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Stablecoin Yield Platforms ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Stablecoin yield is one of the most popular entry points into DeFi. By depositing stablecoins like USDC, USDT, or DAI into lending protocols or liquidity pools, you can earn significantly higher interest rates than traditional savings accounts while avoiding the price volatility of other crypto assets. We have tested and compared the top platforms to help you find the best stablecoin yields available today.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          Our top recommendation is <strong className="text-white">Aave</strong> for its combination of deep liquidity, multi-chain access, and proven security. For hands-off optimization, <strong className="text-white">Yearn Finance</strong> automatically finds the best yields across DeFi. And for stablecoin LPs, <strong className="text-white">Curve Finance</strong> remains the gold standard with its purpose-built stablecoin pools.
+          Our top recommendation is <strong className="text-[var(--color-text)]">Aave</strong> for its combination of deep liquidity, multi-chain access, and proven security. For hands-off optimization, <strong className="text-[var(--color-text)]">Yearn Finance</strong> automatically finds the best yields across DeFi. And for stablecoin LPs, <strong className="text-[var(--color-text)]">Curve Finance</strong> remains the gold standard with its purpose-built stablecoin pools.
         </p>
       </div>
       <div className="space-y-4 mb-12">

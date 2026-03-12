@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -84,7 +86,7 @@ export default function ProfitLossCalculatorPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto Profit &amp; Loss Calculator
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -96,7 +98,7 @@ export default function ProfitLossCalculatorPage() {
         {/* Input Section */}
         <div className="space-y-6">
           <div>
-            <label className="block text-sm font-medium text-white mb-2">Buy Price (USD)</label>
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Buy Price (USD)</label>
             <input
               type="number"
               value={buyPrice}
@@ -104,12 +106,12 @@ export default function ProfitLossCalculatorPage() {
               placeholder="30000"
               min="0"
               step="any"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-white mb-2">Sell Price (USD)</label>
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Sell Price (USD)</label>
             <input
               type="number"
               value={sellPrice}
@@ -117,12 +119,12 @@ export default function ProfitLossCalculatorPage() {
               placeholder="45000"
               min="0"
               step="any"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-white mb-2">Amount</label>
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Amount</label>
             <div className="flex gap-2">
               <input
                 type="number"
@@ -131,11 +133,11 @@ export default function ProfitLossCalculatorPage() {
                 placeholder="1"
                 min="0"
                 step="any"
-                className="flex-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+                className="flex-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
               />
               <button
                 onClick={() => setInvestmentType(investmentType === "units" ? "usd" : "units")}
-                className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text-secondary)] px-4 py-3 text-sm font-medium hover:text-white transition-colors whitespace-nowrap"
+                className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text-secondary)] px-4 py-3 text-sm font-medium hover:text-[var(--color-text)] transition-colors whitespace-nowrap"
               >
                 {investmentType === "units" ? "Units" : "USD"}
               </button>
@@ -147,7 +149,7 @@ export default function ProfitLossCalculatorPage() {
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-white mb-2">Buy Fee (%)</label>
+              <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Buy Fee (%)</label>
               <input
                 type="number"
                 value={buyFeePercent}
@@ -156,11 +158,11 @@ export default function ProfitLossCalculatorPage() {
                 min="0"
                 max="100"
                 step="0.01"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-white mb-2">Sell Fee (%)</label>
+              <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Sell Fee (%)</label>
               <input
                 type="number"
                 value={sellFeePercent}
@@ -169,13 +171,13 @@ export default function ProfitLossCalculatorPage() {
                 min="0"
                 max="100"
                 step="0.01"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-white mb-2">Leverage (1x = no leverage)</label>
+            <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Leverage (1x = no leverage)</label>
             <div className="flex gap-2">
               {["1", "2", "5", "10", "25"].map((lev) => (
                 <button
@@ -183,8 +185,8 @@ export default function ProfitLossCalculatorPage() {
                   onClick={() => setLeverage(lev)}
                   className={`flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
                     leverage === lev
-                      ? "bg-[var(--color-primary)] text-white"
-                      : "border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text-secondary)] hover:text-white"
+                      ? "bg-[var(--color-primary)] text-[var(--color-text)]"
+                      : "border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                   }`}
                 >
                   {lev}x
@@ -197,7 +199,7 @@ export default function ProfitLossCalculatorPage() {
                 min="1"
                 max="125"
                 step="1"
-                className="w-20 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-white px-3 py-2 text-sm text-center focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+                className="w-20 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-3 py-2 text-sm text-center focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
               />
             </div>
           </div>
@@ -227,16 +229,16 @@ export default function ProfitLossCalculatorPage() {
 
           {/* Detailed Breakdown */}
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-4">Trade Breakdown</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-4">Trade Breakdown</h3>
 
             <div className="space-y-3 text-sm">
               <div className="flex justify-between">
                 <span className="text-[var(--color-text-secondary)]">Position Size</span>
-                <span className="text-white">{results.units.toFixed(6)} units</span>
+                <span className="text-[var(--color-text)]">{results.units.toFixed(6)} units</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-[var(--color-text-secondary)]">Investment Cost</span>
-                <span className="text-white">
+                <span className="text-[var(--color-text)]">
                   ${results.investmentCost.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                 </span>
               </div>
@@ -272,7 +274,7 @@ export default function ProfitLossCalculatorPage() {
               <div className="border-t border-[var(--color-border)] pt-3">
                 <div className="flex justify-between">
                   <span className="text-[var(--color-text-secondary)]">Break-Even Sell Price</span>
-                  <span className="text-white font-medium">
+                  <span className="text-[var(--color-text)] font-medium">
                     ${results.breakEvenSell.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                   </span>
                 </div>
@@ -303,7 +305,7 @@ export default function ProfitLossCalculatorPage() {
 
       {/* Educational Content */}
       <div className="mt-12 prose-crypto">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Calculate Crypto Profit and Loss</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Calculate Crypto Profit and Loss</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4">
           Calculating your profit or loss on a crypto trade involves three components: the price difference
           between your buy and sell prices, the fees paid to the exchange on both sides of the trade, and the

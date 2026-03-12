@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToTrackPortfolioPage() {
   return (
     <LearnPageLayout title="How to Track Your Crypto Portfolio" categoryName="Crypto Education" categorySlug="learn" readTime="6 min" intro="As your crypto holdings grow across multiple wallets, chains, exchanges, and DeFi protocols, tracking your portfolio becomes essential. Portfolio trackers aggregate your positions, show real-time values, calculate performance, and help prepare for tax reporting. This guide covers the tools and practices for effective portfolio management."
-      toc={[{ id: "why-track", title: "Why Track Your Portfolio?", level: 2 },{ id: "tools", title: "Portfolio Tracking Tools", level: 2 },{ id: "defi-tracking", title: "DeFi Position Tracking", level: 2 },{ id: "metrics", title: "Key Metrics", level: 2 },{ id: "best-practices", title: "Best Practices", level: 2 }]}
+      toc={[
+        { id: "why-track", title: "why-track", level: 2 },
+        { id: "why-track-your-portfolio", title: "Why Track Your Portfolio?", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "portfolio-tracking-tools", title: "Portfolio Tracking Tools", level: 2 },
+        { id: "defi-tracking", title: "defi-tracking", level: 2 },
+        { id: "defi-position-tracking", title: "DeFi Position Tracking", level: 2 },
+        { id: "metrics", title: "metrics", level: 2 },
+        { id: "key-metrics", title: "Key Metrics", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
+      ]}
       faqs={[
         { question: "What is the best crypto portfolio tracker?", answer: "Popular options include CoinGecko and CoinMarketCap for manual tracking, DeBank and Zapper for on-chain DeFi positions, and Koinly or CoinTracker for tax-focused tracking. The best choice depends on whether you prioritize DeFi visibility, tax preparation, or simple price tracking." },
         { question: "Is it safe to connect my wallet to a tracker?", answer: "Read-only wallet connections (providing your public address) are safe — trackers only need your public address to view holdings, not your private keys. Never connect through wallet signing prompts for portfolio tracking. Some trackers offer manual address input without wallet connection for additional security." },

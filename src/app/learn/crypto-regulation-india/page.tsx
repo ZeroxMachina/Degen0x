@@ -25,13 +25,10 @@ export default function CryptoRegulationIndiaPage() {
       readTime="14 min"
       intro="India's relationship with cryptocurrency has been turbulent, swinging between proposed bans and regulatory acceptance. While the Supreme Court struck down the RBI's crypto banking ban in 2020, the government introduced one of the world's strictest tax regimes for Virtual Digital Assets (VDAs) in 2022. Comprehensive crypto legislation remains pending, but India has been actively participating in global regulatory discussions through the G20. This guide covers the current legal status, tax framework, and regulatory outlook for crypto in India."
       toc={[
-        { id: "legal-status", title: "Legal Status of Crypto in India", level: 2 },
-        { id: "rbi-stance", title: "RBI's Position on Cryptocurrency", level: 2 },
-        { id: "tax-framework", title: "The 30% Tax and 1% TDS Framework", level: 2 },
-        { id: "exchanges-compliance", title: "Exchange Compliance and FIU Registration", level: 2 },
-        { id: "sebi-role", title: "SEBI and Securities Classification", level: 2 },
-        { id: "digital-rupee", title: "Digital Rupee (e-RUPI) CBDC", level: 2 },
-        { id: "future-regulation", title: "Future Regulatory Outlook", level: 2 },
+        { id: "legal-status", title: "legal-status", level: 2 },
+        { id: "legal-status-of-crypto-in-india", title: "Legal Status of Crypto in India", level: 2 },
+        { id: "rbi-stance", title: "rbi-stance", level: 2 },
+        { id: "rbi", title: "RBI", level: 2 }
       ]}
       faqs={[
         {
@@ -58,12 +55,12 @@ export default function CryptoRegulationIndiaPage() {
           question: "What is India's stance on crypto through the G20?",
           answer:
             "During its G20 presidency in 2023, India pushed for a coordinated global approach to crypto regulation. India supported the IMF-FSB Synthesis Paper on crypto-asset regulation, which recommends comprehensive regulatory frameworks rather than outright bans. India has advocated for global standards on cross-border crypto oversight, anti-money-laundering, and information sharing.",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "Crypto Taxes in India", href: "/taxes/learn/crypto-taxes-india", category: "Taxes" },
         { title: "Crypto Regulation Overview", href: "/learn/crypto-regulation", category: "Learn" },
-        { title: "Singapore Crypto Regulation", href: "/learn/crypto-regulation-singapore", category: "Learn" },
+        { title: "Singapore Crypto Regulation", href: "/learn/crypto-regulation-singapore", category: "Learn" }
       ]}
     >
       <h2 id="legal-status">Legal Status of Crypto in India</h2>

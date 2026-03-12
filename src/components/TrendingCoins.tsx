@@ -42,10 +42,7 @@ const TrendingCoins: React.FC = () => {
   const fetchTrendingCoins = async () => {
     try {
       setError(null);
-      const response = await fetch(
-        'https://api.coingecko.com/api/v3/search/trending',
-        { next: { revalidate: 0 } }
-      );
+      const response = await fetch('/api/trending');
 
       if (!response.ok) {
         throw new Error('Failed to fetch trending coins');
@@ -224,7 +221,7 @@ const CoinCard: React.FC<CoinCardProps> = ({ coin }) => {
                 }}
               />
             ) : (
-              <div className="w-full h-full flex items-center justify-center text-white font-bold text-sm">
+              <div className="w-full h-full flex items-center justify-center text-[var(--color-text)] font-bold text-sm">
                 {coin.symbol[0]}
               </div>
             )}
@@ -247,7 +244,9 @@ const CoinCard: React.FC<CoinCardProps> = ({ coin }) => {
       <div className="mb-4 pb-4 border-b border-[var(--glass-border)]">
         <p className="text-xs text-[var(--color-text-secondary)] mb-1">Price (BTC)</p>
         <p className="text-lg font-bold text-[var(--color-text)]">
-          {coin.priceBTC.toFixed(8)} BTC
+          {coin.priceBTC < 0.01
+            ? coin.priceBTC.toFixed(8)
+            : coin.priceBTC.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} BTC
         </p>
       </div>
 
@@ -261,7 +260,7 @@ const CoinCard: React.FC<CoinCardProps> = ({ coin }) => {
               : 'bg-red-500/20 text-red-400'
           }`}
         >
-          {isPositive ? '↑' : '↓'} {Math.abs(coin.change24h).toFixed(2)}%
+          {isPositive ? '↑' : '↓'} {Math.abs(coin.change24h).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%
         </div>
       </div>
     </div>

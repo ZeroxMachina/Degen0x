@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is On-Chain? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is On-Chain? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what on-chain means, why on-chain data matters, and how on-chain analysis provides insights into blockchain activity.",
 };
@@ -17,11 +17,16 @@ export default function OnChainPage() {
       readTime="5 min"
       intro="On-chain refers to any activity, transaction, or data that is recorded directly on a blockchain and verified by its consensus mechanism. On-chain data is permanent, transparent, and tamper-resistant. On-chain analysis — examining blockchain data for insights into network health, user behavior, and market trends — has become a major discipline in crypto research and investment analysis."
       toc={[
-        { id: "definition", title: "What Is On-Chain?", level: 2 },
-        { id: "what-is-onchain", title: "What Lives On-Chain", level: 2 },
-        { id: "onchain-analysis", title: "On-Chain Analysis", level: 2 },
-        { id: "key-metrics", title: "Key On-Chain Metrics", level: 2 },
-        { id: "why-it-matters", title: "Why On-Chain Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-on-chain", title: "What Is On-Chain?", level: 2 },
+        { id: "what-is-onchain", title: "what-is-onchain", level: 2 },
+        { id: "what-lives-on-chain", title: "What Lives On-Chain", level: 2 },
+        { id: "onchain-analysis", title: "onchain-analysis", level: 2 },
+        { id: "on-chain-analysis", title: "On-Chain Analysis", level: 2 },
+        { id: "key-metrics", title: "key-metrics", level: 2 },
+        { id: "key-on-chain-metrics", title: "Key On-Chain Metrics", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-on-chain-matters", title: "Why On-Chain Matters", level: 2 }
       ]}
       faqs={[
         {

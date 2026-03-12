@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Token Burning? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Token Burning? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what token burning is, how it works, why projects burn tokens, and how burns affect price and supply. A complete guide to crypto token burns.",
 };
@@ -17,10 +17,14 @@ export default function BurnPage() {
       readTime="4 min"
       intro="Token burning is the permanent removal of cryptocurrency tokens from circulation, typically by sending them to an unspendable wallet address. Burns reduce the total supply of a token, making remaining tokens scarcer. Projects burn tokens to create deflationary pressure, reward holders, or manage supply as part of their tokenomics design."
       toc={[
-        { id: "definition", title: "What Is Token Burning?", level: 2 },
-        { id: "how-it-works", title: "How Burns Work", level: 2 },
-        { id: "types", title: "Types of Burns", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-token-burning", title: "What Is Token Burning?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-burns-work", title: "How Burns Work", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-burns", title: "Types of Burns", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

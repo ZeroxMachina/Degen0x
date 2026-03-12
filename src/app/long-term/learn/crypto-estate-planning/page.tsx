@@ -18,12 +18,18 @@ export default function CryptoEstatePlanningPage() {
       readTime="11 min read"
       intro="An estimated 3-4 million Bitcoin are believed to be permanently lost, much of it due to holders passing away without leaving access instructions. Cryptocurrency requires unique estate planning because the assets are bearer instruments: whoever holds the private keys controls the funds, and there is no bank to call for recovery. This guide covers the essential strategies for ensuring your digital assets can be passed to heirs while maintaining security during your lifetime."
       toc={[
-        { id: "unique-challenges", title: "Unique Challenges of Crypto Inheritance", level: 2 },
-        { id: "seed-management", title: "Seed Phrase Management for Heirs", level: 2 },
-        { id: "multisig", title: "Multi-Signature Inheritance Solutions", level: 2 },
-        { id: "trusts", title: "Crypto Trusts & Legal Structures", level: 2 },
-        { id: "documentation", title: "Creating an Inheritance Document", level: 2 },
-        { id: "services", title: "Digital Inheritance Services", level: 2 },
+        { id: "unique-challenges", title: "unique-challenges", level: 2 },
+        { id: "unique-challenges-of-crypto-inheritance", title: "Unique Challenges of Crypto Inheritance", level: 2 },
+        { id: "seed-management", title: "seed-management", level: 2 },
+        { id: "seed-phrase-management-for-heirs", title: "Seed Phrase Management for Heirs", level: 2 },
+        { id: "multisig", title: "multisig", level: 2 },
+        { id: "multi-signature-inheritance-solutions", title: "Multi-Signature Inheritance Solutions", level: 2 },
+        { id: "trusts", title: "trusts", level: 2 },
+        { id: "crypto-trusts-legal-structures", title: "Crypto Trusts & Legal Structures", level: 2 },
+        { id: "documentation", title: "documentation", level: 2 },
+        { id: "creating-an-inheritance-document", title: "Creating an Inheritance Document", level: 2 },
+        { id: "services", title: "services", level: 2 },
+        { id: "digital-inheritance-services", title: "Digital Inheritance Services", level: 2 }
       ]}
       faqs={[
         { question: "What happens to crypto when someone dies?", answer: "Without proper estate planning, crypto may be permanently lost. Unlike bank accounts, there is no institution that can recover cryptocurrency without the private keys. The assets remain on the blockchain forever but are inaccessible without the keys." },

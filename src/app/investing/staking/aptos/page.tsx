@@ -17,12 +17,18 @@ export default function StakeAptosPage() {
       readTime="9 min"
       intro="Aptos staking offers APT holders approximately 7-9% APY through its Byzantine Fault Tolerant proof-of-stake consensus. Built with the Move programming language and featuring parallel transaction processing, Aptos provides competitive staking yields with a growing validator ecosystem and liquid staking options."
       toc={[
-        { id: "overview", title: "Aptos Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake APT Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Aptos", level: 2 },
-        { id: "validators", title: "Validators & Staking Pools", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "aptos-staking-overview", title: "Aptos Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-apt-step-by-step", title: "How to Stake APT Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-aptos", title: "Risks of Staking Aptos", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-staking-pools", title: "Validators & Staking Pools", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "What APY does Aptos staking offer?", answer: "Aptos staking currently offers 7-9% APY. The network started with 7% inflation that decreases by 1.5% annually until reaching a floor. Actual yields depend on validator commission rates and performance." },

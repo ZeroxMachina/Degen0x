@@ -10,7 +10,7 @@ const product = {
   pros: ["Original DeFi lending protocol", "DAI is highly liquid and widely adopted", "Multiple collateral types supported", "Battle-tested since 2017"],
   cons: ["Complex vault management", "Stability fees can change via governance", "Liquidation penalties are significant", "Ethereum mainnet gas costs"],
   bestFor: "Users seeking to mint DAI against crypto collateral through the most established DeFi protocol",
-  affiliateUrl: "https://cryptodegen.com/go/makerdao",
+  affiliateUrl: "https://degen0x.com/go/makerdao",
   category: "crypto-loans",
 };
 

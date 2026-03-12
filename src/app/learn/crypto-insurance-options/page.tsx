@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Insurance: Protecting Your Digital Assets (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Insurance: Protecting Your Digital Assets (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about crypto insurance options: DeFi cover protocols, exchange insurance, smart contract cover, custodial insurance, how claims work, and evaluating coverage for your crypto holdings.",
 };
@@ -17,10 +17,14 @@ export default function CryptoInsuranceOptionsPage() {
       readTime="8 min read"
       intro="Crypto insurance provides financial protection against losses from smart contract exploits, exchange hacks, stablecoin de-pegging events, and other risks unique to the digital asset ecosystem. As the crypto market has matured, insurance options have expanded from basic exchange coverage to sophisticated on-chain protocols that allow users to purchase cover for specific DeFi positions. While crypto insurance cannot protect against all risks, it adds a valuable layer of protection for users with significant holdings."
       toc={[
-        { id: "why-insurance", title: "Why Crypto Insurance Matters", level: 2 },
-        { id: "defi-cover", title: "DeFi Cover Protocols", level: 2 },
-        { id: "exchange-insurance", title: "Exchange and Custodial Insurance", level: 2 },
-        { id: "evaluating", title: "Evaluating Insurance Options", level: 2 },
+        { id: "why-insurance", title: "why-insurance", level: 2 },
+        { id: "why-crypto-insurance-matters", title: "Why Crypto Insurance Matters", level: 2 },
+        { id: "defi-cover", title: "defi-cover", level: 2 },
+        { id: "defi-cover-protocols", title: "DeFi Cover Protocols", level: 2 },
+        { id: "exchange-insurance", title: "exchange-insurance", level: 2 },
+        { id: "exchange-and-custodial-insurance", title: "Exchange and Custodial Insurance", level: 2 },
+        { id: "evaluating", title: "evaluating", level: 2 },
+        { id: "evaluating-insurance-options", title: "Evaluating Insurance Options", level: 2 }
       ]}
       faqs={[
         {

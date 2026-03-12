@@ -9,17 +9,20 @@ const ExitIntentPopup: React.FC = () => {
   const [error, setError] = useState("")
 
   useEffect(() => {
-    // Check if popup was already shown in this session
-    const hasShown = sessionStorage.getItem("newsletter_shown")
+    // Check if popup was already shown — only show once ever
+    const hasShown = localStorage.getItem("exit_popup_shown")
     if (hasShown) {
       return
     }
 
+    let triggered = false
     const handleMouseLeave = (e: MouseEvent) => {
-      // Check if mouse is leaving from the top of the viewport
-      if (e.clientY <= 0) {
+      // Check if mouse is leaving from the top of the viewport — only trigger once
+      if (e.clientY <= 0 && !triggered) {
+        triggered = true
         setIsVisible(true)
-        sessionStorage.setItem("newsletter_shown", "true")
+        localStorage.setItem("exit_popup_shown", "true")
+        document.removeEventListener("mouseleave", handleMouseLeave)
       }
     }
 

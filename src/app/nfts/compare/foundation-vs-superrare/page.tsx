@@ -19,7 +19,7 @@ export default function FoundationVsSuperRarePage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "Foundation vs SuperRare", href: "#" } ]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Foundation vs SuperRare: Which Art NFT Platform Is Better in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Foundation vs SuperRare: Which Art NFT Platform Is Better in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         Foundation and SuperRare are the two leading curated NFT art platforms, both focused on
@@ -30,7 +30,7 @@ export default function FoundationVsSuperRarePage() {
       </p>
       <ComparisonTable items={[foundation, superrare]} features={nftComparisonFeatures} title="Foundation vs SuperRare: Head-to-Head" />
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Curation and Artist Access</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Curation and Artist Access</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           SuperRare has the most selective curation in the NFT space. Artists must apply and be approved
           by the SuperRare curation team or through community-curated Spaces. This rigorous vetting
@@ -44,7 +44,7 @@ export default function FoundationVsSuperRarePage() {
           they release work. The broader accessibility means more variety but also more variation in
           quality.
         </p>
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           SuperRare charges a 3% buyer premium plus a 15% commission on primary sales. Secondary sales
           incur a 10% creator royalty. Foundation charges a 5% marketplace fee on all sales with creator
@@ -57,15 +57,15 @@ export default function FoundationVsSuperRarePage() {
           depending on the price point. Both platforms enforce creator royalties, which is a key
           differentiator from general marketplaces that have moved toward optional royalties.
         </p>
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Foundation if</strong> you want broader artist access,
+            <strong className="text-[var(--color-text)]">Choose Foundation if</strong> you want broader artist access,
             support for both 1-of-1s and editions, 24-hour reserve auctions, or a slightly lower total
             fee structure for most transactions.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose SuperRare if</strong> you collect premium 1-of-1
+            <strong className="text-[var(--color-text)]">Choose SuperRare if</strong> you collect premium 1-of-1
             digital art, value the highest level of curation, want RARE governance token participation,
             or prefer an ultra-premium gallery experience.
           </p>

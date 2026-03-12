@@ -17,10 +17,14 @@ export default function DeltaNeutralYieldPage() {
       readTime="12 min"
       intro="Delta-neutral strategies aim to capture DeFi yields while hedging away price exposure, allowing you to earn returns regardless of whether crypto prices go up or down. By combining long and short positions or using derivatives to offset spot exposure, these strategies isolate the yield component from price risk. This guide explains the mechanics, popular implementations, and practical challenges of maintaining delta neutrality in DeFi."
       toc={[
-        { id: "concept", title: "What Is Delta Neutrality?", level: 2 },
-        { id: "strategies", title: "Popular Delta-Neutral Strategies", level: 2 },
-        { id: "implementation", title: "Implementation Approaches", level: 2 },
-        { id: "challenges", title: "Challenges & Limitations", level: 2 },
+        { id: "concept", title: "concept", level: 2 },
+        { id: "what-is-delta-neutrality", title: "What Is Delta Neutrality?", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "popular-delta-neutral-strategies", title: "Popular Delta-Neutral Strategies", level: 2 },
+        { id: "implementation", title: "implementation", level: 2 },
+        { id: "implementation-approaches", title: "Implementation Approaches", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-limitations", title: "Challenges & Limitations", level: 2 }
       ]}
       faqs={[
         { question: "Is delta-neutral farming truly risk-free?", answer: "No. While delta-neutral strategies hedge price risk, they still carry smart contract risk, liquidation risk on the short leg, funding rate changes, and execution risk from imperfect hedging. They are lower risk than unhedged strategies but not risk-free." },

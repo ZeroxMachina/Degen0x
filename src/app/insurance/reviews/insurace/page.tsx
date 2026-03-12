@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `InsurAce Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `InsurAce Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth InsurAce review covering multi-chain coverage, portfolio bundling, claim process, pricing model, and comparison with other DeFi insurance protocols.",
 };
 

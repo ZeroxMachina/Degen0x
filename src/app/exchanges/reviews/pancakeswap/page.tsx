@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.25% standard swap fee",
   bestFor: "BNB Chain DeFi users and yield farmers",
-  affiliateUrl: "https://cryptodegen.com/go/pancakeswap",
+  affiliateUrl: "https://degen0x.com/go/pancakeswap",
   category: "exchanges",
 };
 

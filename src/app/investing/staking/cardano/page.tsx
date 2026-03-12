@@ -18,12 +18,18 @@ export default function StakeCardanoPage() {
       readTime="9 min"
       intro="Cardano offers one of the most user-friendly staking experiences in cryptocurrency, with no lock-up periods and no minimum delegation requirements. ADA holders can earn approximately 3-5% APY by delegating to stake pools while retaining full custody of their tokens. This guide walks you through every aspect of Cardano staking."
       toc={[
-        { id: "overview", title: "Cardano Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake ADA Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Cardano", level: 2 },
-        { id: "validators", title: "Stake Pools & Validators", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "cardano-staking-overview", title: "Cardano Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-ada-step-by-step", title: "How to Stake ADA Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-cardano", title: "Risks of Staking Cardano", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "stake-pools-validators", title: "Stake Pools & Validators", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bitstamp vs Coinbase (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Bitstamp vs Coinbase (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Bitstamp vs Coinbase. Fees, features, regulation, coin selection, and which established exchange is better for your needs.",
 };
 
@@ -16,12 +16,18 @@ export default function BitstampVsCoinbase() {
       readTime="8 min read"
       intro="Bitstamp and Coinbase are two of the most established and regulated crypto exchanges, both with over a decade of operations. Bitstamp is Europe's longest-running exchange, while Coinbase is the largest US-based platform. This comparison examines which veteran exchange better serves your trading needs."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
-        { id: "regulation", title: "Regulation and Security", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulation-and-security", title: "Regulation and Security", level: 2 },
+        { id: "supported-assets", title: "supported-assets", level: 2 },
         { id: "supported-assets", title: "Supported Assets", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which is older?", answer: "Bitstamp was founded in 2011, and Coinbase in 2012. Both are among the oldest operating crypto exchanges in the world." },

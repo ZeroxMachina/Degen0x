@@ -10,7 +10,16 @@ export default function SmartContractRisksPage() {
   return (
     <LearnPageLayout title="Smart Contract Risks in DeFi" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="9 min"
       intro="Smart contract risk is the most fundamental risk in DeFi. Every dollar deposited into a DeFi protocol is controlled by code that could contain bugs, vulnerabilities, or design flaws. Understanding smart contract risks and how to evaluate them is essential for anyone participating in DeFi lending or yield farming."
-      toc={[{ id: "common-vulnerabilities", title: "Common Vulnerabilities", level: 2 }, { id: "how-audits-work", title: "How Security Audits Work", level: 2 }, { id: "evaluating-risk", title: "Evaluating Protocol Risk", level: 2 }, { id: "protecting-yourself", title: "Protecting Yourself", level: 2 }]}
+      toc={[
+        { id: "common-vulnerabilities", title: "common-vulnerabilities", level: 2 },
+        { id: "common-vulnerabilities", title: "Common Vulnerabilities", level: 2 },
+        { id: "how-audits-work", title: "how-audits-work", level: 2 },
+        { id: "how-security-audits-work", title: "How Security Audits Work", level: 2 },
+        { id: "evaluating-risk", title: "evaluating-risk", level: 2 },
+        { id: "evaluating-protocol-risk", title: "Evaluating Protocol Risk", level: 2 },
+        { id: "protecting-yourself", title: "protecting-yourself", level: 2 },
+        { id: "protecting-yourself", title: "Protecting Yourself", level: 2 }
+      ]}
       faqs={[
         { question: "Does an audit mean a protocol is safe?", answer: "No. Audits significantly reduce risk but do not eliminate it. Auditors can miss vulnerabilities, and new attack vectors emerge over time. Many exploited protocols had been audited. Audits are necessary but not sufficient for security." },
         { question: "Should I buy DeFi insurance?", answer: "For large positions (above $10,000), DeFi insurance from protocols like Nexus Mutual can be a worthwhile hedge. The typical cost of 2-5% annually is reasonable protection against catastrophic loss. For smaller positions, the cost-benefit may not justify the premium." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Impermanent Loss? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Impermanent Loss? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what impermanent loss is, how it affects liquidity providers, and strategies to mitigate this key DeFi risk.",
 };
@@ -17,11 +17,16 @@ export default function ImpermanentLossPage() {
       readTime="6 min"
       intro="Impermanent loss is the difference in value between holding tokens in a liquidity pool versus simply holding them in a wallet. It occurs when the price ratio of pooled tokens changes from when you deposited them. The 'impermanent' label indicates the loss is only realized when you withdraw; if prices return to the original ratio, the loss disappears. It is the primary risk faced by liquidity providers in automated market makers."
       toc={[
-        { id: "definition", title: "What Is Impermanent Loss?", level: 2 },
-        { id: "how-it-works", title: "How Impermanent Loss Works", level: 2 },
-        { id: "example", title: "A Simple Example", level: 2 },
-        { id: "mitigation", title: "Mitigation Strategies", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-impermanent-loss", title: "What Is Impermanent Loss?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-impermanent-loss-works", title: "How Impermanent Loss Works", level: 2 },
+        { id: "example", title: "example", level: 2 },
+        { id: "a-simple-example", title: "A Simple Example", level: 2 },
+        { id: "mitigation", title: "mitigation", level: 2 },
+        { id: "mitigation-strategies", title: "Mitigation Strategies", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

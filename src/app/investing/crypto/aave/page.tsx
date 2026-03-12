@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Aave (AAVE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Aave (AAVE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Aave (AAVE), the leading decentralized lending and borrowing protocol. Discover AAVE tokenomics, multi-chain deployment, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function AavePage() {
       readTime="8 min read"
       intro="Aave (AAVE) is the governance token of the Aave protocol, the largest decentralized lending and borrowing platform in DeFi. Deployed across Ethereum, Polygon, Arbitrum, Optimism, Avalanche, and other chains, Aave allows users to supply assets to earn interest or borrow against their collateral without intermediaries."
       toc={[
-        { id: "what-is", title: "What Is Aave?", level: 2 },
-        { id: "how-it-works", title: "How Does Aave Work?", level: 2 },
-        { id: "tokenomics", title: "AAVE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy AAVE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-aave", title: "What Is Aave?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-aave-work", title: "How Does Aave Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "aave-tokenomics", title: "AAVE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-aave", title: "How to Buy AAVE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

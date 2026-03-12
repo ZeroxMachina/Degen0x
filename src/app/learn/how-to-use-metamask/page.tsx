@@ -12,11 +12,16 @@ export default function HowToUseMetamaskPage() {
   return (
     <LearnPageLayout title="How to Use MetaMask" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="MetaMask is the most widely used Ethereum wallet, with over 30 million monthly active users. As a browser extension and mobile app, MetaMask serves as your identity and gateway to the Ethereum ecosystem and all EVM-compatible blockchains. This guide covers everything from initial setup to advanced DeFi interactions."
       toc={[
-        { id: "installation", title: "Installation & Setup", level: 2 },
+        { id: "installation", title: "installation", level: 2 },
+        { id: "installation-setup", title: "Installation & Setup", level: 2 },
+        { id: "sending-receiving", title: "sending-receiving", level: 2 },
         { id: "sending-receiving", title: "Sending & Receiving", level: 2 },
-        { id: "networks", title: "Adding Networks", level: 2 },
-        { id: "defi", title: "Connecting to DeFi", level: 2 },
-        { id: "security", title: "Security Tips", level: 2 },
+        { id: "networks", title: "networks", level: 2 },
+        { id: "adding-networks", title: "Adding Networks", level: 2 },
+        { id: "defi", title: "defi", level: 2 },
+        { id: "connecting-to-defi", title: "Connecting to DeFi", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-tips", title: "Security Tips", level: 2 }
       ]}
       faqs={[
         { question: "Is MetaMask safe?", answer: "MetaMask itself is a well-audited, open-source wallet used by millions. However, your security depends on your practices: never share your seed phrase, be cautious about which sites you connect to, verify transaction details before signing, and keep your browser and extension updated. Use MetaMask with a hardware wallet for maximum security." },

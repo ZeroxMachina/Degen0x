@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function AtomicSwapPage() {
   return (
     <LearnPageLayout title="What Is an Atomic Swap?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="An atomic swap is a smart contract technology that enables the exchange of cryptocurrencies across different blockchains without requiring a trusted intermediary. The swap is 'atomic' because it either completes entirely or does not execute at all — there is no scenario where one party loses funds while the other gains."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "how-it-works", title: "How It Works", level: 2 },{ id: "applications", title: "Applications", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-it-works", title: "How It Works", level: 2 },
+        { id: "applications", title: "applications", level: 2 },
+        { id: "applications", title: "Applications", level: 2 }
+      ]}
       faqs={[
         { question: "How do atomic swaps work?", answer: "Atomic swaps use Hash Time-Locked Contracts (HTLCs). Both parties create conditional transactions locked by the same cryptographic hash. When one party reveals the secret (preimage), both transactions can be claimed. If the secret is not revealed within the time limit, both transactions are refunded automatically." },
         { question: "Are atomic swaps widely used?", answer: "While technically elegant, atomic swaps have seen limited mainstream adoption due to liquidity limitations, speed constraints, and the requirement for both chains to support compatible scripting. Cross-chain bridges and DEXs have become more popular alternatives for cross-chain trading." },

@@ -17,13 +17,20 @@ export default function BestDayTradingExchangesPage() {
       readTime="12 min"
       intro="Day trading crypto requires an exchange with the lowest possible fees, fastest execution, deepest liquidity, and most advanced charting tools. We tested and ranked the top exchanges based on what matters most to active day traders who execute multiple trades daily."
       toc={[
+        { id: "what-day-traders-need", title: "what-day-traders-need", level: 2 },
         { id: "what-day-traders-need", title: "What Day Traders Need", level: 2 },
-        { id: "top-picks", title: "Top Exchanges for Day Trading", level: 2 },
-        { id: "fee-comparison", title: "Day Trading Fee Comparison", level: 2 },
-        { id: "execution-speed", title: "Execution Speed and Liquidity", level: 2 },
-        { id: "charting-tools", title: "Charting and Analysis Tools", level: 2 },
-        { id: "api-trading", title: "API and Algorithmic Trading", level: 2 },
-        { id: "tips", title: "Day Trading Tips", level: 2 },
+        { id: "top-picks", title: "top-picks", level: 2 },
+        { id: "top-exchanges-for-day-trading", title: "Top Exchanges for Day Trading", level: 2 },
+        { id: "fee-comparison", title: "fee-comparison", level: 2 },
+        { id: "day-trading-fee-comparison", title: "Day Trading Fee Comparison", level: 2 },
+        { id: "execution-speed", title: "execution-speed", level: 2 },
+        { id: "execution-speed-and-liquidity", title: "Execution Speed and Liquidity", level: 2 },
+        { id: "charting-tools", title: "charting-tools", level: 2 },
+        { id: "charting-and-analysis-tools", title: "Charting and Analysis Tools", level: 2 },
+        { id: "api-trading", title: "api-trading", level: 2 },
+        { id: "api-and-algorithmic-trading", title: "API and Algorithmic Trading", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "day-trading-tips", title: "Day Trading Tips", level: 2 }
       ]}
       faqs={[
         { question: "What is the best exchange for crypto day trading?", answer: "Binance offers the lowest fees (0.02%/0.04%), deepest liquidity, and most comprehensive trading tools for day traders. For US-based traders, Coinbase Advanced and Kraken Pro are the top options." },

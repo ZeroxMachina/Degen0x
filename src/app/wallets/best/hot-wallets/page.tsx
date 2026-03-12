@@ -45,7 +45,7 @@ export default function BestHotWalletsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Hot Wallets of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -79,7 +79,7 @@ export default function BestHotWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Hot Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Hot Wallets, Ranked</h2>
         <div className="space-y-6">
           {hotWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -88,18 +88,18 @@ export default function BestHotWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/learn/hot-vs-cold-wallets" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Hot vs Cold Wallets</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Hot vs Cold Wallets</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Which type is right for you?</p>
           </Link>
           <Link href="/wallets/best/hardware" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best Hardware Wallets</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best Hardware Wallets</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">For maximum security</p>
           </Link>
           <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Security Best Practices</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Security Best Practices</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Keep your hot wallet safe</p>
           </Link>
         </div>

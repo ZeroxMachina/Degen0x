@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Layer 1 Blockchains as Long-Term Investments (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Layer 1 Blockchains as Long-Term Investments (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Layer 1 blockchains as long-term investments. Ethereum, Solana, Avalanche, and more analyzed for technology, adoption, tokenomics, and investment potential.",
 };
 
@@ -12,10 +12,14 @@ export default function Layer1ComparisonPage() {
     <LearnPageLayout title="Layer 1 Blockchains as Long-Term Investments" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="9 min read"
       intro="Layer 1 blockchains are the base settlement layers of the crypto ecosystem. They represent the most significant infrastructure investments in the space, and their native tokens capture value from all activity built on top of them. Comparing L1s as investments requires evaluating technology, adoption, developer ecosystems, tokenomics, and competitive dynamics to determine which chains are most likely to maintain or grow their relevance over the coming decades."
       toc={[
+        { id: "evaluation-framework", title: "evaluation-framework", level: 2 },
         { id: "evaluation-framework", title: "Evaluation Framework", level: 2 },
-        { id: "major-l1s", title: "Major Layer 1 Comparison", level: 2 },
-        { id: "emerging-l1s", title: "Emerging Layer 1 Contenders", level: 2 },
-        { id: "portfolio-allocation", title: "Portfolio Allocation Strategy", level: 2 },
+        { id: "major-l1s", title: "major-l1s", level: 2 },
+        { id: "major-layer-1-comparison", title: "Major Layer 1 Comparison", level: 2 },
+        { id: "emerging-l1s", title: "emerging-l1s", level: 2 },
+        { id: "emerging-layer-1-contenders", title: "Emerging Layer 1 Contenders", level: 2 },
+        { id: "portfolio-allocation", title: "portfolio-allocation", level: 2 },
+        { id: "portfolio-allocation-strategy", title: "Portfolio Allocation Strategy", level: 2 }
       ]}
       faqs={[
         { question: "Which Layer 1 blockchain is the best investment?", answer: "Bitcoin and Ethereum are the safest long-term bets with the strongest network effects, most decentralization, and longest track records. Solana is the leading high-performance alternative. Beyond these three, investing in L1s becomes significantly more speculative. The best approach for most investors is concentrating in BTC and ETH with small speculative allocations to promising alternatives." },

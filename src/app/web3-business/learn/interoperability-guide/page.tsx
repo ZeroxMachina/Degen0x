@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Cross-Chain Interoperability Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Cross-Chain Interoperability Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand cross-chain interoperability solutions including bridges, messaging protocols, chain abstraction, and how to build applications that work across multiple blockchains.",
 };
@@ -17,11 +17,16 @@ export default function InteroperabilityGuidePage() {
       readTime="10 min"
       intro="Cross-chain interoperability enables communication and value transfer between different blockchain networks. As the ecosystem fragments across Ethereum, Solana, Layer 2 rollups, and emerging chains, the ability to move assets and data across networks becomes increasingly critical. Bridges, messaging protocols, and chain abstraction layers are evolving to create a seamless multi-chain experience. For Web3 businesses, understanding interoperability is essential for reaching users across multiple ecosystems and building applications that are not confined to a single network."
       toc={[
-        { id: "bridge-types", title: "Types of Cross-Chain Bridges", level: 2 },
-        { id: "messaging-protocols", title: "Cross-Chain Messaging Protocols", level: 2 },
+        { id: "bridge-types", title: "bridge-types", level: 2 },
+        { id: "types-of-cross-chain-bridges", title: "Types of Cross-Chain Bridges", level: 2 },
+        { id: "messaging-protocols", title: "messaging-protocols", level: 2 },
+        { id: "cross-chain-messaging-protocols", title: "Cross-Chain Messaging Protocols", level: 2 },
+        { id: "chain-abstraction", title: "chain-abstraction", level: 2 },
         { id: "chain-abstraction", title: "Chain Abstraction", level: 2 },
-        { id: "security-risks", title: "Bridge Security and Risks", level: 2 },
-        { id: "building-multichain", title: "Building Multi-Chain Applications", level: 2 },
+        { id: "security-risks", title: "security-risks", level: 2 },
+        { id: "bridge-security-and-risks", title: "Bridge Security and Risks", level: 2 },
+        { id: "building-multichain", title: "building-multichain", level: 2 },
+        { id: "building-multi-chain-applications", title: "Building Multi-Chain Applications", level: 2 }
       ]}
       faqs={[
         {

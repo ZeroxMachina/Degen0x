@@ -27,13 +27,20 @@ export default function RWATokenizationGuidePage() {
       readTime="12 min"
       intro="Real World Asset (RWA) tokenization transforms traditional financial assets—bonds, real estate, commodities, loans—into blockchain-native tokens. This bridges traditional finance and crypto by enabling ownership and trading of real assets on decentralized networks. Instead of owning a bond through a bank, you own a tokenized bond on Ethereum. RWA tokenization promises to unlock trillions in traditional assets for crypto markets while bringing stability and real-world value backing to blockchain. This guide explains RWA mechanisms, top projects like Ondo, Centrifuge, and Maple, regulatory considerations, and the implications for decentralized finance."
       toc={[
-        { id: "what-is-rwa", title: "What Is RWA Tokenization?", level: 2 },
-        { id: "how-rwa-works", title: "How RWA Tokenization Works", level: 2 },
-        { id: "ondo-finance", title: "Ondo Finance: Governance and Tokenized Bonds", level: 2 },
-        { id: "centrifuge-protocol", title: "Centrifuge: Real Estate and Asset Collateral", level: 2 },
-        { id: "maple-finance", title: "Maple Finance: Institutional Credit", level: 2 },
-        { id: "rwa-risks", title: "Risks: Counterparty Risk and Regulation", level: 2 },
-        { id: "future-of-rwa", title: "The Future of RWA Tokenization", level: 2 },
+        { id: "what-is-rwa", title: "what-is-rwa", level: 2 },
+        { id: "what-is-rwa-tokenization", title: "What Is RWA Tokenization?", level: 2 },
+        { id: "how-rwa-works", title: "how-rwa-works", level: 2 },
+        { id: "how-rwa-tokenization-works", title: "How RWA Tokenization Works", level: 2 },
+        { id: "ondo-finance", title: "ondo-finance", level: 2 },
+        { id: "ondo-finance-governance-and-tokenized-bonds", title: "Ondo Finance: Governance and Tokenized Bonds", level: 2 },
+        { id: "centrifuge-protocol", title: "centrifuge-protocol", level: 2 },
+        { id: "centrifuge-real-estate-and-asset-collateral", title: "Centrifuge: Real Estate and Asset Collateral", level: 2 },
+        { id: "maple-finance", title: "maple-finance", level: 2 },
+        { id: "maple-finance-institutional-credit", title: "Maple Finance: Institutional Credit", level: 2 },
+        { id: "rwa-risks", title: "rwa-risks", level: 2 },
+        { id: "risks-counterparty-risk-and-regulation", title: "Risks: Counterparty Risk and Regulation", level: 2 },
+        { id: "future-of-rwa", title: "future-of-rwa", level: 2 },
+        { id: "the-future-of-rwa-tokenization", title: "The Future of RWA Tokenization", level: 2 }
       ]}
       faqs={[
         {

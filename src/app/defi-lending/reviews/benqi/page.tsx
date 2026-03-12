@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `BENQI Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `BENQI Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth BENQI review covering Avalanche lending, sAVAX liquid staking, rates, security, and how it compares to other DeFi lending protocols.",
 };
 

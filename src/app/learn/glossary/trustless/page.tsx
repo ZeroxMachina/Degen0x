@@ -18,10 +18,14 @@ export default function TrustlessGlossaryPage() {
       readTime="5 min"
       intro="Trustless in cryptocurrency describes a system where participants can transact and interact without needing to trust any single party, institution, or intermediary. Instead of relying on human trust, trustless systems use cryptographic proofs, consensus mechanisms, and smart contracts to guarantee correct execution."
       toc={[
+        { id: "definition", title: "definition", level: 2 },
         { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
         { id: "how-it-works", title: "How It Works", level: 2 },
-        { id: "examples", title: "Examples & Use Cases", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "examples-use-cases", title: "Examples & Use Cases", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         { question: "Does trustless mean there is zero trust involved?", answer: "Not exactly. Trustless means you do not need to trust any specific individual or organization. However, you are still trusting the underlying code, cryptography, and consensus mechanism. The key difference is that these are transparent, verifiable, and based on mathematics rather than human promises or institutional reputation." },

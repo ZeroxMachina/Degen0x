@@ -7,7 +7,16 @@ export default function MarketCyclesPage() {
   return (
     <LearnPageLayout title="Understanding Crypto Market Cycles" categoryName="Long-Term" categorySlug="long-term" readTime="8 min"
       intro="Cryptocurrency markets move in distinct cycles of expansion and contraction, typically spanning 3-5 years. Understanding these cycles helps long-term investors set expectations, manage emotions, and make better decisions about accumulation, holding, and taking profits. While no cycle is identical, recognizable patterns have repeated across multiple cycles."
-      toc={[{ id: "four-phases", title: "The Four Market Phases", level: 2 }, { id: "historical", title: "Historical Patterns", level: 2 }, { id: "positioning", title: "Positioning for Each Phase", level: 2 }, { id: "mistakes", title: "Common Cycle Mistakes", level: 2 }]}
+      toc={[
+        { id: "four-phases", title: "four-phases", level: 2 },
+        { id: "the-four-market-phases", title: "The Four Market Phases", level: 2 },
+        { id: "historical", title: "historical", level: 2 },
+        { id: "historical-patterns", title: "Historical Patterns", level: 2 },
+        { id: "positioning", title: "positioning", level: 2 },
+        { id: "positioning-for-each-phase", title: "Positioning for Each Phase", level: 2 },
+        { id: "mistakes", title: "mistakes", level: 2 },
+        { id: "common-cycle-mistakes", title: "Common Cycle Mistakes", level: 2 }
+      ]}
       faqs={[
         { question: "How long do crypto market cycles last?", answer: "Historically, crypto cycles have lasted approximately 4 years, loosely correlated with Bitcoin's halving schedule. The bull phase typically lasts 12-18 months, followed by a 12-18 month bear market, with accumulation and early recovery phases filling the remaining time. However, as the market matures, cycles may evolve in duration and intensity." },
         { question: "Are we in a bull or bear market?", answer: "Market phase determination is easier in hindsight. Current indicators to consider include: price relative to the previous all-time high, on-chain metrics like active addresses and exchange flows, Bitcoin dominance trends, and macro economic conditions. Our analysis section covers current market phase indicators in detail." },

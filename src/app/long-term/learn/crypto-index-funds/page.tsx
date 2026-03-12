@@ -18,12 +18,18 @@ export default function CryptoIndexFundsPage() {
       readTime="10 min read"
       intro="Crypto index funds provide diversified exposure to the cryptocurrency market without requiring investors to select and manage individual assets. From on-chain DeFi index tokens to regulated crypto ETFs, there are now multiple ways to invest in broad crypto market exposure. This guide covers the different types of crypto index products, their construction methodologies, and how to choose the right approach for your investment goals."
       toc={[
-        { id: "what-are-indexes", title: "What Are Crypto Index Funds?", level: 2 },
-        { id: "types", title: "Types of Crypto Index Products", level: 2 },
-        { id: "construction", title: "Index Construction Methods", level: 2 },
-        { id: "crypto-etfs", title: "Crypto ETFs & Traditional Products", level: 2 },
-        { id: "diy-index", title: "Building Your Own Index", level: 2 },
-        { id: "considerations", title: "Key Considerations", level: 2 },
+        { id: "what-are-indexes", title: "what-are-indexes", level: 2 },
+        { id: "what-are-crypto-index-funds", title: "What Are Crypto Index Funds?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-crypto-index-products", title: "Types of Crypto Index Products", level: 2 },
+        { id: "construction", title: "construction", level: 2 },
+        { id: "index-construction-methods", title: "Index Construction Methods", level: 2 },
+        { id: "crypto-etfs", title: "crypto-etfs", level: 2 },
+        { id: "crypto-etfs-traditional-products", title: "Crypto ETFs & Traditional Products", level: 2 },
+        { id: "diy-index", title: "diy-index", level: 2 },
+        { id: "building-your-own-index", title: "Building Your Own Index", level: 2 },
+        { id: "considerations", title: "considerations", level: 2 },
+        { id: "key-considerations", title: "Key Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto index funds a good investment?", answer: "For investors who want crypto exposure without picking individual assets, index funds offer diversification. However, in crypto, the top 1-2 assets (Bitcoin, Ethereum) often outperform broader indexes. A concentrated BTC/ETH portfolio may outperform a broad crypto index over time." },

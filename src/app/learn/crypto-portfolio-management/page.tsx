@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Portfolio Management: Strategies for Every Risk Level | CryptoDegen`,
+  title: `Crypto Portfolio Management: Strategies for Every Risk Level | degen0x`,
   description:
     "Learn allocation frameworks, rebalancing strategies, risk management, DCA approaches, and tax-loss harvesting for crypto portfolios.",
 };
@@ -17,13 +17,20 @@ export default function CryptoPortfolioManagementPage() {
       readTime="13 min read"
       intro="Successful crypto investing requires more than picking winners - it requires disciplined portfolio construction, risk management, and behavioral discipline. Most retail investors fail not because they pick bad assets but because they don't manage position sizing, rebalance, or cut losses. This guide provides concrete frameworks for building crypto portfolios at different risk levels, implementing rebalancing and DCA strategies, managing risk through position sizing, harvesting taxes efficiently, and avoiding common behavioral mistakes that destroy returns."
       toc={[
-        { id: "asset-allocation", title: "Asset Allocation Frameworks", level: 2 },
-        { id: "position-sizing", title: "Position Sizing Rules", level: 2 },
-        { id: "rebalancing", title: "Rebalancing Strategies", level: 2 },
-        { id: "dca", title: "Dollar-Cost Averaging", level: 2 },
-        { id: "tax-loss", title: "Tax-Loss Harvesting", level: 2 },
-        { id: "risk-management", title: "Risk Management Techniques", level: 2 },
-        { id: "behavioral", title: "Behavioral Discipline", level: 2 },
+        { id: "asset-allocation", title: "asset-allocation", level: 2 },
+        { id: "asset-allocation-frameworks", title: "Asset Allocation Frameworks", level: 2 },
+        { id: "position-sizing", title: "position-sizing", level: 2 },
+        { id: "position-sizing-rules", title: "Position Sizing Rules", level: 2 },
+        { id: "rebalancing", title: "rebalancing", level: 2 },
+        { id: "rebalancing-strategies", title: "Rebalancing Strategies", level: 2 },
+        { id: "dca", title: "dca", level: 2 },
+        { id: "dollar-cost-averaging", title: "Dollar-Cost Averaging", level: 2 },
+        { id: "tax-loss", title: "tax-loss", level: 2 },
+        { id: "tax-loss-harvesting", title: "Tax-Loss Harvesting", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management-techniques", title: "Risk Management Techniques", level: 2 },
+        { id: "behavioral", title: "behavioral", level: 2 },
+        { id: "behavioral-discipline", title: "Behavioral Discipline", level: 2 }
       ]}
       faqs={[
         {

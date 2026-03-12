@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Beam (BEAM)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Beam (BEAM)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Beam (BEAM), the gaming-focused blockchain and ecosystem by Merit Circle. Discover how it works, tokenomics, use cases, and how to buy BEAM.",
 };
@@ -17,12 +17,18 @@ export default function BeamPage() {
       readTime="8 min read"
       intro="Beam is a gaming-focused blockchain ecosystem built as an Avalanche subnet, created by the Merit Circle DAO. It provides the infrastructure for blockchain gaming including a dedicated chain optimized for gaming transactions, an SDK for game developers, and a gaming marketplace. BEAM is the native token powering all ecosystem activities."
       toc={[
-        { id: "what-is", title: "What Is Beam?", level: 2 },
-        { id: "how-it-works", title: "How Does Beam Work?", level: 2 },
-        { id: "tokenomics", title: "BEAM Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy BEAM", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-beam", title: "What Is Beam?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-beam-work", title: "How Does Beam Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "beam-tokenomics", title: "BEAM Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-beam", title: "How to Buy BEAM", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

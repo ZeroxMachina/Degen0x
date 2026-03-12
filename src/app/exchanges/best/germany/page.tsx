@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Germany (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Germany (${CURRENT_YEAR}) | degen0x`,
   description:
     "Discover the best cryptocurrency exchanges for German traders. BaFin-regulated platforms with EUR pairs, low fees, and top security.",
 };
@@ -17,10 +17,14 @@ export default function BestExchangesGermanyPage() {
       readTime="8 min read"
       intro="Germany is a leading crypto-friendly nation in Europe, with clear regulatory frameworks under BaFin (Federal Financial Supervisory Authority). German traders benefit from access to both domestic and EU-licensed exchanges offering EUR trading pairs and SEPA bank transfers. Here are the best options for trading crypto in Germany."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges in Germany", level: 2 },
-        { id: "regulations", title: "German Crypto Regulations", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-in-germany", title: "Top Exchanges in Germany", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "german-crypto-regulations", title: "German Crypto Regulations", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
         { id: "tax-implications", title: "Tax Implications", level: 2 },
-        { id: "choosing-exchange", title: "Choosing the Right Exchange", level: 2 },
+        { id: "choosing-exchange", title: "choosing-exchange", level: 2 },
+        { id: "choosing-the-right-exchange", title: "Choosing the Right Exchange", level: 2 }
       ]}
       faqs={[
         {

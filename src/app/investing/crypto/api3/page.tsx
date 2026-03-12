@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is API3 (API3)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is API3 (API3)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about API3 (API3), the first-party oracle solution for Web3. Discover how it works, tokenomics, use cases, and how to buy API3.",
 };
@@ -17,12 +17,18 @@ export default function Api3Page() {
       readTime="8 min read"
       intro="API3 is a decentralized oracle project that enables first-party oracles, where API providers operate their own oracle nodes to deliver data directly to blockchains without third-party intermediaries. Through its Airnode technology, API3 eliminates the middleman layer in traditional oracle designs, allowing data providers to serve blockchain applications directly with greater accountability and transparency."
       toc={[
-        { id: "what-is", title: "What Is API3?", level: 2 },
-        { id: "how-it-works", title: "How Does API3 Work?", level: 2 },
-        { id: "tokenomics", title: "API3 Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy API3", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-api3", title: "What Is API3?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-api3-work", title: "How Does API3 Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "api3-tokenomics", title: "API3 Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-api3", title: "How to Buy API3", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

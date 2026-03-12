@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Stader Labs (SD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Stader Labs (SD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Stader Labs (SD), the multi-chain liquid staking protocol. Discover how it works, tokenomics, use cases, and how to buy SD.",
 };
 
@@ -16,12 +16,18 @@ export default function StaderLabsPage() {
       readTime="8 min read"
       intro="Stader Labs is a multi-chain liquid staking platform that provides staking infrastructure across Ethereum, Polygon, BNB Chain, Hedera, and other proof-of-stake networks. Through its ETHx liquid staking token on Ethereum and staking solutions on other chains, Stader offers permissionless staking with diversified validator sets and competitive yields."
       toc={[
-        { id: "what-is", title: "What Is Stader Labs?", level: 2 },
-        { id: "how-it-works", title: "How Does Stader Labs Work?", level: 2 },
-        { id: "tokenomics", title: "SD Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SD", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-stader-labs", title: "What Is Stader Labs?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-stader-labs-work", title: "How Does Stader Labs Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "sd-tokenomics", title: "SD Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-sd", title: "How to Buy SD", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Stader Labs?", answer: "Stader Labs is a multi-chain liquid staking platform offering ETHx on Ethereum and staking solutions across Polygon, BNB Chain, Hedera, and other PoS networks with permissionless validator participation." },

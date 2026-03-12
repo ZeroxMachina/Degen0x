@@ -112,7 +112,7 @@ export default function WhereToSpendCryptoPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Where to Spend Crypto in {CURRENT_YEAR}
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -137,7 +137,7 @@ export default function WhereToSpendCryptoPage() {
       {/* Merchant Directory */}
       {merchantCategories.map((category) => (
         <section key={category.name} className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">{category.name}</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">{category.name}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {category.merchants.map((merchant) => (
               <div
@@ -145,7 +145,7 @@ export default function WhereToSpendCryptoPage() {
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4"
               >
                 <div className="flex items-start justify-between">
-                  <h3 className="text-white font-semibold">{merchant.name}</h3>
+                  <h3 className="text-[var(--color-text)] font-semibold">{merchant.name}</h3>
                   <span
                     className={`text-xs px-2 py-0.5 rounded-full ${
                       merchant.type === "Direct"
@@ -167,24 +167,24 @@ export default function WhereToSpendCryptoPage() {
 
       {/* How to Spend Section */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Three Ways to Spend Crypto Anywhere</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Three Ways to Spend Crypto Anywhere</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
           <div>
-            <h3 className="text-white font-semibold mb-2">1. Crypto Debit Card</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">1. Crypto Debit Card</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Use a Crypto.com, Coinbase, or Binance debit card at any Visa or Mastercard merchant.
               Your crypto is automatically converted to fiat. Works at 80+ million merchants worldwide.
             </p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-2">2. Gift Cards</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">2. Gift Cards</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Buy gift cards for Amazon, Uber, Netflix, and hundreds more using crypto through BitPay
               or CoinGate. Effectively lets you spend crypto at any major retailer.
             </p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-2">3. Direct Payment</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">3. Direct Payment</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Pay directly at merchants that accept crypto natively. Use on-chain transactions,
               Lightning Network, or payment processors like BitPay and Flexa at checkout.

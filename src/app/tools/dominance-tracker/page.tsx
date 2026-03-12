@@ -229,7 +229,7 @@ export default function DominanceTrackerPage() {
               key={m}
               onClick={() => setView(m)}
               className={`px-5 py-2.5 text-sm font-bold transition-colors ${
-                view === m ? 'bg-orange-600 text-white' : 'text-gray-400 hover:text-white hover:bg-[#1c2330]'
+                view === m ? 'bg-orange-600 text-[var(--color-text)]' : 'text-gray-400 hover:text-[var(--color-text)] hover:bg-[#1c2330]'
               }`}
             >
               {label}
@@ -276,7 +276,7 @@ export default function DominanceTrackerPage() {
               key={r}
               onClick={() => setRange(r)}
               className={`px-4 py-2 text-sm font-bold rounded-lg transition-colors ${
-                range === r ? 'bg-orange-600 text-white' : 'bg-[#161b22] border border-gray-700 text-gray-400 hover:text-white'
+                range === r ? 'bg-orange-600 text-[var(--color-text)]' : 'bg-[#161b22] border border-gray-700 text-gray-400 hover:text-[var(--color-text)]'
               }`}
             >
               {r}d

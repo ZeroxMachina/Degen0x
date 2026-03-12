@@ -17,11 +17,16 @@ export default function WhatIsComposabilityPage() {
       readTime="7 min"
       intro="Composability is the ability of DeFi protocols and smart contracts to seamlessly interact with each other, like building blocks that can be combined in endless configurations. Often called 'money legos,' composable protocols enable developers to build complex financial products by combining existing primitives — a lending protocol plus an AMM plus a yield optimizer — without needing permission from any of the underlying projects."
       toc={[
-        { id: "what-is-composability", title: "Understanding Composability", level: 2 },
-        { id: "how-it-works", title: "How Composability Works", level: 2 },
-        { id: "examples", title: "Composability in Action", level: 2 },
-        { id: "benefits", title: "Benefits of Composability", level: 2 },
-        { id: "risks", title: "Composability Risks", level: 2 },
+        { id: "what-is-composability", title: "what-is-composability", level: 2 },
+        { id: "understanding-composability", title: "Understanding Composability", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-composability-works", title: "How Composability Works", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "composability-in-action", title: "Composability in Action", level: 2 },
+        { id: "benefits", title: "benefits", level: 2 },
+        { id: "benefits-of-composability", title: "Benefits of Composability", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "composability-risks", title: "Composability Risks", level: 2 }
       ]}
       faqs={[
         { question: "What are money legos?", answer: "Money legos is a popular metaphor for DeFi composability. Just as Lego bricks snap together to build complex structures, DeFi protocols can be combined to create financial products that would be impossible in traditional finance. Each protocol is a building block that other protocols can build upon." },

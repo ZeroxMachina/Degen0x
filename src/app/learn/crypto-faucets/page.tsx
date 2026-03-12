@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Faucets: How to Get Free Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Faucets: How to Get Free Crypto (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what crypto faucets are, how they work, the best faucets available, and what role they play in blockchain ecosystems and testnet development.",
 };
@@ -17,10 +17,14 @@ export default function CryptoFaucetsPage() {
       readTime="7 min read"
       intro="Crypto faucets are platforms that distribute small amounts of cryptocurrency for free, typically in exchange for completing simple tasks or as a way to onboard new users. While mainnet faucets distributing real crypto have largely disappeared, testnet faucets remain essential tools for developers and airdrop farmers. Understanding how faucets work and where to find them is valuable for anyone getting started in crypto or participating in new blockchain ecosystems."
       toc={[
-        { id: "what-are-faucets", title: "What Are Crypto Faucets?", level: 2 },
+        { id: "what-are-faucets", title: "what-are-faucets", level: 2 },
+        { id: "what-are-crypto-faucets", title: "What Are Crypto Faucets?", level: 2 },
+        { id: "types-of-faucets", title: "types-of-faucets", level: 2 },
         { id: "types-of-faucets", title: "Types of Faucets", level: 2 },
-        { id: "testnet-faucets", title: "Testnet Faucets Guide", level: 2 },
-        { id: "faucet-safety", title: "Faucet Safety and Scams", level: 2 },
+        { id: "testnet-faucets", title: "testnet-faucets", level: 2 },
+        { id: "testnet-faucets-guide", title: "Testnet Faucets Guide", level: 2 },
+        { id: "faucet-safety", title: "faucet-safety", level: 2 },
+        { id: "faucet-safety-and-scams", title: "Faucet Safety and Scams", level: 2 }
       ]}
       faqs={[
         {

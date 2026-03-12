@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Gas Limit? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Gas Limit? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what gas limit means in blockchain transactions, how to set it correctly, and what happens when you set it too low or too high.",
 };
 
@@ -11,7 +11,16 @@ export default function GasLimitPage() {
   return (
     <LearnPageLayout title="What Is Gas Limit?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="Gas limit is the maximum amount of gas units a user is willing to spend on a blockchain transaction. It acts as a safety cap that prevents runaway costs from complex or buggy smart contract interactions. Setting the gas limit correctly is important: too low and your transaction fails (while still consuming gas), too high and you reserve more resources than needed, though unused gas is refunded."
-      toc={[{ id: "definition", title: "What Is Gas Limit?", level: 2 }, { id: "how-it-works", title: "How Gas Limit Works", level: 2 }, { id: "setting-gas-limit", title: "Setting the Right Gas Limit", level: 2 }, { id: "common-issues", title: "Common Gas Limit Issues", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-gas-limit", title: "What Is Gas Limit?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-gas-limit-works", title: "How Gas Limit Works", level: 2 },
+        { id: "setting-gas-limit", title: "setting-gas-limit", level: 2 },
+        { id: "setting-the-right-gas-limit", title: "Setting the Right Gas Limit", level: 2 },
+        { id: "common-issues", title: "common-issues", level: 2 },
+        { id: "common-gas-limit-issues", title: "Common Gas Limit Issues", level: 2 }
+      ]}
       faqs={[{ question: "What happens if my gas limit is too low?", answer: "Your transaction will fail with an 'out of gas' error. The blockchain still charges you for the gas consumed up to the point of failure because the computational work was performed. The state changes are reverted, but the fee is not refunded. Always use the recommended gas limit or slightly above." },
         { question: "Do I get refunded for unused gas?", answer: "Yes. If your transaction uses less gas than your gas limit, the unused portion is refunded to your wallet. For example, if you set a gas limit of 100,000 but the transaction only uses 60,000, you are refunded for the 40,000 unused gas units. This is why setting a higher gas limit than necessary is safer than setting it too low." }]}
       relatedArticles={[{ title: "Gas", href: "/learn/glossary/gas", category: "Glossary" }, { title: "Gas Price", href: "/learn/glossary/gas-price", category: "Glossary" }, { title: "Gwei", href: "/learn/glossary/gwei", category: "Glossary" }, { title: "What Are Gas Fees?", href: "/learn/what-are-gas-fees", category: "Learn Crypto" }]}

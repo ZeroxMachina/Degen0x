@@ -29,7 +29,7 @@ export default function EigenLayerVsLidoPage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         EigenLayer vs Lido: Restaking vs Liquid Staking in {CURRENT_YEAR}
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -50,7 +50,7 @@ export default function EigenLayerVsLidoPage() {
       />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How They Work Together</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How They Work Together</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Many users use both Lido and EigenLayer as part of a layered staking strategy. The typical
           flow is: stake ETH on Lido to receive stETH (earning ~3-3.5% APY), then restake that stETH
@@ -64,7 +64,7 @@ export default function EigenLayerVsLidoPage() {
           staking strategies.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Yield Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Yield Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Lido alone provides 3-3.5% APY from base Ethereum staking after its 10% fee. EigenLayer
           on top can add 1-5% additional APY from AVS rewards, though this varies based on which
@@ -77,7 +77,7 @@ export default function EigenLayerVsLidoPage() {
           maturity and demand for security services.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Risk Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Risk Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Lido&apos;s risk profile is relatively well-understood: smart contract risk, validator slashing
           risk (mitigated by insurance), and stETH de-peg risk during extreme market events. The
@@ -90,15 +90,15 @@ export default function EigenLayerVsLidoPage() {
           risk profile is inherently more complex than base liquid staking.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Use Lido alone if</strong> you want simple, predictable
+            <strong className="text-[var(--color-text)]">Use Lido alone if</strong> you want simple, predictable
             ETH staking yields with established security and maximum DeFi composability. Lido is
             sufficient for most users who want to earn staking rewards without additional complexity.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Use both Lido and EigenLayer if</strong> you want to
+            <strong className="text-[var(--color-text)]">Use both Lido and EigenLayer if</strong> you want to
             maximize your ETH yield and are comfortable with the additional risk of restaking. This
             strategy is best suited for experienced DeFi users who understand the compounding risks
             and actively monitor their positions.

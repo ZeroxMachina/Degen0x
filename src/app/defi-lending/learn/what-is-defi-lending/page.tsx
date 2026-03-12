@@ -15,11 +15,16 @@ export default function WhatIsDefiLendingPage() {
       readTime="12 min"
       intro="DeFi lending allows anyone with a crypto wallet to earn interest on their assets or borrow cryptocurrency without intermediaries, credit checks, or bank approvals. Using smart contracts on blockchain networks, DeFi lending protocols create permissionless, transparent money markets that operate 24/7. This guide covers everything you need to know about how DeFi lending works, the risks involved, and how to get started."
       toc={[
-        { id: "how-it-works", title: "How DeFi Lending Works", level: 2 },
-        { id: "earning-yield", title: "Earning Yield as a Lender", level: 2 },
-        { id: "borrowing", title: "Borrowing in DeFi", level: 2 },
-        { id: "risks", title: "Key Risks to Understand", level: 2 },
-        { id: "getting-started", title: "How to Get Started", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-defi-lending-works", title: "How DeFi Lending Works", level: 2 },
+        { id: "earning-yield", title: "earning-yield", level: 2 },
+        { id: "earning-yield-as-a-lender", title: "Earning Yield as a Lender", level: 2 },
+        { id: "borrowing", title: "borrowing", level: 2 },
+        { id: "borrowing-in-defi", title: "Borrowing in DeFi", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "key-risks-to-understand", title: "Key Risks to Understand", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "how-to-get-started", title: "How to Get Started", level: 2 }
       ]}
       faqs={[
         { question: "Is DeFi lending safe?", answer: "DeFi lending carries smart contract risk, liquidation risk, and market volatility risk. Top protocols like Aave and Compound have been extensively audited and operated for years without major exploits. However, no DeFi protocol is completely risk-free. Only deposit what you can afford to lose." },

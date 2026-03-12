@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.25% spot maker/taker (reduced with BMX)",
   bestFor: "Altcoin traders seeking wide token selection",
-  affiliateUrl: "https://cryptodegen.com/go/bitmart",
+  affiliateUrl: "https://degen0x.com/go/bitmart",
   category: "exchanges",
 };
 

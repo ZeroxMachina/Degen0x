@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Utility Beyond Art: Real-World Use Cases (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Utility Beyond Art: Real-World Use Cases (${CURRENT_YEAR}) | degen0x`,
   description: "Explore NFT utility beyond digital art. Learn about NFTs for memberships, gaming, real estate, identity, ticketing, and other real-world applications.",
 };
 
@@ -11,7 +11,16 @@ export default function NftUtilityPage() {
   return (
     <LearnPageLayout title="NFT Utility Beyond Art: Real-World Use Cases" categoryName="NFTs" categorySlug="nfts" readTime="9 min read"
       intro="While NFTs gained mainstream attention through digital art and collectibles, their real potential lies in utility applications that extend far beyond images. NFTs can represent membership access, gaming assets, event tickets, real estate deeds, identity credentials, and much more. The programmable nature of NFTs allows creators to embed ongoing utility that evolves over time. This guide explores the diverse utility applications of NFTs and how they are reshaping ownership across industries."
-      toc={[{ id: "membership-access", title: "Membership and Access", level: 2 }, { id: "gaming-utility", title: "Gaming and Virtual Worlds", level: 2 }, { id: "real-world-utility", title: "Real-World Applications", level: 2 }, { id: "future-utility", title: "The Future of NFT Utility", level: 2 }]}
+      toc={[
+        { id: "membership-access", title: "membership-access", level: 2 },
+        { id: "membership-and-access", title: "Membership and Access", level: 2 },
+        { id: "gaming-utility", title: "gaming-utility", level: 2 },
+        { id: "gaming-and-virtual-worlds", title: "Gaming and Virtual Worlds", level: 2 },
+        { id: "real-world-utility", title: "real-world-utility", level: 2 },
+        { id: "real-world-applications", title: "Real-World Applications", level: 2 },
+        { id: "future-utility", title: "future-utility", level: 2 },
+        { id: "the-future-of-nft-utility", title: "The Future of NFT Utility", level: 2 }
+      ]}
       faqs={[{ question: "What makes an NFT utility valuable?", answer: "NFT utility is valuable when it provides ongoing benefits that justify the purchase price independent of speculative resale value. Strong utility NFTs offer exclusive access (content, events, communities), tangible benefits (discounts, rewards, services), or functional use (gaming items, credentials). The best utility NFTs increase in value as the underlying platform or community grows, creating alignment between holders and creators." },
         { question: "Can NFT utility change after purchase?", answer: "Yes. Creators can add new utility over time through airdrops, platform updates, and partnership integrations. Dynamic NFTs can have their metadata updated to reflect new benefits or status changes. However, utility can also be removed if a project fails or a team abandons development. Evaluate the team's track record and long-term commitment before investing in utility-focused NFTs. Smart contract-enforced utility is more reliable than promises." },
         { question: "Are utility NFTs different from regular NFTs technically?", answer: "Technically, utility NFTs use the same token standards (ERC-721, ERC-1155) as art NFTs. The utility comes from how the token is used by external applications and platforms, not from the token itself. A platform checks if your wallet holds a specific NFT and grants access accordingly. Some utility NFTs use additional smart contract logic for on-chain functionality like staking, voting, or revenue sharing." }]}

@@ -114,7 +114,7 @@ export default function BestSpendingPage() {
     "@type": "Article",
     headline: `Best Ways to Spend Crypto in ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -132,7 +132,7 @@ export default function BestSpendingPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Ways to Spend Crypto in {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -149,17 +149,17 @@ export default function BestSpendingPage() {
             spending solutions to help you find the best way to put your crypto to work.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            Our top pick for most people is the <strong className="text-white">Crypto.com Visa Card</strong> for
+            Our top pick for most people is the <strong className="text-[var(--color-text)]">Crypto.com Visa Card</strong> for
             its best-in-class cashback rates and premium perks. If you are already a Coinbase user,
-            the <strong className="text-white">Coinbase Card</strong> offers seamless integration with your
-            existing portfolio. And for Bitcoin enthusiasts, the <strong className="text-white">Fold Card</strong> rewards
+            the <strong className="text-[var(--color-text)]">Coinbase Card</strong> offers seamless integration with your
+            existing portfolio. And for Bitcoin enthusiasts, the <strong className="text-[var(--color-text)]">Fold Card</strong> rewards
             every purchase with sats.
           </p>
         </div>
 
         {/* Top Products */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Our Top Picks</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Top Picks</h2>
           <div className="space-y-4">
             {topSpendingProducts.map((product, index) => (
               <div
@@ -168,11 +168,11 @@ export default function BestSpendingPage() {
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold">
                       {index + 1}
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-white">{product.name}</h3>
+                      <h3 className="text-lg font-semibold text-[var(--color-text)]">{product.name}</h3>
                       <div className="text-sm text-[var(--color-accent)]">
                         {"*".repeat(Math.floor(product.rating))}{" "}
                         {product.rating}/5
@@ -230,7 +230,7 @@ export default function BestSpendingPage() {
 
         {/* Category Links */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Browse by Category</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Browse by Category</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {categoryLinks.map((link) => (
               <Link
@@ -238,7 +238,7 @@ export default function BestSpendingPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
-                <h3 className="text-white font-semibold mb-1">{link.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
               </Link>
             ))}
@@ -247,7 +247,7 @@ export default function BestSpendingPage() {
 
         {/* Methodology */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             We evaluate each crypto spending product across five key categories:
           </p>
@@ -260,7 +260,7 @@ export default function BestSpendingPage() {
               { title: "Availability (10%)", desc: "Geographic availability, supported currencies, and regulatory compliance." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}

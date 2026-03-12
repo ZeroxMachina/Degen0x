@@ -23,7 +23,7 @@ const memeCoins: Product[] = [
     pros: ["Largest meme coin by market cap", "Strong community & brand recognition", "Low transaction fees", "Long track record"],
     cons: ["No hard supply cap (inflationary)", "Limited development activity", "Price heavily sentiment-driven"],
     bestFor: "Meme coin exposure with longevity",
-    affiliateUrl: "https://cryptodegen.com/go/buy-doge",
+    affiliateUrl: "https://degen0x.com/go/buy-doge",
     category: "meme-coins",
   },
   {
@@ -34,7 +34,7 @@ const memeCoins: Product[] = [
     pros: ["Growing ecosystem (Shibarium L2)", "Large community", "DEX and DeFi features", "Regular token burns"],
     cons: ["Massive total supply", "Ecosystem still maturing", "High correlation with DOGE"],
     bestFor: "Meme coin with ecosystem",
-    affiliateUrl: "https://cryptodegen.com/go/buy-shib",
+    affiliateUrl: "https://degen0x.com/go/buy-shib",
     category: "meme-coins",
   },
   {
@@ -45,7 +45,7 @@ const memeCoins: Product[] = [
     pros: ["Strong meme culture", "High trading volume", "Large holder base", "No team allocation"],
     cons: ["Extremely volatile", "No utility", "Pure speculation", "No development roadmap"],
     bestFor: "High-risk meme speculation",
-    affiliateUrl: "https://cryptodegen.com/go/buy-pepe",
+    affiliateUrl: "https://degen0x.com/go/buy-pepe",
     category: "meme-coins",
   },
   {
@@ -56,7 +56,7 @@ const memeCoins: Product[] = [
     pros: ["Leading Solana meme coin", "Community-driven distribution", "Solana ecosystem integration", "Active development"],
     cons: ["Solana ecosystem dependent", "Highly speculative", "Large supply"],
     bestFor: "Solana meme coin exposure",
-    affiliateUrl: "https://cryptodegen.com/go/buy-bonk",
+    affiliateUrl: "https://degen0x.com/go/buy-bonk",
     category: "meme-coins",
   },
 ];
@@ -81,7 +81,7 @@ export default function BestMemeCoinsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Meme Coins for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -106,7 +106,7 @@ export default function BestMemeCoinsPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Meme Coins by Market Cap</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Meme Coins by Market Cap</h2>
         <div className="space-y-4">
           {memeCoins.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -115,7 +115,7 @@ export default function BestMemeCoinsPage() {
       </section>
 
       <section id="understanding" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Understanding Meme Coins</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Understanding Meme Coins</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Meme coins derive their value primarily from community engagement, social media
           attention, and cultural relevance rather than technological innovation or utility.
@@ -133,7 +133,7 @@ export default function BestMemeCoinsPage() {
       </section>
 
       <section id="risk-warning" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Risk Warning</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Risk Warning</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The vast majority of meme coins created will eventually go to zero. New meme coins
           launch daily, and most are rug pulls or pump-and-dump schemes designed to enrich
@@ -149,7 +149,7 @@ export default function BestMemeCoinsPage() {
       </section>
 
       <section id="how-to-evaluate" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Evaluate Meme Coins</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Evaluate Meme Coins</h2>
         <p className="text-[var(--color-text-secondary)]">
           While meme coins lack traditional fundamentals, you can still evaluate them by examining
           community size and engagement (social media followers, Discord activity), trading volume

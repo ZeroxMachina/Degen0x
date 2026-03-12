@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Floki (FLOKI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Floki (FLOKI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Floki (FLOKI), the meme coin turned utility project with NFT gaming, DeFi products, and a growing ecosystem. Discover how to buy FLOKI.",
 };
@@ -17,12 +17,18 @@ export default function FlokiPage() {
       readTime="8 min read"
       intro="Floki (FLOKI) is a meme cryptocurrency named after Elon Musk's Shiba Inu dog. Originally launched as a meme coin in 2021, Floki has evolved into a utility-driven project with its own NFT metaverse game (Valhalla), DeFi products, and educational platform. It operates on both Ethereum and BNB Chain."
       toc={[
-        { id: "what-is", title: "What Is Floki?", level: 2 },
-        { id: "how-it-works", title: "How Does Floki Work?", level: 2 },
-        { id: "tokenomics", title: "FLOKI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy FLOKI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-floki", title: "What Is Floki?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-floki-work", title: "How Does Floki Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "floki-tokenomics", title: "FLOKI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-floki", title: "How to Buy FLOKI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

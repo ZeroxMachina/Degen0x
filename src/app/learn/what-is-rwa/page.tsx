@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is RWA Tokenization? Real World Assets on Blockchain (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is RWA Tokenization? Real World Assets on Blockchain (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what RWA tokenization is, how real-world assets are brought on-chain, key projects in the space, and why institutions are adopting tokenized assets.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsRwaPage() {
       readTime="9 min read"
       intro="RWA tokenization is the process of representing ownership of real-world assets as digital tokens on a blockchain. These assets include treasury bonds, real estate, commodities, private credit, art, and more. By bringing traditional assets on-chain, tokenization enables fractional ownership, 24/7 trading, instant settlement, and global accessibility. RWA has become one of the fastest-growing sectors in crypto, with major institutions like BlackRock and Franklin Templeton entering the space."
       toc={[
-        { id: "what-is-rwa", title: "What Is RWA Tokenization?", level: 2 },
-        { id: "how-it-works", title: "How RWA Tokenization Works", level: 2 },
-        { id: "asset-types", title: "Types of Tokenized Assets", level: 2 },
-        { id: "future-of-rwa", title: "The Future of RWA", level: 2 },
+        { id: "what-is-rwa", title: "what-is-rwa", level: 2 },
+        { id: "what-is-rwa-tokenization", title: "What Is RWA Tokenization?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-rwa-tokenization-works", title: "How RWA Tokenization Works", level: 2 },
+        { id: "asset-types", title: "asset-types", level: 2 },
+        { id: "types-of-tokenized-assets", title: "Types of Tokenized Assets", level: 2 },
+        { id: "future-of-rwa", title: "future-of-rwa", level: 2 },
+        { id: "the-future-of-rwa", title: "The Future of RWA", level: 2 }
       ]}
       faqs={[
         {

@@ -10,7 +10,7 @@ const product = {
   pros: ["Good international tax support", "Portfolio tracking features", "Clean user interface", "Acquired by Glassnode for stability"],
   cons: ["Reduced standalone development", "DeFi support varies", "Integration into Glassnode ongoing", "Some features in transition"],
   bestFor: "International users seeking combined portfolio tracking and tax reporting with a clean interface",
-  affiliateUrl: "https://cryptodegen.com/go/accointing",
+  affiliateUrl: "https://degen0x.com/go/accointing",
   category: "taxes",
 };
 

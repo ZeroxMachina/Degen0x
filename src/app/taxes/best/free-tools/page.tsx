@@ -19,7 +19,7 @@ const freeToolProducts: Product[] = [
     cons: ["Only free through partner exchanges", "Limited DeFi support", "Fewer integrations than paid tools"],
     fees: "Free",
     bestFor: "Exchange users wanting free reports",
-    affiliateUrl: "https://cryptodegen.com/go/taxbit",
+    affiliateUrl: "https://degen0x.com/go/taxbit",
     category: "taxes",
     featured: true,
   },
@@ -33,7 +33,7 @@ const freeToolProducts: Product[] = [
     cons: ["Tax reports require paid plan", "Some features locked behind paywall", "No tax form generation on free tier"],
     fees: "Free (portfolio only)",
     bestFor: "Portfolio tracking with upgrade option",
-    affiliateUrl: "https://cryptodegen.com/go/koinly",
+    affiliateUrl: "https://degen0x.com/go/koinly",
     category: "taxes",
     featured: true,
   },
@@ -47,7 +47,7 @@ const freeToolProducts: Product[] = [
     cons: ["25 transaction limit is very restrictive", "Most users will need paid plan", "DeFi transactions count toward limit"],
     fees: "Free (25 transactions)",
     bestFor: "Low-volume investors",
-    affiliateUrl: "https://cryptodegen.com/go/cointracker",
+    affiliateUrl: "https://degen0x.com/go/cointracker",
     category: "taxes",
   },
 ];
@@ -88,7 +88,7 @@ export default function BestFreeToolsPage() {
       />
 
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Free Crypto Tax Tools ({CURRENT_YEAR})
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -104,7 +104,7 @@ export default function BestFreeToolsPage() {
       <AffiliateDisclosure />
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Free Options Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Free Options Ranked</h2>
         <div className="grid gap-6">
           {freeToolProducts.map((product, i) => (
             <ProductCard key={product.slug} product={product} rank={i + 1} categorySlug="taxes" />
@@ -113,7 +113,7 @@ export default function BestFreeToolsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Free vs Paid: What You Get</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Free vs Paid: What You Get</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
           <div className="grid sm:grid-cols-2 gap-6">
             <div>
@@ -143,20 +143,20 @@ export default function BestFreeToolsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Other Free Resources</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Other Free Resources</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           <Link
             href="/taxes/calculators/tax-calculator"
             className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
           >
-            <h3 className="text-sm font-semibold text-white mb-1">Free Tax Calculator</h3>
+            <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">Free Tax Calculator</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Estimate your crypto tax liability for free</p>
           </Link>
           <Link
             href="/taxes/calculators/capital-gains-calculator"
             className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
           >
-            <h3 className="text-sm font-semibold text-white mb-1">Capital Gains Calculator</h3>
+            <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">Capital Gains Calculator</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Calculate capital gains on crypto trades</p>
           </Link>
         </div>

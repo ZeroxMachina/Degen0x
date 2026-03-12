@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Accepting Crypto Payments (${CURRENT_YEAR}) - Business Guide | CryptoDegen`,
+  title: `Accepting Crypto Payments (${CURRENT_YEAR}) - Business Guide | degen0x`,
   description: `Learn how to accept cryptocurrency payments for your business. Payment processors, invoicing, accounting, tax implications, and integration guides.`,
 };
 
@@ -16,10 +16,14 @@ export default function AcceptingCryptoPaymentsPage() {
       readTime="9 min"
       intro="Accepting cryptocurrency payments can open your business to a global customer base, reduce transaction fees compared to traditional payment processors, and provide faster settlement times. Whether you run an e-commerce store, SaaS platform, or professional services firm, this guide covers the technical, accounting, and regulatory aspects of accepting crypto payments."
       toc={[
-        { id: "payment-processors", title: "Payment Processors and Gateways", level: 2 },
-        { id: "direct-payments", title: "Direct Wallet Payments", level: 2 },
-        { id: "invoicing", title: "Crypto Invoicing", level: 2 },
-        { id: "accounting-tax", title: "Accounting and Tax Implications", level: 2 },
+        { id: "payment-processors", title: "payment-processors", level: 2 },
+        { id: "payment-processors-and-gateways", title: "Payment Processors and Gateways", level: 2 },
+        { id: "direct-payments", title: "direct-payments", level: 2 },
+        { id: "direct-wallet-payments", title: "Direct Wallet Payments", level: 2 },
+        { id: "invoicing", title: "invoicing", level: 2 },
+        { id: "crypto-invoicing", title: "Crypto Invoicing", level: 2 },
+        { id: "accounting-tax", title: "accounting-tax", level: 2 },
+        { id: "accounting-and-tax-implications", title: "Accounting and Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "Do I need to hold cryptocurrency to accept crypto payments?", answer: "No. Payment processors like BitPay and Coinbase Commerce can automatically convert incoming crypto payments to fiat currency and deposit directly to your bank account. This eliminates price volatility risk while still offering customers the option to pay with crypto. You only hold cryptocurrency if you choose to." },

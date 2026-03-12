@@ -17,11 +17,16 @@ export default function DefiGovernanceExplainedPage() {
       readTime="10 min"
       intro="Governance is the decision-making process that controls how DeFi protocols evolve, set parameters, and manage risk. Most major lending protocols are governed by token holders who vote on proposals ranging from interest rate model adjustments to new asset listings. Understanding governance mechanics is important because governance decisions directly affect the safety and returns of your DeFi positions."
       toc={[
-        { id: "what-is-governance", title: "What Is DeFi Governance", level: 2 },
+        { id: "what-is-governance", title: "what-is-governance", level: 2 },
+        { id: "what-is-defi-governance", title: "What Is DeFi Governance", level: 2 },
+        { id: "governance-tokens", title: "governance-tokens", level: 2 },
         { id: "governance-tokens", title: "Governance Tokens", level: 2 },
+        { id: "voting-mechanisms", title: "voting-mechanisms", level: 2 },
         { id: "voting-mechanisms", title: "Voting Mechanisms", level: 2 },
-        { id: "governance-lending", title: "Governance in Lending Protocols", level: 2 },
-        { id: "participation", title: "How to Participate", level: 2 },
+        { id: "governance-lending", title: "governance-lending", level: 2 },
+        { id: "governance-in-lending-protocols", title: "Governance in Lending Protocols", level: 2 },
+        { id: "participation", title: "participation", level: 2 },
+        { id: "how-to-participate", title: "How to Participate", level: 2 }
       ]}
       faqs={[
         { question: "Do I need governance tokens to use DeFi protocols?", answer: "No. You can use DeFi lending protocols without holding governance tokens. Governance participation is optional. However, holding governance tokens gives you a voice in decisions that affect your deposits and borrowing positions." },

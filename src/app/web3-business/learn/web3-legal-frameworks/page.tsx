@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Legal Frameworks for Web3 Projects (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Legal Frameworks for Web3 Projects (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand the legal landscape for Web3 businesses including entity structuring, securities regulation, DAO legal wrappers, intellectual property, and compliance strategies.",
 };
@@ -17,11 +17,16 @@ export default function Web3LegalFrameworksPage() {
       readTime="10 min"
       intro="Navigating the legal landscape is one of the most challenging aspects of building a Web3 business. Decentralized protocols, token launches, and DAO structures operate across jurisdictions with evolving and often contradictory regulations. Failure to establish proper legal frameworks can result in enforcement actions, personal liability for founders, and project shutdown. This guide covers the key legal considerations for Web3 projects including entity structuring, securities compliance, DAO legal wrappers, and intellectual property protection."
       toc={[
-        { id: "entity-structure", title: "Entity Structure and Jurisdiction", level: 2 },
-        { id: "securities-regulation", title: "Securities Regulation and Token Classification", level: 2 },
-        { id: "dao-legal", title: "DAO Legal Wrappers", level: 2 },
-        { id: "ip-licensing", title: "Intellectual Property and Licensing", level: 2 },
-        { id: "compliance-strategy", title: "Building a Compliance Strategy", level: 2 },
+        { id: "entity-structure", title: "entity-structure", level: 2 },
+        { id: "entity-structure-and-jurisdiction", title: "Entity Structure and Jurisdiction", level: 2 },
+        { id: "securities-regulation", title: "securities-regulation", level: 2 },
+        { id: "securities-regulation-and-token-classification", title: "Securities Regulation and Token Classification", level: 2 },
+        { id: "dao-legal", title: "dao-legal", level: 2 },
+        { id: "dao-legal-wrappers", title: "DAO Legal Wrappers", level: 2 },
+        { id: "ip-licensing", title: "ip-licensing", level: 2 },
+        { id: "intellectual-property-and-licensing", title: "Intellectual Property and Licensing", level: 2 },
+        { id: "compliance-strategy", title: "compliance-strategy", level: 2 },
+        { id: "building-a-compliance-strategy", title: "Building a Compliance Strategy", level: 2 }
       ]}
       faqs={[
         {

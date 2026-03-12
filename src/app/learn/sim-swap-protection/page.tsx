@@ -12,11 +12,16 @@ export default function SimSwapProtectionPage() {
   return (
     <LearnPageLayout title="SIM Swap Protection Guide" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="SIM swap attacks have been responsible for millions of dollars in cryptocurrency theft. By hijacking your phone number, attackers can bypass SMS-based two-factor authentication, intercept password reset codes, and gain access to exchange accounts. This guide explains how SIM swaps work and the steps you can take to protect yourself."
       toc={[
-        { id: "how-it-works", title: "How SIM Swaps Work", level: 2 },
-        { id: "why-crypto", title: "Why Crypto Users Are Targeted", level: 2 },
-        { id: "prevention", title: "Prevention Measures", level: 2 },
-        { id: "alternatives", title: "Better 2FA Alternatives", level: 2 },
-        { id: "response", title: "If You Are Attacked", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-sim-swaps-work", title: "How SIM Swaps Work", level: 2 },
+        { id: "why-crypto", title: "why-crypto", level: 2 },
+        { id: "why-crypto-users-are-targeted", title: "Why Crypto Users Are Targeted", level: 2 },
+        { id: "prevention", title: "prevention", level: 2 },
+        { id: "prevention-measures", title: "Prevention Measures", level: 2 },
+        { id: "alternatives", title: "alternatives", level: 2 },
+        { id: "better-2fa-alternatives", title: "Better 2FA Alternatives", level: 2 },
+        { id: "response", title: "response", level: 2 },
+        { id: "if-you-are-attacked", title: "If You Are Attacked", level: 2 }
       ]}
       faqs={[
         { question: "How do attackers perform a SIM swap?", answer: "Attackers call your mobile carrier pretending to be you, using personal information gathered from data breaches, social media, or social engineering. They convince the carrier to transfer your phone number to a new SIM card. Some attackers bribe or blackmail carrier employees directly for faster results." },

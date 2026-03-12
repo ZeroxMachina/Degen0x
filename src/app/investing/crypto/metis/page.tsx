@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Metis (METIS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Metis (METIS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Metis (METIS), the decentralized Ethereum Layer 2 with sequencer decentralization. Discover how it works, tokenomics, use cases, and how to buy METIS.",
 };
@@ -17,12 +17,18 @@ export default function MetisPage() {
       readTime="8 min read"
       intro="Metis is an Ethereum Layer 2 optimistic rollup that differentiates itself through its push toward sequencer decentralization and community-driven governance. By allowing multiple entities to operate sequencer nodes rather than relying on a single centralized sequencer, Metis aims to solve one of the key centralization concerns facing most Layer 2 solutions while offering fast, low-cost transactions."
       toc={[
-        { id: "what-is", title: "What Is Metis?", level: 2 },
-        { id: "how-it-works", title: "How Does Metis Work?", level: 2 },
-        { id: "tokenomics", title: "METIS Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy METIS", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-metis", title: "What Is Metis?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-metis-work", title: "How Does Metis Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "metis-tokenomics", title: "METIS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-metis", title: "How to Buy METIS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

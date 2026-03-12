@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Hiring in Web3: Finding Blockchain Talent (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Hiring in Web3: Finding Blockchain Talent (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how to hire blockchain developers, community managers, and Web3 talent. Covers sourcing, compensation, remote team management, and building effective Web3 teams.",
 };
@@ -17,11 +17,16 @@ export default function Web3HiringGuidePage() {
       readTime="9 min"
       intro="Hiring in Web3 presents unique challenges and opportunities. The talent pool for blockchain developers, protocol engineers, and crypto-native marketers is significantly smaller than traditional tech, creating intense competition for qualified candidates. At the same time, Web3's remote-first culture, token-based compensation, and mission-driven work attract talented individuals who might not consider traditional corporate roles. This guide covers how to source, evaluate, compensate, and retain Web3 talent across technical and non-technical roles."
       toc={[
-        { id: "key-roles", title: "Key Web3 Roles and Skills", level: 2 },
-        { id: "sourcing", title: "Sourcing Web3 Talent", level: 2 },
-        { id: "compensation", title: "Compensation and Token Packages", level: 2 },
-        { id: "evaluation", title: "Evaluating Candidates", level: 2 },
-        { id: "retention", title: "Retention and Team Culture", level: 2 },
+        { id: "key-roles", title: "key-roles", level: 2 },
+        { id: "key-web3-roles-and-skills", title: "Key Web3 Roles and Skills", level: 2 },
+        { id: "sourcing", title: "sourcing", level: 2 },
+        { id: "sourcing-web3-talent", title: "Sourcing Web3 Talent", level: 2 },
+        { id: "compensation", title: "compensation", level: 2 },
+        { id: "compensation-and-token-packages", title: "Compensation and Token Packages", level: 2 },
+        { id: "evaluation", title: "evaluation", level: 2 },
+        { id: "evaluating-candidates", title: "Evaluating Candidates", level: 2 },
+        { id: "retention", title: "retention", level: 2 },
+        { id: "retention-and-team-culture", title: "Retention and Team Culture", level: 2 }
       ]}
       faqs={[
         {

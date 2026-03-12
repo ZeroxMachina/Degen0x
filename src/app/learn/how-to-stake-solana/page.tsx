@@ -12,11 +12,16 @@ export default function HowToStakeSolanaPage() {
   return (
     <LearnPageLayout title="How to Stake Solana" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Staking SOL secures the Solana network and earns you rewards. Solana's native staking is straightforward with no minimum amount, and liquid staking options provide additional flexibility. With typical rewards around 6-8% APY, SOL staking is one of the most accessible and rewarding staking experiences in crypto."
       toc={[
+        { id: "native-staking", title: "native-staking", level: 2 },
         { id: "native-staking", title: "Native Staking", level: 2 },
-        { id: "validator-selection", title: "Choosing a Validator", level: 2 },
-        { id: "liquid-staking", title: "Liquid Staking on Solana", level: 2 },
-        { id: "rewards", title: "Staking Rewards", level: 2 },
-        { id: "how-to", title: "Step-by-Step Guide", level: 2 },
+        { id: "validator-selection", title: "validator-selection", level: 2 },
+        { id: "choosing-a-validator", title: "Choosing a Validator", level: 2 },
+        { id: "liquid-staking", title: "liquid-staking", level: 2 },
+        { id: "liquid-staking-on-solana", title: "Liquid Staking on Solana", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards", title: "Staking Rewards", level: 2 },
+        { id: "how-to", title: "how-to", level: 2 },
+        { id: "step-by-step-guide", title: "Step-by-Step Guide", level: 2 }
       ]}
       faqs={[
         { question: "What is the minimum to stake SOL?", answer: "There is no hard minimum to stake SOL natively, though a small amount (0.01 SOL) must remain unstaked for transaction fees. Liquid staking protocols also accept any amount. This makes SOL staking accessible regardless of holding size." },

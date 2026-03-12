@@ -18,10 +18,14 @@ export default function VirtualMachineGlossaryPage() {
       readTime="6 min"
       intro="A virtual machine (VM) in cryptocurrency is a software-based computation engine that executes smart contract code in a sandboxed, deterministic environment on the blockchain. The most well-known example is the Ethereum Virtual Machine (EVM), which powers smart contract execution across dozens of compatible blockchains."
       toc={[
+        { id: "definition", title: "definition", level: 2 },
         { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
         { id: "how-it-works", title: "How It Works", level: 2 },
-        { id: "examples", title: "Examples & Use Cases", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "examples-use-cases", title: "Examples & Use Cases", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         { question: "What is the difference between EVM and non-EVM blockchains?", answer: "EVM-compatible blockchains use the Ethereum Virtual Machine to execute smart contracts, allowing developers to deploy the same Solidity code across multiple chains. Non-EVM blockchains like Solana, Near, and Aptos use different virtual machines optimized for their specific architectures, often requiring developers to learn new programming languages." },

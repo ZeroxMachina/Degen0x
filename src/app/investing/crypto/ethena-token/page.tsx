@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Ethena USDe (USDe)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Ethena USDe (USDe)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Ethena USDe (USDe), the synthetic dollar protocol using delta-neutral hedging. Discover USDe mechanics, yield generation, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function EthenaTokenPage() {
       readTime="8 min read"
       intro="Ethena USDe (USDe) is a synthetic dollar protocol that maintains its peg through delta-neutral hedging strategies. By holding staked ETH as collateral and simultaneously shorting ETH perpetual futures, Ethena creates a dollar-pegged position that generates yield from both staking rewards and positive funding rates. USDe has grown to become one of the largest crypto-native dollar assets."
       toc={[
-        { id: "what-is", title: "What Is Ethena USDe?", level: 2 },
-        { id: "how-it-works", title: "How Does Ethena USDe Work?", level: 2 },
-        { id: "tokenomics", title: "USDe Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy USDe", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ethena-usde", title: "What Is Ethena USDe?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-ethena-usde-work", title: "How Does Ethena USDe Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "usde-tokenomics", title: "USDe Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-usde", title: "How to Buy USDe", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Ethena USDe?", answer: "USDe is a synthetic dollar from Ethena that uses a delta-neutral strategy: holding staked ETH and shorting ETH perps simultaneously. This creates a dollar-pegged position that generates yield from staking and funding rates." },

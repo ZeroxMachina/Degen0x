@@ -17,12 +17,18 @@ export default function RestakingExplainedPage() {
       readTime="14 min"
       intro="Restaking is one of the most significant innovations in the Ethereum staking ecosystem. Pioneered by EigenLayer, restaking allows staked ETH to secure additional services beyond the Ethereum base layer, creating new revenue streams for stakers. This guide explains the mechanics of restaking, how AVS generate yield, and the additional risks to be aware of."
       toc={[
+        { id: "what-is-restaking", title: "what-is-restaking", level: 2 },
         { id: "what-is-restaking", title: "What Is Restaking?", level: 2 },
+        { id: "eigenlayer-overview", title: "eigenlayer-overview", level: 2 },
         { id: "eigenlayer-overview", title: "EigenLayer Overview", level: 2 },
-        { id: "avs-explained", title: "Actively Validated Services (AVS)", level: 2 },
+        { id: "avs-explained", title: "avs-explained", level: 2 },
+        { id: "actively-validated-services-avs", title: "Actively Validated Services (AVS)", level: 2 },
+        { id: "how-to-restake", title: "how-to-restake", level: 2 },
         { id: "how-to-restake", title: "How to Restake", level: 2 },
-        { id: "lrt-ecosystem", title: "Liquid Restaking Tokens", level: 2 },
-        { id: "risks-considerations", title: "Risks & Considerations", level: 2 },
+        { id: "lrt-ecosystem", title: "lrt-ecosystem", level: 2 },
+        { id: "liquid-restaking-tokens", title: "Liquid Restaking Tokens", level: 2 },
+        { id: "risks-considerations", title: "risks-considerations", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         {

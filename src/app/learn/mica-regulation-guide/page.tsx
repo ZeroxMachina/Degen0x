@@ -12,11 +12,16 @@ export default function MicaRegulationGuidePage() {
   return (
     <LearnPageLayout title="MiCA Regulation Guide" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="The Markets in Crypto-Assets (MiCA) regulation is the European Union's comprehensive framework for regulating cryptocurrency and digital assets. As one of the first major regulatory frameworks for crypto, MiCA sets standards for issuers, service providers, and stablecoin operators across all 27 EU member states, providing regulatory clarity that has attracted global attention."
       toc={[
-        { id: "overview", title: "MiCA Overview", level: 2 },
-        { id: "scope", title: "Scope & Classifications", level: 2 },
-        { id: "service-providers", title: "Service Provider Requirements", level: 2 },
-        { id: "stablecoins", title: "Stablecoin Rules", level: 2 },
-        { id: "impact", title: "Impact on the Industry", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "mica-overview", title: "MiCA Overview", level: 2 },
+        { id: "scope", title: "scope", level: 2 },
+        { id: "scope-classifications", title: "Scope & Classifications", level: 2 },
+        { id: "service-providers", title: "service-providers", level: 2 },
+        { id: "service-provider-requirements", title: "Service Provider Requirements", level: 2 },
+        { id: "stablecoins", title: "stablecoins", level: 2 },
+        { id: "stablecoin-rules", title: "Stablecoin Rules", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-the-industry", title: "Impact on the Industry", level: 2 }
       ]}
       faqs={[
         { question: "Does MiCA apply to DeFi?", answer: "MiCA primarily targets centralized crypto-asset service providers. Truly decentralized protocols without intermediaries are generally outside MiCA's scope. However, the boundary between centralized and decentralized is often blurry, and protocols with identifiable operators or governance structures may face scrutiny under the regulation." },

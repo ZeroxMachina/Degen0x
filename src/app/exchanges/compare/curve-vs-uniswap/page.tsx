@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Curve vs Uniswap (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Curve vs Uniswap (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Curve vs Uniswap DEXs. Stablecoin swaps, fees, liquidity, and which decentralized exchange is better for different trading needs.",
 };
 
@@ -16,12 +16,18 @@ export default function CurveVsUniswap() {
       readTime="8 min read"
       intro="Curve and Uniswap are both foundational DeFi protocols but serve different primary use cases. Curve specializes in efficient stablecoin and similar-asset swaps with minimal slippage, while Uniswap is a general-purpose DEX handling all types of token pairs. This comparison examines their strengths and ideal use cases."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "specializations", title: "specializations", level: 2 },
         { id: "specializations", title: "Specializations", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "governance", title: "Governance and Tokenomics", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "governance", title: "governance", level: 2 },
+        { id: "governance-and-tokenomics", title: "Governance and Tokenomics", level: 2 },
+        { id: "liquidity-provision", title: "liquidity-provision", level: 2 },
         { id: "liquidity-provision", title: "Liquidity Provision", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which is better for stablecoins?", answer: "Curve is significantly better for stablecoin swaps, offering lower slippage and fees for pairs like USDC/USDT/DAI. Its StableSwap algorithm is specifically designed for assets that should trade near 1:1." },

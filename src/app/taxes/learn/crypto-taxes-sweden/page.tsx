@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Sweden (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Sweden (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Sweden. Learn about the 30% capital gains tax, K4 form reporting, and Skatteverket's rules for Swedish crypto investors.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesSwedenPage() {
       readTime="8 min read"
       intro="Sweden has one of the most well-defined crypto tax frameworks in Europe. The Swedish Tax Agency (Skatteverket) treats cryptocurrency as an asset, and capital gains are taxed at a flat 30% rate. Sweden requires detailed reporting of each crypto transaction on the K4 form, and the tax authority has been proactive in obtaining data from exchanges and issuing guidance. Swedish crypto investors face a high tax rate but benefit from clear, predictable rules."
       toc={[
-        { id: "capital-gains", title: "30% Capital Gains Tax", level: 2 },
-        { id: "k4-form", title: "K4 Form Reporting", level: 2 },
+        { id: "capital-gains", title: "capital-gains", level: 2 },
+        { id: "30-capital-gains-tax", title: "30% Capital Gains Tax", level: 2 },
+        { id: "k4-form", title: "k4-form", level: 2 },
+        { id: "k4-form-reporting", title: "K4 Form Reporting", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
         { id: "taxable-events", title: "Taxable Events", level: 2 },
+        { id: "loss-deductions", title: "loss-deductions", level: 2 },
         { id: "loss-deductions", title: "Loss Deductions", level: 2 },
-        { id: "compliance", title: "Compliance and Enforcement", level: 2 },
+        { id: "compliance", title: "compliance", level: 2 },
+        { id: "compliance-and-enforcement", title: "Compliance and Enforcement", level: 2 }
       ]}
       faqs={[
         { question: "What is the crypto tax rate in Sweden?", answer: "Capital gains from cryptocurrency are taxed at a flat 30% in Sweden. This is the standard rate for all capital income (kapitalinkomst). Losses are deductible at 70% against other capital income, or at a reduced rate against earned income if you have no capital income to offset." },

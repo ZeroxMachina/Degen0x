@@ -12,12 +12,18 @@ export default function CryptoRegulation2026Page() {
   return (
     <LearnPageLayout title="Crypto Regulation Overview" categoryName="Crypto Education" categorySlug="learn" readTime="9 min" intro="Cryptocurrency regulation is evolving rapidly worldwide as governments seek to balance innovation with consumer protection, financial stability, and anti-money laundering enforcement. Understanding the regulatory landscape is essential for any crypto participant, as rules affect everything from which tokens are legally tradeable to how your gains are taxed."
       toc={[
-        { id: "landscape", title: "Global Regulatory Landscape", level: 2 },
-        { id: "us-regulation", title: "United States", level: 2 },
-        { id: "eu-regulation", title: "European Union", level: 2 },
-        { id: "asia-regulation", title: "Asia-Pacific", level: 2 },
-        { id: "impact", title: "Impact on Users", level: 2 },
-        { id: "future", title: "Future Outlook", level: 2 },
+        { id: "landscape", title: "landscape", level: 2 },
+        { id: "global-regulatory-landscape", title: "Global Regulatory Landscape", level: 2 },
+        { id: "us-regulation", title: "us-regulation", level: 2 },
+        { id: "united-states", title: "United States", level: 2 },
+        { id: "eu-regulation", title: "eu-regulation", level: 2 },
+        { id: "european-union", title: "European Union", level: 2 },
+        { id: "asia-regulation", title: "asia-regulation", level: 2 },
+        { id: "asia-pacific", title: "Asia-Pacific", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-users", title: "Impact on Users", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "future-outlook", title: "Future Outlook", level: 2 }
       ]}
       faqs={[
         { question: "Is cryptocurrency legal?", answer: "Cryptocurrency is legal in most major economies including the US, EU, UK, Japan, and Australia. However, specific activities may be regulated (trading, lending, staking), certain tokens may be classified as securities requiring registration, and some countries restrict or ban cryptocurrency entirely. Legal status varies significantly by jurisdiction." },

@@ -10,7 +10,16 @@ export default function ApyVsAprPage() {
   return (
     <LearnPageLayout title="APY vs APR: What Is the Difference?" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="7 min"
       intro="APY and APR are the two most common metrics for expressing DeFi yields, but they represent fundamentally different things. Understanding the difference is essential for accurately comparing investment opportunities and estimating your actual returns. This guide breaks down both metrics with clear examples."
-      toc={[{ id: "apr-explained", title: "APR Explained", level: 2 }, { id: "apy-explained", title: "APY Explained", level: 2 }, { id: "compounding-effect", title: "The Power of Compounding", level: 2 }, { id: "which-matters", title: "Which Metric Should You Use?", level: 2 }]}
+      toc={[
+        { id: "apr-explained", title: "apr-explained", level: 2 },
+        { id: "apr-explained", title: "APR Explained", level: 2 },
+        { id: "apy-explained", title: "apy-explained", level: 2 },
+        { id: "apy-explained", title: "APY Explained", level: 2 },
+        { id: "compounding-effect", title: "compounding-effect", level: 2 },
+        { id: "the-power-of-compounding", title: "The Power of Compounding", level: 2 },
+        { id: "which-matters", title: "which-matters", level: 2 },
+        { id: "which-metric-should-you-use", title: "Which Metric Should You Use?", level: 2 }
+      ]}
       faqs={[
         { question: "Which is higher, APY or APR?", answer: "APY is always equal to or higher than APR for the same investment because APY includes the effect of compounding. The more frequently interest compounds, the larger the gap between APY and APR." },
         { question: "Do DeFi protocols show APY or APR?", answer: "It varies by protocol. Lending protocols often show supply APY and borrow APR. Staking protocols typically show APR. Yield aggregators show APY because they auto-compound. Always check which metric is being displayed." },

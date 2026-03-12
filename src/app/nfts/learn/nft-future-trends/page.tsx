@@ -16,10 +16,14 @@ export default function NftFutureTrendsPage() {
       readTime="10 min"
       intro="The NFT landscape continues to evolve rapidly with new technologies, use cases, and market dynamics. From AI-generated art to real-world asset tokenization, the future of NFTs extends far beyond digital art."
       toc={[
-        { id: "section-1", title: "Technology Trends", level: 2 },
-        { id: "section-2", title: "Market Evolution", level: 2 },
-        { id: "section-3", title: "Emerging Use Cases", level: 2 },
-        { id: "section-4", title: "Long-Term Outlook", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "technology-trends", title: "Technology Trends", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "market-evolution", title: "Market Evolution", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "emerging-use-cases", title: "Emerging Use Cases", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "long-term-outlook", title: "Long-Term Outlook", level: 2 }
       ]}
       faqs={[
         { question: "What is the future of NFTs?", answer: "NFTs are evolving beyond digital art toward practical applications in identity, credentials, gaming, real-world assets, and enterprise use cases. Technology improvements in scalability, interoperability, and user experience will drive mainstream adoption." },

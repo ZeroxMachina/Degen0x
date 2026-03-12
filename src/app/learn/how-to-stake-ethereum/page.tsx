@@ -12,11 +12,16 @@ export default function HowToStakeEthereumPage() {
   return (
     <LearnPageLayout title="How to Stake Ethereum" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Staking ETH helps secure the Ethereum network while earning rewards. Since Ethereum's transition to Proof of Stake, staking has become one of the most popular ways to earn yield on ETH holdings. Multiple staking options exist — from running your own validator to using liquid staking protocols — each with different requirements, rewards, and risk profiles."
       toc={[
+        { id: "staking-options", title: "staking-options", level: 2 },
         { id: "staking-options", title: "Staking Options", level: 2 },
+        { id: "liquid-staking", title: "liquid-staking", level: 2 },
         { id: "liquid-staking", title: "Liquid Staking", level: 2 },
+        { id: "solo-staking", title: "solo-staking", level: 2 },
         { id: "solo-staking", title: "Solo Staking", level: 2 },
+        { id: "rewards-risks", title: "rewards-risks", level: 2 },
         { id: "rewards-risks", title: "Rewards & Risks", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Guide", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-guide", title: "Step-by-Step Guide", level: 2 }
       ]}
       faqs={[
         { question: "How much ETH do I need to stake?", answer: "Solo staking requires 32 ETH to run a validator. Liquid staking protocols (Lido, Rocket Pool, Coinbase) accept any amount of ETH, making staking accessible to everyone. Some staking pools have minimum deposits as low as 0.01 ETH." },

@@ -17,10 +17,14 @@ export default function BestNoKycDefiLending() {
       readTime="8 min"
       intro="One of DeFi's core principles is permissionless access, and many leading lending protocols allow anyone with a crypto wallet to participate without identity verification. These no-KYC platforms provide lending and borrowing services through smart contracts, requiring only a wallet connection. This guide covers the best permissionless DeFi lending options for users who value privacy and accessibility."
       toc={[
-        { id: "permissionless-lending", title: "What Is Permissionless Lending", level: 2 },
-        { id: "top-platforms", title: "Top No-KYC Lending Platforms", level: 2 },
+        { id: "permissionless-lending", title: "permissionless-lending", level: 2 },
+        { id: "what-is-permissionless-lending", title: "What Is Permissionless Lending", level: 2 },
+        { id: "top-platforms", title: "top-platforms", level: 2 },
+        { id: "top-no-kyc-lending-platforms", title: "Top No-KYC Lending Platforms", level: 2 },
+        { id: "privacy-considerations", title: "privacy-considerations", level: 2 },
         { id: "privacy-considerations", title: "Privacy Considerations", level: 2 },
-        { id: "legal-considerations", title: "Legal Considerations", level: 2 },
+        { id: "legal-considerations", title: "legal-considerations", level: 2 },
+        { id: "legal-considerations", title: "Legal Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Is no-KYC DeFi lending legal?", answer: "Using permissionless DeFi protocols is generally legal in most jurisdictions. However, you are still responsible for reporting income and capital gains for tax purposes. Some jurisdictions may have specific regulations around DeFi usage." },

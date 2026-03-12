@@ -16,10 +16,14 @@ export default function CryptoInsuranceVsTraditionalPage() {
       readTime="10 min"
       intro="Comparing decentralized crypto insurance protocols with traditional insurance products reveals fundamental differences in risk assessment, pooling, and compensation. Understanding these differences helps choose the right protection approach."
       toc={[
-        { id: "section-1", title: "Structural Differences", level: 2 },
-        { id: "section-2", title: "Claims and Assessment", level: 2 },
-        { id: "section-3", title: "Cost and Accessibility", level: 2 },
-        { id: "section-4", title: "Choosing the Right Approach", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "structural-differences", title: "Structural Differences", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "claims-and-assessment", title: "Claims and Assessment", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "cost-and-accessibility", title: "Cost and Accessibility", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "choosing-the-right-approach", title: "Choosing the Right Approach", level: 2 }
       ]}
       faqs={[
         { question: "How is crypto insurance different from regular insurance?", answer: "Crypto insurance uses blockchain-based protocols with community governance, while traditional insurance uses company-managed funds with professional assessment. Crypto insurance is permissionless and transparent on-chain; traditional insurance is regulated and backed by institutional reserves." },

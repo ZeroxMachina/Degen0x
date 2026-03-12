@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Buying Real Estate with Cryptocurrency (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Buying Real Estate with Cryptocurrency (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to buy property with Bitcoin and cryptocurrency. Understand the process, legal considerations, tax implications, and platforms that facilitate crypto real estate purchases.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoRealEstatePage() {
       readTime="11 min"
       intro="Buying real estate with cryptocurrency is no longer a novelty but an emerging trend in global property markets. From luxury condos in Miami to apartments in Dubai and villas in Portugal, an increasing number of developers and sellers accept Bitcoin and other cryptocurrencies. This guide covers the practical process of buying property with crypto, the legal and tax considerations, and the platforms connecting crypto buyers with real estate opportunities."
       toc={[
-        { id: "how-it-works", title: "How Crypto Real Estate Works", level: 2 },
-        { id: "platforms", title: "Crypto Real Estate Platforms", level: 2 },
-        { id: "legal-process", title: "Legal Process and Title Transfer", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-crypto-real-estate-works", title: "How Crypto Real Estate Works", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "crypto-real-estate-platforms", title: "Crypto Real Estate Platforms", level: 2 },
+        { id: "legal-process", title: "legal-process", level: 2 },
+        { id: "legal-process-and-title-transfer", title: "Legal Process and Title Transfer", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
         { id: "tax-implications", title: "Tax Implications", level: 2 },
-        { id: "tokenized-real-estate", title: "Tokenized Real Estate", level: 2 },
+        { id: "tokenized-real-estate", title: "tokenized-real-estate", level: 2 },
+        { id: "tokenized-real-estate", title: "Tokenized Real Estate", level: 2 }
       ]}
       faqs={[
         { question: "Can I get a mortgage using crypto as a down payment?", answer: "Some crypto-friendly lenders like Milo and Figure accept cryptocurrency for down payments or use crypto holdings as collateral for mortgage qualification. However, most traditional mortgage lenders require the down payment to be sourced from a bank account. You may need to sell crypto and deposit the proceeds into your bank account with documentation showing the source of funds." },

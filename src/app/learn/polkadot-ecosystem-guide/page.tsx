@@ -17,12 +17,18 @@ export default function PolkadotEcosystemGuidePage() {
       readTime="9 min"
       intro="Polkadot is a heterogeneous multi-chain network designed to connect specialized blockchains (parachains) under a shared security umbrella. Founded by Ethereum co-founder Gavin Wood, Polkadot enables different blockchains to communicate and share security through its unique relay chain architecture, creating an interoperable ecosystem of purpose-built chains."
       toc={[
-        { id: "overview", title: "Polkadot Overview", level: 2 },
-        { id: "architecture", title: "Relay Chain Architecture", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "polkadot-overview", title: "Polkadot Overview", level: 2 },
+        { id: "architecture", title: "architecture", level: 2 },
+        { id: "relay-chain-architecture", title: "Relay Chain Architecture", level: 2 },
+        { id: "parachains", title: "parachains", level: 2 },
         { id: "parachains", title: "Parachains", level: 2 },
-        { id: "ecosystem", title: "Key Projects", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
+        { id: "key-projects", title: "Key Projects", level: 2 },
+        { id: "dot-token", title: "dot-token", level: 2 },
         { id: "dot-token", title: "DOT Token", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What is a parachain?", answer: "A parachain is a specialized blockchain connected to Polkadot's relay chain. Parachains benefit from shared security provided by Polkadot's validators and can communicate with other parachains through XCM messaging. Each parachain can be optimized for its specific use case while inheriting the security of the broader network." },

@@ -25,13 +25,20 @@ export default function CryptoTaxesEuropePage() {
       readTime="16 min"
       intro="Crypto taxation across Europe varies significantly from country to country, as each EU member state sets its own direct tax rules. While the EU has unified its regulatory framework through MiCA, tax treatment remains a national matter. Some European countries like Portugal and Switzerland offer favorable crypto tax conditions, while others like France and Denmark impose substantial taxes. The new DAC8 directive will bring automatic exchange of crypto transaction data across EU member states. This guide covers the key rules across major European jurisdictions."
       toc={[
-        { id: "eu-overview", title: "Overview of Crypto Taxation in Europe", level: 2 },
-        { id: "country-comparison", title: "Country-by-Country Tax Comparison", level: 2 },
-        { id: "dac8", title: "DAC8: EU-Wide Crypto Reporting", level: 2 },
-        { id: "vat-treatment", title: "VAT Treatment of Cryptocurrency", level: 2 },
-        { id: "defi-staking", title: "DeFi and Staking Taxes in the EU", level: 2 },
-        { id: "tax-residency", title: "Tax Residency and Cross-Border Issues", level: 2 },
-        { id: "tax-software", title: "Recommended Tax Software for Europe", level: 2 },
+        { id: "eu-overview", title: "eu-overview", level: 2 },
+        { id: "overview-of-crypto-taxation-in-europe", title: "Overview of Crypto Taxation in Europe", level: 2 },
+        { id: "country-comparison", title: "country-comparison", level: 2 },
+        { id: "country-by-country-tax-comparison", title: "Country-by-Country Tax Comparison", level: 2 },
+        { id: "dac8", title: "dac8", level: 2 },
+        { id: "dac8-eu-wide-crypto-reporting", title: "DAC8: EU-Wide Crypto Reporting", level: 2 },
+        { id: "vat-treatment", title: "vat-treatment", level: 2 },
+        { id: "vat-treatment-of-cryptocurrency", title: "VAT Treatment of Cryptocurrency", level: 2 },
+        { id: "defi-staking", title: "defi-staking", level: 2 },
+        { id: "defi-and-staking-taxes-in-the-eu", title: "DeFi and Staking Taxes in the EU", level: 2 },
+        { id: "tax-residency", title: "tax-residency", level: 2 },
+        { id: "tax-residency-and-cross-border-issues", title: "Tax Residency and Cross-Border Issues", level: 2 },
+        { id: "tax-software", title: "tax-software", level: 2 },
+        { id: "recommended-tax-software-for-europe", title: "Recommended Tax Software for Europe", level: 2 }
       ]}
       faqs={[
         {

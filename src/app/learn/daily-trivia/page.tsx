@@ -3,11 +3,11 @@ import DailyTrivia from "@/components/DailyTrivia";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Daily Crypto Trivia Quiz | Test Your Knowledge — CryptoDegen",
+  title: "Daily Crypto Trivia Quiz | Test Your Knowledge — degen0x",
   description:
     "Play today's daily crypto trivia quiz. 10 questions on DeFi, Bitcoin, Ethereum, NFTs, trading, and blockchain. New quiz every day. Track your streak!",
   openGraph: {
-    title: "Daily Crypto Trivia — CryptoDegen",
+    title: "Daily Crypto Trivia — degen0x",
     description: "10 crypto questions. 20 seconds each. New quiz daily. How much do you really know?",
     type: "website",
   },

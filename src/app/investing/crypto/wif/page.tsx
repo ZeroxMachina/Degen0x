@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is dogwifhat (WIF)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is dogwifhat (WIF)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about dogwifhat (WIF), the viral Solana meme coin featuring a dog wearing a hat. Discover WIF tokenomics, community culture, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function DogwifhatPage() {
       readTime="8 min read"
       intro="dogwifhat (WIF) is a Solana-based meme coin featuring an image of a Shiba Inu dog wearing a pink knitted hat. Launched in late 2023, WIF rapidly became one of the top meme coins by market capitalization, driven by viral social media appeal and the growing Solana meme coin ecosystem."
       toc={[
-        { id: "what-is", title: "What Is dogwifhat?", level: 2 },
-        { id: "how-it-works", title: "How Does dogwifhat Work?", level: 2 },
-        { id: "tokenomics", title: "WIF Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy WIF", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-dogwifhat", title: "What Is dogwifhat?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-dogwifhat-work", title: "How Does dogwifhat Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "wif-tokenomics", title: "WIF Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-wif", title: "How to Buy WIF", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

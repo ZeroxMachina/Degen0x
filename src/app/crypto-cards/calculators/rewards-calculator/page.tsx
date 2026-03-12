@@ -36,7 +36,7 @@ export default function RewardsCalculatorPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto Card Rewards Calculator
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -48,7 +48,7 @@ export default function RewardsCalculatorPage() {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="space-y-6">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h2 className="text-xl font-semibold text-white mb-6">Your Inputs</h2>
+            <h2 className="text-xl font-semibold text-[var(--color-text)] mb-6">Your Inputs</h2>
 
             <div className="space-y-5">
               <div>
@@ -61,7 +61,7 @@ export default function RewardsCalculatorPage() {
                   max={100000}
                   value={monthlySpending}
                   onChange={(e) => setMonthlySpending(Math.max(0, Number(e.target.value)))}
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-3 text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                 />
                 <input
                   type="range"
@@ -85,7 +85,7 @@ export default function RewardsCalculatorPage() {
                   step={0.1}
                   value={cashbackRate}
                   onChange={(e) => setCashbackRate(Math.max(0, Math.min(10, Number(e.target.value))))}
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-3 text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                 />
                 <input
                   type="range"
@@ -110,7 +110,7 @@ export default function RewardsCalculatorPage() {
                 <select
                   value={selectedCrypto}
                   onChange={(e) => setSelectedCrypto(Number(e.target.value))}
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-3 text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                 >
                   {CRYPTO_OPTIONS.map((c, i) => (
                     <option key={c.symbol} value={i}>
@@ -125,7 +125,7 @@ export default function RewardsCalculatorPage() {
 
         <div className="space-y-6">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h2 className="text-xl font-semibold text-white mb-6">Your Estimated Rewards</h2>
+            <h2 className="text-xl font-semibold text-[var(--color-text)] mb-6">Your Estimated Rewards</h2>
 
             <div className="space-y-6">
               <div className="rounded-lg bg-[var(--color-bg)] p-4">
@@ -146,7 +146,7 @@ export default function RewardsCalculatorPage() {
                 <p className="text-sm text-[var(--color-text-secondary)] mb-1">
                   Monthly in {crypto.symbol}
                 </p>
-                <p className="text-3xl font-bold text-white">
+                <p className="text-3xl font-bold text-[var(--color-text)]">
                   {monthlyCryptoAmount < 0.0001
                     ? monthlyCryptoAmount.toExponential(4)
                     : monthlyCryptoAmount < 1
@@ -160,7 +160,7 @@ export default function RewardsCalculatorPage() {
                 <p className="text-sm text-[var(--color-text-secondary)] mb-1">
                   Yearly in {crypto.symbol}
                 </p>
-                <p className="text-3xl font-bold text-white">
+                <p className="text-3xl font-bold text-[var(--color-text)]">
                   {yearlyCryptoAmount < 0.0001
                     ? yearlyCryptoAmount.toExponential(4)
                     : yearlyCryptoAmount < 1

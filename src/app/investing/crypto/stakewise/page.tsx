@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is StakeWise (SWISE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is StakeWise (SWISE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about StakeWise (SWISE), the liquid staking protocol with Vaults. Discover how it works, tokenomics, use cases, and how to buy SWISE.",
 };
 
@@ -16,12 +16,18 @@ export default function StakeWisePage() {
       readTime="8 min read"
       intro="StakeWise is an Ethereum liquid staking protocol featuring a unique Vault architecture that allows anyone to launch their own staking pool with customizable parameters. Through StakeWise V3, users can create isolated staking Vaults with their own validators, fee structures, and risk profiles, while the osETH liquid staking token provides unified DeFi composability across all Vaults."
       toc={[
-        { id: "what-is", title: "What Is StakeWise?", level: 2 },
-        { id: "how-it-works", title: "How Does StakeWise Work?", level: 2 },
-        { id: "tokenomics", title: "SWISE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SWISE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-stakewise", title: "What Is StakeWise?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-stakewise-work", title: "How Does StakeWise Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "swise-tokenomics", title: "SWISE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-swise", title: "How to Buy SWISE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is StakeWise?", answer: "StakeWise is an Ethereum liquid staking protocol with customizable Vaults where anyone can launch staking pools, unified by the osETH liquid staking token for DeFi composability." },

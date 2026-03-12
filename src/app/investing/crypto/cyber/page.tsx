@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is CyberConnect (CYBER)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is CyberConnect (CYBER)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about CyberConnect (CYBER), the decentralized social network protocol. Discover how it works, tokenomics, use cases, and how to buy CYBER.",
 };
 
 export default function CyberPage() {
   return (
-    <LearnPageLayout title="What Is CyberConnect (CYBER)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="CyberConnect is a decentralized social network protocol that provides Web3 social infrastructure including digital identity, social graph middleware, and a dedicated Layer 2 chain called Cyber L2. The protocol enables developers to build social applications where users own their profiles, connections, and content across multiple blockchain networks." toc={[{id:"what-is",title:"What Is CyberConnect?",level:2},{id:"how-it-works",title:"How Does CyberConnect Work?",level:2},{id:"tokenomics",title:"CYBER Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy CYBER",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is CyberConnect?",answer:"CyberConnect is a Web3 social protocol providing decentralized identity, social graph infrastructure, and a dedicated L2 chain for building user-owned social applications."},{question:"Where can I buy CYBER?",answer:"CYBER is available on Binance, OKX, Bybit, and Uniswap. It trades against USDT and ETH pairs."},{question:"Is CyberConnect a good investment?",answer:"CyberConnect is building essential Web3 social infrastructure, but adoption of decentralized social remains early. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
+    <LearnPageLayout title="What Is CyberConnect (CYBER)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="CyberConnect is a decentralized social network protocol that provides Web3 social infrastructure including digital identity, social graph middleware, and a dedicated Layer 2 chain called Cyber L2. The protocol enables developers to build social applications where users own their profiles, connections, and content across multiple blockchain networks." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-cyberconnect", title: "What Is CyberConnect?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-cyberconnect-work", title: "How Does CyberConnect Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "cyber-tokenomics", title: "CYBER Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-cyber", title: "How to Buy CYBER", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is CyberConnect?",answer:"CyberConnect is a Web3 social protocol providing decentralized identity, social graph infrastructure, and a dedicated L2 chain for building user-owned social applications."},{question:"Where can I buy CYBER?",answer:"CYBER is available on Binance, OKX, Bybit, and Uniswap. It trades against USDT and ETH pairs."},{question:"Is CyberConnect a good investment?",answer:"CyberConnect is building essential Web3 social infrastructure, but adoption of decentralized social remains early. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
       <h2 id="what-is">What Is CyberConnect?</h2>
       <p>CyberConnect was founded to create the social layer for Web3, providing the identity and relationship infrastructure that social applications need to function. The protocol introduced CyberProfile as a gasless, multi-chain identity system that aggregates a user&apos;s on-chain activity, social connections, and content into a unified profile. This identity layer serves as the foundation for social interactions across the decentralized web.</p>
       <p>The protocol has evolved to include Cyber L2, an Ethereum Layer 2 chain built with the OP Stack and optimized for social use cases. Cyber L2 provides the throughput, low costs, and account abstraction features necessary for social media-scale applications. The chain supports gasless transactions through smart accounts, removing friction for mainstream users who are unfamiliar with crypto wallet management.</p>

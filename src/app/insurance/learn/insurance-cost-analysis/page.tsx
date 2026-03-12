@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Is Crypto Insurance Worth the Cost? (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Is Crypto Insurance Worth the Cost? (${CURRENT_YEAR}) | degen0x`,
   description: "Analysis of crypto insurance costs vs benefits. Framework for deciding when DeFi insurance is worth the premium and when self-insurance makes more sense.",
 };
 
@@ -11,7 +11,16 @@ export default function InsuranceCostAnalysisPage() {
   return (
     <LearnPageLayout title="Is Crypto Insurance Worth the Cost?" categoryName="Crypto Insurance" categorySlug="insurance" readTime="8 min read"
       intro="DeFi insurance premiums typically cost 2-6% annually, which significantly reduces your net yield. Whether this cost is justified depends on the probability of loss, the severity of potential loss, your risk tolerance, and the specific terms of coverage. This analysis provides a framework for evaluating the cost-effectiveness of crypto insurance across different scenarios."
-      toc={[{ id: "cost-breakdown", title: "Understanding Insurance Costs", level: 2 }, { id: "expected-value", title: "Expected Value Analysis", level: 2 }, { id: "when-worth-it", title: "When Insurance Is Worth It", level: 2 }, { id: "when-not", title: "When Insurance Is Not Worth It", level: 2 }]}
+      toc={[
+        { id: "cost-breakdown", title: "cost-breakdown", level: 2 },
+        { id: "understanding-insurance-costs", title: "Understanding Insurance Costs", level: 2 },
+        { id: "expected-value", title: "expected-value", level: 2 },
+        { id: "expected-value-analysis", title: "Expected Value Analysis", level: 2 },
+        { id: "when-worth-it", title: "when-worth-it", level: 2 },
+        { id: "when-insurance-is-worth-it", title: "When Insurance Is Worth It", level: 2 },
+        { id: "when-not", title: "when-not", level: 2 },
+        { id: "when-insurance-is-not-worth-it", title: "When Insurance Is Not Worth It", level: 2 }
+      ]}
       faqs={[
         { question: "What is the typical cost of DeFi insurance?", answer: "Smart contract cover typically costs 2-6% annually for established protocols and 5-15%+ for newer or higher-risk protocols. The cost is expressed as a percentage of the covered amount per year. A $100,000 position covered at 3% costs $3,000/year." },
         { question: "How do I calculate if insurance is worth it?", answer: "Compare the premium cost to the expected loss: premium vs (probability of exploit times loss amount). If the annual premium is $3,000 and you estimate a 1% annual chance of losing $100,000, the expected loss is $1,000, making the insurance expensive. But if you estimate 5% probability, expected loss is $5,000, making insurance worthwhile." },

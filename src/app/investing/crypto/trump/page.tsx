@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Official Trump (TRUMP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Official Trump (TRUMP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Official Trump (TRUMP), the politically-themed meme coin on Solana. Discover how it works, tokenomics, use cases, and how to buy TRUMP.",
 };
 
 export default function OfficialTrumpPage() {
   return (
-    <LearnPageLayout title="What Is Official Trump (TRUMP)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Official Trump (TRUMP) is a politically-themed meme coin launched on the Solana blockchain that gained massive viral attention due to its association with the Trump brand. The token quickly attracted billions in trading volume, becoming one of the most prominent political meme coins in crypto history." toc={[{id:"what-is",title:"What Is Official Trump?",level:2},{id:"how-it-works",title:"How Does Official Trump Work?",level:2},{id:"tokenomics",title:"TRUMP Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy TRUMP",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Official Trump?",answer:"Official Trump (TRUMP) is a meme coin on Solana associated with the Trump political brand. It surged to prominence through viral social media activity and became one of the highest-profile political meme tokens in crypto."},{question:"Where can I buy TRUMP?",answer:"TRUMP is available on major centralized exchanges such as Coinbase, Binance, and Kraken, as well as Solana DEXes like Jupiter and Raydium."},{question:"Is Official Trump a good investment?",answer:"TRUMP is a highly speculative meme coin driven by political sentiment and social media hype rather than fundamental utility. It carries extreme volatility risk. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Official Trump (TRUMP)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Official Trump (TRUMP) is a politically-themed meme coin launched on the Solana blockchain that gained massive viral attention due to its association with the Trump brand. The token quickly attracted billions in trading volume, becoming one of the most prominent political meme coins in crypto history." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-official-trump", title: "What Is Official Trump?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-official-trump-work", title: "How Does Official Trump Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "trump-tokenomics", title: "TRUMP Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-trump", title: "How to Buy TRUMP", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Official Trump?",answer:"Official Trump (TRUMP) is a meme coin on Solana associated with the Trump political brand. It surged to prominence through viral social media activity and became one of the highest-profile political meme tokens in crypto."},{question:"Where can I buy TRUMP?",answer:"TRUMP is available on major centralized exchanges such as Coinbase, Binance, and Kraken, as well as Solana DEXes like Jupiter and Raydium."},{question:"Is Official Trump a good investment?",answer:"TRUMP is a highly speculative meme coin driven by political sentiment and social media hype rather than fundamental utility. It carries extreme volatility risk. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Solana",href:"/investing/crypto/solana",category:"Investing"}]}>
       <h2 id="what-is">What Is Official Trump?</h2>
       <p>Official Trump (TRUMP) is a Solana-based meme coin that burst onto the crypto scene with extraordinary viral momentum. The token leverages the visibility and cultural impact of the Trump political brand to attract traders and speculators. It quickly reached multi-billion dollar market capitalizations shortly after launch, driven by intense social media engagement and widespread media coverage.</p>
       <p>Unlike utility-focused tokens, TRUMP derives its value primarily from community enthusiasm, political sentiment, and speculative trading. The token represents a new category of politically-themed meme coins that blur the lines between politics, culture, and cryptocurrency markets.</p>

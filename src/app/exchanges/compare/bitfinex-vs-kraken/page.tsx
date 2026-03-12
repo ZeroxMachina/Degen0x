@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bitfinex vs Kraken (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Bitfinex vs Kraken (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Bitfinex vs Kraken. Trading fees, margin trading, security, features, and which veteran exchange is better for advanced traders.",
 };
 
@@ -16,12 +16,18 @@ export default function BitfinexVsKraken() {
       readTime="8 min read"
       intro="Bitfinex and Kraken are two veteran crypto exchanges, both founded in the early days of cryptocurrency. Bitfinex is known for its advanced trading features and connection to Tether, while Kraken is celebrated for its security and regulatory compliance. This comparison helps experienced traders choose between these established platforms."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "trading", title: "Trading Features", level: 2 },
-        { id: "security", title: "Security and Trust", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-features", title: "Trading Features", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-and-trust", title: "Security and Trust", level: 2 },
+        { id: "supported-assets", title: "supported-assets", level: 2 },
         { id: "supported-assets", title: "Supported Assets", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Is Bitfinex safe?", answer: "Bitfinex suffered a major hack in 2016 but has since rebuilt its security infrastructure. The exchange has operated without major incidents since then. However, its connection to Tether has been a source of controversy." },

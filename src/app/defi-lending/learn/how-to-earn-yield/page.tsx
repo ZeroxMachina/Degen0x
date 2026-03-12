@@ -15,11 +15,16 @@ export default function HowToEarnYieldPage() {
       readTime="10 min"
       intro="DeFi offers multiple ways to earn yield on your crypto assets, from simple lending to sophisticated farming strategies. This guide covers the main yield-earning methods, their risk profiles, expected returns, and how to get started with each approach."
       toc={[
-        { id: "lending", title: "Lending on Protocols", level: 2 },
+        { id: "lending", title: "lending", level: 2 },
+        { id: "lending-on-protocols", title: "Lending on Protocols", level: 2 },
+        { id: "liquid-staking", title: "liquid-staking", level: 2 },
         { id: "liquid-staking", title: "Liquid Staking", level: 2 },
+        { id: "liquidity-provision", title: "liquidity-provision", level: 2 },
         { id: "liquidity-provision", title: "Liquidity Provision", level: 2 },
+        { id: "yield-farming", title: "yield-farming", level: 2 },
         { id: "yield-farming", title: "Yield Farming", level: 2 },
-        { id: "risk-comparison", title: "Risk Comparison", level: 2 },
+        { id: "risk-comparison", title: "risk-comparison", level: 2 },
+        { id: "risk-comparison", title: "Risk Comparison", level: 2 }
       ]}
       faqs={[
         { question: "What is the safest way to earn yield in DeFi?", answer: "Lending stablecoins on established protocols like Aave or Compound, or staking ETH through liquid staking protocols like Lido, are generally considered the safest DeFi yield strategies. They carry the lowest complexity and impermanent loss risk." },

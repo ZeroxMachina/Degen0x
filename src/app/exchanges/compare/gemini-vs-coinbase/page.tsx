@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Gemini", slug: "gemini", rating: 4.5, affiliateUrl: "https://cryptodegen.com/go/gemini", features: { "Regulation": "NYDFS Trust Company", "SOC Certification": "SOC 2 Type 2", "Insurance": "Hot wallet + FDIC on USD", "Custody": "Gemini Custody", "Cold Storage": "Air-gapped, multi-sig", "Security Audits": "Regular third-party", "2FA Options": "Hardware key, authenticator", "Compliance": "Full AML/KYC" } },
-  { name: "Coinbase", slug: "coinbase", rating: 4.6, affiliateUrl: "https://cryptodegen.com/go/coinbase", features: { "Regulation": "SEC reporting (NASDAQ)", "SOC Certification": "SOC 1 & SOC 2", "Insurance": "Crypto + FDIC on USD", "Custody": "Coinbase Custody / Prime", "Cold Storage": "Geographically distributed", "Security Audits": "SEC-mandated quarterly", "2FA Options": "Hardware key, authenticator", "Compliance": "Full AML/KYC" } },
+  { name: "Gemini", slug: "gemini", rating: 4.5, affiliateUrl: "https://degen0x.com/go/gemini", features: { "Regulation": "NYDFS Trust Company", "SOC Certification": "SOC 2 Type 2", "Insurance": "Hot wallet + FDIC on USD", "Custody": "Gemini Custody", "Cold Storage": "Air-gapped, multi-sig", "Security Audits": "Regular third-party", "2FA Options": "Hardware key, authenticator", "Compliance": "Full AML/KYC" } },
+  { name: "Coinbase", slug: "coinbase", rating: 4.6, affiliateUrl: "https://degen0x.com/go/coinbase", features: { "Regulation": "SEC reporting (NASDAQ)", "SOC Certification": "SOC 1 & SOC 2", "Insurance": "Crypto + FDIC on USD", "Custody": "Coinbase Custody / Prime", "Cold Storage": "Geographically distributed", "Security Audits": "SEC-mandated quarterly", "2FA Options": "Hardware key, authenticator", "Compliance": "Full AML/KYC" } },
 ];
 
 const features = ["Regulation", "SOC Certification", "Insurance", "Custody", "Cold Storage", "Security Audits", "2FA Options", "Compliance"];
@@ -32,7 +32,7 @@ export default function GeminiVsCoinbasePage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Gemini vs Coinbase: Security-Focused Comparison ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -49,7 +49,7 @@ export default function GeminiVsCoinbasePage() {
       <ComparisonTable items={items} features={features} title="Gemini vs Coinbase: Security Comparison" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Regulatory Framework</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Regulatory Framework</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Gemini operates as a New York trust company under NYDFS oversight, one of the strictest
           regulatory frameworks in the world for crypto companies. This means Gemini is held to
@@ -62,7 +62,7 @@ export default function GeminiVsCoinbasePage() {
           approaches offer strong investor protections but through different mechanisms.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Custody and Cold Storage</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Custody and Cold Storage</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Gemini Custody uses air-gapped, multi-signature cold storage with geographically
           distributed key fragments. Their SOC 2 Type 2 certification verifies that security
@@ -75,7 +75,7 @@ export default function GeminiVsCoinbasePage() {
           custody than any other entity and is the custodian for many Bitcoin ETFs.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Insurance Coverage</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Insurance Coverage</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Both exchanges maintain FDIC insurance on US dollar deposits (up to $250,000 per
           depositor through partner banks). For crypto assets, both carry commercial crime
@@ -83,16 +83,16 @@ export default function GeminiVsCoinbasePage() {
           always publicly disclosed in full.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Gemini if</strong> you value the NYDFS trust
+            <strong className="text-[var(--color-text)]">Choose Gemini if</strong> you value the NYDFS trust
             company framework, SOC 2 Type 2 certification, and a security-first approach to
             crypto custody. Gemini is ideal for conservative investors who put security above
             everything else.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Coinbase if</strong> you value the transparency
+            <strong className="text-[var(--color-text)]">Choose Coinbase if</strong> you value the transparency
             of a publicly traded company, the broadest coin selection, and an integrated ecosystem
             that includes institutional custody, staking, and a self-custody wallet.
           </p>

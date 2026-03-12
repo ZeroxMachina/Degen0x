@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Portugal (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Portugal (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Portugal. Find EUR-friendly platforms with MB WAY support, low fees, and Portuguese regulatory compliance.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesPortugal() {
       readTime="8 min read"
       intro="Portugal has become a popular destination for crypto enthusiasts, attracted by its historically favorable tax treatment and growing digital economy. The Banco de Portugal now registers virtual asset service providers, and Portuguese traders enjoy access to major EUR-denominated exchanges with SEPA and MB WAY payment options. This guide covers the best platforms available to Portuguese crypto traders."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Portugal", level: 2 },
-        { id: "regulation", title: "Crypto Regulation in Portugal", level: 2 },
-        { id: "payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-portugal", title: "Top Exchanges for Portugal", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-portugal", title: "Crypto Regulation in Portugal", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "eur-payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "How to Choose an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "how-to-choose-an-exchange", title: "How to Choose an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Portugal?", answer: "Yes, cryptocurrency is legal in Portugal. The Banco de Portugal registers VASPs, and Portugal follows EU MiCA regulations. The country has been known for its generally favorable approach to crypto." },

@@ -17,7 +17,7 @@ const items: ComparisonItem[] = [
     name: "Crypto.com Visa",
     slug: "crypto-com-visa",
     rating: 4.7,
-    affiliateUrl: "https://cryptodegen.com/go/crypto-com-visa",
+    affiliateUrl: "https://degen0x.com/go/crypto-com-visa",
     features: {
       "Cashback Rate": "Up to 5% in CRO",
       "Annual Fee": "$0",
@@ -34,7 +34,7 @@ const items: ComparisonItem[] = [
     name: "Coinbase Card",
     slug: "coinbase-card",
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/coinbase-card",
+    affiliateUrl: "https://degen0x.com/go/coinbase-card",
     features: {
       "Cashback Rate": "Up to 4% in select crypto",
       "Annual Fee": "$0",
@@ -73,7 +73,7 @@ export default function CryptoComVsCoinbaseCardPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto.com Visa vs Coinbase Card ({CURRENT_YEAR})
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -88,7 +88,7 @@ export default function CryptoComVsCoinbaseCardPage() {
       <ComparisonTable items={items} features={features} title="Crypto.com Visa vs Coinbase Card" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Cashback Rewards</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Cashback Rewards</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Crypto.com offers up to 5% cashback on all purchases, but the top tiers require staking
           significant amounts of CRO. The entry-level Midnight Blue card offers just 1% back. Coinbase
@@ -96,12 +96,12 @@ export default function CryptoComVsCoinbaseCardPage() {
           is limited to specific reward tokens; more popular options like BTC or ETH earn around 1%.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; If you are willing to
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; If you are willing to
           stake CRO, the 5% cashback across all purchases is hard to beat. For users who do not want to
           stake, Coinbase&apos;s no-commitment model is more attractive.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Fees and Costs</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fees and Costs</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Neither card charges an annual fee. Crypto.com waives foreign transaction fees on higher card
           tiers and includes free ATM withdrawals up to monthly limits. Coinbase charges a 2.49%
@@ -109,12 +109,12 @@ export default function CryptoComVsCoinbaseCardPage() {
           apply.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; Zero foreign
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; Zero foreign
           transaction fees and free ATM withdrawals make Crypto.com the more cost-effective option for
           frequent users, especially travelers.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Ease of Use and Accessibility</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Ease of Use and Accessibility</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Coinbase Card wins on simplicity. There is no staking, no tiers, and no complex reward
           structures. You sign up, connect your Coinbase account, and start spending. Crypto.com requires
@@ -122,24 +122,24 @@ export default function CryptoComVsCoinbaseCardPage() {
           exchange. However, Coinbase Card is US-only, while Crypto.com is available globally.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Coinbase Card</strong> &mdash; For US users who value
+          <strong className="text-[var(--color-text)]">Winner: Coinbase Card</strong> &mdash; For US users who value
           simplicity, Coinbase is the easier option. For international users, Crypto.com is the clear
           choice by default.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Premium Perks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Premium Perks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Crypto.com stands out with premium perks on higher tiers including free Spotify, Netflix, and
           Amazon Prime reimbursements, airport lounge access through LoungeKey, and attractive metal card
           designs. Coinbase Card has no premium perks beyond the basic cashback rewards.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; The premium perks
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; The premium perks
           on Icy White and Obsidian tiers justify the staking requirement for high spenders.
         </p>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mt-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             The Crypto.com Visa is the better card for users who are committed to the crypto ecosystem
             and willing to stake CRO for enhanced rewards. The tiered system rewards loyalty, and the

@@ -4,7 +4,7 @@
  * Crypto Regulatory Map Tool
  * A comprehensive interactive tool for exploring cryptocurrency regulations across 30+ countries
  * Features: World map visualization, country cards, filtering, comparison tool, timeline, rankings
- * Author: CryptoDegen
+ * Author: degen0x
  * Last Updated: 2026-03-11
  */
 
@@ -626,7 +626,7 @@ export default function RegulatoryMapPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2 text-white">Crypto Regulatory Map</h1>
+          <h1 className="text-4xl font-bold mb-2 text-[var(--color-text)]">Crypto Regulatory Map</h1>
           <p className="text-gray-400 text-lg">
             Explore cryptocurrency regulations across 30+ countries. Compare jurisdictions, track timeline updates, and find the best locations for your crypto activities.
           </p>
@@ -654,7 +654,7 @@ export default function RegulatoryMapPage() {
           <div>
             {/* Filters */}
             <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-4 text-white">Filters & Search</h2>
+              <h2 className="text-lg font-semibold mb-4 text-[var(--color-text)]">Filters & Search</h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {/* Search */}
@@ -736,7 +736,7 @@ export default function RegulatoryMapPage() {
                   >
                     <div className="flex items-start justify-between mb-4">
                       <div>
-                        <h3 className="text-xl font-bold text-white">{country.country}</h3>
+                        <h3 className="text-xl font-bold text-[var(--color-text)]">{country.country}</h3>
                         <p className="text-sm text-gray-400">{country.region}</p>
                       </div>
                       <span className={`px-3 py-1 rounded-full text-xs font-semibold ${colors.badge} ${colors.text}`}>
@@ -781,7 +781,7 @@ export default function RegulatoryMapPage() {
                       onClick={() => handleComparisonSelect(country.country)}
                       className={`mt-4 w-full py-2 rounded text-sm font-medium transition-colors ${
                         comparisonCountries.includes(country.country)
-                          ? 'bg-blue-600 text-white'
+                          ? 'bg-blue-600 text-[var(--color-text)]'
                           : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
                       }`}
                     >
@@ -803,7 +803,7 @@ export default function RegulatoryMapPage() {
         {/* Timeline View */}
         {activeTab === 'timeline' && (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white mb-6">Regulatory Timeline 2024-2026</h2>
+            <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Regulatory Timeline 2024-2026</h2>
             {timelineEvents.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((event, idx) => {
               const impactColors = {
                 positive: 'bg-green-900/30 border-green-500/50 text-green-400',
@@ -815,7 +815,7 @@ export default function RegulatoryMapPage() {
                   <div className="flex items-start gap-4">
                     <div className="text-sm font-mono text-gray-400 mt-1">{event.date}</div>
                     <div className="flex-1">
-                      <p className="font-semibold text-white">{event.country}</p>
+                      <p className="font-semibold text-[var(--color-text)]">{event.country}</p>
                       <p className="text-gray-300 mt-1">{event.event}</p>
                     </div>
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap ${
@@ -834,19 +834,19 @@ export default function RegulatoryMapPage() {
         {/* Rankings View */}
         {activeTab === 'rankings' && (
           <div className="space-y-8">
-            <h2 className="text-2xl font-bold text-white mb-6">Best Jurisdictions by Use Case</h2>
+            <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Jurisdictions by Use Case</h2>
             {useCases.map((useCase, idx) => {
               const caseCountries = regulatoryDatabase.filter((c) => useCase.countries.includes(c.country));
               return (
                 <div key={idx} className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">{useCase.name}</h3>
+                  <h3 className="text-xl font-bold text-[var(--color-text)] mb-4">{useCase.name}</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                     {caseCountries.map((country, i) => (
                       <div key={country.code} className="flex items-center gap-3 p-3 bg-gray-800/30 rounded">
                         <span className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-600/20 text-blue-400 text-xs font-bold">
                           {i + 1}
                         </span>
-                        <span className="font-semibold text-white">{country.country}</span>
+                        <span className="font-semibold text-[var(--color-text)]">{country.country}</span>
                         <span className={`text-xs font-semibold ml-auto ${
                           country.status === 'legal' ? 'text-green-400' :
                           country.status === 'restricted' ? 'text-yellow-400' :
@@ -894,7 +894,7 @@ export default function RegulatoryMapPage() {
                     <tr className="border-b border-gray-700">
                       <th className="text-left py-3 px-4 font-semibold text-gray-300 sticky left-0 bg-[#0d1117] z-10">Criteria</th>
                       {getComparisonData().map((country) => (
-                        <th key={country.code} className="text-left py-3 px-4 font-semibold text-white min-w-[250px]">
+                        <th key={country.code} className="text-left py-3 px-4 font-semibold text-[var(--color-text)] min-w-[250px]">
                           {country.country}
                         </th>
                       ))}

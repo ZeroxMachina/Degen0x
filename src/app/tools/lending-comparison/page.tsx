@@ -1,6 +1,7 @@
+'use client';
+
 "use client";
 
-import type { Metadata } from "next";
 import { useState, useMemo } from "react";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
@@ -93,12 +94,6 @@ const LENDING_RATES: Record<string, Record<string, { supplyAPY: number; borrowAP
     DAI: { supplyAPY: 4.5, borrowAPY: 6.3, collateralFactor: 70.0 },
     WBTC: { supplyAPY: 3.7, borrowAPY: 5.8, collateralFactor: 66.0 },
   },
-};
-
-export const metadata: Metadata = {
-  title: `DeFi Lending Comparison Tool | Best Rates on Aave, Compound, Morpho | ${SITE_NAME}`,
-  description: `Compare lending and borrowing rates across top DeFi protocols including Aave, Compound, MakerDAO, Venus, and Morpho. Find the best APY for your crypto assets with real-time protocol analysis and risk indicators.`,
-  alternates: { canonical: `${SITE_URL}/tools/lending-comparison` },
 };
 
 export default function LendingComparisonPage() {
@@ -244,10 +239,10 @@ export default function LendingComparisonPage() {
                 <div>
                   <label className="block text-sm font-semibold text-[var(--color-text)] mb-2">Operation</label>
                   <div className="flex gap-2">
-                    <button className="flex-1 px-3 py-2.5 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-green-500/30 transition-all">
+                    <button className="flex-1 px-3 py-2.5 bg-gradient-to-r from-green-500 to-emerald-500 text-[var(--color-text)] rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-green-500/30 transition-all">
                       Supply
                     </button>
-                    <button className="flex-1 px-3 py-2.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-orange-500/30 transition-all">
+                    <button className="flex-1 px-3 py-2.5 bg-gradient-to-r from-orange-500 to-red-500 text-[var(--color-text)] rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-orange-500/30 transition-all">
                       Borrow
                     </button>
                   </div>

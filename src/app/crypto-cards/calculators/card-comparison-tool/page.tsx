@@ -238,7 +238,7 @@ export default function CardComparisonToolPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto Card Comparison Tool
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -252,7 +252,7 @@ export default function CardComparisonToolPage() {
             <select
               value={cardIndex}
               onChange={(e) => updateCard(position, Number(e.target.value))}
-              className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-white text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+              className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
             >
               {ALL_CARDS.map((card, i) => (
                 <option key={card.slug} value={i}>
@@ -279,7 +279,7 @@ export default function CardComparisonToolPage() {
               );
               if (nextCard >= 0) addCard(nextCard);
             }}
-            className="rounded-lg border border-dashed border-[var(--color-border)] px-4 py-2 text-sm text-[var(--color-text-secondary)] hover:border-[var(--color-primary)] hover:text-white transition-colors"
+            className="rounded-lg border border-dashed border-[var(--color-border)] px-4 py-2 text-sm text-[var(--color-text-secondary)] hover:border-[var(--color-primary)] hover:text-[var(--color-text)] transition-colors"
           >
             + Add Card
           </button>
@@ -291,13 +291,13 @@ export default function CardComparisonToolPage() {
           <table className="w-full">
             <thead>
               <tr className="bg-[var(--color-bg-card)]">
-                <th className="px-6 py-4 text-left text-sm font-semibold text-white min-w-[140px]">
+                <th className="px-6 py-4 text-left text-sm font-semibold text-[var(--color-text)] min-w-[140px]">
                   Feature
                 </th>
                 {selectedCards.map((card) => (
                   <th
                     key={card.slug}
-                    className="px-6 py-4 text-center text-sm font-semibold text-white min-w-[180px]"
+                    className="px-6 py-4 text-center text-sm font-semibold text-[var(--color-text)] min-w-[180px]"
                   >
                     {card.name}
                   </th>
@@ -337,7 +337,7 @@ export default function CardComparisonToolPage() {
                 {selectedCards.map((card) => (
                   <td key={card.slug} className="px-6 py-4 text-center">
                     <a
-                      href={`https://cryptodegen.com/go/${card.slug}`}
+                      href={`https://degen0x.com/go/${card.slug}`}
                       target="_blank"
                       rel="noopener noreferrer sponsored"
                       className="affiliate-cta inline-block px-4 py-2 rounded-lg text-white text-sm font-medium"

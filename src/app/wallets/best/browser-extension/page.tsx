@@ -31,19 +31,19 @@ export default function BestBrowserExtensionWalletsPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Browser Extension", href: "/wallets/best/browser-extension" }]} />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Crypto Browser Extension Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Crypto Browser Extension Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">Browser extension wallets are essential for interacting with DeFi protocols, NFT marketplaces, and dApps directly from your browser. We tested the top extensions for security, dApp compatibility, speed, and ease of use.</p>
       </header>
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Browser Extension Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Browser Extension Wallets, Ranked</h2>
         <div className="space-y-6">{products.map((product, index) => (<ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />))}</div>
       </section>
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
-          <Link href="/wallets/learn/wallet-apps-vs-browser-extensions" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Apps vs Extensions</h3><p className="text-xs text-[var(--color-text-secondary)]">Compare wallet form factors</p></Link>
-          <Link href="/wallets/best/desktop" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Best Desktop Wallets</h3><p className="text-xs text-[var(--color-text-secondary)]">Full desktop experiences</p></Link>
-          <Link href="/wallets/learn/phishing-protection-guide" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Phishing Protection</h3><p className="text-xs text-[var(--color-text-secondary)]">Stay safe from scam sites</p></Link>
+          <Link href="/wallets/learn/wallet-apps-vs-browser-extensions" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Apps vs Extensions</h3><p className="text-xs text-[var(--color-text-secondary)]">Compare wallet form factors</p></Link>
+          <Link href="/wallets/best/desktop" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Best Desktop Wallets</h3><p className="text-xs text-[var(--color-text-secondary)]">Full desktop experiences</p></Link>
+          <Link href="/wallets/learn/phishing-protection-guide" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Phishing Protection</h3><p className="text-xs text-[var(--color-text-secondary)]">Stay safe from scam sites</p></Link>
         </div>
       </section>
       <FAQSection faqs={faqs} />

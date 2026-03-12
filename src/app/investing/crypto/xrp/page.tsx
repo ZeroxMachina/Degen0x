@@ -25,7 +25,7 @@ export default function XRPPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in XRP (XRP) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function XRPPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">XRP</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2012</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">100,000,000,000 XRP</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">XRP Ledger Consensus Protocol</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">XRP</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2012</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">100,000,000,000 XRP</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">XRP Ledger Consensus Protocol</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is XRP?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is XRP?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           XRP is the native digital asset of the XRP Ledger, an open-source blockchain launched in
           2012 by Jed McCaleb, Arthur Britto, and David Schwartz. Unlike Bitcoin, the XRP Ledger
@@ -67,7 +67,7 @@ export default function XRPPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           XRP's primary use case is as a bridge currency for cross-border payments and remittances.
           Ripple's payment network, RippleNet, connects hundreds of financial institutions worldwide.
@@ -78,7 +78,7 @@ export default function XRPPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Despite the favorable SEC ruling, regulatory risks persist in other jurisdictions. Ripple
           Labs holds a significant portion of XRP supply in escrow, with monthly releases that can
@@ -90,7 +90,7 @@ export default function XRPPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy XRP</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy XRP</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           XRP is available on most major exchanges including Coinbase, Binance, Kraken, and Bitstamp.
           Following the favorable SEC ruling, XRP was relisted on several US exchanges that had

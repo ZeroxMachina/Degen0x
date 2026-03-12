@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Kraken", slug: "kraken", rating: 4.7, affiliateUrl: "https://cryptodegen.com/go/kraken", features: { "Trading Fees": "0.16% maker / 0.26% taker", "Coins Listed": "200+", "Staking": "Yes (wide selection)", "Futures": "Yes (up to 50x)", "Margin Trading": "Yes (up to 5x)", "Proof of Reserves": "Yes (audited)", "Founded": "2011", "Headquarters": "San Francisco, USA" } },
-  { name: "Coinbase", slug: "coinbase", rating: 4.6, affiliateUrl: "https://cryptodegen.com/go/coinbase", features: { "Trading Fees": "0%–0.60% (Advanced)", "Coins Listed": "250+", "Staking": "Yes (select states)", "Futures": "Yes (via derivatives)", "Margin Trading": "No (discontinued)", "Proof of Reserves": "Public company audits", "Founded": "2012", "Headquarters": "San Francisco, USA" } },
+  { name: "Kraken", slug: "kraken", rating: 4.7, affiliateUrl: "https://degen0x.com/go/kraken", features: { "Trading Fees": "0.16% maker / 0.26% taker", "Coins Listed": "200+", "Staking": "Yes (wide selection)", "Futures": "Yes (up to 50x)", "Margin Trading": "Yes (up to 5x)", "Proof of Reserves": "Yes (audited)", "Founded": "2011", "Headquarters": "San Francisco, USA" } },
+  { name: "Coinbase", slug: "coinbase", rating: 4.6, affiliateUrl: "https://degen0x.com/go/coinbase", features: { "Trading Fees": "0%–0.60% (Advanced)", "Coins Listed": "250+", "Staking": "Yes (select states)", "Futures": "Yes (via derivatives)", "Margin Trading": "No (discontinued)", "Proof of Reserves": "Public company audits", "Founded": "2012", "Headquarters": "San Francisco, USA" } },
 ];
 
 const features = ["Trading Fees", "Coins Listed", "Staking", "Futures", "Margin Trading", "Proof of Reserves", "Founded", "Headquarters"];
@@ -32,7 +32,7 @@ export default function KrakenVsCoinbasePage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Kraken vs Coinbase: Pro Trader Perspective ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -49,7 +49,7 @@ export default function KrakenVsCoinbasePage() {
       <ComparisonTable items={items} features={features} title="Kraken vs Coinbase: Feature Comparison" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Pro Trading Fees</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Pro Trading Fees</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Kraken Pro charges 0.16% maker and 0.26% taker at the base tier, with fees dropping
           to 0% maker and 0.10% taker for high-volume traders. Coinbase Advanced starts at 0%
@@ -62,7 +62,7 @@ export default function KrakenVsCoinbasePage() {
           programs. Kraken also offers OTC trading for large block trades with competitive spreads.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Staking Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Staking Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Kraken offers one of the most extensive staking programs among US exchanges, supporting
           over 20 assets with competitive APYs. Kraken allows flexible unstaking for most assets and
@@ -74,7 +74,7 @@ export default function KrakenVsCoinbasePage() {
           generous, though specific rates vary by asset and change over time.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Derivatives and Margin</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Derivatives and Margin</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Kraken offers margin trading up to 5x on spot markets and futures trading with up to 50x
           leverage on select pairs. These features are available to eligible users and provide
@@ -86,16 +86,16 @@ export default function KrakenVsCoinbasePage() {
           within a regulated US framework.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Kraken if</strong> you are a more experienced
+            <strong className="text-[var(--color-text)]">Choose Kraken if</strong> you are a more experienced
             trader who values comprehensive staking, margin and futures access, proof of reserves
             transparency, and competitive pro trading fees. Kraken offers more tools for active
             traders within the US regulatory framework.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Coinbase if</strong> you prioritize the largest
+            <strong className="text-[var(--color-text)]">Choose Coinbase if</strong> you prioritize the largest
             coin selection, a publicly traded company with maximum transparency, and an integrated
             ecosystem with wallet, card, and institutional products.
           </p>

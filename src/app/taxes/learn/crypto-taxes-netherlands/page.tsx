@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in the Netherlands (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in the Netherlands (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in the Netherlands. Learn about Box 3 wealth tax, deemed income rules, and how crypto holdings are taxed.",
 };
@@ -17,12 +17,18 @@ export default function CryptoTaxesNetherlandsPage() {
       readTime="9 min read"
       intro="The Netherlands takes a unique approach to crypto taxation. Rather than taxing capital gains directly, crypto assets fall under Box 3 of the Dutch tax system, which taxes wealth based on a deemed return. This means you pay tax on what the government assumes you earned from your holdings, not on your actual profits. Recent court rulings have changed how this deemed return is calculated, making it important to understand the current rules."
       toc={[
-        { id: "box-3-system", title: "Understanding Box 3 Taxation", level: 2 },
-        { id: "deemed-return", title: "Deemed Return Calculation", level: 2 },
-        { id: "reporting-holdings", title: "Reporting Crypto Holdings", level: 2 },
-        { id: "professional-trading", title: "Professional Trading (Box 1)", level: 2 },
-        { id: "defi-staking", title: "DeFi, Staking, and Mining", level: 2 },
-        { id: "planning-strategies", title: "Tax Planning Strategies", level: 2 },
+        { id: "box-3-system", title: "box-3-system", level: 2 },
+        { id: "understanding-box-3-taxation", title: "Understanding Box 3 Taxation", level: 2 },
+        { id: "deemed-return", title: "deemed-return", level: 2 },
+        { id: "deemed-return-calculation", title: "Deemed Return Calculation", level: 2 },
+        { id: "reporting-holdings", title: "reporting-holdings", level: 2 },
+        { id: "reporting-crypto-holdings", title: "Reporting Crypto Holdings", level: 2 },
+        { id: "professional-trading", title: "professional-trading", level: 2 },
+        { id: "professional-trading-box-1", title: "Professional Trading (Box 1)", level: 2 },
+        { id: "defi-staking", title: "defi-staking", level: 2 },
+        { id: "defi-staking-and-mining", title: "DeFi, Staking, and Mining", level: 2 },
+        { id: "planning-strategies", title: "planning-strategies", level: 2 },
+        { id: "tax-planning-strategies", title: "Tax Planning Strategies", level: 2 }
       ]}
       faqs={[
         { question: "How is crypto taxed in the Netherlands?", answer: "Crypto is taxed under Box 3 as part of your total wealth. Instead of taxing actual gains, the Dutch tax authority (Belastingdienst) applies a deemed return based on your asset allocation between savings and investments. This deemed return is then taxed at approximately 36%. The reference date for valuation is January 1st of each year." },

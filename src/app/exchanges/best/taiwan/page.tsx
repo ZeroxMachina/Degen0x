@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Taiwan (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Taiwan (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Taiwan. Find TWD-friendly platforms with local bank support, FSC compliance, and competitive trading fees.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesTaiwan() {
       readTime="8 min read"
       intro="Taiwan has developed a maturing cryptocurrency ecosystem with the Financial Supervisory Commission (FSC) implementing Anti-Money Laundering regulations for virtual asset service providers. Several domestic exchanges offer TWD trading pairs alongside major international platforms. Taiwan's strong tech industry and digital infrastructure make it a natural market for crypto adoption."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Taiwan", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "TWD Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-taiwan", title: "Top Exchanges for Taiwan", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "twd-payment-methods", title: "TWD Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Taiwan?", answer: "Yes, cryptocurrency is legal in Taiwan. The FSC has implemented AML regulations for VASPs, requiring registration and compliance. Taiwan has taken a measured but supportive approach to crypto regulation." },

@@ -16,10 +16,14 @@ export default function BestInflationHedgePage() {
       readTime="10 min"
       intro="Cryptocurrency, particularly Bitcoin, is increasingly considered as a hedge against monetary inflation. This guide examines which digital assets have the strongest inflation-hedging properties."
       toc={[
-        { id: "section-1", title: "Inflation Hedge Thesis", level: 2 },
-        { id: "section-2", title: "Top Inflation Hedge Assets", level: 2 },
-        { id: "section-3", title: "Historical Performance", level: 2 },
-        { id: "section-4", title: "Portfolio Strategy", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "inflation-hedge-thesis", title: "Inflation Hedge Thesis", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "top-inflation-hedge-assets", title: "Top Inflation Hedge Assets", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "historical-performance", title: "Historical Performance", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "portfolio-strategy", title: "Portfolio Strategy", level: 2 }
       ]}
       faqs={[
         { question: "Is Bitcoin a good inflation hedge?", answer: "Bitcoin's fixed supply of 21 million coins creates scarcity that contrasts with inflationary fiat currencies. While short-term price volatility can obscure the relationship, Bitcoin's long-term appreciation has significantly outpaced inflation over multi-year periods." },

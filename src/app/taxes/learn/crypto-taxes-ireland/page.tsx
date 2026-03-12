@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Ireland (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Ireland (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Ireland. Learn about Capital Gains Tax, the 33% rate, and Revenue's reporting requirements for Irish crypto investors.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesIrelandPage() {
       readTime="8 min read"
       intro="Ireland taxes cryptocurrency gains under its Capital Gains Tax (CGT) framework at a rate of 33%, one of the higher rates in Europe. The Irish Revenue Commissioners treat crypto as an asset, meaning all disposals including crypto-to-crypto trades are taxable events. Ireland also has unique payment deadlines with preliminary CGT due in two separate installments during the tax year. Understanding these rules is essential for Irish crypto investors to avoid penalties and interest."
       toc={[
-        { id: "cgt-rate", title: "Capital Gains Tax at 33%", level: 2 },
+        { id: "cgt-rate", title: "cgt-rate", level: 2 },
+        { id: "capital-gains-tax-at-33", title: "Capital Gains Tax at 33%", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
         { id: "taxable-events", title: "Taxable Events", level: 2 },
+        { id: "payment-deadlines", title: "payment-deadlines", level: 2 },
         { id: "payment-deadlines", title: "Payment Deadlines", level: 2 },
-        { id: "income-tax", title: "Crypto Income Tax", level: 2 },
-        { id: "compliance", title: "Compliance and Filing", level: 2 },
+        { id: "income-tax", title: "income-tax", level: 2 },
+        { id: "crypto-income-tax", title: "Crypto Income Tax", level: 2 },
+        { id: "compliance", title: "compliance", level: 2 },
+        { id: "compliance-and-filing", title: "Compliance and Filing", level: 2 }
       ]}
       faqs={[
         { question: "What is the crypto tax rate in Ireland?", answer: "Ireland applies a 33% Capital Gains Tax rate on crypto gains. This is one of the highest CGT rates in Europe. The annual CGT exemption of 1,270 euros applies, meaning the first 1,270 euros of total capital gains (from all sources, not just crypto) in a year are tax-free." },

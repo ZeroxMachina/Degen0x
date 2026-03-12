@@ -17,12 +17,18 @@ export default function HowToChooseExchangePage() {
       readTime="10 min"
       intro="With hundreds of crypto exchanges available, choosing the right one can feel paralyzing. The exchange you pick will affect how much you pay in fees, what coins you can access, how safe your funds are, and how enjoyable your trading experience is. This guide breaks down the most important factors to consider so you can make a confident, informed decision."
       toc={[
-        { id: "security", title: "Security and Regulation", level: 2 },
-        { id: "fees", title: "Fee Structure", level: 2 },
-        { id: "coin-selection", title: "Coin and Pair Selection", level: 2 },
-        { id: "user-experience", title: "User Experience and Interface", level: 2 },
-        { id: "liquidity", title: "Liquidity and Volume", level: 2 },
-        { id: "customer-support", title: "Customer Support", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-and-regulation", title: "Security and Regulation", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-structure", title: "Fee Structure", level: 2 },
+        { id: "coin-selection", title: "coin-selection", level: 2 },
+        { id: "coin-and-pair-selection", title: "Coin and Pair Selection", level: 2 },
+        { id: "user-experience", title: "user-experience", level: 2 },
+        { id: "user-experience-and-interface", title: "User Experience and Interface", level: 2 },
+        { id: "liquidity", title: "liquidity", level: 2 },
+        { id: "liquidity-and-volume", title: "Liquidity and Volume", level: 2 },
+        { id: "customer-support", title: "customer-support", level: 2 },
+        { id: "customer-support", title: "Customer Support", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Security Token? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Security Token? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what security tokens are, how they differ from utility tokens, the regulatory framework around them, and how they enable tokenized securities on blockchain.",
 };
@@ -17,10 +17,14 @@ export default function SecurityTokenPage() {
       readTime="5 min read"
       intro="A security token is a digital asset on a blockchain that represents an ownership stake in a real-world asset, company, or investment contract. Security tokens are subject to securities regulations and must comply with legal frameworks like the SEC's regulations in the US. They bring the benefits of blockchain technology — transparency, programmability, and fractional ownership — to traditional financial instruments like stocks, bonds, and real estate."
       toc={[
-        { id: "definition", title: "What Is a Security Token?", level: 2 },
-        { id: "how-they-work", title: "How Security Tokens Work", level: 2 },
-        { id: "regulation", title: "Regulatory Framework", level: 2 },
-        { id: "benefits", title: "Benefits of Security Tokens", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-security-token", title: "What Is a Security Token?", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-security-tokens-work", title: "How Security Tokens Work", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulatory-framework", title: "Regulatory Framework", level: 2 },
+        { id: "benefits", title: "benefits", level: 2 },
+        { id: "benefits-of-security-tokens", title: "Benefits of Security Tokens", level: 2 }
       ]}
       faqs={[
         { question: "How are security tokens different from regular tokens?", answer: "Security tokens represent investment contracts and are subject to securities laws. They require regulatory compliance including KYC/AML procedures, transfer restrictions, and registration with securities authorities. Regular utility tokens are not (in theory) investment contracts and face less regulatory burden." },

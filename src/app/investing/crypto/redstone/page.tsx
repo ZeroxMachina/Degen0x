@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is RedStone (RED)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is RedStone (RED)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about RedStone (RED), the modular oracle delivering data to DeFi. Discover how it works, tokenomics, use cases, and how to buy RED.",
 };
@@ -17,12 +17,18 @@ export default function RedStonePage() {
       readTime="8 min read"
       intro="RedStone is a modular oracle protocol that delivers data to DeFi applications using an innovative approach where signed data packages are attached to user transactions rather than continuously pushed on-chain. This design dramatically reduces oracle operating costs while providing flexible, high-frequency data delivery for lending protocols, DEXs, and other DeFi applications across multiple blockchains."
       toc={[
-        { id: "what-is", title: "What Is RedStone?", level: 2 },
-        { id: "how-it-works", title: "How Does RedStone Work?", level: 2 },
-        { id: "tokenomics", title: "RED Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy RED", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-redstone", title: "What Is RedStone?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-redstone-work", title: "How Does RedStone Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "red-tokenomics", title: "RED Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-red", title: "How to Buy RED", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

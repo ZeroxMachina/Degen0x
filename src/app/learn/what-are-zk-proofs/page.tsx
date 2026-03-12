@@ -17,13 +17,20 @@ export default function WhatAreZkProofsPage() {
       readTime="10 min"
       intro="Zero-knowledge proofs (ZKPs) are cryptographic methods that allow one party to prove to another that a statement is true without revealing any information beyond the truth of the statement itself. In blockchain, ZK technology enables both scaling solutions that process thousands of transactions with a single proof, and privacy features that verify transactions without exposing their details."
       toc={[
-        { id: "concept", title: "The Zero-Knowledge Concept", level: 2 },
-        { id: "how-they-work", title: "How ZK Proofs Work", level: 2 },
+        { id: "concept", title: "concept", level: 2 },
+        { id: "the-zero-knowledge-concept", title: "The Zero-Knowledge Concept", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-zk-proofs-work", title: "How ZK Proofs Work", level: 2 },
+        { id: "snarks-vs-starks", title: "snarks-vs-starks", level: 2 },
         { id: "snarks-vs-starks", title: "SNARKs vs STARKs", level: 2 },
-        { id: "scaling", title: "ZK Proofs for Scaling", level: 2 },
-        { id: "privacy", title: "ZK Proofs for Privacy", level: 2 },
-        { id: "applications", title: "Current Applications", level: 2 },
-        { id: "future", title: "The Future of ZK", level: 2 },
+        { id: "scaling", title: "scaling", level: 2 },
+        { id: "zk-proofs-for-scaling", title: "ZK Proofs for Scaling", level: 2 },
+        { id: "privacy", title: "privacy", level: 2 },
+        { id: "zk-proofs-for-privacy", title: "ZK Proofs for Privacy", level: 2 },
+        { id: "applications", title: "applications", level: 2 },
+        { id: "current-applications", title: "Current Applications", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-zk", title: "The Future of ZK", level: 2 }
       ]}
       faqs={[
         { question: "What is the difference between ZK-SNARKs and ZK-STARKs?", answer: "ZK-SNARKs (Succinct Non-interactive Arguments of Knowledge) produce smaller proofs and are faster to verify but require a trusted setup ceremony. ZK-STARKs (Scalable Transparent Arguments of Knowledge) have no trusted setup requirement and are quantum-resistant but produce larger proofs. Both achieve the same goal through different mathematical approaches." },

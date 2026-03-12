@@ -7,7 +7,16 @@ export default function DefiInsuranceHowItWorksPage() {
   return (
     <LearnPageLayout title="DeFi Insurance: How It Works" categoryName="Insurance" categorySlug="insurance" readTime="10 min"
       intro="Decentralized insurance represents one of DeFi's most important innovations, creating trustless risk transfer mechanisms that don't rely on traditional insurance companies. This guide provides a deep dive into the mechanics of DeFi insurance protocols, from risk pooling and capital provision to claim assessment and payout mechanics."
-      toc={[{ id: "risk-pooling", title: "Risk Pooling Mechanics", level: 2 }, { id: "capital-provision", title: "Capital Provision", level: 2 }, { id: "claim-assessment", title: "Claim Assessment Models", level: 2 }, { id: "economics", title: "Economics of DeFi Insurance", level: 2 }]}
+      toc={[
+        { id: "risk-pooling", title: "risk-pooling", level: 2 },
+        { id: "risk-pooling-mechanics", title: "Risk Pooling Mechanics", level: 2 },
+        { id: "capital-provision", title: "capital-provision", level: 2 },
+        { id: "capital-provision", title: "Capital Provision", level: 2 },
+        { id: "claim-assessment", title: "claim-assessment", level: 2 },
+        { id: "claim-assessment-models", title: "Claim Assessment Models", level: 2 },
+        { id: "economics", title: "economics", level: 2 },
+        { id: "economics-of-defi-insurance", title: "Economics of DeFi Insurance", level: 2 }
+      ]}
       faqs={[
         { question: "Can DeFi insurance protocols themselves be hacked?", answer: "Yes, this is a real risk. Insurance protocol smart contracts can theoretically contain vulnerabilities. Leading providers mitigate this through multiple independent audits, formal verification, bug bounties, and conservative code design. Diversifying across insurance providers reduces this risk." },
         { question: "What happens if the capital pool is insufficient for a major claim?", answer: "If a claim exceeds available capital, most protocols have deficit resolution mechanisms. Some issue debt tokens that are repaid as new premium income flows in. Others have emergency minting mechanisms for their governance token. Well-capitalized protocols maintain reserves significantly above minimum requirements to handle large claims." },

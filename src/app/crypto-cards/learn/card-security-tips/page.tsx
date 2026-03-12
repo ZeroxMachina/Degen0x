@@ -17,10 +17,14 @@ export default function CardSecurityTipsPage() {
       readTime="8 min"
       intro="Crypto cards combine the security risks of both traditional payment cards and cryptocurrency accounts. A compromised crypto card can lead to unauthorized spending and potentially expose your broader crypto holdings. This guide covers essential security practices to protect your crypto card, the underlying account, and your digital assets."
       toc={[
-        { id: "account-security", title: "Securing Your Card Account", level: 2 },
-        { id: "card-usage-safety", title: "Safe Card Usage Practices", level: 2 },
-        { id: "phishing-protection", title: "Protecting Against Phishing and Scams", level: 2 },
-        { id: "incident-response", title: "What to Do If Your Card Is Compromised", level: 2 },
+        { id: "account-security", title: "account-security", level: 2 },
+        { id: "securing-your-card-account", title: "Securing Your Card Account", level: 2 },
+        { id: "card-usage-safety", title: "card-usage-safety", level: 2 },
+        { id: "safe-card-usage-practices", title: "Safe Card Usage Practices", level: 2 },
+        { id: "phishing-protection", title: "phishing-protection", level: 2 },
+        { id: "protecting-against-phishing-and-scams", title: "Protecting Against Phishing and Scams", level: 2 },
+        { id: "incident-response", title: "incident-response", level: 2 },
+        { id: "what-to-do-if-your-card-is-compromised", title: "What to Do If Your Card Is Compromised", level: 2 }
       ]}
       faqs={[
         {

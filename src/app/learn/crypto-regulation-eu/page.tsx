@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `MiCA: EU Crypto Regulation Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `MiCA: EU Crypto Regulation Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand the EU's Markets in Crypto-Assets (MiCA) regulation: what it covers, how it affects crypto businesses and users, stablecoin rules, licensing requirements, and its global impact.",
 };
@@ -17,11 +17,16 @@ export default function CryptoRegulationEuPage() {
       readTime="9 min read"
       intro="The Markets in Crypto-Assets (MiCA) regulation is the European Union's comprehensive framework for regulating cryptocurrency markets. Adopted in 2023 and fully effective by the end of 2024, MiCA makes the EU the first major jurisdiction to implement a broad, unified regulatory framework for digital assets. MiCA provides legal certainty for crypto businesses, consumer protection for investors, and specific rules for stablecoins, while also setting a precedent that is influencing crypto regulation globally."
       toc={[
+        { id: "what-is-mica", title: "what-is-mica", level: 2 },
         { id: "what-is-mica", title: "What Is MiCA?", level: 2 },
+        { id: "key-provisions", title: "key-provisions", level: 2 },
         { id: "key-provisions", title: "Key Provisions", level: 2 },
+        { id: "stablecoin-rules", title: "stablecoin-rules", level: 2 },
         { id: "stablecoin-rules", title: "Stablecoin Rules", level: 2 },
-        { id: "impact-industry", title: "Impact on the Crypto Industry", level: 2 },
-        { id: "global-influence", title: "Global Influence and Limitations", level: 2 },
+        { id: "impact-industry", title: "impact-industry", level: 2 },
+        { id: "impact-on-the-crypto-industry", title: "Impact on the Crypto Industry", level: 2 },
+        { id: "global-influence", title: "global-influence", level: 2 },
+        { id: "global-influence-and-limitations", title: "Global Influence and Limitations", level: 2 }
       ]}
       faqs={[
         {

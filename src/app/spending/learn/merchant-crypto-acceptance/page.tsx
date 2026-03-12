@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How Merchants Accept Crypto Payments (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How Merchants Accept Crypto Payments (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how businesses can accept Bitcoin and cryptocurrency payments. Compare payment processors, POS integrations, and settlement options for merchants.",
 };
 
@@ -16,11 +16,16 @@ export default function MerchantCryptoAcceptancePage() {
       readTime="10 min"
       intro="Accepting cryptocurrency payments is becoming increasingly practical for businesses of all sizes. Modern payment processors handle the technical complexity, allowing merchants to accept Bitcoin and other cryptocurrencies while receiving settlement in fiat currency if preferred. This guide covers the payment processors available, integration options, fee structures, and practical considerations for merchants looking to accept crypto."
       toc={[
-        { id: "payment-processors", title: "Crypto Payment Processors", level: 2 },
+        { id: "payment-processors", title: "payment-processors", level: 2 },
+        { id: "crypto-payment-processors", title: "Crypto Payment Processors", level: 2 },
+        { id: "integration-options", title: "integration-options", level: 2 },
         { id: "integration-options", title: "Integration Options", level: 2 },
-        { id: "settlement", title: "Settlement and Conversion", level: 2 },
-        { id: "pos-solutions", title: "Point-of-Sale Solutions", level: 2 },
-        { id: "accounting-tax", title: "Accounting and Tax Implications", level: 2 },
+        { id: "settlement", title: "settlement", level: 2 },
+        { id: "settlement-and-conversion", title: "Settlement and Conversion", level: 2 },
+        { id: "pos-solutions", title: "pos-solutions", level: 2 },
+        { id: "point-of-sale-solutions", title: "Point-of-Sale Solutions", level: 2 },
+        { id: "accounting-tax", title: "accounting-tax", level: 2 },
+        { id: "accounting-and-tax-implications", title: "Accounting and Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "Do merchants need to hold cryptocurrency?", answer: "No. Most payment processors offer instant conversion to fiat currency, so merchants receive dollars, euros, or their local currency in their bank account. The merchant never needs to touch or understand crypto. Some businesses choose to keep a portion in crypto, but it is entirely optional." },

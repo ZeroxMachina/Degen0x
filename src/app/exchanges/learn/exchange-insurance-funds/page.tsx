@@ -7,7 +7,18 @@ export const metadata: Metadata = { title: `Crypto Exchange Insurance Funds Expl
 export default function Page() {
   return (
     <LearnPageLayout title="Crypto Exchange Insurance Funds Explained" categoryName="Crypto Exchanges" categorySlug="exchanges" readTime="7 min" intro="Insurance funds protect exchange users from various types of losses, from hacking events to cascading liquidations on derivatives markets. Understanding what insurance covers and what it does not is essential for assessing exchange risk."
-      toc={[{id:"types",title:"Types of Exchange Insurance",level:2},{id:"safu",title:"SAFU and Emergency Funds",level:2},{id:"fdic",title:"FDIC Insurance on Crypto Exchanges",level:2},{id:"derivatives-insurance",title:"Derivatives Insurance Funds",level:2},{id:"coverage-comparison",title:"Insurance Coverage by Exchange",level:2}]}
+      toc={[
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-exchange-insurance", title: "Types of Exchange Insurance", level: 2 },
+        { id: "safu", title: "safu", level: 2 },
+        { id: "safu-and-emergency-funds", title: "SAFU and Emergency Funds", level: 2 },
+        { id: "fdic", title: "fdic", level: 2 },
+        { id: "fdic-insurance-on-crypto-exchanges", title: "FDIC Insurance on Crypto Exchanges", level: 2 },
+        { id: "derivatives-insurance", title: "derivatives-insurance", level: 2 },
+        { id: "derivatives-insurance-funds", title: "Derivatives Insurance Funds", level: 2 },
+        { id: "coverage-comparison", title: "coverage-comparison", level: 2 },
+        { id: "insurance-coverage-by-exchange", title: "Insurance Coverage by Exchange", level: 2 }
+      ]}
       faqs={[{question:"Is my crypto insured on exchanges?",answer:"It depends. USD balances on US exchanges are often FDIC insured. Crypto itself may be covered by crime insurance policies but not government insurance. Derivatives positions may be protected by exchange insurance funds against cascading liquidation losses."},{question:"What is Binance SAFU?",answer:"SAFU (Secure Asset Fund for Users) is Binance's emergency insurance fund, funded by allocating 10% of all trading fees. It currently holds over $1 billion and is designed to cover user losses in extreme situations."},{question:"Does insurance cover my personal account being hacked?",answer:"Generally no. Exchange insurance typically covers losses from exchange-level security breaches, not individual account compromises. Protecting your own account with 2FA and strong passwords is your responsibility."}]}
       relatedArticles={[{title:"Exchange Security Checklist",href:"/exchanges/learn/exchange-security-checklist",category:"Exchanges"},{title:"What Is Proof of Reserves",href:"/exchanges/learn/what-is-proof-of-reserves",category:"Exchanges"},{title:"Exchange Hacks History",href:"/exchanges/learn/exchange-hacks-history",category:"Exchanges"}]}
     >

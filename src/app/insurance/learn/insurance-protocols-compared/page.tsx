@@ -18,12 +18,18 @@ export default function InsuranceProtocolsComparedPage() {
       readTime="12 min read"
       intro="The decentralized insurance landscape has matured significantly, with multiple protocols offering distinct approaches to crypto asset protection. Each protocol differs in how they assess risk, process claims, price premiums, and manage capital pools. Understanding these differences is crucial for choosing the right coverage for your specific needs. This guide provides a detailed comparison of the major decentralized insurance protocols to help you make an informed decision."
       toc={[
-        { id: "overview", title: "Protocol Overview", level: 2 },
-        { id: "coverage-comparison", title: "Coverage & Chain Support", level: 2 },
-        { id: "claims-comparison", title: "Claims Process Comparison", level: 2 },
-        { id: "pricing-comparison", title: "Pricing & Cost Comparison", level: 2 },
-        { id: "capital-adequacy", title: "Capital Adequacy & Reliability", level: 2 },
-        { id: "recommendations", title: "Recommendations by Use Case", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "protocol-overview", title: "Protocol Overview", level: 2 },
+        { id: "coverage-comparison", title: "coverage-comparison", level: 2 },
+        { id: "coverage-chain-support", title: "Coverage & Chain Support", level: 2 },
+        { id: "claims-comparison", title: "claims-comparison", level: 2 },
+        { id: "claims-process-comparison", title: "Claims Process Comparison", level: 2 },
+        { id: "pricing-comparison", title: "pricing-comparison", level: 2 },
+        { id: "pricing-cost-comparison", title: "Pricing & Cost Comparison", level: 2 },
+        { id: "capital-adequacy", title: "capital-adequacy", level: 2 },
+        { id: "capital-adequacy-reliability", title: "Capital Adequacy & Reliability", level: 2 },
+        { id: "recommendations", title: "recommendations", level: 2 },
+        { id: "recommendations-by-use-case", title: "Recommendations by Use Case", level: 2 }
       ]}
       faqs={[
         { question: "Which DeFi insurance protocol is best?", answer: "Nexus Mutual is best for comprehensive Ethereum coverage with proven claims history. InsurAce is best for multi-chain users seeking bundled coverage. Neptune Mutual is best for users wanting objective parametric triggers. The best choice depends on your specific needs." },

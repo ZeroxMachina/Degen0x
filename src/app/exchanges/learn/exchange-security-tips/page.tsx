@@ -17,12 +17,18 @@ export default function ExchangeSecurityTipsPage() {
       readTime="9 min"
       intro="Your crypto exchange account is a prime target for hackers and scammers. Unlike a traditional bank, cryptocurrency transactions are irreversible -- if someone gains access to your account and withdraws your funds, there is no bank to reverse the transaction. Securing your exchange account is not optional; it is the most important step you can take as a crypto holder. This guide covers every security measure available and explains how to implement them properly."
       toc={[
-        { id: "2fa", title: "Two-Factor Authentication (2FA)", level: 2 },
-        { id: "passwords", title: "Password Security", level: 2 },
-        { id: "phishing", title: "Recognizing and Avoiding Phishing", level: 2 },
-        { id: "withdrawal-security", title: "Withdrawal Security Features", level: 2 },
-        { id: "device-security", title: "Device and Network Security", level: 2 },
-        { id: "self-custody", title: "When to Move Funds Off the Exchange", level: 2 },
+        { id: "2fa", title: "2fa", level: 2 },
+        { id: "two-factor-authentication-2fa", title: "Two-Factor Authentication (2FA)", level: 2 },
+        { id: "passwords", title: "passwords", level: 2 },
+        { id: "password-security", title: "Password Security", level: 2 },
+        { id: "phishing", title: "phishing", level: 2 },
+        { id: "recognizing-and-avoiding-phishing", title: "Recognizing and Avoiding Phishing", level: 2 },
+        { id: "withdrawal-security", title: "withdrawal-security", level: 2 },
+        { id: "withdrawal-security-features", title: "Withdrawal Security Features", level: 2 },
+        { id: "device-security", title: "device-security", level: 2 },
+        { id: "device-and-network-security", title: "Device and Network Security", level: 2 },
+        { id: "self-custody", title: "self-custody", level: 2 },
+        { id: "when-to-move-funds-off-the-exchange", title: "When to Move Funds Off the Exchange", level: 2 }
       ]}
       faqs={[
         {

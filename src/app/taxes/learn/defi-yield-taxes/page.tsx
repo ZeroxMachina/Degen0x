@@ -17,10 +17,14 @@ export default function DefiYieldTaxesPage() {
       readTime="9 min"
       intro="DeFi yield comes in many forms including lending interest, liquidity provision rewards, yield farming incentives, and staking returns. Each type of yield may have different tax treatment, and the complexity of DeFi protocols makes tracking and reporting challenging. This guide breaks down the tax implications of various DeFi yield strategies and provides practical guidance for compliance."
       toc={[
-        { id: "types-of-yield", title: "Types of DeFi Yield and Tax Treatment", level: 2 },
-        { id: "income-recognition", title: "Income Recognition Timing", level: 2 },
+        { id: "types-of-yield", title: "types-of-yield", level: 2 },
+        { id: "types-of-defi-yield-and-tax-treatment", title: "Types of DeFi Yield and Tax Treatment", level: 2 },
+        { id: "income-recognition", title: "income-recognition", level: 2 },
+        { id: "income-recognition-timing", title: "Income Recognition Timing", level: 2 },
+        { id: "cost-basis-complexity", title: "cost-basis-complexity", level: 2 },
         { id: "cost-basis-complexity", title: "Cost Basis Complexity", level: 2 },
-        { id: "reporting-defi-yield", title: "Reporting DeFi Yield", level: 2 },
+        { id: "reporting-defi-yield", title: "reporting-defi-yield", level: 2 },
+        { id: "reporting-defi-yield", title: "Reporting DeFi Yield", level: 2 }
       ]}
       faqs={[
         { question: "Is DeFi yield taxed as income?", answer: "Generally yes. DeFi rewards, whether from lending, liquidity provision, or yield farming, are typically treated as ordinary income at the fair market value when received. This is analogous to interest income from traditional lending. When you later sell the reward tokens, you also pay capital gains tax on any appreciation from the value at receipt." },

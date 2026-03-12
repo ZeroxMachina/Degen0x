@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -217,7 +219,7 @@ export default function StakingRewardsPage() {
                       onClick={() => setCompounding(c)}
                       className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
                         compounding === c
-                          ? "bg-[var(--color-accent)] text-white"
+                          ? "bg-[var(--color-accent)] text-[var(--color-text)]"
                           : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                       }`}
                     >

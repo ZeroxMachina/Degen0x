@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is crvUSD (crvUSD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is crvUSD (crvUSD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about crvUSD, the stablecoin from Curve Finance with soft liquidation mechanics. Discover crvUSD features, LLAMMA design, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function CrvusdPage() {
       readTime="8 min read"
       intro="crvUSD is the stablecoin issued by Curve Finance, featuring an innovative lending-liquidating AMM algorithm (LLAMMA) that provides soft liquidations instead of traditional hard liquidations. This novel design gradually converts collateral to crvUSD as prices decline and reverses the process as prices recover, significantly reducing the risk of complete position liquidation for borrowers."
       toc={[
-        { id: "what-is", title: "What Is crvUSD?", level: 2 },
-        { id: "how-it-works", title: "How Does crvUSD Work?", level: 2 },
-        { id: "tokenomics", title: "crvUSD Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy crvUSD", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-crvusd", title: "What Is crvUSD?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-crvusd-work", title: "How Does crvUSD Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "crvusd-tokenomics", title: "crvUSD Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-crvusd", title: "How to Buy crvUSD", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is crvUSD?", answer: "crvUSD is Curve Finance's native stablecoin that uses the LLAMMA algorithm for soft liquidations. Borrowers' collateral is gradually converted during price declines rather than being liquidated all at once." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Scroll (SCR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Scroll (SCR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Scroll (SCR), the zkEVM Layer 2 scaling solution for Ethereum. Discover how it works, tokenomics, use cases, and how to buy SCR.",
 };
@@ -17,12 +17,18 @@ export default function ScrollPage() {
       readTime="8 min read"
       intro="Scroll is an Ethereum Layer 2 scaling solution that uses a bytecode-level compatible zkEVM to execute smart contracts identically to Ethereum while generating zero-knowledge proofs for verification. Founded by Sandy Peng and Ye Zhang, Scroll aims to be the most Ethereum-equivalent ZK-rollup, minimizing the differences developers encounter when porting applications from Ethereum mainnet."
       toc={[
-        { id: "what-is", title: "What Is Scroll?", level: 2 },
-        { id: "how-it-works", title: "How Does Scroll Work?", level: 2 },
-        { id: "tokenomics", title: "SCR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SCR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-scroll", title: "What Is Scroll?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-scroll-work", title: "How Does Scroll Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "scr-tokenomics", title: "SCR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-scr", title: "How to Buy SCR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

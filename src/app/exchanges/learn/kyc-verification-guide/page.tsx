@@ -17,12 +17,18 @@ export default function KYCVerificationGuidePage() {
       readTime="8 min"
       intro="Know Your Customer (KYC) verification is a mandatory process on most centralized crypto exchanges. Understanding what to expect, what documents to prepare, and how to speed up the process saves time and frustration when setting up your exchange account."
       toc={[
-        { id: "what-is-kyc", title: "What Is KYC and Why It Exists", level: 2 },
-        { id: "documents-needed", title: "Documents You Need", level: 2 },
-        { id: "verification-process", title: "The Verification Process", level: 2 },
-        { id: "timeline", title: "How Long Verification Takes", level: 2 },
-        { id: "tips", title: "Tips for Fast Approval", level: 2 },
-        { id: "privacy-concerns", title: "Privacy Considerations", level: 2 },
+        { id: "what-is-kyc", title: "what-is-kyc", level: 2 },
+        { id: "what-is-kyc-and-why-it-exists", title: "What Is KYC and Why It Exists", level: 2 },
+        { id: "documents-needed", title: "documents-needed", level: 2 },
+        { id: "documents-you-need", title: "Documents You Need", level: 2 },
+        { id: "verification-process", title: "verification-process", level: 2 },
+        { id: "the-verification-process", title: "The Verification Process", level: 2 },
+        { id: "timeline", title: "timeline", level: 2 },
+        { id: "how-long-verification-takes", title: "How Long Verification Takes", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-fast-approval", title: "Tips for Fast Approval", level: 2 },
+        { id: "privacy-concerns", title: "privacy-concerns", level: 2 },
+        { id: "privacy-considerations", title: "Privacy Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Why do crypto exchanges require KYC?", answer: "Crypto exchanges are required by law to verify customer identities as part of anti-money laundering (AML) regulations. KYC helps prevent fraud, money laundering, terrorist financing, and sanctions evasion." },

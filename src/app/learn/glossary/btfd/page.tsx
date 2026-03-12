@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Does BTFD Mean? Buy The Dip Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Does BTFD Mean? Buy The Dip Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what BTFD (Buy The F***ing Dip) means in crypto, when the strategy works, when it fails, and how to approach dip buying responsibly.",
 };
@@ -17,11 +17,16 @@ export default function BtfdPage() {
       readTime="4 min"
       intro="BTFD stands for 'Buy The F***ing Dip' — a popular rallying cry in crypto communities encouraging investors to purchase assets during price declines. The strategy is based on the belief that dips are temporary buying opportunities in an overall uptrend. While buying dips can be profitable in bull markets, the approach carries significant risk if the broader trend has reversed."
       toc={[
-        { id: "definition", title: "What Does BTFD Mean?", level: 2 },
-        { id: "how-it-works", title: "How Dip Buying Works", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-does-btfd-mean", title: "What Does BTFD Mean?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-dip-buying-works", title: "How Dip Buying Works", level: 2 },
+        { id: "when-it-works", title: "when-it-works", level: 2 },
         { id: "when-it-works", title: "When It Works", level: 2 },
+        { id: "when-it-fails", title: "when-it-fails", level: 2 },
         { id: "when-it-fails", title: "When It Fails", level: 2 },
-        { id: "smart-approach", title: "A Smarter Approach", level: 2 },
+        { id: "smart-approach", title: "smart-approach", level: 2 },
+        { id: "a-smarter-approach", title: "A Smarter Approach", level: 2 }
       ]}
       faqs={[
         {

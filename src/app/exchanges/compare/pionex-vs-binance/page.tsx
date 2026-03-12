@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Pionex vs Binance (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Pionex vs Binance (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Pionex vs Binance. Trading bots, fees, features, coin selection, and which platform is better for automated crypto trading.",
 };
 
@@ -16,12 +16,18 @@ export default function PionexVsBinance() {
       readTime="8 min read"
       intro="Pionex and Binance represent different philosophies in crypto exchange design. Pionex is built around free automated trading bots, while Binance is the world's largest exchange with comprehensive features. This comparison helps you decide whether specialized bot trading or a general-purpose platform better suits your strategy."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "bots", title: "Trading Bots", level: 2 },
-        { id: "features", title: "Features and Tools", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "bots", title: "bots", level: 2 },
+        { id: "trading-bots", title: "Trading Bots", level: 2 },
+        { id: "features", title: "features", level: 2 },
+        { id: "features-and-tools", title: "Features and Tools", level: 2 },
+        { id: "supported-assets", title: "supported-assets", level: 2 },
         { id: "supported-assets", title: "Supported Assets", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Are Pionex trading bots really free?", answer: "Yes, Pionex offers 16+ trading bots at no additional cost. The platform earns revenue through trading fees (0.05%) rather than charging for bot usage." },

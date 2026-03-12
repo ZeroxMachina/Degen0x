@@ -23,7 +23,7 @@ const aiCryptoTokens: Product[] = [
     pros: ["Real GPU computing demand", "Growing AI narrative", "Revenue-generating protocol", "Strong partnerships"],
     cons: ["GPU market competition", "Centralized job distribution", "Token utility evolving"],
     bestFor: "Decentralized GPU compute",
-    affiliateUrl: "https://cryptodegen.com/go/buy-render",
+    affiliateUrl: "https://degen0x.com/go/buy-render",
     category: "ai-crypto",
   },
   {
@@ -34,7 +34,7 @@ const aiCryptoTokens: Product[] = [
     pros: ["Autonomous AI agents", "Real-world use cases", "ASI Alliance member", "Growing agent ecosystem"],
     cons: ["Complex technology", "Competition from centralized AI", "Token utility unclear long-term"],
     bestFor: "AI agent ecosystem",
-    affiliateUrl: "https://cryptodegen.com/go/buy-fetch",
+    affiliateUrl: "https://degen0x.com/go/buy-fetch",
     category: "ai-crypto",
   },
   {
@@ -45,7 +45,7 @@ const aiCryptoTokens: Product[] = [
     pros: ["60-80% cheaper than AWS", "Real compute marketplace", "Growing GPU provider network", "Open-source"],
     cons: ["Smaller scale than centralized clouds", "Reliability varies", "Complex for enterprise adoption"],
     bestFor: "Decentralized cloud compute",
-    affiliateUrl: "https://cryptodegen.com/go/buy-akash",
+    affiliateUrl: "https://degen0x.com/go/buy-akash",
     category: "ai-crypto",
   },
   {
@@ -56,7 +56,7 @@ const aiCryptoTokens: Product[] = [
     pros: ["Data monetization platform", "Privacy-preserving compute", "ASI Alliance member", "Growing data marketplace"],
     cons: ["Adoption challenges", "Complex data marketplace", "Competition from centralized alternatives"],
     bestFor: "Decentralized data marketplace",
-    affiliateUrl: "https://cryptodegen.com/go/buy-ocean",
+    affiliateUrl: "https://degen0x.com/go/buy-ocean",
     category: "ai-crypto",
   },
   {
@@ -67,7 +67,7 @@ const aiCryptoTokens: Product[] = [
     pros: ["Novel AI incentive mechanism", "Growing subnet ecosystem", "Decentralized AI vision", "Active development"],
     cons: ["Complex technical architecture", "High token concentration", "Unproven long-term model"],
     bestFor: "Decentralized AI network",
-    affiliateUrl: "https://cryptodegen.com/go/buy-tao",
+    affiliateUrl: "https://degen0x.com/go/buy-tao",
     category: "ai-crypto",
   },
 ];
@@ -92,7 +92,7 @@ export default function BestAICryptoPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best AI Crypto Tokens for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -108,7 +108,7 @@ export default function BestAICryptoPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top AI Crypto Tokens for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top AI Crypto Tokens for {CURRENT_YEAR}</h2>
         <div className="space-y-4">
           {aiCryptoTokens.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -117,7 +117,7 @@ export default function BestAICryptoPage() {
       </section>
 
       <section id="ai-crypto-overview" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">AI and Crypto Convergence</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">AI and Crypto Convergence</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The explosive growth of AI has created massive demand for computing resources, data, and
           inference capabilities. Blockchain technology offers a natural framework for coordinating
@@ -135,24 +135,24 @@ export default function BestAICryptoPage() {
       </section>
 
       <section id="sectors" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">AI Crypto Sectors</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">AI Crypto Sectors</h2>
         <div className="space-y-4">
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Decentralized Compute</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Decentralized Compute</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Networks like Render and Akash aggregate GPU resources from providers worldwide,
               creating cheaper alternatives to centralized cloud providers for AI training and inference.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">AI Agents</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">AI Agents</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Platforms like Fetch.ai enable autonomous AI agents that can execute complex tasks,
               manage DeFi portfolios, optimize logistics, and interact with smart contracts on behalf of users.
             </p>
           </div>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-            <h3 className="text-lg font-semibold text-white mb-2">Data Marketplaces</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Data Marketplaces</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Protocols like Ocean Protocol create markets for data sharing and monetization,
               enabling AI developers to access training data while preserving data owner privacy.
@@ -162,7 +162,7 @@ export default function BestAICryptoPage() {
       </section>
 
       <section id="risks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)]">
           AI crypto tokens are among the most speculative investments in the crypto space. The
           technology is early, competition from centralized AI companies with massive resources

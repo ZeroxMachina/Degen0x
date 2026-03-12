@@ -17,14 +17,22 @@ export default function AccountAbstractionGuidePage() {
       readTime="18 min"
       intro="Account abstraction is one of the most significant advancements in blockchain technology, fundamentally changing how users interact with cryptocurrencies. Instead of relying on traditional externally-owned accounts (EOAs) like MetaMask, account abstraction enables smart contract wallets that are more flexible, secure, and user-friendly. This guide explains what account abstraction is, how ERC-4337 works, the benefits it provides (including gas sponsorship and social recovery), and the projects building this future."
       toc={[
+        { id: "what-is-account-abstraction", title: "what-is-account-abstraction", level: 2 },
         { id: "what-is-account-abstraction", title: "What Is Account Abstraction?", level: 2 },
-        { id: "eoa-vs-smart-wallets", title: "EOAs vs Smart Contract Wallets", level: 2 },
-        { id: "erc-4337-explained", title: "ERC-4337 and UserOperation", level: 2 },
-        { id: "gas-sponsorship", title: "Gas Sponsorship & Paymasters", level: 2 },
-        { id: "session-keys", title: "Session Keys & Batch Operations", level: 2 },
-        { id: "social-recovery", title: "Social Recovery & Multi-Sig", level: 2 },
-        { id: "key-projects", title: "Key Account Abstraction Projects", level: 2 },
-        { id: "challenges-ahead", title: "Current Challenges & Future", level: 2 },
+        { id: "eoa-vs-smart-wallets", title: "eoa-vs-smart-wallets", level: 2 },
+        { id: "eoas-vs-smart-contract-wallets", title: "EOAs vs Smart Contract Wallets", level: 2 },
+        { id: "erc-4337-explained", title: "erc-4337-explained", level: 2 },
+        { id: "erc-4337-and-useroperation", title: "ERC-4337 and UserOperation", level: 2 },
+        { id: "gas-sponsorship", title: "gas-sponsorship", level: 2 },
+        { id: "gas-sponsorship-paymasters", title: "Gas Sponsorship & Paymasters", level: 2 },
+        { id: "session-keys", title: "session-keys", level: 2 },
+        { id: "session-keys-batch-operations", title: "Session Keys & Batch Operations", level: 2 },
+        { id: "social-recovery", title: "social-recovery", level: 2 },
+        { id: "social-recovery-multi-sig", title: "Social Recovery & Multi-Sig", level: 2 },
+        { id: "key-projects", title: "key-projects", level: 2 },
+        { id: "key-account-abstraction-projects", title: "Key Account Abstraction Projects", level: 2 },
+        { id: "challenges-ahead", title: "challenges-ahead", level: 2 },
+        { id: "current-challenges-future", title: "Current Challenges & Future", level: 2 }
       ]}
       faqs={[
         {

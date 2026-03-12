@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToUseLayer2Page() {
   return (
     <LearnPageLayout title="How to Use Layer 2 Networks" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Layer 2 networks extend Ethereum by processing transactions off-chain while inheriting Ethereum's security. They offer the same DeFi applications you know from mainnet but at a fraction of the cost and with faster confirmation times. This guide walks you through getting started with L2 networks."
-      toc={[{ id: "overview", title: "L2 Overview", level: 2 },{ id: "getting-started", title: "Getting Started", level: 2 },{ id: "popular-l2s", title: "Popular L2 Networks", level: 2 },{ id: "bridging", title: "Bridging to L2", level: 2 },{ id: "defi-on-l2", title: "DeFi on L2", level: 2 }]}
+      toc={[
+        { id: "overview", title: "overview", level: 2 },
+        { id: "l2-overview", title: "L2 Overview", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "popular-l2s", title: "popular-l2s", level: 2 },
+        { id: "popular-l2-networks", title: "Popular L2 Networks", level: 2 },
+        { id: "bridging", title: "bridging", level: 2 },
+        { id: "bridging-to-l2", title: "Bridging to L2", level: 2 },
+        { id: "defi-on-l2", title: "defi-on-l2", level: 2 },
+        { id: "defi-on-l2", title: "DeFi on L2", level: 2 }
+      ]}
       faqs={[
         { question: "Are Layer 2 networks safe?", answer: "Layer 2 networks inherit security from Ethereum through different mechanisms. Optimistic rollups (Arbitrum, Optimism, Base) use fraud proofs, while zk-rollups (zkSync, Starknet) use validity proofs. Both approaches ensure that L2 transactions are ultimately secured by Ethereum's consensus. The technology is well-tested with billions in value secured." },
         { question: "Which Layer 2 should I use?", answer: "Arbitrum has the largest DeFi ecosystem, Base is growing rapidly with strong Coinbase integration, and Optimism has a well-developed governance ecosystem. For most users, any of these provide a great experience. Choose based on the specific DeFi applications and liquidity available on each." },

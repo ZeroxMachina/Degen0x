@@ -18,12 +18,18 @@ export default function DefiTaxGuidePage() {
       readTime="13 min read"
       intro="Decentralized finance creates some of the most complex tax situations in crypto. Every token swap, liquidity pool deposit, yield farming reward, and lending transaction can trigger taxable events. The challenge is that DeFi protocols often generate dozens or hundreds of micro-transactions that each need to be tracked. This guide breaks down the tax implications of every major DeFi activity."
       toc={[
-        { id: "token-swaps", title: "Token Swaps & DEX Trading", level: 2 },
-        { id: "liquidity-pools", title: "Liquidity Pool Taxes", level: 2 },
-        { id: "yield-farming", title: "Yield Farming & Reward Tokens", level: 2 },
-        { id: "lending-borrowing", title: "DeFi Lending & Borrowing", level: 2 },
-        { id: "staking-defi", title: "DeFi Staking & Liquid Staking", level: 2 },
-        { id: "tracking", title: "Tracking DeFi Transactions for Tax", level: 2 },
+        { id: "token-swaps", title: "token-swaps", level: 2 },
+        { id: "token-swaps-dex-trading", title: "Token Swaps & DEX Trading", level: 2 },
+        { id: "liquidity-pools", title: "liquidity-pools", level: 2 },
+        { id: "liquidity-pool-taxes", title: "Liquidity Pool Taxes", level: 2 },
+        { id: "yield-farming", title: "yield-farming", level: 2 },
+        { id: "yield-farming-reward-tokens", title: "Yield Farming & Reward Tokens", level: 2 },
+        { id: "lending-borrowing", title: "lending-borrowing", level: 2 },
+        { id: "defi-lending-borrowing", title: "DeFi Lending & Borrowing", level: 2 },
+        { id: "staking-defi", title: "staking-defi", level: 2 },
+        { id: "defi-staking-liquid-staking", title: "DeFi Staking & Liquid Staking", level: 2 },
+        { id: "tracking", title: "tracking", level: 2 },
+        { id: "tracking-defi-transactions-for-tax", title: "Tracking DeFi Transactions for Tax", level: 2 }
       ]}
       faqs={[
         { question: "Is every token swap a taxable event?", answer: "Yes, in most jurisdictions. Swapping one token for another on a DEX like Uniswap is treated the same as selling one asset and buying another. You must calculate the gain or loss on the disposed token at the time of the swap." },

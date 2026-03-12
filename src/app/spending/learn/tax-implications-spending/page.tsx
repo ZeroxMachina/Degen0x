@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Tax Implications of Spending Crypto (${CURRENT_YEAR}) - What You Owe | CryptoDegen`,
+  title: `Tax Implications of Spending Crypto (${CURRENT_YEAR}) - What You Owe | degen0x`,
   description: `Understand the tax consequences of spending cryptocurrency. Capital gains on purchases, stablecoin exceptions, record keeping, and strategies to minimize your tax burden.`,
 };
 
@@ -16,10 +16,14 @@ export default function TaxImplicationsSpendingPage() {
       readTime="8 min"
       intro="Every time you use cryptocurrency to buy goods or services, you may be creating a taxable event. The IRS and most tax authorities worldwide treat crypto spending as a disposal of property, meaning you must calculate and report any capital gains or losses. This guide explains how crypto spending is taxed, strategies to reduce your liability, and the record-keeping requirements you need to follow."
       toc={[
-        { id: "how-taxed", title: "How Crypto Spending Is Taxed", level: 2 },
-        { id: "stablecoin-exception", title: "The Stablecoin Advantage", level: 2 },
-        { id: "record-keeping", title: "Record Keeping Requirements", level: 2 },
-        { id: "minimize-taxes", title: "Strategies to Minimize Tax Liability", level: 2 },
+        { id: "how-taxed", title: "how-taxed", level: 2 },
+        { id: "how-crypto-spending-is-taxed", title: "How Crypto Spending Is Taxed", level: 2 },
+        { id: "stablecoin-exception", title: "stablecoin-exception", level: 2 },
+        { id: "the-stablecoin-advantage", title: "The Stablecoin Advantage", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping-requirements", title: "Record Keeping Requirements", level: 2 },
+        { id: "minimize-taxes", title: "minimize-taxes", level: 2 },
+        { id: "strategies-to-minimize-tax-liability", title: "Strategies to Minimize Tax Liability", level: 2 }
       ]}
       faqs={[
         { question: "Do I owe taxes on every crypto purchase I make?", answer: "Technically, yes. In the US and most jurisdictions, every crypto-to-goods or crypto-to-fiat transaction is a taxable disposal. If the crypto appreciated in value since you acquired it, you owe capital gains tax on the difference. If it depreciated, you can claim a capital loss. The de minimis exception proposed in some legislation (exempting small transactions under $200) has not yet been enacted in the US as of the current date." },

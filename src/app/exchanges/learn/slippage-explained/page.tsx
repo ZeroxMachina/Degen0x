@@ -11,7 +11,18 @@ export default function SlippageExplainedPage() {
   return (
     <LearnPageLayout title="Slippage Explained: What It Is and How to Minimize It" categoryName="Crypto Exchanges" categorySlug="exchanges" readTime="7 min"
       intro="Slippage is the difference between the expected price of a trade and the actual execution price. It is an unavoidable reality of trading that can significantly impact your returns, especially on large orders or illiquid markets. Understanding and managing slippage is essential for effective trading."
-      toc={[{id:"what-is-slippage",title:"What Is Slippage",level:2},{id:"causes",title:"What Causes Slippage",level:2},{id:"cex-vs-dex",title:"Slippage on CEX vs DEX",level:2},{id:"minimizing",title:"How to Minimize Slippage",level:2},{id:"slippage-tolerance",title:"Setting Slippage Tolerance on DEXs",level:2}]}
+      toc={[
+        { id: "what-is-slippage", title: "what-is-slippage", level: 2 },
+        { id: "what-is-slippage", title: "What Is Slippage", level: 2 },
+        { id: "causes", title: "causes", level: 2 },
+        { id: "what-causes-slippage", title: "What Causes Slippage", level: 2 },
+        { id: "cex-vs-dex", title: "cex-vs-dex", level: 2 },
+        { id: "slippage-on-cex-vs-dex", title: "Slippage on CEX vs DEX", level: 2 },
+        { id: "minimizing", title: "minimizing", level: 2 },
+        { id: "how-to-minimize-slippage", title: "How to Minimize Slippage", level: 2 },
+        { id: "slippage-tolerance", title: "slippage-tolerance", level: 2 },
+        { id: "setting-slippage-tolerance-on-dexs", title: "Setting Slippage Tolerance on DEXs", level: 2 }
+      ]}
       faqs={[{question:"Is slippage always negative?",answer:"No. Positive slippage occurs when you get a better price than expected. However, negative slippage (getting a worse price) is more common and the primary concern."},{question:"How much slippage is normal?",answer:"On major pairs on liquid exchanges, slippage should be minimal (under 0.1%). On DEXs or illiquid pairs, 0.5-1% slippage is common. Anything above 2% suggests very low liquidity."},{question:"Can I avoid slippage entirely?",answer:"Using limit orders on centralized exchanges eliminates slippage entirely because your order only fills at your specified price or better. On DEXs, setting tight slippage tolerance helps but trades may fail if the tolerance is too tight."}]}
       relatedArticles={[{title:"Liquidity Explained",href:"/exchanges/learn/liquidity-explained",category:"Exchanges"},{title:"How to Read the Order Book",href:"/exchanges/learn/how-to-read-order-book",category:"Exchanges"},{title:"AMM Explained",href:"/exchanges/learn/amm-explained",category:"Exchanges"}]}
     >

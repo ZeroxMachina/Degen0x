@@ -13,7 +13,7 @@ export default function Breadcrumb({ items }: Props) {
       "@type": "ListItem",
       position: index + 1,
       name: item.label,
-      item: `https://cryptodegen.com${item.href}`,
+      item: `https://degen0x.com${item.href ?? ""}`,
     })),
   };
 
@@ -25,12 +25,12 @@ export default function Breadcrumb({ items }: Props) {
       />
       <nav className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] mb-6">
         {items.map((item, index) => (
-          <span key={item.href} className="flex items-center gap-2">
+          <span key={item.href ?? index} className="flex items-center gap-2">
             {index > 0 && <span>/</span>}
             {index === items.length - 1 ? (
               <span className="text-[var(--color-text)]">{item.label}</span>
             ) : (
-              <Link href={item.href} className="hover:text-[var(--color-text)] transition-colors">
+              <Link href={item.href ?? "#"} className="hover:text-[var(--color-text)] transition-colors">
                 {item.label}
               </Link>
             )}

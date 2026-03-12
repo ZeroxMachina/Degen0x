@@ -44,7 +44,7 @@ export default function BestBitcoinWalletsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Bitcoin Wallets of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -55,29 +55,29 @@ export default function BestBitcoinWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">What to Look for in a Bitcoin Wallet</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">What to Look for in a Bitcoin Wallet</h2>
         <div className="grid md:grid-cols-2 gap-4">
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">Security Architecture</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">Security Architecture</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Hardware wallets with secure element chips offer the strongest protection for BTC holdings.</p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">Fee Control</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">Fee Control</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Good Bitcoin wallets let you set custom transaction fees and replace-by-fee (RBF) for pending transactions.</p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">Address Types</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">Address Types</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Support for SegWit (bech32) and Taproot addresses provides lower fees and better privacy.</p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-1 text-sm">Backup Options</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">Backup Options</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Seed phrase backup, optional passphrase, and multi-sig support for advanced users.</p>
           </div>
         </div>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Bitcoin Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Bitcoin Wallets, Ranked</h2>
         <div className="space-y-6">
           {bitcoinWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />

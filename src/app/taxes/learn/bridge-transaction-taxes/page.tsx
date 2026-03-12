@@ -17,10 +17,14 @@ export default function BridgeTransactionTaxesPage() {
       readTime="8 min"
       intro="Cross-chain bridges allow users to move crypto assets between different blockchains, but the tax treatment of these transfers is not always straightforward. Depending on how a bridge operates, the transaction may or may not trigger a taxable event. Some bridges use lock-and-mint mechanisms that create a new token on the destination chain, while others use liquidity pools that swap assets. Understanding the distinction is critical for accurate crypto tax reporting."
       toc={[
-        { id: "how-bridges-work", title: "How Bridges Work for Tax Purposes", level: 2 },
-        { id: "taxable-vs-nontaxable", title: "Taxable vs Non-Taxable Bridges", level: 2 },
-        { id: "cost-basis-tracking", title: "Cost Basis Tracking Across Chains", level: 2 },
-        { id: "reporting-bridge-transactions", title: "Reporting Bridge Transactions", level: 2 },
+        { id: "how-bridges-work", title: "how-bridges-work", level: 2 },
+        { id: "how-bridges-work-for-tax-purposes", title: "How Bridges Work for Tax Purposes", level: 2 },
+        { id: "taxable-vs-nontaxable", title: "taxable-vs-nontaxable", level: 2 },
+        { id: "taxable-vs-non-taxable-bridges", title: "Taxable vs Non-Taxable Bridges", level: 2 },
+        { id: "cost-basis-tracking", title: "cost-basis-tracking", level: 2 },
+        { id: "cost-basis-tracking-across-chains", title: "Cost Basis Tracking Across Chains", level: 2 },
+        { id: "reporting-bridge-transactions", title: "reporting-bridge-transactions", level: 2 },
+        { id: "reporting-bridge-transactions", title: "Reporting Bridge Transactions", level: 2 }
       ]}
       faqs={[
         { question: "Is bridging crypto a taxable event?", answer: "It depends on the bridge mechanism. If you are simply transferring the same asset to another chain via a lock-and-mint bridge, it is generally treated as a non-taxable transfer, similar to moving crypto between your own wallets. However, if the bridge involves swapping one token for another or uses a liquidity pool, it may be treated as a taxable disposition." },

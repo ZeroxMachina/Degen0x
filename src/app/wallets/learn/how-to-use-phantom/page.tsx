@@ -16,13 +16,20 @@ export default function HowToUsePhantomPage() {
       readTime="11 min"
       intro="Phantom is the most popular wallet for the Solana ecosystem and now supports Ethereum, Polygon, and Bitcoin. Known for its beautiful design and rich features, Phantom makes DeFi, NFTs, and token swaps accessible to everyone. This guide covers everything you need to know to get started."
       toc={[
-        { id: "install", title: "Installing Phantom", level: 2 },
-        { id: "setup", title: "Creating Your Wallet", level: 2 },
-        { id: "fund", title: "Adding Funds to Phantom", level: 2 },
-        { id: "swaps", title: "Swapping Tokens", level: 2 },
-        { id: "staking", title: "Staking SOL", level: 2 },
-        { id: "nfts", title: "Managing NFTs", level: 2 },
-        { id: "security", title: "Security Tips", level: 2 },
+        { id: "install", title: "install", level: 2 },
+        { id: "installing-phantom", title: "Installing Phantom", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "creating-your-wallet", title: "Creating Your Wallet", level: 2 },
+        { id: "fund", title: "fund", level: 2 },
+        { id: "adding-funds-to-phantom", title: "Adding Funds to Phantom", level: 2 },
+        { id: "swaps", title: "swaps", level: 2 },
+        { id: "swapping-tokens", title: "Swapping Tokens", level: 2 },
+        { id: "staking", title: "staking", level: 2 },
+        { id: "staking-sol", title: "Staking SOL", level: 2 },
+        { id: "nfts", title: "nfts", level: 2 },
+        { id: "managing-nfts", title: "Managing NFTs", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-tips", title: "Security Tips", level: 2 }
       ]}
       faqs={[
         {

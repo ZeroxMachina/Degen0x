@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Mobile Crypto Wallets Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Mobile Crypto Wallets Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best mobile crypto wallets for iOS and Android. Learn about features, security, multi-chain support, and how to choose the right mobile wallet.",
 };
 
@@ -11,7 +11,16 @@ export default function MobileWalletGuidePage() {
   return (
     <LearnPageLayout title="Best Mobile Crypto Wallets Guide" categoryName="Crypto Wallets" categorySlug="wallets" readTime="8 min read"
       intro="Mobile wallets put crypto management in your pocket, enabling on-the-go transactions, QR code payments, and instant access to DeFi protocols from your phone. The best mobile wallets combine intuitive interfaces with robust security features like biometric authentication and hardware wallet integration. This guide compares the top mobile wallets across platforms, highlights what to look for in a mobile wallet, and explains how to maximize security while maintaining convenience."
-      toc={[{ id: "why-mobile-wallets", title: "Why Use a Mobile Wallet", level: 2 }, { id: "top-mobile-wallets", title: "Top Mobile Wallets", level: 2 }, { id: "security-features", title: "Mobile Wallet Security", level: 2 }, { id: "mobile-defi", title: "Mobile DeFi Access", level: 2 }]}
+      toc={[
+        { id: "why-mobile-wallets", title: "why-mobile-wallets", level: 2 },
+        { id: "why-use-a-mobile-wallet", title: "Why Use a Mobile Wallet", level: 2 },
+        { id: "top-mobile-wallets", title: "top-mobile-wallets", level: 2 },
+        { id: "top-mobile-wallets", title: "Top Mobile Wallets", level: 2 },
+        { id: "security-features", title: "security-features", level: 2 },
+        { id: "mobile-wallet-security", title: "Mobile Wallet Security", level: 2 },
+        { id: "mobile-defi", title: "mobile-defi", level: 2 },
+        { id: "mobile-defi-access", title: "Mobile DeFi Access", level: 2 }
+      ]}
       faqs={[{ question: "Are mobile wallets safe?", answer: "Mobile wallets are reasonably safe for moderate amounts when properly secured. They use device encryption, biometric locks, and secure enclaves on modern phones. The main risks are phishing, malware on rooted/jailbroken devices, and physical device theft. For large holdings, pair a mobile wallet with a hardware wallet for transaction signing. Keep only amounts you actively use in your mobile wallet." },
         { question: "What happens if I lose my phone?", answer: "If you have your seed phrase backed up, you can restore your wallet on any new device. Your crypto exists on the blockchain, not on your phone. Remote wipe your lost device if possible to prevent unauthorized access. This is why recording and safely storing your seed phrase during wallet setup is absolutely essential." },
         { question: "Can I use the same wallet on multiple devices?", answer: "Yes, you can restore the same wallet on multiple devices using your seed phrase. However, this increases your attack surface since each device is a potential point of compromise. Some wallets offer cloud-synced accounts that make multi-device usage seamless without re-entering seed phrases, but this introduces custodial risk for the sync mechanism." }]}

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Death Cross in Crypto Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Death Cross in Crypto Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a death cross is in crypto trading, how it forms, its historical reliability as a bearish signal, and how traders respond to death cross patterns.",
 };
 
@@ -16,10 +16,14 @@ export default function DeathCrossPage() {
       readTime="6 min read"
       intro="A death cross is a bearish technical pattern that occurs when a short-term moving average crosses below a long-term moving average, most commonly the 50-day moving average crossing below the 200-day moving average. This crossover signals that recent price momentum has shifted from bullish to bearish and is widely watched by traders, institutional investors, and algorithmic trading systems as a potential indicator of extended downside."
       toc={[
-        { id: "what-is-death-cross", title: "What Is a Death Cross?", level: 2 },
+        { id: "what-is-death-cross", title: "what-is-death-cross", level: 2 },
+        { id: "what-is-a-death-cross", title: "What Is a Death Cross?", level: 2 },
+        { id: "how-it-forms", title: "how-it-forms", level: 2 },
         { id: "how-it-forms", title: "How It Forms", level: 2 },
+        { id: "historical-reliability", title: "historical-reliability", level: 2 },
         { id: "historical-reliability", title: "Historical Reliability", level: 2 },
-        { id: "trading-death-cross", title: "Trading the Death Cross", level: 2 },
+        { id: "trading-death-cross", title: "trading-death-cross", level: 2 },
+        { id: "trading-the-death-cross", title: "Trading the Death Cross", level: 2 }
       ]}
       faqs={[
         { question: "Should I sell when a death cross occurs?", answer: "Not necessarily. Death crosses are lagging indicators that confirm what has already happened rather than predict what will happen next. By the time the crossover occurs, much of the decline may already be priced in. Use the death cross as one data point among many rather than an automatic sell signal." },

@@ -18,23 +18,19 @@ export default function CryptoTaxesBrazilPage() {
       readTime="10 min read"
       intro="Brazil has established a clear regulatory framework for cryptocurrency taxation under Receita Federal (the Brazilian IRS). Crypto assets are subject to capital gains tax with progressive rates from 15 to 22.5 percent, though monthly sales under 35,000 BRL are exempt from taxation. Brazil has also introduced mandatory monthly reporting for crypto transactions, making it one of the most regulated crypto markets in Latin America."
       toc={[
-        { id: "framework", title: "Brazil's Crypto Tax Framework", level: 2 },
-        { id: "capital-gains", title: "Capital Gains Tax Rates", level: 2 },
-        { id: "exemption", title: "The 35,000 BRL Monthly Exemption", level: 2 },
-        { id: "reporting", title: "Monthly & Annual Reporting", level: 2 },
-        { id: "foreign-exchanges", title: "Foreign Exchange Rules", level: 2 },
-        { id: "tools", title: "Tax Software for Brazilian Users", level: 2 },
+        { id: "framework", title: "framework", level: 2 },
+        { id: "brazil", title: "Brazil", level: 2 }
       ]}
       faqs={[
         { question: "What is the tax rate on crypto gains in Brazil?", answer: "Brazil uses progressive rates: 15% on gains up to 5 million BRL, 17.5% on gains from 5 to 10 million BRL, 20% on gains from 10 to 30 million BRL, and 22.5% on gains above 30 million BRL. These rates apply to net monthly gains above the exemption threshold." },
         { question: "Is there a tax-free threshold for crypto in Brazil?", answer: "Yes. If your total crypto sales in a calendar month are 35,000 BRL or less, any gains from those sales are exempt from capital gains tax. This threshold applies to total sales volume, not just gains." },
         { question: "Do I need to report crypto holdings to Receita Federal?", answer: "Yes. Crypto holdings worth more than 5,000 BRL must be declared in your annual income tax return under the Assets and Rights section. Additionally, monthly transactions must be reported through the GCAP program." },
-        { question: "Are crypto-to-crypto trades taxable in Brazil?", answer: "Yes. Trading one cryptocurrency for another is a taxable event. You must calculate the BRL value at the time of the transaction and report any gain through the monthly GCAP filing process." },
+        { question: "Are crypto-to-crypto trades taxable in Brazil?", answer: "Yes. Trading one cryptocurrency for another is a taxable event. You must calculate the BRL value at the time of the transaction and report any gain through the monthly GCAP filing process." }
       ]}
       relatedArticles={[
         { title: "Best Crypto Tax Software", href: "/taxes/best/software", category: "Taxes" },
         { title: "Capital Gains Explained", href: "/taxes/learn/capital-gains", category: "Taxes" },
-        { title: "How Crypto Is Taxed", href: "/taxes/learn/how-crypto-is-taxed", category: "Taxes" },
+        { title: "How Crypto Is Taxed", href: "/taxes/learn/how-crypto-is-taxed", category: "Taxes" }
       ]}
     >
       <h2 id="framework">Brazil&apos;s Crypto Tax Framework</h2>

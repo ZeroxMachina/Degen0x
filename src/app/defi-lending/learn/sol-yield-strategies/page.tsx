@@ -17,11 +17,16 @@ export default function SolYieldStrategiesPage() {
       readTime="12 min"
       intro="Solana's thriving DeFi ecosystem offers numerous yield opportunities for SOL holders, from straightforward liquid staking to complex leveraged strategies. With fast transactions and near-zero fees, Solana enables yield strategies that would be impractical on Ethereum mainnet due to gas costs. This guide covers the full range of SOL yield approaches available in the Solana ecosystem."
       toc={[
-        { id: "liquid-staking", title: "SOL Liquid Staking", level: 2 },
-        { id: "lending", title: "SOL Lending Strategies", level: 2 },
-        { id: "lp-farming", title: "LP Farming on Solana DEXs", level: 2 },
-        { id: "leveraged", title: "Leveraged SOL Strategies", level: 2 },
-        { id: "risk-assessment", title: "Risk Assessment", level: 2 },
+        { id: "liquid-staking", title: "liquid-staking", level: 2 },
+        { id: "sol-liquid-staking", title: "SOL Liquid Staking", level: 2 },
+        { id: "lending", title: "lending", level: 2 },
+        { id: "sol-lending-strategies", title: "SOL Lending Strategies", level: 2 },
+        { id: "lp-farming", title: "lp-farming", level: 2 },
+        { id: "lp-farming-on-solana-dexs", title: "LP Farming on Solana DEXs", level: 2 },
+        { id: "leveraged", title: "leveraged", level: 2 },
+        { id: "leveraged-sol-strategies", title: "Leveraged SOL Strategies", level: 2 },
+        { id: "risk-assessment", title: "risk-assessment", level: 2 },
+        { id: "risk-assessment", title: "Risk Assessment", level: 2 }
       ]}
       faqs={[
         { question: "What is the base SOL staking yield?", answer: "SOL staking yields approximately 6-8% APY from validator rewards, higher than ETH staking due to Solana's different tokenomics and inflation schedule. Liquid staking protocols like Marinade and Jito take a small fee but provide liquidity and DeFi composability." },

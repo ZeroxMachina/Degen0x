@@ -17,10 +17,14 @@ export default function BestNFTTaxSoftwarePage() {
       readTime="8 min"
       intro="NFT transactions create unique tax reporting challenges including minting costs, marketplace sales, creator royalties, and airdrops. As NFT activity has grown, tax software has evolved to handle these transactions, but quality varies significantly. This guide identifies the best tools for NFT tax reporting and explains the key considerations for NFT traders, creators, and collectors."
       toc={[
+        { id: "nft-tax-basics", title: "nft-tax-basics", level: 2 },
         { id: "nft-tax-basics", title: "NFT Tax Basics", level: 2 },
-        { id: "best-tools", title: "Best Tools for NFT Taxes", level: 2 },
+        { id: "best-tools", title: "best-tools", level: 2 },
+        { id: "best-tools-for-nft-taxes", title: "Best Tools for NFT Taxes", level: 2 },
+        { id: "creator-considerations", title: "creator-considerations", level: 2 },
         { id: "creator-considerations", title: "Creator Considerations", level: 2 },
-        { id: "common-issues", title: "Common NFT Tax Issues", level: 2 },
+        { id: "common-issues", title: "common-issues", level: 2 },
+        { id: "common-nft-tax-issues", title: "Common NFT Tax Issues", level: 2 }
       ]}
       faqs={[
         { question: "Is minting an NFT taxable?", answer: "Minting an NFT you create is generally not a taxable event. The gas fees paid for minting become part of your cost basis. Selling the minted NFT triggers income or capital gains depending on whether you are classified as a creator or investor." },

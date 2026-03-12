@@ -116,7 +116,7 @@ export default function BestWeb3BusinessPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Web3 Business Tools of {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -143,7 +143,7 @@ export default function BestWeb3BusinessPage() {
 
         {/* Category Cards */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">All Categories</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">All Categories</h2>
           <div className="space-y-6">
             {categories.map((category) => (
               <Link
@@ -151,7 +151,7 @@ export default function BestWeb3BusinessPage() {
                 href={category.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover block"
               >
-                <h3 className="text-xl font-bold text-white mb-2">{category.title}</h3>
+                <h3 className="text-xl font-bold text-[var(--color-text)] mb-2">{category.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)] mb-3">
                   {category.description}
                 </p>
@@ -172,7 +172,7 @@ export default function BestWeb3BusinessPage() {
 
         {/* Methodology */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Our Evaluation Methodology</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Evaluation Methodology</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             We assess each Web3 business tool across six core dimensions, weighted by importance
             for day-to-day business operations:
@@ -187,7 +187,7 @@ export default function BestWeb3BusinessPage() {
               { title: "Track Record (5%)", desc: "Team credibility, funding status, notable clients, years in operation, and ecosystem reputation." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}

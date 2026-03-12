@@ -17,12 +17,18 @@ export default function EthYieldStrategiesPage() {
       readTime="13 min"
       intro="Ethereum's transition to proof-of-stake created a foundational yield layer for ETH holders, and DeFi has built extensive yield opportunities on top of this base. From simple staking to complex restaking and leveraged strategies, ETH yield options span the full risk-reward spectrum. This guide covers every major approach to earning yield on your ETH holdings."
       toc={[
-        { id: "staking-basics", title: "ETH Staking & Liquid Staking", level: 2 },
-        { id: "restaking", title: "Restaking Strategies", level: 2 },
-        { id: "lending-yield", title: "ETH Lending Yield", level: 2 },
-        { id: "lp-strategies", title: "ETH LP Strategies", level: 2 },
-        { id: "leveraged-staking", title: "Leveraged Staking Strategies", level: 2 },
-        { id: "risk-framework", title: "Risk Framework", level: 2 },
+        { id: "staking-basics", title: "staking-basics", level: 2 },
+        { id: "eth-staking-liquid-staking", title: "ETH Staking & Liquid Staking", level: 2 },
+        { id: "restaking", title: "restaking", level: 2 },
+        { id: "restaking-strategies", title: "Restaking Strategies", level: 2 },
+        { id: "lending-yield", title: "lending-yield", level: 2 },
+        { id: "eth-lending-yield", title: "ETH Lending Yield", level: 2 },
+        { id: "lp-strategies", title: "lp-strategies", level: 2 },
+        { id: "eth-lp-strategies", title: "ETH LP Strategies", level: 2 },
+        { id: "leveraged-staking", title: "leveraged-staking", level: 2 },
+        { id: "leveraged-staking-strategies", title: "Leveraged Staking Strategies", level: 2 },
+        { id: "risk-framework", title: "risk-framework", level: 2 },
+        { id: "risk-framework", title: "Risk Framework", level: 2 }
       ]}
       faqs={[
         { question: "What is the base ETH staking yield?", answer: "The base ETH staking yield fluctuates around 3-4% APY, determined by the number of active validators and network activity. This rate adjusts automatically through the Ethereum protocol and represents the risk-free rate of the Ethereum ecosystem." },

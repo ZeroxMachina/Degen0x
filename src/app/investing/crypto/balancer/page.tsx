@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Balancer (BAL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Balancer (BAL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Balancer (BAL), the programmable liquidity protocol for customizable AMM pools. Discover BAL tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function BalancerPage() {
       readTime="8 min read"
       intro="Balancer (BAL) is a decentralized exchange and automated market maker protocol that enables customizable liquidity pools with flexible token weightings. Unlike traditional AMMs that require 50/50 pools, Balancer supports pools with up to eight tokens and custom weight ratios, making it a versatile platform for portfolio management, trading, and liquidity provision."
       toc={[
-        { id: "what-is", title: "What Is Balancer?", level: 2 },
-        { id: "how-it-works", title: "How Does Balancer Work?", level: 2 },
-        { id: "tokenomics", title: "BAL Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy BAL", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-balancer", title: "What Is Balancer?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-balancer-work", title: "How Does Balancer Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "bal-tokenomics", title: "BAL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-bal", title: "How to Buy BAL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

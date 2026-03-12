@@ -34,7 +34,7 @@ export default function BestInvestingOverviewPage() {
       <AffiliateDisclosure />
 
       <header className="mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Investments of {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -47,7 +47,7 @@ export default function BestInvestingOverviewPage() {
 
       {/* Token & Crypto Picks */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-2">Best Tokens & Cryptocurrencies</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-2">Best Tokens & Cryptocurrencies</h2>
         <p className="text-[var(--color-text-secondary)] mb-6">
           Our top-rated token picks across different investment themes and risk profiles.
         </p>
@@ -58,7 +58,7 @@ export default function BestInvestingOverviewPage() {
               href={`/investing/best/${cat.slug}`}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover"
             >
-              <h3 className="text-lg font-semibold text-white mb-2">{cat.name}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)] mb-3">{cat.description}</p>
               <span className="text-sm text-[var(--color-primary)] font-medium">View picks &rarr;</span>
             </Link>
@@ -68,7 +68,7 @@ export default function BestInvestingOverviewPage() {
 
       {/* Trading Platforms & Apps */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-2">Best Platforms & Apps</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-2">Best Platforms & Apps</h2>
         <p className="text-[var(--color-text-secondary)] mb-6">
           The top-rated exchanges, apps, and trading tools for every type of investor.
         </p>
@@ -79,7 +79,7 @@ export default function BestInvestingOverviewPage() {
               href={`/investing/best/${cat.slug}`}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover"
             >
-              <h3 className="text-lg font-semibold text-white mb-2">{cat.name}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)] mb-3">{cat.description}</p>
               <span className="text-sm text-[var(--color-primary)] font-medium">View picks &rarr;</span>
             </Link>
@@ -89,7 +89,7 @@ export default function BestInvestingOverviewPage() {
 
       {/* Yield & Passive Income */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-2">Best Yield & Passive Income</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-2">Best Yield & Passive Income</h2>
         <p className="text-[var(--color-text-secondary)] mb-6">
           Earn yield on your crypto holdings through staking, ETFs, and passive income strategies.
         </p>
@@ -100,7 +100,7 @@ export default function BestInvestingOverviewPage() {
               href={`/investing/best/${cat.slug}`}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover"
             >
-              <h3 className="text-lg font-semibold text-white mb-2">{cat.name}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)] mb-3">{cat.description}</p>
               <span className="text-sm text-[var(--color-primary)] font-medium">View picks &rarr;</span>
             </Link>
@@ -110,7 +110,7 @@ export default function BestInvestingOverviewPage() {
 
       {/* How We Pick */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Selection Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Selection Methodology</h2>
         <p className="text-[var(--color-text-secondary)] mb-6">
           Every product and cryptocurrency featured on {SITE_NAME} goes through our
           comprehensive evaluation process. We do not accept payment for higher rankings,
@@ -118,7 +118,7 @@ export default function BestInvestingOverviewPage() {
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           <div>
-            <h3 className="text-base font-semibold text-white mb-2">Hands-On Testing</h3>
+            <h3 className="text-base font-semibold text-[var(--color-text)] mb-2">Hands-On Testing</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Our team personally tests every platform, wallet, and tool we recommend.
               We create accounts, make transactions, and evaluate the real user experience
@@ -126,7 +126,7 @@ export default function BestInvestingOverviewPage() {
             </p>
           </div>
           <div>
-            <h3 className="text-base font-semibold text-white mb-2">Data-Driven Analysis</h3>
+            <h3 className="text-base font-semibold text-[var(--color-text)] mb-2">Data-Driven Analysis</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               We analyze on-chain data, fee structures, security audits, TVL metrics,
               and historical performance to supplement our qualitative reviews with
@@ -134,7 +134,7 @@ export default function BestInvestingOverviewPage() {
             </p>
           </div>
           <div>
-            <h3 className="text-base font-semibold text-white mb-2">Regular Updates</h3>
+            <h3 className="text-base font-semibold text-[var(--color-text)] mb-2">Regular Updates</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               The crypto market moves fast, so we update our rankings regularly. Every
               page shows when it was last reviewed, and we re-evaluate whenever significant

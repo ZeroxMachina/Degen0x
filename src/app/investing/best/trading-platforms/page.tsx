@@ -34,7 +34,7 @@ export default function BestTradingPlatformsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Trading Platforms for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -50,7 +50,7 @@ export default function BestTradingPlatformsPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Trading Platforms for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Trading Platforms for {CURRENT_YEAR}</h2>
         <div className="space-y-4">
           {TRADING_PLATFORMS.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -59,7 +59,7 @@ export default function BestTradingPlatformsPage() {
       </section>
 
       <section id="how-we-rank" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How We Rank Trading Platforms</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Rank Trading Platforms</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Our evaluation process weighs multiple factors to determine the best platforms for
           different types of investors. Security is our highest-weighted criterion because no
@@ -76,21 +76,21 @@ export default function BestTradingPlatformsPage() {
       </section>
 
       <section id="fees-compared" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <div className="overflow-x-auto rounded-xl border border-[var(--color-border)]">
           <table className="w-full">
             <thead>
               <tr className="bg-[var(--color-bg-card)]">
-                <th className="px-6 py-3 text-left text-sm font-semibold text-white">Platform</th>
-                <th className="px-6 py-3 text-left text-sm font-semibold text-white">Maker Fee</th>
-                <th className="px-6 py-3 text-left text-sm font-semibold text-white">Taker Fee</th>
-                <th className="px-6 py-3 text-left text-sm font-semibold text-white">Best For</th>
+                <th className="px-6 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Platform</th>
+                <th className="px-6 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Maker Fee</th>
+                <th className="px-6 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Taker Fee</th>
+                <th className="px-6 py-3 text-left text-sm font-semibold text-[var(--color-text)]">Best For</th>
               </tr>
             </thead>
             <tbody>
               {TRADING_PLATFORMS.map((p) => (
                 <tr key={p.slug} className="border-t border-[var(--color-border)]">
-                  <td className="px-6 py-3 text-sm font-medium text-white">{p.name}</td>
+                  <td className="px-6 py-3 text-sm font-medium text-[var(--color-text)]">{p.name}</td>
                   <td className="px-6 py-3 text-sm text-[var(--color-text-secondary)]">{p.fees}</td>
                   <td className="px-6 py-3 text-sm text-[var(--color-text-secondary)]">{p.fees}</td>
                   <td className="px-6 py-3 text-sm text-[var(--color-text-secondary)]">{p.bestFor}</td>
@@ -102,7 +102,7 @@ export default function BestTradingPlatformsPage() {
       </section>
 
       <section id="security" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Security Considerations</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Security Considerations</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Exchange security should be your top priority when choosing a trading platform. Look for
           exchanges that store the majority of funds in cold storage, offer proof of reserves,
@@ -119,7 +119,7 @@ export default function BestTradingPlatformsPage() {
       </section>
 
       <section id="choosing" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Choosing the Right Platform</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Choosing the Right Platform</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           For US-based beginners, Coinbase offers the simplest onboarding experience with strong
           regulatory compliance. Active traders who prioritize low fees should consider Binance

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Lending and Borrowing Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Lending and Borrowing Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to borrow against your NFTs or earn yield by lending. Understand NFT-backed loans, peer-to-peer lending, and the risks of NFT collateralization.",
 };
 
@@ -16,11 +16,16 @@ export default function NftLendingBorrowingPage() {
       readTime="10 min"
       intro="NFT lending and borrowing platforms let you use your NFTs as collateral to access liquidity without selling your digital assets. Whether you need ETH for a new mint, want to leverage your portfolio, or simply need cash flow while holding valuable NFTs, lending protocols offer a way to unlock the value of your collection. This guide explains how NFT lending works, the major platforms, and the risks involved."
       toc={[
-        { id: "how-it-works", title: "How NFT Lending Works", level: 2 },
-        { id: "lending-models", title: "Peer-to-Peer vs. Pool Lending", level: 2 },
-        { id: "major-platforms", title: "Major NFT Lending Platforms", level: 2 },
-        { id: "risks", title: "Risks and Liquidation", level: 2 },
-        { id: "earning-as-lender", title: "Earning Yield as a Lender", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-nft-lending-works", title: "How NFT Lending Works", level: 2 },
+        { id: "lending-models", title: "lending-models", level: 2 },
+        { id: "peer-to-peer-vs-pool-lending", title: "Peer-to-Peer vs. Pool Lending", level: 2 },
+        { id: "major-platforms", title: "major-platforms", level: 2 },
+        { id: "major-nft-lending-platforms", title: "Major NFT Lending Platforms", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-liquidation", title: "Risks and Liquidation", level: 2 },
+        { id: "earning-as-lender", title: "earning-as-lender", level: 2 },
+        { id: "earning-yield-as-a-lender", title: "Earning Yield as a Lender", level: 2 }
       ]}
       faqs={[
         { question: "What happens if I cannot repay my NFT loan?", answer: "If you default on your loan or if the NFT value drops below the liquidation threshold, the lender or protocol takes ownership of your NFT collateral. In peer-to-peer lending, the lender receives the NFT directly. In pool-based lending, the NFT may be liquidated through auction. You lose the NFT but keep the borrowed funds. Always maintain a safe loan-to-value ratio." },

@@ -110,7 +110,7 @@ export default function PayrollPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Payroll Platforms ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -127,16 +127,16 @@ export default function PayrollPage() {
           execution. We tested the leading solutions to find the best fit for different team structures.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Deel</strong> is our top pick for companies needing full global
+          <strong className="text-[var(--color-text)]">Deel</strong> is our top pick for companies needing full global
           payroll compliance with a crypto payment option. For DAOs and crypto-native teams paying
-          contributors, <strong className="text-white">Request Finance</strong> offers the most seamless
-          on-chain payment experience. <strong className="text-white">Franklin</strong> is the best
+          contributors, <strong className="text-[var(--color-text)]">Request Finance</strong> offers the most seamless
+          on-chain payment experience. <strong className="text-[var(--color-text)]">Franklin</strong> is the best
           option for US companies wanting compliant crypto payroll with proper tax handling.
         </p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -150,7 +150,7 @@ export default function PayrollPage() {
       </section>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Crypto Payroll Compliance Checklist</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Crypto Payroll Compliance Checklist</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           If you are paying team members in crypto, ensure you have these bases covered:
         </p>

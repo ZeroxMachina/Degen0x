@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Data Availability in Blockchain Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Data Availability in Blockchain Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about data availability in blockchain: why it matters for security, DAS (data availability sampling), dedicated DA layers like Celestia and EigenDA, and its role in scaling.",
 };
@@ -17,11 +17,16 @@ export default function DataAvailabilityPage() {
       readTime="8 min read"
       intro="Data availability (DA) is the guarantee that the data needed to verify blockchain transactions has been published and is accessible to all network participants. While often overlooked in favor of more visible topics like execution speed or consensus mechanisms, data availability is a critical security requirement and the primary cost bottleneck for Layer 2 scaling solutions. Understanding DA is essential for grasping why modular blockchain architectures exist and how the next generation of scaling solutions will achieve orders-of-magnitude improvements in throughput and cost reduction."
       toc={[
-        { id: "what-is-da", title: "What Is Data Availability?", level: 2 },
-        { id: "da-problem", title: "The Data Availability Problem", level: 2 },
-        { id: "das", title: "Data Availability Sampling (DAS)", level: 2 },
-        { id: "da-layers", title: "Dedicated DA Layers", level: 2 },
-        { id: "impact", title: "Impact on Blockchain Scaling", level: 2 },
+        { id: "what-is-da", title: "what-is-da", level: 2 },
+        { id: "what-is-data-availability", title: "What Is Data Availability?", level: 2 },
+        { id: "da-problem", title: "da-problem", level: 2 },
+        { id: "the-data-availability-problem", title: "The Data Availability Problem", level: 2 },
+        { id: "das", title: "das", level: 2 },
+        { id: "data-availability-sampling-das", title: "Data Availability Sampling (DAS)", level: 2 },
+        { id: "da-layers", title: "da-layers", level: 2 },
+        { id: "dedicated-da-layers", title: "Dedicated DA Layers", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-blockchain-scaling", title: "Impact on Blockchain Scaling", level: 2 }
       ]}
       faqs={[
         {

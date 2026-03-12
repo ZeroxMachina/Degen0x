@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a dApp? Decentralized Application Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a dApp? Decentralized Application Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what dApps are, how decentralized applications work, popular examples, and how they differ from traditional apps.",
 };
@@ -17,11 +17,16 @@ export default function DappPage() {
       readTime="5 min"
       intro="A dApp (decentralized application) is an application that runs on a blockchain or decentralized network rather than on centralized servers. Unlike traditional apps controlled by a single company, dApps use smart contracts for their backend logic, making them censorship-resistant, transparent, and permissionless. DeFi platforms, NFT marketplaces, and decentralized social networks are all examples of dApps."
       toc={[
-        { id: "definition", title: "What Is a dApp?", level: 2 },
-        { id: "how-it-works", title: "How dApps Work", level: 2 },
-        { id: "examples", title: "Popular dApps", level: 2 },
-        { id: "why-it-matters", title: "Why dApps Matter", level: 2 },
-        { id: "limitations", title: "Current Limitations", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-dapp", title: "What Is a dApp?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-dapps-work", title: "How dApps Work", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "popular-dapps", title: "Popular dApps", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-dapps-matter", title: "Why dApps Matter", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "current-limitations", title: "Current Limitations", level: 2 }
       ]}
       faqs={[
         {

@@ -17,10 +17,14 @@ export default function BestFreeCryptoTaxPage() {
       readTime="8 min"
       intro="You do not necessarily need to pay for crypto tax software. Several platforms offer free tiers that handle basic transaction volumes, and some open-source tools are completely free. Whether you are a casual investor with a few trades or looking to minimize costs, this guide covers the best free options for crypto tax reporting and their limitations."
       toc={[
-        { id: "free-tiers", title: "Best Free Tier Options", level: 2 },
-        { id: "limitations", title: "Free Tier Limitations", level: 2 },
-        { id: "when-to-upgrade", title: "When to Upgrade to Paid", level: 2 },
-        { id: "tips", title: "Maximizing Free Tools", level: 2 },
+        { id: "free-tiers", title: "free-tiers", level: 2 },
+        { id: "best-free-tier-options", title: "Best Free Tier Options", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "free-tier-limitations", title: "Free Tier Limitations", level: 2 },
+        { id: "when-to-upgrade", title: "when-to-upgrade", level: 2 },
+        { id: "when-to-upgrade-to-paid", title: "When to Upgrade to Paid", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "maximizing-free-tools", title: "Maximizing Free Tools", level: 2 }
       ]}
       faqs={[
         { question: "Can I file crypto taxes completely free?", answer: "Yes, if your transaction count is within free tier limits. Koinly, CoinPanda, and others offer free report generation for limited transactions. For very few transactions, you can also manually calculate and report without any software." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Polyhedra Network (ZKJ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Polyhedra Network (ZKJ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Polyhedra Network (ZKJ), the ZK infrastructure protocol for cross-chain interoperability. Discover how it works, tokenomics, use cases, and how to buy ZKJ.",
 };
@@ -17,12 +17,18 @@ export default function PolyhedraPage() {
       readTime="8 min read"
       intro="Polyhedra Network is a zero-knowledge proof infrastructure protocol focused on cross-chain interoperability and trustless verification. Its flagship product, zkBridge, uses ZK proofs to verify cross-chain messages without relying on trusted third parties, providing the strongest cryptographic security guarantees in the interoperability space."
       toc={[
-        { id: "what-is", title: "What Is Polyhedra Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Polyhedra Network Work?", level: 2 },
-        { id: "tokenomics", title: "ZKJ Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ZKJ", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-polyhedra-network", title: "What Is Polyhedra Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-polyhedra-network-work", title: "How Does Polyhedra Network Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "zkj-tokenomics", title: "ZKJ Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-zkj", title: "How to Buy ZKJ", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

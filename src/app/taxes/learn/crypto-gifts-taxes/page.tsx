@@ -17,10 +17,14 @@ export default function CryptoGiftsTaxesPage() {
       readTime="7 min"
       intro="Gifting cryptocurrency has become increasingly common, whether sending crypto to family members, friends, or as part of estate planning. The tax rules for crypto gifts mirror traditional gift tax rules but come with unique cost basis tracking challenges. Understanding these rules is essential for both the giver and recipient to avoid unexpected tax consequences."
       toc={[
-        { id: "gift-tax-basics", title: "Gift Tax Basics for Crypto", level: 2 },
-        { id: "cost-basis-rules", title: "Cost Basis Rules for Gifted Crypto", level: 2 },
-        { id: "giving-strategies", title: "Tax-Efficient Giving Strategies", level: 2 },
-        { id: "reporting-requirements", title: "Reporting Requirements", level: 2 },
+        { id: "gift-tax-basics", title: "gift-tax-basics", level: 2 },
+        { id: "gift-tax-basics-for-crypto", title: "Gift Tax Basics for Crypto", level: 2 },
+        { id: "cost-basis-rules", title: "cost-basis-rules", level: 2 },
+        { id: "cost-basis-rules-for-gifted-crypto", title: "Cost Basis Rules for Gifted Crypto", level: 2 },
+        { id: "giving-strategies", title: "giving-strategies", level: 2 },
+        { id: "tax-efficient-giving-strategies", title: "Tax-Efficient Giving Strategies", level: 2 },
+        { id: "reporting-requirements", title: "reporting-requirements", level: 2 },
+        { id: "reporting-requirements", title: "Reporting Requirements", level: 2 }
       ]}
       faqs={[
         { question: "Do I owe taxes when I gift crypto?", answer: "Giving crypto as a gift is not a taxable event for the giver in terms of income or capital gains tax. However, if the total value of gifts to any one recipient exceeds the annual gift tax exclusion ($18,000 in 2024), you must file a gift tax return (Form 709). You generally will not owe actual gift tax unless your lifetime gifts exceed the lifetime exemption." },

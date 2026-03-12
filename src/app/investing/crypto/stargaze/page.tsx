@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Stargaze (STARS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Stargaze (STARS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Stargaze (STARS), the NFT marketplace and launchpad on Cosmos. Discover how it works, tokenomics, use cases, and how to buy STARS.",
 };
@@ -17,12 +17,18 @@ export default function StargazePage() {
       readTime="8 min read"
       intro="Stargaze is the premier NFT marketplace and launchpad in the Cosmos ecosystem, operating as a dedicated Cosmos SDK appchain optimized for NFT creation, trading, and community engagement. With zero gas fees for NFT minting and trading, Stargaze provides a seamless NFT experience while leveraging IBC for cross-chain NFT interoperability."
       toc={[
-        { id: "what-is", title: "What Is Stargaze?", level: 2 },
-        { id: "how-it-works", title: "How Does Stargaze Work?", level: 2 },
-        { id: "tokenomics", title: "STARS Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy STARS", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-stargaze", title: "What Is Stargaze?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-stargaze-work", title: "How Does Stargaze Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "stars-tokenomics", title: "STARS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-stars", title: "How to Buy STARS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

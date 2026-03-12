@@ -11,7 +11,18 @@ export default function LimitVsMarketOrdersPage() {
   return (
     <LearnPageLayout title="Limit Orders vs Market Orders in Crypto" categoryName="Crypto Exchanges" categorySlug="exchanges" readTime="7 min"
       intro="Limit orders and market orders are the two most fundamental order types in crypto trading. Understanding when to use each can save you money on fees and help you get better execution prices."
-      toc={[{id:"market-orders",title:"Market Orders Explained",level:2},{id:"limit-orders",title:"Limit Orders Explained",level:2},{id:"fee-impact",title:"Fee Impact",level:2},{id:"when-to-use",title:"When to Use Each",level:2},{id:"best-practices",title:"Best Practices",level:2}]}
+      toc={[
+        { id: "market-orders", title: "market-orders", level: 2 },
+        { id: "market-orders-explained", title: "Market Orders Explained", level: 2 },
+        { id: "limit-orders", title: "limit-orders", level: 2 },
+        { id: "limit-orders-explained", title: "Limit Orders Explained", level: 2 },
+        { id: "fee-impact", title: "fee-impact", level: 2 },
+        { id: "fee-impact", title: "Fee Impact", level: 2 },
+        { id: "when-to-use", title: "when-to-use", level: 2 },
+        { id: "when-to-use-each", title: "When to Use Each", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
+      ]}
       faqs={[{question:"Are limit orders always better?",answer:"Not always. Market orders guarantee execution, which matters when you need to exit a position urgently. Limit orders guarantee price but not execution."},{question:"Can limit orders get better prices?",answer:"Yes. A limit buy can fill below your limit price if the market moves in your favor. Your limit is the worst acceptable price."},{question:"Do all exchanges support limit orders?",answer:"Most dedicated exchanges do. Consumer platforms like PayPal, Venmo, and Cash App only support market-equivalent orders."}]}
       relatedArticles={[{title:"Order Types Explained",href:"/exchanges/learn/order-types-explained",category:"Exchanges"},{title:"Slippage Explained",href:"/exchanges/learn/slippage-explained",category:"Exchanges"},{title:"Maker vs Taker Fees",href:"/exchanges/learn/maker-vs-taker-fees",category:"Exchanges"}]}
     >

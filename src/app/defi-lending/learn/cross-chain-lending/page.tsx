@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Cross-Chain DeFi Lending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Cross-Chain DeFi Lending (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to cross-chain DeFi lending. Learn how to lend and borrow across different blockchains, the protocols enabling it, and the risks of multi-chain lending.",
 };
 
@@ -11,7 +11,16 @@ export default function CrossChainLendingPage() {
   return (
     <LearnPageLayout title="Cross-Chain DeFi Lending" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="8 min read"
       intro="As DeFi expands across multiple blockchains, cross-chain lending has emerged as a way to unify liquidity and enable borrowing on one chain using collateral on another. This capability addresses the liquidity fragmentation problem where capital is siloed across Ethereum, Arbitrum, Optimism, Base, Polygon, and other networks. Several approaches to cross-chain lending exist, each with different trust assumptions and trade-offs."
-      toc={[{ id: "fragmentation-problem", title: "The Liquidity Fragmentation Problem", level: 2 }, { id: "approaches", title: "Cross-Chain Lending Approaches", level: 2 }, { id: "protocols", title: "Key Protocols", level: 2 }, { id: "risks", title: "Cross-Chain Risks", level: 2 }]}
+      toc={[
+        { id: "fragmentation-problem", title: "fragmentation-problem", level: 2 },
+        { id: "the-liquidity-fragmentation-problem", title: "The Liquidity Fragmentation Problem", level: 2 },
+        { id: "approaches", title: "approaches", level: 2 },
+        { id: "cross-chain-lending-approaches", title: "Cross-Chain Lending Approaches", level: 2 },
+        { id: "protocols", title: "protocols", level: 2 },
+        { id: "key-protocols", title: "Key Protocols", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "cross-chain-risks", title: "Cross-Chain Risks", level: 2 }
+      ]}
       faqs={[
         { question: "Can I deposit on one chain and borrow on another?", answer: "Yes, though the options are still developing. Aave V3 Portals enable cross-chain liquidity flow through approved bridges. Some protocols like Radiant (despite its exploit) aimed for native cross-chain lending. In practice, many users bridge assets manually between chains to access lending on each." },
         { question: "Is cross-chain lending safe?", answer: "Cross-chain lending adds bridge risk on top of standard lending risk. Bridge exploits have been among the largest DeFi hacks (Wormhole, Ronin). Every cross-chain interaction introduces trust assumptions about the bridging mechanism. The technology is still maturing." },

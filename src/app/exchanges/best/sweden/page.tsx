@@ -16,10 +16,14 @@ export default function SwedenExchangesPage() {
       readTime="9 min"
       intro="Sweden has a well-developed crypto market supported by strong digital infrastructure, high financial literacy, and clear EU-aligned regulation. Swedish traders benefit from SEPA accessibility, Swish payment options, and a growing number of regulated platforms serving the Nordic market."
       toc={[
-        { id: "regulation", title: "Swedish Crypto Regulation", level: 2 },
-        { id: "top-exchanges", title: "Best Exchanges for Swedish Users", level: 2 },
-        { id: "payment-methods", title: "SEK Payment Methods", level: 2 },
-        { id: "taxes", title: "Crypto Tax in Sweden", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "swedish-crypto-regulation", title: "Swedish Crypto Regulation", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "best-exchanges-for-swedish-users", title: "Best Exchanges for Swedish Users", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "sek-payment-methods", title: "SEK Payment Methods", level: 2 },
+        { id: "taxes", title: "taxes", level: 2 },
+        { id: "crypto-tax-in-sweden", title: "Crypto Tax in Sweden", level: 2 }
       ]}
       faqs={[
         {

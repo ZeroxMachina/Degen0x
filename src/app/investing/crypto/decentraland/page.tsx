@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Decentraland (MANA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Decentraland (MANA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Decentraland (MANA), the decentralized virtual reality platform. Discover how it works, tokenomics, use cases, and how to buy MANA.",
 };
@@ -17,12 +17,18 @@ export default function DecentralandPage() {
       readTime="8 min read"
       intro="Decentraland is a decentralized virtual reality platform powered by the Ethereum blockchain where users can create, experience, and monetize content and applications. MANA is the ERC-20 token used for purchasing virtual land (LAND), marketplace transactions, and governance of the platform through the Decentraland DAO."
       toc={[
-        { id: "what-is", title: "What Is Decentraland?", level: 2 },
-        { id: "how-it-works", title: "How Does Decentraland Work?", level: 2 },
-        { id: "tokenomics", title: "MANA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MANA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-decentraland", title: "What Is Decentraland?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-decentraland-work", title: "How Does Decentraland Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mana-tokenomics", title: "MANA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mana", title: "How to Buy MANA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "Free download; swap aggregator fees vary",
   bestFor: "Multi-chain DeFi users and Bitget exchange users",
-  affiliateUrl: "https://cryptodegen.com/go/bitget-wallet",
+  affiliateUrl: "https://degen0x.com/go/bitget-wallet",
   category: "wallets",
 };
 

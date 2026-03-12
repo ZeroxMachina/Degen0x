@@ -16,10 +16,14 @@ export default function PrivacyCoinsGuidePage() {
       readTime="10 min"
       intro="Privacy coins are cryptocurrencies that offer enhanced transaction confidentiality beyond what Bitcoin or Ethereum provide. While most blockchains have publicly viewable transactions, privacy coins use advanced cryptographic techniques to hide sender, receiver, and amount information. This guide explores the technology, top projects, and unique investment considerations of privacy coins."
       toc={[
-        { id: "how-privacy-works", title: "How Crypto Privacy Works", level: 2 },
+        { id: "how-privacy-works", title: "how-privacy-works", level: 2 },
+        { id: "how-crypto-privacy-works", title: "How Crypto Privacy Works", level: 2 },
+        { id: "top-privacy-coins", title: "top-privacy-coins", level: 2 },
         { id: "top-privacy-coins", title: "Top Privacy Coins", level: 2 },
+        { id: "regulatory-landscape", title: "regulatory-landscape", level: 2 },
         { id: "regulatory-landscape", title: "Regulatory Landscape", level: 2 },
-        { id: "investment-considerations", title: "Investment Considerations", level: 2 },
+        { id: "investment-considerations", title: "investment-considerations", level: 2 },
+        { id: "investment-considerations", title: "Investment Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Are privacy coins legal?", answer: "Owning privacy coins is legal in most jurisdictions. However, some exchanges have delisted privacy coins in certain countries due to regulatory pressure. Japan and South Korea have enacted restrictions on privacy coins. Always check your local regulations and understand that reduced exchange availability can affect liquidity." },

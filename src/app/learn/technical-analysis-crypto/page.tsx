@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Technical Analysis for Crypto Trading (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Technical Analysis for Crypto Trading (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn technical analysis for cryptocurrency trading: chart patterns, key indicators like RSI and MACD, support and resistance levels, volume analysis, and how to build a trading strategy.",
 };
@@ -17,11 +17,16 @@ export default function TechnicalAnalysisCryptoPage() {
       readTime="10 min read"
       intro="Technical analysis (TA) is the study of price charts and statistical indicators to forecast future price movements based on historical patterns. In crypto markets, where fundamental valuations are often difficult to establish and sentiment drives short-term price action, technical analysis provides a structured framework for making trading decisions. While no method can predict markets with certainty, understanding chart patterns, indicators, and market structure helps traders identify higher-probability setups and manage risk more effectively."
       toc={[
-        { id: "foundations", title: "Foundations of Technical Analysis", level: 2 },
-        { id: "chart-patterns", title: "Key Chart Patterns", level: 2 },
-        { id: "indicators", title: "Essential Technical Indicators", level: 2 },
+        { id: "foundations", title: "foundations", level: 2 },
+        { id: "foundations-of-technical-analysis", title: "Foundations of Technical Analysis", level: 2 },
+        { id: "chart-patterns", title: "chart-patterns", level: 2 },
+        { id: "key-chart-patterns", title: "Key Chart Patterns", level: 2 },
+        { id: "indicators", title: "indicators", level: 2 },
+        { id: "essential-technical-indicators", title: "Essential Technical Indicators", level: 2 },
+        { id: "volume-analysis", title: "volume-analysis", level: 2 },
         { id: "volume-analysis", title: "Volume Analysis", level: 2 },
-        { id: "building-strategy", title: "Building a Trading Strategy", level: 2 },
+        { id: "building-strategy", title: "building-strategy", level: 2 },
+        { id: "building-a-trading-strategy", title: "Building a Trading Strategy", level: 2 }
       ]}
       faqs={[
         {

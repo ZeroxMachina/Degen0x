@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Lending Protocol? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Lending Protocol? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what DeFi lending protocols are, how they work, major platforms like Aave and Compound, and how to evaluate lending protocols for safety and returns.",
 };
 
@@ -11,7 +11,16 @@ export default function LendingProtocolPage() {
   return (
     <LearnPageLayout title="What Is a Lending Protocol?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="A lending protocol is a DeFi application that enables trustless borrowing and lending of cryptocurrency without intermediaries. Lenders deposit assets into smart contract pools and earn interest from borrowers who take loans by posting collateral. Interest rates are determined algorithmically based on supply and demand. Lending protocols like Aave, Compound, and Morpho form the backbone of DeFi, enabling leverage, capital efficiency, and yield generation."
-      toc={[{ id: "definition", title: "What Is a Lending Protocol?", level: 2 }, { id: "how-lending-works", title: "How DeFi Lending Works", level: 2 }, { id: "major-protocols", title: "Major Lending Protocols", level: 2 }, { id: "evaluating-protocols", title: "Evaluating Lending Protocols", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-lending-protocol", title: "What Is a Lending Protocol?", level: 2 },
+        { id: "how-lending-works", title: "how-lending-works", level: 2 },
+        { id: "how-defi-lending-works", title: "How DeFi Lending Works", level: 2 },
+        { id: "major-protocols", title: "major-protocols", level: 2 },
+        { id: "major-lending-protocols", title: "Major Lending Protocols", level: 2 },
+        { id: "evaluating-protocols", title: "evaluating-protocols", level: 2 },
+        { id: "evaluating-lending-protocols", title: "Evaluating Lending Protocols", level: 2 }
+      ]}
       faqs={[{ question: "How do lending protocols determine interest rates?", answer: "Most lending protocols use utilization-based interest rate models. When a lending pool has low utilization (lots of supply, little borrowing), rates are low. As utilization increases, rates rise to attract more deposits and discourage excessive borrowing. At extreme utilization levels, rates spike dramatically to prevent liquidity shortages." },
         { question: "Can I lose money lending on DeFi?", answer: "While rare, yes. Risks include smart contract exploits, oracle manipulation attacks, bad debt from failed liquidations during extreme volatility, and governance attacks. Major protocols have insurance funds and strong track records, but no DeFi protocol is completely risk-free. Diversify across protocols and prioritize those with extensive audit histories." }]}
       relatedArticles={[{ title: "Borrowing", href: "/learn/glossary/borrowing", category: "Glossary" }, { title: "Collateralization", href: "/learn/glossary/collateralization", category: "Glossary" }, { title: "What Is DeFi?", href: "/learn/what-is-defi", category: "Learn Crypto" }, { title: "APR", href: "/learn/glossary/apr", category: "Glossary" }]}

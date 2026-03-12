@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Farcaster (CAST)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Farcaster (CAST)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Farcaster (CAST), the decentralized social protocol. Discover how it works, tokenomics, use cases, and how to buy CAST.",
 };
 
 export default function FarcasterPage() {
   return (
-    <LearnPageLayout title="What Is Farcaster (CAST)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Farcaster is a sufficiently decentralized social protocol that enables developers to build social networking applications on an open, permissionless network. Unlike traditional social media where one company controls the platform, Farcaster separates the social graph and identity layer from the application layer, allowing multiple clients like Warpcast to build on top of the shared protocol." toc={[{id:"what-is",title:"What Is Farcaster?",level:2},{id:"how-it-works",title:"How Does Farcaster Work?",level:2},{id:"tokenomics",title:"CAST Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy CAST",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Farcaster?",answer:"Farcaster is a decentralized social protocol where users own their identity and social graph, enabling multiple app clients to build on the same open social network."},{question:"Where can I buy CAST?",answer:"CAST availability depends on the token launch timeline. Check Jupiter DEX and major exchanges for current listings. It may trade against ETH and USDT."},{question:"Is Farcaster a good investment?",answer:"Farcaster is the leading decentralized social protocol with strong developer adoption, but social token monetization is unproven. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Farcaster (CAST)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="9 min read" intro="Farcaster is a sufficiently decentralized social protocol that enables developers to build social networking applications on an open, permissionless network. Unlike traditional social media where one company controls the platform, Farcaster separates the social graph and identity layer from the application layer, allowing multiple clients like Warpcast to build on top of the shared protocol." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-farcaster", title: "What Is Farcaster?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-farcaster-work", title: "How Does Farcaster Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "cast-tokenomics", title: "CAST Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-cast", title: "How to Buy CAST", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Farcaster?",answer:"Farcaster is a decentralized social protocol where users own their identity and social graph, enabling multiple app clients to build on the same open social network."},{question:"Where can I buy CAST?",answer:"CAST availability depends on the token launch timeline. Check Jupiter DEX and major exchanges for current listings. It may trade against ETH and USDT."},{question:"Is Farcaster a good investment?",answer:"Farcaster is the leading decentralized social protocol with strong developer adoption, but social token monetization is unproven. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Ethereum",href:"/investing/crypto/ethereum",category:"Investing"}]}>
       <h2 id="what-is">What Is Farcaster?</h2>
       <p>Farcaster was co-founded by Dan Romero and Varun Srinivasan, former Coinbase executives, with the vision of creating a social network that users truly own. The protocol stores user identities on Ethereum (via a registry contract) while using a network of distributed hubs to store social data like posts (called casts), likes, and follows. This hybrid architecture provides the censorship resistance of blockchain identity with the performance needed for social media.</p>
       <p>Warpcast is the primary client application built on Farcaster, functioning similarly to Twitter but with native crypto integration. Users can embed NFTs, send tokens, and interact with on-chain applications directly within their social feed. Farcaster&apos;s Frames feature allows developers to build interactive mini-applications that run inside social posts, enabling transactions, minting, and games without leaving the feed. The protocol has attracted a vibrant community of crypto developers, founders, and enthusiasts.</p>

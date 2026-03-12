@@ -17,12 +17,18 @@ export default function StakeTronPage() {
       readTime="8 min"
       intro="TRON staking enables TRX holders to earn approximately 4-6% APY by voting for Super Representatives who produce blocks on the network. With its massive user base, high transaction volume, and the ability to earn energy and bandwidth resources alongside staking rewards, TRON offers a unique staking experience."
       toc={[
-        { id: "overview", title: "TRON Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake TRX Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking TRON", level: 2 },
-        { id: "validators", title: "Super Representatives & Voting", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "tron-staking-overview", title: "TRON Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-trx-step-by-step", title: "How to Stake TRX Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-tron", title: "Risks of Staking TRON", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "super-representatives-voting", title: "Super Representatives & Voting", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "What APY does TRON staking offer?", answer: "TRON staking yields approximately 4-6% APY through voting rewards from Super Representatives. Some SRs offer additional community rewards. You also gain energy and bandwidth resources for network transactions." },

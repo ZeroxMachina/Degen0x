@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Does Ape In Mean? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Does Ape In Mean? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what 'ape in' means in crypto, where the term comes from, why traders do it, and the risks involved. A complete guide to this popular crypto slang.",
 };
@@ -17,11 +17,16 @@ export default function ApeInPage() {
       readTime="4 min"
       intro="'Ape in' is crypto slang for investing a large amount of money into a token or project impulsively, often without conducting thorough research. The term reflects the high-risk, high-reward culture that pervades parts of the cryptocurrency market, particularly around memecoins and new token launches."
       toc={[
-        { id: "definition", title: "What Does Ape In Mean?", level: 2 },
-        { id: "origin", title: "Origin of the Term", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-does-ape-in-mean", title: "What Does Ape In Mean?", level: 2 },
+        { id: "origin", title: "origin", level: 2 },
+        { id: "origin-of-the-term", title: "Origin of the Term", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
         { id: "examples", title: "Examples", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "risks", title: "Risks of Aping In", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-aping-in", title: "Risks of Aping In", level: 2 }
       ]}
       faqs={[
         {

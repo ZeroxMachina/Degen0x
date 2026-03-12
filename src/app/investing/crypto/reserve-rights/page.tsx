@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Reserve Rights (RSR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Reserve Rights (RSR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Reserve Rights (RSR), the governance token of the Reserve Protocol for asset-backed stablecoins. Discover RSR tokenomics and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function ReserveRightsPage() {
       readTime="8 min read"
       intro="Reserve Rights (RSR) is the governance and backstop token of the Reserve Protocol, a platform for creating asset-backed stablecoins called RTokens. RSR can be staked on individual RTokens to provide overcollateralization insurance, earning yield from the underlying assets in return for absorbing first-loss risk if the backing falls below 100%."
       toc={[
-        { id: "what-is", title: "What Is Reserve Rights?", level: 2 },
-        { id: "how-it-works", title: "How Does Reserve Rights Work?", level: 2 },
-        { id: "tokenomics", title: "RSR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy RSR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-reserve-rights", title: "What Is Reserve Rights?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-reserve-rights-work", title: "How Does Reserve Rights Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "rsr-tokenomics", title: "RSR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-rsr", title: "How to Buy RSR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Reserve Rights?", answer: "RSR is the governance and backstop token for the Reserve Protocol, which enables permissionless creation of asset-backed stablecoins (RTokens). RSR can be staked on RTokens to earn yield and provide overcollateralization insurance." },

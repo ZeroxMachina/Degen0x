@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is dYdX (DYDX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is dYdX (DYDX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about dYdX (DYDX), the decentralized perpetual futures exchange built on its own blockchain. Discover DYDX tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function DydxPage() {
       readTime="8 min read"
       intro="dYdX (DYDX) is a decentralized perpetual futures exchange that migrated to its own dedicated blockchain built on the Cosmos SDK. The platform enables traders to access leveraged trading of crypto assets without a centralized intermediary. DYDX is the governance and staking token that secures the dYdX Chain and entitles holders to protocol revenue."
       toc={[
-        { id: "what-is", title: "What Is dYdX?", level: 2 },
-        { id: "how-it-works", title: "How Does dYdX Work?", level: 2 },
-        { id: "tokenomics", title: "DYDX Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy DYDX", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-dydx", title: "What Is dYdX?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-dydx-work", title: "How Does dYdX Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "dydx-tokenomics", title: "DYDX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-dydx", title: "How to Buy DYDX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

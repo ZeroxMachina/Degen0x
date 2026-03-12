@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Pixels Token (PIXEL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Pixels Token (PIXEL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Pixels Token (PIXEL), the gaming token from the Pixels Web3 game. Discover how it works, tokenomics, use cases, and how to buy PIXEL.",
 };
 
 export default function PixelsTokenPage() {
   return (
-    <LearnPageLayout title="What Is Pixels Token (PIXEL)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Pixels Token (PIXEL) is the native utility and governance token of Pixels, one of the most popular Web3 games built on Ronin Network. Pixels is a farming and exploration game where players own land, grow crops, build structures, and interact in a persistent open world, earning PIXEL tokens through gameplay." toc={[{id:"what-is",title:"What Is Pixels Token?",level:2},{id:"how-it-works",title:"How Does Pixels Work?",level:2},{id:"tokenomics",title:"PIXEL Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy PIXEL",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Pixels Token?",answer:"PIXEL is the utility and governance token of Pixels, a popular Web3 farming and exploration game on Ronin Network. Players earn PIXEL through gameplay."},{question:"Where can I buy PIXEL?",answer:"PIXEL is available on Binance, OKX, and other exchanges, as well as DEXes on Ronin Network."},{question:"Is Pixels a good investment?",answer:"Pixels has real active users and a working game, but Web3 gaming tokens face challenges with sustainable tokenomics. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Pixels Token (PIXEL)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Pixels Token (PIXEL) is the native utility and governance token of Pixels, one of the most popular Web3 games built on Ronin Network. Pixels is a farming and exploration game where players own land, grow crops, build structures, and interact in a persistent open world, earning PIXEL tokens through gameplay." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-pixels-token", title: "What Is Pixels Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-pixels-work", title: "How Does Pixels Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "pixel-tokenomics", title: "PIXEL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-pixel", title: "How to Buy PIXEL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Pixels Token?",answer:"PIXEL is the utility and governance token of Pixels, a popular Web3 farming and exploration game on Ronin Network. Players earn PIXEL through gameplay."},{question:"Where can I buy PIXEL?",answer:"PIXEL is available on Binance, OKX, and other exchanges, as well as DEXes on Ronin Network."},{question:"Is Pixels a good investment?",answer:"Pixels has real active users and a working game, but Web3 gaming tokens face challenges with sustainable tokenomics. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"}]}>
       <h2 id="what-is">What Is Pixels Token?</h2>
       <p>Pixels is a Web3 open-world farming and exploration game that has attracted hundreds of thousands of active players. Built on Ronin Network (the same chain as Axie Infinity), Pixels allows players to own virtual land as NFTs, farm resources, complete quests, build structures, and trade with other players. PIXEL is the in-game utility token that powers the game's economy.</p>
       <p>The game's success is notable in the Web3 gaming space because it has achieved significant player engagement through genuinely fun gameplay rather than purely speculative play-to-earn mechanics.</p>

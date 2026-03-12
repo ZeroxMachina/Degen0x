@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a DAO? Decentralized Autonomous Organization Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a DAO? Decentralized Autonomous Organization Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what DAOs are, how decentralized governance works, types of DAOs, and the benefits and challenges of decentralized organizations.",
 };
@@ -17,11 +17,16 @@ export default function DaoPage() {
       readTime="5 min"
       intro="A DAO (Decentralized Autonomous Organization) is an organization governed by smart contracts and token-holder votes rather than a traditional corporate hierarchy. DAOs allow communities to collectively manage treasuries, make protocol decisions, and coordinate resources without centralized leadership. They represent a new model of internet-native organization."
       toc={[
-        { id: "definition", title: "What Is a DAO?", level: 2 },
-        { id: "how-it-works", title: "How DAOs Work", level: 2 },
-        { id: "types", title: "Types of DAOs", level: 2 },
-        { id: "why-it-matters", title: "Why DAOs Matter", level: 2 },
-        { id: "challenges", title: "Challenges", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-dao", title: "What Is a DAO?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-daos-work", title: "How DAOs Work", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-daos", title: "Types of DAOs", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-daos-matter", title: "Why DAOs Matter", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges", title: "Challenges", level: 2 }
       ]}
       faqs={[
         {

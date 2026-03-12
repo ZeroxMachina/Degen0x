@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Minting? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Minting? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what minting means in crypto, how it applies to tokens and NFTs, and the mechanics of creating new digital assets on-chain.",
 };
@@ -17,11 +17,16 @@ export default function MintPage() {
       readTime="5 min"
       intro="Minting is the process of creating new tokens or NFTs on a blockchain. When you mint an NFT, a new unique token is generated and recorded on-chain. When a protocol mints tokens, new supply is created according to the protocol's rules. Minting is the opposite of burning (destroying tokens). The term borrows from the concept of minting physical coins and represents the creation of new digital assets."
       toc={[
-        { id: "definition", title: "What Is Minting?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-minting", title: "What Is Minting?", level: 2 },
+        { id: "nft-minting", title: "nft-minting", level: 2 },
         { id: "nft-minting", title: "NFT Minting", level: 2 },
+        { id: "token-minting", title: "token-minting", level: 2 },
         { id: "token-minting", title: "Token Minting", level: 2 },
+        { id: "minting-mechanics", title: "minting-mechanics", level: 2 },
         { id: "minting-mechanics", title: "Minting Mechanics", level: 2 },
-        { id: "why-it-matters", title: "Why Minting Matters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-minting-matters", title: "Why Minting Matters", level: 2 }
       ]}
       faqs={[
         {

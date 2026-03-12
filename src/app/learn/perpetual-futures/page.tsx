@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Perpetual Futures in Crypto Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Perpetual Futures in Crypto Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how perpetual futures work in crypto, funding rates, leverage, liquidation mechanics, the difference between perps and traditional futures, and risk management strategies.",
 };
@@ -17,11 +17,16 @@ export default function PerpetualFuturesPage() {
       readTime="9 min read"
       intro="Perpetual futures (perps) are derivative contracts that allow traders to speculate on the price of a cryptocurrency without an expiration date. Unlike traditional futures that settle on a specific date, perps can be held indefinitely through a funding rate mechanism that keeps the contract price aligned with the spot market. Perpetual futures are the most traded instrument in crypto, with daily volumes regularly exceeding spot market volumes by a significant multiple."
       toc={[
-        { id: "what-are-perps", title: "What Are Perpetual Futures?", level: 2 },
-        { id: "funding-rates", title: "Understanding Funding Rates", level: 2 },
-        { id: "leverage-margin", title: "Leverage and Margin", level: 2 },
-        { id: "liquidation", title: "Liquidation Mechanics", level: 2 },
-        { id: "dex-perps", title: "Decentralized Perpetual Exchanges", level: 2 },
+        { id: "what-are-perps", title: "what-are-perps", level: 2 },
+        { id: "what-are-perpetual-futures", title: "What Are Perpetual Futures?", level: 2 },
+        { id: "funding-rates", title: "funding-rates", level: 2 },
+        { id: "understanding-funding-rates", title: "Understanding Funding Rates", level: 2 },
+        { id: "leverage-margin", title: "leverage-margin", level: 2 },
+        { id: "leverage-and-margin", title: "Leverage and Margin", level: 2 },
+        { id: "liquidation", title: "liquidation", level: 2 },
+        { id: "liquidation-mechanics", title: "Liquidation Mechanics", level: 2 },
+        { id: "dex-perps", title: "dex-perps", level: 2 },
+        { id: "decentralized-perpetual-exchanges", title: "Decentralized Perpetual Exchanges", level: 2 }
       ]}
       faqs={[
         {

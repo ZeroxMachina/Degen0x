@@ -15,7 +15,7 @@ interface Props {
   toc: TOCItem[];
   children: React.ReactNode;
   faqs?: FAQ[];
-  relatedArticles?: { title: string; href: string; category: string }[];
+  relatedArticles?: { title: string; href?: string; category: string; slug?: string }[];
 }
 
 export default function LearnPageLayout({
@@ -36,8 +36,8 @@ export default function LearnPageLayout({
     headline: title,
     datePublished: `${CURRENT_YEAR}-03-01`,
     dateModified: lastUpdated || `${CURRENT_YEAR}-03-01`,
-    author: { "@type": "Organization", name: "CryptoDegen" },
-    publisher: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
+    publisher: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -73,8 +73,8 @@ export default function LearnPageLayout({
           <div className="grid md:grid-cols-2 gap-4">
             {relatedArticles.map((article) => (
               <Link
-                key={article.href}
-                href={article.href}
+                key={article.href ?? article.slug}
+                href={article.href ?? (article.slug ? `/learn/${article.slug}` : "#")}
                 className="glass-subtle p-4 glass-hover"
               >
                 <span className="text-xs text-[var(--color-primary)]">{article.category}</span>

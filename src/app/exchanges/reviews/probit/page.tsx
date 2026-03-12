@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.2% maker/taker (reduced with PROB token)",
   bestFor: "IEO participants and micro-cap altcoin traders",
-  affiliateUrl: "https://cryptodegen.com/go/probit",
+  affiliateUrl: "https://degen0x.com/go/probit",
   category: "exchanges",
 };
 

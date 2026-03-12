@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Italy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Italy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Italy. Learn about the 26% capital gains tax, the 2,000-euro threshold, and reporting obligations for Italian crypto investors.",
 };
@@ -17,12 +17,18 @@ export default function CryptoTaxesItalyPage() {
       readTime="8 min read"
       intro="Italy reformed its crypto tax rules significantly with the 2023 Budget Law, establishing clear guidelines for cryptocurrency taxation. Crypto gains are now taxed at a flat 26% rate above a 2,000-euro annual threshold. Italy also introduced a voluntary disclosure program allowing taxpayers to regularize previously unreported crypto holdings. Understanding the current framework is essential for Italian crypto investors to remain compliant with the Agenzia delle Entrate."
       toc={[
-        { id: "tax-framework", title: "Italian Crypto Tax Framework", level: 2 },
-        { id: "capital-gains", title: "26% Capital Gains Tax", level: 2 },
-        { id: "reporting-rw", title: "Quadro RW Reporting", level: 2 },
-        { id: "stamp-duty", title: "IVAFE Stamp Duty", level: 2 },
-        { id: "defi-staking", title: "DeFi and Staking Rules", level: 2 },
-        { id: "compliance", title: "Compliance and Penalties", level: 2 },
+        { id: "tax-framework", title: "tax-framework", level: 2 },
+        { id: "italian-crypto-tax-framework", title: "Italian Crypto Tax Framework", level: 2 },
+        { id: "capital-gains", title: "capital-gains", level: 2 },
+        { id: "26-capital-gains-tax", title: "26% Capital Gains Tax", level: 2 },
+        { id: "reporting-rw", title: "reporting-rw", level: 2 },
+        { id: "quadro-rw-reporting", title: "Quadro RW Reporting", level: 2 },
+        { id: "stamp-duty", title: "stamp-duty", level: 2 },
+        { id: "ivafe-stamp-duty", title: "IVAFE Stamp Duty", level: 2 },
+        { id: "defi-staking", title: "defi-staking", level: 2 },
+        { id: "defi-and-staking-rules", title: "DeFi and Staking Rules", level: 2 },
+        { id: "compliance", title: "compliance", level: 2 },
+        { id: "compliance-and-penalties", title: "Compliance and Penalties", level: 2 }
       ]}
       faqs={[
         { question: "What is the crypto tax rate in Italy?", answer: "Italy applies a flat 26% capital gains tax on cryptocurrency gains exceeding 2,000 euros per year. Gains below this threshold are tax-free. This rate was established by the 2023 Budget Law (Legge di Bilancio 2023) which provided the first comprehensive crypto tax framework in Italy." },

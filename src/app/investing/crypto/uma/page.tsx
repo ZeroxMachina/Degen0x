@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is UMA (UMA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is UMA (UMA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about UMA (UMA), the optimistic oracle and dispute resolution protocol. Discover how it works, tokenomics, use cases, and how to buy UMA.",
 };
@@ -17,12 +17,18 @@ export default function UmaPage() {
       readTime="8 min read"
       intro="UMA (Universal Market Access) is an optimistic oracle and dispute resolution system that provides truthful data to smart contracts through economic incentives rather than automated data feeds. UMA's oracle works by assuming data assertions are correct unless challenged, with a human-powered dispute resolution process that makes it uniquely suited for subjective or complex data queries that traditional oracles cannot handle."
       toc={[
-        { id: "what-is", title: "What Is UMA?", level: 2 },
-        { id: "how-it-works", title: "How Does UMA Work?", level: 2 },
-        { id: "tokenomics", title: "UMA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy UMA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-uma", title: "What Is UMA?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-uma-work", title: "How Does UMA Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "uma-tokenomics", title: "UMA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-uma", title: "How to Buy UMA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

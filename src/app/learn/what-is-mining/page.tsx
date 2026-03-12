@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Crypto Mining? Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Crypto Mining? Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what crypto mining is, how it works, what hardware you need, and whether mining is still profitable. A comprehensive guide to cryptocurrency mining.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsMiningPage() {
       readTime="10 min read"
       intro="Crypto mining is the process of validating transactions and adding new blocks to a blockchain network using computational power. Miners compete to solve complex mathematical puzzles, and the first to find a valid solution earns the right to add the next block and receive newly minted cryptocurrency as a reward. Mining is the backbone of proof-of-work blockchains like Bitcoin and plays a critical role in securing decentralized networks."
       toc={[
-        { id: "how-mining-works", title: "How Crypto Mining Works", level: 2 },
-        { id: "mining-hardware", title: "Mining Hardware and Equipment", level: 2 },
-        { id: "mining-pools", title: "Mining Pools Explained", level: 2 },
-        { id: "profitability", title: "Mining Profitability in 2025", level: 2 },
+        { id: "how-mining-works", title: "how-mining-works", level: 2 },
+        { id: "how-crypto-mining-works", title: "How Crypto Mining Works", level: 2 },
+        { id: "mining-hardware", title: "mining-hardware", level: 2 },
+        { id: "mining-hardware-and-equipment", title: "Mining Hardware and Equipment", level: 2 },
+        { id: "mining-pools", title: "mining-pools", level: 2 },
+        { id: "mining-pools-explained", title: "Mining Pools Explained", level: 2 },
+        { id: "profitability", title: "profitability", level: 2 },
+        { id: "mining-profitability-in-2025", title: "Mining Profitability in 2025", level: 2 }
       ]}
       faqs={[
         {

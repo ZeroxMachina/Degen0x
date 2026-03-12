@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is the Cosmos Ecosystem? Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is the Cosmos Ecosystem? Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about the Cosmos ecosystem, how the Internet of Blockchains works, IBC protocol, ATOM token, and the major projects building in the Cosmos network.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsCosmosEcosystemPage() {
       readTime="10 min read"
       intro="Cosmos is a decentralized network of independent, interoperable blockchains, often called the Internet of Blockchains. Unlike monolithic chains where all applications share the same base layer, Cosmos allows each project to build its own sovereign blockchain (called an appchain) while maintaining seamless communication with other chains through the Inter-Blockchain Communication (IBC) protocol. This architecture provides customization, scalability, and sovereignty that general-purpose platforms cannot match."
       toc={[
+        { id: "cosmos-overview", title: "cosmos-overview", level: 2 },
         { id: "cosmos-overview", title: "Cosmos Overview", level: 2 },
-        { id: "ibc-protocol", title: "IBC: The Inter-Blockchain Communication Protocol", level: 2 },
-        { id: "major-projects", title: "Major Cosmos Projects", level: 2 },
-        { id: "atom-and-economics", title: "ATOM and Cosmos Economics", level: 2 },
+        { id: "ibc-protocol", title: "ibc-protocol", level: 2 },
+        { id: "ibc-the-inter-blockchain-communication-protocol", title: "IBC: The Inter-Blockchain Communication Protocol", level: 2 },
+        { id: "major-projects", title: "major-projects", level: 2 },
+        { id: "major-cosmos-projects", title: "Major Cosmos Projects", level: 2 },
+        { id: "atom-and-economics", title: "atom-and-economics", level: 2 },
+        { id: "atom-and-cosmos-economics", title: "ATOM and Cosmos Economics", level: 2 }
       ]}
       faqs={[
         {

@@ -26,13 +26,20 @@ export default function RestakingExplainedPage() {
       readTime="11 min"
       intro="Restaking is a novel mechanism that allows Ethereum stakers to reuse their staked ETH to simultaneously secure other networks and services. EigenLayer pioneered this concept, enabling validators to point their stake toward additional operators and earn extra yield. Rather than withdrawing from Ethereum staking to stake on other networks, restakers can multiply their capital efficiency by securing multiple chains with the same ETH. This guide explains how restaking works, its mechanisms, risks (including cross-chain slashing), top protocols, and the implications for Ethereum's security model."
       toc={[
+        { id: "what-is-restaking", title: "what-is-restaking", level: 2 },
         { id: "what-is-restaking", title: "What Is Restaking?", level: 2 },
-        { id: "how-restaking-works", title: "How Restaking Works Mechanically", level: 2 },
-        { id: "eigenlayer-explained", title: "EigenLayer: The Restaking Pioneer", level: 2 },
-        { id: "restaking-risks", title: "Risks: Slashing and Complexity", level: 2 },
-        { id: "top-restaking-protocols", title: "Top Restaking Protocols and Operators", level: 2 },
-        { id: "restaking-yields", title: "Restaking Yields and Economics", level: 2 },
-        { id: "future-of-restaking", title: "The Future of Restaking", level: 2 },
+        { id: "how-restaking-works", title: "how-restaking-works", level: 2 },
+        { id: "how-restaking-works-mechanically", title: "How Restaking Works Mechanically", level: 2 },
+        { id: "eigenlayer-explained", title: "eigenlayer-explained", level: 2 },
+        { id: "eigenlayer-the-restaking-pioneer", title: "EigenLayer: The Restaking Pioneer", level: 2 },
+        { id: "restaking-risks", title: "restaking-risks", level: 2 },
+        { id: "risks-slashing-and-complexity", title: "Risks: Slashing and Complexity", level: 2 },
+        { id: "top-restaking-protocols", title: "top-restaking-protocols", level: 2 },
+        { id: "top-restaking-protocols-and-operators", title: "Top Restaking Protocols and Operators", level: 2 },
+        { id: "restaking-yields", title: "restaking-yields", level: 2 },
+        { id: "restaking-yields-and-economics", title: "Restaking Yields and Economics", level: 2 },
+        { id: "future-of-restaking", title: "future-of-restaking", level: 2 },
+        { id: "the-future-of-restaking", title: "The Future of Restaking", level: 2 }
       ]}
       faqs={[
         {

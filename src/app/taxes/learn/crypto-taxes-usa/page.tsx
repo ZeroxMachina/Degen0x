@@ -25,13 +25,20 @@ export default function CryptoTaxesUSAPage() {
       readTime="15 min"
       intro="The IRS treats cryptocurrency as property, which means nearly every transaction can have tax implications. From capital gains on sales to income tax on mining rewards, understanding your obligations is essential for staying compliant. This guide covers all the key rules, rates, and reporting requirements for US crypto holders."
       toc={[
-        { id: "irs-overview", title: "How the IRS Treats Cryptocurrency", level: 2 },
-        { id: "taxable-events", title: "What Triggers a Taxable Event", level: 2 },
-        { id: "capital-gains", title: "Capital Gains Tax Rates", level: 2 },
-        { id: "income-tax", title: "Crypto as Income", level: 2 },
-        { id: "reporting", title: "Reporting Requirements and 1099-DA", level: 2 },
-        { id: "defi-nft-taxes", title: "DeFi, NFT, and Staking Taxes", level: 2 },
-        { id: "tax-software", title: "Recommended Tax Software", level: 2 },
+        { id: "irs-overview", title: "irs-overview", level: 2 },
+        { id: "how-the-irs-treats-cryptocurrency", title: "How the IRS Treats Cryptocurrency", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
+        { id: "what-triggers-a-taxable-event", title: "What Triggers a Taxable Event", level: 2 },
+        { id: "capital-gains", title: "capital-gains", level: 2 },
+        { id: "capital-gains-tax-rates", title: "Capital Gains Tax Rates", level: 2 },
+        { id: "income-tax", title: "income-tax", level: 2 },
+        { id: "crypto-as-income", title: "Crypto as Income", level: 2 },
+        { id: "reporting", title: "reporting", level: 2 },
+        { id: "reporting-requirements-and-1099-da", title: "Reporting Requirements and 1099-DA", level: 2 },
+        { id: "defi-nft-taxes", title: "defi-nft-taxes", level: 2 },
+        { id: "defi-nft-and-staking-taxes", title: "DeFi, NFT, and Staking Taxes", level: 2 },
+        { id: "tax-software", title: "tax-software", level: 2 },
+        { id: "recommended-tax-software", title: "Recommended Tax Software", level: 2 }
       ]}
       faqs={[
         {

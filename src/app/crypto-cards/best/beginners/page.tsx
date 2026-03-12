@@ -60,7 +60,7 @@ export default function BestBeginnersCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Cards for Beginners ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -77,7 +77,7 @@ export default function BestBeginnersCardsPage() {
           your crypto portfolio with every purchase. We ranked these cards based on simplicity
           of setup, clarity of rewards, and overall ease of use.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">What Makes a Crypto Card Beginner-Friendly</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">What Makes a Crypto Card Beginner-Friendly</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           A beginner-friendly crypto card should have a simple application process, no staking
           requirements, transparent fee structures, straightforward rewards that are easy to
@@ -85,13 +85,13 @@ export default function BestBeginnersCardsPage() {
           identically to a traditional card at the point of sale so you do not need to explain
           anything special to merchants or worry about technical issues.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Our Top Picks</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Our Top Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          The <strong className="text-white">Coinbase Card</strong> is our top beginner pick
+          The <strong className="text-[var(--color-text)]">Coinbase Card</strong> is our top beginner pick
           thanks to its seamless integration with the Coinbase app, which millions of users
-          already know and trust. The <strong className="text-white">Rain Card</strong> is perfect
+          already know and trust. The <strong className="text-[var(--color-text)]">Rain Card</strong> is perfect
           for beginners who want a normal credit card with Bitcoin rewards and zero crypto
-          knowledge required. The <strong className="text-white">Gemini Credit Card</strong> rounds
+          knowledge required. The <strong className="text-[var(--color-text)]">Gemini Credit Card</strong> rounds
           out the top three with its familiar credit card structure and choice of 60+ reward tokens.
         </p>
       </div>
@@ -109,40 +109,40 @@ export default function BestBeginnersCardsPage() {
 
       {/* Getting Started Guide */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Getting Started with Your First Crypto Card</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Getting Started with Your First Crypto Card</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Choose your card type</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Choose your card type</h3>
               <p className="text-sm">Decide between a credit card (works like any credit card, earns crypto rewards) or a debit card (spends from your crypto balance). Credit cards are easier for true beginners.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Create an account with the issuer</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Create an account with the issuer</h3>
               <p className="text-sm">Sign up on Coinbase, Gemini, or Crypto.com. You will need to complete identity verification (KYC), which typically requires a photo ID and takes a few minutes.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Apply for the card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Apply for the card</h3>
               <p className="text-sm">For credit cards like Rain and Gemini, there will be a credit check. For debit cards like Coinbase, approval is typically instant once your account is verified.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">4.</span>
             <div>
-              <h3 className="text-white font-semibold">Select your reward preferences</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Select your reward preferences</h3>
               <p className="text-sm">If your card lets you choose which crypto to earn, start with Bitcoin or Ethereum. These are the most established, liquid, and widely understood cryptocurrencies.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">5.</span>
             <div>
-              <h3 className="text-white font-semibold">Start spending normally</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Start spending normally</h3>
               <p className="text-sm">Use your card for everyday purchases just like any other payment card. Your crypto rewards will accumulate automatically in your account with no extra effort.</p>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function BestBeginnersCardsPage() {
 
       {/* Methodology */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
         <p className="text-[var(--color-text-secondary)]">
           For beginner rankings, we prioritize ease of use above all else. Our evaluation
           weighs simplicity of application and onboarding (30%), clarity of reward structure
@@ -164,7 +164,7 @@ export default function BestBeginnersCardsPage() {
 
       {/* Related Links */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "How Crypto Cards Work", href: "/crypto-cards/learn/how-crypto-cards-work" },
@@ -177,7 +177,7 @@ export default function BestBeginnersCardsPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
-              <span className="text-white font-semibold">{link.title}</span>
+              <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
               <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                 Read more &rarr;
               </span>

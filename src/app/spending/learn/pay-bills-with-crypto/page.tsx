@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Pay Bills with Cryptocurrency (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Pay Bills with Cryptocurrency (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to pay rent, utilities, phone bills, and other recurring expenses with Bitcoin and cryptocurrency using bill payment platforms and crypto debit cards.",
 };
 
@@ -16,11 +16,16 @@ export default function PayBillsWithCryptoPage() {
       readTime="9 min"
       intro="Paying bills with cryptocurrency is becoming increasingly practical as dedicated platforms bridge the gap between digital assets and traditional billing systems. Whether you want to pay rent, utilities, phone bills, or insurance premiums, services like BitPay, Spritz Finance, and Living Room of Satoshi allow you to settle virtually any bill using Bitcoin and other cryptocurrencies, even when the biller does not accept crypto directly."
       toc={[
-        { id: "bill-pay-platforms", title: "Crypto Bill Payment Platforms", level: 2 },
-        { id: "types-of-bills", title: "Types of Bills You Can Pay", level: 2 },
-        { id: "how-it-works", title: "How Crypto Bill Pay Works", level: 2 },
-        { id: "fees-costs", title: "Fees and Cost Considerations", level: 2 },
-        { id: "tax-implications", title: "Tax Implications of Paying Bills", level: 2 },
+        { id: "bill-pay-platforms", title: "bill-pay-platforms", level: 2 },
+        { id: "crypto-bill-payment-platforms", title: "Crypto Bill Payment Platforms", level: 2 },
+        { id: "types-of-bills", title: "types-of-bills", level: 2 },
+        { id: "types-of-bills-you-can-pay", title: "Types of Bills You Can Pay", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-crypto-bill-pay-works", title: "How Crypto Bill Pay Works", level: 2 },
+        { id: "fees-costs", title: "fees-costs", level: 2 },
+        { id: "fees-and-cost-considerations", title: "Fees and Cost Considerations", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications-of-paying-bills", title: "Tax Implications of Paying Bills", level: 2 }
       ]}
       faqs={[
         { question: "Can I pay my mortgage with Bitcoin?", answer: "Some bill payment services like Spritz Finance and BitPay can send ACH payments to your mortgage servicer on your behalf while you pay in crypto. The process converts your crypto to fiat and delivers the payment as a standard bank transfer. Not all mortgage companies may accept third-party payments, so verify with your servicer first." },

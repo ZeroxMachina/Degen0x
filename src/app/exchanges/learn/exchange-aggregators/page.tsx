@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Exchange Aggregators Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Exchange Aggregators Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how crypto exchange aggregators work. DEX aggregators, price comparison tools, routing optimization, and getting the best execution prices.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeAggregators() {
       readTime="8 min read"
       intro="Exchange aggregators compare prices across multiple trading venues and route your trade through the best path for optimal execution. In a fragmented market with hundreds of exchanges and liquidity pools, aggregators solve the problem of finding the best price. This guide explains how aggregators work, the main types available, and how to use them effectively."
       toc={[
-        { id: "what-are-aggregators", title: "What Are Exchange Aggregators?", level: 2 },
+        { id: "what-are-aggregators", title: "what-are-aggregators", level: 2 },
+        { id: "what-are-exchange-aggregators", title: "What Are Exchange Aggregators?", level: 2 },
+        { id: "dex-aggregators", title: "dex-aggregators", level: 2 },
         { id: "dex-aggregators", title: "DEX Aggregators", level: 2 },
-        { id: "cex-aggregators", title: "CEX Aggregators and Comparison Tools", level: 2 },
-        { id: "how-routing-works", title: "How Routing Optimization Works", level: 2 },
+        { id: "cex-aggregators", title: "cex-aggregators", level: 2 },
+        { id: "cex-aggregators-and-comparison-tools", title: "CEX Aggregators and Comparison Tools", level: 2 },
+        { id: "how-routing-works", title: "how-routing-works", level: 2 },
+        { id: "how-routing-optimization-works", title: "How Routing Optimization Works", level: 2 },
+        { id: "top-aggregators", title: "top-aggregators", level: 2 },
         { id: "top-aggregators", title: "Top Aggregators", level: 2 },
-        { id: "benefits-risks", title: "Benefits and Risks", level: 2 },
-        { id: "using-effectively", title: "Using Aggregators Effectively", level: 2 },
+        { id: "benefits-risks", title: "benefits-risks", level: 2 },
+        { id: "benefits-and-risks", title: "Benefits and Risks", level: 2 },
+        { id: "using-effectively", title: "using-effectively", level: 2 },
+        { id: "using-aggregators-effectively", title: "Using Aggregators Effectively", level: 2 }
       ]}
       faqs={[
         { question: "Do aggregators charge extra fees?", answer: "Some DEX aggregators charge a small fee (0.05-0.5%) on top of the underlying swap fee. Others like 1inch offer fee-free routes. The savings from better pricing often exceed any aggregator fee, resulting in a net benefit for the user." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Genesis Block? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Genesis Block? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a genesis block is, why it is significant, and the history behind Bitcoin's famous Block 0.",
 };
@@ -17,11 +17,10 @@ export default function GenesisBlockPage() {
       readTime="4 min"
       intro="The genesis block is the first block ever created on a blockchain, designated as Block 0 (or Block 1 in some implementations). It is the foundation upon which every subsequent block is built. The genesis block is unique because it has no reference to a previous block. Bitcoin's genesis block, mined by Satoshi Nakamoto on January 3, 2009, is the most famous and contains a hidden message that has become iconic in crypto history."
       toc={[
-        { id: "definition", title: "What Is a Genesis Block?", level: 2 },
-        { id: "bitcoin-genesis", title: "Bitcoin's Genesis Block", level: 2 },
-        { id: "technical-details", title: "Technical Details", level: 2 },
-        { id: "other-genesis-blocks", title: "Other Notable Genesis Blocks", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-genesis-block", title: "What Is a Genesis Block?", level: 2 },
+        { id: "bitcoin-genesis", title: "bitcoin-genesis", level: 2 },
+        { id: "bitcoin", title: "Bitcoin", level: 2 }
       ]}
       faqs={[
         {
@@ -33,13 +32,13 @@ export default function GenesisBlockPage() {
           question: "Can the genesis block be changed?",
           answer:
             "No. The genesis block is hardcoded into the blockchain software. Every subsequent block ultimately references back to it. Changing the genesis block would create an entirely different blockchain that is incompatible with the original. It is the immutable starting point of the entire chain.",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "What Is a Block?", href: "/learn/glossary/block", category: "Glossary" },
         { title: "What Is Blockchain?", href: "/learn/glossary/blockchain", category: "Glossary" },
         { title: "What Is Mining?", href: "/learn/glossary/mining", category: "Glossary" },
-        { title: "What Is a Satoshi?", href: "/learn/glossary/satoshi", category: "Glossary" },
+        { title: "What Is a Satoshi?", href: "/learn/glossary/satoshi", category: "Glossary" }
       ]}
     >
       <h2 id="definition">What Is a Genesis Block?</h2>

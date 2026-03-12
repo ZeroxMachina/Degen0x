@@ -16,10 +16,14 @@ export default function SwitzerlandExchangesPage() {
       readTime="9 min"
       intro="Switzerland, home to 'Crypto Valley' in Zug, is one of the world's most crypto-friendly countries. With FINMA oversight, progressive blockchain legislation, and a strong financial infrastructure, Swiss users have access to both regulated local exchanges and global platforms with CHF and EUR support."
       toc={[
-        { id: "regulation", title: "FINMA & Swiss Crypto Regulation", level: 2 },
-        { id: "top-exchanges", title: "Best Exchanges for Swiss Users", level: 2 },
-        { id: "payment-methods", title: "CHF & EUR Payment Methods", level: 2 },
-        { id: "taxes", title: "Crypto Tax in Switzerland", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "finma-swiss-crypto-regulation", title: "FINMA & Swiss Crypto Regulation", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "best-exchanges-for-swiss-users", title: "Best Exchanges for Swiss Users", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "chf-eur-payment-methods", title: "CHF & EUR Payment Methods", level: 2 },
+        { id: "taxes", title: "taxes", level: 2 },
+        { id: "crypto-tax-in-switzerland", title: "Crypto Tax in Switzerland", level: 2 }
       ]}
       faqs={[
         {

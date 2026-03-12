@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is RATS (RATS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is RATS (RATS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about RATS (RATS), the BRC-20 meme token on Bitcoin. Discover how it works, tokenomics, use cases, and how to buy RATS.",
 };
 
 export default function RatsPage() {
   return (
-    <LearnPageLayout title="What Is RATS (RATS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="RATS is a BRC-20 meme token on the Bitcoin blockchain that has built a dedicated community within the Bitcoin Ordinals ecosystem. As one of the popular community-driven BRC-20 tokens, RATS represents the meme coin culture that has extended from Ethereum and Solana onto Bitcoin." toc={[{id:"what-is",title:"What Is RATS?",level:2},{id:"how-it-works",title:"How Does RATS Work?",level:2},{id:"tokenomics",title:"RATS Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy RATS",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is RATS?",answer:"RATS is a BRC-20 meme token on Bitcoin that has established a community within the Ordinals ecosystem. It is a community-driven speculative asset."},{question:"Where can I buy RATS?",answer:"RATS is available on select centralized exchanges and Bitcoin Ordinals marketplaces."},{question:"Is RATS a good investment?",answer:"RATS is a speculative meme token on experimental BRC-20 infrastructure. It carries high risk. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"ORDI",href:"/investing/crypto/ordi",category:"Investing"}]}>
+    <LearnPageLayout title="What Is RATS (RATS)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="RATS is a BRC-20 meme token on the Bitcoin blockchain that has built a dedicated community within the Bitcoin Ordinals ecosystem. As one of the popular community-driven BRC-20 tokens, RATS represents the meme coin culture that has extended from Ethereum and Solana onto Bitcoin." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-rats", title: "What Is RATS?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-rats-work", title: "How Does RATS Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "rats-tokenomics", title: "RATS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-rats", title: "How to Buy RATS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is RATS?",answer:"RATS is a BRC-20 meme token on Bitcoin that has established a community within the Ordinals ecosystem. It is a community-driven speculative asset."},{question:"Where can I buy RATS?",answer:"RATS is available on select centralized exchanges and Bitcoin Ordinals marketplaces."},{question:"Is RATS a good investment?",answer:"RATS is a speculative meme token on experimental BRC-20 infrastructure. It carries high risk. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"ORDI",href:"/investing/crypto/ordi",category:"Investing"}]}>
       <h2 id="what-is">What Is RATS?</h2>
       <p>RATS is a community-driven BRC-20 meme token on Bitcoin that emerged during the Ordinals boom. The token represents the expansion of meme coin culture onto the Bitcoin blockchain, a space previously associated primarily with store-of-value and digital gold narratives. RATS has built an engaged community that participates in the broader Bitcoin Ordinals ecosystem.</p>
       <p>As a BRC-20 token, RATS benefits from being natively on Bitcoin, the most secure and widely recognized blockchain, while tapping into the speculative energy of meme coin markets.</p>

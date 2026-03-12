@@ -12,11 +12,16 @@ export default function CryptoRecoveryScamsPage() {
   return (
     <LearnPageLayout title="Crypto Recovery Scams" categoryName="Crypto Education" categorySlug="learn" readTime="6 min" intro="Crypto recovery scams target people who have already lost cryptocurrency — through hacks, scams, lost keys, or exchange failures. Fraudulent recovery services promise to retrieve lost funds in exchange for upfront fees or sensitive information, resulting in victims being scammed a second time. These predatory operations exploit desperation and are nearly always fraudulent."
       toc={[
-        { id: "how-they-work", title: "How Recovery Scams Work", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-recovery-scams-work", title: "How Recovery Scams Work", level: 2 },
+        { id: "common-types", title: "common-types", level: 2 },
         { id: "common-types", title: "Common Types", level: 2 },
+        { id: "red-flags", title: "red-flags", level: 2 },
         { id: "red-flags", title: "Red Flags", level: 2 },
-        { id: "legitimate-options", title: "Legitimate Recovery Options", level: 2 },
-        { id: "protection", title: "Protecting Yourself", level: 2 },
+        { id: "legitimate-options", title: "legitimate-options", level: 2 },
+        { id: "legitimate-recovery-options", title: "Legitimate Recovery Options", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "protecting-yourself", title: "Protecting Yourself", level: 2 }
       ]}
       faqs={[
         { question: "Can stolen crypto actually be recovered?", answer: "In rare cases, law enforcement agencies with blockchain forensics capabilities have recovered stolen funds, particularly when they can be traced to regulated exchanges. However, this process is slow and uncertain. Any service guaranteeing crypto recovery is almost certainly a scam — legitimate recovery efforts make no guarantees." },

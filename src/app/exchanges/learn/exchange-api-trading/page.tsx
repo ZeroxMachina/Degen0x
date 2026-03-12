@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Getting Started with Exchange API Trading (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Getting Started with Exchange API Trading (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to use exchange APIs for crypto trading. API keys, REST vs WebSocket, rate limits, security, and building your first trading bot.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeAPITrading() {
       readTime="10 min read"
       intro="Exchange APIs allow you to automate crypto trading by connecting your own programs directly to exchange systems. Whether you want to build trading bots, automate portfolio rebalancing, or integrate exchange data into custom dashboards, API trading opens up capabilities far beyond what manual trading offers. This guide covers everything you need to get started."
       toc={[
-        { id: "what-is-api", title: "What Is API Trading?", level: 2 },
-        { id: "api-types", title: "REST vs WebSocket APIs", level: 2 },
-        { id: "api-keys", title: "API Keys and Permissions", level: 2 },
+        { id: "what-is-api", title: "what-is-api", level: 2 },
+        { id: "what-is-api-trading", title: "What Is API Trading?", level: 2 },
+        { id: "api-types", title: "api-types", level: 2 },
+        { id: "rest-vs-websocket-apis", title: "REST vs WebSocket APIs", level: 2 },
+        { id: "api-keys", title: "api-keys", level: 2 },
+        { id: "api-keys-and-permissions", title: "API Keys and Permissions", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
         { id: "getting-started", title: "Getting Started", level: 2 },
-        { id: "rate-limits", title: "Rate Limits and Best Practices", level: 2 },
-        { id: "security", title: "API Security", level: 2 },
-        { id: "exchanges-compared", title: "Best Exchanges for API Trading", level: 2 },
+        { id: "rate-limits", title: "rate-limits", level: 2 },
+        { id: "rate-limits-and-best-practices", title: "Rate Limits and Best Practices", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "api-security", title: "API Security", level: 2 },
+        { id: "exchanges-compared", title: "exchanges-compared", level: 2 },
+        { id: "best-exchanges-for-api-trading", title: "Best Exchanges for API Trading", level: 2 }
       ]}
       faqs={[
         { question: "Do I need to know how to code?", answer: "Yes, basic programming knowledge is required for direct API trading. Python is the most popular language for crypto trading bots. However, platforms like 3Commas and Pionex offer no-code bot interfaces that use APIs behind the scenes." },

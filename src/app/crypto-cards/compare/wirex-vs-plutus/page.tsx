@@ -17,7 +17,7 @@ const items: ComparisonItem[] = [
     name: "Wirex Card",
     slug: "wirex-card",
     rating: 3.9,
-    affiliateUrl: "https://cryptodegen.com/go/wirex-card",
+    affiliateUrl: "https://degen0x.com/go/wirex-card",
     features: {
       "Cashback Rate": "Up to 8% in WXT",
       "Annual Fee": "Free (premium from $9.99/mo)",
@@ -34,7 +34,7 @@ const items: ComparisonItem[] = [
     name: "Plutus Card",
     slug: "plutus-card",
     rating: 4.1,
-    affiliateUrl: "https://cryptodegen.com/go/plutus-card",
+    affiliateUrl: "https://degen0x.com/go/plutus-card",
     features: {
       "Cashback Rate": "Up to 8% in PLU",
       "Annual Fee": "Free (Pro from EUR 14.99/mo)",
@@ -73,7 +73,7 @@ export default function WirexVsPlutusPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Wirex vs Plutus Card ({CURRENT_YEAR})
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -88,7 +88,7 @@ export default function WirexVsPlutusPage() {
       <ComparisonTable items={items} features={features} title="Wirex Card vs Plutus Card" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Cashback and Token Value</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Cashback and Token Value</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Both cards offer up to 8% cashback, but the tokens differ in value and utility. Wirex pays in
           WXT, which has utility within the Wirex ecosystem for fee discounts and yield products. Plutus
@@ -96,12 +96,12 @@ export default function WirexVsPlutusPage() {
           lower liquidity but offers a non-custodial approach where you control your reward tokens.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Plutus Card</strong> &mdash; The decentralized,
+          <strong className="text-[var(--color-text)]">Winner: Plutus Card</strong> &mdash; The decentralized,
           non-custodial reward model gives PLU holders more control. However, Wirex&apos;s WXT has
           more liquidity for those who want to sell rewards quickly.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Subscription Plans</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Subscription Plans</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Both cards offer free tiers with enhanced plans available. Wirex starts premium plans at $9.99
           per month, while Plutus Pro starts at EUR 14.99 per month and Premium at EUR 49.99. The paid
@@ -109,11 +109,11 @@ export default function WirexVsPlutusPage() {
           premium features more accessible to moderate spenders.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Wirex Card</strong> &mdash; Lower premium plan pricing
+          <strong className="text-[var(--color-text)]">Winner: Wirex Card</strong> &mdash; Lower premium plan pricing
           makes enhanced features more accessible.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Brand Perks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Brand Perks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Plutus stands out with its curated perk selection. Users can choose from rebates on Netflix,
           Spotify, Deliveroo, Curve, and other popular services. These perks are selected monthly and
@@ -121,12 +121,12 @@ export default function WirexVsPlutusPage() {
           but does not have a comparable brand perk rebate system.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Plutus Card</strong> &mdash; The brand perk rebates
+          <strong className="text-[var(--color-text)]">Winner: Plutus Card</strong> &mdash; The brand perk rebates
           add significant tangible value, especially for users who already subscribe to services like
           Netflix or Spotify.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Multi-Currency and Travel</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Multi-Currency and Travel</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Wirex is the clear leader for travel and multi-currency use. It supports over 50 fiat and
           cryptocurrencies with in-app exchange, zero foreign transaction fees, and availability in 130
@@ -134,12 +134,12 @@ export default function WirexVsPlutusPage() {
           For frequent travelers, Wirex is significantly more versatile.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Wirex Card</strong> &mdash; Superior multi-currency
+          <strong className="text-[var(--color-text)]">Winner: Wirex Card</strong> &mdash; Superior multi-currency
           support and broader geographic reach make Wirex the travel card of choice.
         </p>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mt-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Choose the Plutus Card if you are based in the EEA or UK, value decentralized rewards, and
             want tangible brand perks like Netflix and Spotify rebates. Its non-custodial philosophy and

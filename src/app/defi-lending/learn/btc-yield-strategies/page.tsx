@@ -17,11 +17,16 @@ export default function BtcYieldStrategiesPage() {
       readTime="12 min"
       intro="Bitcoin holders have historically had fewer yield options than ETH holders, but the landscape has expanded dramatically with wrapped BTC on Ethereum, native BTC DeFi on emerging Bitcoin L2s, and cross-chain strategies. This guide explores all major approaches to earning yield on your Bitcoin holdings, from conservative lending to cutting-edge Bitcoin-native DeFi."
       toc={[
-        { id: "wrapped-btc", title: "Wrapped BTC Strategies", level: 2 },
-        { id: "lending-btc", title: "BTC Lending on DeFi", level: 2 },
-        { id: "lp-strategies", title: "BTC Liquidity Provision", level: 2 },
-        { id: "bitcoin-l2", title: "Bitcoin L2 DeFi", level: 2 },
-        { id: "risk-considerations", title: "Risk Considerations", level: 2 },
+        { id: "wrapped-btc", title: "wrapped-btc", level: 2 },
+        { id: "wrapped-btc-strategies", title: "Wrapped BTC Strategies", level: 2 },
+        { id: "lending-btc", title: "lending-btc", level: 2 },
+        { id: "btc-lending-on-defi", title: "BTC Lending on DeFi", level: 2 },
+        { id: "lp-strategies", title: "lp-strategies", level: 2 },
+        { id: "btc-liquidity-provision", title: "BTC Liquidity Provision", level: 2 },
+        { id: "bitcoin-l2", title: "bitcoin-l2", level: 2 },
+        { id: "bitcoin-l2-defi", title: "Bitcoin L2 DeFi", level: 2 },
+        { id: "risk-considerations", title: "risk-considerations", level: 2 },
+        { id: "risk-considerations", title: "Risk Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is the best way to earn yield on Bitcoin?", answer: "The safest approach is lending wBTC on established protocols like Aave V3, earning 0.5-3% APY. For higher yields, consider BTC LP positions on Curve or Uniswap, or explore emerging Bitcoin L2 DeFi opportunities which carry more risk." },

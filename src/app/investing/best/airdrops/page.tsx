@@ -41,7 +41,7 @@ export default function BestAirdropsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Airdrops for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -58,7 +58,7 @@ export default function BestAirdropsPage() {
       <TableOfContents items={toc} />
 
       <section id="upcoming" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Potential Upcoming Airdrops</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Potential Upcoming Airdrops</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           These protocols have not yet launched tokens and may distribute airdrops to early users.
           There is no guarantee any of these will airdrop, and criteria are speculative.
@@ -67,16 +67,16 @@ export default function BestAirdropsPage() {
           {potentialAirdrops.map((drop) => (
             <div key={drop.name} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="text-lg font-semibold text-white">{drop.name}</h3>
+                <h3 className="text-lg font-semibold text-[var(--color-text)]">{drop.name}</h3>
                 <span className="text-xs px-2 py-1 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)]">
                   {drop.category}
                 </span>
               </div>
               <p className="text-sm text-[var(--color-text-secondary)] mb-2">
-                <strong className="text-white">What to do:</strong> {drop.action}
+                <strong className="text-[var(--color-text)]">What to do:</strong> {drop.action}
               </p>
               <p className="text-sm text-[var(--color-text-secondary)]">
-                <strong className="text-white">Capital risk:</strong> {drop.risk}
+                <strong className="text-[var(--color-text)]">Capital risk:</strong> {drop.risk}
               </p>
             </div>
           ))}
@@ -84,7 +84,7 @@ export default function BestAirdropsPage() {
       </section>
 
       <section id="how-to-qualify" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Qualify for Airdrops</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Qualify for Airdrops</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Most retroactive airdrops reward genuine protocol usage. To maximize your chances,
           use protocols organically rather than just doing the minimum. Bridge assets to new
@@ -101,7 +101,7 @@ export default function BestAirdropsPage() {
       </section>
 
       <section id="strategies" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Airdrop Farming Strategies</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Airdrop Farming Strategies</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Focus on protocols backed by top-tier VCs that have not yet launched tokens. These
           projects have the resources to conduct meaningful airdrops. Layer 2 networks, cross-chain
@@ -118,7 +118,7 @@ export default function BestAirdropsPage() {
       </section>
 
       <section id="safety" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Airdrop Safety Guide</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Airdrop Safety Guide</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Be extremely cautious of scam airdrops. Legitimate projects never ask you to send
           crypto to receive an airdrop. Never connect your wallet to unknown websites claiming
@@ -129,7 +129,7 @@ export default function BestAirdropsPage() {
       </section>
 
       <section id="taxes" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Airdrop Tax Implications</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Airdrop Tax Implications</h2>
         <p className="text-[var(--color-text-secondary)]">
           In the US, airdrops are generally taxable as ordinary income at their fair market value
           when you receive them (or when you gain dominion and control over them). Your cost basis

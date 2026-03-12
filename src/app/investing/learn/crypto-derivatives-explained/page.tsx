@@ -16,10 +16,14 @@ export default function CryptoDerivativesExplainedPage() {
       readTime="12 min"
       intro="Crypto derivatives are financial instruments whose value is derived from the price of an underlying cryptocurrency. They include futures, options, and perpetual swaps, enabling traders to speculate on price movements, hedge positions, and access leverage. Derivatives now account for the majority of crypto trading volume globally."
       toc={[
-        { id: "what-are-derivatives", title: "What Are Crypto Derivatives?", level: 2 },
-        { id: "types", title: "Types of Crypto Derivatives", level: 2 },
-        { id: "how-to-use", title: "How Traders Use Derivatives", level: 2 },
-        { id: "risks", title: "Risks of Crypto Derivatives", level: 2 },
+        { id: "what-are-derivatives", title: "what-are-derivatives", level: 2 },
+        { id: "what-are-crypto-derivatives", title: "What Are Crypto Derivatives?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-crypto-derivatives", title: "Types of Crypto Derivatives", level: 2 },
+        { id: "how-to-use", title: "how-to-use", level: 2 },
+        { id: "how-traders-use-derivatives", title: "How Traders Use Derivatives", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-crypto-derivatives", title: "Risks of Crypto Derivatives", level: 2 }
       ]}
       faqs={[
         { question: "What are perpetual swaps?", answer: "Perpetual swaps (perps) are crypto-native derivative contracts that have no expiration date, unlike traditional futures. They use a funding rate mechanism to keep the contract price aligned with the spot price. When longs pay shorts (positive funding), it means the market is bullish; when shorts pay longs (negative funding), the market is bearish." },

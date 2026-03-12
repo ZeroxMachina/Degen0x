@@ -10,7 +10,7 @@ const product = {
   pros: ["Bitcoin cashback on every purchase", "No annual or monthly fees", "No foreign transaction fees", "Simple and clean mobile app"],
   cons: ["Only available in Canada", "Bitcoin-only rewards", "Lower cashback rates than some competitors", "Limited advanced features"],
   bestFor: "Canadian users who want a simple, fee-free way to earn Bitcoin on everyday spending",
-  affiliateUrl: "https://cryptodegen.com/go/shakepay",
+  affiliateUrl: "https://degen0x.com/go/shakepay",
   category: "crypto-cards",
 };
 

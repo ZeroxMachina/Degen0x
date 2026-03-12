@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `TrueFi Review (${CURRENT_YEAR}): Uncollateralized DeFi Lending | CryptoDegen`,
+  title: `TrueFi Review (${CURRENT_YEAR}): Uncollateralized DeFi Lending | degen0x`,
   description: "In-depth TrueFi review covering uncollateralized institutional lending, TRU token staking, on-chain credit scoring, and managed portfolio products.",
 };
 

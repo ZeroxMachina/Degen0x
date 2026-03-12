@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Swell (SWELL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Swell (SWELL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Swell (SWELL), the liquid staking and restaking protocol. Discover how it works, tokenomics, use cases, and how to buy SWELL.",
 };
 
@@ -16,12 +16,18 @@ export default function SwellPage() {
       readTime="8 min read"
       intro="Swell is a non-custodial liquid staking and restaking protocol on Ethereum that issues swETH (liquid staking token) and rswETH (liquid restaking token). Swell is also building its own Layer 2 chain using restaked ETH for security, creating a vertically integrated staking, restaking, and scaling platform within the Ethereum ecosystem."
       toc={[
-        { id: "what-is", title: "What Is Swell?", level: 2 },
-        { id: "how-it-works", title: "How Does Swell Work?", level: 2 },
-        { id: "tokenomics", title: "SWELL Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SWELL", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-swell", title: "What Is Swell?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-swell-work", title: "How Does Swell Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "swell-tokenomics", title: "SWELL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-swell", title: "How to Buy SWELL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Swell?", answer: "Swell is a liquid staking and restaking protocol offering swETH (staking) and rswETH (restaking) tokens, plus its own L2 chain secured by restaked ETH for integrated Ethereum scaling." },

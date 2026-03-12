@@ -71,7 +71,7 @@ export default function UKExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in the UK ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -88,7 +88,7 @@ export default function UKExchangesPage() {
           to most of the world&apos;s leading exchanges. We have tested and ranked the best
           exchanges for UK-based traders.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">UK Regulatory Framework</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">UK Regulatory Framework</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           The FCA requires all crypto asset businesses operating in the UK to be registered
           and comply with anti-money laundering regulations. Since October 2023, the FCA has
@@ -97,7 +97,7 @@ export default function UKExchangesPage() {
           global crypto hub with upcoming comprehensive legislation covering stablecoins,
           staking, and exchange regulation.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">What UK Traders Should Look For</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">What UK Traders Should Look For</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Beyond FCA registration, UK traders should prioritize exchanges that offer free GBP
           deposits via Faster Payments, GBP trading pairs to avoid unnecessary conversion fees,
@@ -118,22 +118,22 @@ export default function UKExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods for UK Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods for UK Users</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Faster Payments (Bank Transfer)</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Faster Payments (Bank Transfer)</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Free on most exchanges. Arrives in minutes. The best option for UK users.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Debit Card</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Debit Card</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant purchases. Fees typically 1.5-3.5%. Good for small, time-sensitive buys.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Open Banking</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Open Banking</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant bank-linked payments. Supported by Kraken and others. Free or low-cost.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Credit Card</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Credit Card</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Blocked by most UK banks for crypto purchases. Not recommended.</p>
           </div>
         </div>

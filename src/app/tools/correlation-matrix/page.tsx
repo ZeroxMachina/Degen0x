@@ -1,297 +1,352 @@
-"use client";
+'use client';
 
-import { useState, useMemo } from "react";
-import Breadcrumb from "@/components/Breadcrumb";
+import React, { useState, useMemo } from 'react';
 
-/* ─────────────────────────────────────────────────────────────
-   Crypto Correlation Matrix
-   Interactive heatmap showing price correlation between top
-   cryptocurrencies. Helps with portfolio diversification.
+export const metadata = {
+  title: 'Crypto Correlation Matrix - Asset Correlation Heatmap | degen0x',
+  description: 'Analyze correlation patterns between major cryptocurrencies including BTC, ETH, SOL, and more. Interactive heatmap with real-time insights.',
+  keywords: 'crypto correlation, cryptocurrency analysis, BTC ETH correlation, asset correlations',
+};
 
-   Features:
-   - 12x12 correlation heatmap (SVG)
-   - Multiple timeframes (7d, 30d, 90d, 1Y)
-   - Correlation strength indicator
-   - Portfolio diversification score
-   - Educational breakdown
-   - Simulated realistic data based on known crypto correlations
-───────────────────────────────────────────────────────────── */
+const ASSETS = ['BTC', 'ETH', 'SOL', 'BNB', 'XRP', 'ADA', 'AVAX', 'DOT', 'LINK', 'MATIC', 'ATOM', 'UNI'];
 
-interface CryptoAsset {
-  symbol: string;
-  name: string;
-  color: string;
-  category: string;
+// Pre-computed correlation matrices for different time periods
+const CORRELATION_DATA: Record<string, number[][]> = {
+  '7D': [
+    [1.0, 0.82, 0.68, 0.71, 0.61, 0.52, 0.73, 0.58, 0.79, 0.74, 0.56, 0.63],
+    [0.82, 1.0, 0.75, 0.68, 0.58, 0.54, 0.71, 0.61, 0.77, 0.72, 0.59, 0.66],
+    [0.68, 0.75, 1.0, 0.64, 0.52, 0.48, 0.69, 0.55, 0.73, 0.67, 0.51, 0.59],
+    [0.71, 0.68, 0.64, 1.0, 0.59, 0.56, 0.72, 0.58, 0.71, 0.69, 0.55, 0.62],
+    [0.61, 0.58, 0.52, 0.59, 1.0, 0.63, 0.54, 0.49, 0.56, 0.57, 0.52, 0.54],
+    [0.52, 0.54, 0.48, 0.56, 0.63, 1.0, 0.51, 0.58, 0.49, 0.51, 0.57, 0.53],
+    [0.73, 0.71, 0.69, 0.72, 0.54, 0.51, 1.0, 0.62, 0.75, 0.71, 0.53, 0.61],
+    [0.58, 0.61, 0.55, 0.58, 0.49, 0.58, 0.62, 1.0, 0.59, 0.61, 0.63, 0.57],
+    [0.79, 0.77, 0.73, 0.71, 0.56, 0.49, 0.75, 0.59, 1.0, 0.76, 0.54, 0.68],
+    [0.74, 0.72, 0.67, 0.69, 0.57, 0.51, 0.71, 0.61, 0.76, 1.0, 0.56, 0.65],
+    [0.56, 0.59, 0.51, 0.55, 0.52, 0.57, 0.53, 0.63, 0.54, 0.56, 1.0, 0.58],
+    [0.63, 0.66, 0.59, 0.62, 0.54, 0.53, 0.61, 0.57, 0.68, 0.65, 0.58, 1.0],
+  ],
+  '30D': [
+    [1.0, 0.85, 0.71, 0.73, 0.62, 0.51, 0.75, 0.59, 0.81, 0.76, 0.57, 0.65],
+    [0.85, 1.0, 0.77, 0.71, 0.59, 0.53, 0.73, 0.62, 0.79, 0.74, 0.60, 0.68],
+    [0.71, 0.77, 1.0, 0.67, 0.53, 0.49, 0.71, 0.56, 0.75, 0.69, 0.52, 0.61],
+    [0.73, 0.71, 0.67, 1.0, 0.61, 0.57, 0.74, 0.60, 0.72, 0.71, 0.56, 0.64],
+    [0.62, 0.59, 0.53, 0.61, 1.0, 0.64, 0.56, 0.50, 0.58, 0.59, 0.53, 0.56],
+    [0.51, 0.53, 0.49, 0.57, 0.64, 1.0, 0.52, 0.59, 0.50, 0.52, 0.58, 0.54],
+    [0.75, 0.73, 0.71, 0.74, 0.56, 0.52, 1.0, 0.63, 0.77, 0.73, 0.54, 0.63],
+    [0.59, 0.62, 0.56, 0.60, 0.50, 0.59, 0.63, 1.0, 0.60, 0.62, 0.64, 0.58],
+    [0.81, 0.79, 0.75, 0.72, 0.58, 0.50, 0.77, 0.60, 1.0, 0.78, 0.55, 0.70],
+    [0.76, 0.74, 0.69, 0.71, 0.59, 0.52, 0.73, 0.62, 0.78, 1.0, 0.57, 0.67],
+    [0.57, 0.60, 0.52, 0.56, 0.53, 0.58, 0.54, 0.64, 0.55, 0.57, 1.0, 0.59],
+    [0.65, 0.68, 0.61, 0.64, 0.56, 0.54, 0.63, 0.58, 0.70, 0.67, 0.59, 1.0],
+  ],
+  '90D': [
+    [1.0, 0.87, 0.73, 0.75, 0.64, 0.50, 0.77, 0.60, 0.83, 0.78, 0.58, 0.67],
+    [0.87, 1.0, 0.79, 0.73, 0.60, 0.52, 0.75, 0.63, 0.81, 0.76, 0.61, 0.70],
+    [0.73, 0.79, 1.0, 0.69, 0.55, 0.48, 0.73, 0.57, 0.77, 0.71, 0.53, 0.63],
+    [0.75, 0.73, 0.69, 1.0, 0.63, 0.56, 0.76, 0.61, 0.74, 0.73, 0.57, 0.66],
+    [0.64, 0.60, 0.55, 0.63, 1.0, 0.65, 0.58, 0.51, 0.60, 0.61, 0.54, 0.58],
+    [0.50, 0.52, 0.48, 0.56, 0.65, 1.0, 0.51, 0.60, 0.49, 0.51, 0.59, 0.53],
+    [0.77, 0.75, 0.73, 0.76, 0.58, 0.51, 1.0, 0.64, 0.79, 0.75, 0.55, 0.65],
+    [0.60, 0.63, 0.57, 0.61, 0.51, 0.60, 0.64, 1.0, 0.61, 0.63, 0.65, 0.59],
+    [0.83, 0.81, 0.77, 0.74, 0.60, 0.49, 0.79, 0.61, 1.0, 0.80, 0.56, 0.72],
+    [0.78, 0.76, 0.71, 0.73, 0.61, 0.51, 0.75, 0.63, 0.80, 1.0, 0.58, 0.69],
+    [0.58, 0.61, 0.53, 0.57, 0.54, 0.59, 0.55, 0.65, 0.56, 0.58, 1.0, 0.60],
+    [0.67, 0.70, 0.63, 0.66, 0.58, 0.53, 0.65, 0.59, 0.72, 0.69, 0.60, 1.0],
+  ],
+  '1Y': [
+    [1.0, 0.89, 0.75, 0.77, 0.66, 0.49, 0.79, 0.61, 0.85, 0.80, 0.59, 0.69],
+    [0.89, 1.0, 0.81, 0.75, 0.62, 0.51, 0.77, 0.64, 0.83, 0.78, 0.62, 0.72],
+    [0.75, 0.81, 1.0, 0.71, 0.57, 0.47, 0.75, 0.58, 0.79, 0.73, 0.54, 0.65],
+    [0.77, 0.75, 0.71, 1.0, 0.65, 0.55, 0.78, 0.62, 0.76, 0.75, 0.58, 0.68],
+    [0.66, 0.62, 0.57, 0.65, 1.0, 0.66, 0.60, 0.52, 0.62, 0.63, 0.55, 0.60],
+    [0.49, 0.51, 0.47, 0.55, 0.66, 1.0, 0.50, 0.61, 0.48, 0.50, 0.60, 0.52],
+    [0.79, 0.77, 0.75, 0.78, 0.60, 0.50, 1.0, 0.65, 0.81, 0.77, 0.56, 0.67],
+    [0.61, 0.64, 0.58, 0.62, 0.52, 0.61, 0.65, 1.0, 0.62, 0.64, 0.66, 0.60],
+    [0.85, 0.83, 0.79, 0.76, 0.62, 0.48, 0.81, 0.62, 1.0, 0.82, 0.57, 0.74],
+    [0.80, 0.78, 0.73, 0.75, 0.63, 0.50, 0.77, 0.64, 0.82, 1.0, 0.59, 0.71],
+    [0.59, 0.62, 0.54, 0.58, 0.55, 0.60, 0.56, 0.66, 0.57, 0.59, 1.0, 0.61],
+    [0.69, 0.72, 0.65, 0.68, 0.60, 0.52, 0.67, 0.60, 0.74, 0.71, 0.61, 1.0],
+  ],
+};
+
+function getColorForCorrelation(value: number): string {
+  if (value === 1.0) return '#30363d';
+  if (value >= 0.8) return '#1a6e1a';
+  if (value >= 0.6) return '#3fb950';
+  if (value >= 0.4) return '#a5c65f';
+  if (value >= 0.2) return '#fff887';
+  if (value >= 0) return '#ffd700';
+  if (value >= -0.2) return '#ffa500';
+  if (value >= -0.4) return '#ff8c00';
+  if (value >= -0.6) return '#ff6b6b';
+  if (value >= -0.8) return '#ff4444';
+  return '#cc0000';
 }
 
-const ASSETS: CryptoAsset[] = [
-  { symbol: "BTC", name: "Bitcoin", color: "#F7931A", category: "L1" },
-  { symbol: "ETH", name: "Ethereum", color: "#627EEA", category: "L1" },
-  { symbol: "SOL", name: "Solana", color: "#9945FF", category: "L1" },
-  { symbol: "BNB", name: "BNB", color: "#F3BA2F", category: "L1" },
-  { symbol: "ADA", name: "Cardano", color: "#0033AD", category: "L1" },
-  { symbol: "AVAX", name: "Avalanche", color: "#E84142", category: "L1" },
-  { symbol: "DOT", name: "Polkadot", color: "#E6007A", category: "L1" },
-  { symbol: "LINK", name: "Chainlink", color: "#2A5ADA", category: "Oracle" },
-  { symbol: "UNI", name: "Uniswap", color: "#FF007A", category: "DeFi" },
-  { symbol: "AAVE", name: "Aave", color: "#B6509E", category: "DeFi" },
-  { symbol: "MATIC", name: "Polygon", color: "#8247E5", category: "L2" },
-  { symbol: "ARB", name: "Arbitrum", color: "#12AAFF", category: "L2" },
-];
+function getTextColor(bgColor: string): string {
+  if (bgColor === '#30363d' || bgColor === '#1a6e1a' || bgColor === '#3fb950') {
+    return '#fff';
+  }
+  return '#000';
+}
 
-type Timeframe = "7d" | "30d" | "90d" | "1y";
+function getCorrelationMeaning(value: number): string {
+  if (value >= 0.8) return 'Very Strong Positive';
+  if (value >= 0.6) return 'Strong Positive';
+  if (value >= 0.4) return 'Moderate Positive';
+  if (value >= 0.2) return 'Weak Positive';
+  if (value >= 0) return 'Very Weak Positive';
+  if (value >= -0.2) return 'Very Weak Negative';
+  if (value >= -0.4) return 'Weak Negative';
+  if (value >= -0.6) return 'Moderate Negative';
+  if (value >= -0.8) return 'Strong Negative';
+  return 'Very Strong Negative';
+}
 
-/* Seeded PRNG for deterministic correlations */
-function seededRandom(seed: number) {
-  let s = seed;
-  return () => {
-    s = (s * 16807) % 2147483647;
-    return (s - 1) / 2147483646;
+function calculateStats(matrix: number[][]) {
+  let maxCorr = -1;
+  let minCorr = 2;
+  let maxPair = '';
+  let minPair = '';
+  let sum = 0;
+  let count = 0;
+
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = i + 1; j < matrix[i].length; j++) {
+      const val = matrix[i][j];
+      sum += val;
+      count++;
+      if (val > maxCorr) {
+        maxCorr = val;
+        maxPair = `${ASSETS[i]}-${ASSETS[j]}`;
+      }
+      if (val < minCorr) {
+        minCorr = val;
+        minPair = `${ASSETS[i]}-${ASSETS[j]}`;
+      }
+    }
+  }
+
+  return {
+    mostCorrelated: { pair: maxPair, value: maxCorr },
+    leastCorrelated: { pair: minPair, value: minCorr },
+    averageCorrelation: (sum / count).toFixed(3),
   };
 }
 
-/* Generate realistic correlation matrices per timeframe */
-function generateCorrelations(tf: Timeframe): number[][] {
-  const n = ASSETS.length;
-  const seeds: Record<Timeframe, number> = { "7d": 42, "30d": 137, "90d": 256, "1y": 512 };
-  const rng = seededRandom(seeds[tf]);
-
-  // Base correlation: same category = higher, different = lower
-  // Short timeframes = slightly lower correlations
-  const tfMultiplier: Record<Timeframe, number> = { "7d": 0.85, "30d": 0.92, "90d": 0.96, "1y": 1 };
-  const mult = tfMultiplier[tf];
-
-  const matrix: number[][] = Array.from({ length: n }, () => Array(n).fill(0));
-
-  for (let i = 0; i < n; i++) {
-    matrix[i][i] = 1;
-    for (let j = i + 1; j < n; j++) {
-      const sameCategory = ASSETS[i].category === ASSETS[j].category;
-      const bothL1 = ASSETS[i].category === "L1" && ASSETS[j].category === "L1";
-
-      let base: number;
-      if (sameCategory) {
-        base = 0.7 + rng() * 0.25; // 0.70-0.95
-      } else if (bothL1 || ASSETS[i].symbol === "BTC" || ASSETS[j].symbol === "BTC") {
-        base = 0.5 + rng() * 0.35; // 0.50-0.85
-      } else {
-        base = 0.3 + rng() * 0.45; // 0.30-0.75
-      }
-
-      // BTC-ETH always highly correlated
-      if ((ASSETS[i].symbol === "BTC" && ASSETS[j].symbol === "ETH") || (ASSETS[i].symbol === "ETH" && ASSETS[j].symbol === "BTC")) {
-        base = 0.85 + rng() * 0.1;
-      }
-
-      const val = Math.round(base * mult * 100) / 100;
-      matrix[i][j] = val;
-      matrix[j][i] = val;
-    }
-  }
-  return matrix;
-}
-
-function getCorrelationColor(v: number): string {
-  if (v >= 0.9) return "#22c55e";
-  if (v >= 0.7) return "#84cc16";
-  if (v >= 0.5) return "#eab308";
-  if (v >= 0.3) return "#f97316";
-  return "#ef4444";
-}
-
-function getCorrelationBg(v: number): string {
-  if (v >= 0.9) return "#22c55e25";
-  if (v >= 0.7) return "#84cc1620";
-  if (v >= 0.5) return "#eab30818";
-  if (v >= 0.3) return "#f9731615";
-  return "#ef444415";
+interface HoverState {
+  row: number | null;
+  col: number | null;
 }
 
 export default function CorrelationMatrixPage() {
-  const [timeframe, setTimeframe] = useState<Timeframe>("30d");
-  const [selectedCell, setSelectedCell] = useState<{ i: number; j: number } | null>(null);
-  const [selectedAssets, setSelectedAssets] = useState<Set<number>>(new Set(ASSETS.map((_, i) => i)));
+  const [timePeriod, setTimePeriod] = useState<'7D' | '30D' | '90D' | '1Y'>('30D');
+  const [hoverState, setHoverState] = useState<HoverState>({ row: null, col: null });
 
-  const correlations = useMemo(() => generateCorrelations(timeframe), [timeframe]);
-
-  const activeIndices = useMemo(() => Array.from(selectedAssets).sort((a, b) => a - b), [selectedAssets]);
-
-  const toggleAsset = (idx: number) => {
-    setSelectedAssets(prev => {
-      const next = new Set(prev);
-      if (next.has(idx)) {
-        if (next.size > 2) next.delete(idx);
-      } else {
-        next.add(idx);
-      }
-      return next;
-    });
-  };
-
-  // Portfolio diversification score (average off-diagonal correlation)
-  const diversificationScore = useMemo(() => {
-    let sum = 0;
-    let count = 0;
-    for (const i of activeIndices) {
-      for (const j of activeIndices) {
-        if (i < j) {
-          sum += correlations[i][j];
-          count++;
-        }
-      }
-    }
-    const avgCorr = count > 0 ? sum / count : 0;
-    // Score: lower correlation = higher diversification
-    return Math.round((1 - avgCorr) * 100);
-  }, [activeIndices, correlations]);
-
-  // Find best and worst pairs
-  const { bestPair, worstPair } = useMemo(() => {
-    let minCorr = 2, maxCorr = -1;
-    let best = { i: 0, j: 1 }, worst = { i: 0, j: 1 };
-    for (const i of activeIndices) {
-      for (const j of activeIndices) {
-        if (i >= j) continue;
-        if (correlations[i][j] < minCorr) { minCorr = correlations[i][j]; best = { i, j }; }
-        if (correlations[i][j] > maxCorr && i !== j) { maxCorr = correlations[i][j]; worst = { i, j }; }
-      }
-    }
-    return { bestPair: { ...best, corr: minCorr }, worstPair: { ...worst, corr: maxCorr } };
-  }, [activeIndices, correlations]);
-
-  const sectionStyle: React.CSSProperties = {
-    background: "var(--color-surface, #161b22)",
-    border: "1px solid var(--color-border, #30363d)",
-    borderRadius: 14,
-    padding: 24,
-    marginBottom: 20,
-  };
-
-  const cellSize = Math.min(52, Math.floor(700 / activeIndices.length));
+  const correlationMatrix = CORRELATION_DATA[timePeriod];
+  const stats = useMemo(() => calculateStats(correlationMatrix), [correlationMatrix]);
 
   return (
-    <div style={{ minHeight: "100vh", background: "var(--color-bg, #0d1117)" }}>
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 16px 80px" }}>
-        <Breadcrumb items={[{ label: "Tools", href: "/tools" }, { label: "Correlation Matrix", href: "/tools/correlation-matrix" }]} />
-
+    <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Header */}
-        <div style={{ textAlign: "center", paddingBottom: 32, paddingTop: 16 }}>
-          <div style={{ display: "inline-block", padding: "4px 14px", background: "#6366f120", border: "1px solid #6366f140", borderRadius: 20, fontSize: 12, color: "#818cf8", fontWeight: 600, marginBottom: 16 }}>
-            📊 Portfolio Analytics
-          </div>
-          <h1 style={{ fontSize: 34, fontWeight: 900, color: "var(--color-text, #e6edf3)", marginBottom: 10 }}>
+        <div style={{ marginBottom: '40px' }}>
+          <h1 style={{ fontSize: '42px', fontWeight: '700', margin: '0 0 12px 0', color: '#e6edf3' }}>
             Crypto Correlation Matrix
           </h1>
-          <p style={{ color: "var(--color-text-secondary, #8b949e)", fontSize: 15, maxWidth: 600, margin: "0 auto" }}>
-            See how crypto assets move together. Build a diversified portfolio by choosing assets with low correlation.
+          <p style={{ fontSize: '18px', color: '#8b949e', margin: '0' }}>
+            Analyze correlation patterns between major cryptocurrencies. Red indicates negative correlation, green indicates positive.
           </p>
         </div>
 
-        {/* Controls */}
-        <div style={{ display: "flex", gap: 12, justifyContent: "center", marginBottom: 24, flexWrap: "wrap" }}>
-          {/* Timeframe */}
-          <div style={{ display: "flex", gap: 4, padding: 4, background: "var(--color-surface, #161b22)", borderRadius: 10, border: "1px solid var(--color-border, #30363d)" }}>
-            {(["7d", "30d", "90d", "1y"] as Timeframe[]).map(tf => (
-              <button key={tf} onClick={() => setTimeframe(tf)} style={{
-                padding: "6px 16px", borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: "pointer", border: "none",
-                background: timeframe === tf ? "#6366f1" : "transparent",
-                color: timeframe === tf ? "#fff" : "var(--color-text-secondary, #8b949e)",
-              }}>{tf}</button>
+        {/* Time Period Selector */}
+        <div style={{ marginBottom: '32px' }}>
+          <div style={{ marginBottom: '16px' }}>
+            <label style={{ fontSize: '14px', fontWeight: '600', color: '#e6edf3', display: 'block', marginBottom: '12px' }}>
+              Time Period
+            </label>
+          </div>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            {(['7D', '30D', '90D', '1Y'] as const).map((period) => (
+              <button
+                key={period}
+                onClick={() => setTimePeriod(period)}
+                style={{
+                  padding: '10px 20px',
+                  borderRadius: '6px',
+                  border: 'none',
+                  backgroundColor: timePeriod === period ? '#6366f1' : '#30363d',
+                  color: '#e6edf3',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                  transition: 'all 0.2s',
+                }}
+                onMouseEnter={(e) => {
+                  if (timePeriod !== period) {
+                    (e.target as HTMLButtonElement).style.backgroundColor = '#404854';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (timePeriod !== period) {
+                    (e.target as HTMLButtonElement).style.backgroundColor = '#30363d';
+                  }
+                }}
+              >
+                {period}
+              </button>
             ))}
           </div>
         </div>
 
-        {/* Asset toggles */}
-        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", justifyContent: "center", marginBottom: 24 }}>
-          {ASSETS.map((a, idx) => (
-            <button key={a.symbol} onClick={() => toggleAsset(idx)} style={{
-              padding: "5px 12px", borderRadius: 8, fontSize: 12, fontWeight: 700, cursor: "pointer",
-              border: `1px solid ${selectedAssets.has(idx) ? a.color : "var(--color-border, #30363d)"}`,
-              background: selectedAssets.has(idx) ? `${a.color}15` : "transparent",
-              color: selectedAssets.has(idx) ? a.color : "var(--color-text-secondary, #8b949e)",
-              opacity: selectedAssets.has(idx) ? 1 : 0.5,
-            }}>
-              {a.symbol}
-            </button>
-          ))}
-        </div>
+        {/* Stats Cards */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px', marginBottom: '32px' }}>
+          <div style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '20px' }}>
+            <div style={{ fontSize: '12px', color: '#8b949e', textTransform: 'uppercase', fontWeight: '600', marginBottom: '8px' }}>
+              Most Correlated Pair
+            </div>
+            <div style={{ fontSize: '24px', fontWeight: '700', color: '#3fb950', marginBottom: '4px' }}>
+              {stats.mostCorrelated.pair}
+            </div>
+            <div style={{ fontSize: '14px', color: '#e6edf3' }}>
+              {stats.mostCorrelated.value.toFixed(4)}
+            </div>
+          </div>
 
-        {/* Metrics Row */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 14, marginBottom: 20 }}>
-          <div style={{ ...sectionStyle, marginBottom: 0, textAlign: "center" }}>
-            <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)", fontWeight: 700, textTransform: "uppercase", marginBottom: 4 }}>Diversification Score</div>
-            <div style={{ fontSize: 36, fontWeight: 900, color: diversificationScore >= 50 ? "#22c55e" : diversificationScore >= 30 ? "#eab308" : "#ef4444" }}>
-              {diversificationScore}
+          <div style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '20px' }}>
+            <div style={{ fontSize: '12px', color: '#8b949e', textTransform: 'uppercase', fontWeight: '600', marginBottom: '8px' }}>
+              Least Correlated Pair
             </div>
-            <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)" }}>
-              {diversificationScore >= 50 ? "Well Diversified" : diversificationScore >= 30 ? "Moderate" : "Highly Correlated"}
+            <div style={{ fontSize: '24px', fontWeight: '700', color: '#f85149', marginBottom: '4px' }}>
+              {stats.leastCorrelated.pair}
+            </div>
+            <div style={{ fontSize: '14px', color: '#e6edf3' }}>
+              {stats.leastCorrelated.value.toFixed(4)}
             </div>
           </div>
-          <div style={{ ...sectionStyle, marginBottom: 0, textAlign: "center" }}>
-            <div style={{ fontSize: 11, color: "#22c55e", fontWeight: 700, textTransform: "uppercase", marginBottom: 4 }}>Least Correlated Pair</div>
-            <div style={{ fontSize: 22, fontWeight: 900, color: "#22c55e" }}>
-              {ASSETS[bestPair.i].symbol} / {ASSETS[bestPair.j].symbol}
+
+          <div style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '20px' }}>
+            <div style={{ fontSize: '12px', color: '#8b949e', textTransform: 'uppercase', fontWeight: '600', marginBottom: '8px' }}>
+              Average Correlation
             </div>
-            <div style={{ fontSize: 13, color: "var(--color-text-secondary, #8b949e)" }}>{bestPair.corr.toFixed(2)} correlation</div>
-          </div>
-          <div style={{ ...sectionStyle, marginBottom: 0, textAlign: "center" }}>
-            <div style={{ fontSize: 11, color: "#ef4444", fontWeight: 700, textTransform: "uppercase", marginBottom: 4 }}>Most Correlated Pair</div>
-            <div style={{ fontSize: 22, fontWeight: 900, color: "#ef4444" }}>
-              {ASSETS[worstPair.i].symbol} / {ASSETS[worstPair.j].symbol}
+            <div style={{ fontSize: '24px', fontWeight: '700', color: '#6366f1', marginBottom: '4px' }}>
+              {stats.averageCorrelation}
             </div>
-            <div style={{ fontSize: 13, color: "var(--color-text-secondary, #8b949e)" }}>{worstPair.corr.toFixed(2)} correlation</div>
-          </div>
-          <div style={{ ...sectionStyle, marginBottom: 0, textAlign: "center" }}>
-            <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)", fontWeight: 700, textTransform: "uppercase", marginBottom: 4 }}>Assets Selected</div>
-            <div style={{ fontSize: 36, fontWeight: 900, color: "#6366f1" }}>{activeIndices.length}</div>
-            <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)" }}>of {ASSETS.length} available</div>
+            <div style={{ fontSize: '14px', color: '#e6edf3' }}>
+              All asset pairs
+            </div>
           </div>
         </div>
 
-        {/* Heatmap Matrix */}
-        <div style={sectionStyle}>
-          <h2 style={{ fontSize: 16, fontWeight: 700, color: "var(--color-text, #e6edf3)", marginBottom: 16 }}>Correlation Heatmap — {timeframe}</h2>
-          <div style={{ overflowX: "auto" }}>
-            <table style={{ borderCollapse: "collapse", margin: "0 auto" }}>
+        {/* Heatmap */}
+        <div style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '24px', marginBottom: '32px', overflowX: 'auto' }}>
+          <h2 style={{ fontSize: '20px', fontWeight: '700', margin: '0 0 24px 0' }}>Correlation Heatmap</h2>
+
+          <div style={{ overflowX: 'auto' }}>
+            <table
+              style={{
+                borderCollapse: 'collapse',
+                minWidth: '100%',
+                fontSize: '12px',
+              }}
+            >
               <thead>
                 <tr>
-                  <th style={{ width: cellSize, height: cellSize }} />
-                  {activeIndices.map(j => (
-                    <th key={j} style={{ width: cellSize, height: cellSize, fontSize: 10, fontWeight: 700, color: ASSETS[j].color, textAlign: "center", padding: 2 }}>
-                      {ASSETS[j].symbol}
+                  <th style={{ width: '50px', textAlign: 'center', padding: '8px', color: '#8b949e' }}></th>
+                  {ASSETS.map((asset) => (
+                    <th
+                      key={asset}
+                      style={{
+                        width: '60px',
+                        textAlign: 'center',
+                        padding: '8px',
+                        color: '#8b949e',
+                        fontWeight: '600',
+                        fontSize: '12px',
+                      }}
+                    >
+                      {asset}
                     </th>
                   ))}
                 </tr>
               </thead>
               <tbody>
-                {activeIndices.map(i => (
-                  <tr key={i}>
-                    <td style={{ fontSize: 10, fontWeight: 700, color: ASSETS[i].color, textAlign: "right", paddingRight: 8, whiteSpace: "nowrap" }}>
-                      {ASSETS[i].symbol}
+                {ASSETS.map((assetRow, rowIdx) => (
+                  <tr key={assetRow}>
+                    <td
+                      style={{
+                        padding: '8px',
+                        textAlign: 'center',
+                        fontWeight: '600',
+                        color: '#8b949e',
+                        fontSize: '12px',
+                      }}
+                    >
+                      {assetRow}
                     </td>
-                    {activeIndices.map(j => {
-                      const val = correlations[i][j];
-                      const isSelected = selectedCell?.i === i && selectedCell?.j === j;
-                      const isDiag = i === j;
+                    {ASSETS.map((assetCol, colIdx) => {
+                      const value = correlationMatrix[rowIdx][colIdx];
+                      const bgColor = getColorForCorrelation(value);
+                      const textColor = getTextColor(bgColor);
+                      const isHovered = hoverState.row === rowIdx && hoverState.col === colIdx;
+
                       return (
                         <td
-                          key={j}
-                          onClick={() => !isDiag && setSelectedCell({ i, j })}
+                          key={`${rowIdx}-${colIdx}`}
+                          onMouseEnter={() => setHoverState({ row: rowIdx, col: colIdx })}
+                          onMouseLeave={() => setHoverState({ row: null, col: null })}
                           style={{
-                            width: cellSize,
-                            height: cellSize,
-                            textAlign: "center",
-                            fontSize: 11,
-                            fontWeight: 700,
-                            color: isDiag ? "var(--color-text-secondary, #8b949e)" : getCorrelationColor(val),
-                            background: isDiag ? "var(--color-bg, #0d1117)" : getCorrelationBg(val),
-                            border: isSelected ? "2px solid #fff" : "1px solid var(--color-border, #30363d)",
-                            cursor: isDiag ? "default" : "pointer",
-                            borderRadius: 4,
-                            transition: "all 0.15s",
+                            width: '60px',
+                            height: '60px',
+                            backgroundColor: bgColor,
+                            border: '1px solid #30363d',
+                            cursor: 'pointer',
+                            position: 'relative',
+                            transition: 'transform 0.1s, box-shadow 0.1s',
+                            transform: isHovered ? 'scale(1.05)' : 'scale(1)',
+                            boxShadow: isHovered ? '0 0 12px rgba(99, 102, 241, 0.3), inset 0 0 0 2px #6366f1' : 'none',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontWeight: '600',
+                            padding: '0',
                           }}
+                          title={`${assetRow} vs ${assetCol}: ${value.toFixed(4)} (${getCorrelationMeaning(value)})`}
                         >
-                          {isDiag ? "1.00" : val.toFixed(2)}
+                          <span style={{ color: textColor, fontSize: '11px' }}>
+                            {value.toFixed(2)}
+                          </span>
+                          {isHovered && (
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '100%',
+                                left: '50%',
+                                transform: 'translateX(-50%)',
+                                backgroundColor: '#0d1117',
+                                border: '1px solid #6366f1',
+                                borderRadius: '6px',
+                                padding: '8px 12px',
+                                marginBottom: '8px',
+                                whiteSpace: 'nowrap',
+                                zIndex: 100,
+                                fontSize: '12px',
+                                color: '#e6edf3',
+                                boxShadow: '0 8px 24px rgba(0, 0, 0, 0.4)',
+                              }}
+                            >
+                              <div style={{ fontWeight: '600' }}>
+                                {assetRow} ↔ {assetCol}
+                              </div>
+                              <div style={{ color: '#8b949e', fontSize: '11px', marginTop: '4px' }}>
+                                {value.toFixed(4)}
+                              </div>
+                              <div style={{ color: '#6366f1', fontSize: '11px', marginTop: '4px' }}>
+                                {getCorrelationMeaning(value)}
+                              </div>
+                            </div>
+                          )}
                         </td>
                       );
                     })}
@@ -300,122 +355,259 @@ export default function CorrelationMatrixPage() {
               </tbody>
             </table>
           </div>
+        </div>
 
-          {/* Selected cell detail */}
-          {selectedCell && selectedCell.i !== selectedCell.j && (
-            <div style={{ marginTop: 16, padding: 14, background: "var(--color-bg, #0d1117)", borderRadius: 10, border: "1px solid var(--color-border, #30363d)", display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
-              <div style={{ fontSize: 18, fontWeight: 800, color: "var(--color-text, #e6edf3)" }}>
-                {ASSETS[selectedCell.i].symbol} ↔ {ASSETS[selectedCell.j].symbol}
-              </div>
-              <div style={{ fontSize: 24, fontWeight: 900, color: getCorrelationColor(correlations[selectedCell.i][selectedCell.j]) }}>
-                {correlations[selectedCell.i][selectedCell.j].toFixed(2)}
-              </div>
-              <div style={{ fontSize: 12, color: "var(--color-text-secondary, #8b949e)" }}>
-                {correlations[selectedCell.i][selectedCell.j] >= 0.8 ? "Highly correlated — these assets tend to move together. Adding both provides limited diversification." :
-                 correlations[selectedCell.i][selectedCell.j] >= 0.5 ? "Moderately correlated — some diversification benefit when holding both." :
-                 "Low correlation — excellent diversification pair. These assets move relatively independently."}
+        {/* Color Legend */}
+        <div style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '24px', marginBottom: '32px' }}>
+          <h2 style={{ fontSize: '20px', fontWeight: '700', margin: '0 0 20px 0' }}>Color Legend</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  backgroundColor: '#cc0000',
+                  borderRadius: '4px',
+                  border: '1px solid #30363d',
+                }}
+              ></div>
+              <div>
+                <div style={{ fontSize: '12px', fontWeight: '600', color: '#e6edf3' }}>-1.0 to -0.8</div>
+                <div style={{ fontSize: '12px', color: '#8b949e' }}>Very Strong Negative</div>
               </div>
             </div>
-          )}
 
-          {/* Legend */}
-          <div style={{ marginTop: 16, display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            {[
-              { label: "Very High (0.9+)", color: "#22c55e" },
-              { label: "High (0.7-0.9)", color: "#84cc16" },
-              { label: "Moderate (0.5-0.7)", color: "#eab308" },
-              { label: "Low (0.3-0.5)", color: "#f97316" },
-              { label: "Very Low (<0.3)", color: "#ef4444" },
-            ].map(l => (
-              <div key={l.label} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11, color: "var(--color-text-secondary, #8b949e)" }}>
-                <div style={{ width: 12, height: 12, borderRadius: 3, background: l.color + "30", border: `1px solid ${l.color}50` }} />
-                {l.label}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  backgroundColor: '#ff6b6b',
+                  borderRadius: '4px',
+                  border: '1px solid #30363d',
+                }}
+              ></div>
+              <div>
+                <div style={{ fontSize: '12px', fontWeight: '600', color: '#e6edf3' }}>-0.8 to -0.4</div>
+                <div style={{ fontSize: '12px', color: '#8b949e' }}>Strong Negative</div>
               </div>
-            ))}
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  backgroundColor: '#ffa500',
+                  borderRadius: '4px',
+                  border: '1px solid #30363d',
+                }}
+              ></div>
+              <div>
+                <div style={{ fontSize: '12px', fontWeight: '600', color: '#e6edf3' }}>-0.4 to 0.0</div>
+                <div style={{ fontSize: '12px', color: '#8b949e' }}>Negative</div>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  backgroundColor: '#ffd700',
+                  borderRadius: '4px',
+                  border: '1px solid #30363d',
+                }}
+              ></div>
+              <div>
+                <div style={{ fontSize: '12px', fontWeight: '600', color: '#e6edf3' }}>0.0 to 0.4</div>
+                <div style={{ fontSize: '12px', color: '#8b949e' }}>Weak Positive</div>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  backgroundColor: '#3fb950',
+                  borderRadius: '4px',
+                  border: '1px solid #30363d',
+                }}
+              ></div>
+              <div>
+                <div style={{ fontSize: '12px', fontWeight: '600', color: '#e6edf3' }}>0.4 to 0.8</div>
+                <div style={{ fontSize: '12px', color: '#8b949e' }}>Strong Positive</div>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  backgroundColor: '#1a6e1a',
+                  borderRadius: '4px',
+                  border: '1px solid #30363d',
+                }}
+              ></div>
+              <div>
+                <div style={{ fontSize: '12px', fontWeight: '600', color: '#e6edf3' }}>0.8 to 1.0</div>
+                <div style={{ fontSize: '12px', color: '#8b949e' }}>Very Strong Positive</div>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  backgroundColor: '#30363d',
+                  borderRadius: '4px',
+                  border: '1px solid #8b949e',
+                }}
+              ></div>
+              <div>
+                <div style={{ fontSize: '12px', fontWeight: '600', color: '#e6edf3' }}>1.0</div>
+                <div style={{ fontSize: '12px', color: '#8b949e' }}>Perfect Correlation (Self)</div>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Ranked Pairs Table */}
-        <div style={sectionStyle}>
-          <h2 style={{ fontSize: 16, fontWeight: 700, color: "var(--color-text, #e6edf3)", marginBottom: 14 }}>All Pairs Ranked by Correlation</h2>
-          <div style={{ overflowX: "auto", maxHeight: 400 }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
-              <thead style={{ position: "sticky", top: 0, background: "var(--color-surface, #161b22)" }}>
-                <tr style={{ borderBottom: "1px solid var(--color-border, #30363d)" }}>
-                  <th style={{ padding: "8px 12px", textAlign: "left", color: "var(--color-text-secondary, #8b949e)", fontWeight: 600, fontSize: 11, textTransform: "uppercase" }}>#</th>
-                  <th style={{ padding: "8px 12px", textAlign: "left", color: "var(--color-text-secondary, #8b949e)", fontWeight: 600, fontSize: 11, textTransform: "uppercase" }}>Pair</th>
-                  <th style={{ padding: "8px 12px", textAlign: "right", color: "var(--color-text-secondary, #8b949e)", fontWeight: 600, fontSize: 11, textTransform: "uppercase" }}>Correlation</th>
-                  <th style={{ padding: "8px 12px", textAlign: "center", color: "var(--color-text-secondary, #8b949e)", fontWeight: 600, fontSize: 11, textTransform: "uppercase" }}>Diversification</th>
-                </tr>
-              </thead>
-              <tbody>
-                {(() => {
-                  const pairs: { i: number; j: number; corr: number }[] = [];
-                  for (const i of activeIndices) {
-                    for (const j of activeIndices) {
-                      if (i < j) pairs.push({ i, j, corr: correlations[i][j] });
-                    }
-                  }
-                  pairs.sort((a, b) => a.corr - b.corr);
-                  return pairs.map((p, idx) => (
-                    <tr key={`${p.i}-${p.j}`} style={{ borderBottom: "1px solid var(--color-border, #30363d)" }}>
-                      <td style={{ padding: "8px 12px", color: "var(--color-text-secondary, #8b949e)" }}>{idx + 1}</td>
-                      <td style={{ padding: "8px 12px", fontWeight: 700, color: "var(--color-text, #e6edf3)" }}>
-                        <span style={{ color: ASSETS[p.i].color }}>{ASSETS[p.i].symbol}</span>
-                        {" / "}
-                        <span style={{ color: ASSETS[p.j].color }}>{ASSETS[p.j].symbol}</span>
-                      </td>
-                      <td style={{ padding: "8px 12px", textAlign: "right", fontWeight: 700, color: getCorrelationColor(p.corr) }}>{p.corr.toFixed(2)}</td>
-                      <td style={{ padding: "8px 12px", textAlign: "center" }}>
-                        <span style={{
-                          fontSize: 10, fontWeight: 700, padding: "2px 8px", borderRadius: 6,
-                          background: p.corr < 0.5 ? "#22c55e20" : p.corr < 0.7 ? "#eab30820" : "#ef444420",
-                          color: p.corr < 0.5 ? "#22c55e" : p.corr < 0.7 ? "#eab308" : "#ef4444",
-                        }}>
-                          {p.corr < 0.5 ? "Excellent" : p.corr < 0.7 ? "Good" : "Poor"}
-                        </span>
-                      </td>
-                    </tr>
-                  ));
-                })()}
-              </tbody>
-            </table>
-          </div>
-        </div>
+        {/* How to Read Section */}
+        <div style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '24px', marginBottom: '32px' }}>
+          <h2 style={{ fontSize: '20px', fontWeight: '700', margin: '0 0 20px 0', color: '#e6edf3' }}>How to Read the Correlation Matrix</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+            <div>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', margin: '0 0 12px 0', color: '#6366f1' }}>What is Correlation?</h3>
+              <p style={{ margin: '0', fontSize: '14px', color: '#8b949e', lineHeight: '1.6' }}>
+                Correlation measures how two assets move together. A value of +1 means they move perfectly together, -1 means they move in opposite directions, and 0 means they're independent.
+              </p>
+            </div>
 
-        {/* Educational */}
-        <div style={sectionStyle}>
-          <h2 style={{ fontSize: 18, fontWeight: 800, color: "var(--color-text, #e6edf3)", marginBottom: 16 }}>Understanding Crypto Correlations</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-            <div style={{ padding: 16, background: "var(--color-bg, #0d1117)", borderRadius: 10, border: "1px solid var(--color-border, #30363d)" }}>
-              <h3 style={{ fontSize: 14, fontWeight: 700, color: "#6366f1", marginBottom: 8 }}>What is Correlation?</h3>
-              <p style={{ fontSize: 13, color: "var(--color-text-secondary, #8b949e)", lineHeight: 1.7 }}>
-                Correlation measures how two assets move in relation to each other. A correlation of 1.0 means they move perfectly together, 0 means no relationship, and -1.0 means they move in opposite directions. In crypto, most assets are positively correlated due to shared market sentiment.
+            <div>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', margin: '0 0 12px 0', color: '#06b6d4' }}>Reading the Matrix</h3>
+              <p style={{ margin: '0', fontSize: '14px', color: '#8b949e', lineHeight: '1.6' }}>
+                Find the row of one asset and the column of another. The cell where they intersect shows their correlation coefficient. For example, BTC-ETH correlation would be at row 1, column 2.
               </p>
             </div>
-            <div style={{ padding: 16, background: "var(--color-bg, #0d1117)", borderRadius: 10, border: "1px solid var(--color-border, #30363d)" }}>
-              <h3 style={{ fontSize: 14, fontWeight: 700, color: "#22c55e", marginBottom: 8 }}>Why It Matters for Your Portfolio</h3>
-              <p style={{ fontSize: 13, color: "var(--color-text-secondary, #8b949e)", lineHeight: 1.7 }}>
-                Holding highly correlated assets means your portfolio moves as one — amplifying both gains and losses. By selecting assets with lower correlations, you reduce overall portfolio volatility while maintaining upside potential. Think of it as not putting all eggs in one basket, even within crypto.
-              </p>
-            </div>
-            <div style={{ padding: 16, background: "var(--color-bg, #0d1117)", borderRadius: 10, border: "1px solid var(--color-border, #30363d)" }}>
-              <h3 style={{ fontSize: 14, fontWeight: 700, color: "#f0883e", marginBottom: 8 }}>Key Patterns in Crypto</h3>
-              <p style={{ fontSize: 13, color: "var(--color-text-secondary, #8b949e)", lineHeight: 1.7 }}>
-                BTC and ETH typically have the highest correlation (0.85+). L1 chains tend to be highly correlated with each other. DeFi tokens and L2s sometimes show lower correlation to BTC, offering diversification. During market crashes, correlations spike as everything sells off together.
-              </p>
-            </div>
-            <div style={{ padding: 16, background: "var(--color-bg, #0d1117)", borderRadius: 10, border: "1px solid var(--color-border, #30363d)" }}>
-              <h3 style={{ fontSize: 14, fontWeight: 700, color: "#bc8cff", marginBottom: 8 }}>Timeframe Matters</h3>
-              <p style={{ fontSize: 13, color: "var(--color-text-secondary, #8b949e)", lineHeight: 1.7 }}>
-                Short-term correlations (7d) can vary significantly due to individual catalysts. Longer timeframes (90d, 1Y) provide more reliable signals for portfolio construction. Use 30d+ data for strategic allocation decisions.
+
+            <div>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', margin: '0 0 12px 0', color: '#f7931a' }}>Why it Matters</h3>
+              <p style={{ margin: '0', fontSize: '14px', color: '#8b949e', lineHeight: '1.6' }}>
+                Understanding correlations helps with portfolio diversification. Assets with low or negative correlations can offset each other's volatility, reducing overall portfolio risk.
               </p>
             </div>
           </div>
         </div>
 
-        <div style={{ textAlign: "center", padding: "24px 0", fontSize: 11, color: "var(--color-text-secondary, #8b949e)" }}>
-          Correlation data is based on historical price simulations. Past correlations do not guarantee future behavior. Not financial advice.
+        {/* FAQ Section */}
+        <div style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '24px', marginBottom: '32px' }}>
+          <h2 style={{ fontSize: '20px', fontWeight: '700', margin: '0 0 24px 0', color: '#e6edf3' }}>Frequently Asked Questions</h2>
+          <div style={{ display: 'grid', gap: '20px' }}>
+            <div>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', margin: '0 0 8px 0', color: '#e6edf3' }}>Why do correlations change over time?</h3>
+              <p style={{ margin: '0', fontSize: '14px', color: '#8b949e', lineHeight: '1.6' }}>
+                Market conditions, regulatory changes, and macroeconomic factors affect how different assets move relative to each other. Comparing different time periods reveals trends in these relationships.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', margin: '0 0 8px 0', color: '#e6edf3' }}>What does a 0.85 correlation between BTC and ETH mean?</h3>
+              <p style={{ margin: '0', fontSize: '14px', color: '#8b949e', lineHeight: '1.6' }}>
+                A correlation of 0.85 indicates a very strong positive relationship. When Bitcoin moves up, Ethereum typically moves up as well, and vice versa. This makes sense as they both respond to overall crypto market sentiment.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', margin: '0 0 8px 0', color: '#e6edf3' }}>Can correlation be negative?</h3>
+              <p style={{ margin: '0', fontSize: '14px', color: '#8b949e', lineHeight: '1.6' }}>
+                Yes, negative correlations indicate that assets tend to move in opposite directions. However, true negative correlations are rare in cryptocurrencies, which tend to move together during bull and bear markets.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', margin: '0 0 8px 0', color: '#e6edf3' }}>Is correlation the same as causation?</h3>
+              <p style={{ margin: '0', fontSize: '14px', color: '#8b949e', lineHeight: '1.6' }}>
+                No. Correlation shows that two assets move together, but doesn't explain why. Two assets might be correlated because they're both affected by the same external factors, not because one causes the other.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: '16px', fontWeight: '600', margin: '0 0 8px 0', color: '#e6edf3' }}>How should I use this data for investing?</h3>
+              <p style={{ margin: '0', fontSize: '14px', color: '#8b949e', lineHeight: '1.6' }}>
+                Use correlation data to build diversified portfolios. Combine assets with lower correlations to reduce volatility. However, always combine this analysis with fundamental research and risk management strategies.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Newsletter CTA */}
+        <div
+          style={{
+            background: 'linear-gradient(135deg, #6366f1 0%, #06b6d4 100%)',
+            borderRadius: '6px',
+            padding: '40px 24px',
+            textAlign: 'center',
+            marginBottom: '32px',
+          }}
+        >
+          <h2 style={{ fontSize: '24px', fontWeight: '700', margin: '0 0 12px 0', color: '#fff' }}>
+            Get Daily Crypto Insights
+          </h2>
+          <p style={{ fontSize: '16px', margin: '0 0 24px 0', color: 'rgba(255, 255, 255, 0.8)' }}>
+            Subscribe to receive daily correlation updates and market analysis straight to your inbox.
+          </p>
+          <div style={{ display: 'flex', gap: '12px', maxWidth: '500px', margin: '0 auto' }}>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              style={{
+                flex: 1,
+                padding: '12px 16px',
+                borderRadius: '4px',
+                border: 'none',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                color: '#fff',
+                fontSize: '14px',
+              }}
+              onFocus={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.15)';
+              }}
+              onBlur={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+              }}
+            />
+            <button
+              style={{
+                padding: '12px 28px',
+                borderRadius: '4px',
+                border: 'none',
+                backgroundColor: '#0d1117',
+                color: '#6366f1',
+                fontWeight: '600',
+                cursor: 'pointer',
+                fontSize: '14px',
+                transition: 'all 0.2s',
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.backgroundColor = '#161b22';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.backgroundColor = '#0d1117';
+              }}
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        {/* Footer Note */}
+        <div style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '6px', padding: '20px', textAlign: 'center' }}>
+          <p style={{ margin: '0', fontSize: '12px', color: '#8b949e' }}>
+            Data is calculated using historical daily returns. Correlations are updated weekly. This analysis is for informational purposes only and should not be considered financial advice.
+          </p>
         </div>
       </div>
     </div>

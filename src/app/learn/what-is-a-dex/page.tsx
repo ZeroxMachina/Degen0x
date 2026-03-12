@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a DEX (Decentralized Exchange)? (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a DEX (Decentralized Exchange)? (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how decentralized exchanges work, the difference between DEXs and centralized exchanges, AMM models, order book DEXs, liquidity pools, and how to trade on a DEX safely.",
 };
@@ -17,11 +17,16 @@ export default function WhatIsADexPage() {
       readTime="9 min read"
       intro="A Decentralized Exchange (DEX) is a peer-to-peer marketplace that allows users to trade cryptocurrencies directly from their wallets without entrusting funds to a centralized intermediary. Unlike centralized exchanges like Coinbase or Binance, DEXs operate through smart contracts on a blockchain, giving users full custody of their assets throughout the trading process. DEXs have grown to handle billions of dollars in daily trading volume and represent a cornerstone of the DeFi ecosystem."
       toc={[
+        { id: "how-dexs-work", title: "how-dexs-work", level: 2 },
         { id: "how-dexs-work", title: "How DEXs Work", level: 2 },
-        { id: "amm-vs-orderbook", title: "AMM vs Order Book DEXs", level: 2 },
-        { id: "liquidity-pools", title: "Liquidity Pools and Providers", level: 2 },
-        { id: "dex-vs-cex", title: "DEX vs CEX: Key Differences", level: 2 },
-        { id: "using-dex-safely", title: "Using a DEX Safely", level: 2 },
+        { id: "amm-vs-orderbook", title: "amm-vs-orderbook", level: 2 },
+        { id: "amm-vs-order-book-dexs", title: "AMM vs Order Book DEXs", level: 2 },
+        { id: "liquidity-pools", title: "liquidity-pools", level: 2 },
+        { id: "liquidity-pools-and-providers", title: "Liquidity Pools and Providers", level: 2 },
+        { id: "dex-vs-cex", title: "dex-vs-cex", level: 2 },
+        { id: "dex-vs-cex-key-differences", title: "DEX vs CEX: Key Differences", level: 2 },
+        { id: "using-dex-safely", title: "using-dex-safely", level: 2 },
+        { id: "using-a-dex-safely", title: "Using a DEX Safely", level: 2 }
       ]}
       faqs={[
         {

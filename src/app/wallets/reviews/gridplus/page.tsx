@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `GridPlus Lattice1 Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `GridPlus Lattice1 Review (${CURRENT_YEAR}) | degen0x`,
   description: "GridPlus Lattice1 hardware wallet review covering SafeCards, large touchscreen, MetaMask integration, and enterprise-grade security.",
 };
 

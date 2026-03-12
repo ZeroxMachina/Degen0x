@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Proof of Stake (PoS)? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Proof of Stake (PoS)? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what proof of stake is, how it differs from proof of work, and why it has become the dominant consensus mechanism.",
 };
@@ -17,11 +17,16 @@ export default function PosPage() {
       readTime="6 min"
       intro="Proof of Stake (PoS) is a consensus mechanism where validators are selected to create new blocks based on the amount of cryptocurrency they have staked (locked up) as collateral. Unlike Proof of Work which requires energy-intensive mining, PoS secures the network through economic incentives: validators risk losing their staked tokens if they act maliciously. Ethereum transitioned to PoS in 2022 with The Merge."
       toc={[
-        { id: "definition", title: "What Is Proof of Stake?", level: 2 },
-        { id: "how-it-works", title: "How PoS Works", level: 2 },
-        { id: "pos-vs-pow", title: "PoS vs Proof of Work", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-proof-of-stake", title: "What Is Proof of Stake?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-pos-works", title: "How PoS Works", level: 2 },
+        { id: "pos-vs-pow", title: "pos-vs-pow", level: 2 },
+        { id: "pos-vs-proof-of-work", title: "PoS vs Proof of Work", level: 2 },
+        { id: "staking-rewards", title: "staking-rewards", level: 2 },
         { id: "staking-rewards", title: "Staking Rewards", level: 2 },
-        { id: "why-it-matters", title: "Why PoS Matters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-pos-matters", title: "Why PoS Matters", level: 2 }
       ]}
       faqs={[
         {

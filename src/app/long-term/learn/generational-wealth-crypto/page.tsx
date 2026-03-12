@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Building Generational Wealth with Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Building Generational Wealth with Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Strategies for building generational wealth with cryptocurrency. Long-term holding, estate planning, and multi-decade investment frameworks for crypto.",
 };
 
@@ -12,10 +12,14 @@ export default function GenerationalWealthCryptoPage() {
     <LearnPageLayout title="Building Generational Wealth with Crypto" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="9 min read"
       intro="Generational wealth means building assets that provide value not just for you but for your children and grandchildren. Cryptocurrency offers a unique opportunity for generational wealth building because the asset class is still early, the potential upside is asymmetric, and the technology enables direct ownership without intermediaries. However, building generational wealth with crypto requires extreme patience, proper security, estate planning, and a multi-decade perspective."
       toc={[
-        { id: "multi-decade", title: "The Multi-Decade Perspective", level: 2 },
+        { id: "multi-decade", title: "multi-decade", level: 2 },
+        { id: "the-multi-decade-perspective", title: "The Multi-Decade Perspective", level: 2 },
+        { id: "portfolio-construction", title: "portfolio-construction", level: 2 },
         { id: "portfolio-construction", title: "Portfolio Construction", level: 2 },
-        { id: "security-custody", title: "Security and Custody", level: 2 },
-        { id: "estate-planning", title: "Estate Planning for Crypto", level: 2 },
+        { id: "security-custody", title: "security-custody", level: 2 },
+        { id: "security-and-custody", title: "Security and Custody", level: 2 },
+        { id: "estate-planning", title: "estate-planning", level: 2 },
+        { id: "estate-planning-for-crypto", title: "Estate Planning for Crypto", level: 2 }
       ]}
       faqs={[
         { question: "Can crypto really build generational wealth?", answer: "It is possible but not guaranteed. Bitcoin has been the best-performing asset of the last decade, turning small investments into fortunes for early holders. However, past performance does not guarantee future results. The key is position sizing: a small allocation to crypto that grows significantly can contribute meaningfully to generational wealth without risking everything on a speculative asset." },

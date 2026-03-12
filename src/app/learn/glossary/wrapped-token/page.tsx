@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Wrapped Token? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Wrapped Token? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what wrapped tokens are, how they work, major examples like WBTC and WETH, and why they are essential for cross-chain and DeFi functionality.",
 };
@@ -17,10 +17,14 @@ export default function WrappedTokenPage() {
       readTime="5 min read"
       intro="A wrapped token is a cryptocurrency token pegged to the value of another asset, enabling that asset to be used on a different blockchain or within smart contracts that do not natively support it. The original asset is held in custody (locked in a smart contract or with a custodian), and an equivalent amount of the wrapped version is minted on the target chain. Wrapped tokens are essential for cross-chain interoperability and DeFi composability."
       toc={[
-        { id: "definition", title: "What Is a Wrapped Token?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-wrapped-token", title: "What Is a Wrapped Token?", level: 2 },
+        { id: "how-wrapping-works", title: "how-wrapping-works", level: 2 },
         { id: "how-wrapping-works", title: "How Wrapping Works", level: 2 },
-        { id: "major-examples", title: "Major Wrapped Tokens", level: 2 },
-        { id: "risks", title: "Risks of Wrapped Tokens", level: 2 },
+        { id: "major-examples", title: "major-examples", level: 2 },
+        { id: "major-wrapped-tokens", title: "Major Wrapped Tokens", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-wrapped-tokens", title: "Risks of Wrapped Tokens", level: 2 }
       ]}
       faqs={[
         { question: "Why do we need Wrapped Bitcoin (WBTC)?", answer: "Bitcoin cannot natively interact with Ethereum smart contracts. WBTC is an ERC-20 token on Ethereum backed 1:1 by Bitcoin held in custody. This allows Bitcoin holders to participate in Ethereum DeFi by using their BTC as collateral for lending, providing liquidity, or yield farming without selling their Bitcoin." },

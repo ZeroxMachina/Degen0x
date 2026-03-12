@@ -39,7 +39,7 @@ export default function BestBeginnersWalletsPage() {
       />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Crypto Wallets for Beginners ({CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Crypto Wallets for Beginners ({CURRENT_YEAR})</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
           Starting your crypto journey can be overwhelming. The right wallet makes it simple with easy setup,
           clear interfaces, and helpful guidance. We tested every major wallet from a beginner&apos;s perspective
@@ -49,17 +49,17 @@ export default function BestBeginnersWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">Quick Verdict</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Quick Verdict</h2>
         <p className="text-[var(--color-text-secondary)]">
-          <strong className="text-white">Exodus</strong> is our top pick for beginners with its stunning design
-          and intuitive interface. <strong className="text-white">Coinbase Wallet</strong> is ideal if you already
+          <strong className="text-[var(--color-text)]">Exodus</strong> is our top pick for beginners with its stunning design
+          and intuitive interface. <strong className="text-[var(--color-text)]">Coinbase Wallet</strong> is ideal if you already
           use Coinbase exchange, as the integration makes transferring funds effortless. For your first hardware
-          wallet, the <strong className="text-white">Ledger Nano S Plus</strong> at $79 is the best value entry point.
+          wallet, the <strong className="text-[var(--color-text)]">Ledger Nano S Plus</strong> at $79 is the best value entry point.
         </p>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Beginner Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Beginner Wallets, Ranked</h2>
         <div className="space-y-6">
           {beginnerWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -76,18 +76,18 @@ export default function BestBeginnersWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/learn/what-is-a-crypto-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">What Is a Crypto Wallet?</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">What Is a Crypto Wallet?</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Wallet basics explained</p>
           </Link>
           <Link href="/wallets/learn/how-to-set-up-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">How to Set Up a Wallet</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">How to Set Up a Wallet</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Step-by-step setup guide</p>
           </Link>
           <Link href="/wallets/learn/seed-phrase-explained" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Seed Phrase Explained</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Seed Phrase Explained</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Understand your backup words</p>
           </Link>
         </div>

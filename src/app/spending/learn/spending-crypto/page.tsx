@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Spend Crypto (${CURRENT_YEAR}) - Complete Guide | CryptoDegen`,
+  title: `How to Spend Crypto (${CURRENT_YEAR}) - Complete Guide | degen0x`,
   description: `Learn all the ways to spend cryptocurrency in the real world. Debit cards, direct payments, gift cards, peer-to-peer, and merchant acceptance explained.`,
 };
 
@@ -16,11 +16,16 @@ export default function SpendingCryptoPage() {
       readTime="9 min"
       intro="Cryptocurrency has evolved beyond a speculative investment into a practical medium of exchange. From buying coffee with a crypto debit card to paying for international services with stablecoins, there are more ways to spend crypto in daily life than ever before. This guide covers every method available for turning your digital assets into real-world goods and services."
       toc={[
-        { id: "debit-cards", title: "Crypto Debit Cards", level: 2 },
-        { id: "direct-merchant", title: "Direct Merchant Payments", level: 2 },
-        { id: "gift-cards", title: "Gift Cards and Vouchers", level: 2 },
-        { id: "peer-to-peer", title: "Peer-to-Peer Payments", level: 2 },
-        { id: "online-services", title: "Online Services and Subscriptions", level: 2 },
+        { id: "debit-cards", title: "debit-cards", level: 2 },
+        { id: "crypto-debit-cards", title: "Crypto Debit Cards", level: 2 },
+        { id: "direct-merchant", title: "direct-merchant", level: 2 },
+        { id: "direct-merchant-payments", title: "Direct Merchant Payments", level: 2 },
+        { id: "gift-cards", title: "gift-cards", level: 2 },
+        { id: "gift-cards-and-vouchers", title: "Gift Cards and Vouchers", level: 2 },
+        { id: "peer-to-peer", title: "peer-to-peer", level: 2 },
+        { id: "peer-to-peer-payments", title: "Peer-to-Peer Payments", level: 2 },
+        { id: "online-services", title: "online-services", level: 2 },
+        { id: "online-services-and-subscriptions", title: "Online Services and Subscriptions", level: 2 }
       ]}
       faqs={[
         { question: "What is the easiest way to start spending crypto?", answer: "A crypto debit card is the easiest entry point because it works anywhere Visa or Mastercard is accepted with no merchant adoption required. Sign up for a card from Crypto.com, Coinbase, or BitPay, fund it from your crypto holdings, and use it like any other debit card. The conversion from crypto to fiat happens automatically." },

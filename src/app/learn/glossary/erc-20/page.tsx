@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is ERC-20? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is ERC-20? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what ERC-20 tokens are, how the standard works, and why it became the foundation for fungible tokens on Ethereum.",
 };
@@ -17,11 +17,16 @@ export default function Erc20Page() {
       readTime="5 min"
       intro="ERC-20 is a technical standard for creating fungible tokens on the Ethereum blockchain. It defines a common set of rules that all compliant tokens must follow, including how transfers work, how balances are tracked, and how approvals are granted. This standardization allows any ERC-20 token to work seamlessly with wallets, exchanges, and DeFi protocols."
       toc={[
-        { id: "definition", title: "What Is ERC-20?", level: 2 },
-        { id: "how-it-works", title: "How the ERC-20 Standard Works", level: 2 },
-        { id: "key-functions", title: "Key ERC-20 Functions", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-erc-20", title: "What Is ERC-20?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-the-erc-20-standard-works", title: "How the ERC-20 Standard Works", level: 2 },
+        { id: "key-functions", title: "key-functions", level: 2 },
+        { id: "key-erc-20-functions", title: "Key ERC-20 Functions", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
         { id: "use-cases", title: "Use Cases", level: 2 },
-        { id: "limitations", title: "Limitations and Evolution", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-and-evolution", title: "Limitations and Evolution", level: 2 }
       ]}
       faqs={[
         {

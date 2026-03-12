@@ -12,11 +12,16 @@ export default function CryptoLicensingGuidePage() {
   return (
     <LearnPageLayout title="Crypto Licensing Guide" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Cryptocurrency businesses operating as exchanges, custodians, payment processors, or other service providers need various licenses and registrations depending on their jurisdiction and activities. Understanding the licensing landscape helps users evaluate the regulatory standing of platforms they use and helps entrepreneurs navigate the compliance requirements for crypto businesses."
       toc={[
-        { id: "overview", title: "Licensing Overview", level: 2 },
-        { id: "us-licensing", title: "US Licensing Framework", level: 2 },
-        { id: "eu-licensing", title: "EU Licensing (MiCA)", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "licensing-overview", title: "Licensing Overview", level: 2 },
+        { id: "us-licensing", title: "us-licensing", level: 2 },
+        { id: "us-licensing-framework", title: "US Licensing Framework", level: 2 },
+        { id: "eu-licensing", title: "eu-licensing", level: 2 },
+        { id: "eu-licensing-mica", title: "EU Licensing (MiCA)", level: 2 },
+        { id: "other-jurisdictions", title: "other-jurisdictions", level: 2 },
         { id: "other-jurisdictions", title: "Other Jurisdictions", level: 2 },
-        { id: "evaluating-platforms", title: "Evaluating Licensed Platforms", level: 2 },
+        { id: "evaluating-platforms", title: "evaluating-platforms", level: 2 },
+        { id: "evaluating-licensed-platforms", title: "Evaluating Licensed Platforms", level: 2 }
       ]}
       faqs={[
         { question: "How can I verify if an exchange is licensed?", answer: "Most regulators maintain public registries of licensed entities. In the US, check state-level money transmitter lists and FinCEN registration. In the EU, check national regulator databases. In the UK, check the FCA register. Licensed exchanges typically display their license numbers and regulatory status on their websites." },

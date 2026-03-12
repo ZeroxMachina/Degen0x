@@ -49,7 +49,7 @@ export default function BestCryptoAppsPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Apps for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -65,7 +65,7 @@ export default function BestCryptoAppsPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Crypto Apps for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Crypto Apps for {CURRENT_YEAR}</h2>
         <div className="space-y-4">
           {CRYPTO_APPS.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -74,7 +74,7 @@ export default function BestCryptoAppsPage() {
       </section>
 
       <section id="what-to-look-for" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What to Look For in a Crypto App</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What to Look For in a Crypto App</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           A great crypto app should combine ease of use with robust functionality. Look for
           intuitive navigation, fast trade execution, real-time price alerts, and comprehensive
@@ -91,7 +91,7 @@ export default function BestCryptoAppsPage() {
       </section>
 
       <section id="custodial-vs-noncustodial" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Custodial vs Non-Custodial Apps</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Custodial vs Non-Custodial Apps</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Custodial apps like Coinbase and Crypto.com hold your crypto on your behalf. They are
           simpler to use and offer account recovery if you lose access. However, you trust the
@@ -107,7 +107,7 @@ export default function BestCryptoAppsPage() {
       </section>
 
       <section id="tips" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Mobile Security Tips</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Mobile Security Tips</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Keep your phone's operating system updated, use a strong screen lock, and never share
           your seed phrase digitally. Avoid public WiFi when accessing crypto apps. Enable all

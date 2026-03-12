@@ -16,10 +16,14 @@ export default function RiskAssessmentDefiPage() {
       readTime="10 min"
       intro="Assessing risk in decentralized finance requires evaluating smart contract security, protocol design, governance mechanisms, and economic incentives. This guide provides a framework for evaluating DeFi protocol risk."
       toc={[
-        { id: "section-1", title: "Risk Framework Overview", level: 2 },
-        { id: "section-2", title: "Technical Risk Assessment", level: 2 },
-        { id: "section-3", title: "Economic and Governance Risk", level: 2 },
-        { id: "section-4", title: "Building a Risk Assessment Process", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "risk-framework-overview", title: "Risk Framework Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "technical-risk-assessment", title: "Technical Risk Assessment", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "economic-and-governance-risk", title: "Economic and Governance Risk", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "building-a-risk-assessment-process", title: "Building a Risk Assessment Process", level: 2 }
       ]}
       faqs={[
         { question: "How do you assess DeFi protocol risk?", answer: "Evaluate smart contract audit history, code complexity, TVL, team reputation, governance mechanisms, economic model sustainability, and operational track record. No single factor determines risk; comprehensive assessment considers multiple dimensions together." },

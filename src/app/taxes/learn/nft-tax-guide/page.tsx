@@ -18,12 +18,18 @@ export default function NftTaxGuidePage() {
       readTime="11 min read"
       intro="NFTs create unique tax situations because they can be digital art, collectibles, gaming items, or financial instruments. Whether you are a creator minting NFTs, a collector buying and selling them, or a trader flipping for profit, each activity has distinct tax implications. The IRS and other tax agencies have started issuing specific guidance on NFT taxation, including the potential classification as collectibles subject to higher tax rates."
       toc={[
-        { id: "buying-selling", title: "Buying & Selling NFTs", level: 2 },
-        { id: "creator-taxes", title: "NFT Creator Tax Obligations", level: 2 },
-        { id: "collectibles", title: "NFTs as Collectibles", level: 2 },
-        { id: "royalties", title: "Royalty Income from NFTs", level: 2 },
-        { id: "gaming-nfts", title: "Gaming NFTs & Virtual Worlds", level: 2 },
-        { id: "record-keeping", title: "Record Keeping for NFTs", level: 2 },
+        { id: "buying-selling", title: "buying-selling", level: 2 },
+        { id: "buying-selling-nfts", title: "Buying & Selling NFTs", level: 2 },
+        { id: "creator-taxes", title: "creator-taxes", level: 2 },
+        { id: "nft-creator-tax-obligations", title: "NFT Creator Tax Obligations", level: 2 },
+        { id: "collectibles", title: "collectibles", level: 2 },
+        { id: "nfts-as-collectibles", title: "NFTs as Collectibles", level: 2 },
+        { id: "royalties", title: "royalties", level: 2 },
+        { id: "royalty-income-from-nfts", title: "Royalty Income from NFTs", level: 2 },
+        { id: "gaming-nfts", title: "gaming-nfts", level: 2 },
+        { id: "gaming-nfts-virtual-worlds", title: "Gaming NFTs & Virtual Worlds", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping-for-nfts", title: "Record Keeping for NFTs", level: 2 }
       ]}
       faqs={[
         { question: "Are NFTs taxed as collectibles?", answer: "The IRS has indicated that some NFTs may be classified as collectibles, subject to a higher long-term capital gains rate of 28 percent instead of the usual 20 percent maximum. This applies to NFTs that represent digital art, music, or other collectible items. The IRS is using a look-through analysis." },

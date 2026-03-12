@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Getting Paid in Crypto: Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Getting Paid in Crypto: Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Complete guide to receiving your salary in cryptocurrency. Payroll services, tax implications, negotiation tips, and managing a crypto-denominated salary.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoSalaryGuidePage() {
     <LearnPageLayout title="Getting Paid in Crypto: Complete Guide" categoryName="Crypto Spending" categorySlug="spending" readTime="8 min read"
       intro="A growing number of companies offer cryptocurrency as part of compensation packages, either as base salary, bonus payments, or equity-equivalent token allocations. Whether you work for a crypto-native company that pays in tokens, a traditional company offering partial crypto salary, or you want to convert your paycheck to crypto, understanding the mechanics, tax implications, and financial planning strategies for crypto compensation is essential."
       toc={[
-        { id: "types", title: "Types of Crypto Compensation", level: 2 },
-        { id: "payroll-services", title: "Crypto Payroll Services", level: 2 },
-        { id: "negotiation", title: "Negotiation Strategies", level: 2 },
-        { id: "financial-planning", title: "Financial Planning", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-crypto-compensation", title: "Types of Crypto Compensation", level: 2 },
+        { id: "payroll-services", title: "payroll-services", level: 2 },
+        { id: "crypto-payroll-services", title: "Crypto Payroll Services", level: 2 },
+        { id: "negotiation", title: "negotiation", level: 2 },
+        { id: "negotiation-strategies", title: "Negotiation Strategies", level: 2 },
+        { id: "financial-planning", title: "financial-planning", level: 2 },
+        { id: "financial-planning", title: "Financial Planning", level: 2 }
       ]}
       faqs={[
         { question: "Is getting paid in crypto legal?", answer: "In most jurisdictions, employees can receive a portion of their compensation in crypto, though minimum wage laws typically require that the minimum wage portion be paid in fiat currency. Employers must still withhold and report payroll taxes based on the fiat value of the crypto paid. Laws vary by jurisdiction, so check your local regulations." },

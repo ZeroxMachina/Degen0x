@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Breadcrumb } from '@/components/Breadcrumb';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'How to Convert Cryptocurrency: Complete 2026 Guide',

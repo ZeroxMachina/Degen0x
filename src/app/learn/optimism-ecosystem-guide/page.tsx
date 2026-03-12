@@ -17,11 +17,16 @@ export default function OptimismEcosystemGuidePage() {
       readTime="9 min"
       intro="Optimism is an Ethereum Layer 2 pioneering the vision of the Superchain — a network of interoperable L2 chains built on the shared OP Stack. Beyond its technical contributions, Optimism is notable for its innovative governance model and commitment to funding public goods through retroactive grants, creating a sustainable economic model for open-source development."
       toc={[
-        { id: "overview", title: "Optimism Overview", level: 2 },
-        { id: "superchain", title: "The Superchain Vision", level: 2 },
-        { id: "governance", title: "Governance Model", level: 2 },
-        { id: "ecosystem", title: "DeFi and Applications", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "optimism-overview", title: "Optimism Overview", level: 2 },
+        { id: "superchain", title: "superchain", level: 2 },
+        { id: "the-superchain-vision", title: "The Superchain Vision", level: 2 },
+        { id: "governance", title: "governance", level: 2 },
+        { id: "governance-model", title: "Governance Model", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
+        { id: "defi-and-applications", title: "DeFi and Applications", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What is the Superchain?", answer: "The Superchain is Optimism's vision for a network of interoperable L2 chains sharing the OP Stack technology, a shared bridge, and sequencer infrastructure. Base, Zora, Mode, and others are Superchain members, creating a unified ecosystem where assets and messages flow seamlessly between chains." },

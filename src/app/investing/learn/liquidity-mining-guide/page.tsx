@@ -16,10 +16,14 @@ export default function LiquidityMiningGuidePage() {
       readTime="11 min"
       intro="Liquidity mining is a DeFi mechanism where users provide liquidity to decentralized exchanges and lending protocols in exchange for token rewards. It became the primary driver of DeFi growth during the 2020 DeFi Summer and continues to be a major yield-generating strategy. This guide explains how liquidity mining works and how to evaluate opportunities."
       toc={[
-        { id: "how-it-works", title: "How Liquidity Mining Works", level: 2 },
-        { id: "impermanent-loss", title: "Understanding Impermanent Loss", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-liquidity-mining-works", title: "How Liquidity Mining Works", level: 2 },
+        { id: "impermanent-loss", title: "impermanent-loss", level: 2 },
+        { id: "understanding-impermanent-loss", title: "Understanding Impermanent Loss", level: 2 },
+        { id: "evaluating-opportunities", title: "evaluating-opportunities", level: 2 },
         { id: "evaluating-opportunities", title: "Evaluating Opportunities", level: 2 },
-        { id: "strategies", title: "Liquidity Mining Strategies", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "liquidity-mining-strategies", title: "Liquidity Mining Strategies", level: 2 }
       ]}
       faqs={[
         { question: "What is impermanent loss?", answer: "Impermanent loss occurs when the price ratio of tokens in a liquidity pool changes from when you deposited. The greater the price divergence, the larger the loss compared to simply holding the tokens. It is called impermanent because the loss only becomes permanent when you withdraw. Trading fees and token rewards can offset impermanent loss if they are high enough." },

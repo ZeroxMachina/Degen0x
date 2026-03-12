@@ -106,7 +106,7 @@ export default function CorporateCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Corporate Cards ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -123,16 +123,16 @@ export default function CorporateCardsPage() {
           expense tracking and team controls.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Rain</strong> leads our rankings as the most crypto-native
+          <strong className="text-[var(--color-text)]">Rain</strong> leads our rankings as the most crypto-native
           corporate card solution, with direct stablecoin spending and multi-sig integration.{" "}
-          <strong className="text-white">Brex</strong> is ideal for funded startups wanting a full
-          financial stack, while <strong className="text-white">Ramp</strong> offers the best expense
+          <strong className="text-[var(--color-text)]">Brex</strong> is ideal for funded startups wanting a full
+          financial stack, while <strong className="text-[var(--color-text)]">Ramp</strong> offers the best expense
           automation features for teams prioritizing operational efficiency.
         </p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Our Rankings</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -146,7 +146,7 @@ export default function CorporateCardsPage() {
       </section>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Choosing the Right Card for Your Team</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Choosing the Right Card for Your Team</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           The best corporate card depends on your team structure, funding source, and operational needs:
         </p>
@@ -158,7 +158,7 @@ export default function CorporateCardsPage() {
             { title: "International Teams", desc: "Baanx provides multi-currency support across regions, useful for globally distributed Web3 teams." },
           ].map((item) => (
             <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-              <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+              <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
             </div>
           ))}

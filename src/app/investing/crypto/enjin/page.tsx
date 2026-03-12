@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Enjin (ENJ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Enjin (ENJ)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Enjin (ENJ), the blockchain platform for creating and managing digital assets. Discover how it works, tokenomics, use cases, and how to buy ENJ.",
 };
@@ -17,12 +17,18 @@ export default function EnjinPage() {
       readTime="8 min read"
       intro="Enjin is a blockchain platform that enables developers to create, manage, distribute, and trade digital assets including NFTs and fungible tokens. With the Enjin Blockchain (built on Polkadot substrate), Enjin provides the infrastructure for integrating blockchain items into games, apps, and enterprise applications."
       toc={[
-        { id: "what-is", title: "What Is Enjin?", level: 2 },
-        { id: "how-it-works", title: "How Does Enjin Work?", level: 2 },
-        { id: "tokenomics", title: "ENJ Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ENJ", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-enjin", title: "What Is Enjin?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-enjin-work", title: "How Does Enjin Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "enj-tokenomics", title: "ENJ Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-enj", title: "How to Buy ENJ", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

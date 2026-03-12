@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a DEX? Decentralized Exchange Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a DEX? Decentralized Exchange Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what a DEX is, how decentralized exchanges work, popular DEXs, and the differences between DEXs and centralized exchanges.",
 };
@@ -17,11 +17,16 @@ export default function DexPage() {
       readTime="5 min"
       intro="A DEX (Decentralized Exchange) is a cryptocurrency exchange that operates without a central authority, allowing users to trade directly from their wallets using smart contracts. Unlike centralized exchanges, DEXs do not custody your funds, do not require identity verification, and are accessible to anyone with a crypto wallet. Uniswap, Curve, and SushiSwap are among the most popular DEXs."
       toc={[
-        { id: "definition", title: "What Is a DEX?", level: 2 },
-        { id: "how-it-works", title: "How DEXs Work", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-dex", title: "What Is a DEX?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-dexs-work", title: "How DEXs Work", level: 2 },
+        { id: "dex-vs-cex", title: "dex-vs-cex", level: 2 },
         { id: "dex-vs-cex", title: "DEX vs CEX", level: 2 },
-        { id: "why-it-matters", title: "Why DEXs Matter", level: 2 },
-        { id: "limitations", title: "Limitations", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-dexs-matter", title: "Why DEXs Matter", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations", title: "Limitations", level: 2 }
       ]}
       faqs={[
         {

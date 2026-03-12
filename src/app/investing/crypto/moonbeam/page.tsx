@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Moonbeam (GLMR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Moonbeam (GLMR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Moonbeam (GLMR), the Ethereum-compatible smart contract platform on Polkadot. Discover how it works, tokenomics, use cases, and how to buy GLMR.",
 };
@@ -17,12 +17,18 @@ export default function MoonbeamPage() {
       readTime="7 min read"
       intro="Moonbeam is an Ethereum-compatible smart contract platform on the Polkadot network, designed to make it easy for developers to deploy existing Ethereum dApps with minimal changes. GLMR is the native utility token used for gas fees, staking, and cross-chain operations within the Polkadot ecosystem."
       toc={[
-        { id: "what-is", title: "What Is Moonbeam?", level: 2 },
-        { id: "how-it-works", title: "How Does Moonbeam Work?", level: 2 },
-        { id: "tokenomics", title: "GLMR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy GLMR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-moonbeam", title: "What Is Moonbeam?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-moonbeam-work", title: "How Does Moonbeam Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "glmr-tokenomics", title: "GLMR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-glmr", title: "How to Buy GLMR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

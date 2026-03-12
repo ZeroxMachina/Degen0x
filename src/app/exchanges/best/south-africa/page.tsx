@@ -16,11 +16,16 @@ export default function SouthAfricaExchangesPage() {
       readTime="10 min"
       intro="South Africa has the most developed crypto regulatory framework in Africa, with the FSCA (Financial Sector Conduct Authority) now licensing crypto exchanges. South African traders benefit from ZAR-denominated trading pairs, EFT deposit support, and a growing selection of regulated local and global platforms."
       toc={[
-        { id: "regulation", title: "FSCA Regulation & Licensing", level: 2 },
-        { id: "top-exchanges", title: "Top Exchanges for South African Users", level: 2 },
-        { id: "payment-methods", title: "ZAR Payment Methods", level: 2 },
-        { id: "taxes", title: "Crypto Tax in South Africa", level: 2 },
-        { id: "tips", title: "Tips for South African Traders", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "fsca-regulation-licensing", title: "FSCA Regulation & Licensing", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-south-african-users", title: "Top Exchanges for South African Users", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "zar-payment-methods", title: "ZAR Payment Methods", level: 2 },
+        { id: "taxes", title: "taxes", level: 2 },
+        { id: "crypto-tax-in-south-africa", title: "Crypto Tax in South Africa", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-south-african-traders", title: "Tips for South African Traders", level: 2 }
       ]}
       faqs={[
         {

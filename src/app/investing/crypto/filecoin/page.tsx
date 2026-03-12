@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Filecoin (FIL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Filecoin (FIL)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Filecoin (FIL), the largest decentralized storage network. Discover how it works, tokenomics, use cases, and how to buy FIL.",
 };
@@ -17,12 +17,18 @@ export default function FilecoinPage() {
       readTime="8 min read"
       intro="Filecoin is the largest decentralized storage network, enabling anyone to rent out spare storage space or store data across a global network of providers. Powered by cryptographic proofs and an open marketplace, Filecoin is building the foundation for a decentralized data economy with expanding capabilities in compute and AI infrastructure."
       toc={[
-        { id: "what-is", title: "What Is Filecoin?", level: 2 },
-        { id: "how-it-works", title: "How Does Filecoin Work?", level: 2 },
-        { id: "tokenomics", title: "FIL Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy FIL", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-filecoin", title: "What Is Filecoin?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-filecoin-work", title: "How Does Filecoin Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "fil-tokenomics", title: "FIL Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-fil", title: "How to Buy FIL", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

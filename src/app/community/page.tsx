@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "CryptoDegen Community — Ask, Discuss, Learn with Fellow Degens",
+  title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens",
   description:
-    "Join the CryptoDegen community. Ask questions, share alpha, follow expert discussions, and connect with thousands of crypto traders, investors, and builders.",
+    "Join the degen0x community. Ask questions, share alpha, follow expert discussions, and connect with thousands of crypto traders, investors, and builders.",
 };
 
 const TRENDING_THREADS = [
@@ -190,7 +190,7 @@ export default function CommunityPage() {
               className="text-4xl md:text-5xl font-extrabold mb-4"
               style={{ color: "var(--color-text)" }}
             >
-              The CryptoDegen Community
+              The degen0x Community
             </h1>
             <p
               className="text-lg mb-8"

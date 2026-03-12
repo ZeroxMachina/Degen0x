@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Trading Volume? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Trading Volume? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what trading volume means in crypto, how to interpret volume data, the relationship between volume and price, and how to use volume in your analysis.",
 };
 
@@ -11,7 +11,16 @@ export default function VolumePage() {
   return (
     <LearnPageLayout title="What Is Volume?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="Volume is the total amount of a cryptocurrency traded during a specific time period, typically measured over 24 hours. It indicates the level of activity and interest in a particular asset or market. Volume is one of the most important technical indicators because it confirms price trends, reveals the strength of market moves, and provides insight into liquidity and market participation. High volume suggests strong conviction behind a price move, while low volume suggests weakness."
-      toc={[{ id: "definition", title: "What Is Volume?", level: 2 }, { id: "volume-and-price", title: "Volume and Price Relationship", level: 2 }, { id: "interpreting-volume", title: "Interpreting Volume", level: 2 }, { id: "volume-indicators", title: "Volume-Based Indicators", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-volume", title: "What Is Volume?", level: 2 },
+        { id: "volume-and-price", title: "volume-and-price", level: 2 },
+        { id: "volume-and-price-relationship", title: "Volume and Price Relationship", level: 2 },
+        { id: "interpreting-volume", title: "interpreting-volume", level: 2 },
+        { id: "interpreting-volume", title: "Interpreting Volume", level: 2 },
+        { id: "volume-indicators", title: "volume-indicators", level: 2 },
+        { id: "volume-based-indicators", title: "Volume-Based Indicators", level: 2 }
+      ]}
       faqs={[{ question: "Can trading volume be faked?", answer: "Yes. Wash trading (trading with yourself to inflate volume) is common on crypto exchanges. Studies have estimated that a significant percentage of reported volume on some exchanges is artificial. Use trusted data aggregators that filter for suspicious activity, and compare volume across multiple sources. Real volume typically correlates with order book depth and spread." },
         { question: "What is good volume for a cryptocurrency?", answer: "There is no absolute threshold. For major assets like BTC and ETH, daily volume in the billions is normal. For mid-cap altcoins, consistent volume of $10M+ suggests healthy liquidity. Volume should be evaluated relative to the asset's market cap. A volume-to-market-cap ratio above 10% indicates active trading, while below 1% suggests low interest." }]}
       relatedArticles={[{ title: "Market Depth", href: "/learn/glossary/market-depth", category: "Glossary" }, { title: "Candlestick", href: "/learn/glossary/candle", category: "Glossary" }, { title: "Order Book", href: "/learn/glossary/order-book", category: "Glossary" }, { title: "Spread", href: "/learn/glossary/spread", category: "Glossary" }]}

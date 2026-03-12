@@ -2,10 +2,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "CryptoDegen en Español — Comparar Exchanges, Wallets y DeFi",
+  title: "degen0x en Español — Comparar Exchanges, Wallets y DeFi",
   description:
-    "CryptoDegen es tu guía de confianza para cripto en español. Compara exchanges, wallets, protocolos DeFi y más. Reseñas de expertos, herramientas interactivas y guías completas.",
-  alternates: { canonical: "https://cryptodegen.com/es" },
+    "degen0x es tu guía de confianza para cripto en español. Compara exchanges, wallets, protocolos DeFi y más. Reseñas de expertos, herramientas interactivas y guías completas.",
+  alternates: { canonical: "https://degen0x.com/es" },
 };
 
 const CATEGORIAS = [
@@ -103,7 +103,7 @@ export default function EspanolLandingPage() {
       <section className="section-glass">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-3xl font-bold text-center mb-4" style={{ color: "var(--color-text)" }}>
-            Por Qué Confiar en CryptoDegen?
+            Por Qué Confiar en degen0x?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {[
@@ -129,7 +129,7 @@ export default function EspanolLandingPage() {
       {/* Disclaimer */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 text-center">
         <p className="text-xs" style={{ color: "var(--color-text-secondary)" }}>
-          CryptoDegen es un sitio informativo. Nada en este sitio constituye asesoramiento financiero.
+          degen0x es un sitio informativo. Nada en este sitio constituye asesoramiento financiero.
           Invertir en criptomonedas implica un alto riesgo de pérdida.{" "}
           <Link href="/es" style={{ color: "var(--color-primary)" }}>Aviso legal completo</Link>
         </p>

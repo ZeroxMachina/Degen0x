@@ -16,10 +16,14 @@ export default function BestTreasuryManagementPage() {
       readTime="10 min"
       intro="Crypto treasury management tools help organizations manage digital asset holdings with multi-sig wallets, spending controls, yield strategies, and reporting for DAOs and crypto-native businesses."
       toc={[
-        { id: "section-1", title: "Treasury Management Overview", level: 2 },
-        { id: "section-2", title: "Key Tools and Platforms", level: 2 },
-        { id: "section-3", title: "Security and Controls", level: 2 },
-        { id: "section-4", title: "Best Practices", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "treasury-management-overview", title: "Treasury Management Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "key-tools-and-platforms", title: "Key Tools and Platforms", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "security-and-controls", title: "Security and Controls", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What is crypto treasury management?", answer: "Crypto treasury management involves managing an organization's digital asset holdings including custody, spending controls, yield generation, diversification, and reporting. It combines wallet security with financial management practices." },

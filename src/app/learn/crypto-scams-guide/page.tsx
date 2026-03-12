@@ -12,13 +12,20 @@ export default function CryptoScamsGuidePage() {
   return (
     <LearnPageLayout title="Crypto Scams Guide" categoryName="Crypto Education" categorySlug="learn" readTime="10 min" intro="Cryptocurrency scams have cost users billions of dollars. The irreversible nature of blockchain transactions, combined with the pseudonymous environment and rapid innovation, creates fertile ground for sophisticated fraud schemes. Understanding the most common scam types and their warning signs is your best defense against losing funds to bad actors."
       toc={[
-        { id: "investment-scams", title: "Investment & Ponzi Scams", level: 2 },
+        { id: "investment-scams", title: "investment-scams", level: 2 },
+        { id: "investment-ponzi-scams", title: "Investment & Ponzi Scams", level: 2 },
+        { id: "phishing-impersonation", title: "phishing-impersonation", level: 2 },
         { id: "phishing-impersonation", title: "Phishing & Impersonation", level: 2 },
-        { id: "rug-pulls", title: "Rug Pulls & Exit Scams", level: 2 },
+        { id: "rug-pulls", title: "rug-pulls", level: 2 },
+        { id: "rug-pulls-exit-scams", title: "Rug Pulls & Exit Scams", level: 2 },
+        { id: "romance-pig-butchering", title: "romance-pig-butchering", level: 2 },
         { id: "romance-pig-butchering", title: "Romance & Pig Butchering", level: 2 },
+        { id: "technical-scams", title: "technical-scams", level: 2 },
         { id: "technical-scams", title: "Technical Scams", level: 2 },
-        { id: "red-flags", title: "Universal Red Flags", level: 2 },
-        { id: "protection", title: "Protecting Yourself", level: 2 },
+        { id: "red-flags", title: "red-flags", level: 2 },
+        { id: "universal-red-flags", title: "Universal Red Flags", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "protecting-yourself", title: "Protecting Yourself", level: 2 }
       ]}
       faqs={[
         { question: "What is the most common crypto scam?", answer: "Phishing attacks are the most prevalent, where scammers create fake websites, emails, or social media accounts mimicking legitimate services to steal credentials or trick users into signing malicious transactions. Investment scams promising guaranteed returns are the most costly in total dollar terms." },

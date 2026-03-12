@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Double Top Pattern in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Double Top Pattern in Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what a double top pattern is, how to identify this bearish reversal pattern on crypto charts, confirmation signals, and trading strategies for double tops.",
 };
 
@@ -16,10 +16,14 @@ export default function DoubleTopPage() {
       readTime="6 min read"
       intro="A double top is a bearish reversal chart pattern that forms after an uptrend when price reaches a resistance level twice and fails to break through both times. The pattern resembles the letter M and signals that buying momentum is exhausting. Double tops are among the most reliable reversal patterns in technical analysis and are frequently observed in crypto markets, where they often mark the end of significant rallies."
       toc={[
-        { id: "what-is-double-top", title: "What Is a Double Top?", level: 2 },
-        { id: "identifying", title: "Identifying the Pattern", level: 2 },
-        { id: "confirmation", title: "Confirmation and Neckline", level: 2 },
-        { id: "trading", title: "Trading Double Tops", level: 2 },
+        { id: "what-is-double-top", title: "what-is-double-top", level: 2 },
+        { id: "what-is-a-double-top", title: "What Is a Double Top?", level: 2 },
+        { id: "identifying", title: "identifying", level: 2 },
+        { id: "identifying-the-pattern", title: "Identifying the Pattern", level: 2 },
+        { id: "confirmation", title: "confirmation", level: 2 },
+        { id: "confirmation-and-neckline", title: "Confirmation and Neckline", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-double-tops", title: "Trading Double Tops", level: 2 }
       ]}
       faqs={[
         { question: "How reliable are double tops in crypto?", answer: "Double tops are among the more reliable reversal patterns, but they are not foolproof. Confirmed double tops (with neckline breaks on volume) have a success rate of roughly 65-75% in triggering meaningful declines. The pattern is more reliable on higher timeframes (daily and weekly) and when the two peaks are separated by at least several weeks." },

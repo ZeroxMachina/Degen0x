@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Gemini vs Kraken (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Gemini vs Kraken (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Gemini vs Kraken. Fees, security, features, regulation, and which US exchange is better for security-focused traders.",
 };
 
@@ -16,12 +16,18 @@ export default function GeminiVsKraken() {
       readTime="8 min read"
       intro="Gemini and Kraken are two of the most security-focused and regulated crypto exchanges available to US traders. Both prioritize compliance and asset protection, but they differ in fees, features, and approach. This comparison examines which platform better serves security-conscious crypto users."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "security", title: "Security and Regulation", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-and-regulation", title: "Security and Regulation", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
+        { id: "supported-assets", title: "supported-assets", level: 2 },
         { id: "supported-assets", title: "Supported Assets", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which has lower fees?", answer: "Kraken generally offers lower fees across most volume tiers. Kraken starts at 0.25% maker/0.40% taker while Gemini ActiveTrader starts at 0.20% maker/0.40% taker. Both decrease with volume." },

@@ -16,10 +16,14 @@ export default function HowToBuyMoneroPage() {
       readTime="9 min"
       intro="Monero is the leading privacy-focused cryptocurrency, offering untraceable transactions through advanced cryptographic techniques. Unlike Bitcoin, where all transactions are publicly visible on the blockchain, Monero keeps sender, receiver, and amount information private by default. This guide explains how to buy XMR and the unique considerations for privacy coins."
       toc={[
+        { id: "what-is-monero", title: "what-is-monero", level: 2 },
         { id: "what-is-monero", title: "What Is Monero?", level: 2 },
-        { id: "where-to-buy", title: "Where to Buy Monero", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Purchase Guide", level: 2 },
-        { id: "storage", title: "Storing Your Monero", level: 2 },
+        { id: "where-to-buy", title: "where-to-buy", level: 2 },
+        { id: "where-to-buy-monero", title: "Where to Buy Monero", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-purchase-guide", title: "Step-by-Step Purchase Guide", level: 2 },
+        { id: "storage", title: "storage", level: 2 },
+        { id: "storing-your-monero", title: "Storing Your Monero", level: 2 }
       ]}
       faqs={[
         { question: "Why is Monero delisted from some exchanges?", answer: "Several exchanges including Coinbase, Binance (in some regions), and Kraken have delisted Monero due to regulatory pressure around privacy coins. Governments and regulators have concerns about the inability to trace XMR transactions. This has reduced exchange availability but has not diminished Monero's strong community support." },

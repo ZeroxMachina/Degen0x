@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Play-to-Earn? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Play-to-Earn? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what play-to-earn gaming is, how it works, and the challenges facing blockchain-based gaming economies.",
 };
@@ -17,11 +17,16 @@ export default function PlayToEarnPage() {
       readTime="5 min"
       intro="Play-to-earn (P2E) is a gaming model where players earn cryptocurrency or NFTs with real-world value by playing blockchain-based games. Unlike traditional games where in-game items belong to the developer, P2E games give players true ownership of their assets. Axie Infinity popularized the model in 2021, but the sector has faced significant challenges around sustainability, game quality, and economic design."
       toc={[
-        { id: "definition", title: "What Is Play-to-Earn?", level: 2 },
-        { id: "how-it-works", title: "How P2E Works", level: 2 },
-        { id: "axie-infinity", title: "The Axie Infinity Phenomenon", level: 2 },
-        { id: "challenges", title: "Challenges and Criticism", level: 2 },
-        { id: "future", title: "The Future of Blockchain Gaming", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-play-to-earn", title: "What Is Play-to-Earn?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-p2e-works", title: "How P2E Works", level: 2 },
+        { id: "axie-infinity", title: "axie-infinity", level: 2 },
+        { id: "the-axie-infinity-phenomenon", title: "The Axie Infinity Phenomenon", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-and-criticism", title: "Challenges and Criticism", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-blockchain-gaming", title: "The Future of Blockchain Gaming", level: 2 }
       ]}
       faqs={[
         {

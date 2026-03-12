@@ -16,14 +16,14 @@ export default function ZeroKnowledgeProofs() {
       readTime="12 min"
       intro="Zero-knowledge proofs (ZKPs) have evolved from theoretical cryptography into the backbone of modern blockchain scaling. In 2026, ZK technology powers some of the fastest, most private cryptocurrency networks. Discover how zero-knowledge proofs enable transactions without revealing sensitive data, how ZK-rollups compress billions of transactions, and why privacy-focused solutions like zkEVM are reshaping Ethereum scaling."
       toc={[
-        "What Are Zero-Knowledge Proofs?",
-        "ZK-Rollups: Scaling Without Sacrifice",
-        "zkEVM & Ethereum Equivalence",
-        "Major ZK Solutions: Polygon zkEVM, zkSync, StarkNet",
-        "Privacy Applications Beyond Scaling",
-        "ZK Proofs in 2026: Market Adoption",
-        "Risks & Limitations",
-        "Getting Started with ZK Technology",
+        { id: "what-are-zero-knowledge-proofs", title: "What Are Zero-Knowledge Proofs?", level: 2 },
+        { id: "zk-rollups-scaling-without-sacrifice", title: "ZK-Rollups: Scaling Without Sacrifice", level: 2 },
+        { id: "zkevm-ethereum-equivalence", title: "zkEVM & Ethereum Equivalence", level: 2 },
+        { id: "major-zk-solutions-polygon-zkevm-zksync-starknet", title: "Major ZK Solutions: Polygon zkEVM, zkSync, StarkNet", level: 2 },
+        { id: "privacy-applications-beyond-scaling", title: "Privacy Applications Beyond Scaling", level: 2 },
+        { id: "zk-proofs-in-2026-market-adoption", title: "ZK Proofs in 2026: Market Adoption", level: 2 },
+        { id: "risks-limitations", title: "Risks & Limitations", level: 2 },
+        { id: "getting-started-with-zk-technology", title: "Getting Started with ZK Technology", level: 2 }
       ]}
       faqs={[
         {

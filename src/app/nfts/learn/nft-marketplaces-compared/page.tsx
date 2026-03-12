@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Marketplaces Compared (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Marketplaces Compared (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the top NFT marketplaces including OpenSea, Blur, Magic Eden, and more. Learn about fees, features, supported chains, and which marketplace is best for you.",
 };
 
@@ -11,7 +11,16 @@ export default function NftMarketplacesComparedPage() {
   return (
     <LearnPageLayout title="NFT Marketplaces Compared" categoryName="NFTs" categorySlug="nfts" readTime="10 min read"
       intro="NFT marketplaces are the primary venues for buying, selling, and discovering digital collectibles. The landscape has evolved dramatically from OpenSea's early dominance to a competitive ecosystem of specialized platforms, each with different fee structures, features, and supported blockchains. Choosing the right marketplace impacts your trading costs, audience reach, and overall experience. This guide provides a comprehensive comparison of the major NFT marketplaces to help you find the best platform for your needs."
-      toc={[{ id: "marketplace-overview", title: "Marketplace Overview", level: 2 }, { id: "ethereum-marketplaces", title: "Ethereum NFT Marketplaces", level: 2 }, { id: "multi-chain-marketplaces", title: "Multi-Chain Marketplaces", level: 2 }, { id: "choosing-marketplace", title: "Choosing the Right Marketplace", level: 2 }]}
+      toc={[
+        { id: "marketplace-overview", title: "marketplace-overview", level: 2 },
+        { id: "marketplace-overview", title: "Marketplace Overview", level: 2 },
+        { id: "ethereum-marketplaces", title: "ethereum-marketplaces", level: 2 },
+        { id: "ethereum-nft-marketplaces", title: "Ethereum NFT Marketplaces", level: 2 },
+        { id: "multi-chain-marketplaces", title: "multi-chain-marketplaces", level: 2 },
+        { id: "multi-chain-marketplaces", title: "Multi-Chain Marketplaces", level: 2 },
+        { id: "choosing-marketplace", title: "choosing-marketplace", level: 2 },
+        { id: "choosing-the-right-marketplace", title: "Choosing the Right Marketplace", level: 2 }
+      ]}
       faqs={[{ question: "Which NFT marketplace has the lowest fees?", answer: "Blur charges 0% marketplace fees for sellers and optional creator royalties. OpenSea charges 2.5% marketplace fees. Magic Eden charges 2% on Ethereum and 0% on Solana with optional royalties. LooksRare charges 2% but returns a portion through LOOKS token rewards. For buyers, most marketplaces are free beyond the NFT price plus gas. Fee structures change frequently, so verify current rates before listing." },
         { question: "Can I list the same NFT on multiple marketplaces?", answer: "Yes, you can list the same NFT on multiple Ethereum marketplaces simultaneously since they all read from the same blockchain. Tools like Reservoir and NFTGo aggregate listings across platforms. However, once an NFT sells on one marketplace, listings on others become invalid. Cross-marketplace listing is a common strategy to maximize exposure and find the best price for your NFTs." },
         { question: "Do NFT marketplaces custody my NFTs?", answer: "No, reputable NFT marketplaces are non-custodial. Your NFTs remain in your wallet until they are sold. When you list an NFT, you sign an approval allowing the marketplace contract to transfer it when a buyer pays. Some marketplaces use escrow for auction mechanisms, where the NFT is held in a smart contract until the auction completes. Your wallet must remain connected for active listings." }]}

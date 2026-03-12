@@ -16,10 +16,14 @@ export default function ChileExchangesPage() {
       readTime="9 min"
       intro="Chile has a growing but measured approach to cryptocurrency adoption. The country's fintech-friendly regulatory environment and stable banking system provide a solid foundation for crypto trading. Chilean traders have access to both local exchanges with CLP support and global platforms through P2P markets."
       toc={[
-        { id: "regulation", title: "Crypto Regulation in Chile", level: 2 },
-        { id: "top-exchanges", title: "Recommended Exchanges", level: 2 },
-        { id: "payment-methods", title: "CLP Payment Methods", level: 2 },
-        { id: "tips", title: "Tips for Chilean Traders", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-chile", title: "Crypto Regulation in Chile", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "recommended-exchanges", title: "Recommended Exchanges", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "clp-payment-methods", title: "CLP Payment Methods", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-chilean-traders", title: "Tips for Chilean Traders", level: 2 }
       ]}
       faqs={[
         {

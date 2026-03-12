@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import React, { useState, useMemo, useCallback } from "react";
@@ -184,7 +186,7 @@ export default function BridgeAggregator() {
   }, [sourceChain, destChain]);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white p-6">
+    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-[var(--color-text)] p-6">
       {/* Breadcrumb */}
       <Breadcrumb
         items={[
@@ -216,7 +218,7 @@ export default function BridgeAggregator() {
               <select
                 value={sourceChain}
                 onChange={(e) => setSourceChain(e.target.value)}
-                className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white hover:border-cyan-400 transition"
+                className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-[var(--color-text)] hover:border-cyan-400 transition"
               >
                 {chains.map((c) => (
                   <option key={c.id} value={c.id}>
@@ -246,7 +248,7 @@ export default function BridgeAggregator() {
               <select
                 value={destChain}
                 onChange={(e) => setDestChain(e.target.value)}
-                className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white hover:border-cyan-400 transition"
+                className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-[var(--color-text)] hover:border-cyan-400 transition"
               >
                 {chains.map((c) => (
                   <option key={c.id} value={c.id} disabled={c.id === sourceChain}>
@@ -268,7 +270,7 @@ export default function BridgeAggregator() {
               <select
                 value={selectedToken}
                 onChange={(e) => setSelectedToken(e.target.value)}
-                className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white hover:border-cyan-400 transition"
+                className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-[var(--color-text)] hover:border-cyan-400 transition"
               >
                 {tokens.map((t) => (
                   <option key={t} value={t}>
@@ -286,7 +288,7 @@ export default function BridgeAggregator() {
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
                 placeholder="1000"
-                className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white placeholder-gray-500 hover:border-cyan-400 transition"
+                className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-[var(--color-text)] placeholder-gray-500 hover:border-cyan-400 transition"
               />
               <div className="text-xs text-gray-400 mt-1">Min: 10 | Max: 1,000,000</div>
             </div>
@@ -294,7 +296,7 @@ export default function BridgeAggregator() {
             {/* Find Routes Button */}
             <button
               onClick={() => setShowResults(true)}
-              className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-3 rounded-lg transition transform hover:scale-105"
+              className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-[var(--color-text)] font-bold py-3 rounded-lg transition transform hover:scale-105"
             >
               Find Best Routes →
             </button>
@@ -584,7 +586,7 @@ export default function BridgeAggregator() {
       </div>
 
       {/* Metadata for SEO */}
-      <title>Cross-Chain Bridge Aggregator | CryptoDegen Tools</title>
+      <title>Cross-Chain Bridge Aggregator | degen0x Tools</title>
       <meta name="description" content="Compare 12+ bridges across 15 blockchains. Find optimal routes with fee analysis, security ratings, and speed estimates." />
       <meta name="keywords" content="bridge aggregator, cross-chain, DeFi, token swap, blockchain" />
     </main>

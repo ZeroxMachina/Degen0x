@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Cards for Travel (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Cards for Travel (${CURRENT_YEAR}) | degen0x`,
   description: "Find the best crypto debit cards for international travel. Compare foreign transaction fees, ATM access, airport lounge benefits, and travel-specific perks.",
 };
 
@@ -11,7 +11,16 @@ export default function TravelCryptoCardsPage() {
   return (
     <LearnPageLayout title="Best Crypto Cards for Travel" categoryName="Crypto Cards" categorySlug="crypto-cards" readTime="8 min read"
       intro="Crypto cards offer compelling advantages for international travelers: zero or low foreign transaction fees, competitive exchange rates, global ATM access, and premium travel perks like airport lounge access. Traditional bank cards typically charge 1-3% on foreign transactions and offer unfavorable exchange rates, costs that add up quickly during extended travel. This guide compares the best crypto cards for travelers and explains how to maximize value while traveling internationally."
-      toc={[{ id: "travel-advantages", title: "Why Use Crypto Cards for Travel", level: 2 }, { id: "best-travel-cards", title: "Best Cards for Travelers", level: 2 }, { id: "travel-tips", title: "Travel Tips and Best Practices", level: 2 }, { id: "potential-issues", title: "Potential Issues Abroad", level: 2 }]}
+      toc={[
+        { id: "travel-advantages", title: "travel-advantages", level: 2 },
+        { id: "why-use-crypto-cards-for-travel", title: "Why Use Crypto Cards for Travel", level: 2 },
+        { id: "best-travel-cards", title: "best-travel-cards", level: 2 },
+        { id: "best-cards-for-travelers", title: "Best Cards for Travelers", level: 2 },
+        { id: "travel-tips", title: "travel-tips", level: 2 },
+        { id: "travel-tips-and-best-practices", title: "Travel Tips and Best Practices", level: 2 },
+        { id: "potential-issues", title: "potential-issues", level: 2 },
+        { id: "potential-issues-abroad", title: "Potential Issues Abroad", level: 2 }
+      ]}
       faqs={[{ question: "Do crypto cards work in every country?", answer: "Crypto cards work wherever Visa or Mastercard is accepted, which covers most countries worldwide. However, some card providers restrict usage in specific countries due to regulatory requirements. Check your card provider's supported countries list before traveling. Additionally, some countries have limited card acceptance infrastructure, so carry backup payment methods including cash in the local currency." },
         { question: "Should I use stablecoins or volatile crypto when traveling?", answer: "Stablecoins like USDC are recommended for travel spending because they eliminate price volatility risk. When you load USDC, $100 remains approximately $100 regardless of market movements. Using volatile crypto like BTC means your spending power fluctuates with the market, which can be stressful during a trip. Load stablecoins before traveling to lock in your travel budget at a known exchange rate." },
         { question: "Are ATM withdrawals free with crypto cards?", answer: "Most crypto cards offer free ATM withdrawals up to a monthly limit ($200-$800 depending on the card tier). Beyond the free limit, fees typically range from 2-3% of the withdrawal amount. Foreign ATM operators may also charge their own fees, which are separate from your card provider's fees. Check your card's specific ATM terms and plan cash withdrawals to stay within free limits when possible." }]}

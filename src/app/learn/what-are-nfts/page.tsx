@@ -17,11 +17,16 @@ export default function WhatAreNftsPage() {
       readTime="12 min"
       intro="Non-Fungible Tokens (NFTs) are unique digital assets stored on a blockchain that represent ownership of a specific item — whether that is a piece of art, a collectible, a gaming item, a domain name, or even a real-world asset like property. Unlike cryptocurrencies such as Bitcoin or ETH, which are fungible (each unit is interchangeable), every NFT is one-of-a-kind and cannot be replicated. This guide explains how NFTs work, their real-world use cases, and what makes them significant."
       toc={[
-        { id: "what-are-nfts", title: "Understanding NFTs", level: 2 },
+        { id: "what-are-nfts", title: "what-are-nfts", level: 2 },
+        { id: "understanding-nfts", title: "Understanding NFTs", level: 2 },
+        { id: "how-nfts-work", title: "how-nfts-work", level: 2 },
         { id: "how-nfts-work", title: "How NFTs Work", level: 2 },
-        { id: "use-cases", title: "NFT Use Cases", level: 2 },
-        { id: "buying-selling", title: "Buying and Selling NFTs", level: 2 },
-        { id: "risks-considerations", title: "Risks and Considerations", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "nft-use-cases", title: "NFT Use Cases", level: 2 },
+        { id: "buying-selling", title: "buying-selling", level: 2 },
+        { id: "buying-and-selling-nfts", title: "Buying and Selling NFTs", level: 2 },
+        { id: "risks-considerations", title: "risks-considerations", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

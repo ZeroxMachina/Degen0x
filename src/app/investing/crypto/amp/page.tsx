@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Amp (AMP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Amp (AMP)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Amp (AMP), the collateral token for verifiable digital asset transfers. Discover AMP tokenomics and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function AmpPage() {
       readTime="8 min read"
       intro="Amp (AMP) is an Ethereum-based collateral token designed to provide verifiable assurances for any kind of value transfer. The Amp token uses a system of partitioned collateral to secure transactions across various networks and applications, enabling instant and irreversible payment guarantees for digital asset transfers through the Flexa payment network."
       toc={[
-        { id: "what-is", title: "What Is Amp?", level: 2 },
-        { id: "how-it-works", title: "How Does Amp Work?", level: 2 },
-        { id: "tokenomics", title: "AMP Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy AMP", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-amp", title: "What Is Amp?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-amp-work", title: "How Does Amp Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "amp-tokenomics", title: "AMP Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-amp", title: "How to Buy AMP", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Amp?", answer: "AMP is a collateral token on Ethereum designed to secure digital asset transfers. It provides instant settlement guarantees for the Flexa payment network, enabling merchants to accept crypto payments without fraud risk." },

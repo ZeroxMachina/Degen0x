@@ -16,10 +16,14 @@ export default function BestCrypto401kPage() {
       readTime="10 min"
       intro="Crypto 401(k) plans allow employees to include Bitcoin and digital assets in employer-sponsored retirement accounts. Understanding available plans, fees, and choices is essential for retirement planning."
       toc={[
-        { id: "section-1", title: "Crypto 401(k) Overview", level: 2 },
-        { id: "section-2", title: "Available Plans", level: 2 },
-        { id: "section-3", title: "Tax Advantages", level: 2 },
-        { id: "section-4", title: "Implementation Guide", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "crypto-401-k-overview", title: "Crypto 401(k) Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "available-plans", title: "Available Plans", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "tax-advantages", title: "Tax Advantages", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "implementation-guide", title: "Implementation Guide", level: 2 }
       ]}
       faqs={[
         { question: "Can I hold Bitcoin in my 401(k)?", answer: "Yes, certain 401(k) plan providers now offer Bitcoin and crypto investment options. Your employer must use a plan provider that supports crypto, or you may be able to use a self-directed 401(k) with a brokerage window that provides crypto access." },

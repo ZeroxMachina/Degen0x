@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Merkle Tree? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Merkle Tree? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what Merkle trees are, how they enable efficient data verification, and their critical role in blockchain technology.",
 };
@@ -17,11 +17,16 @@ export default function MerkleTreePage() {
       readTime="5 min"
       intro="A Merkle tree is a data structure used in blockchains to efficiently summarize and verify large sets of data. It organizes transactions into a tree of cryptographic hashes, where each leaf node represents a transaction hash and each parent is the hash of its children. The single hash at the top (the Merkle root) serves as a compact fingerprint of all the data, allowing quick verification without downloading the entire dataset."
       toc={[
-        { id: "definition", title: "What Is a Merkle Tree?", level: 2 },
-        { id: "how-it-works", title: "How Merkle Trees Work", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-merkle-tree", title: "What Is a Merkle Tree?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-merkle-trees-work", title: "How Merkle Trees Work", level: 2 },
+        { id: "merkle-proofs", title: "merkle-proofs", level: 2 },
         { id: "merkle-proofs", title: "Merkle Proofs", level: 2 },
-        { id: "blockchain-usage", title: "Usage in Blockchains", level: 2 },
-        { id: "why-it-matters", title: "Why Merkle Trees Matter", level: 2 },
+        { id: "blockchain-usage", title: "blockchain-usage", level: 2 },
+        { id: "usage-in-blockchains", title: "Usage in Blockchains", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-merkle-trees-matter", title: "Why Merkle Trees Matter", level: 2 }
       ]}
       faqs={[
         {

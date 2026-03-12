@@ -17,11 +17,16 @@ export default function CryptoVsTraditionalCardsPage() {
       readTime="10 min"
       intro="Traditional credit cards have decades of refinement behind them, with well-established reward programs, consumer protections, and perks. Crypto cards are a newer category that offers the potential for higher cashback rates and exposure to digital assets. This guide compares the two side by side to help you decide whether a crypto card should replace or complement your existing traditional card."
       toc={[
-        { id: "rewards-comparison", title: "Rewards: Crypto vs Traditional", level: 2 },
-        { id: "fees-comparison", title: "Fees and Costs", level: 2 },
+        { id: "rewards-comparison", title: "rewards-comparison", level: 2 },
+        { id: "rewards-crypto-vs-traditional", title: "Rewards: Crypto vs Traditional", level: 2 },
+        { id: "fees-comparison", title: "fees-comparison", level: 2 },
+        { id: "fees-and-costs", title: "Fees and Costs", level: 2 },
+        { id: "consumer-protections", title: "consumer-protections", level: 2 },
         { id: "consumer-protections", title: "Consumer Protections", level: 2 },
+        { id: "practical-considerations", title: "practical-considerations", level: 2 },
         { id: "practical-considerations", title: "Practical Considerations", level: 2 },
-        { id: "when-to-use-which", title: "When to Use Which Card", level: 2 },
+        { id: "when-to-use-which", title: "when-to-use-which", level: 2 },
+        { id: "when-to-use-which-card", title: "When to Use Which Card", level: 2 }
       ]}
       faqs={[
         {

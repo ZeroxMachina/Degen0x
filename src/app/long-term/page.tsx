@@ -71,7 +71,7 @@ export default function LongTermPage() {
     "@type": "CollectionPage",
     name: `Long-Term Crypto Strategies Hub - ${CURRENT_YEAR}`,
     description: "Your complete guide to building long-term wealth with cryptocurrency. Crypto IRAs, HODL strategies, passive income, and retirement planning.",
-    url: "https://cryptodegen.com/long-term",
+    url: "https://degen0x.com/long-term",
     isPartOf: { "@type": "WebSite", name: SITE_NAME },
   };
 
@@ -82,7 +82,7 @@ export default function LongTermPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term Strategies", href: "/long-term" }]} />
 
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">Long-Term Crypto Strategies Hub</h1>
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Long-Term Crypto Strategies Hub</h1>
           <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
             Your complete resource for building lasting wealth with cryptocurrency. Whether you are planning for retirement
             with a crypto IRA, pursuing financial independence through FIRE, or building a generational wealth
@@ -93,7 +93,7 @@ export default function LongTermPage() {
 
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white">Find the Best Providers</h2>
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Find the Best Providers</h2>
             <Link href="/long-term/best" className="text-[var(--color-primary)] hover:underline text-sm font-medium">
               View all rankings &rarr;
             </Link>
@@ -101,7 +101,7 @@ export default function LongTermPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {bestOfLinks.map((link) => (
               <Link key={link.href} href={link.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block">
-                <h3 className="text-white font-semibold mb-1">{link.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{link.desc}</p>
               </Link>
             ))}
@@ -109,11 +109,11 @@ export default function LongTermPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Tools & Calculators</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Tools & Calculators</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {toolLinks.map((tool) => (
               <Link key={tool.href} href={tool.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block">
-                <h3 className="text-white font-semibold mb-1">{tool.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{tool.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{tool.desc}</p>
               </Link>
             ))}
@@ -121,11 +121,11 @@ export default function LongTermPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Learn About Long-Term Crypto</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn About Long-Term Crypto</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {learnLinks.map((link) => (
               <Link key={link.href} href={link.href} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block">
-                <span className="text-white font-semibold">{link.title}</span>
+                <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">Read guide &rarr;</span>
               </Link>
             ))}
@@ -133,7 +133,7 @@ export default function LongTermPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Why Long-Term Crypto Strategies Matter</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Why Long-Term Crypto Strategies Matter</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Cryptocurrency has emerged as a legitimate asset class for long-term wealth building. With the approval of
             spot Bitcoin ETFs, growing institutional adoption, and maturing regulatory frameworks, more investors

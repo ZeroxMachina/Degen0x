@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
@@ -290,7 +292,7 @@ export default function SocialMetricsPage() {
             onClick={() => setTimePeriod(period)}
             className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
               timePeriod === period
-                ? "bg-[var(--color-primary)] text-white"
+                ? "bg-[var(--color-primary)] text-[var(--color-text)]"
                 : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
             }`}
           >
@@ -349,7 +351,7 @@ export default function SocialMetricsPage() {
             onClick={() => setActiveCategory(cat)}
             className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
               activeCategory === cat
-                ? "bg-[var(--color-primary)] text-white"
+                ? "bg-[var(--color-primary)] text-[var(--color-text)]"
                 : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
             }`}
           >
@@ -382,7 +384,7 @@ export default function SocialMetricsPage() {
                 onClick={() => setSortBy(key)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                   sortBy === key
-                    ? "bg-[var(--color-primary)] text-white"
+                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
                     : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
@@ -545,7 +547,7 @@ export default function SocialMetricsPage() {
             "@type": "SoftwareApplication",
             "name": "Social Metrics Aggregator",
             "description": "Real-time social engagement metrics aggregator for 30+ cryptocurrencies across Twitter, Reddit, Telegram, GitHub, Discord, and Google Trends",
-            "url": "https://cryptodegen.io/tools/social-metrics",
+            "url": "https://degen0x.com/tools/social-metrics",
             "applicationCategory": "FinanceApplication",
             "offers": {
               "@type": "Offer",
@@ -564,13 +566,3 @@ export default function SocialMetricsPage() {
   );
 }
 
-export const metadata = {
-  title: "Social Metrics Aggregator | CryptoDegen",
-  description: "Real-time social engagement metrics for 30+ cryptocurrencies. Track Twitter followers, Reddit subscribers, Telegram members, GitHub activity, Discord communities, and Google Trends scores.",
-  openGraph: {
-    title: "Social Metrics Aggregator | CryptoDegen",
-    description: "Monitor social engagement across Twitter, Reddit, Telegram, GitHub, Discord. Identify rising and falling social momentum in crypto markets.",
-    url: "https://cryptodegen.io/tools/social-metrics",
-    type: "website",
-  },
-};

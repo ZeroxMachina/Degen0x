@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Flash Loan? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Flash Loan? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what flash loans are, how they work, and why they are both a powerful DeFi tool and a vector for exploits.",
 };
@@ -17,11 +17,16 @@ export default function FlashLoanPage() {
       readTime="5 min"
       intro="A flash loan is an uncollateralized loan that must be borrowed and repaid within a single blockchain transaction. If the borrower cannot repay the full amount plus fees by the end of the transaction, the entire operation is automatically reverted as if it never happened. Flash loans are unique to DeFi and enable arbitrage, collateral swaps, and self-liquidation without requiring upfront capital."
       toc={[
-        { id: "definition", title: "What Is a Flash Loan?", level: 2 },
-        { id: "how-it-works", title: "How Flash Loans Work", level: 2 },
-        { id: "use-cases", title: "Legitimate Use Cases", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-flash-loan", title: "What Is a Flash Loan?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-flash-loans-work", title: "How Flash Loans Work", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "legitimate-use-cases", title: "Legitimate Use Cases", level: 2 },
+        { id: "flash-loan-attacks", title: "flash-loan-attacks", level: 2 },
         { id: "flash-loan-attacks", title: "Flash Loan Attacks", level: 2 },
-        { id: "why-it-matters", title: "Why Flash Loans Matter", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-flash-loans-matter", title: "Why Flash Loans Matter", level: 2 }
       ]}
       faqs={[
         {

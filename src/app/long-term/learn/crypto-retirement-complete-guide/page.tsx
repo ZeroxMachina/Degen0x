@@ -16,10 +16,14 @@ export default function CryptoRetirementCompleteGuidePage() {
       readTime="10 min"
       intro="Including cryptocurrency in retirement planning requires understanding the unique opportunities and risks of digital assets for long-term wealth building, covering crypto IRAs, 401(k) options, and tax-efficient approaches."
       toc={[
-        { id: "section-1", title: "Retirement Planning with Crypto", level: 2 },
-        { id: "section-2", title: "Tax-Advantaged Accounts", level: 2 },
-        { id: "section-3", title: "Allocation Strategies", level: 2 },
-        { id: "section-4", title: "Risk Management", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "retirement-planning-with-crypto", title: "Retirement Planning with Crypto", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "tax-advantaged-accounts", title: "Tax-Advantaged Accounts", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "allocation-strategies", title: "Allocation Strategies", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "risk-management", title: "Risk Management", level: 2 }
       ]}
       faqs={[
         { question: "Should I include crypto in my retirement plan?", answer: "A modest allocation of 5-15% to crypto can provide growth potential and diversification within a broader retirement portfolio. The appropriate allocation depends on your age, risk tolerance, time horizon, and existing portfolio composition." },

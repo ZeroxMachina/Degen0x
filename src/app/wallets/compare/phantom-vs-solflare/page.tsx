@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Phantom", slug: "phantom", rating: 4.7, affiliateUrl: "https://cryptodegen.com/go/phantom", features: { "Chains": "Solana, Ethereum, Polygon, Bitcoin", "Staking": "Yes (native SOL staking)", "NFT Gallery": "Yes (rich display)", "Built-in Swap": "Yes", "Browser Extension": "Chrome, Firefox, Brave, Edge", "Mobile App": "iOS & Android", "Hardware Wallet": "Ledger support", "Token Burn": "Yes (close empty accounts)" } },
-  { name: "Solflare", slug: "solflare", rating: 4.4, affiliateUrl: "https://cryptodegen.com/go/solflare", features: { "Chains": "Solana only", "Staking": "Yes (advanced validator selection)", "NFT Gallery": "Yes", "Built-in Swap": "Yes (Jupiter integration)", "Browser Extension": "Chrome, Brave", "Mobile App": "iOS & Android", "Hardware Wallet": "Ledger support", "Token Burn": "Yes" } },
+  { name: "Phantom", slug: "phantom", rating: 4.7, affiliateUrl: "https://degen0x.com/go/phantom", features: { "Chains": "Solana, Ethereum, Polygon, Bitcoin", "Staking": "Yes (native SOL staking)", "NFT Gallery": "Yes (rich display)", "Built-in Swap": "Yes", "Browser Extension": "Chrome, Firefox, Brave, Edge", "Mobile App": "iOS & Android", "Hardware Wallet": "Ledger support", "Token Burn": "Yes (close empty accounts)" } },
+  { name: "Solflare", slug: "solflare", rating: 4.4, affiliateUrl: "https://degen0x.com/go/solflare", features: { "Chains": "Solana only", "Staking": "Yes (advanced validator selection)", "NFT Gallery": "Yes", "Built-in Swap": "Yes (Jupiter integration)", "Browser Extension": "Chrome, Brave", "Mobile App": "iOS & Android", "Hardware Wallet": "Ledger support", "Token Burn": "Yes" } },
 ];
 
 const features = ["Chains", "Staking", "NFT Gallery", "Built-in Swap", "Browser Extension", "Mobile App", "Hardware Wallet", "Token Burn"];
@@ -39,7 +39,7 @@ export default function PhantomVsSolflarePage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Phantom vs Solflare: Best Solana Wallet in {CURRENT_YEAR}?</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Phantom vs Solflare: Best Solana Wallet in {CURRENT_YEAR}?</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Phantom and Solflare are the two leading Solana wallets. We compare features, staking,
           NFT support, and which one is right for your Solana activities.
@@ -80,12 +80,12 @@ export default function PhantomVsSolflarePage() {
         <h2 id="verdict">Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose Phantom if:</strong> You want a polished
+            <strong className="text-[var(--color-text)]">Choose Phantom if:</strong> You want a polished
             multi-chain wallet with the best NFT gallery, simple staking, and broad browser
             support. Phantom is the default choice for most Solana users.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose Solflare if:</strong> You are a dedicated
+            <strong className="text-[var(--color-text)]">Choose Solflare if:</strong> You are a dedicated
             Solana user who wants advanced validator selection tools, deep Solana integration,
             and prefer a Solana-focused wallet without multi-chain complexity.
           </p>
@@ -96,11 +96,11 @@ export default function PhantomVsSolflarePage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/compare/metamask-vs-phantom" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Compare</span>
-            <h3 className="font-semibold text-white text-sm">MetaMask vs Phantom</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">MetaMask vs Phantom</h3>
           </Link>
           <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Guide</span>
-            <h3 className="font-semibold text-white text-sm">Wallet Security Best Practices</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Wallet Security Best Practices</h3>
           </Link>
         </div>
       </section>

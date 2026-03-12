@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is the Polkadot Ecosystem? Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is the Polkadot Ecosystem? Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about the Polkadot ecosystem, how parachains and shared security work, the DOT token, and the major projects building on Polkadot's multi-chain network.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsPolkadotEcosystemPage() {
       readTime="9 min read"
       intro="Polkadot is a multi-chain blockchain platform that enables different blockchains to interoperate and share security through a central relay chain. Founded by Ethereum co-founder Gavin Wood, Polkadot's unique architecture uses parachains — specialized blockchains that connect to the relay chain to benefit from its shared security and cross-chain messaging capabilities. This design allows each parachain to be optimized for specific use cases while maintaining seamless communication with the broader network."
       toc={[
+        { id: "polkadot-overview", title: "polkadot-overview", level: 2 },
         { id: "polkadot-overview", title: "Polkadot Overview", level: 2 },
-        { id: "parachains", title: "Parachains and Shared Security", level: 2 },
-        { id: "key-projects", title: "Key Polkadot Projects", level: 2 },
-        { id: "dot-token", title: "The DOT Token", level: 2 },
+        { id: "parachains", title: "parachains", level: 2 },
+        { id: "parachains-and-shared-security", title: "Parachains and Shared Security", level: 2 },
+        { id: "key-projects", title: "key-projects", level: 2 },
+        { id: "key-polkadot-projects", title: "Key Polkadot Projects", level: 2 },
+        { id: "dot-token", title: "dot-token", level: 2 },
+        { id: "the-dot-token", title: "The DOT Token", level: 2 }
       ]}
       faqs={[
         {

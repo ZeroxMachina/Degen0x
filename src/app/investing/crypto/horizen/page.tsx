@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Horizen (ZEN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Horizen (ZEN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Horizen (ZEN), the blockchain platform with zero-knowledge proof technology. Discover ZEN tokenomics, EON sidechain, and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function HorizenPage() {
       readTime="8 min read"
       intro="Horizen (ZEN) is a blockchain ecosystem that has evolved from a privacy-focused cryptocurrency into a platform for zero-knowledge proof-powered sidechains. The Horizen EON sidechain provides an EVM-compatible smart contract platform, while the Zendoo protocol enables customizable, ZK-proof-verified sidechain deployment."
       toc={[
-        { id: "what-is", title: "What Is Horizen?", level: 2 },
-        { id: "how-it-works", title: "How Does Horizen Work?", level: 2 },
-        { id: "tokenomics", title: "ZEN Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ZEN", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-horizen", title: "What Is Horizen?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-horizen-work", title: "How Does Horizen Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "zen-tokenomics", title: "ZEN Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-zen", title: "How to Buy ZEN", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Horizen?", answer: "Horizen is a blockchain platform with ZK-proof-powered sidechains. ZEN is the native token used for staking on the EON sidechain, node operation, and cross-chain transactions." },

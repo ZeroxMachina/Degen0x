@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Phishing Attacks in Crypto: How to Stay Safe (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Phishing Attacks in Crypto: How to Stay Safe (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about crypto phishing attacks: fake websites, malicious approvals, DNS hijacking, and social media scams. Get practical tips to identify and prevent phishing attempts.",
 };
@@ -17,10 +17,14 @@ export default function PhishingAttacksCryptoPage() {
       readTime="8 min read"
       intro="Phishing is the most prevalent attack vector in cryptocurrency, responsible for more individual fund losses than any other scam type. Crypto phishing goes beyond traditional email scams — it includes fake websites mimicking DeFi protocols, malicious token approvals disguised as airdrops, compromised social media accounts directing users to drainer contracts, and sophisticated DNS hijacking attacks that replace legitimate sites with clones. Understanding these tactics is your first line of defense."
       toc={[
-        { id: "types", title: "Types of Crypto Phishing Attacks", level: 2 },
-        { id: "how-they-work", title: "How Crypto Phishing Works", level: 2 },
-        { id: "identifying", title: "Identifying Phishing Attempts", level: 2 },
-        { id: "prevention", title: "Prevention Strategies", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-crypto-phishing-attacks", title: "Types of Crypto Phishing Attacks", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-crypto-phishing-works", title: "How Crypto Phishing Works", level: 2 },
+        { id: "identifying", title: "identifying", level: 2 },
+        { id: "identifying-phishing-attempts", title: "Identifying Phishing Attempts", level: 2 },
+        { id: "prevention", title: "prevention", level: 2 },
+        { id: "prevention-strategies", title: "Prevention Strategies", level: 2 }
       ]}
       faqs={[
         {

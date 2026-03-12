@@ -1,26 +1,7 @@
 "use client";
 
-import type { Metadata } from "next";
 import LearnPageLayout from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
-
-export const metadata: Metadata = {
-  title: `The Ultimate Guide to Memecoins in ${CURRENT_YEAR} | ${SITE_NAME}`,
-  description:
-    "Complete guide to memecoins in 2026: Dogecoin, Shiba Inu, PEPE, BONK, WIF, market dynamics, risk management, and how to evaluate memecoin projects before investing.",
-  keywords: [
-    "memecoins 2026",
-    "dogecoin",
-    "shiba inu",
-    "pepe coin",
-    "bonk",
-    "dogwifhat",
-    "memecoin investing",
-    "memecoin evaluation",
-    "memecoin risks",
-    "crypto memes",
-  ],
-};
 
 export default function MemecoinGuide2026Page() {
   return (
@@ -31,14 +12,22 @@ export default function MemecoinGuide2026Page() {
       readTime="12 min"
       intro="Memecoins have evolved from internet jokes to a multi-billion dollar asset class that captures significant trading volume and community engagement. In 2026, the memecoin ecosystem is mature, diverse, and increasingly sophisticated. This guide explores the major players like Dogecoin and Shiba Inu, newer entrants reshaping the space, market dynamics that drive price movements, risk management strategies, and methodologies for evaluating memecoin projects before investing your capital."
       toc={[
-        { id: "evolution", title: "The Evolution of Memecoins", level: 2 },
-        { id: "major-players", title: "Major Memecoin Players in 2026", level: 2 },
-        { id: "emerging-trends", title: "Emerging Memecoin Trends", level: 2 },
-        { id: "market-dynamics", title: "Understanding Memecoin Market Dynamics", level: 2 },
-        { id: "evaluation-framework", title: "How to Evaluate Memecoin Projects", level: 2 },
-        { id: "risk-management", title: "Risk Management for Memecoin Trading", level: 2 },
-        { id: "new-entrants", title: "New Memecoin Entrants to Watch", level: 2 },
-        { id: "future-outlook", title: "The Future of Memecoins", level: 2 },
+        { id: "evolution", title: "evolution", level: 2 },
+        { id: "the-evolution-of-memecoins", title: "The Evolution of Memecoins", level: 2 },
+        { id: "major-players", title: "major-players", level: 2 },
+        { id: "major-memecoin-players-in-2026", title: "Major Memecoin Players in 2026", level: 2 },
+        { id: "emerging-trends", title: "emerging-trends", level: 2 },
+        { id: "emerging-memecoin-trends", title: "Emerging Memecoin Trends", level: 2 },
+        { id: "market-dynamics", title: "market-dynamics", level: 2 },
+        { id: "understanding-memecoin-market-dynamics", title: "Understanding Memecoin Market Dynamics", level: 2 },
+        { id: "evaluation-framework", title: "evaluation-framework", level: 2 },
+        { id: "how-to-evaluate-memecoin-projects", title: "How to Evaluate Memecoin Projects", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management-for-memecoin-trading", title: "Risk Management for Memecoin Trading", level: 2 },
+        { id: "new-entrants", title: "new-entrants", level: 2 },
+        { id: "new-memecoin-entrants-to-watch", title: "New Memecoin Entrants to Watch", level: 2 },
+        { id: "future-outlook", title: "future-outlook", level: 2 },
+        { id: "the-future-of-memecoins", title: "The Future of Memecoins", level: 2 }
       ]}
       faqs={[
         {

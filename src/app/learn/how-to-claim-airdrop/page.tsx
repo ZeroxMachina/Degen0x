@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToClaimAirdropPage() {
   return (
     <LearnPageLayout title="How to Claim an Airdrop" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Airdrops distribute free tokens to wallet addresses that meet certain eligibility criteria — typically based on past protocol usage, governance participation, or community involvement. While legitimate airdrops can provide significant value, the space is also rife with scams. This guide covers how to safely check eligibility and claim airdrops."
-      toc={[{ id: "what-are-airdrops", title: "What Are Airdrops?", level: 2 },{ id: "eligibility", title: "Checking Eligibility", level: 2 },{ id: "claiming", title: "How to Claim", level: 2 },{ id: "safety", title: "Airdrop Safety", level: 2 },{ id: "taxes", title: "Tax Implications", level: 2 }]}
+      toc={[
+        { id: "what-are-airdrops", title: "what-are-airdrops", level: 2 },
+        { id: "what-are-airdrops", title: "What Are Airdrops?", level: 2 },
+        { id: "eligibility", title: "eligibility", level: 2 },
+        { id: "checking-eligibility", title: "Checking Eligibility", level: 2 },
+        { id: "claiming", title: "claiming", level: 2 },
+        { id: "how-to-claim", title: "How to Claim", level: 2 },
+        { id: "safety", title: "safety", level: 2 },
+        { id: "airdrop-safety", title: "Airdrop Safety", level: 2 },
+        { id: "taxes", title: "taxes", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
+      ]}
       faqs={[
         { question: "How do I become eligible for airdrops?", answer: "Use protocols actively — bridge assets, swap tokens, provide liquidity, participate in governance, and engage with testnet deployments. Many airdrops reward early adopters and active users. There is no guaranteed formula, but genuine protocol usage across multiple chains increases your chances." },
         { question: "Are airdrops taxable?", answer: "In most jurisdictions, airdropped tokens are taxable as income at their fair market value when received. Subsequent gains or losses from selling are subject to capital gains tax. Keep records of claim dates and token values at the time of receipt. Consult a tax professional for your specific situation." },

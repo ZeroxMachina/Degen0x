@@ -29,7 +29,7 @@ export default function CryptoComVsCoinbasePage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto.com vs Coinbase: Which Exchange Is Better in {CURRENT_YEAR}?
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -50,7 +50,7 @@ export default function CryptoComVsCoinbasePage() {
       />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Crypto.com offers significantly lower exchange fees at 0.075% maker and 0.1% taker at the base level,
           with additional discounts available through CRO staking tiers. However, the Crypto.com exchange is not
@@ -64,7 +64,7 @@ export default function CryptoComVsCoinbasePage() {
           location.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Crypto Cards and Rewards</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Crypto Cards and Rewards</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Crypto.com&apos;s Visa card is one of its flagship features, offering up to 5% cashback in CRO on all
           purchases, along with perks like free Spotify, Netflix, and airport lounge access at higher card tiers.
@@ -78,7 +78,7 @@ export default function CryptoComVsCoinbasePage() {
           users who primarily want a crypto spending card, Crypto.com offers a more compelling package.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Mobile Experience</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Mobile Experience</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Crypto.com was built mobile-first, and its app reflects that priority. The interface is smooth and
           intuitive, with easy access to buying, selling, staking, earning, card management, and DeFi features all
@@ -90,7 +90,7 @@ export default function CryptoComVsCoinbasePage() {
           packs more functionality into its app, including the full suite of earn, card, and DeFi features.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Security and Trust</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Security and Trust</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Coinbase&apos;s status as a publicly traded company (NASDAQ: COIN) provides a level of transparency
           and accountability unmatched in the crypto industry. Financial statements are audited, and the company
@@ -103,15 +103,15 @@ export default function CryptoComVsCoinbasePage() {
           commitment to security and compliance.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Crypto.com if</strong> you want the best crypto Visa card and
+            <strong className="text-[var(--color-text)]">Choose Crypto.com if</strong> you want the best crypto Visa card and
             rewards ecosystem, prefer a mobile-first experience, and value competitive fees (especially outside
             the US). Crypto.com is ideal for users who want to integrate crypto spending into their daily lives.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Coinbase if</strong> you are a US-based user who prioritizes
+            <strong className="text-[var(--color-text)]">Choose Coinbase if</strong> you are a US-based user who prioritizes
             regulatory trust, a polished and beginner-friendly platform, and the confidence of using a publicly
             traded company. Coinbase is the safer, more straightforward choice for US investors.
           </p>

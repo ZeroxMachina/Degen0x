@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Crypto Staking? Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Crypto Staking? Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what crypto staking is, how it works, the risks involved, and how to earn passive income by staking your cryptocurrency holdings.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsStakingPage() {
       readTime="9 min read"
       intro="Staking is the process of locking up cryptocurrency to support the operations of a proof-of-stake blockchain network. In return for committing their tokens, stakers earn rewards in the form of additional cryptocurrency. Staking serves a similar security function to mining but uses economic incentives rather than computational power. It has become one of the most popular ways to earn passive income in crypto."
       toc={[
+        { id: "how-staking-works", title: "how-staking-works", level: 2 },
         { id: "how-staking-works", title: "How Staking Works", level: 2 },
+        { id: "types-of-staking", title: "types-of-staking", level: 2 },
         { id: "types-of-staking", title: "Types of Staking", level: 2 },
-        { id: "staking-rewards", title: "Staking Rewards and APY", level: 2 },
-        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 },
+        { id: "staking-rewards", title: "staking-rewards", level: 2 },
+        { id: "staking-rewards-and-apy", title: "Staking Rewards and APY", level: 2 },
+        { id: "risks-and-considerations", title: "risks-and-considerations", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

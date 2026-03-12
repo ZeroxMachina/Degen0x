@@ -25,13 +25,20 @@ export default function HowToBuyPolkadotPage() {
       readTime="12 min"
       intro="Polkadot (DOT) is a multi-chain blockchain protocol designed to enable interoperability between different blockchains. Founded by Ethereum co-founder Gavin Wood, Polkadot allows specialized blockchains (parachains) to connect and communicate through its relay chain. DOT serves as the native token for staking, governance, and bonding for parachain slots. Polkadot's Nominated Proof of Stake (NPoS) system offers attractive staking yields. This guide covers how to buy DOT, staking options, and the Polkadot ecosystem."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose an Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-polkadot", title: "Step 4: Buy Polkadot", level: 2 },
-        { id: "store-polkadot", title: "Step 5: Store Your DOT", level: 2 },
-        { id: "staking-dot", title: "Staking DOT: Nominating and Pools", level: 2 },
-        { id: "parachain-ecosystem", title: "Polkadot Parachain Ecosystem", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-an-exchange", title: "Step 1: Choose an Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-polkadot", title: "buy-polkadot", level: 2 },
+        { id: "step-4-buy-polkadot", title: "Step 4: Buy Polkadot", level: 2 },
+        { id: "store-polkadot", title: "store-polkadot", level: 2 },
+        { id: "step-5-store-your-dot", title: "Step 5: Store Your DOT", level: 2 },
+        { id: "staking-dot", title: "staking-dot", level: 2 },
+        { id: "staking-dot-nominating-and-pools", title: "Staking DOT: Nominating and Pools", level: 2 },
+        { id: "parachain-ecosystem", title: "parachain-ecosystem", level: 2 },
+        { id: "polkadot-parachain-ecosystem", title: "Polkadot Parachain Ecosystem", level: 2 }
       ]}
       faqs={[
         {

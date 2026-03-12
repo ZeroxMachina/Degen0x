@@ -10,7 +10,7 @@ const product = {
   pros: ["Transparent proof of reserves", "Bitcoin-focused lending expertise", "Competitive BTC loan rates", "No minimum loan amounts"],
   cons: ["Limited asset support (BTC and ETH focused)", "CeFi counterparty risk", "KYC required", "Geographic restrictions apply"],
   bestFor: "Bitcoin holders seeking BTC-backed loans with transparent CeFi operations",
-  affiliateUrl: "https://cryptodegen.com/go/ledn",
+  affiliateUrl: "https://degen0x.com/go/ledn",
   category: "crypto-loans",
 };
 

@@ -16,10 +16,14 @@ export default function BestCrossChainInsurancePage() {
       readTime="10 min"
       intro="Cross-chain bridges and multi-chain DeFi positions create unique risks requiring specialized insurance. Bridge hacks have resulted in billions in losses, making cross-chain insurance increasingly important."
       toc={[
-        { id: "section-1", title: "Cross-Chain Risks", level: 2 },
-        { id: "section-2", title: "Bridge Insurance Options", level: 2 },
-        { id: "section-3", title: "Multi-Chain Coverage", level: 2 },
-        { id: "section-4", title: "Selecting Coverage", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "cross-chain-risks", title: "Cross-Chain Risks", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "bridge-insurance-options", title: "Bridge Insurance Options", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "multi-chain-coverage", title: "Multi-Chain Coverage", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "selecting-coverage", title: "Selecting Coverage", level: 2 }
       ]}
       faqs={[
         { question: "Why is cross-chain insurance important?", answer: "Cross-chain bridges have been the target of some of the largest DeFi hacks in history, with billions lost. Bridge smart contracts are complex and present unique attack surfaces that make insurance coverage particularly valuable." },

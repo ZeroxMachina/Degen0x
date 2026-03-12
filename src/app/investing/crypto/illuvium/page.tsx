@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Illuvium (ILV)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Illuvium (ILV)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Illuvium (ILV), the AAA blockchain gaming experience built on Ethereum. Discover how it works, tokenomics, use cases, and how to buy ILV.",
 };
@@ -17,12 +17,18 @@ export default function IlluviumPage() {
       readTime="8 min read"
       intro="Illuvium is an open-world RPG and auto-battler game built on Ethereum using Immutable X for gas-free NFT transactions. Developed by a team of over 200 people, Illuvium aims to be the first AAA-quality blockchain game, featuring creature collection, arena battles, and a persistent open world with true digital ownership."
       toc={[
-        { id: "what-is", title: "What Is Illuvium?", level: 2 },
-        { id: "how-it-works", title: "How Does Illuvium Work?", level: 2 },
-        { id: "tokenomics", title: "ILV Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ILV", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-illuvium", title: "What Is Illuvium?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-illuvium-work", title: "How Does Illuvium Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ilv-tokenomics", title: "ILV Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ilv", title: "How to Buy ILV", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

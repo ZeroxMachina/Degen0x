@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Strategy for Brands (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Strategy for Brands (${CURRENT_YEAR}) | degen0x`,
   description: "How brands can leverage NFTs for customer engagement, loyalty programs, digital collectibles, and new revenue streams. Practical NFT strategy guide for businesses.",
 };
 
@@ -12,10 +12,14 @@ export default function NftBrandStrategyPage() {
     <LearnPageLayout title="NFT Strategy for Brands" categoryName="Web3 Business" categorySlug="web3-business" readTime="8 min read"
       intro="NFTs offer brands a powerful new toolkit for customer engagement, loyalty, and revenue. Beyond digital collectibles, NFTs can serve as membership passes, loyalty program tokens, proof of purchase, event tickets, and keys to exclusive experiences. The brands that succeed with NFTs are those that integrate them into genuine customer value propositions rather than treating them as speculative collectibles or publicity stunts."
       toc={[
-        { id: "use-cases", title: "Brand NFT Use Cases", level: 2 },
-        { id: "implementation", title: "Implementation Strategy", level: 2 },
-        { id: "customer-experience", title: "Customer Experience Design", level: 2 },
-        { id: "measuring-success", title: "Measuring Success", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "brand-nft-use-cases", title: "Brand NFT Use Cases", level: 2 },
+        { id: "implementation", title: "implementation", level: 2 },
+        { id: "implementation-strategy", title: "Implementation Strategy", level: 2 },
+        { id: "customer-experience", title: "customer-experience", level: 2 },
+        { id: "customer-experience-design", title: "Customer Experience Design", level: 2 },
+        { id: "measuring-success", title: "measuring-success", level: 2 },
+        { id: "measuring-success", title: "Measuring Success", level: 2 }
       ]}
       faqs={[
         { question: "Why should brands care about NFTs?", answer: "NFTs enable direct, verifiable relationships with customers without intermediaries. They create digital scarcity and collectibility for brand assets. They provide new revenue streams through primary sales and secondary royalties. They unlock innovative loyalty programs where rewards are ownable and tradeable. They also help brands build community and direct engagement channels." },

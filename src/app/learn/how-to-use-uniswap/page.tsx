@@ -12,11 +12,16 @@ export default function HowToUseUniswapPage() {
   return (
     <LearnPageLayout title="How to Use Uniswap" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Uniswap is the largest decentralized exchange by volume, enabling permissionless token swaps through automated market maker (AMM) technology. Available on Ethereum and multiple Layer 2 networks, Uniswap allows you to trade tokens directly from your wallet without creating an account or trusting a centralized intermediary."
       toc={[
+        { id: "getting-started", title: "getting-started", level: 2 },
         { id: "getting-started", title: "Getting Started", level: 2 },
-        { id: "swapping", title: "Swapping Tokens", level: 2 },
-        { id: "liquidity", title: "Providing Liquidity", level: 2 },
+        { id: "swapping", title: "swapping", level: 2 },
+        { id: "swapping-tokens", title: "Swapping Tokens", level: 2 },
+        { id: "liquidity", title: "liquidity", level: 2 },
+        { id: "providing-liquidity", title: "Providing Liquidity", level: 2 },
+        { id: "fees-slippage", title: "fees-slippage", level: 2 },
         { id: "fees-slippage", title: "Fees & Slippage", level: 2 },
-        { id: "tips", title: "Tips & Best Practices", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-best-practices", title: "Tips & Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What is slippage on Uniswap?", answer: "Slippage is the difference between the expected price and the execution price of a trade. It occurs because AMM prices change with each trade. Uniswap allows you to set a maximum slippage tolerance — if the price moves beyond this tolerance before your trade executes, the transaction will revert to protect you." },

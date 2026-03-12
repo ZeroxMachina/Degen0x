@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Nepal (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Nepal (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchanges accessible in Nepal. Find NPR-friendly platforms and understand the regulatory landscape for Nepalese crypto users.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesNepal() {
       readTime="7 min read"
       intro="Nepal has a complex relationship with cryptocurrency. The Nepal Rastra Bank has historically restricted crypto transactions, but interest among Nepal's young population continues to grow. The country has been exploring blockchain technology for remittances and financial inclusion. This guide covers the available options and important regulatory considerations for Nepalese users interested in cryptocurrency."
       toc={[
+        { id: "available-platforms", title: "available-platforms", level: 2 },
         { id: "available-platforms", title: "Available Platforms", level: 2 },
-        { id: "regulation", title: "Regulatory Landscape", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulatory-landscape", title: "Regulatory Landscape", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Important Considerations", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "important-considerations", title: "Important Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Nepal?", answer: "Nepal Rastra Bank has restricted crypto transactions, and trading is not formally permitted. However, discussions about creating a regulatory framework have occurred. Users should be aware of the legal risks involved." },

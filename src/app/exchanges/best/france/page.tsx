@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in France (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in France (${CURRENT_YEAR}) | degen0x`,
   description:
     "Find the best cryptocurrency exchanges in France. AMF-registered platforms with EUR support, SEPA transfers, and regulatory compliance.",
 };
@@ -17,10 +17,14 @@ export default function BestExchangesFrancePage() {
       readTime="7 min read"
       intro="France has become a prominent crypto hub in Europe with its DASP (Digital Asset Service Provider) registration framework managed by the AMF (Autorit&eacute; des march&eacute;s financiers). French traders have access to a growing number of regulated exchanges offering EUR trading pairs, SEPA deposits, and strong consumer protections."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges in France", level: 2 },
-        { id: "regulations", title: "French Crypto Regulations", level: 2 },
-        { id: "fees-and-funding", title: "Fees and Funding Methods", level: 2 },
-        { id: "selection-tips", title: "Selection Tips", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-in-france", title: "Top Exchanges in France", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "french-crypto-regulations", title: "French Crypto Regulations", level: 2 },
+        { id: "fees-and-funding", title: "fees-and-funding", level: 2 },
+        { id: "fees-and-funding-methods", title: "Fees and Funding Methods", level: 2 },
+        { id: "selection-tips", title: "selection-tips", level: 2 },
+        { id: "selection-tips", title: "Selection Tips", level: 2 }
       ]}
       faqs={[
         {

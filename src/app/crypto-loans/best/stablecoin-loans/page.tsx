@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Stablecoin Loans (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Stablecoin Loans (${CURRENT_YEAR}) | degen0x`,
   description: "Find the best platforms for borrowing stablecoins against crypto collateral. Compare USDC, USDT, and DAI lending rates across CeFi and DeFi.",
 };
 
@@ -16,10 +16,14 @@ export default function StablecoinLoansPage() {
       readTime="8 min read"
       intro="Stablecoin loans are the most popular type of crypto-backed borrowing, letting you access dollar-pegged assets like USDC, USDT, and DAI without selling your crypto holdings. These loans are ideal for covering expenses, making investments, or accessing liquidity while maintaining your long-term crypto positions."
       toc={[
-        { id: "best-platforms", title: "Best Stablecoin Loan Platforms", level: 2 },
-        { id: "stablecoin-types", title: "Which Stablecoin to Borrow", level: 2 },
-        { id: "rates-comparison", title: "Rate Comparison", level: 2 },
-        { id: "tips", title: "Tips for Stablecoin Borrowing", level: 2 },
+        { id: "best-platforms", title: "best-platforms", level: 2 },
+        { id: "best-stablecoin-loan-platforms", title: "Best Stablecoin Loan Platforms", level: 2 },
+        { id: "stablecoin-types", title: "stablecoin-types", level: 2 },
+        { id: "which-stablecoin-to-borrow", title: "Which Stablecoin to Borrow", level: 2 },
+        { id: "rates-comparison", title: "rates-comparison", level: 2 },
+        { id: "rate-comparison", title: "Rate Comparison", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-stablecoin-borrowing", title: "Tips for Stablecoin Borrowing", level: 2 }
       ]}
       faqs={[
         { question: "Which stablecoin is cheapest to borrow?", answer: "DAI through MakerDAO and Spark Protocol often has the lowest borrowing rates since the stability fee is governance-controlled. USDC rates on Aave and Compound fluctuate based on utilization." },

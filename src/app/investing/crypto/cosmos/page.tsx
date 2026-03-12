@@ -25,7 +25,7 @@ export default function CosmosPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Cosmos (ATOM) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function CosmosPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">ATOM</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2019</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">No hard cap (inflationary)</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Tendermint BFT (CometBFT)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">ATOM</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2019</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">No hard cap (inflationary)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Tendermint BFT (CometBFT)</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Cosmos?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Cosmos?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Cosmos is a decentralized network of independent, scalable, and interoperable blockchains.
           Founded by Jae Kwon and Ethan Buchman, Cosmos introduced the vision of an Internet of
@@ -67,7 +67,7 @@ export default function CosmosPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           ATOM is used for staking to secure the Cosmos Hub and earn rewards, governance voting on
           protocol upgrades and parameter changes, and as a reserve asset within the Cosmos DeFi
@@ -79,7 +79,7 @@ export default function CosmosPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           ATOM's biggest challenge is its unclear value accrual mechanism. Projects can use the
           Cosmos SDK and IBC without holding or using ATOM, leading to a disconnect between
@@ -91,7 +91,7 @@ export default function CosmosPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Cosmos</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Cosmos</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           ATOM is available on major exchanges including Coinbase, Binance, Kraken, and Crypto.com.
           After purchasing, you can stake ATOM through the Keplr wallet (the most popular Cosmos

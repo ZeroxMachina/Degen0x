@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Social Trading Platforms Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Social Trading Platforms Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore social trading platforms for crypto. Learn how copy trading works, how to choose traders to follow, and the risks involved.",
 };
@@ -17,10 +17,14 @@ export default function SocialTradingGuidePage() {
       readTime="8 min read"
       intro="Social trading platforms allow you to view, discuss, and copy the trades of experienced traders in real time. Copy trading in particular has become hugely popular, letting beginners benefit from the expertise of successful traders while learning. This guide covers how social trading works, the best platforms, and how to use social trading effectively."
       toc={[
+        { id: "what-is-social-trading", title: "what-is-social-trading", level: 2 },
         { id: "what-is-social-trading", title: "What Is Social Trading?", level: 2 },
-        { id: "copy-trading", title: "How Copy Trading Works", level: 2 },
-        { id: "choosing-traders", title: "Choosing Traders to Follow", level: 2 },
-        { id: "risks-limitations", title: "Risks and Limitations", level: 2 },
+        { id: "copy-trading", title: "copy-trading", level: 2 },
+        { id: "how-copy-trading-works", title: "How Copy Trading Works", level: 2 },
+        { id: "choosing-traders", title: "choosing-traders", level: 2 },
+        { id: "choosing-traders-to-follow", title: "Choosing Traders to Follow", level: 2 },
+        { id: "risks-limitations", title: "risks-limitations", level: 2 },
+        { id: "risks-and-limitations", title: "Risks and Limitations", level: 2 }
       ]}
       faqs={[
         { question: "Is copy trading good for beginners?", answer: "Copy trading can help beginners participate in markets while learning, but it should not be a substitute for education. Use it as a learning tool alongside your own study of trading fundamentals. Understanding why successful traders make their decisions is more valuable than simply copying their trades." },

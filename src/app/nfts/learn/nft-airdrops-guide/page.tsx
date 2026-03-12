@@ -16,10 +16,14 @@ export default function NftAirdropsGuidePage() {
       readTime="10 min"
       intro="NFT airdrops distribute free tokens to wallet holders based on various eligibility criteria. Understanding how airdrops work and how to qualify is essential for maximizing NFT collecting benefits."
       toc={[
-        { id: "section-1", title: "How NFT Airdrops Work", level: 2 },
-        { id: "section-2", title: "Types of Airdrops", level: 2 },
-        { id: "section-3", title: "Qualifying for Airdrops", level: 2 },
-        { id: "section-4", title: "Safety and Best Practices", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "how-nft-airdrops-work", title: "How NFT Airdrops Work", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "types-of-airdrops", title: "Types of Airdrops", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "qualifying-for-airdrops", title: "Qualifying for Airdrops", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "safety-and-best-practices", title: "Safety and Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What is an NFT airdrop?", answer: "An NFT airdrop is a distribution of free tokens to wallet addresses that meet specific criteria, such as holding a particular NFT collection, participating in community activities, or being an early adopter of a platform." },

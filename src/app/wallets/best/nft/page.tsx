@@ -39,7 +39,7 @@ export default function BestNFTWalletsPage() {
       />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Best NFT Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best NFT Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
           The right wallet makes collecting, viewing, and trading NFTs seamless. We tested the leading wallets
           for NFT gallery quality, marketplace compatibility, multi-chain collection support, and security features
@@ -49,17 +49,17 @@ export default function BestNFTWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">Quick Verdict</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Quick Verdict</h2>
         <p className="text-[var(--color-text-secondary)]">
-          <strong className="text-white">Phantom</strong> has the best NFT experience across Solana, Ethereum, and
-          Bitcoin Ordinals. For Ethereum-only collectors, <strong className="text-white">MetaMask</strong> is the
-          most widely compatible with NFT marketplaces. <strong className="text-white">Rabby</strong> adds security
+          <strong className="text-[var(--color-text)]">Phantom</strong> has the best NFT experience across Solana, Ethereum, and
+          Bitcoin Ordinals. For Ethereum-only collectors, <strong className="text-[var(--color-text)]">MetaMask</strong> is the
+          most widely compatible with NFT marketplaces. <strong className="text-[var(--color-text)]">Rabby</strong> adds security
           with transaction simulation that helps prevent NFT-related scams.
         </p>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best NFT Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best NFT Wallets, Ranked</h2>
         <div className="space-y-6">
           {nftWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -76,18 +76,18 @@ export default function BestNFTWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/reviews/phantom" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Phantom Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Phantom Review</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Best overall NFT wallet</p>
           </Link>
           <Link href="/wallets/best/solana" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best Solana Wallets</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best Solana Wallets</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Top wallets for Solana NFTs</p>
           </Link>
           <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Security Best Practices</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Security Best Practices</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Protect your NFT collection</p>
           </Link>
         </div>

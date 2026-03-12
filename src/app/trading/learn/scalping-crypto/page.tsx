@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Scalping Crypto: Quick Profit Strategies (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Scalping Crypto: Quick Profit Strategies (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn crypto scalping techniques for quick profits. Master order book reading, tick charts, and high-frequency manual trading strategies.",
 };
@@ -17,10 +17,14 @@ export default function ScalpingCryptoPage() {
       readTime="9 min read"
       intro="Scalping is the fastest-paced trading style, targeting tiny price movements across dozens or even hundreds of trades per day. Crypto scalpers aim to accumulate small but consistent profits that add up over time. This guide covers scalping techniques, the tools you need, optimal market conditions, and how to manage the unique risks of this high-frequency approach."
       toc={[
-        { id: "what-is-scalping", title: "What Is Crypto Scalping?", level: 2 },
-        { id: "scalping-techniques", title: "Core Scalping Techniques", level: 2 },
-        { id: "tools-setup", title: "Tools and Setup", level: 2 },
-        { id: "risks-tips", title: "Risks and Pro Tips", level: 2 },
+        { id: "what-is-scalping", title: "what-is-scalping", level: 2 },
+        { id: "what-is-crypto-scalping", title: "What Is Crypto Scalping?", level: 2 },
+        { id: "scalping-techniques", title: "scalping-techniques", level: 2 },
+        { id: "core-scalping-techniques", title: "Core Scalping Techniques", level: 2 },
+        { id: "tools-setup", title: "tools-setup", level: 2 },
+        { id: "tools-and-setup", title: "Tools and Setup", level: 2 },
+        { id: "risks-tips", title: "risks-tips", level: 2 },
+        { id: "risks-and-pro-tips", title: "Risks and Pro Tips", level: 2 }
       ]}
       faqs={[
         { question: "How much can you make scalping crypto?", answer: "Profits vary widely based on capital, skill, and market conditions. Experienced scalpers may target 0.1-0.5% per trade across 20-50 trades per day. With proper execution and compounding, this can generate meaningful returns, but losses from fees and slippage can quickly eat into profits for less experienced traders." },

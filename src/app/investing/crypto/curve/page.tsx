@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Curve Finance (CRV)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Curve Finance (CRV)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Curve Finance (CRV), the leading DEX for stablecoin and pegged asset trading. Discover CRV tokenomics, the veToken model, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function CurvePage() {
       readTime="8 min read"
       intro="Curve Finance (CRV) is a decentralized exchange optimized for efficient stablecoin and pegged asset trading on Ethereum and other chains. Known for its low-slippage swaps and innovative vote-escrow tokenomics model, Curve has become critical infrastructure in DeFi, facilitating billions in daily trading volume for stablecoins and liquid staking tokens."
       toc={[
-        { id: "what-is", title: "What Is Curve Finance?", level: 2 },
-        { id: "how-it-works", title: "How Does Curve Finance Work?", level: 2 },
-        { id: "tokenomics", title: "CRV Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy CRV", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-curve-finance", title: "What Is Curve Finance?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-curve-finance-work", title: "How Does Curve Finance Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "crv-tokenomics", title: "CRV Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-crv", title: "How to Buy CRV", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

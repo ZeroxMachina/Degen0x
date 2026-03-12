@@ -16,10 +16,14 @@ export default function EndowmentCryptoStrategyPage() {
       readTime="10 min"
       intro="University endowments and foundations were among the first institutional crypto investors, leveraging their long time horizons and alternative investment expertise to gain early exposure to digital assets through venture capital and direct holdings."
       toc={[
-        { id: "section-1", title: "Endowment Model and Crypto", level: 2 },
-        { id: "section-2", title: "Early Endowment Adopters", level: 2 },
-        { id: "section-3", title: "Investment Approaches", level: 2 },
-        { id: "section-4", title: "Lessons for Individual Investors", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "endowment-model-and-crypto", title: "Endowment Model and Crypto", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "early-endowment-adopters", title: "Early Endowment Adopters", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "investment-approaches", title: "Investment Approaches", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "lessons-for-individual-investors", title: "Lessons for Individual Investors", level: 2 }
       ]}
       faqs={[
         { question: "Which endowments invest in crypto?", answer: "Yale, Harvard, Stanford, MIT, and several other major university endowments have invested in crypto through venture capital funds, direct token purchases, or both. Yale's endowment, managed by the late David Swensen who pioneered the endowment model, was among the first to invest in crypto-focused venture funds." },

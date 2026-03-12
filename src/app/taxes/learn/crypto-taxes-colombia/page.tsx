@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Colombia (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Colombia (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Colombia. Learn about income tax on crypto gains, DIAN reporting, and how Colombian crypto investors should handle compliance.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesColombiaPage() {
       readTime="8 min read"
       intro="Colombia has been developing its approach to crypto regulation and taxation alongside growing adoption. While crypto is not legal tender, the DIAN (Direccion de Impuestos y Aduanas Nacionales) treats crypto assets as intangible assets subject to income tax. Colombia applies both income tax and a wealth tax that may apply to crypto holdings. As one of the leading crypto markets in Latin America, Colombia is increasingly focused on establishing clear rules for crypto taxation."
       toc={[
-        { id: "tax-treatment", title: "Tax Treatment of Crypto", level: 2 },
-        { id: "income-tax", title: "Income Tax on Crypto Gains", level: 2 },
-        { id: "wealth-tax", title: "Wealth Tax Implications", level: 2 },
+        { id: "tax-treatment", title: "tax-treatment", level: 2 },
+        { id: "tax-treatment-of-crypto", title: "Tax Treatment of Crypto", level: 2 },
+        { id: "income-tax", title: "income-tax", level: 2 },
+        { id: "income-tax-on-crypto-gains", title: "Income Tax on Crypto Gains", level: 2 },
+        { id: "wealth-tax", title: "wealth-tax", level: 2 },
+        { id: "wealth-tax-implications", title: "Wealth Tax Implications", level: 2 },
+        { id: "dian-reporting", title: "dian-reporting", level: 2 },
         { id: "dian-reporting", title: "DIAN Reporting", level: 2 },
-        { id: "compliance-tips", title: "Compliance Tips", level: 2 },
+        { id: "compliance-tips", title: "compliance-tips", level: 2 },
+        { id: "compliance-tips", title: "Compliance Tips", level: 2 }
       ]}
       faqs={[
         { question: "How is crypto taxed in Colombia?", answer: "Crypto gains are subject to income tax in Colombia. Gains from the sale or exchange of crypto assets are treated as capital gains or ordinary income depending on the taxpayer's activity. The income tax rate for individuals ranges from 0% to 39% depending on total income. The wealth tax may also apply to crypto holdings." },

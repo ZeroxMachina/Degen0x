@@ -18,12 +18,18 @@ export default function WhatIsGasPage() {
       readTime="8 min"
       intro="Gas is the unit of measurement for the computational effort required to execute transactions and smart contract operations on a blockchain. On Ethereum, every operation — from a simple ETH transfer to a complex DeFi interaction — requires gas, which is paid in the network's native currency. Understanding gas is essential for managing transaction costs and timing your blockchain interactions effectively."
       toc={[
-        { id: "what-is-gas", title: "Understanding Gas", level: 2 },
-        { id: "how-gas-works", title: "How Gas Fees Work", level: 2 },
-        { id: "eip-1559", title: "EIP-1559 and Fee Markets", level: 2 },
-        { id: "gas-on-other-chains", title: "Gas on Other Blockchains", level: 2 },
-        { id: "reducing-gas", title: "Strategies to Reduce Gas Costs", level: 2 },
-        { id: "gas-future", title: "The Future of Gas Fees", level: 2 },
+        { id: "what-is-gas", title: "what-is-gas", level: 2 },
+        { id: "understanding-gas", title: "Understanding Gas", level: 2 },
+        { id: "how-gas-works", title: "how-gas-works", level: 2 },
+        { id: "how-gas-fees-work", title: "How Gas Fees Work", level: 2 },
+        { id: "eip-1559", title: "eip-1559", level: 2 },
+        { id: "eip-1559-and-fee-markets", title: "EIP-1559 and Fee Markets", level: 2 },
+        { id: "gas-on-other-chains", title: "gas-on-other-chains", level: 2 },
+        { id: "gas-on-other-blockchains", title: "Gas on Other Blockchains", level: 2 },
+        { id: "reducing-gas", title: "reducing-gas", level: 2 },
+        { id: "strategies-to-reduce-gas-costs", title: "Strategies to Reduce Gas Costs", level: 2 },
+        { id: "gas-future", title: "gas-future", level: 2 },
+        { id: "the-future-of-gas-fees", title: "The Future of Gas Fees", level: 2 }
       ]}
       faqs={[
         {

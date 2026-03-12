@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is COTI (COTI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is COTI (COTI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about COTI (COTI), the privacy-focused Layer 2 on Ethereum. Discover COTI tokenomics, garbled circuits technology, and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function CotiPage() {
       readTime="8 min read"
       intro="COTI (COTI) is evolving into a privacy-focused Layer 2 network on Ethereum using garbled circuits cryptographic technology. Originally a payment-focused blockchain, COTI V2 introduces confidential computing capabilities that enable encrypted smart contract execution on Ethereum, targeting enterprise privacy needs and confidential DeFi applications."
       toc={[
-        { id: "what-is", title: "What Is COTI?", level: 2 },
-        { id: "how-it-works", title: "How Does COTI Work?", level: 2 },
-        { id: "tokenomics", title: "COTI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy COTI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-coti", title: "What Is COTI?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-coti-work", title: "How Does COTI Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "coti-tokenomics", title: "COTI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-coti", title: "How to Buy COTI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is COTI?", answer: "COTI is transitioning to an Ethereum L2 focused on privacy through garbled circuits technology. COTI V2 enables encrypted smart contract computation, allowing confidential transactions and private data processing on Ethereum." },

@@ -17,11 +17,16 @@ export default function BestDefiLendingBeginners() {
       readTime="10 min"
       intro="Getting started with DeFi lending can feel overwhelming, but several platforms make the process straightforward and accessible. This guide highlights the best lending protocols for beginners, focusing on ease of use, clear interfaces, strong security track records, and educational resources that help new users understand what they are doing before committing funds."
       toc={[
-        { id: "what-to-look-for", title: "What Beginners Should Look For", level: 2 },
-        { id: "top-picks", title: "Top Beginner-Friendly Platforms", level: 2 },
-        { id: "first-steps", title: "Your First DeFi Lending Steps", level: 2 },
-        { id: "common-mistakes", title: "Common Beginner Mistakes", level: 2 },
-        { id: "safety-tips", title: "Safety Tips for New Users", level: 2 },
+        { id: "what-to-look-for", title: "what-to-look-for", level: 2 },
+        { id: "what-beginners-should-look-for", title: "What Beginners Should Look For", level: 2 },
+        { id: "top-picks", title: "top-picks", level: 2 },
+        { id: "top-beginner-friendly-platforms", title: "Top Beginner-Friendly Platforms", level: 2 },
+        { id: "first-steps", title: "first-steps", level: 2 },
+        { id: "your-first-defi-lending-steps", title: "Your First DeFi Lending Steps", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-beginner-mistakes", title: "Common Beginner Mistakes", level: 2 },
+        { id: "safety-tips", title: "safety-tips", level: 2 },
+        { id: "safety-tips-for-new-users", title: "Safety Tips for New Users", level: 2 }
       ]}
       faqs={[
         { question: "How much money do I need to start DeFi lending?", answer: "On Layer 2 networks like Arbitrum or Base, you can start with as little as $50-100 since gas fees are minimal. On Ethereum mainnet, you generally need $1,000+ to justify the higher gas costs." },

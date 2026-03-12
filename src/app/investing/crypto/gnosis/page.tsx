@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Gnosis (GNO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Gnosis (GNO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Gnosis (GNO), the Ethereum sidechain and prediction market infrastructure. Discover how it works, tokenomics, use cases, and how to buy GNO.",
 };
 
@@ -16,12 +16,18 @@ export default function GnosisPage() {
       readTime="8 min read"
       intro="Gnosis is a long-standing Ethereum ecosystem project that operates Gnosis Chain (formerly xDai), a community-run EVM sidechain, and has built critical Web3 infrastructure including Safe smart wallets, CoW Protocol DEX, and prediction market tools. GNO is used for staking on Gnosis Chain and governance across the Gnosis ecosystem."
       toc={[
-        { id: "what-is", title: "What Is Gnosis?", level: 2 },
-        { id: "how-it-works", title: "How Does Gnosis Work?", level: 2 },
-        { id: "tokenomics", title: "GNO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy GNO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-gnosis", title: "What Is Gnosis?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-gnosis-work", title: "How Does Gnosis Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "gno-tokenomics", title: "GNO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-gno", title: "How to Buy GNO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Gnosis?", answer: "Gnosis operates Gnosis Chain (EVM sidechain), and has built Safe wallets, CoW Protocol DEX, and prediction market infrastructure. GNO is the staking and governance token." },

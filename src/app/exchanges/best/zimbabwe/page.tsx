@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Zimbabwe (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Zimbabwe (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchanges accessible in Zimbabwe. Find USD and ZWL-friendly platforms with P2P trading and mobile money support.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesZimbabwe() {
       readTime="7 min read"
       intro="Zimbabwe's history of hyperinflation has made its population particularly receptive to alternative stores of value, including cryptocurrency. The Reserve Bank of Zimbabwe has issued warnings about crypto but the country's multi-currency environment and economic challenges drive adoption. Zimbabwean traders access crypto primarily through P2P platforms using USD and mobile money. This guide covers the available options."
       toc={[
-        { id: "top-exchanges", title: "Available Exchanges", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "available-exchanges", title: "Available Exchanges", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing a Platform", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Zimbabwe?", answer: "The RBZ previously banned banks from facilitating crypto transactions, though this was partially relaxed. The regulatory environment remains uncertain. Individual P2P trading continues despite regulatory challenges." },

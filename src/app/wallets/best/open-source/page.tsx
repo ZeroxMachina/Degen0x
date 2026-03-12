@@ -31,19 +31,19 @@ export default function BestOpenSourceWalletsPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Open-Source Wallets", href: "/wallets/best/open-source" }]} />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Open-Source Crypto Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Open-Source Crypto Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">Open-source wallets provide code transparency that lets anyone verify security claims. We evaluated the best options for code quality, audit history, community contributions, and overall usability.</p>
       </header>
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Open-Source Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Open-Source Wallets, Ranked</h2>
         <div className="space-y-6">{products.map((product, index) => (<ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />))}</div>
       </section>
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
-          <Link href="/wallets/best/security" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Best Security Wallets</h3><p className="text-xs text-[var(--color-text-secondary)]">Maximum asset protection</p></Link>
-          <Link href="/wallets/reviews/frame" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Frame Wallet Review</h3><p className="text-xs text-[var(--color-text-secondary)]">Privacy-first open-source wallet</p></Link>
-          <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-white text-sm">Wallet Security Guide</h3><p className="text-xs text-[var(--color-text-secondary)]">Best practices for safety</p></Link>
+          <Link href="/wallets/best/security" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Best Security Wallets</h3><p className="text-xs text-[var(--color-text-secondary)]">Maximum asset protection</p></Link>
+          <Link href="/wallets/reviews/frame" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Frame Wallet Review</h3><p className="text-xs text-[var(--color-text-secondary)]">Privacy-first open-source wallet</p></Link>
+          <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"><h3 className="font-semibold text-[var(--color-text)] text-sm">Wallet Security Guide</h3><p className="text-xs text-[var(--color-text-secondary)]">Best practices for safety</p></Link>
         </div>
       </section>
       <FAQSection faqs={faqs} />

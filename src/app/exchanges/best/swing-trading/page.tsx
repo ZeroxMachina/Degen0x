@@ -17,11 +17,16 @@ export default function BestSwingTradingExchangesPage() {
       readTime="10 min"
       intro="Swing trading involves holding positions for days to weeks, capturing medium-term price movements. Unlike day trading, swing traders need strong charting tools and reasonable fees but place less emphasis on millisecond execution. Here are the best exchanges optimized for swing trading strategies."
       toc={[
+        { id: "what-swing-traders-need", title: "what-swing-traders-need", level: 2 },
         { id: "what-swing-traders-need", title: "What Swing Traders Need", level: 2 },
-        { id: "top-picks", title: "Top Exchanges for Swing Trading", level: 2 },
-        { id: "charting-comparison", title: "Charting Tool Comparison", level: 2 },
-        { id: "alerts-features", title: "Price Alerts and Notifications", level: 2 },
-        { id: "risk-management", title: "Risk Management Features", level: 2 },
+        { id: "top-picks", title: "top-picks", level: 2 },
+        { id: "top-exchanges-for-swing-trading", title: "Top Exchanges for Swing Trading", level: 2 },
+        { id: "charting-comparison", title: "charting-comparison", level: 2 },
+        { id: "charting-tool-comparison", title: "Charting Tool Comparison", level: 2 },
+        { id: "alerts-features", title: "alerts-features", level: 2 },
+        { id: "price-alerts-and-notifications", title: "Price Alerts and Notifications", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management-features", title: "Risk Management Features", level: 2 }
       ]}
       faqs={[
         { question: "What is the best exchange for swing trading crypto?", answer: "Kraken and Coinbase Advanced are excellent for swing trading due to their advanced charting, reliable uptime, and reasonable fees. Binance is the best global option with the lowest fees and most comprehensive tools." },

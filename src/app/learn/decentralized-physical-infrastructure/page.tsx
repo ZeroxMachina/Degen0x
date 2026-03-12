@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DePIN: Decentralized Physical Infrastructure Networks (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DePIN: Decentralized Physical Infrastructure Networks (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about DePIN: how crypto incentives are building real-world infrastructure networks for wireless coverage, compute, storage, mapping, and energy through decentralized coordination.",
 };
@@ -17,11 +17,16 @@ export default function DecentralizedPhysicalInfrastructurePage() {
       readTime="9 min read"
       intro="Decentralized Physical Infrastructure Networks (DePIN) use blockchain-based token incentives to coordinate the deployment and operation of real-world infrastructure. Instead of a single company building and owning physical networks — like cell towers, data centers, or sensor arrays — DePIN projects incentivize individuals and businesses to contribute physical resources in exchange for token rewards. This crowdsourced approach to infrastructure deployment can be faster, cheaper, and more widely distributed than traditional centralized alternatives."
       toc={[
+        { id: "what-is-depin", title: "what-is-depin", level: 2 },
         { id: "what-is-depin", title: "What Is DePIN?", level: 2 },
-        { id: "categories", title: "DePIN Categories", level: 2 },
-        { id: "economics", title: "DePIN Economics and Token Incentives", level: 2 },
-        { id: "examples", title: "Notable DePIN Projects", level: 2 },
-        { id: "challenges", title: "Challenges and Considerations", level: 2 },
+        { id: "categories", title: "categories", level: 2 },
+        { id: "depin-categories", title: "DePIN Categories", level: 2 },
+        { id: "economics", title: "economics", level: 2 },
+        { id: "depin-economics-and-token-incentives", title: "DePIN Economics and Token Incentives", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "notable-depin-projects", title: "Notable DePIN Projects", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-and-considerations", title: "Challenges and Considerations", level: 2 }
       ]}
       faqs={[
         {

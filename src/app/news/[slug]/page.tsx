@@ -155,7 +155,7 @@ export default async function ArticlePage({ params }: Props) {
             <header className="mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <span
-                  className="px-3 py-1 rounded-full text-xs font-semibold text-white"
+                  className="px-3 py-1 rounded-full text-xs font-semibold text-[var(--color-text)]"
                   style={{ backgroundColor: categoryColor }}
                 >
                   {categoryLabel}
@@ -196,7 +196,7 @@ export default async function ArticlePage({ params }: Props) {
 
             {/* Article Body */}
             <div
-              className="prose-cryptodegen"
+              className="prose-degen0x"
               dangerouslySetInnerHTML={{ __html: htmlContent }}
             />
 

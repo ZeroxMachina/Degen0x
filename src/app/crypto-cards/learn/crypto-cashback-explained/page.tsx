@@ -17,10 +17,14 @@ export default function CryptoCashbackExplainedPage() {
       readTime="7 min"
       intro="Crypto cashback is one of the primary reasons people choose crypto cards over traditional payment cards. Instead of earning points or dollars back, crypto cards reward you with cryptocurrency on every purchase. But crypto cashback is more nuanced than traditional cashback. Reward rates may depend on staking requirements, the reward token may be volatile, and tax treatment differs from fiat cashback. This guide explains exactly how crypto cashback works and how to maximize its value."
       toc={[
-        { id: "how-it-works", title: "How Crypto Cashback Works", level: 2 },
-        { id: "reward-tokens", title: "Reward Token Types", level: 2 },
-        { id: "staking-tiers", title: "Staking and Tier Systems", level: 2 },
-        { id: "maximizing-value", title: "Maximizing Cashback Value", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-crypto-cashback-works", title: "How Crypto Cashback Works", level: 2 },
+        { id: "reward-tokens", title: "reward-tokens", level: 2 },
+        { id: "reward-token-types", title: "Reward Token Types", level: 2 },
+        { id: "staking-tiers", title: "staking-tiers", level: 2 },
+        { id: "staking-and-tier-systems", title: "Staking and Tier Systems", level: 2 },
+        { id: "maximizing-value", title: "maximizing-value", level: 2 },
+        { id: "maximizing-cashback-value", title: "Maximizing Cashback Value", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto cashback better than traditional cashback?", answer: "It can be. The base rates are often comparable (1-5%), but crypto cashback has upside potential if the reward token appreciates. A 2% cashback in Bitcoin earned when BTC was $20,000 would be worth much more if BTC rises to $100,000. However, it can also lose value if prices decline." },

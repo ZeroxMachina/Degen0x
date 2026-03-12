@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Take Profit? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Take Profit? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what take-profit orders are, how they work, different take-profit strategies, and how to set profit targets for your crypto trades effectively.",
 };
 
@@ -11,7 +11,16 @@ export default function TakeProfitPage() {
   return (
     <LearnPageLayout title="What Is Take Profit?" categoryName="Learn Crypto" categorySlug="learn" readTime="4 min read"
       intro="A take-profit order automatically sells an asset when it reaches a specified price above the current market price, locking in gains. Combined with stop losses, take-profit orders form a complete risk management framework that defines both your maximum loss and target gain before entering a trade. Take-profit orders remove emotion from selling decisions and ensure that profitable trades are captured rather than given back to the market."
-      toc={[{ id: "definition", title: "What Is Take Profit?", level: 2 }, { id: "setting-targets", title: "Setting Profit Targets", level: 2 }, { id: "strategies", title: "Take-Profit Strategies", level: 2 }, { id: "risk-reward", title: "Risk-Reward Ratios", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-take-profit", title: "What Is Take Profit?", level: 2 },
+        { id: "setting-targets", title: "setting-targets", level: 2 },
+        { id: "setting-profit-targets", title: "Setting Profit Targets", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "take-profit-strategies", title: "Take-Profit Strategies", level: 2 },
+        { id: "risk-reward", title: "risk-reward", level: 2 },
+        { id: "risk-reward-ratios", title: "Risk-Reward Ratios", level: 2 }
+      ]}
       faqs={[{ question: "Should I take all profits at once or gradually?", answer: "Scaling out is generally more effective than all-or-nothing exits. A common approach is to take 25-50% at the first target, another portion at the second target, and let the remainder run with a trailing stop. This captures guaranteed profit while maintaining upside exposure." },
         { question: "What is a good risk-reward ratio?", answer: "Most traders aim for at least a 2:1 risk-reward ratio, meaning the potential profit is twice the potential loss. For example, risking $100 (stop loss) to make $200 (take profit). Higher ratios like 3:1 are preferred but harder to achieve consistently. Never enter trades with negative risk-reward ratios." }]}
       relatedArticles={[{ title: "Stop Loss", href: "/learn/glossary/stop-loss", category: "Glossary" }, { title: "Resistance", href: "/learn/glossary/resistance", category: "Glossary" }, { title: "Risk Management", href: "/learn/risk-management-crypto", category: "Learn Crypto" }, { title: "Order Book", href: "/learn/glossary/order-book", category: "Glossary" }]}

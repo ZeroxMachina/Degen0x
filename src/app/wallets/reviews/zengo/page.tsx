@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "Free download; swap fees vary by provider",
   bestFor: "Beginners and users who want to avoid seed phrase management",
-  affiliateUrl: "https://cryptodegen.com/go/zengo",
+  affiliateUrl: "https://degen0x.com/go/zengo",
   category: "wallets",
 };
 

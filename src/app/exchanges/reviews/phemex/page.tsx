@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.1% spot; 0.01%/0.06% futures maker/taker",
   bestFor: "Derivatives traders seeking professional execution",
-  affiliateUrl: "https://cryptodegen.com/go/phemex",
+  affiliateUrl: "https://degen0x.com/go/phemex",
   category: "exchanges",
 };
 

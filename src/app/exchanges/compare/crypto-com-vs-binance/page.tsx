@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Crypto.com", slug: "crypto-com", rating: 4.4, affiliateUrl: "https://cryptodegen.com/go/crypto-com", features: { "Trading Fees": "0.075% maker / 0.075% taker", "Coins Listed": "350+", "Visa Card": "Yes (tiered rewards)", "Staking": "Yes (CRO staking)", "DeFi Wallet": "Yes", "NFT Marketplace": "Yes", "US Available": "Yes", "Earn Products": "Yes (Crypto Earn)" } },
-  { name: "Binance", slug: "binance", rating: 4.7, affiliateUrl: "https://cryptodegen.com/go/binance", features: { "Trading Fees": "0.1% spot (0.075% w/ BNB)", "Coins Listed": "600+", "Visa Card": "Yes (limited regions)", "Staking": "Yes (BNB ecosystem)", "DeFi Wallet": "Yes", "NFT Marketplace": "Yes", "US Available": "No (Binance.US only)", "Earn Products": "Yes (Binance Earn)" } },
+  { name: "Crypto.com", slug: "crypto-com", rating: 4.4, affiliateUrl: "https://degen0x.com/go/crypto-com", features: { "Trading Fees": "0.075% maker / 0.075% taker", "Coins Listed": "350+", "Visa Card": "Yes (tiered rewards)", "Staking": "Yes (CRO staking)", "DeFi Wallet": "Yes", "NFT Marketplace": "Yes", "US Available": "Yes", "Earn Products": "Yes (Crypto Earn)" } },
+  { name: "Binance", slug: "binance", rating: 4.7, affiliateUrl: "https://degen0x.com/go/binance", features: { "Trading Fees": "0.1% spot (0.075% w/ BNB)", "Coins Listed": "600+", "Visa Card": "Yes (limited regions)", "Staking": "Yes (BNB ecosystem)", "DeFi Wallet": "Yes", "NFT Marketplace": "Yes", "US Available": "No (Binance.US only)", "Earn Products": "Yes (Binance Earn)" } },
 ];
 
 const features = ["Trading Fees", "Coins Listed", "Visa Card", "Staking", "DeFi Wallet", "NFT Marketplace", "US Available", "Earn Products"];
@@ -32,7 +32,7 @@ export default function CryptoComVsBinancePage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto.com vs Binance: Which Ecosystem Is Better in {CURRENT_YEAR}?
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -49,7 +49,7 @@ export default function CryptoComVsBinancePage() {
       <ComparisonTable items={items} features={features} title="Crypto.com vs Binance: Head-to-Head" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Crypto Visa Cards</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Crypto Visa Cards</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Crypto.com&apos;s Visa card program is one of its biggest differentiators. Cards are
           tiered based on CRO staking amount, offering cashback rewards of up to 5% on purchases
@@ -62,7 +62,7 @@ export default function CryptoComVsBinancePage() {
           has a clear advantage.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Trading and Fees</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Trading and Fees</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Both exchanges offer competitive fees. Crypto.com charges a flat 0.075% at its base
           tier, which is slightly below Binance&apos;s 0.1% (or 0.075% with BNB discount). However,
@@ -70,22 +70,22 @@ export default function CryptoComVsBinancePage() {
           For pure trading, Binance is the more powerful platform.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">US Availability</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">US Availability</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Crypto.com is fully available in the United States, making it a strong alternative
           to Coinbase and Kraken with its card rewards program. Binance is not available to US
           residents; the separate Binance.US entity has limited features and coin selection.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Crypto.com if</strong> you are a US-based user who
+            <strong className="text-[var(--color-text)]">Choose Crypto.com if</strong> you are a US-based user who
             values the Visa card rewards program, wants a full ecosystem including a DeFi wallet and
             earn products, and prefers a platform available in the US with competitive fees.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Binance if</strong> you are outside the US and
+            <strong className="text-[var(--color-text)]">Choose Binance if</strong> you are outside the US and
             prioritize the deepest liquidity, widest coin selection, most advanced trading tools,
             and the largest crypto ecosystem globally.
           </p>

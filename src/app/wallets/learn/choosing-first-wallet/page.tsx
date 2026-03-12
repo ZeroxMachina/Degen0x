@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Choose Your First Crypto Wallet (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Choose Your First Crypto Wallet (${CURRENT_YEAR}) | degen0x`,
   description: "A beginner's guide to choosing your first crypto wallet. Learn what to look for, top recommendations, and step-by-step setup instructions.",
 };
 
@@ -11,7 +11,16 @@ export default function ChoosingFirstWalletPage() {
   return (
     <LearnPageLayout title="How to Choose Your First Crypto Wallet" categoryName="Crypto Wallets" categorySlug="wallets" readTime="8 min read"
       intro="Choosing your first crypto wallet can be overwhelming with dozens of options available. The right choice depends on what you plan to do with crypto: simple holding, DeFi participation, NFT collecting, or multi-chain exploration. This guide simplifies the decision by walking you through the key factors, recommending specific wallets for different use cases, and providing setup guidance so you can get started with confidence."
-      toc={[{ id: "key-factors", title: "Key Factors to Consider", level: 2 }, { id: "recommendations", title: "Wallet Recommendations", level: 2 }, { id: "setup-basics", title: "Setting Up Your First Wallet", level: 2 }, { id: "security-essentials", title: "Security Essentials", level: 2 }]}
+      toc={[
+        { id: "key-factors", title: "key-factors", level: 2 },
+        { id: "key-factors-to-consider", title: "Key Factors to Consider", level: 2 },
+        { id: "recommendations", title: "recommendations", level: 2 },
+        { id: "wallet-recommendations", title: "Wallet Recommendations", level: 2 },
+        { id: "setup-basics", title: "setup-basics", level: 2 },
+        { id: "setting-up-your-first-wallet", title: "Setting Up Your First Wallet", level: 2 },
+        { id: "security-essentials", title: "security-essentials", level: 2 },
+        { id: "security-essentials", title: "Security Essentials", level: 2 }
+      ]}
       faqs={[{ question: "What is the easiest wallet for beginners?", answer: "Coinbase Wallet and Trust Wallet are the most beginner-friendly options. They have clean interfaces, support multiple blockchains, and offer in-app guides. Coinbase Wallet integrates seamlessly with the Coinbase exchange for easy transfers. MetaMask is also beginner-friendly with the largest ecosystem of tutorials and community support." },
         { question: "Do I need to pay for a crypto wallet?", answer: "Software wallets are free. You only pay blockchain network fees (gas) when sending transactions. Hardware wallets cost $79-$279 for the device. For beginners starting with small amounts, a free software wallet is perfectly adequate. Consider upgrading to a hardware wallet once your holdings exceed a few thousand dollars." },
         { question: "What if I lose my phone with my wallet?", answer: "If you have your seed phrase backed up, you can restore your wallet on any new device. Your crypto is on the blockchain, not on your phone. The wallet is just a key to access it. This is why backing up your seed phrase is the single most important thing you do when setting up a wallet." }]}

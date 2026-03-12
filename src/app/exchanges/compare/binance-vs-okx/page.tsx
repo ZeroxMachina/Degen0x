@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Binance", slug: "binance", rating: 4.7, affiliateUrl: "https://cryptodegen.com/go/binance", features: { "Trading Fees": "0.1% spot (0.075% with BNB)", "Coins Listed": "600+", "Futures": "Up to 125x leverage", "Copy Trading": "Yes", "Web3 Wallet": "Yes", "Launchpad": "Yes (BNB Launchpad)", "Headquarters": "Global / UAE", "Daily Volume": "$15B+" } },
-  { name: "OKX", slug: "okx", rating: 4.6, affiliateUrl: "https://cryptodegen.com/go/okx", features: { "Trading Fees": "0.08% maker / 0.1% taker", "Coins Listed": "350+", "Futures": "Up to 125x leverage", "Copy Trading": "Yes", "Web3 Wallet": "Yes (multi-chain)", "Launchpad": "Yes (Jumpstart)", "Headquarters": "Seychelles / Dubai", "Daily Volume": "$5B+" } },
+  { name: "Binance", slug: "binance", rating: 4.7, affiliateUrl: "https://degen0x.com/go/binance", features: { "Trading Fees": "0.1% spot (0.075% with BNB)", "Coins Listed": "600+", "Futures": "Up to 125x leverage", "Copy Trading": "Yes", "Web3 Wallet": "Yes", "Launchpad": "Yes (BNB Launchpad)", "Headquarters": "Global / UAE", "Daily Volume": "$15B+" } },
+  { name: "OKX", slug: "okx", rating: 4.6, affiliateUrl: "https://degen0x.com/go/okx", features: { "Trading Fees": "0.08% maker / 0.1% taker", "Coins Listed": "350+", "Futures": "Up to 125x leverage", "Copy Trading": "Yes", "Web3 Wallet": "Yes (multi-chain)", "Launchpad": "Yes (Jumpstart)", "Headquarters": "Seychelles / Dubai", "Daily Volume": "$5B+" } },
 ];
 
 const features = ["Trading Fees", "Coins Listed", "Futures", "Copy Trading", "Web3 Wallet", "Launchpad", "Headquarters", "Daily Volume"];
@@ -32,7 +32,7 @@ export default function BinanceVsOkxPage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Binance vs OKX: Which Global Exchange Is Better in {CURRENT_YEAR}?
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -49,7 +49,7 @@ export default function BinanceVsOkxPage() {
       <ComparisonTable items={items} features={features} title="Binance vs OKX: Head-to-Head" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Both exchanges offer industry-leading low fees. Binance charges 0.1% for spot trading at
           the base tier, reducible to 0.075% with BNB payment. OKX starts at 0.08% maker and 0.1%
@@ -62,7 +62,7 @@ export default function BinanceVsOkxPage() {
           At higher volume tiers, both platforms converge to similarly low rates.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Trading Features</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Trading Features</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Binance offers the widest range of trading products: spot, margin, futures, options,
           leveraged tokens, and a comprehensive DeFi ecosystem through Binance Earn. Its Launchpad
@@ -76,7 +76,7 @@ export default function BinanceVsOkxPage() {
           a unified account system that lets you use one balance across spot, margin, and futures.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Web3 and DeFi Access</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Web3 and DeFi Access</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           OKX stands out with one of the best integrated Web3 wallets in the industry. It supports
           multi-chain swaps, cross-chain bridging, NFT marketplace access, and direct DeFi protocol
@@ -84,15 +84,15 @@ export default function BinanceVsOkxPage() {
           experience is widely considered more polished and versatile.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Binance if</strong> you want the deepest liquidity,
+            <strong className="text-[var(--color-text)]">Choose Binance if</strong> you want the deepest liquidity,
             the widest coin selection, and the most extensive ecosystem. Binance is the default for
             traders who need maximum volume and product variety.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose OKX if</strong> you want a superior Web3 wallet
+            <strong className="text-[var(--color-text)]">Choose OKX if</strong> you want a superior Web3 wallet
             experience, slightly lower base maker fees, and a clean unified trading account. OKX
             is particularly strong for traders who bridge between CeFi and DeFi.
           </p>

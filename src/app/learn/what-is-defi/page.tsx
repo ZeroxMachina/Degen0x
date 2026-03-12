@@ -17,11 +17,16 @@ export default function WhatIsDefiPage() {
       readTime="13 min"
       intro="Decentralized Finance, commonly known as DeFi, refers to a broad category of financial applications built on blockchain networks that operate without traditional intermediaries like banks, brokerages, or insurance companies. Instead, DeFi uses smart contracts to automate financial services such as lending, borrowing, trading, and insurance. By removing middlemen, DeFi aims to create a more open, transparent, and accessible financial system available to anyone with an internet connection."
       toc={[
-        { id: "what-is-defi", title: "Understanding DeFi", level: 2 },
-        { id: "core-protocols", title: "Core DeFi Protocol Types", level: 2 },
-        { id: "yield-farming", title: "Yield Farming and Liquidity Mining", level: 2 },
-        { id: "risks", title: "DeFi Risks", level: 2 },
-        { id: "getting-started", title: "How to Get Started with DeFi", level: 2 },
+        { id: "what-is-defi", title: "what-is-defi", level: 2 },
+        { id: "understanding-defi", title: "Understanding DeFi", level: 2 },
+        { id: "core-protocols", title: "core-protocols", level: 2 },
+        { id: "core-defi-protocol-types", title: "Core DeFi Protocol Types", level: 2 },
+        { id: "yield-farming", title: "yield-farming", level: 2 },
+        { id: "yield-farming-and-liquidity-mining", title: "Yield Farming and Liquidity Mining", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "defi-risks", title: "DeFi Risks", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "how-to-get-started-with-defi", title: "How to Get Started with DeFi", level: 2 }
       ]}
       faqs={[
         {

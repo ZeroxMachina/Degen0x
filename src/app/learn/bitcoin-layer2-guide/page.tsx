@@ -17,14 +17,22 @@ export default function BitcoinLayer2GuidePage() {
       readTime="19 min"
       intro="Bitcoin's design as a simple, secure, and decentralized monetary network comes with trade-offs. While it can settle transactions conclusively, it's slow and expensive for everyday payments. Bitcoin Layer 2 solutions extend Bitcoin's functionality without requiring changes to the base layer. From the Lightning Network enabling instant payments, to Stacks bringing smart contracts, to RGB providing asset issuance, to new approaches like BitVM, Bitcoin's ecosystem is rapidly evolving. This guide covers the major scaling solutions, their trade-offs, and how Bitcoin is becoming a fully-featured blockchain platform."
       toc={[
-        { id: "bitcoin-scaling-challenge", title: "The Bitcoin Scaling Challenge", level: 2 },
-        { id: "lightning-network", title: "Lightning Network: Payment Channels", level: 2 },
-        { id: "stacks-smart-contracts", title: "Stacks: Smart Contracts on Bitcoin", level: 2 },
-        { id: "rgb-assets", title: "RGB: Asset Issuance & Smart Contracts", level: 2 },
-        { id: "liquid-sidechain", title: "Liquid: The Bitcoin Sidechain", level: 2 },
-        { id: "ordinals-brc20", title: "Ordinals & BRC-20: Digital Artifacts on Bitcoin", level: 2 },
-        { id: "bitvm-programmability", title: "BitVM & Bitcoin Programmability", level: 2 },
-        { id: "comparing-approaches", title: "Comparing Bitcoin Layer 2 Approaches", level: 2 },
+        { id: "bitcoin-scaling-challenge", title: "bitcoin-scaling-challenge", level: 2 },
+        { id: "the-bitcoin-scaling-challenge", title: "The Bitcoin Scaling Challenge", level: 2 },
+        { id: "lightning-network", title: "lightning-network", level: 2 },
+        { id: "lightning-network-payment-channels", title: "Lightning Network: Payment Channels", level: 2 },
+        { id: "stacks-smart-contracts", title: "stacks-smart-contracts", level: 2 },
+        { id: "stacks-smart-contracts-on-bitcoin", title: "Stacks: Smart Contracts on Bitcoin", level: 2 },
+        { id: "rgb-assets", title: "rgb-assets", level: 2 },
+        { id: "rgb-asset-issuance-smart-contracts", title: "RGB: Asset Issuance & Smart Contracts", level: 2 },
+        { id: "liquid-sidechain", title: "liquid-sidechain", level: 2 },
+        { id: "liquid-the-bitcoin-sidechain", title: "Liquid: The Bitcoin Sidechain", level: 2 },
+        { id: "ordinals-brc20", title: "ordinals-brc20", level: 2 },
+        { id: "ordinals-brc-20-digital-artifacts-on-bitcoin", title: "Ordinals & BRC-20: Digital Artifacts on Bitcoin", level: 2 },
+        { id: "bitvm-programmability", title: "bitvm-programmability", level: 2 },
+        { id: "bitvm-bitcoin-programmability", title: "BitVM & Bitcoin Programmability", level: 2 },
+        { id: "comparing-approaches", title: "comparing-approaches", level: 2 },
+        { id: "comparing-bitcoin-layer-2-approaches", title: "Comparing Bitcoin Layer 2 Approaches", level: 2 }
       ]}
       faqs={[
         {

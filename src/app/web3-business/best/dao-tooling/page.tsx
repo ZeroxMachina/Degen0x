@@ -16,10 +16,14 @@ export default function BestDaoToolingPage() {
       readTime="10 min"
       intro="DAO tooling platforms provide governance, treasury management, and operational infrastructure that decentralized autonomous organizations need, from voting systems to contributor management."
       toc={[
-        { id: "section-1", title: "DAO Infrastructure Overview", level: 2 },
-        { id: "section-2", title: "Governance Tools", level: 2 },
-        { id: "section-3", title: "Operations and Management", level: 2 },
-        { id: "section-4", title: "Building Your DAO Stack", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "dao-infrastructure-overview", title: "DAO Infrastructure Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "governance-tools", title: "Governance Tools", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "operations-and-management", title: "Operations and Management", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "building-your-dao-stack", title: "Building Your DAO Stack", level: 2 }
       ]}
       faqs={[
         { question: "What tools does a DAO need?", answer: "At minimum, a DAO needs governance voting tools, treasury management with multi-sig wallets, and communication platforms. More mature DAOs add contributor management, compensation systems, analytics, and specialized operational tools based on their activities." },

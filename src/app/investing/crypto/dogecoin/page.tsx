@@ -25,7 +25,7 @@ export default function DogecoinPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Dogecoin (DOGE) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function DogecoinPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">DOGE</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2013</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">No cap (inflationary)</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Proof of Work (Scrypt)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">DOGE</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2013</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">No cap (inflationary)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Proof of Work (Scrypt)</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Dogecoin?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Dogecoin?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Dogecoin was created in December 2013 by software engineers Billy Markus and Jackson Palmer
           as a lighthearted cryptocurrency based on the popular Shiba Inu dog meme. Built as a fork
@@ -67,7 +67,7 @@ export default function DogecoinPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Dogecoin is primarily used for tipping and microtransactions, community donations, and
           peer-to-peer payments. Its low transaction fees (typically under $0.01) and fast block
@@ -79,7 +79,7 @@ export default function DogecoinPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Dogecoin is one of the most volatile and speculative cryptocurrencies. Its value is
           heavily influenced by social media sentiment, celebrity endorsements, and market speculation
@@ -91,7 +91,7 @@ export default function DogecoinPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Dogecoin</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Dogecoin</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Dogecoin is available on virtually every major exchange including Coinbase, Binance, Kraken,
           and Robinhood. It is one of the most accessible cryptocurrencies for beginners due to its

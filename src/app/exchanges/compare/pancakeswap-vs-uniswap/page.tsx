@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `PancakeSwap vs Uniswap (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `PancakeSwap vs Uniswap (${CURRENT_YEAR}) | degen0x`,
   description: "Compare PancakeSwap vs Uniswap DEXs. Fees, chains, liquidity, features, and which decentralized exchange is better for your DeFi needs.",
 };
 
@@ -16,12 +16,18 @@ export default function PancakeSwapVsUniswap() {
       readTime="8 min read"
       intro="PancakeSwap and Uniswap are the two largest decentralized exchanges by total value locked. PancakeSwap dominates BNB Chain while Uniswap leads on Ethereum and its L2s. This comparison examines fees, features, and ecosystems to help you choose the right DEX."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
-        { id: "chains", title: "Chains and Ecosystems", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "chains", title: "chains", level: 2 },
+        { id: "chains-and-ecosystems", title: "Chains and Ecosystems", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
         { id: "tokenomics", title: "Tokenomics", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which has lower gas fees?", answer: "PancakeSwap on BNB Chain has significantly lower gas fees (cents) compared to Uniswap on Ethereum mainnet (dollars). However, Uniswap on L2s like Arbitrum has comparable gas costs." },

@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.25% standard swap fee (varies by pool)",
   bestFor: "Solana DeFi traders and liquidity providers",
-  affiliateUrl: "https://cryptodegen.com/go/raydium",
+  affiliateUrl: "https://degen0x.com/go/raydium",
   category: "exchanges",
 };
 

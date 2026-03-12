@@ -17,12 +17,18 @@ export default function CexVsDexPage() {
       readTime="11 min"
       intro="The debate between centralized exchanges (CEX) and decentralized exchanges (DEX) sits at the heart of cryptocurrency philosophy. CEXs like Coinbase and Binance offer convenience and familiar trading experiences, while DEXs like Uniswap and dYdX give you full control of your funds and eliminate intermediaries. Understanding the trade-offs between these two approaches is essential for any crypto participant."
       toc={[
-        { id: "what-is-cex", title: "What Is a Centralized Exchange (CEX)?", level: 2 },
-        { id: "what-is-dex", title: "What Is a Decentralized Exchange (DEX)?", level: 2 },
-        { id: "key-differences", title: "Key Differences Compared", level: 2 },
-        { id: "when-use-cex", title: "When to Use a CEX", level: 2 },
-        { id: "when-use-dex", title: "When to Use a DEX", level: 2 },
-        { id: "hybrid-future", title: "The Hybrid Future", level: 2 },
+        { id: "what-is-cex", title: "what-is-cex", level: 2 },
+        { id: "what-is-a-centralized-exchange-cex", title: "What Is a Centralized Exchange (CEX)?", level: 2 },
+        { id: "what-is-dex", title: "what-is-dex", level: 2 },
+        { id: "what-is-a-decentralized-exchange-dex", title: "What Is a Decentralized Exchange (DEX)?", level: 2 },
+        { id: "key-differences", title: "key-differences", level: 2 },
+        { id: "key-differences-compared", title: "Key Differences Compared", level: 2 },
+        { id: "when-use-cex", title: "when-use-cex", level: 2 },
+        { id: "when-to-use-a-cex", title: "When to Use a CEX", level: 2 },
+        { id: "when-use-dex", title: "when-use-dex", level: 2 },
+        { id: "when-to-use-a-dex", title: "When to Use a DEX", level: 2 },
+        { id: "hybrid-future", title: "hybrid-future", level: 2 },
+        { id: "the-hybrid-future", title: "The Hybrid Future", level: 2 }
       ]}
       faqs={[
         {

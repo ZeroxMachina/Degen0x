@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Narratives: How Trends Drive Markets (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Narratives: How Trends Drive Markets (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how crypto narratives shape markets, the major narratives driving the current cycle, how to identify emerging trends early, and how to trade narrative rotations.",
 };
@@ -17,10 +17,14 @@ export default function CryptoNarrativesPage() {
       readTime="9 min read"
       intro="Crypto markets are driven by narratives — compelling stories about technology, adoption, and economic shifts that attract capital and attention to specific sectors. Understanding narratives is crucial because in crypto, stories often precede fundamentals. The projects that align with the dominant narrative of the moment tend to outperform, while those outside the narrative languish regardless of their technical merit. Learning to identify, evaluate, and position for narratives is one of the most valuable skills in crypto investing."
       toc={[
-        { id: "what-are-narratives", title: "What Are Crypto Narratives?", level: 2 },
-        { id: "current-narratives", title: "Major Narratives of This Cycle", level: 2 },
-        { id: "identifying-narratives", title: "How to Identify Emerging Narratives", level: 2 },
-        { id: "trading-narratives", title: "Trading Narrative Rotations", level: 2 },
+        { id: "what-are-narratives", title: "what-are-narratives", level: 2 },
+        { id: "what-are-crypto-narratives", title: "What Are Crypto Narratives?", level: 2 },
+        { id: "current-narratives", title: "current-narratives", level: 2 },
+        { id: "major-narratives-of-this-cycle", title: "Major Narratives of This Cycle", level: 2 },
+        { id: "identifying-narratives", title: "identifying-narratives", level: 2 },
+        { id: "how-to-identify-emerging-narratives", title: "How to Identify Emerging Narratives", level: 2 },
+        { id: "trading-narratives", title: "trading-narratives", level: 2 },
+        { id: "trading-narrative-rotations", title: "Trading Narrative Rotations", level: 2 }
       ]}
       faqs={[
         {

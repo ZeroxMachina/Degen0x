@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Pakistan (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Pakistan (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges accessible in Pakistan. Find PKR-friendly platforms with P2P support, low fees, and secure trading options.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesPakistan() {
       readTime="8 min read"
       intro="Pakistan has a rapidly growing crypto community despite regulatory uncertainty. The State Bank of Pakistan has not formally authorized crypto exchanges, but millions of Pakistanis trade digital assets through international platforms. P2P trading in PKR has become the primary on-ramp for Pakistani crypto enthusiasts. This guide covers the best available options for Pakistani traders."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Pakistan", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "PKR Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-pakistan", title: "Top Exchanges for Pakistan", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "pkr-payment-methods", title: "PKR Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Pakistan?", answer: "Crypto exists in a regulatory gray area in Pakistan. The SBP has warned banks against facilitating crypto transactions, but individual trading is not explicitly banned. Pakistan has been exploring regulatory frameworks for digital assets." },

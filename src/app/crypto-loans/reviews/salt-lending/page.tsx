@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `SALT Lending Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `SALT Lending Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth SALT Lending review covering loan terms, supported collateral, rates, security, and whether SALT is right for your crypto borrowing needs.",
 };
 

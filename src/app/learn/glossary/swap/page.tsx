@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Swap? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Swap? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what token swaps are, how they work on decentralized exchanges, and why swapping is fundamental to DeFi.",
 };
@@ -17,11 +17,16 @@ export default function SwapPage() {
       readTime="5 min"
       intro="A swap in crypto is the direct exchange of one cryptocurrency for another, typically executed through a decentralized exchange or automated market maker. Unlike traditional exchanges where you place buy/sell orders and wait for a match, DEX swaps are instant: you send one token to a smart contract and receive another token back in a single transaction. Swapping is the most fundamental activity in DeFi."
       toc={[
-        { id: "definition", title: "What Is a Swap?", level: 2 },
-        { id: "how-it-works", title: "How Swaps Work", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-swap", title: "What Is a Swap?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-swaps-work", title: "How Swaps Work", level: 2 },
+        { id: "dex-aggregators", title: "dex-aggregators", level: 2 },
         { id: "dex-aggregators", title: "DEX Aggregators", level: 2 },
+        { id: "swap-costs", title: "swap-costs", level: 2 },
         { id: "swap-costs", title: "Swap Costs", level: 2 },
-        { id: "why-it-matters", title: "Why Swaps Matter", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-swaps-matter", title: "Why Swaps Matter", level: 2 }
       ]}
       faqs={[
         {

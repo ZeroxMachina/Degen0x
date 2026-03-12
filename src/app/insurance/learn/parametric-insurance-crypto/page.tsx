@@ -16,10 +16,14 @@ export default function ParametricInsuranceCryptoPage() {
       readTime="10 min"
       intro="Parametric insurance pays claims based on predefined trigger events rather than assessed losses, enabling faster and more predictable payouts. In crypto, triggers can include exchange downtime, oracle deviations, and congestion events."
       toc={[
-        { id: "section-1", title: "What Is Parametric Insurance", level: 2 },
-        { id: "section-2", title: "Crypto Applications", level: 2 },
-        { id: "section-3", title: "Trigger Mechanisms", level: 2 },
-        { id: "section-4", title: "Benefits and Limitations", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "what-is-parametric-insurance", title: "What Is Parametric Insurance", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "crypto-applications", title: "Crypto Applications", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "trigger-mechanisms", title: "Trigger Mechanisms", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "benefits-and-limitations", title: "Benefits and Limitations", level: 2 }
       ]}
       faqs={[
         { question: "What is parametric insurance?", answer: "Parametric insurance pays out automatically when predefined conditions are met, regardless of actual loss assessment. In crypto, a policy might pay if an exchange goes offline for more than 24 hours or if a stablecoin depegs beyond a set threshold." },

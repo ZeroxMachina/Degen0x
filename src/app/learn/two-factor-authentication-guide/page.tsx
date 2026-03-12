@@ -12,11 +12,16 @@ export default function TwoFactorAuthenticationGuidePage() {
   return (
     <LearnPageLayout title="Two-Factor Authentication Guide" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Two-factor authentication (2FA) adds a critical second layer of security beyond your password. For cryptocurrency accounts where a breach can result in irreversible financial loss, strong 2FA is not optional — it is essential. This guide covers the different 2FA methods, their relative security levels, and best practices for protecting your crypto accounts."
       toc={[
+        { id: "what-is-2fa", title: "what-is-2fa", level: 2 },
         { id: "what-is-2fa", title: "What Is 2FA?", level: 2 },
-        { id: "sms-2fa", title: "SMS-Based 2FA", level: 2 },
+        { id: "sms-2fa", title: "sms-2fa", level: 2 },
+        { id: "sms-based-2fa", title: "SMS-Based 2FA", level: 2 },
+        { id: "authenticator-apps", title: "authenticator-apps", level: 2 },
         { id: "authenticator-apps", title: "Authenticator Apps", level: 2 },
-        { id: "hardware-keys", title: "Hardware Security Keys", level: 2 },
-        { id: "best-practices", title: "2FA Best Practices", level: 2 },
+        { id: "hardware-keys", title: "hardware-keys", level: 2 },
+        { id: "hardware-security-keys", title: "Hardware Security Keys", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "2fa-best-practices", title: "2FA Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What is the best 2FA method for crypto?", answer: "Hardware security keys (FIDO2/WebAuthn) provide the strongest protection as they are phishing-resistant and cannot be remotely compromised. Authenticator apps are the next best option. SMS-based 2FA is the weakest due to SIM swap vulnerability but is still better than no 2FA." },

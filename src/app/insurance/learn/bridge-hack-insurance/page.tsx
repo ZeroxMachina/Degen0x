@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bridge Hack Insurance Coverage (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Bridge Hack Insurance Coverage (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about insurance coverage for bridge hacks. Understand how to protect your assets when moving between blockchains through cross-chain bridges.",
 };
 
@@ -11,7 +11,16 @@ export default function BridgeHackInsurancePage() {
   return (
     <LearnPageLayout title="Bridge Hack Insurance Coverage" categoryName="Crypto Insurance" categorySlug="insurance" readTime="8 min read"
       intro="Cross-chain bridges have been the target of some of the largest DeFi exploits, with billions lost in attacks on Ronin, Wormhole, Nomad, and others. As multi-chain DeFi grows, bridge usage becomes unavoidable, making bridge hack insurance increasingly relevant. This guide covers available coverage options, what they protect against, and strategies for managing bridge risk."
-      toc={[{ id: "bridge-risk", title: "Understanding Bridge Risk", level: 2 }, { id: "coverage-options", title: "Coverage Options", level: 2 }, { id: "risk-mitigation", title: "Risk Mitigation Strategies", level: 2 }, { id: "future-outlook", title: "Future of Bridge Insurance", level: 2 }]}
+      toc={[
+        { id: "bridge-risk", title: "bridge-risk", level: 2 },
+        { id: "understanding-bridge-risk", title: "Understanding Bridge Risk", level: 2 },
+        { id: "coverage-options", title: "coverage-options", level: 2 },
+        { id: "coverage-options", title: "Coverage Options", level: 2 },
+        { id: "risk-mitigation", title: "risk-mitigation", level: 2 },
+        { id: "risk-mitigation-strategies", title: "Risk Mitigation Strategies", level: 2 },
+        { id: "future-outlook", title: "future-outlook", level: 2 },
+        { id: "future-of-bridge-insurance", title: "Future of Bridge Insurance", level: 2 }
+      ]}
       faqs={[
         { question: "Can I insure assets while bridging?", answer: "Limited coverage is available. Some insurance protocols like Nexus Mutual and InsurAce offer bridge protocol coverage. However, bridge insurance is less developed than smart contract cover for lending protocols. Coverage may protect against exploits but not all types of bridge failures." },
         { question: "Which bridges have been hacked?", answer: "Major bridge hacks include Ronin ($625M, 2022), Wormhole ($320M, 2022), Nomad ($190M, 2022), and Harmony Horizon ($100M, 2022). These exploits typically involved compromised validator keys, smart contract vulnerabilities, or verification bypasses. The scale of bridge losses highlights the significance of this risk." },

@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToUseHardwareWalletPage() {
   return (
     <LearnPageLayout title="How to Use a Hardware Wallet" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Hardware wallets are the gold standard for cryptocurrency security, keeping your private keys isolated from internet-connected devices. By storing keys on a dedicated device, hardware wallets protect against malware, phishing, and remote attacks. This guide covers setup, daily use, and best practices for Ledger, Trezor, and other hardware wallets."
-      toc={[{ id: "choosing", title: "Choosing a Hardware Wallet", level: 2 },{ id: "setup", title: "Initial Setup", level: 2 },{ id: "daily-use", title: "Daily Use", level: 2 },{ id: "defi-integration", title: "DeFi Integration", level: 2 },{ id: "best-practices", title: "Security Best Practices", level: 2 }]}
+      toc={[
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-a-hardware-wallet", title: "Choosing a Hardware Wallet", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "initial-setup", title: "Initial Setup", level: 2 },
+        { id: "daily-use", title: "daily-use", level: 2 },
+        { id: "daily-use", title: "Daily Use", level: 2 },
+        { id: "defi-integration", title: "defi-integration", level: 2 },
+        { id: "defi-integration", title: "DeFi Integration", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "security-best-practices", title: "Security Best Practices", level: 2 }
+      ]}
       faqs={[
         { question: "Ledger vs Trezor — which is better?", answer: "Both are excellent choices. Ledger uses a secure element chip and supports more assets natively. Trezor is fully open-source and has a larger touchscreen on premium models. Both have strong security track records. Choose based on your priorities: Ledger for broad asset support, Trezor for open-source transparency." },
         { question: "What if my hardware wallet is lost or broken?", answer: "Your funds are safe as long as you have your seed phrase. Purchase a new hardware wallet (same or different brand) and restore it using your seed phrase. All your wallets and funds will be recovered. This is why secure seed phrase backup is the most critical aspect of hardware wallet ownership." },

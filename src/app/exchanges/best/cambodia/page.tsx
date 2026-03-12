@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Cambodia (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Cambodia (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges accessible in Cambodia. Find USD and KHR-friendly platforms with P2P support and competitive trading fees.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesCambodia() {
       readTime="7 min read"
       intro="Cambodia has a unique dual-currency economy using both USD and KHR, which creates interesting dynamics for crypto traders. The National Bank of Cambodia has issued warnings about cryptocurrency but has not imposed an outright ban. Cambodia's young, digitally-connected population shows growing interest in crypto. This guide covers the best platforms available to Cambodian traders."
       toc={[
-        { id: "top-exchanges", title: "Available Exchanges", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "available-exchanges", title: "Available Exchanges", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
         { id: "payment-methods", title: "Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Cambodia?", answer: "The NBC has warned against using unauthorized crypto but has not enacted a comprehensive ban. Individual use of international platforms continues. Cambodia has also developed its own blockchain-based payment system, Bakong." },

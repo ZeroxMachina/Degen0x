@@ -17,10 +17,14 @@ export default function LiquidityPoolTaxesPage() {
       readTime="9 min"
       intro="Providing liquidity to decentralized exchanges and automated market makers creates multiple tax events that are among the most complex in crypto taxation. From the initial deposit to fee accumulation, impermanent loss realization, and withdrawal, each step has potential tax implications. This guide walks through the tax treatment of liquidity provision step by step."
       toc={[
-        { id: "lp-deposit-taxes", title: "Deposit Tax Treatment", level: 2 },
-        { id: "fee-income", title: "Fee Income and Rewards", level: 2 },
-        { id: "impermanent-loss", title: "Impermanent Loss Tax Treatment", level: 2 },
-        { id: "withdrawal-reporting", title: "Withdrawal and Reporting", level: 2 },
+        { id: "lp-deposit-taxes", title: "lp-deposit-taxes", level: 2 },
+        { id: "deposit-tax-treatment", title: "Deposit Tax Treatment", level: 2 },
+        { id: "fee-income", title: "fee-income", level: 2 },
+        { id: "fee-income-and-rewards", title: "Fee Income and Rewards", level: 2 },
+        { id: "impermanent-loss", title: "impermanent-loss", level: 2 },
+        { id: "impermanent-loss-tax-treatment", title: "Impermanent Loss Tax Treatment", level: 2 },
+        { id: "withdrawal-reporting", title: "withdrawal-reporting", level: 2 },
+        { id: "withdrawal-and-reporting", title: "Withdrawal and Reporting", level: 2 }
       ]}
       faqs={[
         { question: "Is depositing into a liquidity pool taxable?", answer: "This is debated. One interpretation treats the deposit as a taxable exchange of your tokens for LP tokens. Another treats it as a non-taxable deposit similar to placing assets in a pool. The IRS has not provided specific guidance. Many tax professionals recommend treating it as taxable to be conservative, but document your chosen approach." },

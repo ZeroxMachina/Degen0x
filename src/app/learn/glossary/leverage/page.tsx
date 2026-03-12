@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Leverage? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Leverage? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what leverage is in crypto trading, how it amplifies both gains and losses, and the risks involved.",
 };
@@ -17,11 +17,16 @@ export default function LeveragePage() {
       readTime="5 min"
       intro="Leverage in crypto trading means using borrowed funds to increase your position size beyond what your own capital would allow. If you use 10x leverage, a $1,000 deposit controls a $10,000 position. Leverage amplifies both profits and losses proportionally. While it can dramatically increase returns on successful trades, it also introduces liquidation risk and is the primary cause of catastrophic losses for retail traders."
       toc={[
-        { id: "definition", title: "What Is Leverage?", level: 2 },
-        { id: "how-it-works", title: "How Leverage Works", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-leverage", title: "What Is Leverage?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-leverage-works", title: "How Leverage Works", level: 2 },
+        { id: "leverage-levels", title: "leverage-levels", level: 2 },
         { id: "leverage-levels", title: "Leverage Levels", level: 2 },
-        { id: "risks", title: "Risks of Leverage", level: 2 },
-        { id: "why-it-matters", title: "Why Leverage Matters", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-leverage", title: "Risks of Leverage", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-leverage-matters", title: "Why Leverage Matters", level: 2 }
       ]}
       faqs={[
         {

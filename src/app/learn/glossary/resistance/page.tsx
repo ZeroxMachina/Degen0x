@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Resistance in Trading? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Resistance in Trading? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what resistance means in crypto trading, how to identify resistance levels, how resistance works with support, and strategies for trading around resistance.",
 };
 
@@ -11,7 +11,16 @@ export default function ResistancePage() {
   return (
     <LearnPageLayout title="What Is Resistance?" categoryName="Learn Crypto" categorySlug="learn" readTime="5 min read"
       intro="Resistance is a price level where selling pressure consistently overwhelms buying pressure, preventing the price from rising further. When an asset approaches a resistance level, it tends to stall or reverse as sellers enter the market and buyers become hesitant. Resistance levels are among the most important concepts in technical analysis, helping traders identify potential reversal points, set profit targets, and time their entries and exits."
-      toc={[{ id: "definition", title: "What Is Resistance?", level: 2 }, { id: "identifying-resistance", title: "Identifying Resistance Levels", level: 2 }, { id: "support-and-resistance", title: "Support and Resistance", level: 2 }, { id: "trading-resistance", title: "Trading Resistance Levels", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-resistance", title: "What Is Resistance?", level: 2 },
+        { id: "identifying-resistance", title: "identifying-resistance", level: 2 },
+        { id: "identifying-resistance-levels", title: "Identifying Resistance Levels", level: 2 },
+        { id: "support-and-resistance", title: "support-and-resistance", level: 2 },
+        { id: "support-and-resistance", title: "Support and Resistance", level: 2 },
+        { id: "trading-resistance", title: "trading-resistance", level: 2 },
+        { id: "trading-resistance-levels", title: "Trading Resistance Levels", level: 2 }
+      ]}
       faqs={[{ question: "What happens when resistance is broken?", answer: "When price convincingly breaks above resistance on high volume, that level often becomes support. This is called a support-resistance flip. Breakouts above resistance can trigger rapid price increases as short sellers cover and momentum traders enter. However, false breakouts are common in crypto, where price briefly exceeds resistance before falling back." },
         { question: "How many times does resistance need to be tested?", answer: "The more times a resistance level is tested without breaking, the stronger it is considered. However, each test also weakens it as sellers at that level gradually exhaust their supply. Two to three tests is typical before either a breakout or a more significant pullback. The context of each test (volume, momentum) matters as much as the count." }]}
       relatedArticles={[{ title: "Candlestick", href: "/learn/glossary/candle", category: "Glossary" }, { title: "Volume", href: "/learn/glossary/volume", category: "Glossary" }, { title: "Take Profit", href: "/learn/glossary/take-profit", category: "Glossary" }, { title: "Crypto Market Indicators", href: "/learn/crypto-market-indicators", category: "Learn Crypto" }]}

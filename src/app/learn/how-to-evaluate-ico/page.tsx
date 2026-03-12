@@ -11,7 +11,18 @@ export const metadata: Metadata = {
 export default function HowToEvaluateIcoPage() {
   return (
     <LearnPageLayout title="How to Evaluate an ICO or Token Sale" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Token launches — whether called ICOs, IDOs, IEOs, or presales — represent opportunities to invest in projects at early stages. However, they also carry significant risk, including high rates of project failure and outright fraud. Rigorous evaluation is essential before participating in any token sale."
-      toc={[{ id: "types", title: "Types of Token Sales", level: 2 },{ id: "evaluation", title: "Evaluation Checklist", level: 2 },{ id: "valuation", title: "Valuation Considerations", level: 2 },{ id: "red-flags", title: "Red Flags", level: 2 },{ id: "participation", title: "Participation Best Practices", level: 2 }]}
+      toc={[
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-token-sales", title: "Types of Token Sales", level: 2 },
+        { id: "evaluation", title: "evaluation", level: 2 },
+        { id: "evaluation-checklist", title: "Evaluation Checklist", level: 2 },
+        { id: "valuation", title: "valuation", level: 2 },
+        { id: "valuation-considerations", title: "Valuation Considerations", level: 2 },
+        { id: "red-flags", title: "red-flags", level: 2 },
+        { id: "red-flags", title: "Red Flags", level: 2 },
+        { id: "participation", title: "participation", level: 2 },
+        { id: "participation-best-practices", title: "Participation Best Practices", level: 2 }
+      ]}
       faqs={[
         { question: "What percentage of ICOs succeed?", answer: "Historical data shows that the majority of ICO-funded projects fail to deliver on their promises. Studies of the 2017-2018 ICO boom found that over 80% of ICOs were scams or failed projects. The success rate has improved with better infrastructure and investor sophistication, but token sales remain high-risk investments." },
         { question: "What is an IDO vs ICO?", answer: "An ICO (Initial Coin Offering) is a direct token sale by the project. An IDO (Initial DEX Offering) launches the token on a decentralized exchange launchpad, providing immediate liquidity. IEOs (Initial Exchange Offerings) are conducted through centralized exchanges that perform some vetting. Each format has different risk profiles and accessibility." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is MANTRA (OM)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is MANTRA (OM)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about MANTRA (OM), the Layer 1 blockchain for real-world asset tokenization. Discover OM tokenomics, RWA features, and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function MantraPage() {
       readTime="8 min read"
       intro="MANTRA (OM) is a Layer 1 blockchain built on the Cosmos SDK specifically designed for real-world asset (RWA) tokenization. The protocol provides a regulatory-compliant infrastructure for tokenizing and trading assets like real estate, securities, and commodities on-chain. MANTRA positions itself at the intersection of traditional finance and DeFi."
       toc={[
-        { id: "what-is", title: "What Is MANTRA?", level: 2 },
-        { id: "how-it-works", title: "How Does MANTRA Work?", level: 2 },
-        { id: "tokenomics", title: "OM Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy OM", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-mantra", title: "What Is MANTRA?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-mantra-work", title: "How Does MANTRA Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "om-tokenomics", title: "OM Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-om", title: "How to Buy OM", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is MANTRA?", answer: "MANTRA is a Cosmos-based Layer 1 blockchain focused on real-world asset tokenization. OM is the native token used for staking, governance, and transaction fees on the network." },

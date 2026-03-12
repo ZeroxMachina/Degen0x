@@ -17,10 +17,14 @@ export default function BasisTradeYieldPage() {
       readTime="10 min"
       intro="The basis trade is a classic strategy adapted from traditional finance to crypto markets, capturing the spread between spot prices and futures or perpetual contract prices. When futures trade at a premium to spot (contango), traders can buy spot and short futures to earn the basis as it converges. In crypto, the perpetual funding rate mechanism creates a continuous basis opportunity that DeFi protocols are increasingly automating."
       toc={[
-        { id: "what-is-basis", title: "What Is the Basis Trade?", level: 2 },
-        { id: "funding-rates", title: "Funding Rate Mechanics", level: 2 },
+        { id: "what-is-basis", title: "what-is-basis", level: 2 },
+        { id: "what-is-the-basis-trade", title: "What Is the Basis Trade?", level: 2 },
+        { id: "funding-rates", title: "funding-rates", level: 2 },
+        { id: "funding-rate-mechanics", title: "Funding Rate Mechanics", level: 2 },
+        { id: "defi-implementation", title: "defi-implementation", level: 2 },
         { id: "defi-implementation", title: "DeFi Implementation", level: 2 },
-        { id: "risks", title: "Risks & Considerations", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-considerations", title: "Risks & Considerations", level: 2 }
       ]}
       faqs={[
         { question: "How much can you earn from basis trades?", answer: "Annualized returns typically range from 5-30% depending on market sentiment. During bull markets with high leverage demand, funding rates can produce yields exceeding 20% APY. During neutral or bearish periods, yields compress to 5-10% or may become negative." },

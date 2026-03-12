@@ -17,14 +17,20 @@ export default function SolanaEcosystemGuidePage() {
       readTime="16 min"
       intro="Solana has evolved from a high-speed blockchain focused on technical scalability into a vibrant ecosystem rivaling Ethereum in scope and diversity. The Solana network's fundamental characteristics—sub-second transaction finality, sub-cent transaction fees, and throughput measured in thousands of transactions per second—have enabled an entire economic layer of applications. Whereas Ethereum's scaling solutions (Layer 2s) abstract away complexity, Solana integrates scaling into its core architecture. This created a fertile environment for developers, attracting gaming studios, DeFi protocols, NFT projects, and web3 infrastructure companies. By 2026, Solana has matured into a comprehensive ecosystem supporting DeFi lending and trading, vibrant NFT communities, mobile-first gaming, influential memecoins, and essential infrastructure. This guide explores Solana's key components—major protocols, platforms, and tools—while examining the ecosystem's strengths, challenges, and trajectory."
       toc={[
-        { id: "solana-overview", title: "Understanding the Solana Ecosystem", level: 2 },
-        { id: "solana-defi", title: "Solana DeFi: Trading, Lending & Yield", level: 2 },
-        { id: "solana-nfts", title: "Solana NFTs and Digital Collectibles", level: 2 },
-        { id: "solana-gaming", title: "Gaming and Play-to-Earn on Solana", level: 2 },
-        { id: "solana-memecoins", title: "Memecoins and Community Culture", level: 2 },
-        { id: "solana-infrastructure", title: "Essential Solana Infrastructure", level: 2 },
-        { id: "solana-advantages", title: "Solana's Competitive Advantages", level: 2 },
-        { id: "solana-challenges", title: "Challenges and Limitations", level: 2 },
+        { id: "solana-overview", title: "solana-overview", level: 2 },
+        { id: "understanding-the-solana-ecosystem", title: "Understanding the Solana Ecosystem", level: 2 },
+        { id: "solana-defi", title: "solana-defi", level: 2 },
+        { id: "solana-defi-trading-lending-yield", title: "Solana DeFi: Trading, Lending & Yield", level: 2 },
+        { id: "solana-nfts", title: "solana-nfts", level: 2 },
+        { id: "solana-nfts-and-digital-collectibles", title: "Solana NFTs and Digital Collectibles", level: 2 },
+        { id: "solana-gaming", title: "solana-gaming", level: 2 },
+        { id: "gaming-and-play-to-earn-on-solana", title: "Gaming and Play-to-Earn on Solana", level: 2 },
+        { id: "solana-memecoins", title: "solana-memecoins", level: 2 },
+        { id: "memecoins-and-community-culture", title: "Memecoins and Community Culture", level: 2 },
+        { id: "solana-infrastructure", title: "solana-infrastructure", level: 2 },
+        { id: "essential-solana-infrastructure", title: "Essential Solana Infrastructure", level: 2 },
+        { id: "solana-advantages", title: "solana-advantages", level: 2 },
+        { id: "solana", title: "Solana", level: 2 }
       ]}
       faqs={[
         {
@@ -66,13 +72,13 @@ export default function SolanaEcosystemGuidePage() {
           question: "What is the best Solana memecoin to invest in?",
           answer:
             "There is no 'best' memecoin—the entire category is extremely high-risk speculation. Most memecoins go to zero. Occasionally, a few become viable communities supporting real communities and activity (like DOGE or SHIB in earlier cycles). Selecting winners is essentially impossible even for experts. If you choose to participate, treat memecoins as gambling—only invest money you can afford to lose completely, never betting your portfolio on memecoin outcomes. Approach with skepticism: just because a memecoin exists on Solana doesn't make it valuable. Most are abandoned after initial creator marketing. The few communities that mature into real movements show sustained activity, transparent development, and genuine adoption.",
-        },
+        }
       ]}
       relatedArticles={[
         { title: "What Is Ethereum?", href: "/learn/what-is-ethereum", category: "Learn Crypto" },
         { title: "What Is DeFi?", href: "/learn/what-is-defi", category: "Learn Crypto" },
         { title: "What Are NFTs?", href: "/learn/what-are-nfts", category: "Learn Crypto" },
-        { title: "Base Ecosystem Guide", href: "/learn/base-ecosystem-guide", category: "Learn Crypto" },
+        { title: "Base Ecosystem Guide", href: "/learn/base-ecosystem-guide", category: "Learn Crypto" }
       ]}
     >
       <h2 id="solana-overview">Understanding the Solana Ecosystem</h2>

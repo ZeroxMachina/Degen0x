@@ -25,13 +25,20 @@ export default function CryptoRegulationUSAPage() {
       readTime="16 min"
       intro="The United States has one of the most complex crypto regulatory environments in the world, with multiple federal agencies claiming jurisdiction and 50 states adding their own rules. The SEC, CFTC, FinCEN, and IRS each oversee different aspects of the crypto market. Despite this complexity, significant progress has been made with Bitcoin and Ethereum ETF approvals, ongoing stablecoin legislation, and evolving market structure bills. This guide covers the full regulatory landscape and what it means for US crypto users and investors."
       toc={[
-        { id: "regulatory-agencies", title: "Key Regulatory Agencies", level: 2 },
-        { id: "sec-role", title: "The SEC and Securities Classification", level: 2 },
-        { id: "cftc-role", title: "The CFTC and Commodities Oversight", level: 2 },
-        { id: "etf-approvals", title: "Bitcoin and Ethereum ETFs", level: 2 },
-        { id: "stablecoin-rules", title: "Stablecoin Regulation", level: 2 },
-        { id: "state-regulation", title: "State-Level Regulation", level: 2 },
-        { id: "future-outlook", title: "Future Regulatory Outlook", level: 2 },
+        { id: "regulatory-agencies", title: "regulatory-agencies", level: 2 },
+        { id: "key-regulatory-agencies", title: "Key Regulatory Agencies", level: 2 },
+        { id: "sec-role", title: "sec-role", level: 2 },
+        { id: "the-sec-and-securities-classification", title: "The SEC and Securities Classification", level: 2 },
+        { id: "cftc-role", title: "cftc-role", level: 2 },
+        { id: "the-cftc-and-commodities-oversight", title: "The CFTC and Commodities Oversight", level: 2 },
+        { id: "etf-approvals", title: "etf-approvals", level: 2 },
+        { id: "bitcoin-and-ethereum-etfs", title: "Bitcoin and Ethereum ETFs", level: 2 },
+        { id: "stablecoin-rules", title: "stablecoin-rules", level: 2 },
+        { id: "stablecoin-regulation", title: "Stablecoin Regulation", level: 2 },
+        { id: "state-regulation", title: "state-regulation", level: 2 },
+        { id: "state-level-regulation", title: "State-Level Regulation", level: 2 },
+        { id: "future-outlook", title: "future-outlook", level: 2 },
+        { id: "future-regulatory-outlook", title: "Future Regulatory Outlook", level: 2 }
       ]}
       faqs={[
         {

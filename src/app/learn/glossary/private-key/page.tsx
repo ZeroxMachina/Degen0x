@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Private Key? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Private Key? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what private keys are, how they secure your crypto, and why protecting them is the most important aspect of self-custody.",
 };
@@ -17,11 +17,16 @@ export default function PrivateKeyPage() {
       readTime="5 min"
       intro="A private key is a secret cryptographic code that proves ownership of a blockchain address and authorizes transactions from it. It is a long string of numbers and letters that must be kept absolutely secret. Anyone who has your private key has complete control over your funds. Private keys are the foundation of crypto self-custody — they are the ultimate proof that you own your digital assets."
       toc={[
-        { id: "definition", title: "What Is a Private Key?", level: 2 },
-        { id: "how-it-works", title: "How Private Keys Work", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-private-key", title: "What Is a Private Key?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-private-keys-work", title: "How Private Keys Work", level: 2 },
+        { id: "key-management", title: "key-management", level: 2 },
         { id: "key-management", title: "Key Management", level: 2 },
+        { id: "what-not-to-do", title: "what-not-to-do", level: 2 },
         { id: "what-not-to-do", title: "What Not to Do", level: 2 },
-        { id: "why-it-matters", title: "Why Private Keys Matter", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-private-keys-matter", title: "Why Private Keys Matter", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Tax Implications of DeFi Lending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Tax Implications of DeFi Lending (${CURRENT_YEAR}) | degen0x`,
   description: "Complete guide to DeFi lending taxes. Learn how interest income, token rewards, and lending activities are taxed in major jurisdictions.",
 };
 
@@ -11,7 +11,16 @@ export default function DefiLendingTaxesPage() {
   return (
     <LearnPageLayout title="Tax Implications of DeFi Lending" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="8 min read"
       intro="DeFi lending creates numerous taxable events that many users overlook. Interest earned from lending, governance token rewards, liquidation events, and even depositing into certain protocols can trigger tax obligations. The complexity of tracking DeFi transactions across multiple protocols and chains makes tax compliance challenging but essential. This guide covers the key tax considerations for DeFi lending activities."
-      toc={[{ id: "interest-income", title: "Interest Income Taxation", level: 2 }, { id: "token-rewards", title: "Governance Token Rewards", level: 2 }, { id: "deposit-withdrawal", title: "Deposit and Withdrawal Events", level: 2 }, { id: "tracking-tools", title: "Tax Tracking Tools", level: 2 }]}
+      toc={[
+        { id: "interest-income", title: "interest-income", level: 2 },
+        { id: "interest-income-taxation", title: "Interest Income Taxation", level: 2 },
+        { id: "token-rewards", title: "token-rewards", level: 2 },
+        { id: "governance-token-rewards", title: "Governance Token Rewards", level: 2 },
+        { id: "deposit-withdrawal", title: "deposit-withdrawal", level: 2 },
+        { id: "deposit-and-withdrawal-events", title: "Deposit and Withdrawal Events", level: 2 },
+        { id: "tracking-tools", title: "tracking-tools", level: 2 },
+        { id: "tax-tracking-tools", title: "Tax Tracking Tools", level: 2 }
+      ]}
       faqs={[
         { question: "Is DeFi lending interest taxable?", answer: "Yes, in most jurisdictions. Interest earned from DeFi lending is treated as income, taxable at your applicable income tax rate. This includes interest from protocols like Aave, Compound, and other lending platforms. The income is typically recognized as it accrues or when withdrawn." },
         { question: "Are AAVE and COMP token rewards taxable?", answer: "Yes. Governance tokens received as lending incentives are taxable income at their fair market value when received. If you later sell these tokens, any gain or loss from the received value is a capital gain or loss." },

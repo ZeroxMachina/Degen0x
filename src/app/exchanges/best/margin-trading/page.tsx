@@ -51,7 +51,7 @@ export default function MarginTradingPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges for Margin Trading ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -78,14 +78,14 @@ export default function MarginTradingPage() {
           </p>
         </div>
 
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Margin Trading Features</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Margin Trading Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div className="rounded-lg border border-[var(--color-border)] p-4">
-            <h3 className="text-white font-semibold mb-2">Cross Margin</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Cross Margin</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Uses your entire account balance as collateral. Lower liquidation risk per position but higher total account risk.</p>
           </div>
           <div className="rounded-lg border border-[var(--color-border)] p-4">
-            <h3 className="text-white font-semibold mb-2">Isolated Margin</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Isolated Margin</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Each position has its own dedicated margin. Losses are limited to the margin allocated to that specific position.</p>
           </div>
         </div>

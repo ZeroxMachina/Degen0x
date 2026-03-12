@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Mainnet? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Mainnet? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what mainnet means, how it differs from testnet, and why mainnet launches are significant milestones for crypto projects.",
 };
@@ -17,11 +17,16 @@ export default function MainnetPage() {
       readTime="4 min"
       intro="Mainnet (short for main network) is the primary, live blockchain network where actual transactions with real value take place. It is the production environment of a blockchain, as opposed to testnets used for development and experimentation. When a project launches its mainnet, it transitions from testing to a fully operational network with real economic activity and consequences."
       toc={[
-        { id: "definition", title: "What Is Mainnet?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-mainnet", title: "What Is Mainnet?", level: 2 },
+        { id: "mainnet-vs-testnet", title: "mainnet-vs-testnet", level: 2 },
         { id: "mainnet-vs-testnet", title: "Mainnet vs Testnet", level: 2 },
-        { id: "mainnet-launch", title: "Mainnet Launches", level: 2 },
+        { id: "mainnet-launch", title: "mainnet-launch", level: 2 },
+        { id: "mainnet-launches", title: "Mainnet Launches", level: 2 },
+        { id: "mainnet-upgrades", title: "mainnet-upgrades", level: 2 },
         { id: "mainnet-upgrades", title: "Mainnet Upgrades", level: 2 },
-        { id: "why-it-matters", title: "Why Mainnet Matters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-mainnet-matters", title: "Why Mainnet Matters", level: 2 }
       ]}
       faqs={[
         {

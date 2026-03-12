@@ -18,12 +18,18 @@ export default function PortfolioRebalancingPage() {
       readTime="10 min read"
       intro="Rebalancing is the process of realigning your portfolio to target allocations by selling assets that have grown beyond their target weight and buying those that have fallen below it. In crypto, where individual assets can move 50-200% in short periods, portfolios drift quickly from target allocations. Regular rebalancing enforces a disciplined buy-low, sell-high approach and manages concentration risk."
       toc={[
-        { id: "why-rebalance", title: "Why Rebalancing Matters", level: 2 },
-        { id: "methods", title: "Rebalancing Methods", level: 2 },
-        { id: "frequency", title: "How Often to Rebalance", level: 2 },
-        { id: "tax-efficient", title: "Tax-Efficient Rebalancing", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Rebalancing Guide", level: 2 },
-        { id: "tools", title: "Portfolio Tracking & Rebalancing Tools", level: 2 },
+        { id: "why-rebalance", title: "why-rebalance", level: 2 },
+        { id: "why-rebalancing-matters", title: "Why Rebalancing Matters", level: 2 },
+        { id: "methods", title: "methods", level: 2 },
+        { id: "rebalancing-methods", title: "Rebalancing Methods", level: 2 },
+        { id: "frequency", title: "frequency", level: 2 },
+        { id: "how-often-to-rebalance", title: "How Often to Rebalance", level: 2 },
+        { id: "tax-efficient", title: "tax-efficient", level: 2 },
+        { id: "tax-efficient-rebalancing", title: "Tax-Efficient Rebalancing", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-rebalancing-guide", title: "Step-by-Step Rebalancing Guide", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "portfolio-tracking-rebalancing-tools", title: "Portfolio Tracking & Rebalancing Tools", level: 2 }
       ]}
       faqs={[
         { question: "How often should I rebalance my crypto portfolio?", answer: "Either quarterly on a fixed schedule or when any asset drifts more than 5-10% from its target weight. In crypto's volatile environment, threshold-based rebalancing is often more effective than fixed-schedule rebalancing." },

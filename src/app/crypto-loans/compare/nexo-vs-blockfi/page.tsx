@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Nexo vs BlockFi Lending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Nexo vs BlockFi Lending (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare Nexo and BlockFi crypto lending platforms. Analysis of rates, features, safety, and the impact of BlockFi's bankruptcy on the CeFi lending landscape.",
 };
@@ -17,10 +17,14 @@ export default function NexoVsBlockfiPage() {
       readTime="8 min read"
       intro="Nexo and BlockFi represent two different outcomes in the CeFi crypto lending space. While Nexo has survived and continued operating, BlockFi filed for bankruptcy in November 2022 following the FTX collapse. This comparison examines what happened to both platforms, what Nexo offers today, the lessons learned from BlockFi's failure, and what CeFi lending users should look for in platform selection going forward."
       toc={[
-        { id: "platform-status", title: "Current Platform Status", level: 2 },
-        { id: "what-happened-blockfi", title: "What Happened to BlockFi", level: 2 },
+        { id: "platform-status", title: "platform-status", level: 2 },
+        { id: "current-platform-status", title: "Current Platform Status", level: 2 },
+        { id: "what-happened-blockfi", title: "what-happened-blockfi", level: 2 },
+        { id: "what-happened-to-blockfi", title: "What Happened to BlockFi", level: 2 },
+        { id: "nexo-today", title: "nexo-today", level: 2 },
         { id: "nexo-today", title: "Nexo Today", level: 2 },
-        { id: "lessons-learned", title: "Lessons for CeFi Users", level: 2 },
+        { id: "lessons-learned", title: "lessons-learned", level: 2 },
+        { id: "lessons-for-cefi-users", title: "Lessons for CeFi Users", level: 2 }
       ]}
       faqs={[
         { question: "Is BlockFi still operating?", answer: "No. BlockFi filed for Chapter 11 bankruptcy in November 2022 due to significant exposure to FTX and Alameda Research. The platform has ceased lending operations and is in the process of returning remaining assets to creditors and customers through bankruptcy proceedings." },

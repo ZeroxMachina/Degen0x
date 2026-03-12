@@ -17,10 +17,14 @@ export default function DayTradingTaxesPage() {
       readTime="9 min"
       intro="Day trading cryptocurrency generates significant tax obligations that active traders must understand to remain compliant and optimize their tax position. Most day trading profits are taxed as short-term capital gains at ordinary income tax rates, which can be substantially higher than long-term rates. This guide covers the specific tax rules, reporting requirements, and strategies relevant to high-frequency crypto traders."
       toc={[
-        { id: "short-term-gains", title: "Short-Term Capital Gains", level: 2 },
+        { id: "short-term-gains", title: "short-term-gains", level: 2 },
+        { id: "short-term-capital-gains", title: "Short-Term Capital Gains", level: 2 },
+        { id: "wash-sale-considerations", title: "wash-sale-considerations", level: 2 },
         { id: "wash-sale-considerations", title: "Wash Sale Considerations", level: 2 },
+        { id: "trader-tax-status", title: "trader-tax-status", level: 2 },
         { id: "trader-tax-status", title: "Trader Tax Status", level: 2 },
-        { id: "record-keeping", title: "Record Keeping for Day Traders", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping-for-day-traders", title: "Record Keeping for Day Traders", level: 2 }
       ]}
       faqs={[
         { question: "Are all day trading profits taxed at higher rates?", answer: "Yes, if held less than one year. Short-term capital gains are taxed at your ordinary income tax rate, which can be as high as 37% federally plus state taxes. Only assets held for more than one year qualify for the lower long-term capital gains rates of 0%, 15%, or 20%." },

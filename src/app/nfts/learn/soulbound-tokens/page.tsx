@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Soulbound Tokens (SBTs) Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Soulbound Tokens (SBTs) Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Soulbound Tokens, non-transferable NFTs for identity, credentials, and reputation. Understand how SBTs work, their use cases, and implications for Web3 identity.",
 };
 
@@ -16,11 +16,16 @@ export default function SoulboundTokensPage() {
       readTime="9 min"
       intro="Soulbound Tokens (SBTs) are non-transferable NFTs that represent identity, credentials, affiliations, and reputation on the blockchain. Unlike traditional NFTs that can be bought, sold, and traded, SBTs are permanently bound to the wallet that receives them. Proposed by Ethereum co-founder Vitalik Buterin, SBTs aim to bring trust, identity, and social relationships to Web3, enabling a 'Decentralized Society' where individuals have verifiable digital identities."
       toc={[
-        { id: "what-are-sbts", title: "What Are Soulbound Tokens", level: 2 },
-        { id: "how-they-work", title: "How SBTs Work", level: 2 },
-        { id: "use-cases", title: "Use Cases for SBTs", level: 2 },
-        { id: "challenges", title: "Challenges and Concerns", level: 2 },
-        { id: "current-implementations", title: "Current Implementations", level: 2 },
+        { id: "what-are-sbts", title: "what-are-sbts", level: 2 },
+        { id: "what-are-soulbound-tokens", title: "What Are Soulbound Tokens", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-sbts-work", title: "How SBTs Work", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "use-cases-for-sbts", title: "Use Cases for SBTs", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-and-concerns", title: "Challenges and Concerns", level: 2 },
+        { id: "current-implementations", title: "current-implementations", level: 2 },
+        { id: "current-implementations", title: "Current Implementations", level: 2 }
       ]}
       faqs={[
         { question: "Can Soulbound Tokens be removed or revoked?", answer: "Some SBT implementations allow the issuer to revoke the token, similar to how a university could revoke a degree. Others are permanently bound with no revocation mechanism. The specific design depends on the use case and implementation. Most proposals include a mechanism for the holder to hide or burn their SBTs if desired." },

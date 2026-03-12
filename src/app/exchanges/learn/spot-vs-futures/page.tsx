@@ -17,12 +17,18 @@ export default function SpotVsFuturesPage() {
       readTime="11 min"
       intro="Crypto exchanges offer two primary trading markets: spot and futures (also called derivatives). Spot trading involves buying and selling the actual cryptocurrency, while futures trading involves contracts that derive their value from the underlying asset. Futures offer leverage and the ability to profit from falling prices, but they also carry significantly higher risk. This guide explains both markets, their mechanics, and who each one is best suited for."
       toc={[
-        { id: "spot-trading", title: "What Is Spot Trading?", level: 2 },
-        { id: "futures-trading", title: "What Is Futures Trading?", level: 2 },
-        { id: "leverage-margin", title: "Understanding Leverage and Margin", level: 2 },
-        { id: "perpetual-vs-dated", title: "Perpetual vs Dated Futures", level: 2 },
-        { id: "risks", title: "Risks of Futures Trading", level: 2 },
-        { id: "which-to-choose", title: "Which Market Should You Choose?", level: 2 },
+        { id: "spot-trading", title: "spot-trading", level: 2 },
+        { id: "what-is-spot-trading", title: "What Is Spot Trading?", level: 2 },
+        { id: "futures-trading", title: "futures-trading", level: 2 },
+        { id: "what-is-futures-trading", title: "What Is Futures Trading?", level: 2 },
+        { id: "leverage-margin", title: "leverage-margin", level: 2 },
+        { id: "understanding-leverage-and-margin", title: "Understanding Leverage and Margin", level: 2 },
+        { id: "perpetual-vs-dated", title: "perpetual-vs-dated", level: 2 },
+        { id: "perpetual-vs-dated-futures", title: "Perpetual vs Dated Futures", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-futures-trading", title: "Risks of Futures Trading", level: 2 },
+        { id: "which-to-choose", title: "which-to-choose", level: 2 },
+        { id: "which-market-should-you-choose", title: "Which Market Should You Choose?", level: 2 }
       ]}
       faqs={[
         {

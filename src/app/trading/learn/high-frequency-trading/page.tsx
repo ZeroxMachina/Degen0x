@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `High-Frequency Trading in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `High-Frequency Trading in Crypto (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand high-frequency trading (HFT) in crypto markets. Learn about infrastructure requirements, strategies, and the impact of HFT on market structure.",
 };
@@ -17,10 +17,14 @@ export default function HighFrequencyTradingPage() {
       readTime="9 min read"
       intro="High-frequency trading (HFT) uses ultra-fast algorithms and specialized infrastructure to execute thousands of trades per second. In crypto, HFT firms operate on both centralized exchanges and DeFi protocols, capturing tiny profits per trade that compound into substantial returns at scale. This guide explains how crypto HFT works, the infrastructure required, and its impact on market structure."
       toc={[
-        { id: "what-is-hft", title: "What Is High-Frequency Trading?", level: 2 },
-        { id: "hft-strategies", title: "HFT Strategies in Crypto", level: 2 },
-        { id: "infrastructure", title: "Infrastructure Requirements", level: 2 },
-        { id: "impact-controversy", title: "Impact and Controversy", level: 2 },
+        { id: "what-is-hft", title: "what-is-hft", level: 2 },
+        { id: "what-is-high-frequency-trading", title: "What Is High-Frequency Trading?", level: 2 },
+        { id: "hft-strategies", title: "hft-strategies", level: 2 },
+        { id: "hft-strategies-in-crypto", title: "HFT Strategies in Crypto", level: 2 },
+        { id: "infrastructure", title: "infrastructure", level: 2 },
+        { id: "infrastructure-requirements", title: "Infrastructure Requirements", level: 2 },
+        { id: "impact-controversy", title: "impact-controversy", level: 2 },
+        { id: "impact-and-controversy", title: "Impact and Controversy", level: 2 }
       ]}
       faqs={[
         { question: "Can retail traders compete with HFT firms?", answer: "Not on speed. Retail traders cannot match the infrastructure and latency advantages of professional HFT firms. However, retail traders can succeed with strategies that operate on longer timeframes where speed is less important, or by providing liquidity in markets too small for HFT firms to target profitably." },

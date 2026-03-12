@@ -44,7 +44,7 @@ export default function ExodusVsTrustWalletPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Exodus vs Trust Wallet: Which Multi-Chain Wallet Wins in {CURRENT_YEAR}?</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Exodus vs Trust Wallet: Which Multi-Chain Wallet Wins in {CURRENT_YEAR}?</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           Exodus and Trust Wallet are two of the most popular multi-chain software wallets. We compare their
           design, chain support, features, and mobile experience side by side.
@@ -100,12 +100,12 @@ export default function ExodusVsTrustWalletPage() {
         <h2 id="verdict">Our Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose Exodus if:</strong> You want the best-looking wallet with
+            <strong className="text-[var(--color-text)]">Choose Exodus if:</strong> You want the best-looking wallet with
             excellent desktop support, portfolio analytics, and Trezor integration. Ideal for beginners and users
             who value design.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose Trust Wallet if:</strong> You need broad multi-chain support,
+            <strong className="text-[var(--color-text)]">Choose Trust Wallet if:</strong> You need broad multi-chain support,
             a built-in dApp browser, and access to 100+ blockchains. Ideal for mobile-first users exploring
             diverse crypto ecosystems.
           </p>
@@ -116,11 +116,11 @@ export default function ExodusVsTrustWalletPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/reviews/exodus" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Review</span>
-            <h3 className="font-semibold text-white text-sm">Exodus Full Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Exodus Full Review</h3>
           </Link>
           <Link href="/wallets/reviews/trust-wallet" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Review</span>
-            <h3 className="font-semibold text-white text-sm">Trust Wallet Full Review</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Trust Wallet Full Review</h3>
           </Link>
         </div>
       </section>

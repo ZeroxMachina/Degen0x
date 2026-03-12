@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Real World Asset Lending in DeFi (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Real World Asset Lending in DeFi (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to Real World Asset (RWA) lending in DeFi. Learn how tokenized real-world assets are used in lending protocols, yields, and risks.",
 };
 
@@ -11,7 +11,16 @@ export default function RealWorldAssetLendingPage() {
   return (
     <LearnPageLayout title="Real World Asset Lending in DeFi" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="9 min read"
       intro="Real World Asset (RWA) lending bridges traditional finance and DeFi by bringing tokenized versions of traditional assets like US Treasuries, corporate bonds, real estate, and invoices into DeFi lending protocols. This trend has grown significantly as protocols seek sustainable yield sources beyond crypto-native activities. RWA lending provides DeFi users access to traditional finance yields while offering traditional asset holders access to DeFi liquidity."
-      toc={[{ id: "what-are-rwas", title: "What Are RWAs in DeFi?", level: 2 }, { id: "protocols-platforms", title: "RWA Lending Protocols", level: 2 }, { id: "yields-benefits", title: "Yields and Benefits", level: 2 }, { id: "risks-challenges", title: "Risks and Challenges", level: 2 }]}
+      toc={[
+        { id: "what-are-rwas", title: "what-are-rwas", level: 2 },
+        { id: "what-are-rwas-in-defi", title: "What Are RWAs in DeFi?", level: 2 },
+        { id: "protocols-platforms", title: "protocols-platforms", level: 2 },
+        { id: "rwa-lending-protocols", title: "RWA Lending Protocols", level: 2 },
+        { id: "yields-benefits", title: "yields-benefits", level: 2 },
+        { id: "yields-and-benefits", title: "Yields and Benefits", level: 2 },
+        { id: "risks-challenges", title: "risks-challenges", level: 2 },
+        { id: "risks-and-challenges", title: "Risks and Challenges", level: 2 }
+      ]}
       faqs={[
         { question: "What are tokenized RWAs?", answer: "Tokenized Real World Assets are blockchain tokens that represent ownership or exposure to traditional financial assets. Examples include tokenized US Treasury bills, corporate bonds, real estate, invoices, and carbon credits. These tokens can be used in DeFi protocols for lending, trading, and collateral." },
         { question: "How does RWA lending generate yield?", answer: "RWA lending yield comes from the underlying traditional asset. For tokenized Treasuries, the yield comes from US government interest payments. For real estate RWAs, yield comes from rental income. These are sustainable yield sources backed by real economic activity rather than token incentives." },

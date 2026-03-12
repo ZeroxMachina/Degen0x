@@ -17,10 +17,14 @@ export default function StablecoinBorrowingGuidePage() {
       readTime="8 min"
       intro="Borrowing stablecoins against crypto collateral is the most common crypto loan use case, providing dollar-denominated liquidity without selling your crypto holdings. Whether you choose USDC, USDT, DAI, or protocol-native stablecoins, understanding the options, rate differences, and risk considerations helps you make the best borrowing decision."
       toc={[
+        { id: "stablecoin-options", title: "stablecoin-options", level: 2 },
         { id: "stablecoin-options", title: "Stablecoin Options", level: 2 },
-        { id: "rate-comparison", title: "Borrowing Rate Comparison", level: 2 },
-        { id: "protocol-stablecoins", title: "Protocol-Native Stablecoins", level: 2 },
-        { id: "choosing-stablecoin", title: "Choosing the Right Stablecoin", level: 2 },
+        { id: "rate-comparison", title: "rate-comparison", level: 2 },
+        { id: "borrowing-rate-comparison", title: "Borrowing Rate Comparison", level: 2 },
+        { id: "protocol-stablecoins", title: "protocol-stablecoins", level: 2 },
+        { id: "protocol-native-stablecoins", title: "Protocol-Native Stablecoins", level: 2 },
+        { id: "choosing-stablecoin", title: "choosing-stablecoin", level: 2 },
+        { id: "choosing-the-right-stablecoin", title: "Choosing the Right Stablecoin", level: 2 }
       ]}
       faqs={[
         { question: "Which stablecoin is safest to borrow?", answer: "USDC is generally considered the safest choice due to Circle's transparency, regular attestations, and regulatory compliance. DAI offers decentralized backing but is more complex. USDT has the deepest liquidity but less transparency. The safest choice depends on your specific use case and risk priorities." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Manta Network (MANTA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Manta Network (MANTA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Manta Network (MANTA), the modular blockchain for zero-knowledge applications. Discover how it works, tokenomics, use cases, and how to buy MANTA.",
 };
@@ -17,12 +17,18 @@ export default function MantaPage() {
       readTime="8 min read"
       intro="Manta Network is a modular blockchain ecosystem focused on zero-knowledge (ZK) applications, consisting of Manta Pacific (an Ethereum Layer 2 for ZK app deployment) and Manta Atlantic (a Polkadot-based chain). Manta Pacific provides developers with tools to build ZK-enabled applications without needing deep ZK expertise, using Universal Circuits for simplified zero-knowledge proof integration."
       toc={[
-        { id: "what-is", title: "What Is Manta Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Manta Network Work?", level: 2 },
-        { id: "tokenomics", title: "MANTA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MANTA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-manta-network", title: "What Is Manta Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-manta-network-work", title: "How Does Manta Network Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "manta-tokenomics", title: "MANTA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-manta", title: "How to Buy MANTA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -17,11 +17,16 @@ export default function LiquidityMiningExplainedPage() {
       readTime="9 min"
       intro="Liquidity mining is the practice of distributing protocol tokens to users who provide liquidity or use a DeFi platform. Pioneered by Compound in 2020 with COMP distribution, it became the primary mechanism for bootstrapping DeFi protocol adoption. Understanding how liquidity mining programs work, how to evaluate them, and their long-term sustainability is crucial for any DeFi participant looking to maximize returns."
       toc={[
+        { id: "what-is-liquidity-mining", title: "what-is-liquidity-mining", level: 2 },
         { id: "what-is-liquidity-mining", title: "What Is Liquidity Mining", level: 2 },
+        { id: "how-rewards-work", title: "how-rewards-work", level: 2 },
         { id: "how-rewards-work", title: "How Rewards Work", level: 2 },
-        { id: "evaluating-programs", title: "Evaluating Mining Programs", level: 2 },
-        { id: "sustainability", title: "Sustainability Concerns", level: 2 },
-        { id: "points-meta", title: "The Points Meta", level: 2 },
+        { id: "evaluating-programs", title: "evaluating-programs", level: 2 },
+        { id: "evaluating-mining-programs", title: "Evaluating Mining Programs", level: 2 },
+        { id: "sustainability", title: "sustainability", level: 2 },
+        { id: "sustainability-concerns", title: "Sustainability Concerns", level: 2 },
+        { id: "points-meta", title: "points-meta", level: 2 },
+        { id: "the-points-meta", title: "The Points Meta", level: 2 }
       ]}
       faqs={[
         { question: "Is liquidity mining the same as yield farming?", answer: "Liquidity mining is a subset of yield farming. Yield farming encompasses all strategies to maximize DeFi returns, including lending, LP provision, and staking. Liquidity mining specifically refers to earning protocol tokens as rewards for providing liquidity or using a platform." },

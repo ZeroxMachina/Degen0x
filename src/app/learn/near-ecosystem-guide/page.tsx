@@ -17,11 +17,16 @@ export default function NearEcosystemGuidePage() {
       readTime="8 min"
       intro="NEAR Protocol is a high-performance Layer 1 blockchain focused on usability and chain abstraction. With human-readable account names, gasless transactions, and the vision of making multi-chain interactions invisible to users, NEAR aims to make blockchain technology accessible to mainstream audiences. The protocol has also positioned itself at the forefront of AI and blockchain convergence."
       toc={[
-        { id: "overview", title: "NEAR Overview", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "near-overview", title: "NEAR Overview", level: 2 },
+        { id: "technology", title: "technology", level: 2 },
         { id: "technology", title: "Technology", level: 2 },
+        { id: "chain-abstraction", title: "chain-abstraction", level: 2 },
         { id: "chain-abstraction", title: "Chain Abstraction", level: 2 },
-        { id: "ecosystem", title: "Key Projects", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
+        { id: "key-projects", title: "Key Projects", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What makes NEAR different?", answer: "NEAR focuses on user experience with human-readable account names, built-in account recovery, and gasless transactions through meta-transactions. Its sharding architecture (Nightshade) enables horizontal scaling, and its chain abstraction vision aims to make multi-chain interactions seamless." },

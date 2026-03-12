@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Market Depth? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Market Depth? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what market depth means, how to read depth charts, why depth matters for trading, and how to use market depth data in your trading decisions.",
 };
 
@@ -11,7 +11,16 @@ export default function MarketDepthPage() {
   return (
     <LearnPageLayout title="What Is Market Depth?" categoryName="Learn Crypto" categorySlug="learn" readTime="4 min read"
       intro="Market depth is a measure of the volume of buy and sell orders at various price levels in an order book. It shows how much liquidity is available at each price point and indicates how much buying or selling pressure is needed to move the price. Deep markets can absorb large orders with minimal price impact, while shallow markets experience significant slippage from even moderate-sized trades."
-      toc={[{ id: "definition", title: "What Is Market Depth?", level: 2 }, { id: "reading-depth-charts", title: "Reading Depth Charts", level: 2 }, { id: "depth-and-trading", title: "Why Depth Matters for Trading", level: 2 }, { id: "depth-limitations", title: "Limitations of Depth Data", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-market-depth", title: "What Is Market Depth?", level: 2 },
+        { id: "reading-depth-charts", title: "reading-depth-charts", level: 2 },
+        { id: "reading-depth-charts", title: "Reading Depth Charts", level: 2 },
+        { id: "depth-and-trading", title: "depth-and-trading", level: 2 },
+        { id: "why-depth-matters-for-trading", title: "Why Depth Matters for Trading", level: 2 },
+        { id: "depth-limitations", title: "depth-limitations", level: 2 },
+        { id: "limitations-of-depth-data", title: "Limitations of Depth Data", level: 2 }
+      ]}
       faqs={[{ question: "What does a depth chart show?", answer: "A depth chart displays cumulative buy orders (green, left side) and sell orders (red, right side) plotted against price. The steeper the curve, the more orders are concentrated near the current price. A wide gap between curves indicates a wide spread. Large steps in the curve indicate significant orders (walls) at specific price levels." },
         { question: "Can market depth predict price movements?", answer: "Market depth provides clues but is not a reliable predictor. Large buy walls may suggest support, but they can be pulled (removed) instantly. Depth is most useful for understanding likely slippage on your trades and identifying potential areas of strong supply or demand. Combine depth analysis with volume and price action for better insights." }]}
       relatedArticles={[{ title: "Order Book", href: "/learn/glossary/order-book", category: "Glossary" }, { title: "Spread", href: "/learn/glossary/spread", category: "Glossary" }, { title: "Volume", href: "/learn/glossary/volume", category: "Glossary" }, { title: "Whale", href: "/learn/glossary/whale", category: "Glossary" }]}

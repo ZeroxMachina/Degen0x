@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Frax Share (FXS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Frax Share (FXS)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Frax Share (FXS), the governance and value accrual token of the Frax ecosystem. Discover FXS tokenomics, staking, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function FraxSharePage() {
       readTime="8 min read"
       intro="Frax Share (FXS) is the governance and value accrual token of the Frax Finance ecosystem. FXS captures revenue generated across the entire Frax ecosystem including the FRAX stablecoin, frxETH liquid staking, Frax Lend, and the Fraxtal Layer 2. veFXS holders govern the protocol and receive protocol revenue distributions."
       toc={[
-        { id: "what-is", title: "What Is Frax Share?", level: 2 },
-        { id: "how-it-works", title: "How Does Frax Share Work?", level: 2 },
-        { id: "tokenomics", title: "FXS Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy FXS", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-frax-share", title: "What Is Frax Share?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-frax-share-work", title: "How Does Frax Share Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "fxs-tokenomics", title: "FXS Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-fxs", title: "How to Buy FXS", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Frax Share?", answer: "FXS is the governance and value accrual token of the Frax ecosystem. It captures revenue from FRAX stablecoin operations, frxETH liquid staking, lending activities, and the Fraxtal L2 chain." },

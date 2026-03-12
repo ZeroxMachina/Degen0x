@@ -10,7 +10,7 @@ const product = {
   pros: ["Low Avalanche gas fees", "Integrated liquid staking (sAVAX)", "Strong Avalanche ecosystem integration", "Clean, intuitive interface"],
   cons: ["Avalanche-only", "Smaller TVL than Ethereum protocols", "Fewer supported assets", "Less battle-tested than Aave/Compound"],
   bestFor: "Avalanche users seeking DeFi lending with low fees and native liquid staking integration",
-  affiliateUrl: "https://cryptodegen.com/go/benqi",
+  affiliateUrl: "https://degen0x.com/go/benqi",
   category: "crypto-loans",
 };
 

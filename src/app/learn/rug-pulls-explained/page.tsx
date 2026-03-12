@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Rug Pulls Explained: How to Spot and Avoid Them (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Rug Pulls Explained: How to Spot and Avoid Them (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what rug pulls are in crypto, the different types of rug pulls, warning signs to watch for, tools to detect them, and how to protect your investments from fraudulent projects.",
 };
@@ -17,10 +17,14 @@ export default function RugPullsExplainedPage() {
       readTime="8 min read"
       intro="A rug pull is a type of cryptocurrency scam where developers create a token or project, attract investor funds, and then withdraw or steal those funds, leaving investors with worthless assets. The term comes from the expression 'pulling the rug out from under someone.' Rug pulls have become one of the most common scams in DeFi, particularly affecting investors who chase newly launched tokens without conducting proper due diligence."
       toc={[
-        { id: "types", title: "Types of Rug Pulls", level: 2 },
-        { id: "warning-signs", title: "Warning Signs of a Rug Pull", level: 2 },
-        { id: "detection-tools", title: "Tools for Detecting Rug Pulls", level: 2 },
-        { id: "protection", title: "How to Protect Yourself", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-rug-pulls", title: "Types of Rug Pulls", level: 2 },
+        { id: "warning-signs", title: "warning-signs", level: 2 },
+        { id: "warning-signs-of-a-rug-pull", title: "Warning Signs of a Rug Pull", level: 2 },
+        { id: "detection-tools", title: "detection-tools", level: 2 },
+        { id: "tools-for-detecting-rug-pulls", title: "Tools for Detecting Rug Pulls", level: 2 },
+        { id: "protection", title: "protection", level: 2 },
+        { id: "how-to-protect-yourself", title: "How to Protect Yourself", level: 2 }
       ]}
       faqs={[
         {

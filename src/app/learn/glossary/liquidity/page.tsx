@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Liquidity? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Liquidity? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what liquidity means in crypto markets, why it matters, and how it affects trading and price stability.",
 };
@@ -17,11 +17,16 @@ export default function LiquidityPage() {
       readTime="5 min"
       intro="Liquidity refers to how easily an asset can be bought or sold without significantly affecting its price. High liquidity means large trades can be executed quickly with minimal price impact. Low liquidity means even small trades can cause large price swings. In crypto, liquidity varies dramatically between assets and venues, making it one of the most important factors in trading and investing."
       toc={[
-        { id: "definition", title: "What Is Liquidity?", level: 2 },
-        { id: "measuring", title: "Measuring Liquidity", level: 2 },
-        { id: "sources", title: "Sources of Liquidity", level: 2 },
-        { id: "impact", title: "Impact on Trading", level: 2 },
-        { id: "why-it-matters", title: "Why Liquidity Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-liquidity", title: "What Is Liquidity?", level: 2 },
+        { id: "measuring", title: "measuring", level: 2 },
+        { id: "measuring-liquidity", title: "Measuring Liquidity", level: 2 },
+        { id: "sources", title: "sources", level: 2 },
+        { id: "sources-of-liquidity", title: "Sources of Liquidity", level: 2 },
+        { id: "impact", title: "impact", level: 2 },
+        { id: "impact-on-trading", title: "Impact on Trading", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-liquidity-matters", title: "Why Liquidity Matters", level: 2 }
       ]}
       faqs={[
         {

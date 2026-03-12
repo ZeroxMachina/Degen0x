@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Off-Chain? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Off-Chain? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what off-chain means, how off-chain activity relates to blockchain, and why it matters for scalability and privacy.",
 };
@@ -17,11 +17,16 @@ export default function OffChainPage() {
       readTime="4 min"
       intro="Off-chain refers to any activity, data, or transaction that occurs outside of the main blockchain. Off-chain processes can include everything from Layer 2 transaction execution to storing NFT metadata on IPFS to performing computations that are later settled on-chain. Off-chain solutions are essential for scaling blockchain technology beyond its inherent throughput limitations while maintaining security through periodic on-chain settlement."
       toc={[
-        { id: "definition", title: "What Is Off-Chain?", level: 2 },
-        { id: "examples", title: "Examples of Off-Chain Activity", level: 2 },
-        { id: "off-vs-on", title: "Off-Chain vs On-Chain", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-off-chain", title: "What Is Off-Chain?", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "examples-of-off-chain-activity", title: "Examples of Off-Chain Activity", level: 2 },
+        { id: "off-vs-on", title: "off-vs-on", level: 2 },
+        { id: "off-chain-vs-on-chain", title: "Off-Chain vs On-Chain", level: 2 },
+        { id: "trade-offs", title: "trade-offs", level: 2 },
         { id: "trade-offs", title: "Trade-Offs", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

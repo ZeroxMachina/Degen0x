@@ -17,12 +17,18 @@ export default function NftTaxGuidePage() {
       readTime="13 min"
       intro="NFT transactions create tax obligations that many collectors overlook until filing season. In the United States, the IRS treats NFTs as property, meaning buying, selling, trading, and even creating NFTs can trigger taxable events. Understanding these rules before they become a problem is essential for any active NFT participant. This guide covers the tax implications of common NFT activities and strategies for proper reporting."
       toc={[
-        { id: "tax-basics", title: "NFT Tax Basics", level: 2 },
-        { id: "taxable-events", title: "What Triggers a Taxable Event", level: 2 },
-        { id: "calculating-gains", title: "Calculating Gains and Losses", level: 2 },
-        { id: "creator-taxes", title: "Tax Rules for NFT Creators", level: 2 },
-        { id: "record-keeping", title: "Record Keeping Requirements", level: 2 },
-        { id: "tax-strategies", title: "Tax Optimization Strategies", level: 2 },
+        { id: "tax-basics", title: "tax-basics", level: 2 },
+        { id: "nft-tax-basics", title: "NFT Tax Basics", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
+        { id: "what-triggers-a-taxable-event", title: "What Triggers a Taxable Event", level: 2 },
+        { id: "calculating-gains", title: "calculating-gains", level: 2 },
+        { id: "calculating-gains-and-losses", title: "Calculating Gains and Losses", level: 2 },
+        { id: "creator-taxes", title: "creator-taxes", level: 2 },
+        { id: "tax-rules-for-nft-creators", title: "Tax Rules for NFT Creators", level: 2 },
+        { id: "record-keeping", title: "record-keeping", level: 2 },
+        { id: "record-keeping-requirements", title: "Record Keeping Requirements", level: 2 },
+        { id: "tax-strategies", title: "tax-strategies", level: 2 },
+        { id: "tax-optimization-strategies", title: "Tax Optimization Strategies", level: 2 }
       ]}
       faqs={[
         {

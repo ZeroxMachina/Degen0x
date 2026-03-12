@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is the Metaverse? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is the Metaverse? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what the metaverse is, how blockchain and crypto relate to virtual worlds, and the current state of metaverse development.",
 };
@@ -17,11 +17,16 @@ export default function MetaversePage() {
       readTime="5 min"
       intro="The metaverse refers to persistent, shared virtual worlds where users can interact, socialize, work, and transact. In the crypto context, the metaverse specifically involves blockchain-based virtual environments where digital assets (land, items, avatars) are represented as NFTs and in-game currencies are tokens. Projects like Decentraland and The Sandbox aim to create decentralized, user-owned virtual worlds."
       toc={[
-        { id: "definition", title: "What Is the Metaverse?", level: 2 },
-        { id: "crypto-metaverse", title: "The Crypto Metaverse", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-the-metaverse", title: "What Is the Metaverse?", level: 2 },
+        { id: "crypto-metaverse", title: "crypto-metaverse", level: 2 },
+        { id: "the-crypto-metaverse", title: "The Crypto Metaverse", level: 2 },
+        { id: "key-projects", title: "key-projects", level: 2 },
         { id: "key-projects", title: "Key Projects", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
         { id: "challenges", title: "Challenges", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

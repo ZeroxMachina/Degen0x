@@ -24,13 +24,20 @@ export default function HowToBuyCryptoUSAPage() {
       readTime="14 min"
       intro="The United States is one of the most regulated cryptocurrency markets in the world, but buying crypto as an American is straightforward once you understand the process. This guide covers everything US residents need to know: which exchanges are available, how to fund your account with USD, what identity verification involves, tax obligations, and state-specific considerations."
       toc={[
-        { id: "us-exchanges", title: "Choosing a US-Licensed Exchange", level: 2 },
-        { id: "kyc-verification", title: "Identity Verification (KYC) in the US", level: 2 },
-        { id: "funding-methods", title: "Depositing USD: ACH, Wire, and Cards", level: 2 },
-        { id: "buying-process", title: "Placing Your First Order", level: 2 },
-        { id: "tax-obligations", title: "US Tax Obligations for Crypto", level: 2 },
-        { id: "state-rules", title: "State-Specific Regulations", level: 2 },
-        { id: "security-tips", title: "Securing Your Crypto", level: 2 },
+        { id: "us-exchanges", title: "us-exchanges", level: 2 },
+        { id: "choosing-a-us-licensed-exchange", title: "Choosing a US-Licensed Exchange", level: 2 },
+        { id: "kyc-verification", title: "kyc-verification", level: 2 },
+        { id: "identity-verification-kyc-in-the-us", title: "Identity Verification (KYC) in the US", level: 2 },
+        { id: "funding-methods", title: "funding-methods", level: 2 },
+        { id: "depositing-usd-ach-wire-and-cards", title: "Depositing USD: ACH, Wire, and Cards", level: 2 },
+        { id: "buying-process", title: "buying-process", level: 2 },
+        { id: "placing-your-first-order", title: "Placing Your First Order", level: 2 },
+        { id: "tax-obligations", title: "tax-obligations", level: 2 },
+        { id: "us-tax-obligations-for-crypto", title: "US Tax Obligations for Crypto", level: 2 },
+        { id: "state-rules", title: "state-rules", level: 2 },
+        { id: "state-specific-regulations", title: "State-Specific Regulations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
+        { id: "securing-your-crypto", title: "Securing Your Crypto", level: 2 }
       ]}
       faqs={[
         {

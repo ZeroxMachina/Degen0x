@@ -21,7 +21,7 @@ const products: Product[] = [
     cons: ["10% fee on staking rewards", "Smart contract risk", "stETH can trade at slight discount"],
     fees: "10% of staking rewards",
     bestFor: "Liquid ETH staking for long-term holders",
-    affiliateUrl: "https://cryptodegen.com/go/lido",
+    affiliateUrl: "https://degen0x.com/go/lido",
     category: "long-term",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     cons: ["25-35% commission on rewards", "Lower yields than DeFi options", "Limited unstaking flexibility for some assets"],
     fees: "25-35% commission on staking rewards",
     bestFor: "Simple staking for beginners",
-    affiliateUrl: "https://cryptodegen.com/go/coinbase",
+    affiliateUrl: "https://degen0x.com/go/coinbase",
     category: "long-term",
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     cons: ["Lower liquidity than Lido", "Node operation requires technical skill", "14% commission on liquid staking"],
     fees: "14% of staking rewards (liquid staking)",
     bestFor: "Decentralized ETH staking",
-    affiliateUrl: "https://cryptodegen.com/go/rocket-pool",
+    affiliateUrl: "https://degen0x.com/go/rocket-pool",
     category: "long-term",
   },
 ];
@@ -63,7 +63,7 @@ export default function StakingLongTermPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Staking", href: "/long-term/best/staking-long-term" }]} />
       <AffiliateDisclosure />
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Staking for Long-Term Investors ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Staking for Long-Term Investors ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">Staking turns idle crypto holdings into yield-generating assets. For long-term investors, staking provides a way to earn passive income on tokens you plan to hold for years, with the power of compounding working in your favor over time.</p>
         <p className="text-[var(--color-text-secondary)]">We compared staking platforms and protocols on yield rates, fee structures, liquidity, security, and suitability for multi-year holding periods. The best options let you earn rewards while maintaining flexibility and security.</p>
       </div>

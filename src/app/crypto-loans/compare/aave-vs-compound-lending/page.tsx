@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Aave vs Compound Lending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Aave vs Compound Lending (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare Aave and Compound lending protocols. Detailed analysis of rates, features, supported assets, risk models, and which DeFi lending platform is better for you.",
 };
@@ -17,11 +17,16 @@ export default function AaveVsCompoundLendingPage() {
       readTime="10 min read"
       intro="Aave and Compound are the two pioneering DeFi lending protocols that established the blueprint for decentralized lending. Both allow users to lend and borrow crypto assets through liquidity pools, but they differ in features, risk management, governance, and innovation. Aave has grown to become the larger protocol with features like flash loans, rate switching, and multi-chain deployment, while Compound focuses on simplicity and has evolved with Compound III (Comet) as a more streamlined lending model."
       toc={[
+        { id: "protocol-overview", title: "protocol-overview", level: 2 },
         { id: "protocol-overview", title: "Protocol Overview", level: 2 },
-        { id: "rates-fees", title: "Rates and Fees Comparison", level: 2 },
-        { id: "features", title: "Feature Comparison", level: 2 },
+        { id: "rates-fees", title: "rates-fees", level: 2 },
+        { id: "rates-and-fees-comparison", title: "Rates and Fees Comparison", level: 2 },
+        { id: "features", title: "features", level: 2 },
+        { id: "feature-comparison", title: "Feature Comparison", level: 2 },
+        { id: "risk-models", title: "risk-models", level: 2 },
         { id: "risk-models", title: "Risk Models", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which has higher lending rates, Aave or Compound?", answer: "Rates fluctuate constantly based on supply and demand. Generally, Aave and Compound offer similar base rates for major assets. Aave's larger TVL and multi-chain presence sometimes leads to slightly different rate dynamics. Check current rates on both platforms before depositing." },

@@ -99,14 +99,14 @@ export default function WalletsHubPage() {
             className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover text-center"
           >
             <span className="text-2xl mb-2 block" dangerouslySetInnerHTML={{ __html: item.icon }} />
-            <span className="font-semibold text-white text-sm">{item.label}</span>
+            <span className="font-semibold text-[var(--color-text)] text-sm">{item.label}</span>
           </Link>
         ))}
       </section>
 
       {/* Best-Of Guides */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Best Crypto Wallets by Category</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Crypto Wallets by Category</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {BEST_OF_LINKS.map((link) => (
             <Link
@@ -114,7 +114,7 @@ export default function WalletsHubPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
-              <h3 className="font-semibold text-white mb-1">{link.title}</h3>
+              <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
             </Link>
           ))}
@@ -123,7 +123,7 @@ export default function WalletsHubPage() {
 
       {/* Reviews */}
       <section id="reviews" className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Wallet Reviews</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Reviews</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {REVIEW_LINKS.map((link) => (
             <Link
@@ -131,7 +131,7 @@ export default function WalletsHubPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
-              <h3 className="font-semibold text-white mb-1">{link.title}</h3>
+              <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
             </Link>
           ))}
@@ -140,7 +140,7 @@ export default function WalletsHubPage() {
 
       {/* Comparisons */}
       <section id="comparisons" className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Wallet Comparisons</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Comparisons</h2>
         <div className="grid md:grid-cols-2 gap-4">
           {COMPARISON_LINKS.map((link) => (
             <Link
@@ -148,7 +148,7 @@ export default function WalletsHubPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
-              <h3 className="font-semibold text-white mb-1">{link.title}</h3>
+              <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
             </Link>
           ))}
@@ -157,7 +157,7 @@ export default function WalletsHubPage() {
 
       {/* Guides */}
       <section id="guides" className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Wallet Guides & Education</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Guides & Education</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {LEARN_LINKS.map((link) => (
             <Link
@@ -165,7 +165,7 @@ export default function WalletsHubPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
-              <h3 className="font-semibold text-white mb-1">{link.title}</h3>
+              <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
             </Link>
           ))}
@@ -174,7 +174,7 @@ export default function WalletsHubPage() {
 
       {/* Tools */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Wallet Tools</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Tools</h2>
         <div className="grid md:grid-cols-2 gap-4">
           {TOOL_LINKS.map((link) => (
             <Link
@@ -182,7 +182,7 @@ export default function WalletsHubPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
-              <h3 className="font-semibold text-white mb-1">{link.title}</h3>
+              <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
             </Link>
           ))}
@@ -191,7 +191,7 @@ export default function WalletsHubPage() {
 
       {/* About Section */}
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">About Our Wallet Reviews</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">About Our Wallet Reviews</h2>
         <div className="prose prose-sm prose-invert max-w-none text-[var(--color-text-secondary)]">
           <p className="mb-4">
             At {SITE_NAME}, our team of crypto security experts and daily wallet users rigorously tests

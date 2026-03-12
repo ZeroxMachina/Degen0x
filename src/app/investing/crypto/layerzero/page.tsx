@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is LayerZero (ZRO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is LayerZero (ZRO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about LayerZero (ZRO), the omnichain interoperability protocol. Discover how it works, tokenomics, use cases, and how to buy ZRO.",
 };
@@ -17,12 +17,18 @@ export default function LayerZeroPage() {
       readTime="9 min read"
       intro="LayerZero is an omnichain interoperability protocol that enables lightweight cross-chain messaging between blockchains. By providing a universal messaging layer, LayerZero allows developers to build applications that operate seamlessly across multiple chains, powering a new generation of omnichain dApps and token standards."
       toc={[
-        { id: "what-is", title: "What Is LayerZero?", level: 2 },
-        { id: "how-it-works", title: "How Does LayerZero Work?", level: 2 },
-        { id: "tokenomics", title: "ZRO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ZRO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-layerzero", title: "What Is LayerZero?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-layerzero-work", title: "How Does LayerZero Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "zro-tokenomics", title: "ZRO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-zro", title: "How to Buy ZRO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

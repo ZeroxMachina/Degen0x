@@ -16,10 +16,14 @@ export default function PolandExchangesPage() {
       readTime="9 min"
       intro="Poland has a thriving crypto community within the EU framework. With MiCA regulation providing clarity, strong PLN payment infrastructure including BLIK, and access to both local and global exchanges, Polish traders enjoy a favorable environment for cryptocurrency trading."
       toc={[
-        { id: "regulation", title: "Regulation & MiCA Framework", level: 2 },
-        { id: "top-exchanges", title: "Best Exchanges for Polish Users", level: 2 },
-        { id: "payment-methods", title: "PLN Payment Methods & BLIK", level: 2 },
-        { id: "taxes", title: "Crypto Tax in Poland", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "regulation-mica-framework", title: "Regulation & MiCA Framework", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "best-exchanges-for-polish-users", title: "Best Exchanges for Polish Users", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "pln-payment-methods-blik", title: "PLN Payment Methods & BLIK", level: 2 },
+        { id: "taxes", title: "taxes", level: 2 },
+        { id: "crypto-tax-in-poland", title: "Crypto Tax in Poland", level: 2 }
       ]}
       faqs={[
         {

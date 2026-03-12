@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Trading Bots: Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Trading Bots: Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Everything you need to know about crypto trading bots. Compare bot types, platforms, strategies, and learn how to choose and configure the right bot.",
 };
@@ -17,10 +17,14 @@ export default function TradingBotsGuidePage() {
       readTime="10 min read"
       intro="Crypto trading bots automate the buying and selling of digital assets based on predefined strategies. From simple DCA bots to complex arbitrage systems, trading bots allow you to trade 24/7 without constant monitoring. This guide covers the different types of trading bots, how to choose the right platform, and best practices for bot trading."
       toc={[
+        { id: "what-are-trading-bots", title: "what-are-trading-bots", level: 2 },
         { id: "what-are-trading-bots", title: "What Are Trading Bots?", level: 2 },
-        { id: "types-of-bots", title: "Types of Trading Bots", level: 2 },
-        { id: "choosing-platform", title: "Choosing a Bot Platform", level: 2 },
-        { id: "best-practices", title: "Best Practices for Bot Trading", level: 2 },
+        { id: "types-of-bots", title: "types-of-bots", level: 2 },
+        { id: "types-of-trading-bots", title: "Types of Trading Bots", level: 2 },
+        { id: "choosing-platform", title: "choosing-platform", level: 2 },
+        { id: "choosing-a-bot-platform", title: "Choosing a Bot Platform", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices-for-bot-trading", title: "Best Practices for Bot Trading", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto trading bots profitable?", answer: "Trading bots can be profitable when configured correctly for the right market conditions. However, they are not money-printing machines. Bots execute strategies that still require proper design, testing, and ongoing monitoring. A poorly configured bot can lose money faster than manual trading." },

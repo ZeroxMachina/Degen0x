@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `RSI (Relative Strength Index) Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `RSI (Relative Strength Index) Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what RSI is, how to read overbought and oversold signals, RSI divergence, and practical strategies for using RSI in crypto trading.",
 };
 
@@ -16,10 +16,14 @@ export default function RSIPage() {
       readTime="7 min read"
       intro="The Relative Strength Index (RSI) is a momentum oscillator that measures the speed and magnitude of recent price changes to evaluate whether an asset is overbought or oversold. RSI oscillates between 0 and 100, with readings above 70 suggesting overbought conditions and below 30 indicating oversold conditions. Developed by J. Welles Wilder Jr., RSI remains one of the most popular and reliable technical indicators for crypto traders."
       toc={[
+        { id: "what-is-rsi", title: "what-is-rsi", level: 2 },
         { id: "what-is-rsi", title: "What Is RSI?", level: 2 },
-        { id: "reading-rsi", title: "Reading RSI Signals", level: 2 },
+        { id: "reading-rsi", title: "reading-rsi", level: 2 },
+        { id: "reading-rsi-signals", title: "Reading RSI Signals", level: 2 },
+        { id: "rsi-divergence", title: "rsi-divergence", level: 2 },
         { id: "rsi-divergence", title: "RSI Divergence", level: 2 },
-        { id: "rsi-strategies", title: "RSI Trading Strategies", level: 2 },
+        { id: "rsi-strategies", title: "rsi-strategies", level: 2 },
+        { id: "rsi-trading-strategies", title: "RSI Trading Strategies", level: 2 }
       ]}
       faqs={[
         { question: "What RSI setting should I use for crypto?", answer: "The default 14-period RSI works well for most timeframes. Shorter periods (7 or 9) make RSI more sensitive and suit day traders. Longer periods (21 or 25) smooth the indicator for swing traders and investors. Adjust the overbought/oversold thresholds to 80/20 in strong trends for fewer but higher-quality signals." },

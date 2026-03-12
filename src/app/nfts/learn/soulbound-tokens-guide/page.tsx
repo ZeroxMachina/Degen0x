@@ -16,10 +16,14 @@ export default function SoulboundTokensGuidePage() {
       readTime="10 min"
       intro="Soulbound tokens are non-transferable NFTs permanently bound to a wallet address, designed to represent identity, credentials, achievements, and reputation in decentralized systems."
       toc={[
-        { id: "section-1", title: "What Are Soulbound Tokens", level: 2 },
-        { id: "section-2", title: "Technical Implementation", level: 2 },
-        { id: "section-3", title: "Use Cases", level: 2 },
-        { id: "section-4", title: "Challenges and Future", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "what-are-soulbound-tokens", title: "What Are Soulbound Tokens", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "technical-implementation", title: "Technical Implementation", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "use-cases", title: "Use Cases", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "challenges-and-future", title: "Challenges and Future", level: 2 }
       ]}
       faqs={[
         { question: "What are soulbound tokens?", answer: "Soulbound tokens (SBTs) are non-transferable NFTs that remain permanently bound to the wallet that received them. They represent credentials, achievements, affiliations, or identity attributes that should not be bought or sold." },

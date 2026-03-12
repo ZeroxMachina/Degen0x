@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Migrate Between Crypto Wallets (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Migrate Between Crypto Wallets (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to safely migrate your crypto between wallets. Step-by-step guide for importing seed phrases, transferring funds, and switching wallet providers.",
 };
 
@@ -11,7 +11,16 @@ export default function WalletMigrationGuidePage() {
   return (
     <LearnPageLayout title="How to Migrate Between Crypto Wallets" categoryName="Crypto Wallets" categorySlug="wallets" readTime="7 min read"
       intro="There are many reasons to migrate between crypto wallets: upgrading to a hardware wallet, switching to a wallet with better features, moving to a different blockchain ecosystem, or consolidating multiple wallets. The migration process varies depending on whether you are importing your existing seed phrase or transferring funds to a completely new wallet. This guide covers both approaches, common pitfalls to avoid, and best practices for a safe migration."
-      toc={[{ id: "migration-methods", title: "Migration Methods", level: 2 }, { id: "seed-phrase-import", title: "Seed Phrase Import", level: 2 }, { id: "fund-transfer", title: "Fund Transfer Method", level: 2 }, { id: "post-migration", title: "Post-Migration Checklist", level: 2 }]}
+      toc={[
+        { id: "migration-methods", title: "migration-methods", level: 2 },
+        { id: "migration-methods", title: "Migration Methods", level: 2 },
+        { id: "seed-phrase-import", title: "seed-phrase-import", level: 2 },
+        { id: "seed-phrase-import", title: "Seed Phrase Import", level: 2 },
+        { id: "fund-transfer", title: "fund-transfer", level: 2 },
+        { id: "fund-transfer-method", title: "Fund Transfer Method", level: 2 },
+        { id: "post-migration", title: "post-migration", level: 2 },
+        { id: "post-migration-checklist", title: "Post-Migration Checklist", level: 2 }
+      ]}
       faqs={[{ question: "Can I use my MetaMask seed phrase in a Ledger?", answer: "Technically yes, you can import a MetaMask seed phrase into a Ledger device. However, this is not recommended because the seed phrase was generated on an internet-connected device (your browser), meaning it may have been exposed to malware. The security benefit of a hardware wallet comes from keys that have never been online. Generate a fresh seed phrase on the Ledger and transfer your funds to the new address instead." },
         { question: "Will I lose my transaction history when migrating?", answer: "If you import your seed phrase into a new wallet, your full on-chain transaction history remains accessible since it lives on the blockchain. If you transfer funds to a new address, the old address retains its history and the new address starts fresh. Some wallet features like labels, notes, and address book entries may not transfer between different wallet software and must be manually recreated." },
         { question: "How do I handle NFTs during migration?", answer: "NFTs are transferred like any other token. If importing your seed phrase, NFTs appear automatically in the new wallet (assuming it supports the NFT standard). If transferring to a new address, send each NFT individually. Be aware of gas costs, as each NFT transfer is a separate transaction. For large collections, batch transfer tools can help, but verify them thoroughly before granting approval." }]}

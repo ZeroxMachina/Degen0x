@@ -110,7 +110,7 @@ export default function LaunchpadsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Token Launchpads ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -128,16 +128,16 @@ export default function LaunchpadsPage() {
           historical performance.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Fjord Foundry</strong> leads our rankings with its
+          <strong className="text-[var(--color-text)]">Fjord Foundry</strong> leads our rankings with its
           fair price discovery model using Liquidity Bootstrapping Pools.{" "}
-          <strong className="text-white">DAO Maker</strong> remains the top curated IDO platform
-          for vetted projects, while <strong className="text-white">Pinksale</strong> offers
+          <strong className="text-[var(--color-text)]">DAO Maker</strong> remains the top curated IDO platform
+          for vetted projects, while <strong className="text-[var(--color-text)]">Pinksale</strong> offers
           the most accessible permissionless launch experience for community-driven tokens.
         </p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Launchpads</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Launchpads</h2>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -151,7 +151,7 @@ export default function LaunchpadsPage() {
       </section>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">How We Evaluated Launchpads</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Evaluated Launchpads</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           We analyzed each platform by reviewing historical launch data, testing the launch
           creation process, evaluating smart contract security, and interviewing teams who
@@ -167,7 +167,7 @@ export default function LaunchpadsPage() {
             { title: "Project Support (10%)", desc: "Vetting rigor, incubation services, marketing support, and post-launch assistance for projects." },
           ].map((item) => (
             <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-              <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+              <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
             </div>
           ))}

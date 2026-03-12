@@ -48,7 +48,7 @@ export default function MobileAppPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchange Mobile Apps ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -65,18 +65,18 @@ export default function MobileAppPage() {
           major exchange on both iOS and Android, evaluating design, performance, features,
           and reliability.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">What We Tested</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">What We Tested</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
           <div className="rounded-lg border border-[var(--color-border)] p-4">
-            <h3 className="text-white font-semibold mb-2">Design & UX</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Design & UX</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Interface clarity, navigation, onboarding flow, and overall user experience quality.</p>
           </div>
           <div className="rounded-lg border border-[var(--color-border)] p-4">
-            <h3 className="text-white font-semibold mb-2">Performance</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Performance</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">App speed, load times, real-time price updates, and execution reliability under load.</p>
           </div>
           <div className="rounded-lg border border-[var(--color-border)] p-4">
-            <h3 className="text-white font-semibold mb-2">Features</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Features</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Charting tools, order types, portfolio tracking, price alerts, and biometric security.</p>
           </div>
         </div>

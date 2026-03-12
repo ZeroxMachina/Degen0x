@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Market Cap? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Market Cap? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what market capitalization means in crypto, how it is calculated, and why it is the primary metric for comparing cryptocurrencies.",
 };
@@ -17,11 +17,16 @@ export default function MarketCapPage() {
       readTime="5 min"
       intro="Market capitalization (market cap) is the total value of a cryptocurrency, calculated by multiplying the current price by the circulating supply. It is the most widely used metric for ranking and comparing cryptocurrencies. Market cap provides a quick sense of a project's relative size and market position, though it has important limitations that investors should understand."
       toc={[
-        { id: "definition", title: "What Is Market Cap?", level: 2 },
-        { id: "calculation", title: "How Market Cap Is Calculated", level: 2 },
-        { id: "categories", title: "Market Cap Categories", level: 2 },
-        { id: "limitations", title: "Limitations of Market Cap", level: 2 },
-        { id: "why-it-matters", title: "Why Market Cap Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-market-cap", title: "What Is Market Cap?", level: 2 },
+        { id: "calculation", title: "calculation", level: 2 },
+        { id: "how-market-cap-is-calculated", title: "How Market Cap Is Calculated", level: 2 },
+        { id: "categories", title: "categories", level: 2 },
+        { id: "market-cap-categories", title: "Market Cap Categories", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-of-market-cap", title: "Limitations of Market Cap", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-market-cap-matters", title: "Why Market Cap Matters", level: 2 }
       ]}
       faqs={[
         {

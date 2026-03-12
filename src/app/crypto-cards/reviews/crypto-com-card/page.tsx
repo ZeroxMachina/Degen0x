@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto.com Visa Card Review (${CURRENT_YEAR}): Cashback, Tiers & Pros/Cons | CryptoDegen`,
+  title: `Crypto.com Visa Card Review (${CURRENT_YEAR}): Cashback, Tiers & Pros/Cons | degen0x`,
   description: "In-depth Crypto.com Visa card review covering tiered cashback rewards, CRO staking requirements, premium perks, and whether it is worth the investment.",
 };
 
@@ -19,7 +19,7 @@ export default function CryptoComCardReviewPage() {
         cons: ["Best rewards require significant CRO staking ($4,000 to $400,000)", "Cashback paid in CRO which is subject to price volatility", "CRO staking is locked for 180 days", "Reward tiers have been reduced multiple times since launch"],
         fees: "No annual fee; CRO staking required for higher tiers ($400-$400,000)",
         bestFor: "Crypto enthusiasts who want premium perks and high cashback",
-        affiliateUrl: "https://cryptodegen.com/go/crypto-com-visa",
+        affiliateUrl: "https://degen0x.com/go/crypto-com-visa",
         category: "crypto-cards",
       }}
       categoryName="Crypto Cards"

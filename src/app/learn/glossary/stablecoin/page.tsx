@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Stablecoin? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Stablecoin? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what stablecoins are, the different types, and why they have become the backbone of crypto trading and DeFi.",
 };
@@ -17,11 +17,16 @@ export default function StablecoinPage() {
       readTime="6 min"
       intro="A stablecoin is a cryptocurrency designed to maintain a stable value, typically pegged to a fiat currency like the US dollar. Unlike volatile cryptocurrencies, stablecoins aim to hold a consistent $1 value, making them useful for trading, lending, payments, and as a store of value within the crypto ecosystem. USDT (Tether), USDC (Circle), and DAI (MakerDAO) are the most widely used stablecoins."
       toc={[
-        { id: "definition", title: "What Is a Stablecoin?", level: 2 },
-        { id: "types", title: "Types of Stablecoins", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-stablecoin", title: "What Is a Stablecoin?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-stablecoins", title: "Types of Stablecoins", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
         { id: "use-cases", title: "Use Cases", level: 2 },
-        { id: "risks", title: "Risks and De-Pegging", level: 2 },
-        { id: "why-it-matters", title: "Why Stablecoins Matter", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-de-pegging", title: "Risks and De-Pegging", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-stablecoins-matter", title: "Why Stablecoins Matter", level: 2 }
       ]}
       faqs={[
         {

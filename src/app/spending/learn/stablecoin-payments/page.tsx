@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Using Stablecoins for Everyday Payments (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Using Stablecoins for Everyday Payments (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to use USDC, USDT, and other stablecoins for everyday payments. Understand the benefits of price-stable crypto for spending, bills, and transfers.",
 };
 
@@ -16,11 +16,16 @@ export default function StablecoinPaymentsPage() {
       readTime="9 min"
       intro="Stablecoins combine the benefits of cryptocurrency with the price stability of fiat currency, making them ideal for everyday payments. USDC, USDT, and DAI maintain a consistent dollar value while offering the speed, low cost, and global accessibility of blockchain transactions. This guide explains how to use stablecoins for payments, which ones to choose, and where the technology is heading."
       toc={[
+        { id: "what-are-stablecoins", title: "what-are-stablecoins", level: 2 },
         { id: "what-are-stablecoins", title: "What Are Stablecoins", level: 2 },
-        { id: "choosing-stablecoin", title: "Choosing the Right Stablecoin", level: 2 },
-        { id: "payment-methods", title: "Payment Methods with Stablecoins", level: 2 },
-        { id: "advantages", title: "Advantages Over Volatile Crypto", level: 2 },
-        { id: "tax-considerations", title: "Tax and Regulatory Considerations", level: 2 },
+        { id: "choosing-stablecoin", title: "choosing-stablecoin", level: 2 },
+        { id: "choosing-the-right-stablecoin", title: "Choosing the Right Stablecoin", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "payment-methods-with-stablecoins", title: "Payment Methods with Stablecoins", level: 2 },
+        { id: "advantages", title: "advantages", level: 2 },
+        { id: "advantages-over-volatile-crypto", title: "Advantages Over Volatile Crypto", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
+        { id: "tax-and-regulatory-considerations", title: "Tax and Regulatory Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Do I owe taxes when spending stablecoins?", answer: "Technically yes, spending stablecoins is a disposal event. However, since stablecoins maintain a roughly $1 value, capital gains are typically negligible or zero. You should still track transactions for tax reporting, but the practical tax burden of spending stablecoins is minimal compared to volatile cryptocurrencies." },

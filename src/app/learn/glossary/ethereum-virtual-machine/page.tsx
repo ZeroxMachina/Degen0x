@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is the Ethereum Virtual Machine (EVM)? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is the Ethereum Virtual Machine (EVM)? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what the Ethereum Virtual Machine is, how it executes smart contracts, and why EVM compatibility matters across blockchains.",
 };
@@ -17,11 +17,16 @@ export default function EvmPage() {
       readTime="6 min"
       intro="The Ethereum Virtual Machine (EVM) is the runtime environment for smart contracts on Ethereum. It is a sandboxed, Turing-complete virtual machine that executes bytecode compiled from high-level languages like Solidity. Every Ethereum node runs the EVM to process transactions and maintain consistent state across the network. EVM compatibility has become the dominant standard for smart contract platforms."
       toc={[
-        { id: "definition", title: "What Is the EVM?", level: 2 },
-        { id: "how-it-works", title: "How the EVM Works", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-the-evm", title: "What Is the EVM?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-the-evm-works", title: "How the EVM Works", level: 2 },
+        { id: "gas-and-execution", title: "gas-and-execution", level: 2 },
         { id: "gas-and-execution", title: "Gas and Execution", level: 2 },
+        { id: "evm-compatibility", title: "evm-compatibility", level: 2 },
         { id: "evm-compatibility", title: "EVM Compatibility", level: 2 },
-        { id: "why-it-matters", title: "Why the EVM Matters", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-the-evm-matters", title: "Why the EVM Matters", level: 2 }
       ]}
       faqs={[
         {

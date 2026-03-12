@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Flare (FLR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Flare (FLR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Flare (FLR), the blockchain for data with enshrined oracle protocols. Discover how it works, tokenomics, use cases, and how to buy FLR.",
 };
@@ -17,12 +17,18 @@ export default function FlarePage() {
       readTime="8 min read"
       intro="Flare is an EVM-compatible Layer 1 blockchain that uniquely enshrines oracle protocols directly into its consensus layer. Through the Flare Time Series Oracle (FTSO) and State Connector, Flare provides decentralized data feeds and cross-chain state verification as native chain features, enabling smart contracts to access real-world and cross-chain data without relying on third-party oracle providers."
       toc={[
-        { id: "what-is", title: "What Is Flare?", level: 2 },
-        { id: "how-it-works", title: "How Does Flare Work?", level: 2 },
-        { id: "tokenomics", title: "FLR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy FLR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-flare", title: "What Is Flare?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-flare-work", title: "How Does Flare Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "flr-tokenomics", title: "FLR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-flr", title: "How to Buy FLR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

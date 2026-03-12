@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Head and Shoulders Pattern in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Head and Shoulders Pattern in Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what the head and shoulders pattern is, how to identify this reversal pattern, neckline breaks, inverse head and shoulders, and crypto trading strategies.",
 };
 
@@ -16,10 +16,14 @@ export default function HeadAndShouldersPage() {
       readTime="7 min read"
       intro="The head and shoulders is a reversal chart pattern consisting of three peaks: a higher middle peak (head) flanked by two lower peaks (shoulders). It is widely considered one of the most reliable bearish reversal patterns in technical analysis. The inverse head and shoulders, forming at market bottoms, is the bullish counterpart. Both patterns provide clear entry, stop-loss, and target levels, making them favorites among crypto traders."
       toc={[
-        { id: "what-is-hs", title: "What Is Head and Shoulders?", level: 2 },
-        { id: "anatomy", title: "Anatomy of the Pattern", level: 2 },
-        { id: "inverse", title: "Inverse Head and Shoulders", level: 2 },
-        { id: "trading", title: "Trading the Pattern", level: 2 },
+        { id: "what-is-hs", title: "what-is-hs", level: 2 },
+        { id: "what-is-head-and-shoulders", title: "What Is Head and Shoulders?", level: 2 },
+        { id: "anatomy", title: "anatomy", level: 2 },
+        { id: "anatomy-of-the-pattern", title: "Anatomy of the Pattern", level: 2 },
+        { id: "inverse", title: "inverse", level: 2 },
+        { id: "inverse-head-and-shoulders", title: "Inverse Head and Shoulders", level: 2 },
+        { id: "trading", title: "trading", level: 2 },
+        { id: "trading-the-pattern", title: "Trading the Pattern", level: 2 }
       ]}
       faqs={[
         { question: "How reliable is the head and shoulders pattern?", answer: "The head and shoulders is among the most reliable reversal patterns when properly identified and confirmed. Studies suggest a success rate of 70-85% for confirmed patterns with neckline breaks on volume. The pattern is more reliable on higher timeframes and when volume profile matches expectations (declining volume from left shoulder to head to right shoulder)." },

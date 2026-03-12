@@ -17,12 +17,18 @@ export default function BestLeverageExchangesPage() {
       readTime="11 min"
       intro="Leverage trading amplifies both potential profits and losses, allowing traders to control larger positions with less capital. Choosing the right exchange for leveraged trading requires evaluating max leverage, liquidation engines, insurance funds, fees, and risk management tools."
       toc={[
-        { id: "understanding-leverage", title: "Understanding Crypto Leverage", level: 2 },
-        { id: "top-picks", title: "Top Leverage Trading Exchanges", level: 2 },
-        { id: "leverage-comparison", title: "Max Leverage Comparison", level: 2 },
-        { id: "risk-management", title: "Risk Management and Liquidation", level: 2 },
-        { id: "funding-rates", title: "Funding Rates and Costs", level: 2 },
-        { id: "warnings", title: "Leverage Trading Warnings", level: 2 },
+        { id: "understanding-leverage", title: "understanding-leverage", level: 2 },
+        { id: "understanding-crypto-leverage", title: "Understanding Crypto Leverage", level: 2 },
+        { id: "top-picks", title: "top-picks", level: 2 },
+        { id: "top-leverage-trading-exchanges", title: "Top Leverage Trading Exchanges", level: 2 },
+        { id: "leverage-comparison", title: "leverage-comparison", level: 2 },
+        { id: "max-leverage-comparison", title: "Max Leverage Comparison", level: 2 },
+        { id: "risk-management", title: "risk-management", level: 2 },
+        { id: "risk-management-and-liquidation", title: "Risk Management and Liquidation", level: 2 },
+        { id: "funding-rates", title: "funding-rates", level: 2 },
+        { id: "funding-rates-and-costs", title: "Funding Rates and Costs", level: 2 },
+        { id: "warnings", title: "warnings", level: 2 },
+        { id: "leverage-trading-warnings", title: "Leverage Trading Warnings", level: 2 }
       ]}
       faqs={[
         { question: "What is the maximum leverage available for crypto?", answer: "Binance and OKX offer up to 125x leverage on Bitcoin perpetual futures. Bybit offers up to 100x. However, using maximum leverage is extremely risky and not recommended. Most experienced traders use 2-10x." },

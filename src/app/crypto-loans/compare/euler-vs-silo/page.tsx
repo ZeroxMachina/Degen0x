@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Euler vs Silo Finance (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Euler vs Silo Finance (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare Euler Finance and Silo Finance lending protocols. Analysis of isolated lending markets, risk isolation approaches, and which protocol suits your needs.",
 };
@@ -17,10 +17,14 @@ export default function EulerVsSiloPage() {
       readTime="8 min read"
       intro="Euler Finance and Silo Finance both take innovative approaches to risk isolation in DeFi lending. Rather than pooling all assets together like traditional Aave-style protocols, both create isolated or segmented markets that limit contagion risk. Euler V2 introduces a modular vault architecture, while Silo uses isolated lending markets paired through bridge assets. Both represent the next evolution of DeFi lending design."
       toc={[
-        { id: "architecture", title: "Architecture Comparison", level: 2 },
-        { id: "risk-isolation", title: "Risk Isolation Approaches", level: 2 },
-        { id: "features", title: "Features and Capabilities", level: 2 },
-        { id: "security-history", title: "Security and Track Record", level: 2 },
+        { id: "architecture", title: "architecture", level: 2 },
+        { id: "architecture-comparison", title: "Architecture Comparison", level: 2 },
+        { id: "risk-isolation", title: "risk-isolation", level: 2 },
+        { id: "risk-isolation-approaches", title: "Risk Isolation Approaches", level: 2 },
+        { id: "features", title: "features", level: 2 },
+        { id: "features-and-capabilities", title: "Features and Capabilities", level: 2 },
+        { id: "security-history", title: "security-history", level: 2 },
+        { id: "security-and-track-record", title: "Security and Track Record", level: 2 }
       ]}
       faqs={[
         { question: "What happened to Euler V1?", answer: "Euler V1 suffered a devastating flash loan exploit in March 2023, losing approximately $197 million. Remarkably, the attacker returned the funds after negotiations. Euler V2 is a complete redesign with a new architecture that addresses the vulnerabilities of V1. The V2 design focuses on modularity and composability." },

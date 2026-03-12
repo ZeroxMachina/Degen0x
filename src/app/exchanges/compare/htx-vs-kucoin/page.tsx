@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `HTX vs KuCoin (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `HTX vs KuCoin (${CURRENT_YEAR}) | degen0x`,
   description: "Compare HTX vs KuCoin. Fees, coin selection, features, security, and which exchange is better for altcoin trading.",
 };
 
@@ -16,12 +16,18 @@ export default function HTXVsKuCoin() {
       readTime="8 min read"
       intro="HTX (formerly Huobi) and KuCoin are both established exchanges known for extensive altcoin listings. HTX has a longer history but underwent significant changes with its rebrand, while KuCoin has steadily grown its user base with innovative features. This comparison examines their current offerings."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
+        { id: "coin-selection", title: "coin-selection", level: 2 },
         { id: "coin-selection", title: "Coin Selection", level: 2 },
+        { id: "security", title: "security", level: 2 },
         { id: "security", title: "Security", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Is HTX the same as Huobi?", answer: "Yes, HTX was formerly Huobi Global. The exchange rebranded after an ownership change. The platform continues with the same infrastructure under new leadership." },

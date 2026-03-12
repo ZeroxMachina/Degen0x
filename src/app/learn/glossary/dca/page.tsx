@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is DCA? Dollar-Cost Averaging Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is DCA? Dollar-Cost Averaging Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what dollar-cost averaging (DCA) is, how it works for crypto investing, its advantages over lump-sum investing, and how to set up a DCA strategy.",
 };
@@ -17,11 +17,16 @@ export default function DcaPage() {
       readTime="5 min"
       intro="Dollar-cost averaging (DCA) is an investment strategy where you invest a fixed amount of money at regular intervals, regardless of the asset's price. Instead of trying to time the market with a single large purchase, DCA spreads your investment over time, reducing the impact of volatility and emotional decision-making. It is one of the most recommended strategies for crypto investing."
       toc={[
-        { id: "definition", title: "What Is DCA?", level: 2 },
-        { id: "how-it-works", title: "How DCA Works", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-dca", title: "What Is DCA?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-dca-works", title: "How DCA Works", level: 2 },
+        { id: "advantages", title: "advantages", level: 2 },
         { id: "advantages", title: "Advantages", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
         { id: "limitations", title: "Limitations", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         {

@@ -24,12 +24,12 @@ const product: Product = {
   ],
   fees: "5% marketplace fee",
   bestFor: "Digital art collectors & artists",
-  affiliateUrl: "https://cryptodegen.com/go/foundation",
+  affiliateUrl: "https://degen0x.com/go/foundation",
   category: "nfts",
 };
 
 export const metadata: Metadata = {
-  title: `Foundation Review: Premium NFT Art Marketplace (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Foundation Review: Premium NFT Art Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth Foundation review covering its curated art focus, auction system, creator tools, fees, and whether it's the right NFT marketplace for art collectors.",
 };

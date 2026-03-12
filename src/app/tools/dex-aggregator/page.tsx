@@ -77,7 +77,7 @@ export default function DexAggregator() {
   const avgSavings = simulated ? (Math.random() * 0.5 + 0.15).toFixed(2) : '0.23';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white p-6">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-[var(--color-text)] p-6">
       <div className="max-w-7xl mx-auto">
         <Breadcrumb
           items={[
@@ -177,7 +177,7 @@ export default function DexAggregator() {
                 <select
                   value={fromToken}
                   onChange={e => setFromToken(e.target.value)}
-                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-white"
+                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-[var(--color-text)]"
                 >
                   {TOKENS.map(t => (
                     <option key={t} value={t}>{t}</option>
@@ -189,7 +189,7 @@ export default function DexAggregator() {
                 <select
                   value={toToken}
                   onChange={e => setToToken(e.target.value)}
-                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-white"
+                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-[var(--color-text)]"
                 >
                   {availableToTokens.map(t => (
                     <option key={t} value={t}>{t}</option>
@@ -202,7 +202,7 @@ export default function DexAggregator() {
                   type="number"
                   value={amount}
                   onChange={e => setAmount(e.target.value)}
-                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-white"
+                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-[var(--color-text)]"
                   placeholder="1.0"
                   step="0.01"
                 />
@@ -212,7 +212,7 @@ export default function DexAggregator() {
                 <select
                   value={selectedChain}
                   onChange={e => setSelectedChain(e.target.value as Chain)}
-                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-white"
+                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-[var(--color-text)]"
                 >
                   {CHAINS.map(c => (
                     <option key={c} value={c}>{c}</option>
@@ -346,7 +346,7 @@ export default function DexAggregator() {
                     <td className="px-4 py-3 font-medium">{feature.name}</td>
                     {AGGREGATORS.map(agg => (
                       <td key={agg.name} className="px-4 py-3 text-center">
-                        {feature.aggregators[agg.name] ? (
+                        {(feature.aggregators as Record<string, boolean>)[agg.name] ? (
                           <span className="text-green-400 font-bold">✓</span>
                         ) : (
                           <span className="text-slate-500">—</span>
@@ -386,7 +386,7 @@ export default function DexAggregator() {
                       <td className="px-3 py-3 font-semibold text-slate-200 sticky left-0 bg-slate-900/50">{feature.name}</td>
                       {AGGREGATORS.map(agg => (
                         <td key={agg.name} className="px-3 py-3 text-center">
-                          {feature.aggregators[agg.name] ? (
+                          {(feature.aggregators as Record<string, boolean>)[agg.name] ? (
                             <div className="flex justify-center">
                               <div className="w-5 h-5 bg-green-500/20 border border-green-500/50 rounded flex items-center justify-center">
                                 <Check className="w-3 h-3 text-green-400" />
@@ -453,13 +453,13 @@ export default function DexAggregator() {
                       <input
                         type="number"
                         defaultValue="1000"
-                        className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white text-sm"
+                        className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-[var(--color-text)] text-sm"
                         placeholder="1000"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">Network</label>
-                      <select className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white text-sm">
+                      <select className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-[var(--color-text)] text-sm">
                         <option>Ethereum</option>
                         <option>Arbitrum</option>
                         <option>Optimism</option>
@@ -472,7 +472,7 @@ export default function DexAggregator() {
                       <input
                         type="number"
                         defaultValue="45"
-                        className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white text-sm"
+                        className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-[var(--color-text)] text-sm"
                         placeholder="45"
                       />
                     </div>
@@ -555,7 +555,7 @@ export default function DexAggregator() {
                             {j + 1}
                           </div>
                           <div className="flex-1">
-                            <p className="font-medium text-white">{step.token}</p>
+                            <p className="font-medium text-[var(--color-text)]">{step.token}</p>
                             <p className="text-xs text-slate-400">{step.label}</p>
                           </div>
                           <p className="text-sm font-semibold text-green-400">{step.usd}</p>

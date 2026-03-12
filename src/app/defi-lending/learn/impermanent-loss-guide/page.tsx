@@ -17,11 +17,16 @@ export default function ImpermanentLossGuidePage() {
       readTime="10 min"
       intro="Impermanent loss is one of the most important concepts for anyone providing liquidity in DeFi. It represents the difference between holding assets in a liquidity pool versus simply holding them in your wallet. Despite the name, impermanent loss can become very permanent if you withdraw at an unfavorable time. This guide explains the mechanics, calculation, and practical strategies for managing impermanent loss."
       toc={[
-        { id: "what-is-il", title: "What Is Impermanent Loss", level: 2 },
+        { id: "what-is-il", title: "what-is-il", level: 2 },
+        { id: "what-is-impermanent-loss", title: "What Is Impermanent Loss", level: 2 },
+        { id: "how-it-occurs", title: "how-it-occurs", level: 2 },
         { id: "how-it-occurs", title: "How It Occurs", level: 2 },
-        { id: "calculating-il", title: "Calculating Impermanent Loss", level: 2 },
-        { id: "minimizing-il", title: "Minimizing Impermanent Loss", level: 2 },
-        { id: "when-to-provide-liquidity", title: "When to Provide Liquidity", level: 2 },
+        { id: "calculating-il", title: "calculating-il", level: 2 },
+        { id: "calculating-impermanent-loss", title: "Calculating Impermanent Loss", level: 2 },
+        { id: "minimizing-il", title: "minimizing-il", level: 2 },
+        { id: "minimizing-impermanent-loss", title: "Minimizing Impermanent Loss", level: 2 },
+        { id: "when-to-provide-liquidity", title: "when-to-provide-liquidity", level: 2 },
+        { id: "when-to-provide-liquidity", title: "When to Provide Liquidity", level: 2 }
       ]}
       faqs={[
         { question: "Why is it called impermanent?", answer: "It is called impermanent because the loss only becomes realized when you withdraw liquidity. If asset prices return to their original ratio, the impermanent loss disappears. However, in practice, prices rarely return to exact entry ratios, so some degree of loss is common." },

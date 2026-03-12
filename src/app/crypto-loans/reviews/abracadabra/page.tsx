@@ -10,7 +10,7 @@ const product = {
   pros: ["Borrow against yield-bearing assets", "Keep earning yield while borrowing", "Multi-chain deployment", "No repayment schedule"],
   cons: ["MIM stablecoin has depeg risk", "Complex mechanisms for beginners", "SPELL token volatility", "Past security incidents"],
   bestFor: "DeFi users who want to borrow against yield-bearing collateral without interrupting their yield strategies",
-  affiliateUrl: "https://cryptodegen.com/go/abracadabra",
+  affiliateUrl: "https://degen0x.com/go/abracadabra",
   category: "crypto-loans",
 };
 

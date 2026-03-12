@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Withdrawal Guide: Networks and Fees (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Withdrawal Guide: Networks and Fees (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to withdraw crypto from exchanges. Network selection, withdrawal fees, processing times, address formats, and avoiding costly mistakes.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeWithdrawalGuide() {
       readTime="9 min read"
       intro="Withdrawing cryptocurrency from an exchange requires careful attention to network selection, addresses, and fees. Choosing the wrong network or entering an incorrect address can result in permanent loss of funds. This guide walks you through the withdrawal process, explains network differences, and helps you minimize fees while keeping your assets safe."
       toc={[
+        { id: "withdrawal-basics", title: "withdrawal-basics", level: 2 },
         { id: "withdrawal-basics", title: "Withdrawal Basics", level: 2 },
-        { id: "network-selection", title: "Choosing the Right Network", level: 2 },
-        { id: "fees", title: "Understanding Withdrawal Fees", level: 2 },
-        { id: "address-formats", title: "Address Formats and Memo Tags", level: 2 },
+        { id: "network-selection", title: "network-selection", level: 2 },
+        { id: "choosing-the-right-network", title: "Choosing the Right Network", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "understanding-withdrawal-fees", title: "Understanding Withdrawal Fees", level: 2 },
+        { id: "address-formats", title: "address-formats", level: 2 },
+        { id: "address-formats-and-memo-tags", title: "Address Formats and Memo Tags", level: 2 },
+        { id: "processing-times", title: "processing-times", level: 2 },
         { id: "processing-times", title: "Processing Times", level: 2 },
-        { id: "common-mistakes", title: "Common Mistakes to Avoid", level: 2 },
-        { id: "tips", title: "Withdrawal Best Practices", level: 2 },
+        { id: "common-mistakes", title: "common-mistakes", level: 2 },
+        { id: "common-mistakes-to-avoid", title: "Common Mistakes to Avoid", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "withdrawal-best-practices", title: "Withdrawal Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What happens if I send to the wrong network?", answer: "Sending crypto on the wrong network can result in permanent loss. For example, sending ETH via BSC to an address that does not support BSC may make the funds unrecoverable. Some wallets can recover cross-chain sends but this is not guaranteed." },

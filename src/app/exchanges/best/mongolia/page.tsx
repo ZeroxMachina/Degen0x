@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Mongolia (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Mongolia (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges accessible in Mongolia. Find MNT-friendly platforms with P2P support and competitive trading fees.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesMongolia() {
       readTime="7 min read"
       intro="Mongolia has shown growing interest in cryptocurrency, with the Financial Regulatory Commission exploring digital asset frameworks. The country's tech-savvy younger population and increasing internet connectivity have driven crypto adoption. While the local exchange ecosystem is still developing, Mongolian traders access international platforms through P2P and direct deposits."
       toc={[
-        { id: "top-exchanges", title: "Available Exchanges", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "MNT Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "available-exchanges", title: "Available Exchanges", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "mnt-payment-methods", title: "MNT Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Mongolia?", answer: "Mongolia has not banned cryptocurrency. The Financial Regulatory Commission has explored regulatory frameworks for digital assets. Some domestic exchange projects have emerged alongside international platform usage." },

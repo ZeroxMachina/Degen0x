@@ -17,14 +17,22 @@ export default function SonicChainGuidePage() {
       readTime="15 min"
       intro="Sonic Chain represents a significant evolution of the Fantom blockchain, featuring a complete rebrand and technical upgrades targeting 10,000+ transactions per second with sub-second finality. Originally launched as Fantom, the network now operates under the Sonic brand with a new native token (S) replacing FTM. Understanding Sonic requires knowledge of its technical architecture, Fee Monetization mechanism, token migration process, and the growing ecosystem of DeFi protocols built on the platform."
       toc={[
-        { id: "what-is-sonic", title: "What Is Sonic Chain?", level: 2 },
-        { id: "sonic-vs-fantom", title: "Sonic vs Fantom: The Rebrand", level: 2 },
-        { id: "technical-specs", title: "Technical Specifications & Performance", level: 2 },
-        { id: "fee-monetization", title: "Fee Monetization Mechanism", level: 2 },
-        { id: "token-migration", title: "FTM to S Token Migration", level: 2 },
-        { id: "sonic-ecosystem", title: "Sonic Ecosystem & Protocols", level: 2 },
-        { id: "defi-protocols", title: "DeFi Protocols on Sonic", level: 2 },
-        { id: "getting-started", title: "How to Use Sonic Chain", level: 2 },
+        { id: "what-is-sonic", title: "what-is-sonic", level: 2 },
+        { id: "what-is-sonic-chain", title: "What Is Sonic Chain?", level: 2 },
+        { id: "sonic-vs-fantom", title: "sonic-vs-fantom", level: 2 },
+        { id: "sonic-vs-fantom-the-rebrand", title: "Sonic vs Fantom: The Rebrand", level: 2 },
+        { id: "technical-specs", title: "technical-specs", level: 2 },
+        { id: "technical-specifications-performance", title: "Technical Specifications & Performance", level: 2 },
+        { id: "fee-monetization", title: "fee-monetization", level: 2 },
+        { id: "fee-monetization-mechanism", title: "Fee Monetization Mechanism", level: 2 },
+        { id: "token-migration", title: "token-migration", level: 2 },
+        { id: "ftm-to-s-token-migration", title: "FTM to S Token Migration", level: 2 },
+        { id: "sonic-ecosystem", title: "sonic-ecosystem", level: 2 },
+        { id: "sonic-ecosystem-protocols", title: "Sonic Ecosystem & Protocols", level: 2 },
+        { id: "defi-protocols", title: "defi-protocols", level: 2 },
+        { id: "defi-protocols-on-sonic", title: "DeFi Protocols on Sonic", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "how-to-use-sonic-chain", title: "How to Use Sonic Chain", level: 2 }
       ]}
       faqs={[
         {

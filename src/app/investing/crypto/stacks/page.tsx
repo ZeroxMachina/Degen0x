@@ -25,7 +25,7 @@ export default function StacksPage() {
       ]} />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           How to Invest in Stacks (STX) in {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -39,17 +39,17 @@ export default function StacksPage() {
       </header>
 
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-        <h2 className="text-lg font-semibold text-white mb-4">Key Metrics</h2>
+        <h2 className="text-lg font-semibold text-[var(--color-text)] mb-4">Key Metrics</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-white">STX</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-white">2021</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-white">1,818,000,000 STX</p></div>
-          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-white">Proof of Transfer (PoX)</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Ticker</p><p className="text-sm font-semibold text-[var(--color-text)]">STX</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Launch Year</p><p className="text-sm font-semibold text-[var(--color-text)]">2021</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">1,818,000,000 STX</p></div>
+          <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Proof of Transfer (PoX)</p></div>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">What Is Stacks?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What Is Stacks?</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Stacks is a Bitcoin Layer 2 that brings smart contract functionality to the Bitcoin
           network without modifying Bitcoin itself. Founded by Muneeb Ali and Ryan Shea, the
@@ -68,7 +68,7 @@ export default function StacksPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Use Cases</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Use Cases</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Stacks enables Bitcoin DeFi through protocols like ALEX (DEX), Arkadiko (stablecoin),
           and Zest Protocol (Bitcoin lending). NFTs on Stacks settle on Bitcoin and have a dedicated
@@ -80,7 +80,7 @@ export default function StacksPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Investment Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Investment Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Competition in the Bitcoin L2 space is intensifying, with multiple projects (Lightning,
           RSK, Liquid, BOB, and various Bitcoin rollups) vying for developers and users. The Stacks
@@ -93,7 +93,7 @@ export default function StacksPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How to Buy Stacks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Buy Stacks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           STX is available on exchanges including Coinbase, Binance, OKX, and Kraken. After
           purchasing, you can participate in Stacking through wallets like Leather (formerly Hiro

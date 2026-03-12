@@ -17,11 +17,16 @@ export default function RisksOfCryptoLoansPage() {
       readTime="10 min"
       intro="Crypto loans offer unique benefits but also carry risks that differ from traditional borrowing. From the volatility-driven risk of liquidation to platform-specific counterparty dangers, understanding these risks thoroughly is essential before using your crypto as collateral. This guide covers every major risk category and practical mitigation strategies."
       toc={[
+        { id: "liquidation-risk", title: "liquidation-risk", level: 2 },
         { id: "liquidation-risk", title: "Liquidation Risk", level: 2 },
+        { id: "counterparty-risk", title: "counterparty-risk", level: 2 },
         { id: "counterparty-risk", title: "Counterparty Risk", level: 2 },
+        { id: "smart-contract-risk", title: "smart-contract-risk", level: 2 },
         { id: "smart-contract-risk", title: "Smart Contract Risk", level: 2 },
-        { id: "market-risk", title: "Market and Regulatory Risk", level: 2 },
-        { id: "mitigation", title: "Risk Mitigation Strategies", level: 2 },
+        { id: "market-risk", title: "market-risk", level: 2 },
+        { id: "market-and-regulatory-risk", title: "Market and Regulatory Risk", level: 2 },
+        { id: "mitigation", title: "mitigation", level: 2 },
+        { id: "risk-mitigation-strategies", title: "Risk Mitigation Strategies", level: 2 }
       ]}
       faqs={[
         { question: "Can I lose all my collateral?", answer: "Yes, in extreme cases. If a sharp price drop triggers liquidation, you may lose most or all of your collateral depending on the liquidation penalty and how quickly prices moved. On CeFi platforms, insolvency can also lead to total loss as seen with Celsius." },

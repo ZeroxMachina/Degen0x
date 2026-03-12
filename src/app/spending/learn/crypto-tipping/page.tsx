@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Tipping: How It Works (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Tipping: How It Works (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to crypto tipping on social media and content platforms. Send and receive tips in Bitcoin, Ethereum, and other cryptocurrencies for content creators.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoTippingPage() {
     <LearnPageLayout title="Crypto Tipping: How It Works" categoryName="Crypto Spending" categorySlug="spending" readTime="7 min read"
       intro="Crypto tipping enables instant, borderless micropayments to content creators, service providers, and community members. Unlike traditional tipping platforms that take significant cuts and require minimum payouts, crypto tips can be sent for fractions of a cent with minimal fees, directly to the recipient's wallet. The Lightning Network and Layer 2 solutions have made crypto tipping practical for everyday use, powering a new creator economy built on direct support."
       toc={[
-        { id: "how-it-works", title: "How Crypto Tipping Works", level: 2 },
-        { id: "platforms", title: "Tipping Platforms and Tools", level: 2 },
-        { id: "for-creators", title: "For Content Creators", level: 2 },
-        { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-crypto-tipping-works", title: "How Crypto Tipping Works", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "tipping-platforms-and-tools", title: "Tipping Platforms and Tools", level: 2 },
+        { id: "for-creators", title: "for-creators", level: 2 },
+        { id: "for-content-creators", title: "For Content Creators", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
+        { id: "tax-considerations", title: "Tax Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is crypto tipping?", answer: "Crypto tipping is sending small cryptocurrency payments to content creators, service providers, or community members as a form of appreciation or support. Tips can range from fractions of a cent to hundreds of dollars. Unlike traditional payment systems that have minimum transaction amounts, crypto (especially Lightning Network) enables true micropayments." },

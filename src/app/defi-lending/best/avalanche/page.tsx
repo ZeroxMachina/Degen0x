@@ -17,10 +17,14 @@ export default function BestAvalancheDefiLending() {
       readTime="9 min"
       intro="Avalanche offers a high-performance blockchain for DeFi lending with sub-second finality, low transaction costs, and a growing ecosystem of lending protocols. Anchored by Aave V3 and the native BENQI protocol, Avalanche provides competitive lending and borrowing opportunities with the unique advantage of near-instant transaction confirmation."
       toc={[
-        { id: "why-avalanche", title: "Why Avalanche for Lending", level: 2 },
-        { id: "top-protocols", title: "Top Lending Protocols", level: 2 },
+        { id: "why-avalanche", title: "why-avalanche", level: 2 },
+        { id: "why-avalanche-for-lending", title: "Why Avalanche for Lending", level: 2 },
+        { id: "top-protocols", title: "top-protocols", level: 2 },
+        { id: "top-lending-protocols", title: "Top Lending Protocols", level: 2 },
+        { id: "avax-staking-lending", title: "avax-staking-lending", level: 2 },
         { id: "avax-staking-lending", title: "AVAX Staking + Lending", level: 2 },
-        { id: "subnets", title: "Avalanche Subnets for DeFi", level: 2 },
+        { id: "subnets", title: "subnets", level: 2 },
+        { id: "avalanche-subnets-for-defi", title: "Avalanche Subnets for DeFi", level: 2 }
       ]}
       faqs={[
         { question: "What makes Avalanche different from other chains for lending?", answer: "Avalanche offers sub-second transaction finality, meaning your transactions are confirmed almost instantly. This is faster than most Layer 2s and significantly faster than Ethereum mainnet." },

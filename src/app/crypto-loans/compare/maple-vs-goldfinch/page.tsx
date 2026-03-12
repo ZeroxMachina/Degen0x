@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Maple vs Goldfinch (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Maple vs Goldfinch (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare Maple Finance and Goldfinch institutional lending protocols. Analysis of yield, risk, borrower types, and how undercollateralized DeFi lending works.",
 };
@@ -17,10 +17,14 @@ export default function MapleVsGoldfinchPage() {
       readTime="8 min read"
       intro="Maple Finance and Goldfinch represent the undercollateralized DeFi lending sector, offering higher yields by lending to vetted institutional borrowers without requiring full overcollateralization. Both protocols experienced challenges during the 2022 crypto downturn but have rebuilt. Maple focuses on crypto-native institutional borrowers, while Goldfinch extends crypto capital to real-world businesses globally. Understanding their different approaches, risk models, and track records is essential for yield-seeking investors."
       toc={[
-        { id: "model-comparison", title: "Lending Model Comparison", level: 2 },
-        { id: "yield-risk", title: "Yield and Risk Profiles", level: 2 },
+        { id: "model-comparison", title: "model-comparison", level: 2 },
+        { id: "lending-model-comparison", title: "Lending Model Comparison", level: 2 },
+        { id: "yield-risk", title: "yield-risk", level: 2 },
+        { id: "yield-and-risk-profiles", title: "Yield and Risk Profiles", level: 2 },
+        { id: "borrower-types", title: "borrower-types", level: 2 },
         { id: "borrower-types", title: "Borrower Types", level: 2 },
-        { id: "track-record", title: "Track Record and Lessons", level: 2 },
+        { id: "track-record", title: "track-record", level: 2 },
+        { id: "track-record-and-lessons", title: "Track Record and Lessons", level: 2 }
       ]}
       faqs={[
         { question: "What is undercollateralized DeFi lending?", answer: "Unlike standard DeFi lending where borrowers must deposit 150%+ collateral, undercollateralized protocols lend to vetted borrowers with less than full collateralization, relying on creditworthiness assessment and legal agreements. This enables higher yields for lenders but with higher default risk." },

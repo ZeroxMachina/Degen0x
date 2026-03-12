@@ -17,12 +17,18 @@ export default function LiquidStakingExplainedPage() {
       readTime="12 min"
       intro="Liquid staking has transformed the staking landscape by solving one of its biggest drawbacks: illiquidity. Instead of locking your crypto and losing access to it, liquid staking gives you a tradeable token that represents your staked position. This guide explains how liquid staking works, the different token models, and how to maximize returns through DeFi composability."
       toc={[
+        { id: "what-is-liquid-staking", title: "what-is-liquid-staking", level: 2 },
         { id: "what-is-liquid-staking", title: "What Is Liquid Staking?", level: 2 },
-        { id: "token-models", title: "Rebasing vs Value-Accruing Tokens", level: 2 },
-        { id: "major-protocols", title: "Major Liquid Staking Protocols", level: 2 },
-        { id: "defi-strategies", title: "DeFi Strategies with LSTs", level: 2 },
-        { id: "risks", title: "Risks of Liquid Staking", level: 2 },
-        { id: "choosing-protocol", title: "Choosing a Liquid Staking Protocol", level: 2 },
+        { id: "token-models", title: "token-models", level: 2 },
+        { id: "rebasing-vs-value-accruing-tokens", title: "Rebasing vs Value-Accruing Tokens", level: 2 },
+        { id: "major-protocols", title: "major-protocols", level: 2 },
+        { id: "major-liquid-staking-protocols", title: "Major Liquid Staking Protocols", level: 2 },
+        { id: "defi-strategies", title: "defi-strategies", level: 2 },
+        { id: "defi-strategies-with-lsts", title: "DeFi Strategies with LSTs", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-liquid-staking", title: "Risks of Liquid Staking", level: 2 },
+        { id: "choosing-protocol", title: "choosing-protocol", level: 2 },
+        { id: "choosing-a-liquid-staking-protocol", title: "Choosing a Liquid Staking Protocol", level: 2 }
       ]}
       faqs={[
         {

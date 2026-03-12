@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Goldfinch Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Goldfinch Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Goldfinch review covering real-world lending, emerging market credit, trust through consensus model, yield opportunities, and credit risk considerations.",
 };
 

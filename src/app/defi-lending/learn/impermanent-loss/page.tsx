@@ -15,10 +15,14 @@ export default function ImpermanentLossPage() {
       readTime="9 min"
       intro="Impermanent loss is the most misunderstood concept in DeFi liquidity provision. It occurs when the price ratio of tokens in your liquidity pool changes relative to when you deposited, potentially causing your position to be worth less than if you had simply held the tokens. This guide explains exactly how impermanent loss works, when it matters, and how to manage it."
       toc={[
-        { id: "what-is-il", title: "What Is Impermanent Loss?", level: 2 },
-        { id: "how-calculated", title: "How It Is Calculated", level: 2 },
-        { id: "when-permanent", title: "When Does It Become Permanent?", level: 2 },
-        { id: "minimizing", title: "Strategies to Minimize IL", level: 2 },
+        { id: "what-is-il", title: "what-is-il", level: 2 },
+        { id: "what-is-impermanent-loss", title: "What Is Impermanent Loss?", level: 2 },
+        { id: "how-calculated", title: "how-calculated", level: 2 },
+        { id: "how-it-is-calculated", title: "How It Is Calculated", level: 2 },
+        { id: "when-permanent", title: "when-permanent", level: 2 },
+        { id: "when-does-it-become-permanent", title: "When Does It Become Permanent?", level: 2 },
+        { id: "minimizing", title: "minimizing", level: 2 },
+        { id: "strategies-to-minimize-il", title: "Strategies to Minimize IL", level: 2 }
       ]}
       faqs={[
         { question: "Can you avoid impermanent loss completely?", answer: "You can avoid impermanent loss by only providing liquidity to pools with assets that maintain a fixed price ratio, such as stablecoin pools (USDC/USDT/DAI) or same-peg pools (stETH/ETH). For volatile pairs, impermanent loss is unavoidable but can be offset by trading fee revenue." },

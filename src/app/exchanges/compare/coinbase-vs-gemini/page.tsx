@@ -83,7 +83,7 @@ export default function CoinbaseVsGeminiPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <div className="glass rounded-2xl p-8 border border-[var(--color-border)]">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-bold text-white">Coinbase</h2>
+              <h2 className="text-2xl font-bold text-[var(--color-text)]">Coinbase</h2>
               <div className="text-3xl font-bold text-blue-400">{coinbase.rating}/5</div>
             </div>
             <ul className="space-y-2 text-[var(--color-text-secondary)]">
@@ -116,7 +116,7 @@ export default function CoinbaseVsGeminiPage() {
 
           <div className="glass rounded-2xl p-8 border border-[var(--color-border)]">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-bold text-white">Gemini</h2>
+              <h2 className="text-2xl font-bold text-[var(--color-text)]">Gemini</h2>
               <div className="text-3xl font-bold text-blue-400">{gemini.rating}/5</div>
             </div>
             <ul className="space-y-2 text-[var(--color-text-secondary)]">
@@ -161,7 +161,7 @@ export default function CoinbaseVsGeminiPage() {
         <div className="space-y-12">
           {/* Fee Comparison */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-yellow-400">💰</span> Fee Comparison
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -170,15 +170,15 @@ export default function CoinbaseVsGeminiPage() {
                 <div className="space-y-3 text-[var(--color-text-secondary)]">
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Advanced Maker</span>
-                    <span className="font-semibold text-white">0.00%–0.40%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.00%–0.40%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Advanced Taker</span>
-                    <span className="font-semibold text-white">0.05%–0.60%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.05%–0.60%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Simple Interface</span>
-                    <span className="font-semibold text-white">Up to 1.49%</span>
+                    <span className="font-semibold text-[var(--color-text)]">Up to 1.49%</span>
                   </div>
                 </div>
               </div>
@@ -188,21 +188,21 @@ export default function CoinbaseVsGeminiPage() {
                 <div className="space-y-3 text-[var(--color-text-secondary)]">
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>ActiveTrader Maker</span>
-                    <span className="font-semibold text-white">0.2%–0.25%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.2%–0.25%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>ActiveTrader Taker</span>
-                    <span className="font-semibold text-white">0.2%–0.25%</span>
+                    <span className="font-semibold text-[var(--color-text)]">0.2%–0.25%</span>
                   </div>
                   <div className="flex justify-between items-center pb-2 border-b border-[var(--color-border)]">
                     <span>Simple Interface</span>
-                    <span className="font-semibold text-white">1%–1.5%</span>
+                    <span className="font-semibold text-[var(--color-text)]">1%–1.5%</span>
                   </div>
                 </div>
               </div>
             </div>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)] bg-opacity-50">
-              <h3 className="text-lg font-bold text-white mb-3">Fee Winner: Gemini</h3>
+              <h3 className="text-lg font-bold text-[var(--color-text)] mb-3">Fee Winner: Gemini</h3>
               <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4">
                 Gemini's ActiveTrader fees are lower than Coinbase Advanced. Gemini charges flat 0.2%–0.25% maker/taker
                 vs Coinbase's variable 0%–0.40% maker and 0.05%–0.60% taker. However, Coinbase Advanced can reach 0%
@@ -216,7 +216,7 @@ export default function CoinbaseVsGeminiPage() {
 
           {/* Security & Regulation */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-green-400">🔒</span> Security & Regulation
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -278,25 +278,25 @@ export default function CoinbaseVsGeminiPage() {
 
           {/* Coin Selection */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-purple-400">🪙</span> Cryptocurrency Selection
             </h2>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)] mb-6">
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-bold text-blue-400 mb-2">Coinbase</h3>
-                  <p className="text-2xl font-bold text-white mb-2">250+</p>
+                  <p className="text-2xl font-bold text-[var(--color-text)] mb-2">250+</p>
                   <p className="text-[var(--color-text-secondary)]">Quality-focused selection</p>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-blue-400 mb-2">Gemini</h3>
-                  <p className="text-2xl font-bold text-white mb-2">100+</p>
+                  <p className="text-2xl font-bold text-[var(--color-text)] mb-2">100+</p>
                   <p className="text-[var(--color-text-secondary)]">Focused on major coins</p>
                 </div>
               </div>
               <div className="mt-6 pt-6 border-t border-[var(--color-border)]">
                 <div className="flex items-center justify-between">
-                  <span className="font-semibold text-white">Winner</span>
+                  <span className="font-semibold text-[var(--color-text)]">Winner</span>
                   <span className="inline-block bg-blue-500 bg-opacity-20 border border-blue-400 text-blue-400 px-4 py-2 rounded-lg font-semibold">
                     ⭐ Coinbase: 250 vs 100
                   </span>
@@ -312,7 +312,7 @@ export default function CoinbaseVsGeminiPage() {
 
           {/* Features & Products */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-blue-400">⭐</span> Features & Products
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -351,7 +351,7 @@ export default function CoinbaseVsGeminiPage() {
 
           {/* User Experience */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-green-400">👤</span> User Experience
             </h2>
             <div className="glass rounded-xl p-6 border border-[var(--color-border)] mb-6">
@@ -379,7 +379,7 @@ export default function CoinbaseVsGeminiPage() {
 
           {/* Verdict */}
           <section className="prose-crypto">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-3">
               <span className="text-yellow-400">🏆</span> Overall Verdict
             </h2>
             <div className="glass rounded-xl p-8 border border-[var(--color-border)] bg-gradient-to-br from-blue-900 bg-opacity-10 to-transparent">
@@ -409,7 +409,7 @@ export default function CoinbaseVsGeminiPage() {
             </div>
 
             <div className="mt-8 p-6 rounded-xl bg-[var(--color-bg-card)] border border-[var(--color-border)]">
-              <h3 className="text-lg font-bold text-white mb-3">Category Scores</h3>
+              <h3 className="text-lg font-bold text-[var(--color-text)] mb-3">Category Scores</h3>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="text-center">
                   <p className="text-[var(--color-text-secondary)] text-sm mb-2">For Beginners</p>
@@ -476,7 +476,7 @@ export default function CoinbaseVsGeminiPage() {
             rel="noopener noreferrer sponsored"
             className="glass rounded-xl p-8 border border-blue-400 border-opacity-50 text-center hover:border-opacity-100 transition-all duration-300 group"
           >
-            <h3 className="text-2xl font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">
+            <h3 className="text-2xl font-bold text-blue-400 mb-2 group-hover:text-[var(--color-text)] transition-colors">
               Start with Coinbase
             </h3>
             <p className="text-[var(--color-text-secondary)] mb-4">
@@ -493,7 +493,7 @@ export default function CoinbaseVsGeminiPage() {
             rel="noopener noreferrer sponsored"
             className="glass rounded-xl p-8 border border-blue-400 border-opacity-50 text-center hover:border-opacity-100 transition-all duration-300 group"
           >
-            <h3 className="text-2xl font-bold text-blue-400 mb-2 group-hover:text-white transition-colors">
+            <h3 className="text-2xl font-bold text-blue-400 mb-2 group-hover:text-[var(--color-text)] transition-colors">
               Start with Gemini
             </h3>
             <p className="text-[var(--color-text-secondary)] mb-4">

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Nexo vs Celsius (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Nexo vs Celsius (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Nexo and Celsius crypto lending platforms. Understand what happened to Celsius and why Nexo remains operational. CeFi lending risk analysis.",
 };
 
@@ -16,10 +16,14 @@ export default function NexoVsCelsiusPage() {
       readTime="9 min read"
       intro="Nexo and Celsius were once the two leading CeFi crypto lending platforms. After Celsius filed for bankruptcy in July 2022, the landscape changed dramatically. This comparison examines what happened to Celsius, how Nexo survived, and what lessons CeFi borrowers should take away when evaluating centralized lending platforms."
       toc={[
-        { id: "celsius-collapse", title: "What Happened to Celsius", level: 2 },
-        { id: "nexo-survival", title: "How Nexo Survived", level: 2 },
-        { id: "cefi-risks", title: "CeFi Risk Lessons", level: 2 },
-        { id: "alternatives", title: "Current Alternatives", level: 2 },
+        { id: "celsius-collapse", title: "celsius-collapse", level: 2 },
+        { id: "what-happened-to-celsius", title: "What Happened to Celsius", level: 2 },
+        { id: "nexo-survival", title: "nexo-survival", level: 2 },
+        { id: "how-nexo-survived", title: "How Nexo Survived", level: 2 },
+        { id: "cefi-risks", title: "cefi-risks", level: 2 },
+        { id: "cefi-risk-lessons", title: "CeFi Risk Lessons", level: 2 },
+        { id: "alternatives", title: "alternatives", level: 2 },
+        { id: "current-alternatives", title: "Current Alternatives", level: 2 }
       ]}
       faqs={[
         { question: "Is Celsius still operating?", answer: "No. Celsius filed for bankruptcy in July 2022 and ceased all operations. Some creditors received partial distributions through the bankruptcy process. Celsius has since been restructured, but the original lending platform no longer exists." },

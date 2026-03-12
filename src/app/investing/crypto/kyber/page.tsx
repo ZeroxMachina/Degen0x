@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Kyber Network (KNC)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Kyber Network (KNC)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Kyber Network (KNC), the multi-chain DEX aggregator and liquidity protocol. Discover how it works, tokenomics, use cases, and how to buy KNC.",
 };
 
@@ -16,12 +16,18 @@ export default function KyberPage() {
       readTime="8 min read"
       intro="Kyber Network is a multi-chain decentralized exchange aggregator and liquidity protocol that powers KyberSwap, a DEX offering optimized token swaps, concentrated liquidity provision, and cross-chain trading. As one of the oldest DeFi protocols, Kyber has evolved from an on-chain liquidity protocol to a comprehensive trading platform with advanced DEX aggregation."
       toc={[
-        { id: "what-is", title: "What Is Kyber Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Kyber Network Work?", level: 2 },
-        { id: "tokenomics", title: "KNC Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy KNC", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-kyber-network", title: "What Is Kyber Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-kyber-network-work", title: "How Does Kyber Network Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "knc-tokenomics", title: "KNC Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-knc", title: "How to Buy KNC", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Kyber Network?", answer: "Kyber Network powers KyberSwap, a multi-chain DEX aggregator with concentrated liquidity, limit orders, and cross-chain swaps across Ethereum and major L2s." },

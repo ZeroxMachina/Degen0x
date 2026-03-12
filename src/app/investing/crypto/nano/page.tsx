@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Nano (XNO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Nano (XNO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Nano (XNO), the feeless, instant digital currency using block-lattice technology. Discover XNO tokenomics and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function NanoPage() {
       readTime="8 min read"
       intro="Nano (XNO) is a digital currency designed for fast, feeless, and eco-friendly value transfer. Using a unique block-lattice architecture where each account has its own blockchain, Nano achieves sub-second transaction finality with zero fees and minimal energy consumption. It positions itself as a pure peer-to-peer digital currency focused on everyday payments."
       toc={[
-        { id: "what-is", title: "What Is Nano?", level: 2 },
-        { id: "how-it-works", title: "How Does Nano Work?", level: 2 },
-        { id: "tokenomics", title: "XNO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy XNO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-nano", title: "What Is Nano?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-nano-work", title: "How Does Nano Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "xno-tokenomics", title: "XNO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-xno", title: "How to Buy XNO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Nano?", answer: "Nano is a digital currency using block-lattice technology to provide instant, feeless transactions with minimal energy usage. Each account has its own blockchain, enabling asynchronous transaction processing." },

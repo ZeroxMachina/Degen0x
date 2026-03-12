@@ -3,7 +3,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Hold Card Review (${CURRENT_YEAR}): Features, Fees & Pros/Cons | CryptoDegen`,
+  title: `Hold Card Review (${CURRENT_YEAR}): Features, Fees & Pros/Cons | degen0x`,
   description: "In-depth Hold Card review covering crypto spending features, cashback rewards, supported currencies, and whether this card suits everyday crypto users.",
 };
 
@@ -19,7 +19,7 @@ export default function HoldCardReviewPage() {
         cons: ["Limited geographic availability", "Smaller brand recognition than competitors", "Lower cashback rates than premium alternatives", "Fewer premium perks compared to Crypto.com or Coinbase"],
         fees: "No annual fee on basic tier; premium plans available",
         bestFor: "Users seeking a simple, no-frills crypto spending card",
-        affiliateUrl: "https://cryptodegen.com/go/hold-card",
+        affiliateUrl: "https://degen0x.com/go/hold-card",
         category: "crypto-cards",
       }}
       categoryName="Crypto Cards"

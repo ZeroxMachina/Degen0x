@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is First Digital USD (FDUSD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is First Digital USD (FDUSD)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about First Digital USD (FDUSD), the stablecoin backed by cash and Treasuries. Discover FDUSD reserves and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function FirstDigitalUsdPage() {
       readTime="8 min read"
       intro="First Digital USD (FDUSD) is a stablecoin issued by FD121 Limited, a subsidiary of First Digital Group based in Hong Kong. Backed by cash and US Treasury bills held in segregated reserve accounts, FDUSD gained rapid adoption through its prominent listing on Binance, where it became a primary zero-fee trading pair and a major stablecoin in the Asian crypto market."
       toc={[
-        { id: "what-is", title: "What Is First Digital USD?", level: 2 },
-        { id: "how-it-works", title: "How Does First Digital USD Work?", level: 2 },
-        { id: "tokenomics", title: "FDUSD Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy FDUSD", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-first-digital-usd", title: "What Is First Digital USD?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-first-digital-usd-work", title: "How Does First Digital USD Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "fdusd-tokenomics", title: "FDUSD Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-fdusd", title: "How to Buy FDUSD", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is First Digital USD?", answer: "FDUSD is a stablecoin from First Digital Group backed by cash and US Treasuries. It gained prominence through its zero-fee trading pair status on Binance." },

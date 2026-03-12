@@ -18,12 +18,18 @@ export default function CryptoTaxesCanadaPage() {
       readTime="11 min read"
       intro="The Canada Revenue Agency (CRA) treats cryptocurrency as a commodity, meaning crypto transactions are subject to either capital gains tax or business income tax depending on the nature of your activity. With the capital gains inclusion rate recently increased to two-thirds for gains above $250,000, understanding Canadian crypto tax rules has never been more important."
       toc={[
-        { id: "cra-classification", title: "How the CRA Classifies Crypto", level: 2 },
-        { id: "capital-gains", title: "Capital Gains vs Business Income", level: 2 },
-        { id: "taxable-events", title: "Taxable Dispositions", level: 2 },
-        { id: "cost-basis", title: "Adjusted Cost Base Calculations", level: 2 },
-        { id: "reporting", title: "Filing & Reporting Requirements", level: 2 },
-        { id: "tools", title: "Canadian Crypto Tax Software", level: 2 },
+        { id: "cra-classification", title: "cra-classification", level: 2 },
+        { id: "how-the-cra-classifies-crypto", title: "How the CRA Classifies Crypto", level: 2 },
+        { id: "capital-gains", title: "capital-gains", level: 2 },
+        { id: "capital-gains-vs-business-income", title: "Capital Gains vs Business Income", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
+        { id: "taxable-dispositions", title: "Taxable Dispositions", level: 2 },
+        { id: "cost-basis", title: "cost-basis", level: 2 },
+        { id: "adjusted-cost-base-calculations", title: "Adjusted Cost Base Calculations", level: 2 },
+        { id: "reporting", title: "reporting", level: 2 },
+        { id: "filing-reporting-requirements", title: "Filing & Reporting Requirements", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "canadian-crypto-tax-software", title: "Canadian Crypto Tax Software", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto taxed as capital gains or income in Canada?", answer: "It depends on your activity. Occasional buying and selling is typically capital gains, while frequent trading, mining as a business, or receiving crypto as payment constitutes business income. The CRA evaluates factors like frequency, intention, and commercial nature." },

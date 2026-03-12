@@ -25,13 +25,20 @@ export default function HowToBuyBNBPage() {
       readTime="12 min"
       intro="BNB (originally Binance Coin) is the native cryptocurrency of the BNB Chain ecosystem and the Binance exchange. BNB serves multiple purposes: it provides trading fee discounts on Binance, powers the BNB Smart Chain (one of the most active smart contract platforms), and fuels a large DeFi and dApp ecosystem. BNB uses a deflationary model with quarterly token burns that reduce supply over time. This guide covers how to buy BNB, its utility across the ecosystem, storage options, and investment considerations."
       toc={[
-        { id: "choose-exchange", title: "Step 1: Choose an Exchange", level: 2 },
-        { id: "create-account", title: "Step 2: Create and Verify Your Account", level: 2 },
-        { id: "deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
-        { id: "buy-bnb", title: "Step 4: Buy BNB", level: 2 },
-        { id: "store-bnb", title: "Step 5: Store Your BNB", level: 2 },
-        { id: "bnb-utility", title: "BNB Utility and Fee Discounts", level: 2 },
-        { id: "bnb-chain", title: "BNB Chain Ecosystem", level: 2 },
+        { id: "choose-exchange", title: "choose-exchange", level: 2 },
+        { id: "step-1-choose-an-exchange", title: "Step 1: Choose an Exchange", level: 2 },
+        { id: "create-account", title: "create-account", level: 2 },
+        { id: "step-2-create-and-verify-your-account", title: "Step 2: Create and Verify Your Account", level: 2 },
+        { id: "deposit-funds", title: "deposit-funds", level: 2 },
+        { id: "step-3-deposit-funds", title: "Step 3: Deposit Funds", level: 2 },
+        { id: "buy-bnb", title: "buy-bnb", level: 2 },
+        { id: "step-4-buy-bnb", title: "Step 4: Buy BNB", level: 2 },
+        { id: "store-bnb", title: "store-bnb", level: 2 },
+        { id: "step-5-store-your-bnb", title: "Step 5: Store Your BNB", level: 2 },
+        { id: "bnb-utility", title: "bnb-utility", level: 2 },
+        { id: "bnb-utility-and-fee-discounts", title: "BNB Utility and Fee Discounts", level: 2 },
+        { id: "bnb-chain", title: "bnb-chain", level: 2 },
+        { id: "bnb-chain-ecosystem", title: "BNB Chain Ecosystem", level: 2 }
       ]}
       faqs={[
         {

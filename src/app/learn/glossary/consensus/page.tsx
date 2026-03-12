@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Consensus Mechanism? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Consensus Mechanism? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what consensus mechanisms are, how PoW and PoS work, other types of consensus, and why they are essential for blockchain security.",
 };
@@ -17,11 +17,16 @@ export default function ConsensusPage() {
       readTime="6 min"
       intro="A consensus mechanism is the method by which a decentralized blockchain network agrees on the current state of the ledger. Since there is no central authority to validate transactions, the network needs rules that allow independent participants to reach agreement on which transactions are valid and in what order they occurred. The two dominant approaches are Proof of Work and Proof of Stake."
       toc={[
-        { id: "definition", title: "What Is Consensus?", level: 2 },
-        { id: "pow", title: "Proof of Work (PoW)", level: 2 },
-        { id: "pos", title: "Proof of Stake (PoS)", level: 2 },
-        { id: "others", title: "Other Mechanisms", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-consensus", title: "What Is Consensus?", level: 2 },
+        { id: "pow", title: "pow", level: 2 },
+        { id: "proof-of-work-pow", title: "Proof of Work (PoW)", level: 2 },
+        { id: "pos", title: "pos", level: 2 },
+        { id: "proof-of-stake-pos", title: "Proof of Stake (PoS)", level: 2 },
+        { id: "others", title: "others", level: 2 },
+        { id: "other-mechanisms", title: "Other Mechanisms", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         {

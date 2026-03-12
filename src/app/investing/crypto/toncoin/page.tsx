@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Toncoin (TON)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Toncoin (TON)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Toncoin (TON), the blockchain deeply integrated with Telegram. Discover how it works, tokenomics, use cases, and how to buy TON.",
 };
@@ -17,12 +17,18 @@ export default function ToncoinPage() {
       readTime="8 min read"
       intro="Toncoin is the native cryptocurrency of The Open Network (TON), a fast and scalable blockchain deeply integrated with Telegram's messaging platform. With access to Telegram's 900+ million user base, TON has a unique distribution advantage unmatched in the crypto space, powering in-app payments, mini-apps, and decentralized services."
       toc={[
-        { id: "what-is", title: "What Is Toncoin?", level: 2 },
-        { id: "how-it-works", title: "How Does TON Work?", level: 2 },
-        { id: "tokenomics", title: "TON Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy TON", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-toncoin", title: "What Is Toncoin?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-ton-work", title: "How Does TON Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "ton-tokenomics", title: "TON Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-ton", title: "How to Buy TON", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

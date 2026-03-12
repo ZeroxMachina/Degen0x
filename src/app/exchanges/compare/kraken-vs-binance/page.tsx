@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Kraken", slug: "kraken", rating: 4.7, affiliateUrl: "https://cryptodegen.com/go/kraken", features: { "Trading Fees": "0.16% maker / 0.26% taker", "Coins Listed": "200+", "Futures": "Yes (up to 50x)", "Staking": "Yes (20+ assets)", "Regulation": "US FinCEN, multi-country", "Proof of Reserves": "Yes (cryptographic audit)", "US Available": "Yes", "Fiat Support": "7+ currencies" } },
-  { name: "Binance", slug: "binance", rating: 4.7, affiliateUrl: "https://cryptodegen.com/go/binance", features: { "Trading Fees": "0.1% (0.075% with BNB)", "Coins Listed": "600+", "Futures": "Yes (up to 125x)", "Staking": "Yes (extensive)", "Regulation": "UAE, varies by region", "Proof of Reserves": "Yes (Merkle tree)", "US Available": "No (Binance.US only)", "Fiat Support": "50+ currencies" } },
+  { name: "Kraken", slug: "kraken", rating: 4.7, affiliateUrl: "https://degen0x.com/go/kraken", features: { "Trading Fees": "0.16% maker / 0.26% taker", "Coins Listed": "200+", "Futures": "Yes (up to 50x)", "Staking": "Yes (20+ assets)", "Regulation": "US FinCEN, multi-country", "Proof of Reserves": "Yes (cryptographic audit)", "US Available": "Yes", "Fiat Support": "7+ currencies" } },
+  { name: "Binance", slug: "binance", rating: 4.7, affiliateUrl: "https://degen0x.com/go/binance", features: { "Trading Fees": "0.1% (0.075% with BNB)", "Coins Listed": "600+", "Futures": "Yes (up to 125x)", "Staking": "Yes (extensive)", "Regulation": "UAE, varies by region", "Proof of Reserves": "Yes (Merkle tree)", "US Available": "No (Binance.US only)", "Fiat Support": "50+ currencies" } },
 ];
 
 const features = ["Trading Fees", "Coins Listed", "Futures", "Staking", "Regulation", "Proof of Reserves", "US Available", "Fiat Support"];
@@ -32,7 +32,7 @@ export default function KrakenVsBinancePage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Kraken vs Binance: Regulation vs Volume ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -49,7 +49,7 @@ export default function KrakenVsBinancePage() {
       <ComparisonTable items={items} features={features} title="Kraken vs Binance: Head-to-Head" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Regulation and Trust</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Regulation and Trust</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Kraken is one of the oldest crypto exchanges (founded 2011) and has pursued regulatory
           compliance aggressively. It holds licenses in multiple countries, is registered with US
@@ -63,7 +63,7 @@ export default function KrakenVsBinancePage() {
           tree proof of reserves but has faced scrutiny over the completeness of these audits.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Trading Fees and Features</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Trading Fees and Features</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Binance has lower fees across the board. Base spot fees are 0.1% versus Kraken&apos;s
           0.16%/0.26%. Binance futures fees are also lower. With BNB discounts, the gap widens
@@ -75,7 +75,7 @@ export default function KrakenVsBinancePage() {
           curated selection of assets with generally higher liquidity per pair.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Staking and Earn</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Staking and Earn</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Both offer comprehensive staking programs. Kraken&apos;s staking is available in most
           jurisdictions and supports over 20 assets with competitive APYs. Binance Earn offers
@@ -83,15 +83,15 @@ export default function KrakenVsBinancePage() {
           passive yield, Binance has more variety.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Kraken if</strong> you value regulatory compliance,
+            <strong className="text-[var(--color-text)]">Choose Kraken if</strong> you value regulatory compliance,
             transparency, proof of reserves, and a trusted platform with a clean track record.
             Kraken is available in the US and ideal for traders who prioritize trust.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Binance if</strong> you are outside the US and
+            <strong className="text-[var(--color-text)]">Choose Binance if</strong> you are outside the US and
             want the lowest fees, widest coin selection, highest leverage, and the most trading
             features available on any exchange.
           </p>

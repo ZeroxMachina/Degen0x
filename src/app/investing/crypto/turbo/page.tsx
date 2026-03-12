@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Turbo (TURBO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Turbo (TURBO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Turbo (TURBO), the AI-generated meme coin on Ethereum. Discover TURBO tokenomics, its unique origin story, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function TurboPage() {
       readTime="8 min read"
       intro="Turbo (TURBO) is an Ethereum-based meme coin notable for being one of the first cryptocurrencies conceptualized and designed with the help of artificial intelligence. Created in May 2023 using GPT-4 to generate the concept, branding, and smart contract, TURBO represents the intersection of AI and meme coin culture."
       toc={[
-        { id: "what-is", title: "What Is Turbo?", level: 2 },
-        { id: "how-it-works", title: "How Does Turbo Work?", level: 2 },
-        { id: "tokenomics", title: "TURBO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy TURBO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-turbo", title: "What Is Turbo?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-turbo-work", title: "How Does Turbo Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "turbo-tokenomics", title: "TURBO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-turbo", title: "How to Buy TURBO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

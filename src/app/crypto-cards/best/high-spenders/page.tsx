@@ -60,7 +60,7 @@ export default function BestHighSpendersCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Cards for High Spenders ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -77,7 +77,7 @@ export default function BestHighSpendersCardsPage() {
           airport lounge access, concierge services, and elevated earn rates. We ranked
           the best cards for users who want maximum value from high monthly spending.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Why High Spenders Benefit Most from Crypto Cards</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Why High Spenders Benefit Most from Crypto Cards</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Crypto card rewards scale linearly with spending, so high spenders earn the most.
           A 5% cashback rate on $10,000 monthly spending generates $500 in crypto per month,
@@ -86,12 +86,12 @@ export default function BestHighSpendersCardsPage() {
           streaming) regardless of spending, further boosting the return for users who would
           pay for those services anyway.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Our Top Picks</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Our Top Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          The <strong className="text-white">Crypto.com Visa Obsidian</strong> is the undisputed
+          The <strong className="text-[var(--color-text)]">Crypto.com Visa Obsidian</strong> is the undisputed
           king for high spenders with 5% cashback, full premium perks, and the highest spending
-          limits. The <strong className="text-white">Binance Card</strong> offers 8% for major BNB
-          holders outside the US. The <strong className="text-white">Nexo Card</strong> is unique
+          limits. The <strong className="text-[var(--color-text)]">Binance Card</strong> offers 8% for major BNB
+          holders outside the US. The <strong className="text-[var(--color-text)]">Nexo Card</strong> is unique
           for high-net-worth individuals who want to spend from their portfolio without selling
           and triggering taxable events.
         </p>
@@ -110,33 +110,33 @@ export default function BestHighSpendersCardsPage() {
 
       {/* Annual Value Calculator */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Estimated Annual Value at $5,000/Month Spending</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Estimated Annual Value at $5,000/Month Spending</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg shrink-0">$3,324</span>
             <div>
-              <h3 className="text-white font-semibold">Crypto.com Visa (Icy White / 5%)</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Crypto.com Visa (Icy White / 5%)</h3>
               <p className="text-sm">$3,000 in cashback + $156 Spotify + $168 Netflix. Requires $40,000 CRO stake.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg shrink-0">$4,800</span>
             <div>
-              <h3 className="text-white font-semibold">Binance Card (8% tier)</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Binance Card (8% tier)</h3>
               <p className="text-sm">$4,800 in BNB cashback. Requires 600+ BNB stake (approx. $150,000+). Not US available.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg shrink-0">$2,400</span>
             <div>
-              <h3 className="text-white font-semibold">Coinbase Card (4% tier)</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Coinbase Card (4% tier)</h3>
               <p className="text-sm">$2,400 in crypto rewards. No staking required but 2.49% spread on crypto spending may reduce effective rate.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg shrink-0">$1,200</span>
             <div>
-              <h3 className="text-white font-semibold">Nexo Card (2% + credit-line benefits)</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Nexo Card (2% + credit-line benefits)</h3>
               <p className="text-sm">$1,200 in BTC/NEXO rewards plus the tax benefit of not selling your crypto to fund spending.</p>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function BestHighSpendersCardsPage() {
 
       {/* Methodology */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
         <p className="text-[var(--color-text-secondary)]">
           High spender rankings are based on total annual value at $5,000 and $10,000 monthly
           spending levels. We calculate cashback earnings, perk values (streaming, lounges),
@@ -158,7 +158,7 @@ export default function BestHighSpendersCardsPage() {
 
       {/* Related Links */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "Best Crypto Cards with Staking Rewards", href: "/crypto-cards/best/staking-rewards" },
@@ -171,7 +171,7 @@ export default function BestHighSpendersCardsPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
-              <span className="text-white font-semibold">{link.title}</span>
+              <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
               <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                 Read more &rarr;
               </span>

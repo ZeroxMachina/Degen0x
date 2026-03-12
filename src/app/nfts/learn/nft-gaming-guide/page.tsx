@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NFT Gaming: Play-to-Earn Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `NFT Gaming: Play-to-Earn Explained (${CURRENT_YEAR}) | degen0x`,
   description: "Explore NFT gaming, play-to-earn models, in-game asset ownership, top blockchain games, and how to get started with crypto gaming.",
 };
 
@@ -16,12 +16,18 @@ export default function NftGamingGuidePage() {
       readTime="11 min"
       intro="NFT gaming enables true ownership of in-game assets that can be traded, sold, or used across different platforms. From play-to-earn economies to AAA-quality blockchain games, the intersection of gaming and NFTs continues to evolve rapidly. This guide covers how NFT gaming works, the major game categories, evaluation criteria, and how to get started safely."
       toc={[
+        { id: "what-is-nft-gaming", title: "what-is-nft-gaming", level: 2 },
         { id: "what-is-nft-gaming", title: "What Is NFT Gaming", level: 2 },
-        { id: "play-to-earn", title: "Play-to-Earn Economics", level: 2 },
-        { id: "game-categories", title: "Types of Blockchain Games", level: 2 },
-        { id: "evaluating-games", title: "Evaluating NFT Games", level: 2 },
+        { id: "play-to-earn", title: "play-to-earn", level: 2 },
+        { id: "play-to-earn-economics", title: "Play-to-Earn Economics", level: 2 },
+        { id: "game-categories", title: "game-categories", level: 2 },
+        { id: "types-of-blockchain-games", title: "Types of Blockchain Games", level: 2 },
+        { id: "evaluating-games", title: "evaluating-games", level: 2 },
+        { id: "evaluating-nft-games", title: "Evaluating NFT Games", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
         { id: "getting-started", title: "Getting Started", level: 2 },
-        { id: "future", title: "The Future of NFT Gaming", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-nft-gaming", title: "The Future of NFT Gaming", level: 2 }
       ]}
       faqs={[
         { question: "Can I make money playing NFT games?", answer: "Some players earn income from NFT games, but it is not guaranteed. Play-to-earn economics depend on new players entering and demand for in-game assets. Sustainable games offer modest earnings. Treating it as primary income carries significant financial risk." },

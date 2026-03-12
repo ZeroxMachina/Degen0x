@@ -14,7 +14,7 @@ export default function RobinhoodVsCoinbasePage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Robinhood vs Coinbase", href: "#" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Robinhood vs Coinbase: Which Is Better for Crypto in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Robinhood vs Coinbase: Which Is Better for Crypto in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Robinhood and Coinbase are two of the most popular ways for US consumers to buy cryptocurrency, but they take very different approaches. Robinhood is a commission-free brokerage that treats crypto as another asset class alongside stocks. Coinbase is a dedicated crypto exchange with hundreds of coins and advanced trading tools. This comparison helps you decide which platform fits your needs.</p>
 
@@ -30,20 +30,20 @@ export default function RobinhoodVsCoinbasePage() {
       </div>
 
       <div className="prose-crypto">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">Robinhood advertises zero-commission crypto trading but earns revenue through a spread markup on trade prices. The effective cost is typically 0.5% to 1.5% depending on the asset and market conditions. Coinbase offers two pricing tiers: the simple interface charges up to 1.49%, while Coinbase Advanced uses a maker-taker model starting at 0%/0.60% that decreases with volume.</p>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">For casual buyers making occasional purchases, Robinhood may be cheaper due to its tighter spreads on major assets. For active traders, Coinbase Advanced offers lower effective fees, especially at higher volume tiers. The key difference is transparency — Coinbase clearly displays its fees, while Robinhood's spread markup is less visible.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Coin Selection</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Coin Selection</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">This is where Coinbase pulls decisively ahead. Coinbase lists over 250 cryptocurrencies, covering major assets, DeFi tokens, Layer 2 tokens, and emerging projects. Robinhood supports approximately 20 cryptocurrencies, limited to well-established, high-liquidity assets. If you want to invest beyond Bitcoin, Ethereum, and a handful of popular altcoins, Coinbase is the only viable option between the two.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Features and Trading Tools</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Features and Trading Tools</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Coinbase Advanced provides professional charting powered by TradingView, multiple order types (limit, stop-limit, trailing stop), and an API for algorithmic trading. Coinbase also offers staking, an NFT marketplace, the Base Layer 2 network, and comprehensive educational content through Coinbase Learn. Robinhood offers a simpler experience with basic price charts, recurring purchases, and the unique advantage of trading stocks and crypto from the same account. For users who want their stock portfolio and crypto in one place, Robinhood has an edge.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-white">Choose Robinhood if</strong> you want zero-commission crypto trading alongside stocks in one simple app. Best for casual investors who primarily buy Bitcoin and a few major altcoins and value the convenience of a unified brokerage account.</p>
-          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-white">Choose Coinbase if</strong> crypto is your primary focus and you want access to hundreds of coins, advanced trading tools, staking, and a dedicated crypto wallet. Best for anyone who takes crypto investing seriously.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-[var(--color-text)]">Choose Robinhood if</strong> you want zero-commission crypto trading alongside stocks in one simple app. Best for casual investors who primarily buy Bitcoin and a few major altcoins and value the convenience of a unified brokerage account.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Coinbase if</strong> crypto is your primary focus and you want access to hundreds of coins, advanced trading tools, staking, and a dedicated crypto wallet. Best for anyone who takes crypto investing seriously.</p>
         </div>
       </div>
 

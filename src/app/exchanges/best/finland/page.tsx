@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Finland (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Finland (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Finland. Find EUR-friendly platforms with Finnish bank support, competitive fees, and FIN-FSA compliance.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesFinland() {
       readTime="8 min read"
       intro="Finland is one of the Nordic countries leading in cryptocurrency adoption, with the Finnish Financial Supervisory Authority (FIN-FSA) maintaining a register of virtual currency providers. As a eurozone member, Finnish traders benefit from seamless SEPA transfers and access to major EUR-denominated exchanges. Finland's strong technical infrastructure and digitally literate population create an ideal environment for crypto trading."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Finland", level: 2 },
-        { id: "regulation", title: "Crypto Regulation in Finland", level: 2 },
-        { id: "payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-finland", title: "Top Exchanges for Finland", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-finland", title: "Crypto Regulation in Finland", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "eur-payment-methods", title: "EUR Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Finland?", answer: "Yes, cryptocurrency is legal in Finland. The FIN-FSA maintains a public register of virtual currency providers and enforces AML/KYC requirements. Finland follows EU regulations under the MiCA framework." },

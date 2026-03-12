@@ -16,10 +16,14 @@ export default function BestCryptoSavingsAccountsPage2() {
       readTime="10 min"
       intro="Crypto savings accounts offer yield on digital asset holdings, functioning similarly to traditional savings accounts but with higher rates and different risk profiles for passive income."
       toc={[
-        { id: "section-1", title: "Overview and Fundamentals", level: 2 },
-        { id: "section-2", title: "Top Savings Platforms", level: 2 },
-        { id: "section-3", title: "Risk Assessment", level: 2 },
-        { id: "section-4", title: "Best Practices", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "overview-and-fundamentals", title: "Overview and Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "top-savings-platforms", title: "Top Savings Platforms", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "risk-assessment", title: "Risk Assessment", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "Are crypto savings accounts safe?", answer: "Crypto savings accounts carry different risks than traditional banks including smart contract risk, platform insolvency risk, and lack of FDIC-like insurance. Evaluate each platform's security, track record, and insurance coverage carefully before depositing funds." },

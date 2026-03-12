@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Impermanent Loss Explained: The Hidden DeFi Risk (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Impermanent Loss Explained: The Hidden DeFi Risk (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand impermanent loss in DeFi liquidity pools: what causes it, how to calculate it, when it becomes permanent, and strategies to minimize its impact on your returns.",
 };
@@ -17,10 +17,14 @@ export default function ImpermanentLossPage() {
       readTime="8 min read"
       intro="Impermanent loss is the difference in value between holding tokens in a liquidity pool versus simply holding them in your wallet. It occurs when the price ratio of the tokens in a pool changes after you deposit, causing the AMM to rebalance your position through arbitrage. Despite being called 'impermanent,' this loss can become permanent if you withdraw at a different price ratio than when you deposited. Understanding impermanent loss is essential for anyone providing liquidity in DeFi."
       toc={[
-        { id: "what-is-il", title: "What Is Impermanent Loss?", level: 2 },
-        { id: "how-it-happens", title: "How Impermanent Loss Happens", level: 2 },
-        { id: "calculating-il", title: "Calculating Impermanent Loss", level: 2 },
-        { id: "mitigation", title: "Strategies to Mitigate Impermanent Loss", level: 2 },
+        { id: "what-is-il", title: "what-is-il", level: 2 },
+        { id: "what-is-impermanent-loss", title: "What Is Impermanent Loss?", level: 2 },
+        { id: "how-it-happens", title: "how-it-happens", level: 2 },
+        { id: "how-impermanent-loss-happens", title: "How Impermanent Loss Happens", level: 2 },
+        { id: "calculating-il", title: "calculating-il", level: 2 },
+        { id: "calculating-impermanent-loss", title: "Calculating Impermanent Loss", level: 2 },
+        { id: "mitigation", title: "mitigation", level: 2 },
+        { id: "strategies-to-mitigate-impermanent-loss", title: "Strategies to Mitigate Impermanent Loss", level: 2 }
       ]}
       faqs={[
         {

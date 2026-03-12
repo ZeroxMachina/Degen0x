@@ -33,7 +33,7 @@ export default function BestCopyTradingPage() {
       <AffiliateDisclosure />
 
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best Crypto Copy Trading Platforms for {CURRENT_MONTH} {CURRENT_YEAR}
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
@@ -49,7 +49,7 @@ export default function BestCopyTradingPage() {
       <TableOfContents items={toc} />
 
       <section id="top-picks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top Copy Trading Platforms for {CURRENT_YEAR}</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Copy Trading Platforms for {CURRENT_YEAR}</h2>
         <div className="space-y-4">
           {COPY_TRADING_PLATFORMS.map((product, idx) => (
             <ProductCard key={product.slug} product={product} rank={idx + 1} categorySlug="investing" />
@@ -58,7 +58,7 @@ export default function BestCopyTradingPage() {
       </section>
 
       <section id="how-it-works" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">How Copy Trading Works</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How Copy Trading Works</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           When you select a trader to copy, every trade they open or close is automatically
           replicated in your account at a proportional size. If a trader opens a long position
@@ -74,7 +74,7 @@ export default function BestCopyTradingPage() {
       </section>
 
       <section id="choosing-traders" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Choosing Traders to Follow</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Choosing Traders to Follow</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Look beyond raw returns when selecting traders to copy. Evaluate their risk metrics
           including maximum drawdown, Sharpe ratio, win rate, and average trade duration. A trader
@@ -91,7 +91,7 @@ export default function BestCopyTradingPage() {
       </section>
 
       <section id="risks" className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Copy Trading Risks</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Copy Trading Risks</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Past performance does not guarantee future results. Traders who showed impressive returns
           during a bull market may perform poorly during downturns. Market conditions change, and

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Are Stablecoins? Types and How They Work (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Are Stablecoins? Types and How They Work (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about stablecoins: how they maintain price stability, the differences between fiat-backed, crypto-backed, and algorithmic stablecoins, their use cases, and associated risks.",
 };
@@ -17,11 +17,16 @@ export default function WhatAreStablecoinsPage() {
       readTime="9 min read"
       intro="Stablecoins are cryptocurrencies designed to maintain a stable value relative to a reference asset, most commonly the US dollar. They combine the benefits of blockchain technology — fast, borderless transfers and programmability — with the price stability needed for everyday commerce and financial applications. With a combined market capitalization exceeding $150 billion, stablecoins have become the backbone of DeFi, the primary trading pair on exchanges, and one of the most impactful applications of blockchain technology."
       toc={[
-        { id: "why-stablecoins", title: "Why Stablecoins Exist", level: 2 },
-        { id: "fiat-backed", title: "Fiat-Backed Stablecoins", level: 2 },
-        { id: "crypto-backed", title: "Crypto-Backed Stablecoins", level: 2 },
-        { id: "algorithmic", title: "Algorithmic Stablecoins", level: 2 },
-        { id: "risks-regulation", title: "Risks and Regulation", level: 2 },
+        { id: "why-stablecoins", title: "why-stablecoins", level: 2 },
+        { id: "why-stablecoins-exist", title: "Why Stablecoins Exist", level: 2 },
+        { id: "fiat-backed", title: "fiat-backed", level: 2 },
+        { id: "fiat-backed-stablecoins", title: "Fiat-Backed Stablecoins", level: 2 },
+        { id: "crypto-backed", title: "crypto-backed", level: 2 },
+        { id: "crypto-backed-stablecoins", title: "Crypto-Backed Stablecoins", level: 2 },
+        { id: "algorithmic", title: "algorithmic", level: 2 },
+        { id: "algorithmic-stablecoins", title: "Algorithmic Stablecoins", level: 2 },
+        { id: "risks-regulation", title: "risks-regulation", level: 2 },
+        { id: "risks-and-regulation", title: "Risks and Regulation", level: 2 }
       ]}
       faqs={[
         {

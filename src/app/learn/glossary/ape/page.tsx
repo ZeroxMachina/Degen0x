@@ -11,7 +11,14 @@ export const metadata: Metadata = {
 export default function ApePage() {
   return (
     <LearnPageLayout title="What Does Ape Mean?" categoryName="Glossary" categorySlug="learn/glossary" readTime="4 min" intro="In crypto slang, to 'ape' or 'ape in' means to invest heavily in a token or project with minimal research, often driven by FOMO or high conviction. The term reflects the impulsive, go-all-in mentality that characterizes speculative crypto investing. While aping can lead to outsized gains in rare cases, it more commonly results in significant losses."
-      toc={[{ id: "definition", title: "Definition", level: 2 },{ id: "context", title: "Cultural Context", level: 2 },{ id: "risks", title: "Risks of Aping", level: 2 }]}
+      toc={[
+        { id: "definition", title: "definition", level: 2 },
+        { id: "definition", title: "Definition", level: 2 },
+        { id: "context", title: "context", level: 2 },
+        { id: "cultural-context", title: "Cultural Context", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-aping", title: "Risks of Aping", level: 2 }
+      ]}
       faqs={[
         { question: "Is aping a good strategy?", answer: "Aping is generally considered a high-risk behavior rather than a strategy. While some traders have profited from aping into early-stage projects, the majority of ape-style investments result in losses. Informed investing based on research (DYOR) consistently outperforms impulsive buying over time." },
         { question: "Where does the term come from?", answer: "The term gained popularity in crypto culture during the DeFi Summer of 2020 and NFT boom of 2021. It references the primal, instinctive behavior of acting without careful thought, and is related to broader internet meme culture around apes and monkeys." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is SingularityNET (AGIX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is SingularityNET (AGIX)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about SingularityNET (AGIX), the decentralized AI services marketplace. Discover how it works, tokenomics, use cases, and how to buy AGIX.",
 };
@@ -17,12 +17,18 @@ export default function SingularityNETPage() {
       readTime="8 min read"
       intro="SingularityNET is a decentralized marketplace for artificial intelligence services, allowing AI developers to publish, share, and monetize their AI algorithms. Founded by Dr. Ben Goertzel, a leading figure in artificial general intelligence research, SingularityNET is building the infrastructure for a decentralized AI economy through the Artificial Superintelligence Alliance."
       toc={[
-        { id: "what-is", title: "What Is SingularityNET?", level: 2 },
-        { id: "how-it-works", title: "How Does SingularityNET Work?", level: 2 },
-        { id: "tokenomics", title: "AGIX Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy AGIX", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-singularitynet", title: "What Is SingularityNET?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-singularitynet-work", title: "How Does SingularityNET Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "agix-tokenomics", title: "AGIX Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-agix", title: "How to Buy AGIX", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

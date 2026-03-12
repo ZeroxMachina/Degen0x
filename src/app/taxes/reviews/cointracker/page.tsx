@@ -43,7 +43,7 @@ export default function CoinTrackerReviewPage() {
 
       <article>
         <header className="mb-8">
-          <h1 className="text-4xl font-bold text-white mb-4">CoinTracker Review {CURRENT_YEAR}</h1>
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">CoinTracker Review {CURRENT_YEAR}</h1>
           <div className="flex items-center gap-4 mb-4">
             <StarRating rating={4.6} size="lg" />
             <span className="text-sm text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</span>
@@ -55,14 +55,14 @@ export default function CoinTrackerReviewPage() {
             real-time portfolio tracking alongside its tax features.
           </p>
           <div className="mt-4">
-            <a href="https://cryptodegen.com/go/cointracker" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try CoinTracker</a>
+            <a href="https://degen0x.com/go/cointracker" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try CoinTracker</a>
           </div>
         </header>
 
         <TableOfContents items={toc} />
 
         <section id="overview" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Overview</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Overview</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             CoinTracker was founded in 2017 and has grown into one of the most trusted names
             in crypto tax software. The platform integrates with over 500 exchanges and wallets,
@@ -80,7 +80,7 @@ export default function CoinTrackerReviewPage() {
         </section>
 
         <section id="key-features" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Key Features</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Key Features</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               { title: "TurboTax Direct Import", desc: "One-click import of crypto tax data directly into TurboTax. No CSV export/import needed." },
@@ -89,7 +89,7 @@ export default function CoinTrackerReviewPage() {
               { title: "Tax Optimization", desc: "Preview different cost basis methods to find the one that minimizes your tax liability." },
             ].map((f) => (
               <div key={f.title} className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
-                <h3 className="text-sm font-semibold text-white mb-1">{f.title}</h3>
+                <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">{f.title}</h3>
                 <p className="text-xs text-[var(--color-text-secondary)]">{f.desc}</p>
               </div>
             ))}
@@ -97,7 +97,7 @@ export default function CoinTrackerReviewPage() {
         </section>
 
         <section id="pricing" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Pricing</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Pricing</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             CoinTracker pricing is based on the number of transactions per tax year. While it
             is more expensive than some competitors, the TurboTax integration and polished
@@ -112,7 +112,7 @@ export default function CoinTrackerReviewPage() {
               { plan: "Premier", price: "$599", txns: "Unlimited" },
             ].map((p) => (
               <div key={p.plan} className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 text-center">
-                <h3 className="text-sm font-semibold text-white">{p.plan}</h3>
+                <h3 className="text-sm font-semibold text-[var(--color-text)]">{p.plan}</h3>
                 <p className="text-2xl font-bold text-[var(--color-primary)] my-2">{p.price}</p>
                 <p className="text-xs text-[var(--color-text-secondary)]">{p.txns}</p>
               </div>
@@ -121,7 +121,7 @@ export default function CoinTrackerReviewPage() {
         </section>
 
         <section id="turbotax-integration" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">TurboTax Integration</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">TurboTax Integration</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             CoinTracker's TurboTax integration is its standout feature. Once your transactions
             are imported and reviewed, you can push your complete crypto tax data to TurboTax
@@ -137,7 +137,7 @@ export default function CoinTrackerReviewPage() {
         </section>
 
         <section id="defi-support" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">DeFi Support</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">DeFi Support</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             CoinTracker supports DeFi transactions through blockchain address imports. It can
             detect and categorize common DeFi activities including token swaps, lending,
@@ -153,7 +153,7 @@ export default function CoinTrackerReviewPage() {
         </section>
 
         <section id="pros-cons" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Pros & Cons</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Pros & Cons</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
               <h3 className="text-lg font-semibold text-[var(--color-success)] mb-3">Pros</h3>
@@ -178,7 +178,7 @@ export default function CoinTrackerReviewPage() {
         </section>
 
         <section id="verdict" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
             <StarRating rating={4.6} size="lg" />
             <p className="text-[var(--color-text-secondary)] mt-4 mb-4">
@@ -189,7 +189,7 @@ export default function CoinTrackerReviewPage() {
               it from the top spot, but for straightforward exchange-based trading, CoinTracker
               is excellent.
             </p>
-            <a href="https://cryptodegen.com/go/cointracker" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try CoinTracker</a>
+            <a href="https://degen0x.com/go/cointracker" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try CoinTracker</a>
           </div>
         </section>
 

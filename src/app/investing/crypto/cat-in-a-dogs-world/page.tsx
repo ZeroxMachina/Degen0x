@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Cat in a Dogs World (MEW)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Cat in a Dogs World (MEW)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Cat in a Dogs World (MEW), the Solana cat meme coin challenging dog-themed token dominance. Discover MEW tokenomics and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function CatInADogsWorldPage() {
       readTime="8 min read"
       intro="Cat in a Dogs World (MEW) is a Solana-based meme coin that positions itself as the feline challenger to dog-themed meme tokens like Dogecoin, Shiba Inu, and Bonk. Launched in March 2024, MEW quickly gained a large community and achieved a market cap in the hundreds of millions, proving that cat memes have serious staying power in crypto."
       toc={[
-        { id: "what-is", title: "What Is Cat in a Dogs World?", level: 2 },
-        { id: "how-it-works", title: "How Does Cat in a Dogs World Work?", level: 2 },
-        { id: "tokenomics", title: "MEW Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MEW", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-cat-in-a-dogs-world", title: "What Is Cat in a Dogs World?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-cat-in-a-dogs-world-work", title: "How Does Cat in a Dogs World Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "mew-tokenomics", title: "MEW Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-mew", title: "How to Buy MEW", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

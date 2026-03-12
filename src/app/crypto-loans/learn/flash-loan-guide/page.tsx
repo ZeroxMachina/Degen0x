@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Flash Loans in Crypto Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Flash Loans in Crypto Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to flash loans in DeFi. Learn how flash loans work, their use cases, risks, and how they enable arbitrage and liquidation strategies.",
 };
@@ -17,11 +17,16 @@ export default function FlashLoanGuidePage() {
       readTime="9 min read"
       intro="Flash loans are one of DeFi's most innovative and unique financial primitives. They allow users to borrow any amount of assets without collateral, as long as the loan is repaid within the same blockchain transaction. If the loan is not repaid, the entire transaction reverts as if it never happened. Flash loans enable sophisticated strategies like arbitrage, collateral swaps, and self-liquidation that are impossible in traditional finance."
       toc={[
-        { id: "how-they-work", title: "How Flash Loans Work", level: 2 },
-        { id: "use-cases", title: "Flash Loan Use Cases", level: 2 },
-        { id: "protocols", title: "Flash Loan Protocols", level: 2 },
-        { id: "risks-attacks", title: "Risks and Flash Loan Attacks", level: 2 },
-        { id: "getting-started", title: "Getting Started with Flash Loans", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-flash-loans-work", title: "How Flash Loans Work", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "flash-loan-use-cases", title: "Flash Loan Use Cases", level: 2 },
+        { id: "protocols", title: "protocols", level: 2 },
+        { id: "flash-loan-protocols", title: "Flash Loan Protocols", level: 2 },
+        { id: "risks-attacks", title: "risks-attacks", level: 2 },
+        { id: "risks-and-flash-loan-attacks", title: "Risks and Flash Loan Attacks", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started-with-flash-loans", title: "Getting Started with Flash Loans", level: 2 }
       ]}
       faqs={[
         { question: "What is a flash loan?", answer: "A flash loan is an uncollateralized loan that must be borrowed and repaid within a single blockchain transaction. If the borrower cannot repay the full amount plus fees by the end of the transaction, the entire transaction is reverted by the smart contract, meaning the loan never happened. This atomic nature eliminates default risk for the lender." },

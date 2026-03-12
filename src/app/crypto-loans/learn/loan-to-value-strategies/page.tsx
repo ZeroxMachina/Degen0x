@@ -17,10 +17,14 @@ export default function LoanToValueStrategiesPage() {
       readTime="8 min"
       intro="Your loan-to-value ratio is the single most important number in crypto borrowing. It determines your liquidation risk, capital efficiency, and available strategies. Understanding how to set, monitor, and optimize your LTV ratio can mean the difference between profitable borrowing and costly liquidation. This guide covers practical LTV strategies for different risk profiles and market conditions."
       toc={[
-        { id: "optimal-ltv", title: "Finding Your Optimal LTV", level: 2 },
-        { id: "market-conditions", title: "LTV by Market Conditions", level: 2 },
-        { id: "dynamic-management", title: "Dynamic LTV Management", level: 2 },
-        { id: "advanced-strategies", title: "Advanced LTV Strategies", level: 2 },
+        { id: "optimal-ltv", title: "optimal-ltv", level: 2 },
+        { id: "finding-your-optimal-ltv", title: "Finding Your Optimal LTV", level: 2 },
+        { id: "market-conditions", title: "market-conditions", level: 2 },
+        { id: "ltv-by-market-conditions", title: "LTV by Market Conditions", level: 2 },
+        { id: "dynamic-management", title: "dynamic-management", level: 2 },
+        { id: "dynamic-ltv-management", title: "Dynamic LTV Management", level: 2 },
+        { id: "advanced-strategies", title: "advanced-strategies", level: 2 },
+        { id: "advanced-ltv-strategies", title: "Advanced LTV Strategies", level: 2 }
       ]}
       faqs={[
         { question: "What LTV ratio is safe?", answer: "Conservative borrowers maintain 25-35% LTV, providing a large buffer against price drops. Moderate risk tolerance allows 40-50% LTV. Above 60% LTV is aggressive and requires active monitoring. The appropriate level depends on your collateral's volatility and your ability to respond to margin calls." },

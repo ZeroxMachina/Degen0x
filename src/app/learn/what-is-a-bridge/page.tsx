@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Blockchain Bridge? Complete Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Blockchain Bridge? Complete Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what blockchain bridges are, how they work, the different types available, and the security considerations when moving assets between chains.",
 };
@@ -17,10 +17,14 @@ export default function WhatIsABridgePage() {
       readTime="9 min read"
       intro="A blockchain bridge is a protocol that enables the transfer of assets and data between two different blockchain networks. Since blockchains are inherently isolated systems that cannot natively communicate with each other, bridges serve as the connective tissue of the multi-chain ecosystem. They allow users to move tokens from Ethereum to Solana, from Arbitrum to Base, or between any supported networks, unlocking liquidity and enabling cross-chain DeFi strategies."
       toc={[
-        { id: "how-bridges-work", title: "How Blockchain Bridges Work", level: 2 },
+        { id: "how-bridges-work", title: "how-bridges-work", level: 2 },
+        { id: "how-blockchain-bridges-work", title: "How Blockchain Bridges Work", level: 2 },
+        { id: "types-of-bridges", title: "types-of-bridges", level: 2 },
         { id: "types-of-bridges", title: "Types of Bridges", level: 2 },
-        { id: "popular-bridges", title: "Popular Bridges in 2025", level: 2 },
-        { id: "security-risks", title: "Security Risks and Best Practices", level: 2 },
+        { id: "popular-bridges", title: "popular-bridges", level: 2 },
+        { id: "popular-bridges-in-2025", title: "Popular Bridges in 2025", level: 2 },
+        { id: "security-risks", title: "security-risks", level: 2 },
+        { id: "security-risks-and-best-practices", title: "Security Risks and Best Practices", level: 2 }
       ]}
       faqs={[
         {

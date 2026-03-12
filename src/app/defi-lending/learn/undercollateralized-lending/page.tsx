@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Undercollateralized DeFi Lending (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Undercollateralized DeFi Lending (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to undercollateralized lending in DeFi. Learn how protocols enable lending without full collateral, credit assessment on-chain, and the risks involved.",
 };
 
@@ -11,7 +11,16 @@ export default function UndercollateralizedLendingPage() {
   return (
     <LearnPageLayout title="Undercollateralized DeFi Lending" categoryName="DeFi Lending" categorySlug="defi-lending" readTime="8 min read"
       intro="Undercollateralized lending is one of the most ambitious frontiers in DeFi, attempting to replicate the traditional credit system on-chain. Unlike standard DeFi lending that requires 150%+ overcollateralization, undercollateralized protocols extend credit based on reputation, identity, or institutional vetting. This unlocks greater capital efficiency but introduces default risk that overcollateralized DeFi avoids."
-      toc={[{ id: "why-undercollateralized", title: "Why Undercollateralized Lending?", level: 2 }, { id: "approaches", title: "Different Approaches", level: 2 }, { id: "protocols", title: "Key Protocols", level: 2 }, { id: "risks-lessons", title: "Risks and Lessons Learned", level: 2 }]}
+      toc={[
+        { id: "why-undercollateralized", title: "why-undercollateralized", level: 2 },
+        { id: "why-undercollateralized-lending", title: "Why Undercollateralized Lending?", level: 2 },
+        { id: "approaches", title: "approaches", level: 2 },
+        { id: "different-approaches", title: "Different Approaches", level: 2 },
+        { id: "protocols", title: "protocols", level: 2 },
+        { id: "key-protocols", title: "Key Protocols", level: 2 },
+        { id: "risks-lessons", title: "risks-lessons", level: 2 },
+        { id: "risks-and-lessons-learned", title: "Risks and Lessons Learned", level: 2 }
+      ]}
       faqs={[
         { question: "What is undercollateralized lending?", answer: "Undercollateralized lending provides loans where the borrower posts less than 100% collateral relative to the loan value. This requires some form of credit assessment, reputation system, or legal agreement to manage default risk. It enables higher capital efficiency but with higher risk." },
         { question: "How do protocols manage default risk?", answer: "Different protocols use different approaches: credit committees assess institutional borrowers (Maple), community backers perform due diligence (Goldfinch), on-chain credit scoring uses wallet history (TrueFi), and legal agreements provide off-chain recourse. None fully eliminates default risk." },

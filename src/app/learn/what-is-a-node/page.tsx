@@ -17,11 +17,16 @@ export default function WhatIsANodePage() {
       readTime="7 min"
       intro="A node is a computer that runs blockchain software, maintaining a copy of the ledger and participating in the network's operation. Nodes are the fundamental infrastructure of any blockchain — they validate transactions, relay data between peers, store the blockchain's history, and collectively ensure that no single entity can control or censor the network."
       toc={[
+        { id: "what-are-nodes", title: "what-are-nodes", level: 2 },
         { id: "what-are-nodes", title: "What Are Nodes", level: 2 },
-        { id: "types", title: "Types of Nodes", level: 2 },
-        { id: "why-run", title: "Why Run a Node", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-nodes", title: "Types of Nodes", level: 2 },
+        { id: "why-run", title: "why-run", level: 2 },
+        { id: "why-run-a-node", title: "Why Run a Node", level: 2 },
+        { id: "node-requirements", title: "node-requirements", level: 2 },
         { id: "node-requirements", title: "Node Requirements", level: 2 },
-        { id: "node-providers", title: "Node Providers", level: 2 },
+        { id: "node-providers", title: "node-providers", level: 2 },
+        { id: "node-providers", title: "Node Providers", level: 2 }
       ]}
       faqs={[
         { question: "Do I need to run a node to use crypto?", answer: "No. Most users interact with blockchains through wallets and applications that connect to nodes operated by infrastructure providers like Infura or Alchemy. Running your own node provides maximum privacy and trustlessness but is not required for everyday use." },

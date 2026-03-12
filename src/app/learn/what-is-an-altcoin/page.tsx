@@ -18,12 +18,18 @@ export default function WhatIsAnAltcoinPage() {
       readTime="8 min"
       intro="An altcoin — short for alternative coin — is any cryptocurrency other than Bitcoin. From Ethereum and Solana to thousands of smaller tokens, altcoins represent the diverse and rapidly evolving landscape of blockchain innovation beyond Bitcoin's original vision of peer-to-peer digital cash."
       toc={[
-        { id: "definition", title: "What Makes an Altcoin", level: 2 },
-        { id: "categories", title: "Categories of Altcoins", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-makes-an-altcoin", title: "What Makes an Altcoin", level: 2 },
+        { id: "categories", title: "categories", level: 2 },
+        { id: "categories-of-altcoins", title: "Categories of Altcoins", level: 2 },
+        { id: "why-altcoins-exist", title: "why-altcoins-exist", level: 2 },
         { id: "why-altcoins-exist", title: "Why Altcoins Exist", level: 2 },
+        { id: "altcoin-seasons", title: "altcoin-seasons", level: 2 },
         { id: "altcoin-seasons", title: "Altcoin Seasons", level: 2 },
-        { id: "risks", title: "Risks of Altcoin Investing", level: 2 },
-        { id: "evaluation", title: "How to Evaluate Altcoins", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-altcoin-investing", title: "Risks of Altcoin Investing", level: 2 },
+        { id: "evaluation", title: "evaluation", level: 2 },
+        { id: "how-to-evaluate-altcoins", title: "How to Evaluate Altcoins", level: 2 }
       ]}
       faqs={[
         {

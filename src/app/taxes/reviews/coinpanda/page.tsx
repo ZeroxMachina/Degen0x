@@ -10,7 +10,7 @@ const product = {
   pros: ["Competitive pricing", "Strong DeFi and NFT support", "65+ country tax support", "User-friendly interface"],
   cons: ["Smaller company than competitors", "Less brand recognition", "Customer support can be slow", "Some advanced features limited"],
   bestFor: "Budget-conscious users seeking solid DeFi tax support with international compliance",
-  affiliateUrl: "https://cryptodegen.com/go/coinpanda",
+  affiliateUrl: "https://degen0x.com/go/coinpanda",
   category: "taxes",
 };
 

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Cameroon (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Cameroon (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchanges accessible in Cameroon. Find XAF-friendly platforms with MTN Money support and P2P trading options.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesCameroon() {
       readTime="7 min read"
       intro="Cameroon has an active crypto trading community despite limited regulatory clarity. As the largest economy in the Central African CFA franc zone, Cameroon's crypto market is driven by young, tech-engaged users. The BEAC (Bank of Central African States) oversees monetary policy for the XAF zone. Cameroonians primarily access crypto through P2P platforms with mobile money integration."
       toc={[
-        { id: "top-exchanges", title: "Available Exchanges", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "XAF Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "available-exchanges", title: "Available Exchanges", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "xaf-payment-methods", title: "XAF Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing a Platform", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Cameroon?", answer: "The BEAC has not formally authorized crypto but has not enacted a comprehensive ban specific to Cameroon. The Central African Republic's Bitcoin legal tender experiment brought attention to crypto in the CEMAC zone, though Cameroon has not followed suit." },

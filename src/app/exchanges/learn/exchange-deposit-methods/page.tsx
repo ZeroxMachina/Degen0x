@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Deposit Funds on Exchanges (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `How to Deposit Funds on Exchanges (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to deposit funds on crypto exchanges. Bank transfers, cards, wire transfers, crypto deposits, fees, and processing times explained.",
 };
 
@@ -16,13 +16,20 @@ export default function ExchangeDepositMethods() {
       readTime="8 min read"
       intro="Getting funds onto a crypto exchange is the first step in your trading journey. Exchanges support various deposit methods with different fees, processing times, and availability depending on your location. Understanding your options helps you choose the fastest and cheapest way to fund your account."
       toc={[
+        { id: "bank-transfers", title: "bank-transfers", level: 2 },
         { id: "bank-transfers", title: "Bank Transfers", level: 2 },
+        { id: "card-deposits", title: "card-deposits", level: 2 },
         { id: "card-deposits", title: "Card Deposits", level: 2 },
+        { id: "wire-transfers", title: "wire-transfers", level: 2 },
         { id: "wire-transfers", title: "Wire Transfers", level: 2 },
+        { id: "crypto-deposits", title: "crypto-deposits", level: 2 },
         { id: "crypto-deposits", title: "Crypto Deposits", level: 2 },
-        { id: "third-party", title: "Third-Party Payment Methods", level: 2 },
+        { id: "third-party", title: "third-party", level: 2 },
+        { id: "third-party-payment-methods", title: "Third-Party Payment Methods", level: 2 },
+        { id: "fees-comparison", title: "fees-comparison", level: 2 },
         { id: "fees-comparison", title: "Fees Comparison", level: 2 },
-        { id: "tips", title: "Deposit Tips", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "deposit-tips", title: "Deposit Tips", level: 2 }
       ]}
       faqs={[
         { question: "What is the cheapest way to deposit?", answer: "ACH bank transfers in the US and SEPA transfers in Europe are typically free or very low cost. Crypto deposits from another wallet cost only the network fee. Card deposits are the most expensive, usually 2-5%." },

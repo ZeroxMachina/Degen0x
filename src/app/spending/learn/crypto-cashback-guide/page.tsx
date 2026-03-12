@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Earning Crypto Cashback on Purchases (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Earning Crypto Cashback on Purchases (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how to earn Bitcoin and crypto cashback on everyday purchases. Compare crypto debit cards, browser extensions, and cashback apps for maximum rewards.",
 };
 
@@ -16,11 +16,16 @@ export default function CryptoCashbackGuidePage() {
       readTime="8 min"
       intro="Earning cryptocurrency cashback on everyday purchases is one of the easiest ways to accumulate Bitcoin and other digital assets without actively buying them. From crypto debit cards offering 1-8% back to browser extensions that reward online shopping, there are numerous ways to earn crypto passively through your normal spending habits. This guide covers every method for maximizing your crypto cashback earnings."
       toc={[
-        { id: "debit-card-cashback", title: "Crypto Debit Card Cashback", level: 2 },
-        { id: "browser-extensions", title: "Browser Extension Rewards", level: 2 },
-        { id: "cashback-apps", title: "Crypto Cashback Apps", level: 2 },
-        { id: "stacking-rewards", title: "Stacking Multiple Rewards", level: 2 },
-        { id: "tax-implications", title: "Tax Implications of Cashback", level: 2 },
+        { id: "debit-card-cashback", title: "debit-card-cashback", level: 2 },
+        { id: "crypto-debit-card-cashback", title: "Crypto Debit Card Cashback", level: 2 },
+        { id: "browser-extensions", title: "browser-extensions", level: 2 },
+        { id: "browser-extension-rewards", title: "Browser Extension Rewards", level: 2 },
+        { id: "cashback-apps", title: "cashback-apps", level: 2 },
+        { id: "crypto-cashback-apps", title: "Crypto Cashback Apps", level: 2 },
+        { id: "stacking-rewards", title: "stacking-rewards", level: 2 },
+        { id: "stacking-multiple-rewards", title: "Stacking Multiple Rewards", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications-of-cashback", title: "Tax Implications of Cashback", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto cashback taxable?", answer: "In the US, crypto cashback from purchases is generally treated as a discount on the purchase rather than income, similar to traditional credit card rewards. However, sign-up bonuses and referral rewards may be taxable as ordinary income. Tax treatment varies by jurisdiction, so consult a tax professional for your specific situation." },

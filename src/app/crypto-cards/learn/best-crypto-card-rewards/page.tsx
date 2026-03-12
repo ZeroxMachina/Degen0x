@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Card Rewards Programs (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Card Rewards Programs (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto card rewards programs. Understand cashback tiers, token rewards, and premium perks to find the highest-value crypto card for your spending.",
 };
 
@@ -16,11 +16,16 @@ export default function BestCryptoCardRewardsPage() {
       readTime="10 min"
       intro="Crypto card rewards programs vary dramatically in structure, rates, and value. Some offer straightforward cashback in Bitcoin while others use tiered staking systems with proprietary tokens. Understanding how each rewards program works is essential for choosing the card that provides the most value for your spending patterns. This guide compares the major crypto card rewards programs and helps you calculate which delivers the best return."
       toc={[
-        { id: "cashback-comparison", title: "Cashback Rate Comparison", level: 2 },
-        { id: "staking-vs-no-staking", title: "Staking vs. No-Staking Rewards", level: 2 },
-        { id: "premium-perks", title: "Premium Perks and Benefits", level: 2 },
-        { id: "reward-token-risks", title: "Reward Token Value Risks", level: 2 },
-        { id: "maximizing-rewards", title: "Maximizing Your Rewards", level: 2 },
+        { id: "cashback-comparison", title: "cashback-comparison", level: 2 },
+        { id: "cashback-rate-comparison", title: "Cashback Rate Comparison", level: 2 },
+        { id: "staking-vs-no-staking", title: "staking-vs-no-staking", level: 2 },
+        { id: "staking-vs-no-staking-rewards", title: "Staking vs. No-Staking Rewards", level: 2 },
+        { id: "premium-perks", title: "premium-perks", level: 2 },
+        { id: "premium-perks-and-benefits", title: "Premium Perks and Benefits", level: 2 },
+        { id: "reward-token-risks", title: "reward-token-risks", level: 2 },
+        { id: "reward-token-value-risks", title: "Reward Token Value Risks", level: 2 },
+        { id: "maximizing-rewards", title: "maximizing-rewards", level: 2 },
+        { id: "maximizing-your-rewards", title: "Maximizing Your Rewards", level: 2 }
       ]}
       faqs={[
         { question: "Which crypto card has the highest cashback?", answer: "Crypto.com Obsidian offers 5% but requires $400,000 in CRO staking. Wirex offers up to 8% with WXT staking. Plutus offers up to 8% with a premium subscription. For zero-staking options, Coinbase Card offers up to 4% on select altcoins and Fold Card offers up to 1.5% guaranteed in Bitcoin." },

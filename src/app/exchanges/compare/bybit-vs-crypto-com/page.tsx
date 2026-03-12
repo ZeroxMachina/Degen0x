@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bybit vs Crypto.com (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Bybit vs Crypto.com (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Bybit vs Crypto.com. Trading fees, derivatives, Visa card, features, and which platform suits your crypto needs.",
 };
 
@@ -16,12 +16,18 @@ export default function BybitVsCryptoCom() {
       readTime="8 min read"
       intro="Bybit and Crypto.com serve different crypto audiences. Bybit is a derivatives-focused exchange popular with active traders, while Crypto.com offers a broader consumer ecosystem with its popular Visa card. This comparison helps you determine which platform aligns with your crypto goals."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "features", title: "features", level: 2 },
         { id: "features", title: "Features", level: 2 },
-        { id: "derivatives", title: "Derivatives Trading", level: 2 },
-        { id: "ecosystem", title: "Ecosystem and Cards", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "derivatives", title: "derivatives", level: 2 },
+        { id: "derivatives-trading", title: "Derivatives Trading", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
+        { id: "ecosystem-and-cards", title: "Ecosystem and Cards", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Which has lower trading fees?", answer: "Bybit has lower trading fees overall, especially for derivatives (0.02% maker, 0.055% taker). Crypto.com's exchange fees are competitive but app purchases carry higher spreads." },

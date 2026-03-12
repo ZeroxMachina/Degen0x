@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Cross-Border Payments with Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Cross-Border Payments with Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Learn how cryptocurrency enables faster, cheaper cross-border payments. Compare crypto solutions to SWIFT transfers, understand stablecoin corridors, and find the best platforms.",
 };
 
@@ -16,11 +16,16 @@ export default function CrossBorderPaymentsPage() {
       readTime="10 min"
       intro="Traditional cross-border payments through the SWIFT banking network are slow, expensive, and opaque. International wire transfers cost $25-50 per transaction, take 3-5 business days, and involve unpredictable intermediary fees. Cryptocurrency offers a fundamentally different approach: borderless value transfer in minutes for cents. This guide explains how crypto is disrupting international payments for individuals, businesses, and financial institutions."
       toc={[
-        { id: "problems-traditional", title: "Problems with Traditional Cross-Border Payments", level: 2 },
-        { id: "crypto-solutions", title: "How Crypto Solves Cross-Border Payments", level: 2 },
-        { id: "stablecoin-corridors", title: "Stablecoin Payment Corridors", level: 2 },
-        { id: "business-payments", title: "Business Cross-Border Payments", level: 2 },
-        { id: "regulatory-landscape", title: "Regulatory Landscape", level: 2 },
+        { id: "problems-traditional", title: "problems-traditional", level: 2 },
+        { id: "problems-with-traditional-cross-border-payments", title: "Problems with Traditional Cross-Border Payments", level: 2 },
+        { id: "crypto-solutions", title: "crypto-solutions", level: 2 },
+        { id: "how-crypto-solves-cross-border-payments", title: "How Crypto Solves Cross-Border Payments", level: 2 },
+        { id: "stablecoin-corridors", title: "stablecoin-corridors", level: 2 },
+        { id: "stablecoin-payment-corridors", title: "Stablecoin Payment Corridors", level: 2 },
+        { id: "business-payments", title: "business-payments", level: 2 },
+        { id: "business-cross-border-payments", title: "Business Cross-Border Payments", level: 2 },
+        { id: "regulatory-landscape", title: "regulatory-landscape", level: 2 },
+        { id: "regulatory-landscape", title: "Regulatory Landscape", level: 2 }
       ]}
       faqs={[
         { question: "How fast are crypto cross-border payments?", answer: "Speed depends on the blockchain used. Bitcoin on-chain transfers take 10-60 minutes. Lightning Network payments settle in under a second. Stablecoins on Solana or Stellar settle in 1-5 seconds. Even the slowest crypto option is dramatically faster than the 3-5 business days required for traditional SWIFT transfers." },

@@ -11,7 +11,18 @@ export default function LiquidityExplainedPage() {
   return (
     <LearnPageLayout title="Liquidity Explained: Why It Matters in Crypto" categoryName="Crypto Exchanges" categorySlug="exchanges" readTime="8 min"
       intro="Liquidity is one of the most important yet misunderstood concepts in crypto trading. It directly affects the prices you get, how quickly you can trade, and the overall health of a market. Understanding liquidity helps you choose better exchanges, trade more efficiently, and avoid costly mistakes."
-      toc={[{id:"what-is-liquidity",title:"What Is Liquidity",level:2},{id:"measuring",title:"Measuring Liquidity",level:2},{id:"why-it-matters",title:"Why Liquidity Matters for Traders",level:2},{id:"exchange-liquidity",title:"Comparing Exchange Liquidity",level:2},{id:"defi-liquidity",title:"Liquidity in DeFi",level:2}]}
+      toc={[
+        { id: "what-is-liquidity", title: "what-is-liquidity", level: 2 },
+        { id: "what-is-liquidity", title: "What Is Liquidity", level: 2 },
+        { id: "measuring", title: "measuring", level: 2 },
+        { id: "measuring-liquidity", title: "Measuring Liquidity", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-liquidity-matters-for-traders", title: "Why Liquidity Matters for Traders", level: 2 },
+        { id: "exchange-liquidity", title: "exchange-liquidity", level: 2 },
+        { id: "comparing-exchange-liquidity", title: "Comparing Exchange Liquidity", level: 2 },
+        { id: "defi-liquidity", title: "defi-liquidity", level: 2 },
+        { id: "liquidity-in-defi", title: "Liquidity in DeFi", level: 2 }
+      ]}
       faqs={[{question:"Which crypto exchange has the most liquidity?",answer:"Binance has the deepest liquidity globally across the most trading pairs. For US traders, Coinbase and Kraken offer the best liquidity on USD pairs."},{question:"Is high volume the same as high liquidity?",answer:"Volume and liquidity are related but distinct. Volume measures total trading activity over a period. Liquidity measures how much can be traded right now without impacting price. An exchange can have high volume but poor liquidity if most trades are small."},{question:"Can liquidity change quickly?",answer:"Yes. Liquidity can evaporate during market panics as market makers withdraw orders. This is why spreads widen and slippage increases during volatile events."}]}
       relatedArticles={[{title:"Slippage Explained",href:"/exchanges/learn/slippage-explained",category:"Exchanges"},{title:"How to Read the Order Book",href:"/exchanges/learn/how-to-read-order-book",category:"Exchanges"},{title:"AMM Explained",href:"/exchanges/learn/amm-explained",category:"Exchanges"}]}
     >

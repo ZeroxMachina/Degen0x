@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `The Ethereum Ecosystem Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `The Ethereum Ecosystem Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Explore the Ethereum ecosystem including DeFi, NFTs, Layer 2s, staking, and more. Learn about the key projects and why Ethereum remains the leading smart contract platform.",
 };
@@ -17,10 +17,14 @@ export default function EthereumEcosystemGuidePage() {
       readTime="11 min read"
       intro="Ethereum is the largest and most mature smart contract platform, hosting the majority of DeFi value, NFT activity, and developer talent in the blockchain space. Its ecosystem spans thousands of applications across DeFi, NFTs, gaming, identity, and real-world asset tokenization. With the transition to proof of stake, the growth of Layer 2 scaling solutions, and ongoing protocol upgrades, Ethereum continues to evolve as the foundational layer of the decentralized internet."
       toc={[
-        { id: "ecosystem-overview", title: "Ethereum Ecosystem Overview", level: 2 },
+        { id: "ecosystem-overview", title: "ecosystem-overview", level: 2 },
+        { id: "ethereum-ecosystem-overview", title: "Ethereum Ecosystem Overview", level: 2 },
+        { id: "defi-landscape", title: "defi-landscape", level: 2 },
         { id: "defi-landscape", title: "DeFi Landscape", level: 2 },
-        { id: "layer-2-ecosystem", title: "The Layer 2 Ecosystem", level: 2 },
-        { id: "staking-and-infrastructure", title: "Staking and Infrastructure", level: 2 },
+        { id: "layer-2-ecosystem", title: "layer-2-ecosystem", level: 2 },
+        { id: "the-layer-2-ecosystem", title: "The Layer 2 Ecosystem", level: 2 },
+        { id: "staking-and-infrastructure", title: "staking-and-infrastructure", level: 2 },
+        { id: "staking-and-infrastructure", title: "Staking and Infrastructure", level: 2 }
       ]}
       faqs={[
         {

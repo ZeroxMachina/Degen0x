@@ -1,8 +1,36 @@
 /**
- * CoinGecko Free API utilities
- * Fetches live prices with graceful fallback to base prices
- * No API key required for the free tier
+ * CoinGecko Free API utilities and helpers
+ * Fetches live crypto prices and market data with graceful fallback
+ * No API key required - uses CoinGecko's free tier
  */
+
+// ── TypeScript Types ──────────────────────────────────────────────────────────
+
+/**
+ * Response format from /api/prices endpoint
+ */
+export interface MarketPrice {
+  id: string;
+  symbol: string;
+  name: string;
+  image: string;
+  current_price: number;
+  market_cap: number | null;
+  market_cap_rank: number | null;
+  price_change_percentage_24h: number | null;
+  price_change_percentage_7d: number | null;
+  sparkline_in_7d: number[];
+  total_volume: number | null;
+}
+
+/**
+ * Error response structure
+ */
+export interface ApiError {
+  error: string;
+}
+
+// ── Constants ─────────────────────────────────────────────────────────────────
 
 export const COINGECKO_IDS = [
   "bitcoin",
@@ -276,3 +304,68 @@ const MOCK_TOP_COINS: CoinMarketData[] = [
     last_updated: new Date().toISOString(),
   },
 ];
+
+// ── Client Helper Functions ───────────────────────────────────────────────────
+
+/**
+ * Fetch top 20 crypto prices from the /api/prices endpoint
+ * Returns live market data with caching and fallback support
+ *
+ * @returns Promise resolving to array of MarketPrice objects or error
+ *
+ * @example
+ * const prices = await fetchPrices();
+ * if ('error' in prices) {
+ *   console.error(prices.error);
+ * } else {
+ *   prices.forEach(coin => {
+ *     console.log(`${coin.name}: $${coin.current_price}`);
+ *   });
+ * }
+ */
+export async function fetchPrices(): Promise<MarketPrice[] | ApiError> {
+  try {
+    const res = await fetch(
+      `${typeof window !== "undefined" ? "" : ""}${process.env.NEXT_PUBLIC_API_URL || ""}/api/prices`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        // Revalidate cache every 60 seconds for server-side calls
+        next: { revalidate: 60 },
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error(`API returned ${res.status}`);
+    }
+
+    const data = await res.json();
+
+    // Check if response is an error
+    if (data.error) {
+      console.warn("Prices API error:", data.error);
+      return data;
+    }
+
+    // Validate that we got an array
+    if (!Array.isArray(data)) {
+      throw new Error("Invalid response format from prices API");
+    }
+
+    return data as MarketPrice[];
+  } catch (error) {
+    const message =
+      error instanceof Error
+        ? error.message
+        : "Unknown error fetching prices";
+
+    console.error("Failed to fetch prices:", message);
+
+    return {
+      error: `Failed to fetch crypto prices: ${message}`,
+    };
+  }
+}

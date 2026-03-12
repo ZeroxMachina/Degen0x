@@ -18,13 +18,20 @@ export default function WhatIsLayer2Page() {
       readTime="9 min"
       intro="Layer 2 (L2) refers to a category of scaling solutions built on top of existing blockchains — primarily Ethereum — that process transactions off the main chain while inheriting its security guarantees. L2s dramatically reduce transaction costs and increase throughput, making blockchain applications accessible to millions of users who were previously priced out by high fees."
       toc={[
-        { id: "scaling-problem", title: "The Scaling Problem", level: 2 },
-        { id: "how-l2s-work", title: "How Layer 2s Work", level: 2 },
-        { id: "types-of-l2s", title: "Types of Layer 2 Solutions", level: 2 },
+        { id: "scaling-problem", title: "scaling-problem", level: 2 },
+        { id: "the-scaling-problem", title: "The Scaling Problem", level: 2 },
+        { id: "how-l2s-work", title: "how-l2s-work", level: 2 },
+        { id: "how-layer-2s-work", title: "How Layer 2s Work", level: 2 },
+        { id: "types-of-l2s", title: "types-of-l2s", level: 2 },
+        { id: "types-of-layer-2-solutions", title: "Types of Layer 2 Solutions", level: 2 },
+        { id: "optimistic-rollups", title: "optimistic-rollups", level: 2 },
         { id: "optimistic-rollups", title: "Optimistic Rollups", level: 2 },
+        { id: "zk-rollups", title: "zk-rollups", level: 2 },
         { id: "zk-rollups", title: "ZK Rollups", level: 2 },
-        { id: "l2-ecosystem", title: "The L2 Ecosystem", level: 2 },
-        { id: "using-l2s", title: "Using Layer 2 Networks", level: 2 },
+        { id: "l2-ecosystem", title: "l2-ecosystem", level: 2 },
+        { id: "the-l2-ecosystem", title: "The L2 Ecosystem", level: 2 },
+        { id: "using-l2s", title: "using-l2s", level: 2 },
+        { id: "using-layer-2-networks", title: "Using Layer 2 Networks", level: 2 }
       ]}
       faqs={[
         {

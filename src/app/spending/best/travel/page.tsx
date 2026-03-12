@@ -109,7 +109,7 @@ export default function BestTravelCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Cards for Travel ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -126,9 +126,9 @@ export default function BestTravelCardsPage() {
           performance on international transactions, ATM withdrawals, and merchant acceptance.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          The <strong className="text-white">Crypto.com Visa Card</strong> (Jade Green or higher) is our
+          The <strong className="text-[var(--color-text)]">Crypto.com Visa Card</strong> (Jade Green or higher) is our
           top travel pick thanks to its combination of zero FX fees, airport lounge access, and strong
-          cashback rates abroad. For multi-currency flexibility, the <strong className="text-white">Wirex Card</strong> supports
+          cashback rates abroad. For multi-currency flexibility, the <strong className="text-[var(--color-text)]">Wirex Card</strong> supports
           over 150 currencies with interbank rates.
         </p>
       </div>
@@ -141,11 +141,11 @@ export default function BestTravelCardsPage() {
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-center gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-[var(--color-text)] font-bold">
                   {index + 1}
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white">{card.name}</h3>
+                  <h3 className="text-lg font-semibold text-[var(--color-text)]">{card.name}</h3>
                   <div className="text-sm text-[var(--color-accent)]">{card.rating}/5</div>
                 </div>
               </div>
@@ -199,33 +199,33 @@ export default function BestTravelCardsPage() {
 
       {/* Travel Tips */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Travel Tips for Crypto Card Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Travel Tips for Crypto Card Users</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Always choose local currency at the POS</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Always choose local currency at the POS</h3>
               <p className="text-sm">When paying abroad, always select the local currency rather than your home currency. Dynamic currency conversion (DCC) offered by merchants adds a hidden markup of 3-7%.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Carry a backup payment method</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Carry a backup payment method</h3>
               <p className="text-sm">Crypto cards can occasionally be declined at certain international merchants. Always carry a traditional card or cash as backup, especially in developing countries.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Check ATM withdrawal limits before your trip</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Check ATM withdrawal limits before your trip</h3>
               <p className="text-sm">Know your free ATM withdrawal allowance and daily limits. Plan larger withdrawals to minimize the number of transactions and avoid exceeding your free monthly limit.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">4.</span>
             <div>
-              <h3 className="text-white font-semibold">Consider stablecoin funding for volatile markets</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Consider stablecoin funding for volatile markets</h3>
               <p className="text-sm">If crypto markets are volatile during your trip, fund your card with stablecoins like USDC or USDT to avoid losing purchasing power from price swings mid-vacation.</p>
             </div>
           </div>

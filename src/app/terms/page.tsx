@@ -12,7 +12,7 @@ export default function TermsPage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Terms of Service", href: "/terms" }]} />
 
-      <h1 className="text-4xl font-bold text-white mb-6">Terms of Service</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-6">Terms of Service</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: March 2026</p>
 
       <div className="prose-crypto">
@@ -50,7 +50,7 @@ export default function TermsPage() {
 
         <h2>Contact</h2>
         <p>
-          For questions about these Terms, please contact us at legal@cryptodegen.com.
+          For questions about these Terms, please contact us at legal@degen0x.com.
         </p>
       </div>
     </div>

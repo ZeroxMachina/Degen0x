@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Degen? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Degen? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what degen means in crypto, the degen culture, common degen strategies, risks, and how the term has evolved in the DeFi community.",
 };
@@ -17,11 +17,16 @@ export default function DegenPage() {
       readTime="4 min"
       intro="'Degen' (short for 'degenerate') is crypto slang for a high-risk trader or investor who embraces speculative and often reckless trading strategies. Originally a self-deprecating term, it has evolved into a badge of honor in some crypto communities. Degens are known for aping into new tokens, yield farming with untested protocols, and prioritizing potential gains over risk management."
       toc={[
-        { id: "definition", title: "What Is a Degen?", level: 2 },
-        { id: "culture", title: "Degen Culture", level: 2 },
-        { id: "strategies", title: "Common Degen Strategies", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-degen", title: "What Is a Degen?", level: 2 },
+        { id: "culture", title: "culture", level: 2 },
+        { id: "degen-culture", title: "Degen Culture", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "common-degen-strategies", title: "Common Degen Strategies", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
         { id: "why-it-matters", title: "Why It Matters", level: 2 },
-        { id: "risks", title: "The Reality Check", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "the-reality-check", title: "The Reality Check", level: 2 }
       ]}
       faqs={[
         {

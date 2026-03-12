@@ -17,12 +17,18 @@ export default function StakeInjectivePage() {
       readTime="9 min"
       intro="Injective staking offers INJ holders approximately 10-15% APY while supporting a blockchain built specifically for decentralized finance applications. With a unique burn auction mechanism that deflates INJ supply and strong Cosmos ecosystem integration, staking INJ provides both yield and exposure to deflationary tokenomics."
       toc={[
-        { id: "overview", title: "Injective Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake INJ Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Injective", level: 2 },
-        { id: "validators", title: "Validators & Delegation", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "injective-staking-overview", title: "Injective Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-inj-step-by-step", title: "How to Stake INJ Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-injective", title: "Risks of Staking Injective", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-delegation", title: "Validators & Delegation", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         { question: "What APY does Injective staking offer?", answer: "Injective staking typically yields 10-15% APY depending on validator commission and total INJ staked. The deflationary burn auction mechanism also reduces supply over time, providing additional value to stakers beyond direct yield." },

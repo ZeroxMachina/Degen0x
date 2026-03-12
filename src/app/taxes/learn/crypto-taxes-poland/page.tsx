@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Taxes in Poland (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Taxes in Poland (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete guide to cryptocurrency taxes in Poland. Learn about the flat 19% tax rate, PIT-38 reporting, and how Polish crypto investors should file their taxes.",
 };
@@ -17,11 +17,16 @@ export default function CryptoTaxesPolandPage() {
       readTime="8 min read"
       intro="Poland applies a straightforward flat 19% tax on cryptocurrency capital gains. Since 2019, Poland has had specific provisions for virtual currency taxation under the Personal Income Tax (PIT) Act. Crypto gains are classified as capital gains and reported separately from other income. The rules are relatively clear compared to many European countries, though DeFi and newer crypto activities present some interpretive challenges. This guide covers everything Polish crypto investors need to know for compliance."
       toc={[
-        { id: "tax-rate", title: "The 19% Flat Tax Rate", level: 2 },
-        { id: "taxable-events", title: "What Is Taxable", level: 2 },
-        { id: "pit-38", title: "PIT-38 Reporting", level: 2 },
-        { id: "loss-carryforward", title: "Loss Carry-Forward Rules", level: 2 },
-        { id: "defi-special", title: "DeFi and Special Situations", level: 2 },
+        { id: "tax-rate", title: "tax-rate", level: 2 },
+        { id: "the-19-flat-tax-rate", title: "The 19% Flat Tax Rate", level: 2 },
+        { id: "taxable-events", title: "taxable-events", level: 2 },
+        { id: "what-is-taxable", title: "What Is Taxable", level: 2 },
+        { id: "pit-38", title: "pit-38", level: 2 },
+        { id: "pit-38-reporting", title: "PIT-38 Reporting", level: 2 },
+        { id: "loss-carryforward", title: "loss-carryforward", level: 2 },
+        { id: "loss-carry-forward-rules", title: "Loss Carry-Forward Rules", level: 2 },
+        { id: "defi-special", title: "defi-special", level: 2 },
+        { id: "defi-and-special-situations", title: "DeFi and Special Situations", level: 2 }
       ]}
       faqs={[
         { question: "What is the crypto tax rate in Poland?", answer: "Poland applies a flat 19% tax on net cryptocurrency capital gains. This rate applies to all crypto investors regardless of the amount of gain. It is reported separately from other income on the PIT-38 tax return." },

@@ -16,10 +16,14 @@ export default function SolanaVsEthereumNftsComparePage() {
       readTime="10 min"
       intro="Comparing the two largest NFT ecosystems across cost, speed, marketplace options, collection quality, developer tools, and long-term prospects for collectors and creators."
       toc={[
-        { id: "section-1", title: "Ecosystem Overview", level: 2 },
-        { id: "section-2", title: "Cost and Speed Comparison", level: 2 },
-        { id: "section-3", title: "Marketplace and Community", level: 2 },
-        { id: "section-4", title: "Which to Choose", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "ecosystem-overview", title: "Ecosystem Overview", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "cost-and-speed-comparison", title: "Cost and Speed Comparison", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "marketplace-and-community", title: "Marketplace and Community", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "which-to-choose", title: "Which to Choose", level: 2 }
       ]}
       faqs={[
         { question: "Is Solana or Ethereum better for NFTs?", answer: "Each has advantages. Ethereum has higher value collections, more established marketplaces, and greater cultural cachet. Solana offers dramatically lower costs, faster transactions, and is growing rapidly. The best choice depends on your goals, budget, and preferred community." },

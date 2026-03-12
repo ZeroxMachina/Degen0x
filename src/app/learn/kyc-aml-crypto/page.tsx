@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `KYC and AML in Crypto: What You Need to Know (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `KYC and AML in Crypto: What You Need to Know (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand KYC and AML requirements in crypto: why exchanges require identity verification, how anti-money laundering rules work, the Travel Rule, privacy implications, and compliance best practices.",
 };
@@ -17,10 +17,14 @@ export default function KycAmlCryptoPage() {
       readTime="8 min read"
       intro="Know Your Customer (KYC) and Anti-Money Laundering (AML) regulations are the compliance frameworks that crypto exchanges and service providers must follow to prevent financial crime. Originally developed for traditional banking, these requirements have been extended to the crypto industry as it has grown in scale and mainstream adoption. Understanding KYC/AML is important for all crypto users, as it affects how you access exchanges, the information you must provide, and the regulatory environment that shapes the industry."
       toc={[
-        { id: "what-is-kyc", title: "What Is KYC in Crypto?", level: 2 },
-        { id: "aml-framework", title: "The AML Framework", level: 2 },
-        { id: "travel-rule", title: "The Travel Rule", level: 2 },
-        { id: "privacy-debate", title: "The Privacy vs Compliance Debate", level: 2 },
+        { id: "what-is-kyc", title: "what-is-kyc", level: 2 },
+        { id: "what-is-kyc-in-crypto", title: "What Is KYC in Crypto?", level: 2 },
+        { id: "aml-framework", title: "aml-framework", level: 2 },
+        { id: "the-aml-framework", title: "The AML Framework", level: 2 },
+        { id: "travel-rule", title: "travel-rule", level: 2 },
+        { id: "the-travel-rule", title: "The Travel Rule", level: 2 },
+        { id: "privacy-debate", title: "privacy-debate", level: 2 },
+        { id: "the-privacy-vs-compliance-debate", title: "The Privacy vs Compliance Debate", level: 2 }
       ]}
       faqs={[
         {

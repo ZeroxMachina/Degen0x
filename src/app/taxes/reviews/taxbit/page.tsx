@@ -39,7 +39,7 @@ export default function TaxBitReviewPage() {
 
       <article>
         <header className="mb-8">
-          <h1 className="text-4xl font-bold text-white mb-4">TaxBit Review {CURRENT_YEAR}</h1>
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">TaxBit Review {CURRENT_YEAR}</h1>
           <div className="flex items-center gap-4 mb-4">
             <StarRating rating={4.5} size="lg" />
             <span className="text-sm text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</span>
@@ -50,14 +50,14 @@ export default function TaxBitReviewPage() {
             major exchanges, TaxBit prioritizes accuracy and regulatory compliance above all else.
           </p>
           <div className="mt-4">
-            <a href="https://cryptodegen.com/go/taxbit" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try TaxBit Free</a>
+            <a href="https://degen0x.com/go/taxbit" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try TaxBit Free</a>
           </div>
         </header>
 
         <TableOfContents items={toc} />
 
         <section id="overview" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Overview</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Overview</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             TaxBit was founded in 2018 by CPAs and tax attorneys, giving it deep expertise in
             tax compliance. The company provides tax information reporting infrastructure to
@@ -74,7 +74,7 @@ export default function TaxBitReviewPage() {
         </section>
 
         <section id="key-features" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Key Features</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Key Features</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               { title: "Free Through Partners", desc: "Free tax reports for users of Coinbase, Gemini, and other partner exchanges." },
@@ -83,7 +83,7 @@ export default function TaxBitReviewPage() {
               { title: "Enterprise-Grade Accuracy", desc: "The same engine used by exchanges for their regulatory reporting." },
             ].map((f) => (
               <div key={f.title} className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
-                <h3 className="text-sm font-semibold text-white mb-1">{f.title}</h3>
+                <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">{f.title}</h3>
                 <p className="text-xs text-[var(--color-text-secondary)]">{f.desc}</p>
               </div>
             ))}
@@ -91,7 +91,7 @@ export default function TaxBitReviewPage() {
         </section>
 
         <section id="pricing" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Pricing</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Pricing</h2>
           <p className="text-[var(--color-text-secondary)]">
             TaxBit is free for individual users who access it through partner exchanges. This
             makes it the most cost-effective option for users who primarily trade on supported
@@ -101,7 +101,7 @@ export default function TaxBitReviewPage() {
         </section>
 
         <section id="pros-cons" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Pros & Cons</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Pros & Cons</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
               <h3 className="text-lg font-semibold text-[var(--color-success)] mb-3">Pros</h3>
@@ -126,7 +126,7 @@ export default function TaxBitReviewPage() {
         </section>
 
         <section id="verdict" className="mb-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
             <StarRating rating={4.5} size="lg" />
             <p className="text-[var(--color-text-secondary)] mt-4 mb-4">
@@ -135,7 +135,7 @@ export default function TaxBitReviewPage() {
               focus provide confidence in your tax filing. However, users with diverse exchange
               activity or heavy DeFi usage may find Koinly or CryptoTaxCalculator more suitable.
             </p>
-            <a href="https://cryptodegen.com/go/taxbit" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try TaxBit Free</a>
+            <a href="https://degen0x.com/go/taxbit" target="_blank" rel="noopener noreferrer sponsored" className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium">Try TaxBit Free</a>
           </div>
         </section>
 

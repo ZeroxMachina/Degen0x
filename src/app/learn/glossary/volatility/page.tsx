@@ -18,10 +18,14 @@ export default function VolatilityGlossaryPage() {
       readTime="5 min"
       intro="Volatility in cryptocurrency measures the degree and speed of price changes over a given period. Crypto markets are known for their high volatility, with assets regularly experiencing daily price swings of 5-10% or more, creating both significant opportunities and risks for participants."
       toc={[
+        { id: "definition", title: "definition", level: 2 },
         { id: "definition", title: "Definition", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
         { id: "how-it-works", title: "How It Works", level: 2 },
-        { id: "examples", title: "Examples & Use Cases", level: 2 },
-        { id: "why-it-matters", title: "Why It Matters", level: 2 },
+        { id: "examples", title: "examples", level: 2 },
+        { id: "examples-use-cases", title: "Examples & Use Cases", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-it-matters", title: "Why It Matters", level: 2 }
       ]}
       faqs={[
         { question: "Why is cryptocurrency so volatile?", answer: "Crypto's high volatility stems from several factors: relatively small market size compared to traditional assets, 24/7 trading with no circuit breakers, speculative trading driven by sentiment, regulatory uncertainty, low liquidity for many tokens, and the nascent nature of the technology where fundamental value is still being determined by the market." },

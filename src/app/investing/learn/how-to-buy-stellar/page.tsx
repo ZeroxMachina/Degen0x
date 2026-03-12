@@ -16,10 +16,14 @@ export default function HowToBuyStellarPage() {
       readTime="8 min"
       intro="Stellar is a blockchain network designed for fast and affordable cross-border payments and asset tokenization. Co-founded by Jed McCaleb in 2014, Stellar has partnered with major financial institutions and governments to modernize payment infrastructure. This guide walks you through buying XLM step by step."
       toc={[
+        { id: "what-is-stellar", title: "what-is-stellar", level: 2 },
         { id: "what-is-stellar", title: "What Is Stellar?", level: 2 },
-        { id: "where-to-buy", title: "Where to Buy Stellar", level: 2 },
-        { id: "step-by-step", title: "Step-by-Step Purchase Guide", level: 2 },
-        { id: "storage", title: "Storing Your XLM", level: 2 },
+        { id: "where-to-buy", title: "where-to-buy", level: 2 },
+        { id: "where-to-buy-stellar", title: "Where to Buy Stellar", level: 2 },
+        { id: "step-by-step", title: "step-by-step", level: 2 },
+        { id: "step-by-step-purchase-guide", title: "Step-by-Step Purchase Guide", level: 2 },
+        { id: "storage", title: "storage", level: 2 },
+        { id: "storing-your-xlm", title: "Storing Your XLM", level: 2 }
       ]}
       faqs={[
         { question: "What makes Stellar different from other cryptocurrencies?", answer: "Stellar focuses specifically on cross-border payments and financial inclusion. It uses the Stellar Consensus Protocol (SCP) instead of proof-of-work or proof-of-stake, enabling transactions that settle in 3-5 seconds with fees under one cent. Stellar has partnerships with IBM, MoneyGram, and several central banks exploring digital currencies." },

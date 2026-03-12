@@ -21,7 +21,7 @@ const products: Product[] = [
     cons: ["Higher gas costs on mainnet", "Variable rates fluctuate", "Complex for newcomers"],
     fees: "Variable supply/borrow spread",
     bestFor: "Most Ethereum DeFi users",
-    affiliateUrl: "https://cryptodegen.com/go/aave",
+    affiliateUrl: "https://degen0x.com/go/aave",
     category: "defi-lending",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     cons: ["Fewer assets than Aave", "Higher mainnet gas costs", "V3 has fewer markets"],
     fees: "Variable supply/borrow spread",
     bestFor: "Conservative Ethereum lenders",
-    affiliateUrl: "https://cryptodegen.com/go/compound",
+    affiliateUrl: "https://degen0x.com/go/compound",
     category: "defi-lending",
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     cons: ["Dependent on underlying protocols", "P2P matching not guaranteed", "Ethereum gas costs apply"],
     fees: "Improved spread vs base protocols",
     bestFor: "Rate-conscious Ethereum users",
-    affiliateUrl: "https://cryptodegen.com/go/morpho",
+    affiliateUrl: "https://degen0x.com/go/morpho",
     category: "defi-lending",
   },
   {
@@ -58,7 +58,7 @@ const products: Product[] = [
     cons: ["Primarily DAI-focused", "Smaller market than Aave", "Limited asset variety"],
     fees: "Governance-set rates",
     bestFor: "DAI-focused Ethereum users",
-    affiliateUrl: "https://cryptodegen.com/go/spark",
+    affiliateUrl: "https://degen0x.com/go/spark",
     category: "defi-lending",
   },
   {
@@ -70,7 +70,7 @@ const products: Product[] = [
     cons: ["10% fee on staking rewards", "Centralization concerns", "stETH depeg risk"],
     fees: "10% of staking rewards",
     bestFor: "ETH holders wanting liquid staking",
-    affiliateUrl: "https://cryptodegen.com/go/lido",
+    affiliateUrl: "https://degen0x.com/go/lido",
     category: "defi-lending",
   },
 ];
@@ -86,14 +86,14 @@ export default function EthereumPage() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Ethereum", href: "/defi-lending/best/ethereum" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-4xl font-bold text-white mb-4">Best Ethereum DeFi Lending Protocols ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Ethereum DeFi Lending Protocols ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Ethereum remains the home of DeFi lending. The original blockchain for decentralized finance hosts the most mature, battle-tested, and liquid lending protocols in the ecosystem. While gas costs on mainnet are higher than Layer 2 alternatives, the security guarantees, composability options, and protocol maturity of Ethereum mainnet DeFi are unmatched.
         </p>
         <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-          <strong className="text-white">Aave V3</strong> is our top pick for Ethereum mainnet lending thanks to its deep liquidity, wide asset support, and proven security. <strong className="text-white">Morpho</strong> offers improved rates on top of Aave and Compound. For ETH yield, <strong className="text-white">Lido</strong> provides the foundation of Ethereum's liquid staking ecosystem.
+          <strong className="text-[var(--color-text)]">Aave V3</strong> is our top pick for Ethereum mainnet lending thanks to its deep liquidity, wide asset support, and proven security. <strong className="text-[var(--color-text)]">Morpho</strong> offers improved rates on top of Aave and Compound. For ETH yield, <strong className="text-[var(--color-text)]">Lido</strong> provides the foundation of Ethereum's liquid staking ecosystem.
         </p>
       </div>
       <div className="space-y-4 mb-12">

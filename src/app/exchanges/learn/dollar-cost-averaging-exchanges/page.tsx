@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DCA Tools on Exchanges (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DCA Tools on Exchanges (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about dollar-cost averaging tools on crypto exchanges. Recurring buys, auto-invest, DCA bots, and the best platforms for automated investing.",
 };
 
@@ -16,13 +16,20 @@ export default function DollarCostAveragingExchanges() {
       readTime="8 min read"
       intro="Dollar-cost averaging (DCA) is one of the most proven investment strategies, and most major crypto exchanges now offer built-in tools to automate it. Instead of trying to time the market, DCA spreads your purchases over time at regular intervals. This guide covers the DCA tools available on major exchanges and how to use them effectively."
       toc={[
-        { id: "what-is-dca", title: "What Is Dollar-Cost Averaging?", level: 2 },
-        { id: "exchange-tools", title: "Exchange DCA Tools", level: 2 },
-        { id: "dca-bots", title: "DCA Trading Bots", level: 2 },
-        { id: "setup", title: "Setting Up Recurring Buys", level: 2 },
-        { id: "strategies", title: "DCA Strategies", level: 2 },
-        { id: "platforms", title: "Best Platforms for DCA", level: 2 },
-        { id: "tips", title: "Tips for DCA Success", level: 2 },
+        { id: "what-is-dca", title: "what-is-dca", level: 2 },
+        { id: "what-is-dollar-cost-averaging", title: "What Is Dollar-Cost Averaging?", level: 2 },
+        { id: "exchange-tools", title: "exchange-tools", level: 2 },
+        { id: "exchange-dca-tools", title: "Exchange DCA Tools", level: 2 },
+        { id: "dca-bots", title: "dca-bots", level: 2 },
+        { id: "dca-trading-bots", title: "DCA Trading Bots", level: 2 },
+        { id: "setup", title: "setup", level: 2 },
+        { id: "setting-up-recurring-buys", title: "Setting Up Recurring Buys", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "dca-strategies", title: "DCA Strategies", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "best-platforms-for-dca", title: "Best Platforms for DCA", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-dca-success", title: "Tips for DCA Success", level: 2 }
       ]}
       faqs={[
         { question: "How often should I DCA?", answer: "Weekly or bi-weekly purchases are most common. Daily DCA captures more price points but generates more transactions. Monthly DCA is simpler but provides less averaging benefit. Choose a frequency that matches your income schedule." },

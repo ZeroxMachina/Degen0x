@@ -17,14 +17,22 @@ export default function RestakingPage() {
       readTime="16 min"
       intro="Restaking represents one of the most innovative developments in blockchain economics since Ethereum's transition to proof of stake. Restaking enables stakers to reuse their already-staked ETH or other assets to simultaneously secure multiple blockchain networks and services, creating entirely new economic opportunities. Rather than staking capital once, earning a fixed yield, and keeping it locked in a single protocol, restaking allows that same capital to work across multiple systems simultaneously. EigenLayer pioneered this concept on Ethereum, enabling Ethereum validators and liquid stakers to restake their assets to secure Ethereum Virtual Machine (EVM) sidechains, data availability layers, and other services. This innovation has spawned an entire restaking ecosystem, including protocols like Symbiotic, Karak, and numerous others. This comprehensive guide explains how restaking works, explores the Actively Validated Services (AVS) it enables, discusses leading protocols, and examines the transformative potential of the restaking economy."
       toc={[
-        { id: "what-is-restaking", title: "Understanding Restaking", level: 2 },
-        { id: "restaking-mechanics", title: "How Restaking Works", level: 2 },
-        { id: "avs-explained", title: "Actively Validated Services (AVS)", level: 2 },
-        { id: "liquid-restaking", title: "Liquid Restaking Tokens", level: 2 },
-        { id: "restaking-protocols", title: "Leading Restaking Protocols", level: 2 },
-        { id: "restaking-benefits", title: "Benefits of Restaking", level: 2 },
-        { id: "restaking-risks", title: "Risks and Considerations", level: 2 },
-        { id: "restaking-future", title: "The Future of Restaking", level: 2 },
+        { id: "what-is-restaking", title: "what-is-restaking", level: 2 },
+        { id: "understanding-restaking", title: "Understanding Restaking", level: 2 },
+        { id: "restaking-mechanics", title: "restaking-mechanics", level: 2 },
+        { id: "how-restaking-works", title: "How Restaking Works", level: 2 },
+        { id: "avs-explained", title: "avs-explained", level: 2 },
+        { id: "actively-validated-services-avs", title: "Actively Validated Services (AVS)", level: 2 },
+        { id: "liquid-restaking", title: "liquid-restaking", level: 2 },
+        { id: "liquid-restaking-tokens", title: "Liquid Restaking Tokens", level: 2 },
+        { id: "restaking-protocols", title: "restaking-protocols", level: 2 },
+        { id: "leading-restaking-protocols", title: "Leading Restaking Protocols", level: 2 },
+        { id: "restaking-benefits", title: "restaking-benefits", level: 2 },
+        { id: "benefits-of-restaking", title: "Benefits of Restaking", level: 2 },
+        { id: "restaking-risks", title: "restaking-risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 },
+        { id: "restaking-future", title: "restaking-future", level: 2 },
+        { id: "the-future-of-restaking", title: "The Future of Restaking", level: 2 }
       ]}
       faqs={[
         {

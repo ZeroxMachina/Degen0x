@@ -21,7 +21,7 @@ const products: Product[] = [
     cons: ["Slightly less liquidity than mainnet", "L2 bridging required", "Sequencer centralization risk"],
     fees: "Variable supply/borrow spread",
     bestFor: "Cost-conscious DeFi lenders",
-    affiliateUrl: "https://cryptodegen.com/go/aave",
+    affiliateUrl: "https://degen0x.com/go/aave",
     category: "defi-lending",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     cons: ["Newer deployment with less liquidity", "Fewer supported assets", "Base still maturing"],
     fees: "Variable supply/borrow spread",
     bestFor: "Base ecosystem participants",
-    affiliateUrl: "https://cryptodegen.com/go/aave",
+    affiliateUrl: "https://degen0x.com/go/aave",
     category: "defi-lending",
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     cons: ["Limited market selection on L2", "Less liquidity than mainnet", "Fewer features than Aave"],
     fees: "Variable supply/borrow spread",
     bestFor: "Conservative L2 lenders",
-    affiliateUrl: "https://cryptodegen.com/go/compound",
+    affiliateUrl: "https://degen0x.com/go/compound",
     category: "defi-lending",
   },
 ];
@@ -62,7 +62,7 @@ export default function Layer2Page() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Layer 2", href: "/defi-lending/best/layer-2" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-4xl font-bold text-white mb-4">Best Layer 2 DeFi Lending Protocols ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Layer 2 DeFi Lending Protocols ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">

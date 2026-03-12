@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is DIA (DIA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is DIA (DIA)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about DIA (DIA), the open-source oracle platform for Web3. Discover how it works, tokenomics, use cases, and how to buy DIA.",
 };
@@ -17,12 +17,18 @@ export default function DiaPage() {
       readTime="8 min read"
       intro="DIA (Decentralised Information Asset) is an open-source, cross-chain oracle platform that provides customizable and transparent data feeds for DeFi and Web3 applications. Unlike black-box oracle solutions, DIA offers full transparency into data sources, methodologies, and aggregation methods, allowing protocols to customize how their oracle data is sourced and processed."
       toc={[
-        { id: "what-is", title: "What Is DIA?", level: 2 },
-        { id: "how-it-works", title: "How Does DIA Work?", level: 2 },
-        { id: "tokenomics", title: "DIA Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy DIA", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-dia", title: "What Is DIA?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-dia-work", title: "How Does DIA Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "dia-tokenomics", title: "DIA Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-dia", title: "How to Buy DIA", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

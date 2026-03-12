@@ -17,12 +17,18 @@ export default function NftSecurityTipsPage() {
       readTime="12 min"
       intro="The irreversible nature of blockchain transactions makes NFT security critically important. Once an NFT is stolen or a malicious transaction is signed, there is no customer support to reverse it. Scams in the NFT space are sophisticated and constantly evolving, from phishing sites that mimic legitimate marketplaces to malicious smart contracts that drain wallets. This guide covers everything you need to know to protect your digital assets."
       toc={[
-        { id: "wallet-security", title: "Wallet Security Fundamentals", level: 2 },
-        { id: "common-scams", title: "Common NFT Scams and How to Avoid Them", level: 2 },
+        { id: "wallet-security", title: "wallet-security", level: 2 },
+        { id: "wallet-security-fundamentals", title: "Wallet Security Fundamentals", level: 2 },
+        { id: "common-scams", title: "common-scams", level: 2 },
+        { id: "common-nft-scams-and-how-to-avoid-them", title: "Common NFT Scams and How to Avoid Them", level: 2 },
+        { id: "smart-contract-safety", title: "smart-contract-safety", level: 2 },
         { id: "smart-contract-safety", title: "Smart Contract Safety", level: 2 },
-        { id: "marketplace-safety", title: "Marketplace Safety Practices", level: 2 },
-        { id: "hardware-wallets", title: "Using Hardware Wallets for NFTs", level: 2 },
-        { id: "incident-response", title: "What to Do If You Are Compromised", level: 2 },
+        { id: "marketplace-safety", title: "marketplace-safety", level: 2 },
+        { id: "marketplace-safety-practices", title: "Marketplace Safety Practices", level: 2 },
+        { id: "hardware-wallets", title: "hardware-wallets", level: 2 },
+        { id: "using-hardware-wallets-for-nfts", title: "Using Hardware Wallets for NFTs", level: 2 },
+        { id: "incident-response", title: "incident-response", level: 2 },
+        { id: "what-to-do-if-you-are-compromised", title: "What to Do If You Are Compromised", level: 2 }
       ]}
       faqs={[
         {

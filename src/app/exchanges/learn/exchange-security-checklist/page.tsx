@@ -17,13 +17,20 @@ export default function ExchangeSecurityChecklistPage() {
       readTime="9 min"
       intro="Before depositing money on any crypto exchange, evaluate its security thoroughly. This checklist covers every critical security factor, from cold storage practices to insurance coverage, helping you assess whether an exchange deserves your trust."
       toc={[
-        { id: "cold-storage", title: "Cold Storage Practices", level: 2 },
-        { id: "authentication", title: "Authentication and Access Controls", level: 2 },
-        { id: "insurance", title: "Insurance Coverage", level: 2 },
-        { id: "regulatory", title: "Regulatory Compliance", level: 2 },
-        { id: "proof-reserves", title: "Proof of Reserves", level: 2 },
-        { id: "track-record", title: "Security Track Record", level: 2 },
-        { id: "personal-security", title: "Your Personal Security Steps", level: 2 },
+        { id: "cold-storage", title: "cold-storage", level: 2 },
+        { id: "cold-storage-practices", title: "Cold Storage Practices", level: 2 },
+        { id: "authentication", title: "authentication", level: 2 },
+        { id: "authentication-and-access-controls", title: "Authentication and Access Controls", level: 2 },
+        { id: "insurance", title: "insurance", level: 2 },
+        { id: "insurance-coverage", title: "Insurance Coverage", level: 2 },
+        { id: "regulatory", title: "regulatory", level: 2 },
+        { id: "regulatory-compliance", title: "Regulatory Compliance", level: 2 },
+        { id: "proof-reserves", title: "proof-reserves", level: 2 },
+        { id: "proof-of-reserves", title: "Proof of Reserves", level: 2 },
+        { id: "track-record", title: "track-record", level: 2 },
+        { id: "security-track-record", title: "Security Track Record", level: 2 },
+        { id: "personal-security", title: "personal-security", level: 2 },
+        { id: "your-personal-security-steps", title: "Your Personal Security Steps", level: 2 }
       ]}
       faqs={[
         { question: "What percentage of funds should be in cold storage?", answer: "The industry standard is 90-98% of customer funds in cold storage. Exchanges like Coinbase (98%), Kraken (95%), and Gemini (95%+) meet this standard. Be cautious of exchanges that do not disclose their cold storage percentage." },

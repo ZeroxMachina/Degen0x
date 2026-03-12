@@ -7,7 +7,16 @@ export default function PassiveIncomePage() {
   return (
     <LearnPageLayout title="Crypto Passive Income Guide" categoryName="Long-Term" categorySlug="long-term" readTime="9 min"
       intro="Earning passive income on your crypto holdings transforms idle assets into productive capital. From staking and lending to liquidity provision and dividend tokens, multiple strategies let you generate yield while maintaining your long-term positions. This guide covers each method, its risks, and how to build a sustainable passive income portfolio."
-      toc={[{ id: "staking", title: "Staking Income", level: 2 }, { id: "lending", title: "Lending & Yield", level: 2 }, { id: "liquidity", title: "Liquidity Provision", level: 2 }, { id: "building-portfolio", title: "Building a Passive Income Portfolio", level: 2 }]}
+      toc={[
+        { id: "staking", title: "staking", level: 2 },
+        { id: "staking-income", title: "Staking Income", level: 2 },
+        { id: "lending", title: "lending", level: 2 },
+        { id: "lending-yield", title: "Lending & Yield", level: 2 },
+        { id: "liquidity", title: "liquidity", level: 2 },
+        { id: "liquidity-provision", title: "Liquidity Provision", level: 2 },
+        { id: "building-portfolio", title: "building-portfolio", level: 2 },
+        { id: "building-a-passive-income-portfolio", title: "Building a Passive Income Portfolio", level: 2 }
+      ]}
       faqs={[
         { question: "What is the safest way to earn passive income with crypto?", answer: "Staking blue-chip proof-of-stake tokens like ETH through established protocols (Lido, Rocket Pool) or regulated exchanges (Coinbase, Kraken) is generally considered the safest approach. The yield is lower (3-5%) but the risk profile is more conservative than DeFi lending or liquidity provision." },
         { question: "How much passive income can I earn from crypto?", answer: "Yields vary significantly. ETH staking provides 3-5% APY. DeFi lending can yield 2-10% depending on the asset and platform. Liquidity provision can yield 5-30%+ but carries impermanent loss risk. A diversified passive income portfolio might average 5-10% APY across strategies." },

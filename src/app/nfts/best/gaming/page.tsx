@@ -7,7 +7,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best NFT Marketplaces for Gaming in ${CURRENT_YEAR} | CryptoDegen`,
+  title: `Best NFT Marketplaces for Gaming in ${CURRENT_YEAR} | degen0x`,
   description: `Find the best NFT marketplaces for gaming assets in ${CURRENT_YEAR}. Trade in-game items, virtual land, characters, and gaming collectibles on top platforms.`,
 };
 
@@ -44,7 +44,7 @@ export default function BestForGamingPage() {
     "@type": "Article",
     headline: `Best NFT Marketplaces for Gaming ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -60,7 +60,7 @@ export default function BestForGamingPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best NFT Marketplaces for Gaming in {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -80,7 +80,7 @@ export default function BestForGamingPage() {
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Best Platforms for Gaming NFTs</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Platforms for Gaming NFTs</h2>
           <div className="space-y-4">
             {filtered.map((marketplace, index) => (
               <ProductCard
@@ -94,7 +94,7 @@ export default function BestForGamingPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">What to Consider for Gaming NFTs</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">What to Consider for Gaming NFTs</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Chain Compatibility", desc: "Ensure the marketplace supports the blockchain your game is built on (Ethereum, Solana, Polygon, etc.)." },
@@ -103,7 +103,7 @@ export default function BestForGamingPage() {
               { title: "Liquidity Depth", desc: "Higher liquidity means faster sales and more accurate pricing for gaming items." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}

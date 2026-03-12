@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Norway (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Norway (${CURRENT_YEAR}) | degen0x`,
   description: "Compare the best crypto exchanges in Norway. Find NOK-friendly platforms with Vipps support, competitive fees, and Norwegian regulatory compliance.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesNorway() {
       readTime="8 min read"
       intro="Norway's wealthy, tech-savvy population has embraced cryptocurrency trading, despite the country not being an EU member. Finanstilsynet regulates virtual asset service providers under Norwegian AML legislation. Norwegian traders can access major global exchanges with NOK and EUR deposit options, benefiting from the country's excellent digital banking infrastructure."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges for Norway", level: 2 },
-        { id: "regulation", title: "Crypto Regulation in Norway", level: 2 },
-        { id: "payment-methods", title: "NOK Payment Methods", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-for-norway", title: "Top Exchanges for Norway", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation-in-norway", title: "Crypto Regulation in Norway", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "nok-payment-methods", title: "NOK Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing an Exchange", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-an-exchange", title: "Choosing an Exchange", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Norway?", answer: "Yes, cryptocurrency is legal in Norway. Finanstilsynet regulates crypto service providers under the AML Act. While Norway is not an EU member, it often aligns with EU regulations through the EEA agreement." },

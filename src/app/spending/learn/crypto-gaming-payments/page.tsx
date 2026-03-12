@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `In-Game Crypto Payments (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `In-Game Crypto Payments (${CURRENT_YEAR}) | degen0x`,
   description: "Guide to crypto payments in gaming. Play-to-earn, NFT gaming assets, in-game purchases with crypto, and the future of blockchain gaming economies.",
 };
 
@@ -12,10 +12,14 @@ export default function CryptoGamingPaymentsPage() {
     <LearnPageLayout title="In-Game Crypto Payments" categoryName="Crypto Spending" categorySlug="spending" readTime="8 min read"
       intro="Blockchain gaming is creating new economic models where players can own, trade, and earn from in-game assets through cryptocurrency and NFTs. In-game crypto payments enable true ownership of digital items, player-driven economies, and new forms of gaming revenue. While the sector is still evolving and faces challenges around gameplay quality and regulatory uncertainty, understanding how crypto payments work in gaming prepares both players and developers for this emerging intersection."
       toc={[
-        { id: "how-it-works", title: "How In-Game Crypto Payments Work", level: 2 },
-        { id: "play-to-earn", title: "Play-to-Earn Economics", level: 2 },
-        { id: "nft-assets", title: "NFT Gaming Assets", level: 2 },
-        { id: "future", title: "The Future of Crypto Gaming", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-in-game-crypto-payments-work", title: "How In-Game Crypto Payments Work", level: 2 },
+        { id: "play-to-earn", title: "play-to-earn", level: 2 },
+        { id: "play-to-earn-economics", title: "Play-to-Earn Economics", level: 2 },
+        { id: "nft-assets", title: "nft-assets", level: 2 },
+        { id: "nft-gaming-assets", title: "NFT Gaming Assets", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-crypto-gaming", title: "The Future of Crypto Gaming", level: 2 }
       ]}
       faqs={[
         { question: "What is blockchain gaming?", answer: "Blockchain gaming uses cryptocurrency and NFT technology to give players true ownership of in-game assets. Unlike traditional games where items exist only on the game's servers, blockchain game assets are NFTs that players own in their wallets. Players can trade, sell, or use these assets across compatible games and marketplaces." },

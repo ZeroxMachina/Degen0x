@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Ethiopia (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Ethiopia (${CURRENT_YEAR}) | degen0x`,
   description: "Compare crypto exchanges accessible in Ethiopia. Find ETB-friendly platforms with Telebirr support and P2P trading for Ethiopian users.",
 };
 
@@ -16,12 +16,18 @@ export default function BestExchangesEthiopia() {
       readTime="7 min read"
       intro="Ethiopia, Africa's second-most populous nation, has a nascent but growing crypto community. The National Bank of Ethiopia has cautioned against cryptocurrency, but the country has engaged with blockchain technology through various partnerships and initiatives. Ethiopian traders access crypto primarily through P2P platforms. This guide covers the available options and important considerations."
       toc={[
+        { id: "available-exchanges", title: "available-exchanges", level: 2 },
         { id: "available-exchanges", title: "Available Exchanges", level: 2 },
-        { id: "regulation", title: "Crypto Regulation", level: 2 },
-        { id: "payment-methods", title: "ETB Payment Methods", level: 2 },
+        { id: "regulation", title: "regulation", level: 2 },
+        { id: "crypto-regulation", title: "Crypto Regulation", level: 2 },
+        { id: "payment-methods", title: "payment-methods", level: 2 },
+        { id: "etb-payment-methods", title: "ETB Payment Methods", level: 2 },
+        { id: "tax-considerations", title: "tax-considerations", level: 2 },
         { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "how-to-choose", title: "Choosing a Platform", level: 2 },
+        { id: "how-to-choose", title: "how-to-choose", level: 2 },
+        { id: "choosing-a-platform", title: "Choosing a Platform", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto legal in Ethiopia?", answer: "The National Bank of Ethiopia has cautioned against crypto transactions. There is no comprehensive regulatory framework. Individual trading exists in a gray area with potential risks." },

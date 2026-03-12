@@ -16,10 +16,14 @@ export default function BestRwaNftsPage() {
       readTime="9 min"
       intro="Real World Asset (RWA) NFTs represent physical assets on the blockchain, from real estate and luxury goods to fine art and collectibles. These tokens bridge the gap between traditional asset ownership and blockchain-based digital ownership, creating new opportunities for investment, provenance tracking, and fractional ownership."
       toc={[
-        { id: "overview", title: "What Are RWA NFTs", level: 2 },
-        { id: "platforms", title: "Top RWA NFT Platforms", level: 2 },
-        { id: "categories", title: "Asset Categories", level: 2 },
-        { id: "legal-framework", title: "Legal Framework", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "what-are-rwa-nfts", title: "What Are RWA NFTs", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "top-rwa-nft-platforms", title: "Top RWA NFT Platforms", level: 2 },
+        { id: "categories", title: "categories", level: 2 },
+        { id: "asset-categories", title: "Asset Categories", level: 2 },
+        { id: "legal-framework", title: "legal-framework", level: 2 },
+        { id: "legal-framework", title: "Legal Framework", level: 2 }
       ]}
       faqs={[
         { question: "What are RWA NFTs?", answer: "RWA NFTs are non-fungible tokens that represent ownership of or claims to real-world physical assets like real estate, art, luxury goods, or commodities. They use blockchain technology to track provenance, enable fractional ownership, and facilitate trading of traditionally illiquid assets." },

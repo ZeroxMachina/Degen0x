@@ -18,12 +18,18 @@ export default function TaxLossHarvestingCryptoPage() {
       readTime="10 min read"
       intro="Tax-loss harvesting is one of the most powerful tax optimization strategies available to crypto investors. By strategically selling losing positions to realize capital losses, you can offset capital gains from profitable trades, reducing your overall tax liability. In the US, crypto currently has a significant advantage over stocks for this strategy: cryptocurrency is not subject to the wash sale rule, meaning you can sell at a loss and immediately repurchase the same asset."
       toc={[
-        { id: "how-it-works", title: "How Tax-Loss Harvesting Works", level: 2 },
-        { id: "wash-sale", title: "The Crypto Wash Sale Advantage", level: 2 },
-        { id: "strategy", title: "Step-by-Step Harvesting Strategy", level: 2 },
-        { id: "limitations", title: "Limitations & Pitfalls", level: 2 },
-        { id: "year-round", title: "Year-Round vs Year-End Harvesting", level: 2 },
-        { id: "tools", title: "Tax-Loss Harvesting Tools", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-tax-loss-harvesting-works", title: "How Tax-Loss Harvesting Works", level: 2 },
+        { id: "wash-sale", title: "wash-sale", level: 2 },
+        { id: "the-crypto-wash-sale-advantage", title: "The Crypto Wash Sale Advantage", level: 2 },
+        { id: "strategy", title: "strategy", level: 2 },
+        { id: "step-by-step-harvesting-strategy", title: "Step-by-Step Harvesting Strategy", level: 2 },
+        { id: "limitations", title: "limitations", level: 2 },
+        { id: "limitations-pitfalls", title: "Limitations & Pitfalls", level: 2 },
+        { id: "year-round", title: "year-round", level: 2 },
+        { id: "year-round-vs-year-end-harvesting", title: "Year-Round vs Year-End Harvesting", level: 2 },
+        { id: "tools", title: "tools", level: 2 },
+        { id: "tax-loss-harvesting-tools", title: "Tax-Loss Harvesting Tools", level: 2 }
       ]}
       faqs={[
         { question: "What is tax-loss harvesting?", answer: "Tax-loss harvesting involves selling investments at a loss to generate capital losses that offset capital gains. In crypto, this means selling a token that has declined below your purchase price, realizing the loss for tax purposes, and potentially repurchasing the same or similar asset." },

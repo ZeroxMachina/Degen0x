@@ -16,10 +16,14 @@ export default function CryptoBullMarketStrategiesPage() {
       readTime="11 min"
       intro="Bull markets are when fortunes are made in crypto, but they are also when most investors give back their gains by holding too long or taking excessive risk. Having a clear strategy before euphoria takes hold is essential. This guide covers how to maximize returns while protecting profits during crypto bull runs."
       toc={[
-        { id: "identifying-bull-markets", title: "Identifying Bull Market Phases", level: 2 },
-        { id: "profit-taking", title: "Profit-Taking Strategies", level: 2 },
+        { id: "identifying-bull-markets", title: "identifying-bull-markets", level: 2 },
+        { id: "identifying-bull-market-phases", title: "Identifying Bull Market Phases", level: 2 },
+        { id: "profit-taking", title: "profit-taking", level: 2 },
+        { id: "profit-taking-strategies", title: "Profit-Taking Strategies", level: 2 },
+        { id: "portfolio-rotation", title: "portfolio-rotation", level: 2 },
         { id: "portfolio-rotation", title: "Portfolio Rotation", level: 2 },
-        { id: "avoiding-mistakes", title: "Common Bull Market Mistakes", level: 2 },
+        { id: "avoiding-mistakes", title: "avoiding-mistakes", level: 2 },
+        { id: "common-bull-market-mistakes", title: "Common Bull Market Mistakes", level: 2 }
       ]}
       faqs={[
         { question: "When should I take profits in a bull market?", answer: "The best approach is systematic profit-taking at predetermined levels rather than trying to time the exact top. Consider taking 10-20% profits at each 2x of your entry price, or use a trailing approach where you sell portions as assets reach new all-time highs. Having a plan before the euphoria sets in is critical." },

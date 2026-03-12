@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Yearn Finance (YFI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Yearn Finance (YFI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Yearn Finance (YFI), the yield aggregator protocol that automates DeFi strategies. Discover YFI tokenomics, vaults, and how to buy.",
 };
@@ -17,12 +17,18 @@ export default function YearnPage() {
       readTime="8 min read"
       intro="Yearn Finance (YFI) is a decentralized yield aggregation protocol on Ethereum that automates yield farming strategies across DeFi. Founded by Andre Cronje in 2020, Yearn's Vaults automatically move deposited funds between lending protocols, liquidity pools, and other yield sources to maximize returns. YFI is the governance token with one of the fairest launches in DeFi history."
       toc={[
-        { id: "what-is", title: "What Is Yearn Finance?", level: 2 },
-        { id: "how-it-works", title: "How Does Yearn Finance Work?", level: 2 },
-        { id: "tokenomics", title: "YFI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy YFI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-yearn-finance", title: "What Is Yearn Finance?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-yearn-finance-work", title: "How Does Yearn Finance Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "yfi-tokenomics", title: "YFI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-yfi", title: "How to Buy YFI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

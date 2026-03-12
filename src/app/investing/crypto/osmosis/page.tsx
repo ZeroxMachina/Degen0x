@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Osmosis (OSMO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Osmosis (OSMO)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Osmosis (OSMO), the leading DEX in the Cosmos ecosystem. Discover how it works, tokenomics, use cases, and how to buy OSMO.",
 };
@@ -17,12 +17,18 @@ export default function OsmosisPage() {
       readTime="8 min read"
       intro="Osmosis is the largest decentralized exchange in the Cosmos ecosystem, operating as an appchain-specific DEX with advanced AMM features and deep IBC (Inter-Blockchain Communication) connectivity. Osmosis serves as the primary liquidity hub for the Cosmos network, supporting token swaps, concentrated liquidity, and cross-chain trading across hundreds of IBC-connected chains."
       toc={[
-        { id: "what-is", title: "What Is Osmosis?", level: 2 },
-        { id: "how-it-works", title: "How Does Osmosis Work?", level: 2 },
-        { id: "tokenomics", title: "OSMO Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy OSMO", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-osmosis", title: "What Is Osmosis?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-osmosis-work", title: "How Does Osmosis Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "osmo-tokenomics", title: "OSMO Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-osmo", title: "How to Buy OSMO", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

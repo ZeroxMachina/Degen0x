@@ -12,11 +12,16 @@ export default function HardwareSecurityModulesPage() {
   return (
     <LearnPageLayout title="Hardware Security Modules in Crypto" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Hardware Security Modules (HSMs) are tamper-resistant physical devices designed to safeguard and manage cryptographic keys. In cryptocurrency, HSMs provide institutional-grade key management for exchanges, custodians, and organizations that need to secure large amounts of digital assets with the highest level of physical and logical security available."
       toc={[
-        { id: "what-is-hsm", title: "What Is an HSM?", level: 2 },
-        { id: "how-they-work", title: "How HSMs Work", level: 2 },
+        { id: "what-is-hsm", title: "what-is-hsm", level: 2 },
+        { id: "what-is-an-hsm", title: "What Is an HSM?", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-hsms-work", title: "How HSMs Work", level: 2 },
+        { id: "crypto-use-cases", title: "crypto-use-cases", level: 2 },
         { id: "crypto-use-cases", title: "Crypto Use Cases", level: 2 },
+        { id: "hsm-vs-hardware-wallet", title: "hsm-vs-hardware-wallet", level: 2 },
         { id: "hsm-vs-hardware-wallet", title: "HSM vs Hardware Wallet", level: 2 },
-        { id: "considerations", title: "Practical Considerations", level: 2 },
+        { id: "considerations", title: "considerations", level: 2 },
+        { id: "practical-considerations", title: "Practical Considerations", level: 2 }
       ]}
       faqs={[
         { question: "Do I need an HSM as an individual?", answer: "Most individuals do not need an HSM. Hardware wallets like Ledger and Trezor provide excellent security for personal use at a fraction of the cost. HSMs are designed for institutional use cases where regulatory compliance, multi-user access control, and enterprise-grade audit capabilities are required." },

@@ -17,7 +17,7 @@ const items: ComparisonItem[] = [
     name: "BitPay Card",
     slug: "bitpay-card",
     rating: 4.0,
-    affiliateUrl: "https://cryptodegen.com/go/bitpay-card",
+    affiliateUrl: "https://degen0x.com/go/bitpay-card",
     features: {
       "Cashback Rate": "None",
       "Annual Fee": "$0 ($5 inactivity fee)",
@@ -34,7 +34,7 @@ const items: ComparisonItem[] = [
     name: "Crypto.com Visa",
     slug: "crypto-com-visa",
     rating: 4.7,
-    affiliateUrl: "https://cryptodegen.com/go/crypto-com-visa",
+    affiliateUrl: "https://degen0x.com/go/crypto-com-visa",
     features: {
       "Cashback Rate": "Up to 5% in CRO",
       "Annual Fee": "$0",
@@ -73,7 +73,7 @@ export default function BitPayVsCryptoComPage() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         BitPay Card vs Crypto.com Visa ({CURRENT_YEAR})
       </h1>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
@@ -88,7 +88,7 @@ export default function BitPayVsCryptoComPage() {
       <ComparisonTable items={items} features={features} title="BitPay Card vs Crypto.com Visa" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Rewards</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Rewards</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           This is not a close comparison. BitPay offers zero cashback or rewards on purchases. It is
           purely a tool for converting and spending crypto. Crypto.com offers up to 5% cashback in CRO,
@@ -96,11 +96,11 @@ export default function BitPayVsCryptoComPage() {
           back, infinitely more than BitPay&apos;s nothing.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; Any cashback is
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; Any cashback is
           better than none. Crypto.com wins decisively on rewards.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Simplicity and Setup</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Simplicity and Setup</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           BitPay excels at simplicity. Load your crypto, it converts to USD, and you spend. No staking
           tiers, no token ecosystems, no reward tokens to manage. Crypto.com requires understanding
@@ -108,11 +108,11 @@ export default function BitPayVsCryptoComPage() {
           ecosystem. For users who just want to spend their Bitcoin at a store, BitPay is straightforward.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: BitPay Card</strong> &mdash; For users who value
+          <strong className="text-[var(--color-text)]">Winner: BitPay Card</strong> &mdash; For users who value
           simplicity above all else, BitPay&apos;s no-frills approach is unmatched.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Fees</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fees</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           BitPay charges a $10 card issuance fee, $3 per ATM withdrawal, $5 monthly inactivity fee
           after 90 days, and 3% on foreign transactions. Crypto.com has no annual fee, no issuance fee,
@@ -120,11 +120,11 @@ export default function BitPayVsCryptoComPage() {
           alone makes Crypto.com significantly cheaper for active users.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; Lower or zero fees
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; Lower or zero fees
           across every category give Crypto.com a clear advantage.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Supported Cryptocurrencies</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Supported Cryptocurrencies</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">
           BitPay supports BTC, ETH, BCH, LTC, XRP, and several stablecoins for loading the card.
           Crypto.com supports over 250 cryptocurrencies through its ecosystem, though not all can be
@@ -132,12 +132,12 @@ export default function BitPayVsCryptoComPage() {
           to spend.
         </p>
         <p className="text-[var(--color-text-secondary)] mb-6">
-          <strong className="text-white">Winner: Crypto.com Visa</strong> &mdash; Broader crypto
+          <strong className="text-[var(--color-text)]">Winner: Crypto.com Visa</strong> &mdash; Broader crypto
           support through the Crypto.com ecosystem gives it the edge.
         </p>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mt-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Final Verdict</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Final Verdict</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             The Crypto.com Visa is the objectively better card in almost every category. It offers
             higher rewards, lower fees, more features, and broader availability. Unless simplicity is

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Radiant vs Aave (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Radiant vs Aave (${CURRENT_YEAR}) | degen0x`,
   description:
     "Compare Radiant Capital and Aave lending protocols. Analysis of cross-chain lending, tokenomics, rates, and which multi-chain lending protocol to choose.",
 };
@@ -17,10 +17,14 @@ export default function RadiantVsAavePage() {
       readTime="8 min read"
       intro="Radiant Capital positioned itself as a cross-chain lending protocol built on LayerZero, aiming to create unified lending markets across multiple chains. Aave is the established leader in DeFi lending with its own multi-chain strategy. This comparison examines how these protocols approach cross-chain lending, their tokenomics, rates, and security profiles to help you decide which is better suited for your lending and borrowing needs."
       toc={[
-        { id: "cross-chain-approach", title: "Cross-Chain Lending Approaches", level: 2 },
-        { id: "tokenomics", title: "Tokenomics Comparison", level: 2 },
-        { id: "rates-tvl", title: "Rates and TVL", level: 2 },
-        { id: "security", title: "Security Considerations", level: 2 },
+        { id: "cross-chain-approach", title: "cross-chain-approach", level: 2 },
+        { id: "cross-chain-lending-approaches", title: "Cross-Chain Lending Approaches", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "tokenomics-comparison", title: "Tokenomics Comparison", level: 2 },
+        { id: "rates-tvl", title: "rates-tvl", level: 2 },
+        { id: "rates-and-tvl", title: "Rates and TVL", level: 2 },
+        { id: "security", title: "security", level: 2 },
+        { id: "security-considerations", title: "Security Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Radiant Capital?", answer: "Radiant Capital is a DeFi lending protocol built on LayerZero's cross-chain messaging. It allows users to deposit collateral on one chain and borrow on another. Radiant V2 introduced dynamic liquidity provisioning (dLP) requirements to access RDNT emissions. Note: Radiant suffered a significant exploit in 2024." },

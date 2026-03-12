@@ -16,10 +16,14 @@ export default function CryptoCorrelationAnalysisPage() {
       readTime="10 min"
       intro="Understanding how cryptocurrency correlates with stocks, bonds, gold, and real estate is essential for portfolio construction, as crypto's diversification benefits depend heavily on its evolving relationships with traditional asset classes."
       toc={[
-        { id: "section-1", title: "Correlation Fundamentals", level: 2 },
-        { id: "section-2", title: "Crypto-Traditional Asset Correlations", level: 2 },
-        { id: "section-3", title: "Dynamic Correlation Patterns", level: 2 },
-        { id: "section-4", title: "Portfolio Construction Implications", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "correlation-fundamentals", title: "Correlation Fundamentals", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "crypto-traditional-asset-correlations", title: "Crypto-Traditional Asset Correlations", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "dynamic-correlation-patterns", title: "Dynamic Correlation Patterns", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "portfolio-construction-implications", title: "Portfolio Construction Implications", level: 2 }
       ]}
       faqs={[
         { question: "Is crypto correlated with the stock market?", answer: "Crypto's correlation with stocks has varied significantly over time. During normal market conditions, correlation is typically low to moderate. During severe market stress, correlations tend to increase as all risk assets sell off together. This dynamic correlation pattern means crypto provides better diversification during calm markets than during crises." },

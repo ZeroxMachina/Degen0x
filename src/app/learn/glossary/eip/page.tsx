@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is an EIP? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is an EIP? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what Ethereum Improvement Proposals (EIPs) are, how they work, and why they matter for Ethereum's evolution.",
 };
@@ -17,11 +17,16 @@ export default function EipPage() {
       readTime="5 min"
       intro="An Ethereum Improvement Proposal (EIP) is a formal document that proposes changes to the Ethereum protocol. EIPs follow a standardized process for community review, discussion, and adoption. They cover everything from core protocol upgrades to token standards and interface conventions, serving as the primary governance mechanism for Ethereum's technical evolution."
       toc={[
-        { id: "definition", title: "What Is an EIP?", level: 2 },
-        { id: "types", title: "Types of EIPs", level: 2 },
-        { id: "process", title: "The EIP Process", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-an-eip", title: "What Is an EIP?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-eips", title: "Types of EIPs", level: 2 },
+        { id: "process", title: "process", level: 2 },
+        { id: "the-eip-process", title: "The EIP Process", level: 2 },
+        { id: "notable-eips", title: "notable-eips", level: 2 },
         { id: "notable-eips", title: "Notable EIPs", level: 2 },
-        { id: "why-it-matters", title: "Why EIPs Matter", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-eips-matter", title: "Why EIPs Matter", level: 2 }
       ]}
       faqs={[
         {

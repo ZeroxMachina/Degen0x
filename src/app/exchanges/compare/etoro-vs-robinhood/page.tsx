@@ -14,7 +14,7 @@ export default function EtoroVsRobinhoodPage() {
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "eToro vs Robinhood", href: "#" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">eToro vs Robinhood: Which Multi-Asset Platform Is Better in {CURRENT_YEAR}?</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">eToro vs Robinhood: Which Multi-Asset Platform Is Better in {CURRENT_YEAR}?</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">eToro and Robinhood both offer crypto trading alongside stocks, making them popular choices for investors who want a unified platform. eToro is the social trading pioneer with copy trading features, while Robinhood is the zero-commission trailblazer with a sleek US-focused interface. This comparison helps you decide between them.</p>
 
@@ -30,19 +30,19 @@ export default function EtoroVsRobinhoodPage() {
       </div>
 
       <div className="prose-crypto">
-        <h2 className="text-2xl font-bold text-white mb-4">Fee Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">Robinhood is cheaper for crypto trading, with spread markups of approximately 0.5% to 1% versus eToro's 1% to 2.9%. Neither charges explicit commissions, but eToro's wider spreads result in higher effective costs. eToro also charges a $5 withdrawal fee and 0.5% on non-USD deposits. Robinhood charges no withdrawal fees. For cost-conscious crypto traders, Robinhood has a clear advantage. Both offer zero-commission stock trading.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Copy Trading and Social Features</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Copy Trading and Social Features</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">eToro's CopyTrader is its defining feature and something Robinhood simply does not offer. The ability to automatically replicate successful traders' portfolios is genuinely useful for beginners and passive investors. eToro's social feed provides market commentary and community engagement. Robinhood has no social or copy trading features. If automated portfolio replication and social investing appeal to you, eToro is the only choice between the two.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Availability and Markets</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Availability and Markets</h2>
         <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">eToro operates in over 140 countries, making it accessible to a global audience. Robinhood is exclusively available in the United States. eToro provides access to international stock markets, while Robinhood focuses on US-listed securities. For international users, eToro is the only option. For US users, both are available, with Robinhood offering the additional benefit of options trading which eToro does not provide in the US.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
-          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-white">Choose eToro if</strong> you want copy trading features, more crypto selections (~80 vs ~20), global market access, and a social investing experience. Best for international users and those who want to follow expert traders.</p>
-          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-white">Choose Robinhood if</strong> you are a US-based investor who wants the lowest-cost crypto and stock trading with a clean, simple interface. Best for cost-conscious US users who also want options trading.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed"><strong className="text-[var(--color-text)]">Choose eToro if</strong> you want copy trading features, more crypto selections (~80 vs ~20), global market access, and a social investing experience. Best for international users and those who want to follow expert traders.</p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Robinhood if</strong> you are a US-based investor who wants the lowest-cost crypto and stock trading with a clean, simple interface. Best for cost-conscious US users who also want options trading.</p>
         </div>
       </div>
 

@@ -17,11 +17,16 @@ export default function BestBitcoinDefiLending() {
       readTime="10 min"
       intro="Bitcoin holders looking to earn yield or borrow against their BTC have several excellent DeFi lending options. Whether you hold native BTC, Wrapped Bitcoin (WBTC), or other Bitcoin derivatives, these platforms allow you to put your Bitcoin to work without selling. We evaluated the top DeFi lending protocols based on Bitcoin-specific yields, supported BTC variants, security, and ease of use."
       toc={[
-        { id: "wbtc-lending", title: "Lending with Wrapped Bitcoin", level: 2 },
-        { id: "tbtc-cbbtc", title: "tBTC and cbBTC Options", level: 2 },
+        { id: "wbtc-lending", title: "wbtc-lending", level: 2 },
+        { id: "lending-with-wrapped-bitcoin", title: "Lending with Wrapped Bitcoin", level: 2 },
+        { id: "tbtc-cbbtc", title: "tbtc-cbbtc", level: 2 },
+        { id: "tbtc-and-cbbtc-options", title: "tBTC and cbBTC Options", level: 2 },
+        { id: "bitcoin-yield-strategies", title: "bitcoin-yield-strategies", level: 2 },
         { id: "bitcoin-yield-strategies", title: "Bitcoin Yield Strategies", level: 2 },
-        { id: "risks", title: "Risks of Bitcoin in DeFi", level: 2 },
-        { id: "choosing", title: "Choosing the Right Platform", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-bitcoin-in-defi", title: "Risks of Bitcoin in DeFi", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-the-right-platform", title: "Choosing the Right Platform", level: 2 }
       ]}
       faqs={[
         { question: "Can I use native BTC in DeFi lending?", answer: "Native BTC cannot be used directly on Ethereum-based DeFi protocols. You need to bridge your BTC to a wrapped version like WBTC, tBTC, or cbBTC first. Some protocols on Bitcoin Layer 2s are building native BTC lending capabilities." },

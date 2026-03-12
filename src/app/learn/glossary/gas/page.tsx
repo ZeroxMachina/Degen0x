@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Gas? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Gas? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what gas fees are in blockchain, how they work on Ethereum, and why they are essential for network operation.",
 };
@@ -17,11 +17,16 @@ export default function GasPage() {
       readTime="5 min"
       intro="Gas is a unit of measurement for the computational effort required to execute operations on a blockchain, most commonly associated with Ethereum. Every transaction and smart contract interaction requires gas, which is paid in the network's native token. Gas fees compensate validators for processing transactions and protect the network from spam by making computation costly."
       toc={[
-        { id: "definition", title: "What Is Gas?", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-gas", title: "What Is Gas?", level: 2 },
+        { id: "how-gas-works", title: "how-gas-works", level: 2 },
         { id: "how-gas-works", title: "How Gas Works", level: 2 },
-        { id: "eip-1559", title: "EIP-1559 and Fee Markets", level: 2 },
-        { id: "gas-optimization", title: "Optimizing Gas Costs", level: 2 },
-        { id: "why-it-matters", title: "Why Gas Matters", level: 2 },
+        { id: "eip-1559", title: "eip-1559", level: 2 },
+        { id: "eip-1559-and-fee-markets", title: "EIP-1559 and Fee Markets", level: 2 },
+        { id: "gas-optimization", title: "gas-optimization", level: 2 },
+        { id: "optimizing-gas-costs", title: "Optimizing Gas Costs", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-gas-matters", title: "Why Gas Matters", level: 2 }
       ]}
       faqs={[
         {

@@ -60,7 +60,7 @@ export default function BestPrepaidCardsPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Prepaid Cards ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -78,7 +78,7 @@ export default function BestPrepaidCardsPage() {
           strict spending control and a clear separation between their crypto holdings and
           everyday spending money.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">When to Choose Prepaid Over Debit or Credit</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">When to Choose Prepaid Over Debit or Credit</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           Choose a prepaid card if you want firm budgeting control, privacy from direct
           exchange account linkage, or if you do not qualify for a credit card. Prepaid cards
@@ -86,13 +86,13 @@ export default function BestPrepaidCardsPage() {
           allocating a fixed amount of crypto profits to spend each month while keeping the
           rest invested.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Our Top Picks</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Our Top Picks</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          The <strong className="text-white">BitPay Card</strong> is the most established crypto
+          The <strong className="text-[var(--color-text)]">BitPay Card</strong> is the most established crypto
           prepaid card with years of track record and broad cryptocurrency support for loading.
-          The <strong className="text-white">Crypto.com Visa</strong> (base tier) functions as
+          The <strong className="text-[var(--color-text)]">Crypto.com Visa</strong> (base tier) functions as
           an excellent prepaid-style option with added cashback rewards. The{" "}
-          <strong className="text-white">Wirex Card</strong> excels for international users
+          <strong className="text-[var(--color-text)]">Wirex Card</strong> excels for international users
           with its multi-currency prepaid functionality.
         </p>
       </div>
@@ -110,33 +110,33 @@ export default function BestPrepaidCardsPage() {
 
       {/* Prepaid Card Comparison */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Prepaid Card Feature Comparison</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Prepaid Card Feature Comparison</h2>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">1.</span>
             <div>
-              <h3 className="text-white font-semibold">Most established: BitPay Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Most established: BitPay Card</h3>
               <p className="text-sm">Backed by the BitPay payment processor with years of operation. Supports BTC, ETH, BCH, LTC, XRP, and stablecoins. No loading fees from crypto. Accepted at any Mastercard location.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
-              <h3 className="text-white font-semibold">Best rewards on a prepaid model: Crypto.com Visa</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Best rewards on a prepaid model: Crypto.com Visa</h3>
               <p className="text-sm">The Midnight Blue base tier works like a prepaid card with 1% CRO cashback and no annual fee. Load from 250+ supported cryptocurrencies through the Crypto.com app.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">3.</span>
             <div>
-              <h3 className="text-white font-semibold">Best for multi-currency loading: Wirex Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Best for multi-currency loading: Wirex Card</h3>
               <p className="text-sm">Load in 60+ fiat and crypto currencies. Ideal for users who want to hold multiple currencies on one card for international spending without repeated conversion fees.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">4.</span>
             <div>
-              <h3 className="text-white font-semibold">Budget-friendly option: Swipe Card</h3>
+              <h3 className="text-[var(--color-text)] font-semibold">Budget-friendly option: Swipe Card</h3>
               <p className="text-sm">Simple loading from crypto with Apple Pay and Google Pay support. Zero transaction fees on purchases. Straightforward for users who just want to spend their crypto.</p>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function BestPrepaidCardsPage() {
 
       {/* Pros and Cons of Prepaid */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Prepaid Cards: Pros and Cons</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Prepaid Cards: Pros and Cons</h2>
         <div className="grid grid-cols-2 gap-6">
           <div>
             <h3 className="text-sm font-semibold text-[var(--color-success)] mb-2">Advantages</h3>
@@ -186,7 +186,7 @@ export default function BestPrepaidCardsPage() {
 
       {/* Methodology */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Our Methodology</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
         <p className="text-[var(--color-text-secondary)]">
           Prepaid card rankings prioritize loading experience and spending flexibility. We
           weight supported cryptocurrencies for loading (25%), loading fees and conversion
@@ -199,7 +199,7 @@ export default function BestPrepaidCardsPage() {
 
       {/* Related Links */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "Best Crypto Debit Cards", href: "/crypto-cards/best/debit" },
@@ -212,7 +212,7 @@ export default function BestPrepaidCardsPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
-              <span className="text-white font-semibold">{link.title}</span>
+              <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
               <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                 Read more &rarr;
               </span>

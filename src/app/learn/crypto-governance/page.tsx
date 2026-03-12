@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Governance: How to Vote on Proposals (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Governance: How to Vote on Proposals (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how crypto governance works, how to vote on blockchain proposals, the role of governance tokens, and best practices for participating in protocol governance.",
 };
@@ -17,10 +17,14 @@ export default function CryptoGovernancePage() {
       readTime="8 min read"
       intro="Crypto governance is the process by which decentralized protocols make collective decisions about upgrades, treasury spending, parameter changes, and strategic direction. Unlike traditional companies where decisions are made by executives and boards, many blockchain projects use token-based voting systems where anyone holding governance tokens can participate. Understanding governance is essential for protecting your interests as a token holder and contributing to the protocols you use."
       toc={[
-        { id: "how-governance-works", title: "How Crypto Governance Works", level: 2 },
+        { id: "how-governance-works", title: "how-governance-works", level: 2 },
+        { id: "how-crypto-governance-works", title: "How Crypto Governance Works", level: 2 },
+        { id: "voting-mechanisms", title: "voting-mechanisms", level: 2 },
         { id: "voting-mechanisms", title: "Voting Mechanisms", level: 2 },
-        { id: "participating", title: "How to Participate", level: 2 },
-        { id: "governance-challenges", title: "Governance Challenges", level: 2 },
+        { id: "participating", title: "participating", level: 2 },
+        { id: "how-to-participate", title: "How to Participate", level: 2 },
+        { id: "governance-challenges", title: "governance-challenges", level: 2 },
+        { id: "governance-challenges", title: "Governance Challenges", level: 2 }
       ]}
       faqs={[
         {

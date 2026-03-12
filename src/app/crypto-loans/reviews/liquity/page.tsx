@@ -10,7 +10,7 @@ const product = {
   pros: ["0% interest rate on loans", "Immutable smart contracts", "No governance risk", "Minimum collateral ratio of 110%"],
   cons: ["ETH-only collateral", "One-time borrowing fee", "LUSD may trade below peg", "Redemption mechanism can close positions"],
   bestFor: "ETH holders seeking the lowest-cost borrowing with a truly decentralized, immutable protocol",
-  affiliateUrl: "https://cryptodegen.com/go/liquity",
+  affiliateUrl: "https://degen0x.com/go/liquity",
   category: "crypto-loans",
 };
 

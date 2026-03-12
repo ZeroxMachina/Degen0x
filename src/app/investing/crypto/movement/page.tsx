@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Movement (MOVE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Movement (MOVE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Movement (MOVE), the modular blockchain framework bringing Move language to Ethereum. Discover how it works, tokenomics, use cases, and how to buy MOVE.",
 };
@@ -17,12 +17,18 @@ export default function MovementPage() {
       readTime="8 min read"
       intro="Movement is a modular blockchain framework that brings the Move programming language to the Ethereum ecosystem. Originally developed by Meta (Facebook) for the Diem project, the Move language offers resource-oriented programming with built-in safety features that prevent common smart contract vulnerabilities like reentrancy attacks and integer overflow. Movement Labs is building a suite of products including M2, an Ethereum Layer 2 that uses Move execution with Ethereum settlement."
       toc={[
-        { id: "what-is", title: "What Is Movement?", level: 2 },
-        { id: "how-it-works", title: "How Does Movement Work?", level: 2 },
-        { id: "tokenomics", title: "MOVE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MOVE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-movement", title: "What Is Movement?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-movement-work", title: "How Does Movement Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "move-tokenomics", title: "MOVE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-move", title: "How to Buy MOVE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

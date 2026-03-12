@@ -23,7 +23,7 @@ const defiTaxProducts: Product[] = [
     cons: ["No free tier for tax reports", "Can be complex for DeFi beginners", "Higher pricing for advanced features"],
     fees: "From $49/year",
     bestFor: "DeFi power users",
-    affiliateUrl: "https://cryptodegen.com/go/cryptotaxcalculator",
+    affiliateUrl: "https://degen0x.com/go/cryptotaxcalculator",
     category: "taxes",
     featured: true,
   },
@@ -37,7 +37,7 @@ const defiTaxProducts: Product[] = [
     cons: ["DeFi support not as deep as CryptoTaxCalculator", "Some protocols need CSV import", "Complex DeFi may need manual review"],
     fees: "From $49/year",
     bestFor: "Mixed CeFi/DeFi portfolios",
-    affiliateUrl: "https://cryptodegen.com/go/koinly",
+    affiliateUrl: "https://degen0x.com/go/koinly",
     category: "taxes",
     featured: true,
   },
@@ -51,7 +51,7 @@ const defiTaxProducts: Product[] = [
     cons: ["Most expensive option", "Fewer automated DeFi integrations", "CPA wait times during tax season"],
     fees: "From $65/year",
     bestFor: "Complex DeFi with CPA needs",
-    affiliateUrl: "https://cryptodegen.com/go/tokentax",
+    affiliateUrl: "https://degen0x.com/go/tokentax",
     category: "taxes",
   },
 ];
@@ -88,7 +88,7 @@ export default function BestDefiTaxToolsPage() {
       />
 
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best DeFi Tax Tools ({CURRENT_YEAR})
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -105,7 +105,7 @@ export default function BestDefiTaxToolsPage() {
       <AffiliateDisclosure />
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Top DeFi Tax Tools</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top DeFi Tax Tools</h2>
         <div className="grid gap-6">
           {defiTaxProducts.map((product, i) => (
             <ProductCard key={product.slug} product={product} rank={i + 1} categorySlug="taxes" />
@@ -114,7 +114,7 @@ export default function BestDefiTaxToolsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">DeFi Tax Scenarios These Tools Handle</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">DeFi Tax Scenarios These Tools Handle</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
             { title: "Token Swaps (DEX)", desc: "Every swap on Uniswap, SushiSwap, or other DEXs is a taxable disposal of one asset and acquisition of another." },
@@ -125,7 +125,7 @@ export default function BestDefiTaxToolsPage() {
             { title: "Airdrops & Governance", desc: "Airdrops are taxed as income. Governance token rewards from voting or participation are also income." },
           ].map((item) => (
             <div key={item.title} className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4">
-              <h3 className="text-sm font-semibold text-white mb-1">{item.title}</h3>
+              <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">{item.title}</h3>
               <p className="text-xs text-[var(--color-text-secondary)]">{item.desc}</p>
             </div>
           ))}
@@ -133,7 +133,7 @@ export default function BestDefiTaxToolsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/taxes/learn/defi-taxes" className="text-sm text-[var(--color-primary)] hover:underline">DeFi Taxes Guide &#8594;</Link>
           <Link href="/taxes/learn/staking-taxes" className="text-sm text-[var(--color-primary)] hover:underline">Staking Taxes &#8594;</Link>

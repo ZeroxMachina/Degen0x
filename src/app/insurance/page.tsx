@@ -45,7 +45,7 @@ export default function InsuranceHubPage() {
       />
 
       <div className="max-w-4xl">
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Crypto Insurance Hub
         </h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-8">
@@ -63,7 +63,7 @@ export default function InsuranceHubPage() {
 
       {/* Best-Of Section */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">
           Best Crypto Insurance for {CURRENT_MONTH} {CURRENT_YEAR}
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -73,7 +73,7 @@ export default function InsuranceHubPage() {
               href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
-              <h3 className="text-lg font-semibold text-white mb-1">{link.title}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.desc}</p>
             </Link>
           ))}
@@ -82,7 +82,7 @@ export default function InsuranceHubPage() {
 
       {/* Reviews Section */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Insurance Protocol Reviews</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Insurance Protocol Reviews</h2>
         <div className="grid md:grid-cols-3 gap-4">
           {reviewLinks.map((link) => (
             <Link
@@ -93,7 +93,7 @@ export default function InsuranceHubPage() {
               <span className="inline-block rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-medium px-2 py-0.5 mb-2">
                 Review
               </span>
-              <h3 className="text-lg font-semibold text-white mb-1">{link.title}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.desc}</p>
             </Link>
           ))}
@@ -102,7 +102,7 @@ export default function InsuranceHubPage() {
 
       {/* Learn Section */}
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Learn About Crypto Insurance</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn About Crypto Insurance</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {learnLinks.map((link) => (
             <Link
@@ -113,7 +113,7 @@ export default function InsuranceHubPage() {
               <span className="inline-block rounded-full bg-[var(--color-secondary)]/10 text-[var(--color-secondary)] text-xs font-medium px-2 py-0.5 mb-2">
                 Guide
               </span>
-              <h3 className="text-lg font-semibold text-white mb-1">{link.title}</h3>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.desc}</p>
             </Link>
           ))}
@@ -122,22 +122,22 @@ export default function InsuranceHubPage() {
 
       {/* Why Insurance Matters */}
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Why Crypto Insurance Matters</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Why Crypto Insurance Matters</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Smart Contract Risk</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Smart Contract Risk</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               DeFi protocols are powered by smart contracts that can contain bugs or vulnerabilities. Insurance provides a safety net when exploits happen, helping users recover lost funds.
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Exchange Failures</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Exchange Failures</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Centralized exchanges can be hacked or become insolvent, as history has shown multiple times. Exchange cover protects users who keep funds on trading platforms.
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white mb-2">Stablecoin Depegs</h3>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Stablecoin Depegs</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">
               Stablecoins can lose their peg due to algorithmic failures, collateral issues, or market panics. Depeg insurance pays out when a stablecoin drops below a defined threshold.
             </p>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Magic (MAGIC)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Magic (MAGIC)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Magic (MAGIC), the token powering the Treasure DAO gaming ecosystem on Arbitrum. Discover how it works, tokenomics, use cases, and how to buy MAGIC.",
 };
@@ -17,12 +17,18 @@ export default function MagicPage() {
       readTime="7 min read"
       intro="MAGIC is the native token of the Treasure ecosystem, a decentralized gaming platform and marketplace on Arbitrum. Treasure aims to be the Nintendo of Web3, creating a connected ecosystem of games, NFTs, and infrastructure where MAGIC serves as the shared currency and economic backbone across all ecosystem projects."
       toc={[
-        { id: "what-is", title: "What Is Magic?", level: 2 },
-        { id: "how-it-works", title: "How Does Treasure Work?", level: 2 },
-        { id: "tokenomics", title: "MAGIC Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy MAGIC", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-magic", title: "What Is Magic?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-treasure-work", title: "How Does Treasure Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "magic-tokenomics", title: "MAGIC Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-magic", title: "How to Buy MAGIC", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

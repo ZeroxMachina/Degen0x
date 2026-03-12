@@ -86,7 +86,7 @@ export default function StakingHubPage() {
     "@type": "CollectionPage",
     name: `Best Crypto Staking Platforms of ${CURRENT_YEAR}`,
     description: `Compare the best crypto staking platforms of ${CURRENT_YEAR}. Expert reviews, yield comparisons, and risk analysis.`,
-    url: "https://cryptodegen.com/investing/staking",
+    url: "https://degen0x.com/investing/staking",
     isPartOf: { "@type": "WebSite", name: SITE_NAME },
   };
 
@@ -106,7 +106,7 @@ export default function StakingHubPage() {
         />
 
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">
+          <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
             Crypto Staking Hub
           </h1>
           <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
@@ -119,7 +119,7 @@ export default function StakingHubPage() {
         {/* Top Staking Platforms */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white">Top-Rated Staking Platforms</h2>
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Top-Rated Staking Platforms</h2>
             <Link
               href="/investing/staking/best"
               className="text-[var(--color-primary)] hover:underline text-sm font-medium"
@@ -142,7 +142,7 @@ export default function StakingHubPage() {
 
         {/* Best-Of Categories */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Find the Best Staking Platform For You</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Find the Best Staking Platform For You</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {bestOfLinks.map((link) => (
               <Link
@@ -150,7 +150,7 @@ export default function StakingHubPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
-                <h3 className="text-white font-semibold mb-1">{link.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">
                   {link.description}
                 </p>
@@ -161,7 +161,7 @@ export default function StakingHubPage() {
 
         {/* Platform Reviews */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Platform Reviews</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Platform Reviews</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {reviewLinks.map((review) => (
               <Link
@@ -169,7 +169,7 @@ export default function StakingHubPage() {
                 href={`/investing/staking/reviews/${review.slug}`}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover text-center block"
               >
-                <span className="text-white font-semibold">{review.name}</span>
+                <span className="text-[var(--color-text)] font-semibold">{review.name}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                   Full Review
                 </span>
@@ -180,7 +180,7 @@ export default function StakingHubPage() {
 
         {/* Comparisons */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Head-to-Head Comparisons</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Head-to-Head Comparisons</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {compareLinks.map((link) => (
               <Link
@@ -188,7 +188,7 @@ export default function StakingHubPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >
-                <span className="text-white font-semibold">{link.title}</span>
+                <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                   Detailed comparison &rarr;
                 </span>
@@ -199,7 +199,7 @@ export default function StakingHubPage() {
 
         {/* Tools */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Staking Calculators</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Staking Calculators</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {toolLinks.map((tool) => (
               <Link
@@ -207,7 +207,7 @@ export default function StakingHubPage() {
                 href={tool.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
-                <h3 className="text-white font-semibold mb-1">{tool.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{tool.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">
                   {tool.description}
                 </p>
@@ -218,7 +218,7 @@ export default function StakingHubPage() {
 
         {/* Learn Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6">Learn About Staking</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn About Staking</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {learnLinks.map((link) => (
               <Link
@@ -226,7 +226,7 @@ export default function StakingHubPage() {
                 href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >
-                <span className="text-white font-semibold">{link.title}</span>
+                <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">
                   Read guide &rarr;
                 </span>
@@ -237,7 +237,7 @@ export default function StakingHubPage() {
 
         {/* About Section */}
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">How We Review Staking Platforms</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Review Staking Platforms</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">
             Our staking platform reviews are based on rigorous hands-on testing. Each platform is evaluated
             across multiple categories including yield accuracy, fee transparency, security, decentralization,

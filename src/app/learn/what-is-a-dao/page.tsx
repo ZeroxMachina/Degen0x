@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a DAO (Decentralized Autonomous Organization)? (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a DAO (Decentralized Autonomous Organization)? (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about DAOs: how decentralized autonomous organizations work, governance token voting, treasury management, real-world examples, and the benefits and risks of decentralized governance.",
 };
@@ -17,11 +17,16 @@ export default function WhatIsADaoPage() {
       readTime="9 min read"
       intro="A Decentralized Autonomous Organization (DAO) is an internet-native organization governed by its members through smart contracts and token-based voting, rather than by a traditional corporate hierarchy. DAOs enable communities to collectively manage treasuries, make decisions, and coordinate resources without centralized leadership. From protocol governance to venture capital and social clubs, DAOs represent a fundamentally new model for human coordination and organizational structure."
       toc={[
+        { id: "how-daos-work", title: "how-daos-work", level: 2 },
         { id: "how-daos-work", title: "How DAOs Work", level: 2 },
+        { id: "governance-models", title: "governance-models", level: 2 },
         { id: "governance-models", title: "Governance Models", level: 2 },
+        { id: "types-of-daos", title: "types-of-daos", level: 2 },
         { id: "types-of-daos", title: "Types of DAOs", level: 2 },
-        { id: "benefits-risks", title: "Benefits and Risks", level: 2 },
-        { id: "getting-involved", title: "Getting Involved in DAOs", level: 2 },
+        { id: "benefits-risks", title: "benefits-risks", level: 2 },
+        { id: "benefits-and-risks", title: "Benefits and Risks", level: 2 },
+        { id: "getting-involved", title: "getting-involved", level: 2 },
+        { id: "getting-involved-in-daos", title: "Getting Involved in DAOs", level: 2 }
       ]}
       faqs={[
         {

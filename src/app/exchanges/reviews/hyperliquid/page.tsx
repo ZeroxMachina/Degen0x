@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "0.02%/0.05% maker/taker (zero gas fees)",
   bestFor: "DeFi-native traders seeking CEX-level derivatives performance",
-  affiliateUrl: "https://cryptodegen.com/go/hyperliquid",
+  affiliateUrl: "https://degen0x.com/go/hyperliquid",
   category: "exchanges",
 };
 

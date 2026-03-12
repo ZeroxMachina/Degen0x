@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Hot Wallet? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Hot Wallet? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what hot wallets are, how they differ from cold wallets, and the trade-offs between convenience and security.",
 };
@@ -17,11 +17,16 @@ export default function HotWalletPage() {
       readTime="4 min"
       intro="A hot wallet is a cryptocurrency wallet that is connected to the internet. This includes browser extension wallets like MetaMask, mobile wallet apps, and desktop wallet software. Hot wallets offer convenience for frequent transactions and DeFi interactions but are more vulnerable to hacking, malware, and phishing attacks compared to offline cold storage solutions."
       toc={[
-        { id: "definition", title: "What Is a Hot Wallet?", level: 2 },
-        { id: "types", title: "Types of Hot Wallets", level: 2 },
-        { id: "hot-vs-cold", title: "Hot Wallets vs Cold Wallets", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-hot-wallet", title: "What Is a Hot Wallet?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-hot-wallets", title: "Types of Hot Wallets", level: 2 },
+        { id: "hot-vs-cold", title: "hot-vs-cold", level: 2 },
+        { id: "hot-wallets-vs-cold-wallets", title: "Hot Wallets vs Cold Wallets", level: 2 },
+        { id: "security-tips", title: "security-tips", level: 2 },
         { id: "security-tips", title: "Security Tips", level: 2 },
-        { id: "why-it-matters", title: "Why Hot Wallets Matter", level: 2 },
+        { id: "why-it-matters", title: "why-it-matters", level: 2 },
+        { id: "why-hot-wallets-matter", title: "Why Hot Wallets Matter", level: 2 }
       ]}
       faqs={[
         {

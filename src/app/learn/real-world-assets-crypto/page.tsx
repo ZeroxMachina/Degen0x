@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Real World Assets (RWA) in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Real World Assets (RWA) in Crypto (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about real world asset tokenization: how RWAs bring traditional assets like treasury bonds, real estate, and commodities onto blockchain, and why RWA is one of crypto's fastest-growing sectors.",
 };
@@ -17,11 +17,16 @@ export default function RealWorldAssetsCryptoPage() {
       readTime="9 min read"
       intro="Real World Asset (RWA) tokenization is the process of representing ownership rights to traditional assets — such as government bonds, real estate, commodities, and private credit — as digital tokens on a blockchain. By bringing these assets on-chain, tokenization enables fractional ownership, 24/7 trading, instant settlement, and global accessibility. RWA has emerged as one of the most significant bridges between traditional finance and DeFi, with billions of dollars in tokenized assets and major institutions like BlackRock and JPMorgan actively participating."
       toc={[
-        { id: "what-are-rwas", title: "What Are Tokenized Real World Assets?", level: 2 },
-        { id: "types", title: "Types of Tokenized RWAs", level: 2 },
-        { id: "benefits", title: "Benefits of RWA Tokenization", level: 2 },
-        { id: "challenges", title: "Challenges and Risks", level: 2 },
-        { id: "future", title: "The Future of RWA", level: 2 },
+        { id: "what-are-rwas", title: "what-are-rwas", level: 2 },
+        { id: "what-are-tokenized-real-world-assets", title: "What Are Tokenized Real World Assets?", level: 2 },
+        { id: "types", title: "types", level: 2 },
+        { id: "types-of-tokenized-rwas", title: "Types of Tokenized RWAs", level: 2 },
+        { id: "benefits", title: "benefits", level: 2 },
+        { id: "benefits-of-rwa-tokenization", title: "Benefits of RWA Tokenization", level: 2 },
+        { id: "challenges", title: "challenges", level: 2 },
+        { id: "challenges-and-risks", title: "Challenges and Risks", level: 2 },
+        { id: "future", title: "future", level: 2 },
+        { id: "the-future-of-rwa", title: "The Future of RWA", level: 2 }
       ]}
       faqs={[
         {

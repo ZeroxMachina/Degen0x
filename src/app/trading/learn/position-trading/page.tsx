@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Position Trading in Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Position Trading in Crypto (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn position trading strategies for crypto. Hold trades for weeks to months using macro analysis, trend identification, and patient capital management.",
 };
@@ -17,10 +17,14 @@ export default function PositionTradingPage() {
       readTime="8 min read"
       intro="Position trading is a long-term trading style where traders hold positions for weeks, months, or even longer. Unlike day traders and swing traders, position traders focus on capturing major market trends rather than short-term fluctuations. This approach combines fundamental analysis with technical trend identification and is ideal for traders who prefer a less time-intensive strategy."
       toc={[
+        { id: "what-is-position-trading", title: "what-is-position-trading", level: 2 },
         { id: "what-is-position-trading", title: "What Is Position Trading?", level: 2 },
-        { id: "strategies", title: "Position Trading Strategies", level: 2 },
-        { id: "fundamental-analysis", title: "Fundamental Analysis for Position Traders", level: 2 },
-        { id: "trade-management", title: "Trade Management and Exit Strategies", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "position-trading-strategies", title: "Position Trading Strategies", level: 2 },
+        { id: "fundamental-analysis", title: "fundamental-analysis", level: 2 },
+        { id: "fundamental-analysis-for-position-traders", title: "Fundamental Analysis for Position Traders", level: 2 },
+        { id: "trade-management", title: "trade-management", level: 2 },
+        { id: "trade-management-and-exit-strategies", title: "Trade Management and Exit Strategies", level: 2 }
       ]}
       faqs={[
         { question: "How is position trading different from investing?", answer: "Position trading still involves defined entries, exits, and stop-losses, whereas investing typically means buying and holding indefinitely. Position traders actively manage their positions and may go both long and short, while investors generally only hold long positions." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Safe Token (SAFE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Safe Token (SAFE)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Safe Token (SAFE), the governance token of Safe smart wallet infrastructure. Discover how it works, tokenomics, use cases, and how to buy SAFE.",
 };
 
@@ -16,12 +16,18 @@ export default function SafeTokenPage() {
       readTime="8 min read"
       intro="Safe (formerly Gnosis Safe) is the most widely used smart contract wallet infrastructure in Web3, securing over $100 billion in digital assets. The SAFE token is the governance token of the Safe ecosystem, giving holders the power to guide the development of the platform that underpins a large portion of crypto treasury management, DAO operations, and institutional custody."
       toc={[
-        { id: "what-is", title: "What Is Safe Token?", level: 2 },
-        { id: "how-it-works", title: "How Does Safe Work?", level: 2 },
-        { id: "tokenomics", title: "SAFE Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SAFE", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-safe-token", title: "What Is Safe Token?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-safe-work", title: "How Does Safe Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "safe-tokenomics", title: "SAFE Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-safe", title: "How to Buy SAFE", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Safe Token?", answer: "SAFE is the governance token of Safe, the leading smart contract wallet infrastructure securing over $100B in assets used by DAOs, institutions, and individuals for multisig and account abstraction wallets." },

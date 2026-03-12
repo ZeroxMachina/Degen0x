@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Memecoin? Definition & Guide (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is a Memecoin? Definition & Guide (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what memecoins are, how they work, and why they remain one of the most volatile and culturally significant phenomena in crypto.",
 };
@@ -17,11 +17,16 @@ export default function MemecoinPage() {
       readTime="5 min"
       intro="A memecoin is a cryptocurrency that derives its value primarily from internet culture, community enthusiasm, and viral marketing rather than underlying technology or utility. Dogecoin (DOGE) and Shiba Inu (SHIB) are the most well-known examples. Memecoins are highly speculative, extremely volatile, and often created as jokes, but some have achieved multi-billion dollar market capitalizations driven by community fervor."
       toc={[
-        { id: "definition", title: "What Is a Memecoin?", level: 2 },
-        { id: "history", title: "History of Memecoins", level: 2 },
-        { id: "how-they-work", title: "How Memecoins Work", level: 2 },
-        { id: "risks", title: "Risks of Memecoins", level: 2 },
-        { id: "cultural-impact", title: "Cultural Impact", level: 2 },
+        { id: "definition", title: "definition", level: 2 },
+        { id: "what-is-a-memecoin", title: "What Is a Memecoin?", level: 2 },
+        { id: "history", title: "history", level: 2 },
+        { id: "history-of-memecoins", title: "History of Memecoins", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-memecoins-work", title: "How Memecoins Work", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-memecoins", title: "Risks of Memecoins", level: 2 },
+        { id: "cultural-impact", title: "cultural-impact", level: 2 },
+        { id: "cultural-impact", title: "Cultural Impact", level: 2 }
       ]}
       faqs={[
         {

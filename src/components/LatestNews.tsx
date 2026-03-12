@@ -107,7 +107,7 @@ export default function LatestNews() {
                 {/* Category Tag */}
                 <div className="mb-1.5">
                   <span
-                    className="inline-block px-2 py-0.5 rounded-full text-xs font-semibold text-white"
+                    className="inline-block px-2 py-0.5 rounded-full text-xs font-semibold text-[var(--color-text)]"
                     style={{ backgroundColor: CATEGORY_COLORS[article.category] || "#6366f1" }}
                   >
                     {article.category}
@@ -132,7 +132,7 @@ export default function LatestNews() {
       {/* CTA */}
       <Link
         href="/news"
-        className="mt-6 w-full block text-center py-2.5 px-4 rounded-xl bg-[var(--color-primary)] text-white font-semibold text-sm hover:bg-[var(--color-primary-dark)] transition-all duration-300"
+        className="mt-6 w-full block text-center py-2.5 px-4 rounded-xl bg-[var(--color-primary)] text-[var(--color-text)] font-semibold text-sm hover:bg-[var(--color-primary-dark)] transition-all duration-300"
       >
         Explore Full News Feed
       </Link>

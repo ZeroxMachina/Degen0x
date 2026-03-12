@@ -21,7 +21,7 @@ const products: Product[] = [
     cons: ["Revenue depends on trading volume", "Token price volatility affects total returns", "Complex staking mechanics"],
     fees: "No staking fee; 30% revenue share",
     bestFor: "Sustainable DeFi revenue sharing",
-    affiliateUrl: "https://cryptodegen.com/go/gmx",
+    affiliateUrl: "https://degen0x.com/go/gmx",
     category: "long-term",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     cons: ["Relatively modest yield compared to altcoins", "Price volatility still significant", "32 ETH minimum for solo staking"],
     fees: "Varies by staking method",
     bestFor: "Blue-chip crypto yield",
-    affiliateUrl: "https://cryptodegen.com/go/ethereum",
+    affiliateUrl: "https://degen0x.com/go/ethereum",
     category: "long-term",
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     cons: ["4-year maximum lock period", "CRV inflation dilutes non-lockers", "Complex veToken mechanics"],
     fees: "No fee; lock CRV to earn trading fees",
     bestFor: "Long-term DeFi governance and yield",
-    affiliateUrl: "https://cryptodegen.com/go/curve",
+    affiliateUrl: "https://degen0x.com/go/curve",
     category: "long-term",
   },
 ];
@@ -63,7 +63,7 @@ export default function DividendTokensPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Dividend Tokens", href: "/long-term/best/dividend-tokens" }]} />
       <AffiliateDisclosure />
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">Best Dividend & Revenue-Sharing Tokens ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Dividend & Revenue-Sharing Tokens ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
         <p className="text-xl text-[var(--color-text-secondary)] mb-6">Some crypto tokens distribute real protocol revenue to holders, creating a dividend-like income stream. For long-term investors, these tokens offer both price appreciation potential and regular yield from actual usage-based revenue.</p>
         <p className="text-[var(--color-text-secondary)]">We evaluated tokens based on revenue sustainability, distribution transparency, yield consistency, and the fundamental strength of the underlying protocol. The best dividend tokens generate revenue from real user demand rather than inflationary token emissions.</p>
       </div>

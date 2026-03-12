@@ -72,7 +72,7 @@ export default function EuropeExchangesPage() {
         ]}
       />
 
-      <h1 className="text-4xl font-bold text-white mb-4">
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
         Best Crypto Exchanges in Europe ({CURRENT_YEAR})
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -89,7 +89,7 @@ export default function EuropeExchangesPage() {
           SEPA deposits, strong consumer protections, and access to a wide range of global
           and local exchanges. Here are the best platforms for European crypto traders.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">The MiCA Regulation</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">The MiCA Regulation</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           MiCA is the world&apos;s first comprehensive crypto regulation at a supranational level.
           It requires exchanges to obtain licenses, maintain adequate reserves, segregate
@@ -97,7 +97,7 @@ export default function EuropeExchangesPage() {
           means stronger protections and clearer recourse mechanisms if something goes wrong.
           Exchanges that fail to obtain MiCA licenses cannot legally operate in the EU.
         </p>
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">Country-Specific Considerations</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mt-8 mb-4">Country-Specific Considerations</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           While MiCA provides a baseline, tax treatment and specific regulations still vary by
           country. Germany is notably crypto-friendly with tax-free gains after one year of
@@ -119,22 +119,22 @@ export default function EuropeExchangesPage() {
       </div>
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Payment Methods for European Users</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods for European Users</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">SEPA Bank Transfer</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">SEPA Bank Transfer</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Free on most exchanges. Arrives in 1-2 business days. The standard for EUR deposits.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">SEPA Instant</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">SEPA Instant</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Near-instant EUR deposits. Free on some exchanges, small fee on others. Available in most EU countries.</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">iDEAL / Bancontact / Sofort</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">iDEAL / Bancontact / Sofort</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Country-specific instant bank payment methods. Netherlands (iDEAL), Belgium (Bancontact), Germany (Sofort).</p>
           </div>
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-            <h3 className="text-white font-semibold mb-2">Debit / Credit Card</h3>
+            <h3 className="text-[var(--color-text)] font-semibold mb-2">Debit / Credit Card</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Instant purchase. 1.5-3.5% fee. Visa and Mastercard accepted. Higher fees but immediate access.</p>
           </div>
         </div>

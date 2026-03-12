@@ -16,10 +16,14 @@ export default function BestCryptoAccountingToolsPage() {
       readTime="10 min"
       intro="Crypto accounting tools automate tracking, categorizing, and reporting cryptocurrency transactions for business financial statements and tax compliance across wallets and protocols."
       toc={[
-        { id: "section-1", title: "Crypto Accounting Challenges", level: 2 },
-        { id: "section-2", title: "Top Accounting Platforms", level: 2 },
-        { id: "section-3", title: "Essential Features", level: 2 },
-        { id: "section-4", title: "Implementation Guide", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "crypto-accounting-challenges", title: "Crypto Accounting Challenges", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "top-accounting-platforms", title: "Top Accounting Platforms", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "essential-features", title: "Essential Features", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "implementation-guide", title: "Implementation Guide", level: 2 }
       ]}
       faqs={[
         { question: "Why is crypto accounting different from traditional accounting?", answer: "Crypto transactions occur across multiple wallets, chains, and protocols with complex operations like swaps, staking, and DeFi interactions that have no traditional accounting equivalents. Tracking cost basis, fair market values, and categorizing transactions requires specialized tools." },

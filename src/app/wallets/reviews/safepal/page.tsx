@@ -22,7 +22,7 @@ const product = {
   ],
   fees: "$49.99 for S1 hardware wallet",
   bestFor: "Budget-conscious users wanting air-gapped hardware security",
-  affiliateUrl: "https://cryptodegen.com/go/safepal",
+  affiliateUrl: "https://degen0x.com/go/safepal",
   category: "wallets",
 };
 

@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -797,7 +799,7 @@ export default function LendingRatesClient() {
                 onClick={() => setSelectedAsset(asset)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
                   selectedAsset === asset
-                    ? "bg-[var(--color-primary)] text-white"
+                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
                     : "glass hover:bg-[var(--color-surface)]"
                 }`}
               >
@@ -819,7 +821,7 @@ export default function LendingRatesClient() {
                 onClick={() => setSelectedChain(chain)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
                   selectedChain === chain
-                    ? "bg-[var(--color-primary)] text-white"
+                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
                     : "glass hover:bg-[var(--color-surface)]"
                 }`}
               >
@@ -842,7 +844,7 @@ export default function LendingRatesClient() {
                   onClick={() => setSelectedType(type)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all flex-1 ${
                     selectedType === type
-                      ? "bg-[var(--color-primary)] text-white"
+                      ? "bg-[var(--color-primary)] text-[var(--color-text)]"
                       : "glass hover:bg-[var(--color-surface)]"
                   }`}
                 >
@@ -879,7 +881,7 @@ export default function LendingRatesClient() {
             }}
             className={`text-xs font-medium px-3 py-1.5 rounded-lg transition-all ${
               comparisonMode
-                ? "bg-[var(--color-primary)] text-white"
+                ? "bg-[var(--color-primary)] text-[var(--color-text)]"
                 : "glass hover:bg-[var(--color-surface)]"
             }`}
           >
@@ -977,7 +979,7 @@ export default function LendingRatesClient() {
                 <td className="px-4 py-3 text-center hidden xl:table-cell">
                   <div className="flex items-center justify-center">
                     <span
-                      className="text-xs font-bold px-2 py-1 rounded-full text-white"
+                      className="text-xs font-bold px-2 py-1 rounded-full text-[var(--color-text)]"
                       style={{ backgroundColor: getRiskColor(rate.riskLevel) }}
                     >
                       {rate.riskLevel}

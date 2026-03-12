@@ -17,10 +17,14 @@ export default function BestRWADefiLending() {
       readTime="10 min"
       intro="Real-world asset (RWA) lending is one of the fastest-growing sectors in DeFi, bringing traditional finance assets like invoices, real estate, and trade receivables on-chain. These platforms offer yields backed by tangible economic activity rather than crypto speculation, providing diversification benefits and potentially more stable returns. This guide covers the leading RWA lending protocols."
       toc={[
-        { id: "what-is-rwa", title: "What Is RWA Lending", level: 2 },
-        { id: "top-platforms", title: "Top RWA Lending Platforms", level: 2 },
-        { id: "yield-comparison", title: "RWA vs Crypto-Native Yields", level: 2 },
-        { id: "risks", title: "Unique Risks of RWA Lending", level: 2 },
+        { id: "what-is-rwa", title: "what-is-rwa", level: 2 },
+        { id: "what-is-rwa-lending", title: "What Is RWA Lending", level: 2 },
+        { id: "top-platforms", title: "top-platforms", level: 2 },
+        { id: "top-rwa-lending-platforms", title: "Top RWA Lending Platforms", level: 2 },
+        { id: "yield-comparison", title: "yield-comparison", level: 2 },
+        { id: "rwa-vs-crypto-native-yields", title: "RWA vs Crypto-Native Yields", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "unique-risks-of-rwa-lending", title: "Unique Risks of RWA Lending", level: 2 }
       ]}
       faqs={[
         { question: "What types of real-world assets can I lend against?", answer: "Common RWA categories include trade invoices, real estate mortgages, consumer credit, revenue-based financing, treasury bills, and corporate bonds. Each has different risk profiles and yield characteristics." },

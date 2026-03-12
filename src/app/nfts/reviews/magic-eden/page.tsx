@@ -24,12 +24,12 @@ const product: Product = {
   ],
   fees: "2% marketplace fee (Solana); varies by chain",
   bestFor: "Solana & Bitcoin Ordinals collectors",
-  affiliateUrl: "https://cryptodegen.com/go/magic-eden",
+  affiliateUrl: "https://degen0x.com/go/magic-eden",
   category: "nfts",
 };
 
 export const metadata: Metadata = {
-  title: `Magic Eden Review: Multi-Chain NFT Marketplace (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Magic Eden Review: Multi-Chain NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth Magic Eden review covering fees, multi-chain support, Bitcoin Ordinals, Launchpad features, and whether it's the right NFT marketplace for you.",
 };

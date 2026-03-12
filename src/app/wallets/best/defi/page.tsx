@@ -39,7 +39,7 @@ export default function BestDeFiWalletsPage() {
       />
       <AffiliateDisclosure />
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">Best DeFi Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best DeFi Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
         <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
           DeFi wallets are your gateway to decentralized finance: lending, borrowing, swapping, yield farming,
           and liquidity provision. The right wallet provides seamless dApp connectivity, transaction security,
@@ -49,18 +49,18 @@ export default function BestDeFiWalletsPage() {
       </header>
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h2 className="text-xl font-bold text-white mb-4">Quick Verdict</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Quick Verdict</h2>
         <p className="text-[var(--color-text-secondary)]">
-          <strong className="text-white">MetaMask</strong> is the safest bet for broad DeFi compatibility.
-          <strong className="text-white"> Rabby</strong> is the best choice for security-conscious DeFi users
-          thanks to its transaction simulation. <strong className="text-white">Phantom</strong> is essential for
-          Solana DeFi. For teams and DAOs, <strong className="text-white">Safe</strong> provides multi-sig security
+          <strong className="text-[var(--color-text)]">MetaMask</strong> is the safest bet for broad DeFi compatibility.
+          <strong className="text-[var(--color-text)]"> Rabby</strong> is the best choice for security-conscious DeFi users
+          thanks to its transaction simulation. <strong className="text-[var(--color-text)]">Phantom</strong> is essential for
+          Solana DeFi. For teams and DAOs, <strong className="text-[var(--color-text)]">Safe</strong> provides multi-sig security
           for collective DeFi treasury management.
         </p>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Best DeFi Wallets, Ranked</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best DeFi Wallets, Ranked</h2>
         <div className="space-y-6">
           {defiWallets.map((product, index) => (
             <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
@@ -77,18 +77,18 @@ export default function BestDeFiWalletsPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-white mb-4">Related Guides</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/wallets/compare/metamask-vs-phantom" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">MetaMask vs Phantom</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">MetaMask vs Phantom</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Head-to-head DeFi wallet comparison</p>
           </Link>
           <Link href="/wallets/best/security" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Best for Security</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best for Security</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Most secure wallet options</p>
           </Link>
           <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
-            <h3 className="font-semibold text-white text-sm">Wallet Security Guide</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Wallet Security Guide</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Protect your DeFi positions</p>
           </Link>
         </div>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Robinhood vs Webull Crypto (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Robinhood vs Webull Crypto (${CURRENT_YEAR}) | degen0x`,
   description: "Compare Robinhood vs Webull for crypto trading. Fees, coin selection, features, and which multi-asset broker is better for crypto.",
 };
 
@@ -16,12 +16,18 @@ export default function RobinhoodVsWebullCrypto() {
       readTime="8 min read"
       intro="Robinhood and Webull are both multi-asset brokerages that include cryptocurrency alongside stocks and options. Neither is a dedicated crypto exchange, but both provide accessible crypto trading for mainstream investors. This comparison examines their crypto offerings to help you choose the better multi-asset platform for crypto exposure."
       toc={[
-        { id: "overview", title: "Platform Overview", level: 2 },
-        { id: "fees", title: "Fee Comparison", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "platform-overview", title: "Platform Overview", level: 2 },
+        { id: "fees", title: "fees", level: 2 },
+        { id: "fee-comparison", title: "Fee Comparison", level: 2 },
+        { id: "crypto-features", title: "crypto-features", level: 2 },
         { id: "crypto-features", title: "Crypto Features", level: 2 },
+        { id: "coin-selection", title: "coin-selection", level: 2 },
         { id: "coin-selection", title: "Coin Selection", level: 2 },
+        { id: "analysis-tools", title: "analysis-tools", level: 2 },
         { id: "analysis-tools", title: "Analysis Tools", level: 2 },
-        { id: "verdict", title: "Which Should You Choose?", level: 2 },
+        { id: "verdict", title: "verdict", level: 2 },
+        { id: "which-should-you-choose", title: "Which Should You Choose?", level: 2 }
       ]}
       faqs={[
         { question: "Do both offer commission-free crypto?", answer: "Both advertise commission-free crypto trading but make money through spread markups. The actual cost depends on the asset and market conditions, typically adding 0.5-2% to the mid-market price." },

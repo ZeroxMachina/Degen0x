@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Astar Network (ASTR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Astar Network (ASTR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Astar Network (ASTR), the multi-chain smart contract hub for Polkadot. Discover how it works, tokenomics, use cases, and how to buy ASTR.",
 };
@@ -17,12 +17,18 @@ export default function AstarPage() {
       readTime="8 min read"
       intro="Astar Network is a multi-chain smart contract platform and the leading parachain in the Polkadot ecosystem. Supporting both EVM and WebAssembly smart contracts, Astar features a unique dApp staking mechanism that rewards developers for building on the network. ASTR is the native token for gas, staking, and governance."
       toc={[
-        { id: "what-is", title: "What Is Astar Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Astar Work?", level: 2 },
-        { id: "tokenomics", title: "ASTR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ASTR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-astar-network", title: "What Is Astar Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-astar-work", title: "How Does Astar Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "astr-tokenomics", title: "ASTR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-astr", title: "How to Buy ASTR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

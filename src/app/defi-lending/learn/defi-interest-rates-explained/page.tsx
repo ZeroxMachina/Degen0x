@@ -17,11 +17,16 @@ export default function DefiInterestRatesExplainedPage() {
       readTime="10 min"
       intro="DeFi interest rates are fundamentally different from traditional banking rates. Instead of being set by central authorities, they are determined algorithmically based on supply and demand within lending pools. Understanding how these rates work, what drives them, and how to compare them effectively is essential for maximizing your DeFi lending returns."
       toc={[
-        { id: "how-rates-determined", title: "How Rates Are Determined", level: 2 },
-        { id: "utilization-model", title: "The Utilization Rate Model", level: 2 },
+        { id: "how-rates-determined", title: "how-rates-determined", level: 2 },
+        { id: "how-rates-are-determined", title: "How Rates Are Determined", level: 2 },
+        { id: "utilization-model", title: "utilization-model", level: 2 },
+        { id: "the-utilization-rate-model", title: "The Utilization Rate Model", level: 2 },
+        { id: "apy-vs-apr", title: "apy-vs-apr", level: 2 },
         { id: "apy-vs-apr", title: "APY vs APR", level: 2 },
-        { id: "rate-factors", title: "Factors Affecting Rates", level: 2 },
-        { id: "optimizing-yields", title: "Optimizing Your Yields", level: 2 },
+        { id: "rate-factors", title: "rate-factors", level: 2 },
+        { id: "factors-affecting-rates", title: "Factors Affecting Rates", level: 2 },
+        { id: "optimizing-yields", title: "optimizing-yields", level: 2 },
+        { id: "optimizing-your-yields", title: "Optimizing Your Yields", level: 2 }
       ]}
       faqs={[
         { question: "Why do DeFi rates change so frequently?", answer: "DeFi rates adjust with every block based on pool utilization. When borrowing demand increases, rates rise. When more lenders deposit, utilization drops and rates decrease. This creates a dynamic, market-driven rate environment." },

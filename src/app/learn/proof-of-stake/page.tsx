@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Proof of Stake (PoS) Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Proof of Stake (PoS) Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn how Proof of Stake works, why Ethereum switched to PoS, staking rewards, validator requirements, slashing risks, and how PoS compares to Proof of Work.",
 };
@@ -17,11 +17,16 @@ export default function ProofOfStakePage() {
       readTime="9 min read"
       intro="Proof of Stake (PoS) is a consensus mechanism where validators are selected to create new blocks based on the amount of cryptocurrency they have staked as collateral. Unlike Proof of Work, which requires enormous computational power, PoS achieves network security through economic incentives — validators risk losing their staked assets if they act dishonestly. Since Ethereum's historic transition to PoS in September 2022, it has become the dominant consensus mechanism across the blockchain ecosystem."
       toc={[
-        { id: "how-pos-works", title: "How Proof of Stake Works", level: 2 },
-        { id: "staking-rewards", title: "Staking Rewards and Economics", level: 2 },
-        { id: "slashing", title: "Slashing and Validator Penalties", level: 2 },
-        { id: "variations", title: "PoS Variations", level: 2 },
-        { id: "advantages-tradeoffs", title: "Advantages and Trade-offs", level: 2 },
+        { id: "how-pos-works", title: "how-pos-works", level: 2 },
+        { id: "how-proof-of-stake-works", title: "How Proof of Stake Works", level: 2 },
+        { id: "staking-rewards", title: "staking-rewards", level: 2 },
+        { id: "staking-rewards-and-economics", title: "Staking Rewards and Economics", level: 2 },
+        { id: "slashing", title: "slashing", level: 2 },
+        { id: "slashing-and-validator-penalties", title: "Slashing and Validator Penalties", level: 2 },
+        { id: "variations", title: "variations", level: 2 },
+        { id: "pos-variations", title: "PoS Variations", level: 2 },
+        { id: "advantages-tradeoffs", title: "advantages-tradeoffs", level: 2 },
+        { id: "advantages-and-trade-offs", title: "Advantages and Trade-offs", level: 2 }
       ]}
       faqs={[
         {

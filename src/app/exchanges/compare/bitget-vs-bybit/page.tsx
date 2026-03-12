@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "Bitget", slug: "bitget", rating: 4.3, affiliateUrl: "https://cryptodegen.com/go/bitget", features: { "Trading Fees": "0.1% spot / 0.02% futures maker", "Coins Listed": "600+", "Copy Trading": "Yes (largest community)", "Max Leverage": "125x", "Trading Bots": "Yes", "Proof of Reserves": "Yes", "Protection Fund": "$300M+ (BGB fund)", "Launchpad": "Yes (Launchpool)" } },
-  { name: "Bybit", slug: "bybit", rating: 4.5, affiliateUrl: "https://cryptodegen.com/go/bybit", features: { "Trading Fees": "0.1% spot / 0.02% futures maker", "Coins Listed": "500+", "Copy Trading": "Yes (growing)", "Max Leverage": "100x", "Trading Bots": "Yes", "Proof of Reserves": "Yes", "Protection Fund": "Not disclosed", "Launchpad": "Yes (Bybit Launchpad)" } },
+  { name: "Bitget", slug: "bitget", rating: 4.3, affiliateUrl: "https://degen0x.com/go/bitget", features: { "Trading Fees": "0.1% spot / 0.02% futures maker", "Coins Listed": "600+", "Copy Trading": "Yes (largest community)", "Max Leverage": "125x", "Trading Bots": "Yes", "Proof of Reserves": "Yes", "Protection Fund": "$300M+ (BGB fund)", "Launchpad": "Yes (Launchpool)" } },
+  { name: "Bybit", slug: "bybit", rating: 4.5, affiliateUrl: "https://degen0x.com/go/bybit", features: { "Trading Fees": "0.1% spot / 0.02% futures maker", "Coins Listed": "500+", "Copy Trading": "Yes (growing)", "Max Leverage": "100x", "Trading Bots": "Yes", "Proof of Reserves": "Yes", "Protection Fund": "Not disclosed", "Launchpad": "Yes (Bybit Launchpad)" } },
 ];
 
 const features = ["Trading Fees", "Coins Listed", "Copy Trading", "Max Leverage", "Trading Bots", "Proof of Reserves", "Protection Fund", "Launchpad"];
@@ -32,7 +32,7 @@ export default function BitgetVsBybitPage() {
 
       <AffiliateDisclosure />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Bitget vs Bybit: Best Copy Trading Exchange in {CURRENT_YEAR}?
       </h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
@@ -49,7 +49,7 @@ export default function BitgetVsBybitPage() {
       <ComparisonTable items={items} features={features} title="Bitget vs Bybit: Head-to-Head" />
 
       <div className="prose-crypto mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Copy Trading</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Copy Trading</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Bitget has the largest copy trading community among crypto exchanges, with over 100,000
           lead traders and transparent performance metrics including win rate, ROI, drawdown,
@@ -63,7 +63,7 @@ export default function BitgetVsBybitPage() {
           and stop-loss levels when copying.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Futures and Derivatives</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Futures and Derivatives</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Both platforms offer USDT-margined and coin-margined perpetual contracts. Bitget offers
           up to 125x leverage while Bybit offers up to 100x. Futures fees are identical at
@@ -75,7 +75,7 @@ export default function BitgetVsBybitPage() {
           trading volume. For less common pairs, both platforms offer comparable depth.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Security and Protection</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Security and Protection</h2>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Bitget maintains a $300 million+ protection fund denominated in BTC and BGB to cover
           potential security incidents. Both exchanges publish proof of reserves and employ
@@ -83,15 +83,15 @@ export default function BitgetVsBybitPage() {
           regular third-party audits.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
-            <strong className="text-white">Choose Bitget if</strong> you want the best copy trading
+            <strong className="text-[var(--color-text)]">Choose Bitget if</strong> you want the best copy trading
             experience with the largest community of lead traders. Bitget also offers higher
             max leverage and a transparent protection fund.
           </p>
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
-            <strong className="text-white">Choose Bybit if</strong> you want deeper liquidity,
+            <strong className="text-[var(--color-text)]">Choose Bybit if</strong> you want deeper liquidity,
             a more established platform, and a wider range of trading products. Bybit has
             better brand recognition and a longer track record.
           </p>

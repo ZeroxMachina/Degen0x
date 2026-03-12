@@ -17,10 +17,14 @@ export default function RecursiveLendingStrategyPage() {
       readTime="11 min"
       intro="Recursive lending, also known as looping, is a DeFi strategy where users deposit an asset, borrow the same or correlated asset against it, redeposit the borrowed asset, and repeat. This amplifies exposure to lending incentives, staking yields, or points programs. While powerful for yield optimization, looping introduces significant liquidation risk that must be carefully managed."
       toc={[
-        { id: "how-it-works", title: "How Recursive Lending Works", level: 2 },
-        { id: "use-cases", title: "Common Use Cases", level: 2 },
-        { id: "platforms", title: "Platforms Supporting Loops", level: 2 },
-        { id: "risks", title: "Risks & Liquidation Mechanics", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-recursive-lending-works", title: "How Recursive Lending Works", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "common-use-cases", title: "Common Use Cases", level: 2 },
+        { id: "platforms", title: "platforms", level: 2 },
+        { id: "platforms-supporting-loops", title: "Platforms Supporting Loops", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-liquidation-mechanics", title: "Risks & Liquidation Mechanics", level: 2 }
       ]}
       faqs={[
         { question: "How many loops should I do?", answer: "The optimal number of loops depends on borrowing costs, reward rates, and your risk tolerance. Each loop adds incremental yield but also incremental risk. Most strategies use 2-5 loops, with diminishing returns beyond that." },

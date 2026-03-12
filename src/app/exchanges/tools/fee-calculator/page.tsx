@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -260,7 +262,7 @@ export default function FeeCalculatorPage() {
 
       {/* Hero */}
       <div className="mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
           Crypto Exchange Fee Comparison 2026
         </h1>
         <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed max-w-3xl">
@@ -284,7 +286,7 @@ export default function FeeCalculatorPage() {
               onChange={(e) => setTradeAmount(e.target.value)}
               placeholder="1000"
               min="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-white px-4 py-2.5 text-lg font-bold focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] mb-2"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] px-4 py-2.5 text-lg font-bold focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] mb-2"
             />
             <div className="flex flex-wrap gap-1.5">
               {PRESETS.map(p => (
@@ -293,8 +295,8 @@ export default function FeeCalculatorPage() {
                   onClick={() => setTradeAmount(String(p.value))}
                   className={`text-xs px-2 py-1 rounded-md transition-colors ${
                     parseFloat(tradeAmount) === p.value
-                      ? "bg-[var(--color-primary)] text-white"
-                      : "bg-[var(--color-bg)] border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-white"
+                      ? "bg-[var(--color-primary)] text-[var(--color-text)]"
+                      : "bg-[var(--color-bg)] border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                   }`}
                 >
                   {p.label}
@@ -314,7 +316,7 @@ export default function FeeCalculatorPage() {
               onChange={(e) => setTradesPerMonth(e.target.value)}
               placeholder="10"
               min="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-white px-4 py-2.5 text-lg font-bold focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] mb-2"
+              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] px-4 py-2.5 text-lg font-bold focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] mb-2"
             />
             <div className="flex flex-wrap gap-1.5">
               {TRADE_PRESETS.map(p => (
@@ -323,8 +325,8 @@ export default function FeeCalculatorPage() {
                   onClick={() => setTradesPerMonth(String(p.value))}
                   className={`text-xs px-2 py-1 rounded-md transition-colors ${
                     parseInt(tradesPerMonth) === p.value
-                      ? "bg-[var(--color-primary)] text-white"
-                      : "bg-[var(--color-bg)] border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-white"
+                      ? "bg-[var(--color-primary)] text-[var(--color-text)]"
+                      : "bg-[var(--color-bg)] border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                   }`}
                 >
                   {p.label}
@@ -343,8 +345,8 @@ export default function FeeCalculatorPage() {
                 onClick={() => setOrderType("taker")}
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   orderType === "taker"
-                    ? "bg-[var(--color-primary)] text-white"
-                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-white"
+                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
+                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 Taker
@@ -353,8 +355,8 @@ export default function FeeCalculatorPage() {
                 onClick={() => setOrderType("maker")}
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   orderType === "maker"
-                    ? "bg-[var(--color-primary)] text-white"
-                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-white"
+                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
+                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 Maker
@@ -377,8 +379,8 @@ export default function FeeCalculatorPage() {
                 onClick={() => setVipMode(false)}
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   !vipMode
-                    ? "bg-[var(--color-primary)] text-white"
-                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-white"
+                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
+                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 Base
@@ -387,8 +389,8 @@ export default function FeeCalculatorPage() {
                 onClick={() => setVipMode(true)}
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   vipMode
-                    ? "bg-amber-500 text-white"
-                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-white"
+                    ? "bg-amber-500 text-[var(--color-text)]"
+                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 ⚡ VIP
@@ -409,14 +411,14 @@ export default function FeeCalculatorPage() {
           <div>
             <div className="text-sm font-bold text-emerald-400 mb-0.5">💡 Potential Savings</div>
             <div className="text-[var(--color-text-secondary)] text-sm">
-              Switching from <strong className="text-white">{mostExpensive?.name}</strong> to{" "}
-              <strong className="text-white">{cheapest?.name}</strong> saves you{" "}
+              Switching from <strong className="text-[var(--color-text)]">{mostExpensive?.name}</strong> to{" "}
+              <strong className="text-[var(--color-text)]">{cheapest?.name}</strong> saves you{" "}
               <strong className="text-emerald-400">{fmt(savingsIfSwitched)}/year</strong> on your current trading volume.
             </div>
           </div>
           <Link
             href={cheapest?.url ?? "/exchanges"}
-            className="text-xs font-bold px-4 py-2 rounded-lg bg-emerald-500 text-white hover:bg-emerald-400 transition-colors whitespace-nowrap"
+            className="text-xs font-bold px-4 py-2 rounded-lg bg-emerald-500 text-[var(--color-text)] hover:bg-emerald-400 transition-colors whitespace-nowrap"
           >
             View {cheapest?.name} →
           </Link>
@@ -430,7 +432,7 @@ export default function FeeCalculatorPage() {
             <thead>
               <tr className="border-b border-[var(--color-border)] bg-[var(--color-bg)]">
                 <th className="text-left px-4 py-3 text-xs font-semibold text-[var(--color-text-secondary)] uppercase tracking-wider">
-                  <button onClick={() => toggleSort("name")} className="flex items-center hover:text-white transition-colors">
+                  <button onClick={() => toggleSort("name")} className="flex items-center hover:text-[var(--color-text)] transition-colors">
                     Exchange <SortArrow col="name" />
                   </button>
                 </th>
@@ -438,17 +440,17 @@ export default function FeeCalculatorPage() {
                   Fee Rate
                 </th>
                 <th className="text-right px-4 py-3 text-xs font-semibold text-[var(--color-text-secondary)] uppercase tracking-wider">
-                  <button onClick={() => toggleSort("perTrade")} className="flex items-center ml-auto hover:text-white transition-colors">
+                  <button onClick={() => toggleSort("perTrade")} className="flex items-center ml-auto hover:text-[var(--color-text)] transition-colors">
                     Per Trade <SortArrow col="perTrade" />
                   </button>
                 </th>
                 <th className="text-right px-4 py-3 text-xs font-semibold text-[var(--color-text-secondary)] uppercase tracking-wider">
-                  <button onClick={() => toggleSort("monthly")} className="flex items-center ml-auto hover:text-white transition-colors">
+                  <button onClick={() => toggleSort("monthly")} className="flex items-center ml-auto hover:text-[var(--color-text)] transition-colors">
                     Monthly <SortArrow col="monthly" />
                   </button>
                 </th>
                 <th className="text-right px-4 py-3 text-xs font-semibold text-[var(--color-text-secondary)] uppercase tracking-wider">
-                  <button onClick={() => toggleSort("yearly")} className="flex items-center ml-auto hover:text-white transition-colors">
+                  <button onClick={() => toggleSort("yearly")} className="flex items-center ml-auto hover:text-[var(--color-text)] transition-colors">
                     Yearly <SortArrow col="yearly" />
                   </button>
                 </th>
@@ -480,7 +482,7 @@ export default function FeeCalculatorPage() {
                       <div className="flex items-center gap-2.5">
                         <span className="text-lg">{ex.logo}</span>
                         <div>
-                          <div className="font-semibold text-white flex items-center gap-2">
+                          <div className="font-semibold text-[var(--color-text)] flex items-center gap-2">
                             {ex.name}
                             {isCheapest && (
                               <span className="text-xs font-bold px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
@@ -504,20 +506,20 @@ export default function FeeCalculatorPage() {
                           ? "text-green-400"
                           : ex.rate >= 0.4
                           ? "text-red-400"
-                          : "text-white"
+                          : "text-[var(--color-text)]"
                       }`}>
                         {pct(ex.rate)}
                       </span>
                     </td>
                     <td className="px-4 py-4 text-right">
-                      <span className="font-mono font-semibold text-white">{fmt(ex.perTrade)}</span>
+                      <span className="font-mono font-semibold text-[var(--color-text)]">{fmt(ex.perTrade)}</span>
                     </td>
                     <td className="px-4 py-4 text-right">
-                      <span className="font-mono font-semibold text-white">{fmt(ex.monthly)}</span>
+                      <span className="font-mono font-semibold text-[var(--color-text)]">{fmt(ex.monthly)}</span>
                     </td>
                     <td className="px-4 py-4 text-right">
                       <div>
-                        <span className={`font-mono font-bold ${isCheapest ? "text-emerald-400" : "text-white"}`}>
+                        <span className={`font-mono font-bold ${isCheapest ? "text-emerald-400" : "text-[var(--color-text)]"}`}>
                           {fmt(ex.yearly)}
                         </span>
                         {/* Bar */}
@@ -539,7 +541,7 @@ export default function FeeCalculatorPage() {
                       <Link
                         href={ex.url}
                         onClick={(e) => e.stopPropagation()}
-                        className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-[var(--color-border)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white transition-colors"
+                        className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-[var(--color-border)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-[var(--color-text)] transition-colors"
                       >
                         View →
                       </Link>
@@ -554,10 +556,10 @@ export default function FeeCalculatorPage() {
         {/* Table Footer Note */}
         <div className="px-4 py-3 border-t border-[var(--color-border)] bg-[var(--color-bg)] flex flex-wrap gap-4 text-xs text-[var(--color-text-secondary)]">
           <span>
-            Showing <strong className="text-white">{orderType}</strong> fees ·{" "}
-            <strong className="text-white">{vipMode ? "VIP/Discounted" : "Base"}</strong> tier ·{" "}
-            Based on <strong className="text-white">{amount ? `$${Number(amount).toLocaleString()}` : "$0"}</strong> trades ×{" "}
-            <strong className="text-white">{trades}</strong>/mo
+            Showing <strong className="text-[var(--color-text)]">{orderType}</strong> fees ·{" "}
+            <strong className="text-[var(--color-text)]">{vipMode ? "VIP/Discounted" : "Base"}</strong> tier ·{" "}
+            Based on <strong className="text-[var(--color-text)]">{amount ? `$${Number(amount).toLocaleString()}` : "$0"}</strong> trades ×{" "}
+            <strong className="text-[var(--color-text)]">{trades}</strong>/mo
           </span>
           <span className="ml-auto">Click a row to highlight. Click column headers to sort.</span>
         </div>
@@ -570,12 +572,12 @@ export default function FeeCalculatorPage() {
         return (
           <div className="rounded-2xl border-2 border-[var(--color-primary)]/40 bg-[var(--color-bg-card)] p-6 mb-8">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-bold text-white flex items-center gap-2">
+              <h3 className="text-lg font-bold text-[var(--color-text)] flex items-center gap-2">
                 <span className="text-2xl">{ex.logo}</span> {ex.name} — Full Breakdown
               </h3>
               <button
                 onClick={() => setHighlight(null)}
-                className="text-xs text-[var(--color-text-secondary)] hover:text-white"
+                className="text-xs text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
               >
                 ✕ Close
               </button>
@@ -596,33 +598,33 @@ export default function FeeCalculatorPage() {
             <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
               <div className="flex justify-between px-3 py-2 rounded-lg bg-[var(--color-bg)]">
                 <span className="text-[var(--color-text-secondary)]">Maker Base</span>
-                <span className="font-mono text-white">{ex.makerBase}%</span>
+                <span className="font-mono text-[var(--color-text)]">{ex.makerBase}%</span>
               </div>
               <div className="flex justify-between px-3 py-2 rounded-lg bg-[var(--color-bg)]">
                 <span className="text-[var(--color-text-secondary)]">Taker Base</span>
-                <span className="font-mono text-white">{ex.takerBase}%</span>
+                <span className="font-mono text-[var(--color-text)]">{ex.takerBase}%</span>
               </div>
               <div className="flex justify-between px-3 py-2 rounded-lg bg-[var(--color-bg)]">
                 <span className="text-[var(--color-text-secondary)]">VIP Maker</span>
-                <span className="font-mono text-white">{ex.makerVIP}%</span>
+                <span className="font-mono text-[var(--color-text)]">{ex.makerVIP}%</span>
               </div>
               <div className="flex justify-between px-3 py-2 rounded-lg bg-[var(--color-bg)]">
                 <span className="text-[var(--color-text-secondary)]">VIP Taker</span>
-                <span className="font-mono text-white">{ex.takerVIP}%</span>
+                <span className="font-mono text-[var(--color-text)]">{ex.takerVIP}%</span>
               </div>
               <div className="flex justify-between px-3 py-2 rounded-lg bg-[var(--color-bg)]">
                 <span className="text-[var(--color-text-secondary)]">Discount</span>
-                <span className="text-white text-right">{ex.discountNote}</span>
+                <span className="text-[var(--color-text)] text-right">{ex.discountNote}</span>
               </div>
               <div className="flex justify-between px-3 py-2 rounded-lg bg-[var(--color-bg)]">
                 <span className="text-[var(--color-text-secondary)]">Best For</span>
-                <span className="text-white">{ex.bestFor}</span>
+                <span className="text-[var(--color-text)]">{ex.bestFor}</span>
               </div>
             </div>
             <div className="mt-4">
               <Link
                 href={ex.url}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[var(--color-primary)] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[var(--color-primary)] text-[var(--color-text)] font-semibold text-sm hover:opacity-90 transition-opacity"
               >
                 Full {ex.name} Review →
               </Link>
@@ -676,7 +678,7 @@ export default function FeeCalculatorPage() {
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 text-left hover:border-[var(--color-primary)]/60 transition-colors"
             >
               <div className="text-2xl mb-2">{scenario.icon}</div>
-              <div className="font-bold text-white mb-1">{scenario.label}</div>
+              <div className="font-bold text-[var(--color-text)] mb-1">{scenario.label}</div>
               <div className="text-xs text-[var(--color-text-secondary)] mb-3">{scenario.desc}</div>
               <div className="text-xs">
                 <span className="text-emerald-400 font-semibold">Cheapest: {cheapestForScenario.name}</span>
@@ -689,55 +691,55 @@ export default function FeeCalculatorPage() {
 
       {/* SEO / Educational Content */}
       <div className="prose-crypto space-y-6 mt-6">
-        <h2 className="text-2xl font-bold text-white">Which Crypto Exchange Has the Lowest Fees in 2026?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)]">Which Crypto Exchange Has the Lowest Fees in 2026?</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          For most traders, <strong className="text-white">Binance</strong> (with BNB discount) and{" "}
-          <strong className="text-white">OKX</strong> consistently rank as the cheapest crypto exchanges for
+          For most traders, <strong className="text-[var(--color-text)]">Binance</strong> (with BNB discount) and{" "}
+          <strong className="text-[var(--color-text)]">OKX</strong> consistently rank as the cheapest crypto exchanges for
           standard spot trading, at 0.075% taker after discount. For US traders where Binance isn&apos;t available,{" "}
-          <strong className="text-white">Coinbase Advanced</strong> offers 0% maker fees.
+          <strong className="text-[var(--color-text)]">Coinbase Advanced</strong> offers 0% maker fees.
         </p>
 
-        <h2 className="text-2xl font-bold text-white">Maker vs Taker Fees Explained</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)]">Maker vs Taker Fees Explained</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
-          <strong className="text-white">Maker fees</strong> apply when you place a limit order that doesn&apos;t
+          <strong className="text-[var(--color-text)]">Maker fees</strong> apply when you place a limit order that doesn&apos;t
           execute immediately — your order sits on the order book and &quot;makes&quot; liquidity. Most exchanges reward
-          this with lower fees. <strong className="text-white">Taker fees</strong> apply when your order executes
+          this with lower fees. <strong className="text-[var(--color-text)]">Taker fees</strong> apply when your order executes
           immediately against existing orders — you &quot;take&quot; liquidity. If you&apos;re always using market orders,
           you&apos;re paying the taker rate every time.
         </p>
 
-        <h2 className="text-2xl font-bold text-white">How Much Can Fees Cost You Per Year?</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)]">How Much Can Fees Cost You Per Year?</h2>
         <p className="text-[var(--color-text-secondary)] leading-relaxed">
           An active trader making 100 trades/month at $1,000 each on a 0.1% taker exchange pays{" "}
-          <strong className="text-white">$1,200/year</strong> in fees. Switching to a 0.06% exchange saves{" "}
-          <strong className="text-white">$480/year</strong> — just by changing platforms. Use the calculator
+          <strong className="text-[var(--color-text)]">$1,200/year</strong> in fees. Switching to a 0.06% exchange saves{" "}
+          <strong className="text-[var(--color-text)]">$480/year</strong> — just by changing platforms. Use the calculator
           above to model your exact scenario.
         </p>
 
         <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-          <h3 className="text-lg font-bold text-white mb-4">Fee Reduction Strategies</h3>
+          <h3 className="text-lg font-bold text-[var(--color-text)] mb-4">Fee Reduction Strategies</h3>
           <ul className="space-y-3 text-[var(--color-text-secondary)] text-sm">
             <li className="flex gap-3">
               <span className="text-[var(--color-primary)] font-bold mt-0.5">1.</span>
-              <span><strong className="text-white">Use limit orders.</strong> Switch from market orders to limit orders to access maker rates (often 0–0.08% vs 0.1–0.6% taker).</span>
+              <span><strong className="text-[var(--color-text)]">Use limit orders.</strong> Switch from market orders to limit orders to access maker rates (often 0–0.08% vs 0.1–0.6% taker).</span>
             </li>
             <li className="flex gap-3">
               <span className="text-[var(--color-primary)] font-bold mt-0.5">2.</span>
-              <span><strong className="text-white">Hold the exchange&apos;s native token.</strong> BNB on Binance, KCS on KuCoin, OKB on OKX — all cut fees by 20–30%.</span>
+              <span><strong className="text-[var(--color-text)]">Hold the exchange&apos;s native token.</strong> BNB on Binance, KCS on KuCoin, OKB on OKX — all cut fees by 20–30%.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-[var(--color-primary)] font-bold mt-0.5">3.</span>
-              <span><strong className="text-white">Use the pro interface.</strong> Coinbase Advanced and Kraken Pro have dramatically lower fees than their simple buy interfaces.</span>
+              <span><strong className="text-[var(--color-text)]">Use the pro interface.</strong> Coinbase Advanced and Kraken Pro have dramatically lower fees than their simple buy interfaces.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-[var(--color-primary)] font-bold mt-0.5">4.</span>
-              <span><strong className="text-white">Increase volume to unlock tiers.</strong> Most exchanges drop fees significantly once you exceed $50k–$100k monthly volume.</span>
+              <span><strong className="text-[var(--color-text)]">Increase volume to unlock tiers.</strong> Most exchanges drop fees significantly once you exceed $50k–$100k monthly volume.</span>
             </li>
           </ul>
         </div>
 
         {/* FAQ */}
-        <h2 className="text-2xl font-bold text-white">Frequently Asked Questions</h2>
+        <h2 className="text-2xl font-bold text-[var(--color-text)]">Frequently Asked Questions</h2>
 
         {[
           {
@@ -762,7 +764,7 @@ export default function FeeCalculatorPage() {
           },
         ].map((faq) => (
           <div key={faq.q} className="border-b border-[var(--color-border)] pb-5">
-            <h3 className="text-base font-bold text-white mb-2">{faq.q}</h3>
+            <h3 className="text-base font-bold text-[var(--color-text)] mb-2">{faq.q}</h3>
             <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{faq.a}</p>
           </div>
         ))}
@@ -770,7 +772,7 @@ export default function FeeCalculatorPage() {
 
       {/* Related Tools */}
       <div className="mt-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
-        <h3 className="text-base font-bold text-white mb-4">Related Exchange Tools</h3>
+        <h3 className="text-base font-bold text-[var(--color-text)] mb-4">Related Exchange Tools</h3>
         <div className="flex flex-wrap gap-3">
           {[
             { label: "Best Crypto Exchanges", href: "/exchanges/best" },

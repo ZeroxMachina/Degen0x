@@ -12,10 +12,14 @@ export default function InjectiveEcosystemGuidePage() {
   return (
     <LearnPageLayout title="Injective Ecosystem Guide" categoryName="Crypto Education" categorySlug="learn" readTime="7 min" intro="Injective is a Layer 1 blockchain built on Cosmos SDK, purpose-designed for DeFi and financial applications. With a built-in fully decentralized order book, zero gas fee execution for certain operations, and cross-chain interoperability through IBC, Injective provides institutional-grade financial infrastructure in a decentralized environment."
       toc={[
-        { id: "overview", title: "Injective Overview", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "injective-overview", title: "Injective Overview", level: 2 },
+        { id: "financial-primitives", title: "financial-primitives", level: 2 },
         { id: "financial-primitives", title: "Financial Primitives", level: 2 },
+        { id: "ecosystem", title: "ecosystem", level: 2 },
         { id: "ecosystem", title: "Ecosystem", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What makes Injective unique?", answer: "Injective is the only blockchain with a fully decentralized order book module built into the chain itself. This means any dApp can access shared liquidity through the native exchange module without building custom matching engines. Combined with zero-gas trading, MEV resistance, and IBC connectivity, it creates a comprehensive DeFi platform." },

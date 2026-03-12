@@ -136,8 +136,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "0.95rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 What Is Tax Loss Harvesting in Crypto?
               </a>
@@ -150,8 +148,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "0.95rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 How It Works
               </a>
@@ -164,8 +160,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "0.95rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 The Wash Sale Rule and Crypto
               </a>
@@ -178,8 +172,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "0.95rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 Step-by-Step Guide
               </a>
@@ -192,8 +184,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "0.95rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 Short-Term vs Long-Term Capital Gains
               </a>
@@ -206,8 +196,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "0.95rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 Common Mistakes to Avoid
               </a>
@@ -220,8 +208,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "0.95rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 Tools to Track Your Portfolio
               </a>
@@ -234,8 +220,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "0.95rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 FAQs
               </a>
@@ -589,8 +573,6 @@ export default function TaxLossHarvestingPage() {
                 textDecoration: "none",
                 fontWeight: "500",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-              onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
             >
               Explore our recommended portfolio tracker
             </a>
@@ -710,8 +692,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "1rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 Comprehensive Crypto Tax Guide
               </a>
@@ -724,8 +704,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "1rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 Portfolio Tracker Tool for Tax Optimization
               </a>
@@ -738,8 +716,6 @@ export default function TaxLossHarvestingPage() {
                   textDecoration: "none",
                   fontSize: "1rem",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
               >
                 Best Staking Strategies & Tax Implications
               </a>
@@ -789,8 +765,6 @@ export default function TaxLossHarvestingPage() {
               fontSize: "1rem",
               transition: "opacity 0.2s",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
-            onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
           >
             Start Tracking Your Portfolio
           </a>

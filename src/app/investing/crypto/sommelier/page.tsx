@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Sommelier (SOMM)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Sommelier (SOMM)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Sommelier (SOMM), the intelligent DeFi vault protocol. Discover how it works, tokenomics, use cases, and how to buy SOMM.",
 };
@@ -17,12 +17,18 @@ export default function SommelierPage() {
       readTime="8 min read"
       intro="Sommelier is a DeFi vault protocol built on Cosmos that enables intelligent, actively managed yield strategies across multiple blockchains. Using off-chain computation with on-chain execution, Sommelier Vaults can implement sophisticated strategies including leveraged staking, delta-neutral positions, and multi-protocol yield optimization while maintaining non-custodial security."
       toc={[
-        { id: "what-is", title: "What Is Sommelier?", level: 2 },
-        { id: "how-it-works", title: "How Does Sommelier Work?", level: 2 },
-        { id: "tokenomics", title: "SOMM Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SOMM", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-sommelier", title: "What Is Sommelier?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-sommelier-work", title: "How Does Sommelier Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "somm-tokenomics", title: "SOMM Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-somm", title: "How to Buy SOMM", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

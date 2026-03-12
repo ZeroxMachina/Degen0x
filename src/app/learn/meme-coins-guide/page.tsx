@@ -28,13 +28,20 @@ export default function MemeCoinGuidePage() {
       readTime="10 min"
       intro="Meme coins are cryptocurrencies created as jokes or based on internet culture rather than solving specific technical problems. Dogecoin (DOGE) started as a parody of Bitcoin in 2013 and eventually became the world's sixth-largest cryptocurrency. Shiba Inu (SHIB), Pepe (PEPE), and Bonk (Bonk) followed. Despite their humorous origins, meme coins have accumulated billions in market value. This guide explains the history of meme coins, why communities drive their adoption, how to evaluate them, risks, and the difference between speculative gambling and community-driven projects."
       toc={[
+        { id: "what-are-meme-coins", title: "what-are-meme-coins", level: 2 },
         { id: "what-are-meme-coins", title: "What Are Meme Coins?", level: 2 },
-        { id: "dogecoin-history", title: "Dogecoin: The Original Meme Coin", level: 2 },
-        { id: "shiba-inu-shib", title: "Shiba Inu (SHIB): Ethereum-based Competition", level: 2 },
-        { id: "pepe-bonk-wif", title: "PEPE, Bonk, and WIF: Modern Meme Coins", level: 2 },
-        { id: "meme-coin-economics", title: "Understanding Meme Coin Economics", level: 2 },
-        { id: "evaluating-meme-coins", title: "How to Evaluate a Meme Coin", level: 2 },
-        { id: "meme-coin-risks", title: "Meme Coin Risks: Rug Pulls and Volatility", level: 2 },
+        { id: "dogecoin-history", title: "dogecoin-history", level: 2 },
+        { id: "dogecoin-the-original-meme-coin", title: "Dogecoin: The Original Meme Coin", level: 2 },
+        { id: "shiba-inu-shib", title: "shiba-inu-shib", level: 2 },
+        { id: "shiba-inu-shib-ethereum-based-competition", title: "Shiba Inu (SHIB): Ethereum-based Competition", level: 2 },
+        { id: "pepe-bonk-wif", title: "pepe-bonk-wif", level: 2 },
+        { id: "pepe-bonk-and-wif-modern-meme-coins", title: "PEPE, Bonk, and WIF: Modern Meme Coins", level: 2 },
+        { id: "meme-coin-economics", title: "meme-coin-economics", level: 2 },
+        { id: "understanding-meme-coin-economics", title: "Understanding Meme Coin Economics", level: 2 },
+        { id: "evaluating-meme-coins", title: "evaluating-meme-coins", level: 2 },
+        { id: "how-to-evaluate-a-meme-coin", title: "How to Evaluate a Meme Coin", level: 2 },
+        { id: "meme-coin-risks", title: "meme-coin-risks", level: 2 },
+        { id: "meme-coin-risks-rug-pulls-and-volatility", title: "Meme Coin Risks: Rug Pulls and Volatility", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DeFi Composability: Money Legos Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `DeFi Composability: Money Legos Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn what DeFi composability means, how money legos work, real examples of composable strategies, and why composability is DeFi's most powerful feature.",
 };
@@ -17,10 +17,14 @@ export default function DefiComposabilityPage() {
       readTime="9 min read"
       intro="DeFi composability is the ability of decentralized finance protocols to seamlessly interact with and build upon each other, like snapping together Lego blocks. Because DeFi protocols are open-source and operate on shared blockchains with permissionless access, any protocol can integrate with any other without needing permission. This creates an interconnected financial ecosystem where simple building blocks combine into complex strategies that would be impossible in traditional finance."
       toc={[
+        { id: "what-is-composability", title: "what-is-composability", level: 2 },
         { id: "what-is-composability", title: "What Is Composability?", level: 2 },
-        { id: "money-legos", title: "Money Legos in Action", level: 2 },
-        { id: "composable-strategies", title: "Composable DeFi Strategies", level: 2 },
-        { id: "risks-and-limitations", title: "Risks and Limitations", level: 2 },
+        { id: "money-legos", title: "money-legos", level: 2 },
+        { id: "money-legos-in-action", title: "Money Legos in Action", level: 2 },
+        { id: "composable-strategies", title: "composable-strategies", level: 2 },
+        { id: "composable-defi-strategies", title: "Composable DeFi Strategies", level: 2 },
+        { id: "risks-and-limitations", title: "risks-and-limitations", level: 2 },
+        { id: "risks-and-limitations", title: "Risks and Limitations", level: 2 }
       ]}
       faqs={[
         {

@@ -12,11 +12,16 @@ export default function CardanoEcosystemGuidePage() {
   return (
     <LearnPageLayout title="Cardano Ecosystem Guide" categoryName="Crypto Education" categorySlug="learn" readTime="8 min" intro="Cardano is a Proof of Stake blockchain platform built on peer-reviewed academic research and formal verification methods. Founded by Ethereum co-founder Charles Hoskinson, Cardano takes a methodical, research-first approach to blockchain development, prioritizing security and sustainability over speed-to-market."
       toc={[
-        { id: "overview", title: "Cardano Overview", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "cardano-overview", title: "Cardano Overview", level: 2 },
+        { id: "technology", title: "technology", level: 2 },
         { id: "technology", title: "Technology", level: 2 },
-        { id: "defi", title: "DeFi Ecosystem", level: 2 },
+        { id: "defi", title: "defi", level: 2 },
+        { id: "defi-ecosystem", title: "DeFi Ecosystem", level: 2 },
+        { id: "governance", title: "governance", level: 2 },
         { id: "governance", title: "Governance", level: 2 },
-        { id: "getting-started", title: "Getting Started", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started", title: "Getting Started", level: 2 }
       ]}
       faqs={[
         { question: "What makes Cardano different?", answer: "Cardano differentiates through its research-driven development, using peer-reviewed academic papers as the foundation for protocol design. Its Ouroboros consensus mechanism was the first provably secure Proof of Stake protocol. The platform uses the Haskell programming language and formal verification methods for enhanced security." },

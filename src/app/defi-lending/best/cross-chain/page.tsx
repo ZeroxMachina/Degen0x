@@ -21,7 +21,7 @@ const products: Product[] = [
     cons: ["Rates vary by chain", "Each chain is a separate market", "Bridging still required for some operations"],
     fees: "Variable supply/borrow spread",
     bestFor: "Multi-chain DeFi users",
-    affiliateUrl: "https://cryptodegen.com/go/aave",
+    affiliateUrl: "https://degen0x.com/go/aave",
     category: "defi-lending",
     featured: true,
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     cons: ["Smaller TVL than Aave", "Cross-chain complexity adds risk", "Token emission dependency"],
     fees: "Variable borrow rates",
     bestFor: "Users needing cross-chain borrowing",
-    affiliateUrl: "https://cryptodegen.com/go/radiant",
+    affiliateUrl: "https://degen0x.com/go/radiant",
     category: "defi-lending",
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     cons: ["Fewer chain deployments than Aave", "Limited asset selection per chain", "Smaller L2 markets"],
     fees: "Variable supply/borrow spread",
     bestFor: "Conservative multi-chain lenders",
-    affiliateUrl: "https://cryptodegen.com/go/compound",
+    affiliateUrl: "https://degen0x.com/go/compound",
     category: "defi-lending",
   },
 ];
@@ -62,7 +62,7 @@ export default function CrossChainPage() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Cross-Chain", href: "/defi-lending/best/cross-chain" }]} />
       <AffiliateDisclosure />
-      <h1 className="text-4xl font-bold text-white mb-4">Best Cross-Chain Lending Protocols ({CURRENT_YEAR})</h1>
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Cross-Chain Lending Protocols ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">

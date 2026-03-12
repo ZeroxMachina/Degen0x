@@ -3,13 +3,26 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Friend.tech (FRIEND)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Friend.tech (FRIEND)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Friend.tech (FRIEND), the SocialFi platform tokenizing social connections. Discover how it works, tokenomics, use cases, and how to buy FRIEND.",
 };
 
 export default function FriendsTechPage() {
   return (
-    <LearnPageLayout title="What Is Friend.tech (FRIEND)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Friend.tech is a SocialFi application built on Base that tokenizes social connections through tradeable 'keys' (formerly shares) tied to individual users. By purchasing someone's keys, holders gain access to private chat rooms with that person, creating a market for social access and influence. Friend.tech sparked the SocialFi narrative and generated massive trading volume during its initial launch." toc={[{id:"what-is",title:"What Is Friend.tech?",level:2},{id:"how-it-works",title:"How Does Friend.tech Work?",level:2},{id:"tokenomics",title:"FRIEND Tokenomics",level:2},{id:"use-cases",title:"Key Use Cases",level:2},{id:"how-to-buy",title:"How to Buy FRIEND",level:2},{id:"risks",title:"Risks and Considerations",level:2}]} faqs={[{question:"What is Friend.tech?",answer:"Friend.tech is a SocialFi app on Base where users buy and sell 'keys' tied to individuals, granting access to private chats and creating markets around social influence."},{question:"Where can I buy FRIEND?",answer:"FRIEND token is available on Uniswap (Base) and some centralized exchanges. Keys of individual users are purchased within the Friend.tech app."},{question:"Is Friend.tech a good investment?",answer:"Friend.tech pioneered SocialFi but user activity has declined significantly from peak levels. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Base",href:"/investing/crypto/base",category:"Investing"}]}>
+    <LearnPageLayout title="What Is Friend.tech (FRIEND)? Price, Guide & How to Buy" categoryName="Investing" categorySlug="investing" readTime="8 min read" intro="Friend.tech is a SocialFi application built on Base that tokenizes social connections through tradeable 'keys' (formerly shares) tied to individual users. By purchasing someone's keys, holders gain access to private chat rooms with that person, creating a market for social access and influence. Friend.tech sparked the SocialFi narrative and generated massive trading volume during its initial launch." toc={[
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-friend-tech", title: "What Is Friend.tech?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-friend-tech-work", title: "How Does Friend.tech Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "friend-tokenomics", title: "FRIEND Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-friend", title: "How to Buy FRIEND", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
+      ]} faqs={[{question:"What is Friend.tech?",answer:"Friend.tech is a SocialFi app on Base where users buy and sell 'keys' tied to individuals, granting access to private chats and creating markets around social influence."},{question:"Where can I buy FRIEND?",answer:"FRIEND token is available on Uniswap (Base) and some centralized exchanges. Keys of individual users are purchased within the Friend.tech app."},{question:"Is Friend.tech a good investment?",answer:"Friend.tech pioneered SocialFi but user activity has declined significantly from peak levels. This is not financial advice. Do your own research."}]} relatedArticles={[{title:"Best Cryptos to Buy",href:"/investing/best/cryptos-to-buy",category:"Investing"},{title:"How to Invest in Crypto",href:"/investing/learn/how-to-invest-in-crypto",category:"Investing"},{title:"Base",href:"/investing/crypto/base",category:"Investing"}]}>
       <h2 id="what-is">What Is Friend.tech?</h2>
       <p>Friend.tech launched in August 2023 on Coinbase&apos;s Base network and quickly became one of the most viral crypto applications of the year. The platform introduced a bonding curve mechanism for social tokens, where the price of each user&apos;s keys increases as more people buy them and decreases as people sell. This created speculative markets around individual social influence, with popular crypto personalities seeing their keys trade at significant ETH values.</p>
       <p>The application attracted crypto Twitter influencers, traders, and content creators who saw an opportunity to monetize their social capital directly. At its peak, Friend.tech processed millions in daily trading volume and generated substantial protocol fees. The platform&apos;s V2 launch introduced clubs (group chats) and the FRIEND token, expanding beyond individual keys to community-level social tokens.</p>

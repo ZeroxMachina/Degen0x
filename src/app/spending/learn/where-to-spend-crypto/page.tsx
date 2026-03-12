@@ -17,12 +17,18 @@ export default function WhereToSpendCryptoPage() {
       readTime="12 min"
       intro="Cryptocurrency spending has expanded dramatically, with millions of merchants worldwide now accepting Bitcoin and other digital assets directly or through payment intermediaries. This comprehensive guide covers every major category of crypto spending, from everyday purchases to travel and entertainment."
       toc={[
-        { id: "retail", title: "Retail and Online Shopping", level: 2 },
-        { id: "travel", title: "Travel and Hospitality", level: 2 },
-        { id: "food", title: "Food and Dining", level: 2 },
-        { id: "services", title: "Services and Subscriptions", level: 2 },
-        { id: "gift-cards", title: "Gift Cards as Universal Access", level: 2 },
-        { id: "debit-cards", title: "Crypto Debit Cards", level: 2 },
+        { id: "retail", title: "retail", level: 2 },
+        { id: "retail-and-online-shopping", title: "Retail and Online Shopping", level: 2 },
+        { id: "travel", title: "travel", level: 2 },
+        { id: "travel-and-hospitality", title: "Travel and Hospitality", level: 2 },
+        { id: "food", title: "food", level: 2 },
+        { id: "food-and-dining", title: "Food and Dining", level: 2 },
+        { id: "services", title: "services", level: 2 },
+        { id: "services-and-subscriptions", title: "Services and Subscriptions", level: 2 },
+        { id: "gift-cards", title: "gift-cards", level: 2 },
+        { id: "gift-cards-as-universal-access", title: "Gift Cards as Universal Access", level: 2 },
+        { id: "debit-cards", title: "debit-cards", level: 2 },
+        { id: "crypto-debit-cards", title: "Crypto Debit Cards", level: 2 }
       ]}
       faqs={[
         { question: "How many merchants accept cryptocurrency?", answer: "Estimates suggest over 15,000 businesses worldwide accept crypto directly, with millions more accessible through crypto debit cards and gift card services that convert crypto to fiat at the point of purchase." },

@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 const items: ComparisonItem[] = [
-  { name: "MetaMask", slug: "metamask", rating: 4.5, affiliateUrl: "https://cryptodegen.com/go/metamask", features: { "Type": "Software (browser + mobile)", "Chains": "EVM chains + Snaps", "Built-in Swap": "Yes (aggregator)", "Swap Fee": "0.875% service fee", "Staking": "Yes (ETH via Lido/Rocket Pool)", "NFT Support": "Yes", "Open Source": "Yes", "Owner": "Consensys" } },
-  { name: "Trust Wallet", slug: "trust-wallet", rating: 4.4, affiliateUrl: "https://cryptodegen.com/go/trust-wallet", features: { "Type": "Software (mobile + browser)", "Chains": "100+ chains natively", "Built-in Swap": "Yes (DEX aggregator)", "Swap Fee": "1% service fee", "Staking": "Yes (multi-chain)", "NFT Support": "Yes", "Open Source": "Partial", "Owner": "Binance-affiliated" } },
+  { name: "MetaMask", slug: "metamask", rating: 4.5, affiliateUrl: "https://degen0x.com/go/metamask", features: { "Type": "Software (browser + mobile)", "Chains": "EVM chains + Snaps", "Built-in Swap": "Yes (aggregator)", "Swap Fee": "0.875% service fee", "Staking": "Yes (ETH via Lido/Rocket Pool)", "NFT Support": "Yes", "Open Source": "Yes", "Owner": "Consensys" } },
+  { name: "Trust Wallet", slug: "trust-wallet", rating: 4.4, affiliateUrl: "https://degen0x.com/go/trust-wallet", features: { "Type": "Software (mobile + browser)", "Chains": "100+ chains natively", "Built-in Swap": "Yes (DEX aggregator)", "Swap Fee": "1% service fee", "Staking": "Yes (multi-chain)", "NFT Support": "Yes", "Open Source": "Partial", "Owner": "Binance-affiliated" } },
 ];
 
 const features = ["Type", "Chains", "Built-in Swap", "Swap Fee", "Staking", "NFT Support", "Open Source", "Owner"];
@@ -39,7 +39,7 @@ export default function MetamaskVsTrustWalletPage() {
       <AffiliateDisclosure />
 
       <header className="mb-10">
-        <h1 className="text-4xl font-bold text-white mb-4">MetaMask vs Trust Wallet: Which Software Wallet Wins in {CURRENT_YEAR}?</h1>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">MetaMask vs Trust Wallet: Which Software Wallet Wins in {CURRENT_YEAR}?</h1>
         <p className="text-lg text-[var(--color-text-secondary)]">
           MetaMask and Trust Wallet are the two most popular software wallets. We compare chain
           support, DeFi capabilities, fees, and the overall user experience.
@@ -85,12 +85,12 @@ export default function MetamaskVsTrustWalletPage() {
         <h2 id="verdict">Verdict</h2>
         <div className="not-prose rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 my-6">
           <p className="text-[var(--color-text-secondary)] mb-4">
-            <strong className="text-white">Choose MetaMask if:</strong> You primarily use
+            <strong className="text-[var(--color-text)]">Choose MetaMask if:</strong> You primarily use
             Ethereum and EVM-based DeFi protocols, prefer a browser extension workflow, and
             want the widest dApp compatibility.
           </p>
           <p className="text-[var(--color-text-secondary)]">
-            <strong className="text-white">Choose Trust Wallet if:</strong> You need multi-chain
+            <strong className="text-[var(--color-text)]">Choose Trust Wallet if:</strong> You need multi-chain
             support for non-EVM chains, prefer a mobile-first experience, and want to manage a
             diverse portfolio across many blockchains in one app.
           </p>
@@ -101,11 +101,11 @@ export default function MetamaskVsTrustWalletPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <Link href="/wallets/compare/rabby-vs-metamask" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Compare</span>
-            <h3 className="font-semibold text-white text-sm">Rabby vs MetaMask</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Rabby vs MetaMask</h3>
           </Link>
           <Link href="/wallets/learn/defi-wallet-guide" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
             <span className="text-xs text-[var(--color-primary)]">Guide</span>
-            <h3 className="font-semibold text-white text-sm">DeFi Wallet Guide</h3>
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">DeFi Wallet Guide</h3>
           </Link>
         </div>
       </section>

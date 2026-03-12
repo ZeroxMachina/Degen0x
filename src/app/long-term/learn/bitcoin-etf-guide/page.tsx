@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bitcoin ETF Guide: Spot, Futures & Options (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Bitcoin ETF Guide: Spot, Futures & Options (${CURRENT_YEAR}) | degen0x`,
   description: "Complete Bitcoin ETF guide covering spot ETFs, futures ETFs, and options. Compare fees, performance, and find the best Bitcoin ETF for your portfolio.",
 };
 
@@ -12,10 +12,14 @@ export default function BitcoinEtfGuidePage() {
     <LearnPageLayout title="Bitcoin ETF Guide: Spot, Futures & Options" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="8 min read"
       intro="The launch of spot Bitcoin ETFs in January 2024 transformed crypto investing by making Bitcoin accessible through traditional brokerage accounts. Multiple issuers now compete on fees, liquidity, and features, giving investors a range of choices. This guide compares the major Bitcoin ETFs, explains their differences, and helps you choose the right one for your investment strategy."
       toc={[
-        { id: "spot-etfs", title: "Spot Bitcoin ETFs", level: 2 },
-        { id: "futures-etfs", title: "Futures Bitcoin ETFs", level: 2 },
-        { id: "options-leverage", title: "Bitcoin ETF Options and Leverage", level: 2 },
-        { id: "choosing", title: "Choosing the Right Bitcoin ETF", level: 2 },
+        { id: "spot-etfs", title: "spot-etfs", level: 2 },
+        { id: "spot-bitcoin-etfs", title: "Spot Bitcoin ETFs", level: 2 },
+        { id: "futures-etfs", title: "futures-etfs", level: 2 },
+        { id: "futures-bitcoin-etfs", title: "Futures Bitcoin ETFs", level: 2 },
+        { id: "options-leverage", title: "options-leverage", level: 2 },
+        { id: "bitcoin-etf-options-and-leverage", title: "Bitcoin ETF Options and Leverage", level: 2 },
+        { id: "choosing", title: "choosing", level: 2 },
+        { id: "choosing-the-right-bitcoin-etf", title: "Choosing the Right Bitcoin ETF", level: 2 }
       ]}
       faqs={[
         { question: "Which Bitcoin ETF has the lowest fees?", answer: "Franklin Templeton's EZBC and Bitwise's BITB are among the lowest-fee Bitcoin ETFs at approximately 0.20% annually. BlackRock's IBIT charges 0.25% after its promotional period. Fee competition has driven costs down significantly, benefiting investors. For most investors, the fee difference between major ETFs is minimal compared to Bitcoin's price volatility." },

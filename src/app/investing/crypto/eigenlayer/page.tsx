@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is EigenLayer (EIGEN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is EigenLayer (EIGEN)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about EigenLayer (EIGEN), the restaking protocol securing new services with staked ETH. Discover how it works, tokenomics, use cases, and how to buy EIGEN.",
 };
@@ -17,12 +17,18 @@ export default function EigenLayerPage() {
       readTime="9 min read"
       intro="EigenLayer is a restaking protocol on Ethereum that allows staked ETH to be used as security for additional services and protocols beyond just securing the Ethereum network. By enabling restaking, EigenLayer creates a marketplace for decentralized trust where new protocols can bootstrap security from Ethereum's existing validator set rather than building their own."
       toc={[
-        { id: "what-is", title: "What Is EigenLayer?", level: 2 },
-        { id: "how-it-works", title: "How Does EigenLayer Work?", level: 2 },
-        { id: "tokenomics", title: "EIGEN Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy EIGEN", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-eigenlayer", title: "What Is EigenLayer?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-eigenlayer-work", title: "How Does EigenLayer Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "eigen-tokenomics", title: "EIGEN Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-eigen", title: "How to Buy EIGEN", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Ergo (ERG)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Ergo (ERG)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description: "Learn about Ergo (ERG), the UTXO-based smart contract blockchain using Autolykos proof-of-work. Discover ERG tokenomics and how to buy.",
 };
 
@@ -16,12 +16,18 @@ export default function ErgoPage() {
       readTime="8 min read"
       intro="Ergo (ERG) is a UTXO-based proof-of-work blockchain platform that combines the security model of Bitcoin with advanced smart contract capabilities. Founded by former Cardano and IOHK researchers, Ergo features the Autolykos mining algorithm, Sigma protocols for zero-knowledge proofs, and an extended UTXO model that enables sophisticated DeFi applications."
       toc={[
-        { id: "what-is", title: "What Is Ergo?", level: 2 },
-        { id: "how-it-works", title: "How Does Ergo Work?", level: 2 },
-        { id: "tokenomics", title: "ERG Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy ERG", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-ergo", title: "What Is Ergo?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-ergo-work", title: "How Does Ergo Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "erg-tokenomics", title: "ERG Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-erg", title: "How to Buy ERG", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         { question: "What is Ergo?", answer: "Ergo is a proof-of-work smart contract platform using the extended UTXO model and Autolykos mining algorithm. It was founded by researchers from IOHK (Cardano) and combines Bitcoin-like security with advanced smart contract capabilities." },

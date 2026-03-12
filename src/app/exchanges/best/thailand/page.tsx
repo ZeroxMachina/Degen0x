@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Thailand (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Best Crypto Exchanges in Thailand (${CURRENT_YEAR}) | degen0x`,
   description:
     "Discover the best crypto exchanges in Thailand. SEC-licensed platforms with THB pairs, PromptPay support, and full regulatory compliance.",
 };
@@ -17,10 +17,14 @@ export default function BestExchangesThailandPage() {
       readTime="7 min read"
       intro="Thailand has a well-established crypto regulatory framework overseen by the Securities and Exchange Commission (SEC). All digital asset exchanges must hold a license from the SEC, providing Thai traders with strong consumer protections. The market features several licensed domestic platforms alongside international exchanges with THB support."
       toc={[
-        { id: "top-exchanges", title: "Top Exchanges in Thailand", level: 2 },
-        { id: "regulations", title: "Thai SEC Regulations", level: 2 },
+        { id: "top-exchanges", title: "top-exchanges", level: 2 },
+        { id: "top-exchanges-in-thailand", title: "Top Exchanges in Thailand", level: 2 },
+        { id: "regulations", title: "regulations", level: 2 },
+        { id: "thai-sec-regulations", title: "Thai SEC Regulations", level: 2 },
+        { id: "funding-methods", title: "funding-methods", level: 2 },
         { id: "funding-methods", title: "Funding Methods", level: 2 },
-        { id: "tips", title: "Tips for Thai Traders", level: 2 },
+        { id: "tips", title: "tips", level: 2 },
+        { id: "tips-for-thai-traders", title: "Tips for Thai Traders", level: 2 }
       ]}
       faqs={[
         {

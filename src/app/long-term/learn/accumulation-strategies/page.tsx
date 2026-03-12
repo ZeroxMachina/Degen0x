@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Accumulation Strategies (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Crypto Accumulation Strategies (${CURRENT_YEAR}) | degen0x`,
   description: "Learn proven crypto accumulation strategies including DCA, value averaging, and lump sum investing. Build your portfolio systematically for long-term growth.",
 };
 
@@ -12,11 +12,16 @@ export default function AccumulationStrategiesPage() {
     <LearnPageLayout title="Crypto Accumulation Strategies" categoryName="Long-Term Strategies" categorySlug="long-term" readTime="9 min read"
       intro="Accumulation strategies are systematic approaches to building a cryptocurrency portfolio over time. Rather than trying to time the market, these strategies use discipline and consistency to reduce the impact of volatility and build meaningful positions. The best accumulation strategy depends on your income pattern, risk tolerance, conviction level, and time horizon."
       toc={[
-        { id: "dca", title: "Dollar-Cost Averaging (DCA)", level: 2 },
+        { id: "dca", title: "dca", level: 2 },
+        { id: "dollar-cost-averaging-dca", title: "Dollar-Cost Averaging (DCA)", level: 2 },
+        { id: "value-averaging", title: "value-averaging", level: 2 },
         { id: "value-averaging", title: "Value Averaging", level: 2 },
-        { id: "lump-sum", title: "Lump Sum vs. Systematic", level: 2 },
-        { id: "hybrid", title: "Hybrid Approaches", level: 2 },
-        { id: "execution", title: "Execution and Automation", level: 2 },
+        { id: "lump-sum", title: "lump-sum", level: 2 },
+        { id: "lump-sum-vs-systematic", title: "Lump Sum vs. Systematic", level: 2 },
+        { id: "hybrid", title: "hybrid", level: 2 },
+        { id: "hybrid-approaches", title: "Hybrid Approaches", level: 2 },
+        { id: "execution", title: "execution", level: 2 },
+        { id: "execution-and-automation", title: "Execution and Automation", level: 2 }
       ]}
       faqs={[
         { question: "What is the best crypto accumulation strategy?", answer: "Dollar-cost averaging (DCA) is the most popular and simplest strategy: invest a fixed amount at regular intervals regardless of price. It reduces the risk of buying at the top and removes emotional decision-making. However, lump sum investing has historically outperformed DCA about two-thirds of the time in traditional markets because markets tend to go up over time." },

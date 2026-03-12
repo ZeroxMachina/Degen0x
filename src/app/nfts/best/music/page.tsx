@@ -7,7 +7,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best NFT Marketplaces for Music in ${CURRENT_YEAR} | CryptoDegen`,
+  title: `Best NFT Marketplaces for Music in ${CURRENT_YEAR} | degen0x`,
   description: `Discover the best platforms for music NFTs in ${CURRENT_YEAR}. Buy, sell, and collect music NFTs from independent and established artists on top marketplaces.`,
 };
 
@@ -44,7 +44,7 @@ export default function BestForMusicPage() {
     "@type": "Article",
     headline: `Best NFT Marketplaces for Music ${CURRENT_YEAR}`,
     dateModified: new Date().toISOString(),
-    author: { "@type": "Organization", name: "CryptoDegen" },
+    author: { "@type": "Organization", name: "degen0x" },
   };
 
   return (
@@ -60,7 +60,7 @@ export default function BestForMusicPage() {
           ]}
         />
 
-        <h1 className="text-4xl font-bold text-white mb-4">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Best NFT Marketplaces for Music in {CURRENT_YEAR}
         </h1>
         <p className="text-sm text-[var(--color-text-secondary)] mb-6">
@@ -80,7 +80,7 @@ export default function BestForMusicPage() {
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Best Platforms for Music NFTs</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Platforms for Music NFTs</h2>
           <div className="space-y-4">
             {filtered.map((marketplace, index) => (
               <ProductCard
@@ -94,7 +94,7 @@ export default function BestForMusicPage() {
         </section>
 
         <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Key Features for Music NFT Platforms</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Key Features for Music NFT Platforms</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Audio Playback", desc: "Built-in music players that let collectors preview and listen to tracks directly on the platform." },
@@ -103,7 +103,7 @@ export default function BestForMusicPage() {
               { title: "Community Tools", desc: "Features that help artists build fan communities, offer exclusives, and engage directly with collectors." },
             ].map((item) => (
               <div key={item.title} className="p-4 rounded-lg bg-[var(--color-bg)]/50">
-                <h3 className="text-white font-semibold mb-1">{item.title}</h3>
+                <h3 className="text-[var(--color-text)] font-semibold mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}

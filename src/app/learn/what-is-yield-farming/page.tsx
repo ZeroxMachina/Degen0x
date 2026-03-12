@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Yield Farming? (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Yield Farming? (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about yield farming in DeFi: how it works, common strategies, liquidity mining rewards, risk factors, and how to evaluate yield farming opportunities.",
 };
@@ -17,11 +17,16 @@ export default function WhatIsYieldFarmingPage() {
       readTime="8 min read"
       intro="Yield farming is the practice of deploying cryptocurrency across various DeFi protocols to maximize returns. It involves strategically moving assets between lending pools, liquidity pools, staking contracts, and other yield-generating opportunities to earn the highest possible yield. Born during the 'DeFi Summer' of 2020, yield farming transformed the way users interact with decentralized protocols and became one of the primary drivers of DeFi growth and innovation."
       toc={[
-        { id: "how-it-works", title: "How Yield Farming Works", level: 2 },
-        { id: "strategies", title: "Common Yield Farming Strategies", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-yield-farming-works", title: "How Yield Farming Works", level: 2 },
+        { id: "strategies", title: "strategies", level: 2 },
+        { id: "common-yield-farming-strategies", title: "Common Yield Farming Strategies", level: 2 },
+        { id: "liquidity-mining", title: "liquidity-mining", level: 2 },
         { id: "liquidity-mining", title: "Liquidity Mining", level: 2 },
-        { id: "evaluating", title: "Evaluating Yield Farming Opportunities", level: 2 },
-        { id: "risks", title: "Risks of Yield Farming", level: 2 },
+        { id: "evaluating", title: "evaluating", level: 2 },
+        { id: "evaluating-yield-farming-opportunities", title: "Evaluating Yield Farming Opportunities", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-yield-farming", title: "Risks of Yield Farming", level: 2 }
       ]}
       faqs={[
         {

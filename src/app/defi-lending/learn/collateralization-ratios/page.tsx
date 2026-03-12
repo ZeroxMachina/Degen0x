@@ -17,11 +17,16 @@ export default function CollateralizationRatiosPage() {
       readTime="9 min"
       intro="Collateralization ratios are the foundation of DeFi lending security. They determine how much you can borrow against your deposited assets and when your position becomes eligible for liquidation. Understanding LTV ratios, health factors, and collateral management is essential for anyone borrowing in DeFi to avoid costly liquidation events."
       toc={[
+        { id: "what-is-collateralization", title: "what-is-collateralization", level: 2 },
         { id: "what-is-collateralization", title: "What Is Collateralization", level: 2 },
-        { id: "ltv-explained", title: "Loan-to-Value (LTV) Explained", level: 2 },
-        { id: "health-factor", title: "Understanding Health Factor", level: 2 },
-        { id: "managing-collateral", title: "Managing Your Collateral", level: 2 },
-        { id: "best-practices", title: "Best Practices", level: 2 },
+        { id: "ltv-explained", title: "ltv-explained", level: 2 },
+        { id: "loan-to-value-ltv-explained", title: "Loan-to-Value (LTV) Explained", level: 2 },
+        { id: "health-factor", title: "health-factor", level: 2 },
+        { id: "understanding-health-factor", title: "Understanding Health Factor", level: 2 },
+        { id: "managing-collateral", title: "managing-collateral", level: 2 },
+        { id: "managing-your-collateral", title: "Managing Your Collateral", level: 2 },
+        { id: "best-practices", title: "best-practices", level: 2 },
+        { id: "best-practices", title: "Best Practices", level: 2 }
       ]}
       faqs={[
         { question: "What is a safe health factor?", answer: "A health factor above 2.0 provides a reasonable buffer against liquidation. Conservative borrowers maintain health factors of 3.0 or higher. Below 1.5, you should actively monitor and consider adding collateral or repaying debt." },

@@ -17,7 +17,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Risk Harbor Review (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Risk Harbor Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Risk Harbor review covering algorithmic insurance, automated claims, stablecoin depeg coverage, and how it compares to discretionary insurance protocols.",
 };
 

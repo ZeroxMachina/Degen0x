@@ -17,10 +17,14 @@ export default function CryptoFreelancerPaymentsPage() {
       readTime="9 min"
       intro="Freelancers are increasingly accepting cryptocurrency payments for faster settlement, lower fees, and global accessibility. Whether you are a developer, designer, writer, or consultant, accepting crypto opens you to a worldwide client base without the friction of international banking."
       toc={[
-        { id: "getting-started", title: "Getting Started with Crypto Payments", level: 2 },
-        { id: "invoicing", title: "Crypto Invoicing Tools", level: 2 },
-        { id: "receiving", title: "Receiving and Managing Payments", level: 2 },
-        { id: "taxes", title: "Tax Implications for Freelancers", level: 2 },
+        { id: "getting-started", title: "getting-started", level: 2 },
+        { id: "getting-started-with-crypto-payments", title: "Getting Started with Crypto Payments", level: 2 },
+        { id: "invoicing", title: "invoicing", level: 2 },
+        { id: "crypto-invoicing-tools", title: "Crypto Invoicing Tools", level: 2 },
+        { id: "receiving", title: "receiving", level: 2 },
+        { id: "receiving-and-managing-payments", title: "Receiving and Managing Payments", level: 2 },
+        { id: "taxes", title: "taxes", level: 2 },
+        { id: "tax-implications-for-freelancers", title: "Tax Implications for Freelancers", level: 2 }
       ]}
       faqs={[
         { question: "Should freelancers accept crypto payments?", answer: "It depends on your client base and financial needs. Crypto payments are excellent for international clients, provide faster settlement than bank transfers, and offer lower fees. The tradeoff is price volatility if holding non-stablecoin payments." },

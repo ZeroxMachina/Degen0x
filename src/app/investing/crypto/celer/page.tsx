@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Celer Network (CELR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Celer Network (CELR)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Celer Network (CELR), the inter-chain messaging and bridging protocol. Discover how it works, tokenomics, use cases, and how to buy CELR.",
 };
@@ -17,12 +17,18 @@ export default function CelerPage() {
       readTime="8 min read"
       intro="Celer Network is an inter-chain messaging protocol that enables cross-chain communication, token bridging, and multi-chain dApp development. Through its cBridge and Celer Inter-chain Message (IM) framework, the protocol facilitates seamless asset transfers and contract interactions across more than 40 blockchains."
       toc={[
-        { id: "what-is", title: "What Is Celer Network?", level: 2 },
-        { id: "how-it-works", title: "How Does Celer Network Work?", level: 2 },
-        { id: "tokenomics", title: "CELR Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy CELR", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-celer-network", title: "What Is Celer Network?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-celer-network-work", title: "How Does Celer Network Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "celr-tokenomics", title: "CELR Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-celr", title: "How to Buy CELR", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

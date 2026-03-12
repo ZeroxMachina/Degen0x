@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Blockchain Scalability Solutions Explained (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Blockchain Scalability Solutions Explained (${CURRENT_YEAR}) | degen0x`,
   description:
     "Understand blockchain scalability solutions including Layer 2 rollups, sidechains, sharding, and modular architectures. Learn how different approaches solve the blockchain trilemma.",
 };
@@ -17,11 +17,16 @@ export default function BlockchainScalabilityPage() {
       readTime="10 min"
       intro="Blockchain scalability refers to a network's ability to handle increasing transaction volume while maintaining acceptable speed, cost, and decentralization. The blockchain trilemma states that networks must trade off between decentralization, security, and scalability. Ethereum processes roughly 15-30 transactions per second compared to Visa's 65,000 TPS capacity. For Web3 applications to achieve mainstream adoption, scaling solutions must dramatically increase throughput without sacrificing the security and decentralization that make blockchains valuable. This guide explains the major scalability approaches and their trade-offs for business builders."
       toc={[
+        { id: "layer-2-rollups", title: "layer-2-rollups", level: 2 },
         { id: "layer-2-rollups", title: "Layer 2 Rollups", level: 2 },
-        { id: "optimistic-vs-zk", title: "Optimistic vs. ZK Rollups", level: 2 },
-        { id: "sidechains", title: "Sidechains and Alternative L1s", level: 2 },
-        { id: "modular-architecture", title: "Modular Blockchain Architecture", level: 2 },
-        { id: "choosing-solution", title: "Choosing the Right Solution", level: 2 },
+        { id: "optimistic-vs-zk", title: "optimistic-vs-zk", level: 2 },
+        { id: "optimistic-vs-zk-rollups", title: "Optimistic vs. ZK Rollups", level: 2 },
+        { id: "sidechains", title: "sidechains", level: 2 },
+        { id: "sidechains-and-alternative-l1s", title: "Sidechains and Alternative L1s", level: 2 },
+        { id: "modular-architecture", title: "modular-architecture", level: 2 },
+        { id: "modular-blockchain-architecture", title: "Modular Blockchain Architecture", level: 2 },
+        { id: "choosing-solution", title: "choosing-solution", level: 2 },
+        { id: "choosing-the-right-solution", title: "Choosing the Right Solution", level: 2 }
       ]}
       faqs={[
         {

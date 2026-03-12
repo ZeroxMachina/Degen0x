@@ -18,12 +18,18 @@ export default function StakeEthereumPage() {
       readTime="12 min"
       intro="Ethereum staking allows you to earn passive rewards by helping secure the world's largest smart contract platform. Since the Merge in September 2022, Ethereum transitioned to proof-of-stake, enabling ETH holders to participate in network validation and earn approximately 3-5% APY. This guide covers every method of staking ETH, from running your own validator to using liquid staking protocols."
       toc={[
-        { id: "overview", title: "Ethereum Staking Overview", level: 2 },
-        { id: "rewards", title: "Staking Rewards & APY", level: 2 },
-        { id: "how-to-stake", title: "How to Stake ETH Step-by-Step", level: 2 },
-        { id: "risks", title: "Risks of Staking Ethereum", level: 2 },
-        { id: "validators", title: "Validators & Staking Pools", level: 2 },
-        { id: "tax-implications", title: "Tax Implications", level: 2 },
+        { id: "overview", title: "overview", level: 2 },
+        { id: "ethereum-staking-overview", title: "Ethereum Staking Overview", level: 2 },
+        { id: "rewards", title: "rewards", level: 2 },
+        { id: "staking-rewards-apy", title: "Staking Rewards & APY", level: 2 },
+        { id: "how-to-stake", title: "how-to-stake", level: 2 },
+        { id: "how-to-stake-eth-step-by-step", title: "How to Stake ETH Step-by-Step", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-of-staking-ethereum", title: "Risks of Staking Ethereum", level: 2 },
+        { id: "validators", title: "validators", level: 2 },
+        { id: "validators-staking-pools", title: "Validators & Staking Pools", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-implications", title: "Tax Implications", level: 2 }
       ]}
       faqs={[
         {

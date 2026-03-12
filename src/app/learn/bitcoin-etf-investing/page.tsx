@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bitcoin ETF Investing: Complete Guide for 2026 | CryptoDegen`,
+  title: `Bitcoin ETF Investing: Complete Guide for 2026 | degen0x`,
   description:
     "Learn about spot vs futures Bitcoin ETFs, top ETF options (IBIT, FBTC, ARKB), fee comparisons, tax implications, and portfolio allocation strategies.",
 };
@@ -17,12 +17,18 @@ export default function BitcoinETFInvestingPage() {
       readTime="10 min read"
       intro="Bitcoin ETFs have revolutionized crypto investing by offering regulated, traditional investment vehicles for Bitcoin exposure. The 2024 approval of spot Bitcoin ETFs by the SEC marked a watershed moment, bringing institutional capital and retail investor accessibility to new levels. This guide covers the differences between spot and futures ETFs, analyzes leading options like IBIT and FBTC, explains fee structures and tax implications, and provides portfolio allocation frameworks for different investment profiles."
       toc={[
-        { id: "spot-vs-futures", title: "Spot vs Futures ETFs", level: 2 },
-        { id: "top-etfs", title: "Top Bitcoin ETFs in 2026", level: 2 },
-        { id: "fee-analysis", title: "Fee Comparison & Impact", level: 2 },
-        { id: "tax-implications", title: "Tax Considerations", level: 2 },
-        { id: "portfolio-allocation", title: "Portfolio Allocation Strategies", level: 2 },
-        { id: "etf-vs-self-custody", title: "ETFs vs Self-Custody Bitcoin", level: 2 },
+        { id: "spot-vs-futures", title: "spot-vs-futures", level: 2 },
+        { id: "spot-vs-futures-etfs", title: "Spot vs Futures ETFs", level: 2 },
+        { id: "top-etfs", title: "top-etfs", level: 2 },
+        { id: "top-bitcoin-etfs-in-2026", title: "Top Bitcoin ETFs in 2026", level: 2 },
+        { id: "fee-analysis", title: "fee-analysis", level: 2 },
+        { id: "fee-comparison-impact", title: "Fee Comparison & Impact", level: 2 },
+        { id: "tax-implications", title: "tax-implications", level: 2 },
+        { id: "tax-considerations", title: "Tax Considerations", level: 2 },
+        { id: "portfolio-allocation", title: "portfolio-allocation", level: 2 },
+        { id: "portfolio-allocation-strategies", title: "Portfolio Allocation Strategies", level: 2 },
+        { id: "etf-vs-self-custody", title: "etf-vs-self-custody", level: 2 },
+        { id: "etfs-vs-self-custody-bitcoin", title: "ETFs vs Self-Custody Bitcoin", level: 2 }
       ]}
       faqs={[
         {

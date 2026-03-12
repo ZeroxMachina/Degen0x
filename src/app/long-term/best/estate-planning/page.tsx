@@ -16,10 +16,14 @@ export default function BestCryptoEstatePlanningPage() {
       readTime="10 min"
       intro="Crypto estate planning ensures digital assets transfer properly to heirs. Unlike institutional assets, self-custodied crypto requires specific planning to prevent permanent loss of access."
       toc={[
-        { id: "section-1", title: "Estate Planning Challenges", level: 2 },
-        { id: "section-2", title: "Available Solutions", level: 2 },
-        { id: "section-3", title: "Key Management Strategies", level: 2 },
-        { id: "section-4", title: "Implementation Steps", level: 2 },
+        { id: "section-1", title: "section-1", level: 2 },
+        { id: "estate-planning-challenges", title: "Estate Planning Challenges", level: 2 },
+        { id: "section-2", title: "section-2", level: 2 },
+        { id: "available-solutions", title: "Available Solutions", level: 2 },
+        { id: "section-3", title: "section-3", level: 2 },
+        { id: "key-management-strategies", title: "Key Management Strategies", level: 2 },
+        { id: "section-4", title: "section-4", level: 2 },
+        { id: "implementation-steps", title: "Implementation Steps", level: 2 }
       ]}
       faqs={[
         { question: "Why is crypto estate planning different?", answer: "Self-custodied crypto requires private keys or seed phrases to access. Without proper planning, these credentials can be permanently lost when the holder dies, making the crypto inaccessible forever. Traditional estate mechanisms do not cover private key transfer." },

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is Sei (SEI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `What Is Sei (SEI)? Price, Guide & How to Buy (${CURRENT_YEAR}) | degen0x`,
   description:
     "Learn about Sei (SEI), the parallelized EVM blockchain optimized for trading and DeFi. Discover how it works, tokenomics, use cases, and how to buy SEI.",
 };
@@ -17,12 +17,18 @@ export default function SeiPage() {
       readTime="8 min read"
       intro="Sei is a high-performance Layer 1 blockchain built on the Cosmos SDK that features the first parallelized EVM. Designed for trading and DeFi applications, Sei achieves sub-second finality through its Twin Turbo consensus mechanism while maintaining full EVM compatibility for Ethereum developers."
       toc={[
-        { id: "what-is", title: "What Is Sei?", level: 2 },
-        { id: "how-it-works", title: "How Does Sei Work?", level: 2 },
-        { id: "tokenomics", title: "SEI Tokenomics", level: 2 },
-        { id: "use-cases", title: "Key Use Cases", level: 2 },
-        { id: "how-to-buy", title: "How to Buy SEI", level: 2 },
-        { id: "risks", title: "Risks and Considerations", level: 2 },
+        { id: "what-is", title: "what-is", level: 2 },
+        { id: "what-is-sei", title: "What Is Sei?", level: 2 },
+        { id: "how-it-works", title: "how-it-works", level: 2 },
+        { id: "how-does-sei-work", title: "How Does Sei Work?", level: 2 },
+        { id: "tokenomics", title: "tokenomics", level: 2 },
+        { id: "sei-tokenomics", title: "SEI Tokenomics", level: 2 },
+        { id: "use-cases", title: "use-cases", level: 2 },
+        { id: "key-use-cases", title: "Key Use Cases", level: 2 },
+        { id: "how-to-buy", title: "how-to-buy", level: 2 },
+        { id: "how-to-buy-sei", title: "How to Buy SEI", level: 2 },
+        { id: "risks", title: "risks", level: 2 },
+        { id: "risks-and-considerations", title: "Risks and Considerations", level: 2 }
       ]}
       faqs={[
         {

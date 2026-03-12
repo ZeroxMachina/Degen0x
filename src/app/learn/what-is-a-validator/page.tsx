@@ -17,12 +17,18 @@ export default function WhatIsAValidatorPage() {
       readTime="8 min"
       intro="A validator is a network participant that verifies transactions and produces new blocks in Proof of Stake blockchains. Validators stake cryptocurrency as collateral to ensure honest behavior, earning rewards for correct participation and facing penalties (slashing) for misbehavior. They are the backbone of PoS network security, replacing the role that miners play in Proof of Work systems."
       toc={[
-        { id: "role", title: "The Role of Validators", level: 2 },
-        { id: "requirements", title: "Validator Requirements", level: 2 },
-        { id: "rewards-risks", title: "Rewards and Risks", level: 2 },
-        { id: "delegation", title: "Delegating to Validators", level: 2 },
-        { id: "becoming-validator", title: "Becoming a Validator", level: 2 },
-        { id: "validator-landscape", title: "The Validator Landscape", level: 2 },
+        { id: "role", title: "role", level: 2 },
+        { id: "the-role-of-validators", title: "The Role of Validators", level: 2 },
+        { id: "requirements", title: "requirements", level: 2 },
+        { id: "validator-requirements", title: "Validator Requirements", level: 2 },
+        { id: "rewards-risks", title: "rewards-risks", level: 2 },
+        { id: "rewards-and-risks", title: "Rewards and Risks", level: 2 },
+        { id: "delegation", title: "delegation", level: 2 },
+        { id: "delegating-to-validators", title: "Delegating to Validators", level: 2 },
+        { id: "becoming-validator", title: "becoming-validator", level: 2 },
+        { id: "becoming-a-validator", title: "Becoming a Validator", level: 2 },
+        { id: "validator-landscape", title: "validator-landscape", level: 2 },
+        { id: "the-validator-landscape", title: "The Validator Landscape", level: 2 }
       ]}
       faqs={[
         { question: "How much do validators earn?", answer: "Validator earnings vary by network and market conditions. Ethereum validators typically earn 3-5% APY on their 32 ETH stake. Cosmos validators earn 10-25% depending on the specific chain. Earnings come from block rewards, transaction fees, and MEV. Delegators receive a portion of validator earnings minus the validator's commission." },

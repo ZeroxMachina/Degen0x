@@ -1,3 +1,5 @@
+'use client';
+
 export default function OfflinePage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-900 to-slate-950 px-4">
@@ -18,7 +20,7 @@ export default function OfflinePage() {
               />
             </svg>
           </div>
-          <h1 className="text-3xl font-bold text-white mb-2">You're Offline</h1>
+          <h1 className="text-3xl font-bold text-[var(--color-text)] mb-2">You're Offline</h1>
           <p className="text-slate-400 mb-6">
             Looks like you've lost your internet connection. Don't worry, you can still view cached pages.
           </p>
@@ -49,7 +51,7 @@ export default function OfflinePage() {
           onClick={() => {
             window.location.reload();
           }}
-          className="w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 active:scale-95"
+          className="w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-[var(--color-text)] font-medium rounded-lg transition-all duration-200 transform hover:scale-105 active:scale-95"
         >
           Try Again
         </button>

@@ -3,7 +3,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Paper Wallets: Are They Still Relevant? (${CURRENT_YEAR}) | CryptoDegen`,
+  title: `Paper Wallets: Are They Still Relevant? (${CURRENT_YEAR}) | degen0x`,
   description: "Learn what paper wallets are, how they work, their security risks, and why hardware wallets have largely replaced them for cold storage in modern crypto.",
 };
 
@@ -11,7 +11,16 @@ export default function PaperWalletGuidePage() {
   return (
     <LearnPageLayout title="Paper Wallets: Are They Still Relevant?" categoryName="Crypto Wallets" categorySlug="wallets" readTime="6 min read"
       intro="Paper wallets were one of the earliest methods of cold storage, involving printing your public and private keys (often as QR codes) on a physical piece of paper. While they provided a simple way to store crypto offline, paper wallets carry significant usability and security risks that have made them largely obsolete. Hardware wallets now offer superior security with far better usability. This guide explains how paper wallets work, their risks, and why most users should avoid them today."
-      toc={[{ id: "what-are-paper-wallets", title: "What Are Paper Wallets", level: 2 }, { id: "how-they-work", title: "How Paper Wallets Work", level: 2 }, { id: "risks-and-problems", title: "Risks and Problems", level: 2 }, { id: "modern-alternatives", title: "Modern Alternatives", level: 2 }]}
+      toc={[
+        { id: "what-are-paper-wallets", title: "what-are-paper-wallets", level: 2 },
+        { id: "what-are-paper-wallets", title: "What Are Paper Wallets", level: 2 },
+        { id: "how-they-work", title: "how-they-work", level: 2 },
+        { id: "how-paper-wallets-work", title: "How Paper Wallets Work", level: 2 },
+        { id: "risks-and-problems", title: "risks-and-problems", level: 2 },
+        { id: "risks-and-problems", title: "Risks and Problems", level: 2 },
+        { id: "modern-alternatives", title: "modern-alternatives", level: 2 },
+        { id: "modern-alternatives", title: "Modern Alternatives", level: 2 }
+      ]}
       faqs={[{ question: "Should I use a paper wallet for long-term storage?", answer: "No. Hardware wallets have completely replaced paper wallets for cold storage. A Ledger or Trezor device costs under $80 and provides vastly superior security and usability. Paper wallets have too many risks: physical degradation, insecure generation if done on a compromised computer, and the danger of exposing your private key when spending. Use a hardware wallet instead." },
         { question: "Are paper wallets completely insecure?", answer: "Paper wallets are not inherently insecure if generated correctly on an air-gapped computer and stored properly. The problem is that doing everything correctly is difficult and error-prone. Most paper wallet generators run in web browsers that could be compromised. Printers can retain data. The paper itself degrades. And spending from a paper wallet often exposes the full balance to theft. These practical risks make them inferior to hardware wallets." },
         { question: "What about metal seed phrase backups?", answer: "Metal seed phrase backups (like Cryptosteel or Billfodl) are different from paper wallets. They store the recovery words for a hardware or software wallet, not raw private keys. Metal backups protect against fire and water damage and are an excellent supplement to hardware wallets. They are a recommended security practice, not an alternative wallet type." }]}

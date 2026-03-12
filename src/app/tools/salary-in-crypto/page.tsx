@@ -1,3 +1,5 @@
+'use client';
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -323,7 +325,7 @@ export default function SalaryInCryptoPage() {
                 </Link>
                 <button
                   onClick={() => {
-                    const text = `If I had taken ${allocation}% of my salary in ${asset} since ${startYear}, my crypto stack would be worth ${fmt(results.cryptoPortfolioValue)} today. A ${results.cryptoMultiple.toFixed(1)}x return! 🤯 Check yours: cryptodegen.io/tools/salary-in-crypto`;
+                    const text = `If I had taken ${allocation}% of my salary in ${asset} since ${startYear}, my crypto stack would be worth ${fmt(results.cryptoPortfolioValue)} today. A ${results.cryptoMultiple.toFixed(1)}x return! 🤯 Check yours: degen0x.com/tools/salary-in-crypto`;
                     navigator.clipboard?.writeText(text);
                     alert("Tweet copied! Paste to share.");
                   }}

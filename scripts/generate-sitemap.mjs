@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const BASE_URL = 'https://cryptodegen.com';
+const BASE_URL = 'https://degen0x.com';
 const APP_DIR = path.join(__dirname, '../src/app');
 const OUT_DIR = path.join(__dirname, '../out');
 const PUBLIC_DIR = path.join(__dirname, '../public');

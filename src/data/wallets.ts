@@ -24,7 +24,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "$149",
     bestFor: "Overall best hardware wallet",
-    affiliateUrl: "https://cryptodegen.com/go/ledger",
+    affiliateUrl: "https://degen0x.com/go/ledger",
     category: "wallets",
     featured: true,
   },
@@ -49,7 +49,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "$79",
     bestFor: "Budget hardware wallet",
-    affiliateUrl: "https://cryptodegen.com/go/ledger",
+    affiliateUrl: "https://degen0x.com/go/ledger",
     category: "wallets",
   },
   {
@@ -73,7 +73,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "$219",
     bestFor: "Open-source security enthusiasts",
-    affiliateUrl: "https://cryptodegen.com/go/trezor",
+    affiliateUrl: "https://degen0x.com/go/trezor",
     category: "wallets",
     featured: true,
   },
@@ -98,7 +98,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "$79",
     bestFor: "Open-source budget hardware wallet",
-    affiliateUrl: "https://cryptodegen.com/go/trezor",
+    affiliateUrl: "https://degen0x.com/go/trezor",
     category: "wallets",
   },
   {
@@ -122,7 +122,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "Free (0.875% swap fee)",
     bestFor: "Ethereum DeFi and dApp users",
-    affiliateUrl: "https://cryptodegen.com/go/metamask",
+    affiliateUrl: "https://degen0x.com/go/metamask",
     category: "wallets",
     featured: true,
   },
@@ -147,7 +147,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "Free (swap fees vary)",
     bestFor: "Solana ecosystem users",
-    affiliateUrl: "https://cryptodegen.com/go/phantom",
+    affiliateUrl: "https://degen0x.com/go/phantom",
     category: "wallets",
     featured: true,
   },
@@ -172,7 +172,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "Free",
     bestFor: "Multi-chain mobile users",
-    affiliateUrl: "https://cryptodegen.com/go/trust-wallet",
+    affiliateUrl: "https://degen0x.com/go/trust-wallet",
     category: "wallets",
   },
   {
@@ -196,7 +196,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "Free (exchange fees vary)",
     bestFor: "Beginners wanting a beautiful interface",
-    affiliateUrl: "https://cryptodegen.com/go/exodus",
+    affiliateUrl: "https://degen0x.com/go/exodus",
     category: "wallets",
   },
   {
@@ -220,7 +220,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "Free",
     bestFor: "Coinbase users wanting self-custody",
-    affiliateUrl: "https://cryptodegen.com/go/coinbase-wallet",
+    affiliateUrl: "https://degen0x.com/go/coinbase-wallet",
     category: "wallets",
   },
   {
@@ -244,7 +244,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "Free",
     bestFor: "Security-conscious DeFi users",
-    affiliateUrl: "https://cryptodegen.com/go/rabby",
+    affiliateUrl: "https://degen0x.com/go/rabby",
     category: "wallets",
   },
   {
@@ -268,7 +268,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "$157",
     bestFor: "Bitcoin-only maximalists & advanced security",
-    affiliateUrl: "https://cryptodegen.com/go/coldcard",
+    affiliateUrl: "https://degen0x.com/go/coldcard",
     category: "wallets",
     featured: true,
   },
@@ -293,7 +293,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "$199",
     bestFor: "Open-source Bitcoin air-gap enthusiasts",
-    affiliateUrl: "https://cryptodegen.com/go/foundation-passport",
+    affiliateUrl: "https://degen0x.com/go/foundation-passport",
     category: "wallets",
   },
   {
@@ -317,7 +317,7 @@ export const walletProducts: Product[] = [
     ],
     fees: "Free (gas fees apply)",
     bestFor: "DAOs and organizational treasuries",
-    affiliateUrl: "https://cryptodegen.com/go/safe",
+    affiliateUrl: "https://degen0x.com/go/safe",
     category: "wallets",
   },
 ];
@@ -339,7 +339,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Ledger Nano X",
     slug: "ledger",
     rating: 4.7,
-    affiliateUrl: "https://cryptodegen.com/go/ledger",
+    affiliateUrl: "https://degen0x.com/go/ledger",
     features: {
       Type: "Hardware (Cold)",
       Price: "$149",
@@ -359,7 +359,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Ledger Nano S Plus",
     slug: "ledger",
     rating: 4.5,
-    affiliateUrl: "https://cryptodegen.com/go/ledger",
+    affiliateUrl: "https://degen0x.com/go/ledger",
     features: {
       Type: "Hardware (Cold)",
       Price: "$79",
@@ -379,7 +379,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Trezor Model T",
     slug: "trezor",
     rating: 4.6,
-    affiliateUrl: "https://cryptodegen.com/go/trezor",
+    affiliateUrl: "https://degen0x.com/go/trezor",
     features: {
       Type: "Hardware (Cold)",
       Price: "$219",
@@ -399,7 +399,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Trezor Safe 3",
     slug: "trezor",
     rating: 4.5,
-    affiliateUrl: "https://cryptodegen.com/go/trezor",
+    affiliateUrl: "https://degen0x.com/go/trezor",
     features: {
       Type: "Hardware (Cold)",
       Price: "$79",
@@ -419,7 +419,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Coldcard Mk4",
     slug: "coldcard",
     rating: 4.8,
-    affiliateUrl: "https://cryptodegen.com/go/coldcard",
+    affiliateUrl: "https://degen0x.com/go/coldcard",
     features: {
       Type: "Hardware (Air-Gap)",
       Price: "$157",
@@ -439,7 +439,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Foundation Passport 2",
     slug: "foundation-passport",
     rating: 4.7,
-    affiliateUrl: "https://cryptodegen.com/go/foundation-passport",
+    affiliateUrl: "https://degen0x.com/go/foundation-passport",
     features: {
       Type: "Hardware (Air-Gap)",
       Price: "$199",
@@ -459,7 +459,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "MetaMask",
     slug: "metamask",
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/metamask",
+    affiliateUrl: "https://degen0x.com/go/metamask",
     features: {
       Type: "Software (Hot)",
       Price: "Free",
@@ -479,7 +479,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Phantom",
     slug: "phantom",
     rating: 4.5,
-    affiliateUrl: "https://cryptodegen.com/go/phantom",
+    affiliateUrl: "https://degen0x.com/go/phantom",
     features: {
       Type: "Software (Hot)",
       Price: "Free",
@@ -499,7 +499,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Trust Wallet",
     slug: "trust-wallet",
     rating: 4.3,
-    affiliateUrl: "https://cryptodegen.com/go/trust-wallet",
+    affiliateUrl: "https://degen0x.com/go/trust-wallet",
     features: {
       Type: "Software (Hot)",
       Price: "Free",
@@ -519,7 +519,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Exodus",
     slug: "exodus",
     rating: 4.3,
-    affiliateUrl: "https://cryptodegen.com/go/exodus",
+    affiliateUrl: "https://degen0x.com/go/exodus",
     features: {
       Type: "Software (Hot)",
       Price: "Free",
@@ -539,7 +539,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Coinbase Wallet",
     slug: "coinbase-wallet",
     rating: 4.2,
-    affiliateUrl: "https://cryptodegen.com/go/coinbase-wallet",
+    affiliateUrl: "https://degen0x.com/go/coinbase-wallet",
     features: {
       Type: "Software (Hot)",
       Price: "Free",
@@ -559,7 +559,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Rabby",
     slug: "rabby",
     rating: 4.4,
-    affiliateUrl: "https://cryptodegen.com/go/rabby",
+    affiliateUrl: "https://degen0x.com/go/rabby",
     features: {
       Type: "Software (Hot)",
       Price: "Free",
@@ -579,7 +579,7 @@ export const walletComparisonItems: Record<string, ComparisonItem> = {
     name: "Safe (Gnosis Safe)",
     slug: "safe",
     rating: 4.5,
-    affiliateUrl: "https://cryptodegen.com/go/safe",
+    affiliateUrl: "https://degen0x.com/go/safe",
     features: {
       Type: "Smart Contract (Multi-Sig)",
       Price: "Free (gas fees apply)",
