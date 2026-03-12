@@ -26,8 +26,8 @@ const LiveMarketDashboard = () => {
   const [lastUpdated, setLastUpdated] = useState(0);
   const [animatingCoins, setAnimatingCoins] = useState<Set<string>>(new Set());
   const priceHistoryRef = useRef<Map<string, number>>(new Map());
-  const updateIntervalRef = useRef<NodeJS.Timeout>();
-  const updateTimerRef = useRef<NodeJS.Timeout>();
+  const updateIntervalRef = useRef<NodeJS.Timeout>(undefined);
+  const updateTimerRef = useRef<NodeJS.Timeout>(undefined);
 
   // Fetch prices from API
   const fetchPrices = async () => {

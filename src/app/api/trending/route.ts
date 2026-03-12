@@ -27,6 +27,7 @@ export async function GET() {
     const coins = (raw.coins ?? []).slice(0, 10).map((item: Record<string, unknown>) => {
       const coin = item.item as Record<string, unknown>;
       const data = coin.data as Record<string, unknown> | undefined;
+      const priceChange = data?.price_change_percentage_24h as Record<string, unknown> | undefined;
       return {
         id: coin.id,
         symbol: coin.symbol,
@@ -35,7 +36,7 @@ export async function GET() {
         rank: coin.market_cap_rank,
         price: data?.price ?? null,
         priceBtc: coin.price_btc,
-        change24h: data?.price_change_percentage_24h?.usd ?? null,
+        change24h: priceChange?.usd ?? null,
         marketCap: data?.market_cap ?? null,
         sparkline: data?.sparkline ?? null,
       };

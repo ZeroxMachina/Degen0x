@@ -475,7 +475,7 @@ export default function PortfolioSimulatorPage() {
     const cy = 100;
 
     let currentAngle = -Math.PI / 2;
-    const slices: JSX.Element[] = [];
+    const slices: React.JSX.Element[] = [];
 
     portfolioAssets.forEach(asset => {
       const percentage = asset.allocation / 100;

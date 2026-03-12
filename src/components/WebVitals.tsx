@@ -68,11 +68,11 @@ export default function WebVitals() {
       try {
         const observer = new PerformanceObserver((entryList) => {
           const entries = entryList.getEntries();
-          const lastEntry = entries[entries.length - 1];
+          const lastEntry = entries[entries.length - 1] as PerformanceEntry & { renderingStart?: number; loadingTime?: number };
           const metric: WebVital = {
             name: "LCP",
-            value: Math.round(lastEntry.renderingStart || lastEntry.loadingTime),
-            rating: getRating("LCP", Math.round(lastEntry.renderingStart || lastEntry.loadingTime)),
+            value: Math.round(lastEntry.renderingStart || lastEntry.loadingTime || lastEntry.startTime),
+            rating: getRating("LCP", Math.round(lastEntry.renderingStart || lastEntry.loadingTime || lastEntry.startTime)),
           };
           sendMetric(metric);
         });
@@ -88,13 +88,14 @@ export default function WebVitals() {
     const observeFIDINP = () => {
       try {
         const observer = new PerformanceObserver((entryList) => {
-          for (const entry of entryList.getEntries()) {
+          for (const rawEntry of entryList.getEntries()) {
+            const entry = rawEntry as PerformanceEntry & { processingEnd?: number };
             const metric: WebVital = {
               name: entry.name === "first-input" ? "FID" : "INP",
-              value: Math.round(entry.processingEnd - entry.startTime),
+              value: Math.round((entry.processingEnd ?? entry.startTime) - entry.startTime),
               rating: getRating(
                 entry.name === "first-input" ? "FID" : "INP",
-                Math.round(entry.processingEnd - entry.startTime)
+                Math.round((entry.processingEnd ?? entry.startTime) - entry.startTime)
               ),
             };
             sendMetric(metric);

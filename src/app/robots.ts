@@ -42,7 +42,6 @@ export default function robots(): MetadataRoute.Robots {
           "/*?*",              // Pages with query parameters (avoid duplicates)
         ],
         crawlDelay: 0,         // No delay for major search engines
-        userAgentSpecific: true,
       },
 
       // Google-specific rules
