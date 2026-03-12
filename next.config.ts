@@ -13,11 +13,10 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   experimental: {
-    // Balance concurrency: high enough for speed, low enough to avoid OOM
-    // Vercel standard machines have ~8GB RAM; 8192MB heap + 25 concurrent pages works well
-    staticGenerationMaxConcurrency: 25,
-    workerThreads: true, // Worker threads are faster than child processes
-    cpus: 4, // Force 4 workers regardless of detected CPU count
+    // Safe concurrency: avoids OOM on Vercel 8GB machines
+    // Bulk pages converted to dynamic rendering to stay under 45min build limit
+    staticGenerationMaxConcurrency: 8,
+    workerThreads: false,
   },
 };
 
