@@ -1,3 +1,8 @@
+// Force all pages to render dynamically (SSR) to avoid 45-minute Vercel build timeout
+// Static generation of 826+ pages exceeds the Pro Trial build limit
+// Pages are still CDN-cached by Vercel after first request, so performance is preserved
+export const dynamic = "force-dynamic";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,6 +21,8 @@ import CookieConsent from "@/components/CookieConsent";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/constants";
 import RiskDisclaimer from "@/components/RiskDisclaimer";
 import WebVitals from "@/components/WebVitals";
+import { AnalyticsProvider } from "@/components/AnalyticsProvider";
+import OnboardingFlow from "@/components/OnboardingFlow";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -97,6 +104,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
         <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="alternate" type="application/rss+xml" title="degen0x Learn Articles" href="/feed.xml" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <script
@@ -126,6 +134,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <CookieConsent />
               <ExitIntentPopup />
               <WebVitals />
+              <AnalyticsProvider />
+              <OnboardingFlow />
             </ThemeProvider>
           </DegenModeProvider>
         </WalletProvider>
