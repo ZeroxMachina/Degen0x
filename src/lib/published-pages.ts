@@ -163,18 +163,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/tools/token-unlocks",
   "/tools/defi-yields",
 
-  // ── Static / Legal (always indexed) ────────────────────────────
-  "/privacy",
-  "/terms",
-]);
-
-/**
- * PUBLISH QUEUE — ordered by priority (publish 20/day)
- * Move slugs up into PUBLISHED_PAGES each day.
- */
-export const PUBLISH_QUEUE: readonly string[] = [
-  // Day 4 — Wallet Reviews (next up)
-  "/wallets",
+  // ── Day 8 — Wallet Reviews (published Mar 12) ─────────────────
   "/wallets/metamask",
   "/wallets/phantom",
   "/wallets/ledger",
@@ -195,7 +184,7 @@ export const PUBLISH_QUEUE: readonly string[] = [
   "/wallets/coldcard",
   "/wallets/foundation-passport",
 
-  // Day 5 — Investing Best-Of (high search intent)
+  // ── Day 8 — Investing Best-Of (published Mar 12) ─────────────
   "/investing/best/staking",
   "/investing/best/crypto-ira",
   "/investing/best/bitcoin-etfs",
@@ -216,19 +205,13 @@ export const PUBLISH_QUEUE: readonly string[] = [
   "/investing/best/yield-farming",
   "/investing/best/stablecoins",
   "/investing/best/crypto-savings",
+  "/investing/best/cryptos-to-buy",
 
-  // Day 6 — Learn (broad crypto education)
-  "/learn/amm-explained",
-  "/learn/bitcoin-lightning-network",
-  "/learn/bitcoin-ordinals",
-  "/learn/blockchain-trilemma",
-  "/learn/cbdc-explained",
-  "/learn/cross-chain-bridges-guide",
-  "/learn/crypto-ai-intersection",
-  "/learn/crypto-derivatives",
-  "/learn/crypto-etfs-complete-guide",
-  "/learn/account-abstraction-explained",
-  "/learn/arbitrum-ecosystem",
+  // ── Static / Legal (always indexed) ────────────────────────────
+  "/privacy",
+  "/terms",
+
+  // ── Day 9 — Learn Ecosystems (published Mar 12, Sprint 11) ────
   "/learn/avalanche-ecosystem",
   "/learn/base-ecosystem",
   "/learn/bnb-chain-ecosystem",
@@ -239,20 +222,11 @@ export const PUBLISH_QUEUE: readonly string[] = [
   "/learn/bitcoin-layer-2-guide",
   "/learn/aml-kyc-crypto-guide",
 
-  // Day 7 — Taxes
-  "/taxes",
-  "/taxes/how-crypto-is-taxed",
-  "/taxes/crypto-tax-loss-harvesting",
-  "/taxes/defi-taxes",
-  "/taxes/nft-taxes",
-  "/taxes/staking-taxes",
+  // ── Day 9 — Remaining Taxes (published Mar 12, Sprint 11) ─────
   "/taxes/mining-taxes",
   "/taxes/airdrops-taxes",
   "/taxes/crypto-gifts-taxes",
   "/taxes/crypto-business-taxes",
-  "/taxes/us-crypto-tax-guide",
-  "/taxes/uk-crypto-tax-guide",
-  "/taxes/canada-crypto-tax-guide",
   "/taxes/australia-crypto-tax-guide",
   "/taxes/germany-crypto-tax-guide",
   "/taxes/portugal-crypto-tax-guide",
@@ -260,6 +234,80 @@ export const PUBLISH_QUEUE: readonly string[] = [
   "/taxes/uae-crypto-tax-guide",
   "/taxes/crypto-tax-software",
   "/taxes/irs-crypto-reporting",
+
+  // ── Day 10 — Blog System (published Mar 12, Sprint 11) ────────
+  "/blog",
+  "/blog/bitcoin-dominance-2026-what-it-means",
+  "/blog/defi-lending-rates-march-2026",
+  "/blog/crypto-tax-reporting-2026-what-changed",
+  "/blog/layer-2-comparison-base-arbitrum-zksync",
+  "/blog/5-mistakes-new-crypto-investors-make",
+  "/blog/memecoins-are-they-worth-it-2026",
+
+  // ── Day 10 — Additional Tools (published Mar 12, Sprint 11) ───
+  "/tools/advanced-charting",
+  "/tools/ai-trading-signals",
+  "/tools/bridge-aggregator",
+  "/tools/dex-aggregator",
+  "/tools/mev-scanner",
+  "/tools/multi-chain-gas",
+  "/tools/regulatory-map",
+  "/tools/research-assistant",
+  "/tools/salary-in-crypto",
+  "/tools/tax-optimizer",
+  "/tools/volatility-scanner",
+  "/tools/index-fund-simulator",
+  "/tools/crypto-calendar",
+
+  // ── Day 10 — Crypto Cards (published Mar 12, Sprint 11) ───────
+  "/crypto-cards",
+  "/crypto-cards/best",
+  "/crypto-cards/best/cashback",
+  "/crypto-cards/best/rewards",
+  "/crypto-cards/best/travel",
+  "/crypto-cards/best/beginners",
+]);
+
+/**
+ * PUBLISH QUEUE — ordered by priority (publish 20/day)
+ * Move slugs up into PUBLISHED_PAGES each day.
+ */
+export const PUBLISH_QUEUE: readonly string[] = [
+  // Day 11+ — DeFi Lending pages
+  "/defi-lending/best",
+  "/defi-lending/reviews",
+  "/defi-lending/best/stablecoin-yield",
+  "/defi-lending/best/yield-aggregators",
+
+  // Day 11+ — Insurance, NFTs, remaining categories
+  "/insurance",
+  "/insurance/best",
+  "/nfts",
+  "/nfts/best",
+  "/spending",
+  "/spending/best/debit-cards",
+
+  // Day 11+ — Remaining tools
+  "/tools/alerts-dashboard",
+  "/tools/crypto-watchlist",
+  "/tools/crypto-wrapped",
+  "/tools/degen-score",
+  "/tools/embed-widgets",
+  "/tools/exchange-cashback",
+  "/tools/leaderboard",
+  "/tools/lending-rates",
+  "/tools/live-prices",
+  "/tools/performance-dashboard",
+  "/tools/portfolio-heatmap",
+  "/tools/portfolio-simulator",
+  "/tools/portfolio-widget",
+  "/tools/price-ticker",
+  "/tools/token-vesting",
+
+  // Day 12+ — Web3 Business, Long-Term, more Compare pages
+  "/web3-business",
+  "/long-term",
+  "/compare/wallets",
 ];
 
 /**

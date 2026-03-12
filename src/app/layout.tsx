@@ -23,6 +23,7 @@ import RiskDisclaimer from "@/components/RiskDisclaimer";
 import WebVitals from "@/components/WebVitals";
 import { AnalyticsProvider } from "@/components/AnalyticsProvider";
 import OnboardingFlow from "@/components/OnboardingFlow";
+import { AchievementProvider } from "@/components/AchievementSystem";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,12 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "degen0x",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -101,12 +108,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://api.coingecko.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
-        <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
-        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#6366f1" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#6366f1" media="(prefers-color-scheme: light)" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon-192.png" />
         <link rel="alternate" type="application/rss+xml" title="degen0x Learn Articles" href="/feed.xml" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="degen0x" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -121,21 +130,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WalletProvider>
           <DegenModeProvider>
             <ThemeProvider>
-              <Header />
-              <main className="min-h-screen">
-                {children}
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                  <RiskDisclaimer />
-                </div>
-              </main>
-              <Footer />
-              <ReadingProgress />
-              <BackToTop />
-              <CookieConsent />
-              <ExitIntentPopup />
-              <WebVitals />
-              <AnalyticsProvider />
-              <OnboardingFlow />
+              <AchievementProvider>
+                <Header />
+                <main className="min-h-screen">
+                  {children}
+                  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <RiskDisclaimer />
+                  </div>
+                </main>
+                <Footer />
+                <ReadingProgress />
+                <BackToTop />
+                <CookieConsent />
+                <ExitIntentPopup />
+                <WebVitals />
+                <AnalyticsProvider />
+                <OnboardingFlow />
+              </AchievementProvider>
             </ThemeProvider>
           </DegenModeProvider>
         </WalletProvider>

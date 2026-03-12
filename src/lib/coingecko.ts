@@ -2,7 +2,10 @@
  * CoinGecko Free API utilities and helpers
  * Fetches live crypto prices and market data with graceful fallback
  * No API key required - uses CoinGecko's free tier
+ * Uses API caching layer to handle rate limits and improve performance
  */
+
+import { getGlobalCache, withCache } from "./api-cache";
 
 // ── TypeScript Types ──────────────────────────────────────────────────────────
 
@@ -116,85 +119,115 @@ export const FALLBACK_PRICES: Record<string, number> = {
 /**
  * Fetch live prices from CoinGecko free API
  * Falls back to static prices if the request fails
+ * Uses caching layer to reduce API calls and handle rate limiting
  */
 export async function fetchLivePrices(
   ids: string[] = Object.keys(FALLBACK_PRICES)
 ): Promise<LivePrices> {
-  try {
-    const idList = ids.join(",");
-    const url =
-      `https://api.coingecko.com/api/v3/simple/price` +
-      `?ids=${encodeURIComponent(idList)}` +
-      `&vs_currencies=usd` +
-      `&include_24hr_change=true` +
-      `&include_market_cap=true` +
-      `&include_24hr_vol=true`;
+  const cache = getGlobalCache();
+  const cacheKey = `coingecko:prices:${ids.sort().join(",")}`;
 
-    const res = await fetch(url, {
-      next: { revalidate: 60 }, // ISR: revalidate every 60s in Next.js
-      signal: AbortSignal.timeout(5000),
-    });
+  return await withCache(
+    cacheKey,
+    async () => {
+      try {
+        const idList = ids.join(",");
+        const url =
+          `https://api.coingecko.com/api/v3/simple/price` +
+          `?ids=${encodeURIComponent(idList)}` +
+          `&vs_currencies=usd` +
+          `&include_24hr_change=true` +
+          `&include_market_cap=true` +
+          `&include_24hr_vol=true`;
 
-    if (!res.ok) throw new Error(`CoinGecko API error: ${res.status}`);
+        const res = await fetch(url, {
+          next: { revalidate: 60 }, // ISR: revalidate every 60s in Next.js
+          signal: AbortSignal.timeout(5000),
+        });
 
-    const data: LivePrices = await res.json();
-    return data;
-  } catch {
-    // Graceful fallback to static prices with simulated 24h change
-    const fallback: LivePrices = {};
-    for (const id of ids) {
-      if (FALLBACK_PRICES[id] !== undefined) {
-        fallback[id] = {
-          usd: FALLBACK_PRICES[id],
-          usd_24h_change: parseFloat(((Math.random() - 0.48) * 6).toFixed(2)),
-        };
+        if (!res.ok) throw new Error(`CoinGecko API error: ${res.status}`);
+
+        const data: LivePrices = await res.json();
+        return data;
+      } catch {
+        // Graceful fallback to static prices with simulated 24h change
+        const fallback: LivePrices = {};
+        for (const id of ids) {
+          if (FALLBACK_PRICES[id] !== undefined) {
+            fallback[id] = {
+              usd: FALLBACK_PRICES[id],
+              usd_24h_change: parseFloat(((Math.random() - 0.48) * 6).toFixed(2)),
+            };
+          }
+        }
+        return fallback;
       }
-    }
-    return fallback;
-  }
+    },
+    cache
+  );
 }
 
 /**
  * Fetch top N coins by market cap with full market data
+ * Uses caching layer to reduce API calls and handle rate limiting
  */
 export async function fetchTopCoins(limit = 50): Promise<CoinMarketData[]> {
-  try {
-    const url =
-      `https://api.coingecko.com/api/v3/coins/markets` +
-      `?vs_currency=usd` +
-      `&order=market_cap_desc` +
-      `&per_page=${limit}` +
-      `&page=1` +
-      `&sparkline=false` +
-      `&price_change_percentage=1h%2C24h%2C7d`;
+  const cache = getGlobalCache();
+  const cacheKey = `coingecko:topcoins:${limit}`;
 
-    const res = await fetch(url, {
-      next: { revalidate: 120 },
-      signal: AbortSignal.timeout(8000),
-    });
+  return await withCache(
+    cacheKey,
+    async () => {
+      try {
+        const url =
+          `https://api.coingecko.com/api/v3/coins/markets` +
+          `?vs_currency=usd` +
+          `&order=market_cap_desc` +
+          `&per_page=${limit}` +
+          `&page=1` +
+          `&sparkline=false` +
+          `&price_change_percentage=1h%2C24h%2C7d`;
 
-    if (!res.ok) throw new Error(`CoinGecko API error: ${res.status}`);
-    return await res.json();
-  } catch {
-    return MOCK_TOP_COINS;
-  }
+        const res = await fetch(url, {
+          next: { revalidate: 120 },
+          signal: AbortSignal.timeout(8000),
+        });
+
+        if (!res.ok) throw new Error(`CoinGecko API error: ${res.status}`);
+        return await res.json();
+      } catch {
+        return MOCK_TOP_COINS;
+      }
+    },
+    cache
+  );
 }
 
 /**
  * Fetch global market stats (total cap, volume, BTC dominance, etc.)
+ * Uses caching layer to reduce API calls and handle rate limiting
  */
 export async function fetchGlobalStats(): Promise<GlobalStats | null> {
-  try {
-    const res = await fetch(`https://api.coingecko.com/api/v3/global`, {
-      next: { revalidate: 300 },
-      signal: AbortSignal.timeout(5000),
-    });
-    if (!res.ok) throw new Error();
-    const json = await res.json();
-    return json.data;
-  } catch {
-    return null;
-  }
+  const cache = getGlobalCache();
+  const cacheKey = "coingecko:globalstats";
+
+  return await withCache(
+    cacheKey,
+    async () => {
+      try {
+        const res = await fetch(`https://api.coingecko.com/api/v3/global`, {
+          next: { revalidate: 300 },
+          signal: AbortSignal.timeout(5000),
+        });
+        if (!res.ok) throw new Error();
+        const json = await res.json();
+        return json.data;
+      } catch {
+        return null;
+      }
+    },
+    cache
+  );
 }
 
 export interface CoinMarketData {

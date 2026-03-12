@@ -1,700 +1,689 @@
-"use client";
+'use client';
 
-import { useState, useEffect, useCallback, useRef } from "react";
-import Breadcrumb from "@/components/Breadcrumb";
+import { useState, useMemo, useCallback } from 'react';
+import Breadcrumb from '@/components/Breadcrumb';
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Crypto Price Alerts",
-  "description": "Set custom price alerts for cryptocurrencies and get notified when prices cross your targets",
-  "url": "https://degen0x.com/tools/price-alerts",
-  "applicationCategory": "FinanceApplication",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "features": [
-    "Custom price alerts",
-    "Multiple cryptocurrencies",
-    "Above/Below price conditions",
-    "Real-time price updates",
-    "Browser notifications",
-    "No account required",
-    "100% private"
-  ]
-};
+// ── Types ────────────────────────────────────────────────────────────────────
+interface Coin {
+  id: string;
+  symbol: string;
+  name: string;
+  currentPrice: number;
+  change24h: number;
+  icon: string;
+  color: string;
+}
 
-// ─── Types ────────────────────────────────────────────────────────────────────
-interface Alert {
+interface PriceAlert {
   id: string;
   coinId: string;
   coinSymbol: string;
   coinName: string;
-  condition: "above" | "below";
+  currentPrice: number;
   targetPrice: number;
-  currency: "usd" | "eur" | "gbp";
-  createdAt: number;
-  triggered: boolean;
-  triggeredAt?: number;
-  triggeredPrice?: number;
-  active: boolean;
-  bellAnimating?: boolean;
+  direction: 'above' | 'below';
+  type: 'one-time' | 'recurring';
+  enabled: boolean;
+  note?: string;
+  createdAt: Date;
 }
 
-interface PriceData {
-  [id: string]: { usd: number; eur: number; gbp: number; change24h?: number };
+interface TriggeredAlert {
+  id: string;
+  alertId: string;
+  coinSymbol: string;
+  coinName: string;
+  targetPrice: number;
+  triggeredPrice: number;
+  triggeredAt: Date;
+  actedOn: boolean;
 }
 
-// ─── Coins (with top 8 popular) ────────────────────────────────────────────────
-const COINS = [
-  { id: "bitcoin",       symbol: "BTC",  name: "Bitcoin",   color: "#F7931A" },
-  { id: "ethereum",      symbol: "ETH",  name: "Ethereum",  color: "#627EEA" },
-  { id: "solana",        symbol: "SOL",  name: "Solana",    color: "#9945FF" },
-  { id: "avalanche-2",   symbol: "AVAX", name: "Avalanche", color: "#E84142" },
-  { id: "matic-network", symbol: "MATIC",name: "Polygon",   color: "#8247E5" },
-  { id: "polkadot",      symbol: "DOT",  name: "Polkadot",  color: "#E6007A" },
-  { id: "chainlink",     symbol: "LINK", name: "Chainlink", color: "#375BD2" },
-  { id: "uniswap",       symbol: "UNI",  name: "Uniswap",   color: "#FF007A" },
+// ── Top 20 Cryptocurrencies ────────────────────────────────────────────────
+const TOP_20_COINS: Coin[] = [
+  { id: 'bitcoin', symbol: 'BTC', name: 'Bitcoin', currentPrice: 67450, change24h: 2.3, icon: '₿', color: '#F7931A' },
+  { id: 'ethereum', symbol: 'ETH', name: 'Ethereum', currentPrice: 3680, change24h: 1.8, icon: 'Ξ', color: '#627EEA' },
+  { id: 'solana', symbol: 'SOL', name: 'Solana', currentPrice: 198, change24h: 5.2, icon: '◎', color: '#9945FF' },
+  { id: 'bnb', symbol: 'BNB', name: 'BNB', currentPrice: 612, change24h: 3.1, icon: '⬢', color: '#F0B90B' },
+  { id: 'xrp', symbol: 'XRP', name: 'XRP', currentPrice: 2.85, change24h: -1.2, icon: '✕', color: '#23292F' },
+  { id: 'cardano', symbol: 'ADA', name: 'Cardano', currentPrice: 1.18, change24h: 2.5, icon: '◆', color: '#0033AD' },
+  { id: 'solana-clone', symbol: 'DOGE', name: 'Dogecoin', currentPrice: 0.48, change24h: 4.7, icon: '🐕', color: '#BA9F33' },
+  { id: 'polkadot', symbol: 'DOT', name: 'Polkadot', currentPrice: 9.15, change24h: 1.9, icon: '●', color: '#E6007A' },
+  { id: 'polygon', symbol: 'MATIC', name: 'Polygon', currentPrice: 0.92, change24h: 3.4, icon: '◆', color: '#8247E5' },
+  { id: 'avalanche', symbol: 'AVAX', name: 'Avalanche', currentPrice: 45.20, change24h: 2.8, icon: '▲', color: '#E84142' },
+  { id: 'chainlink', symbol: 'LINK', name: 'Chainlink', currentPrice: 28.40, change24h: 1.5, icon: '⛓', color: '#375BD2' },
+  { id: 'litecoin', symbol: 'LTC', name: 'Litecoin', currentPrice: 185, change24h: 2.1, icon: 'Ł', color: '#345D9D' },
+  { id: 'uniswap', symbol: 'UNI', name: 'Uniswap', currentPrice: 12.45, change24h: -0.8, icon: '∞', color: '#FF007A' },
+  { id: 'cosmos', symbol: 'ATOM', name: 'Cosmos', currentPrice: 14.80, change24h: 3.2, icon: '●', color: '#16F1A0' },
+  { id: 'tron', symbol: 'TRX', name: 'TRON', currentPrice: 0.318, change24h: 2.9, icon: '▼', color: '#EB0029' },
+  { id: 'monero', symbol: 'XMR', name: 'Monero', currentPrice: 182, change24h: 4.1, icon: '◆', color: '#FF6600' },
+  { id: 'iota', symbol: 'IOTA', name: 'IOTA', currentPrice: 1.25, change24h: -2.3, icon: '◈', color: '#0066CC' },
+  { id: 'vechain', symbol: 'VET', name: 'VeChain', currentPrice: 0.089, change24h: 5.6, icon: 'V', color: '#3D91CE' },
+  { id: 'filecoin', symbol: 'FIL', name: 'Filecoin', currentPrice: 18.50, change24h: 1.4, icon: '◈', color: '#0090FF' },
+  { id: 'zcash', symbol: 'ZEC', name: 'Zcash', currentPrice: 52.30, change24h: 3.7, icon: '◆', color: '#FF8C00' },
 ];
 
-const FALLBACK_PRICES: PriceData = {
-  bitcoin:       { usd: 82500,  eur: 75900,  gbp: 65800 },
-  ethereum:      { usd: 4100,   eur: 3770,   gbp: 3270 },
-  solana:        { usd: 172,    eur: 158,     gbp: 137 },
-  "avalanche-2": { usd: 35.2,   eur: 32.4,   gbp: 28.1 },
-  "matic-network": { usd: 0.82, eur: 0.75,   gbp: 0.65 },
-  polkadot:      { usd: 7.80,   eur: 7.17,   gbp: 6.22 },
-  chainlink:     { usd: 18.4,   eur: 16.9,   gbp: 14.7 },
-  uniswap:       { usd: 11.8,   eur: 10.9,   gbp: 9.42 }
-};
+// ── Demo Alerts Data ────────────────────────────────────────────────────────
+const DEMO_ALERTS: PriceAlert[] = [
+  {
+    id: 'alert-1',
+    coinId: 'bitcoin',
+    coinSymbol: 'BTC',
+    coinName: 'Bitcoin',
+    currentPrice: 67450,
+    targetPrice: 70000,
+    direction: 'above',
+    type: 'one-time',
+    enabled: true,
+    note: 'Enter position',
+    createdAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000),
+  },
+  {
+    id: 'alert-2',
+    coinId: 'ethereum',
+    coinSymbol: 'ETH',
+    coinName: 'Ethereum',
+    currentPrice: 3680,
+    targetPrice: 3000,
+    direction: 'below',
+    type: 'recurring',
+    enabled: true,
+    note: 'DCA opportunity',
+    createdAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000),
+  },
+  {
+    id: 'alert-3',
+    coinId: 'solana',
+    coinSymbol: 'SOL',
+    coinName: 'Solana',
+    currentPrice: 198,
+    targetPrice: 250,
+    direction: 'above',
+    type: 'one-time',
+    enabled: true,
+    note: 'Bull breakout',
+    createdAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
+  },
+  {
+    id: 'alert-4',
+    coinId: 'bnb',
+    coinSymbol: 'BNB',
+    coinName: 'BNB',
+    currentPrice: 612,
+    targetPrice: 500,
+    direction: 'below',
+    type: 'one-time',
+    enabled: true,
+    note: 'Support level',
+    createdAt: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000),
+  },
+  {
+    id: 'alert-5',
+    coinId: 'cardano',
+    coinSymbol: 'ADA',
+    coinName: 'Cardano',
+    currentPrice: 1.18,
+    targetPrice: 2.0,
+    direction: 'above',
+    type: 'recurring',
+    enabled: true,
+    note: 'Long-term target',
+    createdAt: new Date(Date.now() - 15 * 24 * 60 * 60 * 1000),
+  },
+  {
+    id: 'alert-6',
+    coinId: 'solana-clone',
+    coinSymbol: 'DOGE',
+    coinName: 'Dogecoin',
+    currentPrice: 0.48,
+    targetPrice: 1.0,
+    direction: 'above',
+    type: 'recurring',
+    enabled: false,
+    note: 'Meme coin pump target',
+    createdAt: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000),
+  },
+];
 
-const CURRENCY_SYMBOLS: Record<string, string> = { usd: "$", eur: "€", gbp: "£" };
+// ── Demo Triggered Alerts ──────────────────────────────────────────────────
+const DEMO_HISTORY: TriggeredAlert[] = [
+  {
+    id: 'history-1',
+    alertId: 'old-alert-1',
+    coinSymbol: 'BTC',
+    coinName: 'Bitcoin',
+    targetPrice: 65000,
+    triggeredPrice: 65150,
+    triggeredAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
+    actedOn: true,
+  },
+  {
+    id: 'history-2',
+    alertId: 'old-alert-2',
+    coinSymbol: 'ETH',
+    coinName: 'Ethereum',
+    targetPrice: 3500,
+    triggeredPrice: 3495,
+    triggeredAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000),
+    actedOn: false,
+  },
+  {
+    id: 'history-3',
+    alertId: 'old-alert-3',
+    coinSymbol: 'SOL',
+    coinName: 'Solana',
+    targetPrice: 180,
+    triggeredPrice: 179.50,
+    triggeredAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000),
+    actedOn: true,
+  },
+];
 
-function formatPrice(price: number, currency: string): string {
-  const sym = CURRENCY_SYMBOLS[currency] ?? "$";
-  if (price >= 1000) return `${sym}${price.toLocaleString("en-US", { maximumFractionDigits: 2 })}`;
-  if (price >= 1)    return `${sym}${price.toFixed(4).replace(/\.?0+$/, "")}`;
-  return `${sym}${price.toFixed(6).replace(/\.?0+$/, "")}`;
+// ── Helper Functions ──────────────────────────────────────────────────────
+function getDistancePercentage(current: number, target: number): number {
+  return Math.abs(((target - current) / current) * 100);
 }
 
-function genId(): string {
-  return Math.random().toString(36).slice(2) + Date.now().toString(36);
+function getAlertColor(current: number, target: number): string {
+  const distance = getDistancePercentage(current, target);
+  if (distance < 5) return 'text-green-500'; // Close to trigger
+  if (distance < 15) return 'text-yellow-500'; // Moderate
+  return 'text-gray-500'; // Far away
 }
 
-// ─── Component ───────────────────────────────────────────────────────────────
+function getBgAlertColor(current: number, target: number): string {
+  const distance = getDistancePercentage(current, target);
+  if (distance < 5) return 'bg-green-500/10 border-green-500/20';
+  if (distance < 15) return 'bg-yellow-500/10 border-yellow-500/20';
+  return 'bg-transparent';
+}
+
+// ── Main Component ─────────────────────────────────────────────────────────
 export default function PriceAlertsPage() {
-  const [alerts, setAlerts] = useState<Alert[]>([]);
-  const [prices, setPrices] = useState<PriceData>(FALLBACK_PRICES);
-  const [loading, setLoading] = useState(true);
-  const [lastUpdated, setLastUpdated] = useState("");
-  const [priceError, setPriceError] = useState(false);
-  const [notifications, setNotifications] = useState<{ id: string; msg: string; color: string }[]>([]);
-  const [notificationPermission, setNotificationPermission] = useState<"granted" | "denied" | "default">("default");
-  const [simPriceMultiplier, setSimPriceMultiplier] = useState(1);
+  const [selectedCoin, setSelectedCoin] = useState<Coin>(TOP_20_COINS[0]);
+  const [alerts, setAlerts] = useState<PriceAlert[]>(DEMO_ALERTS);
+  const [history, setHistory] = useState<TriggeredAlert[]>(DEMO_HISTORY);
 
-  // Form state
-  const [formCoin, setFormCoin] = useState(COINS[0].id);
-  const [formCondition, setFormCondition] = useState<"above" | "below">("above");
-  const [formPrice, setFormPrice] = useState<string>("");
-  const [formCurrency, setFormCurrency] = useState<"usd" | "eur" | "gbp">("usd");
-  const [formError, setFormError] = useState("");
-  const [activeTab, setActiveTab] = useState<"active" | "triggered" | "all">("active");
+  // New alert form state
+  const [targetPrice, setTargetPrice] = useState<string>('');
+  const [direction, setDirection] = useState<'above' | 'below'>('above');
+  const [alertType, setAlertType] = useState<'one-time' | 'recurring'>('one-time');
+  const [note, setNote] = useState<string>('');
 
-  const prevPrices = useRef<PriceData>({});
-
-  // ── Request notification permission ──
-  useEffect(() => {
-    if (typeof window !== "undefined" && "Notification" in window) {
-      setNotificationPermission(
-        (Notification.permission as "granted" | "denied" | "default") || "default"
-      );
+  // Create new alert
+  const handleCreateAlert = useCallback(() => {
+    if (!targetPrice || isNaN(parseFloat(targetPrice))) {
+      alert('Please enter a valid target price');
+      return;
     }
+
+    const newAlert: PriceAlert = {
+      id: `alert-${Date.now()}`,
+      coinId: selectedCoin.id,
+      coinSymbol: selectedCoin.symbol,
+      coinName: selectedCoin.name,
+      currentPrice: selectedCoin.currentPrice,
+      targetPrice: parseFloat(targetPrice),
+      direction,
+      type: alertType,
+      enabled: true,
+      note: note || undefined,
+      createdAt: new Date(),
+    };
+
+    setAlerts([newAlert, ...alerts]);
+    setTargetPrice('');
+    setNote('');
+    setDirection('above');
+    setAlertType('one-time');
+  }, [selectedCoin, targetPrice, direction, alertType, note, alerts]);
+
+  // Toggle alert enabled/disabled
+  const handleToggleAlert = useCallback((alertId: string) => {
+    setAlerts(alerts.map(a => a.id === alertId ? { ...a, enabled: !a.enabled } : a));
+  }, [alerts]);
+
+  // Delete alert
+  const handleDeleteAlert = useCallback((alertId: string) => {
+    setAlerts(alerts.filter(a => a.id !== alertId));
+  }, [alerts]);
+
+  // Quick template handlers
+  const handleQuickAlert = useCallback((coin: Coin, target: number, direction: 'above' | 'below') => {
+    setSelectedCoin(coin);
+    setTargetPrice(target.toString());
+    setDirection(direction);
   }, []);
 
-  const requestNotificationPermission = async () => {
-    if (!("Notification" in window)) {
-      alert("Your browser doesn't support notifications");
-      return;
-    }
-    try {
-      const permission = await Notification.requestPermission();
-      setNotificationPermission(permission as "granted" | "denied" | "default");
-    } catch (err) {
-      console.error("Notification permission error:", err);
-    }
-  };
-
-  // ── Fetch prices ──
-  const fetchPrices = useCallback(async () => {
-    try {
-      const ids = COINS.map(c => c.id).join(",");
-      const res = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd,eur,gbp&include_24hr_change=true`);
-      if (!res.ok) throw new Error("API error");
-      const raw = await res.json();
-      // Normalize 24h change field
-      const normalized: PriceData = {};
-      for (const id of Object.keys(raw)) {
-        normalized[id] = {
-          usd: raw[id].usd * simPriceMultiplier,
-          eur: raw[id].eur * simPriceMultiplier,
-          gbp: raw[id].gbp * simPriceMultiplier,
-          change24h: raw[id].usd_24h_change };
-      }
-      setPrices(normalized);
-      setPriceError(false);
-    } catch {
-      setPriceError(true);
-    } finally {
-      setLoading(false);
-      setLastUpdated(new Date().toLocaleTimeString());
-    }
-  }, [simPriceMultiplier]);
-
-  useEffect(() => {
-    fetchPrices();
-    const interval = setInterval(fetchPrices, 60_000); // check every 60s
-    return () => clearInterval(interval);
-  }, [fetchPrices]);
-
-  // ── Check alerts against prices ──
-  useEffect(() => {
-    if (loading) return;
-    const newNotifs: { id: string; msg: string; color: string }[] = [];
-    setAlerts(prev => prev.map(alert => {
-      if (!alert.active || alert.triggered) return alert;
-      const price = prices[alert.coinId]?.[alert.currency] ?? 0;
-      const hit = alert.condition === "above" ? price >= alert.targetPrice : price <= alert.targetPrice;
-      if (hit) {
-        const coin = COINS.find(c => c.id === alert.coinId);
-        newNotifs.push({
-          id: genId(),
-          msg: `🎯 ${alert.coinSymbol} is ${alert.condition} ${formatPrice(alert.targetPrice, alert.currency)}! Current: ${formatPrice(price, alert.currency)}`,
-          color: alert.condition === "above" ? "#3fb950" : "#f85149" });
-        return { ...alert, triggered: true, triggeredAt: Date.now(), triggeredPrice: price, bellAnimating: true };
-      }
-      return alert;
-    }));
-    if (newNotifs.length > 0) {
-      setNotifications(n => [...newNotifs, ...n].slice(0, 10));
-    }
-  }, [prices, loading]);
-
-  // ── Add alert ──
-  const handleAddAlert = () => {
-    setFormError("");
-    const parsedPrice = parseFloat(formPrice);
-    if (isNaN(parsedPrice) || parsedPrice <= 0) {
-      setFormError("Please enter a valid price greater than 0.");
-      return;
-    }
-    const coin = COINS.find(c => c.id === formCoin)!;
-    const currentPrice = prices[formCoin]?.[formCurrency] ?? 0;
-    if (formCondition === "above" && parsedPrice < currentPrice) {
-      setFormError(`Warning: ${coin.symbol} is already above ${formatPrice(parsedPrice, formCurrency)}. Alert will trigger immediately.`);
-    }
-    if (formCondition === "below" && parsedPrice > currentPrice) {
-      setFormError(`Warning: ${coin.symbol} is already below ${formatPrice(parsedPrice, formCurrency)}. Alert will trigger immediately.`);
-    }
-    const newAlert: Alert = {
-      id: genId(),
-      coinId: formCoin,
-      coinSymbol: coin.symbol,
-      coinName: coin.name,
-      condition: formCondition,
-      targetPrice: parsedPrice,
-      currency: formCurrency,
-      createdAt: Date.now(),
-      triggered: false,
-      active: true
-    };
-    setAlerts(prev => [newAlert, ...prev]);
-    setFormPrice("");
-  };
-
-  const handleDelete = (id: string) => setAlerts(prev => prev.filter(a => a.id !== id));
-  const handleToggle = (id: string) => setAlerts(prev => prev.map(a => a.id === id ? { ...a, active: !a.active, triggered: false } : a));
-  const handleClearTriggered = () => setAlerts(prev => prev.filter(a => !a.triggered));
-  const dismissNotif = (id: string) => setNotifications(n => n.filter(x => x.id !== id));
-
-  const filteredAlerts = alerts.filter(a => {
-    if (activeTab === "active")    return a.active && !a.triggered;
-    if (activeTab === "triggered") return a.triggered;
-    return true;
-  });
-
-  const activeCoin = COINS.find(c => c.id === formCoin)!;
-  const currentFormPrice = prices[formCoin]?.[formCurrency] ?? 0;
+  // Calculate stats
+  const activeAlertsCount = useMemo(() => alerts.filter(a => a.enabled).length, [alerts]);
+  const closeToTrigger = useMemo(
+    () => alerts.filter(a => a.enabled && getDistancePercentage(a.currentPrice, a.targetPrice) < 5).length,
+    [alerts]
+  );
 
   return (
-    <>
-      {/* JSON-LD Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+    <div className="w-full">
+      <Breadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Price Alerts' }]} />
 
-      <div className="min-h-screen" style={{ background: "var(--color-bg, #0d1117)" }}>
-        {/* ── Toast Notifications ── */}
-        <div style={{ position: "fixed", top: 20, right: 20, zIndex: 1000, display: "flex", flexDirection: "column", gap: 8, maxWidth: 360 }}>
-          {notifications.map(n => (
-            <div key={n.id} style={{
-              padding: "12px 16px", borderRadius: 10, background: "rgba(22,27,34,0.98)",
-              border: `1px solid ${n.color}60`, color: "#e6edf3", fontSize: 14, fontWeight: 600,
-              display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12,
-              boxShadow: `0 4px 20px ${n.color}30`, animation: "slideIn 0.3s ease-out" }}>
-              <span>{n.msg}</span>
-              <button onClick={() => dismissNotif(n.id)} style={{ background: "none", border: "none", color: "#8b949e", cursor: "pointer", fontSize: 16, padding: 0, flexShrink: 0 }}>×</button>
-            </div>
-          ))}
+      <div className="px-4 md:px-8 lg:px-12 py-8 max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-10">
+          <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-500 to-purple-500 mb-4">
+            Price Alerts
+          </h1>
+          <p className="text-lg text-gray-600 dark:text-gray-400">
+            Monitor cryptocurrency prices and get notified when they hit your target levels.
+          </p>
         </div>
 
-        <div style={{ maxWidth: 960, margin: "0 auto", padding: "2rem 1rem 4rem" }}>
-          <Breadcrumb items={[
-            { label: "Home", href: "/" },
-            { label: "Tools", href: "/tools" },
-            { label: "Price Alerts" },
-          ]} />
-
-          {/* ── Header ── */}
-          <div style={{ marginTop: "1.5rem", marginBottom: "2rem" }}>
-            <div style={{ display: "inline-block", padding: "3px 12px", background: "#F0B90B20", border: "1px solid #F0B90B40", borderRadius: 20, fontSize: 12, color: "#F0B90B", fontWeight: 700, marginBottom: 12 }}>
-              🔔 Price Alerts
+        {/* Stats Bar */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div className="glass p-6 rounded-2xl border border-white/20 dark:border-white/10">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-gray-600 dark:text-gray-400 text-sm font-medium">Active Alerts</p>
+                <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">{activeAlertsCount}</p>
+              </div>
+              <div className="text-4xl">🔔</div>
             </div>
-            <h1 style={{ fontSize: "clamp(1.75rem, 4vw, 2.5rem)", fontWeight: 900, color: "#e6edf3", marginBottom: "0.5rem" }}>
-              Crypto Price Alerts
-            </h1>
-            <p style={{ fontSize: "1.05rem", color: "#8b949e", maxWidth: 540 }}>
-              Set custom price targets for BTC, ETH, SOL, AVAX, MATIC, DOT, LINK, and UNI. Get notified when prices cross your thresholds — no account required.
-            </p>
-
-            {/* Notification Permission Button */}
-            {notificationPermission !== "granted" && (
-              <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", alignItems: "center", padding: "0.75rem 1rem", background: "rgba(79, 195, 247, 0.1)", border: "1px solid rgba(79, 195, 247, 0.3)", borderRadius: 10 }}>
-                <span style={{ fontSize: "0.9rem", color: "#8b949e" }}>Enable browser notifications for real-time alerts:</span>
-                <button
-                  onClick={requestNotificationPermission}
-                  style={{
-                    padding: "0.4rem 0.8rem",
-                    background: "#4FC3F7",
-                    color: "#0d1117",
-                    border: "none",
-                    borderRadius: 6,
-                    fontWeight: 700,
-                    fontSize: "0.85rem",
-                    cursor: "pointer",
-                    whiteSpace: "nowrap"
-                  }}>
-                  Enable Notifications
-                </button>
-              </div>
-            )}
-            {notificationPermission === "granted" && (
-              <div style={{ marginTop: "1rem", display: "flex", alignItems: "center", gap: "0.5rem", padding: "0.6rem 1rem", background: "rgba(63, 185, 80, 0.1)", border: "1px solid rgba(63, 185, 80, 0.3)", borderRadius: 10 }}>
-                <span style={{ fontSize: "1rem" }}>✅</span>
-                <span style={{ fontSize: "0.9rem", color: "#3fb950" }}>Notifications enabled</span>
-              </div>
-            )}
           </div>
+          <div className="glass p-6 rounded-2xl border border-white/20 dark:border-white/10">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-gray-600 dark:text-gray-400 text-sm font-medium">Close to Trigger</p>
+                <p className="text-3xl font-bold text-green-600 dark:text-green-400">{closeToTrigger}</p>
+              </div>
+              <div className="text-4xl">🎯</div>
+            </div>
+          </div>
+          <div className="glass p-6 rounded-2xl border border-white/20 dark:border-white/10">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-gray-600 dark:text-gray-400 text-sm font-medium">Triggered Today</p>
+                <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">{history.filter(h => {
+                  const today = new Date();
+                  return h.triggeredAt.toDateString() === today.toDateString();
+                }).length}</p>
+              </div>
+              <div className="text-4xl">📊</div>
+            </div>
+          </div>
+        </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) minmax(0,1.6fr)", gap: "1.5rem", alignItems: "start" }}>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Left Column: Alert Creation + Quick Templates */}
+          <div className="lg:col-span-1 space-y-6">
+            {/* Alert Creation Panel */}
+            <div className="glass p-8 rounded-2xl border border-white/20 dark:border-white/10 space-y-6">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Create Alert</h2>
 
-          {/* ── Left: Create Alert + Current Prices ── */}
-          <div>
-            {/* Create Alert */}
-            <div style={{ background: "rgba(22,27,34,0.9)", border: "1px solid rgba(240,185,11,0.25)", borderRadius: 14, padding: "1.5rem", marginBottom: "1.25rem" }}>
-              <h2 style={{ fontSize: 15, fontWeight: 800, color: "#e6edf3", marginBottom: "1.25rem", display: "flex", alignItems: "center", gap: 8 }}>
-                <span>＋</span> Create New Alert
-              </h2>
-
-              <div style={{ marginBottom: 12 }}>
-                <label style={labelStyle}>Cryptocurrency</label>
-                <select value={formCoin} onChange={e => setFormCoin(e.target.value)} style={selStyle}>
-                  {COINS.map(c => <option key={c.id} value={c.id}>{c.symbol} – {c.name}</option>)}
+              {/* Coin Selector */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Select Coin
+                </label>
+                <select
+                  value={selectedCoin.id}
+                  onChange={(e) => {
+                    const coin = TOP_20_COINS.find(c => c.id === e.target.value);
+                    if (coin) setSelectedCoin(coin);
+                  }}
+                  className="w-full px-4 py-2 rounded-lg bg-white/50 dark:bg-white/5 border border-gray-300/50 dark:border-white/10 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                >
+                  {TOP_20_COINS.map(coin => (
+                    <option key={coin.id} value={coin.id}>
+                      {coin.symbol} - {coin.name}
+                    </option>
+                  ))}
                 </select>
               </div>
 
-              <div style={{ marginBottom: 12, padding: "0.6rem 0.8rem", background: "rgba(48,54,61,0.4)", borderRadius: 8, fontSize: 13, color: "#8b949e" }}>
-                Current: <strong style={{ color: "#e6edf3" }}>{formatPrice(currentFormPrice, formCurrency)}</strong>
-                {loading && <span style={{ marginLeft: 8 }}>…</span>}
-              </div>
-
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 12 }}>
-                <div>
-                  <label style={labelStyle}>Condition</label>
-                  <select value={formCondition} onChange={e => setFormCondition(e.target.value as "above" | "below")} style={selStyle}>
-                    <option value="above">↑ Price Above</option>
-                    <option value="below">↓ Price Below</option>
-                  </select>
-                </div>
-                <div>
-                  <label style={labelStyle}>Currency</label>
-                  <select value={formCurrency} onChange={e => setFormCurrency(e.target.value as "usd" | "eur" | "gbp")} style={selStyle}>
-                    <option value="usd">USD ($)</option>
-                    <option value="eur">EUR (€)</option>
-                    <option value="gbp">GBP (£)</option>
-                  </select>
+              {/* Current Price Display */}
+              <div className="glass-subtle p-4 rounded-xl border border-white/20 dark:border-white/10">
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Current Price</p>
+                <div className="flex items-baseline justify-between">
+                  <p className="text-3xl font-bold text-gray-900 dark:text-white">
+                    ${selectedCoin.currentPrice.toFixed(2)}
+                  </p>
+                  <span className={`text-sm font-semibold ${selectedCoin.change24h >= 0 ? 'text-green-500' : 'text-red-500'}`}>
+                    {selectedCoin.change24h >= 0 ? '+' : ''}{selectedCoin.change24h.toFixed(1)}%
+                  </span>
                 </div>
               </div>
 
-              <div style={{ marginBottom: 12 }}>
-                <label style={labelStyle}>Target Price ({formCurrency.toUpperCase()})</label>
+              {/* Target Price */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Target Price
+                </label>
                 <input
                   type="number"
-                  value={formPrice}
-                  onChange={e => setFormPrice(e.target.value)}
-                  placeholder={`e.g. ${formatPrice(currentFormPrice * 1.1, formCurrency).slice(1)}`}
-                  min="0"
-                  step="any"
-                  style={inpStyle}
-                  onKeyDown={e => e.key === "Enter" && handleAddAlert()}
+                  value={targetPrice}
+                  onChange={(e) => setTargetPrice(e.target.value)}
+                  placeholder={`e.g., ${(selectedCoin.currentPrice * 1.1).toFixed(2)}`}
+                  className="w-full px-4 py-2 rounded-lg bg-white/50 dark:bg-white/5 border border-gray-300/50 dark:border-white/10 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
               </div>
 
-              {/* Quick target buttons */}
-              <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 14 }}>
-                {[0.9, 0.95, 1.05, 1.1, 1.2, 1.5, 2].map(mult => {
-                  const price = currentFormPrice * mult;
-                  const label = mult < 1 ? `-${Math.round((1 - mult) * 100)}%` : `+${Math.round((mult - 1) * 100)}%`;
-                  return (
-                    <button key={mult} onClick={() => setFormPrice(price.toFixed(price >= 1 ? 2 : 6))}
-                      style={{ padding: "3px 9px", borderRadius: 6, fontSize: 11, fontWeight: 700, cursor: "pointer", border: "1px solid rgba(240,185,11,0.3)", background: "rgba(240,185,11,0.08)", color: mult < 1 ? "#f85149" : "#3fb950" }}>
-                      {label}
-                    </button>
-                  );
-                })}
+              {/* Direction */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Alert When Price
+                </label>
+                <div className="flex gap-3">
+                  <button
+                    onClick={() => setDirection('above')}
+                    className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all ${
+                      direction === 'above'
+                        ? 'bg-indigo-600 text-white shadow-lg'
+                        : 'bg-white/30 dark:bg-white/5 text-gray-900 dark:text-gray-300 border border-white/20'
+                    }`}
+                  >
+                    ⬆ Above
+                  </button>
+                  <button
+                    onClick={() => setDirection('below')}
+                    className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all ${
+                      direction === 'below'
+                        ? 'bg-indigo-600 text-white shadow-lg'
+                        : 'bg-white/30 dark:bg-white/5 text-gray-900 dark:text-gray-300 border border-white/20'
+                    }`}
+                  >
+                    ⬇ Below
+                  </button>
+                </div>
               </div>
 
-              {formError && (
-                <div style={{ padding: "0.5rem 0.75rem", background: "rgba(248,81,73,0.1)", border: "1px solid rgba(248,81,73,0.3)", borderRadius: 8, fontSize: 12, color: "#f85149", marginBottom: 12 }}>
-                  {formError}
+              {/* Alert Type */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Alert Type
+                </label>
+                <div className="flex gap-3">
+                  <button
+                    onClick={() => setAlertType('one-time')}
+                    className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all text-sm ${
+                      alertType === 'one-time'
+                        ? 'bg-indigo-600 text-white shadow-lg'
+                        : 'bg-white/30 dark:bg-white/5 text-gray-900 dark:text-gray-300 border border-white/20'
+                    }`}
+                  >
+                    Once
+                  </button>
+                  <button
+                    onClick={() => setAlertType('recurring')}
+                    className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all text-sm ${
+                      alertType === 'recurring'
+                        ? 'bg-indigo-600 text-white shadow-lg'
+                        : 'bg-white/30 dark:bg-white/5 text-gray-900 dark:text-gray-300 border border-white/20'
+                    }`}
+                  >
+                    Recurring
+                  </button>
                 </div>
-              )}
+              </div>
 
-              <button onClick={handleAddAlert} style={{
-                width: "100%", padding: "0.75rem", borderRadius: 10, border: "none",
-                background: "linear-gradient(135deg, #F0B90B, #f0883e)", color: "#0d1117",
-                fontWeight: 800, fontSize: 14, cursor: "pointer", letterSpacing: "0.02em" }}>
-                🔔 Set Alert
+              {/* Note */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Note (optional)
+                </label>
+                <input
+                  type="text"
+                  value={note}
+                  onChange={(e) => setNote(e.target.value)}
+                  placeholder="e.g., 'Buy here', 'Resistance level'"
+                  className="w-full px-4 py-2 rounded-lg bg-white/50 dark:bg-white/5 border border-gray-300/50 dark:border-white/10 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+
+              {/* Create Button */}
+              <button
+                onClick={handleCreateAlert}
+                className="w-full affiliate-cta py-3 rounded-lg font-semibold text-white transition-all"
+              >
+                Create Alert
               </button>
             </div>
 
-            {/* Live Price Board */}
-            <div style={{ background: "rgba(22,27,34,0.9)", border: "1px solid rgba(48,54,61,0.6)", borderRadius: 14, overflow: "hidden" }}>
-              <div style={{ padding: "0.75rem 1rem", borderBottom: "1px solid rgba(48,54,61,0.6)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ fontSize: 13, fontWeight: 700, color: "#e6edf3" }}>📊 Live Prices</span>
-                <span style={{ fontSize: 11, color: "#8b949e" }}>{priceError ? "Cached" : `Updated ${lastUpdated}`}</span>
-              </div>
-              <div style={{ maxHeight: 320, overflowY: "auto" }}>
-                {COINS.slice(0, 8).map(coin => {
-                  const price = prices[coin.id]?.usd ?? 0;
-                  const change = prices[coin.id]?.change24h ?? 0;
-                  return (
-                    <div key={coin.id} onClick={() => setFormCoin(coin.id)} style={{
-                      padding: "0.6rem 1rem", display: "flex", justifyContent: "space-between", alignItems: "center",
-                      borderBottom: "1px solid rgba(48,54,61,0.3)", cursor: "pointer",
-                      background: formCoin === coin.id ? `${coin.color}10` : "transparent" }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                        <div style={{ width: 28, height: 28, borderRadius: 8, background: `${coin.color}20`, border: `1px solid ${coin.color}40`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 700, color: coin.color }}>
-                          {coin.symbol.slice(0, 2)}
-                        </div>
-                        <div>
-                          <div style={{ fontSize: 13, fontWeight: 700, color: "#e6edf3" }}>{coin.symbol}</div>
-                          <div style={{ fontSize: 10, color: "#8b949e" }}>{coin.name}</div>
-                        </div>
-                      </div>
-                      <div style={{ textAlign: "right" }}>
-                        <div style={{ fontSize: 13, fontWeight: 700, color: "#e6edf3" }}>{formatPrice(price, "usd")}</div>
-                        <div style={{ fontSize: 10, color: change >= 0 ? "#3fb950" : "#f85149", fontWeight: 600 }}>
-                          {change >= 0 ? "▲" : "▼"} {Math.abs(change).toFixed(2)}%
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+            {/* Quick Alert Templates */}
+            <div className="glass p-8 rounded-2xl border border-white/20 dark:border-white/10 space-y-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Quick Templates</h3>
+
+              <button
+                onClick={() => handleQuickAlert(TOP_20_COINS[0], 100000, 'above')}
+                className="w-full glass-hover p-4 rounded-lg text-left border border-white/20 dark:border-white/10 transition-all"
+              >
+                <p className="font-semibold text-gray-900 dark:text-white">BTC at $100K</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Bitcoin milestone</p>
+              </button>
+
+              <button
+                onClick={() => handleQuickAlert(TOP_20_COINS[1], 3000, 'below')}
+                className="w-full glass-hover p-4 rounded-lg text-left border border-white/20 dark:border-white/10 transition-all"
+              >
+                <p className="font-semibold text-gray-900 dark:text-white">ETH below $3K</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Dip buying opportunity</p>
+              </button>
+
+              <button
+                onClick={() => handleQuickAlert(TOP_20_COINS[2], 250, 'above')}
+                className="w-full glass-hover p-4 rounded-lg text-left border border-white/20 dark:border-white/10 transition-all"
+              >
+                <p className="font-semibold text-gray-900 dark:text-white">SOL pumps 25%</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">From current $198</p>
+              </button>
             </div>
           </div>
 
-          {/* ── Right: Alerts List ── */}
-          <div>
-            {/* Stats */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 10, marginBottom: "1.25rem" }}>
-              {[
-                { label: "Active", value: alerts.filter(a => a.active && !a.triggered).length, color: "#3fb950" },
-                { label: "Triggered", value: alerts.filter(a => a.triggered).length, color: "#F0B90B" },
-                { label: "Total", value: alerts.length, color: "#6366f1" },
-              ].map(stat => (
-                <div key={stat.label} style={{ background: "rgba(22,27,34,0.9)", border: `1px solid ${stat.color}30`, borderRadius: 12, padding: "0.85rem", textAlign: "center" }}>
-                  <div style={{ fontSize: 24, fontWeight: 900, color: stat.color }}>{stat.value}</div>
-                  <div style={{ fontSize: 11, color: "#8b949e", fontWeight: 600 }}>{stat.label}</div>
-                </div>
-              ))}
-            </div>
-
-            {/* Tabs */}
-            <div style={{ display: "flex", gap: 4, marginBottom: "1rem", background: "rgba(22,27,34,0.9)", border: "1px solid rgba(48,54,61,0.6)", borderRadius: 10, padding: 4 }}>
-              {(["active", "triggered", "all"] as const).map(tab => (
-                <button key={tab} onClick={() => setActiveTab(tab)} style={{
-                  flex: 1, padding: "0.5rem", borderRadius: 7, border: "none", cursor: "pointer", fontSize: 13, fontWeight: 700,
-                  background: activeTab === tab ? "rgba(99,102,241,0.2)" : "transparent",
-                  color: activeTab === tab ? "#818cf8" : "#8b949e",
-                  textTransform: "capitalize" }}>
-                  {tab}
-                </button>
-              ))}
-            </div>
-
-            {/* Alerts */}
-            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              {filteredAlerts.length === 0 ? (
-                <div style={{ padding: "3rem", textAlign: "center", background: "rgba(22,27,34,0.7)", border: "1px solid rgba(48,54,61,0.4)", borderRadius: 14 }}>
-                  <div style={{ fontSize: 40, marginBottom: 12 }}>🔔</div>
-                  <p style={{ color: "#8b949e", fontSize: 14 }}>
-                    {activeTab === "active" ? "No active alerts. Create one on the left!" :
-                     activeTab === "triggered" ? "No triggered alerts yet." : "No alerts created yet."}
-                  </p>
-                </div>
-              ) : filteredAlerts.map(alert => {
-                const coin = COINS.find(c => c.id === alert.coinId);
-                const currentPrice = prices[alert.coinId]?.[alert.currency] ?? 0;
-                const priceDiff = alert.condition === "above"
-                  ? ((currentPrice / alert.targetPrice) - 1) * 100
-                  : ((alert.targetPrice / currentPrice) - 1) * 100;
-                const progress = Math.min(Math.abs(priceDiff), 100);
-                return (
-                  <div key={alert.id} style={{
-                    background: alert.triggered ? "rgba(63,185,80,0.06)" : "rgba(22,27,34,0.9)",
-                    border: `1px solid ${alert.triggered ? "rgba(63,185,80,0.3)" : !alert.active ? "rgba(48,54,61,0.4)" : "rgba(48,54,61,0.6)"}`,
-                    borderRadius: 12, padding: "1rem 1.25rem", opacity: !alert.active ? 0.6 : 1 }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                        <div style={{ width: 36, height: 36, borderRadius: 10, background: `${coin?.color ?? "#6366f1"}20`, border: `1px solid ${coin?.color ?? "#6366f1"}40`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 800, color: coin?.color ?? "#6366f1" }}>
-                          {alert.coinSymbol.slice(0, 2)}
-                        </div>
-                        <div>
-                          <div style={{ fontSize: 14, fontWeight: 800, color: "#e6edf3" }}>{alert.coinSymbol}</div>
-                          <div style={{ fontSize: 11, color: "#8b949e" }}>{alert.coinName}</div>
-                        </div>
-                      </div>
-                      <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
-                        {alert.triggered && alert.bellAnimating && (
-                          <span
-                            style={{
-                              fontSize: "1.2rem",
-                              animation: "bellRing 0.5s ease-in-out 2",
-                              transformOrigin: "center top",
-                              display: "inline-block"
-                            }}>
-                            🔔
-                          </span>
-                        )}
-                        {!alert.triggered && (
-                          <button onClick={() => handleToggle(alert.id)} title={alert.active ? "Pause" : "Resume"} style={{ ...iconBtnStyle, color: alert.active ? "#F0B90B" : "#3fb950" }}>
-                            {alert.active ? "⏸" : "▶"}
-                          </button>
-                        )}
-                        {alert.triggered && (
-                          <button onClick={() => handleToggle(alert.id)} title="Reset & reactivate" style={{ ...iconBtnStyle, color: "#818cf8" }}>↺</button>
-                        )}
-                        <button onClick={() => handleDelete(alert.id)} title="Delete" style={{ ...iconBtnStyle, color: "#f85149" }}>🗑</button>
-                      </div>
-                    </div>
-
-                    <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}>
-                      <div>
-                        <span style={{ fontSize: 11, color: "#8b949e", textTransform: "uppercase", letterSpacing: "0.05em" }}>Target </span>
-                        <span style={{ fontSize: 15, fontWeight: 800, color: alert.condition === "above" ? "#3fb950" : "#f85149" }}>
-                          {alert.condition === "above" ? "▲" : "▼"} {formatPrice(alert.targetPrice, alert.currency)}
-                        </span>
-                      </div>
-                      <div style={{ textAlign: "right" }}>
-                        <div style={{ fontSize: 11, color: "#8b949e" }}>Current</div>
-                        <div style={{ fontSize: 13, fontWeight: 600, color: "#e6edf3" }}>{formatPrice(currentPrice, alert.currency)}</div>
-                      </div>
-                    </div>
-
-                    {/* Progress bar */}
-                    {!alert.triggered && alert.active && (
-                      <div style={{ marginBottom: 6 }}>
-                        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4, fontSize: 11, color: "#8b949e" }}>
-                          <span>{priceDiff > 0 ? `${priceDiff.toFixed(1)}% to target` : `${Math.abs(priceDiff).toFixed(1)}% past target`}</span>
-                        </div>
-                        <div style={{ height: 4, borderRadius: 4, background: "rgba(48,54,61,0.6)", overflow: "hidden" }}>
-                          <div style={{ height: "100%", width: `${progress}%`, background: alert.condition === "above" ? "#3fb950" : "#f85149", borderRadius: 4, transition: "width 0.5s ease" }} />
-                        </div>
-                      </div>
-                    )}
-
-                    {alert.triggered && (
-                      <div style={{ padding: "0.4rem 0.75rem", background: "rgba(63,185,80,0.1)", border: "1px solid rgba(63,185,80,0.3)", borderRadius: 8, fontSize: 12, color: "#3fb950", fontWeight: 600 }}>
-                        ✅ Triggered at {formatPrice(alert.triggeredPrice ?? alert.targetPrice, alert.currency)}
-                        {alert.triggeredAt ? ` · ${new Date(alert.triggeredAt).toLocaleTimeString()}` : ""}
-                      </div>
-                    )}
-
-                    {!alert.active && !alert.triggered && (
-                      <div style={{ fontSize: 11, color: "#8b949e", fontStyle: "italic" }}>⏸ Paused</div>
-                    )}
+          {/* Right Column: Active Alerts + History */}
+          <div className="lg:col-span-2 space-y-8">
+            {/* Active Alerts */}
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Active Alerts</h2>
+              <div className="space-y-4">
+                {alerts.length === 0 ? (
+                  <div className="glass p-12 rounded-2xl border border-white/20 dark:border-white/10 text-center">
+                    <p className="text-gray-600 dark:text-gray-400">No alerts yet. Create one to get started!</p>
                   </div>
-                );
-              })}
+                ) : (
+                  alerts.map(alert => {
+                    const distance = getDistancePercentage(alert.currentPrice, alert.targetPrice);
+                    const isAbove = alert.direction === 'above';
+                    const triggered = isAbove
+                      ? alert.currentPrice >= alert.targetPrice
+                      : alert.currentPrice <= alert.targetPrice;
 
-              {activeTab === "triggered" && alerts.filter(a => a.triggered).length > 0 && (
-                <button onClick={handleClearTriggered} style={{ padding: "0.6rem", borderRadius: 8, border: "1px solid rgba(248,81,73,0.3)", background: "rgba(248,81,73,0.06)", color: "#f85149", fontSize: 13, fontWeight: 600, cursor: "pointer" }}>
-                  🗑 Clear All Triggered
-                </button>
-              )}
+                    return (
+                      <div
+                        key={alert.id}
+                        className={`glass p-5 rounded-xl border transition-all ${
+                          !alert.enabled
+                            ? 'opacity-60 bg-gray-500/5'
+                            : getBgAlertColor(alert.currentPrice, alert.targetPrice)
+                        } border-white/20 dark:border-white/10`}
+                      >
+                        <div className="flex items-start justify-between gap-4">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="text-2xl">{TOP_20_COINS.find(c => c.id === alert.coinId)?.icon || '💰'}</span>
+                              <div>
+                                <h4 className="font-bold text-gray-900 dark:text-white">
+                                  {alert.coinSymbol} - {alert.coinName}
+                                </h4>
+                                <p className="text-xs text-gray-500 dark:text-gray-500">
+                                  {alert.type === 'one-time' ? '⏱ One-time' : '🔄 Recurring'} • Created {Math.floor((Date.now() - alert.createdAt.getTime()) / (1000 * 60 * 60 * 24))}d ago
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="mt-3 grid grid-cols-3 gap-2 text-sm">
+                              <div>
+                                <p className="text-gray-600 dark:text-gray-400 text-xs">Current</p>
+                                <p className="font-semibold text-gray-900 dark:text-white">${alert.currentPrice.toFixed(2)}</p>
+                              </div>
+                              <div className="text-center">
+                                <p className="text-gray-600 dark:text-gray-400 text-xs">Direction</p>
+                                <p className={`font-bold text-lg ${isAbove ? 'text-green-500' : 'text-red-500'}`}>
+                                  {isAbove ? '⬆' : '⬇'}
+                                </p>
+                              </div>
+                              <div>
+                                <p className="text-gray-600 dark:text-gray-400 text-xs">Target</p>
+                                <p className="font-semibold text-gray-900 dark:text-white">${alert.targetPrice.toFixed(2)}</p>
+                              </div>
+                            </div>
+
+                            {/* Progress bar */}
+                            <div className="mt-3">
+                              <div className="flex justify-between items-center mb-1">
+                                <p className={`text-xs font-medium ${getAlertColor(alert.currentPrice, alert.targetPrice)}`}>
+                                  {distance.toFixed(1)}% away {triggered && '✓ TRIGGERED'}
+                                </p>
+                              </div>
+                              <div className="w-full h-2 bg-gray-300/30 rounded-full overflow-hidden">
+                                <div
+                                  className={`h-full transition-all ${
+                                    distance < 5 ? 'bg-green-500' : distance < 15 ? 'bg-yellow-500' : 'bg-blue-500'
+                                  }`}
+                                  style={{ width: `${Math.min(100 - distance, 100)}%` }}
+                                />
+                              </div>
+                            </div>
+
+                            {alert.note && (
+                              <p className="mt-2 text-xs text-indigo-600 dark:text-indigo-400 bg-indigo-50/50 dark:bg-indigo-500/10 px-2 py-1 rounded">
+                                📝 {alert.note}
+                              </p>
+                            )}
+                          </div>
+
+                          <div className="flex flex-col gap-2">
+                            <button
+                              onClick={() => handleToggleAlert(alert.id)}
+                              className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                                alert.enabled
+                                  ? 'bg-green-500/20 text-green-700 dark:text-green-400 border border-green-500/30'
+                                  : 'bg-gray-500/20 text-gray-700 dark:text-gray-400 border border-gray-500/30'
+                              }`}
+                            >
+                              {alert.enabled ? '✓ On' : '✕ Off'}
+                            </button>
+                            <button
+                              onClick={() => handleDeleteAlert(alert.id)}
+                              className="px-3 py-2 rounded-lg text-sm font-medium bg-red-500/20 text-red-700 dark:text-red-400 border border-red-500/30 hover:bg-red-500/30 transition-all"
+                            >
+                              Delete
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })
+                )}
+              </div>
             </div>
-          </div>
-        </div>
 
-          {/* ── Info Section ── */}
-          <div style={{ marginTop: "3rem" }}>
-            <h2 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#e6edf3", marginBottom: "1.25rem" }}>About Crypto Price Alerts</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14 }}>
-              {[
-                { icon: "🔒", title: "100% Private", body: "All alerts stored in React state—no localStorage, no server sync. Your data stays in your browser." },
-                { icon: "🔄", title: "60s Refresh", body: "Prices fetched from CoinGecko API every 60 seconds for real-time tracking and instant triggers." },
-                { icon: "📱", title: "No Account Needed", body: "Create and manage alerts instantly. No signup, no login, no email required." },
-                { icon: "🔔", title: "Browser Notifications", body: "Enable notifications to get alerted even when you're not on the page. Full browser support." },
-              ].map(box => (
-                <div key={box.title} style={{ padding: "1rem 1.2rem", background: "rgba(22,27,34,0.8)", border: "1px solid rgba(48,54,61,0.5)", borderRadius: 12 }}>
-                  <div style={{ fontSize: 24, marginBottom: 8 }}>{box.icon}</div>
-                  <h3 style={{ fontSize: 14, fontWeight: 700, color: "#e6edf3", marginBottom: 6 }}>{box.title}</h3>
-                  <p style={{ fontSize: 12, color: "#8b949e", lineHeight: 1.6, margin: 0 }}>{box.body}</p>
+            {/* Alert History */}
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Triggered Alerts</h2>
+              <div className="glass rounded-2xl border border-white/20 dark:border-white/10 overflow-hidden">
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead className="glass-table-header border-b border-white/20 dark:border-white/10">
+                      <tr>
+                        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300">Coin</th>
+                        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300">Target Price</th>
+                        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300">Triggered At</th>
+                        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300">Date</th>
+                        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 dark:text-gray-300">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-white/20 dark:divide-white/10">
+                      {history.length === 0 ? (
+                        <tr>
+                          <td colSpan={5} className="px-6 py-8 text-center text-gray-600 dark:text-gray-400">
+                            No triggered alerts yet
+                          </td>
+                        </tr>
+                      ) : (
+                        history.map(record => (
+                          <tr key={record.id} className="glass-table-row hover:bg-white/20 dark:hover:bg-white/5">
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <span className="font-semibold text-gray-900 dark:text-white">{record.coinSymbol}</span>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <span className="text-gray-700 dark:text-gray-300">${record.targetPrice.toFixed(2)}</span>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <span className="text-gray-700 dark:text-gray-300">${record.triggeredPrice.toFixed(2)}</span>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">
+                              {record.triggeredAt.toLocaleDateString('en-US', {
+                                month: 'short',
+                                day: 'numeric',
+                                hour: '2-digit',
+                                minute: '2-digit',
+                              })}
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <span
+                                className={`inline-flex px-3 py-1 rounded-full text-xs font-medium ${
+                                  record.actedOn
+                                    ? 'bg-green-500/20 text-green-700 dark:text-green-400'
+                                    : 'bg-yellow-500/20 text-yellow-700 dark:text-yellow-400'
+                                }`}
+                              >
+                                {record.actedOn ? '✓ Acted' : '⏱ Pending'}
+                              </span>
+                            </td>
+                          </tr>
+                        ))
+                      )}
+                    </tbody>
+                  </table>
                 </div>
-              ))}
+              </div>
             </div>
-          </div>
-
-          {/* ── FAQ Section ── */}
-          <div style={{ marginTop: "3rem", marginBottom: "2rem" }}>
-            <h2 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#e6edf3", marginBottom: "1.25rem" }}>Frequently Asked Questions</h2>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-              {[
-                {
-                  q: "Are my alerts saved permanently?",
-                  a: "Alerts are stored in React state during your current session. They will reset if you refresh the page. For persistent alerts, consider using a crypto exchange or portfolio tracker with built-in alert features."
-                },
-                {
-                  q: "How often are prices updated?",
-                  a: "Prices are fetched from CoinGecko's free API every 60 seconds. Alerts are checked whenever prices update, so triggers happen within ~1 minute of a price crossing your target."
-                },
-                {
-                  q: "What cryptocurrencies can I set alerts for?",
-                  a: "You can set alerts for Bitcoin (BTC), Ethereum (ETH), Solana (SOL), Avalanche (AVAX), Polygon (MATIC), Polkadot (DOT), Chainlink (LINK), and Uniswap (UNI) in USD, EUR, or GBP."
-                },
-                {
-                  q: "Do I need to keep the page open?",
-                  a: "Yes, the page must remain open for alerts to trigger. If you close the tab or browser, price monitoring stops. However, enabling browser notifications will alert you even if the browser window is not in focus."
-                },
-                {
-                  q: "Can I set multiple alerts for the same coin?",
-                  a: "Absolutely! You can create as many alerts as you want for the same coin at different price levels. For example, set both a $50k and $60k alert for Bitcoin."
-                },
-                {
-                  q: "What happens when an alert triggers?",
-                  a: "You'll see a toast notification appear on screen with the coin symbol and current price. If notifications are enabled, your browser will also show a native notification. The alert will be marked as 'Triggered' in the list."
-                },
-                {
-                  q: "Can I reuse triggered alerts?",
-                  a: "Yes! Click the reset button (↺) next to any triggered alert to reactivate it. It will start monitoring again from your original target price."
-                },
-                {
-                  q: "Why are some prices showing as 'Cached'?",
-                  a: "If the CoinGecko API is temporarily unavailable, prices are cached from your last successful fetch. The page will continue to show the last known prices until the connection is restored."
-                },
-              ].map((faq, idx) => (
-                <details
-                  key={idx}
-                  style={{
-                    background: "rgba(22,27,34,0.8)",
-                    border: "1px solid rgba(48,54,61,0.6)",
-                    borderRadius: 10,
-                    padding: "1rem 1.25rem",
-                    cursor: "pointer"
-                  }}>
-                  <summary style={{ color: "#e6edf3", fontWeight: 700, fontSize: "0.95rem", userSelect: "none" }}>
-                    {faq.q}
-                  </summary>
-                  <p style={{ color: "#8b949e", fontSize: "0.875rem", margin: "0.75rem 0 0 0", lineHeight: "1.6" }}>
-                    {faq.a}
-                  </p>
-                </details>
-              ))}
-            </div>
-          </div>
-
-          {/* Price Simulator for Testing (Optional) */}
-          <div style={{ marginTop: "2rem", padding: "1rem", background: "rgba(22,27,34,0.5)", border: "1px solid rgba(48,54,61,0.4)", borderRadius: 10 }}>
-            <label style={{ fontSize: "0.85rem", fontWeight: 700, color: "#8b949e", textTransform: "uppercase", letterSpacing: "0.05em" }}>
-              🧪 Price Simulator (for testing):
-            </label>
-            <div style={{ marginTop: "0.5rem", display: "flex", gap: "0.5rem", alignItems: "center", flexWrap: "wrap" }}>
-              {[0.8, 0.9, 1, 1.1, 1.2].map(mult => (
-                <button
-                  key={mult}
-                  onClick={() => setSimPriceMultiplier(mult)}
-                  style={{
-                    padding: "0.4rem 0.8rem",
-                    borderRadius: 6,
-                    fontSize: "0.8rem",
-                    fontWeight: 700,
-                    cursor: "pointer",
-                    border: simPriceMultiplier === mult ? "1px solid #6366f1" : "1px solid rgba(48,54,61,0.5)",
-                    background: simPriceMultiplier === mult ? "rgba(99,102,241,0.2)" : "transparent",
-                    color: simPriceMultiplier === mult ? "#818cf8" : "#8b949e"
-                  }}>
-                  {mult === 1 ? "Reset" : `${mult < 1 ? "-" : "+"}${Math.abs(Math.round((mult - 1) * 100))}%`}
-                </button>
-              ))}
-            </div>
-            <p style={{ fontSize: "0.75rem", color: "#6e7681", margin: "0.5rem 0 0 0" }}>
-              Click buttons to simulate price changes. This helps test if your alerts trigger correctly.
-            </p>
           </div>
         </div>
 
-        <style>{`
-          select option { background: #0d1117; color: #e6edf3; }
-          details summary::marker { color: #8b949e; }
-          details[open] summary::marker { color: #6366f1; }
-
-          @keyframes slideIn {
-            from {
-              opacity: 0;
-              transform: translateX(100px);
-            }
-            to {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
-
-          @keyframes bellRing {
-            0%, 100% { transform: rotate(0deg); }
-            10% { transform: rotate(-10deg); }
-            20% { transform: rotate(10deg); }
-            30% { transform: rotate(-10deg); }
-            40% { transform: rotate(10deg); }
-            50% { transform: rotate(0deg); }
-          }
-
-          @media (max-width: 768px) {
-            div[style*="gridTemplateColumns: \"minmax(0,1fr)"] {
-              grid-template-columns: 1fr !important;
-            }
-          }
-        `}</style>
+        {/* Info Section */}
+        <div className="mt-12 glass p-8 rounded-2xl border border-white/20 dark:border-white/10">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">How Price Alerts Work</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-700 dark:text-gray-300">
+            <div>
+              <p className="font-semibold text-indigo-600 dark:text-indigo-400 mb-2">📊 Real-time Monitoring</p>
+              <p>Your alerts are monitored continuously against real-time market data from top exchanges.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-indigo-600 dark:text-indigo-400 mb-2">🔔 Instant Notifications</p>
+              <p>Get notified via email or push notification the moment your target price is reached.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-indigo-600 dark:text-indigo-400 mb-2">🔄 Smart Recurring</p>
+              <p>Recurring alerts continue to notify you every time the price level is hit, ideal for DCA strategies.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
-// ─── Styles ───────────────────────────────────────────────────────────────────
-const labelStyle: React.CSSProperties = { display: "block", fontSize: 11, fontWeight: 700, color: "#8b949e", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 6 };
-const selStyle: React.CSSProperties = { width: "100%", padding: "0.6rem 0.75rem", background: "rgba(30,30,46,0.8)", border: "1px solid rgba(48,54,61,0.7)", borderRadius: 8, color: "#e6edf3", fontSize: 13, fontFamily: "inherit", cursor: "pointer" };
-const inpStyle: React.CSSProperties = { width: "100%", padding: "0.65rem 0.75rem", boxSizing: "border-box", background: "rgba(30,30,46,0.8)", border: "1px solid rgba(48,54,61,0.7)", borderRadius: 8, color: "#e6edf3", fontSize: 14, fontFamily: "inherit" };
-const iconBtnStyle: React.CSSProperties = { padding: "4px 8px", borderRadius: 6, border: "1px solid rgba(48,54,61,0.5)", background: "rgba(48,54,61,0.3)", cursor: "pointer", fontSize: 14 };
+// ── Metadata Export ────────────────────────────────────────────────────────
+export const metadata = {
+  title: 'Crypto Price Alerts Tool',
+  description: 'Set up real-time price alerts for cryptocurrency. Monitor Bitcoin, Ethereum, Solana, and 17 other top coins. Get notified when prices hit your target levels.',
+  openGraph: {
+    title: 'Crypto Price Alerts Tool',
+    description: 'Monitor crypto prices with instant alerts. Set targets for BTC, ETH, SOL and more.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Crypto Price Alerts Tool',
+    description: 'Set up real-time crypto price alerts and monitoring.',
+  },
+};

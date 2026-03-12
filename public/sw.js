@@ -1,6 +1,7 @@
 const CACHE_VERSION = 'degen0x-v1';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const DYNAMIC_CACHE = `${CACHE_VERSION}-dynamic`;
+const API_CACHE = `${CACHE_VERSION}-api`;
 const OFFLINE_PAGE = '/offline';
 
 const STATIC_ASSETS = [
@@ -8,6 +9,13 @@ const STATIC_ASSETS = [
   '/offline',
   '/manifest.json',
 ];
+
+// Cache time limits (in milliseconds)
+const CACHE_EXPIRY = {
+  API: 30 * 1000, // 30 seconds for crypto prices
+  DYNAMIC: 24 * 60 * 60 * 1000, // 24 hours for dynamic content
+  STATIC: 7 * 24 * 60 * 60 * 1000, // 7 days for static assets
+};
 
 // Install event - cache static assets
 self.addEventListener('install', (event) => {
@@ -47,9 +55,9 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Network-first strategy for API calls
+  // Network-first strategy for API calls with short cache (30 seconds for crypto prices)
   if (url.pathname.includes('/api/')) {
-    event.respondWith(networkFirst(request));
+    event.respondWith(networkFirstWithExpiry(request, CACHE_EXPIRY.API));
     return;
   }
 
@@ -88,6 +96,43 @@ async function cacheFirst(request) {
   }
 }
 
+// Network-first strategy with cache expiry
+async function networkFirstWithExpiry(request, expiryMs) {
+  const cacheKey = request.url;
+
+  try {
+    const response = await fetch(request);
+    if (response.ok) {
+      const cache = await caches.open(API_CACHE);
+      // Store with timestamp for expiry checking
+      const responseWithTimestamp = response.clone();
+      const headers = new Headers(responseWithTimestamp.headers);
+      headers.append('X-Cache-Time', new Date().getTime().toString());
+      const newResponse = new Response(responseWithTimestamp.body, {
+        status: responseWithTimestamp.status,
+        statusText: responseWithTimestamp.statusText,
+        headers: headers,
+      });
+      cache.put(cacheKey, newResponse);
+    }
+    return response;
+  } catch (error) {
+    const cached = await caches.match(request);
+    if (cached) {
+      const cacheTime = parseInt(cached.headers.get('X-Cache-Time') || '0');
+      const now = new Date().getTime();
+      if (now - cacheTime < expiryMs) {
+        return cached;
+      }
+    }
+    // Return offline page for document requests
+    if (request.destination === 'document') {
+      return caches.match(OFFLINE_PAGE);
+    }
+    return new Response('Network error - offline', { status: 503 });
+  }
+}
+
 // Network-first strategy
 async function networkFirst(request) {
   try {
@@ -107,5 +152,33 @@ async function networkFirst(request) {
       return caches.match(OFFLINE_PAGE);
     }
     return new Response('Network error - offline', { status: 503 });
+  }
+}
+
+// Background sync event listener
+self.addEventListener('sync', (event) => {
+  if (event.tag === 'sync-watchlist') {
+    event.waitUntil(syncWatchlist());
+  }
+});
+
+// Sync watchlist updates when connection is restored
+async function syncWatchlist() {
+  try {
+    const response = await fetch('/api/watchlist/sync');
+    if (response.ok) {
+      const data = await response.json();
+      // Broadcast sync success to all clients
+      self.clients.matchAll().then((clients) => {
+        clients.forEach((client) => {
+          client.postMessage({
+            type: 'WATCHLIST_SYNCED',
+            data: data,
+          });
+        });
+      });
+    }
+  } catch (error) {
+    console.error('Watchlist sync failed:', error);
   }
 }

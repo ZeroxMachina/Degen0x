@@ -48,475 +48,406 @@
 
     .main { padding: 20px 24px; }
 
-    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 24px; }
-    .stat-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 16px;
-      text-align: center;
-    }
+    /* Stats row */
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
+    .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+    .stat-label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
     .stat-value { font-size: 28px; font-weight: 800; }
-    .stat-label { font-size: 11px; color: var(--text2); text-transform: uppercase; margin-top: 4px; letter-spacing: 0.05em; }
-    .stat-delta { font-size: 11px; margin-top: 2px; }
+    .stat-sub { font-size: 12px; color: var(--text2); margin-top: 2px; }
 
-    .timeline { margin-bottom: 28px; }
-    .timeline-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-    .timeline-title { font-size: 15px; font-weight: 700; }
-    .timeline-bar-container { display: flex; gap: 4px; height: 32px; border-radius: 8px; overflow: hidden; }
-    .timeline-segment {
-      display: flex; align-items: center; justify-content: center;
-      font-size: 10px; font-weight: 700; color: #fff; padding: 0 8px;
-      white-space: nowrap; overflow: hidden;
-    }
-    .timeline-legend { display: flex; gap: 16px; margin-top: 8px; flex-wrap: wrap; }
-    .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text2); }
-    .legend-dot { width: 8px; height: 8px; border-radius: 3px; }
+    /* Kanban board */
+    .kanban { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 20px; }
+    @media (max-width: 900px) { .kanban { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .kanban { grid-template-columns: 1fr; } }
 
-    .board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
-    .column {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      min-height: 300px;
-    }
-    .col-header {
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: space-between;
-      border-radius: 12px 12px 0 0;
-    }
-    .col-title { font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
-    .col-count { font-size: 11px; background: var(--surface2); padding: 2px 8px; border-radius: 10px; color: var(--text2); }
-    .col-body { padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+    .column { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px; min-height: 300px; }
+    .col-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .col-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+    .col-count { font-size: 11px; color: var(--text2); background: var(--surface2); border-radius: 10px; padding: 2px 8px; }
 
-    .card {
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 12px;
-      cursor: default;
-      transition: border-color 0.2s;
-    }
-    .card:hover { border-color: var(--blue); }
-    .card-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+    .card { background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; padding: 12px; margin-bottom: 8px; transition: border-color 0.2s; }
+    .card:hover { border-color: #6366f1; }
+    .card-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; line-height: 1.4; }
     .card-meta { display: flex; gap: 6px; flex-wrap: wrap; }
-    .tag {
-      font-size: 10px; padding: 2px 8px; border-radius: 6px; font-weight: 600;
-    }
-    .tag-eng { background: #58a6ff20; color: var(--blue); }
-    .tag-seo { background: #bc8cff20; color: var(--purple); }
-    .tag-content { background: #3fb95020; color: var(--green); }
+    .card-tag { font-size: 10px; padding: 2px 7px; border-radius: 4px; font-weight: 600; }
+    .tag-frontend { background: #58a6ff20; color: var(--blue); }
+    .tag-content { background: #bc8cff20; color: var(--purple); }
+    .tag-seo { background: #3fb95020; color: var(--green); }
     .tag-design { background: #f0883e20; color: var(--orange); }
     .tag-growth { background: #d2992220; color: var(--yellow); }
     .tag-infra { background: #f8514920; color: var(--red); }
-    .tag-api { background: #39d35320; color: var(--cyan); }
-    .card-assignee { font-size: 10px; color: var(--text2); margin-top: 6px; }
-    .card-priority { display: inline-block; width: 4px; height: 14px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
-    .p-urgent { background: var(--red); }
-    .p-high { background: var(--orange); }
-    .p-medium { background: var(--yellow); }
-    .p-low { background: var(--blue); }
+    .tag-engagement { background: #06b6d420; color: #06b6d4; }
+    .tag-ux { background: #a78bfa20; color: #a78bfa; }
 
-    .report {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 24px;
-    }
-    .report h3 { font-size: 15px; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
-    .report-table { width: 100%; border-collapse: collapse; }
-    .report-table th, .report-table td {
-      text-align: left; padding: 8px 12px; font-size: 13px; border-bottom: 1px solid var(--border);
-    }
-    .report-table th { color: var(--text2); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
-    .report-table td:last-child { text-align: right; }
-    .report-total { font-weight: 700; color: var(--green); }
+    /* Sprint report */
+    .sprint-report { margin-top: 28px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .report-title { font-size: 16px; font-weight: 700; margin-bottom: 14px; }
+    .report-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .report-item { background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+    .report-label { font-size: 11px; color: var(--text2); text-transform: uppercase; margin-bottom: 4px; }
+    .report-value { font-size: 22px; font-weight: 800; }
+    .report-note { font-size: 11px; color: var(--text2); margin-top: 2px; }
 
-    .cost-section { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
-    .cost-card {
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px;
-      text-align: center;
-    }
-    .cost-card h4 { font-size: 12px; color: var(--text2); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
-    .cost-amount { font-size: 32px; font-weight: 800; }
-    .cost-savings { margin-top: 8px; font-size: 13px; color: var(--green); font-weight: 600; }
+    .progress-bar { height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden; margin-top: 8px; }
+    .progress-fill { height: 100%; border-radius: 3px; transition: width 0.6s ease; }
 
-    @media (max-width: 900px) {
-      .board { grid-template-columns: 1fr 1fr; }
-      .cost-section { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 600px) {
-      .board { grid-template-columns: 1fr; }
-      .stats-row { grid-template-columns: repeat(2, 1fr); }
+    .highlight-new { animation: glow-pulse 2s ease-in-out infinite; }
+    @keyframes glow-pulse {
+      0%, 100% { box-shadow: 0 0 0 rgba(99,102,241,0); }
+      50% { box-shadow: 0 0 12px rgba(99,102,241,0.3); }
     }
   </style>
 </head>
 <body>
-
-<!-- HEADER -->
-<div class="header">
-  <div style="display:flex;align-items:center;gap:12px;">
-    <span class="logo">degen0x</span>
-    <span class="badge">CEO Dashboard</span>
-  </div>
-  <div class="header-right">
-    <span class="date-badge">March 12, 2026</span>
-    <span class="sprint-badge">Sprint 8 — Day 8</span>
-  </div>
-</div>
-
-<!-- TEAM ROW -->
-<div class="team-row">
-  <span class="team-label">Team:</span>
-  <div class="agent"><span class="agent-dot" style="background:var(--green)"></span> Engineering Lead</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--green)"></span> SEO Architect</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--green)"></span> Content Writer</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--green)"></span> UI/UX Designer</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--green)"></span> Growth Engineer</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--yellow)"></span> DevOps / Infra</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--green)"></span> API Engineer</div>
-</div>
-
-<div class="main">
-
-<!-- STATS ROW -->
-<div class="stats-row">
-  <div class="stat-card">
-    <div class="stat-value" style="color:var(--blue)">286,136</div>
-    <div class="stat-label">Total Lines of Code</div>
-    <div class="stat-delta" style="color:var(--green)">+1,283 today</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value" style="color:var(--purple)">2,454</div>
-    <div class="stat-label">Source Files</div>
-    <div class="stat-delta" style="color:var(--green)">+3 new today</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value" style="color:var(--green)">129</div>
-    <div class="stat-label">Pages Published</div>
-    <div class="stat-delta" style="color:var(--green)">+40 today (learn + tax + tools)</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value" style="color:var(--orange)">49</div>
-    <div class="stat-label">Components</div>
-    <div class="stat-delta" style="color:var(--green)">+2 today (SocialShare, WebVitals)</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value" style="color:var(--cyan)">69</div>
-    <div class="stat-label">Tools</div>
-    <div class="stat-delta" style="color:var(--green)">+1 today (Price Alerts)</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value" style="color:var(--yellow)">88</div>
-    <div class="stat-label">Pages in Queue</div>
-    <div class="stat-delta" style="color:var(--text2)">Next: wallets + investing</div>
-  </div>
-</div>
-
-<!-- SPRINT TIMELINE -->
-<div class="timeline">
-  <div class="timeline-header">
-    <span class="timeline-title">Publishing Timeline</span>
-  </div>
-  <div class="timeline-bar-container">
-    <div class="timeline-segment" style="flex:50;background:var(--green);opacity:0.9;">Day 1: 50 Pillars</div>
-    <div class="timeline-segment" style="flex:20;background:var(--blue);opacity:0.9;">Day 2: Tools</div>
-    <div class="timeline-segment" style="flex:19;background:var(--purple);opacity:0.9;">Day 3: Exchanges</div>
-    <div class="timeline-segment" style="flex:20;background:var(--green);opacity:0.8;">Day 4-5</div>
-    <div class="timeline-segment" style="flex:20;background:var(--green);opacity:0.8;">Day 6-7</div>
-    <div class="timeline-segment" style="flex:40;background:var(--cyan);opacity:0.9;">Day 8: Learn+Tax+Tools</div>
-    <div class="timeline-segment" style="flex:20;background:var(--border);opacity:0.3;">Day 9+</div>
-  </div>
-  <div class="timeline-legend">
-    <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div> Complete</div>
-    <div class="legend-item"><div class="legend-dot" style="background:var(--cyan)"></div> Today</div>
-    <div class="legend-item"><div class="legend-dot" style="background:var(--border)"></div> Upcoming</div>
-  </div>
-</div>
-
-<!-- KANBAN BOARD -->
-<div class="board">
-
-  <!-- PIPELINE -->
-  <div class="column">
-    <div class="col-header" style="border-top: 3px solid var(--blue);">
-      <span class="col-title">📋 Pipeline <span class="col-count">5</span></span>
+  <div class="header">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <span class="logo">degen0x</span>
+      <span class="badge">CEO Dashboard</span>
     </div>
-    <div class="col-body">
-      <div class="card">
-        <div class="card-title"><span class="card-priority p-high"></span>Publish Wallet Review Pages (20)</div>
-        <div class="card-meta"><span class="tag tag-content">Content</span><span class="tag tag-seo">SEO</span></div>
-        <div class="card-assignee">Content Writer — MetaMask, Phantom, Ledger, +17 more</div>
-      </div>
-      <div class="card">
-        <div class="card-title"><span class="card-priority p-medium"></span>Publish Investing Best-Of Pages (20)</div>
-        <div class="card-meta"><span class="tag tag-content">Content</span></div>
-        <div class="card-assignee">Content Writer — staking, ETFs, DeFi, +17 more</div>
-      </div>
-      <div class="card">
-        <div class="card-title"><span class="card-priority p-medium"></span>Google Search Console Setup</div>
-        <div class="card-meta"><span class="tag tag-seo">SEO</span><span class="tag tag-growth">Growth</span></div>
-        <div class="card-assignee">Growth Engineer — awaiting domain verification</div>
-      </div>
-      <div class="card">
-        <div class="card-title"><span class="card-priority p-low"></span>Affiliate Link Integration</div>
-        <div class="card-meta"><span class="tag tag-growth">Growth</span><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">Growth Engineer — exchange partner outreach</div>
-      </div>
-      <div class="card">
-        <div class="card-title"><span class="card-priority p-low"></span>Email Newsletter Backend (Resend)</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-growth">Growth</span></div>
-        <div class="card-assignee">API Engineer — connect email-templates.ts to Resend</div>
-      </div>
+    <div class="header-right">
+      <span class="date-badge">March 12, 2026</span>
+      <span class="sprint-badge">Sprint 12 — Complete</span>
     </div>
   </div>
 
-  <!-- IN PROGRESS -->
-  <div class="column">
-    <div class="col-header" style="border-top: 3px solid var(--yellow);">
-      <span class="col-title">🔨 In Progress <span class="col-count">4</span></span>
+  <div class="team-row">
+    <span class="team-label">Agent Team:</span>
+    <div class="agent"><span class="agent-dot" style="background:var(--green)"></span> Frontend Dev</div>
+    <div class="agent"><span class="agent-dot" style="background:var(--blue)"></span> Content Writer</div>
+    <div class="agent"><span class="agent-dot" style="background:var(--purple)"></span> SEO Specialist</div>
+    <div class="agent"><span class="agent-dot" style="background:var(--orange)"></span> Designer</div>
+    <div class="agent"><span class="agent-dot" style="background:var(--yellow)"></span> Growth Lead</div>
+    <div class="agent"><span class="agent-dot" style="background:var(--red)"></span> DevOps</div>
+    <div class="agent"><span class="agent-dot" style="background:var(--cyan)"></span> QA Engineer</div>
+    <div class="agent"><span class="agent-dot" style="background:#06b6d4"></span> UX Engineer</div>
+  </div>
+
+  <div class="main">
+    <!-- Stats -->
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-label">Total Pages</div>
+        <div class="stat-value" style="color:var(--blue)">2,373</div>
+        <div class="stat-sub">+3 new routes (dashboard, achievements, price-alerts)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Lines of Code</div>
+        <div class="stat-value" style="color:var(--green)">296,001</div>
+        <div class="stat-sub">+5,250 new lines this sprint</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Published Pages</div>
+        <div class="stat-value" style="color:var(--purple)">206</div>
+        <div class="stat-sub">+3 new feature pages</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Components</div>
+        <div class="stat-value" style="color:var(--orange)">57</div>
+        <div class="stat-sub">+3 new (Achievements, EnhancedSearch, PriceAlerts)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Libraries</div>
+        <div class="stat-value" style="color:var(--cyan)">16</div>
+        <div class="stat-sub">+3 new (rate-limiter, api-helpers, enhanced cache)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">API Routes</div>
+        <div class="stat-value" style="color:var(--yellow)">8</div>
+        <div class="stat-sub">Enhanced cache-stats endpoint</div>
+      </div>
     </div>
-    <div class="col-body">
-      <div class="card" style="border-color: var(--yellow);">
-        <div class="card-title"><span class="card-priority p-urgent"></span>Integrate SocialShare into All Pages</div>
-        <div class="card-meta"><span class="tag tag-growth">Growth</span><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">Growth Engineer — add SocialShare to layout.tsx or per-page</div>
+
+    <!-- Progress bars -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px;">
+      <div class="stat-card">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <span class="stat-label">Publishing Progress</span>
+          <span style="font-size:12px;color:var(--green);font-weight:700;">206 / 2,373</span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" style="width:8.7%;background:linear-gradient(90deg,var(--green),var(--cyan))"></div></div>
+        <div class="stat-sub" style="margin-top:6px">SEO crawl gating — +3 feature pages published</div>
       </div>
-      <div class="card" style="border-color: var(--yellow);">
-        <div class="card-title"><span class="card-priority p-high"></span>Schema.org Structured Data Rollout</div>
-        <div class="card-meta"><span class="tag tag-seo">SEO</span><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">SEO Architect — applying seo-utils to tool + review pages</div>
+      <div class="stat-card">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <span class="stat-label">Sprint 12 Completion</span>
+          <span style="font-size:12px;color:var(--blue);font-weight:700;">100%</span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" style="width:100%;background:linear-gradient(90deg,var(--blue),var(--purple))"></div></div>
+        <div class="stat-sub" style="margin-top:6px">All 7 deliverables shipped — engagement + infrastructure sprint</div>
       </div>
-      <div class="card" style="border-color: var(--yellow);">
-        <div class="card-title"><span class="card-priority p-high"></span>Exchange Comparison Engine v2</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-content">Content</span></div>
-        <div class="card-assignee">Engineering Lead — wiring into /compare/exchanges UI</div>
+    </div>
+
+    <!-- Kanban -->
+    <div class="kanban">
+      <!-- Pipeline -->
+      <div class="column">
+        <div class="col-header">
+          <span class="col-title" style="color:var(--text2)">Pipeline</span>
+          <span class="col-count">6</span>
+        </div>
+        <div class="card">
+          <div class="card-title">User Accounts + Auth System</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-infra">Infra</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Push Notifications (Web Push API)</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-growth">Growth</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Affiliate Revenue Tracking Dashboard</div>
+          <div class="card-meta"><span class="card-tag tag-growth">Growth</span><span class="card-tag tag-infra">Infra</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Community Forum / Discussion Boards</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-engagement">Engagement</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Video Content Integration (YouTube embeds)</div>
+          <div class="card-meta"><span class="card-tag tag-content">Content</span><span class="card-tag tag-design">Design</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Multi-language Content Expansion</div>
+          <div class="card-meta"><span class="card-tag tag-content">Content</span><span class="card-tag tag-seo">SEO</span></div>
+        </div>
       </div>
-      <div class="card" style="border-color: var(--yellow);">
-        <div class="card-title"><span class="card-priority p-medium"></span>LiveMarketDashboard Refinement</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-api">API</span></div>
-        <div class="card-assignee">API Engineer — improving CoinGecko integration reliability</div>
+
+      <!-- In Progress -->
+      <div class="column">
+        <div class="col-header">
+          <span class="col-title" style="color:var(--yellow)">In Progress</span>
+          <span class="col-count">3</span>
+        </div>
+        <div class="card" style="border-left:3px solid var(--yellow)">
+          <div class="card-title">Google Search Console Submission</div>
+          <div class="card-meta"><span class="card-tag tag-seo">SEO</span><span class="card-tag tag-growth">Growth</span></div>
+        </div>
+        <div class="card" style="border-left:3px solid var(--yellow)">
+          <div class="card-title">Backlink Outreach Strategy + Link Building</div>
+          <div class="card-meta"><span class="card-tag tag-growth">Growth</span><span class="card-tag tag-seo">SEO</span></div>
+        </div>
+        <div class="card" style="border-left:3px solid var(--yellow)">
+          <div class="card-title">Performance Optimization + Core Web Vitals</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-seo">SEO</span></div>
+        </div>
+      </div>
+
+      <!-- Blocked -->
+      <div class="column">
+        <div class="col-header">
+          <span class="col-title" style="color:var(--red)">Blocked</span>
+          <span class="col-count">2</span>
+        </div>
+        <div class="card" style="border-left:3px solid var(--red)">
+          <div class="card-title">CoinGecko Paid API Key</div>
+          <div class="card-meta"><span class="card-tag tag-infra">Infra</span></div>
+          <div style="font-size:11px;color:var(--yellow);margin-top:6px;">Advanced caching + rate limiting built (Sprint 12) — still need paid key</div>
+        </div>
+        <div class="card" style="border-left:3px solid var(--red)">
+          <div class="card-title">Resend Email API Setup</div>
+          <div class="card-meta"><span class="card-tag tag-infra">Infra</span><span class="card-tag tag-growth">Growth</span></div>
+          <div style="font-size:11px;color:var(--red);margin-top:6px;">Need RESEND_API_KEY env var configured on Vercel</div>
+        </div>
+      </div>
+
+      <!-- Done -->
+      <div class="column">
+        <div class="col-header">
+          <span class="col-title" style="color:var(--green)">Done (Sprint 12)</span>
+          <span class="col-count">7</span>
+        </div>
+        <div class="card highlight-new" style="border-left:3px solid var(--green);">
+          <div class="card-title">PWA Support (manifest, service worker, offline mode)</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-ux">UX</span></div>
+        </div>
+        <div class="card highlight-new" style="border-left:3px solid var(--green);">
+          <div class="card-title">Personal Crypto Dashboard (/dashboard)</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-engagement">Engagement</span></div>
+        </div>
+        <div class="card highlight-new" style="border-left:3px solid var(--green);">
+          <div class="card-title">Achievement / Gamification System</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-engagement">Engagement</span><span class="card-tag tag-growth">Growth</span></div>
+        </div>
+        <div class="card highlight-new" style="border-left:3px solid var(--green);">
+          <div class="card-title">Advanced API Caching + Rate Limiting</div>
+          <div class="card-meta"><span class="card-tag tag-infra">Infra</span><span class="card-tag tag-frontend">Frontend</span></div>
+        </div>
+        <div class="card highlight-new" style="border-left:3px solid var(--green);">
+          <div class="card-title">Price Alerts Tool (/tools/price-alerts)</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-engagement">Engagement</span></div>
+        </div>
+        <div class="card highlight-new" style="border-left:3px solid var(--green);">
+          <div class="card-title">Enhanced Search with Cmd+K Autocomplete</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-ux">UX</span></div>
+        </div>
+        <div class="card highlight-new" style="border-left:3px solid var(--green);">
+          <div class="card-title">Kanban Board Update (Sprint 12)</div>
+          <div class="card-meta"><span class="card-tag tag-growth">Growth</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sprint Report -->
+    <div class="sprint-report">
+      <div class="report-title">Sprint 12 Report — March 12, 2026</div>
+      <div class="report-grid">
+        <div class="report-item">
+          <div class="report-label">Lines Added This Sprint</div>
+          <div class="report-value" style="color:var(--green)">5,250</div>
+          <div class="report-note">PWA + Dashboard + Achievements + Cache + Price Alerts + Search</div>
+        </div>
+        <div class="report-item">
+          <div class="report-label">New Files Created</div>
+          <div class="report-value" style="color:var(--blue)">12</div>
+          <div class="report-note">3 pages, 2 components, 3 libraries, 3 PWA files, 1 API</div>
+        </div>
+        <div class="report-item">
+          <div class="report-label">Files Modified</div>
+          <div class="report-value" style="color:var(--purple)">2</div>
+          <div class="report-note">layout.tsx (PWA + achievements), api-cache.ts (rewrite)</div>
+        </div>
+        <div class="report-item">
+          <div class="report-label">Human Dev Cost Equivalent</div>
+          <div class="report-value" style="color:var(--orange)">$16,500</div>
+          <div class="report-note">~106 hours @ $155/hr (fullstack + UX + infra)</div>
+        </div>
+        <div class="report-item">
+          <div class="report-label">Cumulative LOC (All Sprints)</div>
+          <div class="report-value" style="color:var(--cyan)">296,001</div>
+          <div class="report-note">2,501 TypeScript/JS files</div>
+        </div>
+        <div class="report-item">
+          <div class="report-label">Cumulative Human Cost Equiv.</div>
+          <div class="report-value" style="color:var(--red)">$470K+</div>
+          <div class="report-note">~3,034 dev-hours across 12 sprints</div>
+        </div>
+      </div>
+
+      <!-- Sprint History -->
+      <div style="margin-top:20px;">
+        <div class="report-label" style="margin-bottom:10px;font-size:12px;">Sprint History</div>
+        <table style="width:100%;border-collapse:collapse;font-size:12px;">
+          <thead>
+            <tr style="border-bottom:1px solid var(--border);">
+              <th style="text-align:left;padding:6px;color:var(--text2);">Sprint</th>
+              <th style="text-align:left;padding:6px;color:var(--text2);">Date</th>
+              <th style="text-align:right;padding:6px;color:var(--text2);">LOC Added</th>
+              <th style="text-align:right;padding:6px;color:var(--text2);">Pages Published</th>
+              <th style="text-align:left;padding:6px;color:var(--text2);">Key Deliverables</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px;">Sprint 1</td>
+              <td style="padding:6px;color:var(--text2);">Mar 3</td>
+              <td style="padding:6px;text-align:right;color:var(--green);">~180,000</td>
+              <td style="padding:6px;text-align:right;">2,275</td>
+              <td style="padding:6px;color:var(--text2);">Initial build — full site scaffold, 2275 pages, all components</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px;">Sprint 2</td>
+              <td style="padding:6px;color:var(--text2);">Mar 4</td>
+              <td style="padding:6px;text-align:right;color:var(--green);">~45,000</td>
+              <td style="padding:6px;text-align:right;">+86</td>
+              <td style="padding:6px;color:var(--text2);">Page generators, Degen Mode, enhanced tools</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px;">Sprint 3</td>
+              <td style="padding:6px;color:var(--text2);">Mar 5</td>
+              <td style="padding:6px;text-align:right;color:var(--green);">~12,000</td>
+              <td style="padding:6px;text-align:right;">50</td>
+              <td style="padding:6px;color:var(--text2);">SEO infrastructure, published pages gating, middleware</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px;">Sprint 4</td>
+              <td style="padding:6px;color:var(--text2);">Mar 10</td>
+              <td style="padding:6px;text-align:right;color:var(--green);">~8,000</td>
+              <td style="padding:6px;text-align:right;">+20</td>
+              <td style="padding:6px;color:var(--text2);">Build fixes, rebrand to degen0x, Vercel deployment</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px;">Sprint 5</td>
+              <td style="padding:6px;color:var(--text2);">Mar 11</td>
+              <td style="padding:6px;text-align:right;color:var(--green);">~15,000</td>
+              <td style="padding:6px;text-align:right;">+20</td>
+              <td style="padding:6px;color:var(--text2);">SEO enhancements, publishing plan, sitemap/robots upgrades</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px;">Sprint 6-7</td>
+              <td style="padding:6px;color:var(--text2);">Mar 11-12</td>
+              <td style="padding:6px;text-align:right;color:var(--green);">~24,000</td>
+              <td style="padding:6px;text-align:right;">+47</td>
+              <td style="padding:6px;color:var(--text2);">Learn articles, tax guides, exchange reviews, more tools</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px;">Sprint 8</td>
+              <td style="padding:6px;color:var(--text2);">Mar 12</td>
+              <td style="padding:6px;text-align:right;color:var(--green);">~680</td>
+              <td style="padding:6px;text-align:right;">+40</td>
+              <td style="padding:6px;color:var(--text2);">Wallet reviews, investing best-of, CryptoQuiz, PortfolioSimulator</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px;">Sprint 9</td>
+              <td style="padding:6px;color:var(--text2);">Mar 12</td>
+              <td style="padding:6px;text-align:right;color:var(--green);">1,363</td>
+              <td style="padding:6px;text-align:right;">+1</td>
+              <td style="padding:6px;color:var(--text2);">Performance Dashboard, MarketPulse, ToolStructuredData, Newsletter, PWA</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px;">Sprint 10</td>
+              <td style="padding:6px;color:var(--text2);">Mar 12</td>
+              <td style="padding:6px;text-align:right;color:var(--green);">1,754</td>
+              <td style="padding:6px;text-align:right;">+1</td>
+              <td style="padding:6px;color:var(--text2);">API Caching, Analytics (Umami+GA4), Onboarding Flow, RSS Feed</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:6px;">Sprint 11</td>
+              <td style="padding:6px;color:var(--text2);">Mar 12</td>
+              <td style="padding:6px;text-align:right;color:var(--green);">1,642</td>
+              <td style="padding:6px;text-align:right;">+53</td>
+              <td style="padding:6px;color:var(--text2);">OG Image Gen, Blog CMS (6 articles), Tool Metadata, 53 pages published</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);background:var(--surface2);">
+              <td style="padding:6px;font-weight:700;color:var(--blue);">Sprint 12</td>
+              <td style="padding:6px;color:var(--text2);">Mar 12</td>
+              <td style="padding:6px;text-align:right;color:var(--green);font-weight:700;">5,250</td>
+              <td style="padding:6px;text-align:right;font-weight:700;">+3</td>
+              <td style="padding:6px;color:var(--blue);">PWA, Dashboard, Achievements, Caching+Rate Limiting, Price Alerts, Cmd+K Search</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Next Sprint Preview -->
+    <div class="sprint-report" style="margin-top:16px;border-color:#6366f140;">
+      <div class="report-title" style="color:var(--blue);">Sprint 13 Preview — Next Up</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;">
+        <div class="card">
+          <div class="card-title">User accounts + auth (NextAuth / Clerk)</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-infra">Infra</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Persistent watchlists + portfolio (DB-backed)</div>
+          <div class="card-meta"><span class="card-tag tag-infra">Infra</span><span class="card-tag tag-frontend">Frontend</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Web Push notifications for price alerts</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-engagement">Engagement</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Affiliate revenue tracking + monetization</div>
+          <div class="card-meta"><span class="card-tag tag-growth">Growth</span><span class="card-tag tag-infra">Infra</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Publish 40+ more pages (DeFi, Insurance, NFTs)</div>
+          <div class="card-meta"><span class="card-tag tag-seo">SEO</span><span class="card-tag tag-content">Content</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Core Web Vitals optimization pass</div>
+          <div class="card-meta"><span class="card-tag tag-frontend">Frontend</span><span class="card-tag tag-seo">SEO</span></div>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- BLOCKED -->
-  <div class="column">
-    <div class="col-header" style="border-top: 3px solid var(--red);">
-      <span class="col-title">🚫 Blocked <span class="col-count">2</span></span>
-    </div>
-    <div class="col-body">
-      <div class="card" style="border-color: var(--red);">
-        <div class="card-title"><span class="card-priority p-urgent"></span>Next.js Build — Memory Crash</div>
-        <div class="card-meta"><span class="tag tag-infra">Infra</span><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">DevOps — Bus error on build. ~286K LOC exceeding VM memory. Need chunked builds or incremental compilation strategy.</div>
-      </div>
-      <div class="card" style="border-color: var(--red);">
-        <div class="card-title"><span class="card-priority p-high"></span>OG Image Generation</div>
-        <div class="card-meta"><span class="tag tag-design">Design</span><span class="tag tag-infra">Infra</span></div>
-        <div class="card-assignee">UI Designer — blocked by build issue. Needs @vercel/og or edge function.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- DONE -->
-  <div class="column">
-    <div class="col-header" style="border-top: 3px solid var(--green);">
-      <span class="col-title">✅ Done <span class="col-count">18</span></span>
-    </div>
-    <div class="col-body">
-      <!-- Sprint 8 deliverables -->
-      <div class="card" style="border-left: 3px solid var(--cyan);">
-        <div class="card-title">🆕 Price Alerts Tool Page</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-design">Design</span><span class="tag tag-api">API</span></div>
-        <div class="card-assignee">API Engineer + UI Designer — 722 LOC, CoinGecko integration, real-time alerts</div>
-      </div>
-      <div class="card" style="border-left: 3px solid var(--cyan);">
-        <div class="card-title">🆕 SocialShare Component</div>
-        <div class="card-meta"><span class="tag tag-growth">Growth</span><span class="tag tag-design">Design</span></div>
-        <div class="card-assignee">Growth Engineer + UI Designer — 349 LOC, Twitter/Reddit/Telegram/Copy</div>
-      </div>
-      <div class="card" style="border-left: 3px solid var(--cyan);">
-        <div class="card-title">🆕 WebVitals Performance Monitor</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-infra">Infra</span></div>
-        <div class="card-assignee">Engineering Lead — 212 LOC, LCP/FID/CLS/TTFB/INP tracking</div>
-      </div>
-      <div class="card" style="border-left: 3px solid var(--cyan);">
-        <div class="card-title">🆕 40 Pages Published (Learn + Tax + Tools)</div>
-        <div class="card-meta"><span class="tag tag-content">Content</span><span class="tag tag-seo">SEO</span></div>
-        <div class="card-assignee">Content Writer + SEO — 20 learn articles, 8 tax guides, 12 tools</div>
-      </div>
-      <div class="card" style="border-left: 3px solid var(--cyan);">
-        <div class="card-title">🆕 Branding Fix (degen0x consistent)</div>
-        <div class="card-meta"><span class="tag tag-design">Design</span></div>
-        <div class="card-assignee">UI Designer — updated remaining CryptoDegen references</div>
-      </div>
-      <!-- Previous sprints -->
-      <div class="card" style="opacity:0.75;">
-        <div class="card-title">CoinGecko API Route + Client Library</div>
-        <div class="card-meta"><span class="tag tag-api">API</span></div>
-        <div class="card-assignee">API Engineer — 489 LOC combined</div>
-      </div>
-      <div class="card" style="opacity:0.75;">
-        <div class="card-title">Exchange Comparison Data (19 exchanges)</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">Engineering Lead — 664 LOC</div>
-      </div>
-      <div class="card" style="opacity:0.75;">
-        <div class="card-title">Day 3: 19 Exchange Pages Published</div>
-        <div class="card-meta"><span class="tag tag-content">Content</span></div>
-        <div class="card-assignee">Content Writer</div>
-      </div>
-      <div class="card" style="opacity:0.75;">
-        <div class="card-title">SEO Infrastructure (sitemap + robots + middleware)</div>
-        <div class="card-meta"><span class="tag tag-seo">SEO</span></div>
-        <div class="card-assignee">SEO Architect — 825 LOC</div>
-      </div>
-      <div class="card" style="opacity:0.75;">
-        <div class="card-title">seo-utils.ts Library (13 functions)</div>
-        <div class="card-meta"><span class="tag tag-seo">SEO</span></div>
-        <div class="card-assignee">SEO Architect — 557 LOC</div>
-      </div>
-      <div class="card" style="opacity:0.75;">
-        <div class="card-title">Day 2: 20 Tool Pages Published</div>
-        <div class="card-meta"><span class="tag tag-content">Content</span></div>
-        <div class="card-assignee">Content Writer</div>
-      </div>
-      <div class="card" style="opacity:0.75;">
-        <div class="card-title">Day 1: 50 Pillar Pages Live</div>
-        <div class="card-meta"><span class="tag tag-content">Content</span><span class="tag tag-seo">SEO</span></div>
-        <div class="card-assignee">Full Team</div>
-      </div>
-      <div class="card" style="opacity:0.75;">
-        <div class="card-title">49 UI Components Built</div>
-        <div class="card-meta"><span class="tag tag-design">Design</span></div>
-        <div class="card-assignee">UI Designer</div>
-      </div>
-      <div class="card" style="opacity:0.75;">
-        <div class="card-title">Published Pages System + Queue</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">Engineering Lead</div>
-      </div>
-      <div class="card" style="opacity:0.75;">
-        <div class="card-title">Initial Project Scaffold (Next.js 16)</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">Engineering Lead — React 19, Tailwind 4, TS 5.9</div>
-      </div>
-    </div>
-  </div>
-
-</div><!-- /board -->
-
-<!-- SPRINT 8 REPORT -->
-<div class="report">
-  <h3>📊 Sprint 8 Report — March 12, 2026</h3>
-  <table class="report-table">
-    <thead>
-      <tr><th>Deliverable</th><th>Agent</th><th>Type</th><th style="text-align:right">LOC</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Price Alerts Tool (/tools/price-alerts)</td><td>API Engineer + UI Designer</td><td>New Feature</td><td>722</td></tr>
-      <tr><td>SocialShare Component (Twitter/Reddit/TG)</td><td>Growth Engineer + UI Designer</td><td>New Component</td><td>349</td></tr>
-      <tr><td>WebVitals Performance Monitor</td><td>Engineering Lead</td><td>Infrastructure</td><td>212</td></tr>
-      <tr><td>40 Pages Published (Learn + Tax + Tools)</td><td>Content Writer + SEO</td><td>Publishing</td><td>46 (config)</td></tr>
-      <tr><td>Branding Fix (CryptoDegen → degen0x)</td><td>UI Designer</td><td>Bugfix</td><td>4</td></tr>
-      <tr><td>Kanban Dashboard Update (Sprint 8)</td><td>CEO Agent</td><td>Management</td><td>~510</td></tr>
-      <tr style="border-top:2px solid var(--border);">
-        <td class="report-total" colspan="3">Total Sprint 8 New Code</td>
-        <td class="report-total">1,283</td>
-      </tr>
-      <tr>
-        <td style="color:var(--text2)" colspan="3">Cumulative Project Total</td>
-        <td style="color:var(--purple);font-weight:700">286,136</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- Cost Comparison -->
-  <div style="margin-top:24px;">
-    <h3>💰 Cost Comparison: AI Agents vs. Human Team</h3>
-    <p style="font-size:13px;color:var(--text2);margin-bottom:16px;">Estimated cost if Sprint 8 deliverables were built by a human team (US market rates).</p>
-  </div>
-  <table class="report-table">
-    <thead>
-      <tr><th>Role</th><th>Hours Est.</th><th>Rate ($/hr)</th><th style="text-align:right">Cost</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Senior Full-Stack Engineer (Price Alerts tool)</td><td>10h</td><td>$175</td><td>$1,750</td></tr>
-      <tr><td>Frontend Engineer (SocialShare + WebVitals)</td><td>6h</td><td>$150</td><td>$900</td></tr>
-      <tr><td>Content Strategist (40 pages research + publish)</td><td>16h</td><td>$100</td><td>$1,600</td></tr>
-      <tr><td>SEO Specialist (publishing config + meta)</td><td>4h</td><td>$125</td><td>$500</td></tr>
-      <tr><td>QA Engineer (branding audit + testing)</td><td>3h</td><td>$130</td><td>$390</td></tr>
-      <tr><td>Project Manager</td><td>2h</td><td>$130</td><td>$260</td></tr>
-      <tr style="border-top:2px solid var(--border);">
-        <td class="report-total" colspan="3">Total Human Cost (Sprint 8)</td>
-        <td class="report-total">$5,400</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="cost-section">
-    <div class="cost-card">
-      <h4>Human Team Cost</h4>
-      <div class="cost-amount" style="color:var(--red)">$5,400</div>
-      <div style="font-size:11px;color:var(--text2);margin-top:4px;">41 engineer-hours @ avg $132/hr</div>
-    </div>
-    <div class="cost-card">
-      <h4>AI Agent Cost</h4>
-      <div class="cost-amount" style="color:var(--green)">~$3.00</div>
-      <div class="cost-savings">99.9% savings vs. human team</div>
-      <div style="font-size:11px;color:var(--text2);margin-top:4px;">Claude Opus API tokens + compute</div>
-    </div>
-  </div>
-
-  <!-- Cumulative -->
-  <div style="margin-top:24px; padding-top:16px; border-top:1px solid var(--border);">
-    <h3>📈 Cumulative Project Cost Savings (8 Sprints)</h3>
-    <table class="report-table">
-      <thead>
-        <tr><th>Sprint</th><th>LOC Added</th><th>Human Est.</th><th style="text-align:right">AI Cost</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Sprint 1 — Scaffold + 50 Pillar Pages</td><td>~270,000</td><td>$85,000</td><td>~$15</td></tr>
-        <tr><td>Sprint 2 — SEO + Tools + Day 2 Publish</td><td>~13,400</td><td>$8,500</td><td>~$5</td></tr>
-        <tr><td>Sprint 3 — API + Dashboard + Exchanges</td><td>1,456</td><td>$4,775</td><td>~$2.50</td></tr>
-        <tr><td>Sprints 4-7 — Content + Features + Polish</td><td>~350</td><td>$6,200</td><td>~$8</td></tr>
-        <tr><td>Sprint 8 — Price Alerts + Social + Vitals</td><td>1,283</td><td>$5,400</td><td>~$3</td></tr>
-        <tr style="border-top:2px solid var(--border);">
-          <td class="report-total" colspan="2">Total (8 Sprints)</td>
-          <td class="report-total">$109,875</td>
-          <td class="report-total">~$33.50</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- NEXT SPRINT PREVIEW -->
-<div class="report">
-  <h3>🔮 Sprint 9 Preview — March 13, 2026</h3>
-  <table class="report-table">
-    <thead>
-      <tr><th>Priority</th><th>Task</th><th>Agent</th><th style="text-align:right">Est. LOC</th></tr>
-    </thead>
-    <tbody>
-      <tr><td><span class="card-priority p-urgent"></span> Urgent</td><td>Fix build memory issue (incremental/chunked builds)</td><td>DevOps</td><td>~200</td></tr>
-      <tr><td><span class="card-priority p-high"></span> High</td><td>Publish Day 9: 20 Wallet Review Pages</td><td>Content Writer</td><td>~100</td></tr>
-      <tr><td><span class="card-priority p-high"></span> High</td><td>Integrate SocialShare into page layouts</td><td>Growth Engineer</td><td>~50</td></tr>
-      <tr><td><span class="card-priority p-high"></span> High</td><td>Apply Schema.org to all tool + review pages</td><td>SEO Architect</td><td>~500</td></tr>
-      <tr><td><span class="card-priority p-medium"></span> Med</td><td>Exchange comparison engine → /compare/exchanges UI</td><td>UI Designer + Eng</td><td>~400</td></tr>
-      <tr><td><span class="card-priority p-medium"></span> Med</td><td>Add Plausible/Umami analytics script</td><td>Growth Engineer</td><td>~30</td></tr>
-      <tr><td><span class="card-priority p-low"></span> Low</td><td>Newsletter Resend integration</td><td>API Engineer</td><td>~150</td></tr>
-    </tbody>
-  </table>
-</div>
-
-</div><!-- /main -->
-
 </body>
 </html>

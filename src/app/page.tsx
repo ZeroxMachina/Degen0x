@@ -7,6 +7,9 @@ import TrendingCoins from "@/components/TrendingCoins";
 import MarketOverview from "@/components/MarketOverview";
 import LatestNews from "@/components/LatestNews";
 import WhaleAlertFeed from "@/components/WhaleAlertFeed";
+import CryptoQuiz from "@/components/CryptoQuiz";
+import PortfolioSimulator from "@/components/PortfolioSimulator";
+import MarketPulse from "@/components/MarketPulse";
 import { CATEGORIES, SITE_NAME, SITE_DESCRIPTION, CURRENT_MONTH, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -60,6 +63,17 @@ export default function HomePage() {
 
       {/* Trending Coins */}
       <TrendingCoins />
+
+      {/* Market Pulse - Real-time Market Widget */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <h2 className="text-3xl font-bold text-[var(--color-text)] mb-4 text-center">
+          Market Pulse
+        </h2>
+        <p className="text-[var(--color-text-secondary)] text-center mb-8 max-w-2xl mx-auto">
+          Real-time market sentiment, top movers, and trending tokens — updated every 30 seconds.
+        </p>
+        <MarketPulse />
+      </section>
 
       {/* Popular Tools */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
@@ -125,6 +139,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Simulator */}
+      <PortfolioSimulator />
 
       {/* Market Overview */}
       <MarketOverview />
@@ -271,6 +288,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Crypto Knowledge Quiz */}
+      <CryptoQuiz />
 
       {/* Newsletter CTA */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
