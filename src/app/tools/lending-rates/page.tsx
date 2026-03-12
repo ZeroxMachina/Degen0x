@@ -51,7 +51,7 @@ export default function LendingRatesPage() {
             <h1 className="text-5xl font-bold text-[var(--color-text)] mb-4">
               Crypto Lending Rates Comparison
             </h1>
-            <p className="text-xl text-[#8b949e] max-w-4xl leading-relaxed">
+            <p className="text-xl text-[var(--color-text-secondary)] max-w-4xl leading-relaxed">
               Compare real-time lending rates across 20+ DeFi and CeFi platforms. Discover the best APY for your assets, analyze protocol risk, and calculate projected earnings with our comprehensive lending comparison tool.
             </p>
           </div>
@@ -66,53 +66,45 @@ export default function LendingRatesPage() {
             ].map((stat, i) => (
               <div key={i} className="bg-[#0d1117] border border-[#30363d] rounded-lg p-4">
                 <div className="text-2xl mb-2">{stat.icon}</div>
-                <div className="text-sm text-[#8b949e]">{stat.label}</div>
-                <div className="text-lg font-bold text-[#e6edf3]">{stat.value}</div>
+                <div className="text-sm text-[var(--color-text-secondary)]">{stat.label}</div>
+                <div className="text-lg font-bold text-[var(--color-text)]">{stat.value}</div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* Protocol Overview */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── Protocol Overview ──────────────── */}
         <ProtocolOverview />
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* Main Comparison Table & Filters */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── Main Comparison Table & Filters ──────────────── */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-3xl font-bold text-[#e6edf3] mb-2">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-2">
               Interactive Rate Comparison
             </h2>
-            <p className="text-[#8b949e]">
+            <p className="text-[var(--color-text-secondary)]">
               Filter by asset, blockchain, and protocol type. Sort by APY, TVL, or risk score to find your ideal lending platform.
             </p>
           </div>
           <LendingRatesClient />
         </section>
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* Lending Calculator */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── Lending Calculator ──────────────── */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-3xl font-bold text-[#e6edf3] mb-2">
+            <h2 className="text-3xl font-bold text-[var(--color-text)] mb-2">
               Lending Calculator
             </h2>
-            <p className="text-[#8b949e]">
+            <p className="text-[var(--color-text-secondary)]">
               Calculate projected earnings based on deposit amount and time period. Compare earnings across multiple protocols.
             </p>
           </div>
           <LendingCalculator />
         </section>
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* DeFi vs CeFi Comparison */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── DeFi vs CeFi Comparison ──────────────── */}
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-[#e6edf3] mb-6">
+          <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6">
             DeFi vs CeFi Lending
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
@@ -157,14 +149,14 @@ export default function LendingRatesPage() {
               <div key={i} className="bg-[#0d1117] border border-[#30363d] rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl">{section.icon}</span>
-                  <h3 className="text-xl font-bold text-[#e6edf3]">{section.type}</h3>
+                  <h3 className="text-xl font-bold text-[var(--color-text)]">{section.type}</h3>
                 </div>
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-[#3fb950] mb-3 text-sm">Advantages</h4>
                     <ul className="space-y-2">
                       {section.pros.map((pro, j) => (
-                        <li key={j} className="flex gap-2 text-sm text-[#8b949e]">
+                        <li key={j} className="flex gap-2 text-sm text-[var(--color-text-secondary)]">
                           <span className="text-[#3fb950] flex-shrink-0">✓</span>
                           <span>{pro}</span>
                         </li>
@@ -175,7 +167,7 @@ export default function LendingRatesPage() {
                     <h4 className="font-semibold text-[#f85149] mb-3 text-sm">Considerations</h4>
                     <ul className="space-y-2">
                       {section.cons.map((con, j) => (
-                        <li key={j} className="flex gap-2 text-sm text-[#8b949e]">
+                        <li key={j} className="flex gap-2 text-sm text-[var(--color-text-secondary)]">
                           <span className="text-[#f85149] flex-shrink-0">!</span>
                           <span>{con}</span>
                         </li>
@@ -188,11 +180,9 @@ export default function LendingRatesPage() {
           </div>
         </section>
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* Risk Assessment Guide */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── Risk Assessment Guide ──────────────── */}
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-[#e6edf3] mb-6">
+          <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6">
             Understanding Risk Scores
           </h2>
           <div className="bg-[#0d1117] border border-[#30363d] rounded-xl p-6">
@@ -244,19 +234,19 @@ export default function LendingRatesPage() {
                       className="w-4 h-4 rounded-full"
                       style={{ backgroundColor: risk.color }}
                     />
-                    <span className="text-sm font-semibold text-[#e6edf3]">
+                    <span className="text-sm font-semibold text-[var(--color-text)]">
                       Score: {risk.score}
                     </span>
                   </div>
                   <h4 className="text-lg font-bold mb-2" style={{ color: risk.color }}>
                     {risk.level}
                   </h4>
-                  <p className="text-xs text-[#8b949e] mb-3">
+                  <p className="text-xs text-[var(--color-text-secondary)] mb-3">
                     <strong>Examples:</strong> {risk.examples}
                   </p>
                   <div className="space-y-1">
                     {risk.factors.map((factor, j) => (
-                      <p key={j} className="text-xs text-[#8b949e]">
+                      <p key={j} className="text-xs text-[var(--color-text-secondary)]">
                         • {factor}
                       </p>
                     ))}
@@ -267,11 +257,9 @@ export default function LendingRatesPage() {
           </div>
         </section>
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* FAQ Section */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── FAQ Section ──────────────── */}
         <section className="space-y-6">
-          <h2 className="text-3xl font-bold text-[#e6edf3]">
+          <h2 className="text-3xl font-bold text-[var(--color-text)]">
             Frequently Asked Questions
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
@@ -326,11 +314,11 @@ export default function LendingRatesPage() {
               },
             ].map((item, i) => (
               <div key={i} className="bg-[#0d1117] border border-[#30363d] rounded-lg p-5">
-                <h3 className="font-semibold text-[#e6edf3] mb-3 text-sm flex items-start gap-2">
+                <h3 className="font-semibold text-[var(--color-text)] mb-3 text-sm flex items-start gap-2">
                   <span className="text-[#58a6ff] flex-shrink-0 mt-0.5">Q:</span>
                   <span>{item.q}</span>
                 </h3>
-                <p className="text-sm text-[#8b949e] leading-relaxed flex gap-2">
+                <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed flex gap-2">
                   <span className="text-[#79c0ff] flex-shrink-0">A:</span>
                   <span>{item.a}</span>
                 </p>
@@ -339,11 +327,9 @@ export default function LendingRatesPage() {
           </div>
         </section>
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* Key Metrics Explained */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── Key Metrics Explained ──────────────── */}
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-[#e6edf3] mb-6">
+          <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6">
             Key Metrics Explained
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -375,19 +361,17 @@ export default function LendingRatesPage() {
             ].map((item, i) => (
               <div key={i} className="bg-[#0d1117] border border-[#30363d] rounded-lg p-4">
                 <div className="text-2xl mb-2">{item.icon}</div>
-                <h4 className="font-bold text-[#e6edf3] text-sm mb-1">{item.metric}</h4>
+                <h4 className="font-bold text-[var(--color-text)] text-sm mb-1">{item.metric}</h4>
                 <p className="text-xs text-[#58a6ff] mb-2">{item.full}</p>
-                <p className="text-xs text-[#8b949e]">{item.desc}</p>
+                <p className="text-xs text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* Best Practices */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── Best Practices ──────────────── */}
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-[#e6edf3] mb-6">
+          <h2 className="text-3xl font-bold text-[var(--color-text)] mb-6">
             Crypto Lending Best Practices
           </h2>
           <div className="bg-[#0d1117] border border-[#30363d] rounded-xl p-6 space-y-4">
@@ -441,11 +425,11 @@ export default function LendingRatesPage() {
                 <div key={i} className="border border-[#30363d] rounded-lg p-4">
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-2xl">{section.icon}</span>
-                    <h4 className="text-lg font-bold text-[#e6edf3]">{section.title}</h4>
+                    <h4 className="text-lg font-bold text-[var(--color-text)]">{section.title}</h4>
                   </div>
                   <ul className="space-y-2">
                     {section.tips.map((tip, j) => (
-                      <li key={j} className="flex gap-2 text-sm text-[#8b949e]">
+                      <li key={j} className="flex gap-2 text-sm text-[var(--color-text-secondary)]">
                         <span className="text-[#58a6ff] flex-shrink-0">→</span>
                         <span>{tip}</span>
                       </li>
@@ -457,46 +441,42 @@ export default function LendingRatesPage() {
           </div>
         </section>
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* Disclaimers */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── Disclaimers ──────────────── */}
         <div className="bg-[#0d1117] border border-[#30363d] rounded-xl p-6 space-y-4">
-          <h3 className="font-bold text-[#e6edf3] text-lg flex items-center gap-2">
+          <h3 className="font-bold text-[var(--color-text)] text-lg flex items-center gap-2">
             <span>⚠️</span> Important Disclaimers & Legal Notice
           </h3>
-          <ul className="text-sm text-[#8b949e] space-y-3 list-disc list-inside">
+          <ul className="text-sm text-[var(--color-text-secondary)] space-y-3 list-disc list-inside">
             <li>
-              <strong className="text-[#e6edf3]">Indicative Rates:</strong> All rates shown are estimates as of March 2026 and subject to change. Always verify current rates on official protocol websites before transacting.
+              <strong className="text-[var(--color-text)]">Indicative Rates:</strong> All rates shown are estimates as of March 2026 and subject to change. Always verify current rates on official protocol websites before transacting.
             </li>
             <li>
-              <strong className="text-[#e6edf3]">Not Investment Advice:</strong> This tool is for informational and educational purposes only. We do not provide financial, investment, legal, or tax advice. Do not make investment decisions based solely on this information.
+              <strong className="text-[var(--color-text)]">Not Investment Advice:</strong> This tool is for informational and educational purposes only. We do not provide financial, investment, legal, or tax advice. Do not make investment decisions based solely on this information.
             </li>
             <li>
-              <strong className="text-[#e6edf3]">Smart Contract Risk:</strong> All blockchain protocols carry smart contract risk. Hacks, exploits, and bugs can result in permanent loss of funds. Only deposit funds you can afford to lose completely.
+              <strong className="text-[var(--color-text)]">Smart Contract Risk:</strong> All blockchain protocols carry smart contract risk. Hacks, exploits, and bugs can result in permanent loss of funds. Only deposit funds you can afford to lose completely.
             </li>
             <li>
-              <strong className="text-[#e6edf3]">Variable Returns:</strong> Lending yields are variable and depend on borrower demand, market conditions, and protocol mechanics. Yields can decrease significantly, drop to zero, or become negative.
+              <strong className="text-[var(--color-text)]">Variable Returns:</strong> Lending yields are variable and depend on borrower demand, market conditions, and protocol mechanics. Yields can decrease significantly, drop to zero, or become negative.
             </li>
             <li>
-              <strong className="text-[#e6edf3]">CeFi Counterparty Risk:</strong> Centralized lending platforms depend on company solvency. Historical failures show that CeFi yields can disappear due to bankruptcy or fraud.
+              <strong className="text-[var(--color-text)]">CeFi Counterparty Risk:</strong> Centralized lending platforms depend on company solvency. Historical failures show that CeFi yields can disappear due to bankruptcy or fraud.
             </li>
             <li>
-              <strong className="text-[#e6edf3]">Regulatory Risk:</strong> Cryptocurrency regulations are evolving. Changes in laws could affect platform operations, yields, or your ability to withdraw funds.
+              <strong className="text-[var(--color-text)]">Regulatory Risk:</strong> Cryptocurrency regulations are evolving. Changes in laws could affect platform operations, yields, or your ability to withdraw funds.
             </li>
             <li>
-              <strong className="text-[#e6edf3]">Tax Implications:</strong> Lending yields are generally taxable as income in most jurisdictions. Consult a tax professional about your specific situation.
+              <strong className="text-[var(--color-text)]">Tax Implications:</strong> Lending yields are generally taxable as income in most jurisdictions. Consult a tax professional about your specific situation.
             </li>
             <li>
-              <strong className="text-[#e6edf3]">Affiliate Links:</strong> Some platform links may be affiliate partnerships. This does not affect your rates but helps support this site's maintenance.
+              <strong className="text-[var(--color-text)]">Affiliate Links:</strong> Some platform links may be affiliate partnerships. This does not affect your rates but helps support this site's maintenance.
             </li>
           </ul>
         </div>
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* Related Resources */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── Related Resources ──────────────── */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-[#e6edf3]">Related Tools & Resources</h2>
+          <h2 className="text-2xl font-bold text-[var(--color-text)]">Related Tools & Resources</h2>
           <div className="grid md:grid-cols-3 gap-4">
             {[
               {
@@ -526,25 +506,23 @@ export default function LendingRatesPage() {
                 <span className="inline-block text-[#58a6ff] text-xs font-medium px-3 py-1 mb-3 rounded-full border border-[#58a6ff]">
                   {item.tag}
                 </span>
-                <h3 className="font-semibold text-[#e6edf3] text-base mb-2">{item.title}</h3>
-                <p className="text-sm text-[#8b949e]">{item.desc}</p>
+                <h3 className="font-semibold text-[var(--color-text)] text-base mb-2">{item.title}</h3>
+                <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </a>
             ))}
           </div>
         </section>
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* Footer Info */
-        {/* ──────────────────────────────────────────────────────────────── */}
-        <div className="border-t border-[#30363d] pt-8 text-xs text-[#8b949e] space-y-2">
+        {/* ──────────────── Footer Info ──────────────── */}
+        <div className="border-t border-[#30363d] pt-8 text-xs text-[var(--color-text-secondary)] space-y-2">
           <p>
-            <strong className="text-[#e6edf3]">Last Updated:</strong> March 11, 2026 15:30 UTC
+            <strong className="text-[var(--color-text)]">Last Updated:</strong> March 11, 2026 15:30 UTC
           </p>
           <p>
-            <strong className="text-[#e6edf3]">Data Source:</strong> Aggregated from official protocol websites, blockchain explorers, and DeFi data providers. Rates are indicative and may vary.
+            <strong className="text-[var(--color-text)]">Data Source:</strong> Aggregated from official protocol websites, blockchain explorers, and DeFi data providers. Rates are indicative and may vary.
           </p>
           <p>
-            <strong className="text-[#e6edf3]">Feedback:</strong> Found an issue or have suggestions? Please reach out to help us improve this tool.
+            <strong className="text-[var(--color-text)]">Feedback:</strong> Found an issue or have suggestions? Please reach out to help us improve this tool.
           </p>
         </div>
       </div>

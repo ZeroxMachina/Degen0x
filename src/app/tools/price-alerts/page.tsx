@@ -1,24 +1,8 @@
-import { Metadata } from "next";
+"use client";
 
-// ─── Metadata & SEO ───────────────────────────────────────────────────────────
-export const metadata: Metadata = {
-  title: "Crypto Price Alerts - Set Price Targets | degen0x.com",
-  description: "Set custom crypto price alerts for Bitcoin, Ethereum, Solana, and more. Get notified when prices cross your targets. No account required, 100% private.",
-  keywords: ["price alerts", "crypto alerts", "bitcoin alerts", "ethereum alerts", "price notifications"],
-  openGraph: {
-    title: "Crypto Price Alerts",
-    description: "Set custom crypto price alerts and get notified when prices hit your targets.",
-    type: "website",
-    url: "https://degen0x.com/tools/price-alerts",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Crypto Price Alerts",
-    description: "Set custom price alerts for your favorite crypto assets.",
-  },
-};
+import { useState, useEffect, useCallback, useRef } from "react";
+import Breadcrumb from "@/components/Breadcrumb";
 
-// ─── JSON-LD Structured Data ──────────────────────────────────────────────────
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
@@ -41,12 +25,6 @@ const schemaData = {
     "100% private"
   ]
 };
-
-// ─── Client Component ──────────────────────────────────────────────────────────
-"use client";
-
-import { useState, useEffect, useCallback, useRef } from "react";
-import Breadcrumb from "@/components/Breadcrumb";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface Alert {
