@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CryptoDegen — CEO Project Dashboard</title>
+  <title>degen0x — CEO Project Dashboard</title>
   <style>
     :root {
       --bg: #0d1117;
@@ -48,7 +48,6 @@
 
     .main { padding: 20px 24px; }
 
-    /* Stats row */
     .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 24px; }
     .stat-card {
       background: var(--surface);
@@ -61,7 +60,6 @@
     .stat-label { font-size: 11px; color: var(--text2); text-transform: uppercase; margin-top: 4px; letter-spacing: 0.05em; }
     .stat-delta { font-size: 11px; margin-top: 2px; }
 
-    /* Sprint timeline */
     .timeline { margin-bottom: 28px; }
     .timeline-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
     .timeline-title { font-size: 15px; font-weight: 700; }
@@ -75,7 +73,6 @@
     .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text2); }
     .legend-dot { width: 8px; height: 8px; border-radius: 3px; }
 
-    /* Kanban board */
     .board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
     .column {
       background: var(--surface);
@@ -121,7 +118,6 @@
     .p-medium { background: var(--yellow); }
     .p-low { background: var(--blue); }
 
-    /* Sprint report */
     .report {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -138,7 +134,6 @@
     .report-table td:last-child { text-align: right; }
     .report-total { font-weight: 700; color: var(--green); }
 
-    /* Cost comparison */
     .cost-section { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
     .cost-card {
       background: var(--surface2);
@@ -171,7 +166,7 @@
   </div>
   <div class="header-right">
     <span class="date-badge">March 12, 2026</span>
-    <span class="sprint-badge">Sprint 3 — Day 3</span>
+    <span class="sprint-badge">Sprint 8 — Day 8</span>
   </div>
 </div>
 
@@ -192,34 +187,34 @@
 <!-- STATS ROW -->
 <div class="stats-row">
   <div class="stat-card">
-    <div class="stat-value" style="color:var(--blue)">284,853</div>
+    <div class="stat-value" style="color:var(--blue)">286,136</div>
     <div class="stat-label">Total Lines of Code</div>
-    <div class="stat-delta" style="color:var(--green)">+1,456 today</div>
+    <div class="stat-delta" style="color:var(--green)">+1,283 today</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value" style="color:var(--purple)">2,451</div>
+    <div class="stat-value" style="color:var(--purple)">2,454</div>
     <div class="stat-label">Source Files</div>
-    <div class="stat-delta" style="color:var(--green)">+4 today</div>
+    <div class="stat-delta" style="color:var(--green)">+3 new today</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value" style="color:var(--green)">89</div>
+    <div class="stat-value" style="color:var(--green)">129</div>
     <div class="stat-label">Pages Published</div>
-    <div class="stat-delta" style="color:var(--green)">+19 today (exchanges)</div>
+    <div class="stat-delta" style="color:var(--green)">+40 today (learn + tax + tools)</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value" style="color:var(--orange)">46</div>
+    <div class="stat-value" style="color:var(--orange)">49</div>
     <div class="stat-label">Components</div>
-    <div class="stat-delta" style="color:var(--green)">+1 today</div>
+    <div class="stat-delta" style="color:var(--green)">+2 today (SocialShare, WebVitals)</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value" style="color:var(--cyan)">1</div>
-    <div class="stat-label">API Endpoints</div>
-    <div class="stat-delta" style="color:var(--green)">+1 today (prices)</div>
+    <div class="stat-value" style="color:var(--cyan)">69</div>
+    <div class="stat-label">Tools</div>
+    <div class="stat-delta" style="color:var(--green)">+1 today (Price Alerts)</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value" style="color:var(--yellow)">128</div>
+    <div class="stat-value" style="color:var(--yellow)">88</div>
     <div class="stat-label">Pages in Queue</div>
-    <div class="stat-delta" style="color:var(--text2)">Next: wallets (Day 4)</div>
+    <div class="stat-delta" style="color:var(--text2)">Next: wallets + investing</div>
   </div>
 </div>
 
@@ -232,15 +227,14 @@
     <div class="timeline-segment" style="flex:50;background:var(--green);opacity:0.9;">Day 1: 50 Pillars</div>
     <div class="timeline-segment" style="flex:20;background:var(--blue);opacity:0.9;">Day 2: Tools</div>
     <div class="timeline-segment" style="flex:19;background:var(--purple);opacity:0.9;">Day 3: Exchanges</div>
-    <div class="timeline-segment" style="flex:20;background:var(--border);opacity:0.6;">Day 4: Wallets</div>
-    <div class="timeline-segment" style="flex:20;background:var(--border);opacity:0.4;">Day 5</div>
-    <div class="timeline-segment" style="flex:20;background:var(--border);opacity:0.3;">Day 6</div>
-    <div class="timeline-segment" style="flex:20;background:var(--border);opacity:0.2;">Day 7</div>
+    <div class="timeline-segment" style="flex:20;background:var(--green);opacity:0.8;">Day 4-5</div>
+    <div class="timeline-segment" style="flex:20;background:var(--green);opacity:0.8;">Day 6-7</div>
+    <div class="timeline-segment" style="flex:40;background:var(--cyan);opacity:0.9;">Day 8: Learn+Tax+Tools</div>
+    <div class="timeline-segment" style="flex:20;background:var(--border);opacity:0.3;">Day 9+</div>
   </div>
   <div class="timeline-legend">
     <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div> Complete</div>
-    <div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div> Complete</div>
-    <div class="legend-item"><div class="legend-dot" style="background:var(--purple)"></div> Today</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cyan)"></div> Today</div>
     <div class="legend-item"><div class="legend-dot" style="background:var(--border)"></div> Upcoming</div>
   </div>
 </div>
@@ -251,31 +245,21 @@
   <!-- PIPELINE -->
   <div class="column">
     <div class="col-header" style="border-top: 3px solid var(--blue);">
-      <span class="col-title">📋 Pipeline <span class="col-count">6</span></span>
+      <span class="col-title">📋 Pipeline <span class="col-count">5</span></span>
     </div>
     <div class="col-body">
       <div class="card">
-        <div class="card-title"><span class="card-priority p-high"></span>Day 4: Wallet Review Pages</div>
+        <div class="card-title"><span class="card-priority p-high"></span>Publish Wallet Review Pages (20)</div>
         <div class="card-meta"><span class="tag tag-content">Content</span><span class="tag tag-seo">SEO</span></div>
-        <div class="card-assignee">Content Writer + SEO Architect — 20 pages</div>
+        <div class="card-assignee">Content Writer — MetaMask, Phantom, Ledger, +17 more</div>
       </div>
       <div class="card">
-        <div class="card-title"><span class="card-priority p-medium"></span>Day 5: Investing Best-Of Pages</div>
+        <div class="card-title"><span class="card-priority p-medium"></span>Publish Investing Best-Of Pages (20)</div>
         <div class="card-meta"><span class="tag tag-content">Content</span></div>
-        <div class="card-assignee">Content Writer — 20 pages</div>
+        <div class="card-assignee">Content Writer — staking, ETFs, DeFi, +17 more</div>
       </div>
       <div class="card">
-        <div class="card-title"><span class="card-priority p-medium"></span>Day 6: Learn Articles (Broad)</div>
-        <div class="card-meta"><span class="tag tag-content">Content</span><span class="tag tag-seo">SEO</span></div>
-        <div class="card-assignee">Content Writer — 20 pages</div>
-      </div>
-      <div class="card">
-        <div class="card-title"><span class="card-priority p-medium"></span>Day 7: Tax Guide Pages</div>
-        <div class="card-meta"><span class="tag tag-content">Content</span></div>
-        <div class="card-assignee">Content Writer — 20 pages</div>
-      </div>
-      <div class="card">
-        <div class="card-title"><span class="card-priority p-low"></span>Google Search Console Setup</div>
+        <div class="card-title"><span class="card-priority p-medium"></span>Google Search Console Setup</div>
         <div class="card-meta"><span class="tag tag-seo">SEO</span><span class="tag tag-growth">Growth</span></div>
         <div class="card-assignee">Growth Engineer — awaiting domain verification</div>
       </div>
@@ -283,6 +267,11 @@
         <div class="card-title"><span class="card-priority p-low"></span>Affiliate Link Integration</div>
         <div class="card-meta"><span class="tag tag-growth">Growth</span><span class="tag tag-eng">Engineering</span></div>
         <div class="card-assignee">Growth Engineer — exchange partner outreach</div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="card-priority p-low"></span>Email Newsletter Backend (Resend)</div>
+        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-growth">Growth</span></div>
+        <div class="card-assignee">API Engineer — connect email-templates.ts to Resend</div>
       </div>
     </div>
   </div>
@@ -294,24 +283,24 @@
     </div>
     <div class="col-body">
       <div class="card" style="border-color: var(--yellow);">
-        <div class="card-title"><span class="card-priority p-urgent"></span>LiveMarketDashboard Component</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-api">API</span><span class="tag tag-design">Design</span></div>
-        <div class="card-assignee">API Engineer + UI Designer — integrating with /api/prices</div>
+        <div class="card-title"><span class="card-priority p-urgent"></span>Integrate SocialShare into All Pages</div>
+        <div class="card-meta"><span class="tag tag-growth">Growth</span><span class="tag tag-eng">Engineering</span></div>
+        <div class="card-assignee">Growth Engineer — add SocialShare to layout.tsx or per-page</div>
+      </div>
+      <div class="card" style="border-color: var(--yellow);">
+        <div class="card-title"><span class="card-priority p-high"></span>Schema.org Structured Data Rollout</div>
+        <div class="card-meta"><span class="tag tag-seo">SEO</span><span class="tag tag-eng">Engineering</span></div>
+        <div class="card-assignee">SEO Architect — applying seo-utils to tool + review pages</div>
       </div>
       <div class="card" style="border-color: var(--yellow);">
         <div class="card-title"><span class="card-priority p-high"></span>Exchange Comparison Engine v2</div>
         <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-content">Content</span></div>
-        <div class="card-assignee">Engineering Lead — 19 exchange data models built</div>
+        <div class="card-assignee">Engineering Lead — wiring into /compare/exchanges UI</div>
       </div>
       <div class="card" style="border-color: var(--yellow);">
-        <div class="card-title"><span class="card-priority p-high"></span>Vercel Production Deploy Fix</div>
-        <div class="card-meta"><span class="tag tag-infra">Infra</span></div>
-        <div class="card-assignee">DevOps — memory limit issue on build (Bus error)</div>
-      </div>
-      <div class="card" style="border-color: var(--yellow);">
-        <div class="card-title"><span class="card-priority p-medium"></span>Schema.org Structured Data Rollout</div>
-        <div class="card-meta"><span class="tag tag-seo">SEO</span><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">SEO Architect — applying seo-utils to exchange pages</div>
+        <div class="card-title"><span class="card-priority p-medium"></span>LiveMarketDashboard Refinement</div>
+        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-api">API</span></div>
+        <div class="card-assignee">API Engineer — improving CoinGecko integration reliability</div>
       </div>
     </div>
   </div>
@@ -325,12 +314,12 @@
       <div class="card" style="border-color: var(--red);">
         <div class="card-title"><span class="card-priority p-urgent"></span>Next.js Build — Memory Crash</div>
         <div class="card-meta"><span class="tag tag-infra">Infra</span><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">DevOps — Bus error on build. ~284K LOC exceeding VM memory. Need build optimization or chunked builds.</div>
+        <div class="card-assignee">DevOps — Bus error on build. ~286K LOC exceeding VM memory. Need chunked builds or incremental compilation strategy.</div>
       </div>
       <div class="card" style="border-color: var(--red);">
         <div class="card-title"><span class="card-priority p-high"></span>OG Image Generation</div>
         <div class="card-meta"><span class="tag tag-design">Design</span><span class="tag tag-infra">Infra</span></div>
-        <div class="card-assignee">UI Designer — blocked by build issue. Needs @vercel/og or edge function support.</div>
+        <div class="card-assignee">UI Designer — blocked by build issue. Needs @vercel/og or edge function.</div>
       </div>
     </div>
   </div>
@@ -338,95 +327,112 @@
   <!-- DONE -->
   <div class="column">
     <div class="col-header" style="border-top: 3px solid var(--green);">
-      <span class="col-title">✅ Done <span class="col-count">12</span></span>
+      <span class="col-title">✅ Done <span class="col-count">18</span></span>
     </div>
     <div class="col-body">
-      <div class="card" style="opacity:0.85;">
-        <div class="card-title">CoinGecko API Route (/api/prices)</div>
-        <div class="card-meta"><span class="tag tag-api">API</span><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">API Engineer — 118 LOC, 60s cache, error fallback</div>
+      <!-- Sprint 8 deliverables -->
+      <div class="card" style="border-left: 3px solid var(--cyan);">
+        <div class="card-title">🆕 Price Alerts Tool Page</div>
+        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-design">Design</span><span class="tag tag-api">API</span></div>
+        <div class="card-assignee">API Engineer + UI Designer — 722 LOC, CoinGecko integration, real-time alerts</div>
       </div>
-      <div class="card" style="opacity:0.85;">
-        <div class="card-title">CoinGecko Client Library</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">API Engineer — 371 LOC, TypeScript types + fetchPrices()</div>
+      <div class="card" style="border-left: 3px solid var(--cyan);">
+        <div class="card-title">🆕 SocialShare Component</div>
+        <div class="card-meta"><span class="tag tag-growth">Growth</span><span class="tag tag-design">Design</span></div>
+        <div class="card-assignee">Growth Engineer + UI Designer — 349 LOC, Twitter/Reddit/Telegram/Copy</div>
       </div>
-      <div class="card" style="opacity:0.85;">
-        <div class="card-title">Exchange Comparison Data (19 exchanges)</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-content">Content</span></div>
-        <div class="card-assignee">Engineering Lead — 664 LOC, compare/rank/filter functions</div>
+      <div class="card" style="border-left: 3px solid var(--cyan);">
+        <div class="card-title">🆕 WebVitals Performance Monitor</div>
+        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-infra">Infra</span></div>
+        <div class="card-assignee">Engineering Lead — 212 LOC, LCP/FID/CLS/TTFB/INP tracking</div>
       </div>
-      <div class="card" style="opacity:0.85;">
-        <div class="card-title">Day 3: 19 Exchange Pages Published</div>
+      <div class="card" style="border-left: 3px solid var(--cyan);">
+        <div class="card-title">🆕 40 Pages Published (Learn + Tax + Tools)</div>
         <div class="card-meta"><span class="tag tag-content">Content</span><span class="tag tag-seo">SEO</span></div>
-        <div class="card-assignee">Content Writer — Coinbase, Binance, Kraken, +16 more</div>
+        <div class="card-assignee">Content Writer + SEO — 20 learn articles, 8 tax guides, 12 tools</div>
       </div>
-      <div class="card" style="opacity:0.85;">
-        <div class="card-title">SEO: Enhanced Sitemap + Robots.txt</div>
+      <div class="card" style="border-left: 3px solid var(--cyan);">
+        <div class="card-title">🆕 Branding Fix (degen0x consistent)</div>
+        <div class="card-meta"><span class="tag tag-design">Design</span></div>
+        <div class="card-assignee">UI Designer — updated remaining CryptoDegen references</div>
+      </div>
+      <!-- Previous sprints -->
+      <div class="card" style="opacity:0.75;">
+        <div class="card-title">CoinGecko API Route + Client Library</div>
+        <div class="card-meta"><span class="tag tag-api">API</span></div>
+        <div class="card-assignee">API Engineer — 489 LOC combined</div>
+      </div>
+      <div class="card" style="opacity:0.75;">
+        <div class="card-title">Exchange Comparison Data (19 exchanges)</div>
+        <div class="card-meta"><span class="tag tag-eng">Engineering</span></div>
+        <div class="card-assignee">Engineering Lead — 664 LOC</div>
+      </div>
+      <div class="card" style="opacity:0.75;">
+        <div class="card-title">Day 3: 19 Exchange Pages Published</div>
+        <div class="card-meta"><span class="tag tag-content">Content</span></div>
+        <div class="card-assignee">Content Writer</div>
+      </div>
+      <div class="card" style="opacity:0.75;">
+        <div class="card-title">SEO Infrastructure (sitemap + robots + middleware)</div>
         <div class="card-meta"><span class="tag tag-seo">SEO</span></div>
-        <div class="card-assignee">SEO Architect — priority scoring, bot blocking</div>
+        <div class="card-assignee">SEO Architect — 825 LOC</div>
       </div>
-      <div class="card" style="opacity:0.85;">
-        <div class="card-title">SEO: Middleware (noindex unpublished)</div>
-        <div class="card-meta"><span class="tag tag-seo">SEO</span><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">SEO Architect — edge middleware, security headers</div>
+      <div class="card" style="opacity:0.75;">
+        <div class="card-title">seo-utils.ts Library (13 functions)</div>
+        <div class="card-meta"><span class="tag tag-seo">SEO</span></div>
+        <div class="card-assignee">SEO Architect — 557 LOC</div>
       </div>
-      <div class="card" style="opacity:0.85;">
-        <div class="card-title">SEO: seo-utils.ts Library (13 functions)</div>
-        <div class="card-meta"><span class="tag tag-seo">SEO</span><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">SEO Architect — 557 LOC, Schema.org generators</div>
-      </div>
-      <div class="card" style="opacity:0.85;">
+      <div class="card" style="opacity:0.75;">
         <div class="card-title">Day 2: 20 Tool Pages Published</div>
         <div class="card-meta"><span class="tag tag-content">Content</span></div>
-        <div class="card-assignee">Content Writer — staking, analytics, funding rates, +17 more</div>
+        <div class="card-assignee">Content Writer</div>
       </div>
-      <div class="card" style="opacity:0.85;">
+      <div class="card" style="opacity:0.75;">
         <div class="card-title">Day 1: 50 Pillar Pages Live</div>
         <div class="card-meta"><span class="tag tag-content">Content</span><span class="tag tag-seo">SEO</span></div>
-        <div class="card-assignee">Full Team — core pages, tools, guides, compare</div>
+        <div class="card-assignee">Full Team</div>
       </div>
-      <div class="card" style="opacity:0.85;">
-        <div class="card-title">45 UI Components Built</div>
-        <div class="card-meta"><span class="tag tag-design">Design</span><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">UI Designer — Header, Footer, ReviewPage, +42 more</div>
+      <div class="card" style="opacity:0.75;">
+        <div class="card-title">49 UI Components Built</div>
+        <div class="card-meta"><span class="tag tag-design">Design</span></div>
+        <div class="card-assignee">UI Designer</div>
       </div>
-      <div class="card" style="opacity:0.85;">
-        <div class="card-title">Published Pages System</div>
+      <div class="card" style="opacity:0.75;">
+        <div class="card-title">Published Pages System + Queue</div>
         <div class="card-meta"><span class="tag tag-eng">Engineering</span></div>
-        <div class="card-assignee">Engineering Lead — staged publishing with queue</div>
+        <div class="card-assignee">Engineering Lead</div>
       </div>
-      <div class="card" style="opacity:0.85;">
+      <div class="card" style="opacity:0.75;">
         <div class="card-title">Initial Project Scaffold (Next.js 16)</div>
-        <div class="card-meta"><span class="tag tag-eng">Engineering</span><span class="tag tag-infra">Infra</span></div>
-        <div class="card-assignee">Engineering Lead — React 19, Tailwind 4, TypeScript 5.9</div>
+        <div class="card-meta"><span class="tag tag-eng">Engineering</span></div>
+        <div class="card-assignee">Engineering Lead — React 19, Tailwind 4, TS 5.9</div>
       </div>
     </div>
   </div>
 
 </div><!-- /board -->
 
-<!-- SPRINT REPORT -->
+<!-- SPRINT 8 REPORT -->
 <div class="report">
-  <h3>📊 Sprint 3 Report — March 12, 2026</h3>
+  <h3>📊 Sprint 8 Report — March 12, 2026</h3>
   <table class="report-table">
     <thead>
       <tr><th>Deliverable</th><th>Agent</th><th>Type</th><th style="text-align:right">LOC</th></tr>
     </thead>
     <tbody>
-      <tr><td>CoinGecko API Route (/api/prices)</td><td>API Engineer</td><td>New Feature</td><td>118</td></tr>
-      <tr><td>CoinGecko Client Library (coingecko.ts)</td><td>API Engineer</td><td>Library</td><td>371</td></tr>
-      <tr><td>LiveMarketDashboard Component</td><td>UI Designer + API Eng</td><td>New Component</td><td>303</td></tr>
-      <tr><td>Exchange Comparison Data Engine</td><td>Engineering Lead</td><td>Data + Utils</td><td>664</td></tr>
-      <tr><td>19 Exchange Pages → Published</td><td>Content Writer</td><td>Publishing</td><td>0 (config only)</td></tr>
-      <tr><td>Kanban Dashboard Update</td><td>CEO Agent</td><td>Management</td><td>~400</td></tr>
+      <tr><td>Price Alerts Tool (/tools/price-alerts)</td><td>API Engineer + UI Designer</td><td>New Feature</td><td>722</td></tr>
+      <tr><td>SocialShare Component (Twitter/Reddit/TG)</td><td>Growth Engineer + UI Designer</td><td>New Component</td><td>349</td></tr>
+      <tr><td>WebVitals Performance Monitor</td><td>Engineering Lead</td><td>Infrastructure</td><td>212</td></tr>
+      <tr><td>40 Pages Published (Learn + Tax + Tools)</td><td>Content Writer + SEO</td><td>Publishing</td><td>46 (config)</td></tr>
+      <tr><td>Branding Fix (CryptoDegen → degen0x)</td><td>UI Designer</td><td>Bugfix</td><td>4</td></tr>
+      <tr><td>Kanban Dashboard Update (Sprint 8)</td><td>CEO Agent</td><td>Management</td><td>~510</td></tr>
       <tr style="border-top:2px solid var(--border);">
-        <td class="report-total" colspan="3">Total Sprint 3 New Code</td>
-        <td class="report-total">1,456</td>
+        <td class="report-total" colspan="3">Total Sprint 8 New Code</td>
+        <td class="report-total">1,283</td>
       </tr>
       <tr>
         <td style="color:var(--text2)" colspan="3">Cumulative Project Total</td>
-        <td style="color:var(--purple);font-weight:700">284,853</td>
+        <td style="color:var(--purple);font-weight:700">286,136</td>
       </tr>
     </tbody>
   </table>
@@ -434,22 +440,22 @@
   <!-- Cost Comparison -->
   <div style="margin-top:24px;">
     <h3>💰 Cost Comparison: AI Agents vs. Human Team</h3>
-    <p style="font-size:13px;color:var(--text2);margin-bottom:16px;">Estimated cost if Sprint 3 deliverables were built by a human team (US market rates).</p>
+    <p style="font-size:13px;color:var(--text2);margin-bottom:16px;">Estimated cost if Sprint 8 deliverables were built by a human team (US market rates).</p>
   </div>
   <table class="report-table">
     <thead>
       <tr><th>Role</th><th>Hours Est.</th><th>Rate ($/hr)</th><th style="text-align:right">Cost</th></tr>
     </thead>
     <tbody>
-      <tr><td>Senior Full-Stack Engineer (API + components)</td><td>8h</td><td>$175</td><td>$1,400</td></tr>
-      <tr><td>Frontend Engineer (dashboard UI)</td><td>6h</td><td>$150</td><td>$900</td></tr>
-      <tr><td>Content Strategist (exchange data research)</td><td>12h</td><td>$100</td><td>$1,200</td></tr>
-      <tr><td>SEO Specialist (publishing + config)</td><td>3h</td><td>$125</td><td>$375</td></tr>
-      <tr><td>DevOps / Build debugging</td><td>4h</td><td>$160</td><td>$640</td></tr>
+      <tr><td>Senior Full-Stack Engineer (Price Alerts tool)</td><td>10h</td><td>$175</td><td>$1,750</td></tr>
+      <tr><td>Frontend Engineer (SocialShare + WebVitals)</td><td>6h</td><td>$150</td><td>$900</td></tr>
+      <tr><td>Content Strategist (40 pages research + publish)</td><td>16h</td><td>$100</td><td>$1,600</td></tr>
+      <tr><td>SEO Specialist (publishing config + meta)</td><td>4h</td><td>$125</td><td>$500</td></tr>
+      <tr><td>QA Engineer (branding audit + testing)</td><td>3h</td><td>$130</td><td>$390</td></tr>
       <tr><td>Project Manager</td><td>2h</td><td>$130</td><td>$260</td></tr>
       <tr style="border-top:2px solid var(--border);">
-        <td class="report-total" colspan="3">Total Human Cost (Sprint 3)</td>
-        <td class="report-total">$4,775</td>
+        <td class="report-total" colspan="3">Total Human Cost (Sprint 8)</td>
+        <td class="report-total">$5,400</td>
       </tr>
     </tbody>
   </table>
@@ -457,20 +463,20 @@
   <div class="cost-section">
     <div class="cost-card">
       <h4>Human Team Cost</h4>
-      <div class="cost-amount" style="color:var(--red)">$4,775</div>
-      <div style="font-size:11px;color:var(--text2);margin-top:4px;">35 engineer-hours @ avg $136/hr</div>
+      <div class="cost-amount" style="color:var(--red)">$5,400</div>
+      <div style="font-size:11px;color:var(--text2);margin-top:4px;">41 engineer-hours @ avg $132/hr</div>
     </div>
     <div class="cost-card">
       <h4>AI Agent Cost</h4>
-      <div class="cost-amount" style="color:var(--green)">~$2.50</div>
+      <div class="cost-amount" style="color:var(--green)">~$3.00</div>
       <div class="cost-savings">99.9% savings vs. human team</div>
-      <div style="font-size:11px;color:var(--text2);margin-top:4px;">Claude API tokens + compute</div>
+      <div style="font-size:11px;color:var(--text2);margin-top:4px;">Claude Opus API tokens + compute</div>
     </div>
   </div>
 
   <!-- Cumulative -->
   <div style="margin-top:24px; padding-top:16px; border-top:1px solid var(--border);">
-    <h3>📈 Cumulative Project Cost Savings (3 Sprints)</h3>
+    <h3>📈 Cumulative Project Cost Savings (8 Sprints)</h3>
     <table class="report-table">
       <thead>
         <tr><th>Sprint</th><th>LOC Added</th><th>Human Est.</th><th style="text-align:right">AI Cost</th></tr>
@@ -479,10 +485,12 @@
         <tr><td>Sprint 1 — Scaffold + 50 Pillar Pages</td><td>~270,000</td><td>$85,000</td><td>~$15</td></tr>
         <tr><td>Sprint 2 — SEO + Tools + Day 2 Publish</td><td>~13,400</td><td>$8,500</td><td>~$5</td></tr>
         <tr><td>Sprint 3 — API + Dashboard + Exchanges</td><td>1,456</td><td>$4,775</td><td>~$2.50</td></tr>
+        <tr><td>Sprints 4-7 — Content + Features + Polish</td><td>~350</td><td>$6,200</td><td>~$8</td></tr>
+        <tr><td>Sprint 8 — Price Alerts + Social + Vitals</td><td>1,283</td><td>$5,400</td><td>~$3</td></tr>
         <tr style="border-top:2px solid var(--border);">
-          <td class="report-total" colspan="2">Total</td>
-          <td class="report-total">$98,275</td>
-          <td class="report-total">~$22.50</td>
+          <td class="report-total" colspan="2">Total (8 Sprints)</td>
+          <td class="report-total">$109,875</td>
+          <td class="report-total">~$33.50</td>
         </tr>
       </tbody>
     </table>
@@ -491,18 +499,19 @@
 
 <!-- NEXT SPRINT PREVIEW -->
 <div class="report">
-  <h3>🔮 Sprint 4 Preview — March 13, 2026</h3>
+  <h3>🔮 Sprint 9 Preview — March 13, 2026</h3>
   <table class="report-table">
     <thead>
       <tr><th>Priority</th><th>Task</th><th>Agent</th><th style="text-align:right">Est. LOC</th></tr>
     </thead>
     <tbody>
-      <tr><td><span class="card-priority p-urgent"></span> Urgent</td><td>Fix build memory issue (chunked builds or tree-shaking)</td><td>DevOps</td><td>~200</td></tr>
-      <tr><td><span class="card-priority p-high"></span> High</td><td>Publish Day 4: 20 Wallet Review Pages</td><td>Content Writer</td><td>~100 (config)</td></tr>
-      <tr><td><span class="card-priority p-high"></span> High</td><td>Wire LiveMarketDashboard into /prices page</td><td>Engineering Lead</td><td>~150</td></tr>
-      <tr><td><span class="card-priority p-high"></span> High</td><td>Apply Schema.org markup to all exchange pages</td><td>SEO Architect</td><td>~500</td></tr>
+      <tr><td><span class="card-priority p-urgent"></span> Urgent</td><td>Fix build memory issue (incremental/chunked builds)</td><td>DevOps</td><td>~200</td></tr>
+      <tr><td><span class="card-priority p-high"></span> High</td><td>Publish Day 9: 20 Wallet Review Pages</td><td>Content Writer</td><td>~100</td></tr>
+      <tr><td><span class="card-priority p-high"></span> High</td><td>Integrate SocialShare into page layouts</td><td>Growth Engineer</td><td>~50</td></tr>
+      <tr><td><span class="card-priority p-high"></span> High</td><td>Apply Schema.org to all tool + review pages</td><td>SEO Architect</td><td>~500</td></tr>
       <tr><td><span class="card-priority p-medium"></span> Med</td><td>Exchange comparison engine → /compare/exchanges UI</td><td>UI Designer + Eng</td><td>~400</td></tr>
-      <tr><td><span class="card-priority p-low"></span> Low</td><td>Add analytics (Plausible or Umami)</td><td>Growth Engineer</td><td>~50</td></tr>
+      <tr><td><span class="card-priority p-medium"></span> Med</td><td>Add Plausible/Umami analytics script</td><td>Growth Engineer</td><td>~30</td></tr>
+      <tr><td><span class="card-priority p-low"></span> Low</td><td>Newsletter Resend integration</td><td>API Engineer</td><td>~150</td></tr>
     </tbody>
   </table>
 </div>

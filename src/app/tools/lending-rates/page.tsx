@@ -45,12 +45,10 @@ export default function LendingRatesPage() {
           ]}
         />
 
-        {/* ──────────────────────────────────────────────────────────────── */
-        {/* Hero Section */
-        {/* ──────────────────────────────────────────────────────────────── */}
+        {/* ──────────────── Hero Section ──────────────── */}
         <div className="space-y-4">
           <div>
-            <h1 className="text-5xl font-bold text-[#e6edf3] mb-4">
+            <h1 className="text-5xl font-bold text-[var(--color-text)] mb-4">
               Crypto Lending Rates Comparison
             </h1>
             <p className="text-xl text-[#8b949e] max-w-4xl leading-relaxed">

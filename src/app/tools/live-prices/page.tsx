@@ -3,11 +3,6 @@
 import React, { useState, useMemo } from 'react';
 import LivePriceFeed from '@/components/LivePriceFeed';
 
-export const metadata = {
-  title: 'Live Crypto Prices - Real-Time Price Tracker',
-  description: 'Track Bitcoin, Ethereum, and other major cryptocurrencies in real-time with live price updates and market data.',
-};
-
 export default function LivePricesPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');

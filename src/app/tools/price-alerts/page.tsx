@@ -1,5 +1,48 @@
-'use client';
+import { Metadata } from "next";
 
+// ─── Metadata & SEO ───────────────────────────────────────────────────────────
+export const metadata: Metadata = {
+  title: "Crypto Price Alerts - Set Price Targets | degen0x.com",
+  description: "Set custom crypto price alerts for Bitcoin, Ethereum, Solana, and more. Get notified when prices cross your targets. No account required, 100% private.",
+  keywords: ["price alerts", "crypto alerts", "bitcoin alerts", "ethereum alerts", "price notifications"],
+  openGraph: {
+    title: "Crypto Price Alerts",
+    description: "Set custom crypto price alerts and get notified when prices hit your targets.",
+    type: "website",
+    url: "https://degen0x.com/tools/price-alerts",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Crypto Price Alerts",
+    description: "Set custom price alerts for your favorite crypto assets.",
+  },
+};
+
+// ─── JSON-LD Structured Data ──────────────────────────────────────────────────
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Crypto Price Alerts",
+  "description": "Set custom price alerts for cryptocurrencies and get notified when prices cross your targets",
+  "url": "https://degen0x.com/tools/price-alerts",
+  "applicationCategory": "FinanceApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "features": [
+    "Custom price alerts",
+    "Multiple cryptocurrencies",
+    "Above/Below price conditions",
+    "Real-time price updates",
+    "Browser notifications",
+    "No account required",
+    "100% private"
+  ]
+};
+
+// ─── Client Component ──────────────────────────────────────────────────────────
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
@@ -19,25 +62,22 @@ interface Alert {
   triggeredAt?: number;
   triggeredPrice?: number;
   active: boolean;
+  bellAnimating?: boolean;
 }
 
 interface PriceData {
   [id: string]: { usd: number; eur: number; gbp: number; change24h?: number };
 }
 
-// ─── Coins ────────────────────────────────────────────────────────────────────
+// ─── Coins (with top 8 popular) ────────────────────────────────────────────────
 const COINS = [
   { id: "bitcoin",       symbol: "BTC",  name: "Bitcoin",   color: "#F7931A" },
   { id: "ethereum",      symbol: "ETH",  name: "Ethereum",  color: "#627EEA" },
   { id: "solana",        symbol: "SOL",  name: "Solana",    color: "#9945FF" },
-  { id: "binancecoin",   symbol: "BNB",  name: "BNB",       color: "#F3BA2F" },
-  { id: "ripple",        symbol: "XRP",  name: "XRP",       color: "#0085C0" },
-  { id: "cardano",       symbol: "ADA",  name: "Cardano",   color: "#0033AD" },
-  { id: "dogecoin",      symbol: "DOGE", name: "Dogecoin",  color: "#C2A633" },
   { id: "avalanche-2",   symbol: "AVAX", name: "Avalanche", color: "#E84142" },
+  { id: "matic-network", symbol: "MATIC",name: "Polygon",   color: "#8247E5" },
   { id: "polkadot",      symbol: "DOT",  name: "Polkadot",  color: "#E6007A" },
   { id: "chainlink",     symbol: "LINK", name: "Chainlink", color: "#375BD2" },
-  { id: "litecoin",      symbol: "LTC",  name: "Litecoin",  color: "#BFBBBB" },
   { id: "uniswap",       symbol: "UNI",  name: "Uniswap",   color: "#FF007A" },
 ];
 
@@ -45,15 +85,12 @@ const FALLBACK_PRICES: PriceData = {
   bitcoin:       { usd: 82500,  eur: 75900,  gbp: 65800 },
   ethereum:      { usd: 4100,   eur: 3770,   gbp: 3270 },
   solana:        { usd: 172,    eur: 158,     gbp: 137 },
-  binancecoin:   { usd: 580,    eur: 533,     gbp: 462 },
-  ripple:        { usd: 2.62,   eur: 2.41,   gbp: 2.09 },
-  cardano:       { usd: 0.95,   eur: 0.87,   gbp: 0.76 },
-  dogecoin:      { usd: 0.31,   eur: 0.29,   gbp: 0.25 },
   "avalanche-2": { usd: 35.2,   eur: 32.4,   gbp: 28.1 },
+  "matic-network": { usd: 0.82, eur: 0.75,   gbp: 0.65 },
   polkadot:      { usd: 7.80,   eur: 7.17,   gbp: 6.22 },
   chainlink:     { usd: 18.4,   eur: 16.9,   gbp: 14.7 },
-  litecoin:      { usd: 102,    eur: 93.8,   gbp: 81.4 },
-  uniswap:       { usd: 11.8,   eur: 10.9,   gbp: 9.42 } };
+  uniswap:       { usd: 11.8,   eur: 10.9,   gbp: 9.42 }
+};
 
 const CURRENCY_SYMBOLS: Record<string, string> = { usd: "$", eur: "€", gbp: "£" };
 
@@ -68,21 +105,6 @@ function genId(): string {
   return Math.random().toString(36).slice(2) + Date.now().toString(36);
 }
 
-const LS_KEY = "cd_price_alerts_v2";
-
-function loadAlerts(): Alert[] {
-  if (typeof window === "undefined") return [];
-  try {
-    const raw = localStorage.getItem(LS_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch { return []; }
-}
-
-function saveAlerts(alerts: Alert[]) {
-  if (typeof window === "undefined") return;
-  try { localStorage.setItem(LS_KEY, JSON.stringify(alerts)); } catch {}
-}
-
 // ─── Component ───────────────────────────────────────────────────────────────
 export default function PriceAlertsPage() {
   const [alerts, setAlerts] = useState<Alert[]>([]);
@@ -91,7 +113,8 @@ export default function PriceAlertsPage() {
   const [lastUpdated, setLastUpdated] = useState("");
   const [priceError, setPriceError] = useState(false);
   const [notifications, setNotifications] = useState<{ id: string; msg: string; color: string }[]>([]);
-  const [mounted, setMounted] = useState(false);
+  const [notificationPermission, setNotificationPermission] = useState<"granted" | "denied" | "default">("default");
+  const [simPriceMultiplier, setSimPriceMultiplier] = useState(1);
 
   // Form state
   const [formCoin, setFormCoin] = useState(COINS[0].id);
@@ -103,16 +126,27 @@ export default function PriceAlertsPage() {
 
   const prevPrices = useRef<PriceData>({});
 
-  // ── Load from localStorage ──
+  // ── Request notification permission ──
   useEffect(() => {
-    setMounted(true);
-    setAlerts(loadAlerts());
+    if (typeof window !== "undefined" && "Notification" in window) {
+      setNotificationPermission(
+        (Notification.permission as "granted" | "denied" | "default") || "default"
+      );
+    }
   }, []);
 
-  // ── Persist to localStorage ──
-  useEffect(() => {
-    if (mounted) saveAlerts(alerts);
-  }, [alerts, mounted]);
+  const requestNotificationPermission = async () => {
+    if (!("Notification" in window)) {
+      alert("Your browser doesn't support notifications");
+      return;
+    }
+    try {
+      const permission = await Notification.requestPermission();
+      setNotificationPermission(permission as "granted" | "denied" | "default");
+    } catch (err) {
+      console.error("Notification permission error:", err);
+    }
+  };
 
   // ── Fetch prices ──
   const fetchPrices = useCallback(async () => {
@@ -125,9 +159,9 @@ export default function PriceAlertsPage() {
       const normalized: PriceData = {};
       for (const id of Object.keys(raw)) {
         normalized[id] = {
-          usd: raw[id].usd,
-          eur: raw[id].eur,
-          gbp: raw[id].gbp,
+          usd: raw[id].usd * simPriceMultiplier,
+          eur: raw[id].eur * simPriceMultiplier,
+          gbp: raw[id].gbp * simPriceMultiplier,
           change24h: raw[id].usd_24h_change };
       }
       setPrices(normalized);
@@ -138,7 +172,7 @@ export default function PriceAlertsPage() {
       setLoading(false);
       setLastUpdated(new Date().toLocaleTimeString());
     }
-  }, []);
+  }, [simPriceMultiplier]);
 
   useEffect(() => {
     fetchPrices();
@@ -160,7 +194,7 @@ export default function PriceAlertsPage() {
           id: genId(),
           msg: `🎯 ${alert.coinSymbol} is ${alert.condition} ${formatPrice(alert.targetPrice, alert.currency)}! Current: ${formatPrice(price, alert.currency)}`,
           color: alert.condition === "above" ? "#3fb950" : "#f85149" });
-        return { ...alert, triggered: true, triggeredAt: Date.now(), triggeredPrice: price };
+        return { ...alert, triggered: true, triggeredAt: Date.now(), triggeredPrice: price, bellAnimating: true };
       }
       return alert;
     }));
@@ -216,40 +250,75 @@ export default function PriceAlertsPage() {
   const currentFormPrice = prices[formCoin]?.[formCurrency] ?? 0;
 
   return (
-    <div className="min-h-screen" style={{ background: "var(--color-bg, #0d1117)" }}>
-      {/* ── Toast Notifications ── */}
-      <div style={{ position: "fixed", top: 20, right: 20, zIndex: 1000, display: "flex", flexDirection: "column", gap: 8, maxWidth: 360 }}>
-        {notifications.map(n => (
-          <div key={n.id} style={{
-            padding: "12px 16px", borderRadius: 10, background: "rgba(22,27,34,0.98)",
-            border: `1px solid ${n.color}60`, color: "#e6edf3", fontSize: 14, fontWeight: 600,
-            display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12,
-            boxShadow: `0 4px 20px ${n.color}30` }}>
-            <span>{n.msg}</span>
-            <button onClick={() => dismissNotif(n.id)} style={{ background: "none", border: "none", color: "#8b949e", cursor: "pointer", fontSize: 16, padding: 0, flexShrink: 0 }}>×</button>
-          </div>
-        ))}
-      </div>
+    <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
 
-      <div style={{ maxWidth: 960, margin: "0 auto", padding: "2rem 1rem 4rem" }}>
-        <Breadcrumb items={[
-          { label: "Home", href: "/" },
-          { label: "Tools", href: "/tools" },
-          { label: "Price Alerts" },
-        ]} />
-
-        {/* ── Header ── */}
-        <div style={{ marginTop: "1.5rem", marginBottom: "2rem" }}>
-          <div style={{ display: "inline-block", padding: "3px 12px", background: "#F0B90B20", border: "1px solid #F0B90B40", borderRadius: 20, fontSize: 12, color: "#F0B90B", fontWeight: 700, marginBottom: 12 }}>
-            🔔 Price Alerts
-          </div>
-          <h1 style={{ fontSize: "clamp(1.75rem, 4vw, 2.5rem)", fontWeight: 900, color: "#e6edf3", marginBottom: "0.5rem" }}>
-            Crypto Price Alerts
-          </h1>
-          <p style={{ fontSize: "1.05rem", color: "#8b949e", maxWidth: 540 }}>
-            Set custom price targets for any coin. Get notified when prices cross your thresholds — no account required.
-          </p>
+      <div className="min-h-screen" style={{ background: "var(--color-bg, #0d1117)" }}>
+        {/* ── Toast Notifications ── */}
+        <div style={{ position: "fixed", top: 20, right: 20, zIndex: 1000, display: "flex", flexDirection: "column", gap: 8, maxWidth: 360 }}>
+          {notifications.map(n => (
+            <div key={n.id} style={{
+              padding: "12px 16px", borderRadius: 10, background: "rgba(22,27,34,0.98)",
+              border: `1px solid ${n.color}60`, color: "#e6edf3", fontSize: 14, fontWeight: 600,
+              display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12,
+              boxShadow: `0 4px 20px ${n.color}30`, animation: "slideIn 0.3s ease-out" }}>
+              <span>{n.msg}</span>
+              <button onClick={() => dismissNotif(n.id)} style={{ background: "none", border: "none", color: "#8b949e", cursor: "pointer", fontSize: 16, padding: 0, flexShrink: 0 }}>×</button>
+            </div>
+          ))}
         </div>
+
+        <div style={{ maxWidth: 960, margin: "0 auto", padding: "2rem 1rem 4rem" }}>
+          <Breadcrumb items={[
+            { label: "Home", href: "/" },
+            { label: "Tools", href: "/tools" },
+            { label: "Price Alerts" },
+          ]} />
+
+          {/* ── Header ── */}
+          <div style={{ marginTop: "1.5rem", marginBottom: "2rem" }}>
+            <div style={{ display: "inline-block", padding: "3px 12px", background: "#F0B90B20", border: "1px solid #F0B90B40", borderRadius: 20, fontSize: 12, color: "#F0B90B", fontWeight: 700, marginBottom: 12 }}>
+              🔔 Price Alerts
+            </div>
+            <h1 style={{ fontSize: "clamp(1.75rem, 4vw, 2.5rem)", fontWeight: 900, color: "#e6edf3", marginBottom: "0.5rem" }}>
+              Crypto Price Alerts
+            </h1>
+            <p style={{ fontSize: "1.05rem", color: "#8b949e", maxWidth: 540 }}>
+              Set custom price targets for BTC, ETH, SOL, AVAX, MATIC, DOT, LINK, and UNI. Get notified when prices cross your thresholds — no account required.
+            </p>
+
+            {/* Notification Permission Button */}
+            {notificationPermission !== "granted" && (
+              <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", alignItems: "center", padding: "0.75rem 1rem", background: "rgba(79, 195, 247, 0.1)", border: "1px solid rgba(79, 195, 247, 0.3)", borderRadius: 10 }}>
+                <span style={{ fontSize: "0.9rem", color: "#8b949e" }}>Enable browser notifications for real-time alerts:</span>
+                <button
+                  onClick={requestNotificationPermission}
+                  style={{
+                    padding: "0.4rem 0.8rem",
+                    background: "#4FC3F7",
+                    color: "#0d1117",
+                    border: "none",
+                    borderRadius: 6,
+                    fontWeight: 700,
+                    fontSize: "0.85rem",
+                    cursor: "pointer",
+                    whiteSpace: "nowrap"
+                  }}>
+                  Enable Notifications
+                </button>
+              </div>
+            )}
+            {notificationPermission === "granted" && (
+              <div style={{ marginTop: "1rem", display: "flex", alignItems: "center", gap: "0.5rem", padding: "0.6rem 1rem", background: "rgba(63, 185, 80, 0.1)", border: "1px solid rgba(63, 185, 80, 0.3)", borderRadius: 10 }}>
+                <span style={{ fontSize: "1rem" }}>✅</span>
+                <span style={{ fontSize: "0.9rem", color: "#3fb950" }}>Notifications enabled</span>
+              </div>
+            )}
+          </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) minmax(0,1.6fr)", gap: "1.5rem", alignItems: "start" }}>
 
@@ -431,7 +500,18 @@ export default function PriceAlertsPage() {
                           <div style={{ fontSize: 11, color: "#8b949e" }}>{alert.coinName}</div>
                         </div>
                       </div>
-                      <div style={{ display: "flex", gap: 6 }}>
+                      <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+                        {alert.triggered && alert.bellAnimating && (
+                          <span
+                            style={{
+                              fontSize: "1.2rem",
+                              animation: "bellRing 0.5s ease-in-out 2",
+                              transformOrigin: "center top",
+                              display: "inline-block"
+                            }}>
+                            🔔
+                          </span>
+                        )}
                         {!alert.triggered && (
                           <button onClick={() => handleToggle(alert.id)} title={alert.active ? "Pause" : "Resume"} style={{ ...iconBtnStyle, color: alert.active ? "#F0B90B" : "#3fb950" }}>
                             {alert.active ? "⏸" : "▶"}
@@ -492,30 +572,146 @@ export default function PriceAlertsPage() {
           </div>
         </div>
 
-        {/* ── Info Section ── */}
-        <div style={{ marginTop: "3rem" }}>
-          <h2 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#e6edf3", marginBottom: "1.25rem" }}>About Crypto Price Alerts</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14 }}>
-            {[
-              { icon: "🔒", title: "100% Private", body: "All alerts are stored in your browser's local storage. Zero data is sent to our servers." },
-              { icon: "🔄", title: "60s Refresh", body: "Prices are fetched from CoinGecko every 60 seconds so your alerts trigger promptly." },
-              { icon: "📱", title: "No Account Needed", body: "Create and manage alerts without signing up. Your alerts persist in your browser." },
-              { icon: "⚡", title: "Instant Triggers", body: "When a price target is hit, you'll see a toast notification on screen immediately." },
-            ].map(box => (
-              <div key={box.title} style={{ padding: "1rem 1.2rem", background: "rgba(22,27,34,0.8)", border: "1px solid rgba(48,54,61,0.5)", borderRadius: 12 }}>
-                <div style={{ fontSize: 24, marginBottom: 8 }}>{box.icon}</div>
-                <h3 style={{ fontSize: 14, fontWeight: 700, color: "#e6edf3", marginBottom: 6 }}>{box.title}</h3>
-                <p style={{ fontSize: 12, color: "#8b949e", lineHeight: 1.6, margin: 0 }}>{box.body}</p>
-              </div>
-            ))}
+          {/* ── Info Section ── */}
+          <div style={{ marginTop: "3rem" }}>
+            <h2 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#e6edf3", marginBottom: "1.25rem" }}>About Crypto Price Alerts</h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14 }}>
+              {[
+                { icon: "🔒", title: "100% Private", body: "All alerts stored in React state—no localStorage, no server sync. Your data stays in your browser." },
+                { icon: "🔄", title: "60s Refresh", body: "Prices fetched from CoinGecko API every 60 seconds for real-time tracking and instant triggers." },
+                { icon: "📱", title: "No Account Needed", body: "Create and manage alerts instantly. No signup, no login, no email required." },
+                { icon: "🔔", title: "Browser Notifications", body: "Enable notifications to get alerted even when you're not on the page. Full browser support." },
+              ].map(box => (
+                <div key={box.title} style={{ padding: "1rem 1.2rem", background: "rgba(22,27,34,0.8)", border: "1px solid rgba(48,54,61,0.5)", borderRadius: 12 }}>
+                  <div style={{ fontSize: 24, marginBottom: 8 }}>{box.icon}</div>
+                  <h3 style={{ fontSize: 14, fontWeight: 700, color: "#e6edf3", marginBottom: 6 }}>{box.title}</h3>
+                  <p style={{ fontSize: 12, color: "#8b949e", lineHeight: 1.6, margin: 0 }}>{box.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ── FAQ Section ── */}
+          <div style={{ marginTop: "3rem", marginBottom: "2rem" }}>
+            <h2 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#e6edf3", marginBottom: "1.25rem" }}>Frequently Asked Questions</h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+              {[
+                {
+                  q: "Are my alerts saved permanently?",
+                  a: "Alerts are stored in React state during your current session. They will reset if you refresh the page. For persistent alerts, consider using a crypto exchange or portfolio tracker with built-in alert features."
+                },
+                {
+                  q: "How often are prices updated?",
+                  a: "Prices are fetched from CoinGecko's free API every 60 seconds. Alerts are checked whenever prices update, so triggers happen within ~1 minute of a price crossing your target."
+                },
+                {
+                  q: "What cryptocurrencies can I set alerts for?",
+                  a: "You can set alerts for Bitcoin (BTC), Ethereum (ETH), Solana (SOL), Avalanche (AVAX), Polygon (MATIC), Polkadot (DOT), Chainlink (LINK), and Uniswap (UNI) in USD, EUR, or GBP."
+                },
+                {
+                  q: "Do I need to keep the page open?",
+                  a: "Yes, the page must remain open for alerts to trigger. If you close the tab or browser, price monitoring stops. However, enabling browser notifications will alert you even if the browser window is not in focus."
+                },
+                {
+                  q: "Can I set multiple alerts for the same coin?",
+                  a: "Absolutely! You can create as many alerts as you want for the same coin at different price levels. For example, set both a $50k and $60k alert for Bitcoin."
+                },
+                {
+                  q: "What happens when an alert triggers?",
+                  a: "You'll see a toast notification appear on screen with the coin symbol and current price. If notifications are enabled, your browser will also show a native notification. The alert will be marked as 'Triggered' in the list."
+                },
+                {
+                  q: "Can I reuse triggered alerts?",
+                  a: "Yes! Click the reset button (↺) next to any triggered alert to reactivate it. It will start monitoring again from your original target price."
+                },
+                {
+                  q: "Why are some prices showing as 'Cached'?",
+                  a: "If the CoinGecko API is temporarily unavailable, prices are cached from your last successful fetch. The page will continue to show the last known prices until the connection is restored."
+                },
+              ].map((faq, idx) => (
+                <details
+                  key={idx}
+                  style={{
+                    background: "rgba(22,27,34,0.8)",
+                    border: "1px solid rgba(48,54,61,0.6)",
+                    borderRadius: 10,
+                    padding: "1rem 1.25rem",
+                    cursor: "pointer"
+                  }}>
+                  <summary style={{ color: "#e6edf3", fontWeight: 700, fontSize: "0.95rem", userSelect: "none" }}>
+                    {faq.q}
+                  </summary>
+                  <p style={{ color: "#8b949e", fontSize: "0.875rem", margin: "0.75rem 0 0 0", lineHeight: "1.6" }}>
+                    {faq.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </div>
+
+          {/* Price Simulator for Testing (Optional) */}
+          <div style={{ marginTop: "2rem", padding: "1rem", background: "rgba(22,27,34,0.5)", border: "1px solid rgba(48,54,61,0.4)", borderRadius: 10 }}>
+            <label style={{ fontSize: "0.85rem", fontWeight: 700, color: "#8b949e", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+              🧪 Price Simulator (for testing):
+            </label>
+            <div style={{ marginTop: "0.5rem", display: "flex", gap: "0.5rem", alignItems: "center", flexWrap: "wrap" }}>
+              {[0.8, 0.9, 1, 1.1, 1.2].map(mult => (
+                <button
+                  key={mult}
+                  onClick={() => setSimPriceMultiplier(mult)}
+                  style={{
+                    padding: "0.4rem 0.8rem",
+                    borderRadius: 6,
+                    fontSize: "0.8rem",
+                    fontWeight: 700,
+                    cursor: "pointer",
+                    border: simPriceMultiplier === mult ? "1px solid #6366f1" : "1px solid rgba(48,54,61,0.5)",
+                    background: simPriceMultiplier === mult ? "rgba(99,102,241,0.2)" : "transparent",
+                    color: simPriceMultiplier === mult ? "#818cf8" : "#8b949e"
+                  }}>
+                  {mult === 1 ? "Reset" : `${mult < 1 ? "-" : "+"}${Math.abs(Math.round((mult - 1) * 100))}%`}
+                </button>
+              ))}
+            </div>
+            <p style={{ fontSize: "0.75rem", color: "#6e7681", margin: "0.5rem 0 0 0" }}>
+              Click buttons to simulate price changes. This helps test if your alerts trigger correctly.
+            </p>
           </div>
         </div>
-      </div>
 
-      <style>{`
-        select option { background: #0d1117; color: #e6edf3; }
-      `}</style>
-    </div>
+        <style>{`
+          select option { background: #0d1117; color: #e6edf3; }
+          details summary::marker { color: #8b949e; }
+          details[open] summary::marker { color: #6366f1; }
+
+          @keyframes slideIn {
+            from {
+              opacity: 0;
+              transform: translateX(100px);
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          @keyframes bellRing {
+            0%, 100% { transform: rotate(0deg); }
+            10% { transform: rotate(-10deg); }
+            20% { transform: rotate(10deg); }
+            30% { transform: rotate(-10deg); }
+            40% { transform: rotate(10deg); }
+            50% { transform: rotate(0deg); }
+          }
+
+          @media (max-width: 768px) {
+            div[style*="gridTemplateColumns: \"minmax(0,1fr)"] {
+              grid-template-columns: 1fr !important;
+            }
+          }
+        `}</style>
+      </div>
+    </>
   );
 }
 

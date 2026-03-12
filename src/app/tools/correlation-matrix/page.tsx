@@ -2,12 +2,6 @@
 
 import React, { useState, useMemo } from 'react';
 
-export const metadata = {
-  title: 'Crypto Correlation Matrix - Asset Correlation Heatmap | degen0x',
-  description: 'Analyze correlation patterns between major cryptocurrencies including BTC, ETH, SOL, and more. Interactive heatmap with real-time insights.',
-  keywords: 'crypto correlation, cryptocurrency analysis, BTC ETH correlation, asset correlations',
-};
-
 const ASSETS = ['BTC', 'ETH', 'SOL', 'BNB', 'XRP', 'ADA', 'AVAX', 'DOT', 'LINK', 'MATIC', 'ATOM', 'UNI'];
 
 // Pre-computed correlation matrices for different time periods

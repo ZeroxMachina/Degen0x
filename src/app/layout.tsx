@@ -15,6 +15,7 @@ import BackToTop from "@/components/BackToTop";
 import CookieConsent from "@/components/CookieConsent";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/constants";
 import RiskDisclaimer from "@/components/RiskDisclaimer";
+import WebVitals from "@/components/WebVitals";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -124,6 +125,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <BackToTop />
               <CookieConsent />
               <ExitIntentPopup />
+              <WebVitals />
             </ThemeProvider>
           </DegenModeProvider>
         </WalletProvider>

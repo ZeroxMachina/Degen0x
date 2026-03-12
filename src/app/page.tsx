@@ -7,11 +7,11 @@ import TrendingCoins from "@/components/TrendingCoins";
 import MarketOverview from "@/components/MarketOverview";
 import LatestNews from "@/components/LatestNews";
 import WhaleAlertFeed from "@/components/WhaleAlertFeed";
-import { CATEGORIES, SITE_NAME, CURRENT_MONTH, CURRENT_YEAR } from "@/lib/constants";
+import { CATEGORIES, SITE_NAME, SITE_DESCRIPTION, CURRENT_MONTH, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `${SITE_NAME} - Compare Crypto Exchanges, Wallets & DeFi`,
-  description: "degen0x is the most trusted crypto comparison platform. Compare exchanges, wallets, DeFi protocols, and more. Expert reviews, tools, and guides.",
+  description: SITE_DESCRIPTION,
 };
 
 const POPULAR_GUIDES = [
