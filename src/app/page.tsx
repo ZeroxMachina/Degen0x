@@ -11,6 +11,7 @@ import CryptoQuiz from "@/components/CryptoQuiz";
 import PortfolioSimulator from "@/components/PortfolioSimulator";
 import MarketPulse from "@/components/MarketPulse";
 import { CATEGORIES, SITE_NAME, SITE_DESCRIPTION, CURRENT_MONTH, CURRENT_YEAR } from "@/lib/constants";
+import { getAllPosts, getCategoryMeta } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: `${SITE_NAME} - Compare Crypto Exchanges, Wallets & DeFi`,
@@ -56,6 +57,26 @@ export default function HomePage() {
               >
                 Start Learning
               </Link>
+            </div>
+          </div>
+
+          {/* Stats Counter */}
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold gradient-text">300+</div>
+              <div className="text-sm text-[var(--color-text-secondary)]">Published Pages</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold gradient-text">55+</div>
+              <div className="text-sm text-[var(--color-text-secondary)]">Interactive Tools</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold gradient-text">40+</div>
+              <div className="text-sm text-[var(--color-text-secondary)]">In-Depth Guides</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold gradient-text">100%</div>
+              <div className="text-sm text-[var(--color-text-secondary)]">Free Forever</div>
             </div>
           </div>
         </div>
@@ -286,6 +307,49 @@ export default function HomePage() {
               </div>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Latest from Blog */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">Latest from the Blog</h2>
+            <p className="text-[var(--color-text-secondary)] mt-2">Fresh analysis, news, and insights from the degen0x team.</p>
+          </div>
+          <Link href="/blog" className="text-[var(--color-primary)] font-semibold text-sm hover:underline hidden sm:block">
+            View all posts →
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {getAllPosts().slice(0, 3).map((post) => {
+            const catMeta = getCategoryMeta(post.category);
+            return (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="glass p-6 card-hover flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-semibold px-2 py-1 rounded-md" style={{ backgroundColor: catMeta.color + "20", color: catMeta.color }}>
+                      {catMeta.icon} {catMeta.label}
+                    </span>
+                    <span className="text-xs text-[var(--color-text-secondary)]">
+                      {post.readingTime ?? 3} min read
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{post.title}</h3>
+                  <p className="text-sm text-[var(--color-text-secondary)] mb-4 line-clamp-2">{post.excerpt}</p>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-[var(--color-text-secondary)]">{post.author.name}</span>
+                  <span className="text-[var(--color-primary)] font-semibold text-sm">Read →</span>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+        <div className="mt-6 text-center sm:hidden">
+          <Link href="/blog" className="text-[var(--color-primary)] font-semibold text-sm hover:underline">
+            View all posts →
+          </Link>
         </div>
       </section>
 

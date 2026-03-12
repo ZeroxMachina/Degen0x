@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>degen0x - Crypto Comparisons</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-light: #f0f2f8;
+            --bg-dark: #080d1c;
+            --primary: #6366f1;
+            --secondary: #06b6d4;
+            --card-bg: rgba(255, 255, 255, 0.6);
+            --card-border: rgba(0, 0, 0, 0.06);
+            --text-dark: #1a1a2e;
+            --text-light: #666;
+            --border-radius-lg: 20px;
+            --border-radius-sm: 14px;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--card-border);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Main content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero with Search */
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .search-bar {
+            max-width: 500px;
+            margin: 0 auto 2rem;
+            display: flex;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
+            font-family: inherit;
+            font-size: 1rem;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+        }
+
+        .search-bar input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .search-bar button {
+            padding: 1rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        /* Filter Pills */
+        .filter-pills {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .pill {
+            padding: 0.5rem 1rem;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .pill:hover,
+        .pill.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Section */
+        .section {
+            padding: 3rem 0;
+            border-top: 1px solid var(--card-border);
+        }
+
+        .section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        /* Featured Comparisons */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .featured-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .featured-card p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .featured-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: gap 0.3s;
+        }
+
+        .featured-card a:hover {
+            gap: 0.5rem;
+        }
+
+        /* Popular Head-to-Head */
+        .versus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .versus-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .versus-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .versus-item {
+            flex: 1;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .versus-badge {
+            background: var(--secondary);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        /* Quick Guides */
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .guide-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .guide-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .guide-meta {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .guide-meta::after {
+            content: " →";
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Trust + Newsletter Section */
+        .trust-newsletter {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .trust-section h3,
+        .newsletter-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .trust-stat {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .trust-stat-icon {
+            font-size: 1.5rem;
+        }
+
+        .trust-stat-text strong {
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .trust-stat-text {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .newsletter-form input {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-sm);
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .newsletter-form button {
+            padding: 0.75rem 1rem;
+            background: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: #0ea5e9;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--card-border);
+            margin-top: 4rem;
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .featured-grid,
+            .guides-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-newsletter {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .versus-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .search-bar {
+                flex-direction: column;
+            }
+
+            .search-bar input {
+                border-radius: var(--border-radius-sm);
+            }
+
+            .search-bar button {
+                border-radius: var(--border-radius-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">degen0x</div>
+            <nav>
+                <a href="#exchanges">Exchanges</a>
+                <a href="#wallets">Wallets</a>
+                <a href="#learn">Learn</a>
+                <a href="#tools">Tools</a>
+                <a href="#compare">Compare</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero with Search -->
+        <section class="hero">
+            <h1>Find the best crypto products</h1>
+            <form class="search-bar">
+                <input type="text" placeholder="Search exchanges, wallets, DeFi platforms...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="filter-pills">
+                <span class="pill active">All</span>
+                <span class="pill">Exchanges</span>
+                <span class="pill">Wallets</span>
+                <span class="pill">DeFi</span>
+                <span class="pill">Taxes</span>
+                <span class="pill">Cards</span>
+                <span class="pill">Learn</span>
+            </div>
+        </section>
+
+        <!-- Featured Comparisons -->
+        <section class="section">
+            <h2>Featured Comparisons</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <h3>Best Exchanges 2026</h3>
+                    <p>Side-by-side comparison of Coinbase, Kraken, Binance, and more. Find the best for your needs.</p>
+                    <a href="#">Compare Now →</a>
+                </div>
+                <div class="featured-card">
+                    <h3>Best Wallets 2026</h3>
+                    <p>Hardware, software, and self-custody solutions reviewed. Security, features, and fees compared.</p>
+                    <a href="#">Compare Now →</a>
+                </div>
+                <div class="featured-card">
+                    <h3>Best DeFi Platforms 2026</h3>
+                    <p>Lending, staking, and yield farming protocols. APYs, risks, and features analyzed.</p>
+                    <a href="#">Compare Now →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Head-to-Head -->
+        <section class="section">
+            <h2>Popular Comparisons</h2>
+            <div class="versus-grid">
+                <div class="versus-card">
+                    <div class="versus-item">Coinbase</div>
+                    <div class="versus-badge">VS</div>
+                    <div class="versus-item">Binance</div>
+                </div>
+                <div class="versus-card">
+                    <div class="versus-item">Ledger</div>
+                    <div class="versus-badge">VS</div>
+                    <div class="versus-item">Trezor</div>
+                </div>
+                <div class="versus-card">
+                    <div class="versus-item">Aave</div>
+                    <div class="versus-badge">VS</div>
+                    <div class="versus-item">Compound</div>
+                </div>
+                <div class="versus-card">
+                    <div class="versus-item">Koinly</div>
+                    <div class="versus-badge">VS</div>
+                    <div class="versus-item">CoinTracker</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Guides -->
+        <section class="section">
+            <h2>Quick Guides</h2>
+            <div class="guides-grid">
+                <div class="guide-card">
+                    <h3>Crypto for Beginners</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">Everything you need to get started safely and securely.</p>
+                    <div class="guide-meta">5 min read</div>
+                </div>
+                <div class="guide-card">
+                    <h3>How to Buy Bitcoin</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">Step-by-step guide to purchasing your first crypto.</p>
+                    <div class="guide-meta">8 min read</div>
+                </div>
+                <div class="guide-card">
+                    <h3>Crypto Tax Guide</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">Complete guide to reporting and minimizing tax liability.</p>
+                    <div class="guide-meta">12 min read</div>
+                </div>
+                <div class="guide-card">
+                    <h3>What is DeFi?</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">Introduction to decentralized finance and smart contracts.</p>
+                    <div class="guide-meta">7 min read</div>
+                </div>
+                <div class="guide-card">
+                    <h3>Staking Guide</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">How to earn rewards by staking your cryptocurrency.</p>
+                    <div class="guide-meta">10 min read</div>
+                </div>
+                <div class="guide-card">
+                    <h3>Security Best Practices</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem;">Protect your assets with these essential security measures.</p>
+                    <div class="guide-meta">9 min read</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust + Newsletter -->
+        <section class="section">
+            <div class="trust-newsletter">
+                <div class="trust-section">
+                    <h3>Why Trust degen0x?</h3>
+                    <div class="trust-stat">
+                        <div class="trust-stat-icon">✓</div>
+                        <div class="trust-stat-text">
+                            <strong>Independent Reviews</strong>
+                            No sponsorships or bias
+                        </div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-stat-icon">📊</div>
+                        <div class="trust-stat-text">
+                            <strong>Data-Driven</strong>
+                            Real fees and features
+                        </div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-stat-icon">🔄</div>
+                        <div class="trust-stat-text">
+                            <strong>Updated Monthly</strong>
+                            Always current information
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter-section">
+                    <h3>Get Weekly Updates</h3>
+                    <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">New comparisons and guides delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="your@email.com" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 degen0x. Independent crypto research and comparisons.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Privacy • Terms • Contact</p>
+    </footer>
+</body>
+</html>

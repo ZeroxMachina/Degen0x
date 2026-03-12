@@ -232,30 +232,31 @@ export default function GlobalSearch() {
           display: flex;
           align-items: center;
           gap: 8px;
-          background: rgba(255,255,255,0.05);
-          border: 1px solid rgba(255,255,255,0.12);
+          background: var(--glass-subtle-bg, rgba(0,0,0,0.04));
+          border: 1px solid var(--glass-border, rgba(0,0,0,0.08));
           border-radius: 8px;
           padding: 6px 12px;
-          color: rgba(255,255,255,0.5);
+          color: var(--color-text-secondary, #64748b);
           font-size: 13px;
           cursor: pointer;
           transition: all 0.15s;
           min-width: 180px;
         }
         .search-trigger:hover {
-          background: rgba(255,255,255,0.08);
-          border-color: rgba(255,255,255,0.2);
-          color: rgba(255,255,255,0.7);
+          background: var(--glass-bg-hover, rgba(0,0,0,0.06));
+          border-color: var(--glass-border-hover, rgba(0,0,0,0.15));
+          color: var(--color-text, #1a1a2e);
         }
         .search-trigger-icon { font-size: 14px; }
         .search-trigger-text { flex: 1; text-align: left; }
         .search-trigger-kbd {
-          background: rgba(255,255,255,0.08);
-          border: 1px solid rgba(255,255,255,0.12);
+          background: var(--glass-subtle-bg, rgba(0,0,0,0.04));
+          border: 1px solid var(--glass-border, rgba(0,0,0,0.08));
           border-radius: 4px;
           padding: 1px 5px;
           font-size: 11px;
           font-family: monospace;
+          color: var(--color-text-secondary, #64748b);
         }
 
         .search-overlay {

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "42 Free Crypto Tools — Advanced Charting, Tax Optimizer, Portfolio Analytics & More | degen0x",
+  title: "45 Free Crypto Tools — Advanced Charting, Tax Optimizer, Portfolio Analytics & More | degen0x",
   description: "Free crypto tools including advanced charting (TradingView-style), crypto tax optimizer with loss harvesting, portfolio analytics, crypto alerts dashboard, crypto watchlist, social metrics aggregator, portfolio rebalancer, NFT portfolio tracker, DeFi position manager, airdrop tracker, yield farming calculator, market heatmap, BTC dominance tracker, volatility scanner, liquidation heatmap, funding rate tracker, fear & greed timeline, bridge aggregator, exchange fee comparison, portfolio widget, on-chain analytics, and more.",
 };
 
@@ -393,6 +393,33 @@ const TOOLS = [
     description: "Scan 28 coins for realized volatility (1d/7d/30d/90d), ATR, Bollinger Band width, and daily range. Filter by risk level and sector. Find breakout setups.",
     tags: ["28 Coins", "ATR + BB Width", "Risk Levels"],
     badge: "🆕 Day 10",
+  },
+  {
+    href: "/tools/vc-funding-tracker",
+    icon: "💸",
+    color: "#10b981",
+    title: "VC Funding Tracker",
+    description: "Track the latest crypto venture capital funding rounds. See which projects are raising, who's investing, and where the smart money is flowing in Q1 2026.",
+    tags: ["VC Deals", "Investor Rankings", "Sector Analysis"],
+    badge: "🆕 Sprint 13",
+  },
+  {
+    href: "/tools/chain-comparison",
+    icon: "⛓️",
+    color: "#6366f1",
+    title: "Blockchain Comparison Tool",
+    description: "Compare L1 and L2 blockchains side-by-side. TPS, fees, TVL, finality, dApp counts, and strengths/weaknesses for Ethereum, Solana, Arbitrum, Base, and more.",
+    tags: ["8 Chains", "Side-by-Side", "Leaderboard"],
+    badge: "🆕 Sprint 13",
+  },
+  {
+    href: "/tools/wallet-security-audit",
+    icon: "🔐",
+    color: "#f43f5e",
+    title: "Wallet Security Audit",
+    description: "Interactive security checklist to audit your crypto wallet setup. Get a personalized security score, identify vulnerabilities, and receive actionable recommendations.",
+    tags: ["17 Checks", "Security Score", "Recommendations"],
+    badge: "🆕 Sprint 13",
   },
 ];
 

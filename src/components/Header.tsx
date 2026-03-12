@@ -4,6 +4,7 @@ import { useState } from "react";
 import { CATEGORIES, SITE_NAME } from "@/lib/constants";
 import ThemeToggle from "./ThemeToggle";
 import GlobalSearch from "./GlobalSearch";
+import NotificationCenter from "./NotificationCenter";
 
 const NAV_CATEGORIES = CATEGORIES.slice(0, 6);
 const MORE_CATEGORIES = CATEGORIES.slice(6);
@@ -57,9 +58,9 @@ export default function Header() {
                 onMouseEnter={() => setActiveDropdown("more")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="px-2.5 py-2 text-[13px] font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-all duration-300 rounded-xl hover:bg-[var(--glass-bg)]">
+                <span className="px-2.5 py-2 text-[13px] font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-all duration-300 rounded-xl hover:bg-[var(--glass-bg)] cursor-pointer whitespace-nowrap">
                   More
-                </button>
+                </span>
                 {activeDropdown === "more" && (
                   <div className="absolute top-full right-0 mt-2 w-64 p-2 glass-dropdown">
                     {MORE_CATEGORIES.map((cat) => (
@@ -78,6 +79,7 @@ export default function Header() {
             )}
             <div className="ml-3 flex items-center gap-2">
               <GlobalSearch />
+              <NotificationCenter />
               <ThemeToggle />
             </div>
           </div>
@@ -85,6 +87,7 @@ export default function Header() {
           {/* Mobile */}
           <div className="lg:hidden flex items-center gap-2">
             <GlobalSearch />
+            <NotificationCenter />
             <ThemeToggle />
             <button
               className="p-2 text-[var(--color-text-secondary)]"
