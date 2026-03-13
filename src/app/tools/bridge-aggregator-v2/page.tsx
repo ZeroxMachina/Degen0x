@@ -575,8 +575,3 @@ export default function BridgeAggregatorV2Page() {
     </div>
   );
 }
-
-export const metadata = {
-  title: "Multi-Chain Bridge Aggregator v2 | degen0x",
-  description: "Find the best cross-chain bridge routes with real-time gas estimation, route optimization, and comprehensive bridge analytics.",
-};
