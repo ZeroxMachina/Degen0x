@@ -32,6 +32,7 @@ import SocialProofBanner from "@/components/SocialProofBanner";
 import EventTracker from "@/components/EventTracker";
 import AIChatAssistant from "@/components/AIChatAssistant";
 import PerformanceMonitor from "@/components/PerformanceMonitor";
+import MarketPulse from "@/components/MarketPulse";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -158,6 +159,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <DegenModeProvider>
             <ThemeProvider>
               <AchievementProvider>
+                <MarketPulse />
                 <Header />
                 <ScrollingNewsTicker />
                 <main className="min-h-screen">

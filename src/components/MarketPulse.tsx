@@ -1,396 +1,262 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
-
-interface Mover {
-  symbol: string;
-  name: string;
-  change: number;
-  price: number;
-}
-
-interface TrendingToken {
-  symbol: string;
-  name: string;
-  rank: number;
-}
-
-interface GasPrice {
-  level: string;
-  gwei: number;
-  color: string;
-}
+import { useState, useEffect } from "react";
 
 interface MarketData {
-  topGainers: Mover[];
-  topLosers: Mover[];
-  bullishRatio: number;
-  volume24h: number;
-  trending: TrendingToken[];
-  gasPrices: GasPrice[];
+  btcPrice: number;
+  btcChange: number;
+  ethPrice: number;
+  ethChange: number;
+  solPrice: number;
+  solChange: number;
+  bnbPrice: number;
+  bnbChange: number;
+  totalMarketCap: number;
   btcDominance: number;
+  fearGreedIndex: number;
+  volume24h: number;
 }
 
-const generateMockData = (): MarketData => {
-  const generateMovers = (isGainer: boolean): Mover[] => {
-    const tokens = [
-      { symbol: 'SHIB', name: 'Shiba Inu', basePrice: 0.0000145 },
-      { symbol: 'DOGE', name: 'Dogecoin', basePrice: 0.38 },
-      { symbol: 'PEPE', name: 'Pepe', basePrice: 0.0000089 },
-      { symbol: 'FLOKI', name: 'Floki', basePrice: 0.000082 },
-      { symbol: 'BONK', name: 'Bonk', basePrice: 0.000028 },
-      { symbol: 'WIF', name: 'dogwifhat', basePrice: 1.25 },
-    ];
-
-    return tokens.slice(0, 3).map((token) => ({
-      symbol: token.symbol,
-      name: token.name,
-      change: isGainer ? Math.random() * 45 + 5 : -(Math.random() * 35 + 2),
-      price: token.basePrice * (1 + (Math.random() - 0.5) * 0.1),
-    }));
-  };
-
-  const generateTrending = (): TrendingToken[] => {
-    const trendingTokens = [
-      { symbol: 'SOL', name: 'Solana', rank: 1 },
-      { symbol: 'ARB', name: 'Arbitrum', rank: 2 },
-      { symbol: 'OP', name: 'Optimism', rank: 3 },
-      { symbol: 'AVAX', name: 'Avalanche', rank: 4 },
-      { symbol: 'BLAST', name: 'Blast', rank: 5 },
-    ];
-    return trendingTokens;
-  };
-
-  const generateGasPrices = (): GasPrice[] => [
-    {
-      level: 'Low',
-      gwei: Math.floor(Math.random() * 20 + 15),
-      color: '#3fb950',
-    },
-    {
-      level: 'Standard',
-      gwei: Math.floor(Math.random() * 35 + 20),
-      color: '#d29922',
-    },
-    {
-      level: 'Fast',
-      gwei: Math.floor(Math.random() * 50 + 35),
-      color: '#f85149',
-    },
-  ];
-
-  return {
-    topGainers: generateMovers(true),
-    topLosers: generateMovers(false),
-    bullishRatio: Math.random() * 30 + 45,
-    volume24h: Math.floor(Math.random() * 50 + 70),
-    trending: generateTrending(),
-    gasPrices: generateGasPrices(),
-    btcDominance: Math.random() * 10 + 45,
-  };
+const formatPrice = (price: number) => {
+  if (price >= 1000) {
+    return `$${(price / 1000).toFixed(1)}K`;
+  }
+  return `$${price.toFixed(2)}`;
 };
 
-const TopMovers: React.FC<{ gainers: Mover[]; losers: Mover[] }> = ({
-  gainers,
-  losers,
-}) => (
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-    <div className="rounded-lg border border-[#30363d] bg-[#1c2330] p-4">
-      <h3 className="text-sm font-semibold text-[#e6edf3] mb-3 flex items-center gap-2">
-        <span className="text-lg">📈</span> Top Gainers
-      </h3>
-      <div className="space-y-2">
-        {gainers.map((token) => (
-          <div
-            key={token.symbol}
-            className="flex items-center justify-between p-2 rounded hover:bg-[#161b22] transition-colors"
-          >
-            <div className="flex flex-col gap-1">
-              <span className="text-sm font-medium text-[#e6edf3]">
-                {token.symbol}
-              </span>
-              <span className="text-xs text-[#8b949e]">{token.name}</span>
-            </div>
-            <div className="text-right flex flex-col items-end gap-1">
-              <span className="text-xs text-[#8b949e]">${token.price.toFixed(6)}</span>
-              <span className="text-sm font-semibold text-[#3fb950]">
-                +{token.change.toFixed(2)}%
-              </span>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    <div className="rounded-lg border border-[#30363d] bg-[#1c2330] p-4">
-      <h3 className="text-sm font-semibold text-[#e6edf3] mb-3 flex items-center gap-2">
-        <span className="text-lg">📉</span> Top Losers
-      </h3>
-      <div className="space-y-2">
-        {losers.map((token) => (
-          <div
-            key={token.symbol}
-            className="flex items-center justify-between p-2 rounded hover:bg-[#161b22] transition-colors"
-          >
-            <div className="flex flex-col gap-1">
-              <span className="text-sm font-medium text-[#e6edf3]">
-                {token.symbol}
-              </span>
-              <span className="text-xs text-[#8b949e]">{token.name}</span>
-            </div>
-            <div className="text-right flex flex-col items-end gap-1">
-              <span className="text-xs text-[#8b949e]">${token.price.toFixed(6)}</span>
-              <span className="text-sm font-semibold text-[#f85149]">
-                {token.change.toFixed(2)}%
-              </span>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-);
-
-const MarketSentiment: React.FC<{ bullishRatio: number }> = ({
-  bullishRatio,
-}) => {
-  const bearishRatio = 100 - bullishRatio;
-
-  return (
-    <div className="rounded-lg border border-[#30363d] bg-[#1c2330] p-4">
-      <h3 className="text-sm font-semibold text-[#e6edf3] mb-4 flex items-center gap-2">
-        <span className="text-lg">📊</span> Market Sentiment
-      </h3>
-      <div className="flex items-center gap-2 mb-3">
-        <span className="text-xs text-[#8b949e] min-w-fit">Bearish</span>
-        <div className="flex-1 h-3 rounded-full overflow-hidden bg-[#161b22] relative">
-          <div
-            className="h-full bg-gradient-to-r from-[#3fb950] to-[#d29922] transition-all duration-500"
-            style={{ width: `${bullishRatio}%` }}
-          />
-        </div>
-        <span className="text-xs text-[#8b949e] min-w-fit">Bullish</span>
-      </div>
-      <div className="flex justify-between items-center">
-        <div className="text-center flex-1">
-          <div className="text-xs text-[#8b949e] mb-1">Bearish</div>
-          <div className="text-sm font-bold text-[#f85149]">
-            {bearishRatio.toFixed(1)}%
-          </div>
-        </div>
-        <div className="w-px h-6 bg-[#30363d]" />
-        <div className="text-center flex-1">
-          <div className="text-xs text-[#8b949e] mb-1">Bullish</div>
-          <div className="text-sm font-bold text-[#3fb950]">
-            {bullishRatio.toFixed(1)}%
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Volume24h: React.FC<{ volume: number }> = ({ volume }) => {
-  const bars = Array.from({ length: 12 }, () => Math.random() * 100);
-  const maxBar = Math.max(...bars);
-
-  return (
-    <div className="rounded-lg border border-[#30363d] bg-[#1c2330] p-4">
-      <h3 className="text-sm font-semibold text-[#e6edf3] mb-3 flex items-center gap-2">
-        <span className="text-lg">📈</span> 24h Volume
-      </h3>
-      <div className="text-2xl font-bold text-[#58a6ff] mb-4">
-        ${volume.toFixed(0)}B
-      </div>
-      <div className="flex items-end gap-1 h-12">
-        {bars.map((bar, idx) => (
-          <div
-            key={idx}
-            className="flex-1 bg-gradient-to-t from-[#58a6ff] to-[#79c0ff] rounded-t opacity-70 hover:opacity-100 transition-opacity"
-            style={{
-              height: `${(bar / maxBar) * 100}%`,
-              animation: `pulse 2s ease-in-out infinite`,
-              animationDelay: `${idx * 0.1}s`,
-            }}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const Trending: React.FC<{ tokens: TrendingToken[] }> = ({ tokens }) => (
-  <div className="rounded-lg border border-[#30363d] bg-[#1c2330] p-4">
-    <h3 className="text-sm font-semibold text-[#e6edf3] mb-3 flex items-center gap-2">
-      <span className="text-lg">🔥</span> Trending Now
-    </h3>
-    <div className="space-y-2">
-      {tokens.map((token) => (
-        <div
-          key={token.symbol}
-          className="flex items-center gap-3 p-2 rounded hover:bg-[#161b22] transition-colors"
-        >
-          <div className="flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-[#58a6ff] to-[#d29922] text-white text-xs font-bold">
-            {token.rank}
-          </div>
-          <div className="flex-1">
-            <div className="text-sm font-medium text-[#e6edf3]">
-              {token.symbol}
-            </div>
-            <div className="text-xs text-[#8b949e]">{token.name}</div>
-          </div>
-          <span className="text-lg">🔥</span>
-        </div>
-      ))}
-    </div>
-  </div>
-);
-
-const GasPrices: React.FC<{ prices: GasPrice[] }> = ({ prices }) => (
-  <div className="rounded-lg border border-[#30363d] bg-[#1c2330] p-4">
-    <h3 className="text-sm font-semibold text-[#e6edf3] mb-3 flex items-center gap-2">
-      <span className="text-lg">⛽</span> ETH Gas
-    </h3>
-    <div className="space-y-2">
-      {prices.map((price) => (
-        <div
-          key={price.level}
-          className="flex items-center justify-between p-2 rounded hover:bg-[#161b22] transition-colors"
-        >
-          <span className="text-sm text-[#8b949e]">{price.level}</span>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: price.color }} />
-            <span className="text-sm font-semibold text-[#e6edf3]">
-              {price.gwei} Gwei
-            </span>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-);
-
-const BTCDominance: React.FC<{ dominance: number }> = ({ dominance }) => {
-  const bgAngle = (dominance / 100) * 360;
-  const complementary = 100 - dominance;
-
-  return (
-    <div className="rounded-lg border border-[#30363d] bg-[#1c2330] p-4">
-      <h3 className="text-sm font-semibold text-[#e6edf3] mb-4 flex items-center gap-2">
-        <span className="text-lg">₿</span> BTC Dominance
-      </h3>
-      <div className="flex items-center gap-4">
-        <div className="relative w-24 h-24">
-          <svg
-            viewBox="0 0 100 100"
-            className="w-full h-full transform -rotate-90"
-          >
-            <circle
-              cx="50"
-              cy="50"
-              r="45"
-              fill="none"
-              stroke="#30363d"
-              strokeWidth="8"
-            />
-            <circle
-              cx="50"
-              cy="50"
-              r="45"
-              fill="none"
-              stroke="#f85149"
-              strokeWidth="8"
-              strokeDasharray={`${(dominance / 100) * 282.7} 282.7`}
-              strokeLinecap="round"
-              className="transition-all duration-500"
-            />
-          </svg>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-lg font-bold text-[#e6edf3]">
-                {dominance.toFixed(1)}%
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex-1">
-          <div className="mb-3">
-            <div className="flex items-center gap-2 mb-1">
-              <div className="w-2 h-2 rounded-full bg-[#f85149]" />
-              <span className="text-xs text-[#8b949e]">Bitcoin</span>
-            </div>
-            <div className="text-sm font-semibold text-[#e6edf3]">
-              {dominance.toFixed(1)}%
-            </div>
-          </div>
-          <div>
-            <div className="flex items-center gap-2 mb-1">
-              <div className="w-2 h-2 rounded-full bg-[#58a6ff]" />
-              <span className="text-xs text-[#8b949e]">Altcoins</span>
-            </div>
-            <div className="text-sm font-semibold text-[#e6edf3]">
-              {complementary.toFixed(1)}%
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+const formatMarketCap = (cap: number) => {
+  if (cap >= 1000000000000) {
+    return `$${(cap / 1000000000000).toFixed(2)}T`;
+  }
+  if (cap >= 1000000000) {
+    return `$${(cap / 1000000000).toFixed(2)}B`;
+  }
+  return `$${(cap / 1000000).toFixed(2)}M`;
 };
 
 export default function MarketPulse() {
-  const [data, setData] = useState<MarketData>(generateMockData());
+  const [market, setMarket] = useState<MarketData>({
+    btcPrice: 42350,
+    btcChange: 2.45,
+    ethPrice: 3680,
+    ethChange: 1.82,
+    solPrice: 145.30,
+    solChange: 3.21,
+    bnbPrice: 612.50,
+    bnbChange: 0.95,
+    totalMarketCap: 2450000000000,
+    btcDominance: 52.3,
+    fearGreedIndex: 68,
+    volume24h: 156000000000,
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setData(generateMockData());
-    }, 30000);
+      setMarket((prev) => ({
+        btcPrice: prev.btcPrice + (Math.random() - 0.5) * 100,
+        btcChange: prev.btcChange + (Math.random() - 0.5) * 0.5,
+        ethPrice: prev.ethPrice + (Math.random() - 0.5) * 30,
+        ethChange: prev.ethChange + (Math.random() - 0.5) * 0.3,
+        solPrice: prev.solPrice + (Math.random() - 0.5) * 2,
+        solChange: prev.solChange + (Math.random() - 0.5) * 0.2,
+        bnbPrice: prev.bnbPrice + (Math.random() - 0.5) * 5,
+        bnbChange: prev.bnbChange + (Math.random() - 0.5) * 0.2,
+        totalMarketCap: prev.totalMarketCap + (Math.random() - 0.5) * 10000000000,
+        btcDominance: Math.min(60, Math.max(45, prev.btcDominance + (Math.random() - 0.5) * 0.3)),
+        fearGreedIndex: Math.min(100, Math.max(0, prev.fearGreedIndex + (Math.random() - 0.5) * 2)),
+        volume24h: prev.volume24h + (Math.random() - 0.5) * 5000000000,
+      }));
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
+  const getChangeColor = (change: number) => {
+    return change >= 0 ? "#3fb950" : "#f85149";
+  };
+
+  const getFearGreedColor = (index: number) => {
+    if (index >= 75) return "#3fb950";
+    if (index >= 50) return "#f0883e";
+    return "#f85149";
+  };
+
+  const marketItems = [
+    { icon: "₿", label: "BTC", price: market.btcPrice, change: market.btcChange },
+    { icon: "Ξ", label: "ETH", price: market.ethPrice, change: market.ethChange },
+    { icon: "◎", label: "SOL", price: market.solPrice, change: market.solChange },
+    { icon: "🟨", label: "BNB", price: market.bnbPrice, change: market.bnbChange },
+  ];
+
   return (
-    <div className="w-full bg-[#161b22] p-4 md:p-6">
-      <style>{`
-        @keyframes pulse {
-          0%, 100% {
-            opacity: 0.7;
-          }
-          50% {
-            opacity: 1;
-          }
-        }
-      `}</style>
-
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-6">
-          <h1 className="text-3xl font-bold text-[#e6edf3] flex items-center gap-2">
-            <span className="text-4xl">📡</span> Market Pulse
-          </h1>
-          <p className="text-sm text-[#8b949e] mt-2">
-            Real-time crypto market insights • Updates every 30s
-          </p>
+    <div
+      style={{
+        width: "100%",
+        background: "var(--glass-bg, linear-gradient(135deg, rgba(98, 126, 234, 0.05), rgba(98, 126, 234, 0.02)))",
+        border: `1px solid var(--glass-border, rgba(98, 126, 234, 0.15))`,
+        borderRadius: 8,
+        padding: "12px 16px",
+        overflow: "hidden",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 16,
+          overflowX: "auto",
+          scrollBehavior: "smooth",
+          fontSize: 12,
+          color: "var(--color-text, #e6edf3)",
+        }}
+      >
+        {/* Market Cap */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
+            whiteSpace: "nowrap",
+            paddingRight: 12,
+            borderRight: "1px solid var(--glass-border, rgba(98, 126, 234, 0.15))",
+            flexShrink: 0,
+          }}
+        >
+          <span style={{ fontSize: 13, fontWeight: 700 }}>📊 Market Cap:</span>
+          <span style={{ fontWeight: 800, color: "var(--color-primary, #627EEA)" }}>
+            {formatMarketCap(market.totalMarketCap)}
+          </span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
-          <div className="lg:col-span-2">
-            <TopMovers gainers={data.topGainers} losers={data.topLosers} />
+        {/* Price Tickers */}
+        {marketItems.map((item) => (
+          <div
+            key={item.label}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 6,
+              whiteSpace: "nowrap",
+              padding: "6px 10px",
+              background: "rgba(98, 126, 234, 0.08)",
+              borderRadius: 6,
+              flexShrink: 0,
+            }}
+          >
+            <span style={{ fontSize: 14 }}>{item.icon}</span>
+            <span style={{ fontWeight: 700, fontSize: 11 }}>{item.label}</span>
+            <span style={{ fontWeight: 800, fontSize: 11 }}>
+              {formatPrice(item.price)}
+            </span>
+            <span
+              style={{
+                fontWeight: 700,
+                fontSize: 10,
+                color: getChangeColor(item.change),
+              }}
+            >
+              {item.change >= 0 ? "↑" : "↓"} {Math.abs(item.change).toFixed(2)}%
+            </span>
           </div>
-          <div>
-            <MarketSentiment bullishRatio={data.bullishRatio} />
-          </div>
+        ))}
+
+        {/* Volume */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
+            whiteSpace: "nowrap",
+            padding: "6px 10px",
+            background: "rgba(98, 126, 234, 0.08)",
+            borderRadius: 6,
+            flexShrink: 0,
+          }}
+        >
+          <span style={{ fontWeight: 700, fontSize: 11 }}>Volume 24h</span>
+          <span style={{ fontWeight: 800, fontSize: 11, color: "var(--color-primary, #627EEA)" }}>
+            {formatMarketCap(market.volume24h)}
+          </span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-          <Volume24h volume={data.volume24h} />
-          <Trending tokens={data.trending} />
+        {/* BTC Dominance */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
+            whiteSpace: "nowrap",
+            padding: "6px 10px",
+            background: "rgba(98, 126, 234, 0.08)",
+            borderRadius: 6,
+            flexShrink: 0,
+          }}
+        >
+          <span style={{ fontWeight: 700, fontSize: 11 }}>BTC Dom</span>
+          <span style={{ fontWeight: 800, fontSize: 11, color: "var(--color-primary, #627EEA)" }}>
+            {market.btcDominance.toFixed(1)}%
+          </span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <GasPrices prices={data.gasPrices} />
-          <BTCDominance dominance={data.btcDominance} />
+        {/* Fear & Greed Index */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
+            whiteSpace: "nowrap",
+            padding: "6px 10px",
+            background: "rgba(98, 126, 234, 0.08)",
+            borderRadius: 6,
+            flexShrink: 0,
+          }}
+        >
+          <span style={{ fontSize: 12 }}>😨</span>
+          <span style={{ fontWeight: 700, fontSize: 11 }}>F&G</span>
+          <span
+            style={{
+              fontWeight: 800,
+              fontSize: 11,
+              color: getFearGreedColor(market.fearGreedIndex),
+            }}
+          >
+            {market.fearGreedIndex.toFixed(0)}
+          </span>
         </div>
       </div>
+
+      {/* Scroll Indicator */}
+      <div
+        style={{
+          fontSize: 10,
+          color: "var(--color-text-secondary, #8b949e)",
+          marginTop: 8,
+          textAlign: "center",
+        }}
+      >
+        ← Scroll for more →
+      </div>
+
+      {/* Scrollbar Styles */}
+      <style>{`
+        div[style*="overflow-x: auto"]::-webkit-scrollbar {
+          height: 4px;
+        }
+
+        div[style*="overflow-x: auto"]::-webkit-scrollbar-track {
+          background: rgba(98, 126, 234, 0.08);
+          borderRadius: 4px;
+        }
+
+        div[style*="overflow-x: auto"]::-webkit-scrollbar-thumb {
+          background: rgba(98, 126, 234, 0.3);
+          borderRadius: 4px;
+        }
+
+        div[style*="overflow-x: auto"]::-webkit-scrollbar-thumb:hover {
+          background: rgba(98, 126, 234, 0.5);
+        }
+      `}</style>
     </div>
   );
 }

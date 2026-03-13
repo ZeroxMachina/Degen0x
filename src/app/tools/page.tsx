@@ -3,11 +3,29 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "92+ Free Crypto Tools — Advanced Charting, Tax Optimizer, Portfolio Rebalancer & More | degen0x",
+  title: "95+ Free Crypto Tools — Advanced Charting, Tax Optimizer, Portfolio Rebalancer & More | degen0x",
   description: "Free crypto tools including advanced charting (TradingView-style), crypto tax optimizer with loss harvesting, portfolio analytics, crypto alerts dashboard, crypto watchlist, social metrics aggregator, portfolio rebalancer, NFT portfolio tracker, DeFi position manager, airdrop tracker, yield farming calculator, market heatmap, BTC dominance tracker, volatility scanner, liquidation heatmap, funding rate tracker, fear & greed timeline, bridge aggregator, exchange fee comparison, portfolio widget, on-chain analytics, and more.",
 };
 
 const TOOLS = [
+  {
+    href: "/tools/market-movers",
+    icon: "🚀",
+    color: "#3fb950",
+    title: "Market Movers",
+    description: "Track the top gainers, biggest losers, and highest volume tokens in real-time. Interactive sparkline charts, advanced sorting, and instant search across 20+ tokens.",
+    tags: ["Gainers", "Losers", "Volume", "Sparklines"],
+    badge: "🆕 Sprint 33",
+  },
+  {
+    href: "/tools/defi-risk-scorer",
+    icon: "🛡️",
+    color: "#f0883e",
+    title: "DeFi Risk Scoring Engine",
+    description: "Assess risk across 15+ DeFi protocols with a 6-dimension scoring model. Radar charts, circular gauges, and side-by-side protocol comparison mode.",
+    tags: ["Risk Assessment", "Radar Charts", "Compare Mode"],
+    badge: "🆕 Sprint 33",
+  },
   {
     href: "/tools/portfolio-rebalancer",
     icon: "⚖️",
