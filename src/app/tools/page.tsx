@@ -3,11 +3,29 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "48 Free Crypto Tools — Advanced Charting, Tax Optimizer, Portfolio Analytics & More | degen0x",
+  title: "92+ Free Crypto Tools — Advanced Charting, Tax Optimizer, Portfolio Rebalancer & More | degen0x",
   description: "Free crypto tools including advanced charting (TradingView-style), crypto tax optimizer with loss harvesting, portfolio analytics, crypto alerts dashboard, crypto watchlist, social metrics aggregator, portfolio rebalancer, NFT portfolio tracker, DeFi position manager, airdrop tracker, yield farming calculator, market heatmap, BTC dominance tracker, volatility scanner, liquidation heatmap, funding rate tracker, fear & greed timeline, bridge aggregator, exchange fee comparison, portfolio widget, on-chain analytics, and more.",
 };
 
 const TOOLS = [
+  {
+    href: "/tools/portfolio-rebalancer",
+    icon: "⚖️",
+    color: "#6366f1",
+    title: "Portfolio Rebalancer",
+    description: "Visualize portfolio drift, set target allocations with preset strategies, and generate optimal rebalancing trades. Threshold-based rebalancing with donut charts and trade execution plans.",
+    tags: ["Drift Detection", "Trade Plans", "Donut Charts"],
+    badge: "🆕 Sprint 32",
+  },
+  {
+    href: "/tools/tax-loss-harvester",
+    icon: "🧾",
+    color: "#10b981",
+    title: "Tax Loss Harvesting Analyzer",
+    description: "Identify tax-loss harvesting opportunities across your crypto portfolio. Calculates potential savings by tax bracket, tracks holding periods (short vs long-term), and generates prioritized harvesting recommendations with wash sale warnings.",
+    tags: ["Tax Savings", "Wash Sale Alerts", "Holding Periods"],
+    badge: "🆕 Sprint 32",
+  },
   {
     href: "/tools/perp-funding",
     icon: "📈",
