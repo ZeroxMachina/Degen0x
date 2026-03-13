@@ -30,6 +30,8 @@ import CommandPalette from "@/components/CommandPalette";
 import KeyboardShortcutHint from "@/components/KeyboardShortcutHint";
 import SocialProofBanner from "@/components/SocialProofBanner";
 import EventTracker from "@/components/EventTracker";
+import AIChatAssistant from "@/components/AIChatAssistant";
+import PerformanceMonitor from "@/components/PerformanceMonitor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -177,6 +179,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <KeyboardShortcutHint />
                 <SocialProofBanner />
                 <EventTracker />
+                <AIChatAssistant />
+                <PerformanceMonitor />
               </AchievementProvider>
             </ThemeProvider>
           </DegenModeProvider>
