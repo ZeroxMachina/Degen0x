@@ -6,6 +6,9 @@ type ExperienceLevel = 'beginner' | 'intermediate' | 'degen' | null;
 type Interest = 'DeFi' | 'Trading' | 'NFTs' | 'Investing' | 'Tax Help' | 'Research';
 
 export default function OnboardingFlow() {
+  // Disabled: the homepage level selector now handles user onboarding
+  return null;
+
   const [isVisible, setIsVisible] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [isAnimating, setIsAnimating] = useState(false);

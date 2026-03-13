@@ -14,6 +14,9 @@ const PROOF_ITEMS = [
 ];
 
 export default function SocialProofBanner() {
+  // Disabled: removes fake social proof popups
+  return null;
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 

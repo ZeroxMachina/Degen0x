@@ -5,63 +5,63 @@ import Link from "next/link";
 
 type Level = "newbie" | "intermediate" | "degen";
 
-const LEVELS: { key: Level; label: string; icon: string; desc: string }[] = [
-  { key: "newbie", label: "I'm New", icon: "🌱", desc: "Just getting started with crypto" },
-  { key: "intermediate", label: "Intermediate", icon: "📈", desc: "I know the basics, show me more" },
-  { key: "degen", label: "Degen", icon: "🔥", desc: "Full send. Give me the alpha" },
+const LEVELS: { key: Level; label: string; desc: string }[] = [
+  { key: "newbie", label: "I'm New", desc: "Just getting started with crypto" },
+  { key: "intermediate", label: "Intermediate", desc: "I know the basics, show me more" },
+  { key: "degen", label: "Degen", desc: "Full send. Give me the alpha" },
 ];
 
 /* ────────────────── CONTENT BY LEVEL ────────────────── */
 
 const HERO_CONTENT: Record<Level, { subtitle: string; cta: { label: string; href: string }; ghost: { label: string; href: string } }> = {
   newbie: {
-    subtitle: "The crypto world is powerful but intimidating. We\u2019re building the guide we wish we had \u2014 free tools, honest reviews, and clear explanations. No account needed. No paywall. Ever.",
-    cta: { label: "Show me around \u2192", href: "/learn/crypto-for-beginners" },
+    subtitle: "The crypto world is powerful but intimidating. We're building the guide we wish we had: free tools, honest reviews, and clear explanations. No account needed. No paywall. Ever.",
+    cta: { label: "Show me around", href: "/learn/crypto-for-beginners" },
     ghost: { label: "Browse beginner guides", href: "/learn" },
   },
   intermediate: {
-    subtitle: "You know Bitcoin from Ethereum. Now go deeper \u2014 advanced strategies, DeFi protocols, on-chain analytics, and tools that give you an edge. All free, always.",
-    cta: { label: "Explore advanced guides \u2192", href: "/learn" },
+    subtitle: "You know Bitcoin from Ethereum. Now go deeper with advanced strategies, DeFi protocols, on-chain analytics, and tools that give you an edge. All free, always.",
+    cta: { label: "Explore advanced guides", href: "/learn" },
     ghost: { label: "Go to Dashboard", href: "/dashboard" },
   },
   degen: {
     subtitle: "Funding rates, whale alerts, correlation alpha, memecoin strategies, and 92+ tools to sharpen your edge. No fluff. Just signal.",
-    cta: { label: "Open Dashboard \u2192", href: "/dashboard" },
+    cta: { label: "Open Dashboard", href: "/dashboard" },
     ghost: { label: "Perp funding rates", href: "/tools/perp-funding" },
   },
 };
 
-type CardItem = { href: string; icon: string; title: string; desc: string; tag: string; tagColor: string };
+type CardItem = { href: string; title: string; desc: string; tag: string; tagColor: string };
 
 const LEARN_CARDS: Record<Level, { heading: string; description: string; cards: CardItem[] }> = {
   newbie: {
     heading: "Learn at your own pace",
-    description: "We wrote 35+ in-depth guides that explain crypto from scratch \u2014 no jargon, no assumptions. Start with Bitcoin, work your way to DeFi, or jump straight to the topic you\u2019re curious about.",
+    description: "We wrote 35+ in-depth guides that explain crypto from scratch. No jargon, no assumptions. Start with Bitcoin, work your way to DeFi, or jump straight to the topic you're curious about.",
     cards: [
-      { href: "/learn/what-is-bitcoin", icon: "\u20BF", title: "What is Bitcoin?", desc: "The original cryptocurrency explained", tag: "8 min", tagColor: "#22c55e" },
-      { href: "/learn/what-is-ethereum", icon: "\u27E0", title: "What is Ethereum?", desc: "Smart contracts & the world computer", tag: "10 min", tagColor: "#818cf8" },
-      { href: "/learn/what-is-defi", icon: "\uD83C\uDFE6", title: "What is DeFi?", desc: "Decentralized finance without the bank", tag: "12 min", tagColor: "#06b6d4" },
-      { href: "/learn/what-is-a-crypto-wallet", icon: "\uD83D\uDC5B", title: "Crypto Wallets", desc: "Your keys, your coins \u2014 how it works", tag: "6 min", tagColor: "#f59e0b" },
+      { href: "/learn/what-is-bitcoin", title: "What is Bitcoin?", desc: "The original cryptocurrency explained", tag: "8 min", tagColor: "#22c55e" },
+      { href: "/learn/what-is-ethereum", title: "What is Ethereum?", desc: "Smart contracts and the world computer", tag: "10 min", tagColor: "#818cf8" },
+      { href: "/learn/what-is-defi", title: "What is DeFi?", desc: "Decentralized finance without the bank", tag: "12 min", tagColor: "#06b6d4" },
+      { href: "/learn/what-is-a-crypto-wallet", title: "Crypto Wallets", desc: "Your keys, your coins, how it works", tag: "6 min", tagColor: "#f59e0b" },
     ],
   },
   intermediate: {
     heading: "Go deeper",
-    description: "You\u2019ve got the basics down. Now explore advanced topics like restaking, Layer 2 scaling, real-world asset tokenization, and AI-powered crypto protocols.",
+    description: "You've got the basics down. Now explore advanced topics like restaking, Layer 2 scaling, real-world asset tokenization, and prediction markets.",
     cards: [
-      { href: "/learn/restaking-eigenlayer-guide", icon: "\uD83D\uDD04", title: "Restaking & EigenLayer", desc: "Next-gen staking and validator economics", tag: "15 min", tagColor: "#818cf8" },
-      { href: "/learn/bitcoin-layer-2-guide", icon: "\u26A1", title: "Bitcoin Layer 2s", desc: "Scaling solutions enhancing Bitcoin", tag: "12 min", tagColor: "#f59e0b" },
-      { href: "/learn/real-world-assets-rwa-guide", icon: "\uD83C\uDFE0", title: "Real World Assets (RWA)", desc: "Tokenized assets reshaping finance", tag: "14 min", tagColor: "#22c55e" },
-      { href: "/learn/ai-depin-crypto-guide", icon: "\uD83E\uDD16", title: "AI & DePIN", desc: "AI meets decentralized infrastructure", tag: "13 min", tagColor: "#06b6d4" },
+      { href: "/learn/restaking-eigenlayer-guide", title: "Restaking & EigenLayer", desc: "Next-gen staking and validator economics", tag: "15 min", tagColor: "#818cf8" },
+      { href: "/learn/bitcoin-layer-2-guide", title: "Bitcoin Layer 2s", desc: "Scaling solutions enhancing Bitcoin", tag: "12 min", tagColor: "#f59e0b" },
+      { href: "/learn/prediction-markets-guide", title: "Prediction Markets", desc: "Trade on real-world event outcomes", tag: "10 min", tagColor: "#22c55e" },
+      { href: "/learn/real-world-assets-rwa-guide", title: "Real World Assets (RWA)", desc: "Tokenized assets reshaping finance", tag: "14 min", tagColor: "#06b6d4" },
     ],
   },
   degen: {
     heading: "Sharpen your edge",
-    description: "Memecoin alpha, AI agents, whitepaper analysis, and the strategies that separate signal from noise. You already know \u2014 this is the deep end.",
+    description: "Memecoin alpha, prediction market strategies, AI agents, whitepaper analysis, and the plays that separate signal from noise. You already know. This is the deep end.",
     cards: [
-      { href: "/learn/memecoin-trading-strategy", icon: "\uD83D\uDC38", title: "Memecoin Strategy", desc: "Risks and alpha in memecoin markets", tag: "10 min", tagColor: "#f85149" },
-      { href: "/learn/ai-crypto-agents-guide", icon: "\uD83E\uDD16", title: "AI Crypto Agents", desc: "Autonomous traders & yield optimizers", tag: "12 min", tagColor: "#818cf8" },
-      { href: "/learn/how-to-read-crypto-whitepaper", icon: "\uD83D\uDCDC", title: "Read Whitepapers", desc: "7-step framework to evaluate any project", tag: "New", tagColor: "#f59e0b" },
-      { href: "/learn/bitcoin-etf-guide-2026", icon: "\uD83D\uDCCA", title: "Bitcoin ETF Guide 2026", desc: "Spot ETFs, fees, and how to invest", tag: "14 min", tagColor: "#22c55e" },
+      { href: "/learn/memecoin-trading-strategy", title: "Memecoin Strategy", desc: "Risks and alpha in memecoin markets", tag: "10 min", tagColor: "#f85149" },
+      { href: "/learn/prediction-markets-guide", title: "Prediction Markets", desc: "Advanced strategies for event trading", tag: "10 min", tagColor: "#22c55e" },
+      { href: "/learn/ai-crypto-agents-guide", title: "AI Crypto Agents", desc: "Autonomous traders and yield optimizers", tag: "12 min", tagColor: "#818cf8" },
+      { href: "/learn/how-to-read-crypto-whitepaper", title: "Read Whitepapers", desc: "7-step framework to evaluate any project", tag: "New", tagColor: "#f59e0b" },
     ],
   },
 };
@@ -69,32 +69,32 @@ const LEARN_CARDS: Record<Level, { heading: string; description: string; cards: 
 const COMPARE_CARDS: Record<Level, { heading: string; description: string; cards: CardItem[] }> = {
   newbie: {
     heading: "Compare before you commit",
-    description: "Choosing an exchange, wallet, or DeFi protocol? We\u2019ve tested them all. Honest reviews with real fee comparisons, security analysis, and side-by-side breakdowns.",
+    description: "Choosing an exchange, wallet, or DeFi protocol? We've tested them all. Honest reviews with real fee comparisons, security analysis, and side-by-side breakdowns.",
     cards: [
-      { href: "/exchanges/best", icon: "\uD83C\uDFC6", title: "Best Exchanges 2026", desc: "50+ exchanges rated on fees, security, UX", tag: "Hot", tagColor: "#f85149" },
-      { href: "/wallets/best/hardware", icon: "\uD83D\uDD12", title: "Best Hardware Wallets", desc: "Ledger, Trezor, and more tested", tag: "Security", tagColor: "#22c55e" },
-      { href: "/crypto-cards/best", icon: "\uD83D\uDCB3", title: "Best Crypto Cards", desc: "Spend crypto anywhere with cashback", tag: "Spending", tagColor: "#f59e0b" },
-      { href: "/learn/crypto-for-beginners", icon: "\uD83D\uDCD6", title: "Crypto for Beginners", desc: "The ultimate starting guide", tag: "Start", tagColor: "#06b6d4" },
+      { href: "/exchanges/best", title: "Best Exchanges 2026", desc: "50+ exchanges rated on fees, security, UX", tag: "Hot", tagColor: "#f85149" },
+      { href: "/wallets/best/hardware", title: "Best Hardware Wallets", desc: "Ledger, Trezor, and more tested", tag: "Security", tagColor: "#22c55e" },
+      { href: "/crypto-cards/best", title: "Best Crypto Cards", desc: "Spend crypto anywhere with cashback", tag: "Spending", tagColor: "#f59e0b" },
+      { href: "/learn/crypto-for-beginners", title: "Crypto for Beginners", desc: "The ultimate starting guide", tag: "Start", tagColor: "#06b6d4" },
     ],
   },
   intermediate: {
     heading: "Find your edge",
     description: "Side-by-side protocol comparisons, yield analysis, and detailed fee breakdowns. Data-driven decisions for experienced users.",
     cards: [
-      { href: "/defi-lending/best", icon: "\uD83D\uDCCA", title: "Best DeFi Lending", desc: "Compare APY, risk, and TVL", tag: "DeFi", tagColor: "#818cf8" },
-      { href: "/exchanges/compare/coinbase-vs-binance", icon: "\u2694\uFE0F", title: "Coinbase vs Binance", desc: "The two giants compared in detail", tag: "vs", tagColor: "#f85149" },
-      { href: "/investing/best/staking", icon: "\uD83D\uDCB0", title: "Best Staking Platforms", desc: "Maximize your passive income", tag: "Yield", tagColor: "#22c55e" },
-      { href: "/wallets/best/hardware", icon: "\uD83D\uDD12", title: "Hardware Wallets", desc: "Cold storage security tested", tag: "Security", tagColor: "#f59e0b" },
+      { href: "/defi-lending/best", title: "Best DeFi Lending", desc: "Compare APY, risk, and TVL", tag: "DeFi", tagColor: "#818cf8" },
+      { href: "/exchanges/compare/coinbase-vs-binance", title: "Coinbase vs Binance", desc: "The two giants compared in detail", tag: "vs", tagColor: "#f85149" },
+      { href: "/investing/best/staking", title: "Best Staking Platforms", desc: "Maximize your passive income", tag: "Yield", tagColor: "#22c55e" },
+      { href: "/wallets/best/hardware", title: "Hardware Wallets", desc: "Cold storage security tested", tag: "Security", tagColor: "#f59e0b" },
     ],
   },
   degen: {
     heading: "Alpha comparisons",
     description: "Perp platforms, DEX aggregators, lending rates, and the protocols that matter when every basis point counts.",
     cards: [
-      { href: "/defi-lending/best", icon: "\uD83C\uDFE6", title: "DeFi Lending Rates", desc: "Live APY comparisons across protocols", tag: "Yield", tagColor: "#22c55e" },
-      { href: "/exchanges/best", icon: "\u26A1", title: "Lowest Fee Exchanges", desc: "Where the smart money trades", tag: "Fees", tagColor: "#f85149" },
-      { href: "/investing/best/staking", icon: "\uD83D\uDD25", title: "Top Staking Yields", desc: "Best risk-adjusted staking returns", tag: "APY", tagColor: "#818cf8" },
-      { href: "/crypto-cards/best", icon: "\uD83D\uDCB3", title: "Crypto Cards", desc: "Maximize cashback on every tx", tag: "Perks", tagColor: "#f59e0b" },
+      { href: "/defi-lending/best", title: "DeFi Lending Rates", desc: "Live APY comparisons across protocols", tag: "Yield", tagColor: "#22c55e" },
+      { href: "/exchanges/best", title: "Lowest Fee Exchanges", desc: "Where the smart money trades", tag: "Fees", tagColor: "#f85149" },
+      { href: "/investing/best/staking", title: "Top Staking Yields", desc: "Best risk-adjusted staking returns", tag: "APY", tagColor: "#818cf8" },
+      { href: "/crypto-cards/best", title: "Crypto Cards", desc: "Maximize cashback on every tx", tag: "Perks", tagColor: "#f59e0b" },
     ],
   },
 };
@@ -102,73 +102,73 @@ const COMPARE_CARDS: Record<Level, { heading: string; description: string; cards
 const TOOLS_CARDS: Record<Level, { heading: string; description: string; cards: CardItem[] }> = {
   newbie: {
     heading: "Tools that make it easy",
-    description: "Simple, free tools to help you get started. Convert currencies, plan investments, and track your portfolio \u2014 no signup required.",
+    description: "Simple, free tools to help you get started. Convert currencies, plan investments, and track your portfolio. No signup required.",
     cards: [
-      { href: "/tools/converter", icon: "\uD83D\uDD04", title: "Crypto Converter", desc: "Real-time prices, 10+ coins", tag: "Popular", tagColor: "#22c55e" },
-      { href: "/tools/dca-calculator", icon: "\uD83D\uDCC5", title: "DCA Calculator", desc: "Plan your investment strategy", tag: "Popular", tagColor: "#818cf8" },
-      { href: "/tools/portfolio-tracker", icon: "\uD83D\uDCBC", title: "Portfolio Tracker", desc: "Monitor your holdings", tag: "Easy", tagColor: "#06b6d4" },
-      { href: "/tools/staking-rewards", icon: "\uD83D\uDCB0", title: "Staking Calculator", desc: "See your potential rewards", tag: "Yield", tagColor: "#f59e0b" },
+      { href: "/tools/converter", title: "Crypto Converter", desc: "Real-time prices, 10+ coins", tag: "Popular", tagColor: "#22c55e" },
+      { href: "/tools/dca-calculator", title: "DCA Calculator", desc: "Plan your investment strategy", tag: "Popular", tagColor: "#818cf8" },
+      { href: "/tools/portfolio-tracker", title: "Portfolio Tracker", desc: "Monitor your holdings", tag: "Easy", tagColor: "#06b6d4" },
+      { href: "/tools/staking-rewards", title: "Staking Calculator", desc: "See your potential rewards", tag: "Yield", tagColor: "#f59e0b" },
     ],
   },
   intermediate: {
     heading: "Analytical tools",
     description: "Advanced calculators, charting tools, and portfolio analytics. 92+ tools built for users who want data-driven insights.",
     cards: [
-      { href: "/tools/advanced-charting", icon: "\uD83D\uDCCA", title: "Advanced Charts", desc: "TradingView-style analysis", tag: "Pro", tagColor: "#818cf8" },
-      { href: "/tools/portfolio-rebalancer", icon: "\u2696\uFE0F", title: "Portfolio Rebalancer", desc: "Drift detection & trade plans", tag: "New", tagColor: "#f59e0b" },
-      { href: "/tools/correlation-matrix", icon: "\uD83D\uDD17", title: "Correlation Matrix", desc: "Find diversification edges", tag: "Data", tagColor: "#22c55e" },
-      { href: "/tools/tax-loss-harvester", icon: "\uD83E\uDDFE", title: "Tax Loss Harvester", desc: "Find tax savings automatically", tag: "New", tagColor: "#f59e0b" },
+      { href: "/tools/advanced-charting", title: "Advanced Charts", desc: "TradingView-style analysis", tag: "Pro", tagColor: "#818cf8" },
+      { href: "/tools/portfolio-rebalancer", title: "Portfolio Rebalancer", desc: "Drift detection and trade plans", tag: "New", tagColor: "#f59e0b" },
+      { href: "/tools/correlation-matrix", title: "Correlation Matrix", desc: "Find diversification edges", tag: "Data", tagColor: "#22c55e" },
+      { href: "/tools/tax-loss-harvester", title: "Tax Loss Harvester", desc: "Find tax savings automatically", tag: "New", tagColor: "#f59e0b" },
     ],
   },
   degen: {
     heading: "Power tools for degens",
     description: "Funding rates, whale tracking, on-chain analytics, and the tools you need to find alpha before everyone else.",
     cards: [
-      { href: "/tools/perp-funding", icon: "\uD83D\uDCC8", title: "Perp Funding Rates", desc: "Arbitrage opportunities live", tag: "Alpha", tagColor: "#f85149" },
-      { href: "/tools/fear-greed-timeline", icon: "\uD83D\uDCC8", title: "Fear & Greed Index", desc: "Market sentiment over time", tag: "Signal", tagColor: "#22c55e" },
-      { href: "/tools/portfolio-rebalancer", icon: "\u2696\uFE0F", title: "Portfolio Rebalancer", desc: "Drift detection & trade plans", tag: "New", tagColor: "#f59e0b" },
-      { href: "/tools/tax-loss-harvester", icon: "\uD83E\uDDFE", title: "Tax Loss Harvester", desc: "Optimize your tax strategy", tag: "New", tagColor: "#818cf8" },
+      { href: "/tools/perp-funding", title: "Perp Funding Rates", desc: "Arbitrage opportunities live", tag: "Alpha", tagColor: "#f85149" },
+      { href: "/tools/fear-greed-timeline", title: "Fear & Greed Index", desc: "Market sentiment over time", tag: "Signal", tagColor: "#22c55e" },
+      { href: "/tools/portfolio-rebalancer", title: "Portfolio Rebalancer", desc: "Drift detection and trade plans", tag: "New", tagColor: "#f59e0b" },
+      { href: "/tools/tax-loss-harvester", title: "Tax Loss Harvester", desc: "Optimize your tax strategy", tag: "New", tagColor: "#818cf8" },
     ],
   },
 };
 
-const GRID_TOOLS: Record<Level, { href: string; icon: string; title: string; desc: string }[]> = {
+const GRID_TOOLS: Record<Level, { href: string; title: string; desc: string }[]> = {
   newbie: [
-    { href: "/tools/converter", icon: "\uD83D\uDD04", title: "Crypto Converter", desc: "Convert coins to fiat" },
-    { href: "/tools/dca-calculator", icon: "\uD83D\uDCC5", title: "DCA Calculator", desc: "Plan regular investments" },
-    { href: "/tools/staking-rewards", icon: "\uD83D\uDCB0", title: "Staking Calculator", desc: "Calculate your rewards" },
-    { href: "/tools/portfolio-tracker", icon: "\uD83D\uDCBC", title: "Portfolio Tracker", desc: "Monitor your holdings" },
-    { href: "/tools/gas-tracker", icon: "\u26FD", title: "Gas Tracker", desc: "Check transaction fees" },
-    { href: "/tools/crypto-calendar", icon: "\uD83D\uDCC5", title: "Crypto Calendar", desc: "Upcoming events" },
-    { href: "/tools/fear-greed-timeline", icon: "\uD83D\uDCC8", title: "Fear & Greed", desc: "Is it time to buy?" },
-    { href: "/tools/profit-calculator", icon: "\uD83D\uDCB5", title: "Profit Calculator", desc: "See your gains" },
+    { href: "/tools/converter", title: "Crypto Converter", desc: "Convert coins to fiat" },
+    { href: "/tools/dca-calculator", title: "DCA Calculator", desc: "Plan regular investments" },
+    { href: "/tools/staking-rewards", title: "Staking Calculator", desc: "Calculate your rewards" },
+    { href: "/tools/portfolio-tracker", title: "Portfolio Tracker", desc: "Monitor your holdings" },
+    { href: "/tools/gas-tracker", title: "Gas Tracker", desc: "Check transaction fees" },
+    { href: "/tools/crypto-calendar", title: "Crypto Calendar", desc: "Upcoming events" },
+    { href: "/tools/fear-greed-timeline", title: "Fear & Greed", desc: "Is it time to buy?" },
+    { href: "/tools/profit-calculator", title: "Profit Calculator", desc: "See your gains" },
   ],
   intermediate: [
-    { href: "/tools/advanced-charting", icon: "\uD83D\uDCCA", title: "Advanced Charts", desc: "TradingView-style analysis" },
-    { href: "/tools/portfolio-rebalancer", icon: "\u2696\uFE0F", title: "Rebalancer", desc: "Drift detection" },
-    { href: "/tools/correlation-matrix", icon: "\uD83D\uDD17", title: "Correlation Matrix", desc: "Diversification edges" },
-    { href: "/tools/tax-loss-harvester", icon: "\uD83E\uDDFE", title: "Tax Harvester", desc: "Optimize taxes" },
-    { href: "/tools/staking-rewards", icon: "\uD83D\uDCB0", title: "Staking Calc", desc: "Compare yields" },
-    { href: "/tools/gas-tracker", icon: "\u26FD", title: "Gas Tracker", desc: "Real-time fees" },
-    { href: "/tools/fear-greed-timeline", icon: "\uD83D\uDCC8", title: "Fear & Greed", desc: "Sentiment history" },
-    { href: "/tools/crypto-calendar", icon: "\uD83D\uDCC5", title: "Crypto Calendar", desc: "Events & launches" },
+    { href: "/tools/advanced-charting", title: "Advanced Charts", desc: "TradingView-style analysis" },
+    { href: "/tools/portfolio-rebalancer", title: "Rebalancer", desc: "Drift detection" },
+    { href: "/tools/correlation-matrix", title: "Correlation Matrix", desc: "Diversification edges" },
+    { href: "/tools/tax-loss-harvester", title: "Tax Harvester", desc: "Optimize taxes" },
+    { href: "/tools/staking-rewards", title: "Staking Calc", desc: "Compare yields" },
+    { href: "/tools/gas-tracker", title: "Gas Tracker", desc: "Real-time fees" },
+    { href: "/tools/fear-greed-timeline", title: "Fear & Greed", desc: "Sentiment history" },
+    { href: "/tools/crypto-calendar", title: "Crypto Calendar", desc: "Events and launches" },
   ],
   degen: [
-    { href: "/tools/perp-funding", icon: "\uD83D\uDCC8", title: "Funding Rates", desc: "Perp arbitrage opps" },
-    { href: "/tools/advanced-charting", icon: "\uD83D\uDCCA", title: "Advanced Charts", desc: "Full TA suite" },
-    { href: "/tools/correlation-matrix", icon: "\uD83D\uDD17", title: "Correlation Matrix", desc: "Portfolio alpha" },
-    { href: "/tools/portfolio-rebalancer", icon: "\u2696\uFE0F", title: "Rebalancer", desc: "Drift alerts" },
-    { href: "/tools/tax-loss-harvester", icon: "\uD83E\uDDFE", title: "Tax Harvester", desc: "Save on taxes" },
-    { href: "/tools/gas-tracker", icon: "\u26FD", title: "Gas Tracker", desc: "Time your txs" },
-    { href: "/tools/fear-greed-timeline", icon: "\uD83D\uDCC8", title: "Fear & Greed", desc: "Contrarian signal" },
-    { href: "/tools/portfolio-tracker", icon: "\uD83D\uDCBC", title: "Portfolio", desc: "Track everything" },
+    { href: "/tools/perp-funding", title: "Funding Rates", desc: "Perp arbitrage opps" },
+    { href: "/tools/advanced-charting", title: "Advanced Charts", desc: "Full TA suite" },
+    { href: "/tools/correlation-matrix", title: "Correlation Matrix", desc: "Portfolio alpha" },
+    { href: "/tools/portfolio-rebalancer", title: "Rebalancer", desc: "Drift alerts" },
+    { href: "/tools/tax-loss-harvester", title: "Tax Harvester", desc: "Save on taxes" },
+    { href: "/tools/gas-tracker", title: "Gas Tracker", desc: "Time your txs" },
+    { href: "/tools/fear-greed-timeline", title: "Fear & Greed", desc: "Contrarian signal" },
+    { href: "/tools/portfolio-tracker", title: "Portfolio", desc: "Track everything" },
   ],
 };
 
 const MISSION_CTA: Record<Level, { label: string; href: string }> = {
-  newbie: { label: "Start learning \u2014 it\u2019s free \u2192", href: "/learn/crypto-for-beginners" },
-  intermediate: { label: "Explore advanced guides \u2192", href: "/learn" },
-  degen: { label: "Open your Dashboard \u2192", href: "/dashboard" },
+  newbie: { label: "Start learning, it's free", href: "/learn/crypto-for-beginners" },
+  intermediate: { label: "Explore advanced guides", href: "/learn" },
+  degen: { label: "Open your Dashboard", href: "/dashboard" },
 };
 
 /* ────────────────── CARD RENDERER ────────────────── */
@@ -179,7 +179,6 @@ function VisualCard({ item }: { item: CardItem }) {
       href={item.href}
       className="flex items-center gap-3.5 p-3.5 rounded-xl border border-[var(--glass-border)] bg-[var(--glass-bg)] transition-all hover:border-[var(--color-primary)]"
     >
-      <span className="text-2xl flex-shrink-0">{item.icon}</span>
       <div className="min-w-0 flex-1">
         <h4 className="text-sm font-bold text-[var(--color-text)]">{item.title}</h4>
         <p className="text-xs text-[var(--color-text-secondary)]">{item.desc}</p>
@@ -236,9 +235,8 @@ export default function HomeContent() {
             <span>&#x2B21;</span> Our Mission
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.08] tracking-tight mb-6">
-            <span className="text-[var(--color-text)]">Onboard the next</span>
-            <br />
-            <span className="gradient-text">1 billion people</span>
+            <span className="text-[var(--color-text)]">Onboard the next </span>
+            <span className="gradient-text">1 billion users</span>
             <br />
             <span className="text-[var(--color-text)]">to Web3</span>
           </h1>
@@ -257,7 +255,6 @@ export default function HomeContent() {
                       : "text-[var(--color-text-secondary)] hover:text-[var(--color-text)] hover:bg-[var(--glass-bg)]"
                   }`}
                 >
-                  <span className="mr-1.5">{l.icon}</span>
                   {l.label}
                 </button>
               ))}
@@ -357,12 +354,11 @@ export default function HomeContent() {
           Built for everyone
         </h2>
         <p className="text-base sm:text-lg text-[var(--color-text-secondary)] mb-12">
-          From your first trade to your 10,000th &mdash; we&apos;ve got a tool for that.
+          From your first trade to your 10,000th. We&apos;ve got a tool for that.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {grid.map((tool) => (
             <Link key={tool.href} href={tool.href} className="glass p-5 sm:p-6 text-center card-hover rounded-2xl">
-              <div className="text-3xl mb-2.5">{tool.icon}</div>
               <h3 className="text-sm font-bold text-[var(--color-text)] mb-1">{tool.title}</h3>
               <p className="text-xs text-[var(--color-text-secondary)]">{tool.desc}</p>
             </Link>
@@ -373,17 +369,17 @@ export default function HomeContent() {
         </Link>
       </section>
 
-      {/* ═══════════════ MISSION ═══════════════ */}
+      {/* ═══════════════ MISSION (final section) ═══════════════ */}
       <section className="section-glass py-24 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-6xl sm:text-8xl md:text-9xl font-black gradient-text leading-none mb-4">
             1B
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-text)] mb-4">
-            That&apos;s our goal. One billion people in Web3.
+            That&apos;s our goal. One billion users in Web3.
           </h2>
           <p className="text-base sm:text-lg text-[var(--color-text-secondary)] leading-relaxed mb-10 max-w-2xl mx-auto">
-            Not because we think everyone should trade crypto &mdash; but because everyone deserves to understand the financial system being built around them. Education is the way in.
+            Not because we think everyone should trade crypto, but because everyone deserves to understand the financial system being built around them. Education is the way in.
           </p>
           <Link
             href={missionCta.href}
@@ -391,32 +387,6 @@ export default function HomeContent() {
           >
             {missionCta.label}
           </Link>
-        </div>
-      </section>
-
-      {/* ═══════════════ FINAL CTA ═══════════════ */}
-      <section className="py-24 text-center">
-        <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--color-text)] tracking-tight mb-4">
-            Ready?
-          </h2>
-          <p className="text-base sm:text-lg text-[var(--color-text-secondary)] leading-relaxed mb-10">
-            Pick a guide, open a tool, or just explore. There&apos;s no wrong way to start.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href={hero.cta.href}
-              className="affiliate-cta inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl text-white font-bold text-lg transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-indigo-500/25"
-            >
-              {hero.cta.label}
-            </Link>
-            <Link
-              href="/tools"
-              className="glass inline-flex items-center justify-center gap-2 px-7 py-4 rounded-2xl text-[var(--color-text-secondary)] font-medium text-base transition-all hover:border-[var(--color-primary)] hover:text-[var(--color-text)]"
-            >
-              Browse Tools
-            </Link>
-          </div>
         </div>
       </section>
     </>

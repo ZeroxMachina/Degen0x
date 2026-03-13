@@ -3,6 +3,9 @@
 import React, { useState, useEffect } from "react"
 
 const ExitIntentPopup: React.FC = () => {
+  // Disabled: removes exit intent popup
+  return null
+
   const [isVisible, setIsVisible] = useState(false)
   const [email, setEmail] = useState("")
   const [isSubmitted, setIsSubmitted] = useState(false)
