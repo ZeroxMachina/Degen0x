@@ -61,6 +61,21 @@ const guides = [
     icon: "🖼️",
   },
   {
+    title: "Account Abstraction Guide 2026",
+    href: "/learn/account-abstraction",
+    description:
+      "Master ERC-4337: smart contract wallets, gas sponsorship, social recovery, session keys, and batch transactions. Compare 8+ AA wallets and SDKs with implementation guide.",
+    icon: "🔑",
+    tag: "New",
+  },
+  {
+    title: "Validator Staking Guide 2026",
+    href: "/learn/validator-staking-guide",
+    description:
+      "Compare 10 validators across 6 chains. Understand slashing risks, APR vs APY, liquid staking, solo vs delegated staking, and how to maximize rewards.",
+    icon: "🥩",
+  },
+  {
     title: "What Are Stablecoins?",
     href: "/learn/what-are-stablecoins",
     description:

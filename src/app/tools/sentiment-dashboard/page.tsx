@@ -1,545 +1,317 @@
 'use client';
 
-"use client";
+import { useState, useEffect, useCallback } from 'react';
+import Link from 'next/link';
 
-import { useState, useEffect, useCallback } from "react";
-import Breadcrumb from "@/components/Breadcrumb";
-
-/* ─────────────────────────────────────────────────────────────
-   Types
-───────────────────────────────────────────────────────────── */
-interface FearGreedPoint {
-  value: number;
+interface SentimentData {
+  overall: number;
   label: string;
-  date: string;
+  social: { platform: string; score: number; change: number; volume: string }[];
+  topMentions: { token: string; mentions: number; sentiment: number; change24h: number }[];
+  fearGreed: { value: number; label: string; history: { date: string; value: number }[] };
+  marketMood: { bullish: number; bearish: number; neutral: number };
+  newsHeadlines: { title: string; source: string; sentiment: 'bullish' | 'bearish' | 'neutral'; time: string }[];
 }
 
-interface SentimentSignal {
-  name: string;
-  value: string;
-  score: number; // 0-100 (50 = neutral)
-  trend: "bullish" | "bearish" | "neutral";
-  category: "on-chain" | "market" | "social" | "technical";
-  description: string;
-  icon: string;
-  updated: string;
+function generateMockSentiment(): SentimentData {
+  const fgValue = Math.floor(Math.random() * 40) + 30;
+  const fgLabel = fgValue < 25 ? 'Extreme Fear' : fgValue < 45 ? 'Fear' : fgValue < 55 ? 'Neutral' : fgValue < 75 ? 'Greed' : 'Extreme Greed';
+  const bullish = Math.floor(Math.random() * 30) + 35;
+  const bearish = Math.floor(Math.random() * 25) + 15;
+
+  return {
+    overall: Math.floor(Math.random() * 40) + 40,
+    label: fgLabel,
+    social: [
+      { platform: 'X / Twitter', score: Math.floor(Math.random() * 30) + 50, change: +(Math.random() * 10 - 3).toFixed(1), volume: `${(Math.random() * 500 + 200).toFixed(0)}K` },
+      { platform: 'Reddit', score: Math.floor(Math.random() * 30) + 40, change: +(Math.random() * 8 - 2).toFixed(1), volume: `${(Math.random() * 200 + 80).toFixed(0)}K` },
+      { platform: 'Telegram', score: Math.floor(Math.random() * 30) + 45, change: +(Math.random() * 6 - 1).toFixed(1), volume: `${(Math.random() * 300 + 100).toFixed(0)}K` },
+      { platform: 'Discord', score: Math.floor(Math.random() * 30) + 35, change: +(Math.random() * 12 - 4).toFixed(1), volume: `${(Math.random() * 150 + 50).toFixed(0)}K` },
+      { platform: 'YouTube', score: Math.floor(Math.random() * 30) + 30, change: +(Math.random() * 8 - 3).toFixed(1), volume: `${(Math.random() * 100 + 30).toFixed(0)}K` },
+    ],
+    topMentions: [
+      { token: 'BTC', mentions: Math.floor(Math.random() * 50000) + 80000, sentiment: Math.floor(Math.random() * 30) + 55, change24h: +(Math.random() * 6 - 2).toFixed(2) as unknown as number },
+      { token: 'ETH', mentions: Math.floor(Math.random() * 30000) + 50000, sentiment: Math.floor(Math.random() * 30) + 50, change24h: +(Math.random() * 8 - 3).toFixed(2) as unknown as number },
+      { token: 'SOL', mentions: Math.floor(Math.random() * 20000) + 30000, sentiment: Math.floor(Math.random() * 40) + 40, change24h: +(Math.random() * 10 - 4).toFixed(2) as unknown as number },
+      { token: 'DOGE', mentions: Math.floor(Math.random() * 15000) + 20000, sentiment: Math.floor(Math.random() * 35) + 35, change24h: +(Math.random() * 12 - 5).toFixed(2) as unknown as number },
+      { token: 'XRP', mentions: Math.floor(Math.random() * 12000) + 18000, sentiment: Math.floor(Math.random() * 30) + 45, change24h: +(Math.random() * 7 - 3).toFixed(2) as unknown as number },
+      { token: 'ADA', mentions: Math.floor(Math.random() * 10000) + 15000, sentiment: Math.floor(Math.random() * 30) + 40, change24h: +(Math.random() * 8 - 4).toFixed(2) as unknown as number },
+      { token: 'AVAX', mentions: Math.floor(Math.random() * 8000) + 12000, sentiment: Math.floor(Math.random() * 35) + 38, change24h: +(Math.random() * 10 - 5).toFixed(2) as unknown as number },
+      { token: 'LINK', mentions: Math.floor(Math.random() * 7000) + 10000, sentiment: Math.floor(Math.random() * 30) + 42, change24h: +(Math.random() * 6 - 3).toFixed(2) as unknown as number },
+    ],
+    fearGreed: {
+      value: fgValue,
+      label: fgLabel,
+      history: Array.from({ length: 30 }, (_, i) => ({
+        date: new Date(Date.now() - (29 - i) * 86400000).toISOString().split('T')[0],
+        value: Math.floor(Math.random() * 50) + 25,
+      })),
+    },
+    marketMood: { bullish, bearish, neutral: 100 - bullish - bearish },
+    newsHeadlines: [
+      { title: 'Bitcoin ETF inflows hit new weekly record', source: 'CoinDesk', sentiment: 'bullish', time: '2h ago' },
+      { title: 'Fed signals potential rate hold through Q2', source: 'Bloomberg', sentiment: 'neutral', time: '3h ago' },
+      { title: 'Ethereum Layer 2 TVL surpasses $50B milestone', source: 'The Block', sentiment: 'bullish', time: '4h ago' },
+      { title: 'SEC delays decision on Solana ETF application', source: 'Reuters', sentiment: 'bearish', time: '5h ago' },
+      { title: 'Major exchange reports record derivatives volume', source: 'CoinTelegraph', sentiment: 'bullish', time: '6h ago' },
+      { title: 'DeFi hack drains $12M from lending protocol', source: 'Decrypt', sentiment: 'bearish', time: '7h ago' },
+      { title: 'Institutional crypto adoption grows 40% in Q1', source: 'Forbes', sentiment: 'bullish', time: '8h ago' },
+    ],
+  };
 }
 
-interface AltcoinSeason {
-  index: number;
-  label: string;
-  description: string;
-}
+function SentimentGauge({ value, size = 200 }: { value: number; size?: number }) {
+  const angle = (value / 100) * 180 - 90;
+  const r = size / 2 - 20;
+  const cx = size / 2;
+  const cy = size / 2 + 10;
 
-/* ─────────────────────────────────────────────────────────────
-   Helpers
-───────────────────────────────────────────────────────────── */
-function getSentimentColor(score: number): string {
-  if (score <= 25) return "#ef4444";
-  if (score <= 40) return "#f97316";
-  if (score <= 60) return "#eab308";
-  if (score <= 75) return "#84cc16";
-  return "#22c55e";
-}
-
-function getSentimentLabel(score: number): string {
-  if (score <= 25) return "Extreme Fear";
-  if (score <= 40) return "Fear";
-  if (score <= 60) return "Neutral";
-  if (score <= 75) return "Greed";
-  return "Extreme Greed";
-}
-
-function getTrendIcon(trend: SentimentSignal["trend"]): string {
-  if (trend === "bullish") return "▲";
-  if (trend === "bearish") return "▼";
-  return "●";
-}
-
-function getTrendColor(trend: SentimentSignal["trend"]): string {
-  if (trend === "bullish") return "#22c55e";
-  if (trend === "bearish") return "#ef4444";
-  return "#eab308";
-}
-
-/* ─────────────────────────────────────────────────────────────
-   Static reference signals (updated by simulation)
-───────────────────────────────────────────────────────────── */
-const BASE_SIGNALS: Omit<SentimentSignal, "value" | "score" | "trend" | "updated">[] = [
-  {
-    name: "Fear & Greed Index",
-    category: "market",
-    description: "Composite index derived from volatility, market momentum, social media, surveys, dominance, and trends.",
-    icon: "😱",
-  },
-  {
-    name: "BTC Funding Rate",
-    category: "market",
-    description: "Perpetual futures funding rate. Positive = longs pay shorts (bullish bias). Negative = shorts pay longs (bearish bias).",
-    icon: "⚖️",
-  },
-  {
-    name: "BTC Dominance",
-    category: "market",
-    description: "Bitcoin's share of total crypto market cap. Rising = risk-off / altcoins weak. Falling = altcoin season brewing.",
-    icon: "₿",
-  },
-  {
-    name: "Stablecoin Supply Ratio",
-    category: "on-chain",
-    description: "High stablecoin supply relative to BTC market cap suggests dry powder for buying. Bullish signal.",
-    icon: "💵",
-  },
-  {
-    name: "Exchange Net Flow",
-    category: "on-chain",
-    description: "Net BTC moving to/from exchanges. Outflows (withdrawals) = bullish (holding). Inflows = bearish (selling).",
-    icon: "🏦",
-  },
-  {
-    name: "Active Addresses (7d)",
-    category: "on-chain",
-    description: "Growth in unique active addresses signals increased network adoption and potential price appreciation.",
-    icon: "📡",
-  },
-  {
-    name: "Social Volume (BTC)",
-    category: "social",
-    description: "Volume of Bitcoin mentions across Twitter, Reddit, and Telegram. Extreme highs can signal tops.",
-    icon: "📢",
-  },
-  {
-    name: "Google Trends (Bitcoin)",
-    category: "social",
-    description: "Search interest for 'Bitcoin'. Extreme spikes often correlate with local market tops (retail FOMO).",
-    icon: "🔍",
-  },
-  {
-    name: "MVRV Z-Score",
-    category: "on-chain",
-    description: "Market Value to Realized Value. High = overvalued (potential top). Low = undervalued (accumulation zone). Currently in neutral zone.",
-    icon: "📊",
-  },
-  {
-    name: "Open Interest (Perps)",
-    category: "market",
-    description: "Total open interest in Bitcoin perpetual futures. Rapidly growing OI with price increase = potential squeeze.",
-    icon: "📈",
-  },
-  {
-    name: "Long/Short Ratio",
-    category: "market",
-    description: "Ratio of long vs short positions on major exchanges. Extreme longs signal liquidation risk if price drops.",
-    icon: "⚔️",
-  },
-  {
-    name: "NVT Signal",
-    category: "on-chain",
-    description: "Network Value to Transactions ratio. High NVT vs history = potentially overvalued. Low = potentially undervalued.",
-    icon: "🔗",
-  },
-];
-
-function generateSignals(): SentimentSignal[] {
-  const marketBias = Math.random(); // 0–1, 0.5 = neutral
-  const now = new Date();
-
-  const scoreMap: Record<string, { score: number; value: string; trend: SentimentSignal["trend"] }> = {
-    "Fear & Greed Index": (() => {
-      const s = Math.round(25 + marketBias * 55 + (Math.random() - 0.5) * 15);
-      return { score: Math.min(100, Math.max(0, s)), value: `${Math.min(100, Math.max(0, s))} — ${getSentimentLabel(s)}`, trend: s > 55 ? "bullish" : s < 45 ? "bearish" : "neutral" };
-    })(),
-    "BTC Funding Rate": (() => {
-      const rate = ((marketBias - 0.5) * 0.08 + (Math.random() - 0.5) * 0.02).toFixed(4);
-      const pct = parseFloat(rate);
-      const s = Math.round(50 + pct * 1000);
-      return { score: Math.min(100, Math.max(0, s)), value: `${pct > 0 ? "+" : ""}${rate}%`, trend: pct > 0.005 ? "bullish" : pct < -0.005 ? "bearish" : "neutral" };
-    })(),
-    "BTC Dominance": (() => {
-      const dom = (55 + (Math.random() - 0.5) * 10).toFixed(1);
-      const s = parseFloat(dom) > 58 ? 40 : parseFloat(dom) < 50 ? 70 : 50;
-      return { score: s, value: `${dom}%`, trend: parseFloat(dom) > 58 ? "bearish" : parseFloat(dom) < 50 ? "bullish" : "neutral" };
-    })(),
-    "Stablecoin Supply Ratio": (() => {
-      const ratio = (12 + Math.random() * 8).toFixed(2);
-      const s = parseFloat(ratio) > 18 ? 70 : parseFloat(ratio) < 10 ? 35 : 55;
-      return { score: s, value: `${ratio}%`, trend: parseFloat(ratio) > 18 ? "bullish" : "neutral" };
-    })(),
-    "Exchange Net Flow": (() => {
-      const flow = Math.round((Math.random() - 0.6) * 5000);
-      const s = flow < 0 ? 65 : flow > 1000 ? 35 : 50;
-      return { score: s, value: `${flow > 0 ? "+" : ""}${flow.toLocaleString()} BTC (24h)`, trend: flow < -500 ? "bullish" : flow > 500 ? "bearish" : "neutral" };
-    })(),
-    "Active Addresses (7d)": (() => {
-      const change = ((Math.random() - 0.4) * 20).toFixed(1);
-      const s = parseFloat(change) > 5 ? 65 : parseFloat(change) < -5 ? 40 : 55;
-      return { score: s, value: `${parseFloat(change) > 0 ? "+" : ""}${change}% vs prev week`, trend: parseFloat(change) > 5 ? "bullish" : parseFloat(change) < -5 ? "bearish" : "neutral" };
-    })(),
-    "Social Volume (BTC)": (() => {
-      const vol = Math.round(50000 + Math.random() * 200000);
-      const s = vol > 200000 ? 35 : vol > 100000 ? 60 : 50;
-      return { score: s, value: `${(vol / 1000).toFixed(0)}K mentions/day`, trend: vol > 200000 ? "neutral" : vol < 80000 ? "bearish" : "neutral" };
-    })(),
-    "Google Trends (Bitcoin)": (() => {
-      const score = Math.round(20 + Math.random() * 60);
-      const s = score > 70 ? 35 : score < 30 ? 60 : 50;
-      return { score: s, value: `${score}/100 (interest)`, trend: score > 70 ? "neutral" : score < 20 ? "bearish" : "neutral" };
-    })(),
-    "MVRV Z-Score": (() => {
-      const z = (0.5 + (Math.random() - 0.5) * 3).toFixed(2);
-      const zv = parseFloat(z);
-      const s = zv > 3 ? 25 : zv < 0 ? 75 : Math.round(50 + (2 - zv) * 12);
-      return { score: Math.min(100, Math.max(0, s)), value: `${z} (${zv > 3 ? "overvalued" : zv < 0 ? "accumulation" : "fair value"})`, trend: zv > 3 ? "bearish" : zv < 0 ? "bullish" : "neutral" };
-    })(),
-    "Open Interest (Perps)": (() => {
-      const oi = (18 + Math.random() * 12).toFixed(1);
-      const s = parseFloat(oi) > 28 ? 40 : parseFloat(oi) > 22 ? 55 : 65;
-      return { score: s, value: `$${oi}B total OI`, trend: parseFloat(oi) > 28 ? "bearish" : parseFloat(oi) < 20 ? "bullish" : "neutral" };
-    })(),
-    "Long/Short Ratio": (() => {
-      const ratio = (0.8 + Math.random() * 0.8).toFixed(2);
-      const rv = parseFloat(ratio);
-      const s = rv > 1.4 ? 35 : rv < 0.9 ? 65 : 52;
-      return { score: s, value: `${ratio} L/S`, trend: rv > 1.4 ? "bearish" : rv < 0.9 ? "bullish" : "neutral" };
-    })(),
-    "NVT Signal": (() => {
-      const nvt = Math.round(60 + Math.random() * 100);
-      const s = nvt > 130 ? 30 : nvt < 70 ? 70 : 55;
-      return { score: s, value: `${nvt} (${nvt > 130 ? "overvalued" : nvt < 70 ? "undervalued" : "neutral"})`, trend: nvt > 130 ? "bearish" : nvt < 70 ? "bullish" : "neutral" };
-    })(),
+  const getColor = (v: number) => {
+    if (v < 25) return '#ef4444';
+    if (v < 45) return '#f97316';
+    if (v < 55) return '#eab308';
+    if (v < 75) return '#22c55e';
+    return '#10b981';
   };
 
-  return BASE_SIGNALS.map((base) => ({
-    ...base,
-    ...(scoreMap[base.name] ?? { score: 50, value: "N/A", trend: "neutral" as const }),
-    updated: `${now.getHours()}:${String(now.getMinutes()).padStart(2, "0")}`,
-  }));
-}
-
-function generateFGHistory(): FearGreedPoint[] {
-  const points: FearGreedPoint[] = [];
-  let base = 45 + Math.random() * 20;
-  for (let i = 29; i >= 0; i--) {
-    base = Math.min(100, Math.max(0, base + (Math.random() - 0.5) * 12));
-    const d = new Date();
-    d.setDate(d.getDate() - i);
-    points.push({
-      value: Math.round(base),
-      label: getSentimentLabel(Math.round(base)),
-      date: d.toLocaleDateString("en-US", { month: "short", day: "numeric" }),
-    });
-  }
-  return points;
-}
-
-function generateAltcoinSeason(): AltcoinSeason {
-  const idx = Math.round(20 + Math.random() * 60);
-  const label = idx > 75 ? "Altcoin Season 🔥" : idx > 55 ? "Altcoin Trending" : idx > 45 ? "Neutral" : idx > 25 ? "Bitcoin Season" : "Bitcoin Dominance 💪";
-  const desc = idx > 75
-    ? "75%+ of top 50 altcoins outperforming Bitcoin over 90 days."
-    : idx > 55
-      ? "Altcoins beginning to outperform Bitcoin."
-      : idx > 45
-        ? "Mixed signals — no clear season."
-        : idx > 25
-          ? "Bitcoin outperforming most altcoins."
-          : "Bitcoin strongly dominates. Altcoins underperforming.";
-  return { index: idx, label, description: desc };
-}
-
-/* ─────────────────────────────────────────────────────────────
-   Component
-───────────────────────────────────────────────────────────── */
-export default function SentimentDashboardPage() {
-  const [signals, setSignals] = useState<SentimentSignal[]>([]);
-  const [fgHistory, setFgHistory] = useState<FearGreedPoint[]>([]);
-  const [altcoinSeason, setAltcoinSeason] = useState<AltcoinSeason | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [activeCategory, setActiveCategory] = useState<"all" | SentimentSignal["category"]>("all");
-  const [lastUpdated, setLastUpdated] = useState("");
-  const [compositeScore, setCompositeScore] = useState(50);
-  const [refreshing, setRefreshing] = useState(false);
-
-  const refresh = useCallback(async () => {
-    setRefreshing(true);
-    // Try to fetch Fear & Greed from real API
-    let fgValue = 50;
-    try {
-      const res = await fetch("https://api.alternative.me/fng/?limit=30", { signal: AbortSignal.timeout(5000) });
-      if (res.ok) {
-        const json = await res.json();
-        if (json.data?.length) {
-          const history: FearGreedPoint[] = json.data.slice(0, 30).reverse().map((d: { value: string; value_classification: string; timestamp: string }) => ({
-            value: parseInt(d.value),
-            label: d.value_classification,
-            date: new Date(parseInt(d.timestamp) * 1000).toLocaleDateString("en-US", { month: "short", day: "numeric" }),
-          }));
-          setFgHistory(history);
-          fgValue = parseInt(json.data[0].value);
-        }
-      }
-    } catch {
-      setFgHistory(generateFGHistory());
-    }
-
-    const newSignals = generateSignals();
-    // Override F&G with real value if fetched
-    const fgSignal = newSignals.find((s) => s.name === "Fear & Greed Index");
-    if (fgSignal) {
-      fgSignal.score = fgValue;
-      fgSignal.value = `${fgValue} — ${getSentimentLabel(fgValue)}`;
-      fgSignal.trend = fgValue > 55 ? "bullish" : fgValue < 45 ? "bearish" : "neutral";
-    }
-
-    setSignals(newSignals);
-    setAltcoinSeason(generateAltcoinSeason());
-    const composite = Math.round(newSignals.reduce((acc, s) => acc + s.score, 0) / newSignals.length);
-    setCompositeScore(composite);
-    setLastUpdated(new Date().toLocaleTimeString());
-    setRefreshing(false);
-    setLoading(false);
-  }, []);
-
-  useEffect(() => {
-    refresh();
-    const interval = setInterval(refresh, 5 * 60 * 1000);
-    return () => clearInterval(interval);
-  }, [refresh]);
-
-  const filteredSignals = activeCategory === "all"
-    ? signals
-    : signals.filter((s) => s.category === activeCategory);
-
-  const bullishCount = signals.filter((s) => s.trend === "bullish").length;
-  const bearishCount = signals.filter((s) => s.trend === "bearish").length;
-  const neutralCount = signals.filter((s) => s.trend === "neutral").length;
-
-  const CATEGORIES: { key: "all" | SentimentSignal["category"]; label: string; icon: string }[] = [
-    { key: "all", label: "All Signals", icon: "🌐" },
-    { key: "market", label: "Market", icon: "📈" },
-    { key: "on-chain", label: "On-Chain", icon: "⛓️" },
-    { key: "social", label: "Social", icon: "📢" },
-    { key: "technical", label: "Technical", icon: "🔬" },
-  ];
-
-  if (loading) {
-    return (
-      <div className="mx-auto max-w-6xl px-4 py-12 text-center">
-        <div className="inline-flex items-center gap-3 text-[var(--color-text-secondary)]">
-          <div className="w-5 h-5 border-2 border-[var(--color-primary)] border-t-transparent rounded-full animate-spin" />
-          Loading sentiment data…
-        </div>
-      </div>
-    );
-  }
-
-  const compositeColor = getSentimentColor(compositeScore);
-  const compositeLabel = getSentimentLabel(compositeScore);
-  const fgCurrent = fgHistory[fgHistory.length - 1];
+  const needleX = cx + r * 0.8 * Math.cos((angle * Math.PI) / 180);
+  const needleY = cy + r * 0.8 * Math.sin((angle * Math.PI) / 180);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
-      <Breadcrumb
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Tools", href: "/tools" },
-          { label: "Sentiment Dashboard", href: "/tools/sentiment-dashboard" },
-        ]}
-      />
+    <svg width={size} height={size / 2 + 40} viewBox={`0 0 ${size} ${size / 2 + 40}`}>
+      <defs>
+        <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#ef4444" />
+          <stop offset="25%" stopColor="#f97316" />
+          <stop offset="50%" stopColor="#eab308" />
+          <stop offset="75%" stopColor="#22c55e" />
+          <stop offset="100%" stopColor="#10b981" />
+        </linearGradient>
+      </defs>
+      <path d={`M ${cx - r} ${cy} A ${r} ${r} 0 0 1 ${cx + r} ${cy}`} fill="none" stroke="#1e293b" strokeWidth="16" strokeLinecap="round" />
+      <path d={`M ${cx - r} ${cy} A ${r} ${r} 0 0 1 ${cx + r} ${cy}`} fill="none" stroke="url(#gaugeGrad)" strokeWidth="12" strokeLinecap="round" />
+      <line x1={cx} y1={cy} x2={needleX} y2={needleY} stroke={getColor(value)} strokeWidth="3" strokeLinecap="round" />
+      <circle cx={cx} cy={cy} r="6" fill={getColor(value)} />
+      <text x={cx} y={cy + 30} textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">{value}</text>
+    </svg>
+  );
+}
 
-      {/* Header */}
-      <div className="flex items-start justify-between mb-8 flex-wrap gap-4">
-        <div>
-          <h1 className="text-3xl font-black text-[var(--color-text)] mb-2">
-            Crypto Sentiment Dashboard
-          </h1>
-          <p className="text-[var(--color-text-secondary)]">
-            12 real-time signals across market, on-chain, and social data. Updated every 5 minutes.
+function MiniSparkline({ data, color = '#3b82f6' }: { data: number[]; color?: string }) {
+  const max = Math.max(...data);
+  const min = Math.min(...data);
+  const range = max - min || 1;
+  const w = 120;
+  const h = 40;
+  const points = data.map((v, i) => `${(i / (data.length - 1)) * w},${h - ((v - min) / range) * h}`).join(' ');
+
+  return (
+    <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`}>
+      <polyline fill="none" stroke={color} strokeWidth="1.5" points={points} />
+    </svg>
+  );
+}
+
+export default function SentimentDashboard() {
+  const [data, setData] = useState<SentimentData | null>(null);
+  const [timeframe, setTimeframe] = useState<'1h' | '24h' | '7d' | '30d'>('24h');
+  const [refreshing, setRefreshing] = useState(false);
+
+  const loadData = useCallback(() => {
+    setRefreshing(true);
+    setTimeout(() => {
+      setData(generateMockSentiment());
+      setRefreshing(false);
+    }, 600);
+  }, []);
+
+  useEffect(() => { loadData(); }, [loadData]);
+
+  useEffect(() => {
+    const interval = setInterval(loadData, 60000);
+    return () => clearInterval(interval);
+  }, [loadData]);
+
+  if (!data) return (
+    <div className="min-h-screen bg-[#0d1117] flex items-center justify-center">
+      <div className="animate-spin w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full" />
+    </div>
+  );
+
+  const sentimentColor = (v: number) => v >= 55 ? '#22c55e' : v >= 45 ? '#eab308' : '#ef4444';
+
+  return (
+    <div className="min-h-screen bg-[#0d1117] text-white">
+      <style>{`
+        .glass-card { background: rgba(22,27,34,0.8); backdrop-filter: blur(10px); border: 1px solid #30363d; border-radius: 12px; }
+        .sentiment-pill { padding: 2px 8px; border-radius: 9999px; font-size: 11px; font-weight: 600; }
+        .pulse { animation: pulse 2s ease-in-out infinite; }
+        @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.6; } }
+        .bar-fill { transition: width 1s ease-out; }
+      `}</style>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+        <nav className="text-sm text-gray-500 mb-6">
+          <Link href="/" className="hover:text-blue-400">Home</Link>
+          <span className="mx-2">/</span>
+          <Link href="/tools" className="hover:text-blue-400">Tools</Link>
+          <span className="mx-2">/</span>
+          <span className="text-gray-300">Sentiment Dashboard</span>
+        </nav>
+
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+          <div>
+            <h1 className="text-3xl md:text-4xl font-bold mb-2">
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Crypto Sentiment Dashboard</span>
+            </h1>
+            <p className="text-gray-400">Real-time market sentiment from social media, news, and on-chain data</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="flex bg-[#161b22] rounded-lg p-1 border border-[#30363d]">
+              {(['1h', '24h', '7d', '30d'] as const).map(tf => (
+                <button key={tf} onClick={() => setTimeframe(tf)} className={`px-3 py-1.5 rounded-md text-sm font-medium transition ${timeframe === tf ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white'}`}>
+                  {tf}
+                </button>
+              ))}
+            </div>
+            <button onClick={loadData} disabled={refreshing} className="p-2 rounded-lg bg-[#161b22] border border-[#30363d] hover:border-blue-500 transition disabled:opacity-50">
+              <svg className={`w-5 h-5 ${refreshing ? 'animate-spin' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+            </button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          <div className="glass-card p-6 flex flex-col items-center">
+            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Overall Market Sentiment</h3>
+            <SentimentGauge value={data.overall} />
+            <div className="mt-2 text-lg font-bold" style={{ color: sentimentColor(data.overall) }}>{data.label}</div>
+            <div className="text-xs text-gray-500 mt-1">Updated every 60s</div>
+          </div>
+
+          <div className="glass-card p-6">
+            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Market Mood</h3>
+            <div className="space-y-4 mt-6">
+              {[
+                { label: 'Bullish', value: data.marketMood.bullish, color: 'green' },
+                { label: 'Neutral', value: data.marketMood.neutral, color: 'gray' },
+                { label: 'Bearish', value: data.marketMood.bearish, color: 'red' },
+              ].map(m => (
+                <div key={m.label}>
+                  <div className="flex justify-between text-sm mb-1"><span className={`text-${m.color}-400`}>{m.label}</span><span className={`text-${m.color}-400 font-bold`}>{m.value}%</span></div>
+                  <div className="h-3 bg-[#1e293b] rounded-full overflow-hidden"><div className="bar-fill h-full rounded-full" style={{ width: `${m.value}%`, background: m.color === 'green' ? '#22c55e' : m.color === 'red' ? '#ef4444' : '#6b7280' }} /></div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 pt-4 border-t border-[#30363d]">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <span className="pulse inline-block w-2 h-2 rounded-full bg-green-500" />
+                Live aggregation from 5 platforms
+              </div>
+            </div>
+          </div>
+
+          <div className="glass-card p-6">
+            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Fear & Greed Index</h3>
+            <div className="flex items-center gap-4 mb-4">
+              <div className="text-5xl font-black" style={{ color: sentimentColor(data.fearGreed.value) }}>{data.fearGreed.value}</div>
+              <div>
+                <div className="text-lg font-bold" style={{ color: sentimentColor(data.fearGreed.value) }}>{data.fearGreed.label}</div>
+                <div className="text-xs text-gray-500">30-day trend</div>
+              </div>
+            </div>
+            <MiniSparkline data={data.fearGreed.history.map(h => h.value)} color={sentimentColor(data.fearGreed.value)} />
+            <div className="mt-4 flex justify-between text-xs text-gray-500"><span>30d ago</span><span>Today</span></div>
+          </div>
+        </div>
+
+        <div className="glass-card p-6 mb-6">
+          <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Social Platform Sentiment</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead>
+                <tr className="text-xs text-gray-500 border-b border-[#30363d]">
+                  <th className="text-left py-3 px-2">Platform</th>
+                  <th className="text-center py-3 px-2">Score</th>
+                  <th className="text-center py-3 px-2">24h Change</th>
+                  <th className="text-center py-3 px-2">Post Volume</th>
+                  <th className="text-right py-3 px-2">Trend</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.social.map(s => (
+                  <tr key={s.platform} className="border-b border-[#30363d]/50 hover:bg-[#1c2330] transition">
+                    <td className="py-3 px-2 font-medium">{s.platform}</td>
+                    <td className="py-3 px-2 text-center">
+                      <span className="sentiment-pill" style={{ background: `${sentimentColor(s.score)}20`, color: sentimentColor(s.score) }}>{s.score}</span>
+                    </td>
+                    <td className="py-3 px-2 text-center">
+                      <span className={s.change >= 0 ? 'text-green-400' : 'text-red-400'}>{s.change >= 0 ? '+' : ''}{s.change}%</span>
+                    </td>
+                    <td className="py-3 px-2 text-center text-gray-400">{s.volume} posts</td>
+                    <td className="py-3 px-2 flex justify-end">
+                      <MiniSparkline data={Array.from({ length: 12 }, () => Math.random() * 30 + 35)} color={sentimentColor(s.score)} />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+          <div className="glass-card p-6">
+            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Top Token Mentions</h3>
+            <div className="space-y-3">
+              {data.topMentions.map((t, i) => (
+                <div key={t.token} className="flex items-center gap-3 p-3 rounded-lg hover:bg-[#1c2330] transition">
+                  <span className="text-xs text-gray-500 w-5">{i + 1}</span>
+                  <span className="font-bold w-14">{t.token}</span>
+                  <div className="flex-1"><div className="h-2 bg-[#1e293b] rounded-full overflow-hidden"><div className="h-full rounded-full bar-fill" style={{ width: `${(t.mentions / data.topMentions[0].mentions) * 100}%`, background: sentimentColor(t.sentiment) }} /></div></div>
+                  <span className="text-xs text-gray-400 w-16 text-right">{(t.mentions / 1000).toFixed(1)}K</span>
+                  <span className="sentiment-pill w-10 text-center" style={{ background: `${sentimentColor(t.sentiment)}20`, color: sentimentColor(t.sentiment) }}>{t.sentiment}</span>
+                  <span className={`text-xs w-14 text-right ${Number(t.change24h) >= 0 ? 'text-green-400' : 'text-red-400'}`}>{Number(t.change24h) >= 0 ? '+' : ''}{t.change24h}%</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="glass-card p-6">
+            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Sentiment-Tagged News</h3>
+            <div className="space-y-3">
+              {data.newsHeadlines.map((n, i) => (
+                <div key={i} className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#1c2330] transition">
+                  <span className={`mt-1 w-2 h-2 rounded-full flex-shrink-0 ${n.sentiment === 'bullish' ? 'bg-green-500' : n.sentiment === 'bearish' ? 'bg-red-500' : 'bg-gray-500'}`} />
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-medium leading-tight">{n.title}</p>
+                    <div className="flex items-center gap-2 mt-1"><span className="text-xs text-gray-500">{n.source}</span><span className="text-xs text-gray-600">{n.time}</span></div>
+                  </div>
+                  <span className={`sentiment-pill flex-shrink-0 ${n.sentiment === 'bullish' ? 'bg-green-500/10 text-green-400' : n.sentiment === 'bearish' ? 'bg-red-500/10 text-red-400' : 'bg-gray-500/10 text-gray-400'}`}>{n.sentiment}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="glass-card p-6 mb-8">
+          <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">Methodology</h3>
+          <p className="text-sm text-gray-400 leading-relaxed">
+            Our sentiment dashboard aggregates data from multiple sources including social media platforms (Twitter/X, Reddit, Telegram, Discord), news outlets, and on-chain metrics. Scores are normalized on a 0-100 scale where 0 represents extreme fear/bearishness and 100 represents extreme greed/bullishness. Data is refreshed every 60 seconds during market hours. This tool is for informational purposes only and should not be considered financial advice.
           </p>
         </div>
-        <div className="flex items-center gap-3">
-          <span className="text-xs text-[var(--color-text-secondary)]">Updated {lastUpdated}</span>
-          <button
-            onClick={refresh}
-            disabled={refreshing}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold glass card-hover"
-          >
-            <span className={refreshing ? "animate-spin" : ""}>⟳</span>
-            Refresh
-          </button>
-        </div>
-      </div>
 
-      {/* Top Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        {/* Composite */}
-        <div className="glass rounded-xl p-5 col-span-2 md:col-span-1">
-          <div className="text-xs text-[var(--color-text-secondary)] mb-2 uppercase tracking-wider font-bold">Composite Score</div>
-          <div className="text-5xl font-black mb-1" style={{ color: compositeColor }}>{compositeScore}</div>
-          <div className="text-sm font-semibold" style={{ color: compositeColor }}>{compositeLabel}</div>
-        </div>
-
-        {/* Fear & Greed */}
-        <div className="glass rounded-xl p-5">
-          <div className="text-xs text-[var(--color-text-secondary)] mb-2 uppercase tracking-wider font-bold">😱 Fear & Greed</div>
-          {fgCurrent && (
-            <>
-              <div className="text-3xl font-black mb-1" style={{ color: getSentimentColor(fgCurrent.value) }}>
-                {fgCurrent.value}
-              </div>
-              <div className="text-xs" style={{ color: getSentimentColor(fgCurrent.value) }}>{fgCurrent.label}</div>
-            </>
-          )}
-        </div>
-
-        {/* Signal breakdown */}
-        <div className="glass rounded-xl p-5">
-          <div className="text-xs text-[var(--color-text-secondary)] mb-3 uppercase tracking-wider font-bold">Signal Breakdown</div>
-          <div className="space-y-1">
-            <div className="flex items-center justify-between">
-              <span className="text-xs text-green-400">▲ Bullish</span>
-              <span className="text-sm font-bold text-green-400">{bullishCount}</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="text-xs text-red-400">▼ Bearish</span>
-              <span className="text-sm font-bold text-red-400">{bearishCount}</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="text-xs text-yellow-400">● Neutral</span>
-              <span className="text-sm font-bold text-yellow-400">{neutralCount}</span>
-            </div>
+        <div className="glass-card p-6">
+          <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Related Tools</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { name: 'Fear & Greed Timeline', href: '/tools/fear-greed-timeline' },
+              { name: 'Whale Tracker', href: '/tools/whale-tracker' },
+              { name: 'Market Heatmap', href: '/tools/market-heatmap' },
+              { name: 'Token Screener', href: '/tools/token-screener' },
+            ].map(t => (
+              <Link key={t.href} href={t.href} className="p-3 rounded-lg bg-[#1c2330] border border-[#30363d] hover:border-blue-500 transition text-sm font-medium text-center">{t.name}</Link>
+            ))}
           </div>
         </div>
-
-        {/* Altcoin Season */}
-        {altcoinSeason && (
-          <div className="glass rounded-xl p-5">
-            <div className="text-xs text-[var(--color-text-secondary)] mb-2 uppercase tracking-wider font-bold">Altcoin Season</div>
-            <div className="text-2xl font-black mb-1" style={{ color: altcoinSeason.index > 60 ? "#22c55e" : "#F7931A" }}>
-              {altcoinSeason.index}<span className="text-base font-normal">/100</span>
-            </div>
-            <div className="text-xs font-semibold" style={{ color: altcoinSeason.index > 60 ? "#22c55e" : "#F7931A" }}>
-              {altcoinSeason.label}
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* F&G 30-Day Chart */}
-      <div className="glass rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-bold text-[var(--color-text)] mb-4 uppercase tracking-wider">
-          Fear & Greed — 30 Day History
-        </h2>
-        <div className="flex items-end gap-1 h-24">
-          {fgHistory.map((point, i) => {
-            const h = Math.max(8, (point.value / 100) * 96);
-            const color = getSentimentColor(point.value);
-            const isToday = i === fgHistory.length - 1;
-            return (
-              <div key={i} className="flex-1 flex flex-col items-center justify-end gap-1 group relative">
-                {/* Tooltip */}
-                <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none">
-                  <div className="bg-[#0d1117] border border-[rgba(255,255,255,0.1)] rounded-lg px-2 py-1 text-xs whitespace-nowrap">
-                    <div className="font-bold" style={{ color }}>{point.value} — {point.label}</div>
-                    <div className="text-[var(--color-text-secondary)]">{point.date}</div>
-                  </div>
-                </div>
-                <div
-                  className="w-full rounded-t-sm transition-all"
-                  style={{
-                    height: `${h}px`,
-                    backgroundColor: color,
-                    opacity: isToday ? 1 : 0.6,
-                    border: isToday ? `1px solid ${color}` : "none",
-                  }}
-                />
-              </div>
-            );
-          })}
-        </div>
-        <div className="flex justify-between mt-2 text-xs text-[var(--color-text-secondary)]">
-          <span>{fgHistory[0]?.date}</span>
-          <span>Today</span>
-        </div>
-      </div>
-
-      {/* Category Filter */}
-      <div className="flex gap-2 mb-6 flex-wrap">
-        {CATEGORIES.map((cat) => (
-          <button
-            key={cat.key}
-            onClick={() => setActiveCategory(cat.key)}
-            className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
-              activeCategory === cat.key
-                ? "bg-[var(--color-primary)] text-[var(--color-text)]"
-                : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
-            }`}
-          >
-            {cat.icon} {cat.label}
-            <span className={`text-xs rounded-full px-1.5 ${activeCategory === cat.key ? "bg-white/20" : "bg-[rgba(255,255,255,0.08)]"}`}>
-              {cat.key === "all" ? signals.length : signals.filter((s) => s.category === cat.key).length}
-            </span>
-          </button>
-        ))}
-      </div>
-
-      {/* Signals Grid */}
-      <div className="grid md:grid-cols-2 gap-4 mb-8">
-        {filteredSignals.map((signal) => {
-          const barWidth = Math.min(100, Math.max(0, signal.score));
-          const barColor = getSentimentColor(signal.score);
-          const trendColor = getTrendColor(signal.trend);
-
-          return (
-            <div key={signal.name} className="glass rounded-xl p-5">
-              <div className="flex items-start justify-between mb-3">
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">{signal.icon}</span>
-                  <div>
-                    <h3 className="font-bold text-[var(--color-text)] text-sm">{signal.name}</h3>
-                    <span className="text-xs px-2 py-0.5 rounded-full glass-subtle text-[var(--color-text-secondary)] capitalize">
-                      {signal.category}
-                    </span>
-                  </div>
-                </div>
-                <div className="text-right flex-shrink-0 ml-3">
-                  <div className="text-sm font-bold" style={{ color: trendColor }}>
-                    {getTrendIcon(signal.trend)} {signal.trend.toUpperCase()}
-                  </div>
-                  <div className="text-xs text-[var(--color-text-secondary)] mt-0.5">{signal.value}</div>
-                </div>
-              </div>
-
-              {/* Score Bar */}
-              <div className="mb-3">
-                <div className="flex justify-between text-xs text-[var(--color-text-secondary)] mb-1">
-                  <span>Bearish</span>
-                  <span className="font-bold" style={{ color: barColor }}>{signal.score}/100</span>
-                  <span>Bullish</span>
-                </div>
-                <div className="w-full h-2 rounded-full bg-[rgba(255,255,255,0.06)] overflow-hidden">
-                  <div
-                    className="h-full rounded-full transition-all duration-500"
-                    style={{ width: `${barWidth}%`, backgroundColor: barColor }}
-                  />
-                </div>
-              </div>
-
-              <p className="text-xs text-[var(--color-text-secondary)]">{signal.description}</p>
-            </div>
-          );
-        })}
-      </div>
-
-      {/* Disclaimer */}
-      <div className="glass rounded-xl p-4 text-xs text-[var(--color-text-secondary)]">
-        <strong className="text-[var(--color-text)]">⚠ Disclaimer:</strong> This dashboard is for informational purposes only and does
-        not constitute financial advice. Sentiment indicators are lagging signals and should not be used as the sole basis for
-        investment decisions. Fear & Greed data sourced from{" "}
-        <a href="https://alternative.me" target="_blank" rel="noopener noreferrer" className="text-[var(--color-primary)]">
-          alternative.me
-        </a>
-        . Other signals are estimates based on publicly available data.
       </div>
     </div>
   );

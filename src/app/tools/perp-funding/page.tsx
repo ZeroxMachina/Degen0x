@@ -1,416 +1,788 @@
-"use client";
+'use client';
 
-import { useState, useEffect, useMemo } from "react";
-import Breadcrumb from "@/components/Breadcrumb";
+import { useState, useMemo } from 'react';
+import { ChevronUp, ChevronDown } from 'lucide-react';
 
-/* ────────────────────────────────────────────────────────────
-   Types
-──────────────────────────────────────────────────────────── */
-interface FundingRate {
+type SortField = 'asset' | 'exchange' | 'fundingRate' | 'annualizedRate' | 'openInterest';
+type SortOrder = 'asc' | 'desc';
+
+interface FundingRateData {
   id: string;
-  symbol: string;
+  asset: string;
   exchange: string;
-  rate: number;          // hourly funding rate %
-  annualized: number;    // annualized %
-  nextFunding: string;   // countdown
-  openInterest: number;
-  volume24h: number;
-  longShortRatio: number;
-  prediction: "bullish" | "bearish" | "neutral";
-  trend7d: number[];
+  fundingRate: number; // 8h funding rate
+  nextFundingTime: string;
+  openInterest: number; // in millions USD
+  history: number[]; // last 7 funding rates
 }
 
-interface ArbitrageOpp {
-  symbol: string;
-  longExchange: string;
-  shortExchange: string;
-  spread: number;
-  annualizedYield: number;
-  risk: "low" | "medium" | "high";
-}
+const FUNDING_RATES_DATA: FundingRateData[] = [
+  // Binance
+  {
+    id: 'BTC-BINANCE',
+    asset: 'BTC',
+    exchange: 'Binance',
+    fundingRate: 0.0089,
+    nextFundingTime: '4h 32m',
+    openInterest: 8420,
+    history: [0.0078, 0.0082, 0.0085, 0.0089, 0.0087, 0.0091, 0.0089],
+  },
+  {
+    id: 'ETH-BINANCE',
+    asset: 'ETH',
+    exchange: 'Binance',
+    fundingRate: 0.0124,
+    nextFundingTime: '4h 32m',
+    openInterest: 3890,
+    history: [0.0098, 0.0105, 0.0112, 0.0118, 0.0121, 0.0124, 0.0124],
+  },
+  {
+    id: 'SOL-BINANCE',
+    asset: 'SOL',
+    exchange: 'Binance',
+    fundingRate: 0.0156,
+    nextFundingTime: '4h 32m',
+    openInterest: 1240,
+    history: [0.0134, 0.0142, 0.0148, 0.0151, 0.0155, 0.0158, 0.0156],
+  },
+  {
+    id: 'DOGE-BINANCE',
+    asset: 'DOGE',
+    exchange: 'Binance',
+    fundingRate: -0.0035,
+    nextFundingTime: '4h 32m',
+    openInterest: 680,
+    history: [0.0012, 0.0008, -0.0005, -0.0018, -0.0028, -0.0032, -0.0035],
+  },
+  {
+    id: 'AVAX-BINANCE',
+    asset: 'AVAX',
+    exchange: 'Binance',
+    fundingRate: 0.0103,
+    nextFundingTime: '4h 32m',
+    openInterest: 520,
+    history: [0.0078, 0.0087, 0.0092, 0.0098, 0.0101, 0.0103, 0.0103],
+  },
+  {
+    id: 'ARB-BINANCE',
+    asset: 'ARB',
+    exchange: 'Binance',
+    fundingRate: 0.0142,
+    nextFundingTime: '4h 32m',
+    openInterest: 890,
+    history: [0.0098, 0.0108, 0.0118, 0.0128, 0.0135, 0.0140, 0.0142],
+  },
+  {
+    id: 'OP-BINANCE',
+    asset: 'OP',
+    exchange: 'Binance',
+    fundingRate: 0.0118,
+    nextFundingTime: '4h 32m',
+    openInterest: 450,
+    history: [0.0089, 0.0098, 0.0105, 0.0112, 0.0115, 0.0118, 0.0118],
+  },
+  {
+    id: 'LINK-BINANCE',
+    asset: 'LINK',
+    exchange: 'Binance',
+    fundingRate: 0.0097,
+    nextFundingTime: '4h 32m',
+    openInterest: 670,
+    history: [0.0078, 0.0084, 0.0089, 0.0093, 0.0095, 0.0097, 0.0097],
+  },
+  {
+    id: 'MATIC-BINANCE',
+    asset: 'MATIC',
+    exchange: 'Binance',
+    fundingRate: 0.0129,
+    nextFundingTime: '4h 32m',
+    openInterest: 520,
+    history: [0.0098, 0.0108, 0.0115, 0.0122, 0.0126, 0.0129, 0.0129],
+  },
+  {
+    id: 'WLD-BINANCE',
+    asset: 'WLD',
+    exchange: 'Binance',
+    fundingRate: 0.0145,
+    nextFundingTime: '4h 32m',
+    openInterest: 280,
+    history: [0.0115, 0.0125, 0.0132, 0.0138, 0.0142, 0.0145, 0.0145],
+  },
+  // Bybit
+  {
+    id: 'BTC-BYBIT',
+    asset: 'BTC',
+    exchange: 'Bybit',
+    fundingRate: 0.0087,
+    nextFundingTime: '2h 15m',
+    openInterest: 7850,
+    history: [0.0075, 0.0080, 0.0083, 0.0086, 0.0087, 0.0089, 0.0087],
+  },
+  {
+    id: 'ETH-BYBIT',
+    asset: 'ETH',
+    exchange: 'Bybit',
+    fundingRate: 0.0121,
+    nextFundingTime: '2h 15m',
+    openInterest: 3540,
+    history: [0.0095, 0.0103, 0.0110, 0.0116, 0.0119, 0.0122, 0.0121],
+  },
+  {
+    id: 'SOL-BYBIT',
+    asset: 'SOL',
+    exchange: 'Bybit',
+    fundingRate: 0.0152,
+    nextFundingTime: '2h 15m',
+    openInterest: 1100,
+    history: [0.0130, 0.0138, 0.0145, 0.0148, 0.0151, 0.0154, 0.0152],
+  },
+  {
+    id: 'DOGE-BYBIT',
+    asset: 'DOGE',
+    exchange: 'Bybit',
+    fundingRate: -0.0028,
+    nextFundingTime: '2h 15m',
+    openInterest: 620,
+    history: [0.0018, 0.0012, 0.0002, -0.0012, -0.0022, -0.0026, -0.0028],
+  },
+  {
+    id: 'AVAX-BYBIT',
+    asset: 'AVAX',
+    exchange: 'Bybit',
+    fundingRate: 0.0100,
+    nextFundingTime: '2h 15m',
+    openInterest: 480,
+    history: [0.0075, 0.0084, 0.0090, 0.0096, 0.0099, 0.0101, 0.0100],
+  },
+  {
+    id: 'ARB-BYBIT',
+    asset: 'ARB',
+    exchange: 'Bybit',
+    fundingRate: 0.0138,
+    nextFundingTime: '2h 15m',
+    openInterest: 820,
+    history: [0.0095, 0.0105, 0.0115, 0.0125, 0.0132, 0.0137, 0.0138],
+  },
+  {
+    id: 'OP-BYBIT',
+    asset: 'OP',
+    exchange: 'Bybit',
+    fundingRate: 0.0114,
+    nextFundingTime: '2h 15m',
+    openInterest: 410,
+    history: [0.0085, 0.0095, 0.0102, 0.0109, 0.0112, 0.0115, 0.0114],
+  },
+  {
+    id: 'LINK-BYBIT',
+    asset: 'LINK',
+    exchange: 'Bybit',
+    fundingRate: 0.0094,
+    nextFundingTime: '2h 15m',
+    openInterest: 620,
+    history: [0.0075, 0.0081, 0.0087, 0.0090, 0.0093, 0.0095, 0.0094],
+  },
+  {
+    id: 'MATIC-BYBIT',
+    asset: 'MATIC',
+    exchange: 'Bybit',
+    fundingRate: 0.0126,
+    nextFundingTime: '2h 15m',
+    openInterest: 480,
+    history: [0.0095, 0.0105, 0.0112, 0.0119, 0.0123, 0.0126, 0.0126],
+  },
+  {
+    id: 'WLD-BYBIT',
+    asset: 'WLD',
+    exchange: 'Bybit',
+    fundingRate: 0.0142,
+    nextFundingTime: '2h 15m',
+    openInterest: 260,
+    history: [0.0112, 0.0122, 0.0129, 0.0135, 0.0139, 0.0142, 0.0142],
+  },
+  // OKX
+  {
+    id: 'BTC-OKX',
+    asset: 'BTC',
+    exchange: 'OKX',
+    fundingRate: 0.0091,
+    nextFundingTime: '3h 45m',
+    openInterest: 6920,
+    history: [0.0080, 0.0084, 0.0087, 0.0089, 0.0090, 0.0092, 0.0091],
+  },
+  {
+    id: 'ETH-OKX',
+    asset: 'ETH',
+    exchange: 'OKX',
+    fundingRate: 0.0125,
+    nextFundingTime: '3h 45m',
+    openInterest: 3200,
+    history: [0.0100, 0.0108, 0.0115, 0.0120, 0.0123, 0.0125, 0.0125],
+  },
+  {
+    id: 'SOL-OKX',
+    asset: 'SOL',
+    exchange: 'OKX',
+    fundingRate: 0.0158,
+    nextFundingTime: '3h 45m',
+    openInterest: 980,
+    history: [0.0136, 0.0144, 0.0150, 0.0154, 0.0157, 0.0160, 0.0158],
+  },
+  {
+    id: 'DOGE-OKX',
+    asset: 'DOGE',
+    exchange: 'OKX',
+    fundingRate: -0.0032,
+    nextFundingTime: '3h 45m',
+    openInterest: 540,
+    history: [0.0015, 0.0010, -0.0002, -0.0015, -0.0025, -0.0030, -0.0032],
+  },
+  {
+    id: 'AVAX-OKX',
+    asset: 'AVAX',
+    exchange: 'OKX',
+    fundingRate: 0.0105,
+    nextFundingTime: '3h 45m',
+    openInterest: 420,
+    history: [0.0080, 0.0089, 0.0095, 0.0101, 0.0104, 0.0106, 0.0105],
+  },
+  {
+    id: 'ARB-OKX',
+    asset: 'ARB',
+    exchange: 'OKX',
+    fundingRate: 0.0145,
+    nextFundingTime: '3h 45m',
+    openInterest: 750,
+    history: [0.0100, 0.0110, 0.0120, 0.0130, 0.0138, 0.0143, 0.0145],
+  },
+  {
+    id: 'OP-OKX',
+    asset: 'OP',
+    exchange: 'OKX',
+    fundingRate: 0.0121,
+    nextFundingTime: '3h 45m',
+    openInterest: 390,
+    history: [0.0091, 0.0101, 0.0108, 0.0115, 0.0119, 0.0121, 0.0121],
+  },
+  {
+    id: 'LINK-OKX',
+    asset: 'LINK',
+    exchange: 'OKX',
+    fundingRate: 0.0100,
+    nextFundingTime: '3h 45m',
+    openInterest: 580,
+    history: [0.0080, 0.0087, 0.0092, 0.0096, 0.0098, 0.0100, 0.0100],
+  },
+  {
+    id: 'MATIC-OKX',
+    asset: 'MATIC',
+    exchange: 'OKX',
+    fundingRate: 0.0132,
+    nextFundingTime: '3h 45m',
+    openInterest: 450,
+    history: [0.0101, 0.0111, 0.0119, 0.0125, 0.0129, 0.0132, 0.0132],
+  },
+  {
+    id: 'WLD-OKX',
+    asset: 'WLD',
+    exchange: 'OKX',
+    fundingRate: 0.0148,
+    nextFundingTime: '3h 45m',
+    openInterest: 240,
+    history: [0.0118, 0.0128, 0.0135, 0.0141, 0.0145, 0.0148, 0.0148],
+  },
+];
 
-/* ────────────────────────────────────────────────────────────
-   Mock Data Generators
-──────────────────────────────────────────────────────────── */
-const EXCHANGES = ["Binance", "Bybit", "OKX", "dYdX", "Hyperliquid", "GMX", "Vertex", "Aevo"];
-const SYMBOLS = ["BTC", "ETH", "SOL", "ARB", "OP", "AVAX", "DOGE", "PEPE", "WIF", "JUP", "TIA", "SEI", "SUI", "INJ", "FET", "RNDR", "WLD", "PYTH", "JTO", "BONK"];
+function FundingRateSparkline({ history }: { history: number[] }) {
+  const maxRate = Math.max(...history.map(Math.abs));
+  const minRate = Math.min(...history);
+  const range = maxRate - minRate || 0.001;
 
-function generateFundingRates(): FundingRate[] {
-  const rates: FundingRate[] = [];
-  for (const symbol of SYMBOLS) {
-    for (const exchange of EXCHANGES.slice(0, 3 + Math.floor(Math.random() * 5))) {
-      const rate = (Math.random() - 0.35) * 0.12;
-      const annualized = rate * 3 * 365;
-      rates.push({
-        id: `${symbol}-${exchange}`,
-        symbol,
-        exchange,
-        rate,
-        annualized,
-        nextFunding: `${Math.floor(Math.random() * 8)}h ${Math.floor(Math.random() * 60)}m`,
-        openInterest: Math.random() * 2_000_000_000 + 10_000_000,
-        volume24h: Math.random() * 5_000_000_000 + 50_000_000,
-        longShortRatio: 0.7 + Math.random() * 0.6,
-        prediction: rate > 0.02 ? "bullish" : rate < -0.02 ? "bearish" : "neutral",
-        trend7d: Array.from({ length: 7 }, () => (Math.random() - 0.35) * 0.1),
-      });
-    }
-  }
-  return rates;
-}
-
-function generateArbitrageOpps(rates: FundingRate[]): ArbitrageOpp[] {
-  const opps: ArbitrageOpp[] = [];
-  const symbolGroups = new Map<string, FundingRate[]>();
-  for (const r of rates) {
-    if (!symbolGroups.has(r.symbol)) symbolGroups.set(r.symbol, []);
-    symbolGroups.get(r.symbol)!.push(r);
-  }
-  for (const [symbol, group] of symbolGroups) {
-    if (group.length < 2) continue;
-    const sorted = [...group].sort((a, b) => a.rate - b.rate);
-    const low = sorted[0];
-    const high = sorted[sorted.length - 1];
-    const spread = high.rate - low.rate;
-    if (spread > 0.005) {
-      opps.push({
-        symbol,
-        longExchange: low.exchange,
-        shortExchange: high.exchange,
-        spread,
-        annualizedYield: spread * 3 * 365,
-        risk: spread > 0.05 ? "high" : spread > 0.02 ? "medium" : "low",
-      });
-    }
-  }
-  return opps.sort((a, b) => b.annualizedYield - a.annualizedYield).slice(0, 15);
-}
-
-/* ────────────────────────────────────────────────────────────
-   Formatters
-──────────────────────────────────────────────────────────── */
-function fmtPct(n: number) {
-  const s = n >= 0 ? "+" : "";
-  return `${s}${n.toFixed(4)}%`;
-}
-function fmtAnnual(n: number) {
-  const s = n >= 0 ? "+" : "";
-  return `${s}${n.toFixed(2)}%`;
-}
-function fmtUsd(n: number) {
-  if (n >= 1e9) return `$${(n / 1e9).toFixed(2)}B`;
-  if (n >= 1e6) return `$${(n / 1e6).toFixed(1)}M`;
-  if (n >= 1e3) return `$${(n / 1e3).toFixed(0)}K`;
-  return `$${n.toFixed(0)}`;
-}
-
-/* ────────────────────────────────────────────────────────────
-   Sparkline Component
-──────────────────────────────────────────────────────────── */
-function Sparkline({ data, width = 80, height = 24 }: { data: number[]; width?: number; height?: number }) {
-  const min = Math.min(...data);
-  const max = Math.max(...data);
-  const range = max - min || 1;
-  const points = data
-    .map((v, i) => `${(i / (data.length - 1)) * width},${height - ((v - min) / range) * height}`)
-    .join(" ");
-  const color = data[data.length - 1] >= data[0] ? "#3fb950" : "#f85149";
   return (
-    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`}>
-      <polyline points={points} fill="none" stroke={color} strokeWidth={1.5} />
-    </svg>
+    <div className="flex items-end gap-0.5">
+      {history.map((rate, idx) => {
+        const normalized = (rate - minRate) / range;
+        const height = Math.max(8, 32 * normalized);
+        const isPositive = rate >= 0;
+        const color = isPositive
+          ? 'bg-emerald-500/70 hover:bg-emerald-500'
+          : 'bg-red-500/70 hover:bg-red-500';
+
+        return (
+          <div
+            key={idx}
+            className={`w-1.5 rounded-sm transition-colors ${color}`}
+            style={{ height: `${height}px` }}
+            title={`${(rate * 100).toFixed(3)}%`}
+          />
+        );
+      })}
+    </div>
   );
 }
 
-/* ────────────────────────────────────────────────────────────
-   Main Component
-──────────────────────────────────────────────────────────── */
-export default function PerpFundingPage() {
-  const [rates, setRates] = useState<FundingRate[]>([]);
-  const [arbitrage, setArbitrage] = useState<ArbitrageOpp[]>([]);
-  const [search, setSearch] = useState("");
-  const [sortBy, setSortBy] = useState<"rate" | "annualized" | "oi" | "volume">("rate");
-  const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
-  const [exchangeFilter, setExchangeFilter] = useState<string>("all");
-  const [tab, setTab] = useState<"rates" | "arbitrage" | "heatmap">("rates");
-  const [refreshing, setRefreshing] = useState(false);
+function StatCard({
+  label,
+  value,
+  subtext,
+  color,
+}: {
+  label: string;
+  value: string;
+  subtext?: string;
+  color?: 'green' | 'red' | 'blue';
+}) {
+  const bgClass =
+    color === 'green'
+      ? 'bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 border-emerald-500/20'
+      : color === 'red'
+        ? 'bg-gradient-to-br from-red-500/10 to-red-600/5 border-red-500/20'
+        : 'bg-gradient-to-br from-blue-500/10 to-blue-600/5 border-blue-500/20';
 
-  useEffect(() => {
-    const r = generateFundingRates();
-    setRates(r);
-    setArbitrage(generateArbitrageOpps(r));
-  }, []);
-
-  function refresh() {
-    setRefreshing(true);
-    setTimeout(() => {
-      const r = generateFundingRates();
-      setRates(r);
-      setArbitrage(generateArbitrageOpps(r));
-      setRefreshing(false);
-    }, 600);
-  }
-
-  const filteredRates = useMemo(() => {
-    let f = rates;
-    if (search) f = f.filter((r) => r.symbol.toLowerCase().includes(search.toLowerCase()));
-    if (exchangeFilter !== "all") f = f.filter((r) => r.exchange === exchangeFilter);
-    f.sort((a, b) => {
-      let av: number, bv: number;
-      switch (sortBy) {
-        case "rate": av = a.rate; bv = b.rate; break;
-        case "annualized": av = a.annualized; bv = b.annualized; break;
-        case "oi": av = a.openInterest; bv = b.openInterest; break;
-        case "volume": av = a.volume24h; bv = b.volume24h; break;
-      }
-      return sortDir === "desc" ? bv - av : av - bv;
-    });
-    return f;
-  }, [rates, search, exchangeFilter, sortBy, sortDir]);
-
-  // Heatmap data
-  const heatmapData = useMemo(() => {
-    const map = new Map<string, Map<string, number>>();
-    for (const r of rates) {
-      if (!map.has(r.symbol)) map.set(r.symbol, new Map());
-      map.get(r.symbol)!.set(r.exchange, r.rate);
-    }
-    return map;
-  }, [rates]);
-
-  // Summary stats
-  const avgRate = rates.length ? rates.reduce((s, r) => s + r.rate, 0) / rates.length : 0;
-  const totalOI = rates.reduce((s, r) => s + r.openInterest, 0);
-  const mostPositive = [...rates].sort((a, b) => b.rate - a.rate)[0];
-  const mostNegative = [...rates].sort((a, b) => a.rate - b.rate)[0];
-
-  function handleSort(col: typeof sortBy) {
-    if (sortBy === col) setSortDir(sortDir === "desc" ? "asc" : "desc");
-    else { setSortBy(col); setSortDir("desc"); }
-  }
+  const textColorClass =
+    color === 'green' ? 'text-emerald-400' : color === 'red' ? 'text-red-400' : 'text-blue-400';
 
   return (
-    <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
-      <div style={{ maxWidth: 1400, margin: "0 auto", padding: "24px 20px" }}>
-        <Breadcrumb items={[{ label: "Tools", href: "/tools" }, { label: "Perp Funding Rates" }]} />
+    <div
+      className={`rounded-lg border p-4 backdrop-blur-sm ${bgClass}`}
+      style={{
+        backgroundColor: 'var(--color-surface)',
+        borderColor: 'var(--color-border)',
+      }}
+    >
+      <p
+        className="text-sm font-medium"
+        style={{ color: 'var(--color-text-secondary)' }}
+      >
+        {label}
+      </p>
+      <p className={`mt-1 text-2xl font-bold ${textColorClass}`}>{value}</p>
+      {subtext && (
+        <p
+          className="mt-1 text-xs"
+          style={{ color: 'var(--color-text-secondary)' }}
+        >
+          {subtext}
+        </p>
+      )}
+    </div>
+  );
+}
 
-        <div style={{ marginBottom: 32 }}>
-          <h1 style={{ fontSize: 32, fontWeight: 800, marginBottom: 8, background: "linear-gradient(135deg, #6366f1, #06b6d4)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-            Perpetual Funding Rate Dashboard
+export default function PerpFundingPage() {
+  const [sortField, setSortField] = useState<SortField>('fundingRate');
+  const [sortOrder, setSortOrder] = useState<SortOrder>('desc');
+  const [selectedAsset, setSelectedAsset] = useState<string>('');
+  const [selectedExchange, setSelectedExchange] = useState<string>('');
+
+  const assets = Array.from(new Set(FUNDING_RATES_DATA.map((d) => d.asset))).sort();
+  const exchanges = Array.from(new Set(FUNDING_RATES_DATA.map((d) => d.exchange))).sort();
+
+  const filteredData = useMemo(() => {
+    let filtered = FUNDING_RATES_DATA.filter((item) => {
+      if (selectedAsset && item.asset !== selectedAsset) return false;
+      if (selectedExchange && item.exchange !== selectedExchange) return false;
+      return true;
+    });
+
+    filtered.sort((a, b) => {
+      let aVal: number | string = 0;
+      let bVal: number | string = 0;
+
+      switch (sortField) {
+        case 'asset':
+          aVal = a.asset;
+          bVal = b.asset;
+          break;
+        case 'exchange':
+          aVal = a.exchange;
+          bVal = b.exchange;
+          break;
+        case 'fundingRate':
+          aVal = a.fundingRate;
+          bVal = b.fundingRate;
+          break;
+        case 'annualizedRate':
+          aVal = a.fundingRate * 365 * 3;
+          bVal = b.fundingRate * 365 * 3;
+          break;
+        case 'openInterest':
+          aVal = a.openInterest;
+          bVal = b.openInterest;
+          break;
+      }
+
+      if (typeof aVal === 'string') {
+        return sortOrder === 'asc' ? aVal.localeCompare(bVal as string) : (bVal as string).localeCompare(aVal);
+      }
+
+      return sortOrder === 'asc' ? (aVal as number) - (bVal as number) : (bVal as number) - (aVal as number);
+    });
+
+    return filtered;
+  }, [sortField, sortOrder, selectedAsset, selectedExchange]);
+
+  const stats = useMemo(() => {
+    const rates = FUNDING_RATES_DATA.map((d) => d.fundingRate);
+    const avg = rates.reduce((a, b) => a + b, 0) / rates.length;
+    const highest = Math.max(...rates);
+    const lowest = Math.min(...rates);
+    const totalOI = FUNDING_RATES_DATA.reduce((a, b) => a + b.openInterest, 0);
+
+    return { avg, highest, lowest, totalOI };
+  }, []);
+
+  const handleSort = (field: SortField) => {
+    if (sortField === field) {
+      setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortField(field);
+      setSortOrder('desc');
+    }
+  };
+
+  const SortIcon = ({ field }: { field: SortField }) => {
+    if (sortField !== field) return null;
+    return sortOrder === 'desc' ? (
+      <ChevronDown className="inline-block h-4 w-4" />
+    ) : (
+      <ChevronUp className="inline-block h-4 w-4" />
+    );
+  };
+
+  return (
+    <div
+      className="min-h-screen p-6 md:p-8"
+      style={{ backgroundColor: 'var(--color-bg)' }}
+    >
+      <div className="mx-auto max-w-7xl">
+        {/* Header */}
+        <div className="mb-8">
+          <h1
+            className="text-4xl font-bold tracking-tight"
+            style={{ color: 'var(--color-text)' }}
+          >
+            Perpetual Funding Rates
           </h1>
-          <p style={{ color: "#8b949e", fontSize: 15, maxWidth: 700 }}>
-            Track real-time funding rates across all major perpetual exchanges. Find arbitrage opportunities, monitor market sentiment, and optimize your delta-neutral strategies.
+          <p
+            className="mt-2 text-lg"
+            style={{ color: 'var(--color-text-secondary)' }}
+          >
+            Real-time funding rates across major perpetual futures exchanges
           </p>
         </div>
 
-        {/* Summary Cards */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16, marginBottom: 24 }}>
-          {[
-            { label: "Avg Funding Rate", value: fmtPct(avgRate), color: avgRate >= 0 ? "#3fb950" : "#f85149" },
-            { label: "Total Open Interest", value: fmtUsd(totalOI / EXCHANGES.length), color: "#58a6ff" },
-            { label: "Highest Funding", value: mostPositive ? `${mostPositive.symbol} ${fmtPct(mostPositive.rate)}` : "—", color: "#3fb950" },
-            { label: "Most Negative", value: mostNegative ? `${mostNegative.symbol} ${fmtPct(mostNegative.rate)}` : "—", color: "#f85149" },
-          ].map((c) => (
-            <div key={c.label} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: "16px 20px" }}>
-              <div style={{ fontSize: 12, color: "#8b949e", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.05em" }}>{c.label}</div>
-              <div style={{ fontSize: 22, fontWeight: 700, color: c.color }}>{c.value}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* Tabs */}
-        <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
-          {(["rates", "arbitrage", "heatmap"] as const).map((t) => (
-            <button
-              key={t}
-              onClick={() => setTab(t)}
-              style={{
-                padding: "8px 20px", borderRadius: 8, border: "1px solid " + (tab === t ? "#6366f1" : "#30363d"),
-                background: tab === t ? "#6366f120" : "#161b22", color: tab === t ? "#818cf8" : "#8b949e",
-                cursor: "pointer", fontWeight: 600, fontSize: 14, textTransform: "capitalize",
-              }}
-            >
-              {t === "rates" ? "Funding Rates" : t === "arbitrage" ? "Arbitrage Finder" : "Heatmap"}
-            </button>
-          ))}
-          <button
-            onClick={refresh}
-            style={{
-              marginLeft: "auto", padding: "8px 16px", borderRadius: 8, border: "1px solid #30363d",
-              background: "#161b22", color: "#8b949e", cursor: "pointer", fontSize: 13,
-            }}
-          >
-            {refreshing ? "Refreshing..." : "Refresh"}
-          </button>
+        {/* Stats Cards */}
+        <div className="mb-8 grid grid-cols-1 gap-4 md:grid-cols-4">
+          <StatCard
+            label="Avg Funding Rate (8h)"
+            value={`${(stats.avg * 100).toFixed(3)}%`}
+            subtext={`${(stats.avg * 365 * 3 * 100).toFixed(1)}% APY`}
+            color="blue"
+          />
+          <StatCard
+            label="Highest Rate"
+            value={`${(stats.highest * 100).toFixed(3)}%`}
+            subtext={`${(stats.highest * 365 * 3 * 100).toFixed(1)}% APY`}
+            color="green"
+          />
+          <StatCard
+            label="Most Negative Rate"
+            value={`${(stats.lowest * 100).toFixed(3)}%`}
+            subtext={`${(stats.lowest * 365 * 3 * 100).toFixed(1)}% APY`}
+            color="red"
+          />
+          <StatCard
+            label="Total Open Interest"
+            value={`$${(stats.totalOI / 1000).toFixed(1)}B`}
+            subtext={`${filteredData.length} markets`}
+            color="blue"
+          />
         </div>
 
         {/* Filters */}
-        {tab === "rates" && (
-          <div style={{ display: "flex", gap: 12, marginBottom: 16, flexWrap: "wrap" }}>
-            <input
-              type="text" placeholder="Search token..." value={search} onChange={(e) => setSearch(e.target.value)}
-              style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid #30363d", background: "#161b22", color: "#e6edf3", fontSize: 14, width: 200 }}
-            />
-            <select
-              value={exchangeFilter} onChange={(e) => setExchangeFilter(e.target.value)}
-              style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid #30363d", background: "#161b22", color: "#e6edf3", fontSize: 14 }}
+        <div className="mb-6 flex flex-wrap gap-4">
+          <div>
+            <label
+              className="block text-sm font-medium"
+              style={{ color: 'var(--color-text-secondary)' }}
             >
-              <option value="all">All Exchanges</option>
-              {EXCHANGES.map((ex) => <option key={ex} value={ex}>{ex}</option>)}
+              Filter by Asset
+            </label>
+            <select
+              value={selectedAsset}
+              onChange={(e) => setSelectedAsset(e.target.value)}
+              className="mt-1 rounded-lg border px-3 py-2 text-sm"
+              style={{
+                backgroundColor: 'var(--color-surface)',
+                borderColor: 'var(--color-border)',
+                color: 'var(--color-text)',
+              }}
+            >
+              <option value="">All Assets</option>
+              {assets.map((asset) => (
+                <option key={asset} value={asset}>
+                  {asset}
+                </option>
+              ))}
             </select>
           </div>
-        )}
+          <div>
+            <label
+              className="block text-sm font-medium"
+              style={{ color: 'var(--color-text-secondary)' }}
+            >
+              Filter by Exchange
+            </label>
+            <select
+              value={selectedExchange}
+              onChange={(e) => setSelectedExchange(e.target.value)}
+              className="mt-1 rounded-lg border px-3 py-2 text-sm"
+              style={{
+                backgroundColor: 'var(--color-surface)',
+                borderColor: 'var(--color-border)',
+                color: 'var(--color-text)',
+              }}
+            >
+              <option value="">All Exchanges</option>
+              {exchanges.map((exchange) => (
+                <option key={exchange} value={exchange}>
+                  {exchange}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
 
-        {/* RATES TABLE */}
-        {tab === "rates" && (
-          <div style={{ overflowX: "auto", borderRadius: 12, border: "1px solid #30363d" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
-              <thead>
-                <tr style={{ background: "#161b22" }}>
-                  {[
-                    { key: "symbol" as const, label: "Token" },
-                    { key: "exchange" as const, label: "Exchange" },
-                    { key: "rate" as const, label: "Funding Rate" },
-                    { key: "annualized" as const, label: "Annualized" },
-                    { key: "oi" as const, label: "Open Interest" },
-                    { key: "volume" as const, label: "24h Volume" },
-                    { key: "ls" as const, label: "Long/Short" },
-                    { key: "trend" as const, label: "7d Trend" },
-                  ].map((h) => (
-                    <th
-                      key={h.key}
-                      onClick={() => ["rate", "annualized", "oi", "volume"].includes(h.key) ? handleSort(h.key as any) : null}
-                      style={{
-                        padding: "12px 16px", textAlign: "left", color: "#8b949e", fontWeight: 600,
-                        cursor: ["rate", "annualized", "oi", "volume"].includes(h.key) ? "pointer" : "default",
-                        borderBottom: "1px solid #30363d", whiteSpace: "nowrap",
-                      }}
+        {/* Table */}
+        <div
+          className="overflow-x-auto rounded-lg border"
+          style={{
+            backgroundColor: 'var(--color-surface)',
+            borderColor: 'var(--color-border)',
+          }}
+        >
+          <table className="w-full text-sm">
+            <thead>
+              <tr
+                style={{
+                  borderBottomColor: 'var(--color-border)',
+                  backgroundColor: 'rgba(var(--color-primary), 0.05)',
+                }}
+                className="border-b"
+              >
+                <th
+                  className="cursor-pointer select-none px-4 py-3 text-left font-semibold transition-colors hover:opacity-70"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                  onClick={() => handleSort('asset')}
+                >
+                  Asset <SortIcon field="asset" />
+                </th>
+                <th
+                  className="cursor-pointer select-none px-4 py-3 text-left font-semibold transition-colors hover:opacity-70"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                  onClick={() => handleSort('exchange')}
+                >
+                  Exchange <SortIcon field="exchange" />
+                </th>
+                <th
+                  className="cursor-pointer select-none px-4 py-3 text-right font-semibold transition-colors hover:opacity-70"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                  onClick={() => handleSort('fundingRate')}
+                >
+                  Funding Rate (8h) <SortIcon field="fundingRate" />
+                </th>
+                <th
+                  className="cursor-pointer select-none px-4 py-3 text-right font-semibold transition-colors hover:opacity-70"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                  onClick={() => handleSort('annualizedRate')}
+                >
+                  APY <SortIcon field="annualizedRate" />
+                </th>
+                <th
+                  className="px-4 py-3 text-center font-semibold"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                >
+                  Next Funding
+                </th>
+                <th
+                  className="cursor-pointer select-none px-4 py-3 text-right font-semibold transition-colors hover:opacity-70"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                  onClick={() => handleSort('openInterest')}
+                >
+                  Open Interest <SortIcon field="openInterest" />
+                </th>
+                <th
+                  className="px-4 py-3 text-center font-semibold"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                >
+                  History (7 periods)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredData.map((item, idx) => {
+                const isPositive = item.fundingRate >= 0;
+                const rateColor = isPositive ? 'text-emerald-400' : 'text-red-400';
+                const apyRate = item.fundingRate * 365 * 3;
+
+                return (
+                  <tr
+                    key={item.id}
+                    className="border-b transition-colors hover:bg-white/5"
+                    style={{
+                      borderBottomColor: 'var(--color-border)',
+                    }}
+                  >
+                    <td
+                      className="px-4 py-3 font-semibold"
+                      style={{ color: 'var(--color-text)' }}
                     >
-                      {h.label} {sortBy === h.key ? (sortDir === "desc" ? " ▼" : " ▲") : ""}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {filteredRates.slice(0, 50).map((r) => (
-                  <tr key={r.id} style={{ borderBottom: "1px solid #21262d" }}>
-                    <td style={{ padding: "10px 16px", fontWeight: 700 }}>{r.symbol}</td>
-                    <td style={{ padding: "10px 16px", color: "#8b949e" }}>{r.exchange}</td>
-                    <td style={{ padding: "10px 16px", fontWeight: 600, color: r.rate >= 0 ? "#3fb950" : "#f85149" }}>{fmtPct(r.rate)}</td>
-                    <td style={{ padding: "10px 16px", fontWeight: 600, color: r.annualized >= 0 ? "#3fb950" : "#f85149" }}>{fmtAnnual(r.annualized)}</td>
-                    <td style={{ padding: "10px 16px" }}>{fmtUsd(r.openInterest)}</td>
-                    <td style={{ padding: "10px 16px" }}>{fmtUsd(r.volume24h)}</td>
-                    <td style={{ padding: "10px 16px" }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                        <div style={{ width: 60, height: 6, background: "#21262d", borderRadius: 3, overflow: "hidden" }}>
-                          <div style={{ width: `${(r.longShortRatio / (r.longShortRatio + 1)) * 100}%`, height: "100%", background: r.longShortRatio > 1 ? "#3fb950" : "#f85149", borderRadius: 3 }} />
-                        </div>
-                        <span style={{ fontSize: 12, color: "#8b949e" }}>{r.longShortRatio.toFixed(2)}</span>
+                      {item.asset}
+                    </td>
+                    <td
+                      className="px-4 py-3"
+                      style={{ color: 'var(--color-text-secondary)' }}
+                    >
+                      {item.exchange}
+                    </td>
+                    <td className={`px-4 py-3 text-right font-mono ${rateColor}`}>
+                      {isPositive ? '+' : ''}{(item.fundingRate * 100).toFixed(4)}%
+                    </td>
+                    <td className={`px-4 py-3 text-right font-mono ${rateColor}`}>
+                      {isPositive ? '+' : ''}{(apyRate * 100).toFixed(2)}%
+                    </td>
+                    <td
+                      className="px-4 py-3 text-center"
+                      style={{ color: 'var(--color-text-secondary)' }}
+                    >
+                      {item.nextFundingTime}
+                    </td>
+                    <td
+                      className="px-4 py-3 text-right"
+                      style={{ color: 'var(--color-text)' }}
+                    >
+                      ${item.openInterest}M
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex justify-center">
+                        <FundingRateSparkline history={item.history} />
                       </div>
                     </td>
-                    <td style={{ padding: "10px 16px" }}><Sparkline data={r.trend7d} /></td>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
 
-        {/* ARBITRAGE TABLE */}
-        {tab === "arbitrage" && (
+        {/* Educational Section */}
+        <div className="mt-12 space-y-8">
           <div>
-            <div style={{ background: "#161b2280", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 20 }}>
-              <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 8, color: "#58a6ff" }}>Delta-Neutral Funding Arbitrage</h3>
-              <p style={{ color: "#8b949e", fontSize: 13, lineHeight: 1.6 }}>
-                These opportunities exploit funding rate differences between exchanges. Go long on the exchange with lower funding and short on the exchange with higher funding to capture the spread.
+            <h2
+              className="text-2xl font-bold"
+              style={{ color: 'var(--color-text)' }}
+            >
+              Understanding Funding Rates
+            </h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            <div
+              className="rounded-lg border p-6"
+              style={{
+                backgroundColor: 'var(--color-surface)',
+                borderColor: 'var(--color-border)',
+              }}
+            >
+              <h3
+                className="mb-3 text-lg font-semibold"
+                style={{ color: 'var(--color-primary)' }}
+              >
+                What Are Funding Rates?
+              </h3>
+              <p
+                className="leading-relaxed"
+                style={{ color: 'var(--color-text-secondary)' }}
+              >
+                Funding rates are periodic payments exchanged between long and short traders on perpetual futures markets. When the 8-hour funding rate is positive, long traders pay shorts. When negative, shorts pay longs. This mechanism keeps perpetual prices close to spot prices.
               </p>
             </div>
-            <div style={{ overflowX: "auto", borderRadius: 12, border: "1px solid #30363d" }}>
-              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
-                <thead>
-                  <tr style={{ background: "#161b22" }}>
-                    {["Token", "Long On", "Short On", "Spread", "Est. APY", "Risk"].map((h) => (
-                      <th key={h} style={{ padding: "12px 16px", textAlign: "left", color: "#8b949e", fontWeight: 600, borderBottom: "1px solid #30363d" }}>{h}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {arbitrage.map((a) => (
-                    <tr key={`${a.symbol}-${a.longExchange}`} style={{ borderBottom: "1px solid #21262d" }}>
-                      <td style={{ padding: "10px 16px", fontWeight: 700 }}>{a.symbol}</td>
-                      <td style={{ padding: "10px 16px", color: "#3fb950" }}>{a.longExchange}</td>
-                      <td style={{ padding: "10px 16px", color: "#f85149" }}>{a.shortExchange}</td>
-                      <td style={{ padding: "10px 16px", fontWeight: 600 }}>{fmtPct(a.spread)}</td>
-                      <td style={{ padding: "10px 16px", fontWeight: 700, color: "#3fb950" }}>{fmtAnnual(a.annualizedYield)}</td>
-                      <td style={{ padding: "10px 16px" }}>
-                        <span style={{
-                          padding: "3px 10px", borderRadius: 6, fontSize: 12, fontWeight: 600,
-                          background: a.risk === "low" ? "#3fb95020" : a.risk === "medium" ? "#d2992220" : "#f8514920",
-                          color: a.risk === "low" ? "#3fb950" : a.risk === "medium" ? "#d29922" : "#f85149",
-                          border: `1px solid ${a.risk === "low" ? "#3fb95040" : a.risk === "medium" ? "#d2992240" : "#f8514940"}`,
-                        }}>{a.risk}</span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        )}
 
-        {/* HEATMAP */}
-        {tab === "heatmap" && (
-          <div style={{ overflowX: "auto", borderRadius: 12, border: "1px solid #30363d" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
-              <thead>
-                <tr style={{ background: "#161b22" }}>
-                  <th style={{ padding: "10px 14px", textAlign: "left", color: "#8b949e", fontWeight: 600, borderBottom: "1px solid #30363d", position: "sticky", left: 0, background: "#161b22", zIndex: 1 }}>Token</th>
-                  {EXCHANGES.map((ex) => (
-                    <th key={ex} style={{ padding: "10px 14px", textAlign: "center", color: "#8b949e", fontWeight: 600, borderBottom: "1px solid #30363d", whiteSpace: "nowrap" }}>{ex}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {SYMBOLS.map((sym) => (
-                  <tr key={sym} style={{ borderBottom: "1px solid #21262d" }}>
-                    <td style={{ padding: "8px 14px", fontWeight: 700, position: "sticky", left: 0, background: "#0d1117", zIndex: 1 }}>{sym}</td>
-                    {EXCHANGES.map((ex) => {
-                      const val = heatmapData.get(sym)?.get(ex);
-                      if (val === undefined) return <td key={ex} style={{ padding: "8px 14px", textAlign: "center", color: "#30363d" }}>—</td>;
-                      const intensity = Math.min(Math.abs(val) / 0.08, 1);
-                      const bg = val >= 0
-                        ? `rgba(63, 185, 80, ${intensity * 0.4})`
-                        : `rgba(248, 81, 73, ${intensity * 0.4})`;
-                      return (
-                        <td key={ex} style={{ padding: "8px 14px", textAlign: "center", background: bg, fontWeight: 600, fontSize: 12, color: val >= 0 ? "#3fb950" : "#f85149" }}>
-                          {fmtPct(val)}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
+            <div
+              className="rounded-lg border p-6"
+              style={{
+                backgroundColor: 'var(--color-surface)',
+                borderColor: 'var(--color-border)',
+              }}
+            >
+              <h3
+                className="mb-3 text-lg font-semibold"
+                style={{ color: 'var(--color-primary)' }}
+              >
+                Why They Matter
+              </h3>
+              <p
+                className="leading-relaxed"
+                style={{ color: 'var(--color-text-secondary)' }}
+              >
+                High positive rates indicate bullish sentiment and can signal potential reversals. They represent real yield opportunities for traders taking counter-positions. Annualized rates compound the 8-hour rates over 365 days with 3 funding periods per day (8h cycles).
+              </p>
+            </div>
 
-        {/* Info Section */}
-        <div style={{ marginTop: 40, background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 24 }}>
-          <h2 style={{ fontSize: 20, fontWeight: 700, marginBottom: 16 }}>Understanding Perpetual Funding Rates</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20, color: "#8b949e", fontSize: 14, lineHeight: 1.7 }}>
-            <div>
-              <h3 style={{ color: "#e6edf3", fontWeight: 600, marginBottom: 8 }}>What are Funding Rates?</h3>
-              <p>Funding rates are periodic payments between long and short traders in perpetual futures markets. They keep the perpetual price anchored to the spot price. Positive rates mean longs pay shorts; negative rates mean shorts pay longs.</p>
+            <div
+              className="rounded-lg border p-6"
+              style={{
+                backgroundColor: 'var(--color-surface)',
+                borderColor: 'var(--color-border)',
+              }}
+            >
+              <h3
+                className="mb-3 text-lg font-semibold"
+                style={{ color: 'var(--color-primary)' }}
+              >
+                Trading Opportunities
+              </h3>
+              <p
+                className="leading-relaxed"
+                style={{ color: 'var(--color-text-secondary)' }}
+              >
+                High positive rates reward short sellers. Extreme rates often precede trend reversals. Compare rates across exchanges—arbitrage opportunities exist when rates diverge significantly. Use funding rates with technical analysis for better entries.
+              </p>
             </div>
-            <div>
-              <h3 style={{ color: "#e6edf3", fontWeight: 600, marginBottom: 8 }}>How to Use This Tool</h3>
-              <p>Monitor funding rates to gauge market sentiment. Extremely positive rates suggest overleveraged longs (potential for a squeeze). Use the Arbitrage Finder to identify delta-neutral yield opportunities across exchanges.</p>
-            </div>
-            <div>
-              <h3 style={{ color: "#e6edf3", fontWeight: 600, marginBottom: 8 }}>Risk Disclaimer</h3>
-              <p>Funding rate arbitrage involves counterparty risk, liquidation risk, and execution risk. Past funding rates do not guarantee future rates. This tool is for informational purposes only — not financial advice.</p>
+
+            <div
+              className="rounded-lg border p-6"
+              style={{
+                backgroundColor: 'var(--color-surface)',
+                borderColor: 'var(--color-border)',
+              }}
+            >
+              <h3
+                className="mb-3 text-lg font-semibold"
+                style={{ color: 'var(--color-primary)' }}
+              >
+                Risk Management
+              </h3>
+              <p
+                className="leading-relaxed"
+                style={{ color: 'var(--color-text-secondary)' }}
+              >
+                Never trade funding rates alone. High rates can persist during strong trends. Use stop losses and position sizing. Monitor margin ratios and liquidation prices. Funding rates are a signal, not a guarantee—always combine with fundamental and technical analysis.
+              </p>
             </div>
           </div>
+        </div>
+
+        {/* Footer Note */}
+        <div
+          className="mt-12 rounded-lg border p-4 text-center text-sm"
+          style={{
+            backgroundColor: 'rgba(var(--color-primary), 0.05)',
+            borderColor: 'var(--color-border)',
+            color: 'var(--color-text-secondary)',
+          }}
+        >
+          Data updates every 8 hours. Funding rates are subject to change. Always verify on exchange before trading. Not financial advice.
         </div>
       </div>
     </div>

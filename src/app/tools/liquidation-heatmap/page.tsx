@@ -1,415 +1,517 @@
 'use client';
 
-import { useState, useMemo, useCallback } from 'react';
-import Breadcrumb from '@/components/Breadcrumb';
+import React, { useState, useMemo } from 'react';
 
-/* ──────────────── Types ──────────────── */
 interface LiquidationLevel {
-  price: number;
-  longLiq: number;   // millions USD
-  shortLiq: number;  // millions USD
+  priceLevel: number;
+  btc: number;
+  eth: number;
+  sol: number;
+  xrp: number;
+  bnb: number;
 }
 
-interface CoinLiqData {
+interface LiquidationEvent {
   id: string;
-  name: string;
-  symbol: string;
-  icon: string;
-  color: string;
-  currentPrice: number;
-  levels: LiquidationLevel[];
-  totalLongLiq: number;
-  totalShortLiq: number;
-  highestCluster: { price: number; amount: number; side: 'long' | 'short' };
-  leverage24hAvg: number;
-  openInterest: number;
-  longShortRatio: number;
+  asset: string;
+  price: number;
+  amount: number;
+  direction: 'long' | 'short';
+  timestamp: string;
+  liquidationSize: number;
 }
 
-/* ──────────────── Seed Data Generator ──────────────── */
-function generateLevels(current: number, range: number, count: number): LiquidationLevel[] {
-  const levels: LiquidationLevel[] = [];
-  const step = (range * 2) / count;
-  for (let i = 0; i < count; i++) {
-    const price = current - range + step * i;
-    const distFromCurrent = Math.abs(price - current) / current;
-    const proximity = Math.max(0, 1 - distFromCurrent * 8);
-    const longBase = price < current ? 20 + proximity * 180 + Math.random() * 60 : 5 + Math.random() * 15;
-    const shortBase = price > current ? 20 + proximity * 180 + Math.random() * 60 : 5 + Math.random() * 15;
-    levels.push({
-      price: Math.round(price * 100) / 100,
-      longLiq: Math.round(longBase * 10) / 10,
-      shortLiq: Math.round(shortBase * 10) / 10,
-    });
-  }
-  return levels;
-}
+const Page: React.FC = () => {
+  const [hoveredCell, setHoveredCell] = useState<string | null>(null);
 
-function buildCoinData(): CoinLiqData[] {
-  const coins = [
-    { id: 'btc', name: 'Bitcoin', symbol: 'BTC', icon: '₿', color: '#F7931A', price: 86420, range: 12000 },
-    { id: 'eth', name: 'Ethereum', symbol: 'ETH', icon: 'Ξ', color: '#627EEA', price: 3180, range: 600 },
-    { id: 'sol', name: 'Solana', symbol: 'SOL', icon: '◎', color: '#9945FF', price: 142, range: 35 },
-    { id: 'bnb', name: 'BNB', symbol: 'BNB', icon: '◆', color: '#F3BA2F', price: 598, range: 80 },
-    { id: 'xrp', name: 'XRP', symbol: 'XRP', icon: '✕', color: '#23292F', price: 2.41, range: 0.6 },
-    { id: 'doge', name: 'Dogecoin', symbol: 'DOGE', icon: 'Ð', color: '#C3A634', price: 0.182, range: 0.06 },
-    { id: 'avax', name: 'Avalanche', symbol: 'AVAX', icon: '▲', color: '#E84142', price: 38.5, range: 10 },
-    { id: 'link', name: 'Chainlink', symbol: 'LINK', icon: '⬡', color: '#2A5ADA', price: 18.2, range: 5 },
-    { id: 'ada', name: 'Cardano', symbol: 'ADA', icon: '₳', color: '#0033AD', price: 0.72, range: 0.18 },
-    { id: 'arb', name: 'Arbitrum', symbol: 'ARB', icon: '◈', color: '#28A0F0', price: 1.38, range: 0.4 },
-  ];
-
-  return coins.map(c => {
-    const levels = generateLevels(c.price, c.range, 40);
-    const totalLong = levels.reduce((s, l) => s + l.longLiq, 0);
-    const totalShort = levels.reduce((s, l) => s + l.shortLiq, 0);
-    let highestCluster = { price: 0, amount: 0, side: 'long' as 'long' | 'short' };
-    levels.forEach(l => {
-      if (l.longLiq > highestCluster.amount) highestCluster = { price: l.price, amount: l.longLiq, side: 'long' };
-      if (l.shortLiq > highestCluster.amount) highestCluster = { price: l.price, amount: l.shortLiq, side: 'short' };
-    });
-    return {
-      ...c,
-      currentPrice: c.price,
-      levels,
-      totalLongLiq: Math.round(totalLong),
-      totalShortLiq: Math.round(totalShort),
-      highestCluster,
-      leverage24hAvg: Math.round((15 + Math.random() * 30) * 10) / 10,
-      openInterest: Math.round((200 + Math.random() * 800) * 10) / 10,
-      longShortRatio: Math.round((0.6 + Math.random() * 0.8) * 100) / 100,
-    };
-  });
-}
-
-/* ──────────────── Heatmap SVG ──────────────── */
-function HeatmapChart({ coin, height = 400 }: { coin: CoinLiqData; height?: number }) {
-  const width = 900;
-  const pad = { top: 30, right: 60, bottom: 40, left: 80 };
-  const cw = width - pad.left - pad.right;
-  const ch = height - pad.top - pad.bottom;
-
-  const prices = coin.levels.map(l => l.price);
-  const minP = Math.min(...prices);
-  const maxP = Math.max(...prices);
-  const maxLiq = Math.max(...coin.levels.map(l => Math.max(l.longLiq, l.shortLiq)));
-
-  const yScale = (p: number) => pad.top + ch - ((p - minP) / (maxP - minP)) * ch;
-  const barH = ch / coin.levels.length * 0.85;
-
-  const getColor = (value: number, side: 'long' | 'short') => {
-    const intensity = Math.min(value / maxLiq, 1);
-    if (side === 'long') {
-      const r = Math.round(34 + intensity * 210);
-      const g = Math.round(197 + intensity * 58);
-      const b = Math.round(94 - intensity * 40);
-      return `rgb(${r},${g},${b})`;
-    } else {
-      const r = Math.round(239 + intensity * 16);
-      const g = Math.round(68 - intensity * 40);
-      const b = Math.round(68 - intensity * 30);
-      return `rgb(${r},${g},${b})`;
-    }
-  };
-
-  const formatPrice = (p: number) => {
-    if (p >= 1000) return `$${(p/1000).toFixed(1)}K`;
-    if (p >= 1) return `$${p.toFixed(2)}`;
-    return `$${p.toFixed(4)}`;
-  };
-
-  // Y-axis ticks
-  const yTicks = Array.from({ length: 8 }, (_, i) => minP + (maxP - minP) * (i / 7));
-
-  return (
-    <svg viewBox={`0 0 ${width} ${height}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
-      <defs>
-        <linearGradient id="currentLine" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="#FFD700" stopOpacity={0} />
-          <stop offset="20%" stopColor="#FFD700" stopOpacity={1} />
-          <stop offset="80%" stopColor="#FFD700" stopOpacity={1} />
-          <stop offset="100%" stopColor="#FFD700" stopOpacity={0} />
-        </linearGradient>
-      </defs>
-
-      {/* Background */}
-      <rect x={pad.left} y={pad.top} width={cw} height={ch} fill="#0d1117" rx={4} />
-
-      {/* Grid lines */}
-      {yTicks.map((t, i) => (
-        <g key={i}>
-          <line x1={pad.left} y1={yScale(t)} x2={width - pad.right} y2={yScale(t)} stroke="#21262d" strokeWidth={1} />
-          <text x={pad.left - 8} y={yScale(t) + 4} textAnchor="end" fill="#8b949e" fontSize={11}>{formatPrice(t)}</text>
-        </g>
-      ))}
-
-      {/* Bars */}
-      {coin.levels.map((l, i) => {
-        const y = yScale(l.price);
-        const longW = (l.longLiq / maxLiq) * (cw / 2 - 20);
-        const shortW = (l.shortLiq / maxLiq) * (cw / 2 - 20);
-        const centerX = pad.left + cw / 2;
-        return (
-          <g key={i}>
-            {/* Long (left) */}
-            <rect x={centerX - longW} y={y - barH / 2} width={longW} height={barH} fill={getColor(l.longLiq, 'long')} opacity={0.85} rx={2} />
-            {/* Short (right) */}
-            <rect x={centerX} y={y - barH / 2} width={shortW} height={barH} fill={getColor(l.shortLiq, 'short')} opacity={0.85} rx={2} />
-            {/* Value labels for large bars */}
-            {l.longLiq > maxLiq * 0.5 && (
-              <text x={centerX - longW - 4} y={y + 3} textAnchor="end" fill="#3fb950" fontSize={9} fontWeight={700}>${l.longLiq.toFixed(0)}M</text>
-            )}
-            {l.shortLiq > maxLiq * 0.5 && (
-              <text x={centerX + shortW + 4} y={y + 3} textAnchor="start" fill="#f85149" fontSize={9} fontWeight={700}>${l.shortLiq.toFixed(0)}M</text>
-            )}
-          </g>
-        );
-      })}
-
-      {/* Current price line */}
-      <line x1={pad.left} y1={yScale(coin.currentPrice)} x2={width - pad.right} y2={yScale(coin.currentPrice)} stroke="url(#currentLine)" strokeWidth={2} strokeDasharray="6 3" />
-      <rect x={width - pad.right + 4} y={yScale(coin.currentPrice) - 10} width={54} height={20} fill="#F3BA2F" rx={4} />
-      <text x={width - pad.right + 31} y={yScale(coin.currentPrice) + 4} textAnchor="middle" fill="#000" fontSize={10} fontWeight={800}>{formatPrice(coin.currentPrice)}</text>
-
-      {/* Legend */}
-      <rect x={pad.left + 10} y={pad.top + 8} width={10} height={10} fill="#3fb950" rx={2} />
-      <text x={pad.left + 24} y={pad.top + 17} fill="#8b949e" fontSize={11}>Long Liquidations</text>
-      <rect x={pad.left + 150} y={pad.top + 8} width={10} height={10} fill="#f85149" rx={2} />
-      <text x={pad.left + 164} y={pad.top + 17} fill="#8b949e" fontSize={11}>Short Liquidations</text>
-
-      {/* Center axis label */}
-      <text x={pad.left + cw / 2} y={height - 8} textAnchor="middle" fill="#6e7681" fontSize={10}>← LONGS &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; SHORTS →</text>
-    </svg>
+  // Simulated liquidation data for BTC price range $95K-$110K
+  const liquidationLevels: LiquidationLevel[] = useMemo(
+    () => [
+      {
+        priceLevel: 110000,
+        btc: 2400,
+        eth: 1800,
+        sol: 650,
+        xrp: 420,
+        bnb: 890,
+      },
+      {
+        priceLevel: 108500,
+        btc: 3100,
+        eth: 2200,
+        sol: 520,
+        xrp: 380,
+        bnb: 1050,
+      },
+      {
+        priceLevel: 107000,
+        btc: 1900,
+        eth: 1400,
+        sol: 780,
+        xrp: 510,
+        bnb: 720,
+      },
+      {
+        priceLevel: 105500,
+        btc: 4200,
+        eth: 3100,
+        sol: 920,
+        xrp: 640,
+        bnb: 1380,
+      },
+      {
+        priceLevel: 104000,
+        btc: 2800,
+        eth: 2100,
+        sol: 680,
+        xrp: 450,
+        bnb: 950,
+      },
+      {
+        priceLevel: 102500,
+        btc: 3600,
+        eth: 2700,
+        sol: 810,
+        xrp: 560,
+        bnb: 1120,
+      },
+      {
+        priceLevel: 101000,
+        btc: 2200,
+        eth: 1600,
+        sol: 590,
+        xrp: 390,
+        bnb: 780,
+      },
+      {
+        priceLevel: 99500,
+        btc: 3900,
+        eth: 2900,
+        sol: 1050,
+        xrp: 720,
+        bnb: 1290,
+      },
+      {
+        priceLevel: 98000,
+        btc: 2600,
+        eth: 1900,
+        sol: 740,
+        xrp: 480,
+        bnb: 860,
+      },
+      {
+        priceLevel: 96500,
+        btc: 3300,
+        eth: 2500,
+        sol: 900,
+        xrp: 620,
+        bnb: 1010,
+      },
+      {
+        priceLevel: 95000,
+        btc: 4800,
+        eth: 3600,
+        sol: 1200,
+        xrp: 850,
+        bnb: 1650,
+      },
+    ],
+    []
   );
-}
 
-/* ──────────────── Main Page ──────────────── */
-export default function LiquidationHeatmapPage() {
-  const allCoins = useMemo(() => buildCoinData(), []);
-  const [selectedCoin, setSelectedCoin] = useState('btc');
-  const [timeframe, setTimeframe] = useState<'24h' | '4h' | '1h'>('24h');
-  const [leverage, setLeverage] = useState<'all' | '10x' | '25x' | '50x' | '100x'>('all');
+  const recentLiquidations: LiquidationEvent[] = useMemo(
+    () => [
+      {
+        id: '1',
+        asset: 'BTC',
+        price: 102340,
+        amount: 2.45,
+        direction: 'long',
+        timestamp: '2 minutes ago',
+        liquidationSize: 248500,
+      },
+      {
+        id: '2',
+        asset: 'ETH',
+        price: 3285,
+        amount: 125.8,
+        direction: 'short',
+        timestamp: '8 minutes ago',
+        liquidationSize: 412650,
+      },
+      {
+        id: '3',
+        asset: 'SOL',
+        price: 198.42,
+        amount: 5420,
+        direction: 'long',
+        timestamp: '15 minutes ago',
+        liquidationSize: 1074328,
+      },
+      {
+        id: '4',
+        asset: 'BTC',
+        price: 99850,
+        amount: 1.82,
+        direction: 'short',
+        timestamp: '24 minutes ago',
+        liquidationSize: 181867,
+      },
+      {
+        id: '5',
+        asset: 'ETH',
+        price: 3142,
+        amount: 89.3,
+        direction: 'long',
+        timestamp: '31 minutes ago',
+        liquidationSize: 280364,
+      },
+      {
+        id: '6',
+        asset: 'BNB',
+        price: 612.5,
+        amount: 420,
+        direction: 'short',
+        timestamp: '45 minutes ago',
+        liquidationSize: 257250,
+      },
+    ],
+    []
+  );
 
-  const coin = allCoins.find(c => c.id === selectedCoin)!;
-
-  const formatM = (n: number) => n >= 1000 ? `$${(n/1000).toFixed(1)}B` : `$${n.toFixed(0)}M`;
-  const formatPrice = (p: number) => {
-    if (p >= 1000) return `$${p.toLocaleString()}`;
-    if (p >= 1) return `$${p.toFixed(2)}`;
-    return `$${p.toFixed(4)}`;
+  const getHeatmapColor = (value: number, max: number): string => {
+    const ratio = value / max;
+    if (ratio < 0.25) return 'rgba(34, 197, 94, 0.7)'; // Green
+    if (ratio < 0.5) return 'rgba(250, 204, 21, 0.7)'; // Yellow
+    if (ratio < 0.75) return 'rgba(251, 146, 60, 0.7)'; // Orange
+    return 'rgba(239, 68, 68, 0.8)'; // Red
   };
 
-  return (
-    <div style={{ minHeight: '100vh', background: 'var(--color-bg)' }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 16px 80px' }}>
-        <Breadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Liquidation Heatmap' }]} />
+  const getHeatmapBorder = (value: number, max: number): string => {
+    const ratio = value / max;
+    if (ratio < 0.25) return 'border-green-500/40';
+    if (ratio < 0.5) return 'border-yellow-500/40';
+    if (ratio < 0.75) return 'border-orange-500/40';
+    return 'border-red-500/40';
+  };
 
+  const assets = ['BTC', 'ETH', 'SOL', 'XRP', 'BNB'];
+  const maxLiquidation = Math.max(...liquidationLevels.flatMap((l) => [l.btc, l.eth, l.sol, l.xrp, l.bnb]));
+
+  const totalOpenInterest = liquidationLevels.reduce((sum, level) => sum + level.btc + level.eth + level.sol + level.xrp + level.bnb, 0);
+  const largestPool = Math.max(...liquidationLevels.map((l) => l.btc + l.eth + l.sol + l.xrp + l.bnb));
+  const mostVulnerableLevel = liquidationLevels.find((l) => l.btc + l.eth + l.sol + l.xrp + l.bnb === largestPool);
+  const longRatio = 1.35;
+  const shortRatio = 1 / longRatio;
+
+  return (
+    <div
+      className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white"
+      style={{
+        '--color-text': 'rgb(241, 245, 250)',
+        '--color-text-secondary': 'rgb(148, 163, 184)',
+        '--color-primary': 'rgb(59, 130, 246)',
+        '--color-bg': 'rgb(15, 23, 42)',
+        '--color-surface': 'rgb(30, 41, 59)',
+        '--color-border': 'rgb(71, 85, 105)',
+        '--glass-bg': 'rgba(30, 41, 59, 0.7)',
+      } as React.CSSProperties}
+    >
+      <div className="container mx-auto px-4 py-8">
         {/* Header */}
-        <div style={{ textAlign: 'center', paddingBottom: 32, paddingTop: 20 }}>
-          <div style={{ display: 'inline-block', padding: '4px 14px', background: '#ef444420', border: '1px solid #ef444440', borderRadius: 20, fontSize: 12, color: '#f87171', fontWeight: 600, marginBottom: 16 }}>
-            🔥 Liquidation Intelligence
+        <div className="mb-12">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center font-bold">
+              L
+            </div>
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              Liquidation Heatmap
+            </h1>
           </div>
-          <h1 style={{ fontSize: 36, fontWeight: 900, color: 'var(--color-text)', marginBottom: 12 }}>
-            Liquidation Heatmap
-          </h1>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: 15, maxWidth: 600, margin: '0 auto' }}>
-            Visualize liquidation clusters across price levels. See where leveraged positions will get wiped — the areas exchanges are targeting.
+          <p style={{ color: 'var(--color-text-secondary)' }} className="text-base">
+            Track liquidation levels across major crypto assets in real-time
           </p>
         </div>
 
-        {/* Controls */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginBottom: 24, justifyContent: 'center' }}>
-          {/* Coin selector */}
-          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', justifyContent: 'center' }}>
-            {allCoins.map(c => (
-              <button key={c.id} onClick={() => setSelectedCoin(c.id)}
-                style={{
-                  background: selectedCoin === c.id ? `${c.color}25` : '#161b22',
-                  border: `1px solid ${selectedCoin === c.id ? c.color : '#30363d'}`,
-                  color: selectedCoin === c.id ? c.color : '#8b949e',
-                  borderRadius: 8, padding: '6px 14px', cursor: 'pointer', fontSize: 12, fontWeight: 700,
-                  display: 'flex', alignItems: 'center', gap: 5,
-                }}>
-                <span style={{ fontSize: 14 }}>{c.icon}</span> {c.symbol}
-              </button>
-            ))}
-          </div>
+        {/* Stats Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+          <StatCard
+            label="Total Open Interest"
+            value={`$${(totalOpenInterest / 1000).toFixed(1)}M`}
+            change="+12.5%"
+            icon="📊"
+          />
+          <StatCard
+            label="Largest Liquidation Pool"
+            value={`$${(largestPool / 1000).toFixed(1)}M`}
+            change="At $105,500"
+            icon="⚡"
+          />
+          <StatCard
+            label="Most Vulnerable Level"
+            value={`$${mostVulnerableLevel?.priceLevel.toLocaleString()}`}
+            change={`$${(largestPool / 1000).toFixed(1)}M at stake`}
+            icon="🎯"
+          />
+          <StatCard
+            label="Long/Short Ratio"
+            value={`${longRatio.toFixed(2)} : 1`}
+            change="More longs"
+            icon="⚖️"
+          />
         </div>
 
-        {/* Filters row */}
-        <div style={{ display: 'flex', gap: 20, justifyContent: 'center', marginBottom: 28, flexWrap: 'wrap' }}>
-          <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
-            <span style={{ fontSize: 11, color: '#8b949e', fontWeight: 700 }}>TIMEFRAME:</span>
-            {(['24h', '4h', '1h'] as const).map(tf => (
-              <button key={tf} onClick={() => setTimeframe(tf)}
-                style={{
-                  background: timeframe === tf ? '#6366f120' : 'transparent',
-                  border: `1px solid ${timeframe === tf ? '#6366f1' : '#30363d'}`,
-                  color: timeframe === tf ? '#818cf8' : '#8b949e',
-                  borderRadius: 6, padding: '3px 10px', cursor: 'pointer', fontSize: 11, fontWeight: 600,
-                }}>
-                {tf}
-              </button>
-            ))}
-          </div>
-          <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
-            <span style={{ fontSize: 11, color: '#8b949e', fontWeight: 700 }}>LEVERAGE:</span>
-            {(['all', '10x', '25x', '50x', '100x'] as const).map(lv => (
-              <button key={lv} onClick={() => setLeverage(lv)}
-                style={{
-                  background: leverage === lv ? '#f59e0b20' : 'transparent',
-                  border: `1px solid ${leverage === lv ? '#f59e0b' : '#30363d'}`,
-                  color: leverage === lv ? '#fbbf24' : '#8b949e',
-                  borderRadius: 6, padding: '3px 10px', cursor: 'pointer', fontSize: 11, fontWeight: 600,
-                }}>
-                {lv === 'all' ? 'All' : lv}
-              </button>
-            ))}
-          </div>
-        </div>
+        {/* Heatmap */}
+        <div className="mb-12 rounded-xl border p-6" style={{
+          backgroundColor: 'var(--color-surface)',
+          borderColor: 'var(--color-border)',
+        }}>
+          <h2 className="text-2xl font-bold mb-6">Liquidation Heatmap</h2>
 
-        {/* Key metrics */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 12, marginBottom: 24 }}>
-          {[
-            { label: 'Total Long Liq', value: formatM(coin.totalLongLiq), color: '#3fb950', sub: 'liquidation exposure' },
-            { label: 'Total Short Liq', value: formatM(coin.totalShortLiq), color: '#f85149', sub: 'liquidation exposure' },
-            { label: 'Biggest Cluster', value: formatPrice(coin.highestCluster.price), color: '#fbbf24', sub: `${formatM(coin.highestCluster.amount)} ${coin.highestCluster.side}s` },
-            { label: 'Open Interest', value: formatM(coin.openInterest), color: '#818cf8', sub: `${coin.leverage24hAvg}x avg leverage` },
-            { label: 'Long/Short Ratio', value: coin.longShortRatio.toFixed(2), color: coin.longShortRatio > 1 ? '#3fb950' : '#f85149', sub: coin.longShortRatio > 1 ? 'More longs' : 'More shorts' },
-            { label: 'Current Price', value: formatPrice(coin.currentPrice), color: '#F3BA2F', sub: coin.symbol },
-          ].map((m, i) => (
-            <div key={i} style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 10, padding: '12px 14px' }}>
-              <div style={{ fontSize: 10, color: '#8b949e', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 4 }}>{m.label}</div>
-              <div style={{ fontSize: 20, fontWeight: 900, color: m.color }}>{m.value}</div>
-              <div style={{ fontSize: 10, color: '#6e7681', marginTop: 2 }}>{m.sub}</div>
+          {/* Heatmap Legend */}
+          <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b" style={{ borderColor: 'var(--color-border)' }}>
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 rounded" style={{ backgroundColor: 'rgba(34, 197, 94, 0.7)' }}></div>
+              <span className="text-sm" style={{ color: 'var(--color-text-secondary)' }}>Low</span>
             </div>
-          ))}
-        </div>
-
-        {/* Heatmap chart */}
-        <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 14, padding: 20, marginBottom: 28 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-            <div>
-              <h2 style={{ fontSize: 16, fontWeight: 800, color: '#e6edf3' }}>{coin.name} Liquidation Heatmap</h2>
-              <div style={{ fontSize: 12, color: '#8b949e', marginTop: 2 }}>{timeframe} liquidation clusters • {leverage === 'all' ? 'All leverage' : leverage + ' leverage'}</div>
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 rounded" style={{ backgroundColor: 'rgba(250, 204, 21, 0.7)' }}></div>
+              <span className="text-sm" style={{ color: 'var(--color-text-secondary)' }}>Medium</span>
             </div>
-            <div style={{ display: 'flex', gap: 12 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                <div style={{ width: 10, height: 10, borderRadius: 2, background: '#3fb950' }} />
-                <span style={{ fontSize: 11, color: '#8b949e' }}>Longs</span>
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 rounded" style={{ backgroundColor: 'rgba(251, 146, 60, 0.7)' }}></div>
+              <span className="text-sm" style={{ color: 'var(--color-text-secondary)' }}>High</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 rounded" style={{ backgroundColor: 'rgba(239, 68, 68, 0.8)' }}></div>
+              <span className="text-sm" style={{ color: 'var(--color-text-secondary)' }}>Critical</span>
+            </div>
+          </div>
+
+          {/* Heatmap Grid */}
+          <div className="overflow-x-auto">
+            <div className="inline-block min-w-full">
+              {/* Header Row */}
+              <div className="flex gap-2 mb-2">
+                <div className="w-28 flex-shrink-0"></div>
+                {assets.map((asset) => (
+                  <div
+                    key={asset}
+                    className="w-24 flex-shrink-0 text-center font-semibold text-sm text-cyan-400"
+                  >
+                    {asset}
+                  </div>
+                ))}
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                <div style={{ width: 10, height: 10, borderRadius: 2, background: '#f85149' }} />
-                <span style={{ fontSize: 11, color: '#8b949e' }}>Shorts</span>
-              </div>
+
+              {/* Price Level Rows */}
+              {liquidationLevels.map((level) => (
+                <div key={level.priceLevel} className="flex gap-2 mb-2">
+                  <div
+                    className="w-28 flex-shrink-0 text-right pr-2 text-sm font-medium flex items-center justify-end rounded-lg px-3 py-2"
+                    style={{
+                      backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                      color: 'var(--color-primary)',
+                    }}
+                  >
+                    ${level.priceLevel.toLocaleString()}
+                  </div>
+
+                  {[level.btc, level.eth, level.sol, level.xrp, level.bnb].map((value, idx) => {
+                    const cellKey = `${level.priceLevel}-${assets[idx]}`;
+                    const isHovered = hoveredCell === cellKey;
+
+                    return (
+                      <div
+                        key={cellKey}
+                        className="w-24 flex-shrink-0 h-12 rounded-lg border cursor-pointer relative transition-all duration-200 flex items-center justify-center font-semibold text-xs text-white"
+                        style={{
+                          backgroundColor: getHeatmapColor(value, maxLiquidation),
+                          borderColor: 'var(--color-border)',
+                          transform: isHovered ? 'scale(1.1)' : 'scale(1)',
+                          boxShadow: isHovered ? '0 0 12px rgba(59, 130, 246, 0.6)' : 'none',
+                          zIndex: isHovered ? 10 : 0,
+                        }}
+                        onMouseEnter={() => setHoveredCell(cellKey)}
+                        onMouseLeave={() => setHoveredCell(null)}
+                      >
+                        <div className="text-center">
+                          <div className="font-bold">${(value / 1000).toFixed(1)}K</div>
+                          {isHovered && (
+                            <div
+                              className="text-xs mt-1"
+                              style={{ color: 'var(--color-text-secondary)' }}
+                            >
+                              {value.toLocaleString()} BTC
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              ))}
             </div>
           </div>
-          <HeatmapChart coin={coin} />
         </div>
 
-        {/* Top Liquidation Levels Table */}
-        <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 14, padding: 20, marginBottom: 28 }}>
-          <h3 style={{ fontSize: 15, fontWeight: 800, color: '#e6edf3', marginBottom: 16 }}>Top Liquidation Clusters</h3>
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+        {/* Recent Liquidations */}
+        <div className="mb-12 rounded-xl border p-6" style={{
+          backgroundColor: 'var(--color-surface)',
+          borderColor: 'var(--color-border)',
+        }}>
+          <h2 className="text-2xl font-bold mb-6">Recent Large Liquidations</h2>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
               <thead>
-                <tr>
-                  {['Price Level', 'Long Liq', 'Short Liq', 'Total', 'Dominant Side', 'Distance from Current'].map(h => (
-                    <th key={h} style={{ padding: '8px 12px', textAlign: 'left', color: '#8b949e', fontSize: 11, fontWeight: 700, borderBottom: '1px solid #21262d', textTransform: 'uppercase' }}>{h}</th>
-                  ))}
+                <tr style={{ borderColor: 'var(--color-border)' }} className="border-b">
+                  <th className="text-left py-4 px-4 font-semibold">Asset</th>
+                  <th className="text-left py-4 px-4 font-semibold">Price</th>
+                  <th className="text-left py-4 px-4 font-semibold">Amount</th>
+                  <th className="text-left py-4 px-4 font-semibold">Direction</th>
+                  <th className="text-left py-4 px-4 font-semibold">Liquidation Size</th>
+                  <th className="text-left py-4 px-4 font-semibold">Time</th>
                 </tr>
               </thead>
               <tbody>
-                {[...coin.levels]
-                  .sort((a, b) => (b.longLiq + b.shortLiq) - (a.longLiq + a.shortLiq))
-                  .slice(0, 10)
-                  .map((l, i) => {
-                    const dist = ((l.price - coin.currentPrice) / coin.currentPrice * 100);
-                    const dominant = l.longLiq > l.shortLiq ? 'Long' : 'Short';
-                    return (
-                      <tr key={i} style={{ borderBottom: '1px solid #21262d' }}>
-                        <td style={{ padding: '8px 12px', fontWeight: 700, color: '#e6edf3' }}>{formatPrice(l.price)}</td>
-                        <td style={{ padding: '8px 12px', color: '#3fb950' }}>${l.longLiq.toFixed(1)}M</td>
-                        <td style={{ padding: '8px 12px', color: '#f85149' }}>${l.shortLiq.toFixed(1)}M</td>
-                        <td style={{ padding: '8px 12px', color: '#e6edf3', fontWeight: 700 }}>${(l.longLiq + l.shortLiq).toFixed(1)}M</td>
-                        <td style={{ padding: '8px 12px' }}>
-                          <span style={{ padding: '2px 8px', borderRadius: 4, fontSize: 11, fontWeight: 700, background: dominant === 'Long' ? '#3fb95020' : '#f8514920', color: dominant === 'Long' ? '#3fb950' : '#f85149' }}>
-                            {dominant}
-                          </span>
-                        </td>
-                        <td style={{ padding: '8px 12px', color: dist > 0 ? '#3fb950' : '#f85149' }}>
-                          {dist > 0 ? '+' : ''}{dist.toFixed(2)}%
-                        </td>
-                      </tr>
-                    );
-                  })}
+                {recentLiquidations.map((liq) => (
+                  <tr
+                    key={liq.id}
+                    style={{
+                      borderColor: 'var(--color-border)',
+                      backgroundColor: 'rgba(59, 130, 246, 0.03)',
+                    }}
+                    className="border-b hover:bg-opacity-20 transition-colors duration-150 last:border-b-0"
+                  >
+                    <td className="py-4 px-4">
+                      <span className="font-bold text-cyan-400">{liq.asset}</span>
+                    </td>
+                    <td className="py-4 px-4">${liq.price.toLocaleString()}</td>
+                    <td className="py-4 px-4">{liq.amount.toLocaleString()}</td>
+                    <td className="py-4 px-4">
+                      <span
+                        className="px-3 py-1 rounded-full text-xs font-semibold"
+                        style={{
+                          backgroundColor:
+                            liq.direction === 'long'
+                              ? 'rgba(239, 68, 68, 0.2)'
+                              : 'rgba(34, 197, 94, 0.2)',
+                          color:
+                            liq.direction === 'long'
+                              ? 'rgb(248, 113, 113)'
+                              : 'rgb(74, 222, 128)',
+                        }}
+                      >
+                        {liq.direction === 'long' ? '📈 LONG' : '📉 SHORT'}
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 font-semibold text-red-400">
+                      ${liq.liquidationSize.toLocaleString()}
+                    </td>
+                    <td className="py-4 px-4" style={{ color: 'var(--color-text-secondary)' }}>
+                      {liq.timestamp}
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
         </div>
 
-        {/* Multi-coin overview */}
-        <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 14, padding: 20, marginBottom: 28 }}>
-          <h3 style={{ fontSize: 15, fontWeight: 800, color: '#e6edf3', marginBottom: 16 }}>Cross-Market Liquidation Summary</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 12 }}>
-            {allCoins.map(c => {
-              const ratio = c.totalLongLiq / (c.totalLongLiq + c.totalShortLiq) * 100;
-              return (
-                <div key={c.id} onClick={() => setSelectedCoin(c.id)}
-                  style={{
-                    background: selectedCoin === c.id ? `${c.color}10` : '#0d1117',
-                    border: `1px solid ${selectedCoin === c.id ? c.color : '#21262d'}`,
-                    borderRadius: 10, padding: 14, cursor: 'pointer',
-                  }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                      <span style={{ fontSize: 18, color: c.color }}>{c.icon}</span>
-                      <div>
-                        <div style={{ fontSize: 13, fontWeight: 800, color: '#e6edf3' }}>{c.symbol}</div>
-                        <div style={{ fontSize: 10, color: '#8b949e' }}>{formatPrice(c.currentPrice)}</div>
-                      </div>
-                    </div>
-                    <div style={{ textAlign: 'right' }}>
-                      <div style={{ fontSize: 12, fontWeight: 700, color: '#e6edf3' }}>{formatM(c.totalLongLiq + c.totalShortLiq)}</div>
-                      <div style={{ fontSize: 10, color: '#8b949e' }}>total liq</div>
-                    </div>
-                  </div>
-                  {/* Long/Short bar */}
-                  <div style={{ display: 'flex', height: 6, borderRadius: 3, overflow: 'hidden', background: '#21262d' }}>
-                    <div style={{ width: `${ratio}%`, background: '#3fb950', borderRadius: '3px 0 0 3px' }} />
-                    <div style={{ width: `${100 - ratio}%`, background: '#f85149', borderRadius: '0 3px 3px 0' }} />
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4, fontSize: 10 }}>
-                    <span style={{ color: '#3fb950' }}>Long {ratio.toFixed(0)}%</span>
-                    <span style={{ color: '#f85149' }}>Short {(100 - ratio).toFixed(0)}%</span>
-                  </div>
-                </div>
-              );
-            })}
+        {/* Educational Section */}
+        <div className="rounded-xl border overflow-hidden" style={{
+          backgroundColor: 'var(--color-surface)',
+          borderColor: 'var(--color-border)',
+        }}>
+          <div className="p-6 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border-b" style={{ borderColor: 'var(--color-border)' }}>
+            <h2 className="text-2xl font-bold mb-2">📚 Understanding Liquidations</h2>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              Learn how to interpret liquidation data to identify market vulnerabilities
+            </p>
+          </div>
+
+          <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-bold mb-3 text-cyan-400">What Are Liquidations?</h3>
+              <p style={{ color: 'var(--color-text-secondary)' }} className="leading-relaxed">
+                A liquidation occurs when a trader's leveraged position is forcibly closed due to insufficient margin to maintain the position. When the price moves against a trader's position, their collateral becomes insufficient, and the exchange automatically sells their assets.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mb-3 text-cyan-400">Reading the Heatmap</h3>
+              <p style={{ color: 'var(--color-text-secondary)' }} className="leading-relaxed">
+                The colored cells represent liquidation volume at each price level. Green indicates low liquidation risk, while red shows critical concentration. Larger cells suggest high market sensitivity at that price point.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mb-3 text-cyan-400">Trading Strategy Tips</h3>
+              <ul style={{ color: 'var(--color-text-secondary)' }} className="leading-relaxed space-y-2">
+                <li>✓ Identify price levels with high liquidation concentration</li>
+                <li>✓ Watch for potential cascade liquidations</li>
+                <li>✓ Use long/short ratio to gauge market sentiment</li>
+                <li>✓ Monitor vulnerability levels closely during volatility</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mb-3 text-cyan-400">Risk Management</h3>
+              <ul style={{ color: 'var(--color-text-secondary)' }} className="leading-relaxed space-y-2">
+                <li>✓ Place stop losses above liquidation clusters</li>
+                <li>✓ Reduce leverage during high vulnerability periods</li>
+                <li>✓ Diversify across price levels and assets</li>
+                <li>✓ Stay updated with liquidation event feeds</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        {/* Educational */}
-        <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 14, padding: 24 }}>
-          <h3 style={{ fontSize: 16, fontWeight: 800, color: '#e6edf3', marginBottom: 16 }}>How to Read the Liquidation Heatmap</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
-            {[
-              { title: 'What Are Liquidation Clusters?', text: 'When traders open leveraged positions, their liquidation prices create "clusters" at specific price levels. The heatmap shows where these clusters are densest — these are the areas where price is magnetically attracted because liquidation cascades feed on themselves.' },
-              { title: 'Green Bars (Longs)', text: 'Green bars show long liquidation levels — mostly below the current price. If price drops to these levels, long positions get liquidated, creating forced sell pressure that can cascade further down.' },
-              { title: 'Red Bars (Shorts)', text: 'Red bars show short liquidation levels — mostly above the current price. If price pumps into these zones, shorts get squeezed, creating forced buy pressure that can push price higher (short squeeze).' },
-              { title: 'Trading Implications', text: 'Dense liquidation clusters act as magnets for price action. Market makers and whales often target these clusters to trigger cascading liquidations and profit from the resulting volatility. Use this data alongside other indicators.' },
-            ].map((item, i) => (
-              <div key={i}>
-                <h4 style={{ fontSize: 13, fontWeight: 700, color: '#e6edf3', marginBottom: 6 }}>{item.title}</h4>
-                <p style={{ fontSize: 12, color: '#8b949e', lineHeight: 1.7 }}>{item.text}</p>
-              </div>
-            ))}
-          </div>
-          <div style={{ marginTop: 16, padding: '10px 14px', background: '#f8514910', border: '1px solid #f8514930', borderRadius: 8, fontSize: 11, color: '#f87171' }}>
-            ⚠️ <strong>Disclaimer:</strong> Liquidation data is simulated for educational purposes. Real liquidation data requires exchange-specific APIs. This tool demonstrates the concept — always verify with live data before trading.
-          </div>
+        {/* Disclaimer */}
+        <div className="mt-8 p-4 rounded-lg" style={{
+          backgroundColor: 'rgba(239, 68, 68, 0.1)',
+          borderLeft: '4px solid rgb(239, 68, 68)',
+        }}>
+          <p style={{ color: 'var(--color-text-secondary)' }} className="text-sm">
+            ⚠️ Disclaimer: This data is simulated for educational purposes. Always conduct your own research and consult with financial advisors before making trading decisions.
+          </p>
         </div>
       </div>
     </div>
   );
+};
+
+interface StatCardProps {
+  label: string;
+  value: string;
+  change: string;
+  icon: string;
 }
+
+function StatCard({ label, value, change, icon }: StatCardProps) {
+  return (
+    <div
+      className="rounded-lg p-4 border transition-all duration-200 hover:border-cyan-500/50 hover:shadow-lg"
+      style={{
+        backgroundColor: 'var(--color-surface)',
+        borderColor: 'var(--color-border)',
+      }}
+    >
+      <div className="flex items-start justify-between mb-3">
+        <div>
+          <p style={{ color: 'var(--color-text-secondary)' }} className="text-sm font-medium">
+            {label}
+          </p>
+          <p className="text-2xl font-bold mt-1 text-cyan-400">{value}</p>
+        </div>
+        <span className="text-2xl">{icon}</span>
+      </div>
+      <p style={{ color: 'var(--color-text-secondary)' }} className="text-xs">
+        {change}
+      </p>
+    </div>
+  );
+}
+
+export default Page;
