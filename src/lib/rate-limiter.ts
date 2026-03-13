@@ -250,3 +250,83 @@ export function resetGlobalRateLimiter(): void {
   }
   globalRateLimiter = null;
 }
+
+// ── Helper Functions for Next.js ────────────────────────────────────────────
+
+/**
+ * Extract client IP from Next.js request headers
+ * Checks: x-forwarded-for, x-real-ip, x-client-ip in order
+ */
+export function getClientIP(headers: Headers): string {
+  const forwarded = headers.get('x-forwarded-for');
+  if (forwarded) {
+    // x-forwarded-for can be comma-separated list, take the first one
+    return forwarded.split(',')[0].trim();
+  }
+
+  const realIP = headers.get('x-real-ip');
+  if (realIP) {
+    return realIP;
+  }
+
+  const clientIP = headers.get('x-client-ip');
+  if (clientIP) {
+    return clientIP;
+  }
+
+  // Fallback to localhost if no IP found
+  return '127.0.0.1';
+}
+
+/**
+ * Rate limit helper for Next.js API routes
+ * Returns null if request is allowed, or a Response with 429 status if rate limited
+ *
+ * @example
+ * export async function GET(req: NextRequest) {
+ *   const rateLimitResponse = checkRateLimit(req, '/api/health');
+ *   if (rateLimitResponse) {
+ *     return rateLimitResponse;
+ *   }
+ *   // ... your handler code
+ * }
+ */
+export function checkRateLimit(
+  headers: Headers,
+  route?: string,
+): { response: null; remaining: number; resetAt: number } | { response: Response; remaining: number; resetAt: number } {
+  const limiter = getGlobalRateLimiter();
+  const ip = getClientIP(headers);
+
+  const result = limiter.checkLimit(ip, route);
+
+  if (!result.allowed) {
+    const retryAfterSeconds = Math.ceil((result.retryAfterMs ?? 60000) / 1000);
+    const response = new Response(
+      JSON.stringify({
+        error: 'Too Many Requests',
+        message: 'Rate limit exceeded',
+        retryAfter: retryAfterSeconds,
+        resetAt: new Date(result.resetAt).toISOString(),
+      }),
+      {
+        status: 429,
+        headers: {
+          'Content-Type': 'application/json',
+          'Retry-After': retryAfterSeconds.toString(),
+          'X-RateLimit-Limit': '100',
+          'X-RateLimit-Remaining': result.remaining.toString(),
+          'X-RateLimit-Reset': Math.ceil(result.resetAt / 1000).toString(),
+        },
+      },
+    );
+
+    return { response, remaining: result.remaining, resetAt: result.resetAt };
+  }
+
+  return {
+    response: null,
+    remaining: result.remaining,
+    resetAt: result.resetAt,
+  };
+}

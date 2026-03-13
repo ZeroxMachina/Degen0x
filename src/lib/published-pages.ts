@@ -243,6 +243,9 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/blog/layer-2-comparison-base-arbitrum-zksync",
   "/blog/5-mistakes-new-crypto-investors-make",
   "/blog/memecoins-are-they-worth-it-2026",
+  "/blog/ethereum-pectra-upgrade-what-to-expect",
+  "/blog/stablecoin-regulation-2026-global-overview",
+  "/blog/solana-vs-ethereum-2026-ecosystem-comparison",
 
   // ── Day 10 — Additional Tools (published Mar 12, Sprint 11) ───
   "/tools/advanced-charting",
@@ -266,20 +269,14 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/crypto-cards/best/rewards",
   "/crypto-cards/best/travel",
   "/crypto-cards/best/beginners",
-]);
 
-/**
- * PUBLISH QUEUE — ordered by priority (publish 20/day)
- * Move slugs up into PUBLISHED_PAGES each day.
- */
-export const PUBLISH_QUEUE: readonly string[] = [
-  // Day 11+ — DeFi Lending pages
+  // ── Day 11 — DeFi Lending (published Mar 12, Sprint 12) ──────
   "/defi-lending/best",
   "/defi-lending/reviews",
   "/defi-lending/best/stablecoin-yield",
   "/defi-lending/best/yield-aggregators",
 
-  // Day 11+ — Insurance, NFTs, remaining categories
+  // ── Day 11 — Category Expansions (published Mar 12, Sprint 12)
   "/insurance",
   "/insurance/best",
   "/nfts",
@@ -287,7 +284,7 @@ export const PUBLISH_QUEUE: readonly string[] = [
   "/spending",
   "/spending/best/debit-cards",
 
-  // Day 11+ — Remaining tools
+  // ── Day 11 — Remaining Tools (published Mar 12, Sprint 12) ───
   "/tools/alerts-dashboard",
   "/tools/crypto-watchlist",
   "/tools/crypto-wrapped",
@@ -304,9 +301,32 @@ export const PUBLISH_QUEUE: readonly string[] = [
   "/tools/price-ticker",
   "/tools/token-vesting",
 
-  // Day 12+ — Web3 Business, Long-Term, more Compare pages
+  // ── Day 12 — Web3 Business & Long-Term (published Mar 12, Sprint 12)
   "/web3-business",
   "/long-term",
+  "/trading",
+  "/community",
+  "/dashboard",
+  "/achievements",
+  "/newsletter",
+]);
+
+/**
+ * PUBLISH QUEUE — ordered by priority (publish 20/day)
+ * Move slugs up into PUBLISHED_PAGES each day.
+ */
+export const PUBLISH_QUEUE: readonly string[] = [
+  // Day 13+ — International pages
+  "/es",
+  "/fr",
+  "/de",
+  "/pt-br",
+  "/ja",
+  "/ko",
+  "/ar",
+  "/tr",
+
+  // Day 13+ — Remaining compare pages
   "/compare/wallets",
 ];
 

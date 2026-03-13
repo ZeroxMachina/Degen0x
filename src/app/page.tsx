@@ -10,6 +10,13 @@ import WhaleAlertFeed from "@/components/WhaleAlertFeed";
 import CryptoQuiz from "@/components/CryptoQuiz";
 import PortfolioSimulator from "@/components/PortfolioSimulator";
 import MarketPulse from "@/components/MarketPulse";
+import MarketPulseHero from "@/components/MarketPulseHero";
+import WebSocketPriceFeed from "@/components/WebSocketPriceFeed";
+import TrendingNewsFeed from "@/components/TrendingNewsFeed";
+import LazySection from "@/components/LazySection";
+import TopMovers from "@/components/TopMovers";
+import TokenUnlockCalendar from "@/components/TokenUnlockCalendar";
+import AnimatedHero from "@/components/AnimatedHero";
 import { CATEGORIES, SITE_NAME, SITE_DESCRIPTION, CURRENT_MONTH, CURRENT_YEAR } from "@/lib/constants";
 import { getAllPosts, getCategoryMeta } from "@/lib/blog";
 
@@ -32,6 +39,8 @@ const POPULAR_GUIDES = [
 export default function HomePage() {
   return (
     <>
+      <AnimatedHero />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28">
@@ -63,15 +72,15 @@ export default function HomePage() {
           {/* Stats Counter */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold gradient-text">300+</div>
+              <div className="text-3xl md:text-4xl font-bold gradient-text">800+</div>
               <div className="text-sm text-[var(--color-text-secondary)]">Published Pages</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold gradient-text">55+</div>
+              <div className="text-3xl md:text-4xl font-bold gradient-text">84+</div>
               <div className="text-sm text-[var(--color-text-secondary)]">Interactive Tools</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold gradient-text">40+</div>
+              <div className="text-3xl md:text-4xl font-bold gradient-text">50+</div>
               <div className="text-sm text-[var(--color-text-secondary)]">In-Depth Guides</div>
             </div>
             <div className="text-center">
@@ -80,6 +89,16 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Market Pulse Hero - Live Prices */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -mt-4 mb-8">
+        <MarketPulseHero />
+      </section>
+
+      {/* WebSocket Live Price Feed — Sprint 19 */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+        <WebSocketPriceFeed />
       </section>
 
       {/* Trending Coins */}
@@ -135,6 +154,11 @@ export default function HomePage() {
             <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Fear & Greed Index</h3>
             <p className="text-sm text-[var(--color-text-secondary)]">Monitor market sentiment and historical trends</p>
           </Link>
+          <Link href="/tools/portfolio-allocator" className="glass p-6 card-hover">
+            <div className="text-4xl mb-3">🥧</div>
+            <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Portfolio Allocator</h3>
+            <p className="text-sm text-[var(--color-text-secondary)]">Build your ideal crypto portfolio with risk analysis</p>
+          </Link>
         </div>
       </section>
 
@@ -158,6 +182,14 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Top Movers + Token Unlocks — Sprint 20 */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <TopMovers />
+          <TokenUnlockCalendar />
         </div>
       </section>
 
@@ -270,6 +302,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Trending News Feed — Sprint 19 */}
+      <LazySection minHeight="400px">
+        <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <TrendingNewsFeed />
+        </section>
+      </LazySection>
+
       {/* Whale Alert + Quick Links */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -369,7 +408,7 @@ export default function HomePage() {
         <p className="text-[var(--color-text-secondary)] text-center mb-12 max-w-2xl mx-auto">
           Stay updated with our latest educational guides and in-depth crypto insights.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Link href="/learn/real-world-assets-rwa-guide" className="glass p-6 card-hover flex flex-col justify-between">
             <div>
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Real World Assets (RWA) Guide</h3>
@@ -402,6 +441,20 @@ export default function HomePage() {
             <div>
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">AI & DePIN Crypto Guide</h3>
               <p className="text-sm text-[var(--color-text-secondary)] mb-4">Discover the intersection of AI and decentralized infrastructure</p>
+            </div>
+            <span className="text-[var(--color-primary)] font-semibold text-sm">Read →</span>
+          </Link>
+          <Link href="/learn/ai-crypto-agents-guide" className="glass p-6 card-hover flex flex-col justify-between">
+            <div>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">AI Crypto Agents Guide</h3>
+              <p className="text-sm text-[var(--color-text-secondary)] mb-4">Autonomous traders, yield optimizers, and the AI agent economy</p>
+            </div>
+            <span className="text-[var(--color-primary)] font-semibold text-sm">Read →</span>
+          </Link>
+          <Link href="/learn/bitcoin-etf-guide-2026" className="glass p-6 card-hover flex flex-col justify-between">
+            <div>
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Bitcoin ETF Guide 2026</h3>
+              <p className="text-sm text-[var(--color-text-secondary)] mb-4">Spot BTC ETFs, performance, fees, and how to invest</p>
             </div>
             <span className="text-[var(--color-primary)] font-semibold text-sm">Read →</span>
           </Link>

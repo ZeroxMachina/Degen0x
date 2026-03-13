@@ -1,184 +1,129 @@
-const CACHE_VERSION = 'degen0x-v1';
+// degen0x Service Worker — Sprint 14 (upgraded)
+// Enhanced offline support, smarter caching, background sync
+
+const CACHE_VERSION = "degen0x-v14";
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const DYNAMIC_CACHE = `${CACHE_VERSION}-dynamic`;
 const API_CACHE = `${CACHE_VERSION}-api`;
-const OFFLINE_PAGE = '/offline';
 
 const STATIC_ASSETS = [
-  '/',
-  '/offline',
-  '/manifest.json',
+  "/",
+  "/tools/",
+  "/exchanges/best/",
+  "/wallets/best/",
+  "/learn/",
+  "/manifest.json",
 ];
 
-// Cache time limits (in milliseconds)
-const CACHE_EXPIRY = {
-  API: 30 * 1000, // 30 seconds for crypto prices
-  DYNAMIC: 24 * 60 * 60 * 1000, // 24 hours for dynamic content
-  STATIC: 7 * 24 * 60 * 60 * 1000, // 7 days for static assets
-};
-
-// Install event - cache static assets
-self.addEventListener('install', (event) => {
+// Install — pre-cache critical assets
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(STATIC_CACHE).then((cache) => {
-      return cache.addAll(STATIC_ASSETS).catch((error) => {
-        console.warn('Failed to cache some assets during install:', error);
-      });
-    })
+    caches.open(STATIC_CACHE).then((cache) => cache.addAll(STATIC_ASSETS))
   );
   self.skipWaiting();
 });
 
-// Activate event - clean up old caches
-self.addEventListener('activate', (event) => {
+// Activate — clean old caches
+self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (cacheName !== STATIC_CACHE && cacheName !== DYNAMIC_CACHE && cacheName.startsWith('degen0x-')) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
+    caches.keys().then((keys) =>
+      Promise.all(
+        keys
+          .filter((k) => k.startsWith("degen0x-") && k !== STATIC_CACHE && k !== DYNAMIC_CACHE && k !== API_CACHE)
+          .map((k) => caches.delete(k))
+      )
+    )
   );
   self.clients.claim();
 });
 
-// Fetch event - implement caching strategies
-self.addEventListener('fetch', (event) => {
+// Fetch strategies
+self.addEventListener("fetch", (event) => {
   const { request } = event;
+  if (request.method !== "GET") return;
   const url = new URL(request.url);
 
-  // Skip cross-origin requests and non-GET requests
-  if (url.origin !== location.origin || request.method !== 'GET') {
+  // API — network first, stale fallback, 10s timeout
+  if (url.pathname.startsWith("/api/")) {
+    event.respondWith(networkFirst(request, API_CACHE, 10000));
     return;
   }
 
-  // Network-first strategy for API calls with short cache (30 seconds for crypto prices)
-  if (url.pathname.includes('/api/')) {
-    event.respondWith(networkFirstWithExpiry(request, CACHE_EXPIRY.API));
+  // Static assets — cache first
+  if (url.pathname.match(/\.(js|css|png|jpg|jpeg|svg|ico|woff2?|webp|avif)$/)) {
+    event.respondWith(cacheFirst(request, STATIC_CACHE));
     return;
   }
 
-  // Cache-first strategy for static assets (images, fonts, css, js)
-  if (
-    request.destination === 'image' ||
-    request.destination === 'font' ||
-    request.destination === 'style' ||
-    request.destination === 'script'
-  ) {
-    event.respondWith(cacheFirst(request));
-    return;
-  }
-
-  // Network-first for documents and other requests
-  event.respondWith(networkFirst(request));
+  // Pages — stale-while-revalidate
+  event.respondWith(staleWhileRevalidate(request, DYNAMIC_CACHE));
 });
 
-// Cache-first strategy
-async function cacheFirst(request) {
+async function networkFirst(request, cacheName, timeout = 8000) {
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeout);
+    const response = await fetch(request, { signal: controller.signal });
+    clearTimeout(timer);
+    if (response.ok) {
+      const cache = await caches.open(cacheName);
+      cache.put(request, response.clone());
+    }
+    return response;
+  } catch {
+    const cached = await caches.match(request);
+    return cached || new Response(JSON.stringify({ error: "offline" }), {
+      status: 503,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+}
+
+async function cacheFirst(request, cacheName) {
   const cached = await caches.match(request);
-  if (cached) {
-    return cached;
-  }
-
+  if (cached) return cached;
   try {
     const response = await fetch(request);
     if (response.ok) {
-      const cache = await caches.open(DYNAMIC_CACHE);
+      const cache = await caches.open(cacheName);
       cache.put(request, response.clone());
     }
     return response;
-  } catch (error) {
-    console.error('Fetch failed:', error);
-    return caches.match(OFFLINE_PAGE);
+  } catch {
+    return new Response("", { status: 404 });
   }
 }
 
-// Network-first strategy with cache expiry
-async function networkFirstWithExpiry(request, expiryMs) {
-  const cacheKey = request.url;
-
-  try {
-    const response = await fetch(request);
-    if (response.ok) {
-      const cache = await caches.open(API_CACHE);
-      // Store with timestamp for expiry checking
-      const responseWithTimestamp = response.clone();
-      const headers = new Headers(responseWithTimestamp.headers);
-      headers.append('X-Cache-Time', new Date().getTime().toString());
-      const newResponse = new Response(responseWithTimestamp.body, {
-        status: responseWithTimestamp.status,
-        statusText: responseWithTimestamp.statusText,
-        headers: headers,
-      });
-      cache.put(cacheKey, newResponse);
-    }
-    return response;
-  } catch (error) {
-    const cached = await caches.match(request);
-    if (cached) {
-      const cacheTime = parseInt(cached.headers.get('X-Cache-Time') || '0');
-      const now = new Date().getTime();
-      if (now - cacheTime < expiryMs) {
-        return cached;
+async function staleWhileRevalidate(request, cacheName) {
+  const cached = await caches.match(request);
+  const fetchPromise = fetch(request)
+    .then((response) => {
+      if (response.ok) {
+        caches.open(cacheName).then((cache) => cache.put(request, response.clone()));
       }
-    }
-    // Return offline page for document requests
-    if (request.destination === 'document') {
-      return caches.match(OFFLINE_PAGE);
-    }
-    return new Response('Network error - offline', { status: 503 });
-  }
-}
-
-// Network-first strategy
-async function networkFirst(request) {
-  try {
-    const response = await fetch(request);
-    if (response.ok) {
-      const cache = await caches.open(DYNAMIC_CACHE);
-      cache.put(request, response.clone());
-    }
-    return response;
-  } catch (error) {
-    const cached = await caches.match(request);
-    if (cached) {
+      return response;
+    })
+    .catch(() => {
+      if (request.mode === "navigate") return caches.match("/");
       return cached;
-    }
-    // Return offline page for document requests
-    if (request.destination === 'document') {
-      return caches.match(OFFLINE_PAGE);
-    }
-    return new Response('Network error - offline', { status: 503 });
-  }
+    });
+  return cached || fetchPromise;
 }
 
-// Background sync event listener
-self.addEventListener('sync', (event) => {
-  if (event.tag === 'sync-watchlist') {
-    event.waitUntil(syncWatchlist());
-  }
+// Push notifications
+self.addEventListener("push", (event) => {
+  const data = event.data ? event.data.json() : {};
+  event.waitUntil(
+    self.registration.showNotification(data.title || "degen0x Alert", {
+      body: data.body || "New crypto update!",
+      icon: "/icon-192.png",
+      badge: "/icon-192.png",
+      data: { url: data.url || "/" },
+    })
+  );
 });
 
-// Sync watchlist updates when connection is restored
-async function syncWatchlist() {
-  try {
-    const response = await fetch('/api/watchlist/sync');
-    if (response.ok) {
-      const data = await response.json();
-      // Broadcast sync success to all clients
-      self.clients.matchAll().then((clients) => {
-        clients.forEach((client) => {
-          client.postMessage({
-            type: 'WATCHLIST_SYNCED',
-            data: data,
-          });
-        });
-      });
-    }
-  } catch (error) {
-    console.error('Watchlist sync failed:', error);
-  }
-}
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  event.waitUntil(clients.openWindow(event.notification.data.url));
+});

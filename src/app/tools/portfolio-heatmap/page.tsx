@@ -1,693 +1,531 @@
 'use client';
 
-import { useState, useMemo } from "react";
-import Breadcrumb from "@/components/Breadcrumb";
+import { useState, useMemo, useCallback } from 'react';
+import Breadcrumb from '@/components/Breadcrumb';
 
-/* ─────────────────────────────────────────────────────────────
-   Crypto Portfolio Heatmap
-   Interactive visualization of your crypto portfolio allocation
-   and performance with real-time updates.
-
-   Features:
-   - Dynamic portfolio builder with top 30 coins
-   - CSS Grid heatmap with color-coded P&L
-   - Real-time allocation % calculation
-   - Performance summary (total P&L, best/worst assets)
-   - Time period selector (24h, 7d, 30d, 90d, 1y)
-   - Sector breakdown visualization
-   - Portfolio diversity scoring
-   - Simulated March 2026 crypto prices and returns
-───────────────────────────────────────────────────────────────── */
-
-// metadata removed — cannot export metadata from 'use client' component
-
-interface CryptoAsset {
-  symbol: string;
-  name: string;
-  color: string;
-  category: string;
-  price: number;
-}
-
-interface PortfolioItem {
+/* ──────────────── Types ──────────────── */
+interface Asset {
   id: string;
+  name: string;
   symbol: string;
-  amount: number;
-  purchasePrice: number;
+  icon: string;
+  category: string;
+  allocation: number;
+  change24h: number;
+  change7d: number;
+  change30d: number;
+  risk: 'low' | 'medium' | 'high' | 'extreme';
+  correlation: Record<string, number>;
 }
 
-type Timeframe = "24h" | "7d" | "30d" | "90d" | "1y";
+type ViewMode = 'treemap' | 'correlation' | 'risk';
+type TimeFrame = '24h' | '7d' | '30d';
+type RiskLevel = 'low' | 'medium' | 'high' | 'extreme';
 
-const CRYPTO_LIST: CryptoAsset[] = [
-  { symbol: "BTC", name: "Bitcoin", color: "#F7931A", category: "L1", price: 67420 },
-  { symbol: "ETH", name: "Ethereum", color: "#627EEA", category: "L1", price: 3850 },
-  { symbol: "SOL", name: "Solana", color: "#9945FF", category: "L1", price: 142.50 },
-  { symbol: "BNB", name: "BNB", color: "#F3BA2F", category: "L1", price: 620 },
-  { symbol: "XRP", name: "XRP", color: "#23292F", category: "Payment", price: 2.45 },
-  { symbol: "ADA", name: "Cardano", color: "#0033AD", category: "L1", price: 1.08 },
-  { symbol: "AVAX", name: "Avalanche", color: "#E84142", category: "L1", price: 38.75 },
-  { symbol: "DOT", name: "Polkadot", color: "#E6007A", category: "L1", price: 8.42 },
-  { symbol: "MATIC", name: "Polygon", color: "#8247E5", category: "L2", price: 1.15 },
-  { symbol: "LINK", name: "Chainlink", color: "#2A5ADA", category: "Oracle", price: 27.80 },
-  { symbol: "UNI", name: "Uniswap", color: "#FF007A", category: "DeFi", price: 11.25 },
-  { symbol: "AAVE", name: "Aave", color: "#B6509E", category: "DeFi", price: 385.50 },
-  { symbol: "ARB", name: "Arbitrum", color: "#12AAFF", category: "L2", price: 2.18 },
-  { symbol: "OP", name: "Optimism", color: "#FF0420", category: "L2", price: 2.95 },
-  { symbol: "DOGE", name: "Dogecoin", color: "#C2A633", category: "Memecoin", price: 0.38 },
-  { symbol: "SHIB", name: "Shiba Inu", color: "#FF6B35", category: "Memecoin", price: 0.000032 },
-  { symbol: "LTC", name: "Litecoin", color: "#A6A9AA", category: "Payment", price: 198.50 },
-  { symbol: "BCH", name: "Bitcoin Cash", color: "#2DCE89", category: "Payment", price: 485.25 },
-  { symbol: "VET", name: "VeChain", color: "#15F4EE", category: "L1", price: 0.0485 },
-  { symbol: "ICP", name: "Internet Computer", color: "#3B00B9", category: "L1", price: 18.45 },
-  { symbol: "ATOM", name: "Cosmos", color: "#2C3E50", category: "L1", price: 13.20 },
-  { symbol: "XLM", name: "Stellar", color: "#000000", category: "Payment", price: 0.285 },
-  { symbol: "MKR", name: "Maker", color: "#1AAB9B", category: "DeFi", price: 3285.50 },
-  { symbol: "LIDO", name: "Lido DAO", color: "#00A3FF", category: "DeFi", price: 25.65 },
-  { symbol: "CURVE", name: "Curve", color: "#3C3C3D", category: "DeFi", price: 4.50 },
-  { symbol: "SNX", name: "Synthetix", color: "#00D4FF", category: "DeFi", price: 8.75 },
-  { symbol: "GMX", name: "GMX", color: "#5A67D8", category: "DeFi", price: 42.30 },
-  { symbol: "JUP", name: "Jupiter", color: "#FDB022", category: "DeFi", price: 1.35 },
-  { symbol: "INJ", name: "Injective", color: "#00F0FF", category: "DeFi", price: 32.80 },
-  { symbol: "NEAR", name: "NEAR Protocol", color: "#000000", category: "L1", price: 7.25 },
-];
-
-function seededRandom(seed: number) {
-  let s = seed;
-  return () => {
-    s = (s * 16807) % 2147483647;
-    return (s - 1) / 2147483646;
-  };
+/* ──────────────── Seed RNG ──────────────── */
+function seed(s: number): () => number {
+  let x = s;
+  return () => { x = (x * 16807 + 0) % 2147483647; return (x - 1) / 2147483646; };
 }
 
-function getReturnsForTimeframe(symbol: string, timeframe: Timeframe): number {
-  const seeds: Record<Timeframe, number> = { "24h": 11, "7d": 42, "30d": 137, "90d": 256, "1y": 512 };
-  const rng = seededRandom(seeds[timeframe] + symbol.charCodeAt(0) * symbol.charCodeAt(1));
+/* ──────────────── Data ──────────────── */
+function generateAssets(): Asset[] {
+  const rng = seed(88);
+  const r = (min: number, max: number) => min + rng() * (max - min);
 
-  // Base volatility and direction
-  let baseReturn: number;
-  if (symbol === "BTC" || symbol === "ETH") {
-    baseReturn = rng() * 0.06 - 0.02; // -2% to +4%
-  } else if (symbol === "DOGE" || symbol === "SHIB") {
-    baseReturn = rng() * 0.3 - 0.05; // -5% to +25%
-  } else {
-    baseReturn = rng() * 0.15 - 0.03; // -3% to +12%
-  }
+  const base: Omit<Asset, 'change24h' | 'change7d' | 'change30d' | 'correlation'>[] = [
+    { id: 'btc', name: 'Bitcoin', symbol: 'BTC', icon: '₿', category: 'Layer 1', allocation: 35, risk: 'medium' },
+    { id: 'eth', name: 'Ethereum', symbol: 'ETH', icon: 'Ξ', category: 'Layer 1', allocation: 25, risk: 'medium' },
+    { id: 'sol', name: 'Solana', symbol: 'SOL', icon: '◎', category: 'Layer 1', allocation: 8, risk: 'high' },
+    { id: 'bnb', name: 'BNB', symbol: 'BNB', icon: '⬡', category: 'Layer 1', allocation: 5, risk: 'medium' },
+    { id: 'arb', name: 'Arbitrum', symbol: 'ARB', icon: '🔵', category: 'Layer 2', allocation: 4, risk: 'high' },
+    { id: 'op', name: 'Optimism', symbol: 'OP', icon: '🔴', category: 'Layer 2', allocation: 3, risk: 'high' },
+    { id: 'aave', name: 'Aave', symbol: 'AAVE', icon: '👻', category: 'DeFi', allocation: 4, risk: 'high' },
+    { id: 'uni', name: 'Uniswap', symbol: 'UNI', icon: '🦄', category: 'DeFi', allocation: 3, risk: 'high' },
+    { id: 'link', name: 'Chainlink', symbol: 'LINK', icon: '⬡', category: 'DeFi', allocation: 3, risk: 'medium' },
+    { id: 'doge', name: 'Dogecoin', symbol: 'DOGE', icon: '🐕', category: 'Meme', allocation: 2, risk: 'extreme' },
+    { id: 'pepe', name: 'Pepe', symbol: 'PEPE', icon: '🐸', category: 'Meme', allocation: 1, risk: 'extreme' },
+    { id: 'fet', name: 'Fetch.ai', symbol: 'FET', icon: '🤖', category: 'AI', allocation: 3, risk: 'high' },
+    { id: 'render', name: 'Render', symbol: 'RENDER', icon: '🎨', category: 'AI', allocation: 2, risk: 'high' },
+    { id: 'usdc', name: 'USD Coin', symbol: 'USDC', icon: '💵', category: 'Stablecoin', allocation: 2, risk: 'low' },
+  ];
 
-  // Timeframe multiplier
-  const multipliers: Record<Timeframe, number> = { "24h": 0.2, "7d": 1, "30d": 2.5, "90d": 5, "1y": 12 };
-  return baseReturn * multipliers[timeframe];
-}
+  const ids = base.map(b => b.id);
 
-function getPLColor(pnlPercent: number): string {
-  if (pnlPercent >= 15) return "#22c55e";
-  if (pnlPercent >= 5) return "#84cc16";
-  if (pnlPercent >= 0) return "#22c55e30";
-  if (pnlPercent >= -5) return "#ef444430";
-  if (pnlPercent >= -15) return "#ef4444";
-  return "#991b1b";
-}
+  return base.map((a) => {
+    const corr: Record<string, number> = {};
+    ids.forEach(otherId => {
+      if (otherId === a.id) { corr[otherId] = 1; return; }
+      const sameCategory = base.find(b => b.id === otherId)?.category === a.category;
+      corr[otherId] = Math.round((sameCategory ? r(0.5, 0.95) : r(-0.2, 0.7)) * 100) / 100;
+    });
 
-function getPLBgColor(pnlPercent: number): string {
-  if (pnlPercent >= 15) return "#22c55e15";
-  if (pnlPercent >= 5) return "#84cc1615";
-  if (pnlPercent >= 0) return "#22c55e10";
-  if (pnlPercent >= -5) return "#ef444410";
-  if (pnlPercent >= -15) return "#ef444420";
-  return "#7f1d1d20";
-}
-
-export default function PortfolioHeatmapPage() {
-  const [timeframe, setTimeframe] = useState<Timeframe>("30d");
-  const [portfolio, setPortfolio] = useState<PortfolioItem[]>([]);
-  const [selectedCoin, setSelectedCoin] = useState<string>("BTC");
-  const [amount, setAmount] = useState<string>("");
-  const [purchasePrice, setPurchasePrice] = useState<string>("");
-
-  const currentAsset = CRYPTO_LIST.find(a => a.symbol === selectedCoin);
-  const currentPrice = currentAsset?.price || 0;
-
-  const addAsset = () => {
-    if (!amount || !purchasePrice || !selectedCoin) return;
-    const amt = parseFloat(amount);
-    const pp = parseFloat(purchasePrice);
-    if (isNaN(amt) || isNaN(pp) || amt <= 0 || pp <= 0) return;
-
-    const newItem: PortfolioItem = {
-      id: `${selectedCoin}-${Date.now()}`,
-      symbol: selectedCoin,
-      amount: amt,
-      purchasePrice: pp,
+    return {
+      ...a,
+      change24h: Math.round(r(-8, 8) * 100) / 100,
+      change7d: Math.round(r(-18, 22) * 100) / 100,
+      change30d: Math.round(r(-30, 45) * 100) / 100,
+      correlation: corr,
     };
-    setPortfolio([...portfolio, newItem]);
-    setAmount("");
-    setPurchasePrice("");
-  };
+  });
+}
 
-  const removeAsset = (id: string) => {
-    setPortfolio(portfolio.filter(item => item.id !== id));
-  };
+const ASSETS = generateAssets();
 
-  // Calculate portfolio metrics
-  const portfolioMetrics = useMemo(() => {
-    if (portfolio.length === 0) {
-      return {
-        totalValue: 0,
-        totalCost: 0,
-        totalPnl: 0,
-        totalPnlPercent: 0,
-        items: [],
-        bySymbol: new Map(),
-        bestSymbol: null,
-        worstSymbol: null,
-        diversityScore: 0,
-      };
+/* ──────────────── Helpers ──────────────── */
+function getChangeColor(val: number): string {
+  if (val > 10) return '#22c55e';
+  if (val > 5) return '#4ade80';
+  if (val > 0) return '#86efac';
+  if (val > -5) return '#fca5a5';
+  if (val > -10) return '#f87171';
+  return '#ef4444';
+}
+
+function getCorrelationColor(val: number): string {
+  if (val >= 0.8) return '#ef4444';
+  if (val >= 0.6) return '#f97316';
+  if (val >= 0.3) return '#eab308';
+  if (val >= 0) return '#22c55e';
+  return '#3b82f6';
+}
+
+function getRiskColor(risk: RiskLevel): string {
+  switch (risk) {
+    case 'low': return '#22c55e';
+    case 'medium': return '#eab308';
+    case 'high': return '#f97316';
+    case 'extreme': return '#ef4444';
+  }
+}
+
+/* ──────────────── Component ──────────────── */
+export default function PortfolioHeatmapPage() {
+  const [view, setView] = useState<ViewMode>('treemap');
+  const [timeframe, setTimeframe] = useState<TimeFrame>('24h');
+  const [selectedAsset, setSelectedAsset] = useState<string | null>(null);
+  const [hoveredCell, setHoveredCell] = useState<{ row: string; col: string } | null>(null);
+
+  const getChange = useCallback((asset: Asset) => {
+    switch (timeframe) {
+      case '24h': return asset.change24h;
+      case '7d': return asset.change7d;
+      case '30d': return asset.change30d;
     }
+  }, [timeframe]);
 
-    const currentAssets = new Map<string, CryptoAsset>();
-    CRYPTO_LIST.forEach(a => currentAssets.set(a.symbol, a));
+  const metrics = useMemo(() => {
+    const totalAlloc = ASSETS.reduce((s, a) => s + a.allocation, 0);
+    const weightedChange = ASSETS.reduce((s, a) => s + (a.allocation / totalAlloc) * getChange(a), 0);
+    const riskCounts: Record<string, number> = { low: 0, medium: 0, high: 0, extreme: 0 };
+    ASSETS.forEach(a => { riskCounts[a.risk] += a.allocation; });
+    const highRiskPct = riskCounts.high + riskCounts.extreme;
+    const diversification = new Set(ASSETS.map(a => a.category)).size;
 
-    const items = portfolio.map(item => {
-      const asset = currentAssets.get(item.symbol)!;
-      const currentValue = item.amount * asset.price;
-      const costValue = item.amount * item.purchasePrice;
-      const pnl = currentValue - costValue;
-      const pnlPercent = item.purchasePrice > 0 ? ((asset.price - item.purchasePrice) / item.purchasePrice) * 100 : 0;
-      const returns = getReturnsForTimeframe(item.symbol, timeframe);
-      const projectedValue = currentValue * (1 + returns);
-
-      return { item, asset, currentValue, costValue, pnl, pnlPercent, projectedValue, returns };
+    let totalCorr = 0;
+    let corrCount = 0;
+    ASSETS.forEach(a => {
+      ASSETS.forEach(b => {
+        if (a.id !== b.id) {
+          totalCorr += a.correlation[b.id] ?? 0;
+          corrCount++;
+        }
+      });
     });
+    const avgCorrelation = corrCount > 0 ? totalCorr / corrCount : 0;
 
-    const totalValue = items.reduce((sum, i) => sum + i.currentValue, 0);
-    const totalCost = items.reduce((sum, i) => sum + i.costValue, 0);
-    const totalPnl = totalValue - totalCost;
-    const totalPnlPercent = totalCost > 0 ? (totalPnl / totalCost) * 100 : 0;
+    return { totalAlloc, weightedChange, riskCounts, highRiskPct, diversification, avgCorrelation };
+  }, [getChange]);
 
-    const bySymbol = new Map<string, typeof items[0]>();
-    items.forEach(i => {
-      const existing = bySymbol.get(i.item.symbol);
-      if (existing) {
-        existing.currentValue += i.currentValue;
-        existing.costValue += i.costValue;
-        existing.pnl += i.pnl;
+  const treemapBlocks = useMemo(() => {
+    const sorted = [...ASSETS].sort((a, b) => b.allocation - a.allocation);
+    const total = sorted.reduce((s, a) => s + a.allocation, 0);
+    const blocks: { asset: Asset; x: number; y: number; w: number; h: number }[] = [];
+    let cx = 0, cy = 0;
+    const H = 100;
+    let remainingW = 100, remainingH = H;
+    let horizontal = true;
+
+    sorted.forEach((asset, i) => {
+      const frac = asset.allocation / total;
+      let bw: number, bh: number;
+
+      if (i === sorted.length - 1) {
+        bw = remainingW; bh = remainingH;
+      } else if (horizontal) {
+        bw = remainingW; bh = frac * H;
       } else {
-        bySymbol.set(i.item.symbol, { ...i });
+        bw = frac * 100; bh = remainingH;
       }
+
+      blocks.push({ asset, x: cx, y: cy, w: Math.max(bw, 0), h: Math.max(bh, 0) });
+
+      if (horizontal) { cy += bh; remainingH -= bh; }
+      else { cx += bw; remainingW -= bw; }
+
+      if (i % 3 === 2) horizontal = !horizontal;
     });
 
-    let bestSymbol = null, bestPnl = -Infinity;
-    let worstSymbol = null, worstPnl = Infinity;
-    bySymbol.forEach((v, k) => {
-      if (v.pnl > bestPnl) { bestPnl = v.pnl; bestSymbol = k; }
-      if (v.pnl < worstPnl) { worstPnl = v.pnl; worstSymbol = k; }
-    });
+    return blocks;
+  }, []);
 
-    // Diversity: based on allocation distribution
-    const allocations = Array.from(bySymbol.values()).map(v => v.currentValue / totalValue);
-    const herfindahl = allocations.reduce((sum, a) => sum + a * a, 0);
-    const diversityScore = Math.round((1 - herfindahl) * 10 * 10) / 10;
-
-    return { totalValue, totalCost, totalPnl, totalPnlPercent, items, bySymbol, bestSymbol, worstSymbol, diversityScore };
-  }, [portfolio, timeframe]);
-
-  // Sector breakdown
-  const sectorBreakdown = useMemo(() => {
-    const sectors: Record<string, number> = {};
-    portfolioMetrics.bySymbol.forEach((item, symbol) => {
-      const asset = CRYPTO_LIST.find(a => a.symbol === symbol);
-      if (asset) {
-        sectors[asset.category] = (sectors[asset.category] || 0) + item.currentValue;
-      }
-    });
-    const total = portfolioMetrics.totalValue;
-    return Object.entries(sectors)
-      .map(([name, value]) => ({ name, value, percent: total > 0 ? (value / total) * 100 : 0 }))
-      .sort((a, b) => b.value - a.value);
-  }, [portfolioMetrics]);
-
-  const sectionStyle: React.CSSProperties = {
-    background: "var(--color-surface, #161b22)",
-    border: "1px solid var(--color-border, #30363d)",
-    borderRadius: 14,
-    padding: 24,
-    marginBottom: 20,
+  const sty = {
+    page: { maxWidth: 1280, margin: '0 auto', padding: '24px 16px' } as React.CSSProperties,
+    title: { fontSize: 32, fontWeight: 800, marginBottom: 8, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' } as React.CSSProperties,
+    subtitle: { fontSize: 15, color: 'var(--color-text-secondary, #8b949e)', marginBottom: 24 } as React.CSSProperties,
+    controls: { display: 'flex', gap: 8, flexWrap: 'wrap' as const, marginBottom: 20 } as React.CSSProperties,
+    btn: (active: boolean) => ({ padding: '8px 16px', borderRadius: 8, border: '1px solid var(--color-border, #30363d)', background: active ? '#6366f1' : 'var(--color-surface, #161b22)', color: active ? '#fff' : 'var(--color-text, #e6edf3)', fontWeight: 600, fontSize: 13, cursor: 'pointer', transition: 'all 0.2s' }) as React.CSSProperties,
+    card: { background: 'var(--color-surface, #161b22)', border: '1px solid var(--color-border, #30363d)', borderRadius: 12, padding: 20, marginBottom: 20 } as React.CSSProperties,
+    grid4: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12, marginBottom: 24 } as React.CSSProperties,
+    statCard: { background: 'var(--color-surface, #161b22)', border: '1px solid var(--color-border, #30363d)', borderRadius: 10, padding: 16 } as React.CSSProperties,
+    statLabel: { fontSize: 11, color: 'var(--color-text-secondary, #8b949e)', textTransform: 'uppercase' as const, letterSpacing: '0.05em', marginBottom: 4 } as React.CSSProperties,
+    statVal: { fontSize: 24, fontWeight: 800 } as React.CSSProperties,
+    sectionTitle: { fontSize: 18, fontWeight: 700, marginBottom: 16 } as React.CSSProperties,
   };
 
   return (
-    <div style={{ minHeight: "100vh", background: "var(--color-bg, #0d1117)" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 16px 80px" }}>
-        <Breadcrumb items={[{ label: "Tools", href: "/tools" }, { label: "Portfolio Heatmap", href: "/tools/portfolio-heatmap" }]} />
+    <div style={sty.page}>
+      <Breadcrumb items={[
+        { label: 'Home', href: '/' },
+        { label: 'Tools', href: '/tools' },
+        { label: 'Portfolio Heatmap' },
+      ]} />
 
-        {/* Header */}
-        <div style={{ textAlign: "center", paddingBottom: 32, paddingTop: 16 }}>
-          <div style={{ display: "inline-block", padding: "4px 14px", background: "#10b98120", border: "1px solid #10b98140", borderRadius: 20, fontSize: 12, color: "#10b981", fontWeight: 600, marginBottom: 16 }}>
-            💼 Portfolio Tools
+      <h1 style={sty.title}>Portfolio Heatmap</h1>
+      <p style={sty.subtitle}>
+        Visualize your crypto portfolio allocation, performance, correlations, and risk exposure in an interactive heatmap.
+      </p>
+
+      {/* Stats Row */}
+      <div style={sty.grid4}>
+        <div style={sty.statCard}>
+          <div style={sty.statLabel}>Portfolio Return</div>
+          <div style={{ ...sty.statVal, color: metrics.weightedChange >= 0 ? '#22c55e' : '#ef4444' }}>
+            {metrics.weightedChange >= 0 ? '+' : ''}{metrics.weightedChange.toFixed(2)}%
           </div>
-          <h1 style={{ fontSize: 34, fontWeight: 900, color: "var(--color-text, #e6edf3)", marginBottom: 10 }}>
-            Portfolio Heatmap
-          </h1>
-          <p style={{ color: "var(--color-text-secondary, #8b949e)", fontSize: 15, maxWidth: 600, margin: "0 auto" }}>
-            Visualize your crypto holdings with allocation heatmap, P&L tracking, and sector breakdown.
+          <div style={{ fontSize: 11, color: 'var(--color-text-secondary, #8b949e)' }}>Weighted {timeframe}</div>
+        </div>
+        <div style={sty.statCard}>
+          <div style={sty.statLabel}>Avg Correlation</div>
+          <div style={{ ...sty.statVal, color: getCorrelationColor(metrics.avgCorrelation) }}>
+            {metrics.avgCorrelation.toFixed(2)}
+          </div>
+          <div style={{ fontSize: 11, color: 'var(--color-text-secondary, #8b949e)' }}>Cross-asset avg</div>
+        </div>
+        <div style={sty.statCard}>
+          <div style={sty.statLabel}>High Risk Exposure</div>
+          <div style={{ ...sty.statVal, color: metrics.highRiskPct > 30 ? '#ef4444' : '#eab308' }}>
+            {metrics.highRiskPct}%
+          </div>
+          <div style={{ fontSize: 11, color: 'var(--color-text-secondary, #8b949e)' }}>High + extreme</div>
+        </div>
+        <div style={sty.statCard}>
+          <div style={sty.statLabel}>Diversification</div>
+          <div style={{ ...sty.statVal, color: '#6366f1' }}>
+            {metrics.diversification} sectors
+          </div>
+          <div style={{ fontSize: 11, color: 'var(--color-text-secondary, #8b949e)' }}>{ASSETS.length} assets</div>
+        </div>
+      </div>
+
+      {/* Controls */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, marginBottom: 20 }}>
+        <div style={sty.controls}>
+          {(['treemap', 'correlation', 'risk'] as ViewMode[]).map(v => (
+            <button key={v} style={sty.btn(view === v)} onClick={() => setView(v)}>
+              {v === 'treemap' ? 'Treemap' : v === 'correlation' ? 'Correlation' : 'Risk Matrix'}
+            </button>
+          ))}
+        </div>
+        <div style={sty.controls}>
+          {(['24h', '7d', '30d'] as TimeFrame[]).map(tf => (
+            <button key={tf} style={sty.btn(timeframe === tf)} onClick={() => setTimeframe(tf)}>
+              {tf}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Treemap View */}
+      {view === 'treemap' && (
+        <div style={sty.card}>
+          <div style={sty.sectionTitle}>Allocation Treemap — Color by {timeframe} Change</div>
+          <div style={{ position: 'relative', width: '100%', paddingBottom: '60%', borderRadius: 8, overflow: 'hidden', border: '1px solid var(--color-border, #30363d)' }}>
+            {treemapBlocks.map(({ asset, x, y, w, h }) => {
+              const change = getChange(asset);
+              const isSelected = selectedAsset === asset.id;
+              return (
+                <div
+                  key={asset.id}
+                  onClick={() => setSelectedAsset(isSelected ? null : asset.id)}
+                  style={{
+                    position: 'absolute',
+                    left: `${x}%`, top: `${y}%`,
+                    width: `${w}%`, height: `${h}%`,
+                    background: getChangeColor(change),
+                    border: isSelected ? '2px solid #fff' : '1px solid rgba(0,0,0,0.15)',
+                    display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
+                    cursor: 'pointer', transition: 'opacity 0.2s',
+                    opacity: selectedAsset && !isSelected ? 0.5 : 1,
+                    padding: 4, boxSizing: 'border-box',
+                  }}
+                >
+                  {w > 8 && h > 8 && (
+                    <>
+                      <span style={{ fontSize: w > 15 ? 16 : 11, fontWeight: 800, color: '#fff', textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>
+                        {asset.symbol}
+                      </span>
+                      <span style={{ fontSize: w > 15 ? 12 : 9, color: '#fff', textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>
+                        {asset.allocation}%
+                      </span>
+                      {w > 15 && h > 15 && (
+                        <span style={{ fontSize: 11, color: '#fff', fontWeight: 600, textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>
+                          {change >= 0 ? '+' : ''}{change.toFixed(1)}%
+                        </span>
+                      )}
+                    </>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <div style={{ display: 'flex', gap: 12, marginTop: 12, fontSize: 11, color: 'var(--color-text-secondary, #8b949e)', flexWrap: 'wrap' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <span style={{ width: 12, height: 12, borderRadius: 2, background: '#22c55e', display: 'inline-block' }} /> Strong gain
+            </span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <span style={{ width: 12, height: 12, borderRadius: 2, background: '#86efac', display: 'inline-block' }} /> Mild gain
+            </span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <span style={{ width: 12, height: 12, borderRadius: 2, background: '#fca5a5', display: 'inline-block' }} /> Mild loss
+            </span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <span style={{ width: 12, height: 12, borderRadius: 2, background: '#ef4444', display: 'inline-block' }} /> Strong loss
+            </span>
+          </div>
+        </div>
+      )}
+
+      {/* Correlation Matrix */}
+      {view === 'correlation' && (
+        <div style={sty.card}>
+          <div style={sty.sectionTitle}>Cross-Asset Correlation Matrix</div>
+          <p style={{ fontSize: 13, color: 'var(--color-text-secondary, #8b949e)', marginBottom: 16 }}>
+            Red = highly correlated (move together), Blue = negatively correlated (move opposite). Diversify by holding assets with low correlation.
           </p>
-        </div>
-
-        {/* Timeframe Selector */}
-        <div style={{ display: "flex", gap: 12, justifyContent: "center", marginBottom: 24 }}>
-          <div style={{ display: "flex", gap: 4, padding: 4, background: "var(--color-surface, #161b22)", borderRadius: 10, border: "1px solid var(--color-border, #30363d)" }}>
-            {(["24h", "7d", "30d", "90d", "1y"] as Timeframe[]).map(tf => (
-              <button
-                key={tf}
-                onClick={() => setTimeframe(tf)}
-                style={{
-                  padding: "6px 16px",
-                  borderRadius: 8,
-                  fontSize: 13,
-                  fontWeight: 700,
-                  cursor: "pointer",
-                  border: "none",
-                  background: timeframe === tf ? "#10b981" : "transparent",
-                  color: timeframe === tf ? "#fff" : "var(--color-text-secondary, #8b949e)",
-                }}
-              >
-                {tf}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Portfolio Input Section */}
-        <div style={sectionStyle}>
-          <h2 style={{ fontSize: 18, fontWeight: 700, color: "var(--color-text, #e6edf3)", marginBottom: 16 }}>
-            Add Asset to Portfolio
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 14, marginBottom: 16 }}>
-            {/* Coin Selector */}
-            <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary, #8b949e)", marginBottom: 6, textTransform: "uppercase" }}>
-                Coin
-              </label>
-              <select
-                value={selectedCoin}
-                onChange={(e) => setSelectedCoin(e.target.value)}
-                style={{
-                  width: "100%",
-                  padding: "8px 12px",
-                  background: "var(--color-bg, #0d1117)",
-                  border: "1px solid var(--color-border, #30363d)",
-                  borderRadius: 8,
-                  color: "var(--color-text, #e6edf3)",
-                  fontSize: 14,
-                  fontWeight: 500,
-                  cursor: "pointer",
-                }}
-              >
-                {CRYPTO_LIST.map(a => (
-                  <option key={a.symbol} value={a.symbol}>
-                    {a.symbol} - {a.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Amount Input */}
-            <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary, #8b949e)", marginBottom: 6, textTransform: "uppercase" }}>
-                Amount Held
-              </label>
-              <input
-                type="number"
-                placeholder="0.00"
-                value={amount}
-                onChange={(e) => setAmount(e.target.value)}
-                step="0.01"
-                min="0"
-                style={{
-                  width: "100%",
-                  padding: "8px 12px",
-                  background: "var(--color-bg, #0d1117)",
-                  border: "1px solid var(--color-border, #30363d)",
-                  borderRadius: 8,
-                  color: "var(--color-text, #e6edf3)",
-                  fontSize: 14,
-                }}
-              />
-            </div>
-
-            {/* Purchase Price Input */}
-            <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary, #8b949e)", marginBottom: 6, textTransform: "uppercase" }}>
-                Purchase Price
-              </label>
-              <input
-                type="number"
-                placeholder="0.00"
-                value={purchasePrice}
-                onChange={(e) => setPurchasePrice(e.target.value)}
-                step="0.01"
-                min="0"
-                style={{
-                  width: "100%",
-                  padding: "8px 12px",
-                  background: "var(--color-bg, #0d1117)",
-                  border: "1px solid var(--color-border, #30363d)",
-                  borderRadius: 8,
-                  color: "var(--color-text, #e6edf3)",
-                  fontSize: 14,
-                }}
-              />
-            </div>
-
-            {/* Current Price Display */}
-            <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary, #8b949e)", marginBottom: 6, textTransform: "uppercase" }}>
-                Current Price
-              </label>
-              <div style={{
-                padding: "8px 12px",
-                background: "var(--color-bg, #0d1117)",
-                border: "1px solid var(--color-border, #30363d)",
-                borderRadius: 8,
-                color: "#10b981",
-                fontSize: 14,
-                fontWeight: 600,
-              }}>
-                ${currentPrice.toFixed(2)}
-              </div>
-            </div>
-          </div>
-
-          <button
-            onClick={addAsset}
-            style={{
-              padding: "10px 20px",
-              background: "#10b981",
-              color: "#fff",
-              border: "none",
-              borderRadius: 8,
-              fontSize: 14,
-              fontWeight: 700,
-              cursor: "pointer",
-              width: "100%",
-            }}
-          >
-            + Add Asset
-          </button>
-        </div>
-
-        {/* Portfolio Items List */}
-        {portfolio.length > 0 && (
-          <div style={sectionStyle}>
-            <h2 style={{ fontSize: 16, fontWeight: 700, color: "var(--color-text, #e6edf3)", marginBottom: 14 }}>
-              Your Assets ({portfolio.length})
-            </h2>
-            <div style={{ overflowX: "auto" }}>
-              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
-                <thead style={{ borderBottom: "1px solid var(--color-border, #30363d)" }}>
-                  <tr>
-                    <th style={{ padding: "8px 12px", textAlign: "left", color: "var(--color-text-secondary, #8b949e)", fontWeight: 600, textTransform: "uppercase", fontSize: 11 }}>Coin</th>
-                    <th style={{ padding: "8px 12px", textAlign: "right", color: "var(--color-text-secondary, #8b949e)", fontWeight: 600, textTransform: "uppercase", fontSize: 11 }}>Amount</th>
-                    <th style={{ padding: "8px 12px", textAlign: "right", color: "var(--color-text-secondary, #8b949e)", fontWeight: 600, textTransform: "uppercase", fontSize: 11 }}>Purchase Price</th>
-                    <th style={{ padding: "8px 12px", textAlign: "right", color: "var(--color-text-secondary, #8b949e)", fontWeight: 600, textTransform: "uppercase", fontSize: 11 }}>Current Price</th>
-                    <th style={{ padding: "8px 12px", textAlign: "right", color: "var(--color-text-secondary, #8b949e)", fontWeight: 600, textTransform: "uppercase", fontSize: 11 }}>P&L</th>
-                    <th style={{ padding: "8px 12px", textAlign: "center", color: "var(--color-text-secondary, #8b949e)", fontWeight: 600, textTransform: "uppercase", fontSize: 11 }}>Action</th>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ borderCollapse: 'collapse', fontSize: 11, width: '100%', minWidth: 600 }}>
+              <thead>
+                <tr>
+                  <th style={{ padding: '6px 8px', textAlign: 'left', color: 'var(--color-text-secondary, #8b949e)' }}></th>
+                  {ASSETS.map(a => (
+                    <th key={a.id} style={{ padding: '6px 4px', textAlign: 'center', color: 'var(--color-text, #e6edf3)', fontWeight: 700, fontSize: 10 }}>
+                      {a.symbol}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {ASSETS.map(row => (
+                  <tr key={row.id}>
+                    <td style={{ padding: '6px 8px', fontWeight: 700, color: 'var(--color-text, #e6edf3)', whiteSpace: 'nowrap', fontSize: 11 }}>{row.symbol}</td>
+                    {ASSETS.map(col => {
+                      const val = row.correlation[col.id] ?? 0;
+                      const isHovered = hoveredCell?.row === row.id && hoveredCell?.col === col.id;
+                      return (
+                        <td
+                          key={col.id}
+                          onMouseEnter={() => setHoveredCell({ row: row.id, col: col.id })}
+                          onMouseLeave={() => setHoveredCell(null)}
+                          style={{
+                            padding: '4px', textAlign: 'center',
+                            background: row.id === col.id ? 'var(--color-surface, #161b22)' : getCorrelationColor(val),
+                            color: '#fff', fontWeight: 600, fontSize: 10, cursor: 'pointer',
+                            opacity: row.id === col.id ? 0.3 : isHovered ? 1 : 0.85,
+                            border: isHovered ? '2px solid #fff' : '1px solid rgba(0,0,0,0.1)',
+                            minWidth: 36, transition: 'opacity 0.15s',
+                          }}
+                        >
+                          {row.id === col.id ? '—' : val.toFixed(2)}
+                        </td>
+                      );
+                    })}
                   </tr>
-                </thead>
-                <tbody>
-                  {portfolio.map(item => {
-                    const asset = CRYPTO_LIST.find(a => a.symbol === item.symbol)!;
-                    const currentValue = item.amount * asset.price;
-                    const costValue = item.amount * item.purchasePrice;
-                    const pnl = currentValue - costValue;
-                    const pnlPercent = item.purchasePrice > 0 ? ((asset.price - item.purchasePrice) / item.purchasePrice) * 100 : 0;
-                    return (
-                      <tr key={item.id} style={{ borderBottom: "1px solid var(--color-border, #30363d)" }}>
-                        <td style={{ padding: "8px 12px", fontWeight: 700, color: "var(--color-text, #e6edf3)" }}>
-                          <span style={{ color: asset.color }}>{item.symbol}</span>
-                        </td>
-                        <td style={{ padding: "8px 12px", textAlign: "right", color: "var(--color-text-secondary, #8b949e)" }}>
-                          {item.amount.toFixed(6)}
-                        </td>
-                        <td style={{ padding: "8px 12px", textAlign: "right", color: "var(--color-text-secondary, #8b949e)" }}>
-                          ${item.purchasePrice.toFixed(2)}
-                        </td>
-                        <td style={{ padding: "8px 12px", textAlign: "right", color: "var(--color-text-secondary, #8b949e)" }}>
-                          ${asset.price.toFixed(2)}
-                        </td>
-                        <td style={{ padding: "8px 12px", textAlign: "right", fontWeight: 700, color: pnl >= 0 ? "#22c55e" : "#ef4444" }}>
-                          ${pnl.toFixed(2)} ({pnlPercent > 0 ? "+" : ""}{pnlPercent.toFixed(2)}%)
-                        </td>
-                        <td style={{ padding: "8px 12px", textAlign: "center" }}>
-                          <button
-                            onClick={() => removeAsset(item.id)}
-                            style={{
-                              padding: "4px 8px",
-                              background: "transparent",
-                              border: "1px solid #ef4444",
-                              color: "#ef4444",
-                              borderRadius: 4,
-                              fontSize: 11,
-                              fontWeight: 700,
-                              cursor: "pointer",
-                            }}
-                          >
-                            Remove
-                          </button>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
+                ))}
+              </tbody>
+            </table>
           </div>
-        )}
+        </div>
+      )}
 
-        {/* Performance Summary */}
-        {portfolio.length > 0 && (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14, marginBottom: 20 }}>
-            <div style={{ ...sectionStyle, marginBottom: 0, textAlign: "center" }}>
-              <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)", fontWeight: 700, textTransform: "uppercase", marginBottom: 4 }}>
-                Total Portfolio Value
-              </div>
-              <div style={{ fontSize: 32, fontWeight: 900, color: "var(--color-text, #e6edf3)" }}>
-                ${portfolioMetrics.totalValue.toFixed(2)}
-              </div>
-              <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)", marginTop: 4 }}>
-                Cost Basis: ${portfolioMetrics.totalCost.toFixed(2)}
-              </div>
-            </div>
-
-            <div style={{ ...sectionStyle, marginBottom: 0, textAlign: "center" }}>
-              <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)", fontWeight: 700, textTransform: "uppercase", marginBottom: 4 }}>
-                Total P&L
-              </div>
-              <div style={{ fontSize: 32, fontWeight: 900, color: portfolioMetrics.totalPnl >= 0 ? "#22c55e" : "#ef4444" }}>
-                ${portfolioMetrics.totalPnl.toFixed(2)}
-              </div>
-              <div style={{ fontSize: 13, color: portfolioMetrics.totalPnl >= 0 ? "#22c55e" : "#ef4444", fontWeight: 700 }}>
-                {portfolioMetrics.totalPnl >= 0 ? "+" : ""}{portfolioMetrics.totalPnlPercent.toFixed(2)}%
-              </div>
-            </div>
-
-            <div style={{ ...sectionStyle, marginBottom: 0, textAlign: "center" }}>
-              <div style={{ fontSize: 11, color: "#22c55e", fontWeight: 700, textTransform: "uppercase", marginBottom: 4 }}>
-                Best Performer
-              </div>
-              <div style={{ fontSize: 22, fontWeight: 900, color: "#22c55e" }}>
-                {portfolioMetrics.bestSymbol || "—"}
-              </div>
-              {portfolioMetrics.bestSymbol && (
-                <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)", marginTop: 4 }}>
-                  ${(portfolioMetrics.bySymbol.get(portfolioMetrics.bestSymbol)?.pnl || 0).toFixed(2)} gain
+      {/* Risk Matrix */}
+      {view === 'risk' && (
+        <div style={sty.card}>
+          <div style={sty.sectionTitle}>Risk-Return Matrix</div>
+          <p style={{ fontSize: 13, color: 'var(--color-text-secondary, #8b949e)', marginBottom: 16 }}>
+            X-axis = risk level, Y-axis = return ({timeframe}). Bubble size = allocation weight.
+          </p>
+          <div style={{ position: 'relative', width: '100%', height: 400, background: 'var(--color-bg, #0d1117)', borderRadius: 8, border: '1px solid var(--color-border, #30363d)', overflow: 'hidden' }}>
+            {[-20, -10, 0, 10, 20].map(v => {
+              const y = 50 - v * 2;
+              return (
+                <div key={v} style={{ position: 'absolute', left: 0, right: 0, top: `${y}%`, borderTop: v === 0 ? '1px solid var(--color-border, #30363d)' : '1px dashed rgba(255,255,255,0.05)' }}>
+                  <span style={{ position: 'absolute', left: 4, top: -8, fontSize: 9, color: 'var(--color-text-secondary, #8b949e)' }}>{v}%</span>
                 </div>
-              )}
-            </div>
+              );
+            })}
 
-            <div style={{ ...sectionStyle, marginBottom: 0, textAlign: "center" }}>
-              <div style={{ fontSize: 11, color: "#ef4444", fontWeight: 700, textTransform: "uppercase", marginBottom: 4 }}>
-                Worst Performer
+            {(['low', 'medium', 'high', 'extreme'] as RiskLevel[]).map((level, i) => (
+              <div key={level} style={{ position: 'absolute', left: `${12.5 + i * 25}%`, bottom: 4, fontSize: 10, color: getRiskColor(level), fontWeight: 700, textTransform: 'uppercase', transform: 'translateX(-50%)' }}>
+                {level}
               </div>
-              <div style={{ fontSize: 22, fontWeight: 900, color: "#ef4444" }}>
-                {portfolioMetrics.worstSymbol || "—"}
-              </div>
-              {portfolioMetrics.worstSymbol && (
-                <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)", marginTop: 4 }}>
-                  ${(portfolioMetrics.bySymbol.get(portfolioMetrics.worstSymbol)?.pnl || 0).toFixed(2)} loss
+            ))}
+
+            {ASSETS.map(asset => {
+              const change = getChange(asset);
+              const riskX = ({ low: 12.5, medium: 37.5, high: 62.5, extreme: 87.5 } as Record<string, number>)[asset.risk];
+              const y = 50 - change * 2;
+              const size = Math.max(24, Math.min(60, asset.allocation * 3.5));
+              const isSelected = selectedAsset === asset.id;
+
+              return (
+                <div
+                  key={asset.id}
+                  onClick={() => setSelectedAsset(isSelected ? null : asset.id)}
+                  style={{
+                    position: 'absolute',
+                    left: `${riskX}%`, top: `${Math.max(5, Math.min(85, y))}%`,
+                    transform: 'translate(-50%, -50%)',
+                    width: size, height: size, borderRadius: '50%',
+                    background: `${getRiskColor(asset.risk)}${isSelected ? 'ff' : '88'}`,
+                    border: isSelected ? '2px solid #fff' : `2px solid ${getRiskColor(asset.risk)}`,
+                    display: 'flex', justifyContent: 'center', alignItems: 'center',
+                    cursor: 'pointer', transition: 'all 0.2s',
+                    zIndex: isSelected ? 10 : 1,
+                  }}
+                >
+                  <span style={{ fontSize: size > 35 ? 11 : 8, fontWeight: 800, color: '#fff', textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>
+                    {asset.symbol}
+                  </span>
                 </div>
-              )}
-            </div>
-
-            <div style={{ ...sectionStyle, marginBottom: 0, textAlign: "center" }}>
-              <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)", fontWeight: 700, textTransform: "uppercase", marginBottom: 4 }}>
-                Diversity Score
-              </div>
-              <div style={{ fontSize: 32, fontWeight: 900, color: portfolioMetrics.diversityScore >= 7 ? "#22c55e" : portfolioMetrics.diversityScore >= 4 ? "#eab308" : "#ef4444" }}>
-                {portfolioMetrics.diversityScore.toFixed(1)}
-              </div>
-              <div style={{ fontSize: 10, color: "var(--color-text-secondary, #8b949e)" }}>
-                {portfolioMetrics.diversityScore >= 7 ? "Well Diversified" : portfolioMetrics.diversityScore >= 4 ? "Moderate" : "Concentrated"}
-              </div>
-            </div>
+              );
+            })}
           </div>
-        )}
+        </div>
+      )}
 
-        {/* Heatmap Visualization */}
-        {portfolio.length > 0 && (
-          <div style={sectionStyle}>
-            <h2 style={{ fontSize: 18, fontWeight: 700, color: "var(--color-text, #e6edf3)", marginBottom: 20 }}>
-              Portfolio Allocation Heatmap
-            </h2>
-            <div style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
-              gap: 12,
-              minHeight: 300,
-            }}>
-              {Array.from(portfolioMetrics.bySymbol.entries()).map(([symbol, data]) => {
-                const allocationPercent = (data.currentValue / portfolioMetrics.totalValue) * 100;
-                const pnlPercent = data.item.purchasePrice > 0
-                  ? ((data.asset.price - data.item.purchasePrice) / data.item.purchasePrice) * 100
-                  : 0;
-                const sizeMultiplier = Math.max(1, (allocationPercent / 20)); // Scale size
-
-                return (
-                  <div
-                    key={symbol}
-                    style={{
-                      minHeight: 100,
-                      padding: 12,
-                      background: getPLBgColor(pnlPercent),
-                      border: `2px solid ${getPLColor(pnlPercent)}`,
-                      borderRadius: 10,
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      textAlign: "center",
-                      cursor: "default",
-                      transition: "all 0.2s",
-                      gridColumn: `span ${Math.ceil(sizeMultiplier)}`,
-                    }}
-                  >
-                    <div style={{ fontSize: 16, fontWeight: 900, color: data.asset.color, marginBottom: 4 }}>
-                      {symbol}
-                    </div>
-                    <div style={{ fontSize: 13, fontWeight: 700, color: "var(--color-text, #e6edf3)", marginBottom: 2 }}>
-                      {allocationPercent.toFixed(1)}%
-                    </div>
-                    <div style={{ fontSize: 11, color: getPLColor(pnlPercent), fontWeight: 700 }}>
-                      {pnlPercent > 0 ? "+" : ""}{pnlPercent.toFixed(1)}%
-                    </div>
-                    <div style={{ fontSize: 10, color: "var(--color-text-secondary, #8b949e)", marginTop: 4 }}>
-                      ${data.currentValue.toFixed(0)}
-                    </div>
-                  </div>
-                );
-              })}
+      {/* Asset Detail Panel */}
+      {selectedAsset && (() => {
+        const asset = ASSETS.find(a => a.id === selectedAsset);
+        if (!asset) return null;
+        return (
+          <div style={{ ...sty.card, borderColor: '#6366f1' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <span style={{ fontSize: 28 }}>{asset.icon}</span>
+                <div>
+                  <div style={{ fontSize: 18, fontWeight: 800, color: 'var(--color-text, #e6edf3)' }}>{asset.name} ({asset.symbol})</div>
+                  <div style={{ fontSize: 12, color: 'var(--color-text-secondary, #8b949e)' }}>{asset.category} — {asset.allocation}% allocation</div>
+                </div>
+              </div>
+              <button onClick={() => setSelectedAsset(null)} style={{ background: 'none', border: 'none', color: 'var(--color-text-secondary, #8b949e)', cursor: 'pointer', fontSize: 20 }}>✕</button>
             </div>
-
-            {/* Legend */}
-            <div style={{ marginTop: 20, display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 12 }}>
               {[
-                { label: "Major Gains (+15%)", color: "#22c55e" },
-                { label: "Gains (+5-15%)", color: "#84cc16" },
-                { label: "Flat (0-5%)", color: "#22c55e30" },
-                { label: "Small Loss (-5%)", color: "#ef444430" },
-                { label: "Loss (-5-15%)", color: "#ef4444" },
-                { label: "Major Loss (-15%)", color: "#991b1b" },
-              ].map(l => (
-                <div key={l.label} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11, color: "var(--color-text-secondary, #8b949e)" }}>
-                  <div style={{ width: 12, height: 12, borderRadius: 3, background: l.color, border: `1px solid ${l.color}` }} />
-                  {l.label}
+                { label: '24h Change', val: asset.change24h },
+                { label: '7d Change', val: asset.change7d },
+                { label: '30d Change', val: asset.change30d },
+              ].map(m => (
+                <div key={m.label} style={{ padding: 12, background: 'var(--color-bg, #0d1117)', borderRadius: 8 }}>
+                  <div style={sty.statLabel}>{m.label}</div>
+                  <div style={{ fontSize: 18, fontWeight: 700, color: m.val >= 0 ? '#22c55e' : '#ef4444' }}>
+                    {m.val >= 0 ? '+' : ''}{m.val.toFixed(2)}%
+                  </div>
                 </div>
               ))}
+              <div style={{ padding: 12, background: 'var(--color-bg, #0d1117)', borderRadius: 8 }}>
+                <div style={sty.statLabel}>Risk Level</div>
+                <div style={{ fontSize: 18, fontWeight: 700, color: getRiskColor(asset.risk), textTransform: 'uppercase' }}>{asset.risk}</div>
+              </div>
+            </div>
+
+            <div style={{ marginTop: 16 }}>
+              <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 8, color: 'var(--color-text, #e6edf3)' }}>Top Correlations</div>
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                {Object.entries(asset.correlation)
+                  .filter(([id]) => id !== asset.id)
+                  .sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]))
+                  .slice(0, 5)
+                  .map(([id, val]) => {
+                    const other = ASSETS.find(a => a.id === id);
+                    return (
+                      <div key={id} style={{ padding: '6px 12px', borderRadius: 8, background: `${getCorrelationColor(val)}20`, border: `1px solid ${getCorrelationColor(val)}40`, fontSize: 12, fontWeight: 600, color: getCorrelationColor(val) }}>
+                        {other?.symbol}: {val.toFixed(2)}
+                      </div>
+                    );
+                  })}
+              </div>
             </div>
           </div>
-        )}
+        );
+      })()}
 
-        {/* Sector Breakdown */}
-        {portfolio.length > 0 && sectorBreakdown.length > 0 && (
-          <div style={sectionStyle}>
-            <h2 style={{ fontSize: 18, fontWeight: 700, color: "var(--color-text, #e6edf3)", marginBottom: 16 }}>
-              Sector Breakdown
-            </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
-              {/* Sector List */}
-              <div>
-                {sectorBreakdown.map((sector, idx) => (
-                  <div key={sector.name} style={{ marginBottom: 12, padding: 12, background: "var(--color-bg, #0d1117)", borderRadius: 8, border: "1px solid var(--color-border, #30363d)" }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
-                      <div style={{ fontWeight: 700, color: "var(--color-text, #e6edf3)", fontSize: 14 }}>
-                        {sector.name}
-                      </div>
-                      <div style={{ fontWeight: 700, color: "#10b981", fontSize: 14 }}>
-                        {sector.percent.toFixed(1)}%
-                      </div>
-                    </div>
-                    <div style={{ width: "100%", height: 6, background: "var(--color-border, #30363d)", borderRadius: 3, overflow: "hidden" }}>
-                      <div
-                        style={{
-                          height: "100%",
-                          width: `${sector.percent}%`,
-                          background: ["#F7931A", "#627EEA", "#9945FF", "#F3BA2F", "#2A5ADA", "#FF007A"][idx % 6],
-                          transition: "width 0.3s",
-                        }}
-                      />
-                    </div>
-                    <div style={{ fontSize: 11, color: "var(--color-text-secondary, #8b949e)", marginTop: 4 }}>
-                      ${sector.value.toFixed(2)}
-                    </div>
-                  </div>
+      {/* Holdings Table */}
+      <div style={sty.card}>
+        <div style={sty.sectionTitle}>All Holdings</div>
+        <div style={{ overflowX: 'auto' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+            <thead>
+              <tr style={{ borderBottom: '1px solid var(--color-border, #30363d)' }}>
+                {['Asset', 'Category', 'Allocation', '24h', '7d', '30d', 'Risk'].map(h => (
+                  <th key={h} style={{ padding: '10px 8px', textAlign: h === 'Asset' ? 'left' : 'right', color: 'var(--color-text-secondary, #8b949e)', fontWeight: 700, fontSize: 11, textTransform: 'uppercase' }}>{h}</th>
                 ))}
-              </div>
+              </tr>
+            </thead>
+            <tbody>
+              {[...ASSETS].sort((a, b) => b.allocation - a.allocation).map(asset => (
+                <tr key={asset.id} onClick={() => setSelectedAsset(asset.id)} style={{ borderBottom: '1px solid var(--color-border, #30363d)', cursor: 'pointer', background: selectedAsset === asset.id ? 'rgba(99,102,241,0.1)' : 'transparent' }}>
+                  <td style={{ padding: '10px 8px', fontWeight: 600, color: 'var(--color-text, #e6edf3)' }}>
+                    <span style={{ marginRight: 8 }}>{asset.icon}</span>{asset.name} <span style={{ color: 'var(--color-text-secondary, #8b949e)' }}>{asset.symbol}</span>
+                  </td>
+                  <td style={{ padding: '10px 8px', textAlign: 'right', color: 'var(--color-text-secondary, #8b949e)' }}>{asset.category}</td>
+                  <td style={{ padding: '10px 8px', textAlign: 'right', fontWeight: 700, color: '#6366f1' }}>{asset.allocation}%</td>
+                  <td style={{ padding: '10px 8px', textAlign: 'right', fontWeight: 600, color: asset.change24h >= 0 ? '#22c55e' : '#ef4444' }}>
+                    {asset.change24h >= 0 ? '+' : ''}{asset.change24h.toFixed(2)}%
+                  </td>
+                  <td style={{ padding: '10px 8px', textAlign: 'right', fontWeight: 600, color: asset.change7d >= 0 ? '#22c55e' : '#ef4444' }}>
+                    {asset.change7d >= 0 ? '+' : ''}{asset.change7d.toFixed(2)}%
+                  </td>
+                  <td style={{ padding: '10px 8px', textAlign: 'right', fontWeight: 600, color: asset.change30d >= 0 ? '#22c55e' : '#ef4444' }}>
+                    {asset.change30d >= 0 ? '+' : ''}{asset.change30d.toFixed(2)}%
+                  </td>
+                  <td style={{ padding: '10px 8px', textAlign: 'right' }}>
+                    <span style={{ padding: '3px 8px', borderRadius: 6, fontSize: 10, fontWeight: 700, textTransform: 'uppercase', background: `${getRiskColor(asset.risk)}20`, color: getRiskColor(asset.risk), border: `1px solid ${getRiskColor(asset.risk)}40` }}>
+                      {asset.risk}
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-              {/* Sector Stats */}
-              <div>
-                <div style={{ padding: 14, background: "var(--color-bg, #0d1117)", borderRadius: 8, border: "1px solid var(--color-border, #30363d)" }}>
-                  <h3 style={{ fontSize: 14, fontWeight: 700, color: "var(--color-text, #e6edf3)", marginBottom: 12 }}>
-                    Allocation Summary
-                  </h3>
-                  <div style={{ fontSize: 12, color: "var(--color-text-secondary, #8b949e)", lineHeight: 1.8 }}>
-                    <div>
-                      <strong>Total Sectors:</strong> {sectorBreakdown.length}
-                    </div>
-                    <div>
-                      <strong>Largest:</strong> {sectorBreakdown[0]?.name} ({sectorBreakdown[0]?.percent.toFixed(1)}%)
-                    </div>
-                    <div style={{ marginTop: 12, paddingTop: 12, borderTop: "1px solid var(--color-border, #30363d)" }}>
-                      <p style={{ margin: 0, color: "var(--color-text-secondary, #8b949e)" }}>
-                        A diversified portfolio spreads capital across multiple sectors to reduce concentration risk. Consider rebalancing if any sector exceeds 50% of your portfolio.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      {/* Educational Section */}
+      <div style={sty.card}>
+        <div style={sty.sectionTitle}>Understanding Portfolio Heatmaps</div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
+          {[
+            { title: 'Why Diversification Matters', desc: 'Spreading investments across uncorrelated assets reduces portfolio volatility. When one asset drops, uncorrelated assets may hold steady or rise, cushioning losses.' },
+            { title: 'Reading Correlation Values', desc: 'Values range from -1 (perfect inverse) to +1 (move in lockstep). Below 0.3 is considered low correlation — ideal for diversification.' },
+            { title: 'Risk-Return Tradeoff', desc: 'Higher risk assets like memecoins can deliver explosive gains but also steep losses. A balanced portfolio mixes risk levels based on your tolerance.' },
+            { title: 'Rebalancing Strategy', desc: 'When an asset outperforms and grows beyond its target allocation, rebalancing involves selling some to buy underperformers — systematically buying low and selling high.' },
+          ].map((card, i) => (
+            <div key={i} style={{ padding: 16, background: 'var(--color-bg, #0d1117)', borderRadius: 8, border: '1px solid var(--color-border, #30363d)' }}>
+              <div style={{ fontSize: 14, fontWeight: 700, color: '#6366f1', marginBottom: 8 }}>{card.title}</div>
+              <div style={{ fontSize: 13, color: 'var(--color-text-secondary, #8b949e)', lineHeight: 1.6 }}>{card.desc}</div>
             </div>
-          </div>
-        )}
-
-        {/* Empty State */}
-        {portfolio.length === 0 && (
-          <div style={{
-            ...sectionStyle,
-            textAlign: "center",
-            padding: 40,
-            background: "var(--color-bg, #0d1117)",
-            border: "2px dashed var(--color-border, #30363d)",
-          }}>
-            <div style={{ fontSize: 40, marginBottom: 12 }}>💼</div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--color-text, #e6edf3)", marginBottom: 8 }}>
-              No Assets Yet
-            </h3>
-            <p style={{ color: "var(--color-text-secondary, #8b949e)", fontSize: 14, maxWidth: 400, margin: "0 auto" }}>
-              Start by adding your crypto holdings above. The heatmap, performance metrics, and sector breakdown will appear as you add assets.
-            </p>
-          </div>
-        )}
-
-        {/* Footer */}
-        <div style={{ textAlign: "center", padding: "24px 0", fontSize: 11, color: "var(--color-text-secondary, #8b949e)" }}>
-          Portfolio heatmap uses simulated March 2026 prices and returns. Not financial advice. Prices update in real-time based on current market data.
+          ))}
         </div>
       </div>
     </div>

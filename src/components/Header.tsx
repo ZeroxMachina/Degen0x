@@ -5,6 +5,10 @@ import { CATEGORIES, SITE_NAME } from "@/lib/constants";
 import ThemeToggle from "./ThemeToggle";
 import GlobalSearch from "./GlobalSearch";
 import NotificationCenter from "./NotificationCenter";
+import WalletAuthModal from "./WalletAuthModal";
+import UserProfileDropdown from "./UserProfileDropdown";
+
+type BlockchainType = "solana" | "ethereum";
 
 const NAV_CATEGORIES = CATEGORIES.slice(0, 6);
 const MORE_CATEGORIES = CATEGORIES.slice(6);
@@ -12,6 +16,23 @@ const MORE_CATEGORIES = CATEGORIES.slice(6);
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [userAddress, setUserAddress] = useState<string | null>(null);
+  const [userBlockchain, setUserBlockchain] = useState<BlockchainType | null>(null);
+
+  const handleAuthenticated = (address: string, blockchain: BlockchainType) => {
+    setUserAddress(address);
+    setUserBlockchain(blockchain);
+    setIsAuthenticated(true);
+    setIsAuthModalOpen(false);
+  };
+
+  const handleSignOut = () => {
+    setUserAddress(null);
+    setUserBlockchain(null);
+    setIsAuthenticated(false);
+  };
 
   return (
     <header className="sticky top-0 z-50 glass-nav">
@@ -80,6 +101,20 @@ export default function Header() {
             <div className="ml-3 flex items-center gap-2">
               <GlobalSearch />
               <NotificationCenter />
+              {isAuthenticated && userAddress && userBlockchain ? (
+                <UserProfileDropdown
+                  address={userAddress}
+                  blockchain={userBlockchain}
+                  onSignOut={handleSignOut}
+                />
+              ) : (
+                <button
+                  onClick={() => setIsAuthModalOpen(true)}
+                  className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-cyan-500 text-white rounded-lg font-medium text-sm hover:opacity-90 transition-opacity duration-200"
+                >
+                  Connect Wallet
+                </button>
+              )}
               <ThemeToggle />
             </div>
           </div>
@@ -88,6 +123,20 @@ export default function Header() {
           <div className="lg:hidden flex items-center gap-2">
             <GlobalSearch />
             <NotificationCenter />
+            {isAuthenticated && userAddress && userBlockchain ? (
+              <UserProfileDropdown
+                address={userAddress}
+                blockchain={userBlockchain}
+                onSignOut={handleSignOut}
+              />
+            ) : (
+              <button
+                onClick={() => setIsAuthModalOpen(true)}
+                className="px-3 py-1.5 bg-gradient-to-r from-indigo-500 to-cyan-500 text-white rounded-lg font-medium text-xs hover:opacity-90 transition-opacity duration-200"
+              >
+                Connect
+              </button>
+            )}
             <ThemeToggle />
             <button
               className="p-2 text-[var(--color-text-secondary)]"
@@ -120,6 +169,13 @@ export default function Header() {
           </div>
         )}
       </nav>
+
+      {/* Wallet Auth Modal */}
+      <WalletAuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+        onAuthenticated={handleAuthenticated}
+      />
     </header>
   );
 }

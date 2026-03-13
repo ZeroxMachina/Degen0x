@@ -20,10 +20,16 @@ import BackToTop from "@/components/BackToTop";
 import CookieConsent from "@/components/CookieConsent";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/constants";
 import RiskDisclaimer from "@/components/RiskDisclaimer";
+import ScrollingNewsTicker from "@/components/ScrollingNewsTicker";
 import WebVitals from "@/components/WebVitals";
 import { AnalyticsProvider } from "@/components/AnalyticsProvider";
 import OnboardingFlow from "@/components/OnboardingFlow";
 import { AchievementProvider } from "@/components/AchievementSystem";
+import MobileBottomNav from "@/components/MobileBottomNav";
+import CommandPalette from "@/components/CommandPalette";
+import KeyboardShortcutHint from "@/components/KeyboardShortcutHint";
+import SocialProofBanner from "@/components/SocialProofBanner";
+import EventTracker from "@/components/EventTracker";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -80,18 +86,37 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: SITE_NAME,
-    url: SITE_URL,
-    description: SITE_DESCRIPTION,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${SITE_URL}/search?q={search_term_string}`,
-      "query-input": "required name=search_term_string",
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: SITE_NAME,
+      url: SITE_URL,
+      description: SITE_DESCRIPTION,
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${SITE_URL}/search?q={search_term_string}`,
+        "query-input": "required name=search_term_string",
+      },
     },
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: `${SITE_URL}/icon-512.png`,
+      description: SITE_DESCRIPTION,
+      sameAs: [
+        "https://twitter.com/degen0x",
+        "https://github.com/degen0x",
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        url: `${SITE_URL}/contact`,
+      },
+    },
+  ];
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -132,6 +157,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <ThemeProvider>
               <AchievementProvider>
                 <Header />
+                <ScrollingNewsTicker />
                 <main className="min-h-screen">
                   {children}
                   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -146,6 +172,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <WebVitals />
                 <AnalyticsProvider />
                 <OnboardingFlow />
+                <MobileBottomNav />
+                <CommandPalette />
+                <KeyboardShortcutHint />
+                <SocialProofBanner />
+                <EventTracker />
               </AchievementProvider>
             </ThemeProvider>
           </DegenModeProvider>

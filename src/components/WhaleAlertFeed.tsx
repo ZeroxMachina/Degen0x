@@ -1,57 +1,69 @@
-"use client";
+'use client';
 
-import { useState, useEffect, useRef } from "react";
+import Link from 'next/link';
+import { useState, useEffect, useRef } from 'react';
+
+// ─── Types ───────────────────────────────────────────────────────────────
+type TransactionType = 'exchange_deposit' | 'exchange_withdrawal' | 'whale_transfer' | 'unknown';
+type TokenType = 'BTC' | 'ETH' | 'USDT' | 'USDC' | 'SOL';
 
 interface WhaleTransaction {
   id: string;
-  type: "transfer" | "mint" | "burn";
-  asset: string;
+  from: { label: string };
+  to: { label: string };
   amount: string;
+  token: TokenType;
   usdValue: string;
-  from: string;
-  to: string;
   timestamp: number;
-  chain: string;
+  type: TransactionType;
 }
 
-// Simulated whale transaction data — in production, connect to Whale Alert API
+// ─── Mock Data Generation ────────────────────────────────────────────────
 function generateMockTransaction(): WhaleTransaction {
-  const assets = [
-    { name: "BTC", chains: ["Bitcoin"] },
-    { name: "ETH", chains: ["Ethereum"] },
-    { name: "USDT", chains: ["Ethereum", "Tron"] },
-    { name: "USDC", chains: ["Ethereum", "Solana"] },
-    { name: "SOL", chains: ["Solana"] },
-    { name: "XRP", chains: ["XRP Ledger"] },
+  const tokens: TokenType[] = ['BTC', 'ETH', 'USDT', 'USDC', 'SOL'];
+  const exchanges = [
+    'Binance',
+    'Coinbase',
+    'Kraken',
+    'Bitfinex',
+    'OKX',
+    'Bybit',
+    'Gate.io',
+  ];
+  const walletLabels = [
+    'Whale 0x7a..f3',
+    'Whale 0x3d..a1',
+    'MEV Bot',
+    'Unknown Wallet',
   ];
 
-  const types: WhaleTransaction["type"][] = ["transfer", "transfer", "transfer", "mint", "burn"];
-  const entities = [
-    "Binance", "Coinbase", "Kraken", "Unknown Wallet", "Unknown Wallet",
-    "Bitfinex", "OKX", "Bybit", "Whale 0x7a..f3", "Whale 0x3d..a1",
-    "Treasury", "Foundation", "DEX Router", "Bridge",
+  const token = tokens[Math.floor(Math.random() * tokens.length)];
+  const types: TransactionType[] = [
+    'exchange_deposit',
+    'exchange_withdrawal',
+    'whale_transfer',
   ];
-
-  const asset = assets[Math.floor(Math.random() * assets.length)];
   const type = types[Math.floor(Math.random() * types.length)];
 
-  const amountRanges: Record<string, [number, number]> = {
-    BTC: [50, 5000],
-    ETH: [500, 50000],
-    USDT: [1000000, 200000000],
-    USDC: [500000, 150000000],
-    SOL: [10000, 500000],
-    XRP: [5000000, 200000000],
+  const amountRanges: Record<TokenType, [number, number]> = {
+    BTC: [10, 500],
+    ETH: [100, 20000],
+    USDT: [5000000, 100000000],
+    USDC: [2000000, 75000000],
+    SOL: [5000, 250000],
   };
 
-  const range = amountRanges[asset.name];
+  const prices: Record<TokenType, number> = {
+    BTC: 67500,
+    ETH: 3450,
+    USDT: 1,
+    USDC: 1,
+    SOL: 148,
+  };
+
+  const range = amountRanges[token];
   const rawAmount = Math.floor(Math.random() * (range[1] - range[0]) + range[0]);
-
-  const prices: Record<string, number> = {
-    BTC: 67500, ETH: 3450, USDT: 1, USDC: 1, SOL: 148, XRP: 0.52,
-  };
-
-  const usdVal = rawAmount * prices[asset.name];
+  const usdVal = rawAmount * prices[token];
 
   const formatAmount = (n: number) => {
     if (n >= 1e9) return `${(n / 1e9).toFixed(1)}B`;
@@ -62,123 +74,157 @@ function generateMockTransaction(): WhaleTransaction {
 
   return {
     id: Math.random().toString(36).slice(2, 10),
-    type,
-    asset: asset.name,
+    from: {
+      label:
+        Math.random() > 0.4
+          ? exchanges[Math.floor(Math.random() * exchanges.length)]
+          : walletLabels[Math.floor(Math.random() * walletLabels.length)],
+    },
+    to: {
+      label:
+        Math.random() > 0.4
+          ? exchanges[Math.floor(Math.random() * exchanges.length)]
+          : walletLabels[Math.floor(Math.random() * walletLabels.length)],
+    },
     amount: formatAmount(rawAmount),
+    token,
     usdValue: formatAmount(usdVal),
-    from: type === "mint" ? "Mint" : entities[Math.floor(Math.random() * entities.length)],
-    to: type === "burn" ? "Burn Address" : entities[Math.floor(Math.random() * entities.length)],
     timestamp: Date.now() - Math.floor(Math.random() * 3600000),
-    chain: asset.chains[Math.floor(Math.random() * asset.chains.length)],
+    type,
   };
 }
 
-const TYPE_ICONS: Record<WhaleTransaction["type"], string> = {
-  transfer: "\u{1F4E8}",
-  mint: "\u{1F7E2}",
-  burn: "\u{1F525}",
-};
+// ─── Utility Functions ────────────────────────────────────────────────────
+function formatTime(timestamp: number): string {
+  const now = Date.now();
+  const diff = Math.floor((now - timestamp) / 1000);
 
-const TYPE_LABELS: Record<WhaleTransaction["type"], string> = {
-  transfer: "Transfer",
-  mint: "Minted",
-  burn: "Burned",
-};
+  if (diff < 60) return `${diff}s`;
+  if (diff < 3600) return `${Math.floor(diff / 60)}m`;
+  if (diff < 86400) return `${Math.floor(diff / 3600)}h`;
+  return `${Math.floor(diff / 86400)}d`;
+}
 
+function getTokenColor(token: TokenType): string {
+  switch (token) {
+    case 'BTC':
+      return 'bg-orange-500/20 text-orange-300';
+    case 'ETH':
+      return 'bg-purple-500/20 text-purple-300';
+    case 'USDT':
+      return 'bg-green-500/20 text-green-300';
+    case 'USDC':
+      return 'bg-blue-500/20 text-blue-300';
+    case 'SOL':
+      return 'bg-fuchsia-500/20 text-fuchsia-300';
+    default:
+      return 'bg-gray-500/20 text-gray-300';
+  }
+}
+
+// ─── Main Widget Component ──────────────────────────────────────────────
 export default function WhaleAlertFeed() {
   const [transactions, setTransactions] = useState<WhaleTransaction[]>([]);
   const [isLive, setIsLive] = useState(true);
+  const [highlightId, setHighlightId] = useState<string | null>(null);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  // Initialize transactions
   useEffect(() => {
-    // Generate initial batch
-    const initial = Array.from({ length: 8 }, () => generateMockTransaction());
+    const initial = Array.from({ length: 5 }, () => generateMockTransaction()).sort(
+      (a, b) => b.timestamp - a.timestamp
+    );
     setTransactions(initial);
   }, []);
 
+  // Live update effect
   useEffect(() => {
     if (isLive) {
       intervalRef.current = setInterval(() => {
         const newTx = generateMockTransaction();
         newTx.timestamp = Date.now();
-        setTransactions(prev => [newTx, ...prev.slice(0, 19)]);
-      }, 4000 + Math.random() * 3000);
+        setTransactions((prev) => [newTx, ...prev.slice(0, 4)]);
+        setHighlightId(newTx.id);
+        setTimeout(() => setHighlightId(null), 2000);
+      }, 6000 + Math.random() * 4000);
     } else if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
+
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
   }, [isLive]);
 
-  const formatTime = (ts: number) => {
-    const diff = Math.floor((Date.now() - ts) / 1000);
-    if (diff < 60) return `${diff}s ago`;
-    if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
-    return `${Math.floor(diff / 3600)}h ago`;
-  };
-
   return (
-    <div className="glass rounded-2xl overflow-hidden">
-      <div className="p-4 border-b border-[var(--color-border)] flex items-center justify-between">
+    <div className="glass rounded-xl overflow-hidden border border-gray-700/30">
+      {/* Header */}
+      <div className="p-4 border-b border-gray-700/30 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-xl">{"\u{1F433}"}</span>
-          <h3 className="font-bold text-[var(--color-text)]">Whale Alert Feed</h3>
+          <span className="text-lg">🐋</span>
+          <h3 className="font-bold text-gray-100 text-sm">Whale Alerts</h3>
           {isLive && (
             <span className="flex items-center gap-1 text-xs text-green-400">
-              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              LIVE
+              <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
             </span>
           )}
         </div>
         <button
           onClick={() => setIsLive(!isLive)}
-          className={`px-3 py-1 rounded-lg text-xs font-medium transition-all ${
-            isLive ? "bg-red-500/20 text-red-400 hover:bg-red-500/30" : "bg-green-500/20 text-green-400 hover:bg-green-500/30"
+          className={`px-2 py-1 rounded text-xs font-medium transition-all ${
+            isLive
+              ? 'bg-red-500/20 text-red-400 hover:bg-red-500/30'
+              : 'bg-green-500/20 text-green-400 hover:bg-green-500/30'
           }`}
         >
-          {isLive ? "Pause" : "Resume"}
+          {isLive ? '⏸' : '▶'}
         </button>
       </div>
 
-      <div className="max-h-[400px] overflow-y-auto">
-        {transactions.map((tx, i) => (
+      {/* Transactions */}
+      <div className="max-h-[280px] overflow-y-auto">
+        {transactions.map((tx) => (
           <div
             key={tx.id}
-            className={`p-3 border-b border-[var(--color-border)]/30 flex items-center gap-3 hover:bg-[var(--glass-bg)] transition-all ${
-              i === 0 ? "bg-[var(--color-accent)]/5" : ""
+            className={`p-3 border-b border-gray-700/20 last:border-0 transition-all duration-500 ${
+              highlightId === tx.id
+                ? 'bg-blue-500/10 animate-pulse'
+                : 'hover:bg-gray-900/30'
             }`}
           >
-            <span className="text-lg flex-shrink-0">{TYPE_ICONS[tx.type]}</span>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
-                <span className="font-semibold text-sm text-[var(--color-text)]">
-                  {tx.amount} {tx.asset}
+            {/* Token and Amount */}
+            <div className="flex items-start justify-between gap-2 mb-1">
+              <div className="flex items-center gap-2 min-w-0">
+                <span className={`px-2 py-0.5 rounded text-xs font-semibold whitespace-nowrap ${getTokenColor(tx.token)}`}>
+                  {tx.token}
                 </span>
-                <span className="text-xs text-[var(--color-text-secondary)]">
-                  (${tx.usdValue})
-                </span>
-                <span className="text-xs px-1.5 py-0.5 rounded bg-[var(--glass-bg)] text-[var(--color-text-secondary)]">
-                  {TYPE_LABELS[tx.type]}
-                </span>
+                <span className="text-xs text-gray-300 font-medium truncate">{tx.amount}</span>
               </div>
-              <div className="text-xs text-[var(--color-text-secondary)] truncate mt-0.5">
-                {tx.from} → {tx.to}
-                <span className="ml-2 opacity-60">{tx.chain}</span>
-              </div>
+              <span className="text-xs text-gray-500 flex-shrink-0">{formatTime(tx.timestamp)} ago</span>
             </div>
-            <span className="text-xs text-[var(--color-text-secondary)] flex-shrink-0">
-              {formatTime(tx.timestamp)}
-            </span>
+
+            {/* From → To */}
+            <div className="text-xs text-gray-400 truncate">
+              <span className="text-gray-500">{tx.from.label}</span>
+              <span className="text-gray-600 mx-1">→</span>
+              <span className="text-gray-500">{tx.to.label}</span>
+            </div>
+
+            {/* USD Value */}
+            <div className="text-xs text-gray-500 mt-1">
+              <span className="text-blue-400">${tx.usdValue}</span>
+            </div>
           </div>
         ))}
       </div>
 
-      <div className="p-3 text-center border-t border-[var(--color-border)]">
-        <p className="text-xs text-[var(--color-text-secondary)]">
-          Showing simulated whale activity. Connect to Whale Alert API for live data.
-        </p>
-      </div>
+      {/* Footer */}
+      <Link
+        href="/alerts/whale-tracker"
+        className="block p-3 text-center border-t border-gray-700/30 text-xs text-blue-400 hover:text-blue-300 hover:bg-gray-900/30 transition-all font-medium"
+      >
+        View All Alerts →
+      </Link>
     </div>
   );
 }
