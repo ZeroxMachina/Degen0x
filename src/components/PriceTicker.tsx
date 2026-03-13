@@ -23,17 +23,18 @@ const COINS = [
   { id: "matic-network", symbol: "MATIC", name: "Polygon" },
 ];
 
+// Fallback prices shown only while API loads (updated March 2026)
 const FALLBACK_PRICES: CoinPrice[] = [
-  { id: "bitcoin", symbol: "BTC", name: "Bitcoin", price: 87420, change24h: 2.4 },
-  { id: "ethereum", symbol: "ETH", name: "Ethereum", price: 3891, change24h: 1.8 },
-  { id: "solana", symbol: "SOL", name: "Solana", price: 184, change24h: -0.9 },
-  { id: "binancecoin", symbol: "BNB", name: "BNB", price: 612, change24h: 0.5 },
-  { id: "ripple", symbol: "XRP", name: "XRP", price: 0.98, change24h: 3.2 },
-  { id: "cardano", symbol: "ADA", name: "Cardano", price: 0.74, change24h: -1.1 },
-  { id: "avalanche-2", symbol: "AVAX", name: "Avalanche", price: 38.4, change24h: 1.6 },
-  { id: "polkadot", symbol: "DOT", name: "Polkadot", price: 9.82, change24h: -0.4 },
-  { id: "chainlink", symbol: "LINK", name: "Chainlink", price: 17.2, change24h: 2.1 },
-  { id: "matic-network", symbol: "MATIC", name: "Polygon", price: 0.61, change24h: -2.3 },
+  { id: "bitcoin", symbol: "BTC", name: "Bitcoin", price: 83500, change24h: 0.0 },
+  { id: "ethereum", symbol: "ETH", name: "Ethereum", price: 3200, change24h: 0.0 },
+  { id: "solana", symbol: "SOL", name: "Solana", price: 145, change24h: 0.0 },
+  { id: "binancecoin", symbol: "BNB", name: "BNB", price: 620, change24h: 0.0 },
+  { id: "ripple", symbol: "XRP", name: "XRP", price: 2.30, change24h: 0.0 },
+  { id: "cardano", symbol: "ADA", name: "Cardano", price: 0.74, change24h: 0.0 },
+  { id: "avalanche-2", symbol: "AVAX", name: "Avalanche", price: 22.0, change24h: 0.0 },
+  { id: "polkadot", symbol: "DOT", name: "Polkadot", price: 4.80, change24h: 0.0 },
+  { id: "chainlink", symbol: "LINK", name: "Chainlink", price: 15.5, change24h: 0.0 },
+  { id: "matic-network", symbol: "MATIC", name: "Polygon", price: 0.25, change24h: 0.0 },
 ];
 
 function formatPrice(price: number): string {

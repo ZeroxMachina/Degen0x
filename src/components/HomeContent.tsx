@@ -21,7 +21,7 @@ const HERO_CONTENT: Record<Level, { subtitle: string; cta: { label: string; href
   },
   intermediate: {
     subtitle: "You know Bitcoin from Ethereum. Now go deeper with advanced strategies, DeFi protocols, on-chain analytics, and tools that give you an edge. All free, always.",
-    cta: { label: "Explore advanced guides", href: "/learn" },
+    cta: { label: "Explore advanced guides", href: "/learn/restaking-eigenlayer-guide" },
     ghost: { label: "Go to Dashboard", href: "/dashboard" },
   },
   degen: {
@@ -167,7 +167,7 @@ const GRID_TOOLS: Record<Level, { href: string; title: string; desc: string }[]>
 
 const MISSION_CTA: Record<Level, { label: string; href: string }> = {
   newbie: { label: "Start learning, it's free", href: "/learn/crypto-for-beginners" },
-  intermediate: { label: "Explore advanced guides", href: "/learn" },
+  intermediate: { label: "Explore advanced guides", href: "/learn/restaking-eigenlayer-guide" },
   degen: { label: "Open your Dashboard", href: "/dashboard" },
 };
 
@@ -235,10 +235,10 @@ export default function HomeContent() {
             <span>&#x2B21;</span> Our Mission
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.08] tracking-tight mb-6">
-            <span className="text-[var(--color-text)]">Onboard the next </span>
-            <span className="gradient-text">1 billion users</span>
+            <span className="text-[var(--color-text)]">Onboard the Next</span>
             <br />
-            <span className="text-[var(--color-text)]">to Web3</span>
+            <span className="gradient-text">1 Billion Users</span>
+            <span className="text-[var(--color-text)]"> to Web3</span>
           </h1>
 
           {/* ── Level Selector ── */}
