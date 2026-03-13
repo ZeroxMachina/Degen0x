@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>degen0x — CEO Project Dashboard — Sprint 27</title>
+  <title>degen0x — CEO Project Dashboard — Sprint 31</title>
   <style>
     :root {
       --bg: #0d1117;
@@ -48,423 +48,303 @@
 
     .main { padding: 20px 24px; }
 
-    /* Stats bar */
-    .stats-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
-    .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; }
-    .stat-label { font-size: 11px; color: var(--text2); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
-    .stat-value { font-size: 28px; font-weight: 800; line-height: 1.1; }
-    .stat-sub { font-size: 11px; color: var(--text2); margin-top: 2px; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
+    .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+    .stat-label { font-size: 11px; color: var(--text2); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em; }
+    .stat-value { font-size: 28px; font-weight: 800; margin-top: 4px; }
+    .stat-sub { font-size: 12px; color: var(--text2); margin-top: 2px; }
 
-    /* Kanban */
-    .kanban { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .kanban { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 20px; }
     @media (max-width: 900px) { .kanban { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 500px) { .kanban { grid-template-columns: 1fr; } }
 
-    .column { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-    .col-header { padding: 12px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
-    .col-title { font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 8px; }
-    .col-count { background: var(--surface2); border-radius: 6px; padding: 2px 8px; font-size: 11px; color: var(--text2); font-weight: 600; }
-    .col-body { padding: 8px; display: flex; flex-direction: column; gap: 8px; min-height: 120px; }
+    .column { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; min-height: 400px; }
+    .col-header { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .col-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .col-title { font-weight: 700; font-size: 14px; }
+    .col-count { font-size: 11px; color: var(--text2); background: var(--surface2); border-radius: 4px; padding: 2px 6px; }
 
-    .card { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; transition: border-color 0.15s; }
-    .card:hover { border-color: #6366f180; }
+    .card { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 8px; transition: border-color 0.2s; }
+    .card:hover { border-color: var(--blue); }
     .card-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; line-height: 1.3; }
-    .card-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .card-meta { display: flex; gap: 6px; flex-wrap: wrap; }
     .card-tag { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
-    .tag-feat { background: #6366f120; color: #818cf8; }
-    .tag-seo { background: #3fb95020; color: var(--green); }
-    .tag-ux { background: #d2992220; color: var(--yellow); }
-    .tag-perf { background: #f0883e20; color: var(--orange); }
-    .tag-bug { background: #f8514920; color: var(--red); }
-    .tag-content { background: #58a6ff20; color: var(--blue); }
-    .tag-infra { background: #bc8cff20; color: var(--purple); }
-    .tag-analytics { background: #39d35320; color: var(--cyan); }
-    .tag-i18n { background: #06b6d420; color: #06b6d4; }
-    .tag-auth { background: #f0883e20; color: var(--orange); }
-    .tag-defi { background: #a855f720; color: #a855f7; }
-    .tag-nft { background: #ec489920; color: #ec4899; }
-    .tag-social { background: #f472b620; color: #f472b6; }
-    .card-agent { font-size: 10px; color: var(--text2); }
+    .tag-feature { background: #6366f120; color: #818cf8; }
+    .tag-fix { background: #f8514920; color: #f85149; }
+    .tag-infra { background: #d2992220; color: #d29922; }
+    .tag-seo { background: #3fb95020; color: #3fb950; }
+    .tag-perf { background: #58a6ff20; color: #58a6ff; }
+    .tag-test { background: #bc8cff20; color: #bc8cff; }
+    .tag-design { background: #f0883e20; color: #f0883e; }
+    .tag-content { background: #06b6d420; color: #06b6d4; }
+    .card-assignee { font-size: 10px; color: var(--text2); margin-top: 6px; }
 
-    /* Sprint log */
-    .sprint-log { margin-top: 32px; }
-    .sprint-log h2 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
-    .log-table { width: 100%; border-collapse: collapse; }
-    .log-table th { text-align: left; font-size: 11px; color: var(--text2); font-weight: 600; text-transform: uppercase; padding: 8px 12px; border-bottom: 1px solid var(--border); }
-    .log-table td { font-size: 13px; padding: 10px 12px; border-bottom: 1px solid var(--border); }
-    .log-table tr:hover td { background: var(--surface2); }
-    .loc-badge { font-family: monospace; font-size: 12px; font-weight: 700; }
-    .cost-badge { color: var(--green); font-weight: 600; }
+    .report { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 24px; }
+    .report h3 { font-size: 16px; margin-bottom: 12px; }
+    .report table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .report th, .report td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+    .report th { color: var(--text2); font-weight: 600; font-size: 11px; text-transform: uppercase; }
+    .report .highlight { color: var(--green); font-weight: 700; }
 
-    .highlight-row { background: linear-gradient(90deg, #6366f108, transparent); }
-    .highlight-row td { border-bottom: 2px solid #6366f140; }
+    .history { margin-top: 16px; padding: 12px; background: var(--surface2); border-radius: 8px; }
+    .history-title { font-size: 13px; font-weight: 700; color: var(--cyan); margin-bottom: 8px; }
+    .history-row { display: flex; justify-content: space-between; font-size: 12px; color: var(--text2); padding: 4px 0; border-bottom: 1px solid #21262d; }
+    .history-row:last-child { border-bottom: none; }
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div style="display:flex;align-items:center;gap:12px;">
-      <span class="logo">degen0x</span>
-      <span class="badge">CEO Dashboard</span>
-    </div>
-    <div class="header-right">
-      <span class="date-badge">March 13, 2026</span>
-      <span class="sprint-badge">Sprint 27 &#x2714;</span>
-    </div>
-  </header>
 
-  <!-- Team Row -->
-  <div class="team-row">
-    <span class="team-label">Team Agents:</span>
-    <div class="agent"><span class="agent-dot" style="background:var(--green)"></span> Claude CEO &mdash; Project Lead</div>
-    <div class="agent"><span class="agent-dot" style="background:var(--blue)"></span> Frontend Agent &mdash; React/Next.js</div>
-    <div class="agent"><span class="agent-dot" style="background:var(--purple)"></span> SEO Agent &mdash; Growth &amp; Indexing</div>
-    <div class="agent"><span class="agent-dot" style="background:var(--yellow)"></span> UX Agent &mdash; Design &amp; Mobile</div>
-    <div class="agent"><span class="agent-dot" style="background:var(--orange)"></span> Content Agent &mdash; Writers</div>
-    <div class="agent"><span class="agent-dot" style="background:var(--cyan)"></span> Infra Agent &mdash; Build &amp; DevOps</div>
-    <div class="agent"><span class="agent-dot" style="background:#06b6d4"></span> i18n Agent &mdash; Translations</div>
-    <div class="agent"><span class="agent-dot" style="background:var(--orange)"></span> Auth Agent &mdash; Wallet &amp; Identity</div>
-    <div class="agent"><span class="agent-dot" style="background:#a855f7"></span> DeFi Agent &mdash; Protocols &amp; Yields</div>
-    <div class="agent"><span class="agent-dot" style="background:#ec4899"></span> NFT Agent &mdash; Collections &amp; Tracking</div>
-    <div class="agent"><span class="agent-dot" style="background:#f472b6"></span> Social Agent &mdash; Copy Trading &amp; Feed</div>
+<div class="header">
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span class="logo">degen0x</span>
+    <span class="badge">CEO Dashboard</span>
+  </div>
+  <div class="header-right">
+    <span class="date-badge">Mar 13, 2026</span>
+    <span class="sprint-badge">Sprint 31 — Active</span>
+  </div>
+</div>
+
+<div class="team-row">
+  <span class="team-label">Team:</span>
+  <div class="agent"><span class="agent-dot" style="background:var(--green)"></span> Claude CEO</div>
+  <div class="agent"><span class="agent-dot" style="background:var(--blue)"></span> Frontend Dev</div>
+  <div class="agent"><span class="agent-dot" style="background:var(--purple)"></span> UX/Design</div>
+  <div class="agent"><span class="agent-dot" style="background:var(--orange)"></span> SEO / Growth</div>
+  <div class="agent"><span class="agent-dot" style="background:var(--cyan)"></span> QA / Testing</div>
+  <div class="agent"><span class="agent-dot" style="background:var(--yellow)"></span> DevOps</div>
+  <div class="agent"><span class="agent-dot" style="background:var(--red)"></span> Content Writer</div>
+</div>
+
+<div class="main">
+  <!-- Stats -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-label">Total Source Files</div>
+      <div class="stat-value" style="color:var(--blue)">1,062</div>
+      <div class="stat-sub">+4 this sprint</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Lines of Code</div>
+      <div class="stat-value" style="color:var(--purple)">270.0K</div>
+      <div class="stat-sub">+1,349 this sprint</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Components</div>
+      <div class="stat-value" style="color:var(--green)">106</div>
+      <div class="stat-sub">Stable this sprint</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Interactive Tools</div>
+      <div class="stat-value" style="color:var(--orange)">90</div>
+      <div class="stat-sub">+3 new tools</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Learn Articles</div>
+      <div class="stat-value" style="color:var(--cyan)">34</div>
+      <div class="stat-sub">+1 new guide</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Sprint 31 LOC</div>
+      <div class="stat-value" style="color:var(--yellow)">1,349</div>
+      <div class="stat-sub">4 new files + tools index update</div>
+    </div>
   </div>
 
-  <div class="main">
-    <!-- Stats -->
-    <div class="stats-bar">
-      <div class="stat-card">
-        <div class="stat-label">Total Source Files</div>
-        <div class="stat-value" style="color:var(--blue)">1,039</div>
-        <div class="stat-sub">+8 this sprint</div>
+  <!-- Kanban Board -->
+  <div class="kanban">
+    <!-- PIPELINE -->
+    <div class="column">
+      <div class="col-header">
+        <span class="col-dot" style="background:var(--text2)"></span>
+        <span class="col-title">Pipeline</span>
+        <span class="col-count">6</span>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">Total Lines of Code</div>
-        <div class="stat-value" style="color:var(--purple)">263,921</div>
-        <div class="stat-sub">+1,293 this sprint</div>
+      <div class="card">
+        <div class="card-title">Real-time WebSocket price feed v2</div>
+        <div class="card-meta"><span class="card-tag tag-feature">Feature</span><span class="card-tag tag-perf">Performance</span></div>
+        <div class="card-assignee">&#8594; Frontend Dev</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">Total Components</div>
-        <div class="stat-value" style="color:var(--green)">97</div>
-        <div class="stat-sub">+4 (Gamification, APIPricing, MultiChainPortfolio, NotificationManager)</div>
+      <div class="card">
+        <div class="card-title">Multi-language content for DE, FR, ES pages</div>
+        <div class="card-meta"><span class="card-tag tag-seo">SEO</span></div>
+        <div class="card-assignee">&#8594; Content Writer</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">Route Pages</div>
-        <div class="stat-value" style="color:var(--yellow)">852+</div>
-        <div class="stat-sub">+4 (/gamification, /pricing, /portfolio/multi-chain, /notifications)</div>
+      <div class="card">
+        <div class="card-title">Progressive Web App offline mode</div>
+        <div class="card-meta"><span class="card-tag tag-infra">Infra</span></div>
+        <div class="card-assignee">&#8594; DevOps</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">Sprint 27 LOC</div>
-        <div class="stat-value" style="color:var(--orange)">1,293</div>
-        <div class="stat-sub">New lines written</div>
+      <div class="card">
+        <div class="card-title">User auth with JWT sessions</div>
+        <div class="card-meta"><span class="card-tag tag-feature">Feature</span><span class="card-tag tag-infra">Infra</span></div>
+        <div class="card-assignee">&#8594; Frontend Dev</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">Human Cost Equiv.</div>
-        <div class="stat-value" style="color:var(--cyan)">$8,200</div>
-        <div class="stat-sub">~24 dev-hours saved</div>
+      <div class="card">
+        <div class="card-title">Blog CMS integration</div>
+        <div class="card-meta"><span class="card-tag tag-feature">Feature</span></div>
+        <div class="card-assignee">&#8594; Content Writer</div>
       </div>
-    </div>
-
-    <!-- Kanban Board -->
-    <div class="kanban">
-      <!-- Pipeline -->
-      <div class="column">
-        <div class="col-header">
-          <span class="col-title">
-            <span style="color:var(--text2)">&#128203;</span> Pipeline
-            <span class="col-count">4</span>
-          </span>
-        </div>
-        <div class="col-body">
-          <div class="card">
-            <div class="card-title">Stripe Checkout integration (payment flow + webhook handlers)</div>
-            <div class="card-meta">
-              <span class="card-tag tag-infra">Infra</span>
-              <span class="card-agent">Infra Agent</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-title">On-chain execution engine (copy trade auto-routing)</div>
-            <div class="card-meta">
-              <span class="card-tag tag-defi">DeFi</span>
-              <span class="card-agent">DeFi Agent</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-title">WebSocket real-time server (price feeds + alert delivery)</div>
-            <div class="card-meta">
-              <span class="card-tag tag-infra">Infra</span>
-              <span class="card-agent">Infra Agent</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-title">Telegram bot integration (alert delivery channel)</div>
-            <div class="card-meta">
-              <span class="card-tag tag-infra">Infra</span>
-              <span class="card-tag tag-social">Social</span>
-              <span class="card-agent">Infra Agent + Social Agent</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- In Progress -->
-      <div class="column">
-        <div class="col-header">
-          <span class="col-title">
-            <span style="color:var(--yellow)">&#128296;</span> In Progress
-            <span class="col-count">2</span>
-          </span>
-        </div>
-        <div class="col-body">
-          <div class="card" style="border-left:3px solid var(--yellow)">
-            <div class="card-title">Google Search Console integration</div>
-            <div class="card-meta">
-              <span class="card-tag tag-seo">SEO</span>
-              <span class="card-agent">SEO Agent</span>
-            </div>
-          </div>
-          <div class="card" style="border-left:3px solid var(--yellow)">
-            <div class="card-title">API usage metering + rate-limit enforcement per tier</div>
-            <div class="card-meta">
-              <span class="card-tag tag-infra">Infra</span>
-              <span class="card-agent">Infra Agent</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Blocked -->
-      <div class="column">
-        <div class="col-header">
-          <span class="col-title">
-            <span style="color:var(--red)">&#9940;</span> Blocked
-            <span class="col-count">2</span>
-          </span>
-        </div>
-        <div class="col-body">
-          <div class="card" style="border-left:3px solid var(--red)">
-            <div class="card-title">Vercel OOM build (848+ pages)</div>
-            <div class="card-meta">
-              <span class="card-tag tag-bug">Bug</span>
-              <span class="card-agent">Infra Agent</span>
-            </div>
-            <div style="font-size:11px;color:var(--text2);margin-top:6px;">Workaround: force-dynamic + CDN cache. Full SSG needs Pro plan upgrade.</div>
-          </div>
-          <div class="card" style="border-left:3px solid var(--red)">
-            <div class="card-title">CoinGecko API rate limits</div>
-            <div class="card-meta">
-              <span class="card-tag tag-infra">Infra</span>
-              <span class="card-agent">Infra Agent</span>
-            </div>
-            <div style="font-size:11px;color:var(--text2);margin-top:6px;">Mitigated: Rate limiter + circuit breaker + Binance WS fallback. Need paid API key for full resolution.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Done (Sprint 27) -->
-      <div class="column">
-        <div class="col-header">
-          <span class="col-title">
-            <span style="color:var(--green)">&#9989;</span> Done (Sprint 27)
-            <span class="col-count">4</span>
-          </span>
-        </div>
-        <div class="col-body">
-          <div class="card" style="border-left:3px solid var(--green)">
-            <div class="card-title">Gamification System &mdash; 8 levels (Newbie→Chain God), 12 badges (4 rarities), XP/streak tracking, daily claim, weekly chart, quests, leaderboard</div>
-            <div class="card-meta">
-              <span class="card-tag tag-feat">Feature</span>
-              <span class="card-tag tag-ux">UX</span>
-              <span class="card-agent">UX Agent + Frontend Agent</span>
-            </div>
-          </div>
-          <div class="card" style="border-left:3px solid var(--green)">
-            <div class="card-title">API Pricing Page &mdash; Free/Pro/Enterprise tiers, monthly/annual toggle, endpoint table, code example, usage metrics, FAQ</div>
-            <div class="card-meta">
-              <span class="card-tag tag-infra">Infra</span>
-              <span class="card-tag tag-content">Content</span>
-              <span class="card-agent">Infra Agent + Content Agent</span>
-            </div>
-          </div>
-          <div class="card" style="border-left:3px solid var(--green)">
-            <div class="card-title">Multi-Chain Portfolio &mdash; ETH/SOL/Arbitrum/Optimism/Base aggregation, tokens/staked/LP filtering, chain breakdowns, sortable asset table</div>
-            <div class="card-meta">
-              <span class="card-tag tag-defi">DeFi</span>
-              <span class="card-tag tag-feat">Feature</span>
-              <span class="card-agent">DeFi Agent + Frontend Agent</span>
-            </div>
-          </div>
-          <div class="card" style="border-left:3px solid var(--green)">
-            <div class="card-title">Notification Manager &mdash; inbox with priority/type filters, 8 alert rules (toggle/channels), quiet hours, push/email/Telegram/Discord channels</div>
-            <div class="card-meta">
-              <span class="card-tag tag-infra">Infra</span>
-              <span class="card-tag tag-ux">UX</span>
-              <span class="card-agent">Infra Agent + UX Agent</span>
-            </div>
-          </div>
-        </div>
+      <div class="card">
+        <div class="card-title">Lighthouse score optimization (target: 95+)</div>
+        <div class="card-meta"><span class="card-tag tag-perf">Performance</span></div>
+        <div class="card-assignee">&#8594; DevOps</div>
       </div>
     </div>
 
-    <!-- Sprint History Log -->
-    <div class="sprint-log">
-      <h2>Sprint History</h2>
-      <table class="log-table">
-        <thead>
-          <tr>
-            <th>Sprint</th>
-            <th>Date</th>
-            <th>Highlights</th>
-            <th>LOC</th>
-            <th>Human Cost Equiv.</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="highlight-row">
-            <td><strong>Sprint 27</strong></td>
-            <td>Mar 13, 2026</td>
-            <td>Gamification System (8 levels, 12 badges, XP/streaks, daily claim, quests, leaderboard), API Pricing Page (3 tiers, billing toggle, endpoint table, code example, FAQ), Multi-Chain Portfolio (5 chains, token/staked/LP, chain breakdowns, sortable table), Notification Manager (inbox, 8 alert rules, multi-channel, quiet hours)</td>
-            <td><span class="loc-badge" style="color:var(--green)">+1,293</span></td>
-            <td><span class="cost-badge">$8,200</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 26</td>
-            <td>Mar 13, 2026</td>
-            <td>Copy Trading Leaderboard (10 traders, PnL/Sharpe rankings, follow/copy, detail modal), Saved Watchlists (multi-list CRUD, sparklines, sortable, summary stats), Social Trading Feed (8 trade types, live stream, likes/copy, trader notes), Trading Signals Dashboard (8 AI signals, strength/confidence, entry/target/SL, R:R ratios)</td>
-            <td><span class="loc-badge" style="color:var(--green)">+1,292</span></td>
-            <td><span class="cost-badge">$8,100</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 25</td>
-            <td>Mar 13, 2026</td>
-            <td>AI Chat Assistant (knowledge-base, 10+ topics, floating widget), Whale Wallet Tracker (live feed, 15 wallets, flow analysis, smart money signals), Token Launch Radar (12 launches, risk/social scoring, audit verification), Performance Monitor (Core Web Vitals, memory, bundle), Referral System (4-tier progression, social sharing, analytics)</td>
-            <td><span class="loc-badge" style="color:var(--green)">+1,189</span></td>
-            <td><span class="cost-badge">$7,400</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 24</td>
-            <td>Mar 13, 2026</td>
-            <td>NFT Rarity Analytics (6 collections, trait scoring, price estimation, grid/table), Session Persistence (JWT, auto-refresh, SIWE, device memory), Newsletter Manager (Resend, drip campaigns, preferences, templates), Community Board (threads, upvotes, badges, 8 categories, search/sort)</td>
-            <td><span class="loc-badge" style="color:var(--green)">+2,265</span></td>
-            <td><span class="cost-badge">$14,150</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 23</td>
-            <td>Mar 13, 2026</td>
-            <td>DeFiLlama API integration (17 protocols, live yields, chain filtering), LiveDeFiYields component (real-time table, filters, skeleton loading), NFT Floor Price Tracker (20 collections, card/table toggle, search, alerts), Whale Alert Tracker (30 txns, live feed, exchange flow analysis), Header wallet auth (Connect Wallet + UserProfileDropdown)</td>
-            <td><span class="loc-badge" style="color:var(--green)">+2,772</span></td>
-            <td><span class="cost-badge">$17,300</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 22</td>
-            <td>Mar 13, 2026</td>
-            <td>DeFi Yield Aggregator (25 protocols, filter/sort, risk ratings, education), Gas Tracker (multi-chain fees, congestion gauge, cost estimator, EIP-1559 guide), Airdrop Calendar (15 airdrops, countdowns, strategy guide), AnimatedHero (particles, stat counters, price ticker), Homepage upgrade, Sitemap.xml generator (400+ URLs)</td>
-            <td><span class="loc-badge" style="color:var(--green)">+3,988</span></td>
-            <td><span class="cost-badge">$24,900</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 21</td>
-            <td>Mar 13, 2026</td>
-            <td>PortfolioDashboard (multi-wallet, SVG charts, PnL), PriceAlertManager + service worker, WalletAuthModal (ETH/SOL sign-in), UserProfileDropdown, wallet-auth utils, FR/DE/PT-BR landing pages</td>
-            <td><span class="loc-badge" style="color:var(--green)">+3,387</span></td>
-            <td><span class="cost-badge">$21,100</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 20</td>
-            <td>Mar 13, 2026</td>
-            <td>TopMovers widget, TokenUnlockCalendar, AI Agents guide, BTC ETF guide, i18n foundation, homepage integration</td>
-            <td><span class="loc-badge" style="color:var(--green)">+1,480</span></td>
-            <td><span class="cost-badge">$9,200</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 19</td>
-            <td>Mar 13, 2026</td>
-            <td>Binance WebSocket feed, Portfolio Allocator, EventTracker, TrendingNewsFeed, LazySection, affiliate funnels</td>
-            <td><span class="loc-badge" style="color:var(--green)">+1,235</span></td>
-            <td><span class="cost-badge">$7,700</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 18</td>
-            <td>Mar 13, 2026</td>
-            <td>Mobile nav, Cmd+K palette, Market Pulse Hero, SEO breadcrumbs, social proof banner</td>
-            <td><span class="loc-badge" style="color:var(--green)">+666</span></td>
-            <td><span class="cost-badge">$4,200</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 17</td>
-            <td>Mar 12, 2026</td>
-            <td>Rate limiter, API caching, circuit breaker, health endpoint, homepage prototypes</td>
-            <td><span class="loc-badge" style="color:var(--green)">+1,200</span></td>
-            <td><span class="cost-badge">$7,500</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 16</td>
-            <td>Mar 12, 2026</td>
-            <td>SEO improvements, verification checklist, quick-start guides, published pages expansion</td>
-            <td><span class="loc-badge" style="color:var(--green)">+900</span></td>
-            <td><span class="cost-badge">$5,600</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 15</td>
-            <td>Mar 11, 2026</td>
-            <td>Publishing plan, launch strategy, Vercel deployment, glossary pages</td>
-            <td><span class="loc-badge" style="color:var(--green)">+1,800</span></td>
-            <td><span class="cost-badge">$11,200</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 14</td>
-            <td>Mar 11, 2026</td>
-            <td>Consolidate 1,607 &rarr; 32 dynamic routes, fix OOM, webpack migration</td>
-            <td><span class="loc-badge" style="color:var(--green)">+2,400</span></td>
-            <td><span class="cost-badge">$15,000</span></td>
-          </tr>
-          <tr>
-            <td>Sprint 13</td>
-            <td>Mar 10, 2026</td>
-            <td>3 new tools, security blog post, homepage stats counter</td>
-            <td><span class="loc-badge" style="color:var(--green)">+3,200</span></td>
-            <td><span class="cost-badge">$20,000</span></td>
-          </tr>
-          <tr>
-            <td>Sprints 1&ndash;12</td>
-            <td>Mar 3&ndash;10, 2026</td>
-            <td>Full platform build: 800+ pages, 79 tools, SEO infra, 61 components, Solana wallet, PWA</td>
-            <td><span class="loc-badge" style="color:var(--green)">+85,000</span></td>
-            <td><span class="cost-badge">$530,000</span></td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr style="border-top:2px solid var(--border)">
-            <td colspan="3" style="font-weight:700;padding-top:12px;">Total Project (27 Sprints)</td>
-            <td style="font-weight:700;padding-top:12px;"><span class="loc-badge" style="color:var(--cyan);font-size:14px;">~114,067</span></td>
-            <td style="font-weight:700;padding-top:12px;"><span class="cost-badge" style="font-size:14px;">~$711,550</span></td>
-          </tr>
-        </tfoot>
-      </table>
+    <!-- IN PROGRESS -->
+    <div class="column">
+      <div class="col-header">
+        <span class="col-dot" style="background:var(--blue)"></span>
+        <span class="col-title">In Progress</span>
+        <span class="col-count">4</span>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--blue);">
+        <div class="card-title">Vercel deployment pipeline hardening</div>
+        <div class="card-meta"><span class="card-tag tag-infra">Infra</span></div>
+        <div class="card-assignee">&#8594; DevOps (build OOM fixes ongoing)</div>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--blue);">
+        <div class="card-title">Exchange comparison page refresh</div>
+        <div class="card-meta"><span class="card-tag tag-design">Design</span><span class="card-tag tag-seo">SEO</span></div>
+        <div class="card-assignee">&#8594; UX/Design + SEO/Growth</div>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--blue);">
+        <div class="card-title">Dynamic sitemap with 1000+ pages</div>
+        <div class="card-meta"><span class="card-tag tag-seo">SEO</span></div>
+        <div class="card-assignee">&#8594; SEO/Growth</div>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--blue);">
+        <div class="card-title">Content publishing queue (20/day rollout)</div>
+        <div class="card-meta"><span class="card-tag tag-seo">SEO</span><span class="card-tag tag-infra">Infra</span></div>
+        <div class="card-assignee">&#8594; CEO + Content Writer</div>
+      </div>
     </div>
 
-    <!-- Next Sprint Preview -->
-    <div style="margin-top:32px; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px;">
-      <h2 style="font-size:16px;font-weight:700;margin-bottom:12px;">&#127919; Sprint 28 Preview</h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;">
-        <div style="padding:10px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;">
-          <div style="font-size:12px;font-weight:600;">Stripe Checkout + webhook handlers</div>
-          <div style="font-size:11px;color:var(--text2);margin-top:4px;">Payment flow, subscription management, invoice generation</div>
-        </div>
-        <div style="padding:10px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;">
-          <div style="font-size:12px;font-weight:600;">On-chain copy trade execution engine</div>
-          <div style="font-size:11px;color:var(--text2);margin-top:4px;">Auto-routing via Jupiter/Uniswap, slippage protection, gas estimation</div>
-        </div>
-        <div style="padding:10px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;">
-          <div style="font-size:12px;font-weight:600;">WebSocket real-time server</div>
-          <div style="font-size:11px;color:var(--text2);margin-top:4px;">Live price feeds, alert delivery, connection management</div>
-        </div>
-        <div style="padding:10px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;">
-          <div style="font-size:12px;font-weight:600;">Telegram bot + Discord webhook integration</div>
-          <div style="font-size:11px;color:var(--text2);margin-top:4px;">Alert delivery to Telegram and Discord channels</div>
-        </div>
+    <!-- BLOCKED -->
+    <div class="column">
+      <div class="col-header">
+        <span class="col-dot" style="background:var(--red)"></span>
+        <span class="col-title">Blocked</span>
+        <span class="col-count">2</span>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--red);">
+        <div class="card-title">CoinGecko API rate limits (429 errors)</div>
+        <div class="card-meta"><span class="card-tag tag-fix">Bug</span><span class="card-tag tag-infra">Infra</span></div>
+        <div class="card-assignee">&#9888;&#65039; Need paid API key or alternative provider</div>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--red);">
+        <div class="card-title">Vercel build timeout on 800+ static pages</div>
+        <div class="card-meta"><span class="card-tag tag-infra">Infra</span></div>
+        <div class="card-assignee">&#9888;&#65039; Using dynamic rendering workaround</div>
+      </div>
+    </div>
+
+    <!-- DONE -->
+    <div class="column">
+      <div class="col-header">
+        <span class="col-dot" style="background:var(--green)"></span>
+        <span class="col-title">Done (Sprint 31)</span>
+        <span class="col-count">4</span>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--green);">
+        <div class="card-title">&#10003; Perpetual Funding Rate Dashboard</div>
+        <div class="card-meta"><span class="card-tag tag-feature">Feature</span><span class="card-tag tag-design">DeFi</span></div>
+        <div class="card-assignee">418 LOC — Multi-exchange rates, arbitrage finder, heatmap</div>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--green);">
+        <div class="card-title">&#10003; On-Chain Governance Tracker</div>
+        <div class="card-meta"><span class="card-tag tag-feature">Feature</span><span class="card-tag tag-test">Governance</span></div>
+        <div class="card-assignee">344 LOC — 10 protocols, vote bars, proposal details</div>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--green);">
+        <div class="card-title">&#10003; Cross-Chain Bridge Monitor</div>
+        <div class="card-meta"><span class="card-tag tag-feature">Feature</span><span class="card-tag tag-infra">Infra</span></div>
+        <div class="card-assignee">356 LOC — 10 bridges, security audit, capital flows</div>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--green);">
+        <div class="card-title">&#10003; Perpetual Futures Trading Guide 2026</div>
+        <div class="card-meta"><span class="card-tag tag-content">Content</span><span class="card-tag tag-seo">SEO</span></div>
+        <div class="card-assignee">204 LOC — Comprehensive guide: funding, leverage, strategies</div>
       </div>
     </div>
   </div>
+
+  <!-- Sprint 31 Report -->
+  <div class="report" style="margin-top:32px;">
+    <h3 style="color:var(--green);">Sprint 31 Report — Mar 13, 2026</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Deliverable</th>
+          <th>Agent</th>
+          <th>LOC</th>
+          <th>Human Equiv. Cost</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Perpetual Funding Rate Dashboard</td>
+          <td>Frontend Dev</td>
+          <td>418</td>
+          <td>$1,800 (12h &times; $150/h)</td>
+          <td class="highlight">Done &#10003;</td>
+        </tr>
+        <tr>
+          <td>On-Chain Governance Tracker</td>
+          <td>Frontend Dev</td>
+          <td>344</td>
+          <td>$1,500 (10h &times; $150/h)</td>
+          <td class="highlight">Done &#10003;</td>
+        </tr>
+        <tr>
+          <td>Cross-Chain Bridge Monitor</td>
+          <td>Frontend Dev</td>
+          <td>356</td>
+          <td>$1,500 (10h &times; $150/h)</td>
+          <td class="highlight">Done &#10003;</td>
+        </tr>
+        <tr>
+          <td>Perpetual Futures Trading Guide 2026</td>
+          <td>Content Writer</td>
+          <td>204</td>
+          <td>$750 (5h &times; $150/h)</td>
+          <td class="highlight">Done &#10003;</td>
+        </tr>
+        <tr>
+          <td>Tools Index Update (3 new entries)</td>
+          <td>SEO / Growth</td>
+          <td>27</td>
+          <td>$150 (1h &times; $150/h)</td>
+          <td class="highlight">Done &#10003;</td>
+        </tr>
+        <tr style="font-weight:700; border-top: 2px solid var(--border);">
+          <td>TOTAL Sprint 31</td>
+          <td>3 agents</td>
+          <td class="highlight">1,349</td>
+          <td style="color:var(--orange);">$5,700</td>
+          <td class="highlight">5/5 Done</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Sprint History -->
+    <div class="history" style="margin-top:16px;">
+      <div class="history-title">Sprint History (Last 5)</div>
+      <div class="history-row"><span>Sprint 31 (Current)</span><span>1,349 LOC &middot; $5,700 saved</span><span style="color:var(--green);">&#10003; Complete</span></div>
+      <div class="history-row"><span>Sprint 30</span><span>992 LOC &middot; $4,050 saved</span><span style="color:var(--green);">&#10003; Complete</span></div>
+      <div class="history-row"><span>Sprint 29</span><span>~1,200 LOC &middot; $4,800 saved</span><span style="color:var(--green);">&#10003; Complete</span></div>
+      <div class="history-row"><span>Sprint 28</span><span>~1,500 LOC &middot; $6,000 saved</span><span style="color:var(--green);">&#10003; Complete</span></div>
+      <div class="history-row"><span>Sprint 27</span><span>~1,100 LOC &middot; $4,500 saved</span><span style="color:var(--green);">&#10003; Complete</span></div>
+    </div>
+
+    <div style="margin-top:16px; padding:12px; background:var(--surface2); border-radius:8px; font-size:13px;">
+      <strong style="color:var(--cyan);">Cumulative Project Stats:</strong>
+      <span style="color:var(--text2);"> 269,957 total LOC across 1,062 files &middot; 90 interactive tools &middot; 34 learn articles &middot; 106 components &middot; 31 sprints completed &middot; Est. human equiv: ~$185,700+ if built from scratch</span>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

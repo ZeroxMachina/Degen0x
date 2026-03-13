@@ -3,11 +3,38 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "45 Free Crypto Tools — Advanced Charting, Tax Optimizer, Portfolio Analytics & More | degen0x",
+  title: "48 Free Crypto Tools — Advanced Charting, Tax Optimizer, Portfolio Analytics & More | degen0x",
   description: "Free crypto tools including advanced charting (TradingView-style), crypto tax optimizer with loss harvesting, portfolio analytics, crypto alerts dashboard, crypto watchlist, social metrics aggregator, portfolio rebalancer, NFT portfolio tracker, DeFi position manager, airdrop tracker, yield farming calculator, market heatmap, BTC dominance tracker, volatility scanner, liquidation heatmap, funding rate tracker, fear & greed timeline, bridge aggregator, exchange fee comparison, portfolio widget, on-chain analytics, and more.",
 };
 
 const TOOLS = [
+  {
+    href: "/tools/perp-funding",
+    icon: "📈",
+    color: "#6366f1",
+    title: "Perpetual Funding Rates",
+    description: "Track real-time funding rates across 8+ perp exchanges. Find delta-neutral arbitrage opportunities, monitor sentiment heatmaps, and compare annualized yields.",
+    tags: ["8 Exchanges", "Arbitrage Finder", "Heatmap"],
+    badge: "🆕 Sprint 31",
+  },
+  {
+    href: "/tools/governance-tracker",
+    icon: "🏛️",
+    color: "#bc8cff",
+    title: "Governance Tracker",
+    description: "Monitor on-chain governance proposals across DeFi and L2 protocols. Track voting power, quorum progress, and proposal impact in real-time.",
+    tags: ["10 Protocols", "Vote Tracking", "Multi-Chain"],
+    badge: "🆕 Sprint 31",
+  },
+  {
+    href: "/tools/bridge-monitor",
+    icon: "🌉",
+    color: "#f0883e",
+    title: "Cross-Chain Bridge Monitor",
+    description: "Compare bridge protocols by TVL, fees, speed, and security scores. Track live cross-chain transactions and capital flows between 12 networks.",
+    tags: ["10 Bridges", "Security Audit", "Capital Flows"],
+    badge: "🆕 Sprint 31",
+  },
   {
     href: "/tools/staking-rewards",
     icon: "💰",
