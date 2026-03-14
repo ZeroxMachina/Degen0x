@@ -5,7 +5,6 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import nextDynamic from "next/dynamic";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -15,25 +14,8 @@ import { DegenModeProvider } from "@/components/DegenMode";
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/constants";
 import RiskDisclaimer from "@/components/RiskDisclaimer";
 import { AchievementProvider } from "@/components/AchievementSystem";
-
-// Dynamic imports for non-critical UI — reduces initial JS bundle by ~40%
-const ScrollingNewsTicker = nextDynamic(() => import("@/components/ScrollingNewsTicker"), { ssr: false });
-const MarketPulse = nextDynamic(() => import("@/components/MarketPulse"), { ssr: false });
-const ReadingProgress = nextDynamic(() => import("@/components/ReadingProgress"), { ssr: false });
-const BackToTop = nextDynamic(() => import("@/components/BackToTop"), { ssr: false });
-const CookieConsent = nextDynamic(() => import("@/components/CookieConsent"), { ssr: false });
-const ExitIntentPopup = nextDynamic(() => import("@/components/ExitIntentPopup"), { ssr: false });
-const WebVitals = nextDynamic(() => import("@/components/WebVitals"), { ssr: false });
-const AnalyticsProvider = nextDynamic(() => import("@/components/AnalyticsProvider").then(m => ({ default: m.AnalyticsProvider })), { ssr: false });
-const OnboardingFlow = nextDynamic(() => import("@/components/OnboardingFlow"), { ssr: false });
-const MobileBottomNav = nextDynamic(() => import("@/components/MobileBottomNav"), { ssr: false });
-const CommandPalette = nextDynamic(() => import("@/components/CommandPalette"), { ssr: false });
-const KeyboardShortcutHint = nextDynamic(() => import("@/components/KeyboardShortcutHint"), { ssr: false });
-const SocialProofBanner = nextDynamic(() => import("@/components/SocialProofBanner"), { ssr: false });
-const EventTracker = nextDynamic(() => import("@/components/EventTracker"), { ssr: false });
-const AIChatAssistant = nextDynamic(() => import("@/components/AIChatAssistant"), { ssr: false });
-const PerformanceMonitor = nextDynamic(() => import("@/components/PerformanceMonitor"), { ssr: false });
-const XPNotificationSystem = nextDynamic(() => import("@/components/XPNotificationSystem"), { ssr: false });
+// Client-only providers (ssr:false) must live in a 'use client' component
+import ClientProviders from "@/components/ClientProviders";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -161,9 +143,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <DegenModeProvider>
             <ThemeProvider>
               <AchievementProvider>
-                <MarketPulse />
                 <Header />
-                <ScrollingNewsTicker />
                 <main className="min-h-screen">
                   {children}
                   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -171,21 +151,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </div>
                 </main>
                 <Footer />
-                <ReadingProgress />
-                <BackToTop />
-                <CookieConsent />
-                <ExitIntentPopup />
-                <WebVitals />
-                <AnalyticsProvider />
-                <OnboardingFlow />
-                <MobileBottomNav />
-                <CommandPalette />
-                <KeyboardShortcutHint />
-                <SocialProofBanner />
-                <EventTracker />
-                <AIChatAssistant />
-                <PerformanceMonitor />
-                <XPNotificationSystem />
+                <ClientProviders />
               </AchievementProvider>
             </ThemeProvider>
           </DegenModeProvider>
