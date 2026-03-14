@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Outer glow ring -->
+  <defs>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="strokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="xGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle (subtle) -->
+  <circle cx="100" cy="100" r="95" fill="url(#glowGrad)"/>
+
+  <!-- The "0" — thick oval ring -->
+  <ellipse cx="100" cy="100" rx="72" ry="84"
+    stroke="url(#strokeGrad)" stroke-width="14"
+    fill="none" filter="url(#glow)"
+    stroke-linecap="round"/>
+
+  <!-- The "x" inside the 0 -->
+  <!-- Top-left to bottom-right stroke -->
+  <line x1="62" y1="62" x2="138" y2="138"
+    stroke="url(#xGrad)" stroke-width="12"
+    stroke-linecap="round" filter="url(#glow)"/>
+  <!-- Top-right to bottom-left stroke -->
+  <line x1="138" y1="62" x2="62" y2="138"
+    stroke="url(#xGrad)" stroke-width="12"
+    stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Small center dot where x meets -->
+  <circle cx="100" cy="100" r="5" fill="#e0e7ff" filter="url(#softGlow)"/>
+</svg>
