@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import dynamic from "next/dynamic";
+import nextDynamic from "next/dynamic";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -17,23 +17,23 @@ import RiskDisclaimer from "@/components/RiskDisclaimer";
 import { AchievementProvider } from "@/components/AchievementSystem";
 
 // Dynamic imports for non-critical UI — reduces initial JS bundle by ~40%
-const ScrollingNewsTicker = dynamic(() => import("@/components/ScrollingNewsTicker"), { ssr: false });
-const MarketPulse = dynamic(() => import("@/components/MarketPulse"), { ssr: false });
-const ReadingProgress = dynamic(() => import("@/components/ReadingProgress"), { ssr: false });
-const BackToTop = dynamic(() => import("@/components/BackToTop"), { ssr: false });
-const CookieConsent = dynamic(() => import("@/components/CookieConsent"), { ssr: false });
-const ExitIntentPopup = dynamic(() => import("@/components/ExitIntentPopup"), { ssr: false });
-const WebVitals = dynamic(() => import("@/components/WebVitals"), { ssr: false });
-const AnalyticsProvider = dynamic(() => import("@/components/AnalyticsProvider").then(m => ({ default: m.AnalyticsProvider })), { ssr: false });
-const OnboardingFlow = dynamic(() => import("@/components/OnboardingFlow"), { ssr: false });
-const MobileBottomNav = dynamic(() => import("@/components/MobileBottomNav"), { ssr: false });
-const CommandPalette = dynamic(() => import("@/components/CommandPalette"), { ssr: false });
-const KeyboardShortcutHint = dynamic(() => import("@/components/KeyboardShortcutHint"), { ssr: false });
-const SocialProofBanner = dynamic(() => import("@/components/SocialProofBanner"), { ssr: false });
-const EventTracker = dynamic(() => import("@/components/EventTracker"), { ssr: false });
-const AIChatAssistant = dynamic(() => import("@/components/AIChatAssistant"), { ssr: false });
-const PerformanceMonitor = dynamic(() => import("@/components/PerformanceMonitor"), { ssr: false });
-const XPNotificationSystem = dynamic(() => import("@/components/XPNotificationSystem"), { ssr: false });
+const ScrollingNewsTicker = nextDynamic(() => import("@/components/ScrollingNewsTicker"), { ssr: false });
+const MarketPulse = nextDynamic(() => import("@/components/MarketPulse"), { ssr: false });
+const ReadingProgress = nextDynamic(() => import("@/components/ReadingProgress"), { ssr: false });
+const BackToTop = nextDynamic(() => import("@/components/BackToTop"), { ssr: false });
+const CookieConsent = nextDynamic(() => import("@/components/CookieConsent"), { ssr: false });
+const ExitIntentPopup = nextDynamic(() => import("@/components/ExitIntentPopup"), { ssr: false });
+const WebVitals = nextDynamic(() => import("@/components/WebVitals"), { ssr: false });
+const AnalyticsProvider = nextDynamic(() => import("@/components/AnalyticsProvider").then(m => ({ default: m.AnalyticsProvider })), { ssr: false });
+const OnboardingFlow = nextDynamic(() => import("@/components/OnboardingFlow"), { ssr: false });
+const MobileBottomNav = nextDynamic(() => import("@/components/MobileBottomNav"), { ssr: false });
+const CommandPalette = nextDynamic(() => import("@/components/CommandPalette"), { ssr: false });
+const KeyboardShortcutHint = nextDynamic(() => import("@/components/KeyboardShortcutHint"), { ssr: false });
+const SocialProofBanner = nextDynamic(() => import("@/components/SocialProofBanner"), { ssr: false });
+const EventTracker = nextDynamic(() => import("@/components/EventTracker"), { ssr: false });
+const AIChatAssistant = nextDynamic(() => import("@/components/AIChatAssistant"), { ssr: false });
+const PerformanceMonitor = nextDynamic(() => import("@/components/PerformanceMonitor"), { ssr: false });
+const XPNotificationSystem = nextDynamic(() => import("@/components/XPNotificationSystem"), { ssr: false });
 
 const inter = Inter({ subsets: ["latin"] });
 
