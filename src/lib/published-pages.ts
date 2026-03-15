@@ -96,6 +96,9 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/tools/trading-journal",
   "/tools/portfolio-rebalancer",
 
+  // ── Day 2 Bonus — New High-Value Tools (Sprint 39) ─────────────
+  "/tools/portfolio-allocation",
+
   // ── Day 3 — Exchange Reviews (published Mar 12) ────────────────
   "/exchanges/coinbase",
   "/exchanges/binance",
@@ -309,6 +312,25 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/dashboard",
   "/achievements",
   "/newsletter",
+
+  // ── Day 13 — International Pages (published Mar 14) ────────────
+  "/es",
+  "/fr",
+  "/de",
+  "/pt-br",
+  "/ja",
+
+  // ── Day 14 — International Expansion + Learn Guides (published Mar 15) ──
+  "/ko",
+  "/ar",
+  "/tr",
+  "/learn/bitcoin-20-million-supply-milestone",
+  "/learn/tokenomics-protocol-revenue-guide",
+
+  // ── Day 15 — Learn Guides (published Mar 15) ─────────────────
+  "/learn/solana-alpenglow-guide",
+  "/learn/onchain-finance-onfi-guide",
+  "/learn/stablecoin-payments-guide-2026",
 ]);
 
 /**
@@ -316,18 +338,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
  * Move slugs up into PUBLISHED_PAGES each day.
  */
 export const PUBLISH_QUEUE: readonly string[] = [
-  // Day 13+ — International pages
-  "/es",
-  "/fr",
-  "/de",
-  "/pt-br",
-  "/ja",
-  "/ko",
-  "/ar",
-  "/tr",
-
-  // Day 13+ — Remaining compare pages
-  "/compare/wallets",
+  // Queue empty — next batch pending content pipeline
 ];
 
 /**
