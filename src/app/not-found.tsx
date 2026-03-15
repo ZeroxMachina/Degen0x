@@ -1,151 +1,181 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function NotFound() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [mounted, setMounted] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`;
-    }
-  };
+  useEffect(() => {
+    setMounted(true);
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
-  const navigationCards = [
-    { title: 'Tools', href: '/tools', icon: '🛠️' },
-    { title: 'Exchanges', href: '/exchanges', icon: '💱' },
-    { title: 'Wallets', href: '/wallets', icon: '👛' },
-    { title: 'Learn', href: '/learn', icon: '📚' },
-    { title: 'DeFi', href: '/defi-lending', icon: '⚙️' },
-    { title: 'Compare', href: '/compare', icon: '⚖️' },
-  ];
+  if (!mounted) return null;
 
   return (
-    <div className="relative min-h-screen bg-[#0d1117] text-[var(--color-text)] overflow-hidden flex flex-col justify-center items-center px-4 py-16">
-      <style>{`
-        @keyframes gradientShift {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
+    <div style={{ background: 'var(--color-bg)', minHeight: '100vh' }} className="relative overflow-hidden">
+      {/* Animated background gradient following cursor */}
+      <div
+        className="pointer-events-none fixed inset-0 opacity-20 transition-opacity duration-500"
+        style={{
+          background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(99, 102, 241, 0.1), transparent 80%)`,
+        }}
+      />
 
-        @keyframes float {
-          0%, 100% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-20px) rotate(5deg); }
-        }
-
-        @keyframes pulse-glow {
-          0%, 100% { opacity: 0.5; }
-          50% { opacity: 1; }
-        }
-
-        @keyframes crash {
-          0% { transform: translateY(-100px); opacity: 0; }
-          50% { opacity: 1; }
-          100% { transform: translateY(0); opacity: 0.3; }
-        }
-
-        .gradient-404 {
-          font-size: clamp(120px, 25vw, 320px);
-          font-weight: 900;
-          background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #ff6b6b);
-          background-size: 300% 300%;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          animation: gradientShift 4s ease infinite;
-          text-shadow: 0 0 60px rgba(255, 107, 107, 0.3);
-          line-height: 1;
-          margin: 0;
-        }
-
-        .floating-btc {
-          animation: float 3s ease-in-out infinite;
-          font-size: 80px;
-          opacity: 0.7;
-        }
-
-        .chart-crash {
-          animation: crash 3s ease-in-out infinite;
-          font-size: 60px;
-        }
-
-        .glow-text {
-          text-shadow: 0 0 20px rgba(72, 219, 251, 0.6);
-        }
-      `}
-      </style>
-
-      {/* Animated Background Elements */}
-      <div className="absolute top-20 right-10 floating-btc">₿</div>
-      <div className="absolute bottom-32 left-10 chart-crash">📉</div>
-
-      {/* Main Content */}
-      <div className="relative z-10 text-center max-w-2xl">
-        {/* Animated 404 */}
-        <h1 className="gradient-404 mb-8">404</h1>
-
-        {/* Crypto-themed Message */}
-        <h2 className="text-4xl sm:text-5xl font-bold mb-4 glow-text">
-          This Page Got Liquidated
-        </h2>
-        <p className="text-xl sm:text-2xl text-gray-400 mb-12">
-          Looks like your position went to zero. Let's get you back on track.
-        </p>
-
-        {/* Search Bar */}
-        <form onSubmit={handleSearch} className="mb-16">
-          <div className="flex gap-2 max-w-md mx-auto">
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search for tools, wallets, exchanges..."
-              className="flex-1 px-5 py-3 rounded-lg bg-[#1a1f2e] border border-[#30363d] text-[var(--color-text)] placeholder-gray-500 focus:outline-none focus:border-[#48dbfb] focus:ring-2 focus:ring-[#48dbfb]/20 transition"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 bg-gradient-to-r from-[#ff6b6b] to-[#feca57] text-black font-bold rounded-lg hover:shadow-lg hover:shadow-[#ff6b6b]/50 transition transform hover:scale-105"
-            >
-              Search
-            </button>
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+        <div className="max-w-md w-full text-center space-y-8 animate-fade-in">
+          {/* 404 Symbol */}
+          <div className="space-y-4">
+            <div className="text-9xl sm:text-[120px] font-bold bg-gradient-to-r from-[#6366f1] via-[#06b6d4] to-[#a855f7] bg-clip-text text-transparent animate-bounce">
+              404
+            </div>
+            <div className="text-2xl sm:text-3xl font-bold text-white animate-pulse">
+              Position Not Found
+            </div>
           </div>
-        </form>
 
-        {/* Navigation Cards */}
-        <div className="mb-12">
-          <p className="text-gray-400 mb-6 text-sm uppercase tracking-widest">Quick Navigation</p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {navigationCards.map((card) => (
+          {/* Crypto-themed message */}
+          <div className="space-y-3">
+            <p className="text-gray-400 text-lg">
+              Looks like you've ventured into a wallet that doesn't exist. This page has been <span className="text-[#ef4444]">liquidated</span>.
+            </p>
+            <p className="text-sm text-gray-500 font-mono bg-[#0a0e1a]/50 rounded-lg p-3 border border-[#6366f1]/20">
+              404 • LP Token Vanished • Slippage Detected
+            </p>
+          </div>
+
+          {/* Search suggestion */}
+          <div className="space-y-3 pt-4">
+            <p className="text-gray-400 text-sm">Try these popular destinations instead:</p>
+            <div className="grid grid-cols-2 gap-3">
               <Link
-                key={card.href}
-                href={card.href}
-                className="group relative px-6 py-8 rounded-lg bg-[#1a1f2e] border border-[#30363d] hover:border-[#48dbfb] transition duration-300 hover:shadow-lg hover:shadow-[#48dbfb]/20"
+                href="/tools"
+                className="group relative overflow-hidden rounded-lg border border-[#6366f1]/30 bg-[#6366f1]/5 p-3 text-sm font-medium text-white transition-all hover:bg-[#6366f1]/15 hover:border-[#6366f1]/60"
               >
-                <div className="text-3xl mb-2">{card.icon}</div>
-                <div className="text-sm font-semibold group-hover:text-[#48dbfb] transition">
-                  {card.title}
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-transparent opacity-0 group-hover:opacity-20 transition-opacity" />
+                <span className="relative">Tools</span>
               </Link>
-            ))}
+              <Link
+                href="/exchanges"
+                className="group relative overflow-hidden rounded-lg border border-[#06b6d4]/30 bg-[#06b6d4]/5 p-3 text-sm font-medium text-white transition-all hover:bg-[#06b6d4]/15 hover:border-[#06b6d4]/60"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-[#06b6d4] to-transparent opacity-0 group-hover:opacity-20 transition-opacity" />
+                <span className="relative">Exchanges</span>
+              </Link>
+              <Link
+                href="/wallets"
+                className="group relative overflow-hidden rounded-lg border border-[#a855f7]/30 bg-[#a855f7]/5 p-3 text-sm font-medium text-white transition-all hover:bg-[#a855f7]/15 hover:border-[#a855f7]/60"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-[#a855f7] to-transparent opacity-0 group-hover:opacity-20 transition-opacity" />
+                <span className="relative">Wallets</span>
+              </Link>
+              <Link
+                href="/learn"
+                className="group relative overflow-hidden rounded-lg border border-[#f59e0b]/30 bg-[#f59e0b]/5 p-3 text-sm font-medium text-white transition-all hover:bg-[#f59e0b]/15 hover:border-[#f59e0b]/60"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-[#f59e0b] to-transparent opacity-0 group-hover:opacity-20 transition-opacity" />
+                <span className="relative">Learn</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* Main CTA */}
+          <div className="space-y-3 pt-2">
+            <Link
+              href="/"
+              className="group relative inline-flex items-center justify-center w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#06b6d4] text-white font-semibold transition-all hover:shadow-lg hover:shadow-[#6366f1]/30 hover:-translate-y-1 active:translate-y-0"
+            >
+              <span className="relative flex items-center gap-2">
+                <span>Return to Home</span>
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </span>
+            </Link>
+          </div>
+
+          {/* Footer message */}
+          <div className="pt-4 border-t border-[#6366f1]/20">
+            <p className="text-xs text-gray-500">
+              Lost your way? Try our{' '}
+              <Link href="/search" className="text-[#6366f1] hover:underline">
+                search
+              </Link>
+              {' '}to find what you're looking for.
+            </p>
           </div>
         </div>
 
-        {/* Back to Homepage Button */}
-        <Link
-          href="/"
-          className="inline-block px-8 py-4 bg-gradient-to-r from-[#48dbfb] to-[#1dd1a1] text-black font-bold text-lg rounded-lg hover:shadow-2xl hover:shadow-[#48dbfb]/40 transition transform hover:scale-105 mb-6"
-        >
-          Return to Homepage
-        </Link>
-
-        {/* Fun Fact */}
-        <p className="text-gray-600 text-sm mt-8">
-          Fun fact: Even DeFi protocols have 404s. This page just went full rug pull.
-        </p>
+        {/* Floating crypto symbols */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-10 left-10 text-4xl opacity-5 animate-float">₿</div>
+          <div className="absolute top-40 right-20 text-5xl opacity-5 animate-float-delayed">Ξ</div>
+          <div className="absolute bottom-40 left-20 text-3xl opacity-5 animate-float">◆</div>
+          <div className="absolute bottom-10 right-10 text-4xl opacity-5 animate-float-delayed">∞</div>
+        </div>
       </div>
+
+      {/* Animations */}
+      <style>{`
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+
+        @keyframes float-delayed {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(20px);
+          }
+        }
+
+        .animate-fade-in {
+          animation: fade-in 0.8s ease-out;
+        }
+
+        .animate-float {
+          animation: float 4s ease-in-out infinite;
+        }
+
+        .animate-float-delayed {
+          animation: float-delayed 5s ease-in-out infinite;
+        }
+
+        .animate-bounce {
+          animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+      `}</style>
     </div>
   );
 }

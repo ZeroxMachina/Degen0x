@@ -4,6 +4,15 @@
 
 import { useState, useEffect, useRef, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import {
+  DrawingToolbar,
+  PatternPanel,
+  PriceAlertPanel,
+  FibRetracementLegend,
+  detectPatterns,
+  useChartExport,
+  type DrawingTool,
+} from "@/components/ChartDrawingTools";
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface OHLCV {
@@ -253,6 +262,11 @@ export default function AdvancedChartingPage() {
   const canvasRef = useRef<HTMLDivElement>(null);
   const [crosshair, setCrosshair] = useState({ x: 0, y: 0, visible: false });
   const [selectedCandle, setSelectedCandle] = useState<number | null>(null);
+  // Sprint 45: Drawing tools + sidebar panels
+  const [activeTool, setActiveTool] = useState<DrawingTool>('none');
+  const [showAlerts, setShowAlerts] = useState(false);
+  const [showFib, setShowFib] = useState(false);
+  const chartCanvasRef = useRef<HTMLCanvasElement>(null);
 
   // Generate OHLCV data based on pair
   const ohlcvData = useMemo(() => {
@@ -1242,28 +1256,111 @@ export default function AdvancedChartingPage() {
         </div>
       </div>
 
-      {/* Chart Area */}
-      <div
-        ref={canvasRef}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          display: "flex",
-          gap: "12px",
-          marginBottom: "20px",
-          backgroundColor: COLORS.bg,
-          borderRadius: "8px",
-          overflow: "hidden",
-        }}
-      >
-        <div style={{ flex: 3 }}>
-          <ChartCanvas />
-        </div>
+      {/* Chart Area — Sprint 45: Drawing toolbar added on left */}
+      <div style={{ display: "flex", gap: "12px", marginBottom: "20px" }}>
+        {/* Drawing toolbar */}
+        <DrawingToolbar
+          activeTool={activeTool}
+          onSelect={setActiveTool}
+          onClear={() => setState({ ...state, drawingTools: [] })}
+          onExport={() => {
+            // Export via canvas if available
+            const canvas = document.querySelector('canvas') as HTMLCanvasElement | null;
+            if (canvas) {
+              const a = document.createElement('a');
+              a.href = canvas.toDataURL('image/png');
+              a.download = `degen0x-${state.pair.replace('/', '-')}-${new Date().toISOString().slice(0, 10)}.png`;
+              a.click();
+            }
+          }}
+        />
 
-        <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
-          <OrderBook />
+        <div
+          ref={canvasRef}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+          style={{
+            flex: 1,
+            display: "flex",
+            gap: "12px",
+            backgroundColor: COLORS.bg,
+            borderRadius: "8px",
+            overflow: "hidden",
+            cursor: activeTool !== 'none' ? 'crosshair' : 'default',
+          }}
+        >
+          <div style={{ flex: 3 }}>
+            <ChartCanvas />
+          </div>
+          <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+            <OrderBook />
+          </div>
         </div>
       </div>
+
+      {/* Sprint 45: Tool panels row */}
+      <div style={{ display: "flex", gap: "12px", marginBottom: "20px", flexWrap: "wrap" }}>
+        <button
+          onClick={() => setShowAlerts((v) => !v)}
+          style={{
+            background: showAlerts ? '#58a6ff18' : '#161b22',
+            border: `1px solid ${showAlerts ? '#58a6ff60' : '#30363d'}`,
+            borderRadius: '8px',
+            color: showAlerts ? '#58a6ff' : '#8b949e',
+            padding: '6px 14px',
+            fontSize: '12px',
+            fontWeight: 600,
+            cursor: 'pointer',
+          }}
+        >
+          🔔 Price Alerts
+        </button>
+        <button
+          onClick={() => setShowFib((v) => !v)}
+          style={{
+            background: showFib ? '#bc8cff18' : '#161b22',
+            border: `1px solid ${showFib ? '#bc8cff60' : '#30363d'}`,
+            borderRadius: '8px',
+            color: showFib ? '#bc8cff' : '#8b949e',
+            padding: '6px 14px',
+            fontSize: '12px',
+            fontWeight: 600,
+            cursor: 'pointer',
+          }}
+        >
+          🌀 Fibonacci
+        </button>
+        {activeTool !== 'none' && (
+          <span style={{ fontSize: '12px', color: '#8b949e', alignSelf: 'center', padding: '0 4px' }}>
+            Active tool: <strong style={{ color: '#58a6ff' }}>{activeTool}</strong> — click chart to draw
+          </span>
+        )}
+      </div>
+
+      {/* Alert + Fib panels */}
+      {(showAlerts || showFib) && (
+        <div style={{ display: "flex", gap: "12px", marginBottom: "20px", flexWrap: "wrap" }}>
+          {showAlerts && (
+            <div style={{ flex: 1, minWidth: '280px' }}>
+              <PriceAlertPanel
+                currentPair={state.pair}
+                currentPrice={ohlcvData[ohlcvData.length - 1]?.close ?? 0}
+              />
+            </div>
+          )}
+          {showFib && (
+            <div style={{ flex: 1, minWidth: '280px' }}>
+              <FibRetracementLegend
+                high={Math.max(...ohlcvData.slice(-30).map((d) => d.high))}
+                low={Math.min(...ohlcvData.slice(-30).map((d) => d.low))}
+              />
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Sprint 45: Pattern detection */}
+      <PatternPanel patterns={detectPatterns(ohlcvData.map((d) => d.close))} />
 
       {/* Sub-indicators */}
       <div

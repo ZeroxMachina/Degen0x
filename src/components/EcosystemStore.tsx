@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import Link from "next/link";
 import {
   DAPPS,
@@ -352,6 +352,7 @@ function Toggle({ on, onChange, color = "#22c55e" }: { on: boolean; onChange: ()
 export default function EcosystemStore() {
   const [ecosystem, setEcosystem] = useState<EcosystemKey>("all");
   const [search, setSearch] = useState("");
+  const [searchInput, setSearchInput] = useState("");
   const [selectedChain, setSelectedChain] = useState<Chain | "all">("all");
   const [selectedCategory, setSelectedCategory] = useState<Category | "all">("all");
   const [selectedLevel, setSelectedLevel] = useState<UserLevel>("all");
@@ -360,6 +361,12 @@ export default function EcosystemStore() {
   const [openSourceOnly, setOpenSourceOnly] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const [viewMode, setViewMode] = useState<"browse" | "grid">("browse");
+
+  // Debounce search input (300ms)
+  useEffect(() => {
+    const timer = setTimeout(() => setSearch(searchInput), 300);
+    return () => clearTimeout(timer);
+  }, [searchInput]);
 
   const isFiltering = search !== "" || selectedChain !== "all" || selectedCategory !== "all" || selectedLevel !== "all" || auditedOnly || openSourceOnly;
 
@@ -422,6 +429,7 @@ export default function EcosystemStore() {
     setAuditedOnly(false);
     setOpenSourceOnly(false);
     setSearch("");
+    setSearchInput("");
   };
 
   return (
@@ -502,13 +510,14 @@ export default function EcosystemStore() {
                 </svg>
               </span>
               <input
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
                 placeholder={`Search ${ecosystemDApps.length} dApps…`}
-                className="w-full bg-[#111113] border border-[#1e1e21] rounded-xl pl-10 pr-9 py-2.5 text-sm text-white placeholder-[#636366] outline-none focus:border-[#6366f1] transition-colors"
+                aria-label="Search dApps"
+                className="w-full bg-[#111113] border border-[#1e1e21] rounded-xl pl-10 pr-9 py-2.5 text-sm text-white placeholder-[#636366] outline-none focus:border-[#6366f1] focus:ring-2 focus:ring-[#6366f1]/30 transition-colors"
               />
-              {search && (
-                <button onClick={() => setSearch("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-[#636366] hover:text-white text-lg leading-none">×</button>
+              {searchInput && (
+                <button onClick={() => { setSearchInput(""); setSearch(""); }} aria-label="Clear search" className="absolute right-3 top-1/2 -translate-y-1/2 text-[#636366] hover:text-white text-lg leading-none">×</button>
               )}
             </div>
 
@@ -516,7 +525,8 @@ export default function EcosystemStore() {
             <select
               value={sortKey}
               onChange={(e) => setSortKey(e.target.value as SortKey)}
-              className="bg-[#111113] border border-[#1e1e21] rounded-xl px-3 py-2.5 text-sm text-white outline-none cursor-pointer focus:border-[#6366f1]"
+              aria-label="Sort dApps by"
+              className="bg-[#111113] border border-[#1e1e21] rounded-xl px-3 py-2.5 text-sm text-white outline-none cursor-pointer focus:border-[#6366f1] focus:ring-2 focus:ring-[#6366f1]/30"
             >
               <option value="rating">⭐ Top Rated</option>
               <option value="tvl">💰 Highest TVL</option>
@@ -545,6 +555,8 @@ export default function EcosystemStore() {
             {/* Filters toggle */}
             <button
               onClick={() => setShowFilters((f) => !f)}
+              aria-label={showFilters ? "Hide filters" : "Show filters"}
+              aria-expanded={showFilters}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold border transition-all ${
                 showFilters || activeFilterCount > 0
                   ? "bg-[#6366f1] text-white border-[#6366f1]"
@@ -678,10 +690,17 @@ export default function EcosystemStore() {
 
         {/* ── CONTENT AREA ────────────────────────────────────────────────────── */}
         {filteredDApps.length === 0 ? (
-          <div className="flex flex-col items-center justify-center py-20 text-center">
+          <div className="flex flex-col items-center justify-center py-20 text-center" role="status" aria-live="polite">
             <div className="text-5xl mb-4">🔍</div>
             <h3 className="text-lg font-bold text-white mb-2">No dApps found</h3>
-            <p className="text-[#8e8e93] mb-4">Try adjusting your filters or search</p>
+            <p className="text-[#8e8e93] mb-2">Try adjusting your filters or search</p>
+            {(search || activeFilterCount > 0) && (
+              <p className="text-xs text-[#636366] mb-4">
+                {search && <span>Search: &ldquo;{search}&rdquo;</span>}
+                {search && activeFilterCount > 0 && <span> · </span>}
+                {activeFilterCount > 0 && <span>{activeFilterCount} filter{activeFilterCount > 1 ? "s" : ""} active</span>}
+              </p>
+            )}
             <button
               onClick={clearAll}
               className="px-4 py-2 rounded-xl bg-[#6366f1] text-white text-sm font-semibold hover:bg-[#4f46e5] transition-colors"

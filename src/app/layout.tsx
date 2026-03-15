@@ -16,6 +16,7 @@ import RiskDisclaimer from "@/components/RiskDisclaimer";
 import { AchievementProvider } from "@/components/AchievementSystem";
 // Client-only providers (ssr:false) must live in a 'use client' component
 import ClientProviders from "@/components/ClientProviders";
+import LivePriceBanner from "@/components/LivePriceBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -143,6 +144,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <DegenModeProvider>
             <ThemeProvider>
               <AchievementProvider>
+                <LivePriceBanner />
                 <Header />
                 <main className="min-h-screen">
                   {children}

@@ -331,6 +331,22 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/learn/solana-alpenglow-guide",
   "/learn/onchain-finance-onfi-guide",
   "/learn/stablecoin-payments-guide-2026",
+
+  // ── Day 16 — DeFi & Emerging Tech Guides (published Mar 15) ──
+  "/learn/pendle-finance-guide",
+  "/learn/quantum-resistant-crypto-guide",
+  "/learn/best-perpetual-dex-guide",
+
+  // ── Day 17 — Crypto Loans Hub + High-Value Best-Of Pages (published Mar 15) ──
+  "/crypto-loans",
+  "/crypto-loans/best",
+  "/exchanges/best/us",
+  "/wallets/best/hardware",
+  "/investing/crypto/bitcoin",
+
+  // ── Day 18 — Learn Guides: Tax & Pectra Upgrade (published Mar 16) ──
+  "/learn/crypto-tax-guide-2026",
+  "/learn/ethereum-pectra-upgrade-guide",
 ]);
 
 /**
@@ -338,7 +354,9 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
  * Move slugs up into PUBLISHED_PAGES each day.
  */
 export const PUBLISH_QUEUE: readonly string[] = [
-  // Queue empty — next batch pending content pipeline
+  // ── Day 19 — New Learn Guides (build cycle 2026-03-15) ──────────
+  "/learn/sonic-blockchain-guide",
+  "/learn/ethena-usde-guide",
 ];
 
 /**
