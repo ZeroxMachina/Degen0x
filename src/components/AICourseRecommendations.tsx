@@ -93,7 +93,7 @@ export default function AICourseRecommendations({
         {
           emoji: '💱',
           title: 'How to Use DEXes Like a Pro',
-          reason: 'Your Uniswap activity shows you're ready for advanced trading',
+          reason: "Your Uniswap activity shows you're ready for advanced trading",
           xpReward: 300,
           difficulty: 'Intermediate',
           estimatedTime: '2.5-3 hours',
@@ -123,7 +123,7 @@ export default function AICourseRecommendations({
         },
         {
           emoji: '🔗',
-          title: 'What is DeFi? A Beginner's Guide',
+          title: "What is DeFi? A Beginner's Guide",
           reason: 'Understand decentralized finance from the ground up',
           xpReward: 140,
           difficulty: 'Beginner',
