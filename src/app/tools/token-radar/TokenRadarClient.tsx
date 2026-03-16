@@ -1,245 +1,792 @@
-"use client";
+'use client';
 
-import { useState, useMemo } from "react";
+import { useState, useMemo } from 'react';
+import {
+  Rocket,
+  TrendingUp,
+  Clock,
+  Shield,
+  AlertTriangle,
+  Search,
+  Filter,
+  Star,
+  ExternalLink,
+  Users,
+  BarChart3,
+  Zap,
+} from 'lucide-react';
 
-interface TokenLaunch {
+interface Token {
   id: string;
   name: string;
   ticker: string;
-  chain: string;
+  chain: 'Ethereum' | 'Solana' | 'Base' | 'Arbitrum' | 'BNB';
   launchDate: Date;
-  status: "upcoming" | "live" | "launched" | "ended";
-  category: string;
-  raiseTarget: number;
-  raiseCompleted: number;
-  platform: string;
-  socialScore: number;
-  riskLevel: "low" | "medium" | "high" | "extreme";
-  hasAudit: boolean;
-  teamDoxxed: boolean;
+  category: 'DeFi' | 'GameFi' | 'AI' | 'Meme' | 'Infrastructure' | 'RWA';
+  initialMarketCap: number;
+  currentPriceChange: number;
+  socialFollowers: number;
+  auditStatus: 'verified' | 'unverified';
+  riskScore: number;
   description: string;
-  tags: string[];
 }
 
-const RISK_COLORS: Record<string, { bg: string; text: string }> = {
-  low: { bg: "#3fb95020", text: "#3fb950" },
-  medium: { bg: "#d2992220", text: "#d29922" },
-  high: { bg: "#f0883e20", text: "#f0883e" },
-  extreme: { bg: "#f8514920", text: "#f85149" },
-};
+const mockTokens: Token[] = [
+  {
+    id: '1',
+    name: 'QuantumFlow',
+    ticker: 'QF',
+    chain: 'Ethereum',
+    launchDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000),
+    category: 'AI',
+    initialMarketCap: 5000000,
+    currentPriceChange: 0,
+    socialFollowers: 45000,
+    auditStatus: 'verified',
+    riskScore: 2,
+    description: 'AI-powered trading assistant',
+  },
+  {
+    id: '2',
+    name: 'LunaGames',
+    ticker: 'LG',
+    chain: 'Solana',
+    launchDate: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000),
+    category: 'GameFi',
+    initialMarketCap: 3500000,
+    currentPriceChange: 0,
+    socialFollowers: 32000,
+    auditStatus: 'verified',
+    riskScore: 3,
+    description: 'Web3 gaming platform',
+  },
+  {
+    id: '3',
+    name: 'DefiMax',
+    ticker: 'DMX',
+    chain: 'Arbitrum',
+    launchDate: new Date(Date.now() - 8 * 60 * 60 * 1000),
+    category: 'DeFi',
+    initialMarketCap: 8000000,
+    currentPriceChange: 24.5,
+    socialFollowers: 67000,
+    auditStatus: 'verified',
+    riskScore: 2,
+    description: 'Advanced yield farming protocol',
+  },
+  {
+    id: '4',
+    name: 'MemeRocket',
+    ticker: 'MRKT',
+    chain: 'Base',
+    launchDate: new Date(Date.now() - 4 * 60 * 60 * 1000),
+    category: 'Meme',
+    initialMarketCap: 1200000,
+    currentPriceChange: 156.3,
+    socialFollowers: 89000,
+    auditStatus: 'unverified',
+    riskScore: 8,
+    description: 'Community-driven meme token',
+  },
+  {
+    id: '5',
+    name: 'ChainSync',
+    ticker: 'SYNC',
+    chain: 'Solana',
+    launchDate: new Date(Date.now() - 18 * 60 * 60 * 1000),
+    category: 'Infrastructure',
+    initialMarketCap: 6000000,
+    currentPriceChange: 18.2,
+    socialFollowers: 52000,
+    auditStatus: 'verified',
+    riskScore: 3,
+    description: 'Cross-chain bridge protocol',
+  },
+  {
+    id: '6',
+    name: 'RealEstate.io',
+    ticker: 'REAL',
+    chain: 'Ethereum',
+    launchDate: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000),
+    category: 'RWA',
+    initialMarketCap: 12000000,
+    currentPriceChange: 8.5,
+    socialFollowers: 41000,
+    auditStatus: 'verified',
+    riskScore: 2,
+    description: 'Tokenized real estate',
+  },
+  {
+    id: '7',
+    name: 'NeuralNet',
+    ticker: 'NNAI',
+    chain: 'Base',
+    launchDate: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
+    category: 'AI',
+    initialMarketCap: 7500000,
+    currentPriceChange: 0,
+    socialFollowers: 38000,
+    auditStatus: 'verified',
+    riskScore: 3,
+    description: 'Decentralized AI compute network',
+  },
+  {
+    id: '8',
+    name: 'DuckPond',
+    ticker: 'DUCK',
+    chain: 'Solana',
+    launchDate: new Date(Date.now() - 6 * 60 * 60 * 1000),
+    category: 'Meme',
+    initialMarketCap: 800000,
+    currentPriceChange: 234.7,
+    socialFollowers: 123000,
+    auditStatus: 'unverified',
+    riskScore: 9,
+    description: 'The friendliest meme on Solana',
+  },
+  {
+    id: '9',
+    name: 'VaultPro',
+    ticker: 'VAULT',
+    chain: 'Arbitrum',
+    launchDate: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000),
+    category: 'DeFi',
+    initialMarketCap: 4500000,
+    currentPriceChange: 0,
+    socialFollowers: 29000,
+    auditStatus: 'verified',
+    riskScore: 2,
+    description: 'Non-custodial asset vault',
+  },
+  {
+    id: '10',
+    name: 'MetaWorld',
+    ticker: 'MWLD',
+    chain: 'BNB',
+    launchDate: new Date(Date.now() - 12 * 60 * 60 * 1000),
+    category: 'GameFi',
+    initialMarketCap: 5500000,
+    currentPriceChange: 42.1,
+    socialFollowers: 76000,
+    auditStatus: 'verified',
+    riskScore: 4,
+    description: 'Immersive metaverse experience',
+  },
+  {
+    id: '11',
+    name: 'DataChain',
+    ticker: 'DATA',
+    chain: 'Ethereum',
+    launchDate: new Date(Date.now() + 4 * 24 * 60 * 60 * 1000),
+    category: 'Infrastructure',
+    initialMarketCap: 9000000,
+    currentPriceChange: 0,
+    socialFollowers: 58000,
+    auditStatus: 'verified',
+    riskScore: 2,
+    description: 'Decentralized data marketplace',
+  },
+  {
+    id: '12',
+    name: 'GoldToken',
+    ticker: 'GOLD',
+    chain: 'Base',
+    launchDate: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000),
+    category: 'RWA',
+    initialMarketCap: 15000000,
+    currentPriceChange: 3.2,
+    socialFollowers: 35000,
+    auditStatus: 'verified',
+    riskScore: 1,
+    description: 'Gold-backed digital asset',
+  },
+  {
+    id: '13',
+    name: 'DogeMoon',
+    ticker: 'DOGE2',
+    chain: 'Solana',
+    launchDate: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
+    category: 'Meme',
+    initialMarketCap: 950000,
+    currentPriceChange: 189.4,
+    socialFollowers: 105000,
+    auditStatus: 'unverified',
+    riskScore: 7,
+    description: 'Legendary meme reborn',
+  },
+  {
+    id: '14',
+    name: 'SwapLab',
+    ticker: 'SWAP',
+    chain: 'Arbitrum',
+    launchDate: new Date(Date.now() + 6 * 24 * 60 * 60 * 1000),
+    category: 'DeFi',
+    initialMarketCap: 3800000,
+    currentPriceChange: 0,
+    socialFollowers: 44000,
+    auditStatus: 'verified',
+    riskScore: 2,
+    description: 'Advanced DEX platform',
+  },
+  {
+    id: '15',
+    name: 'CyberPunk',
+    ticker: 'CYBER',
+    chain: 'BNB',
+    launchDate: new Date(Date.now() - 10 * 60 * 60 * 1000),
+    category: 'Meme',
+    initialMarketCap: 1100000,
+    currentPriceChange: 312.8,
+    socialFollowers: 94000,
+    auditStatus: 'unverified',
+    riskScore: 8,
+    description: 'Cyberpunk-themed community token',
+  },
+  {
+    id: '16',
+    name: 'BrainChip',
+    ticker: 'BRAIN',
+    chain: 'Ethereum',
+    launchDate: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000),
+    category: 'AI',
+    initialMarketCap: 6500000,
+    currentPriceChange: 31.5,
+    socialFollowers: 48000,
+    auditStatus: 'verified',
+    riskScore: 3,
+    description: 'Neural network infrastructure',
+  },
+  {
+    id: '17',
+    name: 'LiquidGold',
+    ticker: 'LGD',
+    chain: 'Base',
+    launchDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000),
+    category: 'RWA',
+    initialMarketCap: 10500000,
+    currentPriceChange: 0,
+    socialFollowers: 32000,
+    auditStatus: 'verified',
+    riskScore: 2,
+    description: 'Liquid precious metals token',
+  },
+  {
+    id: '18',
+    name: 'QuestNFT',
+    ticker: 'QNFT',
+    chain: 'Solana',
+    launchDate: new Date(Date.now() - 20 * 60 * 60 * 1000),
+    category: 'GameFi',
+    initialMarketCap: 4200000,
+    currentPriceChange: 67.3,
+    socialFollowers: 61000,
+    auditStatus: 'verified',
+    riskScore: 4,
+    description: 'Quest-based gaming NFT platform',
+  },
+  {
+    id: '19',
+    name: 'ByteFlow',
+    ticker: 'BYTE',
+    chain: 'Arbitrum',
+    launchDate: new Date(Date.now() - 14 * 60 * 60 * 1000),
+    category: 'Infrastructure',
+    initialMarketCap: 5200000,
+    currentPriceChange: 22.1,
+    socialFollowers: 39000,
+    auditStatus: 'verified',
+    riskScore: 3,
+    description: 'Data streaming protocol',
+  },
+  {
+    id: '20',
+    name: 'PizzaSlice',
+    ticker: 'PIZZA',
+    chain: 'BNB',
+    launchDate: new Date(Date.now() - 7 * 60 * 60 * 1000),
+    category: 'Meme',
+    initialMarketCap: 650000,
+    currentPriceChange: 445.2,
+    socialFollowers: 112000,
+    auditStatus: 'unverified',
+    riskScore: 9,
+    description: 'The most delicious meme token',
+  },
+  {
+    id: '21',
+    name: 'ProtocolX',
+    ticker: 'PTX',
+    chain: 'Ethereum',
+    launchDate: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
+    category: 'DeFi',
+    initialMarketCap: 11000000,
+    currentPriceChange: 15.7,
+    socialFollowers: 72000,
+    auditStatus: 'verified',
+    riskScore: 2,
+    description: 'Enterprise DeFi protocol',
+  },
+];
 
-const STATUS_STYLES: Record<string, { bg: string; text: string; label: string }> = {
-  upcoming: { bg: "#58a6ff20", text: "#58a6ff", label: "Upcoming" },
-  live: { bg: "#3fb95020", text: "#3fb950", label: "LIVE NOW" },
-  launched: { bg: "#bc8cff20", text: "#bc8cff", label: "Launched" },
-  ended: { bg: "#8b949e20", text: "#8b949e", label: "Ended" },
-};
-
-function generateTokenLaunches(): TokenLaunch[] {
-  const names = [
-    { name: "NeuralSwap", ticker: "NSWAP", category: "AI/DeFi", desc: "AI-powered DEX aggregator with predictive routing and MEV protection", tags: ["AI", "DEX", "MEV Protection"] },
-    { name: "QuantumVault", ticker: "QVLT", category: "Security", desc: "Post-quantum cryptography wallet with multi-party computation", tags: ["Security", "Quantum", "MPC"] },
-    { name: "YieldForge", ticker: "YFRG", category: "DeFi", desc: "Cross-chain yield optimizer with auto-compounding strategies across 8 chains", tags: ["DeFi", "Yield", "Cross-chain"] },
-    { name: "MetaRealms", ticker: "REALM", category: "GameFi", desc: "Open-world crypto RPG with play-to-earn mechanics and NFT land ownership", tags: ["GameFi", "NFT", "Metaverse"] },
-    { name: "DataLayer", ticker: "DLAY", category: "Infrastructure", desc: "Decentralized data availability layer for rollups with erasure coding", tags: ["Infrastructure", "DA", "Rollups"] },
-    { name: "SocialFi Pro", ticker: "SFPRO", category: "SocialFi", desc: "Decentralized social media protocol with token-gated communities", tags: ["SocialFi", "Social", "Token-gated"] },
-    { name: "ChainOracle", ticker: "CORC", category: "Oracle", desc: "Next-gen oracle network with ZK-proof verified data feeds and <100ms latency", tags: ["Oracle", "ZK", "Data"] },
-    { name: "LiquidStake", ticker: "LSTK", category: "Staking", desc: "Multi-chain liquid staking with instant unbonding via flash loans", tags: ["Staking", "Liquid", "Flash Loans"] },
-    { name: "PrivacyMesh", ticker: "PMSH", category: "Privacy", desc: "Privacy-preserving DeFi using FHE (fully homomorphic encryption)", tags: ["Privacy", "FHE", "DeFi"] },
-    { name: "BridgeX", ticker: "BRDX", category: "Bridge", desc: "Intent-based cross-chain bridge with guaranteed execution and insurance", tags: ["Bridge", "Intents", "Insurance"] },
-    { name: "DegenAI", ticker: "DGEN", category: "AI/Meme", desc: "AI agent that trades memecoins on behalf of holders with profit sharing", tags: ["AI", "Meme", "Trading Bot"] },
-    { name: "RealYield", ticker: "RYLD", category: "RWA", desc: "Tokenized US Treasury + corporate bond yields on-chain with daily distributions", tags: ["RWA", "Bonds", "Yield"] },
-  ];
-
-  const chains = ["Ethereum", "Solana", "Base", "Arbitrum", "BNB Chain", "Avalanche", "Polygon"];
-  const platforms = ["Fjord Foundry", "Pinksale", "Camelot", "DAO Maker", "Seedify", "Jupiter LFG", "Raydium AcceleRaytor"];
-  const statuses: TokenLaunch["status"][] = ["upcoming", "live", "launched", "ended"];
-  const risks: TokenLaunch["riskLevel"][] = ["low", "medium", "high", "extreme"];
-
-  return names.map((item, i) => {
-    const launchDate = new Date(Date.now() + (i - 4) * 86400000 * 3);
-    const status = i < 3 ? "upcoming" : i < 5 ? "live" : i < 9 ? "launched" : "ended";
-    const target = Math.floor(Math.random() * 5000000) + 500000;
-    return {
-      id: `launch-${i}`,
-      name: item.name,
-      ticker: item.ticker,
-      chain: chains[i % chains.length],
-      launchDate,
-      status,
-      category: item.category,
-      raiseTarget: target,
-      raiseCompleted: status === "upcoming" ? 0 : Math.floor(target * (0.3 + Math.random() * 0.7)),
-      platform: platforms[i % platforms.length],
-      socialScore: Math.floor(Math.random() * 60) + 40,
-      riskLevel: risks[Math.min(i % 4, 3)],
-      hasAudit: Math.random() > 0.3,
-      teamDoxxed: Math.random() > 0.4,
-      description: item.desc,
-      tags: item.tags,
-    };
-  });
-}
-
-function formatUSD(n: number): string {
-  if (n >= 1e6) return `$${(n / 1e6).toFixed(2)}M`;
-  if (n >= 1e3) return `$${(n / 1e3).toFixed(0)}K`;
-  return `$${n.toFixed(0)}`;
-}
-
-function formatDate(d: Date): string {
-  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
-}
+type TabType = 'launching' | 'launched' | 'trending';
+type SortType = 'date' | 'marketcap' | 'social' | 'risk';
 
 export default function TokenRadarClient() {
-  const [launches] = useState<TokenLaunch[]>(generateTokenLaunches);
-  const [statusFilter, setStatusFilter] = useState("all");
-  const [categoryFilter, setCategoryFilter] = useState("all");
-  const [sortBy, setSortBy] = useState<"date" | "social" | "raise">("date");
+  const [activeTab, setActiveTab] = useState<TabType>('trending');
+  const [selectedChain, setSelectedChain] = useState<string>('All');
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [riskLevel, setRiskLevel] = useState<string>('All');
+  const [sortBy, setSortBy] = useState<SortType>('date');
+  const [searchQuery, setSearchQuery] = useState('');
 
-  const categories = useMemo(() => [...new Set(launches.map((l) => l.category))], [launches]);
+  const chains = ['All', 'Ethereum', 'Solana', 'Base', 'Arbitrum', 'BNB'];
+  const categories = ['All', 'DeFi', 'GameFi', 'AI', 'Meme', 'Infrastructure', 'RWA'];
+  const riskLevels = ['All', 'Low (1-3)', 'Medium (4-6)', 'High (7-10)'];
 
-  const filtered = useMemo(() => {
-    return launches
-      .filter((l) => statusFilter === "all" || l.status === statusFilter)
-      .filter((l) => categoryFilter === "all" || l.category === categoryFilter)
-      .sort((a, b) => {
-        if (sortBy === "date") return a.launchDate.getTime() - b.launchDate.getTime();
-        if (sortBy === "social") return b.socialScore - a.socialScore;
-        return b.raiseTarget - a.raiseTarget;
-      });
-  }, [launches, statusFilter, categoryFilter, sortBy]);
+  const filteredTokens = useMemo(() => {
+    let filtered = mockTokens.filter((token) => {
+      const now = Date.now();
+      const timeDiff = token.launchDate.getTime() - now;
 
-  const liveCount = launches.filter((l) => l.status === "live").length;
-  const upcomingCount = launches.filter((l) => l.status === "upcoming").length;
+      if (activeTab === 'launching') {
+        return timeDiff > 0 && timeDiff <= 7 * 24 * 60 * 60 * 1000;
+      } else if (activeTab === 'launched') {
+        return timeDiff <= 0 && timeDiff >= -24 * 60 * 60 * 1000;
+      } else {
+        return timeDiff <= 0 && timeDiff >= -7 * 24 * 60 * 60 * 1000;
+      }
+    });
+
+    if (selectedChain !== 'All') {
+      filtered = filtered.filter((t) => t.chain === selectedChain);
+    }
+
+    if (selectedCategory !== 'All') {
+      filtered = filtered.filter((t) => t.category === selectedCategory);
+    }
+
+    if (riskLevel !== 'All') {
+      const [min, max] = riskLevel.includes('Low')
+        ? [1, 3]
+        : riskLevel.includes('Medium')
+          ? [4, 6]
+          : [7, 10];
+      filtered = filtered.filter((t) => t.riskScore >= min && t.riskScore <= max);
+    }
+
+    if (searchQuery) {
+      filtered = filtered.filter(
+        (t) =>
+          t.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          t.ticker.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
+
+    filtered.sort((a, b) => {
+      if (sortBy === 'date') return a.launchDate.getTime() - b.launchDate.getTime();
+      if (sortBy === 'marketcap') return b.initialMarketCap - a.initialMarketCap;
+      if (sortBy === 'social') return b.socialFollowers - a.socialFollowers;
+      if (sortBy === 'risk') return a.riskScore - b.riskScore;
+      return 0;
+    });
+
+    return filtered;
+  }, [activeTab, selectedChain, selectedCategory, riskLevel, searchQuery, sortBy]);
+
+  const trendingTokens = mockTokens
+    .filter((t) => t.launchDate.getTime() <= Date.now() && t.launchDate.getTime() > Date.now() - 7 * 24 * 60 * 60 * 1000)
+    .sort((a, b) => b.currentPriceChange - a.currentPriceChange)
+    .slice(0, 3);
+
+  const statsData = {
+    totalLaunches: mockTokens.filter((t) => t.launchDate.getTime() <= Date.now() && t.launchDate.getTime() > Date.now() - 7 * 24 * 60 * 60 * 1000).length,
+    avgMarketCap: Math.round(
+      mockTokens.reduce((sum, t) => sum + t.initialMarketCap, 0) / mockTokens.length / 1000000
+    ),
+    topChain: 'Solana',
+    topCategory: 'Meme',
+  };
+
+  const getRiskColor = (score: number) => {
+    if (score <= 2) return 'var(--green)';
+    if (score <= 4) return 'var(--blue)';
+    if (score <= 6) return 'var(--yellow)';
+    return 'var(--red)';
+  };
+
+  const formatDate = (date: Date) => {
+    const now = Date.now();
+    const diff = date.getTime() - now;
+
+    if (diff > 0) {
+      const days = Math.floor(diff / (24 * 60 * 60 * 1000));
+      const hours = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+      if (days > 0) return `${days}d ${hours}h`;
+      return `${hours}h`;
+    } else {
+      const absDiff = -diff;
+      const days = Math.floor(absDiff / (24 * 60 * 60 * 1000));
+      const hours = Math.floor((absDiff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+      if (days > 0) return `${days}d ${hours}h ago`;
+      return `${hours}h ago`;
+    }
+  };
 
   return (
-    <div className="min-h-screen" style={{ background: "#0d1117", color: "#e6edf3" }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }} className="min-h-screen p-6">
+      <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-3xl">🚀</span>
-            <h1 className="text-3xl md:text-4xl font-bold">Token Launch Radar</h1>
+            <Rocket size={32} style={{ color: 'var(--purple)' }} />
+            <h1 className="text-4xl font-bold">Token Launch Radar</h1>
           </div>
-          <p className="text-lg" style={{ color: "#8b949e" }}>
-            Discover new token launches, IDOs, and listings. DYOR — always verify contracts and team backgrounds.
+          <p style={{ color: 'var(--text2)' }} className="text-lg">
+            Track upcoming and trending token launches across all major chains
           </p>
         </div>
 
-        {/* Summary Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <div className="rounded-xl p-4" style={{ background: "#161b22", border: "1px solid #30363d" }}>
-            <div className="text-xs font-semibold uppercase" style={{ color: "#8b949e" }}>Live Now</div>
-            <div className="text-3xl font-bold" style={{ color: "#3fb950" }}>{liveCount}</div>
+        {trendingTokens.length > 0 && (
+          <div className="mb-8">
+            <div className="flex items-center gap-2 mb-4">
+              <Zap size={20} style={{ color: 'var(--yellow)' }} />
+              <h2 className="text-2xl font-bold">Hot Launches</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {trendingTokens.map((token, idx) => (
+                <div
+                  key={token.id}
+                  style={{
+                    backgroundColor: 'var(--surface)',
+                    borderColor: 'var(--border)',
+                  }}
+                  className="border rounded-lg p-4 hover:scale-105 transition-transform"
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <div
+                          style={{ backgroundColor: 'var(--blue)', opacity: 0.2 }}
+                          className="w-10 h-10 rounded-full flex items-center justify-center"
+                        >
+                          <span className="font-bold text-sm">{token.ticker.slice(0, 2)}</span>
+                        </div>
+                        <div>
+                          <p className="font-bold">{token.name}</p>
+                          <p style={{ color: 'var(--text2)' }} className="text-sm">
+                            {token.ticker}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="flex items-center gap-1 justify-end">
+                        <Star size={16} style={{ color: 'var(--yellow)' }} />
+                        <span className="text-sm font-bold"># {idx + 1}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ color: 'var(--green)' }} className="text-lg font-bold">
+                    +{token.currentPriceChange.toFixed(1)}%
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="rounded-xl p-4" style={{ background: "#161b22", border: "1px solid #30363d" }}>
-            <div className="text-xs font-semibold uppercase" style={{ color: "#8b949e" }}>Upcoming</div>
-            <div className="text-3xl font-bold" style={{ color: "#58a6ff" }}>{upcomingCount}</div>
-          </div>
-          <div className="rounded-xl p-4" style={{ background: "#161b22", border: "1px solid #30363d" }}>
-            <div className="text-xs font-semibold uppercase" style={{ color: "#8b949e" }}>Total Tracked</div>
-            <div className="text-3xl font-bold" style={{ color: "#bc8cff" }}>{launches.length}</div>
-          </div>
-          <div className="rounded-xl p-4" style={{ background: "#161b22", border: "1px solid #30363d" }}>
-            <div className="text-xs font-semibold uppercase" style={{ color: "#8b949e" }}>Total Raise Volume</div>
-            <div className="text-3xl font-bold" style={{ color: "#d29922" }}>
-              {formatUSD(launches.reduce((s, l) => s + l.raiseTarget, 0))}
+        )}
+
+        <div
+          style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+          className="border rounded-lg p-4 mb-8"
+        >
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div>
+              <p style={{ color: 'var(--text2)' }} className="text-sm mb-1">
+                Launches This Week
+              </p>
+              <p className="text-2xl font-bold">{statsData.totalLaunches}</p>
+            </div>
+            <div>
+              <p style={{ color: 'var(--text2)' }} className="text-sm mb-1">
+                Avg Initial MCap
+              </p>
+              <p className="text-2xl font-bold">${statsData.avgMarketCap}M</p>
+            </div>
+            <div>
+              <p style={{ color: 'var(--text2)' }} className="text-sm mb-1">
+                Most Popular Chain
+              </p>
+              <p className="text-2xl font-bold">{statsData.topChain}</p>
+            </div>
+            <div>
+              <p style={{ color: 'var(--text2)' }} className="text-sm mb-1">
+                Top Category
+              </p>
+              <p className="text-2xl font-bold">{statsData.topCategory}</p>
             </div>
           </div>
         </div>
 
-        {/* Filters */}
-        <div className="flex flex-wrap gap-3 mb-6">
-          <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)}
-            className="rounded-lg px-3 py-2 text-sm" style={{ background: "#161b22", color: "#e6edf3", border: "1px solid #30363d" }}>
-            <option value="all">All Status</option>
-            <option value="upcoming">Upcoming</option>
-            <option value="live">Live</option>
-            <option value="launched">Launched</option>
-          </select>
-          <select value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)}
-            className="rounded-lg px-3 py-2 text-sm" style={{ background: "#161b22", color: "#e6edf3", border: "1px solid #30363d" }}>
-            <option value="all">All Categories</option>
-            {categories.map((c) => <option key={c} value={c}>{c}</option>)}
-          </select>
-          <select value={sortBy} onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
-            className="rounded-lg px-3 py-2 text-sm" style={{ background: "#161b22", color: "#e6edf3", border: "1px solid #30363d" }}>
-            <option value="date">Sort by Date</option>
-            <option value="social">Sort by Social Score</option>
-            <option value="raise">Sort by Raise Size</option>
-          </select>
+        <div className="mb-6 space-y-4">
+          <div className="flex gap-2 items-center relative">
+            <Search size={18} style={{ color: 'var(--text2)', position: 'absolute', left: 12 }} />
+            <input
+              type="text"
+              placeholder="Search tokens by name or ticker..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              style={{
+                backgroundColor: 'var(--surface)',
+                borderColor: 'var(--border)',
+                color: 'var(--text)',
+                paddingLeft: 40,
+              }}
+              className="w-full border rounded-lg p-2 outline-none focus:border-opacity-100"
+            />
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            <Filter size={18} style={{ color: 'var(--text2)' }} />
+            <select
+              value={selectedChain}
+              onChange={(e) => setSelectedChain(e.target.value)}
+              style={{
+                backgroundColor: 'var(--surface)',
+                borderColor: 'var(--border)',
+                color: 'var(--text)',
+              }}
+              className="border rounded-lg px-3 py-1 outline-none text-sm"
+            >
+              {chains.map((c) => (
+                <option key={c} value={c}>
+                  {c}
+                </option>
+              ))}
+            </select>
+
+            <select
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+              style={{
+                backgroundColor: 'var(--surface)',
+                borderColor: 'var(--border)',
+                color: 'var(--text)',
+              }}
+              className="border rounded-lg px-3 py-1 outline-none text-sm"
+            >
+              {categories.map((c) => (
+                <option key={c} value={c}>
+                  {c}
+                </option>
+              ))}
+            </select>
+
+            <select
+              value={riskLevel}
+              onChange={(e) => setRiskLevel(e.target.value)}
+              style={{
+                backgroundColor: 'var(--surface)',
+                borderColor: 'var(--border)',
+                color: 'var(--text)',
+              }}
+              className="border rounded-lg px-3 py-1 outline-none text-sm"
+            >
+              {riskLevels.map((r) => (
+                <option key={r} value={r}>
+                  {r}
+                </option>
+              ))}
+            </select>
+
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as SortType)}
+              style={{
+                backgroundColor: 'var(--surface)',
+                borderColor: 'var(--border)',
+                color: 'var(--text)',
+              }}
+              className="border rounded-lg px-3 py-1 outline-none text-sm ml-auto"
+            >
+              <option value="date">Sort by Date</option>
+              <option value="marketcap">Sort by Market Cap</option>
+              <option value="social">Sort by Social</option>
+              <option value="risk">Sort by Risk</option>
+            </select>
+          </div>
         </div>
 
-        {/* Token Cards */}
-        <div className="space-y-4">
-          {filtered.map((launch) => {
-            const st = STATUS_STYLES[launch.status];
-            const risk = RISK_COLORS[launch.riskLevel];
-            const pct = launch.raiseTarget > 0 ? Math.min((launch.raiseCompleted / launch.raiseTarget) * 100, 100) : 0;
-            return (
-              <div key={launch.id} className="rounded-xl p-5" style={{ background: "#161b22", border: "1px solid #30363d" }}>
-                <div className="flex flex-col md:flex-row md:items-start gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 flex-wrap mb-2">
-                      <h3 className="font-bold text-lg">{launch.name}</h3>
-                      <span className="text-sm font-mono font-bold" style={{ color: "#8b949e" }}>${launch.ticker}</span>
-                      <span className="text-xs px-2 py-0.5 rounded-full font-semibold" style={{ background: st.bg, color: st.text }}>
-                        {st.label}
-                      </span>
-                      <span className="text-xs px-2 py-0.5 rounded-full font-semibold" style={{ background: risk.bg, color: risk.text }}>
-                        {launch.riskLevel.toUpperCase()} RISK
-                      </span>
+        <div
+          style={{ borderColor: 'var(--border)' }}
+          className="border-b mb-6 flex gap-6"
+        >
+          {[
+            { id: 'launching', label: 'Launching Soon' },
+            { id: 'launched', label: 'Just Launched (24h)' },
+            { id: 'trending', label: 'Trending Launches (7d)' },
+          ].map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id as TabType)}
+              style={{
+                color: activeTab === tab.id ? 'var(--blue)' : 'var(--text2)',
+                borderBottomColor: activeTab === tab.id ? 'var(--blue)' : 'transparent',
+              }}
+              className="pb-3 border-b-2 font-semibold transition-colors"
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
+        <div className="space-y-3">
+          {filteredTokens.length > 0 ? (
+            filteredTokens.map((token) => (
+              <div
+                key={token.id}
+                style={{
+                  backgroundColor: 'var(--surface)',
+                  borderColor: 'var(--border)',
+                }}
+                className="border rounded-lg p-4 hover:border-opacity-100 transition-all"
+              >
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                  <div className="flex items-start gap-3 flex-1">
+                    <div
+                      style={{ backgroundColor: 'var(--blue)', opacity: 0.1 }}
+                      className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
+                    >
+                      <span className="font-bold">{token.ticker.slice(0, 2)}</span>
                     </div>
-                    <p className="text-sm mb-3" style={{ color: "#8b949e" }}>{launch.description}</p>
-                    <div className="flex flex-wrap gap-1.5 mb-3">
-                      {launch.tags.map((tag) => (
-                        <span key={tag} className="text-xs px-2 py-0.5 rounded-full"
-                          style={{ background: "#6366f115", color: "#818cf8", border: "1px solid #6366f130" }}>
-                          {tag}
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-1">
+                        <h3 className="font-bold text-lg">{token.name}</h3>
+                        <span
+                          style={{ color: 'var(--text2)', borderColor: 'var(--border)' }}
+                          className="border rounded px-2 py-1 text-xs"
+                        >
+                          {token.ticker}
                         </span>
-                      ))}
-                    </div>
-                    <div className="flex flex-wrap gap-4 text-xs" style={{ color: "#8b949e" }}>
-                      <span>Chain: <strong style={{ color: "#e6edf3" }}>{launch.chain}</strong></span>
-                      <span>Platform: <strong style={{ color: "#e6edf3" }}>{launch.platform}</strong></span>
-                      <span>Date: <strong style={{ color: "#e6edf3" }}>{formatDate(launch.launchDate)}</strong></span>
-                      <span>Audit: <strong style={{ color: launch.hasAudit ? "#3fb950" : "#f85149" }}>
-                        {launch.hasAudit ? "✓ Verified" : "✗ None"}
-                      </strong></span>
-                      <span>Team: <strong style={{ color: launch.teamDoxxed ? "#3fb950" : "#f85149" }}>
-                        {launch.teamDoxxed ? "✓ Doxxed" : "✗ Anon"}
-                      </strong></span>
+                      </div>
+                      <p style={{ color: 'var(--text2)' }} className="text-sm mb-2">
+                        {token.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        <span
+                          style={{ backgroundColor: 'var(--blue)', color: 'var(--bg)' }}
+                          className="rounded-full px-3 py-1 text-xs font-semibold"
+                        >
+                          {token.chain}
+                        </span>
+                        <span
+                          style={{
+                            backgroundColor:
+                              token.category === 'DeFi'
+                                ? 'rgb(63, 185, 80, 0.2)'
+                                : token.category === 'GameFi'
+                                  ? 'rgb(88, 166, 255, 0.2)'
+                                  : token.category === 'AI'
+                                    ? 'rgb(188, 140, 255, 0.2)'
+                                    : 'rgb(210, 153, 34, 0.2)',
+                            color: token.category === 'DeFi' ? 'var(--green)' : token.category === 'GameFi' ? 'var(--blue)' : token.category === 'AI' ? 'var(--purple)' : 'var(--yellow)',
+                          }}
+                          className="rounded-full px-3 py-1 text-xs font-semibold"
+                        >
+                          {token.category}
+                        </span>
+                        {token.auditStatus === 'verified' && (
+                          <span
+                            style={{
+                              backgroundColor: 'rgb(63, 185, 80, 0.2)',
+                              color: 'var(--green)',
+                            }}
+                            className="rounded-full px-3 py-1 text-xs font-semibold flex items-center gap-1"
+                          >
+                            <Shield size={12} />
+                            Verified
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
-                  <div className="md:min-w-[200px] md:text-right">
-                    <div className="text-xs font-semibold uppercase mb-1" style={{ color: "#8b949e" }}>Raise Target</div>
-                    <div className="text-2xl font-bold mb-2" style={{ color: "#58a6ff" }}>{formatUSD(launch.raiseTarget)}</div>
-                    {launch.status !== "upcoming" && (
-                      <div>
-                        <div className="h-2 rounded-full overflow-hidden mb-1" style={{ background: "#30363d" }}>
-                          <div className="h-full rounded-full" style={{ background: "#3fb950", width: `${pct}%` }} />
+
+                  <div className="flex flex-col md:flex-row gap-6 md:items-center">
+                    <div className="flex items-center gap-4">
+                      <div className="text-right">
+                        <p style={{ color: 'var(--text2)' }} className="text-xs mb-1">
+                          {token.launchDate.getTime() > Date.now() ? 'Launches in' : 'Launched'}
+                        </p>
+                        <div className="flex items-center gap-1">
+                          <Clock size={16} style={{ color: 'var(--text2)' }} />
+                          <p className="font-semibold text-sm">{formatDate(token.launchDate)}</p>
                         </div>
-                        <div className="text-xs" style={{ color: "#8b949e" }}>{pct.toFixed(0)}% filled</div>
                       </div>
-                    )}
-                    <div className="mt-3 flex items-center gap-2 md:justify-end">
-                      <span className="text-xs" style={{ color: "#8b949e" }}>Social Score:</span>
-                      <span className="font-bold text-sm" style={{
-                        color: launch.socialScore >= 80 ? "#3fb950" : launch.socialScore >= 60 ? "#d29922" : "#f85149"
-                      }}>
-                        {launch.socialScore}/100
-                      </span>
+
+                      <div className="text-right">
+                        <p style={{ color: 'var(--text2)' }} className="text-xs mb-1">
+                          Social
+                        </p>
+                        <div className="flex items-center gap-1">
+                          <Users size={16} style={{ color: 'var(--text2)' }} />
+                          <p className="font-semibold text-sm">
+                            {(token.socialFollowers / 1000).toFixed(0)}K
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="text-right">
+                        <p style={{ color: 'var(--text2)' }} className="text-xs mb-1">
+                          Price Change
+                        </p>
+                        <p
+                          style={{
+                            color: token.currentPriceChange > 0 ? 'var(--green)' : token.currentPriceChange < 0 ? 'var(--red)' : 'var(--text2)',
+                          }}
+                          className="font-semibold text-sm"
+                        >
+                          {token.currentPriceChange > 0 ? '+' : ''}
+                          {token.currentPriceChange.toFixed(1)}%
+                        </p>
+                      </div>
+
+                      <div className="text-right">
+                        <p style={{ color: 'var(--text2)' }} className="text-xs mb-1">
+                          Risk Score
+                        </p>
+                        <div className="flex items-center gap-1 justify-end">
+                          <AlertTriangle size={16} style={{ color: getRiskColor(token.riskScore) }} />
+                          <p
+                            style={{ color: getRiskColor(token.riskScore) }}
+                            className="font-bold text-sm"
+                          >
+                            {token.riskScore}/10
+                          </p>
+                        </div>
+                      </div>
                     </div>
+
+                    <button
+                      style={{ backgroundColor: 'var(--blue)', color: 'var(--bg)' }}
+                      className="rounded-lg px-4 py-2 font-semibold flex items-center gap-2 hover:opacity-90 transition-opacity"
+                    >
+                      <ExternalLink size={16} />
+                      <span className="hidden sm:inline">View</span>
+                    </button>
                   </div>
                 </div>
               </div>
-            );
-          })}
-        </div>
-
-        {/* Disclaimer */}
-        <div className="mt-8 rounded-xl p-4 text-sm" style={{ background: "#f8514910", border: "1px solid #f8514930", color: "#f85149" }}>
-          <strong>⚠ Disclaimer:</strong> Token launches carry extreme risk. Always do your own research (DYOR). Check smart contract audits, team backgrounds, tokenomics, and vesting schedules. Never invest more than you can afford to lose. degen0x does not endorse or recommend any specific token.
+            ))
+          ) : (
+            <div
+              style={{
+                backgroundColor: 'var(--surface)',
+                borderColor: 'var(--border)',
+                color: 'var(--text2)',
+              }}
+              className="border rounded-lg p-8 text-center"
+            >
+              <p className="text-lg">No tokens found matching your filters</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
