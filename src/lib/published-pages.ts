@@ -332,7 +332,8 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/learn/onchain-finance-onfi-guide",
   "/learn/stablecoin-payments-guide-2026",
 
-  // ── Day 16 — DeFi & Emerging Tech Guides (published Mar 15) ──
+  // ── Day 16 — DeFi & Emerging Tech Guides (published Mar 16) ──
+  "/learn/payfi-guide",
   "/learn/pendle-finance-guide",
   "/learn/quantum-resistant-crypto-guide",
   "/learn/best-perpetual-dex-guide",
@@ -347,6 +348,126 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   // ── Day 18 — Learn Guides: Tax & Pectra Upgrade (published Mar 16) ──
   "/learn/crypto-tax-guide-2026",
   "/learn/ethereum-pectra-upgrade-guide",
+
+  // ── Day 19 — Learn Guides: Sonic & Ethena (published Mar 15) ──────
+  "/learn/sonic-blockchain-guide",
+  "/learn/ethena-usde-guide",
+
+  // ── Day 20 — Stablecoin & Meme Launchpad Guides (published Mar 15) ──
+  "/learn/genius-act-stablecoin-guide",
+  "/learn/best-meme-coin-launchpads-2026",
+
+  // ── Day 21 — Crypto Regulation & Privacy Guides (published Mar 15) ──
+  "/learn/clarity-act-crypto-guide",
+  "/learn/privacy-coins-guide-2026",
+
+  // ── Day 22 — Bitcoin Reserve & Tokenized Treasuries (published Mar 15) ──
+  "/learn/bitcoin-strategic-reserve-guide",
+  "/learn/tokenized-treasuries-guide-2026",
+
+  // ── Day 23 — TON Blockchain & Crypto Options (published Mar 15) ──
+  "/learn/ton-blockchain-guide",
+  "/learn/crypto-options-trading-guide",
+
+  // ── Day 24 — DeFAI Guide (published Mar 15) ──────────────────────
+  "/learn/defai-guide-2026",
+
+  // ── Day 25 — New L2 Guides (published Mar 15) ────────────────────
+  "/learn/megaeth-guide",
+  "/learn/abstract-chain-guide",
+
+  // ── Day 26 — Bitcoin Staking (published Mar 15) ──────────────────
+  "/learn/babylon-protocol-bitcoin-staking",
+
+  // ── Day 27 — Tokenized Stocks build cycle (published Mar 15) ─────
+  "/learn/tokenized-stocks-guide-2026",
+  "/tools/tokenized-stocks-tracker",
+
+  // ── Day 28 — Altcoin ETF build cycle (published Mar 15) ──────────
+  "/learn/altcoin-etf-guide-2026",
+  "/tools/altcoin-etf-tracker",
+
+  // ── Day 29 — Exchange & Wallet Hubs + Staking Hub (published Mar 15) ──
+  "/exchanges/best",
+  "/exchanges/best/beginners",
+  "/wallets/best",
+  "/wallets/best/beginners",
+  "/investing/staking",
+
+  // ── Day 30 — Exchange Hubs, Wallet Reviews & Staking Hub (published Mar 15) ──
+  "/exchanges/best/advanced-traders",
+  "/exchanges/best/low-fee",
+  "/wallets/best/mobile",
+  "/wallets/reviews/ledger",
+  "/wallets/reviews/trezor",
+
+  // ── Day 31 — Wallet Reviews, Staking Hub & DeFi Guide (published Mar 15) ──
+  "/learn/uniswap-v4-hooks-guide",
+  "/wallets/reviews/metamask",
+  "/wallets/reviews/phantom",
+  "/investing/staking/best",
+  "/investing/staking/reviews/lido",
+
+  // ── Day 32 — Staking Reviews, DeFi Lending Reviews & Exchange Reviews (published Mar 16) ──
+  "/investing/staking/reviews/rocket-pool",
+  "/defi-lending/reviews/aave",
+  "/defi-lending/reviews/compound",
+  "/defi-lending/reviews/morpho",
+  "/exchanges/reviews/coinbase",
+
+  // ── Day 33 — Exchange Reviews & InfoFi/BTCFi/Aave Guides (published Mar 16) ──
+  "/exchanges/reviews/binance",
+  "/exchanges/reviews/kraken",
+  "/exchanges/reviews/bybit",
+  "/exchanges/reviews/okx",
+  "/learn/kaito-ai-infofi-guide",
+  "/learn/btcfi-bitcoin-defi-guide-2026",
+  "/learn/aave-v4-guide",
+
+  // ── Day 34 — Bitcoin Treasury & Crypto Debit Cards Guides (published Mar 16) ──
+  "/learn/bitcoin-treasury-companies-guide",
+  "/learn/crypto-debit-cards-guide-2026",
+
+  // ── Day 35 — AI & DeFi Yield Guides (published Mar 16) ────────────────────
+  "/learn/bittensor-tao-guide",
+  "/learn/stablecoin-yield-strategies-2026",
+
+  // ── Day 36 — Based Rollups & Preconfirmations (published Mar 16) ──────────
+  "/learn/based-rollups-preconfirmations-guide",
+
+  // ── Day 37 — Aztec Network Guide (published Mar 16) ─────────────────────
+  "/learn/aztec-network-guide",
+
+  // ── Day 38 — Hyperliquid HIP-3 Tokenized Futures (published Mar 16) ──────
+  "/learn/hyperliquid-hip3-tokenized-futures-guide",
+
+  // ── Day 39 — Ethereum Roadmap & DeFi Options (published Mar 16) ──────────
+  "/learn/ethereum-2026-upgrade-roadmap",
+  "/learn/defi-options-trading-guide",
+
+  // ── Day 39 — Movement Network Guide (published Mar 16) ────────────────────
+  "/learn/movement-network-guide",
+
+  // ── Day 40 — Ecosystem Hub + Hyperliquid + EigenLayer + AI Agents Guide (published Mar 16) ──
+  "/glossary",
+  "/ecosystem",
+  "/ecosystem/hyperliquid",
+  "/ecosystem/eigenlayer",
+  "/learn/ai-crypto-agents-guide",
+
+  // ── Day 41 — Data Availability, DeFi Options & Ecosystem Deep-Dives (published Mar 16) ──
+  "/learn/data-availability-layer-guide-2026",
+  "/learn/defi-options-trading-guide-2026",
+  "/ecosystem/aave",
+  "/ecosystem/lido",
+  "/ecosystem/uniswap",
+
+  // ── Day 42 — Chain Abstraction, Prediction Markets, Ecosystem & AI DePIN (published Mar 16) ──
+  "/learn/chain-abstraction-guide-2026",
+  "/learn/crypto-prediction-markets-guide-2026",
+  "/ecosystem/compound",
+  "/ecosystem/curve",
+  "/learn/ai-depin-crypto-guide",
 ]);
 
 /**
@@ -354,9 +475,9 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
  * Move slugs up into PUBLISHED_PAGES each day.
  */
 export const PUBLISH_QUEUE: readonly string[] = [
-  // ── Day 19 — New Learn Guides (build cycle 2026-03-15) ──────────
-  "/learn/sonic-blockchain-guide",
-  "/learn/ethena-usde-guide",
+  // Remaining queue — next publish cycle
+  "/learn/advanced-defi-strategies",
+  "/news",
 ];
 
 /**

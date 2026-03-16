@@ -32,26 +32,12 @@ const nextConfig: NextConfig = {
       ],
     },
   ],
-  webpack: (config, { isServer }) => {
-    // Fix "__dirname is not defined" in ESM serverless functions
-    if (isServer) {
-      config.node = {
-        ...config.node,
-        __dirname: true,
-        __filename: true,
-      };
-    }
-    return config;
-  },
   experimental: {
     // Safe concurrency: avoids OOM on Vercel 8GB machines
     // Bulk pages converted to dynamic rendering to stay under 45min build limit
-    staticGenerationMaxConcurrency: 4,
+    staticGenerationMaxConcurrency: 8,
     workerThreads: false,
   },
-  // Sprint 40: Reduce memory pressure during local builds
-  // Split chunks more aggressively to avoid single large bundles
-  output: "standalone",
 };
 
 export default nextConfig;

@@ -1,0 +1,57 @@
+import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import ComparisonTable from "@/components/ComparisonTable";
+import FAQSection from "@/components/FAQSection";
+import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import { ComparisonItem, FAQ } from "@/lib/types";
+
+export const metadata: Metadata = {
+  title: `Lido vs EigenLayer ${CURRENT_YEAR}: Staking vs Restaking Compared`,
+  description: `Detailed comparison of Lido vs EigenLayer in ${CURRENT_YEAR}. Compare liquid staking, restaking, yields, risk profiles, and how each protocol fits your staking strategy.`,
+};
+
+const items: ComparisonItem[] = [
+  { name: "Lido", slug: "lido", rating: 4.8, affiliateUrl: "https://degen0x.com/go/lido", features: { "TVL": "$25B+", "Type": "Liquid staking", "Primary Asset": "stETH", "Base Yield": "~3-4% APR", "Additional Yield": "DeFi composability", "Risk Level": "Low-moderate", "Governance Token": "LDO", "Unique Feature": "Largest liquid staking protocol" } },
+  { name: "EigenLayer", slug: "eigenlayer", rating: 4.5, affiliateUrl: "https://degen0x.com/go/eigenlayer", features: { "TVL": "$10B+", "Type": "Restaking", "Primary Asset": "eETH, stETH, ETH", "Base Yield": "Staking yield passthrough", "Additional Yield": "AVS rewards (variable)", "Risk Level": "Moderate-high", "Governance Token": "EIGEN", "Unique Feature": "Restaking for additional yield" } },
+];
+
+const features = ["TVL", "Type", "Primary Asset", "Base Yield", "Additional Yield", "Risk Level", "Governance Token", "Unique Feature"];
+
+const faqs: FAQ[] = [
+  { question: "What is the difference between staking and restaking?", answer: "Staking means locking ETH to help secure the Ethereum network in exchange for yield (~3-4% APR). Restaking (EigenLayer) takes already-staked ETH and uses it as security for additional services (Actively Validated Services/AVSs), earning extra rewards on top of base staking yield. Think of staking as securing one network, restaking as securing multiple services with the same capital." },
+  { question: "Can I use Lido and EigenLayer together?", answer: "Yes, and this is a common strategy. Deposit ETH on Lido to receive stETH (earning staking yield). Then deposit stETH into EigenLayer to earn restaking rewards on top. This stacking approach lets you earn base staking yield plus additional AVS rewards from restaking, though it adds complexity and smart contract risk from each layer." },
+  { question: "Is restaking safe?", answer: "Restaking introduces additional risk beyond standard staking. Your restaked ETH can be slashed not only for Ethereum validator misbehavior but also for failures in the AVS services you are securing. Each AVS has its own slashing conditions. The risk compounds with each additional service. Start with well-established AVSs and understand the slashing conditions before restaking significant amounts." },
+  { question: "What is stETH and how does it work?", answer: "stETH is Lido's liquid staking token representing your staked ETH plus accumulated rewards. When you deposit ETH with Lido, you receive stETH that automatically accrues staking rewards (the token rebases daily). stETH can be used across DeFi: as collateral on Aave, in Curve liquidity pools, or deposited into EigenLayer for restaking. This composability is stETH's key advantage." },
+  { question: "What yields can I expect from EigenLayer?", answer: "EigenLayer yields depend on which AVS services your restaked ETH secures and the demand for those services. Early restaking rewards came primarily from EIGEN token distributions and points programs. As more AVSs launch and generate real revenue, restaking yields should become more predictable. Current additional yields above base staking vary widely and are still maturing." },
+];
+
+export default function LidoVsEigenlayerPage() {
+  return (
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Lido vs EigenLayer", href: "/defi-lending/compare/lido-vs-eigenlayer" }]} />
+      <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Lido vs EigenLayer: Staking vs Restaking ({CURRENT_YEAR})</h1>
+      <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      <div className="prose prose-invert max-w-none mb-10">
+        <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
+          Lido and EigenLayer represent two layers of the Ethereum staking ecosystem. Lido is the dominant liquid staking protocol, converting ETH into the composable stETH token. EigenLayer introduced restaking, allowing staked ETH to secure additional services for extra yield. Understanding how these protocols work independently and together is essential for optimizing your Ethereum staking strategy.
+        </p>
+        <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
+          <strong className="text-[var(--color-text)]">The short answer:</strong> Lido is essential for anyone who wants to stake ETH while maintaining liquidity and DeFi composability. EigenLayer is for users willing to accept additional risk for the potential of higher yields through restaking. Many users stack both: Lido for the base layer of liquid staking, EigenLayer for additional yield on top.
+        </p>
+      </div>
+      <section className="mb-12">
+        <ComparisonTable items={items} features={features} title="Lido vs EigenLayer Feature Comparison" />
+      </section>
+      <section className="mb-12 prose prose-invert max-w-none">
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Value Proposition</h3>
+        <p className="text-[var(--color-text-secondary)]">Lido solves the liquidity problem of Ethereum staking. Without Lido, staking ETH locks it up with limited withdrawal flexibility. stETH gives you a liquid, yield-bearing token that can be used across DeFi while still earning staking rewards. EigenLayer solves the capital efficiency problem: why should staked ETH only secure one network when it could simultaneously secure many services? Each protocol addresses a different limitation of base Ethereum staking.</p>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Risk Profiles</h3>
+        <p className="text-[var(--color-text-secondary)]">Lido&apos;s risks are well-understood: smart contract risk of the Lido protocol, stETH de-peg risk (if market price diverges from underlying value), and validator operator risk. These risks are mitigated by Lido&apos;s long track record and multiple audits. EigenLayer adds additional risk layers: slashing risk from AVS services, complexity risk from managing multiple restaking positions, and the novel risk of a relatively new protocol securing billions of dollars.</p>
+        <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Yield Optimization Strategy</h3>
+        <p className="text-[var(--color-text-secondary)]">The optimal stacking strategy depends on your risk tolerance. Conservative: stake on Lido, hold stETH, earn ~3-4% APR. Moderate: deposit stETH into Aave as collateral, borrow stablecoins, lend them for additional yield. Aggressive: deposit stETH into EigenLayer, select high-reward AVSs, and layer on additional DeFi strategies. Each layer adds yield potential but also adds complexity and risk. Start conservative and add layers as you gain experience and understanding.</p>
+      </section>
+      <FAQSection faqs={faqs} />
+    </div>
+  );
+}

@@ -574,9 +574,7 @@ export default function HomeContent() {
                 <button
                   key={l.key}
                   onClick={() => handleLevel(l.key)}
-                  aria-label={`Set level to ${l.label}`}
-                  aria-pressed={level === l.key}
-                  className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/50 ${
+                  className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${
                     level === l.key
                       ? "bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-lg shadow-indigo-500/25"
                       : "text-[#8e8e93] hover:text-white hover:bg-[#2c2c2e]"
@@ -632,20 +630,16 @@ export default function HomeContent() {
       {/* ══════════════════════════════════════════════════════════════════════
           STICKY PLATFORM NAV
       ══════════════════════════════════════════════════════════════════════ */}
-      <nav
-        aria-label="Platform navigation"
+      <div
         className="sticky z-[190] flex items-stretch overflow-x-auto border-b border-[#1c1c1e]"
         style={{ top: "56px", background: "rgba(8,8,10,0.96)", backdropFilter: "blur(20px)" }}
       >
-        <div className="flex items-stretch flex-1 px-4" role="tablist" aria-label="Platform sections">
+        <div className="flex items-stretch flex-1 px-4">
           {PLATFORM_TABS.map((tab) => (
             <button
               key={tab.key}
               onClick={() => scrollToSection(tab.key)}
-              role="tab"
-              aria-selected={activeTab === tab.key}
-              aria-current={activeTab === tab.key ? "true" : undefined}
-              className={`flex items-center gap-2 px-5 h-12 text-sm font-semibold whitespace-nowrap transition-all border-b-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6366f1]/50 ${
+              className={`flex items-center gap-2 px-5 h-12 text-sm font-semibold whitespace-nowrap transition-all border-b-2 ${
                 activeTab === tab.key
                   ? "text-white border-[--tab-accent]"
                   : "text-[#636366] border-transparent hover:text-[#adadad]"
@@ -678,12 +672,12 @@ export default function HomeContent() {
             </div>
           )}
         </div>
-      </nav>
+      </div>
 
       {/* ══════════════════════════════════════════════════════════════════════
           CONTENT SECTIONS
       ══════════════════════════════════════════════════════════════════════ */}
-      <div className={`transition-opacity duration-300 ${mounted ? "opacity-100" : "opacity-0"}`} aria-busy={!mounted}>
+      <div className={`transition-opacity duration-300 ${mounted ? "opacity-100" : "opacity-0"}`}>
 
         {/* ── SECTION: LEARN ── */}
         <div

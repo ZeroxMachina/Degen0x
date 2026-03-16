@@ -1,0 +1,79 @@
+import type { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import ComparisonTable from "@/components/ComparisonTable";
+import FAQSection from "@/components/FAQSection";
+import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
+import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: `LooksRare vs X2Y2: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  description: "Detailed comparison of LooksRare vs X2Y2. Compare fees, token rewards, trading features, and community governance to find the best Ethereum NFT marketplace.",
+};
+
+export default function LooksRareVsX2Y2Page() {
+  const looksrare = nftDetailedComparisons["looksrare"];
+  const x2y2 = nftDetailedComparisons["x2y2"];
+
+  return (
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "LooksRare vs X2Y2", href: "#" } ]} />
+      <AffiliateDisclosure />
+      <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">LooksRare vs X2Y2: Which Ethereum NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
+      <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
+        LooksRare and X2Y2 are both Ethereum-only NFT marketplaces that launched as alternatives to
+        OpenSea, each offering token incentives and lower fees. While both compete for the same trader
+        base, they differ in fee structures, reward mechanisms, and additional features. This comparison
+        breaks down the key differences to help you choose.
+      </p>
+      <ComparisonTable items={[looksrare, x2y2]} features={nftComparisonFeatures} title="LooksRare vs X2Y2: Head-to-Head" />
+      <div className="prose-crypto mt-12">
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Fee Comparison</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
+          X2Y2 has a significant fee advantage at just 0.5% per transaction compared to LooksRare&apos;s
+          2%. For a 10 ETH NFT sale, the marketplace fee on X2Y2 is 0.05 ETH versus 0.2 ETH on
+          LooksRare. This makes X2Y2 one of the cheapest Ethereum marketplaces available, second only
+          to Blur&apos;s 0% fee.
+        </p>
+        <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">
+          However, both platforms offset fees with token rewards. LooksRare distributes LOOKS tokens
+          to active traders, while X2Y2 offers its native X2Y2 token rewards. The net cost of trading
+          depends on the value of these reward tokens, which fluctuate with market conditions. When token
+          prices are high, the effective trading cost can be negative on both platforms.
+        </p>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Token Economics and Rewards</h2>
+        <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
+          LooksRare&apos;s LOOKS token provides trading rewards and staking yields. LOOKS stakers earn
+          a portion of the platform&apos;s trading fees, creating a passive income stream. The token also
+          enables governance participation in platform decisions. However, LOOKS has experienced
+          significant price depreciation from its early highs.
+        </p>
+        <p className="text-[var(--color-text-secondary)] mb-8 leading-relaxed">
+          X2Y2 offers a similar token model with trading rewards and staking. X2Y2 token holders receive
+          a share of marketplace fees through staking. The platform also offers an NFT loan feature that
+          lets holders borrow against their NFTs, providing utility beyond simple token rewards. Both
+          tokens face ongoing sell pressure from traders claiming and selling rewards.
+        </p>
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Verdict</h2>
+        <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 mb-8">
+          <p className="text-[var(--color-text-secondary)] leading-relaxed">
+            <strong className="text-[var(--color-text)]">Choose LooksRare if</strong> you value higher trading volume
+            and liquidity, want to earn LOOKS staking rewards, or prefer a platform with a more
+            established track record and larger community.
+          </p>
+          <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4">
+            <strong className="text-[var(--color-text)]">Choose X2Y2 if</strong> you prioritize the lowest possible
+            marketplace fees, want access to NFT loan features, or prefer bulk listing and purchasing
+            tools for managing large portfolios.
+          </p>
+        </div>
+      </div>
+      <FAQSection faqs={[
+        { question: "Are LooksRare and X2Y2 still active?", answer: "Both platforms continue to operate, though their trading volumes have declined significantly from their peaks. The launch of Blur with zero fees captured much of the active Ethereum trading market. Both platforms maintain their token reward programs and core features." },
+        { question: "Is wash trading a concern on these platforms?", answer: "Both LooksRare and X2Y2 experienced significant wash trading during their initial token reward phases, as traders executed fake trades to farm token rewards. Both platforms have implemented measures to reduce wash trading, including adjusted reward calculations and volume requirements." },
+        { question: "Should I use Blur instead of either platform?", answer: "For most active Ethereum NFT traders, Blur offers superior tools and zero fees. However, LooksRare and X2Y2 may be worthwhile if you value their specific token reward programs or niche features like X2Y2's NFT loans." },
+      ]} />
+    </div>
+  );
+}

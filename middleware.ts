@@ -61,8 +61,6 @@ const PILLAR_PAGES: Set<string> = new Set([
   "/tools/dca-calculator",
   "/learn/crypto-glossary",
   "/learn/account-abstraction",
-  "/learn/solana-alpenglow-guide",
-  "/learn/onchain-finance-onfi-guide",
   "/investing/staking",
   "/investing/staking/best",
 ]);
