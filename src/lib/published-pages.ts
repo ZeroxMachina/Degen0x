@@ -468,6 +468,123 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/ecosystem/compound",
   "/ecosystem/curve",
   "/learn/ai-depin-crypto-guide",
+
+  // ── Day 43 — Advanced DeFi, News Hub, Inheritance & Parallel EVM (published Mar 16) ──
+  "/learn/advanced-defi-strategies",
+  "/news",
+  "/learn/crypto-inheritance-planning",
+  "/learn/parallel-evm-guide",
+
+  // ── Day 43b — Sui & On-Chain Analytics (published Mar 16) ─────
+  "/learn/sui-blockchain-guide",
+  "/learn/on-chain-analytics-guide",
+
+  // ── Day 44 — MEV Protection + Crypto Card Reviews (published Mar 16) ──
+  "/learn/mev-protection-guide",
+  "/crypto-cards/reviews/crypto-com-card",
+  "/crypto-cards/reviews/coinbase-card",
+  "/crypto-cards/reviews/binance-card",
+  "/crypto-cards/compare/crypto-com-vs-coinbase-card",
+
+  // ── Day 45 — Smart Wallets, Intent DEX, Restaking AVS (published Mar 16) ──
+  "/learn/smart-wallets-guide-2026",
+  "/learn/intent-based-dex-trading-guide",
+  "/learn/restaking-avs-ecosystem-guide-2026",
+
+  // ── Day 46 — FHE & AI Agent Payments Guides (published Mar 16) ──────────
+  "/learn/fhe-crypto-guide-2026",
+  "/learn/ai-agent-payments-x402-guide",
+
+  // ── Day 47 — Stablechains & Crypto Index Funds (published Mar 16) ────────
+  "/learn/stablechains-guide-2026",
+  "/learn/crypto-index-funds-guide-2026",
+
+  // ── Day 47b — Morpho Protocol (published Mar 16) ──────────────────────────
+  "/learn/morpho-protocol-guide",
+
+  // ── Day 48 — Story Protocol & Aster Chain (published Mar 16) ──────────────
+  "/learn/story-protocol-ip-guide",
+  "/learn/aster-chain-guide",
+
+  // ── Day 48b — Copy Trading & Trading Bots (published Mar 16) ─────────────
+  "/learn/crypto-copy-trading-guide",
+  "/learn/crypto-trading-bots-guide-2026",
+
+  // ── Day 49 — Staked ETFs & SEC-CFTC MOU (published Mar 16) ─────────────
+  "/learn/staked-crypto-etfs-guide-2026",
+  "/learn/sec-cftc-mou-crypto-guide",
+
+  // ── Day 49b — Jupiter & Ondo Finance (published Mar 16) ────────────────
+  "/learn/jupiter-solana-guide",
+  "/learn/ondo-finance-rwa-guide",
+
+  // ── Day 49c — Fair Launches & Peaq DePIN (published Mar 16) ───────────
+  "/learn/fair-token-launches-guide-2026",
+  "/learn/peaq-depin-robotics-guide-2026",
+
+  // ── Day 50 — Hyperliquid Trading & FOMC Guide (published Mar 17) ────────
+  "/learn/hyperliquid-trading-guide",
+  "/learn/fomc-fed-rate-crypto-guide",
+
+  // ── Day 50b — Telegram Bots & Virtuals Protocol (published Mar 17) ─────
+  "/learn/telegram-trading-bots-guide-2026",
+  "/ecosystem/virtuals-protocol",
+
+  // ── Day 51 — Crypto Card Reviews Batch 2 (published Mar 17) ─────────────
+  "/crypto-cards/reviews/bybit-card",
+  "/crypto-cards/reviews/gemini-card",
+  "/crypto-cards/reviews/nexo-card",
+  "/crypto-cards/reviews/fold-card",
+  "/crypto-cards/reviews/bitpay-card",
+
+  // ── Day 51 — Learn Guides Batch (published Mar 17) ─────────────────
+  "/learn/bitcoin-runes-guide-2026",
+  "/learn/farcaster-socialfi-guide-2026",
+
+  // ── Day 51 — Publish Cycle 2026-03-17 ─────────────────────────────
+  "/learn/stacks-sbtc-bitcoin-smart-contracts-guide-2026",
+  "/learn/liquid-restaking-tokens-compared-2026",
+
+  // ── Day 52 — Monad & Smart Wallets (published Mar 17) ────────────
+  "/learn/monad-blockchain-guide",
+  "/learn/smart-wallets-account-abstraction-guide",
+
+  // ── Day 53 — Hyperliquid & Oracles (published Mar 17) ───────────
+  "/ecosystem/hyperliquid",
+  "/learn/crypto-oracles-guide-2026",
+
+  // ── Day 54 — DeFi Insurance & Airdrop Farming (published Mar 17) ──
+  "/learn/defi-insurance-guide-2026",
+  "/learn/airdrop-farming-guide-2026",
+
+  // ── Day 55 — Cross-Chain Interop & DAO Governance (published Mar 17) ──
+  "/learn/cross-chain-interoperability-guide-2026",
+  "/learn/dao-governance-voting-guide-2026",
+
+  // ── Day 56 — Sui Blockchain & Portfolio Rebalancing (published Mar 17) ──
+  "/learn/sui-blockchain-guide-2026",
+  "/learn/crypto-portfolio-rebalancing-guide-2026",
+
+  // ── Day 57 — Bitcoin Liquid Staking Tokens (published Mar 17) ──────────
+  "/learn/bitcoin-liquid-staking-tokens-guide-2026",
+
+  // ── Day 58 — Aerodrome Finance Guide (published Mar 17) ─────────────────
+  "/learn/aerodrome-finance-guide",
+
+  // ── Day 59 — Karak Network & Fluid Protocol (published Mar 17) ─────────
+  "/learn/karak-network-guide",
+  "/learn/fluid-protocol-guide",
+
+  // ── Day 60 — Yield-Bearing Stablecoins (published Mar 17) ─────────────
+  "/learn/yield-bearing-stablecoins",
+
+  // ── Day 61 — GPU Compute & DeFi Insurance Guides (published Mar 17) ──
+  "/learn/decentralized-gpu-compute-networks-guide",
+  "/learn/defi-insurance-guide-2026",
+
+  // ── Day 62 — Solana ETF & Crypto Payroll (published Mar 17) ──────────
+  "/learn/solana-etf-guide-2026",
+  "/learn/crypto-payroll-guide-2026",
 ]);
 
 /**
@@ -475,9 +592,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
  * Move slugs up into PUBLISHED_PAGES each day.
  */
 export const PUBLISH_QUEUE: readonly string[] = [
-  // Remaining queue — next publish cycle
-  "/learn/advanced-defi-strategies",
-  "/news",
+  // ── Queue empty — all pages promoted Mar 17, 2026 ─────────────
 ];
 
 /**
