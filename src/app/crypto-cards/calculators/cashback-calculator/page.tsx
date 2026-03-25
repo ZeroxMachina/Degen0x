@@ -125,7 +125,7 @@ export default function CashbackCalculatorPage() {
           { label: "Home", href: "/" },
           { label: "Crypto Cards", href: "/crypto-cards" },
           { label: "Calculators", href: "/crypto-cards/calculators" },
-          { label: "Cashback Calculator", href: "#" },
+          { label: "Cashback Calculator" },
         ]}
       />
 
@@ -156,6 +156,7 @@ export default function CashbackCalculatorPage() {
                       max={50000}
                       value={spending[cat.key]}
                       onChange={(e) => updateSpending(cat.key, Number(e.target.value))}
+                      aria-label={`Monthly ${cat.label} spending in USD`}
                       className="flex-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                     />
                   </div>
@@ -242,7 +243,7 @@ export default function CashbackCalculatorPage() {
                       <div className="mt-2 grid grid-cols-5 gap-1">
                         {CATEGORIES.map((cat) => (
                           <div key={cat.key} className="text-center">
-                            <p className="text-[10px] text-[var(--color-text-secondary)]">{cat.label}</p>
+                            <p className="text-xs text-[var(--color-text-secondary)]">{cat.label}</p>
                             <p className="text-xs font-medium text-[var(--color-text)]">
                               {result.card.rates[cat.key]}%
                             </p>

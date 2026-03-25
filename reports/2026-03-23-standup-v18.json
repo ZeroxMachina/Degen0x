@@ -1,0 +1,84 @@
+{
+  "date": "2026-03-23",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Day 70 standup #18: Since v17, build shipped Tokenized Gold + AMM/LP guides, design fixed critical FAQ schema bug on 64+ pages + 7 OG images, community drafted 6 tweets + newsletter v8 + 2 SVG cards, publish promoted 5 crypto-cards/loans pages, eod confirmed 704 uncommitted stable. 89 agent runs today ($7,556). Git locks Day 8 — deploy gap now 139+ pages.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v17: Full 6-agent rotation completed — build-v16 (Tokenized Gold + AMM/LP guides), design-v2 (critical FAQ schema fix + 7 OG images + responsive h1 on 5 pages), community-v15 (6 tweets + newsletter v8 + 2 SVG cards), eod-v16 (704 uncommitted, TS 42 stable), publish-v9 (5 crypto-cards/loans pages promoted).",
+          "BUILD-V16 OUTPUT: 2 new learn guides — Tokenized Gold Guide 2026 (~3K words, XAUT vs PAXG head-to-head, $6B market, DeFi use cases, risk checklist) and AMM & Liquidity Pools Guide 2026 (~3K words, x*y=k formula, Uniswap V4 hooks, top 5 platform comparison, IL calculation). Both with full SEO metadata and PUBLISH_QUEUE batch 15.",
+          "DESIGN CRITICAL FIX: generateFAQSchema was producing undefined values in Google rich results on 64+ learn pages — now supports both q/a shorthand and question/answer formats. combineSchemas fixed to accept variadic args. 7 new OG images created (tokenized-gold, amm-lp, solana-blinks, solana-token-extensions, fusaka, bridge-security, perp-dex). Responsive h1 clamp(28px,5vw,48px) added to 5 pages.",
+          "COMMUNITY-V15 OUTPUT: 6 tweets drafted (#31-36: Monday Market Outlook, Tokenized Gold promo, AMM Guide promo, SUI Institutional 4-part thread, ETH IEF NYC hook, engagement poll). Newsletter v8 for Thu Mar 27. Discord/TG announcement for 2 new guides. 2 branded SVG cards (Tokenized Gold + Market Rebound). Content calendar v12 through Mar 30.",
+          "PUBLISH-V9 OUTPUT: 5 pages promoted from orphaned high-value categories — /crypto-cards/best/debit, /crypto-cards/best/no-annual-fee, /crypto-cards/calculators/rewards-calculator (warn: missing metadata), /crypto-loans/best/bitcoin-loans, /crypto-loans/best/stablecoin. QA: 5/5 H1, 4/5 metadata, 5/5 breadcrumbs, 0 new TS errors.",
+          "EOD-V16 QA: 704 uncommitted changes (stable from v17's 695 — recount). 42 TS errors stable. 459 slugs in PUBLISHED_PAGES, 103 orphan slugs, 356 with page.tsx. All 6 API routes files present. Git locks persist Day 8.",
+          "MARKET: BTC $70,599 sideways (was $71K in v17 — slight pullback). F&G Index at 8 (Extreme Fear, Day 47+). $400M liquidations over weekend. Bitmine bought $138M ETH (4.66M total tokens). SEC 16 digital commodities classification driving Motley Fool coverage. SUI 2x ETF approved on Nasdaq.",
+          "CUMULATIVE DAY 70: 34+ learn guides, 34+ OG images, 66+ social posts, 26+ SVG cards, 8 newsletters, 16+ QA cycles, 89 agent runs across ~15 rotations."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE STANDUP v17: Build-v16 (2 guides), design (FAQ schema critical fix + 7 OG images + 5 responsive h1s), community-v15 (6 tweets + newsletter v8 + 2 SVG cards), publish-v9 (5 pages promoted), eod-v16 (QA stable). 5 agents + this standup = 6 runs, $497 human-equivalent.",
+          "CRITICAL FIX: Design fixed generateFAQSchema bug — 64+ learn pages had broken FAQ structured data producing undefined values for Google. This was a P1 SEO issue discovered and resolved in one cycle.",
+          "PUBLISH QUEUE REFILLED: v17 flagged empty queue. Publish-v9 responded by promoting 5 orphaned crypto-cards/loans pages. Queue active again. Batch 15 also pending (Tokenized Gold + AMM/LP from build-v16).",
+          "BLOCKER [P0 — 8 DAYS]: Git locks (.git/HEAD.lock + .git/index.lock) since Mar 16. 704 uncommitted files. ALL content since Mar 17 is local-only. Requires manual: rm .git/index.lock .git/HEAD.lock",
+          "CARRY-OVER [P1 — 40+ CYCLES]: Rate limiter not wired to 6 core API routes. 4/6 routes lack fallback data.",
+          "CARRY-OVER [P1]: 2 pages with use-client + metadata conflict (unichain, appchains).",
+          "CARRY-OVER [P2]: ~103 orphan slugs without page.tsx. 42 TS errors stable (structured-data.examples.ts + crypto-index-funds).",
+          "TODAY'S AGENT RUNS: standup×18, build×16, eod×16, design×15, community×15, publish×9 = 89 total runs."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS AND DEPLOY (P0, Day 8): 704 uncommitted files. 34+ guides, 34+ OG images, 459 declared pages — all blocked from production. FAQ schema fix especially urgent — 64+ pages currently serving broken structured data to Google. Single command: rm .git/index.lock .git/HEAD.lock → commit → push → Vercel auto-deploy.",
+          "PRIORITY 2 — VERIFY FAQ SCHEMA FIX IN PRODUCTION: Once deployed, validate that FAQ rich results render correctly in Google Search Console. The generateFAQSchema fix affects 64+ pages — this is the highest-ROI SEO fix shipped today.",
+          "PRIORITY 3 — CONTINUE CONTENT VELOCITY ON TRENDING TOPICS: Tokenized gold ($6B, gold ATH), AMM/LP (Uniswap V4 hooks), SUI institutional (2x ETF on Nasdaq) — all high-intent keywords. Next build should target: stablecoin regulation (Resolv breach angle), Bitcoin halving countdown 2028 (evergreen), or Ethereum IEF/CLARITY Act coverage.",
+          "STRATEGIC NOTE: FAQ schema bug fix is a multiplier — fixing structured data on 64+ pages improves CTR across the entire learn section. Combined with 139+ pages waiting to deploy, the production gap is now an acute SEO liability. Every hour without deploy = lost indexing opportunity during BTC Extreme Fear (high-intent search traffic)."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Published Pages (declared)", "value": "459", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages in Production", "value": "~315 (8-day-old build e999560)", "pct": 69, "color": "#f59e0b" },
+          { "label": "Deploy Gap", "value": "~144+ pages not live", "pct": 31, "color": "#ef4444" },
+          { "label": "Pages with page.tsx", "value": "356 / 459", "pct": 78, "color": "#f59e0b" },
+          { "label": "Guides Built Today", "value": "34+ guides, 34+ OG images", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Content Today", "value": "66+ posts, 26+ SVG cards, 8 newsletters", "pct": 100, "color": "#4ade80" },
+          { "label": "FAQ Schema Fix", "value": "64+ pages fixed (was broken)", "pct": 100, "color": "#4ade80" },
+          { "label": "Days Since Last Deploy", "value": "8 (Mar 17, e999560)", "pct": 1, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "8 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "704 (stable)", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "42 (stable)", "pct": 28, "color": "#f59e0b" },
+          { "label": "Orphan Slugs", "value": "103 (-2 trend)", "pct": 22, "color": "#ef4444" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 core routes", "pct": 0, "color": "#ef4444" },
+          { "label": "Vercel Build", "value": "Ready (ignoreBuildErrors)", "pct": 85, "color": "#4ade80" },
+          { "label": "BTC Price", "value": "$70,599 (sideways)", "pct": 65, "color": "#f59e0b" },
+          { "label": "Fear & Greed Index", "value": "8 (Extreme Fear, Day 47+)", "pct": 8, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "6 of 6 (build, design, community, eod, publish, standup)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~10.25h", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (all 6 agents × rates)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$7,556 (89 runs: standup×18 $810, build×16 $3,728, publish×9 $495, design×15 $900, community×15 $615, eod×16 $1,008)", "pct": 63, "color": "#f59e0b" },
+          { "label": "Agent Runs Today", "value": "89 runs across 6 types (~15 rotations)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" },
+          { "label": "⚠️ Deploy-Blocked Waste", "value": "$7,556 today — git locks prevent all new content from reaching production", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API unreachable from sandbox (CORS/network egress blocked). Report saved locally. Persistent issue since v13."
+  }
+}

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#312e81"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+
+  <!-- Subtle diagonal lines -->
+  <g opacity="0.03">
+    <line x1="0" y1="0" x2="630" y2="630" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="200" y1="0" x2="830" y2="630" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="400" y1="0" x2="1030" y2="630" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="600" y1="0" x2="1200" y2="600" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Accent line top -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent2)"/>
+
+  <!-- Badge -->
+  <rect x="60" y="40" width="140" height="32" rx="16" fill="#8b5cf6" opacity="0.15"/>
+  <text x="130" y="61" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#a78bfa" text-anchor="middle" letter-spacing="1.5">DEEP DIVE</text>
+
+  <!-- Title -->
+  <text x="60" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="40" font-weight="800" fill="#f8fafc" letter-spacing="-0.5">TradFi-DeFi Convergence</text>
+  <text x="60" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="40" font-weight="800" fill="#f8fafc" letter-spacing="-0.5">2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#94a3b8">How institutions are going on-chain — and what it means for you.</text>
+
+  <!-- Four institutional player cards -->
+  <!-- JPMorgan -->
+  <rect x="60" y="240" width="260" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="80" y="272" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#e2e8f0">JPMorgan Onyx</text>
+  <text x="80" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="800" fill="#06b6d4" filter="url(#glow2)">$1B/day</text>
+  <text x="80" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b">Tokenized payments</text>
+
+  <!-- BlackRock -->
+  <rect x="340" y="240" width="260" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="360" y="272" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#e2e8f0">BlackRock BUIDL</text>
+  <text x="360" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="800" fill="#8b5cf6" filter="url(#glow2)">$1.3B</text>
+  <text x="360" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b">Tokenized treasuries</text>
+
+  <!-- Morgan Stanley -->
+  <rect x="620" y="240" width="260" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="640" y="272" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#e2e8f0">Morgan Stanley</text>
+  <text x="640" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="800" fill="#f59e0b" filter="url(#glow2)">$8T AUM</text>
+  <text x="640" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b">MSBT spot Bitcoin ETF filed</text>
+
+  <!-- RWA Market -->
+  <rect x="900" y="240" width="240" height="120" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+  <text x="920" y="272" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#e2e8f0">Tokenized RWAs</text>
+  <text x="920" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="800" fill="#22c55e" filter="url(#glow2)">$50B+</text>
+  <text x="920" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b">Projected 2026 (3x from 2025)</text>
+
+  <!-- Key themes row -->
+  <rect x="60" y="385" width="180" height="40" rx="20" fill="#8b5cf6" opacity="0.15"/>
+  <text x="150" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#a78bfa" text-anchor="middle">Tokenized RWAs</text>
+
+  <rect x="260" y="385" width="200" height="40" rx="20" fill="#06b6d4" opacity="0.15"/>
+  <text x="360" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#22d3ee" text-anchor="middle">Permissioned DeFi</text>
+
+  <rect x="480" y="385" width="200" height="40" rx="20" fill="#22c55e" opacity="0.15"/>
+  <text x="580" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#4ade80" text-anchor="middle">Institutional Custody</text>
+
+  <rect x="700" y="385" width="200" height="40" rx="20" fill="#f59e0b" opacity="0.15"/>
+  <text x="800" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#fbbf24" text-anchor="middle">Regulatory Clarity</text>
+
+  <rect x="920" y="385" width="220" height="40" rx="20" fill="#ef4444" opacity="0.15"/>
+  <text x="1030" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#f87171" text-anchor="middle">$500B+ Inst. Crypto</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="460" width="1200" height="170" fill="#0f172a" opacity="0.7"/>
+  <rect x="0" y="460" width="1200" height="1" fill="#334155"/>
+
+  <!-- Callout -->
+  <text x="60" y="505" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#e2e8f0">The definitive guide to institutional crypto adoption.</text>
+  <text x="60" y="535" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#94a3b8">Covers JPMorgan, BlackRock, Goldman Sachs, Citi — what they're building and why.</text>
+  <text x="60" y="575" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="url(#accent2)">degen0x.com/learn/tradfi-defi-convergence-guide-2026</text>
+
+  <!-- Bottom right: Logo -->
+  <text x="1080" y="530" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#f8fafc" text-anchor="middle">degen0x</text>
+  <text x="1080" y="555" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">FREE CRYPTO TOOLS &amp; GUIDES</text>
+
+  <!-- Accent line bottom -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accent2)"/>
+</svg>

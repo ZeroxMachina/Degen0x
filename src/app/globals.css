@@ -277,9 +277,31 @@ body::before {
 }
 
 /* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== REDUCED MOTION ========== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========== FOCUS STYLES ========== */
+button:focus-visible,
+a:focus-visible,
+[role="tab"]:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 @keyframes glowPulse {
   0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.08); }
@@ -325,3 +347,183 @@ body::before {
   color: #818cf8;
   border-bottom-color: rgba(99, 102, 241, 0.7);
 }
+
+/* ================================================================
+   SPRINT 51 — MOBILE UX AUDIT (375px)
+   Zero horizontal scroll. Touch targets ≥ 44px. Fluid type.
+   ================================================================ */
+
+/* 1. Prevent all horizontal overflow */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Touch-friendly tap targets — all interactive elements */
+@media (max-width: 768px) {
+  button, a, [role="button"], input, select, textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* 3. Fluid type — prevent tiny text on mobile */
+  html {
+    font-size: clamp(14px, 4vw, 16px);
+  }
+
+  /* 4. Navigation — horizontal scroll for nav on small screens */
+  nav, .nav-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+
+  /* 5. Tables — horizontal scroll, no layout break */
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* 6. Images — never overflow their containers */
+  img, svg, video, canvas, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 7. Code blocks — scrollable, no horizontal overflow */
+  pre, code {
+    overflow-x: auto;
+    max-width: 100%;
+    word-break: break-word;
+  }
+
+  /* 8. Grid/Flex — collapse to single column */
+  .stats-grid, .tools-grid, .cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 9. Article content — comfortable reading padding */
+  article {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* 10. Modals — full width with safe-area insets */
+  .modal, [role="dialog"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border-radius: 16px 16px 0 0 !important;
+    bottom: 0 !important;
+    top: auto !important;
+    position: fixed !important;
+    padding-bottom: env(safe-area-inset-bottom) !important;
+  }
+
+  /* 11. Hero sections — reduce padding/font-size */
+  .hero-title {
+    font-size: clamp(1.75rem, 7vw, 3rem) !important;
+  }
+
+  /* 12. Sidebar → bottom on mobile */
+  .sidebar {
+    position: static !important;
+    width: 100% !important;
+    border-top: 1px solid var(--color-border);
+    margin-top: 24px;
+  }
+
+  /* 13. Horizontal scroll containers (tags, tabs, filters) */
+  .horizontal-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+  .horizontal-scroll::-webkit-scrollbar { display: none; }
+
+  /* 14. Bottom safe area padding for fixed bottom bars */
+  .bottom-bar, .sticky-cta {
+    padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+
+  /* 15. Input font size — prevent iOS zoom on focus */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Ultra-small screens (375px iPhone SE) */
+@media (max-width: 390px) {
+  .hide-xs { display: none !important; }
+
+  h1 { font-size: clamp(1.5rem, 8vw, 2.5rem); }
+  h2 { font-size: clamp(1.25rem, 6vw, 2rem); }
+
+  .stat-value, .metric-number {
+    font-size: clamp(1.25rem, 6vw, 2rem) !important;
+  }
+
+  /* Compact card padding */
+  .card, .surface-card {
+    padding: 12px !important;
+    border-radius: 12px !important;
+  }
+}
+
+/* Tablet (768–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .desktop-only { display: none; }
+  article {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
+/* Focus styles for accessibility (keyboard + touch) */
+:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Smooth scroll globally */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Prevent text selection on UI elements */
+button, .tag, .badge, nav a {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Tap highlight removal on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hover underline utility for server components */
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+/* Focus visible utility for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+

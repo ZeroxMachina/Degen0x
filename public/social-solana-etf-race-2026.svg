@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="solGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9945FF"/>
+      <stop offset="100%" stop-color="#14F195"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="roundCard1"><rect x="60" y="280" width="165" height="180" rx="14"/></clipPath>
+    <clipPath id="roundCard2"><rect x="245" y="280" width="165" height="180" rx="14"/></clipPath>
+    <clipPath id="roundCard3"><rect x="430" y="280" width="165" height="180" rx="14"/></clipPath>
+    <clipPath id="roundCard4"><rect x="615" y="280" width="165" height="180" rx="14"/></clipPath>
+    <clipPath id="roundCard5"><rect x="800" y="280" width="165" height="180" rx="14"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative gradient orbs -->
+  <circle cx="200" cy="150" r="180" fill="#9945FF" opacity="0.06" filter="url(#softGlow)"/>
+  <circle cx="900" cy="400" r="200" fill="#14F195" opacity="0.04" filter="url(#softGlow)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#solGrad)"/>
+
+  <!-- Badge: NEW GUIDE -->
+  <rect x="60" y="40" width="120" height="30" rx="15" fill="#9945FF" opacity="0.2"/>
+  <rect x="60" y="40" width="120" height="30" rx="15" fill="none" stroke="#9945FF" stroke-width="1" opacity="0.5"/>
+  <text x="120" y="60" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd" text-anchor="middle" letter-spacing="0.08em">NEW GUIDE</text>
+
+  <!-- SOL ticker pill -->
+  <rect x="200" y="40" width="70" height="30" rx="15" fill="#14F195" opacity="0.15"/>
+  <text x="235" y="60" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#14F195" text-anchor="middle">$SOL</text>
+
+  <!-- Main title -->
+  <text x="60" y="130" font-family="Inter, sans-serif" font-size="48" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">THE SOLANA ETF RACE</text>
+  <text x="60" y="180" font-family="Inter, sans-serif" font-size="28" font-weight="400" fill="#8b949e">6 issuers filed. Who leads the pack?</text>
+
+  <!-- Divider line -->
+  <rect x="60" y="210" width="80" height="3" rx="1.5" fill="url(#solGrad)"/>
+
+  <!-- Subtitle context -->
+  <text x="60" y="250" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#6e7681">Approval timeline · Staking yield advantage · Issuer comparison</text>
+
+  <!-- 5 Issuer cards -->
+  <!-- Card 1: VanEck -->
+  <rect x="60" y="280" width="165" height="180" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="60" y="280" width="165" height="4" rx="2" fill="#9945FF"/>
+  <text x="142" y="320" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="middle">VanEck</text>
+  <text x="142" y="345" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#9945FF" text-anchor="middle">FIRST MOVER</text>
+  <line x1="100" y1="360" x2="185" y2="360" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="142" y="385" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Staking-inclusive</text>
+  <text x="142" y="405" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">proposal</text>
+  <text x="142" y="440" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#14F195" text-anchor="middle">●</text>
+
+  <!-- Card 2: 21Shares -->
+  <rect x="245" y="280" width="165" height="180" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="245" y="280" width="165" height="4" rx="2" fill="#06b6d4"/>
+  <text x="327" y="320" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="middle">21Shares</text>
+  <text x="327" y="345" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#06b6d4" text-anchor="middle">INSTITUTIONAL</text>
+  <line x1="285" y1="360" x2="370" y2="360" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="327" y="385" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Coinbase custody</text>
+  <text x="327" y="405" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Institutional focus</text>
+  <text x="327" y="440" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#14F195" text-anchor="middle">●</text>
+
+  <!-- Card 3: Grayscale -->
+  <rect x="430" y="280" width="165" height="180" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="430" y="280" width="165" height="4" rx="2" fill="#f59e0b"/>
+  <text x="512" y="320" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="middle">Grayscale</text>
+  <text x="512" y="345" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#f59e0b" text-anchor="middle">TRUST CONVERT</text>
+  <line x1="470" y1="360" x2="555" y2="360" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="512" y="385" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Converting GSOL</text>
+  <text x="512" y="405" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">trust to ETF</text>
+  <text x="512" y="440" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#14F195" text-anchor="middle">●</text>
+
+  <!-- Card 4: Canary -->
+  <rect x="615" y="280" width="165" height="180" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="615" y="280" width="165" height="4" rx="2" fill="#8b5cf6"/>
+  <text x="697" y="320" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="middle">Canary</text>
+  <text x="697" y="345" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#8b5cf6" text-anchor="middle">MULTI-ASSET</text>
+  <line x1="655" y1="360" x2="740" y2="360" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="697" y="385" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Multi-asset</text>
+  <text x="697" y="405" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">approach</text>
+  <text x="697" y="440" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#14F195" text-anchor="middle">●</text>
+
+  <!-- Card 5: Bitwise -->
+  <rect x="800" y="280" width="165" height="180" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="800" y="280" width="165" height="4" rx="2" fill="#22c55e"/>
+  <text x="882" y="320" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="middle">Bitwise</text>
+  <text x="882" y="345" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#22c55e" text-anchor="middle">LOW-COST</text>
+  <line x1="840" y1="360" x2="925" y2="360" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="882" y="385" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Low-cost beta</text>
+  <text x="882" y="405" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">play</text>
+  <text x="882" y="440" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#14F195" text-anchor="middle">●</text>
+
+  <!-- Right side: key stats -->
+  <rect x="990" y="280" width="170" height="85" rx="12" fill="rgba(153,69,255,0.1)" stroke="rgba(153,69,255,0.2)" stroke-width="1"/>
+  <text x="1075" y="310" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#c4b5fd" text-anchor="middle" letter-spacing="0.05em">STAKING YIELD</text>
+  <text x="1075" y="345" font-family="Inter, sans-serif" font-size="28" font-weight="900" fill="#14F195" text-anchor="middle">6-8%</text>
+
+  <rect x="990" y="375" width="170" height="85" rx="12" fill="rgba(20,241,149,0.08)" stroke="rgba(20,241,149,0.15)" stroke-width="1"/>
+  <text x="1075" y="405" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#86efac" text-anchor="middle" letter-spacing="0.05em">ISSUERS FILED</text>
+  <text x="1075" y="440" font-family="Inter, sans-serif" font-size="28" font-weight="900" fill="#e6edf3" text-anchor="middle">6</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="500" width="1200" height="130" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="500" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- degen0x logo text -->
+  <text x="60" y="555" font-family="Inter, sans-serif" font-size="22" font-weight="900" fill="url(#brand)" letter-spacing="-0.02em">degen0x</text>
+  <text x="60" y="580" font-family="Inter, sans-serif" font-size="13" fill="#6e7681">degen0x.com/learn/solana-etf-guide-2026</text>
+
+  <!-- Bottom right tagline -->
+  <text x="1140" y="555" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#8b949e" text-anchor="end">The next ETF frontier</text>
+  <text x="1140" y="580" font-family="Inter, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">Approval timeline · Issuer deep dives · Staking thesis</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#solGrad)"/>
+</svg>

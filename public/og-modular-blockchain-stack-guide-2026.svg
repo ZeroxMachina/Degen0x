@@ -1,0 +1,110 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="950" cy="250" r="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="150" cy="450" r="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent bar top -->
+  <rect width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative glows -->
+  <circle cx="950" cy="250" r="280" fill="url(#glow1)"/>
+  <circle cx="150" cy="450" r="250" fill="url(#glow2)"/>
+
+  <!-- Modular stack diagram -->
+  <g transform="translate(800, 130)" opacity="0.85">
+    <!-- DA Layer -->
+    <rect x="0" y="0" width="320" height="70" rx="12" fill="rgba(6,182,212,0.08)" stroke="rgba(6,182,212,0.35)" stroke-width="1.5"/>
+    <text x="24" y="30" fill="#06b6d4" font-size="11" font-weight="600" font-family="Inter, sans-serif" text-transform="uppercase" letter-spacing="0.08em">DATA AVAILABILITY</text>
+    <text x="24" y="52" fill="#8b949e" font-size="13" font-family="Inter, sans-serif">Celestia · EigenDA · Avail</text>
+    <circle cx="296" cy="35" r="14" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
+    <text x="296" y="40" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="700" font-family="Inter, sans-serif">DA</text>
+
+    <!-- Connector -->
+    <line x1="160" y1="70" x2="160" y2="90" stroke="#30363d" stroke-width="1" stroke-dasharray="4,3"/>
+
+    <!-- Execution Layer -->
+    <rect x="0" y="90" width="320" height="70" rx="12" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.35)" stroke-width="1.5"/>
+    <text x="24" y="120" fill="#818cf8" font-size="11" font-weight="600" font-family="Inter, sans-serif" letter-spacing="0.08em">EXECUTION</text>
+    <text x="24" y="142" fill="#8b949e" font-size="13" font-family="Inter, sans-serif">Arbitrum · zkSync · StarkNet</text>
+    <circle cx="296" cy="125" r="14" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.4)" stroke-width="1"/>
+    <text x="296" y="130" text-anchor="middle" fill="#818cf8" font-size="12" font-weight="700" font-family="Inter, sans-serif">EX</text>
+
+    <!-- Connector -->
+    <line x1="160" y1="160" x2="160" y2="180" stroke="#30363d" stroke-width="1" stroke-dasharray="4,3"/>
+
+    <!-- Settlement Layer -->
+    <rect x="0" y="180" width="320" height="70" rx="12" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.35)" stroke-width="1.5"/>
+    <text x="24" y="210" fill="#f59e0b" font-size="11" font-weight="600" font-family="Inter, sans-serif" letter-spacing="0.08em">SETTLEMENT</text>
+    <text x="24" y="232" fill="#8b949e" font-size="13" font-family="Inter, sans-serif">Ethereum L1 · Dymension</text>
+    <circle cx="296" cy="215" r="14" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.4)" stroke-width="1"/>
+    <text x="296" y="220" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="700" font-family="Inter, sans-serif">SL</text>
+
+    <!-- Connector -->
+    <line x1="160" y1="250" x2="160" y2="270" stroke="#30363d" stroke-width="1" stroke-dasharray="4,3"/>
+
+    <!-- Consensus Layer -->
+    <rect x="0" y="270" width="320" height="70" rx="12" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.35)" stroke-width="1.5"/>
+    <text x="24" y="300" fill="#22c55e" font-size="11" font-weight="600" font-family="Inter, sans-serif" letter-spacing="0.08em">CONSENSUS</text>
+    <text x="24" y="322" fill="#8b949e" font-size="13" font-family="Inter, sans-serif">ETH PoS · Shared Sequencers</text>
+    <circle cx="296" cy="305" r="14" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.4)" stroke-width="1"/>
+    <text x="296" y="310" text-anchor="middle" fill="#22c55e" font-size="12" font-weight="700" font-family="Inter, sans-serif">CS</text>
+  </g>
+
+  <!-- Logo -->
+  <g transform="translate(60, 40)">
+    <circle cx="16" cy="16" r="16" fill="url(#titleGrad)" opacity="0.9"/>
+    <text x="16" y="21" text-anchor="middle" fill="white" font-size="13" font-weight="800" font-family="Inter, sans-serif">0x</text>
+    <text x="42" y="22" fill="#e6edf3" font-size="16" font-weight="700" font-family="Inter, sans-serif">degen0x</text>
+  </g>
+
+  <!-- Category badge -->
+  <rect x="60" y="120" width="120" height="28" rx="6" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="120" y="139" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="600" font-family="Inter, sans-serif">Infrastructure</text>
+
+  <!-- Title -->
+  <text x="60" y="205" fill="url(#titleGrad)" font-size="44" font-weight="800" font-family="Inter, sans-serif" letter-spacing="-0.02em">Modular Blockchain</text>
+  <text x="60" y="258" fill="url(#titleGrad)" font-size="44" font-weight="800" font-family="Inter, sans-serif" letter-spacing="-0.02em">Stack Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="310" fill="#8b949e" font-size="20" font-family="Inter, sans-serif">DA, Execution & Settlement layers explained</text>
+
+  <!-- Key stats -->
+  <g transform="translate(60, 360)">
+    <rect x="0" y="0" width="160" height="36" rx="8" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.25)" stroke-width="1"/>
+    <text x="80" y="23" text-anchor="middle" fill="#06b6d4" font-size="13" font-weight="700" font-family="Inter, sans-serif">100 MB/s EigenDA</text>
+
+    <rect x="175" y="0" width="175" height="36" rx="8" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.25)" stroke-width="1"/>
+    <text x="262" y="23" text-anchor="middle" fill="#818cf8" font-size="13" font-weight="700" font-family="Inter, sans-serif">70% Adoption 2026</text>
+
+    <rect x="365" y="0" width="160" height="36" rx="8" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.25)" stroke-width="1"/>
+    <text x="445" y="23" text-anchor="middle" fill="#f59e0b" font-size="13" font-weight="700" font-family="Inter, sans-serif">55x Cost Savings</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect y="600" width="1200" height="30" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="620" fill="#6e7681" font-size="13" font-family="Inter, sans-serif">degen0x.com</text>
+  <text x="1140" y="620" text-anchor="end" fill="#6e7681" font-size="13" font-family="Inter, sans-serif">March 2026</text>
+</svg>

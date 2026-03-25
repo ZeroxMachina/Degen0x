@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0f1729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="4" fill="url(#accent)"/>
+
+  <circle cx="900" cy="250" r="180" fill="#8b5cf6" opacity="0.04"/>
+  <circle cx="300" cy="500" r="100" fill="#06b6d4" opacity="0.03"/>
+
+  <text x="60" y="58" font-family="Inter, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#6366f1" letter-spacing="0.05em">degen0x</text>
+
+  <text x="60" y="200" font-family="Inter, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">Portfolio Risk Scorer</text>
+  <text x="60" y="260" font-family="Inter, -apple-system, sans-serif" font-size="38" font-weight="800" fill="url(#accent)" letter-spacing="-0.02em">Comprehensive Risk Analysis</text>
+
+  <text x="60" y="310" font-family="Inter, -apple-system, sans-serif" font-size="20" fill="#8b949e">Volatility, concentration, correlation, liquidity &amp; smart contract risk</text>
+
+  <!-- Risk gauge visual -->
+  <g transform="translate(800, 100)">
+    <circle cx="130" cy="130" r="110" fill="none" stroke="#30363d" stroke-width="16"/>
+    <circle cx="130" cy="130" r="110" fill="none" stroke="#3fb950" stroke-width="16"
+      stroke-dasharray="220 691" stroke-linecap="round" transform="rotate(-90 130 130)"/>
+    <text x="130" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="900" fill="#e6edf3">32</text>
+    <text x="130" y="155" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#3fb950" font-weight="600">Low Risk</text>
+  </g>
+
+  <!-- Risk breakdown bars -->
+  <g transform="translate(60, 370)">
+    <text font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Volatility</text>
+    <rect x="120" y="-10" width="400" height="8" rx="4" fill="#30363d"/>
+    <rect x="120" y="-10" width="180" height="8" rx="4" fill="#3fb950"/>
+
+    <text y="30" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Concentration</text>
+    <rect x="120" y="20" width="400" height="8" rx="4" fill="#30363d"/>
+    <rect x="120" y="20" width="240" height="8" rx="4" fill="#d29922"/>
+
+    <text y="60" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Correlation</text>
+    <rect x="120" y="50" width="400" height="8" rx="4" fill="#30363d"/>
+    <rect x="120" y="50" width="140" height="8" rx="4" fill="#3fb950"/>
+
+    <text y="90" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Liquidity</text>
+    <rect x="120" y="80" width="400" height="8" rx="4" fill="#30363d"/>
+    <rect x="120" y="80" width="80" height="8" rx="4" fill="#3fb950"/>
+
+    <text y="120" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Smart Contract</text>
+    <rect x="120" y="110" width="400" height="8" rx="4" fill="#30363d"/>
+    <rect x="120" y="110" width="120" height="8" rx="4" fill="#3fb950"/>
+  </g>
+
+  <!-- Template labels -->
+  <g transform="translate(700, 390)">
+    <rect width="440" height="90" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="20" y="24" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">QUICK TEMPLATES</text>
+    <rect x="20" y="38" width="90" height="30" rx="8" fill="rgba(63,185,80,0.15)" stroke="#3fb950" stroke-width="1"/>
+    <text x="65" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#3fb950">Conservative</text>
+    <rect x="120" y="38" width="75" height="30" rx="8" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1"/>
+    <text x="157" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#06b6d4">Balanced</text>
+    <rect x="205" y="38" width="80" height="30" rx="8" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="1"/>
+    <text x="245" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#f59e0b">Aggressive</text>
+    <rect x="295" y="38" width="80" height="30" rx="8" fill="rgba(248,81,73,0.15)" stroke="#f85149" stroke-width="1"/>
+    <text x="335" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#f85149">Full Degen</text>
+  </g>
+
+  <rect y="610" width="1200" height="20" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="624" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#6e7681">degen0x.com</text>
+  <text x="1140" y="624" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#6e7681">Free · No Sign-up Required</text>
+</svg>

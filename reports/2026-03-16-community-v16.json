@@ -1,0 +1,105 @@
+{
+  "date": "2026-03-16",
+  "block": "community",
+  "version": "v16",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v16 (Mar 16): Bitcoin Treasury Companies guide + Crypto Debit Cards guide launch as new narrative angles; 6-post BTC treasury thread drafted; FOMC-week (T-2) DCA + debit card posts added; newsletter updated with both new guides (subject lines G/H/I); 1 new SVG social card created (social-bitcoin-treasury-companies-2026.svg); full posting schedule extended through Wed Mar 18.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Twitter thread (Mon Mar 16, 6 posts): Bitcoin Treasury Companies — '172 companies, $100B+, Strategy 687K BTC' narrative; DAT framework explained; counterarguments included; CTA to /learn/bitcoin-treasury-companies-guide",
+          "Tweet (Mon Mar 16): Bitcoin treasury single punchy post — 'Strategy bought when it was a reckless bet. 687K BTC later, 172 companies copied the playbook'; CTA to guide",
+          "Discord/Telegram (Mon Mar 16): Bitcoin treasury guide drop — full company count, DAT framework, Trump SBR political angle, direct URL",
+          "Tweet (Tue Mar 17): Crypto debit cards launch — Coinbase 4% back, Crypto.com 8% Obsidian, Bybit direct spend, Nexo earn-while-spend; CTA to /learn/crypto-debit-cards-guide-2026",
+          "Tweet (Tue Mar 17, pre-scheduled Wed): Crypto debit cards FOMC angle — 'Fed holds or cuts, your crypto earns cashback either way'; CTA to debit cards guide",
+          "Discord/Telegram (Tue Mar 17): Crypto debit cards drop — full comparison framing, Visa/Mastercard spend angle",
+          "Tweet (Wed Mar 18 — FOMC Day): DCA calculator tie-in — 'Three scenarios: Fed holds/cuts/surprises. One strategy that works regardless: DCA'; CTA to /tools/dca-calculator",
+          "Newsletter (Thu Mar 19): v16 additions — Bitcoin Treasury + Debit Cards sections added after exchange reviews; 3 new subject line variants (G/H/I)"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          {
+            "label": "/tools/bloomberg-screener",
+            "value": "Sprint 58 launch — live DefiLlama data, top engagement",
+            "pct": 98,
+            "color": "#06b6d4"
+          },
+          {
+            "label": "/tools/dca-calculator",
+            "value": "Evergreen #1 + FOMC urgency Wed Mar 18",
+            "pct": 95,
+            "color": "#4ade80"
+          },
+          {
+            "label": "/learn/bitcoin-treasury-companies-guide",
+            "value": "NET-NEW today — 172 companies, $100B+ DAT angle",
+            "pct": 94,
+            "color": "#f59e0b"
+          },
+          {
+            "label": "/learn/crypto-debit-cards-guide-2026",
+            "value": "NET-NEW today — high evergreen search intent, practical angle",
+            "pct": 91,
+            "color": "#818cf8"
+          },
+          {
+            "label": "/learn/crypto-tax-guide-2026",
+            "value": "30 days to April 15 — peak search window",
+            "pct": 92,
+            "color": "#f59e0b"
+          },
+          {
+            "label": "/learn/ethereum-pectra-upgrade-guide",
+            "value": "22-day countdown to Pectra mainnet Apr 10",
+            "pct": 90,
+            "color": "#4ade80"
+          },
+          {
+            "label": "/learn/payfi-guide",
+            "value": "Net-new Mar 16 — $2.27B sector, Huma calculator live",
+            "pct": 93,
+            "color": "#a78bfa"
+          },
+          {
+            "label": "/learn/btcfi-bitcoin-defi-guide-2026",
+            "value": "Net-new Mar 15 — $7.1B TVL, Sat Mar 21 thread queued",
+            "pct": 86,
+            "color": "#22d3ee"
+          }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-bitcoin-treasury-companies-2026.svg — 1200×630 social card: left-side hero with BTC ₿ icon, title 'Bitcoin Treasury Companies 2026', subtitle '172+ companies $100B+ in corporate BTC', 3 stat pills (172+ public companies / 687K BTC Strategy / $100B+ total), NEW badge; right-side glass leaderboard panel showing top 5 holders (Strategy 687K, MARA 44K, Metaplanet 35K, Coinbase 9.4K, Tesla 10K) with proportional gradient bars, DAT framework callout box, Trump SBR note. Saved to /public/social-bitcoin-treasury-companies-2026.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "Site is Day 33 — GSC organic signals accumulating past the day 14–21 window; both new guides indexed same day as publish",
+          "Bitcoin treasury companies is a high-intent keyword cluster with mostly news coverage (not evergreen guides) — strong SEO opportunity; Trump SBR narrative gives political macro angle that differentiates from financial media coverage",
+          "Crypto debit cards is a purely evergreen, high-volume search term ('best crypto debit card 2026') targeting non-DeFi-native users — widens addressable audience beyond on-chain power users",
+          "FOMC meeting Wed Mar 18 (T-2 days) creates urgency window for DCA calculator + 'macro-agnostic spending' debit card angle",
+          "April 15 US tax deadline: 30 days — tax guide in every newsletter and post footer",
+          "Pectra upgrade: 22 days to April 10 mainnet — EIP-7702 smart accounts angle; BTCFi thread queued for Sat Mar 21",
+          "Social drafts v16 saved to /reports/community-drafts/2026-03-16-social-drafts-v16.md"
+        ]
+      }
+    ],
+    "skills_used": [
+      "analytics",
+      "communityManager",
+      "graphicDesigner"
+    ],
+    "files_created": [
+      "reports/community-drafts/2026-03-16-social-drafts-v16.md",
+      "public/social-bitcoin-treasury-companies-2026.svg",
+      "reports/2026-03-16-community-v16.json"
+    ]
+  }
+}

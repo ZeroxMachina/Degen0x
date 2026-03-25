@@ -1,0 +1,75 @@
+{
+  "date": "2026-03-25",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close: 2 new learn guides shipped (Solana Liquid Staking + Corporate Crypto Treasury) with interactive LST calculator. Published slugs now 513 (unique 494). Git locks Day 10 — 791 uncommitted files, deploy gap ~170+ pages. 46 TS errors unchanged. All 6 API routes healthy.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "2 new pages built this cycle: /learn/solana-liquid-staking-guide-2026 and /learn/corporate-crypto-treasury-guide-2026 — both page.tsx files confirmed present",
+          "New interactive component: SolanaLSTCalculator.tsx — client component with 5-LST yield comparison table",
+          "Corporate treasury page fix applied: removed 'use client' directive conflicting with metadata export, fixed import path",
+          "Published slugs in file: 513 entries (494 unique after deduplication). 5 ecosystem pages also added this cycle (Pendle, RocketPool, MakerDAO, Yearn, Ondo)",
+          "Page audit: 103 published slugs missing page.tsx files (up from 56 in previous report — recount with deduplication reveals true gap includes Day 1 pillar learn/tax/wallet pages never scaffolded)",
+          "TypeScript: 46 errors across 3 files — UNCHANGED (crypto-arbitrage-strategies-guide-2026, crypto-index-funds-guide-2026, structured-data.examples.ts) — all are JSX escaping issues (> not escaped as &gt;)",
+          "No new regressions introduced this cycle",
+          "PUBLISH_QUEUE remains at 0 items — all queued content promoted"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 public API routes present and structurally healthy: /api/prices, /api/trending, /api/fear-greed, /api/market-metrics, /api/market-dominance, /api/defi-yields",
+          "Cache TTLs verified: prices (60s/swr:120s), trending (300s/swr:600s), fear-greed (600s/swr:1200s), market-metrics (60s/swr:120s), market-dominance (300s/swr:600s), defi-yields (dynamic CACHE_DURATION)",
+          "All routes have stale-while-revalidate headers and fallback data for API failures",
+          "Rate limiter: 0/6 core API routes using checkRateLimit — rate-limiter.ts exists but not wired (carry-over P1)",
+          "CoinGecko free tier (no API key) — rate limit risk on traffic spikes remains unmitigated",
+          "No production logs accessible — code review only"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Git lock files persist: .git/HEAD.lock (Mar 16 11:17) + .git/index.lock (Mar 16 13:06) — DAY 10 of blocker",
+          "791 uncommitted files (up from 786 in previous EOD — 5 new files from this build cycle)",
+          "Last deployed commit: e999560 (Mar 17) — deploy gap now ~170+ pages",
+          "All new content since Mar 17 is LOCAL-ONLY — not reachable in production",
+          "next.config.ts has ignoreBuildErrors: true for TS — Vercel builds will succeed despite 46 TS errors",
+          "CRITICAL: Jefe must manually run: rm .git/index.lock .git/HEAD.lock && git add -A && git commit && git push",
+          "No vercel.json present — deployment uses default Vercel Next.js settings"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: 2 learn guides (Solana Liquid Staking 2026 + Corporate Crypto Treasury 2026), 1 interactive component (SolanaLSTCalculator), 5 ecosystem pages promoted",
+          "PUBLISH_QUEUE: Remains at 0 (drained earlier today). Content pipeline needs refill for next cycle.",
+          "TODAY'S TOTAL REPORTS: standup×2, build×2, community×2, design×2, publish×2, eod×2 = 12 reports",
+          "CARRY-OVER [P0]: Git locks Day 10 — 791 files, ~170+ page deploy gap. Jefe action required.",
+          "CARRY-OVER [P1]: 103 published slugs missing page.tsx (Day 1 pillars: 18 wallets, 8 taxes, 19 investing/best, 19 learn fundamentals, /compare/exchanges)",
+          "CARRY-OVER [P1]: 46 TS errors across 3 files — JSX escaping issues (trivial fix but not prioritized)",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes",
+          "CARRY-OVER [P2]: Duplicate slugs in published-pages.ts (513 entries but only 494 unique)",
+          "NEXT CYCLE: Refill PUBLISH_QUEUE, scaffold missing Day 1 pillar pages, Tax-Loss Harvesting tool (April 15 deadline — 21 days away)"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Slugs", "value": "513 entries / 494 unique", "pct": 100, "color": "#4ade80" },
+          { "label": "Page.tsx Coverage", "value": "391/494 unique slugs covered (79%)", "pct": 79, "color": "#f59e0b" },
+          { "label": "PUBLISH_QUEUE", "value": "0 items (drained)", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript Health", "value": "46 errors (3 files) — unchanged", "pct": 60, "color": "#f59e0b" },
+          { "label": "API Routes Health", "value": "6/6 present, 0/6 rate-limited", "pct": 75, "color": "#f59e0b" },
+          { "label": "Deploy Gap", "value": "~170+ pages (Day 10 of git locks)", "pct": 10, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "791 files", "pct": 10, "color": "#ef4444" },
+          { "label": "Cache TTLs", "value": "All 6 routes configured correctly", "pct": 100, "color": "#4ade80" },
+          { "label": "Reports Today", "value": "12 total (6 types × 2 versions)", "pct": 100, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

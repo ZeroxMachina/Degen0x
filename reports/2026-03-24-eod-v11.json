@@ -1,0 +1,66 @@
+{
+  "date": "2026-03-24",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close v11: +2 pages promoted (batch 12) bringing total to 494 published slugs. Zero new commits — deploy drift now 7 days. 762 uncommitted items (+4 from v10). 2 items remain in PUBLISH_QUEUE. 46 TS errors unchanged across 3 files.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "PAGE AUDIT: 494 slugs in PUBLISHED_PAGES (+2 from v10: /learn/tokenized-treasuries-rwa-yield-guide-2026, /tools/funding-rate-tracker promoted in batch 12). 391 have page.tsx files, 103 missing — unchanged gap.",
+          "TYPESCRIPT: 46 errors across 3 files (structured-data.examples.ts, crypto-arbitrage-strategies-guide-2026/page.tsx, crypto-index-funds-guide-2026/page.tsx) — identical to v10, non-blocking due to ignoreBuildErrors.",
+          "NO NEW REGRESSIONS: Zero commits since v10. No code changes to introduce regressions.",
+          "KNOWN ISSUES PERSIST: 103 published slugs without backing page.tsx routes (spans /learn, /wallets, /investing/best, /taxes, /blog, /defi-lending/reviews, /trading, /compare/exchanges)."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "API ROUTES LOCAL: All 6 core data route files confirmed present — prices (118L), trending (62L), fear-greed (47L), market-dominance (140L), defi-yields (149L), market-metrics (150L).",
+          "PRODUCTION STATUS: /api/market-metrics still expected 404 in production — route exists locally but is uncommitted. Other 5 routes presumed healthy from prior checks (egress blocked this cycle, cannot re-verify live).",
+          "CACHE TTLs: All properly configured — prices 60s/SWR 120s, trending 300s/SWR 600s, fear-greed 600s/SWR 1200s, market-dominance 300s/SWR 600s, defi-yields configurable/SWR 2x, market-metrics 60s.",
+          "RATE LIMITING: Zero rate limiting on all 6 core data routes — P1 carry-over. Only /api/health and /api/cache-stats have rate limiters."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "LAST DEPLOY: Commit e999560 (Mar 17) — 7 days ago. Zero commits since last deploy.",
+          "UNCOMMITTED WORK: 762 items (up from 758 in v10, delta is new report files). Includes 48 changed files with +4,339/-3,464 lines.",
+          "CRITICAL UNCOMMITTED: middleware.ts, published-pages.ts (+157 lines), 20+ new page routes, /api/market-metrics, next.config.ts, sw.js.",
+          "DEPLOY RISK [P0]: 7-day drift is critical. All 156+ pages promoted since Mar 17 are invisible to users and Google. Every hour of delay = lost indexing opportunity.",
+          "SITE STATUS: Production site serving from Mar 17 snapshot. Egress blocked this cycle — could not verify live HTTP status."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DELTA THIS CYCLE (v11 vs v10): +2 pages promoted to PUBLISHED_PAGES (batch 12: tokenized-treasuries-rwa-yield, funding-rate-tracker). +4 uncommitted items (new reports).",
+          "PUBLISH QUEUE: 2 items remaining — /learn/solana-developer-platform-sdp-guide, /learn/agentic-payments-protocols-guide-2026.",
+          "TOTAL LOCAL: 494 published slugs in local published-pages.ts. Production running ~338 from Mar 17 deploy.",
+          "ACTION REQUIRED [P0]: Commit all 762 uncommitted items and deploy to Vercel. 7 days of drift is the #1 blocker for the entire project.",
+          "ACTION REQUIRED [P1]: Fix /api/market-metrics 404 by including in next commit.",
+          "ACTION REQUIRED [P1]: Fix 46 TS errors in 3 files (structured-data.examples.ts, 2 learn pages).",
+          "ACTION REQUIRED [P2]: Drain final 2 PUBLISH_QUEUE items (solana-developer-platform, agentic-payments).",
+          "CARRY-OVER: Rate-limit 6 core API routes, build /trading page, build /compare/exchanges page, add missing page.tsx for 103 published slugs, add JSON-LD to pages missing structured data."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Slugs", "value": "494", "pct": 96, "color": "#4ade80" },
+          { "label": "Pages with page.tsx", "value": "391/494", "pct": 79, "color": "#f59e0b" },
+          { "label": "Publish Queue Remaining", "value": "2", "pct": 96, "color": "#4ade80" },
+          { "label": "API Routes (local)", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "API Routes (production)", "value": "5/6", "pct": 83, "color": "#f59e0b" },
+          { "label": "TypeScript Errors", "value": "46 in 3 files", "pct": 25, "color": "#f59e0b" },
+          { "label": "Deploy Drift", "value": "7 days", "pct": 10, "color": "#ef4444" },
+          { "label": "Uncommitted Items", "value": "762", "pct": 10, "color": "#ef4444" },
+          { "label": "Rate-Limited Routes", "value": "0/6 core", "pct": 15, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-03-17",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audit of 5 newly published/queued pages; fixed broken ArticleStructuredData props on Sui and Portfolio Rebalancing guides, replaced 3 missing static OG image refs with dynamic /api/og, fixed breadcrumb inconsistency, added BackToTop navigation to 5 long-scroll guides, created 5 SVG social cards.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Fixed ArticleStructuredData on /learn/sui-blockchain-guide-2026: replaced incorrect publishedTime/author props with required datePublished/dateModified/slug (was generating broken JSON-LD schema)",
+          "Fixed ArticleStructuredData on /learn/crypto-portfolio-rebalancing-guide-2026: replaced incorrect publishedDate/author props with required datePublished/dateModified/slug, fixed image URL from degen0x.io to degen0x.com",
+          "Fixed breadcrumb on Portfolio Rebalancing guide: removed extra 'Home' level and href='#' to match site-wide 2-level pattern (Learn → Title)",
+          "Added BackToTop component to /learn/bitcoin-liquid-staking-tokens-guide-2026 for long-scroll navigation",
+          "Added BackToTop component to /learn/cross-chain-interoperability-guide-2026 for long-scroll navigation",
+          "Added BackToTop component to /learn/dao-governance-voting-guide-2026 for long-scroll navigation",
+          "Added BackToTop component to /learn/sui-blockchain-guide-2026 for long-scroll navigation",
+          "Added BackToTop component to /learn/crypto-portfolio-rebalancing-guide-2026 for long-scroll navigation"
+        ]
+      },
+      {
+        "title": "OG Image Fixes",
+        "items": [
+          "Fixed /learn/bitcoin-liquid-staking-tokens-guide-2026: OG + Twitter images pointed to nonexistent /og-bitcoin-lst-guide.png → switched to dynamic /api/og?type=learn endpoint",
+          "Fixed /learn/bitcoin-liquid-staking-tokens-guide-2026: generateArticleSchema image also pointed to missing static file → switched to dynamic /api/og",
+          "Fixed /learn/sui-blockchain-guide-2026: ArticleStructuredData image pointed to nonexistent og-sui-guide-2026.jpg → switched to dynamic /api/og",
+          "Fixed /learn/crypto-portfolio-rebalancing-guide-2026: ArticleStructuredData image pointed to degen0x.io (wrong domain) nonexistent .jpg → switched to dynamic /api/og",
+          "Added missing Twitter images array to Bitcoin LST guide metadata (was missing, causing no Twitter card image)"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "SVG social card: og-bitcoin-lst-guide.svg (1200x630) — BTC orange/gold theme, protocol comparison cards (LBTC, SolvBTC, pumpBTC), $4B+ TVL badge",
+          "SVG social card: og-dao-governance-guide.svg (1200x630) — purple/cyan governance theme, stat cards (50,845+ DAOs, $13.6B treasuries, 28% participation)",
+          "SVG social card: og-cross-chain-interop-guide.svg (1200x630) — cyan/purple interop theme, Big Four protocol cards with key metrics, decorative chain links",
+          "SVG social card: og-sui-blockchain-guide.svg (1200x630) — Sui cyan theme, Mysticeti/TVL/Move stat cards, Layer 1 badge",
+          "SVG social card: og-portfolio-rebalancing-guide.svg (1200x630) — green/blue balanced theme, strategy cards, decorative pie chart allocation graphic"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "PUBLISH_QUEUE: /learn/bitcoin-liquid-staking-tokens-guide-2026 (fixed OG images, added BackToTop)",
+          "Recently published: /learn/dao-governance-voting-guide-2026 (added BackToTop)",
+          "Recently published: /learn/cross-chain-interoperability-guide-2026 (added BackToTop)",
+          "Recently published: /learn/sui-blockchain-guide-2026 (fixed structured data, added BackToTop)",
+          "Recently published: /learn/crypto-portfolio-rebalancing-guide-2026 (fixed structured data, breadcrumb, OG image, added BackToTop)"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

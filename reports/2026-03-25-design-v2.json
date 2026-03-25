@@ -1,0 +1,47 @@
+{
+  "date": "2026-03-25",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited 2 new pages from build-v2 cycle (Solana Liquid Staking Guide, Corporate Crypto Treasury Guide), fixed 5 UX issues including missing breadcrumb, OG metadata, input accessibility, and created 2 OG images.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Corporate Treasury Guide: Added missing 'Home' breadcrumb link (was only Learn > Guide, now Home > Learn > Guide)",
+          "Corporate Treasury Guide: Added OG image references (images array) to both openGraph and twitter metadata for proper social sharing previews",
+          "SolanaLSTCalculator: Added min/max/step HTML attributes to all 3 inputs (SOL Amount: 0-10M, Time: 1-60 months, Price: 0-100K) for mobile number picker UX",
+          "SolanaLSTCalculator: Added inputMode='decimal'/'numeric' to inputs for proper mobile keyboard display",
+          "SolanaLSTCalculator: Added aria-label attributes to all inputs for screen reader accessibility",
+          "SolanaLSTCalculator: Increased input minHeight to 44px to meet mobile touch target requirements"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: solana-liquid-staking-guide-2026 (1200x630 SVG) — Solana purple/green gradient, LST APY comparison bars (JitoSOL/mSOL/Sanctum INF/JupSOL/STKESOL), stats cards ($8B+ TVL, 60.5M SOL, 8.5% Best APY, 5+ LSTs)",
+          "OG image: corporate-crypto-treasury-guide-2026 (1200x630 SVG) — Corporate treasury holdings chart (Strategy Inc 761K BTC, Marathon, Riot, BitMine 4.66M ETH), stats cards ($80.9B market, 65.2% dominance, $12.9B ETH market, Consolidation trend)"
+        ]
+      },
+      {
+        "title": "UX Audit Findings (Build-v2 Pages)",
+        "items": [
+          "Solana LST Guide: Excellent structure — TOC, semantic sections, interactive calculator, comparison table with overflowX scroll, FAQ, related links, disclaimer. Mobile layout uses maxWidth 900px with proper padding. Category badges flex-wrap correctly.",
+          "Solana LST Guide: Comparison table has minWidth 900px which appropriately triggers horizontal scroll on mobile rather than breaking layout.",
+          "Corporate Treasury Guide: Well-structured article with semantic <article> tag, proper heading hierarchy, glass-morphism cards, FAQ section. Fixed breadcrumb and OG metadata issues.",
+          "SolanaLSTCalculator: Clean interactive component. Grid inputs responsive via minmax(160px, 1fr). Results table has overflowX auto. Summary highlight correctly identifies best-performing LST. Added accessibility improvements."
+        ]
+      }
+    ],
+    "files_modified": [
+      "src/components/SolanaLSTCalculator.tsx",
+      "src/app/learn/corporate-crypto-treasury-guide-2026/page.tsx"
+    ],
+    "files_created": [
+      "public/og-solana-liquid-staking-guide-2026.svg",
+      "public/og-corporate-crypto-treasury-guide-2026.svg",
+      "reports/2026-03-25-design-v2.json"
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "date": "2026-03-25",
+  "block": "standup",
+  "cycle": 5,
+  "report": {
+    "status": "completed",
+    "summary": "Day 72 standup v5: Delta since v4 — build-v4 shipped 2 more guides (Lido V3 stVaults + Institutional Crypto Adoption 2026). EOD-v4 flagged TS regression 46→142 errors from new pages. BTC $70,335-$71,043 (+3-4%), ETH $2,133-$2,328 (+3-10%), F&G still 11 Extreme Fear. BTC dominance jumped to 58.5-59% (was 56.4%). Stablecoins $311B (slight pullback from $316B). Industry layoffs accelerating: Algorand 25%, Crypto.com 12%, Gemini 30. Git locks Day 10 — 799 files, ~170+ page deploy gap. 25 agent runs today ($1,581). P0 unchanged: clear git locks + deploy.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v4: Build-v4 shipped Lido V3 stVaults Guide (~3,100 words, modular staking, DeFi yield loops, competitor table) + Institutional Crypto Adoption Guide (~2,800 words, BlackRock BUIDL, SEC-CFTC framework, AI convergence). EOD-v4 flagged TS error regression: 46→142 (94 new errors from lido-v3 page, likely JSX escaping). Community-v4 drafted posts #122-124 (CLARITY Act yield deal, $13.5B options expiry, F&G Day 51) + 3 SVG cards + calendar v31.",
+          "MARKET UPDATE (fresh): BTC ~$70,335-$71,043 (+3-4% 24h, holding above $70K). ETH ~$2,133-$2,328 (+3-10% across exchanges, volatile spread). F&G Index: 11 (Extreme Fear — streak continues, up 3 pts from previous reading). Total market cap: $2.41-$2.5T. BTC dominance: 58.5-59.07% (UP from 56.42% — significant jump, flight to BTC quality).",
+          "STABLECOINS UPDATE: $311B market cap (DOWN from $316B — $5B pullback). USDT: $176B (56-60% share). USDC: $74B (25% share). Top 5 still dominate. CLARITY Act stablecoin yield 99% resolved — Tillis-Alsobrooks deal reached.",
+          "INDUSTRY LAYOFFS: Algorand (-25%), Crypto.com (-12%), OP Labs (-20 headcount), Gemini (up to -30). Bear market hiring contraction deepening despite BTC recovery. Counter-cyclical opportunity for content platforms with low headcount.",
+          "QUEUE STATUS: PUBLISH_QUEUE empty (drained in v1). 67+ ecosystem pages in unpublished inventory.",
+          "LOCAL METRICS: 1,160 page.tsx files (+2 from v4). 517 published entries (499 unique, +2/+3 from v4). Deploy gap: ~170+ pages (last commit e999560, Mar 17). 799 uncommitted files. TS errors: 142 (up from 46, regression from new pages)."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE v4: Build-v4 shipped Lido V3 stVaults + Institutional Crypto Adoption guides. EOD-v4 completed full QA cycle — flagged TS regression (142 errors). Community-v4 drafted 3 new social posts + 3 SVG cards + newsletter addendum v4 + calendar v31. Design-v4 and Publish-v4 completed their cycles.",
+          "PIPELINE HEALTH: PUBLISH_QUEUE empty. 517 entries in PUBLISHED_PAGES (499 unique). 1,160 page.tsx files. Today's total across 4 full cycles + 5 standups: 8 guides, 5 ecosystem pages, 7+ OG images, 15 social posts, 11 SVG cards, 4 newsletters, 14+ UX fixes, 1 interactive calculator.",
+          "TOTAL INVENTORY: 499 unique published slugs. ~338 live in production (stale Mar 17 commit). Deploy gap: ~170+ pages (34% unreachable).",
+          "BLOCKER [P0 — DAY 10]: Git locks (.git/HEAD.lock + .git/index.lock) confirmed still present. 799 uncommitted files. ALL content since Mar 17 is local-only. Jefe action required: rm .git/index.lock .git/HEAD.lock → git add . → git commit → git push.",
+          "BLOCKER [P1]: 103+ published slugs missing page.tsx (Day 1 pillars: wallets, taxes, investing, learn fundamentals).",
+          "REGRESSION [P1]: TS errors tripled 46→142 across 5 files. New pages (lido-v3-stvaults, institutional-crypto) contributing 96 new errors. JSX escaping pattern — batch-fixable but growing error surface.",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes.",
+          "CARRY-OVER [P2]: 18 duplicate slugs in published-pages.ts (517 entries, 499 unique).",
+          "TODAY'S AGENT RUNS: standup×4→5, build×4, design×4, community×4, publish×4, eod×4 = 24 + this standup = 25 total."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS + DEPLOY (DAY 10 — CRITICAL): Deploy gap at ~170+ pages. BTC dominance surging to 59% signals institutional rotation — our institutional adoption guide and exchange reviews need to be live NOW. Every hour compounds lost organic traffic. SEC commodity classification + CLARITY Act deal = massive tailwind for crypto content SEO. One manual intervention unlocks 50%+ content increase.",
+          "PRIORITY 2 — FIX TS REGRESSION BEFORE DEPLOY: 142 errors (up from 46) must be addressed before next deploy attempt. ignoreBuildErrors:true masks these but they represent growing tech debt. Next build cycle should batch-fix JSX escaping across all 5 affected files before any new content.",
+          "PRIORITY 3 — TAX PAGES (APRIL 15 = 21 DAYS): 8 tax-related published slugs have no page.tsx. Tax season search volume peaks in next 2 weeks. This is a hard deadline — after April 15, traffic drops 90%. Scaffold tax pages NOW.",
+          "STRATEGIC NOTE: BTC dominance jump from 56.4% to 59% signals risk-off within crypto — capital flowing from alts to BTC. Combined with industry layoffs (Algorand, Crypto.com, Gemini), the market is pricing in a flight-to-quality. Yet stablecoins still $311B and institutional adoption accelerating (BlackRock BUIDL $2.85B, tokenized RWA $35.6B). This divergence suggests smart money is positioning while retail panics. Our DCA calculator, fear-greed content, and institutional guides are exactly what people search during these regimes. Agent spend today: $1,581 across 25 runs. Deploy unlocks ~$8K+ of accumulated content value."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel operational)", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Slugs", "value": "517 entries / 499 unique (+3/+3 from v4)", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "0 items (drained)", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages in Production", "value": "~338 (stale commit e999560, Mar 17)", "pct": 67, "color": "#ef4444" },
+          { "label": "Deploy Gap", "value": "~170+ pages not live (34% unreachable)", "pct": 34, "color": "#ef4444" },
+          { "label": "Total page.tsx Files", "value": "1,160 (+2 since v4)", "pct": 100, "color": "#4ade80" },
+          { "label": "Missing page.tsx", "value": "103+ published slugs without page.tsx", "pct": 20, "color": "#ef4444" },
+          { "label": "Today's Output", "value": "8 guides, 5 ecosystem pages, 7+ OG images, 15 posts, 1 calc, 14+ UX fixes", "pct": 100, "color": "#4ade80" },
+          { "label": "Days Since Last Deploy", "value": "8 (Mar 17, e999560)", "pct": 1, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "10 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "799", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "142 (UP from 46 — regression)", "pct": 15, "color": "#ef4444" },
+          { "label": "API Routes", "value": "6/6 present, 0/6 rate-limited", "pct": 75, "color": "#f59e0b" },
+          { "label": "Duplicate Slugs", "value": "18 (517 entries, 499 unique)", "pct": 50, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "~$70,335-$71,043 (+3-4% 24h)", "pct": 75, "color": "#4ade80" },
+          { "label": "ETH Price", "value": "~$2,133-$2,328 (+3-10% 24h, wide spread)", "pct": 65, "color": "#06b6d4" },
+          { "label": "BTC Dominance", "value": "58.5-59.07% (UP from 56.42% — flight to quality)", "pct": 59, "color": "#f59e0b" },
+          { "label": "Fear & Greed Index", "value": "11 (Extreme Fear — streak continues)", "pct": 11, "color": "#ef4444" },
+          { "label": "Total Market Cap", "value": "$2.41-$2.5T", "pct": 55, "color": "#06b6d4" },
+          { "label": "Stablecoins", "value": "$311B (-$5B pullback, USDT $176B, USDC $74B)", "pct": 95, "color": "#06b6d4" },
+          { "label": "Industry Layoffs", "value": "Algorand -25%, Crypto.com -12%, Gemini -30", "pct": 20, "color": "#ef4444" },
+          { "label": "Tax Deadline", "value": "21 days to April 15", "pct": 70, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h (standup)", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup $45)", "pct": 9, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$1,581 (25 runs: standup×5 $225 + build×4 $932 + publish×4 $220 + design×4 $240 + community×4 $164 + eod×4 $252)", "pct": 13, "color": "#4ade80" },
+          { "label": "📊 Yesterday's Total (Mar 24)", "value": "$6,097 (78 runs across all 6 agents)", "pct": 51, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" },
+          { "label": "⚠️ Deploy-Blocked Waste", "value": "10 days of content trapped — 170+ pages behind git locks", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API unreachable from Chrome (CORS/network block on api.resend.com). Persistent issue across all cycles. Report saved locally."
+  }
+}

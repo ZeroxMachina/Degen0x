@@ -61,12 +61,12 @@ export default function BybitVsBinance() {
   ];
 
   const securityComparison = [
-    { aspect: 'Cold Storage', bybit: '✅ Multi-sig wallets', binance: '✅ Multi-sig wallets' },
-    { aspect: 'Major Breaches', bybit: '✅ None (since 2018)', binance: '⚠️ One (2022, recovered)' },
-    { aspect: '2FA Support', bybit: '✅ App & SMS', binance: '✅ App & SMS' },
-    { aspect: 'Insurance Fund', bybit: '✅ Yes', binance: '✅ Yes' },
-    { aspect: 'Regulatory Compliance', bybit: '⚠️ Growing', binance: '✅ Multiple licenses' },
-    { aspect: 'Address Whitelisting', bybit: '✅ Yes', binance: '✅ Yes' },
+    { aspect: 'Cold Storage', bybit: 'Multi-sig wallets', binance: 'Multi-sig wallets', bybitStatus: 'good', binanceStatus: 'good' },
+    { aspect: 'Major Breaches', bybit: 'None (since 2018)', binance: 'One (2022, recovered)', bybitStatus: 'good', binanceStatus: 'warn' },
+    { aspect: '2FA Support', bybit: 'App & SMS', binance: 'App & SMS', bybitStatus: 'good', binanceStatus: 'good' },
+    { aspect: 'Insurance Fund', bybit: 'Yes', binance: 'Yes', bybitStatus: 'good', binanceStatus: 'good' },
+    { aspect: 'Regulatory Compliance', bybit: 'Growing', binance: 'Multiple licenses', bybitStatus: 'warn', binanceStatus: 'good' },
+    { aspect: 'Address Whitelisting', bybit: 'Yes', binance: 'Yes', bybitStatus: 'good', binanceStatus: 'good' },
   ];
 
   const feeComparison = [
@@ -154,368 +154,259 @@ export default function BybitVsBinance() {
         slug="compare/exchanges/bybit-vs-binance"
       />
 
-      <div style={styles.container}>
-        <Breadcrumb items={[
-          { label: 'Compare', href: '/compare' },
-          { label: 'Exchanges', href: '/compare/exchanges' },
-          { label: 'Bybit vs Binance', href: '/compare/exchanges/bybit-vs-binance'}
-        ]} />
+      <div className="min-h-screen bg-[var(--bg,#0d1117)] text-[var(--text,#e6edf3)] px-4 sm:px-6 lg:px-8 py-6">
+        <div className="max-w-[1000px] mx-auto">
+          <Breadcrumb items={[
+            { label: 'Home', href: '/' },
+            { label: 'Compare', href: '/compare' },
+            { label: 'Exchanges', href: '/compare/exchanges' },
+            { label: 'Bybit vs Binance' },
+          ]} />
 
-        <div style={styles.header}>
-          <h1 style={styles.title}>Bybit vs Binance</h1>
-          <p style={styles.subtitle}>Crypto Exchange Comparison: Fees, Features & Trading</p>
-        </div>
+          {/* Header */}
+          <header className="text-center mb-12 sm:mb-16">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-amber-400 to-emerald-500 bg-clip-text text-transparent">
+              Bybit vs Binance
+            </h1>
+            <p className="text-base sm:text-lg text-[var(--text2,#8b949e)]">
+              Crypto Exchange Comparison: Fees, Features &amp; Trading
+            </p>
+          </header>
 
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Feature Comparison Table</h2>
-          <div style={styles.tableWrapper}>
-            <table style={styles.table}>
-              <thead>
-                <tr style={styles.headerRow}>
-                  <th style={styles.headerCell}>Feature</th>
-                  <th style={styles.headerCell}>Bybit</th>
-                  <th style={styles.headerCell}>Binance</th>
-                </tr>
-              </thead>
-              <tbody>
-                {comparisonData.map((row, idx) => (
-                  <tr key={idx} style={{...styles.row, backgroundColor: idx % 2 ? 'var(--surface2, #1c2330)' : 'transparent'}}>
-                    <td style={styles.cell}><strong>{row.feature}</strong></td>
-                    <td style={styles.cell}>{row.bybit}</td>
-                    <td style={styles.cell}>{row.binance}</td>
+          {/* Feature Comparison Table */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="feature-comparison">
+            <h2 id="feature-comparison" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Feature Comparison Table</h2>
+            <div className="overflow-x-auto rounded-xl border border-[var(--border,#30363d)] bg-[var(--surface,#161b22)]">
+              <table className="w-full text-sm border-collapse" aria-label="Bybit vs Binance feature comparison">
+                <thead>
+                  <tr className="border-b-2 border-[var(--border,#30363d)]">
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-amber-400" scope="col">Feature</th>
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-amber-400" scope="col">Bybit</th>
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-amber-400" scope="col">Binance</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
+                </thead>
+                <tbody>
+                  {comparisonData.map((row, idx) => (
+                    <tr key={idx} className={`border-b border-[var(--border,#30363d)] ${idx % 2 ? 'bg-[var(--surface2,#1c2330)]' : ''}`}>
+                      <td className="p-3 sm:p-4 font-semibold">{row.feature}</td>
+                      <td className="p-3 sm:p-4">{row.bybit}</td>
+                      <td className="p-3 sm:p-4">{row.binance}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Fee Comparison Breakdown</h2>
-          <div style={styles.tableWrapper}>
-            <table style={styles.table}>
-              <thead>
-                <tr style={styles.headerRow}>
-                  <th style={styles.headerCell}>Fee Type</th>
-                  <th style={styles.headerCell}>Bybit</th>
-                  <th style={styles.headerCell}>Binance</th>
-                  <th style={styles.headerCell}>Winner</th>
-                </tr>
-              </thead>
-              <tbody>
-                {feeComparison.map((row, idx) => (
-                  <tr key={idx} style={{...styles.row, backgroundColor: idx % 2 ? 'var(--surface2, #1c2330)' : 'transparent'}}>
-                    <td style={styles.cell}><strong>{row.type}</strong></td>
-                    <td style={styles.cell}>{row.bybit}</td>
-                    <td style={styles.cell}>{row.binance}</td>
-                    <td style={styles.cell}><strong style={{color: row.winner === 'Tie' ? '#fbbf24' : '#10b981'}}>{row.winner}</strong></td>
+          {/* Fee Comparison */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="fee-comparison">
+            <h2 id="fee-comparison" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Fee Comparison Breakdown</h2>
+            <div className="overflow-x-auto rounded-xl border border-[var(--border,#30363d)] bg-[var(--surface,#161b22)]">
+              <table className="w-full text-sm border-collapse" aria-label="Bybit vs Binance fee comparison">
+                <thead>
+                  <tr className="border-b-2 border-[var(--border,#30363d)]">
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-amber-400" scope="col">Fee Type</th>
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-amber-400" scope="col">Bybit</th>
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-amber-400" scope="col">Binance</th>
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-amber-400" scope="col">Winner</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
+                </thead>
+                <tbody>
+                  {feeComparison.map((row, idx) => (
+                    <tr key={idx} className={`border-b border-[var(--border,#30363d)] ${idx % 2 ? 'bg-[var(--surface2,#1c2330)]' : ''}`}>
+                      <td className="p-3 sm:p-4 font-semibold">{row.type}</td>
+                      <td className="p-3 sm:p-4">{row.bybit}</td>
+                      <td className="p-3 sm:p-4">{row.binance}</td>
+                      <td className="p-3 sm:p-4">
+                        <span className={`font-semibold ${row.winner === 'Tie' ? 'text-amber-400' : 'text-emerald-500'}`}>
+                          {row.winner}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Quick Overview</h2>
-          <div style={styles.overviewGrid}>
-            <div style={styles.overviewCard}>
-              <h3 style={styles.overviewTitle}>⚡ Bybit</h3>
-              <p style={styles.overviewBest}>Best for Derivatives & Copy Trading</p>
-              <p style={styles.overviewText}>
-                Newer, agile platform with exceptional derivatives trading UI and integrated copy trading. Perfect for traders wanting user-friendly derivatives and strategy replication.
-              </p>
-              <p style={styles.overviewStats}>40M+ users • Founded 2018 • Singapore-based</p>
+          {/* Quick Overview Cards */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="quick-overview">
+            <h2 id="quick-overview" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Quick Overview</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+              <article className="bg-[var(--surface,#161b22)] border border-[var(--border,#30363d)] rounded-xl p-5 sm:p-6 hover:border-amber-400/30 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold mb-2">⚡ Bybit</h3>
+                <p className="text-sm text-amber-400 font-semibold mb-3">Best for Derivatives &amp; Copy Trading</p>
+                <p className="text-sm text-[var(--text2,#8b949e)] leading-relaxed mb-3">
+                  Newer, agile platform with exceptional derivatives trading UI and integrated copy trading. Perfect for traders wanting user-friendly derivatives and strategy replication.
+                </p>
+                <p className="text-xs text-emerald-500 font-semibold">40M+ users · Founded 2018 · Singapore-based</p>
+              </article>
+              <article className="bg-[var(--surface,#161b22)] border border-[var(--border,#30363d)] rounded-xl p-5 sm:p-6 hover:border-amber-400/30 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold mb-2">📈 Binance</h3>
+                <p className="text-sm text-amber-400 font-semibold mb-3">Best Overall Exchange &amp; Largest</p>
+                <p className="text-sm text-[var(--text2,#8b949e)] leading-relaxed mb-3">
+                  Global leader with highest liquidity, most cryptocurrencies, lowest taker fees, and most features. Best for serious traders and altcoin hunters.
+                </p>
+                <p className="text-xs text-emerald-500 font-semibold">150M+ users · Founded 2017 · Multi-jurisdictional</p>
+              </article>
             </div>
-            <div style={styles.overviewCard}>
-              <h3 style={styles.overviewTitle}>📈 Binance</h3>
-              <p style={styles.overviewBest}>Best Overall Exchange & Largest</p>
-              <p style={styles.overviewText}>
-                Global leader with highest liquidity, most cryptocurrencies, lowest taker fees, and most features. Best for serious traders and altcoin hunters.
-              </p>
-              <p style={styles.overviewStats}>150M+ users • Founded 2017 • Multi-jurisdictional</p>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Bybit Pros & Cons</h2>
-          <div style={styles.prosConsGrid}>
-            <div>
-              <h3 style={styles.prosTitle}>✅ Pros</h3>
-              <ul style={styles.prosList}>
-                {bybitPros.map((pro, idx) => (
-                  <li key={idx} style={styles.prosItem}>{pro}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 style={styles.consTitle}>❌ Cons</h3>
-              <ul style={styles.prosList}>
-                {bybitCons.map((con, idx) => (
-                  <li key={idx} style={styles.prosItem}>{con}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Binance Pros & Cons</h2>
-          <div style={styles.prosConsGrid}>
-            <div>
-              <h3 style={styles.prosTitle}>✅ Pros</h3>
-              <ul style={styles.prosList}>
-                {binancePros.map((pro, idx) => (
-                  <li key={idx} style={styles.prosItem}>{pro}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 style={styles.consTitle}>❌ Cons</h3>
-              <ul style={styles.prosList}>
-                {binanceCons.map((con, idx) => (
-                  <li key={idx} style={styles.prosItem}>{con}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Security Comparison</h2>
-          <div style={styles.securityTable}>
-            {securityComparison.map((item, idx) => (
-              <div key={idx} style={{...styles.securityRow, backgroundColor: idx % 2 ? 'var(--surface2, #1c2330)' : 'transparent'}}>
-                <div style={styles.securityAspect}>{item.aspect}</div>
-                <div style={styles.securityValue}>{item.bybit}</div>
-                <div style={styles.securityValue}>{item.binance}</div>
+          {/* Bybit Pros & Cons */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="bybit-pros-cons">
+            <h2 id="bybit-pros-cons" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Bybit Pros &amp; Cons</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-emerald-500 mb-4">Pros</h3>
+                <ul className="space-y-0" role="list" aria-label="Bybit advantages">
+                  {bybitPros.map((pro, idx) => (
+                    <li key={idx} className="py-3 border-b border-[var(--border,#30363d)] text-sm text-[var(--text2,#8b949e)] leading-relaxed flex items-start gap-2">
+                      <span className="text-emerald-500 shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                      {pro}
+                    </li>
+                  ))}
+                </ul>
               </div>
-            ))}
-          </div>
-        </section>
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-red-500 mb-4">Cons</h3>
+                <ul className="space-y-0" role="list" aria-label="Bybit disadvantages">
+                  {bybitCons.map((con, idx) => (
+                    <li key={idx} className="py-3 border-b border-[var(--border,#30363d)] text-sm text-[var(--text2,#8b949e)] leading-relaxed flex items-start gap-2">
+                      <span className="text-red-500 shrink-0 mt-0.5" aria-hidden="true">✗</span>
+                      {con}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
 
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Use Case Comparison</h2>
-          <div style={styles.useCaseGrid}>
-            {useCases.map((useCase, idx) => (
-              <div key={idx} style={styles.useCaseCard}>
-                <h4 style={styles.useCaseTitle}>{useCase.title}</h4>
-                <div style={styles.useCaseComparison}>
-                  <p><strong style={{color: '#0ea5e9'}}>Bybit:</strong> {useCase.bybit}</p>
-                  <p><strong style={{color: '#0ea5e9'}}>Binance:</strong> {useCase.binance}</p>
+          {/* Binance Pros & Cons */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="binance-pros-cons">
+            <h2 id="binance-pros-cons" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Binance Pros &amp; Cons</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-emerald-500 mb-4">Pros</h3>
+                <ul className="space-y-0" role="list" aria-label="Binance advantages">
+                  {binancePros.map((pro, idx) => (
+                    <li key={idx} className="py-3 border-b border-[var(--border,#30363d)] text-sm text-[var(--text2,#8b949e)] leading-relaxed flex items-start gap-2">
+                      <span className="text-emerald-500 shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                      {pro}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-red-500 mb-4">Cons</h3>
+                <ul className="space-y-0" role="list" aria-label="Binance disadvantages">
+                  {binanceCons.map((con, idx) => (
+                    <li key={idx} className="py-3 border-b border-[var(--border,#30363d)] text-sm text-[var(--text2,#8b949e)] leading-relaxed flex items-start gap-2">
+                      <span className="text-red-500 shrink-0 mt-0.5" aria-hidden="true">✗</span>
+                      {con}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Security Comparison */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="security-comparison">
+            <h2 id="security-comparison" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Security Comparison</h2>
+            <div className="rounded-xl border border-[var(--border,#30363d)] bg-[var(--surface,#161b22)] overflow-hidden">
+              {/* Header row - hidden on mobile, shown on md+ */}
+              <div className="hidden md:grid grid-cols-3 gap-0 p-4 bg-[var(--surface2,#1c2330)] border-b border-[var(--border,#30363d)]">
+                <span className="font-bold text-amber-400 text-sm">Aspect</span>
+                <span className="font-bold text-amber-400 text-sm">Bybit</span>
+                <span className="font-bold text-amber-400 text-sm">Binance</span>
+              </div>
+              {securityComparison.map((item, idx) => (
+                <div key={idx} className={`p-4 border-b border-[var(--border,#30363d)] last:border-b-0 ${idx % 2 ? 'bg-[var(--surface2,#1c2330)]' : ''}`}>
+                  {/* Mobile: stacked layout */}
+                  <div className="md:hidden space-y-2">
+                    <p className="font-bold text-sm">{item.aspect}</p>
+                    <div className="flex justify-between text-sm text-[var(--text2,#8b949e)]">
+                      <span><span className="text-amber-400 font-medium">Bybit:</span> {item.bybit}</span>
+                    </div>
+                    <div className="flex justify-between text-sm text-[var(--text2,#8b949e)]">
+                      <span><span className="text-amber-400 font-medium">Binance:</span> {item.binance}</span>
+                    </div>
+                  </div>
+                  {/* Desktop: grid layout */}
+                  <div className="hidden md:grid grid-cols-3 gap-0">
+                    <span className="font-bold text-sm">{item.aspect}</span>
+                    <span className="text-sm text-[var(--text2,#8b949e)]">
+                      <span className={item.bybitStatus === 'good' ? 'text-emerald-500' : 'text-amber-400'} aria-hidden="true">
+                        {item.bybitStatus === 'good' ? '✅' : '⚠️'}
+                      </span>{' '}
+                      {item.bybit}
+                    </span>
+                    <span className="text-sm text-[var(--text2,#8b949e)]">
+                      <span className={item.binanceStatus === 'good' ? 'text-emerald-500' : 'text-amber-400'} aria-hidden="true">
+                        {item.binanceStatus === 'good' ? '✅' : '⚠️'}
+                      </span>{' '}
+                      {item.binance}
+                    </span>
+                  </div>
                 </div>
-                <p style={styles.useCaseWinner}><strong>Winner:</strong> {useCase.winner}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
 
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>FAQ</h2>
-          <div style={styles.faqContainer}>
-            {faqItems.map((item, idx) => (
-              <div key={idx} style={styles.faqItem}>
-                <h4 style={styles.faqQuestion}>{item.q}</h4>
-                <p style={styles.faqAnswer}>{item.a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+          {/* Use Case Comparison */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="use-cases">
+            <h2 id="use-cases" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Use Case Comparison</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {useCases.map((useCase, idx) => (
+                <article key={idx} className="bg-[var(--surface,#161b22)] border border-[var(--border,#30363d)] rounded-xl p-5 hover:border-amber-400/30 transition-colors">
+                  <h3 className="text-base font-bold text-amber-400 mb-3">{useCase.title}</h3>
+                  <div className="text-sm text-[var(--text2,#8b949e)] leading-relaxed space-y-2 mb-3">
+                    <p><span className="text-sky-400 font-medium">Bybit:</span> {useCase.bybit}</p>
+                    <p><span className="text-sky-400 font-medium">Binance:</span> {useCase.binance}</p>
+                  </div>
+                  <p className="text-sm text-emerald-500 font-semibold">Winner: {useCase.winner}</p>
+                </article>
+              ))}
+            </div>
+          </section>
 
-        <section style={styles.verdict}>
-          <h2 style={styles.verdictTitle}>The Verdict</h2>
-          <p style={styles.verdictText}>
-            Bybit and Binance are the two best global crypto exchanges for serious traders. Both offer excellent features, competitive fees, and high security.
-          </p>
-          <p style={styles.verdictText}>
-            <strong>Choose Bybit if:</strong> You want an intuitive derivatives interface, prefer integrated copy trading, like newer platforms, or want a cleaner user experience focused on derivatives trading.
-          </p>
-          <p style={styles.verdictText}>
-            <strong>Choose Binance if:</strong> You want the largest liquidity pool, need the lowest taker fees (0.04%), want maximum cryptocurrency selection, prefer established platforms, or need Launchpad access for new token distributions.
-          </p>
-          <p style={styles.verdictText}>
-            <strong>Best Strategy:</strong> Consider using both exchanges. Bybit for derivatives and copy trading, Binance for spot trading and access to the largest altcoin pool. Both offer complementary strengths.
-          </p>
-        </section>
+          {/* FAQ */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="faq-section">
+            <h2 id="faq-section" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">FAQ</h2>
+            <div className="rounded-xl border border-[var(--border,#30363d)] bg-[var(--surface,#161b22)] overflow-hidden divide-y divide-[var(--border,#30363d)]">
+              {faqItems.map((item, idx) => (
+                <details key={idx} className="group">
+                  <summary className="p-4 sm:p-6 cursor-pointer select-none text-base font-bold text-amber-400 hover:bg-[var(--surface2,#1c2330)] transition-colors min-h-[44px] flex items-center focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-inset">
+                    {item.q}
+                  </summary>
+                  <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                    <p className="text-sm text-[var(--text2,#8b949e)] leading-relaxed">{item.a}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </section>
+
+          {/* Verdict */}
+          <section className="mb-12 sm:mb-16 bg-[var(--surface,#161b22)] border-2 border-amber-400 rounded-xl p-6 sm:p-8 lg:p-10" aria-labelledby="verdict">
+            <h2 id="verdict" className="text-2xl sm:text-3xl font-bold mb-6 text-amber-400">The Verdict</h2>
+            <div className="space-y-4 text-sm sm:text-base text-[var(--text2,#8b949e)] leading-relaxed">
+              <p>
+                Bybit and Binance are the two best global crypto exchanges for serious traders. Both offer excellent features, competitive fees, and high security.
+              </p>
+              <p>
+                <strong className="text-[var(--text,#e6edf3)]">Choose Bybit if:</strong> You want an intuitive derivatives interface, prefer integrated copy trading, like newer platforms, or want a cleaner user experience focused on derivatives trading.
+              </p>
+              <p>
+                <strong className="text-[var(--text,#e6edf3)]">Choose Binance if:</strong> You want the largest liquidity pool, need the lowest taker fees (0.04%), want maximum cryptocurrency selection, prefer established platforms, or need Launchpad access for new token distributions.
+              </p>
+              <p>
+                <strong className="text-[var(--text,#e6edf3)]">Best Strategy:</strong> Consider using both exchanges. Bybit for derivatives and copy trading, Binance for spot trading and access to the largest altcoin pool. Both offer complementary strengths.
+              </p>
+            </div>
+          </section>
+        </div>
       </div>
     </>
   );
 }
-
-const styles = {
-  container: {
-    minHeight: '100vh',
-    backgroundColor: 'var(--bg, #0d1117)',
-    color: 'var(--text, #e6edf3)',
-    padding: '20px' } as React.CSSProperties,
-  header: {
-    maxWidth: '1000px',
-    margin: '0 auto 60px',
-    textAlign: 'center' as const },
-  title: {
-    fontSize: '48px',
-    fontWeight: 'bold',
-    marginBottom: '16px',
-    background: 'linear-gradient(135deg, #f59e0b, #10b981)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent' },
-  subtitle: {
-    fontSize: '18px',
-    color: 'var(--text2, #8b949e)' },
-  section: {
-    maxWidth: '1000px',
-    margin: '0 auto 60px' },
-  sectionTitle: {
-    fontSize: '32px',
-    fontWeight: 'bold',
-    marginBottom: '30px',
-    color: 'var(--text, #e6edf3)' },
-  tableWrapper: {
-    overflowX: 'auto' as const,
-    backgroundColor: 'var(--surface, #161b22)',
-    borderRadius: '12px',
-    border: '1px solid var(--border, #30363d)' },
-  table: {
-    width: '100%',
-    borderCollapse: 'collapse' as const,
-    fontSize: '14px' },
-  headerRow: {
-    borderBottom: '2px solid var(--border, #30363d)' },
-  headerCell: {
-    padding: '16px',
-    textAlign: 'left' as const,
-    fontWeight: 'bold',
-    backgroundColor: 'var(--surface2, #1c2330)',
-    color: '#f59e0b' },
-  row: {
-    borderBottom: '1px solid var(--border, #30363d)' },
-  cell: {
-    padding: '16px',
-    color: 'var(--text, #e6edf3)' },
-  overviewGrid: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '24px' },
-  overviewCard: {
-    backgroundColor: 'var(--surface, #161b22)',
-    border: '1px solid var(--border, #30363d)',
-    borderRadius: '12px',
-    padding: '24px' },
-  overviewTitle: {
-    fontSize: '20px',
-    fontWeight: 'bold',
-    marginBottom: '8px',
-    color: 'var(--text, #e6edf3)' },
-  overviewBest: {
-    fontSize: '14px',
-    color: '#f59e0b',
-    fontWeight: '600',
-    marginBottom: '12px' },
-  overviewText: {
-    fontSize: '14px',
-    color: 'var(--text2, #8b949e)',
-    lineHeight: '1.6',
-    marginBottom: '12px' },
-  overviewStats: {
-    fontSize: '12px',
-    color: '#10b981',
-    fontWeight: '600' },
-  prosConsGrid: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '30px' },
-  prosTitle: {
-    fontSize: '20px',
-    fontWeight: 'bold',
-    color: '#10b981',
-    marginBottom: '16px' },
-  consTitle: {
-    fontSize: '20px',
-    fontWeight: 'bold',
-    color: '#ef4444',
-    marginBottom: '16px' },
-  prosList: {
-    listStyle: 'none',
-    padding: 0,
-    margin: 0 },
-  prosItem: {
-    padding: '12px 0',
-    borderBottom: '1px solid var(--border, #30363d)',
-    fontSize: '14px',
-    color: 'var(--text2, #8b949e)',
-    lineHeight: '1.5' },
-  securityTable: {
-    backgroundColor: 'var(--surface, #161b22)',
-    borderRadius: '12px',
-    border: '1px solid var(--border, #30363d)',
-    overflow: 'hidden' },
-  securityRow: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr',
-    borderBottom: '1px solid var(--border, #30363d)',
-    padding: '16px' },
-  securityAspect: {
-    fontWeight: 'bold',
-    color: 'var(--text, #e6edf3)' },
-  securityValue: {
-    fontSize: '14px',
-    color: 'var(--text2, #8b949e)' },
-  useCaseGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-    gap: '24px' },
-  useCaseCard: {
-    backgroundColor: 'var(--surface, #161b22)',
-    border: '1px solid var(--border, #30363d)',
-    borderRadius: '12px',
-    padding: '20px' },
-  useCaseTitle: {
-    fontSize: '16px',
-    fontWeight: 'bold',
-    marginBottom: '12px',
-    color: '#f59e0b' },
-  useCaseComparison: {
-    fontSize: '14px',
-    color: 'var(--text2, #8b949e)',
-    lineHeight: '1.8',
-    marginBottom: '12px' },
-  useCaseWinner: {
-    fontSize: '14px',
-    color: '#10b981',
-    fontWeight: '600' },
-  faqContainer: {
-    backgroundColor: 'var(--surface, #161b22)',
-    borderRadius: '12px',
-    border: '1px solid var(--border, #30363d)',
-    overflow: 'hidden' },
-  faqItem: {
-    padding: '24px',
-    borderBottom: '1px solid var(--border, #30363d)' },
-  faqQuestion: {
-    fontSize: '16px',
-    fontWeight: 'bold',
-    color: '#f59e0b',
-    marginBottom: '12px' },
-  faqAnswer: {
-    fontSize: '14px',
-    color: 'var(--text2, #8b949e)',
-    lineHeight: '1.6',
-    margin: 0 },
-  verdict: {
-    maxWidth: '1000px',
-    margin: '0 auto 60px',
-    backgroundColor: 'var(--surface, #161b22)',
-    border: '2px solid #f59e0b',
-    borderRadius: '12px',
-    padding: '40px' },
-  verdictTitle: {
-    fontSize: '32px',
-    fontWeight: 'bold',
-    marginBottom: '24px',
-    color: '#f59e0b' },
-  verdictText: {
-    fontSize: '16px',
-    color: 'var(--text2, #8b949e)',
-    lineHeight: '1.8',
-    marginBottom: '16px' } };

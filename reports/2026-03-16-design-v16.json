@@ -1,0 +1,42 @@
+{
+  "date": "2026-03-16",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited new compare/exchange and crypto-card pages for UX issues, created 5 missing OG images (SVG+PNG), added metadata layouts for 5 client-component pages, and fixed breadcrumb navigation bug.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Identified compare/exchanges pages (bybit-vs-binance, gate-io-vs-kucoin) missing metadata and OG images due to 'use client' directive — fixed via layout.tsx wrappers",
+          "Identified crypto-cards calculator pages (cashback, card-comparison, rewards) missing OG metadata — added openGraph and twitter card metadata to existing layout files",
+          "Fixed cashback-calculator breadcrumb using href='#' for current page — removed href so it renders as plain text per UX best practices",
+          "Verified badges, courses, and whale-watch pages have correct OG metadata and image references",
+          "Confirmed ReviewPage component (used by 20+ crypto-card review pages) has proper structured data and layout patterns"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: bybit-vs-binance (1200x630) — VS comparison layout with exchange stats",
+          "OG image: gate-io-vs-kucoin (1200x630) — VS comparison layout for altcoin exchanges",
+          "OG image: cashback-calculator (1200x630) — bar chart visualization with card rewards",
+          "OG image: card-comparison-tool (1200x630) — grid of card mini-cards with cashback rates",
+          "OG image: rewards-calculator (1200x630) — estimated annual rewards display"
+        ]
+      },
+      {
+        "title": "Code Changes",
+        "items": [
+          "Created layout.tsx with full Metadata export for compare/exchanges/bybit-vs-binance",
+          "Created layout.tsx with full Metadata export for compare/exchanges/gate-io-vs-kucoin",
+          "Updated layout.tsx for crypto-cards/calculators/cashback-calculator with OG + Twitter metadata",
+          "Updated layout.tsx for crypto-cards/calculators/card-comparison-tool with OG + Twitter metadata",
+          "Updated layout.tsx for crypto-cards/calculators/rewards-calculator with OG + Twitter metadata",
+          "Fixed breadcrumb href='#' in cashback-calculator/page.tsx"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

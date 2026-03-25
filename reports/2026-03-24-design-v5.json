@@ -1,0 +1,40 @@
+{
+  "date": "2026-03-24",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX-audited and polished 2 new learn guides (Bitcoin BitVM & Programmability, Crypto Market Making), created 2 OG images, added FAQ structured data + article schema to both pages, fixed hydration-safe Link usage, added BackToTop components, improved mobile table scroll with minWidth, fixed typo, and enhanced accessibility with ARIA labels.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Added FAQ JSON-LD structured data (generateFAQSchema + combineSchemas) to BitVM guide — 6 FAQ items now included for Google rich snippets",
+          "Added FAQ JSON-LD structured data to Market Making guide — 6 FAQ items included for Google rich snippets",
+          "Added article structured data (generateArticleSchema) to both pages for enhanced search presence",
+          "Converted plain <a> tags to Next.js <Link> components in BitVM guide Related Articles section (4 links) for proper SPA routing",
+          "Added BackToTop component to both pages (760+ and 1068+ line long-form content)",
+          "Added aria-label='Breadcrumb' to breadcrumb nav on both pages for screen reader accessibility",
+          "Added minWidth: 700px to BitVM guide comparison tables (2 tables) for proper mobile horizontal scroll",
+          "Added minWidth: 650px to Market Making guide comparison tables (2 tables) for proper mobile horizontal scroll",
+          "Fixed typo: 'leading-relieved' → 'leading-relaxed' on Market Making guide line 776",
+          "Added OG image + Twitter card metadata to both pages for social sharing previews"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: og-bitcoin-bitvm-programmability-guide.svg (1200x630) — dark theme, signature gradient accent bar (Bitcoin orange → indigo → cyan), Bitcoin symbol motif with circuit lines, tag pills for BitVM2/Citrea/Bitlayer",
+          "OG image: og-crypto-market-making-guide-2026.svg (1200x630) — dark theme, signature gradient accent bar (emerald → indigo → pink), AMM curve (x*y=k) motif with data points, tag pills for AMM/Liquidity Pools/Impermanent Loss"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "/learn/bitcoin-bitvm-programmability-guide — 760→799 lines, Advanced level, 7 fixes applied (FAQ schema, article schema, Link conversion, BackToTop, ARIA labels, table minWidth, OG metadata)",
+          "/learn/crypto-market-making-guide-2026 — 1068→1110 lines, Intermediate level, 8 fixes applied (FAQ schema, article schema, BackToTop, ARIA labels, table minWidth, typo fix, OG metadata, twitter card)"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

@@ -221,7 +221,7 @@ export default function DCACalculatorPage() {
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 24, marginBottom: 32 }}>
           {/* ── Input Panel ── */}
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {/* Asset selection */}
@@ -239,7 +239,8 @@ export default function DCACalculatorPage() {
                       setOverridePrice(value.currentPrice);
                     }}
                     style={{
-                      padding: "12px 16px",
+                      padding: "14px 16px",
+                      minHeight: 44,
                       borderRadius: 10,
                       border: `2px solid ${selectedAsset === key ? value.color : "var(--color-border)"}`,
                       background: selectedAsset === key ? `${value.color}15` : "var(--color-surface)",
@@ -292,13 +293,14 @@ export default function DCACalculatorPage() {
                     key={freq}
                     onClick={() => setFrequency(freq)}
                     style={{
-                      padding: "10px 12px",
+                      padding: "12px 14px",
+                      minHeight: 44,
                       borderRadius: 8,
                       border: `1px solid ${frequency === freq ? "var(--color-primary)" : "var(--color-border)"}`,
                       background: frequency === freq ? "var(--color-primary)20" : "var(--color-surface)",
                       color: frequency === freq ? "var(--color-primary)" : "var(--color-text)",
                       fontWeight: 600,
-                      fontSize: 12,
+                      fontSize: 13,
                       cursor: "pointer",
                     }}
                   >

@@ -1,0 +1,73 @@
+{
+  "date": "2026-03-15",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle v8 — altcoin ETF guide + tracker shipped (2 new pages, 19 ETF rows, full SEO stack); design polished 5 pages with breadcrumbs + OG images; redeploy pending for new pages; Sprint 59 apostrophe blocker and rate-limiting gap persist.",
+    "sections": [
+      {
+        "title": "QA",
+        "items": [
+          "✅ NEW this cycle: /learn/altcoin-etf-guide-2026 and /tools/altcoin-etf-tracker both have page.tsx — scaffolded correctly, added to published-pages.ts",
+          "✅ Design polish cycle verified: gamification, courses, notifications, portfolio-tracker — Breadcrumb component added to all 4 (was missing), OG images created for notifications + portfolio-tracker, server-side metadata exported for notifications + portfolio-tracker pages",
+          "🔴 CARRY-OVER: Sprint 59 build 1b4a15e still FAILED — AICourseRecommendations.tsx line 96 unescaped apostrophe in single-quoted string ('you're' → needs &apos; or curly quote); 1-line fix unblocks ecosystem/courses routes",
+          "🔴 57 TS errors across 2 files — unchanged from v7: AICourseRecommendations.tsx (17 errors) + structured-data.examples.ts (40 errors); no new error sources introduced this cycle",
+          "⚠️ CARRY-OVER: 100/295 published slugs missing page.tsx — pre-existing dynamic [slug] route architecture, no regression; total published slug count grew from 292→295 (+2 new ETF pages + 1 count correction)",
+          "✅ next.config.ts safety net stable: ignoreBuildErrors:true, staticGenerationMaxConcurrency:4, workerThreads:false, output:standalone — build proceeds despite TS errors"
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "items": [
+          "✅ All 6 public API routes present and structurally healthy: /api/prices (60s TTL), /api/fear-greed (600s), /api/trending (300s), /api/market-metrics (60s), /api/market-dominance (300s), /api/defi-yields (300s)",
+          "✅ Ops routes /api/health and /api/cache-stats confirmed live — health route has checkRateLimit, cache-stats has 5-req limit",
+          "⚠️ CARRY-OVER: TTL mismatches persist on 4/6 routes — fear-greed (s-maxage=600 / revalidate=1200), trending (300/600), market-metrics (60/120), defi-yields (dynamic/dynamic); CDN may over-serve stale, no user-facing impact detected",
+          "🔴 CARRY-OVER: Rate limiting 0/6 public data routes — /api/health and /api/cache-stats are the only rate-limited endpoints; all live data APIs (prices, fear-greed, trending, market-metrics, market-dominance, defi-yields) unprotected; risk rises as organic traffic grows",
+          "⚠️ CARRY-OVER: Fallback data coverage 2/6 routes — market-dominance (FALLBACK_DATA defined, 4 refs) and prices (partial, 1 ref); 4 routes fully unprotected on upstream API failure",
+          "✅ No rate limit hits, stale-cascade events, or upstream API failures detected this cycle — data pipeline clean"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "⚠️ ACTION REQUIRED: Altcoin ETF guide + tracker (2 new pages) created at 20:25–20:28 — AFTER last Vercel redeploy (Ede7aPH2k at ~19:10). Pages are in published-pages.ts but NOT yet live on production. New redeploy needed.",
+          "🔴 CARRY-OVER: Sprint 59 build 1b4a15e still FAILED in Vercel — ecosystem + courses routes not live in production; awaiting 1-line apostrophe fix in AICourseRecommendations.tsx",
+          "✅ next.config.ts confirmed stable: trailingSlash:true, ignoreBuildErrors:true, staticGenerationMaxConcurrency:4, workerThreads:false, output:standalone",
+          "✅ middleware.ts clean: 127 lines, single import (next/server), Edge Runtime compliant; pillar pages set (50 pages) unchanged — new ETF pages not designated as pillar pages, will receive standard 12hr CDN cache",
+          "⚠️ URGENT: Vercel Pro trial ~5 days remaining (was ~6 in v7, countdown confirms linear decay) — payment method must be added before expiry to avoid production downgrade to Hobby tier",
+          "✅ No new deployment failures, error spikes, or performance regressions detected this cycle"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "✅ SHIPPED THIS CYCLE: /learn/altcoin-etf-guide-2026 (3,400 words, 14-min read, Article + FAQ + BreadcrumbList schema, 7 target keywords); /tools/altcoin-etf-tracker (19 ETF rows, SOL/XRP/ETH asset tabs, sortable AUM/flows/fees/staking columns, staking-only toggle, search)",
+          "✅ SHIPPED THIS CYCLE: Design polish — Breadcrumb added to gamification, courses, notifications, portfolio-tracker; OG images created for notifications + portfolio-tracker; server-side metadata exported for both",
+          "✅ SHIPPED THIS CYCLE: Community — Babylon Protocol fire post queued, Altcoin ETF launch tweets drafted, DeFAI 6-post thread drafted, Thursday newsletter updated with 9 new pages, 3 social cards created",
+          "📊 PUBLISHED PAGES: 295 total (up from 292 in v7); PUBLISH_QUEUE: 0 (still empty)",
+          "🔴 BLOCKER #1 (Jefe action): Fix AICourseRecommendations.tsx line 96 — change 'you're' in single-quoted string to {\"you're\"} or &apos; — 1-line fix unblocks Sprint 59 (176 dApps + courses hub)",
+          "🔴 BLOCKER #2 (DevOps action): Trigger Vercel redeploy now to push altcoin-etf-guide-2026 + altcoin-etf-tracker live — pages built, in published-pages.ts, SEO-ready, just need deploy",
+          "⚠️ BLOCKER #3 (Jefe action): Add Vercel payment method within 5 days — Pro trial expiry is production risk",
+          "⚠️ CARRY-OVER: Rate limiting 0/6 public data routes — sprint needed before organic traffic window opens",
+          "⚠️ CARRY-OVER: Fallback data 2/6 routes — resilience sprint deferred again",
+          "📌 NEXT CYCLE PLAN: (1) Trigger redeploy for ETF pages, (2) unblock Sprint 59 with 1-line fix, (3) rate-limiting sprint for /api/* routes, (4) content queue refill — research new topics for next batch"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages", "value": "295", "pct": 90, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "0 items", "pct": 100, "color": "#4ade80" },
+          { "label": "TS Errors", "value": "57 (2 files)", "pct": 30, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "6 / 6", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate-Limited Routes", "value": "0 / 6", "pct": 0, "color": "#ef4444" },
+          { "label": "Fallback Coverage", "value": "2 / 6 routes", "pct": 33, "color": "#f59e0b" },
+          { "label": "Vercel Pro Trial", "value": "~5 days left", "pct": 28, "color": "#f59e0b" },
+          { "label": "Pages Needing Redeploy", "value": "2 new pages", "pct": 50, "color": "#06b6d4" },
+          { "label": "Sprint 59 Build", "value": "BLOCKED", "pct": 10, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

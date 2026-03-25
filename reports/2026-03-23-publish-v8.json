@@ -1,0 +1,53 @@
+{
+  "date": "2026-03-23",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "No new pages promoted — both queued pages (/learn/best-perpetual-dex-comparison-2026, /learn/cross-chain-bridge-security-guide-2026) are missing page.tsx files; current production deployment (vwbUJnu7E) remains live and healthy.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/best-perpetual-dex-comparison-2026", "status": "warn", "note": "Missing page.tsx — cannot promote" },
+          { "slug": "/learn/cross-chain-bridge-security-guide-2026", "status": "warn", "note": "Missing page.tsx — cannot promote" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "TypeScript Check", "value": "42 errors (2 files)", "pct": 85, "color": "#f59e0b" },
+          { "label": "Error Files", "value": "structured-data.examples.ts, crypto-index-funds page", "pct": 85, "color": "#f59e0b" },
+          { "label": "Build (local VM)", "value": "OOM — Bus error", "pct": 0, "color": "#ef4444" },
+          { "label": "Build (Vercel)", "value": "Ready (4m 13s)", "pct": 100, "color": "#4ade80" },
+          { "label": "Production Status", "value": "Ready / Current", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko API", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "DefiLlama API", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "Price Cache (TTL)", "value": "60s fresh / 300s stale", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Active", "pct": 100, "color": "#4ade80" },
+          { "label": "Fallback Data", "value": "Configured", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Publish Queue Status",
+        "metrics": [
+          { "label": "Total Published Pages", "value": "660+", "pct": 99, "color": "#4ade80" },
+          { "label": "Remaining in Queue", "value": "2 (blocked)", "pct": 10, "color": "#f59e0b" },
+          { "label": "Pages Published Today (prior batches)", "value": "24 (batches 1-12)", "pct": 100, "color": "#4ade80" },
+          { "label": "Deploy", "value": "Skipped (no changes)", "pct": 100, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "action_items": [
+      "Create page.tsx for /learn/best-perpetual-dex-comparison-2026",
+      "Create page.tsx for /learn/cross-chain-bridge-security-guide-2026",
+      "Fix TS errors in src/lib/structured-data.examples.ts",
+      "Fix TS errors in src/app/learn/crypto-index-funds-guide-2026/page.tsx"
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"]
+  }
+}

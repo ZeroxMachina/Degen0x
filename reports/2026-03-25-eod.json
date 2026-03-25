@@ -1,0 +1,74 @@
+{
+  "date": "2026-03-25",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close: 2 new learn guides shipped (Morgan Stanley MSBT ETF + Onchain Credit Scoring). PUBLISH_QUEUE drained to 0. Git locks persist Day 10 — 786 uncommitted files, deploy gap ~163 pages. 46 TS errors unchanged. All 6 API routes structurally healthy.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "2 new pages built this cycle: /learn/morgan-stanley-bitcoin-etf-msbt-guide and /learn/onchain-credit-scoring-guide-2026 — both have page.tsx files confirmed",
+          "Both new pages added to PUBLISHED_PAGES — total now 506 slugs (up from 501 yesterday)",
+          "PUBLISH_QUEUE drained to 0 items (was 2 — ERC-8183 + Crypto Retirement promoted earlier today)",
+          "Page audit: 56 published slugs still missing page.tsx files (includes /compare/exchanges, 18 wallets, 13 taxes, 13 investing/best, /trading, /defi-lending/reviews)",
+          "TypeScript: 46 errors across 3 files — unchanged from yesterday (structured-data.examples.ts, crypto-arbitrage, crypto-index-funds)",
+          "No new regressions introduced this cycle",
+          "Live site health check unavailable — egress proxy blocks degen0x.com fetches from this environment"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 public API routes present: /api/prices, /api/trending, /api/fear-greed, /api/market-metrics, /api/market-dominance, /api/defi-yields",
+          "Cache TTLs verified: prices (60s), trending (5m/300s), fear-greed (10m/600s), market-metrics (60s), market-dominance (5m), defi-yields (5m)",
+          "All routes have stale-while-revalidate headers and fallback data for API failures",
+          "Health endpoint (/api/health) present with uptime tracking and service health checks",
+          "Rate limiter: 0/6 core API routes using checkRateLimit — rate-limiter.ts exists but not wired into routes (carry-over P1)",
+          "CoinGecko free tier (no API key) — rate limit risk on traffic spikes remains unmitigated",
+          "No production logs accessible to confirm live API health — code review only"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Git lock files persist: .git/HEAD.lock + .git/index.lock — DAY 10 of blocker",
+          "786 uncommitted files (up from 781 yesterday — 5 new files from today's build cycle)",
+          "Last deployed commit: e999560 (Mar 17) — deploy gap now ~163 pages",
+          "Vercel deployment assumed operational per previous standup (production site was live as of last check)",
+          "All new content since Mar 17 is LOCAL-ONLY — not reachable in production",
+          "CRITICAL: Jefe must manually run: rm .git/index.lock .git/HEAD.lock && git add -A && git commit && git push",
+          "No build attempted this cycle (build report from earlier today confirmed clean scaffold of 2 pages)"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: 2 learn guides (Morgan Stanley MSBT ETF, Onchain Credit Scoring 2026) with full SEO metadata, FAQ schemas, and internal links",
+          "PUBLISH_QUEUE: Drained to 0 (was 2 at standup). All queued content promoted to PUBLISHED_PAGES.",
+          "TODAY'S TOTAL: standup×1, build×1, community×1, design×1, publish×1, eod×1 = 6 reports so far",
+          "CARRY-OVER [P0]: Git locks Day 10 — 786 files, ~163 page deploy gap. Jefe action required.",
+          "CARRY-OVER [P1]: /trading and /trading/learn return 404 — hub page.tsx missing",
+          "CARRY-OVER [P1]: 46 TS errors across 3 files (crypto-arbitrage, crypto-index-funds, structured-data.examples.ts)",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes",
+          "CARRY-OVER [P2]: 56 published slugs missing page.tsx (wallets, taxes, investing/best categories)",
+          "NEXT CYCLE: Build time-sensitive content (Tax-Loss Harvesting tool — April 15 deadline 21 days away), continue ETF/Fear narrative coverage"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Slugs", "value": "506 (+5 from yesterday)", "pct": 100, "color": "#4ade80" },
+          { "label": "Page.tsx Coverage", "value": "1,154 files (450/506 slugs covered = 89%)", "pct": 89, "color": "#f59e0b" },
+          { "label": "PUBLISH_QUEUE", "value": "0 items (drained)", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript Health", "value": "46 errors (3 files) — unchanged", "pct": 60, "color": "#f59e0b" },
+          { "label": "API Routes Health", "value": "6/6 present, 0/6 rate-limited", "pct": 75, "color": "#f59e0b" },
+          { "label": "Deploy Gap", "value": "~163 pages (Day 10 of git locks)", "pct": 15, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "786 files", "pct": 10, "color": "#ef4444" },
+          { "label": "Cache TTLs", "value": "All 6 routes configured", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

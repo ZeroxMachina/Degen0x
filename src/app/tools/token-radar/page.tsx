@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     'DeFi',
     'token analysis',
   ],
+  openGraph: {
+    title: 'Token Launch Radar | degen0x',
+    description: 'Track upcoming and recently launched tokens across Ethereum, Solana, Base, Arbitrum & BNB with risk scores and audit status.',
+    type: 'website',
+    url: 'https://degen0x.com/tools/token-radar',
+    images: [{ url: 'https://degen0x.com/og-token-radar.png', width: 1200, height: 630, alt: 'Token Launch Radar — degen0x' }],
+  },
+  twitter: { card: 'summary_large_image', title: 'Token Launch Radar | degen0x', description: 'Track upcoming and recently launched tokens with risk scores and social metrics.', images: ['https://degen0x.com/og-token-radar.png'] },
 };
 
 export default function TokenRadarPage() {

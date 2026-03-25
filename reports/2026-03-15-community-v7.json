@@ -1,0 +1,52 @@
+{
+  "date": "2026-03-15",
+  "block": "community",
+  "cycle": "v7",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v7: identified ethereum-pectra-upgrade-guide and crypto-tax-guide-2026 as net-new pages after v6; drafted 9-post Pectra mainnet countdown Twitter thread, crypto tax tweet (March 15 Q4 deadline hook), Discord/Telegram announcement for both guides, and Thursday newsletter section (Pectra 30-day countdown + tax urgency framing); created 2 SVG social cards saved to /public/.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Twitter thread (9 posts): Ethereum Pectra Upgrade — hook on 11 EIPs + April mainnet in ~30 days; EIP-7702 smart wallets (batch txns, gas sponsorship, social recovery); EIP-7251 validator consolidation up to 2,048 ETH (90% fewer keys for large stakers); EIP-7691 doubled blob throughput (cheaper Arbitrum/Optimism/Base/zkSync fees); full testnet timeline (Sepolia ✓ Feb / Holesky ✓ Mar / Mainnet ~Apr); CTA to /learn/ethereum-pectra-upgrade-guide",
+          "Tweet (2 drafts): Crypto Tax 2026 — Draft A (recommended for today, March 15 Q4 deadline): urgency hook on Q4 estimated tax deadline + 'you have gains, have you filed?' framing, CTA to /learn/crypto-tax-guide-2026; Draft B (weekday education): FIFO vs HIFO vs Specific ID cost basis explainer — 'most holders don't know they can choose their method' — positioned to minimize gain realization",
+          "Discord/Telegram announcement: both new guides (Pectra + crypto tax) with one-liner descriptions, interactive validator calculator callout for Pectra, direct URLs, 'no signup needed' callout",
+          "Newsletter section (Thursday send): 'Pectra 30-Day Countdown' deep-dive block + 'Q4 Crypto Taxes Due TODAY' urgency opener; Degen Corner hot take: EIP-7702 as the UX unlock that enables the next DeFi user wave; subject line options provided",
+          "Posting schedule: Sunday PM — Pectra thread + Discord announce; Monday — Tax tweet Draft A; Tuesday — Privacy coins carry-forward (v6); Wednesday — Tax tweet Draft B; Thursday — Newsletter"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/learn/ethereum-pectra-upgrade-guide", "value": "~30d to mainnet, EIP-7702 narrative", "pct": 93, "color": "#8b5cf6" },
+          { "label": "/learn/crypto-tax-guide-2026", "value": "Mar 15 Q4 deadline, Apr 15 looming", "pct": 91, "color": "#f59e0b" },
+          { "label": "/tools/dca-calculator", "value": "Evergreen leader — amplify on volatility", "pct": 92, "color": "#4ade80" },
+          { "label": "/learn/best-perpetual-dex-guide", "value": "Carry-forward — Hyperliquid dominance", "pct": 91, "color": "#6366f1" },
+          { "label": "/learn/ethena-usde-guide", "value": "Carry-forward — sUSDe yield narrative", "pct": 87, "color": "#4ade80" },
+          { "label": "/learn/quantum-resistant-crypto-guide", "value": "Carry-forward from v6", "pct": 85, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-ethereum-pectra-upgrade-guide.svg — 1200×630 social card: Ethereum diamond decorative element (right, purple gradient with network nodes), ~30 DAYS TO MAINNET green countdown badge, PECTRA large headline (indigo→cyan→amber gradient), 3 EIP pills (EIP-7702 Smart Wallets / EIP-7251 2048 ETH Max / EIP-7691 2× Blob Throughput), testnet progress timeline (Sepolia ✓ Feb / Holesky ✓ Mar / Mainnet Apr amber), degen0x branding. Saved to /public/social-ethereum-pectra-upgrade-guide.svg",
+          "social-crypto-tax-guide-2026.svg — 1200×630 social card: mocked Form 1099-DA with realistic crypto gain/loss data (right side), APRIL 15 DEADLINE red urgency badge, 'Stop Leaving Money Behind' amber/red gradient headline, 3 cost basis pills (FIFO red / HIFO green / Specific ID indigo), topic tags row (Trading · Staking · DeFi Yield · NFTs · Tax Loss Harvesting), amber urgency color palette with degen0x branding. Saved to /public/social-crypto-tax-guide-2026.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "Site is Day 15 — no GSC organic data yet; trajectory model based on content freshness, keyword intent, event proximity, and market narrative signals",
+          "Ethereum Pectra is the highest-urgency social content opportunity on the site: mainnet in ~30 days drives 'ethereum pectra upgrade', 'EIP-7702', 'ethereum account abstraction 2026', 'pectra mainnet date' search intent; thread format maximizes share-worthiness in ETH builder and staker communities",
+          "Crypto Tax Guide has peak search intent today (March 15 = US Q4 2025 estimated tax deadline); secondary peak April 1-14 into April 15 deadline; 'crypto taxes 2026', 'how is crypto taxed', 'HIFO vs FIFO crypto', 'crypto tax calculator' are all high-intent evergreen queries",
+          "Net-new pages covered in v7 (not in v1-v6): ethereum-pectra-upgrade-guide, crypto-tax-guide-2026",
+          "Social drafts saved to /reports/community-drafts/2026-03-15-social-drafts-v7.md",
+          "Social cards saved to /public/social-ethereum-pectra-upgrade-guide.svg and /public/social-crypto-tax-guide-2026.svg",
+          "Suggested posting schedule: Sunday PM — Pectra thread + Discord announce; Monday — Tax tweet Draft A; Tuesday — Privacy coins carry-forward; Wednesday — Tax tweet Draft B (FIFO/HIFO education); Thursday — Newsletter send"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"]
+  }
+}

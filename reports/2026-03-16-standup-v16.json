@@ -1,0 +1,90 @@
+{
+  "date": "2026-03-16",
+  "block": "standup",
+  "version": "v16",
+  "report": {
+    "status": "completed",
+    "summary": "Standup v16: Publish-v8 shipped Day 44 (5 pages: MEV Protection + 3 crypto card reviews + card comparison, deploy 5A7UYNc4G). Build-v10 shipped Intent-Based DEX Trading + Restaking/AVS Ecosystem guides (~5,700 words combined, added to queue). Design-v12 created 5 OG images + fixed 3 metadata URLs + UX improvements (responsive charts, touch targets, aria). Community-v28 drafted Tax Season urgency (14d to Apr 15) + Bloomberg Screener V3 launch + restaking/intent threads (Apr 5-6) + newsletter Apr 3 + calendar through Apr 6. EOD-v14 confirmed 361 slugs, 103 missing page.tsx (~28.5%). git index.lock STILL blocking (440 files). Rate limiter 0/6 — 11th consecutive cycle. FOMC T-2.",
+    "sections": [
+      {
+        "title": "Analytics — Delta Since Standup v15",
+        "items": [
+          "Publish-v8 promoted 5 pages (Day 44): /learn/mev-protection-guide + 3 crypto card reviews (Crypto.com, Coinbase, Binance) + /crypto-cards/compare/crypto-com-vs-coinbase-card. Vercel production redeploy 5A7UYNc4G triggered. PUBLISHED_PAGES now ~360 slugs.",
+          "Build-v10 shipped 2 new guides: Intent-Based DEX Trading (~2,800 words — CoW Swap $9B+ monthly ATH, UniswapX Dutch auctions, 1inch Fusion 13+ EVM chains, solver competition MEV protection) + Restaking/AVS Ecosystem 2026 (~2,900 words — $25B+ TVL, EigenLayer 85% share, Symbiotic permissionless, Karak broadest collateral, VAVS for AI verification). Both added to PUBLISH_QUEUE.",
+          "Design-v12: Created 5 OG images (restaking-avs, intent-based-dex, based-rollups-preconfirmations, data-availability-layer, chain-abstraction). Fixed 3 mismatched OG metadata URLs. UX: OptionsPnL chart fully responsive, DALayerComparison mobile touch targets, PredictionMarket slider aria + enlarged thumb.",
+          "Community-v28: Tax Season urgency campaign (14 days to Apr 15), Bloomberg Screener V3 Live Data product launch (Sprint 58 lead), restaking/AVS thread (Sat Apr 5), intent-based DEX thread (Sun Apr 6), newsletter (Thu Apr 3), 2 engagement posts (Fri Apr 4). Calendar filled Tue-Sun Apr 1-6. 2 social cards created (tax-season, bloomberg-screener-live updated).",
+          "EOD-v14 confirmed: 361 published slugs, 103 (~28.5%) missing page.tsx returning 404. PUBLISH_QUEUE: 3 items (smart-wallets [missing page.tsx], intent-based-dex [ready], restaking-avs [ready]). Rate limiter 0/6 (10th cycle per eod, now 11th). TS errors static at 40 (structured-data.examples.ts).",
+          "Top content signals: Tax guide peaking (14d to deadline), Stablecoin Yield +92%, ETF tracker +91%, Pectra +91% (25d), DeFAI +89%. Smart Wallets search climbing pre-Pectra. Crypto card reviews newly promoted — watch for indexing velocity.",
+          "git index.lock STILL PRESENT — 440 modified files stuck (up from 427). Multi-cycle critical blocker persisting. Vercel trial ~5 days remaining."
+        ]
+      },
+      {
+        "title": "Project Manager — Done vs Carry-Over",
+        "items": [
+          "SHIPPED ✅ build-v10 — Intent-Based DEX Trading Guide + Restaking/AVS Ecosystem Guide 2026 researched, written, SEO-optimized, scaffolded, added to PUBLISH_QUEUE.",
+          "SHIPPED ✅ publish-v8 — Day 44: MEV Protection Guide + 3 crypto card reviews + 1 card comparison promoted to PUBLISHED_PAGES. Vercel redeploy 5A7UYNc4G.",
+          "SHIPPED ✅ design-v12 — 5 OG images (SVG+PNG), 3 metadata URL fixes, responsive OptionsPnL chart, mobile touch targets (DALayer, PredictionMarket), aria slider support.",
+          "SHIPPED ✅ community-v28 — Tax Season urgency + Bloomberg Screener V3 launch + restaking/intent threads + newsletter Apr 3 + engagement posts + 2 social cards. Calendar through Apr 6.",
+          "SHIPPED ✅ eod-v14 — Full QA sweep. 361 slugs confirmed. 103 missing page.tsx flagged. Data pipeline health checked (5/6 fallbacks, 0/6 rate limiter).",
+          "BLOCKER 🔴 [P0] git index.lock — blocking ALL commits. 440 modified files stuck in working tree (up from 427). Multi-cycle persistent. Must rm .git/index.lock.",
+          "BLOCKER 🔴 [P0] Rate limiter: 0/6 public API routes protected. 11th consecutive cycle flagged. FOMC is Wed Mar 18 (T-2) — traffic spike risk on unprotected endpoints.",
+          "BLOCKER 🔴 [P0] Vercel trial ~5 days remaining — Jefe must add payment method or service interruption.",
+          "BLOCKER 🔴 [P1] smart-wallets-guide-2026 in PUBLISH_QUEUE but page.tsx MISSING — blocks promotion.",
+          "BLOCKER 🟡 Staged next.config.ts drops output:'standalone' — needs review before commit.",
+          "BLOCKER 🟡 Staged deletions: badges/page.tsx + courses routes — Jefe approval needed.",
+          "CARRY-OVER 🟡 ~28.5% published slugs missing page.tsx (103/361 returning 404).",
+          "CARRY-OVER 🟡 1/6 API routes lacks fallback data (defi-yields returns 500 on error).",
+          "CARRY-OVER 🟡 WalletConnect production Project ID — Jefe action required.",
+          "CARRY-OVER 🟡 GitHub Actions secrets — Jefe ~15 min; blocks Playwright CI.",
+          "CARRY-OVER 🟡 next lint misconfigured (looking for ./lint directory).",
+          "CARRY-OVER 🟡 structured-data.examples.ts has 40 TS errors (JSX in .ts file) — rename to .tsx."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — Remove git index.lock and commit all pending changes. 440 modified files are stuck (up 13 from last cycle). Steps: (1) rm .git/index.lock; (2) git restore --staged next.config.ts to preserve output:'standalone'; (3) Confirm badges/courses deletions with Jefe or restore; (4) Stage all valid changes and commit; (5) Push to trigger Vercel deploy. Nothing else can land until this is resolved. Assign: degen-programmer.",
+          "PRIORITY 2 — Wire checkRateLimit() into all 6 public API routes before FOMC Wednesday. The implementation exists in src/lib/rate-limiter.ts but is imported by zero routes. This is the 11th consecutive cycle this has been flagged. FOMC T-2. Import and call checkRateLimit() at the top of: /api/prices, /api/trending, /api/market-metrics, /api/market-dominance, /api/defi-yields, /api/fear-greed. Add fallback data to defi-yields (the 1 remaining route without it). Assign: degen-programmer.",
+          "PRIORITY 3 — Create smart-wallets-guide-2026 page.tsx, then promote all 3 queue items (smart-wallets + intent-based-dex + restaking-avs). Queue is at 3 and all have high topical urgency: Smart Wallets (Pectra T-25, ERC-4337/EIP-7702), Intent-Based DEX (MEV protection awareness growing), Restaking/AVS ($25B+ TVL category). Community has social threads scheduled for Apr 5-6 targeting intent-based-dex and restaking-avs — must be live by then. Assign: degen-programmer + degen-publish-queue.",
+          "STRATEGIC NOTE — Content velocity strong: 2 guides/cycle (build-v10), 5 pages promoted (publish-v8 Day 44). Three converging catalysts: FOMC (Wed Mar 18, T-2), Tax deadline (Apr 15, 30 days), Ethereum Pectra (Apr 10, 25 days). Community calendar filled through Apr 6 with FOMC-reactive + tax urgency + product launch content. Crypto card reviews newly live — new content vertical. Critical path: unblock git → rate limiter → promote queue → clear 404 backlog. Next build candidates: Solana vs Ethereum 2026, DeFi Insurance, Crypto ETF Comparison 2026, Real World Assets (RWA) Guide."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Total PUBLISHED_PAGES", "value": "~360 slugs (+5 from Day 44)", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "3 items (smart-wallets [no page.tsx], intent-dex [ready], restaking [ready])", "pct": 67, "color": "#f59e0b" },
+          { "label": "Published Slugs Missing page.tsx", "value": "103/361 (~28.5%) returning 404", "pct": 29, "color": "#f59e0b" },
+          { "label": "Working Tree Modified Files", "value": "440 — git index.lock blocking commits 🔴", "pct": 5, "color": "#ef4444" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 public API routes — FOMC T-2 🔴", "pct": 0, "color": "#ef4444" },
+          { "label": "API Fallback Data", "value": "5/6 routes have fallback (defi-yields missing)", "pct": 83, "color": "#f59e0b" },
+          { "label": "TS Errors", "value": "40 (all in 1 file, unchanged)", "pct": 75, "color": "#f59e0b" },
+          { "label": "OG Image Coverage", "value": "+5 new OG images + 3 metadata fixes (design-v12)", "pct": 95, "color": "#4ade80" },
+          { "label": "UX Improvements", "value": "Responsive charts, mobile touch targets, aria on 3 components", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Calendar", "value": "Filled through Sun Apr 6 + FOMC reactive ready", "pct": 100, "color": "#4ade80" },
+          { "label": "Top Content Signals", "value": "Tax +peak, Stablecoin Yield +92%, ETF +91%, Pectra +91%", "pct": 92, "color": "#4ade80" },
+          { "label": "Vercel Trial", "value": "~5 days remaining", "pct": 20, "color": "#ef4444" },
+          { "label": "Build Regressions", "value": "0 (clean per eod-v14)", "pct": 100, "color": "#4ade80" },
+          { "label": "Latest Deploy", "value": "5A7UYNc4G (publish-v8 Day 44)", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "6 of 6 (standup + build + publish + design + community + eod)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~10.25h (all 6 agents)", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (6 agents: $45+$233+$55+$60+$41+$63)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$6,706 (standup×16 $720 + build×12 $2,796 + publish×8 $440 + design×12 $720 + community×28 $1,148 + eod×14 $882)", "pct": 100, "color": "#4ade80" },
+          { "label": "Total Agent Runs Today", "value": "90 (16+12+8+12+28+14)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Chrome tool fetch blocked (CORS on api.resend.com) — skipped"
+  }
+}

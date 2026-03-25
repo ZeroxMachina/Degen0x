@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a0a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1628;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.4" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.06">
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="60" y1="0" x2="60" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="120" y1="0" x2="120" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="180" y1="0" x2="180" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="240" y1="0" x2="240" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="360" y1="0" x2="360" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="420" y1="0" x2="420" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="480" y1="0" x2="480" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="540" y1="0" x2="540" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="660" y1="0" x2="660" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="720" y1="0" x2="720" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="780" y1="0" x2="780" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="840" y1="0" x2="840" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="960" y1="0" x2="960" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="1020" y1="0" x2="1020" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="1080" y1="0" x2="1080" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="1140" y1="0" x2="1140" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="1200" y1="0" x2="1200" y2="630" stroke="#a855f7" stroke-width="1"/>
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#a855f7" stroke-width="1"/>
+    <line x1="0" y1="120" x2="1200" y2="120" stroke="#a855f7" stroke-width="1"/>
+    <line x1="0" y1="180" x2="1200" y2="180" stroke="#a855f7" stroke-width="1"/>
+    <line x1="0" y1="240" x2="1200" y2="240" stroke="#a855f7" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#a855f7" stroke-width="1"/>
+    <line x1="0" y1="360" x2="1200" y2="360" stroke="#a855f7" stroke-width="1"/>
+    <line x1="0" y1="420" x2="1200" y2="420" stroke="#a855f7" stroke-width="1"/>
+    <line x1="0" y1="480" x2="1200" y2="480" stroke="#a855f7" stroke-width="1"/>
+    <line x1="0" y1="540" x2="1200" y2="540" stroke="#a855f7" stroke-width="1"/>
+  </g>
+
+  <!-- Quantum circuit decoration (right side) -->
+  <g transform="translate(780, 80)" opacity="0.15" filter="url(#glow)">
+    <!-- Qubit lines -->
+    <line x1="0" y1="40" x2="350" y2="40" stroke="#a855f7" stroke-width="2"/>
+    <line x1="0" y1="100" x2="350" y2="100" stroke="#06b6d4" stroke-width="2"/>
+    <line x1="0" y1="160" x2="350" y2="160" stroke="#a855f7" stroke-width="2"/>
+    <line x1="0" y1="220" x2="350" y2="220" stroke="#06b6d4" stroke-width="2"/>
+    <!-- Gate boxes -->
+    <rect x="60" y="20" width="40" height="40" rx="4" fill="none" stroke="#a855f7" stroke-width="2"/>
+    <text x="80" y="46" fill="#a855f7" font-family="monospace" font-size="16" text-anchor="middle">H</text>
+    <rect x="150" y="80" width="40" height="40" rx="4" fill="none" stroke="#06b6d4" stroke-width="2"/>
+    <text x="170" y="106" fill="#06b6d4" font-family="monospace" font-size="16" text-anchor="middle">X</text>
+    <rect x="240" y="140" width="40" height="40" rx="4" fill="none" stroke="#a855f7" stroke-width="2"/>
+    <text x="260" y="166" fill="#a855f7" font-family="monospace" font-size="16" text-anchor="middle">S</text>
+    <!-- CNOT connections -->
+    <line x1="80" y1="60" x2="80" y2="100" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="80" cy="100" r="6" fill="#a855f7"/>
+    <line x1="170" y1="120" x2="170" y2="160" stroke="#06b6d4" stroke-width="2"/>
+    <circle cx="170" cy="160" r="6" fill="#06b6d4"/>
+    <line x1="260" y1="180" x2="260" y2="220" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="260" cy="220" r="6" fill="#a855f7"/>
+  </g>
+
+  <!-- Shield icon -->
+  <g transform="translate(80, 100)">
+    <path d="M40 0 L80 20 L80 55 C80 85 60 105 40 115 C20 105 0 85 0 55 L0 20 Z" fill="url(#shield)" opacity="0.3"/>
+    <path d="M40 0 L80 20 L80 55 C80 85 60 105 40 115 C20 105 0 85 0 55 L0 20 Z" fill="none" stroke="url(#accent)" stroke-width="2.5"/>
+    <!-- Lock icon inside shield -->
+    <rect x="25" y="50" width="30" height="24" rx="3" fill="none" stroke="#e0e0ff" stroke-width="2"/>
+    <path d="M32 50 L32 40 C32 33 48 33 48 40 L48 50" fill="none" stroke="#e0e0ff" stroke-width="2"/>
+    <circle cx="40" cy="62" r="3" fill="#e0e0ff"/>
+  </g>
+
+  <!-- Title -->
+  <text x="80" y="275" fill="url(#accent)" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="800" letter-spacing="-1">Quantum-Resistant Crypto</text>
+  <text x="80" y="325" fill="#e0e0f0" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="400" opacity="0.9">Protect Your Holdings in 2026</text>
+
+  <!-- Stat cards row -->
+  <!-- Card 1: Market Cap -->
+  <g transform="translate(80, 370)">
+    <rect width="240" height="100" rx="12" fill="#1a1a2e" stroke="#a855f7" stroke-width="1" opacity="0.8"/>
+    <text x="20" y="35" fill="#a0a0c0" font-family="system-ui, sans-serif" font-size="13" font-weight="500">SECTOR MARKET CAP</text>
+    <text x="20" y="72" fill="#a855f7" font-family="system-ui, sans-serif" font-size="36" font-weight="700">$9.37B</text>
+  </g>
+
+  <!-- Card 2: Vulnerable BTC -->
+  <g transform="translate(350, 370)">
+    <rect width="240" height="100" rx="12" fill="#1a1a2e" stroke="#ef4444" stroke-width="1" opacity="0.8"/>
+    <text x="20" y="35" fill="#a0a0c0" font-family="system-ui, sans-serif" font-size="13" font-weight="500">BTC AT RISK</text>
+    <text x="20" y="72" fill="#ef4444" font-family="system-ui, sans-serif" font-size="36" font-weight="700">25%</text>
+  </g>
+
+  <!-- Card 3: NIST Standards -->
+  <g transform="translate(620, 370)">
+    <rect width="240" height="100" rx="12" fill="#1a1a2e" stroke="#06b6d4" stroke-width="1" opacity="0.8"/>
+    <text x="20" y="35" fill="#a0a0c0" font-family="system-ui, sans-serif" font-size="13" font-weight="500">NIST PQC STANDARDS</text>
+    <text x="20" y="72" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="36" font-weight="700">4 Final</text>
+  </g>
+
+  <!-- Card 4: QRL Surge -->
+  <g transform="translate(890, 370)">
+    <rect width="240" height="100" rx="12" fill="#1a1a2e" stroke="#4ade80" stroke-width="1" opacity="0.8"/>
+    <text x="20" y="35" fill="#a0a0c0" font-family="system-ui, sans-serif" font-size="13" font-weight="500">QRL (7D)</text>
+    <text x="20" y="72" fill="#4ade80" font-family="system-ui, sans-serif" font-size="36" font-weight="700">+20.4%</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="510" width="1200" height="120" fill="#0a0a14" opacity="0.7"/>
+
+  <!-- Tags -->
+  <g transform="translate(80, 545)">
+    <rect width="85" height="28" rx="14" fill="#a855f7" opacity="0.2"/>
+    <text x="42" y="19" fill="#a855f7" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">ML-KEM</text>
+  </g>
+  <g transform="translate(180, 545)">
+    <rect width="85" height="28" rx="14" fill="#a855f7" opacity="0.2"/>
+    <text x="42" y="19" fill="#a855f7" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">ML-DSA</text>
+  </g>
+  <g transform="translate(280, 545)">
+    <rect width="85" height="28" rx="14" fill="#06b6d4" opacity="0.2"/>
+    <text x="42" y="19" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">SLH-DSA</text>
+  </g>
+  <g transform="translate(380, 545)">
+    <rect width="85" height="28" rx="14" fill="#06b6d4" opacity="0.2"/>
+    <text x="42" y="19" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">FN-DSA</text>
+  </g>
+  <g transform="translate(480, 545)">
+    <rect width="60" height="28" rx="14" fill="#4ade80" opacity="0.2"/>
+    <text x="30" y="19" fill="#4ade80" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">QRL</text>
+  </g>
+  <g transform="translate(555, 545)">
+    <rect width="70" height="28" rx="14" fill="#4ade80" opacity="0.2"/>
+    <text x="35" y="19" fill="#4ade80" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">QANX</text>
+  </g>
+
+  <!-- degen0x branding -->
+  <text x="1120" y="600" fill="#e0e0f0" font-family="system-ui, sans-serif" font-size="20" font-weight="700" text-anchor="end" opacity="0.7">degen0x</text>
+
+  <!-- Accent line top -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+</svg>

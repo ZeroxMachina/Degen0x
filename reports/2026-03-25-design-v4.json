@@ -1,0 +1,46 @@
+{
+  "date": "2026-03-25",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited 2 pages from build-v1 cycle (Lido V3 stVaults Guide, Institutional Crypto Adoption Guide), fixed 6 UX issues including broken schema fields, missing OG metadata, missing semantic HTML, and non-responsive titles, and created 2 OG images.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Institutional Crypto Adoption Guide: Fixed generateArticleSchema call — was using wrong field names (headline→title, published→datePublished, modified→dateModified, authors array→author string). Added missing image and wordCount fields. Schema was silently generating invalid JSON-LD.",
+          "Institutional Crypto Adoption Guide: Added full OpenGraph metadata — url, modifiedTime, authors array, and images array for proper social sharing previews (were all missing)",
+          "Institutional Crypto Adoption Guide: Added Twitter images array for social card rendering (was missing, causing fallback to generic card)",
+          "Lido V3 stVaults Guide: Replaced dynamic /api/og OG image URLs with static SVG path for consistent, reliable social sharing across all 3 metadata locations",
+          "Lido V3 stVaults Guide: Changed root element from <div> to <main> for semantic HTML and accessibility",
+          "Both pages: Updated h1 fontSize from fixed '2.5rem' to 'clamp(1.75rem, 4vw, 2.5rem)' for responsive title sizing on mobile"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: lido-v3-stvaults-guide-2026 (1200x630 SVG) — Dark theme with modular architecture diagram showing 4 connected nodes (Validator Selection, DeFi Yield Loops, Restaking/EigenLayer, Institutional Access) around central Lido V3 stVaults hub. Stats cards ($15B+ TVL, 1M ETH target, 8-12% DeFi APY). Feature pills for key capabilities.",
+          "OG image: institutional-crypto-adoption-guide-2026 (1200x630 SVG) — Dark theme with Wall Street building skyline visualization (BlackRock, JPMorgan, Morgan Stanley, SEC-CFTC) with color-coded institutional nodes. Stats cards ($35.6B Tokenized RWAs, 16 Digital Commodities, AI + Crypto). Key bullet points for BlackRock BUIDL, SEC-CFTC framework, AI convergence, and tokenized RWAs."
+        ]
+      },
+      {
+        "title": "UX Audit Findings (Build-v1 Pages)",
+        "items": [
+          "Lido V3 stVaults Guide: Well-structured 1155-line article with semantic <article> wrapper, proper breadcrumbs (Home > Learn > Lido V3), gradient title, category badges (DeFi, Intermediate), reading time, XP indicator. Competitor comparison table, risk severity ratings, DeFi yield loop explanations. Layout is solid at maxWidth 900px. Main issues were OG image URLs pointing to dynamic endpoint and non-semantic root element.",
+          "Institutional Crypto Adoption Guide: Clean article structure with <main> semantic root, breadcrumbs, category badges (Market Analysis, Intermediate), glassmorphism style cards. Good content hierarchy with proper heading levels. Critical issues were all metadata-related: broken generateArticleSchema fields would produce invalid structured data, and missing OG/Twitter image metadata would show blank social previews.",
+          "Both pages: No client-side event handlers (correct for server components), proper import structure, good use of BackToTop and Breadcrumb components."
+        ]
+      }
+    ],
+    "files_modified": [
+      "src/app/learn/lido-v3-stvaults-guide-2026/page.tsx",
+      "src/app/learn/institutional-crypto-adoption-guide-2026/page.tsx"
+    ],
+    "files_created": [
+      "public/og-lido-v3-stvaults-guide-2026.svg",
+      "public/og-institutional-crypto-adoption-guide-2026.svg",
+      "reports/2026-03-25-design-v4.json"
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

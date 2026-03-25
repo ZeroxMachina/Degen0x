@@ -1,0 +1,53 @@
+{
+  "date": "2026-03-15",
+  "block": "community",
+  "cycle": "v4",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v4: identified crypto-tax-guide-2026 and ethereum-pectra-upgrade-guide as top trajectory pages; drafted 7-post tax thread, Pectra tweet, DCA tool tweet, Discord announcement, and Thursday newsletter section; created 2 SVG social cards (calendar-urgency tax card + 3-EIP Pectra card) saved to /public/.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Twitter thread (7 posts): Crypto Tax Guide 2026 — hook on 31-day April 15 countdown, every taxable event explained (swaps/staking/airdrops), common misconceptions busted, 6 IRS forms mapped, tax-loss harvesting strategy with no wash-sale rule, CTA to /learn/crypto-tax-guide-2026",
+          "Tweet: Ethereum Pectra Upgrade — EIP-7251 (validators 32→2,048 ETH, 90% fewer validators), EIP-7702 (EOA acts as smart contract, no migration), EIP-7691 (blobs 3→6, ~50% L2 fee drop), CTA to /learn/ethereum-pectra-upgrade-guide",
+          "Tweet: DCA Calculator tool spotlight — 'Stop timing it' angle, no signup CTA, links to /tools/dca-calculator",
+          "Discord/Telegram announcement: both new guides (crypto-tax + pectra) with slugs, 'no wallet needed' callout",
+          "Newsletter section (Thursday send): Subject 'April's coming for your taxes and your L2 fees' — market pulse ($71K BTC, $2,088 ETH), 2 new guides, DCA calculator + stablecoin payments worth-reading picks, degen corner on EIP-7702 practical implications"
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-crypto-tax-guide-2026.svg — 1200×630 social card: April 2026 calendar with April 15 highlighted in red, 3 stat cards (8+ taxable events / 6 IRS forms / no wash-sale rule), topic tag pills (DeFi/NFTs/Staking/Airdrops/Mining), urgency badge '31 DAYS', brand gradient title. Saved to /public/",
+          "social-ethereum-pectra-upgrade.svg — 1200×630 social card: large decorative Ethereum diamond glyph, 3 EIP feature cards side by side (EIP-7251 purple/validator consolidation 64× stake, EIP-7702 cyan/smart EOA gas sponsoring, EIP-7691 green/~50% L2 fee drop), mainnet badge 'April 2026', impact tag row. Saved to /public/"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/learn/crypto-tax-guide-2026", "value": "April urgency rising", "pct": 88, "color": "#ef4444" },
+          { "label": "/tools/dca-calculator", "value": "Evergreen leader", "pct": 92, "color": "#4ade80" },
+          { "label": "/tools/portfolio-tracker", "value": "High repeat-visit", "pct": 87, "color": "#4ade80" },
+          { "label": "/learn/bitcoin-etf-guide", "value": "Sustained search volume", "pct": 84, "color": "#4ade80" },
+          { "label": "/learn/ethereum-pectra-upgrade-guide", "value": "Rising — April mainnet", "pct": 82, "color": "#a78bfa" },
+          { "label": "/compare/wallets/ledger-vs-trezor", "value": "Evergreen buyer intent", "pct": 79, "color": "#4ade80" },
+          { "label": "/learn/stablecoin-payments-guide-2026", "value": "GENIUS Act topical", "pct": 74, "color": "#06b6d4" },
+          { "label": "/tools/gas-tracker", "value": "Daily utility", "pct": 75, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "Site is Day 15 — no Google Search Console data yet; trajectory model based on content quality, keyword intent, and timeliness signals",
+          "April 15 US tax deadline is 31 days out — crypto-tax-guide-2026 enters peak urgency window; this is the highest-leverage social content play this week",
+          "Ethereum Pectra mainnet (April 2026) is generating increasing search intent; timing for organic capture is now",
+          "278 pages live; PUBLISH_QUEUE empty — next build cycle will scaffold new pages before next publish",
+          "Social drafts saved to /reports/community-drafts/2026-03-15-social-drafts-v4.md",
+          "Social cards saved to /public/social-crypto-tax-guide-2026.svg and /public/social-ethereum-pectra-upgrade.svg"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"]
+  }
+}

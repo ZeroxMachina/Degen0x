@@ -1,0 +1,73 @@
+{
+  "date": "2026-03-25",
+  "block": "community",
+  "version": "v4",
+  "report": {
+    "status": "completed",
+    "summary": "Drafted 3 new social posts (#122-124) covering the CLARITY Act stablecoin yield breakthrough (Tillis-Alsobrooks bipartisan deal), $13.5B quarterly options expiry on March 27, and Fear & Greed Day 51 all-time record with historical recovery data. Updated newsletter v23 with CLARITY Act + options expiry addendum. Created content calendar v31 (3 new posts Wed-Thu). Built 3 SVG social cards (CLARITY Act deal layout, options expiry volatility alert, Fear & Greed Day 51 historical comparison). Key narrative: legislative clarity + massive derivatives expiry converging with record-length fear streak — the setup for a potential regime change.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #122: CLARITY Act Stablecoin Yield Deal — Tillis-Alsobrooks compromise (passive yield banned, activity rewards allowed), White House backed, Banking Committee markup late April, Senate vote May-June, 60 votes needed. CTA to crypto-regulations-2026 (scheduled Wed Mar 26 9AM ET)",
+          "Tweet #123: $13.5B Options Expiry — quarterly quadruple witching on Deribit Mar 27, BTC ~$9.2B + ETH ~$4.3B, historical post-expiry swings 8-15%, BTC range-bound at $70K with F&G 11. CTA to options-calculator (scheduled Wed Mar 26 1PM ET)",
+          "Tweet #124: Fear & Greed Day 51 Thread — all-time record extending, comparison to COVID 2020 (28 days, then +130%) and LUNA/3AC 2022 (41 days, then +45%), Glassnode data +18% avg 30-day return on entries below 25. CTA to fear-greed-timeline (scheduled Thu Mar 27 10AM ET)",
+          "Newsletter v23 addendum v4: CLARITY Act deal explainer + $13.5B options expiry volatility preview",
+          "Content calendar v31: 3 new posts (Wed-Thu) + Discord volatility alert for Thu morning"
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "SVG social card: CLARITY Act Deal — green/red banned vs allowed layout, Tillis-Alsobrooks attribution, timeline panel (April markup, May-June vote, 60 senators), bottom stats ($304B stablecoins, 99% resolved, FIT21+ path, bipartisan)",
+          "SVG social card: $13.5B Options Expiry — amber volatility theme, BTC/ETH breakdown ($9.2B/$4.3B), historical post-expiry moves (Dec +12%, Sep -8%, Jun +15%), current conditions panel (BTC $70K, F&G 11 Day 51, 2 days countdown)",
+          "SVG social card: Fear & Greed Day 51 — giant DAY 51 with fear gradient, 3 comparison cards (2020 COVID 28 days/+130%, 2022 LUNA 41 days/+45%, 2026 NOW 51 days), Glassnode +18% avg return callout"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "CLARITY Act / Regulations Guide", "value": "Bipartisan deal breakthrough", "pct": 98, "color": "#22c55e" },
+          { "label": "Fear & Greed Timeline", "value": "Day 51 ALL-TIME RECORD streak", "pct": 96, "color": "#ef4444" },
+          { "label": "Options Calculator", "value": "$13.5B quarterly expiry Thu", "pct": 93, "color": "#f59e0b" },
+          { "label": "Tokenized RWA Guide", "value": "House hearing today + $26.48B", "pct": 92, "color": "#4ade80" },
+          { "label": "Bitcoin ETF / MSBT Guides", "value": "MS filing + $2.5B inflows", "pct": 90, "color": "#4ade80" },
+          { "label": "Cross-Chain Messaging Guide", "value": "$225B infrastructure, LayerZero 75%", "pct": 88, "color": "#6366f1" },
+          { "label": "DCA Calculator", "value": "Evergreen — peak demand at F&G 8-11", "pct": 85, "color": "#4ade80" },
+          { "label": "Tax Guides", "value": "20 days to April 15", "pct": 82, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Growth Trajectory Analysis",
+        "items": [
+          "BREAKOUT: CLARITY Act stablecoin yield deal — first major bipartisan crypto legislation breakthrough of 2026. Regulations guide should see surge in search traffic.",
+          "CATALYST: $13.5B quarterly options expiry Thursday Mar 27 — the single biggest near-term volatility event. Options calculator page positioned perfectly.",
+          "PEAK: Fear & Greed Day 51 — every day extends our unique ownership of 'extreme fear record' search queries. No competitor has this data asset.",
+          "SURGING: Institutional divergence narrative intensifying — Bitmine 3.86% of ETH supply, MS MSBT, $2.5B ETF inflows all building.",
+          "TIME-SENSITIVE: Tax guides — 20 days to April 15 deadline. Peak search volume window closing fast.",
+          "BLOCKED: 170+ pages stuck behind git lock. Every undeployed day = lost indexing for queued content."
+        ]
+      },
+      {
+        "title": "Market Context",
+        "metrics": [
+          { "label": "BTC", "value": "~$69,541-$71,043 (pre-expiry compression)", "pct": 70, "color": "#f59e0b" },
+          { "label": "ETH", "value": "~$2,133 (Bitmine owns 3.86% of supply)", "pct": 62, "color": "#06b6d4" },
+          { "label": "Fear & Greed", "value": "8-11 (Extreme Fear — Day ~51 ALL-TIME RECORD)", "pct": 8, "color": "#ef4444" },
+          { "label": "Options Expiry", "value": "$13.5B on Deribit — Thu Mar 27", "pct": 95, "color": "#f59e0b" },
+          { "label": "CLARITY Act", "value": "Stablecoin yield deal reached — markup April", "pct": 85, "color": "#22c55e" },
+          { "label": "Stablecoins", "value": "$304B ATH", "pct": 97, "color": "#4ade80" },
+          { "label": "RWA On-Chain", "value": "$26.48B (+5.25% 30d)", "pct": 88, "color": "#22c55e" },
+          { "label": "degen0x Published", "value": "513 slugs (494 unique)", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "files_created": [
+      "reports/community-drafts/2026-03-25-social-drafts-v4.md",
+      "reports/community-drafts/2026-03-25-social-card-clarity-act-deal.svg",
+      "reports/community-drafts/2026-03-25-social-card-options-expiry.svg",
+      "reports/community-drafts/2026-03-25-social-card-fear-greed-day51.svg"
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"]
+  }
+}

@@ -1,0 +1,107 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1420"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="orange-indigo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative background circles -->
+  <circle cx="1150" cy="80" r="140" fill="#f59e0b" opacity="0.04"/>
+  <circle cx="80" cy="550" r="130" fill="#6366f1" opacity="0.05"/>
+  <circle cx="1000" cy="450" r="110" fill="#f59e0b" opacity="0.03"/>
+
+  <!-- Bitcoin with DeFi protocol connections (right side) -->
+  <g opacity="0.7">
+    <!-- Bitcoin symbol (large center) -->
+    <circle cx="1050" cy="200" r="35" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <text x="1050" y="215" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#f59e0b" text-anchor="middle">₿</text>
+
+    <!-- Protocol connection lines -->
+    <line x1="1050" y1="200" x2="950" y2="100" stroke="#6366f1" stroke-width="2" opacity="0.5"/>
+    <circle cx="950" cy="100" r="12" fill="#6366f1" opacity="0.2"/>
+    <circle cx="950" cy="100" r="8" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+
+    <line x1="1050" y1="200" x2="1120" y2="80" stroke="#f59e0b" stroke-width="2" opacity="0.5"/>
+    <circle cx="1120" cy="80" r="12" fill="#f59e0b" opacity="0.2"/>
+    <circle cx="1120" cy="80" r="8" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <line x1="1050" y1="200" x2="1100" y2="310" stroke="#6366f1" stroke-width="2" opacity="0.5"/>
+    <circle cx="1100" cy="310" r="12" fill="#6366f1" opacity="0.2"/>
+    <circle cx="1100" cy="310" r="8" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+
+    <line x1="1050" y1="200" x2="920" y2="280" stroke="#f59e0b" stroke-width="2" opacity="0.5"/>
+    <circle cx="920" cy="280" r="12" fill="#f59e0b" opacity="0.2"/>
+    <circle cx="920" cy="280" r="8" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <!-- Center glow -->
+    <circle cx="1050" cy="200" r="30" fill="#f59e0b" opacity="0.08"/>
+  </g>
+
+  <!-- Logo (top-left) -->
+  <g>
+    <circle cx="50" cy="35" r="20" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <text x="50" y="42" font-family="Inter, sans-serif" font-size="16" font-weight="900" fill="#f59e0b" text-anchor="middle">0x</text>
+    <text x="80" y="40" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#ffffff">degen0x</text>
+  </g>
+
+  <!-- Category badges -->
+  <g>
+    <rect x="60" y="80" width="90" height="30" rx="20" fill="rgba(245, 158, 11, 0.15)" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="105" y="100" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#f59e0b" text-anchor="middle">BTCFi</text>
+
+    <rect x="170" y="80" width="90" height="30" rx="20" fill="rgba(99, 102, 241, 0.15)" stroke="#6366f1" stroke-width="1.5"/>
+    <text x="215" y="100" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6366f1" text-anchor="middle">DeFi</text>
+  </g>
+
+  <!-- Main title -->
+  <text x="60" y="170" font-family="Inter, sans-serif" font-size="56" font-weight="900" fill="#ffffff">BTCFi Yield</text>
+  <text x="60" y="240" font-family="Inter, sans-serif" font-size="56" font-weight="900" fill="#f59e0b">Strategies 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="290" font-family="Inter, sans-serif" font-size="18" font-weight="400" fill="#8b949e">Bitcoin DeFi Protocols & Yield Opportunities</text>
+
+  <!-- Feature pills -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="330" width="180" height="60" rx="8" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" stroke-width="1"/>
+    <text x="150" y="352" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#f59e0b" text-anchor="middle">$5B+</text>
+    <text x="150" y="380" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#8b949e" text-anchor="middle">TVL</text>
+
+    <rect x="280" y="330" width="180" height="60" rx="8" fill="rgba(99, 102, 241, 0.1)" stroke="#6366f1" stroke-width="1"/>
+    <text x="370" y="352" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#6366f1" text-anchor="middle">5-15%</text>
+    <text x="370" y="380" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#8b949e" text-anchor="middle">APY Range</text>
+
+    <rect x="500" y="330" width="180" height="60" rx="8" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" stroke-width="1"/>
+    <text x="590" y="352" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#f59e0b" text-anchor="middle">Native</text>
+    <text x="590" y="380" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#8b949e" text-anchor="middle">Bitcoin</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(0, 0, 0, 0.3)"/>
+  <text x="60" y="615" fill="#6e7681" font-family="Inter, sans-serif" font-size="13" font-weight="500">degen0x.com</text>
+</svg>

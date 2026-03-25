@@ -1,0 +1,61 @@
+{
+  "date": "2026-03-17",
+  "block": "community",
+  "version": "v15",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v15: FOMC Day 1 live — drafted 6 social posts (FOMC situation report, 4-part sentiment recovery thread, Cross-Chain Interoperability guide launch, DAO Governance guide launch, ETF momentum snapshot, Discord FOMC eve briefing); updated newsletter for Thu Mar 19 with FOMC recap template, new guide promotions, and Degen Corner on fear-to-greed flip playbook; created 3 new SVG social cards (cross-chain interoperability, DAO governance voting, sentiment recovery chart). BTC $73,930, ETH $2,317 (+17% 7d), F&G 28 (recovering from ATL 5), ETF 5-day inflow streak $767M.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet (Tue Mar 17 EVE): FOMC Day 1 Situation Report — dot plot is what matters, not the rate; December dots showed 2 cuts, new data (oil $105, tariffs 15%, payrolls -92K) may shift; scenario breakdown (1 cut = risk-off, 2 cuts = relief rally); CTA to /learn/fomc-fed-rate-crypto-guide",
+          "Twitter thread (Tue Mar 17 EVE, 4 posts): Sentiment Recovery — F&G ATL 5 (lower than Luna/COVID/FTX), BTC $73,930 + ETH +17% 7d, ETF $767M 5-day streak, historical parallels (COVID +1,400%, Luna +158%, FTX +300%), 38-day extreme fear streak broken; CTAs to /tools/dca-calculator, /learn/fomc-fed-rate-crypto-guide, /tools/altcoin-etf-tracker",
+          "Tweet (Tue Mar 17 EVE): Cross-Chain Interoperability Guide launch — LayerZero 50+ chains, Chainlink CCIP institutional-grade, Wormhole rebuilt post-$320M exploit, Axelar GMP, ERC-7683 intents standard; CTA to /learn/cross-chain-interoperability-guide",
+          "Tweet (Tue Mar 17 EVE): DAO Governance & Voting Guide launch — $25B+ in treasuries, on-chain vs off-chain, delegate mechanics, quadratic voting, top 5 DAOs ranked; CTA to /learn/dao-governance-voting-guide",
+          "Tweet (Tue Mar 17 EVE): ETF Momentum Snapshot — $767M 5-day streak (first of 2026), 2-week positive streak (first in 5 months), $91.83B net AUM, BlackRock IBIT dominant; CTA to /tools/altcoin-etf-tracker",
+          "Discord/Telegram (Tue Mar 17 EVE): FOMC eve + content drop — Mar 18 timeline, market setup (BTC $73,930, ETH $2,317, F&G 28, ETF $767M), prep reading links, new guide announcements",
+          "Newsletter update (Thu Mar 19): Market Pulse with FOMC week context, new guides section (Cross-Chain + DAO Governance added), Degen Corner on fear-to-greed flip historical playbook",
+          "Hold-drafts carried: Kaito AI InfoFi, BTCFi Guide 2026, Aave V4, Maple Finance, On-Chain Institutional Credit — all pending publish confirmation"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/tools/bloomberg-screener", "value": "+98%", "pct": 98, "color": "#06b6d4" },
+          { "label": "/tools/dca-calculator", "value": "+94%", "pct": 94, "color": "#4ade80" },
+          { "label": "/learn/fomc-fed-rate-crypto-guide", "value": "FOMC PEAK", "pct": 95, "color": "#ef4444" },
+          { "label": "/learn/ethereum-pectra-upgrade-guide", "value": "+91%", "pct": 91, "color": "#8b5cf6" },
+          { "label": "/learn/crypto-tax-guide-2026", "value": "+90% (27d to deadline)", "pct": 90, "color": "#f59e0b" },
+          { "label": "/exchanges/best", "value": "HIGH-VOL SEO", "pct": 89, "color": "#4ade80" },
+          { "label": "/learn/cross-chain-interoperability-guide", "value": "NET-NEW", "pct": 88, "color": "#06b6d4" },
+          { "label": "/learn/dao-governance-voting-guide", "value": "NET-NEW", "pct": 87, "color": "#8b5cf6" },
+          { "label": "/learn/solana-etf-guide-2026", "value": "NET-NEW", "pct": 86, "color": "#22d3ee" },
+          { "label": "/learn/crypto-payroll-guide-2026", "value": "NET-NEW", "pct": 85, "color": "#f472b6" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-cross-chain-interoperability.svg — 1200x630 social card: dark indigo/cyan theme; 4 chain nodes (ETH, SOL, ARB, AVAX) connected to 5 protocol boxes (LayerZero, Chainlink CCIP, Wormhole, Axelar, ERC-7683); stat pills; 14 MIN READ badge. Saved to /public/social-cross-chain-interoperability.svg",
+          "social-dao-governance-voting.svg — 1200x630 social card: dark purple theme; $25B+ treasury headline; mock governance proposal with animated vote bar (68% For / 32% Against); 5 DAO badges (Uniswap, Aave, Arbitrum, Optimism, MakerDAO with treasury sizes); capability pills; 12 MIN READ badge. Saved to /public/social-dao-governance-voting.svg",
+          "social-sentiment-recovery-march.svg — 1200x630 social card: dark green accent; F&G recovery chart (polyline from ~40 → ATL 5 → 28 today); 4 historical comparison boxes (COVID +1,400%, Luna +158%, FTX +300%, NOW recovering); bottom stat bar (BTC $73,930, ETF $767M, 38 Days, 5→28, FOMC tomorrow). Saved to /public/social-sentiment-recovery-march.svg",
+          "Carried: social-exchange-wallet-hub.svg, social-uniswap-v4-hooks-guide.svg, social-babylon-protocol-bitcoin-staking.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "BTC: $73,930 (+3.8% 24h). Resistance at $74,450. Support $69,378-$71,840. Down 41% from ATH $126,073.",
+          "ETH: $2,317 (+17% 7d, +8.45% 24h). Strongest weekly move since November.",
+          "F&G: 28 (Fear) — up from 23 yesterday, 13 last week, ATL 5 on Feb 6. 38-day extreme fear streak broken. First time above 25 since Feb 6.",
+          "FOMC: Day 1 underway. Decision tomorrow 2:00 PM ET. 99% hold. Key: dot plot. December showed 2 cuts; new factors: Iran oil $105, 15% tariffs, -92K payrolls, PCE 2.9%. Powell's second-to-last meeting (Warsh succeeds May 23).",
+          "ETF: First 5-day inflow streak of 2026 ($767M). First 2-week positive in 5 months. March total $568M+. Net AUM $91.83B. Ended $3.8B outflow streak.",
+          "Published slugs: 398. Queue: empty — needs refill. Deploy: cb65a9d (Day 42), git locks ~21h, 556 uncommitted files.",
+          "Social drafts saved to /reports/community-drafts/2026-03-17-social-drafts-v16.md"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"]
+  }
+}

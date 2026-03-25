@@ -1,19 +1,71 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import StructuredData from "@/components/StructuredData";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
-  title: "AI x DePIN: The Convergence of AI and Decentralized Infrastructure",
+  title: "AI x DePIN: The Convergence of AI and Decentralized Infrastructure | degen0x",
   description:
     "Explore the convergence of AI and decentralized infrastructure networks. Learn about DePIN, top projects like Render and Akash, use cases, and investment opportunities.",
+  keywords: [
+    "AI DePIN",
+    "decentralized infrastructure",
+    "DePIN crypto",
+    "Render Network",
+    "Akash Network",
+    "Bittensor",
+    "decentralized GPU",
+    "AI crypto projects",
+    "DePIN guide 2026",
+  ],
+  openGraph: {
+    title: "AI x DePIN: The Convergence of AI and Decentralized Infrastructure",
+    description: "DePIN networks provide decentralized GPU compute for AI at 50-80% less than cloud providers. The complete guide to Render, Akash, Bittensor, and more.",
+    type: "article",
+    url: "https://degen0x.com/learn/ai-depin-crypto-guide",
+    publishedTime: "2026-03-16T00:00:00Z",
+    modifiedTime: "2026-03-16T00:00:00Z",
+    images: [
+      {
+        url: "https://degen0x.com/api/og?title=AI+x+DePIN:+Decentralized+Infrastructure+for+AI&category=Learn&type=learn",
+        width: 1200,
+        height: 630,
+        alt: "AI x DePIN Guide — degen0x",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI x DePIN: Decentralized Infrastructure for AI",
+    description: "DePIN networks provide decentralized GPU compute for AI at 50-80% less than cloud providers.",
+    images: ["https://degen0x.com/api/og?title=AI+x+DePIN:+Decentralized+Infrastructure+for+AI&category=Learn&type=learn"],
+  },
 };
 
 export default function AIDepinGuide() {
+  const articleSchema = generateArticleSchema({
+    title: "AI x DePIN: The Convergence of AI and Decentralized Infrastructure",
+    description: "Explore the convergence of AI and decentralized infrastructure networks. Learn about DePIN, top projects like Render and Akash, use cases, and investment opportunities.",
+    url: "https://degen0x.com/learn/ai-depin-crypto-guide",
+    datePublished: "2026-03-16T00:00:00Z",
+    dateModified: "2026-03-16T00:00:00Z",
+    image: "https://degen0x.com/api/og?title=AI+x+DePIN:+Decentralized+Infrastructure+for+AI&category=Learn&type=learn",
+  });
+  const faqSchema = generateFAQSchema([
+    { question: "What is DePIN?", answer: "DePIN stands for Decentralized Physical Infrastructure Network — distributed networks of participants providing compute, storage, and bandwidth, earning token rewards." },
+    { question: "How much cheaper is DePIN vs cloud?", answer: "DePIN GPU networks can be 50-80% cheaper than centralized cloud providers like AWS." },
+    { question: "What are the top AI DePIN projects?", answer: "Leading projects include Render Network (RNDR), Akash Network (AKT), Io.net, and Bittensor (TAO)." },
+  ]);
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <StructuredData data={combineSchemas(articleSchema, faqSchema)} />
       {/* Breadcrumb */}
       <nav className="text-sm mb-8">
-        <a href="/learn" className="text-[#58a6ff] hover:underline">
+        <Link href="/learn" className="text-[#58a6ff] hover:underline">
           Learn
-        </a>
+        </Link>
         <span className="text-[#8b949e] mx-2">/</span>
         <span className="text-[#e6edf3]">AI x DePIN Guide</span>
       </nav>
@@ -33,8 +85,27 @@ export default function AIDepinGuide() {
         <span>March 2026</span>
       </div>
 
+      {/* Table of Contents */}
+      <nav className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
+        <h3 className="text-[#6366f1] font-semibold mb-3 text-sm uppercase tracking-wider">Table of Contents</h3>
+        <ul className="space-y-2 text-sm">
+          {[
+            ["understanding-depin", "Understanding DePIN"],
+            ["why-ai-needs-depin", "Why AI Needs Decentralized Infrastructure"],
+            ["leading-projects", "Leading AI x DePIN Projects"],
+            ["ai-use-cases", "AI Use Cases on DePIN"],
+            ["investment-thesis", "The AI x DePIN Investment Thesis"],
+            ["risks", "Risks and Challenges"],
+            ["how-to-evaluate", "How to Evaluate AI x DePIN Projects"],
+            ["key-takeaways", "Key Takeaways"],
+          ].map(([id, label]) => (
+            <li key={id}><a href={`#${id}`} className="text-[#58a6ff] hover:underline">{label}</a></li>
+          ))}
+        </ul>
+      </nav>
+
       {/* What is DePIN? */}
-      <section className="mb-12">
+      <section id="understanding-depin" className="mb-12 scroll-mt-8">
         <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">
           Understanding DePIN
         </h2>
@@ -92,7 +163,7 @@ export default function AIDepinGuide() {
       </section>
 
       {/* Why AI Needs DePIN */}
-      <section className="mb-12">
+      <section id="why-ai-needs-depin" className="mb-12 scroll-mt-8">
         <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">
           Why AI Needs Decentralized Infrastructure
         </h2>
@@ -146,7 +217,7 @@ export default function AIDepinGuide() {
       </section>
 
       {/* Leading AI x DePIN Projects */}
-      <section className="mb-12">
+      <section id="leading-projects" className="mb-12 scroll-mt-8">
         <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">
           Leading AI x DePIN Projects
         </h2>
@@ -244,7 +315,7 @@ export default function AIDepinGuide() {
       </section>
 
       {/* AI Use Cases */}
-      <section className="mb-12">
+      <section id="ai-use-cases" className="mb-12 scroll-mt-8">
         <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">
           AI Use Cases on DePIN
         </h2>
@@ -284,7 +355,7 @@ export default function AIDepinGuide() {
       </section>
 
       {/* Investment Thesis */}
-      <section className="mb-12">
+      <section id="investment-thesis" className="mb-12 scroll-mt-8">
         <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">
           The AI x DePIN Investment Thesis
         </h2>
@@ -334,7 +405,7 @@ export default function AIDepinGuide() {
       </section>
 
       {/* Risks and Challenges */}
-      <section className="mb-12">
+      <section id="risks" className="mb-12 scroll-mt-8">
         <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">
           Risks and Challenges
         </h2>
@@ -416,7 +487,7 @@ export default function AIDepinGuide() {
       </section>
 
       {/* Evaluating AI x DePIN Projects */}
-      <section className="mb-12">
+      <section id="how-to-evaluate" className="mb-12 scroll-mt-8">
         <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">
           How to Evaluate AI x DePIN Projects
         </h2>
@@ -465,7 +536,7 @@ export default function AIDepinGuide() {
       </section>
 
       {/* Key Takeaways */}
-      <section className="mb-12 bg-[#161b22] border border-[#30363d] rounded-lg p-8">
+      <section id="key-takeaways" className="mb-12 bg-[#161b22] border border-[#30363d] rounded-lg p-8 scroll-mt-8">
         <h3 className="text-2xl font-bold text-[#58a6ff] mb-6">Key Takeaways</h3>
         <ul className="space-y-3 text-[#c9d1d9]">
           <li className="flex items-start">
@@ -535,6 +606,8 @@ export default function AIDepinGuide() {
           </a>
         </div>
       </section>
+
+      <BackToTop />
     </div>
   );
 }

@@ -1,0 +1,35 @@
+{
+  "date": "2026-03-24",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX-audited and polished 2 new learn guides (veTokenomics & Delta-Neutral Yield), created 2 OG images, fixed hydration errors from nested Link/a tags, added missing FAQ structured data, and improved mobile table scrollability.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Fixed nested <a> inside <Link> hydration error in Related Articles section of both pages — removed inner <a> tags, moved styles to <Link> component directly (Next.js 13+ compatibility)",
+          "Added minWidth: 700px to veTokenomics comparison table for proper mobile horizontal scroll behavior",
+          "Added minWidth: 650px to Delta-Neutral strategy comparison table for proper mobile horizontal scroll behavior",
+          "Added missing FAQ structured data (generateFAQSchema + combineSchemas) to veTokenomics page — 6 FAQ items now included in JSON-LD for Google rich snippets",
+          "Both pages confirmed to have: Breadcrumb navigation, BackToTop component, Table of Contents, responsive hero with clamp() font sizing, dark theme consistency, overflow-x scroll wrappers on tables"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: og-vetokenomics-curve-wars-guide-2026.svg (1200x630) — dark theme, signature gradient accent bar, lock/governance motif, bold title text readable at thumbnail size",
+          "OG image: og-delta-neutral-yield-strategies-guide-2026.svg (1200x630) — dark theme, signature gradient accent bar, balance/scales motif, bold title text readable at thumbnail size"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "/learn/vetokenomics-curve-wars-guide-2026 — 1,391 lines, Intermediate level, 3 fixes applied",
+          "/learn/delta-neutral-yield-strategies-guide-2026 — 1,574 lines, Advanced level, 2 fixes applied"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

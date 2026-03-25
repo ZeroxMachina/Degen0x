@@ -1,0 +1,52 @@
+{
+  "date": "2026-03-15",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted /learn/defai-guide-2026 from PUBLISH_QUEUE to PUBLISHED_PAGES (now 287 published) and triggered Vercel redeploy FMyNdXNVn.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/defai-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "page.tsx exists", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "H1 present", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "Breadcrumbs", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "Metadata (title/desc)", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "OpenGraph tags", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "JSON-LD schema", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "TS errors (page)", "value": "0", "pct": 100, "color": "#4ade80" },
+          { "label": "Pre-existing TS errors", "value": "57 (unrelated)", "pct": 50, "color": "#f59e0b" },
+          { "label": "Build (VM resource limit)", "value": "bus error", "pct": 50, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko /api/prices", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "CoinGecko /api/trending", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "DefiLlama /api/defi-yields", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "In-memory cache TTL", "value": "60s (prices), 300s (trends/DeFi)", "pct": 100, "color": "#4ade80" },
+          { "label": "Stale fallback", "value": "Configured", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate limiter", "value": "Active", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "metrics": [
+          { "label": "Deploy ID", "value": "FMyNdXNVn", "pct": 100, "color": "#06b6d4" },
+          { "label": "Environment", "value": "Production", "pct": 100, "color": "#4ade80" },
+          { "label": "Source commit", "value": "d3bce36", "pct": 100, "color": "#06b6d4" },
+          { "label": "Deploy triggered", "value": "Confirmed", "pct": 100, "color": "#4ade80" },
+          { "label": "Total published pages", "value": "287", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"]
+  }
+}

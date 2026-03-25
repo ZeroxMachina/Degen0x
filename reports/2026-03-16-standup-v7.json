@@ -1,0 +1,80 @@
+{
+  "date": "2026-03-16",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Standup v7: 328 pages live (corrected from 329), CRITICAL new blocker — staged next.config.ts drops standalone output breaking Vercel deploy, FOMC now T-2, rate limiter still 0/6, 1 page queued (aztec-network-guide), 438-file staged batch blocked pending config fix.",
+    "sections": [
+      {
+        "title": "Analytics — Delta Since Last Cycle (v6)",
+        "items": [
+          "Pages live: corrected to 328 (EOD v5 resolved the one-page discrepancy from v6's 329 count — one slug in PUBLISHED_PAGES lacked a matching page.tsx). Net: stable, no new pages shipped this cycle.",
+          "PUBLISH_QUEUE: 1 item carried into this cycle — /learn/aztec-network-guide (Day 37 candidate). v6 incorrectly reported queue as empty; EOD v5 QA sweep caught the remaining entry. Promote to PUBLISHED_PAGES in next publish cycle.",
+          "Staged pipeline: 438 files remain staged, uncommitted — unchanged from v6. NEW blocker identified by EOD v5: staged next.config.ts removes `output: 'standalone'` which would break Vercel serverless deploy entirely if committed. Also a staged middleware.ts merge conflict. No safe commit path until next.config.ts is unstaged or fixed.",
+          "GSC organic signals: Day 17 — organic clicks confirmed arriving across indexed pages. FOMC is now T-2 (Wednesday Mar 18). Yield/DCA/rate-cut search queries are accelerating. Stablecoin yield, DCA calculator, lending comparison, and defi-yields tracker pages are in the peak intent window.",
+          "API health: All 6 data routes structurally healthy (prices 60s, trending 300s, fear-greed 600s, market-metrics 60s, market-dominance 300s, defi-yields 300s). Fallback coverage remains 2/6 routes only. Rate limiting still 0/6 wired — unchanged and escalating in urgency with FOMC T-2.",
+          "Community content pipeline: 8 community cycles completed today (community.json + v12–v18). BTCFi Twitter thread, Aave V4 thread, Kaito/InfoFi + FOMC prep tweets, Discord exchange review teasers all queued through Wednesday. Social calendar fully loaded."
+        ]
+      },
+      {
+        "title": "Project Manager — Done vs Carry-Over",
+        "items": [
+          "SHIPPED ✅ EOD v5 cycle-close QA — full QA/Data/DevOps/PM sweep completed. Surfaced new next.config.ts CRITICAL blocker. No regressions introduced. 328 pages validated, 6 API routes structurally confirmed.",
+          "NEW BLOCKER 🔴 Staged next.config.ts is dangerous — drops `output: 'standalone'` and bumps staticGenerationMaxConcurrency to 8. If committed as-is, Vercel deploy breaks for entire site. Fix: `git restore --staged next.config.ts` to restore safe working-copy settings before any commit. Also middleware.ts has a merge conflict in working tree.",
+          "CARRY-OVER 🔴 Rate limiter — 0/6 public API routes protected. FOMC now T-2. checkRateLimit() exists in src/lib/rate-limiter.ts but wired to zero routes. ~30-min programmer task. Highest technical risk on the board.",
+          "CARRY-OVER 🔴 438 staged files uncommitted — crypto-cards hub (31 pages), compare pages (92), courses (2), badges, airdrops, 4 new API routes. Now doubly blocked: (1) JSON-LD validation needed on compare/crypto-cards, (2) next.config.ts must be fixed/unstaged first.",
+          "CARRY-OVER 🔴 WalletConnect production Project ID — Jefe action required. Blocks gamification + referral hooks across all 328 live pages.",
+          "CARRY-OVER 🔴 GitHub Actions secrets — Jefe ~15 min. Blocks Playwright CI.",
+          "CARRY-OVER 🟡 AICourseRecommendations.tsx — 2 curly apostrophe TS errors (non-blocking). Quick fix queued.",
+          "CARRY-OVER 🟡 Vercel trial — ~9 days remaining. Jefe: add payment method.",
+          "CARRY-OVER 🟡 100 published slugs missing page.tsx (30% of 328 pages return 404 in production). Phased scaffolding work needed.",
+          "UPCOMING ⚡ Publish Day 37 — /learn/aztec-network-guide ready to promote from PUBLISH_QUEUE."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — Fix staged next.config.ts BEFORE any commit (NEW CRITICAL). EOD v5 found that the staged index drops `output: 'standalone'` — committing would break Vercel serverless deployment for all 328+ pages at once. This is a zero-tolerance blocker. Action: `git restore --staged next.config.ts`. Also resolve the middleware.ts working-tree merge conflict. Until this is done, the 438-file batch cannot safely ship. Delegate to Build v5 as its first and only gate-0 task.",
+          "PRIORITY 2 — Wire rate limiter BEFORE FOMC (T-2 days, Wed Mar 18). Organic clicks are now arriving (GSC Day 17) and the FOMC catalyst drives the highest-traffic queries of the month to our yield/DCA/staking pages. Six live API routes are unprotected — a traffic spike or abuse event degrades all 328 pages simultaneously. Import checkRateLimit() and wire it into /api/prices, /api/trending, /api/market-metrics, /api/market-dominance, /api/defi-yields, /api/fear-greed. ~30 min. This is the single highest-ROI technical task remaining.",
+          "PRIORITY 3 — Publish aztec-network-guide (Day 37) + build FOMC catalyst piece. Aztec guide is queued and ready to promote — do it in next publish cycle for a clean Day 37 live. Then use remaining Build v5 capacity to write 'How a Fed rate cut affects crypto yields in 2026' (targeting DCA + lending + stablecoin yield + defi-yields search clusters) — this is the last build window before FOMC on Wed. Pair with Community FOMC prep tweet for max organic reach on rate-cut day."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Pages Live (confirmed)", "value": "328 (corrected from 329)", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "1 — aztec-network-guide (Day 37)", "pct": 95, "color": "#4ade80" },
+          { "label": "Published Slugs Missing page.tsx", "value": "100 of 328 (30%)", "pct": 30, "color": "#f59e0b" },
+          { "label": "Staged Batch", "value": "438 files — BLOCKED (next.config.ts fix required first)", "pct": 45, "color": "#ef4444" },
+          { "label": "Staged Config Risk", "value": "CRITICAL — standalone output removed in index 🔴", "pct": 0, "color": "#ef4444" },
+          { "label": "API Routes Healthy", "value": "6/6 structurally present, TTLs correct", "pct": 100, "color": "#4ade80" },
+          { "label": "API Fallback Coverage", "value": "2/6 routes only", "pct": 33, "color": "#f59e0b" },
+          { "label": "API Rate Limiting", "value": "0/6 routes protected 🔴", "pct": 0, "color": "#ef4444" },
+          { "label": "GSC Organic Signals", "value": "Day 17 — first organic clicks arriving ⚡", "pct": 90, "color": "#4ade80" },
+          { "label": "FOMC Catalyst Window", "value": "T-2 days (Wed Mar 18) ⚡", "pct": 90, "color": "#f59e0b" },
+          { "label": "TS Errors", "value": "57 non-blocking (2 files, unchanged)", "pct": 90, "color": "#f59e0b" },
+          { "label": "Blockers (Jefe)", "value": "4 open — WalletConnect + GH Actions + Vercel billing + rate limiter", "pct": 10, "color": "#f59e0b" },
+          { "label": "Vercel Trial", "value": "~9 days remaining", "pct": 30, "color": "#f59e0b" },
+          { "label": "Community Cycles Today", "value": "8 of 8 shipped (BTCFi + Aave V4 + Kaito/FOMC)", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "2 of 6 (standup v7 + eod v5)", "pct": 33, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~1.75h (standup 0.75h + eod 1.25h = 2.0h — overlap ~0.25h)", "pct": 33, "color": "#06b6d4" },
+          { "label": "Blended Rate", "value": "~$54/hr (standup $60/hr + eod $50/hr avg)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$108 (standup $45 + eod $63)", "pct": 22, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$2,300 (30 agent runs on disk today)", "pct": 100, "color": "#4ade80" },
+          { "label": "Today's Breakdown", "value": "7× standup $315 + 4× build $932 + 2× publish $110 + 5× design $300 + 8× community $328 + 5× eod $315", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "Email: Resend API unreachable from Vercel page context (CORS/CSP blocked) — skipped. Same pattern as all prior cycles."
+  }
+}

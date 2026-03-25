@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0d1225"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="fearGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Decorative background circles -->
+  <circle cx="900" cy="200" r="200" fill="#ef4444" opacity="0.04" filter="url(#subtleGlow)"/>
+  <circle cx="200" cy="500" r="150" fill="#4f46e5" opacity="0.05" filter="url(#subtleGlow)"/>
+
+  <!-- Logo area -->
+  <text x="60" y="70" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#8b949e">degen0x</text>
+
+  <!-- Large Fear Gauge Circle -->
+  <circle cx="950" cy="280" r="130" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="16"/>
+  <circle cx="950" cy="280" r="130" fill="none" stroke="url(#fearGrad)" stroke-width="16"
+          stroke-dasharray="32 785" stroke-linecap="round" transform="rotate(-90 950 280)" filter="url(#glow)"/>
+  <text x="950" y="260" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="900" fill="#ef4444" text-anchor="middle" filter="url(#glow)">8</text>
+  <text x="950" y="300" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#8b949e" text-anchor="middle">EXTREME FEAR</text>
+
+  <!-- Main title -->
+  <text x="60" y="200" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">Fear &amp; Greed</text>
+  <text x="60" y="270" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">Hit Single Digits</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="320" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">The lowest reading since FTX. Here's what it means.</text>
+
+  <!-- Stat boxes -->
+  <!-- BTC stat -->
+  <rect x="60" y="370" width="230" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="80" y="405" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">BTC Price</text>
+  <text x="80" y="438" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" fill="#e6edf3">$70,599</text>
+  <text x="230" y="438" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#22c55e">+4.1%</text>
+
+  <!-- Liquidations stat -->
+  <rect x="310" y="370" width="230" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="330" y="405" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">24h Liquidations</text>
+  <text x="330" y="438" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" fill="#ef4444">$336M</text>
+
+  <!-- ETH stat -->
+  <rect x="560" y="370" width="230" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="580" y="405" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">ETH Price</text>
+  <text x="580" y="438" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" fill="#e6edf3">$2,068</text>
+  <text x="726" y="438" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#ef4444">-2.1%</text>
+
+  <!-- BTC Dominance stat -->
+  <rect x="810" y="370" width="230" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="830" y="405" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">BTC Dominance</text>
+  <text x="830" y="438" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" fill="#f59e0b">58.74%</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="530" width="1200" height="100" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="582" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" fill="#6e7681">degen0x.com/tools/fear-greed-timeline</text>
+
+  <!-- Bottom gradient bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#brandGrad)"/>
+</svg>

@@ -1,0 +1,45 @@
+{
+  "date": "2026-03-23",
+  "block": "build",
+  "run": 2,
+  "report": {
+    "status": "completed",
+    "summary": "Built 2 new learn guides: Bitcoin Mining Profitability Guide 2026 (936 lines, ~3200 words) and Crypto ETF Options Trading Guide 2026 (688 lines, ~3000 words), both added to PUBLISH_QUEUE.",
+    "sections": [
+      {
+        "title": "Research Brief",
+        "items": [
+          "Bitcoin mining post-halving economics: block reward halved to 3.125 BTC (Apr 2024), hashrate >800 EH/s, difficulty peaked 155.9T, profitability threshold $0.12-$0.15/kWh, industry consolidating with AI/HPC pivot",
+          "Top ASIC hardware benchmarked: Antminer S21 XP+ Hyd (500 TH/s, 11 J/TH) most profitable, ROI 12-18 months in favorable conditions",
+          "Crypto ETF options regulatory shift: all major US exchanges removed 25,000 contract position limits, now 250,000+ contracts; FLEX options unlocked for institutional hedging",
+          "Key crypto ETFs with options: IBIT (BlackRock BTC), ETHA (BlackRock ETH), FBTC (Fidelity BTC), ETHB (BlackRock staked ETH launched Mar 2026)",
+          "IBIT covered call opportunities yielding 0.77%-7.51% returns; $670M crypto ETF inflows on first trading day of 2026"
+        ]
+      },
+      {
+        "title": "Content Created",
+        "items": [
+          "Bitcoin Mining Profitability Guide 2026: 8-section comprehensive guide covering post-halving economics, ASIC hardware comparison table (6 models), electricity costs, mining pools vs solo, AI pivot trend, risks & outlook, 6-question FAQ",
+          "Crypto ETF Options Trading Guide 2026: 8-section guide covering regulatory changes, key ETFs comparison table, options strategies (covered calls, protective puts, spreads, iron condors), FLEX options, step-by-step trading guide, DeFi vs ETF options comparison, 6-question FAQ"
+        ]
+      },
+      {
+        "title": "Pages Scaffolded",
+        "pages": [
+          { "slug": "/learn/bitcoin-mining-profitability-guide-2026", "status": "pass" },
+          { "slug": "/learn/crypto-etf-options-trading-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "SEO Optimization",
+        "items": [
+          "bitcoin-mining-profitability-guide-2026: target keyword 'bitcoin mining profitability 2026', Article + FAQ schema (6 items), OG + Twitter cards",
+          "crypto-etf-options-trading-guide-2026: target keyword 'crypto ETF options trading 2026', Article + FAQ schema (6 items), OG + Twitter cards",
+          "Internal linking: both pages cross-link to /learn/crypto-options-trading-guide, /learn/crypto-etfs-guide, /tools/dca-calculator, /learn/advanced-defi-strategies, and related guides",
+          "Both pages added to PUBLISH_QUEUE in published-pages.ts"
+        ]
+      }
+    ],
+    "skills_used": ["researcher", "contentWriter", "seo", "pageScaffold"]
+  }
+}

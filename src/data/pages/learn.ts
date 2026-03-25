@@ -13779,5 +13779,794 @@ export const pages: Record<string, PageData> = {
         </p>
       </section>`,
   },
+  "sui-blockchain-guide": {
+    metadata: { title: "Sui Blockchain Guide (2026) — Move Language, Object Model & DeFi | degen0x", description: "Learn how the Sui blockchain works: Move language, object-centric model, parallel execution, key DeFi protocols like Suilend and Cetus, tokenomics, and what makes Sui different from Solana and Ethereum." },
+    props: { title: "Sui Blockchain Explained: The Object-Centric Layer 1", categoryName: "Blockchain Ecosystems", categorySlug: "learn", readTime: "12 min read", intro: "Sui is a Layer 1 blockchain built by Mysten Labs (founded by former Meta engineers) that uses an object-centric data model and the Move programming language to achieve parallel transaction execution, sub-second finality, and low fees. Since launching in May 2023, Sui has grown to over $600M in TVL, 168 million active addresses, and a thriving DeFi ecosystem with 54+ live protocols. Its unique architecture treats every on-chain asset as an independent object — enabling massive parallelism that traditional account-based blockchains like Ethereum cannot match. This guide covers how Sui works, its key protocols, tokenomics, and why it matters for the future of crypto." },
+    toc: [ { id: "what-is-sui", title: "what-is-sui", level: 2 }, { id: "what-is-sui-network", title: "What Is the Sui Network?", level: 2 }, { id: "how-sui-works", title: "how-sui-works", level: 2 }, { id: "how-sui-works-object-model-and-move", title: "How Sui Works: Object Model and Move", level: 2 }, { id: "sui-defi-ecosystem", title: "sui-defi-ecosystem", level: 2 }, { id: "sui-defi-ecosystem-key-protocols", title: "Sui DeFi Ecosystem: Key Protocols", level: 2 }, { id: "sui-tokenomics", title: "sui-tokenomics", level: 2 }, { id: "sui-token-tokenomics-and-supply", title: "SUI Token: Tokenomics and Supply", level: 2 }, { id: "sui-vs-solana", title: "sui-vs-solana", level: 2 }, { id: "sui-vs-solana-and-ethereum", title: "Sui vs Solana and Ethereum", level: 2 }, { id: "risks-and-challenges", title: "risks-and-challenges", level: 2 }, { id: "risks-and-challenges-to-consider", title: "Risks and Challenges to Consider", level: 2 }, { id: "sui-2026-roadmap", title: "sui-2026-roadmap", level: 2 }, { id: "sui-2026-roadmap-and-outlook", title: "2026 Roadmap and Outlook", level: 2 } ],
+    faqs: [ { question: "Is Sui better than Solana?", answer: "Sui and Solana take different approaches to high-performance blockchain design. Sui's object-centric model enables theoretical throughput of 297,000 TPS vs Solana's 65,000 TPS, with sub-500ms finality. Sui uses the Move language which provides stronger resource safety guarantees. However, Solana has a much larger ecosystem, more liquidity, and years of battle-tested infrastructure. Sui is newer and still proving its reliability — it experienced a notable outage in January 2026. Both chains are strong options depending on your use case." }, { question: "What is the Move programming language?", answer: "Move is a smart contract language originally developed at Meta for the Diem blockchain project. It treats digital assets as first-class resources that cannot be accidentally copied or destroyed, providing strong safety guarantees against common exploits like double-spending. Sui uses a modified version of Move that introduces an object-centric model where every on-chain asset has a unique ID, an owner, and can be processed independently — enabling parallel execution." }, { question: "How do I start using Sui?", answer: "To get started with Sui, you'll need a Sui-compatible wallet like Sui Wallet (the official browser extension) or a multi-chain wallet like Backpack. Fund your wallet by bridging assets from Ethereum or Solana via Wormhole or Axelar, or purchase SUI directly on exchanges like Binance, Coinbase, or Bybit. From there you can explore DeFi on Suilend, trade on Cetus DEX, or stake SUI for network rewards." }, { question: "What are the risks of investing in SUI?", answer: "Key risks include: token unlock pressure from ~6.15 billion SUI still to be released, network reliability concerns after the January 2026 outage, competition from established L1s like Solana and Ethereum L2s, and the smaller (though growing) developer ecosystem compared to EVM chains. SUI's price dropped over 55% from its January 2025 all-time high of $5.37 to around $1.06 by March 2026. As with all crypto investments, do your own research and never invest more than you can afford to lose." }, { question: "What can I do on the Sui blockchain?", answer: "Sui supports a full range of DeFi activities: lending and borrowing on Suilend and NAVI Protocol, token swapping on Cetus and DeepBook DEXs, liquid staking via SpringSui (sSUI), stablecoin farming, and NFT trading. Sui also has growing gaming and social dApp ecosystems. The network's low fees and fast finality make it particularly suitable for high-frequency DeFi operations and gaming applications." } ],
+    relatedArticles: [ { title: "What Is a Layer 1 Blockchain?", href: "/learn/what-is-blockchain", category: "Learn" }, { title: "Solana Blockchain Guide", href: "/learn/solana-blockchain-guide", category: "Learn" }, { title: "What Are Smart Contracts?", href: "/learn/what-are-smart-contracts", category: "Learn" }, { title: "DeFi Explained", href: "/learn/what-is-defi", category: "Learn" }, { title: "Staking Calculator", href: "/tools/staking-apy", category: "Tools" } ],
+    childrenHtml: `<section id="what-is-sui">
+        <h2>What Is the Sui Network?</h2>
+        <p>
+          Sui is a Layer 1 blockchain designed from the ground up for speed, scalability, and developer experience. It was created by Mysten Labs, a company founded in 2021 by five former engineers from Meta's Novi Research division — the team behind the Diem blockchain and the original Move programming language. Sui launched on mainnet in May 2023 and has rapidly grown into one of the most active non-EVM blockchain ecosystems.
+        </p>
+        <p>
+          What makes Sui fundamentally different from blockchains like Ethereum or even Solana is its <strong>object-centric data model</strong>. Instead of treating the entire blockchain state as one giant shared ledger that must be processed sequentially, Sui treats every asset, token, NFT, and piece of data as an independent <em>object</em> with its own unique ID and ownership. This architectural choice enables massive parallel transaction processing — if two users are interacting with different objects, the network can process both transactions simultaneously without any coordination overhead.
+        </p>
+        <p>
+          The result is a blockchain that achieves sub-500ms transaction finality, theoretical throughput of 297,000 transactions per second, and gas fees that typically cost fractions of a cent. These performance characteristics have attracted a growing wave of DeFi protocols, gaming studios, and infrastructure providers to build on Sui.
+        </p>
+      </section>
+
+      <section id="how-sui-works">
+        <h2>How Sui Works: Object Model and Move</h2>
+        <p>
+          Sui's core innovation is the <strong>object-centric model</strong>. In traditional blockchains like Ethereum, all state is stored in a global account tree. Every transaction potentially touches this shared state, creating bottlenecks that limit throughput. Sui flips this model: every on-chain resource — tokens, NFTs, smart contract instances, configuration data — is a distinct object with a globally unique ID, an owner (which can be an address or another object), a version number, and metadata about the last transaction that modified it.
+        </p>
+        <p>
+          This design enables Sui's consensus engine to identify which transactions touch independent objects and process them in parallel. Transactions involving <em>owned objects</em> (where only one address can modify the object) can skip consensus entirely and be processed through a fast path that achieves finality in roughly 390 milliseconds. Only transactions involving <em>shared objects</em> (like a DEX liquidity pool that many users interact with) require full consensus through Sui's Narwhal-Bullshark protocol.
+        </p>
+        <p>
+          Sui's smart contracts are written in <strong>Move</strong>, a language originally developed at Meta for the Diem blockchain. Move treats digital assets as first-class <em>resources</em> — they cannot be accidentally copied, destroyed, or double-spent. This is enforced at the language level, not just by convention. When you define a token in Move, the compiler itself guarantees that tokens can only be transferred, never duplicated. This eliminates entire categories of smart contract vulnerabilities that plague Solidity-based platforms.
+        </p>
+        <p>
+          Sui's version of Move extends the original with the object model: every struct marked with the <code>key</code> ability becomes an on-chain object with a unique <code>UID</code>. Objects can be owned by addresses (only the owner can use them), shared (anyone can access them through consensus), or immutable (frozen forever, like published code). This object taxonomy gives developers fine-grained control over state access patterns and enables the parallel execution that powers Sui's performance.
+        </p>
+      </section>
+
+      <section id="sui-defi-ecosystem">
+        <h2>Sui DeFi Ecosystem: Key Protocols</h2>
+        <p>
+          Sui's DeFi ecosystem has grown rapidly, with 54+ live protocols and over $600M in total value locked as of March 2026. TVL peaked at approximately $2.6B in late 2024 before pulling back with broader market conditions. Here are the protocols driving the ecosystem:
+        </p>
+        <p>
+          <strong>Suilend</strong> is the largest DeFi protocol on Sui, offering lending, borrowing, and leveraged yield farming. It peaked at $745M in TVL and features SpringSui — a liquid staking product where users stake SUI and receive sSUI, a yield-bearing token usable across other DeFi protocols. Suilend also includes STEAMM, a Superfluid AMM for efficient token swaps. The protocol migrated from Solana (where it was known as Solend), signaling institutional confidence in Sui's architecture.
+        </p>
+        <p>
+          <strong>NAVI Protocol</strong> is Sui's second-largest lending platform, focusing on incentivizing SUI as collateral — which effectively removes tokens from circulation and supports the network's economics. NAVI reached $723M in TVL at its peak with consistent month-over-month growth.
+        </p>
+        <p>
+          <strong>Cetus Protocol</strong> operates as Sui's leading DEX, providing concentrated liquidity pools similar to Uniswap v3. <strong>DeepBook</strong> is a decentralized central limit order book (CLOB) built natively on Sui, offering professional-grade trading with deep liquidity and the speed advantages of Sui's fast finality. <strong>Scallop</strong> rounds out the lending infrastructure, offering an alternative to Suilend and NAVI with its own incentive structure.
+        </p>
+        <p>
+          The ecosystem is supported by key infrastructure: <strong>Wormhole</strong> and <strong>Axelar</strong> for cross-chain bridging, <strong>Pyth</strong> and <strong>Switchboard</strong> for oracle services, and <strong>SuiNS</strong> for human-readable on-chain name resolution. Weekly DEX volume on Sui has reached $3.6B, and stablecoin supply exceeds $885M — strong indicators of real economic activity.
+        </p>
+      </section>
+
+      <section id="sui-tokenomics">
+        <h2>SUI Token: Tokenomics and Supply</h2>
+        <p>
+          The SUI token has a fixed maximum supply of <strong>10 billion tokens</strong>. As of March 2026, approximately 3.9 billion SUI are in circulation, giving the token a market cap of roughly $4.1B and a fully diluted valuation of ~$10.6B. SUI reached an all-time high of $5.37 in January 2025 and trades around $1.06 as of March 2026.
+        </p>
+        <p>
+          The initial token allocation was split across several categories, with approximately half managed by the Sui Foundation for ecosystem development, grants, and community programs. Validator reward subsidies draw from a pool of 1 billion SUI (10% of total supply), designed to incentivize network security during the early years. The annualized inflation rate has trended downward — from 11.1% in Q2 2024 to 3.5% by Q2 2025 — as the network matures.
+        </p>
+        <p>
+          One important factor for investors: the remaining ~6.15 billion SUI tokens are scheduled for release over the coming years. The next unlock (April 2026) releases 42.9M SUI (~$45.6M), representing about 1.1% of circulating supply. Sui includes a <strong>deflationary mechanism</strong> — a percentage of gas fees paid in SUI is burned, which partially offsets new token emissions over time.
+        </p>
+        <p>
+          SUI's utility spans gas fees (paying for transactions and smart contract execution), staking (securing the network and earning rewards), and governance. It also serves as the base trading pair across Sui's DeFi ecosystem. In March 2026, Sui launched <strong>USDsui</strong>, a native stablecoin backed by U.S. Treasuries, with yield reinvested into the ecosystem — adding another dimension to SUI's on-chain economic activity.
+        </p>
+      </section>
+
+      <section id="sui-vs-solana">
+        <h2>Sui vs Solana and Ethereum</h2>
+        <p>
+          Sui is often compared to Solana as a high-performance Layer 1 alternative to Ethereum. Here's how they stack up on the metrics that matter:
+        </p>
+        <p>
+          <strong>Performance:</strong> Sui's theoretical throughput of 297,000 TPS significantly exceeds Solana's ~65,000 TPS, with transaction finality in 390–480ms compared to Solana's ~400ms. Ethereum L1 processes ~15 TPS with 12-second block times, though its Layer 2s (Arbitrum, Base, Optimism) close this gap significantly.
+        </p>
+        <p>
+          <strong>Programming model:</strong> Sui uses Move (resource-safe, object-centric), Solana uses Rust (high-performance but more complex), and Ethereum uses Solidity (largest developer ecosystem, but known vulnerability patterns). Move's resource safety is a genuine architectural advantage for preventing smart contract exploits.
+        </p>
+        <p>
+          <strong>Ecosystem maturity:</strong> Ethereum has the largest DeFi ecosystem (~$50B+ TVL) and developer community by a wide margin. Solana is second with ~$8B TVL and 5+ years of battle-tested infrastructure. Sui, while growing fast (219% YoY developer growth, 84% repo growth), is still much smaller. This is both a risk (less liquidity, fewer protocols) and an opportunity (early-mover advantages for builders).
+        </p>
+        <p>
+          <strong>User experience:</strong> Sui's <strong>zkLogin</strong> feature lets users create wallets using Google or Apple accounts with zero-knowledge proofs — dramatically simplifying onboarding compared to seed-phrase-based wallets on other chains. This could be a significant competitive advantage for mainstream adoption.
+        </p>
+      </section>
+
+      <section id="risks-and-challenges">
+        <h2>Risks and Challenges to Consider</h2>
+        <p>
+          <strong>Network reliability:</strong> Sui experienced its second major network outage in January 2026. While outages aren't unique to Sui (Solana has had several), they undermine confidence in a network positioning itself as enterprise-grade infrastructure. The team has addressed each outage with post-mortems and protocol improvements, but uptime track record matters.
+        </p>
+        <p>
+          <strong>Token unlock pressure:</strong> With only 39% of SUI's total supply currently in circulation, ongoing token releases create persistent selling pressure. The scheduled unlocks represent over $6B in tokens at current prices — a significant overhang that could suppress price appreciation throughout 2026 and beyond.
+        </p>
+        <p>
+          <strong>Ecosystem competition:</strong> Sui competes not only with Solana and Ethereum L2s but also with other Move-based chains like Aptos. While Sui has outpaced Aptos in developer activity (954 vs ~400 active monthly developers), the fragmentation of the Move ecosystem between multiple chains is a concern.
+        </p>
+        <p>
+          <strong>Liquidity depth:</strong> Despite impressive growth, Sui's DeFi liquidity is still a fraction of Ethereum's or Solana's. This means higher slippage on large trades, fewer lending markets, and less composability between protocols. Liquidity begets liquidity — this is a challenge Sui must continue to address through incentive programs and institutional partnerships.
+        </p>
+      </section>
+
+      <section id="sui-2026-roadmap">
+        <h2>2026 Roadmap and Outlook</h2>
+        <p>
+          Sui's 2026 roadmap focuses on three pillars: cross-chain connectivity, institutional access, and developer tooling. The planned native bridge to Ethereum will reduce reliance on third-party bridges (and their associated security risks). SuiNS — an on-chain name service similar to ENS — will simplify user onboarding and improve interoperability.
+        </p>
+        <p>
+          Institutional interest is accelerating: Bitwise and Grayscale are developing Sui-focused investment products, and Canary launched a spot SUI ETF with built-in staking rewards in February 2026. The Sui Foundation's DeFi Moonshots Program is selecting roughly ten teams per year for up to $500K in incentives, engineering support, and audit credits — targeting "category-defining financial products."
+        </p>
+        <p>
+          For traders and DeFi users, Sui offers a combination of high performance, low fees, and a rapidly expanding protocol ecosystem. The chain is particularly interesting for users who value developer innovation (Move's safety guarantees, zkLogin, the object model) and are comfortable with the risks of a newer ecosystem. With $111B in stablecoin transfers processed in January 2026 alone, real economic activity on Sui is substantial and growing.
+        </p>
+        <p>
+          Whether Sui fulfills the "Solana killer" narrative remains to be seen — but as of March 2026, it has established itself as a legitimate contender in the high-performance L1 space with a differentiated technical approach and strong institutional backing.
+        </p>
+      </section>`,
+  },
+  "smart-wallets-guide-2026": {
+    metadata: { title: "Best Smart Wallets in 2026 — ERC-4337, EIP-7702 & How to Choose | degen0x", description: "Compare top smart wallet implementations in 2026. ERC-4337 vs EIP-7702, Safe vs Coinbase Smart Wallet, gas sponsorship, session keys & setup guide." },
+    props: { title: "Best Smart Wallets in 2026 — ERC-4337, EIP-7702 & How to Choose", categoryName: "DeFi", categorySlug: "learn", readTime: "12 min read", intro: "Smart wallets are programmable accounts that automate transactions, sponsor gas fees, and recover funds if you lose your keys — no longer just a theoretical feature of Ethereum, they've become the practical standard in 2026. This guide moves beyond the theory of account abstraction to show you exactly which smart wallet to pick, why it matters for your specific use case, and how to set it up safely." },
+    toc: [ { id: "what-are-smart-wallets", title: "What Are Smart Wallets?", level: 2 }, { id: "erc4337-vs-eip7702", title: "Smart Wallet Landscape 2026: ERC-4337 vs EIP-7702", level: 2 }, { id: "top-implementations", title: "Top Smart Wallet Implementations", level: 2 }, { id: "key-features-matter", title: "Key Features That Matter in 2026", level: 2 }, { id: "how-to-choose", title: "How to Choose Your Smart Wallet", level: 2 }, { id: "risks-security", title: "Risks & Security Considerations", level: 2 } ],
+    faqs: [ { question: "Do I really need a smart wallet if I just swap tokens?", answer: "For casual traders, a hardware wallet is simpler. But if you do DeFi regularly — farming, staking, batching transactions — a smart wallet pays for itself through gas savings alone. Coinbase Smart Wallet users saved 60-70% on transaction costs through bundling in 2025." }, { question: "What's the difference between ERC-4337 and EIP-7702?", answer: "ERC-4337 uses a separate account abstraction system (relayers, mempools, paymasters). EIP-7702 is simpler: it patches EOAs to behave like smart contracts without a new architecture. EIP-7702 shipped May 7, 2025. Most wallets still use ERC-4337 because it's battle-tested and more flexible." }, { question: "Will my smart wallet lock me in to one provider?", answer: "This is the real risk. ERC-7579 (Module Standard) lets you switch implementations, but adoption is still growing. Safe is the safest bet for portability. For other wallets, check if they support user-owned keys and can export your account data." }, { question: "Is it safe to use session keys?", answer: "Session keys are one of the biggest security wins: they limit spending amounts, time windows, and contract interactions. Much safer than giving a dApp permanent approval. Always set clear limits — if a session key is worth $100K, cap it to what you'd actually use that session for." }, { question: "Should I use a passkey-based smart wallet?", answer: "Passkeys (EIP-7212, live since 2024) are great if your phone/device is secure. They remove seed phrase risk but add device replacement risk. Coinbase Smart Wallet uses passkeys; Safe uses traditional keys. Pick based on your comfort with device backups vs. seed phrases." } ],
+    relatedArticles: [ { title: "Account Abstraction Explained", href: "/learn/account-abstraction", category: "Learn" }, { title: "Ethereum Pectra Upgrade Guide", href: "/learn/ethereum-pectra-upgrade", category: "Learn" }, { title: "What Are Gas Fees?", href: "/learn/what-are-gas-fees", category: "Learn" }, { title: "Crypto Security Guide", href: "/learn/crypto-security-guide", category: "Learn" }, { title: "Best Mobile Wallets 2026", href: "/wallets/best/mobile", category: "Wallets" } ],
+    childrenHtml: `<section id="what-are-smart-wallets">
+        <h2>What Are Smart Wallets?</h2>
+        <p>
+          A smart wallet is a blockchain account controlled by code rather than a single private key. Instead of your transactions being signed by you and executed directly (the way EOAs — externally owned accounts — work), smart wallets use a system to relay your intent, validate it, and execute it.
+        </p>
+        <p>
+          The advantage? Your wallet can sponsor gas fees through paymasters (someone else pays, or you pay later), batch transactions so you pay for multiple swaps and approvals in one block instead of five, recover lost access via social recovery or passkeys, and limit permissions using session keys that auto-expire or restrict to specific dApps and amounts.
+        </p>
+        <p>
+          For the technical deep dive on how this works, see our <a href="/learn/account-abstraction">account abstraction explainer</a>. This guide is about the practical decision: which wallet, and why?
+        </p>
+        <p>
+          By 2026, the numbers speak for themselves: over <strong>40 million smart accounts deployed</strong>, <strong>132 million+ UserOperations processed</strong>, and smart wallets handling billions in assets. This isn't experimental anymore.
+        </p>
+      </section>
+
+      <section id="erc4337-vs-eip7702">
+        <h2>Smart Wallet Landscape 2026: ERC-4337 vs EIP-7702</h2>
+        <p>
+          Two standards now compete. Understanding the difference is key before choosing your wallet.
+        </p>
+        <p>
+          <strong>ERC-4337 (Contract-based)</strong> requires you to deploy a smart contract account. Relayers submit transactions via a separate mempool. It's slightly higher gas overhead due to the separate mempool, but mitigated by batching. ERC-4337 is highly flexible — supports custom logic, batch swaps, emergency pausing. It's been live since 2023, proven across Safe, Coinbase, Biconomy, and others with $2.1B+ secured.
+        </p>
+        <p>
+          <strong>EIP-7702 (EOA-patched)</strong> gives your existing EOA a temporary code extension. It executes directly in the main mempool with no deployment needed — the code patch is included in the transaction. Lower overhead, executes like a standard transaction. But it's less flexible, limited to what fits in a code patch. Shipped May 7, 2025 with the Pectra upgrade — still in early adoption.
+        </p>
+        <p>
+          <strong>For most users: choose ERC-4337.</strong> It's mature, widely supported, and more feature-rich. EIP-7702 is faster for simple transactions but fewer wallets support it yet. Many wallets are implementing both standards for a hybrid approach.
+        </p>
+      </section>
+
+      <section id="top-implementations">
+        <h2>Top Smart Wallet Implementations</h2>
+        <p>
+          Here's the real market in 2026. Each wallet has a different philosophy and target user.
+        </p>
+
+        <h3>1. Coinbase Smart Wallet</h3>
+        <p>
+          <strong>Best for: Beginners, social login users, mobile-first traders.</strong> Coinbase Smart Wallet dominates onboarding. It hit <strong>1 million users</strong> in early 2025, and deployed <strong>270,000 new accounts in a single day</strong> during peak adoption. You sign in with email or passkey — no seed phrase needed initially.
+        </p>
+        <p>
+          Passkey-based by default (EIP-7212) with phone recovery if you lose access. Gas sponsorship covers fees on Base network for some transactions. Smooth iOS/Android mobile experience with fast, automatic deployment. Trade-off: tied to Coinbase infrastructure (though keys are portable). Best on Base; less gas subsidy on other chains.
+        </p>
+
+        <h3>2. Safe</h3>
+        <p>
+          <strong>Best for: Power users, multi-sig needs, DAOs, security-conscious.</strong> Safe is the gold standard for custody and portability. Open-source, modular, and used by thousands of DAOs and institutional players. Multi-sig out of the box (2-of-3, 3-of-5, etc.), modular guards and hooks via ERC-7579 for spending limits, scheduled transactions, and advanced recovery.
+        </p>
+        <p>
+          Extreme portability — your Safe can work with any ERC-4337 implementation. Keys are yours. Trade-off: requires more setup, gas costs slightly higher for small transactions due to multi-sig overhead.
+        </p>
+
+        <h3>3. Alchemy Account Kit</h3>
+        <p>
+          <strong>Best for: Developers building wallet-in-app experiences.</strong> If you're building a game, marketplace, or dApp that needs embedded wallets, Account Kit is the toolkit. Modular (drop in your own paymaster, bundler, or recovery layer), onboarding templates (email, passkey, or traditional seed phrase), multi-chain support across Ethereum, Polygon, Optimism, Base, and Arbitrum. Trade-off: requires technical setup — it's an SDK for builders, not a consumer app.
+        </p>
+
+        <h3>4. Biconomy</h3>
+        <p>
+          <strong>Best for: DeFi power users, gas optimization, batching.</strong> Biconomy pioneered many ERC-4337 features. Bundler optimized for lowest gas on batched swaps and approvals. Flexible paymaster (set sponsorship rules: flat fee, subscription, etc.). Advanced session key permission management. Trade-off: less beginner-friendly, more config, more power.
+        </p>
+
+        <h3>5. ZeroDev</h3>
+        <p>
+          <strong>Best for: Developers wanting maximum control, modular wallets.</strong> Ultra-modular — build exactly what you want without vendor lock-in. Full account abstraction stack: bundler, paymaster, wallet contract. Wallet plugins for multi-sig, recovery, spending limits. Trade-off: requires technical depth, not for casual users.
+        </p>
+
+        <h3>6. Pimlico (Infrastructure)</h3>
+        <p>
+          Pimlico is primarily a bundler and paymaster service, not a consumer wallet. But many wallets — Biconomy, ZeroDev, custom builds — run on Pimlico infrastructure. <strong>Pimlico controls 28% of the bundler market</strong> (Stackup 26%, Alchemy 24%). High uptime, advanced features (sponsorship rules, batching, simulation), developer-friendly APIs.
+        </p>
+      </section>
+
+      <section id="key-features-matter">
+        <h2>Key Features That Matter in 2026</h2>
+
+        <h3>Gas Sponsorship (Paymasters)</h3>
+        <p>
+          Paymasters let someone else — usually the dApp, the wallet, or a protocol — pay your gas. <strong>99.2% of ERC-4337 transactions in 2025 used a paymaster.</strong> This is the killer app of smart wallets. Instead of you paying 0.002 ETH in gas, a protocol like Uniswap can cover it if you swap there. Or Coinbase covers it on Base. Or you pay a subscription for unlimited gas on certain actions. Any DeFi wallet should have paymaster support built in. If your wallet charges gas for every transaction, it's outdated.
+        </p>
+
+        <h3>Session Keys</h3>
+        <p>
+          Session keys are one of the most underrated security features. Instead of giving MetaMask permission to drain your wallet forever, you create a time-limited key that expires after 1 hour (or any time you set), can only spend up to $500 (you set the limit), and can only interact with specific contracts (not random token contracts). If the dApp is hacked, the attacker's access is limited. Compare this to traditional wallets where one approval equals permanent risk. Safe and Biconomy offer advanced session keys. Coinbase and Account Kit are adding them.
+        </p>
+
+        <h3>Social Recovery</h3>
+        <p>
+          Lost your seed phrase? With social recovery, you pre-designate 3-5 trusted contacts (friends, family, or email addresses). If you lose access, they can help you create a new key without needing the old one. This is live on Safe and emerging on Biconomy. It's a game-changer for security because it removes the "write down 12 words and pray" problem.
+        </p>
+
+        <h3>Passkeys (EIP-7212)</h3>
+        <p>
+          Passkeys use your phone's biometric or PIN to sign transactions. No seed phrase to lose, no password to phish. This is why Coinbase Smart Wallet is so popular — people get DeFi access with just a fingerprint. Trade-off: device replacement becomes critical. If you lose your phone and don't have backups, recovery is harder than with a seed phrase. Most wallets using passkeys pair them with social recovery to mitigate.
+        </p>
+
+        <h3>Batched Transactions</h3>
+        <p>
+          Batch 5 swaps into 1 transaction, saving gas by 60-80%. You pay one transaction fee instead of five. Smart wallets excel here because they execute contract code — they can do complex operations atomically. Real example: swap DAI to USDC, approve Lido stETH, deposit ETH — all in one transaction with one signature.
+        </p>
+
+        <h3>Account Portability (ERC-7579)</h3>
+        <p>
+          ERC-7579 is the emerging standard for swapping wallet logic without losing your account. In theory, you could start with Coinbase Smart Wallet, then switch to Safe, keeping the same account address and keys. Still early adoption — Safe is the most portable today because it's open-source and plug-and-play. Most other wallets haven't committed to full ERC-7579 compliance yet.
+        </p>
+      </section>
+
+      <section id="how-to-choose">
+        <h2>How to Choose Your Smart Wallet</h2>
+        <p>
+          The right smart wallet depends on your actual use case, not hype. Here's a decision framework.
+        </p>
+
+        <h3>Complete Beginner (Never used crypto)</h3>
+        <p>
+          <strong>Pick: Coinbase Smart Wallet.</strong> Sign in with email. No seed phrase. Passkey-based. Gas sponsored on Base. Built for onboarding. Use it for a month on Base. Try a swap, some staking. When you're comfortable, explore other chains and features.
+        </p>
+
+        <h3>DeFi Power User (Daily trading, farming, staking)</h3>
+        <p>
+          <strong>Pick: Biconomy or Safe (with advanced modules).</strong> Biconomy optimizes gas for batching and paymaster integration (99.2% adoption for a reason). Safe gives you multi-sig control and recovery if you're managing significant funds. Set up session keys for dApps. Batch your swaps. Monitor paymaster usage — you should rarely pay full gas.
+        </p>
+
+        <h3>Developer (Building a wallet or dApp)</h3>
+        <p>
+          <strong>Pick: Alchemy Account Kit or ZeroDev.</strong> Account Kit is turnkey with good documentation. ZeroDev is more modular if you need custom logic or want to avoid vendor lock-in. Integrate the SDK. Start with testnet. Add passkey or email onboarding. Test batching and gas sponsorship.
+        </p>
+
+        <h3>DAO or Multi-sig Treasury</h3>
+        <p>
+          <strong>Pick: Safe (with guards and hooks for spending limits).</strong> Safe is designed for this. Mature, audited, battle-tested by thousands of DAOs managing billions. Multi-sig required, emergency pause possible, full transparency. Deploy Safe on your chain. Set up 3-of-5 multi-sig. Add spending limit guards.
+        </p>
+
+        <h3>Decision Checklist</h3>
+        <p>
+          Ask yourself: Am I a beginner, power user, or developer? Do I need gas sponsorship? (Probably yes.) Do I need multi-sig or social recovery? (Treasury = yes; casual user = maybe not.) Do I prefer passkeys or seed phrases? (Passkeys = easier; seed phrases = more portable.) Am I okay being tied to one provider, or do I want portability? (Safe = portable; Coinbase = less so.) What chains do I use? (Base = Coinbase advantage; Ethereum/Polygon/Arbitrum = any wallet works.)
+        </p>
+      </section>
+
+      <section id="risks-security">
+        <h2>Risks & Security Considerations</h2>
+
+        <h3>Smart Contract Risk</h3>
+        <p>
+          Smart wallets are contracts. Contracts can have bugs. <strong>Smart contract losses hit $905.4 million in 2025</strong> across all protocols, including wallet implementations. Mitigate by sticking to audited, established wallets. Coinbase Smart Wallet, Safe, and Biconomy have undergone professional audits. Don't put all funds in a new, unaudited wallet — start small, increase gradually as you trust it.
+        </p>
+
+        <h3>Bundler Centralization</h3>
+        <p>
+          ERC-4337 relies on bundlers to submit transactions. The top 3 bundlers control <strong>78% of the market</strong> (Pimlico 28%, Stackup 26%, Alchemy 24%). This is infrastructure risk. If Pimlico goes down, millions of users on Pimlico-dependent wallets can't transact. This is being addressed with more bundlers coming online, but it's a real risk. Check your wallet's bundler and monitor status.
+        </p>
+
+        <h3>Vendor Lock-In</h3>
+        <p>
+          Coinbase Smart Wallet uses Coinbase infrastructure. ZeroDev gives you options. Safe is open-source. But if you're deep in Biconomy's ecosystem with session keys and custom paymasters, switching is painful. Mitigate by checking ERC-7579 compliance — this is the standard for portability emerging in 2026-2027. Ensure your keys are yours, not locked to the provider.
+        </p>
+
+        <h3>Recovery Risks</h3>
+        <p>
+          If you use social recovery: your trusted contacts could be compromised, or you might lose touch with them. Always test recovery flows before you need them. If you use passkeys: device replacement or loss is critical — always set up device backups and iCloud/Google Drive sync. If you use seed phrases: they're only as secure as your storage — hardware wallets, metal backups, split between locations.
+        </p>
+
+        <h3>Best Practices for Smart Wallet Safety</h3>
+        <p>
+          Start with small amounts and test the wallet flow before moving significant funds. Use session keys for dApps — don't give permanent approvals. Enable multi-sig if managing more than $50K. Set up recovery before you need it — social recovery is useless if you've never tested it. Monitor bundler status and know who's relaying your transactions. Keep up with updates — wallets patch bugs and add features. Diversify storage — don't keep all funds in one wallet.
+        </p>
+      </section>`,
+  },
+  "mev-protection-guide": {
+    metadata: { title: "MEV Protection Guide (2026) — Avoid Sandwich Attacks & Frontrunning | degen0x", description: "Protect your trades from MEV attacks in 2026. Learn private pools, MEV-aware DEXs, smart trading habits & cross-chain strategies used by pro traders." },
+    props: { title: "MEV Protection Guide (2026) — How to Avoid Sandwich Attacks & Frontrunning", categoryName: "DeFi", categorySlug: "learn", readTime: "11 min read", intro: "MEV is silently costing you money on every swap — 51% of Ethereum's MEV comes from sandwich attacks that steal directly from your trades. This guide shows you exactly how to stop it with private pools, intent-based trading, smart order routing, and defensive trading habits that work in 2026." },
+    toc: [ { id: "how-mev-costs-you", title: "How MEV Costs You Money", level: 2 }, { id: "supply-chain", title: "The MEV Supply Chain You Need to Understand", level: 2 }, { id: "private-pools", title: "Protection Strategy 1: Private Transaction Pools", level: 2 }, { id: "mev-aware-dexs", title: "Protection Strategy 2: MEV-Aware DEXs & Aggregators", level: 2 }, { id: "smart-habits", title: "Protection Strategy 3: Smart Trading Habits", level: 2 }, { id: "cross-chain-mev", title: "MEV Protection Across Chains", level: 2 } ],
+    faqs: [ { question: "How much MEV am I actually losing on my trades?", answer: "On average, retail traders lose 2-5% per transaction to MEV. Large swaps ($100K+) can lose 5-15% to sandwich attacks alone. Use tools like Eigenphi to audit your transaction history and see your actual losses. The bigger your trade, the juicier the target for sandwich bots." }, { question: "Does using Flashbots Protect or MEV Blocker really stop sandwich attacks?", answer: "Yes, both significantly reduce MEV exposure by routing transactions through private mempools that hide your intent from public view. They reduce sandwich attack exposure from ~10-15% down to 0.5-2%, which is worth the small fee or privacy cost." }, { question: "Should I always use CoW Protocol instead of Uniswap?", answer: "CoW Protocol is excellent for large, time-insensitive trades where you care more about best price than instant execution. Uniswap is better for small trades or when you need immediate settlement. For maximum protection: use CoW Protocol for swaps over $50K, Uniswap via MEV Blocker RPC for routine trades." }, { question: "Is trading on L2s like Arbitrum or Base really safer from MEV?", answer: "Yes — L2 sequencers control block ordering privately and don't publish mempools like Ethereum does. MEV is dramatically reduced because bots can't see pending transactions. This advantage diminishes as L2s decentralize sequencers, but it's a real advantage in 2026." }, { question: "What's the simplest protection if I just want to trade without complexity?", answer: "Use a private RPC (MEV Blocker is free), set tight slippage limits (0.2-0.5%), and break large trades into smaller chunks. This handles 90% of MEV attacks. For occasional large trades, use CoW Protocol or 1inch Fusion." } ],
+    relatedArticles: [ { title: "MEV Explained: Maximal Extractable Value", href: "/learn/mev-explained", category: "DeFi" }, { title: "What Is Intent-Based Trading?", href: "/learn/what-is-intent-based-trading", category: "DeFi" }, { title: "DeFi Safety Guide 2026", href: "/learn/defi-safety-guide-2026", category: "Security" }, { title: "What Is a DEX?", href: "/learn/what-is-a-dex", category: "DeFi" }, { title: "Layer 2 Scaling Guide", href: "/learn/layer-2-scaling-guide", category: "Learn" } ],
+    childrenHtml: `<section id="how-mev-costs-you">
+        <h2>How MEV Costs You Money</h2>
+        <p>
+          MEV extraction is invisible, but it's real. In 2025, over <strong>$686 million in cumulative MEV</strong> was extracted from Ethereum, and <strong>51% of that came from sandwich attacks</strong> — bots inserting transactions before and after yours to steal the spread.
+        </p>
+        <p>
+          Here's what happens in a typical sandwich attack: you submit "Swap 10 ETH for USDC" on Uniswap through the public mempool. A bot sees your transaction and front-runs it with higher gas, buying ETH and pushing the price up. Your swap executes at a worse price — you get less USDC than fair market value. The bot then back-runs, selling ETH into your liquidity at the inflated price. Result: the bot profits $200-$2,000, and you lose exactly that amount.
+        </p>
+        <p>
+          The cost varies by transaction size: a $10K swap might lose $100-$300 to MEV. A $500K swap can lose $5,000-$25,000. This is why professional traders obsess over MEV protection — it directly impacts P&L. For a deep dive into the mechanics, see our <a href="/learn/mev-explained">MEV explainer</a>. For now, know this: <strong>MEV is costing you real money on every trade, and there are proven ways to stop it.</strong>
+        </p>
+      </section>
+
+      <section id="supply-chain">
+        <h2>The MEV Supply Chain You Need to Understand</h2>
+        <p>
+          MEV extraction isn't random — it follows a structured pipeline. Understanding this chain is key to knowing why certain protections work.
+        </p>
+        <p>
+          <strong>Searchers</strong> are bots that scan the mempool and identify MEV opportunities (sandwich attacks, liquidations, arbitrage). They bundle transactions into MEV bundles. <strong>Builders</strong> collect bundles from searchers and construct candidate blocks, paying searchers fees for profitable bundles. <strong>Relays</strong> (like bloXroute Labs) auction candidate blocks to validators. In March 2026, bloXroute controls <strong>~45.6% of all relay traffic</strong> on Ethereum — a massive concentration point. <strong>Validators</strong> propose blocks and earn fees. Over <strong>90% of Ethereum blocks</strong> go through MEV-Boost, which channels blocks via this relay pipeline.
+        </p>
+        <p>
+          Why this matters for your trades: searchers see your transaction in the mempool — unless you hide it (private RPCs). The relay pipeline is centralized — bloXroute's dominance creates a single point of MEV extraction. <a href="/learn/what-is-intent-based-trading">Intent-based protocols</a> bypass this pipeline entirely — they hide your order intent from searchers. L2 sequencers replace this pipeline — Arbitrum and Base sequencers control ordering privately, eliminating public mempool visibility.
+        </p>
+        <p>
+          In 2026, the Ethereum roadmap includes ePBS (Enshrined Proposer-Builder Separation) targeting H1 2026 via the Glamsterdam upgrade. This will encrypt transactions at the protocol level, reducing MEV searcher advantage industry-wide. Until then, you must use application-level protections.
+        </p>
+      </section>
+
+      <section id="private-pools">
+        <h2>Protection Strategy 1: Private Transaction Pools</h2>
+        <p>
+          The simplest protection: <strong>hide your transaction from the public mempool</strong> so searchers can't see it to sandwich. Instead of broadcasting your swap to the public Ethereum mempool (where bots watch), you route it through an encrypted private mempool. Your transaction remains hidden until it's included in a block — at which point it's too late for searchers to react.
+        </p>
+
+        <h3>Flashbots Protect</h3>
+        <p>
+          Routes your transactions through Flashbots' private relay, preventing sandwich attacks by hiding transaction intent. Setup takes 5 minutes: visit protect.flashbots.net, connect your wallet, and add the Flashbots Protect RPC to MetaMask (<code>https://rpc.protect.flashbots.net</code>). All subsequent swaps use the private mempool. It's free, doesn't require code changes, and provides instant MEV protection backed by Flashbots. Trade-off: centralized (Flashbots controls the relay), occasional failed transactions if no builder includes your bundle within ~5 seconds.
+        </p>
+
+        <h3>MEV Blocker by CoW Protocol</h3>
+        <p>
+          A permissionless alternative to Flashbots Protect. Encrypts transactions and routes through a network of encrypted relayers instead of a single entity. Visit mevblocker.com and add the RPC (<code>https://rpc.mevblocker.com</code>). You can optionally receive MEV rebates — small payments from searchers for access to your order flow ($0.50-$5 per transaction). Permissionless, no single point of failure. Trade-off: still relatively new as of 2026, less battle-tested than Flashbots.
+        </p>
+
+        <h3>Which Private RPC Should You Use?</h3>
+        <p>
+          For maximum decentralization: MEV Blocker (permissionless, distributed relayers). For maximum reliability: Flashbots Protect (battle-tested, reliable, but centralized). For passive income: MEV Blocker with rebates. For large trades ($100K+): use a private RPC plus split across multiple mempools. Pro tip: create two MetaMask RPC configurations — one for Flashbots Protect for routine trades, one for MEV Blocker for high-value swaps.
+        </p>
+      </section>
+
+      <section id="mev-aware-dexs">
+        <h2>Protection Strategy 2: MEV-Aware DEXs & Aggregators</h2>
+        <p>
+          Beyond hiding transactions, you can route them through protocols designed to prevent MEV extraction entirely through architectural innovations.
+        </p>
+
+        <h3>CoW Protocol (Coincidence of Wants)</h3>
+        <p>
+          Instead of executing your swap against an AMM, CoW Protocol batches multiple orders together in periodic auctions. Orders that "coincidentally want" opposite assets cancel each other out directly (no AMM needed). Remaining orders are routed optimally. Your order sits in a solver-only mempool (not public). Solvers compete to find the best execution without running the transaction on-chain, so there's no transaction to sandwich. MEV extraction is impossible by design.
+        </p>
+        <p>
+          Setup: visit swap.cow.fi, connect your wallet, input your swap, sign the order (just an intent, not a real transaction), and wait for the next batch settlement (typically under 60 seconds). Trade-off: batch-based execution means slight latency, but you get better prices and guaranteed MEV protection. Ideal for large trades where you don't need immediate execution.
+        </p>
+
+        <h3>1inch Fusion</h3>
+        <p>
+          1inch's intent-based mode where you declare "I want 3250+ USDC for 1 ETH" and competitive solvers bid to fill your order privately. The winning solver gets the spread between their cost and your minimum. Unlike traditional DEX aggregators, solvers fill your order off-chain without executing a public transaction. Your order intent is only visible to licensed solvers, not mempool bots.
+        </p>
+
+        <h3>Shutter Network (Encrypted Mempools)</h3>
+        <p>
+          Live on Gnosis Chain with encrypted mempool as of March 2026, with Ethereum integration in development for H2 2026. Validators encrypt all transactions in the mempool so even they can't see transaction details before block finalization. MEV extraction requires decrypting transactions, which only happens after block inclusion (too late). The most complete MEV protection — eliminates MEV by making it technologically impossible. Currently limited to Gnosis only.
+        </p>
+
+        <h3>Which Protocol for Which Trade Size?</h3>
+        <p>
+          For swaps under $10K: Uniswap via MEV Blocker RPC — instant execution, low cost. For $10K-$100K: 1inch Fusion — solver competition, balance of speed and price. For $100K+: CoW Protocol — batch auctions, best for large trades. For the future: Shutter Network when live on Ethereum mainnet — ultimate MEV protection.
+        </p>
+      </section>
+
+      <section id="smart-habits">
+        <h2>Protection Strategy 3: Smart Trading Habits</h2>
+        <p>
+          Even with private pools and intent protocols, defensive trading practices dramatically reduce MEV exposure.
+        </p>
+
+        <h3>Slippage Settings: Your Primary Defense</h3>
+        <p>
+          Slippage tolerance determines the maximum price movement you'll accept. Sandwich attacks work by exploiting loose slippage — if you allow 5% slippage and the bots sandwich for 3%, you get sandwiched. Recommended slippage by situation: small routine trades under $1K use 0.5% default; medium trades $1K-$50K use 0.2-0.3% (tighter); large trades over $50K use 0.1% or use intent protocol; volatile low-liquidity assets use 1-2%. Warning: tight slippage means your transaction might fail if MEV pushes the price beyond your limit. This is intentional — a failed transaction is better than a sandwiched one.
+        </p>
+
+        <h3>Limit Orders vs. Market Orders</h3>
+        <p>
+          Never use market orders for large swaps. Market orders are instantly visible in the mempool and are sandwich-bots' favorite target. Limit orders specify minimum output — bots can't predict your execution path, making them better for large trades. Market orders accept any output — bots see your order, sandwich it, you get worse price. Use only for small urgent swaps.
+        </p>
+
+        <h3>Trade Splitting: Divide and Conquer</h3>
+        <p>
+          A $500K swap attracts aggressive MEV bots. Breaking it into 10 x $50K swaps across different blocks reduces MEV extraction dramatically. Rule of thumb: if your swap is over $100K, split it. For ETH/USDC (deep liquidity) split into 4-8 chunks. For altcoin pairs (lower liquidity) split into 2-3 chunks. Tools like 1inch Fusion, CoW Protocol, and advanced DEX aggregators all handle trade splitting internally — use them instead of manual splitting.
+        </p>
+
+        <h3>Off-Peak Trading</h3>
+        <p>
+          MEV bots compete most aggressively during peak hours (UTC 12-16, peak ETH activity). Trading during low-activity windows reduces sandwich bot activity. UTC 12-16 (US morning + EU afternoon) is peak MEV extraction with most bots active. UTC 00-08 (Asian hours) has the lowest MEV and fewer bots. If you can delay a large trade by 6 hours, do it — MEV savings often exceed gas savings.
+        </p>
+
+        <h3>Layer 2 Trading: Immediate MEV Reduction</h3>
+        <p>
+          Arbitrum, Base, Optimism, and other L2s reduce MEV exposure because their sequencers don't publish public mempools. You submit transactions directly to the sequencer (currently centralized but private). Ethereum mainnet sees ~5-10% sandwich attack cost on large trades while Arbitrum/Base/Optimism see ~0.2-0.5%. For routine trading and smaller positions, L2s are 10-50x safer from MEV. Trade-off: L2 sequencers are currently centralized — as they decentralize, this MEV advantage diminishes. But in 2026, it's real.
+        </p>
+      </section>
+
+      <section id="cross-chain-mev">
+        <h2>MEV Protection Across Chains</h2>
+        <p>
+          MEV dynamics vary dramatically across chains. Your protection strategy should change based on where you're trading.
+        </p>
+
+        <h3>Ethereum Mainnet: Highest MEV Intensity</h3>
+        <p>
+          <strong>$686M cumulative MEV, ~$50M monthly.</strong> Ethereum has the largest DeFi ecosystem ($60B+ TVL), most sophisticated searcher ecosystem, and public mempool visible to all. Primary defense: use MEV Blocker RPC or Flashbots Protect (mandatory for over $10K swaps). Secondary defense: use intent protocols (CoW, 1inch Fusion, UniswapX). Watch out for relay concentration — bloXroute Labs controls 45.6% of all relay traffic. Upcoming: ePBS (Enshrined PBS) targeting H1 2026 will dramatically reduce MEV at protocol level.
+        </p>
+
+        <h3>Solana: Jito's Dominance</h3>
+        <p>
+          <strong>~$1.5B annually, dominated by Jito Labs (~95% of Solana MEV).</strong> Solana has no public mempool — validators receive bundles privately. All MEV goes through Jito's MEV-Boost equivalent. Instead of sandwich attacks, MEV is mostly liquidations and atomic arbitrage. Use Phantom's built-in MEV protection. Accept that Jito is mandatory infrastructure. Solana's faster execution reduces sandwich risk naturally vs. Ethereum.
+        </p>
+
+        <h3>Layer 2s: Current Sweet Spot for Safety</h3>
+        <p>
+          <strong>~$10-20M monthly combined</strong> — low compared to Ethereum because sequencers are centralized and private. Arbitrum (Arbitrum Labs sequencer), Base (Coinbase sequencer), and Optimism all offer private ordering by default with minimal MEV risk. For most traders, L2s are the best risk/reward for 2026 — you get 90% of Ethereum's DeFi ecosystem with 1/10th the MEV risk.
+        </p>
+
+        <h3>What's Coming: ePBS and Encrypted Mempools</h3>
+        <p>
+          Ethereum's Glamsterdam upgrade (H1 2026) will bring Enshrined Proposer-Builder Separation. Transactions will be encrypted at the protocol level, eliminating searcher-level MEV extraction. When ePBS ships and validators upgrade (typically 2-4 weeks for ecosystem catch-up), private RPCs become optional. Until then, use the tools in this guide. Your MEV protection checklist: for routine swaps under $10K use MEV Blocker RPC with 0.3% slippage; for $10K-$100K use 1inch Fusion or CoW Protocol; for over $100K use CoW Protocol and consider bridging to L2 first; always split large trades and avoid peak MEV hours (UTC 12-16).
+        </p>
+      </section>`,
+  },
+  "on-chain-analytics-guide": {
+    metadata: { title: "On-Chain Analytics for Crypto Trading (2026) — MVRV, SOPR & More | degen0x", description: "Master on-chain analytics for crypto trading: learn MVRV Z-Score, SOPR, exchange flows, whale tracking, and the best tools like Glassnode, Nansen, and Dune Analytics." },
+    props: { title: "On-Chain Analytics for Crypto Trading: The Complete Guide", categoryName: "Trading & Strategy", categorySlug: "learn", readTime: "14 min read", intro: "On-chain analytics is the practice of analyzing blockchain data — transaction flows, wallet behavior, supply dynamics, and network activity — to make better trading and investment decisions. Unlike traditional technical analysis that reads price charts, on-chain analytics reads the blockchain itself to understand what holders are actually doing with their coins. Metrics like MVRV Z-Score, SOPR, exchange netflows, and whale wallet movements have historically identified major market tops and bottoms with remarkable accuracy. As of March 2026, Bitcoin's MVRV Z-Score sits at 1.2 — well below the overheated zone — while SOPR readings below 1.0 suggest holders are realizing losses, a pattern that has historically preceded significant recoveries. This guide covers the essential metrics, the best tools, and how to build your own on-chain analysis framework." },
+    toc: [ { id: "what-is-onchain", title: "what-is-onchain", level: 2 }, { id: "what-is-on-chain-analytics", title: "What Is On-Chain Analytics?", level: 2 }, { id: "mvrv-zscore", title: "mvrv-zscore", level: 2 }, { id: "mvrv-z-score-market-valuation", title: "MVRV Z-Score: Market Valuation", level: 2 }, { id: "sopr-metric", title: "sopr-metric", level: 2 }, { id: "sopr-spent-output-profit-ratio", title: "SOPR: Spent Output Profit Ratio", level: 2 }, { id: "exchange-flows", title: "exchange-flows", level: 2 }, { id: "exchange-flows-and-whale-tracking", title: "Exchange Flows and Whale Tracking", level: 2 }, { id: "additional-metrics", title: "additional-metrics", level: 2 }, { id: "additional-key-metrics", title: "Additional Key Metrics", level: 2 }, { id: "best-tools", title: "best-tools", level: 2 }, { id: "best-on-chain-analytics-tools-2026", title: "Best On-Chain Analytics Tools (2026)", level: 2 }, { id: "building-framework", title: "building-framework", level: 2 }, { id: "building-your-analysis-framework", title: "Building Your Analysis Framework", level: 2 } ],
+    faqs: [ { question: "Is on-chain analytics useful for day trading?", answer: "On-chain analytics is most valuable for medium to long-term positioning — identifying whether the market is in an accumulation or distribution phase over weeks to months. Most on-chain metrics (MVRV, SOPR, holder behavior) update daily and reflect macro cycles rather than intraday price movements. For day trading, traditional technical analysis and order flow data are more appropriate. That said, exchange netflow data and whale alerts can provide useful intraday context when combined with other tools." }, { question: "Do I need to pay for on-chain analytics tools?", answer: "You can start with free tools: Dune Analytics offers free community dashboards with SQL access, CheckOnChain provides free Bitcoin charts, and CoinGlass offers free exchange flow data. For more advanced metrics, Glassnode offers a free tier with limited indicators and a paid tier ($39-$799/month) for full access. Nansen's smart money tracking starts at $150/month. Many traders start with free tools and upgrade only when they've confirmed on-chain data improves their decision-making." }, { question: "What is the single most important on-chain metric?", answer: "If you could only track one metric, the MVRV Z-Score is arguably the most consistently useful. It measures whether Bitcoin is overvalued or undervalued relative to its realized value (the average cost basis of all coins). Historically, MVRV Z-Scores above 7 have marked cycle tops within two weeks, while scores below 0 have identified generational buying opportunities. As of March 2026, the MVRV Z-Score at 1.2 suggests Bitcoin is not in overheated territory." }, { question: "Does on-chain analytics work for altcoins or just Bitcoin?", answer: "On-chain analytics originated with Bitcoin (due to its transparent UTXO model) but has expanded to cover most major blockchains. Ethereum on-chain data is well-supported by Glassnode, Nansen, and Dune. For other chains, coverage varies: Solana, Polygon, and major L2s have good analytics support, while newer chains may have limited tooling. Nansen is particularly strong for multi-chain wallet labeling, covering 30+ networks. The core principles (tracking holder behavior, exchange flows, network activity) apply to any transparent blockchain." }, { question: "Can on-chain analytics predict the next bull run?", answer: "On-chain analytics cannot predict exact timing, but it has historically identified the conditions that precede major market moves. The convergence of low MVRV readings, SOPR capitulation (below 1.0), declining exchange reserves, and long-term holder accumulation has preceded every major Bitcoin rally. As of March 2026, several of these conditions are present. However, on-chain data reflects what has happened and what holders are doing now — it cannot account for black swan events, regulatory changes, or macroeconomic shocks. Use it as one input in a broader analysis framework, not as a crystal ball." } ],
+    relatedArticles: [ { title: "Whale Tracker", href: "/tools/whale-tracker", category: "Tools" }, { title: "Fear & Greed Timeline", href: "/tools/fear-greed-timeline", category: "Tools" }, { title: "What Is DeFi?", href: "/learn/what-is-defi", category: "Learn" }, { title: "Perpetual Futures Explained", href: "/learn/perpetual-futures-guide", category: "Learn" }, { title: "Portfolio Tracker", href: "/tools/portfolio-tracker", category: "Tools" } ],
+    childrenHtml: `<section id="what-is-onchain">
+        <h2>What Is On-Chain Analytics?</h2>
+        <p>
+          On-chain analytics examines data recorded directly on a blockchain — every transaction, every wallet balance change, every smart contract interaction — to extract insights about market conditions, investor behavior, and network health. Because blockchains are public and transparent, this data is available to anyone willing to analyze it. The key insight is that <strong>price tells you what happened; on-chain data tells you why and what's likely to happen next</strong>.
+        </p>
+        <p>
+          Traditional technical analysis reads price charts and volume to identify patterns. On-chain analytics goes deeper: it reveals whether long-term holders are accumulating or distributing, whether coins are flowing into exchanges (sell pressure) or out (accumulation), whether the market is overvalued relative to its cost basis, and whether network activity supports the current price level. This information asymmetry is powerful — most retail traders still rely exclusively on price charts, which means on-chain insights can provide a genuine edge.
+        </p>
+        <p>
+          On-chain analytics is most applicable to Bitcoin (which has the most mature tooling due to its transparent UTXO model) and Ethereum, but coverage now extends to Solana, major L2s, and most significant blockchains. The discipline gained mainstream institutional adoption after firms like Fidelity and ARK Invest began publishing on-chain research alongside their crypto investment theses.
+        </p>
+      </section>
+
+      <section id="mvrv-zscore">
+        <h2>MVRV Z-Score: Market Valuation</h2>
+        <p>
+          The <strong>MVRV (Market Value to Realized Value) Z-Score</strong> is widely considered the single most reliable on-chain metric for identifying macro market tops and bottoms. It compares Bitcoin's current market capitalization to its <em>realized capitalization</em> — a metric that values each coin not at the current market price but at the price it last moved on-chain. In other words, realized cap approximates the aggregate cost basis of all Bitcoin holders.
+        </p>
+        <p>
+          When MVRV is high (above 3.0), the market price is significantly above the average holder's cost basis — meaning most holders are sitting on large unrealized profits and are incentivized to sell. Historically, MVRV Z-Scores above 7 have identified cycle tops within two weeks. When MVRV drops below 1.0, the market price is <em>below</em> the average cost basis — holders are underwater, capitulation is occurring, and historically this has marked generational buying opportunities.
+        </p>
+        <p>
+          As of March 2026, Bitcoin's MVRV Z-Score sits at approximately <strong>1.2</strong> — well below the overheated zone and suggesting significant room for upside before the market reaches euphoria. For context, in January 2026 the score was 1.32. This compression, combined with other on-chain signals, has led several analysts to compare current conditions to pre-rally setups observed in Q4 2023 and Q3 2024.
+        </p>
+        <p>
+          <strong>How to use it:</strong> MVRV Z-Score is a macro positioning tool. When it's below 1, consider accumulating. When it's between 1-3, the market is in a healthy range. When it approaches or exceeds 5-7, consider taking profits. It's not useful for timing daily trades — think of it as a compass pointing to whether you should be buying, holding, or selling on a multi-month horizon.
+        </p>
+      </section>
+
+      <section id="sopr-metric">
+        <h2>SOPR: Spent Output Profit Ratio</h2>
+        <p>
+          <strong>SOPR (Spent Output Profit Ratio)</strong> measures whether coins being moved on-chain are being sold at a profit or a loss. It's calculated by dividing the realized value of spent outputs (the value when coins are moved) by their value at creation (when they were last received). A SOPR above 1.0 means coins are moving at a profit; below 1.0 means holders are realizing losses.
+        </p>
+        <p>
+          SOPR is powerful because it reveals <strong>investor psychology in real time</strong>. During bull markets, SOPR consistently stays above 1.0 — holders sell at profits and new buyers re-establish higher cost bases. Healthy bull market corrections often see SOPR reset to exactly 1.0 (holders break even) before the next leg up. In bear markets, SOPR drops below 1.0 as holders capitulate and sell at losses. Extremely low SOPR readings have historically marked the deepest points of bear markets — the maximum pain moment before recovery.
+        </p>
+        <p>
+          Glassnode created <strong>Long-Term Holder SOPR (LTH-SOPR)</strong> and <strong>Short-Term Holder SOPR (STH-SOPR)</strong> variants that separate behavior by holder tenure. Long-term holders are defined as those holding coins for 155+ days; short-term holders hold for less. LTH-SOPR is particularly valuable: when long-term holders — the "smart money" with conviction — start capitulating (LTH-SOPR drops sharply), it has historically signaled the very bottom of market cycles. Conversely, LTH-SOPR values above 10 have marked cycle tops, as long-term holders cash in massive profits.
+        </p>
+        <p>
+          As of early March 2026, SOPR is printing below 1.0, indicating ongoing loss realization across the market. Combined with the compressed MVRV Z-Score and declining exchange reserves, this paints a picture of capitulation that has preceded recovery phases in prior cycles.
+        </p>
+      </section>
+
+      <section id="exchange-flows">
+        <h2>Exchange Flows and Whale Tracking</h2>
+        <p>
+          <strong>Exchange netflow</strong> tracks the difference between crypto flowing into exchanges (potential sell pressure) versus flowing out (accumulation into self-custody). When more Bitcoin or Ethereum moves <em>onto</em> exchanges, it signals that holders may be preparing to sell. When more flows <em>off</em> exchanges, holders are moving to cold storage — a bullish accumulation signal.
+        </p>
+        <p>
+          This metric proved its value repeatedly through 2024 and 2025: sustained exchange outflows preceded major rallies, while spikes in exchange inflows often preceded corrections. As of early 2026, exchange reserves for Bitcoin are in a declining trend, with consistent outflows suggesting continued accumulation despite bearish price action — a divergence that has historically been very bullish.
+        </p>
+        <p>
+          <strong>Whale tracking</strong> monitors wallets holding large amounts of crypto. When whales accumulate, it's typically a bullish signal; when they distribute, it can precede sell-offs. Tools like Nansen label over 500 million wallet addresses by entity type — identifying funds, market makers, treasuries, known whale addresses, and smart money participants. This labeling is what transforms raw blockchain data into actionable intelligence: instead of seeing that a wallet moved $50M in ETH, you can see that <em>a top-10 DeFi fund</em> moved $50M in ETH to a lending protocol.
+        </p>
+        <p>
+          <strong>Stablecoin supply on exchanges</strong> is another powerful flow metric. High stablecoin reserves on exchanges represent "dry powder" — capital sitting on the sidelines ready to buy. When stablecoin exchange supply increases while crypto prices are flat or declining, it suggests buyers are positioning for a move. The combination of declining BTC exchange reserves + increasing stablecoin reserves has been one of the most reliable bullish setups in on-chain analysis.
+        </p>
+      </section>
+
+      <section id="additional-metrics">
+        <h2>Additional Key Metrics</h2>
+        <p>
+          <strong>NUPL (Net Unrealized Profit/Loss)</strong> measures the total unrealized profit or loss across all holders as a percentage of market cap. It divides the market into emotional zones: euphoria (NUPL above 0.75, extreme greed), belief (0.5-0.75), optimism (0.25-0.5), hope (0-0.25), and capitulation (below 0). Like MVRV, it's a macro positioning tool for identifying where the market sits in the emotional cycle.
+        </p>
+        <p>
+          <strong>Active addresses</strong> count the number of unique addresses participating in transactions over a given period. Rising active addresses during price increases confirms genuine adoption and network usage. Falling active addresses during price increases suggests the rally is speculative and unsupported by real network activity — a warning sign.
+        </p>
+        <p>
+          <strong>HODL Waves</strong> visualize the age distribution of Bitcoin's supply. They show what percentage of all BTC was last moved within the past day, week, month, 3 months, 6 months, 1 year, 2 years, and so on. When old coins (3+ years) remain dormant, long-term holders have conviction. When old coins suddenly start moving, it can signal that seasoned holders are taking profits — a potential top indicator.
+        </p>
+        <p>
+          <strong>Hash rate and miner behavior</strong> provide insight into Bitcoin's security and miner economics. When hash rate hits new highs, the network is more secure and miners are investing in infrastructure (bullish conviction). <strong>Miner reserve</strong> tracks BTC held by mining pools — when miners accumulate, they expect higher prices; when they distribute, they may need to cover operational costs or are taking profits.
+        </p>
+        <p>
+          <strong>ETF flow tracking</strong> has become increasingly important since Bitcoin and Ethereum spot ETFs launched. Net inflows to ETFs represent new institutional capital entering crypto. Sustained ETF inflows have correlated strongly with price appreciation, while outflows signal institutional caution. Tools like Glassnode and Coin Metrics now include dedicated ETF tracking dashboards.
+        </p>
+      </section>
+
+      <section id="best-tools">
+        <h2>Best On-Chain Analytics Tools (2026)</h2>
+        <p>
+          <strong>Glassnode</strong> is the gold standard for Bitcoin and Ethereum on-chain fundamentals. It offers 7,500+ metrics across 1,200 assets and 900+ API endpoints. Key indicators include MVRV Z-Score, SOPR (with LTH/STH variants), Realized Price, HODL Waves, and exchange flow data. The free tier provides limited historical data; paid plans ($39–$799/month) unlock everything. If you're serious about on-chain analysis, Glassnode is typically the first tool analysts recommend.
+        </p>
+        <p>
+          <strong>Nansen</strong> specializes in wallet labeling and "smart money" tracking. With 500M+ labeled addresses across 30+ chains, Nansen shows you <em>who</em> is behind transactions — not just <em>what</em> is happening. Its AI-driven analytics identify patterns in how funds, market makers, and known profitable traders position themselves. Nansen is particularly strong for Ethereum and multi-chain DeFi analysis. Plans start at $150/month.
+        </p>
+        <p>
+          <strong>Dune Analytics</strong> empowers users to write custom SQL queries against blockchain data and create shareable dashboards. With 1M+ users and 1.5M+ datasets covering 100+ chains, Dune is the most flexible and community-driven analytics platform. It's free to use (with paid tiers for private queries and faster execution), and the community has built dashboards for virtually every protocol and metric imaginable. If you know SQL, Dune is incredibly powerful.
+        </p>
+        <p>
+          <strong>Santiment</strong> combines on-chain data with social sentiment analysis — tracking social volume, whale transactions, holder distribution, and crowd behavior across crypto Twitter, Reddit, and Telegram. This cross-referencing of on-chain activity with social signals can identify divergences (e.g., extreme social fear while whales accumulate) that provide contrarian trading opportunities.
+        </p>
+        <p>
+          <strong>CheckOnChain</strong> is a professional Bitcoin analysis suite with 200+ charts covering pricing models, MVRV, SOPR, supply dynamics, and mining metrics. It's free and focused specifically on Bitcoin macro analysis — a great starting point for beginners who want to learn on-chain analysis without paying for premium tools.
+        </p>
+        <p>
+          <strong>Coin Metrics</strong> provides institutional-grade analytics with advanced metrics including micro-transaction insights, network-level activity indicators, and comprehensive LTH/STH analysis. Their data feeds are used by hedge funds and asset managers for quantitative crypto strategies.
+        </p>
+      </section>
+
+      <section id="building-framework">
+        <h2>Building Your Analysis Framework</h2>
+        <p>
+          You don't need to track fifty metrics. Start with the core four and expand as you develop intuition: <strong>MVRV Z-Score</strong> (are we overvalued or undervalued?), <strong>SOPR</strong> (are holders selling at profit or loss?), <strong>exchange netflows</strong> (accumulation or distribution?), and <strong>ETF flows</strong> (institutional sentiment). These four metrics cover market valuation, holder behavior, supply dynamics, and institutional activity — the four pillars of on-chain analysis.
+        </p>
+        <p>
+          <strong>Layer 1: Macro positioning</strong> — Check MVRV Z-Score and NUPL weekly. These tell you where the market is in the macro cycle. When both are in the lower range (MVRV below 1.5, NUPL below 0.25), lean toward accumulation. When both are elevated (MVRV above 3, NUPL above 0.5), start thinking about taking profits.
+        </p>
+        <p>
+          <strong>Layer 2: Flow analysis</strong> — Monitor exchange netflows and stablecoin reserves daily or weekly. The combination of declining BTC exchange reserves + rising stablecoin reserves is the classic "dry powder" setup that has preceded major rallies. Conversely, BTC flowing onto exchanges while stablecoins leave is a distribution pattern.
+        </p>
+        <p>
+          <strong>Layer 3: Holder behavior</strong> — Track LTH/STH SOPR and HODL Waves. When long-term holders are accumulating (old coins staying dormant, LTH-SOPR near 1) during price weakness, it's a strong signal of conviction. When old coins start moving and LTH-SOPR spikes above 5, long-term holders are taking profits — be cautious.
+        </p>
+        <p>
+          <strong>Layer 4: Confirmation signals</strong> — Use active addresses, hash rate, and ETF flows as confirmation. A rally supported by rising active addresses, record hash rate, and consistent ETF inflows has much more conviction than one driven purely by leveraged futures speculation. When on-chain data and price disagree (e.g., on-chain bullish but price falling), on-chain data has historically been the better predictor of what comes next.
+        </p>
+        <p>
+          <strong>The most important rule:</strong> On-chain analytics is best used for macro positioning over weeks to months — not for timing daily entries and exits. If you're making decisions about whether to accumulate, hold, or distribute over a multi-week horizon, on-chain data is invaluable. If you're scalping 15-minute candles, stick to order flow and technical analysis. Complexity reduces rather than improves results — master the core metrics before adding more.
+        </p>
+      </section>`,
+  },
+  "defi-insurance-guide-2026": {
+    metadata: { title: "DeFi Insurance Explained: Protect Your Crypto in 2026 | degen0x", description: "Learn how DeFi insurance protocols like Nexus Mutual and InsurAce protect against smart contract exploits, stablecoin depegs, and protocol failures. Complete guide to crypto coverage in 2026." },
+    props: { title: "DeFi Insurance: How to Protect Your Crypto Portfolio in 2026", categoryName: "DeFi", categorySlug: "learn", readTime: "12 min read", intro: "DeFi insurance protocols let you buy coverage against smart contract exploits, stablecoin depegs, oracle failures, and exchange hacks — all without paperwork, intermediaries, or waiting periods. With over $100B in DeFi TVL sitting largely uninsured and hacks still draining hundreds of millions annually, understanding how to protect your positions is no longer optional for serious DeFi users. This guide covers how DeFi insurance works, the top protocols offering coverage in 2026, what it costs, and how to decide if you need it." },
+    toc: [ { id: "why-defi-insurance", title: "why-defi-insurance", level: 2 }, { id: "why-defi-needs-insurance", title: "Why DeFi Needs Insurance", level: 2 }, { id: "how-it-works", title: "how-it-works", level: 2 }, { id: "how-defi-insurance-works", title: "How DeFi Insurance Works", level: 2 }, { id: "coverage-types", title: "coverage-types", level: 2 }, { id: "what-defi-insurance-covers", title: "What DeFi Insurance Covers", level: 2 }, { id: "top-protocols", title: "top-protocols", level: 2 }, { id: "top-defi-insurance-protocols-2026", title: "Top DeFi Insurance Protocols in 2026", level: 2 }, { id: "costs-and-premiums", title: "costs-and-premiums", level: 2 }, { id: "what-does-defi-insurance-cost", title: "What Does DeFi Insurance Cost?", level: 2 }, { id: "who-needs-it", title: "who-needs-it", level: 2 }, { id: "do-you-need-defi-insurance", title: "Do You Need DeFi Insurance?", level: 2 }, { id: "risks-and-limitations", title: "risks-and-limitations", level: 2 }, { id: "risks-and-limitations-of-defi-insurance", title: "Risks and Limitations", level: 2 } ],
+    faqs: [ { question: "Is DeFi insurance worth the cost?", answer: "It depends on your exposure. If you have $10K+ in a single DeFi protocol, paying 2-5% annually for coverage can save you from total loss during a smart contract exploit. For small positions across many protocols, the premiums may not justify the cost. Think of it like homeowner's insurance — you hope you never need it, but the downside protection is worth the premium when the stakes are high." }, { question: "What happens if a DeFi insurance protocol itself gets hacked?", answer: "This is a real risk called 'counterparty risk.' Major protocols like Nexus Mutual mitigate this through extensive auditing, bug bounties, and overcollateralized capital pools. Some protocols use parametric models with automated payouts triggered by oracles, reducing reliance on the protocol's own infrastructure. Diversifying coverage across multiple insurance providers is the safest approach." }, { question: "How long does it take to receive a DeFi insurance payout?", answer: "It varies by protocol. Parametric insurance (like Neptune Mutual) can pay out within hours since payouts trigger automatically when oracle-verified conditions are met. Discretionary models (like Nexus Mutual) require claims assessment and community voting, which typically takes 3-14 days. Unslashed Finance targets 5-day payout windows using Kleros arbitration." }, { question: "Can I earn yield by providing insurance coverage?", answer: "Yes. Becoming an underwriter (providing capital to insurance pools) is one of the most interesting yield opportunities in DeFi. Protocols like Nexus Mutual offer 5-15% APY on staked capital that backs coverage. The trade-off is that your capital can be used to pay claims if a covered event occurs. This is analogous to being an insurance company — you earn premiums but take on risk." } ],
+    relatedArticles: [ { title: "What Is DeFi?", href: "/learn/what-is-defi", category: "Learn" }, { title: "Smart Contracts Explained", href: "/learn/what-are-smart-contracts", category: "Learn" }, { title: "Crypto Security Guide", href: "/learn/crypto-security-guide", category: "Learn" }, { title: "Stablecoin Yield Strategies", href: "/learn/stablecoin-yield-strategies-2026", category: "Learn" }, { title: "Best DeFi Lending Platforms", href: "/defi-lending/best", category: "DeFi" } ],
+    childrenHtml: `<section id="why-defi-insurance">
+        <h2>Why DeFi Needs Insurance</h2>
+        <p>
+          DeFi protocols hold over $100 billion in total value locked, yet less than 0.5% of that capital is covered by any form of insurance. Meanwhile, smart contract exploits, bridge hacks, and protocol failures continue to drain hundreds of millions every year. In 2024 alone, over $1.8B was lost to crypto hacks and exploits. The gap between value at risk and value protected is staggering — and it represents one of the biggest unsolved problems in decentralized finance.
+        </p>
+        <p>
+          Traditional finance has insurance woven into every layer: bank deposits are FDIC-insured, brokerage accounts have SIPC protection, and institutional investors use complex hedging instruments. DeFi has none of these built-in safety nets. When a smart contract gets exploited, users lose everything with no recourse. DeFi insurance protocols exist to fill this gap — they let you buy coverage against specific risks using the same trustless, permissionless principles that make DeFi powerful in the first place.
+        </p>
+      </section>
+
+      <section id="how-it-works">
+        <h2>How DeFi Insurance Works</h2>
+        <p>
+          DeFi insurance operates through decentralized capital pools funded by underwriters who deposit crypto assets and earn premiums in return. When you buy a policy, you pay a premium (typically 2-10% annually) that goes to the pool. If a covered event occurs — like a smart contract exploit or a stablecoin depeg — you file a claim, and the pool pays out your coverage amount. The entire process runs on smart contracts with no paperwork, no claims adjusters, and no centralized authority deciding whether to pay.
+        </p>
+        <p>
+          There are two main models. <strong>Discretionary insurance</strong> (used by Nexus Mutual) relies on community governance to assess and vote on claims. Token holders review evidence and vote on whether a claim is valid. This model is flexible but slower. <strong>Parametric insurance</strong> (used by Neptune Mutual) triggers payouts automatically based on predefined conditions verified by oracles. For example, if a stablecoin drops below $0.90 for more than 24 hours, all policyholders receive automatic payouts. This model is faster and more predictable but less flexible for edge cases.
+        </p>
+        <p>
+          Capital efficiency is the core challenge. Insurance pools must hold enough reserves to cover potential claims while still offering attractive yields to underwriters. Most protocols maintain overcollateralized pools (holding more capital than the total coverage sold) and use risk-based pricing to charge higher premiums for protocols with higher exploit risk. Some protocols, like Nexus Mutual, have integrated with restaking infrastructure (Symbiotic) to create yield-generating reinsurance vaults that improve capital efficiency.
+        </p>
+      </section>
+
+      <section id="coverage-types">
+        <h2>What DeFi Insurance Covers</h2>
+        <p>
+          <strong>Smart contract exploits</strong> account for roughly 68% of all DeFi insurance claims. This covers losses from code vulnerabilities, reentrancy attacks, flash loan exploits, and logic errors in protocol smart contracts. If the protocol you're using gets hacked and you hold valid coverage, you can claim up to your covered amount. This is the most common and most important type of DeFi insurance.
+        </p>
+        <p>
+          <strong>Stablecoin depeg events</strong> protect against a stablecoin losing its peg. After the UST collapse wiped out $40B in value, depeg coverage became one of the fastest-growing insurance products. Policies typically trigger when a stablecoin trades below a defined threshold (like $0.90) for a sustained period. InsurAce's depeg-focused pools saw premium volume grow 35% year-over-year as demand surged.
+        </p>
+        <p>
+          <strong>Oracle manipulation</strong> covers losses from price feed attacks where exploiters manipulate the price data that protocols rely on. <strong>Exchange and custodian risk</strong> covers losses from centralized exchange hacks or insolvency — particularly relevant after the FTX collapse. <strong>Bridge exploits</strong> cover cross-chain bridge failures, which have been responsible for some of the largest DeFi hacks in history (Ronin Bridge: $624M, Wormhole: $320M).
+        </p>
+      </section>
+
+      <section id="top-protocols">
+        <h2>Top DeFi Insurance Protocols in 2026</h2>
+        <p>
+          <strong>Nexus Mutual</strong> is the market leader and pioneer of decentralized insurance. Built on Ethereum, it uses a mutual model where NXM token holders stake to underwrite coverage and vote on claims. Nexus has paid out over $18M in claims since 2019, proving the model works. In 2025, they integrated with Symbiotic to create yield-generating reinsurance vaults, improving capital efficiency. Coverage spans 100+ DeFi protocols. Best for: large DeFi positions on Ethereum and established protocols.
+        </p>
+        <p>
+          <strong>InsurAce</strong> is the leading multi-chain insurance protocol, operating across Ethereum, BSC, Avalanche, and Arbitrum. With $150M in TVL, it offers portfolio-based bundled policies that let you cover multiple protocols at once for a discount. Their specialty is stablecoin depeg coverage, where premium volume grew 35% year-over-year. InsurAce also offers an investment arm where coverage capital earns additional DeFi yields. Best for: multi-chain DeFi users who want bundled coverage.
+        </p>
+        <p>
+          <strong>Neptune Mutual</strong> specializes in parametric insurance with fully automated payouts. When oracle-verified conditions are met (like a confirmed exploit or depeg event), claims pay out automatically without voting or manual review. This eliminates the uncertainty and delays of discretionary models. The trade-off is less flexibility for ambiguous situations. Best for: users who value speed and certainty over coverage for edge cases.
+        </p>
+        <p>
+          <strong>Unslashed Finance</strong> offers 20+ cover products including protocol risk, stablecoin depeg, custodian risk, and validator slashing protection. They use Kleros (a decentralized arbitration protocol) for dispute resolution, targeting 5-day payout windows. Their approach separates risk assessment from coverage provision, allowing specialized risk experts to price policies. Best for: Ethereum stakers and validators who need slashing protection.
+        </p>
+        <p>
+          <strong>OpenCover</strong> functions as an insurance aggregator, providing coverage analytics across 100+ DeFi protocols and aggregating liquidity from multiple insurance providers. Rather than underwriting risk directly, OpenCover helps users find the best coverage options across all available protocols. Best for: comparing options and finding the most cost-effective coverage.
+        </p>
+      </section>
+
+      <section id="costs-and-premiums">
+        <h2>What Does DeFi Insurance Cost?</h2>
+        <p>
+          Premiums typically range from 2% to 10% of the covered amount annually, depending on the protocol's risk profile and the type of coverage. Well-audited, established protocols like Aave or Compound tend to have lower premiums (2-4%) because their smart contracts have been battle-tested over years. Newer or more complex protocols with higher exploit risk command higher premiums (5-10%). Stablecoin depeg coverage varies by the stablecoin — covering USDC is cheaper than covering algorithmic stablecoins.
+        </p>
+        <p>
+          To put this in perspective: if you have $50,000 deposited in a DeFi lending protocol earning 5% APY ($2,500/year), a 3% insurance premium costs $1,500/year — cutting your net yield to 2% but protecting against total loss. Whether that trade-off makes sense depends on your risk tolerance and the protocol's security track record. For positions over $100K, the math strongly favors buying coverage. The potential downside of losing everything far outweighs the cost of premiums.
+        </p>
+        <p>
+          Some protocols offer premium discounts for longer coverage periods, bundled multi-protocol policies, or staking the protocol's native token. InsurAce's portfolio bundles, for example, can reduce effective premiums by 20-30% compared to buying individual policies. Newer models are working toward near-zero premiums through yield optimization, where the capital backing coverage earns enough DeFi yield to offset or subsidize premium costs.
+        </p>
+      </section>
+
+      <section id="who-needs-it">
+        <h2>Do You Need DeFi Insurance?</h2>
+        <p>
+          <strong>You probably need insurance if:</strong> You have more than $10,000 in any single DeFi protocol. You're using newer, less battle-tested protocols where smart contract risk is higher. You're providing liquidity on cross-chain bridges (historically the most exploited DeFi category). Your crypto position represents a significant portion of your net worth that you cannot afford to lose entirely. You're earning yield on stablecoins and want to protect against depeg events.
+        </p>
+        <p>
+          <strong>You can probably skip it if:</strong> Your total DeFi exposure is small (under $5,000) and the premium cost doesn't justify the protection. You're diversified across many protocols with small positions in each, effectively self-insuring through diversification. You're only using the most battle-tested protocols (Aave V3, Compound V3, Uniswap V3) that have withstood years of attacks. You're comfortable with the risk-reward trade-off and can absorb potential losses.
+        </p>
+        <p>
+          The sweet spot for most DeFi users is covering their largest single-protocol positions — particularly if that protocol is newer, uses complex mechanics (like leveraged yield strategies), or holds your stablecoin savings. Think of it as insuring the positions where a total loss would meaningfully impact your financial situation.
+        </p>
+      </section>
+
+      <section id="risks-and-limitations">
+        <h2>Risks and Limitations</h2>
+        <p>
+          DeFi insurance has its own risks. <strong>Counterparty risk</strong> means the insurance protocol itself could be exploited. If Nexus Mutual's smart contracts were hacked, policyholders might not receive payouts. Major protocols mitigate this through extensive auditing and bug bounties, but the risk exists. <strong>Capital insufficiency</strong> is possible during black swan events — if a massive exploit drains more value than the insurance pool holds, not all claims can be paid in full.
+        </p>
+        <p>
+          <strong>Claims disputes</strong> are common in discretionary models. Community voters may disagree on whether a specific event qualifies for a payout, leading to denied claims. Nexus Mutual has had controversial claim decisions that left some policyholders unsatisfied. <strong>Coverage gaps</strong> exist — not every protocol or risk type has available coverage, and coverage limits may be lower than your actual exposure. Always verify that the specific protocol and risk type you need is actually covered before purchasing a policy.
+        </p>
+        <p>
+          <strong>Regulatory uncertainty</strong> hangs over the entire DeFi insurance sector. Traditional insurance is heavily regulated, and it's unclear how regulators will treat decentralized alternatives. Some jurisdictions may eventually require DeFi insurance protocols to meet licensing requirements, which could impact their operations. Despite these limitations, DeFi insurance represents a critical and maturing infrastructure layer — imperfect coverage is still better than no coverage at all.
+        </p>
+      </section>`,
+  },
+  "airdrop-farming-guide-2026": {
+    metadata: { title: "Crypto Airdrop Farming Strategies: Complete Guide for 2026 | degen0x", description: "Learn how to farm crypto airdrops in 2026 — from eligibility criteria and points programs to anti-Sybil strategies, tools, and which protocols are most likely to airdrop tokens next." },
+    props: { title: "Crypto Airdrop Farming: The Complete Strategy Guide for 2026", categoryName: "DeFi", categorySlug: "learn", readTime: "14 min read", intro: "Airdrop farming — systematically using protocols before their token launch to qualify for free token distributions — has generated life-changing returns for early participants. Hyperliquid distributed $2.6B to users in late 2025, Jupiter gave away $600M+ across multiple rounds, and OpenSea launched its SEA token with 50% going to the community in early 2026. But the game has evolved dramatically. Protocols now use AI-powered Sybil detection, wallet behavior scoring, and points programs that reward genuine usage over bot activity. This guide covers how airdrop farming works in 2026, which strategies actually work, what protocols to watch, and how to avoid getting filtered out." },
+    toc: [ { id: "what-is-airdrop-farming", title: "what-is-airdrop-farming", level: 2 }, { id: "what-is-airdrop-farming-and-why-it-works", title: "What Is Airdrop Farming and Why It Works", level: 2 }, { id: "how-airdrops-changed", title: "how-airdrops-changed", level: 2 }, { id: "how-airdrop-criteria-evolved-in-2026", title: "How Airdrop Criteria Evolved in 2026", level: 2 }, { id: "farming-strategies", title: "farming-strategies", level: 2 }, { id: "core-farming-strategies-that-work", title: "Core Farming Strategies That Work", level: 2 }, { id: "points-programs", title: "points-programs", level: 2 }, { id: "understanding-points-programs", title: "Understanding Points Programs", level: 2 }, { id: "protocols-to-watch", title: "protocols-to-watch", level: 2 }, { id: "protocols-most-likely-to-airdrop-next", title: "Protocols Most Likely to Airdrop Next", level: 2 }, { id: "sybil-detection", title: "sybil-detection", level: 2 }, { id: "avoiding-sybil-detection", title: "Avoiding Sybil Detection", level: 2 }, { id: "risks-and-scams", title: "risks-and-scams", level: 2 }, { id: "risks-scams-and-security", title: "Risks, Scams, and Security", level: 2 } ],
+    faqs: [ { question: "How much money do I need to start airdrop farming?", answer: "You can start with as little as $50-100 for testnet interactions and basic protocol usage on low-fee chains like Arbitrum, Base, or Solana. Realistically, $200-500 gives you enough to interact meaningfully across multiple protocols — providing liquidity, making swaps, bridging assets, and participating in governance. The returns are not proportional to capital invested; consistent activity over 6-12 months matters more than deposit size for most airdrops." }, { question: "Are airdrops taxable?", answer: "In most jurisdictions, yes. Airdropped tokens are generally treated as ordinary income at their fair market value when received. In the US, you owe income tax when you receive the tokens and capital gains tax when you sell them. Tax treatment varies by country — check our regional tax guides for specifics. Keep records of all airdrops received, including the token price at the time of receipt and any gas costs incurred during farming." }, { question: "What's the difference between an airdrop and a points program?", answer: "An airdrop is a one-time token distribution to qualifying wallets, often announced retroactively. A points program is an ongoing tracking system where protocols award non-tradable points for specific activities. Points typically convert to tokens at the Token Generation Event (TGE). Points programs are essentially pre-announced airdrops with transparent criteria — you know exactly what actions earn rewards. Most major 2026 airdrops are preceded by points programs." }, { question: "Can I get banned for airdrop farming?", answer: "Farming a single wallet through genuine protocol usage is completely legitimate and expected by most projects — they want real users. What gets you filtered is Sybil behavior: running many wallets with identical patterns, using bot scripts, or gaming metrics without genuine interaction. As of 2026, roughly 85% of new airdrops run Sybil detection. The safest strategy is focusing on one primary wallet with diverse, consistent, genuine activity over several months." } ],
+    relatedArticles: [ { title: "What Is DeFi?", href: "/learn/what-is-defi", category: "Learn" }, { title: "Crypto Tax Guide", href: "/learn/crypto-tax-guide", category: "Learn" }, { title: "Gas Fees Explained", href: "/learn/what-are-gas-fees", category: "Learn" }, { title: "Cross-Chain Bridges Guide", href: "/learn/cross-chain-bridges-guide", category: "Learn" }, { title: "Best Perpetual DEX Guide", href: "/learn/best-perpetual-dex-guide", category: "Learn" } ],
+    childrenHtml: `<section id="what-is-airdrop-farming">
+        <h2>What Is Airdrop Farming and Why It Works</h2>
+        <p>
+          Airdrop farming is the practice of intentionally using blockchain protocols before they launch a token, positioning yourself to receive free tokens when the project eventually distributes them to early users. Protocols airdrop tokens for a strategic reason: they need decentralized token distribution to avoid being classified as securities, and rewarding early users creates a loyal community of token holders who are invested in the protocol's success. This alignment of incentives means projects actively want to reward genuine early adopters.
+        </p>
+        <p>
+          The numbers speak for themselves. Hyperliquid's HYPE airdrop in late 2025 distributed roughly $2.6B worth of tokens to users of its perpetual DEX, with some active traders receiving six-figure allocations. Jupiter's multi-round JUP distribution exceeded $600M across 700 million tokens to Solana DEX users. OpenSea announced its SEA token in early 2026 with a massive 50% community allocation. These aren't small giveaways — for users who were actively using these protocols anyway, airdrops represent pure upside on top of the utility they were already getting.
+        </p>
+        <p>
+          The key insight is that most of these protocols were usable and valuable before the airdrop. People were already trading on Hyperliquid, swapping on Jupiter, and buying NFTs on OpenSea. The airdrop reward was a bonus for being an early user. The best airdrop farming strategy isn't to game systems — it's to identify protocols you'd actually want to use and start using them early.
+        </p>
+      </section>
+
+      <section id="how-airdrops-changed">
+        <h2>How Airdrop Criteria Evolved in 2026</h2>
+        <p>
+          The early days of airdrop farming were simple: make a few transactions, claim tokens. Uniswap's 2020 airdrop gave 400 UNI (worth ~$1,400 at the time) to anyone who had made even a single swap. Those days are gone. After rampant Sybil attacks — where farmers ran hundreds or thousands of wallets to multiply rewards — projects have dramatically raised the bar for eligibility.
+        </p>
+        <p>
+          Modern airdrops in 2026 reward what the industry calls "wallet narratives" — consistent, diverse, genuine engagement over extended time periods. Instead of volume or transaction count, protocols now analyze behavior patterns: How long has the wallet been active? Does it interact with multiple protocol features (not just the minimum)? Is the activity spread naturally over weeks and months, or clustered in suspicious bursts? Does the wallet show signs of genuine use (governance voting, LP provision, varied transaction types) or robotic farming patterns?
+        </p>
+        <p>
+          Duration thresholds have become standard. Many projects now require 2-month, 6-month, or even 9-month activity windows with rewards scaling to tenure. Arbitrum and zkSync both implemented tiered allocation systems where longer engagement periods earned exponentially more tokens. The message is clear: start early, be consistent, and don't expect to farm a protocol for two weeks before its TGE and receive a meaningful allocation.
+        </p>
+      </section>
+
+      <section id="farming-strategies">
+        <h2>Core Farming Strategies That Work</h2>
+        <p>
+          <strong>Testnet participation</strong> is the lowest-risk entry point. Many protocols run incentivized testnets where interacting with test versions of their product qualifies you for mainnet rewards. This costs nothing except time — you use test tokens, not real money. StarkNet, Scroll, and multiple other L2s rewarded testnet participants in their airdrops. Check project Discord channels and documentation for active testnet programs. The downside is that testnet farming is time-intensive and not guaranteed to convert to token rewards.
+        </p>
+        <p>
+          <strong>Active DeFi usage</strong> across protocol features is the highest-value strategy. Don't just make one swap — provide liquidity, borrow against your collateral, vote in governance, and use multiple features of each protocol. On a DEX, that means providing LP across multiple pools, using limit orders, and trading different pairs. On a lending protocol, supply collateral, borrow, and repay across multiple markets. Diverse feature usage signals genuine interest and consistently earns the highest airdrop tiers.
+        </p>
+        <p>
+          <strong>Cross-chain bridging</strong> remains important for L2 and bridge protocol airdrops. Bridging assets between chains demonstrates real demand for interoperability infrastructure. Arbitrum, Optimism, and zkSync all rewarded bridge users. When bridging, use official bridges rather than third-party aggregators when possible — the protocol's own bridge captures your activity directly. Keep bridge amounts meaningful (not dust transactions) and bridge in both directions over time.
+        </p>
+        <p>
+          <strong>Governance participation</strong> is an underrated signal. Voting on proposals, creating forum posts, and participating in governance discussions shows you're invested in the protocol's future — not just farming for tokens. Protocols that see you actively contributing to governance decisions are more likely to reward you generously. Many DAOs now track governance activity as a multiplier for airdrop eligibility.
+        </p>
+      </section>
+
+      <section id="points-programs">
+        <h2>Understanding Points Programs</h2>
+        <p>
+          Points programs have become the dominant precursor to airdrops in 2026. Instead of surprise retroactive distributions, most major protocols now run transparent points systems that track on-chain activity and convert to tokens at launch. This shift benefits both sides: users know exactly what they're working toward, and protocols get sustained engagement over months rather than last-minute farming rushes.
+        </p>
+        <p>
+          Points work by assigning non-tradable scores to wallets based on specific on-chain actions. Providing liquidity might earn 10 points per dollar per day, making swaps earns points per transaction, and referring other users adds bonus multipliers. These points act as a direct preview of your eventual token allocation. When the Token Generation Event (TGE) occurs, the protocol converts points to tokens at a predetermined or proportional rate.
+        </p>
+        <p>
+          <strong>Maximize points by:</strong> Starting early — most points programs reward early participants with bonus multipliers that decay over time. Diversifying activities — protocols want to see you use multiple features, not just farm the single highest-point action. Maintaining consistency — daily or weekly interactions build a stronger profile than large one-time deposits. Checking leaderboards — many programs publish rankings that help you gauge whether your activity level is competitive for meaningful allocations.
+        </p>
+        <p>
+          Notable active points programs to watch include Backpack Exchange (25% community token allocation, 24% specifically to points holders), along with programs from protocols like Paradex, EdgeX, and Aster. The meta-game is identifying protocols likely to launch tokens within 3-6 months and accumulating points before the broader market catches on and competition intensifies.
+        </p>
+      </section>
+
+      <section id="protocols-to-watch">
+        <h2>Protocols Most Likely to Airdrop Next</h2>
+        <p>
+          Identifying airdrop candidates requires looking for protocols with venture funding (they need to provide returns to investors through token launches), growing user bases, no existing token, and competitor protocols that have already launched tokens (creating market pressure to follow). As of March 2026, several high-profile protocols fit this profile.
+        </p>
+        <p>
+          <strong>MetaMask</strong> remains the most anticipated potential airdrop. As the dominant Ethereum wallet with over 30 million monthly active users, a MetaMask token would be one of the largest distributions in crypto history. ConsenSys (MetaMask's parent) has hinted at tokenization repeatedly. Using MetaMask Swaps, bridging through MetaMask, and holding a diverse portfolio within the wallet are the primary farming strategies.
+        </p>
+        <p>
+          <strong>Base</strong> (Coinbase's L2) has not launched a token despite being one of the most active L2 networks. While Coinbase has stated Base "has no plans" for a token, the same was said by several protocols that eventually launched tokens. Active Base usage — particularly with native protocols like Aerodrome, BaseSwap, and Friend.tech — positions you for any future distribution. <strong>Polymarket</strong> confirmed its POLY token in February 2026 after filing trademarks, making prediction market activity particularly valuable right now.
+        </p>
+        <p>
+          <strong>Backpack Exchange</strong> has explicitly outlined its tokenomics: 25% to the community with 24% allocated to points holders. This is one of the most transparent upcoming distributions. Other protocols generating airdrop speculation include Paradex (StarkNet-based perpetuals), EdgeX, and Aster. The common thread: well-funded protocols with growing usage and no token yet.
+        </p>
+      </section>
+
+      <section id="sybil-detection">
+        <h2>Avoiding Sybil Detection</h2>
+        <p>
+          Approximately 85% of new airdrops now implement Sybil detection to filter out farmers running multiple wallets. Getting flagged as a Sybil means all your associated wallets receive zero allocation — even your primary wallet that may have had genuine activity. The consequences are severe enough that the optimal strategy for most people is to focus all activity on a single primary wallet.
+        </p>
+        <p>
+          Sybil detection algorithms analyze: <strong>Timing patterns</strong> — do multiple wallets perform the same actions within minutes of each other? <strong>Funding sources</strong> — were multiple wallets funded from the same exchange withdrawal or wallet? <strong>Activity fingerprints</strong> — do wallets show identical transaction patterns, amounts, and protocol interactions? <strong>IP clustering</strong> — were interactions submitted from the same IP address? AI-powered detection has become remarkably sophisticated at identifying wallet clusters that share behavioral patterns.
+        </p>
+        <p>
+          The safest approach: use one primary wallet, fund it from a reputable exchange, and interact naturally over months. Spread your activity across different days and times. Use multiple protocol features rather than repeating the same action. Vote in governance, provide varied LP positions, and make transactions of different sizes. The goal is for your wallet to look like what it should be — a genuine user who discovered the protocol early and uses it regularly.
+        </p>
+      </section>
+
+      <section id="risks-and-scams">
+        <h2>Risks, Scams, and Security</h2>
+        <p>
+          <strong>Airdrop scams</strong> are pervasive and increasingly sophisticated. The golden rule: legitimate airdrops never ask you to pay fees, connect your wallet to unfamiliar sites, or enter your seed phrase. If someone DMs you about "claiming" an airdrop, it's a scam — 100% of the time. Fake airdrop claim sites use phishing contracts that drain your wallet when you approve a transaction. Always verify airdrop claims through official project channels (official Twitter/X, Discord announcements, protocol website).
+        </p>
+        <p>
+          <strong>Tool and extension risks</strong> are real. In a notable incident, the AdsPower anti-detect browser — widely used by airdrop farmers — was compromised, resulting in 20,000 wallets being drained and approximately $5M stolen. Never install unverified tools or browser extensions for farming. Keep your farming wallet completely separate from wallets holding significant assets. Use a dedicated browser profile for farming activities.
+        </p>
+        <p>
+          <strong>Token depreciation</strong> is the most overlooked risk. Research shows that 88% of airdropped tokens lose value within 3 months of distribution. The rational strategy for most farmers is to sell a significant portion of airdropped tokens early rather than holding long-term — unless you have strong conviction in the project's fundamentals. Factor in gas costs for claiming and selling when calculating actual profitability. A $500 airdrop that costs $200 in gas and farming expenses over 6 months nets only $300 before taxes.
+        </p>
+        <p>
+          <strong>Security best practices:</strong> Use a dedicated farming wallet separate from your main holdings. Never keep more capital in your farming wallet than you can afford to lose. Revoke token approvals regularly using tools like Revoke.cash. Bookmark official protocol URLs and never click links from DMs, emails, or social media ads. Enable hardware wallet signing for any farming wallet holding significant value. Keep detailed records of all farming activity for tax purposes.
+        </p>
+      </section>`,
+  },
 };
+
+// ---- NEW PAGES: 2026-03-23 build cycle ----
+
+// Read and merge new page entries
+import { newPages_20260323 } from './learn-20260323';
+Object.assign(pages, newPages_20260323);
+
 export const slugList = Object.keys(pages);

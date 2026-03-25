@@ -1,0 +1,38 @@
+{
+  "date": "2026-03-25",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited 2 new pages from today's build cycle (MSBT Guide, Onchain Credit Scoring Guide), created 3 OG images, fixed 4 UX issues including missing semantic HTML, broken server-component event handlers, missing breadcrumb Home link, and missing OG metadata references.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "MSBT Guide: Wrapped page content in semantic <article> tag for better accessibility and SEO",
+          "Credit Scoring Guide: Added missing 'Home' breadcrumb link (was only Learn > Credit Scoring, now Home > Learn > Credit Scoring)",
+          "Credit Scoring Guide: Removed onMouseEnter/onMouseLeave event handlers from TOC and Related Links — page is a server component and these handlers would cause hydration errors or silently fail",
+          "Both pages: Added OG image references (images array) to openGraph and twitter metadata for proper social sharing previews",
+          "Layer 3 Chains Guide: Noted structural issue — page uses 'use client' so cannot export Next.js metadata. Needs page/component split in future build cycle"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: morgan-stanley-bitcoin-etf-msbt-guide (1200x630 SVG) — Dark theme with Bitcoin icon, fund details card (Coinbase custody, BNY Mellon admin, NYSE Arca), brand gradient accent",
+          "OG image: onchain-credit-scoring-guide-2026 (1200x630 SVG) — Credit score bar visualization (300-850 MACRO score), protocol comparison bars (Credora/Spectral/Cred Protocol), DeFi/Credit badges",
+          "OG image: layer-3-chains-guide-2026 (1200x630 SVG) — Layer stack diagram (L1→L2→L3), key stats (<$0.001/tx, 100K+ TPS, Custom Execution), Infrastructure/Scaling badges"
+        ]
+      },
+      {
+        "title": "UX Audit Findings (Today's Pages)",
+        "items": [
+          "MSBT Guide: Good — proper TOC, reading time, category badges, disclaimer, related links, BackToTop. No input validation needed (informational page)",
+          "Credit Scoring Guide: Good structure — header with surface bg, inline TOC, FAQ accordion, disclaimer, related guides. Fixed breadcrumb and event handler issues",
+          "Both pages: Mobile layout OK — maxWidth 900px with padding, flex-wrap on badges, responsive line-height on body text. No horizontal scroll issues detected",
+          "Both pages: Data hierarchy follows scan-first pattern — key numbers/names bold, category badges visible, section headings clearly sized"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

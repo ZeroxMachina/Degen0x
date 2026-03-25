@@ -1,0 +1,87 @@
+{
+  "date": "2026-03-25",
+  "block": "standup",
+  "cycle": 6,
+  "report": {
+    "status": "completed",
+    "summary": "Day 72 standup v6: Delta since v5 — build-v4 shipped EIP-7702 Smart Accounts + Passkey Embedded Wallets guides (clean, 0 new TS errors). Design-v5 UX-audited 4 pages, created 2 OG images, added global a11y improvements (focus styles, reduced motion, fadeIn). Community-v5 drafted posts #125-127 (miner capitulation $19K loss/coin, $2.5B ETF inflows, SEC crypto securities definitions) + 3 SVG cards. EOD-v5 confirmed TS stable at 142, PUBLISH_QUEUE refilled to 2. BTC $69,541-$71,229 (ranging), ETH $2,105-$2,173, F&G 8-11 (Extreme Fear Day 46+). Git locks Day 10 — 803 files, ~170+ deploy gap. 30 agent runs today ($2,297). P0 unchanged: clear git locks + deploy.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v5: Build-v4 completed EIP-7702 Smart Accounts Guide (720 lines, 3 tabs, EOA vs ERC-4337 vs EIP-7702 comparison) + Passkey Embedded Wallets Guide (867 lines, 3 tabs, 6-provider matrix). Both pages CLEAN — 0 new TS errors. Design-v5 UX-audited all 4 new pages, created 2 branded OG images (EIP-7702 architecture + Passkey biometric), added global a11y: fadeIn keyframes, prefers-reduced-motion, focus-visible styles, clamp() responsive h1, aria-labels, flex-wrap tabs.",
+          "Community-v5 drafted posts #125-127: miner capitulation confirmed ($88K production cost vs $70K market = -$19K loss/coin), $2.5B ETF inflows (longest weekly streak 2026, YTD flipped +$210M), SEC formally defines crypto securities. 3 SVG social cards + newsletter v23 addendum v5 + content calendar v32.",
+          "EOD-v5 confirmed: TS errors stable at 142 (no regression from new pages). PUBLISH_QUEUE refilled to 2 items (EIP-7702 + Passkey Wallets). 803 uncommitted files (+4 from v5). All 6 API routes healthy.",
+          "MARKET UPDATE (fresh): BTC ~$69,541-$71,229 (ranging around $70K, day range $70,128-$71,369). ETH ~$2,105-$2,173 (+0.86% 24h, oscillating $2,100-$2,200 range). F&G Index: 8-11 (Extreme Fear — 46+ consecutive days, longest streak since post-FTX Nov 2022). Total market cap: ~$2.50T.",
+          "KEY NARRATIVE: Miner capitulation confirmed at $88K production cost vs $70K market price (-$19K loss/coin). Hashprice at historic lows. Every prior cycle this pattern preceded a major recovery (+320% in 2018, +155% in 2022). Meanwhile institutional money diverges — $2.5B ETF inflows in March, YTD flipped to +$210M net positive. Smart money accumulating while miners capitulate.",
+          "LOCAL METRICS: 1,162 page.tsx files (+2 from v5). 500 unique published slugs (+1 from v5). PUBLISH_QUEUE: 2 items. Deploy gap: ~170+ pages. 803 uncommitted files. TS errors: 142 (stable). Git locks Day 10."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE v5: Build-v4 shipped EIP-7702 + Passkey Wallets (both clean). EOD-v5 completed QA cycle — confirmed no regression. Design-v5 created 2 OG images + 8 UX improvements across 4 pages + global a11y additions (globals.css). Community-v5 drafted 3 social posts + 3 SVG cards + newsletter addendum + calendar v32. Publish-v5 confirmed API health, no queue items to promote.",
+          "PIPELINE HEALTH: PUBLISH_QUEUE: 2 items (EIP-7702, Passkey Wallets). 500 unique published slugs. 1,162 page.tsx files. Today's total across 5 full cycles + 6 standups: 10 guides, 5 ecosystem pages, 9 OG images, 18 social posts, 14 SVG cards, 5 newsletters, 22+ UX fixes, 1 interactive calculator, global a11y improvements.",
+          "BLOCKER [P0 — DAY 10]: Git locks (.git/HEAD.lock + .git/index.lock). 803 uncommitted files. ALL content since Mar 17 local-only. Jefe action required: rm .git/index.lock .git/HEAD.lock → git add . → git commit → git push.",
+          "BLOCKER [P1]: 103+ published slugs missing page.tsx (wallets, taxes, investing, learn fundamentals).",
+          "STABLE [P1]: TS errors at 142 across 5 files — no new regression. JSX escaping pattern in lido-v3 (94), structured-data (40), crypto-arbitrage (4), institutional-crypto (2), crypto-index-funds (2).",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes.",
+          "CARRY-OVER [P2]: 17 duplicate slugs in published-pages.ts (517 entries, 500 unique).",
+          "TODAY'S AGENT RUNS: standup×5→6, build×4, design×5, community×5, publish×5, eod×5 = 29 + this standup = 30 total."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS + DEPLOY (DAY 10 — CRITICAL): 170+ pages trapped behind git locks. Miner capitulation narrative is trending NOW — our mining guide, fear-greed timeline, and DCA calculator need to be indexable. $2.5B ETF inflows + SEC securities definitions = massive search interest spike. Every hour without deploy = compounding lost organic traffic. One manual intervention unlocks months of accumulated content.",
+          "PRIORITY 2 — PROMOTE EIP-7702 + PASSKEY WALLETS: PUBLISH_QUEUE has 2 fresh items. Both are zero-competition 2026 topics (Pectra upgrade, passkey wallets). Promote to PUBLISHED_PAGES in next publish cycle. These pages have clean TS, branded OG images, a11y improvements, and full SEO metadata — ready to ship.",
+          "PRIORITY 3 — TAX PAGES (APRIL 15 = 21 DAYS): 8 tax-related published slugs have no page.tsx. Tax season search volume peaks in next 2 weeks — hard deadline. After April 15, traffic drops 90%. Next build cycle should prioritize scaffolding crypto-tax-guide, tax-loss-harvesting, and related pages.",
+          "STRATEGIC NOTE: F&G at 8-11 for 46+ consecutive days — longest Extreme Fear streak since FTX collapse. Yet BTC holding $70K, ETF inflows surging, and miner capitulation historically precedes major rallies. This is exactly the environment where DCA calculators, fear-greed tools, and 'what to do in a bear market' content gets peak search volume. Our content library is perfectly positioned — we just need it deployed. Agent spend today: $2,297 across 30 runs. Marginal cost: ~$0. Human equivalent: $2,297."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel operational)", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Slugs", "value": "500 unique (+1 from v5)", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "2 items (EIP-7702, Passkey Wallets)", "pct": 10, "color": "#f59e0b" },
+          { "label": "Pages in Production", "value": "~338 (stale commit e999560, Mar 17)", "pct": 67, "color": "#ef4444" },
+          { "label": "Deploy Gap", "value": "~170+ pages not live (34% unreachable)", "pct": 34, "color": "#ef4444" },
+          { "label": "Total page.tsx Files", "value": "1,162 (+2 since v5)", "pct": 100, "color": "#4ade80" },
+          { "label": "Missing page.tsx", "value": "103+ published slugs without page.tsx", "pct": 20, "color": "#ef4444" },
+          { "label": "Today's Output", "value": "10 guides, 9 OG images, 18 posts, 14 SVG cards, 22+ UX fixes, global a11y", "pct": 100, "color": "#4ade80" },
+          { "label": "Days Since Last Deploy", "value": "8 (Mar 17, e999560)", "pct": 1, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "10 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "803 (+4 from v5)", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "142 (stable — no regression)", "pct": 15, "color": "#f59e0b" },
+          { "label": "API Routes", "value": "6/6 present, 0/6 rate-limited", "pct": 75, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "~$69,541-$71,229 (ranging $70K)", "pct": 70, "color": "#f59e0b" },
+          { "label": "ETH Price", "value": "~$2,105-$2,173 (+0.86% 24h)", "pct": 62, "color": "#06b6d4" },
+          { "label": "Fear & Greed Index", "value": "8-11 (Extreme Fear — Day 46+ streak)", "pct": 8, "color": "#ef4444" },
+          { "label": "Total Market Cap", "value": "~$2.50T", "pct": 55, "color": "#06b6d4" },
+          { "label": "Miner P&L", "value": "-$19K/coin (capitulation confirmed)", "pct": 8, "color": "#ef4444" },
+          { "label": "ETF Inflows (Mar)", "value": "$2.5B — longest weekly streak 2026", "pct": 90, "color": "#4ade80" },
+          { "label": "Tax Deadline", "value": "21 days to April 15", "pct": 70, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h (standup)", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup $45)", "pct": 9, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$2,297 (30 runs: standup×6 $270 + build×4 $932 + publish×5 $275 + design×5 $300 + community×5 $205 + eod×5 $315)", "pct": 19, "color": "#4ade80" },
+          { "label": "📊 Yesterday's Total (Mar 24)", "value": "$6,097 (78 runs across all 6 agents)", "pct": 51, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" },
+          { "label": "⚠️ Deploy-Blocked Waste", "value": "10 days of content trapped — 170+ pages behind git locks", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API unreachable from Chrome (CORS/network block on api.resend.com). Persistent issue across all cycles. Report saved locally."
+  }
+}

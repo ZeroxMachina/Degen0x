@@ -1,0 +1,57 @@
+{
+  "date": "2026-03-15",
+  "block": "community",
+  "cycle": "v5",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v5: identified best-perpetual-dex-guide and ethena-usde-guide as top new-content trajectories; drafted 8-post Hyperliquid perp thread, Ethena USDe tweet, Meme Launchpads tweet, Sonic tweet, Discord/Telegram announcement for all 7 new guides, and Thursday newsletter section; created 2 SVG social cards (Ethena USDe delta-hedge flow card + Meme Launchpads market-share comparison card) saved to /public/.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Twitter thread (8 posts): Best Perpetual DEX Guide — hook on Hyperliquid's 80% market share dominance, perp mechanics explained, Hyperliquid on-chain order book differentiator, dYdX/Lighter/GRVT/GMX comparison, risk breakdown, 3-step getting started guide, CTA to /learn/best-perpetual-dex-guide",
+          "Tweet: Ethena USDe — delta-hedge mechanism in plain English (deposit ETH → short $ETH perp → earn staking yield + funding rate), sUSDe 'Internet Bond' framing, $6.7B TVL signal, risk acknowledgment, CTA to /learn/ethena-usde-guide",
+          "Tweet: Best Meme Coin Launchpads 2026 — Pump.fun $1B revenue milestone as hook, fragmented multi-chain meta (LetsBonk/Clanker/Zora/four.meme), CTA to /learn/best-meme-coin-launchpads-2026",
+          "Tweet: Sonic Blockchain — Fantom → Sonic rebrand story, 400K TPS / 720ms / <$0.0001 fees / FeeM 90% dev rev share, CTA to /learn/sonic-blockchain-guide",
+          "Discord/Telegram announcement: all 7 new guides (2 live + 5 in queue) with slugs and one-liner descriptions, 'no wallet needed' callout",
+          "Newsletter section (Thursday send): Subject 'DeFi is having its moment — 7 new guides' — market pulse ($71K BTC, $2,088 ETH, $22.6B perp volume, $6.7B Ethena TVL), 4 featured guides (perp DEX + ethena + sonic + meme launchpads), 2 worth-reading picks (Pendle + GENIUS Act), degen corner on Hyperliquid's fully on-chain order book thesis"
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-ethena-usde-guide.svg — 1200×630 social card: 3-step delta-hedge flow diagram (deposit ETH → short $ETH perp → stake for sUSDe yield), 3 stat cards ($6.7B TVL / 10-40% APY / $79M 90d revenue), branded glass-morphism card surfaces, green/cyan/amber accent palette, 'Internet Bond' result badge, URL footer. Saved to /public/",
+          "social-best-meme-coin-launchpads.svg — 1200×630 social card: horizontal market-share bar chart (Pump.fun 57% / LetsBonk 24% / Clanker 14% / four.meme 3%), right-panel 5-platform at-a-glance table with chain badges and status labels (LEADER/RISING/NICHE/BNB META/TRON META), pink→amber→yellow title gradient, 3 market stat pills (Pump.fun $1B+ revenue / 11.9M+ tokens / $101.8B daily volume). Saved to /public/"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/tools/dca-calculator", "value": "Evergreen leader", "pct": 92, "color": "#4ade80" },
+          { "label": "/learn/best-perpetual-dex-guide", "value": "Hyperliquid narrative peak", "pct": 91, "color": "#6366f1" },
+          { "label": "/learn/crypto-tax-guide-2026", "value": "April urgency (v4 covered)", "pct": 88, "color": "#ef4444" },
+          { "label": "/learn/ethena-usde-guide", "value": "Just published, rising", "pct": 87, "color": "#4ade80" },
+          { "label": "/learn/sonic-blockchain-guide", "value": "Just published, fresh hook", "pct": 83, "color": "#06b6d4" },
+          { "label": "/learn/best-meme-coin-launchpads-2026", "value": "CoinGecko top 2026 narrative", "pct": 81, "color": "#f59e0b" },
+          { "label": "/learn/pendle-finance-guide", "value": "$8.9B TVL, niche DeFi intent", "pct": 79, "color": "#a78bfa" },
+          { "label": "/learn/genius-act-stablecoin-guide", "value": "Evergreen regulatory anchor", "pct": 76, "color": "#67e8f9" }
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "Site is Day 15 — no Google Search Console data yet; trajectory model based on content quality, keyword intent, timeliness, and market signals",
+          "Hyperliquid dominance ($18B+/day, 80% perp DEX market share) is the defining DeFi narrative of Q1 2026 — highest social amplification potential of any guide shipped this cycle",
+          "Ethena USDe just published (live on degen0x.com) — sUSDe yield story is viral-capable among DeFi-native audience; interactive EthenaYieldCalc drives engagement and time-on-page",
+          "Sonic Blockchain just published (live) — Fantom rebrand narrative has built-in audience from former Fantom community + new SonicVM tech story",
+          "Best Meme Coin Launchpads guide targets CoinGecko's #1 top 2026 narrative; Pump.fun $1B milestone gives a strong hook for social engagement",
+          "7 guides built this cycle (2 published, 5 in PUBLISH_QUEUE); total live pages now 352+",
+          "Previous cycle (v4) covered: crypto-tax-guide-2026, ethereum-pectra-upgrade-guide, dca-calculator — all social posts this cycle are net new coverage",
+          "Social drafts saved to /reports/community-drafts/2026-03-15-social-drafts-v5.md",
+          "Social cards saved to /public/social-ethena-usde-guide.svg and /public/social-best-meme-coin-launchpads.svg"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"]
+  }
+}

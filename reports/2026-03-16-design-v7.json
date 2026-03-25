@@ -1,0 +1,45 @@
+{
+  "date": "2026-03-16",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited ethereum-2026-upgrade-roadmap and defi-options-trading-guide pages for UX/accessibility; added aria-labels to breadcrumb and ToC navs, mobile-safe table scroll with minWidth and WebkitOverflowScrolling on 3 tables, full OptionsPnLCalculator accessibility overhaul (fieldset/legend, htmlFor/id, aria-labels on buttons, responsive grid), and descriptive OG alt text on both pages.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Added aria-label='Breadcrumb' to breadcrumb <nav> on both ethereum-2026-upgrade-roadmap and defi-options-trading-guide pages",
+          "Added aria-label='Table of Contents' to ToC <nav> on both pages for screen reader accessibility",
+          "Added role='region' and aria-label to timeline table container on ethereum-2026-upgrade-roadmap, with minWidth: 600 and WebkitOverflowScrolling: 'touch' for mobile horizontal scroll",
+          "Added role='region' and aria-label to Greeks table container on defi-options-trading-guide, with minWidth: 540 and WebkitOverflowScrolling: 'touch'",
+          "Added role='region' and aria-label to protocol comparison table container on defi-options-trading-guide, with minWidth: 560 and WebkitOverflowScrolling: 'touch'",
+          "Converted OptionsPnLCalculator option type selector from div/<span> to semantic <fieldset>/<legend> for proper form grouping",
+          "Converted OptionsPnLCalculator position selector from div/<span> to semantic <fieldset>/<legend>",
+          "Added aria-label to Call, Put, Buy, Sell toggle buttons in OptionsPnLCalculator for screen reader clarity",
+          "Added htmlFor='pnl-strikePrice' and id on strike price input for label-input association",
+          "Added htmlFor='pnl-premium' and id on premium input for label-input association",
+          "Added htmlFor='pnl-underlyingPrice' and id on price at expiry input for label-input association",
+          "Added htmlFor='pnl-contractSize' and id on contract size input for label-input association",
+          "Changed OptionsPnLCalculator top selector grid from fixed '1fr 1fr' to responsive 'repeat(auto-fit, minmax(180px, 1fr))' to prevent layout breakage on narrow screens",
+          "Updated OG image alt text on ethereum-2026-upgrade-roadmap to include key metrics (PeerDAS, 8x blobs, ePBS, user impact)",
+          "Updated OG image alt text on defi-options-trading-guide to include protocol names and content summary"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "Both pages (ethereum-2026-upgrade-roadmap and defi-options-trading-guide) already had OG images from the build cycle — no new images needed"
+        ]
+      },
+      {
+        "title": "Files Modified",
+        "items": [
+          "src/app/learn/ethereum-2026-upgrade-roadmap/page.tsx — breadcrumb aria-label, ToC aria-label, timeline table mobile scroll (minWidth + WebkitOverflowScrolling + role/aria-label), descriptive OG alt text",
+          "src/app/learn/defi-options-trading-guide/page.tsx — breadcrumb aria-label, ToC aria-label, Greeks table mobile scroll, protocol comparison table mobile scroll, descriptive OG alt text",
+          "src/components/OptionsPnLCalculator.tsx — fieldset/legend for selectors, aria-label on toggle buttons, htmlFor/id on 4 numeric inputs, responsive grid for selectors"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

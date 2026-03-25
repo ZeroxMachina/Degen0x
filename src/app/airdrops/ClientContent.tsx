@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { ChevronDown, Calendar, TrendingUp, CheckCircle, AlertCircle, Zap } from 'lucide-react';
+import { useState, useEffect, useMemo } from 'react';
+import { Calendar, TrendingUp, Zap } from 'lucide-react';
+import Breadcrumb from '@/components/Breadcrumb';
 
 type Chain = 'Ethereum' | 'Arbitrum' | 'Polygon' | 'Optimism' | 'Base' | 'Solana';
 type Status = 'Confirmed' | 'Rumored' | 'Live' | 'Ended';
@@ -237,7 +238,7 @@ const airdrops: Airdrop[] = [
 function CountdownTimer({ endDate }: { endDate: string }) {
   const [timeLeft, setTimeLeft] = useState<string>('');
 
-  useMemo(() => {
+  useEffect(() => {
     const calculateTimeLeft = () => {
       const targetDate = new Date(endDate).getTime();
       const now = new Date().getTime();
@@ -264,7 +265,7 @@ function CountdownTimer({ endDate }: { endDate: string }) {
     return () => clearInterval(timer);
   }, [endDate]);
 
-  return <span className="font-mono text-sm text-amber-400">{timeLeft}</span>;
+  return <span className="font-mono text-sm text-amber-400" aria-live="polite" role="timer">{timeLeft}</span>;
 }
 
 function HotAirdropCard({ airdrop }: { airdrop: Airdrop }) {
@@ -417,6 +418,13 @@ export default function ClientContent() {
 
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100">
+      <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
+        <Breadcrumb items={[
+          { label: 'Home', href: '/' },
+          { label: 'Tools', href: '/tools' },
+          { label: 'Airdrop Tracker' },
+        ]} />
+      </div>
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-gray-800 bg-gradient-to-b from-gray-900 to-gray-950 px-4 py-20 sm:px-6 lg:px-8">
         <div className="absolute inset-0">
@@ -461,17 +469,17 @@ export default function ClientContent() {
           <div className="grid gap-6 sm:grid-cols-3">
             {/* Chain Filter */}
             <div>
-              <label className="mb-3 block text-sm font-semibold text-gray-300">Blockchain</label>
-              <div className="space-y-2">
+              <label id="chain-filter-label" className="mb-3 block text-sm font-semibold text-gray-300">Blockchain</label>
+              <div className="space-y-1" role="radiogroup" aria-labelledby="chain-filter-label">
                 {chains.map((chain) => (
-                  <label key={chain} className="flex items-center gap-3 cursor-pointer">
+                  <label key={chain} className="flex items-center gap-3 cursor-pointer min-h-[44px] py-1">
                     <input
                       type="radio"
                       name="chain"
                       value={chain}
                       checked={selectedChain === chain}
                       onChange={(e) => setSelectedChain(e.target.value as Chain | 'All')}
-                      className="h-4 w-4 rounded border-gray-600 bg-gray-800 accent-cyan-500"
+                      className="h-5 w-5 min-w-[20px] rounded border-gray-600 bg-gray-800 accent-cyan-500"
                     />
                     <span className="text-sm text-gray-300">{chain}</span>
                   </label>
@@ -481,17 +489,17 @@ export default function ClientContent() {
 
             {/* Status Filter */}
             <div>
-              <label className="mb-3 block text-sm font-semibold text-gray-300">Status</label>
-              <div className="space-y-2">
+              <label id="status-filter-label" className="mb-3 block text-sm font-semibold text-gray-300">Status</label>
+              <div className="space-y-1" role="radiogroup" aria-labelledby="status-filter-label">
                 {statuses.map((status) => (
-                  <label key={status} className="flex items-center gap-3 cursor-pointer">
+                  <label key={status} className="flex items-center gap-3 cursor-pointer min-h-[44px] py-1">
                     <input
                       type="radio"
                       name="status"
                       value={status}
                       checked={selectedStatus === status}
                       onChange={(e) => setSelectedStatus(e.target.value as Status | 'All')}
-                      className="h-4 w-4 rounded border-gray-600 bg-gray-800 accent-cyan-500"
+                      className="h-5 w-5 min-w-[20px] rounded border-gray-600 bg-gray-800 accent-cyan-500"
                     />
                     <span className="text-sm text-gray-300">{status}</span>
                   </label>
@@ -501,17 +509,17 @@ export default function ClientContent() {
 
             {/* Month Filter */}
             <div>
-              <label className="mb-3 block text-sm font-semibold text-gray-300">Month</label>
-              <div className="space-y-2">
+              <label id="month-filter-label" className="mb-3 block text-sm font-semibold text-gray-300">Month</label>
+              <div className="space-y-1" role="radiogroup" aria-labelledby="month-filter-label">
                 {months.map((month) => (
-                  <label key={month} className="flex items-center gap-3 cursor-pointer">
+                  <label key={month} className="flex items-center gap-3 cursor-pointer min-h-[44px] py-1">
                     <input
                       type="radio"
                       name="month"
                       value={month}
                       checked={selectedMonth === month}
                       onChange={(e) => setSelectedMonth(e.target.value === 'All' ? 'All' : parseInt(e.target.value))}
-                      className="h-4 w-4 rounded border-gray-600 bg-gray-800 accent-cyan-500"
+                      className="h-5 w-5 min-w-[20px] rounded border-gray-600 bg-gray-800 accent-cyan-500"
                     />
                     <span className="text-sm text-gray-300">
                       {month === 'All' ? 'All Months' : monthNames[month]}

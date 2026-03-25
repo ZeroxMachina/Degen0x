@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="50%" style="stop-color:#0a0d1a"/>
+      <stop offset="100%" style="stop-color:#050810"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#818cf8"/>
+      <stop offset="40%" style="stop-color:#a78bfa"/>
+      <stop offset="80%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#4ade80"/>
+    </linearGradient>
+    <linearGradient id="flowLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="aiGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Ambient orbs — AI purple + DeFi cyan -->
+  <circle cx="900" cy="150" r="220" fill="#8b5cf6" opacity="0.07"/>
+  <circle cx="1050" cy="520" r="160" fill="#06b6d4" opacity="0.05"/>
+  <circle cx="180" cy="480" r="200" fill="#4f46e5" opacity="0.05"/>
+
+  <!-- Neural network dots background (decorative) -->
+  <circle cx="700" cy="80" r="3" fill="#6366f1" opacity="0.4"/>
+  <circle cx="740" cy="120" r="2" fill="#8b5cf6" opacity="0.3"/>
+  <circle cx="770" cy="70" r="2.5" fill="#06b6d4" opacity="0.35"/>
+  <circle cx="820" cy="100" r="2" fill="#4ade80" opacity="0.3"/>
+  <circle cx="850" cy="60" r="3" fill="#6366f1" opacity="0.35"/>
+  <!-- connecting lines -->
+  <line x1="700" y1="80" x2="740" y2="120" stroke="#6366f1" stroke-width="0.8" opacity="0.2"/>
+  <line x1="740" y1="120" x2="770" y2="70" stroke="#8b5cf6" stroke-width="0.8" opacity="0.2"/>
+  <line x1="770" y1="70" x2="820" y2="100" stroke="#06b6d4" stroke-width="0.8" opacity="0.2"/>
+  <line x1="820" y1="100" x2="850" y2="60" stroke="#4ade80" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#titleGrad)"/>
+
+  <!-- Logo -->
+  <circle cx="52" cy="42" r="18" fill="#4f46e5" opacity="0.9"/>
+  <text x="52" y="48" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="white">0x</text>
+  <text x="78" y="48" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#8b949e">degen0x</text>
+
+  <!-- Category pill -->
+  <rect x="76" y="58" width="100" height="24" rx="12" fill="rgba(139,92,246,0.2)" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="126" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#a78bfa" letter-spacing="1.5">2026 GUIDE</text>
+
+  <!-- MAIN TITLE -->
+  <text x="60" y="165" font-family="Inter, sans-serif" font-size="72" font-weight="900" fill="url(#titleGrad)" letter-spacing="-2">DeFAI Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="210" font-family="Inter, sans-serif" font-size="21" fill="#8b949e">AI agents executing DeFi autonomously — the next DeFi frontier</text>
+
+  <!-- ─── AGENT FLOW DIAGRAM (center-right) ─── -->
+  <!-- Main flow container -->
+  <rect x="640" y="80" width="520" height="420" rx="20" fill="rgba(255,255,255,0.03)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+
+  <!-- Flow label -->
+  <text x="900" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6e7681" letter-spacing="1.5">DEFAI AGENT FLOW</text>
+
+  <!-- Step 1: User Intent -->
+  <rect x="680" y="128" width="360" height="50" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.35)" stroke-width="1"/>
+  <text x="860" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#818cf8" letter-spacing="1">USER INTENT</text>
+  <text x="860" y="166" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#e6edf3">"Maximize my yield with $10K"</text>
+
+  <!-- Arrow down -->
+  <line x1="860" y1="178" x2="860" y2="195" stroke="url(#flowLineGrad)" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="860,200 855,190 865,190" fill="#06b6d4"/>
+
+  <!-- Step 2: AI Agent -->
+  <rect x="680" y="200" width="360" height="62" rx="12" fill="rgba(139,92,246,0.18)" stroke="rgba(139,92,246,0.4)" stroke-width="1.5"/>
+  <!-- AI glow -->
+  <rect x="680" y="200" width="360" height="62" rx="12" fill="url(#aiGlow)"/>
+  <text x="860" y="222" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1">🤖 AI AGENT (on-chain wallet)</text>
+  <text x="860" y="244" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#c4b5fd">Analyzes · Decides · Executes</text>
+
+  <!-- Arrow down -->
+  <line x1="860" y1="262" x2="860" y2="279" stroke="url(#flowLineGrad)" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="860,284 855,274 865,274" fill="#06b6d4"/>
+
+  <!-- Step 3: Multi-protocol execution -->
+  <rect x="680" y="284" width="360" height="80" rx="12" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.25)" stroke-width="1"/>
+  <text x="860" y="305" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#06b6d4" letter-spacing="1">PROTOCOL EXECUTION</text>
+  <!-- Mini protocol boxes -->
+  <rect x="695" y="315" width="72" height="28" rx="8" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="731" y="333" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#818cf8">Bridge</text>
+  <rect x="778" y="315" width="72" height="28" rx="8" fill="rgba(6,182,212,0.2)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="814" y="333" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#06b6d4">Swap</text>
+  <rect x="861" y="315" width="72" height="28" rx="8" fill="rgba(74,222,128,0.15)" stroke="rgba(74,222,128,0.3)" stroke-width="1"/>
+  <text x="897" y="333" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#4ade80">Stake</text>
+  <rect x="944" y="315" width="72" height="28" rx="8" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="980" y="333" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#f59e0b">Lend</text>
+
+  <!-- Arrow down -->
+  <line x1="860" y1="364" x2="860" y2="381" stroke="#4ade80" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="860,386 855,376 865,376" fill="#4ade80"/>
+
+  <!-- Step 4: Result -->
+  <rect x="680" y="386" width="360" height="50" rx="12" fill="rgba(74,222,128,0.12)" stroke="rgba(74,222,128,0.3)" stroke-width="1"/>
+  <text x="860" y="406" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#4ade80" letter-spacing="1">RESULT</text>
+  <text x="860" y="424" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#e6edf3">Optimized yield. 1 interaction. On-chain.</text>
+
+  <!-- ─── Feature list (left side) ─── -->
+  <g transform="translate(60, 270)">
+    <!-- Protocol row 1 -->
+    <rect x="0" y="0" width="160" height="56" rx="12" fill="rgba(139,92,246,0.12)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+    <text x="80" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#a78bfa">Virtuals</text>
+    <text x="80" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">Tokenized AI agents</text>
+
+    <rect x="176" y="0" width="160" height="56" rx="12" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+    <text x="256" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#06b6d4">Olas</text>
+    <text x="256" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">Multi-agent systems</text>
+
+    <rect x="352" y="0" width="160" height="56" rx="12" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+    <text x="432" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#f59e0b">Bittensor</text>
+    <text x="432" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">Decentralized AI</text>
+
+    <!-- Key bullets -->
+    <circle cx="8" cy="84" r="4" fill="#8b5cf6"/>
+    <text x="22" y="89" font-family="Inter, sans-serif" font-size="15" fill="#e6edf3">Agent wallets hold real on-chain assets</text>
+
+    <circle cx="8" cy="116" r="4" fill="#06b6d4"/>
+    <text x="22" y="121" font-family="Inter, sans-serif" font-size="15" fill="#e6edf3">EigenLayer AVS provides trust layer</text>
+
+    <circle cx="8" cy="148" r="4" fill="#4ade80"/>
+    <text x="22" y="153" font-family="Inter, sans-serif" font-size="15" fill="#e6edf3">DeFi Summer meets ChatGPT — live now</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="570" width="1200" height="60" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="602" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#a78bfa">degen0x.com/learn/defai-guide-2026</text>
+  <text x="1140" y="602" text-anchor="end" font-family="Inter, sans-serif" font-size="14" fill="#6e7681">Free · No login</text>
+</svg>

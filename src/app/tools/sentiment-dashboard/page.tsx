@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
 
 interface SentimentData {
   overall: number;
@@ -151,13 +152,13 @@ export default function SentimentDashboard() {
       `}</style>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
-        <nav className="text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:text-blue-400">Home</Link>
-          <span className="mx-2">/</span>
-          <Link href="/tools" className="hover:text-blue-400">Tools</Link>
-          <span className="mx-2">/</span>
-          <span className="text-gray-300">Sentiment Dashboard</span>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Tools", href: "/tools" },
+            { label: "Sentiment Dashboard" },
+          ]}
+        />
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
           <div>
@@ -192,13 +193,13 @@ export default function SentimentDashboard() {
             <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Market Mood</h3>
             <div className="space-y-4 mt-6">
               {[
-                { label: 'Bullish', value: data.marketMood.bullish, color: 'green' },
-                { label: 'Neutral', value: data.marketMood.neutral, color: 'gray' },
-                { label: 'Bearish', value: data.marketMood.bearish, color: 'red' },
+                { label: 'Bullish', value: data.marketMood.bullish, color: '#22c55e' },
+                { label: 'Neutral', value: data.marketMood.neutral, color: '#6b7280' },
+                { label: 'Bearish', value: data.marketMood.bearish, color: '#ef4444' },
               ].map(m => (
                 <div key={m.label}>
-                  <div className="flex justify-between text-sm mb-1"><span className={`text-${m.color}-400`}>{m.label}</span><span className={`text-${m.color}-400 font-bold`}>{m.value}%</span></div>
-                  <div className="h-3 bg-[#1e293b] rounded-full overflow-hidden"><div className="bar-fill h-full rounded-full" style={{ width: `${m.value}%`, background: m.color === 'green' ? '#22c55e' : m.color === 'red' ? '#ef4444' : '#6b7280' }} /></div>
+                  <div className="flex justify-between text-sm mb-1"><span style={{ color: m.color }}>{m.label}</span><span style={{ color: m.color }} className="font-bold">{m.value}%</span></div>
+                  <div className="h-3 bg-[#1e293b] rounded-full overflow-hidden"><div className="bar-fill h-full rounded-full" style={{ width: `${m.value}%`, background: m.color }} /></div>
                 </div>
               ))}
             </div>

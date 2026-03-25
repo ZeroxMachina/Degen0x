@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { X, Loader2, Check, AlertCircle } from "lucide-react";
 import {
@@ -56,6 +56,9 @@ export default function WalletAuthModal({
     error: null,
     selectedWallet: null,
   });
+  const [wcUri, setWcUri] = useState<string | null>(null);
+  const [wcQrDataUrl, setWcQrDataUrl] = useState<string | null>(null);
+  const wcProviderRef = useRef<any>(null);
 
   // Reset state when modal closes
   useEffect(() => {
@@ -176,14 +179,88 @@ export default function WalletAuthModal({
           return;
         }
 
-        // Special handling for different wallets
+        // WalletConnect v2 — uses UniversalProvider + QR code
         if (walletName === "walletconnect") {
-          // WalletConnect would need a separate provider initialization
-          setAuthState((prev) => ({
-            ...prev,
-            step: "error",
-            error: "WalletConnect requires additional setup",
-          }));
+          try {
+            // Disconnect any previous session
+            if (wcProviderRef.current) {
+              try { await wcProviderRef.current.disconnect(); } catch (_) {}
+              wcProviderRef.current = null;
+            }
+            setWcUri(null);
+            setWcQrDataUrl(null);
+
+            const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID;
+            if (!projectId) throw new Error("WalletConnect project ID not configured");
+
+            // Dynamically import to avoid SSR issues
+            const { UniversalProvider } = await import("@walletconnect/universal-provider");
+            const QRCode = (await import("qrcode")).default;
+
+            const provider = await UniversalProvider.init({
+              projectId,
+              metadata: {
+                name: "degen0x",
+                description: "Crypto tools, comparisons & education",
+                url: "https://degen0x.com",
+                icons: ["https://degen0x.com/icon.png"],
+              },
+            });
+            wcProviderRef.current = provider;
+
+            // Listen for URI display (triggers QR code)
+            provider.on("display_uri", async (uri: string) => {
+              setWcUri(uri);
+              try {
+                const dataUrl = await QRCode.toDataURL(uri, { width: 280, margin: 2, color: { dark: "#000", light: "#fff" } });
+                setWcQrDataUrl(dataUrl);
+              } catch (_) {}
+            });
+
+            // Connect to Ethereum mainnet
+            await provider.connect({
+              namespaces: {
+                eip155: {
+                  methods: ["eth_sendTransaction", "personal_sign", "eth_accounts"],
+                  chains: ["eip155:1"],
+                  events: ["chainChanged", "accountsChanged"],
+                },
+              },
+            });
+
+            // Get accounts after connection
+            const accounts: string[] = await provider.request({ method: "eth_accounts" }, "eip155:1");
+            if (!accounts || accounts.length === 0) throw new Error("No accounts returned from WalletConnect");
+
+            const address = accounts[0];
+            setWcUri(null);
+            setWcQrDataUrl(null);
+
+            // Move to signing step
+            setAuthState((prev) => ({ ...prev, step: "signing", address, blockchain: "ethereum" }));
+
+            const message = signAuthMessage(address);
+            const signature = await provider.request({ method: "personal_sign", params: [message, address] }, "eip155:1");
+            const isValid = verifySignature(address, message, signature as string);
+
+            if (isValid) {
+              setAuthState((prev) => ({ ...prev, step: "authenticated" }));
+              setTimeout(() => { onAuthenticated?.(address, "ethereum"); }, 500);
+            } else {
+              setAuthState((prev) => ({ ...prev, step: "error", error: "Signature verification failed" }));
+            }
+          } catch (wcError) {
+            const msg = wcError instanceof Error ? wcError.message : "WalletConnect failed";
+            setWcUri(null);
+            setWcQrDataUrl(null);
+            setAuthState((prev) => ({
+              ...prev,
+              step: "error",
+              error: msg.includes("User rejected") || msg.includes("user rejected")
+                ? "You cancelled the connection"
+                : msg,
+            }));
+          }
           return;
         }
 
@@ -278,6 +355,13 @@ export default function WalletAuthModal({
     if (authState.address) {
       disconnect();
     }
+    // Disconnect any pending WalletConnect session
+    if (wcProviderRef.current) {
+      try { wcProviderRef.current.disconnect(); } catch (_) {}
+      wcProviderRef.current = null;
+    }
+    setWcUri(null);
+    setWcQrDataUrl(null);
     onClose();
   }, [authState.address, disconnect, onClose]);
 
@@ -396,6 +480,25 @@ export default function WalletAuthModal({
                     </>
                   )}
                 </div>
+
+                {/* WalletConnect QR Code Panel */}
+                {wcQrDataUrl && (
+                  <div className="mt-6 flex flex-col items-center gap-3">
+                    <p className="text-sm text-gray-300 font-medium">Scan with your mobile wallet</p>
+                    <div className="p-3 bg-white rounded-xl inline-block shadow-lg">
+                      <img src={wcQrDataUrl} alt="WalletConnect QR Code" width={280} height={280} />
+                    </div>
+                    {wcUri && (
+                      <button
+                        onClick={() => { navigator.clipboard.writeText(wcUri); }}
+                        className="text-xs text-gray-400 hover:text-gray-200 transition-colors underline underline-offset-2"
+                      >
+                        Copy connection URI
+                      </button>
+                    )}
+                    <p className="text-xs text-gray-500">Waiting for wallet connection…</p>
+                  </div>
+                )}
 
                 {/* Status Message */}
                 {authState.step === "signing" && (

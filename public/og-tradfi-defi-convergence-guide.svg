@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1425"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="flowArrow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Subtle decorative circles -->
+  <circle cx="1000" cy="100" r="200" fill="#6366f1" opacity="0.03"/>
+  <circle cx="200" cy="550" r="160" fill="#06b6d4" opacity="0.03"/>
+  <circle cx="800" cy="500" r="130" fill="#d97706" opacity="0.02"/>
+
+  <!-- Logo area -->
+  <text x="60" y="60" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#818cf8" letter-spacing="0.05em">degen0x</text>
+  <text x="60" y="80" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">degen0x.com</text>
+
+  <!-- Category badges -->
+  <rect x="60" y="110" width="56" height="26" rx="6" fill="#6366f120" stroke="#6366f140" stroke-width="1"/>
+  <text x="88" y="128" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#818cf8" text-anchor="middle">DeFi</text>
+  <rect x="126" y="110" width="108" height="26" rx="6" fill="#06b6d420" stroke="#06b6d440" stroke-width="1"/>
+  <text x="180" y="128" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#06b6d4" text-anchor="middle">Intermediate</text>
+
+  <!-- Title -->
+  <text x="60" y="190" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="800" fill="url(#titleGrad)">TradFi-DeFi Convergence</text>
+  <text x="60" y="240" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="800" fill="url(#titleGrad)">2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="280" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#8b949e">How institutions are going on-chain — and what it means for crypto</text>
+
+  <!-- Key stats row -->
+  <rect x="60" y="310" width="180" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="80" y="338" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">Tokenized RWAs</text>
+  <text x="80" y="374" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#3fb950">$50B+</text>
+
+  <rect x="255" y="310" width="180" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="275" y="338" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">JPMorgan Daily On-Chain</text>
+  <text x="275" y="374" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#06b6d4">$1B/day</text>
+
+  <rect x="450" y="310" width="180" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="470" y="338" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">BlackRock BUIDL</text>
+  <text x="470" y="374" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#f59e0b">$1.3B</text>
+
+  <!-- Convergence flow diagram (right side) -->
+  <rect x="690" y="110" width="460" height="310" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="920" y="142" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" text-anchor="middle" letter-spacing="0.1em">CONVERGENCE FLOW</text>
+
+  <!-- TradFi box -->
+  <rect x="720" y="165" width="150" height="70" rx="10" fill="rgba(99,102,241,0.1)" stroke="#6366f140" stroke-width="1"/>
+  <text x="795" y="195" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#818cf8" text-anchor="middle">TradFi</text>
+  <text x="795" y="215" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Capital + Regulation</text>
+
+  <!-- DeFi box -->
+  <rect x="980" y="165" width="150" height="70" rx="10" fill="rgba(6,182,212,0.1)" stroke="#06b6d440" stroke-width="1"/>
+  <text x="1055" y="195" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#06b6d4" text-anchor="middle">DeFi</text>
+  <text x="1055" y="215" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Infrastructure + 24/7</text>
+
+  <!-- Arrow between -->
+  <line x1="875" y1="200" x2="975" y2="200" stroke="url(#flowArrow)" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="975,195 985,200 975,205" fill="#06b6d4"/>
+  <line x1="975" y1="200" x2="875" y2="200" stroke="url(#flowArrow)" stroke-width="0" />
+  <polygon points="875,195 865,200 875,205" fill="#6366f1"/>
+
+  <!-- Merge into OnFi -->
+  <line x1="795" y1="240" x2="795" y2="270" stroke="#6366f140" stroke-width="1.5"/>
+  <line x1="1055" y1="240" x2="1055" y2="270" stroke="#06b6d440" stroke-width="1.5"/>
+  <line x1="795" y1="270" x2="1055" y2="270" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <line x1="925" y1="270" x2="925" y2="295" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+
+  <!-- OnFi result box -->
+  <rect x="830" y="295" width="190" height="55" rx="10" fill="rgba(217,119,6,0.08)" stroke="#d9770640" stroke-width="1"/>
+  <text x="925" y="320" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#f59e0b" text-anchor="middle">On-Chain Finance</text>
+  <text x="925" y="338" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Faster · Cheaper · Transparent</text>
+
+  <!-- Output nodes -->
+  <line x1="870" y1="355" x2="780" y2="380" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="925" y1="355" x2="925" y2="380" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="980" y1="355" x2="1070" y2="380" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <rect x="720" y="380" width="120" height="28" rx="6" fill="rgba(34,197,94,0.1)" stroke="#22c55e40" stroke-width="1"/>
+  <text x="780" y="399" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#3fb950" text-anchor="middle">Tokenized RWAs</text>
+
+  <rect x="865" y="380" width="120" height="28" rx="6" fill="rgba(34,197,94,0.1)" stroke="#22c55e40" stroke-width="1"/>
+  <text x="925" y="399" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#3fb950" text-anchor="middle">KYC DeFi Pools</text>
+
+  <rect x="1010" y="380" width="120" height="28" rx="6" fill="rgba(34,197,94,0.1)" stroke="#22c55e40" stroke-width="1"/>
+  <text x="1070" y="399" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#3fb950" text-anchor="middle">Stablecoin Rails</text>
+
+  <!-- Institution pills -->
+  <rect x="60" y="430" width="110" height="32" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="115" y="451" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#e6edf3" text-anchor="middle">🏦 JPMorgan</text>
+
+  <rect x="185" y="430" width="110" height="32" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="240" y="451" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#e6edf3" text-anchor="middle">⬛ BlackRock</text>
+
+  <rect x="310" y="430" width="130" height="32" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="375" y="451" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#e6edf3" text-anchor="middle">📊 Goldman Sachs</text>
+
+  <rect x="455" y="430" width="80" height="32" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="495" y="451" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#e6edf3" text-anchor="middle">🔵 Citi</text>
+
+  <!-- Topics row -->
+  <text x="60" y="500" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Covers: Tokenized RWAs · Institutional players · Permissioned DeFi · Investment opportunities · Bull/bear analysis</text>
+
+  <!-- Bottom branding -->
+  <rect x="0" y="586" width="1200" height="44" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="614" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8">degen0x.com</text>
+  <text x="1140" y="614" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">Updated March 2026</text>
+</svg>

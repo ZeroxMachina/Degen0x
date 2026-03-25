@@ -1,0 +1,50 @@
+import { Metadata } from "next";
+import HyperliquidClient from "./HyperliquidClient";
+
+export const metadata: Metadata = {
+  title: "Hyperliquid: The #1 Perp DEX Guide 2026 — $2.9T Volume, 70% Market Share | degen0x",
+  description:
+    "Complete guide to Hyperliquid — the dominant perpetual futures DEX with $2.9T cumulative volume, 1.4M users, and 70%+ perp DEX market share. HYPE tokenomics, fees, risks, and how to trade.",
+  keywords: [
+    "hyperliquid",
+    "hyperliquid guide",
+    "perp dex",
+    "perpetual futures dex",
+    "HYPE token",
+    "hyperliquid review",
+    "decentralized perpetuals",
+    "hyperliquid fees",
+    "hyperliquid l1",
+    "best perp dex 2026",
+  ],
+  openGraph: {
+    title: "Hyperliquid: The #1 Perp DEX Guide 2026",
+    description:
+      "Complete guide to Hyperliquid — the dominant perpetual futures DEX. $2.9T cumulative volume, 1.4M users, 70%+ market share.",
+    type: "article",
+    url: "https://degen0x.com/ecosystem/hyperliquid",
+    publishedTime: "2026-03-17T00:00:00Z",
+    modifiedTime: "2026-03-17T00:00:00Z",
+    images: [
+      {
+        url: "https://degen0x.com/api/og?title=Hyperliquid:+The+%231+Perp+DEX+Guide+2026&category=Ecosystem&type=page",
+        width: 1200,
+        height: 630,
+        alt: "Hyperliquid Guide on degen0x",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hyperliquid: The #1 Perp DEX Guide 2026 | degen0x",
+    description:
+      "$2.9T volume, 1.4M users, 70% perp DEX market share. Zero VC funding. Complete guide inside.",
+    images: [
+      "https://degen0x.com/api/og?title=Hyperliquid:+The+%231+Perp+DEX+Guide+2026&category=Ecosystem&type=page",
+    ],
+  },
+};
+
+export default function HyperliquidPage() {
+  return <HyperliquidClient />;
+}

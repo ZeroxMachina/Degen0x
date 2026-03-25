@@ -236,6 +236,9 @@ export default function RiskScoreClient() {
           <p style={{ color: '#8b949e' }} className="text-lg">
             Analyze your crypto portfolio with comprehensive risk metrics
           </p>
+          <p style={{ color: '#8b949e', opacity: 0.6 }} className="text-xs mt-2">
+            Risk model uses volatility, concentration (Herfindahl index), sector correlation &amp; liquidity estimates &bull; Not financial advice
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
@@ -305,8 +308,16 @@ export default function RiskScoreClient() {
                   <input
                     type="number"
                     value={allocationInput}
-                    onChange={(e) => setAllocationInput(e.target.value)}
+                    onChange={(e) => {
+                      const val = e.target.value;
+                      if (val === '' || (parseFloat(val) >= 0 && parseFloat(val) <= 100)) {
+                        setAllocationInput(val);
+                      }
+                    }}
                     placeholder="e.g., 25"
+                    min="1"
+                    max="100"
+                    aria-label="Token allocation percentage"
                     style={{
                       backgroundColor: '#0d1117',
                       borderColor: '#30363d',
@@ -374,6 +385,7 @@ export default function RiskScoreClient() {
                       onClick={() => handleRemoveToken(token.symbol)}
                       style={{ color: '#f85149' }}
                       className="p-1 hover:opacity-70 transition"
+                      aria-label={`Remove ${token.symbol} from portfolio`}
                     >
                       <Trash2 size={16} />
                     </button>
@@ -434,7 +446,7 @@ export default function RiskScoreClient() {
                 </h2>
 
                 <div className="flex items-center justify-center mb-6">
-                  <svg width="180" height="180" viewBox="0 0 180 180">
+                  <svg width="180" height="180" viewBox="0 0 180 180" role="img" aria-label={`Overall risk score: ${Math.round(riskMetrics.overallRisk)} out of 100 — ${getRiskLevel(riskMetrics.overallRisk)} risk`}>
                     {/* Background circle */}
                     <circle cx="90" cy="90" r="80" fill="none" stroke="#30363d" strokeWidth="12" />
                     {/* Progress circle */}

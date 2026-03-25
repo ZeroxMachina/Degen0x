@@ -1,0 +1,52 @@
+{
+  "date": "2026-03-25",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Created 7 OG images for recent pages missing them, fixed OG metadata references in 4 pages (dynamic API to static SVG), and applied UX refinements to the Institutional Crypto Adoption guide (semantic nav, XP badge, arrow consistency).",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Institutional Adoption page: Changed TOC from non-semantic <div> to <nav aria-label='Table of contents'> with proper <ul>/<li> structure for screen reader accessibility",
+          "Institutional Adoption page: Added missing '+250 XP' badge to header metadata line for consistency with other learn guides (e.g. Lido V3 stVaults)",
+          "Institutional Adoption page: Standardized TOC arrow placement (label arrow instead of arrow label) to match Lido V3 pattern",
+          "Institutional Adoption page: Removed emoji from TOC header for visual consistency with other guides",
+          "Identified MPC Wallets page as client component without server-exported metadata — flagged for future refactor to split into server page + client component",
+          "Both today's new pages (Lido V3, Institutional) verified: proper breadcrumbs, gradient hero titles, reading time, category badges, TOC, FAQ sections, internal links, BackToTop component"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: btc-yield-earning-strategies-guide-2026 (1200x630, orange/amber Bitcoin theme with yield bar chart)",
+          "OG image: bitcoin-safe-haven-guide-2026 (1200x630, gold theme with shield + BTC vs Gold comparison)",
+          "OG image: fully-onchain-gaming-autonomous-worlds-guide-2026 (1200x630, purple/green with game network nodes)",
+          "OG image: mpc-wallets-guide-2026 (1200x630, indigo/cyan with key shard distribution diagram)",
+          "OG image: staking-as-a-service-providers-guide-2026 (1200x630, cyan/green with staking node network)",
+          "OG image: btcfi-yield-strategies-guide-2026 (1200x630, orange/indigo with Bitcoin DeFi connections)",
+          "OG image: depin-earning-guide-2026 (1200x630, green/purple with IoT mesh network)"
+        ]
+      },
+      {
+        "title": "Metadata Fixes",
+        "items": [
+          "btc-yield-earning-strategies-guide-2026: Updated OG image from /api/og dynamic endpoint to static SVG (openGraph + twitter)",
+          "bitcoin-safe-haven-guide-2026: Updated OG image from /api/og dynamic endpoint to static SVG (openGraph + twitter)",
+          "btcfi-yield-strategies-guide-2026: Updated 3 OG image references from hardcoded api/og URL to static SVG",
+          "depin-earning-guide-2026: Updated 3 OG image references from hardcoded api/og URL to static SVG",
+          "Created alias copies for staking-service-providers and fully-onchain-gaming OG SVGs to match existing page metadata references"
+        ]
+      },
+      {
+        "title": "Notes for Future Cycles",
+        "items": [
+          "124 learn pages still missing dedicated OG images (using dynamic /api/og fallback or none)",
+          "MPC Wallets page (mpc-wallets-guide-2026) is a 'use client' component without exported Metadata — needs server/client split for proper SEO",
+          "Consider batch OG image generation script for remaining pages"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

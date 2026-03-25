@@ -1,0 +1,119 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1225"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="barFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="85%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="barClip">
+      <rect x="80" y="370" width="1040" height="28" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Decorative glow orbs -->
+  <circle cx="200" cy="150" r="180" fill="#4f46e5" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="1000" cy="480" r="150" fill="#22c55e" opacity="0.05" filter="url(#glow)"/>
+
+  <!-- Badge -->
+  <rect x="80" y="40" width="200" height="32" rx="16" fill="#22c55e" opacity="0.15"/>
+  <circle cx="98" cy="56" r="5" fill="#22c55e"/>
+  <text x="112" y="62" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#4ade80" letter-spacing="0.08em">INSTITUTIONAL SIGNAL</text>
+
+  <!-- Logo text -->
+  <text x="1080" y="62" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#6366f1" text-anchor="end">degen0x</text>
+
+  <!-- Title -->
+  <text x="80" y="130" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">BTC ETFs Absorbed $2.5B</text>
+  <text x="80" y="180" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" fill="url(#greenGrad)" letter-spacing="-0.02em">in March Alone</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="220" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#8b949e">2026 outflows nearly erased — institutions buying while retail panics</text>
+
+  <!-- Stat cards row -->
+  <!-- Card 1: March Inflows -->
+  <rect x="80" y="260" width="240" height="80" rx="16" fill="white" opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+  <text x="100" y="288" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e" letter-spacing="0.05em">MARCH INFLOWS</text>
+  <text x="100" y="322" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#22c55e">+$2.5B</text>
+
+  <!-- Card 2: YTD Net -->
+  <rect x="340" y="260" width="240" height="80" rx="16" fill="white" opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+  <text x="360" y="288" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e" letter-spacing="0.05em">2026 NET OUTFLOWS</text>
+  <text x="360" y="322" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#f59e0b">-$210M</text>
+
+  <!-- Card 3: ETF AUM -->
+  <rect x="600" y="260" width="240" height="80" rx="16" fill="white" opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+  <text x="620" y="288" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e" letter-spacing="0.05em">TOTAL ETF AUM</text>
+  <text x="620" y="322" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#e6edf3">$128B</text>
+
+  <!-- Card 4: Fear & Greed -->
+  <rect x="860" y="260" width="260" height="80" rx="16" fill="white" opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+  <text x="880" y="288" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e" letter-spacing="0.05em">FEAR &amp; GREED (47 DAYS)</text>
+  <text x="880" y="322" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#ef4444">8 — Extreme Fear</text>
+
+  <!-- Recovery progress bar -->
+  <text x="80" y="365" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e">2026 ETF RECOVERY PROGRESS</text>
+
+  <!-- Bar background -->
+  <rect x="80" y="378" width="1040" height="28" rx="14" fill="white" opacity="0.06"/>
+  <!-- Bar fill (92% recovered) -->
+  <g clip-path="url(#barClip)">
+    <rect x="80" y="370" width="957" height="28" rx="14" fill="url(#barFill)"/>
+  </g>
+  <!-- Bar label -->
+  <text x="1000" y="398" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#4ade80" text-anchor="end">92% Recovered</text>
+
+  <!-- Key buyers row -->
+  <text x="80" y="445" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" letter-spacing="0.05em">WHO'S BUYING DURING EXTREME FEAR</text>
+
+  <!-- Buyer chips -->
+  <rect x="80" y="460" width="145" height="36" rx="18" fill="#4f46e5" opacity="0.2"/>
+  <text x="110" y="483" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8">BlackRock</text>
+
+  <rect x="240" y="460" width="130" height="36" rx="18" fill="#4f46e5" opacity="0.2"/>
+  <text x="266" y="483" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8">Fidelity</text>
+
+  <rect x="385" y="460" width="155" height="36" rx="18" fill="#4f46e5" opacity="0.2"/>
+  <text x="411" y="483" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8">State Street</text>
+
+  <rect x="555" y="460" width="195" height="36" rx="18" fill="#f59e0b" opacity="0.2"/>
+  <text x="580" y="483" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#fbbf24">MicroStrategy</text>
+
+  <rect x="765" y="460" width="190" height="36" rx="18" fill="#22c55e" opacity="0.2"/>
+  <text x="790" y="483" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#4ade80">Bitmine (ETH)</text>
+
+  <!-- Insight bar -->
+  <rect x="80" y="520" width="1040" height="44" rx="12" fill="white" opacity="0.03" stroke="white" stroke-opacity="0.06"/>
+  <text x="100" y="547" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">When institutions accumulate during extreme fear, pay attention. Track the flows →</text>
+  <text x="780" y="547" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#6366f1">degen0x.com/learn/bitcoin-etf-guide</text>
+
+  <!-- Bottom bar -->
+  <rect y="600" width="1200" height="30" fill="white" opacity="0.02"/>
+  <text x="80" y="621" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#6366f1">degen0x.com</text>
+  <text x="1120" y="621" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">March 24, 2026</text>
+
+  <!-- Bottom accent bar -->
+  <rect y="626" width="1200" height="4" fill="url(#brandGrad)"/>
+</svg>

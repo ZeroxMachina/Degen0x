@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a0e1e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#060b18;stop-opacity:1" />
+    </linearGradient>
+    <!-- Brand accent gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5" />
+      <stop offset="50%" style="stop-color:#0891b2" />
+      <stop offset="100%" style="stop-color:#d97706" />
+    </linearGradient>
+    <!-- Title text gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a5b4fc" />
+      <stop offset="50%" style="stop-color:#67e8f9" />
+      <stop offset="100%" style="stop-color:#fcd34d" />
+    </linearGradient>
+    <!-- Green glow -->
+    <filter id="greenGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Card glow -->
+    <filter id="cardGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Ambient blob 1 -->
+    <radialGradient id="blob1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Ambient blob 2 -->
+    <radialGradient id="blob2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Amber blob -->
+    <radialGradient id="blob3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#d97706;stop-opacity:0.10"/>
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:0"/>
+    </radialGradient>
+    <!-- P&L chart green fill -->
+    <linearGradient id="chartGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0.04"/>
+    </linearGradient>
+    <!-- P&L chart red fill -->
+    <linearGradient id="chartRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.04"/>
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0.30"/>
+    </linearGradient>
+    <!-- Glass card -->
+    <filter id="glassShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="16" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Ambient glow blobs -->
+  <ellipse cx="180" cy="200" rx="320" ry="260" fill="url(#blob1)"/>
+  <ellipse cx="900" cy="420" rx="300" ry="240" fill="url(#blob2)"/>
+  <ellipse cx="1100" cy="120" rx="200" ry="180" fill="url(#blob3)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Subtle grid lines (background texture) -->
+  <g opacity="0.04" stroke="#6366f1" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- ===== LEFT PANEL — Text & Stats ===== -->
+
+  <!-- Badge: NEW GUIDE 2026 -->
+  <rect x="52" y="52" width="162" height="30" rx="15" fill="rgba(99,102,241,0.18)" stroke="rgba(99,102,241,0.45)" stroke-width="1"/>
+  <circle cx="72" cy="67" r="5" fill="#4ade80" filter="url(#greenGlow)"/>
+  <text x="84" y="72" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#a5b4fc" letter-spacing="0.08em">NEW GUIDE 2026</text>
+
+  <!-- Main Title -->
+  <text x="52" y="140" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="900" fill="url(#titleGrad)" letter-spacing="-0.02em">DeFi Options</text>
+  <text x="52" y="200" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="900" fill="url(#titleGrad)" letter-spacing="-0.02em">Trading Guide</text>
+
+  <!-- Subtitle -->
+  <text x="52" y="244" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#8b949e">On-chain options, Greeks, protocols &amp; P&amp;L calculator</text>
+
+  <!-- Divider line -->
+  <line x1="52" y1="272" x2="480" y2="272" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Stat chips row -->
+  <!-- Chip 1: Volume -->
+  <rect x="52" y="288" width="140" height="44" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1" filter="url(#glassShadow)"/>
+  <text x="72" y="307" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" letter-spacing="0.06em">VOLUME (YOY)</text>
+  <text x="72" y="324" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#22c55e">+1,000%</text>
+
+  <!-- Chip 2: Market share -->
+  <rect x="204" y="288" width="140" height="44" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1" filter="url(#glassShadow)"/>
+  <text x="224" y="307" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" letter-spacing="0.06em">DERIVE SHARE</text>
+  <text x="224" y="324" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#67e8f9">70%+</text>
+
+  <!-- Chip 3: DOV yield -->
+  <rect x="356" y="288" width="140" height="44" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" stroke-width="1" filter="url(#glassShadow)"/>
+  <text x="376" y="307" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" letter-spacing="0.06em">DOV YIELD APY</text>
+  <text x="376" y="324" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#fcd34d">5–20%</text>
+
+  <!-- Protocol comparison table (glass card) -->
+  <rect x="52" y="358" width="454" height="198" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#glassShadow)"/>
+
+  <!-- Table header -->
+  <text x="72" y="382" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" letter-spacing="0.08em">PROTOCOLS</text>
+  <text x="280" y="382" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" letter-spacing="0.08em">TYPE</text>
+  <text x="400" y="382" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" letter-spacing="0.08em">MONTHLY VOL</text>
+
+  <line x1="72" y1="390" x2="486" y2="390" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Row 1: Derive -->
+  <circle cx="80" cy="409" r="4" fill="#4ade80"/>
+  <text x="94" y="413" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">Derive</text>
+  <text x="280" y="413" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Order Book L2</text>
+  <text x="400" y="413" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#22c55e">$369M+</text>
+
+  <!-- Row 2: Premia -->
+  <circle cx="80" cy="437" r="4" fill="#4ade80"/>
+  <text x="94" y="441" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">Premia</text>
+  <text x="280" y="441" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Hybrid AMM</text>
+  <text x="400" y="441" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b949e">Mid-tier</text>
+
+  <!-- Row 3: Stryke/Dopex -->
+  <circle cx="80" cy="465" r="4" fill="#4ade80"/>
+  <text x="94" y="469" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">Stryke / Dopex</text>
+  <text x="280" y="469" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Conc. LP AMM</text>
+  <text x="400" y="469" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b949e">Arbitrum</text>
+
+  <!-- Row 4: Panoptic -->
+  <circle cx="80" cy="493" r="4" fill="#4ade80"/>
+  <text x="94" y="497" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">Panoptic</text>
+  <text x="280" y="497" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Perp Options</text>
+  <text x="400" y="497" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#a78bfa">Uniswap v4</text>
+
+  <line x1="72" y1="506" x2="486" y2="506" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="72" y="526" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">+ Interactive P&amp;L Calculator included →</text>
+
+  <!-- ===== RIGHT PANEL — P&L Chart Visual ===== -->
+  <!-- Chart container glass card -->
+  <rect x="556" y="44" width="596" height="520" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#glassShadow)"/>
+
+  <!-- Chart title -->
+  <text x="576" y="80" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" letter-spacing="0.06em">CALL OPTION — P&amp;L AT EXPIRY</text>
+  <text x="576" y="102" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">Strike: $3,200 · Premium: $120 · Contract: 1 ETH</text>
+
+  <!-- Chart area -->
+  <!-- X-axis label -->
+  <text x="576" y="480" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">ETH Price at Expiry →</text>
+
+  <!-- Y-axis labels -->
+  <text x="560" y="140" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="end">+$800</text>
+  <text x="560" y="220" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="end">+$400</text>
+  <text x="560" y="300" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="end">$0</text>
+  <text x="560" y="380" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="end">-$120</text>
+
+  <!-- Grid lines inside chart -->
+  <g stroke="rgba(255,255,255,0.06)" stroke-width="1">
+    <line x1="570" y1="135" x2="1130" y2="135"/>
+    <line x1="570" y1="215" x2="1130" y2="215"/>
+    <line x1="570" y1="295" x2="1130" y2="295"/>
+    <line x1="570" y1="375" x2="1130" y2="375"/>
+  </g>
+
+  <!-- X-axis price labels -->
+  <text x="586" y="464" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">$2,600</text>
+  <text x="710" y="464" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">$2,900</text>
+  <text x="834" y="464" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">$3,200</text>
+  <text x="960" y="464" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">$3,500</text>
+  <text x="1086" y="464" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">$3,800</text>
+
+  <!-- P&L curve shape:
+       Left of break-even ($3,320): flat at -$120 (premium lost) → y=375
+       Break-even at x=854 (approx $3,320): y=295 (zero line)
+       Right of break-even: rising profit line to $3,800 → ~+$480 (y≈135)
+       Use a piecewise path
+  -->
+
+  <!-- Red loss zone fill (below zero, left side) -->
+  <polygon points="576,375 854,375 854,295 576,295" fill="url(#chartRed)" opacity="0.8"/>
+
+  <!-- Green profit zone fill (above zero, right side) -->
+  <polygon points="854,295 1126,135 1126,295 854,295" fill="url(#chartGreen)" opacity="0.8"/>
+
+  <!-- The P&L line itself -->
+  <!-- Flat section: x=576 to x=854, y=375 (max loss = -$120) -->
+  <!-- Rising section: x=854 to x=1126, linear from y=295 (break-even) to y=110 (+$480) -->
+  <polyline
+    points="576,375 854,375 854,295 1126,110"
+    fill="none"
+    stroke="url(#brandGrad)"
+    stroke-width="3"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+
+  <!-- Break-even point marker -->
+  <circle cx="854" cy="295" r="6" fill="#f59e0b" stroke="#080d1c" stroke-width="2"/>
+  <!-- Break-even label -->
+  <rect x="864" y="278" width="90" height="22" rx="6" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.4)" stroke-width="1"/>
+  <text x="909" y="293" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#f59e0b" text-anchor="middle">Break-even</text>
+
+  <!-- Max profit point -->
+  <circle cx="1126" cy="110" r="6" fill="#22c55e" stroke="#080d1c" stroke-width="2"/>
+  <rect x="1036" y="94" width="82" height="22" rx="6" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.4)" stroke-width="1"/>
+  <text x="1077" y="109" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#22c55e" text-anchor="middle">+$480</text>
+
+  <!-- Max loss label -->
+  <rect x="576" y="380" width="90" height="22" rx="6" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.35)" stroke-width="1"/>
+  <text x="621" y="395" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#ef4444" text-anchor="middle">Max Loss: -$120</text>
+
+  <!-- Zero line (prominent) -->
+  <line x1="570" y1="295" x2="1130" y2="295" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Chart divider -->
+  <line x1="576" y1="500" x2="1130" y2="500" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Greeks summary strip -->
+  <text x="576" y="518" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" letter-spacing="0.06em">THE GREEKS</text>
+
+  <text x="680" y="518" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#a5b4fc">Δ Delta</text>
+  <text x="680" y="532" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">Price sensitivity</text>
+
+  <text x="790" y="518" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">Γ Gamma</text>
+  <text x="790" y="532" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">Delta acceleration</text>
+
+  <text x="920" y="518" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#fcd34d">Θ Theta</text>
+  <text x="920" y="532" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">Time decay</text>
+
+  <text x="1028" y="518" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#c084fc">ν Vega</text>
+  <text x="1028" y="532" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">IV sensitivity</text>
+
+  <!-- ===== Bottom bar ===== -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(255,255,255,0.025)" />
+  <line x1="0" y1="590" x2="1200" y2="590" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- degen0x logo circle (inline) -->
+  <circle cx="52" cy="610" r="12" fill="none" stroke="url(#brandGrad)" stroke-width="2"/>
+  <text x="52" y="615" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="800" fill="#a5b4fc" text-anchor="middle">0x</text>
+
+  <!-- URL -->
+  <text x="72" y="615" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">degen0x.com</text>
+  <text x="168" y="615" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">/learn/defi-options-trading-guide</text>
+
+  <!-- Right tagline -->
+  <text x="1148" y="615" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">Interactive P&amp;L calculator included</text>
+</svg>

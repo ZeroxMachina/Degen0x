@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0f1729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="heatScale" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b0000"/>
+      <stop offset="25%" stop-color="#ff4500"/>
+      <stop offset="50%" stop-color="#ffff00"/>
+      <stop offset="75%" stop-color="#32cd32"/>
+      <stop offset="100%" stop-color="#006400"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="4" fill="url(#accent)"/>
+
+  <circle cx="900" cy="200" r="160" fill="#6366f1" opacity="0.04"/>
+  <circle cx="200" cy="480" r="100" fill="#22c55e" opacity="0.03"/>
+
+  <text x="60" y="58" font-family="Inter, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#6366f1" letter-spacing="0.05em">degen0x</text>
+
+  <text x="60" y="200" font-family="Inter, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">Crypto Sentiment</text>
+  <text x="60" y="260" font-family="Inter, -apple-system, sans-serif" font-size="42" font-weight="800" fill="url(#accent)" letter-spacing="-0.02em">Heatmap</text>
+
+  <text x="60" y="310" font-family="Inter, -apple-system, sans-serif" font-size="20" fill="#8b949e">Visualize fear &amp; greed across 50+ tokens with interactive filtering</text>
+
+  <!-- Heatmap grid visual -->
+  <g transform="translate(700, 100)">
+    <rect x="0" y="0" width="60" height="60" rx="8" fill="#006400" opacity="0.85"/>
+    <text x="30" y="35" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">BTC</text>
+    <rect x="68" y="0" width="50" height="50" rx="8" fill="#32cd32" opacity="0.85"/>
+    <text x="93" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="white">ETH</text>
+    <rect x="126" y="0" width="45" height="45" rx="8" fill="#ff4500" opacity="0.85"/>
+    <text x="148" y="28" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="white">SOL</text>
+    <rect x="179" y="0" width="40" height="40" rx="8" fill="#ffff00" opacity="0.85"/>
+    <text x="199" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#333">XRP</text>
+
+    <rect x="0" y="68" width="50" height="50" rx="8" fill="#adff2f" opacity="0.85"/>
+    <text x="25" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#333">ADA</text>
+    <rect x="58" y="68" width="55" height="55" rx="8" fill="#8b0000" opacity="0.85"/>
+    <text x="85" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="white">DOGE</text>
+    <rect x="121" y="68" width="45" height="45" rx="8" fill="#228b22" opacity="0.85"/>
+    <text x="143" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="white">AVAX</text>
+    <rect x="174" y="68" width="48" height="48" rx="8" fill="#ffa500" opacity="0.85"/>
+    <text x="198" y="97" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="white">LINK</text>
+
+    <rect x="0" y="131" width="42" height="42" rx="8" fill="#dc143c" opacity="0.85"/>
+    <text x="21" y="157" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="white">UNI</text>
+    <rect x="50" y="131" width="48" height="48" rx="8" fill="#32cd32" opacity="0.85"/>
+    <text x="74" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="white">ARB</text>
+    <rect x="106" y="131" width="40" height="40" rx="8" fill="#006400" opacity="0.85"/>
+    <text x="126" y="156" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="white">OP</text>
+    <rect x="154" y="131" width="52" height="52" rx="8" fill="#ffff00" opacity="0.85"/>
+    <text x="180" y="162" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#333">AAVE</text>
+  </g>
+
+  <!-- Heat scale bar -->
+  <rect x="60" y="380" width="400" height="12" rx="6" fill="url(#heatScale)"/>
+  <text x="60" y="412" font-family="Inter, sans-serif" font-size="12" fill="#8b949e">Extreme Fear</text>
+  <text x="460" y="412" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#8b949e">Extreme Greed</text>
+
+  <!-- Stats card -->
+  <rect x="60" y="440" width="480" height="80" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <g transform="translate(90, 460)">
+    <text font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">TOKENS</text>
+    <text y="26" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#6366f1">50+</text>
+  </g>
+  <line x1="220" y1="455" x2="220" y2="505" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <g transform="translate(250, 460)">
+    <text font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">TIMEFRAMES</text>
+    <text y="26" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#06b6d4">4</text>
+  </g>
+  <line x1="380" y1="455" x2="380" y2="505" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <g transform="translate(410, 460)">
+    <text font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">FILTERS</text>
+    <text y="26" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#f59e0b">Chain + Cat</text>
+  </g>
+
+  <rect y="610" width="1200" height="20" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="624" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#6e7681">degen0x.com</text>
+  <text x="1140" y="624" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#6e7681">Free · No Sign-up Required</text>
+</svg>

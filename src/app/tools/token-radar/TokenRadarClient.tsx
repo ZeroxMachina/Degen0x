@@ -437,11 +437,14 @@ export default function TokenRadarClient() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <Rocket size={32} style={{ color: 'var(--purple)' }} />
+            <Rocket size={32} style={{ color: 'var(--purple)' }} aria-hidden="true" />
             <h1 className="text-4xl font-bold">Token Launch Radar</h1>
           </div>
           <p style={{ color: 'var(--text2)' }} className="text-lg">
             Track upcoming and trending token launches across all major chains
+          </p>
+          <p style={{ color: 'var(--text2)', opacity: 0.6 }} className="text-xs mt-2">
+            Data aggregated from on-chain sources &amp; social APIs &bull; Updated every 5 min &bull; Not financial advice
           </p>
         </div>
 
@@ -534,6 +537,7 @@ export default function TokenRadarClient() {
               placeholder="Search tokens by name or ticker..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              aria-label="Search tokens by name or ticker"
               style={{
                 backgroundColor: 'var(--surface)',
                 borderColor: 'var(--border)',
@@ -549,6 +553,7 @@ export default function TokenRadarClient() {
             <select
               value={selectedChain}
               onChange={(e) => setSelectedChain(e.target.value)}
+              aria-label="Filter by chain"
               style={{
                 backgroundColor: 'var(--surface)',
                 borderColor: 'var(--border)',
@@ -566,6 +571,7 @@ export default function TokenRadarClient() {
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
+              aria-label="Filter by category"
               style={{
                 backgroundColor: 'var(--surface)',
                 borderColor: 'var(--border)',
@@ -583,6 +589,7 @@ export default function TokenRadarClient() {
             <select
               value={riskLevel}
               onChange={(e) => setRiskLevel(e.target.value)}
+              aria-label="Filter by risk level"
               style={{
                 backgroundColor: 'var(--surface)',
                 borderColor: 'var(--border)',
@@ -600,6 +607,7 @@ export default function TokenRadarClient() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as SortType)}
+              aria-label="Sort tokens by"
               style={{
                 backgroundColor: 'var(--surface)',
                 borderColor: 'var(--border)',
@@ -616,8 +624,10 @@ export default function TokenRadarClient() {
         </div>
 
         <div
+          role="tablist"
+          aria-label="Token launch filter"
           style={{ borderColor: 'var(--border)' }}
-          className="border-b mb-6 flex gap-6"
+          className="border-b mb-6 flex gap-2 sm:gap-6 overflow-x-auto"
         >
           {[
             { id: 'launching', label: 'Launching Soon' },
@@ -626,10 +636,14 @@ export default function TokenRadarClient() {
           ].map((tab) => (
             <button
               key={tab.id}
+              role="tab"
+              aria-selected={activeTab === tab.id}
               onClick={() => setActiveTab(tab.id as TabType)}
               style={{
                 color: activeTab === tab.id ? 'var(--blue)' : 'var(--text2)',
                 borderBottomColor: activeTab === tab.id ? 'var(--blue)' : 'transparent',
+                minHeight: 44,
+                whiteSpace: 'nowrap',
               }}
               className="pb-3 border-b-2 font-semibold transition-colors"
             >
@@ -784,7 +798,9 @@ export default function TokenRadarClient() {
               }}
               className="border rounded-lg p-8 text-center"
             >
-              <p className="text-lg">No tokens found matching your filters</p>
+              <Search size={32} style={{ margin: '0 auto 12px', opacity: 0.5 }} />
+              <p className="text-lg mb-2">No tokens found matching your filters</p>
+              <p className="text-sm" style={{ opacity: 0.7 }}>Try broadening your search or adjusting filter criteria</p>
             </div>
           )}
         </div>

@@ -92,7 +92,7 @@ const getSentimentLabel = (sentiment: number): string => {
   return 'Extreme Greed';
 };
 
-// Tooltip component
+// Tooltip component — clamped to viewport bounds
 const TokenTooltip: React.FC<{
   token: CryptoToken | null;
   position: { x: number; y: number };
@@ -100,13 +100,21 @@ const TokenTooltip: React.FC<{
 }> = ({ token, position, visible }) => {
   if (!token || !visible) return null;
 
+  // Clamp tooltip position so it doesn't overflow the viewport
+  const tooltipWidth = 280;
+  const tooltipHeight = 240;
+  const padding = 12;
+  const clampedX = Math.min(position.x, (typeof window !== 'undefined' ? window.innerWidth : 1200) - tooltipWidth - padding);
+  const clampedY = Math.min(position.y, (typeof window !== 'undefined' ? window.innerHeight : 800) - tooltipHeight - padding);
+
   return (
     <div
-      className="fixed z-50 bg-[#161b22] border border-[#30363d] rounded-lg p-4 shadow-lg"
+      className="fixed z-50 bg-[#161b22] border border-[#30363d] rounded-lg p-4 shadow-lg pointer-events-none"
       style={{
-        left: `${position.x}px`,
-        top: `${position.y}px`,
+        left: `${Math.max(padding, clampedX)}px`,
+        top: `${Math.max(padding, clampedY)}px`,
         maxWidth: '280px',
+        boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
       }}
     >
       <div className="space-y-2">
@@ -190,6 +198,8 @@ const FearGreedGauge: React.FC<{ sentiment: number }> = ({ sentiment }) => {
           viewBox="0 0 200 100"
           className="w-full h-full"
           style={{ overflow: 'visible' }}
+          role="img"
+          aria-label={`Fear and Greed Index: ${sentiment.toFixed(0)} out of 100 — ${getSentimentLabel(sentiment)}`}
         >
           {/* Background arc */}
           <defs>
@@ -271,33 +281,59 @@ const MetricCard: React.FC<{
   </div>
 );
 
-// Filter Button
+// Filter Button — click-based for mobile/touch support
 const FilterButton: React.FC<{
   label: string;
   value: string;
   onChange: (value: string) => void;
   options: string[];
-}> = ({ label, value, onChange, options }) => (
-  <div className="relative group">
-    <button className="bg-[#161b22] border border-[#30363d] text-[#e6edf3] px-3 py-2 rounded-lg text-sm hover:bg-[#1f2937] transition-colors flex items-center gap-2">
-      {value}
-      <ChevronDown size={16} />
-    </button>
-    <div className="absolute hidden group-hover:block bg-[#161b22] border border-[#30363d] rounded-lg mt-1 z-40 min-w-max">
-      {options.map((option) => (
-        <button
-          key={option}
-          onClick={() => onChange(option)}
-          className={`block w-full text-left px-4 py-2 text-sm hover:bg-[#1f2937] first:rounded-t-lg last:rounded-b-lg ${
-            value === option ? 'text-[#58a6ff] font-bold' : 'text-[#e6edf3]'
-          }`}
-        >
-          {option}
-        </button>
-      ))}
+}> = ({ label, value, onChange, options }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const ref = React.useRef<HTMLDivElement>(null);
+
+  // Close on outside click
+  React.useEffect(() => {
+    if (!isOpen) return;
+    const handleClick = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [isOpen]);
+
+  return (
+    <div className="relative" ref={ref}>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        aria-label={`${label}: ${value}`}
+        className="bg-[#161b22] border border-[#30363d] text-[#e6edf3] px-3 py-2 rounded-lg text-sm hover:bg-[#1f2937] transition-colors flex items-center gap-2"
+        style={{ minHeight: 44 }}
+      >
+        {value}
+        <ChevronDown size={16} style={{ transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} />
+      </button>
+      {isOpen && (
+        <div className="absolute bg-[#161b22] border border-[#30363d] rounded-lg mt-1 z-40 min-w-max shadow-lg" style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}>
+          {options.map((option) => (
+            <button
+              key={option}
+              onClick={() => { onChange(option); setIsOpen(false); }}
+              className={`block w-full text-left px-4 py-2 text-sm hover:bg-[#1f2937] first:rounded-t-lg last:rounded-b-lg ${
+                value === option ? 'text-[#58a6ff] font-bold' : 'text-[#e6edf3]'
+              }`}
+              style={{ minHeight: 44 }}
+            >
+              {option}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
-  </div>
-);
+  );
+};
 
 // Main component
 export default function SentimentHeatmapClient() {
@@ -380,6 +416,9 @@ export default function SentimentHeatmapClient() {
           </div>
           <p className="text-[#8b949e]">
             Real-time market sentiment analysis across top cryptocurrency tokens
+          </p>
+          <p className="text-[#8b949e] text-xs mt-2" style={{ opacity: 0.6 }}>
+            Sentiment data via CoinGecko &amp; on-chain analytics &bull; Updated every 60s &bull; Not financial advice
           </p>
         </div>
 

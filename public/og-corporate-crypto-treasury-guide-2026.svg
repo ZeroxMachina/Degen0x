@@ -1,0 +1,115 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1527"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="btcGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7931a"/>
+      <stop offset="100%" stop-color="#f7931a" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="ethGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#627eea"/>
+      <stop offset="100%" stop-color="#627eea" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="150" r="180" fill="#f7931a" opacity="0.03"/>
+  <circle cx="1100" cy="400" r="140" fill="#627eea" opacity="0.03"/>
+  <circle cx="100" cy="550" r="100" fill="#6366f1" opacity="0.03"/>
+
+  <!-- Logo -->
+  <text x="60" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#8b949e">degen0x.com</text>
+
+  <!-- Category badges -->
+  <rect x="60" y="90" rx="12" ry="12" width="80" height="28" fill="#58a6ff" opacity="0.15"/>
+  <text x="100" y="109" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#58a6ff" text-anchor="middle">Investing</text>
+
+  <rect x="150" y="90" rx="12" ry="12" width="100" height="28" fill="#79c0ff" opacity="0.15"/>
+  <text x="200" y="109" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#79c0ff" text-anchor="middle">Institutional</text>
+
+  <!-- Title -->
+  <text x="60" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)">Corporate Crypto</text>
+  <text x="60" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)">Treasury Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="275" font-family="system-ui, sans-serif" font-size="18" fill="#8b949e">DATCos, NAV Premiums, and the $80.9B Corporate Bitcoin Market</text>
+
+  <!-- Treasury Holdings Chart -->
+  <g transform="translate(60, 310)">
+    <!-- Chart container -->
+    <rect x="0" y="0" rx="12" ry="12" width="480" height="220" fill="white" fill-opacity="0.03" stroke="white" stroke-opacity="0.06"/>
+
+    <text x="20" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e">Top Corporate BTC Holdings</text>
+
+    <!-- Strategy Inc bar -->
+    <text x="20" y="65" font-family="system-ui, sans-serif" font-size="12" fill="#e6edf3">Strategy Inc.</text>
+    <rect x="130" y="52" rx="3" ry="3" width="300" height="16" fill="url(#btcGrad)"/>
+    <text x="440" y="65" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#f7931a">761K BTC</text>
+
+    <!-- Marathon bar -->
+    <text x="20" y="100" font-family="system-ui, sans-serif" font-size="12" fill="#e6edf3">Marathon</text>
+    <rect x="130" y="87" rx="3" ry="3" width="60" height="16" fill="url(#btcGrad)"/>
+    <text x="200" y="100" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#f7931a">46K</text>
+
+    <!-- Riot bar -->
+    <text x="20" y="135" font-family="system-ui, sans-serif" font-size="12" fill="#e6edf3">Riot Platforms</text>
+    <rect x="130" y="122" rx="3" ry="3" width="35" height="16" fill="url(#btcGrad)"/>
+    <text x="175" y="135" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#f7931a">18K</text>
+
+    <!-- ETH section -->
+    <text x="20" y="170" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e">Top Corporate ETH Holdings</text>
+
+    <text x="20" y="200" font-family="system-ui, sans-serif" font-size="12" fill="#e6edf3">BitMine</text>
+    <rect x="130" y="187" rx="3" ry="3" width="280" height="16" fill="url(#ethGrad)"/>
+    <text x="420" y="200" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#627eea">4.66M ETH</text>
+  </g>
+
+  <!-- Stats cards right side -->
+  <g transform="translate(600, 310)">
+    <!-- Card: Total Market -->
+    <rect x="0" y="0" rx="12" ry="12" width="260" height="100" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+    <text x="20" y="30" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Corporate BTC Holdings</text>
+    <text x="20" y="65" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="#f7931a">$80.9B</text>
+    <text x="20" y="85" font-family="system-ui, sans-serif" font-size="12" fill="#6e7681">1,132,867 BTC by public companies</text>
+
+    <!-- Card: Companies -->
+    <rect x="280" y="0" rx="12" ry="12" width="260" height="100" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+    <text x="300" y="30" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Strategy Inc. Dominance</text>
+    <text x="300" y="65" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="#6366f1">65.2%</text>
+    <text x="300" y="85" font-family="system-ui, sans-serif" font-size="12" fill="#6e7681">761K BTC held by one company</text>
+
+    <!-- Card: Trend -->
+    <rect x="0" y="120" rx="12" ry="12" width="260" height="100" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+    <text x="20" y="150" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">ETH Treasury Market</text>
+    <text x="20" y="185" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="#627eea">$12.9B</text>
+    <text x="20" y="205" font-family="system-ui, sans-serif" font-size="12" fill="#6e7681">BitMine leads with 4.66M ETH</text>
+
+    <!-- Card: Outlook -->
+    <rect x="280" y="120" rx="12" ry="12" width="260" height="100" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+    <text x="300" y="150" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">2026 Trend</text>
+    <text x="300" y="185" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#d29922">Consolidation</text>
+    <text x="300" y="205" font-family="system-ui, sans-serif" font-size="12" fill="#6e7681">Pantera predicts "brutal pruning"</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="white" fill-opacity="0.03"/>
+  <text x="60" y="616" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b949e">degen0x.com/learn/corporate-crypto-treasury-guide-2026</text>
+  <text x="1140" y="616" font-family="system-ui, sans-serif" font-size="13" fill="#6e7681" text-anchor="end">March 2026</text>
+</svg>

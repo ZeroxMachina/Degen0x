@@ -1,0 +1,127 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f1729;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="saverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.05"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow2">
+      <feGaussianBlur stdDeviation="25" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad2)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accentGrad2)"/>
+
+  <!-- Decorative background: liquidation price line visualization -->
+  <circle cx="1000" cy="150" r="200" fill="#ef4444" opacity="0.03" filter="url(#softGlow2)"/>
+  <circle cx="150" cy="480" r="140" fill="#22c55e" opacity="0.03" filter="url(#softGlow2)"/>
+
+  <!-- Descending price line (representing liquidation risk) -->
+  <polyline points="60,180 200,170 350,200 500,190 650,250 750,300 830,340 900,380 1000,430 1100,470"
+    fill="none" stroke="#ef4444" stroke-width="2" opacity="0.15"/>
+  <!-- Protection line (saved by DeFi Saver) -->
+  <polyline points="650,250 700,245 750,240 800,250 850,260 900,255 950,250 1000,255 1100,260"
+    fill="none" stroke="#22c55e" stroke-width="2" opacity="0.2" stroke-dasharray="6,4"/>
+
+  <!-- Liquidation threshold horizontal line -->
+  <line x1="60" y1="430" x2="1140" y2="430" stroke="#ef4444" stroke-width="1" opacity="0.1" stroke-dasharray="8,8"/>
+  <text x="1140" y="425" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#ef4444" opacity="0.3" text-anchor="end">LIQUIDATION THRESHOLD</text>
+
+  <!-- Grid pattern -->
+  <g opacity="0.025">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#ef4444" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#ef4444" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#ef4444" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#ef4444" stroke-width="0.5"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="#ef4444" stroke-width="0.5"/>
+  </g>
+
+  <!-- NEW GUIDE badge (red/amber for urgency) -->
+  <rect x="60" y="55" width="140" height="32" rx="16" fill="url(#badgeGrad2)"/>
+  <text x="130" y="76" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">NEW GUIDE</text>
+
+  <!-- Title -->
+  <text x="60" y="148" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">DeFi Liquidation</text>
+  <text x="60" y="200" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Protection Guide</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="245" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#8b949e" font-weight="400">Smart vaults, AI agents, and the tools that saved $7.7M in one wave</text>
+
+  <!-- Stat boxes -->
+  <!-- Box 1: Savings -->
+  <rect x="60" y="285" width="230" height="90" rx="12" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="175" y="325" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#22c55e" text-anchor="middle" filter="url(#glow2)">$7.7M</text>
+  <text x="175" y="355" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">Saved in Feb 2026 Wave</text>
+
+  <!-- Box 2: Users Protected -->
+  <rect x="310" y="285" width="230" height="90" rx="12" fill="rgba(6,182,212,0.08)" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+  <text x="425" y="325" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#06b6d4" text-anchor="middle" filter="url(#glow2)">382 Users</text>
+  <text x="425" y="355" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">Protected by DeFi Saver</text>
+
+  <!-- Box 3: Savings Rate -->
+  <rect x="560" y="285" width="230" height="90" rx="12" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <text x="675" y="325" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#6366f1" text-anchor="middle" filter="url(#glow2)">91.6%</text>
+  <text x="675" y="355" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">Savings Rate</text>
+
+  <!-- Platform comparison chips -->
+  <g transform="translate(60, 410)">
+    <rect width="200" height="48" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="100" y="24" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="middle" dominant-baseline="central">Morpho</text>
+    <text x="100" y="42" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22c55e" text-anchor="middle">$5.8B TVL</text>
+  </g>
+  <g transform="translate(280, 410)">
+    <rect width="200" height="48" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="100" y="24" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="middle" dominant-baseline="central">Kamino</text>
+    <text x="100" y="42" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06b6d4" text-anchor="middle">$2.36B TVL</text>
+  </g>
+  <g transform="translate(500, 410)">
+    <rect width="200" height="48" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="100" y="24" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="middle" dominant-baseline="central">Pendle</text>
+    <text x="100" y="42" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b5cf6" text-anchor="middle">$3.5B TVL</text>
+  </g>
+
+  <!-- Warning icon decorative -->
+  <g transform="translate(1050, 100)" opacity="0.12">
+    <polygon points="0,-25 22,18 -22,18" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <text x="0" y="12" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#f59e0b" text-anchor="middle">!</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="560" width="1200" height="70" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="560" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- degen0x branding -->
+  <text x="60" y="602" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#6366f1" letter-spacing="-0.02em">degen</text>
+  <text x="138" y="602" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#8b949e" letter-spacing="-0.02em">0x</text>
+  <text x="170" y="602" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#6e7681">.com</text>
+
+  <!-- URL -->
+  <text x="1140" y="600" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="end">degen0x.com/learn/defi-liquidation-protection-guide-2026</text>
+</svg>

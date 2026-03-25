@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="55%" stop-color="#0d1029"/>
+      <stop offset="100%" stop-color="#080d1c"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="ethGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(99,102,241,0.12)"/>
+      <stop offset="100%" stop-color="rgba(99,102,241,0.04)"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(34,197,94,0.12)"/>
+      <stop offset="100%" stop-color="rgba(34,197,94,0.04)"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="rgba(0,0,0,0.5)"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="120" cy="500" r="300" fill="#4f46e5" opacity="0.05"/>
+  <circle cx="1100" cy="180" r="250" fill="#06b6d4" opacity="0.06"/>
+  <circle cx="600" cy="200" r="200" fill="#8b5cf6" opacity="0.04"/>
+
+  <!-- Top accent -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brand)"/>
+
+  <!-- Logo -->
+  <circle cx="56" cy="46" r="22" fill="url(#brand)" opacity="0.9"/>
+  <text x="56" y="53" font-family="Inter, system-ui, monospace" font-size="15" font-weight="900" fill="white" text-anchor="middle">0x</text>
+  <text x="88" y="52" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#e6edf3" letter-spacing="-0.02em">degen0x</text>
+
+  <!-- Countdown badge (top right) -->
+  <rect x="1010" y="22" width="170" height="48" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.4)" stroke-width="1"/>
+  <text x="1095" y="42" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#a78bfa" text-anchor="middle" letter-spacing="0.05em">PECTRA MAINNET</text>
+  <text x="1095" y="60" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800" fill="#c4b5fd" text-anchor="middle">~24 DAYS</text>
+
+  <!-- LEFT HALF — Title area -->
+  <!-- EIP label -->
+  <rect x="56" y="100" width="100" height="30" rx="8" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.5)" stroke-width="1"/>
+  <text x="106" y="121" font-family="Inter, system-ui, monospace" font-size="12" font-weight="700" fill="#818cf8" text-anchor="middle">EIP-7702</text>
+
+  <!-- Main title -->
+  <text x="56" y="195" font-family="Inter, system-ui, sans-serif" font-size="62" font-weight="900" fill="white" letter-spacing="-0.03em">Smart</text>
+  <text x="56" y="262" font-family="Inter, system-ui, sans-serif" font-size="62" font-weight="900" letter-spacing="-0.03em">
+    <tspan fill="url(#ethGrad)">Accounts</tspan>
+  </text>
+  <text x="56" y="320" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" fill="#8b949e" letter-spacing="-0.02em">are coming to Ethereum.</text>
+
+  <!-- Description -->
+  <text x="56" y="368" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#6e7681">Any wallet becomes a smart contract account.</text>
+  <text x="56" y="392" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#6e7681">Gas abstraction. Batched txns. One-click DeFi.</text>
+
+  <!-- Benefit pills row -->
+  <!-- Pill: Gas Abstraction -->
+  <rect x="56" y="418" width="166" height="34" rx="17" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.35)" stroke-width="1"/>
+  <text x="139" y="440" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#818cf8" text-anchor="middle">Gas Abstraction</text>
+  <!-- Pill: Batched Txns -->
+  <rect x="232" y="418" width="148" height="34" rx="17" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.35)" stroke-width="1"/>
+  <text x="306" y="440" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#22d3ee" text-anchor="middle">Batched Txns</text>
+  <!-- Pill: No Plugin -->
+  <rect x="390" y="418" width="150" height="34" rx="17" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.35)" stroke-width="1"/>
+  <text x="465" y="440" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#4ade80" text-anchor="middle">No New Wallet</text>
+
+  <!-- CTA / URL -->
+  <text x="56" y="560" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#6366f1">degen0x.com/learn/ethereum-pectra-upgrade-guide</text>
+
+  <!-- DIVIDER -->
+  <line x1="560" y1="90" x2="560" y2="560" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- RIGHT HALF — Before / After comparison -->
+  <text x="608" y="110" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#6e7681" letter-spacing="0.08em">HOW IT CHANGES DEFI</text>
+
+  <!-- BEFORE card -->
+  <rect x="600" y="126" width="270" height="250" rx="16" fill="url(#cardGrad1)" stroke="rgba(239,68,68,0.3)" stroke-width="1" filter="url(#shadow)"/>
+  <!-- Before header -->
+  <rect x="600" y="126" width="270" height="46" rx="16" fill="rgba(239,68,68,0.1)"/>
+  <rect x="600" y="152" width="270" height="20" fill="rgba(239,68,68,0.1)"/>
+  <text x="735" y="156" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle" letter-spacing="0.04em">BEFORE EIP-7702</text>
+
+  <!-- Before steps -->
+  <!-- Step 1 -->
+  <circle cx="626" cy="200" r="13" fill="rgba(239,68,68,0.2)" stroke="rgba(239,68,68,0.4)" stroke-width="1"/>
+  <text x="626" y="205" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#f87171" text-anchor="middle">1</text>
+  <text x="648" y="197" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Connect wallet</text>
+  <text x="648" y="212" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">+ gas fee</text>
+  <!-- Step 2 -->
+  <circle cx="626" cy="244" r="13" fill="rgba(239,68,68,0.2)" stroke="rgba(239,68,68,0.4)" stroke-width="1"/>
+  <text x="626" y="249" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#f87171" text-anchor="middle">2</text>
+  <text x="648" y="241" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Approve token</text>
+  <text x="648" y="256" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">+ gas fee</text>
+  <!-- Step 3 -->
+  <circle cx="626" cy="288" r="13" fill="rgba(239,68,68,0.2)" stroke="rgba(239,68,68,0.4)" stroke-width="1"/>
+  <text x="626" y="293" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#f87171" text-anchor="middle">3</text>
+  <text x="648" y="285" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Approve contract</text>
+  <text x="648" y="300" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">+ gas fee</text>
+  <!-- Step 4 -->
+  <circle cx="626" cy="332" r="13" fill="rgba(239,68,68,0.2)" stroke="rgba(239,68,68,0.4)" stroke-width="1"/>
+  <text x="626" y="337" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#f87171" text-anchor="middle">4</text>
+  <text x="648" y="329" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Swap</text>
+  <text x="648" y="344" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">+ gas fee</text>
+  <!-- Step 5 -->
+  <circle cx="626" cy="352" r="13" fill="rgba(239,68,68,0.2)" stroke="rgba(239,68,68,0.4)" stroke-width="1"/>
+  <text x="626" y="357" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#f87171" text-anchor="middle">5</text>
+  <text x="648" y="349" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Stake</text>
+  <text x="648" y="364" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">+ gas fee</text>
+
+  <!-- 5 txns label -->
+  <rect x="616" y="358" width="238" height="8" rx="0" fill="transparent"/>
+  <text x="735" y="376" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">5 transactions · 5 gas fees</text>
+
+  <!-- AFTER card -->
+  <rect x="910" y="126" width="270" height="250" rx="16" fill="url(#cardGrad2)" stroke="rgba(34,197,94,0.3)" stroke-width="1" filter="url(#shadow)"/>
+  <!-- After header -->
+  <rect x="910" y="126" width="270" height="46" rx="16" fill="rgba(34,197,94,0.1)"/>
+  <rect x="910" y="152" width="270" height="20" fill="rgba(34,197,94,0.1)"/>
+  <text x="1045" y="156" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle" letter-spacing="0.04em">AFTER EIP-7702</text>
+
+  <!-- After steps — just 1 -->
+  <circle cx="936" cy="215" r="18" fill="rgba(34,197,94,0.25)" stroke="rgba(34,197,94,0.5)" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="936" y="221" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="900" fill="#4ade80" text-anchor="middle">1</text>
+  <text x="962" y="211" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Connect wallet</text>
+
+  <!-- Vertical dotted to action -->
+  <line x1="936" y1="233" x2="936" y2="278" stroke="rgba(34,197,94,0.3)" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- One-click action box -->
+  <rect x="916" y="278" width="244" height="64" rx="12" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.4)" stroke-width="1.5"/>
+  <text x="1038" y="302" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="800" fill="#4ade80" text-anchor="middle">One Click ✓</text>
+  <text x="1038" y="324" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#86efac" text-anchor="middle">Approve + Swap + Stake</text>
+
+  <!-- Gas badge -->
+  <rect x="916" y="358" width="244" height="8" rx="0" fill="transparent"/>
+  <text x="1038" y="376" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">1 transaction · $0 gas to user</text>
+
+  <!-- Arrow between cards -->
+  <text x="893" y="256" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="900" fill="url(#brand)" text-anchor="middle">→</text>
+
+  <!-- Protocol adoption strip -->
+  <rect x="600" y="400" width="580" height="78" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="622" y="423" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" letter-spacing="0.06em">SHIPPING EIP-7702 SUPPORT</text>
+  <line x1="612" y1="430" x2="1168" y2="430" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <!-- Protocol names -->
+  <text x="636" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#818cf8">Uniswap</text>
+  <text x="720" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#30363d">·</text>
+  <text x="734" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#22d3ee">Coinbase SW</text>
+  <text x="844" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#30363d">·</text>
+  <text x="858" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#a78bfa">Biconomy</text>
+  <text x="940" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#30363d">·</text>
+  <text x="954" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#4ade80">Safe</text>
+  <text x="988" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#30363d">·</text>
+  <text x="1002" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#f59e0b">+ more</text>
+  <text x="636" y="474" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">Watch which protocols ship in the first 30 days after mainnet.</text>
+
+  <!-- Bottom bar -->
+  <line x1="0" y1="595" x2="1200" y2="595" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="56" y="618" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">The Bloomberg Terminal of crypto — for everyone</text>
+  <text x="1144" y="618" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#4f46e5" text-anchor="end">degen0x.com</text>
+</svg>

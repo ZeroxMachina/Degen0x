@@ -1,0 +1,89 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0f1729"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Decorative gradient orbs -->
+  <circle cx="950" cy="150" r="200" fill="#4f46e5" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="200" cy="500" r="150" fill="#22c55e" opacity="0.05" filter="url(#glow)"/>
+
+  <!-- Badge: REGULATORY MILESTONE -->
+  <rect x="60" y="50" width="280" height="36" rx="18" fill="#22c55e" opacity="0.15"/>
+  <text x="200" y="74" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#22c55e" text-anchor="middle" letter-spacing="1.5">REGULATORY MILESTONE</text>
+
+  <!-- Main Title -->
+  <text x="60" y="140" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">CLARITY Act: Stablecoin</text>
+  <text x="60" y="195" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Deal 99% Done</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="240" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">The most important crypto regulation since FIT21 is about to land</text>
+
+  <!-- Glass card: Key Terms -->
+  <rect x="60" y="280" width="520" height="200" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Banned: Passive Yield -->
+  <circle cx="90" cy="320" r="12" fill="#ef4444" opacity="0.2"/>
+  <text x="90" y="325" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#ef4444" text-anchor="middle">✕</text>
+  <text x="115" y="326" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600" fill="#e6edf3">Passive Stablecoin Yield</text>
+  <text x="115" y="348" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">Holding stablecoins for yield = banned</text>
+
+  <!-- Allowed: Activity Rewards -->
+  <circle cx="90" cy="390" r="12" fill="#22c55e" opacity="0.2"/>
+  <text x="90" y="395" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#22c55e" text-anchor="middle">✓</text>
+  <text x="115" y="396" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600" fill="#e6edf3">Activity-Based Rewards</text>
+  <text x="115" y="418" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">Payments, transfers, platform use = allowed</text>
+
+  <!-- Timeline -->
+  <text x="90" y="460" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#0891b2">TIMELINE</text>
+  <text x="175" y="460" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">Senate markup → late April  |  Must pass by early May</text>
+
+  <!-- Right side: stat boxes -->
+  <rect x="620" y="280" width="250" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="745" y="318" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#0891b2" text-anchor="middle">STABLECOIN SUPPLY</text>
+  <text x="745" y="352" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#e6edf3" text-anchor="middle">$312B ATH</text>
+
+  <rect x="620" y="385" width="250" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="745" y="423" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#22c55e" text-anchor="middle">DEAL STATUS</text>
+  <text x="745" y="457" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#22c55e" text-anchor="middle">99% Done</text>
+
+  <rect x="890" y="280" width="250" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1015" y="318" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#f59e0b" text-anchor="middle">FEAR &amp; GREED</text>
+  <text x="1015" y="352" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#f59e0b" text-anchor="middle">11 → 33</text>
+
+  <rect x="890" y="385" width="250" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1015" y="423" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b5cf6" text-anchor="middle">BTC PRICE</text>
+  <text x="1015" y="457" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#e6edf3" text-anchor="middle">$70,600</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="540" width="1200" height="90" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="540" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- degen0x branding -->
+  <text x="60" y="593" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="url(#brandGrad)">degen0x</text>
+  <text x="170" y="593" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#6e7681">.com/learn/crypto-regulations-2026</text>
+
+  <!-- Date -->
+  <text x="1140" y="593" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="end">March 24, 2026</text>
+</svg>

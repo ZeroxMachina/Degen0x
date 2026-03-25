@@ -1,0 +1,95 @@
+{
+  "date": "2026-03-16",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "EOD v14 cycle-close (Mar 16): Quiet cycle — no new commits in last 3h. PUBLISH_QUEUE grew to 3 items (intent-based-dex + restaking-avs added, smart-wallets still missing page.tsx). Build Bus-errors locally (VM OOM, non-blocking on Vercel via ignoreBuildErrors). TS errors static at 40 (structured-data.examples.ts). Rate limiter 0/6 — 10th consecutive cycle flagged, FOMC T-2. git index.lock persists. 103/361 published slugs missing page.tsx (~28.5%).",
+    "sections": [
+      {
+        "title": "QA Sweep",
+        "items": [
+          "No new commits since last cycle — no new pages or build fixes to verify this cycle.",
+          "PUBLISH_QUEUE: 3 items — /learn/smart-wallets-guide-2026 (MISSING page.tsx — persistent blocker), /learn/intent-based-dex-trading-guide (page.tsx present ✓), /learn/restaking-avs-ecosystem-guide-2026 (page.tsx present ✓). Queue grew from 2→3 via build-v12.",
+          "PUBLISHED_PAGES: 361 slugs extracted. 103 slugs (~28.5%) missing page.tsx — returning 404. Concentrated in /learn, /taxes, /wallets, /investing/best, /blog categories. Persistent carry-over from prior cycles.",
+          "TypeScript: 40 errors, all in src/lib/structured-data.examples.ts (JSX in .ts file). Unchanged from eod-v13. Fix: rename to .tsx. Non-blocking for Vercel builds (ignoreBuildErrors: true).",
+          "Local build: Bus error (core dumped) — VM memory constraint. Not indicative of Vercel build health; ignoreBuildErrors: true + --webpack flag in build script. Vercel builds with 8GB heap."
+        ]
+      },
+      {
+        "title": "QA Metrics",
+        "metrics": [
+          { "label": "Published slugs total", "value": "361", "pct": 90, "color": "#4ade80" },
+          { "label": "Slugs with page.tsx", "value": "258/361 (71.5%)", "pct": 71, "color": "#f59e0b" },
+          { "label": "PUBLISH_QUEUE integrity", "value": "2/3 have page.tsx", "pct": 67, "color": "#f59e0b" },
+          { "label": "TS errors (non-blocking)", "value": "40 (1 file)", "pct": 75, "color": "#f59e0b" },
+          { "label": "New regressions this cycle", "value": "0", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Data Pipeline Health",
+        "items": [
+          "/api/prices — CoinGecko /coins/markets, 60s in-memory TTL, s-maxage=60 stale-while-revalidate=120, stale cache fallback ✓",
+          "/api/fear-greed — alternative.me FNG, 600s in-memory TTL, s-maxage=600 stale-while-revalidate=1200, stale cache fallback (no hardcoded) ⚠",
+          "/api/trending — CoinGecko /search/trending, 300s in-memory TTL, s-maxage=300 stale-while-revalidate=600, stale cache fallback ⚠",
+          "/api/market-metrics — CoinGecko global + FNG aggregated, 60s TTL, Promise.allSettled, FULL hardcoded fallback ✓",
+          "/api/market-dominance — CoinGecko global, 300s in-memory TTL, s-maxage=300 stale-while-revalidate=600, FULL FALLBACK_DATA ✓",
+          "/api/defi-yields — DefiLlama via lib/defillama, HTTP cache only (no in-memory TTL), s-maxage=300, NO fallback data — returns 500 on error ⚠",
+          "PERSISTENT FLAG: checkRateLimit() from src/lib/rate-limiter.ts NOT applied to any of the 6 public API routes. 10th consecutive cycle flagged. FOMC is Wed Mar 18 (T-2) — traffic spike risk on unprotected endpoints."
+        ]
+      },
+      {
+        "title": "Data Pipeline Metrics",
+        "metrics": [
+          { "label": "API routes healthy (structural)", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "Routes with fallback data", "value": "5/6", "pct": 83, "color": "#f59e0b" },
+          { "label": "Routes with rate limiter", "value": "0/6", "pct": 0, "color": "#ef4444" },
+          { "label": "Cache TTL coverage", "value": "5/6 in-memory", "pct": 83, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "DevOps Status",
+        "items": [
+          "Vercel deployment: Last deploy triggered by publish-v7 (Sui + On-Chain Analytics promotion). No new commits this cycle — no new deploy needed.",
+          "Next.js 16.1.6 with --webpack flag. ignoreBuildErrors: true. No vercel.json (default Vercel config).",
+          "Local build Bus error is VM memory constraint, not a production issue. Vercel builds run with 8GB heap allocation.",
+          "Security headers configured: X-DNS-Prefetch-Control, X-Content-Type-Options, Referrer-Policy. Static assets immutable cache (31536000s).",
+          "Vercel trial ~5 days remaining (per standup-v15) — Jefe needs to add payment method before expiry.",
+          "git index.lock persists — blocking all commits. 427+ modified files stuck in working tree. This is the critical operational bottleneck."
+        ]
+      },
+      {
+        "title": "DevOps Metrics",
+        "metrics": [
+          { "label": "Latest deploy live", "value": "Yes (publish-v7)", "pct": 100, "color": "#4ade80" },
+          { "label": "Build config health", "value": "OK (ignoreBuildErrors)", "pct": 85, "color": "#4ade80" },
+          { "label": "git index.lock", "value": "BLOCKED", "pct": 0, "color": "#ef4444" },
+          { "label": "Vercel trial remaining", "value": "~5 days", "pct": 25, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Project Manager — Cycle Summary",
+        "items": [
+          "QUIET CYCLE — No new commits in the last 3 hours. All activity was in prior cycles today (build-v12, publish-v7, design-v11, community-v27).",
+          "SHIPPED TODAY (prior cycles): Smart Wallets + MEV Protection guides (build-v12), Sui + On-Chain Analytics promotions (publish-v7/Day 43b), OptionsPnL chart fix + WCAG focus-visible (design-v11), social campaigns through Mar 31 + FOMC templates (community-v27).",
+          "PUBLISH_QUEUE: 3 items. smart-wallets-guide-2026 still needs page.tsx. intent-based-dex-trading + restaking-avs-ecosystem ready to promote.",
+          "NEXT CYCLE PRIORITIES: (1) Remove git index.lock + commit pending changes [P0]; (2) Wire rate limiter to 6 API routes before FOMC Wed [P0]; (3) Create smart-wallets page.tsx + promote all 3 queue items [P1]; (4) Add Vercel payment method [P0-Jefe]."
+        ]
+      },
+      {
+        "title": "Blockers — Jefe Attention Required",
+        "items": [
+          "🔴 [P0] git index.lock — blocking ALL commits. 427+ modified files stuck. Multi-cycle persistent. Must rm .git/index.lock and carefully recommit.",
+          "🔴 [P0] Rate limiter: 0/6 public API routes protected. FOMC T-2 (Wed Mar 18). 10th consecutive cycle flagged.",
+          "🔴 [P0] Vercel trial ~5 days remaining — add payment method or service interruption risk.",
+          "🔴 [P1] smart-wallets-guide-2026 in PUBLISH_QUEUE but page.tsx MISSING — blocks promotion.",
+          "🟡 Staged next.config.ts drops output:'standalone' — needs review before commit.",
+          "🟡 Staged deletions: badges/page.tsx + courses routes — Jefe approval needed.",
+          "🟡 ~28.5% published slugs missing page.tsx (103 routes returning 404).",
+          "🟡 WalletConnect production Project ID — Jefe action required.",
+          "🟡 GitHub Actions secrets — blocks Playwright CI."
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

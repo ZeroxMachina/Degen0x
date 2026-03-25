@@ -1,0 +1,83 @@
+{
+  "date": "2026-03-24",
+  "block": "community",
+  "version": "v13",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v13 (Mar 24 late evening): Drafted 4 new tweets (#106-109) covering BTC ETF $2.5B March recovery, Bitmine $138M ETH accumulation, 47-day extreme fear history thread (5 parts), and tax-loss harvesting deadline; wrote newsletter v22 for Thu Mar 27 with institutional accumulation theme; created Discord/TG content drop announcement; built 2 branded SVG social cards (BTC ETF Recovery with progress bar + 47 Days Fear with historical comparison); content calendar v27 extends through Mar 29 with 12 scheduled posts.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #106: BTC ETFs absorbed $2.5B in March — 92% of 2026 outflows recovered, BlackRock/Fidelity/State Street buying while F&G at 8. CTA to bitcoin-etf-guide. Schedule: Wed Mar 25 11AM ET",
+          "Tweet #107: Bitmine Immersion bought 65,341 ETH (~$138M) in one week — building MAVAN validator network targeting $272M/yr staking income. CTA to staked-crypto-etfs-guide. Schedule: Wed Mar 25 3PM ET",
+          "Tweet #108: Thread (5 parts) — 47 Days of Extreme Fear: historical parallels (COVID 45d→+1200%, China ban 38d→ATH, FTX 42d→+400%), what's different (ETF AUM, MSTR, stablecoins, SEC clarity). CTA to fear-greed-timeline + DCA calculator. Schedule: Thu Mar 26 12PM ET",
+          "Tweet #109: Tax-loss harvesting window — 22 days until April 15 deadline, no wash sale rule for crypto in most jurisdictions. CTA to tax-loss-harvesting-guide. Schedule: Fri Mar 27 10AM ET",
+          "Newsletter v22: 'Institutions Are Buying the Fear' theme — market pulse (BTC $71,782, $2.5B ETF inflows, MSTR 762K, Bitmine $138M ETH), new on degen0x (DePIN, BTCFi, tokenized treasuries, 15+ guides), worth reading (47-day fear analysis, Nasdaq tokenized equities, tax harvesting), degen corner (stablecoin $304B dry powder thesis). Schedule: Thu Mar 27",
+          "Discord/TG content drop: 15+ new learn guides (DePIN earning, BTCFi yield, tokenized treasuries, L3 chains, MPC wallets) + funding rate tracker tool. Schedule: Wed Mar 25 evening",
+          "Content calendar v27: 12 posts scheduled Wed Mar 25 – Sat Mar 29 across Twitter, Discord/TG, and Email"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/learn/restaking-eigenlayer-guide", "value": "Peak — $20B TVR narrative + social amplification", "pct": 95, "color": "#4ade80" },
+          { "label": "/learn/tokenized-real-world-assets-guide", "value": "Surging — Nasdaq tokenized equities historic catalyst", "pct": 93, "color": "#22c55e" },
+          { "label": "/learn/sec-digital-commodities-classification-guide", "value": "Strong — sustained Motley Fool coverage", "pct": 91, "color": "#22c55e" },
+          { "label": "/tools/fear-greed-timeline", "value": "Peak — 47 days extreme fear, longest since FTX", "pct": 90, "color": "#f59e0b" },
+          { "label": "/learn/bitcoin-etf-guide", "value": "Surging — $2.5B March inflows, 92% recovered", "pct": 89, "color": "#22c55e" },
+          { "label": "/tools/whale-tracker", "value": "High — MicroStrategy 762K + Bitmine $138M narratives", "pct": 88, "color": "#f59e0b" },
+          { "label": "/learn/staked-crypto-etfs-guide-2026", "value": "Growing — BlackRock ETHB + Bitmine MAVAN", "pct": 86, "color": "#06b6d4" },
+          { "label": "/tools/dca-calculator", "value": "Evergreen — accumulation tool peak demand at F&G 8", "pct": 85, "color": "#4ade80" },
+          { "label": "/learn/stablecoins-guide", "value": "Growing — $304B ATH supply narrative", "pct": 82, "color": "#4ade80" },
+          { "label": "/learn/crypto-tax-loss-harvesting-guide-2026", "value": "Seasonal surge — 22 days to April 15 deadline", "pct": 80, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-btc-etf-recovery.svg — 1200x630 social card: INSTITUTIONAL SIGNAL badge with green indicator; title 'BTC ETFs Absorbed $2.5B in March Alone' with green gradient; 4 stat cards (March Inflows +$2.5B, 2026 Net Outflows -$210M, Total ETF AUM $128B, F&G 8 Extreme Fear Day 47); recovery progress bar at 92% with red-amber-green gradient; 5 buyer chips (BlackRock, Fidelity, State Street, MicroStrategy, Bitmine ETH); CTA to bitcoin-etf-guide. Saved to /public/social-btc-etf-recovery.svg",
+          "social-47-days-fear.svg — 1200x630 social card: EXTREME FEAR DAY 47 badge with pulsing red indicator; giant '47 Days' counter in fear gradient; 3 historical comparison cards (COVID 45d→+1200%, China ban 38d→ATH, FTX 42d→+400%); 4 'what's different' chips (ETF AUM $128B, MSTR 762K BTC, Stablecoins $304B ATH, SEC 16 Classified); CTA to fear-greed-timeline. Saved to /public/social-47-days-fear.svg"
+        ]
+      },
+      {
+        "title": "Growth Trajectory Pages",
+        "metrics": [
+          { "label": "Tokenized Real World Assets Guide", "value": "Expected surge — Nasdaq approval historic catalyst", "pct": 95, "color": "#4ade80" },
+          { "label": "Bitcoin ETF Guide", "value": "Surging — $2.5B March inflows dominating news", "pct": 93, "color": "#22c55e" },
+          { "label": "EigenLayer Restaking Guide", "value": "High — $20B TVR + social amplification", "pct": 92, "color": "#22c55e" },
+          { "label": "Tax-Loss Harvesting Guide 2026", "value": "Seasonal — 22 days to deadline window", "pct": 90, "color": "#f59e0b" },
+          { "label": "DePIN Earning Guide 2026", "value": "New — $3.5T projected market, practical tiers", "pct": 88, "color": "#8b5cf6" },
+          { "label": "BTCFi Yield Strategies Guide", "value": "New — 28x TVL growth, $8.6B narrative", "pct": 86, "color": "#f59e0b" },
+          { "label": "Staked Crypto ETFs Guide", "value": "+20% — BlackRock ETHB + Bitmine MAVAN", "pct": 85, "color": "#06b6d4" },
+          { "label": "Fear & Greed Timeline Tool", "value": "Peak — 47-day record streak engagement", "pct": 83, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Market Intelligence",
+        "items": [
+          "BTC: $71,782 (+4.9%) — relief rally extending, testing $72K resistance",
+          "ETH: $2,136 — stabilizing after +5% daily move; Bitmine bought 65,341 ETH ($138M)",
+          "SOL: ~$90 (+6.48%) — SDP launch week catalyst",
+          "Fear & Greed: 11 (Extreme Fear) — Day 47 consecutive, longest since FTX era",
+          "BTC ETFs: $2.5B March inflows, YTD outflows down to $210M, AUM $128B",
+          "MicroStrategy: 762,099 BTC ($57.69B) — more than any country except the US",
+          "Bitmine Immersion: acquired 65,341 ETH (~$138M) Mar 15-22, building MAVAN validator network",
+          "Nasdaq: tokenized equities approval — historic first for major exchange",
+          "Stablecoins: $304B ATH supply; Solana stablecoin supply $15.7B ATH",
+          "Geopolitics: Trump 5-day pause on Iran strikes — eased pressure, BTC rallied; oil $112 still elevated",
+          "Tax deadline: April 15 in 22 days — tax-loss harvesting window active",
+          "degen0x: 740+ published pages, queue cleared, 1,148 page.tsx locally"
+        ]
+      }
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"],
+    "files_created": [
+      "reports/community-drafts/2026-03-24-social-drafts-v11.md",
+      "reports/community-drafts/2026-03-24-social-card-btc-etf-recovery.svg",
+      "reports/community-drafts/2026-03-24-social-card-47-days-fear.svg",
+      "public/social-btc-etf-recovery.svg",
+      "public/social-47-days-fear.svg"
+    ]
+  }
+}

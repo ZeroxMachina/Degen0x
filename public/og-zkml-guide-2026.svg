@@ -1,0 +1,105 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1520"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="circleGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="circleGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="zkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="950" cy="180" r="200" fill="url(#circleGrad1)"/>
+  <circle cx="1050" cy="400" r="150" fill="url(#circleGrad2)"/>
+  <circle cx="150" cy="500" r="120" fill="url(#circleGrad1)"/>
+
+  <!-- ZK proof visualization - abstract circuit -->
+  <g opacity="0.15">
+    <rect x="850" y="120" width="280" height="180" rx="16" stroke="#6366f1" stroke-width="1.5" fill="url(#zkGrad)"/>
+    <!-- Neural network nodes -->
+    <circle cx="900" cy="170" r="8" fill="#6366f1"/>
+    <circle cx="900" cy="210" r="8" fill="#6366f1"/>
+    <circle cx="900" cy="250" r="8" fill="#6366f1"/>
+    <circle cx="990" cy="180" r="8" fill="#06b6d4"/>
+    <circle cx="990" cy="230" r="8" fill="#06b6d4"/>
+    <circle cx="1080" cy="205" r="10" fill="#22c55e"/>
+    <!-- Connections -->
+    <line x1="908" y1="170" x2="982" y2="180" stroke="#6366f1" stroke-width="1" opacity="0.6"/>
+    <line x1="908" y1="170" x2="982" y2="230" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
+    <line x1="908" y1="210" x2="982" y2="180" stroke="#6366f1" stroke-width="1" opacity="0.5"/>
+    <line x1="908" y1="210" x2="982" y2="230" stroke="#6366f1" stroke-width="1" opacity="0.6"/>
+    <line x1="908" y1="250" x2="982" y2="180" stroke="#6366f1" stroke-width="1" opacity="0.3"/>
+    <line x1="908" y1="250" x2="982" y2="230" stroke="#6366f1" stroke-width="1" opacity="0.5"/>
+    <line x1="998" y1="180" x2="1070" y2="205" stroke="#06b6d4" stroke-width="1.5" opacity="0.6"/>
+    <line x1="998" y1="230" x2="1070" y2="205" stroke="#06b6d4" stroke-width="1.5" opacity="0.6"/>
+    <!-- Lock icon on output -->
+    <rect x="1072" y="230" width="16" height="12" rx="2" stroke="#22c55e" stroke-width="1.2" fill="none"/>
+    <path d="M1076 230v-4a4 4 0 018 0v4" stroke="#22c55e" stroke-width="1.2" fill="none"/>
+    <!-- Labels -->
+    <text x="900" y="290" fill="#8b949e" font-size="11" font-family="Inter, system-ui, sans-serif" text-anchor="middle">Input</text>
+    <text x="990" y="275" fill="#8b949e" font-size="11" font-family="Inter, system-ui, sans-serif" text-anchor="middle">ML Model</text>
+    <text x="1080" y="270" fill="#8b949e" font-size="11" font-family="Inter, system-ui, sans-serif" text-anchor="middle">ZK Proof</text>
+  </g>
+
+  <!-- Logo area -->
+  <g transform="translate(60, 50)">
+    <circle cx="18" cy="18" r="18" fill="#6366f1" opacity="0.9"/>
+    <text x="18" y="24" fill="white" font-size="16" font-weight="700" font-family="Inter, system-ui, sans-serif" text-anchor="middle">0x</text>
+    <text x="48" y="24" fill="#e6edf3" font-size="18" font-weight="600" font-family="Inter, system-ui, sans-serif">degen0x</text>
+  </g>
+
+  <!-- Category badge -->
+  <rect x="60" y="180" width="50" height="24" rx="12" fill="#8b5cf6"/>
+  <text x="85" y="196" fill="white" font-size="11" font-weight="600" font-family="Inter, system-ui, sans-serif" text-anchor="middle">ZKP</text>
+  <rect x="120" y="180" width="36" height="24" rx="12" fill="#06b6d4"/>
+  <text x="138" y="196" fill="white" font-size="11" font-weight="600" font-family="Inter, system-ui, sans-serif" text-anchor="middle">AI</text>
+  <rect x="166" y="180" width="80" height="24" rx="12" fill="#f59e0b" opacity="0.9"/>
+  <text x="206" y="196" fill="#0d1117" font-size="11" font-weight="600" font-family="Inter, system-ui, sans-serif" text-anchor="middle">2026 Guide</text>
+
+  <!-- Title -->
+  <text x="60" y="270" fill="url(#titleGrad)" font-size="48" font-weight="800" font-family="Inter, system-ui, sans-serif" letter-spacing="-1">
+    ZKML Guide 2026
+  </text>
+  <text x="60" y="330" fill="#e6edf3" font-size="38" font-weight="700" font-family="Inter, system-ui, sans-serif" letter-spacing="-0.5">
+    Zero-Knowledge
+  </text>
+  <text x="60" y="380" fill="#e6edf3" font-size="38" font-weight="700" font-family="Inter, system-ui, sans-serif" letter-spacing="-0.5">
+    Machine Learning
+  </text>
+
+  <!-- Subtitle -->
+  <text x="60" y="430" fill="#8b949e" font-size="18" font-family="Inter, system-ui, sans-serif">
+    Private AI inference, verifiable computation &amp; the future of onchain ML
+  </text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="#0a0f1f"/>
+  <text x="60" y="616" fill="#6e7681" font-size="15" font-family="Inter, system-ui, sans-serif">degen0x.com</text>
+  <text x="1140" y="616" fill="#6e7681" font-size="14" font-family="Inter, system-ui, sans-serif" text-anchor="end">March 2026</text>
+</svg>

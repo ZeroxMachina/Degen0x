@@ -1,0 +1,52 @@
+{
+  "date": "2026-03-17",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audit of 2 PUBLISH_QUEUE pages and 6 recently published pages; added BackToTop navigation to both queued pages, fixed accessibility font sizes on Hyperliquid, and corrected FAQ structured data syntax.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Added BackToTop component to /ecosystem/hyperliquid (HyperliquidClient.tsx) for long-scroll navigation",
+          "Added BackToTop component to /learn/crypto-oracles-guide-2026 for long-scroll navigation",
+          "Fixed stat card label font sizes from 11px to 12px on Hyperliquid page (accessibility compliance)",
+          "Fixed badge/tag font sizes from 11px to 12px on Hyperliquid page header badges",
+          "Corrected FAQ structured data bracket notation from computed property keys to standard property keys on Hyperliquid page"
+        ]
+      },
+      {
+        "title": "UX Audit Findings (No Action Needed)",
+        "items": [
+          "Crypto Oracles Guide: excellent Tailwind + CSS variables usage, proper Breadcrumb and StructuredData components",
+          "Telegram Trading Bots Guide: well-structured with proper metadata, OG images, stat cards, semantic HTML",
+          "Hyperliquid Trading Guide and FOMC Fed Rate Guide: standard layout patterns followed",
+          "Ecosystem pages (Virtuals Protocol, Curve, Compound): dynamic routing + API OG images working correctly"
+        ]
+      },
+      {
+        "title": "OG Image Status",
+        "items": [
+          "All PUBLISH_QUEUE pages have properly configured OG images via /api/og endpoint",
+          "Hyperliquid: /api/og?type=page (1200x630) — no ecosystem type available, page type used correctly",
+          "Oracles Guide: /api/og?type=learn (1200x630) — correct type for learn content",
+          "No new static OG images required — dynamic generation covers all current pages"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "PUBLISH_QUEUE: /ecosystem/hyperliquid (refined)",
+          "PUBLISH_QUEUE: /learn/crypto-oracles-guide-2026 (refined)",
+          "Published today: /learn/hyperliquid-trading-guide",
+          "Published today: /learn/fomc-fed-rate-crypto-guide",
+          "Published today: /learn/telegram-trading-bots-guide-2026",
+          "Published today: /ecosystem/virtuals-protocol",
+          "Published today: /ecosystem/curve",
+          "Published today: /ecosystem/compound"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

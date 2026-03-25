@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1520"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F7931A"/>
+      <stop offset="50%" stop-color="#4A90D9"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F7931A"/>
+      <stop offset="100%" stop-color="#4A90D9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="150" r="200" fill="#F7931A" opacity="0.03"/>
+  <circle cx="900" cy="400" r="140" fill="#4A90D9" opacity="0.03"/>
+  <circle cx="150" cy="520" r="80" fill="#7c3aed" opacity="0.02"/>
+
+  <!-- degen0x logo text -->
+  <text x="60" y="65" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700" fill="#6366f1" opacity="0.9">degen0x</text>
+
+  <!-- Category badges -->
+  <rect x="60" y="90" width="110" height="28" rx="6" fill="#F7931A" fill-opacity="0.12" stroke="#F7931A" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="72" y="109" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#F7931A">Bitcoin Core</text>
+
+  <rect x="180" y="90" width="95" height="28" rx="6" fill="#4A90D9" fill-opacity="0.12" stroke="#4A90D9" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="192" y="109" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#4A90D9">Advanced</text>
+
+  <rect x="285" y="90" width="115" height="28" rx="6" fill="#7c3aed" fill-opacity="0.12" stroke="#7c3aed" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="297" y="109" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#a78bfa">Programming</text>
+
+  <!-- Title -->
+  <text x="60" y="180" font-family="Inter, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.02em">Bitcoin Covenants &amp;</text>
+  <text x="60" y="235" font-family="Inter, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.02em">OP_CAT Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="280" font-family="Inter, sans-serif" font-size="18" fill="#8b949e">BIP-347: Making Bitcoin programmable with covenants, vaults &amp; trustless bridges</text>
+
+  <!-- Proposal pills -->
+  <g transform="translate(60, 310)">
+    <rect x="0" y="0" width="110" height="34" rx="8" fill="#F7931A" fill-opacity="0.15" stroke="#F7931A" stroke-opacity="0.4"/>
+    <text x="14" y="22" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#F7931A">OP_CAT</text>
+
+    <rect x="125" y="0" width="100" height="34" rx="8" fill="#4A90D9" fill-opacity="0.15" stroke="#4A90D9" stroke-opacity="0.4"/>
+    <text x="139" y="22" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#4A90D9">OP_CTV</text>
+
+    <rect x="240" y="0" width="90" height="34" rx="8" fill="#7c3aed" fill-opacity="0.15" stroke="#7c3aed" stroke-opacity="0.4"/>
+    <text x="258" y="22" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#a78bfa">CSFS</text>
+
+    <rect x="345" y="0" width="115" height="34" rx="8" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-opacity="0.4"/>
+    <text x="359" y="22" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#22c55e">LNHANCE</text>
+  </g>
+
+  <!-- Use case cards -->
+  <g transform="translate(60, 375)">
+    <rect x="0" y="0" width="185" height="75" rx="10" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+    <text x="18" y="28" font-family="Inter, sans-serif" font-size="20" fill="#F7931A">&#x1f512;</text>
+    <text x="48" y="28" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Bitcoin Vaults</text>
+    <text x="18" y="52" font-family="Inter, sans-serif" font-size="11" fill="#8b949e">Time-locked security</text>
+    <text x="18" y="66" font-family="Inter, sans-serif" font-size="11" fill="#8b949e">with cancel keys</text>
+
+    <rect x="200" y="0" width="185" height="75" rx="10" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+    <text x="218" y="28" font-family="Inter, sans-serif" font-size="20" fill="#4A90D9">&#x1f309;</text>
+    <text x="248" y="28" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Trustless Bridges</text>
+    <text x="218" y="52" font-family="Inter, sans-serif" font-size="11" fill="#8b949e">Cross-chain without</text>
+    <text x="218" y="66" font-family="Inter, sans-serif" font-size="11" fill="#8b949e">custodians</text>
+
+    <rect x="400" y="0" width="185" height="75" rx="10" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+    <text x="418" y="28" font-family="Inter, sans-serif" font-size="20" fill="#7c3aed">&#x1f504;</text>
+    <text x="448" y="28" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">DEX on Bitcoin</text>
+    <text x="418" y="52" font-family="Inter, sans-serif" font-size="11" fill="#8b949e">Native swap logic</text>
+    <text x="418" y="66" font-family="Inter, sans-serif" font-size="11" fill="#8b949e">via covenants</text>
+  </g>
+
+  <!-- Covenant flow diagram -->
+  <g transform="translate(780, 140)">
+    <!-- UTXO flow -->
+    <rect x="20" y="0" width="140" height="45" rx="10" fill="#F7931A" fill-opacity="0.15" stroke="#F7931A" stroke-opacity="0.4"/>
+    <text x="44" y="18" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#F7931A">UTXO Created</text>
+    <text x="44" y="34" font-family="Inter, sans-serif" font-size="10" fill="#8b949e">+ Covenant Rules</text>
+
+    <line x1="90" y1="45" x2="90" y2="70" stroke="#F7931A" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4"/>
+    <polygon points="85,65 95,65 90,72" fill="#F7931A" fill-opacity="0.4"/>
+
+    <rect x="20" y="72" width="140" height="45" rx="10" fill="#4A90D9" fill-opacity="0.15" stroke="#4A90D9" stroke-opacity="0.4"/>
+    <text x="35" y="90" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#4A90D9">OP_CAT Verifies</text>
+    <text x="35" y="106" font-family="Inter, sans-serif" font-size="10" fill="#8b949e">Introspection check</text>
+
+    <line x1="90" y1="117" x2="90" y2="142" stroke="#4A90D9" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4"/>
+    <polygon points="85,137 95,137 90,144" fill="#4A90D9" fill-opacity="0.4"/>
+
+    <rect x="20" y="144" width="140" height="45" rx="10" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-opacity="0.4"/>
+    <text x="35" y="162" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#22c55e">Spend Allowed</text>
+    <text x="35" y="178" font-family="Inter, sans-serif" font-size="10" fill="#8b949e">Rules satisfied</text>
+
+    <!-- X path -->
+    <rect x="200" y="144" width="140" height="45" rx="10" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444" stroke-opacity="0.4"/>
+    <text x="220" y="162" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#ef4444">Spend Blocked</text>
+    <text x="220" y="178" font-family="Inter, sans-serif" font-size="10" fill="#8b949e">Rules violated</text>
+
+    <line x1="160" y1="94" x2="270" y2="144" stroke="#ef4444" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="4"/>
+    <polygon points="265,139 275,139 270,146" fill="#ef4444" fill-opacity="0.4"/>
+
+    <text x="120" y="220" font-family="Inter, sans-serif" font-size="11" fill="#6e7681" text-anchor="middle">Covenant Enforcement Flow</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="610" width="1200" height="20" fill="#F7931A" fill-opacity="0.05"/>
+  <text x="60" y="575" font-family="Inter, sans-serif" font-size="14" fill="#6e7681">degen0x.com</text>
+  <text x="60" y="595" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">Updated March 2026</text>
+</svg>

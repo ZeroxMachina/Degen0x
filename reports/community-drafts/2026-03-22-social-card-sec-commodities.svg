@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accentGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="120" r="180" fill="#4f46e5" opacity="0.06"/>
+  <circle cx="150" cy="500" r="120" fill="#0891b2" opacity="0.05"/>
+  <circle cx="900" cy="480" r="100" fill="#d97706" opacity="0.04"/>
+
+  <!-- Logo area -->
+  <text x="60" y="60" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#6366f1" letter-spacing="0.05em">degen0x</text>
+
+  <!-- Badge -->
+  <rect x="60" y="80" width="200" height="32" rx="16" fill="#22c55e" opacity="0.15"/>
+  <text x="82" y="101" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#22c55e">REGULATORY CLARITY</text>
+
+  <!-- Main title -->
+  <text x="60" y="170" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">SEC Names 16 Crypto Assets</text>
+  <text x="60" y="225" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" fill="url(#accentGrad)" letter-spacing="-0.02em">Digital Commodities</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="270" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#8b949e">Joint SEC-CFTC interpretation · 5-category token taxonomy · March 17, 2026</text>
+
+  <!-- Token grid - Glass card -->
+  <rect x="60" y="300" width="1080" height="200" rx="16" fill="white" opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+
+  <!-- Token badges row 1 -->
+  <rect x="85" y="320" width="70" height="30" rx="8" fill="#6366f1" opacity="0.2"/>
+  <text x="120" y="340" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#a5b4fc" text-anchor="middle">BTC</text>
+
+  <rect x="170" y="320" width="70" height="30" rx="8" fill="#6366f1" opacity="0.2"/>
+  <text x="205" y="340" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#a5b4fc" text-anchor="middle">ETH</text>
+
+  <rect x="255" y="320" width="70" height="30" rx="8" fill="#6366f1" opacity="0.2"/>
+  <text x="290" y="340" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#a5b4fc" text-anchor="middle">SOL</text>
+
+  <rect x="340" y="320" width="70" height="30" rx="8" fill="#6366f1" opacity="0.2"/>
+  <text x="375" y="340" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#a5b4fc" text-anchor="middle">XRP</text>
+
+  <rect x="425" y="320" width="70" height="30" rx="8" fill="#6366f1" opacity="0.2"/>
+  <text x="460" y="340" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#a5b4fc" text-anchor="middle">ADA</text>
+
+  <rect x="510" y="320" width="75" height="30" rx="8" fill="#6366f1" opacity="0.2"/>
+  <text x="547" y="340" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#a5b4fc" text-anchor="middle">LINK</text>
+
+  <rect x="600" y="320" width="75" height="30" rx="8" fill="#6366f1" opacity="0.2"/>
+  <text x="637" y="340" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#a5b4fc" text-anchor="middle">AVAX</text>
+
+  <rect x="690" y="320" width="70" height="30" rx="8" fill="#6366f1" opacity="0.2"/>
+  <text x="725" y="340" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#a5b4fc" text-anchor="middle">DOT</text>
+
+  <!-- Token badges row 2 -->
+  <rect x="85" y="365" width="70" height="30" rx="8" fill="#0891b2" opacity="0.2"/>
+  <text x="120" y="385" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#67e8f9" text-anchor="middle">XLM</text>
+
+  <rect x="170" y="365" width="78" height="30" rx="8" fill="#0891b2" opacity="0.2"/>
+  <text x="209" y="385" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#67e8f9" text-anchor="middle">HBAR</text>
+
+  <rect x="263" y="365" width="70" height="30" rx="8" fill="#0891b2" opacity="0.2"/>
+  <text x="298" y="385" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#67e8f9" text-anchor="middle">LTC</text>
+
+  <rect x="348" y="365" width="78" height="30" rx="8" fill="#0891b2" opacity="0.2"/>
+  <text x="387" y="385" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#67e8f9" text-anchor="middle">DOGE</text>
+
+  <rect x="441" y="365" width="75" height="30" rx="8" fill="#0891b2" opacity="0.2"/>
+  <text x="478" y="385" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#67e8f9" text-anchor="middle">SHIB</text>
+
+  <rect x="531" y="365" width="70" height="30" rx="8" fill="#0891b2" opacity="0.2"/>
+  <text x="566" y="385" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#67e8f9" text-anchor="middle">XTZ</text>
+
+  <rect x="616" y="365" width="70" height="30" rx="8" fill="#0891b2" opacity="0.2"/>
+  <text x="651" y="385" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#67e8f9" text-anchor="middle">BCH</text>
+
+  <rect x="701" y="365" width="70" height="30" rx="8" fill="#0891b2" opacity="0.2"/>
+  <text x="736" y="385" font-family="Inter, monospace" font-size="14" font-weight="700" fill="#67e8f9" text-anchor="middle">APT</text>
+
+  <!-- Key facts -->
+  <text x="85" y="435" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#8b949e">Not Securities</text>
+  <text x="85" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">Staking · Mining · Airdrops</text>
+
+  <text x="350" y="435" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#8b949e">5 Categories</text>
+  <text x="350" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">Commodities · Collectibles · Tools · Stablecoins · Securities</text>
+
+  <text x="750" y="435" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#8b949e">68-Page Interpretation</text>
+  <text x="750" y="458" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">Joint SEC-CFTC binding document</text>
+
+  <!-- Large number accent -->
+  <text x="940" y="180" font-family="Inter, system-ui, sans-serif" font-size="120" font-weight="900" fill="url(#greenGrad)" opacity="0.15">16</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="520" width="1200" height="110" fill="white" opacity="0.02"/>
+  <text x="60" y="575" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#6366f1">degen0x.com/learn/sec-digital-commodities-classification-guide</text>
+  <text x="1140" y="575" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="end">March 2026</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accentGrad)"/>
+</svg>

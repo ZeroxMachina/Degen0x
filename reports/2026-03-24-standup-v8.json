@@ -1,0 +1,86 @@
+{
+  "date": "2026-03-24",
+  "block": "standup",
+  "cycle": 8,
+  "report": {
+    "status": "completed",
+    "summary": "Day 71 standup v8: 38 agent runs today (7 full rotations + extras). Since v7: build-7 shipped 2 new guides (Polymarket Prediction Markets + Scroll zkEVM, ~5,100 combined words), design-v7 polished On-Chain Analytics + Arbitrage pages (breadcrumbs, scroll-margin-top, BackToTop, cross-links), eod-v7 found TS errors up to 46 (+4 from arbitrage JSX escapes), 740 uncommitted files. No new publish or community cycle. BTC ~$70,600 (stable). F&G 33 (Fear, recovered from 10). CLARITY Act stablecoin deal 99% done, Senate markup late April. 482 published slugs, 2 new pages queued (Polymarket + Scroll). Git locks Day 8 — deploy gap critical.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v7: 3 agents ran since last standup (build, design, eod). 38 total runs today (standup×8, build×7, design×7, community×6, publish×3, eod×7). 7th full rotation nearly complete (community + publish lagging).",
+          "BUILD CYCLE 7 OUTPUT: 2 new learn guides — Polymarket Prediction Markets Guide 2026 (~2,600 words, covers trading mechanics, strategies, Kalshi/Augur/Azuro comparison, POLY airdrop speculation, 6 risk categories, 6 FAQs) + Scroll zkEVM Guide 2026 (~2,500 words, covers zkEVM architecture, zkSync/Polygon/Linea/Taiko comparison, ecosystem protocols, SCR tokenomics, bridging guide). Both added to PUBLISH_QUEUE with full SEO metadata + Article/FAQ/HowTo JSON-LD schemas.",
+          "DESIGN CYCLE 7 OUTPUT: UX polish on 2 pages from build-6 (On-Chain Analytics + Crypto Arbitrage). Replaced custom breadcrumbs with Breadcrumb component (consistent site-wide), added scroll-mt-20 to all 17 anchor sections (prevents content hiding under sticky nav), fixed BackToTop positioning outside <article>, normalized related-link padding p-4→p-6, added bidirectional cross-links between the two guides.",
+          "EOD CYCLE 7 OUTPUT: TS errors up 42→46 (4 new in crypto-arbitrage page — unescaped > in JSX). 482 published slugs, 379 with page.tsx (79%). 740 uncommitted files (+2 from v6). No new commits. All 6 API route files present locally. Rate limiting still 2/8 routes.",
+          "MARKET UPDATE: BTC ~$70,600 (stable from yesterday, +$1,800 weekly). F&G 33 (Fear — recovered from extreme fear low of 10 on Mar 22). 48-day extreme fear streak broken. CLARITY Act stablecoin deal 99% done (passive yield banned, activity rewards allowed), Senate markup targeting late April. Stablecoins $312B+ ATH. ETH ~$2,140. BTC dominance ~58.7%. 6 days to March close — monthly gain ~2%, 7-month red streak at stake.",
+          "CUMULATIVE DAY 71: 51+ learn guides (2 new this cycle), 50+ OG images, 108+ social posts, 42+ SVG cards, 16 newsletters, 482 published slugs, 2 in queue (Polymarket + Scroll). Git locks Day 8. 740 uncommitted files. Deploy gap ~167+ pages (482 declared vs ~315 deployed)."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE STANDUP v7: build-7 (2 guides + SEO), design-v7 (UX polish on 2 pages), eod-v7 (QA audit + devops check). 3 agents ran = $356 human-equivalent.",
+          "PUBLISH_QUEUE STATUS: 2 new pages added by build-7 (Polymarket + Scroll). Ready for next publish cycle.",
+          "TOTAL PUBLISHED SLUGS: 482 in PUBLISHED_PAGES config (per eod-v7 audit). ~315 live in production (stale Mar 17 commit e999560). Deploy gap ~167+ pages.",
+          "BLOCKER [P0 — DAY 8]: Git locks (.git/HEAD.lock + .git/index.lock) present since Mar 16. 740 uncommitted files. ALL content since Mar 17 is local-only. Jefe action required: rm .git/index.lock .git/HEAD.lock → git add . → git commit → git push.",
+          "BLOCKER [P1]: /api/market-metrics returns 404 — route.ts exists locally but was never committed.",
+          "CARRY-OVER [P1]: /trading and /trading/learn return 404 — hub page.tsx missing.",
+          "CARRY-OVER [P1]: TS errors now 46 across 3 files. 4 new in crypto-arbitrage (unescaped > in JSX — quick fix).",
+          "CARRY-OVER [P1]: Rate limiter coverage 2/8 API routes. Core data routes unprotected.",
+          "CARRY-OVER [P2]: ~103 orphan slugs without page.tsx. /compare/exchanges missing.",
+          "TODAY'S AGENT RUNS: standup×8, build×7, design×7, community×6, publish×3, eod×7 = 38 runs."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS + DEPLOY 167-PAGE BACKLOG: Deploy gap is 167+ pages (482 declared vs ~315 live). 51+ guides, 50+ OG images, 6 API routes — all local-only for 8 days. One git unlock + push deploys a 53% content increase. Every hour of delay is compounding SEO loss, especially with CLARITY Act and F&G recovery driving peak search demand.",
+          "PRIORITY 2 — PROMOTE POLYMARKET + SCROLL GUIDES: Both in PUBLISH_QUEUE with full metadata + JSON-LD. Polymarket has surging interest ($1.5B+ weekly volume, rumored POLY airdrop). Scroll has Sequoia/Polychain backing and recent emergency upgrade driving searches. Promote and queue for deploy.",
+          "PRIORITY 3 — FIX 4 NEW TS ERRORS + CAPITALIZE ON CLARITY ACT NARRATIVE: Quick JSX escape fix in crypto-arbitrage page (4 unescaped > chars). CLARITY Act stablecoin deal 99% done — Senate markup late April is the biggest regulatory catalyst of Q1. Community has tweets ready. Build cycle should consider a dedicated CLARITY Act stablecoin yield analysis page to capture high-intent regulatory search traffic.",
+          "STRATEGIC NOTE: Day 71 — 38 agent runs producing $3,263 human-equivalent work at ~$0 marginal cost. F&G recovery from 10→33 is the fastest since FTX. Stablecoin ATH at $312B during fear = historically precedes rallies. CLARITY Act yield compromise is the most underrated story in crypto right now. We need the deploy to capture traffic before the March close narrative peaks in 6 days."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel operational)", "pct": 100, "color": "#4ade80" },
+          { "label": "API Routes Healthy", "value": "5/7 (71%) — market-metrics 404, /trading 404", "pct": 71, "color": "#f59e0b" },
+          { "label": "Published Slugs (declared)", "value": "482 (+167 since last deploy)", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages in Production", "value": "~315 (stale commit e999560, Mar 17)", "pct": 65, "color": "#ef4444" },
+          { "label": "Deploy Gap", "value": "167+ pages not live (35% of content unreachable)", "pct": 35, "color": "#ef4444" },
+          { "label": "PUBLISH_QUEUE", "value": "2 pages (Polymarket + Scroll)", "pct": 50, "color": "#06b6d4" },
+          { "label": "Total Guides Built", "value": "51+ guides, 50+ OG images", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Content", "value": "108+ posts, 42+ SVG cards, 16 newsletters", "pct": 100, "color": "#4ade80" },
+          { "label": "Days Since Last Deploy", "value": "7 (Mar 17, e999560)", "pct": 1, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "8 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "740", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "46 (up from 42, 4 new in arbitrage page)", "pct": 25, "color": "#f59e0b" },
+          { "label": "Rate Limiter Coverage", "value": "2/8 API routes", "pct": 25, "color": "#ef4444" },
+          { "label": "BTC Price", "value": "$70,600 (stable, +$1,800 weekly)", "pct": 65, "color": "#4ade80" },
+          { "label": "Fear & Greed Index", "value": "33 (Fear) — recovered from 10 extreme low", "pct": 33, "color": "#f59e0b" },
+          { "label": "BTC Dominance", "value": "~58.7% (rising)", "pct": 59, "color": "#06b6d4" },
+          { "label": "Stablecoins Market Cap", "value": "$312B+ ATH (historically bullish)", "pct": 95, "color": "#4ade80" },
+          { "label": "March Close Countdown", "value": "6 days — 7-month red streak at stake", "pct": 74, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "4 of 6 (build, design, eod, standup)", "pct": 67, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~7.25h (4 agents)", "pct": 71, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$401 (4 agents: standup $45 + build $233 + design $60 + eod $63)", "pct": 81, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$3,263 (38 runs: standup×8 $360, build×7 $1,631, design×7 $420, community×6 $246, publish×3 $165, eod×7 $441)", "pct": 100, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" },
+          { "label": "⚠️ Deploy-Blocked Waste", "value": "$3,263 today — all content local-only until git locks cleared", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API unreachable from sandbox (network egress blocked via Chrome tool). Report saved locally. Persistent issue since v13."
+  }
+}

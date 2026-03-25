@@ -1,0 +1,60 @@
+{
+  "date": "2026-03-17",
+  "block": "community",
+  "version": "v12",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v12 (Mar 17): FOMC Day 1 — Fed meeting starts today, decision tomorrow 2PM ET; BTC at $73,700 on 8-day winning streak (+25% from Feb $60K bottom); market cap $2.65T (+3.6%); ETH +13% weekly on $1.3B March ETF inflows; 5 Twitter posts drafted (FOMC Day 1 explainer, BTC streak + sell-the-news pattern, ETH rebound + Pectra, AI tokens + Nvidia catalyst, market snapshot); Discord FOMC Day 1 briefing; newsletter FOMC recap template for Thursday; 1 social card created (FOMC Day 1 market rally with BTC chart, 3-scenario panel, dot plot explainer); posting schedule updated through Mar 22.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet 1 (Tue PM): FOMC Day 1 — meeting starts today, decision tomorrow 2PM ET; 98% hold probability; dot plot is the real catalyst (0 cuts = bearish, 1 = neutral, 2 = bullish); BTC $73,700; CTA to /learn/fomc-fed-rate-crypto-guide",
+          "Tweet 2 (Tue PM): BTC 8-day winning streak at $73,700, +25% from Feb $60K bottom — BUT BTC dropped after 7/8 FOMC meetings in 2025; sell-the-news pattern + 48h reversal; DCA entry angle; CTA to /tools/dca-calculator",
+          "Tweet 3 (Tue PM): ETH +13% weekly; $767M weekly ETF inflows; Pectra mainnet in 24 days; EIP-7702 smart accounts; CTA to /learn/ethereum-pectra-upgrade-guide",
+          "Tweet 4 (Tue PM): AI crypto tokens surging on Nvidia Jensen Huang $1T chip demand prediction; decentralized compute, AI agents on-chain, ZK ML verification; CTA to /learn/crypto-ai-intersection",
+          "Tweet 5 (Tue PM): Market snapshot — $2.65T cap (+3.6%), BTC $73,700, ETH +13%, SOL +9.7%, Fear & Greed 28, $1.3B March ETF inflows; dot plot question for tomorrow",
+          "Discord/Telegram (Tue PM): FOMC Day 1 briefing — decision timing, rate hold probability, dot plot explainer, market state, 2025 FOMC pattern warning, prep guide links (FOMC guide + DCA calc + stablecoin yield)",
+          "Newsletter template (Thu Mar 19): FOMC recap placeholder (fill post-decision) + market week review ($60K to $74.5K recovery, ETF inflows, fear index improvement); 8 new guides highlight section from v12 drafts carries forward"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/tools/dca-calculator", "value": "#1 Tool — FOMC dip-buying narrative + tax season dual urgency", "pct": 97, "color": "#4ade80" },
+          { "label": "/learn/fomc-fed-rate-crypto-guide", "value": "Peak relevance — FOMC Day 1, decision in 24h; dot plot focus", "pct": 96, "color": "#f59e0b" },
+          { "label": "/learn/ethereum-pectra-upgrade-guide", "value": "ETH +13% weekly + 24 days to Pectra mainnet + EIP-7702", "pct": 92, "color": "#8b5cf6" },
+          { "label": "/learn/crypto-ai-intersection", "value": "AI tokens surging on Nvidia $1T chip demand forecast", "pct": 88, "color": "#06b6d4" },
+          { "label": "/learn/stablecoin-yield-strategies-2026", "value": "FOMC hold = yield strategies stay relevant; risk-off positioning", "pct": 86, "color": "#22d3ee" },
+          { "label": "/learn/crypto-tax-guide-2026", "value": "29 days to April 15 — steady search intent", "pct": 85, "color": "#f59e0b" },
+          { "label": "/tools/bloomberg-screener", "value": "Sprint 58 live data integration — credibility unlock pending", "pct": 83, "color": "#06b6d4" },
+          { "label": "/learn/restaking-eigenlayer-guide", "value": "$20B+ TVR — social amplification started in v19", "pct": 80, "color": "#818cf8" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-fomc-day1-market-rally.svg — 1200x630 social card: dark theme with brand gradient top bar; LIVE indicator + date badge; FOMC Day 1 hero title; BTC $73,700 price card with 8-DAY STREAK green badge; ETH +13% card; mini BTC chart showing 8-day rally from $60K to $74.5K with FOMC marker line; right panel WHAT TO WATCH TOMORROW with 4 metric rows (rate decision 98% hold, dot plot scenarios, $1.3B ETF inflows, Fear and Greed 28); bottom 3-scenario panel (Bull: 2 cuts, Base: 1 cut vague, Bear: 0 cuts stagflation); footer with FOMC guide URL + Don't react. Prepare. tagline. Saved to /public/social-fomc-day1-market-rally.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "FOMC Day 1 (Mar 17): Fed meeting starts today, rate decision + dot plot + Powell presser tomorrow Mar 18 at 2PM ET. 98.1% probability of hold at 3.50-3.75%. Dot plot is the real market mover — currently showing 1 cut for 2026.",
+          "BTC at $73,700 on 8-day winning streak — +25% bounce from February $60K bottom. March up ~8%, potentially breaking 5-month losing streak. Key resistance at $75K-$76K.",
+          "ETH surged 13% weekly, leading altcoin recovery. $767M in weekly ETF inflows. $1.3B total March ETF inflows — first positive month since October.",
+          "Total crypto market cap: $2.65T (+3.6% today). Fear and Greed improved from 23 (Extreme Fear) to 28 (Fear). SOL +9.7%, XRP +11%.",
+          "AI crypto narrative surging: Jensen Huang at Nvidia predicted $1T chip demand through 2027 — AI tokens rallied. /learn/crypto-ai-intersection is timely and socially unamplified.",
+          "Historical FOMC pattern: BTC dropped after 7/8 meetings in 2025, then recovered within 48-72h. January 2026 FOMC: BTC dropped $90.4K to $83.4K within 48h. This pattern is the core of DCA calculator positioning.",
+          "Key risk: Powell must now address Iran conflict inflation impact + Trump 15% tariffs. CPI at 2.4% pre-Iran strikes. If stagflation flagged, bearish for risk assets.",
+          "Powell term ending May 15, 2026 — Kevin Warsh potential successor. Leadership transition adds uncertainty premium.",
+          "Site is Day 17 — GSC organic signals still expected imminently (day 14-21 window). 405+ pages live. FOMC content perfectly timed for organic arrival.",
+          "Social drafts saved to /reports/community-drafts/2026-03-17-social-drafts-v13.md",
+          "Social card saved to /public/social-fomc-day1-market-rally.svg",
+          "Posting schedule: Tue PM FOMC tweets (5) + Discord briefing → Wed AM FOMC eve reminder → Wed PM post-decision reaction → Thu newsletter → Fri poll + review → Sat BTCFi thread → Sun Aave V4"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"]
+  }
+}

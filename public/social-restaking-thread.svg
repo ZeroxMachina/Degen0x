@@ -1,0 +1,172 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="400" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="flowGrad" x1="0" y1="0" x2="0" y2="200">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent bar top -->
+  <rect width="1200" height="4" fill="url(#accentBar)"/>
+
+  <!-- Decorative glow circles -->
+  <circle cx="900" cy="200" r="180" fill="#4f46e5" opacity="0.06" filter="url(#softGlow)"/>
+  <circle cx="200" cy="500" r="120" fill="#06b6d4" opacity="0.04" filter="url(#softGlow)"/>
+
+  <!-- Badge: RESTAKING GUIDE 2026 -->
+  <rect x="40" y="30" width="260" height="32" rx="16" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="170" y="52" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#06b6d4" text-anchor="middle" letter-spacing="1.5">RESTAKING GUIDE 2026</text>
+
+  <!-- degen0x logo text -->
+  <text x="1120" y="52" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#818cf8" text-anchor="end" opacity="0.7">degen0x</text>
+
+  <!-- Main title -->
+  <text x="50" y="120" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="900" fill="url(#brandGrad)" letter-spacing="-1">EigenLayer &amp;</text>
+  <text x="50" y="178" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="900" fill="#e6edf3" letter-spacing="-1">Restaking Explained</text>
+
+  <!-- Subtitle -->
+  <text x="50" y="215" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#8b949e">Stake your ETH twice. Earn 2-5% extra yield. Here's everything you need to know.</text>
+
+  <!-- Stat chips row -->
+  <!-- Chip 1: $20B+ TVR -->
+  <rect x="50" y="245" width="170" height="50" rx="12" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.25)" stroke-width="1"/>
+  <text x="135" y="265" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#06b6d4" text-anchor="middle">TOTAL VALUE RESTAKED</text>
+  <text x="135" y="285" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800" fill="#e6edf3" text-anchor="middle">$20B+</text>
+
+  <!-- Chip 2: 60+ AVSs -->
+  <rect x="235" y="245" width="150" height="50" rx="12" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.25)" stroke-width="1"/>
+  <text x="310" y="265" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b5cf6" text-anchor="middle">ACTIVE AVSs</text>
+  <text x="310" y="285" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800" fill="#e6edf3" text-anchor="middle">60+</text>
+
+  <!-- Chip 3: +2-5% Extra APY -->
+  <rect x="400" y="245" width="170" height="50" rx="12" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <text x="485" y="265" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#22c55e" text-anchor="middle">EXTRA YIELD</text>
+  <text x="485" y="285" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800" fill="#e6edf3" text-anchor="middle">+2-5% APY</text>
+
+  <!-- Restaking Flow Diagram (right side) -->
+  <!-- ETH/LST source box -->
+  <rect x="700" y="100" width="140" height="60" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="770" y="125" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" text-anchor="middle">YOUR</text>
+  <text x="770" y="145" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800" fill="#e6edf3" text-anchor="middle">ETH / LSTs</text>
+
+  <!-- Arrow down -->
+  <line x1="770" y1="160" x2="770" y2="195" stroke="#06b6d4" stroke-width="2" stroke-dasharray="4,4"/>
+  <polygon points="765,195 770,205 775,195" fill="#06b6d4"/>
+
+  <!-- EigenLayer box -->
+  <rect x="680" y="210" width="180" height="55" rx="14" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.4)" stroke-width="1.5"/>
+  <text x="770" y="233" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#818cf8" text-anchor="middle">RESTAKING LAYER</text>
+  <text x="770" y="253" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800" fill="#e6edf3" text-anchor="middle">EigenLayer</text>
+
+  <!-- Arrows to AVSs -->
+  <line x1="720" y1="265" x2="680" y2="305" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="770" y1="265" x2="770" y2="305" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="820" y1="265" x2="860" y2="305" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- AVS cards -->
+  <!-- Bridges -->
+  <rect x="630" y="310" width="100" height="45" rx="10" fill="rgba(6,182,212,0.12)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="680" y="330" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#06b6d4" text-anchor="middle">AVS</text>
+  <text x="680" y="346" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="middle">Bridges</text>
+
+  <!-- DA Layer -->
+  <rect x="740" y="310" width="100" height="45" rx="10" fill="rgba(139,92,246,0.12)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="790" y="330" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b5cf6" text-anchor="middle">AVS</text>
+  <text x="790" y="346" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="middle">DA Layers</text>
+
+  <!-- Oracles -->
+  <rect x="850" y="310" width="100" height="45" rx="10" fill="rgba(245,158,11,0.12)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="900" y="330" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#f59e0b" text-anchor="middle">AVS</text>
+  <text x="900" y="346" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="middle">Oracles</text>
+
+  <!-- Yield return dashed line -->
+  <line x1="960" y1="335" x2="1000" y2="335" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="1000" y1="335" x2="1000" y2="130" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="1000" y1="130" x2="850" y2="130" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="855,125 845,130 855,135" fill="#22c55e"/>
+  <text x="1020" y="235" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#22c55e" transform="rotate(-90, 1020, 235)">YIELD RETURNED</text>
+
+  <!-- Protocol comparison table -->
+  <rect x="50" y="320" width="550" height="180" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Table header -->
+  <text x="70" y="350" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#8b949e">PROTOCOL</text>
+  <text x="235" y="350" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#8b949e">TVR</text>
+  <text x="345" y="350" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#8b949e">AVSs</text>
+  <text x="440" y="350" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#8b949e">CHAIN</text>
+  <text x="540" y="350" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#8b949e">STATUS</text>
+
+  <line x1="70" y1="360" x2="580" y2="360" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Row 1: EigenLayer -->
+  <circle cx="80" cy="385" r="5" fill="#4f46e5"/>
+  <text x="95" y="390" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">EigenLayer</text>
+  <text x="235" y="390" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">$20B+</text>
+  <text x="345" y="390" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">60+</text>
+  <text x="440" y="390" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8">Ethereum</text>
+  <circle cx="548" cy="385" r="5" fill="#22c55e"/>
+  <text x="560" y="390" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#22c55e">Live</text>
+
+  <!-- Row 2: Symbiotic -->
+  <circle cx="80" cy="415" r="5" fill="#06b6d4"/>
+  <text x="95" y="420" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Symbiotic</text>
+  <text x="235" y="420" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">$2B+</text>
+  <text x="345" y="420" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">20+</text>
+  <text x="440" y="420" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#06b6d4">Multi-chain</text>
+  <circle cx="548" cy="415" r="5" fill="#22c55e"/>
+  <text x="560" y="420" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#22c55e">Live</text>
+
+  <!-- Row 3: Karak -->
+  <circle cx="80" cy="445" r="5" fill="#f59e0b"/>
+  <text x="95" y="450" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Karak</text>
+  <text x="235" y="450" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">$800M+</text>
+  <text x="345" y="450" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">12+</text>
+  <text x="440" y="450" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#f59e0b">Multi-chain</text>
+  <circle cx="548" cy="445" r="5" fill="#22c55e"/>
+  <text x="560" y="450" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#22c55e">Live</text>
+
+  <!-- Row 4: Jito -->
+  <circle cx="80" cy="475" r="5" fill="#8b5cf6"/>
+  <text x="95" y="480" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Jito</text>
+  <text x="235" y="480" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">$500M+</text>
+  <text x="345" y="480" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3">8+</text>
+  <text x="440" y="480" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b5cf6">Solana</text>
+  <circle cx="548" cy="475" r="5" fill="#22c55e"/>
+  <text x="560" y="480" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#22c55e">Live</text>
+
+  <!-- Bottom bar -->
+  <rect y="600" width="1200" height="30" fill="rgba(255,255,255,0.02)"/>
+  <rect y="600" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+  <text x="600" y="620" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#6e7681" text-anchor="middle">degen0x.com/learn/restaking-eigenlayer-guide</text>
+</svg>

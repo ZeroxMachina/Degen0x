@@ -8,6 +8,7 @@ export const metadata = {
   openGraph: {
     title: 'Airdrop Calendar & Tracker | degen0x',
     description: 'Never miss free crypto again. Track and maximize your airdrop eligibility.',
+    images: [{ url: 'https://degen0x.com/og-airdrops.png', width: 1200, height: 630, alt: 'Airdrop Calendar and Tracker on degen0x' }],
   },
 };
 

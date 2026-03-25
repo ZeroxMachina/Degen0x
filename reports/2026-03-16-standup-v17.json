@@ -1,0 +1,86 @@
+{
+  "date": "2026-03-16",
+  "block": "standup",
+  "version": "v17",
+  "report": {
+    "status": "completed",
+    "summary": "Standup v17: build-v13 shipped FHE Crypto Guide 2026 + AI Agent Payments x402 Guide (~6,400 words, PUBLISH_QUEUE now 5 items). Design-v13 + community-v29 + eod refresh ran. P0 blockers unchanged: git index.lock (440+ files), rate limiter 0/6, Vercel trial ~4 days. FOMC now T-2 (Wed Mar 18).",
+    "sections": [
+      {
+        "title": "Analytics — Delta Since Standup v16",
+        "items": [
+          "build-v13 shipped 2 new guides this cycle: FHE Crypto Guide 2026 (~3,200 words — Zama $1B+ unicorn/mainnet Dec 2025, Fhenix CoFHE on Base, Inco Network, COTI dark pools; FHE vs ZK vs TEEs comparison, 6-question FAQ, ArticleSchema+FAQSchema) + AI Agent Payments x402 Guide (~3,200 words — Coinbase x402 protocol 75M+ txns $24M+ volume, ERC-8004 on-chain agent identity Jan 2026, Agentic Wallets Feb 2026, Cloudflare/Google/Vercel/Stripe support, ACP/UCP/Google AP2 competing standards). Both scaffolded and added to PUBLISH_QUEUE.",
+          "PUBLISH_QUEUE grew from 3 → 5 items: smart-wallets-guide-2026 (MISSING page.tsx), intent-based-dex-trading-guide (ready), restaking-avs-ecosystem-guide-2026 (ready), fhe-crypto-guide-2026 (new, ready), ai-agent-payments-x402-guide (new, ready).",
+          "design-v13 ran this cycle — last versioned design run. OG image coverage continuing to grow from v12 baseline (5 new images + 3 metadata fixes).",
+          "community-v29 ran this cycle — social calendar and content execution continuing. Tax Season urgency (14d → now 30d to Apr 15), FOMC reactive templates ready (T-2), Bloomberg Screener V3 launch content active.",
+          "EOD base refresh ran — no new commits since build-v13 content scaffolding. P0/P1 blocker state unchanged from eod-v14.",
+          "Top content signals holding strong: FHE/privacy narrative aligns with Zama mainnet Dec 2025 momentum; AI agent payments x402 is emerging category with Coinbase + Cloudflare + Google backing — both high-timing picks. Tax content still peaking (Apr 15 deadline). FOMC T-2 spike window opening."
+        ]
+      },
+      {
+        "title": "Project Manager — Done vs Carry-Over",
+        "items": [
+          "SHIPPED ✅ build-v13 — FHE Crypto Guide 2026 + AI Agent Payments x402 Guide researched, written (~6,400 words combined), SEO-optimized (metadata, ArticleSchema, FAQSchema, internal links), scaffolded, added to PUBLISH_QUEUE.",
+          "SHIPPED ✅ design-v13 — Design cycle ran (details in design report). Continuing OG image + UX work.",
+          "SHIPPED ✅ community-v29 — Community/social execution continuing through Apr 6 calendar. FOMC reactive templates ready.",
+          "SHIPPED ✅ eod refresh — Pipeline/blocker state confirmed unchanged.",
+          "BLOCKER 🔴 [P0] git index.lock — ALL commits still blocked. 440+ modified files stuck. Every cycle that passes without resolution means more drift. rm .git/index.lock is a one-line fix. Assign: Programmer or direct Jefe action.",
+          "BLOCKER 🔴 [P0] Rate limiter 0/6 public API routes — FOMC is T-2 (Wed Mar 18). checkRateLimit() exists in src/lib/rate-limiter.ts but is imported by ZERO routes. Traffic spike risk on /api/prices, /api/trending, /api/market-metrics, /api/market-dominance, /api/defi-yields, /api/fear-greed. Now 12 consecutive cycles flagged.",
+          "BLOCKER 🔴 [P0] Vercel trial ~4 days remaining — payment method must be added or site goes dark. Jefe action only.",
+          "BLOCKER 🔴 [P1] smart-wallets-guide-2026 in PUBLISH_QUEUE — page.tsx MISSING, blocking promotion. Blocks queue drain.",
+          "CARRY-OVER 🟡 PUBLISH_QUEUE at 5 items: smart-wallets (needs page.tsx), intent-dex (ready), restaking-avs (ready), fhe-crypto (ready), ai-agent-x402 (ready). 4 of 5 are promotion-ready pending git unblock.",
+          "CARRY-OVER 🟡 103/361 published slugs missing page.tsx (~28.5% returning 404). Persistent multi-cycle.",
+          "CARRY-OVER 🟡 structured-data.examples.ts — 40 TS errors (JSX in .ts file). Fix: rename to .tsx.",
+          "CARRY-OVER 🟡 defi-yields API route — only route without fallback data (returns 500 on error).",
+          "CARRY-OVER 🟡 WalletConnect production Project ID — Jefe action required.",
+          "CARRY-OVER 🟡 GitHub Actions secrets — Jefe ~15 min; blocks Playwright CI.",
+          "CARRY-OVER 🟡 next lint misconfigured (looking for ./lint directory)."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — Remove git index.lock NOW. With FOMC T-2 and Vercel trial expiring in ~4 days, every hour of delay compounds risk. Steps: (1) rm /path/to/.git/index.lock; (2) Review staged next.config.ts (preserve output:'standalone'); (3) Confirm or revert badges/courses deletions; (4) Stage all valid changes; (5) Commit + push → Vercel deploy. This unblocks the entire pipeline: rate limiter fix, smart-wallets page.tsx creation, queue promotion. Assign: degen-programmer immediate.",
+          "PRIORITY 2 — Wire checkRateLimit() to all 6 API routes. FOMC is Wednesday. The rate limiter is built and sitting idle in src/lib/rate-limiter.ts. This is a ~10-line change per route. Also add fallback data to /api/defi-yields (currently the only route that returns 500 on error). After git is unblocked, this ships in the same commit. Assign: degen-programmer.",
+          "PRIORITY 3 — Publish the 4 queue-ready guides in next publish cycle (Day 45): intent-based-dex-trading, restaking-avs-ecosystem, fhe-crypto-guide-2026, ai-agent-payments-x402 (after creating smart-wallets page.tsx for the 5th). These cover 5 distinct high-momentum narratives: MEV/intent, restaking $25B+ TVL, privacy/FHE (Zama mainnet), AI agent economy (Coinbase x402 + ERC-8004). Community threads for intent-dex (Apr 6) and restaking (Apr 5) are pre-scheduled — content must be live. Assign: degen-programmer (smart-wallets page.tsx) + degen-publish-queue (Day 45 batch).",
+          "STRATEGIC NOTE — Content velocity is strong: 2 guides/cycle throughout the day (build-v13 FHE + x402, build-v12 intent-dex + restaking, build-v11 prior). Next build candidates: Solana vs Ethereum 2026 comparison, DeFi Insurance Guide, Real World Assets (RWA) Deep Dive, Crypto ETF Comparison 2026 (timely post-Jan 2025 approvals). Three converging catalysts: FOMC T-2 (rate decision + crypto market volatility), Ethereum Pectra T-25 (Apr 10, EIP-7702 smart wallets), Tax deadline T-30 (Apr 15). Add Vercel payment method before T-4 days becomes T-0."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Total PUBLISHED_PAGES", "value": "~361 slugs (Day 44 stable)", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "5 items (4 ready, 1 missing page.tsx)", "pct": 80, "color": "#f59e0b" },
+          { "label": "Published Slugs Missing page.tsx", "value": "103/361 (~28.5%) returning 404", "pct": 29, "color": "#f59e0b" },
+          { "label": "Working Tree Modified Files", "value": "440+ — git index.lock blocking ALL commits 🔴", "pct": 5, "color": "#ef4444" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 public API routes — FOMC T-2 🔴", "pct": 0, "color": "#ef4444" },
+          { "label": "API Fallback Data", "value": "5/6 routes (defi-yields still missing)", "pct": 83, "color": "#f59e0b" },
+          { "label": "TS Errors", "value": "40 (1 file — structured-data.examples.ts)", "pct": 75, "color": "#f59e0b" },
+          { "label": "New Guides Built Today", "value": "6 total (intent-dex, restaking-avs, FHE, x402, + 2 prior)", "pct": 100, "color": "#4ade80" },
+          { "label": "Top Content Signals", "value": "FHE (Zama mainnet), x402 (Coinbase launch), Tax peak, FOMC T-2", "pct": 95, "color": "#4ade80" },
+          { "label": "Social Calendar", "value": "Through Apr 6 — FOMC reactive templates ready", "pct": 100, "color": "#4ade80" },
+          { "label": "Vercel Trial Remaining", "value": "~4 days 🔴 — Jefe must add payment method", "pct": 17, "color": "#ef4444" },
+          { "label": "Latest Deploy", "value": "5A7UYNc4G (publish-v8, Day 44)", "pct": 100, "color": "#4ade80" },
+          { "label": "Build Regressions", "value": "0 (Vercel OK, local VM OOM non-blocking)", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "5 of 6 (standup + build + design + community + eod)", "pct": 83, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~8.5h (standup 0.75 + build 5 + design 1.25 + community 1 + eod 1.25 — no publish)", "pct": 83, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$442 (5 agents: $45+$233+$60+$41+$63)", "pct": 88, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$7,148 (standup×17 $765 + build×13 $3,029 + publish×8 $440 + design×13 $780 + community×29 $1,189 + eod×15 $945)", "pct": 100, "color": "#4ade80" },
+          { "label": "Total Agent Runs Today", "value": "95 (17+13+8+13+29+15)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Chrome tool fetch blocked (CORS on api.resend.com from browser context) — skipped. Persistent issue across all standup cycles."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "date": "2026-03-23",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Day 70 standup #15: Since v13, build-v13 shipped DeFi Points & Airdrop Farming + Ethereum Blob Space guides (6,500 words), design-v12 polished Smart Contract Security + Onchain Identity pages (BackToTop, Article schema, hover states), community-v12 drafted BTC recovery tweet + Morgan Stanley ETF 4-part thread + 2 social cards + newsletter addendum #2. EOD-v13 confirms zero delta — git locks 7+ days, 680 uncommitted, 0 deploys. All 6 agents ran this cycle ($497). 71 runs today ($6,120). ZERO reaching production. Standup-only mode strongly recommended.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v13: Full 6-agent rotation completed — build-v13, design-v12, community-v12, eod-v13, publish-v7, plus this standup. Zero commits, zero deploys. Git locks now 7+ full days.",
+          "BUILD-V13 OUTPUT: 2 new learn guides — DeFi Points & Airdrop Farming Guide 2026 (~3,400 words, 556 lines, points meta evolution 2023-2026, anti-Sybil mechanisms, SEC-CFTC March 17 guidance, Aerodrome DNS hijack case study) and Ethereum Blob Space & Data Availability Economics Guide (~3,100 words, 473 lines, EIP-4844, blob fee market, PeerDAS, Danksharding roadmap, Celestia/EigenDA competition). Both added to PUBLISH_QUEUE.",
+          "DESIGN-V12 OUTPUT: Polished Smart Contract Security + Onchain Identity pages. Added BackToTop component to both. Article JSON-LD schema for rich snippets on both. Interactive hover states (TOC links, related cards lift, FAQ card border highlights). Mobile scroll hint for audit firms table. Both now have dual structured data: Article + FAQPage.",
+          "COMMUNITY-V12 OUTPUT: BTC recovery bounce tweet ($68K→$70,600, +3.8%). Morgan Stanley ETF 4-part thread ($6.5T AUM, 1% = $65B, filed during F&G 10). Tuesday pulse + quad witching aftermath tweets. Discord/TG late evening update. Newsletter v6 addendum #2 (MS institutional moves). 2 new social cards: MS ETF (3-panel data) + BTC Recovery (price chart + catalysts). Content calendar v9 = 20+ posts Mon-Sun.",
+          "EOD-V13 FINDING: Zero delta from v12. 680 uncommitted changes (+0). 1,110+ page.tsx files. 446 slugs. 174 in PUBLISH_QUEUE. 42 TS errors unchanged. 2 use-client bugs remaining (unichain, appchains). 0/6 core routes with rate limiter. Build OOM in sandbox.",
+          "MARKET CONTEXT: BTC $67,700-$70,600 range (volatile intraday). F&G 10 (Extreme Fear, Day 47+ — longest streak since late 2022). Historical data: buying below F&G 15 yields median +38.4% in 90 days. Whale accumulation 270K BTC ($23B, 13-yr high). Exchange supply 2.7M BTC (6-yr low). Morgan Stanley updated BTC ETF application filed with SEC.",
+          "SEO RISK: 7+ days without deploy. ~131+ pages not live. 8+ premium guides (MiCA, DVT, Flash Loans, DeFi Vaults, ZKML, AI Agent Identity, DeFi Points, Blob Space) trapped behind git locks. Extreme Fear market = peak organic search window being missed for fear/accumulation/DCA content."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE STANDUP v13: Build-v13 (DeFi Points + Blob Space guides), design-v12 (2-page UX polish + Article schema), community-v12 (6 social drafts + 2 SVG cards + newsletter addendum), eod-v13 (QA — zero code delta), publish-v7 (queue check). 5 agents + this standup = 6 runs, $497 human-equivalent.",
+          "TODAY'S CUMULATIVE OUTPUT: 26+ learn guides built, 18+ OG images, 46+ social posts + 18 SVG cards, 13 QA cycles, 12 design audits, 71 agent runs across ~12 rotations. ZERO deployed to production.",
+          "BLOCKER [P0 — 7+ DAYS]: Git locks (.git/HEAD.lock + .git/index.lock) since Mar 16. Blocks ALL commits and deploys. Fix: rm .git/index.lock .git/HEAD.lock — requires Jefe's manual intervention. EVERY cycle repeats this warning.",
+          "PROGRESS: design-v12 added BackToTop + Article schema to 2 more pages. 2 use-client+metadata bugs remain (unichain, appchains).",
+          "CARRY-OVER [P1 — 40+ CYCLES]: Rate limiter not wired to 6 core API routes.",
+          "CARRY-OVER [P1 — 40+ CYCLES]: /api/defi-yields missing cache AND fallback data.",
+          "CARRY-OVER [P1]: 42 TS errors in structured-data.examples.ts + 2 in crypto-index-funds page (masked by ignoreBuildErrors).",
+          "CARRY-OVER [P2]: 103 orphan slugs without page.tsx, OG image coverage gaps, server component event handler risks on other pages.",
+          "PUBLISH_QUEUE: 174+ pages queued for promotion. Build cycles continue generating content with no deploy path. Queue growing ~2 pages/cycle."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS AND DEPLOY (P0, Day 7): 680 uncommitted files. Risk of data loss grows each cycle. Single command fix: rm .git/index.lock .git/HEAD.lock → staged commit → push → Vercel auto-deploy. This remains the ONLY action that converts work into value.",
+          "PRIORITY 2 — HALT ALL BUILD/DESIGN/COMMUNITY CYCLES: 71 agent runs today ($6,120 human-equivalent) with zero production output. Content pipeline has outrun shipping by 131+ pages. Each additional guide adds complexity to the eventual deploy without reaching users. Recommend standup-only mode.",
+          "PRIORITY 3 — PLAN STAGED DEPLOY STRATEGY: When git locks clear, 680+ files cannot be committed in one shot safely. Plan: (1) commit core infra changes, (2) commit published pages in batches of 20-30, (3) commit PUBLISH_QUEUE pages, (4) verify Vercel build succeeds between batches. This reduces regression risk.",
+          "STRATEGIC NOTE: Morgan Stanley BTC ETF filing during Extreme Fear is a historic institutional signal. We have whale-tracker, fear-greed-timeline, and bitcoin-etf-inflows pages LIVE — community-v12 drafted a 4-part thread linking all three. This is the highest-value social content of the week. 8 premium guides (MiCA, DVT, Flash Loans, DeFi Vaults, ZKML, AI Agent Identity, DeFi Points, Blob Space) sitting behind git locks would capture significant organic traffic if deployed."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Published Page Slugs (declared)", "value": "446", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Actually in Production", "value": "~315 (last deploy Mar 17)", "pct": 71, "color": "#f59e0b" },
+          { "label": "Deploy Gap", "value": "~131+ pages not live", "pct": 29, "color": "#ef4444" },
+          { "label": "Publish Queue", "value": "174+ pages awaiting promotion", "pct": 50, "color": "#f59e0b" },
+          { "label": "Pages with page.tsx", "value": "1,363 (1,110 tracked + 253 untracked)", "pct": 100, "color": "#4ade80" },
+          { "label": "Guides Built Today", "value": "26+ guides + 18 OG images + 46 social posts", "pct": 100, "color": "#4ade80" },
+          { "label": "Days Since Last Deploy", "value": "6+ days (Mar 17, e999560)", "pct": 2, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "7+ days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "680+", "pct": 5, "color": "#ef4444" },
+          { "label": "use-client Bugs", "value": "2 remaining (unichain, appchains)", "pct": 33, "color": "#f59e0b" },
+          { "label": "TypeScript Errors", "value": "42 in 1 file + 2 in another (masked)", "pct": 28, "color": "#f59e0b" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 core routes", "pct": 0, "color": "#ef4444" },
+          { "label": "BTC Price", "value": "$67,700–$70,600 (range-bound)", "pct": 48, "color": "#f59e0b" },
+          { "label": "Fear & Greed Index", "value": "10 (Extreme Fear, Day 47+)", "pct": 10, "color": "#ef4444" },
+          { "label": "Whale Accumulation (30d)", "value": "270K BTC ($23B) — 13yr high", "pct": 96, "color": "#4ade80" },
+          { "label": "Exchange Supply", "value": "2.7M BTC (6-year low)", "pct": 20, "color": "#06b6d4" },
+          { "label": "Morgan Stanley ETF", "value": "Updated BTC ETF application filed", "pct": 85, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "6 of 6 (build, design, community, eod, publish, standup)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~10.25h", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (all 6 agents: $233+$60+$41+$63+$55+$45)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$6,120 (71 runs: standup×14 $630, build×13 $3,029, publish×7 $385, design×12 $720, community×12 $492, eod×13 $819)", "pct": 51, "color": "#f59e0b" },
+          { "label": "Agent Runs Today", "value": "71 runs across 6 types (~12 rotations)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" },
+          { "label": "⚠️ Wasted Spend (no deploy)", "value": "$6,120 today with $0 reaching production", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API rejects browser-side fetch (CORS). Report saved locally. Same issue as v13."
+  }
+}

@@ -1,0 +1,49 @@
+import { Metadata } from "next";
+import OdosClient from "./OdosClient";
+
+export const metadata: Metadata = {
+  title: "Odos: Multi-Input DEX Aggregator Guide 2026 — $30B+ Volume | degen0x",
+  description:
+    "Complete guide to Odos — the first multi-input DEX aggregator with $30B+ volume across 16 chains, zero fees, and 1000+ routing paths per trade. How Odos works, Smart Order Router, risks, and how to swap.",
+  keywords: [
+    "odos",
+    "odos dex aggregator",
+    "multi-input swap",
+    "dex aggregator",
+    "smart order router",
+    "odos review 2026",
+    "token swap aggregator",
+    "portfolio rebalancing",
+    "multi-chain dex",
+  ],
+  openGraph: {
+    title: "Odos: Multi-Input DEX Aggregator Guide 2026",
+    description:
+      "$30B+ volume. 16 chains. Zero fees. Complete guide to the multi-input DEX aggregator.",
+    type: "article",
+    url: "https://degen0x.com/ecosystem/odos",
+    publishedTime: "2026-03-17T00:00:00Z",
+    modifiedTime: "2026-03-17T00:00:00Z",
+    images: [
+      {
+        url: "https://degen0x.com/api/og?title=Odos:+Multi-Input+DEX+Aggregator+Guide+2026&category=Ecosystem&type=page",
+        width: 1200,
+        height: 630,
+        alt: "Odos Guide on degen0x",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Odos: Multi-Input DEX Aggregator Guide 2026 | degen0x",
+    description:
+      "$30B+ volume. 16 chains. 1000+ routes per trade. Complete DEX aggregator guide inside.",
+    images: [
+      "https://degen0x.com/api/og?title=Odos:+Multi-Input+DEX+Aggregator+Guide+2026&category=Ecosystem&type=page",
+    ],
+  },
+};
+
+export default function OdosPage() {
+  return <OdosClient />;
+}

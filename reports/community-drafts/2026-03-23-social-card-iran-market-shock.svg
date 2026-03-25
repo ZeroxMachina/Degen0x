@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0d1529"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="50%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accentGrad)"/>
+
+  <!-- Decorative glow circles -->
+  <circle cx="950" cy="200" r="180" fill="#ef4444" opacity="0.04" filter="url(#softGlow)"/>
+  <circle cx="200" cy="450" r="120" fill="#f59e0b" opacity="0.03" filter="url(#softGlow)"/>
+
+  <!-- Price drop visualization -->
+  <g transform="translate(750, 140)">
+    <!-- Mini chart showing drop -->
+    <rect x="0" y="0" width="380" height="200" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="20" y="30" fill="#8b949e" font-family="Inter, sans-serif" font-size="13" font-weight="500">BTC/USD 24H</text>
+    <text x="300" y="30" fill="#ef4444" font-family="Inter, sans-serif" font-size="13" font-weight="600">-2.5%</text>
+    <!-- Simplified price line showing drop -->
+    <polyline points="20,70 60,68 100,72 140,65 180,80 220,110 260,130 300,145 340,140 360,142" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="20,70 60,68 100,72 140,65 180,80 220,110 260,130 300,145 340,140 360,142" fill="none" stroke="#ef4444" stroke-width="1" stroke-linecap="round" opacity="0.3" filter="url(#glow)"/>
+    <!-- Price labels -->
+    <text x="20" y="180" fill="#e6edf3" font-family="Inter, sans-serif" font-size="28" font-weight="700">$68,951</text>
+  </g>
+
+  <!-- Liquidation stats panel -->
+  <g transform="translate(750, 370)">
+    <rect x="0" y="0" width="380" height="180" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="20" y="35" fill="#8b949e" font-family="Inter, sans-serif" font-size="13" font-weight="500">24H LIQUIDATIONS</text>
+    <text x="20" y="75" fill="#ef4444" font-family="Inter, sans-serif" font-size="36" font-weight="800">$299M</text>
+    <text x="20" y="105" fill="#8b949e" font-family="Inter, sans-serif" font-size="14">85% longs | 15% shorts</text>
+    <!-- Mini bar chart -->
+    <rect x="20" y="125" width="289" height="12" rx="6" fill="#ef4444" opacity="0.8"/>
+    <rect x="309" y="125" width="51" height="12" rx="6" fill="#22c55e" opacity="0.8"/>
+    <text x="20" y="160" fill="#6e7681" font-family="Inter, sans-serif" font-size="12">Market cap: $2.36T (-2.3%)</text>
+  </g>
+
+  <!-- degen0x logo placeholder -->
+  <text x="60" y="60" fill="url(#brandGrad)" font-family="Inter, sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5">degen0x</text>
+
+  <!-- Main title -->
+  <text x="60" y="160" fill="#e6edf3" font-family="Inter, sans-serif" font-size="48" font-weight="800" letter-spacing="-1">Geopolitical Shock</text>
+  <text x="60" y="220" fill="#e6edf3" font-family="Inter, sans-serif" font-size="48" font-weight="800" letter-spacing="-1">Hits Crypto Markets</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="270" fill="#8b949e" font-family="Inter, sans-serif" font-size="20" font-weight="400">Trump's 48-hour Iran ultimatum triggers</text>
+  <text x="60" y="298" fill="#8b949e" font-family="Inter, sans-serif" font-size="20" font-weight="400">$299M in liquidations. Deadline: Monday evening.</text>
+
+  <!-- Key stat badges -->
+  <g transform="translate(60, 340)">
+    <rect x="0" y="0" width="160" height="50" rx="12" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+    <text x="80" y="20" fill="#ef4444" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">BTC</text>
+    <text x="80" y="38" fill="#e6edf3" font-family="Inter, sans-serif" font-size="15" font-weight="700" text-anchor="middle">$68,951 ↓</text>
+  </g>
+  <g transform="translate(230, 340)">
+    <rect x="0" y="0" width="140" height="50" rx="12" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+    <text x="70" y="20" fill="#ef4444" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">ETH</text>
+    <text x="70" y="38" fill="#e6edf3" font-family="Inter, sans-serif" font-size="15" font-weight="700" text-anchor="middle">$2,114 ↓</text>
+  </g>
+  <g transform="translate(380, 340)">
+    <rect x="0" y="0" width="140" height="50" rx="12" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+    <text x="70" y="20" fill="#ef4444" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">SOL</text>
+    <text x="70" y="38" fill="#e6edf3" font-family="Inter, sans-serif" font-size="15" font-weight="700" text-anchor="middle">$88.55 ↓</text>
+  </g>
+
+  <!-- Crude oil reference -->
+  <g transform="translate(60, 420)">
+    <rect x="0" y="0" width="460" height="45" rx="12" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+    <text x="20" y="28" fill="#f59e0b" font-family="Inter, sans-serif" font-size="14" font-weight="600">⛽ Brent Crude: $112.19/bbl (+4.2%)</text>
+    <text x="340" y="28" fill="#8b949e" font-family="Inter, sans-serif" font-size="12">Strait of Hormuz risk</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(255,255,255,0.02)"/>
+  <text x="60" y="616" fill="#6e7681" font-family="Inter, sans-serif" font-size="14" font-weight="500">degen0x.com/tools/fear-greed-timeline</text>
+  <text x="1140" y="616" fill="#6e7681" font-family="Inter, sans-serif" font-size="14" font-weight="500" text-anchor="end">March 23, 2026</text>
+</svg>

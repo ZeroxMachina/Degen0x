@@ -1,0 +1,63 @@
+{
+  "date": "2026-03-15",
+  "block": "build",
+  "report": {
+    "status": "completed",
+    "summary": "Researched, wrote, SEO-optimized, and scaffolded two new learn guides — Kaito AI & InfoFi and BTCFi — including an interactive BTCFiProtocolExplorer component, both added to PUBLISH_QUEUE.",
+    "sections": [
+      {
+        "title": "Research Brief",
+        "items": [
+          "Identified two high-priority content gaps: Kaito AI / InfoFi (no existing guide; March 2026 Polymarket partnership is a live news hook) and BTCFi (bitcoin-layer-2-guide exists but no dedicated DeFi yield guide)",
+          "Kaito AI launched Attention Markets with Polymarket in March 2026 — $5.8B weekly Polymarket volume makes this highly timely",
+          "BTCFi TVL grew from $304M (Jan 2024) to $7.1B (Nov 2025) — 2,237% growth; only 0.46% of all BTC is in DeFi",
+          "Verified no existing Kaito ecosystem page or InfoFi learn guide in codebase",
+          "Confirmed no existing /learn/btcfi* page; /learn/bitcoin-layer-2-guide exists but does not cover yield/DeFi"
+        ]
+      },
+      {
+        "title": "Content Created",
+        "items": [
+          "Kaito AI & InfoFi Guide — covers InfoFi concept, how Kaito works, KAITO token, Yaps history, Attention Markets, how to use for alpha, risks, 6-question FAQ (761 lines)",
+          "BTCFi: Bitcoin DeFi Guide 2026 — covers BTCFi definition, technology stack, top protocols, 5 yield strategies ranked by risk, wrapped BTC trust comparison table, risks, 6-question FAQ (810+ lines)"
+        ]
+      },
+      {
+        "title": "Pages Scaffolded",
+        "pages": [
+          { "slug": "/learn/kaito-ai-infofi-guide", "status": "pass" },
+          { "slug": "/learn/btcfi-bitcoin-defi-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "SEO Optimization",
+        "items": [
+          "Kaito title tag: 57 chars (under 60 limit); primary keyword 'Kaito AI & InfoFi' front-loaded",
+          "BTCFi title tag: 54 chars (under 60 limit); primary keyword 'BTCFi Guide 2026' front-loaded",
+          "Both descriptions in 155–160 char range with primary keywords and differentiators",
+          "Article schema + FAQ schema (6 FAQs each) rendered via StructuredData component",
+          "Internal links: each page links to 4 related degen0x guides",
+          "Both pages added to PUBLISH_QUEUE in src/lib/published-pages.ts",
+          "TypeScript check: 0 errors in all new files"
+        ]
+      },
+      {
+        "title": "Interactive Component",
+        "items": [
+          "BTCFiProtocolExplorer.tsx — 8 BTCFi protocols, filterable by type / risk / EVM compat, sortable by TVL / risk / trust model / name",
+          "Wired into /learn/btcfi-bitcoin-defi-guide-2026/page.tsx, Section 3 (Top Protocols)"
+        ]
+      }
+    ],
+    "skills_used": ["researcher", "contentWriter", "seo", "pageScaffold", "programmer"],
+    "files_created": [
+      "src/app/learn/kaito-ai-infofi-guide/page.tsx",
+      "src/app/learn/btcfi-bitcoin-defi-guide-2026/page.tsx",
+      "src/components/BTCFiProtocolExplorer.tsx",
+      "reports/2026-03-15-build-v6.json"
+    ],
+    "files_modified": [
+      "src/lib/published-pages.ts"
+    ]
+  }
+}

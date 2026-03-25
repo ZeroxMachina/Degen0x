@@ -1,0 +1,98 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1a2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative glow circles -->
+  <circle cx="950" cy="200" r="200" fill="#6366f1" opacity="0.06"/>
+  <circle cx="1050" cy="400" r="150" fill="#0891b2" opacity="0.05"/>
+  <circle cx="200" cy="500" r="120" fill="#d97706" opacity="0.04"/>
+
+  <!-- Network lines decoration -->
+  <g stroke="#6366f1" stroke-opacity="0.12" stroke-width="1" fill="none">
+    <line x1="850" y1="100" x2="1000" y2="180"/>
+    <line x1="1000" y1="180" x2="950" y2="300"/>
+    <line x1="950" y1="300" x2="1100" y2="350"/>
+    <line x1="1100" y1="350" x2="1050" y2="450"/>
+    <circle cx="850" cy="100" r="4" fill="#6366f1" opacity="0.3"/>
+    <circle cx="1000" cy="180" r="4" fill="#06b6d4" opacity="0.3"/>
+    <circle cx="950" cy="300" r="4" fill="#6366f1" opacity="0.3"/>
+    <circle cx="1100" cy="350" r="4" fill="#d97706" opacity="0.3"/>
+    <circle cx="1050" cy="450" r="4" fill="#06b6d4" opacity="0.3"/>
+  </g>
+
+  <!-- Payment flow arrows -->
+  <g fill="none" stroke="#06b6d4" stroke-opacity="0.15" stroke-width="2">
+    <path d="M880 420 L920 420 L940 400 L980 400"/>
+    <path d="M880 460 L920 460 L940 440 L980 440"/>
+    <path d="M880 500 L920 500 L940 480 L980 480"/>
+    <polygon points="980,395 995,410 980,425" fill="#06b6d4" opacity="0.15"/>
+    <polygon points="980,435 995,450 980,465" fill="#06b6d4" opacity="0.15"/>
+    <polygon points="980,475 995,490 980,505" fill="#06b6d4" opacity="0.15"/>
+  </g>
+
+  <!-- degen0x logo text -->
+  <text x="60" y="70" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#818cf8" opacity="0.9">degen0x</text>
+
+  <!-- Category badge -->
+  <rect x="60" y="140" width="130" height="30" rx="15" fill="#6366f1" opacity="0.2"/>
+  <text x="125" y="160" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#818cf8" text-anchor="middle">PAYMENTS</text>
+
+  <rect x="200" y="140" width="100" height="30" rx="15" fill="#06b6d4" opacity="0.2"/>
+  <text x="250" y="160" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#06b6d4" text-anchor="middle">LAYER 1</text>
+
+  <!-- Title -->
+  <text x="60" y="230" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.02em">Tempo Blockchain &amp;</text>
+  <text x="60" y="290" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.02em">Machine Payments</text>
+  <text x="60" y="350" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.02em">Protocol Guide</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="400" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Stripe &amp; Paradigm's $5B Layer 1 for stablecoin payments at scale</text>
+
+  <!-- Stats row -->
+  <g transform="translate(60, 450)">
+    <rect x="0" y="0" width="150" height="60" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="75" y="25" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">FUNDING</text>
+    <text x="75" y="48" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#22c55e" text-anchor="middle">$500M</text>
+
+    <rect x="165" y="0" width="150" height="60" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="240" y="25" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">MAINNET</text>
+    <text x="240" y="48" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#06b6d4" text-anchor="middle">Mar 2026</text>
+
+    <rect x="330" y="0" width="150" height="60" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="405" y="25" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">MPP PARTNERS</text>
+    <text x="405" y="48" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#f59e0b" text-anchor="middle">100+</text>
+
+    <rect x="495" y="0" width="150" height="60" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="570" y="25" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">TX FINALITY</text>
+    <text x="570" y="48" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#6366f1" text-anchor="middle">&lt;1 sec</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="612" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#8b949e">degen0x.com</text>
+  <text x="1140" y="612" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="end">2026 Guide</text>
+</svg>

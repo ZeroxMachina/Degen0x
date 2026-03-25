@@ -1,0 +1,280 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="55%" style="stop-color:#0b1025"/>
+      <stop offset="100%" style="stop-color:#090e20"/>
+    </linearGradient>
+    <!-- Brand gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <!-- Title gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a5b4fc"/>
+      <stop offset="50%" style="stop-color:#67e8f9"/>
+      <stop offset="100%" style="stop-color:#fde68a"/>
+    </linearGradient>
+    <!-- Chart line gradient -->
+    <linearGradient id="chartLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="50%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+    <!-- Chart area fill -->
+    <linearGradient id="chartAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.25"/>
+      <stop offset="60%" style="stop-color:#6366f1;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </linearGradient>
+    <!-- BTC cost basis line -->
+    <linearGradient id="costBasisGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.3"/>
+    </linearGradient>
+    <!-- Indigo ambient glow -->
+    <radialGradient id="indigoGlow" cx="20%" cy="25%" r="50%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Green glow bottom-right -->
+    <radialGradient id="greenGlow" cx="85%" cy="75%" r="40%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.10"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Glass gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.07"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.02"/>
+    </linearGradient>
+    <!-- Profit zone fill -->
+    <linearGradient id="profitZone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="630" fill="url(#indigoGlow)"/>
+  <rect width="1200" height="630" fill="url(#greenGlow)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.025" stroke="#e6edf3" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+  </g>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- degen0x logo (top-left) -->
+  <g transform="translate(56, 52)">
+    <circle cx="14" cy="14" r="14" fill="none" stroke="#6366f1" stroke-width="2"/>
+    <circle cx="14" cy="14" r="14" fill="#6366f1" opacity="0.15"/>
+    <text x="14" y="19" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#a5b4fc" text-anchor="middle">0x</text>
+    <text x="34" y="20" font-family="Inter, sans-serif" font-size="17" font-weight="700" fill="#e6edf3" letter-spacing="-0.5">degen<tspan fill="#6366f1">0x</tspan></text>
+  </g>
+
+  <!-- Tool badge -->
+  <rect x="56" y="105" width="90" height="26" rx="13" fill="rgba(99,102,241,0.2)" stroke="#6366f1" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="101" y="123" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#818cf8" text-anchor="middle">🔧 TOOL</text>
+
+  <!-- Title -->
+  <text x="56" y="185" font-family="Inter, sans-serif" font-size="52" font-weight="900" fill="url(#titleGrad)" letter-spacing="-2">DCA Calculator</text>
+
+  <!-- Subtitle -->
+  <text x="58" y="224" font-family="Inter, sans-serif" font-size="19" font-weight="400" fill="#8b949e">Dollar-cost average any crypto — historical simulations, any interval</text>
+
+  <!-- Feature list -->
+  <g transform="translate(56, 255)">
+    <!-- Feature 1 -->
+    <circle cx="8" cy="8" r="8" fill="rgba(99,102,241,0.2)"/>
+    <text x="8" y="13" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#818cf8" text-anchor="middle">✓</text>
+    <text x="24" y="13" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#e6edf3">BTC, ETH, SOL, and 100+ assets</text>
+
+    <!-- Feature 2 -->
+    <circle cx="8" cy="40" r="8" fill="rgba(6,182,212,0.2)"/>
+    <text x="8" y="45" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#22d3ee" text-anchor="middle">✓</text>
+    <text x="24" y="45" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#e6edf3">Weekly, monthly, or custom intervals</text>
+
+    <!-- Feature 3 -->
+    <circle cx="8" cy="80" r="8" fill="rgba(34,197,94,0.2)"/>
+    <text x="8" y="85" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#4ade80" text-anchor="middle">✓</text>
+    <text x="24" y="85" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#e6edf3">Compare DCA vs lump-sum performance</text>
+
+    <!-- Feature 4 -->
+    <circle cx="8" cy="120" r="8" fill="rgba(245,158,11,0.2)"/>
+    <text x="8" y="125" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#fbbf24" text-anchor="middle">✓</text>
+    <text x="24" y="125" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#e6edf3">Average cost basis visualization</text>
+  </g>
+
+  <!-- CTA pill -->
+  <rect x="56" y="480" width="310" height="52" rx="26" fill="url(#brandGrad)" opacity="0.9"/>
+  <text x="211" y="512" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">degen0x.com/tools/dca-calculator →</text>
+
+  <!-- Right panel — simulated DCA chart -->
+  <rect x="620" y="90" width="530" height="430" rx="20"
+    fill="url(#glassGrad)"
+    stroke="rgba(255,255,255,0.08)"
+    stroke-width="1"/>
+  <rect x="620" y="90" width="530" height="4" rx="2" fill="url(#brandGrad)" opacity="0.5"/>
+
+  <!-- Chart title bar -->
+  <text x="885" y="128" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle" letter-spacing="0.5">BTC — $100/WEEK · 24 MONTHS</text>
+  <line x1="645" y1="140" x2="1125" y2="140" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Chart axis labels (Y) -->
+  <text x="645" y="175" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">$80K</text>
+  <text x="645" y="225" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">$65K</text>
+  <text x="645" y="275" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">$50K</text>
+  <text x="645" y="325" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">$35K</text>
+  <text x="645" y="375" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">$20K</text>
+
+  <!-- Chart grid lines (horizontal) -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="675" y1="168" x2="1130" y2="168"/>
+    <line x1="675" y1="218" x2="1130" y2="218"/>
+    <line x1="675" y1="268" x2="1130" y2="268"/>
+    <line x1="675" y1="318" x2="1130" y2="318"/>
+    <line x1="675" y1="368" x2="1130" y2="368"/>
+  </g>
+
+  <!-- Chart X-axis labels -->
+  <text x="680" y="410" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">M1</text>
+  <text x="742" y="410" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">M4</text>
+  <text x="804" y="410" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">M8</text>
+  <text x="866" y="410" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">M12</text>
+  <text x="928" y="410" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">M16</text>
+  <text x="990" y="410" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">M20</text>
+  <text x="1052" y="410" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">M24</text>
+
+  <!-- BTC price path (volatile, generally trending up) -->
+  <!-- Area fill under BTC price -->
+  <path d="
+    M675,355
+    C690,345 705,320 720,308
+    C735,296 750,285 765,275
+    C780,265 795,280 810,270
+    C825,260 840,245 855,235
+    C870,225 885,230 900,218
+    C915,206 930,195 945,185
+    C960,175 975,200 990,215
+    C1005,230 1020,210 1035,190
+    C1050,170 1065,175 1080,168
+    C1095,161 1110,170 1125,175
+    L1125,420 L675,420 Z
+  " fill="url(#chartAreaGrad)"/>
+
+  <!-- BTC price line -->
+  <path d="
+    M675,355
+    C690,345 705,320 720,308
+    C735,296 750,285 765,275
+    C780,265 795,280 810,270
+    C825,260 840,245 855,235
+    C870,225 885,230 900,218
+    C915,206 930,195 945,185
+    C960,175 975,200 990,215
+    C1005,230 1020,210 1035,190
+    C1050,170 1065,175 1080,168
+    C1095,161 1110,170 1125,175
+  " fill="none" stroke="url(#chartLineGrad)" stroke-width="2.5"/>
+
+  <!-- Cost basis line (flat-ish, slightly rising — average cost per BTC) -->
+  <path d="
+    M675,368
+    L720,365 L765,362 L810,358 L855,354 L900,350 L945,346 L990,342 L1035,338 L1080,334 L1125,330
+  " fill="none" stroke="url(#costBasisGrad)" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Profit zone shading (between cost basis and price) -->
+  <path d="
+    M675,355 C690,345 705,320 720,308 C735,296 750,285 765,275 C780,265 795,280 810,270 C825,260 840,245 855,235 C870,225 885,230 900,218 C915,206 930,195 945,185 C960,175 975,200 990,215 C1005,230 1020,210 1035,190 C1050,170 1065,175 1080,168 C1095,161 1110,170 1125,175
+    L1125,330 L1080,334 L1035,338 L990,342 L945,346 L900,350 L855,354 L810,358 L765,362 L720,365 L675,368 Z
+  " fill="url(#profitZone)"/>
+
+  <!-- DCA buy markers (vertical tick marks on X axis) -->
+  <g stroke="#6366f1" stroke-opacity="0.5" stroke-width="1">
+    <line x1="680" y1="418" x2="680" y2="408"/>
+    <line x1="700" y1="418" x2="700" y2="411"/>
+    <line x1="720" y1="418" x2="720" y2="408"/>
+    <line x1="740" y1="418" x2="740" y2="411"/>
+    <line x1="760" y1="418" x2="760" y2="408"/>
+    <line x1="780" y1="418" x2="780" y2="411"/>
+    <line x1="800" y1="418" x2="800" y2="408"/>
+    <line x1="820" y1="418" x2="820" y2="411"/>
+    <line x1="840" y1="418" x2="840" y2="408"/>
+    <line x1="860" y1="418" x2="860" y2="411"/>
+    <line x1="880" y1="418" x2="880" y2="408"/>
+    <line x1="900" y1="418" x2="900" y2="411"/>
+    <line x1="920" y1="418" x2="920" y2="408"/>
+    <line x1="940" y1="418" x2="940" y2="411"/>
+    <line x1="960" y1="418" x2="960" y2="408"/>
+    <line x1="980" y1="418" x2="980" y2="411"/>
+    <line x1="1000" y1="418" x2="1000" y2="408"/>
+    <line x1="1020" y1="418" x2="1020" y2="411"/>
+    <line x1="1040" y1="418" x2="1040" y2="408"/>
+    <line x1="1060" y1="418" x2="1060" y2="411"/>
+    <line x1="1080" y1="418" x2="1080" y2="408"/>
+    <line x1="1100" y1="418" x2="1100" y2="411"/>
+    <line x1="1120" y1="418" x2="1120" y2="408"/>
+  </g>
+
+  <!-- End-point current price dot with glow -->
+  <circle cx="1125" cy="175" r="6" fill="#22c55e" opacity="0.3"/>
+  <circle cx="1125" cy="175" r="4" fill="#22c55e"/>
+
+  <!-- Legend -->
+  <g transform="translate(645, 435)">
+    <!-- BTC Price -->
+    <line x1="0" y1="6" x2="20" y2="6" stroke="url(#chartLineGrad)" stroke-width="2.5"/>
+    <text x="26" y="11" font-family="Inter, sans-serif" font-size="12" fill="#8b949e">BTC Price</text>
+    <!-- Avg Cost Basis -->
+    <line x1="110" y1="6" x2="130" y2="6" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <text x="136" y="11" font-family="Inter, sans-serif" font-size="12" fill="#8b949e">Avg. Cost Basis</text>
+    <!-- Profit zone -->
+    <rect x="270" y="0" width="14" height="12" rx="2" fill="rgba(34,197,94,0.25)"/>
+    <text x="290" y="11" font-family="Inter, sans-serif" font-size="12" fill="#4ade80">Profit Zone</text>
+  </g>
+
+  <!-- Result stats strip -->
+  <rect x="645" y="458" width="455" height="46" rx="10" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+  <g>
+    <!-- Invested -->
+    <text x="675" y="476" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">Invested</text>
+    <text x="675" y="494" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#e6edf3">$10,400</text>
+    <!-- Divider -->
+    <line x1="765" y1="462" x2="765" y2="500" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <!-- Value -->
+    <text x="785" y="476" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">Current Value</text>
+    <text x="785" y="494" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#4ade80">$38,700</text>
+    <!-- Divider -->
+    <line x1="895" y1="462" x2="895" y2="500" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <!-- Return -->
+    <text x="915" y="476" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">Total Return</text>
+    <text x="915" y="494" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#4ade80">+272.1%</text>
+    <!-- Divider -->
+    <line x1="1020" y1="462" x2="1020" y2="500" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <!-- Avg Price -->
+    <text x="1038" y="476" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">Avg Buy Price</text>
+    <text x="1038" y="494" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#fbbf24">$32,100</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(0,0,0,0.25)"/>
+  <line x1="0" y1="590" x2="1200" y2="590" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="56" y="615" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#8b949e">degen0x.com/tools/dca-calculator</text>
+  <text x="600" y="615" font-family="Inter, sans-serif" font-size="13" font-weight="400" fill="#6e7681" text-anchor="middle">Free · No Login · 100+ Assets</text>
+  <rect x="1000" y="599" width="144" height="24" rx="12" fill="rgba(99,102,241,0.12)" stroke="#6366f1" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="1072" y="616" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#818cf8" text-anchor="middle">📊 Try It Free</text>
+</svg>

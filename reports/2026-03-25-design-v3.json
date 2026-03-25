@@ -1,0 +1,46 @@
+{
+  "date": "2026-03-25",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited 2 new pages from build-v3 cycle (Cross-Chain Messaging Protocols Guide, Fully Onchain Gaming Guide), fixed 6 UX issues on cross-chain page (broken StructuredData prop, missing Home breadcrumb, missing OG/Twitter metadata, CSS typo, malformed schema call), added Twitter image to gaming page, and created 2 OG images.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Cross-Chain Messaging Guide: Fixed StructuredData component prop — was using 'schema' (non-existent prop) instead of 'data', causing structured data to not render",
+          "Cross-Chain Messaging Guide: Added missing 'Home' breadcrumb link (was only Learn > Guide, now Home > Learn > Guide)",
+          "Cross-Chain Messaging Guide: Added full OpenGraph metadata — url, publishedTime, modifiedTime, authors array, and images array for proper social sharing",
+          "Cross-Chain Messaging Guide: Added twitter card metadata (summary_large_image, title, description, images) — was completely missing",
+          "Cross-Chain Messaging Guide: Fixed CSS typo 'marginBackground' to 'marginBottom' on Wormhole warning box (line ~384), which caused missing bottom spacing",
+          "Cross-Chain Messaging Guide: Fixed generateArticleSchema call — added missing required fields (url, dateModified, author, image, wordCount) and corrected 'authors' to 'author' to match interface",
+          "Fully Onchain Gaming Guide: Added Twitter images array to metadata for consistent social card rendering"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: cross-chain-messaging-protocols-guide-2026 (1200x630 SVG) — Dark theme with 4 protocol nodes (LayerZero/Wormhole/Hyperlane/CCIP) connected in network visualization, color-coded per protocol, stats cards (159M+ messages, 168+ chains), DeFi + Infrastructure badges",
+          "OG image: fully-onchain-gaming-2026 (1200x630 SVG) — Dark theme with ECS grid pattern, 5 entity nodes in game-world style, 3 framework cards (MUD/Dojo/World Engine) color-coded, stats cards ($65B market, 1000+ TPS, $40M CCP), Gaming + Web3 badges"
+        ]
+      },
+      {
+        "title": "UX Audit Findings (Build-v3 Pages)",
+        "items": [
+          "Cross-Chain Messaging Guide: Well-structured 868-line article with TOC, 10 sections, comparison table with overflowX scroll (minWidth 800px). Uses glass-morphism info boxes throughout. Key issues were all metadata/schema related — the visual layout and content structure are solid.",
+          "Fully Onchain Gaming Guide: Excellent implementation — uses clamp() for responsive title, gradient text fill, proper semantic sections, framework comparison table with overflowX scroll (minWidth 900px), game cards with responsive grid, challenges section with color-coded warnings. Uses Next.js Link component for related articles. One of the best-structured pages in the codebase."
+        ]
+      }
+    ],
+    "files_modified": [
+      "src/app/learn/cross-chain-messaging-protocols-guide-2026/page.tsx",
+      "src/app/learn/fully-onchain-gaming-autonomous-worlds-guide-2026/page.tsx"
+    ],
+    "files_created": [
+      "public/og-cross-chain-messaging-protocols-guide-2026.svg",
+      "public/og-fully-onchain-gaming-2026.svg",
+      "reports/2026-03-25-design-v3.json"
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

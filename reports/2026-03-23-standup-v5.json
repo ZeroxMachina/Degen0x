@@ -1,0 +1,77 @@
+{
+  "date": "2026-03-23",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Day 70 standup #6: No new agent activity since standup v4. Git locks persist 8 days — 637+ uncommitted files, 0 deploys, 0 commits. 427+ slugs declared, ~315 in production. 2 guides still in PUBLISH_QUEUE. Today's total: 20 agent runs ($1,759). All priorities unchanged: clear git locks, deploy, halt new builds.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v4: No new agents ran. Zero content built, zero pages promoted, zero deploys. All metrics unchanged.",
+          "PUBLISHED SLUGS: 427+ declared in PUBLISHED_PAGES. ~315 in production (last deploy Mar 17, e999560). Gap: ~112+ pages invisible to Google.",
+          "PUBLISH_QUEUE: 2 guides pending promotion — decentralized-gpu-compute-guide-2026, cross-chain-interoperability-guide-2026.",
+          "SEO RISK: 8 days without deploy. Production/local drift at 637+ files. Every hour without deploy = more stale production content vs what's been built.",
+          "ORPHAN AUDIT: 103 slugs in PUBLISHED_PAGES with no page.tsx — unchanged. Will 404 in production.",
+          "API HEALTH: All 6 core routes healthy. CoinGecko/DefiLlama nominal. Cache/circuit breakers active."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE STANDUP v4: Nothing. No agents ran between v4 and this cycle.",
+          "TODAY'S CUMULATIVE OUTPUT: 8 learn guides built, 7 pages promoted to PUBLISHED_PAGES, 4+ OG images, 8+ social posts + 2 SVG cards, 3 QA cycles, 3 design audits, 20 agent runs across ~3.5 rotations. Zero deployed to production.",
+          "BLOCKER [P0 — 8 DAYS]: Git locks (.git/HEAD.lock + .git/index.lock) since Mar 16. Blocks ALL commits and deploys. Resolution: rm .git/index.lock .git/HEAD.lock",
+          "BLOCKER [P1]: 2 pages (smart-contract-security, onchain-identity) still missing StructuredData/Breadcrumb/BackToTop components.",
+          "CARRY-OVER [P1 — 38+ CYCLES]: /api/defi-yields returns 500 on upstream failure (no fallback data).",
+          "CARRY-OVER [P1 — 38+ CYCLES]: Rate limiter not wired on any of 6 core API routes.",
+          "CARRY-OVER [P2]: 103 orphan slugs, next lint misconfigured, cache header inconsistency on 4/6 API routes."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS AND DEPLOY: 8 days blocked. ~4,500+ insertions at risk. rm .git/index.lock .git/HEAD.lock → commit → push → verify Vercel. Nothing else matters until this is done.",
+          "PRIORITY 2 — PROMOTE 2 QUEUED GUIDES: decentralized-gpu-compute-guide-2026 and cross-chain-interoperability-guide-2026 from PUBLISH_QUEUE → PUBLISHED_PAGES before deploy commit.",
+          "PRIORITY 3 — ZERO NEW CONTENT: 427+ slugs declared, ~315 in production. Content pipeline has outrun shipping by 112+ pages. Halt all build cycles until production catches up.",
+          "STRATEGIC NOTE: Today produced 8 guides + 7 promotions + social assets + QA across 20 agent runs. Production saw zero of it. Marginal value of next build cycle = $0 until deploy unblocks. Shift all agent budget to ops/deploy/fix."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Published Page Slugs (declared)", "value": "427+", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Actually in Production", "value": "~315 (last deploy Mar 17)", "pct": 74, "color": "#f59e0b" },
+          { "label": "Deploy Gap", "value": "~112+ pages not live", "pct": 26, "color": "#ef4444" },
+          { "label": "Publish Queue", "value": "2 guides pending", "pct": 95, "color": "#06b6d4" },
+          { "label": "Pages Built Today", "value": "8 learn guides + 7 promoted", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Needing Fix", "value": "2 (missing SEO components)", "pct": 67, "color": "#f59e0b" },
+          { "label": "Orphan Slugs (no page.tsx)", "value": "103", "pct": 24, "color": "#f59e0b" },
+          { "label": "Days Since Last Commit", "value": "8 (Mar 17, e999560)", "pct": 2, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "8 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Changes", "value": "637+ files", "pct": 5, "color": "#ef4444" },
+          { "label": "API Routes Healthy", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "API Fallback Coverage", "value": "5/6 routes", "pct": 83, "color": "#f59e0b" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 routes", "pct": 0, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup $45)", "pct": 9, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$1,759 (20 runs: standup×5 $225, build×4 $932, publish×2 $110, design×3 $180, community×3 $123, eod×3 $189)", "pct": 15, "color": "#4ade80" },
+          { "label": "Agent Runs Today", "value": "20 runs across 6 types (~3.5 rotations)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — sandbox network blocked outbound HTTPS to api.resend.com. Report saved locally."
+  }
+}

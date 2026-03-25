@@ -1,0 +1,114 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1525"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="profitGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#accentBar)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="200" r="200" fill="#22c55e" opacity="0.02"/>
+  <circle cx="1100" cy="450" r="160" fill="#6366f1" opacity="0.03"/>
+  <circle cx="100" cy="550" r="100" fill="#d97706" opacity="0.03"/>
+
+  <!-- Arbitrage spread visualization -->
+  <g transform="translate(650, 80)">
+    <!-- CEX price line -->
+    <text x="0" y="15" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06b6d4" font-weight="600">CEX Price</text>
+    <path d="M0 50 C40 45 80 55 120 48 C160 41 200 52 240 46 C280 40 320 50 360 44 C400 38 440 48 480 42"
+          fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.8"/>
+
+    <!-- DEX price line -->
+    <text x="0" y="115" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b5cf6" font-weight="600">DEX Price</text>
+    <path d="M0 130 C40 140 80 125 120 138 C160 150 200 130 240 142 C280 155 320 135 360 148 C400 160 440 140 480 152"
+          fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.8"/>
+
+    <!-- Spread arrows showing arbitrage opportunity -->
+    <line x1="120" y1="48" x2="120" y2="138" stroke="#22c55e" stroke-width="1" stroke-dasharray="4,4"/>
+    <polygon points="120,138 116,128 124,128" fill="#22c55e"/>
+    <polygon points="120,48 116,58 124,58" fill="#22c55e"/>
+    <text x="130" y="96" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#22c55e" font-weight="700">+0.8%</text>
+
+    <line x1="280" y1="40" x2="280" y2="155" stroke="#22c55e" stroke-width="1" stroke-dasharray="4,4"/>
+    <polygon points="280,155 276,145 284,145" fill="#22c55e"/>
+    <polygon points="280,40 276,50 284,50" fill="#22c55e"/>
+    <text x="290" y="100" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#22c55e" font-weight="700">+1.2%</text>
+
+    <line x1="440" y1="48" x2="440" y2="140" stroke="#22c55e" stroke-width="1" stroke-dasharray="4,4"/>
+    <polygon points="440,140 436,130 444,130" fill="#22c55e"/>
+    <polygon points="440,48 436,58 444,58" fill="#22c55e"/>
+    <text x="450" y="96" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#22c55e" font-weight="700">+0.5%</text>
+
+    <!-- Profit accumulation chart -->
+    <text x="0" y="210" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="600">CUMULATIVE P&amp;L</text>
+    <path d="M0 280 L60 275 L120 260 L180 255 L240 240 L300 225 L360 215 L420 200 L480 190"
+          fill="none" stroke="#22c55e" stroke-width="2"/>
+    <path d="M0 280 L60 275 L120 260 L180 255 L240 240 L300 225 L360 215 L420 200 L480 190 L480 300 L0 300 Z"
+          fill="url(#profitGrad)"/>
+    <line x1="0" y1="300" x2="480" y2="300" stroke="#30363d" stroke-width="0.5"/>
+  </g>
+
+  <!-- degen0x logo text -->
+  <text x="80" y="70" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="0.05em">degen0x</text>
+
+  <!-- Category badge -->
+  <rect x="80" y="100" width="100" height="30" rx="15" fill="#22c55e20" stroke="#22c55e60" stroke-width="1"/>
+  <text x="130" y="120" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22c55e" text-anchor="middle">TRADING</text>
+
+  <!-- Title -->
+  <text x="80" y="195" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">Crypto Arbitrage</text>
+  <text x="80" y="250" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">Strategies 2026</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="300" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#8b949e">CEX-DEX arb, funding rates, cross-chain &amp; delta-neutral</text>
+
+  <!-- Strategy type pills -->
+  <g transform="translate(80, 330)">
+    <rect x="0" y="0" width="100" height="36" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="50" y="23" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#06b6d4" font-weight="700" text-anchor="middle">CEX-DEX</text>
+
+    <rect x="115" y="0" width="120" height="36" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="175" y="23" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b5cf6" font-weight="700" text-anchor="middle">Cross-Chain</text>
+
+    <rect x="250" y="0" width="120" height="36" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="310" y="23" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#d97706" font-weight="700" text-anchor="middle">Funding Rate</text>
+
+    <rect x="385" y="0" width="120" height="36" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="445" y="23" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#22c55e" font-weight="700" text-anchor="middle">Delta Neutral</text>
+  </g>
+
+  <!-- Stats row -->
+  <g transform="translate(80, 400)">
+    <rect x="0" y="0" width="160" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="18" y="28" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="600">TYPICAL SPREAD</text>
+    <text x="18" y="55" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#22c55e" font-weight="800">0.1–2%</text>
+
+    <rect x="180" y="0" width="160" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="198" y="28" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="600">FUNDING RATE APR</text>
+    <text x="198" y="55" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#d97706" font-weight="800">15–50%+</text>
+
+    <rect x="360" y="0" width="160" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="378" y="28" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="600">SUCCESS RATE</text>
+    <text x="378" y="55" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#06b6d4" font-weight="800">~40%</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="rgba(0,0,0,0.3)"/>
+  <text x="80" y="612" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#6e7681" font-weight="600">degen0x.com</text>
+  <text x="1120" y="612" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="end">March 2026</text>
+</svg>

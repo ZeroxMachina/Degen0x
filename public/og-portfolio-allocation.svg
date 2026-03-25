@@ -1,0 +1,67 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="300" cy="350" r="200" fill="#8b5cf6" opacity="0.04"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <text x="60" y="70" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="2">degen0x</text>
+
+  <rect x="60" y="140" width="65" height="28" rx="14" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="92" y="159" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b5cf6" text-anchor="middle">Tool</text>
+
+  <text x="60" y="250" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#e6edf3" letter-spacing="-1">Portfolio Allocation</text>
+  <text x="60" y="305" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#8b949e">Optimize Your Crypto Portfolio Strategy</text>
+
+  <!-- Donut chart mockup -->
+  <g transform="translate(850, 300)">
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#6366f1" stroke-width="30" stroke-dasharray="200 554" stroke-dashoffset="0"/>
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#0891b2" stroke-width="30" stroke-dasharray="150 604" stroke-dashoffset="-200"/>
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#d97706" stroke-width="30" stroke-dasharray="100 654" stroke-dashoffset="-350"/>
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#22c55e" stroke-width="30" stroke-dasharray="80 674" stroke-dashoffset="-450"/>
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#8b5cf6" stroke-width="30" stroke-dasharray="224 530" stroke-dashoffset="-530"/>
+    <circle cx="0" cy="0" r="90" fill="#080d1c"/>
+    <text x="0" y="-8" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3" text-anchor="middle">$82.4K</text>
+    <text x="0" y="18" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">Total Value</text>
+  </g>
+
+  <!-- Allocation breakdown -->
+  <g transform="translate(60, 360)">
+    <rect x="0" y="0" width="600" height="150" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="24" y="35" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" letter-spacing="1">ALLOCATION</text>
+
+    <circle cx="30" cy="68" r="6" fill="#6366f1"/>
+    <text x="45" y="73" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#e6edf3">BTC 35%</text>
+
+    <circle cx="150" cy="68" r="6" fill="#0891b2"/>
+    <text x="165" y="73" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#e6edf3">ETH 25%</text>
+
+    <circle cx="270" cy="68" r="6" fill="#d97706"/>
+    <text x="285" y="73" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#e6edf3">SOL 15%</text>
+
+    <circle cx="390" cy="68" r="6" fill="#22c55e"/>
+    <text x="405" y="73" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#e6edf3">Stables 12%</text>
+
+    <circle cx="530" cy="68" r="6" fill="#8b5cf6"/>
+    <text x="545" y="73" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#e6edf3">DeFi 13%</text>
+
+    <!-- Bar chart -->
+    <rect x="24" y="95" width="210" height="12" rx="6" fill="#6366f1" opacity="0.7"/>
+    <rect x="24" y="115" width="150" height="12" rx="6" fill="#0891b2" opacity="0.7"/>
+    <rect x="24" y="135" width="90" height="12" rx="6" fill="#d97706" opacity="0.7"/>
+  </g>
+
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="616" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#6e7681">degen0x.com</text>
+  <text x="1140" y="616" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">Free Tool</text>
+</svg>

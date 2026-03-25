@@ -1,0 +1,117 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0a0f22"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="fearGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="chartClip">
+      <rect x="60" y="320" width="520" height="160" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Accent bar top -->
+  <rect width="1200" height="4" fill="url(#accentBar)"/>
+
+  <!-- Decorative glow circles -->
+  <circle cx="150" cy="500" r="200" fill="#ef4444" opacity="0.04" filter="url(#softGlow)"/>
+  <circle cx="1050" cy="150" r="180" fill="#22c55e" opacity="0.03" filter="url(#softGlow)"/>
+
+  <!-- degen0x logo text -->
+  <text x="60" y="60" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" letter-spacing="0.05em">degen0x</text>
+
+  <!-- Badge -->
+  <rect x="60" y="85" width="220" height="32" rx="16" fill="#ef4444" opacity="0.15"/>
+  <text x="80" y="106" fill="#ef4444" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="0.08em">EXTREME FEAR STREAK</text>
+
+  <!-- Main title -->
+  <text x="60" y="175" fill="#e6edf3" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" letter-spacing="-0.02em">46 Days of Extreme Fear.</text>
+  <text x="60" y="235" fill="#e6edf3" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" letter-spacing="-0.02em">BTC Just Reclaimed $71K.</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="280" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="400">Longest fear streak since FTX collapse — and price is going UP.</text>
+
+  <!-- Mini fear chart area (stylized) -->
+  <rect x="60" y="320" width="520" height="160" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Chart label -->
+  <text x="80" y="348" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">FEAR &amp; GREED INDEX — LAST 60 DAYS</text>
+
+  <!-- Simplified fear line chart -->
+  <polyline points="80,430 120,420 160,435 200,445 240,455 280,460 320,458 360,462 400,465 440,460 480,455 520,440 540,430 555,410"
+    fill="none" stroke="url(#fearGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Area fill -->
+  <polygon points="80,430 120,420 160,435 200,445 240,455 280,460 320,458 360,462 400,465 440,460 480,455 520,440 540,430 555,410 555,465 80,465"
+    fill="#ef4444" opacity="0.08"/>
+
+  <!-- Fear zone label -->
+  <line x1="80" y1="405" x2="555" y2="405" stroke="#ef4444" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.4"/>
+  <text x="82" y="400" fill="#ef4444" font-family="Inter, system-ui, sans-serif" font-size="10" opacity="0.6">FEAR ZONE (25)</text>
+
+  <!-- Current value dot -->
+  <circle cx="555" cy="410" r="6" fill="#ef4444" filter="url(#glow)"/>
+  <text x="555" y="395" fill="#ef4444" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">11</text>
+
+  <!-- Stat boxes (right side) -->
+  <!-- Box 1: BTC Price -->
+  <rect x="640" y="85" width="240" height="110" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="665" y="118" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500" letter-spacing="0.05em">BTC PRICE</text>
+  <text x="665" y="158" fill="#22c55e" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800">$71,043</text>
+  <text x="665" y="180" fill="#22c55e" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">+3.79% relief rally</text>
+
+  <!-- Box 2: ETH -->
+  <rect x="910" y="85" width="240" height="110" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="935" y="118" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500" letter-spacing="0.05em">ETH</text>
+  <text x="935" y="158" fill="#22c55e" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800">+5.16%</text>
+  <text x="935" y="180" fill="#22c55e" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">Outperforming BTC</text>
+
+  <!-- Box 3: Fear & Greed -->
+  <rect x="640" y="220" width="240" height="110" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="665" y="253" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500" letter-spacing="0.05em">FEAR &amp; GREED</text>
+  <text x="665" y="293" fill="#ef4444" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800">11</text>
+  <text x="730" y="293" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="500">/ 100</text>
+  <text x="665" y="315" fill="#ef4444" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">46 consecutive days</text>
+
+  <!-- Box 4: Spot ETF Inflows -->
+  <rect x="910" y="220" width="240" height="110" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="935" y="253" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500" letter-spacing="0.05em">SPOT BTC ETF (MAR)</text>
+  <text x="935" y="293" fill="#06b6d4" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800">$1.4B</text>
+  <text x="935" y="315" fill="#06b6d4" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">Monthly inflows</text>
+
+  <!-- Signal boxes bottom right -->
+  <rect x="640" y="360" width="510" height="50" rx="12" fill="rgba(34,197,94,0.06)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+  <circle cx="670" cy="385" r="6" fill="#22c55e"/>
+  <text x="690" y="390" fill="#e6edf3" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="500">Historically: extreme fear + price strength = 15-20% rally within 30 days</text>
+
+  <rect x="640" y="425" width="510" height="50" rx="12" fill="rgba(6,182,212,0.06)" stroke="rgba(6,182,212,0.15)" stroke-width="1"/>
+  <circle cx="670" cy="450" r="6" fill="#06b6d4"/>
+  <text x="690" y="455" fill="#e6edf3" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="500">Stablecoin supply $304B ATH — dry powder waiting on sidelines</text>
+
+  <!-- Bottom bar -->
+  <rect y="595" width="1200" height="35" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="618" fill="#6e7681" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500">degen0x.com/tools/fear-greed-timeline</text>
+  <text x="1140" y="618" fill="#6e7681" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500" text-anchor="end">Mar 24, 2026</text>
+</svg>

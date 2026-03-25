@@ -1,0 +1,49 @@
+import { Metadata } from "next";
+import BabylonClient from "./BabylonClient";
+
+export const metadata: Metadata = {
+  title: "Babylon Protocol: Bitcoin Staking Guide 2026 — $4.2B TVL | degen0x",
+  description:
+    "Complete guide to Babylon Protocol — the first native Bitcoin staking solution with $4.2B TVL, 180K+ BTC staked, and 5-9% APR. How Bitcoin staking works, BABY token, risks, and how to start earning yield on BTC.",
+  keywords: [
+    "babylon protocol",
+    "bitcoin staking",
+    "babylon staking guide",
+    "BABY token",
+    "BTC yield",
+    "bitcoin defi",
+    "pos security",
+    "babylon review 2026",
+    "native bitcoin staking",
+  ],
+  openGraph: {
+    title: "Babylon Protocol: Bitcoin Staking Guide 2026",
+    description:
+      "$4.2B TVL. 180K+ BTC staked. Complete guide to native Bitcoin staking.",
+    type: "article",
+    url: "https://degen0x.com/ecosystem/babylon-protocol",
+    publishedTime: "2026-03-17T00:00:00Z",
+    modifiedTime: "2026-03-17T00:00:00Z",
+    images: [
+      {
+        url: "https://degen0x.com/api/og?title=Babylon+Protocol:+Bitcoin+Staking+Guide+2026&category=Ecosystem&type=page",
+        width: 1200,
+        height: 630,
+        alt: "Babylon Protocol Guide on degen0x",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Babylon Protocol: Bitcoin Staking Guide 2026 | degen0x",
+    description:
+      "$4.2B TVL. 180K+ BTC staked. 5-9% APR. Complete Bitcoin staking guide inside.",
+    images: [
+      "https://degen0x.com/api/og?title=Babylon+Protocol:+Bitcoin+Staking+Guide+2026&category=Ecosystem&type=page",
+    ],
+  },
+};
+
+export default function BabylonProtocolPage() {
+  return <BabylonClient />;
+}

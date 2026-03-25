@@ -1,0 +1,74 @@
+{
+  "date": "2026-03-24",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Day 71 cycle-close: 0 commits, 0 deploys, 0 pages promoted. Git locks now 8 days old (since Mar 16) — single blocker for entire pipeline. 716 uncommitted files (668 untracked + 47 modified). Previously flagged client-component metadata bugs on 2 learn guides are NOW FIXED in working tree. TS errors in structured-data.examples.ts (masked by ignoreBuildErrors). Production unreachable from sandbox — cannot verify live health. All work trapped in uncommitted drift.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "BUG FIX VERIFIED: smart-contract-security-guide + onchain-identity-guide no longer use 'use client' with metadata export. Both are now proper server components with metadata. Ready for promotion.",
+          "TYPESCRIPT ERRORS: structured-data.examples.ts has 25+ TS errors (Expression expected, missing '>'). File exists on disk but was supposedly deleted per git diff. Masked by ignoreBuildErrors:true — won't fail Vercel build but is tech debt.",
+          "ORPHAN AUDIT: 103 slugs in PUBLISHED_PAGES still have no matching page.tsx — unchanged from previous cycles. These will 404 in production.",
+          "PAGE COUNT: 468 total slugs in PUBLISHED_PAGES. Published page count grew from 413 to ~468 in uncommitted changes (55 new slugs added in working tree).",
+          "PRODUCTION HEALTH: Cannot verify — degen0x.com blocked from sandbox network. No live page status checks possible this cycle.",
+          "BUILD CONFIG: ignoreBuildErrors:true continues to mask real TS errors. Recommend addressing structured-data.examples.ts before it causes runtime issues."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "API ROUTE SOURCE REVIEW: All 6 core routes verified in source — /api/prices (60s TTL), /api/trending (300s), /api/fear-greed (600s), /api/market-metrics (60s), /api/market-dominance (300s), /api/defi-yields (300s).",
+          "CACHE-CONTROL HEADERS: All 6 routes set proper Cache-Control with stale-while-revalidate. Appropriate TTLs for data freshness.",
+          "FALLBACK COVERAGE: 5/6 routes have fallback — prices (stale cache), trending (stale cache), fear-greed (stale cache), market-metrics (hardcoded mock), market-dominance (hardcoded + stale). /api/defi-yields still returns 500 on upstream failure — NO fallback. Carry-over P1.",
+          "RATE LIMITER: 0/6 core API routes have rate limiters wired. Library exists at src/lib/rate-limiter.ts but not connected. Carry-over P1 — flagged 36+ cycles.",
+          "FEAR-GREED BUG: Missing Cache-Control header on fallback/stale response path. Only fresh responses get proper headers.",
+          "X-CACHE-SOURCE: Only prices + market-dominance include debugging header. 4/6 routes missing. Carry-over P2.",
+          "PRODUCTION VERIFICATION: Cannot reach API endpoints from sandbox — no live data freshness check possible."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "GIT LOCKS PERSIST [P0]: .git/HEAD.lock (Mar 16 11:17) + .git/index.lock (Mar 16 13:06) — now 8 days old. Cannot commit, push, or trigger Vercel deploy.",
+          "LAST DEPLOY: e999560 on Mar 17 — 7 days ago. Production running stale Mar 17 build.",
+          "WORKING TREE DRIFT: 716 files changed (668 untracked new + 47 modified tracked). Up from 631 files last cycle. Includes middleware.ts, next.config.ts, layout.tsx, globals.css, and hundreds of new page.tsx files.",
+          "VERCEL STATUS: Cannot verify — vercelstatus.com blocked from sandbox. Assume operational (no user reports of downtime).",
+          "DRIFT RISK: CRITICAL — 7 days of accumulated changes. When locks clear and deploy happens, the diff will be enormous. High regression risk. Recommend staged commits by category (API routes, new pages, bug fixes).",
+          "ACTION REQUIRED: rm .git/index.lock .git/HEAD.lock → staged commits → push → Vercel auto-deploy. This is the single action that unblocks the entire pipeline."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: 0 commits, 0 deploys, 0 pages promoted. All work remains in uncommitted working tree.",
+          "WORKING TREE PROGRESS: Client-component metadata bugs fixed on 2 learn guides. ~55 new page slugs added to published-pages.ts. Multiple new page.tsx files created across crypto-cards, crypto-loans, defi-lending, investing, nfts, spending, taxes, wallets, web3-business verticals.",
+          "BLOCKER [P0]: Git locks — 8 days, longest blocking streak ever. Resolution unchanged: rm .git/index.lock .git/HEAD.lock. Requires Jefe's direct action or manual intervention.",
+          "CARRY-OVER [P1]: /api/defi-yields missing fallback data (flagged 36+ cycles).",
+          "CARRY-OVER [P1]: Rate limiter not wired on 6 API routes (flagged 36+ cycles).",
+          "CARRY-OVER [P2]: 103 orphan slugs in PUBLISHED_PAGES.",
+          "CARRY-OVER [P2]: X-Cache-Source header missing on 4/6 API routes.",
+          "CARRY-OVER [P2]: structured-data.examples.ts has TS errors (masked by build config).",
+          "NEXT CYCLE PRIORITY: Clear git locks → staged commits (API, pages, fixes separately) → push → verify Vercel build → promote queued pages."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages (in config)", "value": "468 slugs", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Actually Deployed", "value": "413 (Mar 17 build)", "pct": 88, "color": "#f59e0b" },
+          { "label": "Days Since Last Deploy", "value": "7 days (e999560, Mar 17)", "pct": 3, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "8 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Changes", "value": "716 files (668 new + 47 modified)", "pct": 3, "color": "#ef4444" },
+          { "label": "API Fallback Coverage", "value": "5/6 routes", "pct": 83, "color": "#f59e0b" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 routes", "pct": 0, "color": "#ef4444" },
+          { "label": "Orphan Slugs (404 risk)", "value": "103 pages", "pct": 22, "color": "#ef4444" },
+          { "label": "Flagged Bugs Fixed", "value": "2/2 client-component bugs", "pct": 100, "color": "#4ade80" },
+          { "label": "Production Reachability", "value": "Blocked (sandbox egress)", "pct": 0, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

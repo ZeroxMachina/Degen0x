@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="50%" stop-color="#0a1028"/>
+      <stop offset="100%" stop-color="#080d1c"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="25%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="75%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="gaugeClip">
+      <rect x="60" y="320" width="480" height="240" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="630" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="630" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="630" stroke="#fff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="630" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Decorative glow orbs -->
+  <circle cx="150" cy="450" r="120" fill="#4f46e5" opacity="0.06" filter="url(#softGlow)"/>
+  <circle cx="1050" cy="200" r="100" fill="#0891b2" opacity="0.05" filter="url(#softGlow)"/>
+  <circle cx="900" cy="500" r="80" fill="#d97706" opacity="0.04" filter="url(#softGlow)"/>
+
+  <!-- Logo area -->
+  <g transform="translate(60, 36)">
+    <circle cx="16" cy="16" r="14" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.8"/>
+    <text x="16" y="21" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="800" fill="#818cf8" text-anchor="middle">0x</text>
+    <text x="40" y="22" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#8b949e" letter-spacing="0.05em">degen0x</text>
+  </g>
+
+  <!-- FOMC Badge -->
+  <g transform="translate(1010, 30)">
+    <rect x="0" y="0" width="140" height="36" rx="18" fill="rgba(239, 68, 68, 0.15)" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1"/>
+    <text x="70" y="23" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#ef4444" text-anchor="middle">FOMC T-1</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="60" y="120" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">The Sentiment Disconnect</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="158" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Price vs. Fear — the widest gap since the $67K → $108K run</text>
+
+  <!-- LEFT PANEL: BTC Price Card -->
+  <g transform="translate(60, 190)">
+    <rect x="0" y="0" width="500" height="200" rx="20" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+    <!-- BTC Price -->
+    <text x="30" y="40" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" letter-spacing="0.05em">BITCOIN</text>
+    <text x="30" y="80" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="900" fill="#22c55e" filter="url(#glow)">$75,000</text>
+    <text x="310" y="80" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#22c55e">+25%</text>
+    <text x="365" y="80" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">from Feb low</text>
+
+    <!-- Mini price chart (uptrend) -->
+    <polyline points="30,170 80,165 130,155 180,150 220,145 260,130 300,125 340,118 380,115 420,105 460,100"
+      fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="30,170 80,165 130,155 180,150 220,145 260,130 300,125 340,118 380,115 420,105 460,100 460,180 30,180"
+      fill="url(#greenGlow)" stroke="none"/>
+
+    <!-- 6-week high label -->
+    <rect x="340" y="85" width="130" height="24" rx="12" fill="rgba(34, 197, 94, 0.12)" stroke="rgba(34, 197, 94, 0.25)" stroke-width="1"/>
+    <text x="405" y="101" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#22c55e" text-anchor="middle">6-WEEK HIGH</text>
+  </g>
+
+  <!-- RIGHT PANEL: Fear & Greed -->
+  <g transform="translate(600, 190)">
+    <rect x="0" y="0" width="540" height="200" rx="20" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+    <text x="30" y="40" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" letter-spacing="0.05em">FEAR &amp; GREED INDEX</text>
+
+    <!-- Big number -->
+    <text x="30" y="95" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="900" fill="#ef4444" filter="url(#glow)">15</text>
+    <text x="110" y="82" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#ef4444">EXTREME</text>
+    <text x="110" y="100" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#ef4444">FEAR</text>
+
+    <!-- Gauge bar -->
+    <rect x="30" y="125" width="480" height="12" rx="6" fill="rgba(255,255,255,0.06)"/>
+    <rect x="30" y="125" width="480" height="12" rx="6" fill="url(#gaugeGrad)" opacity="0.3"/>
+    <!-- Needle at 15% -->
+    <circle cx="102" cy="131" r="8" fill="#ef4444" stroke="#080d1c" stroke-width="3" filter="url(#glow)"/>
+
+    <!-- Labels under gauge -->
+    <text x="30" y="155" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681">0</text>
+    <text x="150" y="155" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681">25</text>
+    <text x="270" y="155" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681">50</text>
+    <text x="390" y="155" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681">75</text>
+    <text x="500" y="155" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681">100</text>
+
+    <!-- Historical comparison -->
+    <rect x="30" y="168" width="480" height="24" rx="8" fill="rgba(139, 92, 246, 0.08)" stroke="rgba(139, 92, 246, 0.15)" stroke-width="1"/>
+    <text x="40" y="184" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">Nov 2024: F&amp;G at 15, BTC at $67K →</text>
+    <text x="305" y="184" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#22c55e">$108K two months later (+61%)</text>
+  </g>
+
+  <!-- Bottom Stats Row -->
+  <g transform="translate(60, 420)">
+    <!-- ETF Inflows -->
+    <rect x="0" y="0" width="260" height="80" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <text x="20" y="28" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" letter-spacing="0.05em">ETF INFLOWS</text>
+    <text x="20" y="55" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#06b6d4">$1.3B+</text>
+    <text x="135" y="55" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">in March</text>
+    <text x="20" y="72" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#22c55e">6 straight days ▲</text>
+
+    <!-- Fed Decision -->
+    <rect x="280" y="0" width="260" height="80" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <text x="300" y="28" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" letter-spacing="0.05em">FED DECISION</text>
+    <text x="300" y="55" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#f59e0b">Tomorrow</text>
+    <text x="300" y="72" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">2pm ET · 92% odds hold · dot plot is the trade</text>
+
+    <!-- Pages Live -->
+    <rect x="560" y="0" width="260" height="80" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <text x="580" y="28" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" letter-spacing="0.05em">DEGEN0X PAGES</text>
+    <text x="580" y="55" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#6366f1">380+</text>
+    <text x="645" y="55" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">live pages</text>
+    <text x="580" y="72" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#4ade80">Tools · Guides · Reviews</text>
+
+    <!-- Tax Countdown -->
+    <rect x="840" y="0" width="260" height="80" rx="16" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <text x="860" y="28" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" letter-spacing="0.05em">TAX DEADLINE</text>
+    <text x="860" y="55" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#f59e0b">28 days</text>
+    <text x="860" y="72" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">April 15 · IRS now gets 1099s</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="530" width="1200" height="100" fill="rgba(0, 0, 0, 0.4)"/>
+  <rect x="0" y="530" width="1200" height="1" fill="rgba(255, 255, 255, 0.06)"/>
+
+  <!-- CTA -->
+  <text x="60" y="570" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">Full FOMC scenario breakdown + live tracker</text>
+  <text x="60" y="595" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#06b6d4">degen0x.com/learn/fomc-fed-rate-crypto-guide</text>
+
+  <!-- Bottom right branding -->
+  <text x="1140" y="580" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#6366f1" text-anchor="end">degen0x.com</text>
+  <text x="1140" y="598" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-anchor="end">Free crypto tools &amp; research</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#brandGrad)"/>
+</svg>

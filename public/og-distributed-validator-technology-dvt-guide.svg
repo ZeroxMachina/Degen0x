@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0f1629"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="ethGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative glow circles -->
+  <circle cx="950" cy="200" r="180" fill="#8b5cf6" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="1050" cy="400" r="120" fill="#6366f1" opacity="0.05" filter="url(#glow)"/>
+  <circle cx="200" cy="500" r="100" fill="#0891b2" opacity="0.04" filter="url(#glow)"/>
+
+  <!-- DVT node diagram -->
+  <g transform="translate(850, 140)" opacity="0.25">
+    <!-- Central node -->
+    <circle cx="100" cy="100" r="20" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="100" cy="100" r="6" fill="#8b5cf6"/>
+    <!-- Outer nodes -->
+    <circle cx="30" cy="30" r="14" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <circle cx="30" cy="30" r="4" fill="#6366f1"/>
+    <circle cx="170" cy="30" r="14" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+    <circle cx="170" cy="30" r="4" fill="#06b6d4"/>
+    <circle cx="30" cy="170" r="14" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="30" cy="170" r="4" fill="#22c55e"/>
+    <circle cx="170" cy="170" r="14" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="170" cy="170" r="4" fill="#f59e0b"/>
+    <!-- Connections -->
+    <line x1="44" y1="44" x2="84" y2="84" stroke="#6366f1" stroke-width="1" opacity="0.6"/>
+    <line x1="156" y1="44" x2="116" y2="84" stroke="#06b6d4" stroke-width="1" opacity="0.6"/>
+    <line x1="44" y1="156" x2="84" y2="116" stroke="#22c55e" stroke-width="1" opacity="0.6"/>
+    <line x1="156" y1="156" x2="116" y2="116" stroke="#f59e0b" stroke-width="1" opacity="0.6"/>
+    <!-- Cross connections (mesh) -->
+    <line x1="44" y1="30" x2="156" y2="30" stroke="#30363d" stroke-width="0.8" stroke-dasharray="4,4"/>
+    <line x1="30" y1="44" x2="30" y2="156" stroke="#30363d" stroke-width="0.8" stroke-dasharray="4,4"/>
+    <line x1="170" y1="44" x2="170" y2="156" stroke="#30363d" stroke-width="0.8" stroke-dasharray="4,4"/>
+    <line x1="44" y1="170" x2="156" y2="170" stroke="#30363d" stroke-width="0.8" stroke-dasharray="4,4"/>
+  </g>
+
+  <!-- Key icon -->
+  <g transform="translate(60, 120)" opacity="0.6">
+    <circle cx="15" cy="15" r="12" fill="none" stroke="#8b5cf6" stroke-width="2.5"/>
+    <line x1="27" y1="15" x2="55" y2="15" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="45" y1="15" x2="45" y2="25" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="55" y1="15" x2="55" y2="25" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Logo area -->
+  <text x="60" y="60" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#818cf8" letter-spacing="0.05em">degen0x</text>
+
+  <!-- Category badge -->
+  <rect x="60" y="230" width="110" height="30" rx="15" fill="#161b22" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="115" y="250" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b5cf6" text-anchor="middle">ETHEREUM</text>
+
+  <!-- Title -->
+  <text x="60" y="305" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Distributed Validator</text>
+  <text x="60" y="365" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Technology (DVT) Guide</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="415" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Key splitting, threshold signing &amp; how Obol/SSV solve</text>
+  <text x="60" y="443" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Ethereum staking centralization</text>
+
+  <!-- Stats bar -->
+  <g transform="translate(60, 480)" opacity="0.6">
+    <rect x="0" y="0" width="160" height="50" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="15" y="22" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681">SSV STAKED ETH</text>
+    <text x="15" y="40" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#22c55e">1.1M+ ETH</text>
+
+    <rect x="180" y="0" width="160" height="50" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="195" y="22" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681">OBOL VIA ETHERFI</text>
+    <text x="195" y="40" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#8b5cf6">258K ETH</text>
+
+    <rect x="360" y="0" width="160" height="50" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="375" y="22" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681">SSV OPERATORS</text>
+    <text x="375" y="40" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#06b6d4">800+</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="#0d1117" opacity="0.6"/>
+  <text x="60" y="612" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">degen0x.com</text>
+  <text x="1140" y="612" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">Updated March 2026</text>
+</svg>

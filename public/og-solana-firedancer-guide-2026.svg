@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1520"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#14F195"/>
+      <stop offset="50%" stop-color="#9945FF"/>
+      <stop offset="100%" stop-color="#14F195"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#14F195"/>
+      <stop offset="100%" stop-color="#9945FF"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#14F195"/>
+      <stop offset="100%" stop-color="#14F195" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9945FF"/>
+      <stop offset="100%" stop-color="#9945FF" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="950" cy="120" r="180" fill="#14F195" opacity="0.03"/>
+  <circle cx="1050" cy="350" r="120" fill="#9945FF" opacity="0.04"/>
+  <circle cx="200" cy="500" r="100" fill="#14F195" opacity="0.02"/>
+
+  <!-- degen0x logo text -->
+  <text x="60" y="65" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700" fill="#6366f1" opacity="0.9">degen0x</text>
+
+  <!-- Category badge -->
+  <rect x="60" y="90" width="185" height="28" rx="6" fill="#14F195" fill-opacity="0.12" stroke="#14F195" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="72" y="109" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#14F195">Validator Infrastructure</text>
+
+  <rect x="255" y="90" width="95" height="28" rx="6" fill="#9945FF" fill-opacity="0.12" stroke="#9945FF" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="267" y="109" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#c77dff">Advanced</text>
+
+  <!-- Title -->
+  <text x="60" y="180" font-family="Inter, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.02em">Solana Firedancer</text>
+  <text x="60" y="235" font-family="Inter, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.02em">Validator Client Guide</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="280" font-family="Inter, sans-serif" font-size="18" fill="#8b949e">Jump Crypto's C-based client: 1M+ TPS, tile architecture, 20%+ adoption</text>
+
+  <!-- Stats boxes -->
+  <rect x="60" y="320" width="200" height="85" rx="12" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+  <text x="80" y="355" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#14F195">1M+ TPS</text>
+  <text x="80" y="385" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Controlled Benchmark</text>
+
+  <rect x="280" y="320" width="200" height="85" rx="12" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+  <text x="300" y="355" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#9945FF">20%+</text>
+  <text x="300" y="385" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Staked SOL Adoption</text>
+
+  <rect x="500" y="320" width="200" height="85" rx="12" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08"/>
+  <text x="520" y="355" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#14F195">+18-28</text>
+  <text x="520" y="385" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">bps Higher Rewards</text>
+
+  <!-- Architecture tiles visualization -->
+  <g transform="translate(780, 140)">
+    <!-- Tile boxes -->
+    <rect x="0" y="0" width="130" height="40" rx="8" fill="#14F195" fill-opacity="0.15" stroke="#14F195" stroke-opacity="0.4"/>
+    <text x="15" y="25" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#14F195">Networking</text>
+
+    <rect x="150" y="0" width="130" height="40" rx="8" fill="#9945FF" fill-opacity="0.15" stroke="#9945FF" stroke-opacity="0.4"/>
+    <text x="165" y="25" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#c77dff">Block Prod</text>
+
+    <rect x="0" y="55" width="130" height="40" rx="8" fill="#14F195" fill-opacity="0.15" stroke="#14F195" stroke-opacity="0.4"/>
+    <text x="15" y="80" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#14F195">Execution</text>
+
+    <rect x="150" y="55" width="130" height="40" rx="8" fill="#9945FF" fill-opacity="0.15" stroke="#9945FF" stroke-opacity="0.4"/>
+    <text x="165" y="80" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#c77dff">Storage</text>
+
+    <rect x="75" y="110" width="130" height="40" rx="8" fill="#14F195" fill-opacity="0.15" stroke="#14F195" stroke-opacity="0.4"/>
+    <text x="90" y="135" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#14F195">Consensus</text>
+
+    <!-- Connecting lines -->
+    <line x1="65" y1="40" x2="65" y2="55" stroke="#14F195" stroke-opacity="0.3" stroke-width="1"/>
+    <line x1="215" y1="40" x2="215" y2="55" stroke="#9945FF" stroke-opacity="0.3" stroke-width="1"/>
+    <line x1="65" y1="95" x2="140" y2="110" stroke="#14F195" stroke-opacity="0.3" stroke-width="1"/>
+    <line x1="215" y1="95" x2="140" y2="110" stroke="#9945FF" stroke-opacity="0.3" stroke-width="1"/>
+
+    <text x="55" y="175" font-family="Inter, sans-serif" font-size="11" fill="#6e7681" text-anchor="middle">Tile-Based Architecture</text>
+  </g>
+
+  <!-- Performance comparison bars -->
+  <g transform="translate(780, 350)">
+    <text x="0" y="0" font-family="Inter, sans-serif" font-size="11" fill="#8b949e">Performance Comparison</text>
+
+    <text x="0" y="28" font-family="Inter, sans-serif" font-size="11" fill="#14F195" font-weight="600">Firedancer</text>
+    <rect x="90" y="16" width="280" height="18" rx="4" fill="url(#bar1)" fill-opacity="0.6"/>
+    <text x="380" y="30" font-family="Inter, sans-serif" font-size="10" fill="#14F195">1M+ TPS</text>
+
+    <text x="0" y="58" font-family="Inter, sans-serif" font-size="11" fill="#9945FF" font-weight="600">Agave</text>
+    <rect x="90" y="46" width="112" height="18" rx="4" fill="url(#bar2)" fill-opacity="0.6"/>
+    <text x="212" y="60" font-family="Inter, sans-serif" font-size="10" fill="#9945FF">~400K TPS</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="610" width="1200" height="20" fill="#14F195" fill-opacity="0.05"/>
+  <text x="60" y="575" font-family="Inter, sans-serif" font-size="14" fill="#6e7681">degen0x.com</text>
+  <text x="60" y="595" font-family="Inter, sans-serif" font-size="11" fill="#6e7681">Updated March 2026</text>
+</svg>

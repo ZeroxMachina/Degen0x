@@ -25,7 +25,7 @@ export default function GateoVsKucoin() {
     'Global accessibility without explicit US ban',
     'Competitive 0.2% spot fees',
     'Excellent copy trading feature',
-    ' 13-year operational history with no major breaches',
+    '13-year operational history with no major breaches',
     'Strong support for emerging market tokens',
   ];
 
@@ -60,31 +60,11 @@ export default function GateoVsKucoin() {
   ];
 
   const startupComparison = [
-    {
-      aspect: 'Program Name',
-      gateio: 'Gate.io Startup',
-      kucoin: 'KuCoin Spotlight'
-    },
-    {
-      aspect: 'How it Works',
-      gateio: 'Exclusive token distributions at launch',
-      kucoin: 'IEO (Initial Exchange Offering) model'
-    },
-    {
-      aspect: 'Access Requirements',
-      gateio: 'GT token holdings or account balance',
-      kucoin: 'KCS holdings (6+ KCS) or account balance'
-    },
-    {
-      aspect: 'Success Rate',
-      gateio: 'High quality curation, lower fraud',
-      kucoin: 'Good selection, some lower-quality projects'
-    },
-    {
-      aspect: 'User Voting',
-      gateio: 'Yes - vote on which projects launch',
-      kucoin: 'Limited - platform curated primarily'
-    },
+    { aspect: 'Program Name', gateio: 'Gate.io Startup', kucoin: 'KuCoin Spotlight' },
+    { aspect: 'How it Works', gateio: 'Exclusive token distributions at launch', kucoin: 'IEO (Initial Exchange Offering) model' },
+    { aspect: 'Access Requirements', gateio: 'GT token holdings or account balance', kucoin: 'KCS holdings (6+ KCS) or account balance' },
+    { aspect: 'Success Rate', gateio: 'High quality curation, lower fraud', kucoin: 'Good selection, some lower-quality projects' },
+    { aspect: 'User Voting', gateio: 'Yes - vote on which projects launch', kucoin: 'Limited - platform curated primarily' },
   ];
 
   const feeComparison = [
@@ -178,413 +158,274 @@ export default function GateoVsKucoin() {
         slug="compare/exchanges/gate-io-vs-kucoin"
       />
 
-      <div style={styles.container}>
-        <Breadcrumb items={[
-          { label: 'Compare', href: '/compare' },
-          { label: 'Exchanges', href: '/compare/exchanges' },
-          { label: 'Gate.io vs KuCoin', href: '/compare/exchanges/gate-io-vs-kucoin'}
-        ]} />
+      <div className="min-h-screen bg-[var(--bg,#0d1117)] text-[var(--text,#e6edf3)] px-4 sm:px-6 lg:px-8 py-6">
+        <div className="max-w-[1000px] mx-auto">
+          <Breadcrumb items={[
+            { label: 'Home', href: '/' },
+            { label: 'Compare', href: '/compare' },
+            { label: 'Exchanges', href: '/compare/exchanges' },
+            { label: 'Gate.io vs KuCoin' },
+          ]} />
 
-        <div style={styles.header}>
-          <h1 style={styles.title}>Gate.io vs KuCoin</h1>
-          <p style={styles.subtitle}>Altcoin Exchange Comparison: Tokens, Fees & Trading Features</p>
-        </div>
+          {/* Header */}
+          <header className="text-center mb-12 sm:mb-16">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-pink-500 to-indigo-500 bg-clip-text text-transparent">
+              Gate.io vs KuCoin
+            </h1>
+            <p className="text-base sm:text-lg text-[var(--text2,#8b949e)]">
+              Altcoin Exchange Comparison: Tokens, Fees &amp; Trading Features
+            </p>
+          </header>
 
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Feature Comparison Table</h2>
-          <div style={styles.tableWrapper}>
-            <table style={styles.table}>
-              <thead>
-                <tr style={styles.headerRow}>
-                  <th style={styles.headerCell}>Feature</th>
-                  <th style={styles.headerCell}>Gate.io</th>
-                  <th style={styles.headerCell}>KuCoin</th>
-                </tr>
-              </thead>
-              <tbody>
-                {comparisonData.map((row, idx) => (
-                  <tr key={idx} style={{...styles.row, backgroundColor: idx % 2 ? 'var(--surface2, #1c2330)' : 'transparent'}}>
-                    <td style={styles.cell}><strong>{row.feature}</strong></td>
-                    <td style={styles.cell}>{row.gateio}</td>
-                    <td style={styles.cell}>{row.kucoin}</td>
+          {/* Feature Comparison Table */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="feature-comparison">
+            <h2 id="feature-comparison" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Feature Comparison Table</h2>
+            <div className="overflow-x-auto rounded-xl border border-[var(--border,#30363d)] bg-[var(--surface,#161b22)]">
+              <table className="w-full text-sm border-collapse" aria-label="Gate.io vs KuCoin feature comparison">
+                <thead>
+                  <tr className="border-b-2 border-[var(--border,#30363d)]">
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-pink-500" scope="col">Feature</th>
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-pink-500" scope="col">Gate.io</th>
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-pink-500" scope="col">KuCoin</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
+                </thead>
+                <tbody>
+                  {comparisonData.map((row, idx) => (
+                    <tr key={idx} className={`border-b border-[var(--border,#30363d)] ${idx % 2 ? 'bg-[var(--surface2,#1c2330)]' : ''}`}>
+                      <td className="p-3 sm:p-4 font-semibold">{row.feature}</td>
+                      <td className="p-3 sm:p-4">{row.gateio}</td>
+                      <td className="p-3 sm:p-4">{row.kucoin}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Fee Comparison</h2>
-          <div style={styles.tableWrapper}>
-            <table style={styles.table}>
-              <thead>
-                <tr style={styles.headerRow}>
-                  <th style={styles.headerCell}>Fee Type</th>
-                  <th style={styles.headerCell}>Gate.io</th>
-                  <th style={styles.headerCell}>KuCoin</th>
-                  <th style={styles.headerCell}>Winner</th>
-                </tr>
-              </thead>
-              <tbody>
-                {feeComparison.map((row, idx) => (
-                  <tr key={idx} style={{...styles.row, backgroundColor: idx % 2 ? 'var(--surface2, #1c2330)' : 'transparent'}}>
-                    <td style={styles.cell}><strong>{row.type}</strong></td>
-                    <td style={styles.cell}>{row.gateio}</td>
-                    <td style={styles.cell}>{row.kucoin}</td>
-                    <td style={styles.cell}><strong style={{color: row.winner === 'Tie' ? '#fbbf24' : '#10b981'}}>{row.winner}</strong></td>
+          {/* Fee Comparison */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="fee-comparison">
+            <h2 id="fee-comparison" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Fee Comparison</h2>
+            <div className="overflow-x-auto rounded-xl border border-[var(--border,#30363d)] bg-[var(--surface,#161b22)]">
+              <table className="w-full text-sm border-collapse" aria-label="Gate.io vs KuCoin fee comparison">
+                <thead>
+                  <tr className="border-b-2 border-[var(--border,#30363d)]">
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-pink-500" scope="col">Fee Type</th>
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-pink-500" scope="col">Gate.io</th>
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-pink-500" scope="col">KuCoin</th>
+                    <th className="p-3 sm:p-4 text-left font-bold bg-[var(--surface2,#1c2330)] text-pink-500" scope="col">Winner</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
+                </thead>
+                <tbody>
+                  {feeComparison.map((row, idx) => (
+                    <tr key={idx} className={`border-b border-[var(--border,#30363d)] ${idx % 2 ? 'bg-[var(--surface2,#1c2330)]' : ''}`}>
+                      <td className="p-3 sm:p-4 font-semibold">{row.type}</td>
+                      <td className="p-3 sm:p-4">{row.gateio}</td>
+                      <td className="p-3 sm:p-4">{row.kucoin}</td>
+                      <td className="p-3 sm:p-4">
+                        <span className={`font-semibold ${row.winner === 'Tie' ? 'text-amber-400' : 'text-emerald-500'}`}>
+                          {row.winner}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Startup & IEO Programs</h2>
-          <div style={styles.startupTable}>
-            {startupComparison.map((item, idx) => (
-              <div key={idx} style={{...styles.startupRow, backgroundColor: idx % 2 ? 'var(--surface2, #1c2330)' : 'transparent'}}>
-                <div style={styles.startupAspect}><strong>{item.aspect}</strong></div>
-                <div style={styles.startupValue}>{item.gateio}</div>
-                <div style={styles.startupValue}>{item.kucoin}</div>
+          {/* Startup & IEO Programs */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="startup-comparison">
+            <h2 id="startup-comparison" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Startup &amp; IEO Programs</h2>
+            <div className="rounded-xl border border-[var(--border,#30363d)] bg-[var(--surface,#161b22)] overflow-hidden">
+              {/* Header row - hidden on mobile */}
+              <div className="hidden md:grid grid-cols-3 gap-0 p-4 bg-[var(--surface2,#1c2330)] border-b border-[var(--border,#30363d)]">
+                <span className="font-bold text-pink-500 text-sm">Aspect</span>
+                <span className="font-bold text-pink-500 text-sm">Gate.io</span>
+                <span className="font-bold text-pink-500 text-sm">KuCoin</span>
               </div>
-            ))}
-          </div>
-        </section>
-
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Quick Overview</h2>
-          <div style={styles.overviewGrid}>
-            <div style={styles.overviewCard}>
-              <h3 style={styles.overviewTitle}>🌍 Gate.io</h3>
-              <p style={styles.overviewBest}>Best for Altcoin Variety & Startups</p>
-              <p style={styles.overviewText}>
-                1,500+ cryptocurrencies, exclusive Startup program, up to 150x leverage, and democratic token voting. Perfect for aggressive altcoin hunters.
-              </p>
-              <p style={styles.overviewStats}>13M+ users • Founded 2013 • 150x max leverage</p>
-            </div>
-            <div style={styles.overviewCard}>
-              <h3 style={styles.overviewTitle}>💰 KuCoin</h3>
-              <p style={styles.overviewBest}>Best for Low Fees & Trading Bots</p>
-              <p style={styles.overviewText}>
-                Lowest 0.1% spot fees, advanced trading bot marketplace, strong KCS rewards, and trusted by 30M+ users. Best for cost-conscious traders.
-              </p>
-              <p style={styles.overviewStats}>30M+ users • Founded 2017 • 0.1% spot fees</p>
-            </div>
-          </div>
-        </section>
-
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Gate.io Pros & Cons</h2>
-          <div style={styles.prosConsGrid}>
-            <div>
-              <h3 style={styles.prosTitle}>✅ Pros</h3>
-              <ul style={styles.prosList}>
-                {gatioPros.map((pro, idx) => (
-                  <li key={idx} style={styles.prosItem}>{pro}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 style={styles.consTitle}>❌ Cons</h3>
-              <ul style={styles.prosList}>
-                {gatioCons.map((con, idx) => (
-                  <li key={idx} style={styles.prosItem}>{con}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>KuCoin Pros & Cons</h2>
-          <div style={styles.prosConsGrid}>
-            <div>
-              <h3 style={styles.prosTitle}>✅ Pros</h3>
-              <ul style={styles.prosList}>
-                {kucoipPros.map((pro, idx) => (
-                  <li key={idx} style={styles.prosItem}>{pro}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 style={styles.consTitle}>❌ Cons</h3>
-              <ul style={styles.prosList}>
-                {kucoipCons.map((con, idx) => (
-                  <li key={idx} style={styles.prosItem}>{con}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Use Case Comparison</h2>
-          <div style={styles.useCaseGrid}>
-            {useCases.map((useCase, idx) => (
-              <div key={idx} style={styles.useCaseCard}>
-                <h4 style={styles.useCaseTitle}>{useCase.title}</h4>
-                <div style={styles.useCaseComparison}>
-                  <p><strong style={{color: '#0ea5e9'}}>Gate.io:</strong> {useCase.gateio}</p>
-                  <p><strong style={{color: '#0ea5e9'}}>KuCoin:</strong> {useCase.kucoin}</p>
+              {startupComparison.map((item, idx) => (
+                <div key={idx} className={`p-4 border-b border-[var(--border,#30363d)] last:border-b-0 ${idx % 2 ? 'bg-[var(--surface2,#1c2330)]' : ''}`}>
+                  {/* Mobile: stacked */}
+                  <div className="md:hidden space-y-2">
+                    <p className="font-bold text-sm">{item.aspect}</p>
+                    <p className="text-sm text-[var(--text2,#8b949e)]"><span className="text-pink-500 font-medium">Gate.io:</span> {item.gateio}</p>
+                    <p className="text-sm text-[var(--text2,#8b949e)]"><span className="text-pink-500 font-medium">KuCoin:</span> {item.kucoin}</p>
+                  </div>
+                  {/* Desktop: grid */}
+                  <div className="hidden md:grid grid-cols-3 gap-0">
+                    <span className="font-bold text-sm">{item.aspect}</span>
+                    <span className="text-sm text-[var(--text2,#8b949e)]">{item.gateio}</span>
+                    <span className="text-sm text-[var(--text2,#8b949e)]">{item.kucoin}</span>
+                  </div>
                 </div>
-                <p style={styles.useCaseWinner}><strong>Winner:</strong> {useCase.winner}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Trading Bot Comparison</h2>
-          <div style={styles.botComparison}>
-            <div style={styles.botCard}>
-              <h3 style={styles.botTitle}>KuCoin Bot Marketplace</h3>
-              <ul style={styles.botList}>
-                <li>Grid bots (spot and futures)</li>
-                <li>DCA bots with flexible intervals</li>
-                <li>Smart rebalance bots</li>
-                <li>Infinity grid bots</li>
-                <li>Community bot templates</li>
-                <li>Most advanced ecosystem</li>
-              </ul>
+              ))}
             </div>
-            <div style={styles.botCard}>
-              <h3 style={styles.botTitle}>Gate.io Bots</h3>
-              <ul style={styles.botList}>
-                <li>Grid bots (spot and futures)</li>
-                <li>DCA bots</li>
-                <li>Basic automation features</li>
-                <li>Less mature ecosystem</li>
-                <li>Fewer templates available</li>
-                <li>Growing but limited selection</li>
-              </ul>
+          </section>
+
+          {/* Quick Overview Cards */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="quick-overview">
+            <h2 id="quick-overview" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Quick Overview</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+              <article className="bg-[var(--surface,#161b22)] border border-[var(--border,#30363d)] rounded-xl p-5 sm:p-6 hover:border-pink-500/30 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold mb-2">🌍 Gate.io</h3>
+                <p className="text-sm text-pink-500 font-semibold mb-3">Best for Altcoin Variety &amp; Startups</p>
+                <p className="text-sm text-[var(--text2,#8b949e)] leading-relaxed mb-3">
+                  1,500+ cryptocurrencies, exclusive Startup program, up to 150x leverage, and democratic token voting. Perfect for aggressive altcoin hunters.
+                </p>
+                <p className="text-xs text-indigo-400 font-semibold">13M+ users · Founded 2013 · 150x max leverage</p>
+              </article>
+              <article className="bg-[var(--surface,#161b22)] border border-[var(--border,#30363d)] rounded-xl p-5 sm:p-6 hover:border-pink-500/30 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold mb-2">💰 KuCoin</h3>
+                <p className="text-sm text-pink-500 font-semibold mb-3">Best for Low Fees &amp; Trading Bots</p>
+                <p className="text-sm text-[var(--text2,#8b949e)] leading-relaxed mb-3">
+                  Lowest 0.1% spot fees, advanced trading bot marketplace, strong KCS rewards, and trusted by 30M+ users. Best for cost-conscious traders.
+                </p>
+                <p className="text-xs text-indigo-400 font-semibold">30M+ users · Founded 2017 · 0.1% spot fees</p>
+              </article>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>FAQ</h2>
-          <div style={styles.faqContainer}>
-            {faqItems.map((item, idx) => (
-              <div key={idx} style={styles.faqItem}>
-                <h4 style={styles.faqQuestion}>{item.q}</h4>
-                <p style={styles.faqAnswer}>{item.a}</p>
+          {/* Gate.io Pros & Cons */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="gateio-pros-cons">
+            <h2 id="gateio-pros-cons" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Gate.io Pros &amp; Cons</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-emerald-500 mb-4">Pros</h3>
+                <ul className="space-y-0" role="list" aria-label="Gate.io advantages">
+                  {gatioPros.map((pro, idx) => (
+                    <li key={idx} className="py-3 border-b border-[var(--border,#30363d)] text-sm text-[var(--text2,#8b949e)] leading-relaxed flex items-start gap-2">
+                      <span className="text-emerald-500 shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                      {pro}
+                    </li>
+                  ))}
+                </ul>
               </div>
-            ))}
-          </div>
-        </section>
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-red-500 mb-4">Cons</h3>
+                <ul className="space-y-0" role="list" aria-label="Gate.io disadvantages">
+                  {gatioCons.map((con, idx) => (
+                    <li key={idx} className="py-3 border-b border-[var(--border,#30363d)] text-sm text-[var(--text2,#8b949e)] leading-relaxed flex items-start gap-2">
+                      <span className="text-red-500 shrink-0 mt-0.5" aria-hidden="true">✗</span>
+                      {con}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
 
-        <section style={styles.verdict}>
-          <h2 style={styles.verdictTitle}>The Verdict</h2>
-          <p style={styles.verdictText}>
-            Gate.io and KuCoin are among the best exchanges for altcoin trading, but they serve different trader profiles and priorities.
-          </p>
-          <p style={styles.verdictText}>
-            <strong>Choose Gate.io if:</strong> You want maximum altcoin selection (1,500+), prefer higher leverage (150x), want democratic voting on Startup projects, or appreciate inclusive global accessibility. Best for aggressive altcoin hunters seeking early token access.
-          </p>
-          <p style={styles.verdictText}>
-            <strong>Choose KuCoin if:</strong> You prioritize lowest fees (0.1%), want advanced trading bots, need KCS daily bonus rewards, have 30M+ trusted users, or prefer a strong community. Best for cost-conscious traders wanting automation.
-          </p>
-          <p style={styles.verdictText}>
-            <strong>Best Strategy:</strong> Use both exchanges! KuCoin for cost-effective spot trading with bot automation, Gate.io for maximum altcoin access and Startup opportunities. They complement each other perfectly for comprehensive altcoin trading coverage.
-          </p>
-        </section>
+          {/* KuCoin Pros & Cons */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="kucoin-pros-cons">
+            <h2 id="kucoin-pros-cons" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">KuCoin Pros &amp; Cons</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-emerald-500 mb-4">Pros</h3>
+                <ul className="space-y-0" role="list" aria-label="KuCoin advantages">
+                  {kucoipPros.map((pro, idx) => (
+                    <li key={idx} className="py-3 border-b border-[var(--border,#30363d)] text-sm text-[var(--text2,#8b949e)] leading-relaxed flex items-start gap-2">
+                      <span className="text-emerald-500 shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                      {pro}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-red-500 mb-4">Cons</h3>
+                <ul className="space-y-0" role="list" aria-label="KuCoin disadvantages">
+                  {kucoipCons.map((con, idx) => (
+                    <li key={idx} className="py-3 border-b border-[var(--border,#30363d)] text-sm text-[var(--text2,#8b949e)] leading-relaxed flex items-start gap-2">
+                      <span className="text-red-500 shrink-0 mt-0.5" aria-hidden="true">✗</span>
+                      {con}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Use Case Comparison */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="use-cases">
+            <h2 id="use-cases" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Use Case Comparison</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {useCases.map((useCase, idx) => (
+                <article key={idx} className="bg-[var(--surface,#161b22)] border border-[var(--border,#30363d)] rounded-xl p-5 hover:border-pink-500/30 transition-colors">
+                  <h3 className="text-base font-bold text-pink-500 mb-3">{useCase.title}</h3>
+                  <div className="text-sm text-[var(--text2,#8b949e)] leading-relaxed space-y-2 mb-3">
+                    <p><span className="text-sky-400 font-medium">Gate.io:</span> {useCase.gateio}</p>
+                    <p><span className="text-sky-400 font-medium">KuCoin:</span> {useCase.kucoin}</p>
+                  </div>
+                  <p className="text-sm text-emerald-500 font-semibold">Winner: {useCase.winner}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          {/* Trading Bot Comparison */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="bot-comparison">
+            <h2 id="bot-comparison" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Trading Bot Comparison</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+              <article className="bg-[var(--surface,#161b22)] border border-[var(--border,#30363d)] rounded-xl p-5 sm:p-6">
+                <h3 className="text-lg font-bold text-indigo-400 mb-4">KuCoin Bot Marketplace</h3>
+                <ul className="space-y-2 text-sm text-[var(--text2,#8b949e)]" role="list">
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> Grid bots (spot and futures)</li>
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> DCA bots with flexible intervals</li>
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> Smart rebalance bots</li>
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> Infinity grid bots</li>
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> Community bot templates</li>
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> Most advanced ecosystem</li>
+                </ul>
+              </article>
+              <article className="bg-[var(--surface,#161b22)] border border-[var(--border,#30363d)] rounded-xl p-5 sm:p-6">
+                <h3 className="text-lg font-bold text-indigo-400 mb-4">Gate.io Bots</h3>
+                <ul className="space-y-2 text-sm text-[var(--text2,#8b949e)]" role="list">
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> Grid bots (spot and futures)</li>
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> DCA bots</li>
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> Basic automation features</li>
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> Less mature ecosystem</li>
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> Fewer templates available</li>
+                  <li className="flex items-start gap-2"><span className="text-indigo-400 shrink-0" aria-hidden="true">→</span> Growing but limited selection</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          {/* FAQ */}
+          <section className="mb-12 sm:mb-16" aria-labelledby="faq-section">
+            <h2 id="faq-section" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">FAQ</h2>
+            <div className="rounded-xl border border-[var(--border,#30363d)] bg-[var(--surface,#161b22)] overflow-hidden divide-y divide-[var(--border,#30363d)]">
+              {faqItems.map((item, idx) => (
+                <details key={idx} className="group">
+                  <summary className="p-4 sm:p-6 cursor-pointer select-none text-base font-bold text-pink-500 hover:bg-[var(--surface2,#1c2330)] transition-colors min-h-[44px] flex items-center focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-inset">
+                    {item.q}
+                  </summary>
+                  <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                    <p className="text-sm text-[var(--text2,#8b949e)] leading-relaxed">{item.a}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </section>
+
+          {/* Verdict */}
+          <section className="mb-12 sm:mb-16 bg-[var(--surface,#161b22)] border-2 border-pink-500 rounded-xl p-6 sm:p-8 lg:p-10" aria-labelledby="verdict">
+            <h2 id="verdict" className="text-2xl sm:text-3xl font-bold mb-6 text-pink-500">The Verdict</h2>
+            <div className="space-y-4 text-sm sm:text-base text-[var(--text2,#8b949e)] leading-relaxed">
+              <p>
+                Gate.io and KuCoin are among the best exchanges for altcoin trading, but they serve different trader profiles and priorities.
+              </p>
+              <p>
+                <strong className="text-[var(--text,#e6edf3)]">Choose Gate.io if:</strong> You want maximum altcoin selection (1,500+), prefer higher leverage (150x), want democratic voting on Startup projects, or appreciate inclusive global accessibility. Best for aggressive altcoin hunters seeking early token access.
+              </p>
+              <p>
+                <strong className="text-[var(--text,#e6edf3)]">Choose KuCoin if:</strong> You prioritize lowest fees (0.1%), want advanced trading bots, need KCS daily bonus rewards, have 30M+ trusted users, or prefer a strong community. Best for cost-conscious traders wanting automation.
+              </p>
+              <p>
+                <strong className="text-[var(--text,#e6edf3)]">Best Strategy:</strong> Use both exchanges! KuCoin for cost-effective spot trading with bot automation, Gate.io for maximum altcoin access and Startup opportunities. They complement each other perfectly for comprehensive altcoin trading coverage.
+              </p>
+            </div>
+          </section>
+        </div>
       </div>
     </>
   );
 }
-
-const styles = {
-  container: {
-    minHeight: '100vh',
-    backgroundColor: 'var(--bg, #0d1117)',
-    color: 'var(--text, #e6edf3)',
-    padding: '20px' } as React.CSSProperties,
-  header: {
-    maxWidth: '1000px',
-    margin: '0 auto 60px',
-    textAlign: 'center' as const },
-  title: {
-    fontSize: '48px',
-    fontWeight: 'bold',
-    marginBottom: '16px',
-    background: 'linear-gradient(135deg, #ec4899, #6366f1)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent' },
-  subtitle: {
-    fontSize: '18px',
-    color: 'var(--text2, #8b949e)' },
-  section: {
-    maxWidth: '1000px',
-    margin: '0 auto 60px' },
-  sectionTitle: {
-    fontSize: '32px',
-    fontWeight: 'bold',
-    marginBottom: '30px',
-    color: 'var(--text, #e6edf3)' },
-  tableWrapper: {
-    overflowX: 'auto' as const,
-    backgroundColor: 'var(--surface, #161b22)',
-    borderRadius: '12px',
-    border: '1px solid var(--border, #30363d)' },
-  table: {
-    width: '100%',
-    borderCollapse: 'collapse' as const,
-    fontSize: '14px' },
-  headerRow: {
-    borderBottom: '2px solid var(--border, #30363d)' },
-  headerCell: {
-    padding: '16px',
-    textAlign: 'left' as const,
-    fontWeight: 'bold',
-    backgroundColor: 'var(--surface2, #1c2330)',
-    color: '#ec4899' },
-  row: {
-    borderBottom: '1px solid var(--border, #30363d)' },
-  cell: {
-    padding: '16px',
-    color: 'var(--text, #e6edf3)' },
-  startupTable: {
-    backgroundColor: 'var(--surface, #161b22)',
-    borderRadius: '12px',
-    border: '1px solid var(--border, #30363d)',
-    overflow: 'hidden' },
-  startupRow: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr',
-    borderBottom: '1px solid var(--border, #30363d)',
-    padding: '16px' },
-  startupAspect: {
-    color: 'var(--text, #e6edf3)' },
-  startupValue: {
-    fontSize: '14px',
-    color: 'var(--text2, #8b949e)' },
-  overviewGrid: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '24px' },
-  overviewCard: {
-    backgroundColor: 'var(--surface, #161b22)',
-    border: '1px solid var(--border, #30363d)',
-    borderRadius: '12px',
-    padding: '24px' },
-  overviewTitle: {
-    fontSize: '20px',
-    fontWeight: 'bold',
-    marginBottom: '8px',
-    color: 'var(--text, #e6edf3)' },
-  overviewBest: {
-    fontSize: '14px',
-    color: '#ec4899',
-    fontWeight: '600',
-    marginBottom: '12px' },
-  overviewText: {
-    fontSize: '14px',
-    color: 'var(--text2, #8b949e)',
-    lineHeight: '1.6',
-    marginBottom: '12px' },
-  overviewStats: {
-    fontSize: '12px',
-    color: '#6366f1',
-    fontWeight: '600' },
-  prosConsGrid: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '30px' },
-  prosTitle: {
-    fontSize: '20px',
-    fontWeight: 'bold',
-    color: '#10b981',
-    marginBottom: '16px' },
-  consTitle: {
-    fontSize: '20px',
-    fontWeight: 'bold',
-    color: '#ef4444',
-    marginBottom: '16px' },
-  prosList: {
-    listStyle: 'none',
-    padding: 0,
-    margin: 0 },
-  prosItem: {
-    padding: '12px 0',
-    borderBottom: '1px solid var(--border, #30363d)',
-    fontSize: '14px',
-    color: 'var(--text2, #8b949e)',
-    lineHeight: '1.5' },
-  useCaseGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-    gap: '24px' },
-  useCaseCard: {
-    backgroundColor: 'var(--surface, #161b22)',
-    border: '1px solid var(--border, #30363d)',
-    borderRadius: '12px',
-    padding: '20px' },
-  useCaseTitle: {
-    fontSize: '16px',
-    fontWeight: 'bold',
-    marginBottom: '12px',
-    color: '#ec4899' },
-  useCaseComparison: {
-    fontSize: '14px',
-    color: 'var(--text2, #8b949e)',
-    lineHeight: '1.8',
-    marginBottom: '12px' },
-  useCaseWinner: {
-    fontSize: '14px',
-    color: '#10b981',
-    fontWeight: '600' },
-  botComparison: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '24px' },
-  botCard: {
-    backgroundColor: 'var(--surface, #161b22)',
-    border: '1px solid var(--border, #30363d)',
-    borderRadius: '12px',
-    padding: '24px' },
-  botTitle: {
-    fontSize: '18px',
-    fontWeight: 'bold',
-    marginBottom: '16px',
-    color: '#6366f1' },
-  botList: {
-    listStyle: 'none',
-    padding: 0,
-    margin: 0 },
-  faqContainer: {
-    backgroundColor: 'var(--surface, #161b22)',
-    borderRadius: '12px',
-    border: '1px solid var(--border, #30363d)',
-    overflow: 'hidden' },
-  faqItem: {
-    padding: '24px',
-    borderBottom: '1px solid var(--border, #30363d)' },
-  faqQuestion: {
-    fontSize: '16px',
-    fontWeight: 'bold',
-    color: '#ec4899',
-    marginBottom: '12px' },
-  faqAnswer: {
-    fontSize: '14px',
-    color: 'var(--text2, #8b949e)',
-    lineHeight: '1.6',
-    margin: 0 },
-  verdict: {
-    maxWidth: '1000px',
-    margin: '0 auto 60px',
-    backgroundColor: 'var(--surface, #161b22)',
-    border: '2px solid #ec4899',
-    borderRadius: '12px',
-    padding: '40px' },
-  verdictTitle: {
-    fontSize: '32px',
-    fontWeight: 'bold',
-    marginBottom: '24px',
-    color: '#ec4899' },
-  verdictText: {
-    fontSize: '16px',
-    color: 'var(--text2, #8b949e)',
-    lineHeight: '1.8',
-    marginBottom: '16px' } };

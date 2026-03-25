@@ -1,0 +1,72 @@
+{
+  "date": "2026-03-23",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle v14: Zero delta from v13 — no commits, no deploys. Git locks persist at 7 days. 686 uncommitted changes (48 modified, 638 untracked). All carry-over blockers unchanged. Production running 6-day-old build e999560.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "DELTA SINCE v13: No new pages built or published this cycle. Zero code changes committed.",
+          "TYPESCRIPT: 25 errors in src/lib/structured-data.examples.ts — all syntax errors (JSX in .ts file). Masked by ignoreBuildErrors:true in next.config.ts. No new TS errors introduced.",
+          "ORPHAN AUDIT: 448 slugs in PUBLISHED_PAGES, 103 still missing page.tsx files — unchanged. These will 404 if accessed.",
+          "CRITICAL BUG (carry-over): /learn/unichain-guide-2026 and /learn/appchains-app-specific-rollups-guide-2026 have 'use client' + 'export const metadata' conflict. Metadata silently dropped by Next.js.",
+          "BUILD: Production build cannot run in sandbox (OOM). ignoreBuildErrors masks TS issues. No regressions possible since no code changed.",
+          "WORKING TREE: 48 modified tracked files, 638 untracked files — all uncommitted."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "ALL 6 API ROUTES PRESENT: /api/prices, /api/trending, /api/fear-greed, /api/market-metrics, /api/market-dominance, /api/defi-yields.",
+          "CACHE STATUS: 6/6 routes have caching. /api/defi-yields uses Cache-Control headers (s-maxage) but NO in-memory cache — relies on CDN edge caching only.",
+          "FALLBACK DATA: Only /api/prices and /api/market-dominance have hardcoded fallback. 4/6 routes will error on upstream failure.",
+          "RATE LIMITING: 0/6 core API routes wired to rate limiter — carry-over P1 for 40+ cycles.",
+          "LIVE HEALTH: Cannot verify from sandbox (curl returns 000). Production should be serving from Mar 17 deploy if Vercel is healthy.",
+          "NO DELTA: No API route files modified since last cycle."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "GIT LOCKS PERSIST [P0 — 7 DAYS]: .git/HEAD.lock (Mar 16 11:17) and .git/index.lock (Mar 16 13:06) still present. All git commit/push operations blocked.",
+          "LAST COMMIT: e999560 'publish: promote 2 pages to production (Day 62)' — Mar 17, 6 days ago.",
+          "LAST DEPLOY: Same commit e999560. Production running 6-day-old build on Vercel (project: cryptodegen).",
+          "WORKING TREE DRIFT: 686 entries in git status (48 modified + 638 untracked). Local-to-production divergence continues growing.",
+          "PRODUCTION UNREACHABLE FROM SANDBOX: curl returns 000 for all degen0x.com endpoints. Cannot verify Vercel health directly — assume serving last deployed build normally.",
+          "ACTION REQUIRED [P0]: rm .git/index.lock .git/HEAD.lock → stage changes → commit → push → Vercel auto-deploy."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: Nothing. Zero commits, zero deploys, zero page promotions.",
+          "WORKING TREE INVENTORY: 638 untracked files (including ~253 new page.tsx), 48 modified tracked files — all uncommitted and undeployable.",
+          "BLOCKER [P0 — 7 DAYS]: Git lock files must be manually cleared before ANY progress can reach production.",
+          "BLOCKER [P1]: 2 pages with 'use client'+metadata bug need programmer fix before promotion.",
+          "CARRY-OVER [P1 — 40+ CYCLES]: Rate limiter not wired to any core API route.",
+          "CARRY-OVER [P1]: 4/6 API routes missing fallback data for upstream failures.",
+          "CARRY-OVER [P2]: 103 orphan slugs in PUBLISHED_PAGES with no matching page.tsx.",
+          "NEXT CYCLE: Clearing git locks is the singular prerequisite for all forward progress."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages (with page.tsx)", "value": "345 / 448", "pct": 77, "color": "#f59e0b" },
+          { "label": "Orphan Slugs", "value": "103", "pct": 23, "color": "#ef4444" },
+          { "label": "API Routes Healthy (files present)", "value": "6 / 6", "pct": 100, "color": "#4ade80" },
+          { "label": "API Routes with Rate Limiting", "value": "0 / 6", "pct": 0, "color": "#ef4444" },
+          { "label": "API Routes with Fallback", "value": "2 / 6", "pct": 33, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "25 (1 file)", "pct": 25, "color": "#f59e0b" },
+          { "label": "Git Lock Age", "value": "7 days", "pct": 100, "color": "#ef4444" },
+          { "label": "Uncommitted Changes", "value": "686", "pct": 100, "color": "#ef4444" },
+          { "label": "Days Since Last Deploy", "value": "6", "pct": 85, "color": "#ef4444" },
+          { "label": "Build Status (production)", "value": "Stale but stable", "pct": 60, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

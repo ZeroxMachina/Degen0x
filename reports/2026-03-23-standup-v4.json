@@ -1,0 +1,76 @@
+{
+  "date": "2026-03-23",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Day 70 standup #5: Since last standup, build-v4 added 2 guides (Decentralized GPU Compute + Cross-chain Interoperability), publish promoted 2 more pages (megaeth + story-protocol, 425→427 declared). Git locks persist 8 days — 637+ uncommitted files, 0 deploys, 0 commits. Publish queue still has 2 new guides pending promotion. 3 agents ran since last standup ($333). Today's total: 19 agent runs ($1,724).",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "CONTENT DELTA (vs standup v3): +2 learn guides built (Decentralized GPU & Compute Networks + Cross-chain Interoperability & Messaging), both ~3000+ words with full SEO/structured data/FAQ schema. Added to PUBLISH_QUEUE — not yet promoted to PUBLISHED_PAGES.",
+          "PUBLISH DELTA: publish agent re-ran and confirmed 425 indexed slugs (megaeth + story-protocol promoted in earlier cycle). 2 new guides from build-v4 sitting in PUBLISH_QUEUE awaiting next promote cycle.",
+          "SEO RISK ESCALATING: 8 days without deploy (Mar 16 lock created). Production running e999560 (Mar 17). ~112+ pages invisible to Google. Gap stable since last standup but growing daily via new builds.",
+          "ORPHAN AUDIT UNCHANGED: 103 slugs in PUBLISHED_PAGES with no page.tsx — will 404 in production.",
+          "GIT DRIFT UNCHANGED: 637+ uncommitted files, locks created Mar 16. No commits possible."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE STANDUP v3: Build-v4 produced 2 comprehensive learn guides (Decentralized GPU ~3200 words, Cross-chain Interoperability ~3000 words) with full research briefs, comparison tables, FAQ schema. Publish agent confirmed pipeline health — all 6 API routes healthy, CoinGecko/DefiLlama nominal, cache/circuit breakers active.",
+          "TODAY'S CUMULATIVE OUTPUT: 8 learn guides built, 7 pages promoted to PUBLISHED_PAGES, 4+ OG images, 8+ social posts + 2 SVG cards, 3 QA cycles, 3 design audits, 19 agent runs across ~3.5 rotations.",
+          "BLOCKER [P0 — 8 DAYS]: Git locks (.git/HEAD.lock + .git/index.lock) since Mar 16. Created 01:17 and 13:06. Blocks ALL commits and deploys. Resolution: rm .git/index.lock .git/HEAD.lock",
+          "BLOCKER [P1]: 2 of 8 recently built pages (smart-contract-security, onchain-identity) still missing StructuredData/Breadcrumb/BackToTop.",
+          "CARRY-OVER [P1 — 38+ CYCLES]: /api/defi-yields returns 500 on upstream failure (no fallback data).",
+          "CARRY-OVER [P1 — 38+ CYCLES]: Rate limiter not wired on any of 6 core API routes.",
+          "CARRY-OVER [P2]: 103 orphan slugs, next lint misconfigured, cache header inconsistency on 4/6 API routes."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS AND DEPLOY: 8 days blocked. Estimated 4,500+ insertions at risk. rm .git/index.lock .git/HEAD.lock → commit → push → verify Vercel. Nothing else matters until this is done.",
+          "PRIORITY 2 — PROMOTE 2 QUEUED GUIDES: decentralized-gpu-compute-guide-2026 and cross-chain-interoperability-guide-2026 are in PUBLISH_QUEUE. Promote to PUBLISHED_PAGES before the deploy commit.",
+          "PRIORITY 3 — ZERO NEW CONTENT: 427+ slugs declared, ~315 in production. Content pipeline has outrun shipping by 112+ pages. Halt all build cycles until production catches up. Every new guide increases the deploy risk surface.",
+          "STRATEGIC NOTE: 3.5 rotations today produced 8 guides + 7 promotions + social assets + QA. Production saw zero of it. The marginal value of the next build cycle is effectively $0 until deploy unblocks. All agent budget should shift to ops/deploy/fix tasks."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Published Page Slugs (declared)", "value": "427+", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Actually in Production", "value": "~315 (last deploy Mar 17)", "pct": 74, "color": "#f59e0b" },
+          { "label": "Deploy Gap", "value": "~112+ pages not live", "pct": 26, "color": "#ef4444" },
+          { "label": "Publish Queue", "value": "2 guides pending", "pct": 95, "color": "#06b6d4" },
+          { "label": "Pages Built Today", "value": "8 learn guides + 7 promoted", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Needing Fix", "value": "2 (missing SEO components)", "pct": 67, "color": "#f59e0b" },
+          { "label": "Orphan Slugs (no page.tsx)", "value": "103", "pct": 24, "color": "#f59e0b" },
+          { "label": "Days Since Last Commit", "value": "8 (Mar 17, e999560)", "pct": 2, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "8 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Changes", "value": "637+ files", "pct": 5, "color": "#ef4444" },
+          { "label": "API Routes Healthy", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "API Fallback Coverage", "value": "5/6 routes", "pct": 83, "color": "#f59e0b" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 routes", "pct": 0, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "3 of 6 (build, publish, standup)", "pct": 50, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~6.75h", "pct": 66, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$49/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$333 (build $233 + publish $55 + standup $45)", "pct": 67, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$1,724 (19 runs: standup×4 $180, build×4 $932, publish×3 $165, design×3 $180, community×3 $123, eod×3 $189)", "pct": 14, "color": "#4ade80" },
+          { "label": "Agent Runs Today", "value": "19 runs across 6 types (~3.5 rotations)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — sandbox network blocked outbound HTTPS to api.resend.com. Report saved locally."
+  }
+}

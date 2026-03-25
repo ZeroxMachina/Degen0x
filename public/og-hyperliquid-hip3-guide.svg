@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="50%" style="stop-color:#0d1520"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <!-- Brand accent gradient (indigo → cyan → amber) -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <!-- Title gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <!-- Oil barrel glow -->
+    <radialGradient id="oilGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Equity glow -->
+    <radialGradient id="equityGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Gold glow -->
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#d29922;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#d29922;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Card glass surface -->
+    <linearGradient id="glassCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.07"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.02"/>
+    </linearGradient>
+    <!-- Chart gradient fill -->
+    <linearGradient id="chartFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04">
+    <line x1="200" y1="0" x2="200" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="800" y1="0" x2="800" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="1000" y1="0" x2="1000" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="157" x2="1200" y2="157" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="315" x2="1200" y2="315" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="472" x2="1200" y2="472" stroke="#fff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Decorative glow circles -->
+  <circle cx="950" cy="180" r="160" fill="url(#oilGlow)"/>
+  <circle cx="1050" cy="380" r="120" fill="url(#equityGlow)"/>
+  <circle cx="850" cy="450" r="100" fill="url(#goldGlow)"/>
+
+  <!-- degen0x logo (top-left) -->
+  <g transform="translate(60, 40)">
+    <circle cx="16" cy="16" r="14" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.8"/>
+    <text x="16" y="21" text-anchor="middle" fill="#6366f1" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">0x</text>
+    <text x="40" y="21" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600">degen0x.com</text>
+  </g>
+
+  <!-- Category badge -->
+  <g transform="translate(60, 100)">
+    <rect x="0" y="0" width="52" height="24" rx="6" fill="#06b6d420" stroke="#06b6d440" stroke-width="1"/>
+    <text x="26" y="16" text-anchor="middle" fill="#06b6d4" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">DeFi</text>
+    <rect x="60" y="0" width="140" height="24" rx="6" fill="#f59e0b20" stroke="#f59e0b40" stroke-width="1"/>
+    <text x="130" y="16" text-anchor="middle" fill="#f59e0b" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Tokenized Futures</text>
+    <rect x="208" y="0" width="110" height="24" rx="6" fill="#22c55e20" stroke="#22c55e40" stroke-width="1"/>
+    <text x="263" y="16" text-anchor="middle" fill="#22c55e" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">March 2026</text>
+  </g>
+
+  <!-- Main title -->
+  <text x="60" y="178" fill="url(#titleGrad)" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.02em">
+    Hyperliquid HIP-3:
+  </text>
+  <text x="60" y="228" fill="#e6edf3" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="-0.02em">
+    Trade Oil, Stocks &amp; Commodities
+  </text>
+  <text x="60" y="270" fill="#e6edf3" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="-0.02em">
+    On-Chain 24/7
+  </text>
+
+  <!-- Subtitle -->
+  <text x="60" y="310" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="16">
+    Permissionless futures. $1.2B open interest. No KYC, no broker, any weekend.
+  </text>
+
+  <!-- Stats cards row -->
+  <!-- Card 1: Open Interest -->
+  <g transform="translate(60, 345)">
+    <rect x="0" y="0" width="195" height="90" rx="12" fill="url(#glassCard)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="16" y="30" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" text-transform="uppercase" letter-spacing="0.05em">OPEN INTEREST</text>
+    <text x="16" y="58" fill="#22c55e" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">$1.2B+</text>
+    <text x="16" y="76" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="11">All HIP-3 markets</text>
+  </g>
+
+  <!-- Card 2: Oil Volume -->
+  <g transform="translate(270, 345)">
+    <rect x="0" y="0" width="195" height="90" rx="12" fill="url(#glassCard)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="16" y="30" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="0.05em">CL-USDC 24H VOL</text>
+    <text x="16" y="58" fill="#f59e0b" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">$1.62B</text>
+    <text x="16" y="76" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="11">WTI Crude Oil perp</text>
+  </g>
+
+  <!-- Card 3: Market Creation -->
+  <g transform="translate(480, 345)">
+    <rect x="0" y="0" width="195" height="90" rx="12" fill="url(#glassCard)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="16" y="30" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="0.05em">CREATION STAKE</text>
+    <text x="16" y="58" fill="#6366f1" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">500K</text>
+    <text x="16" y="76" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="11">HYPE tokens (~$9M)</text>
+  </g>
+
+  <!-- Card 4: Access -->
+  <g transform="translate(60, 450)">
+    <rect x="0" y="0" width="195" height="90" rx="12" fill="url(#glassCard)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="16" y="30" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="0.05em">TRADING HOURS</text>
+    <text x="16" y="58" fill="#06b6d4" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">24/7/365</text>
+    <text x="16" y="76" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="11">Weekends + holidays</text>
+  </g>
+
+  <!-- Card 5: KYC -->
+  <g transform="translate(270, 450)">
+    <rect x="0" y="0" width="195" height="90" rx="12" fill="url(#glassCard)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="16" y="30" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="0.05em">KYC REQUIRED</text>
+    <text x="16" y="58" fill="#22c55e" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">None</text>
+    <text x="16" y="76" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="11">Wallet-only access</text>
+  </g>
+
+  <!-- Right side: Mini price chart visualization -->
+  <g transform="translate(720, 345)">
+    <!-- Chart background -->
+    <rect x="0" y="0" width="420" height="195" rx="16" fill="url(#glassCard)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+    <!-- Chart title -->
+    <text x="20" y="28" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="0.05em">HIP-3 MARKETS OVERVIEW</text>
+
+    <!-- Mini bar chart for market volumes -->
+    <!-- CL-USDC bar -->
+    <rect x="30" y="50" width="80" height="16" rx="4" fill="#f59e0b" opacity="0.9"/>
+    <text x="118" y="62" fill="#f59e0b" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">CL-USDC</text>
+    <text x="185" y="62" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="10">$1.62B</text>
+
+    <!-- XYZ100 bar -->
+    <rect x="30" y="74" width="48" height="16" rx="4" fill="#6366f1" opacity="0.9"/>
+    <text x="86" y="86" fill="#6366f1" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">XYZ100</text>
+    <text x="148" y="86" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="10">$320M</text>
+
+    <!-- GC-USDC bar -->
+    <rect x="30" y="98" width="36" height="16" rx="4" fill="#d29922" opacity="0.9"/>
+    <text x="74" y="110" fill="#d29922" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">GC-USDC</text>
+    <text x="140" y="110" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="10">$180M</text>
+
+    <!-- SI-USDC bar -->
+    <rect x="30" y="122" width="22" height="16" rx="4" fill="#8b949e" opacity="0.9"/>
+    <text x="60" y="134" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">SI-USDC</text>
+    <text x="118" y="134" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="10">$90M</text>
+
+    <!-- TSLA bar -->
+    <rect x="30" y="146" width="15" height="16" rx="4" fill="#22c55e" opacity="0.9"/>
+    <text x="53" y="158" fill="#22c55e" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">TSLA</text>
+    <text x="88" y="158" fill="#8b949e" font-family="Inter, Arial, sans-serif" font-size="10">$60M</text>
+
+    <!-- Flow diagram: Wallet → HyperEVM → Trade -->
+    <g transform="translate(230, 55)">
+      <!-- Nodes -->
+      <rect x="0" y="0" width="65" height="28" rx="8" fill="#06b6d420" stroke="#06b6d440" stroke-width="1"/>
+      <text x="32" y="18" text-anchor="middle" fill="#06b6d4" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">Wallet</text>
+
+      <text x="75" y="18" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="14">→</text>
+
+      <rect x="90" y="0" width="75" height="28" rx="8" fill="#6366f120" stroke="#6366f140" stroke-width="1"/>
+      <text x="127" y="18" text-anchor="middle" fill="#6366f1" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">HyperEVM</text>
+
+      <text x="175" y="18" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="14">→</text>
+
+      <!-- Nodes row 2 -->
+      <rect x="0" y="40" width="65" height="28" rx="8" fill="#f59e0b20" stroke="#f59e0b40" stroke-width="1"/>
+      <text x="32" y="58" text-anchor="middle" fill="#f59e0b" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">Oracle</text>
+
+      <text x="75" y="58" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="14">→</text>
+
+      <rect x="90" y="40" width="75" height="28" rx="8" fill="#22c55e20" stroke="#22c55e40" stroke-width="1"/>
+      <text x="127" y="58" text-anchor="middle" fill="#22c55e" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">Mark Price</text>
+
+      <!-- pmUSDH node -->
+      <rect x="0" y="80" width="80" height="28" rx="8" fill="#8b5cf620" stroke="#8b5cf640" stroke-width="1"/>
+      <text x="40" y="98" text-anchor="middle" fill="#8b5cf6" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">pmUSDH</text>
+
+      <text x="90" y="98" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="14">→</text>
+
+      <rect x="105" y="80" width="60" height="28" rx="8" fill="#d2992220" stroke="#d2992240" stroke-width="1"/>
+      <text x="135" y="98" text-anchor="middle" fill="#d29922" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">Yield</text>
+    </g>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="596" width="1200" height="34" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="618" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="12">
+    degen0x.com/learn/hyperliquid-hip3-tokenized-futures-guide
+  </text>
+  <text x="1140" y="618" text-anchor="end" fill="#6e7681" font-family="Inter, Arial, sans-serif" font-size="12">
+    Full Guide 2026
+  </text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#brandGrad)"/>
+</svg>

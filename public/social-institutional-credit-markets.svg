@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="brand2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="creditGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow2">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+
+  <!-- Decorative gradient orbs -->
+  <circle cx="150" cy="300" r="200" fill="#6366f1" opacity="0.05" filter="url(#softGlow2)"/>
+  <circle cx="1050" cy="200" r="180" fill="#f59e0b" opacity="0.04" filter="url(#softGlow2)"/>
+  <circle cx="600" cy="500" r="150" fill="#06b6d4" opacity="0.03" filter="url(#softGlow2)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#creditGrad)"/>
+
+  <!-- Badge: COMING SOON -->
+  <rect x="60" y="40" width="140" height="30" rx="15" fill="#f59e0b" opacity="0.15"/>
+  <rect x="60" y="40" width="140" height="30" rx="15" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <text x="130" y="60" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#fbbf24" text-anchor="middle" letter-spacing="0.1em">COMING SOON</text>
+
+  <!-- Market size pill -->
+  <rect x="220" y="40" width="130" height="30" rx="15" fill="#22c55e" opacity="0.12"/>
+  <text x="285" y="60" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#4ade80" text-anchor="middle">$18.9B ACTIVE</text>
+
+  <!-- Main title -->
+  <text x="60" y="130" font-family="Inter, sans-serif" font-size="44" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">ON-CHAIN INSTITUTIONAL</text>
+  <text x="60" y="180" font-family="Inter, sans-serif" font-size="44" font-weight="900" fill="url(#creditGrad)" letter-spacing="-0.02em">CREDIT MARKETS</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="218" font-family="Inter, sans-serif" font-size="18" font-weight="400" fill="#8b949e">$33.7B cumulative originations. DeFi lending goes institutional.</text>
+
+  <!-- Divider -->
+  <rect x="60" y="238" width="80" height="3" rx="1.5" fill="url(#creditGrad)"/>
+
+  <!-- 4 Protocol cards row -->
+  <!-- Card 1: Maple Finance -->
+  <rect x="60" y="270" width="255" height="175" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="60" y="270" width="255" height="4" rx="2" fill="#6366f1"/>
+  <text x="80" y="305" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#e6edf3">Maple Finance</text>
+  <text x="80" y="330" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#818cf8">CRYPTO-NATIVE LENDING</text>
+  <line x1="80" y1="345" x2="295" y2="345" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="80" y="370" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">TVL</text>
+  <text x="295" y="370" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#4ade80" text-anchor="end">$3.2B</text>
+  <text x="80" y="395" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Growth</text>
+  <text x="295" y="395" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#4ade80" text-anchor="end">8x YoY</text>
+  <text x="80" y="420" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Token</text>
+  <text x="295" y="420" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#c4b5fd" text-anchor="end">SYRUP ~$0.27</text>
+
+  <!-- Card 2: Goldfinch -->
+  <rect x="335" y="270" width="255" height="175" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="335" y="270" width="255" height="4" rx="2" fill="#f59e0b"/>
+  <text x="355" y="305" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#e6edf3">Goldfinch</text>
+  <text x="355" y="330" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#fbbf24">EMERGING MARKET / TRADFI</text>
+  <line x1="355" y1="345" x2="570" y2="345" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="355" y="370" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Backers</text>
+  <text x="570" y="370" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fbbf24" text-anchor="end">Ares · Apollo</text>
+  <text x="355" y="395" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Focus</text>
+  <text x="570" y="395" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#8b949e" text-anchor="end">Real-world credit</text>
+  <text x="355" y="420" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Bridge</text>
+  <text x="570" y="420" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#8b949e" text-anchor="end">TradFi ↔ DeFi</text>
+
+  <!-- Card 3: Centrifuge -->
+  <rect x="610" y="270" width="255" height="175" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="610" y="270" width="255" height="4" rx="2" fill="#06b6d4"/>
+  <text x="630" y="305" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#e6edf3">Centrifuge</text>
+  <text x="630" y="330" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#22d3ee">RWA INFRASTRUCTURE</text>
+  <line x1="630" y1="345" x2="845" y2="345" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="630" y="370" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Role</text>
+  <text x="845" y="370" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#22d3ee" text-anchor="end">Tokenization layer</text>
+  <text x="630" y="395" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Partners</text>
+  <text x="845" y="395" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#8b949e" text-anchor="end">MakerDAO · Aave</text>
+  <text x="630" y="420" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Focus</text>
+  <text x="845" y="420" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#8b949e" text-anchor="end">Real-world assets</text>
+
+  <!-- Card 4: Clearpool -->
+  <rect x="885" y="270" width="255" height="175" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="885" y="270" width="255" height="4" rx="2" fill="#8b5cf6"/>
+  <text x="905" y="305" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#e6edf3">Clearpool</text>
+  <text x="905" y="330" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#a78bfa">HYBRID PERMISSIONED</text>
+  <line x1="905" y1="345" x2="1120" y2="345" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="905" y="370" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Model</text>
+  <text x="1120" y="370" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#a78bfa" text-anchor="end">Permissioned pools</text>
+  <text x="905" y="395" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Angle</text>
+  <text x="1120" y="395" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#8b949e" text-anchor="end">Composable + compliant</text>
+  <text x="905" y="420" font-family="Inter, sans-serif" font-size="13" fill="#8b949e">Edge</text>
+  <text x="1120" y="420" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#8b949e" text-anchor="end">KYC-gated yields</text>
+
+  <!-- Market context bar -->
+  <rect x="60" y="465" width="1080" height="50" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="120" y="495" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6e7681" text-anchor="middle">ACTIVE</text>
+  <text x="120" y="480" font-family="Inter, sans-serif" font-size="14" font-weight="800" fill="#4ade80" text-anchor="middle">$18.9B</text>
+  <line x1="210" y1="472" x2="210" y2="508" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="310" y="495" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6e7681" text-anchor="middle">CUMULATIVE</text>
+  <text x="310" y="480" font-family="Inter, sans-serif" font-size="14" font-weight="800" fill="#e6edf3" text-anchor="middle">$33.7B</text>
+  <line x1="410" y1="472" x2="410" y2="508" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="530" y="495" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6e7681" text-anchor="middle">CATALYST</text>
+  <text x="530" y="480" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fbbf24" text-anchor="middle">SEC-CFTC MOU 2026</text>
+  <line x1="660" y1="472" x2="660" y2="508" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="800" y="495" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6e7681" text-anchor="middle">TREND</text>
+  <text x="800" y="480" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#4ade80" text-anchor="middle">Under-covered · Under-allocated</text>
+  <line x1="960" y1="472" x2="960" y2="508" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="1060" y="495" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6e7681" text-anchor="middle">STATUS</text>
+  <text x="1060" y="480" font-family="Inter, sans-serif" font-size="14" font-weight="800" fill="#f59e0b" text-anchor="middle">SURGING</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="530" width="1200" height="100" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="530" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- degen0x branding -->
+  <text x="60" y="575" font-family="Inter, sans-serif" font-size="22" font-weight="900" fill="url(#brand2)" letter-spacing="-0.02em">degen0x</text>
+  <text x="60" y="600" font-family="Inter, sans-serif" font-size="13" fill="#6e7681">degen0x.com/learn/onchain-institutional-credit-guide</text>
+
+  <!-- Tagline -->
+  <text x="1140" y="575" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#8b949e" text-anchor="end">DeFi lending goes institutional</text>
+  <text x="1140" y="600" font-family="Inter, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">Protocol deep dives · Yield comparison · Risk analysis</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#creditGrad)"/>
+</svg>

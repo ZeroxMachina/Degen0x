@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import Link from "next/link";
 import {
   DAPPS,
@@ -71,7 +71,7 @@ function DAppCard({ dapp, compact = false }: { dapp: DApp; compact?: boolean }) 
     return (
       <Link
         href={`/ecosystem/${dapp.slug}`}
-        className="group flex items-center gap-3 p-3 bg-[#111113] border border-[#1e1e21] rounded-xl hover:border-[#6366f1] hover:bg-[#14141a] transition-all"
+        className="group flex items-center gap-3 p-3 bg-[#111113] border border-[#1e1e21] rounded-xl hover:border-[#6366f1] hover:bg-[#14141a] transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#6366f1]"
       >
         <DAppLogo dapp={dapp} size={40} />
         <div className="min-w-0 flex-1">
@@ -89,7 +89,7 @@ function DAppCard({ dapp, compact = false }: { dapp: DApp; compact?: boolean }) 
   return (
     <Link
       href={`/ecosystem/${dapp.slug}`}
-      className="group flex flex-col bg-[#111113] border border-[#1e1e21] rounded-2xl p-4 hover:border-[#6366f1] hover:bg-[#14141a] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/10"
+      className="group flex flex-col bg-[#111113] border border-[#1e1e21] rounded-2xl p-4 hover:border-[#6366f1] hover:bg-[#14141a] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#6366f1]"
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
@@ -186,36 +186,41 @@ function EcosystemTabs({ active, onChange }: { active: EcosystemKey; onChange: (
   const ecosystems = Object.entries(ECOSYSTEMS_META) as [EcosystemKey, typeof ECOSYSTEMS_META[EcosystemKey]][];
 
   return (
-    <div
-      ref={scrollRef}
-      className="flex gap-2 overflow-x-auto pb-1"
-      style={{ scrollbarWidth: "none" }}
-    >
-      {ecosystems.map(([key, meta]) => {
-        const isActive = active === key;
-        const count = key === "all" ? DAPPS.length : getDAppsByEcosystem(key).length;
-        return (
-          <button
-            key={key}
-            onClick={() => onChange(key)}
-            className="flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all border whitespace-nowrap"
-            style={
-              isActive
-                ? { background: meta.color + "22", borderColor: meta.color, color: meta.color }
-                : { background: "#111113", borderColor: "#1e1e21", color: "#8e8e93" }
-            }
-          >
-            <span className="text-base leading-none">{meta.emoji}</span>
-            <span>{meta.label}</span>
-            <span
-              className="text-[10px] font-bold px-1.5 py-0.5 rounded-full"
-              style={{ background: isActive ? meta.color + "30" : "#2c2c2e", color: isActive ? meta.color : "#636366" }}
+    <div className="relative">
+      <div
+        ref={scrollRef}
+        className="flex gap-2 overflow-x-auto pb-1"
+        style={{ scrollbarWidth: "none" }}
+      >
+        {ecosystems.map(([key, meta]) => {
+          const isActive = active === key;
+          const count = key === "all" ? DAPPS.length : getDAppsByEcosystem(key).length;
+          return (
+            <button
+              key={key}
+              onClick={() => onChange(key)}
+              role="tab"
+              aria-selected={isActive}
+              className="flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all border whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#6366f1]"
+              style={
+                isActive
+                  ? { background: meta.color + "22", borderColor: meta.color, color: meta.color }
+                  : { background: "#111113", borderColor: "#1e1e21", color: "#8e8e93" }
+              }
             >
-              {count}
-            </span>
-          </button>
-        );
-      })}
+              <span className="text-base leading-none">{meta.emoji}</span>
+              <span>{meta.label}</span>
+              <span
+                className="text-[10px] font-bold px-1.5 py-0.5 rounded-full"
+                style={{ background: isActive ? meta.color + "30" : "#2c2c2e", color: isActive ? meta.color : "#636366" }}
+              >
+                {count}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+      <div className="absolute right-0 top-0 bottom-1 w-12 pointer-events-none bg-gradient-to-l from-[#060608] to-transparent sm:hidden" />
     </div>
   );
 }
@@ -230,28 +235,31 @@ function FeaturedStrip({ dapps }: { dapps: DApp[] }) {
         <span className="text-xs font-black tracking-widest uppercase text-[#6366f1]">⭐ Featured</span>
         <span className="text-xs text-[#636366]">Hand-picked top dApps</span>
       </div>
-      <div className="flex gap-3 overflow-x-auto pb-2" style={{ scrollbarWidth: "none" }}>
-        {featured.map((dapp) => (
-          <Link
-            key={dapp.slug}
-            href={`/ecosystem/${dapp.slug}`}
-            className="flex-shrink-0 w-60 bg-[#111113] border border-[#1e1e21] rounded-2xl p-4 hover:border-[#6366f1] transition-all hover:-translate-y-0.5 group"
-            style={{ background: `linear-gradient(135deg, ${dapp.color}08, #111113)` }}
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <DAppLogo dapp={dapp} size={40} />
-              <div className="min-w-0">
-                <h3 className="text-sm font-bold text-white truncate group-hover:text-indigo-300 transition-colors">{dapp.name}</h3>
-                <span className="text-[10px] text-[#636366]">{CATEGORIES_META[dapp.category]?.label}</span>
+      <div className="relative">
+        <div className="flex gap-3 overflow-x-auto pb-2" style={{ scrollbarWidth: "none" }}>
+          {featured.map((dapp) => (
+            <Link
+              key={dapp.slug}
+              href={`/ecosystem/${dapp.slug}`}
+              className="flex-shrink-0 w-60 bg-[#111113] border border-[#1e1e21] rounded-2xl p-4 hover:border-[#6366f1] transition-all hover:-translate-y-0.5 group focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#6366f1]"
+              style={{ background: `linear-gradient(135deg, ${dapp.color}08, #111113)` }}
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <DAppLogo dapp={dapp} size={40} />
+                <div className="min-w-0">
+                  <h3 className="text-sm font-bold text-white truncate group-hover:text-indigo-300 transition-colors">{dapp.name}</h3>
+                  <span className="text-[10px] text-[#636366]">{CATEGORIES_META[dapp.category]?.label}</span>
+                </div>
               </div>
-            </div>
-            <p className="text-xs text-[#8e8e93] line-clamp-2 mb-2">{dapp.tagline}</p>
-            <div className="flex items-center justify-between">
-              <StarRating rating={dapp.rating} />
-              {dapp.tvl && <span className="text-xs font-bold text-[#22c55e]">{dapp.tvl}</span>}
-            </div>
-          </Link>
-        ))}
+              <p className="text-xs text-[#8e8e93] line-clamp-2 mb-2">{dapp.tagline}</p>
+              <div className="flex items-center justify-between">
+                <StarRating rating={dapp.rating} />
+                {dapp.tvl && <span className="text-xs font-bold text-[#22c55e]">{dapp.tvl}</span>}
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="absolute right-0 top-0 bottom-2 w-12 pointer-events-none bg-gradient-to-l from-[#060608] to-transparent sm:hidden" />
       </div>
     </section>
   );
@@ -272,7 +280,7 @@ function TrendingStrip({ dapps }: { dapps: DApp[] }) {
           <Link
             key={dapp.slug}
             href={`/ecosystem/${dapp.slug}`}
-            className="flex-shrink-0 flex items-center gap-2.5 px-3 py-2 bg-[#111113] border border-[#1e1e21] rounded-xl hover:border-[#f59e0b] transition-all group"
+            className="flex-shrink-0 flex items-center gap-2.5 px-3 py-2 bg-[#111113] border border-[#1e1e21] rounded-xl hover:border-[#f59e0b] transition-all group focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#6366f1]"
           >
             <DAppLogo dapp={dapp} size={28} />
             <div>
@@ -322,7 +330,7 @@ function CategoryRow({ label, emoji, dapps }: { label: string; emoji: string; da
           <Link
             key={dapp.slug}
             href={`/ecosystem/${dapp.slug}`}
-            className="flex-shrink-0 w-52 flex flex-col bg-[#111113] border border-[#1e1e21] rounded-2xl p-3 hover:border-[#6366f1] hover:bg-[#14141a] transition-all group"
+            className="flex-shrink-0 w-52 flex flex-col bg-[#111113] border border-[#1e1e21] rounded-2xl p-3 hover:border-[#6366f1] hover:bg-[#14141a] transition-all group focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#6366f1]"
           >
             <div className="flex items-center gap-2.5 mb-2">
               <DAppLogo dapp={dapp} size={36} />
@@ -341,8 +349,23 @@ function CategoryRow({ label, emoji, dapps }: { label: string; emoji: string; da
 
 /* ─── TOGGLE ────────────────────────────────────────────────────────────────── */
 function Toggle({ on, onChange, color = "#22c55e" }: { on: boolean; onChange: () => void; color?: string }) {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onChange();
+    }
+  };
+
   return (
-    <div onClick={onChange} className="relative cursor-pointer rounded-full transition-colors" style={{ width: 36, height: 20, background: on ? color : "#2c2c2e" }}>
+    <div
+      onClick={onChange}
+      onKeyDown={handleKeyDown}
+      role="switch"
+      aria-checked={on}
+      tabIndex={0}
+      className="relative cursor-pointer rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#6366f1]"
+      style={{ width: 36, height: 20, background: on ? color : "#2c2c2e" }}
+    >
       <div className="absolute top-0.5 w-4 h-4 rounded-full bg-white shadow transition-all" style={{ left: on ? "18px" : "2px" }} />
     </div>
   );
@@ -352,6 +375,7 @@ function Toggle({ on, onChange, color = "#22c55e" }: { on: boolean; onChange: ()
 export default function EcosystemStore() {
   const [ecosystem, setEcosystem] = useState<EcosystemKey>("all");
   const [search, setSearch] = useState("");
+  const [searchInput, setSearchInput] = useState("");
   const [selectedChain, setSelectedChain] = useState<Chain | "all">("all");
   const [selectedCategory, setSelectedCategory] = useState<Category | "all">("all");
   const [selectedLevel, setSelectedLevel] = useState<UserLevel>("all");
@@ -360,6 +384,12 @@ export default function EcosystemStore() {
   const [openSourceOnly, setOpenSourceOnly] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const [viewMode, setViewMode] = useState<"browse" | "grid">("browse");
+
+  // Debounce search input (300ms)
+  useEffect(() => {
+    const timer = setTimeout(() => setSearch(searchInput), 300);
+    return () => clearTimeout(timer);
+  }, [searchInput]);
 
   const isFiltering = search !== "" || selectedChain !== "all" || selectedCategory !== "all" || selectedLevel !== "all" || auditedOnly || openSourceOnly;
 
@@ -422,6 +452,7 @@ export default function EcosystemStore() {
     setAuditedOnly(false);
     setOpenSourceOnly(false);
     setSearch("");
+    setSearchInput("");
   };
 
   return (
@@ -502,13 +533,14 @@ export default function EcosystemStore() {
                 </svg>
               </span>
               <input
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
                 placeholder={`Search ${ecosystemDApps.length} dApps…`}
-                className="w-full bg-[#111113] border border-[#1e1e21] rounded-xl pl-10 pr-9 py-2.5 text-sm text-white placeholder-[#636366] outline-none focus:border-[#6366f1] transition-colors"
+                aria-label="Search dApps"
+                className="w-full bg-[#111113] border border-[#1e1e21] rounded-xl pl-10 pr-9 py-2.5 text-sm text-white placeholder-[#636366] outline-none focus:border-[#6366f1] focus:ring-2 focus:ring-[#6366f1]/30 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#6366f1]"
               />
-              {search && (
-                <button onClick={() => setSearch("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-[#636366] hover:text-white text-lg leading-none">×</button>
+              {searchInput && (
+                <button onClick={() => { setSearchInput(""); setSearch(""); }} aria-label="Clear search" className="absolute right-3 top-1/2 -translate-y-1/2 text-[#636366] hover:text-white text-lg leading-none">×</button>
               )}
             </div>
 
@@ -516,7 +548,8 @@ export default function EcosystemStore() {
             <select
               value={sortKey}
               onChange={(e) => setSortKey(e.target.value as SortKey)}
-              className="bg-[#111113] border border-[#1e1e21] rounded-xl px-3 py-2.5 text-sm text-white outline-none cursor-pointer focus:border-[#6366f1]"
+              aria-label="Sort dApps by"
+              className="bg-[#111113] border border-[#1e1e21] rounded-xl px-3 py-2.5 text-sm text-white outline-none cursor-pointer focus:border-[#6366f1] focus:ring-2 focus:ring-[#6366f1]/30"
             >
               <option value="rating">⭐ Top Rated</option>
               <option value="tvl">💰 Highest TVL</option>
@@ -545,6 +578,8 @@ export default function EcosystemStore() {
             {/* Filters toggle */}
             <button
               onClick={() => setShowFilters((f) => !f)}
+              aria-label={showFilters ? "Hide filters" : "Show filters"}
+              aria-expanded={showFilters}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold border transition-all ${
                 showFilters || activeFilterCount > 0
                   ? "bg-[#6366f1] text-white border-[#6366f1]"
@@ -678,10 +713,17 @@ export default function EcosystemStore() {
 
         {/* ── CONTENT AREA ────────────────────────────────────────────────────── */}
         {filteredDApps.length === 0 ? (
-          <div className="flex flex-col items-center justify-center py-20 text-center">
+          <div className="flex flex-col items-center justify-center py-20 text-center" role="status" aria-live="polite">
             <div className="text-5xl mb-4">🔍</div>
             <h3 className="text-lg font-bold text-white mb-2">No dApps found</h3>
-            <p className="text-[#8e8e93] mb-4">Try adjusting your filters or search</p>
+            <p className="text-[#8e8e93] mb-2">Try adjusting your filters or search</p>
+            {(search || activeFilterCount > 0) && (
+              <p className="text-xs text-[#636366] mb-4">
+                {search && <span>Search: &ldquo;{search}&rdquo;</span>}
+                {search && activeFilterCount > 0 && <span> · </span>}
+                {activeFilterCount > 0 && <span>{activeFilterCount} filter{activeFilterCount > 1 ? "s" : ""} active</span>}
+              </p>
+            )}
             <button
               onClick={clearAll}
               className="px-4 py-2 rounded-xl bg-[#6366f1] text-white text-sm font-semibold hover:bg-[#4f46e5] transition-colors"

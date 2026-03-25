@@ -1,0 +1,92 @@
+{
+  "date": "2026-03-25",
+  "block": "standup",
+  "cycle": 1,
+  "report": {
+    "status": "completed",
+    "summary": "Day 72 standup v1: First cycle of new day. BTC slipped to ~$69,500-71,200 (relief rally fading). Fear & Greed at 8 — Day 48 of Extreme Fear, surpassing FTX-era 42-day streak. Git locks now Day 9 — deploy gap ~160 pages. 2 new guides (ERC-8183 + Crypto Retirement IRA) sitting in PUBLISH_QUEUE from yesterday's last build. 1,152 page.tsx files, 501 published slugs. Yesterday ran 78 agent cycles = $6,097 human-equivalent. Priority: clear git locks before content moat loses indexing momentum.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v15 (yesterday 23:09 UTC): 1 agent ran this cycle (this standup). New day reset — 0 builds, 0 designs, 0 community, 0 publish, 0 eod so far today.",
+          "MARKET UPDATE (live): BTC ~$69,541-71,229 (pulled back from yesterday's $71,782 — relief rally losing steam). ETH ~$2,177. SOL ~$88.32. Fear & Greed Index: 8 (Extreme Fear — Day 48, new record surpassing FTX-era 42-day streak). BTC dominance holding ~56%. Total market cap ~$2.36T (down from $2.46T yesterday). Stablecoins still at $304B ATH.",
+          "QUEUE STATUS: PUBLISH_QUEUE has 2 items (ERC-8183 Agentic Commerce Guide + Crypto Retirement IRA/Pension Guide 2026 — added by yesterday's last build cycle). These need promotion to PUBLISHED_PAGES.",
+          "LOCAL METRICS: 1,152 page.tsx files (+2 from yesterday's L3 Chains + MPC Wallets guides). 501 entries in PUBLISHED_PAGES. Deploy gap holding at ~160 pages (last commit e999560, Mar 17).",
+          "EGRESS: Web search working this cycle — market data is fresh. No CoinGecko/DefiLlama API calls attempted."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE LAST STANDUP: Yesterday's full rotation completed (78 runs across all 6 agents). Last build shipped ERC-8183 + Crypto Retirement guides. Design-v15 and community-v13 closed out. EOD-v15 confirmed 502 slugs, queue drained to 2 items.",
+          "PIPELINE HEALTH: PUBLISH_QUEUE has 2 items ready for promotion. 501 in PUBLISHED_PAGES. 1,152 page.tsx files. Yesterday's total output: 65+ guides, 69+ OG images, 139+ social posts, 56+ SVG cards, 22 newsletters.",
+          "TOTAL INVENTORY: 501 unique published slugs. ~338 live in production (stale Mar 17 commit). Deploy gap: ~160 pages (32% of content unreachable).",
+          "BLOCKER [P0 — DAY 9]: Git locks (.git/HEAD.lock + .git/index.lock) present since Mar 16. 781 uncommitted files. ALL content since Mar 17 is local-only. Jefe action required: rm .git/index.lock .git/HEAD.lock → git add . → git commit → git push. This is now the longest-standing blocker in project history.",
+          "BLOCKER [P1]: /api/market-metrics returns 404 in production — route.ts exists locally but never committed.",
+          "CARRY-OVER [P1]: /trading and /trading/learn return 404 — hub page.tsx missing.",
+          "CARRY-OVER [P1]: TS errors at 46 across 3 files (crypto-arbitrage, crypto-index-funds, structured-data.examples.ts).",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes.",
+          "CARRY-OVER [P2]: 103 published slugs still missing page.tsx files — will 404 in production.",
+          "YESTERDAY'S AGENT RUNS: standup×16, build×11, design×16, community×14, publish×8, eod×16 = 81 total report files."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS + DEPLOY (DAY 9 — CRITICAL): Deploy gap at ~160 pages for 9 days. BTC relief rally fading ($69.5K-71.2K, down from $71.8K) and Fear & Greed hitting record 48-day Extreme Fear streak — market attention is peak. Every hour without deploy = lost Google indexing time for 501 promoted slugs. One manual intervention: rm locks → commit → push = 47% content increase deployed instantly. This is the single highest-ROI action available.",
+          "PRIORITY 2 — PROMOTE QUEUE + BUILD TIME-SENSITIVE CONTENT: 2 items in PUBLISH_QUEUE (ERC-8183 + Crypto Retirement). Promote these, then build: (1) Tax-Loss Harvesting tool page (April 15 deadline now 21 days away), (2) Bitcoin ETF Tracker (ETF narrative still hot despite pullback), (3) Fear & Greed Extreme Fear analysis page (48-day streak is historic, Google-searchable). Content with hard expiry dates must be prioritized.",
+          "PRIORITY 3 — SOCIAL EXECUTION ON RECORD FEAR STREAK: Day 48 of Extreme Fear breaks all records. This is the most compelling narrative since FTX collapse. Push the 5-part 47-Day Fear thread (now 48 days — update numbers). Tax deadline content has 21 days of relevance left. BTC pullback to $69.5K creates 'blood in the streets' framing that drives engagement.",
+          "STRATEGIC NOTE: Day 72 — market conditions worsening (BTC -3%, total cap -$100B overnight) but this is bullish for content engagement. Fear drives search volume. 48 days of Extreme Fear is unprecedented in 2026 — our Fear & Greed content and guides are perfectly positioned IF they're deployed. The git lock is now costing us real organic traffic opportunity daily. Yesterday's 78 agent cycles produced $6,097 human-equivalent work — all trapped behind a file system lock. Clearing it unlocks 9 days of accumulated production value."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel operational)", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Slugs (unique)", "value": "501 in PUBLISHED_PAGES", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "2 items (ERC-8183 + Crypto Retirement)", "pct": 95, "color": "#f59e0b" },
+          { "label": "Pages in Production", "value": "~338 (stale commit e999560, Mar 17)", "pct": 67, "color": "#ef4444" },
+          { "label": "Deploy Gap", "value": "~160 pages not live (32% unreachable)", "pct": 32, "color": "#ef4444" },
+          { "label": "Total page.tsx Files", "value": "1,152 (+2 since yesterday)", "pct": 100, "color": "#4ade80" },
+          { "label": "Total Guides Built", "value": "65+ guides, 69+ OG images", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Content", "value": "139+ posts, 56+ SVG cards, 22 newsletters", "pct": 100, "color": "#4ade80" },
+          { "label": "Days Since Last Deploy", "value": "8 (Mar 17, e999560)", "pct": 1, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "9 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "781", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "46 (unchanged, 3 files)", "pct": 25, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "5/6 (market-metrics 404)", "pct": 83, "color": "#f59e0b" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 core routes", "pct": 0, "color": "#ef4444" },
+          { "label": "Missing page.tsx", "value": "103 published slugs without page.tsx", "pct": 20, "color": "#ef4444" },
+          { "label": "BTC Price", "value": "~$69,541-71,229 (pullback from $71.8K)", "pct": 70, "color": "#f59e0b" },
+          { "label": "ETH Price", "value": "~$2,177", "pct": 62, "color": "#06b6d4" },
+          { "label": "SOL Price", "value": "~$88.32", "pct": 56, "color": "#06b6d4" },
+          { "label": "Fear & Greed Index", "value": "8 (Extreme Fear — Day 48, record streak)", "pct": 8, "color": "#ef4444" },
+          { "label": "BTC Dominance", "value": "~56%", "pct": 56, "color": "#06b6d4" },
+          { "label": "Total Market Cap", "value": "~$2.36T (down ~$100B overnight)", "pct": 48, "color": "#f59e0b" },
+          { "label": "Stablecoins Market Cap", "value": "$304B ATH", "pct": 97, "color": "#4ade80" },
+          { "label": "Tax Deadline Countdown", "value": "21 days to April 15", "pct": 70, "color": "#f59e0b" },
+          { "label": "March Close Countdown", "value": "6 days — 7-month red streak at stake", "pct": 75, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h (standup)", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup $45)", "pct": 9, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$45 (1 run — first cycle of Mar 25)", "pct": 1, "color": "#4ade80" },
+          { "label": "📊 Yesterday's Total (Mar 24)", "value": "$6,097 (78 runs across all 6 agents)", "pct": 51, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" },
+          { "label": "⚠️ Deploy-Blocked Waste", "value": "9 days of content trapped — git locks must be cleared", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API unreachable from Chrome (CORS/network block on api.resend.com). Persistent issue since v13. Report saved locally."
+  }
+}

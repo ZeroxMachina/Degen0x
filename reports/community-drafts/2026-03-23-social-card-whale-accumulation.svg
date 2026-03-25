@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0d1a2d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative gradient circles -->
+  <circle cx="950" cy="150" r="200" fill="#4f46e5" opacity="0.06" filter="url(#softGlow)"/>
+  <circle cx="200" cy="500" r="150" fill="#0891b2" opacity="0.05" filter="url(#softGlow)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Logo area -->
+  <text x="60" y="70" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#6366f1" letter-spacing="0.05em">degen0x</text>
+
+  <!-- Extreme Fear badge -->
+  <rect x="900" y="48" rx="16" ry="16" width="240" height="32" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="1020" y="70" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#ef4444" text-anchor="middle">FEAR &amp; GREED: 10</text>
+
+  <!-- Main title -->
+  <text x="60" y="180" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Whales Bought 8,400+ BTC</text>
+  <text x="60" y="240" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="url(#accent)" letter-spacing="-0.02em">During Extreme Fear</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="290" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Retail sells the dip. Smart money accumulates. Same cycle, every time.</text>
+
+  <!-- Glass card: Stats -->
+  <rect x="60" y="330" rx="16" ry="16" width="340" height="130" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="90" y="375" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500" fill="#8b949e">BTC PRICE</text>
+  <text x="90" y="415" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="700" fill="#e6edf3">$68,014</text>
+  <text x="280" y="415" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#ef4444">-2.8%</text>
+  <text x="90" y="442" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">Held $67K support through Iran deadline</text>
+
+  <rect x="430" y="330" rx="16" ry="16" width="340" height="130" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="460" y="375" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500" fill="#8b949e">WHALE ACCUMULATION</text>
+  <text x="460" y="415" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="700" fill="#22c55e" filter="url(#glow)">+8,400 BTC</text>
+  <text x="460" y="442" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">Net whale address inflows during sell-off</text>
+
+  <rect x="800" y="330" rx="16" ry="16" width="340" height="130" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="830" y="375" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500" fill="#8b949e">ETF FLOWS</text>
+  <text x="830" y="415" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="700" fill="#22c55e" filter="url(#glow)">Positive</text>
+  <text x="830" y="442" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">Inflows held through the entire sell-off</text>
+
+  <!-- Mini chart: implied price action with recovery arrow -->
+  <polyline points="60,540 150,530 250,535 350,555 450,570 500,565 550,555 600,545 650,530 700,520"
+            fill="none" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <polyline points="700,520 750,515 800,510 850,505 900,498 950,490"
+            fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,4" opacity="0.6"/>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="616" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#6366f1">degen0x.com</text>
+  <text x="1140" y="616" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681" text-anchor="end">March 23, 2026</text>
+</svg>

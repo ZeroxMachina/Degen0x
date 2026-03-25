@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#07091a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0e0b2e;stop-opacity:1" />
+    </linearGradient>
+    <!-- Brand title gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <!-- Pool box gradient -->
+    <linearGradient id="poolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:0.25" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.08" />
+    </linearGradient>
+    <!-- Hook box gradient -->
+    <linearGradient id="hookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.28" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.08" />
+    </linearGradient>
+    <!-- Output box gradient -->
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:0.25" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.08" />
+    </linearGradient>
+    <!-- Glow orb purple -->
+    <radialGradient id="orbPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0" />
+    </radialGradient>
+    <!-- Glow orb cyan -->
+    <radialGradient id="orbCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:0.22" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0" />
+    </radialGradient>
+    <!-- Arrow glow -->
+    <filter id="arrowGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Accent bar glow -->
+    <filter id="barGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative glow orbs -->
+  <ellipse cx="200" cy="350" rx="240" ry="220" fill="url(#orbPurple)" opacity="0.6"/>
+  <ellipse cx="1050" cy="300" rx="200" ry="200" fill="url(#orbCyan)" opacity="0.5"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="#6366f1" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#titleGrad)" filter="url(#barGlow)"/>
+
+  <!-- degen0x logo -->
+  <circle cx="52" cy="38" r="18" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5" opacity="0.9"/>
+  <text x="52" y="43" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="800" fill="#818cf8" text-anchor="middle" letter-spacing="-0.5">0x</text>
+  <text x="78" y="43" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#6366f1" letter-spacing="-0.3">degen0x</text>
+
+  <!-- Category pill -->
+  <rect x="1010" y="22" width="166" height="30" rx="15" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="1093" y="41" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#a78bfa" text-anchor="middle" letter-spacing="0.5">DEFI GUIDE</text>
+
+  <!-- Title -->
+  <text x="72" y="130" font-family="Inter, system-ui, sans-serif" font-size="58" font-weight="900" fill="url(#titleGrad)" letter-spacing="-2">Uniswap v4 Hooks</text>
+  <text x="72" y="195" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="900" fill="#e6edf3" letter-spacing="-2">AMMs go programmable</text>
+
+  <!-- Subtitle -->
+  <text x="72" y="238" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#8b949e">Attach custom logic to any liquidity pool — no protocol fork required.</text>
+
+  <!-- Architecture flow diagram: Pool → Hook → Custom Logic -->
+
+  <!-- Flow label -->
+  <text x="72" y="282" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#6e7681" letter-spacing="1">HOW HOOKS WORK</text>
+
+  <!-- Box 1: Liquidity Pool -->
+  <rect x="72" y="296" width="210" height="100" rx="14" fill="url(#poolGrad)" stroke="rgba(99,102,241,0.35)" stroke-width="1.5"/>
+  <text x="99" y="332" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#818cf8" letter-spacing="0.5">LIQUIDITY POOL</text>
+  <text x="99" y="355" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#e6edf3">ETH / USDC</text>
+  <text x="99" y="378" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">$2.4B TVL</text>
+
+  <!-- Arrow 1 -->
+  <g filter="url(#arrowGlow)">
+    <line x1="282" y1="346" x2="338" y2="346" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="4,3"/>
+    <polygon points="338,341 348,346 338,351" fill="#6366f1"/>
+  </g>
+  <text x="315" y="339" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6366f1" text-anchor="middle" font-weight="600">triggers</text>
+
+  <!-- Box 2: Hook -->
+  <rect x="350" y="296" width="210" height="100" rx="14" fill="url(#hookGrad)" stroke="rgba(139,92,246,0.4)" stroke-width="1.5"/>
+  <!-- Hook icon -->
+  <text x="377" y="330" font-family="Inter, system-ui, sans-serif" font-size="22">🪝</text>
+  <text x="407" y="332" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#a78bfa" letter-spacing="0.5">HOOK CONTRACT</text>
+  <text x="377" y="355" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#e6edf3">beforeSwap()</text>
+  <text x="377" y="376" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">afterAddLiquidity()</text>
+
+  <!-- Arrow 2 -->
+  <g filter="url(#arrowGlow)">
+    <line x1="560" y1="346" x2="616" y2="346" stroke="#8b5cf6" stroke-width="2.5" stroke-dasharray="4,3"/>
+    <polygon points="616,341 626,346 616,351" fill="#8b5cf6"/>
+  </g>
+  <text x="593" y="339" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#8b5cf6" text-anchor="middle" font-weight="600">executes</text>
+
+  <!-- Box 3: Custom Logic -->
+  <rect x="628" y="296" width="210" height="100" rx="14" fill="url(#outputGrad)" stroke="rgba(6,182,212,0.35)" stroke-width="1.5"/>
+  <text x="655" y="332" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#22d3ee" letter-spacing="0.5">CUSTOM LOGIC</text>
+  <text x="655" y="358" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#e6edf3">Your code runs</text>
+  <text x="655" y="378" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">on every swap event</text>
+
+  <!-- 4 hook capability pills (right side) -->
+  <text x="888" y="280" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#6e7681" letter-spacing="1">HOOK CAPABILITIES</text>
+
+  <!-- Pill 1: Limit Orders -->
+  <rect x="888" y="293" width="280" height="44" rx="10" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.25)" stroke-width="1"/>
+  <circle cx="912" cy="315" r="10" fill="rgba(99,102,241,0.25)"/>
+  <text x="912" y="319" font-family="Inter, system-ui, sans-serif" font-size="10" text-anchor="middle">📋</text>
+  <text x="933" y="312" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">Limit Orders</text>
+  <text x="933" y="328" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">Trigger swap at exact price</text>
+
+  <!-- Pill 2: Dynamic Fees -->
+  <rect x="888" y="344" width="280" height="44" rx="10" fill="rgba(139,92,246,0.12)" stroke="rgba(139,92,246,0.25)" stroke-width="1"/>
+  <circle cx="912" cy="366" r="10" fill="rgba(139,92,246,0.25)"/>
+  <text x="912" y="370" font-family="Inter, system-ui, sans-serif" font-size="10" text-anchor="middle">⚡</text>
+  <text x="933" y="363" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">Dynamic Fees</text>
+  <text x="933" y="379" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">Adjust fees by volatility</text>
+
+  <!-- Pill 3: MEV Protection -->
+  <rect x="888" y="395" width="280" height="44" rx="10" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <circle cx="912" cy="417" r="10" fill="rgba(34,197,94,0.2)"/>
+  <text x="912" y="421" font-family="Inter, system-ui, sans-serif" font-size="10" text-anchor="middle">🛡</text>
+  <text x="933" y="414" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">MEV Protection</text>
+  <text x="933" y="430" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">TWAMM & sandwich defense</text>
+
+  <!-- Pill 4: On-chain Oracle -->
+  <rect x="888" y="446" width="280" height="44" rx="10" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.25)" stroke-width="1"/>
+  <circle cx="912" cy="468" r="10" fill="rgba(6,182,212,0.2)"/>
+  <text x="912" y="472" font-family="Inter, system-ui, sans-serif" font-size="10" text-anchor="middle">🔮</text>
+  <text x="933" y="465" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">On-chain Oracle</text>
+  <text x="933" y="481" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">Pool-native price feeds</text>
+
+  <!-- "No fork required" callout badge -->
+  <rect x="72" y="425" width="540" height="64" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="96" y="452" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#a78bfa">✓  No protocol fork required</text>
+  <text x="96" y="472" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22d3ee">✓  Deploy custom logic as a separate contract</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="585" width="1200" height="45" fill="rgba(0,0,0,0.45)"/>
+  <line x1="0" y1="585" x2="1200" y2="585" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Mainnet badge -->
+  <rect x="72" y="597" width="160" height="22" rx="11" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="152" y="612" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#22c55e" text-anchor="middle">● MAINNET LIVE</text>
+  <!-- URL -->
+  <text x="600" y="613" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#6366f1" text-anchor="middle" letter-spacing="0.5">degen0x.com/learn/uniswap-v4-hooks-guide</text>
+  <!-- UNI badge -->
+  <rect x="968" y="596" width="160" height="22" rx="11" fill="rgba(255,0,120,0.1)" stroke="rgba(255,0,120,0.25)" stroke-width="1"/>
+  <text x="1048" y="611" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#f472b6" text-anchor="middle">$UNI · $ETH</text>
+</svg>

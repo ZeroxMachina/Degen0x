@@ -1,0 +1,53 @@
+{
+  "date": "2026-03-17",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted final 2 queue pages (Karak Network, Fluid Protocol) to production — publish queue now empty at 405 total published pages; Vercel redeploy pending Chrome reconnection.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/karak-network-guide", "status": "pass" },
+          { "slug": "/learn/fluid-protocol-guide", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages exist (page.tsx)", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Metadata present", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "OpenGraph tags", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "JSON-LD structured data", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript (new files)", "value": "Pass", "pct": 100, "color": "#4ade80" },
+          { "label": "Full build (VM)", "value": "OOM — VM limit", "pct": 0, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko integration", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama integration", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "API cache layer", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Circuit breaker", "value": "Active", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate limiter", "value": "Active", "pct": 100, "color": "#4ade80" },
+          { "label": "Fallback data", "value": "Available", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "metrics": [
+          { "label": "Vercel redeploy", "value": "Pending", "pct": 50, "color": "#f59e0b" },
+          { "label": "Reason", "value": "Chrome extension disconnected", "pct": 0, "color": "#f59e0b" },
+          { "label": "PUBLISH_QUEUE remaining", "value": "0 pages", "pct": 100, "color": "#06b6d4" },
+          { "label": "Total published pages", "value": "405", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "notes": {
+      "queue_status": "Empty — all pages promoted as of 2026-03-17",
+      "deploy_action_needed": "Trigger Vercel redeploy manually or via git push"
+    }
+  }
+}

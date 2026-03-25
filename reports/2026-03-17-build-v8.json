@@ -1,0 +1,86 @@
+{
+  "date": "2026-03-17",
+  "block": "build",
+  "report": {
+    "status": "completed",
+    "summary": "Researched the $4B+ Bitcoin liquid staking token market, wrote a comprehensive 3100-word intermediate guide comparing LBTC, SolvBTC, and pumpBTC, optimized SEO with Article + HowTo + FAQ structured data, scaffolded the Next.js page, built an interactive BTC LST yield estimator component, and added the page to PUBLISH_QUEUE.",
+    "sections": [
+      {
+        "title": "Research Brief",
+        "items": [
+          "Bitcoin LST market hit ~$4B TVL in early 2026; Lombard LBTC holds ~60% market share at ~$2B peak TVL",
+          "Solv Protocol SolvBTC is the closest competitor at ~$1.96B TVL across 6+ chains, with 30,000+ active users",
+          "pumpBTC is the simpler entrant at ~$500M TVL; focuses on clean UX without multi-strategy vault complexity",
+          "Babylon Protocol underpins all major LSTs; direct native staking yields 0.5–1% APY in BABY tokens",
+          "DeFi yield stacking (Aave, Morpho, Pendle) can push blended LST APY to 2–5% but adds composability risk",
+          "Key risks: bridge/cross-chain exploits, smart contract bugs, LST depeg events, BABY token price volatility, upcoming BARD token unlocks in March 2026",
+          "Gap identified: degen0x had babylon-protocol-bitcoin-staking and btcfi-bitcoin-defi-guide-2026 but no standalone BTC LST comparison guide",
+          "Topic selected: bitcoin-liquid-staking-tokens-guide-2026 — strongest market size and clearest content gap"
+        ]
+      },
+      {
+        "title": "Content Created",
+        "items": [
+          "3100-word intermediate-level learn guide covering 8 numbered sections with Table of Contents",
+          "Section 1: What Is a Bitcoin Liquid Staking Token? (concept explanation + key concept callout box)",
+          "Section 2: How Bitcoin LSTs Work Under the Hood (5-step deposit-to-redemption flow cards)",
+          "Section 3: Top Bitcoin LST Protocols Compared (comparison table + 3 protocol deep-dive cards for Lombard, Solv, pumpBTC)",
+          "Section 4: Yield Sources (4 yield layers with APY ranges and sustainability ratings)",
+          "Section 5: Bitcoin LSTs vs WBTC vs Native Staking (5-row comparison table)",
+          "Section 6: Risks You Need to Understand (6 risk cards: bridge, smart contract, depeg, slashing, reward token, custodian)",
+          "Section 7: How to Get Started (5-step guide + internal links to related guides and tools)",
+          "Section 8: FAQ — 6 questions targeting People Also Ask search intent",
+          "Market stats hero bar: ~$4B TVL, ~60% Lombard share, ~$1.96B Solv, 57K+ BTC staked"
+        ]
+      },
+      {
+        "title": "Pages Scaffolded",
+        "pages": [
+          {
+            "slug": "/learn/bitcoin-liquid-staking-tokens-guide-2026",
+            "status": "pass"
+          }
+        ]
+      },
+      {
+        "title": "SEO Optimization",
+        "items": [
+          "Title tag: 'Bitcoin Liquid Staking Tokens (LSTs) Guide 2026 | degen0x' — 57 chars (under 60 limit)",
+          "Meta description: 'Compare top Bitcoin LSTs: LBTC (Lombard), SolvBTC, and pumpBTC. Yields, risks, DeFi integrations, and how to choose the right protocol for your BTC strategy.' — 157 chars (140-160 target)",
+          "OpenGraph type: article with publishedTime/modifiedTime 2026-03-17",
+          "Twitter card: summary_large_image",
+          "Structured data: Article schema (wordCount 3100, datePublished/Modified 2026-03-17)",
+          "Structured data: HowTo schema — 5-step 'How to Get Started with Bitcoin LSTs' (PT2H total time)",
+          "Structured data: FAQ schema — 6 questions targeting high-value search queries",
+          "All three schemas combined via combineSchemas() and rendered via StructuredData component",
+          "Breadcrumb component included (auto-generates BreadcrumbList JSON-LD)",
+          "5 internal links: babylon-protocol-bitcoin-staking, btcfi-bitcoin-defi-guide-2026, restaking-eigenlayer-guide, tools/staking-apy, tools/yield-farming-calculator",
+          "Keywords array: bitcoin liquid staking, bitcoin LST, LBTC Lombard, SolvBTC, pumpBTC, bitcoin yield 2026, BTCfi",
+          "Page added to PUBLISH_QUEUE in src/lib/published-pages.ts under Build Cycle 2026-03-17"
+        ]
+      },
+      {
+        "title": "Interactive Component",
+        "items": [
+          "Component: BitcoinLSTYieldEstimator.tsx (client component, ~350 lines TypeScript)",
+          "Features: BTC amount input, live USD value display, BTC price input, quick-select buttons (0.01/0.1/0.5/1/5 BTC)",
+          "Protocol selector: Lombard (LBTC), Solv Protocol (SolvBTC), pumpBTC — each with token badge, color coding, chain info",
+          "Yield layer toggles: checkbox UI for stacking strategies; Babylon base layer required, DeFi layers optional",
+          "Results panel: Total APY range, Annual Yield in BTC, Annual Yield in USD, Monthly Yield in BTC",
+          "Sustainability ratings per layer: High/Medium/Low with color coding",
+          "Component embedded in guide page between Section 3 (Protocol Comparison) and Section 4 (Yield Sources)",
+          "TypeScript: zero new errors introduced in created files"
+        ]
+      }
+    ],
+    "skills_used": ["researcher", "contentWriter", "seo", "pageScaffold", "programmer"],
+    "files_created": [
+      "src/app/learn/bitcoin-liquid-staking-tokens-guide-2026/page.tsx",
+      "src/components/BitcoinLSTYieldEstimator.tsx",
+      "reports/2026-03-17-build-v8.json"
+    ],
+    "files_modified": [
+      "src/lib/published-pages.ts"
+    ]
+  }
+}

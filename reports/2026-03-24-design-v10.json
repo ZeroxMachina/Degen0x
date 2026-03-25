@@ -1,0 +1,44 @@
+{
+  "date": "2026-03-24",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audit of 2 new learn guides (Tax-Loss Harvesting, Cold Storage Security), created 7 missing OG images for recent pages, implemented accessibility and semantic HTML improvements across both new guides.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Tax-Loss Harvesting Guide: Added aria-label to FAQ section for screen reader accessibility, added role='list' semantic structure to FAQ items",
+          "Tax-Loss Harvesting Guide: Restyled disclaimer section with amber warning color (#d29922) and warning icon for visual consistency with other guide pages",
+          "Cold Storage Guide: Fixed semantic HTML — replaced h2 inside header with div for security warning (was violating heading hierarchy)",
+          "Cold Storage Guide: Added role='alert' to critical security warning for screen reader announcement",
+          "Cold Storage Guide: Converted TOC from div to nav element with aria-label for proper landmark navigation",
+          "Cold Storage Guide: Increased TOC font sizes from 13px to 14px for better readability (minimum 14px per accessibility guidelines)",
+          "Cold Storage Guide: Added aria-label and role='list' to FAQ section for accessibility",
+          "Updated 3 page metadata references (Polymarket, Scroll, Onchain Identity) to point to correct OG SVG filenames"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: leveraged-tokens-guide-2026 (1200x630 SVG) — DeFi Trading theme with leverage multiplier decorations",
+          "OG image: tokenized-treasuries-rwa-yield-guide-2026 (1200x630 SVG) — RWA & Yield theme with bond/treasury visuals",
+          "OG image: advanced-staking-strategies-guide-2026 (1200x630 SVG) — Staking theme with layered validator bars",
+          "OG image: polymarket-prediction-markets-guide-2026 (1200x630 SVG) — Prediction Markets theme with probability indicators",
+          "OG image: scroll-zkevm-guide-2026 (1200x630 SVG) — Layer 2 zkEVM theme with ZK proof symbols",
+          "OG image: onchain-identity-reputation-guide-2026 (1200x630 SVG) — Identity Web3 theme with ID card and verification elements",
+          "OG image: sei-network-parallel-evm-guide (1200x630 SVG) — Layer 1 EVM theme with parallel processing visuals"
+        ]
+      },
+      {
+        "title": "Audit Findings (No Action Required)",
+        "items": [
+          "Styling approach inconsistency noted: Tax-Loss Harvesting uses Tailwind classes while Cold Storage uses inline styles with theme object — both are valid patterns per codebase conventions, no action needed",
+          "Both new pages already had OG SVG images created during the build cycle — confirmed present and well-designed",
+          "Both pages include proper structured data (Article + FAQ JSON-LD), breadcrumbs, BackToTop, and related resource links"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

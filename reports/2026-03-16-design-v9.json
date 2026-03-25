@@ -1,0 +1,51 @@
+{
+  "date": "2026-03-16",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX-polished 2 new learn guides (crypto-inheritance-planning, parallel-evm-guide) — replaced hardcoded colors with CSS variables, added Breadcrumb component with structured data, created loading skeletons, designed and generated OG images, added aria-label to Breadcrumb component.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "crypto-inheritance-planning: Replaced hardcoded #0d1117 background with var(--color-bg) for theme compatibility",
+          "crypto-inheritance-planning: Replaced all hardcoded text colors (#c9d1d9, #e6edf3, #8b949e) with CSS custom properties (--color-text, --color-text-secondary)",
+          "crypto-inheritance-planning: Replaced hardcoded borders (#21262d, #30363d) with var(--glass-border)",
+          "crypto-inheritance-planning: Replaced hardcoded card backgrounds (#161b22) with var(--color-bg-card)",
+          "crypto-inheritance-planning: Replaced hand-coded breadcrumb nav with Breadcrumb component (includes BreadcrumbList JSON-LD structured data)",
+          "crypto-inheritance-planning: Added loading.tsx skeleton with shimmer animation matching article layout (breadcrumb, badges, title, ToC, content sections)",
+          "parallel-evm-guide: Replaced hardcoded #0d1117 background with var(--color-bg) for theme compatibility",
+          "parallel-evm-guide: Replaced all hardcoded text colors with CSS custom properties",
+          "parallel-evm-guide: Replaced hardcoded borders and card backgrounds with design system CSS variables",
+          "parallel-evm-guide: Replaced hardcoded table header background (#21262d) with var(--color-bg-card-hover)",
+          "parallel-evm-guide: Replaced hand-coded breadcrumb nav with Breadcrumb component (includes BreadcrumbList JSON-LD)",
+          "parallel-evm-guide: Added loading.tsx skeleton with shimmer animation (includes comparison table skeleton placeholder)",
+          "Breadcrumb component: Added aria-label='Breadcrumb' to nav element for screen reader accessibility"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: crypto-inheritance-planning (1200x630) — SVG + PNG with shield/lock icon, multi-sig key chain visualization, $30B at-risk stat card, estate tax info, feature pills (Multi-Sig, Casa Protocol, Dead Man Switch, Tax Guide)",
+          "OG image: parallel-evm-guide (1200x630) — SVG + PNG with sequential vs parallel execution lane visualization, Monad/Sei/MegaETH comparison cards with TPS stats, EVM compatible badge, feature pills (Parallel Execution, EVM Compatible, 100K TPS, Sub-second)"
+        ]
+      },
+      {
+        "title": "Accessibility Fixes",
+        "items": [
+          "Added aria-label='Breadcrumb' to shared Breadcrumb component (affects all pages using it)",
+          "Both new pages now use Breadcrumb component with BreadcrumbList JSON-LD structured data for search engines",
+          "Both pages now respect theme switching via CSS custom properties (light/dark mode compatible)"
+        ]
+      },
+      {
+        "title": "SEO Metadata Updates",
+        "items": [
+          "crypto-inheritance-planning: Added openGraph.images with og-crypto-inheritance-planning.png (1200x630)",
+          "parallel-evm-guide: Added openGraph.images with og-parallel-evm-guide.png (1200x630)"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

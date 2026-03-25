@@ -1,0 +1,71 @@
+{
+  "date": "2026-03-25",
+  "block": "build",
+  "report": {
+    "status": "completed",
+    "summary": "Built two SEO-optimized learn guides — Solana Liquid Staking Guide 2026 (with interactive LST yield calculator) and Corporate Crypto Treasury Guide 2026 — both added to PUBLISHED_PAGES.",
+    "sections": [
+      {
+        "title": "Research Brief",
+        "items": [
+          "Topic 1: Solana Liquid Staking — $8B+ TVL, 60.5M SOL in LSTs (14% of staked SOL), JitoSOL + Marinade dominance fell from 95% to 42%, Sanctum INF leads at 8.5% APY, STKESOL institutional launch Jan 2026",
+          "Topic 2: Corporate Crypto Treasuries (DATCos) — 1,132,867 BTC ($80.9B) held by public companies, Strategy Inc. holds 761K BTC (65.2%), BitMine accumulated 4.66M ETH ($12.9B), Pantera predicts 'brutal pruning' consolidation wave",
+          "Gap analysis: no existing Solana liquid staking guide (Bitcoin LST guide exists but not Solana), no broader corporate crypto treasury strategy guide (bitcoin-treasury-companies-guide exists but narrow scope)",
+          "Both topics highly search-relevant: 'solana liquid staking' and 'crypto treasury companies' trending in March 2026"
+        ]
+      },
+      {
+        "title": "Content Created",
+        "items": [
+          "/learn/solana-liquid-staking-guide-2026 — ~2,800 words, Intermediate level, 7 sections: What Is Solana Liquid Staking, How It Works, Top LSTs Compared (JitoSOL/mSOL/INF/JupSOL/STKESOL), Advanced Yield Strategies, Risks, Getting Started, FAQ (6 questions)",
+          "/learn/corporate-crypto-treasury-guide-2026 — ~3,000 words, Intermediate level, 8 sections: What Are DATCos, Strategy Playbook, Top Treasury Companies (BTC + ETH), Business Model, NAV Premium Analysis, Risks & Red Flags, Evaluation Framework, FAQ (5 questions)"
+        ]
+      },
+      {
+        "title": "Pages Scaffolded",
+        "pages": [
+          { "slug": "/learn/solana-liquid-staking-guide-2026", "status": "pass" },
+          { "slug": "/learn/corporate-crypto-treasury-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "SEO Optimization",
+        "items": [
+          "Solana guide title: 'Solana Liquid Staking Guide 2026: LST Yields & APY' (50 chars)",
+          "Treasury guide title: 'Corporate Crypto Treasury Guide 2026' (37 chars)",
+          "Both pages: ArticleSchema + FAQSchema JSON-LD via combineSchemas",
+          "Both pages: OpenGraph (type: article, publishedTime: 2026-03-25) + Twitter card metadata",
+          "Solana guide targets: 'Solana liquid staking', 'JitoSOL', 'mSOL', 'Sanctum INF', 'SOL staking 2026'",
+          "Treasury guide targets: 'corporate crypto treasury', 'DATCo', 'MicroStrategy bitcoin', 'crypto treasury 2026'",
+          "Internal links: Solana guide links to staking-apy tool, DeFi ecosystem guide, advanced staking strategies; Treasury guide links to bitcoin-treasury-companies-guide, bitcoin-etf-guide, crypto-ira, portfolio-tracker"
+        ]
+      },
+      {
+        "title": "Interactive Components",
+        "items": [
+          "SolanaLSTCalculator.tsx — client component with 3 inputs (SOL amount, time period, SOL price) and comparison table of 5 LSTs showing APY, yield in SOL, yield in USD, end balance",
+          "Highlights best-performing LST automatically, includes summary tooltip",
+          "Embedded in solana-liquid-staking-guide-2026/page.tsx between comparison and yield strategies sections"
+        ]
+      },
+      {
+        "title": "PUBLISHED_PAGES Updates",
+        "items": [
+          "Added /learn/solana-liquid-staking-guide-2026 to PUBLISHED_PAGES (Day build cycle batch 4, Mar 25)",
+          "Added /learn/corporate-crypto-treasury-guide-2026 to PUBLISHED_PAGES (Day build cycle batch 4, Mar 25)",
+          "Fixed corporate treasury page: removed 'use client' directive (incompatible with metadata export), fixed import path from @/lib/seo to @/lib/structured-data"
+        ]
+      }
+    ],
+    "files_created": [
+      "src/app/learn/solana-liquid-staking-guide-2026/page.tsx",
+      "src/app/learn/corporate-crypto-treasury-guide-2026/page.tsx",
+      "src/components/SolanaLSTCalculator.tsx",
+      "reports/2026-03-25-build-v2.json"
+    ],
+    "files_modified": [
+      "src/lib/published-pages.ts"
+    ],
+    "skills_used": ["researcher", "contentWriter", "seo", "pageScaffold", "programmer"]
+  }
+}

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <linearGradient id="brandGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="url(#brandGrad2)"/>
+  <!-- Decorative glows -->
+  <circle cx="1000" cy="200" r="150" fill="#6366f1" opacity="0.05" filter="url(#glow2)"/>
+  <circle cx="150" cy="450" r="100" fill="#06b6d4" opacity="0.04" filter="url(#glow2)"/>
+  <!-- Logo -->
+  <text x="60" y="70" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#6366f1" letter-spacing="0.05em">degen0x</text>
+  <!-- Bank icon placeholder -->
+  <rect x="60" y="110" width="56" height="56" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="88" y="148" font-family="Inter, system-ui, sans-serif" font-size="28" fill="#6366f1" text-anchor="middle">🏦</text>
+  <!-- Title -->
+  <text x="60" y="225" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">Morgan Stanley Files</text>
+  <text x="60" y="290" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="900" fill="url(#blueGrad)" letter-spacing="-0.02em">Spot Bitcoin ETF</text>
+  <!-- Subtitle -->
+  <text x="60" y="340" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#8b949e">First major US bank to directly issue a BTC fund under its own name</text>
+  <!-- Data cards row -->
+  <rect x="60" y="390" width="250" height="100" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="80" y="425" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" letter-spacing="0.05em">TICKER</text>
+  <text x="80" y="468" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#6366f1">$MSBT</text>
+
+  <rect x="340" y="390" width="250" height="100" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="360" y="425" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" letter-spacing="0.05em">EXCHANGE</text>
+  <text x="360" y="468" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#06b6d4">NYSE Arca</text>
+
+  <rect x="620" y="390" width="250" height="100" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="640" y="425" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" letter-spacing="0.05em">CUSTODIAN</text>
+  <text x="640" y="468" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#e6edf3">Coinbase</text>
+
+  <rect x="900" y="390" width="240" height="100" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="920" y="425" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" letter-spacing="0.05em">AUM MANAGED</text>
+  <text x="920" y="468" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#22c55e">$1.5T</text>
+
+  <!-- Timeline -->
+  <text x="60" y="540" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">2024: Banks allow BTC ETF access</text>
+  <text x="60" y="562" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">2025: MS recommends IBIT to clients</text>
+  <text x="60" y="584" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#6366f1">2026: MS files to issue its own BTC ETF</text>
+
+  <!-- Bottom -->
+  <rect y="610" width="1200" height="20" fill="rgba(0,0,0,0.3)"/>
+  <text x="1140" y="624" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">degen0x.com</text>
+</svg>

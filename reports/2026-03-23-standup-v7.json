@@ -1,0 +1,86 @@
+{
+  "date": "2026-03-23",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Day 70 standup #8: Full rotation ran since v6 (all 6 agents). Build-v6 added Firedancer + OP_CAT guides, publish-v4 emptied PUBLISH_QUEUE (Solana Blinks + NFTFi promoted), design-v5 created 2 OG images + UX polish, eod-v6 confirmed 654 uncommitted files. Git locks now 8 days old — zero deploys, zero commits. 33 agent runs today ($2,861). Priority unchanged: clear git locks → deploy → halt builds.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v6: Full rotation completed — build-v6, publish-v4, community-v5, design-v5, eod-v6 all ran. No deploys or commits.",
+          "BUILD-V6 OUTPUT: 2 new learn guides — Solana Firedancer Validator Client (~3000 words, 10 sections, architecture tiles + milestone data) and Bitcoin Covenants & OP_CAT (~3000 words, 10 sections, 4-proposal comparison). Both added to PUBLISH_QUEUE.",
+          "PUBLISH-V4 OUTPUT: PUBLISH_QUEUE now EMPTY. Solana Blinks + NFTFi promoted to PUBLISHED_PAGES. Total published slugs: ~332.",
+          "DESIGN-V5 OUTPUT: 2 new OG images (Firedancer SVG + OP_CAT SVG). UX polish: ToC hover underlines, focus-visible on related links, mobile timeline grid fix. 5 pages from prior cycles still missing OG images.",
+          "COMMUNITY-V5 OUTPUT: 5 tweets + 5-part institutional thread (whale accumulation + MSBT), 3 SVG social cards, Discord/TG announcement, newsletter section. Content calendar Mar 23-29.",
+          "EOD-V6 FINDING: 654 uncommitted files (47 modified + 607 untracked). 42 TS errors in structured-data.examples.ts still masked by ignoreBuildErrors. Rate limiter 0/6 core routes (39+ cycles).",
+          "PUBLISHED SLUGS: 432 declared in PUBLISHED_PAGES. ~315 in production (last deploy Mar 17, e999560). Gap: ~117 pages invisible to Google.",
+          "PUBLISH_QUEUE: EMPTY — 2 new guides (Firedancer + OP_CAT) just added but not yet promoted. Net queue = 2.",
+          "SEO RISK: 8 days without deploy. Production serves stale content at commit e999560. 117+ pages built but not live.",
+          "MARKET CONTEXT: BTC ~$68K, ETH ~$2,057, SOL ~$88.55. Fear & Greed at 10 (Extreme Fear). Iran deadline expired. Morgan Stanley MSBT S-1 filed. Whale accumulation +8,400 BTC during fear."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE STANDUP v6: Build-v6 (Firedancer + OP_CAT), publish-v4 (queue cleared), community-v5 (whale/MSBT campaign + 3 SVG cards), design-v5 (2 OG images + UX polish), eod-v6 (QA cycle). 5 agents, ~$452 human-equivalent.",
+          "TODAY'S CUMULATIVE OUTPUT: 12+ learn guides built, 9 pages promoted to PUBLISHED_PAGES, 6+ OG images, 15+ social posts + 7 SVG cards, 6 QA cycles, 5 design audits, 33 agent runs across ~5.5 rotations. ZERO deployed to production.",
+          "BLOCKER [P0 — 8 DAYS]: Git locks (.git/HEAD.lock + .git/index.lock) since Mar 16. Blocks ALL commits and deploys. Fix: rm .git/index.lock .git/HEAD.lock — requires Jefe's manual intervention.",
+          "BLOCKER [P1]: Pages smart-contract-security + onchain-identity still missing StructuredData/Breadcrumb/BackToTop components.",
+          "CARRY-OVER [P1 — 39+ CYCLES]: /api/defi-yields returns 500 on upstream failure (no fallback data).",
+          "CARRY-OVER [P1 — 39+ CYCLES]: Rate limiter not wired to any of 6 core API routes.",
+          "CARRY-OVER [P2]: 103 orphan slugs, ignoreBuildErrors masking 42 TS errors, 5 pages missing OG images.",
+          "WARNING: Vercel '2 days left' flagged in prior cycles — status unknown. Deploy pipeline may be broken even after git locks clear."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS AND DEPLOY: 8 days blocked. 654 uncommitted files at risk. rm .git/index.lock .git/HEAD.lock → git add → commit → push → verify Vercel auto-deploy. This is the ONLY priority.",
+          "PRIORITY 2 — VERIFY VERCEL ACCOUNT STATUS: Prior cycles flagged expiration warning. If Vercel expired, deploy pipeline is broken even after git locks clear. Jefe must check dashboard.",
+          "PRIORITY 3 — HALT ALL BUILD CYCLES: 432+ slugs declared, ~315 in production. Content pipeline has outrun shipping by 117+ pages. PUBLISH_QUEUE was just cleared but 2 new guides already re-queued. Marginal value of building more content = $0 until deploy works.",
+          "STRATEGIC NOTE: 33 agent runs today ($2,861 human-equivalent) with zero reaching production. Every cycle adds local debt without shipping value. Recommend: standup-only mode until git locks resolved. All other agents are burning cost into void."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Published Page Slugs (declared)", "value": "432", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Actually in Production", "value": "~315 (last deploy Mar 17)", "pct": 73, "color": "#f59e0b" },
+          { "label": "Deploy Gap", "value": "~117 pages not live", "pct": 27, "color": "#ef4444" },
+          { "label": "Publish Queue", "value": "2 guides (Firedancer + OP_CAT)", "pct": 95, "color": "#06b6d4" },
+          { "label": "Pages Built Today", "value": "12+ guides + 9 promoted + social assets", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Needing Fix", "value": "2 (missing SEO components)", "pct": 67, "color": "#f59e0b" },
+          { "label": "Pages Missing OG Images", "value": "5", "pct": 60, "color": "#f59e0b" },
+          { "label": "Orphan Slugs (no page.tsx)", "value": "103", "pct": 24, "color": "#f59e0b" },
+          { "label": "Days Since Last Commit", "value": "8 (Mar 17, e999560)", "pct": 2, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "8 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "654", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "42 in 1 file (masked)", "pct": 30, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "6/6 present", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 core routes", "pct": 0, "color": "#ef4444" },
+          { "label": "BTC Price", "value": "~$68,014", "pct": 68, "color": "#f59e0b" },
+          { "label": "Fear & Greed Index", "value": "10 (Extreme Fear)", "pct": 10, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (6 agents: full rotation)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Since Last Standup (full rotation)", "value": "$497 (build $233 + publish $55 + community $41 + design $60 + eod $63 + standup $45)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$2,861 (33 runs: standup×7 $315, build×6 $1,398, publish×4 $220, design×5 $300, community×5 $205, eod×6 $378 + this standup $45)", "pct": 24, "color": "#4ade80" },
+          { "label": "Agent Runs Today", "value": "33 runs across 6 types (~5.5 rotations)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Chrome fetch to api.resend.com blocked (CORS/network sandbox). Report saved locally."
+  }
+}

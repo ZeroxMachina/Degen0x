@@ -2,7 +2,7 @@
 
 "use client";
 
-import React, { useState, useMemo, useCallback } from "react";
+import React, { useState, useMemo, useCallback, useEffect } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
 
 interface Chain {
@@ -185,6 +185,15 @@ export default function BridgeAggregator() {
     setDestChain(temp);
   }, [sourceChain, destChain]);
 
+  useEffect(() => {
+    if (sourceChain === destChain) {
+      const nextChain = chains.find((c) => c.id !== sourceChain);
+      if (nextChain) {
+        setDestChain(nextChain.id);
+      }
+    }
+  }, [sourceChain, destChain]);
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-[var(--color-text)] p-6">
       {/* Breadcrumb */}
@@ -237,6 +246,7 @@ export default function BridgeAggregator() {
             {/* Swap Button */}
             <button
               onClick={swapChains}
+              aria-label="Swap source and destination chains"
               className="w-full bg-gray-700 hover:bg-blue-600 transition rounded-lg p-2 mb-5 text-sm font-semibold flex items-center justify-center gap-2"
             >
               ⇅ Swap Chains
@@ -288,9 +298,12 @@ export default function BridgeAggregator() {
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
                 placeholder="1000"
+                min={10}
+                max={1000000}
+                aria-describedby="amount-helper"
                 className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-[var(--color-text)] placeholder-gray-500 hover:border-cyan-400 transition"
               />
-              <div className="text-xs text-gray-400 mt-1">Min: 10 | Max: 1,000,000</div>
+              <div id="amount-helper" className="text-xs text-gray-400 mt-1">Min: 10 | Max: 1,000,000</div>
             </div>
 
             {/* Find Routes Button */}
@@ -394,6 +407,8 @@ export default function BridgeAggregator() {
                         <div key={route.bridgeId} className="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden transition hover:border-cyan-400">
                           <button
                             onClick={() => setExpandedBridge(isExpanded ? null : route.bridgeId)}
+                            aria-expanded={isExpanded}
+                            aria-label={`View details for ${route.bridgeName} bridge`}
                             className="w-full p-4 flex items-center justify-between hover:bg-gray-750"
                           >
                             <div className="flex items-center gap-4 flex-1 text-left">
@@ -418,7 +433,7 @@ export default function BridgeAggregator() {
                               <div className="text-xs text-gray-400">{route.feePercentage.toFixed(3)}%</div>
                             </div>
 
-                            <div className="text-2xl">{isExpanded ? "▼" : "▶"}</div>
+                            <span className="text-2xl" aria-hidden="true">{isExpanded ? "▼" : "▶"}</span>
                           </button>
 
                           {isExpanded && (
@@ -495,7 +510,7 @@ export default function BridgeAggregator() {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-3 gap-3 text-sm">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
                     <div className="bg-gray-750 p-3 rounded-lg">
                       <div className="text-gray-400 mb-1">Audit Status</div>
                       <div className={bridge.auditStatus === "completed" ? "text-green-400 font-bold" : "text-yellow-400 font-bold"}>
@@ -584,11 +599,6 @@ export default function BridgeAggregator() {
           )}
         </div>
       </div>
-
-      {/* Metadata for SEO */}
-      <title>Cross-Chain Bridge Aggregator | degen0x Tools</title>
-      <meta name="description" content="Compare 12+ bridges across 15 blockchains. Find optimal routes with fee analysis, security ratings, and speed estimates." />
-      <meta name="keywords" content="bridge aggregator, cross-chain, DeFi, token swap, blockchain" />
     </main>
   );
 }

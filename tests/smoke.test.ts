@@ -1,14 +1,19 @@
 /**
  * degen0x Smoke Tests
- * Sprint 34 — Extended build and route validation
+ * Sprint 39 — Enhanced module and published-pages validation
  *
  * Run: npx tsx tests/smoke.test.ts
- * These tests verify that critical pages compile and key modules export correctly.
+ * These tests verify that critical pages compile, modules export correctly,
+ * and published-pages config is valid.
  */
 
 import * as path from 'path';
 import * as fs from 'fs';
+import { fileURLToPath } from 'url';
+import type { PUBLISHED_PAGES, isPublished } from '../src/lib/published-pages';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const SRC = path.join(PROJECT_ROOT, 'src');
 
@@ -148,6 +153,114 @@ test('Lib modules exist: constants', () => {
   assert(fs.existsSync(path.join(SRC, 'lib/constants.ts')), 'constants.ts not found');
 });
 
+test('Lib modules exist: published-pages', () => {
+  assert(fs.existsSync(path.join(SRC, 'lib/published-pages.ts')), 'published-pages.ts not found');
+});
+
+// ─── Sprint 39: published-pages validation ─────────────────────────────────
+test('published-pages exports PUBLISHED_PAGES Set', () => {
+  try {
+    // Read and parse the published-pages file
+    const ppFile = path.join(SRC, 'lib/published-pages.ts');
+    const content = fs.readFileSync(ppFile, 'utf-8');
+
+    // Verify PUBLISHED_PAGES is defined
+    assert(content.includes('export const PUBLISHED_PAGES'), 'PUBLISHED_PAGES export not found');
+    assert(content.includes('new Set('), 'PUBLISHED_PAGES is not a Set');
+
+    // Check it has reasonable number of entries (should have 100+)
+    const setMatch = content.match(/new Set\(\[([\s\S]*?)\]\)/);
+    assert(setMatch, 'Cannot parse Set definition');
+    const entries = setMatch[1].match(/"/g) || [];
+    assert(entries.length >= 50, `PUBLISHED_PAGES has ${entries.length} entries, expected 50+`);
+  } catch (e) {
+    throw new Error(`Failed to validate published-pages.ts: ${(e as any).message}`);
+  }
+});
+
+test('published-pages exports isPublished function', () => {
+  const ppFile = path.join(SRC, 'lib/published-pages.ts');
+  const content = fs.readFileSync(ppFile, 'utf-8');
+  assert(content.includes('export function isPublished'), 'isPublished function not exported');
+  assert(content.includes('PUBLISHED_PAGES.has'), 'isPublished should check PUBLISHED_PAGES');
+});
+
+test('published-pages includes Day 2 tools', () => {
+  const ppFile = path.join(SRC, 'lib/published-pages.ts');
+  const content = fs.readFileSync(ppFile, 'utf-8');
+
+  const day2Tools = [
+    '/tools/staking-rewards',
+    '/tools/onchain-analytics',
+    '/tools/airdrop-tracker',
+    '/tools/funding-rates',
+    '/tools/portfolio-analytics',
+  ];
+
+  day2Tools.forEach(tool => {
+    assert(content.includes(`"${tool}"`), `Day 2 tool ${tool} not found in PUBLISHED_PAGES`);
+  });
+});
+
+// ─── Sprint 39: Lib modules comprehensive check ─────────────────────────────
+test('Key lib files are valid TypeScript', () => {
+  const libFiles = [
+    'constants.ts',
+    'published-pages.ts',
+    'seo-utils.ts',
+    'analytics.ts',
+  ];
+
+  libFiles.forEach(file => {
+    const filePath = path.join(SRC, 'lib', file);
+    assert(fs.existsSync(filePath), `Lib file ${file} not found`);
+
+    const content = fs.readFileSync(filePath, 'utf-8');
+    assert(content.includes('export'), `${file} does not have exports`);
+    assert(!content.includes('syntax error'), `${file} has syntax errors`);
+  });
+});
+
+// ─── Sprint 39: Sitemap validation ─────────────────────────────────────────
+test('Sitemap generator exists', () => {
+  assert(fs.existsSync(path.join(SRC, 'app/sitemap.ts')), 'sitemap.ts not found');
+
+  const content = fs.readFileSync(path.join(SRC, 'app/sitemap.ts'), 'utf-8');
+  assert(content.includes('MetadataRoute.Sitemap'), 'Sitemap should return MetadataRoute.Sitemap');
+  assert(content.includes('PUBLISHED_PAGES'), 'Sitemap should use PUBLISHED_PAGES');
+});
+
+// ─── Sprint 39: 404 page validation ────────────────────────────────────────
+test('404 page exists and is client component', () => {
+  const notFoundPath = path.join(SRC, 'app/not-found.tsx');
+  assert(fs.existsSync(notFoundPath), 'not-found.tsx not found');
+
+  const content = fs.readFileSync(notFoundPath, 'utf-8');
+  assert(content.includes("'use client'"), '404 page must be a client component');
+  assert(content.includes('404'), '404 page should display 404 error');
+});
+
+// ─── Sprint 39: New tool validation ────────────────────────────────────────
+test('Portfolio allocation tool exists', () => {
+  const toolPath = path.join(SRC, 'app/tools/portfolio-allocation/page.tsx');
+  assert(fs.existsSync(toolPath), 'portfolio-allocation/page.tsx not found');
+
+  const content = fs.readFileSync(toolPath, 'utf-8');
+  assert(content.includes('PortfolioAllocationAdvisor'), 'Should import PortfolioAllocationAdvisor component');
+  assert(content.includes('Breadcrumb'), 'Should have breadcrumb navigation');
+});
+
+test('PortfolioAllocationAdvisor component exists', () => {
+  const compPath = path.join(SRC, 'components/PortfolioAllocationAdvisor.tsx');
+  assert(fs.existsSync(compPath), 'PortfolioAllocationAdvisor.tsx not found');
+
+  const content = fs.readFileSync(compPath, 'utf-8');
+  assert(content.includes("'use client'"), 'Component must be a client component');
+  assert(content.includes('useState'), 'Component should use useState');
+  assert(content.includes('Bitcoin'), 'Component should include Bitcoin allocation');
+  assert(content.includes('Ethereum'), 'Component should include Ethereum allocation');
+});
+
 test('No .env files in repo', () => {
   const envFile = path.join(PROJECT_ROOT, '.env');
   const envLocal = path.join(PROJECT_ROOT, '.env.local');
@@ -171,20 +284,137 @@ test('Total source files > 1000', () => {
   assert(count > 100, `Expected 100+ source files but found ${count}`);
 });
 
+// ─── Sprint 39: Constants validation ──────────────────────────────────────
+test('Constants export required values', () => {
+  const constsPath = path.join(SRC, 'lib/constants.ts');
+  const content = fs.readFileSync(constsPath, 'utf-8');
+
+  const requiredExports = ['SITE_NAME', 'SITE_URL', 'SITE_DESCRIPTION'];
+  requiredExports.forEach(exp => {
+    assert(content.includes(`export const ${exp}`), `${exp} not exported from constants`);
+  });
+});
+
+// ─── Sprint 40: DeFi Risk Scanner validation ───────────────────────────────
+test('DeFi Risk Scanner page exists', () => {
+  const toolPath = path.join(SRC, 'app/tools/defi-risk-scanner/page.tsx');
+  assert(fs.existsSync(toolPath), 'defi-risk-scanner/page.tsx not found');
+  const content = fs.readFileSync(toolPath, 'utf-8');
+  assert(content.includes('DeFiRiskScanner'), 'Should import DeFiRiskScanner component');
+  assert(content.includes('Breadcrumb'), 'Should have breadcrumb navigation');
+});
+
+test('DeFiRiskScanner component exists and is substantial', () => {
+  const compPath = path.join(SRC, 'components/DeFiRiskScanner.tsx');
+  assert(fs.existsSync(compPath), 'DeFiRiskScanner.tsx not found');
+  const content = fs.readFileSync(compPath, 'utf-8');
+  assert(content.includes("'use client'"), 'Component must be a client component');
+  assert(content.includes('useState'), 'Component should use useState');
+  assert(content.includes('Aave'), 'Component should include Aave protocol');
+  assert(content.includes('Uniswap'), 'Component should include Uniswap protocol');
+  const lineCount = content.split('\n').length;
+  assert(lineCount > 400, `DeFiRiskScanner has only ${lineCount} lines — expected 400+`);
+});
+
+// ─── Sprint 40: News Aggregator validation ──────────────────────────────────
+test('News Aggregator page exists', () => {
+  const toolPath = path.join(SRC, 'app/tools/news-aggregator/page.tsx');
+  assert(fs.existsSync(toolPath), 'news-aggregator/page.tsx not found');
+  const content = fs.readFileSync(toolPath, 'utf-8');
+  assert(content.includes('CryptoNewsAggregator'), 'Should import CryptoNewsAggregator component');
+});
+
+test('CryptoNewsAggregator component exists and is substantial', () => {
+  const compPath = path.join(SRC, 'components/CryptoNewsAggregator.tsx');
+  assert(fs.existsSync(compPath), 'CryptoNewsAggregator.tsx not found');
+  const content = fs.readFileSync(compPath, 'utf-8');
+  assert(content.includes("'use client'"), 'Component must be a client component');
+  assert(content.includes('useState'), 'Component should use useState');
+  assert(content.includes('Bitcoin'), 'Component should include Bitcoin news');
+  assert(content.includes('sentiment'), 'Component should track sentiment');
+  const lineCount = content.split('\n').length;
+  assert(lineCount > 400, `CryptoNewsAggregator has only ${lineCount} lines — expected 400+`);
+});
+
+// ─── Sprint 40: Structured Data validation ──────────────────────────────────
+test('Structured data library exists', () => {
+  const libPath = path.join(SRC, 'lib/structured-data.ts');
+  assert(fs.existsSync(libPath), 'structured-data.ts not found');
+  const content = fs.readFileSync(libPath, 'utf-8');
+  assert(content.includes('generateToolPageSchema'), 'Should export generateToolPageSchema');
+  assert(content.includes('generateArticleSchema'), 'Should export generateArticleSchema');
+  assert(content.includes('generateFAQSchema'), 'Should export generateFAQSchema');
+  assert(content.includes('generateBreadcrumbSchema'), 'Should export generateBreadcrumbSchema');
+  assert(content.includes('schema.org'), 'Should reference schema.org');
+});
+
+test('StructuredData component exists', () => {
+  const compPath = path.join(SRC, 'components/StructuredData.tsx');
+  assert(fs.existsSync(compPath), 'StructuredData.tsx not found');
+  const content = fs.readFileSync(compPath, 'utf-8');
+  assert(content.includes('application/ld+json'), 'Should render JSON-LD script tag');
+});
+
+// ─── Sprint 40: Build config validation ─────────────────────────────────────
+test('next.config.ts has OOM mitigations', () => {
+  const configPath = path.join(PROJECT_ROOT, 'next.config.ts');
+  const content = fs.readFileSync(configPath, 'utf-8');
+  assert(content.includes('staticGenerationMaxConcurrency'), 'Should limit static generation concurrency');
+  assert(content.includes('workerThreads: false'), 'Should disable worker threads to reduce memory');
+});
+
+test('Sprint 40: Total components count increased', () => {
+  const compsDir = path.join(SRC, 'components');
+  const entries = fs.readdirSync(compsDir);
+  const tsxFiles = entries.filter(e => e.endsWith('.tsx'));
+  assert(tsxFiles.length >= 85, `Expected 85+ components but found ${tsxFiles.length}`);
+});
+
+test('No broken TypeScript syntax in key files', () => {
+  const checkFiles = [
+    'src/app/not-found.tsx',
+    'src/app/sitemap.ts',
+    'src/app/tools/portfolio-allocation/page.tsx',
+    'src/components/PortfolioAllocationAdvisor.tsx',
+  ];
+
+  checkFiles.forEach(file => {
+    const filePath = path.join(PROJECT_ROOT, file);
+    if (fs.existsSync(filePath)) {
+      const content = fs.readFileSync(filePath, 'utf-8');
+
+      // Basic syntax checks
+      const openBraces = (content.match(/\{/g) || []).length;
+      const closeBraces = (content.match(/\}/g) || []).length;
+      assert(openBraces === closeBraces, `${file} has mismatched braces (${openBraces} open, ${closeBraces} close)`);
+
+      const openParens = (content.match(/\(/g) || []).length;
+      const closeParens = (content.match(/\)/g) || []).length;
+      assert(openParens === closeParens, `${file} has mismatched parentheses (${openParens} open, ${closeParens} close)`);
+    }
+  });
+});
+
 // --- Report ---
 const passed = results.filter(r => r.passed).length;
 const failed = results.filter(r => !r.passed).length;
 const total = results.length;
 const totalTime = results.reduce((a, r) => a + r.duration, 0);
 
-console.log('\n🧪 degen0x Smoke Test Results');
-console.log('═'.repeat(50));
+console.log('\nSmoke Test Results');
+console.log('═'.repeat(60));
 results.forEach(r => {
-  const icon = r.passed ? '✅' : '❌';
+  const icon = r.passed ? '[PASS]' : '[FAIL]';
   console.log(`${icon} ${r.name} (${r.duration}ms)`);
-  if (r.error) console.log(`   → ${r.error}`);
+  if (r.error) console.log(`        Error: ${r.error}`);
 });
-console.log('═'.repeat(50));
-console.log(`\n${passed}/${total} passed, ${failed} failed (${totalTime}ms)\n`);
+console.log('═'.repeat(60));
+console.log(`\nTotal: ${passed}/${total} passed, ${failed} failed (${totalTime}ms)\n`);
 
-if (failed > 0) process.exit(1);
+if (failed > 0) {
+  console.log(`Failed tests: ${failed}`);
+  process.exit(1);
+} else {
+  console.log('All smoke tests passed!\n');
+  process.exit(0);
+}

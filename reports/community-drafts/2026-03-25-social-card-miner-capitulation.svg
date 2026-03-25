@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="120" r="180" fill="rgba(239,68,68,0.04)"/>
+  <circle cx="150" cy="500" r="120" fill="rgba(79,70,229,0.04)"/>
+
+  <!-- Logo area -->
+  <text x="60" y="55" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#8b949e" letter-spacing="0.1em">DEGEN0X</text>
+
+  <!-- Alert badge -->
+  <rect x="160" y="38" width="120" height="24" rx="12" fill="rgba(239,68,68,0.15)"/>
+  <text x="220" y="54" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#ef4444" text-anchor="middle">CAPITULATION</text>
+
+  <!-- Main headline -->
+  <text x="60" y="130" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Miner Capitulation</text>
+  <text x="60" y="185" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Phase Confirmed</text>
+
+  <text x="60" y="225" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#8b949e">BTC miners losing $19,000 per coin — hashprice at historic lows</text>
+
+  <!-- Data cards row -->
+  <!-- Card 1: Production Cost -->
+  <rect x="60" y="270" width="250" height="130" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="85" y="305" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="0.05em">PRODUCTION COST</text>
+  <text x="85" y="350" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#ef4444" filter="url(#glow)">$88,000</text>
+  <text x="85" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">Average cost per BTC mined</text>
+
+  <!-- Card 2: Market Price -->
+  <rect x="340" y="270" width="250" height="130" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="365" y="305" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="0.05em">MARKET PRICE</text>
+  <text x="365" y="350" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#f59e0b" filter="url(#glow)">$70,335</text>
+  <text x="365" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">BTC spot price</text>
+
+  <!-- Card 3: Loss Per Coin -->
+  <rect x="620" y="270" width="250" height="130" rx="16" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+  <text x="645" y="305" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="0.05em">LOSS PER COIN</text>
+  <text x="645" y="350" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#ef4444" filter="url(#glow)">-$19,000</text>
+  <text x="645" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#ef4444">-21% margin per block</text>
+
+  <!-- Card 4: ETF Inflows -->
+  <rect x="900" y="270" width="250" height="130" rx="16" fill="rgba(34,197,94,0.06)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+  <text x="925" y="305" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="0.05em">ETF INFLOWS (MAR)</text>
+  <text x="925" y="350" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#22c55e" filter="url(#glow)">$2.5B</text>
+  <text x="925" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#22c55e">Longest streak of 2026</text>
+
+  <!-- Historical context bar -->
+  <rect x="60" y="430" width="1090" height="90" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="85" y="465" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="0.05em">HISTORICAL PATTERN</text>
+  <text x="85" y="498" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#e6edf3">Every prior miner capitulation + institutional accumulation combo preceded a major rally</text>
+
+  <!-- Historical dots -->
+  <circle cx="930" cy="460" r="4" fill="#22c55e"/>
+  <text x="942" y="465" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">2018 → +320%</text>
+  <circle cx="1040" cy="460" r="4" fill="#22c55e"/>
+  <text x="1052" y="465" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">2022 → +155%</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="550" width="1200" height="80" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="598" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="url(#accent)">degen0x.com</text>
+  <text x="340" y="598" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">Free crypto tools & research — no signup required</text>
+
+  <!-- Fear & Greed badge -->
+  <rect x="1020" y="570" width="130" height="36" rx="18" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="1085" y="594" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#ef4444" text-anchor="middle">F&G: 34 Fear</text>
+</svg>

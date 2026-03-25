@@ -1,0 +1,73 @@
+{
+  "date": "2026-03-25",
+  "block": "community",
+  "version": "v2",
+  "report": {
+    "status": "completed",
+    "summary": "Evening update: Drafted 3 new social posts (#116-118) covering the House tokenization hearing ($26.48B RWA market, 2 bills introduced), institutional accumulation scorecard (MS MSBT + $2.5B ETF inflows + MicroStrategy 762K BTC), and $26.48B RWA milestone thread. Updated newsletter v23 with tokenization hearing addendum. Created content calendar v29 (11 posts through Mar 28). Built 2 new SVG social cards (tokenization hearing + institutional scorecard divergence meter). Key narrative: Congress legislating tokenization while retail sits at Day 48 Extreme Fear — the institutional/retail divergence is the defining story of March 2026.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #116: Congress Tokenization Hearing — most important hearing to date, 2 bills introduced (Modernizing Markets Through Tokenization Act + Capital Markets Technology Modernization Act), $26.48B RWA market, Blockchain Association CEO testified. CTA to tokenized-real-world-assets-guide (scheduled Thu Mar 26 8AM ET)",
+          "Tweet #117: Institutional Accumulation Scorecard — week of Mar 25 summary: MS MSBT filing, $2.5B ETF inflows, MSTR 762K BTC, Bitmine 4.66M ETH, Congress hearing, CLARITY Act. 'The divergence has never been wider.' CTA to whale-tracker (scheduled Thu Mar 26 1PM ET)",
+          "Tweet #118: $26.48B RWA On-Chain — breakdown of tokenized asset classes (treasuries, equities, real estate, private credit, commodities), Congress hearing context. CTA to tokenized-real-world-assets-guide (scheduled Fri Mar 28 10AM ET)",
+          "Newsletter v23 addendum: Tokenization hearing spotlight section — 2 bills, $26.48B market, Nasdaq approval, legislative scaffolding catching up to market reality",
+          "Content calendar v29: 11 posts scheduled Wed Mar 25 through Fri Mar 28 across Twitter, Discord/TG, and Email"
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "SVG social card: Congress Tokenization Hearing — TOKENIZATION badge, 4 stat cards ($26.48B RWA, 2 bills, $304B stablecoins, F&G 8), 5 asset class chips (Treasuries, Equities, Real Estate, Private Credit, Commodities), 4 market leader chips (BlackRock BUIDL, Franklin Templeton, Nasdaq, Blockchain Assoc.)",
+          "SVG social card: Institutional Accumulation Scorecard — INSTITUTIONAL SIGNAL badge, 6 activity cards (MS MSBT, $2.5B ETF, MSTR 762K, Bitmine 4.66M ETH, Congress hearing, CLARITY Act), divergence meter showing F&G 8 vs. all-time high institutional activity"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Tokenized RWA Guide", "value": "$26.48B on-chain + Congress hearing today", "pct": 97, "color": "#4ade80" },
+          { "label": "Fear & Greed Content", "value": "Day 48 ALL-TIME RECORD streak", "pct": 95, "color": "#ef4444" },
+          { "label": "Bitcoin ETF Guides", "value": "$2.5B March inflows + MSBT filing", "pct": 92, "color": "#4ade80" },
+          { "label": "Morgan Stanley MSBT Guide", "value": "First bank spot BTC ETF — trending", "pct": 90, "color": "#6366f1" },
+          { "label": "Whale Tracker Tool", "value": "Institutional accumulation narrative peak", "pct": 88, "color": "#f59e0b" },
+          { "label": "Stablecoin Guides", "value": "$304B ATH + CLARITY Act 99% done", "pct": 85, "color": "#06b6d4" },
+          { "label": "Tax Guides", "value": "21 days to April 15 — time-sensitive", "pct": 83, "color": "#f59e0b" },
+          { "label": "DCA Calculator", "value": "Evergreen tool — peak demand at F&G 8", "pct": 80, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Growth Trajectory Analysis",
+        "items": [
+          "BREAKOUT: Tokenized RWA content — Congress holding dedicated hearing, $26.48B market, 2 bills introduced, Nasdaq approval. This is the freshest high-impact narrative. Our guide is positioned for massive search volume growth.",
+          "PEAK: Fear & Greed content — 48-day record. Every day the streak continues, we own the 'extreme fear' search narrative. Unique competitive advantage.",
+          "SURGING: Bitcoin ETF coverage — MSBT filing + $2.5B March inflows. 'Morgan Stanley bitcoin ETF' is a brand-new search query we should dominate.",
+          "STRONG: Institutional accumulation theme — the retail fear vs. institutional buying divergence is the meta-narrative of March 2026. Our whale tracker + ETF guides are perfectly positioned.",
+          "TIME-SENSITIVE: Tax guides — 21 days until April 15 deadline. Peak search volume window is NOW.",
+          "EMERGING: Onchain credit scoring, ERC-8183 agentic commerce — early-mover content with zero competition. Will compound over weeks.",
+          "BLOCKED: 160+ pages stuck behind git lock (ongoing). Every day undeployed = lost indexing momentum for queued content."
+        ]
+      },
+      {
+        "title": "Market Context",
+        "metrics": [
+          { "label": "BTC", "value": "~$70,335 (+3% 24h)", "pct": 70, "color": "#f59e0b" },
+          { "label": "ETH", "value": "~$2,133-$2,177 (+3.15%)", "pct": 62, "color": "#06b6d4" },
+          { "label": "SOL", "value": "~$88-$91 (range-bound)", "pct": 56, "color": "#8b5cf6" },
+          { "label": "Total Market Cap", "value": "$2.44T (+3.06%)", "pct": 65, "color": "#6366f1" },
+          { "label": "Fear & Greed", "value": "8 (Extreme Fear — Day 48 ALL-TIME RECORD)", "pct": 8, "color": "#ef4444" },
+          { "label": "BTC ETFs March", "value": "$2.5B inflows, YTD outflows → $210M", "pct": 85, "color": "#4ade80" },
+          { "label": "Stablecoins", "value": "$304B ATH", "pct": 97, "color": "#4ade80" },
+          { "label": "RWA On-Chain", "value": "$26.48B (+5.25% in 30d)", "pct": 88, "color": "#22c55e" },
+          { "label": "degen0x Pages", "value": "501 published", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "files_created": [
+      "reports/community-drafts/2026-03-25-social-drafts-v2.md",
+      "reports/community-drafts/2026-03-25-social-card-tokenization-hearing.svg",
+      "reports/community-drafts/2026-03-25-social-card-institutional-scorecard.svg"
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"]
+  }
+}

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="50%" style="stop-color:#0a1128"/>
+      <stop offset="100%" style="stop-color:#080d1c"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.06)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accentGrad)"/>
+
+  <!-- Ambient glow circles -->
+  <circle cx="200" cy="300" r="250" fill="#4f46e5" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="1000" cy="350" r="200" fill="#22c55e" opacity="0.05" filter="url(#glow)"/>
+  <circle cx="600" cy="100" r="180" fill="#0891b2" opacity="0.04" filter="url(#glow)"/>
+
+  <!-- Logo area -->
+  <circle cx="80" cy="50" r="18" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.8"/>
+  <text x="67" y="56" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800" fill="#818cf8">0x</text>
+  <text x="108" y="55" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#8b949e">degen0x</text>
+
+  <!-- Institution icon (building) -->
+  <g transform="translate(560, 60)" opacity="0.15">
+    <rect x="0" y="30" width="80" height="60" fill="none" stroke="#6366f1" stroke-width="2" rx="2"/>
+    <polygon points="40,10 0,30 80,30" fill="none" stroke="#6366f1" stroke-width="2"/>
+    <line x1="20" y1="45" x2="20" y2="75" stroke="#6366f1" stroke-width="2"/>
+    <line x1="40" y1="45" x2="40" y2="75" stroke="#6366f1" stroke-width="2"/>
+    <line x1="60" y1="45" x2="60" y2="75" stroke="#6366f1" stroke-width="2"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="185" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="900" fill="url(#accentGrad)" text-anchor="middle" letter-spacing="-1">MORGAN STANLEY</text>
+  <text x="600" y="240" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="#e6edf3" text-anchor="middle" letter-spacing="-0.5">Bitcoin ETF Filing</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="280" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#8b949e" text-anchor="middle">Updated application submitted during Extreme Fear — Day 47</text>
+
+  <!-- Data cards row -->
+  <!-- Card 1: AUM -->
+  <g transform="translate(80, 310)">
+    <rect x="0" y="0" width="310" height="120" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="155" y="35" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle" text-transform="uppercase" letter-spacing="1">ASSETS UNDER MANAGEMENT</text>
+    <text x="155" y="78" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="900" fill="url(#greenGrad)" text-anchor="middle">$6.5T</text>
+    <text x="155" y="105" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="middle">World's largest wealth manager</text>
+  </g>
+
+  <!-- Card 2: 1% allocation -->
+  <g transform="translate(445, 310)">
+    <rect x="0" y="0" width="310" height="120" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="155" y="35" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle" text-transform="uppercase" letter-spacing="1">1% ALLOCATION =</text>
+    <text x="155" y="78" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="900" fill="#f59e0b" text-anchor="middle">$65B</text>
+    <text x="155" y="105" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="middle">More than Wednesday's $100B wipeout</text>
+  </g>
+
+  <!-- Card 3: Fear & Greed -->
+  <g transform="translate(810, 310)">
+    <rect x="0" y="0" width="310" height="120" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+    <text x="155" y="35" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle" text-transform="uppercase" letter-spacing="1">FEAR &amp; GREED INDEX</text>
+    <text x="155" y="78" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="900" fill="#ef4444" text-anchor="middle">10</text>
+    <text x="155" y="105" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="middle">Extreme Fear — Day 47+</text>
+  </g>
+
+  <!-- Insight line -->
+  <rect x="80" y="460" width="1040" height="50" rx="12" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="600" y="491" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#22c55e" text-anchor="middle" font-weight="600">Smart money files when others flee. Whales accumulated 270K BTC ($23B) in 30 days.</text>
+
+  <!-- BTC price tag -->
+  <rect x="940" y="530" width="180" height="36" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1030" y="554" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" fill="#22c55e" text-anchor="middle">$BTC $70,600</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(0,0,0,0.3)"/>
+  <text x="80" y="616" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#6e7681">degen0x.com</text>
+  <text x="1120" y="616" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681" text-anchor="end">March 23, 2026</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accentGrad)"/>
+</svg>

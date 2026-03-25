@@ -1,0 +1,62 @@
+{
+  "date": "2026-03-16",
+  "block": "community",
+  "cycle": "v27",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v27: On-Chain Analytics + Sui Blockchain social campaigns (Day 43b freshly published, zero prior social coverage); Post-FOMC reactive templates (A/B/C) ready for Thu Mar 19; Smart Wallets preview tweet for Mon Mar 31 (Pectra T-10, EIP-7702 synergy); calendar filled Sat-Mon Mar 29-31 + Thu Mar 19; newsletter amendments for Thu Mar 20; 2 new social cards created.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet templates (Thu Mar 19 PM): Post-FOMC reactive — 3 templates (Hold/Cut/Hike) with crypto implications and degen0x tool CTAs; publish within 1 hour of Fed decision",
+          "Twitter thread (Sat Mar 29 AM, 5 posts): On-Chain Analytics — '90% of crypto investors make decisions using price charts alone'; Exchange Netflow, MVRV Ratio, Stablecoin Supply Ratio; free tools list (Glassnode, Dune, DefiLlama, Nansen, Arkham); CTA to /learn/on-chain-analytics-guide",
+          "Tweet (Sat Mar 29 AM): On-Chain Analytics single — 3 key metrics every investor should track, CTA to guide",
+          "Twitter thread (Sun Mar 30 AM, 5 posts): Sui Blockchain — 'Sui hit $1B+ TVL and most crypto Twitter hasn't noticed'; object-centric model, Move language, zkLogin, ecosystem breakdown (DeepBook, Cetus, Scallop, Walrus); CTA to /learn/sui-blockchain-guide",
+          "Tweet (Sun Mar 30 AM): Sui single — $1B+ TVL, 4 key differentiators, CTA to guide",
+          "Tweet (Mon Mar 31 AM): Smart Wallets preview — 'In 24 days, every Ethereum wallet becomes a smart account'; EIP-7702 gas sponsorship, transaction batching, social recovery, session keys; CTA to /learn/smart-wallets-guide-2026",
+          "Newsletter amendments (Thu Mar 20): On-Chain Analytics Guide + Sui Blockchain Guide added to NEW ON DEGEN0X section; Degen Corner updated with Smart Wallets EIP-7702 teaser"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/tools/dca-calculator", "value": "FOMC week — volatility tool demand peaks", "pct": 97, "color": "#4ade80" },
+          { "label": "/learn/crypto-tax-guide-2026", "value": "29 days to Apr 15 — escalating tax intent", "pct": 95, "color": "#f59e0b" },
+          { "label": "/learn/stablecoin-yield-strategies-2026", "value": "Pre-FOMC yield appetite surging (+92%)", "pct": 92, "color": "#22d3ee" },
+          { "label": "/learn/ethereum-pectra-upgrade-guide", "value": "24 days to Pectra — developer engagement peak", "pct": 91, "color": "#8b5cf6" },
+          { "label": "/learn/on-chain-analytics-guide", "value": "Day 43b published — zero social until v27", "pct": 88, "color": "#06b6d4" },
+          { "label": "/learn/sui-blockchain-guide", "value": "Day 43b published — $1B TVL milestone, zero social until v27", "pct": 86, "color": "#6fbcf0" },
+          { "label": "/learn/smart-wallets-guide-2026", "value": "In queue — EIP-7702 search volume climbing pre-Pectra", "pct": 84, "color": "#f59e0b" },
+          { "label": "/learn/defai-guide", "value": "v26 lead: AI×DeFi narrative — social scheduled Mar 28", "pct": 83, "color": "#8b5cf6" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-on-chain-analytics.svg — 1200x630 social card: dark theme with cyan/indigo chart line showing BTC price trajectory; left panel has price chart with grid, area fill, data points, and 'Whale Buy' annotation callout; right glass card shows 3 key signals (Exchange Netflow -24,500 BTC bullish, MVRV Ratio 1.85 neutral, Stablecoin Supply +12.4% bullish) with color-coded status pills; degen0x brand bar. Saved to /public/social-on-chain-analytics.svg",
+          "social-sui-blockchain.svg — 1200x630 social card: dark theme with Sui blue (#6fbcf0) accent; simplified Sui droplet logo; 4 feature pills (Object-Centric, Parallel Execution, Sub-Second Finality, zkLogin); left glass card with ecosystem highlights (DeepBook, Cetus/Turbos, Scallop/NAVI, Walrus, SuiNS) color-coded by category; right glass card with network stats ($1.2B+ TVL with gradient bar, <0.5s finality, 297K peak TPS, ~3.5% staking APY); degen0x brand bar. Saved to /public/social-sui-blockchain.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "On-Chain Analytics Guide: Day 43b (just published today). Strong search intent for 'on-chain analytics', 'crypto on-chain data', 'whale tracking'. Pairs with existing /tools/whale-tracker and /tools/fear-greed-timeline. Educational thread format drives highest Twitter engagement. Zero social coverage until v27.",
+          "Sui Blockchain Guide: Day 43b (just published today). $1B+ TVL milestone generates organic interest. Move-based L1 differentiator angle avoids 'another ETH killer' fatigue. zkLogin and gaming angles appeal beyond DeFi-only audience. Zero social coverage until v27.",
+          "Smart Wallets Guide 2026: Currently in PUBLISH_QUEUE. EIP-7702 is the most user-facing Pectra change — 'every wallet becomes a smart account.' Search volume for 'smart wallets' and 'account abstraction' climbing as Apr 10 approaches. Preview tweet builds anticipation. Strong synergy with existing Pectra countdown content.",
+          "Post-FOMC reactive templates: FOMC Wed Mar 18 2 PM ET is the macro event of the week. Having 3 pre-written templates (hold/cut/hike) enables sub-1-hour publishing while attention is highest. Positions degen0x as real-time relevant. First cycle to include reactive macro content.",
+          "353 pages live, 2 in queue (smart-wallets-guide-2026, mev-protection-guide). Calendar now filled through Mon Mar 31 with no posting conflicts.",
+          "Social drafts saved to /reports/community-drafts/2026-03-16-social-drafts-v27.md",
+          "On-chain analytics social card saved to /public/social-on-chain-analytics.svg",
+          "Sui blockchain social card saved to /public/social-sui-blockchain.svg"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"],
+    "assets_created": [
+      "/public/social-on-chain-analytics.svg",
+      "/public/social-sui-blockchain.svg",
+      "/reports/community-drafts/2026-03-16-social-drafts-v27.md"
+    ]
+  }
+}

@@ -23,7 +23,7 @@ export default function Breadcrumb({ items }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <nav className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] mb-6">
+      <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] mb-6">
         {items.map((item, index) => (
           <span key={item.href ?? index} className="flex items-center gap-2">
             {index > 0 && <span>/</span>}

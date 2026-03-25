@@ -3,83 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>degen0x — CEO Project Dashboard — Sprint 46</title>
+  <title>degen0x — CEO Project Dashboard — Sprint 57</title>
   <style>
     :root {
-      --bg: #0d1117;
-      --surface: #161b22;
-      --surface2: #1c2330;
-      --border: #30363d;
-      --text: #e6edf3;
-      --text2: #8b949e;
-      --green: #3fb950;
-      --blue: #58a6ff;
-      --yellow: #d29922;
-      --purple: #bc8cff;
-      --red: #f85149;
-      --orange: #f0883e;
-      --cyan: #39d353;
+      --bg: #0d1117; --surface: #161b22; --surface2: #1c2330; --border: #30363d;
+      --text: #e6edf3; --text2: #8b949e; --green: #3fb950; --blue: #58a6ff;
+      --yellow: #d29922; --purple: #bc8cff; --red: #f85149; --orange: #f0883e;
+      --cyan: #06b6d4; --indigo: #6366f1;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; }
-
-    .header {
-      background: var(--surface); border-bottom: 1px solid var(--border);
-      padding: 16px 24px; display: flex; align-items: center; justify-content: space-between;
-      position: sticky; top: 0; z-index: 100;
-    }
+    .header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
     .logo { font-size: 22px; font-weight: 800; background: linear-gradient(135deg, #6366f1, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .badge { background: #6366f120; color: #818cf8; border: 1px solid #6366f140; border-radius: 6px; padding: 3px 10px; font-size: 12px; font-weight: 600; }
-    .header-right { display: flex; align-items: center; gap: 16px; }
-    .date-badge { color: var(--text2); font-size: 13px; }
     .sprint-badge { background: #3fb95020; color: var(--green); border: 1px solid #3fb95040; border-radius: 6px; padding: 4px 12px; font-size: 12px; font-weight: 600; }
-
     .team-row { background: var(--surface); border-bottom: 1px solid var(--border); padding: 10px 24px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
     .team-label { font-size: 11px; color: var(--text2); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
     .agent { display: flex; align-items: center; gap: 6px; padding: 4px 10px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; font-size: 12px; }
     .agent-dot { width: 7px; height: 7px; border-radius: 50%; }
-
     .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; padding: 16px 24px; }
-    .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+    .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
     .stat-label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.05em; }
-    .stat-value { font-size: 22px; font-weight: 700; }
-    .stat-sub { font-size: 11px; color: var(--text2); }
-
+    .stat-value { font-size: 22px; font-weight: 700; margin-top: 4px; }
+    .stat-sub { font-size: 11px; color: var(--text2); margin-top: 2px; }
     .board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 16px 24px; }
     @media (max-width: 1100px) { .board { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 600px) { .board { grid-template-columns: 1fr; } }
-
-    .column { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; display: flex; flex-direction: column; min-height: 300px; }
-    .col-header { padding: 12px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
-    .col-count { background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px; font-size: 11px; color: var(--text2); }
-    .col-body { padding: 10px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
-
-    .card { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
-    .card:hover { border-color: var(--blue); }
+    .col { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    .col-header { padding: 12px 14px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); }
+    .col-count { font-size: 11px; font-weight: 600; padding: 2px 7px; background: var(--surface2); border-radius: 10px; color: var(--text2); }
+    .col-body { padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+    .card { background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
     .card-title { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
-    .card-desc { font-size: 11px; color: var(--text2); line-height: 1.4; }
-    .card-meta { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
-    .tag { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
-
-    .section-header { padding: 16px 24px 8px; font-size: 16px; font-weight: 700; }
-
+    .card-desc { font-size: 11px; color: var(--text2); line-height: 1.5; }
+    .card-meta { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+    .tag { font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 5px; }
+    .card-loc { font-size: 10px; font-weight: 700; color: var(--orange); margin-top: 4px; }
     .sprint-summary { margin: 16px 24px; background: linear-gradient(135deg, #161b22, #1c2330); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; }
     .sprint-summary h3 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
     .sprint-summary table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    .sprint-summary th { text-align: left; padding: 6px 8px; color: var(--text2); font-size: 11px; text-transform: uppercase; border-bottom: 1px solid var(--border); }
-    .sprint-summary td { padding: 6px 8px; border-bottom: 1px solid #1c2330; }
-
-    .cost-section { margin: 0 24px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; }
-    .cost-section h3 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
-    .cost-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
-    .cost-card { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
-    .cost-card .role { font-size: 11px; color: var(--text2); text-transform: uppercase; margin-bottom: 4px; }
-    .cost-card .rate { font-size: 14px; font-weight: 600; }
-    .cost-card .hours { font-size: 11px; color: var(--text2); margin-top: 2px; }
-    .cost-card .total { font-size: 18px; font-weight: 700; margin-top: 4px; }
-
-    .velocity-bar { height: 6px; border-radius: 3px; background: var(--surface2); overflow: hidden; margin-top: 8px; }
-    .velocity-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, #6366f1, #06b6d4); }
+    .sprint-summary th { text-align: left; color: var(--text2); font-weight: 600; font-size: 11px; text-transform: uppercase; padding: 6px 10px; border-bottom: 1px solid var(--border); }
+    .sprint-summary td { padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .sprint-summary tr:last-child td { border-bottom: none; }
+    .sprint-total { margin-top: 12px; font-size: 12px; color: var(--text2); }
+    .mission-banner { margin: 0 24px 16px; background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(6,182,212,0.08)); border: 1px solid rgba(99,102,241,0.25); border-radius: 12px; padding: 14px 18px; font-size: 13px; }
   </style>
 </head>
 <body>
@@ -89,248 +56,259 @@
     <span class="logo">degen0x</span>
     <span class="badge">CEO Dashboard</span>
   </div>
-  <div class="header-right">
-    <span class="date-badge">March 14, 2026</span>
-    <span class="sprint-badge">Sprint 46 &#10003;</span>
+  <div style="display:flex;align-items:center;gap:16px;">
+    <span style="color:var(--text2);font-size:13px;">📅 2026-03-14</span>
+    <span class="sprint-badge">✅ Sprint 57 Complete</span>
   </div>
 </div>
 
 <div class="team-row">
-  <span class="team-label">AI Agent Team:</span>
-  <div class="agent"><span class="agent-dot" style="background:var(--green)"></span> Claude CEO</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--blue)"></span> Writer Agent</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--purple)"></span> Coder Agent</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--yellow)"></span> Designer Agent</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--orange)"></span> Growth Agent</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--cyan)"></span> DevOps Agent</div>
-  <div class="agent"><span class="agent-dot" style="background:var(--red)"></span> QA Agent</div>
+  <span class="team-label">Agent Team</span>
+  <div class="agent"><span class="agent-dot" style="background:#3fb950"></span> 🧑‍💻 Coder Agent — Active</div>
+  <div class="agent"><span class="agent-dot" style="background:#3fb950"></span> ✍️ Content Writer — Active</div>
+  <div class="agent"><span class="agent-dot" style="background:#3fb950"></span> 🎨 UI Designer — Active</div>
+  <div class="agent"><span class="agent-dot" style="background:#3fb950"></span> 📈 Growth Expert — Active</div>
+  <div class="agent"><span class="agent-dot" style="background:#3fb950"></span> 🔍 SEO Agent — Active</div>
+  <div class="agent"><span class="agent-dot" style="background:#3fb950"></span> 🧪 QA Agent — Active</div>
+</div>
+
+<div class="mission-banner">
+  <strong style="color:#818cf8">Mission:</strong> Onboard the next 1 billion users to crypto. Every line of code and every piece of content exists to make crypto accessible, fun, and rewarding.
+  Guides · Courses · Ecosystem Store · Gamification · On-chain identity.
 </div>
 
 <div class="stats-row">
-  <div class="stat-card">
-    <span class="stat-label">Total Files</span>
-    <span class="stat-value">1,141</span>
-    <span class="stat-sub">+9 this sprint</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">Lines of Code</span>
-    <span class="stat-value" style="color:var(--green)">294,630</span>
-    <span class="stat-sub">+2,924 this sprint &#128293;</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">dApps in Ecosystem</span>
-    <span class="stat-value" style="color:var(--blue)">67</span>
-    <span class="stat-sub">Level-filtered + logos</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">Learn Articles</span>
-    <span class="stat-value">42</span>
-    <span class="stat-sub">Stable</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">API Routes</span>
-    <span class="stat-value">13</span>
-    <span class="stat-sub">Stable</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">Languages</span>
-    <span class="stat-value">10</span>
-    <span class="stat-sub">i18n support</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">Sprints</span>
-    <span class="stat-value" style="color:var(--purple)">46</span>
-    <span class="stat-sub">Continuous delivery</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">Velocity</span>
-    <span class="stat-value" style="color:var(--cyan)">Platform UX</span>
-    <span class="stat-sub">2,924 LOC | Homepage v3 + App Store</span>
-    <div class="velocity-bar"><div class="velocity-fill" style="width:95%"></div></div>
-  </div>
+  <div class="stat-card"><div class="stat-label">Total LOC</div><div class="stat-value" style="color:var(--blue)">322,374</div><div class="stat-sub">+3,861 this sprint 🚀</div></div>
+  <div class="stat-card"><div class="stat-label">Components</div><div class="stat-value" style="color:var(--purple)">144</div><div class="stat-sub">+1 this sprint (NotifPrefs)</div></div>
+  <div class="stat-card"><div class="stat-label">dApp Guides</div><div class="stat-value" style="color:var(--orange)">69</div><div class="stat-sub">+10 this sprint 🌐</div></div>
+  <div class="stat-card"><div class="stat-label">New Pages</div><div class="stat-value" style="color:var(--cyan)">13</div><div class="stat-sub">10 dApps + Portfolio + Screener V3 + NotifPrefs</div></div>
+  <div class="stat-card"><div class="stat-label">Total Routes</div><div class="stat-value" style="color:var(--green)">127+</div><div class="stat-sub">Full Next.js App Router</div></div>
+  <div class="stat-card"><div class="stat-label">Cum. Human Savings</div><div class="stat-value" style="color:var(--orange)">~$113,134</div><div class="stat-sub">+$2,900 this sprint</div></div>
 </div>
 
-<div class="section-header">&#128203; Kanban Board</div>
 <div class="board">
 
-  <div class="column">
-    <div class="col-header" style="color:var(--blue)">Pipeline <span class="col-count">5</span></div>
+  <!-- PIPELINE -->
+  <div class="col">
+    <div class="col-header" style="color:var(--text2)">Pipeline — Sprint 58 <span class="col-count">6</span></div>
     <div class="col-body">
       <div class="card">
-        <div class="card-title">User Auth v2 <span style="background:#f8514920;color:var(--red);font-size:10px;padding:1px 5px;border-radius:3px;font-weight:700;margin-left:4px;">P0</span></div>
-        <div class="card-desc">Email magic link + wallet connect unified login. Required for persistent XP across devices.</div>
-        <div class="card-meta"><span class="tag" style="background:#f0883e20;color:var(--orange)">Auth</span><span class="tag" style="background:#f8514920;color:var(--red)">P0</span></div>
+        <div class="card-title">dApp Guides 70–79</div>
+        <div class="card-desc">Scroll ecosystem dApps · zkSync era protocols · Starknet DeFi · Sui Move protocols · Aptos ecosystem · TON DeFi. Expanding into new L1/L2 ecosystems.</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Content</span><span class="tag" style="background:#bc8cff20;color:var(--purple)">Ecosystem</span></div>
       </div>
       <div class="card">
-        <div class="card-title">Real-time WebSocket Price Feed</div>
-        <div class="card-desc">Replace polling with true WebSocket connections for live price data.</div>
-        <div class="card-meta"><span class="tag" style="background:#58a6ff20;color:var(--blue)">Infra</span><span class="tag" style="background:#bc8cff20;color:var(--purple)">P1</span></div>
+        <div class="card-title">Email Drip → Resend Integration</div>
+        <div class="card-desc">Wire EmailDripSequence component to Resend API. Build /api/subscribe endpoint. Trigger Day 0 on signup. Track open/click rates via Resend webhooks.</div>
+        <div class="card-meta"><span class="tag" style="background:#f0883e20;color:var(--orange)">Growth</span><span class="tag" style="background:#6366f120;color:var(--indigo)">Backend</span></div>
       </div>
       <div class="card">
-        <div class="card-title">Social Trading Feed v2</div>
-        <div class="card-desc">Follow top traders, copy trades, leaderboard with PnL verification.</div>
-        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Feature</span></div>
+        <div class="card-title">Referral Program — Backend + On-chain</div>
+        <div class="card-desc">Wire referral UI to backend. Unique link generation. On-chain XP reward trigger on signup. Referral tree tracking. Dashboard live data.</div>
+        <div class="card-meta"><span class="tag" style="background:#f0883e20;color:var(--orange)">Growth</span><span class="tag" style="background:#3fb95020;color:var(--green)">Gamification</span></div>
       </div>
       <div class="card">
-        <div class="card-title">Mobile PWA Optimization</div>
-        <div class="card-desc">Offline mode, app install banners, optimized touch interactions.</div>
-        <div class="card-meta"><span class="tag" style="background:#d2992220;color:var(--yellow)">UX</span><span class="tag" style="background:#bc8cff20;color:var(--purple)">P2</span></div>
+        <div class="card-title">DeFiLlama Live API Integration</div>
+        <div class="card-desc">Connect Screener V3 to real DeFiLlama endpoints. Real TVL, volume, APY from /protocols and /yields. Edge caching with 5min TTL. Replace mock data.</div>
+        <div class="card-meta"><span class="tag" style="background:#06b6d420;color:var(--cyan)">Data</span><span class="tag" style="background:#58a6ff20;color:var(--blue)">Live API</span></div>
       </div>
       <div class="card">
-        <div class="card-title">Cross-chain Swap Aggregator</div>
-        <div class="card-desc">Compare swap routes across DEXes and bridges, gas optimization.</div>
-        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Feature</span></div>
+        <div class="card-title">Mobile App — Expo/React Native Prototype</div>
+        <div class="card-desc">Initial React Native app using shared component logic. Home, Courses, Ecosystem screens. Push notifications via Expo. WalletConnect mobile deep linking.</div>
+        <div class="card-meta"><span class="tag" style="background:#bc8cff20;color:var(--purple)">Mobile</span><span class="tag" style="background:#f0883e20;color:var(--orange)">PWA</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">AI Chat Assistant — RAG over Guides</div>
+        <div class="card-desc">Connect AIChatAssistant to vector DB of all 69 guides. Users ask questions, get contextual answers with source links. Use Vercel AI SDK + OpenAI embeddings.</div>
+        <div class="card-meta"><span class="tag" style="background:#6366f120;color:var(--indigo)">AI</span><span class="tag" style="background:#58a6ff20;color:var(--blue)">Feature</span></div>
       </div>
     </div>
   </div>
 
-  <div class="column">
-    <div class="col-header" style="color:var(--yellow)">In Progress <span class="col-count">3</span></div>
+  <!-- IN PROGRESS -->
+  <div class="col">
+    <div class="col-header" style="color:var(--blue)">In Progress <span class="col-count">0</span></div>
     <div class="col-body">
-      <div class="card" style="border-left:3px solid var(--yellow)">
-        <div class="card-title">E2E Test Suite</div>
-        <div class="card-desc">Playwright tests for critical flows: homepage, tools, courses, XP system.</div>
-        <div class="card-meta"><span class="tag" style="background:#f8514920;color:var(--red)">QA</span><span class="tag" style="background:#d2992220;color:var(--yellow)">75%</span></div>
-      </div>
-      <div class="card" style="border-left:3px solid var(--yellow)">
-        <div class="card-title">Multi-chain Portfolio Sync</div>
-        <div class="card-desc">Auto-detect wallet holdings across ETH, SOL, BTC, ARB, BASE.</div>
-        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Feature</span><span class="tag" style="background:#d2992220;color:var(--yellow)">55%</span></div>
-      </div>
-      <div class="card" style="border-left:3px solid var(--yellow)">
-        <div class="card-title">Affiliate Partner Integrations</div>
-        <div class="card-desc">Wire AffiliateTracker into exchange reviews, wallet pages, comparison tables.</div>
-        <div class="card-meta"><span class="tag" style="background:#f0883e20;color:var(--orange)">Revenue</span><span class="tag" style="background:#d2992220;color:var(--yellow)">55%</span></div>
+      <div class="card" style="border-color:#6366f140;background:#6366f108;">
+        <div class="card-title" style="color:var(--indigo)">Sprint 57 — All Shipped ✅</div>
+        <div class="card-desc">10 new dApp guides (BTC restaking + emerging L1/L2: Puffer, Swell, Karak, Babylon, Lorenzo, Berachain, Sonic, EtherFi Cash, Monad, Blast), Multi-Wallet Portfolio Tracker, Bloomberg-style Screener V3 (50 protocols), Full Notification Preferences system. Sprint 58 queue loaded.</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Ready for S58</span></div>
       </div>
     </div>
   </div>
 
-  <div class="column">
+  <!-- BLOCKED -->
+  <div class="col">
     <div class="col-header" style="color:var(--red)">Blocked <span class="col-count">2</span></div>
     <div class="col-body">
-      <div class="card" style="border-left:3px solid var(--red)">
-        <div class="card-title">CoinGecko Pro API Keys</div>
-        <div class="card-desc">Need Pro key for higher rate limits. Blocks WebSocket real-time feeds.</div>
-        <div class="card-meta"><span class="tag" style="background:#f8514920;color:var(--red)">Blocked</span><span class="tag" style="background:#58a6ff20;color:var(--blue)">API</span></div>
+      <div class="card" style="border-color:#f8514940;">
+        <div class="card-title">⛔ Playwright CI Runner</div>
+        <div class="card-desc">E2E tests pass locally but GitHub Actions needs GITHUB_TOKEN + secrets configured. Blocked on repo settings.</div>
+        <div class="card-meta"><span class="tag" style="background:#f8514920;color:var(--red)">Needs Jefe</span></div>
+        <div class="card-loc">→ Add secrets in repo Settings → Actions</div>
       </div>
-      <div class="card" style="border-left:3px solid var(--red)">
-        <div class="card-title">Custom Domain — degen0x.com</div>
-        <div class="card-desc">DNS propagation pending. Vercel deployment ready and waiting.</div>
-        <div class="card-meta"><span class="tag" style="background:#f8514920;color:var(--red)">Blocked</span><span class="tag" style="background:#f0883e20;color:var(--orange)">DevOps</span></div>
+      <div class="card" style="border-color:#f8514940;">
+        <div class="card-title">⛔ WalletConnect Prod Keys</div>
+        <div class="card-desc">ConnectWalletButton works in dev (localhost) but needs a production WalletConnect Project ID for mainnet users.</div>
+        <div class="card-meta"><span class="tag" style="background:#f8514920;color:var(--red)">Needs Jefe</span></div>
+        <div class="card-loc">→ Create project at cloud.walletconnect.com</div>
       </div>
     </div>
   </div>
 
-  <div class="column">
-    <div class="col-header" style="color:var(--green)">Done (Sprint 46) <span class="col-count">6</span></div>
+  <!-- DONE -->
+  <div class="col">
+    <div class="col-header" style="color:var(--green)">Done (All Time) <span class="col-count">50+</span></div>
     <div class="col-body">
-      <div class="card" style="border-left:3px solid var(--green)">
-        <div class="card-title">degen0x Logo + Favicon &#128293;</div>
-        <div class="card-desc">SVG logo: stylized "0" ellipse with "x" crossing inside, indigo/cyan gradient with glow filter. Wordmark version with "degen" + "0x" text. Favicon.svg: 32px dark rounded bg, same 0x mark. Added to layout.tsx via &lt;link rel="icon"&gt;.</div>
-        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span><span class="tag" style="background:#d2992220;color:var(--yellow)">Brand</span><span class="tag" style="background:#58a6ff20;color:var(--blue)">3 SVG files</span></div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ dApp Guides 60–69 <span style="background:#3fb95020;color:var(--green);font-size:10px;padding:1px 5px;border-radius:3px;font-weight:700;">S57</span></div>
+        <div class="card-desc">Puffer Finance · Swell · Karak · Babylon Protocol · Lorenzo · Berachain Bex · Sonic SVM · EtherFi Cash · Monad · Blast — BTC restaking, emerging L1s, payments, parallel EVM.</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+        <div class="card-loc">1,975 LOC · 10 files · /ecosystem/[slug]/</div>
       </div>
-      <div class="card" style="border-left:3px solid var(--green)">
-        <div class="card-title">Homepage v3 — Option 3 (Sticky Platform Nav) &#10003;</div>
-        <div class="card-desc">Full HomeContent.tsx rebuild: sticky platform nav bar at top:56px with 4 tabs (Learn/Courses/Ecosystem/Tools), scroll-spy via IntersectionObserver, level pills in hero (Newbie/Intermediate/Degen), all 4 sections show level-appropriate content, XP badge in nav, animated hero with stats row, gradient headlines.</div>
-        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span><span class="tag" style="background:#bc8cff20;color:var(--purple)">UX</span><span class="tag" style="background:#58a6ff20;color:var(--blue)">680 LOC</span></div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ Multi-Wallet Portfolio Tracker <span style="background:#3fb95020;color:var(--green);font-size:10px;padding:1px 5px;border-radius:3px;font-weight:700;">S57</span></div>
+        <div class="card-desc">Connect up to 5 wallets (ETH+SOL+Base). Aggregated holdings, DeFi positions (LP + staking), 30-day SVG performance chart, chain breakdown, shareable NFT card, filters &amp; sorting.</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+        <div class="card-loc">663 LOC · /portfolio-tracker/page.tsx</div>
       </div>
-      <div class="card" style="border-left:3px solid var(--green)">
-        <div class="card-title">Level-aware Courses Section on Homepage</div>
-        <div class="card-desc">CourseCard inline component with XP progress bars, horizontal scroll, level mapping (newbie/intermediate/degen), "Earn XP as you learn" banner, all reading from localStorage. Supplements up to 6 courses.</div>
-        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span><span class="tag" style="background:#bc8cff20;color:var(--purple)">Gamification</span><span class="tag" style="background:#58a6ff20;color:var(--blue)">Inline</span></div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ Screener V3 — Bloomberg-Style <span style="background:#3fb95020;color:var(--green);font-size:10px;padding:1px 5px;border-radius:3px;font-weight:700;">S57</span></div>
+        <div class="card-desc">50 protocols, 12 chain filters, category/risk/TVL range filters, sort by TVL/APY/Volume/Name, sparkline charts, risk badges, pagination (20/page), search, live refresh simulation.</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+        <div class="card-loc">747 LOC · /tools/screener/page.tsx</div>
       </div>
-      <div class="card" style="border-left:3px solid var(--green)">
-        <div class="card-title">Level-aware Ecosystem Mini App Store on Homepage</div>
-        <div class="card-desc">EcosystemSection component: 8 level-specific dApps per level, search input, category filter pills, DAppCard with logo (CoinGecko CDN + emoji fallback), rating stars, TVL, chain chips, "View All 67+" card.</div>
-        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span><span class="tag" style="background:#f0883e20;color:var(--orange)">Ecosystem</span><span class="tag" style="background:#58a6ff20;color:var(--blue)">Inline</span></div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ Notification Preferences System <span style="background:#3fb95020;color:var(--green);font-size:10px;padding:1px 5px;border-radius:3px;font-weight:700;">S57</span></div>
+        <div class="card-desc">Full settings UI with 12 toggle categories (push + email), frequency selectors (realtime/hourly/daily), quiet hours, unsubscribe-all, /api/notifications backend route.</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+        <div class="card-loc">255 LOC · settings/notifications + api/notifications</div>
       </div>
-      <div class="card" style="border-left:3px solid var(--green)">
-        <div class="card-title">EcosystemStore.tsx — Proper App Store UI &#128293;</div>
-        <div class="card-desc">Full rebuild of /ecosystem page: DApp cards with real logos (DAPP_LOGO_URLS CoinGecko CDN), sticky search+filter bar, level filter (newbie/intermediate/degen), chain pills quick-filter row, featured horizontal scroll strip, sort by Rating/TVL/Users/Newest, audited+open-source toggles, filter count badge, empty state.</div>
-        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span><span class="tag" style="background:#f0883e20;color:var(--orange)">Ecosystem</span><span class="tag" style="background:#58a6ff20;color:var(--blue)">520 LOC</span></div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ dApp Guides 50–59 (S56) · Referral UI (S56) · ShareCards (S56)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
       </div>
-      <div class="card" style="border-left:3px solid var(--green)">
-        <div class="card-title">dapps.ts — Level Map + Logo CDN URLs</div>
-        <div class="card-desc">Added DAPP_LOGO_URLS (CoinGecko CDN for 30+ protocols), DAPP_LEVEL_MAP (slug &#8594; newbie/intermediate/degen), HOMEPAGE_DAPPS (8 featured per level), getDAppsByLevel(), getHomepageDApps() helpers.</div>
-        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span><span class="tag" style="background:#d2992220;color:var(--yellow)">Data</span><span class="tag" style="background:#58a6ff20;color:var(--blue)">+120 LOC</span></div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ TradingViewChart on ALL 49 dApps (S55)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+      </div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ dApp Guides 40–49 (S55) · Email Drip (S55) · CourseCreator V2 (S55)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+      </div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ 9 Bridge/Cross-Chain Guides (S54) · CourseCreator (S54) · PWA v3 (S54)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+      </div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ dApp Guides 21–30 (S53) · Social Profiles (S53)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+      </div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ AI Recommendations (S52) · Streak Leaderboard (S52)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+      </div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ EAS XP Attestation + Push Protocol (S51)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+      </div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ dApp Guides 1–20 (S51–S52)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+      </div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ 100-dApp Ecosystem Store 🏆 (S48)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+      </div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ AdaptiveQuizEngine (S44) · XP Leaderboard (S38)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+      </div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ CourseViewer + Progress (S31) · Wallet Auth (S9)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
+      </div>
+      <div class="card" style="border:1px solid var(--green)30;">
+        <div class="card-title">✅ SEO Infrastructure (S12–16) · Homepage V4 (S15)</div>
+        <div class="card-meta"><span class="tag" style="background:#3fb95020;color:var(--green)">Done</span></div>
       </div>
     </div>
   </div>
 
 </div>
 
+<!-- Sprint 57 Summary Table -->
 <div class="sprint-summary">
-  <h3>Sprint 46 Report &mdash; Lines of Code</h3>
+  <h3>📊 Sprint 57 Summary — 2026-03-14</h3>
   <table>
-    <thead><tr><th>Feature</th><th>Agent</th><th>LOC Added</th><th>Files</th><th>Status</th></tr></thead>
+    <thead>
+      <tr>
+        <th>Deliverable</th>
+        <th>Type</th>
+        <th>LOC</th>
+        <th>Files</th>
+        <th>Human Cost Est.</th>
+      </tr>
+    </thead>
     <tbody>
-      <tr><td>degen0x Logo + Favicon (SVG)</td><td>Designer</td><td style="color:var(--green)">+84</td><td>3 SVGs + layout.tsx</td><td style="color:var(--green)">Done &#10003;</td></tr>
-      <tr><td>HomeContent.tsx v3 (Sticky Platform Nav)</td><td>Coder + Designer</td><td style="color:var(--green)">+680</td><td>HomeContent.tsx rewrite</td><td style="color:var(--green)">Done &#10003;</td></tr>
-      <tr><td>EcosystemStore.tsx (App Store Rebuild)</td><td>Coder + Designer</td><td style="color:var(--green)">+520</td><td>EcosystemStore.tsx rewrite</td><td style="color:var(--green)">Done &#10003;</td></tr>
-      <tr><td>dapps.ts — Level Map + CoinGecko Logos</td><td>Writer + Coder</td><td style="color:var(--green)">+120</td><td>dapps.ts append</td><td style="color:var(--green)">Done &#10003;</td></tr>
-      <tr><td>Homepage Courses Section (level-aware)</td><td>Coder</td><td style="color:var(--green)">inline</td><td>HomeContent.tsx</td><td style="color:var(--green)">Done &#10003;</td></tr>
-      <tr><td>Homepage Ecosystem Mini App Store</td><td>Coder</td><td style="color:var(--green)">inline</td><td>HomeContent.tsx</td><td style="color:var(--green)">Done &#10003;</td></tr>
-      <tr style="font-weight:700;border-top:2px solid var(--border)"><td>TOTAL</td><td></td><td style="color:var(--green)">+2,924 net new LOC</td><td>9 files modified/added</td><td></td></tr>
+      <tr>
+        <td><strong>dApp Guides 60–69</strong> — Puffer, Swell, Karak, Babylon, Lorenzo, Berachain, Sonic, EtherFi Cash, Monad, Blast. BTC restaking wave, emerging L1s (Berachain Proof-of-Liquidity, Monad parallel EVM, Blast native yield), payments (EtherFi Cash debit card). Full guide with stats, charts, how-to, risks, CTA.</td>
+        <td><span style="color:var(--orange)">Content + UI</span></td>
+        <td>1,975</td>
+        <td>10</td>
+        <td>~$1,200</td>
+      </tr>
+      <tr>
+        <td><strong>dApps Data Catalog Expansion</strong> — 10 new entries in universal ecosystem catalog (dapps.ts). Full metadata: TVL, ratings, chains, categories, tokens, level mapping. Catalog now at 69 detailed guides.</td>
+        <td><span style="color:var(--blue)">Data</span></td>
+        <td>221</td>
+        <td>1</td>
+        <td>~$100</td>
+      </tr>
+      <tr>
+        <td><strong>Multi-Wallet Portfolio Tracker</strong> — Connect 5 wallets across ETH/SOL/Base. Aggregated token holdings (15 tokens), DeFi positions (LP + staking), 30-day SVG performance chart, chain breakdown bars, shareable NFT portfolio card, chain/sort filters. Premium UI.</td>
+        <td><span style="color:var(--cyan)">Feature</span></td>
+        <td>663</td>
+        <td>1</td>
+        <td>~$700</td>
+      </tr>
+      <tr>
+        <td><strong>Screener V3 — Bloomberg Terminal</strong> — Upgraded to 50 protocols, 12 chain filters, category/risk/TVL-range filters, sort by TVL/APY/Volume/Name (asc/desc), 7-day sparkline SVG charts, risk badges (Low/Med/High), pagination (20/page), search bar, live refresh simulation, stats bar.</td>
+        <td><span style="color:var(--purple)">Feature + Data</span></td>
+        <td>747</td>
+        <td>1</td>
+        <td>~$600</td>
+      </tr>
+      <tr>
+        <td><strong>Notification Preferences System</strong> — Full settings page: 8 push categories + 4 email categories with iOS-style toggles, push frequency (realtime/hourly/daily), email frequency (daily/weekly/monthly), quiet hours with time pickers, unsubscribe-all. /api/notifications backend route with GET/POST.</td>
+        <td><span style="color:var(--green)">Feature + Backend</span></td>
+        <td>255</td>
+        <td>2</td>
+        <td>~$300</td>
+      </tr>
     </tbody>
   </table>
-  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
-    Cumulative project: <strong style="color:var(--text)">294,630 LOC</strong> across <strong style="color:var(--text)">1,141 files</strong> | 67 dApps | 42 learn articles | 10 languages | 13 API routes
-  </div>
-  <div style="margin-top:8px;font-size:12px;color:var(--text2)">
-    Sprint focus: <strong style="color:var(--purple)">Platform UX + Brand Identity</strong> &mdash; Homepage v3 with sticky platform nav, level-contextual content in all 4 sections (Learn/Courses/Ecosystem/Tools), proper App Store UI with CoinGecko logos, degen0x brand SVG assets. Human cost equiv: <strong style="color:var(--text)">$2,820</strong>.
+  <div class="sprint-total">
+    <strong style="color:var(--blue)">Sprint 57 Total:</strong> 3,861 LOC · 15 files · <strong style="color:var(--orange)">~$2,900 human cost equivalent</strong><br/>
+    <span style="color:var(--text2)">Cumulative project total: ~322,374 LOC · ~$113,134 savings vs. human team</span>
   </div>
 </div>
 
-<div class="cost-section">
-  <h3>Human Cost Equivalent &mdash; Sprint 46</h3>
-  <p style="font-size:12px;color:var(--text2);margin-bottom:16px;">Estimated cost if human specialists produced the same output in 1 day</p>
-  <div class="cost-grid">
-    <div class="cost-card">
-      <div class="role">Senior Frontend Engineer</div>
-      <div class="rate">$85/hr</div>
-      <div class="hours">~8 hrs: XP system + chart drawing tools</div>
-      <div class="total" style="color:var(--green)">$680</div>
-    </div>
-    <div class="cost-card">
-      <div class="role">React Animation Specialist</div>
-      <div class="rate">$95/hr</div>
-      <div class="hours">~5 hrs: toast animations, level-up modal, XP bar</div>
-      <div class="total" style="color:var(--green)">$475</div>
-    </div>
-    <div class="cost-card">
-      <div class="role">Product / Content Writer</div>
-      <div class="rate">$75/hr</div>
-      <div class="hours">~6 hrs: researching + writing 25 dApp profiles</div>
-      <div class="total" style="color:var(--green)">$450</div>
-    </div>
-    <div class="cost-card">
-      <div class="role">Data / Algo Engineer</div>
-      <div class="rate">$90/hr</div>
-      <div class="hours">~3 hrs: pattern detection + Fibonacci algorithms</div>
-      <div class="total" style="color:var(--green)">$270</div>
-    </div>
-    <div class="cost-card">
-      <div class="role">Project Manager</div>
-      <div class="rate">$70/hr</div>
-      <div class="hours">~1.5 hrs: sprint planning + coordination</div>
-      <div class="total" style="color:var(--green)">$105</div>
-    </div>
-    <div class="cost-card" style="background:linear-gradient(135deg,#6366f120,#06b6d420);border-color:#6366f140;">
-      <div class="role" style="color:var(--text)">TOTAL HUMAN COST</div>
-      <div class="rate" style="color:var(--text2)">5 specialists x 1 day</div>
-      <div class="hours">~23.5 billable hours</div>
-      <div class="total" style="color:#818cf8;font-size:24px;">$1,980</div>
-    </div>
-  </div>
-  <div style="margin-top:16px;padding:12px 16px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;font-size:12px;color:var(--text2);">
-    <strong style="color:var(--text)">AI Agent Cost:</strong> ~$8-15 in API compute.
-    <strong style="color:var(--green)"> Savings: ~99.4%</strong> vs human team equivalent.
-    <span style="margin-left:8px;">Cumulative savings across 45 sprints: <strong style="color:var(--text)">~$91,480+</strong></span>
-  </div>
-</div>
-
-<div style="text-align:center;padding:24px;color:var(--text2);font-size:11px;">
-  degen0x CEO Dashboard &middot; Powered by Claude AI Agent Team &middot; Sprint 46 &middot; March 14, 2026
+<!-- Historical Sprint Table -->
+<div class="sprint-summary" style="margin-top:8px;">
+  <h3>📈 Sprint History (Recent)</h3>
+  <table>
+    <thead>
+      <tr><th>Sprint</th><th>Date</th><th>LOC</th><th>Key Deliverables</th><th>Cost Saved</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>S57</strong></td><td>Mar 14</td><td style="color:var(--blue)">3,861</td><td>10 dApp guides (BTC restaking + emerging L1s), Portfolio Tracker, Screener V3, Notif Prefs</td><td style="color:var(--orange)">$2,900</td></tr>
+      <tr><td>S56</td><td>Mar 14</td><td>2,344</td><td>10 dApp guides (restaking + cross-chain), Referral UI, Screener V2, ShareCards</td><td>$1,690</td></tr>
+      <tr><td>S55</td><td>Mar 13</td><td>2,800+</td><td>10 dApp guides, TradingView on 49 dApps, Email Drip, CourseCreator V2, RSS + Push</td><td>$2,100</td></tr>
+      <tr><td>S54</td><td>Mar 12</td><td>2,500+</td><td>9 bridge guides, TradingViewChart component, Course Creator, PWA v3</td><td>$1,800</td></tr>
+      <tr><td>S53</td><td>Mar 11</td><td>2,200+</td><td>10 dApp guides, Social profiles, Community Board</td><td>$1,600</td></tr>
+    </tbody>
+  </table>
 </div>
 
 </body>

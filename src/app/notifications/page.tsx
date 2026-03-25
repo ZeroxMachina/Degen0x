@@ -1,16 +1,32 @@
-import type { Metadata } from "next";
-import NotificationManager from "@/components/NotificationManager";
+import type { Metadata } from 'next';
+import NotificationsClient from './NotificationsClient';
 
 export const metadata: Metadata = {
-  title: "Notifications | degen0x — Real-Time Crypto Alerts",
+  title: 'Notifications — Price Alerts, Streak Reminders & More | degen0x',
   description:
-    "Manage your crypto alerts: price movements, whale transactions, DeFi yield spikes, AI trading signals, and portfolio changes. Push, email, and Telegram support.",
+    'Stay updated with real-time crypto notifications. Price alerts, whale movements, streak reminders, new content alerts, and achievement unlocks — all in one place.',
   openGraph: {
-    title: "Notifications | degen0x",
-    description: "Real-time crypto alerts with multi-channel delivery.",
+    title: 'Notifications | degen0x',
+    description:
+      'Real-time crypto notifications — price alerts, whale moves, streak reminders, and more.',
+    images: [
+      {
+        url: 'https://degen0x.com/og-notifications.png',
+        width: 1200,
+        height: 630,
+        alt: 'Notifications on degen0x',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Notifications | degen0x',
+    description:
+      'Real-time crypto notifications — price alerts, whale moves, streak reminders, and more.',
+    images: ['https://degen0x.com/og-notifications.png'],
   },
 };
 
 export default function NotificationsPage() {
-  return <NotificationManager />;
+  return <NotificationsClient />;
 }

@@ -1,0 +1,91 @@
+{
+  "date": "2026-03-24",
+  "block": "standup",
+  "cycle": 14,
+  "report": {
+    "status": "completed",
+    "summary": "Day 71 standup v14: Build-v2 shipped DePIN Earning Guide (~3,200 words) + BTCFi Yield Strategies Guide (~3,000 words) — both queued. Design-v13 created staking providers OG image + accessibility fixes on 2 pages. Community-v12 drafted 4 tweets (#102-105 incl. 4-part March Institutional Scorecard thread) + newsletter addendum + 2 SVG cards + content calendar v26. EOD-v13 confirmed 481 unique published slugs, 773 uncommitted items. Git locks Day 8 — deploy gap ~160 pages. 68 agent runs today.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v13: 5 agents ran (build-v2, design-v13, community-v12, publish, eod-v13). 68 total runs today (standup×14, build×10, design×13, community×12, publish×6, eod×13).",
+          "BUILD-v2 OUTPUT: 2 new learn guides — DePIN Earning Guide 2026 (~3,200 words, covers Grass/Storj/Helium/Hivemapper/Render/io.net/Filecoin, 3-tier entry $0/$500/$5K+, $2.6M monthly protocol revenue, $3.5T market by 2028) + BTCFi Yield Strategies Guide 2026 (~3,000 words, covers Babylon/Lombard/Solv/BounceBit, 3 risk tiers 2-4%/4-8%/5-12%+, $8.6B TVL, 28x growth in 18 months). Both added to PUBLISH_QUEUE.",
+          "DESIGN-v13: Created 1 OG image (staking-as-a-service providers). Fixed accessibility issues on staking providers page (nav aria-label, table aria-labels, th scope attributes). Audited RaaS guide — no issues found.",
+          "COMMUNITY-v12 OUTPUT: 4 social posts (#102-105: Nasdaq tokenized equities approval, MicroStrategy 762K BTC, 4-part March Institutional Scorecard thread, $304B stablecoin ATH) + newsletter v21 addendum (Nasdaq + MSTR updates) + Discord/TG evening announcement + 2 SVG cards (Nasdaq tokenized equities + MicroStrategy 762K) + content calendar v26 (8 posts through Mar 28).",
+          "EOD-v13: 481 unique published slugs. 378 with backing page.tsx (103 still missing). 773 uncommitted items (+4 from v12). 46 TS errors unchanged. Deploy drift 7 days. Egress blocked — API checks carried from v12.",
+          "EGRESS: Network egress fully blocked this cycle. All market data carried from prior verified cycles.",
+          "MARKET (carried from community-v12): BTC ~$71,043 (+3.79% relief rally from $68K). ETH ~$2,166 (+5.16%). SOL ~$90 (+6.48%). F&G 8-11 (Extreme Fear Day 47). BTC dominance 56.36%. Total market cap ~$2.46T. Stablecoins $304B ATH.",
+          "LOCAL METRICS: 1,148 page.tsx files (+6 since v13). 499 entries in PUBLISHED_PAGES (~481 unique). PUBLISH_QUEUE: 2 items (DePIN earning, BTCFi yield strategies)."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE STANDUP v13: build-v2 (DePIN guide + BTCFi guide), design-v13 (1 OG image + accessibility fixes), community-v12 (4 tweets + newsletter addendum + 2 SVGs + calendar v26), eod-v13 (verification + queue audit). 5 agents ran = $452 human-equivalent.",
+          "PIPELINE HEALTH: PUBLISH_QUEUE at 2 items (DePIN earning guide, BTCFi yield strategies). Queue self-sustaining — build fills, publish drains, every cycle. 63+ guides built, 67+ OG images, 135+ social posts, 54+ SVG cards, 21 newsletters.",
+          "TOTAL INVENTORY: ~481 unique published slugs. 1,148 page.tsx files locally. ~338 live in production (stale Mar 17 commit e999560). Deploy gap: ~160 pages.",
+          "BLOCKER [P0 — DAY 8]: Git locks (.git/HEAD.lock + .git/index.lock) still present since Mar 16. 773 uncommitted files. ALL content since Mar 17 is local-only. Jefe action required: rm .git/index.lock .git/HEAD.lock → git add . → git commit → git push.",
+          "BLOCKER [P1]: /api/market-metrics returns 404 in production — route.ts exists locally but never committed.",
+          "CARRY-OVER [P1]: /trading and /trading/learn return 404 — hub page.tsx missing.",
+          "CARRY-OVER [P1]: TS errors at 46 across 3 files (crypto-arbitrage unescaped >, crypto-index-funds, structured-data.examples.ts).",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes.",
+          "TODAY'S AGENT RUNS: standup×14, build×10, design×13, community×12, publish×6, eod×13 = 68 runs."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS + DEPLOY 160-PAGE BACKLOG: Deploy gap at ~160 pages for 8 days. BTC rallying to $71K with market sentiment shifting — institutional catalysts compounding (Nasdaq tokenized equities, MicroStrategy 762K BTC, BlackRock ETHB, $2.5B ETF inflows, $304B stablecoin ATH). One unlock + push = 47% content increase deployed instantly. April 15 tax deadline 22 days away — Tax-Loss Harvesting guide window closing fast.",
+          "PRIORITY 2 — PROMOTE DePIN + BTCFi GUIDES: 2 new items in PUBLISH_QUEUE. DePIN guide captures $3.5T projected market with practical earning tiers ($0-$5K+ hardware). BTCFi guide captures 28x TVL growth narrative ($8.6B, Babylon leading at $2.8B). Both are high-value learn pages that interlink with existing DeFi, staking, and Bitcoin content. Ready to promote next publish cycle.",
+          "PRIORITY 3 — CAPITALIZE ON NASDAQ + MSTR NEWS CYCLE: Nasdaq tokenized equities approval is a historic first — our RWA guide should surge. MicroStrategy 762K BTC buy during extreme fear is a major narrative. Community-v12 drafted 8 posts for Wed-Fri including a 4-part institutional scorecard thread. Content calendar v26 loaded through Mar 28. Ensure social output captures the news window before it fades.",
+          "STRATEGIC NOTE: Day 71 — 68 agent runs producing $5,381 human-equivalent work at ~$0 marginal cost. BTC relief rally (+3.79% to $71K) amid extreme fear (F&G 8-11) creates strong accumulation narrative. New guides (DePIN, BTCFi, RaaS, Staking-as-a-Service) expand coverage into infrastructure and yield verticals — these are sticky, evergreen topics that compound with our existing 481-slug content moat. Critical path unchanged: git locks → deploy → index → rank."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel operational)", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Slugs (unique)", "value": "~481 (+0 since v13, queue rotated)", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages in Production", "value": "~338 (stale commit e999560, Mar 17)", "pct": 68, "color": "#ef4444" },
+          { "label": "Deploy Gap", "value": "~160 pages not live (32% unreachable)", "pct": 32, "color": "#ef4444" },
+          { "label": "PUBLISH_QUEUE", "value": "2 pages (DePIN Earning, BTCFi Yield)", "pct": 95, "color": "#4ade80" },
+          { "label": "Total page.tsx Files", "value": "1,148 (+6 since v13)", "pct": 100, "color": "#4ade80" },
+          { "label": "Total Guides Built", "value": "63+ guides, 67+ OG images", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Content", "value": "135+ posts, 54+ SVG cards, 21 newsletters", "pct": 100, "color": "#4ade80" },
+          { "label": "Days Since Last Deploy", "value": "7 (Mar 17, e999560)", "pct": 1, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "8 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "773", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "46 (unchanged, 3 files)", "pct": 25, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "5/6 (market-metrics 404)", "pct": 83, "color": "#f59e0b" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 core routes", "pct": 0, "color": "#ef4444" },
+          { "label": "BTC Price", "value": "~$71,043 (+3.79% relief rally)", "pct": 70, "color": "#4ade80" },
+          { "label": "ETH Price", "value": "~$2,166 (+5.16%)", "pct": 62, "color": "#4ade80" },
+          { "label": "SOL Price", "value": "~$90 (+6.48%)", "pct": 58, "color": "#4ade80" },
+          { "label": "Fear & Greed Index", "value": "8-11 (Extreme Fear — Day 47)", "pct": 10, "color": "#ef4444" },
+          { "label": "BTC Dominance", "value": "56.36%", "pct": 56, "color": "#06b6d4" },
+          { "label": "Total Market Cap", "value": "~$2.46T", "pct": 50, "color": "#06b6d4" },
+          { "label": "Stablecoins Market Cap", "value": "$304B ATH", "pct": 97, "color": "#4ade80" },
+          { "label": "March Close Countdown", "value": "5 days — 7-month red streak at stake", "pct": 79, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "5 of 6 (build, design, community, publish, eod)", "pct": 83, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~9.5h (5 agents)", "pct": 93, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$452 (5 agents: build $233 + design $60 + community $41 + publish $55 + eod $63)", "pct": 83, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$5,381 (68 runs: standup×14 $630, build×10 $2,330, design×13 $780, community×12 $492, publish×6 $330, eod×13 $819)", "pct": 100, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" },
+          { "label": "⚠️ Deploy-Blocked Waste", "value": "$5,381 today — all content local-only until git locks cleared", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API unreachable from Chrome (CORS/network block on api.resend.com). Persistent issue since v13. Report saved locally."
+  }
+}

@@ -40,9 +40,23 @@ export default function LearnPageLayout({
     publisher: { "@type": "Organization", name: "degen0x" },
   };
 
+  const faqJsonLd = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -75,7 +89,8 @@ export default function LearnPageLayout({
               <Link
                 key={article.href ?? article.slug}
                 href={article.href ?? (article.slug ? `/learn/${article.slug}` : "#")}
-                className="glass-subtle p-4 glass-hover"
+                className="glass-subtle p-4 sm:p-5 glass-hover block"
+                style={{ minHeight: 64 }}
               >
                 <span className="text-xs text-[var(--color-primary)]">{article.category}</span>
                 <h3 className="text-sm font-semibold text-[var(--color-text)] mt-1">{article.title}</h3>

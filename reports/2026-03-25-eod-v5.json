@@ -1,0 +1,77 @@
+{
+  "date": "2026-03-25",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close: 2 new learn guides scaffolded (EIP-7702 Smart Accounts + Passkey Embedded Wallets) with 0 TS errors. PUBLISH_QUEUE refilled to 2 items. TS errors stable at 142 (no regression). Git locks Day 10 — 803 uncommitted files.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "2 new pages built this cycle: /learn/eip-7702-smart-accounts-guide-2026 and /learn/passkey-embedded-wallets-guide-2026 — both page.tsx confirmed present",
+          "New pages are CLEAN: 0 TypeScript errors in either new guide (no regression from new content)",
+          "Total TS errors stable at 142 (unchanged from v4): lido-v3-stvaults (94), structured-data.examples (40), crypto-arbitrage-strategies (4), institutional-crypto-adoption (2), crypto-index-funds (2)",
+          "Published slugs: 517 entries / 500 unique (up from 515/496 — 2 new entries added to PUBLISH_QUEUE)",
+          "PUBLISH_QUEUE refilled: 2 items (was 0 in v4) — eip-7702-smart-accounts, passkey-embedded-wallets",
+          "Page audit: 103 published slugs still missing page.tsx files — unchanged",
+          "Build bypasses TS errors via ignoreBuildErrors: true in next.config.ts"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 public API routes present: /api/prices, /api/trending, /api/fear-greed, /api/market-metrics, /api/market-dominance, /api/defi-yields",
+          "Cache TTLs verified: prices (swr:120s), trending (swr:600s), fear-greed (swr:1200s), market-metrics (swr:120s), market-dominance (swr:600s), defi-yields (dynamic — empty swr value detected)",
+          "NOTE: defi-yields has empty stale-while-revalidate value — should be investigated",
+          "Rate limiter coverage: 0/6 core API routes wired to checkRateLimit — carry-over P1",
+          "CoinGecko free tier risk persists — no API key configured",
+          "No code changes to API routes this cycle"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Git lock files persist: .git/HEAD.lock (Mar 16) + .git/index.lock (Mar 16) — DAY 10 of blocker",
+          "803 uncommitted files (up from 799 in v4 — 4 new files from 2 guide pages)",
+          "48 files changed vs last commit (e999560) with 4,407 insertions / 3,464 deletions",
+          "Last deployed commit: e999560 (Mar 17) — 'publish: promote 2 pages to production (Day 62)'",
+          "Deploy gap: ~170+ pages built locally but not live in production — Day 8 since last push",
+          "next.config.ts has ignoreBuildErrors: true — Vercel builds bypass TS errors",
+          "CRITICAL: Jefe must manually run: rm .git/index.lock .git/HEAD.lock && git add -A && git commit && git push"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: 2 learn guides scaffolded — EIP-7702 Smart Accounts Guide + Passkey Embedded Wallets Guide",
+          "PUBLISH_QUEUE refilled: 2 items (was 0 in v4) — content pipeline no longer empty",
+          "TS errors stable at 142 — no new regressions from this cycle's work",
+          "TODAY'S REPORTS: standup×5, build×4, community×5, design×5, publish×5, eod×5 = 29 reports",
+          "CARRY-OVER [P0]: Git locks Day 10 — 803 files, ~170+ page deploy gap. Jefe action required.",
+          "CARRY-OVER [P1]: 103 published slugs missing page.tsx (wallets, taxes, investing, learn fundamentals)",
+          "CARRY-OVER [P1]: 142 TS errors across 5 files — stable but needs cleanup",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes",
+          "CARRY-OVER [P1]: defi-yields API has empty stale-while-revalidate value",
+          "CARRY-OVER [P2]: Duplicate slugs in published-pages.ts (517 entries but only 500 unique)",
+          "NEXT CYCLE: Promote EIP-7702 + Passkey Wallets from queue to published, fix lido-v3-stvaults TS errors"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages", "value": "500 unique", "pct": 83, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "2 items", "pct": 10, "color": "#f59e0b" },
+          { "label": "TS Errors", "value": "142 (stable)", "pct": 30, "color": "#f59e0b" },
+          { "label": "API Routes Health", "value": "6/6 present", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 routes", "pct": 0, "color": "#ef4444" },
+          { "label": "Missing page.tsx", "value": "103 slugs", "pct": 20, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "803", "pct": 5, "color": "#ef4444" },
+          { "label": "Git Lock Status", "value": "Day 10 blocked", "pct": 5, "color": "#ef4444" },
+          { "label": "Deploy Gap", "value": "8 days", "pct": 10, "color": "#ef4444" },
+          { "label": "New Pages (this cycle)", "value": "2 clean", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

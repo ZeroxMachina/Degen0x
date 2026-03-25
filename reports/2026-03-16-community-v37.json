@@ -1,0 +1,62 @@
+{
+  "date": "2026-03-16",
+  "block": "community",
+  "cycle": "v37",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v37 (Mar 16): Calendar extended to Jun 8 with 3 content pillars — Fair Token Launches playbook (lockdrops, LBPs, lottery, airdrop-first), peaq DePIN Robotics deep-dive (machine economy L1, 50+ DePIN projects, Machine DeFi, $2.2T TAM), and degen0x 482-page milestone celebration. Weekly newsletter drafted for Thu Jun 5 + DePIN sector poll (Fri Jun 6). Two social cards created: social-fair-token-launches.svg (green/purple/amber theme, 4 launch model cards, distribution flow) and social-peaq-depin-robotics.svg (teal/lime DePIN theme, 3 feature cards, machine economy flow).",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Mon Jun 2 — Twitter thread (5 posts): Fair Token Launches — lockdrops, LBPs, lottery, airdrop-first; Hyperliquid $1.6B+ as real example; fair distribution → sustainable price thesis; CTA to /learn/fair-token-launches-guide-2026",
+          "Tue Jun 3 — Twitter thread (5 posts): peaq DePIN Robotics — machine economy L1, 50+ DePIN projects, Machine IDs, Machine DeFi, Polkadot SDK, $2.2T TAM by 2030; CTA to /learn/peaq-depin-robotics-guide-2026 + /learn/ai-depin-crypto-guide",
+          "Wed Jun 4 — Twitter standalone: degen0x milestone — 482 pages live, 90+ tools, 100+ guides, 8 languages, zero affiliate bias; community input request for next page scaffolding cycle",
+          "Thu Jun 5 — Full weekly newsletter: Fair launch lead story, peaq DePIN deep-dive, last week's poll results, 482-page milestone, Tool of the Week (/tools/market-heatmap), tease Hyperliquid trading guide + FOMC impact guide",
+          "Fri Jun 6 — Twitter poll: 'Most important DePIN sector to watch in 2026?' (Wireless/Helium, Compute/Render, Robotics/peaq, Mapping/Hivemapper)",
+          "Sat Jun 7 — Weekend wrap tweet: Fair launches + peaq DePIN + milestone recap; teases Hyperliquid guide + FOMC guide for next week"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/tools/dca-calculator", "value": "#1 Tool — Jupiter cross-link amplification continues", "pct": 97, "color": "#4ade80" },
+          { "label": "/learn/jupiter-solana-guide", "value": "Day 1 momentum — Solana DeFi search surge", "pct": 95, "color": "#c7f284" },
+          { "label": "/learn/ondo-finance-rwa-guide", "value": "Day 1 momentum — RWA institutional interest peak", "pct": 93, "color": "#fbbf24" },
+          { "label": "/learn/fair-token-launches-guide-2026", "value": "Just published — lockdrop/LBP trending queries", "pct": 92, "color": "#4ade80" },
+          { "label": "/learn/peaq-depin-robotics-guide-2026", "value": "Just published — DePIN narrative gaining traction", "pct": 91, "color": "#06b6d4" },
+          { "label": "/learn/staked-crypto-etfs-guide-2026", "value": "Sustained — regulatory clarity compounding", "pct": 90, "color": "#60a5fa" },
+          { "label": "/learn/ethereum-pectra-upgrade-guide", "value": "Evergreen — post-launch data sustaining search volume", "pct": 89, "color": "#818cf8" },
+          { "label": "/learn/bitcoin-halving-2028-guide", "value": "Evergreen — 2yr countdown cadence", "pct": 88, "color": "#fbbf24" },
+          { "label": "/learn/story-protocol-ip-guide", "value": "Week 3 momentum — IP narrative solidifying", "pct": 86, "color": "#a78bfa" },
+          { "label": "/tools/staking-apy", "value": "Tool usage steady — MaxEB staking interest", "pct": 84, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-fair-token-launches.svg — 1200x630 social card: dark purple/green/amber theme; 'TOKEN LAUNCHES · 2026' badge; 'Fair Token Launches — The Anti-Rug Playbook' headline; 4 launch model cards (Lockdrop green border, Lottery purple border, LBP amber border, Airdrop-First cyan border); distribution flow diagram (Fair Distribution → Aligned Holders → Sustainable Price → Organic Growth); 4 stat panels (Hyperliquid $1.6B+, 0 Insiders, 2026 Meta, Day 1 Owners); CTA bar linking /learn/fair-token-launches-guide-2026. Saved to /public/social-fair-token-launches.svg",
+          "social-peaq-depin-robotics.svg — 1200x630 social card: dark teal/lime DePIN theme; 'DePIN · MACHINE ECONOMY · 2026' badge; 'peaq — The L1 Where Machines Earn Crypto' headline; 3 feature cards (Machine IDs cyan border, Machine DeFi lime border, 50+ DePIN Projects amber border); machine economy flow (IoT Devices → peaq L1 → Machine DeFi → Crypto Rewards → You Earn); 4 stat panels ($2.2T TAM, 50+ Projects, Interoperable, $0.001/tx); dual CTA linking /learn/peaq-depin-robotics-guide-2026 + /learn/ai-depin-crypto-guide. Saved to /public/social-peaq-depin-robotics.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "Calendar coverage: v37 fills Jun 2 – Jun 8. Combined with v17–v36, full social calendar now spans Mar 16 – Jun 8 (12+ weeks of content queued).",
+          "Fair token launches and peaq DePIN robotics were published today (Day 49c). Both are the last pages from the original publish queue.",
+          "Publish queue now has only 2 pages remaining: /learn/hyperliquid-trading-guide and /learn/fomc-fed-rate-crypto-guide. Queue nearly exhausted — new page scaffolding cycle needed.",
+          "482 pages now published. The platform milestone is a strong community engagement hook (Wed Jun 4 post).",
+          "Fair launches thread leverages Hyperliquid's $1.6B airdrop as proof point — connects to upcoming Hyperliquid trading guide for cross-promotion.",
+          "peaq DePIN guide fills the robotics/IoT gap in our DePIN coverage, complementing existing /learn/ai-depin-crypto-guide.",
+          "DePIN sector poll (Fri) provides data for prioritizing next DePIN content — wireless vs compute vs robotics vs mapping.",
+          "Milestone post (Wed) doubles as community input funnel for next page scaffolding cycle.",
+          "No outstanding community feedback, bug reports, or DMs requiring response this cycle.",
+          "Social drafts saved to /reports/community-drafts/2026-03-16-social-drafts-v37.md",
+          "Fair launches social card saved to /public/social-fair-token-launches.svg",
+          "peaq DePIN social card saved to /public/social-peaq-depin-robotics.svg"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"]
+  }
+}

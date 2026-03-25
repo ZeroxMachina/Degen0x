@@ -1,0 +1,75 @@
+{
+  "date": "2026-03-25",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close: 2 new learn guides built (Lido v3 stVaults + Institutional Crypto Adoption). REGRESSION: TS errors jumped 46→142 due to new lido-v3-stvaults page (94 new errors). Git locks Day 10 — 799 uncommitted files. All 6 API routes structurally healthy.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "2 new pages built this cycle: /learn/lido-v3-stvaults-guide-2026 and /learn/institutional-crypto-adoption-guide-2026 — both page.tsx files confirmed present",
+          "REGRESSION: TypeScript errors jumped 46→142 (net +96). Breakdown: lido-v3-stvaults-guide-2026 (94 errors), institutional-crypto-adoption-guide-2026 (2 errors) — both likely JSX escaping issues matching existing pattern",
+          "Pre-existing errors unchanged: structured-data.examples.ts (40), crypto-arbitrage-strategies (4), crypto-index-funds (2)",
+          "Published slugs: 515 entries / 496 unique — unchanged from previous cycle",
+          "Page audit: 103 published slugs still missing page.tsx files — unchanged",
+          "Build will still succeed due to ignoreBuildErrors: true in next.config.ts, but error surface is growing",
+          "PUBLISH_QUEUE: 0 items remaining — drained"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 public API routes present: /api/prices, /api/trending, /api/fear-greed, /api/market-metrics, /api/market-dominance, /api/defi-yields",
+          "Could not live-test endpoints (WebFetch blocked for degen0x.com) — structural audit only",
+          "Cache TTLs verified in code: prices (60s/swr:120s), trending (300s/swr:600s), fear-greed (600s/swr:1200s), market-metrics (60s), market-dominance (300s/swr:600s), defi-yields (300s dynamic)",
+          "Rate limiter: 0/6 core API routes wired to checkRateLimit (only /api/health uses it) — carry-over P1",
+          "CoinGecko free tier risk persists — no API key configured",
+          "No code changes to API routes this cycle"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Git lock files persist: .git/HEAD.lock (Mar 16) + .git/index.lock (Mar 16) — DAY 10 of blocker",
+          "799 uncommitted files (up from 795 in previous cycle — 4 new files from 2 guide pages)",
+          "48 files changed vs last commit (e999560) with 4,381 insertions / 3,464 deletions",
+          "Last deployed commit: e999560 (Mar 17) — 'publish: promote 2 pages to production (Day 62)'",
+          "Deploy gap: ~170+ pages built locally but not live in production — Day 8 since last push",
+          "next.config.ts has ignoreBuildErrors: true — Vercel builds bypass TS errors",
+          "CRITICAL: Jefe must manually run: rm .git/index.lock .git/HEAD.lock && git add -A && git commit && git push"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: 2 learn guides — Lido v3 stVaults Guide 2026 + Institutional Crypto Adoption Guide 2026",
+          "NEW REGRESSION: TS errors tripled (46→142) from new pages — should be fixed before next deploy",
+          "PUBLISH_QUEUE: 0 items (drained). Content pipeline needs refill for next cycle.",
+          "TODAY'S REPORTS SO FAR: standup×4, build×3, community×4, design×4, publish×4, eod×4 = 23 reports",
+          "CARRY-OVER [P0]: Git locks Day 10 — 799 files, ~170+ page deploy gap. Jefe action required.",
+          "CARRY-OVER [P1]: 103 published slugs missing page.tsx (Day 1 pillars: wallets, taxes, investing, learn fundamentals)",
+          "CARRY-OVER [P1]: 142 TS errors across 5 files — growing, JSX escaping issues (was 46 last cycle)",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes",
+          "CARRY-OVER [P2]: Duplicate slugs in published-pages.ts (515 entries but only 496 unique)",
+          "NEXT CYCLE: Fix new TS regressions, refill PUBLISH_QUEUE, scaffold missing Day 1 pillar pages"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Slugs", "value": "515 entries / 496 unique", "pct": 100, "color": "#4ade80" },
+          { "label": "Page.tsx Coverage", "value": "412/515 slugs have page.tsx (80%)", "pct": 80, "color": "#f59e0b" },
+          { "label": "PUBLISH_QUEUE", "value": "0 items (drained)", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript Health", "value": "142 errors / 5 files — UP from 46", "pct": 35, "color": "#ef4444" },
+          { "label": "API Routes Health", "value": "6/6 present, structural audit only", "pct": 85, "color": "#06b6d4" },
+          { "label": "Deploy Gap", "value": "~170+ pages (Day 10 of git locks)", "pct": 10, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "799 files", "pct": 10, "color": "#ef4444" },
+          { "label": "Cache TTLs", "value": "All 6 routes configured correctly", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter Wired", "value": "0/6 core routes (only /api/health)", "pct": 15, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

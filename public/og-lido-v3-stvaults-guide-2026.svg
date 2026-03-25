@@ -1,0 +1,161 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1420"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="lidoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00a3ff"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00a3ff"/>
+      <stop offset="100%" stop-color="#0077cc"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Background decorative circles -->
+  <circle cx="950" cy="180" r="200" fill="#00a3ff" opacity="0.03" filter="url(#softGlow)"/>
+  <circle cx="200" cy="500" r="150" fill="#6366f1" opacity="0.03" filter="url(#softGlow)"/>
+
+  <!-- Grid pattern for staking visualization -->
+  <g opacity="0.06" stroke="#00a3ff" stroke-width="0.5">
+    <line x1="700" y1="100" x2="700" y2="530"/>
+    <line x1="800" y1="100" x2="800" y2="530"/>
+    <line x1="900" y1="100" x2="900" y2="530"/>
+    <line x1="1000" y1="100" x2="1000" y2="530"/>
+    <line x1="1100" y1="100" x2="1100" y2="530"/>
+    <line x1="700" y1="150" x2="1150" y2="150"/>
+    <line x1="700" y1="250" x2="1150" y2="250"/>
+    <line x1="700" y1="350" x2="1150" y2="350"/>
+    <line x1="700" y1="450" x2="1150" y2="450"/>
+  </g>
+
+  <!-- stVaults Architecture Diagram -->
+  <!-- Central Lido node -->
+  <circle cx="900" cy="250" r="45" fill="url(#nodeGrad1)" opacity="0.9" filter="url(#glow)"/>
+  <text x="900" y="245" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="13" font-weight="700">Lido V3</text>
+  <text x="900" y="262" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="11" opacity="0.8">stVaults</text>
+
+  <!-- Validator node -->
+  <circle cx="770" cy="160" r="32" fill="url(#nodeGrad2)" opacity="0.85"/>
+  <text x="770" y="157" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="10" font-weight="600">Validator</text>
+  <text x="770" y="170" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="9" opacity="0.7">Selection</text>
+  <line x1="797" y1="178" x2="862" y2="222" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- DeFi node -->
+  <circle cx="1040" cy="160" r="32" fill="url(#nodeGrad3)" opacity="0.85"/>
+  <text x="1040" y="157" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="10" font-weight="600">DeFi</text>
+  <text x="1040" y="170" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="9" opacity="0.7">Yield Loops</text>
+  <line x1="1013" y1="178" x2="938" y2="222" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Restaking node -->
+  <circle cx="1060" cy="340" r="32" fill="url(#nodeGrad4)" opacity="0.85"/>
+  <text x="1060" y="337" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="10" font-weight="600">Restaking</text>
+  <text x="1060" y="350" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="9" opacity="0.7">EigenLayer</text>
+  <line x1="1033" y1="322" x2="938" y2="278" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Institutional node -->
+  <circle cx="760" cy="340" r="32" fill="#8b5cf6" opacity="0.85"/>
+  <text x="760" y="337" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="10" font-weight="600">Institutional</text>
+  <text x="760" y="350" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="9" opacity="0.7">Access</text>
+  <line x1="787" y1="322" x2="862" y2="278" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Stats cards -->
+  <g transform="translate(720, 420)">
+    <rect x="0" y="0" width="120" height="55" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="60" y="25" text-anchor="middle" fill="#00a3ff" font-family="Inter, sans-serif" font-size="16" font-weight="800">$15B+</text>
+    <text x="60" y="42" text-anchor="middle" fill="#8b949e" font-family="Inter, sans-serif" font-size="10">TVL Staked</text>
+  </g>
+  <g transform="translate(860, 420)">
+    <rect x="0" y="0" width="120" height="55" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="60" y="25" text-anchor="middle" fill="#22c55e" font-family="Inter, sans-serif" font-size="16" font-weight="800">1M ETH</text>
+    <text x="60" y="42" text-anchor="middle" fill="#8b949e" font-family="Inter, sans-serif" font-size="10">2026 Target</text>
+  </g>
+  <g transform="translate(1000, 420)">
+    <rect x="0" y="0" width="120" height="55" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="60" y="25" text-anchor="middle" fill="#f59e0b" font-family="Inter, sans-serif" font-size="16" font-weight="800">8-12%</text>
+    <text x="60" y="42" text-anchor="middle" fill="#8b949e" font-family="Inter, sans-serif" font-size="10">DeFi APY</text>
+  </g>
+
+  <!-- Logo area -->
+  <g transform="translate(60, 40)">
+    <circle cx="16" cy="16" r="14" fill="url(#lidoGrad)" opacity="0.9"/>
+    <text x="14" y="21" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="12" font-weight="800">0x</text>
+    <text x="40" y="22" fill="#e6edf3" font-family="Inter, sans-serif" font-size="16" font-weight="700">degen0x</text>
+  </g>
+
+  <!-- Badges -->
+  <g transform="translate(60, 100)">
+    <rect x="0" y="0" width="52" height="24" rx="12" fill="#8b5cf620" stroke="#8b5cf640" stroke-width="1"/>
+    <text x="26" y="16" text-anchor="middle" fill="#bc8cff" font-family="Inter, sans-serif" font-size="10" font-weight="600">DeFi</text>
+    <rect x="60" y="0" width="68" height="24" rx="12" fill="#06b6d420" stroke="#06b6d440" stroke-width="1"/>
+    <text x="94" y="16" text-anchor="middle" fill="#06b6d4" font-family="Inter, sans-serif" font-size="10" font-weight="600">Staking</text>
+  </g>
+
+  <!-- Title -->
+  <text x="60" y="180" fill="#e6edf3" font-family="Inter, sans-serif" font-size="42" font-weight="900" letter-spacing="-1">
+    <tspan>Lido V3 stVaults</tspan>
+  </text>
+  <text x="60" y="230" fill="#e6edf3" font-family="Inter, sans-serif" font-size="36" font-weight="900" letter-spacing="-1" opacity="0.9">
+    <tspan>Guide 2026</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="60" y="280" fill="#8b949e" font-family="Inter, sans-serif" font-size="18" font-weight="400">
+    Modular Staking Infrastructure
+  </text>
+  <text x="60" y="305" fill="#8b949e" font-family="Inter, sans-serif" font-size="18" font-weight="400">
+    Customization &amp; DeFi Strategies
+  </text>
+
+  <!-- Feature pills -->
+  <g transform="translate(60, 340)">
+    <rect x="0" y="0" width="155" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="77" y="20" text-anchor="middle" fill="#00a3ff" font-family="Inter, sans-serif" font-size="11" font-weight="600">Validator Selection</text>
+  </g>
+  <g transform="translate(225, 340)">
+    <rect x="0" y="0" width="130" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="65" y="20" text-anchor="middle" fill="#22c55e" font-family="Inter, sans-serif" font-size="11" font-weight="600">DeFi Yield Loops</text>
+  </g>
+  <g transform="translate(365, 340)">
+    <rect x="0" y="0" width="145" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="72" y="20" text-anchor="middle" fill="#f59e0b" font-family="Inter, sans-serif" font-size="11" font-weight="600">Restaking Integration</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="615" fill="#6e7681" font-family="Inter, sans-serif" font-size="13" font-weight="500">degen0x.com</text>
+  <text x="1140" y="615" text-anchor="end" fill="#6e7681" font-family="Inter, sans-serif" font-size="12">Learn · DeFi · Staking</text>
+</svg>

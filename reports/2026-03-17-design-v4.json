@@ -1,0 +1,66 @@
+{
+  "date": "2026-03-17",
+  "block": "design",
+  "version": "v4",
+  "report": {
+    "status": "completed",
+    "summary": "UX polish for today's build-v4 pages — added semantic article wrappers, ARIA labels on all data grids/tables/risk lists, responsive breakpoints for tablet layouts, scope='col' on comparison tables, semantic nav landmarks for related guides, and 44px touch targets on CTA links for both Monad Blockchain Guide and Smart Wallets & Account Abstraction Guide.",
+    "sections": [
+      {
+        "title": "UX Improvements — Monad Blockchain Guide",
+        "items": [
+          "Added semantic <article> wrapper around page content for screen reader document structure",
+          "Stats grid: Changed grid-cols-2 to grid-cols-2 sm:grid-cols-3 for better tablet display (6 stats: Throughput, Finality, Block Time, TVL, Mainnet Launch, Total Funding)",
+          "Stats grid: Added role=list, aria-label='Monad key statistics', and role=listitem + aria-label on each stat item",
+          "Comparison table: Added aria-label='Monad vs other high-performance blockchains comparison' and scope='col' on all 5 header cells (Chain, TPS, Finality, EVM, TVL)",
+          "Milestones timeline: Added role=list, aria-label='Monad key milestones and roadmap', and role=listitem + aria-label on each milestone (5 items)",
+          "Risks section: Added role=list, aria-label='Monad investment risks', and role=listitem + aria-label with severity on each risk card (6 risks)",
+          "Related Guides: Converted <section> to semantic <nav> with aria-label='Related blockchain guides'",
+          "Related Guides: Added min-h-[44px] touch targets to all 4 CTA link cards"
+        ]
+      },
+      {
+        "title": "UX Improvements — Smart Wallets & Account Abstraction Guide",
+        "items": [
+          "Fixed StructuredData prop from schema={} to data={} for consistency with other pages",
+          "Removed bg-[#161b22] outer background override — now inherits site-wide dark theme correctly",
+          "Added semantic <article> wrapper around main content",
+          "Feature grid: Changed grid-cols-1 md:grid-cols-2 to grid-cols-1 sm:grid-cols-2 for earlier tablet breakpoint",
+          "Feature grid: Added role=list, aria-label='Smart wallet key features', and role=listitem on all 6 feature cards (Gas Sponsorship, Transaction Batching, Social Recovery, Passkey Auth, Spending Limits, Session Keys)",
+          "Adoption stats grid: Changed grid-cols-1 md:grid-cols-2 to grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 for responsive 3-col layout",
+          "Adoption stats grid: Added role=list, aria-label='Smart wallet adoption statistics', and role=listitem + aria-label on all 6 stat cards",
+          "Provider table: Added aria-label='Smart wallet provider comparison' and scope='col' on all 4 header cells (Wallet, Best For, Key Features, Auth Method)",
+          "Related Guides: Converted <section> to semantic <nav> with aria-label='Related wallet and security guides'",
+          "Related Guides: Changed grid-cols-1 md:grid-cols-2 to grid-cols-1 sm:grid-cols-2 for earlier tablet breakpoint",
+          "Related Guides: Added min-h-[44px] touch targets to all 4 CTA link cards"
+        ]
+      },
+      {
+        "title": "OG Images & Social Metadata",
+        "items": [
+          "Verified: Monad Blockchain Guide OG image correctly configured (/api/og?title=Monad+Blockchain+Guide&category=Learn&type=learn) — 1200x630, type=learn (blue gradient + book icon)",
+          "Verified: Smart Wallets Guide OG image correctly configured (/api/og?title=Smart+Wallets+Guide&category=Learn&type=learn) — 1200x630, type=learn",
+          "Verified: Both pages have Twitter card images configured (summary_large_image)",
+          "No OG fixes needed — build-v4 pages were scaffolded with correct type=learn from the start"
+        ]
+      },
+      {
+        "title": "Audit Findings (No Fix Required)",
+        "items": [
+          "Both pages already have proper Breadcrumb component with correct hierarchy (Home > Learn > Guide Title)",
+          "Both pages already have ArticleStructuredData and FAQStructuredData schemas",
+          "Both pages use consistent heading hierarchy (h1 > h2 > h3)",
+          "Both pages have proper internal cross-links to related learn guides and tools",
+          "Both pages have disclaimer sections with appropriate warning styling",
+          "Monad page: comparison table already has overflow-x-auto for mobile horizontal scroll",
+          "Smart Wallets page: FAQ uses <details>/<summary> accordion pattern — accessible by default"
+        ]
+      }
+    ],
+    "files_changed": [
+      "src/app/learn/monad-blockchain-guide/page.tsx (article wrapper, ARIA labels on stats/table/risks/milestones, responsive grid, semantic nav, touch targets)",
+      "src/app/learn/smart-wallets-account-abstraction-guide/page.tsx (StructuredData prop fix, bg override removed, article wrapper, ARIA labels on features/stats/table, responsive grids, semantic nav, touch targets)"
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}
