@@ -1,0 +1,68 @@
+{
+  "date": "2026-03-28",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle v7: No new commits since Mar 25 deploy (21aaf5b). 343 uncommitted files (31 modified + 312 untracked) — up from 333 in v6. 4 pages touched this cycle (citrea, depin-ecosystem, crypto-etf-in-kind, crypto-gas-fees). 2 queue items now have page.tsx and are ready to promote. 146 TS errors (+1). Deploy 3+ days stale — remains P0.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "All 19 pages published on 2026-03-28 have matching page.tsx files — no broken publishes this cycle.",
+          "Page coverage: 468/571 unique published slugs have page.tsx files (82.0%). 103 slugs missing — stable from v6.",
+          "TypeScript: 146 errors (+1 from v6's 145). Same JSX syntax issues in 6 files. Minor regression — likely from new page scaffolding.",
+          "4 pages modified since last cycle: citrea-bitcoin-zk-rollup-guide-2026, depin-ecosystem-guide-2026, crypto-etf-in-kind-redemption-guide-2026, crypto-gas-fees-transaction-costs-guide-2026.",
+          "PUBLISH_QUEUE: 2 items (depin-ecosystem-guide-2026 and crypto-gas-fees-transaction-costs-guide-2026) now have page.tsx — ready to promote to PUBLISHED_PAGES next cycle.",
+          "2 blocked queue items remain: crypto-wallet-security-token-approvals-guide and restaking-comparison-eigenlayer-symbiotic-karak-2026 (still no page.tsx).",
+          "Egress proxy blocks degen0x.com — cannot verify live 200 status codes. Production presumed stable on commit 21aaf5b.",
+          "No critical regressions introduced."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 core API routes present and structurally healthy: prices (60s TTL), fear-greed (600s TTL), trending (300s TTL), market-metrics (60s TTL), market-dominance (300s TTL), defi-yields (300s TTL).",
+          "Cache TTLs verified — all routes have s-maxage + stale-while-revalidate headers and ISR revalidation. Consistent pattern.",
+          "Error handling: All 6 routes have try/catch. prices and market-dominance have fallback data paths. fear-greed, trending, defi-yields return 502 on failure. market-metrics returns mock data. Good degradation.",
+          "Rate limiter: 0/6 core routes protected — carry-over blocker from Day 1. Health endpoint has rate limiting (100/min).",
+          "7 additional API routes operational (health, cache-stats, news-rss, newsletter, notifications, subscribe, standup-email, og).",
+          "Cannot verify live API health or rate limit hits due to egress block."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Latest deployed commit: 21aaf5b (Mar 25) — 'batch deploy: 170+ pages, 18 guides, 5 ecosystem pages, OG images, UX fixes'. Now 3+ days stale.",
+          "343 uncommitted files (31 modified + 312 untracked) — up from 333 in v6. Growth from automated report generation and new page scaffolding (+10 files this cycle).",
+          "Vercel project: prj_2Hn4Kdtu6fM13sSpxsdnmsJWGI75. Auto-deploy on push to main. Needs git commit + push to update production.",
+          "Cannot verify Vercel dashboard, error spikes, or performance regressions from sandbox.",
+          "No code-breaking changes since last deploy — production should be stable."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: 4 page.tsx files modified/created (citrea, depin-ecosystem, crypto-etf-in-kind, crypto-gas-fees). 2 queue items now ready to promote.",
+          "DELTA FROM V6: +10 uncommitted files (333→343). +1 TS error (145→146). Published slugs unchanged at 571 unique. Page.tsx coverage stable at 82.0%. 2 queue items now promotable.",
+          "CARRY-OVER BLOCKERS: (1) Deploy P0 — 343 uncommitted files, 3+ days pending. (2) 0/6 API rate limiting. (3) 146 TS errors in 6 files. (4) 103 published slugs missing page.tsx. (5) 2 blocked queue items need page.tsx or slug fix. (6) Egress blocks live verification.",
+          "NEEDS JEFE'S ATTENTION: Git commit + push is the #1 action. 3+ days of accumulated work invisible to production and Google. Also: promote 2 ready queue items (depin-ecosystem, crypto-gas-fees) to PUBLISHED_PAGES."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Production Deploy", "value": "3+ days stale — 343 files pending", "pct": 8, "color": "#ef4444" },
+          { "label": "Published Pages", "value": "571 unique slugs in config", "pct": 95, "color": "#4ade80" },
+          { "label": "Page.tsx Coverage", "value": "82.0% (468/571)", "pct": 82, "color": "#4ade80" },
+          { "label": "API Routes Health", "value": "6/6 present, correct TTLs", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "0/6 core routes protected", "pct": 0, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "146 in 6 files (+1 from v6)", "pct": 20, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "343 (31 mod + 312 untracked)", "pct": 5, "color": "#ef4444" },
+          { "label": "Queue Ready to Promote", "value": "2 pages ready, 2 blocked", "pct": 50, "color": "#06b6d4" },
+          { "label": "Regressions This Cycle", "value": "0 critical", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

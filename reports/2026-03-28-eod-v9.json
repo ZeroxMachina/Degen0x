@@ -1,0 +1,64 @@
+{
+  "date": "2026-03-28",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle 9 EOD: 2 new pages built since last cycle (yield-tokenization guide + token-security-scanner tool), 366 uncommitted files (+10 from v8), 145 TS errors stable, 0 regressions, deploy still critical blocker at 3+ days",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "2 new pages verified since last cycle: /learn/yield-tokenization-guide-2026 and /tools/token-security-scanner — both have page.tsx files confirmed on disk",
+          "596 published slugs in PUBLISHED_PAGES, 1,225 total page.tsx files in src/app — 105 legacy slugs still missing page.tsx (82% coverage, unchanged)",
+          "145 TypeScript errors across 6 files (stable, unchanged from v8): crypto-arbitrage-strategies, crypto-index-funds, institutional-crypto-adoption, lido-v3-stvaults, rwa-yield-vs-defi-yield-comparison, structured-data.examples.ts — all JSX syntax issues, non-blocking for production build",
+          "No regressions detected. No new broken pages introduced since last cycle",
+          "Network egress blocked — unable to verify live HTTP 200 status on degen0x.com. Code-level audit only"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "6 core API routes verified in codebase: fear-greed (10min TTL), trending (5min TTL), market-metrics (60s TTL), market-dominance (5min TTL), prices (60s TTL), defi-yields (5min TTL)",
+          "All routes have in-memory cache + CDN s-maxage + stale-while-revalidate headers. All include fallback logic serving stale cache on upstream failure",
+          "CoinGecko free tier still in use (no API key in route files). Rate limiting risk remains at scale",
+          "0/6 public API routes have request-level rate limiting. /api/health uses rate limiting but has mock health checks — both flagged as tech debt from prior cycles",
+          "No changes to API route files since last cycle. Data layer is stable"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "HEAD at commit 21aaf5b (Mar 25 batch deploy) — unchanged for 3+ days. 366 uncommitted files (up +10 from 356 in v8)",
+          "CRITICAL: Deploy blocker now in 19th+ consecutive cycle. All content built since Mar 25 remains invisible to production",
+          "New delta this cycle: yield-tokenization guide + token-security-scanner tool built but cannot reach production without git push",
+          "TypeScript compilation succeeds (145 errors are non-blocking). Build would likely succeed if committed and pushed",
+          "Unable to verify live Vercel deployment status due to network egress restrictions"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: build-7 created yield-tokenization-guide-2026 (learn article) and token-security-scanner (interactive tool). Both SEO-ready with metadata",
+          "CUMULATIVE TODAY (Mar 28): 7+ build cycles, 18+ new pages, 9+ standup rotations, 5+ publish cycles, 8+ design cycles, 9+ community cycles, 9 EOD reviews",
+          "CARRY-OVER BLOCKERS: (1) P0 — 366 uncommitted files need git commit + push to deploy. (2) P1 — 2 PUBLISH_QUEUE items blocked (wallet-security, restaking slug issues). (3) P1 — 6 queue items ready to promote (DePIN, Gas Fees, Bear Market, Smart Money + yield-tokenization, token-security-scanner). (4) P2 — 105 published slugs missing page.tsx. (5) P2 — 0/6 API routes rate-limited. (6) P3 — Health endpoint uses mock checks",
+          "NEEDS JEFE: Git commit + push remains the single highest-leverage action. One push unlocks 3 days of accumulated work for Google indexing"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Production Deploy Status", "value": "STALE — 366 files pending (3+ days)", "pct": 5, "color": "#ef4444" },
+          { "label": "Published Pages", "value": "596 slugs in config", "pct": 97, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "176 pages (6 ready, 2 blocked)", "pct": 50, "color": "#f59e0b" },
+          { "label": "Page.tsx Coverage", "value": "82% (491/596 published slugs)", "pct": 82, "color": "#4ade80" },
+          { "label": "TypeScript Errors", "value": "145 in 6 files (stable, non-blocking)", "pct": 75, "color": "#f59e0b" },
+          { "label": "API Route Health", "value": "6/6 cached (0/6 rate-limited)", "pct": 60, "color": "#f59e0b" },
+          { "label": "Pages Built Today", "value": "18+ across 7+ build cycles", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "366 (+10 from last cycle)", "pct": 5, "color": "#ef4444" },
+          { "label": "Regressions This Cycle", "value": "0 detected", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

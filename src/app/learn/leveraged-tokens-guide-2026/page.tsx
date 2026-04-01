@@ -1,4 +1,9 @@
 import { Metadata } from "next";
+import BackToTop from "@/components/BackToTop";
+import Breadcrumb from "@/components/Breadcrumb";
+import StructuredData from "@/components/StructuredData";
+import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Leveraged Tokens Guide 2026 | Amplified Crypto Exposure Without Liquidation",
@@ -43,24 +48,24 @@ export const metadata: Metadata = {
 };
 
 export default function LeveragedTokensGuide() {
+  const articleSchema = generateArticleSchema({
+    title: "Leveraged Tokens Guide 2026 | Amplified Crypto Exposure Without Liquidation",
+    description: "Complete guide to leveraged tokens: how they work, volatility decay risks, DeFi vs CeFi platforms, and strategies to use them effectively.",
+    url: `${SITE_URL}/learn/leveraged-tokens-guide-2026`,
+    datePublished: "2026-03-27T00:00:00Z",
+    dateModified: "2026-03-27T00:00:00Z",
+    author: "degen0x Team",
+    image: `${SITE_URL}/og-leveraged-tokens-guide-2026.svg`,
+  });
+
   return (
     <article className="min-h-screen bg-[#0d1117] text-[#c9d1d9]">
-      {/* Breadcrumb Navigation */}
-      <div className="border-b border-[#30363d] bg-[#0d1117] px-6 py-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
-          <nav aria-label="Breadcrumb" className="text-sm flex items-center gap-2">
-            <a href="/" className="text-[#58a6ff] hover:text-[#79c0ff]">
-              Home
-            </a>
-            <span className="text-[#8b949e]" aria-hidden="true">/</span>
-            <a href="/learn" className="text-[#58a6ff] hover:text-[#79c0ff]">
-              Learn
-            </a>
-            <span className="text-[#8b949e]" aria-hidden="true">/</span>
-            <span className="text-[#c9d1d9]">Leveraged Tokens Guide</span>
-          </nav>
-        </div>
-      </div>
+      <StructuredData data={articleSchema} />
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "Learn", href: "/learn" },
+        { label: "Leveraged Tokens Guide 2026" },
+      ]} />
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-6 py-12 md:px-8">
@@ -82,35 +87,35 @@ export default function LeveragedTokensGuide() {
         </div>
 
         {/* Table of Contents */}
-        <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
+        <nav aria-label="Table of Contents" className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
           <h2 className="text-lg font-semibold text-[#e6edf3] mb-4">
             Table of Contents
           </h2>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#what-are" className="text-[#58a6ff] hover:text-[#79c0ff]">
+              <a href="#what-are" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1] rounded-sm">
                 1. What Are Leveraged Tokens?
               </a>
             </li>
             <li>
-              <a href="#how-work" className="text-[#58a6ff] hover:text-[#79c0ff]">
+              <a href="#how-work" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1] rounded-sm">
                 2. How Leveraged Tokens Work
               </a>
             </li>
             <li>
-              <a href="#types" className="text-[#58a6ff] hover:text-[#79c0ff]">
+              <a href="#types" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1] rounded-sm">
                 3. Types of Leveraged Tokens
               </a>
             </li>
             <li>
-              <a href="#volatility" className="text-[#58a6ff] hover:text-[#79c0ff]">
+              <a href="#volatility" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1] rounded-sm">
                 4. Volatility Decay Explained
               </a>
             </li>
             <li>
               <a
                 href="#comparison"
-                className="text-[#58a6ff] hover:text-[#79c0ff]"
+                className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1] rounded-sm"
               >
                 5. Leveraged Tokens vs Perpetual Futures vs Margin
               </a>
@@ -118,23 +123,23 @@ export default function LeveragedTokensGuide() {
             <li>
               <a
                 href="#platforms"
-                className="text-[#58a6ff] hover:text-[#79c0ff]"
+                className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1] rounded-sm"
               >
                 6. Top Leveraged Token Platforms 2026
               </a>
             </li>
             <li>
-              <a href="#risk" className="text-[#58a6ff] hover:text-[#79c0ff]">
+              <a href="#risk" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1] rounded-sm">
                 7. Risk Management Strategies
               </a>
             </li>
             <li>
-              <a href="#faq" className="text-[#58a6ff] hover:text-[#79c0ff]">
+              <a href="#faq" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1] rounded-sm">
                 8. FAQ
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
 
         {/* Section 1: What Are Leveraged Tokens */}
         <section id="what-are" className="mb-12">
@@ -877,16 +882,7 @@ export default function LeveragedTokensGuide() {
           </p>
         </div>
 
-        {/* Back to Top */}
-        <div className="mt-8 text-center">
-          <a
-            href="#"
-            className="inline-block text-sm text-[#58a6ff] hover:text-[#79c0ff] transition-colors"
-            aria-label="Back to top"
-          >
-            Back to top
-          </a>
-        </div>
+        <BackToTop />
       </div>
     </article>
   );

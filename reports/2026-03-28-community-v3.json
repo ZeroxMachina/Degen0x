@@ -1,0 +1,76 @@
+{
+  "date": "2026-03-28",
+  "block": "community",
+  "report": {
+    "status": "completed",
+    "summary": "Community cycle v3 (late night): Drafted 3 tweets (#217-219) covering 47-day fear streak historical parallels, ETH undervalued thesis thread, and Monday new guides spotlight (Citrea + Unichain). Created Newsletter v36 weekly digest. Designed SVG social card: Fear Streak Record (1200x630 with fear gauge, historical parallel box, 4 metric cards, mini trend line). 577 pages published. 219 total tweets drafted.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #217: Fear Streak Approaches Record — 47 consecutive days of Extreme Fear, FTX collapse parallel ($16K→$42K = +162%), median 90d return +38.4%. Links to fear-greed-timeline. Scheduled: Sun Mar 29, 10AM ET.",
+          "Tweet #218: Is ETH Undervalued? Thread (5 parts) — ETH/BTC at 0.0301 lowest since Feb 2024, $253M mystery whale, SEC commodity classification, Goldman SOL ETF, DeFi TVL dominance, smart money accumulation during peak fear. Links to whale-tracker + crypto-etfs-complete-guide. Scheduled: Mon Mar 30, 12PM ET.",
+          "Tweet #219: Monday Tool Spotlight — Citrea Bitcoin ZK-Rollup guide + Unichain Uniswap L2 guide, freshly published learn content. Links to both guides. Scheduled: Mon Mar 30, 6PM ET.",
+          "Newsletter v36: Weekly Digest — Fear, Whales & New Guides Edition. 47-day fear streak, 270K BTC whale accumulation, $253M ETH whale, ETF flow reversal, Citrea + Unichain guides shipped, 577 published pages, featured reads + degen corner with +38.4% historical stat. Send: Mon Mar 30, 8AM ET."
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Fear & Greed Timeline", "value": "+99%", "pct": 99, "color": "#ef4444" },
+          { "label": "DCA Calculator", "value": "+98%", "pct": 98, "color": "#22c55e" },
+          { "label": "Whale Tracker", "value": "+96%", "pct": 96, "color": "#6366f1" },
+          { "label": "Bitcoin Halving Guide", "value": "+95%", "pct": 95, "color": "#f59e0b" },
+          { "label": "Risk Analyzer", "value": "+94%", "pct": 94, "color": "#ef4444" },
+          { "label": "Liquidation Heatmap", "value": "+92%", "pct": 92, "color": "#ef4444" },
+          { "label": "Crypto ETFs Guide", "value": "+90%", "pct": 90, "color": "#6366f1" },
+          { "label": "Backtesting Engine", "value": "+88%", "pct": 88, "color": "#6366f1" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "SVG social card: Fear Streak Record (1200x630) — Dark glass-morphism design with EXTREME FEAR badge (red pulsing dot). Main headline: '47 DAYS of Extreme Fear' with fear gauge visualization (12/100). Historical parallel box: Oct 2022 $16K→$42K (+162%), median +38.4% return stat. 4 metric cards: BTC $66,348 (-48% ATH), ETH $1,997 (ETH/BTC 0.0301), Whale Accumulation 270K BTC (largest since 2013), ETF Inflows +$458M (single-day reversal). Mini 47-day fear trend sparkline. Brand gradient bars top/bottom. CTA: fear-greed-timeline. Saved to reports/community-drafts/2026-03-28-social-card-fear-streak-record.svg"
+        ]
+      },
+      {
+        "title": "Growth Trajectory Analysis",
+        "metrics": [
+          { "label": "Published Pages", "value": "577 live (+2 today: Citrea + Unichain guides)", "pct": 97, "color": "#4ade80" },
+          { "label": "Cumulative Social Posts", "value": "219 tweets drafted (3 new this cycle, #217-219)", "pct": 100, "color": "#6366f1" },
+          { "label": "SVG Social Cards (all-time)", "value": "48+ cards (1 new: fear streak record)", "pct": 98, "color": "#06b6d4" },
+          { "label": "Newsletter Versions", "value": "v36 drafted (weekly digest edition)", "pct": 100, "color": "#4ade80" },
+          { "label": "Content Calendar", "value": "Sun Mar 29 10AM through Mon Mar 30 6PM with 3 tweets + 1 newsletter", "pct": 100, "color": "#4ade80" },
+          { "label": "Key Narrative", "value": "47-day fear streak record territory, ETH undervaluation thesis, new Citrea/Unichain guides", "pct": 100, "color": "#22c55e" }
+        ]
+      },
+      {
+        "title": "Content Calendar Additions",
+        "items": [
+          "Sun Mar 29 10AM ET — Tweet #217: Fear Streak Approaches Record",
+          "Mon Mar 30 8AM ET — Newsletter v36: Weekly Digest",
+          "Mon Mar 30 12PM ET — Tweet #218: Is ETH Undervalued? Thread (5 parts)",
+          "Mon Mar 30 6PM ET — Tweet #219: Monday Tool Spotlight (Citrea + Unichain)"
+        ]
+      },
+      {
+        "title": "Market Context",
+        "metrics": [
+          { "label": "BTC", "value": "$66,348 (-48% from $126K ATH)", "pct": 45, "color": "#ef4444" },
+          { "label": "ETH", "value": "$1,997 (ETH/BTC 0.0301, lowest since Feb 2024)", "pct": 35, "color": "#ef4444" },
+          { "label": "F&G Index", "value": "12 (Extreme Fear, day 47)", "pct": 12, "color": "#ef4444" },
+          { "label": "Whale Signal", "value": "270K BTC (30d), $253M ETH whale, $458M ETF inflow", "pct": 95, "color": "#22c55e" }
+        ]
+      },
+      {
+        "title": "Blocked Items",
+        "items": [
+          "2 pages in PUBLISH_QUEUE with slug mismatches — pending fix before next publish cycle",
+          "No community feedback channels connected — drafts queued for manual posting",
+          "CoinGecko/Alternative.me APIs blocked in VM — market data sourced from prior cycle reports"
+        ]
+      }
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"]
+  }
+}

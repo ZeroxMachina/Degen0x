@@ -11,7 +11,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const page = pages[slug];
   if (!page) return {};
-  return { title: page.metadata.title, description: page.metadata.description };
+  const ogImage = page.metadata.ogImage || `/og-${slug}.svg`;
+  return {
+    title: page.metadata.title,
+    description: page.metadata.description,
+    openGraph: {
+      title: page.metadata.title,
+      description: page.metadata.description,
+      type: "article",
+      images: [{ url: ogImage, width: 1200, height: 630, alt: page.props.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.metadata.title,
+      description: page.metadata.description,
+      images: [ogImage],
+    },
+  };
 }
 
 export default async function DynamicPage({ params }: Props) {

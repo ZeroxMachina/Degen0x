@@ -3,36 +3,45 @@
   "block": "design",
   "report": {
     "status": "completed",
-    "summary": "Audited 2 new pages from today's build cycle (MSBT Guide, Onchain Credit Scoring Guide), created 3 OG images, fixed 4 UX issues including missing semantic HTML, broken server-component event handlers, missing breadcrumb Home link, and missing OG metadata references.",
+    "summary": "UX audited 2 new learn guides (DeFi Insurance, DVT), created 2 OG images (1200x630 SVG), and implemented 6 UX refinements including semantic HTML, accessibility, and mobile table improvements.",
     "sections": [
       {
         "title": "UX Improvements",
         "items": [
-          "MSBT Guide: Wrapped page content in semantic <article> tag for better accessibility and SEO",
-          "Credit Scoring Guide: Added missing 'Home' breadcrumb link (was only Learn > Credit Scoring, now Home > Learn > Credit Scoring)",
-          "Credit Scoring Guide: Removed onMouseEnter/onMouseLeave event handlers from TOC and Related Links — page is a server component and these handlers would cause hydration errors or silently fail",
-          "Both pages: Added OG image references (images array) to openGraph and twitter metadata for proper social sharing previews",
-          "Layer 3 Chains Guide: Noted structural issue — page uses 'use client' so cannot export Next.js metadata. Needs page/component split in future build cycle"
+          "DVT guide: Wrapped in semantic <article> tag instead of React fragment for better SEO and accessibility",
+          "DVT guide: Added aria-label to Table of Contents nav element",
+          "DeFi Insurance: Added aria-label to Table of Contents nav element",
+          "DeFi Insurance: Protocol cards now show all 5 protocols instead of only top 3 (Neptune Mutual and Etherisc were previously hidden from card view)",
+          "DeFi Insurance: Added role='region', aria-label, and tabIndex to comparison table wrapper for keyboard-accessible scrolling",
+          "DVT guide: Added role='region', aria-label, tabIndex, and minWidth to SSV vs Obol comparison table for mobile scroll accessibility",
+          "Both pages: Added WebkitOverflowScrolling touch for smooth mobile table scrolling"
         ]
       },
       {
         "title": "Visuals Created",
         "items": [
-          "OG image: morgan-stanley-bitcoin-etf-msbt-guide (1200x630 SVG) — Dark theme with Bitcoin icon, fund details card (Coinbase custody, BNY Mellon admin, NYSE Arca), brand gradient accent",
-          "OG image: onchain-credit-scoring-guide-2026 (1200x630 SVG) — Credit score bar visualization (300-850 MACRO score), protocol comparison bars (Credora/Spectral/Cred Protocol), DeFi/Credit badges",
-          "OG image: layer-3-chains-guide-2026 (1200x630 SVG) — Layer stack diagram (L1→L2→L3), key stats (<$0.001/tx, 100K+ TPS, Custom Execution), Infrastructure/Scaling badges"
+          "OG image: defi-insurance-protocols-guide-2026 (1200x630 SVG) — dark theme with shield decorations, DeFi/Insurance/Intermediate badges, key stats ($1T+ TVL, <2% insured, $18M+ claims), protocol names listed",
+          "OG image: distributed-validator-technology-dvt-guide-2026 (1200x630 SVG) — dark theme with DVT network node visualization, Staking/DVT/Intermediate badges, key stats (4M+ ETH, $2B staked, 1,000+ operators), topic tags"
         ]
       },
       {
-        "title": "UX Audit Findings (Today's Pages)",
+        "title": "UX Audit Findings (Deferred)",
         "items": [
-          "MSBT Guide: Good — proper TOC, reading time, category badges, disclaimer, related links, BackToTop. No input validation needed (informational page)",
-          "Credit Scoring Guide: Good structure — header with surface bg, inline TOC, FAQ accordion, disclaimer, related guides. Fixed breadcrumb and event handler issues",
-          "Both pages: Mobile layout OK — maxWidth 900px with padding, flex-wrap on badges, responsive line-height on body text. No horizontal scroll issues detected",
-          "Both pages: Data hierarchy follows scan-first pattern — key numbers/names bold, category badges visible, section headings clearly sized"
+          "Style inconsistency between pages: DeFi Insurance uses 26px H2 / 48px sections; DVT uses 32px H2 / 60px sections — recommend standardizing in a shared article layout component",
+          "FAQ styling differs: Insurance uses card-based Q/A; DVT uses borderBottom dividers — recommend picking one pattern for all learn guides",
+          "Neither page has a data freshness indicator (e.g., 'Prices from CoinGecko') — recommend adding for trust signals",
+          "ToC links lack focus:outline styles — recommend adding 2px solid #6366f1 outline on :focus-visible across all learn guides"
         ]
       }
     ],
-    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "files_created": [
+      "public/og-defi-insurance-protocols-guide-2026.svg",
+      "public/og-distributed-validator-technology-dvt-guide-2026.svg"
+    ],
+    "files_modified": [
+      "src/app/learn/defi-insurance-protocols-guide-2026/page.tsx",
+      "src/app/learn/distributed-validator-technology-dvt-guide-2026/page.tsx"
+    ]
   }
 }

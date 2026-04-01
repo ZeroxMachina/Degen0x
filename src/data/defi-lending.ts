@@ -4,6 +4,7 @@ export const DEFI_LENDING_PRODUCTS: Product[] = [
   {
     name: "Aave",
     slug: "aave",
+    logo: "/logos/aave.svg",
     rating: 4.8,
     description:
       "Aave is the largest decentralized lending protocol by TVL, offering variable and stable rate borrowing across Ethereum, Polygon, Arbitrum, Optimism, and multiple other chains with flash loan capabilities.",
@@ -27,6 +28,7 @@ export const DEFI_LENDING_PRODUCTS: Product[] = [
   {
     name: "Compound",
     slug: "compound",
+    logo: "/logos/compound.svg",
     rating: 4.6,
     description:
       "Compound is a pioneering DeFi lending protocol that introduced the cToken model for earning interest, now in its V3 iteration with improved capital efficiency and risk management features.",
@@ -50,6 +52,7 @@ export const DEFI_LENDING_PRODUCTS: Product[] = [
   {
     name: "Morpho",
     slug: "morpho",
+    logo: "/logos/morpho.svg",
     rating: 4.7,
     description:
       "Morpho optimizes lending rates by peer-to-peer matching lenders and borrowers on top of Aave and Compound, offering improved rates for both sides while maintaining the same liquidity guarantees.",
@@ -72,6 +75,7 @@ export const DEFI_LENDING_PRODUCTS: Product[] = [
   {
     name: "Spark",
     slug: "spark",
+    logo: "/logos/spark.svg",
     rating: 4.5,
     description:
       "Spark (formerly Spark Protocol) is the lending arm of MakerDAO/Sky ecosystem, allowing users to borrow DAI at the Dai Savings Rate while using a wide range of crypto collateral types.",
@@ -94,6 +98,7 @@ export const DEFI_LENDING_PRODUCTS: Product[] = [
   {
     name: "Yearn Finance",
     slug: "yearn",
+    logo: "/logos/yearn.svg",
     rating: 4.5,
     description:
       "Yearn Finance is the premier yield aggregator that automatically moves funds between lending protocols, liquidity pools, and farming strategies to maximize returns for depositors.",
@@ -117,6 +122,7 @@ export const DEFI_LENDING_PRODUCTS: Product[] = [
   {
     name: "Curve Finance",
     slug: "curve",
+    logo: "/logos/curve.svg",
     rating: 4.6,
     description:
       "Curve Finance is the leading DEX optimized for stablecoin and pegged asset swaps with deep liquidity pools, offering liquidity providers trading fees plus CRV token rewards.",
@@ -139,6 +145,7 @@ export const DEFI_LENDING_PRODUCTS: Product[] = [
   {
     name: "Lido",
     slug: "lido",
+    logo: "/logos/lido.svg",
     rating: 4.7,
     description:
       "Lido is the largest liquid staking protocol, allowing users to stake ETH and receive stETH tokens that earn staking rewards while remaining liquid for use across DeFi protocols.",

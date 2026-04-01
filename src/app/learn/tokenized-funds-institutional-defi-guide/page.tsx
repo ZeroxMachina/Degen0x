@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 
@@ -49,7 +50,7 @@ const articleSchema = generateArticleSchema({
   datePublished: "2026-03-25T00:00:00Z",
   dateModified: "2026-03-25T00:00:00Z",
   author: "degen0x Team",
-  image: "https://degen0x.com/og-tokenized-funds.png",
+  image: "https://degen0x.com/og-tokenized-funds-institutional-defi-guide.svg",
   wordCount: 3200,
 });
 
@@ -112,7 +113,7 @@ export default function TokenizedFundsGuidePage() {
             Think of it as wrapping a regulated financial product in a smart contract. You get the compliance and institutional trust of traditional finance with the transparency and composability of DeFi.
           </p>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16, marginBottom: 16 }}>
             {[
               {
                 title: "Traditional Fund", items: [
@@ -342,11 +343,30 @@ export default function TokenizedFundsGuidePage() {
           ))}
         </section>
 
+        {/* ── Related Articles ── */}
+        <section style={{ marginBottom: 48 }}>
+          <h2 style={{ fontSize: "1.3rem", fontWeight: 800, marginBottom: 16 }}>Related Articles & Tools</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: 14 }}>
+            {[
+              { title: "Tokenized Treasuries Guide", desc: "How US Treasury bonds are being brought on-chain and what it means for yield-seeking investors.", href: "/learn/tokenized-treasuries-guide-2026", color: S.teal },
+              { title: "RWA Tokenization Guide", desc: "Complete overview of real-world asset tokenization across real estate, credit, and commodities.", href: "/learn/rwa-tokenization-guide", color: S.green },
+              { title: "MiCA EU Crypto Regulation", desc: "How Europe's comprehensive crypto framework is shaping the future of tokenized financial products.", href: "/learn/mica-eu-crypto-regulation-guide", color: S.blue },
+              { title: "Portfolio Tracker", desc: "Track your tokenized assets alongside DeFi positions in a single dashboard.", href: "/tools/portfolio-tracker", color: S.purple },
+            ].map((card) => (
+              <a key={card.title} href={card.href} style={{ background: "#161b22", border: `1px solid ${S.border}`, borderRadius: 12, padding: 18, textDecoration: "none", display: "block", transition: "border-color 0.2s" }}>
+                <div style={{ fontWeight: 700, color: card.color, marginBottom: 6, fontSize: 14 }}>{card.title}</div>
+                <div style={{ fontSize: 13, color: S.text2, lineHeight: 1.6 }}>{card.desc}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+
         {/* ── Disclaimer ── */}
         <div style={{ background: `${S.yellow}08`, border: `1px solid ${S.yellow}25`, borderRadius: 12, padding: 20, fontSize: 13, color: S.text2, lineHeight: 1.7 }}>
           ⚠️ This guide is for informational purposes only. It is not financial advice. Tokenized fund products may have eligibility requirements and are subject to the regulations of their issuing jurisdictions. Always do your own research before making investment decisions. Data sourced from public announcements and industry reports as of March 2026.
         </div>
       </article>
+      <BackToTop />
     </main>
   );
 }

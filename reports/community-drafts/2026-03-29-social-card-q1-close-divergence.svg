@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1425"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accentBar)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+  </g>
+
+  <!-- Logo area -->
+  <text x="50" y="48" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#818cf8" letter-spacing="0.05em">degen0x</text>
+  <text x="130" y="48" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">COMMUNITY PULSE</text>
+
+  <!-- Main Title -->
+  <text x="600" y="105" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="url(#titleGrad)" text-anchor="middle" letter-spacing="-0.02em">Q1 2026: THE GREAT DIVERGENCE</text>
+  <text x="600" y="135" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#8b949e" text-anchor="middle">Worst quarter since 2022 on the surface. Record accumulation underneath.</text>
+
+  <!-- LEFT COLUMN: THE PRICE ACTION (Red) -->
+  <rect x="40" y="165" width="540" height="350" rx="16" fill="url(#redGrad)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="60" y="200" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#ef4444" letter-spacing="0.1em">THE PRICE ACTION</text>
+
+  <!-- BTC -->
+  <text x="60" y="240" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">BTC</text>
+  <text x="200" y="240" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">$66,350</text>
+  <text x="370" y="240" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#ef4444">-24.6% YTD</text>
+
+  <!-- ETH -->
+  <text x="60" y="280" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">ETH</text>
+  <text x="200" y="280" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">$1,985</text>
+  <text x="370" y="280" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#ef4444">-60% from high</text>
+
+  <!-- SOL -->
+  <text x="60" y="320" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">SOL</text>
+  <text x="200" y="320" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">$83</text>
+  <text x="370" y="320" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#ef4444">-72% from ATH</text>
+
+  <!-- Separator -->
+  <line x1="60" y1="345" x2="560" y2="345" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+
+  <!-- Fear stats -->
+  <text x="60" y="375" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Fear &amp; Greed</text>
+  <text x="200" y="375" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#ef4444">12/100</text>
+  <text x="310" y="375" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#ef4444">51-DAY RECORD</text>
+
+  <text x="60" y="410" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Weekly Loss</text>
+  <text x="200" y="410" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#ef4444">-$80B</text>
+  <text x="310" y="410" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">market cap shed</text>
+
+  <text x="60" y="445" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Options Expiry</text>
+  <text x="200" y="445" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#ef4444">$14.16B</text>
+  <text x="370" y="445" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">largest of 2026</text>
+
+  <text x="60" y="480" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Liquidations</text>
+  <text x="200" y="480" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#ef4444">$451M</text>
+  <text x="340" y="480" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">122K traders wiped</text>
+
+  <!-- RIGHT COLUMN: THE ACCUMULATION (Green) -->
+  <rect x="620" y="165" width="540" height="350" rx="16" fill="url(#greenGrad)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="640" y="200" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#22c55e" letter-spacing="0.1em">THE ACCUMULATION</text>
+
+  <!-- Whale accumulation -->
+  <text x="640" y="240" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Whale Buys (30d)</text>
+  <text x="820" y="240" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">270K BTC</text>
+
+  <!-- Exchange supply -->
+  <text x="640" y="280" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Exchange Supply</text>
+  <text x="820" y="280" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#22c55e">5.88%</text>
+  <text x="940" y="280" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#22c55e">ALL-TIME LOW</text>
+
+  <!-- SEC ruling -->
+  <text x="640" y="320" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">SEC Ruling</text>
+  <text x="820" y="320" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">16 Tokens = Commodities</text>
+
+  <!-- Separator -->
+  <line x1="640" y1="345" x2="1140" y2="345" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+
+  <!-- CLARITY Act -->
+  <text x="640" y="375" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">CLARITY Act</text>
+  <text x="820" y="375" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#22c55e">Deal Reached</text>
+
+  <!-- NC Reserve -->
+  <text x="640" y="410" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">NC Reserve Act</text>
+  <text x="820" y="410" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#22c55e">10% Public Funds → BTC</text>
+
+  <!-- Historical pattern box -->
+  <rect x="640" y="435" width="520" height="65" rx="10" fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+  <text x="660" y="458" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#a78bfa" letter-spacing="0.05em">AFTER EXTENDED EXTREME FEAR</text>
+  <text x="660" y="483" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Post-FTX</text>
+  <text x="750" y="483" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22c55e">+94%</text>
+  <text x="810" y="483" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">COVID</text>
+  <text x="870" y="483" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22c55e">+1,180%</text>
+  <text x="960" y="483" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">2018</text>
+  <text x="1010" y="483" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22c55e">+306%</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="540" width="1200" height="90" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="540" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Bottom stats -->
+  <text x="50" y="572" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">MARKET CAP</text>
+  <text x="50" y="592" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">$2.37T</text>
+
+  <text x="200" y="572" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">OIL</text>
+  <text x="200" y="592" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#f59e0b">&gt;$103/bbl</text>
+
+  <text x="350" y="572" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">LIQUIDATIONS</text>
+  <text x="350" y="592" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#ef4444">$451M</text>
+
+  <text x="520" y="572" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">FEAR STREAK</text>
+  <text x="520" y="592" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#ef4444">51 days</text>
+
+  <text x="670" y="572" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">PAGES LIVE</text>
+  <text x="670" y="592" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#4ade80">942</text>
+
+  <text x="800" y="572" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">TWEETS DRAFTED</text>
+  <text x="800" y="592" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#6366f1">238</text>
+
+  <!-- degen0x branding -->
+  <text x="1150" y="580" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#818cf8" text-anchor="end" filter="url(#glow)">degen0x.com</text>
+  <text x="1150" y="600" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-anchor="end">March 29, 2026 • Q1 Close</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accentBar)"/>
+</svg>

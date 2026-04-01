@@ -1,0 +1,91 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#080d1c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glassEffect">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#backgroundGradient)"/>
+
+  <!-- Accent bar at top -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <!-- Logo circle in top-left -->
+  <circle cx="60" cy="50" r="35" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.8"/>
+  <text x="60" y="60" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#e6edf3" text-anchor="middle">0x</text>
+
+  <!-- Decorative background elements -->
+  <!-- Building icon -->
+  <g opacity="0.15">
+    <rect x="150" y="280" width="60" height="120" fill="none" stroke="#4f46e5" stroke-width="3"/>
+    <rect x="165" y="295" width="12" height="15" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <rect x="188" y="295" width="12" height="15" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <rect x="165" y="320" width="12" height="15" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <rect x="188" y="320" width="12" height="15" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <rect x="165" y="345" width="12" height="15" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <rect x="188" y="345" width="12" height="15" fill="none" stroke="#4f46e5" stroke-width="2"/>
+  </g>
+
+  <!-- Gold icon -->
+  <g opacity="0.15">
+    <circle cx="1050" cy="320" r="40" fill="none" stroke="#d97706" stroke-width="3"/>
+    <path d="M 1030 320 Q 1050 300 1070 320 Q 1050 340 1030 320" fill="none" stroke="#d97706" stroke-width="2"/>
+  </g>
+
+  <!-- Bond/certificate icon -->
+  <g opacity="0.15">
+    <rect x="900" y="180" width="80" height="100" fill="none" stroke="#0891b2" stroke-width="2" rx="4"/>
+    <line x1="920" y1="210" x2="960" y2="210" stroke="#0891b2" stroke-width="2"/>
+    <line x1="920" y1="230" x2="960" y2="230" stroke="#0891b2" stroke-width="2"/>
+    <circle cx="965" cy="250" r="15" fill="none" stroke="#0891b2" stroke-width="2"/>
+  </g>
+
+  <!-- Glass-morphism card background -->
+  <rect x="80" y="100" width="1040" height="500" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" rx="16" opacity="0.8" style="backdrop-filter: blur(10px)"/>
+
+  <!-- Main title -->
+  <text x="600" y="200" font-family="Inter, sans-serif" font-size="56" font-weight="bold" fill="#e6edf3" text-anchor="middle" letter-spacing="-1">RWA Platforms Comparison 2026</text>
+
+  <!-- Accent line under title -->
+  <rect x="200" y="220" width="800" height="2" fill="url(#accentGradient)" opacity="0.8"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="280" font-family="Inter, sans-serif" font-size="28" fill="#8b949e" text-anchor="middle" letter-spacing="0.5">Ondo vs Centrifuge vs Maple vs Goldfinch</text>
+
+  <!-- Decorative platform badges -->
+  <g opacity="0.7">
+    <rect x="120" y="340" width="200" height="60" fill="rgba(79, 70, 229, 0.1)" stroke="rgba(79, 70, 229, 0.3)" stroke-width="1" rx="8"/>
+    <text x="220" y="375" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#b1a9ff" text-anchor="middle">Ondo</text>
+  </g>
+
+  <g opacity="0.7">
+    <rect x="360" y="340" width="200" height="60" fill="rgba(8, 145, 178, 0.1)" stroke="rgba(8, 145, 178, 0.3)" stroke-width="1" rx="8"/>
+    <text x="460" y="375" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#76e4f7" text-anchor="middle">Centrifuge</text>
+  </g>
+
+  <g opacity="0.7">
+    <rect x="600" y="340" width="200" height="60" fill="rgba(217, 119, 6, 0.1)" stroke="rgba(217, 119, 6, 0.3)" stroke-width="1" rx="8"/>
+    <text x="700" y="375" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#fcd34d" text-anchor="middle">Maple</text>
+  </g>
+
+  <g opacity="0.7">
+    <rect x="840" y="340" width="200" height="60" fill="rgba(79, 70, 229, 0.1)" stroke="rgba(79, 70, 229, 0.3)" stroke-width="1" rx="8"/>
+    <text x="940" y="375" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#b1a9ff" text-anchor="middle">Goldfinch</text>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="622" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <!-- Footer text -->
+  <text x="600" y="615" font-family="Inter, sans-serif" font-size="16" fill="#6e7681" text-anchor="middle">degen0x.com</text>
+</svg>

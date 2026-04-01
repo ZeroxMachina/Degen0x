@@ -202,6 +202,7 @@ export default function LidoV3stVaultsGuide() {
 
         {/* Table of Contents */}
         <nav
+          aria-label="Table of contents"
           style={{
             background: S.card,
             border: `1px solid ${S.border}`,
@@ -396,7 +397,7 @@ export default function LidoV3stVaultsGuide() {
             stVaults unlock a level of customization previously impossible with pooled staking:
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 12, marginBottom: 20 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 12, marginBottom: 20 }}>
             {[
               {
                 icon: '⚙️',
@@ -1105,11 +1106,8 @@ export default function LidoV3stVaultsGuide() {
                     fontSize: 13,
                     color: S.text,
                     cursor: 'pointer',
-                    outline: 'none',
                     borderRadius: 4,
                   }}
-                  onFocus={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = `0 0 0 2px ${S.blue || '#6366f1'}`; }}
-                  onBlur={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}
                 >
                   {faq.q}
                 </summary>
@@ -1118,8 +1116,7 @@ export default function LidoV3stVaultsGuide() {
                     fontSize: 13,
                     color: S.text2,
                     lineHeight: 1.6,
-                    marginTop: 10,
-                    margin: 0,
+                    margin: '10px 0 0 0',
                   }}
                 >
                   {faq.a}

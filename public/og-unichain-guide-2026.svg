@@ -1,37 +1,17 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#080d1c"/>
-      <stop offset="100%" stop-color="#0d1a2d"/>
+      <stop offset="100%" stop-color="#0f1629"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#4f46e5"/>
-      <stop offset="50%" stop-color="#0891b2"/>
-      <stop offset="100%" stop-color="#d97706"/>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007a"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
     </linearGradient>
-    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#58a6ff"/>
-      <stop offset="100%" stop-color="#79c0ff"/>
-    </linearGradient>
-    <linearGradient id="cardGrad1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="rgba(99,102,241,0.15)"/>
-      <stop offset="100%" stop-color="rgba(99,102,241,0.05)"/>
-    </linearGradient>
-    <linearGradient id="cardGrad2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="rgba(6,182,212,0.15)"/>
-      <stop offset="100%" stop-color="rgba(6,182,212,0.05)"/>
-    </linearGradient>
-    <linearGradient id="cardGrad3" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="rgba(34,197,94,0.15)"/>
-      <stop offset="100%" stop-color="rgba(34,197,94,0.05)"/>
-    </linearGradient>
-    <linearGradient id="chartLine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6366f1"/>
-      <stop offset="100%" stop-color="#06b6d4"/>
-    </linearGradient>
-    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    <linearGradient id="unichainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007a"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
     </linearGradient>
     <filter id="glow">
       <feGaussianBlur stdDeviation="20" result="blur"/>
@@ -42,99 +22,44 @@
   <!-- Background -->
   <rect width="1200" height="630" fill="url(#bg)"/>
 
-  <!-- Accent bar top -->
+  <!-- Top accent bar -->
   <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
 
-  <!-- Decorative circles -->
-  <circle cx="950" cy="120" r="180" fill="#4f46e5" opacity="0.06"/>
-  <circle cx="1050" cy="350" r="120" fill="#0891b2" opacity="0.05"/>
-  <circle cx="200" cy="500" r="100" fill="#d97706" opacity="0.04"/>
+  <!-- Decorative glow circles -->
+  <circle cx="1020" cy="140" r="150" fill="#ff007a" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="1080" cy="480" r="120" fill="#7c3aed" opacity="0.05" filter="url(#glow)"/>
+  <circle cx="100" cy="550" r="100" fill="#3b82f6" opacity="0.04" filter="url(#glow)"/>
 
   <!-- Logo area -->
-  <text x="60" y="60" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="0.5">degen0x</text>
+  <text x="60" y="60" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#818cf8" letter-spacing="0.05em">degen0x</text>
 
-  <!-- Category badge -->
-  <rect x="60" y="80" width="80" height="28" rx="14" fill="#3f51b5" opacity="0.9"/>
-  <text x="100" y="99" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="0.5">LAYER 2</text>
-
-  <rect x="150" y="80" width="120" height="28" rx="14" fill="#1e40af" opacity="0.9"/>
-  <text x="210" y="99" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="0.5">INTERMEDIATE</text>
+  <!-- Swap/Unicorn emoji -->
+  <text x="60" y="170" font-size="64">🦄</text>
 
   <!-- Title -->
-  <text x="60" y="170" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.5">Unichain Guide 2026</text>
-  <text x="60" y="225" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="600" fill="#e6edf3">Uniswap's DeFi-Optimized Layer 2</text>
+  <text x="60" y="260" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Unichain</text>
 
   <!-- Subtitle -->
-  <text x="60" y="270" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#8b949e">OP Stack · 1-Second Blocks · TEE MEV Protection · 95% Cheaper Gas</text>
+  <text x="60" y="320" font-family="Inter, system-ui, sans-serif" font-size="24" fill="#8b949e">Uniswap's Layer 2 chain guide 2026</text>
 
-  <!-- Stat cards -->
-  <!-- Card 1: Block Time -->
-  <rect x="60" y="310" width="240" height="110" rx="12" fill="url(#cardGrad1)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
-  <text x="80" y="345" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" letter-spacing="0.3">BLOCK TIME</text>
-  <text x="80" y="385" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#6366f1">~1 sec</text>
-  <text x="80" y="408" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">vs 12s on Ethereum</text>
+  <!-- Decorative icons -->
+  <text x="60" y="380" font-size="32">🔄 ⛓️ 💎</text>
 
-  <!-- Card 2: Gas Savings -->
-  <rect x="320" y="310" width="240" height="110" rx="12" fill="url(#cardGrad2)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
-  <text x="340" y="345" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" letter-spacing="0.3">GAS SAVINGS</text>
-  <text x="340" y="385" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#06b6d4">95%</text>
-  <text x="340" y="408" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">cheaper than L1</text>
+  <!-- Key features row -->
+  <rect x="60" y="420" width="180" height="64" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="80" y="445" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-transform="uppercase">DEX Native</text>
+  <text x="80" y="472" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#ff007a">Layer 2</text>
 
-  <!-- Card 3: Ecosystem -->
-  <rect x="580" y="310" width="240" height="110" rx="12" fill="url(#cardGrad3)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
-  <text x="600" y="345" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" letter-spacing="0.3">ECOSYSTEM</text>
-  <text x="600" y="385" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#22c55e">100+</text>
-  <text x="600" y="408" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">protocols deployed</text>
+  <rect x="260" y="420" width="180" height="64" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="280" y="445" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-transform="uppercase">Low Fees</text>
+  <text x="280" y="472" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#7c3aed">Fast Swaps</text>
 
-  <!-- Architecture diagram (right side) -->
-  <rect x="870" y="160" width="280" height="260" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-
-  <!-- Ethereum box -->
-  <rect x="920" y="180" width="180" height="36" rx="8" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1"/>
-  <text x="1010" y="203" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#a5b4fc" text-anchor="middle">Ethereum (Settlement)</text>
-
-  <!-- Arrow down -->
-  <line x1="1010" y1="216" x2="1010" y2="240" stroke="#30363d" stroke-width="2"/>
-  <polygon points="1004,236 1016,236 1010,246" fill="#30363d"/>
-
-  <!-- OP Stack box -->
-  <rect x="920" y="248" width="180" height="36" rx="8" fill="rgba(6,182,212,0.2)" stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
-  <text x="1010" y="271" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#67e8f9" text-anchor="middle">OP Stack (Framework)</text>
-
-  <!-- Arrow down -->
-  <line x1="1010" y1="284" x2="1010" y2="308" stroke="#30363d" stroke-width="2"/>
-  <polygon points="1004,304 1016,304 1010,314" fill="#30363d"/>
-
-  <!-- Unichain box -->
-  <rect x="900" y="316" width="220" height="44" rx="10" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.4)" stroke-width="1"/>
-  <text x="1010" y="342" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" fill="#fbbf24" text-anchor="middle">Unichain</text>
-
-  <!-- TEE + Flashbots label -->
-  <rect x="900" y="372" width="105" height="30" rx="6" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
-  <text x="952" y="392" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" text-anchor="middle">TEE/Flashbots</text>
-
-  <!-- Uniswap v4 label -->
-  <rect x="1015" y="372" width="105" height="30" rx="6" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
-  <text x="1068" y="392" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#fbbf24" text-anchor="middle">Uniswap v4</text>
-
-  <!-- Topic pills -->
-  <rect x="60" y="450" width="140" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <text x="130" y="470" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">MEV Protection</text>
-
-  <rect x="212" y="450" width="130" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <text x="277" y="470" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">DeFi-Native</text>
-
-  <rect x="354" y="450" width="140" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <text x="424" y="470" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">L2 Comparison</text>
-
-  <rect x="506" y="450" width="120" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <text x="566" y="470" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">Bridging</text>
+  <rect x="460" y="420" width="180" height="64" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="480" y="445" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-transform="uppercase">Optimism</text>
+  <text x="480" y="472" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#3b82f6">OP Stack</text>
 
   <!-- Bottom bar -->
   <rect x="0" y="590" width="1200" height="40" fill="rgba(0,0,0,0.3)"/>
-  <text x="60" y="616" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b949e">degen0x.com</text>
-  <text x="1140" y="616" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681" text-anchor="end">Updated March 2026</text>
-
-  <!-- Bottom accent bar -->
-  <rect x="0" y="626" width="1200" height="4" fill="url(#accent)"/>
+  <text x="60" y="616" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">degen0x.com/learn/unichain-guide-2026</text>
+  <text x="1140" y="616" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">Updated March 2026</text>
 </svg>

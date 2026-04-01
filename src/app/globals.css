@@ -348,6 +348,54 @@ a:focus-visible,
   border-bottom-color: rgba(99, 102, 241, 0.7);
 }
 
+/* ========== PROSE TABLE (dark theme) ========== */
+.prose-crypto table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.prose-crypto table thead tr {
+  background: rgba(99, 102, 241, 0.12) !important;
+}
+.prose-crypto table th {
+  color: var(--color-text);
+  font-weight: 700;
+  padding: 12px 16px;
+  text-align: left;
+  border: 1px solid #30363d !important;
+  background: transparent !important;
+}
+.prose-crypto table td {
+  color: var(--color-text-secondary);
+  padding: 10px 16px;
+  border: 1px solid #30363d !important;
+  background: transparent !important;
+}
+.prose-crypto table tbody tr {
+  background: transparent !important;
+  transition: background 0.2s ease;
+}
+.prose-crypto table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+.prose-crypto table td strong {
+  color: var(--color-text);
+}
+
+/* Table wrapper for horizontal scroll + keyboard accessibility */
+.prose-crypto .table-scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+}
+.prose-crypto .table-scroll-wrapper:focus {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
 /* ================================================================
    SPRINT 51 — MOBILE UX AUDIT (375px)
    Zero horizontal scroll. Touch targets ≥ 44px. Fluid type.
@@ -501,6 +549,11 @@ html, body {
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+}
+
+/* Anchor offset for fixed/sticky headers */
+[id] {
+  scroll-margin-top: 80px;
 }
 
 /* Prevent text selection on UI elements */

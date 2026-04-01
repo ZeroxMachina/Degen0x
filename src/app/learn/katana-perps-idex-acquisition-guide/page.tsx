@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 
@@ -45,7 +46,7 @@ const articleSchema = generateArticleSchema({
   datePublished: "2026-03-25T00:00:00Z",
   dateModified: "2026-03-25T00:00:00Z",
   author: "degen0x Team",
-  image: "https://degen0x.com/og-katana-perps.png",
+  image: "https://degen0x.com/og-katana-perps-idex-acquisition-guide.svg",
   wordCount: 2800,
 });
 
@@ -328,11 +329,29 @@ export default function KatanaPerpsGuidePage() {
           ))}
         </section>
 
+        {/* ── Related Articles ── */}
+        <section style={{ marginBottom: 48 }}>
+          <h2 style={{ fontSize: "1.3rem", fontWeight: 800, marginBottom: 16 }}>Related Articles & Tools</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: 14 }}>
+            {[
+              { title: "Perpetual DEX Guide 2026", desc: "Complete overview of on-chain perpetual futures trading platforms and how they work.", href: "/learn/perpetual-dex-guide-2026", color: S.blue },
+              { title: "Hyperliquid Ecosystem", desc: "Deep dive into the dominant perp DEX commanding 70%+ of decentralized derivatives OI.", href: "/ecosystem/hyperliquid", color: S.green },
+              { title: "Funding Rate Tracker", desc: "Track real-time funding rates across major perp DEXes and centralized exchanges.", href: "/tools/funding-rate-tracker", color: S.purple },
+            ].map((card) => (
+              <a key={card.title} href={card.href} style={{ background: "#161b22", border: `1px solid ${S.border}`, borderRadius: 12, padding: 18, textDecoration: "none", display: "block", transition: "border-color 0.2s" }}>
+                <div style={{ fontWeight: 700, color: card.color, marginBottom: 6, fontSize: 14 }}>{card.title}</div>
+                <div style={{ fontSize: 13, color: S.text2, lineHeight: 1.6 }}>{card.desc}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+
         {/* ── Disclaimer ── */}
         <div style={{ background: `${S.yellow}08`, border: `1px solid ${S.yellow}25`, borderRadius: 12, padding: 20, fontSize: 13, color: S.text2, lineHeight: 1.7 }}>
           ⚠️ This guide is for informational purposes only. It is not financial advice. Perpetual futures trading involves significant risk of loss. Always do your own research before making investment decisions. Data sourced from public announcements and on-chain metrics as of March 2026.
         </div>
       </article>
+      <BackToTop />
     </main>
   );
 }

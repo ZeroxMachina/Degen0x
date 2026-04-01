@@ -3,45 +3,60 @@
   "block": "design",
   "report": {
     "status": "completed",
-    "summary": "Audited 2 new pages from build-v2 cycle (Solana Liquid Staking Guide, Corporate Crypto Treasury Guide), fixed 5 UX issues including missing breadcrumb, OG metadata, input accessibility, and created 2 OG images.",
+    "summary": "UX audited 2 new learn guides (DeFi Insurance, DVT), added hover/focus interaction patterns to both pages, added mobile scroll hint, and created 6 missing OG images for recent pages lacking social sharing cards.",
     "sections": [
       {
         "title": "UX Improvements",
         "items": [
-          "Corporate Treasury Guide: Added missing 'Home' breadcrumb link (was only Learn > Guide, now Home > Learn > Guide)",
-          "Corporate Treasury Guide: Added OG image references (images array) to both openGraph and twitter metadata for proper social sharing previews",
-          "SolanaLSTCalculator: Added min/max/step HTML attributes to all 3 inputs (SOL Amount: 0-10M, Time: 1-60 months, Price: 0-100K) for mobile number picker UX",
-          "SolanaLSTCalculator: Added inputMode='decimal'/'numeric' to inputs for proper mobile keyboard display",
-          "SolanaLSTCalculator: Added aria-label attributes to all inputs for screen reader accessibility",
-          "SolanaLSTCalculator: Increased input minHeight to 44px to meet mobile touch target requirements"
+          "Both pages: Added glass-card hover effects (translateY(-3px) + indigo border glow + box-shadow) to related article cards",
+          "Both pages: Added focus-visible outline styles (2px solid #6366f1) for keyboard navigation on all TOC links and related article cards",
+          "Both pages: Added prefers-reduced-motion media query to disable hover animations for accessibility compliance",
+          "DeFi Insurance: Added mobile scroll hint text above protocol comparison table",
+          "Verified both pages have proper aria-labels on scrollable table regions, tabIndex for keyboard access",
+          "Confirmed breadcrumb navigation, Table of Contents, FAQ schema, and disclaimer sections all present on both pages",
+          "Verified responsive typography using clamp() on all headings (28px-48px range)",
+          "Noted minor typography inconsistency: DVT page uses 16px body text vs Insurance page 15px — flagged for future normalization"
         ]
       },
       {
         "title": "Visuals Created",
         "items": [
-          "OG image: solana-liquid-staking-guide-2026 (1200x630 SVG) — Solana purple/green gradient, LST APY comparison bars (JitoSOL/mSOL/Sanctum INF/JupSOL/STKESOL), stats cards ($8B+ TVL, 60.5M SOL, 8.5% Best APY, 5+ LSTs)",
-          "OG image: corporate-crypto-treasury-guide-2026 (1200x630 SVG) — Corporate treasury holdings chart (Strategy Inc 761K BTC, Marathon, Riot, BitMine 4.66M ETH), stats cards ($80.9B market, 65.2% dominance, $12.9B ETH market, Consolidation trend)"
+          "OG image: web3-gaming-gamefi-guide-2026 (1200x630 SVG, purple-cyan theme, game controller icon)",
+          "OG image: tokenized-real-estate-guide-2026 (1200x630 SVG, amber-green theme, building icon)",
+          "OG image: crypto-portfolio-allocation-guide-2026 (1200x630 SVG, indigo-teal theme, pie chart icon)",
+          "OG image: crypto-on-ramps-off-ramps-guide-2026 (1200x630 SVG, green-blue theme, up/down arrows icon)",
+          "OG image: world-chain-proof-of-personhood-guide-2026 (1200x630 SVG, cyan-purple theme, eye/iris icon)",
+          "OG image: onchain-privacy-infrastructure-guide-2026 (1200x630 SVG, indigo-purple theme, lock/shield icon)"
         ]
       },
       {
-        "title": "UX Audit Findings (Build-v2 Pages)",
+        "title": "Pages Audited",
         "items": [
-          "Solana LST Guide: Excellent structure — TOC, semantic sections, interactive calculator, comparison table with overflowX scroll, FAQ, related links, disclaimer. Mobile layout uses maxWidth 900px with proper padding. Category badges flex-wrap correctly.",
-          "Solana LST Guide: Comparison table has minWidth 900px which appropriately triggers horizontal scroll on mobile rather than breaking layout.",
-          "Corporate Treasury Guide: Well-structured article with semantic <article> tag, proper heading hierarchy, glass-morphism cards, FAQ section. Fixed breadcrumb and OG metadata issues.",
-          "SolanaLSTCalculator: Clean interactive component. Grid inputs responsive via minmax(160px, 1fr). Results table has overflowX auto. Summary highlight correctly identifies best-performing LST. Added accessibility improvements."
+          "/learn/defi-insurance-protocols-guide-2026 — Good structure: breadcrumbs, TOC, 8 sections, protocol comparison table with cards, step-by-step flow, FAQ, related articles, disclaimer. Fixes applied: hover effects, focus styles, scroll hint.",
+          "/learn/distributed-validator-technology-dvt-guide-2026 — Good structure: breadcrumbs, TOC, 8 sections, SSV vs Obol comparison table, key takeaways box, FAQ, related articles, disclaimer. Fixes applied: hover effects, focus styles."
+        ]
+      },
+      {
+        "title": "Deferred Items",
+        "items": [
+          "Body text font-size inconsistency (15px vs 16px) between learn guide pages — recommend normalizing to 15px site-wide",
+          "Consider extracting shared style block into a reusable LearnArticle wrapper component to avoid duplication",
+          "Related article links on insurance page reference potentially non-existent pages (stablecoin-depeg-risks, defi-risk-scanner) — verify these routes exist"
         ]
       }
     ],
-    "files_modified": [
-      "src/components/SolanaLSTCalculator.tsx",
-      "src/app/learn/corporate-crypto-treasury-guide-2026/page.tsx"
-    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
     "files_created": [
-      "public/og-solana-liquid-staking-guide-2026.svg",
-      "public/og-corporate-crypto-treasury-guide-2026.svg",
-      "reports/2026-03-25-design-v2.json"
+      "public/og-web3-gaming-gamefi-guide-2026.svg",
+      "public/og-tokenized-real-estate-guide-2026.svg",
+      "public/og-crypto-portfolio-allocation-guide-2026.svg",
+      "public/og-crypto-on-ramps-off-ramps-guide-2026.svg",
+      "public/og-world-chain-proof-of-personhood-guide-2026.svg",
+      "public/og-onchain-privacy-infrastructure-guide-2026.svg"
     ],
-    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+    "files_modified": [
+      "src/app/learn/defi-insurance-protocols-guide-2026/page.tsx",
+      "src/app/learn/distributed-validator-technology-dvt-guide-2026/page.tsx"
+    ]
   }
 }

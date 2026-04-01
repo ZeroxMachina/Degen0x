@@ -14569,4 +14569,14 @@ export const pages: Record<string, PageData> = {
 import { newPages_20260323 } from './learn-20260323';
 Object.assign(pages, newPages_20260323);
 
+// ---- NEW PAGES: 2026-03-27 build cycle ----
+
+import { newPages_20260327 } from './learn-20260327';
+Object.assign(pages, newPages_20260327);
+
+// ---- NEW PAGES: 2026-04-01 build cycle ----
+
+import { newPages_20260401 } from './learn-20260401';
+Object.assign(pages, newPages_20260401);
+
 export const slugList = Object.keys(pages);

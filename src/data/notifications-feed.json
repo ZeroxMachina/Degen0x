@@ -1,0 +1,34 @@
+[
+  {
+    "id": "feed-2026-04-01-003",
+    "type": "news",
+    "title": "New: Know Your Agent (KYA) Guide",
+    "message": "Understand AI agents in crypto — what KYA means, why it matters, and how to evaluate agent-powered protocols in 2026.",
+    "actionUrl": "/learn/know-your-agent-kya-guide-2026",
+    "date": "2026-04-01"
+  },
+  {
+    "id": "feed-2026-04-01-004",
+    "type": "news",
+    "title": "New: Sui Private Transactions & SEAL Guide",
+    "message": "Explore how Sui's SEAL framework enables private transactions and confidential data access on-chain.",
+    "actionUrl": "/learn/sui-private-transactions-seal-framework-guide-2026",
+    "date": "2026-04-01"
+  },
+  {
+    "id": "feed-2026-04-01-001",
+    "type": "news",
+    "title": "New: Restaking Comparison Guide 2026",
+    "message": "Compare EigenLayer, Symbiotic, and Karak — the leading restaking protocols reshaping Ethereum security.",
+    "actionUrl": "/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026",
+    "date": "2026-04-01"
+  },
+  {
+    "id": "feed-2026-04-01-002",
+    "type": "news",
+    "title": "New: Tokenized Treasury Bills Guide",
+    "message": "Learn how tokenized T-bills bring US government yields on-chain and which platforms offer them in 2026.",
+    "actionUrl": "/learn/tokenized-treasury-bills-guide-2026",
+    "date": "2026-04-01"
+  }
+]

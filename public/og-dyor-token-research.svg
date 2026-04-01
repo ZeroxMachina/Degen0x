@@ -1,0 +1,73 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1629;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+
+  <!-- Accent Bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)" />
+
+  <!-- Decorative circles -->
+  <circle cx="200" cy="150" r="70" fill="#4f46e5" opacity="0.07" />
+  <circle cx="1000" cy="480" r="100" fill="#0891b2" opacity="0.05" />
+  <circle cx="300" cy="500" r="50" fill="#d97706" opacity="0.06" />
+
+  <!-- Magnifying glass icon -->
+  <g opacity="0.5">
+    <circle cx="850" cy="280" r="45" fill="none" stroke="#4f46e5" stroke-width="3"/>
+    <line x1="888" y1="318" x2="920" y2="350" stroke="#4f46e5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Checklist items -->
+  <g opacity="0.6">
+    <!-- Checkbox 1 -->
+    <rect x="120" y="200" width="24" height="24" rx="4" fill="none" stroke="#0891b2" stroke-width="2"/>
+    <path d="M 130 210 L 135 216 L 143 205" stroke="#0891b2" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Checkbox 2 -->
+    <rect x="120" y="260" width="24" height="24" rx="4" fill="none" stroke="#0891b2" stroke-width="2"/>
+    <path d="M 130 270 L 135 276 L 143 265" stroke="#0891b2" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Checkbox 3 -->
+    <rect x="120" y="320" width="24" height="24" rx="4" fill="none" stroke="#0891b2" stroke-width="2"/>
+    <path d="M 130 330 L 135 336 L 143 325" stroke="#0891b2" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Warning symbols -->
+  <g opacity="0.5">
+    <!-- Warning triangle 1 -->
+    <path d="M 950 200 L 980 260 L 920 260 Z" fill="none" stroke="#d97706" stroke-width="2"/>
+    <text x="950" y="252" font-size="24" fill="#d97706" text-anchor="middle" font-weight="bold">!</text>
+
+    <!-- Warning triangle 2 -->
+    <path d="M 1050 280 L 1080 340 L 1020 340 Z" fill="none" stroke="#ef4444" stroke-width="2"/>
+    <text x="1050" y="332" font-size="20" fill="#ef4444" text-anchor="middle" font-weight="bold">!</text>
+  </g>
+
+  <!-- Category Badge -->
+  <rect x="60" y="480" width="130" height="32" rx="16" fill="#0891b2" opacity="0.2" stroke="#0891b2" stroke-width="1.5"/>
+  <text x="125" y="502" font-size="13" fill="#0891b2" text-anchor="middle" font-family="Inter" font-weight="600">EDUCATION</text>
+
+  <!-- Main Title -->
+  <text x="70" y="560" font-size="48" font-weight="bold" fill="url(#titleGradient)" font-family="Inter">DYOR: How to Research Any Token</text>
+
+  <!-- Subtitle -->
+  <text x="70" y="600" font-size="18" fill="#8b949e" font-family="Inter">10-Step Token Research Framework</text>
+
+  <!-- degen0x branding -->
+  <text x="1100" y="600" font-size="14" fill="#8b949e" text-anchor="end" font-family="Inter" font-weight="600">degen0x</text>
+</svg>

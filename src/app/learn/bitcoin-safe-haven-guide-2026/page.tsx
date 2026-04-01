@@ -7,6 +7,7 @@ import {
 } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: "Bitcoin Safe Haven 2026: Is BTC a Hedge Against Geopolitical Risk?",
@@ -746,6 +747,8 @@ export default function BitcoinSafeHavenGuidePage() {
           ))}
         </div>
       </div>
+
+      <BackToTop />
     </article>
   );
 }

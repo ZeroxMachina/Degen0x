@@ -1,0 +1,74 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1425"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#3fb950"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e6edf3"/>
+      <stop offset="100%" stop-color="#c9d1d9"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3fb950" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="4" fill="url(#accent)"/>
+  <circle cx="950" cy="250" r="200" fill="url(#glowGrad)" opacity="0.5"/>
+  <circle cx="150" cy="500" r="120" fill="#6366f1" opacity="0.04"/>
+  <g transform="translate(880, 140)" opacity="0.15" stroke="#3fb950" stroke-width="2" fill="none">
+    <path d="M60 0 L120 30 L120 80 Q120 140 60 170 Q0 140 0 80 L0 30 Z"/>
+    <path d="M60 20 L100 42 L100 78 Q100 124 60 148 Q20 124 20 78 L20 42 Z"/>
+    <path d="M45 85 L58 98 L80 65" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(1020, 80)" opacity="0.08" stroke="#06b6d4" stroke-width="1.5" fill="none">
+    <path d="M30 0 L60 15 L60 40 Q60 70 30 85 Q0 70 0 40 L0 15 Z"/>
+    <path d="M22 42 L29 49 L40 33" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(850, 350)" opacity="0.1" stroke="#6366f1" stroke-width="1.5" fill="none">
+    <path d="M25 0 L50 12 L50 35 Q50 58 25 70 Q0 58 0 35 L0 12 Z"/>
+  </g>
+  <g transform="translate(1060, 280)" opacity="0.1" stroke="#d29922" stroke-width="1.5" fill="none">
+    <rect x="5" y="18" width="30" height="22" rx="3"/>
+    <path d="M12 18 V12 Q12 2 20 2 Q28 2 28 12 V18"/>
+  </g>
+  <rect x="60" y="80" width="80" height="28" rx="14" fill="#6366f1" opacity="0.9"/>
+  <text x="100" y="99" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">DeFi</text>
+  <rect x="150" y="80" width="100" height="28" rx="14" fill="#3fb950" opacity="0.9"/>
+  <text x="200" y="99" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#0d1117" text-anchor="middle">Insurance</text>
+  <rect x="260" y="80" width="120" height="28" rx="14" fill="#06b6d4" opacity="0.9"/>
+  <text x="320" y="99" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#0d1117" text-anchor="middle">Intermediate</text>
+  <text x="60" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="46" font-weight="800" fill="url(#titleGrad)">DeFi Insurance Protocols</text>
+  <text x="60" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="46" font-weight="800" fill="url(#titleGrad)">Guide 2026</text>
+  <text x="60" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#8b949e">Nexus Mutual · InsurAce · Unslashed · Neptune Mutual · Etherisc</text>
+  <g transform="translate(60, 330)">
+    <rect width="180" height="70" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="20" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e">DeFi TVL</text>
+    <text x="20" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#3fb950">$1T+</text>
+  </g>
+  <g transform="translate(260, 330)">
+    <rect width="180" height="70" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="20" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e">Insured</text>
+    <text x="20" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f85149">&lt;2%</text>
+  </g>
+  <g transform="translate(460, 330)">
+    <rect width="180" height="70" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="20" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e">Claims Paid</text>
+    <text x="20" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#58a6ff">$18M+</text>
+  </g>
+  <text x="60" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#8b949e">Coverage Types · Claims Process · Protocol Comparison · Real Claim Examples</text>
+  <rect y="570" width="1200" height="60" fill="#0d1117" opacity="0.8"/>
+  <text x="60" y="607" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#6366f1">degen0x</text>
+  <text x="155" y="607" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#8b949e">· Learn · 14 min read · March 2026</text>
+  <rect y="626" width="1200" height="4" fill="url(#accent)"/>
+</svg>

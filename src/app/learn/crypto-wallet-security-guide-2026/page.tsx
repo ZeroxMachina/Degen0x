@@ -131,6 +131,45 @@ export default function CryptoWalletSecurityGuidePage() {
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", scrollBehavior: "smooth" }}>
       <StructuredData data={structuredData} />
+      <style>{`
+        .ws-toc-link {
+          display: block;
+          color: ${S.primary};
+          font-size: 13px;
+          text-decoration: none;
+          padding: 4px 0;
+          line-height: 1.6;
+          transition: color 0.2s ease, padding-left 0.2s ease;
+        }
+        .ws-toc-link:hover, .ws-toc-link:focus {
+          color: #818cf8;
+          padding-left: 6px;
+        }
+        .ws-toc-link:focus-visible {
+          outline: 2px solid ${S.primary};
+          outline-offset: 2px;
+          border-radius: 4px;
+        }
+        .ws-table-wrap {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          border-radius: 12px;
+          border: 1px solid ${S.border};
+        }
+        .ws-table-wrap:focus {
+          outline: 2px solid ${S.primary};
+          outline-offset: 2px;
+        }
+        .ws-related-card:hover {
+          border-color: ${S.primary} !important;
+          transform: translateY(-2px);
+        }
+        .ws-related-card:focus-visible {
+          outline: 2px solid ${S.primary};
+          outline-offset: 2px;
+          border-radius: 12px;
+        }
+      `}</style>
 
       {/* Breadcrumb */}
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
@@ -173,7 +212,7 @@ export default function CryptoWalletSecurityGuidePage() {
           <WalletSecurityScoreCalculator />
 
           {/* Table of Contents */}
-          <div style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 20 }}>
+          <nav aria-label="Table of Contents" style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 20 }}>
             <div style={{ fontSize: 13, fontWeight: 700, color: S.text, marginBottom: 12 }}>📋 Table of Contents</div>
             {[
               ["#why-wallet-security", "Why Wallet Security Matters in 2026"],
@@ -188,10 +227,10 @@ export default function CryptoWalletSecurityGuidePage() {
               ["#faq", "FAQ"],
             ].map(([href, label]) => (
               <div key={href}>
-                <a href={href} style={{ display: "block", color: S.primary, fontSize: 13, textDecoration: "none", padding: "4px 0", lineHeight: 1.6 }}>→ {label}</a>
+                <a href={href} className="ws-toc-link">→ {label}</a>
               </div>
             ))}
-          </div>
+          </nav>
         </header>
 
         {/* Section 1: Why Wallet Security Matters */}
@@ -315,14 +354,14 @@ export default function CryptoWalletSecurityGuidePage() {
             These tools are the foundation of modern wallet security. Most are free and take minutes to set up.
           </p>
 
-          <div style={{ overflowX: "auto", marginBottom: 24 }}>
+          <div className="ws-table-wrap" role="region" aria-label="Security tools comparison" tabIndex={0} style={{ marginBottom: 24 }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, color: S.text }}>
               <thead>
                 <tr style={{ borderBottom: `2px solid ${S.border}` }}>
-                  <th style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Tool</th>
-                  <th style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Category</th>
-                  <th style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Key Features</th>
-                  <th style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Cost</th>
+                  <th scope="col" style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Tool</th>
+                  <th scope="col" style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Category</th>
+                  <th scope="col" style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Key Features</th>
+                  <th scope="col" style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Cost</th>
                 </tr>
               </thead>
               <tbody>
@@ -530,23 +569,24 @@ export default function CryptoWalletSecurityGuidePage() {
         </section>
 
         {/* Related Articles */}
-        <section style={{ marginBottom: 48 }}>
+        <nav aria-label="Related security resources" style={{ marginBottom: 48 }}>
           <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20 }}>Related Security Resources</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 12 }}>
             {[
-              { title: "DeFi Safety Guide 2026", href: "/learn/defi-safety-guide-2026" },
-              { title: "Smart Contract Security Audit", href: "/learn/smart-contract-security-guide" },
-              { title: "Crypto Custody Guide 2026", href: "/learn/crypto-custody-guide-2026" },
-              { title: "OnChain Identity & Privacy", href: "/learn/onchain-identity-guide" },
-              { title: "Hardware Wallet Comparison", href: "/wallets" },
-              { title: "Wallet Security Tools", href: "/tools/wallet-security-audit" },
+              { title: "DeFi Safety Guide 2026", href: "/learn/defi-safety-guide-2026", cat: "Security" },
+              { title: "Smart Contract Security Audit", href: "/learn/smart-contract-security-guide", cat: "Security" },
+              { title: "Crypto Custody Guide 2026", href: "/learn/crypto-custody-guide-2026", cat: "Custody" },
+              { title: "OnChain Identity & Privacy", href: "/learn/onchain-identity-guide", cat: "Privacy" },
+              { title: "Hardware Wallet Comparison", href: "/wallets", cat: "Wallets" },
+              { title: "Wallet Security Tools", href: "/tools/wallet-security-audit", cat: "Tools" },
             ].map((article, i) => (
-              <Link key={i} href={article.href} style={{ display: "block", padding: 16, background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, color: S.primary, fontSize: 13, fontWeight: 700, textDecoration: "none", lineHeight: 1.6 }}>
-                → {article.title}
+              <Link key={i} href={article.href} className="ws-related-card" style={{ display: "block", padding: 16, background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, textDecoration: "none", lineHeight: 1.6, transition: "border-color 0.2s ease, transform 0.2s ease" }}>
+                <span style={{ fontSize: 11, color: S.primary, fontWeight: 600 }}>{article.cat}</span>
+                <span style={{ display: "block", color: S.text, fontSize: 13, fontWeight: 700, marginTop: 4 }}>→ {article.title}</span>
               </Link>
             ))}
           </div>
-        </section>
+        </nav>
 
         {/* CTA */}
         <div style={{ background: `linear-gradient(135deg, ${S.primary}15, ${S.primary}05)`, border: `1px solid ${S.primary}30`, borderRadius: 14, padding: 28, textAlign: "center" }}>

@@ -1295,7 +1295,6 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
               fontSize: "1.6rem",
               fontWeight: 800,
               marginBottom: 24,
-              paddingTop: 8,
               borderTop: `2px solid ${S.border}`,
               paddingTop: 32,
             }}
@@ -1322,11 +1321,8 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
                     color: S.text,
                     cursor: "pointer",
                     userSelect: "none",
-                    outline: "none",
                     borderRadius: 4,
                   }}
-                  onFocus={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = `0 0 0 2px ${S.primary}`; }}
-                  onBlur={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = "none"; }}
                 >
                   {faq.question}
                 </summary>
@@ -1334,7 +1330,6 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
                   style={{
                     fontSize: 13,
                     color: S.text2,
-                    marginTop: 12,
                     lineHeight: 1.7,
                     margin: "12px 0 0 0",
                   }}
@@ -1353,7 +1348,6 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
               fontSize: "1.6rem",
               fontWeight: 800,
               marginBottom: 24,
-              paddingTop: 8,
               borderTop: `2px solid ${S.border}`,
               paddingTop: 32,
             }}
@@ -1404,24 +1398,7 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
                   padding: 16,
                   textDecoration: "none",
                   color: S.text,
-                  transition: "all 0.3s ease",
                   display: "block",
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = S.cyan;
-                  (e.currentTarget as HTMLElement).style.background = `${S.cyan}05`;
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = S.border;
-                  (e.currentTarget as HTMLElement).style.background = S.surface;
-                }}
-                onFocus={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = S.cyan;
-                  (e.currentTarget as HTMLElement).style.boxShadow = `0 0 0 2px ${S.cyan}40`;
-                }}
-                onBlur={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = S.border;
-                  (e.currentTarget as HTMLElement).style.boxShadow = 'none';
                 }}
               >
                 <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 4 }}>
@@ -1462,9 +1439,9 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
             of March 2026 and may become outdated.
           </p>
         </section>
-      </article>
 
-      <BackToTop />
+        <BackToTop />
+      </article>
     </main>
   );
 }

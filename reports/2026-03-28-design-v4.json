@@ -1,0 +1,68 @@
+{
+  "date": "2026-03-28",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audited 6 new learn pages from today's build cycle, fixed critical Next.js metadata/client-component conflicts, corrected structured data schema params, created 6 branded OG SVG images, and updated all OG image references.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Fixed critical 'use client' + export metadata conflict on crypto-leverage-trading-guide-2026 and dyor-token-research-guide-2026 — these would have caused Next.js build failures since client components cannot export metadata",
+          "Fixed incorrect generateArticleSchema parameter names: leverage-trading used 'headline' instead of 'title', DYOR used 'published'/'modified' instead of 'datePublished'/'dateModified' — structured data would have been malformed",
+          "Fixed StructuredData component prop name from 'schemas'/'schema' to 'data' on leverage-trading and DYOR pages — JSON-LD would not have rendered",
+          "Updated all OG image references from .png to .svg to match actual created assets",
+          "Verified combineSchemas usage consistency across all 6 pages — LST comparison, RWA, TON, and Sui pages were correctly implemented",
+          "Identified styling inconsistency: leverage-trading and DYOR pages use inline styles while TON, Sui, LST, RWA use Tailwind + CSS variables — flagged for future normalization sprint"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: og-leverage-trading.svg (1200x630) — Trading category, 2x/5x/10x multiplier visual, margin & liquidation subtitle",
+          "OG image: og-dyor-token-research.svg (1200x630) — Education category, magnifying glass + checklist motif, 10-step framework subtitle",
+          "OG image: og-lst-comparison-2026.svg (1200x630) — DeFi/Liquid Staking category, three-column protocol comparison, Solana purple theme",
+          "OG image: og-rwa-defi-yield-comparison-2026.svg (1200x630) — Yield/Comparison category, side-by-side RWA (4-8%) vs DeFi (5-30%+) bars",
+          "OG image: og-ton-defi-guide.svg (1200x630) — DeFi category, TON blue (#0088CC), Telegram integration visuals, protocol names",
+          "OG image: og-sui-defi-guide.svg (1200x630) — DeFi category, Sui blue (#4DA2FF), $2.6B TVL stat, Move language reference"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "/learn/crypto-leverage-trading-guide-2026 — 3 fixes applied (use client removal, schema params, StructuredData prop)",
+          "/learn/dyor-token-research-guide-2026 — 3 fixes applied (use client removal, schema params, StructuredData prop)",
+          "/learn/solana-lst-comparison-marinade-jito-sanctum-2026 — verified correct, no changes needed",
+          "/learn/rwa-yield-vs-defi-yield-comparison-2026 — verified correct, no changes needed",
+          "/learn/ton-defi-ecosystem-guide-2026 — verified correct, Tailwind + CSS variables pattern",
+          "/learn/sui-defi-ecosystem-guide-2026 — verified correct, Tailwind + CSS variables pattern"
+        ]
+      },
+      {
+        "title": "Technical Debt Noted",
+        "items": [
+          "2 of 6 pages (leverage-trading, DYOR) use inline styles while 4 use Tailwind classes — recommend normalizing to Tailwind in next design cycle",
+          "Leverage-trading h1 uses fixed fontSize: 36 without responsive scaling — should use clamp() or Tailwind responsive classes",
+          "No BackToTop component rendered in TON and Sui pages despite being imported"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "pages_affected": [
+      "/learn/crypto-leverage-trading-guide-2026",
+      "/learn/dyor-token-research-guide-2026",
+      "/learn/solana-lst-comparison-marinade-jito-sanctum-2026",
+      "/learn/rwa-yield-vs-defi-yield-comparison-2026",
+      "/learn/ton-defi-ecosystem-guide-2026",
+      "/learn/sui-defi-ecosystem-guide-2026"
+    ],
+    "og_images_created": [
+      "public/og-leverage-trading.svg",
+      "public/og-dyor-token-research.svg",
+      "public/og-lst-comparison-2026.svg",
+      "public/og-rwa-defi-yield-comparison-2026.svg",
+      "public/og-ton-defi-guide.svg",
+      "public/og-sui-defi-guide.svg"
+    ]
+  }
+}

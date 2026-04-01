@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1629;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glassBlur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+
+  <!-- Accent Bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)" />
+
+  <!-- Decorative circles -->
+  <circle cx="150" cy="100" r="80" fill="#4f46e5" opacity="0.08" />
+  <circle cx="1050" cy="500" r="120" fill="#0891b2" opacity="0.06" />
+  <circle cx="900" cy="150" r="60" fill="#d97706" opacity="0.05" />
+
+  <!-- Leverage icons (2x, 5x, 10x) -->
+  <g opacity="0.4">
+    <!-- 2x multiplier -->
+    <rect x="100" y="220" width="120" height="120" rx="12" fill="none" stroke="#4f46e5" stroke-width="2" opacity="0.6"/>
+    <text x="160" y="285" font-size="56" font-weight="bold" fill="#4f46e5" text-anchor="middle" font-family="Inter">2x</text>
+
+    <!-- 5x multiplier -->
+    <rect x="300" y="200" width="140" height="140" rx="12" fill="none" stroke="#0891b2" stroke-width="2" opacity="0.8"/>
+    <text x="370" y="280" font-size="64" font-weight="bold" fill="#0891b2" text-anchor="middle" font-family="Inter">5x</text>
+
+    <!-- 10x multiplier -->
+    <rect x="520" y="220" width="120" height="120" rx="12" fill="none" stroke="#d97706" stroke-width="2" opacity="0.6"/>
+    <text x="580" y="285" font-size="56" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Inter">10x</text>
+  </g>
+
+  <!-- Bull and Bear arrows -->
+  <g opacity="0.5">
+    <!-- Bull arrow up -->
+    <path d="M 750 350 L 750 250 M 735 265 L 750 250 L 765 265" stroke="#0891b2" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Bear arrow down -->
+    <path d="M 820 250 L 820 350 M 835 335 L 820 350 L 805 335" stroke="#ef4444" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Category Badge -->
+  <rect x="60" y="480" width="120" height="32" rx="16" fill="#4f46e5" opacity="0.2" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="120" y="502" font-size="13" fill="#4f46e5" text-anchor="middle" font-family="Inter" font-weight="600">TRADING</text>
+
+  <!-- Main Title -->
+  <text x="70" y="560" font-size="52" font-weight="bold" fill="url(#titleGradient)" font-family="Inter">Crypto Leverage Trading Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="70" y="600" font-size="18" fill="#8b949e" font-family="Inter">Margin, Liquidation & Risk Management</text>
+
+  <!-- degen0x branding -->
+  <text x="1100" y="600" font-size="14" fill="#8b949e" text-anchor="end" font-family="Inter" font-weight="600">degen0x</text>
+</svg>

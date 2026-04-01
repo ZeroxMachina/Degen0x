@@ -12,44 +12,46 @@ interface Notification {
   actionUrl?: string;
 }
 
-const INITIAL_NOTIFICATIONS: Notification[] = [
+/** Shape of each item in notifications-feed.json / the API response */
+interface FeedItem {
+  id: string;
+  type: "price" | "news" | "achievement" | "system";
+  title: string;
+  message: string;
+  actionUrl?: string;
+  date: string; // YYYY-MM-DD
+}
+
+/** Fallback shown only if the API fetch fails */
+const FALLBACK_NOTIFICATIONS: Notification[] = [
   {
-    id: "n1",
+    id: "fallback-1",
     type: "system",
-    title: "New: Prediction Markets Guide",
-    message: "Learn how to trade on real-world event outcomes with our new comprehensive guide.",
+    title: "Welcome to degen0x",
+    message: "92+ free crypto tools, guides, and reviews. No signup required.",
     timestamp: Date.now() - 1000 * 60 * 60 * 2,
     read: false,
-    actionUrl: "/learn/prediction-markets-guide",
-  },
-  {
-    id: "n2",
-    type: "system",
-    title: "Portfolio Rebalancer launched",
-    message: "Detect portfolio drift and generate trade plans automatically.",
-    timestamp: Date.now() - 1000 * 60 * 60 * 12,
-    read: false,
-    actionUrl: "/tools/portfolio-rebalancer",
-  },
-  {
-    id: "n3",
-    type: "news",
-    title: "Exchange reviews updated",
-    message: "Our 2026 exchange rankings have been refreshed with the latest fee and security data.",
-    timestamp: Date.now() - 1000 * 60 * 60 * 24,
-    read: true,
-    actionUrl: "/exchanges/best",
-  },
-  {
-    id: "n4",
-    type: "system",
-    title: "92+ tools, all free",
-    message: "From DCA calculators to funding rate trackers. No signup required.",
-    timestamp: Date.now() - 1000 * 60 * 60 * 48,
-    read: true,
     actionUrl: "/tools",
   },
 ];
+
+/** Convert a feed item's date string into a ms-since-epoch offset from now */
+function feedItemToNotification(item: FeedItem, index: number): Notification {
+  const dayMs = 1000 * 60 * 60 * 24;
+  const itemDate = new Date(item.date + "T12:00:00Z").getTime();
+  const age = Date.now() - itemDate;
+  // Spread items a few hours apart so they don't all say the same "time ago"
+  const offset = age > 0 ? age + index * 1000 * 60 * 60 * 2 : index * 1000 * 60 * 60 * 2;
+  return {
+    id: item.id,
+    type: item.type,
+    title: item.title,
+    message: item.message,
+    timestamp: Date.now() - offset,
+    read: index >= 2, // first two items show as unread
+    actionUrl: item.actionUrl,
+  };
+}
 
 const TYPE_ICONS: Record<string, string> = {
   price: "📈",
@@ -77,9 +79,25 @@ function timeAgo(ts: number): string {
 
 export default function NotificationCenter() {
   const [open, setOpen] = useState(false);
-  const [notifications, setNotifications] = useState<Notification[]>(INITIAL_NOTIFICATIONS);
+  const [notifications, setNotifications] = useState<Notification[]>(FALLBACK_NOTIFICATIONS);
   const [filter, setFilter] = useState<string>("all");
   const panelRef = useRef<HTMLDivElement>(null);
+
+  // Fetch live notification feed on mount
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/api/notifications/feed")
+      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .then((items: FeedItem[]) => {
+        if (!cancelled && items.length > 0) {
+          setNotifications(items.map(feedItemToNotification));
+        }
+      })
+      .catch(() => {
+        // Silently keep fallback notifications
+      });
+    return () => { cancelled = true; };
+  }, []);
 
   const unreadCount = notifications.filter((n) => !n.read).length;
 
@@ -91,8 +109,17 @@ export default function NotificationCenter() {
         setOpen(false);
       }
     }
-    if (open) document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === 'Escape') setOpen(false);
+    }
+    if (open) {
+      document.addEventListener("mousedown", handleClick);
+      document.addEventListener("keydown", handleKeyDown);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
   }, [open]);
 
   const markAllRead = () => {
@@ -113,7 +140,7 @@ export default function NotificationCenter() {
       {/* Bell Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="relative p-2 rounded-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] hover:border-[var(--color-primary)] transition-colors"
+        className="relative p-2 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] hover:border-[var(--color-primary)] transition-colors"
         aria-label="Notifications"
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--color-text)]">
@@ -121,7 +148,7 @@ export default function NotificationCenter() {
           <path d="M13.73 21a2 2 0 0 1-3.46 0" />
         </svg>
         {unreadCount > 0 && (
-          <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs font-bold rounded-full flex items-center justify-center">
+          <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs font-bold rounded-full flex items-center justify-center" aria-label={`${unreadCount} unread notifications`}>
             {unreadCount}
           </span>
         )}

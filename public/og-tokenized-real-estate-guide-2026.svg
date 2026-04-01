@@ -1,0 +1,61 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1425"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e6edf3"/>
+      <stop offset="100%" stop-color="#c9d1d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="950" cy="250" r="200" fill="#f59e0b" opacity="0.06"/>
+  <circle cx="150" cy="500" r="120" fill="#6366f1" opacity="0.04"/>
+
+  <!-- Building/House Icon (right side, low opacity) -->
+  <g opacity="0.15" transform="translate(1020, 270)">
+    <!-- Main building body -->
+    <rect x="-50" y="-20" width="100" height="120" fill="#f59e0b" opacity="0.8"/>
+    <!-- Roof -->
+    <polygon points="0,-50 -55,-20 55,-20" fill="#22c55e" opacity="0.8"/>
+    <!-- Windows -->
+    <rect x="-35" y="0" width="12" height="12" fill="#06b6d4" opacity="0.8"/>
+    <rect x="-10" y="0" width="12" height="12" fill="#06b6d4" opacity="0.8"/>
+    <rect x="15" y="0" width="12" height="12" fill="#06b6d4" opacity="0.8"/>
+    <rect x="-35" y="25" width="12" height="12" fill="#06b6d4" opacity="0.8"/>
+    <rect x="-10" y="25" width="12" height="12" fill="#06b6d4" opacity="0.8"/>
+    <rect x="15" y="25" width="12" height="12" fill="#06b6d4" opacity="0.8"/>
+    <rect x="-35" y="50" width="12" height="12" fill="#06b6d4" opacity="0.8"/>
+    <rect x="-10" y="50" width="12" height="12" fill="#06b6d4" opacity="0.8"/>
+    <rect x="15" y="50" width="12" height="12" fill="#06b6d4" opacity="0.8"/>
+    <!-- Door -->
+    <rect x="-12" y="70" width="24" height="30" fill="#22c55e" opacity="0.8"/>
+    <circle cx="0" cy="85" r="3" fill="#f59e0b" opacity="0.9"/>
+  </g>
+
+  <!-- Category badge -->
+  <rect x="60" y="180" width="90" height="32" rx="16" fill="#f59e0b" opacity="0.2"/>
+  <text x="105" y="201" fill="#f59e0b" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">RWA</text>
+
+  <!-- Title -->
+  <text x="60" y="280" fill="url(#titleGrad)" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" letter-spacing="-0.02em">Tokenized Real</text>
+  <text x="60" y="335" fill="url(#titleGrad)" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" letter-spacing="-0.02em">Estate Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="390" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="20">Fractional property ownership on the blockchain</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="550" width="1200" height="80" fill="#0a0f1e" opacity="0.8"/>
+  <text x="60" y="598" fill="#6366f1" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">degen0x</text>
+  <text x="170" y="598" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="16">degen0x.com</text>
+  <text x="1060" y="598" fill="#6e7681" font-family="Inter, system-ui, sans-serif" font-size="14">2026 Guide</text>
+</svg>

@@ -171,11 +171,12 @@ export default function WhaleAlertFeed() {
         </div>
         <button
           onClick={() => setIsLive(!isLive)}
-          className={`px-2 py-1 rounded text-xs font-medium transition-all ${
+          className={`px-3 py-2 min-h-[44px] min-w-[44px] flex items-center justify-center rounded text-xs font-medium transition-all ${
             isLive
               ? 'bg-red-500/20 text-red-400 hover:bg-red-500/30'
               : 'bg-green-500/20 text-green-400 hover:bg-green-500/30'
           }`}
+          aria-label={isLive ? 'Pause live feed' : 'Resume live feed'}
         >
           {isLive ? '⏸' : '▶'}
         </button>
@@ -183,6 +184,9 @@ export default function WhaleAlertFeed() {
 
       {/* Transactions */}
       <div className="max-h-[280px] overflow-y-auto">
+        {transactions.length === 0 && (
+          <div className="p-6 text-center text-sm text-gray-500">Loading whale alerts...</div>
+        )}
         {transactions.map((tx) => (
           <div
             key={tx.id}

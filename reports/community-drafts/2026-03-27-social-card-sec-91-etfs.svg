@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="50%" style="stop-color:#0c1225"/>
+      <stop offset="100%" style="stop-color:#080d1c"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.06)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative gradient orbs -->
+  <circle cx="200" cy="150" r="200" fill="#4f46e5" opacity="0.06" filter="url(#softGlow)"/>
+  <circle cx="1000" cy="500" r="250" fill="#0891b2" opacity="0.05" filter="url(#softGlow)"/>
+  <circle cx="600" cy="300" r="180" fill="#d97706" opacity="0.03" filter="url(#softGlow)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Badge: HISTORIC RULING -->
+  <rect x="60" y="40" width="210" height="34" rx="17" fill="#4f46e5" opacity="0.25"/>
+  <rect x="60" y="40" width="210" height="34" rx="17" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.6"/>
+  <text x="165" y="62" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#a5b4fc" text-anchor="middle" letter-spacing="1.5">HISTORIC RULING</text>
+
+  <!-- Main headline -->
+  <text x="60" y="125" font-family="Inter, -apple-system, sans-serif" font-size="48" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">SEC Rules on 91 Crypto ETFs</text>
+  <text x="60" y="175" font-family="Inter, -apple-system, sans-serif" font-size="38" font-weight="700" fill="url(#brandGrad)" letter-spacing="-0.01em">Biggest Single Ruling Day in History</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="215" font-family="Inter, -apple-system, sans-serif" font-size="17" fill="#8b949e">24 tokens  |  Spot + Staking + Leveraged + Multi-Asset  |  16 assets now classified as commodities</text>
+
+  <!-- Stats cards row -->
+  <!-- Card 1: 91 ETFs -->
+  <rect x="60" y="250" width="250" height="120" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="185" y="290" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle" letter-spacing="0.5">ETF APPLICATIONS</text>
+  <text x="185" y="340" font-family="Inter, -apple-system, sans-serif" font-size="48" font-weight="800" fill="#6366f1" text-anchor="middle" filter="url(#glow)">91</text>
+  <text x="185" y="360" font-family="Inter, -apple-system, sans-serif" font-size="12" fill="#6e7681" text-anchor="middle">Single-day record</text>
+
+  <!-- Card 2: 24 Tokens -->
+  <rect x="330" y="250" width="250" height="120" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="455" y="290" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle" letter-spacing="0.5">TOKENS COVERED</text>
+  <text x="455" y="340" font-family="Inter, -apple-system, sans-serif" font-size="48" font-weight="800" fill="#06b6d4" text-anchor="middle" filter="url(#glow)">24</text>
+  <text x="455" y="360" font-family="Inter, -apple-system, sans-serif" font-size="12" fill="#6e7681" text-anchor="middle">BTC, ETH, SOL, XRP, ADA...</text>
+
+  <!-- Card 3: BTC Price -->
+  <rect x="600" y="250" width="250" height="120" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="725" y="290" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle" letter-spacing="0.5">BTC PRICE</text>
+  <text x="725" y="340" font-family="Inter, -apple-system, sans-serif" font-size="40" font-weight="800" fill="#e6edf3" text-anchor="middle">$66,587</text>
+  <text x="725" y="360" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#ef4444" text-anchor="middle">-4% (2-week low)</text>
+
+  <!-- Card 4: Fear & Greed -->
+  <rect x="870" y="250" width="270" height="120" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1005" y="290" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle" letter-spacing="0.5">FEAR &amp; GREED INDEX</text>
+  <text x="1005" y="340" font-family="Inter, -apple-system, sans-serif" font-size="48" font-weight="800" fill="#ef4444" text-anchor="middle" filter="url(#glow)">10</text>
+  <text x="1005" y="360" font-family="Inter, -apple-system, sans-serif" font-size="12" fill="#6e7681" text-anchor="middle">46-day Extreme Fear streak</text>
+
+  <!-- Fear gauge bar -->
+  <rect x="60" y="395" width="1080" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="60" y="395" width="108" height="8" rx="4" fill="url(#redGrad)"/>
+  <text x="60" y="420" font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#ef4444">EXTREME FEAR</text>
+  <text x="1140" y="420" font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#22c55e" text-anchor="end">EXTREME GREED</text>
+
+  <!-- Context panel -->
+  <rect x="60" y="440" width="1080" height="100" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Context items -->
+  <circle cx="90" cy="470" r="4" fill="#22c55e"/>
+  <text x="104" y="475" font-family="Inter, -apple-system, sans-serif" font-size="14" fill="#e6edf3">16 crypto assets now classified as digital commodities (SEC/CFTC joint ruling Mar 17)</text>
+
+  <circle cx="90" cy="500" r="4" fill="#f59e0b"/>
+  <text x="104" y="505" font-family="Inter, -apple-system, sans-serif" font-size="14" fill="#e6edf3">$13.5B BTC/ETH options expired same day — largest Q1 2026 settlement</text>
+
+  <circle cx="90" cy="530" r="4" fill="#06b6d4"/>
+  <text x="104" y="535" font-family="Inter, -apple-system, sans-serif" font-size="14" fill="#e6edf3">Bitcoin 703 days post-halving — historical cycle bottoms at ~day 777 (late May 2026)</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="560" width="1200" height="70" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="560" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Logo area -->
+  <circle cx="90" cy="595" r="18" fill="#4f46e5" opacity="0.3"/>
+  <text x="90" y="601" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#818cf8" text-anchor="middle">0x</text>
+  <text x="118" y="601" font-family="Inter, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">degen0x</text>
+
+  <!-- CTA -->
+  <text x="600" y="601" font-family="Inter, -apple-system, sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">Full ETF breakdown → degen0x.com/learn/crypto-etfs-complete-guide</text>
+
+  <!-- Date -->
+  <text x="1140" y="601" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#6e7681" text-anchor="end">March 27, 2026</text>
+</svg>

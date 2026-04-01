@@ -1,0 +1,44 @@
+{
+  "date": "2026-03-29",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited 2 new pages from build-v2 (Crypto Passive Income Guide, Cryptocurrency Beginners Guide), created 2 missing OG images, and fixed 3 UX issues including a broken JSX Link rendered as raw text, table min-widths for mobile, and iOS touch-scroll optimization.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Fixed broken Link in /learn/cryptocurrency-beginners-guide-2026 Section 10 'Next Steps' — the 'Learn Cold Storage Best Practices' card had a raw HTML string containing <Link> JSX that rendered as literal text instead of a clickable link; replaced with proper JSX Link component",
+          "Added min-width (600px) to passive income comparison table (5 columns) in /learn/crypto-passive-income-guide-2026 for proper horizontal scroll on mobile instead of column compression",
+          "Added min-width (520px) to crypto comparison table (4 columns) in /learn/cryptocurrency-beginners-guide-2026 for mobile scroll behavior",
+          "Added WebkitOverflowScrolling: touch to passive income comparison table for smooth iOS momentum scrolling",
+          "Added WebkitOverflowScrolling: touch to beginners crypto comparison table for smooth iOS momentum scrolling",
+          "Both pages confirmed structurally sound — proper server components with metadata exports, BackToTop, StructuredData (article + FAQ schemas), breadcrumb navigation with aria-label, Table of Contents with anchor links, disclaimers, and related guides sections"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: crypto-passive-income-guide-2026 (1200x630 SVG) — dark theme with horizontal bar chart showing APY ranges for each method (ETH Staking, Liquid Staking, Restaking, Lending, Yield Farming), stats boxes ($17.5B EigenLayer TVL, 3.3% ETH APY, 4-6% stablecoin yield, $8.27B Pendle TVL), protocol name pills (Lido, Aave, EigenLayer, Pendle, Morpho, Curve), category badges (DeFi, Earning, Beginner)",
+          "OG image: cryptocurrency-beginners-guide-2026 (1200x630 SVG) — dark theme with crypto asset cards (BTC $1.4T, ETH $250B, SOL $80B), stats cards (126 ETFs approved, $10 min investment, DCA strategy), topic pills (Blockchain, Wallets, Exchanges, Investing, Security, DCA Guide), learning checklist (6 items), category badges (Crypto Basics, Getting Started, Beginner)"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "/learn/crypto-passive-income-guide-2026 — 2 fixes applied (table min-width 600px, iOS touch scrolling). Server component with metadata, BackToTop, structured data all confirmed present",
+          "/learn/cryptocurrency-beginners-guide-2026 — 3 fixes applied (broken Link JSX in Next Steps section, table min-width 520px, iOS touch scrolling). Server component with metadata, BackToTop, structured data all confirmed present"
+        ]
+      },
+      {
+        "title": "Recommendations for Future Sprints",
+        "items": [
+          "Add scroll-margin-top to section anchors across learn articles for sticky header offset when navigating via Table of Contents",
+          "Add hover underline styles for internal links across learn articles — currently no hover feedback on text links",
+          "Consider adding a Breadcrumb component import (reusable) instead of inline breadcrumb nav markup for consistency across learn pages"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

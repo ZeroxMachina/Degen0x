@@ -1,0 +1,69 @@
+{
+  "date": "2026-03-29",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "First cycle of Mar 29 (Sunday). BTC ~$66,200-$66,700 (slight uptick from $66K flat). ETH recovers above $2K to ~$2,024. F&G improves to 25 from 12-13 (still Fear, but streak may be broken). DELTA: Uncommitted files 378→389 (+11). Published slugs 598→602 (+4). No deploys — now Day 4 stale. Yesterday ran 56 agent cycles across all 6 agents. Today: standup only so far.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "BTC: ~$66,200–$66,700 (slight uptick from $66,008 in v11). Holding $66K support. Down ~24% YTD, ~48% from Oct 2025 ATH ($126K). Iran geopolitical tensions + oil >$100 remain primary headwinds. Whale accumulation continues — exchange reserves at 7-year lows.",
+          "ETH: ~$2,024 (recovered above $2K from $1,985 in v11). ETH/BTC ratio still depressed ~0.030. 24h volume $3.78B. Trading range for the week: $1,950–$2,120.",
+          "F&G INDEX: 25 (Fear) — significant improvement from 12-13 in v11. The 46-50 day Extreme Fear streak may be breaking as index climbs out of single digits. Still bearish but sentiment thawing after $8.7B options expiry cleared. Morgan Stanley ETF at 0.14% fee providing institutional tailwind.",
+          "DELTA FROM v11 (overnight): BTC +$200-700 (slight uptick). ETH +$40 (back above $2K). F&G 12-13→25 (meaningful sentiment shift). Uncommitted files 378→389 (+11 overnight drift). Published slugs 598→602 (+4). HEAD still at 21aaf5b (Mar 25). No deploys — now entering Day 4 stale."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "NEW DAY — FIRST CYCLE OF MARCH 29 (SUNDAY). Yesterday (Mar 28) ran 56 total agent cycles: standup×11, build×9, publish×6, design×9, community×10, eod×11. Most productive day yet by run count.",
+          "CARRY-OVER FROM YESTERDAY: (1) DEPLOY CRITICAL — 389 uncommitted files spanning 4 days. HEAD at 21aaf5b since Mar 25. Every hour without deploy = lost indexing time for 602 published pages. (2) 2 PUBLISH_QUEUE items still blocked (wallet-security slug mismatch + restaking no page.tsx). (3) Stablecoin Yield Tracker needs server/client split. (4) ~105 legacy slugs missing page.tsx (~82% coverage). (5) 146+ TS errors in 6 files (non-blocking). (6) 17 duplicate slugs in PUBLISHED_PAGES.",
+          "WHAT SHIPPED YESTERDAY (FULL DAY SUMMARY): 22+ new pages built across 9 build cycles. 28+ OG images created. 236+ tweets drafted. 39 newsletter versions. 53+ SVG social cards. Interactive tools: Token Security Scanner, Stablecoin Yield Tracker. Key content: Tariffs & Trade Wars Crypto Impact Guide. UX fixes on multiple pages. 2 pages promoted to PUBLISHED_PAGES.",
+          "GIT STATUS: 389 files pending (up from 378). All changes additive. No conflicts expected."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — DEPLOY [DAY 4, CRITICAL]: 389 uncommitted files. 602 published slugs. 22+ pages built yesterday invisible to Google. The F&G sentiment shift to 25 from 12-13 means markets may be turning — time-sensitive bear market content (50-day fear record, tariffs guide, options expiry) loses relevance with every hour. Jefe: `rm .git/index.lock && git add -A && git commit && git push`. 5-minute action, highest leverage.",
+          "PRIORITY 2 — CLEAR BLOCKED QUEUE: Fix crypto-wallet-security slug mismatch and restaking missing page.tsx. Empties PUBLISH_QUEUE to zero. Quick win for next build cycle.",
+          "PRIORITY 3 — RIDE THE SENTIMENT SHIFT: F&G jumping from 12→25 is the first meaningful upward move in 50 days. Content angle: 'Is the Extreme Fear streak over?' — draft analysis piece. Community tweets should pivot from bear-market-survival to cautious-optimism. ETH above $2K again provides hook for engagement."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "STALE — 389 files pending deploy, Day 4 (CRITICAL)", "pct": 5, "color": "#ef4444" },
+          { "label": "Published Pages", "value": "602 slugs (+4 from v11)", "pct": 98, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "2 pages (both blocked)", "pct": 50, "color": "#f59e0b" },
+          { "label": "Pages Built Yesterday", "value": "22+ across 9 build cycles", "pct": 100, "color": "#4ade80" },
+          { "label": "Page.tsx Coverage", "value": "~82% (~1,225+ page.tsx files)", "pct": 82, "color": "#4ade80" },
+          { "label": "Agent Runs Yesterday", "value": "56 total (standup×11, build×9, publish×6, design×9, community×10, eod×11)", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "389 (+11 from v11)", "pct": 5, "color": "#ef4444" },
+          { "label": "TS Errors", "value": "146+ in 6 files (non-blocking)", "pct": 20, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "~$66,200–$66,700 (slight uptick)", "pct": 48, "color": "#f59e0b" },
+          { "label": "ETH Price", "value": "~$2,024 (back above $2K)", "pct": 35, "color": "#f59e0b" },
+          { "label": "Fear & Greed", "value": "25 (Fear — up from 12-13, streak may be breaking)", "pct": 25, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h (standup only)", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup $45)", "pct": 9, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$45 (1 cycle so far, first of day)", "pct": 1, "color": "#4ade80" },
+          { "label": "Yesterday's Total (Mar 28)", "value": "$4,593 (56 runs: standup 11×$45=$495, build 9×$233=$2,097, publish 6×$55=$330, design 9×$60=$540, community 10×$41=$410, eod 11×$63=$693)", "pct": 39, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "SKIPPED — api.resend.com blocked from browser (CORS TypeError: Failed to fetch) and sandbox egress. Same infrastructure limitation as all previous cycles. Manual send or server-side relay needed."
+  }
+}

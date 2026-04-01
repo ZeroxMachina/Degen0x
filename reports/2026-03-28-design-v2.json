@@ -1,0 +1,67 @@
+{
+  "date": "2026-03-28",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audited 5 new learn guides from today's build cycle, created 2 missing OG images, and applied 12 UX refinements (BackToTop, canonical URLs, responsive typography).",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "depin-ecosystem-guide-2026: Added BackToTop component for long-page navigation",
+          "depin-ecosystem-guide-2026: Added canonical URL (alternates.canonical) for SEO",
+          "depin-ecosystem-guide-2026: Fixed H1 from hardcoded 36px to responsive clamp(1.75rem, 4vw, 2.25rem)",
+          "crypto-gas-fees-transaction-costs-guide-2026: Added BackToTop component",
+          "crypto-gas-fees-transaction-costs-guide-2026: Added canonical URL",
+          "crypto-gas-fees-transaction-costs-guide-2026: Fixed H1 from hardcoded 36px to responsive clamp(1.75rem, 4vw, 2.25rem)",
+          "citrea-bitcoin-zk-rollup-guide-2026: Added BackToTop component",
+          "citrea-bitcoin-zk-rollup-guide-2026: Added canonical URL",
+          "crypto-etf-in-kind-redemption-guide-2026: Added BackToTop component",
+          "crypto-etf-in-kind-redemption-guide-2026: Added canonical URL",
+          "paradex-zk-perpetuals-guide-2026: Already had BackToTop and canonical URL — no fixes needed"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: depin-ecosystem-guide-2026 (1200x630 SVG) — network node decoration, brand gradient, stats boxes (650+ projects, $9B market cap, 270% YoY growth), protocol names",
+          "OG image: crypto-gas-fees-transaction-costs-guide-2026 (1200x630 SVG) — fee trend chart visualization, L2 cost comparison boxes (ETH $0.44, Arbitrum $0.009, Solana $0.001), amber-green gradient"
+        ]
+      },
+      {
+        "title": "Audit Findings",
+        "items": [
+          "FIXED: 4/5 pages missing BackToTop component — now added",
+          "FIXED: 4/5 pages missing canonical URLs — now added",
+          "FIXED: 2/5 pages had hardcoded H1 font-size (36px) instead of responsive clamp() — now responsive",
+          "FIXED: 2/5 pages had missing OG images (DePIN, Gas Fees) — now created",
+          "OK: All 5 pages have proper breadcrumb navigation, structured data, FAQ sections, and openGraph metadata",
+          "OK: Tables have overflowX: auto for mobile horizontal scroll on DePIN and Gas Fees guides",
+          "NOTE: DePIN and Gas Fees guides use inline nav breadcrumbs instead of Breadcrumb component — deferred to future standardization pass"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "pages_audited": [
+      "depin-ecosystem-guide-2026",
+      "crypto-gas-fees-transaction-costs-guide-2026",
+      "paradex-zk-perpetuals-guide-2026",
+      "citrea-bitcoin-zk-rollup-guide-2026",
+      "crypto-etf-in-kind-redemption-guide-2026"
+    ],
+    "og_images_created": [
+      "og-depin-ecosystem-guide-2026.svg",
+      "og-crypto-gas-fees-transaction-costs-guide-2026.svg"
+    ],
+    "files_created": [
+      "public/og-depin-ecosystem-guide-2026.svg",
+      "public/og-crypto-gas-fees-transaction-costs-guide-2026.svg"
+    ],
+    "files_modified": [
+      "src/app/learn/depin-ecosystem-guide-2026/page.tsx",
+      "src/app/learn/crypto-gas-fees-transaction-costs-guide-2026/page.tsx",
+      "src/app/learn/citrea-bitcoin-zk-rollup-guide-2026/page.tsx",
+      "src/app/learn/crypto-etf-in-kind-redemption-guide-2026/page.tsx"
+    ]
+  }
+}

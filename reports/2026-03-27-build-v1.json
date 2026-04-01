@@ -1,0 +1,52 @@
+{
+  "date": "2026-03-27",
+  "block": "build",
+  "report": {
+    "status": "completed",
+    "summary": "Built 2 new learn guides — Crypto Wallet Security (token approvals, wallet drainers, protection) and Restaking Protocol Comparison (EigenLayer vs Symbiotic vs Karak) — with full SEO metadata, FAQs, and internal linking; added both to PUBLISH_QUEUE.",
+    "sections": [
+      {
+        "title": "Research Brief",
+        "items": [
+          "Wallet drainer attacks caused $3.1B in losses in H1 2025; signature phishing jumped 207% in Jan 2026 vs Dec 2025",
+          "42% of phishing losses traced to drainer scripts on fake airdrop sites; average theft time under 32 seconds",
+          "FBI issued alert March 19, 2026 about fake FBI Token TRC-20 airdrop scam on Tron",
+          "Restaking market reached $16.3B TVL across 3 protocols: EigenLayer ($15.3B, 93.9%), Symbiotic ($897M, 5.5%), Karak ($102M, 0.6%)",
+          "EigenLayer dominates with 4.36M ETH committed; Symbiotic backed by Paradigm/Lido co-founders offers modular architecture",
+          "Karak differentiates with multi-asset restaking (LP tokens, stablecoins, WBTC) and cross-chain plans",
+          "Gap analysis confirmed: no existing pages on token approval security or restaking protocol comparisons"
+        ]
+      },
+      {
+        "title": "Content Created",
+        "items": [
+          "Crypto Wallet Security guide: 12-min read covering token approvals, wallet drainers, attack vectors, Revoke.cash usage, security practices, and recovery steps — ~2,500 words",
+          "Restaking Comparison guide: 14-min read with deep dives on EigenLayer, Symbiotic, and Karak, HTML comparison table, slashing mechanics, and protocol selection framework — ~2,800 words"
+        ]
+      },
+      {
+        "title": "Pages Scaffolded",
+        "pages": [
+          { "slug": "/learn/crypto-wallet-security-token-approvals-guide", "status": "pass" },
+          { "slug": "/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "SEO Optimization",
+        "items": [
+          "Page 1 title: 'Crypto Wallet Security: Token Approvals & Wallet Drainer Protection (2026) | degen0x'",
+          "Page 2 title: 'Restaking Comparison 2026: EigenLayer vs Symbiotic vs Karak | degen0x'",
+          "Both pages include structured FAQ data for FAQ rich snippets",
+          "Internal linking to 8 existing pages across both guides",
+          "Both pages added to PUBLISH_QUEUE in published-pages.ts"
+        ]
+      }
+    ],
+    "skills_used": ["researcher", "contentWriter", "seo", "pageScaffold", "programmer"],
+    "files_modified": [
+      "src/data/pages/learn-20260327.ts (new)",
+      "src/data/pages/learn.ts (import added)",
+      "src/lib/published-pages.ts (queue updated)"
+    ]
+  }
+}

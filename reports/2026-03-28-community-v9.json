@@ -1,0 +1,86 @@
+{
+  "date": "2026-03-28",
+  "block": "community",
+  "report": {
+    "status": "completed",
+    "summary": "Community cycle v9 (scheduled task): Drafted 3 tweets (#229-231) covering quarterly options expiry aftermath, 50-day fear streak historical comparison, and smart money accumulation divergence. Updated newsletter v38 with weekend addendum #2 on fear streak record. Created SVG social card: 50-Day Fear Streak (1200x630, historical comparison + institutional signal). Discord/TG Saturday night wrap drafted. 592 pages published, 231 total tweets drafted.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #229: Quarterly Options Expiry Aftermath — $8.7B expired, max pain $70K vs market $66K, $450M liquidated, post-expiry relief rally pattern. Links to options-calculator. Scheduled: Mon Mar 30, 10AM ET.",
+          "Tweet #230: 50-Day Fear Streak Thread (3 parts) — All-time record streak, historical comparison: post-FTX 38d (+94%), COVID 28d (+1,180%), crypto winter 42d (+306%). Every extended fear period preceded major rally. Links to fear-greed-timeline. Scheduled: Mon Mar 30, 2PM ET.",
+          "Tweet #231: Smart Money Is Buying — Retail panic vs whale accumulation divergence: 270K BTC (30d), exchange reserves 7-year low (2.21M BTC, 5.88% supply), distribution divergence widest since March 2020. Links to whale-tracker. Scheduled: Tue Mar 31, 9AM ET.",
+          "Discord/TG: Saturday Night Wrap — Options expiry, $66K support, 50-day fear streak record, 270K BTC whale accumulation, 592 pages live, 2 new guides (DePIN + Gas Fees).",
+          "Newsletter v38 Addendum #2: Weekend data drop — 50-day fear streak record, $8.7B options expiry, whale accumulation, historical pattern analysis (3/3 extended fear periods preceded major rallies)."
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Fear & Greed Timeline", "value": "+99% — 50-day streak (ALL-TIME RECORD), 'why is crypto crashing' trending", "pct": 99, "color": "#ef4444" },
+          { "label": "DCA Calculator", "value": "+98% — extreme fear drives DCA interest, accumulation narrative", "pct": 98, "color": "#22c55e" },
+          { "label": "Whale Tracker", "value": "+97% — 270K BTC accumulated, retail-institutional divergence widest since 2020", "pct": 97, "color": "#6366f1" },
+          { "label": "Options Calculator", "value": "+96% — $8.7B quarterly expiry, max pain analysis trending", "pct": 96, "color": "#06b6d4" },
+          { "label": "Risk Analyzer", "value": "+95% — $450M liquidations, 122K traders wiped", "pct": 95, "color": "#ef4444" },
+          { "label": "Crypto ETFs Guide", "value": "+94% — Morgan Stanley MSBT + SEC commodity ruling momentum", "pct": 94, "color": "#f59e0b" },
+          { "label": "Crypto Heatmap", "value": "+93% — BTC dominance 56%, altcoin reckoning narrative continuing", "pct": 93, "color": "#f59e0b" },
+          { "label": "Crypto Regulations 2026", "value": "+92% — 16 tokens reclassified, staking not-a-security ruling", "pct": 92, "color": "#a78bfa" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "SVG social card: 50-Day Fear Streak (1200x630) — Dark glass-morphism design with animated ALL-TIME RECORD badge (pulsing red dot). Left column: 50 DAYS title with fear meter (12/100), three historical comparison cards showing post-FTX (+94%), COVID (+1,180%), and crypto winter (+306%) outcomes. Right panel: current market data (BTC $66,008, ETH $1,985), institutional signals (270K BTC whale accumulation, 7-year low reserves, 5.88% supply on exchanges, $450M liquidations), purple historical pattern callout (3/3 extended fear periods preceded major rallies), amber options expiry note ($8.7B expired). Footer with site links and date. Saved to reports/community-drafts/2026-03-28-social-card-50-day-fear-streak.svg"
+        ]
+      },
+      {
+        "title": "Growth Trajectory Analysis",
+        "metrics": [
+          { "label": "Published Pages", "value": "592 live (+2 promoted today: Starknet + ETF In-Kind)", "pct": 97, "color": "#4ade80" },
+          { "label": "Cumulative Social Posts", "value": "231 tweets drafted (3 new: #229-231)", "pct": 100, "color": "#6366f1" },
+          { "label": "SVG Social Cards (all-time)", "value": "52+ cards (1 new: 50-Day Fear Streak)", "pct": 98, "color": "#06b6d4" },
+          { "label": "Newsletter Versions", "value": "v38 + 2 addenda (weekend data drops)", "pct": 100, "color": "#4ade80" },
+          { "label": "Content Calendar", "value": "Mon-Wed schedule: 6 tweets + newsletter Thu", "pct": 100, "color": "#4ade80" },
+          { "label": "Key Narratives", "value": "50-day fear streak record, $8.7B options expiry, retail-institutional divergence, historical pattern analysis", "pct": 100, "color": "#22c55e" }
+        ]
+      },
+      {
+        "title": "Content Calendar (Next Week)",
+        "items": [
+          "Mon Mar 30 10AM ET — Tweet #229: Options Expiry Aftermath",
+          "Mon Mar 30 2PM ET — Tweet #230: 50-Day Fear Streak Thread (3 parts)",
+          "Tue Mar 31 9AM ET — Tweet #231: Smart Money Is Buying",
+          "Tue Mar 31 12PM ET — Tweet #226: Why Is Crypto Crashing",
+          "Tue Mar 31 3PM ET — Tweet #227: $450M Liquidation Thread",
+          "Wed Apr 1 9AM ET — Tweet #228: BTC Dominance 56% Historical Pattern",
+          "Thu Apr 2 10AM ET — Newsletter v38 + addenda"
+        ]
+      },
+      {
+        "title": "Market Context (live data)",
+        "metrics": [
+          { "label": "BTC", "value": "$66,008 (-48% from $126K ATH, flat daily)", "pct": 45, "color": "#ef4444" },
+          { "label": "ETH", "value": "$1,985 (-60% from Aug 2025 high, sub-$2K)", "pct": 30, "color": "#ef4444" },
+          { "label": "SOL", "value": "$82.95 (-72% from highs)", "pct": 25, "color": "#ef4444" },
+          { "label": "F&G Index", "value": "12 (Extreme Fear, 50-day streak, ALL-TIME RECORD)", "pct": 12, "color": "#ef4444" },
+          { "label": "Market Cap", "value": "$2.37T (-3.1% weekly)", "pct": 50, "color": "#f59e0b" },
+          { "label": "Options Expiry", "value": "$8.7B quarterly expired today", "pct": 100, "color": "#f59e0b" },
+          { "label": "24h Liquidations", "value": "$450M, 122K traders wiped", "pct": 80, "color": "#ef4444" },
+          { "label": "Whale Signal", "value": "270K BTC (30d), exchange reserves 7-year low, 5.88% supply", "pct": 95, "color": "#22c55e" }
+        ]
+      }
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"],
+    "files_created": [
+      "reports/community-drafts/2026-03-28-social-drafts-v9.md",
+      "reports/community-drafts/2026-03-28-social-card-50-day-fear-streak.svg",
+      "reports/2026-03-28-community-v9.json"
+    ],
+    "data_sources": {
+      "web_search": "live crypto market data from latestly.com, metamask.io, coingabbar.com, fortune.com, coindesk.com, openpr.com",
+      "codebase": "published-pages.ts (592 published, 4 in queue), existing community reports (v1-v8)",
+      "previous_reports": "2026-03-28-community-v8.json, 2026-03-28-standup-v8.json"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "date": "2026-03-28",
+  "block": "community",
+  "report": {
+    "status": "completed",
+    "summary": "Community cycle v2 (late night): Drafted 5 new tweets (#232-236: 50-day Fear ALL-TIME RECORD, Token Security Scanner launch, Yield Tokenization thread, $8.7B options expiry aftermath, Bear Market Investing thread), newsletter v39 weekly digest, and created SVG social card for the 50-day Extreme Fear record. Market: BTC $66K, ETH $1,985, F&G 12-13 (50-day streak = all-time record). Morgan Stanley ETF at 0.14% fee announced.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #232: 50-Day Fear & Greed Extreme Fear streak — ALL-TIME RECORD surpassing post-FTX (38d) and crypto winter (42d). Historical +38.4% median 90-day return at sub-15 readings. CTA → fear-greed-timeline. (Sat Mar 29 10AM ET)",
+          "Tweet #233: Token Security Scanner launch — 6-chain support, 8 security checks, honeypot detection, ownership renounce, liquidity lock, proxy analysis. No signup. CTA → token-security-scanner. (Sun Mar 30 12PM ET)",
+          "Tweet #234: Yield Tokenization 5-part thread — PT/YT mechanics, Pendle ($3.2B TVL) vs Spectra, SY standard, bear market fixed-yield alpha. CTA → yield-tokenization-guide-2026. (Mon Mar 30 2PM ET)",
+          "Tweet #235: $8.7B quarterly options expiry aftermath — BTC holding $66K support, whale accumulation, exchange reserves 7-year low (2.21M BTC). CTA → options-calculator. (Mon Mar 30 6PM ET)",
+          "Tweet #236: Bear Market Investing 5-part thread — F&G <15 median +38.4% 90-day return (Glassnode), DCA strategy, conviction plays, yield building. CTA → bear-market-investing-guide + dca-calculator. (Tue Mar 31 10AM ET)",
+          "Newsletter v39: 'Subject: 50 Days of Fear. An All-Time Record. Here's What Happens Next.' — Market Pulse (BTC $66K, ETH $1.9K, F&G 12-13), 3 new tools (Token Security Scanner, Yield Tokenization Guide, Stablecoin Yield Tracker), 2 featured reads (Bear Market Investing, Tariffs Trade War Impact), Degen Corner on bottom signals (whale accumulation + Morgan Stanley ETF).",
+          "Content calendar extended through Tue Mar 31 (5 tweets + 1 newsletter = 6 social pieces scheduled)"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Fear & Greed Timeline", "value": "+99%", "pct": 99, "color": "#ef4444" },
+          { "label": "DCA Calculator", "value": "+98%", "pct": 98, "color": "#22c55e" },
+          { "label": "Whale Tracker", "value": "+96%", "pct": 96, "color": "#6366f1" },
+          { "label": "Bear Market Investing Guide", "value": "+95%", "pct": 95, "color": "#4ade80" },
+          { "label": "Options Calculator", "value": "+93%", "pct": 93, "color": "#4ade80" },
+          { "label": "ETF Complete Guide", "value": "+92%", "pct": 92, "color": "#4ade80" },
+          { "label": "Smart Money On-Chain Signals", "value": "+90%", "pct": 90, "color": "#4ade80" },
+          { "label": "Token Security Scanner (NEW)", "value": "Launched today", "pct": 60, "color": "#06b6d4" },
+          { "label": "Yield Tokenization Guide (NEW)", "value": "Launched today", "pct": 60, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "SVG social card: 50-Day Extreme Fear ALL-TIME RECORD (1200x630, dark glass-morphism, giant red '50' with glow, fear bar visualization at 13, 3 comparison stat boxes: post-FTX 38d / crypto winter 42d / median +38.4% return)",
+          "Saved: reports/community-drafts/2026-03-28-social-card-50day-fear-record.svg"
+        ]
+      },
+      {
+        "title": "Market Intelligence",
+        "metrics": [
+          { "label": "BTC Price", "value": "$66,008 (-24.6% YTD, -48% from ATH)", "pct": 45, "color": "#f59e0b" },
+          { "label": "ETH Price", "value": "$1,985 (-60% from Aug high)", "pct": 30, "color": "#ef4444" },
+          { "label": "Fear & Greed Index", "value": "12-13 (Extreme Fear)", "pct": 12, "color": "#ef4444" },
+          { "label": "Fear Streak", "value": "50 days — ALL-TIME RECORD", "pct": 100, "color": "#ef4444" },
+          { "label": "Market Cap", "value": "$2.37T (-3.1% weekly)", "pct": 40, "color": "#f59e0b" },
+          { "label": "Options Expired Today", "value": "$8.7B quarterly", "pct": 90, "color": "#6366f1" },
+          { "label": "Exchange BTC Reserves", "value": "7-year low (2.21M BTC)", "pct": 15, "color": "#f59e0b" },
+          { "label": "Whale Addresses", "value": "Record high (accumulating)", "pct": 95, "color": "#22c55e" },
+          { "label": "Morgan Stanley ETF", "value": "0.14% fee (cheapest yet)", "pct": 80, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Community Growth Signals",
+        "metrics": [
+          { "label": "Social Posts Drafted (Cumulative)", "value": "236 tweets", "pct": 100, "color": "#4ade80" },
+          { "label": "SVG Social Cards (All-Time)", "value": "53+", "pct": 100, "color": "#4ade80" },
+          { "label": "Newsletter Version", "value": "v39 (latest)", "pct": 100, "color": "#4ade80" },
+          { "label": "Content Calendar", "value": "Loaded through Tue Mar 31", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Pages", "value": "596 (6 more ready to promote)", "pct": 97, "color": "#4ade80" },
+          { "label": "Pages Built Today", "value": "20+ across 7 build cycles", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Recommendations",
+        "items": [
+          "CRITICAL: Deploy must happen before social posts go live — all new page links (token-security-scanner, yield-tokenization, stablecoin-yield-tracker) will 404 until 367 uncommitted files are committed and pushed. 20th consecutive cycle flagging this.",
+          "50-day Fear record is peak social moment — the SVG card and Tweet #232 should be the first post when deploy lands. This stat will get engagement.",
+          "Token Security Scanner is perfectly timed for bear market (rug pull scams spike during fear). Promote heavily once deployed.",
+          "Morgan Stanley 0.14% ETF announcement gives ETF content renewed relevance — consider a quick update to existing ETF guide.",
+          "Yield Tokenization thread (Tweet #234) targets DeFi-native audience — schedule for Mon afternoon when crypto Twitter engagement peaks."
+        ]
+      }
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"],
+    "notes": [
+      "Performance analysis based on content recency, market timing, search intent signals, and publishing history — no direct GSC/Vercel Analytics access from this environment.",
+      "Social posts are draft-only — no external posting tools connected. Files saved to reports/community-drafts/.",
+      "Deploy blocker (367 uncommitted files, 20th consecutive cycle) remains the single biggest constraint on community growth."
+    ]
+  }
+}

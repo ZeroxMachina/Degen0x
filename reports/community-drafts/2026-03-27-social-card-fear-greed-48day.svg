@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a0a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1020;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d17;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fearGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4ade80;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)" />
+
+  <!-- Top accent -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#fearGrad)" />
+
+  <!-- Badge -->
+  <rect x="60" y="40" width="150" height="36" rx="18" fill="#ef4444" opacity="0.15" />
+  <text x="135" y="64" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ef4444" text-anchor="middle" letter-spacing="2">EXTREME FEAR</text>
+
+  <!-- Main number -->
+  <text x="60" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="140" font-weight="900" fill="url(#fearGrad)" opacity="0.9">48</text>
+  <text x="340" y="170" font-family="system-ui, sans-serif" font-size="36" fill="#94a3b8" font-weight="300">consecutive</text>
+  <text x="340" y="210" font-family="system-ui, sans-serif" font-size="36" fill="#94a3b8" font-weight="300">days of fear</text>
+
+  <!-- Current F&G score -->
+  <text x="700" y="120" font-family="system-ui, sans-serif" font-size="14" fill="#64748b" font-weight="600" letter-spacing="2">CURRENT INDEX</text>
+  <text x="700" y="190" font-family="system-ui, sans-serif" font-size="96" font-weight="900" fill="#ef4444">10</text>
+  <text x="830" y="190" font-family="system-ui, sans-serif" font-size="20" fill="#64748b">/100</text>
+
+  <!-- Divider -->
+  <rect x="60" y="240" width="1080" height="1" fill="#ffffff" opacity="0.06" />
+
+  <!-- Historical comparison -->
+  <text x="60" y="285" font-family="system-ui, sans-serif" font-size="14" fill="#6366f1" font-weight="600" letter-spacing="2">WHAT HAPPENED AFTER EXTENDED EXTREME FEAR</text>
+
+  <!-- Jun 2022 -->
+  <g transform="translate(60, 305)">
+    <rect x="0" y="0" width="340" height="80" rx="10" fill="#1e1e3f" stroke="#2d2d5e" stroke-width="1" />
+    <text x="20" y="25" font-family="system-ui, sans-serif" font-size="13" fill="#64748b" font-weight="600">JUN 2022</text>
+    <text x="200" y="25" font-family="monospace" font-size="13" fill="#f59e0b">F&amp;G 6 | BTC $17.6K</text>
+    <text x="20" y="55" font-family="system-ui, sans-serif" font-size="24" fill="url(#greenGrad)" font-weight="700">+432%</text>
+    <text x="140" y="55" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">in 18 months</text>
+  </g>
+
+  <!-- Nov 2022 -->
+  <g transform="translate(420, 305)">
+    <rect x="0" y="0" width="340" height="80" rx="10" fill="#1e1e3f" stroke="#2d2d5e" stroke-width="1" />
+    <text x="20" y="25" font-family="system-ui, sans-serif" font-size="13" fill="#64748b" font-weight="600">NOV 2022 (FTX)</text>
+    <text x="200" y="25" font-family="monospace" font-size="13" fill="#f59e0b">F&amp;G 20 | BTC $15.5K</text>
+    <text x="20" y="55" font-family="system-ui, sans-serif" font-size="24" fill="url(#greenGrad)" font-weight="700">+349%</text>
+    <text x="140" y="55" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">in 14 months</text>
+  </g>
+
+  <!-- Mar 2026 -->
+  <g transform="translate(780, 305)">
+    <rect x="0" y="0" width="340" height="80" rx="10" fill="#ef4444" opacity="0.08" stroke="#ef4444" stroke-width="1" stroke-opacity="0.3" />
+    <text x="20" y="25" font-family="system-ui, sans-serif" font-size="13" fill="#ef4444" font-weight="600">MAR 2026 (NOW)</text>
+    <text x="200" y="25" font-family="monospace" font-size="13" fill="#f59e0b">F&amp;G 10 | BTC $66.6K</text>
+    <text x="20" y="55" font-family="system-ui, sans-serif" font-size="24" fill="#f59e0b" font-weight="700">???</text>
+  </g>
+
+  <!-- Fear gauge visual bar -->
+  <text x="60" y="430" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" letter-spacing="2">FEAR GAUGE</text>
+  <rect x="60" y="442" width="1080" height="16" rx="8" fill="#1e1e3f" />
+  <rect x="60" y="442" width="108" height="16" rx="8" fill="url(#fearGrad)" />
+  <text x="60" y="478" font-family="monospace" font-size="11" fill="#ef4444">0 EXTREME FEAR</text>
+  <text x="500" y="478" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">50 NEUTRAL</text>
+  <text x="1080" y="478" font-family="monospace" font-size="11" fill="#22c55e">100 EXTREME GREED</text>
+
+  <!-- CTA -->
+  <rect x="60" y="505" width="440" height="50" rx="10" fill="#6366f1" opacity="0.1" />
+  <text x="80" y="536" font-family="system-ui, sans-serif" font-size="16" fill="#6366f1" font-weight="600">Track every shift</text>
+  <text x="250" y="536" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">degen0x.com/tools/fear-greed-timeline</text>
+
+  <!-- Brand footer -->
+  <text x="60" y="600" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff" opacity="0.9">degen0x</text>
+  <text x="168" y="600" font-family="system-ui, sans-serif" font-size="14" fill="#64748b">.com</text>
+
+  <rect x="1010" y="580" width="130" height="32" rx="16" fill="#22c55e" opacity="0.12" />
+  <text x="1075" y="602" font-family="system-ui, sans-serif" font-size="13" fill="#22c55e" text-anchor="middle" font-weight="600">556 pages live</text>
+</svg>

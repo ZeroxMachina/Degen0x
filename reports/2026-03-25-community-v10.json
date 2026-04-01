@@ -1,0 +1,84 @@
+{
+  "date": "2026-03-25",
+  "block": "community",
+  "version": "v10",
+  "report": {
+    "status": "completed",
+    "summary": "Drafted 3 new social posts (#136: Congress tokenization hearing recap with Nasdaq approval + CLARITY Act, #137: BitGo IPO earnings preview for Mar 26, #138: Options expiry update $14.16B with max pain $75K), updated newsletter v23 addendum v10 with Congress hearing recap and updated options data, updated Discord evening alert v10. Created content calendar v37 (16 posts Wed-Mon). Built 2 new SVG social cards (Congress Tokenization Recap with 2-bill layout and milestone chips, BitGo IPO Earnings with financial metrics and institutional context). Key developments: Congressional tokenization hearing completed with bipartisan positive tone, Nasdaq tokenized securities approved 4 days prior, CLARITY Act stablecoin deal done 'in principle', options expiry revised to $14.16B with max pain pulled up to $75K.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #136 [NEW]: Congressional Tokenization Hearing Recap — Two bills (Modernizing Markets Through Tokenization Act + Capital Markets Technology Modernization Act), Nasdaq tokenized securities approval, CLARITY Act deal 'in principle', $26.48B RWA market. CTA to congressional-tokenization-hearing-guide-2026 (scheduled Wed Mar 25 7PM ET)",
+          "Tweet #137 [NEW]: BitGo IPO Earnings Preview — First crypto custody IPO ($BTGO NYSE), $212.8M raised at $2.08B valuation, FY2024 $308M revenue, Q4+FY2025 earnings Mar 26. CTA to bitgo-ipo-crypto-infrastructure-guide (scheduled Wed Mar 25 9PM ET)",
+          "Tweet #138 [NEW]: Options Expiry Update — Revised to $14.16B (40% of Deribit OI), max pain pulled UP to $75K (from $70K), compressed IV, institutional measured bullishness. CTA to options-calculator (scheduled Thu Mar 27 7AM ET)",
+          "Tweets #133-135 carried from v9 (Double Catalyst, Katana Perps, Tokenized Funds)",
+          "Tweets #125-132 carried from v8 (all previously scheduled posts remain)",
+          "Newsletter v23 addendum v10: Updated with Congress hearing recap, Nasdaq tokenized securities approval, CLARITY Act, revised options data ($14.16B, $75K max pain), BitGo earnings preview, Bernstein $150K target. New subject: 'Thursday's Double Catalyst: $14B Options Expire + SEC Rules on 91 ETFs'",
+          "Discord/Telegram evening alert v10: Congress recap, updated options data, BitGo earnings heads-up, new guides linked",
+          "Content calendar v37: 16 posts Wed Mar 25 through Mon Mar 31 across Twitter, Discord/TG, and Email"
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "SVG social card: Congress Tokenization Recap — 2-bill layout (Modernizing Markets Through Tokenization Act with SEC/CFTC framework, Capital Markets Technology Modernization Act with blockchain record-keeping), green milestone chips (Nasdaq Tokenized Trading, CLARITY Act 'In Principle', SEC 16 Commodities, 91 ETF Rulings Thu), bottom 6-stat bar ($26.48B RWA, $14.16B Options, 91 SEC ETFs, 16 Commodities, F&G 14, BTC $70.6K), tagline 'Tokenization isn't the future. Congress is legislating it as the present.'",
+          "SVG social card: BitGo IPO Earnings — IPO details panel ($BTGO NYSE, Jan 22 2026, $212.8M raised, $2.08B valuation, 1500+ clients), FY2024 financials panel ($308M revenue, $15.66M net profit), institutional context card explaining proxy for adoption health, bottom 5-stat bar (BTC $70.6K, F&G 14, $14B Options Fri, 91 SEC ETFs Thu, $2.5B ETF Inflows), tagline 'The first crypto custody IPO reports earnings. Institutional adoption gets its report card.'"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Fear & Greed Timeline", "value": "F&G at 14, rebounded from historic 8 — 46+ day extreme fear streak", "pct": 99, "color": "#ef4444" },
+          { "label": "Options Calculator", "value": "$14.16B expiry Fri + SEC 91 ETFs = Double Catalyst", "pct": 97, "color": "#f59e0b" },
+          { "label": "Crypto ETFs Guide", "value": "SEC rules on 91 ETF apps Thu — XRP, SOL, LTC, DOGE spot", "pct": 96, "color": "#6366f1" },
+          { "label": "Congressional Tokenization Guide [NEW]", "value": "Published today — hearing completed, bipartisan positive", "pct": 95, "color": "#22c55e" },
+          { "label": "Tokenized RWA Guide", "value": "Nasdaq tokenized securities approved + $26.48B market", "pct": 94, "color": "#8b5cf6" },
+          { "label": "Crypto Regulations 2026", "value": "SEC 16 commodities + CLARITY Act 'in principle' + 91 ETFs", "pct": 93, "color": "#6366f1" },
+          { "label": "Bitcoin ETF Guide", "value": "$2.5B March inflows + Bernstein $150K target", "pct": 92, "color": "#22c55e" },
+          { "label": "BitGo IPO Guide [NEW]", "value": "Published today — first crypto custody IPO, earnings Mar 26", "pct": 90, "color": "#f59e0b" },
+          { "label": "DCA Calculator", "value": "Peak demand — F&G 14, historic fear = classic DCA signal", "pct": 88, "color": "#4ade80" },
+          { "label": "Tax Guides", "value": "21 days to April 15 deadline — peak search window", "pct": 82, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Growth Trajectory Analysis",
+        "items": [
+          "CATALYST UPDATE: Options expiry revised upward to $14.16B (from $13.5B) with max pain pulled to $75K (from $70K). BTC at $70.6K means gravitational pull UPWARD. Implied volatility compressed — institutional traders selling calls at higher strikes = measured bullishness.",
+          "CONGRESS: House Financial Services hearing completed. Bipartisan positive tone on tokenization. Two bills under active discussion. Nasdaq tokenized securities approved 4 days prior. CLARITY Act deal 'in principle.' Most pro-crypto legislative moment of 2026.",
+          "NEW CONTENT: Congressional Tokenization Hearing Guide + BitGo IPO Guide published today from build cycle. Both hit time-sensitive narratives — hearing today, earnings tomorrow.",
+          "BITGO CATALYST: First crypto custody IPO earnings tomorrow Mar 26. Results are a proxy for institutional adoption health. Positive beat + SEC ETF rulings Thu = potential back-to-back bullish signals.",
+          "BERNSTEIN: Reaffirmed $150K year-end BTC target — citing long-term holder strength and corporate treasury accumulation.",
+          "FEAR PERSISTS: F&G at 14, 46+ days below 25. Institutional vs retail divergence at maximum. $304B stablecoins, $2.5B ETF inflows, 16 SEC commodities — strongest fundamentals during extreme fear in crypto history.",
+          "TIME-SENSITIVE: Tax guides 21 days to April 15. Peak search volume window approaching.",
+          "BLOCKED: Git index.lock persists — deploy gap widening. Requires manual intervention."
+        ]
+      },
+      {
+        "title": "Market Context",
+        "metrics": [
+          { "label": "BTC", "value": "$70,600 — resistance $71.5K-$72K, support $67.5K", "pct": 70, "color": "#f59e0b" },
+          { "label": "ETH", "value": "$2,133 (+3.15% 24h)", "pct": 62, "color": "#06b6d4" },
+          { "label": "Fear & Greed", "value": "14 (Extreme Fear — Day 46+)", "pct": 14, "color": "#ef4444" },
+          { "label": "Options Expiry (Fri)", "value": "$14.16B on Deribit — 40% of OI, max pain $75K", "pct": 97, "color": "#f59e0b" },
+          { "label": "SEC ETF Deadline", "value": "91 applications — Thu Mar 27", "pct": 95, "color": "#6366f1" },
+          { "label": "ETF Inflows (Mar)", "value": "$2.5B — 4 straight positive weeks", "pct": 90, "color": "#22c55e" },
+          { "label": "RWA On-Chain", "value": "$26.48B (+5.25% 30d)", "pct": 85, "color": "#22c55e" },
+          { "label": "Stablecoins", "value": "$304B ATH", "pct": 97, "color": "#4ade80" },
+          { "label": "SEC Classified Assets", "value": "16 digital commodities (Mar 17)", "pct": 100, "color": "#22c55e" },
+          { "label": "CLARITY Act", "value": "Stablecoin deal done 'in principle'", "pct": 90, "color": "#22c55e" },
+          { "label": "Nasdaq", "value": "Tokenized securities trading approved", "pct": 95, "color": "#4ade80" },
+          { "label": "Bernstein Target", "value": "$150K BTC year-end", "pct": 80, "color": "#22c55e" },
+          { "label": "BitGo ($BTGO)", "value": "Q4+FY2025 earnings Mar 26", "pct": 85, "color": "#f59e0b" },
+          { "label": "degen0x Published", "value": "500+ unique slugs", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "files_created": [
+      "reports/community-drafts/2026-03-25-social-drafts-v10.md",
+      "reports/community-drafts/2026-03-25-social-card-congress-tokenization-recap.svg",
+      "reports/community-drafts/2026-03-25-social-card-bitgo-ipo-earnings.svg"
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"]
+  }
+}

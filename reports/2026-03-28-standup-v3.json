@@ -1,0 +1,78 @@
+{
+  "date": "2026-03-28",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle 3 standup (Mar 28 late). BTC $66,000–$66,194 (flat, $66K support still holding). ETH ~$1,985 (sub-$2K day 3+). F&G 12 (Extreme Fear, 49+ day streak). KEY DELTA: Bitcoin ETF 4-week inflow streak broken — $296M weekly outflows, $225.6M single-day outflow Mar 27 led by BlackRock IBIT ($201.7M). Uncommitted files rose to 286 (+13 from cycle 2). All 6 agents completed cycle 2 — 2 new learn guides (Solana LST, RWA vs DeFi Yield), 2 OG images, 3 tweets, Newsletter v36, SVG social card. Deploy remains P0 for 13th consecutive cycle.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "BTC: $66,000–$66,194. Flat since cycle 2 standup. Testing $66K support for 3rd day. Down 24.6% YTD, 48% from Oct 2025 ATH ($126K). 28% below 200-day SMA. Iran/geopolitical tensions remain primary macro headwind.",
+          "ETH: ~$1,985, down 4.05% on the day. Sub-$2K for 3rd+ consecutive day. ETH/BTC at 0.0301 (lowest since Feb 2024). $253M mystery whale accumulation since Mar 1 continues.",
+          "F&G INDEX: 12 (Extreme Fear). 49+ consecutive days — approaching longest streak since post-FTX Oct 2022. Volume contracted 18% to $95.99B (below 30-day avg $108B) — exhaustion not panic selling.",
+          "ETF FLOWS — KEY DELTA: Bitcoin ETF 4-week inflow streak BROKEN. $296M weekly outflows. Mar 27 saw $225.6M single-day outflow: BlackRock IBIT -$201.67M, Bitwise BITB -$18.60M, Ark ARKB -$5.35M. Capital 'avoiding directional risk' — not selling conviction but refusing new exposure until geopolitical clarity. March total flows now negative.",
+          "SEC ETF RULING (Mar 27 aftermath): Results still trickling. XRP spot ETFs live ($1.44B cumulative). SOL/LTC staking ETFs trading. 16 tokens classified as digital commodities (Mar 17). No major new approvals announced in last cycle. $13.5B BTC+ETH options expired on Deribit (largest quarterly settlement of 2026).",
+          "DELTA FROM LAST CYCLE (standup-v2): BTC stable ($66K range unchanged). ETH dipped slightly ($1,997→$1,985). F&G unchanged at 12. MAJOR: ETF outflow data now confirmed — sentiment shift from 'cautious inflows' to 'active withdrawal'. Uncommitted files 273→286 (+13 from build + design cycles). No new commits. No new pages deployed."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "CYCLE 3 OF MARCH 28. Two full rotations (all 6 agents each) completed today. This standup opens cycle 3. 11 total agent runs so far today (3 standups, 1 build, 1 publish, 2 designs, 2 community, 2 eod).",
+          "WHAT SHIPPED IN CYCLE 2: 2 new learn guides (Solana LST Comparison: Marinade vs Jito vs Sanctum, RWA Yield vs DeFi Yield Comparison) with full SEO + FAQ schemas. 2 OG images (LST comparison, RWA vs DeFi yield). UX responsive fixes on both pages (clamp headings, touch targets, table padding). 3 tweets drafted (#217-219: fear streak record, ETH undervalued thread, Monday tool spotlight). Newsletter v36 weekly digest. 1 SVG social card (fear streak record).",
+          "CARRY-OVER BLOCKERS (UNCHANGED): (1) Deploy — 286 uncommitted files (+13 from cycle 2), 13th cycle flagging P0. (2) 2 PUBLISH_QUEUE items blocked (wallet security slug mismatch + restaking no page.tsx). (3) 105 legacy published slugs missing page.tsx (81.6% coverage). (4) 145 TS errors in 6 files (stable, non-blocking). (5) 17 duplicate slugs in PUBLISHED_PAGES (cosmetic). (6) Full build OOM in VM — Vercel CI untested.",
+          "GIT STATUS: HEAD at 21aaf5b (unchanged since Mar 25 batch deploy). 286 files pending (was 273 at cycle 2 standup). All changes additive — no destructive modifications.",
+          "PUBLISHED PAGES: 577 live (unchanged since cycle 1 promotion of Citrea + Unichain). Content velocity: ~4 pages/day average this week. Total content drafted: 219 tweets, 36 newsletter versions, 48+ SVG social cards."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — DEPLOY [CRITICAL, 13th CONSECUTIVE CYCLE]: 286 uncommitted files. Now spans 3 days and 11+ agent runs. Every learn page, OG image, UX fix from 50+ agent runs is invisible to production. Google cannot index. The ETF outflow reversal makes timely content even more critical — our ETF guides need to reflect current sentiment. Jefe: one git commit + push unlocks everything. 5-minute action, highest leverage possible.",
+          "PRIORITY 2 — ETF OUTFLOW REVERSAL CONTENT [NEW, TIME-SENSITIVE]: The 4-week inflow streak breaking is a major narrative shift. Build: 'Bitcoin ETF Outflows: What Happened March 2026', 'BlackRock IBIT Sees Largest Single-Day Outflow', 'Are Institutions Selling Bitcoin?'. This is fresh search intent — few competitors have published yet. Our ETF guide is already a top performer — extend it.",
+          "PRIORITY 3 — EXTREME FEAR RECORD + OPTIONS EXPIRY: F&G at 12 for 49+ days approaching all-time record streak. $13.5B options just expired (largest quarterly of 2026). Combined with whale accumulation divergence (270K BTC + $253M ETH), this creates powerful 'smart money vs retail panic' narrative. Build reactive content and amplify through social channels (tweets #217-219 already queued)."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE — 286 files pending deploy (CRITICAL)", "pct": 12, "color": "#ef4444" },
+          { "label": "Published Pages", "value": "577 total (unchanged this cycle)", "pct": 98, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "2 pages blocked (slug mismatch + no page.tsx)", "pct": 40, "color": "#f59e0b" },
+          { "label": "Pages Built Today", "value": "6 (Citrea, Unichain, Railgun, AI Agents, Solana LST, RWA Yield)", "pct": 100, "color": "#4ade80" },
+          { "label": "OG Images Created Today", "value": "6 + 3 SVG social cards", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Posts Drafted Today", "value": "9 tweets (#211-219) + Newsletter v35+v36", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "286 (+13 since last cycle)", "pct": 5, "color": "#ef4444" },
+          { "label": "Page.tsx Coverage", "value": "~82% (472/577 published slugs)", "pct": 82, "color": "#4ade80" },
+          { "label": "API Routes Healthy", "value": "6/6 (correct cache TTLs + fallbacks)", "pct": 100, "color": "#4ade80" },
+          { "label": "TS Errors", "value": "145 in 6 files (stable, non-blocking)", "pct": 20, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "$66,000–$66,194 ($66K support holding)", "pct": 45, "color": "#ef4444" },
+          { "label": "ETH Price", "value": "~$1,985 (sub-$2K, day 3+, -4.05%)", "pct": 35, "color": "#ef4444" },
+          { "label": "Fear & Greed", "value": "12 (Extreme Fear — 49+ day streak)", "pct": 12, "color": "#ef4444" },
+          { "label": "ETF Flows (Weekly)", "value": "-$296M (4-week inflow streak BROKEN)", "pct": 10, "color": "#ef4444" },
+          { "label": "ETF Daily (Mar 27)", "value": "-$225.6M (IBIT -$201.7M)", "pct": 10, "color": "#ef4444" },
+          { "label": "Options Expiry", "value": "$13.5B BTC+ETH (largest Q1 2026)", "pct": 50, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "6 of 6 (all agents + this standup)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~10.25h", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (6 agents: full rotation)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$1,248 (11 agent runs across 2.5 rotations)", "pct": 10, "color": "#4ade80" },
+          { "label": "Agents Ran Today (total)", "value": "11 runs (standup×3, build×1, publish×1, design×2, community×2, eod×2)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Cost Breakdown Today", "value": "Standup $135 + Build $233 + Publish $55 + Design $120 + Community $82 + EOD $126 = $751 prior + $497 this cycle", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "SKIPPED — api.resend.com blocked by proxy allowlist (HTTP 403 from egress proxy). Same infrastructure limitation as all previous cycles. Manual send or proxy allowlist change needed."
+  }
+}

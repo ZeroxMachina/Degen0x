@@ -2,6 +2,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import BackToTop from "@/components/BackToTop";
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -45,7 +46,7 @@ const articleSchema = generateArticleSchema({
   datePublished: "2026-03-25T00:00:00Z",
   dateModified: "2026-03-25T00:00:00Z",
   author: "degen0x Team",
-  image: "https://degen0x.com/og-bitgo-ipo.png",
+  image: "https://degen0x.com/og-bitgo-ipo.svg",
   wordCount: 3000,
 });
 
@@ -448,6 +449,7 @@ export default function BitGoIPOGuidePage() {
           ⚠️ This guide is for informational and educational purposes only. It is not financial advice and should not be construed as investment advice. Cryptocurrency and digital asset investments involve substantial risk. Past performance is not indicative of future results. BitGo&apos;s stock (BTGO) may be volatile. Always conduct your own due diligence and consult with a financial advisor before making investment decisions. Data sourced from public announcements, SEC filings, and market reports as of March 25, 2026.
         </div>
       </article>
+      <BackToTop />
     </main>
   );
 }

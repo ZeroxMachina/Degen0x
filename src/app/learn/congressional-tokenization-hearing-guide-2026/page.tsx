@@ -2,6 +2,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import BackToTop from "@/components/BackToTop";
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -45,7 +46,7 @@ const articleSchema = generateArticleSchema({
   datePublished: "2026-03-25T00:00:00Z",
   dateModified: "2026-03-25T00:00:00Z",
   author: "degen0x Team",
-  image: "https://degen0x.com/og-congressional-hearing-2026.png",
+  image: "https://degen0x.com/og-congressional-hearing-2026.svg",
   wordCount: 3000,
 });
 
@@ -448,6 +449,7 @@ export default function CongressionalTokenizationHearingPage() {
           ⚠️ This guide is for informational purposes only. It is not legal or financial advice. Congressional hearings, proposed legislation, and regulatory actions are subject to change. Always conduct your own research before making investment decisions. Data sourced from public congressional records, SEC/CFTC announcements, and on-chain metrics as of March 25, 2026.
         </div>
       </article>
+      <BackToTop />
     </main>
   );
 }

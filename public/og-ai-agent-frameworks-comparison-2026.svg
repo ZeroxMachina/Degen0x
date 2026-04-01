@@ -1,0 +1,118 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0f2e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <!-- Logo circle top-left -->
+  <circle cx="60" cy="60" r="35" fill="#1a1f3a" stroke="url(#accentGradient)" stroke-width="2" opacity="0.8"/>
+  <text x="60" y="70" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#e6edf3" text-anchor="middle" dominant-baseline="middle">0x</text>
+
+  <!-- AI Robot/Agent icons - right side -->
+  <!-- Robot head 1 -->
+  <g opacity="0.5">
+    <rect x="1020" y="80" width="50" height="50" fill="#1a1f3a" stroke="#4f46e5" stroke-width="2" rx="6"/>
+    <!-- Eyes -->
+    <circle cx="1035" cy="100" r="3" fill="#4f46e5"/>
+    <circle cx="1055" cy="100" r="3" fill="#4f46e5"/>
+    <!-- Mouth -->
+    <path d="M 1035 115 Q 1045 120 1055 115" stroke="#4f46e5" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Robot head 2 -->
+  <g opacity="0.5">
+    <rect x="1020" y="160" width="50" height="50" fill="#1a1f3a" stroke="#0891b2" stroke-width="2" rx="6"/>
+    <!-- Eyes -->
+    <circle cx="1035" cy="180" r="3" fill="#0891b2"/>
+    <circle cx="1055" cy="180" r="3" fill="#0891b2"/>
+    <!-- Mouth -->
+    <path d="M 1035 195 Q 1045 200 1055 195" stroke="#0891b2" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Robot head 3 -->
+  <g opacity="0.5">
+    <rect x="1020" y="240" width="50" height="50" fill="#1a1f3a" stroke="#d97706" stroke-width="2" rx="6"/>
+    <!-- Eyes -->
+    <circle cx="1035" cy="260" r="3" fill="#d97706"/>
+    <circle cx="1055" cy="260" r="3" fill="#d97706"/>
+    <!-- Mouth -->
+    <path d="M 1035 275 Q 1045 280 1055 275" stroke="#d97706" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Comparison matrix hint - left side -->
+  <!-- Grid lines -->
+  <g opacity="0.3">
+    <!-- Vertical lines -->
+    <line x1="50" y1="450" x2="50" y2="570" stroke="#4f46e5" stroke-width="1"/>
+    <line x1="120" y1="450" x2="120" y2="570" stroke="#4f46e5" stroke-width="1"/>
+    <line x1="190" y1="450" x2="190" y2="570" stroke="#4f46e5" stroke-width="1"/>
+
+    <!-- Horizontal lines -->
+    <line x1="50" y1="450" x2="190" y2="450" stroke="#4f46e5" stroke-width="1"/>
+    <line x1="50" y1="490" x2="190" y2="490" stroke="#0891b2" stroke-width="1"/>
+    <line x1="50" y1="530" x2="190" y2="530" stroke="#d97706" stroke-width="1"/>
+    <line x1="50" y1="570" x2="190" y2="570" stroke="#4f46e5" stroke-width="1"/>
+  </g>
+
+  <!-- Matrix labels -->
+  <text x="85" y="475" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#4f46e5" text-anchor="middle">E</text>
+  <text x="85" y="510" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#0891b2" text-anchor="middle">V</text>
+  <text x="85" y="550" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#d97706" text-anchor="middle">G</text>
+
+  <!-- Agent framework badges - top right area -->
+  <g opacity="0.4">
+    <rect x="1030" y="310" width="80" height="35" fill="#1a1f3a" stroke="#4f46e5" stroke-width="1.5" rx="4"/>
+    <text x="1070" y="330" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#4f46e5" text-anchor="middle">ElizaOS</text>
+  </g>
+
+  <g opacity="0.4">
+    <rect x="1030" y="355" width="80" height="35" fill="#1a1f3a" stroke="#0891b2" stroke-width="1.5" rx="4"/>
+    <text x="1070" y="375" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#0891b2" text-anchor="middle">Virtuals</text>
+  </g>
+
+  <g opacity="0.4">
+    <rect x="1030" y="400" width="80" height="35" fill="#1a1f3a" stroke="#d97706" stroke-width="1.5" rx="4"/>
+    <text x="1070" y="420" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#d97706" text-anchor="middle">GAME</text>
+  </g>
+
+  <!-- Glass-morphism card -->
+  <rect x="120" y="100" width="1000" height="380" fill="#ffffff" opacity="0.03" rx="16"/>
+  <rect x="120" y="100" width="1000" height="380" fill="none" stroke="url(#accentGradient)" stroke-width="1" opacity="0.3" rx="16"/>
+
+  <!-- Main title -->
+  <text x="600" y="200" font-family="Inter, sans-serif" font-size="52" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-0.5">AI Agent Frameworks</text>
+  <text x="600" y="260" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="url(#accentGradient)" text-anchor="middle" letter-spacing="-0.5">Comparison 2026</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="330" font-family="Inter, sans-serif" font-size="22" font-weight="400" fill="#8b949e" text-anchor="middle">ElizaOS vs Virtuals vs GAME vs ARC</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="622" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <!-- Footer text -->
+  <text x="1140" y="610" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#8b949e" text-anchor="end">degen0x.com</text>
+
+  <!-- Decorative AI nodes -->
+  <circle cx="300" cy="520" r="4" fill="#4f46e5" opacity="0.6"/>
+  <circle cx="360" cy="510" r="3" fill="#0891b2" opacity="0.5"/>
+  <circle cx="410" cy="540" r="4" fill="#d97706" opacity="0.6"/>
+  <circle cx="460" cy="515" r="3" fill="#4f46e5" opacity="0.5"/>
+
+  <!-- Connection lines between nodes -->
+  <line x1="300" y1="520" x2="360" y2="510" stroke="#4f46e5" stroke-width="1" opacity="0.3"/>
+  <line x1="360" y1="510" x2="410" y2="540" stroke="#0891b2" stroke-width="1" opacity="0.3"/>
+  <line x1="410" y1="540" x2="460" y2="515" stroke="#d97706" stroke-width="1" opacity="0.3"/>
+</svg>

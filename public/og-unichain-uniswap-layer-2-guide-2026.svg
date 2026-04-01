@@ -1,0 +1,79 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="uniGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF007A;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0.3" />
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#080d1c"/>
+
+  <circle cx="120" cy="120" r="170" fill="url(#uniGradient)" filter="url(#softGlow)"/>
+  <circle cx="1080" cy="520" r="210" fill="url(#uniGradient)" filter="url(#softGlow)"/>
+
+  <g opacity="0.2">
+    <circle cx="950" cy="100" r="60" stroke="#FF007A" stroke-width="2" fill="none"/>
+    <path d="M 920 70 L 980 130 M 980 70 L 920 130" stroke="#FF007A" stroke-width="2" opacity="0.7"/>
+    <path d="M 930 80 L 970 120" stroke="#ef4444" stroke-width="2"/>
+    <path d="M 970 80 L 930 120" stroke="#ef4444" stroke-width="2"/>
+  </g>
+
+  <g opacity="0.15" filter="url(#glow)">
+    <circle cx="200" cy="520" r="50" stroke="#FF007A" stroke-width="2" fill="none"/>
+    <circle cx="200" cy="520" r="30" stroke="#ef4444" stroke-width="1" fill="none"/>
+    <path d="M 170 520 L 230 520 M 200 490 L 200 550" stroke="#FF007A" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#e6edf3">Unichain Guide</text>
+  <text x="60" y="170" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#e6edf3">2026</text>
+
+  <text x="60" y="235" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#8b949e">Uniswap's Purpose-Built DeFi L2</text>
+
+  <g opacity="0.05">
+    <rect x="60" y="280" width="1080" height="280" rx="16" fill="url(#mainGradient)"/>
+  </g>
+
+  <rect x="80" y="300" width="300" height="240" rx="12" fill="#1a1f35" stroke="#FF007A" stroke-width="1" opacity="0.7"/>
+  <circle cx="130" cy="340" r="20" fill="url(#mainGradient)"/>
+  <text x="170" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#8b949e">Swap Volume</text>
+  <text x="100" y="385" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ef4444">$100B+</text>
+  <text x="100" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#8b949e">All-time cumulative</text>
+
+  <rect x="450" y="300" width="300" height="240" rx="12" fill="#1a1f35" stroke="#ef4444" stroke-width="1" opacity="0.7"/>
+  <circle cx="500" cy="340" r="20" fill="url(#mainGradient)"/>
+  <text x="540" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#8b949e">Block Time</text>
+  <text x="470" y="385" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#06b6d4">1 Second</text>
+  <text x="470" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#8b949e">OP Stack network</text>
+
+  <rect x="820" y="300" width="320" height="240" rx="12" fill="#1a1f35" stroke="#0891b2" stroke-width="1" opacity="0.7"/>
+  <circle cx="870" cy="340" r="20" fill="url(#mainGradient)"/>
+  <text x="910" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#8b949e">Revenue Share</text>
+  <text x="840" y="385" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#22c55e">65%</text>
+  <text x="840" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#8b949e">To liquidity providers</text>
+
+  <text x="1140" y="610" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#8b949e" text-anchor="end">degen0x.com</text>
+
+  <line x1="60" y1="625" x2="1140" y2="625" stroke="url(#mainGradient)" stroke-width="2" opacity="0.5"/>
+</svg>

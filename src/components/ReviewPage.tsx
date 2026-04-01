@@ -74,15 +74,27 @@ export default function ReviewPage({
       <AffiliateDisclosure />
 
       <div className="flex items-start justify-between gap-4 mb-8">
-        <div>
-          <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-2">
-            {product.name} Review {CURRENT_YEAR}
-          </h1>
-          <p className="text-[var(--color-text-secondary)]">
-            Last updated: {lastUpdated || `${CURRENT_MONTH} ${CURRENT_YEAR}`}
-          </p>
-          <div className="mt-2">
-            <StarRating rating={product.rating} size="lg" />
+        <div className="flex items-start gap-4">
+          {product.logo && (
+            <img
+              src={product.logo}
+              alt={`${product.name} logo`}
+              width={56}
+              height={56}
+              className="rounded-xl flex-shrink-0 mt-1"
+              style={{ width: 56, height: 56, objectFit: 'contain' }}
+            />
+          )}
+          <div>
+            <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-2">
+              {product.name} Review {CURRENT_YEAR}
+            </h1>
+            <p className="text-[var(--color-text-secondary)]">
+              Last updated: {lastUpdated || `${CURRENT_MONTH} ${CURRENT_YEAR}`}
+            </p>
+            <div className="mt-2">
+              <StarRating rating={product.rating} size="lg" />
+            </div>
           </div>
         </div>
         <a

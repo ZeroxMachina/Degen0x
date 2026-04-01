@@ -1,0 +1,54 @@
+{
+  "date": "2026-03-28",
+  "block": "build",
+  "report": {
+    "status": "completed",
+    "summary": "Built 2 learn guides targeting bear market investing and smart money on-chain signals — both highly timely with F&G Index at 10 for 46+ consecutive days",
+    "sections": [
+      {
+        "title": "Research Brief",
+        "items": [
+          "Crypto Fear & Greed Index at 10 — longest extreme fear streak on record (46+ days), surpassing Terra/Luna and COVID crashes",
+          "Historical data: buying when F&G < 15 yields median 90-day return of +38.4%; fear-based DCA delivered 1,145% returns (2018-2025)",
+          "Whale wallets (1,000+ BTC) accumulated 270,000 BTC in past 30 days — largest monthly accumulation since 2013",
+          "Five on-chain bottom signals flashing simultaneously: MVRV Z-Score at 1.2, aSOPR below 1.0, realized profit collapsed 96%, hashrate down 22%, exchange reserves at 7-year low",
+          "Smart money tools landscape: Glassnode, Nansen, Arkham, CryptoQuant, Dune Analytics, DefiLlama all providing institutional-grade on-chain intelligence",
+          "Retail-institutional divergence: retail aggressively reducing exposure while institutions accumulate — classic contrarian setup"
+        ]
+      },
+      {
+        "title": "Content Created",
+        "items": [
+          "crypto-bear-market-investing-guide-2026: ~3,400 word comprehensive guide covering historical extreme fear returns, fear-weighted DCA strategy (with multiplier table), on-chain bottom signals, asset allocation framework, risk management rules, institutional vs retail behavior, common mistakes. 6 FAQ items. 5 internal links to existing guides/tools.",
+          "smart-money-onchain-signals-guide-2026: ~3,600 word advanced guide covering smart money definition, exchange flow signals (5-row signal table), whale accumulation patterns (cohort analysis table), key on-chain metrics (MVRV, aSOPR, NVT, realized profit), 7-platform tools comparison table, practical signal-reading framework, limitations/caveats, March 2026 snapshot. 6 FAQ items. 5 internal links."
+        ]
+      },
+      {
+        "title": "Pages Scaffolded",
+        "pages": [
+          { "slug": "/learn/crypto-bear-market-investing-guide-2026", "status": "pass" },
+          { "slug": "/learn/smart-money-onchain-signals-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "SEO Optimization",
+        "items": [
+          "Bear Market Guide — Title: 'Crypto Bear Market Investing Guide 2026: Buy the Fear | degen0x' (58 chars), Target keyword: 'crypto bear market investing 2026', Schemas: Article + FAQ (6 questions)",
+          "Smart Money Guide — Title: 'Smart Money On-Chain Signals Guide 2026: Track Whale & Institutional Flows | degen0x' (85 chars), Target keyword: 'smart money on-chain signals 2026', Schemas: Article + FAQ (6 questions)",
+          "Both pages include: OpenGraph article metadata with publishedTime, Twitter cards, canonical URLs, 10 keywords each, Breadcrumb navigation, internal linking to 5 existing guides/tools each",
+          "Cross-linking: Both pages link to each other and to crypto-dca-strategy-guide-2026, onchain-analytics-guide-2026, crypto-risk-management-guide-2026, crypto-market-cycles-guide-2026, stablecoin-yield-strategies-2026"
+        ]
+      },
+      {
+        "title": "Notes",
+        "items": [
+          "Both pages added to PUBLISH_QUEUE in published-pages.ts",
+          "No interactive components needed — these are educational content pages with static data tables",
+          "Both pages follow exact same styling/structure pattern as crypto-dca-strategy-guide-2026 (verified reference page)",
+          "Content is highly timely given current market conditions (F&G at 10, record fear streak) — should capture search demand for bear market investing queries"
+        ]
+      }
+    ],
+    "skills_used": ["researcher", "contentWriter", "seo", "pageScaffold", "programmer"]
+  }
+}

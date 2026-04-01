@@ -802,16 +802,175 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   // ── Daily Publish Cycle — 2026-03-25 (batch 11) ──────────────
   "/learn/katana-perps-idex-acquisition-guide",
   "/learn/tokenized-funds-institutional-defi-guide",
+
+  // ── Daily Publish Cycle — 2026-03-25 (batch 12) ──────────────
+  "/learn/congressional-tokenization-hearing-guide-2026",
+  "/learn/bitgo-ipo-crypto-infrastructure-guide",
+
+  // ── Daily Publish Cycle — 2026-03-25 (batch 13) ──────────────
+  "/learn/nasdaq-tokenized-equities-trading-guide-2026",
+  "/learn/grayscale-hype-etf-defi-guide",
+
+  // ── Daily Publish Cycle — 2026-03-25 (batch 14) ──────────────
+  "/learn/socialfi-creator-tokens-guide-2026",
+  "/learn/crypto-options-strategies-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-25 (batch 15) ──────────────
+  "/learn/defi-insurance-protocols-guide-2026",
+  "/learn/distributed-validator-technology-dvt-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-25 (batch 16) ──────────────
+  "/learn/ai-agent-frameworks-comparison-2026",
+  "/learn/rwa-platforms-comparison-2026",
+
+  // ── Daily Build Cycle — 2026-03-25 (batch 17) ──────────────
+  "/learn/ethereum-verkle-trees-hegota-guide-2026",
+  "/learn/sui-hashi-bitcoin-defi-guide",
+
+  // ── Daily Publish Cycle — 2026-03-25 (batch 18) ──────────────
+  "/learn/solver-networks-order-flow-auctions-guide-2026",
+  "/learn/aptos-blockchain-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-25 (batch 19) ──────────────
+  "/learn/onchain-privacy-infrastructure-guide-2026",
+  "/learn/world-chain-proof-of-personhood-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-25 (batch 20) ──────────────
+  "/learn/crypto-on-ramps-off-ramps-guide-2026",
+  "/learn/crypto-portfolio-allocation-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-25 (batch 21) ──────────────
+  "/learn/tokenized-real-estate-guide-2026",
+  "/learn/web3-gaming-gamefi-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-27 ──────────────────────────
+  "/crypto-loans/calculators/loan-calculator",
+  "/crypto-loans/calculators/ltv-calculator",
+  "/exchanges/best/bitcoin",
+  "/exchanges/best/usa",
+  "/crypto-cards/compare/crypto-com-vs-binance-card",
+
+  // ── Daily Publish Cycle — 2026-03-27 (batch 2) ──────────────────
+  "/learn/virtuals-protocol-guide",
+  "/learn/grass-protocol-depin-guide",
+
+  // ── Daily Build Cycle — 2026-03-27 ──────────────────────────
+  "/learn/perp-dex-wars-comparison-2026",
+  "/learn/paradex-zk-perpetuals-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-27 (batch 3) ──────────────
+  "/learn/initia-blockchain-guide-2026",
+  "/learn/kite-ai-payment-blockchain-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-27 (batch 4) ──────────────
+  "/learn/eclipse-svm-layer-2-guide-2026",
+  "/learn/walrus-decentralized-storage-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-27 (batch 5) ──────────────
+  "/learn/desci-decentralized-science-guide-2026",
+  "/learn/gamblefi-onchain-betting-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-27 (batch 6) ──────────────
+  "/crypto-cards/best/prepaid",
+  "/crypto-cards/best/staking-rewards",
+  "/crypto-loans/best/low-interest",
+  "/crypto-loans/best/defi",
+  "/tools/dao-treasury-dashboard",
+
+  // ── Daily Publish Cycle — 2026-03-27 (batch 7, learn guides) ──
+  "/learn/shared-sequencing-decentralized-sequencers-guide-2026",
+  "/learn/wrapped-bitcoin-comparison-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-27 (batch 8, automated) ──
+  "/learn/defi-lending-protocol-comparison-2026",
+  "/learn/defi-yield-aggregators-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-28 ──────────────────────────
+  "/learn/railgun-privacy-defi-guide-2026",
+  "/learn/no-code-ai-trading-agents-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-28 (batch 2) ──────────────
+  "/learn/citrea-bitcoin-zk-rollup-guide-2026",
+  "/learn/unichain-uniswap-layer-2-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-28 (batch 3) ──────────────
+  "/learn/solana-lst-comparison-marinade-jito-sanctum-2026",
+  "/learn/rwa-yield-vs-defi-yield-comparison-2026",
+
+  // ── Daily Publish Cycle — 2026-03-28 (batch 4) ──────────────
+  "/learn/ton-defi-ecosystem-guide-2026",
+  "/learn/sui-defi-ecosystem-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-28 (batch 5, automated) ──
+  "/learn/dyor-token-research-guide-2026",
+  "/learn/crypto-leverage-trading-guide-2026",
+
+  // ── Daily Build Cycle — 2026-03-28 (batch 6) ──────────────
+  "/learn/smart-contract-security-audit-guide-2026",
+  "/learn/data-availability-celestia-eigenda-avail-comparison-2026",
+
+  // ── Daily Publish Cycle — 2026-03-28 (batch 7, automated) ──
+  "/crypto-cards/compare/nexo-vs-crypto-com",
+  "/crypto-cards/compare/fold-vs-coinbase-card",
+  "/crypto-cards/reviews/plutus-card",
+  "/wallets/reviews/zengo",
+  "/wallets/reviews/zerion",
+
+  // ── Daily Publish Cycle — 2026-03-28 (batch 8, automated) ──
+  "/learn/starknet-validity-rollup-guide-2026",
+  "/learn/crypto-etf-in-kind-redemption-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-28 (batch 9, automated) ──
+  "/learn/depin-ecosystem-guide-2026",
+  "/learn/crypto-gas-fees-transaction-costs-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-28 (batch 10, automated) ──
+  "/learn/crypto-bear-market-investing-guide-2026",
+  "/learn/smart-money-onchain-signals-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-28 (batch 11, automated) ──
+  "/learn/yield-tokenization-guide-2026",
+  "/tools/token-security-scanner",
+
+  // ── Daily Publish Cycle — 2026-03-28 (batch 12, automated) ──
+  "/learn/tariffs-trade-war-crypto-impact-guide-2026",
+  "/tools/stablecoin-yield-tracker",
+
+  // ── Daily Publish Cycle — 2026-03-29 (automated) ──────────────
+  "/learn/telegram-mini-apps-ton-gaming-guide-2026",
+  "/learn/onchain-forex-stablecoin-diversity-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-29 (batch 2, automated) ──
+  "/learn/cross-chain-intents-guide",
+
+  // ── Daily Publish Cycle — 2026-03-29 (batch 3, automated) ──
+  "/learn/crypto-technical-analysis-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-03-29 (batch 4, automated) ──
+  "/learn/crypto-wallet-security-guide-2026",
+  "/learn/crypto-passive-income-guide-2026",
+  "/learn/cryptocurrency-beginners-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-04-01 (automated) ─────────────
+  "/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026",
+  "/learn/tokenized-treasury-bills-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-04-01 (batch 2, automated) ──
+  "/learn/know-your-agent-kya-guide-2026",
+  "/learn/sui-private-transactions-seal-framework-guide-2026",
 ]);
 
 /**
  * PUBLISH QUEUE — ordered by priority (publish 20/day)
  * Move slugs up into PUBLISHED_PAGES each day.
+ *
+ * NOTE 2026-03-27: Two pages have mismatched slugs and were NOT promoted:
+ *   - /learn/crypto-wallet-security-token-approvals-guide (no page.tsx — found crypto-wallet-security-guide-2026 instead)
+ *   Fix the slugs or scaffold the pages before next publish cycle.
  */
 export const PUBLISH_QUEUE: readonly string[] = [
-  // ── Daily Build Cycle — 2026-03-25 (batch 12) ──────────────
-  "/learn/congressional-tokenization-hearing-guide-2026",
-  "/learn/bitgo-ipo-crypto-infrastructure-guide",
+  "/learn/stablecoin-payments-infrastructure-guide-2026",
+  "/learn/omnichain-defi-unified-liquidity-guide-2026",
 ];
 
 /**

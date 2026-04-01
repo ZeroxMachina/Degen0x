@@ -1,0 +1,69 @@
+{
+  "date": "2026-03-28",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted 2 learn guides (Starknet validity rollup, Crypto ETF in-kind redemption) to PUBLISHED_PAGES as batch 8; both pass page-level QA; 2 blocked pages remain in queue pending slug fixes; deploy awaits git push to Vercel.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/starknet-validity-rollup-guide-2026", "status": "pass" },
+          { "slug": "/learn/crypto-etf-in-kind-redemption-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages with page.tsx", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "H1 tags present", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Metadata export", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "JSON-LD structured data", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Breadcrumbs present", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "OpenGraph tags", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Twitter card meta", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Full build (npm run build)", "value": "Skipped (VM OOM)", "pct": 0, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko /api/prices", "value": "Healthy (60s cache, stale fallback)", "pct": 100, "color": "#4ade80" },
+          { "label": "CoinGecko /api/trending", "value": "Healthy (300s cache, stale fallback)", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama /api/defi-yields", "value": "Healthy (300s cache)", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate limiter", "value": "Active (token bucket, per-route limits)", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache strategy", "value": "Multi-layer (fresh → API → stale → fallback)", "pct": 95, "color": "#4ade80" },
+          { "label": "API routes operational", "value": "18 endpoints", "pct": 100, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "metrics": [
+          { "label": "Files modified", "value": "src/lib/published-pages.ts", "pct": 100, "color": "#4ade80" },
+          { "label": "Deploy method", "value": "Awaiting git push → Vercel CI", "pct": 50, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Blocked Pages (still in queue)",
+        "metrics": [
+          { "label": "/learn/crypto-wallet-security-token-approvals-guide", "value": "No page.tsx (slug mismatch — found crypto-wallet-security-guide-2026)", "pct": 0, "color": "#ef4444" },
+          { "label": "/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026", "value": "No page.tsx found", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "queue_status": {
+      "promoted_this_batch": 2,
+      "blocked": 2,
+      "remaining_in_queue": 2,
+      "total_published_estimate": 920
+    },
+    "notes": [
+      "Batch 8 promoted 2 learn guides with full SEO markup (JSON-LD, OG, breadcrumbs) — an improvement over batch 7 pages which lacked JSON-LD.",
+      "PUBLISH_QUEUE is now effectively empty (only 2 blocked pages remain). New content must be queued for future daily cycles.",
+      "Full Next.js build OOM in sandbox (Bus error at all heap sizes 2-8GB). Build verification must happen via Vercel CI.",
+      "Blocked page fix needed: rename crypto-wallet-security-token-approvals-guide to match existing crypto-wallet-security-guide-2026, and scaffold restaking-comparison-eigenlayer-symbiotic-karak-2026.",
+      "Data pipeline is healthy: all 3 external API integrations (CoinGecko prices, CoinGecko trending, DefiLlama yields) follow the standard cache → stale → fallback pattern with rate limiting."
+    ]
+  }
+}

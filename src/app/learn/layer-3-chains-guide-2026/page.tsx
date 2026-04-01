@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Breadcrumb from "@/components/Breadcrumb";
+import BackToTop from "@/components/BackToTop";
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -704,6 +705,8 @@ export default function Layer3ChainsGuide() {
               }}>
                 <button
                   onClick={() => setExpandedFaq(expandedFaq === i ? null : i)}
+                  aria-expanded={expandedFaq === i}
+                  aria-controls={`faq-answer-${i}`}
                   style={{
                     width: "100%",
                     padding: "1.25rem",
@@ -717,7 +720,11 @@ export default function Layer3ChainsGuide() {
                     fontSize: "1rem",
                     fontWeight: "600",
                     textAlign: "left",
+                    outline: "none",
+                    borderRadius: "0.75rem",
                   }}
+                  onFocus={(e) => { e.currentTarget.style.boxShadow = `0 0 0 2px ${S.primary}`; }}
+                  onBlur={(e) => { e.currentTarget.style.boxShadow = "none"; }}
                 >
                   {item.q}
                   <span style={{
@@ -730,7 +737,11 @@ export default function Layer3ChainsGuide() {
                 </button>
 
                 {expandedFaq === i && (
-                  <div style={{
+                  <div
+                    id={`faq-answer-${i}`}
+                    role="region"
+                    aria-labelledby={`faq-question-${i}`}
+                    style={{
                     padding: "0 1.25rem 1.25rem 1.25rem",
                     borderTop: `1px solid ${S.border}`,
                     color: S.text2,
@@ -803,6 +814,8 @@ export default function Layer3ChainsGuide() {
             Not financial advice. Do your own research. Past performance ≠ future results.
           </p>
         </div>
+
+        <BackToTop />
       </div>
     </div>
   );

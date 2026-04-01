@@ -1,0 +1,99 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1425"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#bc8cff"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e6edf3"/>
+      <stop offset="100%" stop-color="#c9d1d9"/>
+    </linearGradient>
+    <linearGradient id="glowGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glowGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="4" fill="url(#accent)"/>
+  <circle cx="950" cy="220" r="200" fill="url(#glowGrad1)" opacity="0.5"/>
+  <circle cx="800" cy="400" r="150" fill="url(#glowGrad2)" opacity="0.3"/>
+  <g opacity="0.2" stroke="#6366f1" stroke-width="1.5">
+    <line x1="880" y1="150" x2="1020" y2="200"/>
+    <line x1="880" y1="150" x2="950" y2="300"/>
+    <line x1="880" y1="150" x2="830" y2="280"/>
+    <line x1="1020" y1="200" x2="1080" y2="340"/>
+    <line x1="1020" y1="200" x2="950" y2="300"/>
+    <line x1="950" y1="300" x2="1080" y2="340"/>
+    <line x1="950" y1="300" x2="830" y2="280"/>
+    <line x1="830" y1="280" x2="870" y2="410"/>
+    <line x1="1080" y1="340" x2="1000" y2="430"/>
+    <line x1="870" y1="410" x2="1000" y2="430"/>
+    <line x1="950" y1="300" x2="870" y2="410"/>
+    <line x1="950" y1="300" x2="1000" y2="430"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="880" cy="150" r="14" fill="#6366f1" opacity="0.6"/>
+    <circle cx="1020" cy="200" r="12" fill="#58a6ff" opacity="0.5"/>
+    <circle cx="950" cy="300" r="18" fill="#bc8cff" opacity="0.5"/>
+    <circle cx="830" cy="280" r="10" fill="#6366f1" opacity="0.4"/>
+    <circle cx="1080" cy="340" r="11" fill="#58a6ff" opacity="0.4"/>
+    <circle cx="870" cy="410" r="13" fill="#bc8cff" opacity="0.4"/>
+    <circle cx="1000" cy="430" r="10" fill="#6366f1" opacity="0.4"/>
+  </g>
+  <circle cx="880" cy="150" r="4" fill="#e6edf3" opacity="0.8"/>
+  <circle cx="1020" cy="200" r="3" fill="#e6edf3" opacity="0.7"/>
+  <circle cx="950" cy="300" r="5" fill="#e6edf3" opacity="0.8"/>
+  <circle cx="830" cy="280" r="3" fill="#e6edf3" opacity="0.6"/>
+  <circle cx="1080" cy="340" r="3" fill="#e6edf3" opacity="0.6"/>
+  <circle cx="870" cy="410" r="4" fill="#e6edf3" opacity="0.6"/>
+  <circle cx="1000" cy="430" r="3" fill="#e6edf3" opacity="0.6"/>
+  <g transform="translate(920, 275)" opacity="0.3">
+    <rect x="0" y="0" width="60" height="8" rx="4" fill="#6366f1"/>
+    <rect x="0" y="12" width="60" height="8" rx="4" fill="#58a6ff"/>
+    <rect x="0" y="24" width="60" height="8" rx="4" fill="#bc8cff"/>
+    <rect x="0" y="36" width="60" height="8" rx="4" fill="#3fb950"/>
+  </g>
+  <rect x="60" y="80" width="90" height="28" rx="14" fill="#58a6ff" opacity="0.9"/>
+  <text x="105" y="99" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#0d1117" text-anchor="middle">Staking</text>
+  <rect x="160" y="80" width="60" height="28" rx="14" fill="#bc8cff" opacity="0.9"/>
+  <text x="190" y="99" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#0d1117" text-anchor="middle">DVT</text>
+  <rect x="230" y="80" width="120" height="28" rx="14" fill="#6366f1" opacity="0.9"/>
+  <text x="290" y="99" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">Intermediate</text>
+  <text x="60" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)">Distributed Validator</text>
+  <text x="60" y="228" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)">Technology (DVT)</text>
+  <text x="60" y="278" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)">Guide 2026</text>
+  <text x="60" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#8b949e">SSV Network vs Obol Network · Threshold Cryptography · Lido Simple DVT</text>
+  <g transform="translate(60, 360)">
+    <rect width="170" height="70" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="20" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e">SSV Network</text>
+    <text x="20" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#58a6ff">4M+ ETH</text>
+  </g>
+  <g transform="translate(250, 360)">
+    <rect width="170" height="70" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="20" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e">Obol Network</text>
+    <text x="20" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#bc8cff">$2B Staked</text>
+  </g>
+  <g transform="translate(440, 360)">
+    <rect width="170" height="70" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="20" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e">Operators</text>
+    <text x="20" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#3fb950">1,000+</text>
+  </g>
+  <text x="60" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#8b949e">Key Splitting · Fault Tolerance · Lido Integration · DVT-Lite · Solo Staking</text>
+  <rect y="570" width="1200" height="60" fill="#0d1117" opacity="0.8"/>
+  <text x="60" y="607" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#6366f1">degen0x</text>
+  <text x="155" y="607" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#8b949e">· Learn · 14 min read · March 2026</text>
+  <rect y="626" width="1200" height="4" fill="url(#accent)"/>
+</svg>

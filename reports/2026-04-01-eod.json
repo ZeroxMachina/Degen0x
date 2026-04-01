@@ -1,0 +1,70 @@
+{
+  "date": "2026-04-01",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close Apr 1: 435 uncommitted files (+15 from Mar 29), Day 7 without deploy. 1,235 page.tsx on disk (+2), 606 published slugs (+23), 103 missing page.tsx (-2). 147 TS errors stable. All 6 API routes code-healthy with proper caching. No regressions — deploy remains the singular P0 blocker.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "606 unique published slugs in PUBLISHED_PAGES (up from 583 on Mar 29 — 23 new slugs promoted but invisible to production without deploy)",
+          "1,235 page.tsx files on disk (+2 from Mar 29's 1,233). New learn pages scaffolded since last eod.",
+          "103 legacy slugs missing page.tsx (down from 105 — 2 resolved). Remaining gaps: wallets/*, investing/best/*, taxes/*, learn/*, blog/*",
+          "147 TypeScript errors — UNCHANGED from Mar 29. All non-blocking: 6 learn page JSX issues + structured-data.examples.ts syntax. No new regressions introduced.",
+          "12 modified learn pages in working tree (bitcoin-safe-haven, bitgo-ipo, congressional-tokenization, wallet-security, institutional-adoption, katana-perps, layer-3, leveraged-tokens, lido-v3, onchain-order-book, tokenized-funds, learn/[slug]). All page.tsx present on disk.",
+          "New untracked pages since Mar 29: ai-agent-frameworks, aptos-blockchain, citrea-bitcoin-zk-rollup, cross-chain-intents, crypto-bear-market-investing, crypto-etf-in-kind-redemption — all scaffolded with page.tsx.",
+          "Network egress blocked — unable to verify live HTTP 200 status on degen0x.com. Local code audit is clean."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "6/6 core API routes present on disk: prices (CoinGecko, 60s TTL), fear-greed (Alternative.me, 600s TTL), trending (CoinGecko, 300s TTL), market-metrics (CoinGecko+Alt.me, 60s TTL), market-dominance (CoinGecko, 300s TTL), defi-yields (DefiLlama, 300s TTL)",
+          "All 6 routes implement in-memory caching with proper Cache-Control headers (s-maxage + stale-while-revalidate). No code changes since Mar 14 — data layer fully stable.",
+          "Fallback patterns verified: prices returns stale cache on CoinGecko failure, market-dominance has static FALLBACK_DATA, fear-greed returns stale cache, market-metrics falls back to mock data. defi-yields returns 500 on failure (no stale fallback — minor gap).",
+          "7 supporting routes also present: cache-stats, health, news-rss, newsletter, notifications, standup-email, subscribe.",
+          "CoinGecko free tier still in use — no API key detected. Rate limit risk persists. 3 of 6 core routes hit CoinGecko (prices, trending, market-dominance) plus market-metrics also hits CoinGecko. 4 CoinGecko calls on cold cache could trigger rate limits.",
+          "Network egress blocked — unable to verify live API response health or data freshness from sandbox."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "HEAD at commit 21aaf5b (Mar 25) — now 7 days stale. This is the longest deploy gap since project inception.",
+          "435 uncommitted files (+15 from Mar 29's 420): mix of new learn pages, report files, component updates, OG assets.",
+          "Working tree delta: 993 insertions / 595 deletions across 31 tracked files. Major changes: published-pages.ts (+161 lines), NotificationCenter.tsx refactor, learn page data updates.",
+          "Production build expected to succeed — TS errors are non-blocking (JSX in unimported example files). No new build-breaking patterns detected.",
+          "CRITICAL: 7-day deploy gap means 23 newly published slugs, 6+ new learn pages, UX fixes, and 161 lines of published-pages.ts updates are all blocked from production. Google cannot index any of these.",
+          "No Vercel error data accessible from sandbox — would need Vercel dashboard or CLI auth to check deployment logs."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE (Apr 1 total): 2 standup reports generated. 6+ new learn pages scaffolded (ai-agent-frameworks, aptos-blockchain, citrea-bitcoin-zk-rollup, cross-chain-intents, crypto-bear-market-investing, crypto-etf-in-kind-redemption). 23 new slugs added to PUBLISHED_PAGES.",
+          "DELTA FROM LAST EOD (Mar 29): +15 uncommitted files (420→435), +2 page.tsx (1,233→1,235), +23 published slugs (583→606), -2 missing page.tsx (105→103), TS errors flat at 147, 0 new commits.",
+          "CARRY-OVER BLOCKERS: P0 — git commit + push (435 files, 7 days stale). P1 — 103 missing page.tsx for published slugs. P2 — CoinGecko free tier rate limit risk. P3 — defi-yields has no stale fallback. P4 — 2 blocked queue items (wallet-security slug mismatch, restaking missing page.tsx).",
+          "PUBLISH_QUEUE: 0 active items. Queue is clear but 2 blocked items remain noted in comments.",
+          "NEEDS JEFE: `git add -A && git commit -m 'batch deploy Apr 1' && git push` — this single command unblocks 606 published slugs, 6+ new learn pages, and UX fixes for production. Day 7 is critical."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Slugs", "value": "606 (+23)", "pct": 88, "color": "#4ade80" },
+          { "label": "Pages on Disk", "value": "1,235 (+2)", "pct": 90, "color": "#4ade80" },
+          { "label": "Missing page.tsx", "value": "103 (-2)", "pct": 17, "color": "#f59e0b" },
+          { "label": "TS Errors (non-blocking)", "value": "147 (flat)", "pct": 30, "color": "#f59e0b" },
+          { "label": "API Routes", "value": "6/6 healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Caching Coverage", "value": "6/6 with TTL", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "435 (+15)", "pct": 5, "color": "#ef4444" },
+          { "label": "Days Since Deploy", "value": "7", "pct": 3, "color": "#ef4444" },
+          { "label": "Publish Queue", "value": "0 active (2 blocked)", "pct": 95, "color": "#4ade80" },
+          { "label": "Fallback Coverage", "value": "5/6 routes", "pct": 83, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

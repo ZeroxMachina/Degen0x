@@ -1,0 +1,53 @@
+{
+  "date": "2026-03-25",
+  "block": "community",
+  "report": {
+    "status": "completed",
+    "summary": "Drafted 4 new tweets (#159-162: Institutional Rotation thread, Tax Countdown, Convergence Day Preview, Solver Networks), newsletter v26 convergence preview section, Discord/TG alert v12, and created Convergence Thursday SVG social card.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #159: Institutional Rotation 5-part thread — ETF inflows down 73%, $12.8B tokenized treasury flows, retail capitulation vs institutional repositioning (Thu Mar 27 8AM ET)",
+          "Tweet #160: Tax Season Countdown — 21 days to April 15, links to tax calculator and crypto regulations guide (Thu Mar 27 2PM ET)",
+          "Tweet #161: Convergence Day Preview — $13.5B options expiry, SEC 91 ETF rulings, BTC $5K below max pain (Thu Mar 27 6AM ET)",
+          "Tweet #162: Solver Networks & Order Flow Auctions guide spotlight — CoW Protocol $87B vol (Fri Mar 28 11AM ET)",
+          "Newsletter v26 addition: Convergence Thursday preview + Institutional Divergence deep-dive + new guides recap",
+          "Discord/Telegram Late Night Alert v12 — convergence countdown with tool links and 6 new guide highlights",
+          "Content calendar v39 loaded through Fri Mar 28 (8 posts across Twitter, Discord/TG, Email)"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Fear & Greed Timeline", "value": "+95%", "pct": 95, "color": "#4ade80" },
+          { "label": "Options Calculator", "value": "+93%", "pct": 93, "color": "#4ade80" },
+          { "label": "ETF Complete Guide", "value": "+92%", "pct": 92, "color": "#4ade80" },
+          { "label": "Congressional Tokenization", "value": "+90%", "pct": 90, "color": "#4ade80" },
+          { "label": "Tokenized RWA Guide", "value": "+88%", "pct": 88, "color": "#4ade80" },
+          { "label": "DCA Calculator", "value": "+87%", "pct": 87, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "SVG social card: Convergence Thursday (1200x630, dark theme, 3-column catalyst layout with sentiment bars)",
+          "Card saved to reports/social-cards/2026-03-25-convergence-thursday-card.svg"
+        ]
+      },
+      {
+        "title": "Community Growth Signals",
+        "metrics": [
+          { "label": "Social Posts Drafted (Cumulative)", "value": "162 total", "pct": 100, "color": "#4ade80" },
+          { "label": "SVG Social Cards (Today)", "value": "6 cards", "pct": 100, "color": "#4ade80" },
+          { "label": "Newsletter Versions", "value": "v26 (convergence preview added)", "pct": 100, "color": "#4ade80" },
+          { "label": "Content Calendar", "value": "v39 — loaded through Fri Mar 28", "pct": 100, "color": "#4ade80" },
+          { "label": "Key Narrative", "value": "Convergence Thursday + institutional rotation to tokenized assets", "pct": 95, "color": "#06b6d4" },
+          { "label": "Published Pages", "value": "539 live, 2 in queue", "pct": 99, "color": "#4ade80" },
+          { "label": "Guides to Promote", "value": "6 new (Solver Networks, Aptos, DeFi Insurance, DVT, Verkle Trees, SocialFi)", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"]
+  }
+}

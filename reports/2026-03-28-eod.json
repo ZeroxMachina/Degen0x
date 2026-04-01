@@ -1,0 +1,69 @@
+{
+  "date": "2026-03-28",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close review for Mar 28: 2 new learn pages published with full SEO metadata, 6 API routes structurally healthy, 271 uncommitted files (240 untracked + 31 modified) — deploy remains P0 blocker for 11th consecutive cycle.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "2 pages published today: /learn/railgun-privacy-defi-guide-2026 and /learn/no-code-ai-trading-agents-guide-2026 — both have page.tsx files confirmed present.",
+          "Both pages have complete SEO metadata: title (<70 chars), meta description (>50 chars), OpenGraph tags (title, description, image, type, publishedTime), Twitter cards, JSON-LD structured data (article + FAQ schemas).",
+          "Page existence audit: 556 unique published slugs, 105 legacy slugs still missing page.tsx (long-standing — mostly Day 1-7 pillar pages never scaffolded).",
+          "17 duplicate slugs in PUBLISHED_PAGES (12 tools from Day 2/Day 7 overlap, plus ecosystem/hyperliquid, defi-insurance-guide, cross-chain-interoperability, best-perpetual-dex, cross-chain-bridges). Harmless but should be cleaned up.",
+          "TypeScript: 142 errors across 5 files (4 learn pages + structured-data.examples.ts). Non-blocking — ignoreBuildErrors: true in next.config.ts. Same count as previous cycles, no regressions.",
+          "2 PUBLISH_QUEUE items remain blocked: /learn/crypto-wallet-security-token-approvals-guide (slug mismatch) and /learn/restaking-comparison-eigenlayer-symbiotic-karak-2026 (no page.tsx). Carried over from Mar 27."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 public API routes reviewed and structurally healthy: prices (CoinGecko, 60s TTL), fear-greed (Alternative.me, 600s TTL), trending (CoinGecko, 300s TTL), market-metrics (CoinGecko+Alternative.me, 60s TTL), market-dominance (CoinGecko, 300s TTL), defi-yields (DefiLlama, 300s TTL).",
+          "All routes have proper in-memory caching with TTLs, stale-while-revalidate headers, and graceful fallback (stale cache → mock/fallback data → 502).",
+          "Cache-Control headers correctly set: s-maxage matches TTL, stale-while-revalidate at 2x TTL across all routes.",
+          "No rate-limit issues detected in code review. CoinGecko free tier used (no API key) — 3 routes hit CoinGecko (prices, trending, market-dominance) + market-metrics also hits CoinGecko. 4 concurrent CoinGecko calls is within free tier limits when caching is active.",
+          "DefiLlama integration via dedicated lib module (@/lib/defillama) with chain filtering, sort, stableOnly, minApy params — well-structured.",
+          "No changes to API routes since last cycle — stable."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Latest commit: 21aaf5b (batch deploy: 170+ pages, 18 guides, 5 ecosystem pages, OG images, UX fixes). No new commits since.",
+          "271 uncommitted files (240 untracked + 31 modified). This is up from 257 at morning standup — 14 new files generated this cycle (publish report, design report, community report, standup report + associated assets).",
+          "next.config.ts: standalone output, ignoreBuildErrors: true, staticGenerationMaxConcurrency: 4, workerThreads: false — production-safe configuration.",
+          "Security headers configured: X-DNS-Prefetch-Control, X-Content-Type-Options: nosniff, Referrer-Policy: strict-origin-when-cross-origin. Static assets have immutable cache (31536000s).",
+          "CRITICAL: Deploy remains blocked. All work from Mar 27-28 (4+ agent cycles, 2 new pages, OG images, promoted pages, UX fixes) is invisible to production. Jefe action required: git commit + push.",
+          "Cannot verify live site — degen0x.com egress blocked from this environment. Live health check deferred."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: 2 learn pages published to PUBLISHED_PAGES (railgun privacy DeFi, no-code AI trading agents). 4 automated reports generated (standup, publish, design, community). PUBLISH_QUEUE reduced to 2 blocked items.",
+          "CARRY-OVER TO NEXT CYCLE: (1) Deploy 271 uncommitted files [P0, 11th consecutive cycle]. (2) Fix 2 blocked queue items (wallet security slug, restaking page.tsx). (3) Clean up 17 duplicate slugs in published-pages.ts. (4) Address 142 TS errors in 5 files (low priority). (5) Scaffold 105 missing legacy page.tsx files (backlog).",
+          "BLOCKERS REQUIRING JEFE: Deploy is the sole critical blocker. One `git add + commit + push` unlocks all accumulated work from 50+ agent cycles across 2 days. Every hour of delay is lost indexing time for Google.",
+          "AGENT CYCLE COUNT TODAY: 5 cycles completed (standup, publish, design, community, this eod). Consistent with daily rotation schedule.",
+          "PUBLISH_QUEUE STATUS: 2 items blocked (down from 4+ earlier this week). Queue is nearly empty — content velocity exceeding queue capacity."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages", "value": "556 unique", "pct": 84, "color": "#4ade80" },
+          { "label": "Today's New Pages", "value": "2 learn guides", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with page.tsx", "value": "451/556 (81%)", "pct": 81, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript Errors", "value": "142 in 5 files", "pct": 30, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "271", "pct": 10, "color": "#ef4444" },
+          { "label": "Queue Blocked Items", "value": "2", "pct": 60, "color": "#f59e0b" },
+          { "label": "Deploy Status", "value": "BLOCKED (11 cycles)", "pct": 0, "color": "#ef4444" },
+          { "label": "Cache TTLs Correct", "value": "6/6 routes", "pct": 100, "color": "#4ade80" },
+          { "label": "SEO Metadata (new pages)", "value": "2/2 complete", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}
