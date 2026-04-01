@@ -1,10 +1,35 @@
-'use client';
-
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { useState } from 'react';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import FaqAccordion from "./FaqAccordion";
+
+const FAQ_ITEMS = [
+  {
+    question: 'What is the difference between SPL Token and Token-2022?',
+    answer: 'SPL Token is the original Solana token program, designed to be minimal and secure. Token-2022 (Token Extensions program) is a drop-in replacement that maintains full backward compatibility but adds 16+ extensions for advanced functionality. Token-2022 tokens work with the same wallet ecosystem but enable features like confidential transfers, transfer fees, and permanent delegates at the protocol level—capabilities that would require wrapper contracts on other chains.',
+  },
+  {
+    question: 'Are confidential transfers on Solana fully private?',
+    answer: 'Confidential transfers using Token-2022 hide transfer amounts through Twisted ElGamal encryption and zero-knowledge proofs, but account addresses remain visible on-chain. The transaction sender and receiver identities are public; only the amounts are encrypted. This is more private than transparent transfers but less anonymous than a privacy coin where all parties are shielded.',
+  },
+  {
+    question: 'Can any Solana wallet handle Token-2022 tokens?',
+    answer: 'Most modern Solana wallets support Token-2022 tokens for basic transfers, but not all wallets are fully compatible with all extensions. Wallets may not support confidential transfers, transfer hooks, or other advanced extensions. Before holding Token-2022 tokens with specialized extensions, verify your wallet supports them. DEXs and platforms also vary in Token-2022 support—check compatibility before trading.',
+  },
+  {
+    question: 'What is a permanent delegate and why would a token use one?',
+    answer: 'A permanent delegate is a designated authority that can transfer or burn tokens from any account without permission. This is useful for regulated stablecoins (like PYUSD) where issuers need to comply with frozen accounts, sanctions lists, or recovery procedures. It represents a trade-off: increased protocol control and regulatory compliance at the cost of holder autonomy.',
+  },
+  {
+    question: 'How do transfer fees work on Token-2022?',
+    answer: 'Token issuers can enable transfer fees specified in basis points (e.g., 50 bps = 0.5%) with an optional maximum fee cap. When a user transfers tokens, the fee is collected automatically and sent to a fee account controlled by the issuer. The receiver gets the reduced amount; the issuer collects the difference. This enables protocol revenue without needing a wrapper or secondary market.',
+  },
+  {
+    question: 'Is Token-2022 safe to use?',
+    answer: 'Token-2022 was audited by Halborn and other security firms. However, the ZK ElGamal program used for confidential transfers was temporarily disabled on mainnet for additional security review, though it remains available on testnet and Devnet. Not all extensions have been stress-tested in production. Evaluate individual tokens based on which extensions they enable and their audit history.',
+  },
+];
 
 export const metadata: Metadata = {
   title: 'Solana Token Extensions Guide 2026 — Token-2022 Explained | degen0x',
@@ -33,12 +58,6 @@ export const metadata: Metadata = {
 };
 
 export default function SolanaTokenExtensionsGuide() {
-  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
-
-  const toggleFaq = (index: number) => {
-    setExpandedFaq(expandedFaq === index ? null : index);
-  };
-
   const tableOfContents = [
     { id: 'introduction', label: 'Introduction' },
     { id: 'what-are-token-extensions', label: 'What Are Solana Token Extensions?' },
@@ -48,39 +67,6 @@ export default function SolanaTokenExtensionsGuide() {
     { id: 'limitations', label: 'Current Limitations & Risks' },
     { id: 'evaluation', label: 'How to Evaluate Token-2022 Projects' },
     { id: 'faq', label: 'Frequently Asked Questions' },
-  ];
-
-  const faqItems = [
-    {
-      question: 'What is the difference between SPL Token and Token-2022?',
-      answer:
-        'SPL Token is the original Solana token program, designed to be minimal and secure. Token-2022 (Token Extensions program) is a drop-in replacement that maintains full backward compatibility but adds 16+ extensions for advanced functionality. Token-2022 tokens work with the same wallet ecosystem but enable features like confidential transfers, transfer fees, and permanent delegates at the protocol level—capabilities that would require wrapper contracts on other chains.',
-    },
-    {
-      question: 'Are confidential transfers on Solana fully private?',
-      answer:
-        'Confidential transfers using Token-2022 hide transfer amounts through Twisted ElGamal encryption and zero-knowledge proofs, but account addresses remain visible on-chain. The transaction sender and receiver identities are public; only the amounts are encrypted. This is more private than transparent transfers but less anonymous than a privacy coin where all parties are shielded.',
-    },
-    {
-      question: 'Can any Solana wallet handle Token-2022 tokens?',
-      answer:
-        'Most modern Solana wallets support Token-2022 tokens for basic transfers, but not all wallets are fully compatible with all extensions. Wallets may not support confidential transfers, transfer hooks, or other advanced extensions. Before holding Token-2022 tokens with specialized extensions, verify your wallet supports them. DEXs and platforms also vary in Token-2022 support—check compatibility before trading.',
-    },
-    {
-      question: 'What is a permanent delegate and why would a token use one?',
-      answer:
-        'A permanent delegate is a designated authority that can transfer or burn tokens from any account without permission. This is useful for regulated stablecoins (like PYUSD) where issuers need to comply with frozen accounts, sanctions lists, or recovery procedures. It represents a trade-off: increased protocol control and regulatory compliance at the cost of holder autonomy.',
-    },
-    {
-      question: 'How do transfer fees work on Token-2022?',
-      answer:
-        'Token issuers can enable transfer fees specified in basis points (e.g., 50 bps = 0.5%) with an optional maximum fee cap. When a user transfers tokens, the fee is collected automatically and sent to a fee account controlled by the issuer. The receiver gets the reduced amount; the issuer collects the difference. This enables protocol revenue without needing a wrapper or secondary market.',
-    },
-    {
-      question: 'Is Token-2022 safe to use?',
-      answer:
-        'Token-2022 was audited by Halborn and other security firms. However, the ZK ElGamal program used for confidential transfers was temporarily disabled on mainnet for additional security review, though it remains available on testnet and Devnet. Not all extensions have been stress-tested in production. Evaluate individual tokens based on which extensions they enable and their audit history.',
-    },
   ];
 
   return (
@@ -1222,74 +1208,7 @@ export default function SolanaTokenExtensionsGuide() {
             Frequently Asked Questions
           </h2>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            {faqItems.map((item, index) => (
-              <div
-                key={index}
-                style={{
-                  backgroundColor: '#161b22',
-                  border: '1px solid #30363d',
-                  borderRadius: '8px',
-                  overflow: 'hidden',
-                }}
-              >
-                <button
-                  onClick={() => toggleFaq(index)}
-                  style={{
-                    width: '100%',
-                    padding: '1.25rem',
-                    backgroundColor: 'transparent',
-                    border: 'none',
-                    cursor: 'pointer',
-                    textAlign: 'left',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                  }}
-                >
-                  <h3
-                    style={{
-                      fontSize: '1.05rem',
-                      fontWeight: 600,
-                      color: '#e6edf3',
-                      margin: 0,
-                    }}
-                  >
-                    {item.question}
-                  </h3>
-                  <span
-                    style={{
-                      color: '#58a6ff',
-                      fontSize: '1.25rem',
-                      transform: expandedFaq === index ? 'rotate(180deg)' : 'rotate(0deg)',
-                      transition: 'transform 0.2s',
-                    }}
-                  >
-                    ▼
-                  </span>
-                </button>
-
-                {expandedFaq === index && (
-                  <div
-                    style={{
-                      padding: '0 1.25rem 1.25rem',
-                      borderTop: '1px solid #30363d',
-                    }}
-                  >
-                    <p
-                      style={{
-                        color: '#8b949e',
-                        lineHeight: 1.8,
-                        margin: 0,
-                      }}
-                    >
-                      {item.answer}
-                    </p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+          <FaqAccordion items={FAQ_ITEMS} />
         </section>
 
         {/* Related Resources */}

@@ -1,5 +1,3 @@
-'use client';
-
 import { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';

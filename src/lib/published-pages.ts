@@ -958,20 +958,46 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   // ── Daily Publish Cycle — 2026-04-01 (batch 2, automated) ──
   "/learn/know-your-agent-kya-guide-2026",
   "/learn/sui-private-transactions-seal-framework-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-04-01 (batch 3, automated) ──
+  "/learn/stablecoin-payments-infrastructure-guide-2026",
+  "/learn/omnichain-defi-unified-liquidity-guide-2026",
+
+  // ── Daily Publish Cycle — 2026-04-01 (batch 4, automated) ──
+  "/tools/defi-risk-scanner",
+  "/tools/dex-screener",
+  "/learn/bitcoin-etf-guide-2026",
+  "/ecosystem/1inch",
+  "/ecosystem/aerodrome",
+
+  // ── Daily Publish Cycle — 2026-04-01 (batch 5, automated) ──
+  "/status",
+  "/status/api-health",
+  "/copy-trading",
+  "/airdrops",
+  "/defi-yields",
+
+  // ── Courses (published Apr 1) ─────────────────────────────────
+  "/courses",
+  "/courses/crypto-101",
+  "/courses/defi-masterclass",
+  "/courses/layer2-deep-dive",
+  "/courses/solana-deep-dive",
+  "/courses/crypto-security",
+  "/courses/rwa-tokenization",
 ]);
 
 /**
  * PUBLISH QUEUE — ordered by priority (publish 20/day)
  * Move slugs up into PUBLISHED_PAGES each day.
  *
+ * Queue is empty — all pages have been published as of 2026-04-01.
+ *
  * NOTE 2026-03-27: Two pages have mismatched slugs and were NOT promoted:
  *   - /learn/crypto-wallet-security-token-approvals-guide (no page.tsx — found crypto-wallet-security-guide-2026 instead)
  *   Fix the slugs or scaffold the pages before next publish cycle.
  */
-export const PUBLISH_QUEUE: readonly string[] = [
-  "/learn/stablecoin-payments-infrastructure-guide-2026",
-  "/learn/omnichain-defi-unified-liquidity-guide-2026",
-];
+export const PUBLISH_QUEUE: readonly string[] = [];
 
 /**
  * Returns true if the given pathname should be indexed.
