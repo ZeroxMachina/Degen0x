@@ -1,5 +1,3 @@
-'use client';
-
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';

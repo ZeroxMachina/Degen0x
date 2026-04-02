@@ -389,7 +389,7 @@ export default function CryptoPassiveIncomeGuide() {
               <li><strong>APY above 15-20%:</strong> Unsustainable yields are usually funded by token inflation. When growth slows, yields collapse.</li>
               <li><strong>Unaudited or new smart contracts:</strong> Unaudited code = high hack risk. Start with established protocols only.</li>
               <li><strong>Promises of guaranteed returns:</strong> Crypto yields are never guaranteed. Token prices fluctuate and protocols can fail.</li>
-              <li><strong>Small TVL (<$10M):</strong> Low liquidity pools are risky and have higher fees. Stick to pools with >$100M TVL.</li>
+              <li><strong>Small TVL (&lt;$10M):</strong> Low liquidity pools are risky and have higher fees. Stick to pools with &gt;$100M TVL.</li>
               <li><strong>Inflated reward tokens:</strong> If yields come from newly minted governance tokens, not protocol revenue, they&apos;re unsustainable.</li>
               <li><strong>No insurance or audits:</strong> Check if the protocol has insurance (Nexus Mutual, Uninsured) or reputable audits (Trail of Bits, Certora).</li>
             </ul>
