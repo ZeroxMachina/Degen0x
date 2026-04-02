@@ -330,7 +330,7 @@ export default function FlashLoansGuide() {
                 <tr style={{ borderBottom: '1px solid #30363d' }}>
                   <td style={{ padding: '1rem', color: '#e6edf3' }}>dYdX v3</td>
                   <td style={{ padding: '1rem', color: '#e6edf3' }}>~2 wei</td>
-                  <td style={{ padding: '1rem', color: '#e6edf3' }}&gt;$1B (Ethereum only now)</td>
+                  <td style={{ padding: '1rem', color: '#e6edf3' }}>&gt;$1B (Ethereum only now)</td>
                   <td style={{ padding: '1rem', color: '#e6edf3' }}>Ethereum</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid #30363d' }}>
@@ -487,7 +487,7 @@ export default function FlashLoansGuide() {
                 <tr style={{ borderBottom: '1px solid #30363d' }}>
                   <td style={{ padding: '1rem', color: '#e6edf3' }}>dYdX v3</td>
                   <td style={{ padding: '1rem', color: '#e6edf3' }}>~2 wei</td>
-                  <td style={{ padding: '1rem', color: '#e6edf3' }}&lt;$0.01</td>
+                  <td style={{ padding: '1rem', color: '#e6edf3' }}>&lt;$0.01</td>
                   <td style={{ padding: '1rem', color: '#8b949e', fontSize: '0.85rem' }}>Essentially free (Ethereum only)</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid #30363d' }}>

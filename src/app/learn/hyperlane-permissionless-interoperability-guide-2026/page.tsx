@@ -286,10 +286,10 @@ export default function HyperlanePermissionlessGuide() {
                   <td style={{ border: `1px solid #30363d`, padding: `12px`, color: `#e6edf3` }}>
                     <span style={{ fontWeight: `bold` }}>Supported Chains</span>
                   </td>
-                  <td style={{ border: `1px solid #30363d`, padding: `12px`, color: `#e6edf3` }}&gt;50</td>
-                  <td style={{ border: `1px solid #30363d`, padding: `12px`, color: `#e6edf3` }}&gt;80</td>
-                  <td style={{ border: `1px solid #30363d`, padding: `12px`, color: `#e6edf3` }}&gt;40</td>
-                  <td style={{ border: `1px solid #30363d`, padding: `12px`, color: `#e6edf3` }}&gt;30</td>
+                  <td style={{ border: `1px solid #30363d`, padding: `12px`, color: `#e6edf3` }}>&gt;50</td>
+                  <td style={{ border: `1px solid #30363d`, padding: `12px`, color: `#e6edf3` }}>&gt;80</td>
+                  <td style={{ border: `1px solid #30363d`, padding: `12px`, color: `#e6edf3` }}>&gt;40</td>
+                  <td style={{ border: `1px solid #30363d`, padding: `12px`, color: `#e6edf3` }}>&gt;30</td>
                 </tr>
                 <tr>
                   <td style={{ border: `1px solid #30363d`, padding: `12px`, color: `#e6edf3` }}>

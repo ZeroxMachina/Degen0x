@@ -187,9 +187,9 @@ export default function EulerV2Guide() {
                 </tr>
                 <tr style={{ borderBottom: '1px solid #30363d' }}>
                   <td style={{ padding: '0.75rem', color: '#e6edf3' }}>TVL (2026)</td>
-                  <td style={{ padding: '0.75rem', color: '#e6edf3' }}&gt;$8B</td>
-                  <td style={{ padding: '0.75rem', color: '#e6edf3' }}&gt;$12B</td>
-                  <td style={{ padding: '0.75rem', color: '#e6edf3' }}&gt;$3.2B</td>
+                  <td style={{ padding: '0.75rem', color: '#e6edf3' }}>&gt;$8B</td>
+                  <td style={{ padding: '0.75rem', color: '#e6edf3' }}>&gt;$12B</td>
+                  <td style={{ padding: '0.75rem', color: '#e6edf3' }}>&gt;$3.2B</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid #30363d' }}>
                   <td style={{ padding: '0.75rem', color: '#e6edf3' }}>Liquidation Model</td>
