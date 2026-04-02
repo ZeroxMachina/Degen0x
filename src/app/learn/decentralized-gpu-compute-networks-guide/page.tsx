@@ -144,7 +144,7 @@ export default function DecentralizedGPUComputeGuidePage() {
               <tbody>
                 {[
                   ["Akash", "AKT", "General-purpose compute", "80%+ utilization; 7,200 GB200s via Starbonds", "428% YoY growth"],
-                  ["Render Network", "RENDER", "3D rendering & AI media", "H200/H100/MI300 @ ~$1.75/hr; 600+ models", ">$1B market cap"],
+                  ["Render Network", "RENDER", "3D rendering & AI media", "H200/H100/MI300 @ ~$1.75/hr; 600+ models", "&gt;$1B market cap"],
                   ["io.net", "IO", "ML training & inference", "Aggregates idle GPUs for AI workloads", "Rapid growth phase"],
                   ["Grass", "GRASS", "Decentralized data scraping", "Monetizes idle bandwidth; Grasshopper Q2 2026", "Hardware expansion"],
                   ["Bittensor", "TAO", "Decentralized AI subnets", "Subnet-based architecture; 64+ subnets", "100+ GPUs per subnet"],

@@ -90,7 +90,7 @@ const faqSchema = generateFAQSchema([
   {
     question: "How do I choose a trader to copy?",
     answer:
-      "Look at: Win rate (>50% is good), max drawdown (ideally <20%), Sharpe ratio (risk-adjusted returns), time in market (at least 6 months), AUM (assets under management), and trading style. Start with multiple smaller allocations rather than one large bet. Check platform verification for trader legitimacy.",
+      "Look at: Win rate (&gt;50% is good), max drawdown (ideally &lt;20%), Sharpe ratio (risk-adjusted returns), time in market (at least 6 months), AUM (assets under management), and trading style. Start with multiple smaller allocations rather than one large bet. Check platform verification for trader legitimacy.",
   },
   {
     question: "Is copy trading the same as social trading?",
@@ -503,8 +503,8 @@ export default function CryptoCopyTradingGuidePage() {
               { tip: "Set Stop Losses", guidance: "Use platform limits: e.g., 'Stop copying if daily loss exceeds $200' or 'Max position size $5,000.' Prevents catastrophic losses." },
               { tip: "Diversify Traders & Styles", guidance: "Mix long-only traders, shorters, scalpers, and swing traders. If one style fails, others offset." },
               { tip: "Start Small & Scale", guidance: "Begin with $100-$500 per trader. If they deliver 3+ months of consistent gains, increase allocation." },
-              { tip: "Monitor Weekly", guidance: "Check performance 1-2x/week. If a trader's drawdown exceeds 25% or win rate drops <40%, consider rotating out." },
-              { tip: "Rebalance Monthly", guidance: "Top performers get larger allocations; laggards get smaller. Cut traders with <6 consecutive losing trades." },
+              { tip: "Monitor Weekly", guidance: "Check performance 1-2x/week. If a trader's drawdown exceeds 25% or win rate drops &lt;40%, consider rotating out." },
+              { tip: "Rebalance Monthly", guidance: "Top performers get larger allocations; laggards get smaller. Cut traders with &lt;6 consecutive losing trades." },
               { tip: "Use Leverage Carefully", guidance: "If trading on margin, keep overall leverage ≤2x. Don't let a lead trader's 10x leverage become your 10x leverage." },
               { tip: "Keep Cash Reserve", guidance: "Don't put 100% of capital into copy trading. Keep 30-50% in stablecoins or spot holdings for flexibility." },
             ].map((item) => (
@@ -629,7 +629,7 @@ export default function CryptoCopyTradingGuidePage() {
             "Copy trading automatically mirrors professional traders' trades to your account. 10-20M+ active copiers globally; $3.77B market by 2030.",
             "Top platforms: Bitget (130K+ elite traders, 0.01% fees), Bybit (800K+ followers, profit-sharing), eToro (35M users, $200 min).",
             "Copy trading is NOT passive income. You inherit the trader's decisions, leverage, and market risk. You can lose your entire investment.",
-            "Choose traders using a 7-step framework: win rate (>60%), max drawdown (<20%), Sharpe ratio (>1), time in market (6+ months), AUM, style, and leverage.",
+            "Choose traders using a 7-step framework: win rate (&gt;60%), max drawdown (&lt;20%), Sharpe ratio (>1), time in market (6+ months), AUM, style, and leverage.",
             "Diversify: copy 5-10 traders with different styles. Position sizing matters: allocate small amounts per trader, scale winners, cut losers.",
             "Risks: slippage, lead trader dependency, over-leverage, survivorship bias, crypto volatility, regulatory uncertainty. Always set stop-loss limits.",
             "Copy trading vs DCA: copy trading offers higher upside (40%+ annually if trader skilled) but higher risk. DCA offers lower returns (15-30%) with lower risk.",

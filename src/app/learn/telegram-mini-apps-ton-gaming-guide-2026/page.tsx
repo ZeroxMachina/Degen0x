@@ -131,7 +131,7 @@ export default function TelegramMiniAppsTonGamingGuidePage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12, marginBottom: 16 }}>
               {[
                 { title: "Speed", detail: "Sub-second finality", icon: "⚡" },
-                { title: "Cost", detail: "<$0.01 per transaction", icon: "💰" },
+                { title: "Cost", detail: "&lt;$0.01 per transaction", icon: "💰" },
                 { title: "Scalability", detail: "Dynamic sharding", icon: "📈" },
                 { title: "Distribution", detail: "1B+ Telegram users", icon: "🌍" },
               ].map((item) => (

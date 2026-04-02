@@ -365,7 +365,7 @@ export default function YieldBearingStablecoinsPage() {
                     "Peak TVL: $14.8B in October 2025, contracted to ~$6B",
                     "Compliance: GENIUS Act compliant via Anchorage custody",
                     "Key Feature: Fee switch coming for ENA governance token holders",
-                    "Lifetime Fees: >$480M distributed to sUSDe holders",
+                    "Lifetime Fees: &gt;$480M distributed to sUSDe holders",
                     "Risk: Synthetic model risk, smart contract risk (mitigated by audits)",
                   ]
                 },

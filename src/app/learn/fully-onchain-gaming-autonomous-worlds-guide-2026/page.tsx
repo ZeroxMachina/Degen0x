@@ -112,7 +112,7 @@ export default function FullyOnchainGamingGuide() {
       chain: "Gamechain (EVM-compatible)",
       language: "Go (Cardinal runtime)",
       architecture: "Sharded rollup (game-specific)",
-      performance: "1000+ TPS, <100ms blocks",
+      performance: "1000+ TPS, &lt;100ms blocks",
       notableGames: "Dark Frontier (Argus)",
       pros: ["Highest scalability", "Sub-100ms latency", "Purpose-built for games"],
       cons: ["Newest (limited track record)", "Centralized initially", "Small ecosystem"]

@@ -146,10 +146,10 @@ export default function DeFiSafetyGuide2026() {
               "Anonymous team with no verifiable history",
               "Liquidity locked for less than 12 months",
               "Contract not verified or has proxy upgradability with single owner",
-              "\"100x guaranteed\" or unrealistic APY promises (>500%)",
+              "\"100x guaranteed\" or unrealistic APY promises (&gt;500%)",
               "Aggressive paid marketing with no working product",
               "Honeypot: you can buy but selling fails in simulation",
-              "Large insider token allocations (>30% to team/VCs)",
+              "Large insider token allocations (&gt;30% to team/VCs)",
               "No community governance or multisig treasury",
             ].map((flag, i) => (
               <div key={i} style={{ fontSize: "13px", color: "#c9d1d9", padding: "6px 0", borderBottom: "1px solid #21262d" }}>

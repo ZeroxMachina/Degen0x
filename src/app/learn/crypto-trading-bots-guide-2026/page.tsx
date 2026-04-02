@@ -555,11 +555,11 @@ export default function CryptoTradingBotsGuidePage() {
             {[
               { metric: "ROI (Return on Investment)", desc: "Profit as % of capital deployed. Example: $1k → $1.2k = 20% ROI. Annualize for comparison (monthly ROI × 12)" },
               { metric: "Max Drawdown", desc: "Largest peak-to-trough decline. Example: Capital goes from $10k → $8k (20% drawdown). Lower is better. Risk indicator" },
-              { metric: "Sharpe Ratio", desc: "Risk-adjusted return. Accounts for volatility. Higher = better. Formula: (Return - Risk-Free Rate) / Volatility. Aim for >1.0" },
+              { metric: "Sharpe Ratio", desc: "Risk-adjusted return. Accounts for volatility. Higher = better. Formula: (Return - Risk-Free Rate) / Volatility. Aim for &gt;1.0" },
               { metric: "Win Rate", desc: "% of trades that profit. Example: 65 wins out of 100 trades = 65% win rate. Grid bots typically: 60-75% in range-bound markets" },
               { metric: "Average Win vs Average Loss", desc: "Profit-loss ratio. If avg win is $100 and avg loss is $80, ratio is 1.25x (good). Tight ratio = efficient trades" },
               { metric: "Trade Frequency", desc: "How many trades per day/month. High frequency = exposure to more fees. Low frequency = less profit but more stability" },
-              { metric: "Fees as % of Profit", desc: "Total fees paid / total profit. Example: $200 profit, $50 fees = 25% fee drag. Fees >50% are unacceptable" },
+              { metric: "Fees as % of Profit", desc: "Total fees paid / total profit. Example: $200 profit, $50 fees = 25% fee drag. Fees &gt;50% are unacceptable" },
             ].map((m) => (
               <div key={m.metric} style={{ background: `${S.blue}08`, border: `1px solid ${S.blue}25`, borderRadius: 10, padding: 12 }}>
                 <div style={{ fontWeight: 700, color: S.blue, marginBottom: 4, fontSize: 13 }}>{m.metric}</div>
@@ -621,7 +621,7 @@ export default function CryptoTradingBotsGuidePage() {
             "Pionex (free, 0% bot fee) is best for beginners. 3Commas ($29-$99/mo) for advanced traders. Exchange-native bots (Bybit, KuCoin) are free but exchange-locked.",
             "Setup: Choose platform → Pick strategy → Set parameters → Backtest → Deploy small → Monitor daily. Never deploy entire portfolio into one bot.",
             "Key risks: Platform bugs, API key compromise, overfitting, fees eating profits, liquidity risk, regulatory changes. Mitigation: start small, use IP whitelisting, track ROI vs fees.",
-            "Performance metrics that matter: ROI, max drawdown, Sharpe ratio, win rate, fee drag. A good bot targets 1-3% monthly ROI with <20% drawdown.",
+            "Performance metrics that matter: ROI, max drawdown, Sharpe ratio, win rate, fee drag. A good bot targets 1-3% monthly ROI with &lt;20% drawdown.",
             "Never believe backtest results alone. If an AI bot shows 30% monthly returns, it's curve-fit. Demand live audited track record before investing.",
             "Bots don't guarantee profit—they guarantee execution. The bot is only as good as your strategy.",
           ].map((pt, i) => (

@@ -645,7 +645,7 @@ export default function CryptoETFOptionsTradingGuidePage() {
               },
               {
                 q: "How are crypto ETF options taxed?",
-                a: "The same as stock options: short-term capital gains (if closed <1 year) or long-term gains (>1 year). Covered calls on long-term holdings can trigger short-term treatment if assigned. Consult a CPA for specific situations—crypto tax rules are complex.",
+                a: "The same as stock options: short-term capital gains (if closed &lt;1 year) or long-term gains (>1 year). Covered calls on long-term holdings can trigger short-term treatment if assigned. Consult a CPA for specific situations—crypto tax rules are complex.",
               },
               {
                 q: "Can options expire worthless if I'm short?",

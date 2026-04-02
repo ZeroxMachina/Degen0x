@@ -821,7 +821,7 @@ const AMMGuide = () => {
               {
                 name: "Curve Finance",
                 detail:
-                  "The stablecoin trading hub. Curve's StableSwap invariant minimizes slippage for pegged assets. Special for trading stablecoin pairs (USDC/USDT) with <0.1% slippage even on large orders. ~$2B TVL, $500M+ daily volume.",
+                  "The stablecoin trading hub. Curve's StableSwap invariant minimizes slippage for pegged assets. Special for trading stablecoin pairs (USDC/USDT) with &lt;0.1% slippage even on large orders. ~$2B TVL, $500M+ daily volume.",
               },
               {
                 name: "Raydium on Solana",
@@ -1339,7 +1339,7 @@ const AMMGuide = () => {
             {[
               {
                 name: "StableSwap Invariant (Curve)",
-                desc: "Optimized for pegged assets (stablecoins, wrapped tokens). Uses a hybrid formula that maintains tight price bands near peg while enabling large swaps with minimal slippage. USDC/USDT slippage: <0.1%. Enables profitable arbitrage.",
+                desc: "Optimized for pegged assets (stablecoins, wrapped tokens). Uses a hybrid formula that maintains tight price bands near peg while enabling large swaps with minimal slippage. USDC/USDT slippage: &lt;0.1%. Enables profitable arbitrage.",
               },
               {
                 name: "Weighted Pools (Balancer)",

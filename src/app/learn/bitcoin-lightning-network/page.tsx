@@ -122,7 +122,7 @@ const FAQS = [
   {
     question: "What are the limits of the Lightning Network?",
     answer:
-      "Lightning has several limitations: (1) You need inbound liquidity to receive payments; (2) Both parties must be online to route; (3) Large amounts (>$10k) work better on-chain; (4) The network is somewhat centralized around large liquidity hubs; (5) Privacy is better than Bitcoin's base layer but not perfect — routing nodes can observe payment metadata.",
+      "Lightning has several limitations: (1) You need inbound liquidity to receive payments; (2) Both parties must be online to route; (3) Large amounts (&gt;$10k) work better on-chain; (4) The network is somewhat centralized around large liquidity hubs; (5) Privacy is better than Bitcoin's base layer but not perfect — routing nodes can observe payment metadata.",
   },
 ];
 

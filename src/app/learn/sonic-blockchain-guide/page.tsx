@@ -457,7 +457,7 @@ export default function SonicBlockchainGuide() {
               {[
                 ["TPS (theoretical)", "400,000", "~30", "~65,000", "~4,500"],
                 ["Finality", "720ms", "~12 min", "~400ms", "1–2 sec"],
-                ["Avg tx cost", "<$0.0001", "$1–$20", "<$0.001", "~$0.01"],
+                ["Avg tx cost", "&lt;$0.0001", "$1–$20", "&lt;$0.001", "~$0.01"],
                 ["EVM compatible", "✅", "✅", "❌", "✅"],
                 ["Dev fee share", "Up to 90%", "❌", "❌", "❌"],
                 ["TVL (Mar 2026)", "~$370M", "~$50B+", "~$6B", "~$800M"],

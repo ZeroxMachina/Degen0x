@@ -563,7 +563,7 @@ export default function CryptoSecurityMasterclassPage() {
 
           <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 }}>
             {[
-              { item: "I use a hardware wallet (Ledger, Trezor) for >90% of my holdings", points: 10 },
+              { item: "I use a hardware wallet (Ledger, Trezor) for &gt;90% of my holdings", points: 10 },
               { item: "My seed phrase is written down and stored in a fireproof safe or metal backup", points: 10 },
               { item: "I have never typed my seed phrase into any device connected to the internet", points: 10 },
               { item: "I enable 2FA with an authenticator app (not SMS) on all exchanges and wallets", points: 10 },

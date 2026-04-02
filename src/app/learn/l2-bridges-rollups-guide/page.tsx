@@ -223,7 +223,7 @@ const RISK_SECTIONS = [
     title: "Liquidity Risk",
     icon: "droplet",
     description: "Liquidity network bridges depend on available liquidity. During high-volume events, slippage can increase or transfers may be delayed.",
-    mitigation: "Check bridge TVL relative to your transfer size. For large transfers (>$100K), consider splitting across multiple bridges.",
+    mitigation: "Check bridge TVL relative to your transfer size. For large transfers (&gt;$100K), consider splitting across multiple bridges.",
   },
   {
     title: "Censorship Risk",

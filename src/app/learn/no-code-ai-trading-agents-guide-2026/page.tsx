@@ -520,7 +520,7 @@ export default function NoCodeAITradingAgentsPage() {
             {
               step: "STEP 5",
               title: "Backtest on Historical Data",
-              desc: "Run your agent against the last 6-12 months of price data. Review win rate, average trade size, max drawdown, and risk/reward ratio. Aim for >50% win rate; expect variance.",
+              desc: "Run your agent against the last 6-12 months of price data. Review win rate, average trade size, max drawdown, and risk/reward ratio. Aim for &gt;50% win rate; expect variance.",
             },
             {
               step: "STEP 6",

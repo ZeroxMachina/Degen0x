@@ -427,7 +427,7 @@ export default function CryptoPassiveIncomeGuide() {
               },
               {
                 title: "Step 5: Monitor & Rebalance",
-                desc: "Check yields monthly. Rebalance if one position grows too large (>40% of portfolio).",
+                desc: "Check yields monthly. Rebalance if one position grows too large (&gt;40% of portfolio).",
               },
               {
                 title: "Step 6: Compound or Harvest",

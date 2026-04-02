@@ -178,7 +178,7 @@ const faqItems = [
   },
   {
     q: "How much voting power concentration is acceptable?",
-    a: "The more distributed, the better. 50%+ in top 10 is dangerous. Target: top 100 addresses <40% of total voting power, and minimum 25%+ participation in major proposals."
+    a: "The more distributed, the better. 50%+ in top 10 is dangerous. Target: top 100 addresses &lt;40% of total voting power, and minimum 25%+ participation in major proposals."
   },
   {
     q: "Should DAOs implement futarchy?",

@@ -49,7 +49,7 @@ export default function SuiDeFiEcosystemPage() {
   const faq = generateFAQSchema([
     {
       question: 'What is the Sui blockchain?',
-      answer: 'Sui is a Layer 1 blockchain that uses the Move programming language and a parallelized, DAG-based consensus. It offers high throughput (100K+ TPS), low latency (<400ms), and sub-$0.01 transaction fees.',
+      answer: 'Sui is a Layer 1 blockchain that uses the Move programming language and a parallelized, DAG-based consensus. It offers high throughput (100K+ TPS), low latency (&lt;400ms), and sub-$0.01 transaction fees.',
     },
     {
       question: 'What is the total value locked (TVL) on Sui DeFi?',

@@ -583,7 +583,7 @@ export default function StoryProtocolGuide() {
               title: "Low On-Chain Revenue and Activity",
               severity: "High",
               color: "#f85149",
-              body: "Daily revenue of <$100 despite $500M market cap signals minimal organic demand. Most activity is still speculative. Networks with low actual usage are vulnerable to sudden abandonment.",
+              body: "Daily revenue of &lt;$100 despite $500M market cap signals minimal organic demand. Most activity is still speculative. Networks with low actual usage are vulnerable to sudden abandonment.",
             },
             {
               title: "Adoption Chicken-Egg Problem",
@@ -719,7 +719,7 @@ export default function StoryProtocolGuide() {
             },
             {
               q: "What is the story with the $IP token unlock?",
-              a: "The $IP token has a major unlock scheduled for August 2026. This creates price risk: new token supply entering circulation could pressure the price if ecosystem revenue and adoption don&apos;t keep pace. Story currently generates <$100/day in on-chain revenue, so the network hasn&apos;t yet proven it can absorb significant token dilution.",
+              a: "The $IP token has a major unlock scheduled for August 2026. This creates price risk: new token supply entering circulation could pressure the price if ecosystem revenue and adoption don&apos;t keep pace. Story currently generates &lt;$100/day in on-chain revenue, so the network hasn&apos;t yet proven it can absorb significant token dilution.",
             },
             {
               q: "Is Story a good investment?",

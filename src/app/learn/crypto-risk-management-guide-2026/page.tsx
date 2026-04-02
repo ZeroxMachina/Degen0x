@@ -684,7 +684,7 @@ export default function CryptoRiskManagementGuide2026() {
               </h3>
               <div style={{ display: "grid", gap: 8, fontSize: 13, color: "#c9d1d9" }}>
                 {[
-                  { practice: "Use hardware wallets (Ledger, Trezor) for holdings >$5,000", priority: "Critical" },
+                  { practice: "Use hardware wallets (Ledger, Trezor) for holdings &gt;$5,000", priority: "Critical" },
                   { practice: "Enable 2FA on all exchange accounts — use authenticator apps, not SMS", priority: "Critical" },
                   { practice: "Never share seed phrases — not with 'support,' not with anyone", priority: "Critical" },
                   { practice: "Use a dedicated browser for crypto — no random extensions", priority: "High" },

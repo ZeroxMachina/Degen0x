@@ -515,7 +515,7 @@ export default function CryptoIndexFundsGuidePage() {
         <h3 className="text-xl font-semibold text-white mb-3">Option 3: Buying Tokenized Funds (Bitwise)</h3>
         <ol className="space-y-2 text-gray-300 mb-6 ml-4">
           {[
-            'Verify you meet accredited investor criteria (net worth >$1M or income >$200K)',
+            'Verify you meet accredited investor criteria (net worth &gt;$1M or income &gt;$200K)',
             'Contact Bitwise directly or work with a financial advisor',
             'Apply for fund access',
             'Wire minimum capital ($25K+)',

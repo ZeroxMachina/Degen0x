@@ -67,7 +67,7 @@ export default function SolanaLiquidStakingGuide() {
     },
     {
       question: "Is liquid staking safe? What are the main risks?",
-      answer: "Liquid staking is generally safe if you use established protocols (Jito, Marinade, Sanctum), but risks exist: Smart contract risk—bugs in staking or unstaking mechanisms could lock funds (always check audits). Validator risk—if validators act maliciously or go offline, rewards suffer. Price depeg—LST prices can temporarily diverge from SOL value due to low liquidity on DEXes, though this is rare for major LSTs. Slashing risk—if SOL implements slashing (currently not active), LSTs could lose value proportionally. Concentration risk—if one LST accumulates >30% of staked SOL, a failure could cascade across the network. Mitigate by diversifying across multiple LSTs, using audited protocols, and only staking what you can afford to lose."
+      answer: "Liquid staking is generally safe if you use established protocols (Jito, Marinade, Sanctum), but risks exist: Smart contract risk—bugs in staking or unstaking mechanisms could lock funds (always check audits). Validator risk—if validators act maliciously or go offline, rewards suffer. Price depeg—LST prices can temporarily diverge from SOL value due to low liquidity on DEXes, though this is rare for major LSTs. Slashing risk—if SOL implements slashing (currently not active), LSTs could lose value proportionally. Concentration risk—if one LST accumulates &gt;30% of staked SOL, a failure could cascade across the network. Mitigate by diversifying across multiple LSTs, using audited protocols, and only staking what you can afford to lose."
     },
     {
       question: "How do I get started with liquid staking?",
