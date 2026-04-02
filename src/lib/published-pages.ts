@@ -985,6 +985,12 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/courses/solana-deep-dive",
   "/courses/crypto-security",
   "/courses/rwa-tokenization",
+
+  // ── Daily Publish Cycle — 2026-04-02 (automated) ─────────────
+  "/learn/euler-v2-modular-lending-guide-2026",
+  "/learn/hyperlane-permissionless-interoperability-guide-2026",
+  "/learn/crypto-staking-guide-2026",
+  "/learn/flash-loans-defi-guide-2026",
 ]);
 
 /**
@@ -997,7 +1003,9 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
  *   - /learn/crypto-wallet-security-token-approvals-guide (no page.tsx — found crypto-wallet-security-guide-2026 instead)
  *   Fix the slugs or scaffold the pages before next publish cycle.
  */
-export const PUBLISH_QUEUE: readonly string[] = [];
+export const PUBLISH_QUEUE: readonly string[] = [
+  // Queue empty — all pages published as of 2026-04-02.
+];
 
 /**
  * Returns true if the given pathname should be indexed.

@@ -1,34 +1,34 @@
 [
   {
-    "id": "feed-2026-04-01-009",
-    "type": "system",
-    "title": "New: Copy Trading Hub",
-    "message": "Explore copy trading strategies — follow top traders and mirror their positions across major crypto exchanges.",
-    "actionUrl": "/copy-trading",
-    "date": "2026-04-01"
-  },
-  {
-    "id": "feed-2026-04-01-010",
-    "type": "system",
-    "title": "New: Airdrops Hub & Status Dashboard",
-    "message": "Track live airdrops and monitor degen0x API health in real time with our new status and airdrops pages.",
-    "actionUrl": "/airdrops",
-    "date": "2026-04-01"
-  },
-  {
-    "id": "feed-2026-04-01-007",
+    "id": "feed-2026-04-02-001",
     "type": "news",
-    "title": "New: DeFi Risk Scanner Tool",
-    "message": "Scan and assess risk across DeFi protocols — smart contract audits, TVL trends, and exploit history in one dashboard.",
-    "actionUrl": "/tools/defi-risk-scanner",
-    "date": "2026-04-01"
+    "title": "New: Euler V2 Modular Lending Guide",
+    "message": "Deep dive into Euler V2's modular lending architecture — vaults, risk management, and yield strategies explained.",
+    "actionUrl": "/learn/euler-v2-modular-lending-guide-2026",
+    "date": "2026-04-02"
   },
   {
-    "id": "feed-2026-04-01-008",
+    "id": "feed-2026-04-02-002",
     "type": "news",
-    "title": "New: DEX Screener Tool",
-    "message": "Track real-time DEX trading activity — spot trending pairs, volume spikes, and new token launches across chains.",
-    "actionUrl": "/tools/dex-screener",
-    "date": "2026-04-01"
+    "title": "New: Crypto Staking Guide 2026",
+    "message": "Complete guide to crypto staking in 2026 — validator selection, liquid staking, risks, and maximizing yield.",
+    "actionUrl": "/learn/crypto-staking-guide-2026",
+    "date": "2026-04-02"
+  },
+  {
+    "id": "feed-2026-04-02-003",
+    "type": "news",
+    "title": "New: Hyperlane Interoperability Guide",
+    "message": "Explore Hyperlane's permissionless cross-chain messaging — how it works, use cases, and ecosystem overview.",
+    "actionUrl": "/learn/hyperlane-permissionless-interoperability-guide-2026",
+    "date": "2026-04-02"
+  },
+  {
+    "id": "feed-2026-04-02-004",
+    "type": "news",
+    "title": "New: Flash Loans DeFi Guide",
+    "message": "Understand flash loans — instant uncollateralized borrowing, arbitrage strategies, and risk considerations.",
+    "actionUrl": "/learn/flash-loans-defi-guide-2026",
+    "date": "2026-04-02"
   }
 ]
