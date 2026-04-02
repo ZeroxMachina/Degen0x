@@ -1,0 +1,4814 @@
+[
+  {
+    "slug": "/about",
+    "category": "about"
+  },
+  {
+    "slug": "/achievements",
+    "category": "achievements"
+  },
+  {
+    "slug": "/admin/course-creator-v2",
+    "category": "admin"
+  },
+  {
+    "slug": "/admin/courses",
+    "category": "admin"
+  },
+  {
+    "slug": "/admin/pages",
+    "category": "admin"
+  },
+  {
+    "slug": "/airdrops",
+    "category": "airdrops"
+  },
+  {
+    "slug": "/alerts",
+    "category": "alerts"
+  },
+  {
+    "slug": "/alerts/whale-tracker",
+    "category": "alerts"
+  },
+  {
+    "slug": "/ar",
+    "category": "ar"
+  },
+  {
+    "slug": "/badges",
+    "category": "badges"
+  },
+  {
+    "slug": "/blog",
+    "category": "blog"
+  },
+  {
+    "slug": "/community",
+    "category": "community"
+  },
+  {
+    "slug": "/compare",
+    "category": "compare"
+  },
+  {
+    "slug": "/compare/exchanges/bybit-vs-binance",
+    "category": "compare"
+  },
+  {
+    "slug": "/compare/exchanges/gate-io-vs-kucoin",
+    "category": "compare"
+  },
+  {
+    "slug": "/compare/tokens",
+    "category": "compare"
+  },
+  {
+    "slug": "/compare/wallets",
+    "category": "compare"
+  },
+  {
+    "slug": "/compare/wallets/exodus-vs-trust-wallet",
+    "category": "compare"
+  },
+  {
+    "slug": "/compare/wallets/ledger-vs-trezor",
+    "category": "compare"
+  },
+  {
+    "slug": "/compare/wallets/metamask-vs-phantom",
+    "category": "compare"
+  },
+  {
+    "slug": "/contact",
+    "category": "contact"
+  },
+  {
+    "slug": "/copy-trading",
+    "category": "copy-trading"
+  },
+  {
+    "slug": "/courses",
+    "category": "courses"
+  },
+  {
+    "slug": "/crypto-cards",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best/beginners",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best/business",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best/cashback",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best/debit",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best/high-spenders",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best/no-annual-fee",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best/prepaid",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best/rewards",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best/staking-rewards",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/best/travel",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/calculators/card-comparison-tool",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/calculators/cashback-calculator",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/calculators/rewards-calculator",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/compare/bitpay-vs-crypto-com",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/compare/coinbase-card-vs-gemini-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/compare/crypto-com-vs-binance-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/compare/crypto-com-vs-bybit-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/compare/crypto-com-vs-coinbase-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/compare/fold-vs-coinbase-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/compare/nexo-vs-crypto-com",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/compare/wirex-vs-plutus",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/baanx-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/binance-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/bitpay-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/bybit-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/club-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/coinbase-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/crypto-com-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/crypto-com-visa",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/fold-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/gemini-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/gnosis-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/hi-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/hold-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/holyheld-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/nexo-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/plutus-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/rain-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/shakepay-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/swipe-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-cards/reviews/wirex-card",
+    "category": "crypto-cards"
+  },
+  {
+    "slug": "/crypto-loans",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/best",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/best/bitcoin-loans",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/best/defi",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/best/flash-loans",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/best/institutional",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/best/low-interest",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/best/margin-lending",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/best/nft-collateral",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/best/no-kyc",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/best/stablecoin",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/calculators/liquidation-price-calculator",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/calculators/loan-calculator",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/calculators/ltv-calculator",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/compare/makerdao-vs-compound",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/compare/nexo-vs-aave",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/aave-loans",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/abracadabra",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/benqi-loans",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/celsius",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/celsius-successor",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/compound-loans",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/ledn",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/liquity",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/makerdao",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/makerdao-loans",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/nexo",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/salt-lending",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/unchained",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/venus-loans",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/crypto-loans/reviews/youhodler",
+    "category": "crypto-loans"
+  },
+  {
+    "slug": "/daily-challenge",
+    "category": "daily-challenge"
+  },
+  {
+    "slug": "/dashboard",
+    "category": "dashboard"
+  },
+  {
+    "slug": "/de",
+    "category": "de"
+  },
+  {
+    "slug": "/defi-lending",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/best",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/best/cross-chain",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/best/ethereum",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/best/fixed-rate",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/best/layer-2",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/best/liquidity-pools",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/best/solana",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/best/stablecoin-yield",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/best/yield-aggregators",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/calculators/impermanent-loss-calculator",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/calculators/yield-calculator",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/aave-vs-compound",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/aave-vs-morpho",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/aave-vs-spark",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/cefi-vs-defi-lending",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/compound-vs-venus",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/curve-vs-uniswap",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/ethereum-vs-solana-defi",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/fixed-vs-variable-rate",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/lending-vs-staking",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/lido-vs-eigenlayer",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/lido-vs-rocket-pool",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/maple-vs-goldfinch",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/overcollateralized-vs-undercollateralized",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/spark-vs-aave",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/compare/yearn-vs-convex",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/aave",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/alpaca-finance",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/aurelius",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/bastion",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/benqi",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/centrifuge",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/clearpool",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/compound",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/credix",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/curve",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/drift",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/euler",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/exactly",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/extra-finance",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/fluid",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/fraxlend",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/goldfinch",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/granary",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/impermax",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/init-capital",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/juice-finance",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/kamino",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/kinza",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/layerbank",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/lendle",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/lido",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/lodestar",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/mango-markets",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/maple",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/maple-finance",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/marginfi",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/mendi",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/moonwell",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/morpho",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/notional",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/orbit",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/pac-finance",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/radiant",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/seamless",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/silo",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/solend",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/sonne",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/spark",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/sturdy",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/tarot",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/tender",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/truefi",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/venus",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/yearn",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/yei-finance",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-lending/reviews/zerolend",
+    "category": "defi-lending"
+  },
+  {
+    "slug": "/defi-yields",
+    "category": "defi-yields"
+  },
+  {
+    "slug": "/ecosystem",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/1inch",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/aave",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/across",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/aerodrome",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/axelar",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/babylon-protocol",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/balancer",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/balancer-v3",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/berachain-dex",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/blast",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/blur",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/cetus",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/chainlink",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/compound",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/convex",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/cowprotocol",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/curve",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/debridge",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/dedust",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/drift",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/dydx",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/eigenlayer",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/ethena",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/etherfi",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/etherfi-cash",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/fluid",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/frax",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/gearbox",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/gmx",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/hop",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/hyperliquid",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/initia",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/instadapp",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/jediswap",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/jito",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/jupiter",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/kamino",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/karak-network",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/kelp",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/layerzero",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/lido",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/lido-v2",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/lifi",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/liquidswap",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/lorenzo-protocol",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/makerdao",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/manifold",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/maple-finance",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/monad",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/morpho",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/nftfi",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/odos",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/ondo",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/opensea-pro",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/pancakeswap-v4",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/panoptic",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/paraswap",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/pendle",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/puffer-finance",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/raydium",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/renzo",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/rocketpool",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/scroll-dex",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/socket",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/sommelier",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/sonic-finance",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/stargate",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/stonfi",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/sudoswap",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/swell-network",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/symbiosis",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/syncswap",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/synthetix",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/thala",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/turbos",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/uniswap",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/usual",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/velodrome",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/virtuals-protocol",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/wormhole",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/yearn",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/ecosystem/zora",
+    "category": "ecosystem"
+  },
+  {
+    "slug": "/es",
+    "category": "es"
+  },
+  {
+    "slug": "/exchanges",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/advanced-traders",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/altcoins",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/australia",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/beginners",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/bitcoin",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/brazil",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/canada",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/decentralized",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/europe",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/futures",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/india",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/japan",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/low-fee",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/margin-trading",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/mobile-app",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/nigeria",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/no-kyc",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/security",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/singapore",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/staking-rewards",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/uk",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/us",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/best/usa",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/binance",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/bitfinex",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/bitget",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/bitstamp",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/bybit",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/changelly",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/coinbase",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/coinbase-advanced",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/binance-vs-bybit",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/binance-vs-kraken",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/binance-vs-okx",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/bitget-vs-bybit",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/bybit-vs-okx",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/centralized-vs-decentralized",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/cex-fees-comparison",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/coinbase-vs-binance",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/coinbase-vs-cash-app",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/coinbase-vs-gemini",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/coinbase-vs-kraken",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/coinbase-vs-paypal",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/coinbase-vs-robinhood",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/crypto-com-vs-binance",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/crypto-com-vs-coinbase",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/etoro-vs-coinbase",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/etoro-vs-robinhood",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/gemini-vs-coinbase",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/hyperliquid-vs-dydx",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/jupiter-vs-uniswap",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/kraken-vs-binance",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/kraken-vs-coinbase",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/kraken-vs-gemini",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/kucoin-vs-gate-io",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/robinhood-vs-coinbase",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/spot-vs-derivatives",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/compare/us-vs-international-exchanges",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/crypto-com",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/gate-io",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/gemini",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/htx",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/kraken",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/kucoin",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/kucoin-vs-binance",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/mexc",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/okx",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/okx-vs-coinbase",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/phemex",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/backpack",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/backpack-exchange",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/binance",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/bingx",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/bitfinex",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/bitget",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/bitmart",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/bitmex",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/bitstamp",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/bybit",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/cash-app",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/coinbase",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/crypto-com",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/deribit",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/dydx",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/etoro",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/fidelity-crypto",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/gate-io",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/gemini",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/gmx",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/hashkey",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/htx",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/hyperliquid",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/interactive-brokers-crypto",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/jupiter-exchange",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/kraken",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/kucoin",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/lbank",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/mexc",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/okx",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/orca",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/pancakeswap",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/paypal-crypto",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/phemex",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/pionex",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/probit",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/raydium",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/revolut-crypto",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/robinhood",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/schwab-crypto",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/sofi-crypto",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/td-ameritrade-crypto",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/uphold",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/venmo-crypto",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/webull-crypto",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/reviews/whitebit",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/robinhood-crypto",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/tools/dca-calculator",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/tools/fee-calculator",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/tools/profit-loss-calculator",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/exchanges/uphold",
+    "category": "exchanges"
+  },
+  {
+    "slug": "/fr",
+    "category": "fr"
+  },
+  {
+    "slug": "/gamification",
+    "category": "gamification"
+  },
+  {
+    "slug": "/gas-tracker",
+    "category": "gas-tracker"
+  },
+  {
+    "slug": "/glossary",
+    "category": "glossary"
+  },
+  {
+    "slug": "/heatmap",
+    "category": "heatmap"
+  },
+  {
+    "slug": "/insurance",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/best",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/best/defi-protocols",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/best/depeg-cover",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/best/exchange-cover",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/best/protocol-cover",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/best/smart-contract",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/best/wallet-protection",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/reviews/bridge-mutual",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/reviews/insurace",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/reviews/nexus-mutual",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/reviews/risk-harbor",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/reviews/sherlock",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/reviews/solace",
+    "category": "insurance"
+  },
+  {
+    "slug": "/insurance/reviews/unslashed",
+    "category": "insurance"
+  },
+  {
+    "slug": "/investing",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/ai-crypto",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/airdrops",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/apps",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/beginners",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/blue-chip-crypto",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/buy-today",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/copy-trading",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/crypto-etfs",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/crypto-for-beginners",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/crypto-index-funds",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/crypto-to-mine",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/cryptos-to-buy",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/defi-tokens",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/depin-tokens",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/dividend-crypto",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/green-crypto",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/high-yield",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/layer-2",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/long-term",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/low-market-cap",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/meme-coins",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/metaverse",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/passive-income",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/portfolio-bots",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/portfolio-trackers",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/privacy-coins",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/rwa",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/savings-accounts",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/stablecoins",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/staking",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/trading-platforms",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/under-1-dollar",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/under-10-dollars",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/best/yield-farming",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/calculators/dca-calculator",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/calculators/profit-calculator",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/calculators/roi-calculator",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/calculators/staking-calculator",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/aave-vs-compound",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/active-vs-passive-crypto",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/arbitrum-vs-optimism",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/avalanche-vs-solana",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/bitcoin-vs-ethereum",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/bitcoin-vs-gold",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/bitcoin-vs-litecoin",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/bitcoin-vs-sp500",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/cardano-vs-solana",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/cefi-vs-defi-investing",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/chainlink-vs-band-protocol",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/cosmos-vs-polkadot",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/dca-vs-timing-market",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/direct-crypto-vs-etf",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/ethereum-vs-bnb-chain",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/polygon-vs-arbitrum",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/solana-vs-ethereum",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/spot-vs-futures-investing",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/staking-vs-lending",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/compare/uniswap-vs-pancakeswap",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/aave-token",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/algorand",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/arbitrum",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/avalanche",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/bitcoin",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/bnb",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/cardano",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/chainlink",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/cosmos",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/dogecoin",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/ethereum",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/fantom",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/hedera",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/litecoin",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/monero",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/optimism",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/polkadot",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/polygon",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/shiba-inu",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/solana",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/stacks",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/stellar",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/tron",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/uniswap",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/vechain",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/crypto/xrp",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/best",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/best/beginners",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/best/ethereum",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/best/highest-apy",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/best/liquid-staking",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/best/restaking",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/best/solana",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/best/validators",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/calculators/compound-staking-calculator",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/calculators/staking-rewards-calculator",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/compare/coinbase-vs-lido",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/compare/eigenlayer-vs-lido",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/compare/jito-vs-marinade",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/compare/lido-vs-rocket-pool",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/reviews/coinbase-staking",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/reviews/eigenlayer",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/reviews/jito",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/reviews/kraken-staking",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/reviews/lido",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/reviews/marinade",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/reviews/rocket-pool",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/staking/reviews/stakewise",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/tools/crypto-converter",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/tools/portfolio-tracker",
+    "category": "investing"
+  },
+  {
+    "slug": "/investing/tools/staking-apy",
+    "category": "investing"
+  },
+  {
+    "slug": "/ja",
+    "category": "ja"
+  },
+  {
+    "slug": "/ko",
+    "category": "ko"
+  },
+  {
+    "slug": "/leaderboard",
+    "category": "leaderboard"
+  },
+  {
+    "slug": "/learn",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/aave-v4-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/abstract-chain-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/account-abstraction",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/advanced-defi-strategies",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/advanced-staking-strategies-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/aerodrome-finance-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/agentic-payments-protocols-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ai-agent-frameworks-comparison-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ai-agent-identity-nhi-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ai-agent-payments-x402-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ai-agent-wallets-autonomous-payments-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ai-crypto-agents-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ai-depin-crypto-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ai-tokens-agents",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/altcoin-etf-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/amm-liquidity-pools-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/appchains-app-specific-rollups-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/aptos-blockchain-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/aster-chain-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/aztec-network-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/babylon-protocol-bitcoin-staking",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/base-chain-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/based-rollups-preconfirmations-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/berachain-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/best-meme-coin-launchpads-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/best-perpetual-dex-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-20-million-supply-milestone",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-bitvm-programmability-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-covenants-opcat-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-etf-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-layer-2-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-lightning-network",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-liquid-staking-tokens-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-mining-profitability-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-ordinals-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-runes-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-safe-haven-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-strategic-reserve-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-supply-shock-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitcoin-treasury-companies-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bitgo-ipo-crypto-infrastructure-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/bittensor-tao-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/blast-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/btc-yield-earning-strategies-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/btcfi-bitcoin-defi-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/btcfi-yield-strategies-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/celestia-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/chain-abstraction",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/chain-abstraction-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/citrea-bitcoin-zk-rollup-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/clarity-act-crypto-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/cold-storage-seed-phrase-security-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/congressional-tokenization-hearing-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/corporate-crypto-treasury-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/cross-chain-bridges-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/cross-chain-intents-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/cross-chain-interoperability-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/cross-chain-messaging-protocols-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-airdrops-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-arbitrage-strategies-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-bear-market-investing-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-copy-trading-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-custody-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-dca-strategy-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-debit-cards-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-etf-in-kind-redemption-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-etf-options-trading-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-etfs-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-gaming-2026-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-gas-fees-transaction-costs-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-glossary",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-index-funds-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-inheritance-planning",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-leverage-trading-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-market-cycles-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-market-making-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-narrative-trading",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-on-ramps-off-ramps-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-options-strategies-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-options-trading-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-oracles-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-passive-income-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-payroll-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-portfolio-allocation-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-portfolio-rebalancing-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-prediction-markets-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-regulation-global",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-retirement-ira-pension-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-risk-management-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-security-masterclass-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-tax-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-tax-loss-harvesting-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-technical-analysis-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-trading-bots-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-wallet-security-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/cryptocurrency-beginners-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/daily-trivia",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/dao-governance-voting-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/data-availability-celestia-eigenda-avail-comparison-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/data-availability-layer-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/decentralized-gpu-compute-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/decentralized-gpu-compute-networks-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defai-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defi-insurance-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defi-insurance-protocols-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defi-lending-protocol-comparison-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defi-liquidation-protection-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defi-options-trading-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defi-options-trading-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defi-points-airdrop-farming-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defi-safety-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defi-vaults-structured-products-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/defi-yield-aggregators-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/delta-neutral-yield-strategies-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/depin-earning-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/depin-ecosystem-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/depin-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/desci-decentralized-science-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/dex-aggregators-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/distributed-validator-technology-dvt-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/distributed-validator-technology-dvt-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/dyor-token-research-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/eclipse-svm-layer-2-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/eip-7702-smart-accounts-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/embed-widgets-crypto",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/erc-7683-cross-chain-intents-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/erc-8183-agentic-commerce-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ethena-usde-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ethereum-2026-upgrade-roadmap",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ethereum-blob-space-economics-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ethereum-fusaka-glamsterdam-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ethereum-layer-2-comparison-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ethereum-pectra-upgrade-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ethereum-verkle-trees-hegota-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/fair-token-launches-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/farcaster-socialfi-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/fhe-crypto-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/flash-loans-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/fluid-protocol-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/fomc-fed-rate-crypto-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/fully-onchain-gaming-autonomous-worlds-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/funding-rate-arbitrage-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/gamblefi-onchain-betting-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/genius-act-stablecoin-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/glossary",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/governance-security-attack-vectors-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/grass-protocol-depin-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/grayscale-hype-etf-defi-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/how-to-buy-ethereum",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/how-to-convert-crypto",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/how-to-read-crypto-whitepaper",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/hyperliquid-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/hyperliquid-hip3-tokenized-futures-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/hyperliquid-trading-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/initia-blockchain-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/institutional-crypto-adoption-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/intent-based-dex-trading-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/intent-based-trading",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/jupiter-solana-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/kaito-ai-infofi-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/karak-network-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/katana-perps-idex-acquisition-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/kite-ai-payment-blockchain-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/know-your-agent-kya-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/l2-bridges-rollups-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/l3-networks-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/layer-2-scaling-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/layer-3-chains-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/leveraged-tokens-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/lido-v3-stvaults-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/liquid-restaking-tokens-compared-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/liquid-staking-derivatives",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/megaeth-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/megaeth-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/memecoin-trading-strategy",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/mev-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/mev-protection-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/mica-eu-crypto-regulation-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/modular-blockchain-stack-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/modular-blockchains-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/monad-blockchain-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/morgan-stanley-bitcoin-etf-msbt-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/morpho-protocol-defi-lending-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/morpho-protocol-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/movement-network-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/mpc-wallets-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/nasdaq-tokenized-equities-trading-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/nftfi-nft-finance-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/no-code-ai-trading-agents-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/omnichain-defi-unified-liquidity-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/onchain-analytics-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/onchain-credit-scoring-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/onchain-finance-onfi-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/onchain-forex-stablecoin-diversity-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/onchain-identity-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/onchain-identity-reputation-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/onchain-institutional-credit-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/onchain-order-book-clob-dex-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/onchain-privacy-infrastructure-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ondo-finance-rwa-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/paradex-zk-perpetuals-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/parallel-evm-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/passkey-embedded-wallets-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/payfi-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/peaq-depin-robotics-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/pendle-finance-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/perp-dex-wars-comparison-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/perpetual-futures-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/polymarket-prediction-markets-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/prediction-markets-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/privacy-coins-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/pump-fun-memecoins",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/quantum-resistant-crypto-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/quiz",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/raas-rollup-as-a-service-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/railgun-privacy-defi-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/real-world-assets-rwa-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/real-yield-defi-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/restaking-avs-ecosystem-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/restaking-eigenlayer",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/restaking-eigenlayer-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/rwa-platforms-comparison-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/rwa-tokenization-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/rwa-yield-vs-defi-yield-comparison-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/scroll-zkevm-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/sec-cftc-mou-crypto-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/sec-digital-commodities-classification-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/sei-network-parallel-evm-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/shared-sequencing-decentralized-sequencers-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/smart-contract-security-audit-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/smart-contract-security-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/smart-money-onchain-signals-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/smart-wallets-account-abstraction-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/smart-wallets-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/socialfi-creator-tokens-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solana-alpenglow-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solana-blinks-actions-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solana-defi-ecosystem-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solana-developer-platform-sdp-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solana-etf-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solana-firedancer-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solana-liquid-staking-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solana-lst-comparison-marinade-jito-sanctum-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solana-token-extensions-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solana-vs-ethereum-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/solver-networks-order-flow-auctions-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/soneium-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/sonic-blockchain-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/stablechains-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/stablecoin-comparison",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/stablecoin-payments-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/stablecoin-payments-infrastructure-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/stablecoin-yield-strategies-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/stacks-sbtc-bitcoin-smart-contracts-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/staked-crypto-etfs-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/staking-as-a-service-providers-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/starknet-validity-rollup-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/story-protocol-ip-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/story-protocol-ip-tokenization-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/sui-blockchain-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/sui-defi-ecosystem-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/sui-hashi-bitcoin-defi-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/sui-private-transactions-seal-framework-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/symbiotic-protocol-restaking-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/symbiotic-restaking",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tariffs-trade-war-crypto-impact-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tee-verifiable-compute-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/telegram-mini-apps-ton-gaming-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/telegram-trading-bots-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tempo-blockchain-machine-payments-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/token-vesting-explained",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tokenized-funds-institutional-defi-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tokenized-gold-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tokenized-real-estate-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tokenized-stocks-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tokenized-treasuries-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tokenized-treasuries-rwa-yield-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tokenized-treasury-bills-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tokenomics-protocol-revenue-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ton-blockchain-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ton-defi-ecosystem-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/tradfi-defi-convergence-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/trivia-leaderboard",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/trump-crypto-reserve-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/unichain-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/unichain-uniswap-layer-2-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/uniswap-v4-hooks-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/validator-staking-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/vetokenomics-curve-wars-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/virtuals-protocol-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/walrus-decentralized-storage-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/web3-gaming-gamefi-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/world-chain-proof-of-personhood-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/wrapped-bitcoin-comparison-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/yield-bearing-stablecoins",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/yield-tokenization-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/zero-knowledge-proofs",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/zk-coprocessors-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/zkml-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/zksync-era-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/long-term",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/best",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/best/advisors",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/best/blue-chip-crypto",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/best/cold-storage-strategies",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/best/crypto-ira",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/best/dividend-crypto",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/best/dividend-tokens",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/best/hodl-coins",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/best/self-directed",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/best/staking-long-term",
+    "category": "long-term"
+  },
+  {
+    "slug": "/methodology",
+    "category": "methodology"
+  },
+  {
+    "slug": "/news",
+    "category": "news"
+  },
+  {
+    "slug": "/news/live",
+    "category": "news"
+  },
+  {
+    "slug": "/news/market-recap",
+    "category": "news"
+  },
+  {
+    "slug": "/newsletter",
+    "category": "newsletter"
+  },
+  {
+    "slug": "/newsletter/welcome",
+    "category": "newsletter"
+  },
+  {
+    "slug": "/nft-analytics",
+    "category": "nft-analytics"
+  },
+  {
+    "slug": "/nfts",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/art",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/beginners",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/bitcoin-ordinals",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/creators",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/ethereum",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/free-mint",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/gaming",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/low-fee",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/music",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/photography",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/best/solana",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/compare/foundation-vs-superrare",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/compare/looksrare-vs-x2y2",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/compare/magic-eden-vs-opensea",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/compare/opensea-vs-blur",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/compare/opensea-vs-rarible",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/compare/tensor-vs-magic-eden",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/floor-tracker",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/blur",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/element-market",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/foundation",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/looksrare",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/magic-eden",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/opensea",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/ordinals-market",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/rarible",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/superrare",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/tensor",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/x2y2",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/reviews/zora",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/tools/floor-price-tracker",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/tools/profit-calculator",
+    "category": "nfts"
+  },
+  {
+    "slug": "/nfts/tools/rarity-checker",
+    "category": "nfts"
+  },
+  {
+    "slug": "/notifications",
+    "category": "notifications"
+  },
+  {
+    "slug": "/offline",
+    "category": "offline"
+  },
+  {
+    "slug": "/onboarding",
+    "category": "onboarding"
+  },
+  {
+    "slug": "/onboarding/email-drip",
+    "category": "onboarding"
+  },
+  {
+    "slug": "/partners",
+    "category": "partners"
+  },
+  {
+    "slug": "/portfolio",
+    "category": "portfolio"
+  },
+  {
+    "slug": "/portfolio/multi-chain",
+    "category": "portfolio"
+  },
+  {
+    "slug": "/portfolio-analytics",
+    "category": "portfolio-analytics"
+  },
+  {
+    "slug": "/portfolio-live",
+    "category": "portfolio-live"
+  },
+  {
+    "slug": "/portfolio-onchain",
+    "category": "portfolio-onchain"
+  },
+  {
+    "slug": "/portfolio-tracker",
+    "category": "portfolio-tracker"
+  },
+  {
+    "slug": "/prices",
+    "category": "prices"
+  },
+  {
+    "slug": "/pricing",
+    "category": "pricing"
+  },
+  {
+    "slug": "/privacy",
+    "category": "privacy"
+  },
+  {
+    "slug": "/pt-br",
+    "category": "pt-br"
+  },
+  {
+    "slug": "/quiz",
+    "category": "quiz"
+  },
+  {
+    "slug": "/referral",
+    "category": "referral"
+  },
+  {
+    "slug": "/",
+    "category": "root"
+  },
+  {
+    "slug": "/search",
+    "category": "search"
+  },
+  {
+    "slug": "/settings/notifications",
+    "category": "settings"
+  },
+  {
+    "slug": "/share",
+    "category": "share"
+  },
+  {
+    "slug": "/signals",
+    "category": "signals"
+  },
+  {
+    "slug": "/spending",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/best",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/best/cashback",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/best/debit-cards",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/best/merchants",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/best/payment-apps",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/best/rewards",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/best/travel",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/compare/bitpay-vs-coingate",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/compare/crypto-com-pay-vs-bitpay",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/bitpay",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/bitpay-app",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/coingate",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/crypto-com-pay",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/flexa",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/fold-app",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/lolli",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/moon-browser",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/nowpayments",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/purse-io",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/spedn",
+    "category": "spending"
+  },
+  {
+    "slug": "/spending/reviews/travala",
+    "category": "spending"
+  },
+  {
+    "slug": "/staking",
+    "category": "staking"
+  },
+  {
+    "slug": "/start",
+    "category": "start"
+  },
+  {
+    "slug": "/status",
+    "category": "status"
+  },
+  {
+    "slug": "/status/api-health",
+    "category": "status"
+  },
+  {
+    "slug": "/streak",
+    "category": "streak"
+  },
+  {
+    "slug": "/streak/leaderboard",
+    "category": "streak"
+  },
+  {
+    "slug": "/taxes",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/best",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/best/accountants",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/best/defi-tax-tools",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/best/free-tools",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/best/software",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/calculators/capital-gains-calculator",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/calculators/tax-calculator",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/compare/cointracker-vs-zenledger",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/compare/crypto-tax-software-comparison",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/compare/free-vs-paid-crypto-tax",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/compare/koinly-vs-cointracker",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/compare/koinly-vs-cryptotaxcalculator",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/compare/koinly-vs-taxbit",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/compare/taxbit-vs-cointracker",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/compare/tokentax-vs-coinledger",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/compare/turbotax-vs-koinly",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/learn/tax-loss-harvesting",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/accointing",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/coinledger",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/coinpanda",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/cointracker",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/cryptotaxcalculator",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/hr-block-crypto",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/koinly",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/taxbit",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/tokentax",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/turbotax-crypto",
+    "category": "taxes"
+  },
+  {
+    "slug": "/taxes/reviews/zenledger",
+    "category": "taxes"
+  },
+  {
+    "slug": "/terms",
+    "category": "terms"
+  },
+  {
+    "slug": "/token",
+    "category": "token"
+  },
+  {
+    "slug": "/tools",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/advanced-charting",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/ai-trading-signals",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/airdrop-eligibility",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/airdrop-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/alerts-dashboard",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/altcoin-etf-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/backtesting-engine",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/bridge-aggregator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/bridge-aggregator-v2",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/bridge-monitor",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/chain-comparison",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/converter",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/correlation-matrix",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/crypto-calendar",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/crypto-watchlist",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/crypto-wrapped",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/dao-treasury-dashboard",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/dca-calculator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/defi-position-manager",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/defi-risk-scanner",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/defi-risk-scorer",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/defi-yields",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/degen-score",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/dex-aggregator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/dex-screener",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/dominance-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/embed-widgets",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/etf-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/exchange-cashback",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/exchange-fees",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/fear-greed-timeline",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/funding-rate-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/funding-rates",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/gas-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/governance-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/impermanent-loss",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/index-fund-simulator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/leaderboard",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/lending-comparison",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/lending-rates",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/liquidation-heatmap",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/liquidity-pool-explorer",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/live-prices",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/market-dominance",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/market-heatmap",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/market-movers",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/market-recap",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/memecoin-index",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/mev-protection-dashboard",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/mev-scanner",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/multi-chain-gas",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/narrative-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/news-aggregator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/news-feed",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/nft-portfolio",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/nft-rarity-checker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/onchain-analytics",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/options-calculator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/performance-dashboard",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/perp-funding",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/pnl-calculator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/portfolio-allocation",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/portfolio-allocator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/portfolio-analytics",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/portfolio-heatmap",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/portfolio-rebalancer",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/portfolio-simulator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/portfolio-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/portfolio-widget",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/price-alerts",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/price-ticker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/protocol-revenue",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/regulatory-map",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/research-assistant",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/retirement-calculator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/risk-analyzer",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/risk-assessment",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/risk-score",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/robo-advisor",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/salary-in-crypto",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/screener",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/sentiment-dashboard",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/sentiment-heatmap",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/smart-money-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/social-metrics",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/social-sentiment",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/stablecoin-yield-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/staking-apy",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/staking-rewards",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/strategy-builder",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/tax-calculator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/tax-loss-harvester",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/tax-optimizer",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/token-compare",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/token-launch-radar",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/token-radar",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/token-screener",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/token-security-scanner",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/token-unlock-calendar",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/token-unlocks",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/token-vesting",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/tokenized-stocks-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/trading-journal",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/vc-funding-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/volatility-scanner",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/wallet-analyzer",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/wallet-pnl-breakdown",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/wallet-profiler",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/wallet-security-audit",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/watchlist-sync",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/whale-alert-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/whale-tracker",
+    "category": "tools"
+  },
+  {
+    "slug": "/tools/yield-farming-calculator",
+    "category": "tools"
+  },
+  {
+    "slug": "/tr",
+    "category": "tr"
+  },
+  {
+    "slug": "/trading/best",
+    "category": "trading"
+  },
+  {
+    "slug": "/trading/tools/liquidation-map",
+    "category": "trading"
+  },
+  {
+    "slug": "/wallets",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/android",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/australia",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/beginners",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/bitcoin",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/browser-extension",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/canada",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/custodial",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/defi",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/desktop",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/ethereum",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/europe",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/hardware",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/hot-wallets",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/institutional",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/ios",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/mobile",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/multi-chain",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/nft",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/open-source",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/privacy",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/security",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/software",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/solana",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/staking",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/uk",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/best/usa",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/coinbase-wallet-vs-metamask",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/custodial-vs-non-custodial",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/evm-vs-solana-wallets",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/exodus-vs-coinbase-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/exodus-vs-trust-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/hot-vs-cold-wallets",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/ledger-vs-coldcard",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/ledger-vs-keystone",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/ledger-vs-trezor",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/metamask-vs-coinbase-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/metamask-vs-phantom",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/metamask-vs-rabby",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/metamask-vs-trust-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/mobile-vs-desktop",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/multisig-vs-single-key",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/phantom-vs-backpack",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/phantom-vs-solflare",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/rabby-vs-metamask",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/software-vs-hardware",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/tangem-vs-ledger",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/trezor-vs-coldcard",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/compare/trust-wallet-vs-metamask",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/learn/custodial-vs-non-custodial",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/learn/hot-vs-cold-wallets",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/learn/how-to-set-up-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/learn/how-to-transfer-crypto",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/learn/multi-sig-wallets",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/learn/seed-phrase-explained",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/learn/wallet-backup-guide",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/learn/wallet-security-best-practices",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/learn/what-is-a-crypto-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/arculus",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/argent",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/atomic",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/backpack-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/bc-vault",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/binance-web3-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/bitbox",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/bitget-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/blue-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/coinbase-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/coldcard",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/dcent",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/electrum",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/ellipal",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/exodus",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/foundation",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/frame",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/gridplus",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/jade",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/jade-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/keepkey",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/keplr",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/keystone",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/ledger",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/metamask",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/mycelium",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/ngrave",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/okx-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/onekey",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/phantom",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/phantom-solana",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/rabby",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/rainbow",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/safe",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/safe-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/safepal",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/sparrow",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/tangem",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/trezor",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/trust-wallet",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/wasabi",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/xdefi",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/zengo",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/reviews/zerion",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/tools/gas-fee-tracker",
+    "category": "wallets"
+  },
+  {
+    "slug": "/wallets/tools/wallet-comparison",
+    "category": "wallets"
+  },
+  {
+    "slug": "/watchlists",
+    "category": "watchlists"
+  },
+  {
+    "slug": "/web3-business",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best/accounting",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best/business-banking",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best/corporate-cards",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best/dao-tools",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best/grants",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best/launchpads",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best/legal",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best/payment-processing",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best/payroll",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/best/treasury-tools",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/jobs",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/reviews/bitpay-business",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/reviews/coinbase-commerce",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/reviews/ramp-network",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/reviews/sablier",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/reviews/stripe-crypto",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/reviews/superfluid",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/web3-business/reviews/utrust",
+    "category": "web3-business"
+  },
+  {
+    "slug": "/whale-watch",
+    "category": "whale-watch"
+  },
+  {
+    "slug": "/xp-attestation",
+    "category": "xp-attestation"
+  },
+  {
+    "slug": "/xp-sync",
+    "category": "xp-sync"
+  }
+]
