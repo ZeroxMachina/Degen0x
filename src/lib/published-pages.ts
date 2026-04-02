@@ -986,20 +986,21 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/courses/crypto-security",
   "/courses/rwa-tokenization",
 
+  // ── Daily Publish Cycle — 2026-04-02 ──────────────────
+  "/learn/euler-v2-modular-lending-guide-2026",
+  "/learn/hyperlane-permissionless-interoperability-guide-2026",
+  "/learn/crypto-staking-guide-2026",
+  "/learn/flash-loans-defi-guide-2026",
 ]);
 
 /**
  * PUBLISH QUEUE — ordered by priority (publish 20/day)
  * Move slugs up into PUBLISHED_PAGES each day.
  *
- * NOTE 2026-04-02: These 4 slugs were queued but have NO page content yet.
- *   Scaffold the pages before promoting them.
+ * Queue is empty — all pages published as of 2026-04-02.
  */
 export const PUBLISH_QUEUE: readonly string[] = [
-  "/learn/euler-v2-modular-lending-guide-2026",
-  "/learn/hyperlane-permissionless-interoperability-guide-2026",
-  "/learn/crypto-staking-guide-2026",
-  "/learn/flash-loans-defi-guide-2026",
+  // Queue empty — all pages published as of 2026-04-02.
 ];
 
 /**
