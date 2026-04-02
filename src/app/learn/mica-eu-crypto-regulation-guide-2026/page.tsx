@@ -1,12 +1,9 @@
 import { Metadata } from 'next';
-import {
-  generateArticleSchema,
-  generateFAQSchema,
-  combineSchemas,
-  StructuredData,
-  Breadcrumb,
-  BackToTop,
-} from '@/lib/seo';
+import { generateArticleSchema, generateFAQSchema } from '@/lib/seo-utils';
+import { combineSchemas } from '@/lib/structured-data';
+import StructuredData from '@/components/StructuredData';
+import Breadcrumb from '@/components/Breadcrumb';
+import BackToTop from '@/components/BackToTop';
 
 export const metadata: Metadata = {
   title: 'MiCA EU Crypto Regulation Guide 2026 | degen0x',

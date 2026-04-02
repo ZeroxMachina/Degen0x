@@ -1,12 +1,9 @@
 import { Metadata } from 'next';
-import {
-  generateArticleSchema,
-  generateFAQSchema,
-  combineSchemas,
-  StructuredData,
-  Breadcrumb,
-  BackToTop,
-} from '@/components/seo';
+import { generateArticleSchema, generateFAQSchema } from '@/lib/seo-utils';
+import { combineSchemas } from '@/lib/structured-data';
+import StructuredData from '@/components/StructuredData';
+import Breadcrumb from '@/components/Breadcrumb';
+import BackToTop from '@/components/BackToTop';
 
 export const metadata: Metadata = {
   title: 'Distributed Validator Technology (DVT) Guide | degen0x',
