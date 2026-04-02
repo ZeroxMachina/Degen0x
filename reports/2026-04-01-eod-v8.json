@@ -1,0 +1,71 @@
+{
+  "date": "2026-04-01",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close Apr 1 v8: Stable since v7 — no new commits. 41 uncommitted files (up from 29), including 9 learn page edits, 2 new OG SVGs, and stablecoin-yield-tracker update. 141 TS errors holding. 628 published slugs, 1,240 pages on disk. All 6 API routes intact.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "HEAD unchanged at 3b2dd28 — no new commits since last cycle.",
+          "1,240 page.tsx files on disk — STABLE.",
+          "628 published slugs (up 2 from v7's 626 — uncommitted published-pages.ts edit adds 2 slugs).",
+          "141 TypeScript errors — STABLE. All in structured-data.examples.ts (non-blocking, ignoreBuildErrors: true).",
+          "9 learn pages modified in working tree (appchains, crypto-index-funds, crypto-passive-income, verkle-trees, institutional-adoption, omnichain-defi, solana-token-extensions, stablecoin-payments, unichain) — all clean server components with metadata exports.",
+          "1 tool page modified: stablecoin-yield-tracker/page.tsx — needs review before commit.",
+          "109 published slugs still missing page.tsx — unchanged. Scaffolding sprint still needed.",
+          "Network egress blocked — live HTTP checks unavailable from sandbox."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "6/6 core API routes present: prices, fear-greed, trending, market-metrics, market-dominance, defi-yields.",
+          "No API route code changes this cycle. Caching and fallback patterns unchanged.",
+          "market-dominance is the only route with explicit CACHE_TTL (300s) and FALLBACK_DATA — other routes use simpler patterns.",
+          "defi-yields still lacks stale fallback data — persistent low-priority gap.",
+          "13 total API routes on disk (core 6 + cache-stats, health, news-rss, newsletter, notifications, og, admin, standup-email, subscribe).",
+          "Egress blocked — cannot verify live API responses or upstream CoinGecko/DefiLlama health."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "HEAD: 3b2dd28 — unchanged since last cycle. No new deploys triggered.",
+          "41 uncommitted files (up from 29 in v7). Delta: +9 learn page edits, +2 OG SVGs, +1 tool page edit, +2 skill files, new report files.",
+          "Build fix from 3b2dd28 ('use client' removal) should be live if Vercel auto-deploy on push is enabled.",
+          "Production build expected to succeed — 141 TS errors non-blocking.",
+          "Growing uncommitted file count (41) increases risk of merge conflicts. Recommend commit+push cycle soon.",
+          "Cannot verify Vercel dashboard — egress blocked."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "NO NEW COMMITS this cycle — steady-state. All changes are local uncommitted edits.",
+          "ACTIVE WORK IN PROGRESS: 9 learn guide edits + stablecoin-yield-tracker update + 2 new OG SVGs.",
+          "CARRY-OVER: 41 uncommitted files need commit+push. Growing since v7 (was 29). Priority: high.",
+          "CARRY-OVER: 109 published slugs without page.tsx — needs scaffolding sprint.",
+          "CARRY-OVER: defi-yields fallback data gap — low priority.",
+          "ACTION NEEDED: Commit+push the 41 uncommitted files to trigger Vercel deploy and reduce drift risk.",
+          "NO BLOCKERS requiring Jefe's immediate attention."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Pages on Disk", "value": "1,240", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Slugs", "value": "628", "pct": 51, "color": "#06b6d4" },
+          { "label": "TypeScript Errors", "value": "141 (stable)", "pct": 30, "color": "#f59e0b" },
+          { "label": "API Routes", "value": "6/6 present", "pct": 100, "color": "#4ade80" },
+          { "label": "Missing page.tsx", "value": "109 slugs", "pct": 17, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "41 (↑12)", "pct": 55, "color": "#f59e0b" },
+          { "label": "Build Health", "value": "Expected pass", "pct": 85, "color": "#4ade80" },
+          { "label": "Live Endpoint Check", "value": "Egress blocked", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

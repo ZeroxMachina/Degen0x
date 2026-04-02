@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     tags: ['unichain', 'layer-2', 'uniswap', 'defi', 'web3'],
     images: [
       {
-        url: `${SITE_URL}/og-unichain-guide-2026.png`,
+        url: `${SITE_URL}/og-unichain-guide-2026.svg`,
         width: 1200,
         height: 630,
       },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Unichain Guide 2026: What Is Uniswap\'s Layer 2 and How It Works',
     description: 'Complete guide to Unichain, Uniswap\'s DeFi-optimized Layer 2 built on OP Stack. Learn about features, bridge mechanics, MEV protection, and how it compares to Base and Arbitrum.',
-    images: [`${SITE_URL}/og-unichain-guide-2026.png`],
+    images: [`${SITE_URL}/og-unichain-guide-2026.svg`],
   },
   alternates: {
     canonical: `${SITE_URL}/learn/unichain-guide-2026`,
@@ -149,7 +149,7 @@ export default function UniChainGuidePage() {
           </p>
 
           <p style={{ color: '#8b949e', fontSize: '14px' }}>
-            Updated March 2026 · 12 min read
+            Updated April 2026 · 12 min read
           </p>
         </div>
 

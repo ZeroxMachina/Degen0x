@@ -198,7 +198,7 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
             Wall Street didn't ignore crypto in 2026—it consumed it. BlackRock's
             tokenized BUIDL fund now holds $2.85B+. JPMorgan launched its own
             custody layers. The SEC and CFTC blessed 16 assets as digital
-            commodities. Tokenized US Treasuries exploded from <$1B to >$10B.
+            commodities. Tokenized US Treasuries exploded from &lt;$1B to &gt;$10B.
             And everyone's talking about AI: the next big use case for
             blockchain. This guide breaks down what institutional adoption means
             for you, what's actually happening on Wall Street, and how these
@@ -324,7 +324,7 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
                 Tokenized real-world assets market: $35.6B total value in 2026
               </li>
               <li>
-                Tokenized US Treasuries: Grew from <$1B (early 2024) to $10B+ (Jan 2026)
+                Tokenized US Treasuries: Grew from &lt;$1B (early 2024) to $10B+ (Jan 2026)
               </li>
               <li>
                 JPMorgan, Morgan Stanley, Citi: All launched custody and settlement layers

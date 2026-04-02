@@ -180,15 +180,15 @@ export default function OmnichainDeFiGuide() {
         <nav aria-label="Table of Contents" style={s.toc}>
           <h2 style={s.tocTitle}>Table of Contents</h2>
           <ol style={s.tocList}>
-            <li><a href="#what-is-omnichain" style={s.link}>What Is Omnichain DeFi?</a></li>
-            <li><a href="#liquidity-fragmentation" style={s.link}>The Liquidity Fragmentation Problem</a></li>
-            <li><a href="#how-omnichain-works" style={s.link}>How Omnichain Protocols Work</a></li>
-            <li><a href="#key-protocols" style={s.link}>Key Omnichain Protocols in 2026</a></li>
-            <li><a href="#comparison" style={s.link}>Omnichain vs Multichain vs Cross-Chain</a></li>
-            <li><a href="#user-benefits" style={s.link}>What This Means for Users</a></li>
-            <li><a href="#risks-considerations" style={s.link}>Risks &amp; Considerations</a></li>
-            <li><a href="#future" style={s.link}>The Future of Omnichain DeFi</a></li>
-            <li><a href="#faq" style={s.link}>FAQ</a></li>
+            <li><a href="#what-is-omnichain" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={s.link}>What Is Omnichain DeFi?</a></li>
+            <li><a href="#liquidity-fragmentation" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={s.link}>The Liquidity Fragmentation Problem</a></li>
+            <li><a href="#how-omnichain-works" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={s.link}>How Omnichain Protocols Work</a></li>
+            <li><a href="#key-protocols" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={s.link}>Key Omnichain Protocols in 2026</a></li>
+            <li><a href="#comparison" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={s.link}>Omnichain vs Multichain vs Cross-Chain</a></li>
+            <li><a href="#user-benefits" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={s.link}>What This Means for Users</a></li>
+            <li><a href="#risks-considerations" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={s.link}>Risks &amp; Considerations</a></li>
+            <li><a href="#future" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={s.link}>The Future of Omnichain DeFi</a></li>
+            <li><a href="#faq" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={s.link}>FAQ</a></li>
           </ol>
         </nav>
 
@@ -361,13 +361,13 @@ export default function OmnichainDeFiGuide() {
           <p style={s.p}>
             These terms are often confused, but they represent fundamentally different architectures:
           </p>
-          <table style={s.table}>
+          <table style={s.table} aria-label="Omnichain vs Multichain vs Cross-Chain Comparison">
             <thead style={s.tableHead}>
               <tr>
-                <th style={s.tableTh}>Architecture</th>
-                <th style={s.tableTh}>Liquidity Model</th>
-                <th style={s.tableTh}>User Experience</th>
-                <th style={s.tableTh}>Example</th>
+                <th scope="col" style={s.tableTh}>Architecture</th>
+                <th scope="col" style={s.tableTh}>Liquidity Model</th>
+                <th scope="col" style={s.tableTh}>User Experience</th>
+                <th scope="col" style={s.tableTh}>Example</th>
               </tr>
             </thead>
             <tbody>
@@ -536,47 +536,65 @@ export default function OmnichainDeFiGuide() {
         <section id="faq" style={s.section}>
           <h2 style={s.h2}>FAQ</h2>
 
-          <div>
-            <h3 style={s.faqQ}>What is the difference between multichain and omnichain?</h3>
-            <p style={s.faqA}>
+          <details style={{ ...s.box, cursor: "pointer" }}>
+            <summary style={{ ...s.faqQ, marginTop: 0, listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              What is the difference between multichain and omnichain?
+              <span aria-hidden="true" style={{ fontSize: 18, color: "#8b949e", marginLeft: 12, flexShrink: 0 }}>+</span>
+            </summary>
+            <p style={{ ...s.faqA, marginTop: 12 }}>
               Multichain means a protocol is deployed on multiple chains with separate liquidity pools on each. Users bridging between chains experience slippage, fragmented order books, and fragmented TVL. Omnichain means a single unified liquidity pool exists across all chains — the protocol operates as one entity, not fragmented copies. Users interact with unified liquidity regardless of which chain they&apos;re on.
             </p>
-          </div>
+          </details>
 
-          <div>
-            <h3 style={s.faqQ}>Why is liquidity fragmentation a problem?</h3>
-            <p style={s.faqA}>
+          <details style={{ ...s.box, cursor: "pointer" }}>
+            <summary style={{ ...s.faqQ, marginTop: 0, listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              Why is liquidity fragmentation a problem?
+              <span aria-hidden="true" style={{ fontSize: 18, color: "#8b949e", marginLeft: 12, flexShrink: 0 }}>+</span>
+            </summary>
+            <p style={{ ...s.faqA, marginTop: 12 }}>
               With $50B+ TVL spread across 200+ chains, liquidity on smaller chains becomes extremely thin. This creates severe slippage (sometimes 5-10% for mid-size trades), makes capital inefficient (liquidity providers duplicate effort across chains), increases bridge risk, and creates confusing UX with wrapped tokens. Users shouldn&apos;t need to know which chain they&apos;re on to access DeFi.
             </p>
-          </div>
+          </details>
 
-          <div>
-            <h3 style={s.faqQ}>How do omnichain protocols maintain unified state across chains?</h3>
-            <p style={s.faqA}>
+          <details style={{ ...s.box, cursor: "pointer" }}>
+            <summary style={{ ...s.faqQ, marginTop: 0, listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              How do omnichain protocols maintain unified state across chains?
+              <span aria-hidden="true" style={{ fontSize: 18, color: "#8b949e", marginLeft: 12, flexShrink: 0 }}>+</span>
+            </summary>
+            <p style={{ ...s.faqA, marginTop: 12 }}>
               Omnichain protocols use cross-chain messaging infrastructure like LayerZero (160+ chains), Wormhole, or Axelar to synchronize state across blockchains in real-time. Intent-based routing automatically directs orders to the best liquidity pool regardless of chain. Validators on multiple chains cryptographically sign messages, ensuring state consistency across all chains with minimal latency.
             </p>
-          </div>
+          </details>
 
-          <div>
-            <h3 style={s.faqQ}>What are the main risks of omnichain DeFi?</h3>
-            <p style={s.faqA}>
+          <details style={{ ...s.box, cursor: "pointer" }}>
+            <summary style={{ ...s.faqQ, marginTop: 0, listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              What are the main risks of omnichain DeFi?
+              <span aria-hidden="true" style={{ fontSize: 18, color: "#8b949e", marginLeft: 12, flexShrink: 0 }}>+</span>
+            </summary>
+            <p style={{ ...s.faqA, marginTop: 12 }}>
               Cross-chain messaging infrastructure adds complexity and attack surface — over $2B in bridge hacks have occurred historically. Omnichain protocols depend on oracle integrity, relayer liveness, and smart contract security across multiple chains. If one relay chain is compromised, unified liquidity can be exploited. Centralization in relayers is also a concern — many omnichain systems rely on small sets of validators.
             </p>
-          </div>
+          </details>
 
-          <div>
-            <h3 style={s.faqQ}>Do I still need to bridge tokens for omnichain DeFi?</h3>
-            <p style={s.faqA}>
+          <details style={{ ...s.box, cursor: "pointer" }}>
+            <summary style={{ ...s.faqQ, marginTop: 0, listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              Do I still need to bridge tokens for omnichain DeFi?
+              <span aria-hidden="true" style={{ fontSize: 18, color: "#8b949e", marginLeft: 12, flexShrink: 0 }}>+</span>
+            </summary>
+            <p style={{ ...s.faqA, marginTop: 12 }}>
               Not with native omnichain protocols. If you use an omnichain protocol like Stargate or Orderly Network, you can deposit on one chain and the protocol handles everything behind the scenes. The best unified liquidity is automatically routed to you without wrapping tokens. Traditional bridges are still needed for general cross-chain asset movement, but omnichain DeFi abstracts this away.
             </p>
-          </div>
+          </details>
 
-          <div>
-            <h3 style={s.faqQ}>What is chain abstraction and how does it relate to omnichain?</h3>
-            <p style={s.faqA}>
+          <details style={{ ...s.box, cursor: "pointer" }}>
+            <summary style={{ ...s.faqQ, marginTop: 0, listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              What is chain abstraction and how does it relate to omnichain?
+              <span aria-hidden="true" style={{ fontSize: 18, color: "#8b949e", marginLeft: 12, flexShrink: 0 }}>+</span>
+            </summary>
+            <p style={{ ...s.faqA, marginTop: 12 }}>
               Chain abstraction means users don&apos;t need to think about which chain they&apos;re on. Tools like Socket and MakerDAO&apos;s infrastructure hide chain selection entirely — you specify an asset and destination, and the system optimizes routing, bridging, and execution silently. Omnichain DeFi is one implementation of chain abstraction — it makes specific chains irrelevant by pooling liquidity globally.
             </p>
-          </div>
+          </details>
         </section>
 
         {/* Related Links */}

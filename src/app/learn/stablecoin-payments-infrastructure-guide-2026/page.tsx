@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Stablecoin Payments Infrastructure Guide 2026",
     description: "From BVNK to settlement rails—the future of payments is on-chain.",
+    images: [`${SITE_URL}/og-stablecoin-payments-infrastructure-guide-2026.svg`],
+  },
+  alternates: {
+    canonical: `${SITE_URL}/learn/stablecoin-payments-infrastructure-guide-2026`,
   },
 };
 
@@ -119,16 +123,16 @@ export default function StablecoinPaymentsGuide() {
         </div>
 
         {/* Table of Contents */}
-        <nav style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: "12px", padding: "20px", marginBottom: "40px" }}>
+        <nav aria-label="Table of Contents" style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: "12px", padding: "20px", marginBottom: "40px" }}>
           <h2 style={{ fontSize: "14px", fontWeight: 700, marginBottom: "12px", color: "#58a6ff" }}>Table of Contents</h2>
           <ol style={{ paddingLeft: "20px", color: "#8b949e", fontSize: "14px", lineHeight: 2.2 }}>
-            <li><a href="#what-is-stablecoin-infrastructure" style={{ color: "#58a6ff", textDecoration: "none" }}>What Is Stablecoin Payment Infrastructure?</a></li>
-            <li><a href="#mastercard-bvnk" style={{ color: "#58a6ff", textDecoration: "none" }}>The Mastercard-BVNK Deal Explained</a></li>
-            <li><a href="#how-settlement-works" style={{ color: "#58a6ff", textDecoration: "none" }}>How Stablecoin Settlement Rails Work</a></li>
-            <li><a href="#key-players" style={{ color: "#58a6ff", textDecoration: "none" }}>Key Players in 2026</a></li>
-            <li><a href="#what-it-means" style={{ color: "#58a6ff", textDecoration: "none" }}>What This Means for Crypto Users</a></li>
-            <li><a href="#risks-challenges" style={{ color: "#58a6ff", textDecoration: "none" }}>Risks and Challenges</a></li>
-            <li><a href="#faq" style={{ color: "#58a6ff", textDecoration: "none" }}>FAQ</a></li>
+            <li><a href="#what-is-stablecoin-infrastructure" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={{ color: "#58a6ff", textDecoration: "none" }}>What Is Stablecoin Payment Infrastructure?</a></li>
+            <li><a href="#mastercard-bvnk" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={{ color: "#58a6ff", textDecoration: "none" }}>The Mastercard-BVNK Deal Explained</a></li>
+            <li><a href="#how-settlement-works" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={{ color: "#58a6ff", textDecoration: "none" }}>How Stablecoin Settlement Rails Work</a></li>
+            <li><a href="#key-players" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={{ color: "#58a6ff", textDecoration: "none" }}>Key Players in 2026</a></li>
+            <li><a href="#what-it-means" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={{ color: "#58a6ff", textDecoration: "none" }}>What This Means for Crypto Users</a></li>
+            <li><a href="#risks-challenges" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={{ color: "#58a6ff", textDecoration: "none" }}>Risks and Challenges</a></li>
+            <li><a href="#faq" className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]" style={{ color: "#58a6ff", textDecoration: "none" }}>FAQ</a></li>
           </ol>
         </nav>
 
@@ -189,11 +193,11 @@ export default function StablecoinPaymentsGuide() {
           </p>
 
           <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: "12px", padding: "0", marginBottom: "16px", overflow: "hidden" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", color: "#c9d1d9", fontSize: "14px" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", color: "#c9d1d9", fontSize: "14px" }} aria-label="Stablecoin Settlement Flow">
               <thead style={{ backgroundColor: "#0d1117", borderBottom: "1px solid #30363d" }}>
                 <tr>
-                  <th style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>Step</th>
-                  <th style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>What Happens</th>
+                  <th scope="col" style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>Step</th>
+                  <th scope="col" style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>What Happens</th>
                 </tr>
               </thead>
               <tbody>
@@ -234,12 +238,12 @@ export default function StablecoinPaymentsGuide() {
           </p>
 
           <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: "12px", padding: "0", marginBottom: "16px", overflow: "hidden" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", color: "#c9d1d9", fontSize: "13px" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", color: "#c9d1d9", fontSize: "13px" }} aria-label="Key Players in Stablecoin Payments 2026">
               <thead style={{ backgroundColor: "#0d1117", borderBottom: "1px solid #30363d" }}>
                 <tr>
-                  <th style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>Company</th>
-                  <th style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>Role</th>
-                  <th style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>Focus</th>
+                  <th scope="col" style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>Company</th>
+                  <th scope="col" style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>Role</th>
+                  <th scope="col" style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>Focus</th>
                 </tr>
               </thead>
               <tbody>
@@ -356,10 +360,13 @@ export default function StablecoinPaymentsGuide() {
           <h2 style={{ fontSize: "26px", fontWeight: 700, marginBottom: "24px", color: "#e6edf3" }}>Frequently Asked Questions</h2>
           <div style={{ display: "grid", gap: "16px" }}>
             {faqs.map((faq, i) => (
-              <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: "12px", padding: "20px" }}>
-                <h3 style={{ fontSize: "15px", fontWeight: 700, color: "#58a6ff", marginBottom: "8px" }}>Q: {faq.question}</h3>
-                <p style={{ color: "#c9d1d9", fontSize: "14px", lineHeight: 1.7 }}>{faq.answer}</p>
-              </div>
+              <details key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: "12px", padding: "20px", cursor: "pointer" }}>
+                <summary style={{ fontSize: "15px", fontWeight: 700, color: "#58a6ff", listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  {faq.question}
+                  <span aria-hidden="true" style={{ fontSize: 18, color: "#8b949e", marginLeft: 12, flexShrink: 0 }}>+</span>
+                </summary>
+                <p style={{ color: "#c9d1d9", fontSize: "14px", lineHeight: 1.7, marginTop: "12px" }}>{faq.answer}</p>
+              </details>
             ))}
           </div>
         </section>

@@ -528,9 +528,9 @@ export default function CryptoIndexFundsGuidePage() {
         <div className="bg-gray-900 border border-gray-700 rounded-xl p-5">
           <h4 className="text-white font-semibold mb-2">🔍 Pro Tip: Which Should You Choose?</h4>
           <ul className="text-gray-300 text-sm space-y-2">
-            <li><span className="text-purple-400 font-medium">Crypto-native, <$50K:</span> DeFi indexes (DPI). Low friction, 24/7, minimal fees.</li>
+            <li><span className="text-purple-400 font-medium">Crypto-native, &lt;$50K:</span> DeFi indexes (DPI). Low friction, 24/7, minimal fees.</li>
             <li><span className="text-purple-400 font-medium">Traditional investor, any size:</span> Crypto ETF (Hashdex). Use your existing brokerage, no wallet setup.</li>
-            <li><span className="text-purple-400 font-medium">Institution, >$25K:</span> Bitwise fund. Audit trails, tax efficiency, professional management.</li>
+            <li><span className="text-purple-400 font-medium">Institution, &gt;$25K:</span> Bitwise fund. Audit trails, tax efficiency, professional management.</li>
           </ul>
         </div>
       </section>
