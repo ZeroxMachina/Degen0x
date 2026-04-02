@@ -1,0 +1,44 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#080d1c"/>
+  <rect y="0" width="1200" height="4" fill="url(#grad1)"/>
+  <defs>
+    <linearGradient id="grad1" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="400" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="900" cy="315" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <!-- Logo placeholder -->
+  <circle cx="80" cy="60" r="20" fill="#6366f1" opacity="0.8"/>
+  <text x="108" y="68" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600">degen0x</text>
+  <!-- Category badge -->
+  <rect x="60" y="180" width="80" height="30" rx="8" fill="#f59e0b" opacity="0.2"/>
+  <text x="72" y="200" fill="#f59e0b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600">TOOLS</text>
+  <!-- Title -->
+  <text x="60" y="260" fill="url(#titleGrad)" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" letter-spacing="-1">Crypto Tax Calculator</text>
+  <!-- Subtitle -->
+  <text x="60" y="310" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="22">Track gains, losses, and tax obligations across chains</text>
+  <!-- Decorative calculator icon -->
+  <rect x="850" y="200" width="200" height="250" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="875" y="225" width="150" height="50" rx="8" fill="#22c55e" opacity="0.15"/>
+  <text x="920" y="258" fill="#22c55e" font-family="monospace" font-size="22" font-weight="700">$12,450</text>
+  <rect x="875" y="290" width="65" height="40" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <rect x="960" y="290" width="65" height="40" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <rect x="875" y="345" width="65" height="40" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <rect x="960" y="345" width="65" height="40" rx="6" fill="#6366f1" opacity="0.3"/>
+  <rect x="875" y="400" width="150" height="30" rx="6" fill="#ef4444" opacity="0.15"/>
+  <text x="915" y="420" fill="#ef4444" font-family="monospace" font-size="14">TAX: $2,178</text>
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(255,255,255,0.02)"/>
+  <text x="60" y="616" fill="#6e7681" font-family="Inter, system-ui, sans-serif" font-size="16">degen0x.com</text>
+  <text x="1080" y="616" fill="#6e7681" font-family="Inter, system-ui, sans-serif" font-size="14">Free Tool</text>
+</svg>

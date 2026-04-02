@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
@@ -20,6 +21,12 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-03-25T00:00:00Z",
     authors: ["degen0x"],
+    images: [{
+      url: "https://degen0x.com/og-ethereum-verkle-trees-hegota-guide-2026.svg",
+      width: 1200,
+      height: 630,
+      alt: "Ethereum Verkle Trees & Hegota Guide",
+    }],
   },
   twitter: {
     card: "summary_large_image",
@@ -79,6 +86,12 @@ export default function VerkleTreesHegotaGuide() {
         }}
       >
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <Breadcrumb items={[
+            { label: "Home", href: "/" },
+            { label: "Learn", href: "/learn" },
+            { label: "Verkle Trees & Hegota Guide" },
+          ]} />
+
           {/* Header Section */}
           <div style={{ marginBottom: "2rem" }}>
             <div style={{ display: "flex", gap: "0.75rem", marginBottom: "1rem" }}>

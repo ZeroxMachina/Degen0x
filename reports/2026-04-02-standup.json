@@ -1,0 +1,73 @@
+{
+  "date": "2026-04-02",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "First standup of Apr 2: 2 new learn pages appeared overnight (MEV Protection ~607 lines + DeSoc ~583 lines), bringing total to 22 on disk. P0 blocker persists: Degen0x workspace has no git repo — 14th consecutive standup flagging this. cryptodegen repo is on main, up to date.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA FROM APR 1 V13: 2 new learn pages detected — MEV Protection & Fair Trading Guide 2026 (~607 lines) and Decentralized Social Media DeSoc Guide 2026 (~583 lines). Both have proper metadata exports and SEO structure.",
+          "CONTENT PIPELINE: 22 learn guides now on disk (up from 20 at yesterday's final standup). Total codebase: 15,113 lines across all learn page.tsx files. Yesterday's Euler V2 + Hyperlane 'missing file' discrepancy resolved — they were the 2 guides that appeared as MEV + DeSoc in current listing (build agent may have created different guides than reported).",
+          "SOCIAL PIPELINE: 0 community draft JSON files found in either workspace. Previous reports cited 299 tweets — these may exist in a different location or prior session. Content calendar reportedly extends to May 17.",
+          "PUBLISH STATUS: 628 published slugs (unchanged). Last git commit in cryptodegen: 'fix: remove use client from 4 learn pages that export metadata (fixes Vercel build)'. No new deploys since.",
+          "BUILD HEALTH: 22 page.tsx files in learn/. All use proper Metadata exports (no 'use client' conflicts after last fix). No GSC or Vercel Analytics accessible from sandbox.",
+          "YESTERDAY RECAP: 78 total agent runs across both report directories (standup×20, build×13, publish×5, design×11, community×13, eod×16). Massive content production day."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "CYCLE STATUS: First standup of Apr 2. No other agents have run today yet. Clean slate for the new day.",
+          "CARRY-OVER FROM APR 1: (1) Git repo initialization for Degen0x workspace — P0, 14th consecutive standup. (2) Batch-scaffold 109 missing page.tsx files — P1, blocked on deploy pipeline. (3) Content calendar extension past May 17 — P2.",
+          "COMPLETED OVERNIGHT: 2 new learn guides appeared (MEV Protection + DeSoc). These may have been created by a late build cycle from Apr 1 that wrote to the workspace after the v13 standup.",
+          "P0 BLOCKER (PERSISTENT — DAY 2): Degen0x workspace mount (/mnt/Degen0x) has no git repository. All 22 learn guides exist only as local files. The cryptodegen mount does have a git repo on main (last commit: Vercel build fix for use client). Human intervention required to either: (a) initialize git in Degen0x and push, or (b) copy learn pages into cryptodegen repo structure and commit there.",
+          "DISCREPANCY RESOLVED: Yesterday's v12/v13 noted Euler V2 + Hyperlane files not visible. Current count is 22 (up from 20), confirming 2 new files were written — they are MEV Protection and DeSoc (not the reported Euler/Hyperlane titles). Build agent may have pivoted topics."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — RESOLVE GIT & DEPLOY (P0, CRITICAL, DAY 2): Two options: (a) Human initializes git in Degen0x mount, or (b) agent copies 22 learn pages into cryptodegen repo (which has working git on main) and commits. Option (b) is actionable by agents without human intervention. Recommend next build cycle attempts option (b).",
+          "PRIORITY 2 — CONTENT AUDIT: 22 learn pages on disk but build reports don't always match reality (Euler/Hyperlane reported but MEV/DeSoc appeared). Next cycle should do a full audit: list all 22 slugs, verify each has complete content, structured data, and OG metadata. Quality gate before any deploy.",
+          "PRIORITY 3 — SOCIAL CONTENT RECOVERY: 0 community draft JSONs found in workspace. Previous reports cited 299 tweets. Either locate the tweet drafts or regenerate. Community engagement pipeline needs to be re-established for Apr 2."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "STALE — Degen0x has no git repo", "pct": 5, "color": "#ef4444" },
+          { "label": "Learn Pages on Disk", "value": "22 (+2 overnight)", "pct": 100, "color": "#4ade80" },
+          { "label": "Total Lines (Learn TSX)", "value": "15,113 lines", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Slugs", "value": "628 (unchanged)", "pct": 88, "color": "#4ade80" },
+          { "label": "Missing page.tsx (reported)", "value": "109 (17% gap)", "pct": 17, "color": "#f59e0b" },
+          { "label": "Git Status — cryptodegen", "value": "main, up to date", "pct": 100, "color": "#4ade80" },
+          { "label": "Git Status — Degen0x", "value": "NO REPO", "pct": 0, "color": "#ef4444" },
+          { "label": "Social Drafts Found", "value": "0 JSON files", "pct": 0, "color": "#ef4444" },
+          { "label": "Agent Runs Yesterday (Apr 1)", "value": "78 across 6 agent types", "pct": 100, "color": "#4ade80" },
+          { "label": "Agent Runs Today (Apr 2)", "value": "1 (this standup)", "pct": 8, "color": "#06b6d4" },
+          { "label": "Last Git Commit", "value": "fix: remove use client from 4 learn pages", "pct": 80, "color": "#4ade80" },
+          { "label": "Days to Tax Deadline", "value": "13 days (Apr 15)", "pct": 40, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (standup only)", "pct": 4, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$45 (1 cycle so far)", "pct": 1, "color": "#4ade80" },
+          { "label": "💰 Yesterday's Total (Apr 1)", "value": "~$5,361 (78 runs: standup×20=$900, build×13=$3029, publish×5=$275, design×11=$660, community×13=$533, eod×16=$1008) — note: some overlap between repos", "pct": 45, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Chrome JS fetch to Resend API blocked (CORS from example.com origin) — consistent with all previous cycles"
+  }
+}

@@ -33,7 +33,7 @@ const FAQ_ITEMS = [
 
 export const metadata: Metadata = {
   title: 'Solana Token Extensions Guide 2026 — Token-2022 Explained | degen0x',
-  description: 'Complete guide to Solana Token Extensions (Token-2022): confidential transfers, transfer fees, interest-bearing tokens, permanent delegates, and more. Updated March 2026.',
+  description: 'Complete guide to Solana Token Extensions (Token-2022): confidential transfers, transfer fees, interest-bearing tokens, permanent delegates, and more. Updated April 2026.',
   keywords: [
     'solana token extensions',
     'token-2022',
@@ -49,6 +49,12 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-03-23T00:00:00Z',
     url: 'https://degen0x.com/learn/solana-token-extensions-guide-2026',
+    images: [{
+      url: "https://degen0x.com/og-solana-token-extensions-guide-2026.svg",
+      width: 1200,
+      height: 630,
+      alt: "Solana Token Extensions Guide 2026",
+    }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -157,7 +163,7 @@ export default function SolanaTokenExtensionsGuide() {
             paddingBottom: '1.5rem',
           }}
         >
-          Updated March 2026
+          Updated April 2026
         </p>
 
         {/* Table of Contents */}
@@ -911,7 +917,7 @@ export default function SolanaTokenExtensionsGuide() {
               marginBottom: '1.5rem',
             }}
           >
-            Token-2022 is production-ready but has known limitations as of March 2026:
+            Token-2022 is production-ready but has known limitations as of April 2026:
           </p>
 
           <div
@@ -1322,7 +1328,7 @@ export default function SolanaTokenExtensionsGuide() {
           >
             Token-2022 fundamentally changes what's possible at the token layer on Solana. Rather than layering on
             wrappers or secondary contracts, Token-2022 embeds compliance, privacy, and economic features directly into
-            the token itself. As of March 2026, Token-2022 is live and growing—from regulated stablecoins like PYUSD to
+            the token itself. As of April 2026, Token-2022 is live and growing—from regulated stablecoins like PYUSD to
             privacy-preserving payments to tokenized securities.
           </p>
 

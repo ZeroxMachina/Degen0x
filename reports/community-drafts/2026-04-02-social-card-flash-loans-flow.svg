@@ -1,0 +1,109 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0f1629"/>
+    </linearGradient>
+    <linearGradient id="brandGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="flowGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="successGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="revertGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad2)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad2)"/>
+
+  <!-- Decorative -->
+  <circle cx="150" cy="120" r="100" fill="#6366f1" opacity="0.05" filter="url(#glow2)"/>
+  <circle cx="1050" cy="400" r="80" fill="#06b6d4" opacity="0.04" filter="url(#glow2)"/>
+
+  <!-- Logo -->
+  <circle cx="60" cy="50" r="16" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.8"/>
+  <text x="48" y="55" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#818cf8">0x</text>
+  <text x="86" y="55" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#8b949e">degen0x</text>
+
+  <!-- Title -->
+  <text x="60" y="130" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Flash Loans Explained</text>
+  <text x="60" y="170" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Borrow millions. Zero collateral. One transaction.</text>
+
+  <!-- Flow Diagram -->
+  <!-- Step 1: Borrow -->
+  <rect x="60" y="220" width="220" height="110" rx="16" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.4)" stroke-width="1.5"/>
+  <text x="105" y="260" font-family="Inter, system-ui, sans-serif" font-size="26">💰</text>
+  <text x="140" y="262" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#818cf8">BORROW</text>
+  <text x="90" y="290" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Request any amount</text>
+  <text x="90" y="310" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">No collateral needed</text>
+
+  <!-- Arrow 1 -->
+  <line x1="290" y1="275" x2="370" y2="275" stroke="url(#flowGrad)" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <polygon points="370,270 380,275 370,280" fill="#06b6d4"/>
+
+  <!-- Step 2: Execute -->
+  <rect x="390" y="220" width="220" height="110" rx="16" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.4)" stroke-width="1.5"/>
+  <text x="435" y="260" font-family="Inter, system-ui, sans-serif" font-size="26">⚡</text>
+  <text x="468" y="262" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#22d3ee">EXECUTE</text>
+  <text x="420" y="290" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Arbitrage, swap,</text>
+  <text x="420" y="310" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">liquidate, or refinance</text>
+
+  <!-- Arrow 2 -->
+  <line x1="620" y1="275" x2="700" y2="275" stroke="url(#flowGrad)" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <polygon points="700,270 710,275 700,280" fill="#06b6d4"/>
+
+  <!-- Step 3: Repay -->
+  <rect x="720" y="220" width="220" height="110" rx="16" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.4)" stroke-width="1.5"/>
+  <text x="765" y="260" font-family="Inter, system-ui, sans-serif" font-size="26">✅</text>
+  <text x="798" y="262" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#4ade80">REPAY</text>
+  <text x="750" y="290" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Return borrowed +</text>
+  <text x="750" y="310" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">fees (0.05–0.09%)</text>
+
+  <!-- Arrow 3 to result -->
+  <line x1="950" y1="275" x2="1030" y2="275" stroke="url(#successGrad)" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <polygon points="1030,270 1040,275 1030,280" fill="#22c55e"/>
+
+  <!-- Result: Success -->
+  <rect x="1050" y="230" width="100" height="90" rx="14" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.5)" stroke-width="1.5"/>
+  <text x="1076" y="270" font-family="Inter, system-ui, sans-serif" font-size="28">🎯</text>
+  <text x="1068" y="300" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#4ade80">PROFIT</text>
+
+  <!-- Same-block indicator -->
+  <rect x="60" y="345" width="880" height="32" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="350" y="366" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#6e7681">↔ ALL WITHIN ONE BLOCK — or it never happened</text>
+
+  <!-- Failure path -->
+  <rect x="60" y="410" width="880" height="80" rx="14" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="90" y="442" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#ef4444">If repayment fails?</text>
+  <text x="90" y="470" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">Entire transaction reverts. Lender loses nothing. Borrower loses nothing (except gas). Like it never happened.</text>
+
+  <!-- Use cases -->
+  <rect x="970" y="395" width="180" height="110" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="990" y="420" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#8b949e">USE CASES</text>
+  <text x="990" y="444" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#06b6d4">→ DEX Arbitrage</text>
+  <text x="990" y="464" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6366f1">→ Collateral Swaps</text>
+  <text x="990" y="484" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#f59e0b">→ Self-Liquidation</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="570" width="1200" height="60" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="606" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#8b949e">degen0x.com/learn/flash-loans-defi-guide-2026</text>
+  <text x="1060" y="606" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">Apr 2026</text>
+</svg>

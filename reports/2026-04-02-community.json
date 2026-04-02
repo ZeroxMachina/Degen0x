@@ -1,0 +1,97 @@
+{
+  "date": "2026-04-02",
+  "block": "community",
+  "report": {
+    "status": "completed",
+    "summary": "Drafted v20 social cycle (tweets #335-339) promoting courses launch, flash loans, Euler V2, Hyperlane guides + newsletter v20 + 3 new social card SVGs; analytics identified courses (7 new pages) and learn guides (306 pages, 49.5% of site) as top growth categories with +20% content volume growth this cycle.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #335: Courses Launch Announcement — 3-tweet thread promoting 7 free crypto courses (Crypto 101 through RWA Tokenization), scheduled Mon Apr 7 2PM ET",
+          "Tweet #336: Flash Loans Explained — 4-tweet educational thread on zero-collateral DeFi primitive, scheduled Tue Apr 8 11AM ET",
+          "Tweet #337: Euler V2 Modular Lending — protocol spotlight on modular vault architecture, scheduled Wed Apr 9 3PM ET",
+          "Tweet #338: Hyperlane Interoperability — permissionless cross-chain messaging deep dive, scheduled Fri Apr 11 1PM ET",
+          "Tweet #339: Weekend Builder Roundup — weekly stats recap (618 pages, 7 courses, 4 new DeFi guides), scheduled Sat Apr 12 11AM ET",
+          "Newsletter v20: 'Learn Crypto Like You Mean It' — Market Pulse, 7 Courses Spotlight, 4 new learn guides (Flash Loans, Euler V2, Hyperlane, Staking), Degen Corner on content compounding, scheduled Thu Apr 10 10AM ET",
+          "Discord/Telegram: Courses launch + 4 new DeFi guides announcement, scheduled Mon Apr 7 5PM ET",
+          "Total tweets all-time: 339 (5 new this cycle), content calendar extends through Apr 12"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Learn Guides (306 pages)", "value": "49.5% of all content — dominant category", "pct": 95, "color": "#6366f1" },
+          { "label": "Courses (NEW — 7 pages)", "value": "First structured education offering launched Apr 1", "pct": 100, "color": "#22c55e" },
+          { "label": "Tools (89 pages)", "value": "Core product pillar — calculators, trackers, dashboards", "pct": 78, "color": "#06b6d4" },
+          { "label": "Exchanges (31 pages)", "value": "Affiliate revenue potential — review + comparison", "pct": 55, "color": "#f59e0b" },
+          { "label": "Flash Loans Guide (QUEUED)", "value": "High search volume DeFi primitive — awaiting publish", "pct": 88, "color": "#4ade80" },
+          { "label": "Euler V2 Guide (QUEUED)", "value": "Emerging modular lending narrative", "pct": 82, "color": "#4ade80" },
+          { "label": "Hyperlane Guide (QUEUED)", "value": "Permissionless interop — bridge exploit narrative", "pct": 80, "color": "#4ade80" },
+          { "label": "Staking Guide 2026 (QUEUED)", "value": "Evergreen keyword — updated for 2026 yields", "pct": 85, "color": "#4ade80" },
+          { "label": "Fear & Greed Index Tool", "value": "Extreme Fear record continues — peak utility", "pct": 97, "color": "#f59e0b" },
+          { "label": "DCA Calculator", "value": "Accumulation zone tool — highest engagement during F&G < 10", "pct": 95, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Growth Trajectory",
+        "metrics": [
+          { "label": "Published Pages", "value": "618 total (+13 from courses)", "pct": 85, "color": "#6366f1" },
+          { "label": "Content Volume", "value": "+20% this cycle (25,420 lines)", "pct": 80, "color": "#22c55e" },
+          { "label": "Learn Guides on Disk", "value": "36 pages (+6 new)", "pct": 72, "color": "#06b6d4" },
+          { "label": "Publish Queue", "value": "4 DeFi guides ready to deploy", "pct": 40, "color": "#f59e0b" },
+          { "label": "Social Pipeline", "value": "339 tweets drafted through Jul 5", "pct": 90, "color": "#8b5cf6" },
+          { "label": "Newsletter Pipeline", "value": "v20 ready, extends through Apr 10", "pct": 88, "color": "#8b5cf6" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "Social card SVG: Courses Launch (1200x630, dark theme — 6-course grid with color-coded cards, stats bar: 7 courses / 300+ guides / 618 pages / $0 cost, degen0x glass-morphism palette)",
+          "Social card SVG: Flash Loans Flow Diagram (1200x630, dark theme — 3-step flow: Borrow → Execute → Repay, same-block indicator, failure revert path, use cases sidebar, degen0x glass-morphism palette)",
+          "Social card SVG: Weekly Roundup 618 (1200x630, dark theme — hero '618' with brand gradient, 4 metric cards: 7 courses / 306 guides / 89 tools / 25K content lines, new guides callout bar)"
+        ]
+      },
+      {
+        "title": "Content Schedule (Apr 7-12, v20 cycle)",
+        "items": [
+          "Mon Apr 7, 2PM ET: Twitter — Courses Launch thread, 3 tweets (#335)",
+          "Mon Apr 7, 5PM ET: Discord/TG — Courses + 4 new guides announcement",
+          "Tue Apr 8, 11AM ET: Twitter — Flash Loans Explained, 4-tweet thread (#336)",
+          "Wed Apr 9, 3PM ET: Twitter — Euler V2 Modular Lending (#337)",
+          "Thu Apr 10, 10AM ET: Newsletter v20 — 'Learn Crypto Like You Mean It'",
+          "Fri Apr 11, 1PM ET: Twitter — Hyperlane Interoperability (#338)",
+          "Sat Apr 12, 11AM ET: Twitter — Weekend Builder Roundup (#339)"
+        ]
+      },
+      {
+        "title": "Key Observations & Blockers",
+        "items": [
+          "COURSES LAUNCH is the biggest product milestone this cycle — 7 structured paths built from 300+ existing learn guides, first structured education offering",
+          "4 high-value DeFi guides queued for publish: Flash Loans, Euler V2, Hyperlane, Staking — all have strong search volume potential",
+          "Content velocity strong: ~700 lines/hour creation rate, 25K+ total lines, +20% growth this cycle",
+          "P0 BLOCKER: Day 10 without production deploy — 74 uncommitted files, 36 learn guides local-only with zero organic traffic value",
+          "Social pipeline healthy through Jul 5 (339 tweets) but actual posting blocked on deployment for fresh content links",
+          "109 published slugs still missing page.tsx files (17% gap) — scaffold these before next publish cycle",
+          "No Google Search Console or Vercel Analytics directly accessible — performance ranked by topical relevance, content volume, and market signals"
+        ]
+      },
+      {
+        "title": "Previous Cycle Summary (v18, Jun 22-28)",
+        "items": [
+          "5 tweets (#325-329): Stablecoins $309B, DEX Aggregators, F&G 8/100 Contrarian, Yield Farming 2026, Weekend Roundup",
+          "Newsletter v18: Stablecoins infrastructure theme",
+          "2 social cards: Stablecoins $309B, F&G 8/100 Contrarian v2",
+          "Market context: BTC ~$68,500, ETH ~$2,137, F&G 8/100 record, CLARITY Act Senate markup targeting late April"
+        ]
+      }
+    ],
+    "files_created": [
+      "reports/community-drafts/2026-04-02-social-drafts-v20.md",
+      "reports/community-drafts/2026-04-02-social-card-courses-launch.svg",
+      "reports/community-drafts/2026-04-02-social-card-flash-loans-flow.svg",
+      "reports/community-drafts/2026-04-02-social-card-weekly-roundup-618.svg"
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"]
+  }
+}

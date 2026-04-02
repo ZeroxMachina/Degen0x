@@ -1,0 +1,123 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0f1629"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(34,197,94,0.15)"/>
+      <stop offset="100%" stop-color="rgba(34,197,94,0.05)"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(99,102,241,0.15)"/>
+      <stop offset="100%" stop-color="rgba(99,102,241,0.05)"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(139,92,246,0.15)"/>
+      <stop offset="100%" stop-color="rgba(139,92,246,0.05)"/>
+    </linearGradient>
+    <linearGradient id="cardGrad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(245,158,11,0.15)"/>
+      <stop offset="100%" stop-color="rgba(245,158,11,0.05)"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Decorative glow orbs -->
+  <circle cx="200" cy="150" r="120" fill="#4f46e5" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="1000" cy="480" r="100" fill="#0891b2" opacity="0.05" filter="url(#glow)"/>
+  <circle cx="600" cy="300" r="80" fill="#d97706" opacity="0.03" filter="url(#glow)"/>
+
+  <!-- Logo area -->
+  <circle cx="60" cy="50" r="16" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.8"/>
+  <text x="48" y="55" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#818cf8">0x</text>
+  <text x="86" y="55" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#8b949e">degen0x</text>
+
+  <!-- Main Title -->
+  <text x="60" y="130" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Free Crypto Courses</text>
+  <text x="60" y="175" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#8b949e">Structured learning paths — beginner to advanced. No signup.</text>
+
+  <!-- Course Grid: Row 1 -->
+  <!-- Crypto 101 -->
+  <rect x="60" y="210" width="340" height="100" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <circle cx="100" cy="260" r="20" fill="rgba(34,197,94,0.15)"/>
+  <text x="92" y="266" font-family="Inter, system-ui, sans-serif" font-size="18">🟢</text>
+  <text x="132" y="250" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Crypto 101</text>
+  <text x="132" y="275" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Start here — wallets, keys, first trade</text>
+
+  <!-- DeFi Masterclass -->
+  <rect x="420" y="210" width="340" height="100" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <circle cx="460" cy="260" r="20" fill="rgba(99,102,241,0.15)"/>
+  <text x="452" y="266" font-family="Inter, system-ui, sans-serif" font-size="18">🔵</text>
+  <text x="492" y="250" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">DeFi Masterclass</text>
+  <text x="492" y="275" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Lending, DEXs, yield strategies</text>
+
+  <!-- Layer 2 Deep Dive -->
+  <rect x="780" y="210" width="340" height="100" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <circle cx="820" cy="260" r="20" fill="rgba(6,182,212,0.15)"/>
+  <text x="812" y="266" font-family="Inter, system-ui, sans-serif" font-size="18">🔷</text>
+  <text x="852" y="250" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Layer 2 Deep Dive</text>
+  <text x="852" y="275" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Rollups, bridges, L2 economics</text>
+
+  <!-- Course Grid: Row 2 -->
+  <!-- Solana Deep Dive -->
+  <rect x="60" y="330" width="340" height="100" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <circle cx="100" cy="380" r="20" fill="rgba(139,92,246,0.15)"/>
+  <text x="92" y="386" font-family="Inter, system-ui, sans-serif" font-size="18">🟣</text>
+  <text x="132" y="370" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Solana Deep Dive</text>
+  <text x="132" y="395" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Architecture, DeFi, ecosystem</text>
+
+  <!-- Crypto Security -->
+  <rect x="420" y="330" width="340" height="100" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <circle cx="460" cy="380" r="20" fill="rgba(245,158,11,0.15)"/>
+  <text x="452" y="386" font-family="Inter, system-ui, sans-serif" font-size="18">🟡</text>
+  <text x="492" y="370" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Crypto Security</text>
+  <text x="492" y="395" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Protect your assets &amp; keys</text>
+
+  <!-- RWA Tokenization -->
+  <rect x="780" y="330" width="340" height="100" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(240,136,62,0.3)" stroke-width="1"/>
+  <circle cx="820" cy="380" r="20" fill="rgba(240,136,62,0.15)"/>
+  <text x="812" y="386" font-family="Inter, system-ui, sans-serif" font-size="18">🟠</text>
+  <text x="852" y="370" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">RWA Tokenization</text>
+  <text x="852" y="395" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Real-world assets on-chain</text>
+
+  <!-- Stats bar -->
+  <rect x="60" y="470" width="1080" height="60" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="160" y="506" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#6366f1">7</text>
+  <text x="185" y="506" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">courses</text>
+  <text x="370" y="506" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#06b6d4">300+</text>
+  <text x="435" y="506" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">learn guides</text>
+  <text x="620" y="506" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#f59e0b">618</text>
+  <text x="675" y="506" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">pages live</text>
+  <text x="850" y="506" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#22c55e">$0</text>
+  <text x="895" y="506" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">cost — always free</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="570" width="1200" height="60" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="606" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#8b949e">degen0x.com/courses</text>
+  <text x="1060" y="606" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">Apr 2026</text>
+</svg>

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     publishedTime: '2026-03-23T00:00:00Z',
     images: [
       {
-        url: `${SITE_URL}/og-appchains-2026.png`,
+        url: `${SITE_URL}/og-appchains-2026.svg`,
         width: 1200,
         height: 630,
       },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Appchains & App-Specific Rollups Guide 2026',
     description: 'Master application-specific blockchains and why protocols are launching their own chains.',
-    images: [`${SITE_URL}/og-appchains-2026.png`],
+    images: [`${SITE_URL}/og-appchains-2026.svg`],
   },
   alternates: {
     canonical: `${SITE_URL}/learn/appchains-app-specific-rollups-guide-2026`,
