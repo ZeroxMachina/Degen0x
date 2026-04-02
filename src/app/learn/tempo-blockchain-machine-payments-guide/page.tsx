@@ -88,7 +88,7 @@ const stats = [
   { label: "Tempo Funding", value: "$500M" },
   { label: "Mainnet Launch", value: "Mar 18 2026" },
   { label: "MPP Partners", value: "100+" },
-  { label: "Tx Finality", value: "<1 sec" },
+  { label: "Tx Finality", value: "&lt;1 sec" },
 ];
 
 export default function TempoBlockchainMPPGuide() {

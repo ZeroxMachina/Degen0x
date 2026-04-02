@@ -74,7 +74,7 @@ export default function PumpFunMemecoinPage() {
               { label: "Graduate to Raydium", value: "~2%", color: S.yellow },
               { label: "Reach $100K MCap", value: "~0.5%", color: S.orange },
               { label: "Reach $1M MCap", value: "~0.05%", color: S.red },
-              { label: "Long-term Survivors", value: "<0.01%", color: S.red },
+              { label: "Long-term Survivors", value: "&lt;0.01%", color: S.red },
             ].map((s) => (
               <div key={s.label} style={{ background: `${s.color}10`, border: `1px solid ${s.color}30`, borderRadius: 12, padding: 14, textAlign: "center" }}>
                 <div style={{ fontSize: 20, fontWeight: 900, color: s.color }}>{s.value}</div>
@@ -94,7 +94,7 @@ export default function PumpFunMemecoinPage() {
               { factor: "Viral Narrative", desc: "Connection to trending news, memes, politicians, AI, or culture. The meta changes weekly.", color: S.blue },
               { factor: "KOL Promotion", desc: "Crypto Twitter/YouTube influencers with 50K+ followers shilling early has 10-50x multiplier effect.", color: S.purple },
               { factor: "Telegram Community", desc: "Active, organic-looking Telegram with 1K+ members before graduation = strong signal.", color: S.green },
-              { factor: "Dev Wallet Behavior", desc: "If dev bought <10% of supply and hasn't sold = cleaner chart. Check on-chain.", color: S.orange },
+              { factor: "Dev Wallet Behavior", desc: "If dev bought &lt;10% of supply and hasn't sold = cleaner chart. Check on-chain.", color: S.orange },
               { factor: "No Bundler", desc: "Check if launch was 'bundled' (dev bought big % with multiple wallets simultaneously).", color: S.yellow },
               { factor: "CEX Speculation", desc: "Rumors or confirmed listing on Bybit, OKX, or Binance = 2-20x catalyst.", color: S.primary },
             ].map((f) => (

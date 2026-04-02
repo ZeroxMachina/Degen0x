@@ -290,7 +290,7 @@ export default function MegaETHGuide() {
             {
               title: "Validation & Execution",
               color: "#7B3FE4",
-              body: "Sequencer checks validity, executes against current state in RAM, updates state. All in <1ms.",
+              body: "Sequencer checks validity, executes against current state in RAM, updates state. All in &lt;1ms.",
             },
             {
               title: "State Commitment",
@@ -431,7 +431,7 @@ export default function MegaETHGuide() {
             </thead>
             <tbody className="divide-y divide-[#21262d]">
               {[
-                { chain: "MegaETH", tps: "100,000+", latency: "<1ms", type: "L2 (Real-Time)", tvl: "~$66M" },
+                { chain: "MegaETH", tps: "100,000+", latency: "&lt;1ms", type: "L2 (Real-Time)", tvl: "~$66M" },
                 { chain: "Monad", tps: "10,000", latency: "~0.4s", type: "L1 (EVM)", tvl: "~$293M" },
                 { chain: "Arbitrum", tps: "~4,000", latency: "~0.25s", type: "L2 (Optimistic)", tvl: "~$2.5B" },
                 { chain: "Optimism", tps: "~2,000", latency: "~2s", type: "L2 (Optimistic)", tvl: "~$1.8B" },

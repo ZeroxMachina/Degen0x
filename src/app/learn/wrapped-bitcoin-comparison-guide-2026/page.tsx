@@ -436,7 +436,7 @@ export default function WrappedBitcoinComparisonGuide() {
               <tbody>
                 {[
                   ["Custody Model", "Consortium (BitGo)", "Single (Coinbase)", "Decentralized nodes", "11/15 federation", "Stacks signers"],
-                  ["Market Share", "43%", "25%", "~3%", "~5%", "<1%"],
+                  ["Market Share", "43%", "25%", "~3%", "~5%", "&lt;1%"],
                   ["Decentralization", "Low-Medium", "Low", "High", "Medium", "Medium"],
                   ["Proof of Reserves", "Yes (audited)", "No", "On-chain", "Yes", "On-chain"],
                   ["Multi-Chain", "20+ chains", "Ethereum, Base", "Ethereum, L2s", "Ethereum, L2s", "Bitcoin (Stacks)"],

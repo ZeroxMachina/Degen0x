@@ -87,7 +87,7 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 const stats = [
   { label: "x402 Transactions", value: "75M+" },
   { label: "Processed Volume", value: "$24M+" },
-  { label: "Settlement Time", value: "<2 sec" },
+  { label: "Settlement Time", value: "&lt;2 sec" },
   { label: "Avg Fee", value: "Sub-cent" },
 ];
 

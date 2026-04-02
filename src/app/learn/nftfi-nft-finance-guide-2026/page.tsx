@@ -77,8 +77,8 @@ export default function NFTFiGuide() {
     { name: "Blend (Blur)", model: "Peer-to-Peer", marketShare: "~93%", features: "Zero fees, no expiry, no oracles, refinancing auctions", bestFor: "Blue-chip NFT holders needing maximum liquidity" },
     { name: "NFTfi", model: "Peer-to-Peer", marketShare: "~3%", features: "Fixed-term loans, manual lender matching, wide collection support", bestFor: "Holders of mid-tier collections or custom loan terms" },
     { name: "BendDAO", model: "Peer-to-Pool", marketShare: "~2%", features: "Instant loans from pooled liquidity, oracle-based pricing", bestFor: "Users wanting instant loans without waiting for a lender match" },
-    { name: "Arcade", model: "Peer-to-Peer", marketShare: "<1%", features: "Large loans, bundles of NFTs as collateral, institutional focus", bestFor: "Whales and institutions with large NFT portfolios" },
-    { name: "JPEG'd", model: "Peer-to-Protocol", marketShare: "<1%", features: "Mint pETH/pUSD against NFTs, no fixed terms, self-repaying", bestFor: "Users who want stablecoin liquidity against their NFTs" },
+    { name: "Arcade", model: "Peer-to-Peer", marketShare: "&lt;1%", features: "Large loans, bundles of NFTs as collateral, institutional focus", bestFor: "Whales and institutions with large NFT portfolios" },
+    { name: "JPEG'd", model: "Peer-to-Protocol", marketShare: "&lt;1%", features: "Mint pETH/pUSD against NFTs, no fixed terms, self-repaying", bestFor: "Users who want stablecoin liquidity against their NFTs" },
   ];
 
   const faqSchema = generateFAQSchema(faqs);

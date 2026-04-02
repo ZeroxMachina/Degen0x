@@ -155,7 +155,7 @@ export default function BabylonProtocolGuidePage() {
     { method: "Centralized lending (e.g. Nexo)", yieldSource: "Interest from borrowers", custody: "❌ Custodial", bridgeRisk: "✅ None", apy: "2–5%" },
     { method: "WBTC on Aave", yieldSource: "Lending interest", custody: "⚠️ WBTC custodian", bridgeRisk: "❌ Yes (Ethereum)", apy: "0.5–2%" },
     { method: "Lombard (LST on Babylon)", yieldSource: "BABY + DeFi yield", custody: "⚠️ Smart contract", bridgeRisk: "⚠️ Off-chain bridge", apy: "1–3%" },
-    { method: "Lightning Network routing", yieldSource: "Routing fees", custody: "✅ Self-custody", bridgeRisk: "✅ None", apy: "<0.5%" },
+    { method: "Lightning Network routing", yieldSource: "Routing fees", custody: "✅ Self-custody", bridgeRisk: "✅ None", apy: "&lt;0.5%" },
   ];
 
   const stakingSteps = [

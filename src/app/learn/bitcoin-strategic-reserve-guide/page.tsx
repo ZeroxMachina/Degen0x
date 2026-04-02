@@ -165,7 +165,7 @@ export default function BitcoinStrategicReserveGuidePage() {
           {[
             { label: "US Government BTC", value: "~325,000 BTC" },
             { label: "El Salvador BTC", value: "~7,508 BTC" },
-            { label: "Total Govt Holdings", value: ">460,000 BTC" },
+            { label: "Total Govt Holdings", value: "&gt;460,000 BTC" },
             { label: "% of Total Supply", value: "~2.3%" },
             { label: "Brazil Proposed Target", value: "1,000,000 BTC" },
             { label: "Countries with Plans", value: "5+" },

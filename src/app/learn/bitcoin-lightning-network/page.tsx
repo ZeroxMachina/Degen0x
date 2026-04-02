@@ -164,8 +164,8 @@ export default function LightningNetworkGuidePage() {
         </p>
         <div className="grid grid-cols-3 gap-4 mt-6">
           {[
-            { label: "Transaction Speed", value: "<1 sec" },
-            { label: "Avg Fee", value: "<$0.01" },
+            { label: "Transaction Speed", value: "&lt;1 sec" },
+            { label: "Avg Fee", value: "&lt;$0.01" },
             { label: "Network Capacity", value: "5,700+ BTC" },
           ].map((stat) => (
             <div key={stat.label} className="glass p-4 text-center rounded-xl">
@@ -262,7 +262,7 @@ export default function LightningNetworkGuidePage() {
             { label: "Public Channels", value: "60,000+", desc: "Active payment channels", color: "#22C55E" },
             { label: "Network Nodes", value: "14,000+", desc: "Routing nodes worldwide", color: "#6366F1" },
             { label: "Avg Transaction Fee", value: "0.1–1 sat", desc: "Typical routing fee per hop", color: "#8B5CF6" },
-            { label: "Settlement Speed", value: "<1 sec", desc: "Typical payment time", color: "#EC4899" },
+            { label: "Settlement Speed", value: "&lt;1 sec", desc: "Typical payment time", color: "#EC4899" },
             { label: "Theoretical TPS", value: "1M+", desc: "Maximum transactions per second", color: "#14B8A6" },
           ].map((stat) => (
             <div key={stat.label} className="glass rounded-xl p-4 text-center">

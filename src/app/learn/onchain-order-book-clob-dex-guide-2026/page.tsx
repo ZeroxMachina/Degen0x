@@ -169,10 +169,10 @@ export default function OnchainCLOBDexGuidePage() {
         <div className="grid grid-cols-2 gap-3">
           {[
             { label: "Hyperliquid Cumulative Vol", value: "$3.35T" },
-            { label: "Hyperliquid Market Share", value: ">50%" },
+            { label: "Hyperliquid Market Share", value: "&gt;50%" },
             { label: "Hyperliquid Orders/Sec", value: "200,000" },
             { label: "HYPE Market Cap", value: "~$9B" },
-            { label: "Total DEX TVL", value: ">$155B" },
+            { label: "Total DEX TVL", value: "&gt;$155B" },
             { label: "Perps % of DEX Volume", value: "~30%" },
           ].map((s) => (
             <div

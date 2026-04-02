@@ -167,10 +167,10 @@ export default function EthereumL2ComparisonGuidePage() {
         </h2>
         <div className="grid grid-cols-2 gap-3">
           {[
-            { label: "Total L2 TVL", value: ">$45B" },
+            { label: "Total L2 TVL", value: "&gt;$45B" },
             { label: "Arbitrum TVL", value: "~$16.8B" },
             { label: "Base Daily Txns", value: "11.5M" },
-            { label: "Avg L2 Tx Fee", value: "<$0.01" },
+            { label: "Avg L2 Tx Fee", value: "&lt;$0.01" },
             { label: "Optimism TVL", value: "~$8B" },
             { label: "ZK Rollups TVL", value: "~$3.5B" },
           ].map((s) => (

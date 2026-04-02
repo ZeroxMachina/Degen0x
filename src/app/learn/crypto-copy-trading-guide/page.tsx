@@ -168,7 +168,7 @@ export default function CryptoCopyTradingGuidePage() {
             {[
               { label: "Global Copy Traders", value: "10-20M+", color: S.blue },
               { label: "Market Size (2030)", value: "$3.77B", color: S.green },
-              { label: "Automation (2026)", value: ">50% volume", color: S.orange },
+              { label: "Automation (2026)", value: "&gt;50% volume", color: S.orange },
               { label: "Bitget Users", value: "120M+", color: S.purple },
               { label: "Bybit Followers", value: "800K+", color: S.yellow },
               { label: "Min Deposit (eToro)", value: "$200", color: S.red },
@@ -461,9 +461,9 @@ export default function CryptoCopyTradingGuidePage() {
 
           <div style={{ display: "grid", gap: 12, marginBottom: 20 }}>
             {[
-              { step: "1. Win Rate", metric: ">50% is baseline; >60% is good; >70% is excellent. But ensure at least 50+ trades to avoid luck.", desc: "Check recent 3-month window, not just all-time." },
-              { step: "2. Max Drawdown", metric: "<20% is solid; <10% is excellent. Drawdown is the largest peak-to-trough loss.", desc: "A trader with 100% wins and 30% max drawdown used too much leverage. Too risky." },
-              { step: "3. Sharpe Ratio", metric: ">1.0 is good; >2.0 is excellent. Measures risk-adjusted returns (return per unit of risk).", desc: "High Sharpe means consistent returns with low volatility. Prefer this over raw ROI." },
+              { step: "1. Win Rate", metric: "&gt;50% is baseline; &gt;60% is good; &gt;70% is excellent. But ensure at least 50+ trades to avoid luck.", desc: "Check recent 3-month window, not just all-time." },
+              { step: "2. Max Drawdown", metric: "&lt;20% is solid; &lt;10% is excellent. Drawdown is the largest peak-to-trough loss.", desc: "A trader with 100% wins and 30% max drawdown used too much leverage. Too risky." },
+              { step: "3. Sharpe Ratio", metric: "&gt;1.0 is good; &gt;2.0 is excellent. Measures risk-adjusted returns (return per unit of risk).", desc: "High Sharpe means consistent returns with low volatility. Prefer this over raw ROI." },
               { step: "4. Time in Market", metric: "Minimum 6 months; prefer 1+ year. New traders might be lucky; time filters luck.", desc: "A 3-month-old trader with 200% gains might crash next month." },
               { step: "5. AUM & Followers", metric: "Check assets under management and follower count. Larger = more proven.", desc: "If 50K+ people copy this trader, there's consensus. But monitor for slippage increase as AUM grows." },
               { step: "6. Trading Style", metric: "Match your risk tolerance. Scalpers (1000s of tiny trades) vs swing traders (hold days) vs position traders.", desc: "High-frequency traders incur more slippage. Swing traders are easier to copy." },

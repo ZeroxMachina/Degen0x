@@ -168,7 +168,7 @@ export default function BitcoinSafeHavenGuidePage() {
           {[
             { label: "BTC ATH (Oct 2025)", value: "~$126,000" },
             { label: "BTC March 2026", value: "~$68,000" },
-            { label: "Gold Price", value: ">$5,000/oz" },
+            { label: "Gold Price", value: "&gt;$5,000/oz" },
             { label: "BTC-Gold Correlation", value: "~0.01" },
             { label: "Spot ETF Inflows (March)", value: "$890M" },
             { label: "US Strategic Reserve", value: "~328,000 BTC" },

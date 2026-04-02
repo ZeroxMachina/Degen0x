@@ -258,7 +258,7 @@ export default function MovementNetworkGuidePage() {
           }}>
             {[
               { label: "Max TPS", value: "160,000+", color: "#22c55e" },
-              { label: "Avg Tx Fee", value: "< $0.001", color: "#22c55e" },
+              { label: "Avg Tx Fee", value: "&lt; $0.001", color: "#22c55e" },
               { label: "Ecosystem TVL", value: "$200M+", color: "#58a6ff" },
               { label: "Projects Onboarded", value: "160+", color: "#818cf8" },
               { label: "Max Supply", value: "10B MOVE", color: "#d29922" },
@@ -484,7 +484,7 @@ export default function MovementNetworkGuidePage() {
                 {[
                   ["VM", "MoveVM + EVM", "SVM", "MoveVM", "MoveVM"],
                   ["Peak TPS", "160,000+", "~65,000", "~160,000", "~297,000"],
-                  ["Avg Tx Fee", "< $0.001", "~$0.0002", "~$0.001", "~$0.001"],
+                  ["Avg Tx Fee", "&lt; $0.001", "~$0.0002", "~$0.001", "~$0.001"],
                   ["EVM Compatible", "✅ Yes", "❌ No", "❌ No", "❌ No"],
                   ["TVL (Mar 2026)", "$200M+", "$8B+", "$700M+", "$1.5B+"],
                   ["Mainnet Age", "~5 months", "~5 years", "~3 years", "~2.5 years"],

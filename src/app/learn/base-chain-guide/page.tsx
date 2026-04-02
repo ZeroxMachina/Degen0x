@@ -44,7 +44,7 @@ export default function BaseChainGuidePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 12 }}>
             {[
               { label: "Daily Transactions", value: "4M+", color: "#4d9bff" },
-              { label: "Avg. Gas Fee", value: "<$0.01", color: S.green },
+              { label: "Avg. Gas Fee", value: "&lt;$0.01", color: S.green },
               { label: "Total Value Locked", value: "$8B+", color: S.orange },
               { label: "Active Addresses", value: "1.2M/day", color: S.yellow },
             ].map((s) => (
