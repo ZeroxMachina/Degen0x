@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0d1a2d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="950" cy="150" r="180" fill="#4f46e5" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="200" cy="500" r="120" fill="#ef4444" opacity="0.05" filter="url(#glow)"/>
+  <circle cx="1050" cy="450" r="100" fill="#0891b2" opacity="0.05" filter="url(#glow)"/>
+
+  <!-- IL Visualization: Diverging lines showing token ratio change -->
+  <g transform="translate(750, 180)">
+    <!-- Glass card -->
+    <rect x="0" y="0" width="380" height="280" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+    <!-- Mini chart: Pool rebalancing visualization -->
+    <text x="190" y="35" text-anchor="middle" fill="#8b949e" font-family="Inter, sans-serif" font-size="13" font-weight="600">POOL REBALANCING</text>
+
+    <!-- Token A bar (decreasing) -->
+    <text x="30" y="75" fill="#8b949e" font-family="Inter, sans-serif" font-size="11">Token A</text>
+    <rect x="30" y="85" width="320" height="20" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="30" y="85" width="280" height="20" rx="4" fill="#6366f1" opacity="0.7"/>
+    <rect x="30" y="115" width="320" height="20" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="30" y="115" width="180" height="20" rx="4" fill="#6366f1" opacity="0.4"/>
+    <text x="355" y="99" fill="#8b949e" font-family="Inter, monospace" font-size="10">Before</text>
+    <text x="355" y="129" fill="#ef4444" font-family="Inter, monospace" font-size="10">After ↓</text>
+
+    <!-- Token B bar (increasing) -->
+    <text x="30" y="165" fill="#8b949e" font-family="Inter, sans-serif" font-size="11">Token B</text>
+    <rect x="30" y="175" width="320" height="20" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="30" y="175" width="160" height="20" rx="4" fill="#0891b2" opacity="0.7"/>
+    <rect x="30" y="205" width="320" height="20" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="30" y="205" width="260" height="20" rx="4" fill="#0891b2" opacity="0.4"/>
+    <text x="355" y="189" fill="#8b949e" font-family="Inter, monospace" font-size="10">Before</text>
+    <text x="355" y="219" fill="#22c55e" font-family="Inter, monospace" font-size="10">After ↑</text>
+
+    <!-- IL percentage -->
+    <text x="190" y="265" text-anchor="middle" fill="#ef4444" font-family="Inter, sans-serif" font-size="16" font-weight="700">IL: -12.4%</text>
+  </g>
+
+  <!-- Logo area -->
+  <g transform="translate(60, 45)">
+    <circle cx="18" cy="18" r="18" fill="#6366f1" opacity="0.2"/>
+    <text x="18" y="24" text-anchor="middle" fill="#818cf8" font-family="Inter, sans-serif" font-size="16" font-weight="800">0x</text>
+    <text x="48" y="25" fill="#8b949e" font-family="Inter, sans-serif" font-size="14" font-weight="500">degen0x.com</text>
+  </g>
+
+  <!-- Main title -->
+  <text x="60" y="170" fill="#e6edf3" font-family="Inter, sans-serif" font-size="48" font-weight="800" letter-spacing="-0.02em">Impermanent Loss</text>
+  <text x="60" y="230" fill="url(#redGrad)" font-family="Inter, sans-serif" font-size="48" font-weight="800" letter-spacing="-0.02em">The Silent DeFi Killer</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="290" fill="#8b949e" font-family="Inter, sans-serif" font-size="20">973-line deep dive. 6 mitigation strategies.</text>
+  <text x="60" y="320" fill="#8b949e" font-family="Inter, sans-serif" font-size="20">Everything LPs need to know.</text>
+
+  <!-- Key stats -->
+  <g transform="translate(60, 370)">
+    <rect x="0" y="0" width="200" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="20" y="30" fill="#8b949e" font-family="Inter, sans-serif" font-size="12">CONSTANT PRODUCT</text>
+    <text x="20" y="55" fill="#6366f1" font-family="Inter, sans-serif" font-size="22" font-weight="700">x × y = k</text>
+
+    <rect x="220" y="0" width="200" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="240" y="30" fill="#8b949e" font-family="Inter, sans-serif" font-size="12">VOLATILE PAIRS IL</text>
+    <text x="240" y="55" fill="#ef4444" font-family="Inter, sans-serif" font-size="22" font-weight="700">5-20% loss</text>
+
+    <rect x="440" y="0" width="200" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="460" y="30" fill="#8b949e" font-family="Inter, sans-serif" font-size="12">MITIGATION</text>
+    <text x="460" y="55" fill="#22c55e" font-family="Inter, sans-serif" font-size="22" font-weight="700">6 strategies</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="610" width="1200" height="20" fill="rgba(255,255,255,0.03)"/>
+  <text x="60" y="565" fill="#6e7681" font-family="Inter, sans-serif" font-size="14">degen0x.com/learn/impermanent-loss-liquidity-providing-guide-2026</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accent)"/>
+</svg>
