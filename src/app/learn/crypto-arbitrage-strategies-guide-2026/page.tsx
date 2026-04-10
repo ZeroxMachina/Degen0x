@@ -856,7 +856,7 @@ export default function CryptoArbitrageStrategiesGuide() {
                 Is arbitrage taxed differently?
               </h3>
               <p className="text-[#c9d1d9] leading-relaxed">
-                In most jurisdictions, arbitrage profits are capital gains (short-term if held <1 year, long-term otherwise). Consult a tax professional, but generally, your profit ($520 in the earlier Bitcoin example) is taxable as capital gains. If you're an active trader, you might qualify for trader status with different tax treatment.
+                In most jurisdictions, arbitrage profits are capital gains (short-term if held {'<'}1 year, long-term otherwise). Consult a tax professional, but generally, your profit ($520 in the earlier Bitcoin example) is taxable as capital gains. If you're an active trader, you might qualify for trader status with different tax treatment.
               </p>
             </div>
 

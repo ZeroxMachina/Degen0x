@@ -402,7 +402,7 @@ export default function RWAVsDeFiYieldComparison() {
                 Maple Finance enables institutional lending between credit-vetted borrowers and on-chain lenders. Borrowers (typically prop trading firms, structured finance traders) post collateral and borrow USDC/USDT at 8-12% interest. Lenders deposit stables into pools managed by institutional pool delegates (e.g., Orthogonal Trading, Maven). The delegates manage collateral and credit assessment; the smart contract executes loans automatically.
               </p>
               <p style={{ color: '#c9d1d9', fontSize: '14px', lineHeight: 1.7, marginBottom: '10px' }}>
-                The syrupUSDT vault offers ~10-12% APY, with actual returns varying by delegate and market conditions. Maple's TVL is $300M+, but it's highly concentrated in a few pools. Credit risk is real—defaults have occurred. Notable: 3AC (Three Arrows Capital) defaulted on Maple loans in 2022, causing some lenders to lose capital. However, this risk is priced in; 10-12% yields reflect ~1-2% default risk assumptions. Maple requires KYC for large deposits (>$100K); otherwise permissionless. Minimum investment: ~$10K recommended (smaller amounts incur slippage).
+                The syrupUSDT vault offers ~10-12% APY, with actual returns varying by delegate and market conditions. Maple's TVL is $300M+, but it's highly concentrated in a few pools. Credit risk is real—defaults have occurred. Notable: 3AC (Three Arrows Capital) defaulted on Maple loans in 2022, causing some lenders to lose capital. However, this risk is priced in; 10-12% yields reflect ~1-2% default risk assumptions. Maple requires KYC for large deposits ({'>'}$100K); otherwise permissionless. Minimum investment: ~$10K recommended (smaller amounts incur slippage).
               </p>
               <p style={{ color: '#c9d1d9', fontSize: '14px', lineHeight: 1.7 }}>
                 Ideal for: sophisticated investors comfortable with credit risk, seeking 10%+ yields, understanding counterparty defaults are possible but priced in.
@@ -415,7 +415,7 @@ export default function RWAVsDeFiYieldComparison() {
                 Centrifuge is a unique protocol: it tokenizes real-world invoices, supply chain receivables, and trade finance into on-chain assets called "non-fungible pools." Real borrowers (e.g., a shipping company needing $1M for freight) issue debt backed by specific collateral (their invoices). Lenders fund these pools and earn yields (8-12%) from borrower interest. Centrifuge has originated $3.2B+ in loans, with an impressive 0.2% historical default rate—far lower than Maple.
               </p>
               <p style={{ color: '#c9d1d9', fontSize: '14px', lineHeight: 1.7, marginBottom: '10px' }}>
-                Key advantage: collateral is real-world and inspectable. A Centrifuge pool for "EC Invoices 2026-Q1" is backed by verified Italian invoices held in a separate legal entity. If borrower defaults, lenders recover from the collateral. This is genuinely secured lending, not unsecured credit. Yields vary by pool: supply chain finance 8-9%, trade finance 10-12%. Centrifuge is global and permissionless; no KYC for <$1M deposits. Minimum: $1K+ recommended.
+                Key advantage: collateral is real-world and inspectable. A Centrifuge pool for "EC Invoices 2026-Q1" is backed by verified Italian invoices held in a separate legal entity. If borrower defaults, lenders recover from the collateral. This is genuinely secured lending, not unsecured credit. Yields vary by pool: supply chain finance 8-9%, trade finance 10-12%. Centrifuge is global and permissionless; no KYC for {'<'}$1M deposits. Minimum: $1K+ recommended.
               </p>
               <p style={{ color: '#c9d1d9', fontSize: '14px', lineHeight: 1.7 }}>
                 Ideal for: conservative DeFi users seeking secured credit exposure, global borrowers (non-US accessible), preferring collateral-backed yields.
@@ -644,7 +644,7 @@ export default function RWAVsDeFiYieldComparison() {
               <li><strong>Total: $10K allocation | Expected annual yield: $590 (~5.9% blended) | Risk profile: Medium-low | Tax-adjusted (30% rate): ~$413/year (~4.1%)</strong></li>
             </ul>
             <p style={{ color: '#c9d1d9', fontSize: '14px', lineHeight: 1.7, marginTop: '12px' }}>
-              This allocation provides: (1) RWA institutional backing (USDY custody quality), (2) private credit for yield enhancement (Centrifuge is underrated), (3) DeFi fallback for liquidity (Aave), (4) blended yield above bank savings but below aggressive farming, (5) low tax drag from stable yields. Rebalance quarterly to maintain 50/50 RWA/DeFi if allocations drift >10%.
+              This allocation provides: (1) RWA institutional backing (USDY custody quality), (2) private credit for yield enhancement (Centrifuge is underrated), (3) DeFi fallback for liquidity (Aave), (4) blended yield above bank savings but below aggressive farming, (5) low tax drag from stable yields. Rebalance quarterly to maintain 50/50 RWA/DeFi if allocations drift {'>'}10%.
             </p>
           </div>
         </section>
