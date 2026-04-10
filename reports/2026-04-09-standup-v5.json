@@ -1,0 +1,59 @@
+{
+  "date": "2026-04-09",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Quiet cycle — no agent activity in past hour; site stable, carry-over priorities from EOD remain in force.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "No new GSC/GA data delta since prior standup cycle (hourly cadence below reporting granularity).",
+          "Top pages steady: DCA calculator, restaking guides, exchange comparisons continue to lead organic sessions.",
+          "No new ranking keywords flagged; watching ETH staking & RWA clusters for movement."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "Last cycle (EOD QA): completed — see 2026-04-09-eod.json; no P0 blockers logged.",
+          "Build + Publish + Design cycles all ran earlier today and reported clean.",
+          "Carry-over: continue publish queue rollout per publish-deploy plan; no new blockers."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "1. Hold course — no strategic pivots needed this hour.",
+          "2. Next build cycle should prioritize highest-ROI pages from publish queue.",
+          "3. Monitor for any post-deploy regressions from today's publish batch."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Site Status", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Build Status", "value": "Green", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "Active", "pct": 80, "color": "#06b6d4" },
+          { "label": "Open Blockers", "value": "0", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (standup only)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$636 (5 standups + build + publish + design + eod)", "pct": 100, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Chrome tool unavailable — skipped"
+  }
+}

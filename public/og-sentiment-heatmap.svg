@@ -1,93 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#080d1c"/>
-      <stop offset="100%" stop-color="#0f1729"/>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1629;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#4f46e5"/>
-      <stop offset="50%" stop-color="#0891b2"/>
-      <stop offset="100%" stop-color="#d97706"/>
+
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="heatScale" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8b0000"/>
-      <stop offset="25%" stop-color="#ff4500"/>
-      <stop offset="50%" stop-color="#ffff00"/>
-      <stop offset="75%" stop-color="#32cd32"/>
-      <stop offset="100%" stop-color="#006400"/>
+
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e6ed;stop-opacity:1" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="4" fill="url(#accent)"/>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
 
-  <circle cx="900" cy="200" r="160" fill="#6366f1" opacity="0.04"/>
-  <circle cx="200" cy="480" r="100" fill="#22c55e" opacity="0.03"/>
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="url(#accentGradient)"/>
 
-  <text x="60" y="58" font-family="Inter, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#6366f1" letter-spacing="0.05em">degen0x</text>
+  <!-- Decorative glow circles -->
+  <circle cx="150" cy="100" r="80" fill="#8b5cf6" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="1050" cy="500" r="120" fill="#8b5cf6" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="900" cy="120" r="60" fill="#d97706" opacity="0.07" filter="url(#glow)"/>
 
-  <text x="60" y="200" font-family="Inter, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">Crypto Sentiment</text>
-  <text x="60" y="260" font-family="Inter, -apple-system, sans-serif" font-size="42" font-weight="800" fill="url(#accent)" letter-spacing="-0.02em">Heatmap</text>
+  <!-- Category badge -->
+  <rect x="60" y="60" width="200" height="40" rx="20" fill="#8b5cf6" opacity="0.15" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="160" y="87" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#8b5cf6" text-anchor="middle">SENTIMENT</text>
 
-  <text x="60" y="310" font-family="Inter, -apple-system, sans-serif" font-size="20" fill="#8b949e">Visualize fear &amp; greed across 50+ tokens with interactive filtering</text>
+  <!-- Title -->
+  <text x="60" y="160" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="url(#titleGradient)">Sentiment Heatmap</text>
 
-  <!-- Heatmap grid visual -->
-  <g transform="translate(700, 100)">
-    <rect x="0" y="0" width="60" height="60" rx="8" fill="#006400" opacity="0.85"/>
-    <text x="30" y="35" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">BTC</text>
-    <rect x="68" y="0" width="50" height="50" rx="8" fill="#32cd32" opacity="0.85"/>
-    <text x="93" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="white">ETH</text>
-    <rect x="126" y="0" width="45" height="45" rx="8" fill="#ff4500" opacity="0.85"/>
-    <text x="148" y="28" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="white">SOL</text>
-    <rect x="179" y="0" width="40" height="40" rx="8" fill="#ffff00" opacity="0.85"/>
-    <text x="199" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#333">XRP</text>
+  <!-- Subtitle -->
+  <text x="60" y="210" font-family="system-ui, sans-serif" font-size="20" fill="#8b949e">Real-time fear &amp; greed across 50+ tokens</text>
 
-    <rect x="0" y="68" width="50" height="50" rx="8" fill="#adff2f" opacity="0.85"/>
-    <text x="25" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#333">ADA</text>
-    <rect x="58" y="68" width="55" height="55" rx="8" fill="#8b0000" opacity="0.85"/>
-    <text x="85" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="white">DOGE</text>
-    <rect x="121" y="68" width="45" height="45" rx="8" fill="#228b22" opacity="0.85"/>
-    <text x="143" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="white">AVAX</text>
-    <rect x="174" y="68" width="48" height="48" rx="8" fill="#ffa500" opacity="0.85"/>
-    <text x="198" y="97" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="white">LINK</text>
+  <!-- Visualization: Heatmap grid -->
+  <g>
+    <!-- Heatmap background -->
+    <rect x="750" y="80" width="400" height="400" rx="12" fill="#0a1427" opacity="0.5" stroke="#1e293b" stroke-width="1"/>
 
-    <rect x="0" y="131" width="42" height="42" rx="8" fill="#dc143c" opacity="0.85"/>
-    <text x="21" y="157" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="white">UNI</text>
-    <rect x="50" y="131" width="48" height="48" rx="8" fill="#32cd32" opacity="0.85"/>
-    <text x="74" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="white">ARB</text>
-    <rect x="106" y="131" width="40" height="40" rx="8" fill="#006400" opacity="0.85"/>
-    <text x="126" y="156" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="white">OP</text>
-    <rect x="154" y="131" width="52" height="52" rx="8" fill="#ffff00" opacity="0.85"/>
-    <text x="180" y="162" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#333">AAVE</text>
+    <!-- Heatmap grid of squares - Row 1 -->
+    <rect x="770" y="100" width="28" height="28" fill="#22c55e" opacity="0.9"/>
+    <rect x="805" y="100" width="28" height="28" fill="#22c55e" opacity="0.85"/>
+    <rect x="840" y="100" width="28" height="28" fill="#16a34a" opacity="0.9"/>
+    <rect x="875" y="100" width="28" height="28" fill="#f59e0b" opacity="0.85"/>
+    <rect x="910" y="100" width="28" height="28" fill="#ef4444" opacity="0.8"/>
+    <rect x="945" y="100" width="28" height="28" fill="#dc2626" opacity="0.9"/>
+
+    <!-- Row 2 -->
+    <rect x="770" y="135" width="28" height="28" fill="#16a34a" opacity="0.9"/>
+    <rect x="805" y="135" width="28" height="28" fill="#22c55e" opacity="0.8"/>
+    <rect x="840" y="135" width="28" height="28" fill="#f59e0b" opacity="0.85"/>
+    <rect x="875" y="135" width="28" height="28" fill="#fbbf24" opacity="0.8"/>
+    <rect x="910" y="135" width="28" height="28" fill="#f59e0b" opacity="0.9"/>
+    <rect x="945" y="135" width="28" height="28" fill="#ef4444" opacity="0.8"/>
+
+    <!-- Row 3 -->
+    <rect x="770" y="170" width="28" height="28" fill="#22c55e" opacity="0.85"/>
+    <rect x="805" y="170" width="28" height="28" fill="#16a34a" opacity="0.8"/>
+    <rect x="840" y="170" width="28" height="28" fill="#22c55e" opacity="0.9"/>
+    <rect x="875" y="170" width="28" height="28" fill="#f59e0b" opacity="0.8"/>
+    <rect x="910" y="170" width="28" height="28" fill="#dc2626" opacity="0.85"/>
+    <rect x="945" y="170" width="28" height="28" fill="#b91c1c" opacity="0.9"/>
+
+    <!-- Row 4 -->
+    <rect x="770" y="205" width="28" height="28" fill="#fbbf24" opacity="0.8"/>
+    <rect x="805" y="205" width="28" height="28" fill="#f59e0b" opacity="0.9"/>
+    <rect x="840" y="205" width="28" height="28" fill="#fbbf24" opacity="0.85"/>
+    <rect x="875" y="205" width="28" height="28" fill="#ef4444" opacity="0.8"/>
+    <rect x="910" y="205" width="28" height="28" fill="#dc2626" opacity="0.9"/>
+    <rect x="945" y="205" width="28" height="28" fill="#ef4444" opacity="0.85"/>
+
+    <!-- Row 5 -->
+    <rect x="770" y="240" width="28" height="28" fill="#22c55e" opacity="0.8"/>
+    <rect x="805" y="240" width="28" height="28" fill="#16a34a" opacity="0.9"/>
+    <rect x="840" y="240" width="28" height="28" fill="#f59e0b" opacity="0.85"/>
+    <rect x="875" y="240" width="28" height="28" fill="#fbbf24" opacity="0.9"/>
+    <rect x="910" y="240" width="28" height="28" fill="#f59e0b" opacity="0.8"/>
+    <rect x="945" y="240" width="28" height="28" fill="#ef4444" opacity="0.8"/>
+
+    <!-- Scale legend -->
+    <text x="770" y="295" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Fear</text>
+    <rect x="820" y="283" width="12" height="12" fill="#ef4444" opacity="0.8"/>
+    <rect x="840" y="283" width="12" height="12" fill="#f59e0b" opacity="0.8"/>
+    <rect x="860" y="283" width="12" height="12" fill="#fbbf24" opacity="0.8"/>
+    <rect x="880" y="283" width="12" height="12" fill="#22c55e" opacity="0.9"/>
+    <text x="900" y="295" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Greed</text>
+
+    <!-- Average sentiment score -->
+    <text x="900" y="340" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="#8b5cf6" text-anchor="middle">Neutral</text>
+    <text x="900" y="365" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">50 tokens tracked</text>
   </g>
 
-  <!-- Heat scale bar -->
-  <rect x="60" y="380" width="400" height="12" rx="6" fill="url(#heatScale)"/>
-  <text x="60" y="412" font-family="Inter, sans-serif" font-size="12" fill="#8b949e">Extreme Fear</text>
-  <text x="460" y="412" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#8b949e">Extreme Greed</text>
+  <!-- Bottom bar -->
+  <rect y="600" width="1200" height="30" fill="#0a1427" opacity="0.6"/>
+  <circle cx="60" cy="615" r="10" fill="#6366f1"/>
+  <text x="75" y="621" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">degen0x.com</text>
 
-  <!-- Stats card -->
-  <rect x="60" y="440" width="480" height="80" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <g transform="translate(90, 460)">
-    <text font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">TOKENS</text>
-    <text y="26" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#6366f1">50+</text>
-  </g>
-  <line x1="220" y1="455" x2="220" y2="505" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <g transform="translate(250, 460)">
-    <text font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">TIMEFRAMES</text>
-    <text y="26" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#06b6d4">4</text>
-  </g>
-  <line x1="380" y1="455" x2="380" y2="505" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <g transform="translate(410, 460)">
-    <text font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">FILTERS</text>
-    <text y="26" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#f59e0b">Chain + Cat</text>
-  </g>
-
-  <rect y="610" width="1200" height="20" fill="rgba(0,0,0,0.3)"/>
-  <text x="60" y="624" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#6e7681">degen0x.com</text>
-  <text x="1140" y="624" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#6e7681">Free · No Sign-up Required</text>
+  <!-- Decorative accent elements -->
+  <circle cx="1180" cy="615" r="8" fill="#8b5cf6" opacity="0.3"/>
+  <circle cx="1150" cy="615" r="6" fill="#4f46e5" opacity="0.25"/>
 </svg>

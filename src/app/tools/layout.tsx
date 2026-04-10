@@ -81,6 +81,11 @@ const TOOL_META: Record<string, { name: string; description: string }> = {
   "tax-optimizer": { name: "Tax Optimizer", description: "Optimize your crypto tax strategy with lot selection and loss harvesting" },
   "token-vesting": { name: "Token Vesting", description: "Track and visualize token vesting schedules for projects" },
   "volatility-scanner": { name: "Volatility Scanner", description: "Scan and rank cryptocurrencies by historical and implied volatility" },
+  "portfolio-allocator": { name: "Portfolio Allocator", description: "Build and optimize your crypto portfolio allocation with preset strategies and custom weighting" },
+  "mev-protection-dashboard": { name: "MEV Protection Dashboard", description: "Monitor and protect your transactions from MEV extraction and sandwich attacks" },
+  "news-aggregator": { name: "Crypto News Aggregator", description: "Aggregate and filter crypto news from top sources in one real-time feed" },
+  "retirement-calculator": { name: "Crypto Retirement Calculator", description: "Plan your retirement with cryptocurrency holdings and projected growth scenarios" },
+  "risk-assessment": { name: "Risk Assessment Tool", description: "Assess and score the risk profile of your crypto portfolio and individual holdings" },
 };
 
 export default function ToolsLayout({ children }: { children: React.ReactNode }) {

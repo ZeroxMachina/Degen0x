@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import WhaleTrackerClient from "./WhaleTrackerClient";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Whale Wallet Tracker — Monitor Smart Money Moves | degen0x",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://degen0x.com/tools/whale-tracker",
     images: [
       {
-        url: "https://degen0x.com/api/og?title=Whale+Wallet+Tracker&category=Tools&type=tool",
+        url: "https://degen0x.com/og-whale-tracker.svg",
         width: 1200,
         height: 630,
         alt: "Whale Wallet Tracker on degen0x",
@@ -33,11 +34,24 @@ export const metadata: Metadata = {
     title: "Whale Wallet Tracker — Monitor Smart Money | degen0x",
     description: "Track whale wallets and smart money moves across Ethereum, Solana, and Bitcoin.",
     images: [
-      "https://degen0x.com/api/og?title=Whale+Wallet+Tracker&category=Tools&type=tool",
+      "https://degen0x.com/og-whale-tracker.svg",
     ],
   },
 };
 
 export default function WhaleTrackerPage() {
-  return <WhaleTrackerClient />;
+  return (
+    <div style={{ background: "var(--color-bg)" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "2rem 1rem 4rem" }}>
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Tools", href: "/tools" },
+            { label: "Whale Tracker" },
+          ]}
+        />
+        <WhaleTrackerClient />
+      </div>
+    </div>
+  );
 }

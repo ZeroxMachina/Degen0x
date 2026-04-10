@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     authors: ["degen0x Team"],
     images: [
       {
-        url: `${SITE_URL}/og-wrapped-bitcoin-comparison-2026.svg`,
+        url: `${SITE_URL}/og-wrapped-bitcoin-comparison-guide-2026.svg`,
         width: 1200,
         height: 630,
         alt: "Wrapped Bitcoin Comparison 2026 — wBTC vs cbBTC vs tBTC vs LBTC trust models and market share",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Wrapped Bitcoin Comparison 2026: Which Wrapper Is Best?",
     description:
       "wBTC still dominates but cbBTC is closing fast. Compare trust models, risks, and DeFi support →",
-    images: [`${SITE_URL}/og-wrapped-bitcoin-comparison-2026.svg`],
+    images: [`${SITE_URL}/og-wrapped-bitcoin-comparison-guide-2026.svg`],
   },
   alternates: {
     canonical: `${SITE_URL}/learn/wrapped-bitcoin-comparison-guide-2026`,
@@ -65,7 +65,7 @@ const articleSchema = generateArticleSchema({
   datePublished: "2026-03-27T00:00:00Z",
   dateModified: "2026-03-27T00:00:00Z",
   author: "degen0x Team",
-  image: `${SITE_URL}/og-wrapped-bitcoin-comparison-2026.svg`,
+  image: `${SITE_URL}/og-wrapped-bitcoin-comparison-guide-2026.svg`,
   wordCount: 3400,
 });
 

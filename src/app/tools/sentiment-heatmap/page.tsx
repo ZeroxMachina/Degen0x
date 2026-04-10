@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import SentimentHeatmapClient from './SentimentHeatmapClient';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Crypto Sentiment Heatmap | degen0x',
@@ -17,11 +18,24 @@ export const metadata: Metadata = {
     description: 'Visualize fear & greed across 50+ tokens with interactive heatmap and chain/category filtering.',
     type: 'website',
     url: 'https://degen0x.com/tools/sentiment-heatmap',
-    images: [{ url: 'https://degen0x.com/og-sentiment-heatmap.png', width: 1200, height: 630, alt: 'Crypto Sentiment Heatmap — degen0x' }],
+    images: [{ url: 'https://degen0x.com/og-sentiment-heatmap.svg', width: 1200, height: 630, alt: 'Crypto Sentiment Heatmap — degen0x' }],
   },
-  twitter: { card: 'summary_large_image', title: 'Crypto Sentiment Heatmap | degen0x', images: ['https://degen0x.com/og-sentiment-heatmap.png'] },
+  twitter: { card: 'summary_large_image', title: 'Crypto Sentiment Heatmap | degen0x', images: ['https://degen0x.com/og-sentiment-heatmap.svg'] },
 };
 
 export default function SentimentHeatmapPage() {
-  return <SentimentHeatmapClient />;
+  return (
+    <div style={{ background: "var(--color-bg)" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "2rem 1rem 4rem" }}>
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Tools", href: "/tools" },
+            { label: "Sentiment Heatmap" },
+          ]}
+        />
+        <SentimentHeatmapClient />
+      </div>
+    </div>
+  );
 }

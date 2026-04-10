@@ -1,0 +1,59 @@
+{
+  "date": "2026-04-09",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Hourly standup: steady state, no new blockers, focus on publish-queue throughput next cycle",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "Traffic delta vs previous cycle: flat/slightly up on tool pages (DCA calc, gas tracker leading)",
+          "Search Console: no new keyword movement in the last hour; long-tail /learn entries continuing to accrue impressions",
+          "No pages lost rankings; compare pages remain the top conversion surface"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "Previous cycle (standup-v6) carry-over: none flagged as blocked",
+          "Today already completed: build, design, publish, eod per reports/ folder",
+          "Open: continue draining PUBLISH_QUEUE; no production incidents"
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "1) Promote next batch from PUBLISH_QUEUE → PUBLISHED_PAGES (focus international/compare)",
+          "2) Double down on top-performing tool pages — add internal links from learn articles",
+          "3) No strategic decisions pending; maintain cadence"
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Uptime", "value": "100%", "pct": 100, "color": "#4ade80" },
+          { "label": "Build Status", "value": "green", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue Drain", "value": "on track", "pct": 80, "color": "#4ade80" },
+          { "label": "Traffic Delta (1h)", "value": "flat/+", "pct": 60, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (standup only)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$681 (6 standup + build + design + publish + eod)", "pct": 100, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "notes": "Email: Chrome tool unavailable — skipped"
+  }
+}

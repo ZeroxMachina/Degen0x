@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     description: "Master crypto portfolio rebalancing in 2026. Compare strategies, tools, tax implications, and DeFi-native approaches.",
     type: "article",
     url: "https://degen0x.com/learn/crypto-portfolio-rebalancing-guide-2026",
-    images: [{ url: "https://degen0x.com/api/og?title=Crypto+Portfolio+Rebalancing+Guide+2026&category=Learn&type=learn", width: 1200, height: 630, alt: "Crypto Portfolio Rebalancing Guide 2026" }],
+    images: [{ url: "https://degen0x.com/og-crypto-portfolio-rebalancing-guide-2026.svg", width: 1200, height: 630, alt: "Crypto Portfolio Rebalancing Guide 2026" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Crypto Portfolio Rebalancing Guide 2026",
     description: "Master portfolio rebalancing strategies, tools, and tax implications for crypto assets.",
-    images: ["https://degen0x.com/api/og?title=Crypto+Portfolio+Rebalancing+Guide+2026&category=Learn&type=learn"],
+    images: ["https://degen0x.com/og-crypto-portfolio-rebalancing-guide-2026.svg"],
   },
 };
 
@@ -173,8 +173,50 @@ export default function CryptoPortfolioRebalancingGuide() {
           </p>
         </div>
 
+        {/* Table of Contents */}
+        <nav aria-label="Table of contents" style={{
+          padding: "20px 24px",
+          backgroundColor: "#161b22",
+          border: `1px solid ${S.border}`,
+          borderRadius: "12px",
+          marginBottom: "40px",
+        }}>
+          <h2 style={{ fontSize: "16px", fontWeight: "700", color: S.text, marginBottom: "14px", marginTop: 0 }}>
+            In This Guide
+          </h2>
+          <ol style={{ margin: 0, paddingLeft: "20px", display: "flex", flexDirection: "column", gap: "6px" }}>
+            {[
+              ["#what-is-rebalancing", "What Is Portfolio Rebalancing?"],
+              ["#why-rebalance", "Why Rebalance Your Crypto Portfolio?"],
+              ["#strategies-compared", "Rebalancing Strategies Compared"],
+              ["#dca-vs-rebalancing", "DCA vs Rebalancing"],
+              ["#tax-implications", "Tax Implications of Rebalancing"],
+              ["#best-tools-2026", "Best Crypto Rebalancing Tools (2026)"],
+              ["#defi-native", "DeFi-Native Rebalancing: The 2026 Frontier"],
+              ["#tips-mistakes", "Practical Tips & Common Mistakes"],
+              ["#risk-adjusted", "Risk-Adjusted Approaches"],
+              ["#faq", "Frequently Asked Questions"],
+            ].map(([href, label]) => (
+              <li key={href} style={{ lineHeight: "1.6" }}>
+                <a href={href} style={{
+                  color: S.blue,
+                  textDecoration: "none",
+                  fontSize: "14px",
+                  display: "block",
+                  padding: "4px 0",
+                  minHeight: "44px",
+                  lineHeight: "36px",
+                }}>
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
         {/* Section 1: What Is Portfolio Rebalancing? */}
         <h2
+          id="what-is-rebalancing"
           style={{
             fontSize: "28px",
             fontWeight: "700",
@@ -210,6 +252,7 @@ export default function CryptoPortfolioRebalancingGuide() {
 
         {/* Section 2: Why Rebalance? */}
         <h2
+          id="why-rebalance"
           style={{
             fontSize: "28px",
             fontWeight: "700",
@@ -269,6 +312,7 @@ export default function CryptoPortfolioRebalancingGuide() {
 
         {/* Section 3: Rebalancing Strategies */}
         <h2
+          id="strategies-compared"
           style={{
             fontSize: "28px",
             fontWeight: "700",
@@ -350,6 +394,7 @@ export default function CryptoPortfolioRebalancingGuide() {
 
         {/* Section 4: DCA vs Rebalancing */}
         <h2
+          id="dca-vs-rebalancing"
           style={{
             fontSize: "28px",
             fontWeight: "700",
@@ -416,6 +461,7 @@ export default function CryptoPortfolioRebalancingGuide() {
 
         {/* Section 5: Tax Implications */}
         <h2
+          id="tax-implications"
           style={{
             fontSize: "28px",
             fontWeight: "700",
@@ -489,6 +535,7 @@ export default function CryptoPortfolioRebalancingGuide() {
 
         {/* Section 6: Best Crypto Rebalancing Tools */}
         <h2
+          id="best-tools-2026"
           style={{
             fontSize: "28px",
             fontWeight: "700",
@@ -604,6 +651,7 @@ export default function CryptoPortfolioRebalancingGuide() {
 
         {/* Section 7: DeFi-Native Rebalancing */}
         <h2
+          id="defi-native"
           style={{
             fontSize: "28px",
             fontWeight: "700",
@@ -675,6 +723,7 @@ export default function CryptoPortfolioRebalancingGuide() {
 
         {/* Section 8: Practical Tips */}
         <h2
+          id="tips-mistakes"
           style={{
             fontSize: "28px",
             fontWeight: "700",
@@ -739,6 +788,7 @@ export default function CryptoPortfolioRebalancingGuide() {
 
         {/* Section 9: Risk-Adjusted Approaches */}
         <h2
+          id="risk-adjusted"
           style={{
             fontSize: "28px",
             fontWeight: "700",
@@ -796,6 +846,7 @@ export default function CryptoPortfolioRebalancingGuide() {
 
         {/* FAQ Section */}
         <h2
+          id="faq"
           style={{
             fontSize: "28px",
             fontWeight: "700",

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     authors: ["degen0x Team"],
     images: [
       {
-        url: `${SITE_URL}/og-stablecoin-payments-infrastructure-guide-2026.svg`,
+        url: `${SITE_URL}/og-stablecoin-payments-guide-2026.svg`,
         width: 1200,
         height: 630,
         alt: "Stablecoin Payments Infrastructure Guide 2026",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Stablecoin Payments Infrastructure Guide 2026",
     description: "From BVNK to settlement rails—the future of payments is on-chain.",
-    images: [`${SITE_URL}/og-stablecoin-payments-infrastructure-guide-2026.svg`],
+    images: [`${SITE_URL}/og-stablecoin-payments-guide-2026.svg`],
   },
   alternates: {
     canonical: `${SITE_URL}/learn/stablecoin-payments-infrastructure-guide-2026`,
@@ -45,7 +45,7 @@ const articleSchema = generateArticleSchema({
   datePublished: "2026-04-01T00:00:00Z",
   dateModified: "2026-04-01T00:00:00Z",
   author: "degen0x Team",
-  image: `${SITE_URL}/og-stablecoin-payments-infrastructure-guide-2026.svg`,
+  image: `${SITE_URL}/og-stablecoin-payments-guide-2026.svg`,
   wordCount: 2500,
 });
 
@@ -193,7 +193,8 @@ export default function StablecoinPaymentsGuide() {
           </p>
 
           <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: "12px", padding: "0", marginBottom: "16px", overflow: "hidden" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", color: "#c9d1d9", fontSize: "14px" }} aria-label="Stablecoin Settlement Flow">
+            <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch" }}>
+            <table style={{ width: "100%", minWidth: "500px", borderCollapse: "collapse", color: "#c9d1d9", fontSize: "14px" }} aria-label="Stablecoin Settlement Flow">
               <thead style={{ backgroundColor: "#0d1117", borderBottom: "1px solid #30363d" }}>
                 <tr>
                   <th scope="col" style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>Step</th>
@@ -209,6 +210,7 @@ export default function StablecoinPaymentsGuide() {
                 ))}
               </tbody>
             </table>
+            </div>
           </div>
 
           <p style={{ color: "#c9d1d9", fontSize: "15px", lineHeight: 1.8, marginBottom: "16px" }}>
@@ -238,7 +240,8 @@ export default function StablecoinPaymentsGuide() {
           </p>
 
           <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: "12px", padding: "0", marginBottom: "16px", overflow: "hidden" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", color: "#c9d1d9", fontSize: "13px" }} aria-label="Key Players in Stablecoin Payments 2026">
+            <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch" }}>
+            <table style={{ width: "100%", minWidth: "500px", borderCollapse: "collapse", color: "#c9d1d9", fontSize: "13px" }} aria-label="Key Players in Stablecoin Payments 2026">
               <thead style={{ backgroundColor: "#0d1117", borderBottom: "1px solid #30363d" }}>
                 <tr>
                   <th scope="col" style={{ padding: "12px", textAlign: "left", color: "#58a6ff", fontWeight: 700 }}>Company</th>
@@ -256,6 +259,7 @@ export default function StablecoinPaymentsGuide() {
                 ))}
               </tbody>
             </table>
+            </div>
           </div>
 
           <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: "12px", padding: "20px", marginBottom: "16px" }}>

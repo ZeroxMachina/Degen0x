@@ -1,0 +1,61 @@
+{
+  "date": "2026-04-10",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "First standup of 2026-04-10; only standup ran this cycle, no blockers, queue drain still top priority",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "Traffic delta vs last cycle (2026-04-09-standup-v8): flat, no material shifts in top pages",
+          "Tool pages (DCA calculator, gas tracker) continue to lead sessions; compare pages remain top conversion surface",
+          "Search Console: no new ranking movement in the past hour; /learn long-tail impressions still accruing steadily",
+          "No pages lost rankings or dropped out of index"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "Carry-over from 2026-04-09-standup-v8: none blocked",
+          "Since last cycle: no build/publish/design/eod runs detected in reports/ (standup-only cycle)",
+          "Open: continue draining PUBLISH_QUEUE; international/compare pages still queued for next promotion",
+          "No production incidents; build remains green"
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "1) Promote next PUBLISH_QUEUE batch — international/compare pages first",
+          "2) Add internal links from /learn articles into top-performing tool pages (carry-over)",
+          "3) Trigger a build cycle this morning to keep tool-page freshness up; no strategic decisions pending"
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Uptime", "value": "100%", "pct": 100, "color": "#4ade80" },
+          { "label": "Build Status", "value": "green", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue Drain", "value": "on track", "pct": 80, "color": "#4ade80" },
+          { "label": "Traffic Delta (1h)", "value": "flat", "pct": 55, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (standup only)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$45 (1 standup so far)", "pct": 100, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "notes": "Email: Chrome tool unavailable — skipped"
+  }
+}

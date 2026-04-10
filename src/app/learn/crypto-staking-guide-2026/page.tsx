@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BackToTop from '@/components/BackToTop';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Crypto Staking Guide 2026 — Earn Passive Income | degen0x',
@@ -277,15 +279,11 @@ export default function CryptoStakingGuidePage() {
 
       <div style={containerStyle}>
         {/* Breadcrumb Navigation */}
-        <nav aria-label="Breadcrumb" style={breadcrumbStyle}>
-          <Link href="/" style={linkStyle}>Home</Link>
-          <span style={{ margin: '0 6px' }}>›</span>
-          <Link href="/learn" style={linkStyle}>
-            Learn
-          </Link>
-          <span style={{ margin: '0 6px' }}>›</span>
-          <span style={{ color: '#c9d1d9' }}>Crypto Staking Guide</span>
-        </nav>
+        <Breadcrumb items={[
+          { label: 'Home', href: '/' },
+          { label: 'Learn', href: '/learn' },
+          { label: 'Crypto Staking Guide' },
+        ]} />
 
         {/* Badges & Metadata */}
         <div>
@@ -1163,6 +1161,7 @@ export default function CryptoStakingGuidePage() {
           </p>
         </div>
       </div>
+      <BackToTop />
     </main>
   );
 }

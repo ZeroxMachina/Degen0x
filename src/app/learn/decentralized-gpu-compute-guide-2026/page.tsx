@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     authors: ["degen0x Team"],
     images: [
       {
-        url: "https://degen0x.com/og-decentralized-gpu-compute-guide-2026.png",
+        url: "https://degen0x.com/og-decentralized-gpu-compute-guide-2026.svg",
         width: 1200,
         height: 630,
         alt: "Decentralized GPU & Compute Networks Guide 2026 — Render, Akash, io.net & Aethir compared",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Decentralized GPU & Compute Networks Guide 2026",
     description:
       "Complete guide to Render Network, Akash, io.net, and Aethir. How decentralized GPU marketplaces undercut AWS with 60-80% discounts while incentivizing GPU supply.",
-    images: ["https://degen0x.com/og-decentralized-gpu-compute-guide-2026.png"],
+    images: ["https://degen0x.com/og-decentralized-gpu-compute-guide-2026.svg"],
   },
 };
 

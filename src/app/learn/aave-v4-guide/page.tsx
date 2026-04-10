@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import BackToTop from "@/components/BackToTop";
 import AaveV4SpokesExplorer from "@/components/AaveV4SpokesExplorer";
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -556,6 +557,7 @@ export default function AaveV4GuidePage() {
         </div>
 
       </main>
+      <BackToTop />
     </>
   );
 }

@@ -1,0 +1,87 @@
+{
+  "date": "2026-04-03",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Standup v4 Apr 3: 4 agents ran last hour (build+design+community+standup) producing 2 new learn guides (IL + Hyperliquid), UX polish, 5 tweets, newsletter v35. BTC $68,743 (+2.8% recovery). F&G 8 Extreme Fear. Wormhole 1.28B unlock LIVE at 11:30 UTC. 39 uncommitted files — deploy debt now 12th consecutive escalation. 311 learn pages + 115 tools on disk. Today: 11 agent runs, $738 human-equiv.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE LAST STANDUP (v3 → v4): 4 agents ran — build (2 new learn guides), design-v3 (UX audit + 2 OG images), community-v2 (5 tweets + newsletter + 2 social cards), standup-v3. Uncommitted files grew from 25 → 39. 2 additional untracked learn pages appeared (Drift Protocol $285M Hack Analysis, Polkadot Staking Halving Guide).",
+          "MARKET UPDATE — GOOD FRIDAY + JOBS REPORT: BTC recovered to $68,743 (+2.8% from $66,172 Apr 2 low). Crypto is the ONLY major market open (NYSE/Nasdaq/bonds closed for Good Friday). Official March BLS nonfarm payrolls releasing 8:30a ET today. ADP March report was +62K (above +40K consensus). February BLS was -92K (worst in 4 months).",
+          "BTC: $68,743 (+2.8% recovery from Q1 close). ETH: ~$2,082 (-6.5% 24h, Iran risk-off). F&G: 8/100 (Extreme Fear, <20 days in history below 10, 60+ day streak). BTC dominance: 58.16% — flight to quality.",
+          "TOKEN EVENT LIVE TODAY: Wormhole (W) 1.28B token unlock at 11:30 UTC — 28.4% of total supply. Cliff unlock to core contributors. W price at ~$0.01. 56.11% of supply already unlocked. Cross-chain bridge tokens historically see 10-20% drawdowns around large vests.",
+          "ETF FLOWS (Latest Apr 1): -$173.7M net outflow (IBIT -$86.5M, FBTC -$78.6M). But March total was +$1.32B — institutional stabilization pattern. Stablecoins: $316B ATH supply — record dry powder for reaccumulation.",
+          "CONTENT ON DISK: 311 learn page dirs + 115 tool pages = 426 total. 72 learn guides (2 new: IL + Hyperliquid). 72 OG SVGs. 819 published slugs in published-pages.ts. 39 uncommitted files (up from 25). Last deploy: e3f63fc.",
+          "NO GSC/VERCEL ANALYTICS accessible — metrics from local file analysis + agent reports + web search."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "LAST CYCLE ACTIVITY (v3 → v4): Build ran — 2 new learn guides: Impermanent Loss & Liquidity Providing (973 lines, IL math tables, concentrated liquidity risks, 6 mitigation strategies) + Hyperliquid Perp DEX Trading (1004 lines, HyperBFT, 150+ markets, HYPE tokenomics, JELLY incident). Design-v3 ran — UX audit on both new pages, mobile table overflow fix + aria-labels on Hyperliquid, 2 OG images created. Community-v2 ran — 5 tweets (#410-414), newsletter v35 'The Math DeFi LPs Don't Do', 2 social card SVGs, content scheduled Oct 19-25.",
+          "TODAY'S FULL AGENT ACTIVITY: 11 agent runs across 5 types — standup×4 ($180), build×1 ($233), design×3 ($180), community×2 ($82), eod×1 ($63). Total human-equiv: $738.",
+          "NEW CONTENT THIS CYCLE: 2 learn guides (IL + Hyperliquid, ~2,000 lines combined). 2 OG images. 2 social card SVGs. 5 tweets (#410-414). Newsletter v35. Mobile UX fixes on Hyperliquid page. 2 additional untracked learn pages (Drift Protocol hack, Polkadot staking).",
+          "P0 — COMMIT + DEPLOY (12TH CONSECUTIVE ESCALATION): 39 uncommitted files (up from 25 last standup). Deploy debt is the single critical bottleneck. 5 modified files (package-lock, community report, portfolio-rebalancing page, StablecoinYieldTracker, published-pages.ts) + 34 untracked files (2 new learn pages, OG SVGs, reports, social cards). Google cannot see any work since last commit e3f63fc.",
+          "P1 — PHANTOM SLUGS: 819 published slugs but only 311 learn page dirs on disk. Gap persists 10+ cycles.",
+          "P2 — API RATE LIMITING: 0/6 public routes protected. Only /api/health has checkRateLimit().",
+          "P3 — FALLBACK DATA: Only market-dominance has explicit FALLBACK_DATA. Prices route at risk.",
+          "P4 — 141 TS ERRORS: 4 files, non-blocking (ignoreBuildErrors). Unchanged."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — COMMIT + DEPLOY (P0 CRITICAL — 12TH ESCALATION): 39 uncommitted files now blocking all SEO value. Good Friday has crypto as the ONLY open market — search volume for BTC, F&G, DCA, ETF tracker terms spiking with zero traditional market competition. Our Fear & Greed tool (F&G 8), DCA Calculator, ETF Tracker, and 72 learn guides are perfectly positioned but INVISIBLE to Google without deploy. Wormhole unlock at 11:30 UTC will drive additional searches. One git add + commit + push unlocks weeks of accumulated content. This is a $0-cost action with maximum ROI. JEFE ACTION REQUIRED.",
+          "PRIORITY 2 — JOBS REPORT + WORMHOLE CONTENT WINDOW: March BLS payrolls releasing 8:30a ET (February was -92K miss). Wormhole 1.28B unlock at 11:30 UTC (28.4% supply). Crypto is the sole price discovery market today. If jobs miss + W unlock pressure → F&G could hit 5-6 (all-time low). Newsletter v35 + tweets #410-414 ready to deploy. Social cards for IL + Hyperliquid ready. Maximum content leverage window.",
+          "PRIORITY 3 — DRIFT PROTOCOL + POLKADOT PAGES: 2 new learn pages scaffolded but untracked (drift-protocol-285m-hack-analysis, polkadot-staking-halving-guide). Need QA validation + OG images + publish queue entry before next commit batch. Also consider: Token Unlocks Tracker tool page — high search volume driven by Wormhole event, no current coverage on degen0x."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE — e3f63fc (39 uncommitted, deploy debt CRITICAL)", "pct": 15, "color": "#ef4444" },
+          { "label": "Learn Pages on Disk", "value": "72 (+2 this cycle: IL + Hyperliquid)", "pct": 100, "color": "#4ade80" },
+          { "label": "Learn Page Dirs", "value": "311 total dirs in /learn", "pct": 85, "color": "#4ade80" },
+          { "label": "Tool Pages on Disk", "value": "115", "pct": 85, "color": "#4ade80" },
+          { "label": "Total Pages on Disk", "value": "426 (311 learn + 115 tools)", "pct": 85, "color": "#4ade80" },
+          { "label": "Published Slugs", "value": "819 in published-pages.ts", "pct": 85, "color": "#06b6d4" },
+          { "label": "OG Image Coverage", "value": "72 SVGs — parity with learn guides", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "39 (up from 25 last standup)", "pct": 10, "color": "#ef4444" },
+          { "label": "API Rate Limiting", "value": "0/6 public routes protected", "pct": 0, "color": "#ef4444" },
+          { "label": "API Cache Coverage", "value": "6/6 routes with TTL + stale-while-revalidate", "pct": 100, "color": "#4ade80" },
+          { "label": "Tweets Drafted", "value": "414 through Oct 25 (+5 this cycle)", "pct": 100, "color": "#4ade80" },
+          { "label": "Newsletters Ready", "value": "v35 'The Math DeFi LPs Don't Do'", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Cards", "value": "67+ SVGs (2 new: IL + Hyperliquid)", "pct": 100, "color": "#4ade80" },
+          { "label": "TS Errors", "value": "141 in 4 files (non-blocking)", "pct": 85, "color": "#06b6d4" },
+          { "label": "BTC Price", "value": "$68,743 (+2.8% recovery, Good Friday)", "pct": 65, "color": "#f59e0b" },
+          { "label": "ETH Price", "value": "~$2,082 (-6.5% 24h)", "pct": 45, "color": "#f59e0b" },
+          { "label": "F&G Index", "value": "8/100 — Extreme Fear (<20 days in history)", "pct": 8, "color": "#ef4444" },
+          { "label": "BTC ETF Flows (Apr 1)", "value": "-$173.7M (IBIT -$86.5M, FBTC -$78.6M)", "pct": 25, "color": "#ef4444" },
+          { "label": "Stablecoin Supply", "value": "$316B ATH — record dry powder", "pct": 99, "color": "#4ade80" },
+          { "label": "Wormhole Unlock", "value": "1.28B W tokens at 11:30 UTC TODAY (28.4% supply)", "pct": 30, "color": "#f59e0b" },
+          { "label": "March ADP Jobs", "value": "+62K (above +40K consensus)", "pct": 60, "color": "#06b6d4" },
+          { "label": "Good Friday", "value": "NYSE/Nasdaq/bonds CLOSED — crypto only market", "pct": 100, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$379 (4 agents: standup $45 + build $233 + design $60 + community $41)", "pct": 32, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$738 (11 runs: standup×4 $180 + build×1 $233 + design×3 $180 + community×2 $82 + eod×1 $63)", "pct": 6, "color": "#4ade80" },
+          { "label": "💰 Yesterday's Total (Apr 2)", "value": "$10,225 (137 runs across 6 agent types)", "pct": 86, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Chrome tool unavailable — CORS blocks Resend API fetch from browser context. Skipped."
+  }
+}

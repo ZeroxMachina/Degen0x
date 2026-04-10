@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import MarketRecapClient from "./MarketRecapClient";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Daily Crypto Market Recap — Today's Movers & Events | degen0x",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://degen0x.com/tools/market-recap",
     images: [
       {
-        url: "https://degen0x.com/api/og?title=Daily+Crypto+Market+Recap&category=Tools&type=tool",
+        url: "https://degen0x.com/og-market-recap.svg",
         width: 1200,
         height: 630,
         alt: "Daily Crypto Market Recap on degen0x",
@@ -36,11 +37,24 @@ export const metadata: Metadata = {
     description:
       "Top gainers, losers, sector performance, and key market events — updated live.",
     images: [
-      "https://degen0x.com/api/og?title=Daily+Crypto+Market+Recap&category=Tools&type=tool",
+      "https://degen0x.com/og-market-recap.svg",
     ],
   },
 };
 
 export default function MarketRecapPage() {
-  return <MarketRecapClient />;
+  return (
+    <div style={{ background: "var(--color-bg)" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "2rem 1rem 4rem" }}>
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Tools", href: "/tools" },
+            { label: "Market Recap" },
+          ]}
+        />
+        <MarketRecapClient />
+      </div>
+    </div>
+  );
 }

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     authors: ["degen0x Team"],
     images: [
       {
-        url: `${SITE_URL}/og-shared-sequencing-guide-2026.svg`,
+        url: `${SITE_URL}/og-shared-sequencing-decentralized-sequencers-guide-2026.svg`,
         width: 1200,
         height: 630,
         alt: "Shared Sequencing Guide 2026 — Decentralized sequencers, Espresso Network, cross-rollup composability",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Shared Sequencing & Decentralized Sequencers Guide 2026",
     description:
       "Rollups are centralized at the sequencer. Here's how shared sequencing fixes that. Full guide →",
-    images: [`${SITE_URL}/og-shared-sequencing-guide-2026.svg`],
+    images: [`${SITE_URL}/og-shared-sequencing-decentralized-sequencers-guide-2026.svg`],
   },
   alternates: {
     canonical: `${SITE_URL}/learn/shared-sequencing-decentralized-sequencers-guide-2026`,
@@ -65,7 +65,7 @@ const articleSchema = generateArticleSchema({
   datePublished: "2026-03-27T00:00:00Z",
   dateModified: "2026-03-27T00:00:00Z",
   author: "degen0x Team",
-  image: `${SITE_URL}/og-shared-sequencing-guide-2026.svg`,
+  image: `${SITE_URL}/og-shared-sequencing-decentralized-sequencers-guide-2026.svg`,
   wordCount: 3200,
 });
 

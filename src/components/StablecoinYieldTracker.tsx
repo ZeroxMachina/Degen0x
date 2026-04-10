@@ -150,6 +150,7 @@ export default function StablecoinYieldTracker() {
         .sytr-search:focus-visible { border-color: #6366f1 !important; outline: none; box-shadow: 0 0 0 2px #6366f120; }
         .sytr-sort-btn:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }
         .sytr-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+        .sytr-card:focus-within { outline: 2px solid #6366f1; outline-offset: 2px; }
         .sytr-card { transition: transform 0.2s, box-shadow 0.2s; }
         .sytr-cta:hover { background: #58a6ff30 !important; }
         .sytr-cta:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }
@@ -225,7 +226,7 @@ export default function StablecoinYieldTracker() {
         </div>
 
         {/* Filters */}
-        <div style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 14, padding: 18, marginBottom: 20 }}>
+        <div role="group" aria-label="Filter stablecoins by chain, risk, and type" style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 14, padding: 18, marginBottom: 20 }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {/* Chain */}
             <div>
@@ -381,11 +382,6 @@ export default function StablecoinYieldTracker() {
                 <span style={{ fontSize: 10, color: S.text2, flex: 1 }}>{sc.riskNote}</span>
               </div>
 
-              {/* Mechanism Description */}
-              <div style={{ background: S.surface2, borderRadius: 8, padding: 10 }}>
-                <div style={{ fontSize: 11, color: S.text2, lineHeight: 1.5 }}>{sc.mechanism}</div>
-              </div>
-
               {/* 7d Change & KYC */}
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
                 <div>
@@ -416,6 +412,7 @@ export default function StablecoinYieldTracker() {
               {/* CTA Button */}
               <a
                 href={sc.url}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="sytr-cta"
                 style={{

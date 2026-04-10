@@ -1,0 +1,83 @@
+{
+  "date": "2026-04-04",
+  "block": "standup",
+  "version": 14,
+  "timestamp": "2026-04-04T15:45Z",
+  "report": {
+    "status": "completed",
+    "summary": "F&G CRASHED 29 → 9 (Extreme Fear) — BTC ~$66,900 (-0.3% from v13). Since v13: 3 agents ran — EOD-v7 recounted 141 TS errors (4 files incl. new learn pages), Publish confirmed queue nearly empty (2 blocked pages), Design created 2 OG images + UX fixes on 4 pages. Published pages steady at 729. Production still FROZEN at e3f63fc — 46th escalation.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA v13 → v14: 3 agents ran since last standup — EOD-v7 (14:55), Publish (15:16), Design (15:35). No build or community cycle this window.",
+          "CRITICAL SENTIMENT SHIFT: F&G crashed from 29 (Fear) → 9 (Extreme Fear). This is the lowest sustained trough since Terra-Luna collapse (Jun 2022, bottomed at 6). Historically, sub-10 readings precede major accumulation phases within 30-90 days.",
+          "BTC: ~$66,900 (-0.3% from v13's $67,120). 24h volume ~$19-24B. Market cap ~$2.38T. BTC dominance still elevated — flight to quality continues.",
+          "DESIGN (15:35): Audited 4 learn pages — Abstract Chain, Initia, dYdX, Post-Quantum. Created 2 OG images (Abstract Chain ZK rollup, Initia Interwoven Rollups). Fixed OG metadata on 4 pages. Added BackToTop component to dYdX, mobile overflow wrappers to Abstract Chain.",
+          "PUBLISH (15:16): Queue effectively EMPTY — only 2 pages remain (monad-guide, zora-attention-markets-guide-2026), both blocked on missing page.tsx scaffolding. 729 published pages confirmed. Build passes on Vercel (ignoreBuildErrors).",
+          "EOD-v7 (14:55): Full recount — 141 TS errors across 4 files (lido-v3 94, structured-data 40, crypto-arbitrage 4, rwa-yield 3). Non-blocking but higher than v13's 25 count (v13 only counted structured-data file). defi-yields API still needs in-memory cache.",
+          "MACRO: Stablecoin supply $316B ATH. CLARITY Act roundtable Apr 16 (12 days). April token unlocks >$600M. Extreme fear = elevated search demand for 'buy the dip', 'DCA', 'crypto crash', 'is crypto dead'.",
+          "EGRESS: Sandbox blocks CoinGecko, GSC, Vercel Analytics. Market data confirmed via web search."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "CYCLE OUTPUT: 3 agents since v13. Design delivered 2 OG images + UX polish on 4 pages. Publish confirmed queue near-empty. EOD-v7 ran full audit — no regressions.",
+          "TODAY'S TOTAL (from report files): 28 agent runs (standup×10, eod×7, publish×7, community×3, design×1). Some earlier cycles may not have persisted individual reports.",
+          "PUBLISHED PAGES: 729 (stable since publish cycle — no new promotions, queue blocked). Up from 724 at v12.",
+          "QUEUE STATUS: Only 2 pages remain in PUBLISH_QUEUE, both blocked on scaffolding. The queue is effectively exhausted — next priority shifts to building new pages or scaffolding the 2 remaining.",
+          "P0 — COMMIT + DEPLOY (46th ESCALATION): Production frozen at e3f63fc since Apr 2. 530+ built pages sitting unpublished. F&G crashing to 9 makes deploy even more urgent — extreme fear queries are spiking. Deploy cost: $0. Deploy ROI: compounds daily.",
+          "P1 — TS ERRORS: EOD-v7 full recount shows 141 errors in 4 files (not just 25 in 1 file as v13 reported). lido-v3-stvaults-guide alone has 94. Non-blocking due to ignoreBuildErrors but represents real tech debt.",
+          "P2 — SCAFFOLD 2 REMAINING QUEUE PAGES: monad-guide and zora-attention-markets-guide-2026 need page.tsx to unblock the queue entirely.",
+          "BLOCKERS: Deploy authorization remains sole blocker. All other work accumulates in staging."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — COMMIT + DEPLOY (P0, 46th ESCALATION): F&G at 9 = extreme fear = peak search demand for crisis content (DCA calculators, passive income guides, 'is crypto dead' articles). 530+ pages invisible to Google during the highest-intent search moment of 2026. Every hour without deploy = irreversible lost indexing time. This is now a strategic emergency, not just an operational one.",
+          "PRIORITY 2 — SCAFFOLD MONAD + ZORA PAGES: Queue is exhausted. Only 2 pages left, both blocked on scaffolding. Quick build cycle to create page.tsx for monad-guide and zora-attention-markets-guide-2026 would clear the queue to zero and signal pipeline completion.",
+          "PRIORITY 3 — TS ERROR CLEANUP: 141 errors in 4 files. The lido-v3-stvaults-guide page alone has 94 errors — likely a type-heavy component that needs interface fixes. Clearing this improves build health and makes ignoreBuildErrors removable long-term."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "FROZEN — e3f63fc (2+ days, 46th escalation)", "pct": 2, "color": "#ef4444" },
+          { "label": "Published Slugs (registry)", "value": "729 (stable)", "pct": 90, "color": "#f59e0b" },
+          { "label": "Real Published Pages", "value": "~618 (729 - 111 phantom)", "pct": 76, "color": "#f59e0b" },
+          { "label": "Publish Queue", "value": "2 remaining (both blocked)", "pct": 99, "color": "#4ade80" },
+          { "label": "Total Pages Built", "value": "1,251 page.tsx files", "pct": 95, "color": "#4ade80" },
+          { "label": "Unpublished Built Pages", "value": "522+ awaiting deploy", "pct": 42, "color": "#f59e0b" },
+          { "label": "OG Images Created (today)", "value": "+2 (Abstract Chain, Initia)", "pct": 100, "color": "#4ade80" },
+          { "label": "UX Fixes (this cycle)", "value": "4 pages audited, 5 fixes applied", "pct": 100, "color": "#4ade80" },
+          { "label": "API Routes Health", "value": "5/6 healthy (defi-yields needs cache)", "pct": 83, "color": "#f59e0b" },
+          { "label": "TS Errors", "value": "141 in 4 files (non-blocking)", "pct": 30, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "~$66,900 (-0.3% from v13)", "pct": 50, "color": "#f59e0b" },
+          { "label": "F&G Index", "value": "9 (EXTREME FEAR — crashed from 29)", "pct": 9, "color": "#ef4444" },
+          { "label": "BTC Dominance", "value": "56.2% (flight to quality)", "pct": 56, "color": "#f59e0b" },
+          { "label": "Stablecoin Supply", "value": "$316B ATH — record dry powder", "pct": 99, "color": "#4ade80" },
+          { "label": "CLARITY Act Roundtable", "value": "Apr 16 — 12 days", "pct": 65, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "4 of 6 (eod + publish + design + standup)", "pct": 67, "color": "#4ade80" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~4.25h (4 agents)", "pct": 41, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$223 (4 agents: standup $45 + eod $63 + publish $55 + design $60)", "pct": 45, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$1,459 (28 runs from report files: standup×10=$450, eod×7=$441, publish×7=$385, community×3=$123, design×1=$60)", "pct": 12, "color": "#4ade80" },
+          { "label": "📝 Note", "value": "File-based count; earlier cycles may have run without persisting reports", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Chrome tool available but Resend API rejects browser-side fetch (CORS). Email skipped. Report saved to reports/2026-04-04-standup-v14.json."
+  }
+}

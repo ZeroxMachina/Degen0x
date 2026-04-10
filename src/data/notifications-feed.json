@@ -1,34 +1,34 @@
 [
   {
-    "id": "feed-2026-04-02-001",
+    "id": "feed-2026-04-10-012",
     "type": "news",
-    "title": "New: Euler V2 Modular Lending Guide",
-    "message": "Deep dive into Euler V2's modular lending architecture — vaults, risk management, and yield strategies explained.",
-    "actionUrl": "/learn/euler-v2-modular-lending-guide-2026",
-    "date": "2026-04-02"
+    "title": "New: Aave vs Compound & Morpho Comparisons",
+    "message": "Side-by-side comparisons of the top DeFi lending protocols — rates, risks, and features.",
+    "actionUrl": "/defi-lending/compare/aave-vs-compound",
+    "date": "2026-04-10"
   },
   {
-    "id": "feed-2026-04-02-002",
+    "id": "feed-2026-04-10-013",
     "type": "news",
-    "title": "New: Crypto Staking Guide 2026",
-    "message": "Complete guide to crypto staking in 2026 — validator selection, liquid staking, risks, and maximizing yield.",
-    "actionUrl": "/learn/crypto-staking-guide-2026",
-    "date": "2026-04-02"
+    "title": "New: CeFi vs DeFi Lending Guide",
+    "message": "Understand the trade-offs between centralized and decentralized lending platforms.",
+    "actionUrl": "/defi-lending/compare/cefi-vs-defi-lending",
+    "date": "2026-04-10"
   },
   {
-    "id": "feed-2026-04-02-003",
+    "id": "feed-2026-04-10-014",
     "type": "news",
-    "title": "New: Hyperlane Interoperability Guide",
-    "message": "Explore Hyperlane's permissionless cross-chain messaging — how it works, use cases, and ecosystem overview.",
-    "actionUrl": "/learn/hyperlane-permissionless-interoperability-guide-2026",
-    "date": "2026-04-02"
+    "title": "New: MakerDAO Loans Review",
+    "message": "Full review of MakerDAO's crypto lending — collateral types, rates, and governance.",
+    "actionUrl": "/crypto-loans/reviews/makerdao",
+    "date": "2026-04-10"
   },
   {
-    "id": "feed-2026-04-02-004",
-    "type": "news",
-    "title": "New: Flash Loans DeFi Guide",
-    "message": "Understand flash loans — instant uncollateralized borrowing, arbitrage strategies, and risk considerations.",
-    "actionUrl": "/learn/flash-loans-defi-guide-2026",
-    "date": "2026-04-02"
+    "id": "feed-2026-04-10-015",
+    "type": "system",
+    "title": "Crypto.com vs Bybit Card Comparison",
+    "message": "New head-to-head comparison of two popular crypto debit cards.",
+    "actionUrl": "/crypto-cards/compare/crypto-com-vs-bybit-card",
+    "date": "2026-04-10"
   }
 ]

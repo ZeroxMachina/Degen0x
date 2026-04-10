@@ -1,0 +1,77 @@
+{
+  "date": "2026-04-03",
+  "block": "standup",
+  "version": 10,
+  "report": {
+    "status": "completed",
+    "summary": "Standup v10 Apr 3: BTC holds ~$66,500 (flat from v9), ETH ~$2,055. F&G at 9 — Extreme Fear day 8+. Since v9: publish agent promoted 2 pages (2 deferred), eod-v9 flagged defi-yields API missing cache/fallback as critical. 33 agent runs today = ~$2,238 human-equiv. Git rebase conflict blocking deploy — 19th deploy-debt escalation.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE LAST STANDUP (v9 → v10): BTC flat at ~$66,500, no meaningful move from v9's $66,503. ETH unchanged at ~$2,055. Market in low-vol consolidation near $66.5K support. Total crypto market cap $2.38T.",
+          "F&G INDEX: Holds at 9 — Extreme Fear. Unchanged from v9. Sub-10 territory for 8+ consecutive days. April 1 reading was 8, slight recovery to 9. Historically rare sustained extreme fear — last comparable streak was June 2022 (Terra-Luna collapse, bottomed at 6).",
+          "BTC ETF FLOWS: April 1 saw $173.7M net outflows (IBIT -$86.5M, FBTC -$78.6M). Q1 2026 closed at ~$500M net outflows overall, but March's $1.32B inflows showed institutional resilience. April 2-3 specific flow data not yet available — monitoring for stabilization signals.",
+          "MORGAN STANLEY MSBT ETF: Still the top content opportunity. S-1 Amendment No. 4 filed April 1 with 0.14% annual fee — lowest-cost BTC ETF, undercutting IBIT (0.25%). No new developments since v9 but the first-mover SEO window is narrowing.",
+          "STABLECOIN SUPPLY: $316B ATH — record dry powder sitting on sidelines during extreme fear. Historically bullish divergence signal when combined with sub-10 F&G.",
+          "CONTENT ON DISK: 311 learn page dirs (cryptodegen) + 78 page.tsx (Degen0x). Publish agent promoted 2 pages this cycle (Drift Protocol hack analysis, Polkadot staking halving guide). 2 remain in PUBLISH_QUEUE (impermanent loss, Hyperliquid — both missing page.tsx)."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SINCE v9: 3 agent runs — publish (11:21 UTC, promoted 2 pages), eod-v9 (11:55 UTC, QA cycle-close), standup v10 (this cycle). No build, design, or community agents this cycle.",
+          "TODAY'S FULL AGENT ACTIVITY: 33 runs across 6 types — standup×10 ($450), build×3 ($699), design×3 ($180), community×7 ($287), eod×9 ($567), publish×1 ($55). Total human-equiv: ~$2,238.",
+          "P0 — GIT REBASE CONFLICT (NEW): Publish agent discovered git rebase in progress on main branch. Deploy is blocked until this is manually resolved. This compounds the deploy debt — now 19th consecutive escalation.",
+          "P0 — DEPLOY DEBT (19TH ESCALATION): Same as v9 but worse — rebase conflict adds a new blocker on top of the existing uncommitted content. 311+ learn pages invisible to Google. JEFE MUST resolve rebase + push.",
+          "P0 — DEFI-YIELDS API CRITICAL: eod-v9 flagged that /api/defi-yields has NO in-memory cache and NO fallback data. If DefiLlama goes down, users see raw errors. All other 5 API routes have proper caching.",
+          "P1 — 108 PHANTOM PUBLISHED SLUGS: 108 slugs in published-pages.ts with no page.tsx on disk. Will 404 if deployed. Unchanged 19+ cycles.",
+          "P1 — 2 PAGES STUCK IN QUEUE: impermanent-loss and Hyperliquid guides deferred — both missing page.tsx. Need scaffold before next publish cycle.",
+          "P2 — TS ERRORS: 15 in structured-data.examples.ts (needs .tsx rename). Non-blocking due to ignoreBuildErrors."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — RESOLVE REBASE + DEPLOY (P0 CRITICAL — 19TH ESCALATION): A git rebase conflict is now actively blocking deployment. This is the #1 blocker. Steps: (1) resolve rebase on main, (2) commit all content, (3) push to trigger Vercel deploy. Every hour of delay = permanent organic traffic loss during peak extreme-fear search demand.",
+          "PRIORITY 2 — FIX DEFI-YIELDS API: The stablecoin yield tracker tool shipped but its API route has no cache or fallback. One DefiLlama outage = broken tool for users. Add LRU cache + TTL + stale fallback matching the pattern used in prices/trending/market-dominance routes. Quick fix, high impact.",
+          "PRIORITY 3 — SCAFFOLD 2 MISSING PAGES + MSBT CONTENT: (a) Build page.tsx for impermanent-loss and Hyperliquid guides so they can clear the publish queue. (b) Create Morgan Stanley MSBT ETF content — first-mover SEO window closing. Target: 'Morgan Stanley Bitcoin ETF', 'MSBT ETF', 'cheapest Bitcoin ETF' queries."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "BLOCKED — git rebase conflict + deploy debt (19th escalation)", "pct": 5, "color": "#ef4444" },
+          { "label": "Learn Pages (cryptodegen)", "value": "311 page dirs", "pct": 100, "color": "#4ade80" },
+          { "label": "Learn Pages (Degen0x)", "value": "78 page.tsx + 78 OG SVGs", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Promoted Today", "value": "2 (Drift Protocol, Polkadot staking)", "pct": 50, "color": "#f59e0b" },
+          { "label": "Publish Queue Remaining", "value": "2 (both missing page.tsx)", "pct": 95, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "5/6 (defi-yields critical)", "pct": 83, "color": "#f59e0b" },
+          { "label": "Published Slugs", "value": "634 (108 missing page.tsx)", "pct": 82, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "~$66,500 (flat from v9)", "pct": 44, "color": "#ef4444" },
+          { "label": "ETH Price", "value": "~$2,055 (flat from v9)", "pct": 40, "color": "#06b6d4" },
+          { "label": "F&G Index", "value": "9/100 — Extreme Fear day 8+", "pct": 9, "color": "#ef4444" },
+          { "label": "Crypto Market Cap", "value": "$2.38T", "pct": 40, "color": "#ef4444" },
+          { "label": "Stablecoin Supply", "value": "$316B ATH — record dry powder", "pct": 99, "color": "#4ade80" },
+          { "label": "Morgan Stanley MSBT", "value": "S-1 filed — 0.14% fee (SEO window closing)", "pct": 60, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "3 of 6 (standup + publish + eod)", "pct": 50, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~3h (0.75 + 1 + 1.25)", "pct": 29, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$54/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$163 (standup $45 + publish $55 + eod $63)", "pct": 14, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$2,238 (33 runs: standup×10 $450 + build×3 $699 + design×3 $180 + community×7 $287 + eod×9 $567 + publish×1 $55)", "pct": 19, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Resend API blocked by browser CORS (TypeError: Failed to fetch). Consistent with v1-v9. Report saved to reports/ folder."
+  }
+}

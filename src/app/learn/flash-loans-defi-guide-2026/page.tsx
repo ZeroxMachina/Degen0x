@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BackToTop from '@/components/BackToTop';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Flash Loans in DeFi Guide 2026 — How They Work | degen0x',
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'https://degen0x.com/og-flash-loans-2026.svg',
+        url: 'https://degen0x.com/og-flash-loans-guide-2026.svg',
         width: 1200,
         height: 630,
         alt: 'Flash Loans in DeFi Guide 2026',
@@ -39,7 +41,7 @@ export const metadata: Metadata = {
     title: 'Flash Loans in DeFi Guide 2026 — How They Work',
     description:
       'Master flash loans: uncollateralized lending, atomic transactions, arbitrage opportunities, and security risks in 2026.',
-    images: ['https://degen0x.com/og-flash-loans-2026.svg'],
+    images: ['https://degen0x.com/og-flash-loans-guide-2026.svg'],
   },
 };
 
@@ -48,7 +50,7 @@ const structuredData = {
   '@type': ['Article', 'FAQPage'],
   headline: 'Flash Loans in DeFi Guide 2026 — Uncollateralized Lending Explained',
   description: 'Comprehensive guide to flash loans, atomic transactions, flash loan protocols, use cases, attacks, fees, and economics in decentralized finance 2026.',
-  image: 'https://degen0x.com/og-flash-loans-2026.svg',
+  image: 'https://degen0x.com/og-flash-loans-guide-2026.svg',
   author: {
     '@type': 'Organization',
     name: 'Degen0x',
@@ -275,15 +277,11 @@ export default function FlashLoansPage() {
 
       <div style={containerStyle}>
         {/* Breadcrumb Navigation */}
-        <nav aria-label="Breadcrumb" style={breadcrumbStyle}>
-          <Link href="/" style={linkStyle}>Home</Link>
-          <span style={{ margin: '0 6px' }}>›</span>
-          <Link href="/learn" style={linkStyle}>
-            Learn
-          </Link>
-          <span style={{ margin: '0 6px' }}>›</span>
-          <span style={{ color: '#c9d1d9' }}>Flash Loans in DeFi Guide</span>
-        </nav>
+        <Breadcrumb items={[
+          { label: 'Home', href: '/' },
+          { label: 'Learn', href: '/learn' },
+          { label: 'Flash Loans in DeFi Guide' },
+        ]} />
 
         {/* Badges & Metadata */}
         <div>
@@ -1006,6 +1004,7 @@ export default function FlashLoansPage() {
           </p>
         </div>
       </div>
+      <BackToTop />
     </main>
   );
 }

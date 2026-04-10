@@ -1,0 +1,65 @@
+{
+  "date": "2026-04-03",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted 5 learn guides from PUBLISH_QUEUE to PUBLISHED_PAGES; QA passed (pages verified, breadcrumbs present); deploy blocked by in-progress git rebase — changes saved locally, deploy pending rebase resolution.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/intent-based-trading", "status": "pass" },
+          { "slug": "/learn/l2-bridges-rollups-guide", "status": "pass" },
+          { "slug": "/learn/l3-networks-guide", "status": "pass" },
+          { "slug": "/learn/liquid-staking-derivatives", "status": "pass" },
+          { "slug": "/learn/memecoin-trading-strategy", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages with page.tsx", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Breadcrumbs present", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "H1 headings present", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Metadata export", "value": "1/5", "pct": 20, "color": "#f59e0b" },
+          { "label": "Notifications feed updated", "value": "Yes", "pct": 100, "color": "#4ade80" },
+          { "label": "Published-pages.ts valid", "value": "Yes", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko API", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama API", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache layer (in-memory + CDN)", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate limiter", "value": "Active", "pct": 100, "color": "#4ade80" },
+          { "label": "Circuit breakers", "value": "Configured", "pct": 100, "color": "#4ade80" },
+          { "label": "Fallback data", "value": "Present", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deploy Status",
+        "metrics": [
+          { "label": "Git state", "value": "Rebase in progress", "pct": 30, "color": "#f59e0b" },
+          { "label": "Changes saved locally", "value": "Yes", "pct": 100, "color": "#4ade80" },
+          { "label": "Vercel deploy", "value": "Pending", "pct": 0, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Queue Status",
+        "metrics": [
+          { "label": "Pages remaining in queue", "value": "12", "pct": 80, "color": "#06b6d4" },
+          { "label": "Pages with missing page.tsx", "value": "2", "pct": 15, "color": "#f59e0b" },
+          { "label": "Valid pages in queue", "value": "10", "pct": 67, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "notes": [
+      "Deploy blocked: repo is mid-rebase (branch main rebasing onto a6e168b). Resolve rebase, then commit published-pages.ts + notifications-feed.json changes and run vercel --prod.",
+      "2 queue pages still have no page.tsx: /learn/monad-guide and /learn/zora-attention-markets-guide-2026 — scaffold or fix slugs before next cycle.",
+      "4 of 5 promoted pages use client-side rendering without explicit metadata exports — metadata may come from layout or needs adding for full SEO.",
+      "Full build could not run in sandbox (OOM at 826+ pages) — Vercel 8GB builds handle this fine."
+    ]
+  }
+}

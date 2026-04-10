@@ -1,85 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#080d1c"/>
-      <stop offset="100%" stop-color="#0f1729"/>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1629;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#4f46e5"/>
-      <stop offset="50%" stop-color="#0891b2"/>
-      <stop offset="100%" stop-color="#d97706"/>
+
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e6ed;stop-opacity:1" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="4" fill="url(#accent)"/>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
 
-  <circle cx="950" cy="200" r="180" fill="#6366f1" opacity="0.04"/>
-  <circle cx="200" cy="500" r="120" fill="#22c55e" opacity="0.03"/>
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="url(#accentGradient)"/>
 
-  <text x="60" y="58" font-family="Inter, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#6366f1" letter-spacing="0.05em">degen0x</text>
+  <!-- Decorative glow circles -->
+  <circle cx="150" cy="100" r="80" fill="#4f46e5" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="1050" cy="500" r="120" fill="#0891b2" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="900" cy="120" r="60" fill="#d97706" opacity="0.07" filter="url(#glow)"/>
 
-  <!-- AI badge -->
-  <rect x="160" y="38" width="140" height="28" rx="14" fill="rgba(88,166,255,0.1)" stroke="#58a6ff" stroke-width="1"/>
-  <text x="230" y="57" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#58a6ff">AI-Generated</text>
+  <!-- Category badge -->
+  <rect x="60" y="60" width="220" height="40" rx="20" fill="#06b6d4" opacity="0.15" stroke="#06b6d4" stroke-width="2"/>
+  <text x="170" y="87" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#06b6d4" text-anchor="middle">MARKET DATA</text>
 
-  <text x="60" y="200" font-family="Inter, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">AI Market Recap</text>
-  <text x="60" y="260" font-family="Inter, -apple-system, sans-serif" font-size="38" font-weight="800" fill="url(#accent)" letter-spacing="-0.02em">Daily Crypto Intelligence</text>
+  <!-- Title -->
+  <text x="60" y="160" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="url(#titleGradient)">Daily Market Recap</text>
 
-  <text x="60" y="310" font-family="Inter, -apple-system, sans-serif" font-size="20" fill="#8b949e">Sentiment, gainers/losers, whale activity &amp; on-chain signals</text>
+  <!-- Subtitle -->
+  <text x="60" y="210" font-family="system-ui, sans-serif" font-size="20" fill="#8b949e">Top gainers, losers &amp; market events — updated live</text>
 
-  <!-- Mini chart -->
-  <g transform="translate(700, 100)">
-    <rect width="440" height="200" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-    <path d="M 30 160 L 70 140 L 110 150 L 150 120 L 190 100 L 230 110 L 270 80 L 310 60 L 350 50 L 390 30" fill="none" stroke="#22c55e" stroke-width="2.5"/>
-    <path d="M 30 160 L 70 140 L 110 150 L 150 120 L 190 100 L 230 110 L 270 80 L 310 60 L 350 50 L 390 30 L 390 180 L 30 180 Z" fill="url(#chartGrad)"/>
-    <text x="20" y="24" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">MARKET CAP (7D)</text>
-    <text x="350" y="24" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#22c55e">+2.8%</text>
+  <!-- Visualization: Bar chart with top gainers/losers -->
+  <g>
+    <!-- Chart background -->
+    <rect x="750" y="80" width="400" height="400" rx="12" fill="#0a1427" opacity="0.5" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Green bars (gainers) -->
+    <rect x="780" y="320" width="35" height="120" rx="4" fill="#22c55e" opacity="0.9"/>
+    <text x="797" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#22c55e" text-anchor="middle">+28%</text>
+
+    <rect x="830" y="240" width="35" height="200" rx="4" fill="#16a34a" opacity="0.8"/>
+    <text x="847" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#16a34a" text-anchor="middle">+42%</text>
+
+    <rect x="880" y="280" width="35" height="160" rx="4" fill="#22c55e" opacity="0.85"/>
+    <text x="897" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#22c55e" text-anchor="middle">+35%</text>
+
+    <!-- Red bars (losers) -->
+    <rect x="930" y="240" width="35" height="200" rx="4" fill="#ef4444" opacity="0.85"/>
+    <text x="947" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#ef4444" text-anchor="middle">-42%</text>
+
+    <rect x="980" y="300" width="35" height="140" rx="4" fill="#dc2626" opacity="0.9"/>
+    <text x="997" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#dc2626" text-anchor="middle">-25%</text>
+
+    <rect x="1030" y="360" width="35" height="80" rx="4" fill="#ef4444" opacity="0.8"/>
+    <text x="1047" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#ef4444" text-anchor="middle">-12%</text>
+
+    <!-- Grid lines -->
+    <line x1="770" y1="440" x2="1070" y2="440" stroke="#1e293b" stroke-width="1" opacity="0.5"/>
+    <line x1="770" y1="380" x2="1070" y2="380" stroke="#1e293b" stroke-width="1" opacity="0.3"/>
   </g>
 
-  <!-- Stats -->
-  <rect x="60" y="370" width="520" height="100" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <g transform="translate(90, 395)">
-    <text font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">SENTIMENT</text>
-    <text y="28" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#22c55e">Bullish</text>
-  </g>
-  <line x1="230" y1="390" x2="230" y2="450" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <g transform="translate(260, 395)">
-    <text font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">VOLUME 24H</text>
-    <text y="28" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#06b6d4">$94.2B</text>
-  </g>
-  <line x1="410" y1="390" x2="410" y2="450" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <g transform="translate(440, 395)">
-    <text font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">BTC DOM</text>
-    <text y="28" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#f59e0b">42.3%</text>
-  </g>
+  <!-- Bottom bar -->
+  <rect y="600" width="1200" height="30" fill="#0a1427" opacity="0.6"/>
+  <circle cx="60" cy="615" r="10" fill="#6366f1"/>
+  <text x="75" y="621" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">degen0x.com</text>
 
-  <!-- Narrative pills -->
-  <g transform="translate(700, 330)">
-    <rect width="440" height="140" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-    <text x="20" y="24" font-family="Inter, sans-serif" font-size="11" fill="#8b949e" letter-spacing="0.05em">TRENDING NARRATIVES</text>
-    <rect x="20" y="40" width="55" height="28" rx="8" fill="rgba(99,102,241,0.2)"/>
-    <text x="47" y="59" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#818cf8">AI/ML</text>
-    <rect x="85" y="40" width="50" height="28" rx="8" fill="rgba(6,182,212,0.2)"/>
-    <text x="110" y="59" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#06b6d4">RWA</text>
-    <rect x="145" y="40" width="60" height="28" rx="8" fill="rgba(139,92,246,0.2)"/>
-    <text x="175" y="59" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#8b5cf6">DePIN</text>
-    <rect x="215" y="40" width="38" height="28" rx="8" fill="rgba(245,158,11,0.2)"/>
-    <text x="234" y="59" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#f59e0b">L2</text>
-
-    <text x="20" y="98" font-family="Inter, sans-serif" font-size="12" fill="#8b949e">Whale activity, on-chain signals</text>
-    <text x="20" y="118" font-family="Inter, sans-serif" font-size="12" fill="#8b949e">&amp; narrative momentum updated daily</text>
-  </g>
-
-  <rect y="610" width="1200" height="20" fill="rgba(0,0,0,0.3)"/>
-  <text x="60" y="624" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#6e7681">degen0x.com</text>
-  <text x="1140" y="624" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#6e7681">Free · No Sign-up Required</text>
+  <!-- Decorative accent elements -->
+  <circle cx="1180" cy="615" r="8" fill="#06b6d4" opacity="0.3"/>
+  <circle cx="1150" cy="615" r="6" fill="#4f46e5" opacity="0.25"/>
 </svg>
