@@ -1,12 +1,8 @@
 import { Metadata } from 'next';
-import {
-  generateArticleSchema,
-  generateFAQSchema,
-  combineSchemas,
-  StructuredData,
-  Breadcrumb,
-  BackToTop,
-} from '@/components/seo';
+import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
+import StructuredData from '@/components/StructuredData';
+import Breadcrumb from '@/components/Breadcrumb';
+import BackToTop from '@/components/BackToTop';
 
 export const metadata: Metadata = {
   title: 'Distributed Validator Technology (DVT) Guide | degen0x',
@@ -225,7 +221,7 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function DVTGuidePage() {
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#0d1117', color: '#e6edf3' }}>
-      <StructuredData schema={combinedSchema} />
+      <StructuredData data={combinedSchema} />
 
       <article style={{ maxWidth: '820px', margin: '0 auto', padding: 'clamp(20px, 4vw, 40px) clamp(16px, 3vw, 20px)' }}>
         {/* Breadcrumb */}

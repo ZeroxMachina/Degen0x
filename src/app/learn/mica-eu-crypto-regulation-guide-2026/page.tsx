@@ -1,12 +1,8 @@
 import { Metadata } from 'next';
-import {
-  generateArticleSchema,
-  generateFAQSchema,
-  combineSchemas,
-  StructuredData,
-  Breadcrumb,
-  BackToTop,
-} from '@/lib/seo';
+import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
+import StructuredData from '@/components/StructuredData';
+import Breadcrumb from '@/components/Breadcrumb';
+import BackToTop from '@/components/BackToTop';
 
 export const metadata: Metadata = {
   title: 'MiCA EU Crypto Regulation Guide 2026 | degen0x',
@@ -210,7 +206,7 @@ const badgeStyle: (type: string) => React.CSSProperties = (type) => ({
 export default function MiCAGuide() {
   return (
     <>
-      <StructuredData schema={combinedSchemas} />
+      <StructuredData data={combinedSchemas} />
       <div
         style={{
           minHeight: '100vh',
