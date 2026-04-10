@@ -407,7 +407,7 @@ export default function CryptoArbitrageStrategiesGuide() {
           </h3>
 
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
-            <strong>Method 1: Manual + DEX aggregators</strong> — Use 1inch, Jupiter, or Uniswap's interface to check DEX prices, and Coingecko or exchanges' APIs for CEX prices. Execute manually if spreads are >0.5%. Slow but accessible.
+            <strong>Method 1: Manual + DEX aggregators</strong> — Use 1inch, Jupiter, or Uniswap's interface to check DEX prices, and Coingecko or exchanges' APIs for CEX prices. Execute manually if spreads are {'>'}0.5%. Slow but accessible.
           </p>
 
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
@@ -702,7 +702,7 @@ export default function CryptoArbitrageStrategiesGuide() {
           </h3>
 
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
-            You identify a spread, but by the time you execute your buy and sell, prices move. The spread closes or reverses. Mitigation: Use very tight spread thresholds (only execute if >0.3%), pre-position capital on multiple exchanges, and use fast execution methods (bots, smart contracts).
+            You identify a spread, but by the time you execute your buy and sell, prices move. The spread closes or reverses. Mitigation: Use very tight spread thresholds (only execute if {'>'}0.3%), pre-position capital on multiple exchanges, and use fast execution methods (bots, smart contracts).
           </p>
 
           <h3 className="text-2xl font-bold mb-4 text-[#e6edf3]">
@@ -822,7 +822,7 @@ export default function CryptoArbitrageStrategiesGuide() {
           </p>
 
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
-            Most importantly: Track every trade's profitability. Include all fees, slippage, and gas costs. After 100 trades, you should know your true edge (average profit per cycle). If it's <0.1%, stop—your edge is too small.
+            Most importantly: Track every trade's profitability. Include all fees, slippage, and gas costs. After 100 trades, you should know your true edge (average profit per cycle). If it's {'<'}0.1%, stop—your edge is too small.
           </p>
         </section>
 

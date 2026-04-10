@@ -862,7 +862,7 @@ export default function LidoV3stVaultsGuide() {
             {[
               {
                 title: 'Validator Slashing Risk',
-                desc: 'If your stVault's chosen validator double-signs or commits other consensus violations, 1/32 of their staked ETH gets slashed. With stVault customization, you bear risk from operator choices.',
+                desc: "If your stVault's chosen validator double-signs or commits other consensus violations, 1/32 of their staked ETH gets slashed. With stVault customization, you bear risk from operator choices.",
                 severity: 'Medium',
               },
               {
@@ -877,12 +877,12 @@ export default function LidoV3stVaultsGuide() {
               },
               {
                 title: 'De-peg Risk',
-                desc: 'stETH should trade 1:1 with ETH but can temporarily de-peg during market stress (e.g., June 2022: stETH hit 0.93 ETH). If you leverage-loop during a de-peg, you get liquidated.',
+                desc: "stETH should trade 1:1 with ETH but can temporarily de-peg during market stress (e.g., June 2022: stETH hit 0.93 ETH). If you leverage-loop during a de-peg, you get liquidated.",
                 severity: 'Medium',
               },
               {
                 title: 'Operational/Counterparty Risk',
-                desc: 'Some stVault operators may be teams, DAOs, or companies. If they abandon the project or make poor validator choices, your staked capital is at risk until you unstake (which can take 1–7 days).',
+                desc: "Some stVault operators may be teams, DAOs, or companies. If they abandon the project or make poor validator choices, your staked capital is at risk until you unstake (which can take 1–7 days).",
                 severity: 'Medium',
               },
               {
@@ -970,27 +970,27 @@ export default function LidoV3stVaultsGuide() {
               {
                 step: '2',
                 title: 'Choose Your stVault',
-                desc: 'Browse available stVaults on Lido's dashboard. Compare fees, validators, and features. For beginners, start with Lido's main vault or an established stVault.',
+                desc: "Browse available stVaults on Lido's dashboard. Compare fees, validators, and features. For beginners, start with Lido's main vault or an established stVault.",
               },
               {
                 step: '3',
                 title: 'Deposit ETH',
-                desc: 'Enter the amount of ETH you want to stake (minimum ~0.01 ETH, no maximum). Review the transaction, approve, and submit.',
+                desc: "Enter the amount of ETH you want to stake (minimum ~0.01 ETH, no maximum). Review the transaction, approve, and submit.",
               },
               {
                 step: '4',
                 title: 'Receive stETH',
-                desc: 'Within 1–2 minutes, you'll receive stETH representing your stake + future rewards. Check your wallet to confirm it's there.',
+                desc: "Within 1–2 minutes, you'll receive stETH representing your stake + future rewards. Check your wallet to confirm it's there.",
               },
               {
                 step: '5',
                 title: 'Monitor & Claim',
-                desc: 'Your stETH balance increases daily as rewards accrue. You can unstake anytime — withdrawal queue usually processes within 1–7 days.',
+                desc: "Your stETH balance increases daily as rewards accrue. You can unstake anytime — withdrawal queue usually processes within 1–7 days.",
               },
               {
                 step: '6',
                 title: 'Optional: Use in DeFi',
-                desc: 'Use stETH on Aave, Curve, Lido's own wstETH (wrapped, non-rebasing), or other protocols. Explore leverage loops carefully if experienced.',
+                desc: "Use stETH on Aave, Curve, Lido's own wstETH (wrapped, non-rebasing), or other protocols. Explore leverage loops carefully if experienced.",
               },
             ].map((item, i) => (
               <div
@@ -1067,23 +1067,23 @@ export default function LidoV3stVaultsGuide() {
             {[
               {
                 q: 'Can I unstake my stETH anytime?',
-                a: 'Yes. You can request unstaking anytime via the staking interface. Ethereum's withdrawal queue typically processes requests within 1–7 days depending on demand. Your ETH will arrive in your wallet once processed.',
+                a: "Yes. You can request unstaking anytime via the staking interface. Ethereum's withdrawal queue typically processes requests within 1–7 days depending on demand. Your ETH will arrive in your wallet once processed.",
               },
               {
-                q: 'What's the difference between stETH and wstETH?',
-                a: 'stETH rebases daily (your balance increases automatically). wstETH (wrapped stETH) has a fixed balance that accrues value instead. Use wstETH in protocols that don't support rebasing tokens. You can wrap/unwrap anytime.',
+                q: "What's the difference between stETH and wstETH?",
+                a: "stETH rebases daily (your balance increases automatically). wstETH (wrapped stETH) has a fixed balance that accrues value instead. Use wstETH in protocols that don't support rebasing tokens. You can wrap/unwrap anytime.",
               },
               {
                 q: 'Can I get slashed if I use stETH in DeFi?',
-                a: 'Not directly. If validators misbehave, your stETH balance might decrease (pro-rata slashing applied to all stETH holders). If you leveraged-borrowed and ETH price crashes, you get liquidated. Only use leverage if comfortable with risk.',
+                a: "Not directly. If validators misbehave, your stETH balance might decrease (pro-rata slashing applied to all stETH holders). If you leveraged-borrowed and ETH price crashes, you get liquidated. Only use leverage if comfortable with risk.",
               },
               {
                 q: 'Are stVaults safer than regular Lido?',
-                a: 'Not necessarily — they're different. Regular Lido uses Lido-selected validators (battle-tested since 2020). stVaults can choose different validators or add new features. Research each stVault's audit status, operator reputation, and validator choices.',
+                a: "Not necessarily — they're different. Regular Lido uses Lido-selected validators (battle-tested since 2020). stVaults can choose different validators or add new features. Research each stVault's audit status, operator reputation, and validator choices.",
               },
               {
                 q: 'Do I pay tax on stETH rewards?',
-                a: 'Yes, in most countries. staking rewards are taxed as income when received (valued at fair market value that day). When you sell stETH, you owe capital gains tax. Consult a tax professional for your jurisdiction.',
+                a: "Yes, in most countries. staking rewards are taxed as income when received (valued at fair market value that day). When you sell stETH, you owe capital gains tax. Consult a tax professional for your jurisdiction.",
               },
               {
                 q: 'How is Lido governed?',
