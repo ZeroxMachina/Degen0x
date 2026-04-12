@@ -559,6 +559,21 @@ export default function BitcoinDominanceChartPage() {
           </div>
         </div>
       </section>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Bitcoin Dominance Chart Live",
+              "url": "https://degen0x.com/tools/bitcoin-dominance-chart-live",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

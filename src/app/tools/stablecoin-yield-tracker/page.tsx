@@ -104,6 +104,21 @@ export default function StablecoinYieldTrackerPage() {
         />
       </div>
       <StablecoinYieldTracker />
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Stablecoin Yield Tracker",
+              "url": "https://degen0x.com/tools/stablecoin-yield-tracker",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

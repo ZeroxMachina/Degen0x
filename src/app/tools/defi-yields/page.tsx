@@ -362,6 +362,21 @@ export default function DeFiYieldsPage() {
           ⚠️ <strong>Important:</strong> APY rates are approximations and change constantly. DeFi carries smart contract, liquidity, and market risks — including total loss of funds. This is not financial advice. Always DYOR and never invest more than you can afford to lose. Data updated March 2026.
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Defi Yields",
+              "url": "https://degen0x.com/tools/defi-yields",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

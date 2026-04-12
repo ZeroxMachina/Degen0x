@@ -859,7 +859,22 @@ export default function AlertsDashboardPage() {
           font-family: inherit;
         }
       `}</style>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Alerts Dashboard",
+              "url": "https://degen0x.com/tools/alerts-dashboard",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }
 

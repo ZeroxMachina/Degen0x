@@ -944,6 +944,22 @@ export default function MiningProfitabilityPage() {
             This guide is for educational purposes only and should not be construed as financial advice. Bitcoin mining involves significant capital expenditure, operational risk, and electricity costs. Profitability calculations are subject to rapid changes in network difficulty, Bitcoin price, and hardware availability. Past performance is not indicative of future results. Always conduct your own due diligence, consult with operational experts, and stress-test your assumptions before committing capital to mining operations. The cryptocurrency market is volatile; miners should implement proper risk management and hedging strategies. Degen0x makes no guarantees about mining profitability or accuracy of projections.
           </p>
         </section>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Bitcoin Mining Profitability Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/bitcoin-mining-profitability-guide-2026"
+            })
+          }}
+        />
       </div>
       <BackToTop />
     </main>

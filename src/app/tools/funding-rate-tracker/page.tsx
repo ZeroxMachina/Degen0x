@@ -309,6 +309,21 @@ export default function FundingRateTrackerPage() {
           </div>
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Funding Rate Tracker",
+              "url": "https://degen0x.com/tools/funding-rate-tracker",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

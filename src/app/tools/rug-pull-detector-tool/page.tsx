@@ -404,7 +404,22 @@ export default function RugPullDetector() {
           section="tools"
         />
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Rug Pull Detector Tool",
+              "url": "https://degen0x.com/tools/rug-pull-detector-tool",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
 
   );
 }

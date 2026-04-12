@@ -194,7 +194,23 @@ const page = () => {
           </div>
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "What Is Perpetual Futures Trading",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/what-is-perpetual-futures-trading"
+            })
+          }}
+        />
+      </div>
   );
 };
 

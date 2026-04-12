@@ -36,6 +36,21 @@ export default function SentimentHeatmapPage() {
         />
         <SentimentHeatmapClient />
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Sentiment Heatmap",
+              "url": "https://degen0x.com/tools/sentiment-heatmap",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

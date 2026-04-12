@@ -338,6 +338,21 @@ export default function NftFloorPriceTracker() {
           </ul>
         </div>
       </div>
-    </article>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Nft Floor Price Tracker",
+              "url": "https://degen0x.com/tools/nft-floor-price-tracker",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
   );
 }

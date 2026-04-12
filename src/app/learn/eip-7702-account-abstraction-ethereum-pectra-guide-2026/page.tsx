@@ -223,6 +223,22 @@ export default function Eip7702Guide() {
       </div>
 
       <BackToTop />
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Eip 7702 Account Abstraction Ethereum Pectra Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/eip-7702-account-abstraction-ethereum-pectra-guide-2026"
+            })
+          }}
+        />
+      </div>
   );
 }

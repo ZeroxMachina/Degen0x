@@ -735,6 +735,21 @@ export default function LivePricesPage() {
       >
         <p>degen0x © 2024. All rights reserved. Market data for informational purposes only.</p>
       </footer>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Live Prices",
+              "url": "https://degen0x.com/tools/live-prices",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

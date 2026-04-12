@@ -550,6 +550,21 @@ export default function OnChainAnalyticsDashboard() {
             </p>
           </div>
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Onchain Analytics",
+              "url": "https://degen0x.com/tools/onchain-analytics",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
       </div>
     </main>
   );

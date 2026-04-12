@@ -1060,6 +1060,21 @@ export default function DefiPositionManagerPage() {
         select option { background: #161b22; color: #e6edf3; }
         button:hover { opacity: 0.95; }
       `}</style>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Defi Position Manager",
+              "url": "https://degen0x.com/tools/defi-position-manager",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

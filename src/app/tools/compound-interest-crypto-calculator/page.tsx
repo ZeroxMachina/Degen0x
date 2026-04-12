@@ -350,6 +350,21 @@ export default function CompoundInterestCryptoCalculator() {
           </ul>
         </div>
       </div>
-    </article>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Compound Interest Crypto Calculator",
+              "url": "https://degen0x.com/tools/compound-interest-crypto-calculator",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
   );
 }

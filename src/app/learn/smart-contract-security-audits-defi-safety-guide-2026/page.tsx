@@ -881,6 +881,22 @@ export default function SmartContractSecurityPage() {
         <div style={pageStyles.disclaimer}>
           <strong>Disclaimer:</strong> This guide is educational information, not financial or investment advice. Smart contract audits reduce but do not eliminate risk. Even audited protocols can be exploited through economic attacks, operational failures, or dependencies. Always conduct thorough due diligence, verify audit reports independently, and only deposit funds you can afford to lose. Past security performance doesn&apos;t guarantee future results.
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Smart Contract Security Audits Defi Safety Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/smart-contract-security-audits-defi-safety-guide-2026"
+            })
+          }}
+        />
       </div>
 
         <AuthorAttribution

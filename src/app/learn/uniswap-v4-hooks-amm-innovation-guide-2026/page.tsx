@@ -667,6 +667,22 @@ export default function UniswapV4HooksAmmInnovationGuide2026() {
           </p>
         </div>
       </article>
-    </>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Uniswap V4 Hooks Amm Innovation Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/uniswap-v4-hooks-amm-innovation-guide-2026"
+            })
+          }}
+        />
+      </>
   );
 }

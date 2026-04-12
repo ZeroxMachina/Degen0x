@@ -259,6 +259,22 @@ export default function Hip3HyperliquidPermissionlessPerpsGuide2026() {
           </p>
         </div>
       </article>
-    </>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Hip 3 Hyperliquid Permissionless Perps Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/hip-3-hyperliquid-permissionless-perps-guide-2026"
+            })
+          }}
+        />
+      </>
   );
 }

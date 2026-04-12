@@ -355,6 +355,21 @@ export default function CryptoPairCorrelationFinder() {
           </ul>
         </nav>
 
-</article>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Crypto Pair Correlation Finder",
+              "url": "https://degen0x.com/tools/crypto-pair-correlation-finder",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
   );
 }

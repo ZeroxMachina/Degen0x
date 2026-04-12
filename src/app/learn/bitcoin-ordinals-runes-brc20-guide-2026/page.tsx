@@ -786,6 +786,22 @@ export default function BitcoinOrdinalRunesPage() {
             <strong>Last Updated:</strong> April 2, 2026. Bitcoin, Ordinals, and Runes markets are highly dynamic. Always verify current prices, liquidity, and regulatory status before investing or trading.
           </p>
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Bitcoin Ordinals Runes Brc20 Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/bitcoin-ordinals-runes-brc20-guide-2026"
+            })
+          }}
+        />
       </div>
 
         <AuthorAttribution

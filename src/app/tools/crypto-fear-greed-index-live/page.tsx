@@ -550,6 +550,21 @@ export default function CryptoFearGreedIndexPage() {
           </div>
         </div>
       </section>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Crypto Fear Greed Index Live",
+              "url": "https://degen0x.com/tools/crypto-fear-greed-index-live",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

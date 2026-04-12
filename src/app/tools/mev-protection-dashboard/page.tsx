@@ -308,6 +308,21 @@ export default function MEVProtectionDashboard() {
           <strong style={{ color: '#d29922' }}>⚠️ Disclaimer:</strong> This dashboard uses simulated data for educational purposes. MEV extraction amounts, attack frequencies, and protection effectiveness ratings are approximations. Always verify protection strategies independently. Not financial advice.
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Mev Protection Dashboard",
+              "url": "https://degen0x.com/tools/mev-protection-dashboard",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

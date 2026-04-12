@@ -82,6 +82,22 @@ export default function TriviaLeaderboardPage() {
           <div className="font-bold text-sm text-[var(--color-text)]">Your Degen Score</div>
           <div className="text-xs text-[var(--color-text-secondary)] mt-1">Rate your crypto knowledge</div>
         </Link>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Trivia Leaderboard",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/trivia-leaderboard"
+            })
+          }}
+        />
       </div>
     </main>
   );

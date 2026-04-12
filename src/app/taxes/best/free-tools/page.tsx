@@ -7,6 +7,12 @@ import FAQSection from "@/components/FAQSection";
 import { TAX_PRODUCTS } from "@/data/taxes";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { Product } from "@/lib/types";
+export const metadata: Metadata = {
+  title: "Free Tools — Crypto Tools",
+  description: "Explore Free Tools on degen0x. Free crypto tools and in-depth analysis.",
+  alternates: { canonical: "https://degen0x.com/taxes/best/free-tools" },
+};
+
 
 const freeToolProducts: Product[] = [
   {

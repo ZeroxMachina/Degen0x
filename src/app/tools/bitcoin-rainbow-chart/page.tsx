@@ -414,6 +414,21 @@ export default function BitcoinRainbowChart() {
           </ul>
         </nav>
 
-</article>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Bitcoin Rainbow Chart",
+              "url": "https://degen0x.com/tools/bitcoin-rainbow-chart",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
   );
 }

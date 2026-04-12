@@ -623,6 +623,21 @@ export default function StakingAPYPage() {
           <strong>⚠️ Disclaimer:</strong> APY rates are indicative and change constantly based on network conditions, market demand, and protocol parameters. Past yields are not indicative of future returns. Always verify current rates on the protocol's website before staking. Staking involves risk including loss of principal. This is not financial advice.
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Staking Apy",
+              "url": "https://degen0x.com/tools/staking-apy",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

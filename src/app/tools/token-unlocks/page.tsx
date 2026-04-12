@@ -836,6 +836,21 @@ export default function TokenUnlocksPage() {
           Disclaimer: This tool is for informational purposes. Vesting schedules and unlock dates are subject to change. Not financial advice.
         </p>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Token Unlocks",
+              "url": "https://degen0x.com/tools/token-unlocks",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   )
 }

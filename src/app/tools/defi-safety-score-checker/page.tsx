@@ -445,6 +445,21 @@ export default function DefiSafetyScoreChecker() {
           </ul>
         </nav>
 
-</article>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Defi Safety Score Checker",
+              "url": "https://degen0x.com/tools/defi-safety-score-checker",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
   );
 }

@@ -593,6 +593,22 @@ export default function LSTComparison() {
         </div>
       </div>
       <BackToTop />
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Solana Lst Comparison Marinade Jito Sanctum 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/solana-lst-comparison-marinade-jito-sanctum-2026"
+            })
+          }}
+        />
+      </div>
   );
 }

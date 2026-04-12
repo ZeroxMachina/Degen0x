@@ -815,6 +815,22 @@ export default function DeFiVaultsPage() {
             <strong>Questions or feedback?</strong> Join the degen0x community and discuss vault strategies with thousands of DeFi yield farmers.
           </p>
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Defi Vaults Automated Yield Strategies Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/defi-vaults-automated-yield-strategies-guide-2026"
+            })
+          }}
+        />
       </div>
 
         <AuthorAttribution

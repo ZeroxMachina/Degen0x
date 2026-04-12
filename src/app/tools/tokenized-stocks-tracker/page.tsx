@@ -775,6 +775,21 @@ export default function TokenizedStocksTrackerPage() {
           Read the Tokenized Stocks Guide →
         </Link>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Tokenized Stocks Tracker",
+              "url": "https://degen0x.com/tools/tokenized-stocks-tracker",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

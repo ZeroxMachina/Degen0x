@@ -201,7 +201,22 @@ export default function NewsFeedPage() {
                 </div>
               </div>
             </div>
-          </article>
+          
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "News Feed",
+              "url": "https://degen0x.com/tools/news-feed",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
         ))}
         {filtered.length === 0 && (
           <div className="text-center py-12 text-[var(--color-text-secondary)]">

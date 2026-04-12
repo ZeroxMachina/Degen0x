@@ -233,6 +233,21 @@ export default function TokenComparePage() {
       <p className="text-xs text-[var(--color-text-secondary)] mt-6 text-center">
         Data is for educational purposes only. Prices are simulated and may not reflect current market values. Always DYOR.
       </p>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Token Compare",
+              "url": "https://degen0x.com/tools/token-compare",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

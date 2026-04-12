@@ -415,6 +415,21 @@ export default function PortfolioAllocatorPage() {
         Cryptocurrency investments carry significant risk. Always do your own research (DYOR)
         and consult a qualified financial advisor before making investment decisions.
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Portfolio Allocator",
+              "url": "https://degen0x.com/tools/portfolio-allocator",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

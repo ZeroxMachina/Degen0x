@@ -382,6 +382,21 @@ export default function RiskAnalyzerPage() {
           This tool uses geometric Brownian motion Monte Carlo simulation with correlated asset returns. Expected returns and volatilities are based on historical crypto market data (2020-2025). Correlation matrices are derived from daily returns across asset classes. Results are for educational purposes only and do not constitute financial advice. Past performance does not guarantee future results. Crypto assets are highly volatile and you may lose your entire investment.
         </p>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Risk Analyzer",
+              "url": "https://degen0x.com/tools/risk-analyzer",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

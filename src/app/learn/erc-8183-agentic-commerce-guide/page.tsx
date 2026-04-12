@@ -1047,7 +1047,23 @@ export default function ERC8183GuidePage() {
           section="learn"
         />
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Erc 8183 Agentic Commerce Guide",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/erc-8183-agentic-commerce-guide"
+            })
+          }}
+        />
+      </div>
 
   );
 }

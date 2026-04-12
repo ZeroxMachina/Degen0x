@@ -823,7 +823,22 @@ const TokenLaunchRadar = () => {
       <div className="p-4 rounded-lg bg-[#161b22] border border-[#30363d] text-center text-[#8b949e] text-sm">
         <p>Data is for demonstration purposes only. Always conduct your own research (DYOR) before participating in any token launch.</p>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Token Launch Radar",
+              "url": "https://degen0x.com/tools/token-launch-radar",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 };
 

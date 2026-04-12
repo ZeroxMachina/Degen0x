@@ -11,7 +11,14 @@ export const metadata: Metadata = {
   title: "degen0x en Français — Comparer Exchanges, Wallets et DeFi",
   description:
     "degen0x est votre guide de confiance pour les cryptomonnaies en français. Comparez les exchanges, wallets et protocoles DeFi. Avis d'experts, outils interactifs et guides complets pour investir dans la crypto.",
-  alternates: { canonical: "https://degen0x.com/fr" },
+  alternates: {
+    canonical: "https://degen0x.com/fr",
+    languages: {
+      "fr": "https://degen0x.com/fr",
+      "de": "https://degen0x.com/de",
+      "en": "https://degen0x.com",
+    },
+  },
   openGraph: {
     title: "degen0x en Français — Votre Guide Crypto de Confiance",
     description: "Comparez les meilleures plateformes d'échange, wallets et protocoles DeFi. Tout en français, fait pour les investisseurs francophones.",

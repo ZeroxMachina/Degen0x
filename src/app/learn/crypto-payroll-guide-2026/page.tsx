@@ -255,6 +255,22 @@ export default function CryptoPayrollGuide() {
         <div style={{ backgroundColor: S.surface, border: `1px solid ${S.yellow}`, borderRadius: "8px", padding: "1.5rem", marginBottom: "2rem" }}>
           <p style={{ color: S.text, lineHeight: "1.7" }}>⚠️ <strong>Disclaimer:</strong> This guide is for informational purposes only. It is not financial or tax advice. Crypto payroll tax rules vary by jurisdiction. Consult a tax professional for guidance specific to your situation.</p>
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Crypto Payroll Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/crypto-payroll-guide-2026"
+            })
+          }}
+        />
       </div>
       <BackToTop />
     </main>

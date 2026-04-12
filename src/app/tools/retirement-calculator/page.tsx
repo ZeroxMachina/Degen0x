@@ -762,6 +762,21 @@ export default function RetirementCalculatorPage() {
           <strong>⚠️ Disclaimer:</strong> This calculator is for educational purposes only and does not constitute financial advice. Past performance is not indicative of future results. Crypto assets are highly volatile and subject to regulatory changes. Projected returns are speculative and may not materialize. The 4% rule is a general guideline and doesn't guarantee your portfolio will last through retirement. Always do your own research, diversify your investments, and consult with a qualified financial advisor or tax professional before making investment decisions.
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Retirement Calculator",
+              "url": "https://degen0x.com/tools/retirement-calculator",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

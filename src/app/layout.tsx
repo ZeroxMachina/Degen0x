@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "degen0x â Crypto Tools, Research & Guides",
+    default: "degen0x — Crypto Tools, Research & Guides",
     template: "%s | degen0x",
   },
   description: "Free crypto tools, in-depth guides, exchange comparisons, wallet reviews, and DeFi research. Built for degens, by degens.",
@@ -32,20 +32,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} â Crypto Tools, Research & Guides`,
+    title: `${SITE_NAME} — Crypto Tools, Research & Guides`,
     description: SITE_DESCRIPTION,
     images: [
       {
         url: `${SITE_URL}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: `${SITE_NAME} â Crypto Tools, Research & Guides`,
+        alt: `${SITE_NAME} — Crypto Tools, Research & Guides`,
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@degen0x",
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
     images: [`${SITE_URL}/og-image.png`],

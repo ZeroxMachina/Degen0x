@@ -949,7 +949,23 @@ export default function CryptoMarketMakingPage() {
 
         <div style={pageStyles.disclaimer}>
           <strong>Disclaimer:</strong> This guide is for educational purposes only. Market making and liquidity provision involve significant risks including impermanent loss, smart contract vulnerabilities, market manipulation, and regulatory uncertainty. Past performance does not guarantee future results. Always conduct your own research and consult qualified financial advisors before deploying capital. Crypto is a nascent, volatile market. Never invest more than you can afford to lose.
-        </div>
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Crypto Market Making Liquidity Provision Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/crypto-market-making-liquidity-provision-guide-2026"
+            })
+          }}
+        />
+      </div>
 
         <section style={pageStyles.relatedSection}>
           <h2 style={pageStyles.h2}>Related Articles</h2>

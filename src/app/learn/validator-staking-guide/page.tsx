@@ -217,6 +217,22 @@ export default function ValidatorStakingGuide() {
           <strong style={{ color: '#d29922' }}>⚠️ Disclaimer:</strong> Staking involves risk including slashing, smart contract vulnerabilities, and price volatility. APR figures are approximate and change frequently. This guide is for educational purposes only and does not constitute financial advice. Always do your own research.
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Validator Staking Guide",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/validator-staking-guide"
+            })
+          }}
+        />
+      </div>
   );
 }

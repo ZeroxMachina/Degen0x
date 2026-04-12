@@ -894,7 +894,23 @@ export default function CryptoCustodyGuidePage() {
               <h3 className="font-semibold text-[#58a6ff] mb-2">Crypto Security Masterclass</h3>
               <p className="text-sm text-[#8b949e]">Complete security framework for digital assets</p>
             </Link>
-          </div>
+          
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Crypto Custody Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/crypto-custody-guide-2026"
+            })
+          }}
+        />
+      </div>
         </section>
       </section>
 

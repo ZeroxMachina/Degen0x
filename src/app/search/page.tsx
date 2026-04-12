@@ -1,5 +1,13 @@
 import { Suspense } from "react";
 import SearchContent from "./SearchContent";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Search — Crypto Tools",
+  description: "Explore Search on degen0x. Free crypto tools and in-depth analysis.",
+  alternates: { canonical: "https://degen0x.com/search" },
+};
+
 
 export default function SearchPage() {
   return (

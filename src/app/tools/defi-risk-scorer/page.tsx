@@ -792,6 +792,21 @@ export default function DeFiRiskScorer() {
           <p>Risk assessments are based on demo data and on-chain metrics. Always conduct your own research before engaging with DeFi protocols.</p>
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Defi Risk Scorer",
+              "url": "https://degen0x.com/tools/defi-risk-scorer",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

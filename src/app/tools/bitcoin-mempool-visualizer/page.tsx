@@ -448,6 +448,21 @@ export default function BitcoinMempoolVisualizer() {
           </ul>
         </nav>
 
-</article>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Bitcoin Mempool Visualizer",
+              "url": "https://degen0x.com/tools/bitcoin-mempool-visualizer",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
   );
 }

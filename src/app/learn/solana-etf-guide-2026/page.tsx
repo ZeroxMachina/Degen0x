@@ -286,6 +286,22 @@ export default function SolanaETFGuide() {
         <div style={{ backgroundColor: S.surface, border: `1px solid ${S.yellow}`, borderRadius: "8px", padding: "1.5rem", marginBottom: "2rem" }}>
           <p style={{ color: S.text, lineHeight: "1.7" }}>⚠️ <strong>Disclaimer:</strong> This guide is for informational purposes only. It is not financial advice. ETF availability, fees, and features may change. Always do your own research before making investment decisions.</p>
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Solana Etf Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/solana-etf-guide-2026"
+            })
+          }}
+        />
       </div>
       <BackToTop />
     </main>

@@ -481,6 +481,21 @@ export default function DCABacktestTool() {
           </ul>
         </nav>
 
-</article>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Dollar Cost Average Backtest Tool",
+              "url": "https://degen0x.com/tools/dollar-cost-average-backtest-tool",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
   );
 }

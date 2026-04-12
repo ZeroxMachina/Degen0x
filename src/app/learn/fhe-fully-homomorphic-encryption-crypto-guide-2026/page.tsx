@@ -925,6 +925,22 @@ export default function FHECryptoGuidePage() {
           of April 2026; technology, throughput, and capabilities are advancing rapidly and may differ from future
           deployments.
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Fhe Fully Homomorphic Encryption Crypto Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/fhe-fully-homomorphic-encryption-crypto-guide-2026"
+            })
+          }}
+        />
       </div>
 
         <AuthorAttribution

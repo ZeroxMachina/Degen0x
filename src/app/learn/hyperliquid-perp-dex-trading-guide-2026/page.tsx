@@ -1022,6 +1022,22 @@ export default function HyperliquidPage() {
         <p style={{ ...pStyle, marginTop: '40px', color: '#8b949e' }}>
           Last updated: April 3, 2026 | Share this guide or request updates on Twitter @degen0x
         </p>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Hyperliquid Perp Dex Trading Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/hyperliquid-perp-dex-trading-guide-2026"
+            })
+          }}
+        />
       </div>
           <BackToTop />
     </main>

@@ -723,6 +723,21 @@ export default function TradingJournalPage() {
             </Link>
           ))}
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Trading Journal",
+              "url": "https://degen0x.com/tools/trading-journal",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
       </div>
     </main>
   );

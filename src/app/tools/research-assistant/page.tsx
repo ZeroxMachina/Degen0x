@@ -310,6 +310,21 @@ export default function ResearchAssistantPage() {
           <p>Enter a token symbol above or click a quick button to generate a comprehensive research report.</p>
         </div>
       )}
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Research Assistant",
+              "url": "https://degen0x.com/tools/research-assistant",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

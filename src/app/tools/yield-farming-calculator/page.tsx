@@ -837,7 +837,22 @@ export default function YieldFarmingCalculatorPage() {
           <strong>⚠️ Disclaimer:</strong> This calculator provides educational estimates based on your inputs. Actual returns depend on market conditions, gas fees, slippage, and protocol changes. Past performance is not indicative of future results. Yield farming carries significant risks including smart contract vulnerabilities, impermanent loss, and market volatility. Always do thorough research, verify audits, and never invest more than you can afford to lose. This is not financial advice.
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Yield Farming Calculator",
+              "url": "https://degen0x.com/tools/yield-farming-calculator",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }
 

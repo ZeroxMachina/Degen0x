@@ -491,6 +491,21 @@ export default function LendingComparisonPage() {
             </div>
           </div>
         </section>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Lending Comparison",
+              "url": "https://degen0x.com/tools/lending-comparison",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
       </div>
     </>
   );

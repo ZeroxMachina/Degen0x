@@ -927,6 +927,22 @@ export default function X402ProtocolPage() {
         <div style={pageStyles.disclaimer}>
           <strong>Disclaimer:</strong> This guide is educational only and does not constitute financial, legal, or investment advice. x402, cryptocurrency, and blockchain technology carry risks including smart contract vulnerabilities, market volatility, and regulatory uncertainty. Always conduct your own research, consult relevant experts, and start with small transactions before deploying systems at scale. The information presented reflects the protocol as of April 2026 and may change as the ecosystem evolves.
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "X402 Protocol Ai Agent Payments Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/x402-protocol-ai-agent-payments-guide-2026"
+            })
+          }}
+        />
       </div>
 
         <AuthorAttribution

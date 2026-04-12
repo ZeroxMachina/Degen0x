@@ -735,7 +735,23 @@ export default function CryptoPointsPage() {
           section="learn"
         />
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Crypto Points Programs Pre Token Loyalty Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/crypto-points-programs-pre-token-loyalty-guide-2026"
+            })
+          }}
+        />
+      </div>
 
   );
 }

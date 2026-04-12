@@ -436,6 +436,21 @@ export default function DominanceTrackerPage() {
             </p>
           </div>
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Dominance Tracker",
+              "url": "https://degen0x.com/tools/dominance-tracker",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
       </div>
     </main>
   );

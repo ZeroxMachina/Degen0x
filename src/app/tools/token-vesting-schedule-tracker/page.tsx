@@ -335,6 +335,21 @@ export default function TokenVestingScheduleTracker() {
           </ul>
         </div>
       </div>
-    </article>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Token Vesting Schedule Tracker",
+              "url": "https://degen0x.com/tools/token-vesting-schedule-tracker",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
   );
 }

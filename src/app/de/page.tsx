@@ -12,7 +12,14 @@ export const metadata: Metadata = {
   title: "degen0x auf Deutsch — Krypto Exchanges, Wallets & DeFi vergleichen",
   description:
     "degen0x ist Ihr vertrauenswürdiger Krypto-Ratgeber auf Deutsch. Vergleichen Sie Exchanges, Wallets und DeFi-Protokolle. Expertenbewertungen, kostenlose Tools und umfassende Guides für intelligente Krypto-Investments im DACH-Raum.",
-  alternates: { canonical: "https://degen0x.com/de" },
+  alternates: {
+    canonical: "https://degen0x.com/de",
+    languages: {
+      "fr": "https://degen0x.com/fr",
+      "de": "https://degen0x.com/de",
+      "en": "https://degen0x.com",
+    },
+  },
   openGraph: {
     title: "degen0x auf Deutsch — Ihr Krypto-Ratgeber für den DACH-Raum",
     description:

@@ -650,7 +650,23 @@ export default function YieldTokenizationGuide() {
               <strong>Disclaimer:</strong> This guide is for informational purposes only. It is not financial advice. Yield tokenization involves complex smart contracts and market risks. Always conduct your own research, verify smart contract audits, and only invest capital you can afford to lose.
             </p>
           </div>
-        </div>
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Yield Tokenization Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/yield-tokenization-guide-2026"
+            })
+          }}
+        />
+      </div>
       </main>
     </>
   );

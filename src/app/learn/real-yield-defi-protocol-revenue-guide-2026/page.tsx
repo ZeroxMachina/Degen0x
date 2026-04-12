@@ -774,6 +774,22 @@ export default function RealYieldDeFiGuidePage() {
             ⚠️ This guide is for informational purposes only. It is not financial advice. DeFi protocols carry smart contract risk, market risk, and regulatory risk. Always do your own research before depositing funds into any protocol. Past yields do not guarantee future returns.
           </p>
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Real Yield Defi Protocol Revenue Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/real-yield-defi-protocol-revenue-guide-2026"
+            })
+          }}
+        />
       </div>
 
         <AuthorAttribution

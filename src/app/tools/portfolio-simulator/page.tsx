@@ -1062,6 +1062,21 @@ export default function PortfolioSimulatorPage() {
         <meta name='description' content='Design and simulate your crypto portfolio with Monte Carlo analysis, risk metrics, and rebalancing strategies.' />
         <meta name='keywords' content='crypto portfolio simulator, portfolio analysis, monte carlo simulation, crypto risk analysis' />
       </head>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Portfolio Simulator",
+              "url": "https://degen0x.com/tools/portfolio-simulator",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

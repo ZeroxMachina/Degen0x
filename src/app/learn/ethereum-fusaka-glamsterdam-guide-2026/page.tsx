@@ -631,6 +631,22 @@ export default function FusakaGlamsterdamGuide() {
           <BackToTop />
         </div>
       </main>
-    </>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Ethereum Fusaka Glamsterdam Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/ethereum-fusaka-glamsterdam-guide-2026"
+            })
+          }}
+        />
+      </>
   );
 }

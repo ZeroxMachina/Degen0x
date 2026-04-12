@@ -409,6 +409,21 @@ export default function AltcoinSeasonIndex() {
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered financial advice. Alt season cycles are historical patterns—not guaranteed to repeat identically. Past cycles don&apos;t guarantee future performance. Altcoins carry extreme risk and volatility. Always do your own research (DYOR), diversify, and never invest more than you can afford to lose. degen0x does not endorse any specific altcoin or investment strategy.
         </div>
       </div>
-    </article>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Altcoin Season Index",
+              "url": "https://degen0x.com/tools/altcoin-season-index",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
   );
 }

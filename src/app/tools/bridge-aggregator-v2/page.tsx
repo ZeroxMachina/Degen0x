@@ -569,6 +569,21 @@ export default function BridgeAggregatorV2Page() {
       <p className="text-xs text-[var(--color-text-secondary)] mt-12 text-center">
         All data is simulated for educational purposes. Actual bridge costs and times may vary. Always verify rates before bridging.
       </p>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Bridge Aggregator V2",
+              "url": "https://degen0x.com/tools/bridge-aggregator-v2",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

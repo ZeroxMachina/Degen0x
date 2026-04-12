@@ -958,6 +958,22 @@ export default function LayerZeroProtocolPage() {
         <div style={pageStyles.disclaimer}>
           <strong>Disclaimer:</strong> This guide is educational only and does not constitute financial, legal, or investment advice. LayerZero, cross-chain protocols, and blockchain technology carry risks including smart contract vulnerabilities, DVN misbehavior, regulatory uncertainty, and chain-specific failures. Always conduct your own research, verify smart contract audits, test with small amounts before scaling, and consult relevant experts. The information reflects LayerZero as of April 2026 and may change as the ecosystem evolves.
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Layerzero Omnichain Interoperability Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/layerzero-omnichain-interoperability-guide-2026"
+            })
+          }}
+        />
       </div>
 
         <AuthorAttribution

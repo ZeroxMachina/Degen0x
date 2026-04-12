@@ -766,6 +766,22 @@ export default function TokenizedTreasuryBillsGuide() {
           <strong style={{ color: "#e6edf3" }}>Disclaimer:</strong> This guide is educational only and not investment advice. Tokenized Treasury bills carry risks including smart contract vulnerabilities, regulatory changes, and liquidity constraints. Always conduct your own research and consult with qualified financial advisors before investing. Past performance and yield rates are not guarantees of future results. Cryptocurrency and tokenized assets are highly volatile and may not be suitable for all investors.
         </div>
       </main>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Tokenized Treasury Bills Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/tokenized-treasury-bills-guide-2026"
+            })
+          }}
+        />
+      </div>
   );
 }

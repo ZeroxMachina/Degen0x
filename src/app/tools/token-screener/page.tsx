@@ -546,6 +546,21 @@ export default function TokenScreenerPage() {
           Combine filters to build a personalized watchlist and track the sectors you care about.
         </p>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Token Screener",
+              "url": "https://degen0x.com/tools/token-screener",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

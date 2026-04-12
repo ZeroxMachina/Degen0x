@@ -1033,6 +1033,22 @@ export default function EthereumGasFeesPage() {
             and verify all on-chain data independently.
           </p>
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Ethereum Gas Fees Optimization Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/ethereum-gas-fees-optimization-guide-2026"
+            })
+          }}
+        />
       </div>
 
         <AuthorAttribution

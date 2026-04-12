@@ -922,6 +922,22 @@ export default function RestakingWarsGuide() {
           and consult with a financial advisor before deploying capital. This guide reflects conditions as of April
           2026; restaking economics, protocol designs, and market dynamics evolve rapidly.
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Restaking Wars Eigenlayer Symbiotic Karak Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/restaking-wars-eigenlayer-symbiotic-karak-guide-2026"
+            })
+          }}
+        />
       </div>
     </main>
   );

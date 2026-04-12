@@ -308,6 +308,21 @@ export default function GasTrackerPage() {
         select option { background: #161b22; color: #e6edf3; }
         button:hover { opacity: 0.85; }
       `}</style>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Gas Tracker",
+              "url": "https://degen0x.com/tools/gas-tracker",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

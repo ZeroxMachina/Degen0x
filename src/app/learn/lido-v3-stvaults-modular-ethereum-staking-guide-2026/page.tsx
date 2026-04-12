@@ -677,7 +677,23 @@ export default function LidoV3Guide() {
           section="learn"
         />
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Lido V3 Stvaults Modular Ethereum Staking Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/lido-v3-stvaults-modular-ethereum-staking-guide-2026"
+            })
+          }}
+        />
+      </div>
 
   );
 }

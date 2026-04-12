@@ -476,6 +476,21 @@ export default function CryptoHeatmapLive() {
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered financial advice. Cryptocurrency is volatile and carries significant risk. Heatmaps show price performance, not value. Always do your own research (DYOR) and consult a qualified financial advisor before making investment decisions. degen0x does not endorse any specific investment or protocol.
         </div>
       </div>
-    </article>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Crypto Heatmap Live",
+              "url": "https://degen0x.com/tools/crypto-heatmap-live",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </article>
   );
 }

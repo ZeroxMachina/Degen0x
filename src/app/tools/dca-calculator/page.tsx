@@ -667,6 +667,21 @@ export default function DCACalculatorPage() {
           <strong>⚠️ Disclaimer:</strong> This calculator uses simulated historical price data for educational purposes. Past performance is not indicative of future results. DCA does not guarantee profits or protect against losses in declining markets. This is not financial advice. Always do your own research and consult with a financial advisor before making investment decisions.
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Dca Calculator",
+              "url": "https://degen0x.com/tools/dca-calculator",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

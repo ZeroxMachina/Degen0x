@@ -575,7 +575,23 @@ export default function AaveV4GuidePage() {
           <p style={{ margin: 0, fontSize: 13, color: "#6e7681", lineHeight: 1.6 }}>
             ⚠️ <strong style={{ color: "#8b949e" }}>Disclaimer:</strong> This content is for educational purposes only and does not constitute financial or investment advice. Cryptocurrency and DeFi protocols involve significant risk. Always conduct your own research and consult a qualified financial advisor before making any investment decisions. Data sourced from Aave documentation, DefiLlama, and CoinGecko — verified March 2026 but subject to change.
           </p>
-        </div>
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Aave V4 Guide",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/aave-v4-guide"
+            })
+          }}
+        />
+      </div>
 
       </main>
       <BackToTop />

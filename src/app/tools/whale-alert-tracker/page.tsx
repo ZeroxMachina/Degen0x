@@ -560,6 +560,21 @@ export default function WhaleAlertTracker() {
           <ExternalLink size={12} className="inline" />
         </p>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Whale Alert Tracker",
+              "url": "https://degen0x.com/tools/whale-alert-tracker",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

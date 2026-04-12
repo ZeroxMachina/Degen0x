@@ -769,6 +769,21 @@ export default function PerpFundingPage() {
           Data updates every 8 hours. Funding rates are subject to change. Always verify on exchange before trading. Not financial advice.
         </div>
       </div>
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Perp Funding",
+              "url": "https://degen0x.com/tools/perp-funding",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+      </div>
   );
 }

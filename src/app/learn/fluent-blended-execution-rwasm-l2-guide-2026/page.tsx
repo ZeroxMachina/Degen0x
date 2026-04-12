@@ -143,6 +143,22 @@ export default function FluentBlendedExecutionL2Guide() {
           </p>
         </div>
       </article>
-    </>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Fluent Blended Execution Rwasm L2 Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/fluent-blended-execution-rwasm-l2-guide-2026"
+            })
+          }}
+        />
+      </>
   );
 }

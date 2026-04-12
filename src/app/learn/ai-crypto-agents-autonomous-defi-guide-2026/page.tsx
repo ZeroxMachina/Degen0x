@@ -764,6 +764,22 @@ export default function AICryptoAgentsPage() {
         <div style={{ ...infoBoxStyle, marginTop: 40, borderColor: '#f97316', borderLeftWidth: 4, borderLeftStyle: 'solid' }}>
           <strong style={{ color: '#f97316' }}>Disclaimer:</strong> This guide is educational content and not financial advice. AI agents carry substantial technical and financial risks. Past performance does not guarantee future results. Autonomous trading can result in total capital loss. Regulatory frameworks around agents remain uncertain. Always conduct independent research, understand smart contract risks, and deploy agents with capital you can afford to lose. The author makes no representations about the accuracy or completeness of information in this guide.
         </div>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Ai Crypto Agents Autonomous Defi Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/ai-crypto-agents-autonomous-defi-guide-2026"
+            })
+          }}
+        />
       </div>
 
         <AuthorAttribution

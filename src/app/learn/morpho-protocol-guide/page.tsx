@@ -548,7 +548,23 @@ export default function MorphoProtocolGuidePage() {
             <div key={i} style={{ borderBottom: "1px solid #21262d", paddingBottom: 20, marginBottom: 20 }}>
               <h3 style={{ fontSize: 17, fontWeight: 600, color: "#e6edf3", marginBottom: 8 }}>{item.q}</h3>
               <p style={{ color: "#8b949e", lineHeight: 1.7, margin: 0, fontSize: 15 }}>{item.a}</p>
-            </div>
+            
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Morpho Protocol Guide",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/morpho-protocol-guide"
+            })
+          }}
+        />
+      </div>
           ))}
         </section>
 

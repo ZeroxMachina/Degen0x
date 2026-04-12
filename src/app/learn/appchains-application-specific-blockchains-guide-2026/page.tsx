@@ -845,6 +845,22 @@ export default function AppChainsPage() {
             </Link>
           </li>
         </ul>
+      
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Appchains Application Specific Blockchains Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/appchains-application-specific-blockchains-guide-2026"
+            })
+          }}
+        />
       </div>
           <BackToTop />
     </main>

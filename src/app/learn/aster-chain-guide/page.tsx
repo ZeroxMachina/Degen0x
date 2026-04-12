@@ -571,7 +571,23 @@ export default function AsterChainGuidePage() {
           <p style={{ margin: 0, fontSize: 13, color: "#6e7681", lineHeight: 1.6 }}>
             ⚠️ <strong style={{ color: "#8b949e" }}>Disclaimer:</strong> This content is for educational purposes only and does not constitute financial or investment advice. Perpetual derivatives involve substantial risk of loss, including total loss of capital. Aster Chain is a new Layer-1 blockchain and carries execution risk. Always conduct your own research, start with small position sizes, and consult a qualified financial advisor before trading. Data sourced from Aster Chain documentation, DefiLlama, and on-chain analytics — verified March 2026 but subject to change.
           </p>
-        </div>
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Aster Chain Guide",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/aster-chain-guide"
+            })
+          }}
+        />
+      </div>
 
       </main>
     </>

@@ -1091,6 +1091,22 @@ export default function TariffsTradeWarGuide() {
       </div>
 
       <StructuredData data={schema} />
-    </div>
+    
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Tariffs Trade War Crypto Impact Guide 2026",
+              "author": { "@type": "Organization", "name": "degen0x" },
+              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
+              "datePublished": "2026-04-01",
+              "dateModified": "2026-04-12",
+              "mainEntityOfPage": "https://degen0x.com/learn/tariffs-trade-war-crypto-impact-guide-2026"
+            })
+          }}
+        />
+      </div>
   );
 }
