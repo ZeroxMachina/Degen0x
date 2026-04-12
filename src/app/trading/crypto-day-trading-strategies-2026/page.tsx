@@ -8,12 +8,11 @@ export const metadata: Metadata = {
   description: 'Day trading strategies: scalping (1-5min, $10-100/trade), range trading ($1K support/resistance), breakout (volume confirmation), momentum (80+ RSI). Risk management: 1-2% rule.',
   keywords: ['crypto day trading strategies', 'scalping strategy', 'range trading', 'breakout trading', 'momentum trading', 'technical analysis'],
   openGraph: { type: 'article', title: 'Crypto Day Trading Strategies 2026', description: 'Scalping, range, breakout, momentum strategies with risk management', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/trading/crypto-day-trading-strategies-2026', images: [{ url: 'https://degen0x.com/og-trading.svg', width: 1200, height: 630, alt: 'Day Trading Strategies' }] },
-  twitter: { card: 'summary_large_image', title: 'Day Trading Strategies', description: 'Scalping, range, breakout, momentum', image: 'https://degen0x.com/og-trading.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'Day Trading Strategies', description: 'Scalping, range, breakout, momentum', image: 'https://degen0x.com/og-trading.svg' },
   alternates: {
     canonical: 'https://degen0x.com/trading/crypto-day-trading-strategies-2026',
-  };
-const structuredData = {
+  }
+};export const const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Crypto Day Trading Strategies 2026: Scalping, Range, Breakout, Momentum Trading Guide',
@@ -34,7 +33,6 @@ const structuredData = {
     ]
   }
 };
-
 export default function DayTradingStrategies2026() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #06b6d4', borderLeft: '3px solid #06b6d4', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -46,8 +44,7 @@ export default function DayTradingStrategies2026() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-
+  }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

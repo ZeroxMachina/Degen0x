@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bitcoin Price Prediction 2030 Models'
-  description: 'Expert Bitcoin price forecasts for 2030 using S2F, adoption curves, and macro cycles. Real data-driven models for long-term BTC valuation.'
-  keywords: 'bitcoin price 2030, BTC forecast, stock-to-flow model, bitcoin valuation 2030'
+  title: 'Bitcoin Price Prediction 2030 Models',
+  description: 'Expert Bitcoin price forecasts for 2030 using S2F, adoption curves, and macro cycles. Real data-driven models for long-term BTC valuation.',
+  keywords: 'bitcoin price 2030, BTC forecast, stock-to-flow model, bitcoin valuation 2030',
   openGraph: {
-    title: 'Bitcoin Price Prediction 2030 Models'
+    title: 'Bitcoin Price Prediction 2030 Models',
     description: 'Expert Bitcoin price forecasts for 2030 using S2F, adoption curves, and macro cycles.'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/long-term/bitcoin-price-prediction-2030'

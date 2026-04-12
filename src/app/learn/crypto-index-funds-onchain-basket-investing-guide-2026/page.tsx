@@ -47,11 +47,10 @@ export const metadata: Metadata = {
     description: 'Master crypto index funds, on-chain baskets, Index Coop products, and tokenized fund infrastructure.',
     creator: '@degen0x',
     images: ['https://degen0x.com/og-crypto-index-funds-2026.svg']
-  }
-,
-  alternates: {
+  },  alternates: {
     canonical: 'https://degen0x.com/learn/crypto-index-funds-onchain-basket-investing-guide-2026',
-  };
+  }
+};
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -91,8 +90,7 @@ const structuredData = {
       }
     ]
   }
-};
-
+}
 const h1Style: React.CSSProperties = { fontSize: 36, fontWeight: 800, marginBottom: 16, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1.2 };
 const h2Style: React.CSSProperties = { fontSize: 24, fontWeight: 700, marginTop: 40, marginBottom: 16, color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12 };
 const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16, display: 'inline-block' };
@@ -127,8 +125,7 @@ export default function CryptoIndexFundsOnchainkBasketInvestingGuide2026() {
     padding: 20,
     marginBottom: 24,
     lineHeight: 1.8,
-  };
-
+  }
   const h1Style = {
     fontSize: 36,
     fontWeight: 800,
@@ -137,16 +134,14 @@ export default function CryptoIndexFundsOnchainkBasketInvestingGuide2026() {
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     backgroundClip: 'text',
-  };
-
+  }
   const h2Style = {
     fontSize: 24,
     fontWeight: 700,
     marginTop: 40,
     marginBottom: 16,
     color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12,
-  };
-
+  }
   const badgeStyle = {
     display: 'inline-block',
     padding: '6px 12px',
@@ -155,20 +150,17 @@ export default function CryptoIndexFundsOnchainkBasketInvestingGuide2026() {
     fontWeight: 600,
     marginRight: 8,
     marginBottom: 16,
-  };
-
+  }
   const linkStyle = {
     color: '#58a6ff',
     textDecoration: 'none',
-  };
-
+  }
   const tableStyle = {
     width: '100%',
     borderCollapse: 'collapse' as const,
     marginBottom: 24,
     fontSize: 14,
-  };
-
+  }
   const thStyle = {
     background: '#0d1117',
     border: '1px solid #30363d',
@@ -176,14 +168,12 @@ export default function CryptoIndexFundsOnchainkBasketInvestingGuide2026() {
     textAlign: 'left' as const,
     fontWeight: 700,
     color: '#e6edf3',
-  };
-
+  }
   const tdStyle = {
     border: '1px solid #30363d',
     padding: 12,
     color: '#8b949e',
-  };
-
+  }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

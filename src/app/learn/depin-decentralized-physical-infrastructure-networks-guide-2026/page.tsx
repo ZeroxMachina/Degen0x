@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "DePIN Networks: Decentralized Physical Infrastructure 2026"
-  description: "Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage infrastructure."
+  title: "DePIN Networks: Decentralized Physical Infrastructure 2026",
+  description: "Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage infrastructure.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/depin-decentralized-physical-infrastructure-networks-guide-2026'

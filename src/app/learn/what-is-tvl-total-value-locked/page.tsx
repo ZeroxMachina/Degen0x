@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "TVL (Total Value Locked): DeFi Metrics & Analysis 2026"
-  description: "Master TVL analysis for DeFi protocols. Learn how TVL metrics predict protocol success, identify opportunities, and evaluate DeFi ecosystem growth."
+  title: "TVL (Total Value Locked): DeFi Metrics & Analysis 2026",
+  description: "Master TVL analysis for DeFi protocols. Learn how TVL metrics predict protocol success, identify opportunities, and evaluate DeFi ecosystem growth.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-tvl-total-value-locked'

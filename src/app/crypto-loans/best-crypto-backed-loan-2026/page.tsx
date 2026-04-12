@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Compare crypto loans: Aave DeFi (3-5% rates), MakerDAO (borrow DAI), Nexo CeFi (up to $100k), BlockFi, Salt.',
   keywords: ['crypto loan', 'crypto backed loan', 'Aave loan', 'MakerDAO', 'Nexo lending', 'crypto LTV'],
   openGraph: { type: 'article', title: 'Best Crypto Loan 2026', description: 'Crypto loan comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/crypto-loans/best-crypto-backed-loan-2026', images: [{ url: 'https://degen0x.com/og-loans.svg', width: 1200, height: 630, alt: 'Crypto Loans' }] },
-  twitter: { card: 'summary_large_image', title: 'Crypto Loan 2026', description: 'Loan comparison' }
-,
+  twitter: { card: 'summary_large_image', title: 'Crypto Loan 2026', description: 'Loan comparison' },
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/best-crypto-backed-loan-2026',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Crypto Backed Loan 2026', description: 'Crypto loan comparison', image: 'https://degen0x.com/og-loans.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'What is crypto backed loan?', acceptedAnswer: { '@type': 'Answer', text: 'Deposit crypto as collateral, borrow fiat/stablecoin. Aave DeFi: borrow against holdings. Nexo CeFi: borrow cash up to $100k. Over-collateralized.' } }, { '@type': 'Question', name: 'Aave vs MakerDAO loans?', acceptedAnswer: { '@type': 'Answer', text: 'Aave: flexible (deposit any token, borrow any, rates vary). MakerDAO: deposit ETH, borrow DAI stablecoin only, fixed stability fee.' } }, { '@type': 'Question', name: 'What is LTV ratio?', acceptedAnswer: { '@type': 'Answer', text: 'Loan-to-Value. Borrow 50% ETH value = 50% LTV. Higher LTV = riskier (liquidation closer). Aave 60-80%, Nexo 50-90%.' } }, { '@type': 'Question', name: 'Why borrow crypto instead of selling?', acceptedAnswer: { '@type': 'Answer', text: 'Avoid tax event. Hold for long-term appreciation. Borrow fiat = liquidity without selling. Borrow costs 3-8% APY vs selling taxes.' } }, { '@type': 'Question', name: 'Auto-liquidation risk?', acceptedAnswer: { '@type': 'Answer', text: 'Collateral drops below LTV = liquidated. Lose collateral. Flash crashes trigger cascades. Always keep 20%+ buffer.' } }, { '@type': 'Question', name: 'Tax benefits of borrowing?', acceptedAnswer: { '@type': 'Answer', text: 'Borrowing not taxable (debt, not sale). Interest deductible if used for business. Hold forever if don\'t sell collateral.' } }] } };
 
 export default function BestCryptoBackedLoan() {
@@ -26,8 +27,7 @@ export default function BestCryptoBackedLoan() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'defi', t: 'DeFi Loans (Aave)' }, { id: 'cefi', t: 'CeFi Loans (Nexo)' }, { id: 'makerdao', t: 'MakerDAO' }, { id: 'mechanics', t: 'Loan Mechanics' }, { id: 'risks', t: 'Risks' }, { id: 'comparison', t: 'Comparison' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'defi', t: 'DeFi Loans (Aave)' }, { id: 'cefi', t: 'CeFi Loans (Nexo)' }, { id: 'makerdao', t: 'MakerDAO' }, { id: 'mechanics', t: 'Loan Mechanics' }, { id: 'risks', t: 'Risks' }, { id: 'comparison', t: 'Comparison' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

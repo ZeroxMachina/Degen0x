@@ -38,11 +38,10 @@ export const metadata: Metadata = {
     title: 'Crypto Prediction Markets Guide 2026',
     description: 'Master crypto prediction markets: Polymarket, Kalshi, trading strategies, regulation, and $18B+ monthly volume insights.',
     image: 'https://degen0x.com/og-prediction-markets-guide.svg'
-  }
-,
-  alternates: {
+  },  alternates: {
     canonical: 'https://degen0x.com/learn/crypto-prediction-markets-guide-2026',
-  };
+  }
+};
 const schemaData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],
@@ -111,8 +110,7 @@ const schemaData = {
       }
     }
   ]
-};
-
+}
 const containerStyle: React.CSSProperties = {
   maxWidth: '800px',
   margin: '0 auto',
@@ -120,8 +118,7 @@ const containerStyle: React.CSSProperties = {
   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   color: '#e6edf3',
   backgroundColor: '#0d1117'
-};
-
+}
 const breadcrumbStyle: React.CSSProperties = {
   display: 'flex',
   alignItems: 'center',
@@ -129,17 +126,14 @@ const breadcrumbStyle: React.CSSProperties = {
   fontSize: '14px',
   marginBottom: '24px',
   color: '#8b949e'
-};
-
+}
 const breadcrumbLinkStyle: React.CSSProperties = {
   color: '#58a6ff',
   textDecoration: 'none'
-};
-
+}
 const headerStyle: React.CSSProperties = {
   marginBottom: '32px'
-};
-
+}
 const h1Style: React.CSSProperties = {
   fontSize: '42px',
   fontWeight: '700',
@@ -149,8 +143,7 @@ const h1Style: React.CSSProperties = {
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
   backgroundClip: 'text'
-};
-
+}
 const badgeStyle: React.CSSProperties = {
   display: 'inline-block',
   backgroundColor: '#161b22',
@@ -162,14 +155,12 @@ const badgeStyle: React.CSSProperties = {
   fontWeight: '600',
   marginRight: '8px',
   marginBottom: '16px'
-};
-
+}
 const metaStyle: React.CSSProperties = {
   fontSize: '14px',
   color: '#8b949e',
   marginBottom: '24px'
-};
-
+}
 const h2Style: React.CSSProperties = {
   fontSize: '28px',
   fontWeight: '700',
@@ -177,22 +168,19 @@ const h2Style: React.CSSProperties = {
   color: '#e6edf3',
   borderBottom: '1px solid #30363d',
   paddingBottom: '12px'
-};
-
+}
 const h3Style: React.CSSProperties = {
   fontSize: '20px',
   fontWeight: '600',
   margin: '24px 0 12px 0',
   color: '#e6edf3'
-};
-
+}
 const pStyle: React.CSSProperties = {
   fontSize: '16px',
   lineHeight: '1.6',
   margin: '16px 0',
   color: '#e6edf3'
-};
-
+}
 const infoBoxStyle: React.CSSProperties = {
   backgroundColor: '#161b22',
   border: '1px solid #30363d',
@@ -200,28 +188,24 @@ const infoBoxStyle: React.CSSProperties = {
   padding: '20px',
   margin: '24px 0',
   borderLeft: '4px solid #6366f1'
-};
-
+}
 const ulStyle: React.CSSProperties = {
   margin: '16px 0',
   paddingLeft: '24px',
   fontSize: '16px',
   lineHeight: '1.6',
   color: '#e6edf3'
-};
-
+}
 const liStyle: React.CSSProperties = {
   margin: '8px 0'
-};
-
+}
 const tableStyle: React.CSSProperties = {
   width: '100%',
   borderCollapse: 'collapse',
   margin: '24px 0',
   backgroundColor: '#0d1117',
   border: '1px solid #30363d'
-};
-
+}
 const thStyle: React.CSSProperties = {
   backgroundColor: '#0d1117',
   border: '1px solid #30363d',
@@ -230,35 +214,30 @@ const thStyle: React.CSSProperties = {
   fontWeight: '600',
   color: '#58a6ff',
   fontSize: '14px'
-};
-
+}
 const tdStyle: React.CSSProperties = {
   border: '1px solid #30363d',
   padding: '12px',
   color: '#8b949e',
   fontSize: '14px'
-};
-
+}
 const tableWrapperStyle: React.CSSProperties = {
   overflowX: 'auto',
   WebkitOverflowScrolling: 'touch',
   marginTop: 20,
   marginBottom: 20,
-};
-
+}
 const highlightStyle: React.CSSProperties = {
   backgroundColor: '#161b22',
   padding: '2px 6px',
   borderRadius: '4px',
   color: '#6366f1',
   fontWeight: '500'
-};
-
+}
 const linkStyle: React.CSSProperties = {
   color: '#58a6ff',
   textDecoration: 'none'
-};
-
+}
 const tocStyle: React.CSSProperties = {
   backgroundColor: '#161b22',
   border: '1px solid #30363d',
@@ -266,42 +245,36 @@ const tocStyle: React.CSSProperties = {
   padding: '20px',
   margin: '32px 0',
   fontSize: '14px'
-};
-
+}
 const tocItemStyle: React.CSSProperties = {
   margin: '8px 0',
   paddingLeft: '16px'
-};
-
+}
 const faqItemStyle: React.CSSProperties = {
   backgroundColor: '#161b22',
   border: '1px solid #30363d',
   borderRadius: '12px',
   padding: '20px',
   marginBottom: '16px'
-};
-
+}
 const faqQuestionStyle: React.CSSProperties = {
   fontSize: '18px',
   fontWeight: '600',
   color: '#e6edf3',
   marginBottom: '12px'
-};
-
+}
 const faqAnswerStyle: React.CSSProperties = {
   fontSize: '16px',
   color: '#8b949e',
   lineHeight: '1.6'
-};
-
+}
 const internalLinksStyle: React.CSSProperties = {
   backgroundColor: '#161b22',
   border: '1px solid #30363d',
   borderRadius: '12px',
   padding: '20px',
   margin: '32px 0'
-};
-
+}
 export default function CryptoPredictionMarketsGuide() {
   return (
     <article id="top" style={containerStyle}>

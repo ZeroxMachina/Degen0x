@@ -5,14 +5,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DAO Legal Structure Guide 2026 | Wyoming LLC Marshall Islands'
-  description: 'DAO legal structures: Wyoming DAO LLC, Marshall Islands, Cayman Foundation, Swiss Association. Formation costs, liability, tax treatment, Ooki lawsuit implications.'
-  keywords: ['DAO legal structure', 'Wyoming DAO LLC', 'Marshall Islands', 'DAO formation', 'member liability']
+  title: 'DAO Legal Structure Guide 2026 | Wyoming LLC Marshall Islands',
+  description: 'DAO legal structures: Wyoming DAO LLC, Marshall Islands, Cayman Foundation, Swiss Association. Formation costs, liability, tax treatment, Ooki lawsuit implications.',
+  keywords: ['DAO legal structure', 'Wyoming DAO LLC', 'Marshall Islands', 'DAO formation', 'member liability'],
   openGraph: {
-    title: 'DAO Legal Structure Guide 2026'
-    description: 'Complete DAO legal structures: Wyoming, Marshall Islands, Cayman, Swiss. Formation & liability.'
+    title: 'DAO Legal Structure Guide 2026',
+    description: 'Complete DAO legal structures: Wyoming, Marshall Islands, Cayman, Swiss. Formation & liability.',
     image: 'https://degen0x.com/og-web3-business.svg'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/dao-legal-structure-guide'

@@ -9,10 +9,9 @@ export const metadata: Metadata = {
   keywords: ['proof of work vs proof of stake', 'PoW vs PoS', 'blockchain consensus', 'bitcoin vs ethereum', 'energy consumption crypto'],
   openGraph: { type: 'article', title: 'Proof of Work vs Proof of Stake', description: 'PoW vs PoS comparison: energy, security, decentralization', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/compare/proof-of-work-vs-proof-of-stake', images: [{ url: 'https://degen0x.com/og-compare.svg', width: 1200, height: 630, alt: 'PoW vs PoS' }] },
   twitter: { card: 'summary_large_image', title: 'PoW vs PoS Comparison', description: 'Bitcoin energy 150 TWh vs Ethereum 0.01 TWh', image: 'https://degen0x.com/og-compare.svg' }
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/proof-of-work-vs-proof-of-stake',
-  };
+  }
 },
 const structuredData = {
   '@context': 'https://schema.org',
@@ -34,8 +33,7 @@ const structuredData = {
       { '@type': 'Question', name: 'Can Ethereum PoS be attacked?', acceptedAnswer: { '@type': 'Answer', text: 'Ethereum 2.0 (PoS) validators: 38M ETH staked (31% of supply), worth $105B. To control network: buy 51% = $80B+ capture majority of ETH (impossible without crashing price). Even if succeed: slashing penalizes attacker (loses capital). Safer than PoW ($50B hardware cost recoverable.' } }
     ]
   }
-};
-
+}
 export default function ProofOfWorkVsProofOfStake() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #58a6ff', borderLeft: '3px solid #58a6ff', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -47,8 +45,7 @@ export default function ProofOfWorkVsProofOfStake() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-
+  }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

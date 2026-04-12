@@ -5,14 +5,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty Building'
-  description: 'Build multi-generational crypto wealth: BTC accumulation ($0.01→$100K history), trust structures, family office setup, estate planning, tax-efficient transfer.'
-  keywords: ['generational wealth', 'bitcoin dynasty', 'family office', 'estate planning', 'crypto inheritance']
+  title: 'Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty Building',
+  description: 'Build multi-generational crypto wealth: BTC accumulation ($0.01→$100K history), trust structures, family office setup, estate planning, tax-efficient transfer.',
+  keywords: ['generational wealth', 'bitcoin dynasty', 'family office', 'estate planning', 'crypto inheritance'],
   openGraph: {
-    title: 'Crypto Generational Wealth Guide 2026'
-    description: 'Build lasting crypto wealth across generations. Bitcoin accumulation, trusts, family offices, estate planning.'
+    title: 'Crypto Generational Wealth Guide 2026',
+    description: 'Build lasting crypto wealth across generations. Bitcoin accumulation, trusts, family offices, estate planning.',
     image: 'https://degen0x.com/og-long-term.svg'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/long-term/crypto-generational-wealth-guide'

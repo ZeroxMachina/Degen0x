@@ -4,9 +4,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'How to Launch a Crypto Project: Complete 2026 Guide'
-  description: 'Step-by-step guide to launching a crypto project. Cover tokenomics, legal structure, team building, and mainnet launch strategy.'
-  keywords: 'launch crypto project, tokenomics, blockchain startup, crypto legal'
+  title: 'How to Launch a Crypto Project: Complete 2026 Guide',
+  description: 'Step-by-step guide to launching a crypto project. Cover tokenomics, legal structure, team building, and mainnet launch strategy.',
+  keywords: 'launch crypto project, tokenomics, blockchain startup, crypto legal',
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/how-to-launch-a-crypto-project'

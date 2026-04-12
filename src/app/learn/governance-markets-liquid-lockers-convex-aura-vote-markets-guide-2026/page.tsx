@@ -48,10 +48,11 @@ export const metadata: Metadata = {
     images: ['https://degen0x.com/og/governance-markets-liquid-lockers.png'],
   },
   canonical: 'https://degen0x.com/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026',
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026',
-  };
+  },
+};
+
 export default function GovernanceMarketsPage() {
   const faqs = [
     {

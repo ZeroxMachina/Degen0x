@@ -8,12 +8,11 @@ export const metadata: Metadata = {
   description: 'Best day trading exchange: Binance (0.1% fees, 10M BTC liquidity), Bybit (perpetuals), OKX, dYdX (decentralized). Latency, order types, leverage.',
   keywords: ['best day trading exchange', 'crypto day trading', 'margin trading', 'leverage trading', 'low latency exchange'],
   openGraph: { type: 'article', title: 'Best Day Trading Exchange 2026', description: 'Binance, Bybit, OKX comparison for day trading', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/exchanges/best-crypto-exchange-for-day-trading', images: [{ url: 'https://degen0x.com/og-exchanges.svg', width: 1200, height: 630, alt: 'Day Trading Exchange' }] },
-  twitter: { card: 'summary_large_image', title: 'Best Day Trading Exchange', description: 'Binance, Bybit, OKX', image: 'https://degen0x.com/og-exchanges.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'Best Day Trading Exchange', description: 'Binance, Bybit, OKX', image: 'https://degen0x.com/og-exchanges.svg' },
   alternates: {
     canonical: 'https://degen0x.com/exchanges/best-crypto-exchange-for-day-trading',
-  };
-const structuredData = {
+  }
+};export const const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Best Crypto Exchange for Day Trading 2026: Binance, Bybit, OKX, dYdX Comparison',
@@ -34,7 +33,6 @@ const structuredData = {
     ]
   }
 };
-
 export default function BestDayTradingExchange() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #f59e0b', borderLeft: '3px solid #f59e0b', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -46,8 +44,7 @@ export default function BestDayTradingExchange() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-
+  }
   const toc = [
     { id: 'overview', t: 'Overview' },
     { id: 'binance-day', t: 'Binance: Most Liquid' },

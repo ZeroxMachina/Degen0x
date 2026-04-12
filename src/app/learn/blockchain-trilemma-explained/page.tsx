@@ -4,16 +4,16 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Blockchain Trilemma Explained: Security vs Scalability vs Decentralization | degen0x'
-  description: 'Blockchain trilemma: decentralization, scalability, security tradeoffs. Bitcoin, Ethereum, Solana positioning. Layer 2 solutions, modular blockchains, and Vitalik\'s framework explained 2026.'
-  keywords: ['blockchain trilemma', 'scalability', 'decentralization', 'security', 'Ethereum', 'Solana', 'Bitcoin', 'Layer 2', 'Vitalik Buterin', 'degen0x']
+  title: 'Blockchain Trilemma Explained: Security vs Scalability vs Decentralization | degen0x',
+  description: 'Blockchain trilemma: decentralization, scalability, security tradeoffs. Bitcoin, Ethereum, Solana positioning. Layer 2 solutions, modular blockchains, and Vitalik\'s framework explained 2026.',
+  keywords: ['blockchain trilemma', 'scalability', 'decentralization', 'security', 'Ethereum', 'Solana', 'Bitcoin', 'Layer 2', 'Vitalik Buterin', 'degen0x'],
   openGraph: {
-    type: 'article'
-    title: 'Blockchain Trilemma Explained: Security vs Scalability vs Decentralization'
-    description: 'Complete guide to blockchain trilemma: the fundamental tradeoff between decentralization, scalability, and security. Bitcoin, Ethereum, Solana tradeoffs.'
-    publishedTime: '2026-04-10T00:00:00Z'
-    modifiedTime: '2026-04-10T00:00:00Z'
-    url: 'https://degen0x.com/learn/blockchain-trilemma-explained'
+    type: 'article',
+    title: 'Blockchain Trilemma Explained: Security vs Scalability vs Decentralization',
+    description: 'Complete guide to blockchain trilemma: the fundamental tradeoff between decentralization, scalability, and security. Bitcoin, Ethereum, Solana tradeoffs.',
+    publishedTime: '2026-04-10T00:00:00Z',
+    modifiedTime: '2026-04-10T00:00:00Z',
+    url: 'https://degen0x.com/learn/blockchain-trilemma-explained',
     images: [{ url: 'https://degen0x.com/og-learn.svg', width: 1200, height: 630, alt: 'Blockchain Trilemma' }]
   }
 

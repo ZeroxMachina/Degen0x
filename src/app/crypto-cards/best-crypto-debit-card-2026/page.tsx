@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Compare crypto debit cards: Coinbase (4% cash back), Crypto.com Visa (cashback tiers), Gnosis Pay, Bybit, Nexo. Auto-convert, no KYC options.',
   keywords: ['best crypto debit card', 'crypto debit card 2026', 'Coinbase Card', 'Crypto.com Visa', 'Gnosis Pay', 'crypto cashback'],
   openGraph: { type: 'article', title: 'Best Crypto Debit Card 2026', description: 'Crypto card comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/crypto-cards/best-crypto-debit-card-2026', images: [{ url: 'https://degen0x.com/og-cards.svg', width: 1200, height: 630, alt: 'Crypto Cards' }] },
-  twitter: { card: 'summary_large_image', title: 'Best Crypto Card 2026', description: 'Debit card comparison' }
-,
+  twitter: { card: 'summary_large_image', title: 'Best Crypto Card 2026', description: 'Debit card comparison' },
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/best-crypto-debit-card-2026',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Crypto Debit Card 2026', description: 'Crypto card comparison', image: 'https://degen0x.com/og-cards.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Coinbase Card best?', acceptedAnswer: { '@type': 'Answer', text: '4% cash back. Auto-converts crypto to USD instantly. No KYC for limits. Visa support everywhere. US only. Best for convenience.' } }, { '@type': 'Question', name: 'How does auto-conversion work?', acceptedAnswer: { '@type': 'Answer', text: 'Spend crypto directly. Card processor auto-converts to USD immediately. Merchant sees USD. You get cashback in crypto (or stable).' } }, { '@type': 'Question', name: 'Crypto.com Visa tiers?', acceptedAnswer: { '@type': 'Answer', text: '1-5% cashback. Tiers by CRO stake (Ruby $400, Jade $4k, Obsidian $40k). Lower tier = 2%, higher = 5% + perks.' } }, { '@type': 'Question', name: 'Tax implications of spending crypto?', acceptedAnswer: { '@type': 'Answer', text: 'Each transaction = taxable event (cost basis vs conversion price = gain/loss). Crypto.com/Coinbase provide tax forms. Track all transactions.' } }, { '@type': 'Question', name: 'Gnosis Pay: no KYC?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, no KYC limits (€200/month for unverified). Requires Gnosis Safe multisig. Unique, privacy-focused.' } }, { '@type': 'Question', name: 'ATM withdrawals?', acceptedAnswer: { '@type': 'Answer', text: 'Coinbase: $2-3 ATM fee. Crypto.com: unlimited free (Jade+). Bybit: $1.50 fee. Check your card.' } }] } };
 
 export default function BestCryptoDebitCard() {
@@ -26,8 +27,7 @@ export default function BestCryptoDebitCard() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'coinbase', t: 'Coinbase Card' }, { id: 'crypto-com', t: 'Crypto.com Visa' }, { id: 'others', t: 'Others' }, { id: 'auto-convert', t: 'Auto-Conversion' }, { id: 'tax', t: 'Tax Implications' }, { id: 'comparison', t: 'Comparison' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'coinbase', t: 'Coinbase Card' }, { id: 'crypto-com', t: 'Crypto.com Visa' }, { id: 'others', t: 'Others' }, { id: 'auto-convert', t: 'Auto-Conversion' }, { id: 'tax', t: 'Tax Implications' }, { id: 'comparison', t: 'Comparison' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

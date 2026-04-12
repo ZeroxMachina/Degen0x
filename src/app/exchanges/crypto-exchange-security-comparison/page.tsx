@@ -8,24 +8,34 @@ export const metadata: Metadata = {
   description: 'Compare cold storage, insurance, SOC 2, and proof of reserves across Coinbase (98%), Kraken (95%), Binance SAFU ($1B), Gemini, Crypto.com.',
   keywords: ['crypto exchange security', 'cold storage', 'SOC 2 compliance', 'proof of reserves', 'Coinbase security', 'Kraken security', 'Gemini insurance'],
   openGraph: { type: 'article', title: 'Crypto Exchange Security Comparison 2026', description: 'Compare security across top exchanges', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/exchanges/crypto-exchange-security-comparison', images: [{ url: 'https://degen0x.com/og-exchanges.svg', width: 1200, height: 630, alt: 'Security Comparison' }] },
-  twitter: { card: 'summary_large_image', title: 'Exchange Security Comparison', description: 'Cold storage, insurance, compliance' }
-,
+  twitter: { card: 'summary_large_image', title: 'Exchange Security Comparison', description: 'Cold storage, insurance, compliance' },
   alternates: {
     canonical: 'https://degen0x.com/exchanges/crypto-exchange-security-comparison',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Crypto Exchange Security Comparison 2026', description: 'Compare security features across major exchanges', image: 'https://degen0x.com/og-exchanges.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'What does 98% cold storage at Coinbase mean?', acceptedAnswer: { '@type': 'Answer', text: 'Coinbase stores 98% offline in vaults. 2% hot wallets for withdrawals. Eliminates network hacking. Kraken 95%, smaller exchanges 50-70%.' } }, { '@type': 'Question', name: 'Is Binance SAFU ($1B) better than insurance?', acceptedAnswer: { '@type': 'Answer', text: 'Reserve fund (not insurance). Funded by fees. 2024 used for payouts. Insurance better (third-party underwritten).' } }, { '@type': 'Question', name: 'What is SOC 2 Type 2?', acceptedAnswer: { '@type': 'Answer', text: 'Audit standard verifying security over 6+ months. Coinbase/Gemini passed. Validates processes, not zero hacks.' } }, { '@type': 'Question', name: 'Why does Kraken publish proof of reserves?', acceptedAnswer: { '@type': 'Answer', text: 'Cryptographic proof of holdings. Monthly published. Addresses fractional reserves. Incomplete without liability proof.' } }, { '@type': 'Question', name: 'Have major exchanges been hacked?', acceptedAnswer: { '@type': 'Answer', text: 'Gemini 2022 supply chain, Crypto.com 2021 ($34M), Binance 2022 freeze. Even cold storage faces insider risk.' } }, { '@type': 'Question', name: 'Should I keep crypto on exchange or self-custody?', acceptedAnswer: { '@type': 'Answer', text: 'Active trading: regulated exchange. Long-term: hardware wallet. Best: both.' } }] } };
 
 export default function CryptoExchangeSecurityComparison() {
   const infoBoxStyle = { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #f59e0b', borderLeft: '3px solid #f59e0b', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 };
-  const h1Style = { fontSize: 36, fontWeight: 800, marginBottom: 16, background: 'linear-gradient(135deg, #f59e0b, #f97316)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' };
-  const h2Style = { fontSize: 24, fontWeight: 700, marginTop: 40, marginBottom: 16, color: '#f59e0b', borderBottom: '2px solid #3d2e0a', paddingBottom: 12, };
-  const h3Style = { fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' };
-  const badgeStyle = { display: 'inline-block', padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16 };
-  const linkStyle = { color: '#58a6ff', textDecoration: 'none' };
-  const tableStyle = { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 };
-  const thStyle = { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' };
-  const tdStyle = { border: '1px solid #30363d', padding: 12, color: '#8b949e' };
-  const toc = [{ id: 'intro', t: 'Overview' }, { id: 'cold', t: 'Cold Storage' }, { id: 'insurance', t: 'Insurance' }, { id: 'audits', t: 'Audits' }, { id: 'por', t: 'Proof of Reserves' }, { id: 'table', t: 'Comparison' }, { id: 'practices', t: 'Best Practices' }, { id: 'breaches', t: 'Breach History' }, { id: 'faq', t: 'FAQ' }];
+
+const h1Style = { fontSize: 36, fontWeight: 800, marginBottom: 16, background: 'linear-gradient(135deg, #f59e0b, #f97316)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' };
+
+const h2Style = { fontSize: 24, fontWeight: 700, marginTop: 40, marginBottom: 16, color: '#f59e0b', borderBottom: '2px solid #3d2e0a', paddingBottom: 12, };
+
+const h3Style = { fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' };
+
+const badgeStyle = { display: 'inline-block', padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16 };
+
+const linkStyle = { color: '#58a6ff', textDecoration: 'none' };
+
+const tableStyle = { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 };
+
+const thStyle = { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' };
+
+const tdStyle = { border: '1px solid #30363d', padding: 12, color: '#8b949e' };
+
+const toc = [{ id: 'intro', t: 'Overview' }, { id: 'cold', t: 'Cold Storage' }, { id: 'insurance', t: 'Insurance' }, { id: 'audits', t: 'Audits' }, { id: 'por', t: 'Proof of Reserves' }, { id: 'table', t: 'Comparison' }, { id: 'practices', t: 'Best Practices' }, { id: 'breaches', t: 'Breach History' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

@@ -4,15 +4,15 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Tax by State Comparison 2026 | No-Tax States vs High-Tax | degen0x'
-  description: 'State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining rules.'
-  keywords: ['crypto tax by state', 'no income tax states', 'Texas crypto tax', 'Florida crypto tax', 'Wyoming crypto tax', 'California crypto tax', 'crypto-friendly states']
+  title: 'Crypto Tax by State Comparison 2026 | No-Tax States vs High-Tax | degen0x',
+  description: 'State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining rules.',
+  keywords: ['crypto tax by state', 'no income tax states', 'Texas crypto tax', 'Florida crypto tax', 'Wyoming crypto tax', 'California crypto tax', 'crypto-friendly states'],
   openGraph: {
-    title: 'Crypto Tax by State 2026'
-    description: 'Compare state income taxes: zero-tax states (TX, FL, WY, NV, TN, WA, SD, AK), high-tax states (CA, NY), and crypto-friendly legislation.'
-    url: 'https://degen0x.com/taxes/crypto-tax-by-state-comparison'
+    title: 'Crypto Tax by State 2026',
+    description: 'Compare state income taxes: zero-tax states (TX, FL, WY, NV, TN, WA, SD, AK), high-tax states (CA, NY), and crypto-friendly legislation.',
+    url: 'https://degen0x.com/taxes/crypto-tax-by-state-comparison',
     type: 'article'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-tax-by-state-comparison'

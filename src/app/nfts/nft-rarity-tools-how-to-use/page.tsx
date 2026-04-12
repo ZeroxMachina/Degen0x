@@ -4,15 +4,15 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools | degen0x'
-  description: 'NFT rarity tools comparison: Rarity.tools, Trait Sniper, HowRare.is (Solana), IcyTools, NFTGo. Rarity scoring, sniping strategies, floor price correlation.'
-  keywords: ['nft rarity tools', 'Rarity.tools', 'HowRare.is', 'IcyTools', 'Trait Sniper', 'NFT sniping', 'rarity scoring', 'NFT floor price']
+  title: 'NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools | degen0x',
+  description: 'NFT rarity tools comparison: Rarity.tools, Trait Sniper, HowRare.is (Solana), IcyTools, NFTGo. Rarity scoring, sniping strategies, floor price correlation.',
+  keywords: ['nft rarity tools', 'Rarity.tools', 'HowRare.is', 'IcyTools', 'Trait Sniper', 'NFT sniping', 'rarity scoring', 'NFT floor price'],
   openGraph: {
-    title: 'NFT Rarity Tools 2026'
-    description: 'Master NFT rarity scoring, sniping strategies, and floor price analysis with top rarity tools.'
-    url: 'https://degen0x.com/nfts/nft-rarity-tools-how-to-use'
+    title: 'NFT Rarity Tools 2026',
+    description: 'Master NFT rarity scoring, sniping strategies, and floor price analysis with top rarity tools.',
+    url: 'https://degen0x.com/nfts/nft-rarity-tools-how-to-use',
     type: 'article'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-rarity-tools-how-to-use'

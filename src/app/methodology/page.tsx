@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'Methodology | degen0x'
-  description: 'How degen0x evaluates exchanges, wallets, and DeFi protocols with rigorous testing and transparency.'
+  title: 'Methodology | degen0x',
+  description: 'How degen0x evaluates exchanges, wallets, and DeFi protocols with rigorous testing and transparency.',
 
   alternates: {
     canonical: 'https://degen0x.com/methodology'

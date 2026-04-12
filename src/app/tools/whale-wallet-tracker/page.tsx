@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Track whale wallets: Nansen (10+ chains), Arkham Intelligence (labeled), Whale Alert, Lookonchain, DeBank. Follow smart money.',
   keywords: ['whale tracker', 'whale watching', 'smart money', 'Nansen', 'Arkham', 'labeled wallets', 'blockchain tracking'],
   openGraph: { type: 'article', title: 'Whale Tracker 2026', description: 'Whale wallet tracking tools', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/tools/whale-wallet-tracker', images: [{ url: 'https://degen0x.com/og-tools-whale-tracker.svg', width: 1200, height: 630, alt: 'Whale Trackers' }] },
-  twitter: { card: 'summary_large_image', title: 'Whale Tracker 2026', description: 'On-chain tracking tools', image: 'https://degen0x.com/og-tools-whale-tracker.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'Whale Tracker 2026', description: 'On-chain tracking tools', image: 'https://degen0x.com/og-tools-whale-tracker.svg' },
   alternates: {
     canonical: 'https://degen0x.com/tools/whale-wallet-tracker',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Whale Wallet Tracker 2026', description: 'Whale tracking tools', image: 'https://degen0x.com/og-tools.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'What is whale watching?', acceptedAnswer: { '@type': 'Answer', text: 'Follow large wallet movements (>$1M). Large buys = bullish signal. Large sells = bearish. Whale activity indicates smart money.' } }, { '@type': 'Question', name: 'Is Nansen best?', acceptedAnswer: { '@type': 'Answer', text: 'Nansen best for advanced users. 10+ chains, portfolio tracking, smart money signals. $200+/month (expensive). Best for hedge funds.' } }, { '@type': 'Question', name: 'Arkham labeled wallets?', acceptedAnswer: { '@type': 'Answer', text: 'Arkham labels whale wallets (Grayscale, Three Arrows Capital, etc). Enables tracking by fund. Crowdsourced labels.' } }, { '@type': 'Question', name: 'Free whale tracking?', acceptedAnswer: { '@type': 'Answer', text: 'Etherscan labels, Whale Alert alerts, Lookonchain free tier. Nansen/Arkham paid. Free options good for casual.' } }, { '@type': 'Question', name: 'Exchange flow analysis?', acceptedAnswer: { '@type': 'Answer', text: 'Track Bitcoin flow into/out of exchanges. Large outflow = hodling (bullish). Large inflow = selling (bearish).' } }, { '@type': 'Question', name: 'Follow blindly?', acceptedAnswer: { '@type': 'Answer', text: 'No. Whales wrong sometimes. Don\'t copy trades. Use signals as context. Your analysis + whale data = better.' } }] } };
 
 export default function WhaleWalletTracker() {
@@ -26,8 +27,7 @@ export default function WhaleWalletTracker() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'why', t: 'Why Track Whales' }, { id: 'nansen', t: 'Nansen' }, { id: 'arkham', t: 'Arkham Intelligence' }, { id: 'free', t: 'Free Tools' }, { id: 'exchange-flow', t: 'Exchange Flow' }, { id: 'strategies', t: 'Strategies' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'why', t: 'Why Track Whales' }, { id: 'nansen', t: 'Nansen' }, { id: 'arkham', t: 'Arkham Intelligence' }, { id: 'free', t: 'Free Tools' }, { id: 'exchange-flow', t: 'Exchange Flow' }, { id: 'strategies', t: 'Strategies' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

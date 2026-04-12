@@ -41,11 +41,10 @@ export const metadata: Metadata = {
     title: 'Crypto Prime Brokerage: Institutional Trading Guide 2026',
     description: 'Complete guide to crypto prime brokerage services for institutions.',
     images: ['https://degen0x.com/og-crypto-prime-brokerage-2026.svg']
-  }
-,
-  alternates: {
+  },  alternates: {
     canonical: 'https://degen0x.com/learn/crypto-prime-brokerage-institutional-trading-guide-2026',
-  };
+  }
+};
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],
@@ -111,8 +110,7 @@ const structuredData = {
       }
     ]
   }
-};
-
+}
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -121,8 +119,7 @@ const breadcrumbData = {
     { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
     { '@type': 'ListItem', position: 3, name: 'Crypto Prime Brokerage Guide 2026' },
   ],
-};
-
+}
 export default function Page() {
   return (
     <main style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh' }}>

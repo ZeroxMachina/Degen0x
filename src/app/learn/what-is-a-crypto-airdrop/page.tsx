@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Airdrops Explained: Strategy & Yield Farming"
-  description: "Master airdrop strategy. Learn how to identify real opportunities, avoid scams, and systematically farm airdrops for passive income in crypto."
+  title: "Crypto Airdrops Explained: Strategy & Yield Farming",
+  description: "Master airdrop strategy. Learn how to identify real opportunities, avoid scams, and systematically farm airdrops for passive income in crypto.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-a-crypto-airdrop'

@@ -8,12 +8,11 @@ export const metadata: Metadata = {
   description: 'Best NFT wallet: MetaMask (widest marketplace support), Phantom (Solana NFTs, beautiful gallery), Coinbase (NFT tab, social), Trust Wallet (multi-chain), Ledger (cold storage).',
   keywords: ['best nft wallet', 'nft storage wallet', 'nft gallery wallet', 'cold storage nft', 'metamask nft'],
   openGraph: { type: 'article', title: 'Best Wallet for NFT Storage', description: 'MetaMask, Phantom, Coinbase comparison for NFT display and security', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/best-wallet-for-nft-storage', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'NFT Wallets' }] },
-  twitter: { card: 'summary_large_image', title: 'Best NFT Wallet', description: 'MetaMask, Phantom, Coinbase comparison', image: 'https://degen0x.com/og-wallets.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'Best NFT Wallet', description: 'MetaMask, Phantom, Coinbase comparison', image: 'https://degen0x.com/og-wallets.svg' },
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-nft-storage',
-  };
-const structuredData = {
+  }
+};export const const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Best Wallet for NFT Storage 2026: MetaMask, Phantom, Coinbase, Trust Wallet, Ledger',
@@ -34,7 +33,6 @@ const structuredData = {
     ]
   }
 };
-
 const h1Style: React.CSSProperties = { fontSize: 36, fontWeight: 800, marginBottom: 16, background: 'linear-gradient(135deg, #22c55e, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1.2 };
 const h2Style: React.CSSProperties = { fontSize: 24, fontWeight: 700, marginTop: 40, marginBottom: 16, color: '#22c55e', borderBottom: '2px solid #14532d', paddingBottom: 12 };
 const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16, display: 'inline-block' };
@@ -69,8 +67,7 @@ export default function BestWalletForNFTStorage() {
     padding: 20,
     marginBottom: 24,
     lineHeight: 1.8,
-  };
-
+  }
   const h1Style = {
     fontSize: 36,
     fontWeight: 800,
@@ -79,16 +76,14 @@ export default function BestWalletForNFTStorage() {
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     backgroundClip: 'text',
-  };
-
+  }
   const h2Style = {
     fontSize: 24,
     fontWeight: 700,
     marginTop: 40,
     marginBottom: 16,
     color: '#22c55e', borderBottom: '2px solid #14532d', paddingBottom: 12,
-  };
-
+  }
   const badgeStyle = {
     display: 'inline-block',
     padding: '6px 12px',
@@ -97,20 +92,17 @@ export default function BestWalletForNFTStorage() {
     fontWeight: 600,
     marginRight: 8,
     marginBottom: 16,
-  };
-
+  }
   const linkStyle = {
     color: '#58a6ff',
     textDecoration: 'none',
-  };
-
+  }
   const tableStyle = {
     width: '100%',
     borderCollapse: 'collapse' as const,
     marginBottom: 24,
     fontSize: 14,
-  };
-
+  }
   const thStyle = {
     background: '#0d1117',
     border: '1px solid #30363d',
@@ -118,14 +110,12 @@ export default function BestWalletForNFTStorage() {
     textAlign: 'left' as const,
     fontWeight: 700,
     color: '#e6edf3',
-  };
-
+  }
   const tdStyle = {
     border: '1px solid #30363d',
     padding: 12,
     color: '#8b949e',
-  };
-
+  }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

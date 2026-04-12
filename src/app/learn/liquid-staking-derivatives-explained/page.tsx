@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Liquid Staking Derivatives: LSDs Explained 2026"
-  description: "Master liquid staking tokens. Learn how LSDs enable staking without lockups, understand economics, yield strategies, and compare Lido, Marinade, and other protocols."
+  title: "Liquid Staking Derivatives: LSDs Explained 2026",
+  description: "Master liquid staking tokens. Learn how LSDs enable staking without lockups, understand economics, yield strategies, and compare Lido, Marinade, and other protocols.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/liquid-staking-derivatives-explained'

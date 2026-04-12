@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Usual Protocol USD0 RWA Stablecoin Guide 2026"
-  description: "Learn Usual Protocol USD0: Real World Assets stablecoin backed by US Treasury, bonds, cash. Earn yield on stablecoins."
+  title: "Usual Protocol USD0 RWA Stablecoin Guide 2026",
+  description: "Learn Usual Protocol USD0: Real World Assets stablecoin backed by US Treasury, bonds, cash. Earn yield on stablecoins.",
   openGraph: {
-    title: "Usual Protocol USD0 RWA Stablecoin Guide 2026"
+    title: "Usual Protocol USD0 RWA Stablecoin Guide 2026",
     description: "Usual Protocol USD0 backed by US Treasuries. 5%+ yield on stablecoins."
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/learn/usual-protocol-usd0-rwa-stablecoin-guide-2026'

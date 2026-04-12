@@ -4,9 +4,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Web3 Jobs Guide 2026: Careers, Salaries, Skills Required'
-  description: 'Web3 jobs: developer, DAO operations, community management, product. Salaries, skills, hiring trends, remote work.'
-  keywords: 'web3 jobs, crypto careers, blockchain developer, DAO, remote work'
+  title: 'Web3 Jobs Guide 2026: Careers, Salaries, Skills Required',
+  description: 'Web3 jobs: developer, DAO operations, community management, product. Salaries, skills, hiring trends, remote work.',
+  keywords: 'web3 jobs, crypto careers, blockchain developer, DAO, remote work',
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/web3-jobs-guide-2026'

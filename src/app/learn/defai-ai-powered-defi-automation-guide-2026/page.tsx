@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "DeFAI: AI-Powered DeFi Automation & Trading Guide 2026"
-  description: "Master DeFAI protocols. Learn AI agents, automated trading, portfolio optimization, and how artificial intelligence transforms DeFi investing at scale."
+  title: "DeFAI: AI-Powered DeFi Automation & Trading Guide 2026",
+  description: "Master DeFAI protocols. Learn AI agents, automated trading, portfolio optimization, and how artificial intelligence transforms DeFi investing at scale.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/defai-ai-powered-defi-automation-guide-2026'

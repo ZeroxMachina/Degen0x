@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Deep comparison: Aave V3 ($12B, 8 chains, e-mode, flash loans) vs Compound V3 ($8B, Ethereum+Base, simple, safe).',
   keywords: ['Aave vs Compound', 'Aave V3 vs Compound V3', 'DeFi lending comparison', 'AAVE vs COMP token', 'e-mode vs isolation'],
   openGraph: { type: 'article', title: 'Aave vs Compound 2026', description: 'Head-to-head comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/defi-lending/aave-vs-compound-comparison', images: [{ url: 'https://degen0x.com/og-defi.svg', width: 1200, height: 630, alt: 'Aave vs Compound' }] },
-  twitter: { card: 'summary_large_image', title: 'Aave vs Compound 2026', description: 'DeFi lending comparison' }
-,
+  twitter: { card: 'summary_large_image', title: 'Aave vs Compound 2026', description: 'DeFi lending comparison' },
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/aave-vs-compound-comparison',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Aave V3 vs Compound V3 Comparison 2026', description: 'Deep comparison', image: 'https://degen0x.com/og-defi.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Aave or Compound better?', acceptedAnswer: { '@type': 'Answer', text: 'Aave: more features, multi-chain, higher yield potential. Compound: simpler, safer, single-token markets. Choose based on experience level.' } }, { '@type': 'Question', name: 'Aave: 8 chains vs Compound: 2?', acceptedAnswer: { '@type': 'Answer', text: 'Aave multi-chain (Ethereum, Arbitrum, Optimism, Polygon, Base, etc). Compound just Ethereum + Base. Aave flexibility, Compound simplicity.' } }, { '@type': 'Question', name: 'What is e-mode vs isolation?', acceptedAnswer: { '@type': 'Answer', text: 'Aave e-mode: 97% LTV correlated assets (USDC/USDT). Compound: isolated markets (single token = safer). E-mode riskier, isolation safer.' } }, { '@type': 'Question', name: 'Flash loans: Aave only?', acceptedAnswer: { '@type': 'Answer', text: 'Aave has flash loans (borrow unlimited, repay same block). Compound no. Unique Aave feature for advanced users.' } }, { '@type': 'Question', name: 'AAVE vs COMP token?', acceptedAnswer: { '@type': 'Answer', text: 'AAVE: ~$500 price, governance token, value from protocol fees. COMP: ~$100, governance, more limited fee accrual.' } }, { '@type': 'Question', name: 'Which for $50K deposit?', acceptedAnswer: { '@type': 'Answer', text: 'Aave: better rates, more options, e-mode if know risk. Compound: safer for beginners, sleep soundly. Both excellent.' } }] } };
 
 export default function AaveVsCompoundComparison() {
@@ -26,8 +27,7 @@ export default function AaveVsCompoundComparison() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'aave', t: 'Aave V3 Strengths' }, { id: 'compound', t: 'Compound V3 Strengths' }, { id: 'tvl', t: 'TVL & Market Share' }, { id: 'rates', t: 'Supply/Borrow Rates' }, { id: 'features', t: 'Feature Comparison' }, { id: 'governance', t: 'Governance (AAVE vs COMP)' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'aave', t: 'Aave V3 Strengths' }, { id: 'compound', t: 'Compound V3 Strengths' }, { id: 'tvl', t: 'TVL & Market Share' }, { id: 'rates', t: 'Supply/Borrow Rates' }, { id: 'features', t: 'Feature Comparison' }, { id: 'governance', t: 'Governance (AAVE vs COMP)' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

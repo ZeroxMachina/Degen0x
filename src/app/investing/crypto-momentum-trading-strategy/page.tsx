@@ -5,14 +5,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Momentum Trading Strategy 2026 | Moving Averages RSI'
-  description: 'Momentum trading guide: 50/200 MA golden cross, RSI 30-70 signals, ROC trend strength, ADX filtering. BTC/ETH backtests, win rates, risk management.'
-  keywords: ['momentum trading', 'moving averages', 'RSI', 'ROC', 'ADX', 'trend following']
+  title: 'Crypto Momentum Trading Strategy 2026 | Moving Averages RSI',
+  description: 'Momentum trading guide: 50/200 MA golden cross, RSI 30-70 signals, ROC trend strength, ADX filtering. BTC/ETH backtests, win rates, risk management.',
+  keywords: ['momentum trading', 'moving averages', 'RSI', 'ROC', 'ADX', 'trend following'],
   openGraph: {
-    title: 'Crypto Momentum Trading Strategy 2026'
-    description: 'Complete momentum trading framework: indicators, backtests, real BTC/ETH examples, risk management.'
+    title: 'Crypto Momentum Trading Strategy 2026',
+    description: 'Complete momentum trading framework: indicators, backtests, real BTC/ETH examples, risk management.',
     image: 'https://degen0x.com/og-investing.svg'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-momentum-trading-strategy'

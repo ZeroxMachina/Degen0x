@@ -8,12 +8,11 @@ export const metadata: Metadata = {
   description: 'Best trading platform: Binance ($10B daily, 0.1% fees), Coinbase Advanced ($0.05%-0.08%), Kraken (security), Bybit (perpetuals), dYdX (decentralized), Hyperliquid.',
   keywords: ['best crypto trading platform', 'trading platform comparison', 'crypto exchange', 'binance vs coinbase', 'decentralized exchange'],
   openGraph: { type: 'article', title: 'Best Crypto Trading Platform 2026', description: 'Compare Binance, Coinbase, Kraken, Bybit, dYdX, Hyperliquid', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/trading/best-crypto-trading-platform-2026', images: [{ url: 'https://degen0x.com/og-trading.svg', width: 1200, height: 630, alt: 'Trading Platforms' }] },
-  twitter: { card: 'summary_large_image', title: 'Best Trading Platform', description: 'Binance, Coinbase, Kraken comparison', image: 'https://degen0x.com/og-trading.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'Best Trading Platform', description: 'Binance, Coinbase, Kraken comparison', image: 'https://degen0x.com/og-trading.svg' },
   alternates: {
     canonical: 'https://degen0x.com/trading/best-crypto-trading-platform-2026',
-  };
-const structuredData = {
+  }
+};export const const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Best Crypto Trading Platform 2026: Binance, Coinbase, Kraken, Bybit, dYdX, Hyperliquid Comparison',
@@ -34,7 +33,6 @@ const structuredData = {
     ]
   }
 };
-
 export default function BestCryptoTradingPlatform2026() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #06b6d4', borderLeft: '3px solid #06b6d4', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -46,8 +44,7 @@ export default function BestCryptoTradingPlatform2026() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-
+  }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

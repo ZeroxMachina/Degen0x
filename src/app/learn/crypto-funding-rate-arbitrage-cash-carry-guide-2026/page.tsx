@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Funding Rate Arbitrage: Cash & Carry Trading Guide 2026"
-  description: "Master funding rate arbitrage and cash-and-carry strategies. Learn delta-neutral trading, spot-future spreads, and 5-20% annual risk-free returns."
+  title: "Funding Rate Arbitrage: Cash & Carry Trading Guide 2026",
+  description: "Master funding rate arbitrage and cash-and-carry strategies. Learn delta-neutral trading, spot-future spreads, and 5-20% annual risk-free returns.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-funding-rate-arbitrage-cash-carry-guide-2026'

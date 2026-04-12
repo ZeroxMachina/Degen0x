@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Compare Solana wallets 2026: Phantom (#1, hot), Solflare, Backpack, Glow, Ledger. Staking, NFT gallery, Jupiter swaps, priority fees.',
   keywords: ['best solana wallet', 'solana wallet 2026', 'Phantom wallet', 'Solflare', 'Backpack', 'Ledger Solana', 'Glow wallet'],
   openGraph: { type: 'article', title: 'Best Solana Wallet 2026', description: 'Compare Solana wallets with staking, swaps, NFT support', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/best-solana-wallet-2026', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'Solana Wallets' }] },
-  twitter: { card: 'summary_large_image', title: 'Best Solana Wallet 2026', description: 'Phantom, Solflare, Backpack comparison' }
-,
+  twitter: { card: 'summary_large_image', title: 'Best Solana Wallet 2026', description: 'Phantom, Solflare, Backpack comparison' },
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-solana-wallet-2026',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Solana Wallet 2026', description: 'Compare Solana wallets for staking, swaps, NFTs', image: 'https://degen0x.com/og-wallets.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Phantom the best Solana wallet?', acceptedAnswer: { '@type': 'Answer', text: 'Phantom #1 by market share (80%+ Solana dApps). Hot wallet, supports staking, token swaps, NFT gallery, priority fees. Not hardware security. For holding, use Ledger.' } }, { '@type': 'Question', name: 'What is Jupiter integration?', acceptedAnswer: { '@type': 'Answer', text: 'Jupiter is Solana DEX. Built into Phantom/Solflare. In-wallet swaps without leaving app. Best rates via routing algorithm.' } }, { '@type': 'Question', name: 'Does Ledger work with Solana?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Ledger Nano X/S with Solana app. Hardware security. Works with Phantom, Solflare frontends. Best for long-term.' } }, { '@type': 'Question', name: 'What are priority fees?', acceptedAnswer: { '@type': 'Answer', text: 'Solana tip to validators for faster execution. Phantom 1.8.0+ has priority fee selector. Network congestion = higher tips needed.' } }, { '@type': 'Question', name: 'Can I stake SOL in wallet?', acceptedAnswer: { '@type': 'Answer', text: 'Phantom: yes, built-in staking to validators. Solflare: yes, same. In-wallet staking convenient but risks validator centralization.' } }, { '@type': 'Question', name: 'Compressed NFTs support?', acceptedAnswer: { '@type': 'Answer', text: 'Solana Saga phone native. Phantom/Solflare adding support 2026. Compresses NFT on-chain size 99%, cheaper minting.' } }] } };
 
 export default function BestSolanaWallet2026() {
@@ -26,8 +27,7 @@ export default function BestSolanaWallet2026() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'Solana Wallet Landscape' }, { id: 'phantom', t: 'Phantom (#1)' }, { id: 'alternatives', t: 'Alternatives' }, { id: 'hardware', t: 'Hardware Wallets' }, { id: 'features', t: 'Solana Features' }, { id: 'comparison', t: 'Comparison' }, { id: 'choosing', t: 'Choosing' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Solana Wallet Landscape' }, { id: 'phantom', t: 'Phantom (#1)' }, { id: 'alternatives', t: 'Alternatives' }, { id: 'hardware', t: 'Hardware Wallets' }, { id: 'features', t: 'Solana Features' }, { id: 'comparison', t: 'Comparison' }, { id: 'choosing', t: 'Choosing' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

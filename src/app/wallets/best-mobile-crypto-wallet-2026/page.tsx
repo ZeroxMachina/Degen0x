@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Compare mobile wallets: Trust Wallet (70M users), MetaMask Mobile, Phantom, Coinbase Wallet, Zerion, Rainbow, Exodus.',
   keywords: ['best mobile crypto wallet', 'mobile wallet 2026', 'Trust Wallet', 'MetaMask Mobile', 'Phantom Mobile', 'Zerion', 'Rainbow wallet'],
   openGraph: { type: 'article', title: 'Best Mobile Crypto Wallet 2026', description: 'Mobile wallet comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/best-mobile-crypto-wallet-2026', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'Mobile Wallets' }] },
-  twitter: { card: 'summary_large_image', title: 'Best Mobile Wallet 2026', description: 'Compare mobile wallets' }
-,
+  twitter: { card: 'summary_large_image', title: 'Best Mobile Wallet 2026', description: 'Compare mobile wallets' },
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-mobile-crypto-wallet-2026',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Mobile Crypto Wallet 2026', description: 'Compare mobile wallets', image: 'https://degen0x.com/og-wallets.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Trust Wallet the best?', acceptedAnswer: { '@type': 'Answer', text: 'Trust Wallet 70M+ users. Best multi-chain (100+ supported). Built into Binance ecosystem. Good for diverse portfolios. But centralized (Binance-owned).' } }, { '@type': 'Question', name: 'Does MetaMask Mobile work offline?', acceptedAnswer: { '@type': 'Answer', text: 'No. Needs internet. But can use hardware wallet (Ledger) via BLE. Good for Ethereum ecosystem.' } }, { '@type': 'Question', name: 'Can I stake with mobile wallet?', acceptedAnswer: { '@type': 'Answer', text: 'Phantom/MetaMask yes. Stake to validators directly. Trust Wallet limited. Mobile staking practical 2026.' } }, { '@type': 'Question', name: 'What is dApp browser?', acceptedAnswer: { '@type': 'Answer', text: 'In-wallet browser for Uniswap, Magic Eden, etc. Avoids leaving wallet. All major mobile wallets have it 2026.' } }, { '@type': 'Question', name: 'Is mobile more secure than desktop?', acceptedAnswer: { '@type': 'Answer', text: 'No. Both are hot wallets. Mobile has app isolation (OS prevents theft). Desktop has phishing risk (browser extensions).' } }, { '@type': 'Question', name: 'Can I use hardware wallet on mobile?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Ledger Nano X has Bluetooth. Phantom/MetaMask Mobile support hardware signing.' } }] } };
 
 export default function BestMobileCryptoWallet() {
@@ -26,8 +27,7 @@ export default function BestMobileCryptoWallet() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'leading', t: 'Leading Wallets' }, { id: 'features', t: 'Key Features' }, { id: 'security', t: 'Security' }, { id: 'comparison', t: 'Comparison' }, { id: 'choosing', t: 'Choosing' }, { id: 'practices', t: 'Best Practices' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'leading', t: 'Leading Wallets' }, { id: 'features', t: 'Key Features' }, { id: 'security', t: 'Security' }, { id: 'comparison', t: 'Comparison' }, { id: 'choosing', t: 'Choosing' }, { id: 'practices', t: 'Best Practices' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

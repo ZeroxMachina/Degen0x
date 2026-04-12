@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: 'Comprehensive guide to Bitcoin mining profitability, ROI, and hardware selection.',
     images: ['https://degen0x.com/og-bitcoin-mining-profitability-guide-2026.png'],
   },
-}
+};
 
 export default function MiningProfitabilityPage() {
   return (

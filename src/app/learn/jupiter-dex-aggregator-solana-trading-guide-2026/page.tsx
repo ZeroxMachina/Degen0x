@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Jupiter DEX Aggregator: Master Solana Trading 2026"
-  description: "Complete guide to Jupiter DEX aggregator on Solana. Learn routing logic, swap optimization, yield farming, and how to trade like institutional traders."
+  title: "Jupiter DEX Aggregator: Master Solana Trading 2026",
+  description: "Complete guide to Jupiter DEX aggregator on Solana. Learn routing logic, swap optimization, yield farming, and how to trade like institutional traders.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/jupiter-dex-aggregator-solana-trading-guide-2026'

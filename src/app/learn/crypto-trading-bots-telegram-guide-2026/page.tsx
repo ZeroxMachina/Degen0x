@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Trading Bots: Telegram Automation & Strategy Guide 2026"
-  description: "Master crypto trading bots and Telegram automation. Learn bot security, strategy selection, profitability analysis, and how to automate trading safely."
+  title: "Crypto Trading Bots: Telegram Automation & Strategy Guide 2026",
+  description: "Master crypto trading bots and Telegram automation. Learn bot security, strategy selection, profitability analysis, and how to automate trading safely.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-trading-bots-telegram-guide-2026'

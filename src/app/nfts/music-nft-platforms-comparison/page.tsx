@@ -4,15 +4,15 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius | degen0x'
-  description: 'Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music royalty tokens.'
-  keywords: ['music nft platforms', 'Sound.xyz', 'Catalog', 'Audius', 'Royal platform', 'music royalty nft', 'artist nft', 'music streaming blockchain']
+  title: 'Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius | degen0x',
+  description: 'Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music royalty tokens.',
+  keywords: ['music nft platforms', 'Sound.xyz', 'Catalog', 'Audius', 'Royal platform', 'music royalty nft', 'artist nft', 'music streaming blockchain'],
   openGraph: {
-    title: 'Music NFT Platforms 2026'
-    description: 'Compare top music NFT platforms: artist earnings, blockchain, edition models, royalty distribution.'
-    url: 'https://degen0x.com/nfts/music-nft-platforms-comparison'
+    title: 'Music NFT Platforms 2026',
+    description: 'Compare top music NFT platforms: artist earnings, blockchain, edition models, royalty distribution.',
+    url: 'https://degen0x.com/nfts/music-nft-platforms-comparison',
     type: 'article'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/nfts/music-nft-platforms-comparison'

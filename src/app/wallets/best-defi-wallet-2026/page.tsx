@@ -8,12 +8,11 @@ export const metadata: Metadata = {
   description: 'Best DeFi wallet: MetaMask 30M users, Rabby ($0 unlimited chains), Rainbow ($0 Ethereum), Zerion portfolio dashboard, Phantom (Solana). Swap, staking, dApp browser.',
   keywords: ['best defi wallet', 'dapp wallet', 'MetaMask', 'Rabby wallet', 'Rainbow wallet', 'defi trading wallet'],
   openGraph: { type: 'article', title: 'Best DeFi Wallet 2026', description: 'MetaMask, Rabby, Rainbow comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/best-defi-wallet-2026', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'DeFi Wallets' }] },
-  twitter: { card: 'summary_large_image', title: 'Best DeFi Wallet', description: 'MetaMask, Rabby, Rainbow', image: 'https://degen0x.com/og-wallets.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'Best DeFi Wallet', description: 'MetaMask, Rabby, Rainbow', image: 'https://degen0x.com/og-wallets.svg' },
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-defi-wallet-2026',
-  };
-const structuredData = {
+  }
+};export const const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Best DeFi Wallet 2026: MetaMask, Rabby, Rainbow, Zerion, Phantom Comparison',
@@ -34,7 +33,6 @@ const structuredData = {
     ]
   }
 };
-
 export default function BestDeFiWallet2026() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #22c55e', borderLeft: '3px solid #22c55e', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -46,8 +44,7 @@ export default function BestDeFiWallet2026() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-
+  }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

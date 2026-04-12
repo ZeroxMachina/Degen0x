@@ -4,15 +4,15 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Business Expense Deductions 2026 | Mining Equipment, Software | degen0x'
-  description: 'Deductible crypto business expenses: hardware wallets, mining equipment, electricity, software subscriptions, conference travel, education, Section 179, home office deduction.'
-  keywords: ['crypto business expense deductions', 'mining equipment deduction', 'Section 179', 'home office deduction', 'trading software deduction', 'crypto education deduction']
+  title: 'Crypto Business Expense Deductions 2026 | Mining Equipment, Software | degen0x',
+  description: 'Deductible crypto business expenses: hardware wallets, mining equipment, electricity, software subscriptions, conference travel, education, Section 179, home office deduction.',
+  keywords: ['crypto business expense deductions', 'mining equipment deduction', 'Section 179', 'home office deduction', 'trading software deduction', 'crypto education deduction'],
   openGraph: {
-    title: 'Crypto Business Expense Deductions 2026'
-    description: 'Maximize deductions: mining equipment, electricity, software, education, home office, Section 179, depreciation.'
-    url: 'https://degen0x.com/taxes/crypto-business-expense-deductions'
+    title: 'Crypto Business Expense Deductions 2026',
+    description: 'Maximize deductions: mining equipment, electricity, software, education, home office, Section 179, depreciation.',
+    url: 'https://degen0x.com/taxes/crypto-business-expense-deductions',
     type: 'article'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-business-expense-deductions'

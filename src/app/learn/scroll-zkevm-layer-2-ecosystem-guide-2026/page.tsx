@@ -40,11 +40,10 @@ export const metadata: Metadata = {
     title: 'Scroll zkEVM Layer 2 Ecosystem Guide 2026 - degen0x',
     description: 'Complete guide to Scroll, the largest zkEVM by market share. Learn about zkEVM technology, SCR token, ecosystem dApps, and investment opportunities.',
     images: ['https://degen0x.com/og-scroll-zkevm.svg']
-  }
-,
-  alternates: {
+  },  alternates: {
     canonical: 'https://degen0x.com/learn/scroll-zkevm-layer-2-ecosystem-guide-2026',
-  };
+  }
+};
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -68,8 +67,7 @@ const breadcrumbSchema = {
       item: 'https://degen0x.com/learn/scroll-zkevm-layer-2-ecosystem-guide-2026'
     }
   ]
-};
-
+}
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -135,8 +133,7 @@ const articleSchema = {
       }
     ]
   }
-};
-
+}
 const h1Style: React.CSSProperties = { fontSize: 36, fontWeight: 800, marginBottom: 16, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1.2 };
 const h2Style: React.CSSProperties = { fontSize: 24, fontWeight: 700, marginTop: 40, marginBottom: 16, color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12 };
 const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16, display: 'inline-block' };
@@ -171,8 +168,7 @@ export default function ScrollZkEVMLayer2EcosystemGuide2026() {
     padding: 20,
     marginBottom: 24,
     lineHeight: 1.8,
-  };
-
+  }
   const h1Style = {
     fontSize: 36,
     fontWeight: 800,
@@ -181,16 +177,14 @@ export default function ScrollZkEVMLayer2EcosystemGuide2026() {
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     backgroundClip: 'text',
-  };
-
+  }
   const h2Style = {
     fontSize: 24,
     fontWeight: 700,
     marginTop: 40,
     marginBottom: 16,
     color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12,
-  };
-
+  }
   const badgeStyle = {
     display: 'inline-block',
     padding: '6px 12px',
@@ -199,20 +193,17 @@ export default function ScrollZkEVMLayer2EcosystemGuide2026() {
     fontWeight: 600,
     marginRight: 8,
     marginBottom: 16,
-  };
-
+  }
   const linkStyle = {
     color: '#58a6ff',
     textDecoration: 'none',
-  };
-
+  }
   const tableStyle = {
     width: '100%',
     borderCollapse: 'collapse' as const,
     marginBottom: 24,
     fontSize: 14,
-  };
-
+  }
   const thStyle = {
     background: '#0d1117',
     border: '1px solid #30363d',
@@ -220,14 +211,12 @@ export default function ScrollZkEVMLayer2EcosystemGuide2026() {
     textAlign: 'left' as const,
     fontWeight: 700,
     color: '#e6edf3',
-  };
-
+  }
   const tdStyle = {
     border: '1px solid #30363d',
     padding: 12,
     color: '#8b949e',
-  };
-
+  }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />

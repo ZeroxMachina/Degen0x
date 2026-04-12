@@ -5,14 +5,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Tokenomics Design Guide 2026 | Supply Allocation Vesting'
-  description: 'Design sustainable tokenomics: supply models (fixed vs inflationary), allocation benchmarks, vesting schedules, emission curves, token utility framework.'
-  keywords: ['tokenomics', 'token supply', 'vesting schedule', 'token allocation', 'inflation', 'emission']
+  title: 'Crypto Tokenomics Design Guide 2026 | Supply Allocation Vesting',
+  description: 'Design sustainable tokenomics: supply models (fixed vs inflationary), allocation benchmarks, vesting schedules, emission curves, token utility framework.',
+  keywords: ['tokenomics', 'token supply', 'vesting schedule', 'token allocation', 'inflation', 'emission'],
   openGraph: {
-    title: 'Crypto Tokenomics Design Guide 2026'
-    description: 'Complete tokenomics framework: supply models, allocation, vesting, utility design.'
+    title: 'Crypto Tokenomics Design Guide 2026',
+    description: 'Complete tokenomics framework: supply models, allocation, vesting, utility design.',
     image: 'https://degen0x.com/og-web3-business.svg'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/crypto-project-tokenomics-design'

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Perpetual Futures Trading: Leverage & Risk Guide 2026"
-  description: "Master perpetual futures trading mechanics. Learn leverage trading, risk management, funding rates, liquidation, and how to trade perpetuals profitably."
+  title: "Perpetual Futures Trading: Leverage & Risk Guide 2026",
+  description: "Master perpetual futures trading mechanics. Learn leverage trading, risk management, funding rates, liquidation, and how to trade perpetuals profitably.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-perpetual-futures-trading'

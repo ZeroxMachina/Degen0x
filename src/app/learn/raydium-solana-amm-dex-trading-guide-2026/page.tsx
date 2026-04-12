@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Raydium Solana AMM: Automated Market Maker & Liquidity Guide"
-  description: "Master Raydium AMM on Solana. Learn liquidity provision, yield farming, impermanent loss, and market making strategies for DeFi traders and LPs."
+  title: "Raydium Solana AMM: Automated Market Maker & Liquidity Guide",
+  description: "Master Raydium AMM on Solana. Learn liquidity provision, yield farming, impermanent loss, and market making strategies for DeFi traders and LPs.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/raydium-solana-amm-dex-trading-guide-2026'

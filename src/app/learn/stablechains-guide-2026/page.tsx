@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://degen0x.com/learn/stablechains-guide-2026',
   },
-}
+};
 
 const articleSchema = generateArticleSchema({
   title: 'Stablechains Guide 2026: Circle Arc, Plasma & Stripe Tempo Explained',

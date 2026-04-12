@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://degen0x.com/learn/stablecoin-payments-guide-2026',
   },
-}
+};
 
 const articleSchema = generateArticleSchema({
   title: 'Stablecoin Payments Guide 2026: GENIUS Act, Cross-Border Transfers & On-Chain Finance',

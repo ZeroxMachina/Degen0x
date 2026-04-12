@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "zkSync Era Elastic Chain Ecosystem Guide 2026"
-  description: "Master zkSync Era's Elastic Chain architecture. Learn zero-knowledge proofs, L2 scaling, custom chains, and DeFi opportunities on the fastest ZK rollup."
+  title: "zkSync Era Elastic Chain Ecosystem Guide 2026",
+  description: "Master zkSync Era's Elastic Chain architecture. Learn zero-knowledge proofs, L2 scaling, custom chains, and DeFi opportunities on the fastest ZK rollup.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/zksync-era-elastic-chain-ecosystem-guide-2026'

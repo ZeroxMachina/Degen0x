@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Token Launchpads & IDO Platforms Guide 2026"
-  description: "Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics analysis."
+  title: "Token Launchpads & IDO Platforms Guide 2026",
+  description: "Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics analysis.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/token-launchpads-ido-platforms-guide-2026'

@@ -5,14 +5,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bitcoin Lightning Network Payments Guide 2026 | Instant Sats Under $0.01'
-  description: 'Complete Lightning Network guide. Instant BTC payments, 1M+ TPS capacity, 4 wallets compared, channel management, routing fees. Buy coffee, books with sats.'
-  keywords: ['bitcoin lightning network', 'lightning payments', 'instant bitcoin', 'sats payments', 'payment channels']
+  title: 'Bitcoin Lightning Network Payments Guide 2026 | Instant Sats Under $0.01',
+  description: 'Complete Lightning Network guide. Instant BTC payments, 1M+ TPS capacity, 4 wallets compared, channel management, routing fees. Buy coffee, books with sats.',
+  keywords: ['bitcoin lightning network', 'lightning payments', 'instant bitcoin', 'sats payments', 'payment channels'],
   openGraph: {
-    title: 'Bitcoin Lightning Network Payments Guide 2026'
-    description: 'Instant Bitcoin payments via Lightning Network. <$0.01 fees, 1M+ TPS capacity.'
+    title: 'Bitcoin Lightning Network Payments Guide 2026',
+    description: 'Instant Bitcoin payments via Lightning Network. <$0.01 fees, 1M+ TPS capacity.',
     image: 'https://degen0x.com/og-spending.svg'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/spending/bitcoin-lightning-payments-guide'

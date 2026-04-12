@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Phishing Attacks & Prevention: Security 2026"
-  description: "Master crypto security. Learn phishing attack vectors, wallet protection, signature verification, and how to secure your digital assets from theft."
+  title: "Crypto Phishing Attacks & Prevention: Security 2026",
+  description: "Master crypto security. Learn phishing attack vectors, wallet protection, signature verification, and how to secure your digital assets from theft.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-phishing-attacks-prevention'

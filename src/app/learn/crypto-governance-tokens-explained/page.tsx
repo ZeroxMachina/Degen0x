@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Governance Tokens: Voting Rights & Protocol Economics"
-  description: "Master crypto governance tokens. Learn voting mechanisms, token economics, protocol participation, and how to evaluate governance token investments."
+  title: "Crypto Governance Tokens: Voting Rights & Protocol Economics",
+  description: "Master crypto governance tokens. Learn voting mechanisms, token economics, protocol participation, and how to evaluate governance token investments.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-governance-tokens-explained'

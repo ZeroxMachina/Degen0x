@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Polygon AggLayer: Unified Liquidity & Interoperability"
-  description: "Master Polygon's AggLayer technology. Learn how unified liquidity pools connect multiple rollups, enabling seamless cross-chain trading and institutional infrastructure."
+  title: "Polygon AggLayer: Unified Liquidity & Interoperability",
+  description: "Master Polygon's AggLayer technology. Learn how unified liquidity pools connect multiple rollups, enabling seamless cross-chain trading and institutional infrastructure.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/polygon-agglayer-unified-liquidity-guide-2026'

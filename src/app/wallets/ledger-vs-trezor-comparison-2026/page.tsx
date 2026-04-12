@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Head-to-head: Ledger Nano X (5,000 coins) vs Trezor Safe 3 (1,800 coins). Open source, Bluetooth, screen, price.',
   keywords: ['ledger vs trezor', 'hardware wallet comparison', 'Ledger Nano X', 'Trezor Safe 3', 'Ledger Stax', 'hardware security'],
   openGraph: { type: 'article', title: 'Ledger vs Trezor 2026', description: 'Compare hardware wallets', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/ledger-vs-trezor-comparison-2026', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'Hardware Wallet Comparison' }] },
-  twitter: { card: 'summary_large_image', title: 'Ledger vs Trezor 2026', description: 'Hardware wallet comparison' }
-,
+  twitter: { card: 'summary_large_image', title: 'Ledger vs Trezor 2026', description: 'Hardware wallet comparison' },
   alternates: {
     canonical: 'https://degen0x.com/wallets/ledger-vs-trezor-comparison-2026',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Ledger vs Trezor Comparison 2026', description: 'Compare hardware wallets', image: 'https://degen0x.com/og-wallets.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Which has more coin support?', acceptedAnswer: { '@type': 'Answer', text: 'Ledger: 5,000+ coins. Trezor: 1,800+ coins. Ledger wider, Trezor focuses on quality.' } }, { '@type': 'Question', name: 'Is Trezor more open source?', acceptedAnswer: { '@type': 'Answer', text: 'Trezor firmware open source. Ledger proprietary (security concern). But Ledger has Secure Element chip (more secure).' } }, { '@type': 'Question', name: 'Which has Bluetooth?', acceptedAnswer: { '@type': 'Answer', text: 'Ledger Nano X/Stax have Bluetooth. Trezor Safe 3 wired USB-C only. Bluetooth more convenient but debate on security.' } }, { '@type': 'Question', name: 'What is Secure Element?', acceptedAnswer: { '@type': 'Answer', text: 'Chip isolating key operations. Only Ledger has it (ST-made). Adds security layer vs pure software. Trezor argues not necessary.' } }, { '@type': 'Question', name: 'Price difference?', acceptedAnswer: { '@type': 'Answer', text: 'Nano X $149, Safe 3 $99, Stax $299, Model T $249. Trezor cheaper, Ledger premium for features.' } }, { '@type': 'Question', name: 'Which for long-term holding?', acceptedAnswer: { '@type': 'Answer', text: 'Both excellent. Ledger Nano X if want Bluetooth + more coins. Trezor Safe 3 if want open source + cheaper. Functionally equivalent.' } }] } };
 
 export default function LedgerVsTrezorComparison() {
@@ -26,8 +27,7 @@ export default function LedgerVsTrezorComparison() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'ledger', t: 'Ledger Models' }, { id: 'trezor', t: 'Trezor Models' }, { id: 'coins', t: 'Coin Support' }, { id: 'opensource', t: 'Open Source' }, { id: 'features', t: 'Features Comparison' }, { id: 'price', t: 'Price vs Value' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'ledger', t: 'Ledger Models' }, { id: 'trezor', t: 'Trezor Models' }, { id: 'coins', t: 'Coin Support' }, { id: 'opensource', t: 'Open Source' }, { id: 'features', t: 'Features Comparison' }, { id: 'price', t: 'Price vs Value' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

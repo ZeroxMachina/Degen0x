@@ -4,14 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Nexo Crypto Loan Review 2026 | 0% with NEXO, 13.9% Standard'
-  description: 'Nexo crypto loans: 0% APR with NEXO token, 5.9-13.9% standard, 15-50% LTV, 40+ collateral assets, instant credit line. Lloyds insured.'
-  keywords: ['Nexo review', 'Nexo crypto loans', 'crypto lending', 'Nexo rates', 'instant loans']
+  title: 'Nexo Crypto Loan Review 2026 | 0% with NEXO, 13.9% Standard',
+  description: 'Nexo crypto loans: 0% APR with NEXO token, 5.9-13.9% standard, 15-50% LTV, 40+ collateral assets, instant credit line. Lloyds insured.',
+  keywords: ['Nexo review', 'Nexo crypto loans', 'crypto lending', 'Nexo rates', 'instant loans'],
   openGraph: {
-    title: 'Nexo Crypto Loan Review 2026'
-    description: 'Complete Nexo review: loan terms, rates, LTV, collateral options, insurance, earnings.'
+    title: 'Nexo Crypto Loan Review 2026',
+    description: 'Complete Nexo review: loan terms, rates, LTV, collateral options, insurance, earnings.',
     image: 'https://degen0x.com/og-crypto-loans.svg'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/nexo-crypto-loan-review'

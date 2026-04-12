@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     image: 'https://degen0x.com/og-mev-pbs-2026.jpg',
   },
   canonical: 'https://degen0x.com/learn/mev-supply-chain-proposer-builder-separation-pbs-guide-2026',
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/mev-supply-chain-proposer-builder-separation-pbs-guide-2026',
-  };
+  }
+};
 const DARK_COLORS = {
   bg: '#0d1117',
   text: '#e6edf3',
@@ -43,8 +43,7 @@ const DARK_COLORS = {
   link: '#58a6ff',
   card: '#161b22',
   border: '#30363d',
-};
-
+}
 const GRADIENT_H1 = 'linear-gradient(135deg, #6366f1, #06b6d4)';
 
 export default function MEVPBSGuide() {

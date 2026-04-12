@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Ethereum Price Prediction 2030 Analysis'
-  description: 'ETH price forecasts for 2030 using DeFi adoption, L2 scaling, staking yields, and smart contract utility metrics. Expert projections from $1.5K to $15K+.'
-  keywords: 'ethereum price 2030, ETH forecast, ethereum valuation, smart contract economics 2030'
+  title: 'Ethereum Price Prediction 2030 Analysis',
+  description: 'ETH price forecasts for 2030 using DeFi adoption, L2 scaling, staking yields, and smart contract utility metrics. Expert projections from $1.5K to $15K+.',
+  keywords: 'ethereum price 2030, ETH forecast, ethereum valuation, smart contract economics 2030',
   openGraph: {
-    title: 'Ethereum Price Prediction 2030'
+    title: 'Ethereum Price Prediction 2030',
     description: 'ETH price forecasts for 2030 based on DeFi adoption, L2 scaling, and staking economics.'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/long-term/ethereum-price-prediction-2030'

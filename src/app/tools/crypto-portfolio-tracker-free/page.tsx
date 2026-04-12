@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Compare portfolio trackers: CoinGecko (free, 15+ chains), DeBank (DeFi), Zapper, Zerion, CoinStats. Track holdings, yield, P&L.',
   keywords: ['crypto portfolio tracker', 'free portfolio tracker 2026', 'CoinGecko', 'DeBank', 'Zapper', 'Zerion', 'portfolio P&L'],
   openGraph: { type: 'article', title: 'Best Portfolio Tracker 2026', description: 'Portfolio tracker comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/tools/crypto-portfolio-tracker-free', images: [{ url: 'https://degen0x.com/og-tools-portfolio.svg', width: 1200, height: 630, alt: 'Portfolio Trackers' }] },
-  twitter: { card: 'summary_large_image', title: 'Portfolio Tracker 2026', description: 'Tracking tool comparison', image: 'https://degen0x.com/og-tools-portfolio.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'Portfolio Tracker 2026', description: 'Tracking tool comparison', image: 'https://degen0x.com/og-tools-portfolio.svg' },
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-portfolio-tracker-free',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Crypto Portfolio Tracker Free 2026', description: 'Portfolio tracking tools', image: 'https://degen0x.com/og-tools.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is CoinGecko portfolio tracker free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, completely free. 15+ chains (Ethereum, Solana, Polygon, etc). Web + mobile. No ads. Syncs exchanges (limited API keys).' } }, { '@type': 'Question', name: 'DeBank for DeFi?', acceptedAnswer: { '@type': 'Answer', text: 'DeBank best for DeFi tracking. Shows LP positions, staking, vault balances. 15+ chains. Liquidity pool P&L. Best for complex DeFi users.' } }, { '@type': 'Question', name: 'What is wallet aggregation?', acceptedAnswer: { '@type': 'Answer', text: 'Connect multiple wallets/exchanges, see total portfolio. Trackers aggregate: one address per wallet, consolidated view.' } }, { '@type': 'Question', name: 'Can portfolio trackers calculate taxes?', acceptedAnswer: { '@type': 'Answer', text: 'No (mostly). They track current holdings, not realized gains. Use tax calculators (Koinly) for realized P&L. Trackers show unrealized.' } }, { '@type': 'Question', name: 'Is on-chain tracking safe?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. View-only (read wallets, no signing). No private keys exposed. Safe for public addresses (non-anon).' } }, { '@type': 'Question', name: 'Best for alerts?', acceptedAnswer: { '@type': 'Answer', text: 'Zapper/Zerion: price alerts ($5k threshold). CoinGecko: basic. DeBank: minimal. Check feature if want alerts.' } }] } };
 
 export default function BestCryptoPortfolioTracker() {
@@ -26,8 +27,7 @@ export default function BestCryptoPortfolioTracker() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'coingecko', t: 'CoinGecko (Free)' }, { id: 'debank', t: 'DeBank (DeFi)' }, { id: 'others', t: 'Others' }, { id: 'features', t: 'Features' }, { id: 'aggregation', t: 'Wallet Aggregation' }, { id: 'comparison', t: 'Comparison' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'coingecko', t: 'CoinGecko (Free)' }, { id: 'debank', t: 'DeBank (DeFi)' }, { id: 'others', t: 'Others' }, { id: 'features', t: 'Features' }, { id: 'aggregation', t: 'Wallet Aggregation' }, { id: 'comparison', t: 'Comparison' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

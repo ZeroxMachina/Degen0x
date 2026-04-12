@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Compare free crypto tax tools: Koinly (25 txns free), CoinTracker (25), CryptoTaxCalculator, TokenTax, CoinLedger. FIFO, LIFO, HIFO cost basis.',
   keywords: ['crypto tax calculator', 'free crypto tax', 'Koinly', 'CoinTracker', 'CryptoTaxCalculator', 'TokenTax', 'crypto tax forms'],
   openGraph: { type: 'article', title: 'Best Crypto Tax Calculator 2026', description: 'Tax calculator comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/tools/crypto-tax-calculator-free', images: [{ url: 'https://degen0x.com/og-tools-tax.svg', width: 1200, height: 630, alt: 'Tax Tools' }] },
-  twitter: { card: 'summary_large_image', title: 'Crypto Tax Calculator 2026', description: 'Tax tool comparison', image: 'https://degen0x.com/og-tools-tax.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'Crypto Tax Calculator 2026', description: 'Tax tool comparison', image: 'https://degen0x.com/og-tools-tax.svg' },
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-tax-calculator-free',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Crypto Tax Calculator 2026', description: 'Tax calculator tools', image: 'https://degen0x.com/og-tools.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Do I need crypto tax calculator?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every trade = taxable event. 100+ transactions = spreadsheet nightmare. Calculators auto-aggregate, track cost basis, generate tax forms.' } }, { '@type': 'Question', name: 'What is cost basis method?', acceptedAnswer: { '@type': 'Answer', text: 'FIFO (first-in-first-out): earliest purchases = costs. LIFO (last-in): newest = costs. HIFO (highest-in): highest cost = less tax. US mostly FIFO.' } }, { '@type': 'Question', name: 'Can I change cost basis method?', acceptedAnswer: { '@type': 'Answer', text: 'US: pick method first year, consistent after. Changing = audit risk. Most people stuck with FIFO unless early adopter.' } }, { '@type': 'Question', name: 'Do DeFi transactions count?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Swaps, liquidity pools, staking rewards = taxable. Calculators handle DeFi if provided transaction data.' } }, { '@type': 'Question', name: 'What do calculators cost?', acceptedAnswer: { '@type': 'Answer', text: 'Koinly: 25 free, ~$50/year for 500. CoinTracker: 25 free. TokenTax: tiered. Most free tiers sufficient for casual traders.' } }, { '@type': 'Question', name: 'Can I use calculator for other countries?', acceptedAnswer: { '@type': 'Answer', text: 'Most US-focused. UK: CryptoTaxCalculator. EU: varies by country. Check country support before purchasing.' } }] } };
 
 export default function BestCryptoTaxCalculator() {
@@ -26,8 +27,7 @@ export default function BestCryptoTaxCalculator() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'Why Tax Tools Matter' }, { id: 'free', t: 'Free Tier Comparison' }, { id: 'cost-basis', t: 'Cost Basis Methods' }, { id: 'defi', t: 'DeFi Support' }, { id: 'features', t: 'Feature Comparison' }, { id: 'country', t: 'Country Support' }, { id: 'choosing', t: 'Choosing' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Why Tax Tools Matter' }, { id: 'free', t: 'Free Tier Comparison' }, { id: 'cost-basis', t: 'Cost Basis Methods' }, { id: 'defi', t: 'DeFi Support' }, { id: 'features', t: 'Feature Comparison' }, { id: 'country', t: 'Country Support' }, { id: 'choosing', t: 'Choosing' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Track token unlocks (cliff vs linear vesting). Major 2026 unlocks: ARB, OP, APT, SUI, STRK. Trading strategy for supply shock.',
   keywords: ['token unlocks', 'vesting schedule', 'token unlock calendar 2026', 'supply shock', 'unlock tracker'],
   openGraph: { type: 'article', title: 'Token Unlocks Calendar 2026', description: 'Token unlock tracking', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/tools/token-unlocks-calendar', images: [{ url: 'https://degen0x.com/og-tools-token-unlocks.svg', width: 1200, height: 630, alt: 'Token Unlocks' }] },
-  twitter: { card: 'summary_large_image', title: 'Token Unlocks 2026', description: 'Unlock calendar and trading', image: 'https://degen0x.com/og-tools-token-unlocks.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'Token Unlocks 2026', description: 'Unlock calendar and trading', image: 'https://degen0x.com/og-tools-token-unlocks.svg' },
   alternates: {
     canonical: 'https://degen0x.com/tools/token-unlocks-calendar',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Token Unlocks Calendar 2026', description: 'Token unlock tracking', image: 'https://degen0x.com/og-tools.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'What are token unlocks?', acceptedAnswer: { '@type': 'Answer', text: 'Vested tokens released on schedule. Founders, investors, employees locked for 1-4 years. Unlock = potential supply increase = price pressure.' } }, { '@type': 'Question', name: 'Cliff vs linear vesting?', acceptedAnswer: { '@type': 'Answer', text: 'Cliff: all tokens locked until date, then released. Linear: gradual release (e.g., 1% monthly). Cliff = sudden supply shock.' } }, { '@type': 'Question', name: 'Why do unlocks matter?', acceptedAnswer: { '@type': 'Answer', text: 'Sell pressure. Founders getting liquid tokens = selling pressure. Large unlocks = price drops historically. Market prices in expectations.' } }, { '@type': 'Question', name: 'Major unlocks 2026?', acceptedAnswer: { '@type': 'Answer', text: 'ARB (Arbitrum): $500M+ locked, releases linearly. OP (Optimism): $250M+. APT, SUI, STRK: significant unlocks. Check token-unlocks.app.' } }, { '@type': 'Question', name: 'How to trade around unlocks?', acceptedAnswer: { '@type': 'Answer', text: 'Sell before unlock (avoid pressure). Buy after panic selling (bottom). Or ignore short-term volatility (long-term holders).' } }, { '@type': 'Question', name: 'Historical price impact?', acceptedAnswer: { '@type': 'Answer', text: 'Varies. Some tokens drop 20-40% pre-unlock. Some ignore. Market prices in unlock risk. Check historical data per token.' } }] } };
 
 export default function TokenUnlocksCalendar() {
@@ -23,8 +24,7 @@ export default function TokenUnlocksCalendar() {
     h3: { fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' },
     badge: { display: 'inline-block', padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16 },
     link: { color: '#58a6ff', textDecoration: 'none' }
-  };
-  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'mechanics', t: 'How Vesting Works' }, { id: 'why-matter', t: 'Why Unlocks Matter' }, { id: 'tracking', t: 'Tracking Tools' }, { id: 'major-2026', t: 'Major Unlocks 2026' }, { id: 'trading', t: 'Trading Strategy' }, { id: 'history', t: 'Historical Impact' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'mechanics', t: 'How Vesting Works' }, { id: 'why-matter', t: 'Why Unlocks Matter' }, { id: 'tracking', t: 'Tracking Tools' }, { id: 'major-2026', t: 'Major Unlocks 2026' }, { id: 'trading', t: 'Trading Strategy' }, { id: 'history', t: 'Historical Impact' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

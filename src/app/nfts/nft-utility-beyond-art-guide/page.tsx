@@ -2,12 +2,12 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'NFT Utility Beyond Art | Access, Ticketing, Identity'
-  description: 'NFT utility guide: token-gated access, ticketing, domain names, credentials. Real use cases beyond collectible art and speculation.'
+  title: 'NFT Utility Beyond Art | Access, Ticketing, Identity',
+  description: 'NFT utility guide: token-gated access, ticketing, domain names, credentials. Real use cases beyond collectible art and speculation.',
   openGraph: {
-    title: 'NFT Utility Beyond Art: Real-World Applications 2026'
+    title: 'NFT Utility Beyond Art: Real-World Applications 2026',
     description: 'Functional NFTs: membership, ticketing, identity, access control with real platform examples.'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-utility-beyond-art-guide'

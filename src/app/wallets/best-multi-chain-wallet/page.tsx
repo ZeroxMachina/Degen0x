@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Multi-chain wallets: Rabby (50+ chains, auto-detect), MetaMask (custom RPCs), Zerion (15+ chains), Trust Wallet (100+).',
   keywords: ['multi chain wallet', 'best multi chain wallet 2026', 'Rabby wallet', 'MetaMask multi chain', 'Zerion'],
   openGraph: { type: 'article', title: 'Best Multi-Chain Wallet 2026', description: 'Multi-chain wallet comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/best-multi-chain-wallet', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'Multi-Chain Wallets' }] },
-  twitter: { card: 'summary_large_image', title: 'Best Multi-Chain Wallet 2026', description: 'Multi-chain comparison' }
-,
+  twitter: { card: 'summary_large_image', title: 'Best Multi-Chain Wallet 2026', description: 'Multi-chain comparison' },
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-multi-chain-wallet',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Multi-Chain Wallet 2026', description: 'Multi-chain wallets', image: 'https://degen0x.com/og-wallets.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Rabby best multi-chain wallet?', acceptedAnswer: { '@type': 'Answer', text: 'Rabby supports 50+ EVM chains. Auto-detects chains from URL. Lowest gas on each chain. Best for Ethereum ecosystem users hopping chains.' } }, { '@type': 'Question', name: 'What is chain auto-detection?', acceptedAnswer: { '@type': 'Answer', text: 'Wallet auto-switches to correct chain when visiting dApp. No manual switching. Rabby pioneer. Now in MetaMask 2026+.' } }, { '@type': 'Question', name: 'Can I swap between chains?', acceptedAnswer: { '@type': 'Answer', text: 'Natively no. But wallets integrate bridge protocols (Across, Stargate, Hop). Cross-chain swaps in-wallet 2026.' } }, { '@type': 'Question', name: 'What is account abstraction in wallets?', acceptedAnswer: { '@type': 'Answer', text: 'Single wallet address across all chains. 2026 trend. Requires bundler/entrypoint smart contracts. Reduces confusion.' } }, { '@type': 'Question', name: 'Best for portfolio tracking?', acceptedAnswer: { '@type': 'Answer', text: 'Zerion. Aggregates 15+ chains. Track yields, positions. Shows total portfolio net worth.' } }, { '@type': 'Question', name: 'Best for gas savings?', acceptedAnswer: { '@type': 'Answer', text: 'Rabby + Layer 2s (Arbitrum, Optimism, Base). Gas 10-100x cheaper than Ethereum mainnet.' } }] } };
 
 export default function BestMultiChainWallet() {
@@ -26,8 +27,7 @@ export default function BestMultiChainWallet() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'rabby', t: 'Rabby: 50+ Chains' }, { id: 'alternatives', t: 'Alternatives' }, { id: 'auto-detect', t: 'Auto-Detection' }, { id: 'bridges', t: 'Cross-Chain Swaps' }, { id: 'account-abstraction', t: 'Account Abstraction' }, { id: 'comparison', t: 'Comparison' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'rabby', t: 'Rabby: 50+ Chains' }, { id: 'alternatives', t: 'Alternatives' }, { id: 'auto-detect', t: 'Auto-Detection' }, { id: 'bridges', t: 'Cross-Chain Swaps' }, { id: 'account-abstraction', t: 'Account Abstraction' }, { id: 'comparison', t: 'Comparison' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

@@ -8,11 +8,12 @@ export const metadata: Metadata = {
   description: 'Compare DeFi lending: Aave V3 ($12B, 8+ chains), Compound V3, MakerDAO/Spark, Morpho, Euler, Venus.',
   keywords: ['defi lending platform', 'best lending protocol 2026', 'Aave V3', 'Compound', 'MakerDAO', 'Morpho lending', 'DeFi APY'],
   openGraph: { type: 'article', title: 'Best DeFi Lending 2026', description: 'Compare DeFi lending platforms', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/defi-lending/best-defi-lending-platform-2026', images: [{ url: 'https://degen0x.com/og-defi.svg', width: 1200, height: 630, alt: 'DeFi Lending' }] },
-  twitter: { card: 'summary_large_image', title: 'Best DeFi Lending 2026', description: 'Lending platform comparison' }
-,
+  twitter: { card: 'summary_large_image', title: 'Best DeFi Lending 2026', description: 'Lending platform comparison' },
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/best-defi-lending-platform-2026',
-  };
+  }
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best DeFi Lending Platform 2026', description: 'DeFi lending comparison', image: 'https://degen0x.com/og-defi.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Aave V3 the best DeFi lending?', acceptedAnswer: { '@type': 'Answer', text: '$12B TVL. 8+ chains (Ethereum, Arbitrum, Optimism, Polygon, Base, etc). Supply 3-5% APY, borrow 6-8%. Governance token AAVE. Audited.' } }, { '@type': 'Question', name: 'What is flash loan?', acceptedAnswer: { '@type': 'Answer', text: 'Aave-only feature. Borrow unlimited, repay same block. No interest. Enables arbitrage, liquidation bots. Flashbots use.' } }, { '@type': 'Question', name: 'What is e-mode in Aave?', acceptedAnswer: { '@type': 'Answer', text: 'Efficiency mode. Correlated assets (stablecoins, ETH) = higher LTV. USDC/USDT: 97% LTV vs 80% normal. Liquidation risk higher.' } }, { '@type': 'Question', name: 'Compound V3 vs Aave V3?', acceptedAnswer: { '@type': 'Answer', text: 'Compound: Ethereum + Base only. Simpler, safer (single token per market). Aave: multi-chain, more features. Aave dominant.' } }, { '@type': 'Question', name: 'Is MakerDAO lending?', acceptedAnswer: { '@type': 'Answer', text: 'MakerDAO: over-collateralized loans (deposit ETH, borrow DAI). Spark protocol (new). Similar to Aave but DAI-focused.' } }, { '@type': 'Question', name: 'What is liquidation risk?', acceptedAnswer: { '@type': 'Answer', text: 'If collateral price drops, loan liquidated. Lose collateral. Aave max 80% LTV for safety. Flash crashes = liquidation cascade.' } }] } };
 
 export default function BestDefiLendingPlatform() {
@@ -26,8 +27,7 @@ export default function BestDefiLendingPlatform() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-  const toc = [{ id: 'overview', t: 'DeFi Lending Overview' }, { id: 'aave', t: 'Aave V3' }, { id: 'competitors', t: 'Competitors' }, { id: 'mechanics', t: 'Lending Mechanics' }, { id: 'risks', t: 'Risks' }, { id: 'comparison', t: 'Comparison' }, { id: 'choosing', t: 'Choosing' }, { id: 'faq', t: 'FAQ' }];
+  }  const toc = [{ id: 'overview', t: 'DeFi Lending Overview' }, { id: 'aave', t: 'Aave V3' }, { id: 'competitors', t: 'Competitors' }, { id: 'mechanics', t: 'Lending Mechanics' }, { id: 'risks', t: 'Risks' }, { id: 'comparison', t: 'Comparison' }, { id: 'choosing', t: 'Choosing' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>

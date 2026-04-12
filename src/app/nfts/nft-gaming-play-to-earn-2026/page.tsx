@@ -4,15 +4,15 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods Unchained | degen0x'
-  description: 'NFT gaming & play-to-earn 2026: Axie Infinity, Illuvium, Gods Unchained, Big Time, Star Atlas. P2E models, gaming guilds, sustainability analysis.'
-  keywords: ['nft gaming 2026', 'play-to-earn games', 'Axie Infinity', 'Illuvium', 'Gods Unchained', 'P2E sustainability', 'gaming guilds', 'blockchain games']
+  title: 'NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods Unchained | degen0x',
+  description: 'NFT gaming & play-to-earn 2026: Axie Infinity, Illuvium, Gods Unchained, Big Time, Star Atlas. P2E models, gaming guilds, sustainability analysis.',
+  keywords: ['nft gaming 2026', 'play-to-earn games', 'Axie Infinity', 'Illuvium', 'Gods Unchained', 'P2E sustainability', 'gaming guilds', 'blockchain games'],
   openGraph: {
-    title: 'NFT Gaming & Play-to-Earn 2026'
-    description: 'Analyze top P2E games: earning models, investment required, guild systems, game evolution, token economics.'
-    url: 'https://degen0x.com/nfts/nft-gaming-play-to-earn-2026'
+    title: 'NFT Gaming & Play-to-Earn 2026',
+    description: 'Analyze top P2E games: earning models, investment required, guild systems, game evolution, token economics.',
+    url: 'https://degen0x.com/nfts/nft-gaming-play-to-earn-2026',
     type: 'article'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-gaming-play-to-earn-2026'

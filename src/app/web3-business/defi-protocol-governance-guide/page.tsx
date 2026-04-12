@@ -4,15 +4,15 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Protocol Governance Guide 2026 | Token Voting, ve-Model | degen0x'
-  description: 'DeFi governance frameworks: token-weighted voting (Uniswap), ve-model (Curve), delegation (Arbitrum), optimistic (Nouns), Moloch. Governance attacks, Snapshot voting.'
-  keywords: ['defi protocol governance', 'token voting', 've-model', 'governance attacks', 'Snapshot voting', 'Uniswap governance', 'Curve governance', 'DAO governance']
+  title: 'DeFi Protocol Governance Guide 2026 | Token Voting, ve-Model | degen0x',
+  description: 'DeFi governance frameworks: token-weighted voting (Uniswap), ve-model (Curve), delegation (Arbitrum), optimistic (Nouns), Moloch. Governance attacks, Snapshot voting.',
+  keywords: ['defi protocol governance', 'token voting', 've-model', 'governance attacks', 'Snapshot voting', 'Uniswap governance', 'Curve governance', 'DAO governance'],
   openGraph: {
-    title: 'DeFi Protocol Governance 2026'
-    description: 'Master DAO governance models: token voting, ve-tokenomics, delegate systems, attack resistance, voting platforms.'
-    url: 'https://degen0x.com/web3-business/defi-protocol-governance-guide'
+    title: 'DeFi Protocol Governance 2026',
+    description: 'Master DAO governance models: token voting, ve-tokenomics, delegate systems, attack resistance, voting platforms.',
+    url: 'https://degen0x.com/web3-business/defi-protocol-governance-guide',
     type: 'article'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/defi-protocol-governance-guide'

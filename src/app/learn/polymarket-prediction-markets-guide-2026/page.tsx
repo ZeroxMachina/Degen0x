@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       'Polymarket'
     ]
   }
-}
+};
 
 const structuredDataSchema = {
   '@context': 'https://schema.org',

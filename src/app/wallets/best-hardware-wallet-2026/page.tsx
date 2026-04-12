@@ -8,12 +8,11 @@ export const metadata: Metadata = {
   description: 'Hardware wallet comparison: Ledger Nano X ($79, 1000+ coins), Trezor Model T ($180, open-source), Safe 3 ($299, EVM), Keystone Pro, BitBox02. Prices, features, security.',
   keywords: ['best hardware wallet', 'hardware wallet comparison', 'Ledger Nano X', 'Trezor', 'cold wallet', 'self-custody'],
   openGraph: { type: 'article', title: 'Best Hardware Wallet 2026', description: 'Ledger, Trezor, Keystone comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/best-hardware-wallet-2026', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'Hardware Wallets' }] },
-  twitter: { card: 'summary_large_image', title: 'Best Hardware Wallet', description: 'Ledger $79, Trezor $180', image: 'https://degen0x.com/og-wallets.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'Best Hardware Wallet', description: 'Ledger $79, Trezor $180', image: 'https://degen0x.com/og-wallets.svg' },
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-hardware-wallet-2026',
-  };
-const structuredData = {
+  }
+};export const const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Best Hardware Wallet 2026: Ledger Nano X, Trezor, Safe, Keystone, BitBox02 Comparison',
@@ -34,7 +33,6 @@ const structuredData = {
     ]
   }
 };
-
 export default function BestHardwareWallet2026() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #22c55e', borderLeft: '3px solid #22c55e', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -46,8 +44,7 @@ export default function BestHardwareWallet2026() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  };
-
+  }
   const toc = [
     { id: 'overview', t: 'Overview' },
     { id: 'ledger-nano', t: 'Ledger Nano X ($79)' },

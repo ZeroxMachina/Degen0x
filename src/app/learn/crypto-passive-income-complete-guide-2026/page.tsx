@@ -43,10 +43,10 @@ export const metadata: Metadata = {
   authors: [{ name: 'degen0x' }],
   publishedTime: new Date('2026-04-04'),
   modifiedTime: new Date('2026-04-04'),
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-passive-income-complete-guide-2026',
-  };
+  }
+};
 const JsonLd = () => {
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -71,8 +71,7 @@ const JsonLd = () => {
         item: 'https://degen0x.com/learn/crypto-passive-income-complete-guide-2026',
       },
     ],
-  };
-
+  }
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -138,8 +137,7 @@ const JsonLd = () => {
         },
       ],
     },
-  };
-
+  }
   return (
     <>
       <script
@@ -152,8 +150,7 @@ const JsonLd = () => {
       />
     </>
   );
-};
-
+}
 const TableOfContents = () => {
   const sections = [
     { id: 'what-is-crypto-passive-income', label: 'What is Crypto Passive Income?' },
@@ -204,8 +201,7 @@ const TableOfContents = () => {
       </ul>
     </nav>
   );
-};
-
+}
 const InfoBox = ({ children }: { children: React.ReactNode }) => (
   <div
     style={{
@@ -233,8 +229,7 @@ const Badge = ({
     beginner: { bg: '#238636', text: '#e6edf3' },
     intermediate: { bg: '#d29922', text: '#0d1117' },
     advanced: { bg: '#da3633', text: '#e6edf3' },
-  };
-
+  }
   const style = colors[type];
 
   return (
@@ -254,8 +249,7 @@ const Badge = ({
       {label}
     </span>
   );
-};
-
+}
 const RiskComparisonTable = () => (
   <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', marginBottom: 40 }}>
     <table

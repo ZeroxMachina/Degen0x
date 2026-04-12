@@ -8,12 +8,11 @@ export const metadata: Metadata = {
   description: 'Mint NFT guide: prepare artwork (PNG/GIF/video), choose blockchain (Ethereum $50-500 gas, Solana <$1, Polygon $1-5), select marketplace (OpenSea, Magic Eden), upload metadata.',
   keywords: ['how to mint nft', 'mint nft step by step', 'nft minting cost', 'openSea minting', 'solana nft mint'],
   openGraph: { type: 'article', title: 'How to Mint NFT 2026', description: 'NFT minting guide: ETH, Solana, Polygon costs and steps', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/nfts/how-to-mint-nft-step-by-step', images: [{ url: 'https://degen0x.com/og-nfts.svg', width: 1200, height: 630, alt: 'NFT Minting' }] },
-  twitter: { card: 'summary_large_image', title: 'How to Mint NFT', description: 'NFT minting guide: Ethereum, Solana, Polygon', image: 'https://degen0x.com/og-nfts.svg' }
-,
+  twitter: { card: 'summary_large_image', title: 'How to Mint NFT', description: 'NFT minting guide: Ethereum, Solana, Polygon', image: 'https://degen0x.com/og-nfts.svg' },
   alternates: {
     canonical: 'https://degen0x.com/nfts/how-to-mint-nft-step-by-step',
-  };
-const structuredData = {
+  }
+};export const const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'How to Mint NFT Step-by-Step 2026: Complete Guide to Creating and Minting NFTs',
@@ -34,7 +33,6 @@ const structuredData = {
     ]
   }
 };
-
 export default function HowToMintNFTStepByStep() {
   const tableOfContents = [
     { id: 'prepare-artwork', title: 'Step 1: Prepare Your Artwork' },
@@ -63,8 +61,7 @@ export default function HowToMintNFTStepByStep() {
     padding: 20,
     marginBottom: 24,
     lineHeight: 1.8,
-  };
-
+  }
   const h1Style = {
     fontSize: 36,
     fontWeight: 800,
@@ -73,16 +70,14 @@ export default function HowToMintNFTStepByStep() {
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     backgroundClip: 'text',
-  };
-
+  }
   const h2Style = {
     fontSize: 24,
     fontWeight: 700,
     marginTop: 40,
     marginBottom: 16,
     color: '#f472b6', borderBottom: '2px solid #5b2141', paddingBottom: 12,
-  };
-
+  }
   const badgeStyle = {
     display: 'inline-block',
     padding: '6px 12px',
@@ -91,20 +86,17 @@ export default function HowToMintNFTStepByStep() {
     fontWeight: 600,
     marginRight: 8,
     marginBottom: 16,
-  };
-
+  }
   const linkStyle = {
     color: '#58a6ff',
     textDecoration: 'none',
-  };
-
+  }
   const tableStyle = {
     width: '100%',
     borderCollapse: 'collapse' as const,
     marginBottom: 24,
     fontSize: 14,
-  };
-
+  }
   const thStyle = {
     background: '#0d1117',
     border: '1px solid #30363d',
@@ -112,14 +104,12 @@ export default function HowToMintNFTStepByStep() {
     textAlign: 'left' as const,
     fontWeight: 700,
     color: '#e6edf3',
-  };
-
+  }
   const tdStyle = {
     border: '1px solid #30363d',
     padding: 12,
     color: '#8b949e',
-  };
-
+  }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

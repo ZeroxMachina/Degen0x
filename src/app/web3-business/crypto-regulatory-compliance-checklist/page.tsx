@@ -5,14 +5,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Regulatory Compliance Checklist 2026 | KYC AML MSB'
-  description: 'Crypto compliance guide: KYC/AML requirements, FinCEN MSB registration, state money transmitter licenses, Howey test, travel rule. Penalties & timelines.'
-  keywords: ['crypto compliance', 'KYC AML', 'MSB registration', 'money transmitter license', 'securities law']
+  title: 'Crypto Regulatory Compliance Checklist 2026 | KYC AML MSB',
+  description: 'Crypto compliance guide: KYC/AML requirements, FinCEN MSB registration, state money transmitter licenses, Howey test, travel rule. Penalties & timelines.',
+  keywords: ['crypto compliance', 'KYC AML', 'MSB registration', 'money transmitter license', 'securities law'],
   openGraph: {
-    title: 'Crypto Regulatory Compliance Checklist 2026'
-    description: 'Complete regulatory requirements for crypto businesses. KYC/AML, MSB, state licenses, Howey test.'
+    title: 'Crypto Regulatory Compliance Checklist 2026',
+    description: 'Complete regulatory requirements for crypto businesses. KYC/AML, MSB, state licenses, Howey test.',
     image: 'https://degen0x.com/og-web3-business.svg'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/crypto-regulatory-compliance-checklist'

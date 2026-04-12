@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Drift Protocol: Solana Perpetual Futures DEX Guide 2026"
-  description: "Master Drift Protocol on Solana. Learn perpetual futures trading, leverage mechanics, risk management, and how to trade with institutional-grade infrastructure."
+  title: "Drift Protocol: Solana Perpetual Futures DEX Guide 2026",
+  description: "Master Drift Protocol on Solana. Learn perpetual futures trading, leverage mechanics, risk management, and how to trade with institutional-grade infrastructure.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/drift-protocol-solana-perps-dex-guide-2026'

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Berachain Proof of Liquidity Guide 2026"
-  description: "Master Berachain's Proof of Liquidity consensus mechanism. Learn how incentive structures reward liquidity providers, MEV-resistant design, and farming economics."
+  title: "Berachain Proof of Liquidity Guide 2026",
+  description: "Master Berachain's Proof of Liquidity consensus mechanism. Learn how incentive structures reward liquidity providers, MEV-resistant design, and farming economics.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/berachain-proof-of-liquidity-guide-2026'

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-index-funds-guide-2026',
   },
-}
+};
 
 const articleSchema = generateArticleSchema({
   title: 'Crypto Index Funds Guide 2026: DeFi Indexes, ETFs & Onchain Basket Investing',

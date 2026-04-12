@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Cosmos IBC: Interchain Communication & Liquidity 2026"
-  description: "Master Cosmos IBC protocol. Learn interchain composability, hub economics, and how IBC enables true blockchain interoperability across 50+ chains."
+  title: "Cosmos IBC: Interchain Communication & Liquidity 2026",
+  description: "Master Cosmos IBC protocol. Learn interchain composability, hub economics, and how IBC enables true blockchain interoperability across 50+ chains.",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/cosmos-ibc-interchain-ecosystem-guide-2026'

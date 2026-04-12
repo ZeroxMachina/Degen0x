@@ -4,17 +4,17 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV Solutions"
-  description: "Solana Alpenglow consensus upgrade guide 2026. MEV resistance, state compression, validator performance improvements."
-  keywords: ["Solana", "Alpenglow", "consensus", "MEV", "state compression"]
+  title: "Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV Solutions",
+  description: "Solana Alpenglow consensus upgrade guide 2026. MEV resistance, state compression, validator performance improvements.",
+  keywords: ["Solana", "Alpenglow", "consensus", "MEV", "state compression"],
   openGraph: {
-    type: "article"
-    title: "Solana Alpenglow Guide 2026 | degen0x"
-    description: "Consensus upgrade with MEV resistance and state compression."
-    publishedTime: "2026-04-07T00:00:00Z"
-    modifiedTime: "2026-04-10T00:00:00Z"
+    type: "article",
+    title: "Solana Alpenglow Guide 2026 | degen0x",
+    description: "Consensus upgrade with MEV resistance and state compression.",
+    publishedTime: "2026-04-07T00:00:00Z",
+    modifiedTime: "2026-04-10T00:00:00Z",
     url: "https://degen0x.com/learn/solana-alpenglow-consensus-upgrade-guide-2026"
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/learn/solana-alpenglow-consensus-upgrade-guide-2026'

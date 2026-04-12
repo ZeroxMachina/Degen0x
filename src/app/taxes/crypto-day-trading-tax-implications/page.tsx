@@ -4,15 +4,15 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Day Trading Tax Implications | Short-Term Capital Gains | degen0x'
-  description: 'Understand crypto day trading taxes: short-term capital gains taxed up to 37%, wash sale rules, Mark-to-Market election, Schedule C vs D reporting, quarterly estimated taxes.'
-  keywords: ['crypto day trading taxes', 'short-term capital gains', 'wash sale rules', 'Mark-to-Market election', 'Schedule C', 'quarterly estimated taxes', 'trader tax status']
+  title: 'Crypto Day Trading Tax Implications | Short-Term Capital Gains | degen0x',
+  description: 'Understand crypto day trading taxes: short-term capital gains taxed up to 37%, wash sale rules, Mark-to-Market election, Schedule C vs D reporting, quarterly estimated taxes.',
+  keywords: ['crypto day trading taxes', 'short-term capital gains', 'wash sale rules', 'Mark-to-Market election', 'Schedule C', 'quarterly estimated taxes', 'trader tax status'],
   openGraph: {
-    title: 'Crypto Day Trading Tax Implications'
-    description: 'Master short-term capital gains, wash sales, trader status, and quarterly tax obligations.'
-    url: 'https://degen0x.com/taxes/crypto-day-trading-tax-implications'
+    title: 'Crypto Day Trading Tax Implications',
+    description: 'Master short-term capital gains, wash sales, trader status, and quarterly tax obligations.',
+    url: 'https://degen0x.com/taxes/crypto-day-trading-tax-implications',
     type: 'article'
-  }
+  },
 
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-day-trading-tax-implications'
