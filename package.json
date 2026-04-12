@@ -7,7 +7,7 @@
     "prebuild": "node scripts/generate-page-manifest.mjs",
     "build": "node scripts/prebuild-fix.mjs && NODE_OPTIONS='--max-old-space-size=7168' next build --webpack",
     "start": "next start",
-    "serve": "npx serve out -l 3000"
+    "serve": "npx serve out -l 3000",
     "lint": "next lint"
   },
   "dependencies": {
