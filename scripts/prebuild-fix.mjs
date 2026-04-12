@@ -1,6 +1,6 @@
 // prebuild-fix.mjs — Runs before next build to fix known issues
 // 1. Adds gnosis chain to Chain type and CHAINS_META if missing
-// 2. Strips onMouseEnter/onMouseLeave from server component pages
+// 2. Strips ALL event handlers (on*) from server component pages
 
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
@@ -29,8 +29,10 @@ if (!dapps.includes("gnosis: {")) {
 
 writeFileSync(dappsPath, dapps);
 
-// ── Fix 2: Strip event handlers from server component pages ──────────
-const mousePattern = /\s*onMouse(?:Enter|Leave)=\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\}/gs;
+// ── Fix 2: Strip ALL event handlers from server component pages ──────
+// Matches on[A-Z]...={...} with up to 3 levels of nested braces
+const eventHandlerPattern = /\s*on[A-Z][a-zA-Z]+=\{(?:[^{}]|\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\})*\}/gs;
+const eventHandlerTest = /\bon[A-Z][a-zA-Z]+=\{/;
 
 function walk(dir) {
   for (const entry of readdirSync(dir)) {
@@ -39,11 +41,11 @@ function walk(dir) {
     if (st.isDirectory()) { walk(full); continue; }
     if (!full.endsWith('/page.tsx')) continue;
     let src = readFileSync(full, 'utf8');
-    if (!src.includes('onMouseEnter') && !src.includes('onMouseLeave')) continue;
+    if (!eventHandlerTest.test(src)) continue;
     // Skip client components
     const head = src.slice(0, 200);
     if (head.includes("'use client'") || head.includes('"use client"')) continue;
-    const cleaned = src.replace(mousePattern, '');
+    const cleaned = src.replace(eventHandlerPattern, '');
     if (cleaned !== src) {
       writeFileSync(full, cleaned);
       console.log('[prebuild] Stripped event handlers from', full.replace(ROOT + '/', ''));
