@@ -183,7 +183,7 @@ export default function AltcoinETFTrackerPage() {
   function handleSort(key: SortKey) {
     if (sortKey === key) setSortDir(d => d === 'desc' ? 'asc' : 'desc');
     else { setSortKey(key); setSortDir('desc'); }
-  }
+  };
 
   const SortIcon = ({ col }: { col: SortKey }) => {
     if (sortKey !== col) return <ChevronDown size={12} style={{ opacity: 0.3 }} />;

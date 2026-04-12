@@ -24,7 +24,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-a-liquidity-pool',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

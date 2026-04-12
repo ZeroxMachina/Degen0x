@@ -417,7 +417,8 @@ export default function KarakNetworkGuidePage() {
                 <p style={{ color: S.text, fontWeight: 700, marginBottom: 6 }}>{title}</p>
                 <p style={{ color: S.text2, lineHeight: 1.7 }}>{body}</p>
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -428,7 +429,7 @@ export default function KarakNetworkGuidePage() {
           section="learn"
         />
 
-          ))}
+
           <p style={{ color: S.text2, lineHeight: 1.8, marginTop: 8 }}>
             Track your DeFi yields and restaking positions in our{" "}
             <a href="/tools/defi-yields" style={{ color: S.primary }}>DeFi Yields tool</a>.

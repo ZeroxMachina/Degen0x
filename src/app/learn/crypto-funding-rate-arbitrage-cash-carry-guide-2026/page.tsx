@@ -78,20 +78,7 @@ const page = () => {
           text: "Bitcoin (BTC): largest basis and funding (1-2%), high liquidity. Most capital deployed here. Ethereum (ETH): similar to BTC, slightly higher risk. Altcoins (SOL, MATIC): volatile basis (2-5%), but high liquidation risk (spot can gap 20%+ in bear markets). Stablecoins: minimal basis, high funding (2-5% annually), very safe. Professional traders: split capital 50% Bitcoin, 30% Ethereum, 20% stablecoins (risk/reward optimized). Beginners: stablecoins only (no directional risk)."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Funding Rate Arbitrage: Cash & Carry Trading Guide 2026',
-    description: 'Master funding rate arbitrage and cash-and-carry strategies. Learn delta-neutral trading, spot-future spreads, and 5-20% annual risk-free returns.',
-    url: 'https://degen0x.com/learn/crypto-funding-rate-arbitrage-cash-carry-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Funding Rate Arbitrage: Cash & Carry Trading Guide 2026',
-    description: 'Master funding rate arbitrage and cash-and-carry strategies. Learn delta-neutral trading, spot-future spreads, and 5-20% annual risk-free returns.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -200,20 +187,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Funding Rate Arbitrage: Cash & Carry Trading Guide 2026',
-    description: 'Master funding rate arbitrage and cash-and-carry strategies. Learn delta-neutral trading, spot-future spreads, and 5-20% annual risk-free returns.',
-    url: 'https://degen0x.com/learn/crypto-funding-rate-arbitrage-cash-carry-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Funding Rate Arbitrage: Cash & Carry Trading Guide 2026',
-    description: 'Master funding rate arbitrage and cash-and-carry strategies. Learn delta-neutral trading, spot-future spreads, and 5-20% annual risk-free returns.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

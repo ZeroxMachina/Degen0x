@@ -181,7 +181,8 @@ export default function RailgunPrivacyGuidePage() {
               <div className="text-sm font-bold" style={{ color: "var(--color-text)" }}>
                 {s.value}
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -192,7 +193,7 @@ export default function RailgunPrivacyGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
         <p className="text-xs mt-3" style={{ color: "var(--color-text-secondary)" }}>
           Data approximate as of March 2026. Sources: DefiLlama, Railgun Foundation, on-chain metrics.

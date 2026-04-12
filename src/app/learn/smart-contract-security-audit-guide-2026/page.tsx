@@ -797,9 +797,6 @@ export default function SmartContractSecurityAuditPage() {
         </section>
 
         <BackToTop />
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -808,6 +805,8 @@ export default function SmartContractSecurityAuditPage() {
           readingTime={3}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

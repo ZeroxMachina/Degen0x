@@ -32,7 +32,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/sui-move-blockchain-ecosystem-guide-2026',
-  };
+  },
+};
+
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

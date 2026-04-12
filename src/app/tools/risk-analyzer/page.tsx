@@ -75,7 +75,7 @@ function runMonteCarlo(assets: Asset[], periods: number, simulations: number): S
       const corr = CORRELATION[assets[i].correlationGroup]?.[assets[j].correlationGroup] ?? 0.5;
       portVar += weights[i] * weights[j] * monthlyVols[i] * monthlyVols[j] * corr;
     }
-  }
+  };
   const portVol = Math.sqrt(Math.max(portVar, 0.0001));
   const portReturn = weights.reduce((s, w, i) => s + w * monthlyReturns[i], 0);
 

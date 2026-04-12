@@ -380,7 +380,8 @@ export default function BitcoinLSTGuidePage() {
               </div>
               <div style={{ fontSize: 11, color: "#6e7681", marginTop: 2 }}>{stat.label}</div>
               <div style={{ fontSize: 11, color: "#484f58" }}>{stat.sub}</div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -391,7 +392,7 @@ export default function BitcoinLSTGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </section>
 

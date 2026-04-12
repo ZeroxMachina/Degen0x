@@ -25,7 +25,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/exchanges/crypto-exchange-withdrawal-limits-comparison',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

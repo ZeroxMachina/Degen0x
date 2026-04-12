@@ -432,7 +432,8 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
                 <div style={{ fontSize: 14, fontWeight: 700, color: S.cyan }}>
                   {item.value}
                 </div>
-              </div>
+              </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -443,7 +444,7 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
           section="learn"
         />
 
-            ))}
+
           </div>
 
           <h3

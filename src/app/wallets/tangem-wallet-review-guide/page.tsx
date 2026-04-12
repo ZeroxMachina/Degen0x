@@ -38,7 +38,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/wallets/tangem-wallet-review-guide',
-  };
+  },
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

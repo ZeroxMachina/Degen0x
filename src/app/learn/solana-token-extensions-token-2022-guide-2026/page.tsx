@@ -28,7 +28,8 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/solana-token-extensions-token-2022-guide-2026',
-  };
+  }
+};
 // Article + FAQPage structured data
 const structuredData = {
   "@context": "https://schema.org",
@@ -925,9 +926,6 @@ await initializeTransferHook(
     >
           Back to Top
         </a>
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -936,6 +934,8 @@ await initializeTransferHook(
           readingTime={13}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

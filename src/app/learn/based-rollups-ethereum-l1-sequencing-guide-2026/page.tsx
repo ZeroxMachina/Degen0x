@@ -42,7 +42,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/based-rollups-ethereum-l1-sequencing-guide-2026',
-  };
+  },
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Article", "FAQPage"],

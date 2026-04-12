@@ -123,7 +123,8 @@ export default function AIAgentPaymentsGuide() {
             <div key={index}>
               <div className="text-sm" style={{ color: "var(--color-text-secondary)" }}>{stat.label}</div>
               <div className="text-xl font-extrabold" style={{ color: "#8b5cf6" }}>{stat.value}</div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -134,7 +135,7 @@ export default function AIAgentPaymentsGuide() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

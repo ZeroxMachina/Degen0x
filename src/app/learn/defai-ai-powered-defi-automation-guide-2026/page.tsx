@@ -78,20 +78,7 @@ const page = () => {
           text: "If AI agents achieve even 10% of DeFi's $100B TVL, operating costs → revenue → token value accrual. Agents that solve real problems (arbitrage, risk management) will capture fees. Early DeFAI token investors (pre-product-market-fit) are funding the infrastructure layer. Winners: 50-100x. Losers: 100% loss (most projects fail). Time horizon: 2-3 years to inflection. Portfolio construction: 1-2% DeFAI allocation maximum (venture capital risk/reward). Diversify across 10+ projects (expect 80% failure)."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'DeFAI: AI-Powered DeFi Automation & Trading Guide 2026',
-    description: 'Master DeFAI protocols. Learn AI agents, automated trading, portfolio optimization, and how artificial intelligence transforms DeFi investing at scale.',
-    url: 'https://degen0x.com/learn/defai-ai-powered-defi-automation-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'DeFAI: AI-Powered DeFi Automation & Trading Guide 2026',
-    description: 'Master DeFAI protocols. Learn AI agents, automated trading, portfolio optimization, and how artificial intelligence transforms DeFi investing at scale.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -215,20 +202,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'DeFAI: AI-Powered DeFi Automation & Trading Guide 2026',
-    description: 'Master DeFAI protocols. Learn AI agents, automated trading, portfolio optimization, and how artificial intelligence transforms DeFi investing at scale.',
-    url: 'https://degen0x.com/learn/defai-ai-powered-defi-automation-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'DeFAI: AI-Powered DeFi Automation & Trading Guide 2026',
-    description: 'Master DeFAI protocols. Learn AI agents, automated trading, portfolio optimization, and how artificial intelligence transforms DeFi investing at scale.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

@@ -48,7 +48,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/babylon-protocol-bitcoin-staking-guide-2026',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],
@@ -806,9 +808,6 @@ export default function BabylonProtocolGuide() {
 
         {/* JSON-LD structured data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -817,6 +816,8 @@ export default function BabylonProtocolGuide() {
           readingTime={13}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

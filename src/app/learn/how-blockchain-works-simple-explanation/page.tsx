@@ -19,7 +19,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/how-blockchain-works-simple-explanation',
-  };
+  },
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

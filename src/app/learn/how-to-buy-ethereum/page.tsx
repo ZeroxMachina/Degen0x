@@ -135,7 +135,8 @@ export default function HowToBuyEthereumPage() {
                 <div style={{ fontSize: 11, color: S.text2, marginBottom: 4, textTransform: "uppercase", letterSpacing: "0.05em" }}>{c.title}</div>
                 <div style={{ fontWeight: 800, fontSize: 16, color: S.text }}>{c.val}</div>
                 <div style={{ fontSize: 11, color: S.text2, marginTop: 2 }}>{c.sub}</div>
-              </div>
+              </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -146,7 +147,7 @@ export default function HowToBuyEthereumPage() {
           section="learn"
         />
 
-            ))}
+
           </div>
         </section>
 

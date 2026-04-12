@@ -126,7 +126,7 @@ export default function WalletComparisonsHub() {
       </div>
     </>
   );
-}
+};
 
 const styles = {
   container: {

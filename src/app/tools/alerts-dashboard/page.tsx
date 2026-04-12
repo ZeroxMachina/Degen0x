@@ -30,7 +30,7 @@ const ALERT_CATEGORIES: AlertCategory[] = ["Price", "Whale", "Volume", "Sentimen
 // ─── Utils ────────────────────────────────────────────────────────────────
 function genId(): string {
   return Math.random().toString(36).slice(2) + Date.now().toString(36);
-}
+};
 
 const LS_KEY = "cd_alerts_dashboard_v1";
 

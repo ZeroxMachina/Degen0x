@@ -221,7 +221,8 @@ export default function CryptoDebitCardsGuide2026Page() {
                 <span className="font-semibold" style={{ color: "var(--color-text)" }}>{label}:</span>{" "}
                 <span style={{ color: "var(--color-text-secondary)" }}>{pick}</span>
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -232,7 +233,7 @@ export default function CryptoDebitCardsGuide2026Page() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

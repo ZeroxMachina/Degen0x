@@ -177,7 +177,8 @@ export default function JupiterSolanaGuidePage() {
               <div className="text-sm font-bold" style={{ color: "var(--color-text)" }}>
                 {s.value}
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -188,7 +189,7 @@ export default function JupiterSolanaGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

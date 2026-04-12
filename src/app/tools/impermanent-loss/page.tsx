@@ -81,7 +81,7 @@ function ILCurveChart({ weightA, currentRatio }: { weightA: number; currentRatio
     const il = calculateIL(r, weightA);
     if (il < minIL) minIL = il;
     points.push({ x: 0, y: 0, ratio: r, il });
-  }
+  };
 
   const maxRatio = 5;
   const ilRange = Math.abs(minIL) * 1.15;
@@ -89,7 +89,7 @@ function ILCurveChart({ weightA, currentRatio }: { weightA: number; currentRatio
   for (const p of points) {
     p.x = pad.left + (p.ratio / maxRatio) * cw;
     p.y = pad.top + (1 - (p.il + ilRange) / ilRange) * ch;
-  }
+  };
 
   const pathD = points.map((p, i) => `${i === 0 ? "M" : "L"} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(" ");
 

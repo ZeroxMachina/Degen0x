@@ -22,7 +22,8 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/exchanges/crypto-exchange-proof-of-reserves-comparison',
-  };
+  }
+};
 export default function ProofOfReservesPage() {
   const containerStyle = {
     backgroundColor: '#0d1117',

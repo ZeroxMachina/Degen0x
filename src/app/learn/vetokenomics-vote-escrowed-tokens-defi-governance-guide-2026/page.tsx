@@ -29,7 +29,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/vetokenomics-vote-escrowed-tokens-defi-governance-guide-2026',
-  };
+  },
+};
+
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

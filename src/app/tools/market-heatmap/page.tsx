@@ -89,7 +89,7 @@ function changeColor(val: number, alpha = 1): string {
   if (val > 0) {
     const intensity = Math.min(val / 15, 1);
     return `rgba(34, 197, 94, ${0.15 + intensity * 0.85 * alpha})`;
-  }
+  };
   const intensity = Math.min(Math.abs(val) / 15, 1);
   return `rgba(239, 68, 68, ${0.15 + intensity * 0.85 * alpha})`;
 }

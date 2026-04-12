@@ -40,7 +40,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/wallets/keystone-wallet-review-guide',
-  };
+  },
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

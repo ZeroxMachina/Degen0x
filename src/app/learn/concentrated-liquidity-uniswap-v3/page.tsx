@@ -20,7 +20,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/concentrated-liquidity-uniswap-v3',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -475,13 +477,13 @@ export default function ConcentratedLiquidityUniswapV3() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/tools/blockchain-explorer-tool" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Blockchain Explorer Tool</Link></li>
-            <li><Link href="/tools/compound-interest-crypto-calculator" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Compound Interest Crypto Calculator</Link></li>
-            <li><Link href="/tools/crypto-airdrop-tracker" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Airdrop Tracker</Link></li>
-            <li><Link href="/tools/crypto-correlation-matrix" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Correlation Matrix</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/tools/blockchain-explorer-tool" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Blockchain Explorer Tool</Link></li>
+            <li><Link href="/tools/compound-interest-crypto-calculator" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Compound Interest Crypto Calculator</Link></li>
+            <li><Link href="/tools/crypto-airdrop-tracker" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Airdrop Tracker</Link></li>
+            <li><Link href="/tools/crypto-correlation-matrix" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Correlation Matrix</Link></li>
           </ul>
         </nav>
 

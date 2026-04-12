@@ -367,7 +367,8 @@ export default function LidoV3stVaultsGuide() {
                 </div>
                 <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 4 }}>{step.title}</div>
                 <div style={{ fontSize: 13, color: S.text2 }}>{step.desc}</div>
-              </div>
+              </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -378,7 +379,7 @@ export default function LidoV3stVaultsGuide() {
           section="learn"
         />
 
-            ))}
+
           </div>
 
           <div

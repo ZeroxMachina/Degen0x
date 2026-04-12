@@ -43,7 +43,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/ai-agents-decentralized-ai-crypto-guide-2026',
-  };
+  },
+};
+
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

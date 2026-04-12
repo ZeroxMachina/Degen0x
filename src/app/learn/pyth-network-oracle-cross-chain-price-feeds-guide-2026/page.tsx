@@ -421,9 +421,6 @@ export default function PythNetworkGuide() {
         </div>
 
         <BackToTop />
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -432,6 +429,8 @@ export default function PythNetworkGuide() {
           readingTime={9}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

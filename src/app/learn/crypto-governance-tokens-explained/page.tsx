@@ -78,20 +78,7 @@ const page = () => {
           text: "Blue chips: UNI (Uniswap, highest DEX fees), AAVE (Aave, controls protocol treasury), CRV (Curve, vote-escrow pioneer). Mid-tier: OP (Optimism), ARB (Arbitrum), OSMO (Osmosis). All generate protocol revenue. Avoid: tokens with no fee distribution, extreme whale concentration, or low voting participation. Best investment: tokens with growing protocol TVL + fee revenue. As DeFi TVL grows, fee revenue grows, token value appreciates. 3-5 year hold with quarterly revenue reviews = sound approach."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Crypto Governance Tokens: Voting Rights & Protocol Economics',
-    description: 'Master crypto governance tokens. Learn voting mechanisms, token economics, protocol participation, and how to evaluate governance token investments.',
-    url: 'https://degen0x.com/learn/crypto-governance-tokens-explained',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Crypto Governance Tokens: Voting Rights & Protocol Economics',
-    description: 'Master crypto governance tokens. Learn voting mechanisms, token economics, protocol participation, and how to evaluate governance token investments.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -215,20 +202,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Crypto Governance Tokens: Voting Rights & Protocol Economics',
-    description: 'Master crypto governance tokens. Learn voting mechanisms, token economics, protocol participation, and how to evaluate governance token investments.',
-    url: 'https://degen0x.com/learn/crypto-governance-tokens-explained',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Crypto Governance Tokens: Voting Rights & Protocol Economics',
-    description: 'Master crypto governance tokens. Learn voting mechanisms, token economics, protocol participation, and how to evaluate governance token investments.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

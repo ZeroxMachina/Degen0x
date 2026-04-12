@@ -30,7 +30,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/bitcoin-etf-institutional-guide-2026',
-  };
+  },
+};
+
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

@@ -98,7 +98,8 @@ export default function DeFiInsuranceGuide() {
             <div key={i} style={{ backgroundColor: S.surface, border: `1px solid ${S.border}`, borderRadius: "8px", padding: "1.5rem", textAlign: "center" }}>
               <div style={{ fontSize: "2rem", fontWeight: "700", color: S.primary, marginBottom: "0.5rem" }}>{stat.label}</div>
               <div style={{ color: S.text2, fontSize: "0.9rem" }}>{stat.desc}</div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -109,7 +110,7 @@ export default function DeFiInsuranceGuide() {
           section="learn"
         />
 
-          ))}
+
         </div>
 
         <h2 style={{ fontSize: "1.8rem", fontWeight: "700", marginTop: "2.5rem", marginBottom: "1rem" }}>How DeFi Insurance Works</h2>

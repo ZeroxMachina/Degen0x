@@ -78,20 +78,7 @@ const page = () => {
           text: "RAY token launched March 2021. Governance: RAY holders vote on platform changes, fee structures, and emissions. Fee distribution: 0.05% of all swaps go to RAY treasury (can be distributed to holders via governance). Staking: lock RAY to earn governance rights + fee sharing. Current: ~$800M market cap. Value derives from: (1) fee-generating asset (percentage of Solana DEX fees), (2) governance power (vote on protocol improvements), (3) brand value (Raydium dominance creates network effects). Long-term value: proportional to Solana DEX market share. If Solana captures 10% of Ethereum's DEX volume, RAY could be $5-10 billion market cap."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Raydium Solana AMM: Automated Market Maker & Liquidity Guide',
-    description: 'Master Raydium AMM on Solana. Learn liquidity provision, yield farming, impermanent loss, and market making strategies for DeFi traders and LPs.',
-    url: 'https://degen0x.com/learn/raydium-solana-amm-dex-trading-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Raydium Solana AMM: Automated Market Maker & Liquidity Guide',
-    description: 'Master Raydium AMM on Solana. Learn liquidity provision, yield farming, impermanent loss, and market making strategies for DeFi traders and LPs.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -215,20 +202,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Raydium Solana AMM: Automated Market Maker & Liquidity Guide',
-    description: 'Master Raydium AMM on Solana. Learn liquidity provision, yield farming, impermanent loss, and market making strategies for DeFi traders and LPs.',
-    url: 'https://degen0x.com/learn/raydium-solana-amm-dex-trading-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Raydium Solana AMM: Automated Market Maker & Liquidity Guide',
-    description: 'Master Raydium AMM on Solana. Learn liquidity provision, yield farming, impermanent loss, and market making strategies for DeFi traders and LPs.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

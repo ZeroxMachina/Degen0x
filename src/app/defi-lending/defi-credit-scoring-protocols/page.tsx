@@ -25,7 +25,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/defi-credit-scoring-protocols',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -347,13 +349,13 @@ export default function DefiCreditScoringProtocols() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/compare/polygon-vs-arbitrum-vs-optimism" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Polygon Vs Arbitrum Vs Optimism</Link></li>
-            <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Proof Of Work Vs Proof Of Stake</Link></li>
-            <li><Link href="/compare/solana-vs-avalanche-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Solana Vs Avalanche</Link></li>
-            <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Aave Vs Maker Vs Compound</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/compare/polygon-vs-arbitrum-vs-optimism" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Polygon Vs Arbitrum Vs Optimism</Link></li>
+            <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Proof Of Work Vs Proof Of Stake</Link></li>
+            <li><Link href="/compare/solana-vs-avalanche-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Solana Vs Avalanche</Link></li>
+            <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave Vs Maker Vs Compound</Link></li>
           </ul>
         </nav>
 

@@ -49,7 +49,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/fhe-fully-homomorphic-encryption-crypto-guide-2026',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

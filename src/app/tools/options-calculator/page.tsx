@@ -58,7 +58,7 @@ function calculateBlackScholesGreeks(
 ): GreeksValue {
   if (T <= 0 || sigma <= 0) {
     return { delta: isCall ? 1 : 0, gamma: 0, theta: 0, vega: 0, rho: 0 };
-  }
+  };
 
   const d1 = (Math.log(S / K) + (r + 0.5 * sigma * sigma) * T) / (sigma * Math.sqrt(T));
   const d2 = d1 - sigma * Math.sqrt(T);
@@ -90,7 +90,7 @@ function calculateOptionValue(
 ): number {
   if (T <= 0) {
     return isCall ? Math.max(S - K, 0) : Math.max(K - S, 0);
-  }
+  };
 
   const d1 = (Math.log(S / K) + (r + 0.5 * sigma * sigma) * T) / (sigma * Math.sqrt(T));
   const d2 = d1 - sigma * Math.sqrt(T);

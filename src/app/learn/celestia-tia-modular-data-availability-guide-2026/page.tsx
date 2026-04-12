@@ -44,7 +44,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/celestia-tia-modular-data-availability-guide-2026',
-  };
+  },
+};
+
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

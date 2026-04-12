@@ -197,7 +197,8 @@ export default function OnchainCLOBDexGuidePage() {
               >
                 {s.value}
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -208,7 +209,7 @@ export default function OnchainCLOBDexGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

@@ -170,7 +170,8 @@ export default function SecCftcMouCryptoGuidePage() {
               <div key={stat.label} style={{ background: `${stat.color}10`, border: `1px solid ${stat.color}30`, borderRadius: 10, padding: 12, textAlign: "center" }}>
                 <div style={{ fontSize: 14, fontWeight: 700, color: stat.color }}>{stat.value}</div>
                 <div style={{ fontSize: 11, color: S.text2, marginTop: 6 }}>{stat.label}</div>
-              </div>
+              </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -181,7 +182,7 @@ export default function SecCftcMouCryptoGuidePage() {
           section="learn"
         />
 
-            ))}
+
           </div>
 
           {/* Table of Contents */}

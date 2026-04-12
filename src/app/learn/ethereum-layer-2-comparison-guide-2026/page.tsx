@@ -196,7 +196,8 @@ export default function EthereumL2ComparisonGuidePage() {
               >
                 {s.value}
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -207,7 +208,7 @@ export default function EthereumL2ComparisonGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

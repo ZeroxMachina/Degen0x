@@ -86,7 +86,7 @@ function generateTransactions(): Transaction[] {
   });
 
   return txs.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-}
+};
 
 const TRANSACTIONS = generateTransactions();
 
@@ -108,7 +108,7 @@ export default function WalletPnLPage() {
     TRANSACTIONS.forEach(tx => {
       if (!map.has(tx.symbol)) {
         map.set(tx.symbol, { buyCost: 0, buyAmount: 0, sellRevenue: 0, sellAmount: 0, currentPrice: tx.currentPrice, name: tx.asset, txCount: 0 });
-      }
+      };
       const entry = map.get(tx.symbol)!;
       entry.txCount++;
 

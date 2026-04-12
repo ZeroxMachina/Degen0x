@@ -27,7 +27,7 @@ export default function BestMobileCryptoWallet() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'leading', t: 'Leading Wallets' }, { id: 'features', t: 'Key Features' }, { id: 'security', t: 'Security' }, { id: 'comparison', t: 'Comparison' }, { id: 'choosing', t: 'Choosing' }, { id: 'practices', t: 'Best Practices' }, { id: 'faq', t: 'FAQ' }];
+  };  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'leading', t: 'Leading Wallets' }, { id: 'features', t: 'Key Features' }, { id: 'security', t: 'Security' }, { id: 'comparison', t: 'Comparison' }, { id: 'choosing', t: 'Choosing' }, { id: 'practices', t: 'Best Practices' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
@@ -173,13 +173,13 @@ export default function BestMobileCryptoWallet() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Proof Of Work Vs Proof Of Stake</Link></li>
-            <li><Link href="/compare/solana-vs-avalanche-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Solana Vs Avalanche</Link></li>
-            <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Aave Vs Maker Vs Compound</Link></li>
-            <li><Link href="/compare/arbitrum-vs-optimism-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Arbitrum Vs Optimism</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Proof Of Work Vs Proof Of Stake</Link></li>
+            <li><Link href="/compare/solana-vs-avalanche-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Solana Vs Avalanche</Link></li>
+            <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave Vs Maker Vs Compound</Link></li>
+            <li><Link href="/compare/arbitrum-vs-optimism-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Arbitrum Vs Optimism</Link></li>
           </ul>
         </nav>
 

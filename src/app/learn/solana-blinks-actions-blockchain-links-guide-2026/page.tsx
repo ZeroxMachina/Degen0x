@@ -27,7 +27,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/solana-blinks-actions-blockchain-links-guide-2026',
-  };
+  },
+};
+
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

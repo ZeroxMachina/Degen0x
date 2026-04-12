@@ -172,7 +172,7 @@ export default function ExchangeCashbackPage() {
       let baseFees = monthlyVolume * (feeRate / 100);
       if (useNativeToken && ex.nativeToken) {
         baseFees *= (1 - ex.nativeDiscount / 100);
-      }
+      };
 
       const cashbackAmount = ex.hasCashback ? baseFees * (ex.cashbackPct / 100) : 0;
       const netFees = baseFees - cashbackAmount;

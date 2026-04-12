@@ -19,7 +19,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/insurance/defi-hack-insurance-comparison',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -339,13 +341,13 @@ export default function DeFiHackInsuranceComparison() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/wallets/best-wallet-for-airdrop-farming" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Wallet For Airdrop Farming</Link></li>
-            <li><Link href="/wallets/account-abstraction-wallet-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Account Abstraction Wallet</Link></li>
-            <li><Link href="/wallets/backpack-wallet-complete-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Backpack Wallet Complete</Link></li>
-            <li><Link href="/wallets/best-bitcoin-only-wallet" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Bitcoin Only Wallet</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/wallets/best-wallet-for-airdrop-farming" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Wallet For Airdrop Farming</Link></li>
+            <li><Link href="/wallets/account-abstraction-wallet-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Account Abstraction Wallet</Link></li>
+            <li><Link href="/wallets/backpack-wallet-complete-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Backpack Wallet Complete</Link></li>
+            <li><Link href="/wallets/best-bitcoin-only-wallet" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Bitcoin Only Wallet</Link></li>
           </ul>
         </nav>
 

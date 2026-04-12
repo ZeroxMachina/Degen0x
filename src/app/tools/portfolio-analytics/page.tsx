@@ -181,7 +181,7 @@ function CorrelationMatrix({ assets }: { assets: PortfolioAsset[] }) {
                   if (assetA.category === assetB.category) correlation = baseCorr + 0.15;
                   else correlation = baseCorr - 0.1;
                   correlation = Math.max(-1, Math.min(1, correlation));
-                }
+                };
                 const color = correlation > 0.7 ? "#22c55e" : correlation > 0.4 ? "#f59e0b" : "#ef4444";
                 return (
                   <td key={`${assetA.id}-${assetB.id}`} className="px-2 py-2 text-center" style={{ color }}>

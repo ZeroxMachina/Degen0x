@@ -38,7 +38,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-beginners-2026',
-  };
+  },
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

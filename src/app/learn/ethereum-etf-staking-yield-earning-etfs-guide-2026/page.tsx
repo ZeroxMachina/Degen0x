@@ -45,7 +45,8 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026',
-  };
+  }
+};
 // Server-side structured data
 const articleStructuredData = {
   '@context': 'https://schema.org',

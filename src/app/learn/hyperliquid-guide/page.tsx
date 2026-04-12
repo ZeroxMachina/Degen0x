@@ -67,7 +67,8 @@ export default function HyperLiquidGuidePage() {
             >
               <div className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{s.label}</div>
               <div className="text-sm font-bold" style={{ color: "var(--color-text)" }}>{s.value}</div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -78,7 +79,7 @@ export default function HyperLiquidGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

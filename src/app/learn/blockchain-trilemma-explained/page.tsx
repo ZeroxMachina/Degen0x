@@ -15,8 +15,7 @@ export const metadata: Metadata = {
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/learn/blockchain-trilemma-explained',
     images: [{ url: 'https://degen0x.com/og-learn.svg', width: 1200, height: 630, alt: 'Blockchain Trilemma' }]
-  }
-
+  },
   alternates: {
     canonical: 'https://degen0x.com/learn/blockchain-trilemma-explained'
   },
@@ -93,13 +92,7 @@ const structuredData = {
   twitter: {
     card: 'summary_large_image',
     title: 'Blockchain Trilemma Explained: Security vs Scalability vs Decentralization | degen0x',
-    description: 'Blockchain trilemma: decentralization, scalability, security tradeoffs. Bitcoin, Ethereum, Solana positioning. Layer 2 solutions, modular blockchains, and Vitalik\',
-    image: 'https://degen0x.com/og-default.svg',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Blockchain Trilemma Explained: Security vs Scalability vs Decentralization | degen0x',
-    description: 'Blockchain trilemma: decentralization, scalability, security tradeoffs. Bitcoin, Ethereum, Solana positioning. Layer 2 solutions, modular blockchains, and Vitalik\',
+    description: 'Blockchain trilemma: decentralization, scalability, security tradeoffs. Bitcoin, Ethereum, Solana positioning. Layer 2 solutions, modular blockchains.',
     image: 'https://degen0x.com/og-default.svg',
   }
 };
@@ -356,13 +349,13 @@ export default function BlockchainTrilemma() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/tools/bitcoin-halving-countdown" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Bitcoin Halving Countdown</Link></li>
-            <li><Link href="/tools/bitcoin-mempool-visualizer" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Bitcoin Mempool Visualizer</Link></li>
-            <li><Link href="/tools/bitcoin-rainbow-chart" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Bitcoin Rainbow Chart</Link></li>
-            <li><Link href="/tools/blockchain-explorer-tool" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Blockchain Explorer Tool</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/tools/bitcoin-halving-countdown" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Halving Countdown</Link></li>
+            <li><Link href="/tools/bitcoin-mempool-visualizer" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Mempool Visualizer</Link></li>
+            <li><Link href="/tools/bitcoin-rainbow-chart" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Rainbow Chart</Link></li>
+            <li><Link href="/tools/blockchain-explorer-tool" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Blockchain Explorer Tool</Link></li>
           </ul>
         </nav>
 

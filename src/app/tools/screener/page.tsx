@@ -18,7 +18,7 @@ interface Protocol {
   riskLevel: 'Low' | 'Medium' | 'High';
   audited: boolean;
   tvlTrend: number[];
-}
+};
 
 const S = {
   bg: '#0d1117',

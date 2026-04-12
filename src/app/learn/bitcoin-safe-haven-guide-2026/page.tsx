@@ -195,7 +195,8 @@ export default function BitcoinSafeHavenGuidePage() {
               >
                 {s.value}
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -206,7 +207,7 @@ export default function BitcoinSafeHavenGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

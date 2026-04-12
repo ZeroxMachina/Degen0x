@@ -20,7 +20,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/tools/bitcoin-dominance-chart-live',
-  };
+  },
+};
+
 const faqs = [
   {
     q: 'What does Bitcoin dominance measure?',

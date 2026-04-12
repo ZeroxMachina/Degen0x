@@ -375,13 +375,13 @@ export default function BestAICryptoProjects2026() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/trading/crypto-pairs-trading-strategy" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Pairs Trading Strategy</Link></li>
-            <li><Link href="/trading/crypto-scalping-strategy-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Scalping Strategy</Link></li>
-            <li><Link href="/trading/algorithmic-crypto-trading-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Algorithmic Crypto Trading</Link></li>
-            <li><Link href="/trading/best-crypto-technical-indicators" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto Technical Indicators</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/trading/crypto-pairs-trading-strategy" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Pairs Trading Strategy</Link></li>
+            <li><Link href="/trading/crypto-scalping-strategy-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Scalping Strategy</Link></li>
+            <li><Link href="/trading/algorithmic-crypto-trading-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Algorithmic Crypto Trading</Link></li>
+            <li><Link href="/trading/best-crypto-technical-indicators" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Technical Indicators</Link></li>
           </ul>
         </nav>
 

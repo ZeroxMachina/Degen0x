@@ -40,7 +40,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/liquid-staking-tokens-guide-2026',
-  };
+  },
+};
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",

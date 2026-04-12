@@ -168,7 +168,7 @@ function generateBacktestResults(strategy: Strategy): BacktestResult {
       date: date.toISOString().split("T")[0],
       value: Math.round(currentValue * 100) / 100,
     });
-  }
+  };
 
   const finalValue = equityCurve[equityCurve.length - 1].value;
   const totalReturn = ((finalValue - 10000) / 10000) * 100;
@@ -204,7 +204,7 @@ function generateBacktestResults(strategy: Strategy): BacktestResult {
       });
       buySide = null;
     }
-  }
+  };
 
   const winningTrades = trades.filter((t) => t.type === "sell" && t.pnl > 0).length;
   const totalClosedTrades = Math.ceil(totalTrades / 2);
@@ -213,7 +213,7 @@ function generateBacktestResults(strategy: Strategy): BacktestResult {
   const returns: number[] = [];
   for (let i = 1; i < equityCurve.length; i++) {
     returns.push((equityCurve[i].value - equityCurve[i - 1].value) / equityCurve[i - 1].value);
-  }
+  };
   const avgReturn = returns.reduce((a, b) => a + b, 0) / returns.length;
   const stdDev = Math.sqrt(returns.reduce((sum, r) => sum + Math.pow(r - avgReturn, 2), 0) / returns.length);
   const sharpeRatio = stdDev === 0 ? 0 : (avgReturn * 252) / (stdDev * Math.sqrt(252));

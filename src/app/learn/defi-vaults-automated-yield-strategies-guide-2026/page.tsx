@@ -48,7 +48,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/defi-vaults-automated-yield-strategies-guide-2026',
-  };
+  },
+};
+
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

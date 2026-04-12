@@ -78,20 +78,7 @@ const page = () => {
           text: "2026 opportunities: (1) AI agents (emerging category, early projects, high airdrop probability), (2) ZK coprocessors (Ethereum scaling infrastructure, venture-backed, likely airdrops), (3) Modular L2s (Ethereum fragmentation creates airdrop opportunities), (4) RWA platforms (tokenized real estate/art, institutional funding), (5) Intent-based architectures (emerging paradigm). Avoid: saturated categories (DEXes, bridges, lending—most tokens already launched), or late-stage projects (airdrop criteria likely closed). Best strategy: find category inflection and farm earliest projects."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Crypto Airdrops Explained: Strategy & Yield Farming',
-    description: 'Master airdrop strategy. Learn how to identify real opportunities, avoid scams, and systematically farm airdrops for passive income in crypto.',
-    url: 'https://degen0x.com/learn/what-is-a-crypto-airdrop',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Crypto Airdrops Explained: Strategy & Yield Farming',
-    description: 'Master airdrop strategy. Learn how to identify real opportunities, avoid scams, and systematically farm airdrops for passive income in crypto.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -230,20 +217,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Crypto Airdrops Explained: Strategy & Yield Farming',
-    description: 'Master airdrop strategy. Learn how to identify real opportunities, avoid scams, and systematically farm airdrops for passive income in crypto.',
-    url: 'https://degen0x.com/learn/what-is-a-crypto-airdrop',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Crypto Airdrops Explained: Strategy & Yield Farming',
-    description: 'Master airdrop strategy. Learn how to identify real opportunities, avoid scams, and systematically farm airdrops for passive income in crypto.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

@@ -525,7 +525,8 @@ export default function BabylonProtocolGuidePage() {
                   <p style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", margin: "0 0 6px" }}>{item.title}</p>
                   <p style={{ fontSize: 14, color: "#8b949e", lineHeight: 1.7, margin: 0 }}>{item.desc}</p>
                 </div>
-              </div>
+              </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -536,7 +537,7 @@ export default function BabylonProtocolGuidePage() {
           section="learn"
         />
 
-            ))}
+
           </div>
 
           <div

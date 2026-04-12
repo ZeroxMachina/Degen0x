@@ -40,7 +40,7 @@ export default function CompoundStakingCalculatorPage() {
     const monthlyRate = netRate / 12;
     const totalMonths = months;
     fvContributions = monthly * ((Math.pow(1 + monthlyRate, totalMonths) - 1) / monthlyRate);
-  }
+  };
 
   const totalContributions = principal + monthly * months;
   const finalValue = fvLumpSum + fvContributions;
@@ -69,7 +69,7 @@ export default function CompoundStakingCalculatorPage() {
       if (monthly > 0) {
         const monthlyRate = netRate / 12;
         yFvContrib = monthly * ((Math.pow(1 + monthlyRate, yMonths) - 1) / monthlyRate);
-      }
+      };
       const yTotal = yFvLump + yFvContrib;
       const yContributed = principal + monthly * yMonths;
       yearlyBreakdown.push({

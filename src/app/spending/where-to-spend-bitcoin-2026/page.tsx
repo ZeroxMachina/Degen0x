@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title: 'Where to Spend Bitcoin 2026', description: 'Bitcoin spending: Microsoft, AT&T, debit cards, Bitrefill, Travala, Lightning, El Salvador real merchants.', image: 'https://degen0x.com/og-spending.svg' },
   alternates: {
     canonical: 'https://degen0x.com/spending/where-to-spend-bitcoin-2026',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -166,13 +168,13 @@ export default function WhereToSpendBitcoin() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/crypto-cards/crypto-cashback-card-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Cashback Card</Link></li>
-            <li><Link href="/crypto-cards/crypto-debit-card-with-staking-rewards" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Debit Card With Staking Rewards</Link></li>
-            <li><Link href="/crypto-cards/best-card-for-bitcoin-cashback" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Card For Bitcoin Cashback</Link></li>
-            <li><Link href="/crypto-cards/best-card-for-crypto-rewards-stacking" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Card For Crypto Rewards Stacking</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/crypto-cards/crypto-cashback-card-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Cashback Card</Link></li>
+            <li><Link href="/crypto-cards/crypto-debit-card-with-staking-rewards" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Debit Card With Staking Rewards</Link></li>
+            <li><Link href="/crypto-cards/best-card-for-bitcoin-cashback" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Card For Bitcoin Cashback</Link></li>
+            <li><Link href="/crypto-cards/best-card-for-crypto-rewards-stacking" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Card For Crypto Rewards Stacking</Link></li>
           </ul>
         </nav>
 

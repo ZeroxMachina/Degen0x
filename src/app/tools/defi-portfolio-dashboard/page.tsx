@@ -19,7 +19,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/tools/defi-portfolio-dashboard',
-  };
+  },
+};
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -384,9 +386,6 @@ export default function DefiPortfolioDashboard() {
             </p>
           </div>
         </section>
-      </div>
-    </div>
-
         <AuthorAttribution
           author="0xMachina"
           role="Founder"
@@ -395,6 +394,8 @@ export default function DefiPortfolioDashboard() {
           readingTime={3}
           section="tools"
         />
+      </div>
+    </div>
 
   );
 }

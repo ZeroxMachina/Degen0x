@@ -324,7 +324,7 @@ export default function AirdropEligibilityChecker() {
     );
   } else if (sortBy === 'chain') {
     filteredAirdrops.sort((a, b) => a.chain.localeCompare(b.chain));
-  }
+  };
 
   const totalValue = filteredAirdrops.reduce((sum, a) => sum + a.estimatedValue, 0);
   const eligibleValue = filteredAirdrops

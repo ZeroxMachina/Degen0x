@@ -31,7 +31,7 @@ interface Trade {
   notes: string;
   tags: string[];
   duration: string; // "2h", "3d", etc.
-}
+};
 
 const SETUPS = [
   "Breakout", "Pullback", "Reversal", "Range Scalp", "News Play",

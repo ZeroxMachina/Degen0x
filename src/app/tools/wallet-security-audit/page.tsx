@@ -86,7 +86,7 @@ export default function WalletSecurityAudit() {
     else if (score >= 70) { grade = 'B'; gradeColor = 'text-yellow-400'; }
     else if (score >= 60) { grade = 'C'; gradeColor = 'text-orange-400'; }
     else if (score >= 40) { grade = 'D'; gradeColor = 'text-red-400'; }
-    else { grade = 'F'; gradeColor = 'text-red-500'; }
+    else { grade = 'F'; gradeColor = 'text-red-500'; };
 
     const recommendations = AUDIT_CHECKS
       .filter(c => !answers[c.id])

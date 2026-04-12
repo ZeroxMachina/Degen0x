@@ -139,7 +139,7 @@ function simulateBacktest(params: BacktestParams): BacktestResult {
       date: tradeDate.toISOString().split("T")[0],
       type: pnl > 0 ? "long" : "short",
     });
-  }
+  };
 
   const winCount = tradeReturns.filter(r => r > 0).length;
   const winRate = (winCount / totalTrades) * 100;
@@ -150,7 +150,7 @@ function simulateBacktest(params: BacktestParams): BacktestResult {
   const returns: number[] = [];
   for (let i = 1; i < equityCurve.length; i++) {
     returns.push((equityCurve[i].value - equityCurve[i - 1].value) / equityCurve[i - 1].value);
-  }
+  };
   const avgReturn = returns.reduce((a, b) => a + b, 0) / returns.length;
   const stdDev = Math.sqrt(returns.reduce((sum, r) => sum + Math.pow(r - avgReturn, 2), 0) / returns.length);
   const riskFreeRate = 0.02 / 365;

@@ -173,7 +173,8 @@ export default function LightningNetworkGuidePage() {
             <div key={stat.label} className="glass p-4 text-center rounded-xl">
               <div className="text-2xl font-black" style={{ color: "#F7931A" }}>{stat.value}</div>
               <div className="text-xs text-[var(--color-text-secondary)] mt-1">{stat.label}</div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -184,7 +185,7 @@ export default function LightningNetworkGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </header>
 

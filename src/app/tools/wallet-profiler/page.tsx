@@ -172,7 +172,7 @@ const ScoreBadge = ({ score }: { score: number }) => {
   } else {
     label = 'Mega Degen';
     color = 'text-pink-500';
-  }
+  };
 
   const radius = 45;
   const circumference = 2 * Math.PI * radius;

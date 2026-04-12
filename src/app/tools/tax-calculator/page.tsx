@@ -219,7 +219,7 @@ export default function TaxCalculatorPage() {
 
   function removeTrade(id: string) {
     setTrades(prev => prev.filter(t => t.id !== id));
-  }
+  };
 
   const inputStyle = {
     background: S.surface2,

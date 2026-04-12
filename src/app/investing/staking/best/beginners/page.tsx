@@ -132,7 +132,8 @@ export default function BestStakingBeginnersPage() {
                   <h3 className="text-[var(--color-text)] font-semibold">{item.title}</h3>
                   <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
                 </div>
-              </div>
+              </div>        ))}
+
 
         <AuthorAttribution
           author="SatoshiGhost"
@@ -143,7 +144,7 @@ export default function BestStakingBeginnersPage() {
           section="investing"
         />
 
-            ))}
+
           </div>
         </section>
 

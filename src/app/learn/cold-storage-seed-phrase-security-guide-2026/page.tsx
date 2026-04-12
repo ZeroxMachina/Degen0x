@@ -176,7 +176,8 @@ export default function ColdStorageSeedPhraseSecurityGuidePage() {
                 <div style={{ fontSize: 13, color: S.text2, lineHeight: 1.7 }}>
                   <strong>What happened:</strong> {item.cause}
                 </div>
-              </div>
+              </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -187,7 +188,7 @@ export default function ColdStorageSeedPhraseSecurityGuidePage() {
           section="learn"
         />
 
-            ))}
+
           </div>
 
           <div style={{ background: `${S.primary}10`, border: `1px solid ${S.primary}30`, borderRadius: 10, padding: 16, marginBottom: 24 }}>

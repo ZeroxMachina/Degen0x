@@ -62,7 +62,7 @@ function PieChart({ holdings }: PieChartProps) {
         <p>Add holdings to see allocation chart</p>
       </div>
     );
-  }
+  };
 
   const segments = holdings.map((h) => {
     const value = h.amount * (SIMULATED_PRICES[h.symbol] || 0);

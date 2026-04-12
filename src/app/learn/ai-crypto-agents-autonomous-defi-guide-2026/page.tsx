@@ -42,7 +42,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/ai-crypto-agents-autonomous-defi-guide-2026',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

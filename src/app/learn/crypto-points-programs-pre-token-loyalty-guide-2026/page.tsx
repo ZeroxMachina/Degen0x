@@ -30,7 +30,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-points-programs-pre-token-loyalty-guide-2026',
-  };
+  },
+};
+
 const containerStyle: React.CSSProperties = {
   maxWidth: '900px',
   margin: '0 auto',
@@ -724,9 +726,6 @@ export default function CryptoPointsPage() {
           regulatory frameworks are evolving, and token values are volatile. Past performance does
           not guarantee future results.
         </p>
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -735,6 +734,8 @@ export default function CryptoPointsPage() {
           readingTime={8}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

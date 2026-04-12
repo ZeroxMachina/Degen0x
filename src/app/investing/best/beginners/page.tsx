@@ -105,7 +105,8 @@ export default function BestForBeginnersPage() {
                 <h3 className="text-base font-semibold text-[var(--color-text)] mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="SatoshiGhost"
@@ -116,7 +117,7 @@ export default function BestForBeginnersPage() {
           section="investing"
         />
 
-          ))}
+
         </div>
       </section>
 

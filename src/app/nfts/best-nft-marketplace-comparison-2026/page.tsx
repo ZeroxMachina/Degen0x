@@ -27,7 +27,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/nfts/best-nft-marketplace-comparison-2026',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -390,13 +392,13 @@ export default function BestNFTMarketplaceComparison2026() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/learn/ai-agents-decentralized-ai-crypto-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Ai Agents Decentralized Ai Crypto</Link></li>
-            <li><Link href="/learn/ai-crypto-agents-autonomous-defi-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Ai Crypto Agents Autonomous Defi</Link></li>
-            <li><Link href="/learn/ai-crypto-tokens-complete-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Ai Crypto Tokens Complete</Link></li>
-            <li><Link href="/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Altlayer Restaked Rollups Alt Token Raas</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/learn/ai-agents-decentralized-ai-crypto-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Agents Decentralized Ai Crypto</Link></li>
+            <li><Link href="/learn/ai-crypto-agents-autonomous-defi-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Crypto Agents Autonomous Defi</Link></li>
+            <li><Link href="/learn/ai-crypto-tokens-complete-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Crypto Tokens Complete</Link></li>
+            <li><Link href="/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Altlayer Restaked Rollups Alt Token Raas</Link></li>
           </ul>
         </nav>
 

@@ -159,7 +159,8 @@ export default function AIAgentIdentityPage() {
                   <div style={{ fontSize: 11, fontWeight: 600, color: S.text2, marginBottom: 4 }}>{m.label}</div>
                   <div style={{ fontSize: 16, fontWeight: 800, color: S.cyan, marginBottom: 2 }}>{m.value}</div>
                   <div style={{ fontSize: 11, color: S.text2 }}>{m.desc}</div>
-                </div>
+                </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -170,7 +171,7 @@ export default function AIAgentIdentityPage() {
           section="learn"
         />
 
-              ))}
+
             </div>
           </div>
 

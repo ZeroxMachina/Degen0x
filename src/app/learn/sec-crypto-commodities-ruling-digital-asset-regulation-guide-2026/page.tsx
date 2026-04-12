@@ -43,7 +43,8 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026',
-  };
+  }
+};
 // Server-side structured data
 const articleStructuredData = {
   '@context': 'https://schema.org',

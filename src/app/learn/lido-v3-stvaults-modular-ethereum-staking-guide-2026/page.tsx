@@ -668,9 +668,6 @@ export default function LidoV3Guide() {
         </div>
 
         <BackToTop />
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -679,6 +676,8 @@ export default function LidoV3Guide() {
           readingTime={12}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

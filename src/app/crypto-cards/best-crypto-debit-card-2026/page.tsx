@@ -27,7 +27,7 @@ export default function BestCryptoDebitCard() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'coinbase', t: 'Coinbase Card' }, { id: 'crypto-com', t: 'Crypto.com Visa' }, { id: 'others', t: 'Others' }, { id: 'auto-convert', t: 'Auto-Conversion' }, { id: 'tax', t: 'Tax Implications' }, { id: 'comparison', t: 'Comparison' }, { id: 'faq', t: 'FAQ' }];
+  };  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'coinbase', t: 'Coinbase Card' }, { id: 'crypto-com', t: 'Crypto.com Visa' }, { id: 'others', t: 'Others' }, { id: 'auto-convert', t: 'Auto-Conversion' }, { id: 'tax', t: 'Tax Implications' }, { id: 'comparison', t: 'Comparison' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
@@ -165,13 +165,13 @@ export default function BestCryptoDebitCard() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/exchanges/best-crypto-exchange-for-staking" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto Exchange For Staking</Link></li>
-            <li><Link href="/exchanges/best-crypto-exchange-mobile-app" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto Exchange Mobile App</Link></li>
-            <li><Link href="/exchanges/best-exchange-for-algorithmic-trading" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Exchange For Algorithmic Trading</Link></li>
-            <li><Link href="/exchanges/best-crypto-exchange-for-altcoins" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto Exchange For Altcoins</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/exchanges/best-crypto-exchange-for-staking" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Exchange For Staking</Link></li>
+            <li><Link href="/exchanges/best-crypto-exchange-mobile-app" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Exchange Mobile App</Link></li>
+            <li><Link href="/exchanges/best-exchange-for-algorithmic-trading" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Exchange For Algorithmic Trading</Link></li>
+            <li><Link href="/exchanges/best-crypto-exchange-for-altcoins" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Exchange For Altcoins</Link></li>
           </ul>
         </nav>
 

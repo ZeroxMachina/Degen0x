@@ -23,7 +23,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/polkadot-jam-protocol-coretime-supercomputer-guide-2026',
-  };
+  },
+};
+
 const faqData = [
   {
     question: "What is JAM (Join-Accumulate-Machine) protocol?",

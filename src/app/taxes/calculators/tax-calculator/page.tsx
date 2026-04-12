@@ -62,7 +62,7 @@ function calculateTax(
   } else {
     const combined = netShortTerm + netLongTerm;
     capitalLossDeduction = Math.min(Math.abs(combined), 3000);
-  }
+  };
 
   const ordinaryTaxableIncome = income + cryptoIncome + netGainForOrdinary - capitalLossDeduction;
 
@@ -83,7 +83,7 @@ function calculateTax(
         longTermTax += (top - base) * bracket.rate;
       }
     }
-  }
+  };
 
   const totalTax = ordinaryTax + longTermTax;
   const effectiveRate = (ordinaryTaxableIncome + netGainForLongTerm) > 0

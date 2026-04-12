@@ -192,7 +192,8 @@ export default function BitcoinStrategicReserveGuidePage() {
               >
                 {s.value}
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -203,7 +204,7 @@ export default function BitcoinStrategicReserveGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

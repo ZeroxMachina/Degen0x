@@ -78,20 +78,7 @@ const page = () => {
           text: "If Polygon captures 10-20% of cross-chain liquidity ($10-20B TVL), it becomes essential infrastructure. This requires: (1) Adoption by major protocols (Uniswap, Aave integrating), (2) Institutional trader participation (volume driving fees), (3) Faster finality than competitors. Early indicators: watch zkEVM adoption growth, cross-chain volume, and institutional partnerships. Time horizon: 2-3 years for inflection."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Polygon AggLayer: Unified Liquidity & Interoperability',
-    description: 'Master Polygon',
-    url: 'https://degen0x.com/learn/polygon-agglayer-unified-liquidity-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Polygon AggLayer: Unified Liquidity & Interoperability',
-    description: 'Master Polygon',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -220,20 +207,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Polygon AggLayer: Unified Liquidity & Interoperability',
-    description: 'Master Polygon',
-    url: 'https://degen0x.com/learn/polygon-agglayer-unified-liquidity-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Polygon AggLayer: Unified Liquidity & Interoperability',
-    description: 'Master Polygon',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

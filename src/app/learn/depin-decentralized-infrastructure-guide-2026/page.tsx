@@ -48,7 +48,8 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/depin-decentralized-infrastructure-guide-2026',
-  };
+  }
+};
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = {
   "@context": "https://schema.org",

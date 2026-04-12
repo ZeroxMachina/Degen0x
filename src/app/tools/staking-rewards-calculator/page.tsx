@@ -20,7 +20,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/tools/staking-rewards-calculator',
-  };
+  },
+};
+
 const faqs = [
   {
     q: 'What is the difference between APY and APR for staking?',

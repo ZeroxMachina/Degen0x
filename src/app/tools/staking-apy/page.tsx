@@ -59,7 +59,7 @@ const STAKING_DATA: StakingEntry[] = [
 function formatTVL(tvl: number): string {
   if (tvl >= 1) return `$${tvl.toFixed(1)}B`;
   return `$${(tvl * 1000).toFixed(0)}M`;
-}
+};
 
 const RISK_COLORS = { Low: "#22c55e", Medium: "#F3BA2F", High: "#f85149" };
 const TYPE_COLORS: Record<string, string> = { CEX:"#6366f1", DEX:"#06b6d4", Liquid:"#9945FF", Native:"#22c55e", "Yield Aggregator":"#F3BA2F" };

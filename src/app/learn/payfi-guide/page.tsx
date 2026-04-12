@@ -382,7 +382,8 @@ export default function PayFiGuidePage() {
                 <h3 className="font-semibold mb-1" style={{ color: "var(--color-text)" }}>{title}</h3>
                 <p className="text-sm" style={{ color: "var(--color-text-secondary)" }}>{body}</p>
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -393,7 +394,7 @@ export default function PayFiGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </section>
 

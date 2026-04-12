@@ -78,20 +78,7 @@ const page = () => {
           text: "Shanghai upgrade (April 2023) enabled ETH unstaking from official staking. This reduced LSD necessity but didn't kill them. Why LSDs persist: (1) user convenience (no 7+ day wait), (2) yield composability (DeFi strategies), (3) capital efficiency (borrow against staked assets), (4) lazy users (prefer custody to self-staking). Institutional perspective: Lido remains dominant ($30B+ TVL). Competition (RocketPool, Marinade) growing but niche. Future: LSDs are permanent DeFi infrastructure, not temporary arbitrage. Lido token (LDO) likely to generate fees eventually (currently governance only)."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Liquid Staking Derivatives: LSDs Explained 2026',
-    description: 'Master liquid staking tokens. Learn how LSDs enable staking without lockups, understand economics, yield strategies, and compare Lido, Marinade, and other protocols.',
-    url: 'https://degen0x.com/learn/liquid-staking-derivatives-explained',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Liquid Staking Derivatives: LSDs Explained 2026',
-    description: 'Master liquid staking tokens. Learn how LSDs enable staking without lockups, understand economics, yield strategies, and compare Lido, Marinade, and other protocols.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -234,20 +221,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Liquid Staking Derivatives: LSDs Explained 2026',
-    description: 'Master liquid staking tokens. Learn how LSDs enable staking without lockups, understand economics, yield strategies, and compare Lido, Marinade, and other protocols.',
-    url: 'https://degen0x.com/learn/liquid-staking-derivatives-explained',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Liquid Staking Derivatives: LSDs Explained 2026',
-    description: 'Master liquid staking tokens. Learn how LSDs enable staking without lockups, understand economics, yield strategies, and compare Lido, Marinade, and other protocols.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

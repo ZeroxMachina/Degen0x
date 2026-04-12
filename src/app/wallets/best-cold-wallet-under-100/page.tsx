@@ -18,7 +18,8 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-cold-wallet-under-100',
-  };
+  }
+};
 export default function BestColdWalletUnder100() {
   const faqs = [
     {

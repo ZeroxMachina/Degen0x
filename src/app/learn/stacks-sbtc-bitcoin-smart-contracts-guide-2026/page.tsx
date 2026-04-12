@@ -151,7 +151,8 @@ export default function StacksSBTCGuidePage() {
                 <div key={item.label} style={{ background: `${item.color}08`, border: `1px solid ${item.color}25`, borderRadius: 10, padding: 12 }}>
                   <div style={{ fontSize: 12, color: S.text2, marginBottom: 4 }}>{item.label}</div>
                   <div style={{ fontSize: 16, fontWeight: 800, color: item.color }}>{item.val}</div>
-                </div>
+                </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -162,7 +163,7 @@ export default function StacksSBTCGuidePage() {
           section="learn"
         />
 
-              ))}
+
             </div>
           </div>
 

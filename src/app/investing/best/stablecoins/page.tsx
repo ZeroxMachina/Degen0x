@@ -293,7 +293,8 @@ export default function BestStablecoinsPage() {
             <div key={stat.label} className="glass p-4 text-center rounded-xl">
               <div className="text-2xl font-black text-[var(--color-primary)]">{stat.value}</div>
               <div className="text-xs text-[var(--color-text-secondary)] mt-1">{stat.label}</div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="SatoshiGhost"
@@ -304,7 +305,7 @@ export default function BestStablecoinsPage() {
           section="investing"
         />
 
-          ))}
+
         </div>
       </header>
 

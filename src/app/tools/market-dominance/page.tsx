@@ -18,7 +18,7 @@ interface SectorShift {
   sector: string;
   change: number;
   status: 'up' | 'down';
-}
+};
 
 const MarketDominancePage = () => {
   const [selectedPeriod, setSelectedPeriod] = useState<'7d' | '30d' | '90d'>('30d');

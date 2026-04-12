@@ -112,7 +112,8 @@ export default function DecentralizedGPUComputeGuidePage() {
               <div key={s.label} style={{ background: `${s.color}10`, border: `1px solid ${s.color}30`, borderRadius: 12, padding: 16, textAlign: "center" }}>
                 <div style={{ fontSize: 20, fontWeight: 900, color: s.color }}>{s.stat}</div>
                 <div style={{ fontSize: 13, color: S.text2, marginTop: 4 }}>{s.label}</div>
-              </div>
+              </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -123,7 +124,7 @@ export default function DecentralizedGPUComputeGuidePage() {
           section="learn"
         />
 
-            ))}
+
           </div>
         </section>
 

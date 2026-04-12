@@ -24,7 +24,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/crypto-debit-card-with-staking-rewards',
-  };
+  },
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

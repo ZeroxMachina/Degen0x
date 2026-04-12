@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://degen0x.com/nfts/how-to-mint-nft-step-by-step',
   }
-};export const const structuredData = {
+};
+
+export const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'How to Mint NFT Step-by-Step 2026: Complete Guide to Creating and Minting NFTs',
@@ -61,7 +63,7 @@ export default function HowToMintNFTStepByStep() {
     padding: 20,
     marginBottom: 24,
     lineHeight: 1.8,
-  }
+  };
   const h1Style = {
     fontSize: 36,
     fontWeight: 800,
@@ -70,14 +72,14 @@ export default function HowToMintNFTStepByStep() {
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     backgroundClip: 'text',
-  }
+  };
   const h2Style = {
     fontSize: 24,
     fontWeight: 700,
     marginTop: 40,
     marginBottom: 16,
     color: '#f472b6', borderBottom: '2px solid #5b2141', paddingBottom: 12,
-  }
+  };
   const badgeStyle = {
     display: 'inline-block',
     padding: '6px 12px',
@@ -86,17 +88,17 @@ export default function HowToMintNFTStepByStep() {
     fontWeight: 600,
     marginRight: 8,
     marginBottom: 16,
-  }
+  };
   const linkStyle = {
     color: '#58a6ff',
     textDecoration: 'none',
-  }
+  };
   const tableStyle = {
     width: '100%',
     borderCollapse: 'collapse' as const,
     marginBottom: 24,
     fontSize: 14,
-  }
+  };
   const thStyle = {
     background: '#0d1117',
     border: '1px solid #30363d',
@@ -104,7 +106,7 @@ export default function HowToMintNFTStepByStep() {
     textAlign: 'left' as const,
     fontWeight: 700,
     color: '#e6edf3',
-  }
+  };
   const tdStyle = {
     border: '1px solid #30363d',
     padding: 12,
@@ -440,13 +442,13 @@ export default function HowToMintNFTStepByStep() {
         </section>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Altlayer Restaked Rollups Alt Token Raas</Link></li>
-            <li><Link href="/learn/appchains-application-specific-blockchains" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Appchains Application Specific Blockchains</Link></li>
-            <li><Link href="/learn/appchains-application-specific-blockchains-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Appchains Application Specific Blockchains</Link></li>
-            <li><Link href="/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Aave V4 Gho Stablecoin Defi Lending</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Altlayer Restaked Rollups Alt Token Raas</Link></li>
+            <li><Link href="/learn/appchains-application-specific-blockchains" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Appchains Application Specific Blockchains</Link></li>
+            <li><Link href="/learn/appchains-application-specific-blockchains-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Appchains Application Specific Blockchains</Link></li>
+            <li><Link href="/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave V4 Gho Stablecoin Defi Lending</Link></li>
           </ul>
         </nav>
 

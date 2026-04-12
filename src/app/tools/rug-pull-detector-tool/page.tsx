@@ -19,7 +19,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/tools/rug-pull-detector-tool',
-  };
+  },
+};
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -393,9 +395,6 @@ export default function RugPullDetector() {
             </p>
           </div>
         </section>
-      </div>
-    </div>
-
         <AuthorAttribution
           author="0xMachina"
           role="Founder"
@@ -404,6 +403,8 @@ export default function RugPullDetector() {
           readingTime={3}
           section="tools"
         />
+      </div>
+    </div>
 
   );
 }

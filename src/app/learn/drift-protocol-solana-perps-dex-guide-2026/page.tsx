@@ -78,20 +78,7 @@ const page = () => {
           text: "Start small: deposit $1-5k, use 1-2x leverage (minimal risk), and practice 10-20 trades to understand mechanics. Focus: risk management over profit. Learn: liquidation price calculation, stop-loss placement, funding rate monitoring. Mistakes: over-leveraging (10x on first trade), ignoring stop-losses, revenge trading after losses. Professional approach: use 1% position risk (if $5k account, max $50 loss per trade). This requires discipline but prevents catastrophic losses."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Drift Protocol: Solana Perpetual Futures DEX Guide 2026',
-    description: 'Master Drift Protocol on Solana. Learn perpetual futures trading, leverage mechanics, risk management, and how to trade with institutional-grade infrastructure.',
-    url: 'https://degen0x.com/learn/drift-protocol-solana-perps-dex-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Drift Protocol: Solana Perpetual Futures DEX Guide 2026',
-    description: 'Master Drift Protocol on Solana. Learn perpetual futures trading, leverage mechanics, risk management, and how to trade with institutional-grade infrastructure.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -208,20 +195,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Drift Protocol: Solana Perpetual Futures DEX Guide 2026',
-    description: 'Master Drift Protocol on Solana. Learn perpetual futures trading, leverage mechanics, risk management, and how to trade with institutional-grade infrastructure.',
-    url: 'https://degen0x.com/learn/drift-protocol-solana-perps-dex-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Drift Protocol: Solana Perpetual Futures DEX Guide 2026',
-    description: 'Master Drift Protocol on Solana. Learn perpetual futures trading, leverage mechanics, risk management, and how to trade with institutional-grade infrastructure.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

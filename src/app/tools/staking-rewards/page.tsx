@@ -58,7 +58,7 @@ export default function StakingRewardsPage() {
         break;
       default:
         compoundPeriods = 1;
-    }
+    };
 
     const years = months / 12;
 
@@ -66,7 +66,7 @@ export default function StakingRewardsPage() {
       finalTokens = principal * (1 + rate * years);
     } else {
       finalTokens = principal * Math.pow(1 + rate / compoundPeriods, compoundPeriods * years);
-    }
+    };
 
     const tokensEarned = finalTokens - principal;
     const usdEarned = tokensEarned * price;
@@ -81,7 +81,7 @@ export default function StakingRewardsPage() {
         cumTokens = principal * (1 + rate * y);
       } else {
         cumTokens = principal * Math.pow(1 + rate / compoundPeriods, compoundPeriods * y);
-      }
+      };
       const earned = cumTokens - principal;
       const prevCum = m === 1 ? principal : monthly[m - 2].cumTokens;
       const monthEarned = cumTokens - prevCum;

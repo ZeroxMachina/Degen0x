@@ -327,7 +327,7 @@ export default function LedgerVsTrezor() {
       </div>
     </>
   );
-}
+};
 
 const styles = {
   container: {

@@ -37,12 +37,6 @@ const darkTheme = {
     url: 'https://degen0x.com/methodology',
     images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Methodology | degen0x',
-    description: 'How degen0x evaluates exchanges, wallets, and DeFi protocols with rigorous testing and transparency.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
   openGraph: {
     type: 'article',
     title: 'Methodology | degen0x',
@@ -432,20 +426,20 @@ export default function MethodologyPage() {
         </section>
 
       {/* FAQ Section */}
-      <section id="faq" style={{ scrollMarginTop: 24, marginTop: 48 }>
-        <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 40 }>Frequently Asked Questions</h2>
-        <div style={{ display: 'grid', gap: 16 }>
-            <details style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }>
-              <summary style={{ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }>How does degen0x evaluate crypto exchanges?</summary>
-              <p style={{ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }>degen0x evaluates exchanges across eight dimensions: fees (maker/taker spreads), assets (breadth and stablecoin offerings), security (cold storage, insurance, audit history), UX (interface clarity, mobile quality), support (response times and resolution quality), compliance (regulatory status, KYC standards), ramps (fiat deposit options), and features (staking, advanced orders, API access). We test hands-on and disclose all evaluation criteria.</p>
+      <section id="faq" style={{ scrollMarginTop: 24, marginTop: 48 }}>
+        <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 40 }}>Frequently Asked Questions</h2>
+        <div style={{ display: 'grid', gap: 16 }}>
+            <details style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }}>
+              <summary style={{ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }}>How does degen0x evaluate crypto exchanges?</summary>
+              <p style={{ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }}>degen0x evaluates exchanges across eight dimensions: fees (maker/taker spreads), assets (breadth and stablecoin offerings), security (cold storage, insurance, audit history), UX (interface clarity, mobile quality), support (response times and resolution quality), compliance (regulatory status, KYC standards), ramps (fiat deposit options), and features (staking, advanced orders, API access). We test hands-on and disclose all evaluation criteria.</p>
             </details>
-            <details style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }>
-              <summary style={{ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }>What methodology does degen0x use for wallets?</summary>
-              <p style={{ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }>For wallets, we assess chain support (Ethereum, Solana, Polygon, etc.), security model (MPC vs seed phrase), recovery mechanisms, dApp integration quality, token/NFT visualization, swap functionality, and gas estimation accuracy. We prioritize self-custody wallets and evaluate based on actual UX testing, not marketing claims.</p>
+            <details style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }}>
+              <summary style={{ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }}>What methodology does degen0x use for wallets?</summary>
+              <p style={{ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }}>For wallets, we assess chain support (Ethereum, Solana, Polygon, etc.), security model (MPC vs seed phrase), recovery mechanisms, dApp integration quality, token/NFT visualization, swap functionality, and gas estimation accuracy. We prioritize self-custody wallets and evaluate based on actual UX testing, not marketing claims.</p>
             </details>
-            <details style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }>
-              <summary style={{ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }>How does degen0x test DeFi protocols?</summary>
-              <p style={{ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }>DeFi protocol evaluation includes TVL trends, audit coverage and scope, team transparency and track record, governance token functionality, token distribution fairness, historical exploit responses, insurance coverage, and composability with other protocols. We view each protocol through the lens of risk-adjusted returns and long-term sustainability.</p>
+            <details style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }}>
+              <summary style={{ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }}>How does degen0x test DeFi protocols?</summary>
+              <p style={{ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }}>DeFi protocol evaluation includes TVL trends, audit coverage and scope, team transparency and track record, governance token functionality, token distribution fairness, historical exploit responses, insurance coverage, and composability with other protocols. We view each protocol through the lens of risk-adjusted returns and long-term sustainability.</p>
             </details>
         </div>
       </section>

@@ -78,20 +78,7 @@ const page = () => {
           text: "Bridge assets from Ethereum or other L2s to zkSync Era (5-10 min). Deposit into DEX liquidity pools (Uniswap, Curve) earning trading fees plus governance incentives. Farm emerging protocols offering ZK token emissions (high APY, high risk). For advanced traders: execute high-frequency swaps profitably due to sub-cent fees. For institutions: deploy a custom Elastic Chain for tokenized assets or internal DeFi. Time your entry: early Elastic Chain adopters will capture outsized returns."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'zkSync Era Elastic Chain Ecosystem Guide 2026',
-    description: 'Master zkSync Era',
-    url: 'https://degen0x.com/learn/zksync-era-elastic-chain-ecosystem-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'zkSync Era Elastic Chain Ecosystem Guide 2026',
-    description: 'Master zkSync Era',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -225,20 +212,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'zkSync Era Elastic Chain Ecosystem Guide 2026',
-    description: 'Master zkSync Era',
-    url: 'https://degen0x.com/learn/zksync-era-elastic-chain-ecosystem-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'zkSync Era Elastic Chain Ecosystem Guide 2026',
-    description: 'Master zkSync Era',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

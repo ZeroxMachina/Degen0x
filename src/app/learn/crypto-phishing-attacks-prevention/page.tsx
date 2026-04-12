@@ -78,20 +78,7 @@ const page = () => {
           text: "Tiered security: (1) Trading wallet: small amount ($1-5k) in MetaMask, hot wallet, convenient but monitored, (2) Savings wallet: medium amount ($5-50k) in hardware wallet, accessed monthly, secure, (3) Vault wallet: large amount (>$50k) in multisig hardware wallet (requires 2-of-3 signers), stored in safe deposit box. Backup strategy: seed phrases encrypted and stored in multiple locations (safe, family member, lawyer). Review quarterly: check old addresses for forgotten funds, revoke outdated approvals. This defense-in-depth approach prevents total loss even if one layer is compromised."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Crypto Phishing Attacks & Prevention: Security 2026',
-    description: 'Master crypto security. Learn phishing attack vectors, wallet protection, signature verification, and how to secure your digital assets from theft.',
-    url: 'https://degen0x.com/learn/crypto-phishing-attacks-prevention',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Crypto Phishing Attacks & Prevention: Security 2026',
-    description: 'Master crypto security. Learn phishing attack vectors, wallet protection, signature verification, and how to secure your digital assets from theft.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -208,20 +195,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Crypto Phishing Attacks & Prevention: Security 2026',
-    description: 'Master crypto security. Learn phishing attack vectors, wallet protection, signature verification, and how to secure your digital assets from theft.',
-    url: 'https://degen0x.com/learn/crypto-phishing-attacks-prevention',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Crypto Phishing Attacks & Prevention: Security 2026',
-    description: 'Master crypto security. Learn phishing attack vectors, wallet protection, signature verification, and how to secure your digital assets from theft.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

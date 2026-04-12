@@ -304,7 +304,7 @@ export default function PortfolioSimulatorPage() {
         var95: 0,
         finalMedianValue: 0,
       };
-    }
+    };
 
     const calcs = calculatePortfolioMetrics(portfolioAssets, period);
     const allocations = portfolioAssets.map(a => a.allocation);

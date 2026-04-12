@@ -78,20 +78,7 @@ const page = () => {
           text: "Nansen ($599/month) focuses on labeled addresses (smart money, whales, exchanges) with portfolio alerts. Best for following institutions. Arkham ($10k+/month) uses AI to cluster addresses into real-world entities (funds, companies) with compliance tools. Best for deep entity research. Glassnode ($299-999/month) provides 1200+ onchain metrics (MVRV, NUPL, whale concentration) for macro analysis. Choose based on your workflow: Nansen for alerts, Arkham for entity investigation, Glassnode for long-term trends."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Onchain Analytics: Master Blockchain Data Intelligence',
-    description: 'Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto trading decisions.',
-    url: 'https://degen0x.com/learn/onchain-analytics-blockchain-data-intelligence-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Onchain Analytics: Master Blockchain Data Intelligence',
-    description: 'Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto trading decisions.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -233,20 +220,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Onchain Analytics: Master Blockchain Data Intelligence',
-    description: 'Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto trading decisions.',
-    url: 'https://degen0x.com/learn/onchain-analytics-blockchain-data-intelligence-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Onchain Analytics: Master Blockchain Data Intelligence',
-    description: 'Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto trading decisions.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

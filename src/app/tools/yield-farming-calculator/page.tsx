@@ -151,7 +151,7 @@ export default function YieldFarmingCalculatorPage() {
     let impermanentLoss = 0;
     if (isLP) {
       impermanentLoss = calculateImpermanentLoss(token1PriceChange, token2PriceChange);
-    }
+    };
     const ilAmount = (netFinalValue * Math.abs(impermanentLoss)) / 100;
     const netProfitAfterIL = finalValueAfterPrice - ilAmount;
 

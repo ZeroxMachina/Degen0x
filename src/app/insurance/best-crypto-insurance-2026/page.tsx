@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title: 'Best Crypto Insurance 2026', description: 'Crypto insurance: Nexus Mutual, InsurAce, Bridge Mutual, Coincover. Compare coverage, premiums, claims.', image: 'https://degen0x.com/og-insurance.svg' },
   alternates: {
     canonical: 'https://degen0x.com/insurance/best-crypto-insurance-2026',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -168,13 +170,13 @@ export default function CryptoInsurance2026() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/wallets/best-hardware-wallet-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Hardware Wallet</Link></li>
-            <li><Link href="/wallets/best-mobile-crypto-wallet-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Mobile Crypto Wallet</Link></li>
-            <li><Link href="/wallets/best-multi-chain-wallet" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Multi Chain Wallet</Link></li>
-            <li><Link href="/wallets/best-solana-wallet-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Solana Wallet</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/wallets/best-hardware-wallet-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Hardware Wallet</Link></li>
+            <li><Link href="/wallets/best-mobile-crypto-wallet-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Mobile Crypto Wallet</Link></li>
+            <li><Link href="/wallets/best-multi-chain-wallet" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Multi Chain Wallet</Link></li>
+            <li><Link href="/wallets/best-solana-wallet-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Solana Wallet</Link></li>
           </ul>
         </nav>
 

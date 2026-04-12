@@ -70,7 +70,8 @@ export default function LendingRatesPage() {
                 <div className="text-2xl mb-2">{stat.icon}</div>
                 <div className="text-sm text-[var(--color-text-secondary)]">{stat.label}</div>
                 <div className="text-lg font-bold text-[var(--color-text)]">{stat.value}</div>
-              </div>
+              </div>        ))}
+
 
         <AuthorAttribution
           author="0xMachina"
@@ -81,7 +82,7 @@ export default function LendingRatesPage() {
           section="tools"
         />
 
-            ))}
+
           </div>
         </div>
 

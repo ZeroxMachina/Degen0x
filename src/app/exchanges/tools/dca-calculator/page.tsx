@@ -58,7 +58,7 @@ export default function DcaCalculatorPage() {
           value: portfolioValue,
         });
       }
-    }
+    };
 
     const totalReturn = portfolioValue - totalInvested;
     const totalReturnPercent = totalInvested > 0 ? (totalReturn / totalInvested) * 100 : 0;

@@ -24,7 +24,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/investing/best-layer-2-tokens-to-invest',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -360,13 +362,13 @@ export default function BestLayer2Tokens2026() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/trading/crypto-arbitrage-strategies-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Arbitrage Strategies</Link></li>
-            <li><Link href="/trading/crypto-day-trading-strategies-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Day Trading Strategies</Link></li>
-            <li><Link href="/trading/crypto-futures-funding-rate-strategy" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Futures Funding Rate Strategy</Link></li>
-            <li><Link href="/trading/crypto-market-making-explained" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Market Making Explained</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/trading/crypto-arbitrage-strategies-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Arbitrage Strategies</Link></li>
+            <li><Link href="/trading/crypto-day-trading-strategies-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Day Trading Strategies</Link></li>
+            <li><Link href="/trading/crypto-futures-funding-rate-strategy" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Futures Funding Rate Strategy</Link></li>
+            <li><Link href="/trading/crypto-market-making-explained" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Market Making Explained</Link></li>
           </ul>
         </nav>
 

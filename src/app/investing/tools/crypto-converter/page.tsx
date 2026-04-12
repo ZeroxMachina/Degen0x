@@ -74,7 +74,7 @@ export default function CryptoConverterPage() {
 
         if (!response.ok) {
           throw new Error("Failed to fetch prices");
-        }
+        };
 
         const data = await response.json();
         setPrices(data);

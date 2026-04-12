@@ -27,7 +27,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/optimism-superchain-op-stack-ecosystem-guide-2026',
-  };
+  },
+};
+
 const BreadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

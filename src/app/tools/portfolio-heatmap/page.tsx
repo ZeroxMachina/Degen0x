@@ -55,7 +55,7 @@ function generateAssets(): Asset[] {
   return base.map((a) => {
     const corr: Record<string, number> = {};
     ids.forEach(otherId => {
-      if (otherId === a.id) { corr[otherId] = 1; return; }
+      if (otherId === a.id) { corr[otherId] = 1; return; };
       const sameCategory = base.find(b => b.id === otherId)?.category === a.category;
       corr[otherId] = Math.round((sameCategory ? r(0.5, 0.95) : r(-0.2, 0.7)) * 100) / 100;
     });
@@ -68,7 +68,7 @@ function generateAssets(): Asset[] {
       correlation: corr,
     };
   });
-}
+};
 
 const ASSETS = generateAssets();
 

@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title: 'Best Meme Coins to Buy 2026 | degen0x', description: 'Meme coin guide 2026: DOGE, SHIB, PEPE, WIF. Market analysis, community, utility, rug pull checklist.', image: 'https://degen0x.com/og-investing.svg' },
   alternates: {
     canonical: 'https://degen0x.com/investing/best-meme-coins-to-buy-2026',
-  };
+  },
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Meme Coins to Buy 2026', description: 'Meme coin guide: DOGE, SHIB, PEPE, WIF, BONK, FLOKI. Market cap, community, utility, risks, rug pull detection.', image: 'https://degen0x.com/og-investing.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [
   { '@type': 'Question', name: 'What makes a good meme coin investment?', acceptedAnswer: { '@type': 'Answer', text: 'Established brand (DOGE, SHIB), strong community (100K+ Discord), exchange listings (Binance, Kraken), real utility (staking, governance), low supply concentration (no founder whale), and long-term roadmap. Avoid: anonymous teams, 90%+ founder holdings, zero utility, <1K Discord, <$10M market cap. Most meme coins are 99% speculation with 1% utility.' } },
   { '@type': 'Question', name: 'Is DOGE or SHIB a better investment?', acceptedAnswer: { '@type': 'Answer', text: 'DOGE ($0.25, $37B market cap, April 2026): older, more stable, Elon Musk association, zero utility. SHIB ($0.000015, $7B market cap): younger, ShibSwap (DEX) + rewards, faster gains/losses. DOGE = safer, SHIB = higher risk/reward. Both outperformed Bitcoin 2020-2021, underperformed 2022-2025. Choose: DOGE for stability, SHIB for growth.' } },
@@ -78,13 +80,13 @@ export default function BestMemeCoins2026() {
           section="investing"
         />
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/trading/crypto-pairs-trading-strategy" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Pairs Trading Strategy</Link></li>
-            <li><Link href="/trading/crypto-scalping-strategy-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Scalping Strategy</Link></li>
-            <li><Link href="/trading/algorithmic-crypto-trading-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Algorithmic Crypto Trading</Link></li>
-            <li><Link href="/trading/best-crypto-technical-indicators" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto Technical Indicators</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/trading/crypto-pairs-trading-strategy" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Pairs Trading Strategy</Link></li>
+            <li><Link href="/trading/crypto-scalping-strategy-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Scalping Strategy</Link></li>
+            <li><Link href="/trading/algorithmic-crypto-trading-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Algorithmic Crypto Trading</Link></li>
+            <li><Link href="/trading/best-crypto-technical-indicators" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Technical Indicators</Link></li>
           </ul>
         </nav>
 

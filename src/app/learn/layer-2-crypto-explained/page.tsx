@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title: 'Layer 2 Crypto Explained 2026 | degen0x', description: 'Layer 2 scaling explained: optimistic rollups, ZK rollups, fraud proofs, TPS comparison, TVL, finality times.', image: 'https://degen0x.com/og-learn.svg' },
   alternates: {
     canonical: 'https://degen0x.com/learn/layer-2-crypto-explained',
-  };
+  },
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Layer 2 Crypto Explained: Rollups & Scaling', description: 'Layer 2 scaling explained: optimistic rollups, ZK rollups, fraud proofs, validity proofs, TPS, TVL, finality times.', image: 'https://degen0x.com/og-learn.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [
   { '@type': 'Question', name: 'What are Layer 2s and why do we need them?', acceptedAnswer: { '@type': 'Answer', text: 'Layer 2s are scaling solutions built on top of Layer 1 blockchains (Ethereum, Bitcoin). They process transactions off-chain and periodically settle to L1, combining L1 security with L2 speed. Ethereum L1: ~15-30 TPS, $1-50 fees. Arbitrum (L2): 4,000+ TPS, <$0.01 fees. L2s solve scalability without requiring L1 protocol changes.' } },
   { '@type': 'Question', name: 'What is the difference between optimistic and ZK rollups?', acceptedAnswer: { '@type': 'Answer', text: 'Optimistic rollups (Arbitrum, Optimism, Base): assume transactions are valid by default; challengers can submit fraud proofs if dishonest. Finality: 7 days. ZK rollups (zkSync, StarkNet, Scroll): batch transactions and prove correctness with zero-knowledge proofs. Finality: minutes. Optimistic rollups are simpler, faster to deploy, less proven. ZK rollups are more complex but offer instant finality.' } },
@@ -86,13 +88,13 @@ export default function Layer2CryptoExplained() {
           section="learn"
         />
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/tools/crypto-exchange-fee-comparison-tool" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Exchange Fee Tool</Link></li>
-            <li><Link href="/tools/altcoin-season-index" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Altcoin Season Index</Link></li>
-            <li><Link href="/tools/bitcoin-dominance-chart-live" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Bitcoin Dominance Chart Live</Link></li>
-            <li><Link href="/tools/bitcoin-halving-countdown" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Bitcoin Halving Countdown</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/tools/crypto-exchange-fee-comparison-tool" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Exchange Fee Tool</Link></li>
+            <li><Link href="/tools/altcoin-season-index" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Altcoin Season Index</Link></li>
+            <li><Link href="/tools/bitcoin-dominance-chart-live" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Dominance Chart Live</Link></li>
+            <li><Link href="/tools/bitcoin-halving-countdown" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Halving Countdown</Link></li>
           </ul>
         </nav>
 

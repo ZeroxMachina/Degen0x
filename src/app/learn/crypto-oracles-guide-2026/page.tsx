@@ -71,7 +71,8 @@ export default function CryptoOraclesGuidePage() {
             <div key={s.label} role="listitem" aria-label={`${s.label}: ${s.value}`} className="p-3 rounded-lg" style={{ background: "var(--glass-bg)", border: "1px solid var(--color-border)" }}>
               <div className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{s.label}</div>
               <div className="text-sm font-bold" style={{ color: "var(--color-text)" }}>{s.value}</div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -82,7 +83,7 @@ export default function CryptoOraclesGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

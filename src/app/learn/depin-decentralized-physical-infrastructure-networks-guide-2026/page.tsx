@@ -78,20 +78,7 @@ const page = () => {
           text: "Render (GPU compute is real demand, competition vs AWS), Filecoin (storage utility exists, used by Nft.storage), Helium (mobile carrier alternative, growing coverage). Second tier: Akash (compute alternative, smaller user base), Dimo (vehicle data monetization, emerging). Avoid: tokens where operator count is shrinking, usage is flat, or subsidies aren't declining (indicates no real utility). The best DePIN winners will be unsexy infrastructure, not hyped applications. Focus on cost curve: can DePIN hit 20% of cloud infrastructure cost within 5 years? If yes, token has 100x+ potential."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'DePIN Networks: Decentralized Physical Infrastructure 2026',
-    description: 'Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage infrastructure.',
-    url: 'https://degen0x.com/learn/depin-decentralized-physical-infrastructure-networks-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'DePIN Networks: Decentralized Physical Infrastructure 2026',
-    description: 'Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage infrastructure.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -222,20 +209,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'DePIN Networks: Decentralized Physical Infrastructure 2026',
-    description: 'Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage infrastructure.',
-    url: 'https://degen0x.com/learn/depin-decentralized-physical-infrastructure-networks-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'DePIN Networks: Decentralized Physical Infrastructure 2026',
-    description: 'Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage infrastructure.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

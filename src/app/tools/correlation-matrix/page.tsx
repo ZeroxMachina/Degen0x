@@ -65,7 +65,7 @@ const calculateStats = () => {
         maxPair = { i, j };
       }
     }
-  }
+  };
 
   const avgCorr = count > 0 ? sum / count : 0;
   const diversificationScore = Math.max(0, 100 - (avgCorr * 100));

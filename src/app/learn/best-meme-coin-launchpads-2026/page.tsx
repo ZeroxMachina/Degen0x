@@ -135,7 +135,8 @@ export default function BestMemeCoinLaunchpads2026() {
           >
             <div className="text-2xl font-bold text-[#f472b6]">{stat.value}</div>
             <div className="text-xs text-[#8b949e] mt-1">{stat.label}</div>
-          </div>
+          </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -146,7 +147,7 @@ export default function BestMemeCoinLaunchpads2026() {
           section="learn"
         />
 
-        ))}
+
       </div>
 
       {/* Table of Contents */}

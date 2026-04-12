@@ -31,7 +31,7 @@ export default function ProfitLossCalculatorPage() {
     } else {
       investmentCost = qty;
       units = buy > 0 ? qty / buy : 0;
-    }
+    };
 
     const buyFeeAmount = investmentCost * (buyFee / 100);
     const totalBuyCost = investmentCost + buyFeeAmount;

@@ -235,7 +235,8 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/socialfi-social-finance-creator-tokens-guide-2026',
-  };
+  }
+};
 export default function SocialFiGuidePage() {
   return (
     <main style={pageStyles.container}>

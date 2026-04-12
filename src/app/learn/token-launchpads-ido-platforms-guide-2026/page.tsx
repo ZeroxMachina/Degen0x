@@ -78,20 +78,7 @@ const page = () => {
           text: "Buy at IDO price, sell immediately at listing. Success requires: (1) guaranteed allocation (whitelist tier), (2) stable launch price ($0.10 = lower chance of dumps), (3) good liquidity (>$1M on exchange immediately), (4) community hype (social media engagement >10K comments). Probability of success: 30-40% of IDOs dump 50%+ in first week. Expected return: 20-30% on successful flips, -40% on failed ones. Professional flippers average 5-10% ROI after losses. Not recommended for casual investors; stick to long-term plays in 5-10 year visions."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Token Launchpads & IDO Platforms Guide 2026',
-    description: 'Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics analysis.',
-    url: 'https://degen0x.com/learn/token-launchpads-ido-platforms-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Token Launchpads & IDO Platforms Guide 2026',
-    description: 'Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics analysis.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -234,20 +221,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Token Launchpads & IDO Platforms Guide 2026',
-    description: 'Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics analysis.',
-    url: 'https://degen0x.com/learn/token-launchpads-ido-platforms-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Token Launchpads & IDO Platforms Guide 2026',
-    description: 'Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics analysis.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

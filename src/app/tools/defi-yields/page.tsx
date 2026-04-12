@@ -120,7 +120,7 @@ export default function DeFiYieldsPage() {
   function toggleSort(key: SortKey) {
     if (sort === key) setSortDir(d => d === "desc" ? "asc" : "desc");
     else { setSort(key); setSortDir("desc"); }
-  }
+  };
 
   const chipStyle = (active: boolean, color: string) => ({
     padding: "6px 14px",

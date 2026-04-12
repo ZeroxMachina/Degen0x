@@ -87,7 +87,8 @@ export default function AltcoinsPage() {
             <div key={item.name} className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 text-center">
               <div className="text-2xl font-bold text-[var(--color-primary)]">{item.count}</div>
               <div className="text-sm text-[var(--color-text-secondary)] mt-1">{item.name}</div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="NullPointer"
@@ -98,7 +99,7 @@ export default function AltcoinsPage() {
           section="exchanges"
         />
 
-          ))}
+
         </div>
       </div>
 

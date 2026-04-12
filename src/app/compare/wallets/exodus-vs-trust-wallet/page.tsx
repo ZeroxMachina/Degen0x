@@ -422,7 +422,7 @@ export default function ExodusVsTrustWallet() {
       </div>
     </>
   );
-}
+};
 
 const styles = {
   container: {

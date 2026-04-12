@@ -78,20 +78,7 @@ const page = () => {
           text: "TVL is assets deposited (working capital). Market cap is token value × circulation supply. $1B TVL ÷ $100M market cap = 10x TVL/market cap (healthy, protocol is profitable). $1B TVL ÷ $1B market cap = 1x (fully valued). $1B TVL ÷ $10B market cap = 0.1x (overvalued, users don\'t expect future growth). Compare TVL/market cap across protocols: Uniswap ~0.2x (mature, fully valued), Aave ~0.3x (established), emerging protocols ~5-10x (speculative, users betting on 10-100x growth if successful)."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'TVL (Total Value Locked): DeFi Metrics & Analysis 2026',
-    description: 'Master TVL analysis for DeFi protocols. Learn how TVL metrics predict protocol success, identify opportunities, and evaluate DeFi ecosystem growth.',
-    url: 'https://degen0x.com/learn/what-is-tvl-total-value-locked',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'TVL (Total Value Locked): DeFi Metrics & Analysis 2026',
-    description: 'Master TVL analysis for DeFi protocols. Learn how TVL metrics predict protocol success, identify opportunities, and evaluate DeFi ecosystem growth.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -212,20 +199,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'TVL (Total Value Locked): DeFi Metrics & Analysis 2026',
-    description: 'Master TVL analysis for DeFi protocols. Learn how TVL metrics predict protocol success, identify opportunities, and evaluate DeFi ecosystem growth.',
-    url: 'https://degen0x.com/learn/what-is-tvl-total-value-locked',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'TVL (Total Value Locked): DeFi Metrics & Analysis 2026',
-    description: 'Master TVL analysis for DeFi protocols. Learn how TVL metrics predict protocol success, identify opportunities, and evaluate DeFi ecosystem growth.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

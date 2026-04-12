@@ -401,9 +401,6 @@ export default function LaunchCryptoProject() {
             </Link>
           </div>
         </section>
-      </div>
-    </div>
-
         <AuthorAttribution
           author="0xMachina"
           role="Founder"
@@ -412,6 +409,8 @@ export default function LaunchCryptoProject() {
           readingTime={3}
           section="web3-business"
         />
+      </div>
+    </div>
 
   );
 }

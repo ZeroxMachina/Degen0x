@@ -187,7 +187,8 @@ export default function OndoFinanceGuidePage() {
               <div className="text-sm font-bold" style={{ color: "var(--color-text)" }}>
                 {s.value}
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -198,7 +199,7 @@ export default function OndoFinanceGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

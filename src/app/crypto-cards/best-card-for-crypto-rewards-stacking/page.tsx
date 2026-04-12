@@ -24,7 +24,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/best-card-for-crypto-rewards-stacking',
-  };
+  },
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

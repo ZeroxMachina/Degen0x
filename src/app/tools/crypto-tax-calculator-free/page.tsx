@@ -27,7 +27,7 @@ export default function BestCryptoTaxCalculator() {
     table: { width: '100%', borderCollapse: 'collapse' as const, marginBottom: 24, fontSize: 14 },
     th: { background: '#0d1117', border: '1px solid #30363d', padding: 12, textAlign: 'left' as const, fontWeight: 700, color: '#e6edf3' },
     td: { border: '1px solid #30363d', padding: 12, color: '#8b949e' }
-  }  const toc = [{ id: 'overview', t: 'Why Tax Tools Matter' }, { id: 'free', t: 'Free Tier Comparison' }, { id: 'cost-basis', t: 'Cost Basis Methods' }, { id: 'defi', t: 'DeFi Support' }, { id: 'features', t: 'Feature Comparison' }, { id: 'country', t: 'Country Support' }, { id: 'choosing', t: 'Choosing' }, { id: 'faq', t: 'FAQ' }];
+  };  const toc = [{ id: 'overview', t: 'Why Tax Tools Matter' }, { id: 'free', t: 'Free Tier Comparison' }, { id: 'cost-basis', t: 'Cost Basis Methods' }, { id: 'defi', t: 'DeFi Support' }, { id: 'features', t: 'Feature Comparison' }, { id: 'country', t: 'Country Support' }, { id: 'choosing', t: 'Choosing' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
@@ -153,13 +153,13 @@ export default function BestCryptoTaxCalculator() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Aave Vs Maker Vs Compound</Link></li>
-            <li><Link href="/compare/arbitrum-vs-optimism-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Arbitrum Vs Optimism</Link></li>
-            <li><Link href="/compare/bitcoin-vs-ethereum-investment" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Bitcoin Vs Ethereum Investment</Link></li>
-            <li><Link href="/compare/centralized-vs-decentralized-exchange" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Centralized Vs Decentralized Exchange</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave Vs Maker Vs Compound</Link></li>
+            <li><Link href="/compare/arbitrum-vs-optimism-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Arbitrum Vs Optimism</Link></li>
+            <li><Link href="/compare/bitcoin-vs-ethereum-investment" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Vs Ethereum Investment</Link></li>
+            <li><Link href="/compare/centralized-vs-decentralized-exchange" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Centralized Vs Decentralized Exchange</Link></li>
           </ul>
         </nav>
 

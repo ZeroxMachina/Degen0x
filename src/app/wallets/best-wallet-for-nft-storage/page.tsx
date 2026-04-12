@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-nft-storage',
   }
-};export const const structuredData = {
+};
+
+export const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Best Wallet for NFT Storage 2026: MetaMask, Phantom, Coinbase, Trust Wallet, Ledger',
@@ -67,7 +69,7 @@ export default function BestWalletForNFTStorage() {
     padding: 20,
     marginBottom: 24,
     lineHeight: 1.8,
-  }
+  };
   const h1Style = {
     fontSize: 36,
     fontWeight: 800,
@@ -76,14 +78,14 @@ export default function BestWalletForNFTStorage() {
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     backgroundClip: 'text',
-  }
+  };
   const h2Style = {
     fontSize: 24,
     fontWeight: 700,
     marginTop: 40,
     marginBottom: 16,
     color: '#22c55e', borderBottom: '2px solid #14532d', paddingBottom: 12,
-  }
+  };
   const badgeStyle = {
     display: 'inline-block',
     padding: '6px 12px',
@@ -92,17 +94,17 @@ export default function BestWalletForNFTStorage() {
     fontWeight: 600,
     marginRight: 8,
     marginBottom: 16,
-  }
+  };
   const linkStyle = {
     color: '#58a6ff',
     textDecoration: 'none',
-  }
+  };
   const tableStyle = {
     width: '100%',
     borderCollapse: 'collapse' as const,
     marginBottom: 24,
     fontSize: 14,
-  }
+  };
   const thStyle = {
     background: '#0d1117',
     border: '1px solid #30363d',
@@ -110,7 +112,7 @@ export default function BestWalletForNFTStorage() {
     textAlign: 'left' as const,
     fontWeight: 700,
     color: '#e6edf3',
-  }
+  };
   const tdStyle = {
     border: '1px solid #30363d',
     padding: 12,
@@ -413,13 +415,13 @@ export default function BestWalletForNFTStorage() {
         </section>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/compare/polygon-vs-arbitrum-vs-optimism" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Polygon Vs Arbitrum Vs Optimism</Link></li>
-            <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Proof Of Work Vs Proof Of Stake</Link></li>
-            <li><Link href="/compare/solana-vs-avalanche-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Solana Vs Avalanche</Link></li>
-            <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Aave Vs Maker Vs Compound</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/compare/polygon-vs-arbitrum-vs-optimism" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Polygon Vs Arbitrum Vs Optimism</Link></li>
+            <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Proof Of Work Vs Proof Of Stake</Link></li>
+            <li><Link href="/compare/solana-vs-avalanche-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Solana Vs Avalanche</Link></li>
+            <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave Vs Maker Vs Compound</Link></li>
           </ul>
         </nav>
 

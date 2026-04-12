@@ -78,20 +78,7 @@ const page = () => {
           text: "No, most likely. Perpetuals require: (1) discipline (don't over-leverage), (2) speed (react to liquidation risks quickly), (3) market knowledge (understand funding rates, volatility), (4) risk tolerance (emotionally handle losses). Data: 90%+ retail perpetual traders lose money (mostly to liquidation). Leverage is seductive but deadly. For beginners: learn spot trading first (buy/hold, understand market structure). Only move to perpetuals with: 3+ years experience, consistent profitability on spot, clear risk management plan, capital you can afford to lose entirely. Better for retail: spot trading, yield farming, or automated strategies. Perpetuals: for experienced traders only."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Perpetual Futures Trading: Leverage & Risk Guide 2026',
-    description: 'Master perpetual futures trading mechanics. Learn leverage trading, risk management, funding rates, liquidation, and how to trade perpetuals profitably.',
-    url: 'https://degen0x.com/learn/what-is-perpetual-futures-trading',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Perpetual Futures Trading: Leverage & Risk Guide 2026',
-    description: 'Master perpetual futures trading mechanics. Learn leverage trading, risk management, funding rates, liquidation, and how to trade perpetuals profitably.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -208,20 +195,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Perpetual Futures Trading: Leverage & Risk Guide 2026',
-    description: 'Master perpetual futures trading mechanics. Learn leverage trading, risk management, funding rates, liquidation, and how to trade perpetuals profitably.',
-    url: 'https://degen0x.com/learn/what-is-perpetual-futures-trading',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Perpetual Futures Trading: Leverage & Risk Guide 2026',
-    description: 'Master perpetual futures trading mechanics. Learn leverage trading, risk management, funding rates, liquidation, and how to trade perpetuals profitably.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

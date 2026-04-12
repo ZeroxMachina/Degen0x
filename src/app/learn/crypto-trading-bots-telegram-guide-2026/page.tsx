@@ -78,20 +78,7 @@ const page = () => {
           text: "Step 1: Choose a safe bot (3Commas, TradingView, open-source on GitHub). Step 2: Start with grid trading (simplest, most beginner-friendly). Step 3: Paper trade for 3 months (use simulated money). Step 4: Deploy on small account ($1-5k) live trading. Step 5: Monitor daily (bots aren\'t set-and-forget). Step 6: Track metrics (profitability, drawdowns, win rate). Step 7: After 6 months of positive results, consider scaling to $10-50k. Important: don\'t trust claims. Verify backtests yourself. Understand the strategy (if you can\'t explain it, don\'t deploy it). Most important: treat bots as tools (not magic money makers). They amplify existing edge; they don\'t create edge. If you can\'t trade profitably manually, bot won\'t fix that."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Crypto Trading Bots: Telegram Automation & Strategy Guide 2026',
-    description: 'Master crypto trading bots and Telegram automation. Learn bot security, strategy selection, profitability analysis, and how to automate trading safely.',
-    url: 'https://degen0x.com/learn/crypto-trading-bots-telegram-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Crypto Trading Bots: Telegram Automation & Strategy Guide 2026',
-    description: 'Master crypto trading bots and Telegram automation. Learn bot security, strategy selection, profitability analysis, and how to automate trading safely.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -215,20 +202,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Crypto Trading Bots: Telegram Automation & Strategy Guide 2026',
-    description: 'Master crypto trading bots and Telegram automation. Learn bot security, strategy selection, profitability analysis, and how to automate trading safely.',
-    url: 'https://degen0x.com/learn/crypto-trading-bots-telegram-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Crypto Trading Bots: Telegram Automation & Strategy Guide 2026',
-    description: 'Master crypto trading bots and Telegram automation. Learn bot security, strategy selection, profitability analysis, and how to automate trading safely.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

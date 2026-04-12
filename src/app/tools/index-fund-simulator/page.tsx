@@ -147,7 +147,7 @@ export default function IndexFundSimulator() {
       } else if (rebalancing === 'quarterly' && month % 3 === 0) {
         accountValue = accountValue;
       }
-    }
+    };
 
     const roi = ((accountValue - investmentAmount) / investmentAmount) * 100;
     const annualizedReturn = Math.pow(accountValue / investmentAmount, 1 / timePeriod) - 1;

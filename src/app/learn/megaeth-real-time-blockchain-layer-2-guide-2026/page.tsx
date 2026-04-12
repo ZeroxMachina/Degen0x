@@ -429,9 +429,6 @@ export default function MegaETHGuide() {
         </div>
 
         <BackToTop />
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -440,6 +437,8 @@ export default function MegaETHGuide() {
           readingTime={9}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

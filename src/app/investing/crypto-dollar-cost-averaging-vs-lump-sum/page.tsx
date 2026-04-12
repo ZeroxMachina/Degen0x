@@ -29,7 +29,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-dollar-cost-averaging-vs-lump-sum',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -566,13 +568,13 @@ export default function DCAvLumpSumInvesting() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/trading/best-crypto-technical-indicators" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto Technical Indicators</Link></li>
-            <li><Link href="/trading/best-crypto-trading-platform-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto Trading Platform</Link></li>
-            <li><Link href="/trading/crypto-arbitrage-strategies-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Arbitrage Strategies</Link></li>
-            <li><Link href="/trading/crypto-day-trading-strategies-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Crypto Day Trading Strategies</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/trading/best-crypto-technical-indicators" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Technical Indicators</Link></li>
+            <li><Link href="/trading/best-crypto-trading-platform-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Trading Platform</Link></li>
+            <li><Link href="/trading/crypto-arbitrage-strategies-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Arbitrage Strategies</Link></li>
+            <li><Link href="/trading/crypto-day-trading-strategies-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Day Trading Strategies</Link></li>
           </ul>
         </nav>
 

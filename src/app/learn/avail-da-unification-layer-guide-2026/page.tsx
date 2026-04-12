@@ -44,7 +44,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/avail-da-unification-layer-guide-2026',
-  };
+  },
+};
+
 const faqs = [
   {
     question: 'How does Avail DA differ from Celestia?',

@@ -131,7 +131,8 @@ export default function CryptoSecurityMasterclassPage() {
                 <div style={{ fontWeight: 800, fontSize: 15, marginBottom: 4 }}>{w.name}</div>
                 <div style={{ fontSize: 12, color: S.text2, marginBottom: 8 }}>{w.price}</div>
                 <div style={{ fontSize: 12, color: S.text2 }}>{w.features}</div>
-              </div>
+              </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -142,7 +143,7 @@ export default function CryptoSecurityMasterclassPage() {
           section="learn"
         />
 
-            ))}
+
           </div>
 
           <h3 style={{ fontSize: 16, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Hardware Wallet Setup Steps</h3>

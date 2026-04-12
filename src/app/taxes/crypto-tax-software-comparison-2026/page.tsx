@@ -21,7 +21,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-tax-software-comparison-2026',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -474,13 +476,13 @@ export default function CryptoTaxSoftwareComparison2026() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/investing/best-ai-crypto-projects-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Ai Crypto Projects</Link></li>
-            <li><Link href="/investing/best-altcoins-to-buy-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Altcoins To Buy</Link></li>
-            <li><Link href="/investing/best-crypto-savings-accounts-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto Savings Accounts</Link></li>
-            <li><Link href="/investing/best-crypto-to-invest-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto To Invest</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/investing/best-ai-crypto-projects-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Ai Crypto Projects</Link></li>
+            <li><Link href="/investing/best-altcoins-to-buy-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Altcoins To Buy</Link></li>
+            <li><Link href="/investing/best-crypto-savings-accounts-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Savings Accounts</Link></li>
+            <li><Link href="/investing/best-crypto-to-invest-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto To Invest</Link></li>
           </ul>
         </nav>
 

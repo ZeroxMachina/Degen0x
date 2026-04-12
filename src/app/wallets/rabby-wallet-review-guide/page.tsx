@@ -38,7 +38,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/wallets/rabby-wallet-review-guide',
-  };
+  },
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

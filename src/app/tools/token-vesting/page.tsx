@@ -305,7 +305,7 @@ export default function TokenVestingPage() {
       const cliffMonths = Math.ceil(vestingMonths * 0.25);
       for (let i = 0; i < cliffMonths; i++) {
         months.push({ month: `M${i + 1}`, amount: 0, percentage: 0 });
-      }
+      };
       const remainingMonths = vestingMonths - cliffMonths;
       const monthlyAmount = tokenAmount / remainingMonths;
       for (let i = cliffMonths; i < vestingMonths; i++) {

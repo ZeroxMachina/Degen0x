@@ -185,7 +185,8 @@ export default function TokenizedTreasuriesGuidePage() {
               <div className="text-sm font-bold" style={{ color: "var(--color-text)" }}>
                 {s.value}
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -196,7 +197,7 @@ export default function TokenizedTreasuriesGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

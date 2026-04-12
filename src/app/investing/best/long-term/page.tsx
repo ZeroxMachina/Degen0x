@@ -26,7 +26,7 @@ const longTermPicks: Product[] = [
 
 function makeProduct(t: typeof CRYPTO_TOKENS[0]): Product {
   return { name: t.name, slug: t.slug, rating: t.rating, description: t.description, pros: [], cons: [], bestFor: t.category, affiliateUrl: t.affiliateUrl, category: "long-term" };
-}
+};
 
 const toc = [
   { id: "top-picks", title: "Top Long-Term Picks", level: 2 },
@@ -128,7 +128,8 @@ export default function BestLongTermPage() {
                 <h3 className="text-base font-semibold text-[var(--color-text)] mb-1">{item.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="SatoshiGhost"
@@ -139,7 +140,7 @@ export default function BestLongTermPage() {
           section="investing"
         />
 
-          ))}
+
         </div>
       </section>
 

@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title: 'How to File Crypto Taxes 2026 | degen0x', description: 'Crypto tax guide: US IRS rules, short/long-term gains, staking income, tax software, Form 8949, Schedule D.', image: 'https://degen0x.com/og-taxes.svg' },
   alternates: {
     canonical: 'https://degen0x.com/taxes/how-to-file-crypto-taxes-2026',
-  };
+  },
+};
+
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'How to File Crypto Taxes 2026', description: 'US crypto tax guide: IRS rules, capital gains, staking/mining/airdrop income, DeFi taxes, Form 8949, Schedule D, tax software.', image: 'https://degen0x.com/og-taxes.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [
   { '@type': 'Question', name: 'What are the main US crypto tax rules?', acceptedAnswer: { '@type': 'Answer', text: 'IRS treats cryptocurrency as property, not currency. Taxable events: (1) Selling (capital gain/loss), (2) Trading (taxable exchange), (3) Spending (like selling), (4) Staking/mining rewards (ordinary income), (5) Airdrops (ordinary income at receipt value). No wash sale rule for crypto (yet). Long-term capital gains (>1 year): 15-20% federal tax. Short-term (<1 year): 37% top rate. State taxes add 0-13%.' } },
   { '@type': 'Question', name: 'What is the difference between short-term and long-term capital gains?', acceptedAnswer: { '@type': 'Answer', text: 'Short-term gains (<1 year holding): taxed as ordinary income (10-37% federal + state). Long-term gains (>1 year): preferential rates (0%, 15%, 20% federal + state). Example: $1,000 gain at 37% short-term = $370 tax. Same $1,000 at 15% long-term = $150 tax. Strategy: hold winners >1 year, harvest losses immediately (tax-loss harvesting).' } },
@@ -92,13 +94,13 @@ export default function CryptoTaxesFiling() {
           section="taxes"
         />
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/investing/best-crypto-to-invest-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto To Invest</Link></li>
-            <li><Link href="/investing/best-crypto-under-1-dollar" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Crypto Under 1 Dollar</Link></li>
-            <li><Link href="/investing/best-defi-tokens-to-buy-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Defi Tokens To Buy</Link></li>
-            <li><Link href="/investing/best-depin-tokens-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Depin Tokens</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/investing/best-crypto-to-invest-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto To Invest</Link></li>
+            <li><Link href="/investing/best-crypto-under-1-dollar" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Under 1 Dollar</Link></li>
+            <li><Link href="/investing/best-defi-tokens-to-buy-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Defi Tokens To Buy</Link></li>
+            <li><Link href="/investing/best-depin-tokens-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Depin Tokens</Link></li>
           </ul>
         </nav>
 

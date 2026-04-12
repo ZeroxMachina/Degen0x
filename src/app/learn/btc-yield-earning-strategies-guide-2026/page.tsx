@@ -194,7 +194,8 @@ export default function BTCYieldStrategiesGuidePage() {
               >
                 {s.value}
               </div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -205,7 +206,7 @@ export default function BTCYieldStrategiesGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
       </div>
 

@@ -24,7 +24,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/aerodrome-finance-base-dex-liquidity-guide-2026',
-  };
+  },
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Article", "FAQPage"],
@@ -525,9 +527,6 @@ export default function AerodromeFinanceGuide() {
         </div>
 
         <BackToTop />
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -536,6 +535,8 @@ export default function AerodromeFinanceGuide() {
           readingTime={6}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

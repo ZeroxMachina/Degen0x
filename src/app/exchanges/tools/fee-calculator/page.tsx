@@ -240,7 +240,7 @@ export default function FeeCalculatorPage() {
       setSortKey(key);
       setSortDir("asc");
     }
-  }
+  };
 
   const SortArrow = ({ col }: { col: typeof sortKey }) =>
     sortKey === col ? (

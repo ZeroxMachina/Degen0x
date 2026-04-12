@@ -1021,9 +1021,6 @@ export default function ERC7683GuidePage() {
 
         {/* Back to Top */}
         <BackToTop />
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -1032,6 +1029,8 @@ export default function ERC7683GuidePage() {
           readingTime={13}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

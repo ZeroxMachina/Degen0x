@@ -157,7 +157,7 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
     padding: 20,
     marginBottom: 24,
     lineHeight: 1.8,
-  }
+  };
   const h1Style = {
     fontSize: 36,
     fontWeight: 800,
@@ -166,14 +166,14 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     backgroundClip: 'text',
-  }
+  };
   const h2Style = {
     fontSize: 24,
     fontWeight: 700,
     marginTop: 40,
     marginBottom: 16,
     color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12,
-  }
+  };
   const badgeStyle = {
     display: 'inline-block',
     padding: '6px 12px',
@@ -182,17 +182,17 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
     fontWeight: 600,
     marginRight: 8,
     marginBottom: 16,
-  }
+  };
   const linkStyle = {
     color: '#58a6ff',
     textDecoration: 'none',
-  }
+  };
   const tableStyle = {
     width: '100%',
     borderCollapse: 'collapse' as const,
     marginBottom: 24,
     fontSize: 14,
-  }
+  };
   const thStyle = {
     background: '#0d1117',
     border: '1px solid #30363d',
@@ -200,7 +200,7 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
     textAlign: 'left' as const,
     fontWeight: 700,
     color: '#e6edf3',
-  }
+  };
   const tdStyle = {
     border: '1px solid #30363d',
     padding: 12,
@@ -602,13 +602,13 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
         </section>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/tools/bitcoin-mempool-visualizer" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Bitcoin Mempool Visualizer</Link></li>
-            <li><Link href="/tools/bitcoin-rainbow-chart" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Bitcoin Rainbow Chart</Link></li>
-            <li><Link href="/tools/blockchain-explorer-tool" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Blockchain Explorer Tool</Link></li>
-            <li><Link href="/tools/compound-interest-crypto-calculator" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Compound Interest Crypto Calculator</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/tools/bitcoin-mempool-visualizer" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Mempool Visualizer</Link></li>
+            <li><Link href="/tools/bitcoin-rainbow-chart" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Rainbow Chart</Link></li>
+            <li><Link href="/tools/blockchain-explorer-tool" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Blockchain Explorer Tool</Link></li>
+            <li><Link href="/tools/compound-interest-crypto-calculator" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Compound Interest Crypto Calculator</Link></li>
           </ul>
         </nav>
 

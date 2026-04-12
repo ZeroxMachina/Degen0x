@@ -110,7 +110,7 @@ const structuredData = {
       }
     ]
   }
-}
+};
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

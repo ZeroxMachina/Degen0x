@@ -120,7 +120,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/learn/stablechains-stablecoin-optimized-blockchains-guide-2026',
-  };
+  },
+};
+
 const pageStyles = {
   container: {
     maxWidth: '900px',

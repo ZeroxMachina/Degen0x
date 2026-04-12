@@ -384,7 +384,7 @@ function RadarChart({ dimensions, protocol }: { dimensions: RiskDimensions; prot
     const a = angle * i - Math.PI / 2;
     const r = radius;
     polygonPoints.push([centerX + r * Math.cos(a), centerY + r * Math.sin(a)]);
-  }
+  };
 
   const gridLines = [];
   for (let i = 0; i < 5; i++) {
@@ -401,7 +401,7 @@ function RadarChart({ dimensions, protocol }: { dimensions: RiskDimensions; prot
         opacity="0.5"
       />
     );
-  }
+  };
 
   const axisLines = polygonPoints.map((point, i) => (
     <line

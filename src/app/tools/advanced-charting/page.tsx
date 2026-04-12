@@ -116,7 +116,7 @@ function calculateSMA(data: OHLCV[], period: number): number[] {
     if (i < period - 1) {
       sma.push(NaN);
       continue;
-    }
+    };
     const sum = data.slice(i - period + 1, i + 1).reduce((s, c) => s + c.close, 0);
     sma.push(sum / period);
   }
@@ -153,7 +153,7 @@ function calculateRSI(data: OHLCV[], period: number = 14): number[] {
     if (i < period) {
       rsi.push(NaN);
       continue;
-    }
+    };
 
     const gains = changes
       .slice(i - period, i)
@@ -211,7 +211,7 @@ function calculateBollingerBands(
       upper.push(NaN);
       lower.push(NaN);
       continue;
-    }
+    };
 
     const closes = data.slice(i - period + 1, i + 1).map((d) => d.close);
     const avg = closes.reduce((s, c) => s + c, 0) / period;

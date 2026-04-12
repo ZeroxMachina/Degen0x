@@ -152,7 +152,8 @@ export default function SECDigitalCommoditiesPage() {
                     <div style={{ fontSize: 24, marginBottom: 8 }}>{stat.icon}</div>
                     <div style={{ fontSize: 20, fontWeight: 800, color: S.text, marginBottom: 4 }}>{stat.value}</div>
                     <div style={{ fontSize: 12, color: S.text2 }}>{stat.label}</div>
-                  </div>
+                  </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -163,7 +164,7 @@ export default function SECDigitalCommoditiesPage() {
           section="learn"
         />
 
-                ))}
+
               </div>
             </div>
 

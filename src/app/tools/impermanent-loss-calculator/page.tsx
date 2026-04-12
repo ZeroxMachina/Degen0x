@@ -20,7 +20,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/tools/impermanent-loss-calculator',
-  };
+  },
+};
+
 const faqs = [
   {
     q: 'What is impermanent loss in simple terms?',

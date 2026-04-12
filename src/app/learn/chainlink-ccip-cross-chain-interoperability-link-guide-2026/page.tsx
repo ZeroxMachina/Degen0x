@@ -523,9 +523,6 @@ export default function ChainlinkCCIPPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -534,6 +531,8 @@ export default function ChainlinkCCIPPage() {
           readingTime={3}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

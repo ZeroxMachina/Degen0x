@@ -179,7 +179,8 @@ export default function BitcoinTreasuryCompaniesGuidePage() {
             >
               <div className="text-xs mb-1" style={{ color: "var(--color-text-secondary)" }}>{s.label}</div>
               <div className="font-bold text-sm" style={{ color: "var(--color-text)" }}>{s.value}</div>
-            </div>
+            </div>        ))}
+
 
         <AuthorAttribution
           author="DegenSensei"
@@ -190,7 +191,7 @@ export default function BitcoinTreasuryCompaniesGuidePage() {
           section="learn"
         />
 
-          ))}
+
         </div>
         <p className="text-xs mt-3" style={{ color: "var(--color-text-secondary)" }}>
           Data approximate. Sources: Bitwise, BitcoinTreasuries.net, company filings. March 2026.

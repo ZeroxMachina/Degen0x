@@ -78,20 +78,7 @@ const page = () => {
           text: "1inch (Ethereum): similar routing logic, broader DEX coverage (Ethereum has 200+ DEXs vs Solana\'s 20+). Jupiter dominates Solana (80%+ market share), 1inch leads Ethereum (60%+ share). Key difference: Solana\'s low fees make DEX aggregation more valuable (savings exceed fees), while Ethereum\'s high gas costs sometimes make aggregation inefficient. Jupiter\'s advantage: dominant market position creates flywheel (more volume attracts LPs, attracts traders)."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Jupiter DEX Aggregator: Master Solana Trading 2026',
-    description: 'Complete guide to Jupiter DEX aggregator on Solana. Learn routing logic, swap optimization, yield farming, and how to trade like institutional traders.',
-    url: 'https://degen0x.com/learn/jupiter-dex-aggregator-solana-trading-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Jupiter DEX Aggregator: Master Solana Trading 2026',
-    description: 'Complete guide to Jupiter DEX aggregator on Solana. Learn routing logic, swap optimization, yield farming, and how to trade like institutional traders.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -215,20 +202,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Jupiter DEX Aggregator: Master Solana Trading 2026',
-    description: 'Complete guide to Jupiter DEX aggregator on Solana. Learn routing logic, swap optimization, yield farming, and how to trade like institutional traders.',
-    url: 'https://degen0x.com/learn/jupiter-dex-aggregator-solana-trading-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Jupiter DEX Aggregator: Master Solana Trading 2026',
-    description: 'Complete guide to Jupiter DEX aggregator on Solana. Learn routing logic, swap optimization, yield farming, and how to trade like institutional traders.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

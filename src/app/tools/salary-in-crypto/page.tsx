@@ -68,7 +68,7 @@ export default function SalaryInCryptoPage() {
     let totalCoins = 0;
     for (const hist of relevantHistory.slice(0, -1)) {
       totalCoins += annualCryptoAlloc / hist.price;
-    }
+    };
     const cryptoPortfolioValue = totalCoins * endPrice;
 
     // What the cash portion looks like with inflation

@@ -20,7 +20,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/nfts/erc-721-vs-erc-1155',
-  };
+  },
+};
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -561,13 +563,13 @@ export default function ERC721vs1155() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/learn/ai-crypto-tokens-complete-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Ai Crypto Tokens Complete</Link></li>
-            <li><Link href="/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Altlayer Restaked Rollups Alt Token Raas</Link></li>
-            <li><Link href="/learn/appchains-application-specific-blockchains" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Appchains Application Specific Blockchains</Link></li>
-            <li><Link href="/learn/appchains-application-specific-blockchains-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Appchains Application Specific Blockchains</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/learn/ai-crypto-tokens-complete-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Crypto Tokens Complete</Link></li>
+            <li><Link href="/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Altlayer Restaked Rollups Alt Token Raas</Link></li>
+            <li><Link href="/learn/appchains-application-specific-blockchains" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Appchains Application Specific Blockchains</Link></li>
+            <li><Link href="/learn/appchains-application-specific-blockchains-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Appchains Application Specific Blockchains</Link></li>
           </ul>
         </nav>
 

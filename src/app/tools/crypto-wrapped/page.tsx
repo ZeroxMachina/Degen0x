@@ -73,7 +73,7 @@ export default function CryptoWrappedPage() {
     const updated = [...holdings];
     updated[i] = { ...updated[i], [field]: value };
     setHoldings(updated);
-  }
+  };
 
   const calcResults = () => {
     const perfs = YEAR_PERFORMANCES[selectedYear] || YEAR_PERFORMANCES["2024"];
@@ -96,7 +96,7 @@ export default function CryptoWrappedPage() {
       totalInvested += invested;
       totalValue += value;
       breakdown.push({ coin, pct, invested, value, gain: value - invested });
-    }
+    };
     const totalPct = totalInvested > 0 ? ((totalValue - totalInvested) / totalInvested) * 100 : 0;
     return { totalInvested, totalValue, totalPct, breakdown };
   };

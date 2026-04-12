@@ -995,9 +995,6 @@ export default function CryptoRetirementIRAGuidePage() {
 
         {/* Back to Top */}
         <BackToTop />
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -1006,6 +1003,8 @@ export default function CryptoRetirementIRAGuidePage() {
           readingTime={11}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }

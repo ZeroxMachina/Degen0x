@@ -142,7 +142,7 @@ export default function DCACalculatorPage() {
 
       current = new Date(current);
       current.setDate(current.getDate() + interval);
-    }
+    };
 
     const totalInvested = dcaPurchases.reduce((s, p) => s + p.amount, 0);
     const totalCoins = dcaPurchases.reduce((s, p) => s + p.coins, 0);

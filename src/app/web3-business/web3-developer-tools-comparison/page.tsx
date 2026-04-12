@@ -24,7 +24,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://degen0x.com/web3-business/web3-developer-tools-comparison',
-  };
+  },
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -412,13 +414,13 @@ export default function Web3DeveloperToolsComparisonExpanded() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/ecosystem/best-projects-on-arbitrum" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Projects On Arbitrum</Link></li>
-            <li><Link href="/ecosystem/best-projects-on-avalanche" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Projects On Avalanche</Link></li>
-            <li><Link href="/ecosystem/best-projects-on-base-chain" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Projects On Base Chain</Link></li>
-            <li><Link href="/ecosystem/best-projects-on-blast" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Projects On Blast</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/ecosystem/best-projects-on-arbitrum" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Arbitrum</Link></li>
+            <li><Link href="/ecosystem/best-projects-on-avalanche" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Avalanche</Link></li>
+            <li><Link href="/ecosystem/best-projects-on-base-chain" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Base Chain</Link></li>
+            <li><Link href="/ecosystem/best-projects-on-blast" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Blast</Link></li>
           </ul>
         </nav>
 

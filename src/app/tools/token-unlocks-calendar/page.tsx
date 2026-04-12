@@ -24,7 +24,7 @@ export default function TokenUnlocksCalendar() {
     h3: { fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' },
     badge: { display: 'inline-block', padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16 },
     link: { color: '#58a6ff', textDecoration: 'none' }
-  }  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'mechanics', t: 'How Vesting Works' }, { id: 'why-matter', t: 'Why Unlocks Matter' }, { id: 'tracking', t: 'Tracking Tools' }, { id: 'major-2026', t: 'Major Unlocks 2026' }, { id: 'trading', t: 'Trading Strategy' }, { id: 'history', t: 'Historical Impact' }, { id: 'faq', t: 'FAQ' }];
+  };  const toc = [{ id: 'overview', t: 'Overview' }, { id: 'mechanics', t: 'How Vesting Works' }, { id: 'why-matter', t: 'Why Unlocks Matter' }, { id: 'tracking', t: 'Tracking Tools' }, { id: 'major-2026', t: 'Major Unlocks 2026' }, { id: 'trading', t: 'Trading Strategy' }, { id: 'history', t: 'Historical Impact' }, { id: 'faq', t: 'FAQ' }];
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
@@ -149,13 +149,13 @@ export default function TokenUnlocksCalendar() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/compare/bitcoin-vs-ethereum-investment" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Bitcoin Vs Ethereum Investment</Link></li>
-            <li><Link href="/compare/centralized-vs-decentralized-exchange" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Centralized Vs Decentralized Exchange</Link></li>
-            <li><Link href="/compare/chainlink-vs-pyth-vs-band" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Chainlink Vs Pyth Vs Band</Link></li>
-            <li><Link href="/compare/coinbase-vs-kraken-vs-gemini" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Coinbase Vs Kraken Vs Gemini</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/compare/bitcoin-vs-ethereum-investment" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Vs Ethereum Investment</Link></li>
+            <li><Link href="/compare/centralized-vs-decentralized-exchange" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Centralized Vs Decentralized Exchange</Link></li>
+            <li><Link href="/compare/chainlink-vs-pyth-vs-band" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Chainlink Vs Pyth Vs Band</Link></li>
+            <li><Link href="/compare/coinbase-vs-kraken-vs-gemini" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Coinbase Vs Kraken Vs Gemini</Link></li>
           </ul>
         </nav>
 

@@ -78,20 +78,7 @@ const page = () => {
           text: "ATOM is a fee-generating asset: higher IBC traffic = higher validator rewards = higher ATOM value. If Cosmos captures 5-10% of DeFi value ($10-20B TVL), ATOM could trade at $50-100 (2-5x current). Risk: liquidity fragmentation keeps TVL low, Ethereum dominance continues. Time horizon: 3-5 years for inflection. Best for: believers in blockchain interoperability and Cosmos-native application ecosystem."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Cosmos IBC: Interchain Communication & Liquidity 2026',
-    description: 'Master Cosmos IBC protocol. Learn interchain composability, hub economics, and how IBC enables true blockchain interoperability across 50+ chains.',
-    url: 'https://degen0x.com/learn/cosmos-ibc-interchain-ecosystem-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Cosmos IBC: Interchain Communication & Liquidity 2026',
-    description: 'Master Cosmos IBC protocol. Learn interchain composability, hub economics, and how IBC enables true blockchain interoperability across 50+ chains.',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -242,20 +229,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Cosmos IBC: Interchain Communication & Liquidity 2026',
-    description: 'Master Cosmos IBC protocol. Learn interchain composability, hub economics, and how IBC enables true blockchain interoperability across 50+ chains.',
-    url: 'https://degen0x.com/learn/cosmos-ibc-interchain-ecosystem-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Cosmos IBC: Interchain Communication & Liquidity 2026',
-    description: 'Master Cosmos IBC protocol. Learn interchain composability, hub economics, and how IBC enables true blockchain interoperability across 50+ chains.',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

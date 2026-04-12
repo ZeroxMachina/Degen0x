@@ -465,13 +465,13 @@ export default function DAOLegalStructureGuide() {
         </div>
       </div>
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }>
-            <li><Link href="/ecosystem/best-projects-on-blast" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Projects On Blast</Link></li>
-            <li><Link href="/ecosystem/best-projects-on-bnb-chain" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Projects On Bnb Chain</Link></li>
-            <li><Link href="/ecosystem/best-projects-on-injective" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Projects On Injective</Link></li>
-            <li><Link href="/ecosystem/best-projects-on-linea" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }>Best Projects On Linea</Link></li>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><Link href="/ecosystem/best-projects-on-blast" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Blast</Link></li>
+            <li><Link href="/ecosystem/best-projects-on-bnb-chain" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Bnb Chain</Link></li>
+            <li><Link href="/ecosystem/best-projects-on-injective" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Injective</Link></li>
+            <li><Link href="/ecosystem/best-projects-on-linea" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Linea</Link></li>
           </ul>
         </nav>
 

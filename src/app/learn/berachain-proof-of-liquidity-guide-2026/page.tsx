@@ -78,20 +78,7 @@ const page = () => {
           text: "Monitor: (1) Validator set growth (more validators = network decentralization), (2) Total liquidity in core pools (BERA/stablecoin depth), (3) BGT emissions distribution (who's receiving incentives), (4) Protocol TVL on Berachain (usage driving swap volume), (5) BERA vs BGT price correlation (both needed for network health). Early opportunities: become a validator if capital requirements drop below 50K BERA, participate in BGT governance once live, or provide liquidity to favored pools earning both BERA fees and BGT emissions. Berachain is still in testnet; timing your entry is crucial."
         }
       }
-    ],
-  openGraph: {
-    type: 'article',
-    title: 'Berachain Proof of Liquidity Guide 2026',
-    description: 'Master Berachain',
-    url: 'https://degen0x.com/learn/berachain-proof-of-liquidity-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Berachain Proof of Liquidity Guide 2026',
-    description: 'Master Berachain',
-    image: 'https://degen0x.com/og-default.svg',
-  }
+    ]
   };
 
   return (
@@ -230,20 +217,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );,
-  openGraph: {
-    type: 'article',
-    title: 'Berachain Proof of Liquidity Guide 2026',
-    description: 'Master Berachain',
-    url: 'https://degen0x.com/learn/berachain-proof-of-liquidity-guide-2026',
-    images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Berachain Proof of Liquidity Guide 2026',
-    description: 'Master Berachain',
-    image: 'https://degen0x.com/og-default.svg',
-  },
+  );
 };
 
 export default page;

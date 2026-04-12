@@ -358,7 +358,7 @@ export default function MetaMaskVsPhantom() {
       </div>
     </>
   );
-}
+};
 
 const styles = {
   container: {

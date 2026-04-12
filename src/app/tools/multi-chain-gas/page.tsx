@@ -137,7 +137,7 @@ function calculateTxCost(
 ): number {
   if (isSolana) {
     return gasPrice * coinPrice;
-  }
+  };
   const ethAmount = (gasPrice * gasUnits) / 1e9;
   return ethAmount * coinPrice;
 }

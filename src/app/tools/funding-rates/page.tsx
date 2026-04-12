@@ -83,7 +83,7 @@ function FundingSparkline({ positive, color }: { positive: boolean; color: strin
   for (let i = 0; i < 24; i++) {
     v += (Math.random() - 0.48) * 0.003;
     points.push(v);
-  }
+  };
   const min = Math.min(...points);
   const max = Math.max(...points);
   const h = 30;

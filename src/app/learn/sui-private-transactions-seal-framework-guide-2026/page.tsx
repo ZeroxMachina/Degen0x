@@ -655,9 +655,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
         </section>
 
         <BackToTop />
-      </div>
-    </div>
-
         <AuthorAttribution
           author="DegenSensei"
           role="Content Lead"
@@ -666,6 +663,8 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
           readingTime={3}
           section="learn"
         />
+      </div>
+    </div>
 
   );
 }
