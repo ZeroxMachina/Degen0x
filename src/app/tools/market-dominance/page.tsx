@@ -432,6 +432,7 @@ const MarketDominancePage = () => {
                       ? 'rgba(16, 185, 129, 0.1)'
                       : 'rgba(239, 68, 68, 0.1)',
                   borderColor:
+                    shift.status === 'up'
                       ? 'rgba(16, 185, 129, 0.3)'
                       : 'rgba(239, 68, 68, 0.3)',
                 }}

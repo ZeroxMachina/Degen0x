@@ -526,7 +526,9 @@ export default function EthenaUsdeGuide() {
                 <h4 className="text-[#e6edf3] font-semibold">{risk.title}</h4>
                 <span
                   className={`text-xs px-2 py-0.5 rounded font-medium ${
+                    risk.level === "high"
                       ? "bg-[#f85149]/20 text-[#f85149]"
+                      : risk.level === "medium"
                       ? "bg-[#d29922]/20 text-[#d29922]"
                       : "bg-[#22c55e]/20 text-[#22c55e]"
                   }`}

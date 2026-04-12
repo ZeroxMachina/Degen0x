@@ -181,6 +181,7 @@ function MiniChartPreview({ config }: { config: WidgetConfig }) {
   return (
     <div
       className={`rounded-lg p-4 flex flex-col gap-3 ${
+        config.theme === "dark" ? "bg-[#0d1117] border border-[#30363d]" : "bg-white border border-gray-200"
       }`}
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
@@ -213,6 +214,7 @@ function MarketStatsPreview({ config }: { config: WidgetConfig }) {
   return (
     <div
       className={`rounded-lg p-4 space-y-3 ${
+        config.theme === "dark" ? "bg-[#0d1117] border border-[#30363d]" : "bg-white border border-gray-200"
       }`}
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
@@ -253,6 +255,7 @@ function FearGreedPreview({ config }: { config: WidgetConfig }) {
   return (
     <div
       className={`rounded-lg p-4 flex flex-col items-center justify-center gap-4 ${
+        config.theme === "dark" ? "bg-[#0d1117] border border-[#30363d]" : "bg-white border border-gray-200"
       }`}
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
@@ -292,6 +295,7 @@ function PortfolioPreview({ config }: { config: WidgetConfig }) {
   return (
     <div
       className={`rounded-lg p-4 space-y-3 ${
+        config.theme === "dark" ? "bg-[#0d1117] border border-[#30363d]" : "bg-white border border-gray-200"
       }`}
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
@@ -339,6 +343,7 @@ function TrendingCoinsPreview({ config }: { config: WidgetConfig }) {
   return (
     <div
       className={`rounded-lg p-4 space-y-2 overflow-y-auto ${
+        config.theme === "dark" ? "bg-[#0d1117] border border-[#30363d]" : "bg-white border border-gray-200"
       }`}
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >

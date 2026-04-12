@@ -324,6 +324,7 @@ export default function TokenizedStocksTrackerPage() {
           ? aVal.localeCompare(bVal)
           : bVal.localeCompare(aVal);
       }
+      return sortOrder === 'asc'
         ? (aVal as number) - (bVal as number)
         : (bVal as number) - (aVal as number);
     });
@@ -368,10 +369,11 @@ export default function TokenizedStocksTrackerPage() {
         <div className="flex flex-wrap gap-2 mb-3">
           <span className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: '#6366f120', color: '#6366f1' }}>
-            RWA · On-Chain Equities
+            RWA &middot; On-Chain Equities
           </span>
+          <span className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: '#22c55e20', color: '#22c55e' }}>
-            Live Data · March 2026
+            Live Data &middot; March 2026
           </span>
         </div>
         <h1 className="text-3xl font-extrabold mb-2" style={{ color: 'var(--color-text)' }}>

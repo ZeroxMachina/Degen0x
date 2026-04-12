@@ -632,7 +632,9 @@ export default function AlertsDashboardPage() {
                     ? "#f85149"
                     : "#3fb950";
               const stateIcon =
+                alert.state === "triggered"
                   ? "🎯"
+                  : alert.state === "snoozed"
                     ? "⏸"
                     : "✅";
               const typeIcon =

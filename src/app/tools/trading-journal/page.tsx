@@ -500,6 +500,7 @@ export default function TradingJournalPage() {
                           style={{ background: "#6366f120", color: "#818cf8" }}>
                           {trade.setup}
                         </span>
+                        <span className="text-xs px-2 py-0.5 rounded-full font-semibold"
                           style={{ background: `${EMOTION_COLORS[trade.emotion]}20`, color: EMOTION_COLORS[trade.emotion] }}>
                           {trade.emotion}
                         </span>

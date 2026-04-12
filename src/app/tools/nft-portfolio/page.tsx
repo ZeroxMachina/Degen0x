@@ -1204,6 +1204,7 @@ export default function NFTPortfolioTracker() {
                     <tr
                       key={nft.id}
                       className={`border-b border-[#30363d] hover:bg-[#0d1117] transition-colors ${
+                        idx % 2 === 0 ? "bg-[#0d1117]/50" : ""
                       }`}
                     >
                       <td className="px-6 py-4">

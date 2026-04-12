@@ -398,6 +398,7 @@ const Page: React.FC = () => {
                               ? 'rgba(239, 68, 68, 0.2)'
                               : 'rgba(34, 197, 94, 0.2)',
                           color:
+                            liq.direction === 'long'
                               ? 'rgb(248, 113, 113)'
                               : 'rgb(74, 222, 128)',
                         }}

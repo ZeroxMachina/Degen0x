@@ -340,6 +340,7 @@ export default function FeeCalculatorPage() {
                 onClick={() => setOrderType("taker")}
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   orderType === "taker"
+                    ? "bg-[var(--color-primary)] text-white"
                     : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
@@ -349,6 +350,8 @@ export default function FeeCalculatorPage() {
                 onClick={() => setOrderType("maker")}
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   orderType === "maker"
+                    ? "bg-[var(--color-primary)] text-white"
+                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 Maker
@@ -371,6 +374,8 @@ export default function FeeCalculatorPage() {
                 onClick={() => setVipMode(false)}
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   !vipMode
+                    ? "bg-[var(--color-primary)] text-white"
+                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 Base
@@ -380,6 +385,7 @@ export default function FeeCalculatorPage() {
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   vipMode
                     ? "bg-amber-500 text-[var(--color-text)]"
+                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 ⚡ VIP
@@ -648,6 +654,7 @@ export default function FeeCalculatorPage() {
           },
         ].map((scenario) => {
           const cheapestForScenario = EXCHANGES.map(ex => {
+            const rate = orderType === "maker"
               ? (vipMode ? ex.makerVIP : ex.makerBase)
               : (vipMode ? ex.takerVIP : ex.takerBase);
             return {

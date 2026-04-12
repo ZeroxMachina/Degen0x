@@ -209,6 +209,7 @@ export default function NewsletterWelcome() {
             placeholder="your@email.com" required
             className="flex-1 px-5 py-4 rounded-xl outline-none"
             style={{ background: '#161b22', border: '1px solid #30363d', color: '#e6edf3' }} />
+          <button type="submit"
             className="px-8 py-4 rounded-xl font-bold text-white transition-all hover:scale-105"
             style={{ background: 'linear-gradient(135deg, #6366f1, #06b6d4)' }}>
             Join Free

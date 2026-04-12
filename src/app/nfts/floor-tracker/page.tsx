@@ -403,7 +403,8 @@ export default function FloorTrackerPage() {
                 onClick={() => setViewMode('cards')}
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   viewMode === 'cards'
-                    : 'glass text-[var(--color-text)]'
+                    ? 'glass text-[var(--color-text)]'
+                    : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text)]'
                 }`}
               >
                 Cards
@@ -412,6 +413,8 @@ export default function FloorTrackerPage() {
                 onClick={() => setViewMode('table')}
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   viewMode === 'table'
+                    ? 'glass text-[var(--color-text)]'
+                    : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text)]'
                 }`}
               >
                 Table
