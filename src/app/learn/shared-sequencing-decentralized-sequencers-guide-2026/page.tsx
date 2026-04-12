@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Shared Sequencing & Decentralized Sequencers Guide 2026: Espresso, Based Rollups & More | degen0x",
-  description:
-    "Shared sequencing explained: how decentralized sequencers fix rollup centralization. Espresso Network, based sequencing, HotShot consensus, cross-rollup composability. 2026 guide.",
+  title: "Shared Sequencing & Decentralized Sequencers Guide 2026:",
+  description: "Shared sequencing explained: how decentralized sequencers fix rollup centralization. Espresso Network, based sequencing, HotShot consensus, cross-rollup",
   keywords: [
     "shared sequencing guide 2026",
     "decentralized sequencer explained",

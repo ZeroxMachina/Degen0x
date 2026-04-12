@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Liquid Staking Explained: Lido stETH, Rocket Pool rETH | degen0x',
+  title: "Liquid Staking Explained: Lido stETH, Rocket Pool rETH",
   description: 'Lido stETH (28% of staked ETH, $35B TVL), Rocket Pool rETH, Coinbase cbETH, Jito jitoSOL, Marinade mSOL. APY 3.5-4.2% ETH, LST in DeFi collateral.',
   keywords: ['liquid staking', 'stETH', 'rETH', 'Lido', 'Rocket Pool', 'LST DeFi', 'Ethereum staking'],
   openGraph: {
     type: 'article',
-    title: 'Liquid Staking Explained: Lido stETH, Rocket Pool rETH | degen0x',
+    title: "Liquid Staking Explained: Lido stETH, Rocket Pool rETH",
     description: 'Lido stETH ($35B TVL, 28% of staked ETH), Rocket Pool rETH, Jito jitoSOL, Marinade mSOL. APY 3.5-4.2% ETH, LST in DeFi.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Liquid Staking Explained: Lido stETH, Rocket Pool rETH | degen0x',
+    title: "Liquid Staking Explained: Lido stETH, Rocket Pool rETH",
     description: 'Lido, Rocket Pool, Jito, Marinade. Earn 3.5-4.2% APY on ETH, SOL. Use LSTs as DeFi collateral.',
     image: 'https://degen0x.com/og-learn.svg',
   },

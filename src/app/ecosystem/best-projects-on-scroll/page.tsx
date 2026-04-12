@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Best Scroll Projects 2026: Ambient Finance, NURI Exchange, Cog Finance | degen0x",
-  description: "Top Scroll (zkEVM) ecosystem projects: Ambient Finance, NURI Exchange, Cog Finance, Aave V3. Compare Scroll vs zkSync vs StarkNet L2s. Type 2 zkEVM, Scroll Sessions points.",
+  title: "Best Scroll Projects 2026: Ambient Finance, NURI Exchange,",
+  description: "Top Scroll (zkEVM) ecosystem projects: Ambient Finance, NURI Exchange, Cog Finance, Aave V3. Compare Scroll vs zkSync vs StarkNet L2s. Type 2 zkEVM, Scroll",
   keywords: ["Scroll projects", "Ambient Finance", "NURI Exchange", "Cog Finance", "Aave Scroll", "zkEVM", "L2 comparison"],
   openGraph: {
     type: "article",

@@ -4,10 +4,10 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Gaming 2026: The Best Play-to-Earn & Web3 Games Right Now",
+  title: "Crypto Gaming 2026: The Best Play-to-Earn & Web3 Games",
   description:
     "A complete guide to crypto gaming in 2026. The best P2E games, how GameFi works, which games actually make money, NFT gaming explained, and what to watch next.",
-};
+  alternates: { canonical: "/learn/crypto-gaming-2026-guide" }};
 
 export default function CryptoGamingGuidePage() {
   return (
@@ -230,6 +230,56 @@ export default function CryptoGamingGuidePage() {
             })
           }}
         />
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

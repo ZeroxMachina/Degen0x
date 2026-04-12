@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: 'Cross-Chain Bridges & Interoperability Guide 2026 | degen0x',
-  description:
-    'Master cross-chain bridges and blockchain interoperability: LayerZero, Wormhole, Chainlink CCIP, Axelar protocols, security models, bridge hacks ($2.8B+), chain abstraction, and best practices for safe cross-chain transfers.',
+  description: "Master cross-chain bridges and blockchain interoperability: LayerZero, Wormhole, Chainlink CCIP, Axelar protocols, security models, bridge hacks ($2.8B+),",
   keywords: [
     'cross-chain bridges',
     'blockchain interoperability',
@@ -298,7 +298,14 @@ export default function CrossChainBridgesPage() {
 
   return (
     <main id="top" style={pageStyle}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       <div style={containerStyle}>
         <nav aria-label="Breadcrumb" style={breadcrumbStyle}>

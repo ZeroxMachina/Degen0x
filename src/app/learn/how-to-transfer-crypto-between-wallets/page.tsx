@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'How to Transfer Crypto Between Wallets 2026: Step-by-Step Safety Guide | degen0x',
-  description: 'Complete guide to safely transfer crypto between wallets. Network selection (ERC-20 vs BEP-20 vs TRC-20), address validation, gas fees by chain, test transactions. Avoid common mistakes (wrong network = lost funds). Works for Bitcoin, Ethereum, Solana, Ripple.',
+  title: "How to Transfer Crypto Between Wallets 2026: Step-by-Step",
+  description: "Complete guide to safely transfer crypto between wallets. Network selection (ERC-20 vs BEP-20 vs TRC-20), address validation, gas fees by chain, test",
   keywords: ['transfer crypto', 'send bitcoin', 'ethereum transfer', 'wrong network recovery', 'gas fees', 'address validation', 'crypto transfer guide', 'wallet to wallet transfer'],
   openGraph: {
     type: 'article',

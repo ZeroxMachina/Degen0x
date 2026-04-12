@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Uniswap v4 Hooks & AMM Innovation Guide 2026 | degen0x',
-  description: 'Complete guide to Uniswap v4 in 2026. Learn about hooks, singleton architecture, dynamic fees, flash accounting, TWAMM, and how v4 is reshaping decentralized exchange design.',
+  description: "Complete guide to Uniswap v4 in 2026. Learn about hooks, singleton architecture, dynamic fees, flash accounting, TWAMM, and how v4 is reshaping decentralized",
   keywords: ['Uniswap v4', 'Uniswap hooks', 'AMM innovation', 'singleton architecture', 'dynamic fees', 'flash accounting', 'TWAMM', 'DEX design', 'liquidity pools', 'DeFi 2026'],
   openGraph: {
     type: 'article',

@@ -7,9 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Railgun & Privacy DeFi Guide 2026: Private Transactions Without Leaving DeFi | degen0x",
-  description:
-    "What is Railgun? Privacy DeFi lets you use existing DeFi protocols (Uniswap, Aave, etc.) privately using zero-knowledge proofs. Covers zk-SNARKs, shielded wallets, Proofs of Innocence, and private swaps.",
+  title: "Railgun & Privacy DeFi Guide 2026: Private Transactions",
+  description: "What is Railgun? Privacy DeFi lets you use existing DeFi protocols (Uniswap, Aave, etc.) privately using zero-knowledge proofs. Covers zk-SNARKs, shielded",
   keywords: [
     "Railgun",
     "privacy DeFi",
@@ -37,7 +36,8 @@ export const metadata: Metadata = {
     description:
       "Railgun enables private DeFi transactions across Ethereum, Arbitrum, Polygon, BNB. $108M TVL, Vitalik-endorsed, compliance via Proofs of Innocence.",
   },
-};
+
+  alternates: { canonical: "/learn/railgun-privacy-defi-guide-2026" }};
 
 export default function RailgunPrivacyGuidePage() {
   const articleSchema = generateArticleSchema({

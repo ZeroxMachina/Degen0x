@@ -1,10 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { CRYPTO_LOAN_PRODUCTS } from "@/data/crypto-loans";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "celsius")!;
 
-export const metadata: Metadata = { title: "Celsius Review 2026: Lessons From the CeFi Collapse", description: "Analysis of Celsius Network's collapse, what went wrong, and lessons for crypto lending users. Why platform due diligence matters more than ever." };
+export const metadata: Metadata = { title: "Celsius Review 2026: Lessons From the CeFi Collapse", description: "Analysis of Celsius Network's collapse, what went wrong, and lessons for crypto lending users. Why platform due diligence matters more than ever." ,
+  alternates: { canonical: "/crypto-loans/reviews/celsius" }};
 
 export default function CelsiusReview() {
   return (

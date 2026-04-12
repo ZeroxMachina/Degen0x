@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Exchange for Staking 2026: Coinbase, Kraken, OKX | degen0x',
+  title: "Best Crypto Exchange for Staking 2026: Coinbase, Kraken, OKX",
   description: 'Complete staking guide: Coinbase ETH 3.2%, Kraken ETH 3.5%, Solana 5.1%, OKX, Bybit. APY comparison, lock-up periods, minimum stake, tax treatment.',
   keywords: ['best staking exchange 2026', 'crypto staking yields', 'ethereum staking 3.5%', 'solana staking 5%', 'passive income crypto', 'staking APY', 'liquid staking'],
   openGraph: {

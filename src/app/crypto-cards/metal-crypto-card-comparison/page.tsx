@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Premium Metal Crypto Cards: Obsidian vs Coinbase One vs Gemini",
+  title: "Premium Metal Crypto Cards: Obsidian vs Coinbase One vs",
   description: "Compare premium metal crypto cards in 2026: Crypto.com Obsidian, Coinbase One, Gemini Card. See rewards, fees, cashback rates, and tier benefits.",
   keywords: ["metal crypto card", "crypto.com obsidian", "coinbase one", "gemini card", "premium crypto card", "crypto rewards card"],
   openGraph: {
     type: "article",
-    title: "Premium Metal Crypto Cards: Obsidian vs Coinbase One vs Gemini",
+    title: "Premium Metal Crypto Cards: Obsidian vs Coinbase One vs",
     description: "Compare premium metal crypto cards in 2026: Crypto.com Obsidian, Coinbase One, Gemini Card. See rewards, fees, cashback rates, and tier benefits.",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Metal Crypto Cards: Obsidian vs Coinbase One vs Gemini",
+    title: "Premium Metal Crypto Cards: Obsidian vs Coinbase One vs",
     description: "Compare premium metal crypto cards in 2026: Crypto.com Obsidian, Coinbase One, Gemini Card. See rewards, fees, cashback rates, and tier benefits.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
@@ -510,6 +510,56 @@ export default function MetalCryptoCardComparison() {
 
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered financial advice. Cryptocurrency is volatile and carries significant risk. Always do your own research (DYOR) and consult a qualified financial advisor before making investment decisions. degen0x does not endorse any specific investment or card issuer.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

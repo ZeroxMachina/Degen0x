@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'EIP-4844 Proto-Danksharding Explained | Blob Transactions & L2 Scaling | degen0x',
-  description: 'Master EIP-4844: blob transactions, 128KB data blobs, Dencun upgrade, 18-day pruning, and 95% L2 fee reduction. Impact on Arbitrum, Optimism, and Ethereum scaling explained.',
+  title: "EIP-4844 Proto-Danksharding Explained | Blob Transactions &",
+  description: "Master EIP-4844: blob transactions, 128KB data blobs, Dencun upgrade, 18-day pruning, and 95% L2 fee reduction. Impact on Arbitrum, Optimism, and Ethereum",
   keywords: ['EIP-4844', 'Proto-Danksharding', 'blob transactions', 'Dencun', 'L2 fees', 'data availability', 'Ethereum scaling'],
   openGraph: {
     title: 'EIP-4844 Proto-Danksharding',

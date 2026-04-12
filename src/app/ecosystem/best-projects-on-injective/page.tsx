@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Best Injective Projects 2026: Helix DEX, Hydro, DojoSwap, Talis | degen0x",
-  description: "Complete Injective ecosystem guide: Helix DEX ($70M TVL), Hydro derivatives ($30M TVL), DojoSwap, Talis NFTs. Orderbook-based trading, 0.05% fees, institutional focus, deflationary INJ token burns.",
+  title: "Best Injective Projects 2026: Helix DEX, Hydro, DojoSwap,",
+  description: "Complete Injective ecosystem guide: Helix DEX ($70M TVL), Hydro derivatives ($30M TVL), DojoSwap, Talis NFTs. Orderbook-based trading, 0.05% fees,",
   keywords: ["Injective", "Helix DEX", "Hydro Protocol", "DojoSwap", "Talis", "Cosmos", "orderbook", "derivatives", "institutional trading"],
   openGraph: {
     type: "article",

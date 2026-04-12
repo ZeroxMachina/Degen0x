@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV Solutions",
+  title: "Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV",
   description: "Solana Alpenglow consensus upgrade guide 2026. MEV resistance, state compression, validator performance improvements.",
   keywords: ["Solana", "Alpenglow", "consensus", "MEV", "state compression"],
   openGraph: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV Solutions',
+    title: "Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV",
     description: 'Solana Alpenglow consensus upgrade guide 2026. MEV resistance, state compression, validator performance improvements.',
     image: 'https://degen0x.com/og-default.svg',
   }
@@ -72,13 +72,13 @@ const structuredData = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV Solutions',
+    title: "Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV",
     description: 'Solana Alpenglow consensus upgrade guide 2026. MEV resistance, state compression, validator performance improvements.',
     image: 'https://degen0x.com/og-default.svg',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV Solutions',
+    title: "Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV",
     description: 'Solana Alpenglow consensus upgrade guide 2026. MEV resistance, state compression, validator performance improvements.',
     image: 'https://degen0x.com/og-default.svg',
   }
@@ -219,7 +219,57 @@ export default function AlpenglowGuide() {
             </Link>
           </div>
         </div>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
     </>
   );
 }

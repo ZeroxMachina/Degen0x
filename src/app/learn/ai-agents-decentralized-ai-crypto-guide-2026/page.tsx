@@ -6,8 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'AI Agents & Decentralized AI in Crypto — Complete Guide 2026 | degen0x',
-  description: 'Comprehensive guide to AI agents and decentralized AI in crypto. Learn about Bittensor, Virtuals, Render Network, ai16z, Olas, and how AI autonomously manages DeFi. Agentic Web convergence explained.',
+  title: "AI Agents & Decentralized AI in Crypto — Complete Guide 2026",
+  description: "Comprehensive guide to AI agents and decentralized AI in crypto. Learn about Bittensor, Virtuals, Render Network, ai16z, Olas, and how AI autonomously manages",
   keywords: [
     'AI agents crypto',
     'decentralized AI',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: 'article',
-    title: 'AI Agents & Decentralized AI in Crypto — Complete Guide 2026 | degen0x',
+    title: "AI Agents & Decentralized AI in Crypto — Complete Guide 2026",
     description: 'Discover AI agents managing crypto trades, DeFi positions, and decentralized AI protocols. Bittensor, Virtuals, Render Network, and the emerging Agentic Web.',
     publishedTime: '2026-04-03T00:00:00Z',
     modifiedTime: '2026-04-03T00:00:00Z',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Agents & Decentralized AI in Crypto — Complete Guide 2026 | degen0x',
+    title: "AI Agents & Decentralized AI in Crypto — Complete Guide 2026",
     description: 'How AI agents are revolutionizing DeFi, trading, and decentralized machine learning. Learn Bittensor, Virtuals, Render, and the rise of autonomous on-chain agents.',
   },
   alternates: {

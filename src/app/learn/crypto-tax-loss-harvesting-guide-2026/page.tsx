@@ -8,14 +8,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Tax-Loss Harvesting Guide 2026 — IRS Rules & Strategy | degen0x",
-  description:
-    "Master crypto tax-loss harvesting in 2026. Learn wash sale rules, IRS regulations, cost basis tracking, and strategic techniques to offset capital gains and reduce taxes legally.",
+  title: "Crypto Tax-Loss Harvesting Guide 2026 — IRS Rules & Strategy",
+  description: "Master crypto tax-loss harvesting in 2026. Learn wash sale rules, IRS regulations, cost basis tracking, and strategic techniques to offset capital gains and",
   keywords:
     "crypto tax-loss harvesting, wash sale rule crypto, tax loss harvesting strategy, IRS crypto taxes, capital loss deduction, 1099-DA crypto, Form 8949, cryptocurrency tax planning, crypto tax software",
   openGraph: {
     type: "article",
-    title: "Crypto Tax-Loss Harvesting Guide 2026 — IRS Rules & Strategy | degen0x",
+    title: "Crypto Tax-Loss Harvesting Guide 2026 — IRS Rules & Strategy",
     description:
       "Master crypto tax-loss harvesting strategies, understand wash sale rules for crypto, and learn how to offset capital gains while staying compliant with IRS regulations.",
     publishedTime: "2026-03-24T00:00:00Z",
@@ -35,7 +34,8 @@ export const metadata: Metadata = {
     title: "Crypto Tax-Loss Harvesting Guide 2026 | degen0x",
     description: "Master tax-loss harvesting for crypto. Learn wash sale rules, IRS compliance, and capital gains offset strategies.",
   },
-};
+
+  alternates: { canonical: "/learn/crypto-tax-loss-harvesting-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Crypto Tax-Loss Harvesting Guide 2026 — Strategies, IRS Rules & Wash Sale Loophole",

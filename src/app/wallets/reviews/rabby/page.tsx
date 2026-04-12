@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = walletProducts.find((p) => p.slug === "rabby")!;
 export const metadata: Metadata = {
   title: `Rabby Wallet Review (${CURRENT_YEAR}) - Security-First EVM Wallet | ${SITE_NAME}`,
   description: `Complete Rabby wallet review for ${CURRENT_YEAR}. Covers transaction simulation, auto chain detection, multi-chain EVM support, and DeFi security features.`,
-};
+  alternates: { canonical: "/wallets/reviews/rabby" }};
 
 const overview =
   "Rabby is a security-focused browser extension wallet for Ethereum and EVM-compatible chains, developed by the DeBank team. Its standout feature is pre-transaction risk scanning, which simulates every transaction before you sign it and shows you exactly what will happen to your balances. Rabby also automatically detects which chain a dApp is using and switches networks accordingly, eliminating one of the most common pain points of EVM wallet usage. It is open-source, free to use, and has become a favorite among experienced DeFi users who prioritize security and transparency.";

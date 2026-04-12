@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Yield Optimizer Guide: Yearn, Beefy, Convex & Pendle | degen0x',
-  description: 'Compare top yield optimizers: Yearn Finance, Beefy Finance, Convex, Pendle, Sommelier. Auto-compound strategies, multi-chain yields, TVL data, governance tokens & fees.',
+  title: "DeFi Yield Optimizer Guide: Yearn, Beefy, Convex & Pendle",
+  description: "Compare top yield optimizers: Yearn Finance, Beefy Finance, Convex, Pendle, Sommelier. Auto-compound strategies, multi-chain yields, TVL data, governance",
   keywords: ['DeFi yield optimizer', 'Yearn Finance', 'Beefy Finance', 'Convex Finance', 'Pendle', 'auto-compound', 'yield farming', 'strategy vaults', 'crypto yields'],
   openGraph: {
     type: 'article',
     title: 'DeFi Yield Optimizer Guide: Yearn, Beefy, Convex & Pendle',
-    description: 'Compare top yield optimizers: Yearn Finance, Beefy Finance, Convex, Pendle, Sommelier. Auto-compound strategies, multi-chain yields, TVL data, governance tokens & fees.',
+    description: "Compare top yield optimizers: Yearn Finance, Beefy Finance, Convex, Pendle, Sommelier. Auto-compound strategies, multi-chain yields, TVL data, governance",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/tools/defi-yield-optimizer',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'DeFi Yield Optimizer Guide: Yearn, Beefy, Convex & Pendle',
-    description: 'Compare top yield optimizers: Yearn Finance, Beefy Finance, Convex, Pendle, Sommelier. Auto-compound strategies, multi-chain yields, TVL data, governance tokens & fees.',
+    description: "Compare top yield optimizers: Yearn Finance, Beefy Finance, Convex, Pendle, Sommelier. Auto-compound strategies, multi-chain yields, TVL data, governance",
     image: 'https://degen0x.com/og-tools-defi-yield.svg',
   },
   alternates: {
@@ -36,7 +36,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'DeFi Yield Optimizer Guide: Yearn, Beefy, Convex & Pendle',
-  description: 'Compare top yield optimizers: Yearn Finance, Beefy Finance, Convex, Pendle, Sommelier. Auto-compound strategies, multi-chain yields, TVL data, governance tokens & fees.',
+  description: "Compare top yield optimizers: Yearn Finance, Beefy Finance, Convex, Pendle, Sommelier. Auto-compound strategies, multi-chain yields, TVL data, governance",
   image: 'https://degen0x.com/og-tools.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

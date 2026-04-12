@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `DeFi Lending vs Staking ${CURRENT_YEAR}: Which Earns More?`,
   description: `Compare DeFi lending vs staking in ${CURRENT_YEAR}. Analyze yields, risks, lock-up periods, and which passive income strategy is better for your portfolio.`,
-};
+  alternates: { canonical: "/defi-lending/compare/lending-vs-staking" }};
 
 const items: ComparisonItem[] = [
   { name: "DeFi Lending", slug: "defi-lending", rating: 4.5, affiliateUrl: "https://degen0x.com/go/aave", features: { "Typical Yields": "3-8% stablecoins", "Lock-up Period": "None (instant withdrawal)", "Risk Type": "Smart contract, utilization", "Assets Supported": "Any listed token", "Complexity": "Low to moderate", "Composability": "High (receipt tokens)", "Reward Source": "Borrower interest payments", "Best For": "Stablecoin yield, flexibility" } },
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function LendingVsStakingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/lending-vs-staking" }, { label: "Lending vs Staking", href: "/defi-lending/compare/lending-vs-staking" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/lending-vs-staking" }, { label: "Lending vs Staking", href: "/defi-lending/compare/lending-vs-staking" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">DeFi Lending vs Staking ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -60,6 +69,57 @@ export default function LendingVsStakingPage() {
         <p className="text-[var(--color-text-secondary)]">Lending supports any token listed on lending protocols, including stablecoins, governance tokens, and wrapped assets. Staking is limited to proof-of-stake native tokens like ETH, SOL, ATOM, and DOT. If you hold stablecoins or non-PoS tokens, lending is your only option for earning yield on those assets. If you hold ETH or other PoS tokens long-term, staking provides a natural yield source that does not depend on external borrowing demand.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/lending Vs Staking", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/lending-vs-staking"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

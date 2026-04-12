@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import TriviaLeaderboard from "@/components/TriviaLeaderboard";
 
@@ -11,12 +12,20 @@ export const metadata: Metadata = {
     description: "Bronze · Silver · Gold · Diamond. Where do you rank? Play today's quiz and find out.",
     type: "website",
   },
-};
+
+  alternates: { canonical: "/learn/trivia-leaderboard" }};
 
 export default function TriviaLeaderboardPage() {
   return (
     <main className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
-      {/* Breadcrumb */}
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] mb-8">
         <Link href="/" className="hover:text-[var(--color-primary)]">Home</Link>
         <span>›</span>

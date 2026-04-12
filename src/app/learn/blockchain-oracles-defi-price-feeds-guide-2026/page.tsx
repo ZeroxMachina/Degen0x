@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Blockchain Oracles Guide 2026: Chainlink, Pyth, RedStone & Price Feeds | degen0x',
-  description: 'Complete guide to blockchain oracles in 2026. Learn how Chainlink, Pyth, RedStone, and Chronicle power DeFi, prevent oracle manipulation attacks, and secure $100B+ in TVL.',
+  title: "Blockchain Oracles Guide 2026: Chainlink, Pyth, RedStone &",
+  description: "Complete guide to blockchain oracles in 2026. Learn how Chainlink, Pyth, RedStone, and Chronicle power DeFi, prevent oracle manipulation attacks, and secure",
   keywords: ['blockchain oracles guide 2026', 'crypto oracles explained', 'Chainlink vs Pyth', 'DeFi price feeds', 'oracle problem', 'RedStone oracle', 'oracle manipulation', 'cross-chain oracles'],
   openGraph: {
     type: 'article',
-    title: 'Blockchain Oracles Guide 2026: Chainlink, Pyth, RedStone & Price Feeds | degen0x',
+    title: "Blockchain Oracles Guide 2026: Chainlink, Pyth, RedStone &",
     description: 'Master blockchain oracles in 2026. Chainlink, Pyth, RedStone comparison, oracle attacks, DeFi security, and future of decentralized data.',
     publishedTime: '2026-04-02T00:00:00Z',
     modifiedTime: '2026-04-02T00:00:00Z',
@@ -567,8 +567,8 @@ export default function BlockchainOraclesGuide() {
             { q: 'What is the future of blockchain oracles?', a: 'The future includes zero-knowledge proofs for data verification (privacy-preserving proofs), restaking security models (all major oracles backed by staked capital), real-world asset feeds (traditional market data on-chain), and universal cross-chain data availability (one oracle feed serves all blockchains).' },
           ].map((faq, i) => (
             <div key={i} style={{ ...infoBoxStyle, marginBottom: 16 }}>
-              <h3 style={{ fontSize: 16, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 16, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Bitcoin ETF Guide 2026: Institutional Adoption & $128B AUM Explained | degen0x',
-  description: 'Complete guide to Bitcoin ETFs in 2026. $128B AUM, 38% institutional holdings, IBIT leading with $8.4B Q1 inflows. How ETF options, inflows, and institutions are reshaping crypto.',
+  title: "Bitcoin ETF Guide 2026: Institutional Adoption & $128B AUM",
+  description: "Complete guide to Bitcoin ETFs in 2026. $128B AUM, 38% institutional holdings, IBIT leading with $8.4B Q1 inflows. How ETF options, inflows, and institutions",
   keywords: ['Bitcoin ETF', 'IBIT', 'BlackRock Bitcoin', 'Fidelity FBTC', 'crypto ETF', 'institutional crypto', 'Bitcoin ETF options', 'spot Bitcoin ETF 2026'],
   openGraph: {
     type: 'article',

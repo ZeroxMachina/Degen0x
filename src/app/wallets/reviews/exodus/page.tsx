@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = walletProducts.find((p) => p.slug === "exodus")!;
 export const metadata: Metadata = {
   title: `Exodus Wallet Review (${CURRENT_YEAR}) - Best for Beginners? | ${SITE_NAME}`,
   description: `Detailed Exodus wallet review for ${CURRENT_YEAR}. Covers the desktop, mobile, and browser experience, built-in exchange, Trezor integration, and portfolio tracking.`,
-};
+  alternates: { canonical: "/wallets/reviews/exodus" }};
 
 const overview =
   "Exodus is a beautifully designed multi-platform crypto wallet that prioritizes simplicity and visual appeal. Available on desktop (Windows, Mac, Linux), mobile (iOS, Android), and as a browser extension, Exodus supports over 300 cryptocurrencies with a built-in exchange, portfolio tracking, and staking features. Its standout strength is the user experience, which makes managing crypto feel intuitive even for complete beginners. Exodus also integrates with Trezor hardware wallets for users who want enhanced security without sacrificing the polished interface.";

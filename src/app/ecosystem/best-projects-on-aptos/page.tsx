@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Best Aptos Projects 2026: Liquidswap, Thala, Aries Markets, Pontem, Econia | degen0x",
-  description: "Top Aptos ecosystem projects: Liquidswap DEX ($80M TVL), Thala stablecoin + lending, Aries Markets lending, Pontem DEX, Econia orderbook. Move language, Block-STM parallel execution.",
+  title: "Best Aptos Projects 2026: Liquidswap, Thala, Aries Markets,",
+  description: "Top Aptos ecosystem projects: Liquidswap DEX ($80M TVL), Thala stablecoin + lending, Aries Markets lending, Pontem DEX, Econia orderbook. Move language,",
   keywords: ["Aptos projects", "Liquidswap", "Thala", "Aries Markets", "Pontem", "Econia", "Move language", "Block-STM"],
   openGraph: {
     type: "article",

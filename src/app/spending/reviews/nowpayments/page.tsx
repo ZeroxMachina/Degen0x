@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -15,7 +17,7 @@ export default function NOWPaymentsReviewPage() {
         name: "NOWPayments",
         slug: "nowpayments",
         rating: 3.9,
-        description: "NOWPayments is a non-custodial crypto payment gateway supporting 200+ cryptocurrencies with simple API integration, e-commerce plugins, and subscription billing for merchants.",
+        description: "NOWPayments is a non-custodial crypto payment gateway supporting 200+ cryptocurrencies with simple API integration, e-commerce plugins, and subscription",
         pros: [
           "200+ supported cryptocurrencies",
           "Non-custodial payment processing",

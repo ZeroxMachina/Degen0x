@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ExchangeComparisonEngine from '@/components/ExchangeComparisonEngine';
 import Footer from '@/components/Footer';
 
@@ -43,7 +45,14 @@ export const metadata: Metadata = {
 export default function ComparePage() {
   return (
     <main className="min-h-screen bg-[var(--color-bg)]">
-      {/* Hero Section */}
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="compare"
+      />      {/* Hero Section */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
         <div className="text-center space-y-4 mb-12">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
@@ -251,6 +260,57 @@ export default function ComparePage() {
       </section>
 
       <Footer />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Exchange Comparison Tool | degen0x", "description": "Compare top cryptocurrency exchanges side-by-side. Analyze fees, security, features, and user experience. Find the best exchange for your trading needs.", "url": "https://degen0x.com/compare"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Comparisons
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Learning Guides
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Web3 Marketing Strategies 2026: Growth Playbook for Crypto Startups | degen0x',
-  description: 'Complete web3 marketing playbook: community growth, content strategy, token incentives, partnerships, and budget allocation for crypto projects. Proven tactics for 10-100x growth.',
+  title: "Web3 Marketing Strategies 2026: Growth Playbook for Crypto",
+  description: "Complete web3 marketing playbook: community growth, content strategy, token incentives, partnerships, and budget allocation for crypto projects. Proven tactics",
   keywords: ['web3 marketing', 'crypto marketing', 'community growth', 'token incentives', 'partnership marketing', 'content strategy', 'discord growth', 'crypto startup growth'],
   openGraph: {
     type: 'article',
@@ -654,6 +654,56 @@ export default function Web3MarketingGuide() {
             This guide is for educational purposes and not financial or business advice. Crypto marketing requires product excellence first; marketing cannot overcome poor product. Token incentives can create short-term growth but sustainability depends on fundamentals. Always conduct market research, validate assumptions, and adapt strategies based on data. Marketing success varies by project, market conditions, and team execution. degen0x is not liable for marketing outcomes or business failures.
           </p>
         </section>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </article>
   );

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Euler Finance",
   slug: "euler",
   rating: 3.7,
-  description: "Euler Finance is a permissionless lending protocol that relaunched as Euler V2 with a modular vault architecture, allowing anyone to create customized lending markets with flexible risk parameters.",
+  description: "Euler Finance is a permissionless lending protocol that relaunched as Euler V2 with a modular vault architecture, allowing anyone to create customized lending",
   pros: ["Permissionless market creation", "Modular vault architecture (V2)", "Innovative risk management features", "Sub-account system for isolated positions", "Strong technical team"],
   cons: ["Suffered $197M exploit in V1 (funds recovered)", "V2 is still building TVL and trust", "Complex system for average users", "Limited track record for new version"],
   fees: "Variable (set per vault)",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Euler Finance Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Euler Finance review covering the V2 modular vault architecture, permissionless lending, security improvements after the V1 exploit, and yield opportunities.",
-};
+  alternates: { canonical: "/defi-lending/reviews/euler" }};
 
 export default function EulerReview() {
   return (

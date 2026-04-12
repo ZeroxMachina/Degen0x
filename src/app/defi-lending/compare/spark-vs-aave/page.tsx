@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Spark vs Aave ${CURRENT_YEAR}: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Spark Protocol vs Aave in ${CURRENT_YEAR}. Compare DAI savings rate, lending features, yield opportunities, and which protocol suits your strategy.`,
-};
+  alternates: { canonical: "/defi-lending/compare/spark-vs-aave" }};
 
 const items: ComparisonItem[] = [
   { name: "Spark Protocol", slug: "spark", rating: 4.6, affiliateUrl: "https://degen0x.com/go/spark", features: { "TVL": "$5B+", "Chains": "Ethereum, Gnosis", "Parent Ecosystem": "MakerDAO / Sky", "Stablecoin": "DAI / USDS", "Savings Rate": "DSR / SSR (variable)", "Rate Options": "Variable", "Governance": "MKR / SKY holders", "Unique Feature": "Direct DAI savings rate access" } },
@@ -28,7 +30,14 @@ const faqs: FAQ[] = [
 export default function SparkVsAavePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Spark vs Aave", href: "/defi-lending/compare/spark-vs-aave" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Spark vs Aave", href: "/defi-lending/compare/spark-vs-aave" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Spark vs Aave: Full Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -62,6 +71,57 @@ export default function SparkVsAavePage() {
         <p className="text-[var(--color-text-secondary)]">Both protocols have native stablecoin strategies. Spark is the primary venue for DAI minting and the savings rate, making it the gateway to MakerDAO&apos;s stablecoin ecosystem. Aave facilitates GHO minting with unique features like borrowing rate discounts for AAVE stakers. Using both stablecoins across both platforms provides diversification in your stablecoin exposure and access to different yield mechanisms.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/spark Vs Aave", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/spark-vs-aave"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

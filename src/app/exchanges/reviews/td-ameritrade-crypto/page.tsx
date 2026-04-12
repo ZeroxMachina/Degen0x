@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `TD Ameritrade Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth TD Ameritrade crypto review covering Bitcoin futures, thinkorswim platform, fees, and how the Schwab integration affects crypto trading.",
-};
+  alternates: { canonical: "/exchanges/reviews/td-ameritrade-crypto" }};
 
 export default function TDAmeritradeCryptoReview() {
   return (

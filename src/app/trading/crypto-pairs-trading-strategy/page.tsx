@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Pairs Trading 2026: Cointegration, Mean Reversion, Z-Score & Statistical Arbitrage | degen0x",
-  description: "Master statistical arbitrage via pairs trading. Cointegration: BTC/ETH (0.85 corr), SOL/AVAX (0.75 corr). Z-score entry at ±1.5 std devs. Mean reversion: 55-65% winrate. Capital: $5K-50K.",
+  title: "Crypto Pairs Trading 2026: Cointegration, Mean Reversion,",
+  description: "Master statistical arbitrage via pairs trading. Cointegration: BTC/ETH (0.85 corr), SOL/AVAX (0.75 corr). Z-score entry at ±1.5 std devs. Mean reversion:",
   keywords: ["pairs trading", "cointegration", "mean reversion", "z-score", "statistical arbitrage", "crypto spread trading", "correlation pairs"],
   openGraph: {
     type: "article",

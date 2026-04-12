@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -9,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Coinbase vs Cash App: Which Is Better for Bitcoin? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of Coinbase vs Cash App for buying Bitcoin. Compare fees, features, and capabilities to find the right platform for you.",
-};
+  alternates: { canonical: "/exchanges/compare/coinbase-vs-cash-app" }};
 
 export default function CoinbaseVsCashAppPage() {
   return (
@@ -63,6 +64,57 @@ export default function CoinbaseVsCashAppPage() {
         { question: "Does Cash App support Lightning Network?", answer: "Yes, Cash App supports Bitcoin Lightning Network for instant, low-cost Bitcoin payments. This is a significant advantage over Coinbase, which does not currently support Lightning." },
         { question: "Can I buy Ethereum on Cash App?", answer: "No, Cash App only supports Bitcoin. For Ethereum and other cryptocurrencies, you need to use a platform like Coinbase." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/coinbase Vs Cash App", "description": "Detailed comparison of Coinbase vs Cash App for buying Bitcoin. Compare fees, features, and capabilities to find the right platform for you.", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-cash-app"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,10 +10,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto to Mine (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The most profitable cryptocurrencies to mine in ${CURRENT_YEAR}. Compare Bitcoin, Litecoin, Kaspa, and other mineable coins by profitability and hardware requirements.`,
-};
+  alternates: { canonical: "/investing/best/crypto-to-mine" }};
 
 const products = [
-  { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.8, description: "The original proof-of-work cryptocurrency and largest by market cap. Requires specialized ASIC hardware but offers the most liquid and established mining ecosystem.", pros: ["Most valuable and liquid mined coin", "Established mining infrastructure", "Predictable halving schedule"], cons: ["High ASIC hardware costs", "Dominated by large mining operations", "High electricity requirements"], bestFor: "Serious miners with capital for ASIC hardware", affiliateUrl: "#", category: "investing" },
+  { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.8, description: "The original proof-of-work cryptocurrency and largest by market cap. Requires specialized ASIC hardware but offers the most liquid and established mining", pros: ["Most valuable and liquid mined coin", "Established mining infrastructure", "Predictable halving schedule"], cons: ["High ASIC hardware costs", "Dominated by large mining operations", "High electricity requirements"], bestFor: "Serious miners with capital for ASIC hardware", affiliateUrl: "#", category: "investing" },
   { name: "Litecoin (LTC)", slug: "litecoin", rating: 4.3, description: "Uses the Scrypt algorithm which requires different ASIC hardware than Bitcoin. Lower entry costs and consistent mining rewards make it accessible to mid-scale operations.", pros: ["Lower hardware costs than Bitcoin mining", "Established and liquid", "Merged mining with Dogecoin possible"], cons: ["Lower value than Bitcoin", "Still requires ASIC hardware", "Declining block rewards"], bestFor: "Mid-scale mining operations with Scrypt ASICs", affiliateUrl: "#", category: "investing" },
   { name: "Kaspa (KAS)", slug: "kaspa", rating: 4.4, description: "BlockDAG-based cryptocurrency with fast block times and growing ASIC mining ecosystem. One of the most profitable GPU and ASIC mineable coins with strong community.", pros: ["High profitability potential", "Growing ecosystem and adoption", "Fast block confirmation times"], cons: ["Newer project with less track record", "ASIC development changing GPU mining viability", "Volatile profitability"], bestFor: "Miners seeking high-growth potential coins", affiliateUrl: "#", category: "investing" },
   { name: "Monero (XMR)", slug: "monero", rating: 4.5, description: "Privacy-focused cryptocurrency mineable with regular CPUs using the RandomX algorithm. ASIC-resistant design keeps mining accessible to individual participants.", pros: ["CPU mining viable", "ASIC-resistant algorithm", "Strong privacy features add demand"], cons: ["Regulatory risk due to privacy features", "Delisted from some exchanges", "Lower profitability per unit of hardware"], bestFor: "CPU miners and privacy advocates", affiliateUrl: "#", category: "investing" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Crypto to Mine" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Crypto to Mine" }]} />
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Best Crypto to Mine ({CURRENT_YEAR})</h1>
@@ -56,6 +64,57 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/crypto To Mine", "description": "The original proof-of-work cryptocurrency and largest by market cap. Requires specialized ASIC hardware but offers the most liquid and established mining", "url": "https://degen0x.com/investing/best/crypto-to-mine"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

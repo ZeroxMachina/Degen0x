@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import CryptoConverter from "@/components/CryptoConverter";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
@@ -7,8 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Crypto Converter - BTC to USD, ETH to EUR | Live Rates",
-  description:
-    "Convert Bitcoin, Ethereum, and 20+ cryptocurrencies to USD, EUR, GBP in real-time. Two-way crypto-to-fiat converter with live CoinGecko prices. Fast, accurate, and mobile-friendly.",
+  description: "Convert Bitcoin, Ethereum, and 20+ cryptocurrencies to USD, EUR, GBP in real-time. Two-way crypto-to-fiat converter with live CoinGecko prices. Fast, accurate,",
   keywords:
     "crypto converter, bitcoin to usd, ethereum to eur, btc to usd, eth to eur, cryptocurrency converter, live prices, coingecko, crypto exchange rates",
   openGraph: {
@@ -31,7 +31,8 @@ export const metadata: Metadata = {
     title: "Crypto Converter - Real-Time Rates",
     description: "Convert BTC, ETH, SOL and more to USD, EUR, GBP instantly.",
   },
-};
+
+  alternates: { canonical: "/tools/converter" }};
 
 // ─── Component ───────────────────────────────────────────────────────────────
 export default function ConverterPage() {
@@ -209,7 +210,7 @@ export default function ConverterPage() {
                     margin: "0 0 6px 0",
                   }}
                 >
-                  {faq.q}
+                  {faq.question}
                 </p>
                 <p
                   style={{
@@ -219,7 +220,7 @@ export default function ConverterPage() {
                     lineHeight: 1.6,
                   }}
                 >
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}
@@ -297,6 +298,56 @@ export default function ConverterPage() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Tools
+          </Link>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Learning Guides
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Tools
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

@@ -9,9 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "AMM & Liquidity Pools Guide 2026 — How DEX Trading Works | degen0x",
-  description:
-    "Learn how Automated Market Makers and liquidity pools power decentralized trading. Understand the constant product formula, concentrated liquidity, Uniswap V4, impermanent loss, and how to earn as an LP. Complete guide 2026.",
+  title: "AMM & Liquidity Pools Guide 2026 — How DEX Trading Works",
+  description: "Learn how Automated Market Makers and liquidity pools power decentralized trading. Understand the constant product formula, concentrated liquidity, Uniswap V4,",
   keywords: [
     "automated market maker",
     "liquidity pools",
@@ -42,7 +41,8 @@ export const metadata: Metadata = {
     description:
       "Master Automated Market Makers, liquidity pools, and impermanent loss. Complete 2026 guide.",
   },
-};
+
+  alternates: { canonical: "/learn/amm-liquidity-pools-guide-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
@@ -1705,7 +1705,57 @@ const AMMGuide = () => {
             })
           }}
         />
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 };
 

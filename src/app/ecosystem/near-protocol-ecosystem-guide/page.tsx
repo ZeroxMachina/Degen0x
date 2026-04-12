@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "NEAR Protocol Ecosystem 2026: Ref Finance, Burrow, Aurora, Mintbase, NEAR Social | degen0x",
-  description: "Complete NEAR ecosystem guide: Ref Finance DEX ($200M TVL), Burrow Protocol lending, Aurora EVM sidechain, Mintbase NFTs, NEAR Social. Nightshade sharding, chain abstraction, BOS platform.",
+  title: "NEAR Protocol Ecosystem 2026: Ref Finance, Burrow, Aurora,",
+  description: "Complete NEAR ecosystem guide: Ref Finance DEX ($200M TVL), Burrow Protocol lending, Aurora EVM sidechain, Mintbase NFTs, NEAR Social. Nightshade sharding,",
   keywords: ["NEAR", "Ref Finance", "Burrow", "Aurora", "Mintbase", "NEAR Social", "Nightshade", "chain abstraction", "BOS"],
   openGraph: {
     type: "article",

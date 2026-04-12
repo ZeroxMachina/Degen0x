@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { nftMarketplaces } from "@/data/nfts";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -7,7 +9,7 @@ const product = nftMarketplaces.find((m) => m.slug === "superrare")!;
 export const metadata: Metadata = {
   title: "SuperRare Review 2026: Fees, Features, Pros & Cons",
   description: "Our in-depth SuperRare review covers premium art curation, RARE governance, 1-of-1 focus, and whether it's worth the premium fees. Updated March 2026.",
-};
+  alternates: { canonical: "/nfts/reviews/superrare" }};
 
 export default function SuperRareReview() {
   return (

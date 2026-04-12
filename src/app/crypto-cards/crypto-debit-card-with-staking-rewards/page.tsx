@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Debit Cards with Staking Rewards 2026 | Lido, Rocket Pool",
+  title: "Crypto Debit Cards with Staking Rewards 2026 | Lido, Rocket",
   description: "Crypto debit cards with integrated staking: earn while spending. Lido stETH, Rocket Pool rETH, and staking-enabled cards. Rewards rates, APY, and best options.",
   keywords: ["staking rewards card", "debit card staking", "crypto debit card APY", "lido steth card", "rocket pool rewards"],
   openGraph: {
     type: "article",
-    title: "Crypto Debit Cards with Staking Rewards 2026 | Lido, Rocket Pool",
+    title: "Crypto Debit Cards with Staking Rewards 2026 | Lido, Rocket",
     description: "Crypto debit cards with integrated staking rewards. Real APY, rewards structures, and complete comparison.",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
@@ -367,6 +367,56 @@ export default function StakingRewardsCards() {
 
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. Cryptocurrency is volatile and carries risk. APY rates fluctuate—verify current rates before applying. Consult a tax professional regarding staking tax implications in your jurisdiction.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
@@ -6,8 +7,8 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: 'Crypto Inheritance Planning 2026: Protect Your Digital Assets for Your Heirs',
-  description: 'Complete guide to crypto estate planning. Learn how to secure your Bitcoin, Ethereum, and altcoins for inheritance. Includes Casa protocol, multi-sig wallets, tax strategies, and legal frameworks.',
+  title: "Crypto Inheritance Planning 2026: Protect Your Digital",
+  description: "Complete guide to crypto estate planning. Learn how to secure your Bitcoin, Ethereum, and altcoins for inheritance. Includes Casa protocol, multi-sig wallets,",
   keywords: [
     'crypto inheritance',
     'digital estate planning',
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     'crypto security',
   ],
   openGraph: {
-    title: 'Crypto Inheritance Planning 2026: Protect Your Digital Assets for Your Heirs',
+    title: "Crypto Inheritance Planning 2026: Protect Your Digital",
     description: 'Complete guide to crypto estate planning. Learn how to secure your Bitcoin, Ethereum, and altcoins for inheritance.',
     type: 'article',
     url: 'https://degen0x.com/learn/crypto-inheritance-planning',
@@ -37,14 +38,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Inheritance Planning 2026: Protect Your Digital Assets for Your Heirs',
+    title: "Crypto Inheritance Planning 2026: Protect Your Digital",
     description: 'Complete guide to crypto estate planning. Learn how to secure your Bitcoin, Ethereum, and altcoins for inheritance.',
   },
-};
+
+  alternates: { canonical: "/learn/crypto-inheritance-planning" }};
 
 const articleSchema = generateArticleSchema({
-  title: "Crypto Inheritance Planning 2026: Protect Your Digital Assets for Your Heirs",
-  description: "Complete guide to crypto estate planning. Learn how to secure your Bitcoin, Ethereum, and altcoins for inheritance. Includes Casa protocol, multi-sig wallets, tax strategies, and legal frameworks.",
+  title: "Crypto Inheritance Planning 2026: Protect Your Digital",
+  description: "Complete guide to crypto estate planning. Learn how to secure your Bitcoin, Ethereum, and altcoins for inheritance. Includes Casa protocol, multi-sig wallets,",
   url: "https://degen0x.com/learn/crypto-inheritance-planning",
   datePublished: "2026-03-16T00:00:00Z",
   dateModified: "2026-03-16T00:00:00Z",
@@ -84,7 +86,14 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function CryptoInheritancePlanningPage() {
   return (
     <div style={{ minHeight: '100vh', background: 'var(--color-bg)', color: 'var(--color-text)' }}>
-      <StructuredData data={combinedSchema} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <StructuredData data={combinedSchema} />
 
       <article style={{ maxWidth: 820, margin: '0 auto', padding: '40px 20px 80px 20px' }}>
         {/* Breadcrumb Navigation */}

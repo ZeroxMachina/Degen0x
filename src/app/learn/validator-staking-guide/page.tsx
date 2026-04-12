@@ -205,8 +205,8 @@ export default function ValidatorStakingGuide() {
                 { q: 'Is liquid staking safe?', a: 'Liquid staking adds smart contract risk on top of normal staking risk. Protocols like Lido and Rocket Pool have been audited and battle-tested, but no smart contract is 100% risk-free. Diversify across protocols.' },
               ].map((faq, i) => (
                 <details key={i} style={{ marginBottom: 8 }}>
-                  <summary style={{ cursor: 'pointer', fontWeight: 600, fontSize: 13, color: '#e6edf3', padding: '8px 0' }}>{faq.q}</summary>
-                  <p style={{ fontSize: 12, color: '#8b949e', lineHeight: 1.6, paddingLeft: 16, paddingBottom: 8 }}>{faq.a}</p>
+                  <summary style={{ cursor: 'pointer', fontWeight: 600, fontSize: 13, color: '#e6edf3', padding: '8px 0' }}>{faq.question}</summary>
+                  <p style={{ fontSize: 12, color: '#8b949e', lineHeight: 1.6, paddingLeft: 16, paddingBottom: 8 }}>{faq.answer}</p>
                 </details>
               ))}
             </div>

@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Trading Bots: Telegram Automation & Strategy Guide 2026",
+  title: "Crypto Trading Bots: Telegram Automation & Strategy Guide",
   description: "Master crypto trading bots and Telegram automation. Learn bot security, strategy selection, profitability analysis, and how to automate trading safely.",
 
   alternates: {
@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'article',
-    title: 'Crypto Trading Bots: Telegram Automation & Strategy Guide 2026',
+    title: "Crypto Trading Bots: Telegram Automation & Strategy Guide",
     description: 'Master crypto trading bots and Telegram automation. Learn bot security, strategy selection, profitability analysis, and how to automate trading safely.',
     url: 'https://degen0x.com/learn/crypto-trading-bots-telegram-guide-2026',
     images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Trading Bots: Telegram Automation & Strategy Guide 2026',
+    title: "Crypto Trading Bots: Telegram Automation & Strategy Guide",
     description: 'Master crypto trading bots and Telegram automation. Learn bot security, strategy selection, profitability analysis, and how to automate trading safely.',
     image: 'https://degen0x.com/og-default.svg',
   }

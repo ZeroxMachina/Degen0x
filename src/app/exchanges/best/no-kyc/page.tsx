@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -9,13 +10,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best No-KYC Crypto Exchanges in ${CURRENT_YEAR}`,
   description: `Trade crypto without identity verification. Compare the best no-KYC exchanges and DEXs in ${CURRENT_YEAR}. Privacy-focused trading options reviewed.`,
-};
+  alternates: { canonical: "/exchanges/best/no-kyc" }};
 
 const noKycOptions = [
   {
     name: "Uniswap",
     type: "DEX",
-    description: "The largest decentralized exchange on Ethereum. Trade ERC-20 tokens directly from your wallet with no KYC, no account creation, and no withdrawal limits. Available on Ethereum mainnet and multiple L2 networks.",
+    description: "The largest decentralized exchange on Ethereum. Trade ERC-20 tokens directly from your wallet with no KYC, no account creation, and no withdrawal limits.",
     features: ["No KYC ever", "Non-custodial", "1,000+ tokens", "Multi-chain"],
     tradeOff: "Gas fees on Ethereum can be high; impermanent loss risk for LPs",
   },
@@ -151,6 +152,57 @@ export default function NoKycPage() {
       </div>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/best/no Kyc", "description": "The largest decentralized exchange on Ethereum. Trade ERC-20 tokens directly from your wallet with no KYC, no account creation, and no withdrawal limits.", "url": "https://degen0x.com/exchanges/best/no-kyc"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

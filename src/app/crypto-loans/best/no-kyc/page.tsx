@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -6,10 +8,11 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
-export const metadata: Metadata = { title: `Best No-KYC Crypto Loans ${CURRENT_YEAR} - Borrow Without ID`, description: `Find the best no-KYC crypto loan platforms in ${CURRENT_YEAR}. Borrow against your crypto without identity verification through DeFi protocols.` };
+export const metadata: Metadata = { title: `Best No-KYC Crypto Loans ${CURRENT_YEAR} - Borrow Without ID`, description: `Find the best no-KYC crypto loan platforms in ${CURRENT_YEAR}. Borrow against your crypto without identity verification through DeFi protocols.` ,
+  alternates: { canonical: "/crypto-loans/best/no-kyc" }};
 
 const products: Product[] = [
-  { name: "Aave", slug: "aave-loans", rating: 4.8, description: "Aave is fully permissionless with no KYC, no account creation, and no identity verification of any kind. Simply connect your wallet, deposit collateral, and borrow. Available on 10+ chains.", pros: ["Completely permissionless", "No account needed", "10+ chain availability", "Deepest DeFi liquidity"], cons: ["Requires DeFi knowledge", "Variable interest rates", "Self-custody responsibility"], fees: "Variable borrow rates", bestFor: "Privacy-conscious DeFi borrowers", affiliateUrl: "https://degen0x.com/go/aave", category: "crypto-loans", featured: true },
+  { name: "Aave", slug: "aave-loans", rating: 4.8, description: "Aave is fully permissionless with no KYC, no account creation, and no identity verification of any kind. Simply connect your wallet, deposit collateral, and", pros: ["Completely permissionless", "No account needed", "10+ chain availability", "Deepest DeFi liquidity"], cons: ["Requires DeFi knowledge", "Variable interest rates", "Self-custody responsibility"], fees: "Variable borrow rates", bestFor: "Privacy-conscious DeFi borrowers", affiliateUrl: "https://degen0x.com/go/aave", category: "crypto-loans", featured: true },
   { name: "Compound", slug: "compound-loans", rating: 4.5, description: "Compound offers no-KYC borrowing through its decentralized protocol. The V3 isolated market model provides clean risk separation, and the familiar interface makes it accessible even for relatively new DeFi users.", pros: ["No KYC or registration", "Simple borrowing UX", "Isolated risk markets", "COMP incentives"], cons: ["Fewer chains than Aave", "Limited asset selection", "Variable rates only"], fees: "Variable borrow rates", bestFor: "Simple no-KYC borrowing", affiliateUrl: "https://degen0x.com/go/compound", category: "crypto-loans" },
   { name: "MakerDAO", slug: "makerdao", rating: 4.6, description: "MakerDAO Vaults require no identity verification. Anyone can open a Vault, deposit collateral, and mint DAI stablecoins. The protocol has operated since 2017 without requiring user identification.", pros: ["No KYC since 2017", "Borrow DAI stablecoin", "Multiple collateral options", "Governance-set rates"], cons: ["DAI only", "Complex Vault management", "Higher collateralization needed"], fees: "Stability fee", bestFor: "Private DAI borrowing", affiliateUrl: "https://degen0x.com/go/makerdao", category: "crypto-loans" },
 ];
@@ -23,7 +26,14 @@ const faqs: FAQ[] = [
 export default function NoKycPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "No KYC", href: "/crypto-loans/best/no-kyc" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="crypto-loans"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "No KYC", href: "/crypto-loans/best/no-kyc" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best No-KYC Crypto Loans ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
@@ -32,6 +42,57 @@ export default function NoKycPage() {
       </div>
       <div className="space-y-4 mb-12">{products.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/no Kyc", "description": "Aave is fully permissionless with no KYC, no account creation, and no identity verification of any kind. Simply connect your wallet, deposit collateral, and", "url": "https://degen0x.com/crypto-loans/best/no-kyc"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

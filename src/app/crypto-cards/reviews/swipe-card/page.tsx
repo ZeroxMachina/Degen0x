@@ -1,14 +1,16 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = cryptoCards.find((c) => c.slug === "swipe-card")!;
 
 export const metadata: Metadata = {
-  title: "Swipe Card Review 2026: SXP Token Staking, Multi-Crypto & Visa Partnership",
+  title: "Swipe Card Review 2026: SXP Token Staking, Multi-Crypto &",
   description:
     "Our in-depth Swipe Card review covers SXP token staking tiers, multi-crypto funding, Visa partnership, historical context, current status, and whether it's still worth using. Updated March 2026.",
-};
+  alternates: { canonical: "/crypto-cards/reviews/swipe-card" }};
 
 export default function SwipeCardReview() {
   return (

@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Insurance Explained: Nexus Mutual, InsurAce & Parametric Cover | degen0x',
-  description: 'Complete guide to DeFi insurance. Learn smart contract cover, stablecoin depeg cover, bridge hacks, claim assessment, pricing models, and comparison of Nexus Mutual, InsurAce, Neptune Mutual.',
+  title: "DeFi Insurance Explained: Nexus Mutual, InsurAce &",
+  description: "Complete guide to DeFi insurance. Learn smart contract cover, stablecoin depeg cover, bridge hacks, claim assessment, pricing models, and comparison of Nexus",
   keywords: ['DeFi insurance', 'Nexus Mutual', 'InsurAce', 'Neptune Mutual', 'parametric insurance', 'smart contract cover', 'bridge hack insurance', 'claim assessment', 'governance'],
   openGraph: {
     type: 'article',
     title: 'DeFi Insurance Explained: Nexus Mutual, InsurAce & Parametric Cover',
-    description: 'Complete guide to DeFi insurance. Learn smart contract cover, stablecoin depeg cover, bridge hacks, claim assessment, pricing models, and comparison of Nexus Mutual, InsurAce, Neptune Mutual.',
+    description: "Complete guide to DeFi insurance. Learn smart contract cover, stablecoin depeg cover, bridge hacks, claim assessment, pricing models, and comparison of Nexus",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/learn/defi-insurance-how-it-works',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'DeFi Insurance Explained: Nexus Mutual, InsurAce & Parametric Cover',
-    description: 'Complete guide to DeFi insurance. Learn smart contract cover, stablecoin depeg cover, bridge hacks, claim assessment, pricing models, and comparison of Nexus Mutual, InsurAce, Neptune Mutual.',
+    description: "Complete guide to DeFi insurance. Learn smart contract cover, stablecoin depeg cover, bridge hacks, claim assessment, pricing models, and comparison of Nexus",
     image: 'https://degen0x.com/og-defi-insurance.svg',
   },
   alternates: {
@@ -36,7 +36,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'DeFi Insurance Explained: Nexus Mutual, InsurAce & Parametric Cover',
-  description: 'Complete guide to DeFi insurance. Learn smart contract cover, stablecoin depeg cover, bridge hacks, claim assessment, pricing models, and comparison of Nexus Mutual, InsurAce, Neptune Mutual.',
+  description: "Complete guide to DeFi insurance. Learn smart contract cover, stablecoin depeg cover, bridge hacks, claim assessment, pricing models, and comparison of Nexus",
   image: 'https://degen0x.com/og-defi-insurance.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'MEV (Maximal Extractable Value) Explained 2026: Flashbots, Sandwich Attacks & Protection | degen0x',
-  description: 'Complete MEV guide 2026. Sandwich attacks, frontrunning, MEV-Boost, Flashbots, MEV protection tools (CoW Protocol, MEV Blocker), searcher/builder/proposer roles. Learn to avoid MEV loss on swaps.',
+  title: "MEV (Maximal Extractable Value) Explained 2026: Flashbots,",
+  description: "Complete MEV guide 2026. Sandwich attacks, frontrunning, MEV-Boost, Flashbots, MEV protection tools (CoW Protocol, MEV Blocker), searcher/builder/proposer",
   keywords: ['MEV', 'maximal extractable value', 'sandwich attack', 'frontrunning', 'Flashbots', 'MEV-Boost', 'MEV protection', 'CoW Protocol', 'JIT liquidity', 'arbitrage', 'degen0x'],
   openGraph: {
     type: 'article',

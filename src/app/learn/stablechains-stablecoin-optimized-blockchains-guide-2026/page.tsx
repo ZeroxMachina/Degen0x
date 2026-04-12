@@ -19,7 +19,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],
   headline: 'Stablechains: Stablecoin-Optimized Blockchains Guide 2026',
-  description: 'Complete guide to stablechains—purpose-built blockchains optimized for stablecoin payments, compliance, and zero volatile fees. Covers Plasma, Arc, Tempo, and global initiatives.',
+  description: "Complete guide to stablechains—purpose-built blockchains optimized for stablecoin payments, compliance, and zero volatile fees. Covers Plasma, Arc, Tempo, and",
   image: 'https://degen0x.com/og-stablechains-2026.svg',
   datePublished: '2026-04-03',
   dateModified: '2026-04-04',
@@ -75,9 +75,8 @@ const structuredData = {
 };
 
 export const metadata: Metadata = {
-  title: 'Stablechains: Stablecoin-Optimized Blockchains Guide 2026 | degen0x',
-  description:
-    'Complete guide to stablechains—purpose-built blockchains optimized for stablecoin payments, compliance, and zero volatile fees. Covers Plasma, Arc, Tempo, and global initiatives.',
+  title: "Stablechains: Stablecoin-Optimized Blockchains Guide 2026",
+  description: "Complete guide to stablechains—purpose-built blockchains optimized for stablecoin payments, compliance, and zero volatile fees. Covers Plasma, Arc, Tempo, and",
   keywords: [
     'stablechains',
     'stablecoin blockchains',
@@ -113,7 +112,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Stablechains: Stablecoin-Optimized Blockchains Guide 2026 | degen0x',
+    title: "Stablechains: Stablecoin-Optimized Blockchains Guide 2026",
     description:
       'Complete guide to stablechains—purpose-built blockchains optimized for stablecoin payments, compliance, and zero volatile fees.',
     images: ['https://degen0x.com/og-stablechains-2026.svg'],

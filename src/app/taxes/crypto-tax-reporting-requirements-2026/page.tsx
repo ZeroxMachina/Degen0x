@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Tax Reporting 2026: IRS Form 8949 & Schedule D Complete Guide',
+  title: "Crypto Tax Reporting 2026: IRS Form 8949 & Schedule D",
   description: 'Master IRS Form 8949, Schedule D, cost basis methods (FIFO/LIFO/HIFO), Form 1099-DA, and tax software for crypto. Real examples with DeFi/staking treatment.',
   keywords: ['crypto tax 2026', 'IRS Form 8949', 'Schedule D', 'Form 1099-DA', 'cost basis FIFO LIFO HIFO', 'crypto tax software', 'DeFi tax reporting'],
   openGraph: {
@@ -329,8 +329,8 @@ export default function CryptoTaxReporting2026() {
             { q: 'What software should I use?', a: 'Koinly ($200-600, best DeFi). CoinLedger ($100-500, all-around). TurboTax ($120, spot only). Always verify manually; export CSV backup.' },
           ].map((faq, idx) => (
             <div key={idx} style={infoBoxStyle}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>
@@ -350,6 +350,56 @@ export default function CryptoTaxReporting2026() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

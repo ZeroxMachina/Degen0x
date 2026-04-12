@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Onchain Analytics: Master Blockchain Data Intelligence",
-  description: "Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto trading decisions.",
+  description: "Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/onchain-analytics-blockchain-data-intelligence-guide-2026'
@@ -13,14 +13,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     title: 'Onchain Analytics: Master Blockchain Data Intelligence',
-    description: 'Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto trading decisions.',
+    description: "Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto",
     url: 'https://degen0x.com/learn/onchain-analytics-blockchain-data-intelligence-guide-2026',
     images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Onchain Analytics: Master Blockchain Data Intelligence',
-    description: 'Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto trading decisions.',
+    description: "Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto",
     image: 'https://degen0x.com/og-default.svg',
   }
 };

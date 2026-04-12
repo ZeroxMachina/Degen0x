@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
 // ─────────────────────────────────────────────
@@ -177,6 +178,13 @@ export default function JapanesePage() {
   return (
     <div style={{ background: "var(--color-bg, #0d1117)", minHeight: "100vh", color: "var(--color-text, #e6edf3)" }}>
 
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="ja"
+      />
       {/* ── Hero ── */}
       <section style={{
         background: "linear-gradient(135deg, #6366f108 0%, #06b6d408 50%, #f7931a08 100%)",
@@ -405,6 +413,57 @@ export default function JapanesePage() {
           {" · "}
           <Link href="/" style={{ color: "#8b949e", textDecoration: "none" }}>🌐 English</Link>
         </p>
+      </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x \u65e5\u672c\u8a9e\u7248 \u2014 \u6697\u53f7\u8cc7\u7523\u53d6\u5f15\u6240\u30fb\u30a6\u30a9\u30ec\u30c3\u30c8\u30fbDeFi\u3092\u6bd4\u8f03", "description": "degen0x \u306f\u65e5\u672c\u8a9e\u3067\u5229\u7528\u3067\u304d\u308b\u6697\u53f7\u8cc7\u7523\u306e\u7dcf\u5408\u6bd4\u8f03\u30d7\u30e9\u30c3\u30c8\u30d5\u30a9\u30fc\u30e0\u3067\u3059\u3002\u53d6\u5f15\u6240\u3001\u30a6\u30a9\u30ec\u30c3\u30c8\u3001DeFi\u30d7\u30ed\u30c8\u30b3\u30eb\u3092\u6bd4\u8f03\u3057\u3001\u5c02\u9580\u5bb6\u306e\u30ec\u30d3\u30e5\u30fc\u3001\u7121\u6599\u30c4\u30fc\u30eb\u3001\u7db2\u7f85\u7684\u306a\u30ac\u30a4\u30c9\u3067\u8ce2\u3044\u6697\u53f7\u8cc7\u7523\u6295\u8cc7\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002", "url": "https://degen0x.com/ja"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </div>
   );

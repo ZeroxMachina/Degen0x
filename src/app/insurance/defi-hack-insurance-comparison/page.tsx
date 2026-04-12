@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Hack Insurance Comparison 2026 | Nexus Mutual, InsurAce, Neptune Mutual',
-  description: 'DeFi hack insurance: Nexus Mutual exploit cover, InsurAce protection, Neptune Mutual parametric claims, Unslashed. Compare coverage, payouts, claim speed, premiums.',
+  title: "DeFi Hack Insurance Comparison 2026 | Nexus Mutual,",
+  description: "DeFi hack insurance: Nexus Mutual exploit cover, InsurAce protection, Neptune Mutual parametric claims, Unslashed. Compare coverage, payouts, claim speed,",
   keywords: ['DeFi insurance', 'hack insurance', 'Nexus Mutual', 'InsurAce', 'Neptune Mutual', 'Unslashed', 'smart contract insurance'],
   openGraph: {
     title: 'DeFi Hack Insurance | degen0x',

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Free vs Paid Crypto Tax Software (${CURRENT_YEAR}): Is Free Good Enough?`,
   description: `Compare free and paid crypto tax software options. Understand the limitations of free tools and when it is worth paying for premium crypto tax reporting in ${CURRENT_YEAR}.`,
-};
+  alternates: { canonical: "/taxes/compare/free-vs-paid-crypto-tax" }};
 
 const items: ComparisonItem[] = [
   { name: "Free Crypto Tax Tools", slug: "free-tools", rating: 3.5, affiliateUrl: "#", features: { "Transaction Limit": "25-100 typically", "DeFi Support": "Limited or none", "Exchange Support": "Major exchanges only", "Cost Basis Methods": "FIFO only usually", "Customer Support": "Community forums", "Tax Forms": "Basic (8949, Schedule D)", "Historical Reports": "Limited", "Accuracy": "Good for simple portfolios" } },
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function FreeVsPaidCryptoTaxPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/free-vs-paid-crypto-tax" }, { label: "Free vs Paid", href: "/taxes/compare/free-vs-paid-crypto-tax" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="taxes"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/free-vs-paid-crypto-tax" }, { label: "Free vs Paid", href: "/taxes/compare/free-vs-paid-crypto-tax" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Free vs Paid Crypto Tax Software ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -60,6 +69,57 @@ export default function FreeVsPaidCryptoTaxPage() {
         <p className="text-[var(--color-text-secondary)]">Most free tools default to FIFO cost basis and do not offer alternatives. Paid tools allow you to compare different methods like HIFO, LIFO, and specific identification. Choosing the optimal cost basis method can reduce your tax liability by thousands of dollars. This single feature alone often justifies the cost of paid software. Some paid tools let you preview your tax liability under each method before choosing, making the optimization process straightforward.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/free Vs Paid Crypto Tax", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/free-vs-paid-crypto-tax"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -6,12 +6,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Portfolio Construction & Position Sizing Guide 2026 | degen0x',
-  description: 'Master crypto portfolio construction with Kelly criterion, risk parity, correlation analysis, and position sizing strategies. Learn allocation frameworks, rebalancing methods, and advanced portfolio theory for crypto assets.',
+  title: "Crypto Portfolio Construction & Position Sizing Guide 2026",
+  description: "Master crypto portfolio construction with Kelly criterion, risk parity, correlation analysis, and position sizing strategies. Learn allocation frameworks,",
   keywords: ['crypto portfolio', 'position sizing', 'Kelly criterion', 'risk parity', 'portfolio construction', 'asset allocation', 'rebalancing', 'portfolio theory', 'risk management', 'cryptocurrency'],
   openGraph: {
     type: 'article',
-    title: 'Crypto Portfolio Construction & Position Sizing Guide 2026 | degen0x',
+    title: "Crypto Portfolio Construction & Position Sizing Guide 2026",
     description: 'Master allocation frameworks, Kelly criterion, risk parity, correlation analysis, and rebalancing strategies for crypto portfolios.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',

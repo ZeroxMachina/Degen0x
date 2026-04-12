@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Liquidity Pool Calculator | degen0x',
-  description: 'Calculate liquidity pool returns. IL (impermanent loss) simulation, fee revenue estimation, concentrated vs full-range, TVL/APR analysis. Uniswap v3 & v2 strategies for 2026.',
+  description: "Calculate liquidity pool returns. IL (impermanent loss) simulation, fee revenue estimation, concentrated vs full-range, TVL/APR analysis. Uniswap v3 & v2",
   keywords: ['liquidity pool calculator', 'impermanent loss', 'LP returns', 'Uniswap v3', 'concentrated liquidity', 'degen0x'],
   openGraph: {
     type: 'article',
     title: 'Liquidity Pool Calculator | degen0x',
-    description: 'Calculate liquidity pool returns. IL (impermanent loss) simulation, fee revenue estimation, concentrated vs full-range, TVL/APR analysis. Uniswap v3 & v2 strategies for 2026.',
+    description: "Calculate liquidity pool returns. IL (impermanent loss) simulation, fee revenue estimation, concentrated vs full-range, TVL/APR analysis. Uniswap v3 & v2",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/tools/liquidity-pool-calculator',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Liquidity Pool Calculator | degen0x',
-    description: 'Calculate liquidity pool returns. IL (impermanent loss) simulation, fee revenue estimation, concentrated vs full-range, TVL/APR analysis. Uniswap v3 & v2 strategies for 2026.',
+    description: "Calculate liquidity pool returns. IL (impermanent loss) simulation, fee revenue estimation, concentrated vs full-range, TVL/APR analysis. Uniswap v3 & v2",
     image: 'https://degen0x.com/og-tools.svg',
   },
   alternates: {
@@ -31,7 +31,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Liquidity Pool Calculator',
-  description: 'Calculate liquidity pool returns. IL (impermanent loss) simulation, fee revenue estimation, concentrated vs full-range, TVL/APR analysis. Uniswap v3 & v2 strategies for 2026.',
+  description: "Calculate liquidity pool returns. IL (impermanent loss) simulation, fee revenue estimation, concentrated vs full-range, TVL/APR analysis. Uniswap v3 & v2",
   image: 'https://degen0x.com/og-tools.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -72,7 +73,14 @@ const structuredData = {
 export default function UsualProtocolGuide() {
   return (
     <div style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px" }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       <article style={{ maxWidth: "800px", margin: "0 auto" }}>
         <h1 style={{ fontSize: "2.5rem", fontWeight: "bold", marginBottom: "20px" }}>

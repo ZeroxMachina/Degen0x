@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Impermanent Loss & Liquidity Providing Guide 2026 | degen0x',
-  description:
-    'Master impermanent loss in DeFi: understand the math, calculate IL, concentrated liquidity strategies, and profit despite price divergence with proven LP techniques.',
+  description: "Master impermanent loss in DeFi: understand the math, calculate IL, concentrated liquidity strategies, and profit despite price divergence with proven LP",
   keywords: [
     'impermanent loss',
     'liquidity providing',

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -6,7 +7,8 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Staking vs Lending (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Staking vs lending crypto comparison for ${CURRENT_YEAR}. Yields, risks, lock-up periods, and which passive income strategy is better for your crypto portfolio.` };
+export const metadata: Metadata = { title: `Staking vs Lending (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Staking vs lending crypto comparison for ${CURRENT_YEAR}. Yields, risks, lock-up periods, and which passive income strategy is better for your crypto portfolio.` ,
+  alternates: { canonical: "/investing/compare/staking-vs-lending" }};
 
 const items = [
   { name: "Crypto Staking", slug: "staking", rating: 4.5, affiliateUrl: "#", features: { "Income Source": "Block rewards + transaction fees", "Typical APY": "3-15% (chain dependent)", "Risk Type": "Slashing, validator downtime", "Lock-up Period": "Variable (0 days to months)", "Capital Requirement": "Varies (32 ETH for solo, or any amount via liquid staking)", "Smart Contract Risk": "Low for native staking, moderate for liquid staking", "Supported Assets": "PoS tokens only (ETH, SOL, ADA, DOT, ATOM)", "Tax Treatment": "Income on receipt (US)", "Liquid Options": "Liquid staking tokens (stETH, mSOL)", "Counterparty Risk": "Low (protocol level)" } },
@@ -22,7 +24,14 @@ const faqs = [
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Staking vs Lending" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Staking vs Lending" }]} />
       <AffiliateDisclosure />
       <header className="mb-8"><h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Staking vs Lending ({CURRENT_YEAR})</h1><p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p></header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">The two primary ways to earn passive income on cryptocurrency holdings each have distinct risk-return profiles. Staking earns rewards by securing proof-of-stake blockchains, while lending earns interest by providing capital to borrowers through DeFi protocols or CeFi platforms. Understanding the differences is essential for building a sustainable yield strategy within your crypto portfolio.</p>
@@ -43,6 +52,57 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/learn/yield-farming-vs-staking" className="text-blue-600 hover:underline">Yield Farming vs Staking</Link></li><li><Link href="/investing/learn/crypto-lending-as-investment" className="text-blue-600 hover:underline">Crypto Lending as Investment</Link></li></ul></section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/staking Vs Lending", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/staking-vs-lending"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

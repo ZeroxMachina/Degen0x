@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import InitiaClient from "./InitiaClient";
 
 export const metadata: Metadata = {
@@ -16,7 +18,8 @@ export const metadata: Metadata = {
     description: "Initia is a Cosmos-based L1 orchestrating modular rollups (Minitias) with $300M+ TVL and multi-VM support (MoveVM, EVM, WasmVM).",
     images: ["https://degen0x.com/og-initia-ecosystem.svg"],
   },
-};
+
+  alternates: { canonical: "/ecosystem/initia" }};
 
 export default function InitiaPage() {
   return <InitiaClient />;

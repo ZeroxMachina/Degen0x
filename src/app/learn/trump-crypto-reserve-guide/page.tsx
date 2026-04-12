@@ -4,10 +4,10 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Trump Crypto Strategic Reserve: What It Means for Bitcoin & the Market",
+  title: "Trump Crypto Strategic Reserve: What It Means for Bitcoin &",
   description:
     "A complete guide to the US government's strategic crypto reserve, which coins are included, what it means for Bitcoin price, and the geopolitical implications for 2026 and beyond.",
-};
+  alternates: { canonical: "/learn/trump-crypto-reserve-guide" }};
 
 export default function TrumpCryptoReserveGuidePage() {
   return (

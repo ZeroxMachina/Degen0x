@@ -14,8 +14,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Best Crypto Debit Cards 2026: Spend Bitcoin & USDC Anywhere",
-  description:
-    "Compare the best crypto debit cards in 2026. Spend Bitcoin and USDC at any Visa or Mastercard terminal. Fee breakdown, cashback rankings, and top picks included.",
+  description: "Compare the best crypto debit cards in 2026. Spend Bitcoin and USDC at any Visa or Mastercard terminal. Fee breakdown, cashback rankings, and top picks",
   keywords: [
     "crypto debit card",
     "bitcoin debit card",
@@ -53,7 +52,8 @@ export const metadata: Metadata = {
       "Spend your crypto anywhere Visa or Mastercard is accepted. Full comparison of fees, rewards, and KYC for the top crypto cards in 2026.",
     images: [`${SITE_URL}/og-crypto-debit-cards-2026.png`],
   },
-};
+
+  alternates: { canonical: "/learn/crypto-debit-cards-guide-2026" }};
 
 export default function CryptoDebitCardsGuide2026Page() {
   const articleSchema = generateArticleSchema({

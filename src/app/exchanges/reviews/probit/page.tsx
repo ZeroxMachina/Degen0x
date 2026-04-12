@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -29,7 +31,7 @@ const product = {
 export const metadata: Metadata = {
   title: `ProBit Global Review (${CURRENT_YEAR}) - IEO Launchpad & Altcoin Trading | ${SITE_NAME}`,
   description: `Complete ProBit Global review for ${CURRENT_YEAR}. Covers IEO launchpad, 800+ trading pairs, fees, security, and trading experience.`,
-};
+  alternates: { canonical: "/exchanges/reviews/probit" }};
 
 const overview =
   "ProBit Global is a cryptocurrency exchange headquartered in South Korea, launched in 2018. The platform has positioned itself as a gateway for emerging blockchain projects to reach the market, offering an active IEO (Initial Exchange Offering) launchpad alongside standard spot trading services. ProBit lists over 800 trading pairs, many of which are micro-cap tokens unavailable on larger exchanges.\n\nThe exchange operates with a relatively simple product offering focused primarily on spot trading and its launchpad. Unlike many competitors, ProBit does not offer futures, margin trading, or complex derivative products. This simplicity can be an advantage for users who want a straightforward trading experience without the complexity of leveraged products, but it limits the platform's appeal for advanced traders.\n\nProBit's PROB utility token provides fee discounts and access to exclusive launchpad events. The exchange serves users in most countries and maintains a policy of minimal KYC requirements for basic trading. While ProBit fills a niche for IEO participation and micro-cap trading, its lower liquidity, dated interface, and limited feature set place it below larger competitors for most trading needs.";

@@ -36,7 +36,8 @@ export const metadata: Metadata = {
     title: "On-Chain Analytics Guide 2026 | degen0x",
     description: "Master blockchain data analysis with Dune, Glassnode, and Nansen.",
   },
-};
+
+  alternates: { canonical: "/learn/onchain-analytics-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "On-Chain Analytics Guide 2026 — Blockchain Data Tools & Metrics",

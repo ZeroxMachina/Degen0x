@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Kamino Finance Solana Lending Guide 2026: Automated Vaults & Yield Optimization | degen0x',
-  description: 'Complete guide to Kamino Finance on Solana. Master automated lending vaults, auto-compounding yields, 10-15% APY strategies, and risk management for DeFi lending.',
+  title: "Kamino Finance Solana Lending Guide 2026: Automated Vaults",
+  description: "Complete guide to Kamino Finance on Solana. Master automated lending vaults, auto-compounding yields, 10-15% APY strategies, and risk management for DeFi",
   keywords: ['Kamino Finance', 'Solana lending', 'automated vaults', 'yield optimization', 'Solend', 'auto-compounding', 'DeFi strategies'],
   openGraph: {
     type: 'article',

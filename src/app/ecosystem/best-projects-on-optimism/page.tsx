@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Projects on Optimism 2026: Velodrome, Synthetix, Aave | degen0x',
+  title: "Best Projects on Optimism 2026: Velodrome, Synthetix, Aave",
   description: 'Top Optimism projects 2026. Compare Velodrome ($300M+ TVL), Synthetix ($800M+ TVL), Aave V3, Sonne Finance. OP Stack, RetroPGF funding, Bedrock upgrade.',
   keywords: ['Optimism', 'Velodrome', 'Synthetix', 'Aave', 'OP Stack', 'Optimism DeFi', 'Optimism L2', 'Sonne Finance', 'Rocket Pool'],
   openGraph: {

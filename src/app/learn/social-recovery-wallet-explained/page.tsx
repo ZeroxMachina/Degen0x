@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Social Recovery Wallets Explained | Argent, Safe & Guardian Security | degen0x',
-  description: 'Master social recovery wallets: how Argent uses 3-5 guardians, Safe social recovery modules, and ERC-4337 integration to secure crypto without seed phrases. Guardian selection guide included.',
+  title: "Social Recovery Wallets Explained | Argent, Safe & Guardian",
+  description: "Master social recovery wallets: how Argent uses 3-5 guardians, Safe social recovery modules, and ERC-4337 integration to secure crypto without seed phrases.",
   keywords: ['social recovery wallet', 'Argent wallet', 'Safe social recovery', 'guardian selection', 'ERC-4337', 'seed phrase alternative', 'wallet security'],
   openGraph: {
     title: 'Social Recovery Wallets: Guardian-Based Security',

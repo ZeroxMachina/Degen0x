@@ -5,13 +5,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Restaking & EigenLayer Guide 2026: Earn Multi-Layer Yield | degen0x',
-  description: 'Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS risks.',
+  title: "Restaking & EigenLayer Guide 2026: Earn Multi-Layer Yield",
+  description: "Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS",
   keywords: ['restaking', 'EigenLayer', 'AVS', 'liquid restaking tokens', 'LRT', 'Symbiotic', 'Karak', 'DeFi yield', 'ETH staking 2026'],
   openGraph: {
     type: 'article',
     title: 'Restaking & EigenLayer Guide 2026: Earn Multi-Layer Yield',
-    description: 'Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS risks.',
+    description: "Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS",
     publishedTime: '2026-04-01T00:00:00Z',
     modifiedTime: '2026-04-01T00:00:00Z',
     url: 'https://degen0x.com/learn/restaking-eigenlayer-guide-2026',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Restaking & EigenLayer Guide 2026: Earn Multi-Layer Yield',
-    description: 'Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS risks.',
+    description: "Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS",
     image: 'https://degen0x.com/og-restaking-eigenlayer.svg',
   },
   alternates: {
@@ -37,7 +37,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Restaking & EigenLayer Guide 2026: Multi-Layer Yield Strategy',
-  description: 'Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS risks.',
+  description: "Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS",
   image: 'https://degen0x.com/og-restaking-eigenlayer.svg',
   datePublished: '2026-04-01',
   dateModified: '2026-04-01',

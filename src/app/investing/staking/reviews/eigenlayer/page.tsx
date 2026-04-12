@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { stakingPlatforms } from "@/data/staking";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "EigenLayer Review 2026: Restaking, Yields, Pros & Cons",
   description:
     "Our in-depth EigenLayer review covers restaking mechanics, AVS rewards, risks, and whether it's the right protocol for boosting your staking yields. Updated March 2026.",
-};
+  alternates: { canonical: "/investing/staking/reviews/eigenlayer" }};
 
 export default function EigenLayerReview() {
   return (

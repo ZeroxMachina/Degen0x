@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Goldfinch",
   slug: "goldfinch",
   rating: 3.6,
-  description: "Goldfinch is a decentralized credit protocol that provides crypto loans to real-world businesses in emerging markets, offering DeFi lenders exposure to real-world credit yields without requiring borrowers to hold crypto.",
+  description: "Goldfinch is a decentralized credit protocol that provides crypto loans to real-world businesses in emerging markets, offering DeFi lenders exposure to",
   pros: ["Access to real-world yield uncorrelated with crypto", "Social impact through emerging market lending", "Trust through consensus auditor model", "Diversified borrower base across countries", "USDC-denominated with fixed yields"],
   cons: ["High credit risk in emerging market lending", "Defaults have occurred in some pools", "Long lockup periods for lenders", "Limited liquidity for withdrawals", "Complex governance and pool structure"],
   fees: "Fixed rates (10-15% to borrowers)",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Goldfinch Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Goldfinch review covering real-world lending, emerging market credit, trust through consensus model, yield opportunities, and credit risk considerations.",
-};
+  alternates: { canonical: "/defi-lending/reviews/goldfinch" }};
 
 export default function GoldfinchReview() {
   return (

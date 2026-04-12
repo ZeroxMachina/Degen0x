@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Projects on Solana 2026: Jupiter, Marinade, Raydium, Tensor, Helium | degen0x',
-  description: 'Top Solana ecosystem projects: Jupiter (DEX, $800M daily), Marinade (liquid staking $10B), Raydium (AMM $5B TVL), Tensor (NFT), Helium (IoT), Jito (MEV), Drift, Pyth.',
+  title: "Best Projects on Solana 2026: Jupiter, Marinade, Raydium,",
+  description: "Top Solana ecosystem projects: Jupiter (DEX, $800M daily), Marinade (liquid staking $10B), Raydium (AMM $5B TVL), Tensor (NFT), Helium (IoT), Jito (MEV),",
   keywords: ['best solana projects 2026', 'solana ecosystem', 'jupiter dex', 'marinade solana', 'raydium', 'tensor nft', 'helium iot', 'solana tvl'],
   openGraph: { type: 'article', title: 'Best Projects on Solana 2026: Jupiter, Marinade, Raydium, Tensor, Helium', description: 'Top Solana projects: Jupiter ($800M daily volume), Marinade ($10B staked), Raydium ($5B TVL), Tensor, Helium, Jito, Drift, Pyth. Ecosystem comparison.', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/ecosystem/best-projects-on-solana', images: [{ url: 'https://degen0x.com/og-best-projects-on-solana.svg', width: 1200, height: 630 }] },
   twitter: { card: 'summary_large_image', title: 'Best Projects on Solana 2026', description: 'Top Solana ecosystem: Jupiter, Marinade, Raydium, Tensor, Helium, Jito, Drift, Pyth. Comparison table with TVL, volume, features.', image: 'https://degen0x.com/og-best-projects-on-solana.svg' },

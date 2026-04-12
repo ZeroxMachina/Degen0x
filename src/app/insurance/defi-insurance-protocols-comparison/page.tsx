@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "DeFi Insurance Protocol Comparison 2026: Nexus Mutual vs InsurAce vs Neptune Mutual",
-  description: "Compare DeFi insurance protocols with active cover amounts, claims data, and pricing. Nexus Mutual ($500M+ cover, NXM staking), InsurAce (20+ chains), Neptune Mutual (parametric). Comprehensive protocol comparison table.",
+  title: "DeFi Insurance Protocol Comparison 2026: Nexus Mutual vs",
+  description: "Compare DeFi insurance protocols with active cover amounts, claims data, and pricing. Nexus Mutual ($500M+ cover, NXM staking), InsurAce (20+ chains), Neptune",
   keywords: [
     "DeFi insurance",
     "Nexus Mutual",

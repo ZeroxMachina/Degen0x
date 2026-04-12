@@ -411,8 +411,8 @@ export default function StakingAPYLeaderboardPage() {
               { q: "Which crypto has the highest staking APY?", a: "Cosmos (ATOM) and Polkadot (DOT) offer the highest APYs in this list (10-17%), but they come with long unbonding periods (21-28 days). NEAR Protocol offers ~9.5% with only a 52-72 hour unbonding period." },
             ].map((faq, i) => (
               <div key={i} style={{ ...cardStyle, padding: "1rem 1.25rem" }}>
-                <p style={{ color: "#e6edf3", fontWeight: "600", fontSize: "0.95rem", margin: "0 0 0.4rem 0" }}>{faq.q}</p>
-                <p style={{ color: "#8b949e", fontSize: "0.875rem", margin: 0, lineHeight: "1.6" }}>{faq.a}</p>
+                <p style={{ color: "#e6edf3", fontWeight: "600", fontSize: "0.95rem", margin: "0 0 0.4rem 0" }}>{faq.question}</p>
+                <p style={{ color: "#8b949e", fontSize: "0.875rem", margin: 0, lineHeight: "1.6" }}>{faq.answer}</p>
               </div>
             ))}
           </div>

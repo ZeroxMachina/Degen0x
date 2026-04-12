@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Fraxlend",
   slug: "fraxlend",
   rating: 4.0,
-  description: "Fraxlend is the lending component of the Frax ecosystem, offering isolated pair lending markets with dynamic interest rates and deep integration with FRAX stablecoin and frxETH liquid staking.",
+  description: "Fraxlend is the lending component of the Frax ecosystem, offering isolated pair lending markets with dynamic interest rates and deep integration with FRAX",
   pros: ["Deep Frax ecosystem integration", "Isolated pair lending reduces systemic risk", "Dynamic interest rate curves", "frxETH/sfrxETH collateral support", "No governance needed for new markets"],
   cons: ["Heavily tied to Frax ecosystem health", "Primarily FRAX-denominated markets", "Smaller TVL than major protocols", "Complex Frax ecosystem to understand", "Limited non-Frax asset markets"],
   fees: "Variable (per pair market)",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Fraxlend Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Fraxlend review covering isolated pair lending, Frax ecosystem integration, dynamic interest rates, frxETH collateral, and yield opportunities.",
-};
+  alternates: { canonical: "/defi-lending/reviews/fraxlend" }};
 
 export default function FraxlendReview() {
   return (

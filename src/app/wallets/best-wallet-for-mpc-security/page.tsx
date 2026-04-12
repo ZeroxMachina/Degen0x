@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Best MPC Wallet: Multi-Party Computation Security",
-  description: "MPC wallet guide comparing Fireblocks, ZenGo, Coinbase WaaS, Lit Protocol, Dfns. Learn how MPC differs from multisig, threshold signing, and no-seed-phrase benefits.",
+  description: "MPC wallet guide comparing Fireblocks, ZenGo, Coinbase WaaS, Lit Protocol, Dfns. Learn how MPC differs from multisig, threshold signing, and no-seed-phrase",
   keywords: [
     "best MPC wallet",
     "MPC wallet",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     title: "Best MPC Wallet: Multi-Party Computation Security",
-    description: "MPC wallet guide comparing Fireblocks, ZenGo, Coinbase WaaS, Lit Protocol, Dfns. Learn how MPC differs from multisig, threshold signing, and no-seed-phrase benefits.",
+    description: "MPC wallet guide comparing Fireblocks, ZenGo, Coinbase WaaS, Lit Protocol, Dfns. Learn how MPC differs from multisig, threshold signing, and no-seed-phrase",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
     url: "https://degen0x.com/wallets/best-wallet-for-mpc-security",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best MPC Wallet: Multi-Party Computation Security",
-    description: "MPC wallet guide comparing Fireblocks, ZenGo, Coinbase WaaS, Lit Protocol, Dfns. Learn how MPC differs from multisig, threshold signing, and no-seed-phrase benefits.",
+    description: "MPC wallet guide comparing Fireblocks, ZenGo, Coinbase WaaS, Lit Protocol, Dfns. Learn how MPC differs from multisig, threshold signing, and no-seed-phrase",
     image: "https://degen0x.com/og-wallets.svg",
   },
   alternates: {

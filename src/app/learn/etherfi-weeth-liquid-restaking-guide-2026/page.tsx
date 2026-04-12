@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "ether.fi Guide 2026 — weETH, Liquid Restaking & Cash Card | degen0x",
-  description:
-    "Complete 2026 guide to ether.fi: how weETH became the dominant liquid restaking token (LRT), native restaking on EigenLayer, the Liquid vault, Cash debit card, ETHFI tokenomics, and risks.",
+  title: "ether.fi Guide 2026 — weETH, Liquid Restaking & Cash Card",
+  description: "Complete 2026 guide to ether.fi: how weETH became the dominant liquid restaking token (LRT), native restaking on EigenLayer, the Liquid vault, Cash debit card,",
   keywords: [
     "ether.fi",
     "weETH",

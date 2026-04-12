@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Stablecoin Yield Comparison Tool 2026 | Best USDC, USDT, DAI Returns',
+  title: "Stablecoin Yield Comparison Tool 2026 | Best USDC, USDT,",
   description: 'Compare stablecoin yields across Aave, Compound, MorphoBlue, Spark DSR, and Nexo. Find USDC APY 4-8%, real-time rates, and risk assessment.',
   keywords: ['stablecoin yield', 'USDC APY', 'USDT yield', 'DAI DSR', 'Aave yield', 'Compound lending', 'MorphoBlue', 'DeFi yields'],
   openGraph: {

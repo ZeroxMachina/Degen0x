@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Celsius Alternatives 2026 | Nexo, YouHodler, Ledn, Aave, Compound, MakerDAO',
+  title: "Celsius Alternatives 2026 | Nexo, YouHodler, Ledn, Aave,",
   description: 'Safe Celsius alternatives: Nexo, YouHodler, Ledn, Aave, Compound, MakerDAO. Compare rates, insurance, minimum deposits, proof of reserves after CeFi collapse.',
   keywords: ['Celsius alternative', 'crypto lending', 'Nexo', 'YouHodler', 'Ledn', 'Aave', 'Compound', 'MakerDAO', 'DeFi lending'],
   openGraph: {

@@ -6,8 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Looping & Leveraged Yield Strategies Guide 2026 | Degen0x',
-  description: 'Master DeFi looping (recursive borrowing) strategies. Learn yield amplification, points farming, RWA looping, liquidation risks, and top platforms like Loopscale, Zona, and Contango.',
+  title: "DeFi Looping & Leveraged Yield Strategies Guide 2026 |",
+  description: "Master DeFi looping (recursive borrowing) strategies. Learn yield amplification, points farming, RWA looping, liquidation risks, and top platforms like",
   keywords: 'DeFi looping, leveraged yield, recursive borrowing, liquidation, Loopscale, Zona, Contango, yield farming, RWA looping, cryptocurrency',
   openGraph: {
     title: 'DeFi Looping & Leveraged Yield Strategies Guide 2026',

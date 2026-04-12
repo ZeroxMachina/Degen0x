@@ -7,9 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Oracles Explained: Chainlink vs Pyth vs API3 (2026 Guide) | degen0x",
-  description:
-    "Understand blockchain oracles and how they power DeFi. Compare Chainlink (60%+ market share, $66B TVS), Pyth Network (ultra-fast trading data), API3 (first-party oracles), and RedStone.",
+  title: "Crypto Oracles Explained: Chainlink vs Pyth vs API3 (2026",
+  description: "Understand blockchain oracles and how they power DeFi. Compare Chainlink (60%+ market share, $66B TVS), Pyth Network (ultra-fast trading data), API3",
   openGraph: {
     title: "Crypto Oracles Explained: Chainlink vs Pyth vs API3 (2026)",
     description: "How blockchain oracles work and which ones matter. Chainlink vs Pyth vs API3 vs RedStone — market share, architecture, and investment thesis.",
@@ -26,7 +25,8 @@ export const metadata: Metadata = {
     description: "Chainlink controls 60%+ of oracle market. But Pyth, API3, and RedStone are coming for its throne. Full comparison inside.",
     images: ["https://degen0x.com/api/og?title=Crypto+Oracles+Explained:+Chainlink+vs+Pyth+vs+API3&category=Learn&type=learn"],
   },
-};
+
+  alternates: { canonical: "/learn/crypto-oracles-guide-2026" }};
 
 export default function CryptoOraclesGuidePage() {
   return (
@@ -275,9 +275,9 @@ export default function CryptoOraclesGuidePage() {
           { q: "Which oracle should developers use?", a: "For general DeFi (lending, stablecoins, RWA): Chainlink. For trading-focused apps (perps, options, DEXs on Solana): Pyth. For applications needing provable data sourcing: API3. Many protocols use multiple oracles as fallbacks for maximum security." },
           { q: "What is Oracle Extractable Value (OEV)?", a: "OEV is the value created when oracle price updates trigger on-chain actions like liquidations. Traditionally, MEV bots capture this value. API3's OEV auctions and similar mechanisms let protocols recapture this leaked value — potentially worth billions annually across DeFi." },
         ].map((faq) => (
-          <details key={faq.q} className="glass rounded-lg p-4 mb-3" style={{ border: "1px solid var(--color-border)" }}>
-            <summary className="text-sm font-bold cursor-pointer" style={{ color: "var(--color-text)" }}>{faq.q}</summary>
-            <p className="text-xs mt-2" style={{ color: "var(--color-text-secondary)" }}>{faq.a}</p>
+          <details key={faq.question} className="glass rounded-lg p-4 mb-3" style={{ border: "1px solid var(--color-border)" }}>
+            <summary className="text-sm font-bold cursor-pointer" style={{ color: "var(--color-text)" }}>{faq.question}</summary>
+            <p className="text-xs mt-2" style={{ color: "var(--color-text-secondary)" }}>{faq.answer}</p>
           </details>
         ))}
 

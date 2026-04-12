@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'x402 Protocol: HTTP Payment Standard for AI Agent Payments 2026 | degen0x',
-  description: 'Complete guide to x402 Protocol — the HTTP 402 payment standard for autonomous AI agents to pay for API access using crypto and stablecoins. Learn architecture, payment flows, ecosystem support from Coinbase, Cloudflare, and the Linux Foundation.',
+  title: "x402 Protocol: HTTP Payment Standard for AI Agent Payments",
+  description: "Complete guide to x402 Protocol — the HTTP 402 payment standard for autonomous AI agents to pay for API access using crypto and stablecoins. Learn",
   keywords: [
     'x402 protocol',
     'HTTP 402',

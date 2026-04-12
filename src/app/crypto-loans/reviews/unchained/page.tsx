@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Unchained Review (${CURRENT_YEAR}): Bitcoin Loans with Key Control | ${SITE_NAME}`,
   description: "In-depth Unchained review covering collaborative custody Bitcoin loans, multisig security, rates, and how it compares to custodial crypto lenders.",
-};
+  alternates: { canonical: "/crypto-loans/reviews/unchained" }};
 
 export default function UnchainedReview() {
   return (

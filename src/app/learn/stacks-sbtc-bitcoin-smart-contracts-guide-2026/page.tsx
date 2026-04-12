@@ -8,8 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Stacks & sBTC Guide 2026: Bitcoin Smart Contracts, DeFi & the Satoshi Upgrades | degen0x",
-  description: "Master Stacks and sBTC in 2026. Learn how Stacks brings smart contracts to Bitcoin, how 1:1 sBTC works, Clarity language, Satoshi Upgrades (ZK minting, Dual Stacking), PoX consensus, and the competitive landscape. Comprehensive guide with metrics, dApps, and risks.",
+  title: "Stacks & sBTC Guide 2026: Bitcoin Smart Contracts, DeFi &",
+  description: "Master Stacks and sBTC in 2026. Learn how Stacks brings smart contracts to Bitcoin, how 1:1 sBTC works, Clarity language, Satoshi Upgrades (ZK minting, Dual",
   keywords: "Stacks, sBTC, Bitcoin smart contracts, Bitcoin L2, Clarity language, Bitcoin DeFi, PoX consensus, STX token, Bitcoin scaling, Satoshi Upgrades",
   openGraph: {
     title: "Stacks & sBTC Guide 2026: Bitcoin Smart Contracts & the Satoshi Upgrades",
@@ -33,7 +33,8 @@ export const metadata: Metadata = {
     title: "Stacks & sBTC Guide 2026: Bitcoin Smart Contracts & Satoshi Upgrades",
     description: "Learn Stacks, sBTC, Clarity language, PoX consensus, and the Satoshi Upgrades. Comprehensive Bitcoin DeFi guide.",
   },
-};
+
+  alternates: { canonical: "/learn/stacks-sbtc-bitcoin-smart-contracts-guide-2026" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -784,9 +785,9 @@ export default function StacksSBTCGuidePage() {
           <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20 }}>Frequently Asked Questions</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             {FAQ_DATA.map((faq) => (
-              <div key={faq.q} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 20 }}>
-                <h3 style={{ fontSize: 15, fontWeight: 800, color: S.blue, marginBottom: 10 }}>Q: {faq.q}</h3>
-                <p style={{ fontSize: 14, color: S.text2, lineHeight: 1.75, margin: 0 }}>{faq.a}</p>
+              <div key={faq.question} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 20 }}>
+                <h3 style={{ fontSize: 15, fontWeight: 800, color: S.blue, marginBottom: 10 }}>Q: {faq.question}</h3>
+                <p style={{ fontSize: 14, color: S.text2, lineHeight: 1.75, margin: 0 }}>{faq.answer}</p>
               </div>
             ))}
           </div>

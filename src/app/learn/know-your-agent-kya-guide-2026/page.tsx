@@ -8,12 +8,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Know Your Agent (KYA): AI Agent Identity & Verification Guide 2026 | degen0x",
-  description: "Learn how Know Your Agent (KYA) frameworks verify AI agent identity on-chain. Covers Digital Agent Passports, agent wallets, KYA vs KYC, key protocols, and what it means for DeFi in 2026.",
+  title: "Know Your Agent (KYA): AI Agent Identity & Verification",
+  description: "Learn how Know Your Agent (KYA) frameworks verify AI agent identity on-chain. Covers Digital Agent Passports, agent wallets, KYA vs KYC, key protocols, and",
   keywords: ["Know Your Agent", "KYA", "AI agent identity", "Digital Agent Passport", "agent wallets", "AI DeFi", "agentic commerce", "KYA vs KYC", "ERC-8004", "AI crypto 2026"],
   openGraph: {
-    title: "Know Your Agent (KYA): AI Agent Identity & Verification Guide 2026 | degen0x",
-    description: "Learn how Know Your Agent (KYA) frameworks verify AI agent identity on-chain. Covers Digital Agent Passports, agent wallets, KYA vs KYC, key protocols, and what it means for DeFi in 2026.",
+    title: "Know Your Agent (KYA): AI Agent Identity & Verification",
+    description: "Learn how Know Your Agent (KYA) frameworks verify AI agent identity on-chain. Covers Digital Agent Passports, agent wallets, KYA vs KYC, key protocols, and",
     url: "https://degen0x.com/learn/know-your-agent-kya-guide-2026",
     type: "article",
     publishedTime: "2026-04-01T00:00:00Z",
@@ -32,12 +32,13 @@ export const metadata: Metadata = {
     title: "Know Your Agent (KYA) Guide 2026 | degen0x",
     description: "Verify AI agent identity on-chain with KYA frameworks, Digital Agent Passports, and trusted identity standards for autonomous agents.",
   },
-};
+
+  alternates: { canonical: "/learn/know-your-agent-kya-guide-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "Know Your Agent (KYA): AI Agent Identity & Verification Guide 2026",
-  description: "Learn how Know Your Agent (KYA) frameworks verify AI agent identity on-chain. Covers Digital Agent Passports, agent wallets, KYA vs KYC, key protocols, and what it means for DeFi in 2026.",
+  description: "Learn how Know Your Agent (KYA) frameworks verify AI agent identity on-chain. Covers Digital Agent Passports, agent wallets, KYA vs KYC, key protocols, and",
   url: "https://degen0x.com/learn/know-your-agent-kya-guide-2026",
   datePublished: "2026-04-01T00:00:00Z",
   author: "degen0x Team",
@@ -489,6 +490,56 @@ export default function KYAGuide() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

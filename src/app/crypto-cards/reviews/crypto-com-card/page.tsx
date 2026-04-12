@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Crypto.com Visa Card Review (${CURRENT_YEAR}): Cashback, Tiers & Pros/Cons | degen0x`,
   description: "In-depth Crypto.com Visa card review covering tiered cashback rewards, CRO staking requirements, premium perks, and whether it is worth the investment.",
-};
+  alternates: { canonical: "/crypto-cards/reviews/crypto-com-card" }};
 
 export default function CryptoComCardReviewPage() {
   return (

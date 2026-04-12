@@ -1,10 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { CRYPTO_LOAN_PRODUCTS } from "@/data/crypto-loans";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "makerdao")!;
 
-export const metadata: Metadata = { title: "MakerDAO Review 2026: DAI Borrowing, Vaults & Analysis", description: "In-depth MakerDAO review covering DAI borrowing, Vault mechanics, stability fees, and whether Maker is right for your DeFi lending needs. Updated March 2026." };
+export const metadata: Metadata = { title: "MakerDAO Review 2026: DAI Borrowing, Vaults & Analysis", description: "In-depth MakerDAO review covering DAI borrowing, Vault mechanics, stability fees, and whether Maker is right for your DeFi lending needs. Updated March 2026." ,
+  alternates: { canonical: "/crypto-loans/reviews/makerdao" }};
 
 export default function MakerDAOReview() {
   return (

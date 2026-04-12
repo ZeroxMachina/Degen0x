@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -19,7 +20,7 @@ const breadcrumbs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Decentralized GPU Compute Networks 2026 — Akash, Render, io.net | degen0x",
+  title: "Decentralized GPU Compute Networks 2026 — Akash, Render,",
   description: "Compare decentralized GPU networks like Akash, Render, io.net and Grass. Learn how DePIN competes with AWS at 60-80% lower cost for AI compute in 2026.",
   keywords: ["decentralized gpu", "decentralized compute", "akash network", "render network", "io.net", "grass crypto", "depin gpu", "ai compute crypto", "decentralized ai infrastructure 2026"],
   openGraph: {
@@ -36,7 +37,8 @@ export const metadata: Metadata = {
     title: "Decentralized GPU Networks 2026",
     description: "How DePIN is challenging AWS with 60-80% cheaper AI compute. Akash, Render, io.net & Grass compared.",
   },
-};
+
+  alternates: { canonical: "/learn/decentralized-gpu-compute-networks-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "Decentralized GPU & Compute Networks Guide 2026",
@@ -308,6 +310,56 @@ export default function DecentralizedGPUComputeGuidePage() {
         />
       </article>
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

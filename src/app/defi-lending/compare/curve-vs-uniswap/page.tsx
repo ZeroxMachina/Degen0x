@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Curve vs Uniswap ${CURRENT_YEAR}: Which DEX Is Better?`,
   description: `Detailed comparison of Curve vs Uniswap in ${CURRENT_YEAR}. Compare liquidity, fees, stablecoin trading, concentrated liquidity, and which DEX is right for your needs.`,
-};
+  alternates: { canonical: "/defi-lending/compare/curve-vs-uniswap" }};
 
 const items: ComparisonItem[] = [
   { name: "Curve Finance", slug: "curve", rating: 4.7, affiliateUrl: "https://degen0x.com/go/curve", features: { "TVL": "$3B+", "Chains": "10+", "Specialization": "Stablecoins & pegged assets", "Fee Model": "0.01-0.04% swap fees", "AMM Type": "StableSwap + CryptoSwap", "Governance Token": "CRV (vote-locking)", "LP Experience": "Passive, gauge rewards", "Unique Feature": "Lowest slippage for stable pairs" } },
@@ -28,7 +30,14 @@ const faqs: FAQ[] = [
 export default function CurveVsUniswapPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Curve vs Uniswap", href: "/defi-lending/compare/curve-vs-uniswap" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Curve vs Uniswap", href: "/defi-lending/compare/curve-vs-uniswap" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Curve vs Uniswap: Full Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -62,6 +71,57 @@ export default function CurveVsUniswapPage() {
         <p className="text-[var(--color-text-secondary)]">CRV&apos;s vote-locking mechanism (veCRV) creates strong incentive alignment. Locking CRV for up to 4 years boosts LP rewards and grants voting power over emission allocations. This created the Curve Wars ecosystem where protocols compete for veCRV influence. UNI governance is more straightforward, with token holders voting on protocol changes. Uniswap has significant protocol fee revenue potential that has not yet been fully activated through governance.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/curve Vs Uniswap", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/curve-vs-uniswap"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

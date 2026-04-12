@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Data Availability Sampling Explained: Light Nodes & DA Layers | degen0x',
+  title: "Data Availability Sampling Explained: Light Nodes & DA",
   description: 'Learn how Data Availability Sampling enables light nodes without full blocks. Explore Celestia, EigenDA, and KZG commitments.',
   keywords: ['data availability', 'sampling', 'light nodes', 'Celestia', 'EigenDA', 'rollups', 'danksharding'],
   openGraph: {

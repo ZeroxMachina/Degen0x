@@ -1,8 +1,10 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import CurveGuidePage from "./CurveClient";
 
 export const metadata: Metadata = {
-  title: "Curve Finance Guide 2026: Stablecoin DEX & Liquidity | degen0x",
+  title: "Curve Finance Guide 2026: Stablecoin DEX & Liquidity",
   description:
     "Complete guide to Curve Finance — the leading stablecoin DEX and liquidity protocol. Learn about veCRV, crvUSD, Curve pools, and yield strategies in 2026.",
   keywords: [
@@ -40,7 +42,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=Curve+Finance:+Stablecoin+DEX+Guide&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/curve" }};
 
 export default function CurvePage() {
   return <CurveGuidePage />;

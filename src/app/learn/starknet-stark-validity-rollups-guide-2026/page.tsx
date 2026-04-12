@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Starknet & STARK Validity Rollups Guide 2026 — Layer 2, Cairo, Tokenomics | degen0x',
-  description: 'Complete guide to Starknet Layer 2 validity rollup. $530M TVL, 65K daily active users, Cairo language, STARK proofs, Bitcoin staking ($160M), privacy with STRK20, Ekubo AMM. Plus tokenomics, BTCFi, and 2026 outlook.',
+  title: "Starknet & STARK Validity Rollups Guide 2026 — Layer 2,",
+  description: "Complete guide to Starknet Layer 2 validity rollup. $530M TVL, 65K daily active users, Cairo language, STARK proofs, Bitcoin staking ($160M), privacy with",
   keywords: ['Starknet', 'STARK proofs', 'validity rollups', 'Cairo programming', 'Layer 2 Ethereum', 'zero-knowledge rollups', 'STRK token', 'Ekubo DEX', 'Bitcoin staking', 'appchains', 'privacy blockchain'],
   openGraph: {
     type: 'article',

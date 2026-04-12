@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `KeepKey Review (${CURRENT_YEAR}) | degen0x`,
   description: "KeepKey hardware wallet review covering ShapeShift integration, large display, supported assets, and security features.",
-};
+  alternates: { canonical: "/wallets/reviews/keepkey" }};
 
 export default function KeepKeyReviewPage() {
   return (

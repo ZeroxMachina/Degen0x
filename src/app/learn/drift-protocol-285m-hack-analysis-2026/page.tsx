@@ -9,8 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Drift Protocol $285M Hack Analysis: What Went Wrong & How to Stay Safe',
-  description: 'Deep dive into the April 2026 Drift Protocol exploit—the largest DeFi hack of the year. Understand oracle manipulation, admin key vulnerabilities, and how to protect yourself.',
+  title: "Drift Protocol $285M Hack Analysis: What Went Wrong & How",
+  description: "Deep dive into the April 2026 Drift Protocol exploit—the largest DeFi hack of the year. Understand oracle manipulation, admin key vulnerabilities, and how to",
   keywords: [
     'Drift Protocol hack',
     'DeFi security',
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
-  title: 'Drift Protocol $285M Hack Analysis: What Went Wrong & How to Stay Safe',
-  description: 'Deep dive into the April 2026 Drift Protocol exploit—the largest DeFi hack of the year. Understand oracle manipulation, admin key vulnerabilities, and how to protect yourself.',
+  title: "Drift Protocol $285M Hack Analysis: What Went Wrong & How",
+  description: "Deep dive into the April 2026 Drift Protocol exploit—the largest DeFi hack of the year. Understand oracle manipulation, admin key vulnerabilities, and how to",
   url: `${SITE_URL}/learn/drift-protocol-285m-hack-analysis-2026`,
   datePublished: '2026-04-03T00:00:00Z',
   dateModified: '2026-04-03T00:00:00Z',

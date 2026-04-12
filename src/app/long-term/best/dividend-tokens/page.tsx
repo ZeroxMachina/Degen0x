@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,7 +11,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Dividend & Revenue-Sharing Crypto Tokens ${CURRENT_YEAR}`,
   description: "Discover the best crypto tokens that pay dividends or share revenue with holders. Compare yield, sustainability, and long-term potential.",
-};
+  alternates: { canonical: "/long-term/best/dividend-tokens" }};
 
 const products: Product[] = [
   {
@@ -60,7 +62,14 @@ const faqs: FAQ[] = [
 export default function DividendTokensPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Dividend Tokens", href: "/long-term/best/dividend-tokens" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="long-term"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Dividend Tokens", href: "/long-term/best/dividend-tokens" }]} />
       <AffiliateDisclosure />
       <div className="max-w-4xl mb-12">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Dividend & Revenue-Sharing Tokens ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
@@ -69,6 +78,57 @@ export default function DividendTokensPage() {
       </div>
       <div className="space-y-6 mb-12">{products.map((product, index) => (<ProductCard key={product.slug} product={product} rank={index + 1} categorySlug="long-term" />))}</div>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/dividend Tokens", "description": "Discover the best crypto tokens that pay dividends or share revenue with holders. Compare yield, sustainability, and long-term potential.", "url": "https://degen0x.com/long-term/best/dividend-tokens"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

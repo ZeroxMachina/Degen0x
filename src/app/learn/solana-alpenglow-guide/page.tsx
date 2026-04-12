@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Solana Alpenglow Guide 2026 — 150ms Finality Explained | degen0x",
+  title: "Solana Alpenglow Guide 2026 — 150ms Finality Explained",
   description:
     "Solana's Alpenglow upgrade cuts block finality from 12 seconds to 150ms. Learn how Votor and Rotor work, the rollout timeline, and what it means for DeFi apps in 2026.",
   openGraph: {
@@ -35,7 +35,8 @@ export const metadata: Metadata = {
       "Solana's biggest consensus upgrade ever. How Votor + Rotor achieve 100x faster block finality.",
     images: [`${SITE_URL}/og-solana-alpenglow.png`],
   },
-};
+
+  alternates: { canonical: "/learn/solana-alpenglow-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "Solana Alpenglow Guide 2026 — 150ms Finality Explained",

@@ -513,7 +513,7 @@ export default function CryptoConverterPage() {
                     margin: "0 0 0.5rem 0",
                   }}
                 >
-                  {faq.q}
+                  {faq.question}
                 </p>
                 <p
                   style={{
@@ -523,7 +523,7 @@ export default function CryptoConverterPage() {
                     lineHeight: "1.5",
                   }}
                 >
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "BitMart",
   slug: "bitmart",
   rating: 3.5,
-  description:
-    "BitMart is a centralized crypto exchange offering 1,000+ tokens with a focus on altcoin variety, futures trading, and fiat on-ramp accessibility across 180+ countries.",
+  description: "BitMart is a centralized crypto exchange offering 1,000+ tokens with a focus on altcoin variety, futures trading, and fiat on-ramp accessibility across 180+",
   pros: [
     "Over 1,000 listed tokens with frequent new additions",
     "Fiat on-ramp supporting credit/debit cards and bank transfers",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `BitMart Review (${CURRENT_YEAR}) - 1,000+ Tokens & Altcoin Access | ${SITE_NAME}`,
   description: `Complete BitMart review for ${CURRENT_YEAR}. Covers trading fees, 1,000+ supported tokens, security history, futures trading, and user experience.`,
-};
+  alternates: { canonical: "/exchanges/reviews/bitmart" }};
 
 const overview =
   "BitMart is a centralized cryptocurrency exchange founded in 2017, headquartered in the Cayman Islands with offices globally. The platform has grown to serve millions of users across 180+ countries, offering access to over 1,000 cryptocurrencies. BitMart is particularly known for its aggressive approach to listing new tokens, making it a popular destination for traders seeking early access to small-cap and emerging projects.\n\nThe exchange provides spot trading, perpetual futures with up to 100x leverage, an earn section for passive income, and a launchpad for new project token sales. BitMart supports fiat purchases through credit/debit cards and third-party payment providers, making it accessible to users who want to enter the crypto market without first owning cryptocurrency.\n\nBitMart's primary challenge has been its security reputation following a significant $196 million hack in December 2021, which affected its hot wallets for Ethereum and Binance Smart Chain. The exchange committed to reimbursing all affected users and has since upgraded its security infrastructure. Despite this incident, BitMart continues to attract users with its wide token selection and accessible fiat on-ramps.";

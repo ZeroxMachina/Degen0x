@@ -10,13 +10,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto CPAs & Tax Accountants (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Find the best crypto-specialized CPAs and tax accountants for ${CURRENT_YEAR}. Expert accountants who understand DeFi, NFTs, staking, and complex crypto tax situations.`,
-};
+  alternates: { canonical: "/taxes/best/accountants" }};
 
 const cpas = [
   {
     name: "TokenTax CPA Services",
     specialty: "Full-service crypto tax filing",
-    description: "TokenTax combines tax software with access to CPAs who specialize in cryptocurrency. They handle everything from simple trades to complex DeFi positions, margin trading, and multi-entity structures.",
+    description: "TokenTax combines tax software with access to CPAs who specialize in cryptocurrency. They handle everything from simple trades to complex DeFi positions,",
     services: ["Tax return preparation", "DeFi tax analysis", "Audit defense", "Tax planning consultation"],
     priceRange: "$500 - $5,000+",
     bestFor: "Active traders needing full-service filing",
@@ -188,6 +188,57 @@ export default function BestAccountantsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/best/accountants", "description": "TokenTax combines tax software with access to CPAs who specialize in cryptocurrency. They handle everything from simple trades to complex DeFi positions,", "url": "https://degen0x.com/taxes/best/accountants"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

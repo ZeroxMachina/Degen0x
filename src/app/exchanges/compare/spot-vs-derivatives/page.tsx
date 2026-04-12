@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -9,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Spot vs Derivatives Trading: Full Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Complete comparison of spot trading vs derivatives (futures, options, perpetuals) in crypto. Understand risks, fees, leverage, and which suits your strategy.",
-};
+  alternates: { canonical: "/exchanges/compare/spot-vs-derivatives" }};
 
 export default function SpotVsDerivativesPage() {
   return (
@@ -64,6 +65,57 @@ export default function SpotVsDerivativesPage() {
         { question: "What are funding rates?", answer: "Funding rates are periodic payments between long and short traders on perpetual contracts that keep the contract price aligned with the spot price. When funding is positive, longs pay shorts. When negative, shorts pay longs." },
         { question: "Should beginners trade derivatives?", answer: "No, beginners should start with spot trading to learn market fundamentals before considering derivatives. Statistics show that 70-80% of retail derivative traders lose money. Master spot trading first." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/spot Vs Derivatives", "description": "Complete comparison of spot trading vs derivatives (futures, options, perpetuals) in crypto. Understand risks, fees, leverage, and which suits your strategy.", "url": "https://degen0x.com/exchanges/compare/spot-vs-derivatives"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

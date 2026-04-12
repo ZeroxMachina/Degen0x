@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `How to Transfer Crypto Between Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Step-by-step guide to transferring cryptocurrency between wallets in ${CURRENT_YEAR}. Covers sending, receiving, network selection, fees, and avoiding common mistakes.`,
-};
+  alternates: { canonical: "/wallets/learn/how-to-transfer-crypto" }};
 
 const toc = [
   { id: "basics", title: "Transfer Basics", level: 2 },

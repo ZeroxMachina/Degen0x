@@ -4,7 +4,7 @@ import Link from "next/link";
 // SEO Metadata with openGraph, twitter
 export const metadata: Metadata = {
   title: "Solana Token Extensions & Token-2022 Guide 2026 | degen0x",
-  description: "Complete guide to Solana Token Extensions and Token-2022 SPL program. Learn about confidential transfers, transfer hooks, transfer fees, and real-world token features for DeFi, stablecoins, and RWAs.",
+  description: "Complete guide to Solana Token Extensions and Token-2022 SPL program. Learn about confidential transfers, transfer hooks, transfer fees, and real-world token",
   keywords: ["Solana Token Extensions", "Token-2022", "SPL tokens", "confidential transfers", "transfer hooks", "programmable tokens", "Solana tokens", "PYUSD"],
   openGraph: {
     title: "Solana Token Extensions & Token-2022 Guide 2026",

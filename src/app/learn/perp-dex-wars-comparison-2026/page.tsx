@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
@@ -13,10 +14,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title:
-    "Perp DEX Wars 2026: Hyperliquid vs Aster vs Lighter vs Paradex Compared | degen0x",
-  description:
-    "Complete comparison of top perpetual DEXs in 2026. Hyperliquid ($40.7B weekly volume), Aster ($31.78B), Lighter ($25.38B), Paradex ZK perps, and emerging contenders. Volume, open interest, fees, and features breakdown.",
+  title: "Perp DEX Wars 2026: Hyperliquid vs Aster vs Lighter vs",
+  description: "Complete comparison of top perpetual DEXs in 2026. Hyperliquid ($40.7B weekly volume), Aster ($31.78B), Lighter ($25.38B), Paradex ZK perps, and emerging",
   keywords: [
     "best perpetual dex 2026",
     "hyperliquid vs aster vs lighter",
@@ -1070,6 +1069,56 @@ export default function PerpDEXWarsComparison2026() {
           }}
         />
       </article>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

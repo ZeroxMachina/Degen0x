@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Shared Sequencers & Decentralized Sequencing for L2 Rollups Guide 2026 | degen0x',
-  description: 'Complete guide to shared sequencers and decentralized sequencing: Espresso, Radius, based rollups. Understand how L2 rollups are solving centralized sequencer risks.',
+  title: "Shared Sequencers & Decentralized Sequencing for L2 Rollups",
+  description: "Complete guide to shared sequencers and decentralized sequencing: Espresso, Radius, based rollups. Understand how L2 rollups are solving centralized sequencer",
   keywords: ['shared sequencers', 'decentralized sequencing', 'Espresso', 'Radius', 'based rollups', 'L2 sequencing', 'rollup sequencer', 'MEV', 'censorship resistance', 'cross-rollup composability'],
   openGraph: {
     type: 'article',
-    title: 'Shared Sequencers & Decentralized Sequencing for L2 Rollups Guide 2026 | degen0x',
+    title: "Shared Sequencers & Decentralized Sequencing for L2 Rollups",
     description: 'Understand shared sequencers and decentralized sequencing approaches: Espresso, Radius, based rollups. Learn how L2 rollups are solving centralized sequencer risks.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "Backpack Exchange",
   slug: "backpack",
   rating: 4.0,
-  description:
-    "Backpack Exchange is a regulated crypto exchange built by the team behind the Backpack Wallet and Mad Lads NFT collection, offering spot and futures trading with a Solana-native focus.",
+  description: "Backpack Exchange is a regulated crypto exchange built by the team behind the Backpack Wallet and Mad Lads NFT collection, offering spot and futures trading",
   pros: [
     "Built by respected Solana ecosystem team (ex-FTX engineers)",
     "Regulated exchange with VASP license in Dubai",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Backpack Exchange Review (${CURRENT_YEAR}) - Solana-Native CEX | ${SITE_NAME}`,
   description: `Complete Backpack Exchange review for ${CURRENT_YEAR}. Covers Solana integration, trading features, fees, regulation, security, and the team's FTX heritage.`,
-};
+  alternates: { canonical: "/exchanges/reviews/backpack" }};
 
 const overview =
   "Backpack Exchange is a centralized cryptocurrency exchange launched in 2023 by the team behind the Backpack Wallet and the popular Mad Lads NFT collection. The founding team includes former FTX engineers who leveraged their experience to build what they describe as a next-generation regulated exchange. Backpack holds a VASP (Virtual Asset Service Provider) license in Dubai and has been expanding its regulatory footprint.\n\nThe exchange offers spot trading, perpetual futures with leverage, and has rapidly built out its feature set since launch. Backpack has a particularly strong connection to the Solana ecosystem, often being among the first to list Solana-native tokens and providing deep liquidity for SPL assets. The platform has quickly gained traction through a combination of its team's reputation, strategic token listing partnerships, and a clean, modern trading interface.\n\nWhile Backpack is newer than most competitors, the team's proven track record in building crypto infrastructure and their regulatory-first approach have helped establish credibility rapidly. The exchange is best suited for traders who are active in the Solana ecosystem and value a modern platform built by experienced crypto engineers.";

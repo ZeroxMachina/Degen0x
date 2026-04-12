@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Metadata } from "next";
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 

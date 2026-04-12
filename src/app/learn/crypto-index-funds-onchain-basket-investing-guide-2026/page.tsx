@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto Index Funds & On-Chain Basket Investing Guide 2026',
-  description: 'Complete guide to crypto index funds, on-chain basket investing, Index Coop, Enzyme Finance, Set Protocol, and tokenized indices. Learn DPI, MVI, and how to build diversified crypto portfolios.',
+  description: "Complete guide to crypto index funds, on-chain basket investing, Index Coop, Enzyme Finance, Set Protocol, and tokenized indices. Learn DPI, MVI, and how to",
   keywords: [
     'crypto index funds',
     'on-chain basket investing',

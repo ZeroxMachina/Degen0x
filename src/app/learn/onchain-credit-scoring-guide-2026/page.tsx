@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -20,13 +21,13 @@ const S = {
 };
 
 export const metadata: Metadata = {
-  title: "Onchain Credit Scoring Guide 2026 — DeFi Credit Ratings Explained | degen0x",
-  description: "How onchain credit scoring works in 2026. Compare Credora, Spectral & Cred Protocol. Learn how DeFi credit ratings enable undercollateralized lending and unlock trillions in capital.",
+  title: "Onchain Credit Scoring Guide 2026 — DeFi Credit Ratings",
+  description: "How onchain credit scoring works in 2026. Compare Credora, Spectral & Cred Protocol. Learn how DeFi credit ratings enable undercollateralized lending and",
   keywords: "onchain credit scoring, DeFi lending, Credora, Spectral, Cred Protocol, undercollateralized lending, credit ratings, RedStone Stack, DeFi credit risk",
   openGraph: {
     type: "article",
     title: "Onchain Credit Scoring Guide 2026 — DeFi Credit Ratings Explained",
-    description: "How onchain credit scoring works in 2026. Compare Credora, Spectral & Cred Protocol. Learn how DeFi credit ratings enable undercollateralized lending and unlock trillions in capital.",
+    description: "How onchain credit scoring works in 2026. Compare Credora, Spectral & Cred Protocol. Learn how DeFi credit ratings enable undercollateralized lending and",
     publishedTime: "2026-03-25T00:00:00Z",
     authors: ["degen0x"],
     url: "https://degen0x.com/learn/onchain-credit-scoring-guide-2026",
@@ -34,15 +35,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Onchain Credit Scoring Guide 2026 — DeFi Credit Ratings Explained | degen0x",
-    description: "How onchain credit scoring works in 2026. Compare Credora, Spectral & Cred Protocol. Learn how DeFi credit ratings enable undercollateralized lending and unlock trillions in capital.",
+    title: "Onchain Credit Scoring Guide 2026 — DeFi Credit Ratings",
+    description: "How onchain credit scoring works in 2026. Compare Credora, Spectral & Cred Protocol. Learn how DeFi credit ratings enable undercollateralized lending and",
     images: ["https://degen0x.com/og-onchain-credit-scoring-guide-2026.svg"],
   },
-};
+
+  alternates: { canonical: "/learn/onchain-credit-scoring-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   headline: "Onchain Credit Scoring Guide 2026 — DeFi Credit Ratings Explained",
-  description: "How onchain credit scoring works in 2026. Compare Credora, Spectral & Cred Protocol. Learn how DeFi credit ratings enable undercollateralized lending and unlock trillions in capital.",
+  description: "How onchain credit scoring works in 2026. Compare Credora, Spectral & Cred Protocol. Learn how DeFi credit ratings enable undercollateralized lending and",
   datePublished: "2026-03-25",
   dateModified: "2026-03-25",
   author: "degen0x",
@@ -665,7 +667,57 @@ export default function OnchaincreditScoringGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
     
         <script
           type="application/ld+json"

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best NFT Marketplace Comparison 2026: OpenSea vs Blur vs Magic Eden | degen0x',
-  description: 'Compare top NFT marketplaces: OpenSea (2.5% fee, multi-chain), Blur (0% fee, pro traders), Magic Eden (Solana + Bitcoin), Rarible, SuperRare. Volume, fees, features.',
+  title: "Best NFT Marketplace Comparison 2026: OpenSea vs Blur vs",
+  description: "Compare top NFT marketplaces: OpenSea (2.5% fee, multi-chain), Blur (0% fee, pro traders), Magic Eden (Solana + Bitcoin), Rarible, SuperRare. Volume, fees,",
   keywords: ['nft marketplace', 'opensea', 'blur nft', 'magic eden', 'nft trading', 'opensea vs blur', 'best nft platform'],
   openGraph: {
     type: 'article',

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import EASXPAttestation from "@/components/EASXPAttestation";
 
 export const metadata: Metadata = {
-  title: "On-chain XP Attestation — degen0x | Verify Your Crypto Knowledge",
-  description: "Mint a verifiable on-chain credential via Ethereum Attestation Service (EAS). Prove your crypto education, XP earned, and course completions — permanently on Ethereum.",
-};
+  title: "On-chain XP Attestation — degen0x | Verify Your Crypto",
+  description: "Mint a verifiable on-chain credential via Ethereum Attestation Service (EAS). Prove your crypto education, XP earned, and course completions — permanently on",
+  alternates: { canonical: "/xp-attestation" }};
 
 const S = {
   bg: "#0d1117", surface: "#161b22", border: "#30363d",
@@ -14,7 +16,14 @@ const S = {
 export default function XPAttestationPage() {
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
-      <div style={{
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="xp-attestation"
+      />      <div style={{
         background: "linear-gradient(135deg, rgba(99,102,241,0.12) 0%, rgba(13,17,23,0) 60%)",
         borderBottom: `1px solid ${S.border}`, padding: "48px 24px 40px",
       }}>
@@ -39,6 +48,57 @@ export default function XPAttestationPage() {
 
       <div style={{ maxWidth: 760, margin: "40px auto", padding: "0 16px 80px" }}>
         <EASXPAttestation xpAmount={3750} completedCourse="Intermediate DeFi" />
+      </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-chain XP Attestation \u2014 degen0x | Verify Your Crypto", "description": "Mint a verifiable on-chain credential via Ethereum Attestation Service (EAS). Prove your crypto education, XP earned, and course completions \u2014 permanently on", "url": "https://degen0x.com/xp-attestation"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </main>
   );

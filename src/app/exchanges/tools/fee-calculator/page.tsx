@@ -755,9 +755,9 @@ export default function FeeCalculatorPage() {
             a: "Absolutely. Most exchanges operate a tiered fee system where higher 30-day trading volume unlocks lower rates. The VIP rates shown in this calculator represent the discounted tier available to high-volume traders or native token holders."
           },
         ].map((faq) => (
-          <div key={faq.q} className="border-b border-[var(--color-border)] pb-5">
-            <h3 className="text-base font-bold text-[var(--color-text)] mb-2">{faq.q}</h3>
-            <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{faq.a}</p>
+          <div key={faq.question} className="border-b border-[var(--color-border)] pb-5">
+            <h3 className="text-base font-bold text-[var(--color-text)] mb-2">{faq.question}</h3>
+            <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{faq.answer}</p>
           </div>
         ))}
       </div>

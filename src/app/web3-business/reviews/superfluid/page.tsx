@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Superfluid Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Superfluid is a token streaming protocol enabling real-time continuous payment flows for subscriptions and salaries.",
-};
+  alternates: { canonical: "/web3-business/reviews/superfluid" }};
 
 export default function SuperfluidReview() {
   return (

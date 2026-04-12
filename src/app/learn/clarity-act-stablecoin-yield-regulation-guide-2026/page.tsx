@@ -5,7 +5,7 @@ import Link from "next/link";
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "CLARITY Act & Stablecoin Yield Regulation 2026 Guide | degen0x",
+  title: "CLARITY Act & Stablecoin Yield Regulation 2026 Guide",
   description:
     "Complete guide to the CLARITY Act\'s impact on stablecoin yield. Learn how passive yield is banned while activity-based rewards are allowed, affecting DeFi protocols in 2026.",
   keywords: [

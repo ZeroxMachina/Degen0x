@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Account Abstraction ERC-4337 Guide 2026: Smart Accounts vs EOAs | degen0x',
-  description: 'Complete guide to account abstraction (ERC-4337). Learn smart accounts vs EOA wallets, UserOperations, Bundlers, Paymasters, Entry Point. Compare Safe, Biconomy, ZeroDev, Alchemy Account Kit. Gas sponsorship, social recovery, session keys.',
+  title: "Account Abstraction ERC-4337 Guide 2026: Smart Accounts vs",
+  description: "Complete guide to account abstraction (ERC-4337). Learn smart accounts vs EOA wallets, UserOperations, Bundlers, Paymasters, Entry Point. Compare Safe,",
   keywords: ['ERC-4337', 'account abstraction', 'smart accounts', 'Biconomy', 'ZeroDev', 'Alchemy Account Kit', 'Safe', 'paymasters', 'UserOperations', 'gas sponsorship', 'social recovery'],
   openGraph: {
     type: 'article',

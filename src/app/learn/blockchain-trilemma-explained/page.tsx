@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Blockchain Trilemma Explained: Security vs Scalability vs Decentralization | degen0x',
-  description: 'Blockchain trilemma: decentralization, scalability, security tradeoffs. Bitcoin, Ethereum, Solana positioning. Layer 2 solutions, modular blockchains, and Vitalik\'s framework explained 2026.',
+  title: "Blockchain Trilemma Explained: Security vs Scalability vs",
+  description: "Blockchain trilemma: decentralization, scalability, security tradeoffs. Bitcoin, Ethereum, Solana positioning. Layer 2 solutions, modular blockchains, and"s framework explained 2026.',
   keywords: ['blockchain trilemma', 'scalability', 'decentralization', 'security', 'Ethereum', 'Solana', 'Bitcoin', 'Layer 2', 'Vitalik Buterin', 'degen0x'],
   openGraph: {
     type: 'article',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blockchain Trilemma Explained: Security vs Scalability vs Decentralization | degen0x',
+    title: "Blockchain Trilemma Explained: Security vs Scalability vs",
     description: 'Blockchain trilemma: decentralization, scalability, security tradeoffs. Bitcoin, Ethereum, Solana positioning. Layer 2 solutions, modular blockchains, and Vitalik\\',
     image: 'https://degen0x.com/og-default.svg',
   }
@@ -91,7 +91,7 @@ const structuredData = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blockchain Trilemma Explained: Security vs Scalability vs Decentralization | degen0x',
+    title: "Blockchain Trilemma Explained: Security vs Scalability vs",
     description: 'Blockchain trilemma: decentralization, scalability, security tradeoffs. Bitcoin, Ethereum, Solana positioning. Layer 2 solutions, modular blockchains.',
     image: 'https://degen0x.com/og-default.svg',
   }

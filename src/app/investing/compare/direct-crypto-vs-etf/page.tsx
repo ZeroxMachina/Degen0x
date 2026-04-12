@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -6,7 +7,8 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Direct Crypto vs ETF (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Direct crypto purchase vs crypto ETF comparison for ${CURRENT_YEAR}. Self-custody vs brokerage access — fees, flexibility, tax advantages, and which is better for you.` };
+export const metadata: Metadata = { title: `Direct Crypto vs ETF (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Direct crypto purchase vs crypto ETF comparison for ${CURRENT_YEAR}. Self-custody vs brokerage access — fees, flexibility, tax advantages, and which is better for you.` ,
+  alternates: { canonical: "/investing/compare/direct-crypto-vs-etf" }};
 
 const items = [
   { name: "Direct Crypto Purchase", slug: "direct-crypto", rating: 4.5, affiliateUrl: "#", features: { "Ownership": "Direct asset ownership (self-custody possible)", "Access Method": "Crypto exchange or DEX", "Annual Fees": "None (after purchase)", "Trading Hours": "24/7/365", "DeFi Access": "Full (staking, lending, yield farming)", "Staking Yield": "Yes (3-8% depending on asset)", "Tax-Advantaged Accounts": "Limited (crypto IRAs with higher fees)", "Regulatory Protection": "Varies by exchange", "Minimum Investment": "Any amount (fractional)", "Complexity": "Moderate (wallet management, security)" } },
@@ -22,7 +24,14 @@ const faqs = [
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Direct Crypto vs ETF" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Direct Crypto vs ETF" }]} />
       <AffiliateDisclosure />
       <header className="mb-8"><h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Direct Crypto vs ETF ({CURRENT_YEAR})</h1><p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p></header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">The approval of spot Bitcoin and Ethereum ETFs created a new access point for crypto investment alongside traditional direct purchases. Each approach offers distinct advantages: direct crypto provides full ownership, DeFi access, and staking yield, while ETFs offer brokerage convenience, regulatory protection, and tax-advantaged account access. Many sophisticated investors use both methods strategically across different account types.</p>
@@ -43,6 +52,57 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/learn/bitcoin-etf-complete-guide" className="text-blue-600 hover:underline">Bitcoin ETF Complete Guide</Link></li><li><Link href="/investing/learn/ethereum-etf-guide" className="text-blue-600 hover:underline">Ethereum ETF Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/direct Crypto Vs Etf", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/direct-crypto-vs-etf"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

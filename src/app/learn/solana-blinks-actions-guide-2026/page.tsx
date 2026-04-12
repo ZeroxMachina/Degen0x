@@ -8,8 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Solana Blinks & Actions Guide 2026: Shareable Blockchain Links Explained | degen0x",
-  description: "Learn how Solana Actions and Blinks turn any URL into a blockchain transaction. Covers Dialect, use cases, developer setup, and why Blinks matter for crypto UX in 2026.",
+  title: "Solana Blinks & Actions Guide 2026: Shareable Blockchain",
+  description: "Learn how Solana Actions and Blinks turn any URL into a blockchain transaction. Covers Dialect, use cases, developer setup, and why Blinks matter for crypto UX",
   keywords: ["Solana Blinks", "Solana Actions", "blockchain links", "Dialect Solana", "Solana transactions", "crypto UX 2026", "Solana developer guide"],
   openGraph: {
     title: "Solana Blinks & Actions Guide 2026 | degen0x",
@@ -25,12 +25,13 @@ export const metadata: Metadata = {
     title: "Solana Blinks & Actions Guide 2026",
     description: "Turn any URL into a Solana transaction. The complete guide to Blinks and Actions.",
   },
-};
+
+  alternates: { canonical: "/learn/solana-blinks-actions-guide-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "Solana Blinks & Actions Guide 2026: Shareable Blockchain Links Explained",
-  description: "Learn how Solana Actions and Blinks turn any URL into a blockchain transaction. Covers Dialect, use cases, developer setup, and why Blinks matter for crypto UX in 2026.",
+  description: "Learn how Solana Actions and Blinks turn any URL into a blockchain transaction. Covers Dialect, use cases, developer setup, and why Blinks matter for crypto UX",
   url: "https://degen0x.com/learn/solana-blinks-actions-guide-2026",
   datePublished: "2026-03-23T00:00:00Z",
   dateModified: "2026-03-23T00:00:00Z",
@@ -386,6 +387,56 @@ export default function SolanaBlinksActionsGuide() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

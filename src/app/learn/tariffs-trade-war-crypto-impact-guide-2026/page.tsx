@@ -12,9 +12,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Tariffs & Trade Wars: Impact on Crypto Markets 2026 | degen0x",
-  description:
-    "Comprehensive guide on how US tariffs and trade wars impact Bitcoin, crypto markets, and trading strategies in 2026. Includes tariff timeline, transmission channels, and macro scenarios.",
+  title: "Tariffs & Trade Wars: Impact on Crypto Markets 2026",
+  description: "Comprehensive guide on how US tariffs and trade wars impact Bitcoin, crypto markets, and trading strategies in 2026. Includes tariff timeline, transmission",
   keywords:
     "tariffs crypto impact 2026, trade war bitcoin, how tariffs affect cryptocurrency, crypto market crash tariffs, bitcoin inflation hedge tariffs, trade war crypto strategy",
   openGraph: {
@@ -32,7 +31,8 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+
+  alternates: { canonical: "/learn/tariffs-trade-war-crypto-impact-guide-2026" }};
 
 const S = {
   page: { minHeight: "100vh", background: "#0d1117", color: "#e6edf3" } as const,

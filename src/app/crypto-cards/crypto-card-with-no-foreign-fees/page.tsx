@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Cards With No Foreign Transaction Fees | Travel Guide 2026",
+  title: "Crypto Cards With No Foreign Transaction Fees | Travel",
   description: "Best crypto cards with zero foreign transaction fees: no FX markup, no ATM charges, international travel optimization. Compare 2026 options.",
   keywords: ["crypto card no foreign fees", "zero fx crypto card", "travel crypto card", "international crypto card", "no atm fees crypto"],
   openGraph: {
     type: "article",
-    title: "Crypto Cards With No Foreign Transaction Fees | Travel Guide 2026",
+    title: "Crypto Cards With No Foreign Transaction Fees | Travel",
     description: "Best crypto cards with zero foreign transaction fees: no FX markup, no ATM charges, international travel optimization. Compare 2026 options.",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Crypto Cards With No Foreign Transaction Fees | Travel Guide 2026",
+    title: "Crypto Cards With No Foreign Transaction Fees | Travel",
     description: "Best crypto cards with zero foreign transaction fees: no FX markup, no ATM charges, international travel optimization. Compare 2026 options.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
@@ -535,6 +535,56 @@ export default function CryptoCardWithNoForeignFees() {
 
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. Crypto card features and fees change frequently. Always verify current fees and terms on official card provider websites before traveling. degen0x does not endorse any specific card provider.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

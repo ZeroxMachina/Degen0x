@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -10,8 +11,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: `Tensor vs Magic Eden: Which Solana NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
-  description: "Detailed comparison of Tensor vs Magic Eden for Solana NFTs. Compare fees, trading tools, analytics, token rewards, and features to find the best Solana NFT marketplace.",
-};
+  description: "Detailed comparison of Tensor vs Magic Eden for Solana NFTs. Compare fees, trading tools, analytics, token rewards, and features to find the best Solana NFT",
+  alternates: { canonical: "/nfts/compare/tensor-vs-magic-eden" }};
 
 export default function TensorVsMagicEdenPage() {
   const tensor = nftDetailedComparisons["tensor"];
@@ -87,6 +88,57 @@ export default function TensorVsMagicEdenPage() {
         { question: "Which has more Solana NFT listings?", answer: "Both platforms index all Solana NFTs, so the collection coverage is essentially identical. The difference is in the trading experience, tools, and features each platform wraps around that shared collection data." },
         { question: "Is Tensor the Blur of Solana?", answer: "The comparison is apt. Tensor brings professional trading tools and competitive fees to Solana, similar to how Blur disrupted the Ethereum NFT market. Both prioritize trader experience and speed over casual browsing and visual discovery." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/tensor Vs Magic Eden", "description": "Detailed comparison of Tensor vs Magic Eden for Solana NFTs. Compare fees, trading tools, analytics, token rewards, and features to find the best Solana NFT", "url": "https://degen0x.com/nfts/compare/tensor-vs-magic-eden"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

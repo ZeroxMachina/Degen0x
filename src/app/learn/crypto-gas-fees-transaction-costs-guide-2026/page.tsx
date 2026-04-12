@@ -9,8 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Crypto Gas Fees & Transaction Costs Guide 2026 | degen0x",
-  description:
-    "Complete guide to blockchain gas fees. EIP-1559, EIP-4844, L2 savings, gas comparisons (Ethereum, Solana, Polygon, Arbitrum), account abstraction, and practical tips to save money on transaction costs.",
+  description: "Complete guide to blockchain gas fees. EIP-1559, EIP-4844, L2 savings, gas comparisons (Ethereum, Solana, Polygon, Arbitrum), account abstraction, and",
   keywords: [
     "gas fees",
     "transaction costs",
@@ -484,8 +483,8 @@ export default function CryptoGasFeesGuide() {
             { q: "How can I save money on gas fees?", a: "Strategies include: (1) Use Layer 2s for 90%+ savings, (2) Time transactions during low-congestion periods, (3) Use gas trackers to find optimal times, (4) Batch multiple transactions together, (5) Leverage account abstraction for gas sponsorship, (6) Use DEXs and protocols that optimize gas, (7) Bridge assets on L2s to avoid L1 fees." },
           ].map((faq, i) => (
             <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `TurboTax vs Koinly ${CURRENT_YEAR}: Built-In Crypto vs Dedicated Tax Software`,
   description: `Compare TurboTax's built-in crypto features vs Koinly's dedicated crypto tax platform. Which approach is better for crypto tax reporting in ${CURRENT_YEAR}?`,
-};
+  alternates: { canonical: "/taxes/compare/turbotax-vs-koinly" }};
 
 const items: ComparisonItem[] = [
   { name: "TurboTax Crypto", slug: "turbotax-crypto", rating: 3.7, affiliateUrl: "https://degen0x.com/go/turbotax", features: { "Type": "General tax software", "Crypto Integration": "Built-in for select exchanges", "Exchange Support": "20+", "DeFi Support": "Minimal", "Cost Basis Methods": "FIFO, LIFO, HIFO", "International": "US only", "Filing": "Complete tax return filing", "Price": "$89+ (Premier tier)" } },
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function TurboTaxVsKoinlyPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/turbotax-vs-koinly" }, { label: "TurboTax vs Koinly", href: "/taxes/compare/turbotax-vs-koinly" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="taxes"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/turbotax-vs-koinly" }, { label: "TurboTax vs Koinly", href: "/taxes/compare/turbotax-vs-koinly" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">TurboTax vs Koinly: Built-In vs Dedicated Crypto Tax ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -60,6 +69,57 @@ export default function TurboTaxVsKoinlyPage() {
         <p className="text-[var(--color-text-secondary)]">The most common and effective approach for crypto-active taxpayers is to use Koinly for all crypto tax calculations, then export the Form 8949 data and import it into TurboTax for filing your complete tax return. This gives you the best of both worlds: Koinly's comprehensive crypto tracking and TurboTax's reliable tax filing with all other income sources, deductions, and credits handled properly.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/turbotax Vs Koinly", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/turbotax-vs-koinly"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

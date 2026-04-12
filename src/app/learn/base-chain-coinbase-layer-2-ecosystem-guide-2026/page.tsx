@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Base Chain Ecosystem Guide 2026 — Coinbase Layer 2 Explained | degen0x',
+  title: "Base Chain Ecosystem Guide 2026 — Coinbase Layer 2 Explained",
   description: 'Complete guide to Base, Coinbase\'s Ethereum Layer 2 in 2026. Explore the ecosystem, top dApps (Aerodrome, Morpho, Farcaster), TVL growth, and how to get started on Base.',
   keywords: ['Base chain', 'Coinbase Layer 2', 'Base ecosystem', 'Aerodrome Finance', 'Morpho Base', 'Farcaster', 'Base TVL 2026', 'OP Stack', 'Ethereum L2', 'onchain economy'],
   openGraph: {

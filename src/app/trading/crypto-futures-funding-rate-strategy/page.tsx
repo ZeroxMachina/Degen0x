@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Futures Funding Rate Strategy 2026: Earn 20-60% Annual Yield',
+  title: "Crypto Futures Funding Rate Strategy 2026: Earn 20-60%",
   description: 'Master perpetual funding mechanics, cash-and-carry arbitrage, and delta-neutral strategies. Compare Binance, Bybit, dYdX with real APY calculations. 2026 guide.',
   keywords: ['funding rate strategy', 'perpetual futures funding', 'crypto arbitrage', 'funding rate farming', 'Binance funding rate', 'Bybit funding', 'cash-and-carry crypto', 'delta-neutral crypto', 'funding rate APY'],
   openGraph: {
     type: 'article',
-    title: 'Crypto Futures Funding Rate Strategy 2026: Earn 20-60% Annual Yield',
+    title: "Crypto Futures Funding Rate Strategy 2026: Earn 20-60%",
     description: 'Master perpetual funding mechanics, cash-and-carry arbitrage, and delta-neutral strategies. Compare Binance, Bybit, dYdX with real APY calculations.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Futures Funding Rate Strategy 2026: Earn 20-60% Annual Yield',
+    title: "Crypto Futures Funding Rate Strategy 2026: Earn 20-60%",
     description: 'Master perpetual funding mechanics, cash-and-carry arbitrage, and delta-neutral strategies with real APY calculations.',
     image: 'https://degen0x.com/og-trading.svg',
   },

@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Undercollateralized DeFi Lending & On-Chain Credit 2026 Guide | degen0x',
-  description: 'Complete guide to undercollateralized DeFi lending in 2026. Learn how Maple Finance, Goldfinch, Clearpool, and TrueFi are enabling $12-17.5B in on-chain credit without 150%+ collateral.',
+  title: "Undercollateralized DeFi Lending & On-Chain Credit 2026",
+  description: "Complete guide to undercollateralized DeFi lending in 2026. Learn how Maple Finance, Goldfinch, Clearpool, and TrueFi are enabling $12-17.5B in on-chain credit",
   keywords: ['DeFi lending', 'undercollateralized loans', 'Maple Finance', 'Goldfinch', 'Clearpool', 'TrueFi', 'Centrifuge', 'on-chain credit', 'credit scores', 'institutional lending', 'permissioned pools'],
   openGraph: {
     type: 'article',
-    title: 'Undercollateralized DeFi Lending & On-Chain Credit 2026 Guide | degen0x',
+    title: "Undercollateralized DeFi Lending & On-Chain Credit 2026",
     description: 'Complete guide to undercollateralized DeFi lending. Learn how Maple Finance ($4B+), Goldfinch, and emerging protocols are enabling institutional borrowing without massive overcollateralization.',
     publishedTime: '2026-04-02T00:00:00Z',
     modifiedTime: '2026-04-02T00:00:00Z',

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -7,12 +8,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "DeFi Vaults Guide 2026 — Structured Products & Yield Strategies | degen0x",
+  title: "DeFi Vaults Guide 2026 — Structured Products & Yield",
   description: "DeFi vaults automate yield strategies across lending, liquidity, and options. Explore Morpho, Yearn, Pendle, and Sommelier vaults with $12B+ TVL in 2026.",
   keywords: ["defi vaults", "defi structured products", "yield vaults crypto", "morpho vaults", "yearn finance vaults", "pendle yield", "defi vaults guide 2026", "crypto vault strategies"],
   openGraph: {
     type: "article",
-    title: "DeFi Vaults Guide 2026 — Structured Products & Yield Strategies | degen0x",
+    title: "DeFi Vaults Guide 2026 — Structured Products & Yield",
     description: "DeFi vaults automate yield strategies across lending, liquidity, and options. Explore Morpho, Yearn, Pendle, and Sommelier vaults with $12B+ TVL in 2026.",
     publishedTime: "2026-03-23T00:00:00Z",
     images: [{ url: "https://degen0x.com/og-defi-vaults-structured-products-guide-2026.svg", width: 1200, height: 630 }],
@@ -22,12 +23,13 @@ export const metadata: Metadata = {
     title: "DeFi Vaults Guide 2026 — Structured Products & Yield Strategies",
     description: "DeFi vaults automate yield strategies across lending, liquidity, and options. Explore Morpho, Yearn, Pendle, and Sommelier vaults with $12B+ TVL in 2026.",
   },
-};
+
+  alternates: { canonical: "/learn/defi-vaults-structured-products-guide-2026" }};
 
 export default function DeFiVaultsGuide() {
   // Structured data schemas
   const articleSchema = generateArticleSchema({
-    title: "DeFi Vaults Guide 2026 — Structured Products & Yield Strategies | degen0x",
+    title: "DeFi Vaults Guide 2026 — Structured Products & Yield",
     description: "DeFi vaults automate yield strategies across lending, liquidity, and options. Explore Morpho, Yearn, Pendle, and Sommelier vaults with $12B+ TVL in 2026.",
     publishedTime: "2026-03-23T00:00:00Z",
     author: "degen0x",
@@ -750,6 +752,56 @@ export default function DeFiVaultsGuide() {
           }}
         />
       </article>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

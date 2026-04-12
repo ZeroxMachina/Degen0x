@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "MEXC Review 2026: Trading Platform, Fees, Features & More",
   description:
     "Comprehensive MEXC review covering crypto trading platform, altcoin selection, trading features, fees, and security. Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/mexc" }};
 
 export default function MEXCReview() {
   return (

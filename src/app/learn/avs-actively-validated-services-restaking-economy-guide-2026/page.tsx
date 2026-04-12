@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Actively Validated Services (AVS) & Restaking Economy Guide 2026 | degen0x',
-  description:
-    'Master Actively Validated Services and the restaking economy in 2026: EigenLayer, EigenCloud, AVS protocols like EigenDA, AltLayer, Omni Network, Brevis. Learn how Ethereum security extends beyond the base layer.',
+  title: "Actively Validated Services (AVS) & Restaking Economy Guide",
+  description: "Master Actively Validated Services and the restaking economy in 2026: EigenLayer, EigenCloud, AVS protocols like EigenDA, AltLayer, Omni Network, Brevis. Learn",
   keywords: [
     'Actively Validated Services',
     'AVS',

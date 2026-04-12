@@ -7,9 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "BTCFi Yield Strategies 2026 — How to Earn Yield on Bitcoin | degen0x",
-  description:
-    "Explore the best strategies to earn yield on your Bitcoin in 2026. Compare Babylon staking, Lombard LBTC, SolvBTC, BounceBit, and more with real TVL and APY data.",
+  title: "BTCFi Yield Strategies 2026 — How to Earn Yield on Bitcoin",
+  description: "Explore the best strategies to earn yield on your Bitcoin in 2026. Compare Babylon staking, Lombard LBTC, SolvBTC, BounceBit, and more with real TVL and APY",
   keywords: [
     "BTCFi yield strategies",
     "Bitcoin yield 2026",
@@ -49,13 +48,13 @@ export const metadata: Metadata = {
       "https://degen0x.com/og-btcfi-yield-strategies-guide-2026.svg",
     ],
   },
-};
+
+  alternates: { canonical: "/learn/btcfi-yield-strategies-guide-2026" }};
 
 export default function BtcfiYieldStrategiesGuide2026() {
   const articleSchema = generateArticleSchema({
     title: "BTCFi Yield Strategies 2026 — How to Earn Yield on Bitcoin",
-    description:
-      "Explore the best strategies to earn yield on your Bitcoin in 2026. Compare Babylon staking, Lombard LBTC, SolvBTC, BounceBit, and more with real TVL and APY data.",
+    description: "Explore the best strategies to earn yield on your Bitcoin in 2026. Compare Babylon staking, Lombard LBTC, SolvBTC, BounceBit, and more with real TVL and APY",
     url: "https://degen0x.com/learn/btcfi-yield-strategies-guide-2026",
     datePublished: "2026-03-24T00:00:00Z",
     dateModified: "2026-03-24T00:00:00Z",

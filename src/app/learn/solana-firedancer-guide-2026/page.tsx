@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Solana Firedancer Validator Client Guide 2026: Performance, Architecture & Migration | degen0x",
+  title: "Solana Firedancer Validator Client Guide 2026: Performance,",
   description:
     "Complete guide to Solana Firedancer validator client. Understand Jump Crypto's C-based client architecture, 1M+ TPS performance, tile-based design, Frankendancer hybrid, adoption status, staking rewards impact, and migration guide.",
   keywords: [
@@ -47,7 +47,8 @@ export const metadata: Metadata = {
       "Jump Crypto's Firedancer: 1M+ TPS, tile-based architecture, 20%+ mainnet adoption, client diversity, validator rewards. Complete technical and operational guide.",
     images: ["https://degen0x.com/og-solana-firedancer-guide-2026.png"],
   },
-};
+
+  alternates: { canonical: "/learn/solana-firedancer-guide-2026" }};
 
 // ─── Structured Data ───────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

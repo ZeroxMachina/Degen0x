@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Moonwell Review ${CURRENT_YEAR}: Base & Moonbeam Lending Protocol`,
   description:
     "Complete Moonwell review covering lending markets on Base and Moonbeam, yield rates, governance, safety features, and how it compares to alternatives.",
-};
+  alternates: { canonical: "/defi-lending/reviews/moonwell" }};
 
 export default function MoonwellReview() {
   return (

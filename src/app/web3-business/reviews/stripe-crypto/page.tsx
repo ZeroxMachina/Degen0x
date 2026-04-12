@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Stripe Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Stripe Crypto enables businesses to accept cryptocurrency payments through Stripe's established payment infrastructure.",
-};
+  alternates: { canonical: "/web3-business/reviews/stripe-crypto" }};
 
 export default function StripeCryptoReview() {
   return (

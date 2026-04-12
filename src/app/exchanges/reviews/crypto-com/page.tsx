@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,9 +8,8 @@ const product = exchanges.find((e) => e.slug === "crypto-com")!;
 
 export const metadata: Metadata = {
   title: "Crypto.com Review 2026: Fees, Features, Pros & Cons",
-  description:
-    "Our detailed Crypto.com review covers the Visa card, exchange fees, CRO staking tiers, DeFi wallet, and more. See if Crypto.com fits your needs. Updated March 2026.",
-};
+  description: "Our detailed Crypto.com review covers the Visa card, exchange fees, CRO staking tiers, DeFi wallet, and more. See if Crypto.com fits your needs. Updated March",
+  alternates: { canonical: "/exchanges/reviews/crypto-com" }};
 
 export default function CryptoComReview() {
   return (

@@ -6,12 +6,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Restaking Compared: EigenLayer vs Symbiotic vs Karak 2026 | degen0x",
-  description: "Deep comparison of EigenLayer, Symbiotic, and Karak restaking protocols. TVL, market share, supported assets, slashing mechanisms, and which protocol suits your strategy.",
+  title: "Restaking Compared: EigenLayer vs Symbiotic vs Karak 2026",
+  description: "Deep comparison of EigenLayer, Symbiotic, and Karak restaking protocols. TVL, market share, supported assets, slashing mechanisms, and which protocol suits",
   openGraph: {
     type: "article",
     title: "Restaking Compared: EigenLayer vs Symbiotic vs Karak 2026",
-    description: "Deep comparison of EigenLayer, Symbiotic, and Karak restaking protocols. TVL, market share, supported assets, slashing mechanisms, and which protocol suits your strategy.",
+    description: "Deep comparison of EigenLayer, Symbiotic, and Karak restaking protocols. TVL, market share, supported assets, slashing mechanisms, and which protocol suits",
     publishedTime: "2026-03-29T00:00:00Z",
     url: "https://degen0x.com/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026",
     images: [{ url: "https://degen0x.com/og-restaking-comparison-eigenlayer-symbiotic-karak-2026.svg", width: 1200, height: 630 }],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ["https://degen0x.com/og-restaking-comparison-eigenlayer-symbiotic-karak-2026.svg"],
   },
   keywords: ["restaking comparison", "eigenlayer vs symbiotic", "karak restaking", "AVS protocol", "liquid restaking tokens", "ethereum staking"],
-};
+  alternates: { canonical: "/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Restaking Wars 2026: EigenLayer vs Symbiotic vs Karak — Complete Comparison",

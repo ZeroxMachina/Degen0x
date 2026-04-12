@@ -15,8 +15,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Tokenized Stocks Guide 2026: Buy US Equities On-Chain 24/7",
-  description:
-    "A complete guide to tokenized stocks in 2026. How to buy Apple, Tesla, and S&P 500 ETFs on-chain, which protocols to use, regulatory status, risks, and how to earn yield on equities in DeFi.",
+  description: "A complete guide to tokenized stocks in 2026. How to buy Apple, Tesla, and S&P 500 ETFs on-chain, which protocols to use, regulatory status, risks, and how to",
   openGraph: {
     title: "Tokenized Stocks 2026: Own Apple & Tesla On-Chain",
     description:
@@ -41,7 +40,8 @@ export const metadata: Metadata = {
       "The $1B milestone is here. Learn how to buy US stocks on-chain 24/7 with Ondo Finance, Backed, and Dinari.",
     images: [`${SITE_URL}/og-tokenized-stocks-guide.png`],
   },
-};
+
+  alternates: { canonical: "/learn/tokenized-stocks-guide-2026" }};
 
 export default function TokenizedStocksGuidePage() {
   const articleSchema = generateArticleSchema({
@@ -795,6 +795,56 @@ export default function TokenizedStocksGuidePage() {
             })
           }}
         />
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

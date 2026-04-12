@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Accointing Review (${CURRENT_YEAR}): Tax Reporting & Portfolio Tracking | ${SITE_NAME}`,
   description: "In-depth Accointing review covering tax reporting, portfolio tracking, international support, and its integration with Glassnode.",
-};
+  alternates: { canonical: "/taxes/reviews/accointing" }};
 
 export default function AccointingReview() {
   return (

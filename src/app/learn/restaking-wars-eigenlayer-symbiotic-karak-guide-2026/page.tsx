@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Restaking Wars 2026 — EigenLayer vs Symbiotic vs Karak | degen0x',
+  title: "Restaking Wars 2026 — EigenLayer vs Symbiotic vs Karak",
   description: 'Compare EigenLayer, Symbiotic, and Karak: TVL, features, tokenomics, and strategy. Which restaking protocol fits your yield farming goals? Complete 2026 guide.',
   keywords: [
     'restaking wars',

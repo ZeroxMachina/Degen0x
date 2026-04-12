@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Ordinals Market Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Ordinals Market review covering Bitcoin inscription trading, BRC-20 tokens, fees, features, and whether it is the right platform for Bitcoin NFTs.",
-};
+  alternates: { canonical: "/nfts/reviews/ordinals-market" }};
 
 export default function OrdinalsMarketReview() {
   return (

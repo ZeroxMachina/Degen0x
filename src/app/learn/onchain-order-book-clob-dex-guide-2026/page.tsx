@@ -12,9 +12,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Onchain Order Book DEXes 2026: Hyperliquid, dYdX & the CLOB Revolution",
-  description:
-    "Compare the top onchain CLOB DEXes — Hyperliquid, dYdX v4, Vertex, Drift, and more. See how order-book exchanges are replacing AMMs for perps and spot with CEX-grade speed and DeFi-grade custody.",
+  title: "Onchain Order Book DEXes 2026: Hyperliquid, dYdX & the CLOB",
+  description: "Compare the top onchain CLOB DEXes — Hyperliquid, dYdX v4, Vertex, Drift, and more. See how order-book exchanges are replacing AMMs for perps and spot with",
   keywords:
     "CLOB DEX, onchain order book, Hyperliquid, dYdX v4, Vertex Protocol, Drift, perpetual futures DEX, decentralized exchange 2026, order book vs AMM",
   openGraph: {
@@ -44,10 +43,11 @@ export const metadata: Metadata = {
       `${SITE_URL}/og-onchain-order-book-clob-dex-guide-2026.svg`,
     ],
   },
-};
+
+  alternates: { canonical: "/learn/onchain-order-book-clob-dex-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
-  title: "Onchain Order Book DEXes 2026: Hyperliquid, dYdX & the CLOB Revolution",
+  title: "Onchain Order Book DEXes 2026: Hyperliquid, dYdX & the CLOB",
   description:
     "A comprehensive comparison of central limit order book (CLOB) DEXes in March 2026, covering Hyperliquid, dYdX v4, Vertex Protocol, Drift, and Lighter — with architecture breakdowns, fee comparisons, and the case for CLOBs over AMMs.",
   url: `${SITE_URL}/learn/onchain-order-book-clob-dex-guide-2026`,
@@ -736,13 +736,13 @@ export default function OnchainCLOBDexGuidePage() {
                 className="text-sm font-bold mb-2"
                 style={{ color: "var(--color-text)" }}
               >
-                {faq.q}
+                {faq.question}
               </h3>
               <p
                 className="text-sm"
                 style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
               >
-                {faq.a}
+                {faq.answer}
               </p>
             </div>
           ))}
@@ -820,6 +820,56 @@ export default function OnchainCLOBDexGuidePage() {
             })
           }}
         />
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

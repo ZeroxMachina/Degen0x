@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,9 +8,8 @@ const product = exchanges.find((e) => e.slug === "gemini")!;
 
 export const metadata: Metadata = {
   title: "Gemini Review 2026: Fees, Features, Pros & Cons",
-  description:
-    "Our comprehensive Gemini review covers its SOC 2 certification, regulatory compliance, Gemini Earn, credit card, and more. Is Gemini right for you? Updated March 2026.",
-};
+  description: "Our comprehensive Gemini review covers its SOC 2 certification, regulatory compliance, Gemini Earn, credit card, and more. Is Gemini right for you? Updated",
+  alternates: { canonical: "/exchanges/reviews/gemini" }};
 
 export default function GeminiReview() {
   return (

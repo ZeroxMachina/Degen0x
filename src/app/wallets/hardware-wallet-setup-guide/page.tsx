@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Hardware Wallet Setup Guide: Ledger, Trezor, Keystone 2026 | degen0x',
-  description: 'Complete hardware wallet setup guide covering Ledger Nano X/S Plus, Trezor Model T/Safe 3, Keystone Pro. Step-by-step firmware updates, seed phrase backup, and MetaMask integration.',
+  title: "Hardware Wallet Setup Guide: Ledger, Trezor, Keystone 2026",
+  description: "Complete hardware wallet setup guide covering Ledger Nano X/S Plus, Trezor Model T/Safe 3, Keystone Pro. Step-by-step firmware updates, seed phrase backup, and",
   keywords: ['hardware wallet setup', 'ledger nano setup', 'trezor setup', 'cold storage', 'seed phrase backup', 'firmware update'],
   openGraph: {
     title: 'Hardware Wallet Setup Guide | degen0x',

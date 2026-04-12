@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
@@ -6,13 +7,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Airdrops Guide 2026 — How to Find, Qualify & Claim Free Tokens",
-  description: "Complete guide to crypto airdrops in 2026. Learn how to find upcoming airdrops, qualify through protocol interaction, avoid scams, and maximize your airdrop rewards safely.",
+  title: "Crypto Airdrops Guide 2026 — How to Find, Qualify & Claim",
+  description: "Complete guide to crypto airdrops in 2026. Learn how to find upcoming airdrops, qualify through protocol interaction, avoid scams, and maximize your airdrop",
   openGraph: {
     title: "Crypto Airdrops Guide 2026 — degen0x",
     description: "How to find, qualify for, and claim crypto airdrops. Complete strategy guide with safety tips.",
   },
-};
+
+  alternates: { canonical: "/learn/crypto-airdrops-2026" }};
 
 const TOC_ITEMS = [
   { id: "what-are-airdrops", title: "What Are Airdrops?", level: 2 },
@@ -345,6 +347,56 @@ export default function AirdropsGuidePage() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

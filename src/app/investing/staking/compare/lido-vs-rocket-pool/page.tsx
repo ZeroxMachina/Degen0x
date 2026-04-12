@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -10,9 +11,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: `Lido vs Rocket Pool: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
-  description:
-    "Detailed comparison of Lido vs Rocket Pool. Compare fees, decentralization, liquid staking tokens, DeFi integrations, and more to find which ETH staking protocol is right for you.",
-};
+  description: "Detailed comparison of Lido vs Rocket Pool. Compare fees, decentralization, liquid staking tokens, DeFi integrations, and more to find which ETH staking",
+  alternates: { canonical: "/investing/staking/compare/lido-vs-rocket-pool" }};
 
 export default function LidoVsRocketPoolPage() {
   const lido = stakingDetailedComparisons["lido"];
@@ -137,6 +137,57 @@ export default function LidoVsRocketPoolPage() {
           },
         ]}
       />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/staking/compare/lido Vs Rocket Pool", "description": "Detailed comparison of Lido vs Rocket Pool. Compare fees, decentralization, liquid staking tokens, DeFi integrations, and more to find which ETH staking", "url": "https://degen0x.com/investing/staking/compare/lido-vs-rocket-pool"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

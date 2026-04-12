@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'DAO Governance & Onchain Voting 2026: Snapshot, Tally, Aragon & Beyond | degen0x',
-  description: 'Complete DAO governance guide for 2026. Learn how onchain voting works, compare Snapshot, Tally, Aragon. Cover token voting, quadratic voting, decision markets, and the governance crisis.',
+  title: "DAO Governance & Onchain Voting 2026: Snapshot, Tally,",
+  description: "Complete DAO governance guide for 2026. Learn how onchain voting works, compare Snapshot, Tally, Aragon. Cover token voting, quadratic voting, decision",
   keywords: ['DAO governance', 'onchain voting', 'Snapshot', 'Tally', 'Aragon', 'quadratic voting', 'governance tokens', 'conviction voting', 'decision markets', 'Sybil resistance', 'ownership coins', 'governance 2026'],
   openGraph: {
     type: 'article',
@@ -38,7 +38,7 @@ const structuredData = {
     {
       '@type': 'Article',
       headline: 'DAO Governance & Onchain Voting 2026: Snapshot, Tally, Aragon & Beyond',
-      description: 'Complete DAO governance guide for 2026. Learn how onchain voting works, compare Snapshot, Tally, Aragon. Cover token voting, quadratic voting, decision markets, and the governance crisis.',
+      description: "Complete DAO governance guide for 2026. Learn how onchain voting works, compare Snapshot, Tally, Aragon. Cover token voting, quadratic voting, decision",
       image: 'https://degen0x.com/og-dao-governance-guide.svg',
       datePublished: '2026-04-02',
       dateModified: '2026-04-02',
@@ -491,8 +491,8 @@ export default function DAOGovernanceVotingGuidePage() {
             { q: 'How do I participate in DAO governance?', a: 'To participate: (1) Acquire governance tokens from exchanges or airdrops. (2) Delegate your voting power (either to yourself or a trusted delegate). (3) Read proposals on platforms like Snapshot or Tally. (4) Vote on proposals that matter to you. (5) For onchain voting, ensure you have ETH for gas fees. Many DAOs offer delegation and voting rewards for participation.' },
           ].map((faq, i) => (
             <div key={i} style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7 }}>{faq.answer}</p>
             </div>
           ))}
         </section>
@@ -520,6 +520,56 @@ export default function DAOGovernanceVotingGuidePage() {
           </p>
         </div>
       </article>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

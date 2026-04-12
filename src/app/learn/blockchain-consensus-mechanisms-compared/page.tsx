@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Blockchain Consensus Mechanisms Compared 2026 | PoW, PoS, DPoS, PoH | degen0x',
-  description: 'Compare consensus mechanisms: Proof-of-Work (Bitcoin), Proof-of-Stake (Ethereum), DPoS (EOS), Proof-of-History (Solana), Tendermint BFT (Cosmos). Energy use, finality time, MEV implications.',
+  title: "Blockchain Consensus Mechanisms Compared 2026 | PoW, PoS,",
+  description: "Compare consensus mechanisms: Proof-of-Work (Bitcoin), Proof-of-Stake (Ethereum), DPoS (EOS), Proof-of-History (Solana), Tendermint BFT (Cosmos). Energy use,",
   keywords: ['consensus mechanisms', 'Proof-of-Work', 'Proof-of-Stake', 'DPoS', 'Proof-of-History', 'Tendermint', 'MEV', 'Nakamoto consensus', 'degen0x'],
   openGraph: {
     type: 'article',

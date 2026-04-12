@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Mendi Finance Review ${CURRENT_YEAR}: Linea Lending Protocol`,
   description: "Detailed Mendi Finance review covering Compound-style lending on Linea, yield rates, MENDI token rewards, and the protocol's role in the Linea ecosystem.",
-};
+  alternates: { canonical: "/defi-lending/reviews/mendi" }};
 
 export default function MendiReview() {
   return (

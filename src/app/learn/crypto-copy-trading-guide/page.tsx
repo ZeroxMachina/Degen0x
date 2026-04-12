@@ -14,8 +14,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Crypto Copy Trading Guide 2026 — Platforms & Risks | degen0x",
-  description:
-    "Complete guide to crypto copy trading. Learn how it works, best platforms (Bitget, Bybit, eToro), risks, and how to choose traders to copy. Social trading explained.",
+  description: "Complete guide to crypto copy trading. Learn how it works, best platforms (Bitget, Bybit, eToro), risks, and how to choose traders to copy. Social trading",
   keywords: [
     "crypto copy trading",
     "copy trading crypto 2026",
@@ -638,8 +637,8 @@ export default function CryptoCopyTradingGuidePage() {
               },
             ].map((faq, i) => (
               <div key={i} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 10, padding: 18 }}>
-                <div style={{ fontWeight: 700, color: S.text, marginBottom: 10, fontSize: 14 }}>Q: {faq.q}</div>
-                <div style={{ fontSize: 13, color: S.text2, lineHeight: 1.8 }}>A: {faq.a}</div>
+                <div style={{ fontWeight: 700, color: S.text, marginBottom: 10, fontSize: 14 }}>Q: {faq.question}</div>
+                <div style={{ fontSize: 13, color: S.text2, lineHeight: 1.8 }}>A: {faq.answer}</div>
               </div>
             ))}
           </div>

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Trading Bots Comparison 2026: 3Commas, Pionex, Bitsgap, Cryptohopper | degen0x',
-  description: 'Compare top crypto trading bots 2026. See 3Commas vs Pionex vs Cryptohopper vs Bitsgap vs HaasOnline. Pricing, strategies (DCA, grid, arbitrage), backtesting, supported exchanges.',
+  title: "Crypto Trading Bots Comparison 2026: 3Commas, Pionex,",
+  description: "Compare top crypto trading bots 2026. See 3Commas vs Pionex vs Cryptohopper vs Bitsgap vs HaasOnline. Pricing, strategies (DCA, grid, arbitrage), backtesting,",
   keywords: ['crypto trading bots', 'trading bot comparison', '3commas', 'pionex', 'cryptohopper', 'bitsgap', 'grid trading', 'dca bot'],
   openGraph: {
     type: 'article',

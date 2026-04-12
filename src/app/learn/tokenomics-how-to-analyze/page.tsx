@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Tokenomics Analysis: Supply, Vesting, Burn Mechanics | degen0x',
-  description: 'Master tokenomics: BTC 21M cap, ETH deflationary -0.2%/yr post-EIP1559, vesting schedules, team/investor/community distribution, burn mechanisms (BNB quarterly, MKR buyback).',
+  title: "Crypto Tokenomics Analysis: Supply, Vesting, Burn Mechanics",
+  description: "Master tokenomics: BTC 21M cap, ETH deflationary -0.2%/yr post-EIP1559, vesting schedules, team/investor/community distribution, burn mechanisms (BNB",
   keywords: ['tokenomics', 'token supply', 'vesting', 'burn mechanisms', 'token distribution', 'real yield'],
   openGraph: {
     type: 'article',
-    title: 'Crypto Tokenomics Analysis: Supply, Vesting, Burn Mechanics | degen0x',
+    title: "Crypto Tokenomics Analysis: Supply, Vesting, Burn Mechanics",
     description: 'BTC 21M cap, ETH deflationary -0.2%/yr, vesting, distribution, burn mechanics like BNB quarterly burn, MKR buyback+burn.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Tokenomics Analysis: Supply, Vesting, Burn Mechanics | degen0x',
+    title: "Crypto Tokenomics Analysis: Supply, Vesting, Burn Mechanics",
     description: 'BTC 21M cap, ETH deflationary, vesting schedules, burn mechanisms.',
     image: 'https://degen0x.com/og-learn.svg',
   },

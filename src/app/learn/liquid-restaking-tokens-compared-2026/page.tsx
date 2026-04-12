@@ -9,8 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Liquid Restaking Tokens Compared 2026: weETH vs rsETH vs ezETH — Best LRT Guide | degen0x",
-  description: "Complete guide to Liquid Restaking Tokens (LRTs) comparing weETH (Ether.fi), rsETH (Kelp/KernelDAO), ezETH (Renzo), and others. Learn how LRTs work, TVL, yields, risks, and best strategies.",
+  title: "Liquid Restaking Tokens Compared 2026: weETH vs rsETH vs",
+  description: "Complete guide to Liquid Restaking Tokens (LRTs) comparing weETH (Ether.fi), rsETH (Kelp/KernelDAO), ezETH (Renzo), and others. Learn how LRTs work, TVL,",
   keywords: "liquid restaking tokens, LRT, weETH, rsETH, ezETH, EigenLayer, restaking, AVS, Ether.fi, Kelp, Renzo, DeFi yield",
   openGraph: {
     title: "Liquid Restaking Tokens Compared 2026: weETH vs rsETH vs ezETH",
@@ -34,7 +34,8 @@ export const metadata: Metadata = {
     title: "Liquid Restaking Tokens Compared 2026: weETH vs rsETH vs ezETH",
     description: "Compare weETH, rsETH, ezETH — TVL, yields, risks, and DeFi strategies for the top liquid restaking tokens.",
   },
-};
+
+  alternates: { canonical: "/learn/liquid-restaking-tokens-compared-2026" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -893,6 +894,56 @@ export default function LiquidRestakingTokensPage() {
       </article>
 
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

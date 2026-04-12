@@ -13,7 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Ethereum Fusaka & Glamsterdam Upgrade Guide 2026 | Degen0x',
-  description: 'Complete guide to Ethereum&rsquo;s Fusaka upgrade (live Dec 2025) and Glamsterdam (2026). Learn about PeerDAS, EIPs, impact on L2 costs, and the path to full danksharding.',
+  description: "Complete guide to Ethereum&rsquo;s Fusaka upgrade (live Dec 2025) and Glamsterdam (2026). Learn about PeerDAS, EIPs, impact on L2 costs, and the path to full",
   keywords: [
     'Ethereum',
     'Fusaka upgrade',

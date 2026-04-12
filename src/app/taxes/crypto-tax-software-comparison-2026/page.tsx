@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Tax Software 2026: Koinly vs CoinTracker vs TokenTax | degen0x',
-  description: 'Compare crypto tax software 2026: Koinly ($49-$279), CoinTracker ($59-$199), TokenTax ($65-$3,499). DeFi support, exchange integration, TurboTax exports, NFT tracking.',
+  title: "Best Crypto Tax Software 2026: Koinly vs CoinTracker vs",
+  description: "Compare crypto tax software 2026: Koinly ($49-$279), CoinTracker ($59-$199), TokenTax ($65-$3,499). DeFi support, exchange integration, TurboTax exports, NFT",
   keywords: ['crypto tax software 2026', 'best crypto tax calculator', 'Koinly vs CoinTracker', 'crypto tax TurboTax export', 'DeFi tax tracking software'],
   openGraph: {
     title: 'Best Crypto Tax Software 2026: Complete Comparison',
@@ -486,6 +486,56 @@ export default function CryptoTaxSoftwareComparison2026() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

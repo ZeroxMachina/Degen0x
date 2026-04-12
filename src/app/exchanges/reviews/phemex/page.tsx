@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "Phemex",
   slug: "phemex",
   rating: 4.0,
-  description:
-    "Phemex is a derivatives-focused crypto exchange founded by ex-Morgan Stanley executives, offering perpetual futures with up to 100x leverage, spot trading, and a strong mobile experience.",
+  description: "Phemex is a derivatives-focused crypto exchange founded by ex-Morgan Stanley executives, offering perpetual futures with up to 100x leverage, spot trading, and",
   pros: [
     "Professional-grade derivatives platform with fast execution",
     "Founded by former Wall Street professionals with TradFi expertise",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Phemex Review (${CURRENT_YEAR}) - Professional Derivatives Exchange | ${SITE_NAME}`,
   description: `Complete Phemex review for ${CURRENT_YEAR}. Covers derivatives trading, fees, Wall Street team background, mobile app, security, and features.`,
-};
+  alternates: { canonical: "/exchanges/reviews/phemex" }};
 
 const overview =
   "Phemex is a cryptocurrency derivatives exchange launched in 2019 by a team of eight former Morgan Stanley executives. Based in Singapore, the platform was built to bring institutional-grade trading infrastructure to the crypto market, with a focus on speed, reliability, and professional execution. Phemex supports spot trading for 300+ cryptocurrencies and perpetual futures with up to 100x leverage on major pairs.\n\nThe exchange is known for its performance-focused trading engine, which can process up to 300,000 transactions per second with sub-millisecond latency. This makes Phemex particularly attractive for high-frequency and algorithmic traders who need reliable execution during volatile market conditions. The platform also offers spot trading, earn products, and a copy trading feature.\n\nPhemex has grown steadily since its launch, serving millions of users across multiple countries. The founding team's Wall Street background informs the platform's emphasis on risk management, order execution quality, and institutional-grade infrastructure. While Phemex may lack the sheer volume and coin selection of Binance or OKX, it competes strongly on execution quality and derivatives-specific features.";

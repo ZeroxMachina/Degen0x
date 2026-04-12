@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `TokenTax vs CoinLedger ${CURRENT_YEAR}: Which Crypto Tax Software Is Better?`,
   description: `Compare TokenTax vs CoinLedger for crypto tax reporting. Pricing, features, DeFi support, full-service filing, and beginner-friendliness compared in ${CURRENT_YEAR}.`,
-};
+  alternates: { canonical: "/taxes/compare/tokentax-vs-coinledger" }};
 
 const items: ComparisonItem[] = [
   { name: "TokenTax", slug: "tokentax", rating: 4.2, affiliateUrl: "https://degen0x.com/go/tokentax", features: { "Paid Plans": "From $65/year", "Exchanges": "100+", "DeFi Support": "Excellent", "Full-Service Filing": "Yes (VIP plan)", "Margin/Futures": "Yes", "International": "10+ countries", "TurboTax Integration": "CSV export", "CPA Support": "Yes" } },
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function TokenTaxVsCoinLedgerPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/tokentax-vs-coinledger" }, { label: "TokenTax vs CoinLedger", href: "/taxes/compare/tokentax-vs-coinledger" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="taxes"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/tokentax-vs-coinledger" }, { label: "TokenTax vs CoinLedger", href: "/taxes/compare/tokentax-vs-coinledger" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">TokenTax vs CoinLedger: Full Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -60,6 +69,57 @@ export default function TokenTaxVsCoinLedgerPage() {
         <p className="text-[var(--color-text-secondary)]">TokenTax's VIP plan is unique in offering full-service tax preparation where their in-house CPAs handle your entire tax return. This is ideal for users with complex tax situations involving crypto alongside traditional income, investments, and deductions. No other major crypto tax tool offers comparable full-service filing. CoinLedger focuses solely on generating the crypto tax reports, leaving the actual filing to the user or their accountant.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/tokentax Vs Coinledger", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/tokentax-vs-coinledger"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

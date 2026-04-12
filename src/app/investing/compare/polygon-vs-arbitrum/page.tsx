@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -6,7 +7,8 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Polygon vs Arbitrum (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Polygon vs Arbitrum comparison for ${CURRENT_YEAR}. Two leading Ethereum scaling solutions compared on speed, fees, DeFi ecosystem, and token investment thesis.` };
+export const metadata: Metadata = { title: `Polygon vs Arbitrum (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Polygon vs Arbitrum comparison for ${CURRENT_YEAR}. Two leading Ethereum scaling solutions compared on speed, fees, DeFi ecosystem, and token investment thesis.` ,
+  alternates: { canonical: "/investing/compare/polygon-vs-arbitrum" }};
 
 const items = [
   { name: "Polygon (POL)", slug: "polygon", rating: 4.4, affiliateUrl: "#", features: { "Scaling Type": "Multi-solution (PoS, zkEVM, CDK)", "Technology": "PoS sidechain + ZK rollups", "TPS": "~7,000 (PoS chain)", "Avg Transaction Fee": "$0.001-0.01", "EVM Compatibility": "Full", "TVL": "Top 5 L2 ecosystem", "Token": "POL (upgraded from MATIC)", "Security Model": "Own validator set (PoS) + Ethereum (zkEVM)", "Major Partners": "Starbucks, Nike, Disney, Reddit", "Development Kit": "Polygon CDK for app-chains" } },
@@ -22,7 +24,14 @@ const faqs = [
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Polygon vs Arbitrum" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Polygon vs Arbitrum" }]} />
       <AffiliateDisclosure />
       <header className="mb-8"><h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Polygon vs Arbitrum ({CURRENT_YEAR})</h1><p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p></header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">The two largest Ethereum scaling ecosystems take different approaches to solving blockchain throughput limitations. Polygon offers a suite of scaling solutions from PoS sidechains to zkEVM rollups, while Arbitrum focuses on optimistic rollup technology inheriting Ethereum&apos;s full security. Both have massive ecosystems but serve somewhat different markets and use cases.</p>
@@ -43,6 +52,57 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/arbitrum-vs-optimism" className="text-blue-600 hover:underline">Arbitrum vs Optimism</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/polygon Vs Arbitrum", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/polygon-vs-arbitrum"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

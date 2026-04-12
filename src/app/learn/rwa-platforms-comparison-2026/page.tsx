@@ -8,8 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "RWA Platforms Comparison 2026: Ondo vs Centrifuge vs Maple vs Goldfinch | degen0x",
-  description: "Compare the best RWA tokenization platforms in 2026. Ondo Finance, Centrifuge, Maple, and Goldfinch analyzed. $12B+ on-chain RWA, 4.8-12% yields, institutional adoption.",
+  title: "RWA Platforms Comparison 2026: Ondo vs Centrifuge vs Maple",
+  description: "Compare the best RWA tokenization platforms in 2026. Ondo Finance, Centrifuge, Maple, and Goldfinch analyzed. $12B+ on-chain RWA, 4.8-12% yields, institutional",
   keywords: ["RWA", "real world assets", "tokenization", "Ondo Finance", "Centrifuge", "Maple Finance", "Goldfinch", "USDY", "OUSG", "private credit", "institutional DeFi", "yield", "2026"],
   openGraph: {
     title: "RWA Platforms Comparison 2026: Best Tokenization Protocols | degen0x",
@@ -33,7 +33,8 @@ export const metadata: Metadata = {
     title: "RWA Platforms Comparison 2026: Ondo vs Centrifuge vs Maple vs Goldfinch",
     description: "$12B+ on-chain RWA. 4.8-12% yields. Which platform is right for your portfolio?",
   },
-};
+
+  alternates: { canonical: "/learn/rwa-platforms-comparison-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
@@ -551,6 +552,56 @@ export default function RWAPlatformsComparison() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

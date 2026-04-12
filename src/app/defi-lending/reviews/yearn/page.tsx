@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,8 +8,8 @@ const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "yearn")!;
 
 export const metadata: Metadata = {
   title: "Yearn Finance Review 2026: Vault Yields, Fees & Analysis",
-  description: "In-depth Yearn Finance review covering vault strategies, yield performance, fees, security, and whether it is the right yield aggregator for you. Updated March 2026.",
-};
+  description: "In-depth Yearn Finance review covering vault strategies, yield performance, fees, security, and whether it is the right yield aggregator for you. Updated March",
+  alternates: { canonical: "/defi-lending/reviews/yearn" }};
 
 export default function YearnReview() {
   return (

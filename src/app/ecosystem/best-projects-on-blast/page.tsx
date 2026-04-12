@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Best Blast Projects 2026: Thruster DEX, Juice Finance, Orbit Protocol, Particle | degen0x",
-  description: "Top Blast L2 ecosystem projects: Thruster ($40M TVL), Juice Finance stablecoin DEX, Orbit Protocol lending, Particle derivatives. Native 3.4% ETH + 5% USDB yields.",
+  title: "Best Blast Projects 2026: Thruster DEX, Juice Finance,",
+  description: "Top Blast L2 ecosystem projects: Thruster ($40M TVL), Juice Finance stablecoin DEX, Orbit Protocol lending, Particle derivatives. Native 3.4% ETH + 5% USDB",
   keywords: ["Blast", "Thruster", "Juice Finance", "Orbit Protocol", "Particle", "native yields", "L2 DeFi", "OP Stack"],
   openGraph: {
     type: "article",

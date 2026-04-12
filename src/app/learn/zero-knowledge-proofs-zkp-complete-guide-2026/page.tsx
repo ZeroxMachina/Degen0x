@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Zero-Knowledge Proofs Guide 2026: ZKP, SNARKs & STARKs Explained | degen0x',
-  description:
-    'Complete Zero-Knowledge Proofs (ZKP) guide 2026: zk-SNARKs vs zk-STARKs, ZK rollups, Starknet, zkSync, Polygon zkEVM, Scroll, Linea, privacy in DeFi, ZK-ID identity, quantum resistance, and trusted setup explained. Master cryptography powering $28B+ in ZK TVL.',
+  title: "Zero-Knowledge Proofs Guide 2026: ZKP, SNARKs & STARKs",
+  description: "Complete Zero-Knowledge Proofs (ZKP) guide 2026: zk-SNARKs vs zk-STARKs, ZK rollups, Starknet, zkSync, Polygon zkEVM, Scroll, Linea, privacy in DeFi, ZK-ID",
   keywords: [
     'zero-knowledge proofs',
     'ZKP guide',

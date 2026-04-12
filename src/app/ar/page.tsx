@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
 // ─────────────────────────────────────────────
@@ -10,9 +11,8 @@ import Link from "next/link";
 // ─────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "degen0x النسخة العربية — مقارنة منصات العملات الرقمية والمحافظ و DeFi",
-  description:
-    "degen0x هي منصة شاملة لمقارنة العملات الرقمية باللغة العربية. قارن منصات التداول والمحافظ وبروتوكولات DeFi، وتعرف على التنظيم في منطقة MENA والضرائب والأدوات المجانية لاتخاذ قرارات استثمارية حكيمة.",
+  title: "degen0x النسخة العربية — مقارنة منصات العملات الرقمية",
+  description: "degen0x هي منصة شاملة لمقارنة العملات الرقمية باللغة العربية. قارن منصات التداول والمحافظ وبروتوكولات DeFi، وتعرف على التنظيم في منطقة MENA والضرائب والأدوات",
   alternates: { canonical: "https://degen0x.com/ar" },
   openGraph: {
     title: "degen0x النسخة العربية — مقارنة العملات الرقمية والاستثمار",
@@ -179,6 +179,13 @@ export default function ArabicPage() {
   return (
     <div dir="rtl" style={{ background: "var(--color-bg, #0d1117)", minHeight: "100vh", color: "var(--color-text, #e6edf3)" }}>
 
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="ar"
+      />
       {/* ── Hero ── */}
       <section style={{
         background: "linear-gradient(135deg, #6366f108 0%, #06b6d408 50%, #f7931a08 100%)",
@@ -409,6 +416,57 @@ export default function ArabicPage() {
           {" · "}
           <Link href="/" style={{ color: "#8b949e", textDecoration: "none" }}>🌐 English</Link>
         </p>
+      </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x \u0627\u0644\u0646\u0633\u062e\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u2014 \u0645\u0642\u0627\u0631\u0646\u0629 \u0645\u0646\u0635\u0627\u062a \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u0631\u0642\u0645\u064a\u0629", "description": "degen0x \u0647\u064a \u0645\u0646\u0635\u0629 \u0634\u0627\u0645\u0644\u0629 \u0644\u0645\u0642\u0627\u0631\u0646\u0629 \u0627\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u0631\u0642\u0645\u064a\u0629 \u0628\u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629. \u0642\u0627\u0631\u0646 \u0645\u0646\u0635\u0627\u062a \u0627\u0644\u062a\u062f\u0627\u0648\u0644 \u0648\u0627\u0644\u0645\u062d\u0627\u0641\u0638 \u0648\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644\u0627\u062a DeFi\u060c \u0648\u062a\u0639\u0631\u0641 \u0639\u0644\u0649 \u0627\u0644\u062a\u0646\u0638\u064a\u0645 \u0641\u064a \u0645\u0646\u0637\u0642\u0629 MENA \u0648\u0627\u0644\u0636\u0631\u0627\u0626\u0628 \u0648\u0627\u0644\u0623\u062f\u0648\u0627\u062a", "url": "https://degen0x.com/ar"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </div>
   );

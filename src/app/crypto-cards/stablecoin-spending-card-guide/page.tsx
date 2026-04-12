@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Stablecoin Spending Card Guide 2026: Crypto.com, Nexo, Wirex & USDC Cards | degen0x',
-  description: 'Best crypto spending cards for stablecoins: Crypto.com Visa, Nexo card, Wirex USDC card. Auto-conversion at POS, rewards, fees, ATM limits, and tax implications.',
+  title: "Stablecoin Spending Card Guide 2026: Crypto.com, Nexo,",
+  description: "Best crypto spending cards for stablecoins: Crypto.com Visa, Nexo card, Wirex USDC card. Auto-conversion at POS, rewards, fees, ATM limits, and tax",
   keywords: ['stablecoin debit card', 'crypto spending card 2026', 'USDC debit card', 'Crypto.com card', 'Nexo card', 'Wirex card', 'crypto card rewards'],
   openGraph: {
     title: 'Best Stablecoin Spending Cards 2026',

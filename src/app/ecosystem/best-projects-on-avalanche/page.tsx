@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Avalanche Projects 2026: Trader Joe, AAVE, Benqi & More | degen0x',
-  description: 'Complete guide to top Avalanche projects. Explore Trader Joe ($500M TVL), AAVE V3, Benqi lending, GMX, Platypus Finance, subnets, Warp Messaging, and AVAX tokenomics.',
+  title: "Best Avalanche Projects 2026: Trader Joe, AAVE, Benqi & More",
+  description: "Complete guide to top Avalanche projects. Explore Trader Joe ($500M TVL), AAVE V3, Benqi lending, GMX, Platypus Finance, subnets, Warp Messaging, and AVAX",
   keywords: ['Avalanche projects', 'Trader Joe', 'AVAX', 'Benqi', 'Platypus Finance', 'Pangolin', 'Avalanche subnets', 'Warp Messaging', 'AVAX tokenomics'],
   openGraph: {
     type: 'article',

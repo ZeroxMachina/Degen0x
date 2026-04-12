@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Morpho Protocol: The #2 DeFi Lending Protocol Guide 2026',
-  description: 'Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional adoption, and how to earn yields.',
+  description: "Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional",
   keywords: [
     'Morpho Protocol',
     'DeFi lending',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Morpho Protocol: The #2 DeFi Lending Protocol Guide 2026',
-    description: 'Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional adoption, and how to earn yields.',
+    description: "Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional",
     type: 'article',
     url: 'https://degen0x.com/learn/morpho-protocol-defi-lending-guide-2026',
     images: [{
@@ -34,13 +34,14 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Morpho Protocol: The #2 DeFi Lending Protocol Guide 2026',
-    description: 'Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional adoption, and how to earn yields.',
+    description: "Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional",
   },
-};
+
+  alternates: { canonical: "/learn/morpho-protocol-defi-lending-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: 'Morpho Protocol: The #2 DeFi Lending Protocol Guide 2026',
-  description: 'Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional adoption, and how to earn yields.',
+  description: "Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional",
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   authors: ['degen0x Team'],

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Tax Reporting Guide 2026: LP Tokens, Yield, Governance, Mining | degen0x',
-  description: 'Complete DeFi tax guide 2026: LP token entry/exit, yield farming income, governance rewards, liquidity mining, wrapping events, impermanent loss, Aave/Compound interest, cross-chain bridges.',
+  title: "DeFi Tax Reporting Guide 2026: LP Tokens, Yield,",
+  description: "Complete DeFi tax guide 2026: LP token entry/exit, yield farming income, governance rewards, liquidity mining, wrapping events, impermanent loss, Aave/Compound",
   keywords: ['DeFi taxes', 'yield farming tax', 'LP token tax', 'governance token tax', 'impermanent loss', 'Uniswap tax', 'crypto taxes 2026'],
   openGraph: {
     type: 'article',
@@ -493,6 +493,56 @@ export default function DeFiTaxReportingGuide() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

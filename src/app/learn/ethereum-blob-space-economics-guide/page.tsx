@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Ethereum Blob Space Guide 2026: EIP-4844, Data Availability & L2 Fee Economics | degen0x",
+  title: "Ethereum Blob Space Guide 2026: EIP-4844, Data Availability",
   description: "Understand how Ethereum's blob space works. Learn about EIP-4844, blob gas fees, how blobs make L2s cheap, PeerDAS scaling, and the full Danksharding roadmap.",
   keywords: ["ethereum blob space", "EIP-4844", "data availability", "L2 fees", "blob gas", "proto-danksharding", "PeerDAS"],
   openGraph: {
@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     description: "Learn about EIP-4844, blob gas fees, how blobs make L2s cheap, PeerDAS scaling, and the full Danksharding roadmap.",
     images: ["https://degen0x.com/og-ethereum-blob-space-economics-guide.svg"],
   },
-};
+
+  alternates: { canonical: "/learn/ethereum-blob-space-economics-guide" }};
 
 export default function EthereumBlobSpaceGuide() {
   const faqs = [
@@ -504,6 +505,56 @@ export default function EthereumBlobSpaceGuide() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

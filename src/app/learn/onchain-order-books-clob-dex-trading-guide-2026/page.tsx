@@ -6,8 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Onchain Order Books & CLOBs Guide 2026 — Central Limit Order Books DEX Trading | degen0x',
-  description: 'Complete guide to onchain order books and CLOBs (Central Limit Order Books) for DEX trading in 2026. Learn how dYdX v4, Sei, Orderly Network, and Solana CLOBs work. Compare AMMs vs CLOBs, explore hybrid models, and understand the future of onchain trading.',
+  title: "Onchain Order Books & CLOBs Guide 2026 — Central Limit",
+  description: "Complete guide to onchain order books and CLOBs (Central Limit Order Books) for DEX trading in 2026. Learn how dYdX v4, Sei, Orderly Network, and Solana CLOBs",
   keywords: ['CLOBs', 'central limit order books', 'onchain order books', 'dYdX v4', 'Sei', 'Orderly Network', 'Phoenix DEX', 'OpenBook', 'DEX trading', 'AMM vs CLOB', 'hybrid DEX', 'intent-based trading', 'CoW Protocol'],
   openGraph: {
     type: 'article',

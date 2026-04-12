@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Free Crypto Tax Calculator 2026: Koinly, CoinTracker, CryptoTaxCalculator vs TokenTax | degen0x',
+  title: "Best Free Crypto Tax Calculator 2026: Koinly, CoinTracker,",
   description: 'Compare free crypto tax tools: Koinly (25 txns free), CoinTracker (25), CryptoTaxCalculator, TokenTax, CoinLedger. FIFO, LIFO, HIFO cost basis.',
   keywords: ['crypto tax calculator', 'free crypto tax', 'Koinly', 'CoinTracker', 'CryptoTaxCalculator', 'TokenTax', 'crypto tax forms'],
   openGraph: { type: 'article', title: 'Best Crypto Tax Calculator 2026', description: 'Tax calculator comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/tools/crypto-tax-calculator-free', images: [{ url: 'https://degen0x.com/og-tools-tax.svg', width: 1200, height: 630, alt: 'Tax Tools' }] },

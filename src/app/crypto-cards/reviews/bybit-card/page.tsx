@@ -1,14 +1,15 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = cryptoCards.find((c) => c.slug === "bybit-card")!;
 
 export const metadata: Metadata = {
-  title: "Bybit Card Review 2026: Exchange-Linked Spending, Cashback Tiers & Fees",
-  description:
-    "Our in-depth Bybit Card review covers exchange-linked spending, cashback tier system, supported cryptocurrencies, convert-and-spend functionality, and regional availability. Updated March 2026.",
-};
+  title: "Bybit Card Review 2026: Exchange-Linked Spending, Cashback",
+  description: "Our in-depth Bybit Card review covers exchange-linked spending, cashback tier system, supported cryptocurrencies, convert-and-spend functionality, and regional",
+  alternates: { canonical: "/crypto-cards/reviews/bybit-card" }};
 
 export default function BybitCardReview() {
   return (

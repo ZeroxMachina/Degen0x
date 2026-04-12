@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Blob Transactions on Ethereum Explained | Type-3 Transactions, KZG & L2 Costs | degen0x',
-  description: 'Master blob transactions (EIP-4844): Type-3 transactions, 128KB data blobs, KZG commitments, blob gas pricing. Calldata vs blobs cost comparison. L2 cost savings from $0.50 to $0.01.',
+  title: "Blob Transactions on Ethereum Explained | Type-3",
+  description: "Master blob transactions (EIP-4844): Type-3 transactions, 128KB data blobs, KZG commitments, blob gas pricing. Calldata vs blobs cost comparison. L2 cost",
   keywords: ['blob transactions', 'EIP-4844', 'Type-3 transactions', 'KZG', 'blob gas', 'L2 costs', 'blobscriptions'],
   openGraph: {
     title: 'Blob Transactions on Ethereum',

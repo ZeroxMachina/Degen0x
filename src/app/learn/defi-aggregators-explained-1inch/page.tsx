@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Aggregators Explained: 1inch, Jupiter, Paraswap, CowSwap | degen0x',
-  description: 'Master DeFi aggregators: 1inch Pathfinder algorithm, Fusion mode (MEV-protected, gasless), limit orders, DAO governance. Compare 1inch vs Jupiter vs Paraswap vs CowSwap: volume, features, trading mechanics.',
+  title: "DeFi Aggregators Explained: 1inch, Jupiter, Paraswap,",
+  description: "Master DeFi aggregators: 1inch Pathfinder algorithm, Fusion mode (MEV-protected, gasless), limit orders, DAO governance. Compare 1inch vs Jupiter vs Paraswap",
   keywords: ['DeFi aggregators', '1inch', 'Jupiter', 'Paraswap', 'CowSwap', 'DEX routing', 'MEV protection', 'limit orders', 'slippage', 'gas optimization'],
   openGraph: {
     title: 'DeFi Aggregators Explained: 1inch & Competitors',

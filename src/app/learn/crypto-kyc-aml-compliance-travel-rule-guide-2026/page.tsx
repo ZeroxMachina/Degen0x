@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Crypto KYC, AML & Travel Rule Compliance Guide 2026 | degen0x',
-  description: 'Complete guide to KYC, AML, and FATF Travel Rule compliance in crypto 2026. Learn VASP regulations, MiCA enforcement, regulatory fines, and how to stay compliant across jurisdictions.',
+  title: "Crypto KYC, AML & Travel Rule Compliance Guide 2026",
+  description: "Complete guide to KYC, AML, and FATF Travel Rule compliance in crypto 2026. Learn VASP regulations, MiCA enforcement, regulatory fines, and how to stay",
   keywords: ['crypto KYC', 'AML compliance', 'Travel Rule', 'FATF crypto', 'MiCA compliance', 'VASP regulations', 'crypto compliance 2026', 'regulatory fines crypto', 'know your customer crypto'],
   openGraph: {
     type: 'article',
-    title: 'Crypto KYC, AML & Travel Rule Compliance Guide 2026 | degen0x',
+    title: "Crypto KYC, AML & Travel Rule Compliance Guide 2026",
     description: 'Master crypto compliance in 2026. VASPs face same standards as banks. 85 jurisdictions passing Travel Rule, 42 fully implemented. $1.23B in fines in H1 2025.',
     publishedTime: '2026-04-03T00:00:00Z',
     modifiedTime: '2026-04-03T00:00:00Z',

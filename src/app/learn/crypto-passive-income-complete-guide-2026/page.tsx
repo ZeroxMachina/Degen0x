@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Crypto Passive Income Complete Guide 2026 | degen0x',
-  description: 'Master crypto passive income strategies in 2026: staking, liquid staking, DeFi lending, yield farming, restaking, real yield protocols, and more. Real APY figures, risk analysis, and portfolio allocation strategies.',
+  description: "Master crypto passive income strategies in 2026: staking, liquid staking, DeFi lending, yield farming, restaking, real yield protocols, and more. Real APY",
   keywords: [
     'crypto passive income',
     'staking APY',
@@ -377,7 +378,14 @@ const RiskComparisonTable = () => (
 export default function CryptoPassiveIncomeGuide() {
   return (
     <main style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', scrollBehavior: 'smooth' }}>
-      <JsonLd />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <JsonLd />
 
       <style dangerouslySetInnerHTML={{ __html: `
         a:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; border-radius: 4px; }

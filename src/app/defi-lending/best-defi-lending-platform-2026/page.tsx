@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best DeFi Lending Platform 2026: Aave V3 ($12B TVL), Compound, MakerDAO vs Morpho | degen0x',
+  title: "Best DeFi Lending Platform 2026: Aave V3 ($12B TVL),",
   description: 'Compare DeFi lending: Aave V3 ($12B, 8+ chains), Compound V3, MakerDAO/Spark, Morpho, Euler, Venus.',
   keywords: ['defi lending platform', 'best lending protocol 2026', 'Aave V3', 'Compound', 'MakerDAO', 'Morpho lending', 'DeFi APY'],
   openGraph: { type: 'article', title: 'Best DeFi Lending 2026', description: 'Compare DeFi lending platforms', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/defi-lending/best-defi-lending-platform-2026', images: [{ url: 'https://degen0x.com/og-defi.svg', width: 1200, height: 630, alt: 'DeFi Lending' }] },

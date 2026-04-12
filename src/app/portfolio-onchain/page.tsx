@@ -1,16 +1,25 @@
 import OnChainPortfolioAnalytics from '@/components/OnChainPortfolioAnalytics';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import { Metadata } from "next";
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 export const metadata = {
   title: 'On-Chain Portfolio Analytics — Multi-Chain, DeFi & NFT Tracker | degen0x',
   description: 'Track your crypto portfolio across Ethereum, Arbitrum, Base, Polygon & more. See DeFi positions, P&L history, risk scores, and on-chain data in real time.',
-};
+  alternates: { canonical: "/portfolio-onchain" }};
 
 export default function OnChainPortfolioPage() {
   return (
     <main style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
-      <div style={{ borderBottom: "1px solid #30363d", padding: "16px 24px", display: "flex", gap: 8, fontSize: 13, color: "#8b949e" }}>
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="portfolio-onchain"
+      />      <div style={{ borderBottom: "1px solid #30363d", padding: "16px 24px", display: "flex", gap: 8, fontSize: 13, color: "#8b949e" }}>
         <Link href="/" style={{ color: "#8b949e", textDecoration: "none" }}>Home</Link>
         <span>/</span>
         <span style={{ color: "#e6edf3" }}>On-Chain Portfolio</span>
@@ -24,6 +33,57 @@ export default function OnChainPortfolioPage() {
         <OnChainPortfolioAnalytics />
       </div>
       <Footer />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-Chain Portfolio Analytics \u2014 Multi-Chain, DeFi & NFT Tracker | degen0x", "description": "Track your crypto portfolio across Ethereum, Arbitrum, Base, Polygon & more. See DeFi positions, P&L history, risk scores, and on-chain data in real time.", "url": "https://degen0x.com/portfolio-onchain"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Blockchain Gaming & GameFi Guide 2026: Play-to-Own, NFTs & Web3 Games | degen0x',
-  description:
-    'Complete guide to blockchain gaming and GameFi in 2026. Learn how play-to-own models work, explore top games like Illuvium and Big Time, understand gaming infrastructure, AI integration, and NFT mechanics.',
+  title: "Blockchain Gaming & GameFi Guide 2026: Play-to-Own, NFTs &",
+  description: "Complete guide to blockchain gaming and GameFi in 2026. Learn how play-to-own models work, explore top games like Illuvium and Big Time, understand gaming",
   keywords: [
     'blockchain gaming',
     'GameFi',

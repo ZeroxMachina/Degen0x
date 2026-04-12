@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Uphold Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Uphold review covering multi-asset trading, fees, supported cryptocurrencies, Anything-to-Anything feature, and whether Uphold suits your needs.",
-};
+  alternates: { canonical: "/exchanges/reviews/uphold" }};
 
 export default function UpholdReview() {
   return (

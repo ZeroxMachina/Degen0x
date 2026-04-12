@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius | degen0x',
-  description: 'Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music royalty tokens.',
+  title: "Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius",
+  description: "Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music",
   keywords: ['music nft platforms', 'Sound.xyz', 'Catalog', 'Audius', 'Royal platform', 'music royalty nft', 'artist nft', 'music streaming blockchain'],
   openGraph: {
     title: 'Music NFT Platforms 2026',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius | degen0x',
-    description: 'Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music royalty tokens.',
+    title: "Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius",
+    description: "Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music",
     image: 'https://degen0x.com/og-default.svg',
   }
 };
@@ -89,14 +89,14 @@ const structuredData = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius | degen0x',
-    description: 'Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music royalty tokens.',
+    title: "Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius",
+    description: "Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music",
     image: 'https://degen0x.com/og-default.svg',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius | degen0x',
-    description: 'Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music royalty tokens.',
+    title: "Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius",
+    description: "Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music",
     image: 'https://degen0x.com/og-default.svg',
   }
 };

@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Exchange Security Comparison 2026: Coinbase vs Kraken vs Gemini | degen0x',
+  title: "Crypto Exchange Security Comparison 2026: Coinbase vs",
   description: 'Compare cold storage, insurance, SOC 2, and proof of reserves across Coinbase (98%), Kraken (95%), Binance SAFU ($1B), Gemini, Crypto.com.',
   keywords: ['crypto exchange security', 'cold storage', 'SOC 2 compliance', 'proof of reserves', 'Coinbase security', 'Kraken security', 'Gemini insurance'],
   openGraph: { type: 'article', title: 'Crypto Exchange Security Comparison 2026', description: 'Compare security across top exchanges', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/exchanges/crypto-exchange-security-comparison', images: [{ url: 'https://degen0x.com/og-exchanges.svg', width: 1200, height: 630, alt: 'Security Comparison' }] },

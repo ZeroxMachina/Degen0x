@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Atomic Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "Comprehensive Atomic Wallet review covering features, security, atomic swaps, staking, and supported assets. Is Atomic Wallet right for you?",
-};
+  alternates: { canonical: "/wallets/reviews/atomic" }};
 
 export default function AtomicWalletReviewPage() {
   return (

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Best Crypto Tax Software Compared (${CURRENT_YEAR}): Complete Comparison`,
   description: `Compare all major crypto tax software platforms side by side. Koinly, CoinTracker, CryptoTaxCalculator, TokenTax, ZenLedger, CoinLedger, and more rated and ranked.`,
-};
+  alternates: { canonical: "/taxes/compare/crypto-tax-software-comparison" }};
 
 const items: ComparisonItem[] = [
   { name: "Koinly", slug: "koinly", rating: 4.5, affiliateUrl: "https://degen0x.com/go/koinly", features: { "Price": "From $49/yr", "Exchanges": "800+", "DeFi": "Excellent", "International": "20+ countries", "Best For": "International users, DeFi", "TurboTax": "CSV export" } },
@@ -31,7 +33,14 @@ const faqs: FAQ[] = [
 export default function CryptoTaxSoftwareComparisonPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/crypto-tax-software-comparison" }, { label: "All Software Compared", href: "/taxes/compare/crypto-tax-software-comparison" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="taxes"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/crypto-tax-software-comparison" }, { label: "All Software Compared", href: "/taxes/compare/crypto-tax-software-comparison" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Crypto Tax Software Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -65,6 +74,57 @@ export default function CryptoTaxSoftwareComparisonPage() {
         <p className="text-[var(--color-text-secondary)]">For non-US users, international support is critical. Koinly and CryptoTaxCalculator both support over 20 countries with country-specific tax calculations and forms. CoinPanda supports 65 countries. CoinTracker, CoinLedger, and ZenLedger are primarily US-focused. International users should verify that their specific country's tax rules are implemented, not just listed as a supported export format.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/crypto Tax Software Comparison", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/crypto-tax-software-comparison"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

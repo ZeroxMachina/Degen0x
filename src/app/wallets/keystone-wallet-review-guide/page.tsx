@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Keystone wallet review & QR-code signing guide",
-  description: "Keystone hardware wallet review: air-gapped security, QR-code signing, Keystone 3 Pro ($149) vs Essential ($99), open-source firmware, multi-chain support, comparison vs Ledger/Trezor.",
+  description: "Keystone hardware wallet review: air-gapped security, QR-code signing, Keystone 3 Pro ($149) vs Essential ($99), open-source firmware, multi-chain support,",
   keywords: [
     "Keystone wallet review",
     "Keystone 3 Pro",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     title: "Keystone wallet review & QR-code signing guide",
-    description: "Keystone hardware wallet review: air-gapped security, QR-code signing, Keystone 3 Pro ($149) vs Essential ($99), open-source firmware, multi-chain support, comparison vs Ledger/Trezor.",
+    description: "Keystone hardware wallet review: air-gapped security, QR-code signing, Keystone 3 Pro ($149) vs Essential ($99), open-source firmware, multi-chain support,",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
     url: "https://degen0x.com/wallets/keystone-wallet-review-guide",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Keystone wallet review & QR-code signing guide",
-    description: "Keystone hardware wallet review: air-gapped security, QR-code signing, Keystone 3 Pro ($149) vs Essential ($99), open-source firmware, multi-chain support, comparison vs Ledger/Trezor.",
+    description: "Keystone hardware wallet review: air-gapped security, QR-code signing, Keystone 3 Pro ($149) vs Essential ($99), open-source firmware, multi-chain support,",
     image: "https://degen0x.com/og-wallets.svg",
   },
   alternates: {

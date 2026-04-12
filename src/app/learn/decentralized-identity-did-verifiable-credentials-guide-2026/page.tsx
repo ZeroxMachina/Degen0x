@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Decentralized Identity (DID) Guide 2026: Verifiable Credentials & Web3 ID | degen0x',
-  description:
-    'Complete DID guide 2026: Decentralized identity, verifiable credentials, soulbound tokens, World ID, Polygon ID, ENS, self-sovereign identity, zero-knowledge proofs, and enterprise adoption (eIDAS 2.0). Learn Web3 identity solutions.',
+  title: "Decentralized Identity (DID) Guide 2026: Verifiable",
+  description: "Complete DID guide 2026: Decentralized identity, verifiable credentials, soulbound tokens, World ID, Polygon ID, ENS, self-sovereign identity, zero-knowledge",
   keywords: [
     'Decentralized Identity',
     'DID',

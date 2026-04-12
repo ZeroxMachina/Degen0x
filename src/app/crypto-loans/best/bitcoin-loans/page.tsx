@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,10 +11,10 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Bitcoin-Backed Loans ${CURRENT_YEAR} - Borrow Against BTC`,
   description: `Compare the best Bitcoin-backed loan platforms in ${CURRENT_YEAR}. Get cash against your BTC without selling. Compare rates, LTV ratios, and terms.`,
-};
+  alternates: { canonical: "/crypto-loans/best/bitcoin-loans" }};
 
 const products: Product[] = [
-  { name: "Nexo", slug: "nexo", rating: 4.7, description: "Nexo offers instant Bitcoin-backed loans with rates starting at 0% APR for Platinum-tier users. Borrow up to 90% LTV against your BTC with no monthly repayments required and flexible repayment on your schedule.", pros: ["Rates as low as 0% APR", "Up to 90% LTV on Bitcoin", "No monthly payment requirements", "Instant loan approval"], cons: ["Best rates require NEXO token holdings", "CeFi counterparty risk", "Not available in all US states"], fees: "From 0% APR", bestFor: "CeFi Bitcoin borrowers", affiliateUrl: "https://degen0x.com/go/nexo", category: "crypto-loans", featured: true },
+  { name: "Nexo", slug: "nexo", rating: 4.7, description: "Nexo offers instant Bitcoin-backed loans with rates starting at 0% APR for Platinum-tier users. Borrow up to 90% LTV against your BTC with no monthly", pros: ["Rates as low as 0% APR", "Up to 90% LTV on Bitcoin", "No monthly payment requirements", "Instant loan approval"], cons: ["Best rates require NEXO token holdings", "CeFi counterparty risk", "Not available in all US states"], fees: "From 0% APR", bestFor: "CeFi Bitcoin borrowers", affiliateUrl: "https://degen0x.com/go/nexo", category: "crypto-loans", featured: true },
   { name: "Aave", slug: "aave-loans", rating: 4.7, description: "Aave allows decentralized borrowing against wrapped Bitcoin (WBTC) across multiple chains. No KYC required, variable rates based on market demand, and the ability to borrow any supported asset against your BTC collateral.", pros: ["No KYC required", "Borrow any supported asset", "Multi-chain availability", "Proven security track record"], cons: ["Requires wrapping BTC to WBTC", "Variable rates can spike", "Technical knowledge needed"], fees: "Variable borrow rates", bestFor: "DeFi-native BTC holders", affiliateUrl: "https://degen0x.com/go/aave", category: "crypto-loans" },
   { name: "MakerDAO", slug: "makerdao", rating: 4.5, description: "MakerDAO accepts WBTC as collateral for borrowing DAI stablecoins. The stability fee is governance-controlled and often competitive with market rates. MakerDAO's battle-tested infrastructure provides reliable Bitcoin-backed borrowing.", pros: ["Borrow DAI at competitive rates", "Battle-tested since 2017", "Governance-controlled stability", "No KYC needed"], cons: ["Can only borrow DAI", "Higher collateralization ratios", "Must wrap BTC to WBTC"], fees: "Stability fee (variable)", bestFor: "DAI borrowers with BTC collateral", affiliateUrl: "https://degen0x.com/go/makerdao", category: "crypto-loans" },
 ];
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function BitcoinLoansPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "Bitcoin Loans", href: "/crypto-loans/best/bitcoin-loans" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="crypto-loans"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "Bitcoin Loans", href: "/crypto-loans/best/bitcoin-loans" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Bitcoin-Backed Loans ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
@@ -35,6 +44,57 @@ export default function BitcoinLoansPage() {
       </div>
       <div className="space-y-4 mb-12">{products.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/bitcoin Loans", "description": "Nexo offers instant Bitcoin-backed loans with rates starting at 0% APR for Platinum-tier users. Borrow up to 90% LTV against your BTC with no monthly", "url": "https://degen0x.com/crypto-loans/best/bitcoin-loans"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

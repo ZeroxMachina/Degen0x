@@ -14,8 +14,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Stablecoin Yield Strategies 2026: Earn 4–20% APY | degen0x",
-  description:
-    "Earn 4–20% APY on stablecoins in 2026. Compare Aave, Morpho, Curve, Pendle, and Ethena — with risk-adjusted yield stacks for conservative, moderate, and advanced DeFi investors.",
+  description: "Earn 4–20% APY on stablecoins in 2026. Compare Aave, Morpho, Curve, Pendle, and Ethena — with risk-adjusted yield stacks for conservative, moderate, and",
   keywords: [
     "stablecoin yield strategies 2026",
     "best stablecoin yield 2026",

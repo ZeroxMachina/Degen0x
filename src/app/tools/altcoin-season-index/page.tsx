@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Altcoin Season Index | Alt Season Tracker",
-  description: "Real-time altcoin season indicator measuring BTC dominance decline and alt performance. Identify alt season cycles, track capital rotation, and optimize portfolio timing.",
+  description: "Real-time altcoin season indicator measuring BTC dominance decline and alt performance. Identify alt season cycles, track capital rotation, and optimize",
   keywords: ["altcoin season", "alt season index", "BTC dominance", "capital rotation", "altcoin cycle"],
   alternates: {
     canonical: "https://degen0x.com/tools/altcoin-season-index",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     title: "Altcoin Season Index | Alt Season Tracker",
-    description: "Real-time altcoin season indicator measuring BTC dominance decline and alt performance. Identify alt season cycles, track capital rotation, and optimize portfolio timing.",
+    description: "Real-time altcoin season indicator measuring BTC dominance decline and alt performance. Identify alt season cycles, track capital rotation, and optimize",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
     url: "https://degen0x.com/tools/altcoin-season-index",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Altcoin Season Index | Alt Season Tracker",
-    description: "Real-time altcoin season indicator measuring BTC dominance decline and alt performance. Identify alt season cycles, track capital rotation, and optimize portfolio timing.",
+    description: "Real-time altcoin season indicator measuring BTC dominance decline and alt performance. Identify alt season cycles, track capital rotation, and optimize",
     image: "https://degen0x.com/og-altcoin-season-index.svg",
   },
 };
@@ -31,7 +31,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "Altcoin Season Index: Track Alt Season Cycles",
-  description: "Real-time altcoin season indicator measuring BTC dominance decline and alt performance. Identify alt season cycles, track capital rotation, and optimize portfolio timing.",
+  description: "Real-time altcoin season indicator measuring BTC dominance decline and alt performance. Identify alt season cycles, track capital rotation, and optimize",
   image: "https://degen0x.com/og-altcoin-season-index.svg",
   datePublished: "2026-04-10",
   dateModified: "2026-04-10",
@@ -388,8 +388,8 @@ export default function AltcoinSeasonIndex() {
             },
           ].map((faq, idx) => (
             <div key={idx} style={{ ...infoBoxStyle, marginBottom: 16 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#58a6ff", marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#58a6ff", marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

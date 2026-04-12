@@ -12,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Ethereum Wallets of ${CURRENT_YEAR} - ETH & ERC-20 | ${SITE_NAME}`,
   description: `The best Ethereum wallets for ${CURRENT_YEAR}. Compare MetaMask, Rabby, Ledger, and more for ETH, ERC-20 tokens, DeFi, and NFTs.`,
-};
+  alternates: { canonical: "/wallets/best/ethereum" }};
 
 const faqs = [
   {
@@ -129,6 +129,7 @@ export default function BestEthereumWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/ethereum", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/ethereum"}) }} />
     </div>
   );
 }

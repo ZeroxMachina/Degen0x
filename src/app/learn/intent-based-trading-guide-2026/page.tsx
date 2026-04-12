@@ -5,13 +5,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Intent-Based Trading Guide 2026: CoW Protocol, UniswapX & Solvers | degen0x',
-  description: 'Complete guide to intent-based DEX trading in 2026. Learn how CoW Protocol, UniswapX, and 1inch Fusion eliminate MEV, compare solver models, and start trading with intents.',
+  title: "Intent-Based Trading Guide 2026: CoW Protocol, UniswapX &",
+  description: "Complete guide to intent-based DEX trading in 2026. Learn how CoW Protocol, UniswapX, and 1inch Fusion eliminate MEV, compare solver models, and start trading",
   keywords: ['intent-based trading', 'CoW Protocol', 'UniswapX', 'solvers', 'MEV protection', 'batch auctions', '1inch Fusion', 'order flow', 'DEX trading 2026'],
   openGraph: {
     type: 'article',
     title: 'Intent-Based Trading Guide 2026: CoW Protocol, UniswapX & Solvers',
-    description: 'Complete guide to intent-based DEX trading in 2026. Learn how CoW Protocol, UniswapX, and 1inch Fusion eliminate MEV, compare solver models, and start trading with intents.',
+    description: "Complete guide to intent-based DEX trading in 2026. Learn how CoW Protocol, UniswapX, and 1inch Fusion eliminate MEV, compare solver models, and start trading",
     publishedTime: '2026-04-01T00:00:00Z',
     modifiedTime: '2026-04-01T00:00:00Z',
     url: 'https://degen0x.com/learn/intent-based-trading-guide-2026',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Intent-Based Trading Guide 2026: CoW Protocol, UniswapX & Solvers',
-    description: 'Complete guide to intent-based DEX trading in 2026. Learn how CoW Protocol, UniswapX, and 1inch Fusion eliminate MEV, compare solver models, and start trading with intents.',
+    description: "Complete guide to intent-based DEX trading in 2026. Learn how CoW Protocol, UniswapX, and 1inch Fusion eliminate MEV, compare solver models, and start trading",
     image: 'https://degen0x.com/og-intent-based-trading.svg',
   },
   alternates: {
@@ -37,7 +37,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Intent-Based Trading Guide 2026: CoW Protocol, UniswapX & Solvers',
-  description: 'Complete guide to intent-based DEX trading in 2026. Learn how CoW Protocol, UniswapX, and 1inch Fusion eliminate MEV, compare solver models, and start trading with intents.',
+  description: "Complete guide to intent-based DEX trading in 2026. Learn how CoW Protocol, UniswapX, and 1inch Fusion eliminate MEV, compare solver models, and start trading",
   image: 'https://degen0x.com/og-intent-based-trading.svg',
   datePublished: '2026-04-01',
   dateModified: '2026-04-01',

@@ -5,13 +5,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Bitcoin Layer 2 Guide 2026: Lightning, Stacks, BitVM & More | degen0x',
-  description: 'Complete guide to Bitcoin Layer 2s in 2026. Learn about Lightning Network, Stacks smart contracts, BitVM computation, and compare all major Bitcoin L2 solutions.',
+  title: "Bitcoin Layer 2 Guide 2026: Lightning, Stacks, BitVM & More",
+  description: "Complete guide to Bitcoin Layer 2s in 2026. Learn about Lightning Network, Stacks smart contracts, BitVM computation, and compare all major Bitcoin L2",
   keywords: ['Bitcoin Layer 2', 'Lightning Network', 'Stacks', 'BitVM', 'Bitcoin scaling', 'sBTC', 'RSK', 'Liquid Network', 'Bitcoin DeFi', 'BTCFi'],
   openGraph: {
     type: 'article',
     title: 'Bitcoin Layer 2 Guide 2026: Lightning, Stacks, BitVM & More',
-    description: 'Complete guide to Bitcoin Layer 2s in 2026. Learn about Lightning Network, Stacks smart contracts, BitVM computation, and compare all major Bitcoin L2 solutions.',
+    description: "Complete guide to Bitcoin Layer 2s in 2026. Learn about Lightning Network, Stacks smart contracts, BitVM computation, and compare all major Bitcoin L2",
     publishedTime: '2026-04-01T00:00:00Z',
     modifiedTime: '2026-04-01T00:00:00Z',
     url: 'https://degen0x.com/learn/bitcoin-layer-2-guide-2026',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Bitcoin Layer 2 Guide 2026: Lightning, Stacks, BitVM & More',
-    description: 'Complete guide to Bitcoin Layer 2s in 2026. Learn about Lightning Network, Stacks smart contracts, BitVM computation, and compare all major Bitcoin L2 solutions.',
+    description: "Complete guide to Bitcoin Layer 2s in 2026. Learn about Lightning Network, Stacks smart contracts, BitVM computation, and compare all major Bitcoin L2",
     image: 'https://degen0x.com/og-bitcoin-layer-2.svg',
   },
   alternates: {
@@ -37,7 +37,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Bitcoin Layer 2 Guide 2026: Lightning, Stacks, BitVM & More',
-  description: 'Complete guide to Bitcoin Layer 2s in 2026. Learn about Lightning Network, Stacks smart contracts, BitVM computation, and compare all major Bitcoin L2 solutions.',
+  description: "Complete guide to Bitcoin Layer 2s in 2026. Learn about Lightning Network, Stacks smart contracts, BitVM computation, and compare all major Bitcoin L2",
   image: 'https://degen0x.com/og-bitcoin-layer-2.svg',
   datePublished: '2026-04-01',
   dateModified: '2026-04-01',

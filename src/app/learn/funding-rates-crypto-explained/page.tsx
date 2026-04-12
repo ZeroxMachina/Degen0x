@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Funding Rates Crypto Explained | Perpetual Swaps & Arbitrage | degen0x',
-  description: 'Master funding rates: 8-hour intervals, positive/negative rates, cash-and-carry arbitrage. Delta-neutral farming 15-30% APY, funding rate sentiment indicator, exchange comparison.',
+  title: "Funding Rates Crypto Explained | Perpetual Swaps & Arbitrage",
+  description: "Master funding rates: 8-hour intervals, positive/negative rates, cash-and-carry arbitrage. Delta-neutral farming 15-30% APY, funding rate sentiment indicator,",
   keywords: ['funding rates', 'perpetual swaps', 'crypto arbitrage', 'funding rate arbitrage', 'delta-neutral', 'APY farming', 'basis trading', 'crypto derivatives'],
   openGraph: {
     title: 'Funding Rates Crypto Explained',

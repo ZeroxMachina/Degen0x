@@ -12,8 +12,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'AI Agent Wallets & Autonomous Crypto Payments Guide 2026 | degen0x',
-  description: 'Complete guide to AI agent wallets, x402 protocol, and autonomous cryptocurrency payments. Learn about Alchemy Agentic Wallets, World AgentKit, identity verification, and enterprise adoption in 2026.',
+  title: "AI Agent Wallets & Autonomous Crypto Payments Guide 2026",
+  description: "Complete guide to AI agent wallets, x402 protocol, and autonomous cryptocurrency payments. Learn about Alchemy Agentic Wallets, World AgentKit, identity",
   keywords: [
     'AI agent wallets',
     'autonomous payments',
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 
 const articleSchema = generateArticleSchema({
   title: 'AI Agent Wallets & Autonomous Crypto Payments Guide 2026',
-  description: 'Complete guide to AI agent wallets, x402 protocol, and autonomous cryptocurrency payments. Learn about Alchemy Agentic Wallets, World AgentKit, identity verification, and enterprise adoption in 2026.',
+  description: "Complete guide to AI agent wallets, x402 protocol, and autonomous cryptocurrency payments. Learn about Alchemy Agentic Wallets, World AgentKit, identity",
   url: `${SITE_URL}/learn/ai-agent-wallets-autonomous-payments-guide-2026`,
   image: `${SITE_URL}/og-ai-agent-wallets-autonomous-payments-guide-2026.svg`,
   datePublished: '2026-03-23',

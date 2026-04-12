@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Element Market Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Complete Element Market review covering multi-chain NFT aggregation, supported networks, fees, trading features, and how it compares to other NFT marketplaces.",
-};
+  alternates: { canonical: "/nfts/reviews/element-market" }};
 
 export default function ElementMarketReview() {
   return (

@@ -8,15 +8,16 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Advanced Staking Strategies Guide 2026: LST, LRT & Real Yield Optimization | degen0x",
-  description: "Master advanced staking strategies including LST/LRT optimization, real yield vs headline APY, validator diversification, and compounding techniques for maximum returns.",
+  title: "Advanced Staking Strategies Guide 2026: LST, LRT & Real",
+  description: "Master advanced staking strategies including LST/LRT optimization, real yield vs headline APY, validator diversification, and compounding techniques for",
   keywords: "staking strategies, liquid staking tokens, LRT, real yield, staking optimization, validator diversification, restaking",
   openGraph: {
     title: "Advanced Staking Strategies Guide 2026",
     description: "Master LST, LRT, and real yield optimization strategies",
     url: "https://degen0x.com/learn/advanced-staking-strategies-guide-2026",
   },
-};
+
+  alternates: { canonical: "/learn/advanced-staking-strategies-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   headline: "Advanced Staking Strategies Guide 2026: LST, LRT & Real Yield Optimization",

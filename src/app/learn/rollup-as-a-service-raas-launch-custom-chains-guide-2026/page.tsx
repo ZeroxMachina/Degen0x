@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Rollup-as-a-Service (RaaS): Launch Custom Chains in 2026 | degen0x',
-  description: 'Complete guide to Rollup-as-a-Service platforms. Learn how RaaS simplifies custom chain deployment, compare top providers (Caldera, Conduit, AltLayer, Gelato), and understand the shift from monolithic to modular architecture.',
+  title: "Rollup-as-a-Service (RaaS): Launch Custom Chains in 2026",
+  description: "Complete guide to Rollup-as-a-Service platforms. Learn how RaaS simplifies custom chain deployment, compare top providers (Caldera, Conduit, AltLayer, Gelato),",
   keywords: ['RaaS', 'rollup-as-a-service', 'custom chains', 'layer 2', 'modular blockchain', 'Caldera', 'Conduit', 'AltLayer', 'Gelato', 'appchain'],
   openGraph: {
     title: 'Rollup-as-a-Service (RaaS): Launch Custom Chains in 2026',

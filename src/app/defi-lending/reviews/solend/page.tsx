@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Solend Review ${CURRENT_YEAR}: Yield, Fees & Pros/Cons`,
   description:
     "Detailed Solend review covering lending rates, isolated pools, governance, and how this OG Solana lending protocol compares to newer alternatives.",
-};
+  alternates: { canonical: "/defi-lending/reviews/solend" }};
 
 export default function SolendReview() {
   return (

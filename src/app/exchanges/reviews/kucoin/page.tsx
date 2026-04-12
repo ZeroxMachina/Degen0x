@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,9 +8,8 @@ const product = exchanges.find((e) => e.slug === "kucoin")!;
 
 export const metadata: Metadata = {
   title: "KuCoin Review 2026: Fees, Features, Pros & Cons",
-  description:
-    "Our in-depth KuCoin review covers its massive altcoin selection, trading bots, fees, security, and more. Is KuCoin the best exchange for altcoin trading? Updated March 2026.",
-};
+  description: "Our in-depth KuCoin review covers its massive altcoin selection, trading bots, fees, security, and more. Is KuCoin the best exchange for altcoin trading?",
+  alternates: { canonical: "/exchanges/reviews/kucoin" }};
 
 export default function KuCoinReview() {
   return (

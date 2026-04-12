@@ -12,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Ledger vs Coldcard (${CURRENT_YEAR}): Bitcoin Hardware Wallet Comparison | ${SITE_NAME}`,
   description: `Ledger vs Coldcard comparison for ${CURRENT_YEAR}. Compare security, Bitcoin features, air-gapped signing, and multi-coin support for hardware wallets.`,
-};
+  alternates: { canonical: "/wallets/compare/ledger-vs-coldcard" }};
 
 const items: ComparisonItem[] = [
   { name: "Ledger Nano X", slug: "ledger-nano-x", rating: 4.7, affiliateUrl: "https://degen0x.com/go/ledger", features: { "Type": "Multi-coin hardware wallet", "Price": "$149", "Supported Coins": "5,500+", "Bitcoin-Only Mode": "No", "Air-Gapped": "No (USB + Bluetooth)", "Secure Element": "Yes (CC EAL5+)", "Open Source": "Partial", "Display": "128x64 OLED" } },
@@ -120,6 +120,57 @@ export default function LedgerVsColdcardPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/ledger Vs Coldcard", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/ledger-vs-coldcard"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/wallets" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Wallets
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Wallets
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Wallet for NEAR Protocol 2026: NEAR Wallet, Meteor, Sender, HERE | degen0x',
-  description: 'Best NEAR wallet 2026: NEAR Wallet (official web, named accounts alice.near), Meteor (DeFi-focused, Ref Finance), Sender (mobile+extension), HERE Wallet (mobile staking 10% APY), Ledger. Compare features, yields, and staking.',
+  title: "Best Wallet for NEAR Protocol 2026: NEAR Wallet, Meteor,",
+  description: "Best NEAR wallet 2026: NEAR Wallet (official web, named accounts alice.near), Meteor (DeFi-focused, Ref Finance), Sender (mobile+extension), HERE Wallet",
   keywords: ['best near protocol wallet', 'near wallet', 'meteor wallet', 'sender wallet', 'here wallet', 'ledger near', 'near staking', 'named accounts'],
   openGraph: {
     type: 'article',

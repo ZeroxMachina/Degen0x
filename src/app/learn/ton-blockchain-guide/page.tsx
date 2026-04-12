@@ -43,7 +43,8 @@ export const metadata: Metadata = {
     description:
       "How TON turned 950M Telegram users into crypto's biggest onboarding funnel.",
   },
-};
+
+  alternates: { canonical: "/learn/ton-blockchain-guide" }};
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default function TonBlockchainGuidePage() {

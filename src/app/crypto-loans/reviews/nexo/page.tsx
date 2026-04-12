@@ -1,10 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { CRYPTO_LOAN_PRODUCTS } from "@/data/crypto-loans";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "nexo")!;
 
-export const metadata: Metadata = { title: "Nexo Review 2026: Rates, Security, Pros & Cons", description: "In-depth Nexo review covering loan rates, earning products, security, and whether Nexo is the right crypto lending platform for you. Updated March 2026." };
+export const metadata: Metadata = { title: "Nexo Review 2026: Rates, Security, Pros & Cons", description: "In-depth Nexo review covering loan rates, earning products, security, and whether Nexo is the right crypto lending platform for you. Updated March 2026." ,
+  alternates: { canonical: "/crypto-loans/reviews/nexo" }};
 
 export default function NexoReview() {
   return (

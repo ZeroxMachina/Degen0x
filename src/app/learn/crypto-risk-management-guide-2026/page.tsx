@@ -7,9 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Risk Management Guide 2026 — Protect Your Portfolio | degen0x",
-  description:
-    "Master crypto risk management in 2026. Learn position sizing, portfolio diversification, DeFi liquidation protection, smart contract risk assessment, and proven strategies to protect your crypto investments.",
+  title: "Crypto Risk Management Guide 2026 — Protect Your Portfolio",
+  description: "Master crypto risk management in 2026. Learn position sizing, portfolio diversification, DeFi liquidation protection, smart contract risk assessment, and",
   keywords: [
     "crypto risk management",
     "crypto portfolio protection",
@@ -45,7 +44,8 @@ export const metadata: Metadata = {
     description:
       "Position sizing, DeFi safety, liquidation protection & portfolio strategies for crypto.",
   },
-};
+
+  alternates: { canonical: "/learn/crypto-risk-management-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Crypto Risk Management Guide 2026",
@@ -881,10 +881,10 @@ export default function CryptoRiskManagementGuide2026() {
                   }}
                 >
                   <h3 style={{ fontSize: 14, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>
-                    {faq.q}
+                    {faq.question}
                   </h3>
                   <p style={{ color: "#c9d1d9", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
-                    {faq.a}
+                    {faq.answer}
                   </p>
                 </div>
               ))}

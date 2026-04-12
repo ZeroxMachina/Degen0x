@@ -14,8 +14,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Bitcoin Treasury Companies 2026: Who's Buying BTC?",
-  description:
-    "172+ public companies hold Bitcoin on their balance sheets. How corporate BTC treasury strategies work, who the biggest holders are, and what it means for investors.",
+  description: "172+ public companies hold Bitcoin on their balance sheets. How corporate BTC treasury strategies work, who the biggest holders are, and what it means for",
   keywords: [
     "bitcoin treasury companies",
     "corporate bitcoin holdings",
@@ -52,7 +51,8 @@ export const metadata: Metadata = {
       "Strategy holds 687K BTC. Metaplanet holds 35K. 172+ companies stack BTC. Full guide to corporate Bitcoin treasury strategies.",
     images: [`${SITE_URL}/og-bitcoin-treasury-companies.png`],
   },
-};
+
+  alternates: { canonical: "/learn/bitcoin-treasury-companies-guide" }};
 
 export default function BitcoinTreasuryCompaniesGuidePage() {
   const articleSchema = generateArticleSchema({

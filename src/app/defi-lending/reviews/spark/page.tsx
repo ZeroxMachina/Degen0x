@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "spark")!;
 export const metadata: Metadata = {
   title: `Spark Protocol Review (${CURRENT_YEAR}): MakerDAO's Lending Platform | degen0x`,
   description: "In-depth Spark Protocol review covering DAI lending, SparkLend markets, DSR integration, sDAI, and the protocol's relationship with Sky (formerly MakerDAO).",
-};
+  alternates: { canonical: "/defi-lending/reviews/spark" }};
 
 export default function SparkReview() {
   return (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   title: `Crypto.com vs Bybit Card: Established vs Newcomer (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description:
     "Crypto.com Visa vs Bybit Card compared on cashback, fees, features, staking, and availability. Find out which exchange-linked crypto debit card is best for you.",
-};
+  alternates: { canonical: "/crypto-cards/compare/crypto-com-vs-bybit-card" }};
 
 const items: ComparisonItem[] = [
   {
@@ -187,6 +188,57 @@ export default function CryptoComVsBybitCardPage() {
           },
         ]}
       />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/crypto Com Vs Bybit Card", "description": "Crypto.com Visa vs Bybit Card compared on cashback, fees, features, staking, and availability. Find out which exchange-linked crypto debit card is best for you.", "url": "https://degen0x.com/crypto-cards/compare/crypto-com-vs-bybit-card"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

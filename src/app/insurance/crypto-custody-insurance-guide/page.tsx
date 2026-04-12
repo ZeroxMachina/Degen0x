@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Custody Insurance Guide 2026: Coinbase, Fireblocks, Lloyd\'s Policies",
+  title: "Crypto Custody Insurance Guide 2026: Coinbase, Fireblocks,"s Policies",
   description: "Complete crypto custody insurance guide. Institutional custody (Coinbase $320B+ AUM, Fireblocks $4B+ insured), Lloyd\'s of London policies, crime vs specie insurance. Comparison table with coverage limits and premiums.",
   keywords: [
     "custody insurance",

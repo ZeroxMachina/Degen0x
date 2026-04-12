@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Wallet Security Best Practices (${CURRENT_YEAR}) - Protect Your Crypto | ${SITE_NAME}`,
   description: `Essential crypto wallet security best practices for ${CURRENT_YEAR}. Seed phrase protection, phishing defense, approval management, and hardware wallet recommendations.`,
-};
+  alternates: { canonical: "/wallets/learn/wallet-security-best-practices" }};
 
 const toc = [
   { id: "seed-phrase", title: "Seed Phrase Security", level: 2 },

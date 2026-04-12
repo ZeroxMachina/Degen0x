@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `BENQI Loans Review (${CURRENT_YEAR}): Avalanche DeFi Lending | ${SITE_NAME}`,
   description: "In-depth BENQI review covering Avalanche lending, sAVAX liquid staking, borrowing rates, and how BENQI compares to other DeFi lending protocols.",
-};
+  alternates: { canonical: "/crypto-loans/reviews/benqi-loans" }};
 
 export default function BenqiLoansReview() {
   return (

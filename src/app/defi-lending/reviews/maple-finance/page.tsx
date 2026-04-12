@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Maple Finance Review (${CURRENT_YEAR}): Institutional DeFi Lending | degen0x`,
   description:
     "In-depth Maple Finance review covering institutional lending pools, Pool Delegates, MPL token, and the protocol's recovery and expansion into real-world credit markets.",
-};
+  alternates: { canonical: "/defi-lending/reviews/maple-finance" }};
 
 export default function MapleFinanceReview() {
   return (

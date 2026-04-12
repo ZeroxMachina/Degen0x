@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
@@ -7,8 +8,7 @@ import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: "Fair Token Launch Mechanisms Guide 2026 | degen0x",
-  description:
-    "How fair token launches work in 2026: bonding curves, anti-sniper protection, batch auctions, and reputation systems. Evaluate any launch with our practical checklist.",
+  description: "How fair token launches work in 2026: bonding curves, anti-sniper protection, batch auctions, and reputation systems. Evaluate any launch with our practical",
   keywords: [
     "fair token launch",
     "bonding curve crypto",
@@ -23,8 +23,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Fair Token Launch Mechanisms Guide 2026 | degen0x",
-    description:
-      "How fair token launches work in 2026: bonding curves, anti-sniper protection, batch auctions, and reputation systems. Evaluate any launch with our practical checklist.",
+    description: "How fair token launches work in 2026: bonding curves, anti-sniper protection, batch auctions, and reputation systems. Evaluate any launch with our practical",
     type: "article",
     url: "https://degen0x.com/learn/fair-token-launches-guide-2026",
     publishedTime: "2026-03-16T00:00:00Z",
@@ -41,11 +40,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Fair Token Launch Mechanisms Guide 2026 | degen0x",
-    description:
-      "How fair token launches work in 2026: bonding curves, anti-sniper protection, batch auctions, and reputation systems. Evaluate any launch with our practical checklist.",
+    description: "How fair token launches work in 2026: bonding curves, anti-sniper protection, batch auctions, and reputation systems. Evaluate any launch with our practical",
     images: ["https://degen0x.com/api/og?title=Fair+Token+Launch+Mechanisms+Guide+2026&category=Learn&type=learn"],
   },
-};
+
+  alternates: { canonical: "/learn/fair-token-launches-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Fair Token Launch Mechanisms Guide 2026 | degen0x",
@@ -97,7 +96,14 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function FairTokenLaunchesGuide2026() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
-      <StructuredData data={combinedSchema} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <StructuredData data={combinedSchema} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px 80px" }}>
         {/* Breadcrumb */}
         <Breadcrumb

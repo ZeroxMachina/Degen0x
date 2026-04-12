@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Lendle Review ${CURRENT_YEAR}: Mantle Lending Protocol`,
   description: "In-depth Lendle review covering Aave V2-based lending on Mantle, yield rates, LEND token incentives, and the protocol's role in Mantle DeFi ecosystem.",
-};
+  alternates: { canonical: "/defi-lending/reviews/lendle" }};
 
 export default function LendleReview() {
   return (

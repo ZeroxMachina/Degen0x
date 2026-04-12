@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `BitPay Business Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "BitPay Business provides enterprise-grade crypto payment processing with fiat settlement, invoicing, and compliance tools.",
-};
+  alternates: { canonical: "/web3-business/reviews/bitpay-business" }};
 
 export default function BitPayBusinessReview() {
   return (

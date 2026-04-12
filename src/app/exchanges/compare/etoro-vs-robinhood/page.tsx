@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -9,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `eToro vs Robinhood: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of eToro vs Robinhood for crypto and stock trading. Compare fees, copy trading, coin selection, and platform features.",
-};
+  alternates: { canonical: "/exchanges/compare/etoro-vs-robinhood" }};
 
 export default function EtoroVsRobinhoodPage() {
   return (
@@ -63,6 +64,57 @@ export default function EtoroVsRobinhoodPage() {
         { question: "Which has more crypto?", answer: "eToro supports approximately 80 cryptocurrencies compared to Robinhood's approximately 20. eToro offers a broader selection of altcoins and DeFi tokens." },
         { question: "Can I do copy trading on Robinhood?", answer: "No, Robinhood does not offer copy trading or social trading features. This is exclusive to eToro through its CopyTrader and Smart Portfolios features." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/etoro Vs Robinhood", "description": "Detailed comparison of eToro vs Robinhood for crypto and stock trading. Compare fees, copy trading, coin selection, and platform features.", "url": "https://degen0x.com/exchanges/compare/etoro-vs-robinhood"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

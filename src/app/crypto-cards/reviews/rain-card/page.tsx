@@ -1,14 +1,15 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = cryptoCards.find((c) => c.slug === "rain-card")!;
 
 export const metadata: Metadata = {
-  title: "Rain Card Review 2026: Bitcoin Rewards Credit Card, Cashback & No Annual Fee",
-  description:
-    "Our in-depth Rain Card review covers automatic Bitcoin cashback, credit-building benefits, no annual fee, mainstream-friendly design, and how it compares to other BTC rewards cards. Updated March 2026.",
-};
+  title: "Rain Card Review 2026: Bitcoin Rewards Credit Card,",
+  description: "Our in-depth Rain Card review covers automatic Bitcoin cashback, credit-building benefits, no annual fee, mainstream-friendly design, and how it compares to",
+  alternates: { canonical: "/crypto-cards/reviews/rain-card" }};
 
 export default function RainCardReview() {
   return (

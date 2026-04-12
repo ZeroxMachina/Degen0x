@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Quantum-Resistant Crypto: Protect Your Holdings 2026 | degen0x",
-  description:
-    "Learn how quantum computing threatens Bitcoin & Ethereum. NIST post-quantum standards, quantum-resistant projects (QRL, Abelian, QANplatform), and steps to protect your crypto portfolio.",
+  title: "Quantum-Resistant Crypto: Protect Your Holdings 2026",
+  description: "Learn how quantum computing threatens Bitcoin & Ethereum. NIST post-quantum standards, quantum-resistant projects (QRL, Abelian, QANplatform), and steps to",
   openGraph: {
     title: "Quantum-Resistant Crypto: Protect Your Holdings in 2026",
     description:
@@ -35,7 +34,8 @@ export const metadata: Metadata = {
     description:
       "25% of Bitcoin is quantum-vulnerable. Learn which projects are building quantum-safe blockchains and how to protect your portfolio.",
   },
-};
+
+  alternates: { canonical: "/learn/quantum-resistant-crypto-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "Quantum-Resistant Crypto: Protecting Your Holdings in 2026",

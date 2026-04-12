@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: 'Kamino Finance Guide 2026 — Solana Lending, Liquidity & Leverage',
+  title: "Kamino Finance Guide 2026 — Solana Lending, Liquidity &",
   description: 'Comprehensive guide to Kamino Finance: automated concentrated liquidity vaults, Kamino Lend, multiply leverage loops, KMNO tokenomics, and risks on Solana.',
   keywords: [
     'Kamino Finance',
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://degen0x.com/learn/kamino-finance-solana-lending-liquidity-guide-2026' },
   openGraph: {
     type: 'article',
-    title: 'Kamino Finance Guide 2026 — Solana Lending, Liquidity & Leverage',
+    title: "Kamino Finance Guide 2026 — Solana Lending, Liquidity &",
     description: 'Automated CLMM vaults, Kamino Lend, Multiply leverage, and KMNO tokenomics on Solana in 2026.',
     publishedTime: '2026-04-09T00:00:00Z',
     authors: ['degen0x'],
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kamino Finance Guide 2026 — Solana Lending, Liquidity & Leverage',
+    title: "Kamino Finance Guide 2026 — Solana Lending, Liquidity &",
     description: 'The 2026 guide to Kamino vaults, Kamino Lend, Multiply, and KMNO on Solana.',
   },
 };
@@ -107,7 +108,14 @@ export default function KaminoFinanceGuide() {
 
   return (
     <div style={pageStyle}>
-      <div style={containerStyle}>
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <div style={containerStyle}>
         <Breadcrumb items={[
           { label: "Home", href: "/" },
           { label: "Learn", href: "/learn" },

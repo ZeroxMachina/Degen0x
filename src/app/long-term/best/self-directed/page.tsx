@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -11,15 +12,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Self-Directed Crypto Retirement Accounts ${CURRENT_YEAR}`,
   description: `Compare the best self-directed IRA and Solo 401(k) providers for cryptocurrency investing in ${CURRENT_YEAR}. Take full control of your crypto retirement portfolio with checkbook control and expanded asset options.`,
-};
+  alternates: { canonical: "/long-term/best/self-directed" }};
 
 const products: Product[] = [
   {
     name: "Rocket Dollar",
     slug: "rocket-dollar",
     rating: 4.7,
-    description:
-      "Rocket Dollar offers true self-directed IRA and Solo 401(k) accounts with checkbook control, meaning you manage your own LLC that holds the retirement assets. This structure gives you maximum flexibility to invest in crypto through any exchange or DeFi protocol of your choice. The platform handles all custodial compliance, IRS reporting, and LLC formation while you maintain full investment control.",
+    description: "Rocket Dollar offers true self-directed IRA and Solo 401(k) accounts with checkbook control, meaning you manage your own LLC that holds the retirement assets.",
     pros: ["Checkbook control via LLC structure", "Invest through any exchange or DeFi platform", "Solo 401(k) with higher contribution limits", "Supports Traditional, Roth, and SEP IRA", "No per-transaction fees"],
     cons: ["$15/month Silver or $30/month Gold plan", "Requires investment knowledge", "LLC setup takes 2-3 weeks", "More complex than managed platforms"],
     fees: "$15-$30/month, no per-trade fees",
@@ -168,6 +168,57 @@ export default function SelfDirectedPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/self Directed", "description": "Rocket Dollar offers true self-directed IRA and Solo 401(k) accounts with checkbook control, meaning you manage your own LLC that holds the retirement assets.", "url": "https://degen0x.com/long-term/best/self-directed"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

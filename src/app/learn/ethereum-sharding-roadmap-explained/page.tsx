@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Ethereum Sharding Roadmap 2026: Dencun, Blobs, Danksharding & Verkle Trees | degen0x',
-  description: 'Complete Ethereum sharding guide. Learn EIP-4844 proto-danksharding, blob transactions, data availability sampling, Verkle trees, and Ethereum full roadmap through 2027.',
+  title: "Ethereum Sharding Roadmap 2026: Dencun, Blobs, Danksharding",
+  description: "Complete Ethereum sharding guide. Learn EIP-4844 proto-danksharding, blob transactions, data availability sampling, Verkle trees, and Ethereum full roadmap",
   keywords: ['Ethereum sharding', 'danksharding', 'EIP-4844', 'blob transactions', 'Verkle trees', 'Dencun upgrade', 'data availability', 'Ethereum roadmap'],
   openGraph: {
     type: 'article',

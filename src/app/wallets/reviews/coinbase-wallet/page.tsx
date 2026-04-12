@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = walletProducts.find((p) => p.slug === "coinbase-wallet")!;
 export const metadata: Metadata = {
   title: `Coinbase Wallet Review (${CURRENT_YEAR}) - Self-Custody from Coinbase | ${SITE_NAME}`,
   description: `In-depth Coinbase Wallet review for ${CURRENT_YEAR}. Covers self-custody features, multi-chain support, dApp browser, Coinbase integration, and security.`,
-};
+  alternates: { canonical: "/wallets/reviews/coinbase-wallet" }};
 
 const overview =
   "Coinbase Wallet is a self-custody crypto wallet developed by Coinbase, the largest US-based cryptocurrency exchange. It is a separate product from the Coinbase exchange app and gives users full control of their private keys. Coinbase Wallet supports Ethereum, Solana, Bitcoin, and several other blockchain networks. It features a built-in dApp browser, NFT management, and seamless integration with the Coinbase exchange for easy fund transfers. Available on iOS, Android, and as a Chrome browser extension, it bridges the gap between centralized exchange convenience and self-custody sovereignty.";

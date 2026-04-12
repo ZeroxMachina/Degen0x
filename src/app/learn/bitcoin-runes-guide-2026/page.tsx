@@ -6,9 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Bitcoin Runes Guide 2026 — How Fungible Tokens Work on BTC | degen0x",
-  description:
-    "Learn how Bitcoin Runes work, how they differ from BRC-20 and Ordinals, top Runes tokens like DOG and RSIC, etching & minting mechanics, and the state of Runes in 2026.",
+  title: "Bitcoin Runes Guide 2026 — How Fungible Tokens Work on BTC",
+  description: "Learn how Bitcoin Runes work, how they differ from BRC-20 and Ordinals, top Runes tokens like DOG and RSIC, etching & minting mechanics, and the state of Runes",
   keywords: [
     "bitcoin runes",
     "runes protocol",
@@ -53,7 +52,8 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+
+  alternates: { canonical: "/learn/bitcoin-runes-guide-2026" }};
 
 export default function BitcoinRunesGuidePage() {
   return (
@@ -318,9 +318,9 @@ export default function BitcoinRunesGuidePage() {
             { q: "Are Bitcoin Runes a good investment?", a: "Runes are highly speculative. The total category market cap has declined from billions at launch to roughly $96M. Most Rune tokens are memecoins with no fundamental value. Only invest what you can afford to lose entirely, and do thorough research on any specific Rune before trading." },
             { q: "Can I create my own Bitcoin Rune?", a: "Yes — anyone can etch (create) a new Rune by defining its name, supply, divisibility, and minting rules. Tools like Luminex provide a GUI for etching, or you can use the ord command-line tool. You'll pay standard Bitcoin transaction fees." },
           ].map((faq) => (
-            <div key={faq.q} className="glass rounded-lg p-4" style={{ border: "1px solid var(--color-border)" }}>
-              <h3 className="text-sm font-bold mb-2" style={{ color: "var(--color-text)" }}>{faq.q}</h3>
-              <p className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{faq.a}</p>
+            <div key={faq.question} className="glass rounded-lg p-4" style={{ border: "1px solid var(--color-border)" }}>
+              <h3 className="text-sm font-bold mb-2" style={{ color: "var(--color-text)" }}>{faq.question}</h3>
+              <p className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{faq.answer}</p>
             </div>
           ))}
         </div>

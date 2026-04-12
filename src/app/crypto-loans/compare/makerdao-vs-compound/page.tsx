@@ -1,11 +1,14 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
-export const metadata: Metadata = { title: `MakerDAO vs Compound ${CURRENT_YEAR}: DeFi Borrowing Compared`, description: `Compare MakerDAO vs Compound for crypto borrowing in ${CURRENT_YEAR}. Analyze DAI minting vs pool-based borrowing, rates, collateral, and more.` };
+export const metadata: Metadata = { title: `MakerDAO vs Compound ${CURRENT_YEAR}: DeFi Borrowing Compared`, description: `Compare MakerDAO vs Compound for crypto borrowing in ${CURRENT_YEAR}. Analyze DAI minting vs pool-based borrowing, rates, collateral, and more.` ,
+  alternates: { canonical: "/crypto-loans/compare/makerdao-vs-compound" }};
 
 const items: ComparisonItem[] = [
   { name: "MakerDAO", slug: "makerdao", rating: 4.6, affiliateUrl: "https://degen0x.com/go/makerdao", features: { "Model": "Stablecoin minting", "Borrowable Assets": "DAI only", "Collateral Types": "30+ (including RWAs)", "Rate Type": "Governance-set stability fee", "Liquidation": "Dutch auction system", "Governance": "MKR token", "Unique Feature": "Creates new DAI (no liquidity constraint)" } },
@@ -22,7 +25,14 @@ const faqs: FAQ[] = [
 export default function MakerdaoVsCompoundPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Compare", href: "/crypto-loans/compare/makerdao-vs-compound" }, { label: "MakerDAO vs Compound", href: "/crypto-loans/compare/makerdao-vs-compound" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="crypto-loans"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Compare", href: "/crypto-loans/compare/makerdao-vs-compound" }, { label: "MakerDAO vs Compound", href: "/crypto-loans/compare/makerdao-vs-compound" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">MakerDAO vs Compound ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -30,6 +40,57 @@ export default function MakerdaoVsCompoundPage() {
       </div>
       <section className="mb-12"><ComparisonTable items={items} features={features} title="MakerDAO vs Compound" /></section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/compare/makerdao Vs Compound", "description": "Crypto content on degen0x", "url": "https://degen0x.com/crypto-loans/compare/makerdao-vs-compound"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

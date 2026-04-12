@@ -9,9 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "SEC Digital Commodities List 2026: All 16 Crypto Assets Classified | degen0x",
-  description:
-    "The SEC & CFTC joint interpretation (March 2026) classified 16 digital commodities: Bitcoin, Ethereum, Solana, and 13 others. Learn the 5-category token taxonomy, what changed, and what it means for ETFs, staking, and your portfolio.",
+  title: "SEC Digital Commodities List 2026: All 16 Crypto Assets",
+  description: "The SEC & CFTC joint interpretation (March 2026) classified 16 digital commodities: Bitcoin, Ethereum, Solana, and 13 others. Learn the 5-category token",
   keywords: [
     "SEC digital commodities",
     "SEC CFTC crypto classification 2026",
@@ -38,7 +37,8 @@ export const metadata: Metadata = {
     description:
       "16 assets classified as digital commodities. Here&apos;s what the landmark March 17 joint interpretation means.",
   },
-};
+
+  alternates: { canonical: "/learn/sec-digital-commodities-classification-guide" }};
 
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
@@ -633,7 +633,57 @@ export default function SECDigitalCommoditiesPage() {
 
         {/* Back to Top */}
         <BackToTop />
-      </main>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </main>
     
         <script
           type="application/ld+json"

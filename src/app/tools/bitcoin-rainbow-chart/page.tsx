@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bitcoin Rainbow Chart 2026: Trading Guide & Historical Analysis | degen0x',
+  title: "Bitcoin Rainbow Chart 2026: Trading Guide & Historical",
   description: 'Understand the Bitcoin Rainbow Chart logarithmic regression bands. Learn how traders use it for DCA timing, market cycles, and when to buy/sell in 2026.',
   keywords: ['bitcoin rainbow chart', 'bitcoin chart', 'trading bands', 'logarithmic regression', 'bitcoin price cycle', 'buying signal', 'dca timing'],
   openGraph: {

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import StructuredData from '@/components/StructuredData';
@@ -31,7 +32,8 @@ export const metadata: Metadata = {
     description: 'Explore digital asset treasury companies (DATCo) in 2026. Compare top BTC and ETH treasury companies, business models, and risks.',
     images: [`${SITE_URL}/og-corporate-crypto-treasury-guide-2026.svg`],
   },
-};
+
+  alternates: { canonical: "/learn/corporate-crypto-treasury-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: 'Corporate Crypto Treasury Guide 2026',
@@ -87,7 +89,14 @@ export default function CorporatoCryptoTreasuryGuide() {
           padding: '2rem 1rem',
         }}
       >
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           {/* Header Section */}
           <div style={{ marginBottom: '2rem' }}>
             <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem' }}>

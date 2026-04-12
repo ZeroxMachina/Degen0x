@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Smart Contract Audit Business Guide 2026: Career, Pricing, Tools | degen0x',
-  description: 'Start a smart contract audit firm. Compare Trail of Bits, OpenZeppelin, Certik, Spearbit, Code4rena. Learn pricing ($5K-$500K), methodology, formal verification, bug bounties.',
+  title: "Smart Contract Audit Business Guide 2026: Career, Pricing,",
+  description: "Start a smart contract audit firm. Compare Trail of Bits, OpenZeppelin, Certik, Spearbit, Code4rena. Learn pricing ($5K-$500K), methodology, formal",
   keywords: ['smart contract audit', 'security audit', 'Trail of Bits', 'OpenZeppelin', 'Certik', 'Spearbit', 'Code4rena', 'Slither', 'Mythril', 'bug bounty'],
   openGraph: {
     type: 'article',
@@ -429,6 +429,56 @@ export default function SmartContractAuditBusinessGuide() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

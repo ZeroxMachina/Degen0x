@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'MEV Supply Chain & Proposer-Builder Separation (PBS) | degen0x Learn Guide',
-  description: 'Comprehensive guide to MEV supply chain, PBS infrastructure, builder/relay markets, and enshrined PBS (EIP-7732). Understand the future of block production on Ethereum.',
+  title: "MEV Supply Chain & Proposer-Builder Separation (PBS) Learn",
+  description: "Comprehensive guide to MEV supply chain, PBS infrastructure, builder/relay markets, and enshrined PBS (EIP-7732). Understand the future of block production on",
   keywords: 'MEV, proposer-builder separation, PBS, EIP-7732, ePBS, Ethereum, builders, relays, validators',
   authors: [{ name: 'degen0x' }],
   openGraph: {

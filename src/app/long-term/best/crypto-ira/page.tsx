@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,15 +11,14 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto IRA Providers ${CURRENT_YEAR} - Tax-Advantaged Bitcoin Retirement`,
   description: `Compare the best crypto IRA providers for ${CURRENT_YEAR}. Reviews of Bitcoin IRA, iTrustCapital, Alto Crypto, BitcoinIRA, and more. Tax-advantaged retirement investing in Bitcoin, Ethereum, and 200+ cryptocurrencies.`,
-};
+  alternates: { canonical: "/long-term/best/crypto-ira" }};
 
 const products: Product[] = [
   {
     name: "iTrustCapital",
     slug: "itrustcapital",
     rating: 4.8,
-    description:
-      "iTrustCapital is the leading crypto IRA platform, offering tax-advantaged retirement investing with support for 30+ cryptocurrencies and precious metals. With no monthly account fees, 24/7 trading, and both Traditional and Roth IRA options, it strikes the best balance of cost and features for most retirement investors. The platform handles all IRS reporting and custodial compliance through its partnership with Fortress Trust.",
+    description: "iTrustCapital is the leading crypto IRA platform, offering tax-advantaged retirement investing with support for 30+ cryptocurrencies and precious metals. With",
     pros: ["No monthly account fees", "30+ supported cryptocurrencies", "24/7 trading availability", "Traditional, Roth, and SEP IRA support", "Precious metals for diversification"],
     cons: ["1% per-trade fee", "No staking within IRA", "US-only availability", "No managed portfolio option"],
     fees: "1% per trade, no monthly fees",
@@ -110,7 +111,14 @@ const faqs: FAQ[] = [
 export default function CryptoIraPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Crypto IRA", href: "/long-term/best/crypto-ira" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="long-term"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Crypto IRA", href: "/long-term/best/crypto-ira" }]} />
       <AffiliateDisclosure />
 
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Crypto IRA Providers ({CURRENT_YEAR})</h1>
@@ -164,6 +172,57 @@ export default function CryptoIraPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/crypto Ira", "description": "iTrustCapital is the leading crypto IRA platform, offering tax-advantaged retirement investing with support for 30+ cryptocurrencies and precious metals. With", "url": "https://degen0x.com/long-term/best/crypto-ira"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

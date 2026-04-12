@@ -14,8 +14,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Bittensor (TAO) Guide 2026: How AI Subnets Work | degen0x",
-  description:
-    "Bittensor (TAO) explained: how AI subnets, miners, validators, and Yuma Consensus work. Covers 2026 metrics, TAO tokenomics, the halving impact, and honest risk assessment.",
+  description: "Bittensor (TAO) explained: how AI subnets, miners, validators, and Yuma Consensus work. Covers 2026 metrics, TAO tokenomics, the halving impact, and honest",
   keywords: [
     "bittensor guide 2026",
     "what is bittensor",

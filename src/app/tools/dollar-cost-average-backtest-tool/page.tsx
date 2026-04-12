@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DCA Backtest Tool Guide: Bitcoin & Ethereum Historical Performance (2015-2025) | degen0x',
-  description: 'Backtest dollar-cost averaging strategies on BTC and ETH with historical data. Compare daily vs weekly vs monthly DCA returns, analyze lump sum vs DCA performance with real numbers.',
+  title: "DCA Backtest Tool Guide: Bitcoin & Ethereum Historical",
+  description: "Backtest dollar-cost averaging strategies on BTC and ETH with historical data. Compare daily vs weekly vs monthly DCA returns, analyze lump sum vs DCA",
   keywords: ['DCA backtest', 'dollar-cost averaging', 'Bitcoin backtest', 'Ethereum DCA', 'investment strategy', 'historical returns'],
   openGraph: {
     title: 'DCA Backtest Tool Guide',

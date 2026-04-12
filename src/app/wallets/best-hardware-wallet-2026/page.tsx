@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Hardware Wallet 2026: Ledger Nano X, Trezor, Safe3, Keystone | Comparison | degen0x',
-  description: 'Hardware wallet comparison: Ledger Nano X ($79, 1000+ coins), Trezor Model T ($180, open-source), Safe 3 ($299, EVM), Keystone Pro, BitBox02. Prices, features, security.',
+  title: "Best Hardware Wallet 2026: Ledger Nano X, Trezor, Safe3,",
+  description: "Hardware wallet comparison: Ledger Nano X ($79, 1000+ coins), Trezor Model T ($180, open-source), Safe 3 ($299, EVM), Keystone Pro, BitBox02. Prices, features,",
   keywords: ['best hardware wallet', 'hardware wallet comparison', 'Ledger Nano X', 'Trezor', 'cold wallet', 'self-custody'],
   openGraph: { type: 'article', title: 'Best Hardware Wallet 2026', description: 'Ledger, Trezor, Keystone comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/best-hardware-wallet-2026', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'Hardware Wallets' }] },
   twitter: { card: 'summary_large_image', title: 'Best Hardware Wallet', description: 'Ledger $79, Trezor $180', image: 'https://degen0x.com/og-wallets.svg' },

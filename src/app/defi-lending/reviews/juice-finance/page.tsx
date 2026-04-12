@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Juice Finance Review ${CURRENT_YEAR}: Blast Lending & Points`,
   description:
     "Complete Juice Finance review covering lending on Blast L2, points farming, leveraged strategies, yield opportunities, and risk analysis.",
-};
+  alternates: { canonical: "/defi-lending/reviews/juice-finance" }};
 
 export default function JuiceFinanceReview() {
   return (

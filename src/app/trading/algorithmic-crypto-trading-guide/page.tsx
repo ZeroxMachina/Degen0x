@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Algorithmic Crypto Trading Guide 2026 | Hummingbot, Freqtrade, 3Commas',
+  title: "Algorithmic Crypto Trading Guide 2026 | Hummingbot,",
   description: 'Build and deploy algo trading bots for crypto: momentum, mean reversion, arbitrage, ML strategies on Hummingbot, Freqtrade, CCXT, 3Commas with backtesting.',
   keywords: ['algorithmic trading', 'crypto bots', 'Hummingbot', 'Freqtrade', 'CCXT', '3Commas', 'momentum trading', 'arbitrage bot'],
   openGraph: {

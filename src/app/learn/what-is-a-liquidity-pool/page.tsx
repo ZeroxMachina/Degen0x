@@ -234,8 +234,8 @@ export default function LiquidityPoolsPage() {
             { q: 'What is JIT liquidity and MEV impact?', a: 'JIT: bots add/remove liquidity in single block (earn fees, no IL). MEV: sandwich attacks, front-running (lose 0.5-5%). Defense: use L2 with MEV protection.' },
           ].map((faq, i) => (
             <div key={i} style={{ ...infoBoxStyle, marginBottom: 16 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Ethereum Gas Tracker 2026: Real-Time Gwei Prices & Fee Estimates | degen0x',
-  description: 'Track Ethereum gas fees in real-time. Understand gwei pricing, EIP-1559 mechanics, best times to transact, and L2 alternatives. View gas costs for swaps, NFT mints, token transfers.',
+  title: "Ethereum Gas Tracker 2026: Real-Time Gwei Prices & Fee",
+  description: "Track Ethereum gas fees in real-time. Understand gwei pricing, EIP-1559 mechanics, best times to transact, and L2 alternatives. View gas costs for swaps, NFT",
   keywords: ['ethereum gas tracker', 'gas fees', 'gwei', 'EIP-1559', 'etherscan gas', 'transaction fees', 'ethereum L2'],
   openGraph: {
     type: 'article',

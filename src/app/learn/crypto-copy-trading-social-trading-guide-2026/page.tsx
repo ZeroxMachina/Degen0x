@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto Copy Trading & Social Trading Platforms Guide 2026',
-  description: 'Complete guide to crypto copy trading and social trading platforms in 2026. Learn how copy trading works, compare top platforms like Bitget, Bybit, and eToro, evaluate lead traders, and understand the risks and strategies.',
+  description: "Complete guide to crypto copy trading and social trading platforms in 2026. Learn how copy trading works, compare top platforms like Bitget, Bybit, and eToro,",
   keywords: [
     'copy trading',
     'crypto copy trading',

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: `Best Hardware Wallets 2026 — Cold Storage Reviews & Rankings | ${SITE_NAME}`,
   description: `The best hardware wallets of 2026, ranked and tested. Ledger Nano X vs Trezor Model T vs Coldcard Mk4 vs Foundation Passport 2. Expert cold storage reviews with up-to-date pricing.`,
   keywords: "best hardware wallet 2026, cold wallet, ledger vs trezor, coldcard, foundation passport, crypto cold storage",
-};
+  alternates: { canonical: "/wallets/best/hardware" }};
 
 const WHATS_NEW_2026 = [
   {
@@ -328,6 +328,7 @@ export default function BestHardwareWalletsPage() {
       </section>
 
       <FAQSection faqs={hardwareWalletFAQs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Dual Secure Element Chips", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/hardware"}) }} />
     </div>
   );
 }

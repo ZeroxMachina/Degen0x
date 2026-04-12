@@ -7,9 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Bitcoin Covenants & OP_CAT Guide 2026: BIP-347, Vaults, Trustless Bridges | degen0x",
-  description:
-    "Complete guide to Bitcoin covenants and OP_CAT (BIP-347) in 2026. Understand how OP_CAT enables programmable Bitcoin, covenant proposals compared, real-world use cases like vaults and trustless bridges, and the path to mainnet activation.",
+  title: "Bitcoin Covenants & OP_CAT Guide 2026: BIP-347, Vaults,",
+  description: "Complete guide to Bitcoin covenants and OP_CAT (BIP-347) in 2026. Understand how OP_CAT enables programmable Bitcoin, covenant proposals compared, real-world",
   keywords: [
     "Bitcoin covenants",
     "OP_CAT",
@@ -50,7 +49,8 @@ export const metadata: Metadata = {
       "OP_CAT makes Bitcoin programmable by enabling covenants: rules that constrain how Bitcoin can be spent. Learn vaults, trustless bridges, and the activation debate.",
     images: ["https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.png"],
   },
-};
+
+  alternates: { canonical: "/learn/bitcoin-covenants-opcat-guide-2026" }};
 
 // ─── Structured Data ───────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

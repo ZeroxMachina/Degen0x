@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'World ID & Proof of Personhood: Complete Guide 2026',
-  description: 'Comprehensive guide to Worldcoin, World ID, and proof of personhood protocols. Explore biometric verification, zero-knowledge proofs, WLD tokenomics, World Chain, AgentKit, and the future of digital identity in 2026.',
+  description: "Comprehensive guide to Worldcoin, World ID, and proof of personhood protocols. Explore biometric verification, zero-knowledge proofs, WLD tokenomics, World",
   keywords: [
     'World ID',
     'Worldcoin',

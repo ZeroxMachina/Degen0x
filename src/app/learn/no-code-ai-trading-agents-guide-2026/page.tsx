@@ -9,10 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title:
-    "No-Code AI Trading Agents Guide 2026: Build Crypto Trading Bots Without Code | degen0x",
-  description:
-    "Build autonomous AI trading agents without coding. Learn how Walbi, CodakAI, and 3Commas use LLMs to interpret trading strategies in plain English. Create your first agent in minutes.",
+  title: "No-Code AI Trading Agents Guide 2026: Build Crypto Trading",
+  description: "Build autonomous AI trading agents without coding. Learn how Walbi, CodakAI, and 3Commas use LLMs to interpret trading strategies in plain English. Create your",
   keywords: [
     "no-code AI trading agents",
     "AI trading bots",
@@ -41,7 +39,8 @@ export const metadata: Metadata = {
     description:
       "250K+ daily active AI agents trading crypto. Create your first agent in minutes using plain English.",
   },
-};
+
+  alternates: { canonical: "/learn/no-code-ai-trading-agents-guide-2026" }};
 
 export default function NoCodeAITradingAgentsPage() {
   const articleSchema = generateArticleSchema({
@@ -990,6 +989,56 @@ export default function NoCodeAITradingAgentsPage() {
             })
           }}
         />
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

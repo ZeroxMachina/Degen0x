@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = walletProducts.find((p) => p.slug === "phantom")!;
 export const metadata: Metadata = {
   title: `Phantom Wallet Review (${CURRENT_YEAR}) - Best Solana Wallet? | ${SITE_NAME}`,
   description: `Complete Phantom wallet review for ${CURRENT_YEAR}. Covers multi-chain support, NFT features, staking, swaps, security, and the user experience.`,
-};
+  alternates: { canonical: "/wallets/reviews/phantom" }};
 
 const overview =
   "Phantom has quickly established itself as one of the most popular crypto wallets, originally built for the Solana ecosystem and now supporting Ethereum, Polygon, and Bitcoin. Known for its stunning user interface, fast performance, and rich feature set, Phantom combines the simplicity of a beginner-friendly wallet with the power tools that DeFi and NFT enthusiasts demand. It is available as a browser extension for Chrome, Firefox, Brave, and Edge, plus a mobile app for iOS and Android. With built-in token swaps, SOL staking, NFT galleries, and transaction simulation, Phantom offers one of the most complete wallet experiences available.";

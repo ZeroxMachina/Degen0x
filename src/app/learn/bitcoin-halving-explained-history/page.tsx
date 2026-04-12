@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bitcoin Halving Explained: History, Dates & Price Impact | degen0x',
-  description: 'Complete guide to Bitcoin halving: how it works, historical halvings (2012, 2016, 2020, 2024), next halving in 2028, price impact, and what it means for miners and investors.',
+  title: "Bitcoin Halving Explained: History, Dates & Price Impact",
+  description: "Complete guide to Bitcoin halving: how it works, historical halvings (2012, 2016, 2020, 2024), next halving in 2028, price impact, and what it means for miners",
   keywords: [
     'Bitcoin halving',
     'Bitcoin halving history',

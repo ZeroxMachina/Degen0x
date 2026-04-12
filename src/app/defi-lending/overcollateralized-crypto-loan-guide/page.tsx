@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Overcollateralized Crypto Loans Guide 2026: LTV, Health Factor, Liquidation | degen0x',
-  description: 'Master overcollateralized DeFi lending: understand LTV ratios, health factors, liquidation mechanics, and risk management for safe borrowing on Aave, Compound, and Morpho.',
+  title: "Overcollateralized Crypto Loans Guide 2026: LTV, Health",
+  description: "Master overcollateralized DeFi lending: understand LTV ratios, health factors, liquidation mechanics, and risk management for safe borrowing on Aave, Compound,",
   keywords: ['overcollateralized loans', 'LTV', 'health factor', 'liquidation', 'collateral ratio', 'DeFi borrowing', 'Aave', 'Compound'],
   openGraph: {
     type: 'article',

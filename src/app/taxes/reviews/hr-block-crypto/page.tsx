@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `H&R Block Crypto Review (${CURRENT_YEAR}): Tax Filing for Crypto | ${SITE_NAME}`,
   description: "Review of H&R Block's crypto tax capabilities. Understand when professional tax preparation makes sense and the limitations of H&R Block for crypto users.",
-};
+  alternates: { canonical: "/taxes/reviews/hr-block-crypto" }};
 
 export default function HRBlockCryptoReview() {
   return (

@@ -11,9 +11,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Tokenized Treasuries 2026: BlackRock BUIDL, Ondo & On-Chain T-Bill Yield",
-  description:
-    "Over $25B in US Treasury bonds now live on-chain. Learn how BlackRock BUIDL, Ondo Finance, and Franklin Templeton work, what yield to expect, and how to access tokenized treasuries in 2026.",
+  title: "Tokenized Treasuries 2026: BlackRock BUIDL, Ondo & On-Chain",
+  description: "Over $25B in US Treasury bonds now live on-chain. Learn how BlackRock BUIDL, Ondo Finance, and Franklin Templeton work, what yield to expect, and how to access",
   openGraph: {
     title: "Tokenized Treasuries 2026: Earn T-Bill Yield On-Chain",
     description:
@@ -34,15 +33,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tokenized Treasuries 2026: BlackRock BUIDL, Ondo & On-Chain T-Bill Yield",
+    title: "Tokenized Treasuries 2026: BlackRock BUIDL, Ondo & On-Chain",
     description:
       "$25B+ in T-bills are on-chain. Earn 4-5% APY with BlackRock BUIDL, Ondo USDY, or Franklin Benji. Full guide inside.",
     images: [`${SITE_URL}/api/og?title=Tokenized+Treasuries+2026&category=DeFi&type=learn`],
   },
-};
+
+  alternates: { canonical: "/learn/tokenized-treasuries-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
-  title: "Tokenized Treasuries 2026: BlackRock BUIDL, Ondo & On-Chain T-Bill Yield",
+  title: "Tokenized Treasuries 2026: BlackRock BUIDL, Ondo & On-Chain",
   description:
     "Over $25B in US Treasury bonds now live on-chain. Learn how BlackRock BUIDL, Ondo Finance, and Franklin Templeton work, what yield to expect, and how to access tokenized treasuries.",
   url: `${SITE_URL}/learn/tokenized-treasuries-guide-2026`,
@@ -729,9 +729,9 @@ export default function TokenizedTreasuriesGuidePage() {
               }}
             >
               <div className="font-bold mb-2" style={{ color: "var(--color-text)" }}>
-                {faq.q}
+                {faq.question}
               </div>
-              <div className="text-sm">{faq.a}</div>
+              <div className="text-sm">{faq.answer}</div>
             </div>
           ))}
         </div>
@@ -803,6 +803,56 @@ export default function TokenizedTreasuriesGuidePage() {
             })
           }}
         />
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

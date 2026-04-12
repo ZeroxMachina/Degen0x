@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Alpaca Finance Review ${CURRENT_YEAR}: Leveraged Yield Farming`,
   description:
     "Complete Alpaca Finance review covering leveraged yield farming, lending vaults, automated strategies, and risk analysis on BNB Chain and Fantom.",
-};
+  alternates: { canonical: "/defi-lending/reviews/alpaca-finance" }};
 
 export default function AlpacaFinanceReview() {
   return (

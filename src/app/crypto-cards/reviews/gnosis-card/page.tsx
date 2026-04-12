@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,8 +9,8 @@ const product = cryptoCards.find((c) => c.slug === "gnosis-card")!;
 
 export const metadata: Metadata = {
   title: `Gnosis Pay Card Review (${CURRENT_YEAR}): DeFi Spending & Pros/Cons | degen0x`,
-  description: "In-depth Gnosis Pay card review covering on-chain spending from Safe wallets, DeFi integration, progressive decentralization, and whether it suits DeFi-native users.",
-};
+  description: "In-depth Gnosis Pay card review covering on-chain spending from Safe wallets, DeFi integration, progressive decentralization, and whether it suits DeFi-native",
+  alternates: { canonical: "/crypto-cards/reviews/gnosis-card" }};
 
 export default function GnosisCardReviewPage() {
   return (

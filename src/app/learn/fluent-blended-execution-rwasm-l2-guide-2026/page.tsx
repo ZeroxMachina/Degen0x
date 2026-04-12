@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: 'Fluent: Blended Execution rWASM L2 Guide 2026 | Degen0x',
-  description: 'Complete guide to Fluent, the blended execution Layer 2 unifying EVM, Wasm, and SVM contracts atomically via rWASM. Learn architecture, use cases, and how Fluent composes Solidity and Rust in one transaction.',
+  description: "Complete guide to Fluent, the blended execution Layer 2 unifying EVM, Wasm, and SVM contracts atomically via rWASM. Learn architecture, use cases, and how",
   keywords: [
     'Fluent',
     'Blended execution',

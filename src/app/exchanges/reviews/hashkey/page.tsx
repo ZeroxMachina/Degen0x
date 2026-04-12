@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `HashKey Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth HashKey Exchange review covering this licensed Hong Kong crypto exchange's fees, supported assets, security, and regulatory compliance.",
-};
+  alternates: { canonical: "/exchanges/reviews/hashkey" }};
 
 export default function HashKeyReview() {
   return (

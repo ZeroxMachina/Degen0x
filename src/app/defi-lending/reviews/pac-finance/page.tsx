@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Pac Finance Review ${CURRENT_YEAR}: Blast L2 Lending & Points`,
   description: "In-depth Pac Finance review covering lending on Blast, points farming, yield strategies, and risk analysis for this Blast-native lending protocol.",
-};
+  alternates: { canonical: "/defi-lending/reviews/pac-finance" }};
 
 export default function PacFinanceReview() {
   return (

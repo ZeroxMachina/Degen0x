@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `TurboTax Crypto Review (${CURRENT_YEAR}): Built-In Crypto Tax Filing | ${SITE_NAME}`,
   description: "Review of TurboTax's crypto tax features. Understand its capabilities, limitations, and when dedicated crypto tax software is a better choice.",
-};
+  alternates: { canonical: "/taxes/reviews/turbotax-crypto" }};
 
 export default function TurboTaxCryptoReview() {
   return (

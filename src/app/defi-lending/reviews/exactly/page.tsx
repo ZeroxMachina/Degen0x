@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Exactly Protocol Review ${CURRENT_YEAR}: Fixed-Rate DeFi Lending`,
   description: "In-depth Exactly Protocol review covering fixed-rate lending, variable markets, the EXA token, and how this Optimism protocol enables predictable DeFi yields.",
-};
+  alternates: { canonical: "/defi-lending/reviews/exactly" }};
 
 export default function ExactlyReview() {
   return (

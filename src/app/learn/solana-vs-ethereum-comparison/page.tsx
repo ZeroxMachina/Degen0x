@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Solana vs Ethereum Comparison 2026 | degen0x',
-  description: 'Solana vs Ethereum: TPS (4,000 vs 15-30), fees ($0.00025 vs $1-50), PoH vs PoS, TVL, ecosystem, Rust vs Solidity, decentralization tradeoffs, and uptime comparison.',
+  description: "Solana vs Ethereum: TPS (4,000 vs 15-30), fees ($0.00025 vs $1-50), PoH vs PoS, TVL, ecosystem, Rust vs Solidity, decentralization tradeoffs, and uptime",
   keywords: ['solana vs ethereum', 'SOL vs ETH', 'blockchain comparison', 'TPS', 'fees', 'consensus mechanism'],
   openGraph: {
     type: 'article',

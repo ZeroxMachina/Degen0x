@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'AI Crypto Tokens Complete Guide 2026: Render, Fetch.ai, Bittensor | degen0x',
-  description: 'AI crypto tokens 2026: Render ($3B, GPU compute), Fetch.ai ($2.5B, autonomous agents), Bittensor ($3.8B, ML), SingularityNET ($450M, ASI), Ocean ($150M, data). Market cap, use cases, comparison table.',
+  title: "AI Crypto Tokens Complete Guide 2026: Render, Fetch.ai,",
+  description: "AI crypto tokens 2026: Render ($3B, GPU compute), Fetch.ai ($2.5B, autonomous agents), Bittensor ($3.8B, ML), SingularityNET ($450M, ASI), Ocean ($150M, data).",
   keywords: ['ai crypto tokens', 'render token', 'fetch.ai', 'bittensor', 'ai tokens 2026', 'gpu compute'],
   openGraph: {
     type: 'article',

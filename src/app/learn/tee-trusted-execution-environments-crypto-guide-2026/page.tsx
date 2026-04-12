@@ -7,8 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'TEEs in Crypto: Trusted Execution Environments Guide 2026 | degen0x',
-  description: 'Complete guide to Trusted Execution Environments (TEEs) in crypto. Learn confidential computing, Phala Network, Oasis, Secret Network, Marlin, verifiable AI, and how TEEs compare to zero-knowledge proofs.',
+  title: "TEEs in Crypto: Trusted Execution Environments Guide 2026",
+  description: "Complete guide to Trusted Execution Environments (TEEs) in crypto. Learn confidential computing, Phala Network, Oasis, Secret Network, Marlin, verifiable AI,",
   keywords: [
     'TEE trusted execution environment',
     'confidential computing crypto',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: 'article',
-    title: 'TEEs in Crypto: Trusted Execution Environments Guide 2026 | degen0x',
+    title: "TEEs in Crypto: Trusted Execution Environments Guide 2026",
     description: 'Discover how Trusted Execution Environments enable confidential computing on-chain. Phala, Oasis, Secret Network, Marlin, and verifiable AI inference explained.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TEEs in Crypto: Trusted Execution Environments Guide 2026 | degen0x',
+    title: "TEEs in Crypto: Trusted Execution Environments Guide 2026",
     description: 'Hardware-isolated enclaves, confidential smart contracts, and verifiable AI inference. Complete TEE guide for crypto.',
   },
   alternates: {

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Seamless Protocol Review ${CURRENT_YEAR}: Base Native Lending`,
   description:
     "Detailed Seamless Protocol review covering integrated lending loops, ILM strategies, yield rates, and how this Base-native lending protocol works.",
-};
+  alternates: { canonical: "/defi-lending/reviews/seamless" }};
 
 export default function SeamlessReview() {
   return (

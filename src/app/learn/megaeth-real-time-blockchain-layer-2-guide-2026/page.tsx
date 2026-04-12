@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'MegaETH Guide 2026 — Real-Time L2, 100K TPS & MEGA Token',
-  description: 'Complete guide to MegaETH: the first real-time Ethereum L2 with 100,000 TPS, sub-10ms blocks, heterogeneous architecture, MegaMafia ecosystem, and MEGA tokenomics.',
+  description: "Complete guide to MegaETH: the first real-time Ethereum L2 with 100,000 TPS, sub-10ms blocks, heterogeneous architecture, MegaMafia ecosystem, and MEGA",
   keywords: [
     'MegaETH',
     'MEGA token',

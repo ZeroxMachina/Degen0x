@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Zerion Wallet Review (${CURRENT_YEAR}) - Best DeFi Portfolio Wallet? | ${SITE_NAME}`,
   description: `Detailed Zerion wallet review for ${CURRENT_YEAR}. Covers multi-chain DeFi tracking, swap aggregation, NFT management, and portfolio analytics.`,
-};
+  alternates: { canonical: "/wallets/reviews/zerion" }};
 
 const product = {
   name: "Zerion",

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'ERC-20 Token Standard Explained 2026: Functions, Approvals & Security | degen0x',
-  description: 'Complete guide to ERC-20 token standard. Learn 6 required functions (transfer, approve, balanceOf), events, decimal precision. Compare ERC-20 vs ERC-721 vs ERC-1155, approval vulnerabilities, ERC-4626 vault standard.',
+  title: "ERC-20 Token Standard Explained 2026: Functions, Approvals",
+  description: "Complete guide to ERC-20 token standard. Learn 6 required functions (transfer, approve, balanceOf), events, decimal precision. Compare ERC-20 vs ERC-721 vs",
   keywords: ['ERC-20', 'token standard', 'Ethereum', 'transfer', 'approve', 'smart contract', 'USDC', 'USDT', 'approval vulnerability', 'ERC-4626'],
   openGraph: {
     type: 'article',

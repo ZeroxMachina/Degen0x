@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bitcoin Ordinals & Runes Guide 2026: NFTs & Tokens on BTC | degen0x',
+  title: "Bitcoin Ordinals & Runes Guide 2026: NFTs & Tokens on BTC",
   description:
     'Complete guide to Bitcoin Ordinals, BRC-20, and Runes in 2026. Learn how NFTs and fungible tokens work on Bitcoin, compare standards, and understand the risks.',
   keywords: [

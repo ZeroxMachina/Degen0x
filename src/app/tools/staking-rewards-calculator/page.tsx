@@ -598,10 +598,10 @@ export default function StakingRewardsCalculatorPage() {
                 }}
     >
                 <h3 style={{ fontSize: '1.1rem', marginBottom: '10px', color: '#79c0ff' }}>
-                  {faq.q}
+                  {faq.question}
                 </h3>
                 <p style={{ lineHeight: '1.7', color: '#8b949e' }}>
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}

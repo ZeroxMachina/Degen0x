@@ -11,14 +11,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Ways to Spend Crypto in ${CURRENT_YEAR} - Cards, Apps & More | ${SITE_NAME}`,
   description: `Compare the best crypto debit cards, payment apps, and spending options in ${CURRENT_YEAR}. Expert reviews of Crypto.com Visa, Coinbase Card, BitPay, and more.`,
-};
+  alternates: { canonical: "/spending/best" }};
 
 const topSpendingProducts: Product[] = [
   {
     name: "Crypto.com Visa Card",
     slug: "crypto-com-visa",
     rating: 4.8,
-    description: "The leading crypto debit card with up to 5% cashback in CRO, free Spotify and Netflix rebates on higher tiers, and no annual fee on the base card. Accepted worldwide wherever Visa is accepted.",
+    description: "The leading crypto debit card with up to 5% cashback in CRO, free Spotify and Netflix rebates on higher tiers, and no annual fee on the base card. Accepted",
     pros: ["Up to 5% crypto cashback", "Free Spotify/Netflix on higher tiers", "No annual fee (base tier)", "Airport lounge access (premium tiers)"],
     cons: ["Requires CRO staking for best rewards", "180-day staking lock-up", "Cashback paid in CRO only"],
     fees: "No annual fee (base)",
@@ -288,7 +288,57 @@ export default function BestSpendingPage() {
         </section>
 
         <FAQSection faqs={faqs} />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
     </>
   );
 }

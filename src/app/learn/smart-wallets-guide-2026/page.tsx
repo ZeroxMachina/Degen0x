@@ -7,9 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Smart Wallets Guide 2026: Account Abstraction, Passkeys & Gasless UX Explained | degen0x",
-  description:
-    "Learn how smart wallets work in 2026. Understand account abstraction (ERC-4337), passkey authentication, gas sponsorship, session keys, and how wallets like Coinbase Smart Wallet, Safe, and Argent are reshaping crypto UX.",
+  title: "Smart Wallets Guide 2026: Account Abstraction, Passkeys &",
+  description: "Learn how smart wallets work in 2026. Understand account abstraction (ERC-4337), passkey authentication, gas sponsorship, session keys, and how wallets like",
   keywords: [
     "smart wallets 2026",
     "account abstraction wallet",
@@ -46,7 +45,8 @@ export const metadata: Metadata = {
       "Account abstraction wallets explained: passkey login, gas sponsorship, session keys, and social recovery. Coinbase Smart Wallet vs Safe vs Argent.",
     images: ["https://degen0x.com/og-smart-wallets-guide-2026.png"],
   },
-};
+
+  alternates: { canonical: "/learn/smart-wallets-guide-2026" }};
 
 // ─── Structured Data ───────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

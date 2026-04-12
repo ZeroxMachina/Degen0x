@@ -44,7 +44,8 @@ export const metadata: Metadata = {
     description:
       "Attention is alpha. Kaito AI built a platform to quantify it — and now lets you bet on it via Polymarket. Here's the full breakdown.",
   },
-};
+
+  alternates: { canonical: "/learn/kaito-ai-infofi-guide" }};
 
 export default function KaitoInfoFiGuidePage() {
   const articleSchema = generateArticleSchema({

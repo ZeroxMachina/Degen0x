@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Structured Products Guide 2026: Dual Investment, Shark Fin, Principal-Protected | degen0x',
-  description: 'Complete guide to crypto structured products: dual investment (8-12% APY), shark fin products (70-150% participation), principal-protected yields (3-5%). Compare issuers: Coinbase, Bybit, OKX, crypto banks. Real strategies for crypto yields.',
+  title: "Crypto Structured Products Guide 2026: Dual Investment,",
+  description: "Complete guide to crypto structured products: dual investment (8-12% APY), shark fin products (70-150% participation), principal-protected yields (3-5%).",
   keywords: ['crypto structured products', 'dual investment products', 'shark fin products', 'principal protected crypto', 'crypto yields', 'structured finance', 'crypto derivatives'],
   openGraph: {
     type: 'article',
@@ -498,6 +498,56 @@ export default function CryptoStructuredProductsGuide() {
             Crypto markets are volatile — diversify and only invest what you can afford to lose. See our <a href="/methodology" style={{ color: '#10b981' }}>research methodology</a>.
           </p>
         </div>
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

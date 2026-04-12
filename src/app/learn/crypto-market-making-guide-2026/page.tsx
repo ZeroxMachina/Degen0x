@@ -8,17 +8,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Market Making Guide 2026 — AMMs, LPs & Order Books | degen0x",
-  description:
-    "Master crypto market making in 2026. Learn how AMMs work, how to be a liquidity provider, manage impermanent loss, and understand order book market making on CEXs and DEXs.",
+  title: "Crypto Market Making Guide 2026 — AMMs, LPs & Order Books",
+  description: "Master crypto market making in 2026. Learn how AMMs work, how to be a liquidity provider, manage impermanent loss, and understand order book market making on",
   keywords:
     "crypto market making, AMM, liquidity provider, impermanent loss, Uniswap, concentrated liquidity, order book, market maker, DeFi liquidity, LP strategies 2026",
   openGraph: {
     type: "article",
-    title:
-      "Crypto Market Making Guide 2026 — AMMs, LPs & Order Books | degen0x",
-    description:
-      "Master crypto market making in 2026. Learn how AMMs work, how to be a liquidity provider, manage impermanent loss, and understand order book market making on CEXs and DEXs.",
+    title: "Crypto Market Making Guide 2026 — AMMs, LPs & Order Books",
+    description: "Master crypto market making in 2026. Learn how AMMs work, how to be a liquidity provider, manage impermanent loss, and understand order book market making on",
     publishedTime: "2026-03-24T00:00:00Z",
     authors: ["degen0x"],
     url: "https://degen0x.com/learn/crypto-market-making-guide-2026",
@@ -36,11 +33,12 @@ export const metadata: Metadata = {
     title: "Crypto Market Making Guide 2026 | degen0x",
     description: "Master AMMs, liquidity provision, and order book market making.",
   },
-};
+
+  alternates: { canonical: "/learn/crypto-market-making-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Crypto Market Making Guide 2026 — AMMs, LPs & Order Books",
-  description: "Master crypto market making in 2026. Learn how AMMs work, how to be a liquidity provider, manage impermanent loss, and understand order book market making on CEXs and DEXs.",
+  description: "Master crypto market making in 2026. Learn how AMMs work, how to be a liquidity provider, manage impermanent loss, and understand order book market making on",
   url: "https://degen0x.com/learn/crypto-market-making-guide-2026",
   datePublished: "2026-03-24T00:00:00Z",
   dateModified: "2026-03-24T00:00:00Z",

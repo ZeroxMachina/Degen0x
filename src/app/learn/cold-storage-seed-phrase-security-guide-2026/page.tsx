@@ -9,11 +9,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Cold Storage & Seed Phrase Security Guide 2026: Hardware Wallets & Self-Custody Best Practices",
-  description: "Complete guide to cold storage, hardware wallets, and seed phrase security in 2026. Learn Ledger vs Trezor, backup strategies, multi-sig setups, and self-custody best practices for protecting your crypto assets.",
+  title: "Cold Storage & Seed Phrase Security Guide 2026: Hardware",
+  description: "Complete guide to cold storage, hardware wallets, and seed phrase security in 2026. Learn Ledger vs Trezor, backup strategies, multi-sig setups, and",
   keywords: "cold storage crypto, hardware wallet security, seed phrase backup, self-custody, Ledger vs Trezor, crypto security best practices, recovery phrase safety, Coldcard, Trezor, Ledger Nano X",
   openGraph: {
-    title: "Cold Storage & Seed Phrase Security Guide 2026: Hardware Wallets & Self-Custody Best Practices",
+    title: "Cold Storage & Seed Phrase Security Guide 2026: Hardware",
     description: "The definitive guide to securing cryptocurrency with cold storage, hardware wallets, and professional-grade seed phrase management.",
     type: "article",
     publishedTime: "2026-03-24T00:00:00Z",
@@ -32,7 +32,8 @@ export const metadata: Metadata = {
     title: "Cold Storage & Seed Phrase Security Guide 2026 | degen0x",
     description: "Hardware wallets, seed phrase backup strategies, multi-sig setups, and self-custody best practices for protecting your crypto.",
   },
-};
+
+  alternates: { canonical: "/learn/cold-storage-seed-phrase-security-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Cold Storage & Seed Phrase Security Guide 2026 — Hardware Wallets & Self-Custody",

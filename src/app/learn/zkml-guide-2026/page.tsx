@@ -13,11 +13,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "ZKML Guide 2026: Zero-Knowledge Machine Learning for Verifiable AI",
-  description: "Complete guide to ZKML (Zero-Knowledge Machine Learning) in 2026. Learn how to verify ML model inference without revealing weights or data. EZKL, Giza, Lagrange DeepProve, and more.",
+  title: "ZKML Guide 2026: Zero-Knowledge Machine Learning for",
+  description: "Complete guide to ZKML (Zero-Knowledge Machine Learning) in 2026. Learn how to verify ML model inference without revealing weights or data. EZKL, Giza,",
   keywords: "ZKML, zero-knowledge machine learning, verifiable AI, ML inference, ezkl, Giza, World Remainder prover, AI privacy, zk-snarks, machine learning proofs, AI verification",
   openGraph: {
-    title: "ZKML Guide 2026: Zero-Knowledge Machine Learning for Verifiable AI",
+    title: "ZKML Guide 2026: Zero-Knowledge Machine Learning for",
     description: "Master ZKML in 2026: Verify ML inference privately with ezkl, Giza, Lagrange, and other leading projects. Explore FHE + ZKML convergence.",
     type: "article",
     url: `${SITE_URL}/learn/zkml-guide-2026`,
@@ -37,7 +37,8 @@ export const metadata: Metadata = {
     description: "Learn how to verify ML model inference without revealing model weights or input data. Complete technical guide.",
     image: "https://degen0x.com/og-zkml-guide-2026.svg",
   },
-};
+
+  alternates: { canonical: "/learn/zkml-guide-2026" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },

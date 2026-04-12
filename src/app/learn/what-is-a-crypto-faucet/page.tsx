@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'What is a Crypto Faucet? Testnet & Mainnet Guide | degen0x',
-  description: 'Learn crypto faucets for developer testing. Compare Sepolia, Goerli, Mumbai testnet faucets and Chainlink mainnet faucets with cooldown periods and requirements.',
+  description: "Learn crypto faucets for developer testing. Compare Sepolia, Goerli, Mumbai testnet faucets and Chainlink mainnet faucets with cooldown periods and",
   keywords: ['crypto faucet', 'testnet faucet', 'Sepolia faucet', 'Goerli', 'Mumbai', 'Chainlink faucet', 'Alchemy faucet', 'test tokens'],
   openGraph: {
     title: 'What is a Crypto Faucet? Testnet & Mainnet Guide | degen0x',

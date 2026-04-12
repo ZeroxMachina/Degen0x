@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import PortfolioTracker from '@/components/PortfolioTracker';
 
 export const metadata: Metadata = {
@@ -9,7 +11,8 @@ export const metadata: Metadata = {
     title: 'Portfolio Tracker | degen0x',
     description: 'Track your crypto holdings and PnL. Free, fast, no signup required.',
   },
-};
+
+  alternates: { canonical: "/portfolio" }};
 
 export default function PortfolioPage() {
   return <PortfolioTracker />;

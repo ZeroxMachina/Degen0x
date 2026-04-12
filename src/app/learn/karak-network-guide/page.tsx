@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Karak Network Guide 2026 — Universal Restaking Explained | degen0x",
+  title: "Karak Network Guide 2026 — Universal Restaking Explained",
   description:
     "Karak is the second-largest restaking protocol with $1B+ TVL. Learn how multi-chain, multi-asset restaking works, compare Karak vs EigenLayer, and how to earn.",
   keywords: [
@@ -45,7 +45,8 @@ export const metadata: Metadata = {
     description:
       "$1B+ TVL restaking protocol supporting BTC, stablecoins, and LP tokens across 5+ chains. See how it stacks up against EigenLayer.",
   },
-};
+
+  alternates: { canonical: "/learn/karak-network-guide" }};
 
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "Tangem",
   slug: "tangem",
   rating: 4.0,
-  description:
-    "Tangem is a card-shaped hardware wallet using NFC technology and a secure chip (EAL6+). No batteries, no cables - just tap your phone to sign transactions. Supports 6,000+ tokens.",
+  description: "Tangem is a card-shaped hardware wallet using NFC technology and a secure chip (EAL6+). No batteries, no cables - just tap your phone to sign transactions.",
   pros: [
     "Credit-card form factor with NFC - no cables or batteries needed",
     "EAL6+ certified secure chip for strong key protection",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Tangem Wallet Review (${CURRENT_YEAR}) - NFC Card Hardware Wallet | ${SITE_NAME}`,
   description: `Complete Tangem wallet review for ${CURRENT_YEAR}. Covers the NFC card design, EAL6+ secure chip, backup system, supported chains, and mobile experience.`,
-};
+  alternates: { canonical: "/wallets/reviews/tangem" }};
 
 const overview =
   "Tangem is a hardware cryptocurrency wallet that takes a radically different approach to cold storage. Instead of a USB device with a screen, Tangem wallets are thin, credit-card-sized NFC cards that communicate with your smartphone via tap. Each card contains an EAL6+ certified secure element chip that generates and stores your private key, which never leaves the card. The wallet ships as a set of 2 or 3 cards: one primary and one or two backup cards that mirror the key.\n\nTangem's approach eliminates several pain points of traditional hardware wallets: there are no batteries to charge, no cables to carry, no firmware updates to install, and by default no seed phrase to manage (the backup cards serve as your recovery method). The companion mobile app provides the wallet interface, supporting 6,000+ tokens across 30+ blockchains. Transactions are signed by tapping the Tangem card to your NFC-enabled phone.";

@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Yield Tokenization & Pendle Guide 2026: Fixed DeFi Yield | degen0x',
+  title: "Yield Tokenization & Pendle Guide 2026: Fixed DeFi Yield",
   description:
     'Master yield tokenization with Pendle Finance in 2026. Learn how PT/YT tokens work, lock in fixed DeFi yields, and explore the Ethena-Pendle-Aave flywheel.',
   keywords: [

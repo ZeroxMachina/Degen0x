@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Paradex Guide 2026: Zero-Fee ZK Perpetual Trading on Starknet Explained | degen0x",
-  description:
-    "Paradex explained: zero-fee ZK perpetuals DEX on Starknet, DIME tokenomics, ZK privacy encryption, market position vs Hyperliquid, and how to get started in 2026.",
+  title: "Paradex Guide 2026: Zero-Fee ZK Perpetual Trading on",
+  description: "Paradex explained: zero-fee ZK perpetuals DEX on Starknet, DIME tokenomics, ZK privacy encryption, market position vs Hyperliquid, and how to get started in",
   keywords: [
     "paradex crypto guide 2026",
     "what is paradex",

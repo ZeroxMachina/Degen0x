@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools | degen0x',
+  title: "NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools",
   description: 'NFT rarity tools comparison: Rarity.tools, Trait Sniper, HowRare.is (Solana), IcyTools, NFTGo. Rarity scoring, sniping strategies, floor price correlation.',
   keywords: ['nft rarity tools', 'Rarity.tools', 'HowRare.is', 'IcyTools', 'Trait Sniper', 'NFT sniping', 'rarity scoring', 'NFT floor price'],
   openGraph: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools | degen0x',
+    title: "NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools",
     description: 'NFT rarity tools comparison: Rarity.tools, Trait Sniper, HowRare.is (Solana), IcyTools, NFTGo. Rarity scoring, sniping strategies, floor price correlation.',
     image: 'https://degen0x.com/og-default.svg',
   }
@@ -89,13 +89,13 @@ const structuredData = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools | degen0x',
+    title: "NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools",
     description: 'NFT rarity tools comparison: Rarity.tools, Trait Sniper, HowRare.is (Solana), IcyTools, NFTGo. Rarity scoring, sniping strategies, floor price correlation.',
     image: 'https://degen0x.com/og-default.svg',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools | degen0x',
+    title: "NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools",
     description: 'NFT rarity tools comparison: Rarity.tools, Trait Sniper, HowRare.is (Solana), IcyTools, NFTGo. Rarity scoring, sniping strategies, floor price correlation.',
     image: 'https://degen0x.com/og-default.svg',
   }

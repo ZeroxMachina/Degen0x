@@ -10,8 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'TON Blockchain DeFi Ecosystem Guide 2026 | degen0x',
-  description:
-    'Complete guide to TON DeFi ecosystem in 2026. Explore STON.fi, DeDust, EVAA Protocol, and Telegram Mini Apps. Learn how to get started with TON DeFi, yield strategies, and institutional momentum driving the ecosystem.',
+  description: "Complete guide to TON DeFi ecosystem in 2026. Explore STON.fi, DeDust, EVAA Protocol, and Telegram Mini Apps. Learn how to get started with TON DeFi, yield",
   keywords: [
     'TON blockchain',
     'TON DeFi',

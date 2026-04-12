@@ -7,12 +7,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "DeFi Points & Airdrop Farming Guide 2026: How Points Work, Top Protocols & Risks | degen0x",
-  description: "Master DeFi points farming in 2026. Learn how protocol points work, the best airdrop farming strategies, anti-Sybil detection, SEC guidance on airdrops, and top protocols to watch.",
+  title: "DeFi Points & Airdrop Farming Guide 2026: How Points Work,",
+  description: "Master DeFi points farming in 2026. Learn how protocol points work, the best airdrop farming strategies, anti-Sybil detection, SEC guidance on airdrops, and",
   keywords: ["defi points", "airdrop farming", "points farming crypto", "crypto airdrop guide 2026", "points meta"],
   openGraph: {
     title: "DeFi Points & Airdrop Farming Guide 2026: How Points Work, Top Protocols & Risks",
-    description: "Master DeFi points farming in 2026. Learn how protocol points work, the best airdrop farming strategies, anti-Sybil detection, SEC guidance on airdrops, and top protocols to watch.",
+    description: "Master DeFi points farming in 2026. Learn how protocol points work, the best airdrop farming strategies, anti-Sybil detection, SEC guidance on airdrops, and",
     url: "https://degen0x.com/learn/defi-points-airdrop-farming-guide-2026",
     siteName: "degen0x",
     images: [{ url: "https://degen0x.com/og-defi-points-airdrop-farming-guide-2026.svg", width: 1200, height: 630 }],
@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     description: "Learn how points programs work, top farming strategies, anti-Sybil detection, and SEC guidance on airdrops in 2026.",
     images: ["https://degen0x.com/og-defi-points-airdrop-farming-guide-2026.svg"],
   },
-};
+
+  alternates: { canonical: "/learn/defi-points-airdrop-farming-guide-2026" }};
 
 export default function DefiPointsAirdropFarmingGuide() {
   const faqs = [
@@ -588,6 +589,56 @@ export default function DefiPointsAirdropFarmingGuide() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 import MarketRecapClient from "./MarketRecapClient";
 
@@ -21,7 +23,8 @@ export const metadata: Metadata = {
     images: [{ url: "https://degen0x.com/og-market-recap.png", width: 1200, height: 630, alt: "AI Market Recap — degen0x" }],
   },
   twitter: { card: "summary_large_image", title: "AI Market Recap | degen0x", images: ["https://degen0x.com/og-market-recap.png"] },
-};
+
+  alternates: { canonical: "/news/market-recap" }};
 
 export default function MarketRecapPage() {
   return <MarketRecapClient />;

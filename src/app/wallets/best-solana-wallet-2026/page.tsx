@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Solana Wallet 2026: Phantom, Solflare, Backpack, Glow vs Ledger | degen0x',
+  title: "Best Solana Wallet 2026: Phantom, Solflare, Backpack, Glow",
   description: 'Compare Solana wallets 2026: Phantom (#1, hot), Solflare, Backpack, Glow, Ledger. Staking, NFT gallery, Jupiter swaps, priority fees.',
   keywords: ['best solana wallet', 'solana wallet 2026', 'Phantom wallet', 'Solflare', 'Backpack', 'Ledger Solana', 'Glow wallet'],
   openGraph: { type: 'article', title: 'Best Solana Wallet 2026', description: 'Compare Solana wallets with staking, swaps, NFT support', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/best-solana-wallet-2026', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'Solana Wallets' }] },

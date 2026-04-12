@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'No KYC Crypto Exchange Guide 2026: DEX, P2P & Privacy CEX | degen0x',
-  description: 'Discover no-KYC crypto exchanges: Uniswap, dYdX, Jupiter DEXs, Bisq, HodlHodl P2P platforms. Compare features, fees, liquidity, privacy levels. Trade anonymously 24/7.',
+  title: "No KYC Crypto Exchange Guide 2026: DEX, P2P & Privacy CEX",
+  description: "Discover no-KYC crypto exchanges: Uniswap, dYdX, Jupiter DEXs, Bisq, HodlHodl P2P platforms. Compare features, fees, liquidity, privacy levels. Trade",
   keywords: ['no kyc crypto exchange', 'decentralized exchange', 'peer to peer crypto', 'Uniswap dYdX', 'privacy exchange', 'anonymous trading', 'DEX guide', 'Bisq HodlHodl'],
   alternates: { canonical: 'https://degen0x.com/exchanges/no-kyc-crypto-exchange' },
   openGraph: {

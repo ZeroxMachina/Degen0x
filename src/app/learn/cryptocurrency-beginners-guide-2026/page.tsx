@@ -9,8 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Cryptocurrency for Beginners: Complete Guide 2026 | degen0x",
-  description:
-    "Complete cryptocurrency beginners guide. Learn blockchain basics, how to buy your first Bitcoin or Ethereum, secure wallets, DCA strategies, investment tips, and avoid common scams. Bitcoin at $1.4T market cap, 126 crypto ETFs approved by SEC.",
+  description: "Complete cryptocurrency beginners guide. Learn blockchain basics, how to buy your first Bitcoin or Ethereum, secure wallets, DCA strategies, investment tips,",
   keywords: [
     "cryptocurrency for beginners",
     "how to buy crypto",
@@ -532,8 +531,8 @@ export default function CryptocurrencyBeginnersGuide() {
             { q: "How do I avoid crypto scams and common mistakes?", a: "Never share seed phrases, private keys, or seed phrases via email/Telegram. Avoid clicking suspicious links or connecting wallets to unknown dApps. Use hardware wallets for large holdings. Research projects thoroughly before investing. Beware of pump-and-dump schemes and influencer shilling. Only use verified exchange URLs (coinbase.com, not cooinbase.com). Start small to learn. Use security tools like 2FA and email alerts. Join reputable communities like degen0x, Reddit&apos;s r/cryptocurrency, and official Discord channels." },
           ].map((faq, i) => (
             <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

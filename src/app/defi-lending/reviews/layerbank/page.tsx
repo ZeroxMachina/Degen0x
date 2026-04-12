@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `LayerBank Review ${CURRENT_YEAR}: Multi-Chain L2 Lending Protocol`,
   description: "Detailed LayerBank review covering lending on Scroll, Linea, zkSync, and other L2s, with yield rates, security analysis, and feature comparison.",
-};
+  alternates: { canonical: "/defi-lending/reviews/layerbank" }};
 
 export default function LayerBankReview() {
   return (

@@ -1,12 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `BitPay Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
-  description:
-    "Comprehensive BitPay review covering crypto payment processing, debit card features, supported currencies, fees, and whether BitPay is the right crypto spending solution for you.",
-};
+  description: "Comprehensive BitPay review covering crypto payment processing, debit card features, supported currencies, fees, and whether BitPay is the right crypto",
+  alternates: { canonical: "/spending/reviews/bitpay" }};
 
 export default function BitPayReview() {
   return (

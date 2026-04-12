@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'About degen0x | Built by Degens, for Degens',
-  description:
-    'Meet the anonymous team building permissionless, transparent crypto tools. Self-sovereign builders committed to sound money, Austrian economics, and Bitcoin maximalism.',
+  description: "Meet the anonymous team building permissionless, transparent crypto tools. Self-sovereign builders committed to sound money, Austrian economics, and Bitcoin",
   openGraph: {
     title: 'About degen0x',
     description: 'Built by Degens, for Degens — Free, transparent, permissionless crypto infrastructure.',
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'About degen0x | Built by Degens, for Degens',
-    description: 'Meet the anonymous team building permissionless, transparent crypto tools. Self-sovereign builders committed to sound money, Austrian economics, and Bitcoin maximalism.',
+    description: "Meet the anonymous team building permissionless, transparent crypto tools. Self-sovereign builders committed to sound money, Austrian economics, and Bitcoin",
     image: 'https://degen0x.com/og-default.svg',
   },
 };
@@ -89,7 +90,14 @@ const principles = [
 export default function AboutPage() {
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh' }}>
-      <Breadcrumb />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="about"
+      />      <Breadcrumb />
 
       {/* Hero Section */}
       <section
@@ -510,6 +518,56 @@ export default function AboutPage() {
           }),
         }}
       />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

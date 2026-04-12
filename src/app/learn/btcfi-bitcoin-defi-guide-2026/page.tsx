@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'BTCFi Guide 2026: Bitcoin DeFi, Staking & Ordinals Explained | degen0x',
-  description:
-    'Complete BTCFi guide 2026: Bitcoin DeFi protocols, native staking with Babylon, liquid staking (LBTC), Ordinals, Runes, BRC-20 tokens, and top protocols like CoreDAO and Stacks. Learn Bitcoin finance strategies.',
+  title: "BTCFi Guide 2026: Bitcoin DeFi, Staking & Ordinals Explained",
+  description: "Complete BTCFi guide 2026: Bitcoin DeFi protocols, native staking with Babylon, liquid staking (LBTC), Ordinals, Runes, BRC-20 tokens, and top protocols like",
   keywords: [
     'BTCFi',
     'Bitcoin DeFi',

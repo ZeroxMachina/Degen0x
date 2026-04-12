@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = walletProducts.find((p) => p.slug === "trust-wallet")!;
 export const metadata: Metadata = {
   title: `Trust Wallet Review (${CURRENT_YEAR}) - Multi-Chain Mobile Wallet | ${SITE_NAME}`,
   description: `Full Trust Wallet review for ${CURRENT_YEAR}. Covers 100+ blockchain support, dApp browser, staking, security, and Binance integration.`,
-};
+  alternates: { canonical: "/wallets/reviews/trust-wallet" }};
 
 const overview =
   "Trust Wallet is one of the most versatile multi-chain crypto wallets available, supporting over 100 blockchains and millions of tokens. Originally acquired by Binance in 2018, it has since become an independent company while maintaining its reputation as a reliable self-custody solution. Trust Wallet is available on iOS, Android, and as a browser extension, offering a built-in dApp browser, staking for multiple assets, NFT management, and seamless access to decentralized applications across virtually every major blockchain network.";

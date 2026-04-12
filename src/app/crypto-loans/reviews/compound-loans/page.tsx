@@ -1,10 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { CRYPTO_LOAN_PRODUCTS } from "@/data/crypto-loans";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "compound-loans")!;
 
-export const metadata: Metadata = { title: "Compound Loans Review 2026: DeFi Borrowing Analysis", description: "Review of borrowing on Compound V3. Covers isolated markets, rates, collateral, COMP rewards, and comparison to alternatives. Updated March 2026." };
+export const metadata: Metadata = { title: "Compound Loans Review 2026: DeFi Borrowing Analysis", description: "Review of borrowing on Compound V3. Covers isolated markets, rates, collateral, COMP rewards, and comparison to alternatives. Updated March 2026." ,
+  alternates: { canonical: "/crypto-loans/reviews/compound-loans" }};
 
 export default function CompoundLoansReview() {
   return (

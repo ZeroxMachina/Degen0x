@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Browser Extension Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best crypto browser extension wallets for ${CURRENT_YEAR}. Compare MetaMask, Rabby, Phantom, and more for DeFi, dApp access, and security.`,
-};
+  alternates: { canonical: "/wallets/best/browser-extension" }};
 
 const products = [
   { name: "MetaMask", slug: "metamask", rating: 4.5, description: "The industry standard browser extension wallet with near-universal dApp compatibility across Chrome, Firefox, Brave, and Edge browsers.", pros: ["Universal dApp compatibility", "Snaps extensibility system", "Custom RPC network support"], cons: ["Can be slow with many networks", "Default RPC privacy concerns"], bestFor: "Broadest dApp compatibility across all browsers", affiliateUrl: "#", category: "wallets" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function BestBrowserExtensionWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Browser Extension", href: "/wallets/best/browser-extension" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Browser Extension", href: "/wallets/best/browser-extension" }]} />
       <AffiliateDisclosure />
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Crypto Browser Extension Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
@@ -57,6 +65,7 @@ export default function BestBrowserExtensionWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/browser Extension", "description": "The industry standard browser extension wallet with near-universal dApp compatibility across Chrome, Firefox, Brave, and Edge browsers.", "url": "https://degen0x.com/wallets/best/browser-extension"}) }} />
     </div>
   );
 }

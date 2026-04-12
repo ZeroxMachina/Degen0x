@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Abracadabra Review (${CURRENT_YEAR}): MIM Borrowing & Cauldrons | ${SITE_NAME}`,
   description: "In-depth Abracadabra review covering MIM stablecoin borrowing, cauldron mechanics, yield-bearing collateral, and risk assessment.",
-};
+  alternates: { canonical: "/crypto-loans/reviews/abracadabra" }};
 
 export default function AbracadabraReview() {
   return (

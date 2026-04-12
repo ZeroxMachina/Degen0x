@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `eToro Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth eToro review covering crypto trading fees, copy trading, supported assets, security, and whether this social trading platform is right for you.",
-};
+  alternates: { canonical: "/exchanges/reviews/etoro" }};
 
 export default function EtoroReview() {
   return (

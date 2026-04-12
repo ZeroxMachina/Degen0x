@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Tax Accounting Courses 2026: Master IRS Compliance | degen0x',
-  description: 'Crypto tax accounting courses 2026: Learn IRS Form 8949, Schedule D, DeFi taxation, NFT reporting. Free resources (IRS Pub 525, CryptoSlate) and paid courses (Udemy $15-50). Koinly vs CryptoTrader.tax software. DIY vs hiring CPA.',
+  title: "Best Crypto Tax Accounting Courses 2026: Master IRS",
+  description: "Crypto tax accounting courses 2026: Learn IRS Form 8949, Schedule D, DeFi taxation, NFT reporting. Free resources (IRS Pub 525, CryptoSlate) and paid courses",
   keywords: ['crypto tax course', 'cryptocurrency tax', 'tax accounting crypto', 'IRS Form 8949', 'DeFi taxation', 'NFT tax reporting', 'crypto tax software'],
   openGraph: {
     type: 'article',
@@ -528,6 +528,56 @@ export default function CryptoTaxAccountingCourse() {
 
         <div style={{ ...infoBoxStyle, marginTop: 40, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is educational only, not tax advice. Tax laws vary by jurisdiction and situation. Consult a tax professional or CPA for your specific circumstances before filing.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

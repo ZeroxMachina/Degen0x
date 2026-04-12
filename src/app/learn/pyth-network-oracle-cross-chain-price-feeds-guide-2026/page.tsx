@@ -6,8 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Pyth Network Guide 2026 — Cross-Chain Oracle, Price Feeds & PYTH',
-  description: 'Complete guide to Pyth Network: pull-based oracle architecture, 2,800+ price feeds across 50+ chains, Oracle Integrity Staking, PYTH tokenomics, and how it compares to Chainlink.',
+  title: "Pyth Network Guide 2026 — Cross-Chain Oracle, Price Feeds &",
+  description: "Complete guide to Pyth Network: pull-based oracle architecture, 2,800+ price feeds across 50+ chains, Oracle Integrity Staking, PYTH tokenomics, and how it",
   keywords: [
     'Pyth Network',
     'Pyth oracle',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://degen0x.com/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026' },
   openGraph: {
     type: 'article',
-    title: 'Pyth Network Guide 2026 — Cross-Chain Oracle, Price Feeds & PYTH',
+    title: "Pyth Network Guide 2026 — Cross-Chain Oracle, Price Feeds &",
     description: 'Pull-based oracle powering 2,800+ price feeds across 50+ chains. First-party data from Jane Street, CBOE, Wintermute & more.',
     publishedTime: '2026-04-10T00:00:00Z',
     authors: ['degen0x'],

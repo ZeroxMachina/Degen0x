@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Crypto Airdrops Guide 2026: How to Find, Qualify & Farm Token Drops | degen0x',
-  description: 'Complete guide to crypto airdrops in 2026. Learn airdrop farming strategies, Sybil detection avoidance, retroactive qualification, and top upcoming token distributions.',
+  title: "Crypto Airdrops Guide 2026: How to Find, Qualify & Farm",
+  description: "Complete guide to crypto airdrops in 2026. Learn airdrop farming strategies, Sybil detection avoidance, retroactive qualification, and top upcoming token",
   keywords: ['crypto airdrops 2026', 'airdrop farming', 'retroactive airdrop', 'token distribution', 'free crypto', 'airdrop strategy', 'Sybil detection', 'airdrop qualification'],
   openGraph: {
     type: 'article',
@@ -503,8 +503,8 @@ export default function CryptoAirdropsGuide() {
             { q: 'Is airdrop farming still profitable in 2026?', a: 'Yes, but the meta has shifted. Wide farming across dozens of protocols no longer works. Profitable farmers focus on deep engagement with 5-10 high-conviction protocols, building genuine on-chain history with single wallets. The bar is higher, but rewards for qualifying wallets are often larger.' },
           ].map((faq, i) => (
             <div key={i} style={{ ...infoBoxStyle, marginBottom: 16 }}>
-              <h3 style={{ fontSize: 16, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 16, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

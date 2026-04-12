@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -9,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Mobile vs Desktop Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Mobile wallet vs desktop wallet comparison for ${CURRENT_YEAR}. Portability, security, features, dApp access, and hardware wallet support compared.`,
-};
+  alternates: { canonical: "/wallets/compare/mobile-vs-desktop" }};
 
 const items = [
   { name: "Mobile Wallets", slug: "mobile", rating: 4.3, affiliateUrl: "#", features: { Portability: "Always with you", "Screen Size": "5-7 inches", Biometrics: "Face ID / fingerprint", "dApp Access": "Mobile browser", "QR Scanning": "Built-in camera", "HW Wallet": "Bluetooth/NFC", "Multi-tasking": "Limited", Camera: "Yes", Notifications: "Push alerts", "Best For": "On-the-go use" } },
@@ -25,7 +26,14 @@ const faqs = [
 export default function MobileVsDesktopPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Compare", href: "/wallets/compare" }, { label: "Mobile vs Desktop", href: "/wallets/compare/mobile-vs-desktop" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Compare", href: "/wallets/compare" }, { label: "Mobile vs Desktop", href: "/wallets/compare/mobile-vs-desktop" }]} />
       <AffiliateDisclosure />
       <header className="mb-8"><h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Mobile vs Desktop Wallets ({CURRENT_YEAR})</h1><p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p></header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">Mobile and desktop wallets serve different use cases. Mobile wallets offer portability and biometric security, while desktop wallets provide larger screens and better dApp integration. Understanding these trade-offs helps you pick the right platform.</p>
@@ -46,6 +54,57 @@ export default function MobileVsDesktopPage() {
             The wallet space moves fast. We update our reviews when significant firmware updates or security incidents occur, not on a fixed schedule.
           </p>
         </div><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/ios" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best iOS Wallets</h3></Link><Link href="/wallets/best/desktop" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Desktop Wallets</h3></Link></div></section>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/mobile Vs Desktop", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/mobile-vs-desktop"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/wallets" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Wallets
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Wallets
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -11,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Coinbase vs Robinhood Crypto (${CURRENT_YEAR}): Which Is Better? | ${SITE_NAME}`,
   description: `Coinbase vs Robinhood crypto comparison for ${CURRENT_YEAR}. Compare fees, coin selection, wallet features, and staking for crypto investing.`,
-};
+  alternates: { canonical: "/exchanges/compare/coinbase-vs-robinhood" }};
 
 const items: ComparisonItem[] = [
   { name: "Coinbase", slug: "coinbase", rating: 4.6, affiliateUrl: "https://degen0x.com/go/coinbase", features: { "Trading Fees": "0%–0.60% (Advanced)", "Coins Listed": "250+", "Self-Custody Wallet": "Yes (Coinbase Wallet)", "Staking": "Yes (select states)", "Transfers Out": "Yes (any wallet)", "Advanced Trading": "Yes (Coinbase Advanced)", "Asset Types": "Crypto only", "Crypto Card": "Yes" } },
@@ -129,6 +130,57 @@ export default function CoinbaseVsRobinhoodPage() {
           },
         ]}
       />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/coinbase Vs Robinhood", "description": "Crypto content on degen0x", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-robinhood"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

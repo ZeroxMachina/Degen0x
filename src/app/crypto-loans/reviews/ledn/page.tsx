@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Ledn Review (${CURRENT_YEAR}): Rates, Features & Pros/Cons | ${SITE_NAME}`,
   description: "In-depth Ledn review covering Bitcoin-backed loans, yield products, proof of reserves, and how Ledn compares to other crypto lending platforms.",
-};
+  alternates: { canonical: "/crypto-loans/reviews/ledn" }};
 
 export default function LednReview() {
   return (

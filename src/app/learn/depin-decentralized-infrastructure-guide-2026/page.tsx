@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "DePIN: Decentralized Infrastructure Guide 2026 | degen0x",
-  description:
-    "Complete guide to DePIN (Decentralized Physical Infrastructure Networks) — $10-19B market, 250+ projects, Filecoin, Render, Helium, Hivemapper, and earning tokens by operating network infrastructure.",
+  description: "Complete guide to DePIN (Decentralized Physical Infrastructure Networks) — $10-19B market, 250+ projects, Filecoin, Render, Helium, Hivemapper, and earning",
   keywords: [
     "DePIN",
     "Decentralized Physical Infrastructure",
@@ -519,8 +518,8 @@ export default function DePINGuidePage() {
             { q: "What is the difference between DePIN and traditional cloud services?", a: "Traditional services (AWS, Google Cloud) are centralized and operated by one company. DePIN networks are operated by distributed participants who own the infrastructure. DePIN is more resilient, transparent, and decentralized — but with trade-offs in consistency and support." },
           ].map((faq, i) => (
             <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>{faq.q}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>{faq.question}</h3>
+              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

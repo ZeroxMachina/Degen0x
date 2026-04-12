@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Data Availability & Modular Blockchains Guide 2026: Celestia, EigenDA, Avail',
-  description: 'Complete guide to Data Availability (DA) layers in 2026. Learn how Celestia commands 50% of DA market, EigenDA achieves 100MB/s throughput with Ethereum restaking, Avail secures multichain integrations. Explore DAS sampling, modular architecture, and the future of blockchain scalability.',
+  title: "Data Availability & Modular Blockchains Guide 2026:",
+  description: "Complete guide to Data Availability (DA) layers in 2026. Learn how Celestia commands 50% of DA market, EigenDA achieves 100MB/s throughput with Ethereum",
   keywords: ['Data Availability', 'DA layers', 'Celestia', 'EigenDA', 'Avail', 'modular blockchains', 'DAS sampling', 'rollups', 'scalability', 'Ethereum restaking', 'blockchain infrastructure'],
   openGraph: {
     type: 'article',
-    title: 'Data Availability & Modular Blockchains Guide 2026: Celestia, EigenDA, Avail',
+    title: "Data Availability & Modular Blockchains Guide 2026:",
     description: 'Complete guide to DA layers in 2026. Learn Celestia, EigenDA, Avail, DAS sampling, and how modular blockchains scale with dedicated data availability.',
     publishedTime: '2026-04-02T00:00:00Z',
     modifiedTime: '2026-04-02T00:00:00Z',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Data Availability & Modular Blockchains Guide 2026: Celestia, EigenDA, Avail',
+    title: "Data Availability & Modular Blockchains Guide 2026:",
     description: 'Complete guide to DA layers in 2026. Learn Celestia, EigenDA, Avail, and how modular blockchains scale with dedicated data availability layers.',
     image: 'https://degen0x.com/og-data-availability.svg',
   },

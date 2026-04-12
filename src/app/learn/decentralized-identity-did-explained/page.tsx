@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Decentralized Identity (DID) 2026: W3C Standards, ENS, Lens & Soulbound Tokens | degen0x',
-  description: 'Complete guide to DIDs: W3C DID standard, ENS domains, Lens Protocol, Worldcoin World ID, Polygon ID, verifiable credentials, soulbound tokens, and zero-knowledge identity.',
+  title: "Decentralized Identity (DID) 2026: W3C Standards, ENS, Lens",
+  description: "Complete guide to DIDs: W3C DID standard, ENS domains, Lens Protocol, Worldcoin World ID, Polygon ID, verifiable credentials, soulbound tokens, and",
   keywords: ['DID', 'decentralized identity', 'verifiable credentials', 'ENS domains', 'Lens Protocol', 'soulbound tokens', 'W3C standard', 'self-sovereign identity', 'Polygon ID'],
   openGraph: {
     type: 'article',

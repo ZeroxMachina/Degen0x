@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = walletProducts.find((p) => p.slug === "metamask")!;
 export const metadata: Metadata = {
   title: `MetaMask Review (${CURRENT_YEAR}) - Best Ethereum Wallet? | ${SITE_NAME}`,
   description: `Detailed MetaMask review for ${CURRENT_YEAR}. We cover MetaMask's features, swap fees, security, multi-chain support, and how it compares to alternatives.`,
-};
+  alternates: { canonical: "/wallets/reviews/metamask" }};
 
 const overview =
   "MetaMask is the most widely used self-custody wallet for Ethereum and EVM-compatible blockchains. With over 30 million monthly active users, it serves as the primary gateway to DeFi, NFT marketplaces, and thousands of decentralized applications. Available as a browser extension for Chrome, Firefox, Brave, and Edge, as well as a mobile app for iOS and Android, MetaMask provides a seamless interface for managing your Ethereum assets, interacting with smart contracts, and swapping tokens. It is open-source, well-audited, and backed by ConsenSys, one of the largest companies in the Ethereum ecosystem.";

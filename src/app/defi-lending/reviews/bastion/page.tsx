@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Bastion Protocol Review ${CURRENT_YEAR}: NEAR Lending & Borrowing`,
   description:
     "In-depth Bastion Protocol review covering lending markets on Aurora/NEAR, yield rates, stableswap features, and protocol risk analysis.",
-};
+  alternates: { canonical: "/defi-lending/reviews/bastion" }};
 
 export default function BastionReview() {
   return (

@@ -14,9 +14,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "On-Chain Institutional Credit Markets 2026: Maple, Goldfinch, Centrifuge & More | degen0x",
-  description:
-    "Explore the $18.9B on-chain institutional credit market in 2026. Compare Maple Finance, Goldfinch, Centrifuge, and Clearpool — how undercollateralized lending is bridging DeFi and TradFi.",
+  title: "On-Chain Institutional Credit Markets 2026: Maple,",
+  description: "Explore the $18.9B on-chain institutional credit market in 2026. Compare Maple Finance, Goldfinch, Centrifuge, and Clearpool — how undercollateralized lending",
   keywords: [
     "onchain institutional credit 2026",
     "onchain private credit",

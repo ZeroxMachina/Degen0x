@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `D'CENT Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "D'CENT hardware wallet review covering biometric security, multi-chain support, built-in dApp browser, and fingerprint authentication.",
-};
+  alternates: { canonical: "/wallets/reviews/dcent" }};
 
 export default function DcentReviewPage() {
   return (

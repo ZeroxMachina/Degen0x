@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,8 +8,8 @@ const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "lido")!;
 
 export const metadata: Metadata = {
   title: "Lido Review 2026: Liquid Staking, stETH Yield & Analysis",
-  description: "In-depth Lido review covering liquid staking, stETH mechanics, yields, decentralization, and whether Lido is right for your ETH staking needs. Updated March 2026.",
-};
+  description: "In-depth Lido review covering liquid staking, stETH mechanics, yields, decentralization, and whether Lido is right for your ETH staking needs. Updated March",
+  alternates: { canonical: "/defi-lending/reviews/lido" }};
 
 export default function LidoReview() {
   return (

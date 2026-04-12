@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -6,7 +8,8 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
-export const metadata: Metadata = { title: `Best NFT-Collateral Loans ${CURRENT_YEAR} - Borrow Against NFTs`, description: `Compare platforms for borrowing against NFTs in ${CURRENT_YEAR}. Use your CryptoPunks, BAYC, and other NFTs as loan collateral.` };
+export const metadata: Metadata = { title: `Best NFT-Collateral Loans ${CURRENT_YEAR} - Borrow Against NFTs`, description: `Compare platforms for borrowing against NFTs in ${CURRENT_YEAR}. Use your CryptoPunks, BAYC, and other NFTs as loan collateral.` ,
+  alternates: { canonical: "/crypto-loans/best/nft-collateral" }};
 
 const products: Product[] = [
   { name: "Blur Lending (Blend)", slug: "blend", rating: 4.5, description: "Blur's Blend protocol offers NFT-backed perpetual loans with no fixed expiry and no oracle dependency. Borrowers can take loans against blue-chip NFTs with competitive rates set by market-driven lender competition. The largest NFT lending platform by volume.", pros: ["Largest NFT lending volume", "No loan expiration", "Market-driven rates", "Deep integration with Blur marketplace"], cons: ["Limited to blue-chip collections", "Ethereum only", "Lender can trigger refinancing"], fees: "Market-driven interest", bestFor: "Blue-chip NFT holders", affiliateUrl: "https://degen0x.com/go/blend", category: "crypto-loans", featured: true },
@@ -23,7 +26,14 @@ const faqs: FAQ[] = [
 export default function NftCollateralPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "NFT Collateral", href: "/crypto-loans/best/nft-collateral" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="crypto-loans"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "NFT Collateral", href: "/crypto-loans/best/nft-collateral" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best NFT-Collateral Loans ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
@@ -32,6 +42,57 @@ export default function NftCollateralPage() {
       </div>
       <div className="space-y-4 mb-12">{products.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/nft Collateral", "description": "Blur", "url": "https://degen0x.com/crypto-loans/best/nft-collateral"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

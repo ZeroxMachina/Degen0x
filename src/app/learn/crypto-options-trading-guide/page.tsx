@@ -1,13 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import OptionsPayoffCalculator from "@/components/OptionsPayoffCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Crypto Options Trading Guide 2026 — Calls, Puts & DeFi Options | degen0x",
-  description:
-    "Learn how crypto options work in 2026: calls, puts, strike prices, expiry, Greeks, and the top on-chain options protocols like Derive, Premia, and Panoptic. Beginner to intermediate guide.",
+  title: "Crypto Options Trading Guide 2026 — Calls, Puts & DeFi",
+  description: "Learn how crypto options work in 2026: calls, puts, strike prices, expiry, Greeks, and the top on-chain options protocols like Derive, Premia, and Panoptic.",
   keywords: [
     "crypto options trading",
     "DeFi options",
@@ -44,7 +44,8 @@ export const metadata: Metadata = {
     description:
       "Calls, puts, Greeks, and the best on-chain options protocols explained.",
   },
-};
+
+  alternates: { canonical: "/learn/crypto-options-trading-guide" }};
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default function CryptoOptionsGuidePage() {
@@ -474,6 +475,56 @@ export default function CryptoOptionsGuidePage() {
           }}
         />
       </article>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

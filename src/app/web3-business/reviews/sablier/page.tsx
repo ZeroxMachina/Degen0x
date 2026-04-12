@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Sablier Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Sablier is a token streaming and vesting protocol enabling linear and dynamic token distribution schedules.",
-};
+  alternates: { canonical: "/web3-business/reviews/sablier" }};
 
 export default function SablierReview() {
   return (

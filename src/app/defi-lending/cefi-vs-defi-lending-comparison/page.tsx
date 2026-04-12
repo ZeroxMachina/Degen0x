@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'CeFi vs DeFi Lending Comparison 2026: Rates, Risks, Custody | degen0x',
-  description: 'Complete comparison of centralized vs decentralized lending: interest rates, risks, security models, custody, withdrawals, and tax implications. Choose the right platform for your strategy.',
+  title: "CeFi vs DeFi Lending Comparison 2026: Rates, Risks, Custody",
+  description: "Complete comparison of centralized vs decentralized lending: interest rates, risks, security models, custody, withdrawals, and tax implications. Choose the",
   keywords: ['CeFi lending', 'DeFi lending', 'Celsius', 'Nexo', 'Aave', 'Compound', 'yield farming', 'lending rates', 'custody risk'],
   openGraph: {
     type: 'article',

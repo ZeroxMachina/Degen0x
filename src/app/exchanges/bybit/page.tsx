@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "Bybit Review 2026: Derivatives Trading, Fees, Pros & Cons",
   description:
     "Complete Bybit review covering fast execution, derivatives trading engine, copy trading, fees, and security. Is Bybit right for you? Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/bybit" }};
 
 export default function BybitReview() {
   return (

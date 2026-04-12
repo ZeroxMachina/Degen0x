@@ -4,9 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Telegram Mini Apps & TON Gaming Guide 2026 — Tap-to-Earn & Beyond | degen0x",
-  description:
-    "Complete guide to Telegram mini apps, TON blockchain gaming, and tap-to-earn crypto games in 2026. Covers Notcoin, Hamster Kombat, Catizen, and how to earn crypto on Telegram.",
+  title: "Telegram Mini Apps & TON Gaming Guide 2026 — Tap-to-Earn &",
+  description: "Complete guide to Telegram mini apps, TON blockchain gaming, and tap-to-earn crypto games in 2026. Covers Notcoin, Hamster Kombat, Catizen, and how to earn",
   keywords: [
     "telegram mini apps",
     "TON gaming",
@@ -33,7 +32,8 @@ export const metadata: Metadata = {
     description:
       "Tap-to-earn, TON gaming, and the Telegram mini app ecosystem explained.",
   },
-};
+
+  alternates: { canonical: "/learn/telegram-mini-apps-ton-gaming-guide-2026" }};
 
 export default function TelegramMiniAppsTonGamingGuidePage() {
   return (
@@ -347,8 +347,8 @@ export default function TelegramMiniAppsTonGamingGuidePage() {
                 },
               ].map((faq, i) => (
                 <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20 }}>
-                  <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>{faq.q}</h3>
-                  <p style={{ fontSize: 14, color: "#c9d1d9", lineHeight: 1.7 }}>{faq.a}</p>
+                  <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>{faq.question}</h3>
+                  <p style={{ fontSize: 14, color: "#c9d1d9", lineHeight: 1.7 }}>{faq.answer}</p>
                 </div>
               ))}
             </div>

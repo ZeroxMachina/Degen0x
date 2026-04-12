@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Fluid Protocol Guide 2026 — DeFi Lending + DEX Unified | degen0x",
+  title: "Fluid Protocol Guide 2026 — DeFi Lending + DEX Unified",
   description:
     "Fluid (Instadapp) merges DeFi lending and DEX trading into one protocol. $5B+ TVL, 39x capital efficiency. Learn how debt-as-liquidity works and how to use it.",
   keywords: [
@@ -46,7 +46,8 @@ export const metadata: Metadata = {
     description:
       "Fluid (ex-Instadapp) merged lending and trading into one $5B+ TVL protocol. 39x capital efficiency. Here's the full breakdown.",
   },
-};
+
+  alternates: { canonical: "/learn/fluid-protocol-guide" }};
 
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

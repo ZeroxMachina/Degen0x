@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bitcoin Taproot Upgrade Explained 2026: Schnorr, MAST, Ordinals | degen0x',
-  description: 'Complete Taproot guide 2026: Schnorr signatures 65 bytes, MAST smart contracts, privacy improvements, Ordinals, 25% adoption, Lightning Network, BIP 340/341/342.',
+  title: "Bitcoin Taproot Upgrade Explained 2026: Schnorr, MAST,",
+  description: "Complete Taproot guide 2026: Schnorr signatures 65 bytes, MAST smart contracts, privacy improvements, Ordinals, 25% adoption, Lightning Network, BIP",
   keywords: ['Bitcoin Taproot', 'Schnorr signatures', 'MAST', 'Bitcoin upgrade', 'Ordinals inscriptions', 'Bitcoin smart contracts', 'privacy Bitcoin'],
   openGraph: {
     type: 'article',

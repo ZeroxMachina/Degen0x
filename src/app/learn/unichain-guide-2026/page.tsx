@@ -715,10 +715,10 @@ export default function UniChainGuidePage() {
                 }}
               >
                 <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '12px', color: '#79c0ff', marginTop: 0 }}>
-                  Q: {faq.q}
+                  Q: {faq.question}
                 </h3>
                 <p style={{ fontSize: '14px', lineHeight: '1.6', margin: 0, color: '#e6edf3' }}>
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Yearn vs Convex ${CURRENT_YEAR}: Which Yield Aggregator Is Better?`,
   description: `Detailed comparison of Yearn vs Convex in ${CURRENT_YEAR}. Compare yield strategies, CRV incentives, risk profiles, and which yield aggregator maximizes your DeFi returns.`,
-};
+  alternates: { canonical: "/defi-lending/compare/yearn-vs-convex" }};
 
 const items: ComparisonItem[] = [
   { name: "Yearn Finance", slug: "yearn", rating: 4.6, affiliateUrl: "https://degen0x.com/go/yearn", features: { "TVL": "$1B+", "Strategy Type": "Multi-protocol yield vaults", "Chains": "Ethereum, Arbitrum, Polygon", "Complexity": "Simple (deposit & earn)", "Fee Structure": "20% performance + 2% mgmt", "Governance Token": "YFI", "Best For": "Passive yield on many assets", "Unique Feature": "Auto-compounding multi-strategy vaults" } },
@@ -28,7 +30,14 @@ const faqs: FAQ[] = [
 export default function YearnVsConvexPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Yearn vs Convex", href: "/defi-lending/compare/yearn-vs-convex" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Yearn vs Convex", href: "/defi-lending/compare/yearn-vs-convex" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Yearn vs Convex: Full Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -62,6 +71,57 @@ export default function YearnVsConvexPage() {
         <p className="text-[var(--color-text-secondary)]">YFI has a fixed supply of 36,666 tokens, making it one of the scarcest DeFi governance tokens. CVX&apos;s value proposition is tied to its ability to control CRV emissions through vlCVX voting. Both tokens grant governance power, but CVX additionally provides direct economic utility in the Curve Wars ecosystem. CVX holders can vote on which Curve pools receive boosted emissions, making it attractive to protocols seeking liquidity.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/yearn Vs Convex", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/yearn-vs-convex"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

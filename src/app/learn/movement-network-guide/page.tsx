@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Movement Network Guide 2026 — MoveVM L1 Blockchain Explained | degen0x",
+  title: "Movement Network Guide 2026 — MoveVM L1 Blockchain Explained",
   description:
     "Complete guide to Movement Network in 2026. Learn how MoveVM's parallel execution and 160k TPS works, $MOVE tokenomics, staking, and why it's the fastest-growing L1 blockchain.",
   keywords:
@@ -37,7 +37,8 @@ export const metadata: Metadata = {
     description:
       "160k TPS. Sub-$0.001 fees. MoveVM + EVM. Here's everything you need to know about Movement Network in 2026.",
   },
-};
+
+  alternates: { canonical: "/learn/movement-network-guide" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

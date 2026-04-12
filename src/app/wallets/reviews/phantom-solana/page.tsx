@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Phantom Solana Wallet Review (${CURRENT_YEAR}) - Best Solana Wallet? | ${SITE_NAME}`,
   description: `Detailed Phantom review focused on its Solana experience for ${CURRENT_YEAR}. Covers SPL tokens, Solana DeFi, NFT management, staking, and transaction speed.`,
-};
+  alternates: { canonical: "/wallets/reviews/phantom-solana" }};
 
 const product = {
   name: "Phantom (Solana)",

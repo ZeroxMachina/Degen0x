@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Compound V3 USDC Lending Guide 2026: Comet, Rates & Rewards | degen0x',
+  title: "Compound V3 USDC Lending Guide 2026: Comet, Rates & Rewards",
   description: 'Complete Compound V3 (Comet) guide for USDC lending. Learn about single-asset model, collateral assets (WETH, WBTC, COMP), supply rates, cross-chain deployment.',
   keywords: ['Compound V3', 'Comet', 'USDC lending', 'single-asset model', 'collateral', 'supply APY', 'borrow APY', 'COMP rewards', 'cross-chain'],
   openGraph: {

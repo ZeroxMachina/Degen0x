@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bridging Crypto Across Chains Guide 2026: Stargate, Across, Synapse | degen0x',
-  description: 'Master cross-chain bridges 2026. Compare Stargate, Across, Synapse, Wormhole, official L2 bridges. Understand lock-and-mint, liquidity networks, intent-based bridges, fees, security, and bridge hack history ($2B+ lost).',
+  title: "Bridging Crypto Across Chains Guide 2026: Stargate, Across,",
+  description: "Master cross-chain bridges 2026. Compare Stargate, Across, Synapse, Wormhole, official L2 bridges. Understand lock-and-mint, liquidity networks, intent-based",
   keywords: ['bridge', 'cross-chain', 'Stargate', 'Across', 'Synapse', 'Wormhole', 'LayerZero', 'wrapped tokens', 'canonical bridge', 'bridge hack', 'degen0x'],
   openGraph: {
     type: 'article',

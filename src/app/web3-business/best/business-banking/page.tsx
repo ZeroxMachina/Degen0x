@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,14 +11,14 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto-Friendly Business Banks of ${CURRENT_YEAR} | ${SITE_NAME}`,
   description: `Compare the best crypto-friendly business banks of ${CURRENT_YEAR}. Banking partners that welcome Web3 companies with fiat on/off ramps, stablecoin support, and no surprise account closures.`,
-};
+  alternates: { canonical: "/web3-business/best/business-banking" }};
 
 const products: Product[] = [
   {
     name: "Mercury",
     slug: "mercury",
     rating: 4.8,
-    description: "The leading banking platform for startups and tech companies, with a strong track record of serving crypto and Web3 businesses. Offers FDIC-insured accounts, treasury management, corporate cards, and seamless integrations with accounting software.",
+    description: "The leading banking platform for startups and tech companies, with a strong track record of serving crypto and Web3 businesses. Offers FDIC-insured accounts,",
     pros: ["Proven crypto-friendly banking partner", "Excellent API and integrations", "Up to $5M FDIC insurance through partner banks", "Modern dashboard with team management"],
     cons: ["US-based entities only", "No direct crypto custody or conversion", "Limited international wire options", "Waitlist for new applicants possible"],
     fees: "Free checking; wires $5 domestic",
@@ -97,7 +99,14 @@ const faqs: FAQ[] = [
 export default function BusinessBankingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="web3-business"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Web3 Business", href: "/web3-business" },
@@ -173,6 +182,57 @@ export default function BusinessBankingPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/business Banking", "description": "The leading banking platform for startups and tech companies, with a strong track record of serving crypto and Web3 businesses. Offers FDIC-insured accounts,", "url": "https://degen0x.com/web3-business/best/business-banking"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

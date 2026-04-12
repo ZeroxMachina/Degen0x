@@ -5,8 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'AI Crypto Agents & Autonomous DeFi 2026 Guide',
-  description:
-    'Complete guide to AI agents in crypto and DeFi. Learn about Virtuals, AIXBT, Autonolas, autonomous trading, yield optimization, and the future of agent-powered finance.',
+  description: "Complete guide to AI agents in crypto and DeFi. Learn about Virtuals, AIXBT, Autonolas, autonomous trading, yield optimization, and the future of agent-powered",
   keywords: [
     'AI crypto agents',
     'autonomous DeFi',

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -6,7 +7,8 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Ethereum vs BNB Chain (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Ethereum vs BNB Chain comparison for ${CURRENT_YEAR}. Decentralization vs low-cost performance, DeFi ecosystems, and investment thesis for ETH and BNB compared.` };
+export const metadata: Metadata = { title: `Ethereum vs BNB Chain (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Ethereum vs BNB Chain comparison for ${CURRENT_YEAR}. Decentralization vs low-cost performance, DeFi ecosystems, and investment thesis for ETH and BNB compared.` ,
+  alternates: { canonical: "/investing/compare/ethereum-vs-bnb-chain" }};
 
 const items = [
   { name: "Ethereum (ETH)", slug: "ethereum", rating: 4.8, affiliateUrl: "#", features: { "Consensus": "Proof-of-Stake", "Validator Count": "~900,000+", "Block Time": "~12 seconds", "Avg Transaction Fee": "$1-50 (mainnet)", "TVL": "Largest in crypto", "Decentralization": "Highly decentralized", "Smart Contract Language": "Solidity / Vyper", "EVM Compatible": "Is the EVM", "Backing Entity": "Ethereum Foundation (non-profit)", "ETF Available": "Yes (Spot)" } },
@@ -22,7 +24,14 @@ const faqs = [
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Ethereum vs BNB Chain" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Ethereum vs BNB Chain" }]} />
       <AffiliateDisclosure />
       <header className="mb-8"><h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Ethereum vs BNB Chain ({CURRENT_YEAR})</h1><p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p></header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">Ethereum and BNB Chain represent opposite ends of the blockchain design spectrum. Ethereum maximizes decentralization and security with hundreds of thousands of validators, while BNB Chain optimizes for low fees and fast transactions with a small, centralized validator set backed by Binance. This comparison examines the trade-offs between these approaches and their respective investment implications.</p>
@@ -43,6 +52,57 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li><li><Link href="/investing/compare/solana-vs-ethereum" className="text-blue-600 hover:underline">Solana vs Ethereum</Link></li></ul></section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/ethereum Vs Bnb Chain", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/ethereum-vs-bnb-chain"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

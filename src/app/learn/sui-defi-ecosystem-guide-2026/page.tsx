@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Sui DeFi Ecosystem Guide 2026: Complete Platform Overview | degen0x',
+  title: "Sui DeFi Ecosystem Guide 2026: Complete Platform Overview",
   description: 'Deep dive into Sui blockchain DeFi protocols, ecosystem metrics, and opportunities. Learn about Suilend, Navi, Cetus, and other major DeFi platforms on Sui.',
   keywords: ['Sui blockchain', 'DeFi ecosystem', 'Suilend', 'Navi', 'Move language', 'Sui DeFi protocols', 'TVL', 'staking'],
   openGraph: {
@@ -34,7 +34,8 @@ export const metadata: Metadata = {
     title: 'Sui DeFi Ecosystem Guide 2026',
     description: 'Complete guide to Sui blockchain DeFi protocols and platforms.',
   },
-};
+
+  alternates: { canonical: "/learn/sui-defi-ecosystem-guide-2026" }};
 
 export default function SuiDeFiEcosystemPage() {
   const article = generateArticleSchema({

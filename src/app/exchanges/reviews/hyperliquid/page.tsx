@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "Hyperliquid",
   slug: "hyperliquid",
   rating: 4.3,
-  description:
-    "Hyperliquid is a decentralized perpetual futures exchange built on its own L1 blockchain, offering CEX-level performance with on-chain transparency, zero gas fees, and deep liquidity.",
+  description: "Hyperliquid is a decentralized perpetual futures exchange built on its own L1 blockchain, offering CEX-level performance with on-chain transparency, zero gas",
   pros: [
     "CEX-level speed and performance on a decentralized platform",
     "Zero gas fees for trading with competitive maker/taker rates",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Hyperliquid Review (${CURRENT_YEAR}) - On-Chain Perps with CEX Speed | ${SITE_NAME}`,
   description: `Complete Hyperliquid review for ${CURRENT_YEAR}. Covers its custom L1 blockchain, on-chain perpetual futures, zero gas fees, liquidity, and trading experience.`,
-};
+  alternates: { canonical: "/exchanges/reviews/hyperliquid" }};
 
 const overview =
   "Hyperliquid is a decentralized perpetual futures exchange that has emerged as one of the most significant innovations in DeFi trading. Built on its own purpose-built Layer 1 blockchain (Hyperliquid L1), the platform delivers trading performance that rivals centralized exchanges while maintaining the transparency and self-custody benefits of decentralized finance. Hyperliquid has rapidly grown to become the largest on-chain derivatives platform by volume.\n\nThe platform features a fully on-chain central limit order book (CLOB) that processes trades with sub-second finality and zero gas fees. This combination of speed, cost efficiency, and on-chain transparency has attracted a significant portion of crypto derivatives traders away from both centralized exchanges and competing DEXs. Hyperliquid supports perpetual futures on 100+ assets with up to 50x leverage, plus a growing spot market.\n\nHyperliquid's custom L1 blockchain was designed specifically for high-frequency trading, using a consensus mechanism optimized for order matching rather than general-purpose computation. The HYPE token serves as the native token of the ecosystem. The platform has achieved remarkable traction, processing billions of dollars in daily volume and establishing itself as a serious competitor to centralized derivatives exchanges.";

@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Fidelity Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Fidelity Crypto review covering trading fees, Bitcoin ETF, custodial services, and whether this traditional finance giant suits your crypto needs.",
-};
+  alternates: { canonical: "/exchanges/reviews/fidelity-crypto" }};
 
 export default function FidelityCryptoReview() {
   return (

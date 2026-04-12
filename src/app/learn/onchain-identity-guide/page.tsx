@@ -7,12 +7,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Onchain Identity Guide 2026: ENS, Soulbound Tokens, Attestations & DIDs | degen0x",
-  description: "Explore the onchain identity stack in 2026 — ENS domains, Soulbound Tokens (SBTs), Ethereum Attestation Service (EAS), proof of personhood, and decentralized reputation systems.",
+  title: "Onchain Identity Guide 2026: ENS, Soulbound Tokens,",
+  description: "Explore the onchain identity stack in 2026 — ENS domains, Soulbound Tokens (SBTs), Ethereum Attestation Service (EAS), proof of personhood, and decentralized",
   keywords: ["onchain identity", "ENS", "soulbound tokens", "SBT", "decentralized identity", "Ethereum Attestation Service", "proof of personhood", "Web3 identity 2026"],
   openGraph: {
     title: "Onchain Identity Guide 2026: ENS, Soulbound Tokens, Attestations & DIDs",
-    description: "Explore the onchain identity stack in 2026 — ENS domains, Soulbound Tokens (SBTs), Ethereum Attestation Service (EAS), proof of personhood, and decentralized reputation systems.",
+    description: "Explore the onchain identity stack in 2026 — ENS domains, Soulbound Tokens (SBTs), Ethereum Attestation Service (EAS), proof of personhood, and decentralized",
     url: "https://degen0x.com/learn/onchain-identity-guide",
     siteName: "degen0x",
     images: [{ url: "https://degen0x.com/og-onchain-identity-guide.svg", width: 1200, height: 630 }],
@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     description: "Explore the onchain identity stack in 2026 — ENS, SBTs, EAS, proof of personhood, and decentralized reputation systems.",
     images: ["https://degen0x.com/og-onchain-identity-guide.svg"],
   },
-};
+
+  alternates: { canonical: "/learn/onchain-identity-guide" }};
 
 interface FAQItem {
   question: string;
@@ -511,6 +512,56 @@ export default function OnchainIdentityGuide() {
       </div>
 
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

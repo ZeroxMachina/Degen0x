@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Blockstream Jade Review (${CURRENT_YEAR}) | degen0x`,
   description: "Blockstream Jade hardware wallet review covering security model, air-gapped signing, Liquid Network support, and value proposition.",
-};
+  alternates: { canonical: "/wallets/reviews/jade" }};
 
 export default function JadeReviewPage() {
   return (

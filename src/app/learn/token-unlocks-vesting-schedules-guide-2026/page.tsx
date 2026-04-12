@@ -230,8 +230,8 @@ export default function TokenVestingPage() {
             { q: 'What is fully diluted value (FDV)?', a: 'Market cap if all tokens were in circulation. Example: 1B max supply × $2 = $2B FDV. FDV/circulating > 5x = high dilution risk.' },
           ].map((faq, i) => (
             <div key={i} style={{ ...infoBoxStyle, marginBottom: 16 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

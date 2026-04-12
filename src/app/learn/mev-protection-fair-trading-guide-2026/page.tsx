@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'MEV Protection Guide 2026: Flashbots, MEV-Share & Fair Trading',
-  description: 'Complete guide to MEV (Maximal Extractable Value) protection in 2026. Learn sandwich attack risks, how Flashbots Protect saves $809M+ in losses, MEV-Share rewards, MEVX multi-chain protection, CoW Swap, and Uniswap X intent-based routing. Protect your trades from validators extracting profits.',
+  title: "MEV Protection Guide 2026: Flashbots, MEV-Share & Fair",
+  description: "Complete guide to MEV (Maximal Extractable Value) protection in 2026. Learn sandwich attack risks, how Flashbots Protect saves $809M+ in losses, MEV-Share",
   keywords: ['MEV', 'Maximal Extractable Value', 'sandwich attacks', 'Flashbots', 'MEV-Share', 'MEVX', 'frontrunning', 'DeFi protection', 'fair trading', 'intent-based trading', 'CoW Swap', 'Uniswap X'],
   openGraph: {
     type: 'article',
-    title: 'MEV Protection Guide 2026: Flashbots, MEV-Share & Fair Trading',
+    title: "MEV Protection Guide 2026: Flashbots, MEV-Share & Fair",
     description: 'Complete guide to MEV protection in 2026. Learn sandwich attack risks, Flashbots Protect, MEV-Share rewards, and multi-chain MEV solutions to protect your trades.',
     publishedTime: '2026-04-01T00:00:00Z',
     modifiedTime: '2026-04-01T00:00:00Z',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MEV Protection Guide 2026: Flashbots, MEV-Share & Fair Trading',
+    title: "MEV Protection Guide 2026: Flashbots, MEV-Share & Fair",
     description: 'Complete guide to MEV protection. Learn sandwich attacks, Flashbots, MEV-Share, and how to protect your trades from validator extraction.',
     image: 'https://degen0x.com/og-mev-protection.svg',
   },

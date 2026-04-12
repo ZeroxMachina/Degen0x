@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -10,14 +11,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Rewards Cards of ${CURRENT_YEAR} - Earn BTC, ETH & More | ${SITE_NAME}`,
   description: `Compare the best crypto rewards cards of ${CURRENT_YEAR}. Earn Bitcoin, Ethereum, and other cryptocurrencies on everyday spending. Expert-tested rankings and reviews.`,
-};
+  alternates: { canonical: "/spending/best/rewards" }};
 
 const rewardsCards: Product[] = [
   {
     name: "Crypto.com Visa Card",
     slug: "crypto-com-visa",
     rating: 4.8,
-    description: "The most comprehensive crypto rewards program available. Beyond cashback, cardholders earn CRO staking rewards, subscription rebates worth up to $167/month (Spotify, Netflix, Amazon Prime, Expedia), and interbank exchange rates. Five tiers let you scale rewards as your commitment grows.",
+    description: "The most comprehensive crypto rewards program available. Beyond cashback, cardholders earn CRO staking rewards, subscription rebates worth up to $167/month",
     pros: ["Up to 5% CRO cashback + subscription rebates", "Staking rewards on locked CRO", "Airport lounge access (higher tiers)", "Zero annual fees across all tiers"],
     cons: ["Top rewards require substantial CRO staking", "All rewards paid in CRO", "Reward tier changes have occurred historically", "180-day staking lockup"],
     fees: "No annual fee",
@@ -258,6 +259,57 @@ export default function BestRewardsCardsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending/best/rewards", "description": "The most comprehensive crypto rewards program available. Beyond cashback, cardholders earn CRO staking rewards, subscription rebates worth up to $167/month", "url": "https://degen0x.com/spending/best/rewards"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

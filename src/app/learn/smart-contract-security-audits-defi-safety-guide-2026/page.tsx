@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Smart Contract Security Audits & DeFi Safety Guide 2026',
-  description: 'Complete guide to smart contract security audits and DeFi safety. Learn vulnerability types, audit firms like CertiK and Trail of Bits, bug bounties on Immunefi, and how to evaluate protocol security.',
+  description: "Complete guide to smart contract security audits and DeFi safety. Learn vulnerability types, audit firms like CertiK and Trail of Bits, bug bounties on",
   keywords: [
     'smart contract security',
     'code audit',

@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `UTrust Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "UTrust provides crypto payment processing for merchants with buyer protection, instant fiat settlement.",
-};
+  alternates: { canonical: "/web3-business/reviews/utrust" }};
 
 export default function UtrustReview() {
   return (

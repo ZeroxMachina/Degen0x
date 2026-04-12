@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Protocol-Owned Liquidity (POL) & DeFi Treasury Guide 2026 | degen0x',
-  description: 'Complete guide to Protocol-Owned Liquidity in 2026. Learn how OlympusDAO, Frax, Tokemak, and Berachain are revolutionizing DeFi treasury management. POL models, bonding mechanisms, impermanent loss, and consensus-level liquidity explained.',
+  title: "Protocol-Owned Liquidity (POL) & DeFi Treasury Guide 2026",
+  description: "Complete guide to Protocol-Owned Liquidity in 2026. Learn how OlympusDAO, Frax, Tokemak, and Berachain are revolutionizing DeFi treasury management. POL",
   keywords: ['protocol-owned liquidity', 'POL', 'OlympusDAO', 'Frax Finance', 'Tokemak', 'Berachain', 'DeFi treasury', 'liquidity mining', 'bonding', 'PCV', 'proof of liquidity'],
   openGraph: {
     type: 'article',

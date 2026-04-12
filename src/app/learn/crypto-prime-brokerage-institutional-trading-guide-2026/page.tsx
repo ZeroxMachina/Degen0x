@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto Prime Brokerage: Institutional Trading Guide 2026',
-  description: 'Complete guide to crypto prime brokerage services for institutions. Learn how FalconX, Coinbase Prime, Hidden Road, and Anchorage compete in the prime brokerage space.',
+  description: "Complete guide to crypto prime brokerage services for institutions. Learn how FalconX, Coinbase Prime, Hidden Road, and Anchorage compete in the prime",
   keywords: [
     'crypto prime brokerage',
     'institutional trading',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     title: 'Crypto Prime Brokerage: Institutional Trading Guide 2026',
-    description: 'Complete guide to crypto prime brokerage services for institutions. Learn how FalconX, Coinbase Prime, Hidden Road, and Anchorage compete in the prime brokerage space.',
+    description: "Complete guide to crypto prime brokerage services for institutions. Learn how FalconX, Coinbase Prime, Hidden Road, and Anchorage compete in the prime",
     url: 'https://degen0x.com/learn/crypto-prime-brokerage-institutional-trading-guide-2026',
     images: [
       {

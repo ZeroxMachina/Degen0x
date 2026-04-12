@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -15,7 +17,7 @@ export default function BitPayAppReviewPage() {
         name: "BitPay",
         slug: "bitpay-app",
         rating: 4.1,
-        description: "BitPay is a veteran crypto payments platform offering a wallet app, Visa debit card, bill pay, and merchant payment processing for Bitcoin, Ethereum, and stablecoins.",
+        description: "BitPay is a veteran crypto payments platform offering a wallet app, Visa debit card, bill pay, and merchant payment processing for Bitcoin, Ethereum, and",
         pros: [
           "Visa debit card for spending crypto at any Visa merchant",
           "Bill pay feature for rent, utilities, and other expenses",

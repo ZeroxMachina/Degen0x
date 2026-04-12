@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Yei Finance Review ${CURRENT_YEAR}: Sei Network Lending Protocol`,
   description: "In-depth Yei Finance review covering lending and borrowing on Sei network, yield rates, protocol features, and the emerging Sei DeFi ecosystem.",
-};
+  alternates: { canonical: "/defi-lending/reviews/yei-finance" }};
 
 export default function YeiFinanceReview() {
   return (

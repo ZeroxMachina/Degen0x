@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Arbitrage Strategies 2026 | CEX-CEX, Triangular, Cross-Chain, Flash Loans',
-  description: 'Master crypto arbitrage: exchange arbitrage (CEX-CEX), triangular, cross-chain, DEX-CEX, flash loan strategies. Real examples, capital requirements, profit margins.',
+  title: "Crypto Arbitrage Strategies 2026 | CEX-CEX, Triangular,",
+  description: "Master crypto arbitrage: exchange arbitrage (CEX-CEX), triangular, cross-chain, DEX-CEX, flash loan strategies. Real examples, capital requirements, profit",
   keywords: ['crypto arbitrage', 'CEX arbitrage', 'triangular arbitrage', 'cross-chain arbitrage', 'DEX arbitrage', 'flash loans', 'arbitrage bot'],
   openGraph: {
     title: 'Crypto Arbitrage Strategies | degen0x',

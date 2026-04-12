@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Blockstream Jade Wallet Review (${CURRENT_YEAR}) - Best Budget Hardware Wallet? | ${SITE_NAME}`,
   description: `Detailed Blockstream Jade review for ${CURRENT_YEAR}. Covers air-gapped signing, virtual secure element, Bitcoin-focused features, and Liquid Network support.`,
-};
+  alternates: { canonical: "/wallets/reviews/jade-wallet" }};
 
 const product = {
   name: "Blockstream Jade",
   slug: "jade-wallet",
   rating: 4.2,
-  description: "Blockstream Jade is a fully open-source Bitcoin hardware wallet featuring air-gapped QR code signing, a virtual secure element, and native Liquid Network support at a budget price.",
+  description: "Blockstream Jade is a fully open-source Bitcoin hardware wallet featuring air-gapped QR code signing, a virtual secure element, and native Liquid Network",
   pros: [
     "Fully open source — both hardware and firmware",
     "Air-gapped operation via QR code camera for maximum security",

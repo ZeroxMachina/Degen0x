@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Mango Markets Review ${CURRENT_YEAR}: Trading, Lending & Pros/Cons`,
   description:
     "In-depth Mango Markets review covering spot and perp trading, lending features, the V4 rebuild, and how this Solana DEX has evolved after its exploit.",
-};
+  alternates: { canonical: "/defi-lending/reviews/mango-markets" }};
 
 export default function MangoMarketsReview() {
   return (

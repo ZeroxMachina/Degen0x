@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Linea zkEVM Guide 2026 — Consensys Layer 2 Deep Dive | degen0x',
-  description: 'Complete guide to Linea zkEVM, the Consensys-built Layer 2 for Ethereum. Learn how Type 2 zkEVM works, ecosystem metrics, MetaMask integration, DeFi protocols, yield strategies, and how to get started on Linea in 2026.',
+  title: "Linea zkEVM Guide 2026 — Consensys Layer 2 Deep Dive",
+  description: "Complete guide to Linea zkEVM, the Consensys-built Layer 2 for Ethereum. Learn how Type 2 zkEVM works, ecosystem metrics, MetaMask integration, DeFi protocols,",
   keywords: ['Linea', 'zkEVM', 'Layer 2', 'Ethereum scaling', 'Consensys', 'zero-knowledge proofs', 'MetaMask', 'Uniswap', 'Linea Surge', 'DeFi on Linea', 'zkEVM vs Optimism', 'Ethereum L2', 'Yield farming Linea'],
   openGraph: {
     type: 'article',

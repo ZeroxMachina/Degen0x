@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Undercollateralized DeFi Loans Guide 2026: Maple, Goldfinch, TrueFi | degen0x',
-  description: 'Complete guide to undercollateralized lending: Maple (8-12% APY), Goldfinch (10-20% APY), TrueFi. Enterprise credit on-chain with higher yields and default risks.',
+  title: "Undercollateralized DeFi Loans Guide 2026: Maple,",
+  description: "Complete guide to undercollateralized lending: Maple (8-12% APY), Goldfinch (10-20% APY), TrueFi. Enterprise credit on-chain with higher yields and default",
   keywords: ['undercollateralized loans', 'Maple Finance', 'Goldfinch', 'TrueFi', 'credit risk', 'DeFi lending', 'enterprise loans'],
   openGraph: {
     type: 'article',

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "OKX Review 2026: Fees, Features, Pros & Cons",
   description:
     "Our in-depth OKX review covers its multi-asset trading platform, Web3 wallet, competitive fees, and advanced features. Is OKX right for you? Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/okx" }};
 
 export default function OKXReview() {
   return (

@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Crypto Yield Aggregators & DeFi Vaults Guide 2026 | degen0x',
-  description: 'Complete guide to yield aggregators and DeFi vaults in 2026. Learn how Yearn, Beefy, Convex, and Sommelier optimize yields, ERC-4626 vault standard, strategies, risks, and how to get started.',
+  description: "Complete guide to yield aggregators and DeFi vaults in 2026. Learn how Yearn, Beefy, Convex, and Sommelier optimize yields, ERC-4626 vault standard,",
   keywords: ['yield aggregators', 'DeFi vaults', 'Yearn Finance', 'Beefy Finance', 'Convex', 'Sommelier', 'ERC-4626', 'auto-compounding', 'vault strategies', 'yield optimization', 'DeFi 2026'],
   openGraph: {
     type: 'article',

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bitcoin Halving Countdown 2026: 2028 Halving & Miner Economics | degen0x',
-  description: 'Track Bitcoin halving cycle countdown. 2028 halving cuts block reward from 3.125 to 1.5625 BTC. Understand historical halving impact, miner economics, and price correlation.',
+  title: "Bitcoin Halving Countdown 2026: 2028 Halving & Miner",
+  description: "Track Bitcoin halving cycle countdown. 2028 halving cuts block reward from 3.125 to 1.5625 BTC. Understand historical halving impact, miner economics, and",
   keywords: ['bitcoin halving', 'bitcoin halving 2028', 'halving countdown', 'block reward', 'miner economics', 'halvings 2012 2016 2020 2024'],
   openGraph: {
     type: 'article',

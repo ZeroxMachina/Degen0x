@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,14 +11,14 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto Accounting Software of ${CURRENT_YEAR} - On-Chain Bookkeeping | ${SITE_NAME}`,
   description: `Compare the best crypto accounting software for businesses in ${CURRENT_YEAR}. Track on-chain transactions, reconcile DeFi activity, generate tax reports, and stay audit-ready.`,
-};
+  alternates: { canonical: "/web3-business/best/accounting" }};
 
 const products: Product[] = [
   {
     name: "Bitwave",
     slug: "bitwave",
     rating: 4.8,
-    description: "Enterprise-grade crypto accounting and tax platform for businesses. Automatically tracks and categorizes on-chain transactions across hundreds of wallets and chains, integrates with major ERP systems, and handles complex DeFi, staking, and treasury operations.",
+    description: "Enterprise-grade crypto accounting and tax platform for businesses. Automatically tracks and categorizes on-chain transactions across hundreds of wallets and",
     pros: ["Enterprise-grade with ERP integrations", "Supports hundreds of chains and wallets", "Automated transaction categorization", "Sub-ledger and journal entry generation"],
     cons: ["Premium pricing for enterprise features", "Onboarding can take time for complex setups", "Overkill for small teams", "Requires accounting knowledge to maximize value"],
     fees: "Custom pricing; starts ~$500/mo",
@@ -97,7 +99,14 @@ const faqs: FAQ[] = [
 export default function AccountingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="web3-business"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Web3 Business", href: "/web3-business" },
@@ -176,6 +185,57 @@ export default function AccountingPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Tracking", "description": "Enterprise-grade crypto accounting and tax platform for businesses. Automatically tracks and categorizes on-chain transactions across hundreds of wallets and", "url": "https://degen0x.com/web3-business/best/accounting"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

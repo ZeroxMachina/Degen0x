@@ -6,15 +6,15 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Chainlink CCIP: Cross-Chain Interoperability & LINK Token Guide 2026',
-  description: 'Complete guide to Chainlink CCIP cross-chain interoperability protocol. Learn how CCIP connects 60+ blockchains, secures $33.6B in cross-chain tokens, and explore the LINK token, staking, SWIFT partnership, and institutional adoption.',
+  title: "Chainlink CCIP: Cross-Chain Interoperability & LINK Token",
+  description: "Complete guide to Chainlink CCIP cross-chain interoperability protocol. Learn how CCIP connects 60+ blockchains, secures $33.6B in cross-chain tokens, and",
   keywords: 'Chainlink, CCIP, cross-chain, oracle, interoperability, LINK token, staking, blockchain, decentralized finance',
   alternates: {
     canonical: 'https://degen0x.com/learn/chainlink-ccip-cross-chain-interoperability-link-guide-2026',
   },
   openGraph: {
     type: 'article',
-    title: 'Chainlink CCIP: Cross-Chain Interoperability & LINK Token Guide 2026',
+    title: "Chainlink CCIP: Cross-Chain Interoperability & LINK Token",
     description: 'Complete guide to Chainlink CCIP cross-chain interoperability protocol. Learn how CCIP connects 60+ blockchains and secures $33.6B in cross-chain tokens.',
     url: 'https://degen0x.com/learn/chainlink-ccip-cross-chain-interoperability-link-guide-2026',
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Chainlink CCIP: Cross-Chain Interoperability & LINK Token Guide 2026',
+    title: "Chainlink CCIP: Cross-Chain Interoperability & LINK Token",
     description: 'Complete guide to Chainlink CCIP. Connects 60+ blockchains, secures $33.6B in cross-chain tokens.',
     images: ['https://degen0x.com/og-chainlink-ccip.svg'],
   },

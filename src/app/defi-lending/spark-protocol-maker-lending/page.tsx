@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Spark Protocol MakerDAO Lending Guide 2026: DAI Savings Rate | degen0x',
-  description: 'Complete Spark Protocol guide. Learn about Spark Lend (Aave V3 fork), DAI Savings Rate (DSR 5%), sDAI yield token, MakerDAO integration, and real-world assets backing.',
+  title: "Spark Protocol MakerDAO Lending Guide 2026: DAI Savings Rate",
+  description: "Complete Spark Protocol guide. Learn about Spark Lend (Aave V3 fork), DAI Savings Rate (DSR 5%), sDAI yield token, MakerDAO integration, and real-world assets",
   keywords: ['Spark Protocol', 'Spark Lend', 'DAI Savings Rate', 'sDAI', 'MakerDAO', 'Aave V3 fork', 'D3M', 'real-world assets', 'DeFi lending'],
   openGraph: {
     type: 'article',

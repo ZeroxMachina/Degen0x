@@ -6,8 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Lido V3 Guide 2026 — stVaults, Modular Staking & Institutional ETH',
-  description: 'Complete guide to Lido V3 stVaults: modular staking infrastructure, institutional use cases, leverage staking strategies, and the evolution of Ethereum liquid staking.',
+  title: "Lido V3 Guide 2026 — stVaults, Modular Staking &",
+  description: "Complete guide to Lido V3 stVaults: modular staking infrastructure, institutional use cases, leverage staking strategies, and the evolution of Ethereum liquid",
   keywords: 'Lido V3, stVaults, stETH, modular staking, Ethereum staking, LDO, institutional staking, leverage staking, liquid staking, DeFi',
   alternates: {
     canonical: 'https://degen0x.com/learn/lido-v3-stvaults-modular-ethereum-staking-guide-2026',
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     url: 'https://degen0x.com/learn/lido-v3-stvaults-modular-ethereum-staking-guide-2026',
-    title: 'Lido V3 Guide 2026 — stVaults, Modular Staking & Institutional ETH',
-    description: 'Complete guide to Lido V3 stVaults: modular staking infrastructure, institutional use cases, leverage staking strategies, and the evolution of Ethereum liquid staking.',
+    title: "Lido V3 Guide 2026 — stVaults, Modular Staking &",
+    description: "Complete guide to Lido V3 stVaults: modular staking infrastructure, institutional use cases, leverage staking strategies, and the evolution of Ethereum liquid",
     publishedTime: '2026-04-10T00:00:00Z',
     images: [{
       url: 'https://degen0x.com/og-lido-v3-stvaults-2026.svg',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lido V3 Guide 2026 — stVaults, Modular Staking & Institutional ETH',
+    title: "Lido V3 Guide 2026 — stVaults, Modular Staking &",
     description: 'Complete guide to Lido V3 stVaults: modular staking infrastructure, institutional use cases, and leverage staking strategies.',
     images: ['https://degen0x.com/og-lido-v3-stvaults-2026.svg'],
   },
@@ -37,7 +37,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],
   headline: 'Lido V3 Guide 2026 — stVaults, Modular Staking & Institutional ETH',
-  description: 'Complete guide to Lido V3 stVaults: modular staking infrastructure, institutional use cases, leverage staking strategies, and the evolution of Ethereum liquid staking.',
+  description: "Complete guide to Lido V3 stVaults: modular staking infrastructure, institutional use cases, leverage staking strategies, and the evolution of Ethereum liquid",
   author: {
     '@type': 'Organization',
     name: 'degen0x',

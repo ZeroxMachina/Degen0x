@@ -38,6 +38,13 @@ export default async function DynamicPage({ params }: Props) {
       relatedArticles={page.relatedArticles}
     >
       <div dangerouslySetInnerHTML={{ __html: page.childrenHtml }} />
-    </LearnPageLayout>
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />    </LearnPageLayout>
   );
 }

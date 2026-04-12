@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'veTokenomics & Vote-Escrowed Tokens Guide 2026 — DeFi Governance Explained | degen0x',
-  description: 'Complete guide to veTokenomics (vote-escrowed tokens) in 2026. Learn how Curve, Balancer, Velodrome, and others use lock-based governance. Curve Wars, bribe markets, and why Pendle is moving beyond ve.',
+  title: "veTokenomics & Vote-Escrowed Tokens Guide 2026 — DeFi",
+  description: "Complete guide to veTokenomics (vote-escrowed tokens) in 2026. Learn how Curve, Balancer, Velodrome, and others use lock-based governance. Curve Wars, bribe",
   keywords: ['veTokenomics', 'vote-escrowed tokens', 'Curve Finance', 'Balancer', 'Velodrome', 'Aerodrome', 'Convex', 'Curve Wars', 'bribe markets', 'governance tokens', 'DeFi 2026'],
   openGraph: {
     type: 'article',

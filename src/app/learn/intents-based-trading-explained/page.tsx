@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Intent-Based Trading Explained | UniswapX, CowSwap, Across | MEV-Proof Swaps | degen0x',
+  title: "Intent-Based Trading Explained | UniswapX, CowSwap, Across",
   description: 'Master intent-based trading: solver networks, order flow auctions, MEV protection via UniswapX, CowSwap batch auctions, Across Protocol, and ERC-7683 standard.',
   keywords: ['intent-based trading', 'UniswapX', 'CowSwap', 'Across Protocol', 'MEV protection', 'solver network', 'order flow auction', 'ERC-7683'],
   openGraph: {

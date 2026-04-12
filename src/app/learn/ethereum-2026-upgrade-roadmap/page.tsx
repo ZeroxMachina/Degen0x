@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Ethereum 2026 Upgrade Roadmap: Fusaka, Glamsterdam & Beyond | degen0x",
+  title: "Ethereum 2026 Upgrade Roadmap: Fusaka, Glamsterdam & Beyond",
   description:
     "Ethereum's 2026 roadmap explained: Fusaka (PeerDAS, 8x blob capacity), Glamsterdam (enshrined PBS), and the path to Hegota. What it means for ETH holders, stakers, and L2 users.",
   keywords: [
@@ -42,7 +44,8 @@ export const metadata: Metadata = {
       "PeerDAS 8x blob expansion shipped. Glamsterdam ePBS is next. Ethereum's 2026 roadmap explained.",
     images: ["https://degen0x.com/og-ethereum-2026-upgrade-roadmap.png"],
   },
-};
+
+  alternates: { canonical: "/learn/ethereum-2026-upgrade-roadmap" }};
 
 // ─── Structured Data ───────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
@@ -96,7 +99,14 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function EthereumUpgradeRoadmapPage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
-      {/* eslint-disable-next-line react/no-unknown-property */}
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      {/* eslint-disable-next-line react/no-unknown-property */}
       <style>{`
         .eth-roadmap-article a:focus-visible {
           outline: 2px solid #6366f1;
@@ -583,6 +593,56 @@ export default function EthereumUpgradeRoadmapPage() {
       </article>
 
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Bitcoin Mining Profitability Guide 2026 | Degen0x Learn',
-  description: 'Comprehensive guide to Bitcoin mining profitability in 2026. Learn about post-halving economics, top ASIC hardware, electricity costs, and mining strategies for maximum ROI.',
+  description: "Comprehensive guide to Bitcoin mining profitability in 2026. Learn about post-halving economics, top ASIC hardware, electricity costs, and mining strategies",
   keywords: [
     'bitcoin mining profitability 2026',
     'mining ROI calculator',
@@ -41,7 +41,8 @@ export const metadata: Metadata = {
     description: 'Comprehensive guide to Bitcoin mining profitability, ROI, and hardware selection.',
     images: ['https://degen0x.com/og-bitcoin-mining-profitability-guide-2026.png'],
   },
-};
+
+  alternates: { canonical: "/learn/bitcoin-mining-profitability-guide-2026" }};
 
 export default function MiningProfitabilityPage() {
   return (

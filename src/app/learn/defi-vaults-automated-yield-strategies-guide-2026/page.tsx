@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Vaults Guide 2026 — Automated Yield, ERC-4626 & Strategies | degen0x',
-  description:
-    'Master DeFi vaults and automated yield strategies in 2026. Learn ERC-4626 standard, compare Yearn vs Beefy vs Morpho, understand risk frameworks, and optimize your yield farming.',
+  title: "DeFi Vaults Guide 2026 — Automated Yield, ERC-4626 &",
+  description: "Master DeFi vaults and automated yield strategies in 2026. Learn ERC-4626 standard, compare Yearn vs Beefy vs Morpho, understand risk frameworks, and optimize",
   keywords: [
     'defi vaults',
     'erc-4626',

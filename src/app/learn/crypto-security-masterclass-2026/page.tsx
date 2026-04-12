@@ -6,16 +6,17 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Security Masterclass 2026: Complete Guide to Protecting Your Assets",
-  description: "Master crypto security in 2026. Hardware wallets, seed phrase management, phishing protection, smart contract audits, multi-sig strategies, and DeFi safety checklists.",
+  title: "Crypto Security Masterclass 2026: Complete Guide to",
+  description: "Master crypto security in 2026. Hardware wallets, seed phrase management, phishing protection, smart contract audits, multi-sig strategies, and DeFi safety",
   keywords: "crypto security, hardware wallet, seed phrase, phishing, smart contract approval, 2FA, cold storage, DeFi security, multi-signature",
   openGraph: {
-    title: "Crypto Security Masterclass 2026: Complete Guide to Protecting Your Assets",
+    title: "Crypto Security Masterclass 2026: Complete Guide to",
     description: "The ultimate guide to securing your cryptocurrency. Learn from industry experts about wallets, keys, phishing, and DeFi safety.",
     type: "article",
     publishedTime: "2026-03-13T00:00:00Z",
   },
-};
+
+  alternates: { canonical: "/learn/crypto-security-masterclass-2026" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -680,6 +681,56 @@ export default function CryptoSecurityMasterclassPage() {
           }}
         />
       </article>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

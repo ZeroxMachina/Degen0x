@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -9,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `US vs International Crypto Exchanges: Full Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Compare US-regulated crypto exchanges vs international platforms. Understand differences in features, fees, coin selection, regulation, and risks.",
-};
+  alternates: { canonical: "/exchanges/compare/us-vs-international-exchanges" }};
 
 export default function UsVsInternationalExchangesPage() {
   return (
@@ -63,6 +64,57 @@ export default function UsVsInternationalExchangesPage() {
         { question: "Why do international exchanges have lower fees?", answer: "International exchanges face lower compliance costs and can offer more competitive fees. They also use fee structures like BNB discounts and volume tiers that drive fees lower. US exchanges bear higher regulatory and compliance costs that are reflected in pricing." },
         { question: "Are international exchanges safe?", answer: "Major international exchanges like Binance implement robust security measures. However, the level of regulatory protection is generally lower than US exchanges. Choose international exchanges with proof of reserves, insurance funds, and licenses in respected jurisdictions." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/us Vs International Exchanges", "description": "Compare US-regulated crypto exchanges vs international platforms. Understand differences in features, fees, coin selection, regulation, and risks.", "url": "https://degen0x.com/exchanges/compare/us-vs-international-exchanges"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

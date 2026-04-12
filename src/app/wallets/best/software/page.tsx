@@ -12,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Software Wallets of ${CURRENT_YEAR} - Hot Wallet Reviews | ${SITE_NAME}`,
   description: `Compare the best software crypto wallets of ${CURRENT_YEAR}. MetaMask, Phantom, Trust Wallet, and more. Expert reviews of browser, mobile, and desktop wallets.`,
-};
+  alternates: { canonical: "/wallets/best/software" }};
 
 const faqs = [
   {
@@ -156,6 +156,7 @@ export default function BestSoftwareWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/software", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/software"}) }} />
     </div>
   );
 }

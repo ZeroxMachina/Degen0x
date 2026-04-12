@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
@@ -41,7 +42,8 @@ export const metadata: Metadata = {
     description: "Complete guide to PEAQ network, DePIN, and the crypto machine economy. How robots, vehicles, and IoT devices transact autonomously on blockchain in 2026.",
     images: ["https://degen0x.com/api/og?title=PEAQ+%26+DePIN+Robotics+Guide+2026&category=Learn&type=learn"],
   },
-};
+
+  alternates: { canonical: "/learn/peaq-depin-robotics-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "PEAQ & DePIN Robotics Guide 2026 | degen0x",
@@ -110,7 +112,14 @@ export default function PeaqDeginRoboticsGuidePage() {
 
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh" }}>
-      <StructuredData data={combinedSchema} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <StructuredData data={combinedSchema} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px 24px" }}>

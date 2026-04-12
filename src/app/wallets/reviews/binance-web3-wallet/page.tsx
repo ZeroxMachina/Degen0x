@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Binance Web3 Wallet Review (${CURRENT_YEAR}) - Best CEX-Integrated Wallet? | ${SITE_NAME}`,
   description: `Detailed Binance Web3 Wallet review for ${CURRENT_YEAR}. Covers MPC key management, multi-chain support, built-in earn features, and Binance app integration.`,
-};
+  alternates: { canonical: "/wallets/reviews/binance-web3-wallet" }};
 
 const product = {
   name: "Binance Web3 Wallet",
   slug: "binance-web3-wallet",
   rating: 4.0,
-  description: "Binance Web3 Wallet is an MPC-based self-custody wallet built into the Binance app, providing seamless access to DeFi across 30+ chains with no seed phrase required.",
+  description: "Binance Web3 Wallet is an MPC-based self-custody wallet built into the Binance app, providing seamless access to DeFi across 30+ chains with no seed phrase",
   pros: [
     "No seed phrase — MPC technology splits keys across three parties",
     "Built into Binance app with seamless CEX-to-DeFi transfers",

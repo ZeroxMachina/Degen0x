@@ -9,12 +9,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "DeFi Yield Aggregators Guide 2026: Yearn, Beefy, Pendle & Auto-Compounding | degen0x",
-  description: "Complete guide to DeFi yield aggregators in 2026. Compare Yearn V3, Beefy Finance, Pendle, Sommelier, and more. How auto-compounding works, strategies, risks, and APY comparison.",
+  title: "DeFi Yield Aggregators Guide 2026: Yearn, Beefy, Pendle &",
+  description: "Complete guide to DeFi yield aggregators in 2026. Compare Yearn V3, Beefy Finance, Pendle, Sommelier, and more. How auto-compounding works, strategies, risks,",
   keywords: ["defi yield aggregator 2026", "best yield aggregator crypto", "yearn finance vaults", "beefy finance auto compound", "pendle yield tokenization", "auto compounding defi", "yield optimizer crypto", "defi vault strategies", "sommelier defi", "yield farming aggregator"],
   openGraph: {
-    title: "DeFi Yield Aggregators Guide 2026: Yearn, Beefy, Pendle & Auto-Compounding | degen0x",
-    description: "Complete guide to DeFi yield aggregators in 2026. Compare Yearn V3, Beefy Finance, Pendle, Sommelier, and more. How auto-compounding works, strategies, risks, and APY comparison.",
+    title: "DeFi Yield Aggregators Guide 2026: Yearn, Beefy, Pendle &",
+    description: "Complete guide to DeFi yield aggregators in 2026. Compare Yearn V3, Beefy Finance, Pendle, Sommelier, and more. How auto-compounding works, strategies, risks,",
     url: "https://degen0x.com/learn/defi-yield-aggregators-guide-2026",
     type: "article",
     publishedTime: "2026-03-27T00:00:00Z",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "DeFi Yield Aggregators Guide 2026: Yearn, Beefy, Pendle & Auto-Compounding",
-  description: "Complete guide to DeFi yield aggregators in 2026. Compare Yearn V3, Beefy Finance, Pendle, Sommelier, and more. How auto-compounding works, strategies, risks, and APY comparison.",
+  description: "Complete guide to DeFi yield aggregators in 2026. Compare Yearn V3, Beefy Finance, Pendle, Sommelier, and more. How auto-compounding works, strategies, risks,",
   url: "https://degen0x.com/learn/defi-yield-aggregators-guide-2026",
   datePublished: "2026-03-27T00:00:00Z",
   dateModified: "2026-03-27T00:00:00Z",

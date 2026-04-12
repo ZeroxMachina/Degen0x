@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Foundation Passport Review (${CURRENT_YEAR}) | degen0x`,
   description: "Foundation Passport hardware wallet review covering open-source design, air-gapped QR signing, premium build quality, and Bitcoin-focused features.",
-};
+  alternates: { canonical: "/wallets/reviews/foundation" }};
 
 export default function FoundationReviewPage() {
   return (

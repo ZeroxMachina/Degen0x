@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
@@ -8,12 +9,12 @@ import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: 'DYOR Crypto: How to Research Any Token Before Buying (2026)',
-  description: 'Complete guide to DYOR (Do Your Own Research) for crypto tokens. Learn the 10-step framework, red flags, essential tools, and how to evaluate tokenomics and on-chain data like a pro.',
+  description: "Complete guide to DYOR (Do Your Own Research) for crypto tokens. Learn the 10-step framework, red flags, essential tools, and how to evaluate tokenomics and",
   keywords: ['DYOR crypto', 'how to research crypto tokens', 'token due diligence', 'cryptocurrency research', 'token analysis', 'crypto scams', 'tokenomics analysis', 'on-chain analysis', 'crypto education'],
   openGraph: {
     type: 'article',
     title: 'DYOR Crypto: How to Research Any Token Before Buying (2026)',
-    description: 'Complete guide to DYOR (Do Your Own Research) for crypto tokens. Learn the 10-step framework, red flags, essential tools, and how to evaluate tokenomics and on-chain data like a pro.',
+    description: "Complete guide to DYOR (Do Your Own Research) for crypto tokens. Learn the 10-step framework, red flags, essential tools, and how to evaluate tokenomics and",
     publishedTime: '2026-03-28T00:00:00Z',
     url: `${SITE_URL}/learn/dyor-token-research-guide-2026`,
     images: [
@@ -31,11 +32,12 @@ export const metadata: Metadata = {
     description: 'Complete guide to DYOR (Do Your Own Research) for crypto tokens. Learn the 10-step framework, red flags, essential tools, and tokenomics analysis.',
     images: [`${SITE_URL}/og-dyor-token-research.svg`],
   },
-};
+
+  alternates: { canonical: "/learn/dyor-token-research-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: 'DYOR Crypto: How to Research Any Token Before Buying (2026)',
-  description: 'Complete guide to DYOR (Do Your Own Research) for crypto tokens. Learn the 10-step framework, red flags, essential tools, and how to evaluate tokenomics and on-chain data like a pro.',
+  description: "Complete guide to DYOR (Do Your Own Research) for crypto tokens. Learn the 10-step framework, red flags, essential tools, and how to evaluate tokenomics and",
   url: `${SITE_URL}/learn/dyor-token-research-guide-2026`,
   datePublished: '2026-03-28T00:00:00Z',
   dateModified: '2026-03-28T00:00:00Z',
@@ -77,7 +79,14 @@ export default function DYORTokenResearchGuidePage() {
     <>
       <StructuredData data={schema} />
       <article className="min-h-screen" style={{ backgroundColor: '#0d1117', color: '#e6edf3' }}>
-        {/* Breadcrumb */}
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />        {/* Breadcrumb */}
         <div style={{ borderBottom: '1px solid #30363d', padding: '20px 0' }}>
           <div style={{ maxWidth: '820px', margin: '0 auto', padding: '0 20px' }}>
             <Breadcrumb

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -29,7 +31,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Jupiter Exchange Review (${CURRENT_YEAR}) - Solana's Top DEX Aggregator | ${SITE_NAME}`,
   description: `Complete Jupiter review for ${CURRENT_YEAR}. Covers DEX aggregation, perpetual futures, limit orders, DCA, JUP token, and the Solana trading experience.`,
-};
+  alternates: { canonical: "/exchanges/reviews/jupiter-exchange" }};
 
 const overview =
   "Jupiter is the dominant DEX aggregator on the Solana blockchain, processing the majority of all Solana swap volume by routing trades across every available liquidity source on the network. Launched in 2021, Jupiter evolved from a simple swap aggregator into a comprehensive trading platform offering limit orders, dollar-cost averaging (DCA), perpetual futures, and a token launch platform (LFG Launchpad).\n\nJupiter's core value is finding the best swap price by splitting and routing trades across Raydium, Orca, Meteora, and dozens of other Solana DEXs simultaneously. The aggregator's routing engine analyzes all possible paths and splits trades across multiple pools to minimize price impact and maximize output. For Solana users, Jupiter has become the default frontend for all token swaps.\n\nThe JUP governance token was distributed through one of the largest airdrops in crypto history and powers the protocol's decentralized governance. Jupiter's team, led by pseudonymous founder Meow, has been recognized for consistent execution and rapid feature development. The protocol is open-source and has established itself as essential Solana infrastructure.";

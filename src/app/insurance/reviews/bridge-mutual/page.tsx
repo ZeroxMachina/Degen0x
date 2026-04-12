@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Bridge Mutual",
   slug: "bridge-mutual",
   rating: 3.4,
-  description: "Bridge Mutual is a decentralized discretionary coverage platform that allows anyone to create and manage insurance pools for smart contracts, stablecoins, and centralized exchanges without KYC requirements.",
+  description: "Bridge Mutual is a decentralized discretionary coverage platform that allows anyone to create and manage insurance pools for smart contracts, stablecoins, and",
   pros: ["Permissionless pool creation", "No KYC requirement", "Community-driven coverage decisions", "Multiple coverage categories", "BMI token governance and staking"],
   cons: ["Very small capital pool and TVL", "Limited protocol coverage", "Minimal claim history", "Low liquidity for most pools", "Uncertain long-term viability"],
   fees: "3-10% annually",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Bridge Mutual Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Bridge Mutual review covering community-driven insurance, permissionless pool creation, coverage options, and comparison with larger DeFi insurance protocols.",
-};
+  alternates: { canonical: "/insurance/reviews/bridge-mutual" }};
 
 export default function BridgeMutualReviewPage() {
   return (

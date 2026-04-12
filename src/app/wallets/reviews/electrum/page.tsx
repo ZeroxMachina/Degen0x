@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Electrum Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Electrum wallet review. The veteran Bitcoin-only wallet with advanced features, hardware wallet support, and Lightning Network integration.",
-};
+  alternates: { canonical: "/wallets/reviews/electrum" }};
 
 export default function ElectrumReviewPage() {
   return (

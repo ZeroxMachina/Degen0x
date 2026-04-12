@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Custodial vs Non-Custodial Wallets (${CURRENT_YEAR}) - Key Differences | ${SITE_NAME}`,
   description: `Custodial vs non-custodial wallets explained for ${CURRENT_YEAR}. Learn who holds your keys, the security trade-offs, and which type is right for you.`,
-};
+  alternates: { canonical: "/wallets/learn/custodial-vs-non-custodial" }};
 
 const toc = [
   { id: "overview", title: "Custodial vs Non-Custodial: Overview", level: 2 },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Bitcoin Supply Shock 2026: Exchange Reserves, ETF Custody & Price Impact | degen0x",
+  title: "Bitcoin Supply Shock 2026: Exchange Reserves, ETF Custody &",
   description:
     "Bitcoin exchange reserves hit 7-year lows while ETFs hold 1.3M BTC. Explore the 2026 supply shock thesis — who holds what, what's lost, and what it means for price.",
   keywords: [
@@ -48,7 +48,8 @@ export const metadata: Metadata = {
     description:
       "Exchange reserves at 7-year lows. ETFs hold 1.3M BTC. 3.7M coins lost forever. Here's what it means.",
   },
-};
+
+  alternates: { canonical: "/learn/bitcoin-supply-shock-guide-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
@@ -555,14 +556,14 @@ export default function BitcoinSupplyShockGuidePage() {
               },
             ].map((faq) => (
               <div
-                key={faq.q}
+                key={faq.question}
                 className="glass rounded-xl p-5 mb-3"
                 style={{ border: "1px solid var(--color-border)" }}
               >
                 <h3 className="text-sm font-bold mb-2" style={{ color: "var(--color-text)" }}>
-                  {faq.q}
+                  {faq.question}
                 </h3>
-                <p style={{ fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
+                <p style={{ fontSize: 14, lineHeight: 1.7 }}>{faq.answer}</p>
               </div>
             ))}
           </section>

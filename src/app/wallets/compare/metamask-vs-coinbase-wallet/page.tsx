@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -9,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `MetaMask vs Coinbase Wallet (${CURRENT_YEAR}) - Which Is Better? | ${SITE_NAME}`,
   description: `MetaMask vs Coinbase Wallet side-by-side comparison for ${CURRENT_YEAR}. Features, fees, security, dApp support, and cloud backup compared.`,
-};
+  alternates: { canonical: "/wallets/compare/metamask-vs-coinbase-wallet" }};
 
 const items = [
   { name: "MetaMask", slug: "metamask", rating: 4.5, affiliateUrl: "#", features: { Type: "Browser extension + mobile", Price: "Free", "Supported Chains": "All EVM chains", "Open Source": "Yes", "DeFi Access": "Universal", "NFT Support": "Basic gallery", "Cloud Backup": "No", "Hardware Wallet": "Ledger, Trezor", "Swap Fee": "0.875%", "Mobile App": "Yes" } },
@@ -25,7 +26,14 @@ const faqs = [
 export default function MetaMaskVsCoinbaseWalletPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Compare", href: "/wallets/compare" }, { label: "MetaMask vs Coinbase Wallet", href: "/wallets/compare/metamask-vs-coinbase-wallet" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Compare", href: "/wallets/compare" }, { label: "MetaMask vs Coinbase Wallet", href: "/wallets/compare/metamask-vs-coinbase-wallet" }]} />
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">MetaMask vs Coinbase Wallet ({CURRENT_YEAR})</h1>
@@ -57,6 +65,57 @@ export default function MetaMaskVsCoinbaseWalletPage() {
           <Link href="/wallets/learn/how-to-choose-crypto-wallet" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Guide</span><h3 className="text-sm font-semibold text-[var(--color-text)]">How to Choose a Crypto Wallet</h3></Link>
         </div>
       </section>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/metamask Vs Coinbase Wallet", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/metamask-vs-coinbase-wallet"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/wallets" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Wallets
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Wallets
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

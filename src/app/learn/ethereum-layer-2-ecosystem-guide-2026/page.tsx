@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Ethereum Layer 2 Guide 2026: Base, Arbitrum, Optimism & Beyond | degen0x',
-  description: 'Complete guide to Ethereum Layer 2 networks in 2026. Compare Base (46% DeFi TVL), Arbitrum ($18B TVL), Optimism, zkSync, Scroll, and Starknet. Learn L2 fees, TPS, bridging, and which network fits your needs.',
+  title: "Ethereum Layer 2 Guide 2026: Base, Arbitrum, Optimism &",
+  description: "Complete guide to Ethereum Layer 2 networks in 2026. Compare Base (46% DeFi TVL), Arbitrum ($18B TVL), Optimism, zkSync, Scroll, and Starknet. Learn L2 fees,",
   keywords: ['Ethereum Layer 2', 'Arbitrum', 'Base', 'Optimism', 'zkSync', 'Scroll', 'Starknet', 'L2 rollups', 'DeFi', 'crypto scaling', 'L2 comparison', 'blockchain 2026'],
   openGraph: {
     type: 'article',

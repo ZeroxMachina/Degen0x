@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Seed Phrase Explained - What It Is & How to Protect It (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Everything you need to know about crypto seed phrases (recovery phrases) in ${CURRENT_YEAR}. What they are, how they work, and the best practices for keeping them safe.`,
-};
+  alternates: { canonical: "/wallets/learn/seed-phrase-explained" }};
 
 const toc = [
   { id: "what-is-seed", title: "What Is a Seed Phrase?", level: 2 },

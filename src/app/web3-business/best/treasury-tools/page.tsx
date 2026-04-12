@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,14 +11,14 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best DAO Treasury Tools of ${CURRENT_YEAR} - Multi-Sig & Fund Management | ${SITE_NAME}`,
   description: `Compare the best DAO treasury management tools of ${CURRENT_YEAR}. Multi-signature wallets, spending controls, on-chain accounting, and fund management platforms ranked by security, features, and ease of use.`,
-};
+  alternates: { canonical: "/web3-business/best/treasury-tools" }};
 
 const products: Product[] = [
   {
     name: "Safe (Gnosis Safe)",
     slug: "safe",
     rating: 4.9,
-    description: "The industry-standard multi-signature wallet used by the majority of DAOs and crypto organizations. Supports multiple chains, customizable signing thresholds, and a rich ecosystem of apps for treasury operations including spending limits and batch transactions.",
+    description: "The industry-standard multi-signature wallet used by the majority of DAOs and crypto organizations. Supports multiple chains, customizable signing thresholds,",
     pros: ["Battle-tested security with billions in TVL", "Multi-chain support across EVM networks", "Rich app ecosystem for DeFi and payments", "Fully open-source and self-custodial"],
     cons: ["Steeper learning curve for non-technical users", "Gas fees for on-chain transactions", "Limited native analytics and reporting"],
     fees: "Free (gas fees apply)",
@@ -101,7 +103,14 @@ const faqs: FAQ[] = [
 export default function TreasuryToolsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="web3-business"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Web3 Business", href: "/web3-business" },
@@ -185,6 +194,57 @@ export default function TreasuryToolsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security (35%)", "description": "The industry-standard multi-signature wallet used by the majority of DAOs and crypto organizations. Supports multiple chains, customizable signing thresholds,", "url": "https://degen0x.com/web3-business/best/treasury-tools"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

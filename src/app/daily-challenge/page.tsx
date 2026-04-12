@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import DailyChallenge from '@/components/DailyChallenge';
 import Breadcrumb from '@/components/Breadcrumb';
 
@@ -19,18 +21,77 @@ export const metadata: Metadata = {
       'One crypto question every day. Answer correctly to earn XP, build your streak, and unlock badges.',
     images: ['https://degen0x.com/api/og?title=Daily+Crypto+Challenge&category=Gamification&type=tool'],
   },
-};
+
+  alternates: { canonical: "/daily-challenge" }};
 
 export default function DailyChallengePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="daily-challenge"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Daily Challenge" },
         ]}
       />
       <DailyChallenge />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Daily Crypto Challenge \u2014 Earn XP Every Day | degen0x", "description": "One crypto question every day. Answer correctly to earn XP, build your streak, and unlock badges. The fastest way to level up your crypto knowledge.", "url": "https://degen0x.com/daily-challenge"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

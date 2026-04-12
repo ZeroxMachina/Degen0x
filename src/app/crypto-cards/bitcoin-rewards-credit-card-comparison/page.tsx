@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Bitcoin Rewards Cards 2026 | Fold, Coinbase, BlockFi Comparison",
+  title: "Bitcoin Rewards Cards 2026 | Fold, Coinbase, BlockFi",
   description: "Compare Bitcoin rewards credit cards: Fold 2% BTC, Coinbase 4% stablecoin, BlockFi 1.5% APY. Real rates, annual fees, earning limits, and best use cases.",
   keywords: ["bitcoin rewards card", "crypto cashback credit card", "fold card", "bitcoin credit card", "crypto rewards comparison"],
   openGraph: {
     type: "article",
-    title: "Bitcoin Rewards Cards 2026 | Fold, Coinbase, BlockFi Comparison",
+    title: "Bitcoin Rewards Cards 2026 | Fold, Coinbase, BlockFi",
     description: "Compare top Bitcoin rewards credit cards with real earning rates and fee structures for April 2026.",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bitcoin Rewards Cards 2026 | Fold, Coinbase, BlockFi Comparison",
+    title: "Bitcoin Rewards Cards 2026 | Fold, Coinbase, BlockFi",
     description: "Compare top Bitcoin rewards credit cards with real earning rates and fee structures for April 2026.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
@@ -463,6 +463,56 @@ export default function BitcoinRewardsComparison() {
         {/* Disclaimer */}
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only, not financial or investment advice. Cryptocurrency carries substantial risk. Tax laws vary by jurisdiction—consult a qualified tax professional before making decisions. Card terms change frequently—verify current details on official websites before applying.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

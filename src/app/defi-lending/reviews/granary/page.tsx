@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Granary Finance Review ${CURRENT_YEAR}: Multi-Chain Aave Fork`,
   description: "Detailed Granary Finance review covering multi-chain lending, Aave V2 architecture, yield rates, and risk analysis across supported networks.",
-};
+  alternates: { canonical: "/defi-lending/reviews/granary" }};
 
 export default function GranaryReview() {
   return (

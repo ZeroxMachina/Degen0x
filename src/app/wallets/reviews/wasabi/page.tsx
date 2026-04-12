@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Wasabi Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "Wasabi Wallet review covering CoinJoin privacy features, Tor integration, coin control, and Bitcoin privacy best practices.",
-};
+  alternates: { canonical: "/wallets/reviews/wasabi" }};
 
 export default function WasabiReviewPage() {
   return (

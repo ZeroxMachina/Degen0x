@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'How to Buy Bitcoin Step by Step — Beginner Guide 2026 | degen0x',
+  title: "How to Buy Bitcoin Step by Step — Beginner Guide 2026",
   description: 'Learn how to buy Bitcoin in 2026 with our step-by-step guide. Compare exchanges, set up wallets, place your first order, and store BTC safely.',
   keywords: ['how to buy bitcoin', 'buy bitcoin step by step', 'buy BTC', 'bitcoin for beginners', 'crypto exchange', 'buy cryptocurrency', 'bitcoin wallet'],
   openGraph: {
     type: 'article',
-    title: 'How to Buy Bitcoin Step by Step — Beginner Guide 2026 | degen0x',
+    title: "How to Buy Bitcoin Step by Step — Beginner Guide 2026",
     description: 'Learn how to buy Bitcoin in 2026 with our step-by-step guide. Compare exchanges, set up wallets, place your first order, and store BTC safely.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',

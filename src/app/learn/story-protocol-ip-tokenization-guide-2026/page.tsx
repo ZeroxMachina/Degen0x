@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
-  title: 'Story Protocol Guide 2026: IP Tokenization & Programmable IP | degen0x',
-  description:
-    'Complete Story Protocol guide 2026: IP tokenization, Programmable IP Licenses (PIL), IP Assets, AI agents, ATCP/IP protocol, $IP token economics, and programmable intellectual property on blockchain. Learn Story Protocol fundamentals.',
+  title: "Story Protocol Guide 2026: IP Tokenization & Programmable IP",
+  description: "Complete Story Protocol guide 2026: IP tokenization, Programmable IP Licenses (PIL), IP Assets, AI agents, ATCP/IP protocol, $IP token economics, and",
   keywords: [
     'Story Protocol',
     'IP tokenization',
@@ -309,7 +309,14 @@ export default function StoryProtocolGuide() {
 
   return (
     <div style={pageStyle}>
-      <div style={containerStyle}>
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <div style={containerStyle}>
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: '0.85rem', color: '#8b949e' }}>
           <Link href="/" style={{ color: '#8b949e', textDecoration: 'none' }}>Home</Link>

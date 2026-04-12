@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Token Unlocks Calendar 2026: Vesting Schedule Tracker | degen0x',
+  title: "Token Unlocks Calendar 2026: Vesting Schedule Tracker",
   description: 'Track token unlocks (cliff vs linear vesting). Major 2026 unlocks: ARB, OP, APT, SUI, STRK. Trading strategy for supply shock.',
   keywords: ['token unlocks', 'vesting schedule', 'token unlock calendar 2026', 'supply shock', 'unlock tracker'],
   openGraph: { type: 'article', title: 'Token Unlocks Calendar 2026', description: 'Token unlock tracking', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/tools/token-unlocks-calendar', images: [{ url: 'https://degen0x.com/og-tools-token-unlocks.svg', width: 1200, height: 630, alt: 'Token Unlocks' }] },

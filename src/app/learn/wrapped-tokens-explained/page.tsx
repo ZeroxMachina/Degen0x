@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Wrapped Tokens Explained 2026: WBTC, WETH, tBTC, cbBTC & Cross-Chain Bridges | degen0x',
-  description: 'Master wrapped tokens: WBTC ($5B+ TVL, BitGo custodial), WETH mechanics, tBTC (decentralized Threshold Network), cbBTC (Coinbase). Compare custodial vs trustless wrapping, proof of reserves, and synthetic vs wrapped assets.',
+  title: "Wrapped Tokens Explained 2026: WBTC, WETH, tBTC, cbBTC &",
+  description: "Master wrapped tokens: WBTC ($5B+ TVL, BitGo custodial), WETH mechanics, tBTC (decentralized Threshold Network), cbBTC (Coinbase). Compare custodial vs",
   keywords: ['wrapped tokens', 'WBTC', 'WETH', 'tBTC', 'cbBTC', 'renBTC', 'token bridging', 'cross-chain', 'custodial risk', 'wrapped asset', 'blockchain bridge'],
   openGraph: {
     type: 'article',

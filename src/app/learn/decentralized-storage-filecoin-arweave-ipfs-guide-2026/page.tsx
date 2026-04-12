@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Decentralized Storage Guide 2026: Filecoin, Arweave & IPFS Explained | degen0x',
-  description:
-    'Complete decentralized storage guide 2026: Filecoin (14+ EB capacity), Arweave permanent storage, IPFS distributed network, and storage token economics (FIL, AR, STORJ). Learn Web3 storage solutions.',
+  title: "Decentralized Storage Guide 2026: Filecoin, Arweave & IPFS",
+  description: "Complete decentralized storage guide 2026: Filecoin (14+ EB capacity), Arweave permanent storage, IPFS distributed network, and storage token economics (FIL,",
   keywords: [
     'decentralized storage',
     'Filecoin',

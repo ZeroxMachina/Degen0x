@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "Bitget Review 2026: Copy Trading, Derivatives, Fees & Pros",
   description:
     "Complete Bitget review covering copy trading platform, derivatives engine, fast-growing selection, and security. Is Bitget right for you? Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/bitget" }};
 
 export default function BitgetReview() {
   return (

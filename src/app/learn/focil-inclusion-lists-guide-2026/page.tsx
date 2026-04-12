@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
@@ -102,7 +103,14 @@ export default function FocilInclusionListsGuide() {
       <StructuredData schema={combinedSchema} />
 
       <main className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb
             items={[
               { label: "Learn", href: "/learn" },
@@ -272,10 +280,10 @@ export default function FocilInclusionListsGuide() {
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">
-                      {faq.q}
+                      {faq.question}
                       <span className="text-[#8b949e] ml-2 group-open:rotate-180 transition-transform">&#9660;</span>
                     </summary>
-                    <p className="px-5 pb-4 text-[#c9d1d9] leading-relaxed">{faq.a}</p>
+                    <p className="px-5 pb-4 text-[#c9d1d9] leading-relaxed">{faq.answer}</p>
                   </details>
                 ))}
               </div>

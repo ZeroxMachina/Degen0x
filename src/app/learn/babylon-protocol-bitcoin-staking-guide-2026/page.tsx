@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Babylon Protocol Guide 2026: Bitcoin Staking & BABY Token | degen0x',
-  description:
-    'Complete Babylon Protocol guide 2026: Bitcoin staking with EOTS, BABY token dual staking, Babylon Genesis L1 blockchain, trustless Bitcoin vaults, and comparison with Solv Protocol, Lombard Finance, and CoreDAO. Learn how to stake BTC natively.',
+  title: "Babylon Protocol Guide 2026: Bitcoin Staking & BABY Token",
+  description: "Complete Babylon Protocol guide 2026: Bitcoin staking with EOTS, BABY token dual staking, Babylon Genesis L1 blockchain, trustless Bitcoin vaults, and",
   keywords: [
     'Babylon Protocol',
     'Bitcoin staking',

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,10 +10,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Portfolio Trackers (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best crypto portfolio trackers in ${CURRENT_YEAR}. Compare CoinGecko, Delta, CoinStats, and more for tracking your crypto investments across wallets and exchanges.`,
-};
+  alternates: { canonical: "/investing/best/portfolio-trackers" }};
 
 const products = [
-  { name: "CoinGecko", slug: "coingecko", rating: 4.7, description: "The most comprehensive crypto data platform with portfolio tracking across unlimited wallets, price alerts, and detailed token analytics. Free tier covers most users' needs.", pros: ["Free comprehensive portfolio tracking", "Deepest token coverage", "Price alerts and watchlists"], cons: ["Manual entry required for DeFi positions", "No direct exchange API sync on free plan"], bestFor: "Comprehensive crypto data and portfolio tracking", affiliateUrl: "#", category: "investing" },
+  { name: "CoinGecko", slug: "coingecko", rating: 4.7, description: "The most comprehensive crypto data platform with portfolio tracking across unlimited wallets, price alerts, and detailed token analytics. Free tier covers most" needs.", pros: ["Free comprehensive portfolio tracking", "Deepest token coverage", "Price alerts and watchlists"], cons: ["Manual entry required for DeFi positions", "No direct exchange API sync on free plan"], bestFor: "Comprehensive crypto data and portfolio tracking", affiliateUrl: "#", category: "investing" },
   { name: "CoinStats", slug: "coinstats", rating: 4.6, description: "All-in-one portfolio tracker with direct wallet and exchange connections. Auto-syncs balances from 300+ exchanges and wallets with DeFi position tracking.", pros: ["Auto-sync from exchanges and wallets", "DeFi position tracking", "Built-in swap and buy features"], cons: ["Premium features require paid plan", "Occasional sync delays"], bestFor: "Automated multi-exchange portfolio tracking", affiliateUrl: "#", category: "investing" },
   { name: "Delta", slug: "delta", rating: 4.5, description: "Clean, mobile-first portfolio tracker acquired by eToro. Supports stocks and crypto in a single view with detailed analytics and performance charts.", pros: ["Beautiful mobile interface", "Combined stock and crypto tracking", "Detailed performance analytics"], cons: ["Limited DeFi tracking", "Some features locked behind PRO subscription"], bestFor: "Mobile portfolio tracking with stocks and crypto", affiliateUrl: "#", category: "investing" },
   { name: "DeBank", slug: "debank", rating: 4.6, description: "The leading DeFi portfolio tracker that automatically detects positions across hundreds of protocols on 20+ chains. Essential for active DeFi users.", pros: ["Best DeFi position detection", "Multi-chain coverage", "Protocol-level position breakdown"], cons: ["Read-only dashboard, not a wallet", "No exchange tracking"], bestFor: "DeFi portfolio tracking across multiple chains", affiliateUrl: "#", category: "investing" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Portfolio Trackers" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Portfolio Trackers" }]} />
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Best Crypto Portfolio Trackers ({CURRENT_YEAR})</h1>
@@ -57,6 +65,57 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/portfolio Trackers", "description": "The most comprehensive crypto data platform with portfolio tracking across unlimited wallets, price alerts, and detailed token analytics. Free tier covers most", "url": "https://degen0x.com/investing/best/portfolio-trackers"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "DePIN Networks: Decentralized Physical Infrastructure 2026",
-  description: "Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage infrastructure.",
+  description: "Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/depin-decentralized-physical-infrastructure-networks-guide-2026'
@@ -13,14 +13,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     title: 'DePIN Networks: Decentralized Physical Infrastructure 2026',
-    description: 'Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage infrastructure.',
+    description: "Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage",
     url: 'https://degen0x.com/learn/depin-decentralized-physical-infrastructure-networks-guide-2026',
     images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'DePIN Networks: Decentralized Physical Infrastructure 2026',
-    description: 'Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage infrastructure.',
+    description: "Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage",
     image: 'https://degen0x.com/og-default.svg',
   }
 };

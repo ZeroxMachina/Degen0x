@@ -1,11 +1,14 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
-export const metadata: Metadata = { title: `Nexo vs Aave ${CURRENT_YEAR}: CeFi vs DeFi Lending Compared`, description: `Compare Nexo (CeFi) vs Aave (DeFi) for crypto loans in ${CURRENT_YEAR}. Analyze rates, KYC requirements, security models, and which is better for your needs.` };
+export const metadata: Metadata = { title: `Nexo vs Aave ${CURRENT_YEAR}: CeFi vs DeFi Lending Compared`, description: `Compare Nexo (CeFi) vs Aave (DeFi) for crypto loans in ${CURRENT_YEAR}. Analyze rates, KYC requirements, security models, and which is better for your needs.` ,
+  alternates: { canonical: "/crypto-loans/compare/nexo-vs-aave" }};
 
 const items: ComparisonItem[] = [
   { name: "Nexo", slug: "nexo", rating: 4.7, affiliateUrl: "https://degen0x.com/go/nexo", features: { "Type": "CeFi (Centralized)", "KYC Required": "Yes", "Interest Rates": "0-13.9% APR", "Collateral Assets": "60+", "Fiat Borrowing": "Yes (USD, EUR, GBP)", "Insurance": "$775M coverage", "Liquidation Model": "Margin call + auto-sell", "Best For": "Simple, regulated borrowing" } },
@@ -23,7 +26,14 @@ const faqs: FAQ[] = [
 export default function NexoVsAavePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Compare", href: "/crypto-loans/compare/nexo-vs-aave" }, { label: "Nexo vs Aave", href: "/crypto-loans/compare/nexo-vs-aave" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="crypto-loans"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Compare", href: "/crypto-loans/compare/nexo-vs-aave" }, { label: "Nexo vs Aave", href: "/crypto-loans/compare/nexo-vs-aave" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Nexo vs Aave: CeFi vs DeFi Lending ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -31,6 +41,57 @@ export default function NexoVsAavePage() {
       </div>
       <section className="mb-12"><ComparisonTable items={items} features={features} title="Nexo vs Aave Comparison" /></section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/compare/nexo Vs Aave", "description": "Crypto content on degen0x", "url": "https://degen0x.com/crypto-loans/compare/nexo-vs-aave"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

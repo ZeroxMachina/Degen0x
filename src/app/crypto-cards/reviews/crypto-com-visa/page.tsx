@@ -1,14 +1,15 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = cryptoCards.find((c) => c.slug === "crypto-com-visa")!;
 
 export const metadata: Metadata = {
-  title: "Crypto.com Visa Card Review 2026: Tiers, Cashback, Staking & Perks",
-  description:
-    "Our in-depth Crypto.com Visa card review covers CRO staking tiers from Midnight Blue to Obsidian, cashback rates, airport lounge access, Spotify/Netflix rebates, and fees. Updated March 2026.",
-};
+  title: "Crypto.com Visa Card Review 2026: Tiers, Cashback, Staking",
+  description: "Our in-depth Crypto.com Visa card review covers CRO staking tiers from Midnight Blue to Obsidian, cashback rates, airport lounge access, Spotify/Netflix",
+  alternates: { canonical: "/crypto-cards/reviews/crypto-com-visa" }};
 
 export default function CryptoComVisaReview() {
   return (

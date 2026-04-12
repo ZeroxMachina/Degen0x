@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = cryptoCards.find((c) => c.slug === "bitpay-card")!;
 export const metadata: Metadata = {
   title: `BitPay Card Review (${CURRENT_YEAR}): Features, Fees & Pros/Cons | degen0x`,
   description: "In-depth BitPay Card review covering crypto-to-fiat conversion, supported cryptocurrencies, fees, and whether this prepaid Mastercard is right for you.",
-};
+  alternates: { canonical: "/crypto-cards/reviews/bitpay-card" }};
 
 export default function BitPayCardReviewPage() {
   return (

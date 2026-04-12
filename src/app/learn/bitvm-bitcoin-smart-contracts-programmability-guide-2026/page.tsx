@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: 'BitVM Guide 2026: Bitcoin Smart Contracts | degen0x',
-  description:
-    'Complete guide to BitVM: how Bitcoin enables Turing-complete smart contracts without consensus changes. Learn off-chain computation, fraud proofs, OP_CAT, and Bitcoin L2s.',
+  description: "Complete guide to BitVM: how Bitcoin enables Turing-complete smart contracts without consensus changes. Learn off-chain computation, fraud proofs, OP_CAT, and",
   keywords: [
     'bitvm',
     'bitcoin smart contracts',
@@ -286,7 +286,14 @@ export default function BitVMPage() {
 
   return (
     <main id="top" style={pageStyle}>
-      <script
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />

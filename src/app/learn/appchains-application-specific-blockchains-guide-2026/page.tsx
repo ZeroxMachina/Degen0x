@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
-  title: 'Appchains & Application-Specific Blockchains Guide 2026 | degen0x',
-  description:
-    'Complete guide to appchains and application-specific blockchains in 2026. Learn Cosmos SDK, Arbitrum Orbit, OP Stack, Avalanche Subnets, and Substrate. Compare frameworks, understand tradeoffs, and explore real-world examples like dYdX and Robinhood.',
+  title: "Appchains & Application-Specific Blockchains Guide 2026",
+  description: "Complete guide to appchains and application-specific blockchains in 2026. Learn Cosmos SDK, Arbitrum Orbit, OP Stack, Avalanche Subnets, and Substrate. Compare",
   keywords: [
     'appchains',
     'application-specific blockchains',
@@ -284,7 +284,14 @@ export default function AppChainsPage() {
 
   return (
     <main id="top" style={pageStyle}>
-      <script
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />

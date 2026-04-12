@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -43,7 +44,8 @@ export const metadata: Metadata = {
     description:
       'Flash loans let you borrow millions in crypto with zero collateral — repaid in one transaction. Learn how flash loans work on Aave, dYdX, and Uniswap in 2026.',
   },
-};
+
+  alternates: { canonical: "/learn/flash-loans-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: 'Flash Loans Guide 2026 — How DeFi Instant Loans Work',
@@ -985,6 +987,56 @@ export default function FlashLoansGuidePage() {
       </article>
 
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

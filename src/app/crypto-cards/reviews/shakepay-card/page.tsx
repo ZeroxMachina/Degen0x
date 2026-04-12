@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Shakepay Card Review (${CURRENT_YEAR}): Bitcoin Cashback for Canadians | ${SITE_NAME}`,
   description: "In-depth Shakepay Card review covering Bitcoin cashback rewards, fees, features, and how it compares to other Canadian crypto cards.",
-};
+  alternates: { canonical: "/crypto-cards/reviews/shakepay-card" }};
 
 export default function ShakepayCardReview() {
   return (

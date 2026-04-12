@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { stakingPlatforms } from "@/data/staking";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "Jito Review 2026: SOL Staking, MEV Yields, Pros & Cons",
   description:
     "Our in-depth Jito review covers JitoSOL, MEV reward sharing, staking yields, and whether it's the best Solana staking protocol. Updated March 2026.",
-};
+  alternates: { canonical: "/investing/staking/reviews/jito" }};
 
 export default function JitoReview() {
   return (

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import FundingRateTracker from "@/components/FundingRateTracker";
 import Breadcrumb from "@/components/Breadcrumb";
 import { generateToolPageSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
@@ -8,9 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Crypto Funding Rate Tracker - Compare Perp Rates Across Exchanges | degen0x",
-  description:
-    "Track real-time perpetual futures funding rates across Binance, Bybit, OKX, Bitget, dYdX & Hyperliquid. Compare 8h and annualized rates for BTC, ETH, SOL & more. Free, no signup.",
+  title: "Crypto Funding Rate Tracker - Compare Perp Rates Across",
+  description: "Track real-time perpetual futures funding rates across Binance, Bybit, OKX, Bitget, dYdX & Hyperliquid. Compare 8h and annualized rates for BTC, ETH, SOL &",
   keywords:
     "funding rate tracker, perpetual futures funding, crypto funding rates, binance funding rate, bybit funding rate, funding rate arbitrage, perp funding, bitcoin funding rate",
   openGraph: {
@@ -34,7 +34,8 @@ export const metadata: Metadata = {
     description:
       "Compare perpetual futures funding rates across Binance, Bybit, OKX & more. Spot funding rate arbitrage.",
   },
-};
+
+  alternates: { canonical: "/tools/funding-rate-tracker" }};
 
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const toolSchema = generateToolPageSchema({
@@ -277,7 +278,7 @@ export default function FundingRateTrackerPage() {
               },
             ].map((faq) => (
               <div
-                key={faq.q}
+                key={faq.question}
                 style={{
                   background: "var(--glass-bg)",
                   border: "1px solid var(--glass-border)",
@@ -293,7 +294,7 @@ export default function FundingRateTrackerPage() {
                     marginBottom: 8,
                   }}
                 >
-                  {faq.q}
+                  {faq.question}
                 </h3>
                 <p
                   style={{
@@ -302,7 +303,7 @@ export default function FundingRateTrackerPage() {
                     lineHeight: 1.7,
                   }}
                 >
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}
@@ -324,6 +325,56 @@ export default function FundingRateTrackerPage() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Tools
+          </Link>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Learning Guides
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Tools
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

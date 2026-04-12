@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Backpack Exchange Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Backpack Exchange review covering this Solana-native exchange's fees, features, regulatory approach, and whether it suits your crypto trading needs.",
-};
+  alternates: { canonical: "/exchanges/reviews/backpack-exchange" }};
 
 export default function BackpackExchangeReview() {
   return (

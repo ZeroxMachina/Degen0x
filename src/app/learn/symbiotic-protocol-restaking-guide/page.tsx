@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Symbiotic Protocol Guide 2026 — Permissionless Restaking Explained | degen0x",
-  description:
-    "Symbiotic is the leading permissionless restaking protocol with $1.6B+ TVL and 70+ secured networks. Learn how it works, compare Symbiotic vs EigenLayer, and how to earn yield.",
+  title: "Symbiotic Protocol Guide 2026 — Permissionless Restaking",
+  description: "Symbiotic is the leading permissionless restaking protocol with $1.6B+ TVL and 70+ secured networks. Learn how it works, compare Symbiotic vs EigenLayer, and",
   keywords: [
     "symbiotic protocol",
     "symbiotic restaking",
@@ -45,13 +44,13 @@ export const metadata: Metadata = {
     description:
       "$1.6B+ TVL. 70+ networks secured. Any ERC-20 accepted. The permissionless alternative to EigenLayer.",
   },
-};
+
+  alternates: { canonical: "/learn/symbiotic-protocol-restaking-guide" }};
 
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "Symbiotic Protocol Guide 2026 — Permissionless Restaking Explained",
-  description:
-    "Symbiotic is the leading permissionless restaking protocol with $1.6B+ TVL and 70+ secured networks. Learn how it works, compare Symbiotic vs EigenLayer, and how to earn yield.",
+  description: "Symbiotic is the leading permissionless restaking protocol with $1.6B+ TVL and 70+ secured networks. Learn how it works, compare Symbiotic vs EigenLayer, and",
   url: "https://degen0x.com/learn/symbiotic-protocol-restaking-guide",
   datePublished: "2026-03-23T00:00:00Z",
   dateModified: "2026-03-23T00:00:00Z",

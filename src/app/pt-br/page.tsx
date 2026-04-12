@@ -1,10 +1,10 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "degen0x em Português — Comparar Exchanges, Wallets e DeFi no Brasil",
-  description:
-    "degen0x é seu guia confiável para cripto em português. Compare exchanges, wallets, protocolos DeFi e mais. Avaliações de especialistas, ferramentas interativas e guias completos para o mercado brasileiro.",
+  title: "degen0x em Português — Comparar Exchanges, Wallets e DeFi",
+  description: "degen0x é seu guia confiável para cripto em português. Compare exchanges, wallets, protocolos DeFi e mais. Avaliações de especialistas, ferramentas interativas",
   alternates: { canonical: "https://degen0x.com/pt-br" },
   openGraph: {
     title: "degen0x em Português — Seu Guia de Cripto no Brasil",
@@ -103,7 +103,14 @@ const FERRAMENTAS = [
 export default function PortuguesLandingPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--color-bg)" }}>
-      {/* Hero */}
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="pt-br"
+      />      {/* Hero */}
       <section
         className="relative overflow-hidden"
         style={{
@@ -347,6 +354,7 @@ export default function PortuguesLandingPage() {
           <Link href="/terms" style={{ color: "var(--color-primary)" }}>Termos de Uso</Link>
         </p>
       </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x em Portugu\u00eas \u2014 Comparar Exchanges, Wallets e DeFi", "description": "degen0x \u00e9 seu guia confi\u00e1vel para cripto em portugu\u00eas. Compare exchanges, wallets, protocolos DeFi e mais. Avalia\u00e7\u00f5es de especialistas, ferramentas interativas", "url": "https://degen0x.com/pt-br"}) }} />
     </div>
   );
 }

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Market Cap Explained 2026: Calculation, Circulating vs FDV, Market Cap Tiers & Top 10 | degen0x',
-  description: 'Master crypto market cap: calculation formula, circulating vs total vs fully diluted valuation (FDV), market cap tiers (large >$10B, mid $1-10B, small <$1B). Compare top 10 cryptos by market cap with FDV, discuss manipulation risks, token unlocks, and market cap vs TVL ratios.',
+  title: "Crypto Market Cap Explained 2026: Calculation, Circulating",
+  description: "Master crypto market cap: calculation formula, circulating vs total vs fully diluted valuation (FDV), market cap tiers (large >$10B, mid $1-10B, small <$1B).",
   keywords: ['crypto market cap', 'market capitalization', 'circulating supply', 'total supply', 'fully diluted valuation', 'FDV', 'token unlock', 'market cap manipulation', 'top 10 cryptocurrencies'],
   openGraph: {
     type: 'article',

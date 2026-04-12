@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `CoinLedger Review (${CURRENT_YEAR}): Simple Crypto Tax Software | ${SITE_NAME}`,
   description: "In-depth CoinLedger review covering its beginner-friendly approach, TurboTax integration, pricing, and suitability for different trader types.",
-};
+  alternates: { canonical: "/taxes/reviews/coinledger" }};
 
 export default function CoinLedgerReview() {
   return (

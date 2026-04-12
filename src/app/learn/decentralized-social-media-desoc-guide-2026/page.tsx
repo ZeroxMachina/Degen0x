@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Decentralized Social Media Guide 2026: Farcaster, Lens & SocialFi',
-  description: 'Complete DeSoc/SocialFi guide for 2026. Explore Farcaster ($1B valuation, 20K-60K DAU), Lens Protocol (650K migrated profiles, ZK chain), SocialFi economics, Mini Apps, and the $5B market projected to $10B by 2030.',
+  title: "Decentralized Social Media Guide 2026: Farcaster, Lens &",
+  description: "Complete DeSoc/SocialFi guide for 2026. Explore Farcaster ($1B valuation, 20K-60K DAU), Lens Protocol (650K migrated profiles, ZK chain), SocialFi economics,",
   keywords: ['Decentralized Social', 'SocialFi', 'Farcaster', 'Lens Protocol', 'Web3 social', 'social tokens', 'data ownership', 'creator economy', 'DeSoc', 'crypto 2026', 'social graph', 'Mini Apps'],
   openGraph: {
     type: 'article',
-    title: 'Decentralized Social Media Guide 2026: Farcaster, Lens & SocialFi',
+    title: "Decentralized Social Media Guide 2026: Farcaster, Lens &",
     description: 'Complete DeSoc/SocialFi guide for 2026. Explore Farcaster, Lens Protocol, SocialFi economics, and the $5B market growing to $10B by 2030.',
     publishedTime: '2026-04-01T00:00:00Z',
     modifiedTime: '2026-04-01T00:00:00Z',

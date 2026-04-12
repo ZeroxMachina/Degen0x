@@ -45,7 +45,8 @@ export const metadata: Metadata = {
       "Trade oil, stocks & commodities on-chain 24/7 via Hyperliquid HIP-3. $1.2B open interest. No KYC, no broker. Full guide.",
     images: [OG_IMAGE],
   },
-};
+
+  alternates: { canonical: "/learn/hyperliquid-hip3-tokenized-futures-guide" }};
 
 export default function HyperliquidHip3TokenizedFuturesGuidePage() {
   const articleSchema = generateArticleSchema({

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Aave vs Morpho ${CURRENT_YEAR}: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Aave vs Morpho in ${CURRENT_YEAR}. Compare yields, architecture, risk models, supported assets, and which protocol optimizes your DeFi lending returns.`,
-};
+  alternates: { canonical: "/defi-lending/compare/aave-vs-morpho" }};
 
 const items: ComparisonItem[] = [
   { name: "Aave", slug: "aave", rating: 4.8, affiliateUrl: "https://degen0x.com/go/aave", features: { "TVL": "$15B+", "Chains": "10+", "Architecture": "Pool-based V3", "Rate Model": "Variable + Stable", "Risk Approach": "Shared pool risk", "Governance Token": "AAVE", "Yield Optimization": "Manual", "Unique Feature": "Flash loans, eMode" } },
@@ -28,7 +30,14 @@ const faqs: FAQ[] = [
 export default function AaveVsMorphoPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Aave vs Morpho", href: "/defi-lending/compare/aave-vs-morpho" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Aave vs Morpho", href: "/defi-lending/compare/aave-vs-morpho" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Aave vs Morpho: Full Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -62,6 +71,57 @@ export default function AaveVsMorphoPage() {
         <p className="text-[var(--color-text-secondary)]">Aave&apos;s shared pool model means a problem with any single asset could theoretically affect all depositors. Aave mitigates this with conservative listing criteria, eMode for correlated assets, and isolation mode for riskier tokens. Morpho Blue&apos;s isolated markets mean risk is contained: a bad oracle or collateral issue in one market cannot affect others. This makes Morpho more flexible in supporting riskier assets while protecting users in other markets.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/aave Vs Morpho", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/aave-vs-morpho"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

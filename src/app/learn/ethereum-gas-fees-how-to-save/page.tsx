@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Ethereum Gas Fees: How to Save Money 2026 | degen0x',
-  description: 'Ethereum gas fees explained: EIP-1559, base fee, priority fee, tips. Save 90% using Layer 2s ($0.01-0.50 vs $2-50 on mainnet). Time transactions, batch, and use L2s.',
+  description: "Ethereum gas fees explained: EIP-1559, base fee, priority fee, tips. Save 90% using Layer 2s ($0.01-0.50 vs $2-50 on mainnet). Time transactions, batch, and",
   keywords: ['ethereum gas fees', 'how to save gas', 'gwei', 'gas price', 'layer 2', 'arbitrum', 'polygon'],
   openGraph: {
     type: 'article',

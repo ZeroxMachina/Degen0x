@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Taiko: Based ZK-Rollup Ethereum L2 - Complete Guide 2026',
-  description: 'Comprehensive guide to Taiko L2 network. Learn about based sequencing, ZK-EVM Type 1, Gwyneth preconfirmations, tokenomics, and how Taiko compares to Arbitrum, Base, zkSync, and Scroll.',
+  description: "Comprehensive guide to Taiko L2 network. Learn about based sequencing, ZK-EVM Type 1, Gwyneth preconfirmations, tokenomics, and how Taiko compares to Arbitrum,",
   keywords: 'Taiko, L2, based rollup, ZK-Rollup, Ethereum, BCR, preconfirmations, Gwyneth, TAIKO token',
   authors: [{ name: 'degen0x' }],
   openGraph: {

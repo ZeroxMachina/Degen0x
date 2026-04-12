@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'MiCA Regulation Guide 2026 — EU Crypto Compliance Explained | degen0x',
-  description:
-    'Complete guide to MiCA (Markets in Crypto-Assets Regulation). Learn EU crypto compliance requirements, stablecoin rules, CASP licensing, penalties, and what it means for exchanges, DeFi, and investors in 2026.',
+  title: "MiCA Regulation Guide 2026 — EU Crypto Compliance Explained",
+  description: "Complete guide to MiCA (Markets in Crypto-Assets Regulation). Learn EU crypto compliance requirements, stablecoin rules, CASP licensing, penalties, and what it",
   keywords: [
     'MiCA regulation',
     'EU crypto compliance',

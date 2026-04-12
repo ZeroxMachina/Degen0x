@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Concentrated Liquidity Guide 2026: LP Strategies for Uniswap v4 & Beyond | degen0x',
-  description: 'Master concentrated liquidity and LP strategies for 2026. Learn Uniswap v4 hooks, dynamic rebalancing, impermanent loss mitigation, and earn 20-100% APR on ETH/USDC positions. Compare Trader Joe Liquidity Book, Maverick, and Ambient protocols.',
+  title: "Concentrated Liquidity Guide 2026: LP Strategies for",
+  description: "Master concentrated liquidity and LP strategies for 2026. Learn Uniswap v4 hooks, dynamic rebalancing, impermanent loss mitigation, and earn 20-100% APR on",
   keywords: ['concentrated liquidity', 'LP strategies', 'Uniswap v4', 'hooks', 'liquidity mining', 'impermanent loss', 'AMM', 'DeFi yield', 'automated vaults', 'CLAMM', 'crypto 2026', 'liquidity provider'],
   openGraph: {
     type: 'article',

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { nftMarketplaces } from "@/data/nfts";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -7,7 +9,7 @@ const product = nftMarketplaces.find((m) => m.slug === "zora")!;
 export const metadata: Metadata = {
   title: "Zora Review 2026: Fees, Features, Pros & Cons",
   description: "Our in-depth Zora review covers zero fees, decentralized minting, Zora Network L2, and whether it's the right platform for creators. Updated March 2026.",
-};
+  alternates: { canonical: "/nfts/reviews/zora" }};
 
 export default function ZoraReview() {
   return (

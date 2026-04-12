@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AaveClient from "./AaveClient";
 
 export const metadata: Metadata = {
   title: "Aave: DeFi Lending & Borrowing Guide 2026 | degen0x",
-  description:
-    "Complete guide to Aave — the largest DeFi lending protocol. Multi-chain lending, flash loans, GHO stablecoin, safety module staking, and how to earn yield on your crypto assets.",
+  description: "Complete guide to Aave — the largest DeFi lending protocol. Multi-chain lending, flash loans, GHO stablecoin, safety module staking, and how to earn yield on",
   keywords: [
     "aave",
     "aave guide",
@@ -42,7 +43,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=Aave:+DeFi+Lending+%26+Borrowing+Guide+2026&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/aave" }};
 
 export default function AavePage() {
   return <AaveClient />;

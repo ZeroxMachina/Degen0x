@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Tax by State Comparison 2026 | No-Tax States vs High-Tax | degen0x',
-  description: 'State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining rules.',
+  title: "Crypto Tax by State Comparison 2026 | No-Tax States vs",
+  description: "State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining",
   keywords: ['crypto tax by state', 'no income tax states', 'Texas crypto tax', 'Florida crypto tax', 'Wyoming crypto tax', 'California crypto tax', 'crypto-friendly states'],
   openGraph: {
     title: 'Crypto Tax by State 2026',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Tax by State Comparison 2026 | No-Tax States vs High-Tax | degen0x',
-    description: 'State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining rules.',
+    title: "Crypto Tax by State Comparison 2026 | No-Tax States vs",
+    description: "State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining",
     image: 'https://degen0x.com/og-default.svg',
   }
 };
@@ -89,14 +89,14 @@ const structuredData = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Tax by State Comparison 2026 | No-Tax States vs High-Tax | degen0x',
-    description: 'State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining rules.',
+    title: "Crypto Tax by State Comparison 2026 | No-Tax States vs",
+    description: "State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining",
     image: 'https://degen0x.com/og-default.svg',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Tax by State Comparison 2026 | No-Tax States vs High-Tax | degen0x',
-    description: 'State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining rules.',
+    title: "Crypto Tax by State Comparison 2026 | No-Tax States vs",
+    description: "State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining",
     image: 'https://degen0x.com/og-default.svg',
   }
 };
@@ -479,6 +479,56 @@ export default function CryptoTaxByStateComparison() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

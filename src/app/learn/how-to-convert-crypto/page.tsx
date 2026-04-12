@@ -13,7 +13,8 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-03-10T00:00:00Z',
   },
-};
+
+  alternates: { canonical: "/learn/how-to-convert-crypto" }};
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },

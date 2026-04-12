@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import { Product } from "@/lib/types";
@@ -7,8 +9,7 @@ const product: Product = {
   name: "Magic Eden",
   slug: "magic-eden",
   rating: 4.3,
-  description:
-    "Magic Eden is the dominant multi-chain NFT marketplace, originally built on Solana and now supporting Ethereum, Bitcoin Ordinals, Polygon, and Base. It is the go-to platform for Solana NFTs and has become the leading marketplace for Bitcoin Ordinals trading.",
+  description: "Magic Eden is the dominant multi-chain NFT marketplace, originally built on Solana and now supporting Ethereum, Bitcoin Ordinals, Polygon, and Base. It is the",
   pros: [
     "Leading marketplace for Solana and Bitcoin Ordinals",
     "Multi-chain support including Ethereum, Polygon, and Base",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   title: `Magic Eden Review: Multi-Chain NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth Magic Eden review covering fees, multi-chain support, Bitcoin Ordinals, Launchpad features, and whether it's the right NFT marketplace for you.",
-};
+  alternates: { canonical: "/nfts/reviews/magic-eden" }};
 
 export default function MagicEdenReviewPage() {
   return (

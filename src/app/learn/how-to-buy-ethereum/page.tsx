@@ -14,7 +14,8 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-03-10T00:00:00Z",
   },
-};
+
+  alternates: { canonical: "/learn/how-to-buy-ethereum" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -379,9 +380,9 @@ export default function HowToBuyEthereumPage() {
                 a: "Account creation and KYC: 5–20 minutes. With a debit card: ETH appears in your account instantly. With a bank transfer (ACH): 1–5 business days depending on the exchange. First-time bank verification can add 1–2 extra days.",
               },
             ].map(faq => (
-              <div key={faq.q} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 20 }}>
-                <h3 style={{ fontSize: 15, fontWeight: 800, color: S.purple, marginBottom: 10 }}>Q: {faq.q}</h3>
-                <p style={{ fontSize: 14, color: S.text2, lineHeight: 1.75, margin: 0 }}>{faq.a}</p>
+              <div key={faq.question} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 20 }}>
+                <h3 style={{ fontSize: 15, fontWeight: 800, color: S.purple, marginBottom: 10 }}>Q: {faq.question}</h3>
+                <p style={{ fontSize: 14, color: S.text2, lineHeight: 1.75, margin: 0 }}>{faq.answer}</p>
               </div>
             ))}
           </div>

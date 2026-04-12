@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { nftMarketplaces } from "@/data/nfts";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -7,7 +9,7 @@ const product = nftMarketplaces.find((m) => m.slug === "rarible")!;
 export const metadata: Metadata = {
   title: "Rarible Review 2026: Fees, Features, Pros & Cons",
   description: "Our in-depth Rarible review covers multi-chain support, creator tools, RARI governance, and whether it's the right NFT marketplace for you. Updated March 2026.",
-};
+  alternates: { canonical: "/nfts/reviews/rarible" }};
 
 export default function RaribleReview() {
   return (

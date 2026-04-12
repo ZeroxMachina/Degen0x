@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Chain Abstraction & Multi-Chain UX Guide 2026 | degen0x',
-  description:
-    'Master chain abstraction in 2026: Particle Network, NEAR Protocol, Socket, Polygon AggLayer, Omni Network. Learn one wallet, any chain—no bridging, no complexity.',
+  description: "Master chain abstraction in 2026: Particle Network, NEAR Protocol, Socket, Polygon AggLayer, Omni Network. Learn one wallet, any chain—no bridging, no",
   keywords: [
     'chain abstraction',
     'multi-chain',

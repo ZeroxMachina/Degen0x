@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import StructuredData from '@/components/StructuredData';
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     authors: ['degen0x'],
   },
   keywords: ['Euler V2', 'modular lending', 'EVK', 'EVC', 'DeFi', 'vaults', 'RWA collateral', '2026'],
-};
+  alternates: { canonical: "/learn/euler-v2-modular-lending-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   headline: 'Euler V2 Modular Lending Guide 2026 — Vaults & EVK',
@@ -59,7 +60,14 @@ const combinedSchemas = combineSchemas([articleSchema, faqSchema]);
 export default function EulerV2Guide() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117', color: '#e6edf3' }}>
-      <StructuredData schema={combinedSchemas} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <StructuredData schema={combinedSchemas} />
       <div style={{ maxWidth: 820, margin: '0 auto', padding: '40px 20px' }}>
         {/* Breadcrumb */}
         <Breadcrumb
@@ -1242,6 +1250,56 @@ export default function EulerV2Guide() {
             })
           }}
         />
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </main>
   );

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,14 +11,14 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Stablecoin Yield Platforms ${CURRENT_YEAR} - Earn on USDC, USDT, DAI`,
   description: `Compare the best stablecoin yield opportunities in ${CURRENT_YEAR}. Earn up to 15% APY on USDC, USDT, DAI, and other stablecoins through DeFi lending protocols.`,
-};
+  alternates: { canonical: "/defi-lending/best/stablecoin-yield" }};
 
 const products: Product[] = [
   {
     name: "Aave",
     slug: "aave",
     rating: 4.8,
-    description: "Aave offers competitive stablecoin supply rates across multiple chains. USDC and USDT deposits earn variable APY that typically ranges from 3-8% depending on market demand. Multi-chain deployment means you can find the best rates across Ethereum, Arbitrum, Optimism, and Polygon.",
+    description: "Aave offers competitive stablecoin supply rates across multiple chains. USDC and USDT deposits earn variable APY that typically ranges from 3-8% depending on",
     pros: ["Multi-chain stablecoin markets", "Deep liquidity ensures low slippage", "Variable rates respond to demand", "Proven security track record"],
     cons: ["Variable rates can drop during low demand", "Gas fees on Ethereum mainnet", "No fixed rate option natively"],
     fees: "Variable supply/borrow spread",
@@ -85,7 +87,14 @@ const faqs: FAQ[] = [
 export default function StablecoinYieldPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Stablecoin Yield", href: "/defi-lending/best/stablecoin-yield" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Stablecoin Yield", href: "/defi-lending/best/stablecoin-yield" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Stablecoin Yield Platforms ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
@@ -103,6 +112,57 @@ export default function StablecoinYieldPage() {
         ))}
       </div>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/stablecoin Yield", "description": "Aave offers competitive stablecoin supply rates across multiple chains. USDC and USDT deposits earn variable APY that typically ranges from 3-8% depending on", "url": "https://degen0x.com/defi-lending/best/stablecoin-yield"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

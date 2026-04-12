@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Bitcoin-Only Wallets 2026 | Coldcard, BitBox02, Sparrow | degen0x',
-  description: 'Compare Bitcoin-only wallets: Coldcard Mk4 ($157), BitBox02 ($139), Blockstream Jade ($65), Sparrow, Blue Wallet. PSBT support, CoinJoin, BIP-47 PayNyms, UTXO management.',
+  title: "Best Bitcoin-Only Wallets 2026 | Coldcard, BitBox02, Sparrow",
+  description: "Compare Bitcoin-only wallets: Coldcard Mk4 ($157), BitBox02 ($139), Blockstream Jade ($65), Sparrow, Blue Wallet. PSBT support, CoinJoin, BIP-47 PayNyms, UTXO",
   keywords: ['bitcoin only wallet', 'coldcard', 'bitbox02', 'sparrow wallet', 'coinJoin', 'UTXO management', 'BIP47'],
   openGraph: {
     title: 'Best Bitcoin-Only Wallets 2026 | degen0x',

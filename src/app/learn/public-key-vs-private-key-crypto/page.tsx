@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Public vs Private Key Cryptography Explained 2026: ECDSA, HD Wallets, BIP-32/44 & Quantum Risk | degen0x',
-  description: 'Master public/private key cryptography: asymmetric encryption, elliptic curves (secp256k1), key derivation (HD wallets BIP-32/44), digital signatures (ECDSA), mnemonics (BIP-39), multi-sig, and quantum threats.',
+  title: "Public vs Private Key Cryptography Explained 2026: ECDSA,",
+  description: "Master public/private key cryptography: asymmetric encryption, elliptic curves (secp256k1), key derivation (HD wallets BIP-32/44), digital signatures (ECDSA),",
   keywords: ['public key', 'private key', 'cryptography', 'ECDSA', 'elliptic curve', 'secp256k1', 'HD wallet', 'BIP-32', 'BIP-44', 'BIP-39', 'mnemonic', 'multi-sig', 'digital signature', 'quantum computing'],
   openGraph: {
     type: 'article',

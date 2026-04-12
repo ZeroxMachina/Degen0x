@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "DeFi Options Trading Guide 2026: On-Chain Options Explained | degen0x",
+  title: "DeFi Options Trading Guide 2026: On-Chain Options Explained",
   description:
     "Learn how to trade crypto options on-chain in 2026. Understand calls, puts, and the Greeks. Compare top protocols: Derive, Stryke, Premia, and Panoptic.",
   keywords: [
@@ -45,7 +45,8 @@ export const metadata: Metadata = {
       "Calls, puts, Greeks, and the best on-chain protocols — Derive, Stryke, Premia, and Panoptic explained for crypto traders.",
     images: ["https://degen0x.com/og-defi-options-trading-guide.png"],
   },
-};
+
+  alternates: { canonical: "/learn/defi-options-trading-guide" }};
 
 // ─── Structured Data ───────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

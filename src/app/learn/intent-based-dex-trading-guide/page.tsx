@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
@@ -7,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Intent-Based DEX Trading Guide 2026: UniswapX, CoW Swap & 1inch Fusion Explained | degen0x",
-  description:
-    "Learn how intent-based DEX trading works in 2026. Understand solver auctions, MEV protection, and how CoW Swap, UniswapX, and 1inch Fusion deliver better prices than traditional AMMs.",
+  title: "Intent-Based DEX Trading Guide 2026: UniswapX, CoW Swap &",
+  description: "Learn how intent-based DEX trading works in 2026. Understand solver auctions, MEV protection, and how CoW Swap, UniswapX, and 1inch Fusion deliver better",
   keywords: [
     "intent-based dex trading",
     "intent-based swaps",
@@ -45,7 +45,8 @@ export const metadata: Metadata = {
       "How solver auctions replace AMM routing. CoW Swap, UniswapX, 1inch Fusion compared — with MEV protection, better prices, and gasless swaps.",
     images: ["https://degen0x.com/og-intent-based-dex-trading-guide.png"],
   },
-};
+
+  alternates: { canonical: "/learn/intent-based-dex-trading-guide" }};
 
 // ─── Structured Data ───────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
@@ -729,6 +730,56 @@ export default function IntentBasedDexTradingGuidePage() {
       </article>
 
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

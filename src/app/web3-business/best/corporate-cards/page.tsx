@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,14 +11,14 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto Corporate Cards of ${CURRENT_YEAR} - Spend Stablecoins & Crypto | ${SITE_NAME}`,
   description: `Compare the best crypto corporate cards of ${CURRENT_YEAR}. Spend directly from stablecoin and crypto balances, set team spending limits, and streamline expense management for Web3 teams.`,
-};
+  alternates: { canonical: "/web3-business/best/corporate-cards" }};
 
 const products: Product[] = [
   {
     name: "Rain",
     slug: "rain",
     rating: 4.7,
-    description: "Corporate card platform designed specifically for Web3 companies. Spend directly from USDC and stablecoin balances, set granular team spending controls, and automate expense categorization. Integrates with multi-sig wallets for DAO treasury spending.",
+    description: "Corporate card platform designed specifically for Web3 companies. Spend directly from USDC and stablecoin balances, set granular team spending controls, and",
     pros: ["Purpose-built for crypto-native companies", "Direct stablecoin spending", "Multi-sig wallet integration", "Granular team spending controls"],
     cons: ["Limited to US-based entities currently", "Requires minimum balance for onboarding", "Rewards program less generous than competitors", "Newer company with shorter track record"],
     fees: "No annual fee; 2.5% FX fee",
@@ -97,7 +99,14 @@ const faqs: FAQ[] = [
 export default function CorporateCardsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="web3-business"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Web3 Business", href: "/web3-business" },
@@ -176,6 +185,57 @@ export default function CorporateCardsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto-Native Teams", "description": "Corporate card platform designed specifically for Web3 companies. Spend directly from USDC and stablecoin balances, set granular team spending controls, and", "url": "https://degen0x.com/web3-business/best/corporate-cards"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Fixed vs Variable Rate DeFi Lending ${CURRENT_YEAR}: Comparison`,
   description: `Compare fixed and variable rate lending in DeFi in ${CURRENT_YEAR}. Analyze rate mechanics, protocols, risk profiles, and when each is the better choice.`,
-};
+  alternates: { canonical: "/defi-lending/compare/fixed-vs-variable-rate" }};
 
 const items: ComparisonItem[] = [
   { name: "Variable Rate", slug: "defi-lending", rating: 4.5, affiliateUrl: "https://degen0x.com/go/aave", features: { "Rate Predictability": "Low (changes every block)", "Average Rates": "Often lower than fixed", "Liquidity": "Instant entry/exit", "Protocols": "Aave, Compound, Morpho", "Lock-up Required": "None", "Best Market": "Stable or declining rates", "Complexity": "Simple", "Risk": "Rate volatility" } },
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function FixedVsVariableRatePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/fixed-vs-variable-rate" }, { label: "Fixed vs Variable Rate", href: "/defi-lending/compare/fixed-vs-variable-rate" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/fixed-vs-variable-rate" }, { label: "Fixed vs Variable Rate", href: "/defi-lending/compare/fixed-vs-variable-rate" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Fixed vs Variable Rate DeFi Lending ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -60,6 +69,57 @@ export default function FixedVsVariableRatePage() {
         <p className="text-[var(--color-text-secondary)]">For yield farmers running leveraged strategies, the spread between borrowing cost and farming return determines profitability. Variable borrowing rates can compress or eliminate this spread unpredictably. Fixing borrowing costs locks in the spread for the term, providing more predictable strategy returns. For passive lenders, fixed rates guarantee a minimum return while variable rates may outperform during high-demand periods. Consider your strategy's sensitivity to rate changes when choosing between fixed and variable.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/fixed Vs Variable Rate", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/fixed-vs-variable-rate"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

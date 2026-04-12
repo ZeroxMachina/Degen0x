@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "Pionex",
   slug: "pionex",
   rating: 4.1,
-  description:
-    "Pionex is a crypto exchange built around automated trading bots, offering 16+ free built-in bots with competitive 0.05% trading fees. Ideal for passive strategy automation.",
+  description: "Pionex is a crypto exchange built around automated trading bots, offering 16+ free built-in bots with competitive 0.05% trading fees. Ideal for passive",
   pros: [
     "16+ free built-in trading bots including grid, DCA, and arbitrage",
     "Extremely low trading fees at 0.05% maker/taker",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Pionex Review (${CURRENT_YEAR}) - Best Free Crypto Trading Bots | ${SITE_NAME}`,
   description: `Complete Pionex review for ${CURRENT_YEAR}. Covers 16+ free trading bots, 0.05% fees, grid bot strategies, DCA automation, and user experience.`,
-};
+  alternates: { canonical: "/exchanges/reviews/pionex" }};
 
 const overview =
   "Pionex is a unique cryptocurrency exchange that differentiates itself by offering 16+ free built-in trading bots as its primary value proposition. Founded in 2019 and based in Singapore, Pionex has attracted over 5 million users by making automated trading strategies accessible to everyone, regardless of experience level. The platform charges just 0.05% for both maker and taker trades, making it one of the cheapest exchanges in the industry.\n\nPionex aggregates liquidity from Binance and HTX (formerly Huobi), which means users benefit from the deep order books and tight spreads of these major exchanges while using Pionex's bot-focused interface. The platform supports 350+ trading pairs and offers a range of bots including grid trading, DCA (dollar-cost averaging), arbitrage, rebalancing, and trailing buy/sell strategies.\n\nThe exchange holds FinCEN MSB (Money Services Business) registration in the United States, making it one of the few bot-focused platforms that serves US users. Pionex is best suited for traders who want to automate their strategies without paying for third-party bot services, and for beginners who want to implement proven trading strategies without deep market knowledge.";

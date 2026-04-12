@@ -6,9 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Telegram Crypto Trading Bots Guide 2026 — Top Bots, Fees & Risks | degen0x",
-  description:
-    "Compare the best Telegram trading bots in 2026: Trojan, BONKbot, Maestro, Banana Gun & BullX. Fees, MEV protection, security risks, and how to get started safely.",
+  title: "Telegram Crypto Trading Bots Guide 2026 — Top Bots, Fees &",
+  description: "Compare the best Telegram trading bots in 2026: Trojan, BONKbot, Maestro, Banana Gun & BullX. Fees, MEV protection, security risks, and how to get started",
   openGraph: {
     title: "Telegram Crypto Trading Bots: The Complete Guide for 2026",
     description: "Top Telegram bots compared — Trojan ($24B+ vol), BONKbot, Maestro & more. Fees, risks, and step-by-step setup guide.",
@@ -25,7 +24,8 @@ export const metadata: Metadata = {
     description: "Top bots compared: Trojan, BONKbot, Maestro, Banana Gun. Fees, risks & setup.",
     images: ["https://degen0x.com/api/og?title=Telegram+Crypto+Trading+Bots+Guide+2026&category=Learn&type=learn"],
   },
-};
+
+  alternates: { canonical: "/learn/telegram-trading-bots-guide-2026" }};
 
 export default function TelegramTradingBotsGuidePage() {
   return (
@@ -293,9 +293,9 @@ export default function TelegramTradingBotsGuidePage() {
             { q: "What is MEV protection in Telegram bots?", a: "MEV (Maximal Extractable Value) protection prevents sandwich attacks where bots frontrun your transaction to extract profit. Most top bots include MEV protection that routes transactions through private mempools." },
             { q: "Do I need to pay taxes on Telegram bot trades?", a: "Yes — bot trades are taxable events in most jurisdictions. The high frequency of bot trading creates significant tax reporting complexity. Consider using a crypto tax tool to track your transactions." },
           ].map((faq) => (
-            <div key={faq.q} className="glass rounded-lg p-4" style={{ border: "1px solid var(--color-border)" }}>
-              <h3 className="text-sm font-bold mb-2" style={{ color: "var(--color-text)" }}>{faq.q}</h3>
-              <p className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{faq.a}</p>
+            <div key={faq.question} className="glass rounded-lg p-4" style={{ border: "1px solid var(--color-border)" }}>
+              <h3 className="text-sm font-bold mb-2" style={{ color: "var(--color-text)" }}>{faq.question}</h3>
+              <p className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{faq.answer}</p>
             </div>
           ))}
         </div>

@@ -9,8 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "FOMC & Crypto: How Fed Rates Impact Bitcoin 2026 | degen0x",
-  description:
-    "How do FOMC meetings and Fed interest rate decisions affect Bitcoin and crypto? March 2026 FOMC analysis, rate scenarios, and crypto market impact with price targets.",
+  description: "How do FOMC meetings and Fed interest rate decisions affect Bitcoin and crypto? March 2026 FOMC analysis, rate scenarios, and crypto market impact with price",
   openGraph: {
     title: "FOMC & Crypto: How Fed Rate Decisions Impact Bitcoin & the Crypto Market in 2026",
     description:
@@ -35,7 +34,8 @@ export const metadata: Metadata = {
     description:
       "FOMC March 17-18, 2026 analysis. See how Fed rate decisions, inflation data, and Fed policy affect Bitcoin, crypto volatility, and your portfolio.",
   },
-};
+
+  alternates: { canonical: "/learn/fomc-fed-rate-crypto-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "FOMC & Crypto: How Fed Rate Decisions Impact Bitcoin and the Crypto Market in 2026",

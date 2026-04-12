@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Real Yield in DeFi 2026: Protocol Revenue vs Token Emissions | degen0x',
-  description:
-    'Understand real yield in DeFi — how protocols like Aave, GMX, Ethena, and Pendle generate sustainable returns from actual revenue, not inflationary token emissions. Guide updated April 2026.',
+  title: "Real Yield in DeFi 2026: Protocol Revenue vs Token Emissions",
+  description: "Understand real yield in DeFi — how protocols like Aave, GMX, Ethena, and Pendle generate sustainable returns from actual revenue, not inflationary token",
   keywords: [
     'real yield DeFi',
     'protocol revenue',

@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto Correlation Matrix | degen0x',
-  description: 'Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling correlation & diversification.',
+  description: "Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling",
   keywords: ['crypto correlation matrix', 'bitcoin ethereum correlation', 'crypto diversification', 'portfolio correlation', 'crypto risk', 'degen0x'],
   openGraph: {
     type: 'article',
     title: 'Crypto Correlation Matrix | degen0x',
-    description: 'Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling correlation & diversification.',
+    description: "Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/tools/crypto-correlation-matrix',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Correlation Matrix | degen0x',
-    description: 'Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling correlation & diversification.',
+    description: "Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling",
     image: 'https://degen0x.com/og-tools.svg',
   },
   alternates: {
@@ -31,7 +31,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Crypto Correlation Matrix',
-  description: 'Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling correlation & diversification.',
+  description: "Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling",
   image: 'https://degen0x.com/og-tools.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: 'Plume Network: RWA Layer 2 Guide 2026 | Degen0x',
-  description: 'Complete guide to Plume Network, the modular Layer 2 purpose-built for real-world assets (RWAs). Learn about Arc tokenization engine, Nexus data highway, compliance primitives, and the $PLUME ecosystem.',
+  description: "Complete guide to Plume Network, the modular Layer 2 purpose-built for real-world assets (RWAs). Learn about Arc tokenization engine, Nexus data highway,",
   keywords: [
     'Plume Network',
     'RWA Layer 2',
@@ -53,7 +54,14 @@ const structuredData = {
 export default function PlumeNetworkRwaL2Guide2026() {
   return (
     <article className="prose prose-invert mx-auto max-w-3xl px-4 py-12">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <header className="mb-8">
         <p className="text-sm uppercase tracking-wider text-emerald-400">Learn · RWA · Layer 2</p>
         <h1 className="mt-2 text-4xl font-bold">Plume Network: RWA Layer 2 Guide 2026</h1>

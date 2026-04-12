@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "NFT Lending & Borrowing 2026: NFTfi, BendDAO, Blur Lending, Arcade | degen0x",
-  description: "Complete NFT lending guide: borrow USDC against Bored Apes, Pudgy Penguins. NFTfi peer-to-peer, BendDAO pools, Blur Lending, Arcade lead-to-order. LTV ratios, liquidation risks, APY rates.",
+  title: "NFT Lending & Borrowing 2026: NFTfi, BendDAO, Blur Lending,",
+  description: "Complete NFT lending guide: borrow USDC against Bored Apes, Pudgy Penguins. NFTfi peer-to-peer, BendDAO pools, Blur Lending, Arcade lead-to-order. LTV ratios,",
   keywords: ["NFT lending", "NFTfi", "BendDAO", "Blur Lending", "Arcade", "collateral", "liquidation", "LTV"],
   openGraph: {
     type: "article",

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Cross-Chain Interoperability Guide 2026: LayerZero, Wormhole, Axelar & CCIP | degen0x',
-  description: 'Complete guide to cross-chain bridges. Compare LayerZero (omnichain messaging), Wormhole (19 chains), Axelar GMP, Chainlink CCIP, Cosmos IBC, Polkadot XCMP. Learn bridge security, trust models, and $2B+ bridge hacks.',
+  title: "Cross-Chain Interoperability Guide 2026: LayerZero,",
+  description: "Complete guide to cross-chain bridges. Compare LayerZero (omnichain messaging), Wormhole (19 chains), Axelar GMP, Chainlink CCIP, Cosmos IBC, Polkadot XCMP.",
   keywords: ['cross-chain', 'LayerZero', 'Wormhole', 'Axelar', 'bridge hacking', 'interoperability', 'Chainlink CCIP', 'IBC', 'XCMP', 'intent-based bridges'],
   openGraph: {
     type: 'article',

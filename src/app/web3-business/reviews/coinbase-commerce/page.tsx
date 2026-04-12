@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Coinbase Commerce Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Coinbase Commerce allows businesses to accept crypto payments directly with no processing fees.",
-};
+  alternates: { canonical: "/web3-business/reviews/coinbase-commerce" }};
 
 export default function CoinbaseCommerceReview() {
   return (

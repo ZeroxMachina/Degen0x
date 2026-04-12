@@ -8,17 +8,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Arbitrage Strategies 2026 — CEX/DEX, Cross-Chain & Funding | degen0x",
-  description:
-    "Master crypto arbitrage in 2026. Learn CEX-DEX arbitrage, cross-chain strategies, funding rate arb, statistical arbitrage, and practical execution with real examples.",
+  title: "Crypto Arbitrage Strategies 2026 — CEX/DEX, Cross-Chain &",
+  description: "Master crypto arbitrage in 2026. Learn CEX-DEX arbitrage, cross-chain strategies, funding rate arb, statistical arbitrage, and practical execution with real",
   keywords:
     "crypto arbitrage, CEX DEX arbitrage, cross-chain arbitrage, funding rate arbitrage, delta neutral, statistical arbitrage, triangular arbitrage, arb strategies 2026, crypto trading bots",
   openGraph: {
     type: "article",
-    title:
-      "Crypto Arbitrage Strategies 2026 — CEX/DEX, Cross-Chain & Funding | degen0x",
-    description:
-      "Master crypto arbitrage in 2026. Learn CEX-DEX arbitrage, cross-chain strategies, funding rate arb, statistical arbitrage, and practical execution with real examples.",
+    title: "Crypto Arbitrage Strategies 2026 — CEX/DEX, Cross-Chain &",
+    description: "Master crypto arbitrage in 2026. Learn CEX-DEX arbitrage, cross-chain strategies, funding rate arb, statistical arbitrage, and practical execution with real",
     publishedTime: "2026-03-24T00:00:00Z",
     authors: ["degen0x"],
     url: "https://degen0x.com/learn/crypto-arbitrage-strategies-guide-2026",
@@ -38,12 +35,12 @@ export const metadata: Metadata = {
     images: ["https://degen0x.com/og-crypto-arbitrage-strategies-guide-2026.svg"],
     image: "https://degen0x.com/og-crypto-arbitrage-strategies-guide-2026.svg",
   },
-};
+
+  alternates: { canonical: "/learn/crypto-arbitrage-strategies-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Crypto Arbitrage Strategies 2026 — CEX/DEX, Cross-Chain & Funding Rate",
-  description:
-    "Master crypto arbitrage in 2026. Learn CEX-DEX arbitrage, cross-chain strategies, funding rate arb, statistical arbitrage, and practical execution with real examples.",
+  description: "Master crypto arbitrage in 2026. Learn CEX-DEX arbitrage, cross-chain strategies, funding rate arb, statistical arbitrage, and practical execution with real",
   url: "https://degen0x.com/learn/crypto-arbitrage-strategies-guide-2026",
   datePublished: "2026-03-24T00:00:00Z",
   dateModified: "2026-03-24T00:00:00Z",

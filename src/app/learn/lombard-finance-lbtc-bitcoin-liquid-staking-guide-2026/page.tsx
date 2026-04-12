@@ -1,11 +1,12 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: 'Lombard Finance Guide 2026 — LBTC Bitcoin Liquid Staking Explained | degen0x',
-  description: 'Complete Lombard Finance guide 2026: LBTC bitcoin liquid staking token, Babylon integration, Security Consortium, BARD tokenomics, multi-chain DeFi composability, and risks. Learn how to earn yield on BTC.',
+  title: "Lombard Finance Guide 2026 — LBTC Bitcoin Liquid Staking",
+  description: "Complete Lombard Finance guide 2026: LBTC bitcoin liquid staking token, Babylon integration, Security Consortium, BARD tokenomics, multi-chain DeFi",
   keywords: [
     'Lombard Finance',
     'LBTC',
@@ -109,7 +110,14 @@ export default function LombardFinanceLBTCGuide() {
 
   return (
     <div style={pageStyle}>
-      <div style={containerStyle}>
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <div style={containerStyle}>
         <Breadcrumb items={[
           { label: "Home", href: "/" },
           { label: "Learn", href: "/learn" },

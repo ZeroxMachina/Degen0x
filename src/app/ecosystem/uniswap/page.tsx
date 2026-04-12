@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import UniswapClient from "./UniswapClient";
 
 export const metadata: Metadata = {
-  title: "Uniswap: The Original DEX Guide 2026 — Multi-Chain AMM | degen0x",
-  description:
-    "Complete guide to Uniswap — the pioneering decentralized exchange. Concentrated liquidity (v3), Uniswap v4 hooks, UNI governance, multi-chain deployment, and how to swap and provide liquidity.",
+  title: "Uniswap: The Original DEX Guide 2026 — Multi-Chain AMM",
+  description: "Complete guide to Uniswap — the pioneering decentralized exchange. Concentrated liquidity (v3), Uniswap v4 hooks, UNI governance, multi-chain deployment, and",
   keywords: [
     "uniswap",
     "uniswap guide",
@@ -42,7 +43,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=Uniswap:+The+Original+DEX+Guide+2026&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/uniswap" }};
 
 export default function UniswapPage() {
   return <UniswapClient />;

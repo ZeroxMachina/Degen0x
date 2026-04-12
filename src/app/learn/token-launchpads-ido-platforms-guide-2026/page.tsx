@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Token Launchpads & IDO Platforms Guide 2026",
-  description: "Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics analysis.",
+  description: "Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics",
 
   alternates: {
     canonical: 'https://degen0x.com/learn/token-launchpads-ido-platforms-guide-2026'
@@ -13,14 +13,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     title: 'Token Launchpads & IDO Platforms Guide 2026',
-    description: 'Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics analysis.',
+    description: "Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics",
     url: 'https://degen0x.com/learn/token-launchpads-ido-platforms-guide-2026',
     images: [{ url: 'https://degen0x.com/og-default.svg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Token Launchpads & IDO Platforms Guide 2026',
-    description: 'Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics analysis.',
+    description: "Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics",
     image: 'https://degen0x.com/og-default.svg',
   }
 };

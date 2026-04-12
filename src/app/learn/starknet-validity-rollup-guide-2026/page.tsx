@@ -9,9 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Starknet Guide 2026: Validity Rollup, STRK Staking & BTCFi | degen0x",
-  description:
-    "What is Starknet? The leading ZK validity rollup on Ethereum with $542M TVL, decentralized sequencing, STRK staking, privacy features, and Bitcoin DeFi integration. Complete guide for 2026.",
+  title: "Starknet Guide 2026: Validity Rollup, STRK Staking & BTCFi",
+  description: "What is Starknet? The leading ZK validity rollup on Ethereum with $542M TVL, decentralized sequencing, STRK staking, privacy features, and Bitcoin DeFi",
   keywords: [
     "Starknet",
     "Starknet guide 2026",
@@ -371,8 +370,8 @@ export default function StarknetValidityRollupGuidePage() {
             { q: "What wallet do I need for Starknet?", a: "Argent X and Braavos are the two main Starknet wallets. Both support native account abstraction features like social recovery and session keys, which standard Ethereum wallets don't have." },
           ].map((faq, i) => (
             <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

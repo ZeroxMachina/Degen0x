@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -11,7 +12,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Multi-Chain Wallets of ${CURRENT_YEAR} - Cross-Chain Wallet Reviews | ${SITE_NAME}`,
   description: `Compare the best multi-chain crypto wallets of ${CURRENT_YEAR}. Trust Wallet, Exodus, Phantom and more. Manage assets across multiple blockchains from one wallet.`,
-};
+  alternates: { canonical: "/wallets/best/multi-chain" }};
 
 const faqs = [
   { question: "What is a multi-chain wallet?", answer: "A multi-chain wallet supports multiple blockchain networks from a single application. Instead of using separate wallets for Ethereum, Solana, Bitcoin, and other chains, a multi-chain wallet lets you manage all your assets in one place. This simplifies portfolio management and reduces the number of seed phrases you need to secure." },
@@ -29,7 +30,14 @@ export default function BestMultiChainWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Crypto Wallets", href: "/wallets" },
@@ -104,6 +112,7 @@ export default function BestMultiChainWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/multi Chain", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/multi-chain"}) }} />
     </div>
   );
 }

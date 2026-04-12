@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Maple Finance",
   slug: "maple",
   rating: 3.9,
-  description: "Maple Finance is an institutional lending protocol that connects corporate borrowers with DeFi lenders through managed lending pools run by professional credit delegates who underwrite and monitor loans.",
+  description: "Maple Finance is an institutional lending protocol that connects corporate borrowers with DeFi lenders through managed lending pools run by professional credit",
   pros: ["Higher yields through institutional lending", "Professional credit assessment by delegates", "Transparent on-chain loan tracking", "Real yield from real borrowers", "Growing institutional adoption"],
   cons: ["Suffered defaults from 3AC and Alameda exposure", "Not fully permissionless lending", "Counterparty risk from borrowers", "Locked deposit periods for some pools", "Smaller retail participation"],
   fees: "Fixed rates per pool",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Maple Finance Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Maple Finance review covering institutional lending, credit delegation, pool management, yield opportunities, and lessons from past defaults.",
-};
+  alternates: { canonical: "/defi-lending/reviews/maple" }};
 
 export default function MapleReview() {
   return (

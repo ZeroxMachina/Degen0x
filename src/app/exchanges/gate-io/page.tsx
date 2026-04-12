@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,9 +8,8 @@ const product = exchanges.find((e) => e.slug === "gate-io")!;
 
 export const metadata: Metadata = {
   title: "Gate.io Review 2026: Largest Altcoin Selection, Fees & Pros",
-  description:
-    "In-depth Gate.io review covering 1,700+ cryptocurrencies, early listings, DeFi access, trading features, and security. Is Gate.io right for you? Updated March 2026.",
-};
+  description: "In-depth Gate.io review covering 1,700+ cryptocurrencies, early listings, DeFi access, trading features, and security. Is Gate.io right for you? Updated March",
+  alternates: { canonical: "/exchanges/gate-io" }};
 
 export default function GateIoReview() {
   return (

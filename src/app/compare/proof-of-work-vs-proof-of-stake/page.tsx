@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Proof of Work vs Proof of Stake 2026: Energy, Security, Decentralization | Bitcoin ETH | degen0x',
+  title: "Proof of Work vs Proof of Stake 2026: Energy, Security,",
   description: 'PoW vs PoS comparison: Bitcoin 150 TWh/year vs Ethereum 0.01 TWh (staking). Security, decentralization, finality, 51% attack cost. Comparison table.',
   keywords: ['proof of work vs proof of stake', 'PoW vs PoS', 'blockchain consensus', 'bitcoin vs ethereum', 'energy consumption crypto'],
   openGraph: { type: 'article', title: 'Proof of Work vs Proof of Stake', description: 'PoW vs PoS comparison: energy, security, decentralization', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/compare/proof-of-work-vs-proof-of-stake', images: [{ url: 'https://degen0x.com/og-compare.svg', width: 1200, height: 630, alt: 'PoW vs PoS' }] },

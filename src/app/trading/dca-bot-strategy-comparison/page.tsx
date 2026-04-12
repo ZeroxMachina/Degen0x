@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DCA Bot Strategy Comparison: 3Commas, Pionex, Bitsgap | degen0x',
+  title: "DCA Bot Strategy Comparison: 3Commas, Pionex, Bitsgap",
   description: 'Compare DCA bots for automated Bitcoin investing. Dollar-cost averaging strategy, backtesting, fees, and best practices for passive accumulation.',
   keywords: ['DCA bot', 'dollar cost averaging', '3Commas', 'Pionex', 'automated investing', 'crypto accumulation'],
   openGraph: {

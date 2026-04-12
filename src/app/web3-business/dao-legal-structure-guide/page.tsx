@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DAO Legal Structure Guide 2026 | Wyoming LLC Marshall Islands',
-  description: 'DAO legal structures: Wyoming DAO LLC, Marshall Islands, Cayman Foundation, Swiss Association. Formation costs, liability, tax treatment, Ooki lawsuit implications.',
+  title: "DAO Legal Structure Guide 2026 | Wyoming LLC Marshall",
+  description: "DAO legal structures: Wyoming DAO LLC, Marshall Islands, Cayman Foundation, Swiss Association. Formation costs, liability, tax treatment, Ooki lawsuit",
   keywords: ['DAO legal structure', 'Wyoming DAO LLC', 'Marshall Islands', 'DAO formation', 'member liability'],
   openGraph: {
     title: 'DAO Legal Structure Guide 2026',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DAO Legal Structure Guide 2026 | Wyoming LLC Marshall Islands',
-    description: 'DAO legal structures: Wyoming DAO LLC, Marshall Islands, Cayman Foundation, Swiss Association. Formation costs, liability, tax treatment, Ooki lawsuit implications.',
+    title: "DAO Legal Structure Guide 2026 | Wyoming LLC Marshall",
+    description: "DAO legal structures: Wyoming DAO LLC, Marshall Islands, Cayman Foundation, Swiss Association. Formation costs, liability, tax treatment, Ooki lawsuit",
     image: 'https://degen0x.com/og-default.svg',
   }
 };
@@ -46,14 +46,14 @@ const structuredData = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DAO Legal Structure Guide 2026 | Wyoming LLC Marshall Islands',
-    description: 'DAO legal structures: Wyoming DAO LLC, Marshall Islands, Cayman Foundation, Swiss Association. Formation costs, liability, tax treatment, Ooki lawsuit implications.',
+    title: "DAO Legal Structure Guide 2026 | Wyoming LLC Marshall",
+    description: "DAO legal structures: Wyoming DAO LLC, Marshall Islands, Cayman Foundation, Swiss Association. Formation costs, liability, tax treatment, Ooki lawsuit",
     image: 'https://degen0x.com/og-default.svg',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DAO Legal Structure Guide 2026 | Wyoming LLC Marshall Islands',
-    description: 'DAO legal structures: Wyoming DAO LLC, Marshall Islands, Cayman Foundation, Swiss Association. Formation costs, liability, tax treatment, Ooki lawsuit implications.',
+    title: "DAO Legal Structure Guide 2026 | Wyoming LLC Marshall",
+    description: "DAO legal structures: Wyoming DAO LLC, Marshall Islands, Cayman Foundation, Swiss Association. Formation costs, liability, tax treatment, Ooki lawsuit",
     image: 'https://degen0x.com/og-default.svg',
   }
 };
@@ -474,6 +474,56 @@ export default function DAOLegalStructureGuide() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Token Burning Explained: Deflation in Cryptocurrency | degen0x',
+  title: "Token Burning Explained: Deflation in Cryptocurrency",
   description: 'Complete guide to crypto token burning mechanisms, from Ethereum EIP-1559 to SHIB burn portal. Learn how deflationary tokenomics work.',
   keywords: ['token burning', 'crypto burning', 'deflationary tokens', 'EIP-1559', 'SHIB burn', 'tokenomics'],
   openGraph: {

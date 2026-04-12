@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Sonne Finance Review ${CURRENT_YEAR}: Optimism & Base Lending`,
   description: "Complete Sonne Finance review covering Compound-style lending on Optimism and Base, yield rates, SONNE token incentives, and protocol risk analysis.",
-};
+  alternates: { canonical: "/defi-lending/reviews/sonne" }};
 
 export default function SonneReview() {
   return (

@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Best Crypto Trading Courses Online 2026 | degen0x',
-  description: 'Compare crypto trading courses: Investopedia Academy, Udemy, Coursera, Ivan on Tech Academy, CryptoCred. Technical analysis, fundamental analysis, paper trading, certifications.',
+  description: "Compare crypto trading courses: Investopedia Academy, Udemy, Coursera, Ivan on Tech Academy, CryptoCred. Technical analysis, fundamental analysis, paper",
   keywords: ['Crypto trading course', 'Bitcoin trading', 'Blockchain course', 'Technical analysis crypto', 'Cryptocurrency academy', 'Trading certification', 'Paper trading', 'Udemy crypto'],
   openGraph: {
     type: 'article',

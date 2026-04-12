@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto Exchange Fee Comparison | degen0x',
-  description: 'Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange selection for 2026.',
+  description: "Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange",
   keywords: ['crypto exchange fee comparison tool', 'exchange fees', 'trading fees crypto', 'lowest fees', 'fee structure', 'degen0x'],
   openGraph: {
     type: 'article',
     title: 'Crypto Exchange Fee Comparison | degen0x',
-    description: 'Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange selection for 2026.',
+    description: "Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/tools/crypto-exchange-fee-comparison-tool',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Exchange Fee Comparison | degen0x',
-    description: 'Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange selection for 2026.',
+    description: "Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange",
     image: 'https://degen0x.com/og-tools.svg',
   },
   alternates: {
@@ -31,7 +31,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Crypto Exchange Fee Comparison Tool',
-  description: 'Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange selection for 2026.',
+  description: "Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange",
   image: 'https://degen0x.com/og-tools.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

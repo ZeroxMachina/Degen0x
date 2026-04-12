@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from '@/components/Breadcrumb';
@@ -20,8 +21,8 @@ const S = {
 };
 
 export const metadata: Metadata = {
-  title: "Solana ETF Guide 2026 — Spot SOL ETF Status, How to Invest | degen0x",
-  description: "Everything you need to know about the Solana ETF in 2026. Track approval status, compare SOL ETF issuers (VanEck, 21Shares, Grayscale), understand fees, and learn how to invest.",
+  title: "Solana ETF Guide 2026 — Spot SOL ETF Status, How to Invest",
+  description: "Everything you need to know about the Solana ETF in 2026. Track approval status, compare SOL ETF issuers (VanEck, 21Shares, Grayscale), understand fees, and",
   keywords: ["solana etf", "sol etf", "spot solana etf", "solana etf approval", "solana etf 2026", "sol etf how to buy", "vaneck solana etf", "grayscale solana trust", "crypto etf"],
   openGraph: {
     title: "Solana ETF Guide 2026 — Everything You Need to Know | degen0x",
@@ -37,7 +38,8 @@ export const metadata: Metadata = {
     title: "Solana ETF Guide 2026",
     description: "Spot Solana ETF status, issuer comparison, fees, and how to invest. The complete SOL ETF guide.",
   },
-};
+
+  alternates: { canonical: "/learn/solana-etf-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Solana ETF Guide 2026 — Spot SOL ETF Status, Issuers, Fees & How to Invest",
@@ -304,6 +306,56 @@ export default function SolanaETFGuide() {
         />
       </div>
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import { Product } from "@/lib/types";
@@ -7,8 +9,7 @@ const product: Product = {
   name: "Tensor",
   slug: "tensor",
   rating: 4.1,
-  description:
-    "Tensor is the leading professional NFT trading platform on Solana, offering real-time analytics, advanced order types, compressed NFT support, and DeFi-style trading tools for serious NFT traders.",
+  description: "Tensor is the leading professional NFT trading platform on Solana, offering real-time analytics, advanced order types, compressed NFT support, and DeFi-style",
   pros: [
     "Best-in-class Solana NFT trading experience",
     "Real-time analytics and floor price tracking",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   title: `Tensor Review: Professional Solana NFT Trading (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth Tensor review covering Solana NFT trading tools, TNSR rewards, compressed NFT support, advanced analytics, and whether it's the right platform for you.",
-};
+  alternates: { canonical: "/nfts/reviews/tensor" }};
 
 export default function TensorReviewPage() {
   return (

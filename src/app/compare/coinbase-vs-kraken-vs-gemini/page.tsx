@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Coinbase vs Kraken vs Gemini: Crypto Exchange Comparison',
-  description: 'Compare exchanges: Coinbase ($0.4-0.6% fees, 150+ coins), Kraken ($0.16-0.26%, advanced trading), Gemini ($0.2-0.4%, regulatory focus). Security, staking, institutional features.',
+  description: "Compare exchanges: Coinbase ($0.4-0.6% fees, 150+ coins), Kraken ($0.16-0.26%, advanced trading), Gemini ($0.2-0.4%, regulatory focus). Security, staking,",
   keywords: ['Coinbase', 'Kraken', 'Gemini', 'crypto exchange', 'trading fees', 'staking', 'security', 'SOC 2', 'insurance'],
   openGraph: {
     title: 'Coinbase vs Kraken vs Gemini: Exchange Comparison',

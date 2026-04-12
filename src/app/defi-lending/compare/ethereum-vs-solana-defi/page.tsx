@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Ethereum vs Solana DeFi Lending ${CURRENT_YEAR}: Chain Comparison`,
   description: `Compare Ethereum and Solana DeFi lending ecosystems in ${CURRENT_YEAR}. Analyze protocols, fees, speed, TVL, and which chain is better for lending.`,
-};
+  alternates: { canonical: "/defi-lending/compare/ethereum-vs-solana-defi" }};
 
 const items: ComparisonItem[] = [
   { name: "Ethereum DeFi", slug: "defi-lending", rating: 4.7, affiliateUrl: "https://degen0x.com/go/aave", features: { "Total DeFi TVL": "$50B+", "Top Protocols": "Aave, Compound, Morpho", "Transaction Fees": "$1-50+", "Block Time": "12 seconds", "Composability": "Deepest ecosystem", "Security Track Record": "Longest in DeFi", "L2 Options": "Arbitrum, Optimism, Base", "Unique Advantage": "Maximum liquidity and composability" } },
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function EthereumVsSolanaDefiPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/ethereum-vs-solana-defi" }, { label: "Ethereum vs Solana DeFi", href: "/defi-lending/compare/ethereum-vs-solana-defi" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/ethereum-vs-solana-defi" }, { label: "Ethereum vs Solana DeFi", href: "/defi-lending/compare/ethereum-vs-solana-defi" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Ethereum vs Solana DeFi Lending ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -60,6 +69,57 @@ export default function EthereumVsSolanaDefiPage() {
         <p className="text-[var(--color-text-secondary)]">Ethereum's deep composability enables more sophisticated strategies through extensive protocol integrations. Yield optimizers, structured products, and complex multi-protocol strategies are more developed on Ethereum. Solana's DeFi ecosystem is growing rapidly with innovative protocols like Kamino for automated liquidity management and Jupiter for swap aggregation, but the total range of composable strategies is still narrower than Ethereum's mature ecosystem.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/ethereum Vs Solana Defi", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/ethereum-vs-solana-defi"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

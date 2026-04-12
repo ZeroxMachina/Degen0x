@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "OneKey",
   slug: "onekey",
   rating: 4.1,
-  description:
-    "OneKey is a fully open-source hardware wallet ecosystem offering multiple form factors (Classic, Mini, Pro, Touch) with broad chain support, competitive pricing, and transparent security.",
+  description: "OneKey is a fully open-source hardware wallet ecosystem offering multiple form factors (Classic, Mini, Pro, Touch) with broad chain support, competitive",
   pros: [
     "Fully open-source firmware and software for independent verification",
     "Multiple form factors to suit different needs and budgets",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `OneKey Wallet Review (${CURRENT_YEAR}) - Open-Source Hardware Wallet | ${SITE_NAME}`,
   description: `Complete OneKey wallet review for ${CURRENT_YEAR}. Covers open-source design, hardware models, supported chains, security architecture, and value proposition.`,
-};
+  alternates: { canonical: "/wallets/reviews/onekey" }};
 
 const overview =
   "OneKey is a fully open-source hardware wallet brand that has gained significant traction, particularly in Asian markets. The company offers multiple hardware wallet form factors including the Classic (affordable entry-level), Mini (compact card-like design), Pro (professional with large screen), and Touch (premium touchscreen). All OneKey devices feature open-source firmware and are paired with an open-source companion app.\n\nOneKey supports 1,000+ tokens across major blockchains including Bitcoin, Ethereum, Solana, Polygon, and many others. The company emphasizes transparency, security, and affordability as its core values. Every component of the OneKey ecosystem, from hardware schematics to firmware code, is publicly available on GitHub for independent audit and verification. This open-source approach distinguishes OneKey from Ledger (closed-source firmware) and positions it alongside Trezor as a transparency-first option.";

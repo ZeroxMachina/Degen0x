@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Best Crypto Cards for Rewards Stacking | Multi-Card Strategy 2026",
+  title: "Best Crypto Cards for Rewards Stacking | Multi-Card",
   description: "Stack crypto card rewards using multiple cards. Compare reward rates, maximize cashback, and optimize multi-card strategies. Real yield from spending.",
   keywords: ["crypto card rewards stacking", "multiple crypto cards", "maximize crypto cashback", "crypto card rewards strategy", "best rewards crypto card"],
   openGraph: {
     type: "article",
-    title: "Best Crypto Cards for Rewards Stacking | Multi-Card Strategy 2026",
+    title: "Best Crypto Cards for Rewards Stacking | Multi-Card",
     description: "Stack crypto card rewards using multiple cards. Compare reward rates, maximize cashback, and optimize multi-card strategies. Real yield from spending.",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Crypto Cards for Rewards Stacking | Multi-Card Strategy 2026",
+    title: "Best Crypto Cards for Rewards Stacking | Multi-Card",
     description: "Stack crypto card rewards using multiple cards. Compare reward rates, maximize cashback, and optimize multi-card strategies. Real yield from spending.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
@@ -548,6 +548,56 @@ export default function BestCardForCryptoRewardsStacking() {
 
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered financial or tax advice. Rewards stacking involves tax complexity and accounting costs. Always consult a qualified accountant before implementing multi-card strategies. degen0x does not endorse any specific card provider.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

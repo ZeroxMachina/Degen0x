@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods Unchained | degen0x',
+  title: "NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods",
   description: 'NFT gaming & play-to-earn 2026: Axie Infinity, Illuvium, Gods Unchained, Big Time, Star Atlas. P2E models, gaming guilds, sustainability analysis.',
   keywords: ['nft gaming 2026', 'play-to-earn games', 'Axie Infinity', 'Illuvium', 'Gods Unchained', 'P2E sustainability', 'gaming guilds', 'blockchain games'],
   openGraph: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods Unchained | degen0x',
+    title: "NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods",
     description: 'NFT gaming & play-to-earn 2026: Axie Infinity, Illuvium, Gods Unchained, Big Time, Star Atlas. P2E models, gaming guilds, sustainability analysis.',
     image: 'https://degen0x.com/og-default.svg',
   }
@@ -89,13 +89,13 @@ const structuredData = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods Unchained | degen0x',
+    title: "NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods",
     description: 'NFT gaming & play-to-earn 2026: Axie Infinity, Illuvium, Gods Unchained, Big Time, Star Atlas. P2E models, gaming guilds, sustainability analysis.',
     image: 'https://degen0x.com/og-default.svg',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods Unchained | degen0x',
+    title: "NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods",
     description: 'NFT gaming & play-to-earn 2026: Axie Infinity, Illuvium, Gods Unchained, Big Time, Star Atlas. P2E models, gaming guilds, sustainability analysis.',
     image: 'https://degen0x.com/og-default.svg',
   }

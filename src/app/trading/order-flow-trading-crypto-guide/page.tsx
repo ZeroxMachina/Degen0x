@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Order Flow Trading Crypto 2026: Tape Reading, Footprint Charts, Delta Volume, DOM Analysis | degen0x",
-  description: "Master order flow trading for crypto. Tape reading, depth-of-market analysis, footprint charts, delta volume (CVD), aggressive vs passive orders. Bookmap, Exocharts tools.",
+  title: "Order Flow Trading Crypto 2026: Tape Reading, Footprint",
+  description: "Master order flow trading for crypto. Tape reading, depth-of-market analysis, footprint charts, delta volume (CVD), aggressive vs passive orders. Bookmap,",
   keywords: ["order flow", "tape reading", "footprint charts", "delta volume", "CVD", "DOM analysis", "bookmap", "exocharts"],
   openGraph: {
     type: "article",

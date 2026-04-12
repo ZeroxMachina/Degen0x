@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'How to Stake Polkadot (DOT) 2026: NPoS, Pools, Liquid Staking | degen0x',
-  description: 'Complete guide to Polkadot staking. Learn nominated Proof of Stake (NPoS), minimum stake (500 DOT), validator selection, nomination pools (0 DOT minimum), Polkadot.js, Fearless Wallet. Liquid staking with Acala/Bifrost, APY ~12%, parachain auctions, OpenGov.',
+  title: "How to Stake Polkadot (DOT) 2026: NPoS, Pools, Liquid",
+  description: "Complete guide to Polkadot staking. Learn nominated Proof of Stake (NPoS), minimum stake (500 DOT), validator selection, nomination pools (0 DOT minimum),",
   keywords: ['Polkadot staking', 'stake DOT', 'NPoS', 'nomination pools', 'liquid staking', 'Acala', 'Bifrost', 'Polkadot.js', 'Fearless Wallet', 'validator selection'],
   openGraph: {
     type: 'article',

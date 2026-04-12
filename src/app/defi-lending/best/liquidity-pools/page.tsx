@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,14 +11,14 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Liquidity Pools ${CURRENT_YEAR} - Top LP Opportunities in DeFi`,
   description: `Compare the best liquidity pools for earning yield in ${CURRENT_YEAR}. Earn trading fees and token rewards by providing liquidity on top DEXs and DeFi protocols.`,
-};
+  alternates: { canonical: "/defi-lending/best/liquidity-pools" }};
 
 const products: Product[] = [
   {
     name: "Curve Finance",
     slug: "curve",
     rating: 4.7,
-    description: "Curve Finance dominates stablecoin and pegged-asset liquidity pools with its specialized AMM design that minimizes slippage. LPs earn trading fees plus CRV gauge incentives, and pools can be boosted through veCRV voting for significantly enhanced yields.",
+    description: "Curve Finance dominates stablecoin and pegged-asset liquidity pools with its specialized AMM design that minimizes slippage. LPs earn trading fees plus CRV",
     pros: ["Deepest stablecoin LP pools", "Minimal impermanent loss on stable pairs", "CRV gauge rewards boost returns", "Industry-standard for stablecoin swaps"],
     cons: ["Complex gauge and voting system", "UI is not beginner-friendly", "Volatile pool yields depend on CRV price"],
     fees: "0.04% swap fee to LPs",
@@ -72,7 +74,14 @@ const faqs: FAQ[] = [
 export default function LiquidityPoolsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Liquidity Pools", href: "/defi-lending/best/liquidity-pools" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Liquidity Pools", href: "/defi-lending/best/liquidity-pools" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Liquidity Pools ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
@@ -90,6 +99,57 @@ export default function LiquidityPoolsPage() {
         ))}
       </div>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/liquidity Pools", "description": "Curve Finance dominates stablecoin and pegged-asset liquidity pools with its specialized AMM design that minimizes slippage. LPs earn trading fees plus CRV", "url": "https://degen0x.com/defi-lending/best/liquidity-pools"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

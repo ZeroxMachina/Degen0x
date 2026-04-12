@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Projects on Arbitrum 2026: GMX, Camelot, Pendle & More | degen0x',
+  title: "Best Projects on Arbitrum 2026: GMX, Camelot, Pendle & More",
   description: 'Top Arbitrum projects: GMX (perps), Camelot DEX, Pendle, Radiant Capital, Treasure, Dopex. Arbitrum TVL, daily volume, unique addresses & comparison table.',
   keywords: ['best projects on arbitrum', 'Arbitrum ecosystem', 'GMX trading', 'Camelot DEX', 'Pendle Arbitrum', 'Radiant Capital', 'Arbitrum TVL', 'optimistic rollup'],
   openGraph: {

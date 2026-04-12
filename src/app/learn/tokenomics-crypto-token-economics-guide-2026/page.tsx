@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Tokenomics Guide 2026 — How to Evaluate Crypto Token Economics | degen0x',
+  title: "Tokenomics Guide 2026 — How to Evaluate Crypto Token",
   description:
     'Master crypto tokenomics: token supply, distribution, vesting, inflation mechanisms, utility, governance, red flags, and evaluation frameworks for 2026.',
   keywords: [

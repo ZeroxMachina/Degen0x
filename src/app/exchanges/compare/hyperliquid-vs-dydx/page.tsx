@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -9,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Hyperliquid vs dYdX: Best Decentralized Perps? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of Hyperliquid vs dYdX for decentralized perpetual futures trading. Compare fees, speed, liquidity, and features.",
-};
+  alternates: { canonical: "/exchanges/compare/hyperliquid-vs-dydx" }};
 
 export default function HyperliquidVsDydxPage() {
   return (
@@ -63,6 +64,57 @@ export default function HyperliquidVsDydxPage() {
         { question: "Which has better liquidity?", answer: "Hyperliquid currently has deeper liquidity and higher trading volume than dYdX, particularly on major perpetual pairs like BTC and ETH." },
         { question: "Do I need KYC for Hyperliquid or dYdX?", answer: "Neither platform currently requires KYC for trading. You connect a wallet and can begin trading immediately. However, both have geographical restrictions and may implement compliance measures in the future." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/hyperliquid Vs Dydx", "description": "Detailed comparison of Hyperliquid vs dYdX for decentralized perpetual futures trading. Compare fees, speed, liquidity, and features.", "url": "https://degen0x.com/exchanges/compare/hyperliquid-vs-dydx"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

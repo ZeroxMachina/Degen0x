@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ProductCard from "@/components/ProductCard";
@@ -21,7 +22,7 @@ const aiCryptoTokens: Product[] = [
     name: "Render (RNDR)",
     slug: "render",
     rating: 4.4,
-    description: "A decentralized GPU rendering network connecting artists and studios needing GPU power with providers who have idle capacity. Expanding into AI compute and inference.",
+    description: "A decentralized GPU rendering network connecting artists and studios needing GPU power with providers who have idle capacity. Expanding into AI compute and",
     pros: ["Real GPU computing demand", "Growing AI narrative", "Revenue-generating protocol", "Strong partnerships"],
     cons: ["GPU market competition", "Centralized job distribution", "Token utility evolving"],
     bestFor: "Decentralized GPU compute",
@@ -198,6 +199,57 @@ export default function BestAICryptoPage() {
       <section id="faq">
         <FAQSection faqs={AI_CRYPTO_FAQS} />
       </section>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top AI Crypto Tokens", "description": "A decentralized GPU rendering network connecting artists and studios needing GPU power with providers who have idle capacity. Expanding into AI compute and", "url": "https://degen0x.com/investing/best/ai-crypto"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

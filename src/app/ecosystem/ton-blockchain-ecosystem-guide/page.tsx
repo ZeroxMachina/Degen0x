@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa, Telegram Mini Apps | degen0x",
-  description: "Complete TON ecosystem guide: STON.fi DEX ($120M TVL), DeDust ($60M TVL), Evaa lending ($40M TVL). Telegram Mini Apps: Notcoin (35M users), Hamster Kombat (50M+ users). 900M Telegram users as Web3 onboarding funnel.",
+  title: "TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,",
+  description: "Complete TON ecosystem guide: STON.fi DEX ($120M TVL), DeDust ($60M TVL), Evaa lending ($40M TVL). Telegram Mini Apps: Notcoin (35M users), Hamster Kombat",
   keywords: ["TON", "STON.fi", "DeDust", "Evaa", "Telegram", "Mini Apps", "Notcoin", "Hamster Kombat", "blockchain"],
   openGraph: {
     type: "article",

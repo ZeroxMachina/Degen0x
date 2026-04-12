@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Best Meme Coins to Buy 2026: DOGE, SHIB, PEPE, WIF | degen0x',
-  description: 'Meme coin guide 2026: DOGE ($0.25), SHIB ($0.000015), PEPE ($0.0000085), WIF ($1.80), BONK, FLOKI, BRETT. Market cap, community, utility, risks, rug pull checklist.',
+  description: "Meme coin guide 2026: DOGE ($0.25), SHIB ($0.000015), PEPE ($0.0000085), WIF ($1.80), BONK, FLOKI, BRETT. Market cap, community, utility, risks, rug pull",
   keywords: ['meme coins 2026', 'best meme coins', 'DOGE', 'SHIB', 'PEPE', 'meme coin opportunities', 'crypto memes'],
   openGraph: { type: 'article', title: 'Best Meme Coins to Buy 2026 | degen0x', description: 'Meme coin guide 2026: DOGE, SHIB, PEPE, WIF, BONK. Market analysis, community size, utility, pump dynamics, rug pull checklist.', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/investing/best-meme-coins-to-buy-2026', images: [{ url: 'https://degen0x.com/og-investing.svg', width: 1200, height: 630, alt: 'Best Meme Coins 2026' }] },
   twitter: { card: 'summary_large_image', title: 'Best Meme Coins to Buy 2026 | degen0x', description: 'Meme coin guide 2026: DOGE, SHIB, PEPE, WIF. Market analysis, community, utility, rug pull checklist.', image: 'https://degen0x.com/og-investing.svg' },
@@ -105,6 +105,56 @@ export default function BestMemeCoins2026() {
             Crypto markets are volatile — diversify and only invest what you can afford to lose. See our <a href="/methodology" style={{ color: '#10b981' }}>research methodology</a>.
           </p>
         </div>
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

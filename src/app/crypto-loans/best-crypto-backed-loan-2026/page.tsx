@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Backed Loan 2026: Aave vs MakerDAO vs Nexo vs BlockFi vs Salt | degen0x',
+  title: "Best Crypto Backed Loan 2026: Aave vs MakerDAO vs Nexo vs",
   description: 'Compare crypto loans: Aave DeFi (3-5% rates), MakerDAO (borrow DAI), Nexo CeFi (up to $100k), BlockFi, Salt.',
   keywords: ['crypto loan', 'crypto backed loan', 'Aave loan', 'MakerDAO', 'Nexo lending', 'crypto LTV'],
   openGraph: { type: 'article', title: 'Best Crypto Loan 2026', description: 'Crypto loan comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/crypto-loans/best-crypto-backed-loan-2026', images: [{ url: 'https://degen0x.com/og-loans.svg', width: 1200, height: 630, alt: 'Crypto Loans' }] },
@@ -172,6 +172,56 @@ export default function BestCryptoBackedLoan() {
             <li><a href="/investing/best-perpetual-dex-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Perpetual Dex Tokens</a></li>
           </ul>
         </nav>
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

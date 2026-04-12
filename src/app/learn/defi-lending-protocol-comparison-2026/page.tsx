@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Lending Protocol Comparison 2026: Aave vs Morpho vs Compound vs Fluid | degen0x',
-  description:
-    'Compare top DeFi lending protocols in 2026. Aave V4, Morpho Blue, Compound V3, Fluid, and Spark — rates, architecture, risks, TVL, and which to use for your strategy.',
+  title: "DeFi Lending Protocol Comparison 2026: Aave vs Morpho vs",
+  description: "Compare top DeFi lending protocols in 2026. Aave V4, Morpho Blue, Compound V3, Fluid, and Spark — rates, architecture, risks, TVL, and which to use for your",
   keywords: [
     'defi lending comparison 2026',
     'aave vs morpho',
@@ -26,8 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     title: 'DeFi Lending Protocol Comparison 2026: Aave vs Morpho vs Compound vs Fluid',
-    description:
-      'Compare top DeFi lending protocols in 2026. Aave V4, Morpho Blue, Compound V3, Fluid, and Spark — rates, architecture, risks, TVL, and which to use for your strategy.',
+    description: "Compare top DeFi lending protocols in 2026. Aave V4, Morpho Blue, Compound V3, Fluid, and Spark — rates, architecture, risks, TVL, and which to use for your",
     url: `${SITE_URL}/learn/defi-lending-protocol-comparison-2026`,
     images: [
       {
@@ -40,8 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'DeFi Lending Protocol Comparison 2026: Aave vs Morpho vs Compound vs Fluid',
-    description:
-      'Compare top DeFi lending protocols in 2026. Aave V4, Morpho Blue, Compound V3, Fluid, and Spark — rates, architecture, risks, TVL, and which to use for your strategy.',
+    description: "Compare top DeFi lending protocols in 2026. Aave V4, Morpho Blue, Compound V3, Fluid, and Spark — rates, architecture, risks, TVL, and which to use for your",
     images: [`${SITE_URL}/og-defi-lending-protocol-comparison-2026.svg`],
   },
   alternates: {
@@ -51,8 +48,7 @@ export const metadata: Metadata = {
 
 const articleSchema = generateArticleSchema({
   title: 'DeFi Lending Protocol Comparison 2026: Aave vs Morpho vs Compound vs Fluid',
-  description:
-    'Compare top DeFi lending protocols in 2026. Aave V4, Morpho Blue, Compound V3, Fluid, and Spark — rates, architecture, risks, TVL, and which to use for your strategy.',
+  description: "Compare top DeFi lending protocols in 2026. Aave V4, Morpho Blue, Compound V3, Fluid, and Spark — rates, architecture, risks, TVL, and which to use for your",
   url: `${SITE_URL}/learn/defi-lending-protocol-comparison-2026`,
   author: 'degen0x',
   datePublished: '2026-03-27',

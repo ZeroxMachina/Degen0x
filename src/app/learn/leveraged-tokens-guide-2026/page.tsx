@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
@@ -8,9 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Leveraged Tokens Guide 2026 | Amplified Crypto Exposure Without Liquidation",
-  description:
-    "Complete guide to leveraged tokens: how they work, volatility decay risks, DeFi vs CeFi platforms, and strategies to use them effectively. From Index Coop to Binance.",
+  title: "Leveraged Tokens Guide 2026 | Amplified Crypto Exposure",
+  description: "Complete guide to leveraged tokens: how they work, volatility decay risks, DeFi vs CeFi platforms, and strategies to use them effectively. From Index Coop to",
   keywords: [
     "leveraged tokens",
     "crypto leverage",
@@ -47,11 +47,12 @@ export const metadata: Metadata = {
       "Complete guide to leveraged tokens and amplified crypto exposure.",
     images: ["https://degen0x.com/og-leveraged-tokens-guide-2026.svg"],
   },
-};
+
+  alternates: { canonical: "/learn/leveraged-tokens-guide-2026" }};
 
 export default function LeveragedTokensGuide() {
   const articleSchema = generateArticleSchema({
-    title: "Leveraged Tokens Guide 2026 | Amplified Crypto Exposure Without Liquidation",
+    title: "Leveraged Tokens Guide 2026 | Amplified Crypto Exposure",
     description: "Complete guide to leveraged tokens: how they work, volatility decay risks, DeFi vs CeFi platforms, and strategies to use them effectively.",
     url: `${SITE_URL}/learn/leveraged-tokens-guide-2026`,
     datePublished: "2026-03-27T00:00:00Z",
@@ -920,6 +921,56 @@ export default function LeveragedTokensGuide() {
             })
           }}
         />
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

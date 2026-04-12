@@ -1,13 +1,13 @@
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Best Crypto Wallets of ${new Date().getFullYear()} - Reviews, Comparisons & Guides | ${SITE_NAME}`,
-  description:
-    "Compare the best crypto wallets for security, ease of use, and features. Expert reviews of hardware wallets, software wallets, and more. Find the perfect wallet for your needs.",
-};
+  description: "Compare the best crypto wallets for security, ease of use, and features. Expert reviews of hardware wallets, software wallets, and more. Find the perfect",
+  alternates: { canonical: "/wallets" }};
 
 const BEST_OF_LINKS = [
   { title: "Best Crypto Wallets Overall", href: "/wallets/best", description: "Our top picks across all wallet types" },
@@ -66,7 +66,14 @@ const TOOL_LINKS = [
 export default function WalletsHubPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Crypto Wallets", href: "/wallets" },
@@ -201,6 +208,57 @@ export default function WalletsHubPage() {
           </p>
         </div>
       </section>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Wallets Overall", "description": "Compare the best crypto wallets for security, ease of use, and features. Expert reviews of hardware wallets, software wallets, and more. Find the perfect", "url": "https://degen0x.com/wallets"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/wallets" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Wallets
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Wallets
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

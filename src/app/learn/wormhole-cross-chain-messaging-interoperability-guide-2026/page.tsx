@@ -1,4 +1,5 @@
 import React from 'react';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -6,7 +7,7 @@ import BackToTop from '@/components/BackToTop';
 
 export const metadata: Metadata = {
   title: 'Wormhole Cross-Chain Messaging & Interoperability Guide 2026',
-  description: 'Complete guide to Wormhole cross-chain messaging protocol. Learn how Guardian Network secures 40+ blockchains, NTT framework for native tokens, W token economics, and compare with LayerZero and Axelar.',
+  description: "Complete guide to Wormhole cross-chain messaging protocol. Learn how Guardian Network secures 40+ blockchains, NTT framework for native tokens, W token",
   keywords: [
     'Wormhole',
     'cross-chain messaging',

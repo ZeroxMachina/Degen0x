@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "Huobi Global Review 2026: Trading Platform, Fees & Features",
   description:
     "Complete Huobi Global (HTX) review covering trading features, derivatives, spot trading, and security. Is HTX right for you? Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/htx" }};
 
 export default function HTXReview() {
   return (

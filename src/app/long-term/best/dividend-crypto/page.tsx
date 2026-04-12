@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -11,15 +12,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Dividend & Yield Earning Crypto ${CURRENT_YEAR} - Passive Income Tokens`,
   description: `Find the best dividend-paying and yield-earning cryptocurrencies in ${CURRENT_YEAR}. Compare staking yields, real yield protocols, and passive income tokens for long-term crypto investors.`,
-};
+  alternates: { canonical: "/long-term/best/dividend-crypto" }};
 
 const products: Product[] = [
   {
     name: "Ethereum (ETH) - Staking",
     slug: "ethereum-staking",
     rating: 4.8,
-    description:
-      "Ethereum staking is the gold standard for crypto passive income. By staking ETH (directly or through liquid staking providers), you earn approximately 3-5% APR in ETH rewards while securing the largest smart contract network. Liquid staking tokens like stETH and rETH allow you to earn staking rewards while maintaining liquidity and composability across DeFi protocols. The combination of staking yield and potential price appreciation makes ETH staking the most reliable long-term crypto income stream.",
+    description: "Ethereum staking is the gold standard for crypto passive income. By staking ETH (directly or through liquid staking providers), you earn approximately 3-5% APR",
     pros: ["3-5% APR on the second largest crypto asset", "Liquid staking maintains full liquidity", "Deflationary tokenomics amplify real yield", "Institutional-grade staking infrastructure", "Battle-tested proof-of-stake mechanism"],
     cons: ["Validator staking requires 32 ETH minimum", "Liquid staking introduces smart contract risk", "APR varies with network participation rate", "Potential slashing risk for validators"],
     bestFor: "Reliable long-term crypto yield",
@@ -177,6 +177,57 @@ export default function DividendCryptoPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/dividend Crypto", "description": "Ethereum staking is the gold standard for crypto passive income. By staking ETH (directly or through liquid staking providers), you earn approximately 3-5% APR", "url": "https://degen0x.com/long-term/best/dividend-crypto"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Trading Psychology Guide 2026 | FOMO, Revenge Trading, Loss Aversion',
-  description: 'Master trading psychology: identify FOMO, revenge trading, loss aversion, overtrading, anchoring bias. Use journaling (TraderSync, Edgewonk) and discipline for consistent 15-25% returns.',
+  title: "Crypto Trading Psychology Guide 2026 | FOMO, Revenge",
+  description: "Master trading psychology: identify FOMO, revenge trading, loss aversion, overtrading, anchoring bias. Use journaling (TraderSync, Edgewonk) and discipline for",
   keywords: ['trading psychology', 'FOMO', 'revenge trading', 'loss aversion', 'overtrading', 'trading bias', 'TraderSync', 'Edgewonk'],
   openGraph: {
     title: 'Crypto Trading Psychology | degen0x',

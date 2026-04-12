@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Aave V3 vs Compound V3 Comparison 2026: TVL, Governance, E-Mode vs Simplicity | degen0x',
+  title: "Aave V3 vs Compound V3 Comparison 2026: TVL, Governance,",
   description: 'Deep comparison: Aave V3 ($12B, 8 chains, e-mode, flash loans) vs Compound V3 ($8B, Ethereum+Base, simple, safe).',
   keywords: ['Aave vs Compound', 'Aave V3 vs Compound V3', 'DeFi lending comparison', 'AAVE vs COMP token', 'e-mode vs isolation'],
   openGraph: { type: 'article', title: 'Aave vs Compound 2026', description: 'Head-to-head comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/defi-lending/aave-vs-compound-comparison', images: [{ url: 'https://degen0x.com/og-defi.svg', width: 1200, height: 630, alt: 'Aave vs Compound' }] },

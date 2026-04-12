@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Regulation by Country 2026: US, EU, Singapore, Japan, UAE, El Salvador | degen0x',
-  description: 'Compare cryptocurrency regulation across 10 countries. US (SEC/CFTC FIT21 Act), EU (MiCA), Singapore (MAS), Japan (FSA), UAE (VARA), El Salvador (legal tender), UK, Hong Kong, Switzerland. Tax rates, stablecoin rules, DeFi compliance.',
+  title: "Crypto Regulation by Country 2026: US, EU, Singapore,",
+  description: "Compare cryptocurrency regulation across 10 countries. US (SEC/CFTC FIT21 Act), EU (MiCA), Singapore (MAS), Japan (FSA), UAE (VARA), El Salvador (legal",
   keywords: ['crypto regulation', 'Bitcoin legal tender', 'MiCA', 'FIT21 Act', 'crypto tax', 'stablecoin regulation', 'DeFi regulatory', 'VARA UAE', 'crypto compliance', 'cryptocurrency law'],
   openGraph: {
     type: 'article',

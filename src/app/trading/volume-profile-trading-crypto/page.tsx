@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Volume Profile Trading Crypto 2026: VWAP, POC, Value Area, Naked POCs | degen0x",
-  description: "Master volume profile trading in crypto. Point of Control (POC), Value Area High/Low (VAH/VAL), VWAP, naked POCs, high volume nodes. TradingView setup, trading strategies, 60-75% winrate potential.",
+  title: "Volume Profile Trading Crypto 2026: VWAP, POC, Value Area,",
+  description: "Master volume profile trading in crypto. Point of Control (POC), Value Area High/Low (VAH/VAL), VWAP, naked POCs, high volume nodes. TradingView setup, trading",
   keywords: ["volume profile", "point of control", "vwap", "value area", "poc trading", "high volume node", "naked poc"],
   openGraph: {
     type: "article",

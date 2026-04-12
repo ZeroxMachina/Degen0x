@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Stablecoins Explained 2026: USDT, USDC, USDe & Beyond | degen0x',
-  description: 'Complete stablecoins guide for 2026. Learn how USDT, USDC, USDe, and yield-bearing stablecoins work, compare fees, risks, and regulation under GENIUS Act and MiCA.',
+  title: "Stablecoins Explained 2026: USDT, USDC, USDe & Beyond",
+  description: "Complete stablecoins guide for 2026. Learn how USDT, USDC, USDe, and yield-bearing stablecoins work, compare fees, risks, and regulation under GENIUS Act and",
   keywords: ['stablecoins', 'USDT', 'USDC', 'USDe', 'Ethena', 'yield-bearing stablecoins', 'GENIUS Act', 'MiCA', 'stablecoin guide 2026', 'USDS', 'Sky Protocol'],
   openGraph: {
     type: 'article',
@@ -38,7 +38,7 @@ const structuredData = {
     {
       '@type': 'Article',
       headline: 'Stablecoins Explained 2026: USDT, USDC, USDe & Yield-Bearing Stablecoins',
-      description: 'Complete stablecoins guide for 2026. Learn how USDT, USDC, USDe, and yield-bearing stablecoins work, compare fees, risks, and regulation under GENIUS Act and MiCA.',
+      description: "Complete stablecoins guide for 2026. Learn how USDT, USDC, USDe, and yield-bearing stablecoins work, compare fees, risks, and regulation under GENIUS Act and",
       image: 'https://degen0x.com/og-stablecoins-guide.svg',
       datePublished: '2026-04-02',
       dateModified: '2026-04-02',
@@ -435,8 +435,8 @@ export default function StablecoinsExplainedGuidePage() {
             { q: 'Can I earn yield on stablecoins?', a: 'Yes. You can earn 4-20% APY on stablecoins through yield-bearing stablecoins (USDe ~10-20%, sUSDS ~4.25%), DeFi lending on Aave or Compound (3-8% APY), liquidity provision on DEXs, or CeFi platforms. Higher yields carry higher risk.' },
           ].map((faq, i) => (
             <div key={i} style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

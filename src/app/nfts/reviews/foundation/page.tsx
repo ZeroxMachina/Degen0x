@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import { Product } from "@/lib/types";
@@ -7,8 +9,7 @@ const product: Product = {
   name: "Foundation",
   slug: "foundation",
   rating: 4.0,
-  description:
-    "Foundation is a curated NFT marketplace that has built its reputation as the premier destination for digital art. The platform features gallery-quality presentation and hosts some of the most celebrated NFT art collections in the space.",
+  description: "Foundation is a curated NFT marketplace that has built its reputation as the premier destination for digital art. The platform features gallery-quality",
   pros: [
     "Curated, high-quality art-focused collections",
     "Strong reputation among digital artists and collectors",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   title: `Foundation Review: Premium NFT Art Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth Foundation review covering its curated art focus, auction system, creator tools, fees, and whether it's the right NFT marketplace for art collectors.",
-};
+  alternates: { canonical: "/nfts/reviews/foundation" }};
 
 export default function FoundationReviewPage() {
   return (

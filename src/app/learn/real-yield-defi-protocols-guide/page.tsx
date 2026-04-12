@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Real Yield DeFi Protocols 2026: GMX, dYdX, Synthetix, Aave Revenue | degen0x',
-  description: 'Guide to real yield DeFi. Compare GMX ($150M+ fees distributed), dYdX, Gains Network, Synthetix, Aave, Lido staking rewards. Real yield vs inflationary yield. Token Terminal protocol revenue. Sustainable tokenomics, fee distribution mechanisms, 15%+ APY.',
+  title: "Real Yield DeFi Protocols 2026: GMX, dYdX, Synthetix, Aave",
+  description: "Guide to real yield DeFi. Compare GMX ($150M+ fees distributed), dYdX, Gains Network, Synthetix, Aave, Lido staking rewards. Real yield vs inflationary yield.",
   keywords: ['real yield', 'DeFi protocol', 'GMX', 'dYdX', 'Synthetix', 'Aave', 'Lido', 'protocol revenue', 'APY', 'sustainable tokenomics'],
   openGraph: {
     type: 'article',

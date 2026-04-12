@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Sui Private Transactions & Seal Framework: Compliant Privacy Guide 2026 | degen0x",
+  title: "Sui Private Transactions & Seal Framework: Compliant",
   description: "Learn how Sui Network's protocol-level private transactions and Seal framework enable compliant privacy using ZK proofs and threshold encryption. Complete guide to Sui's 2026 privacy upgrade.",
   keywords: [
     "Sui private transactions",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: 'article',
-    title: "Sui Private Transactions & Seal Framework: Compliant Privacy Guide 2026 | degen0x",
+    title: "Sui Private Transactions & Seal Framework: Compliant",
     description: "Learn how Sui Network's protocol-level private transactions and Seal framework enable compliant privacy using ZK proofs and threshold encryption. Complete guide to Sui's 2026 privacy upgrade.",
     publishedTime: '2026-04-01T00:00:00Z',
     authors: ['degen0x Team'],
@@ -38,11 +38,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Sui Private Transactions & Seal Framework: Compliant Privacy Guide 2026 | degen0x",
+    title: "Sui Private Transactions & Seal Framework: Compliant",
     description: "Learn how Sui Network's protocol-level private transactions and Seal framework enable compliant privacy using ZK proofs and threshold encryption. Complete guide to Sui's 2026 privacy upgrade.",
     images: ['https://degen0x.com/og-sui-private-transactions-seal-framework-guide-2026.svg']
   }
-};
+  alternates: { canonical: "/learn/sui-private-transactions-seal-framework-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Sui Private Transactions & Seal Framework: Protocol-Level Compliant Privacy",

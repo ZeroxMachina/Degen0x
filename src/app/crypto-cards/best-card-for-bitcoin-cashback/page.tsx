@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Bitcoin Cashback Cards 2026: Fold, Unchained, Strike | degen0x',
-  description: 'Compare Bitcoin cashback cards: Fold Card (sats back), Unchained Card, Cash App Bitcoin, Strike Card. Earning sats passively, auto-DCA, tax treatment, spending caps.',
+  title: "Best Bitcoin Cashback Cards 2026: Fold, Unchained, Strike",
+  description: "Compare Bitcoin cashback cards: Fold Card (sats back), Unchained Card, Cash App Bitcoin, Strike Card. Earning sats passively, auto-DCA, tax treatment, spending",
   keywords: ['Bitcoin cashback card', 'Fold Card', 'Bitcoin rewards', 'best BTC card', 'sats rewards'],
   openGraph: {
     title: 'Best Bitcoin Cashback Cards 2026: Fold, Unchained, Strike Guide',

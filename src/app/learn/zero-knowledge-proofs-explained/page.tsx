@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Zero-Knowledge Proofs (ZK) Explained: zk-SNARKs vs zk-STARKs | degen0x',
+  title: "Zero-Knowledge Proofs (ZK) Explained: zk-SNARKs vs zk-STARKs",
   description: 'ZK-SNARKs vs zk-STARKs: proof sizes, trusted setup, quantum resistance. zkSync ($450M TVL), StarkNet, Polygon zkEVM, Scroll, Zcash privacy.',
   keywords: ['zero-knowledge proofs', 'zk-SNARKs', 'zk-STARKs', 'zkSync', 'privacy', 'quantum resistance'],
   openGraph: {
     type: 'article',
-    title: 'Zero-Knowledge Proofs (ZK) Explained: zk-SNARKs vs zk-STARKs | degen0x',
+    title: "Zero-Knowledge Proofs (ZK) Explained: zk-SNARKs vs zk-STARKs",
     description: 'ZK-SNARKs vs zk-STARKs: proof sizes, trusted setup, quantum resistance. zkSync, StarkNet, Polygon zkEVM, Scroll, Zcash.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zero-Knowledge Proofs (ZK) Explained: zk-SNARKs vs zk-STARKs | degen0x',
+    title: "Zero-Knowledge Proofs (ZK) Explained: zk-SNARKs vs zk-STARKs",
     description: 'Proof sizes, trusted setup, quantum resistance. zkSync, StarkNet, Polygon zkEVM, Scroll, Zcash.',
     image: 'https://degen0x.com/og-learn.svg',
   },

@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Impermanent Loss DeFi Explained 2026: Formula, Examples, Mitigation | degen0x',
-  description: 'Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor), correlated pairs.',
+  title: "Impermanent Loss DeFi Explained 2026: Formula, Examples,",
+  description: "Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor),",
   keywords: ['impermanent loss', 'DeFi', 'AMM', 'Uniswap IL', 'IL calculator', 'IL protection', 'Bancor', 'concentrated liquidity', 'correlated pairs', 'LP risks'],
   openGraph: {
     type: 'article',
     title: 'Impermanent Loss DeFi Explained 2026: Formula, Examples, Mitigation',
-    description: 'Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor), correlated pairs.',
+    description: "Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor),",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/learn/impermanent-loss-defi-explained',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Impermanent Loss DeFi Explained 2026: Formula, Examples, Mitigation',
-    description: 'Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor), correlated pairs.',
+    description: "Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor),",
     image: 'https://degen0x.com/og-learn.svg',
   },
   alternates: {
@@ -36,7 +36,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Impermanent Loss DeFi Explained 2026: Formula, Examples, Mitigation',
-  description: 'Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor), correlated pairs.',
+  description: "Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor),",
   image: 'https://degen0x.com/og-learn.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

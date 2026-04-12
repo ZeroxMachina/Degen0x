@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Flash Loans Explained 2026: Aave, dYdX, Atomic Transactions | degen0x',
-  description: 'Complete flash loan guide 2026: Aave $2B liquidity 0.09% fee, dYdX 0% fee, atomic transactions, arbitrage, liquidation bots, Euler hack $197M, collateral swaps, governance attacks.',
+  title: "Flash Loans Explained 2026: Aave, dYdX, Atomic Transactions",
+  description: "Complete flash loan guide 2026: Aave $2B liquidity 0.09% fee, dYdX 0% fee, atomic transactions, arbitrage, liquidation bots, Euler hack $197M, collateral",
   keywords: ['flash loans', 'Aave flash loans', 'dYdX', 'flash loan attack', 'arbitrage', 'DeFi exploit', 'Solidity', 'smart contracts'],
   openGraph: {
     type: 'article',

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,8 +8,8 @@ const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "curve")!;
 
 export const metadata: Metadata = {
   title: "Curve Finance Review 2026: LP Yields, CRV Rewards & Analysis",
-  description: "In-depth Curve Finance review covering stablecoin pools, CRV tokenomics, LP yields, security, and whether Curve is right for your DeFi strategy. Updated March 2026.",
-};
+  description: "In-depth Curve Finance review covering stablecoin pools, CRV tokenomics, LP yields, security, and whether Curve is right for your DeFi strategy. Updated March",
+  alternates: { canonical: "/defi-lending/reviews/curve" }};
 
 export default function CurveReview() {
   return (

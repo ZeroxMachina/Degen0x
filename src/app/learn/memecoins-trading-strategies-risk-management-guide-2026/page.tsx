@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Memecoins: Trading Strategies & Risk Management Guide 2026 | degen0x',
-  description:
-    'Master memecoin trading in 2026: how they work, trading strategies (sniping, KOL tracking, DCA), risk management, rug pull detection, and tools like Dexscreener, Birdeye, Nansen.',
+  title: "Memecoins: Trading Strategies & Risk Management Guide 2026",
+  description: "Master memecoin trading in 2026: how they work, trading strategies (sniping, KOL tracking, DCA), risk management, rug pull detection, and tools like",
   keywords: [
     'memecoins',
     'memecoin trading',

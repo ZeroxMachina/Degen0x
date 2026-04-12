@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Tender.fi Review ${CURRENT_YEAR}: Arbitrum Lending Protocol`,
   description: "Complete Tender.fi review covering lending on Arbitrum, oracle-based pricing, yield rates, and the protocol's position in the Arbitrum DeFi ecosystem.",
-};
+  alternates: { canonical: "/defi-lending/reviews/tender" }};
 
 export default function TenderReview() {
   return (

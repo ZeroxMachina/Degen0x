@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Institutional Crypto Custody Solutions Guide 2026 — MPC, HSM & Multi-Sig | degen0x',
-  description: 'Complete guide to institutional crypto custody in 2026. Learn MPC (Multi-Party Computation), HSM (Hardware Security Modules), multi-sig architectures, regulatory compliance, and top providers. Covers Fireblocks, Coinbase Custody, BitGo, Anchorage Digital, and more.',
+  title: "Institutional Crypto Custody Solutions Guide 2026 — MPC,",
+  description: "Complete guide to institutional crypto custody in 2026. Learn MPC (Multi-Party Computation), HSM (Hardware Security Modules), multi-sig architectures,",
   keywords: ['crypto custody', 'institutional custody', 'MPC wallets', 'HSM', 'multi-signature', 'Fireblocks', 'Coinbase Custody', 'BitGo', 'Anchorage Digital', 'digital asset security', 'SAB 121', 'OCC charter', 'crypto regulation', 'NYDFS BitLicense'],
   openGraph: {
     type: 'article',

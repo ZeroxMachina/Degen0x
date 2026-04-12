@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Live Crypto Heatmap Tools: Sector Rotation, Market Performance | degen0x',
-  description: 'Real-time crypto heatmap tools (Coin360, CoinGecko, TradingView). Color-coded market performance by sector: DeFi, L1, L2, meme coins. Identify sector rotation signals and outperformers instantly.',
+  title: "Live Crypto Heatmap Tools: Sector Rotation, Market",
+  description: "Real-time crypto heatmap tools (Coin360, CoinGecko, TradingView). Color-coded market performance by sector: DeFi, L1, L2, meme coins. Identify sector rotation",
   keywords: ['crypto heatmap', 'live heatmap', 'coin360', 'coingecko heatmap', 'market performance', 'sector rotation', 'trading tools', 'heatmap analysis'],
   alternates: {
     canonical: "https://degen0x.com/tools/crypto-heatmap-live",
@@ -455,8 +455,8 @@ export default function CryptoHeatmapLive() {
             },
           ].map((faq, idx) => (
             <div key={idx} style={{ ...infoBoxStyle, marginBottom: 16 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#58a6ff", marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#58a6ff", marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

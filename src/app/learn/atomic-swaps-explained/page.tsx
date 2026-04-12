@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Atomic Swaps Explained: Trustless Cross-Chain Trading | degen0x',
+  title: "Atomic Swaps Explained: Trustless Cross-Chain Trading",
   description: 'Learn how atomic swaps enable trustless cross-chain trading using HTLCs. Explore Thorchain, AtomicDEX, and submarine swaps.',
   keywords: ['atomic swaps', 'HTLC', 'cross-chain swap', 'thorchain', 'trustless trading', 'submarine swaps'],
   openGraph: {

@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Ondo Finance Guide 2026: Tokenized Treasuries, Stocks & RWA Protocol",
-  description:
-    "Ondo Finance is the leading RWA tokenization protocol with $2.52B TVL. Learn about USDY, OUSG, tokenized equities, the ONDO token, and how to access institutional-grade on-chain yield.",
+  title: "Ondo Finance Guide 2026: Tokenized Treasuries, Stocks & RWA",
+  description: "Ondo Finance is the leading RWA tokenization protocol with $2.52B TVL. Learn about USDY, OUSG, tokenized equities, the ONDO token, and how to access",
   keywords: [
     "Ondo Finance",
     "USDY",
@@ -51,12 +50,12 @@ export const metadata: Metadata = {
       "USDY, OUSG, 200+ tokenized stocks, and the SWEEP fund. Here's everything about Ondo Finance's dominance in on-chain real-world assets.",
     images: [`${SITE_URL}/api/og?title=Ondo+Finance+Guide+2026&category=RWA&type=learn`],
   },
-};
+
+  alternates: { canonical: "/learn/ondo-finance-rwa-guide" }};
 
 const articleSchema = generateArticleSchema({
-  title: "Ondo Finance Guide 2026: Tokenized Treasuries, Stocks & RWA Protocol",
-  description:
-    "Ondo Finance is the leading RWA tokenization protocol with $2.52B TVL. Learn about USDY, OUSG, tokenized equities, the ONDO token, and how to access institutional-grade on-chain yield.",
+  title: "Ondo Finance Guide 2026: Tokenized Treasuries, Stocks & RWA",
+  description: "Ondo Finance is the leading RWA tokenization protocol with $2.52B TVL. Learn about USDY, OUSG, tokenized equities, the ONDO token, and how to access",
   url: `${SITE_URL}/learn/ondo-finance-rwa-guide`,
   datePublished: "2026-03-16T00:00:00Z",
   dateModified: "2026-03-16T00:00:00Z",
@@ -727,9 +726,9 @@ export default function OndoFinanceGuidePage() {
               }}
             >
               <div className="font-bold mb-2" style={{ color: "var(--color-text)" }}>
-                {faq.q}
+                {faq.question}
               </div>
-              <div className="text-sm">{faq.a}</div>
+              <div className="text-sm">{faq.answer}</div>
             </div>
           ))}
         </div>

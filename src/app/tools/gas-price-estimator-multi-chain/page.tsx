@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Multi-Chain Gas Price Estimator 2026 | Ethereum, Arbitrum, Solana Fees',
+  title: "Multi-Chain Gas Price Estimator 2026 | Ethereum, Arbitrum,",
   description: 'Compare gas fees across Ethereum, Arbitrum, Polygon, Optimism, Solana. EIP-1559 base + priority fee, L2 blob costs, real-time tracker.',
   keywords: ['gas price', 'Ethereum gas', 'Arbitrum gas', 'Solana priority fees', 'L2 gas', 'transaction fees', 'gas tracker'],
   openGraph: {

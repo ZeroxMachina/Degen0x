@@ -7,8 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Polymarket Guide 2026: How to Trade Prediction Markets | degen0x',
-  description: 'Complete guide to Polymarket prediction markets. Learn how to trade YES/NO shares, understand market mechanics, explore strategies, and discover the potential POLY airdrop.',
+  title: "Polymarket Guide 2026: How to Trade Prediction Markets",
+  description: "Complete guide to Polymarket prediction markets. Learn how to trade YES/NO shares, understand market mechanics, explore strategies, and discover the potential",
   keywords: [
     'polymarket guide',
     'prediction markets crypto',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     'polymarket tutorial'
   ],
   openGraph: {
-    title: 'Polymarket Guide 2026: How to Trade Prediction Markets | degen0x',
-    description: 'Complete guide to Polymarket prediction markets. Learn how to trade YES/NO shares, understand market mechanics, explore strategies, and discover the potential POLY airdrop.',
+    title: "Polymarket Guide 2026: How to Trade Prediction Markets",
+    description: "Complete guide to Polymarket prediction markets. Learn how to trade YES/NO shares, understand market mechanics, explore strategies, and discover the potential",
     url: `${SITE_URL}/learn/polymarket-prediction-markets-guide-2026`,
     type: 'article',
     publishedTime: '2026-03-24T00:00:00Z',
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
       'Polymarket'
     ]
   }
-};
+  alternates: { canonical: "/learn/polymarket-prediction-markets-guide-2026" }};
 
 const structuredDataSchema = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'Guide'],
   headline: 'Polymarket Guide 2026: How to Trade Prediction Markets',
-  description: 'Complete guide to Polymarket prediction markets. Learn how to trade YES/NO shares, understand market mechanics, explore strategies, and discover the potential POLY airdrop.',
+  description: "Complete guide to Polymarket prediction markets. Learn how to trade YES/NO shares, understand market mechanics, explore strategies, and discover the potential",
   image: `${SITE_URL}/og-polymarket-prediction-markets-guide-2026.svg`,
   author: {
     '@type': 'Organization',
@@ -777,6 +777,56 @@ export default function PolymarketGuidePage() {
       </main>
 
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
 // ─────────────────────────────────────────────
@@ -11,7 +12,7 @@ import Link from "next/link";
 // ─────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "degen0x Türkçe — Kripto Para Borsaları, Cüzdanlar ve DeFi Karşılaştırması",
+  title: "degen0x Türkçe — Kripto Para Borsaları, Cüzdanlar ve DeFi",
   description:
     "degen0x, Türkiye için kapsamlı kripto para karşılaştırma platformudur. Borsaları, cüzdanları, DeFi protokollerini karşılaştırın; Türkiye'de vergi, düzenleme ve ücretsiz araçlar hakkında bilgi alın.",
   alternates: { canonical: "https://degen0x.com/tr" },
@@ -203,6 +204,13 @@ export default function TurkishPage() {
   return (
     <div style={{ background: "var(--color-bg, #0d1117)", minHeight: "100vh", color: "var(--color-text, #e6edf3)" }}>
 
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="tr"
+      />
       {/* ── Hero ── */}
       <section style={{
         background: "linear-gradient(135deg, #6366f108 0%, #06b6d408 50%, #f7931a08 100%)",
@@ -401,12 +409,12 @@ export default function TurkishPage() {
         <p style={{ color: "#8b949e", marginBottom: 28, fontSize: 14 }}>Türk yatırımcıların en çok sorulan kripto soruları</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 16 }}>
           {TR_FAQ.map((faq) => (
-            <div key={faq.q} style={{
+            <div key={faq.question} style={{
               background: "#161b22", border: "1px solid #30363d", borderRadius: 12,
               padding: "20px 22px",
             }}>
-              <div style={{ fontSize: 14, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.q}</div>
-              <div style={{ fontSize: 13, color: "#8b949e", lineHeight: 1.6 }}>{faq.a}</div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.question}</div>
+              <div style={{ fontSize: 13, color: "#8b949e", lineHeight: 1.6 }}>{faq.answer}</div>
             </div>
           ))}
         </div>
@@ -477,6 +485,57 @@ export default function TurkishPage() {
           {" · "}
           <Link href="/" style={{ color: "#8b949e", textDecoration: "none" }}>🌐 English</Link>
         </p>
+      </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x T\u00fcrk\u00e7e \u2014 Kripto Para Borsalar\u0131, C\u00fczdanlar ve DeFi", "description": "degen0x, T\u00fcrkiye i\u00e7in kapsaml\u0131 kripto para kar\u015f\u0131la\u015ft\u0131rma platformudur. Borsalar\u0131, c\u00fczdanlar\u0131, DeFi protokollerini kar\u015f\u0131la\u015ft\u0131r\u0131n; T\u00fcrkiye", "url": "https://degen0x.com/tr"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </div>
   );

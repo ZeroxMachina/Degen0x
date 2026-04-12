@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
 // ─────────────────────────────────────────────
@@ -9,9 +10,8 @@ import Link from "next/link";
 // ─────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "degen0x auf Deutsch — Krypto Exchanges, Wallets & DeFi vergleichen",
-  description:
-    "degen0x ist Ihr vertrauenswürdiger Krypto-Ratgeber auf Deutsch. Vergleichen Sie Exchanges, Wallets und DeFi-Protokolle. Expertenbewertungen, kostenlose Tools und umfassende Guides für intelligente Krypto-Investments im DACH-Raum.",
+  title: "degen0x auf Deutsch — Krypto Exchanges, Wallets & DeFi",
+  description: "degen0x ist Ihr vertrauenswürdiger Krypto-Ratgeber auf Deutsch. Vergleichen Sie Exchanges, Wallets und DeFi-Protokolle. Expertenbewertungen, kostenlose Tools",
   alternates: {
     canonical: "https://degen0x.com/de",
     languages: {
@@ -162,6 +162,13 @@ export default function GermanLandingPage() {
   return (
     <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
 
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="de"
+      />
       {/* ── Hero ── */}
       <section className="text-center max-w-3xl mx-auto mb-16">
         <div
@@ -420,6 +427,7 @@ export default function GermanLandingPage() {
         <Link href="/pt-br" className="text-[var(--color-primary)] hover:underline">🇧🇷 Português</Link>
         <Link href="/fr" className="text-[var(--color-primary)] hover:underline">🇫🇷 Français</Link>
       </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x auf Deutsch \u2014 Krypto Exchanges, Wallets & DeFi", "description": "degen0x ist Ihr vertrauensw\u00fcrdiger Krypto-Ratgeber auf Deutsch. Vergleichen Sie Exchanges, Wallets und DeFi-Protokolle. Expertenbewertungen, kostenlose Tools", "url": "https://degen0x.com/de"}) }} />
     </main>
   );
 }

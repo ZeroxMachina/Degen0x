@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = cryptoCards.find((c) => c.slug === "baanx-card")!;
 export const metadata: Metadata = {
   title: `Baanx Card Review (${CURRENT_YEAR}): Crypto Banking & Pros/Cons | degen0x`,
   description: "In-depth Baanx Card review covering crypto-native banking features, white-label infrastructure, credit line options, and regional availability.",
-};
+  alternates: { canonical: "/crypto-cards/reviews/baanx-card" }};
 
 export default function BaanxCardReviewPage() {
   return (

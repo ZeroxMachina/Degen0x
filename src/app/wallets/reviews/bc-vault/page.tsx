@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `BC Vault Review (${CURRENT_YEAR}) | degen0x`,
   description: "BC Vault hardware wallet review covering non-deterministic key generation, FeRAM storage, multiple backup methods, and unique security approach.",
-};
+  alternates: { canonical: "/wallets/reviews/bc-vault" }};
 
 export default function BcVaultReviewPage() {
   return (

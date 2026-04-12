@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Card vs Traditional Credit Card: Rewards Comparison 2026 | degen0x',
+  title: "Crypto Card vs Traditional Credit Card: Rewards Comparison",
   description: 'Compare crypto debit/credit cards vs traditional cards. 4% crypto rewards, no credit check, foreign fees, tax implications, and credit building explained.',
   keywords: ['crypto card vs credit card', 'crypto rewards', 'bitcoin cashback', 'crypto debit card', 'credit score', 'tax implications'],
   openGraph: {

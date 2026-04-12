@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,8 +8,8 @@ const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "aave")!;
 
 export const metadata: Metadata = {
   title: "Aave Review 2026: Fees, Yield, Security & Pros/Cons",
-  description: "In-depth Aave review covering yield rates, security, supported chains, governance, and whether it is the right DeFi lending protocol for you. Updated March 2026.",
-};
+  description: "In-depth Aave review covering yield rates, security, supported chains, governance, and whether it is the right DeFi lending protocol for you. Updated March",
+  alternates: { canonical: "/defi-lending/reviews/aave" }};
 
 export default function AaveReview() {
   return (

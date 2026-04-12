@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "What Is MegaETH? Real-Time Ethereum L2 Explained 2026 | degen0x",
-  description:
-    "MegaETH launched mainnet Feb 2026 with 100,000 TPS and 10ms blocks. Learn how its Streaming EVM, MEGA tokenomics, and parallel execution work — plus risks and how to get started.",
+  title: "What Is MegaETH? Real-Time Ethereum L2 Explained 2026",
+  description: "MegaETH launched mainnet Feb 2026 with 100,000 TPS and 10ms blocks. Learn how its Streaming EVM, MEGA tokenomics, and parallel execution work — plus risks and",
   keywords: [
     "megaeth",
     "megaeth guide",

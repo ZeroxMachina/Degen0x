@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import BabylonClient from "./BabylonClient";
 
 export const metadata: Metadata = {
-  title: "Babylon Protocol: Bitcoin Staking Guide 2026 — $4.2B TVL | degen0x",
-  description:
-    "Complete guide to Babylon Protocol — the first native Bitcoin staking solution with $4.2B TVL, 180K+ BTC staked, and 5-9% APR. How Bitcoin staking works, BABY token, risks, and how to start earning yield on BTC.",
+  title: "Babylon Protocol: Bitcoin Staking Guide 2026 — $4.2B TVL",
+  description: "Complete guide to Babylon Protocol — the first native Bitcoin staking solution with $4.2B TVL, 180K+ BTC staked, and 5-9% APR. How Bitcoin staking works, BABY",
   keywords: [
     "babylon protocol",
     "bitcoin staking",
@@ -42,7 +43,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=Babylon+Protocol:+Bitcoin+Staking+Guide+2026&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/babylon-protocol" }};
 
 export default function BabylonProtocolPage() {
   return <BabylonClient />;

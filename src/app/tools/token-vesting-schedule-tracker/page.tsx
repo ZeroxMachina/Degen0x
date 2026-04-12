@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Token Vesting Schedule Tracker | degen0x',
-  description: 'Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events. 2026 unlock calendar.',
+  description: "Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events.",
   keywords: ['token vesting', 'token unlocks', 'vesting schedule', 'supply pressure', 'token emissions', 'degen0x'],
   openGraph: {
     type: 'article',
     title: 'Token Vesting Schedule Tracker | degen0x',
-    description: 'Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events. 2026 unlock calendar.',
+    description: "Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events.",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/tools/token-vesting-schedule-tracker',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Token Vesting Schedule Tracker | degen0x',
-    description: 'Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events. 2026 unlock calendar.',
+    description: "Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events.",
     image: 'https://degen0x.com/og-tools.svg',
   },
   alternates: {
@@ -31,7 +31,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Token Vesting Schedule Tracker',
-  description: 'Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events. 2026 unlock calendar.',
+  description: "Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events.",
   image: 'https://degen0x.com/og-tools.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

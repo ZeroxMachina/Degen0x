@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Scroll zkEVM Layer 2 Ecosystem Guide 2026 - degen0x',
-  description: 'Complete guide to Scroll, the largest zkEVM by market share. Learn about zkEVM technology, SCR token, ecosystem dApps, performance metrics, and investment opportunities.',
+  description: "Complete guide to Scroll, the largest zkEVM by market share. Learn about zkEVM technology, SCR token, ecosystem dApps, performance metrics, and investment",
   keywords: [
     'Scroll',
     'zkEVM',

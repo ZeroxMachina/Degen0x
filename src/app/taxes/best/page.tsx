@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
@@ -6,7 +7,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto Tax Solutions (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Explore the best crypto tax solutions for ${CURRENT_YEAR}. From tax software and free tools to crypto CPAs and DeFi-specific tax solutions.`,
-};
+  alternates: { canonical: "/taxes/best" }};
 
 const subcategories = [
   {
@@ -34,7 +35,14 @@ const subcategories = [
 export default function BestTaxSolutionsPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="taxes"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Crypto Taxes", href: "/taxes" },
@@ -66,6 +74,57 @@ export default function BestTaxSolutionsPage() {
             </span>
           </Link>
         ))}
+      </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/best", "description": "Full-featured tax software for calculating, tracking, and filing your crypto taxes. Supports hundreds of exchanges, DeFi protocols, and NFT platforms.", "url": "https://degen0x.com/taxes/best"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </main>
   );

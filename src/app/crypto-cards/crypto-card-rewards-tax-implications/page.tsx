@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Card Rewards Tax Guide | Capital Gains & Reporting 2026",
+  title: "Crypto Card Rewards Tax Guide | Capital Gains & Reporting",
   description: "Crypto card rewards tax implications: when rewards are taxable, capital gains on selling rewards, income reporting, and tax-efficient strategies in 2026.",
   keywords: ["crypto card rewards tax", "crypto card taxable income", "capital gains crypto card", "tax reporting crypto card", "crypto rewards taxation"],
   openGraph: {
     type: "article",
-    title: "Crypto Card Rewards Tax Guide | Capital Gains & Reporting 2026",
+    title: "Crypto Card Rewards Tax Guide | Capital Gains & Reporting",
     description: "Crypto card rewards tax implications: when rewards are taxable, capital gains on selling rewards, income reporting, and tax-efficient strategies in 2026.",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Crypto Card Rewards Tax Guide | Capital Gains & Reporting 2026",
+    title: "Crypto Card Rewards Tax Guide | Capital Gains & Reporting",
     description: "Crypto card rewards tax implications: when rewards are taxable, capital gains on selling rewards, income reporting, and tax-efficient strategies in 2026.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
@@ -498,6 +498,56 @@ export default function CryptoCardRewardsTaxImplications() {
 
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered tax or legal advice. Tax laws vary by jurisdiction and change frequently. Always consult a qualified tax professional (CPA, EA) about your specific situation. degen0x does not provide tax advice.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

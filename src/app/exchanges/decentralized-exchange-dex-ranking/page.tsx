@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Decentralized Exchanges (DEX) 2026: Uniswap, PancakeSwap, Curve, dYdX, Jupiter | degen0x',
+  title: "Best Decentralized Exchanges (DEX) 2026: Uniswap,",
   description: 'Top DEXs 2026: Uniswap ($4T volume, $2.5B TVL), PancakeSwap ($6B TVL), Curve ($9B TVL), dYdX ($1.2B TVL), Jupiter ($800M TVL). AMM vs orderbook. No KYC.',
   keywords: ['decentralized exchange', 'dex', 'uniswap', 'pancakeswap', 'curve finance', 'atomic swap', 'amm'],
   openGraph: {

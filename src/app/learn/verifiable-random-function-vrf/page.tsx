@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Verifiable Random Function (VRF) Explained | Chainlink, API3, Pyth | degen0x',
-  description: 'Master VRF: Chainlink VRF v2.5 ($50M+ fees), API3 QRNG, Pyth Entropy. Gaming randomness, loot boxes, PvP matching, NFT traits. On-chain randomness solutions explained.',
+  title: "Verifiable Random Function (VRF) Explained | Chainlink,",
+  description: "Master VRF: Chainlink VRF v2.5 ($50M+ fees), API3 QRNG, Pyth Entropy. Gaming randomness, loot boxes, PvP matching, NFT traits. On-chain randomness solutions",
   keywords: ['VRF', 'Verifiable Random Function', 'Chainlink VRF', 'API3 QRNG', 'Pyth Entropy', 'on-chain randomness', 'gaming NFT'],
   openGraph: {
     title: 'Verifiable Random Function (VRF)',

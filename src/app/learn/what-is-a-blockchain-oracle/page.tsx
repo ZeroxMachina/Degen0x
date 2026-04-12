@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Blockchain Oracles Explained: Chainlink, Pyth, Band & Cross-Chain Data | degen0x',
-  description: 'Deep dive into blockchain oracles in 2026. Compare Chainlink ($15B+ TVL), Pyth, Band Protocol, API3, UMA, and Chronicle. Learn oracle attacks, TWAP, and decentralized networks.',
+  title: "Blockchain Oracles Explained: Chainlink, Pyth, Band &",
+  description: "Deep dive into blockchain oracles in 2026. Compare Chainlink ($15B+ TVL), Pyth, Band Protocol, API3, UMA, and Chronicle. Learn oracle attacks, TWAP, and",
   keywords: ['blockchain oracle', 'Chainlink', 'Pyth Network', 'Band Protocol', 'API3', 'Chronicle', 'oracle manipulation', 'TWAP', 'price feeds', 'data oracle'],
   openGraph: {
     type: 'article',
     title: 'Blockchain Oracles Explained: Chainlink, Pyth, Band & Cross-Chain Data',
-    description: 'Deep dive into blockchain oracles in 2026. Compare Chainlink ($15B+ TVL), Pyth, Band Protocol, API3, UMA, and Chronicle. Learn oracle attacks, TWAP, and decentralized networks.',
+    description: "Deep dive into blockchain oracles in 2026. Compare Chainlink ($15B+ TVL), Pyth, Band Protocol, API3, UMA, and Chronicle. Learn oracle attacks, TWAP, and",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/learn/what-is-a-blockchain-oracle',

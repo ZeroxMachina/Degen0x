@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Cosmos Ecosystem Map 2026: Osmosis, Injective, Stride, Neutron, Noble | degen0x",
-  description: "Complete Cosmos IBC hub ecosystem guide. Osmosis DEX ($500M+ TVL), Injective derivatives, Stride liquid staking, Neutron smart contracts, Noble USDC. Appchain thesis.",
+  title: "Cosmos Ecosystem Map 2026: Osmosis, Injective, Stride,",
+  description: "Complete Cosmos IBC hub ecosystem guide. Osmosis DEX ($500M+ TVL), Injective derivatives, Stride liquid staking, Neutron smart contracts, Noble USDC. Appchain",
   keywords: ["cosmos ecosystem", "osmosis", "injective", "stride", "neutron", "noble", "ibc", "atom", "appchain", "liquid staking"],
   openGraph: { type: "article", title: "Cosmos Ecosystem Map 2026", description: "Complete Cosmos IBC ecosystem guide.", publishedTime: "2026-04-10T00:00:00Z", modifiedTime: "2026-04-10T00:00:00Z", url: "https://degen0x.com/ecosystem/cosmos-ecosystem-map", images: [{ url: "https://degen0x.com/og-ecosystem.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image", title: "Cosmos Ecosystem Map 2026", description: "Complete Cosmos IBC ecosystem guide." },

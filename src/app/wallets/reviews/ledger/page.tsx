@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = walletProducts.find((p) => p.slug === "ledger")!;
 export const metadata: Metadata = {
   title: `Ledger Nano X Review (${CURRENT_YEAR}) - Fees, Security & Features | ${SITE_NAME}`,
   description: `In-depth Ledger Nano X review for ${CURRENT_YEAR}. We tested Ledger's Bluetooth hardware wallet covering security, supported coins, Ledger Live app, fees, and ease of use.`,
-};
+  alternates: { canonical: "/wallets/reviews/ledger" }};
 
 const overview =
   "Ledger is the world's most popular hardware wallet brand, trusted by millions of users to secure their cryptocurrency offline. The Ledger Nano X, the company's flagship device, combines a certified Secure Element chip (CC EAL5+) with Bluetooth connectivity so you can manage your portfolio on the go via the Ledger Live mobile app. With support for over 5,500 cryptocurrencies, built-in staking, DeFi access, and NFT management, the Ledger ecosystem covers virtually every use case a crypto investor might need. The device itself is compact, battery-powered, and features a small OLED screen for verifying transactions directly on the hardware.";

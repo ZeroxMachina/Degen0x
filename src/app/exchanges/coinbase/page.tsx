@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,9 +8,8 @@ const product = exchanges.find((e) => e.slug === "coinbase")!;
 
 export const metadata: Metadata = {
   title: "Coinbase Review 2026: Fees, Security, Pros & Cons",
-  description:
-    "Comprehensive Coinbase review covering its beginner-friendly interface, regulatory compliance, insurance coverage, fees, and security. Is Coinbase right for you? Updated March 2026.",
-};
+  description: "Comprehensive Coinbase review covering its beginner-friendly interface, regulatory compliance, insurance coverage, fees, and security. Is Coinbase right for",
+  alternates: { canonical: "/exchanges/coinbase" }};
 
 export default function CoinbaseReview() {
   return (

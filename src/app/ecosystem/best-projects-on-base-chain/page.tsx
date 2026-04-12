@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Projects on Base Chain 2026: Aerodrome, Morpho, Farcaster | degen0x',
-  description: 'Top Base projects: Aerodrome (DEX), Friend.tech/Farcaster (social), Morpho (lending), Extra Finance, Moonwell, BaseSwap. Base TVL, Coinbase integration, ve(3,3) governance.',
+  title: "Best Projects on Base Chain 2026: Aerodrome, Morpho,",
+  description: "Top Base projects: Aerodrome (DEX), Friend.tech/Farcaster (social), Morpho (lending), Extra Finance, Moonwell, BaseSwap. Base TVL, Coinbase integration,",
   keywords: ['best projects on base chain', 'Aerodrome DEX', 'Morpho lending', 'Farcaster Base', 'Friend.tech', 'Base layer 2', 'Coinbase L2', 've(3,3)', 'Base TVL'],
   openGraph: {
     type: 'article',
     title: 'Best Projects on Base Chain 2026: Aerodrome, Morpho, Farcaster',
-    description: 'Top Base projects: Aerodrome (DEX), Friend.tech/Farcaster (social), Morpho (lending), Extra Finance, Moonwell, BaseSwap. Base TVL, Coinbase integration, ve(3,3) governance.',
+    description: "Top Base projects: Aerodrome (DEX), Friend.tech/Farcaster (social), Morpho (lending), Extra Finance, Moonwell, BaseSwap. Base TVL, Coinbase integration,",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/ecosystem/best-projects-on-base-chain',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Best Projects on Base Chain 2026: Aerodrome, Morpho, Farcaster',
-    description: 'Top Base projects: Aerodrome (DEX), Friend.tech/Farcaster (social), Morpho (lending), Extra Finance, Moonwell, BaseSwap. Base TVL, Coinbase integration, ve(3,3) governance.',
+    description: "Top Base projects: Aerodrome (DEX), Friend.tech/Farcaster (social), Morpho (lending), Extra Finance, Moonwell, BaseSwap. Base TVL, Coinbase integration,",
     image: 'https://degen0x.com/og-best-projects-on-base-chain.svg',
   },
   alternates: { canonical: 'https://degen0x.com/ecosystem/best-projects-on-base-chain' },
@@ -34,7 +34,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Best Projects on Base Chain 2026: Aerodrome, Morpho, Farcaster',
-  description: 'Top Base projects: Aerodrome (DEX), Friend.tech/Farcaster (social), Morpho (lending), Extra Finance, Moonwell, BaseSwap. Base TVL, Coinbase integration, ve(3,3) governance.',
+  description: "Top Base projects: Aerodrome (DEX), Friend.tech/Farcaster (social), Morpho (lending), Extra Finance, Moonwell, BaseSwap. Base TVL, Coinbase integration,",
   image: 'https://degen0x.com/og-best-projects-on-base-chain.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

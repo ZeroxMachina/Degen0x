@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "morpho")!;
 export const metadata: Metadata = {
   title: `Morpho Review (${CURRENT_YEAR}): P2P Rate Optimization | degen0x`,
   description: "In-depth Morpho review covering P2P matching, Morpho Blue permissionless markets, rate improvements, security model, and token economics.",
-};
+  alternates: { canonical: "/defi-lending/reviews/morpho" }};
 
 export default function MorphoReview() {
   return (

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Nexus Mutual",
   slug: "nexus-mutual",
   rating: 4.2,
-  description: "Nexus Mutual is the largest and most established decentralized insurance protocol, offering smart contract cover for 100+ DeFi protocols with the deepest capital pool and most proven claim payout history.",
+  description: "Nexus Mutual is the largest and most established decentralized insurance protocol, offering smart contract cover for 100+ DeFi protocols with the deepest",
   pros: ["Largest DeFi insurance capital pool", "100+ protocols covered", "Proven claim payout history with millions paid", "Transparent on-chain governance", "Staking rewards for capital providers"],
   cons: ["KYC required for membership", "Premiums can be expensive during high demand", "Claims decided by subjective community vote", "NXM token mechanics are complex", "Primarily Ethereum-focused"],
   fees: "2-6% annually",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Nexus Mutual Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Nexus Mutual review covering smart contract cover, claim process, NXM staking, pricing, and how it compares to other DeFi insurance protocols.",
-};
+  alternates: { canonical: "/insurance/reviews/nexus-mutual" }};
 
 export default function NexusMutualReviewPage() {
   return (

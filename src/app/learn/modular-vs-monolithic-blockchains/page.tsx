@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Modular vs Monolithic Blockchains 2026: Celestia, EigenDA, Ethereum, Solana | degen0x',
-  description: 'Complete guide to modular blockchain architecture. Compare execution layers (rollups), data availability (Celestia $1B+ FDV, EigenDA), Ethereum, Solana. Learn sovereign rollups and modular stacks.',
+  title: "Modular vs Monolithic Blockchains 2026: Celestia, EigenDA,",
+  description: "Complete guide to modular blockchain architecture. Compare execution layers (rollups), data availability (Celestia $1B+ FDV, EigenDA), Ethereum, Solana. Learn",
   keywords: ['modular blockchain', 'Celestia', 'EigenDA', 'Avail', 'execution layer', 'data availability', 'rollups', 'Solana', 'monolithic', 'sovereign rollups'],
   openGraph: {
     type: 'article',

@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Hold Card Review (${CURRENT_YEAR}): Features, Fees & Pros/Cons | degen0x`,
   description: "In-depth Hold Card review covering crypto spending features, cashback rewards, supported currencies, and whether this card suits everyday crypto users.",
-};
+  alternates: { canonical: "/crypto-cards/reviews/hold-card" }};
 
 export default function HoldCardReviewPage() {
   return (

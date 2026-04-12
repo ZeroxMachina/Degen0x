@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -6,7 +7,8 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Aave vs Compound (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Aave vs Compound DeFi lending comparison for ${CURRENT_YEAR}. Interest rates, supported assets, multi-chain presence, governance, and token investment thesis compared.` };
+export const metadata: Metadata = { title: `Aave vs Compound (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Aave vs Compound DeFi lending comparison for ${CURRENT_YEAR}. Interest rates, supported assets, multi-chain presence, governance, and token investment thesis compared.` ,
+  alternates: { canonical: "/investing/compare/aave-vs-compound" }};
 
 const items = [
   { name: "Aave (AAVE)", slug: "aave", rating: 4.7, affiliateUrl: "#", features: { "Protocol Type": "Decentralized lending & borrowing", "TVL": "Largest lending protocol", "Chains Deployed": "Ethereum, Arbitrum, Polygon, Optimism, Avalanche, Base +", "Supported Assets": "200+ across all deployments", "Flash Loans": "Yes (pioneered the concept)", "Interest Rate Model": "Variable + stable rates", "Safety Module": "AAVE staking for protocol insurance", "GHO Stablecoin": "Yes (native overcollateralized stablecoin)", "Governance": "AAVE token voting", "Revenue": "Protocol fees from interest spread" } },
@@ -22,7 +24,14 @@ const faqs = [
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Aave vs Compound" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Aave vs Compound" }]} />
       <AffiliateDisclosure />
       <header className="mb-8"><h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Aave vs Compound ({CURRENT_YEAR})</h1><p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p></header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">The two most established DeFi lending protocols have shaped decentralized finance since its inception. Aave pioneered flash loans and expanded aggressively across multiple chains, while Compound created the lending market model that became the blueprint for the entire DeFi lending sector. This comparison evaluates both protocols and their governance tokens from an investment and usage perspective.</p>
@@ -43,6 +52,57 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/uniswap-vs-pancakeswap" className="text-blue-600 hover:underline">Uniswap vs PancakeSwap</Link></li><li><Link href="/investing/learn/yield-farming-vs-staking" className="text-blue-600 hover:underline">Yield Farming vs Staking</Link></li></ul></section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/aave Vs Compound", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/aave-vs-compound"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

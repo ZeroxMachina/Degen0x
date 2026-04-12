@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "Orca DEX",
   slug: "orca",
   rating: 3.8,
-  description:
-    "Orca is a Solana DEX known for its clean UX, concentrated liquidity Whirlpools, and fair-launch token platform. Prioritizes simplicity and capital efficiency for LPs.",
+  description: "Orca is a Solana DEX known for its clean UX, concentrated liquidity Whirlpools, and fair-launch token platform. Prioritizes simplicity and capital efficiency",
   pros: [
     "Cleanest and most user-friendly interface among Solana DEXs",
     "Whirlpool concentrated liquidity pools for capital-efficient LP positions",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Orca DEX Review (${CURRENT_YEAR}) - Solana's User-Friendly DEX | ${SITE_NAME}`,
   description: `Complete Orca review for ${CURRENT_YEAR}. Covers Whirlpool concentrated liquidity, swap UX, fees, liquidity provision, and comparison with Raydium.`,
-};
+  alternates: { canonical: "/exchanges/reviews/orca" }};
 
 const overview =
   "Orca is a decentralized exchange on the Solana blockchain that has earned a reputation for having the most user-friendly interface in Solana DeFi. Launched in 2021, Orca takes a design-first approach to decentralized trading, making swaps and liquidity provision accessible to users who might find other DeFi protocols intimidating. The protocol's Whirlpool concentrated liquidity pools are its flagship product, enabling capital-efficient liquidity provision.\n\nOrca consistently ranks among the top DEXs on Solana by volume, with much of its volume coming through Jupiter's aggregation. The protocol has been recognized for its fair-launch approach, transparent governance, and commitment to building a sustainable DeFi protocol without excessive token emissions. The ORCA governance token powers community decision-making and fee distribution.\n\nWhile Raydium may capture more new token launches and overall volume, Orca has established itself as the preferred platform for serious liquidity providers who want concentrated liquidity tools and for users who value a clean, intuitive swapping experience. Orca's Whirlpools SDK has also been adopted by other Solana projects for their liquidity needs.";

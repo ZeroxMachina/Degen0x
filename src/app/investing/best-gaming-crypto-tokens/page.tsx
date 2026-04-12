@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Gaming Crypto Tokens 2026: IMX, GALA, RON, BEAM, UOS | degen0x',
-  description: 'Complete guide to gaming crypto tokens. Compare Immutable X (IMX), Gala Games (GALA), Ronin (RON), Beam (BEAM), Ultra (UOS), Xai (XAI). Coverage of 50+ live games, play-and-earn vs. play-to-earn, and AAA blockchain gaming.',
+  title: "Best Gaming Crypto Tokens 2026: IMX, GALA, RON, BEAM, UOS",
+  description: "Complete guide to gaming crypto tokens. Compare Immutable X (IMX), Gala Games (GALA), Ronin (RON), Beam (BEAM), Ultra (UOS), Xai (XAI). Coverage of 50+ live",
   keywords: ['gaming crypto', 'Immutable X IMX', 'Gala Games GALA', 'Ronin RON', 'Axie Infinity', 'GameFi tokens', 'play-to-earn', 'blockchain gaming', 'gaming NFTs', 'Beam gaming'],
   openGraph: {
     type: 'article',
-    title: 'Best Gaming Crypto Tokens 2026: IMX, GALA, RON, BEAM, UOS | degen0x',
+    title: "Best Gaming Crypto Tokens 2026: IMX, GALA, RON, BEAM, UOS",
     description: 'Complete guide to gaming tokens with 50+ live games, market caps, and play-to-earn vs play-and-earn comparison.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
@@ -532,6 +532,56 @@ export default function BestGamingCryptoTokens2026() {
             Crypto markets are volatile — diversify and only invest what you can afford to lose. See our <a href="/methodology" style={{ color: '#10b981' }}>research methodology</a>.
           </p>
         </div>
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

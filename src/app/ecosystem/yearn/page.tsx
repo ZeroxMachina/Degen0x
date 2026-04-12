@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import YearnClient from "./YearnClient";
 
 export const metadata: Metadata = {
-  title: "Yearn Finance: Automated Yield Optimizer Guide 2026 — $500M TVL | degen0x",
-  description:
-    "Complete guide to Yearn Finance — the original DeFi yield optimizer with $500M+ TVL, 200+ active vaults, and V3 modular architecture. How vaults work, YFI token, risks, and how to start earning yield.",
+  title: "Yearn Finance: Automated Yield Optimizer Guide 2026 — $500M",
+  description: "Complete guide to Yearn Finance — the original DeFi yield optimizer with $500M+ TVL, 200+ active vaults, and V3 modular architecture. How vaults work, YFI",
   keywords: [
     "yearn finance",
     "yearn finance guide",
@@ -42,7 +43,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=Yearn+Finance:+Yield+Optimizer+Guide+2026&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/yearn" }};
 
 export default function YearnPage() {
   return <YearnClient />;

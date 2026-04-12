@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Fully Homomorphic Encryption (FHE) in Crypto Guide 2026 | degen0x',
-  description:
-    'Master Fully Homomorphic Encryption in 2026: Zama, Fhenix, Inco. Learn how FHE enables confidential smart contracts, encrypted MEV protection, and privacy-preserving DeFi.',
+  title: "Fully Homomorphic Encryption (FHE) in Crypto Guide 2026",
+  description: "Master Fully Homomorphic Encryption in 2026: Zama, Fhenix, Inco. Learn how FHE enables confidential smart contracts, encrypted MEV protection, and",
   keywords: [
     'Fully Homomorphic Encryption',
     'FHE',

@@ -5,13 +5,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'DePIN Guide 2026: Decentralized Physical Infrastructure Networks | degen0x',
-  description: 'Complete guide to DePIN (Decentralized Physical Infrastructure Networks) in 2026. Explore Helium, Filecoin, Render, io.net, and 650+ projects generating $150M monthly revenue.',
+  title: "DePIN Guide 2026: Decentralized Physical Infrastructure",
+  description: "Complete guide to DePIN (Decentralized Physical Infrastructure Networks) in 2026. Explore Helium, Filecoin, Render, io.net, and 650+ projects generating $150M",
   keywords: ['DePIN', 'decentralized physical infrastructure', 'Helium', 'Filecoin', 'Render', 'Geodnet', 'wireless networks', 'GPU compute', 'decentralized storage', '2026'],
   openGraph: {
     type: 'article',
     title: 'DePIN Guide 2026: Decentralized Physical Infrastructure Networks',
-    description: 'Complete guide to DePIN (Decentralized Physical Infrastructure Networks) in 2026. Explore Helium, Filecoin, Render, io.net, and 650+ projects generating $150M monthly revenue.',
+    description: "Complete guide to DePIN (Decentralized Physical Infrastructure Networks) in 2026. Explore Helium, Filecoin, Render, io.net, and 650+ projects generating $150M",
     publishedTime: '2026-04-03T00:00:00Z',
     modifiedTime: '2026-04-03T00:00:00Z',
     url: 'https://degen0x.com/learn/depin-decentralized-physical-infrastructure-guide-2026',

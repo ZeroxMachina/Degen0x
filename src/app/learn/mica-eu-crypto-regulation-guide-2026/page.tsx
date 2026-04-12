@@ -43,7 +43,8 @@ export const metadata: Metadata = {
     images: ['https://degen0x.com/og-mica-eu-crypto-regulation-guide-2026.svg'],
     image: 'https://degen0x.com/og-mica-eu-crypto-regulation-guide-2026.svg',
   },
-};
+
+  alternates: { canonical: "/learn/mica-eu-crypto-regulation-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   headline: 'MiCA EU Crypto Regulation Guide 2026',
@@ -1250,7 +1251,7 @@ export default function MiCAGuide() {
                       userSelect: 'none',
                     }}
                   >
-                    {faq.q}
+                    {faq.question}
                     <span
                       style={{
                         color: '#8b949e',
@@ -1272,7 +1273,7 @@ export default function MiCAGuide() {
                       borderTop: '1px solid #30363d',
                     }}
                   >
-                    {faq.a}
+                    {faq.answer}
                   </p>
                 </details>
               ))}

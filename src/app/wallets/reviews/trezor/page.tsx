@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = walletProducts.find((p) => p.slug === "trezor")!;
 export const metadata: Metadata = {
   title: `Trezor Review (${CURRENT_YEAR}) - Open-Source Hardware Wallet | ${SITE_NAME}`,
   description: `Complete Trezor review for ${CURRENT_YEAR}. Covers the Model T and Safe 3, including open-source security, Shamir Backup, Trezor Suite, and pricing.`,
-};
+  alternates: { canonical: "/wallets/reviews/trezor" }};
 
 const overview =
   "Trezor is the original hardware wallet brand, founded in 2014 by SatoshiLabs. It pioneered the concept of offline private key storage and remains the gold standard for open-source crypto security. The Trezor Model T features a full-color touchscreen and supports 1,800+ cryptocurrencies, while the newer Trezor Safe 3 adds a Secure Element chip at a budget-friendly price point. Both models are fully open-source, meaning anyone can audit the firmware and hardware designs for backdoors or vulnerabilities. Trezor Suite, the companion desktop and web app, provides portfolio management, built-in exchange, and a clean interface for managing your assets.";

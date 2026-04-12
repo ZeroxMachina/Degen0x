@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'How to File Crypto Taxes 2026: Complete US Tax Guide | degen0x',
-  description: 'Crypto tax guide 2026: US IRS rules, short-term vs long-term capital gains, staking/mining/airdrop income, DeFi tax implications, Form 8949, Schedule D, CoinTracker vs Koinly.',
+  title: "How to File Crypto Taxes 2026: Complete US Tax Guide",
+  description: "Crypto tax guide 2026: US IRS rules, short-term vs long-term capital gains, staking/mining/airdrop income, DeFi tax implications, Form 8949, Schedule D,",
   keywords: ['crypto taxes 2026', 'how to file crypto taxes', 'IRS crypto', 'capital gains', 'form 8949', 'cryptocurrency tax'],
   openGraph: { type: 'article', title: 'How to File Crypto Taxes 2026 | degen0x', description: 'Crypto tax guide: US IRS rules, short-term vs long-term gains, staking income, tax software comparison, Form 8949, Schedule D.', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/taxes/how-to-file-crypto-taxes-2026', images: [{ url: 'https://degen0x.com/og-taxes.svg', width: 1200, height: 630, alt: 'Crypto Taxes 2026' }] },
   twitter: { card: 'summary_large_image', title: 'How to File Crypto Taxes 2026 | degen0x', description: 'Crypto tax guide: US IRS rules, short/long-term gains, staking income, tax software, Form 8949, Schedule D.', image: 'https://degen0x.com/og-taxes.svg' },
@@ -104,6 +104,56 @@ export default function CryptoTaxesFiling() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

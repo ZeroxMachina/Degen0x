@@ -1,9 +1,10 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Governance Markets & Liquid Lockers (Convex, Aura, Vote Markets) Guide 2026',
+  title: "Governance Markets & Liquid Lockers (Convex, Aura, Vote",
   description:
     'Master governance markets, liquid lockers, Convex, Aura, and vote markets in DeFi. Learn how veTokenomics, Convex\'s cvxCRV, Aura, bribes, and liquidity wars shape modern governance.',
   keywords: [
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     'DeFi governance',
   ],
   openGraph: {
-    title: 'Governance Markets & Liquid Lockers (Convex, Aura, Vote Markets) Guide 2026',
+    title: "Governance Markets & Liquid Lockers (Convex, Aura, Vote",
     description:
       'Master governance markets, liquid lockers, Convex, Aura, and vote markets in DeFi. Learn how veTokenomics, Convex\'s cvxCRV, Aura, bribes, and liquidity wars shape modern governance.',
     url: 'https://degen0x.com/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026',
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Governance Markets & Liquid Lockers (Convex, Aura, Vote Markets) Guide 2026',
+    title: "Governance Markets & Liquid Lockers (Convex, Aura, Vote",
     description:
       'Master governance markets, liquid lockers, Convex, Aura, and vote markets in DeFi. Learn how veTokenomics, Convex\'s cvxCRV, Aura, bribes, and liquidity wars shape modern governance.',
     images: ['https://degen0x.com/og/governance-markets-liquid-lockers.png'],
@@ -136,7 +137,14 @@ export default function GovernanceMarketsPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b" style={{ backgroundColor: '#0d1117' }}>
-      {/* Hero Section */}
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      {/* Hero Section */}
       <section className="relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-4xl">
           {/* Category Badge */}
@@ -729,6 +737,56 @@ export default function GovernanceMarketsPage() {
           </p>
         </section>
       </section>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

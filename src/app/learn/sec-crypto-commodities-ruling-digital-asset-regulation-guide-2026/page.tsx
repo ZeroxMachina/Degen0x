@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'SEC/CFTC Crypto Commodities Ruling March 2026 — Digital Asset Classification Guide | degen0x',
-  description: 'Complete guide to the March 17, 2026 SEC/CFTC joint ruling classifying 16 digital commodities including ETH, SOL, XRP, and more. Learn how the 68-page interpretive release changed crypto regulation, unlocked ETF approvals, and clarified staking rewards.',
+  title: "SEC/CFTC Crypto Commodities Ruling March 2026 — Digital",
+  description: "Complete guide to the March 17, 2026 SEC/CFTC joint ruling classifying 16 digital commodities including ETH, SOL, XRP, and more. Learn how the 68-page",
   keywords: [
     'SEC CFTC ruling',
     'digital commodity',
@@ -1056,6 +1056,56 @@ export default function SECCFTCRulingGuide() {
           </p>
         </div>
       </footer>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

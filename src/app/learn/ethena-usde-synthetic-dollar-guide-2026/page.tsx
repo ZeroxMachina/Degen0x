@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Ethena USDe Guide 2026 — Synthetic Dollar, sUSDe Yield & Delta-Neutral Strategy | degen0x',
+  title: "Ethena USDe Guide 2026 — Synthetic Dollar, sUSDe Yield &",
   description: 'Complete guide to Ethena\'s USDe synthetic dollar in 2026. Learn how delta-neutral hedging works, sUSDe yield mechanics, the Converge network, risks, and how USDe became the #3 stablecoin.',
   keywords: ['Ethena', 'USDe', 'sUSDe', 'synthetic dollar', 'delta-neutral', 'funding rate yield', 'Ethena stablecoin', 'ENA token', 'Converge network', 'DeFi stablecoin 2026'],
   openGraph: {

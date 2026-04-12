@@ -8,8 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "TEE & Verifiable Compute Guide 2026 — Trusted Execution Environments in Crypto | degen0x",
-  description: "Learn how Trusted Execution Environments (TEEs) enable private smart contracts, MEV protection, and confidential AI in crypto. Covers Flashbots, Phala, Oasis, Secret Network.",
+  title: "TEE & Verifiable Compute Guide 2026 — Trusted Execution",
+  description: "Learn how Trusted Execution Environments (TEEs) enable private smart contracts, MEV protection, and confidential AI in crypto. Covers Flashbots, Phala, Oasis,",
   keywords: [
     "TEE crypto",
     "trusted execution environment blockchain",
@@ -40,7 +40,8 @@ export const metadata: Metadata = {
     description: "How TEEs enable private smart contracts, MEV protection & confidential AI in crypto.",
     images: ["https://degen0x.com/og-tee-verifiable-compute-guide.svg"],
   },
-};
+
+  alternates: { canonical: "/learn/tee-verifiable-compute-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "TEE & Verifiable Compute Guide 2026",

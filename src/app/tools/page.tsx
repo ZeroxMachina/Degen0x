@@ -1,11 +1,12 @@
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "104+ Free Crypto Tools — Bridge Aggregator v2, Watchlist Sync, MEV Protection & More | degen0x",
-  description: "Free crypto tools including multi-chain bridge aggregator v2 with route optimization, watchlist sync with localStorage, MEV protection dashboard, token unlock calendar, DAO treasury dashboard, liquidity pool explorer, AI trading strategy builder, advanced charting (TradingView-style), crypto tax optimizer with loss harvesting, portfolio analytics, crypto alerts dashboard, crypto watchlist, social metrics aggregator, portfolio rebalancer, NFT portfolio tracker, DeFi position manager, airdrop tracker, yield farming calculator, market heatmap, BTC dominance tracker, volatility scanner, liquidation heatmap, funding rate tracker, fear & greed timeline, bridge aggregator, exchange fee comparison, portfolio widget, on-chain analytics, and more.",
-};
+  title: "104+ Free Crypto Tools — Bridge Aggregator v2, Watchlist",
+  description: "Free crypto tools including multi-chain bridge aggregator v2 with route optimization, watchlist sync with localStorage, MEV protection dashboard, token unlock",
+  alternates: { canonical: "/tools" }};
 
 const TOOLS = [
   {
@@ -576,7 +577,14 @@ const COMING_SOON = [
 export default function ToolsPage() {
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-bg)" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 16px 80px" }}>
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="tools"
+      />      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 16px 80px" }}>
         <Breadcrumb items={[{ label: "Tools", href: "/tools" }]} />
 
         {/* Header */}
@@ -662,6 +670,56 @@ export default function ToolsPage() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Tools
+          </Link>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Learning Guides
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Tools
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

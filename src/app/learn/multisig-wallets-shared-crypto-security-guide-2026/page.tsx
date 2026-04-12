@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Multisig Wallets & Shared Crypto Security Guide 2026 | degen0x',
+  title: "Multisig Wallets & Shared Crypto Security Guide 2026",
   description: 'Complete guide to multisig wallets, threshold signatures, and shared security solutions for crypto. Learn how to secure assets with multiple signers in 2026.',
   keywords: ['multisig wallets', 'threshold signatures', 'crypto security', 'shared custody', 'Safe wallet', 'Gnosis Safe', 'account abstraction', 'crypto security best practices'],
   openGraph: {

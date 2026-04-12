@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Liquidations in DeFi & Leverage Trading Guide 2026 | degen0x',
-  description:
-    'Master crypto liquidations: understand DeFi liquidation mechanics (Aave, Compound), perpetual exchanges (Hyperliquid, dYdX), health factor, cascading liquidations, liquidators, and how to avoid liquidation.',
+  title: "Crypto Liquidations in DeFi & Leverage Trading Guide 2026",
+  description: "Master crypto liquidations: understand DeFi liquidation mechanics (Aave, Compound), perpetual exchanges (Hyperliquid, dYdX), health factor, cascading",
   keywords: [
     'crypto liquidation',
     'DeFi liquidation',

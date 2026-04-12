@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto Swing Trading Strategy 2026: 4H/Daily Setup Guide',
-  description: 'Master crypto swing trading with 4H and daily chart setups. Learn support/resistance, moving average trends, breakout patterns, and position sizing with real BTC/ETH examples.',
+  description: "Master crypto swing trading with 4H and daily chart setups. Learn support/resistance, moving average trends, breakout patterns, and position sizing with real",
   keywords: ['swing trading crypto', 'crypto trading strategy', 'BTC swing trading', 'ETH trading', 'support resistance', 'trend following', 'breakout strategy', 'moving average trading', 'crypto trading signals'],
   openGraph: {
     type: 'article',

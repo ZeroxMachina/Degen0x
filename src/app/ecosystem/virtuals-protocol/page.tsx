@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import VirtualsProtocolClient from "./VirtualsProtocolClient";
 
 export const metadata: Metadata = {
   title: "Virtuals Protocol: AI Agent Launchpad Guide 2026 | degen0x",
-  description:
-    "Complete guide to Virtuals Protocol — the leading AI agent launchpad on Base. Learn how to create, trade, and earn from tokenized AI agents with 17,700+ agents and $8B+ DEX volume.",
+  description: "Complete guide to Virtuals Protocol — the leading AI agent launchpad on Base. Learn how to create, trade, and earn from tokenized AI agents with 17,700+ agents",
   keywords: [
     "virtuals protocol",
     "virtuals protocol guide",
@@ -43,7 +44,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=Virtuals+Protocol:+AI+Agent+Launchpad&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/virtuals-protocol" }};
 
 export default function VirtualsProtocolPage() {
   return <VirtualsProtocolClient />;

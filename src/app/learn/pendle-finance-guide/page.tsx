@@ -17,8 +17,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // Description: 155 chars — specific, keyword-rich, compelling CTA
 export const metadata: Metadata = {
   title: "Pendle Finance Guide 2026: Yield Tokenization | degen0x",
-  description:
-    "Master Pendle Finance: how yield tokenization splits assets into PT and YT tokens, lock in fixed DeFi yields, and use Boros for funding rate trading. Updated March 2026.",
+  description: "Master Pendle Finance: how yield tokenization splits assets into PT and YT tokens, lock in fixed DeFi yields, and use Boros for funding rate trading. Updated",
   keywords: [
     "pendle finance",
     "yield tokenization",

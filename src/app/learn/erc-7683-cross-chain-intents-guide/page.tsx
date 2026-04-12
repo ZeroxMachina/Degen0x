@@ -9,12 +9,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'ERC-7683 Guide 2026: The Cross-Chain Intents Standard Explained',
-  description: 'Complete guide to ERC-7683 cross-chain intents standard co-authored by Uniswap Labs and Across Protocol. Learn how cross-chain intents work, the filler network, and why it matters for DeFi.',
+  title: "ERC-7683 Guide 2026: The Cross-Chain Intents Standard",
+  description: "Complete guide to ERC-7683 cross-chain intents standard co-authored by Uniswap Labs and Across Protocol. Learn how cross-chain intents work, the filler",
   keywords: ['ERC-7683', 'ERC-7683 guide', 'cross-chain intents', 'cross-chain intents standard', 'UniswapX cross-chain', 'Across Protocol ERC-7683', 'filler network crypto', 'intent-based cross-chain', 'Ethereum interoperability standard', 'cross-chain swaps 2026'],
   openGraph: {
     type: 'article',
-    title: 'ERC-7683 Guide 2026: The Cross-Chain Intents Standard Explained',
+    title: "ERC-7683 Guide 2026: The Cross-Chain Intents Standard",
     description: 'Complete guide to ERC-7683 cross-chain intents standard. Learn how fillers compete to fulfill user intents and why this creates better prices and faster settlement.',
     url: `${SITE_URL}/learn/erc-7683-cross-chain-intents-guide`,
     publishedTime: '2026-03-24T00:00:00Z',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ERC-7683 Guide 2026: The Cross-Chain Intents Standard Explained',
+    title: "ERC-7683 Guide 2026: The Cross-Chain Intents Standard",
     description: 'Complete guide to ERC-7683 cross-chain intents standard. Learn how it replaces fragmented bridges with a unified framework.',
     images: [`${SITE_URL}/api/og?title=ERC-7683+Guide+2026:+Cross-Chain+Intents+Standard&category=Learn&type=learn`],
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: 'ERC-7683 Guide 2026: The Cross-Chain Intents Standard Explained',
+  title: "ERC-7683 Guide 2026: The Cross-Chain Intents Standard",
   description: 'Complete guide to ERC-7683 cross-chain intents standard co-authored by Uniswap Labs and Across Protocol.',
   url: `${SITE_URL}/learn/erc-7683-cross-chain-intents-guide`,
   datePublished: '2026-03-24T00:00:00Z',
@@ -893,10 +893,10 @@ export default function ERC7683GuidePage() {
                 }}
               >
                 <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '12px', color: '#79c0ff', marginTop: 0 }}>
-                  Q: {faq.q}
+                  Q: {faq.question}
                 </h3>
                 <p style={{ fontSize: '14px', lineHeight: '1.6', margin: 0, color: '#e6edf3' }}>
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}

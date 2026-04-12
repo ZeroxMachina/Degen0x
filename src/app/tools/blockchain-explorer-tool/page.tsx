@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Blockchain Explorers 2026: Etherscan, Solscan, Blockchair, Arbiscan | degen0x',
-  description: 'Complete guide to blockchain explorers: Etherscan, Solscan, Blockchair, Arbiscan. Read transactions, verify contracts, APIs. Comparison table with features and chain coverage.',
+  title: "Best Blockchain Explorers 2026: Etherscan, Solscan,",
+  description: "Complete guide to blockchain explorers: Etherscan, Solscan, Blockchair, Arbiscan. Read transactions, verify contracts, APIs. Comparison table with features and",
   keywords: ['blockchain explorer', 'etherscan', 'solscan', 'transaction explorer', 'smart contract verification'],
   alternates: { canonical: 'https://degen0x.com/tools/blockchain-explorer-tool' },
   openGraph: {

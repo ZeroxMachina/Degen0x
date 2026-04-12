@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "SEC-CFTC MOU Explained: Crypto Regulation Landmark 2026 | degen0x",
-  description:
-    "The SEC and CFTC signed a historic MOU on March 11, 2026, ending the crypto regulatory turf war. Learn what it means for Bitcoin, Ethereum, DeFi, stablecoins, and your portfolio.",
+  title: "SEC-CFTC MOU Explained: Crypto Regulation Landmark 2026",
+  description: "The SEC and CFTC signed a historic MOU on March 11, 2026, ending the crypto regulatory turf war. Learn what it means for Bitcoin, Ethereum, DeFi, stablecoins,",
   keywords: [
     "SEC CFTC MOU",
     "SEC CFTC crypto regulation 2026",

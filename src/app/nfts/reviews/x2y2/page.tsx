@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import { Product } from "@/lib/types";
@@ -7,8 +9,7 @@ const product: Product = {
   name: "X2Y2",
   slug: "x2y2",
   rating: 3.5,
-  description:
-    "X2Y2 is an Ethereum NFT marketplace focused on ultra-low fees and decentralized governance. It offers bulk trading tools, NFT lending, and competitive 0.5% marketplace fees for cost-conscious traders.",
+  description: "X2Y2 is an Ethereum NFT marketplace focused on ultra-low fees and decentralized governance. It offers bulk trading tools, NFT lending, and competitive 0.5%",
   pros: [
     "Ultra-low 0.5% marketplace fee",
     "NFT lending feature for instant liquidity",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   title: `X2Y2 Review: Low-Fee Ethereum NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth X2Y2 review covering its ultra-low 0.5% fees, NFT lending, token rewards, bulk trading tools, and whether it's the right marketplace for cost-conscious traders.",
-};
+  alternates: { canonical: "/nfts/reviews/x2y2" }};
 
 export default function X2Y2ReviewPage() {
   return (

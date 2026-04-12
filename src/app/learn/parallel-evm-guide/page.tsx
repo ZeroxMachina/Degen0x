@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
@@ -6,8 +7,8 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: 'Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are Scaling Ethereum',
-  description: 'Deep dive into parallel EVM blockchains. Learn how Monad, Sei, and MegaETH execute transactions concurrently to achieve 10K-100K+ TPS while maintaining EVM compatibility.',
+  title: "Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are",
+  description: "Deep dive into parallel EVM blockchains. Learn how Monad, Sei, and MegaETH execute transactions concurrently to achieve 10K-100K+ TPS while maintaining EVM",
   keywords: [
     'Parallel EVM',
     'Monad',
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     'Web3'
   ],
   openGraph: {
-    title: 'Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are Scaling Ethereum',
+    title: "Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are",
     description: 'Explore how parallel execution enables 10K-100K+ TPS on EVM blockchains while maintaining compatibility.',
     type: 'article',
     publishedTime: '2026-03-16T00:00:00Z',
@@ -42,11 +43,12 @@ export const metadata: Metadata = {
     title: 'Parallel EVM Guide 2026',
     description: 'How Monad, Sei & MegaETH Are Scaling Ethereum with Parallel Execution',
   },
-};
+
+  alternates: { canonical: "/learn/parallel-evm-guide" }};
 
 const articleSchema = generateArticleSchema({
-  title: "Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are Scaling Ethereum",
-  description: "Deep dive into parallel EVM blockchains. Learn how Monad, Sei, and MegaETH execute transactions concurrently to achieve 10K-100K+ TPS while maintaining EVM compatibility.",
+  title: "Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are",
+  description: "Deep dive into parallel EVM blockchains. Learn how Monad, Sei, and MegaETH execute transactions concurrently to achieve 10K-100K+ TPS while maintaining EVM",
   url: "https://degen0x.com/learn/parallel-evm-guide",
   datePublished: "2026-03-16T00:00:00Z",
   dateModified: "2026-03-16T00:00:00Z",
@@ -90,7 +92,14 @@ export default function ParallelEVMGuidePage() {
       background: 'var(--color-bg)',
       color: 'var(--color-text)'
     }}>
-      <StructuredData data={combinedSchema} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <StructuredData data={combinedSchema} />
 
       <article style={{
         maxWidth: '820px',

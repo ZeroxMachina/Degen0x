@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Projects on Polygon 2026: QuickSwap, Aave, Uniswap, Balancer | degen0x',
-  description: 'Top Polygon projects 2026. Compare QuickSwap ($1.8B TVL), Aave V3 ($3.5B), Uniswap V3, Balancer, Beefy Finance, Gains Network. Polygon 2.0 transition, AggLayer, POL token migration.',
+  title: "Best Projects on Polygon 2026: QuickSwap, Aave, Uniswap,",
+  description: "Top Polygon projects 2026. Compare QuickSwap ($1.8B TVL), Aave V3 ($3.5B), Uniswap V3, Balancer, Beefy Finance, Gains Network. Polygon 2.0 transition,",
   keywords: ['Polygon', 'QuickSwap', 'Aave', 'Uniswap', 'Balancer', 'Beefy Finance', 'Gains Network', 'Polygon 2.0', 'zkEVM', 'POL token', 'MATIC migration'],
   openGraph: {
     type: 'article',

@@ -296,8 +296,8 @@ export default function GasTrackerPage() {
               { q: "When are Ethereum gas fees lowest?", a: "Ethereum gas is typically cheapest on weekends and during UTC late-night hours (00:00–06:00). Major market events and NFT mints drive fees up significantly." },
             ].map((faq, i) => (
               <div key={i} style={{ ...cardStyle, padding: "1rem 1.25rem" }}>
-                <p style={{ color: "#e6edf3", fontWeight: "600", fontSize: "0.95rem", margin: "0 0 0.4rem 0" }}>{faq.q}</p>
-                <p style={{ color: "#8b949e", fontSize: "0.875rem", margin: 0, lineHeight: "1.6" }}>{faq.a}</p>
+                <p style={{ color: "#e6edf3", fontWeight: "600", fontSize: "0.95rem", margin: "0 0 0.4rem 0" }}>{faq.question}</p>
+                <p style={{ color: "#8b949e", fontSize: "0.875rem", margin: 0, lineHeight: "1.6" }}>{faq.answer}</p>
               </div>
             ))}
           </div>

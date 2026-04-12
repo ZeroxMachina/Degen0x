@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { nftMarketplaces } from "@/data/nfts";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "OpenSea Review 2026: Fees, Features, Pros & Cons",
   description:
     "Our in-depth OpenSea review covers fees, supported chains, creator tools, pros and cons, and whether it's the right NFT marketplace for you. Updated March 2026.",
-};
+  alternates: { canonical: "/nfts/reviews/opensea" }};
 
 export default function OpenSeaReview() {
   return (

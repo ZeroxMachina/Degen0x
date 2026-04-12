@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Sonic Chain Guide 2026: Fantom\'s DeFi Ecosystem & S Token | degen0x',
-  description:
-    'Complete Sonic Chain guide 2026: Layer 1 blockchain formerly Fantom, 10,000+ TPS, S token tokenomics & FTM migration, FeeM developer incentives, Shadow DEX, Silo Finance, Beets, Flying Tulip. Learn DeFi on Sonic vs Base, Arbitrum, Sui.',
+  description: "Complete Sonic Chain guide 2026: Layer 1 blockchain formerly Fantom, 10,000+ TPS, S token tokenomics & FTM migration, FeeM developer incentives, Shadow DEX,",
   keywords: [
     'Sonic Chain',
     'Fantom',

@@ -1,12 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Purse.io Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
-  description:
-    "In-depth Purse.io review covering Bitcoin-to-Amazon shopping discounts, peer-to-peer marketplace mechanics, fees, and how to save on Amazon purchases with crypto.",
-};
+  description: "In-depth Purse.io review covering Bitcoin-to-Amazon shopping discounts, peer-to-peer marketplace mechanics, fees, and how to save on Amazon purchases with",
+  alternates: { canonical: "/spending/reviews/purse-io" }};
 
 export default function PurseIoReview() {
   return (

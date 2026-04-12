@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DCA vs Lump Sum Investing: Crypto Backtesting & Strategy Comparison | degen0x',
-  description: 'Bitcoin and Ethereum DCA vs lump sum backtests (2015-2025). Compare returns, drawdowns, frequency. Learn value averaging and automated DCA tools (Coinbase, Kraken, Swan).',
+  title: "DCA vs Lump Sum Investing: Crypto Backtesting & Strategy",
+  description: "Bitcoin and Ethereum DCA vs lump sum backtests (2015-2025). Compare returns, drawdowns, frequency. Learn value averaging and automated DCA tools (Coinbase,",
   keywords: ['DCA vs lump sum', 'dollar cost averaging crypto', 'lump sum investing', 'value averaging', 'crypto investing strategy', 'Swan Bitcoin', 'DCA backtesting'],
   openGraph: {
     type: 'article',
@@ -593,6 +593,56 @@ export default function DCAvLumpSumInvesting() {
             Crypto markets are volatile — diversify and only invest what you can afford to lose. See our <a href="/methodology" style={{ color: '#10b981' }}>research methodology</a>.
           </p>
         </div>
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

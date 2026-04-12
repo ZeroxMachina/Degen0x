@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Sturdy Finance Review ${CURRENT_YEAR}: Isolated Lending Vaults`,
   description: "Complete Sturdy Finance review covering isolated lending pairs, yield aggregation, vault strategies, and the protocol's V2 redesign after its exploit.",
-};
+  alternates: { canonical: "/defi-lending/reviews/sturdy" }};
 
 export default function SturdyReview() {
   return (

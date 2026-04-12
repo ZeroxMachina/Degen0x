@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Solana Developer Platform (SDP) Guide 2026 — Enterprise APIs for Stablecoins & RWAs | degen0x",
+  title: "Solana Developer Platform (SDP) Guide 2026 — Enterprise",
   description: "Master the Solana Developer Platform: enterprise APIs for tokenized deposits, stablecoins, RWAs, and payments. Used by Mastercard, Worldpay, and Western Union.",
   keywords: [
     "solana developer platform",
@@ -40,11 +40,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solana Developer Platform (SDP) Guide 2026 — Enterprise APIs for Stablecoins & RWAs | degen0x",
+    title: "Solana Developer Platform (SDP) Guide 2026 — Enterprise",
     description: "Master the Solana Developer Platform: enterprise APIs for tokenized deposits, stablecoins, RWAs, and payments.",
     images: [`${SITE_URL}/og-solana-developer-platform-sdp-guide.png`],
   },
-};
+
+  alternates: { canonical: "/learn/solana-developer-platform-sdp-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "Solana Developer Platform (SDP) Guide 2026 — Enterprise APIs for Stablecoins & RWAs",

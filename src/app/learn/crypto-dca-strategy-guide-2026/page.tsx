@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Crypto DCA Strategy Guide 2026: Dollar-Cost Average Bitcoin & Alts | degen0x",
-  description:
-    "Master dollar-cost averaging for crypto in 2026. Learn optimal DCA frequency, backtested returns (202%+), best platforms, and advanced fear-based strategies. Free DCA calculator included.",
+  title: "Crypto DCA Strategy Guide 2026: Dollar-Cost Average Bitcoin",
+  description: "Master dollar-cost averaging for crypto in 2026. Learn optimal DCA frequency, backtested returns (202%+), best platforms, and advanced fear-based strategies.",
   keywords: [
     "crypto DCA strategy 2026",
     "dollar cost averaging bitcoin",

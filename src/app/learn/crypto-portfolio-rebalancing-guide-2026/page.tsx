@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Portfolio Rebalancing Guide 2026 — Strategies & Tools | degen0x',
-  description:
-    'Master crypto portfolio rebalancing: time-based vs threshold strategies, diversification framework, automated tools, tax implications, and proven 1-3% annual returns.',
+  title: "Crypto Portfolio Rebalancing Guide 2026 — Strategies & Tools",
+  description: "Master crypto portfolio rebalancing: time-based vs threshold strategies, diversification framework, automated tools, tax implications, and proven 1-3% annual",
   keywords: [
     'portfolio rebalancing',
     'crypto diversification',

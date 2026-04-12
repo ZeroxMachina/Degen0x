@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum | degen0x",
-  description: "Complete guide to Eclipse, the first SVM-powered Ethereum L2. Parallelized execution via Solana VM, Celestia DA, RISC Zero proofs. ES token, ecosystem, and 2026 outlook.",
+  description: "Complete guide to Eclipse, the first SVM-powered Ethereum L2. Parallelized execution via Solana VM, Celestia DA, RISC Zero proofs. ES token, ecosystem, and",
   keywords: ["Eclipse", "SVM", "Solana Virtual Machine", "Ethereum L2", "Layer 2", "ES token", "Celestia", "RISC Zero", "modular blockchain", "parallel execution"],
   openGraph: {
     type: "article",
@@ -28,7 +29,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Article", "FAQPage"],
   headline: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum",
-  description: "Complete guide to Eclipse, the first SVM-powered Ethereum L2. Parallelized execution via Solana VM, Celestia DA, RISC Zero proofs. ES token, ecosystem, and 2026 outlook.",
+  description: "Complete guide to Eclipse, the first SVM-powered Ethereum L2. Parallelized execution via Solana VM, Celestia DA, RISC Zero proofs. ES token, ecosystem, and",
   datePublished: "2026-04-04T00:00:00Z",
   dateModified: "2026-04-04T00:00:00Z",
   author: {
@@ -223,7 +224,14 @@ export default function EclipseGuide() {
 
   return (
     <div style={pageStyle}>
-      <div style={containerStyle}>
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <div style={containerStyle}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>
           <a href="/" style={{ color: '#8b949e', textDecoration: 'none' }}>Home</a>
           <span style={{ margin: '0 6px' }}>›</span>

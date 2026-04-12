@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Lido vs EigenLayer ${CURRENT_YEAR}: Staking vs Restaking Compared`,
   description: `Detailed comparison of Lido vs EigenLayer in ${CURRENT_YEAR}. Compare liquid staking, restaking, yields, risk profiles, and how each protocol fits your staking strategy.`,
-};
+  alternates: { canonical: "/defi-lending/compare/lido-vs-eigenlayer" }};
 
 const items: ComparisonItem[] = [
   { name: "Lido", slug: "lido", rating: 4.8, affiliateUrl: "https://degen0x.com/go/lido", features: { "TVL": "$25B+", "Type": "Liquid staking", "Primary Asset": "stETH", "Base Yield": "~3-4% APR", "Additional Yield": "DeFi composability", "Risk Level": "Low-moderate", "Governance Token": "LDO", "Unique Feature": "Largest liquid staking protocol" } },
@@ -28,7 +30,14 @@ const faqs: FAQ[] = [
 export default function LidoVsEigenlayerPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Lido vs EigenLayer", href: "/defi-lending/compare/lido-vs-eigenlayer" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Lido vs EigenLayer", href: "/defi-lending/compare/lido-vs-eigenlayer" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Lido vs EigenLayer: Staking vs Restaking ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -62,6 +71,57 @@ export default function LidoVsEigenlayerPage() {
         <p className="text-[var(--color-text-secondary)]">The optimal stacking strategy depends on your risk tolerance. Conservative: stake on Lido, hold stETH, earn ~3-4% APR. Moderate: deposit stETH into Aave as collateral, borrow stablecoins, lend them for additional yield. Aggressive: deposit stETH into EigenLayer, select high-reward AVSs, and layer on additional DeFi strategies. Each layer adds yield potential but also adds complexity and risk. Start conservative and add layers as you gain experience and understanding.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/lido Vs Eigenlayer", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/lido-vs-eigenlayer"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

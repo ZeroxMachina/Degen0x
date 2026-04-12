@@ -1,4 +1,7 @@
 import ClientContent from './ClientContent';
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import { Metadata } from "next";
 
 export const metadata = {
   title: 'Airdrop Calendar & Tracker | degen0x - Never Miss Free Crypto',
@@ -10,7 +13,8 @@ export const metadata = {
     description: 'Never miss free crypto again. Track and maximize your airdrop eligibility.',
     images: [{ url: 'https://degen0x.com/og-airdrops.png', width: 1200, height: 630, alt: 'Airdrop Calendar and Tracker on degen0x' }],
   },
-};
+
+  alternates: { canonical: "/airdrops" }};
 
 export default function AirdropsPage() {
   return <ClientContent />;

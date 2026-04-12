@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { stakingPlatforms } from "@/data/staking";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "Coinbase Staking Review 2026: Fees, Yields, Pros & Cons",
   description:
     "Our in-depth Coinbase Staking review covers yields, fees, cbETH, supported assets, and whether it's the right staking service for you. Updated March 2026.",
-};
+  alternates: { canonical: "/investing/staking/reviews/coinbase-staking" }};
 
 export default function CoinbaseStakingReview() {
   return (

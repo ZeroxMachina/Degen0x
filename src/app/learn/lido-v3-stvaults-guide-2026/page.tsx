@@ -1132,7 +1132,7 @@ export default function LidoV3stVaultsGuide() {
                     borderRadius: 4,
                   }}
                 >
-                  {faq.q}
+                  {faq.question}
                 </summary>
                 <p
                   style={{
@@ -1142,7 +1142,7 @@ export default function LidoV3stVaultsGuide() {
                     margin: '10px 0 0 0',
                   }}
                 >
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </details>
             ))}

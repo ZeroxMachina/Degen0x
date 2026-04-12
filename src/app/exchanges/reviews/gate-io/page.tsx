@@ -1,14 +1,16 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = exchanges.find((e) => e.slug === "gate-io")!;
 
 export const metadata: Metadata = {
-  title: "Gate.io Review 2026: Startup Launches, Fees & Crypto Investing",
+  title: "Gate.io Review 2026: Startup Launches, Fees & Crypto",
   description:
     "Comprehensive Gate.io review covering startup launches, competitive fees (0.2% maker/taker), copy trading, margin trading, and why it's ideal for discovering new tokens. Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/reviews/gate-io" }};
 
 export default function GateioReview() {
   return (

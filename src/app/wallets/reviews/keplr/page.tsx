@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Keplr Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "Keplr wallet review covering Cosmos ecosystem support, IBC transfers, staking, governance, and inter-chain account management.",
-};
+  alternates: { canonical: "/wallets/reviews/keplr" }};
 
 export default function KeplrReviewPage() {
   return (

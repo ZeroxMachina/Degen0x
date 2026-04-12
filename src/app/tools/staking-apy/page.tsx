@@ -372,13 +372,13 @@ function FAQSection() {
                 alignItems: "center",
               }}
             >
-              <span>{faq.q}</span>
+              <span>{faq.question}</span>
               <span style={{ fontSize: 18, color: "var(--color-text-secondary)" }}>{expanded === i ? "▼" : "▶"}</span>
             </button>
 
             {expanded === i && (
               <div style={{ padding: "0 16px 12px", fontSize: 13, color: "var(--color-text-secondary)", lineHeight: 1.6, borderTop: "1px solid var(--color-border)" }}>
-                {faq.a}
+                {faq.answer}
               </div>
             )}
           </div>

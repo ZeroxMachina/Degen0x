@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "PayFi Guide 2026: What Is Payment Finance and How Does It Work? | degen0x",
-  description:
-    "PayFi (Payment Finance) merges blockchain payments with DeFi yield. Learn how PayFi works, explore top protocols like Huma Finance, and discover real-world use cases in 2026.",
+  title: "PayFi Guide 2026: What Is Payment Finance and How Does It",
+  description: "PayFi (Payment Finance) merges blockchain payments with DeFi yield. Learn how PayFi works, explore top protocols like Huma Finance, and discover real-world use",
   keywords: [
     "PayFi",
     "payment finance crypto",
@@ -40,7 +39,8 @@ export const metadata: Metadata = {
     description:
       "Huma Finance processed $10B+ in PayFi volume. The sector is worth $2.27B. Here's how PayFi works and why it matters.",
   },
-};
+
+  alternates: { canonical: "/learn/payfi-guide" }};
 
 export default function PayFiGuidePage() {
   const articleSchema = generateArticleSchema({

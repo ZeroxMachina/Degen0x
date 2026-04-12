@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Nexus Mutual Smart Contract Cover 2026 | NXM Staking, Claims, Pricing',
+  title: "Nexus Mutual Smart Contract Cover 2026 | NXM Staking,",
   description: 'Complete guide to Nexus Mutual: $500M+ active smart contract cover, NXM staking, member voting claims, pricing models, cover types for DeFi.',
   keywords: ['Nexus Mutual', 'smart contract cover', 'NXM', 'DeFi insurance', 'cover pricing', 'claim voting', 'cryptocurrency insurance'],
   openGraph: {

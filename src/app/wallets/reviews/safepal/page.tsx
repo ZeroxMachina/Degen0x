@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -29,7 +31,7 @@ const product = {
 export const metadata: Metadata = {
   title: `SafePal Wallet Review (${CURRENT_YEAR}) - Affordable Air-Gapped Hardware Wallet | ${SITE_NAME}`,
   description: `Complete SafePal wallet review for ${CURRENT_YEAR}. Covers the S1 air-gapped hardware wallet, software wallet, 100+ chain support, and Binance Labs backing.`,
-};
+  alternates: { canonical: "/wallets/reviews/safepal" }};
 
 const overview =
   "SafePal is a cryptocurrency wallet ecosystem that offers both a hardware wallet (S1) and a software wallet app. The S1 hardware wallet is notable for being one of the most affordable air-gapped hardware wallets on the market, using QR code communication rather than USB or Bluetooth. SafePal was the first hardware wallet project backed by Binance Labs, giving it credibility and integration advantages within the Binance ecosystem.\n\nThe SafePal ecosystem supports 100+ blockchains and over 10 million tokens. The software wallet app (available on iOS and Android) serves as both a standalone hot wallet and the companion app for the S1 hardware wallet. The SFP token is the platform's utility token, providing fee discounts and exclusive features. SafePal positions itself as an accessible entry point for users who want hardware-level security without the premium price tag of Ledger or Trezor.";

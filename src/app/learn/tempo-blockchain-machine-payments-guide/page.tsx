@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Tempo Blockchain & MPP Guide 2026: Stripe's Machine Payments Protocol | degen0x",
-  description: "Complete guide to Tempo blockchain, the $5B payments Layer 1 backed by Stripe and Paradigm. Learn how Machine Payments Protocol (MPP) enables AI agents and enterprises to transact at scale with sub-millisecond finality.",
+  description: "Complete guide to Tempo blockchain, the $5B payments Layer 1 backed by Stripe and Paradigm. Learn how Machine Payments Protocol (MPP) enables AI agents and",
   keywords: [
     "tempo blockchain",
     "machine payments protocol",
@@ -44,7 +44,8 @@ export const metadata: Metadata = {
     description: "Stripe and Paradigm's Layer 1 for stablecoin payments at scale. MPP enables AI agents to pay autonomously. Mainnet live March 2026.",
     images: ["https://degen0x.com/og-tempo-blockchain-machine-payments-guide.png"],
   },
-};
+
+  alternates: { canonical: "/learn/tempo-blockchain-machine-payments-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "Tempo Blockchain & Machine Payments Protocol Guide 2026: Stripe's System for Stablecoin Payments",

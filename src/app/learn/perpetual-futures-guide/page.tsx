@@ -1,11 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
 export const metadata: Metadata = {
-  title: "Perpetual Futures Trading Guide 2026 — How Perps Work | degen0x",
-  description:
-    "Learn everything about perpetual futures: funding rates, leverage, liquidation, delta-neutral strategies, and the best perp DEXs in 2026. Beginner to advanced guide.",
+  title: "Perpetual Futures Trading Guide 2026 — How Perps Work",
+  description: "Learn everything about perpetual futures: funding rates, leverage, liquidation, delta-neutral strategies, and the best perp DEXs in 2026. Beginner to advanced",
   keywords: [
     "perpetual futures",
     "perps trading",
@@ -22,7 +22,8 @@ export const metadata: Metadata = {
     title: "Perpetual Futures Trading Guide 2026 | degen0x",
     description: "Master perpetual futures: funding rates, leverage, liquidation, and advanced perp strategies.",
   },
-};
+
+  alternates: { canonical: "/learn/perpetual-futures-guide" }};
 
 export default function PerpetualFuturesGuidePage() {
   return (
@@ -245,6 +246,56 @@ export default function PerpetualFuturesGuidePage() {
           }}
         />
       </article>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

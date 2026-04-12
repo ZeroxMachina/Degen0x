@@ -13,7 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "TradFi-DeFi Convergence 2026: How Institutions Are Going On-Chain | degen0x",
+  title: "TradFi-DeFi Convergence 2026: How Institutions Are Going",
   description:
     "The definitive guide to TradFi-DeFi convergence in 2026. $50B+ in tokenized RWAs, JPMorgan's on-chain payments, BlackRock's BUIDL fund, and what it means for crypto investors.",
   keywords: [

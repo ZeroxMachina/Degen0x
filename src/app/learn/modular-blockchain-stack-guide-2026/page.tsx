@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Modular Blockchain Stack Guide 2026 — DA, Execution & Settlement Explained | degen0x",
-  description:
-    "The modular blockchain thesis is reshaping crypto infrastructure. Learn how data availability (Celestia, EigenDA, Avail), execution, and settlement layers work together in 2026.",
+  title: "Modular Blockchain Stack Guide 2026 — DA, Execution &",
+  description: "The modular blockchain thesis is reshaping crypto infrastructure. Learn how data availability (Celestia, EigenDA, Avail), execution, and settlement layers work",
   keywords: [
     "modular blockchain",
     "modular blockchain stack",
@@ -47,7 +46,8 @@ export const metadata: Metadata = {
     description:
       "Data availability, execution, settlement — the three pillars of modular blockchains explained with Celestia, EigenDA, Avail, and more.",
   },
-};
+
+  alternates: { canonical: "/learn/modular-blockchain-stack-guide-2026" }};
 
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

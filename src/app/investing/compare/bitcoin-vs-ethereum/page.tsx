@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -9,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Bitcoin vs Ethereum (${CURRENT_YEAR}) - Complete Comparison | ${SITE_NAME}`,
   description: `Bitcoin vs Ethereum in ${CURRENT_YEAR}. Compare investment thesis, technology, returns, staking, and which is better for your portfolio.`,
-};
+  alternates: { canonical: "/investing/compare/bitcoin-vs-ethereum" }};
 
 const items = [
   { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.9, affiliateUrl: "#", features: { "Primary Use Case": "Digital gold / Store of value", "Consensus": "Proof-of-Work", "Max Supply": "21 million", "Smart Contracts": "Limited (Bitcoin Script)", "Staking Yield": "N/A (PoW)", "Annual Inflation": "~1.7% (post-halving)", "ETF Available": "Yes (Spot)", "Transaction Speed": "~10 min blocks", "Energy Usage": "High", "Institutional Adoption": "Highest in crypto" } },
@@ -25,7 +26,14 @@ const faqs = [
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Bitcoin vs Ethereum" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Bitcoin vs Ethereum" }]} />
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Bitcoin vs Ethereum ({CURRENT_YEAR})</h1>
@@ -58,6 +66,57 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/bitcoin Vs Ethereum", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/bitcoin-vs-ethereum"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto IRA Guide 2026: Bitcoin & Crypto Retirement Accounts',
-  description: 'Complete guide to crypto IRAs, 401(k)s, and retirement accounts. Learn about Roth vs Traditional IRAs, top providers, fees, and tax benefits for cryptocurrency retirement investing.',
+  description: "Complete guide to crypto IRAs, 401(k)s, and retirement accounts. Learn about Roth vs Traditional IRAs, top providers, fees, and tax benefits for cryptocurrency",
   keywords: ['crypto IRA', 'bitcoin IRA', 'crypto 401k', 'self-directed IRA', 'crypto retirement accounts', 'Roth IRA crypto', 'traditional IRA crypto', 'crypto custodian', 'crypto retirement 2026', 'fidelity crypto'],
   openGraph: {
     type: 'article',

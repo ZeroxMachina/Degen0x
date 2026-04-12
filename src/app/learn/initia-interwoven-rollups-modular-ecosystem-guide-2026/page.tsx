@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Initia Guide: Interwoven Rollups & Modular Orchestration 2026',
-  description: 'Comprehensive guide to Initia, the Cosmos-based Layer 1 orchestrating modular rollups. Learn about OPinit Stack, Minitias, INIT token, tokenomics, ecosystem, and risk considerations.',
+  title: "Initia Guide: Interwoven Rollups & Modular Orchestration",
+  description: "Comprehensive guide to Initia, the Cosmos-based Layer 1 orchestrating modular rollups. Learn about OPinit Stack, Minitias, INIT token, tokenomics, ecosystem,",
   keywords: [
     'Initia',
     'modular blockchain',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: 'article',
-    title: 'Initia Guide: Interwoven Rollups & Modular Orchestration 2026',
+    title: "Initia Guide: Interwoven Rollups & Modular Orchestration",
     description: 'Learn about Initia, its OPinit Stack, Minitias, INIT tokenomics, and the interwoven rollup ecosystem.',
     url: 'https://degen0x.com/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026',
     authors: ['degen0x'],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Initia Guide: Interwoven Rollups & Modular Orchestration 2026',
+    title: "Initia Guide: Interwoven Rollups & Modular Orchestration",
     description: 'Comprehensive guide to Initia, rollup orchestration, and modular blockchain architecture.',
     images: ["https://degen0x.com/og-initia-interwoven-rollups-2026.svg"],
   },

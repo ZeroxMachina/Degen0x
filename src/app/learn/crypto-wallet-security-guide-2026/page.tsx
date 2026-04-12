@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Crypto Wallet Security Guide 2026: Protect Your Assets | degen0x',
-  description: 'Complete guide to crypto wallet security in 2026. Learn hardware wallets, seed phrase protection, phishing defense, 2FA, multisig, and anti-drainer tools. $450M lost to hacks in Q1 2026—protect yourself now.',
+  title: "Crypto Wallet Security Guide 2026: Protect Your Assets",
+  description: "Complete guide to crypto wallet security in 2026. Learn hardware wallets, seed phrase protection, phishing defense, 2FA, multisig, and anti-drainer tools.",
   keywords: ['crypto wallet security', 'hardware wallet', 'seed phrase security', 'phishing detection', 'wallet drainer', '2FA', 'Ledger', 'Trezor', 'MetaMask security', 'web3 security 2026'],
   openGraph: {
     type: 'article',
-    title: 'Crypto Wallet Security Guide 2026: Protect Your Assets | degen0x',
+    title: "Crypto Wallet Security Guide 2026: Protect Your Assets",
     description: 'Learn how to secure your crypto with hardware wallets, strong 2FA, phishing detection, and anti-drainer tools. $450M lost in Q1 2026—this guide shows you how to avoid becoming a victim.',
     publishedTime: '2026-04-02T00:00:00Z',
     modifiedTime: '2026-04-02T00:00:00Z',

@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Projects on Linea: SyncSwap, Velocore, Mendi Finance | degen0x',
+  title: "Best Projects on Linea: SyncSwap, Velocore, Mendi Finance",
   description: 'Top DeFi projects on Linea zkEVM. SyncSwap DEX, Velocore, Mendi Finance lending. ConsenSys zkEVM, Surge points program, decentralization roadmap.',
   keywords: ['Linea projects', 'SyncSwap', 'Velocore', 'Mendi Finance', 'Linea DeFi', 'ConsenSys zkEVM', 'Linea ecosystem'],
   openGraph: {

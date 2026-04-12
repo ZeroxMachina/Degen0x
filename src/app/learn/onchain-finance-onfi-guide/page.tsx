@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "On-Chain Finance (OnFi) Guide 2026 — What It Is & How It Works | degen0x",
-  description:
-    "OnFi is DeFi rebuilt for institutions. Learn how on-chain finance combines blockchain settlement with KYC compliance, tokenized RWAs, and permissioned lending pools in 2026.",
+  title: "On-Chain Finance (OnFi) Guide 2026 — What It Is & How It",
+  description: "OnFi is DeFi rebuilt for institutions. Learn how on-chain finance combines blockchain settlement with KYC compliance, tokenized RWAs, and permissioned lending",
   openGraph: {
     title: "On-Chain Finance (OnFi) Explained — DeFi Meets Wall Street in 2026",
     description:
@@ -35,7 +34,8 @@ export const metadata: Metadata = {
       "OnFi = DeFi with compliance rails. $17B in institutional TVL and growing. Here's the full breakdown.",
     images: [`${SITE_URL}/og-onchain-finance-onfi.png`],
   },
-};
+
+  alternates: { canonical: "/learn/onchain-finance-onfi-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "On-Chain Finance (OnFi) Guide 2026 — What It Is & How It Works",

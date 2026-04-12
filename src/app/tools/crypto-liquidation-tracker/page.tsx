@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Liquidation Tracker: Real-Time $1B+ Cascades | degen0x',
-  description: 'Track crypto liquidations real-time: Coinglass ($500M+ moves), Hyblock Capital, Bybt. Long vs short imbalances, leverage by exchange. March 2025 $1.2B crash analyzed. Liquidation heatmaps.',
+  title: "Crypto Liquidation Tracker: Real-Time $1B+ Cascades",
+  description: "Track crypto liquidations real-time: Coinglass ($500M+ moves), Hyblock Capital, Bybt. Long vs short imbalances, leverage by exchange. March 2025 $1.2B crash",
   keywords: ['liquidation tracker', 'coinglass', 'crypto liquidations', 'liquidation cascade', 'futures liquidations', 'leverage', 'support resistance'],
   openGraph: {
     type: 'article',

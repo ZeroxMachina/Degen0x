@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Monad Blockchain Guide: 10,000 TPS EVM L1 Explained 2026 | degen0x",
-  description:
-    "Monad mainnet launched November 2025 with 10,000 TPS and 0.8s finality. Learn how its optimistic parallel execution works, MON token tokenomics, DeFi ecosystem, and why it matters.",
+  title: "Monad Blockchain Guide: 10,000 TPS EVM L1 Explained 2026",
+  description: "Monad mainnet launched November 2025 with 10,000 TPS and 0.8s finality. Learn how its optimistic parallel execution works, MON token tokenomics, DeFi",
   keywords: [
     "monad blockchain",
     "monad guide",

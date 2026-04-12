@@ -9,9 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Real Yield in DeFi Guide 2026 — Sustainable vs Emission Yields | degen0x",
-  description:
-    "Learn the difference between real yield and token emissions in DeFi. Discover which protocols generate sustainable revenue-backed returns in 2026. Updated March 2026.",
+  title: "Real Yield in DeFi Guide 2026 — Sustainable vs Emission",
+  description: "Learn the difference between real yield and token emissions in DeFi. Discover which protocols generate sustainable revenue-backed returns in 2026. Updated",
   keywords: [
     "real yield defi",
     "defi real yield",
@@ -42,7 +41,8 @@ export const metadata: Metadata = {
     description:
       "Sustainable yield vs token emissions — the real yield guide for DeFi investors.",
   },
-};
+
+  alternates: { canonical: "/learn/real-yield-defi-guide-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

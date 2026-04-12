@@ -8,8 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "x402 Protocol & AI Agent Payments Guide 2026: How Agents Pay On-Chain | degen0x",
-  description: "How AI agents pay for services using the x402 protocol, USDC, and Coinbase Agentic Wallets. Complete 2026 guide to autonomous payments, ERC-8004 identity, and the agent economy.",
+  title: "x402 Protocol & AI Agent Payments Guide 2026: How Agents",
+  description: "How AI agents pay for services using the x402 protocol, USDC, and Coinbase Agentic Wallets. Complete 2026 guide to autonomous payments, ERC-8004 identity, and",
   keywords: [
     "x402 protocol explained",
     "AI agent payments crypto",
@@ -44,7 +44,8 @@ export const metadata: Metadata = {
     description: "How AI agents autonomously pay for services using x402, USDC on Base, and Coinbase Agentic Wallets. The complete guide to the agent economy.",
     images: ["https://degen0x.com/og-ai-agent-payments-x402-guide.png"],
   },
-};
+
+  alternates: { canonical: "/learn/ai-agent-payments-x402-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "x402 Protocol & AI Agent Payments Guide 2026: How Agents Pay On-Chain",

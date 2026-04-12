@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Backpack wallet review: xNFT platform guide",
-  description: "Backpack wallet complete guide: xNFTs (executable NFTs), Solana+Ethereum, built-in DEX, Mad Lads, Coral ecosystem, Armani Ferrante. Pros, cons, comparison vs Phantom.",
+  description: "Backpack wallet complete guide: xNFTs (executable NFTs), Solana+Ethereum, built-in DEX, Mad Lads, Coral ecosystem, Armani Ferrante. Pros, cons, comparison vs",
   keywords: [
     "Backpack wallet review",
     "xNFT",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     title: "Backpack wallet review: xNFT platform guide",
-    description: "Backpack wallet complete guide: xNFTs (executable NFTs), Solana+Ethereum, built-in DEX, Mad Lads, Coral ecosystem, Armani Ferrante. Pros, cons, comparison vs Phantom.",
+    description: "Backpack wallet complete guide: xNFTs (executable NFTs), Solana+Ethereum, built-in DEX, Mad Lads, Coral ecosystem, Armani Ferrante. Pros, cons, comparison vs",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
     url: "https://degen0x.com/wallets/backpack-wallet-complete-guide",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Backpack wallet review: xNFT platform guide",
-    description: "Backpack wallet complete guide: xNFTs (executable NFTs), Solana+Ethereum, built-in DEX, Mad Lads, Coral ecosystem, Armani Ferrante. Pros, cons, comparison vs Phantom.",
+    description: "Backpack wallet complete guide: xNFTs (executable NFTs), Solana+Ethereum, built-in DEX, Mad Lads, Coral ecosystem, Armani Ferrante. Pros, cons, comparison vs",
     image: "https://degen0x.com/og-wallets.svg",
   },
   alternates: {

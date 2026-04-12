@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Crypto Wallet Backup Guide (${CURRENT_YEAR}) - Protect Your Recovery Phrase | ${SITE_NAME}`,
   description: `Complete guide to backing up your crypto wallet in ${CURRENT_YEAR}. Seed phrase storage, metal backups, Shamir Backup, multi-location strategies, and disaster recovery.`,
-};
+  alternates: { canonical: "/wallets/learn/wallet-backup-guide" }};
 
 const toc = [
   { id: "why-backup", title: "Why Backup Matters", level: 2 },

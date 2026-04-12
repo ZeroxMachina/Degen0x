@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Account Abstraction Wallets Guide | Safe, Argent, Biconomy | degen0x',
-  description: 'Deep dive into ERC-4337 account abstraction wallets: Safe ($100B secured), Argent social recovery, Biconomy gasless, ZeroDev programmable. Compare AA standards, gas sponsorship, smart accounts vs EOAs.',
+  title: "Account Abstraction Wallets Guide | Safe, Argent, Biconomy",
+  description: "Deep dive into ERC-4337 account abstraction wallets: Safe ($100B secured), Argent social recovery, Biconomy gasless, ZeroDev programmable. Compare AA",
   keywords: ['account abstraction', 'AA wallets', 'Safe wallet', 'Argent', 'Biconomy', 'ZeroDev', 'ERC-4337', 'smart accounts', 'gasless transactions', 'social recovery'],
   openGraph: {
     title: 'Account Abstraction Wallets Guide | Safe, Argent, Biconomy',

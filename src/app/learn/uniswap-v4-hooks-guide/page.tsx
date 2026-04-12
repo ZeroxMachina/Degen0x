@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Uniswap v4 Hooks Guide 2026 — How They Work & Why They Matter | degen0x",
-  description:
-    "Uniswap v4 Hooks let developers customize liquidity pools with custom logic. This guide explains what Hooks are, how the lifecycle works, real use cases, and the risks. Updated March 2026.",
+  title: "Uniswap v4 Hooks Guide 2026 — How They Work & Why They",
+  description: "Uniswap v4 Hooks let developers customize liquidity pools with custom logic. This guide explains what Hooks are, how the lifecycle works, real use cases, and",
   keywords: [
     "uniswap v4 hooks",
     "uniswap v4 guide",
@@ -44,7 +43,8 @@ export const metadata: Metadata = {
     description:
       "Hooks are the biggest change to Uniswap since it launched. Here's exactly how they work.",
   },
-};
+
+  alternates: { canonical: "/learn/uniswap-v4-hooks-guide" }};
 
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

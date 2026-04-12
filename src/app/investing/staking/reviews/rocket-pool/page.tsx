@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { stakingPlatforms } from "@/data/staking";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "Rocket Pool Review 2026: Fees, Yields, Pros & Cons",
   description:
     "Our in-depth Rocket Pool review covers rETH, decentralized node operation, fees, yields, and whether it's the right staking protocol for you. Updated March 2026.",
-};
+  alternates: { canonical: "/investing/staking/reviews/rocket-pool" }};
 
 export default function RocketPoolReview() {
   return (

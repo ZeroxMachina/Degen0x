@@ -7,8 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Decentralized GPU Compute Networks: Render, Akash & io.net Guide 2026 | degen0x',
-  description: 'Complete guide to decentralized GPU compute networks. Learn about Render Network, Akash, io.net, DePIN infrastructure, AI compute marketplace, and how to monetize GPUs in Web3.',
+  title: "Decentralized GPU Compute Networks: Render, Akash & io.net",
+  description: "Complete guide to decentralized GPU compute networks. Learn about Render Network, Akash, io.net, DePIN infrastructure, AI compute marketplace, and how to",
   keywords: [
     'decentralized GPU compute',
     'Render Network RENDER',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: 'article',
-    title: 'Decentralized GPU Compute Networks: Render, Akash & io.net Guide 2026 | degen0x',
+    title: "Decentralized GPU Compute Networks: Render, Akash & io.net",
     description: 'Discover Render, Akash, io.net, and the rise of decentralized GPU compute networks replacing AWS and Azure. DePIN infrastructure, AI jobs, and GPU tokenomics explained.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Decentralized GPU Compute Networks: Render, Akash & io.net Guide 2026 | degen0x',
+    title: "Decentralized GPU Compute Networks: Render, Akash & io.net",
     description: 'GPU marketplaces, DePIN infrastructure, AI compute tokenomics, and the future of cloud computing on blockchain.',
   },
   alternates: {

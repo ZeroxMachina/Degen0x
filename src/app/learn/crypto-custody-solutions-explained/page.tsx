@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto Custody Solutions Explained | degen0x',
-  description: 'Learn self-custody vs institutional crypto custody. Compare Coinbase Custody, Fireblocks, BitGo, Safe smart contracts, MPC wallets with security and insurance details.',
+  description: "Learn self-custody vs institutional crypto custody. Compare Coinbase Custody, Fireblocks, BitGo, Safe smart contracts, MPC wallets with security and insurance",
   keywords: ['crypto custody', 'institutional custody', 'hardware wallets', 'Fireblocks', 'Coinbase Custody', 'MPC custody', 'smart contract custody'],
   openGraph: {
     title: 'Crypto Custody Solutions Explained | degen0x',

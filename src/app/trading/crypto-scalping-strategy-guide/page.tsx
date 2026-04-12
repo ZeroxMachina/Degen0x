@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Scalping Strategy Guide 2026: 1-5 Min Timeframes, Indicators, Platforms | degen0x',
+  title: "Crypto Scalping Strategy Guide 2026: 1-5 Min Timeframes,",
   description: 'Crypto scalping guide: 1-5 minute timeframes, order flow analysis, tight stops 0.5-1%, RSI + VWAP, Bybit vs Binance. Win rate vs R:R targeting.',
   keywords: ['crypto scalping', 'scalping strategy', 'day trading crypto', 'order flow', 'scalping indicators', 'micro trading'],
   openGraph: {

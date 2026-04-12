@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Celsius Successor Analysis (${CURRENT_YEAR}): What Happened & Lessons | ${SITE_NAME}`,
   description: "Analysis of Celsius Network's collapse, successor entities, creditor recovery, and lessons learned for crypto lending safety.",
-};
+  alternates: { canonical: "/crypto-loans/reviews/celsius-successor" }};
 
 export default function CelsiusSuccessorReview() {
   return (

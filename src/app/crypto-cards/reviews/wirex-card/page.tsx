@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = cryptoCards.find((c) => c.slug === "wirex-card")!;
 export const metadata: Metadata = {
   title: `Wirex Card Review (${CURRENT_YEAR}): Multi-Currency, Rewards & Pros/Cons | degen0x`,
   description: "In-depth Wirex Card review covering multi-currency support, cryptoback rewards, X-Accounts yield, and whether it is the best card for global travelers.",
-};
+  alternates: { canonical: "/crypto-cards/reviews/wirex-card" }};
 
 export default function WirexCardReviewPage() {
   return (

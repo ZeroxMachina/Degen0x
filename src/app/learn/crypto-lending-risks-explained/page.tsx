@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Lending Risks Explained 2026: Smart Contract, Oracle, Liquidation & Counterparty Risk | degen0x',
-  description: 'Understand crypto lending risks: smart contract exploitation (Euler $197M), oracle manipulation, liquidation cascades, counterparty collapse (Celsius/BlockFi), governance attacks. Learn mitigation and insurance.',
+  title: "Crypto Lending Risks Explained 2026: Smart Contract,",
+  description: "Understand crypto lending risks: smart contract exploitation (Euler $197M), oracle manipulation, liquidation cascades, counterparty collapse (Celsius/BlockFi),",
   keywords: ['crypto lending risks', 'DeFi lending', 'smart contract risk', 'oracle manipulation', 'liquidation risk', 'counterparty risk', 'Celsius', 'BlockFi', 'Euler hack', 'insurance', 'Nexus Mutual', 'CeFi vs DeFi'],
   openGraph: {
     type: 'article',

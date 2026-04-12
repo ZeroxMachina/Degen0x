@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
@@ -6,11 +7,11 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
-  title: "Sei Network Guide 2026: The First Parallelized EVM Blockchain | degen0x",
+  title: "Sei Network Guide 2026: The First Parallelized EVM",
   description: "Learn about Sei Network, the first parallelized EVM blockchain with 400ms finality, parallel execution, and a thriving DeFi ecosystem. Complete technical guide.",
   keywords: "sei network, sei blockchain, parallel evm, sei v2, sei defi, sei staking, parallelized evm",
   openGraph: {
-    title: "Sei Network Guide 2026: The First Parallelized EVM Blockchain | degen0x",
+    title: "Sei Network Guide 2026: The First Parallelized EVM",
     description: "Learn about Sei Network, the first parallelized EVM blockchain with 400ms finality, parallel execution, and a thriving DeFi ecosystem.",
     type: "article",
     publishedTime: "2026-03-24T00:00:00Z",
@@ -21,7 +22,8 @@ export const metadata: Metadata = {
     title: "Sei Network Guide 2026: The First Parallelized EVM Blockchain",
     description: "Discover parallel EVM execution, 400ms finality, and Sei&apos;s DeFi ecosystem.",
   },
-};
+
+  alternates: { canonical: "/learn/sei-network-parallel-evm-guide" }};
 
 const articleSchema = generateArticleSchema({
   headline: "Sei Network Guide 2026: The First Parallelized EVM Blockchain",
@@ -66,7 +68,14 @@ export default function SeiNetworkGuide() {
     <>
       <StructuredData data={combinedSchema} />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
-        <Breadcrumb items={[
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />        <Breadcrumb items={[
           { label: "Learn", href: "/learn" },
           { label: "Sei Network Guide", href: "/learn/sei-network-parallel-evm-guide" },
         ]} />

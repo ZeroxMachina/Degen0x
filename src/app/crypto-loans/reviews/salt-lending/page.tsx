@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `SALT Lending Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth SALT Lending review covering loan terms, supported collateral, rates, security, and whether SALT is right for your crypto borrowing needs.",
-};
+  alternates: { canonical: "/crypto-loans/reviews/salt-lending" }};
 
 export default function SaltLendingReviewPage() {
   return (

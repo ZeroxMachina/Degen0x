@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "ZenGo",
   slug: "zengo",
   rating: 4.1,
-  description:
-    "ZenGo is a keyless crypto wallet using MPC (multi-party computation) technology to eliminate seed phrases. Supports 120+ assets with built-in swaps, staking, and Web3 access.",
+  description: "ZenGo is a keyless crypto wallet using MPC (multi-party computation) technology to eliminate seed phrases. Supports 120+ assets with built-in swaps, staking,",
   pros: [
     "No seed phrase required thanks to MPC threshold signature technology",
     "Biometric recovery eliminates the risk of lost seed phrases",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `ZenGo Wallet Review (${CURRENT_YEAR}) - Keyless MPC Wallet | ${SITE_NAME}`,
   description: `Complete ZenGo wallet review for ${CURRENT_YEAR}. Covers MPC technology, seedless recovery, supported assets, Web3 features, and security model.`,
-};
+  alternates: { canonical: "/wallets/reviews/zengo" }};
 
 const overview =
   "ZenGo is a cryptocurrency wallet that eliminates the traditional seed phrase through its implementation of MPC (multi-party computation) threshold signature technology. Instead of a single private key stored on your device, ZenGo splits the cryptographic key into two shares: one stored on your phone and one on ZenGo's servers. Both shares are needed to sign transactions, but neither party can access funds alone. Recovery is handled through biometric verification (face scan) and email, making it impossible to lose access through a forgotten or lost seed phrase.\n\nThis innovative approach addresses one of the biggest pain points in crypto: the fear of losing a seed phrase and permanently losing access to funds. ZenGo supports 120+ cryptocurrencies across multiple chains, offers built-in token swaps, staking, an NFT gallery, and a Web3 browser for dApp interaction. The wallet is available as a mobile app on iOS and Android.";

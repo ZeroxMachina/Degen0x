@@ -7,9 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Decentralized GPU & Compute Networks Guide 2026: Akash, Render, io.net & Aethir | degen0x",
-  description:
-    "Complete guide to decentralized GPU and compute networks in 2026. Understand how Render, Akash, io.net, and Aethir compete with AWS. Learn why GPU scarcity matters and how DePIN compute works.",
+  title: "Decentralized GPU & Compute Networks Guide 2026: Akash,",
+  description: "Complete guide to decentralized GPU and compute networks in 2026. Understand how Render, Akash, io.net, and Aethir compete with AWS. Learn why GPU scarcity",
   keywords: [
     "decentralized GPU",
     "decentralized compute",
@@ -47,7 +46,8 @@ export const metadata: Metadata = {
       "Complete guide to Render Network, Akash, io.net, and Aethir. How decentralized GPU marketplaces undercut AWS with 60-80% discounts while incentivizing GPU supply.",
     images: ["https://degen0x.com/og-decentralized-gpu-compute-guide-2026.svg"],
   },
-};
+
+  alternates: { canonical: "/learn/decentralized-gpu-compute-guide-2026" }};
 
 // ─── Structured Data ───────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

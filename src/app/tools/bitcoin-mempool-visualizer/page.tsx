@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bitcoin Mempool Visualizer: mempool.space, Fee Estimation & RBF Guide | degen0x',
+  title: "Bitcoin Mempool Visualizer: mempool.space, Fee Estimation &",
   description: 'Master Bitcoin mempool tools: mempool.space dashboard, fee estimation, RBF (Replace-By-Fee), CPFP (Child Pays for Parent), sat/vByte optimization.',
   keywords: ['Bitcoin mempool', 'mempool.space', 'fee estimation', 'RBF', 'CPFP', 'transaction priority', 'sat/vByte'],
   openGraph: {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -11,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Foundation vs SuperRare: Which Art NFT Platform Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of Foundation vs SuperRare for NFT art. Compare curation, fees, artist access, auction formats, and collecting experience on both platforms.",
-};
+  alternates: { canonical: "/nfts/compare/foundation-vs-superrare" }};
 
 export default function FoundationVsSuperRarePage() {
   const foundation = nftDetailedComparisons["foundation"];
@@ -88,6 +89,57 @@ export default function FoundationVsSuperRarePage() {
         { question: "Can I list on both platforms?", answer: "Yes, artists approved on both platforms can list different works on each. However, listing the same piece on both simultaneously is not typically done since both platforms focus on unique, curated presentations. Many artists strategically choose which works go to which platform." },
         { question: "Which is better for emerging artists?", answer: "Foundation is more accessible for emerging artists, as SuperRare's approval process is extremely selective. Foundation's broader artist base means more competition for visibility, but the lower barrier to entry makes it a better starting point for building an on-chain art career." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/foundation Vs Superrare", "description": "Detailed comparison of Foundation vs SuperRare for NFT art. Compare curation, fees, artist access, auction formats, and collecting experience on both platforms.", "url": "https://degen0x.com/nfts/compare/foundation-vs-superrare"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

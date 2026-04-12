@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import EigenLayerClient from "./EigenLayerClient";
 
 export const metadata: Metadata = {
-  title: "EigenLayer: Restaking & AVS Guide 2026 — $15B ETH Restaked | degen0x",
-  description:
-    "Complete guide to EigenLayer — the Ethereum restaking protocol with $15B+ ETH restaked, 30+ Active Validated Services (AVS), and 500+ operators. How restaking works, EIGEN token, risks, and how to get started.",
+  title: "EigenLayer: Restaking & AVS Guide 2026 — $15B ETH Restaked",
+  description: "Complete guide to EigenLayer — the Ethereum restaking protocol with $15B+ ETH restaked, 30+ Active Validated Services (AVS), and 500+ operators. How restaking",
   keywords: [
     "eigenlayer",
     "eigenlayer guide",
@@ -42,7 +43,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=EigenLayer:+Restaking+%26+AVS+Guide+2026&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/eigenlayer" }};
 
 export default function EigenLayerPage() {
   return <EigenLayerClient />;

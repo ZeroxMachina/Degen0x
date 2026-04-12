@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto ETF In-Kind Redemptions Guide 2026: How They Work & Why They Matter | degen0x",
-  description:
-    "What are in-kind redemptions for crypto ETFs? The SEC approved direct BTC and ETH creation/redemption for spot ETFs in 2025. Learn how it works, tax benefits, tighter spreads, and what it means for institutional crypto adoption.",
+  title: "Crypto ETF In-Kind Redemptions Guide 2026: How They Work &",
+  description: "What are in-kind redemptions for crypto ETFs? The SEC approved direct BTC and ETH creation/redemption for spot ETFs in 2025. Learn how it works, tax benefits,",
   keywords: [
     "crypto ETF in-kind redemption",
     "Bitcoin ETF in-kind",
@@ -360,8 +359,8 @@ export default function CryptoETFInKindRedemptionGuidePage() {
             { q: "Will in-kind redemptions be available for Solana or other crypto ETFs?", a: "Currently only approved for Bitcoin and Ethereum spot ETFs. Additional crypto ETFs would require separate SEC review, though the precedent set by the BTC/ETH approval makes future approvals more likely." },
           ].map((faq, i) => (
             <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

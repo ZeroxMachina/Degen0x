@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Tokenized Treasury Bills Guide 2026 — T-Bills On-Chain | degen0x",
+  title: "Tokenized Treasury Bills Guide 2026 — T-Bills On-Chain",
   description:
     "Learn how tokenized US Treasury bills work on blockchain. Explore BUIDL, USDY, OUSG, and earn 4.5-5% yield composable with DeFi.",
   keywords: [
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   authors: [{ name: "degen0x" }],
   openGraph: {
     type: "article",
-    title: "Tokenized Treasury Bills Guide 2026 — T-Bills On-Chain | degen0x",
+    title: "Tokenized Treasury Bills Guide 2026 — T-Bills On-Chain",
     description:
       "Learn how tokenized US Treasury bills work on blockchain. Explore BUIDL, USDY, OUSG, and earn 4.5-5% yield composable with DeFi.",
     publishedTime: "2026-03-29T00:00:00Z",
@@ -91,7 +92,14 @@ const schemas = combineSchemas(articleSchema, faqSchema);
 export default function TokenizedTreasuryBillsGuide() {
   return (
     <div style={{ backgroundColor: "#0d1117", minHeight: "100vh", color: "#e6edf3" }}>
-      <StructuredData data={schemas} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <StructuredData data={schemas} />
 
       {/* Navigation */}
       <div style={{ backgroundColor: "#0d1117", borderBottom: "1px solid #30363d", padding: "20px 0" }}>

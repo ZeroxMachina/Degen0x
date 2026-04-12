@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Stablecoin Lending Rates 2026: DeFi vs CeFi Comparison | degen0x',
+  title: "Best Stablecoin Lending Rates 2026: DeFi vs CeFi Comparison",
   description: 'Compare stablecoin lending rates across 10+ platforms in 2026. USDC 4-8% on DeFi, DAI 5-9%, USDT rates, risk analysis, yield strategies, and insurance options.',
   keywords: ['stablecoin lending', 'USDC lending', 'USDT lending', 'DAI yield', 'DeFi lending rates', 'CeFi lending', 'yield farming', '2026 rates'],
   openGraph: {

@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Passive Income Crypto Strategies 2026: Staking, Yield Farming, Lending | degen0x',
+  title: "Passive Income Crypto Strategies 2026: Staking, Yield",
   description: 'Crypto passive income 2026: Staking (3.5-10% APY), LP fees (5-40% APY), Lending (3-8% APY), Real Yield (2-6% APY). Comparison table, risks, and strategies.',
   keywords: ['passive income crypto', 'yield farming', 'defi staking', 'liquidity provider', 'lending crypto'],
   openGraph: {

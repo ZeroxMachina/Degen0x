@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Notional Finance Review (${CURRENT_YEAR}): Fixed-Rate DeFi Lending | degen0x`,
   description:
     "In-depth Notional Finance review covering fixed-rate lending, fCash tokens, leveraged vaults, and the protocol's unique approach to predictable DeFi yields.",
-};
+  alternates: { canonical: "/defi-lending/reviews/notional" }};
 
 export default function NotionalReview() {
   return (

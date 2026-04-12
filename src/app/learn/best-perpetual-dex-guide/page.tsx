@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Best Perpetual DEXs 2026: Compare Hyperliquid, dYdX & More | degen0x",
+  title: "Best Perpetual DEXs 2026: Compare Hyperliquid, dYdX & More",
   description:
     "Compare top perpetual DEXs in 2026. Hyperliquid, dYdX, Lighter, GRVT, GMX — fees, leverage, volume, and how to start trading on-chain derivatives.",
   openGraph: {
@@ -35,7 +35,8 @@ export const metadata: Metadata = {
     description:
       "Perp DEXs do $22B+ daily. Compare the top 5 protocols, order book vs AMM, and learn how to trade on-chain derivatives.",
   },
-};
+
+  alternates: { canonical: "/learn/best-perpetual-dex-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "Best Perpetual DEXs: Your Guide to On-Chain Derivatives Trading in 2026",

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Market Making 2026: Bid-Ask Spreads, Hummingbot, Wintermute, Jump Crypto | degen0x",
-  description: "Master crypto market making: bid-ask spreads, inventory risk, Hummingbot bots, Wintermute ($200M AUM), Jump Crypto HFT, AMM vs orderbook strategies, 10-30% APY potential.",
+  title: "Crypto Market Making 2026: Bid-Ask Spreads, Hummingbot,",
+  description: "Master crypto market making: bid-ask spreads, inventory risk, Hummingbot bots, Wintermute ($200M AUM), Jump Crypto HFT, AMM vs orderbook strategies, 10-30% APY",
   keywords: ["market making", "bid-ask spread", "hummingbot", "wintermute", "jump crypto", "inventory risk", "amm liquidity", "market maker"],
   openGraph: {
     type: "article",

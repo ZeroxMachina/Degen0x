@@ -11,8 +11,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "CLARITY Act 2026: Crypto Market Structure & SEC vs CFTC",
-  description:
-    "The CLARITY Act splits crypto into commodities (CFTC) and securities (SEC). Learn what it means for token classifications, exchanges, DeFi, and investors in 2026.",
+  description: "The CLARITY Act splits crypto into commodities (CFTC) and securities (SEC). Learn what it means for token classifications, exchanges, DeFi, and investors in",
   openGraph: {
     title: "CLARITY Act 2026 — Crypto Market Structure Explained",
     description:
@@ -38,12 +37,12 @@ export const metadata: Metadata = {
       "SEC vs CFTC. Commodity vs security. The CLARITY Act is reshaping how every token gets regulated in the US.",
     images: [`${SITE_URL}/og-clarity-act-crypto-guide.png`],
   },
-};
+
+  alternates: { canonical: "/learn/clarity-act-crypto-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "CLARITY Act 2026: Crypto Market Structure & SEC vs CFTC",
-  description:
-    "The CLARITY Act splits crypto into commodities (CFTC) and securities (SEC). Learn what it means for token classifications, exchanges, DeFi, and investors in 2026.",
+  description: "The CLARITY Act splits crypto into commodities (CFTC) and securities (SEC). Learn what it means for token classifications, exchanges, DeFi, and investors in",
   url: `${SITE_URL}/learn/clarity-act-crypto-guide`,
   datePublished: "2026-03-15T00:00:00Z",
   dateModified: "2026-03-15T00:00:00Z",

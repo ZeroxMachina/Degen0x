@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Loan Tax Guide 2026: Interest Deductibility, Capital Gains & 1099 Reporting',
-  description: 'Complete crypto loan tax guide: interest deductibility rules, capital gains on collateral, Form 1099-INT reporting, stablecoins, and tax-efficient borrowing strategies for 2026.',
+  title: "Crypto Loan Tax Guide 2026: Interest Deductibility, Capital",
+  description: "Complete crypto loan tax guide: interest deductibility rules, capital gains on collateral, Form 1099-INT reporting, stablecoins, and tax-efficient borrowing",
   keywords: ['crypto loan tax', 'interest deductible', 'capital gains crypto', '1099 reporting', 'crypto tax strategy', 'tax-efficient borrowing'],
   openGraph: {
     type: 'article',
@@ -671,6 +671,56 @@ export default function CryptoLoanTaxGuide() {
 
         <div style={{ ...infoBoxStyle, marginTop: 40, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is educational, not tax or legal advice. Tax rules vary by jurisdiction (US vs. international). Consult with a qualified tax professional or CPA before making crypto borrowing decisions. Tax laws are evolving; 2026 guidance may differ from prior years. Always file accurate tax returns and keep documentation. Penalties for tax fraud can exceed 75% of tax liability.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

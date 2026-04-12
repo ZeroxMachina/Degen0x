@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -11,7 +12,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best DeFi Wallets of ${CURRENT_YEAR} - Top Wallets for DeFi | ${SITE_NAME}`,
   description: `Compare the best wallets for DeFi in ${CURRENT_YEAR}. MetaMask, Rabby, Phantom, Safe and more. Expert picks for lending, swapping, yield farming, and dApp access.`,
-};
+  alternates: { canonical: "/wallets/best/defi" }};
 
 const faqs = [
   { question: "What is the best wallet for DeFi?", answer: "MetaMask is the most widely compatible DeFi wallet, supported by virtually every Ethereum-based dApp. Rabby is the safest choice for DeFi with its pre-transaction simulation. Phantom is best for Solana DeFi. Safe is essential for teams managing DeFi positions collectively." },
@@ -29,7 +30,14 @@ export default function BestDeFiWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Crypto Wallets", href: "/wallets" },
@@ -105,6 +113,7 @@ export default function BestDeFiWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/defi", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/defi"}) }} />
     </div>
   );
 }

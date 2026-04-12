@@ -5,8 +5,8 @@ import BackToTop from "@/components/BackToTop";
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Monad Blockchain Guide 2026 — Parallel EVM Layer 1 Explained | degen0x',
-  description: 'Complete guide to Monad: a 10,000 TPS, fully EVM-compatible Layer 1 blockchain. Learn MonadBFT consensus, parallel execution, architecture, ecosystem, MON tokenomics, and comparison to Solana, MegaETH, Sei, and Aptos.',
+  title: "Monad Blockchain Guide 2026 — Parallel EVM Layer 1 Explained",
+  description: "Complete guide to Monad: a 10,000 TPS, fully EVM-compatible Layer 1 blockchain. Learn MonadBFT consensus, parallel execution, architecture, ecosystem, MON",
   keywords: ['Monad blockchain', 'Layer 1', 'EVM compatible', 'MonadBFT', 'parallel execution', 'MON token', 'Monad mainnet', 'DeFi blockchain 2026', 'blockchain consensus'],
   openGraph: {
     type: 'article',

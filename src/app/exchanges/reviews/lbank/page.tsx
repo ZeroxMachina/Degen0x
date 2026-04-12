@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -29,7 +31,7 @@ const product = {
 export const metadata: Metadata = {
   title: `LBank Review (${CURRENT_YEAR}) - 800+ Altcoins & Copy Trading | ${SITE_NAME}`,
   description: `Complete LBank review for ${CURRENT_YEAR}. Covers fees, 800+ supported coins, copy trading, grid bots, security, and how it compares to top exchanges.`,
-};
+  alternates: { canonical: "/exchanges/reviews/lbank" }};
 
 const overview =
   "LBank is a centralized cryptocurrency exchange that has been operating since 2015. Headquartered in Hong Kong, the platform serves users in over 200 countries and regions, offering access to more than 800 cryptocurrencies across spot, futures, and derivative markets. LBank has positioned itself as a mid-tier exchange that appeals primarily to altcoin traders looking for early access to new tokens before they reach larger platforms.\n\nThe exchange offers a straightforward spot trading interface, perpetual futures with up to 125x leverage, grid trading bots, and a copy trading feature. LBank also runs a launchpad called LBK Labs for early-stage token sales. The platform supports fiat on-ramps through third-party providers and has gradually expanded its feature set to compete with larger rivals like Gate.io and KuCoin.\n\nWhile LBank provides solid functionality for experienced traders, its lower liquidity on many pairs, limited brand recognition, and lack of transparency around regulatory licensing are drawbacks to consider. The exchange is best suited for crypto-savvy users who understand the risks of trading on smaller platforms and want access to emerging tokens.";

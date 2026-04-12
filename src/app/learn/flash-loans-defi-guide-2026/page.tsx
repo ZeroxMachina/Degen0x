@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Flash Loans in DeFi Guide 2026 — How They Work | degen0x',
-  description:
-    'Master flash loans: Aave, dYdX, Balancer, Uniswap. Learn uncollateralized lending, atomic transactions, arbitrage, oracle attacks, MEV, and flash loan economics.',
+  description: "Master flash loans: Aave, dYdX, Balancer, Uniswap. Learn uncollateralized lending, atomic transactions, arbitrage, oracle attacks, MEV, and flash loan",
   keywords: [
     'flash loans',
     'DeFi flash loans',

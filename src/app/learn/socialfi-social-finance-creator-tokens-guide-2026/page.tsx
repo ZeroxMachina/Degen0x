@@ -209,12 +209,12 @@ const pageStyles = {
 };
 
 export const metadata: Metadata = {
-  title: 'SocialFi: Social Finance & Creator Tokens Guide 2026 | degen0x',
-  description: 'Complete guide to SocialFi, creator tokens, decentralized social platforms, and onchain reputation. Learn about Farcaster, Lens, and emerging social finance trends.',
+  title: "SocialFi: Social Finance & Creator Tokens Guide 2026",
+  description: "Complete guide to SocialFi, creator tokens, decentralized social platforms, and onchain reputation. Learn about Farcaster, Lens, and emerging social finance",
   keywords: ['socialfi', 'creator tokens', 'social finance', 'farcaster', 'lens protocol', 'decentralized social media', 'desoc', 'onchain reputation', 'dao governance', 'social tokens', 'crypto communities', 'web3 social', 'token economics', 'friend.tech', 'social graph'],
   openGraph: {
     type: 'article',
-    title: 'SocialFi: Social Finance & Creator Tokens Guide 2026 | degen0x',
+    title: "SocialFi: Social Finance & Creator Tokens Guide 2026",
     description: 'Complete guide to SocialFi, creator tokens, decentralized social platforms, and onchain reputation.',
     publishedTime: '2026-04-03T00:00:00Z',
     authors: ['degen0x'],

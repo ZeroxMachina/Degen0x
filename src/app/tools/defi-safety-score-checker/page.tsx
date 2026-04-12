@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Safety Score Checker: DefiLlama, CertiK Skynet, Gauntlet Risk | degen0x',
-  description: 'Compare DeFi safety scoring tools: DeFi Safety, DefiLlama risk dashboard, Exponential.fi ratings, CertiK Skynet. Evaluate smart contract risk, oracle risk, governance risk.',
+  title: "DeFi Safety Score Checker: DefiLlama, CertiK Skynet,",
+  description: "Compare DeFi safety scoring tools: DeFi Safety, DefiLlama risk dashboard, Exponential.fi ratings, CertiK Skynet. Evaluate smart contract risk, oracle risk,",
   keywords: ['DeFi safety', 'DeFi risk assessment', 'CertiK Skynet', 'Gauntlet', 'smart contract audit', 'oracle risk', 'DeFi protocol risk'],
   openGraph: {
     title: 'DeFi Safety Score Checker',

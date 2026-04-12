@@ -1,14 +1,15 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
-  title: 'Ondo Finance Guide 2026 — Tokenized Treasuries & RWA | degen0x',
+  title: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA",
   description: 'Complete guide to Ondo Finance: $2.7B+ TVL, USDY, OUSG, Ondo Global Markets, and ONDO token. The largest provider of tokenized US Treasuries and stocks in 2026.',
   keywords: ['Ondo Finance', 'ONDO token', 'tokenized treasuries', 'USDY', 'OUSG', 'RWA', 'real world assets', 'tokenized stocks', 'Ondo Chain', 'Franklin Templeton'],
   openGraph: {
     type: 'article',
-    title: 'Ondo Finance Guide 2026 — Tokenized Treasuries & RWA | degen0x',
+    title: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA",
     description: 'Complete guide to Ondo Finance: $2.7B+ TVL, USDY, OUSG, Ondo Global Markets, and ONDO token. The largest provider of tokenized US Treasuries and stocks in 2026.',
     url: 'https://degen0x.com/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026',
     images: [{ url: 'https://degen0x.com/og-ondo-finance-rwa-2026.svg', width: 1200, height: 630, alt: 'Ondo Finance — Tokenized Treasuries & RWA Guide 2026' }],
@@ -226,7 +227,14 @@ export default function OndoFinanceGuide() {
 
   return (
     <div style={pageStyle}>
-      <div style={containerStyle}>
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <div style={containerStyle}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>
           <a href="/" style={{ color: '#8b949e', textDecoration: 'none' }}>Home</a>
           <span style={{ margin: '0 6px' }}>›</span>

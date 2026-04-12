@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'What Is a DAO Explained 2026: Governance, Treasury & Real Examples | degen0x',
-  description: 'Complete guide to DAOs in 2026. Learn governance structures, voting mechanisms, real examples (MakerDAO $8B+, Uniswap, Aave, Lido, Nouns), treasury management, and governance risks.',
+  title: "What Is a DAO Explained 2026: Governance, Treasury & Real",
+  description: "Complete guide to DAOs in 2026. Learn governance structures, voting mechanisms, real examples (MakerDAO $8B+, Uniswap, Aave, Lido, Nouns), treasury management,",
   keywords: ['DAO', 'decentralized autonomous organization', 'governance token', 'voting mechanism', 'MakerDAO', 'Uniswap DAO', 'Aave', 'Lido', 'Snapshot voting', 'treasury management', 'degen0x'],
   openGraph: {
     type: 'article',

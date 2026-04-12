@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'PayFi & Crypto Payments Guide 2026 | degen0x',
-  description:
-    'Comprehensive guide to PayFi and crypto payments infrastructure in 2026. Learn Stripe Tempo, Circle Arc, stablecoin adoption, Machine Payments Protocol, and the future of blockchain payments.',
+  description: "Comprehensive guide to PayFi and crypto payments infrastructure in 2026. Learn Stripe Tempo, Circle Arc, stablecoin adoption, Machine Payments Protocol, and",
   keywords: [
     'PayFi',
     'crypto payments',

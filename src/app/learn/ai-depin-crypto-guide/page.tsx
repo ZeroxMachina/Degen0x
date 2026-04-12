@@ -7,9 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "AI x DePIN: The Convergence of AI and Decentralized Infrastructure | degen0x",
-  description:
-    "Explore the convergence of AI and decentralized infrastructure networks. Learn about DePIN, top projects like Render and Akash, use cases, and investment opportunities.",
+  title: "AI x DePIN: The Convergence of AI and Decentralized",
+  description: "Explore the convergence of AI and decentralized infrastructure networks. Learn about DePIN, top projects like Render and Akash, use cases, and investment",
   keywords: [
     "AI DePIN",
     "decentralized infrastructure",
@@ -43,12 +42,13 @@ export const metadata: Metadata = {
     description: "DePIN networks provide decentralized GPU compute for AI at 50-80% less than cloud providers.",
     images: ["https://degen0x.com/api/og?title=AI+x+DePIN:+Decentralized+Infrastructure+for+AI&category=Learn&type=learn"],
   },
-};
+
+  alternates: { canonical: "/learn/ai-depin-crypto-guide" }};
 
 export default function AIDepinGuide() {
   const articleSchema = generateArticleSchema({
     title: "AI x DePIN: The Convergence of AI and Decentralized Infrastructure",
-    description: "Explore the convergence of AI and decentralized infrastructure networks. Learn about DePIN, top projects like Render and Akash, use cases, and investment opportunities.",
+    description: "Explore the convergence of AI and decentralized infrastructure networks. Learn about DePIN, top projects like Render and Akash, use cases, and investment",
     url: "https://degen0x.com/learn/ai-depin-crypto-guide",
     datePublished: "2026-03-16T00:00:00Z",
     dateModified: "2026-03-16T00:00:00Z",
@@ -643,6 +643,56 @@ export default function AIDepinGuide() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

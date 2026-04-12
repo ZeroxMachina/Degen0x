@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Compound Interest Crypto Calculator | degen0x',
-  description: 'Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations for 2026.',
+  description: "Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations",
   keywords: ['compound interest crypto calculator', 'APY crypto', 'APR crypto', 'crypto compounding', 'yield calculator', 'degen0x'],
   openGraph: {
     type: 'article',
     title: 'Compound Interest Crypto Calculator | degen0x',
-    description: 'Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations for 2026.',
+    description: "Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/tools/compound-interest-crypto-calculator',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Compound Interest Crypto Calculator | degen0x',
-    description: 'Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations for 2026.',
+    description: "Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations",
     image: 'https://degen0x.com/og-tools.svg',
   },
   alternates: {
@@ -31,7 +31,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Compound Interest Crypto Calculator',
-  description: 'Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations for 2026.',
+  description: "Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations",
   image: 'https://degen0x.com/og-tools.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

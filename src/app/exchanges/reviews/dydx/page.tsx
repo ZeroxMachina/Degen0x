@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `dYdX Review (${CURRENT_YEAR}) | degen0x`,
   description:
     "Complete dYdX review covering perpetual futures, fees, governance, and decentralized trading features. Is dYdX the best DEX for derivatives?",
-};
+  alternates: { canonical: "/exchanges/reviews/dydx" }};
 
 export default function DYdXReviewPage() {
   return (

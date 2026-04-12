@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -11,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Gemini vs Coinbase (${CURRENT_YEAR}): Security-Focused Comparison | ${SITE_NAME}`,
   description: `Gemini vs Coinbase security comparison for ${CURRENT_YEAR}. Compare custody, compliance, insurance, and institutional features for security-conscious investors.`,
-};
+  alternates: { canonical: "/exchanges/compare/gemini-vs-coinbase" }};
 
 const items: ComparisonItem[] = [
   { name: "Gemini", slug: "gemini", rating: 4.5, affiliateUrl: "https://degen0x.com/go/gemini", features: { "Regulation": "NYDFS Trust Company", "SOC Certification": "SOC 2 Type 2", "Insurance": "Hot wallet + FDIC on USD", "Custody": "Gemini Custody", "Cold Storage": "Air-gapped, multi-sig", "Security Audits": "Regular third-party", "2FA Options": "Hardware key, authenticator", "Compliance": "Full AML/KYC" } },
@@ -127,6 +128,57 @@ export default function GeminiVsCoinbasePage() {
           },
         ]}
       />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/gemini Vs Coinbase", "description": "Crypto content on degen0x", "url": "https://degen0x.com/exchanges/compare/gemini-vs-coinbase"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

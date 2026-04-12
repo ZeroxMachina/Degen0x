@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Staking-as-a-Service Providers Compared 2026 — Lido, Kiln, Figment, P2P & More | degen0x",
+  title: "Staking-as-a-Service Providers Compared 2026 — Lido, Kiln,",
   description: "Compare top staking-as-a-service providers in 2026: Lido, Kiln, Figment, P2P.org, and Coinbase. Fees, supported chains, institutional features, and security.",
   keywords: [
     "staking as a service",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "validator service"
   ],
   openGraph: {
-    title: "Staking-as-a-Service Providers Compared 2026 — Lido, Kiln, Figment, P2P & More | degen0x",
+    title: "Staking-as-a-Service Providers Compared 2026 — Lido, Kiln,",
     description: "Compare top staking-as-a-service providers in 2026: Lido, Kiln, Figment, P2P.org, and Coinbase. Fees, supported chains, institutional features, and security.",
     url: `${SITE_URL}/learn/staking-as-a-service-providers-guide-2026`,
     type: "article",
@@ -45,7 +45,8 @@ export const metadata: Metadata = {
     title: "Staking-as-a-Service Providers Compared 2026",
     description: "Compare Lido, Kiln, Figment, P2P.org, Coinbase and other leading staking providers.",
   },
-};
+
+  alternates: { canonical: "/learn/staking-as-a-service-providers-guide-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

@@ -7,8 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Market Making Guide 2026: CEX, DEX & Automated Liquidity Provision',
-  description: 'Complete guide to crypto market making and liquidity provision. Learn CEX order book strategies, DEX AMM mechanics, impermanent loss management, market making firms, grid trading, and LP yield optimization.',
+  title: "Crypto Market Making Guide 2026: CEX, DEX & Automated",
+  description: "Complete guide to crypto market making and liquidity provision. Learn CEX order book strategies, DEX AMM mechanics, impermanent loss management, market making",
   keywords: [
     'market making',
     'liquidity provision',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: 'article',
-    title: 'Crypto Market Making Guide 2026: CEX, DEX & Automated Liquidity Provision',
+    title: "Crypto Market Making Guide 2026: CEX, DEX & Automated",
     description: 'Learn market making strategies, liquidity provision, AMM mechanics, impermanent loss management, and professional market making firms.',
     url: 'https://degen0x.com/learn/crypto-market-making-liquidity-provision-guide-2026',
     publishedTime: '2026-04-04T00:00:00Z',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Market Making Guide 2026: CEX, DEX & Automated Liquidity Provision',
+    title: "Crypto Market Making Guide 2026: CEX, DEX & Automated",
     description: 'Master market making strategies, liquidity provision, AMM mechanics, and LP yield optimization in crypto.',
     images: ['https://degen0x.com/og-crypto-market-making-2026.svg'],
   },

@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `BitMEX Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth BitMEX review covering perpetual futures, leverage trading, fees, security, and whether this pioneer derivatives exchange suits your trading needs.",
-};
+  alternates: { canonical: "/exchanges/reviews/bitmex" }};
 
 export default function BitMEXReview() {
   return (

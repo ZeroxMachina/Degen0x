@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Radiant Capital",
   slug: "radiant",
   rating: 3.8,
-  description: "Radiant Capital is an omnichain lending protocol built on LayerZero that enables users to deposit collateral on one chain and borrow against it on another, creating a unified cross-chain money market.",
+  description: "Radiant Capital is an omnichain lending protocol built on LayerZero that enables users to deposit collateral on one chain and borrow against it on another,",
   pros: ["Cross-chain lending via LayerZero", "Unified liquidity across multiple chains", "Dynamic liquidity mining with dLP locking", "Attractive yields for active participants"],
   cons: ["Suffered major exploit in October 2024", "Complex tokenomics with dLP requirements", "Higher risk profile than single-chain protocols", "RDNT emissions can dilute value"],
   fees: "Variable (supply/borrow spread)",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Radiant Capital Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Radiant Capital review covering cross-chain lending, LayerZero integration, dLP tokenomics, security concerns, and yield opportunities.",
-};
+  alternates: { canonical: "/defi-lending/reviews/radiant" }};
 
 export default function RadiantReview() {
   return (

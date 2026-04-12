@@ -6,8 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'dYdX Chain Guide 2026 — Cosmos Perps DEX & MegaVault | degen0x',
-  description: 'Complete guide to dYdX Chain—a Cosmos appchain for decentralized perpetual futures. Learn MegaVault permissionless markets, trading mechanics, tokenomics, and why it competes with Hyperliquid. $200M daily volume.',
+  title: "dYdX Chain Guide 2026 — Cosmos Perps DEX & MegaVault",
+  description: "Complete guide to dYdX Chain—a Cosmos appchain for decentralized perpetual futures. Learn MegaVault permissionless markets, trading mechanics, tokenomics, and",
   keywords: ['dYdX', 'dYdX Chain', 'Cosmos appchain', 'perpetual DEX', 'MegaVault', 'permissionless markets', 'DYDX token', 'decentralized derivatives', 'blockchain perps', '2026'],
   openGraph: {
     type: 'article',

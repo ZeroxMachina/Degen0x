@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Plasma (XPL) Stablecoin Chain Guide 2026 — Zero-Fee USDT Layer 1 | degen0x',
-  description: 'Complete guide to Plasma, the Bitcoin-anchored Layer 1 purpose-built for stablecoins in 2026. Zero-fee USDT transfers, XPL tokenomics, EVM compatibility, and how to use it.',
+  title: "Plasma (XPL) Stablecoin Chain Guide 2026 — Zero-Fee USDT",
+  description: "Complete guide to Plasma, the Bitcoin-anchored Layer 1 purpose-built for stablecoins in 2026. Zero-fee USDT transfers, XPL tokenomics, EVM compatibility, and",
   keywords: ['Plasma chain', 'XPL token', 'stablecoin Layer 1', 'zero-fee USDT', 'Bitcoin sidechain stablecoins', 'Plasma EVM', 'Tether chain', 'stablechain 2026'],
   alternates: {
     canonical: 'https://degen0x.com/learn/plasma-xpl-stablecoin-chain-guide-2026',

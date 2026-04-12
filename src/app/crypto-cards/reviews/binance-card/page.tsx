@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = cryptoCards.find((c) => c.slug === "binance-card")!;
 export const metadata: Metadata = {
   title: `Binance Card Review (${CURRENT_YEAR}): Cashback, Features & Pros/Cons | degen0x`,
   description: "In-depth Binance Card review covering BNB-tiered cashback, zero transaction fees, supported cryptocurrencies, and regional availability.",
-};
+  alternates: { canonical: "/crypto-cards/reviews/binance-card" }};
 
 export default function BinanceCardReviewPage() {
   return (

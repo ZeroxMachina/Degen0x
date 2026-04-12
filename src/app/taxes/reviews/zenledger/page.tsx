@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `ZenLedger Review (${CURRENT_YEAR}): Features, Pricing & Comparison | ${SITE_NAME}`,
   description: "In-depth ZenLedger review covering features, pricing, DeFi support, tax-loss harvesting, and how it compares to other crypto tax software.",
-};
+  alternates: { canonical: "/taxes/reviews/zenledger" }};
 
 export default function ZenLedgerReview() {
   return (

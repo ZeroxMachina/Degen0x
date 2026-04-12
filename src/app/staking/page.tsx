@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import StakingDashboard from '@/components/StakingDashboard';

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bitcoin Savings Plan 2026: Long-Term DCA Strategy, Accumulation & Wealth Building',
-  description: 'Complete Bitcoin savings plan guide: dollar-cost averaging, accumulation targets, cold storage security, tax-efficient strategies, wealth projections. Build multi-generational Bitcoin wealth.',
+  title: "Bitcoin Savings Plan 2026: Long-Term DCA Strategy,",
+  description: "Complete Bitcoin savings plan guide: dollar-cost averaging, accumulation targets, cold storage security, tax-efficient strategies, wealth projections. Build",
   keywords: ['Bitcoin savings', 'dollar-cost averaging', 'DCA strategy', 'Bitcoin accumulation', 'long-term Bitcoin investing', 'Bitcoin wealth building', 'Bitcoin cold storage'],
   openGraph: {
     type: 'article',
@@ -352,6 +352,56 @@ export default function BitcoinSavingsPlanGuide() {
 
         <div style={{ ...infoBoxStyle, marginTop: 40, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is educational, not financial advice. Bitcoin is volatile and speculative. Past performance does not guarantee future results. Regulatory changes, technical issues, and adoption uncertainty create real risks. Consult a financial advisor before committing substantial capital. Never invest more than you can afford to lose.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

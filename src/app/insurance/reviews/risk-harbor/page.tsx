@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Risk Harbor",
   slug: "risk-harbor",
   rating: 3.6,
-  description: "Risk Harbor is an algorithmic DeFi insurance protocol that uses automated, trustless claim assessment for stablecoin depegging and yield-bearing asset protection, removing human subjectivity from the claims process.",
+  description: "Risk Harbor is an algorithmic DeFi insurance protocol that uses automated, trustless claim assessment for stablecoin depegging and yield-bearing asset",
   pros: ["Automated trustless claim payouts", "No subjective human claim assessment", "Instant claim settlement when triggered", "Stablecoin depeg specialization", "No KYC requirement"],
   cons: ["Very limited coverage types", "Small capital pool", "Only covers specific depeg scenarios", "Limited protocol adoption", "Cannot handle nuanced exploit claims"],
   fees: "2-7% annually",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Risk Harbor Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Risk Harbor review covering algorithmic insurance, automated claims, stablecoin depeg coverage, and how it compares to discretionary insurance protocols.",
-};
+  alternates: { canonical: "/insurance/reviews/risk-harbor" }};
 
 export default function RiskHarborReviewPage() {
   return (

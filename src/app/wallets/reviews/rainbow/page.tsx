@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Rainbow Wallet Review (${CURRENT_YEAR}) - Best Ethereum Mobile Wallet? | ${SITE_NAME}`,
   description: `Detailed Rainbow wallet review for ${CURRENT_YEAR}. Covers Ethereum and L2 support, NFT experience, swap features, and mobile-first design.`,
-};
+  alternates: { canonical: "/wallets/reviews/rainbow" }};
 
 const product = {
   name: "Rainbow",

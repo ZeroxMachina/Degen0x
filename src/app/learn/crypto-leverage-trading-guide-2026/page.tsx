@@ -9,13 +9,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Leverage Trading Guide 2026 | Margin, Liquidation & Risk Management',
-  description: 'Complete guide to crypto leverage trading in 2026. Learn margin trading, liquidation mechanics, risk management, and best practices for perpetual futures and margin positions.',
+  title: "Crypto Leverage Trading Guide 2026 | Margin, Liquidation &",
+  description: "Complete guide to crypto leverage trading in 2026. Learn margin trading, liquidation mechanics, risk management, and best practices for perpetual futures and",
   keywords: 'crypto leverage trading, crypto margin trading guide, perpetual futures, liquidation, risk management, margin trading explained',
   openGraph: {
     type: 'article',
-    title: 'Crypto Leverage Trading Guide 2026 | Margin, Liquidation & Risk Management',
-    description: 'Complete guide to crypto leverage trading in 2026. Learn margin trading, liquidation mechanics, risk management, and best practices for perpetual futures and margin positions.',
+    title: "Crypto Leverage Trading Guide 2026 | Margin, Liquidation &",
+    description: "Complete guide to crypto leverage trading in 2026. Learn margin trading, liquidation mechanics, risk management, and best practices for perpetual futures and",
     url: `${SITE_URL}/learn/crypto-leverage-trading-guide-2026`,
     publishedTime: '2026-03-28T00:00:00Z',
     authors: ['degen0x'],

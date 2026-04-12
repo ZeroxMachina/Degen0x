@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Ethereum Gas Fees Optimization Guide 2026 — Save on Gas | degen0x',
-  description:
-    'Master Ethereum gas fees in 2026: EIP-1559, EIP-4844 blobs, L2 optimization, Layer 2 cost comparison, gas timing strategies, MEV protection, and 80%+ gas savings.',
+  title: "Ethereum Gas Fees Optimization Guide 2026 — Save on Gas",
+  description: "Master Ethereum gas fees in 2026: EIP-1559, EIP-4844 blobs, L2 optimization, Layer 2 cost comparison, gas timing strategies, MEV protection, and 80%+ gas",
   keywords: [
     'ethereum gas fees',
     'gas optimization',

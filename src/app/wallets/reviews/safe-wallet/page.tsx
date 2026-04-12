@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Safe (Gnosis Safe) Wallet Review (${CURRENT_YEAR}) - Best Multisig Wallet? | ${SITE_NAME}`,
   description: `Detailed Safe wallet review for ${CURRENT_YEAR}. Covers multi-signature security, DAO treasury management, spending policies, and institutional features.`,
-};
+  alternates: { canonical: "/wallets/reviews/safe-wallet" }};
 
 const product = {
   name: "Safe (Gnosis Safe)",
   slug: "safe-wallet",
   rating: 4.6,
-  description: "Safe is the industry-standard multisig wallet securing over $100 billion in digital assets, used by DAOs, protocols, and institutions for shared treasury management.",
+  description: "Safe is the industry-standard multisig wallet securing over $100 billion in digital assets, used by DAOs, protocols, and institutions for shared treasury",
   pros: [
     "Battle-tested multisig securing over $100B in assets",
     "Highly configurable M-of-N signer thresholds",

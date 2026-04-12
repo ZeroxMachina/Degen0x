@@ -1,11 +1,12 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: 'Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & CLOUD',
-  description: 'Complete guide to Sanctum, the universal liquid staking layer on Solana. Learn how the Infinity pool unifies LST liquidity, how Sanctum LSTs work, and what CLOUD tokenomics mean in 2026.',
+  title: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &",
+  description: "Complete guide to Sanctum, the universal liquid staking layer on Solana. Learn how the Infinity pool unifies LST liquidity, how Sanctum LSTs work, and what",
   keywords: [
     'Sanctum',
     'Sanctum Infinity',
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://degen0x.com/learn/sanctum-solana-liquid-staking-infinity-guide-2026' },
   openGraph: {
     type: 'article',
-    title: 'Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & CLOUD',
+    title: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &",
     description: 'How Sanctum unifies Solana liquid staking liquidity through the Infinity pool, Router, and Reserve — plus CLOUD tokenomics in 2026.',
     publishedTime: '2026-04-10T00:00:00Z',
     authors: ['degen0x'],
@@ -109,7 +110,14 @@ export default function SanctumGuide() {
 
   return (
     <div style={pageStyle}>
-      <article aria-label="Guide: Sanctum Solana Liquid Staking">
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <article aria-label="Guide: Sanctum Solana Liquid Staking">
       <div style={containerStyle}>
         <Breadcrumb items={[
           { label: "Home", href: "/" },

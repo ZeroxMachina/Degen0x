@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Mobile Crypto Wallet 2026: Trust Wallet, MetaMask, Phantom, Zerion vs Rainbow | degen0x',
+  title: "Best Mobile Crypto Wallet 2026: Trust Wallet, MetaMask,",
   description: 'Compare mobile wallets: Trust Wallet (70M users), MetaMask Mobile, Phantom, Coinbase Wallet, Zerion, Rainbow, Exodus.',
   keywords: ['best mobile crypto wallet', 'mobile wallet 2026', 'Trust Wallet', 'MetaMask Mobile', 'Phantom Mobile', 'Zerion', 'Rainbow wallet'],
   openGraph: { type: 'article', title: 'Best Mobile Crypto Wallet 2026', description: 'Mobile wallet comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/best-mobile-crypto-wallet-2026', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'Mobile Wallets' }] },

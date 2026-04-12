@@ -6,8 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Sei Network Guide 2026 — Parallelized EVM, Trading & DeFi | degen0x',
-  description: 'Complete guide to Sei Network: the first parallelized EVM with 400ms finality, $1.1B+ TVL, 32M+ daily transactions. Explore DeFi, Yei Finance, tokenomics, and institutional partnerships in 2026.',
+  title: "Sei Network Guide 2026 — Parallelized EVM, Trading & DeFi",
+  description: "Complete guide to Sei Network: the first parallelized EVM with 400ms finality, $1.1B+ TVL, 32M+ daily transactions. Explore DeFi, Yei Finance, tokenomics, and",
   keywords: ['Sei Network', 'parallelized EVM', 'Giga upgrade', 'Yei Finance', 'DeFi trading', 'Sei DeFi ecosystem 2026', 'SEI token', 'twin-turbo consensus'],
   openGraph: {
     type: 'article',
@@ -856,11 +856,11 @@ export default function SeiNetworkGuide() {
               style={faqItemStyle}
             >
               <summary style={faqQuestionStyle}>
-                {faq.q}
+                {faq.question}
                 <span className="faq-icon" style={{ transition: 'transform 0.2s', color: '#6366f1', fontSize: 20, flexShrink: 0, marginLeft: 12 }}>+</span>
               </summary>
               <p style={faqAnswerStyle}>
-                {faq.a}
+                {faq.answer}
               </p>
             </details>
           ))}

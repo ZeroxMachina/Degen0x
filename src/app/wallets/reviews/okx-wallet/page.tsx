@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "OKX Wallet",
   slug: "okx-wallet",
   rating: 4.0,
-  description:
-    "OKX Wallet is a multi-chain self-custody wallet supporting 80+ blockchains with a built-in DEX aggregator, cross-chain bridge, NFT marketplace, and integration with OKX exchange.",
+  description: "OKX Wallet is a multi-chain self-custody wallet supporting 80+ blockchains with a built-in DEX aggregator, cross-chain bridge, NFT marketplace, and integration",
   pros: [
     "Supports 80+ blockchains with excellent multi-chain coverage",
     "Powerful DEX aggregator with cross-chain swap routing",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `OKX Wallet Review (${CURRENT_YEAR}) - Multi-Chain Web3 Wallet | ${SITE_NAME}`,
   description: `Complete OKX Wallet review for ${CURRENT_YEAR}. Covers 80+ chain support, DEX aggregator, MPC wallet option, NFT marketplace, and OKX integration.`,
-};
+  alternates: { canonical: "/wallets/reviews/okx-wallet" }};
 
 const overview =
   "OKX Wallet is the self-custody wallet arm of OKX, one of the world's largest cryptocurrency exchanges. The wallet has evolved into a comprehensive Web3 gateway supporting 80+ blockchains, with a built-in DEX aggregator, cross-chain bridge, NFT marketplace, and inscription tools. OKX Wallet is available as a mobile app (iOS and Android) and a browser extension.\n\nWhat sets OKX Wallet apart is its combination of breadth and depth. The DEX aggregator checks prices across hundreds of liquidity sources across all supported chains. The wallet offers both traditional seed phrase accounts and MPC (multi-party computation) wallet accounts for seedless recovery. The deep integration with OKX exchange allows seamless movement between self-custody and centralized exchange trading.";

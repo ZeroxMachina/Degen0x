@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "BENQI",
   slug: "benqi",
   rating: 4.0,
-  description: "BENQI is the leading lending and liquid staking protocol on Avalanche, offering competitive rates for lending and borrowing plus sAVAX liquid staking for Avalanche validators.",
+  description: "BENQI is the leading lending and liquid staking protocol on Avalanche, offering competitive rates for lending and borrowing plus sAVAX liquid staking for",
   pros: ["Largest lending protocol on Avalanche", "Integrated liquid staking with sAVAX", "Low gas fees on Avalanche C-Chain", "Simple and clean user interface", "Strong Avalanche ecosystem integration"],
   cons: ["Limited to Avalanche ecosystem only", "Smaller TVL than multi-chain competitors", "QI token has limited price appreciation", "Fewer asset markets than Aave"],
   fees: "Variable (supply/borrow spread)",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `BENQI Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth BENQI review covering Avalanche lending, sAVAX liquid staking, rates, security, and how it compares to other DeFi lending protocols.",
-};
+  alternates: { canonical: "/defi-lending/reviews/benqi" }};
 
 export default function BenqiReview() {
   return (

@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Morpho Protocol Lending Guide 2026: Blue, Optimizer & $1B TVL | degen0x',
+  title: "Morpho Protocol Lending Guide 2026: Blue, Optimizer & $1B",
   description: 'Complete guide to Morpho Protocol lending. Learn about Morpho Blue peer-to-peer matching, optimized rates, $1B+ TVL, and curated vaults for DeFi yield.',
   keywords: ['Morpho Protocol', 'Morpho Blue', 'DeFi lending', 'peer-to-peer matching', 'optimized rates', 'Morpho Optimizer', 'curated vaults', 'MORPHO governance'],
   openGraph: {

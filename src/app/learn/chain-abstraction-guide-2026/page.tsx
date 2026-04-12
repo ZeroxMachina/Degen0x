@@ -1,13 +1,13 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
-  title: "Chain Abstraction Guide 2026: One Account, Every Chain | degen0x",
-  description:
-    "Chain abstraction lets you use one account across every blockchain — no bridging, no chain switching, no gas headaches. The complete 2026 guide to Particle Network, NEAR Chain Signatures, Socket, and more.",
+  title: "Chain Abstraction Guide 2026: One Account, Every Chain",
+  description: "Chain abstraction lets you use one account across every blockchain — no bridging, no chain switching, no gas headaches. The complete 2026 guide to Particle",
   keywords: [
     "chain abstraction",
     "chain abstraction guide 2026",
@@ -22,8 +22,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Chain Abstraction Guide 2026: One Account, Every Chain",
-    description:
-      "Chain abstraction lets you use one account across every blockchain — no bridging, no chain switching, no gas headaches. The complete 2026 guide to Particle Network, NEAR Chain Signatures, Socket, and more.",
+    description: "Chain abstraction lets you use one account across every blockchain — no bridging, no chain switching, no gas headaches. The complete 2026 guide to Particle",
     type: "article",
     url: "https://degen0x.com/learn/chain-abstraction-guide-2026",
     publishedTime: "2026-03-16T00:00:00Z",
@@ -40,11 +39,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Chain Abstraction Guide 2026: One Account, Every Chain",
-    description:
-      "Chain abstraction lets you use one account across every blockchain — no bridging, no chain switching, no gas headaches. The complete 2026 guide to Particle Network, NEAR Chain Signatures, Socket, and more.",
+    description: "Chain abstraction lets you use one account across every blockchain — no bridging, no chain switching, no gas headaches. The complete 2026 guide to Particle",
     images: ["https://degen0x.com/api/og?title=Chain+Abstraction+Guide+2026:+One+Account,+Every+Chain&category=Learn&type=learn"],
   },
-};
+
+  alternates: { canonical: "/learn/chain-abstraction-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Chain Abstraction Guide 2026: One Account, Every Chain",
@@ -96,7 +95,14 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function ChainAbstractionGuide2026() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
-      <StructuredData data={combinedSchema} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <StructuredData data={combinedSchema} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px 80px" }}>
         {/* Breadcrumb */}
         <nav

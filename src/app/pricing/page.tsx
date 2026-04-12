@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import APIPricing from "@/components/APIPricing";
 
 export const metadata: Metadata = {
@@ -9,7 +11,8 @@ export const metadata: Metadata = {
     title: "API Pricing | degen0x",
     description: "Real-time crypto API with free, pro, and enterprise tiers.",
   },
-};
+
+  alternates: { canonical: "/pricing" }};
 
 export default function PricingPage() {
   return <APIPricing />;

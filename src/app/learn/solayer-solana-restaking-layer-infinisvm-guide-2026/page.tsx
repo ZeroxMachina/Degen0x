@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: 'Solayer Guide 2026 — Solana Restaking, sSOL, sUSD & InfiniSVM',
+  title: "Solayer Guide 2026 — Solana Restaking, sSOL, sUSD &",
   description: 'Complete guide to Solayer, Solana&rsquo;s restaking protocol. Learn about sSOL liquid restaking, sUSD stablecoin, InfiniSVM L1, and LAYER tokenomics.',
   keywords: 'Solayer, LAYER token, Solana restaking, sSOL, sUSD, InfiniSVM, restaking, Solana DeFi, AVS, liquid restaking',
   alternates: {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'article',
-    title: 'Solayer Guide 2026 — Solana Restaking, sSOL, sUSD & InfiniSVM',
+    title: "Solayer Guide 2026 — Solana Restaking, sSOL, sUSD &",
     description: 'Complete guide to Solayer, Solana\'s restaking protocol. Learn about sSOL liquid restaking, sUSD stablecoin, InfiniSVM L1, and LAYER tokenomics.',
     publishedTime: '2026-04-10T00:00:00Z',
     authors: ['degen0x'],
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Solayer Guide 2026 — Solana Restaking, sSOL, sUSD & InfiniSVM',
+    title: "Solayer Guide 2026 — Solana Restaking, sSOL, sUSD &",
     description: 'Complete guide to Solayer: sSOL liquid restaking, sUSD stablecoin, InfiniSVM L1, and LAYER tokenomics.',
     images: ['https://degen0x.com/og-solayer-solana-restaking-2026.svg'],
   },
@@ -117,7 +118,14 @@ export default function SolayerGuide() {
 
   return (
     <div style={pageStyle}>
-      <div style={containerStyle}>
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <div style={containerStyle}>
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Learn', href: '/learn' }, { label: 'Solayer Solana Restaking Layer Infinisvm...' }]} />
 
         <h1 style={h1Style}>Solayer: Solana&amp;rsquo;s Restaking Protocol</h1>

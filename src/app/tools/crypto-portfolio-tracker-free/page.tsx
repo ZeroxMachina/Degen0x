@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Portfolio Tracker Free 2026: CoinGecko, DeBank, Zapper, Zerion vs Delta | degen0x',
+  title: "Best Crypto Portfolio Tracker Free 2026: CoinGecko, DeBank,",
   description: 'Compare portfolio trackers: CoinGecko (free, 15+ chains), DeBank (DeFi), Zapper, Zerion, CoinStats. Track holdings, yield, P&L.',
   keywords: ['crypto portfolio tracker', 'free portfolio tracker 2026', 'CoinGecko', 'DeBank', 'Zapper', 'Zerion', 'portfolio P&L'],
   openGraph: { type: 'article', title: 'Best Portfolio Tracker 2026', description: 'Portfolio tracker comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/tools/crypto-portfolio-tracker-free', images: [{ url: 'https://degen0x.com/og-tools-portfolio.svg', width: 1200, height: 630, alt: 'Portfolio Trackers' }] },

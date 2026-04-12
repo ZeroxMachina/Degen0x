@@ -4,9 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Prediction Markets: The Complete Guide to Event Trading",
-  description:
-    "Learn how crypto prediction markets work, explore top platforms like Polymarket, understand strategies for trading on real-world events, and manage risk effectively.",
-};
+  description: "Learn how crypto prediction markets work, explore top platforms like Polymarket, understand strategies for trading on real-world events, and manage risk",
+  alternates: { canonical: "/learn/prediction-markets-guide" }};
 
 export default function PredictionMarketsGuide() {
   return (

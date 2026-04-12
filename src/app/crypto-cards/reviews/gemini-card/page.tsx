@@ -1,14 +1,15 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = cryptoCards.find((c) => c.slug === "gemini-card")!;
 
 export const metadata: Metadata = {
-  title: "Gemini Credit Card Review 2026: Crypto Rewards, No Annual Fee & More",
-  description:
-    "Our in-depth Gemini Credit Card review covers crypto rewards in 60+ tokens, no annual fee, dining cashback rates, credit-building potential, and APR details. Updated March 2026.",
-};
+  title: "Gemini Credit Card Review 2026: Crypto Rewards, No Annual",
+  description: "Our in-depth Gemini Credit Card review covers crypto rewards in 60+ tokens, no annual fee, dining cashback rates, credit-building potential, and APR details.",
+  alternates: { canonical: "/crypto-cards/reviews/gemini-card" }};
 
 export default function GeminiCardReview() {
   return (

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'NFT Ticketing Events Guide 2026: GET Protocol, YellowHeart, Ticketmaster | degen0x',
-  description: 'Complete guide to NFT event ticketing: anti-scalping with GET Protocol, creator royalties, YellowHeart for artists, and Ticketmaster integration. Prevent fraud, enable fair pricing.',
+  title: "NFT Ticketing Events Guide 2026: GET Protocol, YellowHeart,",
+  description: "Complete guide to NFT event ticketing: anti-scalping with GET Protocol, creator royalties, YellowHeart for artists, and Ticketmaster integration. Prevent",
   keywords: ['NFT ticketing', 'GET Protocol', 'YellowHeart', 'Ticketmaster NFT', 'event tickets', 'anti-scalping', 'creator royalties', 'blockchain tickets'],
   openGraph: {
     type: 'article',
@@ -605,6 +605,56 @@ export default function NFTTicketingGuide() {
             This guide is for educational purposes and not investment or financial advice. NFT ticketing is emerging technology with regulatory uncertainty. Platform selection, fee structures, and royalty terms may change. Always review platform terms, conduct due diligence, and consult legal/tax professionals. degen0x is not liable for platform failures, loss of ticket sales, regulatory enforcement, or smart contract issues. Use NFT ticketing at your own risk.
           </p>
         </section>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </article>
   );

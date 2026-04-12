@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Revolut Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Revolut Crypto review covering trading fees, 200+ supported tokens, exchange feature, and whether this super-app suits your crypto needs.",
-};
+  alternates: { canonical: "/exchanges/reviews/revolut-crypto" }};
 
 export default function RevolutCryptoReview() {
   return (

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Fluid (Instadapp) Review ${CURRENT_YEAR}: Smart Lending Protocol`,
   description:
     "Comprehensive Fluid review covering smart debt and collateral, DEX integration, lending rates, and how Instadapp's lending protocol innovates on Ethereum.",
-};
+  alternates: { canonical: "/defi-lending/reviews/fluid" }};
 
 export default function FluidReview() {
   return (

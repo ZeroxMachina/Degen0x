@@ -11,9 +11,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Ethereum Layer 2 Comparison 2026: Arbitrum vs Base vs Optimism vs zkSync",
-  description:
-    "Compare every major Ethereum L2 — Arbitrum, Base, Optimism, zkSync Era, Starknet, Scroll and more. TVL, fees, TPS, ecosystem size, and which rollup fits your use case in 2026.",
+  title: "Ethereum Layer 2 Comparison 2026: Arbitrum vs Base vs",
+  description: "Compare every major Ethereum L2 — Arbitrum, Base, Optimism, zkSync Era, Starknet, Scroll and more. TVL, fees, TPS, ecosystem size, and which rollup fits your",
   keywords:
     "ethereum layer 2, L2 comparison, arbitrum vs base, optimism vs arbitrum, zksync era, starknet, scroll, ethereum rollups 2026, best L2, cheapest L2",
   openGraph: {
@@ -43,10 +42,11 @@ export const metadata: Metadata = {
       `${SITE_URL}/og-ethereum-layer-2-comparison-guide-2026.svg`,
     ],
   },
-};
+
+  alternates: { canonical: "/learn/ethereum-layer-2-comparison-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
-  title: "Ethereum Layer 2 Comparison 2026: Arbitrum vs Base vs Optimism vs zkSync",
+  title: "Ethereum Layer 2 Comparison 2026: Arbitrum vs Base vs",
   description:
     "A comprehensive comparison of the seven largest Ethereum Layer 2 networks in March 2026, covering TVL, transaction throughput, fees, developer ecosystems, rollup technology, and use-case fit.",
   url: `${SITE_URL}/learn/ethereum-layer-2-comparison-guide-2026`,
@@ -843,13 +843,13 @@ export default function EthereumL2ComparisonGuidePage() {
                 className="text-sm font-bold mb-2"
                 style={{ color: "var(--color-text)" }}
               >
-                {faq.q}
+                {faq.question}
               </h3>
               <p
                 className="text-sm"
                 style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
               >
-                {faq.a}
+                {faq.answer}
               </p>
             </div>
           ))}
@@ -924,6 +924,56 @@ export default function EthereumL2ComparisonGuidePage() {
             })
           }}
         />
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

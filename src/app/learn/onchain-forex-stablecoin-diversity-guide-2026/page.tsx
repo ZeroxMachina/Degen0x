@@ -4,9 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Onchain Forex & Stablecoin Diversity Guide 2026 — EURC, PYUSD, GHO & More | degen0x",
-  description:
-    "Complete guide to onchain forex and non-USD stablecoins in 2026. Covers EURC, PYUSD, GHO, crvUSD, and how stablecoin diversity is reshaping DeFi and global payments.",
+  title: "Onchain Forex & Stablecoin Diversity Guide 2026 — EURC,",
+  description: "Complete guide to onchain forex and non-USD stablecoins in 2026. Covers EURC, PYUSD, GHO, crvUSD, and how stablecoin diversity is reshaping DeFi and global",
   keywords: [
     "onchain forex",
     "stablecoin diversity",
@@ -33,7 +32,8 @@ export const metadata: Metadata = {
     description:
       "EURC, PYUSD, GHO, crvUSD — the stablecoin landscape is way bigger than USDT and USDC.",
   },
-};
+
+  alternates: { canonical: "/learn/onchain-forex-stablecoin-diversity-guide-2026" }};
 
 export default function OnchainForexStablecoinDiversityGuidePage() {
   return (
@@ -397,8 +397,8 @@ export default function OnchainForexStablecoinDiversityGuidePage() {
                 },
               ].map((faq, i) => (
                 <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20 }}>
-                  <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>{faq.q}</h3>
-                  <p style={{ fontSize: 14, color: "#c9d1d9", lineHeight: 1.7 }}>{faq.a}</p>
+                  <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>{faq.question}</h3>
+                  <p style={{ fontSize: 14, color: "#c9d1d9", lineHeight: 1.7 }}>{faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -466,6 +466,56 @@ export default function OnchainForexStablecoinDiversityGuidePage() {
           }}
         />
       </article>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

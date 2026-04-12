@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Pair Correlation Finder 2026 | BTC ETH Correlation Analysis',
+  title: "Crypto Pair Correlation Finder 2026 | BTC ETH Correlation",
   description: 'Analyze cryptocurrency correlation matrices. BTC/ETH correlation ~0.85, altcoin clusters, portfolio diversification. Tools: IntoTheBlock, CoinMetrics, Messari.',
   keywords: ['crypto correlation', 'BTC ETH correlation', 'altcoin correlation', 'portfolio diversification', 'correlation finder', 'crypto analytics'],
   openGraph: {

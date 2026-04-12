@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Bittensor (TAO) Decentralized AI Network Guide 2026 | degen0x',
-  description: 'Complete guide to Bittensor TAO and decentralized AI networks. Learn about subnets, Dynamic TAO, mining, validation, staking, tokenomics, and how AI becomes a commodity in the dTAO economy.',
+  title: "Bittensor (TAO) Decentralized AI Network Guide 2026",
+  description: "Complete guide to Bittensor TAO and decentralized AI networks. Learn about subnets, Dynamic TAO, mining, validation, staking, tokenomics, and how AI becomes a",
   keywords: ['Bittensor', 'TAO', 'decentralized AI', 'subnets', 'Dynamic TAO', 'dTAO', 'AI mining', 'Opentensor', 'AI validators', 'Alpha tokens', 'AI marketplace', 'decentralized intelligence'],
   openGraph: {
     type: 'article',

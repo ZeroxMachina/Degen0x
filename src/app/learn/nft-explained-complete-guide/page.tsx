@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'NFT Explained: Complete Guide to Digital Assets | degen0x',
-  description: 'Learn about NFTs: ERC-721, ERC-1155, use cases (art, gaming, music), OpenSea vs Blur vs Magic Eden, blue chip collections, rarity evaluation, and utility NFTs 2026.',
+  description: "Learn about NFTs: ERC-721, ERC-1155, use cases (art, gaming, music), OpenSea vs Blur vs Magic Eden, blue chip collections, rarity evaluation, and utility NFTs",
   keywords: ['nft explained', 'how nft work', 'ERC-721', 'OpenSea', 'Blur', 'Magic Eden', 'NFT blue chips', 'digital art NFT'],
   openGraph: {
     type: 'article',
     title: 'NFT Explained: Complete Guide to Digital Assets | degen0x',
-    description: 'Learn about NFTs: ERC-721, ERC-1155, use cases (art, gaming, music), OpenSea vs Blur vs Magic Eden, blue chip collections, rarity evaluation, and utility NFTs 2026.',
+    description: "Learn about NFTs: ERC-721, ERC-1155, use cases (art, gaming, music), OpenSea vs Blur vs Magic Eden, blue chip collections, rarity evaluation, and utility NFTs",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/learn/nft-explained-complete-guide',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'NFT Explained: Complete Guide to Digital Assets | degen0x',
-    description: 'Learn about NFTs: ERC-721, ERC-1155, use cases (art, gaming, music), OpenSea vs Blur vs Magic Eden, blue chip collections, rarity evaluation, and utility NFTs 2026.',
+    description: "Learn about NFTs: ERC-721, ERC-1155, use cases (art, gaming, music), OpenSea vs Blur vs Magic Eden, blue chip collections, rarity evaluation, and utility NFTs",
     image: 'https://degen0x.com/og-learn.svg',
   },
   alternates: {

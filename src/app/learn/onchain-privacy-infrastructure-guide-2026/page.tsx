@@ -970,10 +970,10 @@ export default function OnchainPrivacyInfrastructureGuidePage() {
                     color: S.primary,
                   }}
                 >
-                  Q: {faq.q}
+                  Q: {faq.question}
                 </h3>
                 <p style={{ fontSize: 14, color: S.text2, lineHeight: 1.8, margin: 0 }}>
-                  <strong style={{ color: S.text }}>A:</strong> {faq.a}
+                  <strong style={{ color: S.text }}>A:</strong> {faq.answer}
                 </p>
               </div>
             ))}

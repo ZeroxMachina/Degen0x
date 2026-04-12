@@ -195,8 +195,8 @@ export default function FarcasterPage() {
             { q: 'How does Farcaster compare to Lens?', a: 'Both separate identity from apps. Lens more DeFi-focused on Polygon, Farcaster more social-focused on Snapchain. Farcaster larger DAU.' },
           ].map((faq, i) => (
             <div key={i} style={{ ...infoBoxStyle, marginBottom: 16 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

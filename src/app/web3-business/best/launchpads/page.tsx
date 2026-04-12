@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,14 +11,14 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Token Launchpads of ${CURRENT_YEAR} - IDO & Fair Launch Platforms | ${SITE_NAME}`,
   description: `Compare the best token launchpads and IDO platforms of ${CURRENT_YEAR}. Launch your token with trusted platforms ranked by security, community reach, and success rate.`,
-};
+  alternates: { canonical: "/web3-business/best/launchpads" }};
 
 const products: Product[] = [
   {
     name: "Fjord Foundry",
     slug: "fjord-foundry",
     rating: 4.8,
-    description: "A leading fair launch platform that specializes in Liquidity Bootstrapping Pools (LBPs). Projects set a starting price that decays over time, allowing the market to discover fair value. Supports multi-chain launches across Ethereum, Arbitrum, Avalanche, and more.",
+    description: "A leading fair launch platform that specializes in Liquidity Bootstrapping Pools (LBPs). Projects set a starting price that decays over time, allowing the",
     pros: ["Fair price discovery through LBP mechanism", "Multi-chain support across major EVM networks", "No allocation lotteries or whitelist required", "Battle-tested with hundreds of launches"],
     cons: ["LBP mechanics can confuse first-time buyers", "Requires active monitoring during launch window", "Higher gas costs on Ethereum mainnet", "Limited to EVM-compatible chains"],
     fees: "2% platform fee on funds raised",
@@ -101,7 +103,14 @@ const faqs: FAQ[] = [
 export default function LaunchpadsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="web3-business"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Web3 Business", href: "/web3-business" },
@@ -185,6 +194,57 @@ export default function LaunchpadsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security (30%)", "description": "A leading fair launch platform that specializes in Liquidity Bootstrapping Pools (LBPs). Projects set a starting price that decays over time, allowing the", "url": "https://degen0x.com/web3-business/best/launchpads"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

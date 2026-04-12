@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "SocialFi Guide 2026: Creator Tokens & Farcaster | degen0x",
-  description: "Complete guide to SocialFi in 2026. Learn about decentralized social media, creator tokens, Farcaster, Lens Protocol, and how users are monetizing their social graphs.",
+  description: "Complete guide to SocialFi in 2026. Learn about decentralized social media, creator tokens, Farcaster, Lens Protocol, and how users are monetizing their social",
   keywords: ["SocialFi", "Creator tokens", "Farcaster", "Lens Protocol", "Friend.tech", "Social tokens", "CyberConnect", "decentralized social media", "SocialFi 2026"],
   openGraph: {
     title: "SocialFi Guide 2026: Creator Tokens & Decentralized Social Media",
@@ -34,12 +34,13 @@ export const metadata: Metadata = {
     title: "SocialFi Guide 2026: Creator Tokens & Farcaster",
     description: "Complete guide to decentralized social media, creator tokenization, and how to get started with SocialFi protocols.",
   },
-};
+
+  alternates: { canonical: "/learn/socialfi-creator-tokens-guide-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "SocialFi Guide 2026: How Creator Tokens, Farcaster & Lens Are Reshaping Social Media",
-  description: "Complete guide to SocialFi in 2026. Learn about decentralized social media, creator tokens, Farcaster, Lens Protocol, and how users are monetizing their social graphs.",
+  description: "Complete guide to SocialFi in 2026. Learn about decentralized social media, creator tokens, Farcaster, Lens Protocol, and how users are monetizing their social",
   url: `${SITE_URL}/learn/socialfi-creator-tokens-guide-2026`,
   datePublished: "2026-03-01T00:00:00Z",
   dateModified: "2026-03-25T00:00:00Z",

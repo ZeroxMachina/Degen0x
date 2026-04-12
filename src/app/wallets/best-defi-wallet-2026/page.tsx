@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best DeFi Wallet 2026: MetaMask, Rabby, Rainbow, Zerion | dApp Browser | degen0x',
-  description: 'Best DeFi wallet: MetaMask 30M users, Rabby ($0 unlimited chains), Rainbow ($0 Ethereum), Zerion portfolio dashboard, Phantom (Solana). Swap, staking, dApp browser.',
+  title: "Best DeFi Wallet 2026: MetaMask, Rabby, Rainbow, Zerion |",
+  description: "Best DeFi wallet: MetaMask 30M users, Rabby ($0 unlimited chains), Rainbow ($0 Ethereum), Zerion portfolio dashboard, Phantom (Solana). Swap, staking, dApp",
   keywords: ['best defi wallet', 'dapp wallet', 'MetaMask', 'Rabby wallet', 'Rainbow wallet', 'defi trading wallet'],
   openGraph: { type: 'article', title: 'Best DeFi Wallet 2026', description: 'MetaMask, Rabby, Rainbow comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/best-defi-wallet-2026', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'DeFi Wallets' }] },
   twitter: { card: 'summary_large_image', title: 'Best DeFi Wallet', description: 'MetaMask, Rabby, Rainbow', image: 'https://degen0x.com/og-wallets.svg' },

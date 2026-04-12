@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "Keystone",
   slug: "keystone",
   rating: 4.2,
-  description:
-    "Keystone is an air-gapped hardware wallet using QR code communication instead of USB/Bluetooth. Features a large touchscreen, open-source firmware, and multi-chain support.",
+  description: "Keystone is an air-gapped hardware wallet using QR code communication instead of USB/Bluetooth. Features a large touchscreen, open-source firmware, and",
   pros: [
     "Fully air-gapped with QR code communication (no USB/Bluetooth/WiFi)",
     "Large touchscreen for easy transaction verification",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Keystone Wallet Review (${CURRENT_YEAR}) - Air-Gapped QR Code Hardware Wallet | ${SITE_NAME}`,
   description: `Complete Keystone wallet review for ${CURRENT_YEAR}. Covers air-gapped QR code signing, touchscreen interface, open-source firmware, and MetaMask integration.`,
-};
+  alternates: { canonical: "/wallets/reviews/keystone" }};
 
 const overview =
   "Keystone (formerly Cobo Vault) is a hardware wallet that prioritizes maximum security through a fully air-gapped design. Unlike Ledger and Trezor devices that connect to computers via USB (and sometimes Bluetooth), Keystone communicates exclusively through QR codes. Transaction data is displayed as a QR code on your phone, scanned by Keystone's camera, signed offline, and the signed result is displayed as a QR code scanned back by your phone. This air-gap ensures the device never has a wired or wireless connection that could be exploited.\n\nKeystone features a large 4-inch touchscreen display for clear transaction verification, open-source firmware, and support for multiple blockchains. The device can be paired with MetaMask, Rabby, and other software wallets as a signing device, making it compatible with the broader DeFi ecosystem. Keystone offers multiple models including the Essential (entry-level) and Pro (premium with fingerprint sensor and additional security features).";

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Solana Ecosystem Tokens 2026: JUP, MNDE, RAY, JTO, PYTH | degen0x',
-  description: 'Complete guide to best Solana ecosystem tokens. Compare Jupiter (JUP), Marinade (MNDE), Raydium (RAY), Jito (JTO), Pyth (PYTH), Drift (DRIFT). TVL, catalysts, and Firedancer impact.',
+  title: "Best Solana Ecosystem Tokens 2026: JUP, MNDE, RAY, JTO, PYTH",
+  description: "Complete guide to best Solana ecosystem tokens. Compare Jupiter (JUP), Marinade (MNDE), Raydium (RAY), Jito (JTO), Pyth (PYTH), Drift (DRIFT). TVL, catalysts,",
   keywords: ['Solana tokens', 'Jupiter JUP', 'Marinade MNDE', 'Raydium RAY', 'Jito JTO', 'Pyth PYTH', 'Solana DeFi', 'Firedancer', 'MEV', 'Solana ecosystem'],
   openGraph: {
     type: 'article',
@@ -552,6 +552,56 @@ export default function BestSolanaTokens2026() {
             Crypto markets are volatile — diversify and only invest what you can afford to lose. See our <a href="/methodology" style={{ color: '#10b981' }}>research methodology</a>.
           </p>
         </div>
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

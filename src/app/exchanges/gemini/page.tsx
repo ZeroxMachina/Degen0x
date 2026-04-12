@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "Gemini Review 2026: Security, Compliance, Fees & Features",
   description:
     "Complete Gemini review covering SOC 2 security, regulatory compliance, Gemini Earn rewards, and trading features. Is Gemini right for you? Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/gemini" }};
 
 export default function GeminiReview() {
   return (

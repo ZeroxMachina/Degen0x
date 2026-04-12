@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Ledger vs Trezor Comparison 2026: Nano X, Safe 3, Stax vs Model T | degen0x',
+  title: "Ledger vs Trezor Comparison 2026: Nano X, Safe 3, Stax vs",
   description: 'Head-to-head: Ledger Nano X (5,000 coins) vs Trezor Safe 3 (1,800 coins). Open source, Bluetooth, screen, price.',
   keywords: ['ledger vs trezor', 'hardware wallet comparison', 'Ledger Nano X', 'Trezor Safe 3', 'Ledger Stax', 'hardware security'],
   openGraph: { type: 'article', title: 'Ledger vs Trezor 2026', description: 'Compare hardware wallets', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/wallets/ledger-vs-trezor-comparison-2026', images: [{ url: 'https://degen0x.com/og-wallets.svg', width: 1200, height: 630, alt: 'Hardware Wallet Comparison' }] },

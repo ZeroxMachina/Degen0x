@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Bitstamp Review (${CURRENT_YEAR}) | degen0x`,
   description:
     "Full Bitstamp review covering fees, features, security, and supported countries. One of the oldest crypto exchanges analyzed.",
-};
+  alternates: { canonical: "/exchanges/reviews/bitstamp" }};
 
 export default function BitstampReviewPage() {
   return (

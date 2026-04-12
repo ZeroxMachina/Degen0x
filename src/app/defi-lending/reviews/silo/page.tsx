@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Silo Finance",
   slug: "silo",
   rating: 3.8,
-  description: "Silo Finance is a risk-isolated lending protocol where each token pair has its own isolated market, preventing bad debt contagion between assets while enabling permissionless market creation.",
+  description: "Silo Finance is a risk-isolated lending protocol where each token pair has its own isolated market, preventing bad debt contagion between assets while enabling",
   pros: ["Risk isolation prevents cross-market contagion", "Permissionless market creation for any token", "Bridge assets (ETH, USDC) provide shared liquidity", "Simple and clear risk model", "Growing multi-chain presence"],
   cons: ["Liquidity fragmented across silos", "Lower capital efficiency than pooled models", "Smaller TVL than major competitors", "Bridge asset dependency creates bottlenecks", "SILO token utility limited"],
   fees: "Variable (per silo market)",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Silo Finance Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Silo Finance review covering risk-isolated lending, permissionless markets, bridge asset model, multi-chain deployment, and yield opportunities.",
-};
+  alternates: { canonical: "/defi-lending/reviews/silo" }};
 
 export default function SiloReview() {
   return (

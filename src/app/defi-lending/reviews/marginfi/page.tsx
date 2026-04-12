@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `MarginFi Review ${CURRENT_YEAR}: Yield, Fees & Pros/Cons`,
   description:
     "Comprehensive MarginFi review covering lending rates, borrowing features, points system, and whether this Solana lending protocol fits your DeFi strategy.",
-};
+  alternates: { canonical: "/defi-lending/reviews/marginfi" }};
 
 export default function MarginfiReview() {
   return (

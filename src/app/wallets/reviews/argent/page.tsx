@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Argent Wallet Review (${CURRENT_YEAR}) - Best Smart Contract Wallet? | ${SITE_NAME}`,
   description: `Detailed Argent wallet review for ${CURRENT_YEAR}. Covers smart contract security, social recovery, Starknet Layer 2, and seedless onboarding.`,
-};
+  alternates: { canonical: "/wallets/reviews/argent" }};
 
 const product = {
   name: "Argent",

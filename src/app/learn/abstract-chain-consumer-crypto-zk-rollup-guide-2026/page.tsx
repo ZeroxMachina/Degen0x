@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Abstract Chain: Consumer-First ZK Rollup L2 Guide 2026 | Degen0x',
-  description: 'Complete guide to Abstract Chain, the consumer-focused ZK rollup built by Igloo Inc. Learn about account abstraction, EigenDA, gaming ecosystem, and how Abstract is bringing mainstream adoption to blockchain.',
+  title: "Abstract Chain: Consumer-First ZK Rollup L2 Guide 2026 |",
+  description: "Complete guide to Abstract Chain, the consumer-focused ZK rollup built by Igloo Inc. Learn about account abstraction, EigenDA, gaming ecosystem, and how",
   keywords: [
     'Abstract Chain',
     'ZK rollup',

@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Fluid Protocol: Smart Collateral & Smart Debt DeFi Guide 2026 | Degen0x',
-  description:
-    'Complete guide to Fluid Protocol by Instadapp — the unified DeFi liquidity layer combining lending, borrowing, and DEX. Learn how Smart Collateral and Smart Debt unlock industry-leading capital efficiency in 2026.',
+  title: "Fluid Protocol: Smart Collateral & Smart Debt DeFi Guide",
+  description: "Complete guide to Fluid Protocol by Instadapp — the unified DeFi liquidity layer combining lending, borrowing, and DEX. Learn how Smart Collateral and Smart",
   keywords: [
     'Fluid Protocol',
     'Instadapp',

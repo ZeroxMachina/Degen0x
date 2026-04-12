@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'How to Set Up MetaMask Wallet: Complete Step-by-Step Guide | degen0x',
-  description: 'Complete MetaMask setup guide: download, create wallet, secure seed phrase, add networks (Ethereum, Polygon, Arbitrum, Base), connect dApps, and manage gas settings.',
+  title: "How to Set Up MetaMask Wallet: Complete Step-by-Step Guide",
+  description: "Complete MetaMask setup guide: download, create wallet, secure seed phrase, add networks (Ethereum, Polygon, Arbitrum, Base), connect dApps, and manage gas",
   keywords: ['metamask wallet', 'how to set up metamask', 'wallet setup', 'ethereum wallet', 'seed phrase'],
   openGraph: {
     type: 'article',
-    title: 'How to Set Up MetaMask Wallet: Complete Step-by-Step Guide | degen0x',
+    title: "How to Set Up MetaMask Wallet: Complete Step-by-Step Guide",
     description: 'Download MetaMask, create wallet, secure recovery phrase, add networks, connect to dApps.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Set Up MetaMask Wallet: Complete Step-by-Step Guide | degen0x',
+    title: "How to Set Up MetaMask Wallet: Complete Step-by-Step Guide",
     description: 'Download, create, secure, and configure your MetaMask wallet for Ethereum, Polygon, Arbitrum, and Base.',
     image: 'https://degen0x.com/og-learn.svg',
   },

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -32,8 +33,8 @@ const FAQ_ITEMS = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Solana Token Extensions Guide 2026 — Token-2022 Explained | degen0x',
-  description: 'Complete guide to Solana Token Extensions (Token-2022): confidential transfers, transfer fees, interest-bearing tokens, permanent delegates, and more. Updated April 2026.',
+  title: "Solana Token Extensions Guide 2026 — Token-2022 Explained",
+  description: "Complete guide to Solana Token Extensions (Token-2022): confidential transfers, transfer fees, interest-bearing tokens, permanent delegates, and more. Updated",
   keywords: [
     'solana token extensions',
     'token-2022',
@@ -61,7 +62,8 @@ export const metadata: Metadata = {
     title: 'Solana Token Extensions Guide 2026 | degen0x',
     description: 'Complete guide to Solana Token Extensions and Token-2022.',
   },
-};
+
+  alternates: { canonical: "/learn/solana-token-extensions-guide-2026" }};
 
 export default function SolanaTokenExtensionsGuide() {
   const tableOfContents = [
@@ -85,7 +87,14 @@ export default function SolanaTokenExtensionsGuide() {
         paddingBottom: '4rem',
       }}
     >
-      <article
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <article
         style={{
           maxWidth: '820px',
           margin: '0 auto',
@@ -1388,6 +1397,56 @@ export default function SolanaTokenExtensionsGuide() {
         />
       </article>
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -8,8 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Tokenized Real Estate Guide 2026 — Invest in Property with Crypto | degen0x",
-  description: "Complete guide to tokenized real estate in 2026. Learn about fractional property ownership, blockchain-based real estate platforms, and how to invest in tokenized properties with cryptocurrency.",
+  title: "Tokenized Real Estate Guide 2026 — Invest in Property with",
+  description: "Complete guide to tokenized real estate in 2026. Learn about fractional property ownership, blockchain-based real estate platforms, and how to invest in",
   keywords: ["tokenized real estate", "real estate crypto", "fractional property ownership", "RealT", "Lofty", "Parcl", "Propy", "tokenized property 2026", "RWA real estate", "blockchain real estate"],
   openGraph: {
     title: "Tokenized Real Estate Guide 2026 — Invest in Property with Crypto",
@@ -33,12 +33,13 @@ export const metadata: Metadata = {
     title: "Tokenized Real Estate Guide 2026 — Invest in Property with Crypto",
     description: "Master fractional property ownership. Complete guide to tokenized real estate platforms and yields.",
   },
-};
+
+  alternates: { canonical: "/learn/tokenized-real-estate-guide-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "Tokenized Real Estate Guide 2026 — Invest in Property with Crypto",
-  description: "Complete guide to tokenized real estate in 2026. Learn about fractional property ownership, blockchain-based real estate platforms, and how to invest in tokenized properties with cryptocurrency.",
+  description: "Complete guide to tokenized real estate in 2026. Learn about fractional property ownership, blockchain-based real estate platforms, and how to invest in",
   url: "https://degen0x.com/learn/tokenized-real-estate-guide-2026",
   datePublished: "2026-03-25T00:00:00Z",
   dateModified: "2026-03-25T00:00:00Z",

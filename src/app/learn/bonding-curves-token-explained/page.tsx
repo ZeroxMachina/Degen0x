@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bonding Curves for Tokens Explained | Linear, Exponential & Fair Launches | degen0x',
-  description: 'Master bonding curves: linear, exponential, sigmoid models used in Pump.fun, Friend.tech, Bancor. Fair token launch mechanics, rugpull prevention, and curve economics explained.',
+  title: "Bonding Curves for Tokens Explained | Linear, Exponential &",
+  description: "Master bonding curves: linear, exponential, sigmoid models used in Pump.fun, Friend.tech, Bancor. Fair token launch mechanics, rugpull prevention, and curve",
   keywords: ['bonding curve', 'Pump.fun', 'Friend.tech', 'token launch', 'fair launch', 'curve DEX', 'token pricing'],
   openGraph: {
     title: 'Bonding Curves for Tokens',

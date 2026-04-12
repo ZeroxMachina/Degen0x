@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Venus Protocol",
   slug: "venus",
   rating: 3.9,
-  description: "Venus Protocol is the largest lending and borrowing platform on BNB Chain, offering money markets for dozens of assets plus a decentralized stablecoin (VAI) backed by crypto collateral.",
+  description: "Venus Protocol is the largest lending and borrowing platform on BNB Chain, offering money markets for dozens of assets plus a decentralized stablecoin (VAI)",
   pros: ["Largest lending protocol on BNB Chain", "Very low gas fees", "Wide range of supported assets", "VAI stablecoin integration", "Active governance and development"],
   cons: ["Concentrated on BNB Chain only", "History of governance controversies", "VAI has struggled to maintain peg", "Lower decentralization than competitors", "Past liquidation engine issues"],
   fees: "Variable (supply/borrow spread)",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Venus Protocol Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Venus Protocol review covering BNB Chain lending, VAI stablecoin, governance, security improvements, and yield opportunities.",
-};
+  alternates: { canonical: "/defi-lending/reviews/venus" }};
 
 export default function VenusReview() {
   return (

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'MACD Indicator for Crypto Trading Guide | Bitcoin & Ethereum Analysis | degen0x',
-  description: 'Master MACD (Moving Average Convergence Divergence) for crypto: 12-26 EMA, signal line, histogram, bullish/bearish crossovers. Real BTC/ETH examples, trading signals, RSI combo strategy.',
+  title: "MACD Indicator for Crypto Trading Guide | Bitcoin &",
+  description: "Master MACD (Moving Average Convergence Divergence) for crypto: 12-26 EMA, signal line, histogram, bullish/bearish crossovers. Real BTC/ETH examples, trading",
   keywords: ['MACD indicator', 'crypto trading', 'technical analysis', 'MACD crossover', 'divergence trading', 'Bitcoin analysis', 'Ethereum analysis', 'RSI combo', 'trading signals'],
   openGraph: {
     title: 'MACD Indicator for Crypto Trading Guide',

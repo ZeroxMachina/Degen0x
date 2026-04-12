@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Retirement Planning Guide 2026: Portfolio Allocation by Age | degen0x',
-  description: 'Complete crypto retirement strategy. Portfolio allocation by age (20s: 10-20%, 40s: 5-10%, 60s: 1-5%), Bitcoin IRA options, Roth conversions, 4% rule adjusted for volatility.',
+  title: "Crypto Retirement Planning Guide 2026: Portfolio Allocation",
+  description: "Complete crypto retirement strategy. Portfolio allocation by age (20s: 10-20%, 40s: 5-10%, 60s: 1-5%), Bitcoin IRA options, Roth conversions, 4% rule adjusted",
   keywords: ['crypto retirement planning', 'Bitcoin IRA', 'Roth conversion strategy', 'portfolio allocation by age', 'crypto withdrawal strategy', 'tax-efficient withdrawals'],
   openGraph: {
     type: 'article',
@@ -398,6 +398,56 @@ export default function CryptoRetirementPlanningGuide() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'ERC-721 vs ERC-1155: NFT Standards Compared | Gas, Use Cases & Hybrid',
-  description: 'ERC-721 for unique NFTs vs ERC-1155 for fungible + non-fungible tokens. Gas savings 40-60%, gaming use cases, ERC-6551 token-bound accounts, OpenSea/Rarible support.',
+  title: "ERC-721 vs ERC-1155: NFT Standards Compared | Gas, Use",
+  description: "ERC-721 for unique NFTs vs ERC-1155 for fungible + non-fungible tokens. Gas savings 40-60%, gaming use cases, ERC-6551 token-bound accounts, OpenSea/Rarible",
   keywords: ['ERC-721', 'ERC-1155', 'NFT standards', 'token standards', 'gas efficiency', 'gaming NFT', 'token-bound accounts', 'ERC-6551', 'Rarible', 'OpenSea'],
   openGraph: {
     title: 'ERC-721 vs ERC-1155: NFT Standards Explained',

@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "NFT Lending & NFTFi Guide 2026: Protocols, Models & Risks | degen0x",
-  description:
-    "Master NFT-backed lending in 2026. Compare NFTfi, Blend, BendDAO & Drops. Learn P2P vs pool models, how to get a loan, liquidation risks, and the $2.3B market growing to $247B.",
+  title: "NFT Lending & NFTFi Guide 2026: Protocols, Models & Risks",
+  description: "Master NFT-backed lending in 2026. Compare NFTfi, Blend, BendDAO & Drops. Learn P2P vs pool models, how to get a loan, liquidation risks, and the $2.3B market",
   keywords: [
     "NFT lending",
     "NFTfi",
@@ -495,8 +494,8 @@ export default function NFTLendingNFTfiGuidePage() {
             },
           ].map((faq, i) => (
             <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>{faq.q}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>{faq.question}</h3>
+              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

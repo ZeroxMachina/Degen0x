@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Aave vs Spark ${CURRENT_YEAR}: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Aave vs Spark in ${CURRENT_YEAR}. Compare yields, features, DAI integration, multi-chain support, and risk management approaches.`,
-};
+  alternates: { canonical: "/defi-lending/compare/aave-vs-spark" }};
 
 const items: ComparisonItem[] = [
   { name: "Aave", slug: "aave", rating: 4.8, affiliateUrl: "https://degen0x.com/go/aave", features: { "TVL": "$15B+", "Chains": "10+", "Supported Assets": "100+", "Rate Options": "Variable + Stable", "Flash Loans": "Yes (0.05%)", "Governance": "AAVE token", "Architecture": "Pool-based V3", "Unique Feature": "eMode, GHO stablecoin" } },
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function AaveVsSparkPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-spark" }, { label: "Aave vs Spark", href: "/defi-lending/compare/aave-vs-spark" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-spark" }, { label: "Aave vs Spark", href: "/defi-lending/compare/aave-vs-spark" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Aave vs Spark: Full Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -60,6 +69,57 @@ export default function AaveVsSparkPage() {
         <p className="text-[var(--color-text-secondary)]">Both protocols use similar risk management approaches since they share the Aave V3 codebase. However, they make different parameter decisions through their separate governance processes. Spark tends to be more conservative in asset listings, supporting fewer assets but with parameters tuned specifically for the MakerDAO ecosystem. Aave's governance manages a much larger and more diverse set of assets across multiple markets and chains.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/aave Vs Spark", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/aave-vs-spark"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "Solana vs Ethereum 2026: Which Blockchain Wins?",
   description: "An honest, data-driven comparison of Solana vs Ethereum in 2026.",
-};
+  alternates: { canonical: "/learn/solana-vs-ethereum-2026" }};
 
 const COMPARISON = [
   ["TPS (peak)", "~65,000", "~30 (L1) / ~4,000 (L2s)"],

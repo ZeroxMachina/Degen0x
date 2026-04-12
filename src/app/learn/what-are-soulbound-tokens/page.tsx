@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Soulbound Tokens (SBTs) Explained: Non-Transferable Identity & Credentials | degen0x',
+  title: "Soulbound Tokens (SBTs) Explained: Non-Transferable",
   description: 'Complete guide to soulbound tokens in 2026. Learn Vitalik\'s Decentralized Society vision, EIP-5192, Galxe, Guild.xyz, Zupass ZK credentials, and on-chain academic credentials.',
   keywords: ['soulbound tokens', 'SBT', 'non-transferable NFT', 'EIP-5192', 'Decentralized Society', 'Galxe', 'Guild.xyz', 'Zupass', 'on-chain identity', 'reputation token'],
   openGraph: {

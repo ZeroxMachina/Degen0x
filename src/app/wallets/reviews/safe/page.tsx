@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
@@ -8,7 +10,7 @@ const product = walletProducts.find((p) => p.slug === "safe")!;
 export const metadata: Metadata = {
   title: `Safe (Gnosis Safe) Review (${CURRENT_YEAR}) - Best Multi-Sig Wallet | ${SITE_NAME}`,
   description: `Complete Safe wallet review for ${CURRENT_YEAR}. Covers multi-signature security, DAO treasury management, Safe Apps, and enterprise features.`,
-};
+  alternates: { canonical: "/wallets/reviews/safe" }};
 
 const overview =
   "Safe (formerly Gnosis Safe) is the industry-standard multi-signature wallet for Ethereum and EVM-compatible chains. It secures over $100 billion in digital assets and is used by leading DAOs, protocols, and organizations to manage their treasuries. Unlike traditional wallets that rely on a single private key, Safe requires multiple signers to approve each transaction, dramatically reducing the risk of theft or unauthorized access. Safe is a smart contract-based wallet, meaning it lives on the blockchain and offers programmable security rules. It is fully open-source and has been battle-tested since 2018.";

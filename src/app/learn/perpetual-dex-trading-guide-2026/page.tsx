@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Perpetual DEX Trading Guide 2026: Hyperliquid, dYdX & Beyond | degen0x',
-  description: 'Complete guide to perpetual DEX trading in 2026. Compare Hyperliquid, dYdX, and GMX — $26B+ daily volume, up to 50x leverage, zero gas fees. Learn how perp DEXs work.',
+  title: "Perpetual DEX Trading Guide 2026: Hyperliquid, dYdX & Beyond",
+  description: "Complete guide to perpetual DEX trading in 2026. Compare Hyperliquid, dYdX, and GMX — $26B+ daily volume, up to 50x leverage, zero gas fees. Learn how perp",
   keywords: ['perpetual DEX', 'perp trading', 'Hyperliquid', 'dYdX', 'GMX', 'decentralized futures', 'perpetual futures', 'crypto derivatives 2026'],
   openGraph: {
     type: 'article',

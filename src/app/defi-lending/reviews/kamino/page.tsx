@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Kamino Finance Review ${CURRENT_YEAR}: Yield, Fees & Pros/Cons`,
   description:
     "In-depth Kamino Finance review covering automated liquidity vaults, lending markets, yield strategies, and whether it is the right Solana DeFi protocol for you.",
-};
+  alternates: { canonical: "/defi-lending/reviews/kamino" }};
 
 export default function KaminoReview() {
   return (

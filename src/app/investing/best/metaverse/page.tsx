@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,10 +10,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Metaverse Crypto Tokens (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top metaverse and virtual world crypto tokens in ${CURRENT_YEAR}. Compare Decentraland, The Sandbox, Axie Infinity, and other virtual world investments.`,
-};
+  alternates: { canonical: "/investing/best/metaverse" }};
 
 const products = [
-  { name: "The Sandbox (SAND)", slug: "sandbox", rating: 4.2, description: "Virtual world platform enabling users to build, own, and monetize gaming experiences. Major brand partnerships with Adidas, Gucci, and Warner Music for virtual experiences.", pros: ["Strong brand partnerships", "User-generated content platform", "Active virtual land economy"], cons: ["Declining active users from peak", "High virtual land prices", "Competing with traditional gaming"], bestFor: "Brand-partnered virtual world exposure", affiliateUrl: "#", category: "investing" },
+  { name: "The Sandbox (SAND)", slug: "sandbox", rating: 4.2, description: "Virtual world platform enabling users to build, own, and monetize gaming experiences. Major brand partnerships with Adidas, Gucci, and Warner Music for virtual", pros: ["Strong brand partnerships", "User-generated content platform", "Active virtual land economy"], cons: ["Declining active users from peak", "High virtual land prices", "Competing with traditional gaming"], bestFor: "Brand-partnered virtual world exposure", affiliateUrl: "#", category: "investing" },
   { name: "Decentraland (MANA)", slug: "decentraland", rating: 4.0, description: "Pioneer decentralized virtual world with community governance over land, content, and economics. Hosts virtual events, galleries, and social experiences.", pros: ["First mover in decentralized metaverse", "DAO governance model", "Virtual event hosting capabilities"], cons: ["Low concurrent user counts", "Dated graphics compared to competitors", "High land floor prices"], bestFor: "Decentralized virtual world governance participation", affiliateUrl: "#", category: "investing" },
   { name: "Immutable X (IMX)", slug: "immutable", rating: 4.4, description: "Layer 2 scaling solution specifically for NFTs and gaming with zero gas fees. Powers multiple gaming projects and NFT marketplaces with Ethereum security.", pros: ["Zero gas fee NFT transactions", "Growing gaming partner ecosystem", "Ethereum security guarantees"], cons: ["Gaming adoption still early", "Competition from other L2s", "Token value accrual mechanisms developing"], bestFor: "Gaming and NFT infrastructure investment", affiliateUrl: "#", category: "investing" },
   { name: "Render (RNDR)", slug: "render", rating: 4.3, description: "Decentralized GPU rendering network used for 3D content creation, metaverse development, and AI workloads. Essential infrastructure for virtual world content creation.", pros: ["Real rendering demand from studios", "AI compute expansion", "Infrastructure for metaverse content"], cons: ["Competition from centralized cloud", "Token utility mechanics evolving", "Revenue growth needs acceleration"], bestFor: "Metaverse and AI infrastructure exposure", affiliateUrl: "#", category: "investing" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Metaverse Crypto" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Metaverse Crypto" }]} />
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Best Metaverse Crypto Tokens ({CURRENT_YEAR})</h1>
@@ -56,6 +64,57 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/metaverse", "description": "Virtual world platform enabling users to build, own, and monetize gaming experiences. Major brand partnerships with Adidas, Gucci, and Warner Music for virtual", "url": "https://degen0x.com/investing/best/metaverse"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

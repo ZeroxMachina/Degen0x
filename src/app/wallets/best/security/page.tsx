@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -11,7 +12,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Most Secure Crypto Wallets of ${CURRENT_YEAR} - Security-Focused Reviews | ${SITE_NAME}`,
   description: `The most secure crypto wallets of ${CURRENT_YEAR}. Ledger, Trezor, Safe, Rabby and more. Expert analysis of hardware security, open-source code, and multi-sig protection.`,
-};
+  alternates: { canonical: "/wallets/best/security" }};
 
 const faqs = [
   { question: "What is the most secure crypto wallet?", answer: "For individual users, the Ledger Nano X with its CC EAL5+ Secure Element chip offers the strongest hardware security. Trezor Model T provides the highest transparency with fully open-source code. For organizations, Safe (Gnosis Safe) provides the best security through multi-signature approval requiring multiple parties to authorize transactions." },
@@ -29,7 +30,14 @@ export default function BestSecurityWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Crypto Wallets", href: "/wallets" },
@@ -105,6 +113,7 @@ export default function BestSecurityWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/security", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/security"}) }} />
     </div>
   );
 }

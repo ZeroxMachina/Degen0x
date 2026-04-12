@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import ClientContent from './ClientContent';
 

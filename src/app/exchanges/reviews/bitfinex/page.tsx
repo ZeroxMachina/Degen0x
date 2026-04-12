@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Bitfinex Review (${CURRENT_YEAR}) | degen0x`,
   description:
     "Detailed Bitfinex review covering margin trading, fees, security, and advanced features. Everything you need to know about Bitfinex.",
-};
+  alternates: { canonical: "/exchanges/reviews/bitfinex" }};
 
 export default function BitfinexReviewPage() {
   return (

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Projects on BNB Chain 2026: PancakeSwap, Venus, Alpaca, Thena | degen0x',
-  description: 'Top BNB Chain DeFi projects 2026. Compare PancakeSwap ($2B+ TVL), Venus Protocol ($3B lending), Alpaca Finance, Thena, BiSwap. opBNB L2, MEV protection, BNB Chain ecosystem fund.',
+  title: "Best Projects on BNB Chain 2026: PancakeSwap, Venus,",
+  description: "Top BNB Chain DeFi projects 2026. Compare PancakeSwap ($2B+ TVL), Venus Protocol ($3B lending), Alpaca Finance, Thena, BiSwap. opBNB L2, MEV protection, BNB",
   keywords: ['BNB Chain', 'PancakeSwap', 'Venus Protocol', 'Alpaca Finance', 'Thena', 'BiSwap', 'opBNB', 'BNB Chain DeFi', 'Greenfield', 'BSC'],
   openGraph: {
     type: 'article',

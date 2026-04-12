@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Cosmos Wallets 2026 | Keplr, Leap, Cosmostation | degen0x',
-  description: 'Compare Cosmos wallets: Keplr (50+ chains), Leap (mobile-first), Cosmostation (staking), Citadel.one (multi-chain). IBC transfers, ATOM staking (15-20% APY), governance voting, airdrops.',
+  title: "Best Cosmos Wallets 2026 | Keplr, Leap, Cosmostation",
+  description: "Compare Cosmos wallets: Keplr (50+ chains), Leap (mobile-first), Cosmostation (staking), Citadel.one (multi-chain). IBC transfers, ATOM staking (15-20% APY),",
   keywords: ['cosmos wallet', 'keplr wallet', 'leap wallet', 'atom staking', 'IBC transfer', 'cosmos airdrops', 'governance voting'],
   openGraph: {
     title: 'Best Cosmos Wallets 2026 | degen0x',

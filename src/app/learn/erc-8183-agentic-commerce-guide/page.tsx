@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'ERC-8183 Guide 2026: The Agentic Commerce Standard Explained',
-  description: 'Complete guide to ERC-8183 Agentic Commerce Standard for trustless AI-to-AI transactions. Learn how agents transact with escrow, delivery verification, and automated fund recovery.',
+  description: "Complete guide to ERC-8183 Agentic Commerce Standard for trustless AI-to-AI transactions. Learn how agents transact with escrow, delivery verification, and",
   keywords: ['ERC-8183', 'ERC-8183 guide', 'agentic commerce', 'AI agents transactions', 'agent escrow', 'AI commerce standard', 'autonomous agent payments', 'agent-to-agent transactions', 'Agentic Commerce Protocol', 'AI agent standards 2026'],
   openGraph: {
     type: 'article',
@@ -902,10 +902,10 @@ export default function ERC8183GuidePage() {
                 }}
               >
                 <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '12px', color: '#79c0ff', marginTop: 0 }}>
-                  Q: {faq.q}
+                  Q: {faq.question}
                 </h3>
                 <p style={{ fontSize: '14px', lineHeight: '1.6', margin: 0, color: '#e6edf3' }}>
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}

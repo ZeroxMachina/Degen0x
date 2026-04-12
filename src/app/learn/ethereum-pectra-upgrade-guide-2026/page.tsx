@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Ethereum Pectra Upgrade Guide 2026: EIP-7702, Staking & Blob Scaling | degen0x',
-  description: 'Complete guide to the Ethereum Pectra upgrade (Prague + Electra). Learn about EIP-7702 smart wallet powers, flexible staking (32-2048 ETH), and blob throughput increases that power L2 scaling.',
+  title: "Ethereum Pectra Upgrade Guide 2026: EIP-7702, Staking &",
+  description: "Complete guide to the Ethereum Pectra upgrade (Prague + Electra). Learn about EIP-7702 smart wallet powers, flexible staking (32-2048 ETH), and blob throughput",
   keywords: ['Ethereum Pectra', 'EIP-7702', 'Ethereum staking', 'blob scaling', 'Layer 2', 'smart wallets', 'Prague Electra', 'account abstraction', 'crypto 2026', 'Ethereum upgrade'],
   openGraph: {
     type: 'article',

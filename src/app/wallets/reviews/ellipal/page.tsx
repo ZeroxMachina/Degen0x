@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `ELLIPAL Review (${CURRENT_YEAR}) | degen0x`,
   description: "ELLIPAL Titan hardware wallet review covering air-gapped QR code security, large touchscreen, multi-chain support, and anti-tamper design.",
-};
+  alternates: { canonical: "/wallets/reviews/ellipal" }};
 
 export default function EllipalReviewPage() {
   return (

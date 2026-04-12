@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -6,7 +7,8 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Spot vs Futures Crypto Investing (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Spot vs futures crypto investing comparison for ${CURRENT_YEAR}. Direct ownership vs leveraged contracts — risk, returns, strategies, and which is right for you.` };
+export const metadata: Metadata = { title: `Spot vs Futures Crypto Investing (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Spot vs futures crypto investing comparison for ${CURRENT_YEAR}. Direct ownership vs leveraged contracts — risk, returns, strategies, and which is right for you.` ,
+  alternates: { canonical: "/investing/compare/spot-vs-futures-investing" }};
 
 const items = [
   { name: "Spot Investing", slug: "spot", rating: 4.6, affiliateUrl: "#", features: { "Ownership": "Direct asset ownership", "Leverage": "None (1x)", "Max Loss": "100% of investment", "Holding Period": "Unlimited", "Funding Costs": "None", "Complexity": "Low", "Tax Treatment": "Capital gains on sale", "Staking/Yield": "Yes (can stake held assets)", "Liquidation Risk": "None", "Best For": "Long-term investors and HODLers" } },
@@ -22,7 +24,14 @@ const faqs = [
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Spot vs Futures Investing" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Spot vs Futures Investing" }]} />
       <AffiliateDisclosure />
       <header className="mb-8"><h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Spot vs Futures Crypto Investing ({CURRENT_YEAR})</h1><p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p></header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">Spot investing means buying and holding actual cryptocurrency, while futures investing involves trading contracts that derive value from the underlying asset price. Futures offer leverage and the ability to profit from price declines, but introduce liquidation risk, funding costs, and complexity that make them unsuitable for most investors. Understanding the differences is critical for choosing the right approach for your risk tolerance and investment goals.</p>
@@ -43,6 +52,57 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/active-vs-passive-crypto" className="text-blue-600 hover:underline">Active vs Passive Crypto Investing</Link></li><li><Link href="/investing/learn/crypto-investment-risks" className="text-blue-600 hover:underline">Crypto Investment Risks</Link></li></ul></section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/spot Vs Futures Investing", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/spot-vs-futures-investing"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

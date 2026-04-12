@@ -38,7 +38,8 @@ export const metadata: Metadata = {
       "288% gains in 2025. Rising regulatory pressure. Here's the full privacy coin breakdown for 2026.",
     images: [`${SITE_URL}/og-privacy-coins-guide-2026.png`],
   },
-};
+
+  alternates: { canonical: "/learn/privacy-coins-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Privacy Coins Guide 2026: Monero, Zcash & How They Work",

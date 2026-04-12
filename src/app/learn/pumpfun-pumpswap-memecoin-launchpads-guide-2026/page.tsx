@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
-  title: 'Pump.fun, PumpSwap & Memecoin Launchpads Guide 2026 | degen0x',
-  description:
-    'Complete guide to Pump.fun and PumpSwap: how bonding curves work, token graduation, DEX features, PUMP tokenomics, competitor analysis, and how to launch tokens in 2026.',
+  title: "Pump.fun, PumpSwap & Memecoin Launchpads Guide 2026",
+  description: "Complete guide to Pump.fun and PumpSwap: how bonding curves work, token graduation, DEX features, PUMP tokenomics, competitor analysis, and how to launch",
   keywords: [
     'Pump.fun',
     'PumpSwap',
@@ -295,7 +295,14 @@ export default function PumpfunPumpswapLaunchpadsPage() {
 
   return (
     <main id="top" style={pageStyle}>
-      <script
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />

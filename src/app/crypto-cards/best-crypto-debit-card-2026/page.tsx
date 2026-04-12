@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Debit Card 2026: Coinbase Card vs Crypto.com Visa vs Gnosis Pay vs Nexo | degen0x',
+  title: "Best Crypto Debit Card 2026: Coinbase Card vs Crypto.com",
   description: 'Compare crypto debit cards: Coinbase (4% cash back), Crypto.com Visa (cashback tiers), Gnosis Pay, Bybit, Nexo. Auto-convert, no KYC options.',
   keywords: ['best crypto debit card', 'crypto debit card 2026', 'Coinbase Card', 'Crypto.com Visa', 'Gnosis Pay', 'crypto cashback'],
   openGraph: { type: 'article', title: 'Best Crypto Debit Card 2026', description: 'Crypto card comparison', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/crypto-cards/best-crypto-debit-card-2026', images: [{ url: 'https://degen0x.com/og-cards.svg', width: 1200, height: 630, alt: 'Crypto Cards' }] },

@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
-  title: 'EIP-7702: Ethereum Account Abstraction After Pectra Guide 2026 | Degen0x',
-  description: 'How EIP-7702 transforms every Ethereum EOA into a smart account. Learn delegation, batching, sponsored gas, session keys, security trade-offs, and what the Pectra upgrade unlocked for wallet UX in 2026.',
+  title: "EIP-7702: Ethereum Account Abstraction After Pectra Guide",
+  description: "How EIP-7702 transforms every Ethereum EOA into a smart account. Learn delegation, batching, sponsored gas, session keys, security trade-offs, and what the",
   keywords: [
     'EIP-7702',
     'Account Abstraction',
@@ -114,7 +115,14 @@ export default function Eip7702Guide() {
 
   return (
     <div style={containerStyle}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       <nav style={{ marginBottom: 24, fontSize: '0.9rem', color: '#8b949e' }}>
         <Link href="/" style={{ color: '#60a5fa' }}>Home</Link> / <Link href="/learn" style={{ color: '#60a5fa' }}>Learn</Link> / EIP-7702

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Wallets for iPhone & iOS (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best iOS crypto wallets for ${CURRENT_YEAR}. Compare Trust Wallet, Phantom, Coinbase Wallet, Rainbow, and Exodus for iPhone and iPad.`,
-};
+  alternates: { canonical: "/wallets/best/ios" }};
 
 const products = [
   { name: "Trust Wallet", slug: "trust-wallet", rating: 4.4, description: "Feature-rich iOS wallet supporting 10M+ tokens across 100+ blockchains with built-in dApp browser, staking, and swap features.", pros: ["Massive multi-chain support", "Built-in dApp browser", "Face ID integration"], cons: ["Owned by Binance", "Interface can feel crowded"], bestFor: "Broadest multi-chain iOS wallet experience", affiliateUrl: "#", category: "wallets" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function BestIOSWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "iOS Wallets", href: "/wallets/best/ios" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "iOS Wallets", href: "/wallets/best/ios" }]} />
       <AffiliateDisclosure />
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Crypto Wallets for iPhone & iOS ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
@@ -57,6 +65,7 @@ export default function BestIOSWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/ios", "description": "Feature-rich iOS wallet supporting 10M+ tokens across 100+ blockchains with built-in dApp browser, staking, and swap features.", "url": "https://degen0x.com/wallets/best/ios"}) }} />
     </div>
   );
 }

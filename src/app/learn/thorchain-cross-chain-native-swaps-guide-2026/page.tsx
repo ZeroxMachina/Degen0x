@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'THORChain & Cross-Chain Native Swaps Guide 2026 | degen0x',
-  description:
-    'Complete THORChain guide: native cross-chain swaps without bridges, Continuous Liquidity Pools, RUNE tokenomics, streaming swaps, node security, 2026 expansion to Solana/Tron, and how to trade natively across Bitcoin, Ethereum, and 6+ blockchains.',
+  description: "Complete THORChain guide: native cross-chain swaps without bridges, Continuous Liquidity Pools, RUNE tokenomics, streaming swaps, node security, 2026 expansion",
   keywords: [
     'THORChain',
     'RUNE',

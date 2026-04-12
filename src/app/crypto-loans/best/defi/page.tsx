@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,10 +11,10 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best DeFi Loan Platforms ${CURRENT_YEAR} - Decentralized Borrowing`,
   description: `Compare the best DeFi loan platforms in ${CURRENT_YEAR}. Borrow against crypto without KYC through decentralized lending protocols.`,
-};
+  alternates: { canonical: "/crypto-loans/best/defi" }};
 
 const products: Product[] = [
-  { name: "Aave", slug: "aave-loans", rating: 4.8, description: "Aave is the largest DeFi lending protocol offering permissionless borrowing across 10+ chains. No KYC, no credit checks, no monthly payments. Variable and stable rate options with deep liquidity for all major crypto assets.", pros: ["Fully permissionless, no KYC", "10+ chain deployments", "Variable and stable rates", "Flash loan capabilities"], cons: ["Requires Web3 wallet knowledge", "Gas costs on Ethereum", "Liquidation risk in volatile markets"], fees: "Variable borrow rates", bestFor: "DeFi-native borrowers", affiliateUrl: "https://degen0x.com/go/aave", category: "crypto-loans", featured: true },
+  { name: "Aave", slug: "aave-loans", rating: 4.8, description: "Aave is the largest DeFi lending protocol offering permissionless borrowing across 10+ chains. No KYC, no credit checks, no monthly payments. Variable and", pros: ["Fully permissionless, no KYC", "10+ chain deployments", "Variable and stable rates", "Flash loan capabilities"], cons: ["Requires Web3 wallet knowledge", "Gas costs on Ethereum", "Liquidation risk in volatile markets"], fees: "Variable borrow rates", bestFor: "DeFi-native borrowers", affiliateUrl: "https://degen0x.com/go/aave", category: "crypto-loans", featured: true },
   { name: "Compound", slug: "compound-loans", rating: 4.5, description: "Compound V3 offers simplified DeFi borrowing with isolated risk markets. Each market focuses on one borrowable asset with multiple collateral options, providing cleaner risk isolation than pool-based models.", pros: ["Battle-tested since 2018", "Isolated risk per market", "COMP reward incentives", "Simple borrowing interface"], cons: ["Fewer assets than Aave", "Limited chain availability", "Variable rates only"], fees: "Variable borrow rates", bestFor: "Conservative DeFi borrowers", affiliateUrl: "https://degen0x.com/go/compound", category: "crypto-loans" },
   { name: "MakerDAO", slug: "makerdao", rating: 4.6, description: "MakerDAO pioneered decentralized lending by allowing users to open collateralized Vaults and mint DAI stablecoins. With governance-controlled stability fees and a wide range of accepted collateral types, Maker remains a cornerstone of DeFi borrowing.", pros: ["Pioneer of DeFi lending", "Borrow DAI directly", "Multiple collateral types", "Governance-set stable rates"], cons: ["Can only borrow DAI", "Higher collateralization ratios", "Complex vault management"], fees: "Stability fee (variable)", bestFor: "DAI stablecoin borrowers", affiliateUrl: "https://degen0x.com/go/makerdao", category: "crypto-loans" },
 ];
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function DefiLoansPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "DeFi Loans", href: "/crypto-loans/best/defi" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="crypto-loans"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "DeFi Loans", href: "/crypto-loans/best/defi" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best DeFi Loan Platforms ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
@@ -35,6 +44,57 @@ export default function DefiLoansPage() {
       </div>
       <div className="space-y-4 mb-12">{products.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/defi", "description": "Aave is the largest DeFi lending protocol offering permissionless borrowing across 10+ chains. No KYC, no credit checks, no monthly payments. Variable and", "url": "https://degen0x.com/crypto-loans/best/defi"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

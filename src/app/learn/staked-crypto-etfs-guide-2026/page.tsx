@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Staked Crypto ETFs Guide 2026 — Earn Yield via ETFs | degen0x",
-  description:
-    "Complete guide to staked crypto ETFs in 2026. Learn how BlackRock ETHB, Bitwise BSOL, and other staking ETFs work, their fees, yields, risks, and how they compare to direct staking.",
+  title: "Staked Crypto ETFs Guide 2026 — Earn Yield via ETFs",
+  description: "Complete guide to staked crypto ETFs in 2026. Learn how BlackRock ETHB, Bitwise BSOL, and other staking ETFs work, their fees, yields, risks, and how they",
   keywords: [
     "staked crypto ETF",
     "staked ETH ETF",

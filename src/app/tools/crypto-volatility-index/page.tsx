@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Volatility Index (CVI) Guide: Bitcoin VIX & DVOL Trading | degen0x',
-  description: 'Master crypto volatility indices: CVI by COTI, DVOL (Deribit), Bitcoin VIX equivalent. Compare implied vs realized volatility for options pricing and vol crush strategies.',
+  title: "Crypto Volatility Index (CVI) Guide: Bitcoin VIX & DVOL",
+  description: "Master crypto volatility indices: CVI by COTI, DVOL (Deribit), Bitcoin VIX equivalent. Compare implied vs realized volatility for options pricing and vol crush",
   keywords: ['crypto volatility index', 'CVI', 'DVOL', 'Deribit', 'Bitcoin VIX', 'implied volatility', 'options trading'],
   openGraph: {
     title: 'Crypto Volatility Index Guide',

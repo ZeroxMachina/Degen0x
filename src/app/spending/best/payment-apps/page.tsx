@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -10,14 +11,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Payment Apps of ${CURRENT_YEAR} - Pay With Crypto Anywhere | ${SITE_NAME}`,
   description: `Compare the best crypto payment apps of ${CURRENT_YEAR}. BitPay, CoinGate, Strike, and more. Send, receive, and spend crypto from your phone.`,
-};
+  alternates: { canonical: "/spending/best/payment-apps" }};
 
 const paymentApps: Product[] = [
   {
     name: "BitPay",
     slug: "bitpay",
     rating: 4.7,
-    description: "The most established crypto payment app with over a decade of history. BitPay processes payments for thousands of merchants, offers a prepaid Mastercard, and supports direct payments in BTC, ETH, and 15+ other cryptos. Features bill pay, gift card purchases, and P2P transfers.",
+    description: "The most established crypto payment app with over a decade of history. BitPay processes payments for thousands of merchants, offers a prepaid Mastercard, and",
     pros: ["Largest merchant network in crypto payments", "Prepaid Mastercard for everyday spending", "Bill pay feature for utilities and services", "Gift card marketplace (Amazon, Uber, etc.)"],
     cons: ["1% processing fee on some transactions", "$5 inactivity fee on the card", "Slower settlement than Lightning-based alternatives", "KYC required for full features"],
     fees: "Free app / 1% processing fee",
@@ -255,6 +256,57 @@ export default function BestPaymentAppsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending/best/payment Apps", "description": "The most established crypto payment app with over a decade of history. BitPay processes payments for thousands of merchants, offers a prepaid Mastercard, and", "url": "https://degen0x.com/spending/best/payment-apps"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

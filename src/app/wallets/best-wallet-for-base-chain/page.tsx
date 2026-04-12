@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Wallets for Base Chain 2026 | Coinbase, MetaMask, Rabby | degen0x',
+  title: "Best Wallets for Base Chain 2026 | Coinbase, MetaMask, Rabby",
   description: 'Compare wallets for Coinbase Base (OP Stack L2): Coinbase Wallet, MetaMask, Rabby, Rainbow, Frame. Native Base support, swaps, DeFi dApp browser integration.',
   keywords: ['base chain wallet', 'coinbase wallet', 'metamask base', 'rabby wallet', 'base network', 'L2 ethereum'],
   openGraph: {

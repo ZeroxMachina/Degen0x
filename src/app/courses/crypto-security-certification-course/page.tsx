@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Security Certification Courses 2026: CESD, OSCP, CEH, Bug Bounties',
-  description: 'Complete crypto security guide: CESD, OSCP, CEH certifications. Smart contract auditing, ethical hacking, bug bounty programs (Immunefi, HackerOne). Salary $100-300K+.',
+  title: "Crypto Security Certification Courses 2026: CESD, OSCP,",
+  description: "Complete crypto security guide: CESD, OSCP, CEH certifications. Smart contract auditing, ethical hacking, bug bounty programs (Immunefi, HackerOne). Salary",
   keywords: ['crypto security', 'security certification', 'CESD', 'OSCP', 'CEH', 'smart contract auditing', 'bug bounty', 'ethical hacking'],
   openGraph: {
     type: 'article',
@@ -406,6 +406,56 @@ export default function CryptoSecurityCertificationExpanded() {
 
         <div style={{ ...infoBoxStyle, marginTop: 40, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This is educational content. Security work involves legal/ethical considerations. Always follow responsible disclosure. Never hack systems without written permission from the organization.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

@@ -1,12 +1,13 @@
 import React from 'react';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 
 export const metadata: Metadata = {
-  title: 'Maple Finance & Syrup.fi Institutional DeFi Credit Guide 2026',
-  description: 'Complete guide to Maple Finance and Syrup.fi institutional on-chain credit. Learn about syrupUSDC yield, institutional lending, overcollateralization, risk management, and how to earn stable returns in DeFi.',
+  title: "Maple Finance & Syrup.fi Institutional DeFi Credit Guide",
+  description: "Complete guide to Maple Finance and Syrup.fi institutional on-chain credit. Learn about syrupUSDC yield, institutional lending, overcollateralization, risk",
   keywords: [
     'Maple Finance',
     'Syrup.fi',
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: 'article',
-    title: 'Maple Finance & Syrup.fi Institutional DeFi Credit Guide 2026',
+    title: "Maple Finance & Syrup.fi Institutional DeFi Credit Guide",
     description: 'Learn about Maple Finance institutional lending, syrupUSDC yield (~7% APY), and how to earn stable returns on stablecoins in DeFi.',
     url: 'https://degen0x.com/learn/maple-finance-syrup-institutional-defi-credit-guide-2026',
     publishedTime: '2026-04-10T00:00:00Z',
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Maple Finance & Syrup.fi Institutional DeFi Credit Guide 2026',
+    title: "Maple Finance & Syrup.fi Institutional DeFi Credit Guide",
     description: 'Maple Finance institutional lending and syrupUSDC yield guide for DeFi investors.',
     images: ['https://degen0x.com/og-maple-finance-syrup-2026.svg'],
   },

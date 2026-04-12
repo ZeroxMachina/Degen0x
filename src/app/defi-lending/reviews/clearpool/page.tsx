@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Clearpool Review (${CURRENT_YEAR}): Institutional Unsecured Lending | degen0x`,
   description:
     "In-depth Clearpool review covering permissionless unsecured lending pools, institutional borrowers, CPOOL token, and risk-adjusted yields for DeFi lenders.",
-};
+  alternates: { canonical: "/defi-lending/reviews/clearpool" }};
 
 export default function ClearpoolReview() {
   return (

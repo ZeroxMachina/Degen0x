@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Custodial Crypto Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best custodial crypto wallets for ${CURRENT_YEAR}. Compare managed wallet solutions from Coinbase, Binance, OKX, and Bitget for ease of use and recovery options.`,
-};
+  alternates: { canonical: "/wallets/best/custodial" }};
 
 const products = [
   { name: "Coinbase", slug: "coinbase-wallet", rating: 4.3, description: "The largest US-regulated exchange with custodial wallet services, insurance on custodied assets, FDIC-insured USD balances, and institutional-grade security.", pros: ["Publicly traded regulated company", "Insurance on custodied assets", "Easy fiat on and off ramps"], cons: ["They control your private keys", "KYC required", "Can freeze accounts"], bestFor: "US-based users wanting regulated custodial storage", affiliateUrl: "#", category: "wallets" },
@@ -27,7 +28,14 @@ const faqs = [
 export default function BestCustodialWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Custodial Wallets", href: "/wallets/best/custodial" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Custodial Wallets", href: "/wallets/best/custodial" }]} />
       <AffiliateDisclosure />
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Custodial Crypto Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
@@ -56,6 +64,7 @@ export default function BestCustodialWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/custodial", "description": "The largest US-regulated exchange with custodial wallet services, insurance on custodied assets, FDIC-insured USD balances, and institutional-grade security.", "url": "https://degen0x.com/wallets/best/custodial"}) }} />
     </div>
   );
 }

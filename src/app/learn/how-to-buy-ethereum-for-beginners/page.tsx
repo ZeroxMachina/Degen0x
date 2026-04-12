@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'How to Buy Ethereum for Beginners: Step-by-Step Guide 2026 | degen0x',
+  title: "How to Buy Ethereum for Beginners: Step-by-Step Guide 2026",
   description: 'Learn how to buy Ethereum as a complete beginner. Compare exchanges, fund accounts, execute your first ETH purchase, and transfer to your own wallet securely.',
   keywords: ['how to buy ethereum', 'buy ETH', 'ethereum for beginners', 'buy ethereum guide', 'coinbase ethereum', 'kraken ethereum', 'ethereum purchase'],
   openGraph: {

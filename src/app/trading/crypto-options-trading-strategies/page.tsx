@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Options Trading Strategies 2026 | Deribit, Lyra, Premia',
+  title: "Crypto Options Trading Strategies 2026 | Deribit, Lyra,",
   description: 'Master crypto options strategies: call/put buying, premium selling, straddles, iron condors on Deribit (90% market share), Lyra V2, Premia V3, and Aevo.',
   keywords: ['crypto options trading', 'Deribit', 'options strategies', 'Lyra V2', 'Premia', 'call put', 'straddle', 'iron condor'],
   openGraph: {

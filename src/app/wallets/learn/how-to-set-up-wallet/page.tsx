@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `How to Set Up a Crypto Wallet - Step by Step Guide (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Step-by-step guide to setting up your first crypto wallet in ${CURRENT_YEAR}. Covers MetaMask, Phantom, Ledger, Trezor, and more. Includes security tips for beginners.`,
-};
+  alternates: { canonical: "/wallets/learn/how-to-set-up-wallet" }};
 
 const toc = [
   { id: "before-you-start", title: "Before You Start", level: 2 },

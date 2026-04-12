@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Holyheld Card Review (${CURRENT_YEAR}): Non-Custodial DeFi Spending | ${SITE_NAME}`,
   description: "In-depth Holyheld Card review covering non-custodial spending, DeFi wallet integration, fees, and how it compares to other crypto cards.",
-};
+  alternates: { canonical: "/crypto-cards/reviews/holyheld-card" }};
 
 export default function HolyheldCardReview() {
   return (

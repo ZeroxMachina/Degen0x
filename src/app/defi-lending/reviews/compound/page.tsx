@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,8 +8,8 @@ const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "compound")!;
 
 export const metadata: Metadata = {
   title: "Compound Review 2026: Rates, Security, Pros & Cons",
-  description: "In-depth Compound Finance review covering yield rates, V3 architecture, security, governance, and whether it is the right DeFi protocol for you. Updated March 2026.",
-};
+  description: "In-depth Compound Finance review covering yield rates, V3 architecture, security, governance, and whether it is the right DeFi protocol for you. Updated March",
+  alternates: { canonical: "/defi-lending/reviews/compound" }};
 
 export default function CompoundReview() {
   return (

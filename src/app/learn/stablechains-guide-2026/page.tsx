@@ -7,8 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Stablechains Guide 2026: Circle Arc, Plasma & Stripe Tempo Explained | degen0x',
-  description: 'What are stablechains? Deep dive into Circle Arc, Plasma, and Stripe Tempo — Layer 1 blockchains built for stablecoin payments with sub-second finality. 13 min read.',
+  title: "Stablechains Guide 2026: Circle Arc, Plasma & Stripe Tempo",
+  description: "What are stablechains? Deep dive into Circle Arc, Plasma, and Stripe Tempo — Layer 1 blockchains built for stablecoin payments with sub-second finality. 13 min",
   keywords: ['stablechains', 'Circle Arc', 'Stripe Tempo', 'Plasma stablechain', 'layer 1', 'payment chains', 'stablecoin infrastructure', 'degen0x'],
   openGraph: {
     title: 'Stablechains Guide 2026: Circle Arc, Plasma & Stripe Tempo',

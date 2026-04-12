@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'LayerZero Omnichain Interoperability Protocol Guide 2026',
-  description: 'Complete guide to LayerZero V2 architecture, DVNs, OFT standards, and omnichain messaging across 120+ blockchains. Learn ZRO tokenomics, ecosystem integrations, and cross-chain security models.',
+  description: "Complete guide to LayerZero V2 architecture, DVNs, OFT standards, and omnichain messaging across 120+ blockchains. Learn ZRO tokenomics, ecosystem",
   keywords: [
     'LayerZero',
     'omnichain',

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Layer 2 Crypto Explained: Rollups, zkSync, Arbitrum 2026 | degen0x',
-  description: 'Layer 2 scaling explained: optimistic rollups (Arbitrum, Optimism, Base), ZK rollups (zkSync, StarkNet, Scroll), fraud proofs, validity proofs, TPS, TVL, finality times.',
+  title: "Layer 2 Crypto Explained: Rollups, zkSync, Arbitrum 2026",
+  description: "Layer 2 scaling explained: optimistic rollups (Arbitrum, Optimism, Base), ZK rollups (zkSync, StarkNet, Scroll), fraud proofs, validity proofs, TPS, TVL,",
   keywords: ['layer 2', 'rollups', 'arbitrum', 'optimism', 'zksync', 'scaling', 'crypto layer 2'],
   openGraph: { type: 'article', title: 'Layer 2 Crypto Explained 2026 | degen0x', description: 'Layer 2 scaling explained: optimistic rollups, ZK rollups, fraud proofs, TPS comparison, TVL, finality times.', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/learn/layer-2-crypto-explained', images: [{ url: 'https://degen0x.com/og-learn.svg', width: 1200, height: 630, alt: 'Layer 2 Explained' }] },
   twitter: { card: 'summary_large_image', title: 'Layer 2 Crypto Explained 2026 | degen0x', description: 'Layer 2 scaling explained: optimistic rollups, ZK rollups, fraud proofs, TPS comparison, TVL, finality times.', image: 'https://degen0x.com/og-learn.svg' },

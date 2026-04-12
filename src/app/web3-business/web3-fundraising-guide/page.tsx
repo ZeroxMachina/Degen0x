@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Web3 Fundraising Guide 2026: VCs, IDOs, Token Sales, SAFE/SAFT | degen0x",
-  description: "Complete crypto fundraising guide. Seed rounds SAFE/SAFT, Series A equity, private token sales, IDOs, public sales. Top VCs: a16z, Polychain, Paradigm, Galaxy Digital. Full timeline: 9-18 months.",
+  title: "Web3 Fundraising Guide 2026: VCs, IDOs, Token Sales,",
+  description: "Complete crypto fundraising guide. Seed rounds SAFE/SAFT, Series A equity, private token sales, IDOs, public sales. Top VCs: a16z, Polychain, Paradigm, Galaxy",
   keywords: ["web3 fundraising", "SAFT", "IDO", "seed round", "Series A", "token sale", "venture capital", "crypto funding"],
   openGraph: {
     type: "article",
@@ -441,6 +441,56 @@ export default function Web3FundraisingGuideExpanded() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

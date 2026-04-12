@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
@@ -6,13 +7,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Complete Guide to Layer 2 Scaling Solutions (2026) — Rollups, Sidechains & More",
-  description: "Learn how Layer 2 solutions like Arbitrum, Optimism, Base, zkSync, and Polygon scale Ethereum. Compare rollups, sidechains, state channels, and more in this comprehensive 2026 guide.",
+  title: "Complete Guide to Layer 2 Scaling Solutions (2026) —",
+  description: "Learn how Layer 2 solutions like Arbitrum, Optimism, Base, zkSync, and Polygon scale Ethereum. Compare rollups, sidechains, state channels, and more in this",
   openGraph: {
     title: "Layer 2 Scaling Guide 2026 — degen0x",
     description: "The definitive guide to L2 scaling solutions. Compare rollups, understand the tech, and find the best L2 for your needs.",
   },
-};
+
+  alternates: { canonical: "/learn/layer-2-scaling-guide" }};
 
 const TOC_ITEMS = [
   { id: "what-are-layer-2s", title: "What Are Layer 2s?", level: 2 },
@@ -349,6 +351,56 @@ export default function Layer2GuidePage() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

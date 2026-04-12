@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Institutional Crypto Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best institutional crypto wallets for ${CURRENT_YEAR}. Compare Safe, Ledger Enterprise, and GridPlus for DAO treasuries, fund management, and enterprise custody.`,
-};
+  alternates: { canonical: "/wallets/best/institutional" }};
 
 const products = [
   { name: "Safe (Gnosis Safe)", slug: "safe-wallet", rating: 4.6, description: "The industry-standard multisig wallet securing over $100B in assets for DAOs, protocols, and institutional treasuries across 15+ EVM chains.", pros: ["Battle-tested with $100B+ secured", "Highly configurable governance rules", "Open source and multiply audited"], cons: ["EVM chains only", "Higher gas costs per transaction", "Requires technical setup knowledge"], bestFor: "DAO treasuries and on-chain institutional governance", affiliateUrl: "#", category: "wallets" },
@@ -26,7 +27,14 @@ const faqs = [
 export default function BestInstitutionalWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Institutional Wallets", href: "/wallets/best/institutional" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Institutional Wallets", href: "/wallets/best/institutional" }]} />
       <AffiliateDisclosure />
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Institutional Crypto Wallets ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
@@ -55,6 +63,7 @@ export default function BestInstitutionalWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/institutional", "description": "The industry-standard multisig wallet securing over $100B in assets for DAOs, protocols, and institutional treasuries across 15+ EVM chains.", "url": "https://degen0x.com/wallets/best/institutional"}) }} />
     </div>
   );
 }

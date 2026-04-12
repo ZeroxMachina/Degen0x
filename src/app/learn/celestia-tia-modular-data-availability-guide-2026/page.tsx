@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Celestia (TIA) Modular Data Availability Guide 2026 | Degen0x",
+  title: "Celestia (TIA) Modular Data Availability Guide 2026 |",
   description:
     "Master Celestia\'s modular blockchain architecture, Data Availability Sampling, TIA tokenomics, Blobstream, and the future of modular scaling with Fibre and Lazy Bridging.",
   keywords: [

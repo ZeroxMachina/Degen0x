@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Privacy Wallets 2026 | Wasabi, Samourai, Cake, Unstoppable, Edge | degen0x',
-  description: 'Compare privacy wallets: Wasabi Wallet (CoinJoin), Samourai Wallet (Whirlpool), Cake Wallet (Monero), Unstoppable (Tor), Edge Wallet. CoinJoin mechanics, Monero rings, KYC-free exchange.',
+  title: "Best Privacy Wallets 2026 | Wasabi, Samourai, Cake,",
+  description: "Compare privacy wallets: Wasabi Wallet (CoinJoin), Samourai Wallet (Whirlpool), Cake Wallet (Monero), Unstoppable (Tor), Edge Wallet. CoinJoin mechanics,",
   keywords: ['privacy wallet', 'wasabi wallet', 'samourai wallet', 'monero wallet', 'coinjoin', 'whirlpool', 'tor support'],
   openGraph: {
     title: 'Best Privacy Wallets 2026 | degen0x',

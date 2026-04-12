@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import DailyStreakSystem from "@/components/DailyStreakSystem";
 
 export const metadata: Metadata = {
@@ -8,7 +10,8 @@ export const metadata: Metadata = {
     title: "Daily Streak — degen0x",
     description: "Earn XP multipliers by checking in daily. The longer the streak, the bigger the boost.",
   },
-};
+
+  alternates: { canonical: "/streak" }};
 
 const S = {
   bg: "#0d1117", surface: "#161b22", border: "#30363d",
@@ -18,7 +21,14 @@ const S = {
 export default function StreakPage() {
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
-      {/* Hero */}
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="streak"
+      />      {/* Hero */}
       <div style={{
         background: "linear-gradient(135deg, rgba(240,136,62,0.12) 0%, rgba(13,17,23,0) 60%)",
         borderBottom: `1px solid ${S.border}`, padding: "48px 24px 40px",
@@ -46,6 +56,57 @@ export default function StreakPage() {
       {/* Streak Widget */}
       <div style={{ maxWidth: 740, margin: "40px auto", padding: "0 16px 80px" }}>
         <DailyStreakSystem />
+      </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Daily Streak \u2014 degen0x | Earn XP Every Day", "description": "Check in daily to maintain your streak and earn XP multipliers. 7-day \u2192 1.0\u00d7, 30-day \u2192 1.5\u00d7, 100-day \u2192 2.0\u00d7 XP. Streaks up to 3\u00d7 for 365-day legends.", "url": "https://degen0x.com/streak"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </main>
   );

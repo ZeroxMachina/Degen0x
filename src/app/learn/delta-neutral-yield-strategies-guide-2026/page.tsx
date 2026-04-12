@@ -9,9 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Delta-Neutral Yield Strategies Guide 2026 — Basis Trading & Funding Rate Arbitrage | degen0x",
-  description:
-    "Learn delta-neutral crypto strategies: funding rate arbitrage, basis trading, and protocols like Ethena USDe. Earn yield without directional risk. Updated March 2026.",
+  title: "Delta-Neutral Yield Strategies Guide 2026 — Basis Trading &",
+  description: "Learn delta-neutral crypto strategies: funding rate arbitrage, basis trading, and protocols like Ethena USDe. Earn yield without directional risk. Updated",
   keywords: [
     "delta neutral crypto",
     "basis trade crypto",
@@ -43,7 +42,8 @@ export const metadata: Metadata = {
     description:
       "Master basis trading, funding rate arbitrage, and delta-neutral yield strategies with Ethena USDe.",
   },
-};
+
+  alternates: { canonical: "/learn/delta-neutral-yield-strategies-guide-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

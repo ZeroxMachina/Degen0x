@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Parallel EVM Guide 2026: Monad, MegaETH & Sei Compared | degen0x',
-  description: 'Complete guide to Parallel EVM execution in 2026. Learn how Monad, MegaETH, and Sei achieve massive throughput (10K-100K TPS) with parallel transaction execution. Compare architectures, ecosystems, and performance. Real-time blockchain revolution.',
+  title: "Parallel EVM Guide 2026: Monad, MegaETH & Sei Compared",
+  description: "Complete guide to Parallel EVM execution in 2026. Learn how Monad, MegaETH, and Sei achieve massive throughput (10K-100K TPS) with parallel transaction",
   keywords: ['Parallel EVM', 'Monad', 'MegaETH', 'Sei v2', 'L1', 'L2', 'parallel execution', 'real-time blockchain', 'scaling 2026', 'DeFi infrastructure', 'high throughput'],
   openGraph: {
     type: 'article',

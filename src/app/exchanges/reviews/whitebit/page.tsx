@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,8 +8,7 @@ const product = {
   name: "WhiteBIT",
   slug: "whitebit",
   rating: 3.7,
-  description:
-    "WhiteBIT is a European crypto exchange with 600+ trading pairs, competitive fees, and strong fiat support for EUR and UAH. Popular in Eastern Europe with growing global reach.",
+  description: "WhiteBIT is a European crypto exchange with 600+ trading pairs, competitive fees, and strong fiat support for EUR and UAH. Popular in Eastern Europe with",
   pros: [
     "Low spot trading fees starting at 0.1% with volume discounts",
     "Strong EUR and UAH fiat support with SEPA and local banks",
@@ -29,7 +30,7 @@ const product = {
 export const metadata: Metadata = {
   title: `WhiteBIT Review (${CURRENT_YEAR}) - European Exchange with Low Fees | ${SITE_NAME}`,
   description: `Complete WhiteBIT review for ${CURRENT_YEAR}. Covers trading fees, fiat support, 600+ trading pairs, security, and the European user experience.`,
-};
+  alternates: { canonical: "/exchanges/reviews/whitebit" }};
 
 const overview =
   "WhiteBIT is a European cryptocurrency exchange founded in 2018 and headquartered in Vilnius, Lithuania. The platform has grown to over 5 million registered users, with particular strength in Eastern Europe and the CIS region. WhiteBIT offers access to 600+ trading pairs, competitive fees, and robust fiat on-ramp support for European currencies, especially EUR and UAH.\n\nThe exchange provides spot trading, margin trading, perpetual futures, and a range of earn products. WhiteBIT holds regulatory registrations in multiple European jurisdictions and has positioned itself as a compliant platform that bridges traditional finance and crypto. The platform also offers unique features like a crypto debit card, P2P trading, and integrations with European banking systems via SEPA transfers.\n\nWhileBIT is best suited for European traders who value fiat accessibility, regulatory compliance, and competitive fees. Its main limitations are lower global brand recognition and liquidity compared to tier-one exchanges, particularly on altcoin pairs. For traders in the EU and neighboring regions, WhiteBIT offers a localized experience that many global exchanges cannot match.";

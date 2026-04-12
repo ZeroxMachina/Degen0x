@@ -1,10 +1,10 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "degen0x en Español — Comparar Exchanges, Wallets y DeFi",
-  description:
-    "degen0x es tu guía de confianza para cripto en español. Compara exchanges, wallets, protocolos DeFi y más. Reseñas de expertos, herramientas interactivas y guías completas.",
+  description: "degen0x es tu guía de confianza para cripto en español. Compara exchanges, wallets, protocolos DeFi y más. Reseñas de expertos, herramientas interactivas y",
   alternates: { canonical: "https://degen0x.com/es" },
 };
 
@@ -29,7 +29,14 @@ const GUIAS_POPULARES = [
 export default function EspanolLandingPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--color-bg)" }}>
-      {/* Hero */}
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="es"
+      />      {/* Hero */}
       <section className="relative overflow-hidden" style={{
         background: "linear-gradient(135deg, color-mix(in srgb, #6366f1 8%, transparent), color-mix(in srgb, #06b6d4 5%, transparent))",
         borderBottom: "1px solid var(--color-border)"
@@ -133,6 +140,57 @@ export default function EspanolLandingPage() {
           Invertir en criptomonedas implica un alto riesgo de pérdida.{" "}
           <Link href="/es" style={{ color: "var(--color-primary)" }}>Aviso legal completo</Link>
         </p>
+      </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x en Espa\u00f1ol \u2014 Comparar Exchanges, Wallets y DeFi", "description": "degen0x es tu gu\u00eda de confianza para cripto en espa\u00f1ol. Compara exchanges, wallets, protocolos DeFi y m\u00e1s. Rese\u00f1as de expertos, herramientas interactivas y", "url": "https://degen0x.com/es"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </div>
   );

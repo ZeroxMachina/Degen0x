@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker & Airdrop.io | degen0x',
-  description: 'Track eligible crypto airdrops with Earni.fi, DeBank, and airdrop.io. Check LayerZero, Arbitrum, Optimism eligibility. Qualify for airdrops: bridge, swap, stake, farm.',
+  title: "Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker",
+  description: "Track eligible crypto airdrops with Earni.fi, DeBank, and airdrop.io. Check LayerZero, Arbitrum, Optimism eligibility. Qualify for airdrops: bridge, swap,",
   keywords: ['crypto airdrop', 'airdrop tracker', 'Earni.fi', 'DeBank', 'LayerZero', 'Arbitrum airdrop', 'airdrop farming', 'sybil detection'],
   openGraph: {
     title: 'Crypto Airdrop Tracker',

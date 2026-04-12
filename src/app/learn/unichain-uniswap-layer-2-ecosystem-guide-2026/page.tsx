@@ -5,13 +5,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Unichain Guide 2026 — Uniswap Layer 2, UNI Staking & DeFi Hub | degen0x',
-  description: 'Complete guide to Unichain in 2026: the Uniswap-built Layer 2 optimized for DeFi. Learn about UNI staking, 1-second blocks, cross-chain liquidity, and ecosystem metrics.',
+  title: "Unichain Guide 2026 — Uniswap Layer 2, UNI Staking & DeFi",
+  description: "Complete guide to Unichain in 2026: the Uniswap-built Layer 2 optimized for DeFi. Learn about UNI staking, 1-second blocks, cross-chain liquidity, and",
   keywords: ['Unichain', 'Uniswap Layer 2', 'UNI token', 'UNI staking', 'Unichain DeFi', 'Unichain TVL 2026', 'DeFi L2', 'OP Stack', 'Uniswap chain', 'cross-chain DeFi'],
   openGraph: {
     type: 'article',
     title: 'Unichain Guide 2026 — Uniswap Layer 2, UNI Staking & DeFi Hub',
-    description: 'Complete guide to Unichain in 2026: the Uniswap-built Layer 2 optimized for DeFi. Learn about UNI staking, 1-second blocks, cross-chain liquidity, and ecosystem metrics.',
+    description: "Complete guide to Unichain in 2026: the Uniswap-built Layer 2 optimized for DeFi. Learn about UNI staking, 1-second blocks, cross-chain liquidity, and",
     publishedTime: '2026-04-09T00:00:00Z',
     modifiedTime: '2026-04-09T00:00:00Z',
     url: 'https://degen0x.com/learn/unichain-uniswap-layer-2-ecosystem-guide-2026',

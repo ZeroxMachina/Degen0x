@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -11,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Kraken vs Binance (${CURRENT_YEAR}): Global Exchange Comparison | ${SITE_NAME}`,
   description: `Kraken vs Binance comparison for ${CURRENT_YEAR}. Compare fees, regulation, staking, futures trading, and global availability.`,
-};
+  alternates: { canonical: "/exchanges/compare/kraken-vs-binance" }};
 
 const items: ComparisonItem[] = [
   { name: "Kraken", slug: "kraken", rating: 4.7, affiliateUrl: "https://degen0x.com/go/kraken", features: { "Trading Fees": "0.16% maker / 0.26% taker", "Coins Listed": "200+", "Futures": "Yes (up to 50x)", "Staking": "Yes (20+ assets)", "Regulation": "US FinCEN, multi-country", "Proof of Reserves": "Yes (cryptographic audit)", "US Available": "Yes", "Fiat Support": "7+ currencies" } },
@@ -126,6 +127,57 @@ export default function KrakenVsBinancePage() {
           },
         ]}
       />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/kraken Vs Binance", "description": "Crypto content on degen0x", "url": "https://degen0x.com/exchanges/compare/kraken-vs-binance"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

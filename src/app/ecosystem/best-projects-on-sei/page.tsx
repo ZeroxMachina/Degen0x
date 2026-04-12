@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Best Sei Projects 2026: Astroport, DragonSwap, Silo, Yei Finance | degen0x",
-  description: "Top Sei ecosystem projects: Astroport DEX, DragonSwap, Silo Protocol lending, Yei Finance. Sei V2 parallelized EVM, twin-turbo consensus. Comparison with Cosmos chains.",
+  title: "Best Sei Projects 2026: Astroport, DragonSwap, Silo, Yei",
+  description: "Top Sei ecosystem projects: Astroport DEX, DragonSwap, Silo Protocol lending, Yei Finance. Sei V2 parallelized EVM, twin-turbo consensus. Comparison with",
   keywords: ["Sei projects", "Astroport", "DragonSwap", "Silo Protocol", "Yei Finance", "Sei V2", "parallelized EVM"],
   openGraph: {
     type: "article",

@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Whale Wallet Tracker 2026: Nansen, Arkham Intelligence vs Etherscan | degen0x',
+  title: "Whale Wallet Tracker 2026: Nansen, Arkham Intelligence vs",
   description: 'Track whale wallets: Nansen (10+ chains), Arkham Intelligence (labeled), Whale Alert, Lookonchain, DeBank. Follow smart money.',
   keywords: ['whale tracker', 'whale watching', 'smart money', 'Nansen', 'Arkham', 'labeled wallets', 'blockchain tracking'],
   openGraph: { type: 'article', title: 'Whale Tracker 2026', description: 'Whale wallet tracking tools', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/tools/whale-wallet-tracker', images: [{ url: 'https://degen0x.com/og-tools-whale-tracker.svg', width: 1200, height: 630, alt: 'Whale Trackers' }] },

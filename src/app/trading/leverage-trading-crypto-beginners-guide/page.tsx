@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Leverage Trading Guide 2026: 2x-125x, Margin Mechanics, Liquidation | degen0x',
-  description: 'Complete leverage trading guide: 2x-125x margin, cross vs isolated margin, liquidation price formula, Binance/Bybit/dYdX comparison. Position sizing: never risk >2% per trade.',
+  title: "Crypto Leverage Trading Guide 2026: 2x-125x, Margin",
+  description: "Complete leverage trading guide: 2x-125x margin, cross vs isolated margin, liquidation price formula, Binance/Bybit/dYdX comparison. Position sizing: never",
   keywords: ['leverage trading', 'margin trading', 'crypto leverage', 'liquidation price', 'binance margin', 'bybit leverage'],
   openGraph: {
     type: 'article',

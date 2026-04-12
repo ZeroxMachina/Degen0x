@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Orbit Protocol Review ${CURRENT_YEAR}: Blast Lending Platform`,
   description: "Detailed Orbit Protocol review covering lending on Blast L2, native yield integration, borrowing markets, and risk assessment for this Blast-native protocol.",
-};
+  alternates: { canonical: "/defi-lending/reviews/orbit" }};
 
 export default function OrbitReview() {
   return (

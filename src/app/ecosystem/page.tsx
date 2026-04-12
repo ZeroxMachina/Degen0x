@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import EcosystemStore from '@/components/EcosystemStore';
 
 export const metadata: Metadata = {
   title: 'dApp Ecosystem — Every Protocol on Every Chain | degen0x',
-  description:
-    'Discover and explore every dApp across Ethereum, Solana, Base, Arbitrum, Polygon, Avalanche and more. Filter by chain, category, and ratings. The most comprehensive dApp directory in crypto.',
+  description: "Discover and explore every dApp across Ethereum, Solana, Base, Arbitrum, Polygon, Avalanche and more. Filter by chain, category, and ratings. The most",
   openGraph: {
     title: 'dApp Ecosystem Directory | degen0x',
     description:
@@ -17,7 +18,8 @@ export const metadata: Metadata = {
     description: 'Every dApp across every chain. Filter, compare, and learn about protocols.',
     images: ['https://degen0x.com/og-ecosystem-store.png'],
   },
-};
+
+  alternates: { canonical: "/ecosystem" }};
 
 export default function EcosystemPage() {
   return <EcosystemStore />;

@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import HyperliquidClient from "./HyperliquidClient";
 
 export const metadata: Metadata = {
-  title: "Hyperliquid: The #1 Perp DEX Guide 2026 — $2.9T Volume, 70% Market Share | degen0x",
-  description:
-    "Complete guide to Hyperliquid — the dominant perpetual futures DEX with $2.9T cumulative volume, 1.4M users, and 70%+ perp DEX market share. HYPE tokenomics, fees, risks, and how to trade.",
+  title: "Hyperliquid: The #1 Perp DEX Guide 2026 — $2.9T Volume, 70%",
+  description: "Complete guide to Hyperliquid — the dominant perpetual futures DEX with $2.9T cumulative volume, 1.4M users, and 70%+ perp DEX market share. HYPE tokenomics,",
   keywords: [
     "hyperliquid",
     "hyperliquid guide",
@@ -43,7 +44,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=Hyperliquid:+The+%231+Perp+DEX+Guide+2026&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/hyperliquid" }};
 
 export default function HyperliquidPage() {
   return <HyperliquidClient />;

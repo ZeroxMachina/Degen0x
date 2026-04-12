@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Kinza Finance Review ${CURRENT_YEAR}: BNB Chain Lending Protocol`,
   description: "Comprehensive Kinza Finance review covering Aave V3-based lending on BNB Chain, yield rates, KZA token rewards, and protocol risk analysis.",
-};
+  alternates: { canonical: "/defi-lending/reviews/kinza" }};
 
 export default function KinzaReview() {
   return (

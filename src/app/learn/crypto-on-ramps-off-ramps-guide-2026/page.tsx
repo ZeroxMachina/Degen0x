@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Crypto On-Ramps & Off-Ramps Guide 2026 — Cheapest Ways to Buy & Sell | degen0x",
-  description:
-    "Compare the best crypto on-ramp and off-ramp providers in 2026. MoonPay, Transak, Ramp Network, Coinbase & more — fees, speed, payment methods, and geo coverage compared.",
+  title: "Crypto On-Ramps & Off-Ramps Guide 2026 — Cheapest Ways to",
+  description: "Compare the best crypto on-ramp and off-ramp providers in 2026. MoonPay, Transak, Ramp Network, Coinbase & more — fees, speed, payment methods, and geo",
   keywords: [
     "crypto on-ramp",
     "crypto off-ramp",
@@ -47,7 +46,8 @@ export const metadata: Metadata = {
     description:
       "Compare MoonPay, Transak, Ramp Network & more. Find the cheapest way to buy and sell crypto.",
   },
-};
+
+  alternates: { canonical: "/learn/crypto-on-ramps-off-ramps-guide-2026" }};
 
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

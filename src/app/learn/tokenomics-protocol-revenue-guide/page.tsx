@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
 export const metadata: Metadata = {
-  title: "Tokenomics 2.0: DeFi Protocol Revenue & Fee Switches 2026 | degen0x",
-  description:
-    "Uniswap burned $591M & activated its fee switch. Aave runs buybacks from protocol revenue. Learn how Tokenomics 2.0 works, how to evaluate DeFi P/E ratios, and what it means for holders.",
+  title: "Tokenomics 2.0: DeFi Protocol Revenue & Fee Switches 2026",
+  description: "Uniswap burned $591M & activated its fee switch. Aave runs buybacks from protocol revenue. Learn how Tokenomics 2.0 works, how to evaluate DeFi P/E ratios, and",
   openGraph: {
     title: "Tokenomics 2.0: From Governance Tokens to Cash-Flow Tokens",
     description:
@@ -687,6 +687,56 @@ export default function TokenomicsProtocolRevenueGuide() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

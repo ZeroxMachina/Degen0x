@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,9 +8,8 @@ const product = exchanges.find((e) => e.slug === "kraken")!;
 
 export const metadata: Metadata = {
   title: "Kraken Review 2026: Fees, Features, Pros & Cons",
-  description:
-    "Our detailed Kraken review covers its industry-leading security, competitive fees, margin trading, and 200+ supported coins. Find out if Kraken is right for you. Updated March 2026.",
-};
+  description: "Our detailed Kraken review covers its industry-leading security, competitive fees, margin trading, and 200+ supported coins. Find out if Kraken is right for",
+  alternates: { canonical: "/exchanges/reviews/kraken" }};
 
 export default function KrakenReview() {
   return (

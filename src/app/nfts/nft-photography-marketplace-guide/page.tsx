@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'NFT Photography Marketplaces 2026: SuperRare, Foundation, Quantum Art | degen0x',
-  description: 'Complete guide to NFT photography marketplaces. Compare SuperRare, Foundation, Quantum Art, Sloika. Learn 1/1 editions, pricing strategies, copyright licensing, and Justin Aversano\'s Twin Flames success story.',
+  title: "NFT Photography Marketplaces 2026: SuperRare, Foundation,",
+  description: "Complete guide to NFT photography marketplaces. Compare SuperRare, Foundation, Quantum Art, Sloika. Learn 1/1 editions, pricing strategies, copyright"s Twin Flames success story.',
   keywords: ['NFT photography', 'SuperRare', 'Foundation', 'Quantum Art', 'Sloika', 'photography NFTs', 'photographer earnings', 'NFT royalties', 'fine art NFT', 'digital photography'],
   openGraph: {
     type: 'article',

@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'ZK Rollups Guide 2026: zkSync, Starknet, Scroll & Proving Revolution | degen0x',
-  description: 'Complete guide to Zero-Knowledge Rollups in 2026. Learn how ZK Rollups achieve instant finality, compare zkSync Era, Starknet, Scroll, and explore the proving revolution: 16-second proofs, $0.001 costs, and decentralized proving networks.',
+  title: "ZK Rollups Guide 2026: zkSync, Starknet, Scroll & Proving",
+  description: "Complete guide to Zero-Knowledge Rollups in 2026. Learn how ZK Rollups achieve instant finality, compare zkSync Era, Starknet, Scroll, and explore the proving",
   keywords: ['ZK Rollups', 'zkSync', 'Starknet', 'Scroll', 'Layer 2', 'zero-knowledge proofs', 'zk-EVMs', 'L2 scaling', 'crypto 2026', 'rollups', 'cryptographic proofs', 'proving networks'],
   openGraph: {
     type: 'article',

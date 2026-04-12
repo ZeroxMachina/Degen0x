@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Story Protocol Guide 2026 — IP Blockchain Explained | degen0x",
-  description:
-    "Complete guide to Story Protocol, the Layer 1 blockchain for IP management. Learn about Proof-of-Creativity, Programmable IP Licenses, the $IP token, and why it matters for AI and creators.",
+  title: "Story Protocol Guide 2026 — IP Blockchain Explained",
+  description: "Complete guide to Story Protocol, the Layer 1 blockchain for IP management. Learn about Proof-of-Creativity, Programmable IP Licenses, the $IP token, and why",
   keywords: [
     "Story Protocol",
     "IP blockchain",
@@ -506,8 +505,8 @@ export default function StoryProtocolGuidePage() {
               },
             ].map((faq, i) => (
               <div key={i} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 10, padding: 18 }}>
-                <div style={{ fontWeight: 700, color: S.text, marginBottom: 10, fontSize: 14 }}>Q: {faq.q}</div>
-                <div style={{ fontSize: 13, color: S.text2, lineHeight: 1.8 }}>A: {faq.a}</div>
+                <div style={{ fontWeight: 700, color: S.text, marginBottom: 10, fontSize: 14 }}>Q: {faq.question}</div>
+                <div style={{ fontSize: 13, color: S.text2, lineHeight: 1.8 }}>A: {faq.answer}</div>
               </div>
             ))}
           </div>

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Where to Spend Bitcoin 2026: Microsoft, AT&T, Bitrefill, El Salvador | degen0x',
-  description: 'Bitcoin spending guide: Microsoft (cloud), AT&T (utilities), Bitcoin debit cards, Bitrefill, Travala, Lightning payments, El Salvador adoption. Real-world merchants.',
+  title: "Where to Spend Bitcoin 2026: Microsoft, AT&T, Bitrefill, El",
+  description: "Bitcoin spending guide: Microsoft (cloud), AT&T (utilities), Bitcoin debit cards, Bitrefill, Travala, Lightning payments, El Salvador adoption. Real-world",
   keywords: ['where to spend bitcoin', 'bitcoin merchants 2026', 'use bitcoin', 'bitcoin payments', 'bitrefill', 'lightning network', 'el salvador bitcoin'],
   openGraph: { type: 'article', title: 'Where to Spend Bitcoin 2026: Microsoft, AT&T, Bitrefill, Travala', description: 'Bitcoin spending guide: Microsoft, AT&T, debit cards, Bitrefill, Travala, Lightning, El Salvador. Real merchants 2026.', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/spending/where-to-spend-bitcoin-2026', images: [{ url: 'https://degen0x.com/og-spending.svg', width: 1200, height: 630 }] },
   twitter: { card: 'summary_large_image', title: 'Where to Spend Bitcoin 2026', description: 'Bitcoin spending: Microsoft, AT&T, debit cards, Bitrefill, Travala, Lightning, El Salvador real merchants.', image: 'https://degen0x.com/og-spending.svg' },
@@ -178,6 +178,56 @@ export default function WhereToSpendBitcoin() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

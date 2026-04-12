@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "GridPlus Lattice1 review: enterprise hardware wallet",
-  description: "GridPlus Lattice1 hardware wallet review: SafeCards, 5-inch touchscreen, WiFi-enabled, auto-sign permissions, MetaMask Snaps. Pros, cons, comparison vs Ledger/Keystone. $397.",
+  description: "GridPlus Lattice1 hardware wallet review: SafeCards, 5-inch touchscreen, WiFi-enabled, auto-sign permissions, MetaMask Snaps. Pros, cons, comparison vs",
   keywords: [
     "GridPlus Lattice1 review",
     "Lattice hardware wallet",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     title: "GridPlus Lattice1 review: enterprise hardware wallet",
-    description: "GridPlus Lattice1 hardware wallet review: SafeCards, 5-inch touchscreen, WiFi-enabled, auto-sign permissions, MetaMask Snaps. Pros, cons, comparison vs Ledger/Keystone. $397.",
+    description: "GridPlus Lattice1 hardware wallet review: SafeCards, 5-inch touchscreen, WiFi-enabled, auto-sign permissions, MetaMask Snaps. Pros, cons, comparison vs",
     publishedTime: "2026-04-10T00:00:00Z",
     modifiedTime: "2026-04-10T00:00:00Z",
     url: "https://degen0x.com/wallets/gridplus-lattice-wallet-review",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "GridPlus Lattice1 review: enterprise hardware wallet",
-    description: "GridPlus Lattice1 hardware wallet review: SafeCards, 5-inch touchscreen, WiFi-enabled, auto-sign permissions, MetaMask Snaps. Pros, cons, comparison vs Ledger/Keystone. $397.",
+    description: "GridPlus Lattice1 hardware wallet review: SafeCards, 5-inch touchscreen, WiFi-enabled, auto-sign permissions, MetaMask Snaps. Pros, cons, comparison vs",
     image: "https://degen0x.com/og-wallets.svg",
   },
   alternates: {

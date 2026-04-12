@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -10,14 +11,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Cashback Cards of ${CURRENT_YEAR} - Earn Crypto on Every Purchase | ${SITE_NAME}`,
   description: `Compare the best crypto cashback cards of ${CURRENT_YEAR}. Earn Bitcoin, Ethereum, and other crypto rewards on everyday spending. Up to 8% back on purchases.`,
-};
+  alternates: { canonical: "/spending/best/cashback" }};
 
 const cashbackCards: Product[] = [
   {
     name: "Crypto.com Visa Card",
     slug: "crypto-com-visa",
     rating: 4.8,
-    description: "Offers the most well-rounded cashback program with five tiers. The entry-level Midnight Blue earns 1% CRO back, while the top-tier Obsidian earns 5%. Additional perks include 100% rebates on Spotify, Netflix, and Amazon Prime subscriptions on qualifying tiers.",
+    description: "Offers the most well-rounded cashback program with five tiers. The entry-level Midnight Blue earns 1% CRO back, while the top-tier Obsidian earns 5%.",
     pros: ["Up to 5% cashback in CRO", "Subscription rebates (Spotify, Netflix, Amazon Prime)", "No spending caps on cashback", "Staking rewards on locked CRO"],
     cons: ["Requires CRO staking for best rates ($400-$400,000)", "Cashback only in CRO token", "180-day lock-up period", "Reward rates subject to policy changes"],
     fees: "No annual fee",
@@ -280,7 +281,57 @@ export default function BestCashbackCardsPage() {
         </section>
 
         <FAQSection faqs={faqs} />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
     </>
   );
 }

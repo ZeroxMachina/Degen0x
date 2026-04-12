@@ -8,11 +8,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Stablecoin Payments Infrastructure Guide 2026: From BVNK to Global Settlement | degen0x",
+  title: "Stablecoin Payments Infrastructure Guide 2026: From BVNK to",
   description: "Comprehensive guide to stablecoin payment infrastructure in 2026. Learn about Mastercard's $1.8B BVNK acquisition, how settlement rails work, and what it means for crypto users.",
   keywords: ["stablecoin payments infrastructure", "BVNK Mastercard", "stablecoin settlement rails", "USDT USDC payments", "cross-border stablecoin payments", "stablecoin adoption 2026", "on-chain settlement"],
   openGraph: {
-    title: "Stablecoin Payments Infrastructure Guide 2026: From BVNK to Global Settlement | degen0x",
+    title: "Stablecoin Payments Infrastructure Guide 2026: From BVNK to",
     description: "How Mastercard's BVNK acquisition and stablecoin settlement rails are reshaping global payments.",
     url: `${SITE_URL}/learn/stablecoin-payments-infrastructure-guide-2026`,
     type: "article",

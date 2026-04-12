@@ -42,7 +42,8 @@ export const metadata: Metadata = {
     images: ['https://degen0x.com/og-distributed-validator-technology-dvt-guide.svg'],
     image: 'https://degen0x.com/og-distributed-validator-technology-dvt-guide.svg',
   },
-};
+
+  alternates: { canonical: "/learn/distributed-validator-technology-dvt-guide" }};
 
 const sectionStyle: React.CSSProperties = {
   marginBottom: '2.5rem',
@@ -1001,11 +1002,11 @@ export default function DVTGuidePage() {
                   minHeight: '44px',
                   userSelect: 'none',
                 }}>
-                  {faq.q}
+                  {faq.question}
                   <span style={{ color: '#8b949e', marginLeft: '1rem', flexShrink: 0 }}>▼</span>
                 </summary>
                 <p style={{ ...pStyle, padding: '0 1.5rem 1.25rem 1.5rem', marginBottom: 0 }}>
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </details>
             ))}

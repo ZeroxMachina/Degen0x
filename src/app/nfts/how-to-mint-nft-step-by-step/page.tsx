@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'How to Mint NFT Step-by-Step 2026: Prepare Artwork, Choose Chain (ETH/SOL/Polygon), OpenSea | degen0x',
-  description: 'Mint NFT guide: prepare artwork (PNG/GIF/video), choose blockchain (Ethereum $50-500 gas, Solana <$1, Polygon $1-5), select marketplace (OpenSea, Magic Eden), upload metadata.',
+  title: "How to Mint NFT Step-by-Step 2026: Prepare Artwork, Choose",
+  description: "Mint NFT guide: prepare artwork (PNG/GIF/video), choose blockchain (Ethereum $50-500 gas, Solana <$1, Polygon $1-5), select marketplace (OpenSea, Magic Eden),",
   keywords: ['how to mint nft', 'mint nft step by step', 'nft minting cost', 'openSea minting', 'solana nft mint'],
   openGraph: { type: 'article', title: 'How to Mint NFT 2026', description: 'NFT minting guide: ETH, Solana, Polygon costs and steps', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/nfts/how-to-mint-nft-step-by-step', images: [{ url: 'https://degen0x.com/og-nfts.svg', width: 1200, height: 630, alt: 'NFT Minting' }] },
   twitter: { card: 'summary_large_image', title: 'How to Mint NFT', description: 'NFT minting guide: Ethereum, Solana, Polygon', image: 'https://degen0x.com/og-nfts.svg' },

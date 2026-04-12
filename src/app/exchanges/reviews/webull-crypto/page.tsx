@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Webull Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Webull Crypto review covering trading fees, supported coins, advanced charting, and whether this brokerage platform is right for crypto.",
-};
+  alternates: { canonical: "/exchanges/reviews/webull-crypto" }};
 
 export default function WebullCryptoReview() {
   return (

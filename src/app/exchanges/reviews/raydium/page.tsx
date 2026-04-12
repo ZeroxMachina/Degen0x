@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -29,7 +31,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Raydium Review (${CURRENT_YEAR}) - Solana's Leading AMM & Liquidity Hub | ${SITE_NAME}`,
   description: `Complete Raydium review for ${CURRENT_YEAR}. Covers the hybrid AMM model, CLMM pools, swap fees, liquidity provision, and Solana ecosystem integration.`,
-};
+  alternates: { canonical: "/exchanges/reviews/raydium" }};
 
 const overview =
   "Raydium is the largest automated market maker (AMM) and decentralized exchange on the Solana blockchain. Launched in 2021, Raydium distinguished itself by combining traditional AMM liquidity pools with integration into Solana's central limit order book (originally Serum, now OpenBook). This hybrid model routes liquidity from AMM pools to the order book and vice versa, providing tighter spreads and better execution than pure AMM designs.\n\nRaydium has evolved into the primary liquidity hub for the Solana ecosystem, processing billions of dollars in monthly trading volume. The protocol supports standard AMM pools, concentrated liquidity market maker (CLMM) pools for capital-efficient positions, and the AcceleRaytor launchpad for new Solana projects. Raydium is where the vast majority of Solana-native token liquidity resides, making it the default trading venue for SPL tokens.\n\nThe RAY token serves as the protocol's governance and utility token, providing fee discounts, staking rewards, and governance voting rights. Raydium's position as the dominant Solana DEX makes it essential infrastructure for anyone trading or providing liquidity in the Solana ecosystem.";

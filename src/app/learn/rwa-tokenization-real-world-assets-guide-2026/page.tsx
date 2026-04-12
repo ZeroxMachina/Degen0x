@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'RWA Tokenization: Real-World Assets On-Chain Guide 2026 | degen0x',
-  description: 'Complete guide to Real-World Asset tokenization in 2026. Learn how BlackRock BUIDL, Ondo Finance, and institutional protocols are bringing $12B+ of assets on-chain.',
+  title: "RWA Tokenization: Real-World Assets On-Chain Guide 2026",
+  description: "Complete guide to Real-World Asset tokenization in 2026. Learn how BlackRock BUIDL, Ondo Finance, and institutional protocols are bringing $12B+ of assets",
   keywords: ['RWA', 'tokenization', 'real-world assets', 'BlackRock BUIDL', 'Ondo Finance', 'blockchain', 'tokenized treasuries', 'RWA crypto 2026'],
   openGraph: {
     type: 'article',
-    title: 'RWA Tokenization: Real-World Assets On-Chain Guide 2026 | degen0x',
+    title: "RWA Tokenization: Real-World Assets On-Chain Guide 2026",
     description: 'How BlackRock BUIDL, Ondo Finance, and institutions are tokenizing $12B+ in real-world assets on-chain. Complete 2026 guide.',
     publishedTime: '2026-04-01T00:00:00Z',
     modifiedTime: '2026-04-01T00:00:00Z',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'RWA Tokenization Guide 2026 | Real-World Assets On-Chain',
-    description: 'Complete guide to Real-World Asset tokenization in 2026. Learn how BlackRock BUIDL, Ondo Finance, and institutional protocols are bringing $12B+ of assets on-chain.',
+    description: "Complete guide to Real-World Asset tokenization in 2026. Learn how BlackRock BUIDL, Ondo Finance, and institutional protocols are bringing $12B+ of assets",
     image: 'https://degen0x.com/og-rwa-tokenization.svg',
   },
   alternates: {
@@ -37,7 +37,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'RWA Tokenization Guide 2026: Real-World Assets Moving On-Chain',
-  description: 'Complete guide to Real-World Asset tokenization in 2026. Learn how BlackRock BUIDL, Ondo Finance, and institutional protocols are bringing $12B+ of assets on-chain.',
+  description: "Complete guide to Real-World Asset tokenization in 2026. Learn how BlackRock BUIDL, Ondo Finance, and institutional protocols are bringing $12B+ of assets",
   image: 'https://degen0x.com/og-rwa-tokenization.svg',
   datePublished: '2026-04-01',
   dateModified: '2026-04-01',

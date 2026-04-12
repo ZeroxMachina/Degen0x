@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import UsualClient from "./UsualClient";
 
 export const metadata: Metadata = {
-  title: "Usual Money: USD0 Revenue-Sharing Stablecoin Guide 2026 — $1.4B Supply | degen0x",
-  description:
-    "Complete guide to Usual Money — the RWA-backed stablecoin protocol with $1.4B USD0 supply, ~12% APY on USD0++, and 100% revenue sharing to $USUAL holders. How USD0 works, risks, and how to earn yield.",
+  title: "Usual Money: USD0 Revenue-Sharing Stablecoin Guide 2026 —",
+  description: "Complete guide to Usual Money — the RWA-backed stablecoin protocol with $1.4B USD0 supply, ~12% APY on USD0++, and 100% revenue sharing to $USUAL holders. How",
   keywords: [
     "usual money",
     "USD0 stablecoin",
@@ -42,7 +43,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=Usual+Money:+USD0+Stablecoin+Guide+2026&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/usual" }};
 
 export default function UsualPage() {
   return <UsualClient />;

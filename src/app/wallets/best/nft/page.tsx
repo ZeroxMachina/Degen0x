@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -11,7 +12,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best NFT Wallets of ${CURRENT_YEAR} - Top Wallets for NFTs | ${SITE_NAME}`,
   description: `Compare the best wallets for NFTs in ${CURRENT_YEAR}. Phantom, MetaMask, Rabby and more. Expert-tested for NFT display, minting, trading, and multi-chain collections.`,
-};
+  alternates: { canonical: "/wallets/best/nft" }};
 
 const faqs = [
   { question: "What is the best wallet for NFTs?", answer: "Phantom offers the best NFT experience with its beautiful gallery display, collection grouping, floor price data, and spam NFT detection. It supports NFTs on Solana, Ethereum, Polygon, and Bitcoin (Ordinals). MetaMask is the most widely compatible for Ethereum NFT marketplaces like OpenSea and Blur." },
@@ -29,7 +30,14 @@ export default function BestNFTWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Crypto Wallets", href: "/wallets" },
@@ -104,6 +112,7 @@ export default function BestNFTWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/nft", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/nft"}) }} />
     </div>
   );
 }

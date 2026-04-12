@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Aave V4 & GHO Stablecoin DeFi Lending Guide 2026',
-  description: 'Complete guide to Aave V4 launch, hub-and-spoke architecture, GHO stablecoin ecosystem, tokenomics, and multichain strategy. Learn how Aave dominates DeFi lending with $42.34B TVL and 59.79% market share.',
+  description: "Complete guide to Aave V4 launch, hub-and-spoke architecture, GHO stablecoin ecosystem, tokenomics, and multichain strategy. Learn how Aave dominates DeFi",
   keywords: [
     'Aave V4',
     'GHO stablecoin',

@@ -4,11 +4,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title:
-    "Tokenized Treasuries Guide 2026: RWA Yield, BUIDL, USDY & More | degen0x",
-  description:
-    "Complete guide to tokenized U.S. Treasuries in 2026. Compare BlackRock BUIDL, Ondo USDY, Circle USYC yields. Learn how to earn 4-5% APY on-chain with government bonds.",
-};
+  title: "Tokenized Treasuries Guide 2026: RWA Yield, BUIDL, USDY &",
+  description: "Complete guide to tokenized U.S. Treasuries in 2026. Compare BlackRock BUIDL, Ondo USDY, Circle USYC yields. Learn how to earn 4-5% APY on-chain with",
+  alternates: { canonical: "/learn/tokenized-treasuries-rwa-yield-guide-2026" }};
 
 export default function TokenizedTreasuriesGuidePage() {
   return (

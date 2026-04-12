@@ -13,7 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Solana Wallets of ${CURRENT_YEAR} - SOL Wallet Reviews | ${SITE_NAME}`,
   description: `Compare the best Solana wallets of ${CURRENT_YEAR}. Phantom, Trust Wallet, Coinbase Wallet and more. Expert picks for SOL staking, DeFi, and NFTs.`,
-};
+  alternates: { canonical: "/wallets/best/solana" }};
 
 const faqs = [
   { question: "What is the best Solana wallet?", answer: "Phantom is widely considered the best Solana wallet due to its native SOL support, built-in staking, excellent NFT display, and fast performance. It was originally built for Solana and offers the deepest integration with the Solana ecosystem including Jupiter-powered swaps and comprehensive dApp connectivity." },
@@ -138,6 +138,7 @@ export default function BestSolanaWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/solana", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/solana"}) }} />
     </div>
   );
 }

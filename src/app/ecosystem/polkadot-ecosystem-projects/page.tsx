@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Polkadot Ecosystem 2026: Acala, Moonbeam, Astar, Phala, Hydration | degen0x",
-  description: "Complete guide to Polkadot parachains 2026. Acala DeFi ($300M TVL), Moonbeam EVM ($180M TVL), Astar multi-VM ($150M TVL), Phala privacy, Hydration AMM. DOT staking 8-15% APY. XCM cross-chain.",
+  title: "Polkadot Ecosystem 2026: Acala, Moonbeam, Astar, Phala,",
+  description: "Complete guide to Polkadot parachains 2026. Acala DeFi ($300M TVL), Moonbeam EVM ($180M TVL), Astar multi-VM ($150M TVL), Phala privacy, Hydration AMM. DOT",
   keywords: ["polkadot ecosystem", "acala", "moonbeam", "astar", "parachains", "xcm", "dot staking", "phala", "hydration"],
   openGraph: {
     type: "article",

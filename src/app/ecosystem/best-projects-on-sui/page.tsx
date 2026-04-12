@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Projects on Sui 2026: Cetus, Turbos, Scallop, NAVI | degen0x',
+  title: "Best Projects on Sui 2026: Cetus, Turbos, Scallop, NAVI",
   description: 'Top Sui DeFi projects 2026. Compare Cetus ($300M+ TVL), Turbos Finance, Scallop lending, NAVI Protocol. Move language, parallel execution, object model.',
   keywords: ['Sui', 'Cetus', 'Turbos Finance', 'Scallop', 'NAVI Protocol', 'Aftermath Finance', 'Bucket Protocol', 'Move language', 'Sui DeFi'],
   openGraph: {

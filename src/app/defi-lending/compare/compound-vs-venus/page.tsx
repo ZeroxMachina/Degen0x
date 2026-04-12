@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Compound vs Venus ${CURRENT_YEAR}: DeFi Lending Protocol Comparison`,
   description: `Compare Compound vs Venus in ${CURRENT_YEAR}. Analyze yields, security, multi-chain support, and which protocol is better for different DeFi strategies.`,
-};
+  alternates: { canonical: "/defi-lending/compare/compound-vs-venus" }};
 
 const items: ComparisonItem[] = [
   { name: "Compound", slug: "compound", rating: 4.6, affiliateUrl: "https://degen0x.com/go/compound", features: { "TVL": "$3B+", "Primary Chain": "Ethereum", "Chains": "3", "Architecture": "Isolated markets V3", "Governance Token": "COMP", "Supported Assets": "20+", "Rate Model": "Variable only", "Unique Feature": "Single-asset risk isolation" } },
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function CompoundVsVenusPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/compound-vs-venus" }, { label: "Compound vs Venus", href: "/defi-lending/compare/compound-vs-venus" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/compound-vs-venus" }, { label: "Compound vs Venus", href: "/defi-lending/compare/compound-vs-venus" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Compound vs Venus: Full Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -60,6 +69,57 @@ export default function CompoundVsVenusPage() {
         <p className="text-[var(--color-text-secondary)]">Compound benefits from the deep Ethereum DeFi ecosystem with countless integrations across yield optimizers, aggregators, and strategy platforms. Venus has growing BNB Chain integrations but the ecosystem is smaller. If composability and integration with other DeFi protocols is important to your strategy, Compound's Ethereum positioning provides more options.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/compound Vs Venus", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/compound-vs-venus"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

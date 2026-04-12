@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Hyperliquid Trading Guide 2026: Master the #1 Perpetual DEX | degen0x",
-  description:
-    "Complete guide to trading on Hyperliquid—the dominant perpetual DEX with 70%+ market share, $178B monthly volume, 311 trading pairs, and up to 50x leverage. Learn architecture, strategy, and risk management.",
+  title: "Hyperliquid Trading Guide 2026: Master the #1 Perpetual DEX",
+  description: "Complete guide to trading on Hyperliquid—the dominant perpetual DEX with 70%+ market share, $178B monthly volume, 311 trading pairs, and up to 50x leverage.",
   openGraph: {
     title: "Hyperliquid Trading Guide: Master the #1 Perpetual DEX in 2026",
     description:
@@ -35,7 +34,8 @@ export const metadata: Metadata = {
     description:
       "Learn to trade on Hyperliquid—70%+ market share, 311 pairs, sub-second finality, and deflationary HYPE token. Complete beginner to advanced guide.",
   },
-};
+
+  alternates: { canonical: "/learn/hyperliquid-trading-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "Hyperliquid Trading Guide: Master the #1 Perpetual DEX in 2026",

@@ -54,7 +54,8 @@ export const metadata: Metadata = {
       "LBTC, SolvBTC, pumpBTC — the complete comparison. Yields, risks, and which BTC LST fits your strategy.",
     images: [`${SITE_URL}/api/og?title=Bitcoin+Liquid+Staking+Tokens+Guide+2026&category=Learn&type=learn`],
   },
-};
+
+  alternates: { canonical: "/learn/bitcoin-liquid-staking-tokens-guide-2026" }};
 
 // ─── Structured Data ───────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
@@ -1338,7 +1339,7 @@ export default function BitcoinLSTGuidePage() {
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {faqs.map((faq) => (
               <div
-                key={faq.q}
+                key={faq.question}
                 style={{
                   background: "#161b22",
                   border: "1px solid #30363d",
@@ -1347,10 +1348,10 @@ export default function BitcoinLSTGuidePage() {
                 }}
               >
                 <p style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>
-                  {faq.q}
+                  {faq.question}
                 </p>
                 <p style={{ fontSize: 14, color: "#8b949e", lineHeight: 1.7, margin: 0 }}>
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}

@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Interactive Brokers Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Interactive Brokers crypto review covering trading fees, supported assets, professional tools, and whether IBKR suits your crypto needs.",
-};
+  alternates: { canonical: "/exchanges/reviews/interactive-brokers-crypto" }};
 
 export default function InteractiveBrokersCryptoReview() {
   return (

@@ -6,12 +6,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Bitcoin Mining & Proof of Work Economics Guide 2026 | degen0x',
-  description: 'Complete guide to Bitcoin mining and proof of work economics in 2026. Learn about the 2024 halving, mining hardware ASIC evolution, profitability economics, major miners (Marathon, Riot, CleanSpark), AI pivot to HPC, and future 2028 halving implications.',
+  title: "Bitcoin Mining & Proof of Work Economics Guide 2026",
+  description: "Complete guide to Bitcoin mining and proof of work economics in 2026. Learn about the 2024 halving, mining hardware ASIC evolution, profitability economics,",
   keywords: ['Bitcoin mining', 'proof of work', 'mining economics', 'ASIC hardware', 'mining pools', 'Bitcoin halving 2024', 'Marathon Digital MARA', 'Riot Platforms RIOT', 'CleanSpark CLSK', 'AI HPC hosting', 'mining difficulty', 'hashrate'],
   openGraph: {
     type: 'article',
-    title: 'Bitcoin Mining & Proof of Work Economics Guide 2026 | degen0x',
+    title: "Bitcoin Mining & Proof of Work Economics Guide 2026",
     description: 'Master Bitcoin mining: PoW consensus, 2024 halving, ASIC evolution, mining economics, top miners comparison, AI pivot, and 2028 halving forecast.',
     publishedTime: '2026-04-04T00:00:00Z',
     modifiedTime: '2026-04-04T00:00:00Z',

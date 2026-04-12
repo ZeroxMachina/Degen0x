@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import { Product } from "@/lib/types";
@@ -7,8 +9,7 @@ const product: Product = {
   name: "LooksRare",
   slug: "looksrare",
   rating: 3.7,
-  description:
-    "LooksRare is a community-first Ethereum NFT marketplace that rewards users with LOOKS tokens for trading activity. It focuses on competitive fees and token incentives to attract active traders.",
+  description: "LooksRare is a community-first Ethereum NFT marketplace that rewards users with LOOKS tokens for trading activity. It focuses on competitive fees and token",
   pros: [
     "LOOKS token rewards for trading activity",
     "2% marketplace fee undercuts OpenSea",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   title: `LooksRare Review: Community-First NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth LooksRare review covering LOOKS token rewards, staking, trading features, fees, and whether this community-governed marketplace is right for you.",
-};
+  alternates: { canonical: "/nfts/reviews/looksrare" }};
 
 export default function LooksRareReviewPage() {
   return (

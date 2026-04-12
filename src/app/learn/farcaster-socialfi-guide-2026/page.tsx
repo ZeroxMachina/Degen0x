@@ -6,9 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Farcaster & SocialFi Guide 2026 — Decentralized Social Media on Crypto | degen0x",
-  description:
-    "Complete guide to Farcaster, the leading decentralized social protocol. Learn about Frames, Mini Apps, the Neynar acquisition, SocialFi economics, and how Web3 social works in 2026.",
+  title: "Farcaster & SocialFi Guide 2026 — Decentralized Social",
+  description: "Complete guide to Farcaster, the leading decentralized social protocol. Learn about Frames, Mini Apps, the Neynar acquisition, SocialFi economics, and how Web3",
   keywords: [
     "farcaster",
     "farcaster guide",
@@ -55,7 +54,8 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+
+  alternates: { canonical: "/learn/farcaster-socialfi-guide-2026" }};
 
 export default function FarcasterSocialFiGuidePage() {
   return (
@@ -296,9 +296,9 @@ export default function FarcasterSocialFiGuidePage() {
             { q: "How does Farcaster compare to Twitter/X?", a: "Farcaster is much smaller (~40-60K DAU vs hundreds of millions). The key difference is decentralization: your identity and followers are portable, your data is stored on a peer-to-peer network, and anyone can build a client. The tradeoff is a smaller but more crypto-engaged community." },
             { q: "What is SocialFi?", a: "SocialFi is the intersection of social media and decentralized finance. It includes protocols like Farcaster and Lens that let users own their data, monetize content directly, and participate in the economic value of social platforms through tokens and onchain incentives." },
           ].map((faq) => (
-            <div key={faq.q} className="glass rounded-lg p-4" style={{ border: "1px solid var(--color-border)" }}>
-              <h3 className="text-sm font-bold mb-2" style={{ color: "var(--color-text)" }}>{faq.q}</h3>
-              <p className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{faq.a}</p>
+            <div key={faq.question} className="glass rounded-lg p-4" style={{ border: "1px solid var(--color-border)" }}>
+              <h3 className="text-sm font-bold mb-2" style={{ color: "var(--color-text)" }}>{faq.question}</h3>
+              <p className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{faq.answer}</p>
             </div>
           ))}
         </div>

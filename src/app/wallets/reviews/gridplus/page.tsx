@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `GridPlus Lattice1 Review (${CURRENT_YEAR}) | degen0x`,
   description: "GridPlus Lattice1 hardware wallet review covering SafeCards, large touchscreen, MetaMask integration, and enterprise-grade security.",
-};
+  alternates: { canonical: "/wallets/reviews/gridplus" }};
 
 export default function GridPlusReviewPage() {
   return (

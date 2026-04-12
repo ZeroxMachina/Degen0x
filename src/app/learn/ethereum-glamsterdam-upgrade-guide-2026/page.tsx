@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Ethereum Glamsterdam Upgrade Guide 2026 — ePBS, 10K TPS & Gas Repricing | degen0x',
+  title: "Ethereum Glamsterdam Upgrade Guide 2026 — ePBS, 10K TPS &",
   description: 'Complete guide to Ethereum Glamsterdam 2026: EIP-7732 (ePBS), EIP-7928 (BALs), 10,000 TPS, gas repricing, MEV protection, and L1 scaling. H1 2026 timeline.',
   keywords: ['Ethereum Glamsterdam', 'ePBS', 'EIP-7732', 'EIP-7928', 'block access lists', 'Ethereum upgrade 2026', 'MEV', 'proposer builder separation', 'EIP-7904', 'gas repricing'],
   openGraph: {

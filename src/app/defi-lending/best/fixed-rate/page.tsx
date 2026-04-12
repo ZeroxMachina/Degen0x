@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,14 +11,14 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Fixed Rate DeFi Lending ${CURRENT_YEAR} - Predictable Yield`,
   description: `Compare the best fixed-rate DeFi lending protocols in ${CURRENT_YEAR}. Lock in predictable yields without worrying about rate volatility.`,
-};
+  alternates: { canonical: "/defi-lending/best/fixed-rate" }};
 
 const products: Product[] = [
   {
     name: "Pendle Finance",
     slug: "pendle",
     rating: 4.7,
-    description: "Pendle Finance enables fixed-rate yield through yield tokenization. By splitting yield-bearing assets into principal tokens (PT) and yield tokens (YT), users can buy PTs at a discount to lock in a guaranteed fixed rate until maturity. Pendle supports assets from Aave, Lido, Rocket Pool, and more.",
+    description: "Pendle Finance enables fixed-rate yield through yield tokenization. By splitting yield-bearing assets into principal tokens (PT) and yield tokens (YT), users",
     pros: ["Lock in guaranteed fixed rates", "Wide range of yield-bearing assets", "Multi-chain (Ethereum, Arbitrum)", "Active secondary market for yield tokens"],
     cons: ["Requires understanding of PT/YT mechanics", "Fixed rate locked until maturity", "Complexity can deter beginners"],
     fees: "Trading spread on PT/YT",
@@ -60,7 +62,14 @@ const faqs: FAQ[] = [
 export default function FixedRatePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Fixed Rate", href: "/defi-lending/best/fixed-rate" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Fixed Rate", href: "/defi-lending/best/fixed-rate" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Fixed Rate DeFi Lending ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
@@ -78,6 +87,57 @@ export default function FixedRatePage() {
         ))}
       </div>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/fixed Rate", "description": "Pendle Finance enables fixed-rate yield through yield tokenization. By splitting yield-bearing assets into principal tokens (PT) and yield tokens (YT), users", "url": "https://degen0x.com/defi-lending/best/fixed-rate"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

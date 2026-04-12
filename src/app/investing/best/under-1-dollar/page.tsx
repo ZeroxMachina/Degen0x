@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,10 +10,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Under $1 (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top cryptocurrencies under $1 in ${CURRENT_YEAR}. Promising low-priced tokens with genuine utility, strong teams, and growth potential.`,
-};
+  alternates: { canonical: "/investing/best/under-1-dollar" }};
 
 const products = [
-  { name: "Dogecoin (DOGE)", slug: "dogecoin", rating: 4.3, description: "The original meme coin with the largest community and strongest brand recognition. Accepted as payment by multiple companies and backed by high-profile advocates.", pros: ["Largest meme coin community", "High liquidity and exchange availability", "Real-world payment adoption"], cons: ["Unlimited supply creates inflation", "No smart contract functionality", "Price heavily influenced by social media"], bestFor: "Community-driven crypto with mainstream recognition", affiliateUrl: "#", category: "investing" },
+  { name: "Dogecoin (DOGE)", slug: "dogecoin", rating: 4.3, description: "The original meme coin with the largest community and strongest brand recognition. Accepted as payment by multiple companies and backed by high-profile", pros: ["Largest meme coin community", "High liquidity and exchange availability", "Real-world payment adoption"], cons: ["Unlimited supply creates inflation", "No smart contract functionality", "Price heavily influenced by social media"], bestFor: "Community-driven crypto with mainstream recognition", affiliateUrl: "#", category: "investing" },
   { name: "Cardano (ADA)", slug: "cardano", rating: 4.2, description: "Research-driven smart contract platform with a focus on formal verification and peer-reviewed development. Growing DeFi ecosystem with strong academic foundation.", pros: ["Rigorous academic approach", "Strong staking ecosystem", "Growing DeFi adoption"], cons: ["Slower development velocity", "Smaller DeFi ecosystem than competitors", "Competition from faster chains"], bestFor: "Long-term smart contract platform investment", affiliateUrl: "#", category: "investing" },
   { name: "Stellar (XLM)", slug: "stellar", rating: 4.1, description: "Cross-border payment network designed for fast, low-cost international transfers. Partnerships with financial institutions and focus on financial inclusion.", pros: ["Fast and cheap transactions", "Financial institution partnerships", "Focus on real-world payment use case"], cons: ["Slower ecosystem growth", "Limited DeFi features", "Competition from newer networks"], bestFor: "Payment-focused blockchain exposure", affiliateUrl: "#", category: "investing" },
   { name: "VeChain (VET)", slug: "vechain", rating: 4.0, description: "Enterprise-focused blockchain specializing in supply chain management and business solutions. Real partnerships with major corporations for tracking and verification.", pros: ["Real enterprise adoption", "Supply chain use case validation", "Dual token model for gas management"], cons: ["Concentrated in supply chain niche", "Limited DeFi ecosystem", "Lower market hype"], bestFor: "Enterprise blockchain and supply chain exposure", affiliateUrl: "#", category: "investing" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Crypto Under $1" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Crypto Under $1" }]} />
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Best Crypto Under $1 ({CURRENT_YEAR})</h1>
@@ -56,6 +64,57 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/under 1 Dollar", "description": "The original meme coin with the largest community and strongest brand recognition. Accepted as payment by multiple companies and backed by high-profile", "url": "https://degen0x.com/investing/best/under-1-dollar"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

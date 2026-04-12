@@ -1,12 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Moon Browser Extension Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
-  description:
-    "Detailed Moon browser extension review covering crypto checkout at online retailers, Lightning Network payments, supported stores, and how to spend Bitcoin seamlessly online.",
-};
+  description: "Detailed Moon browser extension review covering crypto checkout at online retailers, Lightning Network payments, supported stores, and how to spend Bitcoin",
+  alternates: { canonical: "/spending/reviews/moon-browser" }};
 
 export default function MoonBrowserReview() {
   return (

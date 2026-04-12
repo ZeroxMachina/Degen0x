@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Chainlink vs Pyth vs Band: Crypto Oracle Comparison',
-  description: 'Compare oracle networks: Chainlink (decentralized node network, $150B TVL), Pyth (first-party data, 350+ feeds), Band (delegated staking). Latency, chains, security models.',
+  description: "Compare oracle networks: Chainlink (decentralized node network, $150B TVL), Pyth (first-party data, 350+ feeds), Band (delegated staking). Latency, chains,",
   keywords: ['Chainlink', 'Pyth', 'Band', 'oracle', 'price feed', 'decentralized oracle', 'CCIP', 'Solana oracle'],
   openGraph: {
     title: 'Chainlink vs Pyth vs Band: Oracle Networks Compared',

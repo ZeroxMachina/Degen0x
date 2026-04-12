@@ -8,8 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Ethereum Verkle Trees & Hegota Guide 2026 — Stateless Clients Explained | degen0x",
-  description: "Understand Verkle Trees, the cryptographic innovation enabling stateless Ethereum clients. Learn how Hegota (H2 2026) reduces node storage by 90% and what it means for validators, stakers, and the network.",
+  title: "Ethereum Verkle Trees & Hegota Guide 2026 — Stateless",
+  description: "Understand Verkle Trees, the cryptographic innovation enabling stateless Ethereum clients. Learn how Hegota (H2 2026) reduces node storage by 90% and what it",
   keywords: [
     "verkle trees ethereum",
     "ethereum hegota upgrade",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ethereum Verkle Trees & Hegota Guide 2026 — Stateless Clients Explained | degen0x",
+    title: "Ethereum Verkle Trees & Hegota Guide 2026 — Stateless",
     description: "Understand Verkle Trees, the cryptographic innovation enabling stateless Ethereum clients. Learn how Hegota reduces node storage by 90%.",
   },
 };

@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Best Projects on zkSync Era 2026 | degen0x',
-  description: 'Top zkSync projects: ZigZag (DEX), SyncSwap ($100M TVL), Mute.io, Space.fi, Holdstation, Tevaera gaming. ZK rollup advantages, ZK token airdrop info, and ecosystem comparison.',
+  description: "Top zkSync projects: ZigZag (DEX), SyncSwap ($100M TVL), Mute.io, Space.fi, Holdstation, Tevaera gaming. ZK rollup advantages, ZK token airdrop info, and",
   keywords: ['zkSync projects', 'zkSync Era', 'ZigZag DEX', 'SyncSwap', 'ZK rollup projects', 'zkSync ecosystem'],
   openGraph: {
     type: 'article',

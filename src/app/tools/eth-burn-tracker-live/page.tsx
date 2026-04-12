@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply Dynamics | degen0x',
-  description: 'Track Ethereum EIP-1559 burns in real-time with ultrasound.money. Monitor daily burn rates, deflationary periods, top gas burners (Uniswap, OpenSea), and ETH supply changes.',
+  title: "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply",
+  description: "Track Ethereum EIP-1559 burns in real-time with ultrasound.money. Monitor daily burn rates, deflationary periods, top gas burners (Uniswap, OpenSea), and ETH",
   keywords: ['ETH burn tracker', 'EIP-1559', 'Ethereum burn', 'ultrasound.money', 'deflationary', 'supply dynamics'],
   openGraph: {
     title: 'ETH Burn Tracker: Real-Time Ethereum Burns',

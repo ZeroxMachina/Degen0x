@@ -10,8 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Babylon Protocol: Bitcoin Staking Guide 2026 | degen0x",
-  description:
-    "How to stake Bitcoin natively with Babylon Protocol — no bridges, no wrapping, full self-custody. Covers BABY token rewards, risks, and step-by-step instructions.",
+  description: "How to stake Bitcoin natively with Babylon Protocol — no bridges, no wrapping, full self-custody. Covers BABY token rewards, risks, and step-by-step",
   keywords: [
     "babylon protocol",
     "bitcoin staking",
@@ -47,7 +46,8 @@ export const metadata: Metadata = {
     description:
       "Earn yield on native BTC without bridges or custody risk. The complete Babylon Protocol guide.",
   },
-};
+
+  alternates: { canonical: "/learn/babylon-protocol-bitcoin-staking" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
@@ -923,7 +923,7 @@ export default function BabylonProtocolGuidePage() {
                     gap: 12,
                   }}
                 >
-                  {faq.q}
+                  {faq.question}
                   <span style={{ color: "#fb923c", fontSize: 20, flexShrink: 0 }}>+</span>
                 </summary>
                 <p
@@ -935,7 +935,7 @@ export default function BabylonProtocolGuidePage() {
                     margin: 0,
                   }}
                 >
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </details>
             ))}

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MapleFinanceClient from "./MapleFinanceClient";
 
 export const metadata: Metadata = {
@@ -16,7 +18,8 @@ export const metadata: Metadata = {
     description: "DeFi lending for institutions. Decentralized institutional credit marketplace with $3.2B TVL and ~4.7% syrupUSDC APY.",
     images: ["https://degen0x.com/og-maple-finance-ecosystem.svg"],
   },
-};
+
+  alternates: { canonical: "/ecosystem/maple-finance" }};
 
 export default function MapleFinancePage() {
   return <MapleFinanceClient />;

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -11,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `OpenSea vs Rarible: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of OpenSea vs Rarible. Compare fees, creator tools, governance, chain support, and features to find the best NFT marketplace for you.",
-};
+  alternates: { canonical: "/nfts/compare/opensea-vs-rarible" }};
 
 export default function OpenSeaVsRariblePage() {
   const opensea = nftDetailedComparisons["opensea"];
@@ -85,6 +86,57 @@ export default function OpenSeaVsRariblePage() {
         { question: "Which has better multi-chain support?", answer: "OpenSea supports more blockchains overall, including Ethereum, Polygon, Solana, Arbitrum, Avalanche, BNB Chain, and Base. Rarible supports Ethereum, Polygon, and Tezos. If you need broad chain coverage, OpenSea has the advantage." },
         { question: "What is the RARI token used for?", answer: "RARI is Rarible's governance token that allows holders to vote on platform decisions, feature proposals, and protocol parameters. It gives the community a direct say in how the platform evolves, which distinguishes Rarible from OpenSea's centralized governance model." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/opensea Vs Rarible", "description": "Detailed comparison of OpenSea vs Rarible. Compare fees, creator tools, governance, chain support, and features to find the best NFT marketplace for you.", "url": "https://degen0x.com/nfts/compare/opensea-vs-rarible"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

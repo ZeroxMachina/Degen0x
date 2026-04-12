@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Initia (INIT) Guide 2026: Modular Blockchain With Interwoven Rollups | degen0x",
-  description:
-    "Initia explained: how the Interwoven Stack, Minitias (L2 rollups), and Omnitia architecture unify modular blockchains. INIT tokenomics, ecosystem, and 2026 outlook.",
+  title: "Initia (INIT) Guide 2026: Modular Blockchain With",
+  description: "Initia explained: how the Interwoven Stack, Minitias (L2 rollups), and Omnitia architecture unify modular blockchains. INIT tokenomics, ecosystem, and 2026",
   keywords: [
     "initia blockchain guide 2026",
     "what is initia crypto",

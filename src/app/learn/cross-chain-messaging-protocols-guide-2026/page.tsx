@@ -20,8 +20,8 @@ const S = {
 };
 
 export const metadata: Metadata = {
-  title: "Cross-Chain Messaging Protocols Guide 2026 — LayerZero, Wormhole, Hyperlane & CCIP | degen0x",
-  description: "Complete guide to cross-chain messaging protocols in 2026. Compare LayerZero V2, Wormhole NTT, Hyperlane, and Chainlink CCIP. Learn how they work and when to use each.",
+  title: "Cross-Chain Messaging Protocols Guide 2026 — LayerZero,",
+  description: "Complete guide to cross-chain messaging protocols in 2026. Compare LayerZero V2, Wormhole NTT, Hyperlane, and Chainlink CCIP. Learn how they work and when to",
   keywords: ["cross-chain messaging", "LayerZero", "Wormhole", "Hyperlane", "CCIP", "omnichain", "interoperability"],
   openGraph: {
     title: "Cross-Chain Messaging Protocols Guide 2026",
@@ -46,7 +46,8 @@ export const metadata: Metadata = {
     description: "Your complete guide to LayerZero V2, Wormhole NTT, Hyperlane, and CCIP",
     images: ["https://degen0x.com/og-cross-chain-messaging-protocols-guide-2026.svg"],
   },
-};
+
+  alternates: { canonical: "/learn/cross-chain-messaging-protocols-guide-2026" }};
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },

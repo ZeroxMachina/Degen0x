@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Order Types Explained 2026: Market, Limit, Stop-Loss, TWAP & OCO | degen0x',
-  description: 'Master all crypto order types: market, limit, stop-loss, stop-limit, trailing stop, OCO, TWAP, iceberg orders. Compare execution, slippage, and fees. Learn maker vs taker mechanics.',
+  title: "Crypto Order Types Explained 2026: Market, Limit,",
+  description: "Master all crypto order types: market, limit, stop-loss, stop-limit, trailing stop, OCO, TWAP, iceberg orders. Compare execution, slippage, and fees. Learn",
   keywords: ['crypto order types', 'market order', 'limit order', 'stop-loss', 'trailing stop', 'stop-limit order', 'OCO order', 'TWAP', 'iceberg orders', 'maker taker fees', 'order book', '1inch', 'CoW Protocol'],
   openGraph: {
     type: 'article',

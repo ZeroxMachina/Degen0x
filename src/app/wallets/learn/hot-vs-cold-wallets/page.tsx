@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Hot vs Cold Wallets Explained (${CURRENT_YEAR}) - Key Differences | ${SITE_NAME}`,
   description: `Hot wallet vs cold wallet: understand the key differences in ${CURRENT_YEAR}. Security, convenience, cost, and which type you need for your crypto strategy.`,
-};
+  alternates: { canonical: "/wallets/learn/hot-vs-cold-wallets" }};
 
 const toc = [
   { id: "overview", title: "Hot vs Cold: The Core Difference", level: 2 },

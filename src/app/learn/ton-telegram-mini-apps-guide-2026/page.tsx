@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'TON & Telegram Mini Apps Guide 2026: Build, Play & Earn on Telegram | degen0x',
-  description: 'Complete guide to TON blockchain and Telegram Mini Apps in 2026. Learn how 950M+ Telegram users access Web3 through Mini Apps, explore tap-to-earn games (Notcoin, Hamster Kombat, Catizen), DeFi opportunities, wallet integration, and building dApps on TON.',
+  title: "TON & Telegram Mini Apps Guide 2026: Build, Play & Earn on",
+  description: "Complete guide to TON blockchain and Telegram Mini Apps in 2026. Learn how 950M+ Telegram users access Web3 through Mini Apps, explore tap-to-earn games",
   keywords: ['TON', 'Telegram Mini Apps', 'tap-to-earn games', 'Notcoin', 'Hamster Kombat', 'Catizen', 'TON Connect', 'blockchain gaming', 'dApps', 'Web3', 'DeFi', 'stablecoins', 'crypto 2026', 'embedded wallets'],
   openGraph: {
     type: 'article',

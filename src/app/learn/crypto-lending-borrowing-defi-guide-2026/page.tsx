@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto Lending & Borrowing Guide 2026 | DeFi Protocols',
-  description:
-    'Complete guide to DeFi lending and borrowing in 2026. Learn how Aave, Morpho, and Compound work, overcollateralized loans, liquidation mechanics, and lending rates.',
+  description: "Complete guide to DeFi lending and borrowing in 2026. Learn how Aave, Morpho, and Compound work, overcollateralized loans, liquidation mechanics, and lending",
   keywords: [
     'DeFi lending',
     'crypto borrowing',

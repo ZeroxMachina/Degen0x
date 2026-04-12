@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import StructuredData from '@/components/StructuredData';
@@ -6,7 +7,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 
 export const metadata: Metadata = {
-  title: 'Hyperlane Guide 2026 — Permissionless Interop & HYPER | degen0x',
+  title: "Hyperlane Guide 2026 — Permissionless Interop & HYPER",
   description:
     "Complete guide to Hyperlane's permissionless cross-chain messaging, Warp Routes, ISMs, and HYPER token. Learn how Hyperlane connects 150+ blockchains.",
   keywords: ['Hyperlane', 'interoperability', 'cross-chain', 'HYPER token', 'permissionless', 'Warp Routes', 'ISM'],
@@ -17,7 +18,8 @@ export const metadata: Metadata = {
     publishedTime: '2026-04-01T00:00:00Z',
     url: 'https://degen0x.com/learn/hyperlane-permissionless-interoperability-guide-2026',
   },
-};
+
+  alternates: { canonical: "/learn/hyperlane-permissionless-interoperability-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   headline: 'Hyperlane Guide 2026 — Permissionless Interop & HYPER',
@@ -68,7 +70,14 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function HyperlaneGuide() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117', color: '#e6edf3' }}>
-      <StructuredData schema={combinedSchema} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <StructuredData schema={combinedSchema} />
       <div style={{ maxWidth: 820, margin: '0 auto', padding: '40px 20px' }}>
         {/* Breadcrumb */}
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Learn', href: '/learn' }, { label: 'Hyperlane Interoperability Guide' }]} />
@@ -868,6 +877,56 @@ export default function HyperlaneGuide() {
             })
           }}
         />
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
     </main>
   );

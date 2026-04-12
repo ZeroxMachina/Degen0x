@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Layer 0 Blockchains Explained: Cosmos, Polkadot, Avalanche, LayerZero 2026',
+  title: "Layer 0 Blockchains Explained: Cosmos, Polkadot, Avalanche,",
   description: 'Master Layer 0 blockchains in 2026. Compare Cosmos IBC (80+ chains), Polkadot parachains (30+), Avalanche subnets (100+), LayerZero omnichain ($8B TVL).',
   keywords: ['Layer 0', 'Cosmos', 'Polkadot', 'Avalanche', 'LayerZero', 'IBC', 'app-chains', 'parachains', 'subnets', 'interoperability'],
   openGraph: {
@@ -322,8 +322,8 @@ export default function Layer0BlockchainsPage() {
             { q: 'What is the app-chain thesis and why is it winning in 2026?', a: 'App-chain = own blockchain for dApp (1000x cheaper, full MEV control, sovereign governance, 100x faster). Examples: Skip, Thorchain, dYdX. 200+ launched 2024-2026 (was 5-10 in 2019). Trend accelerating.' },
           ].map((faq, i) => (
             <div key={i} style={{ ...infoBoxStyle, marginBottom: 16 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

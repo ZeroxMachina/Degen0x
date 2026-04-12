@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Club Card Review (${CURRENT_YEAR}): Multi-Crypto Spending Card | ${SITE_NAME}`,
   description: "In-depth Club Card review covering multi-currency support, fees, exchange rates, and how it compares to other crypto debit cards.",
-};
+  alternates: { canonical: "/crypto-cards/reviews/club-card" }};
 
 export default function ClubCardReview() {
   return (

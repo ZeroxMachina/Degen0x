@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import TokenSecurityScanner from "@/components/TokenSecurityScanner";
 import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
@@ -8,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ── SEO Metadata ────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Token Security Scanner - Rug Pull & Honeypot Checker | degen0x",
+  title: "Token Security Scanner - Rug Pull & Honeypot Checker",
   description: "Scan any crypto token contract for rug pull risks, honeypot functions, and security red flags. Free token security checker across 6+ chains.",
   keywords: "token security scanner, rug pull checker, honeypot detector, crypto scam checker, smart contract audit, token safety",
   openGraph: {
@@ -28,7 +29,8 @@ export const metadata: Metadata = {
     title: "Token Security Scanner | degen0x",
     description: "Scan any token for rug pull risks and honeypot functions. Free, no signup.",
   },
-};
+
+  alternates: { canonical: "/tools/token-security-scanner" }};
 
 // ── Structured Data ─────────────────────────────────────────
 const toolSchema = generateToolPageSchema({
@@ -538,6 +540,56 @@ export default function TokenSecurityScannerPage() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Tools
+          </Link>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Learning Guides
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Tools
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

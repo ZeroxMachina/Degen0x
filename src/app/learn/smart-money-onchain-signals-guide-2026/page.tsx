@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Smart Money On-Chain Signals Guide 2026: Track Whale & Institutional Flows | degen0x",
-  description:
-    "Learn to track smart money on-chain: whale wallets, institutional accumulation, exchange flows, MVRV, SOPR, and NVT. Tools, strategies, and real-time signals for 2026.",
+  title: "Smart Money On-Chain Signals Guide 2026: Track Whale &",
+  description: "Learn to track smart money on-chain: whale wallets, institutional accumulation, exchange flows, MVRV, SOPR, and NVT. Tools, strategies, and real-time signals",
   keywords: [
     "smart money on-chain signals 2026",
     "crypto whale tracking",
@@ -631,8 +630,8 @@ export default function SmartMoneyOnchainSignalsGuide2026() {
             },
           ].map((faq, i) => (
             <div key={i} style={{ ...S.infoBox, marginBottom: 16 }}>
-              <h3 style={{ ...S.infoTitle, fontSize: 16, marginBottom: 8 }}>{faq.q}</h3>
-              <p style={S.infoText}>{faq.a}</p>
+              <h3 style={{ ...S.infoTitle, fontSize: 16, marginBottom: 8 }}>{faq.question}</h3>
+              <p style={S.infoText}>{faq.answer}</p>
             </div>
           ))}
         </section>

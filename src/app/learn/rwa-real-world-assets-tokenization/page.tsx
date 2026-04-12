@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'RWA Real-World Assets Tokenization 2026: Ondo Finance, Franklin Templeton, RealT | degen0x',
-  description: 'RWA tokenization 2026: Ondo ($2B TVL, US Treasuries), Franklin Templeton FTTC, RealT (real estate), Maple (credit), BlackRock BUIDL. Market size, use cases, comparison.',
+  title: "RWA Real-World Assets Tokenization 2026: Ondo Finance,",
+  description: "RWA tokenization 2026: Ondo ($2B TVL, US Treasuries), Franklin Templeton FTTC, RealT (real estate), Maple (credit), BlackRock BUIDL. Market size, use cases,",
   keywords: ['rwa tokens', 'real world assets', 'ondo finance', 'tokenized real estate', 'usdc treasury', 'rwa crypto'],
   openGraph: {
     type: 'article',

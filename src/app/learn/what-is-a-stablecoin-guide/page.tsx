@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'What Is a Stablecoin Guide 2026: USDT, USDC, DAI Explained | degen0x',
-  description: 'Complete stablecoin guide: fiat-backed (USDT, USDC), crypto-backed (DAI), algorithmic (FRAX). How they maintain peg, depegging risks, regulations, DeFi yields. Compare top stablecoins by market cap.',
+  title: "What Is a Stablecoin Guide 2026: USDT, USDC, DAI Explained",
+  description: "Complete stablecoin guide: fiat-backed (USDT, USDC), crypto-backed (DAI), algorithmic (FRAX). How they maintain peg, depegging risks, regulations, DeFi yields.",
   keywords: ['what is a stablecoin', 'stablecoin guide', 'USDT', 'USDC', 'DAI', 'fiat-backed stablecoin', 'crypto-backed stablecoin', 'algorithmic stablecoin', 'stablecoin regulation'],
   openGraph: {
     type: 'article',

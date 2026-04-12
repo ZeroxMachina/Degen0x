@@ -1,14 +1,15 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = cryptoCards.find((c) => c.slug === "fold-card")!;
 
 export const metadata: Metadata = {
-  title: "Fold Card Review 2026: Bitcoin Rewards, Spin the Wheel & Subscription Tiers",
-  description:
-    "Our in-depth Fold Card review covers Bitcoin-only rewards, the spin-the-wheel mechanic, Fold+ subscription tiers, Lightning Network integration, and daily BTC earning potential. Updated March 2026.",
-};
+  title: "Fold Card Review 2026: Bitcoin Rewards, Spin the Wheel &",
+  description: "Our in-depth Fold Card review covers Bitcoin-only rewards, the spin-the-wheel mechanic, Fold+ subscription tiers, Lightning Network integration, and daily BTC",
+  alternates: { canonical: "/crypto-cards/reviews/fold-card" }};
 
 export default function FoldCardReview() {
   return (

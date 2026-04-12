@@ -1,14 +1,15 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = cryptoCards.find((c) => c.slug === "hi-card")!;
 
 export const metadata: Metadata = {
-  title: "Hi Card Review 2026: Hi Dollar Rewards, Membership Tiers & Daily Earnings",
-  description:
-    "Our in-depth Hi Card review covers Hi Dollar daily rewards, membership tier system, cashback rates, HI token staking, and the hi.com ecosystem integration. Updated March 2026.",
-};
+  title: "Hi Card Review 2026: Hi Dollar Rewards, Membership Tiers &",
+  description: "Our in-depth Hi Card review covers Hi Dollar daily rewards, membership tier system, cashback rates, HI token staking, and the hi.com ecosystem integration.",
+  alternates: { canonical: "/crypto-cards/reviews/hi-card" }};
 
 export default function HiCardReview() {
   return (

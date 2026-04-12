@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 import BitcoinSupplyTracker from "@/components/BitcoinSupplyTracker";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
 export const metadata: Metadata = {
-  title: "Bitcoin 20 Million Coins Mined: Era of Scarcity 2026 | degen0x",
-  description:
-    "On March 9, 2026, the 20 millionth Bitcoin was mined — 95% of all BTC is now in circulation. What it means for scarcity, halvings, lost coins, and price. 10-min guide.",
+  title: "Bitcoin 20 Million Coins Mined: Era of Scarcity 2026",
+  description: "On March 9, 2026, the 20 millionth Bitcoin was mined — 95% of all BTC is now in circulation. What it means for scarcity, halvings, lost coins, and price.",
   openGraph: {
     title: "Bitcoin Hit 20 Million: The Era of Scarcity Has Begun",
     description:
@@ -33,7 +33,8 @@ export const metadata: Metadata = {
       "Only ~1M BTC left to mine over 114 years. What Bitcoin's biggest supply milestone means.",
     images: ["https://degen0x.com/og-bitcoin-20-million.png"],
   },
-};
+
+  alternates: { canonical: "/learn/bitcoin-20-million-supply-milestone" }};
 
 export default function Bitcoin20MillionGuide() {
   return (
@@ -602,6 +603,56 @@ export default function Bitcoin20MillionGuide() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

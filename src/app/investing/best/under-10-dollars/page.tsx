@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,10 +10,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Under $10 (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top cryptocurrencies under $10 in ${CURRENT_YEAR}. Quality projects with strong fundamentals, active development, and room for growth.`,
-};
+  alternates: { canonical: "/investing/best/under-10-dollars" }};
 
 const products = [
-  { name: "Polygon (POL)", slug: "polygon", rating: 4.5, description: "Leading Ethereum scaling ecosystem with zkEVM, CDK for custom chains, and AggLayer for cross-chain interoperability. Major partnership network including Disney and Starbucks.", pros: ["Leading Ethereum scaling solution", "Major enterprise partnerships", "Multiple scaling technologies"], cons: ["Transitioning from MATIC to POL tokenomics", "Competition from Arbitrum and Optimism", "Complex multi-product strategy"], bestFor: "Ethereum scaling ecosystem exposure", affiliateUrl: "#", category: "investing" },
+  { name: "Polygon (POL)", slug: "polygon", rating: 4.5, description: "Leading Ethereum scaling ecosystem with zkEVM, CDK for custom chains, and AggLayer for cross-chain interoperability. Major partnership network including Disney", pros: ["Leading Ethereum scaling solution", "Major enterprise partnerships", "Multiple scaling technologies"], cons: ["Transitioning from MATIC to POL tokenomics", "Competition from Arbitrum and Optimism", "Complex multi-product strategy"], bestFor: "Ethereum scaling ecosystem exposure", affiliateUrl: "#", category: "investing" },
   { name: "Cosmos (ATOM)", slug: "cosmos", rating: 4.3, description: "The Internet of Blockchains enabling sovereign interconnected chains through IBC protocol. Powers an ecosystem of 50+ chains including Osmosis, Celestia, and dYdX.", pros: ["IBC protocol enables cross-chain communication", "Large ecosystem of sovereign chains", "Innovative shared security model"], cons: ["ATOM value accrual debate", "Competition from Polkadot", "Ecosystem fragmentation risk"], bestFor: "Multi-chain interoperability exposure", affiliateUrl: "#", category: "investing" },
   { name: "Near Protocol (NEAR)", slug: "near", rating: 4.3, description: "Sharded Layer 1 blockchain focused on usability with human-readable accounts, low fees, and chain abstraction technology enabling cross-chain experiences.", pros: ["Excellent developer experience", "Chain abstraction innovation", "Human-readable account names"], cons: ["Smaller DeFi ecosystem", "Less brand recognition", "Competing in crowded L1 space"], bestFor: "Next-generation Layer 1 with UX focus", affiliateUrl: "#", category: "investing" },
   { name: "Fantom (FTM)", slug: "fantom", rating: 4.1, description: "Fast EVM-compatible Layer 1 transitioning to Sonic, a next-generation high-performance chain. Strong DeFi history with experienced team and community.", pros: ["Sonic upgrade promises major improvements", "Active DeFi ecosystem", "Experienced development team"], cons: ["Major transition to Sonic chain", "Competition from newer L1s", "Previous TVL decline"], bestFor: "High-performance EVM chain with upgrade catalyst", affiliateUrl: "#", category: "investing" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Crypto Under $10" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Crypto Under $10" }]} />
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Best Crypto Under $10 ({CURRENT_YEAR})</h1>
@@ -56,6 +64,57 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/under 10 Dollars", "description": "Leading Ethereum scaling ecosystem with zkEVM, CDK for custom chains, and AggLayer for cross-chain interoperability. Major partnership network including Disney", "url": "https://degen0x.com/investing/best/under-10-dollars"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

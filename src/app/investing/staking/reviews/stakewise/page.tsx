@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { stakingPlatforms } from "@/data/staking";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "StakeWise Review 2026: Vaults, osETH, Pros & Cons",
   description:
     "Our in-depth StakeWise review covers vault-based staking, osETH mechanics, fees, and whether it's the right ETH staking protocol for you. Updated March 2026.",
-};
+  alternates: { canonical: "/investing/staking/reviews/stakewise" }};
 
 export default function StakeWiseReview() {
   return (

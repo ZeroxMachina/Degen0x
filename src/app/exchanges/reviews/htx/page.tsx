@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `HTX Review (${CURRENT_YEAR}) | degen0x`,
   description:
     "Comprehensive HTX (formerly Huobi) exchange review. Fees, security, features, and trading experience analyzed in detail.",
-};
+  alternates: { canonical: "/exchanges/reviews/htx" }};
 
 export default function HTXReviewPage() {
   return (

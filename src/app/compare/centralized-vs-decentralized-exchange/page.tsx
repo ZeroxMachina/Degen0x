@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Centralized vs Decentralized Exchange 2026: CEX vs DEX Comparison | degen0x',
+  title: "Centralized vs Decentralized Exchange 2026: CEX vs DEX",
   description: 'CEX (Binance, Coinbase) vs DEX (Uniswap, Jupiter): custody, KYC, fees, liquidity, speed, listings. Head-to-head comparison and when to use each.',
   keywords: ['centralized exchange', 'decentralized exchange', 'cex vs dex', 'uniswap', 'binance', 'dex trading'],
   openGraph: {

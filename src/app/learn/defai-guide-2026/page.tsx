@@ -9,8 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "DeFAI Guide 2026: AI Agents Transforming DeFi | degen0x",
-  description:
-    "What is DeFAI? AI agents autonomously optimize yield, manage liquidity, and rebalance portfolios in DeFi. Covers Almanak, ElizaOS, Virtuals, risks, and how to get started.",
+  description: "What is DeFAI? AI agents autonomously optimize yield, manage liquidity, and rebalance portfolios in DeFi. Covers Almanak, ElizaOS, Virtuals, risks, and how to",
   keywords: [
     "DeFAI",
     "AI agents DeFi",
@@ -36,7 +35,8 @@ export const metadata: Metadata = {
     description:
       "Autonomous agents are managing $2B+ in DeFi TVL. Here's how DeFAI works, who's leading, and how to participate.",
   },
-};
+
+  alternates: { canonical: "/learn/defai-guide-2026" }};
 
 export default function DeFAIGuidePage() {
   const articleSchema = generateArticleSchema({

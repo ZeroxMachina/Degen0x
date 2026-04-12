@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -9,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Decentralized Exchanges (DEXs) in ${CURRENT_YEAR}`,
   description: `Compare the top decentralized exchanges (DEXs) of ${CURRENT_YEAR}. Trade directly from your wallet with no intermediaries. Uniswap, dYdX, Jupiter, and more.`,
-};
+  alternates: { canonical: "/exchanges/best/decentralized" }};
 
 const dexes = [
   {
@@ -19,7 +20,7 @@ const dexes = [
     fees: "0.3% standard (0.05%, 0.3%, 1% pools)",
     tvl: "$5B+",
     bestFor: "ERC-20 token swaps",
-    description: "The largest and most established DEX, pioneering the AMM model. Uniswap V3 introduced concentrated liquidity, dramatically improving capital efficiency. Available across multiple L2 chains for lower gas costs.",
+    description: "The largest and most established DEX, pioneering the AMM model. Uniswap V3 introduced concentrated liquidity, dramatically improving capital efficiency.",
     pros: ["Largest liquidity pools for ERC-20 tokens", "Battle-tested smart contracts", "Available on multiple L2 chains", "Permissionless token listings"],
     cons: ["Gas fees on Ethereum mainnet can be high", "Impermanent loss risk for LPs", "No order book or limit orders natively"],
   },
@@ -198,6 +199,57 @@ export default function DecentralizedExchangesPage() {
       </div>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/best/decentralized", "description": "The largest and most established DEX, pioneering the AMM model. Uniswap V3 introduced concentrated liquidity, dramatically improving capital efficiency.", "url": "https://degen0x.com/exchanges/best/decentralized"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

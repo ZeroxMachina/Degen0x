@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Index Funds Explained: Bitwise 10, Grayscale, Index Coop DPI | degen0x',
-  description: 'Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside with real AUM and fees.',
+  title: "Crypto Index Funds Explained: Bitwise 10, Grayscale, Index",
+  description: "Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside",
   keywords: ['crypto index fund', 'market cap weighted', 'Bitwise 10', 'Grayscale Digital Large Cap', 'Index Coop', 'DPI', 'MVI', 'passive investing', 'portfolio diversification', 'rebalancing'],
   openGraph: {
     type: 'article',
-    title: 'Crypto Index Funds Explained: Bitwise 10, Grayscale, Index Coop DPI | degen0x',
-    description: 'Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside with real AUM and fees.',
+    title: "Crypto Index Funds Explained: Bitwise 10, Grayscale, Index",
+    description: "Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/learn/what-is-a-crypto-index-fund',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Index Funds Explained: Bitwise 10, Grayscale, Index Coop DPI | degen0x',
-    description: 'Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside with real AUM and fees.',
+    title: "Crypto Index Funds Explained: Bitwise 10, Grayscale, Index",
+    description: "Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside",
     image: 'https://degen0x.com/og-learn.svg',
   },
   alternates: {
@@ -336,8 +336,8 @@ export default function CryptoIndexFundsGuide2026() {
             { q: 'How do DeFi-native indexes differ from traditional index funds?', a: 'DeFi-native (DPI, MVI): Built on Ethereum, non-custodial, composable (can use as collateral), lower fees (0.75%). Drawback: Smart contract risk, slippage. Traditional (Bitwise IBIT, Grayscale): Custodial, insurance, regulatory compliance, tax efficiency, no smart contract risk. Best: DeFi-native if tech-comfortable; traditional if seeking regulatory safety.' },
           ].map((faq, i) => (
             <div key={i} style={{ ...infoBoxStyle, marginBottom: 16 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#58a6ff', marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

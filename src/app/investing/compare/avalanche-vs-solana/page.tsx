@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -6,7 +7,8 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Avalanche vs Solana (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Avalanche vs Solana comparison for ${CURRENT_YEAR}. Subnet architecture vs monolithic performance — speed, fees, DeFi, and investment potential compared.` };
+export const metadata: Metadata = { title: `Avalanche vs Solana (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Avalanche vs Solana comparison for ${CURRENT_YEAR}. Subnet architecture vs monolithic performance — speed, fees, DeFi, and investment potential compared.` ,
+  alternates: { canonical: "/investing/compare/avalanche-vs-solana" }};
 
 const items = [
   { name: "Avalanche (AVAX)", slug: "avalanche", rating: 4.3, affiliateUrl: "#", features: { "Consensus": "Avalanche Consensus (PoS)", "Architecture": "Multi-chain (Subnets)", "TPS (C-Chain)": "~4,500", "Block Time": "~2 seconds", "Avg Transaction Fee": "$0.01-0.10", "Smart Contract Language": "Solidity (EVM-compatible)", "TVL": "Top 10 in DeFi", "Staking Yield": "7-10%", "Subnet Customization": "Full control over VM and rules", "Institutional Focus": "Strong (Spruce, Evergreen)" } },
@@ -22,7 +24,14 @@ const faqs = [
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Avalanche vs Solana" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Compare", href: "/investing/compare" }, { label: "Avalanche vs Solana" }]} />
       <AffiliateDisclosure />
       <header className="mb-8"><h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Avalanche vs Solana ({CURRENT_YEAR})</h1><p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p></header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">Two high-performance Layer 1 blockchains with fundamentally different scaling strategies. Avalanche uses a multi-chain Subnet architecture allowing customizable independent blockchains, while Solana optimizes a single monolithic chain for maximum throughput. Both target different market segments with distinct competitive advantages worth evaluating for investment portfolios.</p>
@@ -43,6 +52,57 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/solana-vs-ethereum" className="text-blue-600 hover:underline">Solana vs Ethereum</Link></li><li><Link href="/investing/compare/cardano-vs-solana" className="text-blue-600 hover:underline">Cardano vs Solana</Link></li></ul></section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/avalanche Vs Solana", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/avalanche-vs-solana"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

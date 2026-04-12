@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token Explained | degen0x",
+  title: "Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token",
   description: "Complete Sui blockchain guide covering object-centric architecture, Move language, ecosystem, tokenomics, and how SUI compares to Solana. Updated March 2026.",
   openGraph: {
     title: "Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token",
@@ -25,7 +25,8 @@ export const metadata: Metadata = {
     description: "Complete guide to Sui blockchain, architecture, and SUI token.",
     images: ["https://degen0x.com/api/og?title=Sui+Blockchain+Guide+2026&category=Learn&type=learn"],
   },
-};
+
+  alternates: { canonical: "/learn/sui-blockchain-guide-2026" }};
 
 const S = {
   bg: "#0d1117",

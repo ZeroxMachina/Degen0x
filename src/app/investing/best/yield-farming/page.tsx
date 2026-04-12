@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,10 +10,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Yield Farming Protocols (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top yield farming platforms and protocols in ${CURRENT_YEAR}. Compare Curve, Convex, Yearn, and other DeFi yield opportunities with risk analysis.`,
-};
+  alternates: { canonical: "/investing/best/yield-farming" }};
 
 const products = [
-  { name: "Curve Finance (CRV)", slug: "curve", rating: 4.6, description: "The dominant stablecoin DEX and yield farming hub. Curve pools offer swap fees plus CRV rewards, with the ve-tokenomics model creating deep liquidity incentives.", pros: ["Deepest stablecoin liquidity", "Established ve-tokenomics model", "Foundation of DeFi yield ecosystem"], cons: ["Complex gauge voting system", "CRV emissions sustainability", "Smart contract complexity risk"], bestFor: "Stablecoin yield farming with minimal impermanent loss", affiliateUrl: "#", category: "investing" },
+  { name: "Curve Finance (CRV)", slug: "curve", rating: 4.6, description: "The dominant stablecoin DEX and yield farming hub. Curve pools offer swap fees plus CRV rewards, with the ve-tokenomics model creating deep liquidity", pros: ["Deepest stablecoin liquidity", "Established ve-tokenomics model", "Foundation of DeFi yield ecosystem"], cons: ["Complex gauge voting system", "CRV emissions sustainability", "Smart contract complexity risk"], bestFor: "Stablecoin yield farming with minimal impermanent loss", affiliateUrl: "#", category: "investing" },
   { name: "Convex Finance (CVX)", slug: "convex", rating: 4.5, description: "Boost Curve yields without locking CRV yourself. Convex aggregates CRV voting power to maximize yields for depositors while distributing CVX rewards.", pros: ["Boosted Curve yields without CRV locking", "Simplified Curve farming", "Strong TVL and protocol revenue"], cons: ["Dependent on Curve ecosystem", "CVX emissions decline over time", "Smart contract dependency risk"], bestFor: "Maximized Curve yields with simplified experience", affiliateUrl: "#", category: "investing" },
   { name: "Yearn Finance (YFI)", slug: "yearn", rating: 4.4, description: "Automated yield aggregator that moves deposits between DeFi protocols for optimal returns. Battle-tested vaults with professional strategy management.", pros: ["Automated yield optimization", "Professional strategy management", "Long track record in DeFi"], cons: ["Management and performance fees", "Strategy complexity", "Lower yields than manual farming"], bestFor: "Hands-off automated yield farming", affiliateUrl: "#", category: "investing" },
   { name: "Pendle Finance (PENDLE)", slug: "pendle", rating: 4.5, description: "Yield tokenization enabling fixed-rate strategies and yield trading. Separate principal from yield to lock in returns or speculate on future yield rates.", pros: ["Fixed yield options unique in DeFi", "Growing TVL and revenue", "Innovative yield market creation"], cons: ["Complex product requires learning", "Maturity-based lockups for fixed yields", "Relatively newer protocol"], bestFor: "Fixed-rate yield and yield trading strategies", affiliateUrl: "#", category: "investing" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Yield Farming" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Yield Farming" }]} />
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Best Yield Farming Protocols ({CURRENT_YEAR})</h1>
@@ -56,6 +64,57 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/yield Farming", "description": "The dominant stablecoin DEX and yield farming hub. Curve pools offer swap fees plus CRV rewards, with the ve-tokenomics model creating deep liquidity", "url": "https://degen0x.com/investing/best/yield-farming"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

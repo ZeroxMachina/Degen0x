@@ -4,12 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Grid Trading Bot Crypto Guide 2026: Passive 0.5-2% Daily Returns',
-  description: 'Master grid trading bots with arithmetic vs geometric grids. Learn optimal spacing, ranging markets, and comparison of Pionex, 3Commas, Bybit, KuCoin platforms with real ROI examples.',
+  title: "Grid Trading Bot Crypto Guide 2026: Passive 0.5-2% Daily",
+  description: "Master grid trading bots with arithmetic vs geometric grids. Learn optimal spacing, ranging markets, and comparison of Pionex, 3Commas, Bybit, KuCoin platforms",
   keywords: ['grid trading', 'grid bot crypto', 'automated trading', 'range trading crypto', 'Pionex grid bot', '3Commas grid', 'passive income crypto', 'bot trading'],
   openGraph: {
     type: 'article',
-    title: 'Grid Trading Bot Crypto Guide 2026: Passive 0.5-2% Daily Returns',
+    title: "Grid Trading Bot Crypto Guide 2026: Passive 0.5-2% Daily",
     description: 'Master grid trading bots with arithmetic vs geometric grids. Learn optimal spacing, ranging markets, and comparison of Pionex, 3Commas, Bybit, KuCoin.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Grid Trading Bot Crypto Guide 2026: Passive 0.5-2% Daily Returns',
+    title: "Grid Trading Bot Crypto Guide 2026: Passive 0.5-2% Daily",
     description: 'Master grid bots with arithmetic/geometric grids, optimal spacing, ranging markets, and platform comparisons.',
     image: 'https://degen0x.com/og-trading.svg',
   },

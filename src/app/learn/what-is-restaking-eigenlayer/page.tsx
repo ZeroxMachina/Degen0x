@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'What Is Restaking & EigenLayer 2026: AVS, Operators, LRTs | degen0x',
-  description: 'Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks, EigenDA.',
+  title: "What Is Restaking & EigenLayer 2026: AVS, Operators, LRTs",
+  description: "Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks,",
   keywords: ['restaking', 'eigenlayer', 'liquid staking tokens', 'LRT tokens', 'AVS eigenlayer', 'eETH', 'rsETH', 'pufETH', 'restaking risk', 'EigenDA'],
   openGraph: {
     type: 'article',
     title: 'What Is Restaking & EigenLayer 2026: AVS, Operators, LRTs',
-    description: 'Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks, EigenDA.',
+    description: "Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks,",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/learn/what-is-restaking-eigenlayer',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'What Is Restaking & EigenLayer 2026: AVS, Operators, LRTs',
-    description: 'Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks, EigenDA.',
+    description: "Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks,",
     image: 'https://degen0x.com/og-learn.svg',
   },
   alternates: {
@@ -36,7 +36,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'What Is Restaking & EigenLayer 2026: AVS, Operators, LRTs',
-  description: 'Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks, EigenDA.',
+  description: "Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks,",
   image: 'https://degen0x.com/og-learn.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

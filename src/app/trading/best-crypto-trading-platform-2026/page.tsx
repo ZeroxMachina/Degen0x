@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Trading Platform 2026: Binance vs Coinbase vs Kraken vs Bybit vs Hyperliquid | degen0x',
-  description: 'Best trading platform: Binance ($10B daily, 0.1% fees), Coinbase Advanced ($0.05%-0.08%), Kraken (security), Bybit (perpetuals), dYdX (decentralized), Hyperliquid.',
+  title: "Best Crypto Trading Platform 2026: Binance vs Coinbase vs",
+  description: "Best trading platform: Binance ($10B daily, 0.1% fees), Coinbase Advanced ($0.05%-0.08%), Kraken (security), Bybit (perpetuals), dYdX (decentralized),",
   keywords: ['best crypto trading platform', 'trading platform comparison', 'crypto exchange', 'binance vs coinbase', 'decentralized exchange'],
   openGraph: { type: 'article', title: 'Best Crypto Trading Platform 2026', description: 'Compare Binance, Coinbase, Kraken, Bybit, dYdX, Hyperliquid', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/trading/best-crypto-trading-platform-2026', images: [{ url: 'https://degen0x.com/og-trading.svg', width: 1200, height: 630, alt: 'Trading Platforms' }] },
   twitter: { card: 'summary_large_image', title: 'Best Trading Platform', description: 'Binance, Coinbase, Kraken comparison', image: 'https://degen0x.com/og-trading.svg' },

@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Exchange for Altcoins 2026: Binance, KuCoin, MEXC | degen0x',
+  title: "Best Crypto Exchange for Altcoins 2026: Binance, KuCoin,",
   description: 'Complete altcoin exchange guide: Binance (600+ pairs), KuCoin (1200+), MEXC (2000+), Gate.io, Uniswap, Jupiter. Listing speed, gem finder, fees comparison.',
   keywords: ['best altcoin exchange 2026', 'binance alternatives', 'kucooin altcoins', 'mexc exchange', 'altcoin trading', 'shitcoin exchange', 'low cap tokens'],
   openGraph: {

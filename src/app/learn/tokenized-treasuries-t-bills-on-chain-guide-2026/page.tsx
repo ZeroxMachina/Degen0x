@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Tokenized Treasuries & T-Bills On-Chain Guide 2026 | degen0x',
-  description: 'Complete guide to tokenized US Treasuries and T-bills on-chain in 2026. Learn how $11B+ market works, major products (BUIDL, USYC, USDY, BENJI), yield strategies, DeFi collateral integration, institutional adoption, and regulatory landscape.',
+  description: "Complete guide to tokenized US Treasuries and T-bills on-chain in 2026. Learn how $11B+ market works, major products (BUIDL, USYC, USDY, BENJI), yield",
   keywords: ['tokenized treasuries', 'T-bills on-chain', 'RWA', 'real-world assets', 'BUIDL BlackRock', 'USYC Circle', 'USDY Ondo', 'BENJI Franklin Templeton', 'tokenized securities', 'DeFi collateral', 'on-chain yield', 'stablecoins', 'DAO treasuries'],
   openGraph: {
     type: 'article',

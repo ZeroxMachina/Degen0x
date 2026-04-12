@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `Liquity Review (${CURRENT_YEAR}): 0% Interest ETH Loans | ${SITE_NAME}`,
   description: "In-depth Liquity review covering 0% interest ETH-backed loans, LUSD stablecoin, stability pool, and how Liquity's immutable protocol works.",
-};
+  alternates: { canonical: "/crypto-loans/reviews/liquity" }};
 
 export default function LiquityReview() {
   return (

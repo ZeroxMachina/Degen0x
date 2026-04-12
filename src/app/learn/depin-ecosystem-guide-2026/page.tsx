@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "DePIN Ecosystem Guide 2026: 650+ Projects & $9B TVL | degen0x",
-  description:
-    "Complete DePIN (Decentralized Physical Infrastructure Networks) guide for 2026. 650+ active projects, $9B market cap (up 270% YoY), compute, storage, wireless, sensors. Filecoin, Render, Helium, Akash, io.net, Hivemapper. GPU boom. Solana-DePIN connection.",
+  title: "DePIN Ecosystem Guide 2026: 650+ Projects & $9B TVL",
+  description: "Complete DePIN (Decentralized Physical Infrastructure Networks) guide for 2026. 650+ active projects, $9B market cap (up 270% YoY), compute, storage, wireless,",
   keywords: [
     "DePIN",
     "DePIN 2026",
@@ -486,8 +485,8 @@ export default function DePINEcosystemGuidePage() {
             { q: "How do I evaluate a DePIN project?", a: "Evaluate DePIN projects by: (1) Unit economics — what does it cost participants to provide the service vs. what they earn? (2) Demand growth — is real-world usage increasing (compute jobs, storage capacity, connectivity) or just token staking? (3) Centralization risk — how many large operators control the network? (4) Token emissions — when do rewards taper and what happens to price? (5) Competitive advantage — what moat does it have vs. traditional alternatives? (6) Team execution — track product releases and milestone completion." },
           ].map((faq, i) => (
             <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

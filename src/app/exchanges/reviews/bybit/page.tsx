@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "Bybit Review 2026: Fees, Derivatives, Copy Trading & More",
   description:
     "In-depth Bybit review covering futures trading, competitive fees (0.02% maker, 0.055% taker), copy trading, security, and why it's a top choice for derivatives traders. Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/reviews/bybit" }};
 
 export default function BybitReview() {
   return (

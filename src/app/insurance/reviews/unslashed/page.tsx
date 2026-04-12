@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "Unslashed Finance",
   slug: "unslashed",
   rating: 3.5,
-  description: "Unslashed Finance is a decentralized insurance protocol offering coverage for DeFi exploits, exchange hacks, stablecoin depegging, and validator slashing with a capital-efficient design and unique policy structure.",
+  description: "Unslashed Finance is a decentralized insurance protocol offering coverage for DeFi exploits, exchange hacks, stablecoin depegging, and validator slashing with",
   pros: ["Diverse coverage types beyond just DeFi", "Capital-efficient design", "No KYC requirement", "Exchange and stablecoin coverage available", "Parametric triggers for some products"],
   cons: ["Smaller capital pool and TVL", "Limited number of covered protocols", "Less established claim track record", "Lower liquidity for cover purchases", "Development activity has slowed"],
   fees: "2-8% annually",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Unslashed Finance Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Unslashed Finance review covering insurance coverage types, capital efficiency, claim process, and comparison with other DeFi insurance protocols.",
-};
+  alternates: { canonical: "/insurance/reviews/unslashed" }};
 
 export default function UnslashedReviewPage() {
   return (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -11,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `LooksRare vs X2Y2: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of LooksRare vs X2Y2. Compare fees, token rewards, trading features, and community governance to find the best Ethereum NFT marketplace.",
-};
+  alternates: { canonical: "/nfts/compare/looksrare-vs-x2y2" }};
 
 export default function LooksRareVsX2Y2Page() {
   const looksrare = nftDetailedComparisons["looksrare"];
@@ -86,6 +87,57 @@ export default function LooksRareVsX2Y2Page() {
         { question: "Is wash trading a concern on these platforms?", answer: "Both LooksRare and X2Y2 experienced significant wash trading during their initial token reward phases, as traders executed fake trades to farm token rewards. Both platforms have implemented measures to reduce wash trading, including adjusted reward calculations and volume requirements." },
         { question: "Should I use Blur instead of either platform?", answer: "For most active Ethereum NFT traders, Blur offers superior tools and zero fees. However, LooksRare and X2Y2 may be worthwhile if you value their specific token reward programs or niche features like X2Y2's NFT loans." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/looksrare Vs X2y2", "description": "Detailed comparison of LooksRare vs X2Y2. Compare fees, token rewards, trading features, and community governance to find the best Ethereum NFT marketplace.", "url": "https://degen0x.com/nfts/compare/looksrare-vs-x2y2"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

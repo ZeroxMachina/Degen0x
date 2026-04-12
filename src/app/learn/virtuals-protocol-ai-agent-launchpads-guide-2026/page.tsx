@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Virtuals Protocol & AI Agent Launchpads Guide 2026 | degen0x',
-  description: 'Complete guide to Virtuals Protocol and AI agent launchpads in 2026. Learn about the GAME Framework, Agent Commerce Protocol (ACP), VIRTUAL tokenomics, multi-chain infrastructure (Base, Solana, Arbitrum), top AI agents, competitors like ElizaOS, and how to launch AI agents on-chain.',
+  description: "Complete guide to Virtuals Protocol and AI agent launchpads in 2026. Learn about the GAME Framework, Agent Commerce Protocol (ACP), VIRTUAL tokenomics,",
   keywords: ['Virtuals Protocol', 'AI agents', 'AI launchpads', 'VIRTUAL token', 'GAME Framework', 'Agent Commerce Protocol', 'AI tokenization', 'Base Chain', 'Solana AI agents', 'ElizaOS', 'AI token economics', 'ERC-8183'],
   openGraph: {
     type: 'article',

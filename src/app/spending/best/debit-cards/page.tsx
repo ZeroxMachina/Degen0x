@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -10,14 +11,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `7 Best Crypto Debit Cards of ${CURRENT_YEAR} (Ranked & Compared) | ${SITE_NAME}`,
   description: `Compare the best crypto debit cards of ${CURRENT_YEAR}. We tested Crypto.com Visa, Coinbase Card, Binance Card, BitPay, Fold, and more. Find the right card for your needs.`,
-};
+  alternates: { canonical: "/spending/best/debit-cards" }};
 
 const debitCards: Product[] = [
   {
     name: "Crypto.com Visa Card",
     slug: "crypto-com-visa",
     rating: 4.8,
-    description: "The gold standard of crypto debit cards. Five card tiers ranging from the free Midnight Blue to the exclusive Obsidian, each offering progressively better cashback (1% to 5%), Spotify and Netflix rebates, airport lounge access, and more. Funded by your Crypto.com App balance.",
+    description: "The gold standard of crypto debit cards. Five card tiers ranging from the free Midnight Blue to the exclusive Obsidian, each offering progressively better",
     pros: ["Up to 5% CRO cashback on all purchases", "Free Spotify, Netflix, and Amazon Prime rebates (higher tiers)", "No annual fees on any tier", "Airport lounge access with Jade Green and above"],
     cons: ["Best rewards require significant CRO staking ($400 to $400,000)", "180-day staking lock-up period", "Cashback paid exclusively in CRO token", "Reward tiers can change with policy updates"],
     fees: "No annual fee",
@@ -332,7 +333,57 @@ export default function BestDebitCardsPage() {
         </section>
 
         <FAQSection faqs={faqs} />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
     </>
   );
 }

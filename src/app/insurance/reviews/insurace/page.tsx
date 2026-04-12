@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,7 +9,7 @@ const product: Product = {
   name: "InsurAce",
   slug: "insurace",
   rating: 3.8,
-  description: "InsurAce is a multi-chain DeFi insurance protocol offering coverage across 10+ networks with portfolio bundling discounts and no KYC requirement, making it the most accessible decentralized insurance option.",
+  description: "InsurAce is a multi-chain DeFi insurance protocol offering coverage across 10+ networks with portfolio bundling discounts and no KYC requirement, making it the",
   pros: ["Multi-chain coverage across 10+ networks", "Portfolio bundling for discounted premiums", "No KYC required", "Competitive pricing", "Simple and intuitive interface"],
   cons: ["Smaller capital pool than Nexus Mutual", "Fewer covered protocols overall", "Less proven claim history", "Lower liquidity in some cover pools", "INSUR token has limited utility"],
   fees: "1.5-5% annually",
@@ -19,7 +21,7 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `InsurAce Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth InsurAce review covering multi-chain coverage, portfolio bundling, claim process, pricing model, and comparison with other DeFi insurance protocols.",
-};
+  alternates: { canonical: "/insurance/reviews/insurace" }};
 
 export default function InsurAceReviewPage() {
   return (

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import JitoClient from "./JitoClient";
 
 export const metadata: Metadata = {
@@ -42,7 +44,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=Jito:+Solana+Liquid+Staking+%26+MEV+Guide+2026&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/jito" }};
 
 export default function JitoPage() {
   return <JitoClient />;

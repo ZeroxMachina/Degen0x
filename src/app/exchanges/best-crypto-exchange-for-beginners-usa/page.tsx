@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Exchange for Beginners USA 2026: Coinbase, Kraken, Gemini, Robinhood | degen0x',
-  description: 'Best exchanges for USA beginners 2026: Coinbase (200+ coins, $30B users, $0.49-3.99% fees), Kraken, Gemini, Robinhood. Compare fees, coin selection, security, and ease of use.',
+  title: "Best Crypto Exchange for Beginners USA 2026: Coinbase,",
+  description: "Best exchanges for USA beginners 2026: Coinbase (200+ coins, $30B users, $0.49-3.99% fees), Kraken, Gemini, Robinhood. Compare fees, coin selection, security,",
   keywords: ['best crypto exchange', 'coinbase alternatives', 'crypto exchange usa', 'beginner friendly exchange'],
   openGraph: {
     type: 'article',

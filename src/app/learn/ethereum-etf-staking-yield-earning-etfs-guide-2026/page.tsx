@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Ethereum ETF Staking Guide 2026 — Earn 3.5-4.5% Yields | Spot ETF Comparison | degen0x',
-  description: 'Complete guide to Ethereum staking ETFs 2026: Compare 8 spot ETFs, staking yields, fee breakdown, BlackRock ETHB 82% monthly distribution, and SEC regulatory clarity on staking rewards.',
+  title: "Ethereum ETF Staking Guide 2026 — Earn 3.5-4.5% Yields |",
+  description: "Complete guide to Ethereum staking ETFs 2026: Compare 8 spot ETFs, staking yields, fee breakdown, BlackRock ETHB 82% monthly distribution, and SEC regulatory",
   keywords: [
     'Ethereum ETF',
     'ETH ETF',

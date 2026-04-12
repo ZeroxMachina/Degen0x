@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Wash Sale Rule & Crypto 2026: Current Status, Risks & Tax-Loss Harvesting | degen0x',
-  description: 'Complete guide to wash sale rules for crypto in 2026. Learn why crypto currently avoids wash sales, proposed legislation risks, and tax-loss harvesting strategies.',
+  title: "Wash Sale Rule & Crypto 2026: Current Status, Risks &",
+  description: "Complete guide to wash sale rules for crypto in 2026. Learn why crypto currently avoids wash sales, proposed legislation risks, and tax-loss harvesting",
   keywords: ['wash sale rule crypto', 'crypto tax loss harvesting', 'wash sale exemption', 'tax loss harvesting crypto', 'crypto wash sale legislation'],
   openGraph: {
     title: 'Wash Sale Rule & Crypto 2026: Current Status & Tax-Loss Harvesting',
@@ -455,6 +455,56 @@ export default function WashSaleRuleCryptoExplained() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Omnichain DeFi Guide 2026: Unified Liquidity Across Every Chain | degen0x",
-  description:
-    "Complete guide to omnichain DeFi and unified liquidity in 2026. Learn how protocols eliminate liquidity fragmentation across 160+ chains, unified order books, and why omnichain is becoming the default architecture.",
+  title: "Omnichain DeFi Guide 2026: Unified Liquidity Across Every",
+  description: "Complete guide to omnichain DeFi and unified liquidity in 2026. Learn how protocols eliminate liquidity fragmentation across 160+ chains, unified order books,",
   keywords: [
     "omnichain DeFi unified liquidity 2026",
     "cross-chain DeFi liquidity",

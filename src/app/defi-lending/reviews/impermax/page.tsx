@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Impermax Review ${CURRENT_YEAR}: Leveraged LP Farming Protocol`,
   description:
     "Detailed Impermax review covering leveraged liquidity provision, lending markets, multi-chain support, and how this protocol compares to similar platforms.",
-};
+  alternates: { canonical: "/defi-lending/reviews/impermax" }};
 
 export default function ImpermaxReview() {
   return (

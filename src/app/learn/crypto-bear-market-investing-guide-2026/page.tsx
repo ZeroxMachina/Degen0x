@@ -13,9 +13,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Crypto Bear Market Investing Guide 2026: Buy the Fear | degen0x",
-  description:
-    "How to invest during a crypto bear market in 2026. Historical data shows buying at extreme fear (F&G < 15) yields 38%+ median 90-day returns. DCA strategies, accumulation zones, and risk management.",
+  title: "Crypto Bear Market Investing Guide 2026: Buy the Fear",
+  description: "How to invest during a crypto bear market in 2026. Historical data shows buying at extreme fear (F&G < 15) yields 38%+ median 90-day returns. DCA strategies,",
   keywords: [
     "crypto bear market investing 2026",
     "buying crypto during extreme fear",
@@ -651,8 +650,8 @@ export default function CryptoBearMarketInvestingGuide2026() {
             },
           ].map((faq, i) => (
             <div key={i} style={{ ...S.infoBox, marginBottom: 16 }}>
-              <h3 style={{ ...S.infoTitle, fontSize: 16, marginBottom: 8 }}>{faq.q}</h3>
-              <p style={S.infoText}>{faq.a}</p>
+              <h3 style={{ ...S.infoTitle, fontSize: 16, marginBottom: 8 }}>{faq.question}</h3>
+              <p style={S.infoText}>{faq.answer}</p>
             </div>
           ))}
         </section>

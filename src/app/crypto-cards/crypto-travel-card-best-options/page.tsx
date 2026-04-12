@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Travel Cards 2026: Zero FX Fees, Lounge Access & Insurance | degen0x',
-  description: 'Best crypto travel cards: Crypto.com Visa (airport lounges, no FX fees), Coinbase Card, Binance Card, Wirex, Nexo. Compare rewards, ATM limits, and travel insurance coverage.',
+  title: "Crypto Travel Cards 2026: Zero FX Fees, Lounge Access &",
+  description: "Best crypto travel cards: Crypto.com Visa (airport lounges, no FX fees), Coinbase Card, Binance Card, Wirex, Nexo. Compare rewards, ATM limits, and travel",
   keywords: ['Crypto travel card', 'No foreign transaction fees', 'Airport lounge access', 'Crypto.com Visa', 'Coinbase Card', 'Travel insurance', 'International crypto card', 'FX fees'],
   openGraph: {
     type: 'article',

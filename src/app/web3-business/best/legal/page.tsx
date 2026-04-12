@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -11,14 +12,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Web3 Law Firms of ${CURRENT_YEAR} - Crypto & Blockchain Legal | ${SITE_NAME}`,
   description: `Compare the best Web3 and crypto law firms of ${CURRENT_YEAR}. Token offerings, DAO structuring, regulatory compliance, and blockchain IP specialists ranked by expertise and client satisfaction.`,
-};
+  alternates: { canonical: "/web3-business/best/legal" }};
 
 const products: Product[] = [
   {
     name: "Anderson Kill",
     slug: "anderson-kill",
     rating: 4.8,
-    description: "One of the earliest law firms to establish a dedicated blockchain and cryptocurrency practice. Known for representing policyholders and blockchain companies in complex regulatory matters, including SEC enforcement actions and DAO legal structuring. Deep expertise in the intersection of insurance law and crypto asset protection.",
+    description: "One of the earliest law firms to establish a dedicated blockchain and cryptocurrency practice. Known for representing policyholders and blockchain companies in",
     pros: ["Pioneer in blockchain legal practice since 2014", "Strong SEC and regulatory defense track record", "Deep insurance and asset protection expertise", "Published thought leadership shaping industry standards"],
     cons: ["Premium pricing for boutique-level service", "Smaller team than global firms", "US-focused practice", "May have longer onboarding for new clients"],
     fees: "Custom hourly rates",
@@ -208,6 +209,57 @@ export default function LegalPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/legal", "description": "One of the earliest law firms to establish a dedicated blockchain and cryptocurrency practice. Known for representing policyholders and blockchain companies in", "url": "https://degen0x.com/web3-business/best/legal"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

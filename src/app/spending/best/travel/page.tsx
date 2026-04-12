@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -10,14 +11,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Cards for Travel in ${CURRENT_YEAR} - No Foreign Fees | ${SITE_NAME}`,
   description: `Find the best crypto debit cards for international travel in ${CURRENT_YEAR}. No foreign transaction fees, airport lounge access, and worldwide acceptance compared.`,
-};
+  alternates: { canonical: "/spending/best/travel" }};
 
 const travelCards: Product[] = [
   {
     name: "Crypto.com Visa Card (Jade Green / Royal Indigo+)",
     slug: "crypto-com-jade",
     rating: 4.9,
-    description: "The best crypto card for travelers. Zero foreign transaction fees, free airport lounge access via LoungeKey (Jade Green and above), 3-5% cashback worldwide, and interbank exchange rates. Higher tiers include free Spotify and Netflix, perfect for long-term travelers.",
+    description: "The best crypto card for travelers. Zero foreign transaction fees, free airport lounge access via LoungeKey (Jade Green and above), 3-5% cashback worldwide,",
     pros: ["Zero foreign transaction fees", "Airport lounge access (LoungeKey) on Jade Green+", "3-5% cashback works worldwide", "Interbank exchange rates on currency conversion"],
     cons: ["Jade Green requires $4,000 CRO staking", "Lounge access limited to card tiers Jade and above", "Cashback in CRO only", "Some ATM networks charge their own fees"],
     fees: "No annual fee / $4,000+ CRO stake",
@@ -254,6 +255,57 @@ export default function BestTravelCardsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending/best/travel", "description": "The best crypto card for travelers. Zero foreign transaction fees, free airport lounge access via LoungeKey (Jade Green and above), 3-5% cashback worldwide,", "url": "https://degen0x.com/spending/best/travel"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

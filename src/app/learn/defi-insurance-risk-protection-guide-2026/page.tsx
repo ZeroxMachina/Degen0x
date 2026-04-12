@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'DeFi Insurance & Risk Protection Guide 2026 | degen0x',
-  description:
-    'Master DeFi insurance in 2026: Nexus Mutual, InsurAce, Neptune Mutual, Unslashed. Learn coverage types, risk management, claims processes, and protocol comparisons.',
+  description: "Master DeFi insurance in 2026: Nexus Mutual, InsurAce, Neptune Mutual, Unslashed. Learn coverage types, risk management, claims processes, and protocol",
   keywords: [
     'DeFi insurance',
     'Nexus Mutual',

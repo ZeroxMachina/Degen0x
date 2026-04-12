@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -11,7 +12,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Wallets for Beginners (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The easiest crypto wallets for beginners in ${CURRENT_YEAR}. Exodus, Coinbase Wallet, Phantom and more. Simple setup, intuitive interfaces, and step-by-step guides.`,
-};
+  alternates: { canonical: "/wallets/best/beginners" }};
 
 const faqs = [
   { question: "What is the easiest crypto wallet to use?", answer: "Exodus is the easiest crypto wallet for beginners thanks to its intuitive design, built-in exchange, and multi-platform support. Coinbase Wallet is also excellent for beginners, especially those already using Coinbase exchange. Both offer straightforward setup processes and clean interfaces that do not overwhelm new users." },
@@ -29,7 +30,14 @@ export default function BestBeginnersWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Crypto Wallets", href: "/wallets" },
@@ -104,6 +112,7 @@ export default function BestBeginnersWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/beginners", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/beginners"}) }} />
     </div>
   );
 }

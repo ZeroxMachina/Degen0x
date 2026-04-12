@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Lodestar Finance Review ${CURRENT_YEAR}: Arbitrum Lending Protocol`,
-  description: "In-depth Lodestar Finance review covering lending on Arbitrum, yield rates, supported assets, and how this Compound-style protocol serves the Arbitrum ecosystem.",
-};
+  description: "In-depth Lodestar Finance review covering lending on Arbitrum, yield rates, supported assets, and how this Compound-style protocol serves the Arbitrum",
+  alternates: { canonical: "/defi-lending/reviews/lodestar" }};
 
 export default function LodestarReview() {
   return (

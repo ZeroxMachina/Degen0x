@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'App-Chains Explained: Application-Specific Blockchains | degen0x',
+  title: "App-Chains Explained: Application-Specific Blockchains",
   description: 'Learn about application-specific blockchains: dYdX v4, Osmosis, Arbitrum Orbit. Compare sovereign vs shared security models.',
   keywords: ['app-chains', 'application-specific blockchain', 'dYdX v4', 'OP Stack', 'Cosmos', 'rollups'],
   openGraph: {

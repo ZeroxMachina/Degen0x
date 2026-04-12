@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
@@ -10,7 +11,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto Exchanges of ${CURRENT_YEAR} - Compare & Review`,
   description: `Compare the best cryptocurrency exchanges of ${CURRENT_YEAR}. Expert reviews, fee comparisons, security analysis, and tools to help you find the right exchange for your needs.`,
-};
+  alternates: { canonical: "/exchanges" }};
 
 const bestOfLinks = [
   { title: "Best Exchanges Overall", href: "/exchanges/best", description: "Our top-rated exchanges across all categories" },

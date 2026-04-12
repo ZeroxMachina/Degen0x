@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
@@ -17,7 +19,7 @@ const product = {
 export const metadata: Metadata = {
   title: `MakerDAO Loans Review (${CURRENT_YEAR}): DAI Vaults Guide | ${SITE_NAME}`,
   description: "In-depth MakerDAO review covering DAI borrowing, vault types, stability fees, liquidation mechanics, and the Sky protocol transition.",
-};
+  alternates: { canonical: "/crypto-loans/reviews/makerdao-loans" }};
 
 export default function MakerDAOLoansReview() {
   return (

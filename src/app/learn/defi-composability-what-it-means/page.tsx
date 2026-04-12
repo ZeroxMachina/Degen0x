@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DeFi Composability Explained: Money Legos & Protocol Stacking | degen0x',
+  title: "DeFi Composability Explained: Money Legos & Protocol",
   description: 'Deep dive into DeFi composability. Learn flash loans, yield strategies, Aave+Uniswap+Yearn stacking, Curve wars, EigenLayer restaking, and composability risks.',
   keywords: ['DeFi composability', 'money legos', 'flash loans', 'Aave Uniswap Yearn', 'yield farming', 'Curve wars', 'EigenLayer restaking', 'atomic transactions', 'DeFi strategy'],
   openGraph: {

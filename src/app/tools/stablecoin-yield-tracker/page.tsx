@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import StablecoinYieldTracker from "@/components/StablecoinYieldTracker";
 import { generateToolPageSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Stablecoin Yield Tracker - Best Stablecoin APY Rates | degen0x",
+  title: "Stablecoin Yield Tracker - Best Stablecoin APY Rates",
   description:
     "Compare yield-bearing stablecoin rates across sDAI, USDY, sUSDe, and 15+ yield sources. Find safe, high-yield stablecoin opportunities.",
   keywords: [
@@ -41,7 +43,8 @@ export const metadata: Metadata = {
       "Compare yield-bearing stablecoin rates across sDAI, USDY, sUSDe, and 15+ yield sources.",
     images: ["https://degen0x.com/og-stablecoin-yield-tracker.svg"],
   },
-};
+
+  alternates: { canonical: "/tools/stablecoin-yield-tracker" }};
 
 export default function StablecoinYieldTrackerPage() {
   // Generate structured data
@@ -93,7 +96,14 @@ export default function StablecoinYieldTrackerPage() {
 
   return (
     <div style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh" }}>
-      <StructuredData data={structuredData} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="tools"
+      />      <StructuredData data={structuredData} />
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 16px" }}>
         <Breadcrumb
           items={[
@@ -119,6 +129,56 @@ export default function StablecoinYieldTrackerPage() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Tools
+          </Link>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Learning Guides
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Tools
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

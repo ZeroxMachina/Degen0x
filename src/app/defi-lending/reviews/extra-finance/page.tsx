@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
   title: `Extra Finance Review ${CURRENT_YEAR}: Leveraged Farming on Optimism & Base`,
   description:
     "Complete Extra Finance review covering leveraged yield farming, lending markets, strategy vaults, and risk analysis on Optimism and Base networks.",
-};
+  alternates: { canonical: "/defi-lending/reviews/extra-finance" }};
 
 export default function ExtraFinanceReview() {
   return (

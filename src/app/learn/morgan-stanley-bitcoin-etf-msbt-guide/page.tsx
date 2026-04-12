@@ -20,7 +20,7 @@ const S = {
 };
 
 export const metadata: Metadata = {
-  title: "Morgan Stanley Bitcoin ETF (MSBT) Guide 2026 — First Bank-Issued BTC ETF | degen0x",
+  title: "Morgan Stanley Bitcoin ETF (MSBT) Guide 2026 — First",
   description: "Everything about Morgan Stanley's MSBT spot Bitcoin ETF — the first major US bank to issue a BTC ETF. Fund structure, fees, custody, comparison with IBIT & FBTC, and how to invest.",
   keywords: "Morgan Stanley Bitcoin ETF, MSBT, spot Bitcoin ETF, Bitcoin investment, IBIT vs FBTC, crypto ETF 2026",
   openGraph: {
@@ -36,7 +36,8 @@ export const metadata: Metadata = {
     description: "The first major US bank to launch a spot Bitcoin ETF. Here's everything you need to know.",
     images: ["https://degen0x.com/og-morgan-stanley-bitcoin-etf-msbt-guide.svg"],
   },
-};
+
+  alternates: { canonical: "/learn/morgan-stanley-bitcoin-etf-msbt-guide" }};
 
 const articleSchema = generateArticleSchema({
   headline: "Morgan Stanley Bitcoin ETF (MSBT) Guide 2026 — First Bank-Issued BTC ETF",

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from "next/link";
 import Breadcrumb from '@/components/Breadcrumb';
 import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
@@ -6,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Yield Tokenization Guide 2026 — PT/YT Tokens & Best Protocols | degen0x',
+  title: "Yield Tokenization Guide 2026 — PT/YT Tokens & Best",
   description: 'Master yield tokenization: PT/YT tokens, Pendle Finance, fixed yield strategies & leveraged yield exposure in 2026. Complete DeFi guide.',
   keywords: ['yield tokenization', 'PT tokens', 'YT tokens', 'Pendle Finance', 'DeFi', 'yield farming', 'principal tokens', 'yield tokens'],
   openGraph: {
@@ -28,7 +29,8 @@ export const metadata: Metadata = {
     title: 'Yield Tokenization Guide 2026 — PT/YT Tokens & Pendle Finance',
     description: 'Master PT/YT tokens, fixed yield strategies & leveraged yield exposure with top protocols.',
   },
-};
+
+  alternates: { canonical: "/learn/yield-tokenization-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: 'Yield Tokenization Guide 2026 — PT/YT Tokens & Best Protocols',
@@ -667,7 +669,57 @@ export default function YieldTokenizationGuide() {
           }}
         />
       </div>
-      </main>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </main>
     </>
   );
 }

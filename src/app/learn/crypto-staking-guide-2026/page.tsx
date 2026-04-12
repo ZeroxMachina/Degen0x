@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto Staking Guide 2026 — Earn Passive Income | degen0x',
-  description:
-    'Master crypto staking in 2026: PoS blockchains, ATOM, Polkadot, Solana, Ethereum staking, liquid staking, delegation, exchange staking, and risk management for 3-20% APY.',
+  description: "Master crypto staking in 2026: PoS blockchains, ATOM, Polkadot, Solana, Ethereum staking, liquid staking, delegation, exchange staking, and risk management for",
   keywords: [
     'crypto staking',
     'staking guide',

@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto OTC Trading & Dark Pools Guide 2026 | degen0x',
-  description:
-    'Complete guide to crypto OTC trading, dark pools, and block trades. Learn how OTC desks work, top platforms like Wintermute, Cumberland, and FalconX, institutional pricing, and settlement mechanics.',
+  description: "Complete guide to crypto OTC trading, dark pools, and block trades. Learn how OTC desks work, top platforms like Wintermute, Cumberland, and FalconX,",
   keywords: [
     'crypto OTC trading',
     'dark pools',

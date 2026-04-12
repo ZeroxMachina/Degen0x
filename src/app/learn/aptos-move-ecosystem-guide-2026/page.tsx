@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Aptos Blockchain & Move Ecosystem Guide 2026 | degen0x',
-  description: 'Complete guide to Aptos blockchain and the Move programming language in 2026. Learn about sub-50ms block times, DeFi ecosystem (Thala, Amnis, LiquidSwap, Aries), institutional adoption (BlackRock, Microsoft, Aave), and why Aptos is the fastest L1 blockchain.',
+  description: "Complete guide to Aptos blockchain and the Move programming language in 2026. Learn about sub-50ms block times, DeFi ecosystem (Thala, Amnis, LiquidSwap,",
   keywords: ['Aptos', 'Move programming language', 'Aptos blockchain', 'Block-STM parallel execution', 'Aptos DeFi', 'Thala Finance', 'Amnis Finance', 'BlackRock BUIDL', 'APT token', 'Aptos ecosystem 2026'],
   openGraph: {
     type: 'article',

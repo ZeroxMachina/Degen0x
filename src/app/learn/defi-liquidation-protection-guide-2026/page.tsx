@@ -8,8 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "DeFi Liquidation Protection Guide 2026: Tools & Strategies | degen0x",
-  description: "Learn how to protect your DeFi positions from liquidation. Compare DeFi Saver, smart vaults, and automated strategies. 382 users saved 91.6% in the Feb 2026 crash.",
+  title: "DeFi Liquidation Protection Guide 2026: Tools & Strategies",
+  description: "Learn how to protect your DeFi positions from liquidation. Compare DeFi Saver, smart vaults, and automated strategies. 382 users saved 91.6% in the Feb 2026",
   keywords: [
     "DeFi liquidation protection",
     "DeFi Saver",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "DeFi risk management 2026"
   ],
   openGraph: {
-    title: "DeFi Liquidation Protection Guide 2026: Tools & Strategies | degen0x",
+    title: "DeFi Liquidation Protection Guide 2026: Tools & Strategies",
     description: "Learn how to protect your DeFi positions from liquidation. Compare DeFi Saver, smart vaults, and automated strategies.",
     url: `${SITE_URL}/learn/defi-liquidation-protection-guide-2026`,
     type: "article",
@@ -30,11 +30,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DeFi Liquidation Protection Guide 2026: Tools & Strategies | degen0x",
+    title: "DeFi Liquidation Protection Guide 2026: Tools & Strategies",
     description: "Learn how to protect your DeFi positions from liquidation. Compare DeFi Saver, smart vaults, and automated strategies.",
     images: [`${SITE_URL}/og-defi-liquidation-protection-guide-2026.svg`],
   },
-};
+
+  alternates: { canonical: "/learn/defi-liquidation-protection-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "DeFi Liquidation Protection Guide 2026: Strategies, Tools & Smart Vaults",

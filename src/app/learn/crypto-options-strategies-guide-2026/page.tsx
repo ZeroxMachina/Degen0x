@@ -9,8 +9,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Options Strategies 2026: Calls, Spreads & More | degen0x",
-  description: "Master crypto options strategies in 2026. Learn covered calls, protective puts, bull/bear spreads, straddles, strangles, iron condors, and where to trade DeFi and CeFi options.",
+  title: "Crypto Options Strategies 2026: Calls, Spreads & More",
+  description: "Master crypto options strategies in 2026. Learn covered calls, protective puts, bull/bear spreads, straddles, strangles, iron condors, and where to trade DeFi",
   keywords: ["options strategies", "covered calls", "put spreads", "call spreads", "straddles", "strangles", "iron condors", "DeFi options", "Deribit", "Aevo", "crypto derivatives"],
   openGraph: {
     title: "Crypto Options Strategies 2026: Covered Calls, Straddles, Spreads & More",
@@ -34,7 +34,8 @@ export const metadata: Metadata = {
     title: "Crypto Options Strategies 2026: Complete Guide",
     description: "Master covered calls, spreads, straddles, and more. DeFi and CeFi options trading strategies.",
   },
-};
+
+  alternates: { canonical: "/learn/crypto-options-strategies-guide-2026" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -45,7 +46,7 @@ const breadcrumbs = [
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "Crypto Options Strategies 2026: Covered Calls, Straddles, Spreads & More",
-  description: "Master crypto options strategies in 2026. Learn covered calls, protective puts, bull/bear spreads, straddles, strangles, iron condors, and where to trade DeFi and CeFi options.",
+  description: "Master crypto options strategies in 2026. Learn covered calls, protective puts, bull/bear spreads, straddles, strangles, iron condors, and where to trade DeFi",
   url: `${SITE_URL}/learn/crypto-options-strategies-guide-2026`,
   datePublished: "2026-03-01T00:00:00Z",
   dateModified: "2026-03-25T00:00:00Z",

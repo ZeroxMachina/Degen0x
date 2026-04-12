@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -11,7 +12,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Privacy Crypto Wallets of ${CURRENT_YEAR} - Anonymous Wallet Reviews | ${SITE_NAME}`,
   description: `Compare the best privacy-focused crypto wallets of ${CURRENT_YEAR}. Trezor, Rabby, MetaMask and more. CoinJoin, Tor support, no KYC, and private transactions.`,
-};
+  alternates: { canonical: "/wallets/best/privacy" }};
 
 const faqs = [
   { question: "Which crypto wallet is most private?", answer: "Trezor offers the strongest privacy features with built-in CoinJoin for Bitcoin transaction mixing, Tor network connectivity, and passphrase-protected hidden wallets. All transactions are handled locally without transmitting data to third-party servers. Trezor is also fully open-source so you can verify its privacy claims." },
@@ -29,7 +30,14 @@ export default function BestPrivacyWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Crypto Wallets", href: "/wallets" },
@@ -105,6 +113,7 @@ export default function BestPrivacyWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/privacy", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/privacy"}) }} />
     </div>
   );
 }

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Merkle Trees in Blockchain Explained | SPV, Patricia Tries, Verkle Trees | degen0x',
-  description: 'Master Merkle trees: hash trees, Merkle root in block headers, Merkle proofs (SPV), Patricia Merkle Tries (Ethereum state). Merkle airdrops, Merkle Mountain Ranges, Verkle trees roadmap.',
+  title: "Merkle Trees in Blockchain Explained | SPV, Patricia Tries,",
+  description: "Master Merkle trees: hash trees, Merkle root in block headers, Merkle proofs (SPV), Patricia Merkle Tries (Ethereum state). Merkle airdrops, Merkle Mountain",
   keywords: ['Merkle trees', 'Merkle proofs', 'SPV verification', 'Patricia Merkle Trie', 'Ethereum state', 'blockchain cryptography', 'Merkle airdrops', 'Verkle trees', 'data integrity'],
   openGraph: {
     title: 'Merkle Trees in Blockchain Explained',

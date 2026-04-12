@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'DEX Aggregators Explained 2026: 1inch, Jupiter, Paraswap, CowSwap, Odos | degen0x',
-  description: 'Complete guide to DEX aggregators. Compare 1inch ($300B+ volume), Jupiter Solana #1, Paraswap, 0x Protocol, CowSwap (MEV-protected), Odos multi-hop. Learn routing, positive slippage, gas optimization, Fusion Mode gasless swaps.',
+  title: "DEX Aggregators Explained 2026: 1inch, Jupiter, Paraswap,",
+  description: "Complete guide to DEX aggregators. Compare 1inch ($300B+ volume), Jupiter Solana #1, Paraswap, 0x Protocol, CowSwap (MEV-protected), Odos multi-hop. Learn",
   keywords: ['DEX aggregator', '1inch', 'Jupiter', 'Paraswap', 'CowSwap', 'Odos', 'swap routing', 'slippage', 'MEV protection', 'Fusion Mode', 'positive slippage'],
   openGraph: {
     type: 'article',

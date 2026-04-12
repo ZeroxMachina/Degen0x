@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Free Blockchain Developer Courses 2026 | CryptoZombies, Alchemy, Buildspace | degen0x',
-  description: 'Free web3 developer courses: CryptoZombies (Solidity gamified), Alchemy University (full-stack), Buildspace (projects), freeCodeCamp, Ethernaut, Chainlink. Learning path: JavaScript → Solidity → Hardhat → Frontend.',
+  title: "Free Blockchain Developer Courses 2026 bies, Alchemy,",
+  description: "Free web3 developer courses: CryptoZombies (Solidity gamified), Alchemy University (full-stack), Buildspace (projects), freeCodeCamp, Ethernaut, Chainlink.",
   keywords: ['Blockchain developer course', 'Free Solidity course', 'Ethereum development', 'Web3 development', 'Smart contract programming', 'CryptoZombies', 'Buildspace', 'Alchemy University'],
   openGraph: {
     type: 'article',

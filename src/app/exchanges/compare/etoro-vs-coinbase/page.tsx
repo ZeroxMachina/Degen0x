@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -9,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `eToro vs Coinbase: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of eToro vs Coinbase. Compare fees, copy trading, coin selection, and features to find which crypto platform is right for you.",
-};
+  alternates: { canonical: "/exchanges/compare/etoro-vs-coinbase" }};
 
 export default function EtoroVsCoinbasePage() {
   return (
@@ -63,6 +64,57 @@ export default function EtoroVsCoinbasePage() {
         { question: "Can I use both eToro and Coinbase?", answer: "Yes, many investors use both platforms. You might use eToro for copy trading and stock/crypto diversification while using Coinbase for deeper crypto access and lower trading fees." },
         { question: "Which has better customer support?", answer: "Coinbase has improved its support significantly with phone, chat, and email options. eToro offers tiered support with priority access for higher account balances. Both are adequate but neither is exceptional." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/etoro Vs Coinbase", "description": "Detailed comparison of eToro vs Coinbase. Compare fees, copy trading, coin selection, and features to find which crypto platform is right for you.", "url": "https://degen0x.com/exchanges/compare/etoro-vs-coinbase"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Smart Wallets & Account Abstraction Guide 2026 | degen0x',
-  description: 'Complete guide to smart wallets and account abstraction in 2026. Learn how ERC-4337 and EIP-7702 enable gasless onboarding, multi-sig recovery, and programmable wallets without seed phrases.',
+  description: "Complete guide to smart wallets and account abstraction in 2026. Learn how ERC-4337 and EIP-7702 enable gasless onboarding, multi-sig recovery, and",
   keywords: ['smart wallets', 'account abstraction', 'ERC-4337', 'EIP-7702', 'Coinbase Smart Wallet', 'Safe', 'Web3 wallets', 'account abstraction 2026'],
   openGraph: {
     type: 'article',

@@ -12,9 +12,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Bitcoin Safe Haven 2026: Is BTC a Hedge Against Geopolitical Risk?",
-  description:
-    "Bitcoin dropped 47% from its ATH while gold hit $5,000. Explore the data on whether BTC is a safe-haven asset, how it performs during crises, and what the US Strategic Reserve means.",
+  title: "Bitcoin Safe Haven 2026: Is BTC a Hedge Against",
+  description: "Bitcoin dropped 47% from its ATH while gold hit $5,000. Explore the data on whether BTC is a safe-haven asset, how it performs during crises, and what the US",
   openGraph: {
     title: "Bitcoin Safe Haven 2026: Crisis Hedge or Risk Asset?",
     description:
@@ -42,10 +41,11 @@ export const metadata: Metadata = {
       `${SITE_URL}/og-bitcoin-safe-haven-guide-2026.svg`,
     ],
   },
-};
+
+  alternates: { canonical: "/learn/bitcoin-safe-haven-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
-  title: "Bitcoin Safe Haven 2026: Is BTC a Hedge Against Geopolitical Risk?",
+  title: "Bitcoin Safe Haven 2026: Is BTC a Hedge Against",
   description:
     "An evidence-based analysis of Bitcoin's performance during the 2026 Iran conflict, its correlation with gold, spot ETF flow dynamics, and the role of the US Strategic Bitcoin Reserve in reshaping the safe-haven narrative.",
   url: `${SITE_URL}/learn/bitcoin-safe-haven-guide-2026`,
@@ -698,12 +698,12 @@ export default function BitcoinSafeHavenGuidePage() {
                 className="font-bold mb-2"
                 style={{ color: "var(--color-text)" }}
               >
-                {faq.q}
+                {faq.question}
               </h3>
               <p
                 style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
               >
-                {faq.a}
+                {faq.answer}
               </p>
             </div>
           ))}

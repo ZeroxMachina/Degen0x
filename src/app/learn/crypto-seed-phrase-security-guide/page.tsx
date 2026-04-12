@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Seed Phrase Security: BIP-39, Backup & Recovery 2026 | degen0x',
-  description: 'Master seed phrase security: BIP-39 12/24 words, entropy math (2^128/2^256), metal backups (Cryptosteel, Billfodl), Shamir Secret Sharing, and multi-sig alternatives.',
+  title: "Crypto Seed Phrase Security: BIP-39, Backup & Recovery 2026",
+  description: "Master seed phrase security: BIP-39 12/24 words, entropy math (2^128/2^256), metal backups (Cryptosteel, Billfodl), Shamir Secret Sharing, and multi-sig",
   keywords: ['seed phrase', 'BIP-39', 'mnemonic', 'wallet recovery', 'metal backup', 'Cryptosteel', 'Shamir Secret Sharing', 'degen0x'],
   openGraph: {
     type: 'article',

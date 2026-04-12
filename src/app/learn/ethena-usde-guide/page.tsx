@@ -16,7 +16,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // Title: 65 chars — primary keyword first, year included
 // Description: 159 chars — specific, addresses search intent
 export const metadata: Metadata = {
-  title: "What Is Ethena? USDe, sUSDe & the Internet Bond (2026) | degen0x",
+  title: "What Is Ethena? USDe, sUSDe & the Internet Bond (2026)",
   description:
     "Ethena's USDe is a delta-hedged synthetic dollar. Stake it as sUSDe to earn yield from ETH staking + perpetual funding rates. Complete 2026 guide with risks.",
   keywords: [

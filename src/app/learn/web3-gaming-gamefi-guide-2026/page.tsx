@@ -8,8 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Web3 Gaming & GameFi Guide 2026 — Play-to-Earn, Top Games & Tokens | degen0x",
-  description: "Master Web3 gaming and GameFi in 2026. Explore play-to-earn mechanics, top games like Axie Infinity and Illuvium, gaming blockchains, and how to start earning through games.",
+  title: "Web3 Gaming & GameFi Guide 2026 — Play-to-Earn, Top Games &",
+  description: "Master Web3 gaming and GameFi in 2026. Explore play-to-earn mechanics, top games like Axie Infinity and Illuvium, gaming blockchains, and how to start earning",
   keywords: [
     "web3 gaming",
     "GameFi",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "article",
-    title: "Web3 Gaming & GameFi Guide 2026 — Play-to-Earn, Top Games & Tokens | degen0x",
-    description: "Master Web3 gaming and GameFi in 2026. Explore play-to-earn mechanics, top games like Axie Infinity and Illuvium, gaming blockchains, and how to start earning through games.",
+    title: "Web3 Gaming & GameFi Guide 2026 — Play-to-Earn, Top Games &",
+    description: "Master Web3 gaming and GameFi in 2026. Explore play-to-earn mechanics, top games like Axie Infinity and Illuvium, gaming blockchains, and how to start earning",
     publishedTime: "2026-03-25T00:00:00Z",
     authors: ["degen0x"],
     tags: ["Web3", "Gaming", "GameFi", "Play-to-Earn", "Blockchain"],
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web3 Gaming & GameFi Guide 2026 — Play-to-Earn, Top Games & Tokens | degen0x",
+    title: "Web3 Gaming & GameFi Guide 2026 — Play-to-Earn, Top Games &",
     description: "Master Web3 gaming and GameFi in 2026. Explore play-to-earn mechanics, top games, and how to start earning."
   }
-};
+  alternates: { canonical: "/learn/web3-gaming-gamefi-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   headline: "Web3 Gaming & GameFi Guide 2026 — Play-to-Earn, Top Games & Tokens",
-  description: "Master Web3 gaming and GameFi in 2026. Explore play-to-earn mechanics, top games like Axie Infinity and Illuvium, gaming blockchains, and how to start earning through games.",
+  description: "Master Web3 gaming and GameFi in 2026. Explore play-to-earn mechanics, top games like Axie Infinity and Illuvium, gaming blockchains, and how to start earning",
   datePublished: "2026-03-25T00:00:00Z",
   author: {
     name: "degen0x",

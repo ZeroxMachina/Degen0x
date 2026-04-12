@@ -16,8 +16,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // Description: 159 chars — specific, keyword-rich, addresses search intent
 export const metadata: Metadata = {
   title: "What Is Sonic? Fantom's Successor Explained 2026 | degen0x",
-  description:
-    "Sonic (ex-Fantom) achieves 400K TPS with 720ms finality. Learn how SonicVM, the FeeM revenue model, and S tokenomics work — plus real TVL data and ecosystem risks.",
+  description: "Sonic (ex-Fantom) achieves 400K TPS with 720ms finality. Learn how SonicVM, the FeeM revenue model, and S tokenomics work — plus real TVL data and ecosystem",
   keywords: [
     "sonic blockchain",
     "sonic blockchain guide",

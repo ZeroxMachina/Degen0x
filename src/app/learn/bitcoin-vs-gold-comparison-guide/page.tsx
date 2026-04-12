@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Bitcoin vs Gold Comparison 2026: Supply, Returns, Volatility, Sharpe Ratio | degen0x',
+  title: "Bitcoin vs Gold Comparison 2026: Supply, Returns,",
   description: 'Bitcoin vs gold: supply (21M BTC vs 200K tons Au), portability, 1yr/5yr/10yr returns, volatility, Sharpe ratio, digital scarcity vs physical store of value.',
   keywords: ['bitcoin vs gold', 'bitcoin comparison', 'gold investment', 'store of value', 'digital gold', 'crypto vs precious metals'],
   openGraph: {

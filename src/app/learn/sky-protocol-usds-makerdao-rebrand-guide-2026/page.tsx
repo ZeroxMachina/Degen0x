@@ -5,8 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Sky Protocol Guide 2026 — USDS, SKY Token & MakerDAO Rebrand | degen0x',
-  description: 'Complete guide to Sky Protocol in 2026 — the MakerDAO rebrand. Learn how USDS replaces DAI, the Sky Savings Rate, SubDAOs (Stars), SKY vs MKR tokenomics, and the Endgame roadmap.',
+  title: "Sky Protocol Guide 2026 — USDS, SKY Token & MakerDAO Rebrand",
+  description: "Complete guide to Sky Protocol in 2026 — the MakerDAO rebrand. Learn how USDS replaces DAI, the Sky Savings Rate, SubDAOs (Stars), SKY vs MKR tokenomics, and",
   keywords: ['Sky Protocol', 'USDS stablecoin', 'SKY token', 'MakerDAO rebrand', 'Sky Savings Rate', 'SSR', 'DAI vs USDS', 'Endgame', 'SubDAO', 'Stars', 'MKR to SKY upgrade', 'decentralized stablecoin 2026'],
   alternates: {
     canonical: 'https://degen0x.com/learn/sky-protocol-usds-makerdao-rebrand-guide-2026',

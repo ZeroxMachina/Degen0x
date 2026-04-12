@@ -12,11 +12,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // Export metadata for server-side rendering
 export const metadata: Metadata = {
-  title: "AI Agent Identity (NHI) Guide 2026: Non-Human Identities & Cryptographic Identity",
-  description: "Master AI agent identity infrastructure. Learn about Non-Human Identities (NHI), Decentralized Identifiers, World AgentKit, Coinbase x402, and Know Your Agent (KYA) standards. 2026's essential guide to agent-backed identity, cryptographic credentials, and machine-to-machine payments.",
+  title: "AI Agent Identity (NHI) Guide 2026: Non-Human Identities &",
+  description: "Master AI agent identity infrastructure. Learn about Non-Human Identities (NHI), Decentralized Identifiers, World AgentKit, Coinbase x402, and Know Your Agent"s essential guide to agent-backed identity, cryptographic credentials, and machine-to-machine payments.",
   keywords: "AI agents, non-human identities, NHI, cryptographic identity, DID, Decentralized Identifiers, World AgentKit, World ID, Coinbase x402, Know Your Agent, KYA, verifiable credentials, ZK proofs, agent economy, stablecoin payments, agent identity infrastructure",
   openGraph: {
-    title: "AI Agent Identity (NHI) Guide 2026: Non-Human Identities & Cryptographic Identity",
+    title: "AI Agent Identity (NHI) Guide 2026: Non-Human Identities &",
     description: "Master AI agent identity infrastructure in 2026. Learn DIDs, World AgentKit, x402 protocol, and Know Your Agent standards.",
     type: "article",
     url: `${SITE_URL}/learn/ai-agent-identity-nhi-guide`,
@@ -37,7 +37,8 @@ export const metadata: Metadata = {
     description: "Master AI agent identity infrastructure, cryptographic identity, and the agent economy.",
     image: "https://degen0x.com/og-ai-agent-identity-nhi-guide.svg",
   },
-};
+
+  alternates: { canonical: "/learn/ai-agent-identity-nhi-guide" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -47,7 +48,7 @@ const breadcrumbs = [
 
 // Generate structured data for SEO
 const articleSchema = generateArticleSchema({
-  title: "AI Agent Identity (NHI) Guide 2026: Non-Human Identities & Cryptographic Identity",
+  title: "AI Agent Identity (NHI) Guide 2026: Non-Human Identities &",
   description: "Comprehensive guide to AI agent identity infrastructure, Non-Human Identities, cryptographic credentials, and the agent economy.",
   url: `${SITE_URL}/learn/ai-agent-identity-nhi-guide`,
   datePublished: "2026-03-23T00:00:00Z",
@@ -782,6 +783,56 @@ export default function AIAgentIdentityPage() {
 
       {/* Back to Top Button */}
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Schwab Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Charles Schwab crypto review covering Bitcoin ETF access, trading options, fees, and whether Schwab is right for crypto investors.",
-};
+  alternates: { canonical: "/exchanges/reviews/schwab-crypto" }};
 
 export default function SchwabCryptoReview() {
   return (

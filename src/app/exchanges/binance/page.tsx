@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "Binance Review 2026: Fees, Trading Volume, Pros & Cons",
   description:
     "Complete Binance review covering the world's largest crypto exchange, trading features, altcoin selection, BNB token benefits, and security. Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/binance" }};
 
 export default function BinanceReview() {
   return (

@@ -1,13 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import PortfolioAllocationAdvisor from "@/components/PortfolioAllocationAdvisor";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
 export const metadata: Metadata = {
-  title: "Crypto Portfolio Allocation Advisor - Risk-Based Recommendations",
-  description:
-    "Get personalized crypto portfolio allocation based on your risk tolerance. Interactive tool with BTC, ETH, altcoins, DeFi, stablecoins, and more. Adjust allocations with our smart slider.",
+  title: "Crypto Portfolio Allocation Advisor - Risk-Based",
+  description: "Get personalized crypto portfolio allocation based on your risk tolerance. Interactive tool with BTC, ETH, altcoins, DeFi, stablecoins, and more. Adjust",
   keywords:
     "crypto portfolio allocation, portfolio advisor, risk tolerance, asset allocation, bitcoin allocation, ethereum allocation, portfolio builder, crypto allocation tool",
   openGraph: {
@@ -30,7 +30,8 @@ export const metadata: Metadata = {
     title: "Crypto Portfolio Allocation Advisor",
     description: "Smart portfolio allocation based on risk tolerance",
   },
-};
+
+  alternates: { canonical: "/tools/portfolio-allocation" }};
 
 export default function PortfolioAllocationPage() {
   return (
@@ -165,6 +166,56 @@ export default function PortfolioAllocationPage() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Tools
+          </Link>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Learning Guides
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Tools
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

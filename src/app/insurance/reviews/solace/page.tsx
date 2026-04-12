@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Solace Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Solace is a decentralized insurance protocol offering portfolio-level coverage for DeFi positions, protecting users against smart contract exploits.",
-};
+  alternates: { canonical: "/insurance/reviews/solace" }};
 
 export default function SolaceReview() {
   return (

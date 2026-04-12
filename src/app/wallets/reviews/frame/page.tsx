@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Frame Wallet Review (${CURRENT_YEAR}) - Best Desktop System-Level Wallet? | ${SITE_NAME}`,
   description: `Detailed Frame wallet review for ${CURRENT_YEAR}. Covers system-level OS integration, hardware wallet support, multi-chain management, and privacy features.`,
-};
+  alternates: { canonical: "/wallets/reviews/frame" }};
 
 const product = {
   name: "Frame",
   slug: "frame",
   rating: 4.2,
-  description: "Frame is a privacy-focused, system-level Ethereum wallet that runs as a native OS application rather than a browser extension, offering superior hardware wallet integration.",
+  description: "Frame is a privacy-focused, system-level Ethereum wallet that runs as a native OS application rather than a browser extension, offering superior hardware",
   pros: [
     "System-level wallet accessible from any browser or application",
     "Excellent hardware wallet support for Ledger, Trezor, and GridPlus",

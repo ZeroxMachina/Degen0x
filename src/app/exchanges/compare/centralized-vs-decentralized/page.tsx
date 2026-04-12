@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
@@ -9,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Centralized vs Decentralized Exchanges: Full Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Complete comparison of centralized (CEX) vs decentralized (DEX) crypto exchanges. Understand fees, security, custody, and which type is right for you.",
-};
+  alternates: { canonical: "/exchanges/compare/centralized-vs-decentralized" }};
 
 export default function CentralizedVsDecentralizedPage() {
   return (
@@ -65,6 +66,57 @@ export default function CentralizedVsDecentralizedPage() {
         { question: "Can beginners use DEXs?", answer: "DEXs have become more user-friendly but still require basic knowledge of wallets, gas fees, and transaction signing. Beginners should start with a CEX and transition to DEXs as their knowledge grows." },
         { question: "Why do some tokens only exist on DEXs?", answer: "DEXs are permissionless — anyone can create a trading pool for any token. CEXs require a formal listing process with due diligence. New, small, or experimental tokens often launch on DEXs first and may never get listed on centralized exchanges." },
       ]} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/centralized Vs Decentralized", "description": "Complete comparison of centralized (CEX) vs decentralized (DEX) crypto exchanges. Understand fees, security, custody, and which type is right for you.", "url": "https://degen0x.com/exchanges/compare/centralized-vs-decentralized"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/exchanges" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Exchanges
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Trading Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Exchanges
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

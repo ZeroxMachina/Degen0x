@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,10 +10,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto to Buy Today (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top cryptocurrencies to buy in ${CURRENT_YEAR}. Expert picks based on fundamentals, growth potential, and risk-adjusted value across market cap tiers.`,
-};
+  alternates: { canonical: "/investing/best/buy-today" }};
 
 const products = [
-  { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.9, description: "The foundational crypto asset with the strongest network effect, institutional adoption, and proven track record. Bitcoin ETFs have opened access to traditional investors, deepening demand.", pros: ["Strongest brand and network effect", "ETF-driven institutional demand", "Fixed 21M supply cap"], cons: ["Lower growth potential than smaller assets", "No smart contract functionality", "Energy-intensive mining"], bestFor: "Core portfolio holding for all crypto investors", affiliateUrl: "#", category: "investing" },
+  { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.9, description: "The foundational crypto asset with the strongest network effect, institutional adoption, and proven track record. Bitcoin ETFs have opened access to", pros: ["Strongest brand and network effect", "ETF-driven institutional demand", "Fixed 21M supply cap"], cons: ["Lower growth potential than smaller assets", "No smart contract functionality", "Energy-intensive mining"], bestFor: "Core portfolio holding for all crypto investors", affiliateUrl: "#", category: "investing" },
   { name: "Ethereum (ETH)", slug: "ethereum", rating: 4.8, description: "The dominant smart contract platform powering DeFi, NFTs, and Layer 2 scaling. Generates substantial fee revenue with deflationary tokenomics during high usage periods.", pros: ["Largest smart contract ecosystem", "Revenue-generating through fees", "ETF availability for traditional investors"], cons: ["High mainnet gas fees", "L2 fragmentation risk", "Competition from Solana and others"], bestFor: "Exposure to the smart contract economy", affiliateUrl: "#", category: "investing" },
   { name: "Solana (SOL)", slug: "solana", rating: 4.6, description: "High-performance blockchain with sub-second finality and minimal fees. Growing DeFi and consumer application ecosystem with strong developer activity.", pros: ["Extremely fast and cheap transactions", "Thriving DeFi and NFT ecosystem", "Strong developer momentum"], cons: ["Historical network stability issues", "More centralized than Ethereum", "Token unlock pressure"], bestFor: "High-growth Layer 1 exposure", affiliateUrl: "#", category: "investing" },
   { name: "Chainlink (LINK)", slug: "chainlink", rating: 4.5, description: "The dominant oracle network connecting smart contracts with real-world data. Critical infrastructure for DeFi with expanding CCIP cross-chain capabilities.", pros: ["Essential DeFi infrastructure", "No credible competitors at scale", "CCIP enables cross-chain growth"], cons: ["Token utility concerns", "Complex tokenomics", "Revenue not yet matching valuation"], bestFor: "Infrastructure and oracle exposure", affiliateUrl: "#", category: "investing" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Crypto to Buy Today" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Crypto to Buy Today" }]} />
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Best Crypto to Buy Today ({CURRENT_YEAR})</h1>
@@ -57,6 +65,57 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/buy Today", "description": "The foundational crypto asset with the strongest network effect, institutional adoption, and proven track record. Bitcoin ETFs have opened access to", "url": "https://degen0x.com/investing/best/buy-today"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

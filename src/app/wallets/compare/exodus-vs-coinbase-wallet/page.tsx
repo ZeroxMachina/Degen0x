@@ -12,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Exodus vs Coinbase Wallet (${CURRENT_YEAR}): Self-Custody Wallet Comparison | ${SITE_NAME}`,
   description: `Exodus vs Coinbase Wallet comparison for ${CURRENT_YEAR}. Compare multi-chain support, DeFi features, staking, swap fees, and beginner experience.`,
-};
+  alternates: { canonical: "/wallets/compare/exodus-vs-coinbase-wallet" }};
 
 const items: ComparisonItem[] = [
   { name: "Exodus", slug: "exodus", rating: 4.4, affiliateUrl: "https://degen0x.com/go/exodus", features: { "Type": "Desktop + Mobile", "Chains": "50+ blockchains", "Built-in Exchange": "Yes", "Swap Fees": "Spread markup (2-5%)", "Staking": "Yes (multi-chain)", "Hardware Wallet": "Trezor integration", "Open Source": "No", "Customer Support": "Email + live chat" } },
@@ -119,6 +119,57 @@ export default function ExodusVsCoinbaseWalletPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/exodus Vs Coinbase Wallet", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/exodus-vs-coinbase-wallet"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/wallets" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Wallets
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Wallets
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

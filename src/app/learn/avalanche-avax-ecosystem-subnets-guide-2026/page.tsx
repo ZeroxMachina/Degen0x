@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Avalanche (AVAX) Ecosystem & L1 Chains Guide 2026',
-  description:
-    'Complete guide to Avalanche blockchain, Avalanche9000 upgrade, L1s (formerly subnets), DeFi ecosystem, and enterprise adoption. Learn how AVAX scales to 100,000+ TPS.',
+  description: "Complete guide to Avalanche blockchain, Avalanche9000 upgrade, L1s (formerly subnets), DeFi ecosystem, and enterprise adoption. Learn how AVAX scales to",
   keywords: [
     'Avalanche',
     'AVAX',
@@ -20,8 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     title: 'Avalanche (AVAX) Ecosystem & L1 Chains Guide 2026',
-    description:
-      'Complete guide to Avalanche blockchain, Avalanche9000 upgrade, L1s (formerly subnets), DeFi ecosystem, and enterprise adoption. Learn how AVAX scales to 100,000+ TPS.',
+    description: "Complete guide to Avalanche blockchain, Avalanche9000 upgrade, L1s (formerly subnets), DeFi ecosystem, and enterprise adoption. Learn how AVAX scales to",
     url: 'https://degen0x.com/learn/avalanche-avax-ecosystem-subnets-guide-2026',
     publishedTime: '2026-04-03T00:00:00Z',
     modifiedTime: '2026-04-03T00:00:00Z',
@@ -47,8 +46,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Avalanche (AVAX) Ecosystem & L1 Chains Guide 2026',
-  description:
-    'Complete guide to Avalanche blockchain, Avalanche9000 upgrade, L1s (formerly subnets), DeFi ecosystem, and enterprise adoption. Learn how AVAX scales to 100,000+ TPS.',
+  description: "Complete guide to Avalanche blockchain, Avalanche9000 upgrade, L1s (formerly subnets), DeFi ecosystem, and enterprise adoption. Learn how AVAX scales to",
   datePublished: '2026-04-03T00:00:00Z',
   dateModified: '2026-04-03T00:00:00Z',
   author: {
@@ -852,7 +850,57 @@ export default function AvalancheEcosystemPage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
-      </article>
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
     </>
   );
 }

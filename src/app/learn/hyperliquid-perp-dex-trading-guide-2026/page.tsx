@@ -5,9 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Hyperliquid Guide 2026 — Perp DEX Trading & HYPE Token | degen0x',
-  description:
-    'Master Hyperliquid Protocol: 150+ perp markets, 50x leverage, zero-fee spot trading, HYPE tokenomics, HyperEVM, and L1 blockchain trading—with sub-second finality and 200K TPS.',
+  title: "Hyperliquid Guide 2026 — Perp DEX Trading & HYPE Token",
+  description: "Master Hyperliquid Protocol: 150+ perp markets, 50x leverage, zero-fee spot trading, HYPE tokenomics, HyperEVM, and L1 blockchain trading—with sub-second",
   keywords: [
     'Hyperliquid',
     'HYPE token',

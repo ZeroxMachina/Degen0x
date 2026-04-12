@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Multi-Sig Wallets Explained (${CURRENT_YEAR}) - How They Work | ${SITE_NAME}`,
   description: `Learn how multi-signature wallets work in ${CURRENT_YEAR}. Covers multi-sig setup, use cases for DAOs and teams, Safe (Gnosis Safe), and security benefits.`,
-};
+  alternates: { canonical: "/wallets/learn/multi-sig-wallets" }};
 
 const toc = [
   { id: "what-is-multisig", title: "What Is a Multi-Sig Wallet?", level: 2 },

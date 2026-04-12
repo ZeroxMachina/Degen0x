@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Data Availability Layer Guide 2026: Celestia vs EigenDA vs Avail",
+  title: "Data Availability Layer Guide 2026: Celestia vs EigenDA vs",
   description:
     "Compare Celestia, EigenDA, and Avail — the three DA layers powering Ethereum's rollup ecosystem in 2026. Throughput benchmarks, trust models, cost analysis, and which to choose.",
   openGraph: {
@@ -35,10 +35,11 @@ export const metadata: Metadata = {
       "Throughput, cost, trust models — which DA layer wins? The full breakdown for rollup builders.",
     images: [`${SITE_URL}/og-data-availability-layer-guide-2026.png`],
   },
-};
+
+  alternates: { canonical: "/learn/data-availability-layer-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
-  title: "Data Availability Layer Guide 2026: Celestia vs EigenDA vs Avail",
+  title: "Data Availability Layer Guide 2026: Celestia vs EigenDA vs",
   description:
     "Compare the three leading data availability layers — Celestia, EigenDA, and Avail — on throughput, cost, trust models, and ecosystem fit for rollup developers.",
   url: `${SITE_URL}/learn/data-availability-layer-guide-2026`,

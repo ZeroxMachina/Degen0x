@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Concentrated Liquidity Uniswap V3 Guide | LP Strategy & Capital Efficiency | degen0x',
-  description: 'Master Uniswap V3 concentrated liquidity: tick ranges, 4000x capital efficiency vs V2, IL risk, fee tiers 0.01%-1%. Arrakis, Gamma, Merkl rewards, JIT attacks, real ETH/USDC examples.',
+  title: "Concentrated Liquidity Uniswap V3 Guide | LP Strategy &",
+  description: "Master Uniswap V3 concentrated liquidity: tick ranges, 4000x capital efficiency vs V2, IL risk, fee tiers 0.01%-1%. Arrakis, Gamma, Merkl rewards, JIT attacks,",
   keywords: ['Uniswap V3', 'concentrated liquidity', 'LP strategy', 'capital efficiency', 'tick ranges', 'impermanent loss', 'liquidity mining', 'Arrakis', 'Gamma Strategies'],
   openGraph: {
     title: 'Concentrated Liquidity Uniswap V3 Guide',

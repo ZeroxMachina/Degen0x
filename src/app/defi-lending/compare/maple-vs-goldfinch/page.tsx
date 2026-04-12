@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
@@ -8,7 +10,7 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Maple vs Goldfinch ${CURRENT_YEAR}: Institutional DeFi Lending Compared`,
   description: `Compare Maple Finance vs Goldfinch in ${CURRENT_YEAR}. Analyze institutional lending approaches, yields, risk profiles, and borrower types.`,
-};
+  alternates: { canonical: "/defi-lending/compare/maple-vs-goldfinch" }};
 
 const items: ComparisonItem[] = [
   { name: "Maple Finance", slug: "maple", rating: 4.1, affiliateUrl: "https://degen0x.com/go/maple", features: { "TVL": "$100M+", "Focus": "Institutional credit", "Borrowers": "Crypto-native institutions", "Collateral": "Over + undercollateralized", "KYC Required": "For borrowers", "Chains": "Ethereum, Solana, Base", "Governance": "MPL token", "Unique Feature": "Pool delegates curate loans" } },
@@ -26,7 +28,14 @@ const faqs: FAQ[] = [
 export default function MapleVsGoldfinchPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/maple-vs-goldfinch" }, { label: "Maple vs Goldfinch", href: "/defi-lending/compare/maple-vs-goldfinch" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="defi-lending"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/maple-vs-goldfinch" }, { label: "Maple vs Goldfinch", href: "/defi-lending/compare/maple-vs-goldfinch" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Maple vs Goldfinch: Full Comparison ({CURRENT_YEAR})</h1>
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
@@ -60,6 +69,57 @@ export default function MapleVsGoldfinchPage() {
         <p className="text-[var(--color-text-secondary)]">Maple pools generally offer more liquidity flexibility with periodic withdrawal windows. Goldfinch positions can be less liquid as underlying loans have fixed terms that may extend months or years. Goldfinch does have a senior pool that provides some liquidity, and secondary markets exist for some positions. Evaluate your liquidity needs carefully before committing to either platform, as early exit may not always be possible at favorable terms.</p>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/maple Vs Goldfinch", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/maple-vs-goldfinch"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

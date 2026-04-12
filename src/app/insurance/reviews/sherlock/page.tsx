@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Sherlock Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Sherlock combines smart contract auditing with exploit coverage, where audit quality directly backs insurance.",
-};
+  alternates: { canonical: "/insurance/reviews/sherlock" }};
 
 export default function SherlockReview() {
   return (

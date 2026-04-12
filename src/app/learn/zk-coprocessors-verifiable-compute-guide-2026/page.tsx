@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'ZK Coprocessors & Verifiable Compute Guide 2026',
-  description: 'Comprehensive guide to ZK coprocessors and verifiable compute. Learn how protocols like Axiom, Brevis, RISC Zero, and Lagrange enable off-chain computation with on-chain verification for DeFi, RWA, and AI.',
+  description: "Comprehensive guide to ZK coprocessors and verifiable compute. Learn how protocols like Axiom, Brevis, RISC Zero, and Lagrange enable off-chain computation",
   keywords: [
     'ZK coprocessor',
     'verifiable compute',

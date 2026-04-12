@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Liquid Restaking Tokens (LRTs) Guide 2026 | degen0x',
-  description:
-    'Master Liquid Restaking Tokens in 2026: ether.fi, Kelp DAO, Puffer Finance, Renzo. Learn how to compound Ethereum yield through liquid staking + restaking on EigenLayer.',
+  description: "Master Liquid Restaking Tokens in 2026: ether.fi, Kelp DAO, Puffer Finance, Renzo. Learn how to compound Ethereum yield through liquid staking + restaking on",
   keywords: [
     'Liquid Restaking Tokens',
     'LRT',

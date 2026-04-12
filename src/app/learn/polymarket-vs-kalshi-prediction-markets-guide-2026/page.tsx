@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
-  title: 'Polymarket vs Kalshi: Prediction Markets Comparison Guide 2026 | Degen0x',
-  description: 'In-depth comparison of Polymarket and Kalshi in 2026 — fees, liquidity, regulation, US access, crypto vs USD rails, and which prediction market platform is right for you.',
+  title: "Polymarket vs Kalshi: Prediction Markets Comparison Guide",
+  description: "In-depth comparison of Polymarket and Kalshi in 2026 — fees, liquidity, regulation, US access, crypto vs USD rails, and which prediction market platform is",
   keywords: [
     'Polymarket vs Kalshi',
     'prediction markets 2026',
@@ -97,7 +98,14 @@ const structuredData = {
 export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-gray-100">
-      <script
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />

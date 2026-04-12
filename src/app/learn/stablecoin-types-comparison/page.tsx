@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Stablecoin Types Comparison: USDT, USDC, DAI, FRAX 2026 | degen0x',
-  description: 'Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks, regulations (MiCA).',
+  title: "Stablecoin Types Comparison: USDT, USDC, DAI, FRAX 2026",
+  description: "Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks,",
   keywords: ['stablecoin types', 'USDT', 'USDC', 'DAI stablecoin', 'FRAX', 'crvUSD', 'stablecoin comparison', 'depegging risk', 'MiCA regulations', 'RWA stablecoins'],
   openGraph: {
     type: 'article',
     title: 'Stablecoin Types Comparison: USDT, USDC, DAI, FRAX 2026',
-    description: 'Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks, regulations (MiCA).',
+    description: "Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks,",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/learn/stablecoin-types-comparison',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Stablecoin Types Comparison: USDT, USDC, DAI, FRAX 2026',
-    description: 'Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks, regulations (MiCA).',
+    description: "Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks,",
     image: 'https://degen0x.com/og-learn.svg',
   },
   alternates: {
@@ -36,7 +36,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Stablecoin Types Comparison: USDT, USDC, DAI, FRAX 2026',
-  description: 'Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks, regulations (MiCA).',
+  description: "Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks,",
   image: 'https://degen0x.com/og-learn.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

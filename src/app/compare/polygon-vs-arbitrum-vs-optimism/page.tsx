@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Polygon vs Arbitrum vs Optimism: Scaling Solutions Compared',
-  description: 'Compare Layer 2 scaling: Polygon (sidechain, $0.001 fees), Arbitrum (rollup, $0.05 fees, zkEVM), Optimism (rollup, Superchain vision, AggLayer). TPS, TVL, ecosystems.',
+  description: "Compare Layer 2 scaling: Polygon (sidechain, $0.001 fees), Arbitrum (rollup, $0.05 fees, zkEVM), Optimism (rollup, Superchain vision, AggLayer). TPS, TVL,",
   keywords: ['Polygon', 'Arbitrum', 'Optimism', 'Layer 2', 'scaling solutions', 'rollups', 'sidechains', 'zkEVM', 'Superchain', 'AggLayer'],
   openGraph: {
     title: 'Polygon vs Arbitrum vs Optimism: Scaling Solutions',

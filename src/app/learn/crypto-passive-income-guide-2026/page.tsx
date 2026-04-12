@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Passive Income Guide 2026: Staking, Yield Farming & Lending | degen0x",
-  description:
-    "Complete guide to earning crypto passive income. Staking (ETH, SOL, ADA), liquid staking (stETH, jitoSOL), restaking (EigenLayer), yield farming, crypto lending (Aave, Morpho), and yield-bearing stablecoins. Risk management, comparison tables, and practical strategies.",
+  title: "Crypto Passive Income Guide 2026: Staking, Yield Farming &",
+  description: "Complete guide to earning crypto passive income. Staking (ETH, SOL, ADA), liquid staking (stETH, jitoSOL), restaking (EigenLayer), yield farming, crypto",
   keywords: [
     "crypto passive income",
     "staking rewards",
@@ -491,8 +490,8 @@ export default function CryptoPassiveIncomeGuide() {
             { q: "How much money do I need to start earning passive crypto income?", a: "You can start with as little as $10. Staking on pools accepts any amount, yield farming on DEXs has minimal entry points, and lending protocols don&apos;t set minimums. Dollar-cost averaging (DCA) is recommended—deposit small amounts regularly instead of one large sum. This reduces timing risk and lets you learn gradually." },
           ].map((faq, i) => (
             <div key={i} style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.q}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>{faq.question}</h3>
+              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

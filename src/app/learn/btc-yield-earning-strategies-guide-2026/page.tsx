@@ -11,9 +11,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "BTC Yield Strategies 2026: How to Earn 3-8% APY on Your Bitcoin",
-  description:
-    "Stop letting your Bitcoin sit idle. Explore proven BTCFi yield strategies — Babylon staking, Solv Protocol, CoreDAO, BounceBit — with real APY data and risk breakdowns for 2026.",
+  title: "BTC Yield Strategies 2026: How to Earn 3-8% APY on Your",
+  description: "Stop letting your Bitcoin sit idle. Explore proven BTCFi yield strategies — Babylon staking, Solv Protocol, CoreDAO, BounceBit — with real APY data and risk",
   openGraph: {
     title: "BTC Yield Strategies 2026: Earn Passive Income on Bitcoin",
     description:
@@ -41,10 +40,11 @@ export const metadata: Metadata = {
       `${SITE_URL}/og-btc-yield-earning-strategies-guide-2026.svg`,
     ],
   },
-};
+
+  alternates: { canonical: "/learn/btc-yield-earning-strategies-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
-  title: "BTC Yield Strategies 2026: How to Earn 3-8% APY on Your Bitcoin",
+  title: "BTC Yield Strategies 2026: How to Earn 3-8% APY on Your",
   description:
     "A comprehensive guide to earning yield on Bitcoin through BTCFi protocols including Babylon staking, Solv Protocol, CoreDAO, and BounceBit. Covers real APY data, risk analysis, and step-by-step strategies.",
   url: `${SITE_URL}/learn/btc-yield-earning-strategies-guide-2026`,
@@ -807,12 +807,12 @@ export default function BTCYieldStrategiesGuidePage() {
               <h3
                 style={{ color: "var(--color-text)" }}
               >
-                {faq.q}
+                {faq.question}
               </h3>
               <p
                 style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
               >
-                {faq.a}
+                {faq.answer}
               </p>
             </div>
           ))}

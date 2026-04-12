@@ -9,11 +9,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto Market Cycles Guide 2026: Bull & Bear Phases | degen0x",
-  description: "Master crypto market cycles in 2026. Understand accumulation, bull runs, distribution, bear markets, Bitcoin halving cycles, on-chain indicators (MVRV, NUPL, Pi Cycle), and cycle positioning strategies.",
+  title: "Crypto Market Cycles Guide 2026: Bull & Bear Phases",
+  description: "Master crypto market cycles in 2026. Understand accumulation, bull runs, distribution, bear markets, Bitcoin halving cycles, on-chain indicators (MVRV, NUPL,",
   keywords: "crypto market cycles, bitcoin halving cycle, bull market crypto, bear market crypto, market cycle phases, crypto accumulation phase, on-chain indicators, MVRV ratio, crypto market 2026",
   openGraph: {
-    title: "Crypto Market Cycles Guide 2026: Bull & Bear Phases | degen0x",
+    title: "Crypto Market Cycles Guide 2026: Bull & Bear Phases",
     description: "Master the four phases of crypto market cycles: accumulation, markup, distribution, and markdown. Learn halving cycles, on-chain indicators, and positioning strategies for 2026.",
     type: "article",
     publishedTime: "2026-03-24T00:00:00Z",
@@ -21,11 +21,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Crypto Market Cycles Guide 2026: Bull & Bear Phases | degen0x",
+    title: "Crypto Market Cycles Guide 2026: Bull & Bear Phases",
     description: "Master the four phases of crypto market cycles. Learn halving cycles, on-chain indicators, and positioning strategies for 2026.",
     images: ["/og-crypto-market-cycles-guide-2026.svg"],
   },
-};
+
+  alternates: { canonical: "/learn/crypto-market-cycles-guide-2026" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -750,9 +751,9 @@ export default function CryptoMarketCyclesPage() {
               },
             ].map((faq, idx) => (
               <div key={idx} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 20 }}>
-                <h3 style={{ fontSize: 15, fontWeight: 700, marginTop: 0, marginBottom: 12, color: S.blue }}>Q: {faq.q}</h3>
+                <h3 style={{ fontSize: 15, fontWeight: 700, marginTop: 0, marginBottom: 12, color: S.blue }}>Q: {faq.question}</h3>
                 <p style={{ fontSize: 14, color: S.text2, lineHeight: 1.7, margin: 0 }}>
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}

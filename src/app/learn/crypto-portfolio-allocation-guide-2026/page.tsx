@@ -8,9 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Crypto Portfolio Allocation Guide 2026 — Model Portfolios & Strategy | degen0x",
-  description:
-    "Learn how to build a diversified crypto portfolio in 2026. Model portfolios for conservative, balanced, and aggressive investors with BTC, ETH, SOL, and altcoin allocation percentages.",
+  title: "Crypto Portfolio Allocation Guide 2026 — Model Portfolios &",
+  description: "Learn how to build a diversified crypto portfolio in 2026. Model portfolios for conservative, balanced, and aggressive investors with BTC, ETH, SOL, and",
   keywords: [
     "crypto portfolio allocation",
     "crypto portfolio strategy 2026",
@@ -45,7 +44,8 @@ export const metadata: Metadata = {
     description:
       "Model portfolios for conservative, balanced, and aggressive crypto investors. Data-driven allocation strategy.",
   },
-};
+
+  alternates: { canonical: "/learn/crypto-portfolio-allocation-guide-2026" }};
 
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({

@@ -7,8 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Hyperliquid DEX & HYPE Chain: Complete Perpetual Futures Guide 2026 | degen0x',
-  description: 'Complete guide to Hyperliquid DEX and HYPE Chain. Learn how HyperBFT consensus, HyperCore order book, HyperEVM smart contracts, and HYPE tokenomics power the leading decentralized perpetual futures protocol.',
+  title: "Hyperliquid DEX & HYPE Chain: Complete Perpetual Futures",
+  description: "Complete guide to Hyperliquid DEX and HYPE Chain. Learn how HyperBFT consensus, HyperCore order book, HyperEVM smart contracts, and HYPE tokenomics power the",
   keywords: [
     'Hyperliquid DEX',
     'HYPE token',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: 'article',
-    title: 'Hyperliquid DEX & HYPE Chain: Complete Perpetual Futures Guide 2026 | degen0x',
+    title: "Hyperliquid DEX & HYPE Chain: Complete Perpetual Futures",
     description: 'Master Hyperliquid: HyperBFT, HyperCore order book, HyperEVM, and HYPE tokenomics. The most liquid on-chain perps protocol with 200k TPS.',
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hyperliquid DEX & HYPE Chain: Complete Perpetual Futures Guide 2026 | degen0x',
+    title: "Hyperliquid DEX & HYPE Chain: Complete Perpetual Futures",
     description: 'HyperBFT consensus, 200k TPS, fully on-chain order book, HYPE tokenomics, and perp futures trading on Hyperliquid.',
   },
   alternates: {

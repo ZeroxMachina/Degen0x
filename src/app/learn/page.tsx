@@ -1,13 +1,13 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Learn Crypto: Complete Guides & Tutorials (${CURRENT_YEAR})`,
-  description:
-    "Start your crypto education here. Beginner guides, blockchain basics, Bitcoin and Ethereum explainers, DeFi, NFTs, security tips, and a comprehensive crypto glossary.",
-};
+  description: "Start your crypto education here. Beginner guides, blockchain basics, Bitcoin and Ethereum explainers, DeFi, NFTs, security tips, and a comprehensive crypto",
+  alternates: { canonical: "/learn" }};
 
 const guides = [
   {
@@ -136,7 +136,14 @@ const guides = [
 export default function LearnHubPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
-      <Breadcrumb
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="learn"
+      />      <Breadcrumb
         items={[
           { label: "Home", href: "/" },
           { label: "Learn Crypto", href: "/learn" },

@@ -3,8 +3,8 @@ import Link from "next/link";
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Solana Blinks & Actions Guide 2026 — Blockchain Links Explained | degen0x',
-  description: 'Complete guide to Solana Actions and Blinks in 2026. Learn how blockchain links turn any Solana transaction into a shareable URL. Technical specs, use cases, wallet support, and how to build your first Blink.',
+  title: "Solana Blinks & Actions Guide 2026 — Blockchain Links",
+  description: "Complete guide to Solana Actions and Blinks in 2026. Learn how blockchain links turn any Solana transaction into a shareable URL. Technical specs, use cases,",
   keywords: ['Solana Blinks', 'Solana Actions', 'blockchain links', 'Solana transactions', 'Dialect', 'Phantom wallet', 'Backpack wallet', 'Blinks inspector', 'Solana dApps 2026'],
   openGraph: {
     type: 'article',

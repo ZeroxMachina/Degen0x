@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
@@ -7,8 +9,8 @@ const product = cryptoCards.find((c) => c.slug === "plutus-card")!;
 
 export const metadata: Metadata = {
   title: `Plutus Card Review (${CURRENT_YEAR}): Decentralized Rewards & Pros/Cons | degen0x`,
-  description: "In-depth Plutus Card review covering PLU token rewards, selectable perks, decentralized cashback model, and whether it is the best crypto card for European users.",
-};
+  description: "In-depth Plutus Card review covering PLU token rewards, selectable perks, decentralized cashback model, and whether it is the best crypto card for European",
+  alternates: { canonical: "/crypto-cards/reviews/plutus-card" }};
 
 export default function PlutusCardReviewPage() {
   return (

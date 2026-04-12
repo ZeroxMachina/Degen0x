@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Wallets for Android (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best Android crypto wallets for ${CURRENT_YEAR}. Compare Trust Wallet, Phantom, MetaMask, Exodus, and Tangem for Samsung, Pixel, and more.`,
-};
+  alternates: { canonical: "/wallets/best/android" }};
 
 const products = [
   { name: "Trust Wallet", slug: "trust-wallet", rating: 4.4, description: "The most feature-complete Android wallet with 100+ chain support, built-in dApp browser, staking, and WalletConnect integration.", pros: ["Broadest chain support on Android", "Full dApp browser", "NFC support on compatible devices"], cons: ["Complex for beginners", "Binance ownership concerns"], bestFor: "Most comprehensive multi-chain Android wallet", affiliateUrl: "#", category: "wallets" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function BestAndroidWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Android Wallets", href: "/wallets/best/android" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Wallets", href: "/wallets" }, { label: "Best Wallets", href: "/wallets/best" }, { label: "Android Wallets", href: "/wallets/best/android" }]} />
       <AffiliateDisclosure />
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Crypto Wallets for Android ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
@@ -57,6 +65,7 @@ export default function BestAndroidWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/android", "description": "The most feature-complete Android wallet with 100+ chain support, built-in dApp browser, staking, and WalletConnect integration.", "url": "https://degen0x.com/wallets/best/android"}) }} />
     </div>
   );
 }

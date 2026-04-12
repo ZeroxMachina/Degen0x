@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best StarkNet Projects 2026: JediSwap, mySwap, zkLend, Argent, Braavos | degen0x',
-  description: 'Complete guide to top StarkNet DeFi projects. Learn about DEXs (JediSwap, mySwap, 10KSwap), lending (zkLend, Nostra), wallets (Argent, Braavos), and StarkNet ID. Cairo language and STARK proofs.',
+  title: "Best StarkNet Projects 2026: JediSwap, mySwap, zkLend,",
+  description: "Complete guide to top StarkNet DeFi projects. Learn about DEXs (JediSwap, mySwap, 10KSwap), lending (zkLend, Nostra), wallets (Argent, Braavos), and StarkNet",
   keywords: ['StarkNet projects', 'JediSwap', 'mySwap', '10KSwap', 'zkLend', 'Nostra Finance', 'Argent', 'Braavos', 'StarkNet ID', 'STARK proofs', 'Cairo'],
   openGraph: {
     type: 'article',

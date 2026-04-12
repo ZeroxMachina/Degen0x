@@ -13,7 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Wrapped Bitcoin Comparison 2026: wBTC vs cbBTC vs tBTC vs LBTC | degen0x",
+  title: "Wrapped Bitcoin Comparison 2026: wBTC vs cbBTC vs tBTC vs",
   description:
     "Compare wrapped Bitcoin tokens: wBTC, cbBTC, tBTC, LBTC, and sBTC. Trust models, market share, DeFi integrations, risks, and which to use in 2026.",
   keywords: [

@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Polkadot Wallets 2026 | Polkadot.js, Talisman, SubWallet | degen0x',
-  description: 'Compare Polkadot wallets: Polkadot.js (official), Talisman (multi-chain), SubWallet, Nova Wallet. NPoS staking, parachain crowdloans, OpenGov voting, DOT 14-16% APY.',
+  title: "Best Polkadot Wallets 2026 | Polkadot.js, Talisman,",
+  description: "Compare Polkadot wallets: Polkadot.js (official), Talisman (multi-chain), SubWallet, Nova Wallet. NPoS staking, parachain crowdloans, OpenGov voting, DOT",
   keywords: ['polkadot wallet', 'polkadot.js', 'talisman wallet', 'subwallet', 'dot staking', 'crowdloans', 'nominationpools'],
   openGraph: {
     title: 'Best Polkadot Wallets 2026 | degen0x',

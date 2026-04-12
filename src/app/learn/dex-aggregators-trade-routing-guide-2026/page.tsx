@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'DEX Aggregators Guide 2026: Jupiter, 1inch, CowSwap | degen0x',
+  title: "DEX Aggregators Guide 2026: Jupiter, 1inch, CowSwap",
   description: 'Complete guide to DEX aggregators in 2026. Learn how Jupiter, 1inch, CowSwap, and Odos find the best trade routes, reduce slippage, and protect you from MEV.',
   keywords: ['DEX aggregator', 'Jupiter', '1inch', 'CowSwap', 'trade routing', 'slippage', 'MEV protection', 'swap', 'DeFi trading 2026', 'Odos', 'Paraswap'],
   openGraph: {
@@ -432,8 +432,8 @@ export default function DexAggregatorsGuidePage() {
             { q: 'Should I use an aggregator or trade directly on Uniswap?', a: 'Almost always use an aggregator. For small trades (<$500), the difference may be minimal. But for medium to large trades, aggregators routinely save 0.5-3% by splitting across multiple DEXs. There\'s no downside — if Uniswap has the best price, the aggregator routes through Uniswap.' },
           ].map((faq, i) => (
             <div key={i} style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#e6edf3', marginBottom: 8 }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

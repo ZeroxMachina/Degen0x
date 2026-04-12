@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,10 +10,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Green & Sustainable Crypto (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top environmentally sustainable cryptocurrencies in ${CURRENT_YEAR}. Energy-efficient blockchains and carbon-focused crypto projects.`,
-};
+  alternates: { canonical: "/investing/best/green-crypto" }};
 
 const products = [
-  { name: "Ethereum (ETH)", slug: "ethereum", rating: 4.8, description: "Since transitioning to proof-of-stake in September 2022, Ethereum reduced its energy consumption by over 99.95%. The most impactful green transition in crypto history.", pros: ["99.95% energy reduction after The Merge", "Largest ecosystem on proof-of-stake", "Proven environmental commitment"], cons: ["Previously proof-of-work history", "Validator hardware still consumes some energy", "Indirect energy use from L2 infrastructure"], bestFor: "Sustainable smart contract platform investment", affiliateUrl: "#", category: "investing" },
+  { name: "Ethereum (ETH)", slug: "ethereum", rating: 4.8, description: "Since transitioning to proof-of-stake in September 2022, Ethereum reduced its energy consumption by over 99.95%. The most impactful green transition in crypto", pros: ["99.95% energy reduction after The Merge", "Largest ecosystem on proof-of-stake", "Proven environmental commitment"], cons: ["Previously proof-of-work history", "Validator hardware still consumes some energy", "Indirect energy use from L2 infrastructure"], bestFor: "Sustainable smart contract platform investment", affiliateUrl: "#", category: "investing" },
   { name: "Algorand (ALGO)", slug: "algorand", rating: 4.3, description: "Carbon-negative blockchain that offsets more carbon than its network produces. Pure proof-of-stake with minimal energy requirements and commitment to sustainability.", pros: ["Carbon-negative operations", "Extremely low energy per transaction", "Partnership with ClimateTrade"], cons: ["Smaller ecosystem", "Lower community engagement", "Foundation token sales concerns"], bestFor: "Carbon-negative blockchain investment", affiliateUrl: "#", category: "investing" },
   { name: "Cardano (ADA)", slug: "cardano", rating: 4.2, description: "Energy-efficient proof-of-stake blockchain consuming a fraction of Bitcoin's energy. Academic approach to sustainability with research-driven development.", pros: ["Highly energy-efficient PoS consensus", "Academic sustainability research", "Growing DeFi ecosystem"], cons: ["Slower development velocity", "Smaller ecosystem than Ethereum", "Competition from other green chains"], bestFor: "Research-driven sustainable blockchain", affiliateUrl: "#", category: "investing" },
   { name: "Hedera (HBAR)", slug: "hedera", rating: 4.1, description: "Hashgraph-based network with extremely low energy consumption per transaction. Carbon-negative through purchased offsets with ESG-focused corporate governance council.", pros: ["Ultra-low energy per transaction", "Corporate governance with ESG focus", "Carbon offset commitments"], cons: ["Centralized governance model", "Lower community engagement", "Complex technology differentiation"], bestFor: "Enterprise-grade sustainable distributed ledger", affiliateUrl: "#", category: "investing" },
@@ -28,7 +29,14 @@ const faqs = [
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Green Crypto" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="investing"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investing", href: "/investing" }, { label: "Best Green Crypto" }]} />
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">Best Green &amp; Sustainable Crypto ({CURRENT_YEAR})</h1>
@@ -56,6 +64,57 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/green Crypto", "description": "Since transitioning to proof-of-stake in September 2022, Ethereum reduced its energy consumption by over 99.95%. The most impactful green transition in crypto", "url": "https://degen0x.com/investing/best/green-crypto"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

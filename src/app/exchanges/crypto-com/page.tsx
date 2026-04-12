@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
   title: "Crypto.com Review 2026: Debit Card, Fees, Features & More",
   description:
     "Complete Crypto.com review covering Visa debit card rewards, trading platform, staking, and all-in-one crypto features. Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/crypto-com" }};
 
 export default function CryptoComReview() {
   return (

@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Technical Indicators 2026: RSI, MACD, Bollinger Bands Guide | degen0x',
-  description: 'Master crypto technical analysis. Learn RSI, MACD, Bollinger Bands, OBV, Fibonacci retracement & Volume Profile. Compare indicators, TradingView setup & proven strategies.',
+  title: "Best Crypto Technical Indicators 2026: RSI, MACD, Bollinger",
+  description: "Master crypto technical analysis. Learn RSI, MACD, Bollinger Bands, OBV, Fibonacci retracement & Volume Profile. Compare indicators, TradingView setup & proven",
   keywords: ['RSI indicator', 'MACD crypto', 'Bollinger Bands', 'technical indicators', 'crypto trading', 'Fibonacci retracement', 'OBV', 'Volume Profile', 'technical analysis'],
   openGraph: {
     type: 'article',
     title: 'Best Crypto Technical Indicators 2026: RSI, MACD, Bollinger Bands Guide',
-    description: 'Master crypto technical analysis. Learn RSI, MACD, Bollinger Bands, OBV, Fibonacci retracement & Volume Profile. Compare indicators, TradingView setup & proven strategies.',
+    description: "Master crypto technical analysis. Learn RSI, MACD, Bollinger Bands, OBV, Fibonacci retracement & Volume Profile. Compare indicators, TradingView setup & proven",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/trading/best-crypto-technical-indicators',

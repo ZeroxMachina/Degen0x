@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import CryptoGlossaryClient from './CryptoGlossaryClient';
 
 export const metadata: Metadata = {
-  title: 'Crypto Glossary | degen0x - Complete Cryptocurrency Terms Dictionary',
-  description:
-    'Comprehensive glossary of 200+ cryptocurrency and blockchain terms. Learn about Bitcoin, Ethereum, DeFi, NFTs, trading, and security concepts with real-world examples and related terms.',
+  title: "Crypto Glossary - Complete Cryptocurrency Terms Dictionary",
+  description: "Comprehensive glossary of 200+ cryptocurrency and blockchain terms. Learn about Bitcoin, Ethereum, DeFi, NFTs, trading, and security concepts with real-world",
   keywords: [
     'crypto glossary',
     'cryptocurrency terms',

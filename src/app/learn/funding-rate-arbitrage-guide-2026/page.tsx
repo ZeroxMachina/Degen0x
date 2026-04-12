@@ -454,10 +454,10 @@ export default function FundingRateArbitrageGuide() {
                 }}
               >
                 <h3 style={{ color: S.cyan, fontSize: 15, fontWeight: 600, marginBottom: 8 }}>
-                  {faq.q}
+                  {faq.question}
                 </h3>
                 <p style={{ color: S.text, fontSize: 14, lineHeight: 1.5 }}>
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}

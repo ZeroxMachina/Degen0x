@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Privacy Coins & Zero-Knowledge Proofs 2026: Monero, Zcash & zk-SNARKs | degen0x',
+  title: "Privacy Coins & Zero-Knowledge Proofs 2026: Monero, Zcash &",
   description: 'Complete privacy coins guide 2026. Learn Monero, Zcash, zero-knowledge proofs, zk-SNARKs vs zk-STARKs, privacy pools, and compliant privacy in DeFi.',
   keywords: ['privacy coins', 'Monero', 'Zcash', 'zero-knowledge proofs', 'zk-SNARKs', 'zk-STARKs', 'privacy pools', 'Tornado Cash', 'PIVX', 'Secret Network', 'financial privacy', 'crypto privacy 2026'],
   openGraph: {

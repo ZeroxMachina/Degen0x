@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Best NFT Creation Courses 2026: Art, Minting, Smart Contracts, Marketing',
-  description: 'Complete NFT creation guide: art design, smart contracts (ERC721), minting on Ethereum/Solana, OpenSea listing, community building, marketing strategies. Beginner to professional.',
+  title: "Best NFT Creation Courses 2026: Art, Minting, Smart",
+  description: "Complete NFT creation guide: art design, smart contracts (ERC721), minting on Ethereum/Solana, OpenSea listing, community building, marketing strategies.",
   keywords: ['NFT course', 'NFT creation', 'NFT minting', 'smart contracts', 'ERC721', 'OpenSea', 'digital art', 'blockchain art'],
   openGraph: {
     type: 'article',
@@ -401,6 +401,56 @@ export default function NFTCreationCourseExpanded() {
 
         <div style={{ ...infoBoxStyle, marginTop: 40, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> NFT creation involves financial and reputational risk. 95% of projects fail. Never invest capital you can&apos;t afford to lose. Treat as creative hobby, not guaranteed income.
+        </div>
+      </div>
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
         </div>
       </div>
     </article>

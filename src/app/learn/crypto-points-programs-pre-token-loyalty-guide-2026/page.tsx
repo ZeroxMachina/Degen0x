@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Points Programs Guide 2026 — Pre-Token Loyalty & Airdrop Farming | degen0x',
+  title: "Crypto Points Programs Guide 2026 — Pre-Token Loyalty &",
   description:
     'Master crypto points programs, pre-token loyalty systems, and airdrop farming strategies. Learn about points tracking, Sybil detection, and regulatory risks.',
   keywords:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     publishedTime: '2026-04-02T00:00:00Z',
-    title: 'Crypto Points Programs Guide 2026 — Pre-Token Loyalty & Airdrop Farming | degen0x',
+    title: "Crypto Points Programs Guide 2026 — Pre-Token Loyalty &",
     description:
       'Master crypto points programs, pre-token loyalty systems, and airdrop farming strategies. Learn about points tracking, Sybil detection, and regulatory risks.',
     images: [{

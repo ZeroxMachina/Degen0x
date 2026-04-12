@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Aerodrome Finance Guide 2026 — Base Chain DEX & ve(3,3) | degen0x",
+  title: "Aerodrome Finance Guide 2026 — Base Chain DEX & ve(3,3)",
   description: "Complete guide to Aerodrome Finance: Base's dominant DEX with $500M+ TVL, ve(3,3) tokenomics, AERO token, MetaDEX03 upgrade, Velodrome merger into Aero, and Q2 2026 multi-chain expansion.",
   keywords: ["Aerodrome Finance", "AERO token", "Base DEX", "ve(3,3)", "Velodrome", "MetaDEX", "Aero", "Dromos Labs", "AMM", "liquidity", "veAERO", "Base chain", "Coinbase"],
   openGraph: {
@@ -503,8 +503,8 @@ export default function AerodromeFinanceGuide() {
             { q: "Is AERO a good investment?", a: "AERO generates real revenue ($6.5M+ monthly fees) and has a clear expansion roadmap. However, it has inflationary emissions, cross-chain execution risk, and faces Uniswap V4 competition. This guide is educational — always DYOR." },
           ].map((faq, i) => (
             <div key={i} style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '16px' }}>
-              <h3 style={{ fontSize: '15px', fontWeight: '700', color: '#58a6ff', marginBottom: '10px' }}>{faq.q}</h3>
-              <p style={{ color: '#c9d1d9', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{faq.a}</p>
+              <h3 style={{ fontSize: '15px', fontWeight: '700', color: '#58a6ff', marginBottom: '10px' }}>{faq.question}</h3>
+              <p style={{ color: '#c9d1d9', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{faq.answer}</p>
             </div>
           ))}
         </section>

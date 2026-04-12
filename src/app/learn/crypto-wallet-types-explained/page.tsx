@@ -4,13 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Wallet Types Explained 2026: Hot, Cold, Smart, MPC | degen0x',
-  description: 'Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security, convenience, costs.',
+  title: "Crypto Wallet Types Explained 2026: Hot, Cold, Smart, MPC",
+  description: "Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security,",
   keywords: ['crypto wallet types', 'hot wallet', 'cold wallet', 'hardware wallet', 'MetaMask', 'Ledger', 'Phantom', 'Safe wallet', 'smart contract wallet', 'MPC wallet'],
   openGraph: {
     type: 'article',
     title: 'Crypto Wallet Types Explained 2026: Hot, Cold, Smart, MPC',
-    description: 'Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security, convenience, costs.',
+    description: "Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security,",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/learn/crypto-wallet-types-explained',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Wallet Types Explained 2026: Hot, Cold, Smart, MPC',
-    description: 'Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security, convenience, costs.',
+    description: "Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security,",
     image: 'https://degen0x.com/og-learn.svg',
   },
   alternates: {
@@ -36,7 +36,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Crypto Wallet Types Explained 2026: Hot, Cold, Smart, MPC',
-  description: 'Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security, convenience, costs.',
+  description: "Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security,",
   image: 'https://degen0x.com/og-learn.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

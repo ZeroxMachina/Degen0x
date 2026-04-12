@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from '@/components/Breadcrumb';
@@ -20,7 +21,7 @@ const S = {
 };
 
 export const metadata: Metadata = {
-  title: "DeFi Insurance Guide 2026 — Protect Against Hacks & Exploits | degen0x",
+  title: "DeFi Insurance Guide 2026 — Protect Against Hacks & Exploits",
   description: "Learn how DeFi insurance works. Compare Nexus Mutual, OpenCover, Neptune Mutual & InsurAce. Protect your crypto from smart contract hacks, depegs & exploits.",
   keywords: ["defi insurance", "crypto insurance", "nexus mutual", "opencover", "neptune mutual", "smart contract insurance", "defi cover", "defi hack protection", "stablecoin depeg insurance 2026"],
   openGraph: {
@@ -37,7 +38,8 @@ export const metadata: Metadata = {
     title: "DeFi Insurance Guide 2026",
     description: "How to protect your crypto from hacks, depegs & exploits. Compare Nexus Mutual, OpenCover, Neptune Mutual.",
   },
-};
+
+  alternates: { canonical: "/learn/defi-insurance-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "DeFi Insurance Guide 2026 — How to Protect Your Crypto from Hacks, Exploits & Depegs",
@@ -255,6 +257,56 @@ export default function DeFiInsuranceGuide() {
         />
       </div>
       <BackToTop />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

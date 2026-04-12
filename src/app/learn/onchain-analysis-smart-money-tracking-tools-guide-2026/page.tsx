@@ -4,9 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Onchain Analysis Guide 2026 — Smart Money Tracking Tools & Strategies | degen0x',
-  description:
-    'Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for crypto trading.',
+  title: "Onchain Analysis Guide 2026 — Smart Money Tracking Tools &",
+  description: "Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for",
   keywords: [
     'onchain analysis',
     'smart money tracking',
@@ -21,8 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Onchain Analysis Guide 2026 — Smart Money Tracking Tools & Strategies',
-    description:
-      'Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for crypto trading.',
+    description: "Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for",
     type: 'article',
     publishedTime: '2026-04-10T00:00:00Z',
     authors: ['degen0x'],
@@ -36,9 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Onchain Analysis Guide 2026 — Smart Money Tracking Tools & Strategies | degen0x',
-    description:
-      'Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for crypto trading.',
+    title: "Onchain Analysis Guide 2026 — Smart Money Tracking Tools &",
+    description: "Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for",
     images: ['https://degen0x.com/og-onchain-analysis-smart-money-tracking-2026.svg'],
   },
   alternates: {
@@ -50,8 +47,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Onchain Analysis Guide 2026 — Smart Money Tracking Tools & Strategies',
-  description:
-    'Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for crypto trading.',
+  description: "Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for",
   image: 'https://degen0x.com/og-onchain-analysis-smart-money-tracking-2026.svg',
   datePublished: '2026-04-10T00:00:00Z',
   author: {

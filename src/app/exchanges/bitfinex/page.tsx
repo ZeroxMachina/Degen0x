@@ -1,14 +1,16 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = exchanges.find((e) => e.slug === "bitfinex")!;
 
 export const metadata: Metadata = {
-  title: "Bitfinex Review 2026: Trading Platform, Fees, Features & Security",
+  title: "Bitfinex Review 2026: Trading Platform, Fees, Features &",
   description:
     "In-depth Bitfinex review covering professional trading platform, margin trading, lending, fees, and security. Is Bitfinex right for you? Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/bitfinex" }};
 
 export default function BitfinexReview() {
   return (

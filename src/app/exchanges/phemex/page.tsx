@@ -1,14 +1,16 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
 const product = exchanges.find((e) => e.slug === "phemex")!;
 
 export const metadata: Metadata = {
-  title: "Phemex Review 2026: Derivatives Trading, Zero Fees, Pros & Cons",
+  title: "Phemex Review 2026: Derivatives Trading, Zero Fees, Pros &",
   description:
     "Complete Phemex review covering zero-fee trading, derivatives platform, fast execution, and security. Is Phemex right for you? Updated March 2026.",
-};
+  alternates: { canonical: "/exchanges/phemex" }};
 
 export default function PhemexReview() {
   return (

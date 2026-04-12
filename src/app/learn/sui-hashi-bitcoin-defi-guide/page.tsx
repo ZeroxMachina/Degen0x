@@ -7,8 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on Sui | degen0x',
-  description: 'Comprehensive guide to Hashi protocol on Sui blockchain. Native Bitcoin DeFi without wrappers. BTC lending, borrowing, yield generation with institutional backing.',
+  title: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on",
+  description: "Comprehensive guide to Hashi protocol on Sui blockchain. Native Bitcoin DeFi without wrappers. BTC lending, borrowing, yield generation with institutional",
   keywords: [
     'sui hashi protocol',
     'bitcoin defi 2026',
@@ -39,7 +39,8 @@ export const metadata: Metadata = {
     description: 'Master native Bitcoin DeFi on Sui with Hashi protocol',
     images: ['https://degen0x.com/og-sui-hashi-bitcoin-defi-guide.svg'],
   },
-};
+
+  alternates: { canonical: "/learn/sui-hashi-bitcoin-defi-guide" }};
 
 const articleSchema = generateArticleSchema({
   headline: 'Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on Sui',
@@ -1054,7 +1055,57 @@ export default function HashiBitcoinDefiGuide() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
     </>
   );
 }

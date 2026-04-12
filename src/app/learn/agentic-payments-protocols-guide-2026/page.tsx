@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Agentic Payments Protocols Compared 2026: x402 vs ACP vs AP2 vs ERC-8183 | degen0x",
+  title: "Agentic Payments Protocols Compared 2026: x402 vs ACP vs",
   description:
     "Compare the 5 major agentic payment protocols shaping AI agent commerce in 2026. x402, ACP, AP2, ERC-8183, and Open Wallet Standard explained.",
   keywords: [
@@ -47,7 +47,8 @@ export const metadata: Metadata = {
       "Compare x402, ACP, AP2, ERC-8183, and Open Wallet Standard for AI agent payments.",
     images: [`${SITE_URL}/og-agentic-payments-protocols-guide-2026.png`],
   },
-};
+
+  alternates: { canonical: "/learn/agentic-payments-protocols-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "Agentic Payments Protocols Compared 2026: x402 vs ACP vs AP2 vs ERC-8183",

@@ -6,8 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'Crypto Options & On-Chain Derivatives 2026',
-  description:
-    'Master crypto options and on-chain derivatives in 2026. Learn about calls, puts, Greeks, AMM-based protocols like Aevo, Derive, Hegic, and Premia. Compare CeFi vs DeFi options.',
+  description: "Master crypto options and on-chain derivatives in 2026. Learn about calls, puts, Greeks, AMM-based protocols like Aevo, Derive, Hegic, and Premia. Compare CeFi",
   keywords: [
     'crypto options',
     'on-chain derivatives',

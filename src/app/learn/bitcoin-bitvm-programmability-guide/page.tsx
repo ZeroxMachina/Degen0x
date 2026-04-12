@@ -8,16 +8,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Bitcoin BitVM & Programmability Guide 2026 — Smart Contracts on BTC | degen0x",
-  description:
-    "Explore how BitVM enables smart contracts on Bitcoin without protocol changes. Learn about BitVM2, Citrea, Bitlayer, BOB Network, and the Bitcoin programmability revolution in 2026.",
+  title: "Bitcoin BitVM & Programmability Guide 2026 — Smart",
+  description: "Explore how BitVM enables smart contracts on Bitcoin without protocol changes. Learn about BitVM2, Citrea, Bitlayer, BOB Network, and the Bitcoin",
   keywords:
     "BitVM, bitcoin smart contracts, bitcoin programmability, BitVM2, Citrea, Bitlayer, BOB Network, bitcoin DeFi, BTC rollups, bitcoin layer 2 2026",
   openGraph: {
     type: "article",
-    title: "Bitcoin BitVM & Programmability Guide 2026 — Smart Contracts on BTC | degen0x",
-    description:
-      "Explore how BitVM enables smart contracts on Bitcoin without protocol changes. Learn about BitVM2, Citrea, Bitlayer, BOB Network, and the Bitcoin programmability revolution in 2026.",
+    title: "Bitcoin BitVM & Programmability Guide 2026 — Smart",
+    description: "Explore how BitVM enables smart contracts on Bitcoin without protocol changes. Learn about BitVM2, Citrea, Bitlayer, BOB Network, and the Bitcoin",
     publishedTime: "2026-03-24T00:00:00Z",
     authors: ["degen0x"],
     images: [
@@ -34,11 +32,12 @@ export const metadata: Metadata = {
     title: "Bitcoin BitVM & Programmability Guide 2026 | degen0x",
     description: "How BitVM enables smart contracts on Bitcoin without protocol changes.",
   },
-};
+
+  alternates: { canonical: "/learn/bitcoin-bitvm-programmability-guide" }};
 
 const articleSchema = generateArticleSchema({
   title: "Bitcoin BitVM & Programmability Guide 2026 — Smart Contracts on BTC",
-  description: "Explore how BitVM enables smart contracts on Bitcoin without protocol changes. Learn about BitVM2, Citrea, Bitlayer, BOB Network, and the Bitcoin programmability revolution in 2026.",
+  description: "Explore how BitVM enables smart contracts on Bitcoin without protocol changes. Learn about BitVM2, Citrea, Bitlayer, BOB Network, and the Bitcoin",
   url: "https://degen0x.com/learn/bitcoin-bitvm-programmability-guide",
   datePublished: "2026-03-24T00:00:00Z",
   dateModified: "2026-03-24T00:00:00Z",

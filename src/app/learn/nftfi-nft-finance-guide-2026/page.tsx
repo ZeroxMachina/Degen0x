@@ -8,11 +8,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "NFTFi Guide 2026: NFT Lending, Fractionalization & DeFi for NFTs | degen0x",
-  description: "Complete guide to NFT finance (NFTFi) in 2026. Learn about NFT lending on Blend and BendDAO, fractionalization, perpetuals, and how to unlock liquidity from your NFTs.",
+  title: "NFTFi Guide 2026: NFT Lending, Fractionalization & DeFi for",
+  description: "Complete guide to NFT finance (NFTFi) in 2026. Learn about NFT lending on Blend and BendDAO, fractionalization, perpetuals, and how to unlock liquidity from",
   keywords: ["NFTFi", "NFT lending", "NFT finance", "Blend Blur", "BendDAO", "NFT fractionalization", "NFT collateral", "NFT DeFi 2026"],
   openGraph: {
-    title: "NFTFi Guide 2026: NFT Lending, Fractionalization & DeFi for NFTs | degen0x",
+    title: "NFTFi Guide 2026: NFT Lending, Fractionalization & DeFi for",
     description: "Unlock liquidity from your NFTs. The complete guide to NFT lending, fractionalization, and DeFi-meets-NFT protocols.",
     url: "https://degen0x.com/learn/nftfi-nft-finance-guide-2026",
     type: "article",
@@ -33,12 +33,13 @@ export const metadata: Metadata = {
     title: "NFTFi Guide 2026: NFT Lending & DeFi for NFTs",
     description: "Unlock liquidity from your NFTs. Complete guide to NFT finance protocols.",
   },
-};
+
+  alternates: { canonical: "/learn/nftfi-nft-finance-guide-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "NFTFi Guide 2026: NFT Lending, Fractionalization & DeFi for NFTs",
-  description: "Complete guide to NFT finance (NFTFi) in 2026. Learn about NFT lending on Blend and BendDAO, fractionalization, perpetuals, and how to unlock liquidity from your NFTs.",
+  description: "Complete guide to NFT finance (NFTFi) in 2026. Learn about NFT lending on Blend and BendDAO, fractionalization, perpetuals, and how to unlock liquidity from",
   url: "https://degen0x.com/learn/nftfi-nft-finance-guide-2026",
   datePublished: "2026-03-23T00:00:00Z",
   dateModified: "2026-03-23T00:00:00Z",
@@ -386,6 +387,56 @@ export default function NFTFiGuide() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

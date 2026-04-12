@@ -7,8 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Crypto ETF Options Trading Guide 2026: Regulatory Changes, Strategies & ETFs",
-  description: "Master crypto ETF options trading in 2026. Learn position limit removal, key ETFs (IBIT, ETHA, FBTC), covered calls, protective puts, FLEX options, and institutional access strategies.",
+  title: "Crypto ETF Options Trading Guide 2026: Regulatory Changes,",
+  description: "Master crypto ETF options trading in 2026. Learn position limit removal, key ETFs (IBIT, ETHA, FBTC), covered calls, protective puts, FLEX options, and",
   keywords: "crypto ETF options, IBIT options, ETHA options, covered calls, protective puts, FLEX options, options trading 2026, crypto options strategies",
   openGraph: {
     title: "Crypto ETF Options Trading Guide 2026: Complete Strategy Guide",
@@ -30,7 +30,8 @@ export const metadata: Metadata = {
     description: "Master crypto ETF options trading. Learn strategies, key ETFs, and regulatory changes.",
     images: ["https://degen0x.com/og-crypto-etf-options-trading-guide-2026.png"],
   },
-};
+
+  alternates: { canonical: "/learn/crypto-etf-options-trading-guide-2026" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },

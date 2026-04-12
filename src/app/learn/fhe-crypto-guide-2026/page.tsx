@@ -8,8 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "FHE Crypto Guide 2026: Fully Homomorphic Encryption Explained | degen0x",
-  description: "Fully Homomorphic Encryption lets blockchains compute on encrypted data without decrypting it. Complete 2026 guide to Zama, Fhenix, Inco, confidential DeFi, and FHE vs ZK proofs.",
+  title: "FHE Crypto Guide 2026: Fully Homomorphic Encryption",
+  description: "Fully Homomorphic Encryption lets blockchains compute on encrypted data without decrypting it. Complete 2026 guide to Zama, Fhenix, Inco, confidential DeFi,",
   keywords: [
     "fully homomorphic encryption crypto",
     "FHE blockchain guide 2026",
@@ -44,7 +44,8 @@ export const metadata: Metadata = {
     description: "Fully Homomorphic Encryption lets blockchains compute on encrypted data without decrypting it. Complete 2026 guide to Zama, Fhenix, confidential DeFi, and more.",
     images: ["https://degen0x.com/og-fhe-crypto-guide-2026.png"],
   },
-};
+
+  alternates: { canonical: "/learn/fhe-crypto-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "FHE Crypto Guide 2026: Fully Homomorphic Encryption Explained",

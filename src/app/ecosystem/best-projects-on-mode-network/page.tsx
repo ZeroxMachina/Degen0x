@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: "Best Mode Network Projects 2026: Kim Exchange, Ionic Protocol, SupSwap | degen0x",
+  title: "Best Mode Network Projects 2026: Kim Exchange, Ionic",
   description: "Top Mode Network ecosystem: Kim Exchange DEX, Ionic Protocol lending, SupSwap. OP Stack L2, sequencer fee sharing with Optimism. Growing DeFi ecosystem.",
   keywords: ["Mode Network", "Kim Exchange", "Ionic Protocol", "SupSwap", "OP Stack", "sequencer fee sharing"],
   openGraph: {

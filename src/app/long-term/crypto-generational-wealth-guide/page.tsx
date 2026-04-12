@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty Building',
+  title: "Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty",
   description: 'Build multi-generational crypto wealth: BTC accumulation ($0.01→$100K history), trust structures, family office setup, estate planning, tax-efficient transfer.',
   keywords: ['generational wealth', 'bitcoin dynasty', 'family office', 'estate planning', 'crypto inheritance'],
   openGraph: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty Building',
+    title: "Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty",
     description: 'Build multi-generational crypto wealth: BTC accumulation ($0.01→$100K history), trust structures, family office setup, estate planning, tax-efficient transfer.',
     image: 'https://degen0x.com/og-default.svg',
   }
@@ -46,13 +46,13 @@ const structuredData = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty Building',
+    title: "Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty",
     description: 'Build multi-generational crypto wealth: BTC accumulation ($0.01→$100K history), trust structures, family office setup, estate planning, tax-efficient transfer.',
     image: 'https://degen0x.com/og-default.svg',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty Building',
+    title: "Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty",
     description: 'Build multi-generational crypto wealth: BTC accumulation ($0.01→$100K history), trust structures, family office setup, estate planning, tax-efficient transfer.',
     image: 'https://degen0x.com/og-default.svg',
   }
@@ -411,6 +411,56 @@ export default function GenerationalWealthGuide() {
           </ul>
         </nav>
 
-</article>
+      <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }

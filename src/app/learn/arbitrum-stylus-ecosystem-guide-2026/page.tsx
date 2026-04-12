@@ -6,8 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Arbitrum Ecosystem & Stylus Guide 2026 — L2 DeFi Leader | degen0x',
-  description: 'Complete guide to Arbitrum in 2026. Learn about Stylus (Rust/C++ smart contracts), GMX, Camelot, Pendle, Orbit chains, and why Arbitrum leads Ethereum L2 DeFi with $14B+ TVL.',
+  title: "Arbitrum Ecosystem & Stylus Guide 2026 — L2 DeFi Leader",
+  description: "Complete guide to Arbitrum in 2026. Learn about Stylus (Rust/C++ smart contracts), GMX, Camelot, Pendle, Orbit chains, and why Arbitrum leads Ethereum L2 DeFi",
   keywords: ['Arbitrum ecosystem', 'Arbitrum Stylus', 'Arbitrum TVL 2026', 'GMX Arbitrum', 'Camelot DEX', 'Pendle Arbitrum', 'Orbit chains', 'Arbitrum DeFi', 'Rust smart contracts', 'Nitro stack'],
   openGraph: {
     type: 'article',

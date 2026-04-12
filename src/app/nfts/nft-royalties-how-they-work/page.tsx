@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools | degen0x',
-  description: 'Complete guide to NFT royalties. Learn EIP-2981 royalty standard, marketplace enforcement (OpenSea vs Blur royalty wars), creator earnings dashboards, and on-chain royalty enforcement with ERC-721C and Manifold.',
+  title: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools",
+  description: "Complete guide to NFT royalties. Learn EIP-2981 royalty standard, marketplace enforcement (OpenSea vs Blur royalty wars), creator earnings dashboards, and",
   keywords: ['NFT royalties', 'EIP-2981', 'creator earnings', 'secondary sales', 'OpenSea royalties', 'Blur royalties', 'on-chain royalties', 'ERC-721C', 'Manifold royalty', 'NFT creator revenue'],
   openGraph: {
     type: 'article',

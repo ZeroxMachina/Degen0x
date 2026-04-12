@@ -8,8 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "DeFi Options Trading Guide 2026: Derive, Stryke & Panoptic",
-  description:
-    "Learn DeFi options trading in 2026. Compare Derive (Lyra), Stryke (Dopex), and Panoptic — how on-chain options work, core strategies, platform fees, and risks. Updated March 2026.",
+  description: "Learn DeFi options trading in 2026. Compare Derive (Lyra), Stryke (Dopex), and Panoptic — how on-chain options work, core strategies, platform fees, and risks.",
   openGraph: {
     title: "DeFi Options Trading Guide 2026: Derive, Stryke & Panoptic",
     description:
@@ -35,7 +34,8 @@ export const metadata: Metadata = {
       "Derive vs Stryke vs Panoptic — the full comparison of on-chain options platforms, strategies, and risks.",
     images: [`${SITE_URL}/og-defi-options-guide.png`],
   },
-};
+
+  alternates: { canonical: "/learn/defi-options-trading-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
   title: "DeFi Options Trading Guide 2026: Derive, Stryke & Panoptic Explained",

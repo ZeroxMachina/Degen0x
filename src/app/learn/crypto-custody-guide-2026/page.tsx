@@ -10,8 +10,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 // Metadata configuration
 export const metadata: Metadata = {
-  title: "Crypto Custody Guide 2026: MPC, Multisig & Cold Storage | degen0x",
-  description: "Compare MPC wallets, multisig, and cold storage for crypto custody. Learn which solution fits your needs — from retail self-custody to institutional-grade protection.",
+  title: "Crypto Custody Guide 2026: MPC, Multisig & Cold Storage",
+  description: "Compare MPC wallets, multisig, and cold storage for crypto custody. Learn which solution fits your needs — from retail self-custody to institutional-grade",
   keywords: [
     "crypto custody",
     "MPC wallet",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     "Coinbase Custody",
   ],
   openGraph: {
-    title: "Crypto Custody Guide 2026: MPC, Multisig & Cold Storage | degen0x",
-    description: "Compare MPC wallets, multisig, and cold storage for crypto custody. Learn which solution fits your needs — from retail self-custody to institutional-grade protection.",
+    title: "Crypto Custody Guide 2026: MPC, Multisig & Cold Storage",
+    description: "Compare MPC wallets, multisig, and cold storage for crypto custody. Learn which solution fits your needs — from retail self-custody to institutional-grade",
     url: `${SITE_URL}/learn/crypto-custody-guide-2026`,
     type: "article",
     authors: ["degen0x"],
@@ -33,11 +33,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Crypto Custody Guide 2026: MPC, Multisig & Cold Storage | degen0x",
+    title: "Crypto Custody Guide 2026: MPC, Multisig & Cold Storage",
     description: "Compare MPC wallets, multisig, and cold storage for crypto custody.",
     images: [`${SITE_URL}/og-crypto-custody-guide-2026.svg`],
   },
-};
+
+  alternates: { canonical: "/learn/crypto-custody-guide-2026" }};
 
 // Breadcrumb items
 const breadcrumbItems = [

@@ -7,8 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Index Funds Guide 2026 — DeFi Indexes, ETFs & Onchain Baskets | degen0x',
-  description: 'Complete guide to crypto index funds: DeFi indexes (DPI, MVI), crypto ETFs, and onchain basket investing. Compare DeFi Pulse Index, Bitwise, Hashdex, and more. 13 min read.',
+  title: "Crypto Index Funds Guide 2026 — DeFi Indexes, ETFs &",
+  description: "Complete guide to crypto index funds: DeFi indexes (DPI, MVI), crypto ETFs, and onchain basket investing. Compare DeFi Pulse Index, Bitwise, Hashdex, and more.",
   keywords: ['crypto index funds', 'DeFi index', 'crypto ETF', 'DPI token', 'basket investing', 'index investing crypto', 'diversified crypto portfolio'],
   openGraph: {
     title: 'Crypto Index Funds Guide 2026: DeFi Indexes, ETFs & Onchain Baskets',

@@ -447,10 +447,10 @@ export default function BestColdWalletUnder100() {
             {faqs.map((faq, idx) => (
               <div key={idx} style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px', padding: '20px' }}>
                 <h3 style={{ fontSize: '16px', fontWeight: '700', margin: '0 0 12px 0', color: '#58a6ff' }}>
-                  {idx + 1}. {faq.q}
+                  {idx + 1}. {faq.question}
                 </h3>
                 <p style={{ fontSize: '15px', lineHeight: '1.6', margin: '0', color: '#e6edf3' }}>
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProductCard from "@/components/ProductCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -9,15 +11,14 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Cryptocurrencies for Long-Term Holding ${CURRENT_YEAR} - Top HODL Picks`,
   description: `Discover the best cryptocurrencies to hold long-term in ${CURRENT_YEAR}. Expert analysis of Bitcoin, Ethereum, and top altcoins with strong fundamentals for multi-year holding strategies.`,
-};
+  alternates: { canonical: "/long-term/best/hodl-coins" }};
 
 const products: Product[] = [
   {
     name: "Bitcoin (BTC)",
     slug: "bitcoin",
     rating: 4.9,
-    description:
-      "Bitcoin remains the undisputed king for long-term crypto holding. As the first and largest cryptocurrency with a fixed supply of 21 million coins, Bitcoin has the strongest network effects, deepest liquidity, and broadest institutional adoption of any digital asset. The approval of spot Bitcoin ETFs and growing sovereign adoption cement its position as digital gold. Its proof-of-work security model has operated flawlessly for over 15 years.",
+    description: "Bitcoin remains the undisputed king for long-term crypto holding. As the first and largest cryptocurrency with a fixed supply of 21 million coins, Bitcoin has",
     pros: ["Fixed 21M supply creates scarcity", "Largest market cap and liquidity", "Spot ETF approved for institutional access", "15+ year track record of security", "Growing sovereign and corporate adoption"],
     cons: ["High volatility despite maturity", "No native yield without third-party risk", "Energy-intensive proof of work", "Transaction speed limitations on base layer"],
     bestFor: "Core long-term portfolio holding",
@@ -102,7 +103,14 @@ const faqs: FAQ[] = [
 export default function HodlCoinsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "HODL Coins", href: "/long-term/best/hodl-coins" }]} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="long-term"
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "HODL Coins", href: "/long-term/best/hodl-coins" }]} />
       <AffiliateDisclosure />
 
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Cryptocurrencies for Long-Term Holding ({CURRENT_YEAR})</h1>
@@ -161,6 +169,57 @@ export default function HodlCoinsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Network Effects (25%)", "description": "Bitcoin remains the undisputed king for long-term crypto holding. As the first and largest cryptocurrency with a fixed supply of 21 million coins, Bitcoin has", "url": "https://degen0x.com/long-term/best/hodl-coins"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

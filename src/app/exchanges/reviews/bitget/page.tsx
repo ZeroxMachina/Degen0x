@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
@@ -6,9 +8,8 @@ const product = exchanges.find((e) => e.slug === "bitget")!;
 
 export const metadata: Metadata = {
   title: "Bitget Review 2026: Fees, Features, Pros & Cons",
-  description:
-    "Our comprehensive Bitget review covers copy trading, derivatives fees, the Protection Fund, and 600+ supported coins. Is Bitget right for social traders? Updated March 2026.",
-};
+  description: "Our comprehensive Bitget review covers copy trading, derivatives fees, the Protection Fund, and 600+ supported coins. Is Bitget right for social traders?",
+  alternates: { canonical: "/exchanges/reviews/bitget" }};
 
 export default function BitgetReview() {
   return (

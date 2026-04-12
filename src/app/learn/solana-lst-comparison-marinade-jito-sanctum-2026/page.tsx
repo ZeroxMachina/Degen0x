@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Marinade vs Jito vs Sanctum: Solana LST Comparison 2026",
-  description: "Compare Marinade mSOL, Jito JitoSOL, and Sanctum INF head-to-head. APY, TVL, validators, fees, and strategies for choosing the best Solana liquid staking token in 2026.",
+  description: "Compare Marinade mSOL, Jito JitoSOL, and Sanctum INF head-to-head. APY, TVL, validators, fees, and strategies for choosing the best Solana liquid staking token",
   keywords: ["Marinade", "Jito", "Sanctum", "mSOL", "JitoSOL", "INF", "Solana LST comparison", "liquid staking", "DeFi", "APY"],
   openGraph: {
     title: "Marinade vs Jito vs Sanctum: Solana LST Comparison 2026",
@@ -34,12 +34,13 @@ export const metadata: Metadata = {
     title: "Marinade vs Jito vs Sanctum: Solana LST Comparison 2026",
     description: "Compare mSOL, JitoSOL, and Sanctum INF. Which Solana LST is right for you?",
   },
-};
+
+  alternates: { canonical: "/learn/solana-lst-comparison-marinade-jito-sanctum-2026" }};
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "Marinade vs Jito vs Sanctum: Solana LST Comparison 2026",
-  description: "Compare Marinade mSOL, Jito JitoSOL, and Sanctum INF head-to-head. APY, TVL, validators, fees, and strategies for choosing the best Solana liquid staking token in 2026.",
+  description: "Compare Marinade mSOL, Jito JitoSOL, and Sanctum INF head-to-head. APY, TVL, validators, fees, and strategies for choosing the best Solana liquid staking token",
   url: "https://degen0x.com/learn/solana-lst-comparison-marinade-jito-sanctum-2026",
   datePublished: "2026-03-28T00:00:00Z",
   dateModified: "2026-03-28T00:00:00Z",
@@ -609,6 +610,56 @@ export default function LSTComparison() {
             })
           }}
         />
+            <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }>
+            Compare Projects
+          </Link>
+        </div>
       </div>
+    </div>
   );
 }

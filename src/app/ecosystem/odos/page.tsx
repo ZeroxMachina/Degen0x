@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import OdosClient from "./OdosClient";
 
 export const metadata: Metadata = {
-  title: "Odos: Multi-Input DEX Aggregator Guide 2026 — $30B+ Volume | degen0x",
-  description:
-    "Complete guide to Odos — the first multi-input DEX aggregator with $30B+ volume across 16 chains, zero fees, and 1000+ routing paths per trade. How Odos works, Smart Order Router, risks, and how to swap.",
+  title: "Odos: Multi-Input DEX Aggregator Guide 2026 — $30B+ Volume",
+  description: "Complete guide to Odos — the first multi-input DEX aggregator with $30B+ volume across 16 chains, zero fees, and 1000+ routing paths per trade. How Odos works,",
   keywords: [
     "odos",
     "odos dex aggregator",
@@ -42,7 +43,8 @@ export const metadata: Metadata = {
       "https://degen0x.com/api/og?title=Odos:+Multi-Input+DEX+Aggregator+Guide+2026&category=Ecosystem&type=page",
     ],
   },
-};
+
+  alternates: { canonical: "/ecosystem/odos" }};
 
 export default function OdosPage() {
   return <OdosClient />;

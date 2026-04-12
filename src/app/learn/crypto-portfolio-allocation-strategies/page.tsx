@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Crypto Portfolio Allocation Strategies 2026: Conservative, Moderate, Aggressive Models | degen0x',
-  description: 'Master portfolio allocation: Conservative (70% BTC/ETH, 20% large-cap, 10% stables), Moderate (50/30/20), Aggressive (30/40/30). Learn rebalancing (time-based vs threshold), correlation analysis, barbell strategy, DeFi yield allocation, and portfolio trackers (DeBank, Zapper).',
+  title: "Crypto Portfolio Allocation Strategies 2026: Conservative,",
+  description: "Master portfolio allocation: Conservative (70% BTC/ETH, 20% large-cap, 10% stables), Moderate (50/30/20), Aggressive (30/40/30). Learn rebalancing (time-based",
   keywords: ['portfolio allocation', 'crypto portfolio', 'asset allocation', 'portfolio rebalancing', 'portfolio correlation', 'portfolio tracker', 'DeBank', 'Zapper', 'barbell strategy', 'sharpe ratio'],
   openGraph: {
     type: 'article',

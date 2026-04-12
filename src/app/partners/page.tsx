@@ -424,10 +424,10 @@ export default function PartnersPage() {
               a: "Yes — per FTC and ASA guidelines, always disclose affiliate relationships to your audience.",
             },
           ].map(faq => (
-            <div key={faq.q} className="rounded-xl border border-[var(--color-border)] p-4"
+            <div key={faq.question} className="rounded-xl border border-[var(--color-border)] p-4"
                  style={{ background: "var(--color-surface)" }}>
-              <div className="font-bold text-sm text-[var(--color-text)] mb-1">{faq.q}</div>
-              <div className="text-sm text-[var(--color-text-secondary)]">{faq.a}</div>
+              <div className="font-bold text-sm text-[var(--color-text)] mb-1">{faq.question}</div>
+              <div className="text-sm text-[var(--color-text-secondary)]">{faq.answer}</div>
             </div>
           ))}
         </div>

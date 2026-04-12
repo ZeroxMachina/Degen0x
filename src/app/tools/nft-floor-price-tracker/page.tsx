@@ -5,12 +5,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: 'NFT Floor Price Tracker | degen0x',
-  description: 'Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea analytics. Cross-chain floor tracking.',
+  description: "Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea",
   keywords: ['NFT floor price tracker', 'floor price', 'BAYC', 'NFT collections', 'NFT analytics', 'degen0x'],
   openGraph: {
     type: 'article',
     title: 'NFT Floor Price Tracker | degen0x',
-    description: 'Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea analytics. Cross-chain floor tracking.',
+    description: "Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea",
     publishedTime: '2026-04-10T00:00:00Z',
     modifiedTime: '2026-04-10T00:00:00Z',
     url: 'https://degen0x.com/tools/nft-floor-price-tracker',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'NFT Floor Price Tracker | degen0x',
-    description: 'Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea analytics. Cross-chain floor tracking.',
+    description: "Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea",
     image: 'https://degen0x.com/og-tools.svg',
   },
   alternates: {
@@ -31,7 +31,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'NFT Floor Price Tracker',
-  description: 'Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea analytics. Cross-chain floor tracking.',
+  description: "Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea",
   image: 'https://degen0x.com/og-tools.svg',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',

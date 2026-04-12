@@ -4,8 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: 'Smart Contract Security Audit Guide 2026: Top Firms, Costs & Vulnerabilities | degen0x',
-  description: 'Complete guide to smart contract audits in 2026. Compare top audit firms (OpenZeppelin, Trail of Bits, CertiK, Spearbit, Code4rena), learn common vulnerabilities, understand costs, and evaluate protocol security before depositing.',
+  title: "Smart Contract Security Audit Guide 2026: Top Firms, Costs",
+  description: "Complete guide to smart contract audits in 2026. Compare top audit firms (OpenZeppelin, Trail of Bits, CertiK, Spearbit, Code4rena), learn common",
   keywords: ['smart contract audit', 'contract security', 'OpenZeppelin', 'Trail of Bits', 'CertiK', 'vulnerability audit', 'reentrancy', 'Immunefi bug bounty', 'formal verification', 'degen0x'],
   openGraph: {
     type: 'article',

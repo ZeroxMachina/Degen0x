@@ -14,8 +14,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Crypto Trading Bots Guide 2026 — Grid, DCA & AI | degen0x",
-  description:
-    "Complete guide to crypto trading bots. Learn grid bots, DCA bots, arbitrage bots, and AI-powered trading. Compare Pionex, 3Commas, Bybit, and more with 2026 pricing.",
+  description: "Complete guide to crypto trading bots. Learn grid bots, DCA bots, arbitrage bots, and AI-powered trading. Compare Pionex, 3Commas, Bybit, and more with 2026",
   keywords: [
     "crypto trading bots",
     "best trading bot 2026",
@@ -628,8 +627,8 @@ export default function CryptoTradingBotsGuidePage() {
               },
             ].map((faq, i) => (
               <div key={i} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 10, padding: 18 }}>
-                <div style={{ fontWeight: 700, color: S.text, marginBottom: 10, fontSize: 14 }}>Q: {faq.q}</div>
-                <div style={{ fontSize: 13, color: S.text2, lineHeight: 1.8 }}>A: {faq.a}</div>
+                <div style={{ fontWeight: 700, color: S.text, marginBottom: 10, fontSize: 14 }}>Q: {faq.question}</div>
+                <div style={{ fontSize: 13, color: S.text2, lineHeight: 1.8 }}>A: {faq.answer}</div>
               </div>
             ))}
           </div>
