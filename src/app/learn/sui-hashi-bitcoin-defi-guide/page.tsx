@@ -1044,5 +1044,3 @@ export default function HashiBitcoinDefiGuide() {
     </>
   );
 }
-
-export { metadata };
