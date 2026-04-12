@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Master the Ethereum Pectra upgrade: EIP-7702 smart wallet powers, flexible staking, and blob scaling for Layer 2s.',
     image: 'https://degen0x.com/og-pectra-upgrade.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-pectra-upgrade-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

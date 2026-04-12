@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Build wealth during bears: DCA, yield farming, quality assessment. Historical case studies.',
     image: 'https://degen0x.com/og-bear.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-bear-market-strategy',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -499,7 +497,7 @@ export default function CryptoBearMarketStrategy2026() {
             <li style={{ marginBottom: 0 }}><strong>Accept Worst Case:</strong> Only invest money you can afford to lose. If Bitcoin → $0 tomorrow, can you survive? If yes, you\&apos;re psychologically safe.</li>
           </ul>
 
-          <p style={{ marginbottom: 16, lineHeight: 1.8 }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
             Mental resilience = wealth creation. The investors who endured 2018 bear psychologically are now 20-50x richer. The ones who panicked-sold are still poor.
           </p>
         </section>

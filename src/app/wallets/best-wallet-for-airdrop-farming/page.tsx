@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'Best wallets for airdrop farming in 2026. Rabby, MetaMask, Phantom, OKX, Trust Wallet. Multi-wallet strategy, Sybil avoidance, farming guide.',
     image: 'https://degen0x.com/og-wallets.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-airdrop-farming',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

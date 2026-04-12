@@ -38,11 +38,9 @@ export const metadata: Metadata = {
     description: "Keystone hardware wallet review: air-gapped security, QR-code signing, Keystone 3 Pro ($149) vs Essential ($99), open-source firmware, multi-chain support, comparison vs Ledger/Trezor.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/keystone-wallet-review-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

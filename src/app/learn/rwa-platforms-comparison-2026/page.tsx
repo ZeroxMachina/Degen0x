@@ -352,7 +352,7 @@ export default function RWAPlatformsComparison() {
           </div>
 
           <div style={{ background: '#161b22', border: '1px solid #f8514940', borderRadius: '12px', padding: '20px' }}>
-            <h3 style={{ fontSize: '15px', fontWeight: 700, color: '#f85149', marginbottom: '10px' }}>⚠️ Centrifuge Risks</h3>
+            <h3 style={{ fontSize: '15px', fontWeight: 700, color: '#f85149', marginBottom: '10px' }}>⚠️ Centrifuge Risks</h3>
             <ul style={{ color: '#c9d1d9', fontSize: '14px', lineHeight: 1.7, listStyleType: 'disc', marginLeft: '20px' }}>
               <li>Credit risk—borrowers can default; you lose principal</li>
               <li>Liquidity risk—redeeming from loan pools can take time if there's a run</li>

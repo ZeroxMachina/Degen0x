@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'Crypto Loan For Real Estate guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.',
     image: 'https://degen0x.com/og-crypto-loans.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/crypto-loan-for-real-estate',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare 1inch, Jupiter, Paraswap, CowSwap. Learn routing algorithms, MEV protection, positive slippage, Fusion Mode.',
     image: 'https://degen0x.com/og-dex-agg.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-a-dex-aggregator',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

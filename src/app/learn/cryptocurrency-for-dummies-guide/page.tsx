@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description:
       "Learn cryptocurrency from scratch. Understand Bitcoin, blockchain, wallets & how to buy your first crypto—written for absolute beginners.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/cryptocurrency-for-dummies-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

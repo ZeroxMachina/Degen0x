@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-gaming-play-to-earn-2026'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'NFT Gaming & Play-to-Earn 2026: Axie, Illuvium, Gods Unchained | degen0x',

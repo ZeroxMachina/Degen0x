@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Web3 marketing playbook: community, incentives, partnerships, content. Proven tactics for 10-100x growth.',
     image: 'https://degen0x.com/og-web3-marketing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/web3-business/web3-marketing-strategies',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

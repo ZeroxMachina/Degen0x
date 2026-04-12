@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'MEV Supply Chain & PBS Guide',
-      }
+      },
     ],
     type: 'article',
   },
@@ -35,8 +35,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/learn/mev-supply-chain-proposer-builder-separation-pbs-guide-2026',
-  }};
-
+  };
 const DARK_COLORS = {
   bg: '#0d1117',
   text: '#e6edf3',

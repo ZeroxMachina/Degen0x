@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'How to avoid liquidation on crypto loans. Conservative LTV ratios, stablecoin collateral, liquidation buffers, risk monitoring. Proven safety strategies.',
     image: 'https://degen0x.com/og-crypto-loans.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/crypto-loan-without-liquidation',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

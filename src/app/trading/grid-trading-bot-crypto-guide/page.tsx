@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master grid bots with arithmetic/geometric grids, optimal spacing, ranging markets, and platform comparisons.',
     image: 'https://degen0x.com/og-trading.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/grid-trading-bot-crypto-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/nfts/music-nft-platforms-comparison'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius | degen0x',

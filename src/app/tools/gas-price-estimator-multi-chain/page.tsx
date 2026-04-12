@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Multi-Chain Gas Price Estimator',
     description: 'Compare Ethereum, L2, and Solana gas fees in real-time',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/gas-price-estimator-multi-chain',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

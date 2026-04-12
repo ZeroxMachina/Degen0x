@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     title: 'Best Crypto Presales 2026 | Guide',
     description: 'How presales work, evaluate launchpads, and identify legitimate early opportunities.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-new-crypto-presales-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',

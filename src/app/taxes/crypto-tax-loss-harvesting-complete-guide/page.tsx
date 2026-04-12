@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to crypto tax loss harvesting. Learn wash sale rule status, substantially identical property debate, and save real dollars.',
     image: 'https://degen0x.com/og-crypto-tax-loss-harvesting.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-tax-loss-harvesting-complete-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

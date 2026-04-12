@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master Cosmos, Polkadot, Avalanche, LayerZero. Compare models, TVL, interoperability.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/layer-0-blockchain-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

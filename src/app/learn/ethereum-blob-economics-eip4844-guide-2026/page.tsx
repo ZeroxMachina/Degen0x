@@ -43,11 +43,9 @@ export const metadata: Metadata = {
       'Complete guide to EIP-4844, blob transactions, proto-danksharding, and Ethereum data availability scaling.',
     images: ['https://degen0x.com/og-eip4844-blobs-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-blob-economics-eip4844-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

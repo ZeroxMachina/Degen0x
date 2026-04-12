@@ -25,11 +25,9 @@ export const metadata: Metadata = {
     description: '1-5 min scalping: order flow, indicators, tight risk management.',
     image: 'https://degen0x.com/og-trading.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/crypto-scalping-strategy-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

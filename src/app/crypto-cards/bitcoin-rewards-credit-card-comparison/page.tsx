@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Compare top Bitcoin rewards credit cards with real earning rates and fee structures for April 2026.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/bitcoin-rewards-credit-card-comparison',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

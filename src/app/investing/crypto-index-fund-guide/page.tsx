@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Index funds for passive crypto exposure. Compare fees, access, performance.',
     image: 'https://degen0x.com/og-index.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-index-fund-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -469,7 +467,7 @@ export default function CryptoIndexFundGuide2026() {
 
           <div style={infoBoxStyle}>
             <h3 style={h3Style}>What if index fund provider goes bankrupt?</h3>
-            <p style={{ marginbottom: 0, fontSize: 14 }}>
+            <p style={{ marginBottom: 0, fontSize: 14 }}>
               Bitwise, Grayscale: Custody with major exchanges (Coinbase, Gemini)—your coins are safe. If provider fails, custody remains. DPI: On-chain tokens in your wallet—fully yours, no custody risk. DIY portfolio: Fully yours, no counterparty risk. By 2026, custody is professional and insured (Coinbase insurance covers up to $250k per user).
             </p>
           </div>

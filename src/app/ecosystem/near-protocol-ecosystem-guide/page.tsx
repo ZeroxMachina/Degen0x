@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Ref Finance, Burrow, Aurora, Mintbase, NEAR Social: complete ecosystem breakdown.",
     image: "https://degen0x.com/og-ecosystem.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/near-protocol-ecosystem-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -268,7 +266,7 @@ export default function NEARProtocolEcosystemGuideExpanded() {
             Rainbow Bridge: trustless NEAR ↔ Ethereum bridge. Finality: 16 Ethereum blocks (~4 minutes) for security. TVL bridged: $50M USDC, $20M ETH, $15M DAI. Fee: 0.2-0.5% for Ethereum → Aurora. Return to Ethereum: gas-intensive (~$5-20 per transaction). Integration: MetaMask, Ethers.js, Hardhat all natively supported.
           </p>
           <h3 style={h3Style}>dApps on Aurora</h3>
-          <p style={{ lineHeight: 1.8, marginbottom: 16, color: "#8b949e" }}>
+          <p style={{ lineHeight: 1.8, marginBottom: 16, color: "#8b949e" }}>
             Popular: Aave, Curve, Uniswap V2 clones. Aurora-native: Flamingoswap (DEX), Oven Finance (leveraged yields), Beefy (yield optimizer with Aurora support). Developer incentives: Aurora 30M token allocation for ecosystem growth. Contracts deployed: 10K+ active (March 2026).
           </p>
         </section>

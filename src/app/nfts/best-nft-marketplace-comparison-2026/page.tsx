@@ -25,11 +25,9 @@ export const metadata: Metadata = {
     description: 'OpenSea vs Blur vs Magic Eden: fees, volume, chain support compared.',
     image: 'https://degen0x.com/og-nfts.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/best-nft-marketplace-comparison-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

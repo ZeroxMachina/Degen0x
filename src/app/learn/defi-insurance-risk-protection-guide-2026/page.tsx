@@ -46,11 +46,9 @@ export const metadata: Metadata = {
       'Master DeFi insurance in 2026: Nexus Mutual, InsurAce, Neptune—claims, coverage types, and protocol selection.',
     images: ['https://degen0x.com/og-defi-insurance-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/defi-insurance-risk-protection-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

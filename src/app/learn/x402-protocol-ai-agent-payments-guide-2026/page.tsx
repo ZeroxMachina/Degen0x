@@ -43,11 +43,9 @@ export const metadata: Metadata = {
     description: 'Learn how AI agents pay for API access using x402 and crypto.',
     images: ['https://degen0x.com/og-x402-protocol-ai-payments-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/x402-protocol-ai-agent-payments-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

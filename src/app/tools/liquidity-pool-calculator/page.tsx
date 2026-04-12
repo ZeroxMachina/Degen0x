@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Calculate liquidity pool returns. IL (impermanent loss) simulation, fee revenue estimation, concentrated vs full-range, TVL/APR analysis. Uniswap v3 & v2 strategies for 2026.',
     image: 'https://degen0x.com/og-tools.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/liquidity-pool-calculator',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to crypto loans explained. Learn collateral requirements, liquidation risks, APR rates, CeFi vs DeFi platforms, and best practices for 2026.',
     image: 'https://degen0x.com/og-crypto-loans.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/how-crypto-loans-work-complete-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

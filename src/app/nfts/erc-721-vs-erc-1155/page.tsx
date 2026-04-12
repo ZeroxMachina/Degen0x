@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'ERC-721 vs ERC-1155: NFT Standards',
     description: 'Which standard is best? Gas costs, use cases, and ecosystem support compared.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/erc-721-vs-erc-1155',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

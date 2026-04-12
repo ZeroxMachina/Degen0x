@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best Cosmos Wallets | degen0x',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-cosmos-ecosystem',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

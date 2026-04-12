@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS risks.',
     image: 'https://degen0x.com/og-restaking-eigenlayer.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/restaking-eigenlayer-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

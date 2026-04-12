@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks, EigenDA.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-restaking-eigenlayer',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

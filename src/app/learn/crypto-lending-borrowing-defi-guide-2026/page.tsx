@@ -41,11 +41,9 @@ export const metadata: Metadata = {
       'Master DeFi lending: Aave, Morpho, Compound, rates, risks, and best practices for 2026.',
     images: ['https://degen0x.com/og-defi-lending-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-lending-borrowing-defi-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

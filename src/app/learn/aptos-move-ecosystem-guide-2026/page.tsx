@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     title: 'Aptos Blockchain & Move Ecosystem Guide 2026',
     description: 'Aptos achieved $1B TVL & sub-50ms blocks. Explore Move language, parallel execution, DeFi ecosystem, BlackRock/Microsoft partnerships, and institutional blockchain adoption.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/aptos-move-ecosystem-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/blockchain-trilemma-explained'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Blockchain Trilemma Explained: Security vs Scalability vs Decentralization | degen0x',

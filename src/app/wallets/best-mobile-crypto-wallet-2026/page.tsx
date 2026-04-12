@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-mobile-crypto-wallet-2026',
-  }};
-
+  };
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Mobile Crypto Wallet 2026', description: 'Compare mobile wallets', image: 'https://degen0x.com/og-wallets.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Trust Wallet the best?', acceptedAnswer: { '@type': 'Answer', text: 'Trust Wallet 70M+ users. Best multi-chain (100+ supported). Built into Binance ecosystem. Good for diverse portfolios. But centralized (Binance-owned).' } }, { '@type': 'Question', name: 'Does MetaMask Mobile work offline?', acceptedAnswer: { '@type': 'Answer', text: 'No. Needs internet. But can use hardware wallet (Ledger) via BLE. Good for Ethereum ecosystem.' } }, { '@type': 'Question', name: 'Can I stake with mobile wallet?', acceptedAnswer: { '@type': 'Answer', text: 'Phantom/MetaMask yes. Stake to validators directly. Trust Wallet limited. Mobile staking practical 2026.' } }, { '@type': 'Question', name: 'What is dApp browser?', acceptedAnswer: { '@type': 'Answer', text: 'In-wallet browser for Uniswap, Magic Eden, etc. Avoids leaving wallet. All major mobile wallets have it 2026.' } }, { '@type': 'Question', name: 'Is mobile more secure than desktop?', acceptedAnswer: { '@type': 'Answer', text: 'No. Both are hot wallets. Mobile has app isolation (OS prevents theft). Desktop has phishing risk (browser extensions).' } }, { '@type': 'Question', name: 'Can I use hardware wallet on mobile?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Ledger Nano X has Bluetooth. Phantom/MetaMask Mobile support hardware signing.' } }] } };
 
 export default function BestMobileCryptoWallet() {

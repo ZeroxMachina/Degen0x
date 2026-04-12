@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Best prepaid crypto cards requiring minimal KYC in 2026: anonymous options, prepaid debit cards, and light-verification platforms. Low-friction crypto spending.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/prepaid-crypto-card-no-kyc',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

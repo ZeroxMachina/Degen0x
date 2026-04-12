@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Compare premium metal crypto cards in 2026: Crypto.com Obsidian, Coinbase One, Gemini Card. See rewards, fees, cashback rates, and tier benefits.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/metal-crypto-card-comparison',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

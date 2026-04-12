@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Best stablecoin borrowing rates 2026. Compare USDC USDT loan APR 6-9%. Aave Compound Nexo. 85-95% LTV. No liquidation risk.',
     image: 'https://degen0x.com/og-crypto-loans.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/best-stablecoin-borrowing-rates',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

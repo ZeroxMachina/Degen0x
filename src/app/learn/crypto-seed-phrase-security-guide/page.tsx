@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master seed phrase security: BIP-39 12/24 words, entropy math, metal backups, and Shamir Secret Sharing in 2026.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-seed-phrase-security-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-perpetual-futures-trading'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Perpetual Futures Trading: Leverage & Risk Guide 2026',

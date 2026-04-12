@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/solana-alpenglow-consensus-upgrade-guide-2026'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV Solutions',

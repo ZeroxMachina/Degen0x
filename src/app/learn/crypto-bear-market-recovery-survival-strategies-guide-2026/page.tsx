@@ -42,11 +42,9 @@ export const metadata: Metadata = {
     description: 'Historical data: 500-2,056% returns during extreme fear. Master proven DCA, staking, and portfolio strategies.',
     images: ['https://degen0x.com/og-bear-market-recovery-strategies-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-bear-market-recovery-survival-strategies-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

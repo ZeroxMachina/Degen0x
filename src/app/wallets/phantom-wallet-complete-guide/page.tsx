@@ -36,11 +36,9 @@ export const metadata: Metadata = {
     description: "8.5/10 rating, Solana-native with Jupiter DEX, NFT gallery, multi-chain support. Full review, setup, security.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/phantom-wallet-complete-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

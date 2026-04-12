@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Learn fractional NFTs, own expensive assets with small capital, participate in governance.',
     image: 'https://degen0x.com/og-fractional-nft.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-fractional-ownership-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

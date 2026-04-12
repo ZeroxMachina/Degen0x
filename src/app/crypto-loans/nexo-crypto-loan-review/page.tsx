@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/nexo-crypto-loan-review'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Nexo Crypto Loan Review 2026 | 0% with NEXO, 13.9% Standard',

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Regulatory requirements, licensing, AML/KYC, tax compliance, business structure.',
     image: 'https://degen0x.com/og-web3-business.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/web3-business/crypto-compliance-guide-business',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

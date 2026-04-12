@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master crypto profit-taking strategies with 350%+ returns tested.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/when-to-take-profits-crypto',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

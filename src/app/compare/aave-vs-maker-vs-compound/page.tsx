@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     description: 'Compare Aave, Maker, and Compound: TVL, lending rates, governance, DAI, collateral options.',
     image: 'https://degen0x.com/og-compare.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/aave-vs-maker-vs-compound',
-  }};
+  },
+};
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -94,7 +94,8 @@ const structuredData = {
 export default function AaveVsMakerVsCompound() {
   const infoBoxStyle = {
     background: '#161b22',
-    border: '1px solid #30363d', borderLeft: '3px solid #58a6ff', borderLeft: '3px solid #58a6ff',
+    border: '1px solid #30363d',
+    borderLeft: '3px solid #58a6ff',
     borderRadius: 12,
     padding: 20,
     marginBottom: 24,
@@ -116,7 +117,9 @@ export default function AaveVsMakerVsCompound() {
     fontWeight: 700,
     marginTop: 40,
     marginBottom: 16,
-    color: '#58a6ff', borderBottom: '2px solid #1f3a5f', paddingBottom: 12,
+    color: '#58a6ff',
+    borderBottom: '2px solid #1f3a5f',
+    paddingBottom: 12,
   };
 
   const linkStyle = { color: '#58a6ff', textDecoration: 'none' };
@@ -207,7 +210,7 @@ export default function AaveVsMakerVsCompound() {
           <p style={{ marginBottom: 16, lineHeight: 1.8, color: '#c9d1d9' }}>
             <strong>Maker (2015, MakerDAO 2017):</strong> Focuses on DAI stablecoin generation. Users lock crypto collateral, mint DAI. ~$8B TVL (mostly collateral, not lending TVL). MKR token governance. Decentralized stability fees and liquidations. Less TVL than Aave but more focused (stablecoin not yields).
           </p>
-          <p style={{ marginbottom: 16, lineHeight: 1.8, color: '#c9d1d9' }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: '#c9d1d9' }}>
             <strong>Compound (2018):</strong> Pioneered algorithmic lending. cToken model (deposit ETH, receive cETH earning yield). Conservative approach: 10+ collateral types, limited risk. COMP token governance. ~$3B TVL. Focus on core lending, not speculation.
           </p>
         </section>
@@ -342,7 +345,7 @@ export default function AaveVsMakerVsCompound() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and not financial advice. Lending protocol risks exist. Always DYOR and monitor liquidation risks. degen0x does not endorse any protocol.
         </div>
-      </div>
+
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }>Continue Reading</h3>
@@ -354,14 +357,6 @@ export default function AaveVsMakerVsCompound() {
           </ul>
         </nav>
 
-{/* section-footer */}
-        <div style={{ background: '#0d1117', border: '1px solid #1f3a5f', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#58a6ff' }}>Methodology note:</strong> Our comparisons analyze on-chain data, fee structures, and feature sets as of the publication date.
-            Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
-          </p>
-        </div>
-      
         {/* section-footer */}
         <div style={{ background: '#0d1117', border: '1px solid #1f3a5f', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
           <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
@@ -369,6 +364,7 @@ export default function AaveVsMakerVsCompound() {
             Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
           </p>
         </div>
-      </article>
+      </div>
+    </article>
   );
 }

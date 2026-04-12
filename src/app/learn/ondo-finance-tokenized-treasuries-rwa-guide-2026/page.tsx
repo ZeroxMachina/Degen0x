@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to Ondo Finance: $2.7B+ TVL, USDY, OUSG, Ondo Global Markets, and ONDO token.',
     images: ['https://degen0x.com/og-ondo-finance-rwa-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

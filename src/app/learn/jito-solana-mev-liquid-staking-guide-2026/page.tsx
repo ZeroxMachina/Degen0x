@@ -32,11 +32,9 @@ export const metadata: Metadata = {
     title: 'Jito Protocol Guide 2026 — Solana MEV & Liquid Staking',
     description: 'Comprehensive guide to Jito Protocol MEV optimization and liquid staking on Solana.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/jito-solana-mev-liquid-staking-guide-2026',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Article", "FAQPage"],

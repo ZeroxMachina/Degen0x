@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Stack crypto card rewards using multiple cards. Compare reward rates, maximize cashback, and optimize multi-card strategies. Real yield from spending.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/best-card-for-crypto-rewards-stacking',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

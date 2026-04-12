@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     description: 'Blob transactions and Proto-Danksharding.',
     images: ['https://degen0x.com/og-learn.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/eip-4844-proto-danksharding-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

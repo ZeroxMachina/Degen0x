@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master all lending risks with mitigation strategies.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-lending-risks-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

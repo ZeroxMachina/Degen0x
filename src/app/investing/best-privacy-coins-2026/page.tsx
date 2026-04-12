@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare privacy coins, anonymity methods, market caps, and regulatory risks.',
     image: 'https://degen0x.com/og-privacy-coins.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-privacy-coins-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

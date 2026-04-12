@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/best-crypto-backed-loan-2026',
-  }};
-
+  };
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Crypto Backed Loan 2026', description: 'Crypto loan comparison', image: 'https://degen0x.com/og-loans.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'What is crypto backed loan?', acceptedAnswer: { '@type': 'Answer', text: 'Deposit crypto as collateral, borrow fiat/stablecoin. Aave DeFi: borrow against holdings. Nexo CeFi: borrow cash up to $100k. Over-collateralized.' } }, { '@type': 'Question', name: 'Aave vs MakerDAO loans?', acceptedAnswer: { '@type': 'Answer', text: 'Aave: flexible (deposit any token, borrow any, rates vary). MakerDAO: deposit ETH, borrow DAI stablecoin only, fixed stability fee.' } }, { '@type': 'Question', name: 'What is LTV ratio?', acceptedAnswer: { '@type': 'Answer', text: 'Loan-to-Value. Borrow 50% ETH value = 50% LTV. Higher LTV = riskier (liquidation closer). Aave 60-80%, Nexo 50-90%.' } }, { '@type': 'Question', name: 'Why borrow crypto instead of selling?', acceptedAnswer: { '@type': 'Answer', text: 'Avoid tax event. Hold for long-term appreciation. Borrow fiat = liquidity without selling. Borrow costs 3-8% APY vs selling taxes.' } }, { '@type': 'Question', name: 'Auto-liquidation risk?', acceptedAnswer: { '@type': 'Answer', text: 'Collateral drops below LTV = liquidated. Lose collateral. Flash crashes trigger cascades. Always keep 20%+ buffer.' } }, { '@type': 'Question', name: 'Tax benefits of borrowing?', acceptedAnswer: { '@type': 'Answer', text: 'Borrowing not taxable (debt, not sale). Interest deductible if used for business. Hold forever if don\'t sell collateral.' } }] } };
 
 export default function BestCryptoBackedLoan() {
@@ -103,7 +102,7 @@ export default function BestCryptoBackedLoan() {
           <h3 style={s.h3}>Up to $100k Loans</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>Borrow up to $100k in fiat/stablecoins. Instant approval for verified users. Nexo custody.</p>
           <h3 style={s.h3}>9-12% Borrow Rates</h3>
-          <p style={{ marginbottom: 16, lineHeight: 1.8 }}>Higher than DeFi but faster, easier. Tiered LTV (50-75% depending on collateral quality).</p>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>Higher than DeFi but faster, easier. Tiered LTV (50-75% depending on collateral quality).</p>
           <h3 style={s.h3}>Simple</h3>
           <p style={{ marginBottom: 24, lineHeight: 1.8 }}>No smart contract interaction. Web/app interface. No gas fees. Easy for non-technical users.</p>
         </section>

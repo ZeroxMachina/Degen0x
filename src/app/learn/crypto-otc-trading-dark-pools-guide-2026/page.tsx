@@ -41,11 +41,9 @@ export const metadata: Metadata = {
       'Master crypto OTC trading: Wintermute, Cumberland, FalconX, dark pools, and institutional execution for 2026.',
     images: ['https://degen0x.com/og-otc-trading-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-otc-trading-dark-pools-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

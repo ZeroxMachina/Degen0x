@@ -44,11 +44,9 @@ export const metadata: Metadata = {
       'Master flash loans: uncollateralized lending, atomic transactions, arbitrage opportunities, and security risks in 2026.',
     images: ['https://degen0x.com/og-flash-loans-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/flash-loans-defi-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

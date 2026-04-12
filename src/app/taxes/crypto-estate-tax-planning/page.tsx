@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     title: 'Crypto Estate Tax Planning 2026',
     description: 'Master crypto inheritance, trusts, and tax-efficient wealth transfer strategies.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-estate-tax-planning',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

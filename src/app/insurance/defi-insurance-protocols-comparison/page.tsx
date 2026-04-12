@@ -25,11 +25,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DeFi Insurance Protocol Comparison 2026",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/insurance/defi-insurance-protocols-comparison',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

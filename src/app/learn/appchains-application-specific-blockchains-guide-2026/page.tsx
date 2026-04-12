@@ -45,11 +45,9 @@ export const metadata: Metadata = {
       'Complete guide to appchain frameworks, customization, and deployment. Learn Cosmos, Arbitrum Orbit, OP Stack, and more.',
     images: ['https://degen0x.com/og-appchains-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/appchains-application-specific-blockchains-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

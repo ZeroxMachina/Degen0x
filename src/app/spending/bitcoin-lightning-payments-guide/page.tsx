@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/spending/bitcoin-lightning-payments-guide'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Bitcoin Lightning Network Payments Guide 2026 | Instant Sats Under $0.01',

@@ -36,11 +36,9 @@ export const metadata: Metadata = {
     description: "9/10 rating by DeBank team. Transaction simulation, approval management, multi-chain auto-detection. Desktop only.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/rabby-wallet-review-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

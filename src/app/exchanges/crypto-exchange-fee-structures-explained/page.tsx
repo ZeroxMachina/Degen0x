@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'Crypto Exchange Fee Structures Explained guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.',
     image: 'https://degen0x.com/og-exchanges.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/exchanges/crypto-exchange-fee-structures-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

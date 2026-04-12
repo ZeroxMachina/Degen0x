@@ -31,11 +31,9 @@ export const metadata: Metadata = {
     description:
       "Earn from spare bandwidth with Grass. 8.5M users, GRASS token.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/grass-protocol-depin-ai-data-network-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

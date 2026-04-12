@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Top L2 tokens: ARB, OP, MATIC, STRK, ZK. TVL, daily txs, ecosystem.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-layer-2-tokens-to-invest',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

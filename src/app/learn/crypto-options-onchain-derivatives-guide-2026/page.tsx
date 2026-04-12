@@ -43,11 +43,9 @@ export const metadata: Metadata = {
       'Master on-chain options: Aevo, Derive, Hegic, strategies, Greeks, and DeFi derivatives for 2026.',
     images: ['https://degen0x.com/og-options-derivatives-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-options-onchain-derivatives-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

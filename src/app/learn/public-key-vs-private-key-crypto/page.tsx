@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master cryptography fundamentals and key management.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/public-key-vs-private-key-crypto',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

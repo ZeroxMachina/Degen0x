@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/exchanges/best-crypto-exchange-for-day-trading',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

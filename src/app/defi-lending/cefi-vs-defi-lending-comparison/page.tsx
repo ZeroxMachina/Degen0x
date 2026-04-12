@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'CeFi vs DeFi: rates, risks, custody. Celsius (5-6%), Aave (5-8%), Morpho (7-8%), security models, tax implications.',
     image: 'https://degen0x.com/og-cefi-defi-comparison.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/cefi-vs-defi-lending-comparison',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

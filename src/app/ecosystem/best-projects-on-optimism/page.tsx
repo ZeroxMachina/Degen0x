@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Optimism L2 ecosystem: Velodrome DEX, Synthetix derivatives, Aave V3, Sonne Finance. $1.8B TVL, fastest Ethereum equivalent.',
     image: 'https://degen0x.com/og-ecosystem.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/best-projects-on-optimism',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

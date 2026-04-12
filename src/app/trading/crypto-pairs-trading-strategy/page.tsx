@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Statistical arbitrage through cointegration and mean reversion strategies.",
     image: "https://degen0x.com/og-trading.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/crypto-pairs-trading-strategy',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

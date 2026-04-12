@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling correlation & diversification.',
     image: 'https://degen0x.com/og-tools.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-correlation-matrix',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

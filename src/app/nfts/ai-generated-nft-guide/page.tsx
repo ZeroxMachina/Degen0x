@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master AI NFT creation with legal guidance on copyright, licensing, market valuation, and IP protection.',
     image: 'https://degen0x.com/og-ai-nft.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/ai-generated-nft-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

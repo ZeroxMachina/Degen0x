@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Render, Fetch.ai, Bittensor: decentralized AI infrastructure tokens.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ai-crypto-tokens-complete-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -36,11 +36,9 @@ export const metadata: Metadata = {
     description: "7.5/10 rating. NFC card hardware wallet, no seed phrase, 3-card backup, $54. Most portable hardware wallet.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/tangem-wallet-review-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

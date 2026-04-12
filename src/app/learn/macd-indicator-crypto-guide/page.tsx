@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'MACD Indicator for Crypto Trading',
     description: 'Learn MACD signal lines, divergence, and false signals in crypto markets.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/macd-indicator-crypto-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

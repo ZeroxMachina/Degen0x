@@ -51,11 +51,9 @@ export const metadata: Metadata = {
     description: 'Master ZKPs, SNARKs, STARKs, ZK rollups, Starknet, zkSync, privacy in DeFi, and the cryptography powering $28B+ in ZK TVL in 2026.',
     images: ['https://degen0x.com/og-zero-knowledge-proofs-zkp-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/zero-knowledge-proofs-zkp-complete-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

@@ -43,11 +43,9 @@ export const metadata: Metadata = {
       'Master PayFi: Stripe Tempo, Circle Arc, stablecoin payments, and blockchain payment infrastructure.',
     images: ['https://degen0x.com/og-payfi-payments-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/payfi-crypto-payments-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

@@ -42,11 +42,9 @@ export const metadata: Metadata = {
     title: 'Decentralized GPU Compute Networks: Render, Akash & io.net Guide 2026 | degen0x',
     description: 'GPU marketplaces, DePIN infrastructure, AI compute tokenomics, and the future of cloud computing on blockchain.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/decentralized-gpu-compute-networks-render-akash-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

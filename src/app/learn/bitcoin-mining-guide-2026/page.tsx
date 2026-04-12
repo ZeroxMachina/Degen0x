@@ -40,11 +40,9 @@ export const metadata: Metadata = {
       'Complete guide to Bitcoin mining in 2026. Compare ASIC miners, calculate profitability, understand electricity costs, and learn if mining BTC is still worth it.',
     images: ['https://degen0x.com/og-bitcoin-mining.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bitcoin-mining-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

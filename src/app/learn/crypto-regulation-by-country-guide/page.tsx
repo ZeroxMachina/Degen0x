@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Crypto regulation guide for 10 countries with tax rates, legal status, and compliance requirements.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-regulation-by-country-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

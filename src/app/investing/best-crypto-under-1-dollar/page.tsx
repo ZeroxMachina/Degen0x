@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Best cryptocurrencies trading under $1 in 2026.',
     image: 'https://degen0x.com/og-invest-penny.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-crypto-under-1-dollar',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

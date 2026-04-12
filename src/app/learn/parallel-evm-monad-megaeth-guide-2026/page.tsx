@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to Parallel EVM execution. Learn how these chains achieve 10K-100K TPS and enable real-time applications.',
     image: 'https://degen0x.com/og-parallel-evm.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/parallel-evm-monad-megaeth-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

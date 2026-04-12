@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Snapshot, Tally, Safe comparison. Complete DAO setup guide.',
     image: 'https://degen0x.com/og-dao-tools.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/web3-business/decentralized-autonomous-organization-tools',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

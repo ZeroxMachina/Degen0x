@@ -49,11 +49,9 @@ export const metadata: Metadata = {
       'Native cross-chain swaps without bridges: RUNE, CLPs, streaming swaps, and 2026 expansion.',
     images: ['https://degen0x.com/og-thorchain-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/thorchain-cross-chain-native-swaps-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: '60% BTC + 40% ETH core allocation with alts. Rebalancing and risk management.',
     image: 'https://degen0x.com/og-portfolio.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-60-40-portfolio-strategy',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Taproot: Schnorr signatures, MAST smart contracts, privacy, Ordinals, Lightning Network integration.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bitcoin-taproot-upgrade-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

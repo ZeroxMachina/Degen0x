@@ -39,11 +39,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to Bitcoin halving events, mining rewards, and price impacts. Next halving 2028.',
     images: ['https://degen0x.com/og-bitcoin-halving.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bitcoin-halving-explained-history',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

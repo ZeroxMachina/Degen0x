@@ -42,11 +42,9 @@ export const metadata: Metadata = {
     title: 'Hyperliquid DEX & HYPE Chain: Complete Perpetual Futures Guide 2026 | degen0x',
     description: 'HyperBFT consensus, 200k TPS, fully on-chain order book, HYPE tokenomics, and perp futures trading on Hyperliquid.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/hyperliquid-dex-hype-chain-perpetual-futures-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

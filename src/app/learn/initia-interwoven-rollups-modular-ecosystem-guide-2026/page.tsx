@@ -38,11 +38,9 @@ export const metadata: Metadata = {
     description: 'Comprehensive guide to Initia, rollup orchestration, and modular blockchain architecture.',
     images: ["https://degen0x.com/og-initia-interwoven-rollups-2026.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026',
-  }};
-
+  };
 export default function InitiaGuidePage() {
   // Define all styles as React.CSSProperties objects
   const pageStyle: React.CSSProperties = {

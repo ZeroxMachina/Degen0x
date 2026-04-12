@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to mining tax. Hobby vs business mining, self-employment tax, ASIC depreciation, electricity deductions, and home mining.',
     image: 'https://degen0x.com/og-crypto-mining-tax.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-mining-tax-implications',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

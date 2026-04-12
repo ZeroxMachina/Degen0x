@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Trade AI, RWA, DePIN narratives using lifecycle signals and on-chain metrics.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-narrative-trading-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

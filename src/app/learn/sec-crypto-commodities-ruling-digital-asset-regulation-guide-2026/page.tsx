@@ -41,11 +41,9 @@ export const metadata: Metadata = {
     description: 'The March 17, 2026 ruling classified 16 cryptos as commodities, unlocked ETF approvals, and clarified staking. Complete regulatory guide.',
     images: ["https://degen0x.com/og-sec-cftc-ruling-2026.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026',
-  }};
-
+  };
 // Server-side structured data
 const articleStructuredData = {
   '@context': 'https://schema.org',

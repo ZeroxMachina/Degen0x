@@ -46,8 +46,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-passive-income-complete-guide-2026',
-  }};
-
+  };
 const JsonLd = () => {
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',

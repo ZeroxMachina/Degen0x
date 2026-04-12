@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Merkle Trees in Blockchain',
     description: 'Learn Merkle proofs, Patricia Tries, SPV, Merkle airdrops, and Verkle trees roadmap.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/merkle-tree-blockchain-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

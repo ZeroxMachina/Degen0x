@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: "How to Read Crypto Charts for Beginners",
     description: "Master crypto chart reading: candlesticks, patterns, indicators explained.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/how-to-read-crypto-charts-for-beginners',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Article", "FAQPage"],

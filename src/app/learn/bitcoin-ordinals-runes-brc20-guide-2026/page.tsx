@@ -46,11 +46,9 @@ export const metadata: Metadata = {
       'Complete guide to Bitcoin Ordinals, BRC-20, and Runes. Learn inscriptions, token standards, trading, and risks in 2026.',
     images: ['https://degen0x.com/og-bitcoin-ordinals-runes-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bitcoin-ordinals-runes-brc20-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

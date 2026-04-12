@@ -43,11 +43,9 @@ export const metadata: Metadata = {
     description:
       "How passive yield on stablecoins gets banned while activity-based rewards are protected. What it means for Aave, Compound, and your DeFi yield.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/clarity-act-stablecoin-yield-regulation-guide-2026',
-  }};
-
+  };
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = {
   "@context": "https://schema.org",

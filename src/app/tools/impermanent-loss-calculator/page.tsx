@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Impermanent Loss Calculator',
     description: 'Calculate IL impact on your LP positions and liquidity pool farming profits.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/impermanent-loss-calculator',
-  }};
-
+  };
 const faqs = [
   {
     q: 'What is impermanent loss in simple terms?',

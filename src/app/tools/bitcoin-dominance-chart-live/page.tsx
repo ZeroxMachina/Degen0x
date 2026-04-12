@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Bitcoin Dominance Chart Live',
     description: 'Real-time BTC dominance tracking and market cycle analysis.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/bitcoin-dominance-chart-live',
-  }};
-
+  };
 const faqs = [
   {
     q: 'What does Bitcoin dominance measure?',

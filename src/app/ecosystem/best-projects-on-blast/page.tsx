@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Thruster, Juice, Orbit, Particle on Blast. 3.4% ETH + 5% stablecoin yields.",
     image: "https://degen0x.com/og-ecosystem.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/best-projects-on-blast',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

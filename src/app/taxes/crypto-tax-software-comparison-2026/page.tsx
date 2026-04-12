@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     title: 'Crypto Tax Software 2026',
     description: 'Compare Koinly, CoinTracker, TokenTax, CoinLedger, ZenLedger pricing & features.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-tax-software-comparison-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Hardware Wallet Setup Guide | degen0x',
     description: 'Secure your crypto with proper hardware wallet setup.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/hardware-wallet-setup-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

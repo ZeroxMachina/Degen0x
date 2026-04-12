@@ -465,7 +465,7 @@ export default function DYORTokenResearchGuidePage() {
               <strong>Price per Token vs Utility:</strong> Don't be fooled by low prices. A token at $0.01 isn't necessarily cheaper than one at $100. Compare market caps and what utility they provide. Uniswap at $150 (high price) has legitimate utility; a meme coin at $0.000001 has none.
             </p>
 
-            <h3 style={{ fontSize: '18px', fontWeight: 600, marginbottom: '12px', marginTop: '20px', color: '#e6edf3' }}>
+            <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '12px', marginTop: '20px', color: '#e6edf3' }}>
               Vesting Schedules
             </h3>
             <p style={{ fontSize: '15px', lineHeight: 1.8, marginBottom: '24px', color: '#e6edf3' }}>

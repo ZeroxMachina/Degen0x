@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside with real AUM and fees.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-a-crypto-index-fund',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

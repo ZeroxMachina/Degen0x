@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-a-crypto-airdrop'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Crypto Airdrops Explained: Strategy & Yield Farming',

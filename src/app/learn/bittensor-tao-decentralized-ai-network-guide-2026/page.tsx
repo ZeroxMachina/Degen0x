@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Bittensor (TAO) Guide 2026 | Decentralized AI Networks',
     description: 'How Bittensor turns AI into a commodity. Subnets, Dynamic TAO, mining, validation, and tokenomics explained.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bittensor-tao-decentralized-ai-network-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

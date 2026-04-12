@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Staking Rewards Calculator',
     description: 'Real-time crypto staking yields and APY calculations for all major assets.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/staking-rewards-calculator',
-  }};
-
+  };
 const faqs = [
   {
     q: 'What is the difference between APY and APR for staking?',

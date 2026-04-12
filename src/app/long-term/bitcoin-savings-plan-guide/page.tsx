@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Learn dollar-cost averaging and long-term Bitcoin accumulation for generational wealth.',
     image: 'https://degen0x.com/og-bitcoin-savings.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/long-term/bitcoin-savings-plan-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

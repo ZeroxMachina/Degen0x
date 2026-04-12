@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Compare Base, Arbitrum, Optimism, zkSync, Scroll, Starknet. Learn L2 fees, TPS, bridging, tokens, and which network to use.',
     image: 'https://degen0x.com/og-ethereum-l2-guide.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-layer-2-ecosystem-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

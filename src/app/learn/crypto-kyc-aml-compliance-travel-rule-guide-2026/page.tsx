@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Crypto KYC, AML & Travel Rule Compliance Guide 2026',
     description: 'VASPs now face same standards as traditional banks. Learn Travel Rule, MiCA, KYC/AML obligations, and how to avoid $1B+ in regulatory fines.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-kyc-aml-compliance-travel-rule-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -568,7 +566,7 @@ export default function CryptoKYCAMLComplianceGuide() {
           </p>
 
           <div style={infoBoxStyle}>
-            <h3 style={{ fontSize: 15, fontWeight: 700, color: '#ff6b6b', marginbottom: 10 }}>Travel Rule Compliance Rate in 2026</h3>
+            <h3 style={{ fontSize: 15, fontWeight: 700, color: '#ff6b6b', marginBottom: 10 }}>Travel Rule Compliance Rate in 2026</h3>
             <div style={{ color: '#c9d1d9', fontSize: 14 }}>
               <p style={{ marginBottom: 8 }}><strong>42 countries fully implemented</strong> (as of Jan 2026); <strong>85 of 117 FATF members</strong> (73%) have passed or are passing legislation.</p>
               <p style={{ marginBottom: 8 }}><strong>Compliance burden remains high:</strong> Major exchanges (Kraken, Coinbase, Gemini, Bitstamp) offer Travel Rule compliant transfers, but smaller platforms struggle. Many DEXs and non-custodial platforms are exempt because they don\&apos;t custody assets.</p>

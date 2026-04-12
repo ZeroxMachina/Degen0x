@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Track $500M+ liquidation events and predict liquidation cascades.',
     image: 'https://degen0x.com/og-tools.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-liquidation-tracker',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

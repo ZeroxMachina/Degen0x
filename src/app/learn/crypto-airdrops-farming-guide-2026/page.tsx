@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to crypto airdrops in 2026. Farming strategies, Sybil detection, and the best upcoming token distributions.',
     image: 'https://degen0x.com/og-airdrops-guide.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-airdrops-farming-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

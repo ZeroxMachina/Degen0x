@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'ENS, Unstoppable, .sol domains: pricing, investment, Web3 identity.',
     image: 'https://degen0x.com/og-nfts.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-domain-names-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -45,11 +45,9 @@ export const metadata: Metadata = {
       'Pendle Finance: lock in fixed DeFi yields with PT/YT tokens. Explore the Ethena-Pendle-Aave flywheel in 2026.',
     images: ['https://degen0x.com/og-yield-tokenization-pendle-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/yield-tokenization-pendle-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

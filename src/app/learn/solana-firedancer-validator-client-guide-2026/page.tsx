@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     title: 'Solana Firedancer Guide 2026 | Validator Client',
     description: 'Jump Crypto\'s high-performance Firedancer validator client — technical deep dive, mainnet adoption, and why validators are migrating.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/solana-firedancer-validator-client-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

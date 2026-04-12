@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Track Ethereum gas fees in real-time.',
     image: 'https://degen0x.com/og-tools-gas.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/ethereum-gas-tracker',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

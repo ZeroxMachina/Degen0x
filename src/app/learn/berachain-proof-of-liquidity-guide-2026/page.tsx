@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/berachain-proof-of-liquidity-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Berachain Proof of Liquidity Guide 2026',

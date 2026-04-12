@@ -43,11 +43,9 @@ export const metadata: Metadata = {
     title: 'TEEs in Crypto: Trusted Execution Environments Guide 2026 | degen0x',
     description: 'Hardware-isolated enclaves, confidential smart contracts, and verifiable AI inference. Complete TEE guide for crypto.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/tee-trusted-execution-environments-crypto-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

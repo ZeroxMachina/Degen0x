@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best Bitcoin-Only Wallets | degen0x',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-bitcoin-only-wallet',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

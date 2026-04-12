@@ -29,11 +29,9 @@ export const metadata: Metadata = {
     description: 'GMX, dYdX, Synthetix comparison with staker APY and real yield.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-perpetual-dex-tokens',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

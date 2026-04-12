@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete NFT tax guide: capital gains treatment, creator royalties as ordinary income, minting taxability, NFT swaps, collectibles rate.',
     image: 'https://degen0x.com/og-taxes.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/nft-tax-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

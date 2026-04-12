@@ -39,11 +39,9 @@ export const metadata: Metadata = {
     description:
       "Master institutional DeFi in 2026: RWA tokenization, regulatory compliance, custody solutions, and enterprise DeFi strategies.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/institutional-defi-onchain-finance-guide-2026',
-  }};
-
+  };
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",

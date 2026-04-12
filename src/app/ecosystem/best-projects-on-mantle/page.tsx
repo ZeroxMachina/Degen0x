@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Best Projects on Mantle',
     description: 'Top Mantle DeFi projects: Agni, Lendle, Moe, INIT Capital, mETH liquid staking.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/best-projects-on-mantle',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

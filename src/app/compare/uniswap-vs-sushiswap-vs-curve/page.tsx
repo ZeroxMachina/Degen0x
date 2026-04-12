@@ -22,11 +22,10 @@ export const metadata: Metadata = {
     description: 'Compare Uniswap, SushiSwap, and Curve: AMM models, fees, TVL, token utility.',
     image: 'https://degen0x.com/og-compare.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/uniswap-vs-sushiswap-vs-curve',
-  }};
-
+  };
+},
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -157,7 +156,7 @@ export default function UniswapVsSushiSwapVsCurve() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           </div>
           <h1 style={h1Style}>Uniswap vs SushiSwap vs Curve</h1>
-          <p style={{ fontSize: 16, color: '#8b949e', marginbottom: 20 }}>
+          <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             The three largest decentralized exchanges by TVL. Uniswap dominates general trading with concentrated liquidity (V3/V4). Curve specializes in stablecoins. SushiSwap offers token rewards. This guide covers AMM models, fees, governance, and multi-chain presence.
           </p>
           <div style={{ display: 'flex', gap: 24, fontSize: 14, color: '#8b949e', marginBottom: 24 }}>

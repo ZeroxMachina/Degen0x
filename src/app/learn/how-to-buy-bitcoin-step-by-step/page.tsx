@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'How to Buy Bitcoin Step by Step — Beginner Guide 2026',
     description: 'Learn how to buy Bitcoin in 2026 with our step-by-step guide. Compare exchanges, set up wallets, place your first order, and store BTC safely.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/how-to-buy-bitcoin-step-by-step',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

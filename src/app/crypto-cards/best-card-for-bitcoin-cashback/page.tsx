@@ -20,11 +20,9 @@ export const metadata: Metadata = {
     description: 'Compare Fold, Unchained, Strike, and Cash App Bitcoin rewards cards.',
     image: 'https://degen0x.com/og-crypto-cards.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/best-card-for-bitcoin-cashback',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

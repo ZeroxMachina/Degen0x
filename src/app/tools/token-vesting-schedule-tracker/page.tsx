@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events. 2026 unlock calendar.',
     image: 'https://degen0x.com/og-tools.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/token-vesting-schedule-tracker',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

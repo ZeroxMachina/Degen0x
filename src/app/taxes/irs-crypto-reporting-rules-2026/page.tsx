@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     title: 'IRS Crypto Reporting 2026',
     description: 'Master Form 1099-DA, Form 8949, FBAR, and IRS enforcement priorities.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/irs-crypto-reporting-rules-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

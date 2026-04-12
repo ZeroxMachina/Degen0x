@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     description: 'Token pricing and fair launch mechanics.',
     images: ['https://degen0x.com/og-learn.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bonding-curves-token-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

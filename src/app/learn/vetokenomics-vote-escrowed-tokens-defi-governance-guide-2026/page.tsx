@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'veTokenomics & Vote-Escrowed Tokens Guide 2026 | degen0x',
     description: 'How vote-escrowed tokens revolutionized DeFi governance. Learn Curve, Balancer, Velodrome veTokenomics, Curve Wars, and bribing mechanics.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/vetokenomics-vote-escrowed-tokens-defi-governance-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

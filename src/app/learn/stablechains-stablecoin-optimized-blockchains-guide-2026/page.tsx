@@ -118,11 +118,9 @@ export const metadata: Metadata = {
       'Complete guide to stablechains—purpose-built blockchains optimized for stablecoin payments, compliance, and zero volatile fees.',
     images: ['https://degen0x.com/og-stablechains-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/stablechains-stablecoin-optimized-blockchains-guide-2026',
-  }};
-
+  };
 const pageStyles = {
   container: {
     maxWidth: '900px',

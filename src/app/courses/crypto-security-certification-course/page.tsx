@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Auditing, ethical hacking, certifications, bug bounties.',
     image: 'https://degen0x.com/og-courses.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/courses/crypto-security-certification-course',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/wallets/ledger-vs-trezor-comparison-2026',
-  }};
-
+  };
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Ledger vs Trezor Comparison 2026', description: 'Compare hardware wallets', image: 'https://degen0x.com/og-wallets.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Which has more coin support?', acceptedAnswer: { '@type': 'Answer', text: 'Ledger: 5,000+ coins. Trezor: 1,800+ coins. Ledger wider, Trezor focuses on quality.' } }, { '@type': 'Question', name: 'Is Trezor more open source?', acceptedAnswer: { '@type': 'Answer', text: 'Trezor firmware open source. Ledger proprietary (security concern). But Ledger has Secure Element chip (more secure).' } }, { '@type': 'Question', name: 'Which has Bluetooth?', acceptedAnswer: { '@type': 'Answer', text: 'Ledger Nano X/Stax have Bluetooth. Trezor Safe 3 wired USB-C only. Bluetooth more convenient but debate on security.' } }, { '@type': 'Question', name: 'What is Secure Element?', acceptedAnswer: { '@type': 'Answer', text: 'Chip isolating key operations. Only Ledger has it (ST-made). Adds security layer vs pure software. Trezor argues not necessary.' } }, { '@type': 'Question', name: 'Price difference?', acceptedAnswer: { '@type': 'Answer', text: 'Nano X $149, Safe 3 $99, Stax $299, Model T $249. Trezor cheaper, Ledger premium for features.' } }, { '@type': 'Question', name: 'Which for long-term holding?', acceptedAnswer: { '@type': 'Answer', text: 'Both excellent. Ledger Nano X if want Bluetooth + more coins. Trezor Safe 3 if want open source + cheaper. Functionally equivalent.' } }] } };
 
 export default function LedgerVsTrezorComparison() {

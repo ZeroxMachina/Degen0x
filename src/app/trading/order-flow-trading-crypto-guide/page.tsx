@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Tape reading, footprints, delta volume: order flow secrets for crypto traders.",
     image: "https://degen0x.com/og-trading.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/order-flow-trading-crypto-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

@@ -38,11 +38,9 @@ export const metadata: Metadata = {
     description:
       "Master liquid staking in DeFi: Lido, Rocket Pool, TVL analysis, stETH vs rETH, risks, and yield strategies.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/liquid-staking-tokens-guide-2026',
-  }};
-
+  };
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",

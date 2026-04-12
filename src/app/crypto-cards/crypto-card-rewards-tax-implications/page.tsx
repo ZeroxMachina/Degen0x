@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Crypto card rewards tax implications: when rewards are taxable, capital gains on selling rewards, income reporting, and tax-efficient strategies in 2026.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/crypto-card-rewards-tax-implications',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -416,7 +414,7 @@ export default function CryptoCardRewardsTaxImplications() {
             <p style={{ color: "#c9d1d9", fontSize: 14, marginBottom: 0 }}>If rewards declined in value, realize losses to offset gains. $5K gain from selling appreciated rewards, sell depreciated rewards for $3K loss = $2K net gain (saves $640 in taxes at 32% rate). Avoid wash sale rules (30-day rule doesn&apos;t technically apply to crypto, but IRS enforcement evolving).</p>
           </div>
           <div style={infoBoxStyle}>
-            <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginbottom: 10 }}>Strategy 4: Jurisdiction Arbitrage</h3>
+            <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 10 }}>Strategy 4: Jurisdiction Arbitrage</h3>
             <p style={{ color: "#c9d1d9", fontSize: 14, marginBottom: 0 }}>Tax residency matters. If considering relocation, some countries (Singapore, El Salvador) have 0% crypto gains tax. Legitimate relocation (12+ months primary residence) can save 20-35% on realized crypto rewards. Requires careful legal/tax planning.</p>
           </div>
         </section>

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-rarity-tools-how-to-use'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools | degen0x',

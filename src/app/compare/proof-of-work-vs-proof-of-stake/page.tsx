@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/compare/proof-of-work-vs-proof-of-stake',
-  }};
-
+  };
+},
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

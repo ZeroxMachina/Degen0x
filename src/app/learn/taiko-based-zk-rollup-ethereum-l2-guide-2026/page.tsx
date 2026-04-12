@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'Learn about Taiko&rsquo;s based sequencing, ZK proofs, and next-gen preconfirmation technology.',
     images: ['/og-taiko-based-zk-rollup-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/taiko-based-zk-rollup-ethereum-l2-guide-2026',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Article", "FAQPage"],

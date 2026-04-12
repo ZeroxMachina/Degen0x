@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to ZK Rollups in 2026. Learn how ZK Rollups achieve instant finality, compare leading protocols, and explore the proving revolution.',
     image: 'https://degen0x.com/og-zk-rollups.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/zk-rollups-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

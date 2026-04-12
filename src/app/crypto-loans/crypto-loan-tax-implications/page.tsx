@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to crypto loan taxation, tax-efficient strategies, and 1099 reporting requirements.',
     image: 'https://degen0x.com/og-crypto-loans.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/crypto-loan-tax-implications',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

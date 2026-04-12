@@ -36,11 +36,9 @@ export const metadata: Metadata = {
     description: "Complete multisig wallet setup guide. Learn M-of-N signing, top wallets (Gnosis Safe, Squads, Caravan), costs, use cases, and step-by-step Safe{Wallet} setup.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/multisig-wallet-setup-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

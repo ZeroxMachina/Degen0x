@@ -682,7 +682,7 @@ export default function ERC7683GuidePage() {
             The CrossChainOrder struct defines a user's intent. It contains: chainIn (source chain ID), chainOut (destination chain ID), tokenIn (source token address), amountIn (source amount), tokenOut (destination token address), amountOutMin (minimum acceptable output), deadline (order expiration time), and other metadata. This is what fillers see and quote against.
           </p>
 
-          <h3 style={{ fontSize: '20px', fontWeight: '600', marginbottom: '12px', color: '#79c0ff' }}>
+          <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: '#79c0ff' }}>
             ResolvedCrossChainOrder
           </h3>
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: '#e6edf3' }}>
@@ -829,7 +829,7 @@ export default function ERC7683GuidePage() {
             Platforms like Okto are building "chain abstraction" layers where users interact with DeFi without caring which chain their assets are on. ERC-7683 is the foundation for these platforms. As adoption grows, chain abstraction will become the default way people interact with multi-chain DeFi.
           </p>
 
-          <h3 style={{ fontSize: '20px', fontWeight: '600', marginbottom: '12px', color: '#79c0ff' }}>
+          <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: '#79c0ff' }}>
             Standardization Across All Bridges
           </h3>
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: '#e6edf3' }}>

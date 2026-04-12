@@ -45,11 +45,9 @@ export const metadata: Metadata = {
       'Learn chain abstraction: one wallet, one balance, infinite chains. CAKE framework, protocols, UX revolution explained.',
     images: ['https://degen0x.com/og-chain-abstraction-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/chain-abstraction-multichain-ux-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

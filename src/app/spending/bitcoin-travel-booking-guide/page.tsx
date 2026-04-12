@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Bitcoin Travel Booking Guide',
     description: 'Book travel with Bitcoin. Travala, CheapAir, crypto payment methods.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/spending/bitcoin-travel-booking-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

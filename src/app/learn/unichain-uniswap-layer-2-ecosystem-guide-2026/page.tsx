@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Unichain Guide 2026 — Uniswap Layer 2, UNI Staking & DeFi Hub',
     description: 'Complete guide to Unichain in 2026: the Uniswap-built Layer 2 optimized for DeFi.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/unichain-uniswap-layer-2-ecosystem-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -22,11 +22,10 @@ export const metadata: Metadata = {
     description: 'Compare Arbitrum and Optimism Layer 2 solutions.',
     image: 'https://degen0x.com/og-compare.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/arbitrum-vs-optimism-comparison',
-  }};
-
+  };
+},
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

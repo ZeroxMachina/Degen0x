@@ -22,11 +22,10 @@ export const metadata: Metadata = {
     description: 'Compare hot and cold wallets: security, convenience, use cases.',
     image: 'https://degen0x.com/og-compare.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/hot-wallet-vs-cold-wallet',
-  }};
-
+  };
+},
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

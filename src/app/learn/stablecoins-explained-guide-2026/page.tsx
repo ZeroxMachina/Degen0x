@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Stablecoins Explained 2026: USDT, USDC, USDe & Beyond',
     description: 'Complete stablecoins guide for 2026. Compare USDT, USDC, USDe, USDS — fees, risks, yield, and regulation.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/stablecoins-explained-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [

@@ -47,11 +47,9 @@ export const metadata: Metadata = {
       'Master impermanent loss: understand the mechanics, calculate IL at scale, deploy concentrated liquidity strategies, and stay profitable as an LP.',
     images: ['https://degen0x.com/og-impermanent-loss-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/impermanent-loss-liquidity-providing-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

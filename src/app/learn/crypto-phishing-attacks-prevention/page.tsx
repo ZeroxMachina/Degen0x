@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-phishing-attacks-prevention'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Crypto Phishing Attacks & Prevention: Security 2026',

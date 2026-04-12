@@ -41,11 +41,9 @@ export const metadata: Metadata = {
     title: 'AI Agents & Decentralized AI in Crypto — Complete Guide 2026 | degen0x',
     description: 'How AI agents are revolutionizing DeFi, trading, and decentralized machine learning. Learn Bittensor, Virtuals, Render, and the rise of autonomous on-chain agents.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ai-agents-decentralized-ai-crypto-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -600,7 +598,7 @@ export default function AIAgentsGuide() {
             <strong>2. Real Yield vs. Inflation Yield:</strong> Bittensor and Render distribute tokens from protocol inflation (new tokens created). Virtuals agents distribute real yield (earned from market activity). Real yield is sustainable; inflation yield depends on token price. Protocols that generate real yield are more defensible.
           </p>
 
-          <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginbottom: 16 }}>
+          <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             <strong>3. Reinvestment & Compounding:</strong> Virtuals agents reinvest 20% of profits to grow capital. This increases future yield potential. Bittensor validators can stake TAO earnings to compound. Compounding protocols have exponential value curves.
           </p>
 

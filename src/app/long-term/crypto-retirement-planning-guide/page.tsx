@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     title: 'Crypto Retirement Planning Guide 2026',
     description: 'Portfolio allocation, Bitcoin IRAs, tax-efficient withdrawals for retirement.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/long-term/crypto-retirement-planning-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

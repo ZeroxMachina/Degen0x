@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/drift-protocol-solana-perps-dex-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Drift Protocol: Solana Perpetual Futures DEX Guide 2026',

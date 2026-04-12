@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Crypto Algorithmic Trading | degen0x',
     description: 'Build momentum, mean reversion, arbitrage bots on Hummingbot, Freqtrade.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/algorithmic-crypto-trading-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -45,11 +45,9 @@ export const metadata: Metadata = {
       'Master gas fees: EIP-1559, blobs, L2 optimization, timing, and save 80%+ on transaction costs in 2026.',
     images: ['https://degen0x.com/og-ethereum-gas-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-gas-fees-optimization-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

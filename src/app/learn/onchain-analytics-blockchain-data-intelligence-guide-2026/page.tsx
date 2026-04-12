@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/onchain-analytics-blockchain-data-intelligence-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Onchain Analytics: Master Blockchain Data Intelligence',

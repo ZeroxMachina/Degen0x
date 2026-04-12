@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Flash loan guide with Aave, dYdX examples, arbitrage, liquidation, security.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/flash-loans-explained-how-they-work',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

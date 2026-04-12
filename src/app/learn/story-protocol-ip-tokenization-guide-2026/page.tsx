@@ -44,11 +44,9 @@ export const metadata: Metadata = {
     description: 'Master Story Protocol: IP tokenization, Programmable IP Licenses, IP Assets, AI agents, and $IP token economics for programmable intellectual property.',
     images: ['https://degen0x.com/og-story-protocol-ip-tokenization-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/story-protocol-ip-tokenization-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

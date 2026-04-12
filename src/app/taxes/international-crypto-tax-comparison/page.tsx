@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     title: 'Crypto Taxes Around the World 2026',
     description: 'Compare US 37%, Portugal 0%, Singapore 0%, Germany 0%, UAE 0% tax rates.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/international-crypto-tax-comparison',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

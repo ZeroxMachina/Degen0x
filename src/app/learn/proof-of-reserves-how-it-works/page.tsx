@@ -20,11 +20,9 @@ export const metadata: Metadata = {
     description: 'Merkle trees, Chainlink PoR, and solvency verification post-FTX collapse.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/proof-of-reserves-how-it-works',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -281,7 +279,7 @@ export default function ProofOfReservesExplained() {
             Chainlink nodes query an exchange&apos;s API: "What is your Bitcoin reserve balance?" They cross-reference with on-chain data (verify wallet balances on blockchain). If multiple nodes agree, Chainlink publishes the reserve data on-chain with timestamp. Smart contracts can query this data, enabling automated monitoring of reserves.
           </p>
           <h3 style={h3Style}>Chainlink PoR Use Cases</h3>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>
             1. WBTC (wrapped Bitcoin): Chainlink PoR verifies that Alchemy custodian holds enough Bitcoin to back circulating WBTC. 2. Stablecoin reserves: USDC issuer publishes reserve data via Chainlink (cash, short-term securities backing USDC). 3. Exchange monitoring: Protocols can read Chainlink PoR feeds to check if exchange reserves are declining (early warning of insolvency).
           </p>
           <h3 style={h3Style}>Limitations</h3>
@@ -335,7 +333,7 @@ export default function ProofOfReservesExplained() {
             The retraction highlighted several issues: 1. Mazars did not verify liabilities (customer deposits). 2. Mazars did not verify Binance&apos;s accounting (could balances be double-counted?). 3. Mazars did not continuously monitor reserves. 4. A one-time audit provides false confidence (reserves could decline next week). The retraction damaged trust in third-party PoR audits.
           </p>
           <h3 style={h3Style}>Regulatory Pushback</h3>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>
             Regulators increasingly recognize PoR is insufficient for investor protection. SEC and FCA emphasize need for Proof of Solvency. Regulatory frameworks in development (Hong Kong, Singapore, UK) mandate exchanges maintain adequate capital and undergo comprehensive audits, not just PoR.
           </p>
           <div style={infoBoxStyle}>

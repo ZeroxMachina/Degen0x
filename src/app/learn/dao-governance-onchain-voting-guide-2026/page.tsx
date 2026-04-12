@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'DAO Governance & Onchain Voting 2026: Complete Guide',
     description: 'Learn onchain voting, DAO governance platforms, token voting vs. quadratic voting, decision markets, and participation strategies.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/dao-governance-onchain-voting-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [

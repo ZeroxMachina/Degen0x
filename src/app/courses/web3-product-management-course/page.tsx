@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master Web3 PM: tokenomics design, governance frameworks, DeFi strategy, and protocol scaling.',
     image: 'https://degen0x.com/og-web3-pm.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/courses/web3-product-management-course',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

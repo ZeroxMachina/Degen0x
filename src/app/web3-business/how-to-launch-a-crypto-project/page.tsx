@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/how-to-launch-a-crypto-project'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'How to Launch a Crypto Project: Complete 2026 Guide',

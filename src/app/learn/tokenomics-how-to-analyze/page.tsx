@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'BTC 21M cap, ETH deflationary, vesting schedules, burn mechanisms.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/tokenomics-how-to-analyze',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

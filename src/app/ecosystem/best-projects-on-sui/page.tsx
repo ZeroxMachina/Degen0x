@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Sui L1: Cetus DEX ($300M TVL), Turbos farming, lending protocols, Move language advantages, $600M+ ecosystem TVL.',
     image: 'https://degen0x.com/og-ecosystem.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/best-projects-on-sui',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

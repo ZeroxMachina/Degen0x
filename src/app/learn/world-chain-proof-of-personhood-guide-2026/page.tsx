@@ -295,7 +295,7 @@ export default function WorldChainProofOfPersonhoodGuidePage() {
             World Chain's innovation is in its sequencer design. For transactions submitted by World ID-verified users, the sequencer reserves priority blockspace and provides gas credits. This means verified users get faster inclusion, lower costs, and better UX compared to unverified accounts. Non-verified transactions still work but with standard fees and ordering—effectively creating a two-tier system that incentivizes human verification.
           </p>
 
-          <h3 style={{ fontSize: '20px', fontWeight: '600', marginbottom: '12px', color: S.blue, marginTop: '24px' }}>
+          <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: S.blue, marginTop: '24px' }}>
             Gas Allowances & Micro-Transactions
           </h3>
 

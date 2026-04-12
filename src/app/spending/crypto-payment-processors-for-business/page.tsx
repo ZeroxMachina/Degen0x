@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     title: 'Crypto Payment Processors for Business 2026',
     description: 'Compare BitPay, Coinbase Commerce, BTCPay, CoinGate, and more.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/spending/crypto-payment-processors-for-business',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

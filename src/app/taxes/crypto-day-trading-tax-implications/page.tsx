@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-day-trading-tax-implications'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Day Trading Tax Implications | Short-Term Capital Gains | degen0x',

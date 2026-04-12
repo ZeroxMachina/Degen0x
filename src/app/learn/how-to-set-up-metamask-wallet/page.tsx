@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Download, create, secure, and configure your MetaMask wallet for Ethereum, Polygon, Arbitrum, and Base.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/how-to-set-up-metamask-wallet',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Institutional Crypto Custody Guide 2026 | MPC & HSM',
     description: 'Learn how institutions secure crypto at scale: MPC, HSM, multi-sig, regulatory compliance, and enterprise custody providers.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-custody-solutions-institutional-mpc-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

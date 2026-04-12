@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Understand the Bitcoin Rainbow Chart logarithmic regression bands.',
     image: 'https://degen0x.com/og-tools-bitcoin-rainbow.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/bitcoin-rainbow-chart',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

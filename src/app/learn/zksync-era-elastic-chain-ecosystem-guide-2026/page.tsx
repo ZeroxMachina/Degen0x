@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/zksync-era-elastic-chain-ecosystem-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'zkSync Era Elastic Chain Ecosystem Guide 2026',

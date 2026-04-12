@@ -30,11 +30,9 @@ export const metadata: Metadata = {
     description: 'Blob scaling, EOF, and what rollups need to ship before activation.',
     images: ["https://degen0x.com/og-ethereum-fusaka-peerdas-2026.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-fusaka-peerdas-upgrade-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

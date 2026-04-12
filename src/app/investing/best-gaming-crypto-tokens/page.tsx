@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare gaming tokens, live game counts, market caps, and AAA blockchain gaming catalysts.',
     image: 'https://degen0x.com/og-gaming-tokens.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-gaming-crypto-tokens',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

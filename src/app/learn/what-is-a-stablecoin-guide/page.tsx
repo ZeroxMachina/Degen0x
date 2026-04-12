@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Stablecoins explained: types, mechanics, top coins, risks, regulations. USDT $140B+, USDC $60B+, DAI, FRAX.',
     images: ['https://degen0x.com/og-learn.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-a-stablecoin-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

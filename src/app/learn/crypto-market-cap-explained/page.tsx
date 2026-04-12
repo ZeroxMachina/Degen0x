@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master market cap calculation and valuation metrics.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-market-cap-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

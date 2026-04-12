@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to top StarkNet DeFi projects. Learn about DEXs, lending, wallets, and the StarkNet ecosystem growth.',
     image: 'https://degen0x.com/og-best-projects-on-starknet.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/best-projects-on-starknet',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

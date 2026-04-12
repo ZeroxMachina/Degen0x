@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Decentralized social, 40K-60K DAU, Snapchain, Mini Apps.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/farcaster-decentralized-social-protocol-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master consensus mechanisms: PoW, PoS, DPoS, PoH, Tendermint. Energy use, validator requirements, finality time, and MEV implications.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/blockchain-consensus-mechanisms-compared',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

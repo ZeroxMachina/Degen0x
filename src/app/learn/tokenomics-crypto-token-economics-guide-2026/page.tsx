@@ -46,11 +46,9 @@ export const metadata: Metadata = {
       'Learn token supply mechanics, vesting schedules, inflation models, utility assessment, and red flags for evaluating crypto tokenomics.',
     images: ['https://degen0x.com/og-tokenomics-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/tokenomics-crypto-token-economics-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

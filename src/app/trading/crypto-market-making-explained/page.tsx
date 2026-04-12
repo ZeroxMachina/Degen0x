@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Master bid-ask spreads, inventory management, and market making strategies.",
     image: "https://degen0x.com/og-trading.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/crypto-market-making-explained',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

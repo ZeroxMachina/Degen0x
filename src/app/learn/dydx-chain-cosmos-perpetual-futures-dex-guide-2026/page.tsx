@@ -29,11 +29,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to dYdX Chain: Cosmos appchain, MegaVault, permissionless markets, and DYDX tokenomics. $200M+ daily volume.',
     image: 'https://degen0x.com/og-dydx-chain-guide.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/dydx-chain-cosmos-perpetual-futures-dex-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

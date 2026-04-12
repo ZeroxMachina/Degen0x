@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master Kamino automated vaults on Solana: 10-15% APY, auto-compounding, yield optimization strategies.',
     image: 'https://degen0x.com/og-kamino-finance.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/kamino-finance-solana-lending',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

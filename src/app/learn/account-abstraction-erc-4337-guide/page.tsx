@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Learn ERC-4337 smart accounts, gas sponsorship, paymasters, and implementations like Safe and Biconomy.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/account-abstraction-erc-4337-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

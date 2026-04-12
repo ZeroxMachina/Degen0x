@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     title: 'Onchain Order Books & CLOBs Guide 2026',
     description: 'CLOBs vs AMMs: architecture, capital efficiency, MEV, and the protocols reshaping onchain trading. dYdX v4, Sei, Orderly, Phoenix & more.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/onchain-order-books-clob-dex-trading-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -641,7 +639,7 @@ export default function OnchainOrderBooksGuide() {
             Solana\&apos;s advantage is speed and finality: transactions settle in ~400ms and are irreversible. No bridges, no appchain governance overhead, just fast blockchain trading. However, Solana\&apos;s network stability has been a historical concern — during high-load periods, the network has experienced slowdowns and occasional outages. Additionally, Solana\&apos;s validator set is more concentrated than Ethereum or dYdX, creating centralization risks.
           </p>
 
-          <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginbottom: 16 }}>
+          <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             MEV still exists on Solana. While Solana\&apos;s high throughput reduces MEV\&apos;s impact, validators can still influence order sequencing. Protocols like the Jito MEV system help, but MEV-free Solana trading remains an open challenge.
           </p>
         </section>

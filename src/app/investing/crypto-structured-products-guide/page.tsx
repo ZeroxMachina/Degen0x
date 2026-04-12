@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Dual investment (8-12%), shark fin (70-150% upside), principal-protected (3-5%). Real issuer analysis.',
     image: 'https://degen0x.com/og-structured-products.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-structured-products-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -250,7 +248,7 @@ export default function CryptoStructuredProductsGuide() {
           </div>
 
           <div style={infoBoxStyle}>
-            <h3 style={{ fontSize: 18, fontWeight: 600, marginbottom: 12, color: '#e6edf3' }}>Accumulator Products (Algorithmic DCA)</h3>
+            <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 12, color: '#e6edf3' }}>Accumulator Products (Algorithmic DCA)</h3>
             <p style={{ marginBottom: 0, lineHeight: 1.8 }}>
               Automatically buy on dips, sell on highs. DCA-like wrapped in product form. Example: USDC accumulator buys BTC every dip &lt;10%. Returns: 5-8% via mechanical discipline. Risk: most opaque, hidden trading costs, forced buys in crashes.
             </p>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/jupiter-dex-aggregator-solana-trading-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Jupiter DEX Aggregator: Master Solana Trading 2026',

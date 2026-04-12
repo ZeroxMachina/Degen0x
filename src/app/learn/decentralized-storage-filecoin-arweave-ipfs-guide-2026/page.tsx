@@ -47,11 +47,9 @@ export const metadata: Metadata = {
     description: 'Master decentralized storage: Filecoin, Arweave, IPFS, token economics, and Web3 use cases for 2026.',
     images: ['https://degen0x.com/og-decentralized-storage-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/decentralized-storage-filecoin-arweave-ipfs-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Sub-second transaction confirmations via cryptographic commitments.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-preconfirmations-preconfs-fast-transactions-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

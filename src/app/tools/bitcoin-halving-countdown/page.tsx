@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Track Bitcoin halving cycle countdown. 2028 halving cuts block reward.',
     image: 'https://degen0x.com/og-tools-halving.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/bitcoin-halving-countdown',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

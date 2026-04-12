@@ -1,6 +1,5 @@
 'use client';
 
-import { Metadata } from 'next';
 import { useState } from 'react';
 
 interface CryptoCorrelation {
@@ -86,29 +85,6 @@ const calculateStats = () => {
 };
 
 const stats = calculateStats();
-
-export const metadata: Metadata = {
-  title: 'Crypto Correlation Matrix | degen0x',
-  description: 'Analyze asset correlations to optimize portfolio diversification. Discover how crypto assets move together and build better-balanced portfolios.',
-  openGraph: {
-    title: 'Correlation Matrix',
-    description: 'Discover how crypto assets move together',
-    images: [
-      {
-        url: 'https://degen0x.com/og-correlation-matrix.svg',
-        width: 1200,
-        height: 630,
-        alt: 'Correlation Matrix Tool',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Correlation Matrix',
-    description: 'Discover how crypto assets move together',
-    images: ['https://degen0x.com/og-correlation-matrix.svg'],
-  },
-};
 
 export default function CorrelationMatrixPage() {
   const [hoveredCell, setHoveredCell] = useState<{

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'DeFi vs CeFi lending rates comparison. Aave 5% vs Nexo 6%, Compound vs BlockFi. Risk analysis, liquidation comparison, best for your strategy.',
     image: 'https://degen0x.com/og-crypto-loans.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/defi-vs-cefi-lending-rates',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

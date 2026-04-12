@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete altcoin exchange guide: Binance (600+ pairs), KuCoin (1200+), MEXC (2000+), Gate.io, Uniswap, Jupiter. Listing speed, gem finder, fees comparison.',
     image: 'https://degen0x.com/og-exchanges.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/exchanges/best-crypto-exchange-for-altcoins',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

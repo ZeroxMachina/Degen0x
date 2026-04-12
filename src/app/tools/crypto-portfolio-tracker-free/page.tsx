@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-portfolio-tracker-free',
-  }};
-
+  };
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Crypto Portfolio Tracker Free 2026', description: 'Portfolio tracking tools', image: 'https://degen0x.com/og-tools.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is CoinGecko portfolio tracker free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, completely free. 15+ chains (Ethereum, Solana, Polygon, etc). Web + mobile. No ads. Syncs exchanges (limited API keys).' } }, { '@type': 'Question', name: 'DeBank for DeFi?', acceptedAnswer: { '@type': 'Answer', text: 'DeBank best for DeFi tracking. Shows LP positions, staking, vault balances. 15+ chains. Liquidity pool P&L. Best for complex DeFi users.' } }, { '@type': 'Question', name: 'What is wallet aggregation?', acceptedAnswer: { '@type': 'Answer', text: 'Connect multiple wallets/exchanges, see total portfolio. Trackers aggregate: one address per wallet, consolidated view.' } }, { '@type': 'Question', name: 'Can portfolio trackers calculate taxes?', acceptedAnswer: { '@type': 'Answer', text: 'No (mostly). They track current holdings, not realized gains. Use tax calculators (Koinly) for realized P&L. Trackers show unrealized.' } }, { '@type': 'Question', name: 'Is on-chain tracking safe?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. View-only (read wallets, no signing). No private keys exposed. Safe for public addresses (non-anon).' } }, { '@type': 'Question', name: 'Best for alerts?', acceptedAnswer: { '@type': 'Answer', text: 'Zapper/Zerion: price alerts ($5k threshold). CoinGecko: basic. DeBank: minimal. Check feature if want alerts.' } }] } };
 
 export default function BestCryptoPortfolioTracker() {

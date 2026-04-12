@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Save 90% on gas: Layer 2s ($0.01), time transactions, batch swaps.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-gas-fees-how-to-save',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

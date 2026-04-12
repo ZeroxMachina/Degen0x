@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Aave V3 Complete Guide guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.',
     image: 'https://degen0x.com/og-defi-lending.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/aave-v3-complete-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

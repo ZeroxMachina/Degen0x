@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to Morpho Protocol lending. Learn about Morpho Blue peer-to-peer matching, optimized rates, $1B+ TVL, and curated vaults.',
     image: 'https://degen0x.com/og-defi-lending.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/morpho-protocol-lending-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

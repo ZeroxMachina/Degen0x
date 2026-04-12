@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Overcollateralized lending: LTV ratios, health factors, liquidation triggers, and safe DeFi borrowing strategies.',
     image: 'https://degen0x.com/og-overcollateralized-loans.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/overcollateralized-crypto-loan-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

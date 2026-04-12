@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare providers, Roth strategies, and tax-deferred Bitcoin accumulation.',
     image: 'https://degen0x.com/og-long-term.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/long-term/bitcoin-ira-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'Best wallet for Arbitrum in 2026: MetaMask, Rabby, Coinbase Wallet, Trust Wallet & Ledger. Compare features, gas costs, bridging, and top dApps.',
     image: 'https://degen0x.com/og-wallets.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-arbitrum',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

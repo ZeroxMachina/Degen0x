@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'No KYC Crypto Loan Platforms guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.',
     image: 'https://degen0x.com/og-crypto-loans.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/no-kyc-crypto-loan-platforms',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

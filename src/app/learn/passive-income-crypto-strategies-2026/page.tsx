@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Earn 2-40% APY on crypto: staking, farming, lending, liquidity pools.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/passive-income-crypto-strategies-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

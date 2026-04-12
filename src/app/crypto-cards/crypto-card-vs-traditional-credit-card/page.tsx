@@ -20,11 +20,9 @@ export const metadata: Metadata = {
     description: 'Compare rewards, fees, credit building, and tax treatment of crypto cards vs traditional credit cards.',
     image: 'https://degen0x.com/og-crypto-cards.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/crypto-card-vs-traditional-credit-card',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

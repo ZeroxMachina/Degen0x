@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'DAOs, governance tokens, voting mechanisms. Learn from MakerDAO, Uniswap, Aave, and Lido.',
     image: 'https://degen0x.com/og-dao.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-a-dao-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

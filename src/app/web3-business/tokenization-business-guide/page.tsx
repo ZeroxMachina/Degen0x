@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     title: 'RWA Tokenization Business Guide 2026',
     description: 'Polymath, Securitize, tZERO, RealT, and the $19B tokenization market.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/web3-business/tokenization-business-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

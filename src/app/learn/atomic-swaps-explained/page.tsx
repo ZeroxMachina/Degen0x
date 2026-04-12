@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Atomic Swaps Explained: Trustless Cross-Chain Trading',
     description: 'Learn trustless cross-chain trading with atomic swaps and HTLCs.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/atomic-swaps-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'Best wallets for Layer 2 in 2026. Compare MetaMask, Rabby, Coinbase, Phantom, OKX. Multi-chain support, bridging, gas optimization guide.',
     image: 'https://degen0x.com/og-wallets.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-layer-2',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

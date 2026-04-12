@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare yield rates, insurance coverage, and withdrawal conditions across Nexo, YouHodler, Ledn, Crypto.com, and DeFi protocols.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-crypto-savings-accounts-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

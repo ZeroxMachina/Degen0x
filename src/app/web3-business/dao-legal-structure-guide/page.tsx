@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/dao-legal-structure-guide'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'DAO Legal Structure Guide 2026 | Wyoming LLC Marshall Islands',

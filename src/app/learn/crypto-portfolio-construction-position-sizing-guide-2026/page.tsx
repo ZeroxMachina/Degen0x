@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     title: 'Crypto Portfolio Construction & Position Sizing Guide 2026',
     description: 'Learn Kelly criterion, risk parity, correlation analysis, and position sizing for crypto portfolios. Master allocation frameworks and rebalancing.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-portfolio-construction-position-sizing-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

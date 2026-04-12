@@ -20,11 +20,10 @@ export const metadata: Metadata = {
     description: 'CEX vs DEX: complete comparison of features, fees, and use cases.',
     image: 'https://degen0x.com/og-compare.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/centralized-vs-decentralized-exchange',
-  }};
-
+  };
+},
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

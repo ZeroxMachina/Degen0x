@@ -29,11 +29,9 @@ export const metadata: Metadata = {
     description: 'IRS staking taxes: ordinary income at FMV, cost basis, Jarrett case details.',
     image: 'https://degen0x.com/og-taxes.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-staking-tax-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Nexus Mutual Smart Contract Cover | degen0x',
     description: '$500M+ cover: pricing, NXM staking, member voting claims.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/insurance/smart-contract-cover-nexus-mutual',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

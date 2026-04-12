@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Earn 5-8% APY on stablecoins with Aave, Curve, Lido. Capital preservation and passive income.',
     image: 'https://degen0x.com/og-stablecoin-yield.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/long-term/stablecoin-yield-long-term-strategy',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

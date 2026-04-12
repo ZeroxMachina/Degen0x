@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Learn how to buy Ethereum as a complete beginner. Compare exchanges, fund accounts, execute your first ETH purchase, and transfer to your own wallet securely.',
     image: 'https://degen0x.com/og-learn-ethereum.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/how-to-buy-ethereum-for-beginners',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

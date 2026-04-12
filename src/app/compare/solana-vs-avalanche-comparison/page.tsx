@@ -22,11 +22,10 @@ export const metadata: Metadata = {
     description: 'Compare Solana and Avalanche: TPS, fees, DeFi TVL, ecosystem, consensus mechanisms.',
     image: 'https://degen0x.com/og-compare.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/solana-vs-avalanche-comparison',
-  }};
-
+  };
+},
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

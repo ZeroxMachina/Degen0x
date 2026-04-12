@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to Bitcoin Layer 2s in 2026. Learn about Lightning Network, Stacks smart contracts, BitVM computation, and compare all major Bitcoin L2 solutions.',
     image: 'https://degen0x.com/og-bitcoin-layer-2.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bitcoin-layer-2-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

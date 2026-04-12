@@ -29,11 +29,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to Arbitrum: Stylus, GMX, Pendle, Orbit chains, and the largest Ethereum L2 DeFi ecosystem.',
     images: ['https://degen0x.com/og-arbitrum-ecosystem-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/arbitrum-stylus-ecosystem-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

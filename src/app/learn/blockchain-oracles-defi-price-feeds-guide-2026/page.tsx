@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to crypto oracles, price feeds, oracle attacks, and DeFi security. Learn how Chainlink, Pyth, and RedStone power blockchain data.',
     image: 'https://degen0x.com/og-oracles-guide.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/blockchain-oracles-defi-price-feeds-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

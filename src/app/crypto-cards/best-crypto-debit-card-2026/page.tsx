@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/best-crypto-debit-card-2026',
-  }};
-
+  };
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Crypto Debit Card 2026', description: 'Crypto card comparison', image: 'https://degen0x.com/og-cards.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Coinbase Card best?', acceptedAnswer: { '@type': 'Answer', text: '4% cash back. Auto-converts crypto to USD instantly. No KYC for limits. Visa support everywhere. US only. Best for convenience.' } }, { '@type': 'Question', name: 'How does auto-conversion work?', acceptedAnswer: { '@type': 'Answer', text: 'Spend crypto directly. Card processor auto-converts to USD immediately. Merchant sees USD. You get cashback in crypto (or stable).' } }, { '@type': 'Question', name: 'Crypto.com Visa tiers?', acceptedAnswer: { '@type': 'Answer', text: '1-5% cashback. Tiers by CRO stake (Ruby $400, Jade $4k, Obsidian $40k). Lower tier = 2%, higher = 5% + perks.' } }, { '@type': 'Question', name: 'Tax implications of spending crypto?', acceptedAnswer: { '@type': 'Answer', text: 'Each transaction = taxable event (cost basis vs conversion price = gain/loss). Crypto.com/Coinbase provide tax forms. Track all transactions.' } }, { '@type': 'Question', name: 'Gnosis Pay: no KYC?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, no KYC limits (€200/month for unverified). Requires Gnosis Safe multisig. Unique, privacy-focused.' } }, { '@type': 'Question', name: 'ATM withdrawals?', acceptedAnswer: { '@type': 'Answer', text: 'Coinbase: $2-3 ATM fee. Crypto.com: unlimited free (Jade+). Bybit: $1.50 fee. Check your card.' } }] } };
 
 export default function BestCryptoDebitCard() {

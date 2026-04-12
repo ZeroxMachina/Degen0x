@@ -46,11 +46,9 @@ export const metadata: Metadata = {
       "How to earn from decentralized physical infrastructure — wireless, compute, storage, and mapping networks in 2026.",
     images: ["https://degen0x.com/og-depin-guide.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/depin-decentralized-infrastructure-guide-2026',
-  }};
-
+  };
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = {
   "@context": "https://schema.org",

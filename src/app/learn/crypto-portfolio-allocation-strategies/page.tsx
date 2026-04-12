@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master portfolio construction and rebalancing.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-portfolio-allocation-strategies',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

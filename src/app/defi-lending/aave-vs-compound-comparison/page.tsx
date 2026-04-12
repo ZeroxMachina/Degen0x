@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/aave-vs-compound-comparison',
-  }};
-
+  };
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Aave V3 vs Compound V3 Comparison 2026', description: 'Deep comparison', image: 'https://degen0x.com/og-defi.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Aave or Compound better?', acceptedAnswer: { '@type': 'Answer', text: 'Aave: more features, multi-chain, higher yield potential. Compound: simpler, safer, single-token markets. Choose based on experience level.' } }, { '@type': 'Question', name: 'Aave: 8 chains vs Compound: 2?', acceptedAnswer: { '@type': 'Answer', text: 'Aave multi-chain (Ethereum, Arbitrum, Optimism, Polygon, Base, etc). Compound just Ethereum + Base. Aave flexibility, Compound simplicity.' } }, { '@type': 'Question', name: 'What is e-mode vs isolation?', acceptedAnswer: { '@type': 'Answer', text: 'Aave e-mode: 97% LTV correlated assets (USDC/USDT). Compound: isolated markets (single token = safer). E-mode riskier, isolation safer.' } }, { '@type': 'Question', name: 'Flash loans: Aave only?', acceptedAnswer: { '@type': 'Answer', text: 'Aave has flash loans (borrow unlimited, repay same block). Compound no. Unique Aave feature for advanced users.' } }, { '@type': 'Question', name: 'AAVE vs COMP token?', acceptedAnswer: { '@type': 'Answer', text: 'AAVE: ~$500 price, governance token, value from protocol fees. COMP: ~$100, governance, more limited fee accrual.' } }, { '@type': 'Question', name: 'Which for $50K deposit?', acceptedAnswer: { '@type': 'Answer', text: 'Aave: better rates, more options, e-mode if know risk. Compound: safer for beginners, sleep soundly. Both excellent.' } }] } };
 
 export default function AaveVsCompoundComparison() {

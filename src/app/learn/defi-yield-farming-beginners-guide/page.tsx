@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Learn DeFi yield farming: liquidity pools, impermanent loss, Aave APYs, Compound interest, Curve rewards. Beginner-friendly guide with risk comparison table.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/defi-yield-farming-beginners-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

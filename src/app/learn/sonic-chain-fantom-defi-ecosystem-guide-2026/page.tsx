@@ -46,11 +46,9 @@ export const metadata: Metadata = {
     description: 'Master Sonic Chain: 10,000+ TPS L1, S token, FeeM developer incentives, DeFi protocols, and fee sharing model that rewards builders.',
     images: ['https://degen0x.com/og-sonic-chain-fantom-defi-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/sonic-chain-fantom-defi-ecosystem-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

@@ -555,7 +555,7 @@ export default function SmartContractSecurityAuditPage() {
             Top protocols are audited by multiple firms. Two or more audits from different companies is reassuring.
           </p>
 
-          <h3 style={{ fontSize: '20px', fontWeight: 600, marginbottom: '16px', marginTop: '24px', color: '#e6edf3' }}>Step 4: Verify Auditor Reputation</h3>
+          <h3 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px', marginTop: '24px', color: '#e6edf3' }}>Step 4: Verify Auditor Reputation</h3>
           <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '20px' }}>
             Search the firm on Twitter or their website. Check:
           </p>

@@ -40,11 +40,9 @@ export const metadata: Metadata = {
     description:
       "Spend your crypto anywhere with debit and credit cards. Bleap, Crypto.com, BitPay, and more.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-cards-spend-crypto-guide-2026',
-  }};
-
+  };
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",

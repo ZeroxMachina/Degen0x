@@ -47,11 +47,9 @@ export const metadata: Metadata = {
       'Master cross-chain bridges: LayerZero, Wormhole, Chainlink CCIP, security models, bridge hacks, and safe interoperability practices.',
     images: ['https://degen0x.com/og-cross-chain-bridges-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/cross-chain-bridges-interoperability-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

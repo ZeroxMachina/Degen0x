@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Base's dominant DEX. $500M+ TVL, ve(3,3) flywheel, AERO token, MetaDEX03 upgrade. Full guide.",
     images: ["https://degen0x.com/og-aerodrome-finance-base-dex-2026.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/aerodrome-finance-base-dex-liquidity-guide-2026',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Article", "FAQPage"],

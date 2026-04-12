@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Ethena USDe Guide 2026 — Synthetic Dollar, sUSDe Yield & Delta-Neutral Strategy',
     description: 'Complete guide to Ethena\'s USDe synthetic dollar in 2026. Learn delta-neutral hedging, sUSDe yield, Converge network, and risks.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethena-usde-synthetic-dollar-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

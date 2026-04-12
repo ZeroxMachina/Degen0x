@@ -26,11 +26,9 @@ export const metadata: Metadata = {
     description: "Complete guide to Token-2022 SPL program with all extensions explained",
     images: ["https://degen0x.com/og-solana-token-extensions.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/solana-token-extensions-token-2022-guide-2026',
-  }};
-
+  };
 // Article + FAQPage structured data
 const structuredData = {
   "@context": "https://schema.org",

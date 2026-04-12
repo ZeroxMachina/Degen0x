@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Guide to crypto gift taxes: annual exclusion, lifetime exemption, step-up basis, Form 709 reporting requirements.',
     image: 'https://degen0x.com/og-taxes.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-gift-tax-rules',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

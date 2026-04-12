@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'DeFi Aggregators Explained',
     description: 'Learn 1inch Pathfinder, Fusion, Jupiter, Paraswap, CowSwap, and MEV-resistant swaps.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/defi-aggregators-explained-1inch',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

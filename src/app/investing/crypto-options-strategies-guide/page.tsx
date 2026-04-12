@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Master covered calls, protective puts, straddles & iron condors for crypto.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-options-strategies-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to DA layers in 2026. Learn Celestia, EigenDA, Avail, and how modular blockchains scale with dedicated data availability layers.',
     image: 'https://degen0x.com/og-data-availability.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/data-availability-modular-blockchains-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

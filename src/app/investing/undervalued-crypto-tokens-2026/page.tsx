@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Find undervalued tokens with fundamental analysis.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/undervalued-crypto-tokens-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

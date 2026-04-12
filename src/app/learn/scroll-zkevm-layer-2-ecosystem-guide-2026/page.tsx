@@ -44,8 +44,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/learn/scroll-zkevm-layer-2-ecosystem-guide-2026',
-  }};
-
+  };
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

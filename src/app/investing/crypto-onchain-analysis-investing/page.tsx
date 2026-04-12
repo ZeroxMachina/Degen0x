@@ -29,11 +29,9 @@ export const metadata: Metadata = {
     description: 'MVRV ratio, SOPR, exchange flows, whale tracking for market timing.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-onchain-analysis-investing',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

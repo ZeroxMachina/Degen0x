@@ -40,11 +40,9 @@ export const metadata: Metadata = {
       'Master AI agents in DeFi: Virtuals, AIXBT, Autonolas, autonomous trading, and strategies for 2026.',
     images: ['https://degen0x.com/og-ai-agents-deai-crypto.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ai-crypto-agents-autonomous-defi-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/crypto-project-tokenomics-design'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Tokenomics Design Guide 2026 | Supply Allocation Vesting',

@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'Head-to-head comparison of Coinbase Wallet and MetaMask. Features, security, fees, and which wallet is best for your needs. April 2026.',
     image: 'https://degen0x.com/og-wallets.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/coinbase-wallet-vs-metamask',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

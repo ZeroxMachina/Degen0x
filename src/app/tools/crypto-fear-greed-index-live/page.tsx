@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Crypto Fear & Greed Index Live',
     description: 'Real-time market sentiment tracking for crypto traders and investors.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-fear-greed-index-live',
-  }};
-
+  };
 const faqs = [
   {
     q: 'What does a Fear & Greed Index of 20 mean?',

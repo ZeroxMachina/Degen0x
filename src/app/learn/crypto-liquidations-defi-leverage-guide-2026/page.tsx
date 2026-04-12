@@ -44,11 +44,9 @@ export const metadata: Metadata = {
       'Understand liquidations: health factor, collateralization, cascading liquidations, liquidator bots, and how to protect your positions.',
     images: ['https://degen0x.com/og-crypto-liquidations-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-liquidations-defi-leverage-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

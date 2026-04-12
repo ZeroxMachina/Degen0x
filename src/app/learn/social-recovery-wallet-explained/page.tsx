@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     description: 'Guardian-based wallet security without seed phrases.',
     images: ['https://degen0x.com/og-learn.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/social-recovery-wallet-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

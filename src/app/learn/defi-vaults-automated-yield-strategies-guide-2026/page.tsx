@@ -46,11 +46,9 @@ export const metadata: Metadata = {
       'Learn DeFi vaults, ERC-4626, and automated yield strategies. Compare Yearn, Beefy, Morpho, and understand institutional vault adoption.',
     images: ['https://degen0x.com/og-defi-vaults-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/defi-vaults-automated-yield-strategies-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

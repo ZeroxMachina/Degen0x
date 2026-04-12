@@ -20,11 +20,9 @@ export const metadata: Metadata = {
     description: 'Compare PoR audits across Binance, Kraken, OKX, Bybit & Coinbase.',
     images: ['https://degen0x.com/og-exchanges.png'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/exchanges/crypto-exchange-proof-of-reserves-comparison',
-  }};
-
+  };
 export default function ProofOfReservesPage() {
   const containerStyle = {
     backgroundColor: '#0d1117',

@@ -47,11 +47,9 @@ export const metadata: Metadata = {
       'Master LRTs in 2026: ether.fi, Kelp DAO, Puffer—compound yield through liquid staking and restaking.',
     images: ['https://degen0x.com/og-liquid-restaking-tokens-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/liquid-restaking-tokens-lrt-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

@@ -36,11 +36,9 @@ export const metadata: Metadata = {
     description: "Top 5 crypto wallets for beginners: Coinbase Wallet, MetaMask, Trust Wallet, Exodus, Phantom. Security tips, setup guide, comparison table. Start safely.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-beginners-2026',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/defi-protocol-governance-guide'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'DeFi Protocol Governance Guide 2026 | Token Voting, ve-Model | degen0x',

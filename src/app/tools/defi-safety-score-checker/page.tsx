@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'DeFi Safety Score Checker',
     description: 'DeFi protocol risk assessment and safety scoring comparison.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/defi-safety-score-checker',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -18,11 +18,10 @@ export const metadata: Metadata = {
     title: 'Chainlink vs Pyth vs Band',
     description: 'Oracle network comparison: decentralized nodes vs first-party data vs delegated staking.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/chainlink-vs-pyth-vs-band',
-  }};
-
+  };
+},
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

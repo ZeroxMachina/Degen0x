@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'NFT ticketing anti-scalping solutions: GET Protocol 500K+ events, YellowHeart 50K+ events, creator royalties, blockchain verification.',
     image: 'https://degen0x.com/og-nft-ticketing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-ticketing-events-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

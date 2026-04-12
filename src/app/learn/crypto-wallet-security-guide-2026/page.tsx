@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to hardware wallets, seed phrase protection, phishing defense, and 2FA. Learn from $450M in Q1 2026 losses.',
     image: 'https://degen0x.com/og-wallet-security-2026.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-wallet-security-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

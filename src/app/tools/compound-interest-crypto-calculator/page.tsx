@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations for 2026.',
     image: 'https://degen0x.com/og-tools.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/compound-interest-crypto-calculator',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

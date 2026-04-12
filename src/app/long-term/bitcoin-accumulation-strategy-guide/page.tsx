@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'DCA backtests, value averaging, halving cycle timing, and Fear & Greed strategies.',
     image: 'https://degen0x.com/og-long-term.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/long-term/bitcoin-accumulation-strategy-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

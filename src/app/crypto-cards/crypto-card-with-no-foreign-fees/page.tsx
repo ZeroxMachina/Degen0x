@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Best crypto cards with zero foreign transaction fees: no FX markup, no ATM charges, international travel optimization. Compare 2026 options.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/crypto-card-with-no-foreign-fees',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

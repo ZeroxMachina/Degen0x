@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Top zkSync projects: SyncSwap, ZigZag, Mute.io, Space.fi, and more.',
     image: 'https://degen0x.com/og-ecosystem.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/best-projects-on-zksync',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

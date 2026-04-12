@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Concentrated Liquidity Uniswap V3',
     description: 'Learn tick ranges, fee tiers, IL risk, and automated LP strategies for V3.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/concentrated-liquidity-uniswap-v3',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security, convenience, costs.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-wallet-types-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

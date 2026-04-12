@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Best Projects on Linea',
     description: 'Top Linea DeFi projects: SyncSwap, Velocore, Mendi Finance, Horizondex.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/best-projects-on-linea',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

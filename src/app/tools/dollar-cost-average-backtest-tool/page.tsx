@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'DCA Backtest Tool Guide',
     description: 'Historical performance analysis of dollar-cost averaging on BTC/ETH.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/dollar-cost-average-backtest-tool',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

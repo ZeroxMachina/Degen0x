@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'DEX Aggregators Guide 2026: Jupiter, 1inch, CowSwap & More',
     description: 'How DEX aggregators find the best prices across 200+ liquidity sources. Compare Jupiter, 1inch, CowSwap, Odos.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/dex-aggregators-trade-routing-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [

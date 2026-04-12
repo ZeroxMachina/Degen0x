@@ -20,11 +20,9 @@ export const metadata: Metadata = {
     description: 'Discover how parallel transaction execution eliminates EVM bottlenecks. MonadBFT achieves 10,000 TPS.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/parallel-evm-explained-monad-sei',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

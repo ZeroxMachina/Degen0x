@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Learn ERC-20: transfer, approve, balanceOf. Compare ERC-721, ERC-1155. Understand approval vulnerabilities and token creation.',
     image: 'https://degen0x.com/og-erc20.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/erc-20-token-standard-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

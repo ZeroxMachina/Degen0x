@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to smart wallets, ERC-4337, EIP-7702, and how account abstraction eliminates seed phrases and enables gasless transactions.',
     image: 'https://degen0x.com/og-smart-wallets-account-abstraction.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/smart-wallets-account-abstraction-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

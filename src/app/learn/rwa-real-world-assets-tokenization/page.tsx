@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Tokenized Treasuries, real estate, bonds for institutional investors.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/rwa-real-world-assets-tokenization',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master crypto tax accounting: IRS Form 8949, DeFi taxation, NFT sales, software comparison.',
     image: 'https://degen0x.com/og-courses.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/courses/crypto-tax-accounting-course',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

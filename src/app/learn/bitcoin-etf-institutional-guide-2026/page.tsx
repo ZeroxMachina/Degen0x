@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to Bitcoin ETFs in 2026. $128B AUM, 38% institutional holdings. How ETF options and institutions are reshaping crypto markets.',
     image: 'https://degen0x.com/og-bitcoin-etf-guide.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bitcoin-etf-institutional-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

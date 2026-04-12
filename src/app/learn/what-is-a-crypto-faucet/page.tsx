@@ -20,11 +20,9 @@ export const metadata: Metadata = {
     description: 'Testnet faucets for free test ETH, LINK, and tokens. Mainnet faucets are rare but exist.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-a-crypto-faucet',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -43,11 +43,9 @@ export const metadata: Metadata = {
     description: 'Learn how LayerZero enables trustless cross-chain messaging across 120+ blockchains.',
     images: ['https://degen0x.com/og-layerzero-omnichain-interoperability-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/layerzero-omnichain-interoperability-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

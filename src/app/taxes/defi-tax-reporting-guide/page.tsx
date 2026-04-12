@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'DeFi taxation: LP tokens, yield farming, governance rewards, impermanent loss, Aave/Compound interest reporting.',
     image: 'https://degen0x.com/og-taxes.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/defi-tax-reporting-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

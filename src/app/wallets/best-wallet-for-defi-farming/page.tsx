@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: "MetaMask, Rabby, Phantom, Trust Wallet, Ledger for DeFi farming. Multi-chain, transaction simulation, approval management. 2026 DeFi wallet guide.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-defi-farming',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

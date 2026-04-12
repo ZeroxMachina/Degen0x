@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Bridge comparison, fees, security, wrapped tokens. Safe cross-chain transfers.',
     image: 'https://degen0x.com/og-bridge.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bridging-crypto-across-chains-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

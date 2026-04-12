@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Deep dive into DeFi composability. Learn flash loans, yield strategies, Aave+Uniswap+Yearn stacking, Curve wars, EigenLayer restaking, and composability risks.',
     image: 'https://degen0x.com/og-defi-composability.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/defi-composability-what-it-means',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-momentum-trading-strategy'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Momentum Trading Strategy 2026 | Moving Averages RSI',

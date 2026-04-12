@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Crypto Airdrop Tracker',
     description: 'Track airdrops and check eligibility with airdrop finder tools.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-airdrop-tracker',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

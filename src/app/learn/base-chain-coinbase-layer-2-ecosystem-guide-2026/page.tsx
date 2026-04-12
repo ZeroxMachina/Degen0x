@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Base Chain Ecosystem Guide 2026 — Coinbase Layer 2 Explained',
     description: 'Complete guide to Base, Coinbase\'s Ethereum Layer 2 in 2026. Explore the ecosystem, top dApps, TVL growth, and how to get started.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/base-chain-coinbase-layer-2-ecosystem-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

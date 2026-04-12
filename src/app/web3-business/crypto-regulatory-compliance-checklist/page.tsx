@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/crypto-regulatory-compliance-checklist'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Regulatory Compliance Checklist 2026 | KYC AML MSB',

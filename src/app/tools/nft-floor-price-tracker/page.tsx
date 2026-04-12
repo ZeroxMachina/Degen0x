@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea analytics. Cross-chain floor tracking.',
     image: 'https://degen0x.com/og-tools.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/nft-floor-price-tracker',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

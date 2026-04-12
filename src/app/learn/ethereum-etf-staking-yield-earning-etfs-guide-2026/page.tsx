@@ -43,11 +43,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to 8 Ethereum staking ETFs, yields, fee breakdown, BlackRock ETHB distribution model, and regulatory clarity.',
     images: ['https://degen0x.com/og-ethereum-etf-staking-guide-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026',
-  }};
-
+  };
 // Server-side structured data
 const articleStructuredData = {
   '@context': 'https://schema.org',

@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'DeFi Hack Insurance | degen0x',
     description: 'Nexus Mutual, InsurAce, Neptune, Unslashed comparison.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/insurance/defi-hack-insurance-comparison',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Funding Rates Explained',
     description: 'Learn perpetual swap funding, arbitrage, market sentiment, and risk management.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/funding-rates-crypto-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

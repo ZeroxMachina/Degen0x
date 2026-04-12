@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor), correlated pairs.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/impermanent-loss-defi-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -281,14 +279,14 @@ export default function ImpermanentLossDeFiExplained() {
 
         <section id="concentrated-liquidity" style={{ scrollMarginTop: 24 }}>
           <h2 style={h2Style}>6. Concentrated Liquidity (Uniswap v3)</h2>
-          <p style={{ marginbottom: 16, lineHeight: 1.8 }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
             Uniswap v3 lets you concentrate liquidity in a price range. Provide liquidity only between $3K-$5K ETH (vs. 0-infinity in v2). Benefits: higher fees (tighter spreads = less slippage = more fees). Drawback: IL increases if price moves outside your range. v3 is better for stable pairs, worse for volatile ones.
           </p>
         </section>
 
         <section id="il-protection" style={{ scrollMarginTop: 24 }}>
           <h2 style={h2Style}>7. IL Protection: Bancor Model</h2>
-          <p style={{ marginbottom: 16, lineHeight: 1.8 }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
             Bancor DAO provides IL insurance. If your LP position loses to IL, Bancor treasury reimburses. Cost: stake BNT (governance token). Benefit: zero IL risk. Trade-off: lower yields, BNT volatility risk. For risk-averse LPs: Bancor IL protection. For yield farmers: skip (earn 2-3x higher yields by taking IL risk).
           </p>
         </section>
@@ -381,7 +379,7 @@ export default function ImpermanentLossDeFiExplained() {
           </div>
           <div style={infoBoxStyle}>
             <h3 style={h3Style}>Is IL worse than centralized exchange counterparty risk?</h3>
-            <p style={{ marginbottom: 0, fontSize: 14 }}>
+            <p style={{ marginBottom: 0, fontSize: 14 }}>
               Different risks. IL is market risk (prices move). Counterparty risk is exchange risk (bankruptcy). Both significant. IL is manageable; counterparty risk is binary.
             </p>
           </div>

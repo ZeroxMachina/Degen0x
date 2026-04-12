@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     title: 'Stablecoin Spending Cards 2026',
     description: 'Use USDC and stablecoins for everyday spending with zero volatility risk.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/stablecoin-spending-card-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

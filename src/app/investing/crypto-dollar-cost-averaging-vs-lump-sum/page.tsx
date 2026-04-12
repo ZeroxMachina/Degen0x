@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Bitcoin and Ethereum DCA vs lump sum backtests with real numbers.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-dollar-cost-averaging-vs-lump-sum',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

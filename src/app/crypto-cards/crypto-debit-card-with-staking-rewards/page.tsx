@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Crypto debit cards with integrated staking rewards and real APY.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/crypto-debit-card-with-staking-rewards',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

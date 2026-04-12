@@ -47,11 +47,9 @@ export const metadata: Metadata = {
       'Complete guide to BitVM: off-chain computation, fraud proofs, OP_CAT activation debate, Bitlayer, Citrea, BOB Network, and Bitcoin programmability.',
     images: ['https://degen0x.com/og-bitvm-bitcoin-smart-contracts-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

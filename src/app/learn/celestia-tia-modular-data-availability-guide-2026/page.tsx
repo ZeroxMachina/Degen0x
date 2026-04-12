@@ -42,11 +42,9 @@ export const metadata: Metadata = {
       "Master Celestia\'s modular blockchain architecture, Data Availability Sampling, TIA tokenomics, and the future of modular scaling.",
     images: ["https://degen0x.com/og-celestia-tia-modular.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/celestia-tia-modular-data-availability-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

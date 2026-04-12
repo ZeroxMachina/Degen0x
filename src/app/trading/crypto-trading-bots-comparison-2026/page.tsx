@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare top crypto trading bots 2026.',
     image: 'https://degen0x.com/og-trading-bots.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/crypto-trading-bots-comparison-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

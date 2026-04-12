@@ -47,11 +47,9 @@ export const metadata: Metadata = {
     description: 'Master market making strategies, liquidity provision, AMM mechanics, and LP yield optimization in crypto.',
     images: ['https://degen0x.com/og-crypto-market-making-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-market-making-liquidity-provision-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

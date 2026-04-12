@@ -46,11 +46,9 @@ export const metadata: Metadata = {
       'Master portfolio rebalancing: strategies (time-based, threshold, hybrid, AI), tools, diversification, tax planning, and proven techniques to prevent portfolio drift.',
     images: ['https://degen0x.com/og-crypto-portfolio-rebalancing-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-portfolio-rebalancing-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'Best wallet for zkSync Era 2026: MetaMask, Rabby, OKX Wallet, Argent, Trust Wallet. ZK-proofs, account abstraction, gas costs, native bridge.',
     image: 'https://degen0x.com/og-wallets.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-zksync-era',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

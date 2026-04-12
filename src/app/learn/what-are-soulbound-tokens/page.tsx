@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Vitalik\'s vision for decentralized society. Learn EIP-5192, Galxe, Guild.xyz, Zupass, and on-chain credentials.',
     image: 'https://degen0x.com/og-soulbound.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-are-soulbound-tokens',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

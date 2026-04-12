@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Learn how NFT creators earn royalties on secondary sales, marketplace enforcement challenges, and on-chain solutions.',
     image: 'https://degen0x.com/og-nft-royalties.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-royalties-how-they-work',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

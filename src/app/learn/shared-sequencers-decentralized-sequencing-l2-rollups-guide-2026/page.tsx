@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Shared Sequencers & Decentralized Sequencing for L2 Rollups | degen0x',
     description: 'Learn how shared sequencers and decentralized sequencing solve centralized sequencer risks: Espresso, Radius, based rollups, and the future of L2 infrastructure.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/shared-sequencers-decentralized-sequencing-l2-rollups-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

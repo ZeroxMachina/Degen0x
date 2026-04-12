@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange selection for 2026.',
     image: 'https://degen0x.com/og-tools.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-exchange-fee-comparison-tool',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

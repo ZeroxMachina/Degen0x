@@ -45,11 +45,9 @@ export const metadata: Metadata = {
       'Master memecoin launchpads: bonding curves, token graduation, DEX trading, and competitor analysis.',
     images: ['https://degen0x.com/og-pumpfun-pumpswap-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/pumpfun-pumpswap-memecoin-launchpads-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

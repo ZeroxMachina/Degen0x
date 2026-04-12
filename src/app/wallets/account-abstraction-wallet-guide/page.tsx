@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Account Abstraction Wallets Guide',
     description: 'Master Safe, Argent, Biconomy, ZeroDev, Sequence. Learn ERC-4337, UserOperations, paymasters.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/account-abstraction-wallet-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

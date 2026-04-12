@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to perpetual DEXes and onchain derivatives trading in 2026. Learn Hyperliquid dominance, dYdX, GMX, and leverage strategies.',
     image: 'https://degen0x.com/og-perpetual-dex-guide.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/perpetual-dex-onchain-perps-trading-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

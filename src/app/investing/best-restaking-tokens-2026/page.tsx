@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Best Restaking Tokens 2026',
     description: 'EIGEN, ETHFI, PUFFER restaking token investments',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-restaking-tokens-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

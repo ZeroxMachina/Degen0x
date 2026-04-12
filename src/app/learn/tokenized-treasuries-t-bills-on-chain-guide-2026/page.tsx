@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     title: 'Tokenized Treasuries & T-Bills On-Chain Guide 2026',
     description: '$11B market, BUIDL/USYC/USDY/BENJI comparison, DeFi yields, institutional adoption, and TradFi-DeFi convergence.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/tokenized-treasuries-t-bills-on-chain-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -640,7 +638,7 @@ export default function TokenizedTreasuriesGuide() {
             <strong>Aave:</strong> Added BUIDL and USYC support in Q2 2025. Aave&apos;s governance voting enabled collateral onboarding; community supported it due to demand for lower-cost leverage.
           </p>
 
-          <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginbottom: 16 }}>
+          <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             <strong>GMX:</strong> Accepts BUIDL as collateral for leveraged perpetual positions. Traders use BUIDL to get margin funding at cheaper rates than USDC.
           </p>
 
@@ -690,7 +688,7 @@ export default function TokenizedTreasuriesGuide() {
             Several major DAOs have allocated portions of their treasuries to tokenized treasuries: (1) <strong>Uniswap</strong>—deployed $50M into USYC to improve treasury yields; (2) <strong>MakerDAO</strong>—allocated reserves to BUIDL to diversify from pure crypto collateral; (3) <strong>Aave</strong>—treasury diversification into USYC for risk management.
           </p>
 
-          <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginbottom: 16 }}>
+          <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             This adoption is rational: DAOs hold 2-5 years of runway in stablecoins. If a DAO has $100M in USDC reserves earning 0% and spending $20M annually, allocating 50% to USYC earning 4.7% APY adds $2.35M annually. Over 5 years, that&apos;s $12M additional runway—effectively extending the DAO&apos;s survival horizon by 7-8 months.
           </p>
 

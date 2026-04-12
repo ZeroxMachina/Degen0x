@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to Ethereum sharding, EIP-4844 blob transactions, and proto-danksharding explained.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-sharding-roadmap-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

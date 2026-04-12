@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master crypto whale tracking with Nansen, Arkham, DeBank. Learn whale behavior patterns and profitable trading signals.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-whale-watching-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

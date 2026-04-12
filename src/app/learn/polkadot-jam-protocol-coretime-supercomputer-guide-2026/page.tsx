@@ -21,11 +21,9 @@ export const metadata: Metadata = {
     title: "Polkadot JAM Protocol Guide 2026 | degen0x",
     description: "JAM, coretime, supercomputer scaling for Web3.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/polkadot-jam-protocol-coretime-supercomputer-guide-2026',
-  }};
-
+  };
 const faqData = [
   {
     question: "What is JAM (Join-Accumulate-Machine) protocol?",

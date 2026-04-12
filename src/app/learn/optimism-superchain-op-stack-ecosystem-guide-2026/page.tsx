@@ -25,11 +25,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to the Optimism Superchain, OP Stack framework, and its 34+ contributing chains.',
     images: ['https://degen0x.com/og-optimism-superchain-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/optimism-superchain-op-stack-ecosystem-guide-2026',
-  }};
-
+  };
 const BreadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

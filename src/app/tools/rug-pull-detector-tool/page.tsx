@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Rug Pull Detector: How to Avoid Scams 2026',
     description: 'Detect crypto rug pulls using RugCheck, TokenSniffer, GoPlus, and De.Fi Scanner. Learn red flags, contract audits, and on-chain forensics.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/rug-pull-detector-tool',
-  }};
-
+  };
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',

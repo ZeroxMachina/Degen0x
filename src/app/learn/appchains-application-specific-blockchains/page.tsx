@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'App-Chains Explained: Application-Specific Blockchains',
     description: 'Learn about app-chains and their advantages over monolithic blockchains.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/appchains-application-specific-blockchains',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

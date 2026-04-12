@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Hardhat vs Foundry vs Remix: complete comparison for smart contract development.",
     image: "https://degen0x.com/og-ecosystem.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/web3-business/web3-developer-tools-comparison',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

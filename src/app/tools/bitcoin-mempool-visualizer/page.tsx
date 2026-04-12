@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Bitcoin Mempool Visualizer Guide',
     description: 'Mempool.space, fee estimation, RBF and CPFP strategies for Bitcoin transactions.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/bitcoin-mempool-visualizer',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

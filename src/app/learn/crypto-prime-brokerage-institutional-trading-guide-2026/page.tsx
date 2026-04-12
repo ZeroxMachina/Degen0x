@@ -30,11 +30,11 @@ export const metadata: Metadata = {
         url: 'https://degen0x.com/og-crypto-prime-brokerage-2026.svg',
         width: 1200,
         height: 630,
-        alt: 'Crypto Prime Brokerage 2026'
-      }
+        alt: 'Crypto Prime Brokerage 2026',
+      },
     ],
     publishedTime: '2026-04-04T00:00:00Z',
-    modifiedTime: '2026-04-04T00:00:00Z'
+    modifiedTime: '2026-04-04T00:00:00Z',
   },
   twitter: {
     card: 'summary_large_image',
@@ -45,8 +45,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-prime-brokerage-institutional-trading-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

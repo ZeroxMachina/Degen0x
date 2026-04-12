@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete staking guide: Coinbase ETH 3.2%, Kraken ETH 3.5%, Solana 5.1%, OKX, Bybit. APY comparison, lock-up periods, minimum stake, tax treatment.',
     image: 'https://degen0x.com/og-exchanges.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/exchanges/best-crypto-exchange-for-staking',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare 7 best Binance alternatives for 2026: OKX, Bybit, Kraken, Coinbase, KuCoin, MEXC, dYdX. Fees, features, US access.',
     image: 'https://degen0x.com/og-exchanges.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/exchanges/binance-alternatives-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master x*y=k, V3 concentration, impermanent loss, yield farming.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-a-liquidity-pool',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

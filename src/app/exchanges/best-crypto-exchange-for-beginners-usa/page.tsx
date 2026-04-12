@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Coinbase, Kraken, Gemini, Robinhood: complete comparison for beginners.',
     image: 'https://degen0x.com/og-exchanges.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/exchanges/best-crypto-exchange-for-beginners-usa',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/defai-ai-powered-defi-automation-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'DeFAI: AI-Powered DeFi Automation & Trading Guide 2026',

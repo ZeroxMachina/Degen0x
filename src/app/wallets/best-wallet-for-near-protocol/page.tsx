@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'NEAR Wallet, Meteor, Sender, HERE comparison for NEAR DeFi and staking',
     image: 'https://degen0x.com/og-wallets.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-near-protocol',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

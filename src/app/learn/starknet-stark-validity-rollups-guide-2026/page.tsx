@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Starknet & STARK Rollups Guide 2026 | Layer 2 & Cairo',
     description: 'Layer 2 validity rollup, STARK proofs, 65K DAU, $530M TVL. Cairo language, STRK token, Bitcoin staking, privacy framework, and 2026 roadmap.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/starknet-stark-validity-rollups-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -669,7 +667,7 @@ export default function StarknetSTARKGuide() {
             </tbody>
           </table>
 
-          <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginbottom: 16 }}>
+          <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             Starknet&apos;s niche: security-conscious projects, institutional DeFi, and developers who value safe-by-default programming. As proof technology improves and Malachite enables decentralized sequencing, Starknet&apos;s position will strengthen. For a deeper dive on rollup architectures, see our <Link href="/learn/based-rollups-ethereum-l1-sequencing-guide-2026" style={linkStyle}>Based Rollups guide</Link> and <Link href="/learn/ai-agents-decentralized-ai-crypto-guide-2026" style={linkStyle}>AI agents guide</Link> for Agent Forge context.
           </p>
         </section>

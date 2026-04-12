@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     description: 'Ephemeral data and L2 scaling.',
     images: ['https://degen0x.com/og-learn.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/blob-transactions-ethereum-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

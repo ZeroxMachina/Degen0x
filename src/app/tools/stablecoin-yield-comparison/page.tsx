@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Stablecoin Yield Comparison Tool',
     description: 'Compare yields: Aave, Compound, MorphoBlue, Spark DSR, Nexo',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/stablecoin-yield-comparison',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -38,11 +38,9 @@ export const metadata: Metadata = {
     description: "GridPlus Lattice1 hardware wallet review: SafeCards, 5-inch touchscreen, WiFi-enabled, auto-sign permissions, MetaMask Snaps. Pros, cons, comparison vs Ledger/Keystone. $397.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/gridplus-lattice-wallet-review',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

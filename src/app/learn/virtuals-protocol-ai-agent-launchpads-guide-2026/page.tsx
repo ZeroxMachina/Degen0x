@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     title: 'Virtuals Protocol & AI Agent Launchpads Guide 2026',
     description: 'GAME Framework, Agent Commerce Protocol, VIRTUAL tokenomics, multi-chain AI infrastructure, and agent economy deep dive.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/virtuals-protocol-ai-agent-launchpads-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

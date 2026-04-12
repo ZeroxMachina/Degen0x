@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to top Avalanche projects, DeFi protocols, subnets, and AVAX tokenomics.',
     image: 'https://degen0x.com/og-ecosystem.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/best-projects-on-avalanche',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -560,7 +558,7 @@ export default function BestProjectsOnAvalanche() {
 
           <div style={infoBoxStyle}>
             <h3 style={h3Style}>What&apos;s the best way to earn yield on AVAX?</h3>
-            <p style={{ marginbottom: 0, lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 0, lineHeight: 1.8 }}>
               1) Validator staking: 9-11% APY (requires 2,000 AVAX + node setup). 2) Liquid staking (Benqi sAVAX): 8-12% APY, composable, no lockup. 3) Lending (AAVE/Benqi): 6-8% APY on supplied AVAX. Best for retail: Benqi sAVAX (no lockup, 8-12%).
             </p>
           </div>
@@ -581,14 +579,14 @@ export default function BestProjectsOnAvalanche() {
 
           <div style={infoBoxStyle}>
             <h3 style={h3Style}>What&apos;s the difference between Trader Joe and Pangolin?</h3>
-            <p style={{ marginbottom: 0, lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 0, lineHeight: 1.8 }}>
               Trader Joe: $500M TVL, Liquidity Book (concentrated liquidity), better UX, higher fee revenue ($50-80M/year). Pangolin: $150M TVL, traditional AMM (V2-like), community-driven (PNG token), lower fee revenue (~$5-10M/year). Trader Joe is better for swaps; Pangolin is better for LP rewards (higher APY due to governance incentives).
             </p>
           </div>
 
           <div style={infoBoxStyle}>
             <h3 style={h3Style}>How do I participate in Avalanche subnets?</h3>
-            <p style={{ marginbottom: 0, lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 0, lineHeight: 1.8 }}>
               For users: deposit assets in subnet-based projects (Dexalot, future subnets). Subnets will connect via Warp Messaging, enabling seamless multi-chain liquidity. For developers: apply to Avalanche Foundation for subnet grants (~$500K+ available). Launch your own subnet with custom tokenomics and governance. Avalanche makes subnet creation easier than other blockchains.
             </p>
           </div>

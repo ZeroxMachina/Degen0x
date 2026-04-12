@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Highest staking yields with real APY numbers.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-with-most-staking-rewards',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

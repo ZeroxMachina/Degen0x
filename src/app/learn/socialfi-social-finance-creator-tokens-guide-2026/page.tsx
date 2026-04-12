@@ -233,11 +233,9 @@ export const metadata: Metadata = {
     description: 'Learn about creator tokens, social finance platforms, and decentralized social networks.',
     images: ['https://degen0x.com/og-socialfi-creator-tokens-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/socialfi-social-finance-creator-tokens-guide-2026',
-  }};
-
+  };
 export default function SocialFiGuidePage() {
   return (
     <main style={pageStyles.container}>

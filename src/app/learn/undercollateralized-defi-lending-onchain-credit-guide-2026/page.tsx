@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to undercollateralized DeFi lending. Learn how Maple Finance, Goldfinch, and emerging protocols are enabling institutional borrowing without 150%+ collateral requirements.',
     image: 'https://degen0x.com/og-undercollateralized-lending-2026.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/undercollateralized-defi-lending-onchain-credit-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

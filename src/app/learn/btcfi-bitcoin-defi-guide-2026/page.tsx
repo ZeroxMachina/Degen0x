@@ -46,11 +46,9 @@ export const metadata: Metadata = {
     description: 'Master Bitcoin DeFi: native staking, liquid staking, Ordinals, Runes, and top BTCFi protocols for earning yield on Bitcoin in 2026.',
     images: ['https://degen0x.com/og-btcfi-bitcoin-defi-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/btcfi-bitcoin-defi-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

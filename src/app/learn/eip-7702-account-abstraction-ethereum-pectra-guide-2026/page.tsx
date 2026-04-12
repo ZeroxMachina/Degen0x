@@ -30,11 +30,9 @@ export const metadata: Metadata = {
     description: 'How every Ethereum wallet became programmable in 2026.',
     images: ["https://degen0x.com/og-eip-7702-pectra-2026.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/eip-7702-account-abstraction-ethereum-pectra-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

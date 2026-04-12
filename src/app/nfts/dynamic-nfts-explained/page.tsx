@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Learn how dynamic NFTs evolve on-chain using oracles, smart contracts, and real-world data feeds.',
     image: 'https://degen0x.com/og-dynamic-nft.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/dynamic-nfts-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

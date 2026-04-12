@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/liquid-staking-derivatives-explained'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Liquid Staking Derivatives: LSDs Explained 2026',

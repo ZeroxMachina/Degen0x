@@ -2,24 +2,23 @@ import { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'About degen0x | Built by Degens, for Degens'
+  title: 'About degen0x | Built by Degens, for Degens',
   description:
-    'Meet the anonymous team building permissionless, transparent crypto tools. Self-sovereign builders committed to sound money, Austrian economics, and Bitcoin maximalism.'
+    'Meet the anonymous team building permissionless, transparent crypto tools. Self-sovereign builders committed to sound money, Austrian economics, and Bitcoin maximalism.',
   openGraph: {
-    title: 'About degen0x'
-    description: 'Built by Degens, for Degens — Free, transparent, permissionless crypto infrastructure.'
-    type: 'website'
-  }
-
+    title: 'About degen0x',
+    description: 'Built by Degens, for Degens — Free, transparent, permissionless crypto infrastructure.',
+    type: 'website',
+  },
   alternates: {
-    canonical: 'https://degen0x.com/about'
-  }},
+    canonical: 'https://degen0x.com/about',
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'About degen0x | Built by Degens, for Degens',
     description: 'Meet the anonymous team building permissionless, transparent crypto tools. Self-sovereign builders committed to sound money, Austrian economics, and Bitcoin maximalism.',
     image: 'https://degen0x.com/og-default.svg',
-  }
+  },
 };
 
 const teamMembers = [
@@ -422,20 +421,20 @@ export default function AboutPage() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" style={ scrollMarginTop: 24, marginTop: 48 }>
-        <h2 style={ fontSize: 32, fontWeight: 700, marginBottom: 40 }>Frequently Asked Questions</h2>
-        <div style={ display: 'grid', gap: 16 }>
-            <details style={ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }>
-              <summary style={ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }>Who are the people building degen0x?</summary>
-              <p style={ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }>degen0x is built by a team of anonymous developers who believe in sound money, Austrian economics, and permissionless finance. We prioritize the integrity of our work over personal recognition. Our team includes a founder/architect, researchers, content creators, data engineers, and security specialists—all united by a commitment to transparency and technical excellence.</p>
+      <section id="faq" style={{ scrollMarginTop: 24, marginTop: 48 }}>
+        <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 40 }}>Frequently Asked Questions</h2>
+        <div style={{ display: 'grid', gap: 16 }}>
+            <details style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }}>
+              <summary style={{ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }}>Who are the people building degen0x?</summary>
+              <p style={{ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }}>degen0x is built by a team of anonymous developers who believe in sound money, Austrian economics, and permissionless finance. We prioritize the integrity of our work over personal recognition. Our team includes a founder/architect, researchers, content creators, data engineers, and security specialists—all united by a commitment to transparency and technical excellence.</p>
             </details>
-            <details style={ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }>
-              <summary style={ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }>Why is degen0x anonymous?</summary>
-              <p style={ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }>Anonymity protects our independence. We can't be pressured by VCs, regulators, or institutional interests because there's no individual to target. It also reflects our cypherpunk philosophy: code and ideas matter more than personalities. We're evaluated entirely on what we build, not who we are.</p>
+            <details style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }}>
+              <summary style={{ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }}>Why is degen0x anonymous?</summary>
+              <p style={{ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }}>Anonymity protects our independence. We can't be pressured by VCs, regulators, or institutional interests because there's no individual to target. It also reflects our cypherpunk philosophy: code and ideas matter more than personalities. We're evaluated entirely on what we build, not who we are.</p>
             </details>
-            <details style={ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }>
-              <summary style={ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }>What are degen0x's core values?</summary>
-              <p style={ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }>Our core values are self-sovereignty (your keys, your coins), transparency (no black boxes), sound money (Austrian economics), permissionless access (no KYC or borders), and privacy (financial privacy as a human right). These values guide every decision we make about what tools to build and how to build them.</p>
+            <details style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, padding: '16px 20px' }}>
+              <summary style={{ cursor: 'pointer', fontWeight: 600, color: '#e6edf3', fontSize: 15 }}>What are degen0x's core values?</summary>
+              <p style={{ marginTop: 12, color: '#c9d1d9', lineHeight: 1.7, fontSize: 14 }}>Our core values are self-sovereignty (your keys, your coins), transparency (no black boxes), sound money (Austrian economics), permissionless access (no KYC or borders), and privacy (financial privacy as a human right). These values guide every decision we make about what tools to build and how to build them.</p>
             </details>
         </div>
       </section>

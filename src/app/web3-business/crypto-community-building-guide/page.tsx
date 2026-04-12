@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Crypto Community Building Guide 2026",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/web3-business/crypto-community-building-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

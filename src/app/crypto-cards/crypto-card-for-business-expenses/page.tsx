@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: "Crypto cards for business expenses: corporate accounts, expense tracking, team multi-sig, and accounting integration. Compare business crypto cards.",
     image: "https://degen0x.com/og-crypto-cards.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/crypto-card-for-business-expenses',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

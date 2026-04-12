@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'How To Value NFT Guide guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.',
     image: 'https://degen0x.com/og-nfts.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/how-to-value-nft-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

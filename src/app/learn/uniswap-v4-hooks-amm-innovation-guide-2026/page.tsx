@@ -29,11 +29,9 @@ export const metadata: Metadata = {
     description: 'Master Uniswap v4: hooks, singleton pools, dynamic fees, TWAMM, and the programmable AMM revolution.',
     images: ['https://degen0x.com/og-uniswap-v4-hooks-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/uniswap-v4-hooks-amm-innovation-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

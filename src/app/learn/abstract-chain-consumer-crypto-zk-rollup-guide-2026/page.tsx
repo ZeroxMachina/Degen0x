@@ -35,11 +35,9 @@ export const metadata: Metadata = {
     description: 'Learn about the ZK rollup bridging crypto and mainstream consumer applications.',
     images: ["https://degen0x.com/og-abstract-chain-zk-rollup-2026.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

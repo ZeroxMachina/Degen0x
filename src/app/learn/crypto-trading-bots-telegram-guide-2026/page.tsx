@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-trading-bots-telegram-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Crypto Trading Bots: Telegram Automation & Strategy Guide 2026',
@@ -124,33 +124,33 @@ const page = () => {
         </div>
 
         <div style={{ marginBottom: "40px", backgroundColor: "#161b22", padding: "24px", borderRadius: "8px", border: "1px solid #30363d" }}>
-          <h2 style={{ fontSize: "1.8rem", marginbottom: "16px", background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+          <h2 style={{ fontSize: "1.8rem", marginBottom: "16px", background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Profitable Bot Strategies
           </h2>
 
           <div style={{ marginBottom: "20px" }}>
-            <h3 style={{ color: "#58a6ff", fontSize: "1.3rem", marginbottom: "8px" }}>Grid Trading</h3>
-            <p style={{ color: "#e6edf3", lineHeight: "1.8", marginbottom: "8px" }}>
+            <h3 style={{ color: "#58a6ff", fontSize: "1.3rem", marginBottom: "8px" }}>Grid Trading</h3>
+            <p style={{ color: "#e6edf3", lineHeight: "1.8", marginBottom: "8px" }}>
               Configure price bands. Buy at $100, $98, $96. Sell at $102, $104, $106. Bot automatically executes. Profit: width of band × frequency of oscillations. Works best: sideways markets (prices bounce in range). During bull/bear markets: loses money. Returns: 2-5% monthly during normal conditions, -30% during crashes. Suitable for: conservative investors, spare capital only.
             </p>
           </div>
 
-          <div style={{ marginbottom: "20px" }}>
-            <h3 style={{ color: "#58a6ff", fontSize: "1.3rem", marginbottom: "8px" }}>DCA (Dollar Cost Averaging)</h3>
-            <p style={{ color: "#e6edf3", lineHeight: "1.8", marginbottom: "8px" }}>
+          <div style={{ marginBottom: "20px" }}>
+            <h3 style={{ color: "#58a6ff", fontSize: "1.3rem", marginBottom: "8px" }}>DCA (Dollar Cost Averaging)</h3>
+            <p style={{ color: "#e6edf3", lineHeight: "1.8", marginBottom: "8px" }}>
               Buy fixed amount daily/weekly (e.g., $100 daily). Reduces timing risk. Bot automates the boring part. Returns: matches long-term asset appreciation (8-15% annual for Bitcoin/Ethereum in bull markets). Safer than other strategies. Suitable for: passive investors, long-term accumulation.
             </p>
           </div>
 
-          <div style={{ marginbottom: "20px" }}>
-            <h3 style={{ color: "#58a6ff", fontSize: "1.3rem", marginbottom: "8px" }}>Funding Rate Harvesting</h3>
-            <p style={{ color: "#e6edf3", lineHeight: "1.8", marginbottom: "8px" }}>
+          <div style={{ marginBottom: "20px" }}>
+            <h3 style={{ color: "#58a6ff", fontSize: "1.3rem", marginBottom: "8px" }}>Funding Rate Harvesting</h3>
+            <p style={{ color: "#e6edf3", lineHeight: "1.8", marginBottom: "8px" }}>
               Perpetuals pay funding rates every 8 hours. Bot: goes long spot, shorts perpetuals, collects funding. Risk-free if delta-neutral. Returns: 5-20% annually. Suitable for: capital-efficient investors, technical traders. Requires: significant capital ($10k+) to make worthwhile.
             </p>
           </div>
 
-          <div style={{ marginbottom: "20px" }}>
-            <h3 style={{ color: "#58a6ff", fontSize: "1.3rem", marginbottom: "8px" }}>Mean Reversion</h3>
+          <div style={{ marginBottom: "20px" }}>
+            <h3 style={{ color: "#58a6ff", fontSize: "1.3rem", marginBottom: "8px" }}>Mean Reversion</h3>
             <p style={{ color: "#e6edf3", lineHeight: "1.8" }}>
               Buy when price drops &gt;3% (bet on rebound). Sell when rises &gt;3%. Works: during sideways markets, fails during trends. Returns: highly variable (-50% to +30% annually). Risk: if trend starts, losses compound. Suitable for: experienced traders only.
             </p>
@@ -167,14 +167,14 @@ const page = () => {
         />
 
 
-        <div style={{ marginbottom: "40px", backgroundColor: "#161b22", padding: "24px", borderRadius: "8px", border: "1px solid #30363d" }}>
-          <h2 style={{ fontSize: "1.8rem", marginbottom: "16px", background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+        <div style={{ marginBottom: "40px", backgroundColor: "#161b22", padding: "24px", borderRadius: "8px", border: "1px solid #30363d" }}>
+          <h2 style={{ fontSize: "1.8rem", marginBottom: "16px", background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Security & Risk Management
           </h2>
-          <p style={{ color: "#e6edf3", lineHeight: "1.8", marginbottom: "12px" }}>
+          <p style={{ color: "#e6edf3", lineHeight: "1.8", marginBottom: "12px" }}>
             API key security: use sub-accounts (exchange feature) with limited balance ($1-5k maximum). If sub-account is hacked, losses are capped. Never give main account API to bot. 2FA on all bot accounts. VPN when accessing bot dashboards. Store credentials in password manager (never in code).
           </p>
-          <p style={{ color: "#e6edf3", lineHeight: "1.8", marginbottom: "12px" }}>
+          <p style={{ color: "#e6edf3", lineHeight: "1.8", marginBottom: "12px" }}>
             Code security: only use open-source bots (public code can be audited). Verify bot hasn&apos;t been compromised (check commit history on GitHub). Never use paid bots promising guaranteed returns (scams). Test on paper account for minimum 3 months before deploying real capital. During backtest, use realistic assumptions: include slippage (0.5-2%), fees (0.1-0.5%), drawdowns (actual volatility).
           </p>
           <p style={{ color: "#e6edf3", lineHeight: "1.8" }}>
@@ -182,8 +182,8 @@ const page = () => {
           </p>
         </div>
 
-        <div style={{ marginbottom: "40px", backgroundColor: "#161b22", padding: "24px", borderRadius: "8px", border: "1px solid #30363d" }}>
-          <h2 style={{ fontSize: "1.8rem", marginbottom: "24px", background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+        <div style={{ marginBottom: "40px", backgroundColor: "#161b22", padding: "24px", borderRadius: "8px", border: "1px solid #30363d" }}>
+          <h2 style={{ fontSize: "1.8rem", marginBottom: "24px", background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Trading Bot FAQs
           </h2>
           <div style={{ display: "grid", gap: "16px" }}>
@@ -196,15 +196,15 @@ const page = () => {
               { q: "How long until bot is profitable?", a: "Best case: 6 months of live trading with consistent edge. For most: never (strategy is unprofitable). Paper trade 3 months, live trade 6 months minimum before declaring success. If bot is profitable at 6 months, scale capital 2-3x. If not, scrap and try different strategy." }
             ].map((item, i) => (
               <div key={i} style={{ borderLeft: "3px solid #58a6ff", paddingLeft: "16px" }}>
-                <h3 style={{ color: "#58a6ff", marginbottom: "8px", fontSize: "1rem" }}>{item.q}</h3>
+                <h3 style={{ color: "#58a6ff", marginBottom: "8px", fontSize: "1rem" }}>{item.q}</h3>
                 <p style={{ color: "#e6edf3", lineHeight: "1.6", fontSize: "0.95rem" }}>{item.a}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <div style={{ marginbottom: "40px", backgroundColor: "#161b22", padding: "24px", borderRadius: "8px", border: "1px solid #30363d" }}>
-          <h2 style={{ fontSize: "1.5rem", marginbottom: "16px", color: "#58a6ff" }}>Related Resources</h2>
+        <div style={{ marginBottom: "40px", backgroundColor: "#161b22", padding: "24px", borderRadius: "8px", border: "1px solid #30363d" }}>
+          <h2 style={{ fontSize: "1.5rem", marginBottom: "16px", color: "#58a6ff" }}>Related Resources</h2>
           <div style={{ display: "grid", gap: "12px" }}>
             <Link href="/learn/jupiter-dex-aggregator-solana-trading-guide-2026" style={{ color: "#58a6ff", textDecoration: "none" }}>→ Manual Trading Fundamentals</Link>
             <Link href="/learn/drift-protocol-solana-perps-dex-guide-2026" style={{ color: "#58a6ff", textDecoration: "none" }}>→ Automated Perpetuals Trading</Link>

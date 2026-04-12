@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     title: "Magic Eden NFT Marketplace Guide 2026 | degen0x",
     description: "ME token, NFT trading, launchpad. Multi-chain NFT marketplace.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/magic-eden-nft-marketplace-me-token-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

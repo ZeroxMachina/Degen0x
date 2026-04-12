@@ -46,11 +46,9 @@ export const metadata: Metadata = {
       'Master crypto staking: Proof-of-Stake mechanics, best staking coins, liquid staking with Lido and Rocket Pool, platforms, and risk management.',
     images: ['https://degen0x.com/og-crypto-staking-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-staking-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

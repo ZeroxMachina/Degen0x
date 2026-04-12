@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master vesting cliffs, dilution analysis, price impact prediction.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/token-unlocks-vesting-schedules-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

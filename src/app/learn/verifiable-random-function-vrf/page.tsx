@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     description: 'Provably fair randomness for gaming.',
     images: ['https://degen0x.com/og-learn.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/verifiable-random-function-vrf',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

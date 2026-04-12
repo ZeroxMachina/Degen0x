@@ -22,11 +22,10 @@ export const metadata: Metadata = {
     description: 'Bitcoin vs Ethereum comparison: store of value vs DeFi utility.',
     image: 'https://degen0x.com/og-compare.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/bitcoin-vs-ethereum-investment',
-  }};
-
+  };
+},
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -18,11 +18,10 @@ export const metadata: Metadata = {
     title: 'Polygon vs Arbitrum vs Optimism',
     description: 'Scaling solutions comparison: sidechains vs rollups, fees, and ecosystem strength.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/polygon-vs-arbitrum-vs-optimism',
-  }};
-
+  };
+},
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

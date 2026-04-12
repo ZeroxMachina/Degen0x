@@ -281,7 +281,7 @@ export default function OnchainPrivacyInfrastructureGuidePage() {
             Private transactions are executed by <strong>relayers</strong> — third-party services that submit your ZK proof to the blockchain on your behalf. You send the proof to the relayer via private channels (never the mempool), the relayer executes the transaction, and the blockchain verifies the proof. Crucially, the relayer never sees your actual transaction details, only the cryptographic proof.
           </p>
 
-          <h3 style={{ fontSize: 16, fontWeight: 800, marginbottom: 12, marginTop: 24 }}>Association Lists & Compliance</h3>
+          <h3 style={{ fontSize: 16, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Association Lists & Compliance</h3>
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Privacy Pools introduce <strong>association lists</strong> — publicly maintained lists of addresses known to be associated with specific entities or activities (stolen funds, sanctions, etc.). When you create a private transaction, you optionally provide an "exclusion proof" proving your input addresses are NOT on the association list. This enables privacy while filtering out bad actors.
           </p>
@@ -753,7 +753,7 @@ export default function OnchainPrivacyInfrastructureGuidePage() {
             Privacy pools have less liquidity than transparent pools. You may face slippage when swapping private assets. Relayer fees (0.125% for Railgun) also add up. On a 10,000 USDC swap with relayer fee, you lose $12.50 to privacy.
           </p>
 
-          <h3 style={{ fontSize: 16, fontWeight: 800, marginbottom: 12, marginTop: 24 }}>Proof Generation Overhead (Aztec)</h3>
+          <h3 style={{ fontSize: 16, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Proof Generation Overhead (Aztec)</h3>
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Aztec transactions require ZK proof generation, which is computationally expensive. Aztec fees are higher than Ethereum currently. As proof technology improves, this will decrease, but expect 5-10x gas overhead in 2026.
           </p>

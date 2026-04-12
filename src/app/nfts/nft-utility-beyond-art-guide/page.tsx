@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-utility-beyond-art-guide'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'NFT Utility Beyond Art | Access, Ticketing, Identity',
@@ -319,7 +319,7 @@ export default function NFTUtility() {
             </Link>
             <Link href="/nfts/nft-gaming-play-to-earn-2026" style={{ textDecoration: 'none' }}>
               <div style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px', padding: '20px', cursor: 'pointer' }}>
-                <h3 style={{ color: '#58a6ff', marginbottom: '10px', fontSize: '1.1rem' }}>Gaming NFTs</h3>
+                <h3 style={{ color: '#58a6ff', marginBottom: '10px', fontSize: '1.1rem' }}>Gaming NFTs</h3>
                 <p style={{ color: '#8b949e', fontSize: '0.9rem' }}>In-game items and game assets as functional NFTs.</p>
               </div>
             </Link>

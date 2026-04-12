@@ -44,11 +44,9 @@ export const metadata: Metadata = {
     description: 'Comprehensive guide to ZK coprocessors and how they enable verifiable off-chain computation.',
     images: ['https://degen0x.com/og-zk-coprocessors-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/zk-coprocessors-verifiable-compute-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

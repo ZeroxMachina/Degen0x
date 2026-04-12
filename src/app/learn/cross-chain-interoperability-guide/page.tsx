@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare LayerZero, Wormhole, Axelar, Chainlink CCIP. Learn bridge security and trust models.',
     image: 'https://degen0x.com/og-cross-chain.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/cross-chain-interoperability-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

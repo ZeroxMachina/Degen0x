@@ -44,11 +44,9 @@ export const metadata: Metadata = {
       'Sustainable DeFi returns explained — Aave, GMX, Ethena, Pendle, and how to tell real yield from ponzinomics.',
     images: ['https://degen0x.com/og-real-yield-defi-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/real-yield-defi-protocol-revenue-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

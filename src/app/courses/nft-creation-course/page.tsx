@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Create NFTs: art, smart contracts, minting, OpenSea, marketing.',
     image: 'https://degen0x.com/og-courses.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/courses/nft-creation-course',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

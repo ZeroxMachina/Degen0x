@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'Crypto Exchange Referral Bonus Comparison guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.',
     image: 'https://degen0x.com/og-exchanges.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/exchanges/crypto-exchange-referral-bonus-comparison',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

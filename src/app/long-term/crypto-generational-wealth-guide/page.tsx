@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/long-term/crypto-generational-wealth-guide'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty Building',

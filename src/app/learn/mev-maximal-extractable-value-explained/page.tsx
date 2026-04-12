@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Understand MEV extraction, frontrunning, and how to protect your transactions.',
     image: 'https://degen0x.com/og-mev.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/mev-maximal-extractable-value-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

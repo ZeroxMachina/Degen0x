@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-funding-rate-arbitrage-cash-carry-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Funding Rate Arbitrage: Cash & Carry Trading Guide 2026',
@@ -168,7 +168,7 @@ const page = () => {
 
 
         <div style={{ marginBottom: "40px", backgroundColor: "#161b22", padding: "24px", borderRadius: "8px", border: "1px solid #30363d" }}>
-          <h2 style={{ fontSize: "1.8rem", marginbottom: "24px", background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+          <h2 style={{ fontSize: "1.8rem", marginBottom: "24px", background: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Cash-and-Carry FAQs
           </h2>
           <div style={{ display: "grid", gap: "16px" }}>

@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Deep dive into blockchain oracles in 2026. Compare Chainlink, Pyth, Band Protocol, API3, UMA, and Chronicle.',
     image: 'https://degen0x.com/og-oracle.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-a-blockchain-oracle',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

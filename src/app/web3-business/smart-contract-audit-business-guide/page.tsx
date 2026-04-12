@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     title: 'Smart Contract Audit Business Guide 2026',
     description: 'Trail of Bits, OpenZeppelin, Certik, and the security audit landscape.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/web3-business/smart-contract-audit-business-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

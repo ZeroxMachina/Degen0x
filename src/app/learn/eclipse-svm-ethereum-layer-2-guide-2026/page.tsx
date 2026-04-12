@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     description: "The first SVM-powered Ethereum L2. Parallelized execution, 1000+ TPS, ES governance token.",
     images: ["https://degen0x.com/og-eclipse-svm-ethereum-l2-2026.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/eclipse-svm-ethereum-layer-2-guide-2026',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Article", "FAQPage"],

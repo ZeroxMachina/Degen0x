@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Airdrop taxes: ordinary income at FMV, Uniswap UNI airdrop example, hard fork IRS ruling, cost basis tracking.',
     image: 'https://degen0x.com/og-taxes.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-airdrop-tax-treatment',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

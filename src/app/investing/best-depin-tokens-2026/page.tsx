@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Best DePIN Tokens 2026',
     description: 'HNT, RNDR, HONEY, GEOD, IO DePIN infrastructure investments',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-depin-tokens-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

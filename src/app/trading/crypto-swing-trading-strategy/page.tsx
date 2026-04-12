@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master swing trading setups, support/resistance, moving averages, and risk management for BTC/ETH trading.',
     image: 'https://degen0x.com/og-trading.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/crypto-swing-trading-strategy',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

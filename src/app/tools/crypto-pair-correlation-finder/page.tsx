@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Crypto Pair Correlation Finder',
     description: 'Analyze BTC/ETH and altcoin correlations for portfolio hedging',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-pair-correlation-finder',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

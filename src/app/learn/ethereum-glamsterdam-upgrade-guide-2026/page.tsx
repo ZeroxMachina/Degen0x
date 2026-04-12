@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Glamsterdam: enshrined proposer-builder separation, parallel execution, gas repricing. Biggest L1 upgrade since The Merge.',
     images: ['https://degen0x.com/og-ethereum-glamsterdam-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ethereum-glamsterdam-upgrade-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

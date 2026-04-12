@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Learn to safely transfer crypto with network selection, address validation, and gas fee optimization.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/how-to-transfer-crypto-between-wallets',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

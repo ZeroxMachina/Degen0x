@@ -48,11 +48,9 @@ export const metadata: Metadata = {
       'Complete guide to EU MiCA regulation. Understand stablecoin rules, CASP licensing, penalties, and compliance deadlines.',
     images: ['https://degen0x.com/og-mica-regulation-eu-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/mica-regulation-eu-crypto-compliance-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master Form 8949, Schedule D, cost basis methods, Form 1099-DA, and tax software for 2026 crypto tax filing.',
     image: 'https://degen0x.com/og-taxes.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-tax-reporting-requirements-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

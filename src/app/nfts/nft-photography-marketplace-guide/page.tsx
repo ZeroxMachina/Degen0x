@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to NFT photography platforms, pricing, and photographer earnings.',
     image: 'https://degen0x.com/og-nft-photography.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/nft-photography-marketplace-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

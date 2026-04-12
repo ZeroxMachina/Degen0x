@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     title: 'Crypto Points Programs Guide 2026 | Pre-Token Loyalty & Airdrop Farming',
     description: 'Points farming strategies, Sybil detection, top programs, regulatory risks. Master pre-token loyalty in DeFi.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-points-programs-pre-token-loyalty-guide-2026',
-  }};
-
+  };
 const containerStyle: React.CSSProperties = {
   maxWidth: '900px',
   margin: '0 auto',

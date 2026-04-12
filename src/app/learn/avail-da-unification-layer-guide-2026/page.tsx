@@ -42,11 +42,9 @@ export const metadata: Metadata = {
       'Modular DA + cross-chain coordination + shared security. Full technical breakdown.',
     images: ['https://degen0x.com/og-avail-da-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/avail-da-unification-layer-guide-2026',
-  }};
-
+  };
 const faqs = [
   {
     question: 'How does Avail DA differ from Celestia?',

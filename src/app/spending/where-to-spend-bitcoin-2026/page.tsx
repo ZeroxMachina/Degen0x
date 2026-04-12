@@ -9,11 +9,9 @@ export const metadata: Metadata = {
   keywords: ['where to spend bitcoin', 'bitcoin merchants 2026', 'use bitcoin', 'bitcoin payments', 'bitrefill', 'lightning network', 'el salvador bitcoin'],
   openGraph: { type: 'article', title: 'Where to Spend Bitcoin 2026: Microsoft, AT&T, Bitrefill, Travala', description: 'Bitcoin spending guide: Microsoft, AT&T, debit cards, Bitrefill, Travala, Lightning, El Salvador. Real merchants 2026.', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/spending/where-to-spend-bitcoin-2026', images: [{ url: 'https://degen0x.com/og-spending.svg', width: 1200, height: 630 }] },
   twitter: { card: 'summary_large_image', title: 'Where to Spend Bitcoin 2026', description: 'Bitcoin spending: Microsoft, AT&T, debit cards, Bitrefill, Travala, Lightning, El Salvador real merchants.', image: 'https://degen0x.com/og-spending.svg' },
-,
   alternates: {
     canonical: 'https://degen0x.com/spending/where-to-spend-bitcoin-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -114,7 +112,7 @@ export default function WhereToSpendBitcoin() {
 
         <section id="lightning">
           <h2 style={h2Style}>Lightning Network: Instant Bitcoin Payments</h2>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>Lightning Network: layer-2 Bitcoin scaling. Instant payments. Fees: &lt;$0.01 per transaction. Best wallets: Strike, Phoenix, Breez. Merchant adoption: 500K+ globally.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>Lightning Network: layer-2 Bitcoin scaling. Instant payments. Fees: &lt;$0.01 per transaction. Best wallets: Strike, Phoenix, Breez. Merchant adoption: 500K+ globally.</p>
           <h3 style={h3Style}>Real-World Lightning Use</h3>
           <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>El Salvador: most merchants accept via Lightning (faster than blockchain). Remittances: send money to family internationally for $0 fee. Coffee shops: strike app = tap phone, pay. Twitter: tip authors.</p>
           <div style={infoBoxStyle}><strong style={{ color: '#58a6ff' }}>Best For:</strong> Micropayments (&lt;$1), remittances (0 fee = 100x cheaper than Western Union), streaming payments.</div>

@@ -95,42 +95,42 @@ export default function BitcoinETFComparison() {
           </p>
         </div>
           <h3 style={h3Style}>Why IBIT Leads</h3>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>BlackRock scale = best pricing power. Lowest fees (0.2%). Highest volume = tightest bid-ask spreads. Professional custody. Tax-efficient (unlike GBTC, no premium/discount). Available in 401k/IRA.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>BlackRock scale = best pricing power. Lowest fees (0.2%). Highest volume = tightest bid-ask spreads. Professional custody. Tax-efficient (unlike GBTC, no premium/discount). Available in 401k/IRA.</p>
           <h3 style={h3Style}>Performance</h3>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>Jan 2024-April 2026: +35% (tracked Bitcoin exactly). Fee drag: minimal 0.2%/year. Total return beats traditional finance alternatives (S&amp;P 500 returned 28%, IBIT returned 35%). Bitcoin &gt; stocks 2024-2026.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>Jan 2024-April 2026: +35% (tracked Bitcoin exactly). Fee drag: minimal 0.2%/year. Total return beats traditional finance alternatives (S&amp;P 500 returned 28%, IBIT returned 35%). Bitcoin &gt; stocks 2024-2026.</p>
           <div style={infoBoxStyle}><strong style={{ color: '#58a6ff' }}>Best Choice:</strong> IBIT for most investors. Lowest cost, highest volume, BlackRock backing, most liquid.</div>
         </section>
 
         <section id="fbtc">
           <h2 style={h2Style}>FBTC (Fidelity): The Competitor</h2>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>FBTC (Fidelity Bitcoin Trust): Fidelity&apos;s offering. Launch: January 2024. AUM: $25B (second largest). Fee: 0.25% (0.05% more than IBIT). Daily volume: 5,940 BTC (18% of market). Custody: Fidelity (regulated, strong security). Holdings: 100% Bitcoin spot.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>FBTC (Fidelity Bitcoin Trust): Fidelity&apos;s offering. Launch: January 2024. AUM: $25B (second largest). Fee: 0.25% (0.05% more than IBIT). Daily volume: 5,940 BTC (18% of market). Custody: Fidelity (regulated, strong security). Holdings: 100% Bitcoin spot.</p>
           <h3 style={h3Style}>FBTC vs IBIT</h3>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>IBIT cheaper (0.2% vs 0.25%). FBTC more liquid in Fidelity accounts (no trading fees). Similar performance. Example: $100K invested, IBIT costs $200/year, FBTC costs $250/year. IBIT saves $500 over 10 years on fees alone.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>IBIT cheaper (0.2% vs 0.25%). FBTC more liquid in Fidelity accounts (no trading fees). Similar performance. Example: $100K invested, IBIT costs $200/year, FBTC costs $250/year. IBIT saves $500 over 10 years on fees alone.</p>
           <h3 style={h3Style}>When to Choose FBTC</h3>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>Already have Fidelity brokerage account (no trading fees). Fidelity fund ecosystem integration. Otherwise: choose IBIT for lower fees.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>Already have Fidelity brokerage account (no trading fees). Fidelity fund ecosystem integration. Otherwise: choose IBIT for lower fees.</p>
         </section>
 
         <section id="arkb">
           <h2 style={h2Style}>ARKB (Ark 21Shares): Lowest Fee</h2>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>ARKB (Ark 21Shares Bitcoin ETF): Ark Invest offering. Launch: March 2024. AUM: $18B. Fee: 0.21% (tied lowest with IBIT for pure fee comparison). Daily volume: 2,650 BTC (8% of market). Custody: Coinbase (same as IBIT). Holdings: 100% Bitcoin spot.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>ARKB (Ark 21Shares Bitcoin ETF): Ark Invest offering. Launch: March 2024. AUM: $18B. Fee: 0.21% (tied lowest with IBIT for pure fee comparison). Daily volume: 2,650 BTC (8% of market). Custody: Coinbase (same as IBIT). Holdings: 100% Bitcoin spot.</p>
           <h3 style={h3Style}>ARKB Advantage</h3>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>0.21% fee (0.01% lower than IBIT). Ark&apos;s Bitcoin thesis alignment (bullish long-term). Lower volume = slightly wider spreads (but negligible for most investors). Good alternative if IBIT becomes overweight (concentration risk).</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>0.21% fee (0.01% lower than IBIT). Ark&apos;s Bitcoin thesis alignment (bullish long-term). Lower volume = slightly wider spreads (but negligible for most investors). Good alternative if IBIT becomes overweight (concentration risk).</p>
           <div style={infoBoxStyle}><strong style={{ color: '#58a6ff' }}>For Value Seekers:</strong> ARKB saves $100/year vs IBIT on $100K position. Over 20 years at 5% returns: ARKB outperforms IBIT by ~$1,200 (fee drag).</div>
         </section>
 
         <section id="gbtc">
           <h2 style={h2Style}>GBTC (Grayscale): The Legacy Choice</h2>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>GBTC (Grayscale Bitcoin Trust): Oldest Bitcoin fund. AUM: $30B. Fee: 1.5% (industry highest, 7-10x higher than competitors). Daily volume: 2,000 BTC (6% of market). Custody: Grayscale. Holdings: 100% Bitcoin spot.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>GBTC (Grayscale Bitcoin Trust): Oldest Bitcoin fund. AUM: $30B. Fee: 1.5% (industry highest, 7-10x higher than competitors). Daily volume: 2,000 BTC (6% of market). Custody: Grayscale. Holdings: 100% Bitcoin spot.</p>
           <h3 style={h3Style}>Why GBTC is Expensive</h3>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>Legacy pricing power (locked in high fees before competition). Closed to new investors (2021). Legacy investors stuck in conversion (planned 2026-2027 to lower fee 0.25%). Example: $100K in GBTC costs $1,500/year vs $200 IBIT = $1,300/year waste.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>Legacy pricing power (locked in high fees before competition). Closed to new investors (2021). Legacy investors stuck in conversion (planned 2026-2027 to lower fee 0.25%). Example: $100K in GBTC costs $1,500/year vs $200 IBIT = $1,300/year waste.</p>
           <h3 style={h3Style}>GBTC Redemption</h3>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>Grayscale planning conversion to lower-fee ETF (0.25% target). If you own GBTC: hold for conversion. New investors: never buy GBTC at 1.5% fee.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>Grayscale planning conversion to lower-fee ETF (0.25% target). If you own GBTC: hold for conversion. New investors: never buy GBTC at 1.5% fee.</p>
           <div style={infoBoxStyle}><strong style={{ color: '#f59e0b' }}>Avoid GBTC:</strong> For new investors. Only hold if existing (wait for fee reduction). Fee drag = wealth destruction over time.</div>
         </section>
 
         <section id="others">
           <h2 style={h2Style}>BITB, HODL, and Others</h2>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>BITB (Valkyrie Bitcoin ETF): 0.25% fee, $5B AUM. HODL (VanEck Bitcoin ETF): 0.25% fee, $3B AUM. Both solid but lower volume than IBIT/FBTC. Volume matters: tighter spreads (lower transaction costs). Recommend: IBIT or ARKB first.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>BITB (Valkyrie Bitcoin ETF): 0.25% fee, $5B AUM. HODL (VanEck Bitcoin ETF): 0.25% fee, $3B AUM. Both solid but lower volume than IBIT/FBTC. Volume matters: tighter spreads (lower transaction costs). Recommend: IBIT or ARKB first.</p>
         </section>
 
         <section id="comparison">
@@ -162,9 +162,9 @@ export default function BitcoinETFComparison() {
 
         <section id="tax">
           <h2 style={h2Style}>Tax Advantages vs Self-Custody</h2>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>Bitcoin ETFs in 401k/IRA: no capital gains tax until withdrawal. Self-custody: every trade = taxable event. Example: buy $100K Bitcoin, 35% gain = $35K capital gains tax (federal 15-37% bracket = $5,250-$12,950 owed). ETF in IRA: 0% tax until age 59.5. Massive advantage for long-term holders.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>Bitcoin ETFs in 401k/IRA: no capital gains tax until withdrawal. Self-custody: every trade = taxable event. Example: buy $100K Bitcoin, 35% gain = $35K capital gains tax (federal 15-37% bracket = $5,250-$12,950 owed). ETF in IRA: 0% tax until age 59.5. Massive advantage for long-term holders.</p>
           <h3 style={h3Style}>Annual Fee Impact</h3>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>IBIT 0.2%: over 30 years at 10% annual return, costs ~$150K on $100K initial (fee drag). GBTC 1.5%: costs ~$800K (5x higher drag). ARKB 0.21%: cost ~$160K. Fee matters exponentially over time (compounding effect).</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>IBIT 0.2%: over 30 years at 10% annual return, costs ~$150K on $100K initial (fee drag). GBTC 1.5%: costs ~$800K (5x higher drag). ARKB 0.21%: cost ~$160K. Fee matters exponentially over time (compounding effect).</p>
         </section>
 
         <section id="faq">
@@ -197,7 +197,7 @@ export default function BitcoinETFComparison() {
 
         <section id="recommendation">
           <h2 style={h2Style}>Final Recommendation</h2>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>For most investors: buy IBIT. Lowest fees (tied), highest volume, BlackRock backing, most liquid. For IRA: IBIT. For 401k: IBIT (check plan). For value investors: ARKB (fee savings matter over 20+ years). For existing GBTC holders: hold and wait for conversion. Never buy GBTC for new positions.</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>For most investors: buy IBIT. Lowest fees (tied), highest volume, BlackRock backing, most liquid. For IRA: IBIT. For 401k: IBIT (check plan). For value investors: ARKB (fee savings matter over 20+ years). For existing GBTC holders: hold and wait for conversion. Never buy GBTC for new positions.</p>
           <div style={infoBoxStyle}><strong style={{ color: '#58a6ff' }}>Long-term thesis:</strong> Bitcoin ETFs made crypto accessible to institutional capital. $150B+ in Bitcoin ETF assets (April 2026) proves Bitcoin&apos;s legitimacy as asset class. Buy and HODL 20+ years. Fees matter—choose IBIT.</div>
         </section>
 

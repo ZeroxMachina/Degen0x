@@ -44,11 +44,9 @@ export const metadata: Metadata = {
     description: 'Learn smart contract audits, vulnerability types, and DeFi safety best practices.',
     images: ['https://degen0x.com/og-smart-contract-security-audits-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/smart-contract-security-audits-defi-safety-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

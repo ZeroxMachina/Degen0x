@@ -41,11 +41,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to 16 SEC-approved SOL ETFs, staking yields, fees, and regulatory clarity after March 2026 ruling.',
     images: ["https://degen0x.com/og-solana-etf-guide-2026.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/solana-etf-spot-funds-staking-guide-2026',
-  }};
-
+  };
 // Server-side structured data
 const articleStructuredData = {
   '@context': 'https://schema.org',

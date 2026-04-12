@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/long-term/bitcoin-price-prediction-2030'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Bitcoin Price Prediction 2030 Models',

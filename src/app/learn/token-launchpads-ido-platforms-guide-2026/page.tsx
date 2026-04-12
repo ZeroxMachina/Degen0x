@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/token-launchpads-ido-platforms-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Token Launchpads & IDO Platforms Guide 2026',

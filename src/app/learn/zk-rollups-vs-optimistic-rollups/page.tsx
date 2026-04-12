@@ -20,11 +20,9 @@ export const metadata: Metadata = {
     description: 'Validity proofs achieve instant finality. Fraud proofs take 7 days. Compare architecture, costs, and trade-offs.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/zk-rollups-vs-optimistic-rollups',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

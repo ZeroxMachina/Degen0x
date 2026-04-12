@@ -1,6 +1,5 @@
 'use client';
 
-import { Metadata } from 'next';
 import { useState, useMemo } from 'react';
 import { ChevronLeft, ChevronRight, Grid3x3, List, Calendar } from 'lucide-react';
 
@@ -66,29 +65,6 @@ const IMPACT_COLORS: Record<string, string> = {
 };
 
 type ViewType = 'month' | 'week' | 'list';
-
-export const metadata: Metadata = {
-  title: 'Crypto Events Calendar | degen0x',
-  description: 'Track token unlocks, launches, airdrops, governance events, and conferences across crypto markets. Stay informed with real-time event monitoring.',
-  openGraph: {
-    title: 'Crypto Calendar',
-    description: 'Track every unlock, launch & milestone',
-    images: [
-      {
-        url: 'https://degen0x.com/og-crypto-calendar.svg',
-        width: 1200,
-        height: 630,
-        alt: 'Crypto Calendar Tool',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Crypto Calendar',
-    description: 'Track every unlock, launch & milestone',
-    images: ['https://degen0x.com/og-crypto-calendar.svg'],
-  },
-};
 
 export default function CryptoCalendarPage() {
   const [currentDate, setCurrentDate] = useState(new Date(2026, 2)); // March 2026

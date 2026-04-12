@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Trading Psychology | degen0x',
     description: 'Overcome FOMO, revenge trading, loss aversion with journaling and discipline.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/crypto-trading-psychology-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

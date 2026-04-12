@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'DeFi Portfolio Dashboard 2026: DeBank vs Zapper vs Zerion',
     description: 'Compare top DeFi portfolio dashboards. Track positions, yields, impermanent loss, and rewards across all chains with DeBank, Zapper, Zerion, and more.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/defi-portfolio-dashboard',
-  }};
-
+  };
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',

@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     description: 'MEV-protected swaps via intent architecture.',
     images: ['https://degen0x.com/og-learn.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/intents-based-trading-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

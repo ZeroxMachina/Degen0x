@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to TON blockchain and Telegram Mini Apps. Learn about games, DeFi, and building dApps for 950M+ Telegram users.',
     image: 'https://degen0x.com/og-ton-telegram-mini-apps.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/ton-telegram-mini-apps-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

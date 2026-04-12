@@ -47,11 +47,9 @@ export const metadata: Metadata = {
       'Master yield farming in 2026: Pendle tokenization, liquid staking, auto-compounding vaults, and cross-chain strategies.',
     images: ['https://degen0x.com/og-yield-farming-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/yield-farming-defi-strategies-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

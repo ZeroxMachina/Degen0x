@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Privacy Coins & Zero-Knowledge Proofs 2026: Monero, Zcash & zk-SNARKs',
     description: 'Complete privacy coins guide 2026. Learn how Monero, Zcash, and zero-knowledge proofs work.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/privacy-coins-zero-knowledge-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [

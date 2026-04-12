@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-tax-by-state-comparison'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Tax by State Comparison 2026 | No-Tax States vs High-Tax | degen0x',

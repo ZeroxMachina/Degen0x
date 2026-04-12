@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Learn Polkadot staking with NPoS, nomination pools, liquid staking, and validator selection.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/how-to-stake-polkadot-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

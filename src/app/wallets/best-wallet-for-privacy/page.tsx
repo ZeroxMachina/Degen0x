@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best Privacy Wallets | degen0x',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-privacy',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

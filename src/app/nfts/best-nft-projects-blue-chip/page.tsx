@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'Best NFT Projects Blue Chip guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.',
     image: 'https://degen0x.com/og-nfts.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/nfts/best-nft-projects-blue-chip',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

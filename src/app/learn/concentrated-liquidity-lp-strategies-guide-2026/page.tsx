@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Master concentrated liquidity and LP strategies for 2026. Learn Uniswap v4 hooks, dynamic rebalancing, and earn 20-100% APR on volatile pairs.',
     image: 'https://degen0x.com/og-concentrated-liquidity.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/concentrated-liquidity-lp-strategies-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

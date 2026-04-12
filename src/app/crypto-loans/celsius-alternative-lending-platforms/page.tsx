@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Celsius Alternatives | degen0x',
     description: 'Post-Celsius lending: Nexo, Ledn, Aave, Compound, MakerDAO.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/celsius-alternative-lending-platforms',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

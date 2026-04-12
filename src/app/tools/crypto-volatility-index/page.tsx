@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Crypto Volatility Index Guide',
     description: 'Bitcoin VIX alternatives and volatility index trading for crypto options.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-volatility-index',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

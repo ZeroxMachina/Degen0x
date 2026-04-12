@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'DeFi Fixed Rate Lending Guide guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.',
     image: 'https://degen0x.com/og-defi-lending.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/defi-fixed-rate-lending-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

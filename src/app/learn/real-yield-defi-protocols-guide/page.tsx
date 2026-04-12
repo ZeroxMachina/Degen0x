@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Guide to real yield DeFi with protocol revenue analysis and token economics.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/real-yield-defi-protocols-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

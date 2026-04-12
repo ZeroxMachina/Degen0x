@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Crypto Sentiment Analysis for Investing',
     description: 'Master Fear & Greed, social sentiment, and contrarian investing strategies.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-sentiment-analysis-investing',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

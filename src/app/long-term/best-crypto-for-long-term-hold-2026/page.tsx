@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete long-term crypto guide: Bitcoin ($68K), Ethereum ($3.5K), Solana ($140), Chainlink, Aave. Tokenomics, adoption rates, staking yields comparison table.',
     image: 'https://degen0x.com/og-long-term.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/long-term/best-crypto-for-long-term-hold-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

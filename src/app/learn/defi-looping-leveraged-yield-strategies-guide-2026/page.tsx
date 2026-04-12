@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Master DeFi looping strategies: yield amplification, points farming, RWA looping, and more.',
     images: ['/og-defi-looping-leveraged-yield-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/defi-looping-leveraged-yield-strategies-guide-2026',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Article", "FAQPage"],

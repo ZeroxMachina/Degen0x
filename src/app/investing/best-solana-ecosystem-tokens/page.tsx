@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare top Solana tokens: DEX aggregators, liquid staking, MEV infrastructure, and oracles.',
     image: 'https://degen0x.com/og-solana-tokens.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-solana-ecosystem-tokens',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -515,7 +513,7 @@ export default function BestSolanaTokens2026() {
 
           <div style={{ ...infoBoxStyle }}>
             <h3 style={h3Style}>What happens to Solana ecosystem tokens if SOL crashes?</h3>
-            <p style={{ marginbottom: 0, marginTop: 12 }}>
+            <p style={{ marginBottom: 0, marginTop: 12 }}>
               Ecosystem token prices fall faster than SOL. Example: if SOL drops 30%, expect MNDE/JUP to drop 40-50% (leveraged downside). This is because: (1) TVL declines (users withdraw), (2) trading volume declines, (3) token valuations compress (investors flee risk). However, strong-hand investors use crashes to accumulate. Historical: Solana crash 2022-2023 killed many projects; survivors (JUP, MNDE, RAY) recovered fastest. Don&apos;t buy ecosystem tokens if you&apos;re not bullish SOL long-term. Use crashes to accumulate, not to exit.
             </p>
           </div>

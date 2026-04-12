@@ -30,11 +30,9 @@ export const metadata: Metadata = {
     description:
       "Object-centric Layer 1, Move language, 300K+ TPS. Explore Sui DeFi.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/sui-move-blockchain-ecosystem-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

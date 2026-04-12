@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Bitcoin collateral loan guide. Compare Nexo vs BlockFi vs Ledn. BTC loan rates 5.9-7.5%, LTV 50-60%, fast approval, no credit check required.',
     image: 'https://degen0x.com/og-crypto-loans.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-loans/bitcoin-collateral-loan-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

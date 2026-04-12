@@ -40,11 +40,9 @@ export const metadata: Metadata = {
     description: 'Master Morpho Protocol - $6.9B TVL, 180+ markets, institutional adoption, and V2 roadmap.',
     images: ['https://degen0x.com/og-morpho-protocol.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/morpho-protocol-defi-lending-innovation-guide-2026',
-  }};
-
+  };
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

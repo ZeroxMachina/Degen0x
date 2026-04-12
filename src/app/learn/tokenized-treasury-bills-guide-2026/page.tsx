@@ -550,7 +550,7 @@ export default function TokenizedTreasuryBillsGuide() {
             The most impactful use case is stablecoin reserves. Ethena uses BUIDL to back USDe, solving stablecoins' historical peg problems. Rather than centralized reserves or over-collateralization, stablecoins backed by Treasury bills inherit government-backed security.
           </p>
 
-          <h3 style={{ fontSize: "20px", fontWeight: "600", marginbottom: "12px", color: "#e6edf3", marginTop: "24px" }}>Treasury Management for DAOs</h3>
+          <h3 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "12px", color: "#e6edf3", marginTop: "24px" }}>Treasury Management for DAOs</h3>
           <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#e6edf3", marginBottom: "16px" }}>
             Decentralized organizations managing millions in treasuries face the "stablecoin yield" problem: how to earn on reserves without taking risk? USDY and OUSG enable DAOs to earn 5% on treasuries while maintaining complete on-chain control and composability.
           </p>
@@ -624,7 +624,7 @@ export default function TokenizedTreasuryBillsGuide() {
             Obtain USDC or USDT from a centralized exchange or AMM. You'll trade these stablecoins for your chosen tokenized Treasury product on Uniswap, 1inch, or dedicated platforms like the official Ondo or BlackRock interfaces.
           </p>
 
-          <h3 style={{ fontSize: "20px", fontWeight: "600", marginbottom: "12px", color: "#e6edf3", marginTop: "24px" }}>Step 4: Execute the Trade</h3>
+          <h3 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "12px", color: "#e6edf3", marginTop: "24px" }}>Step 4: Execute the Trade</h3>
           <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#e6edf3", marginBottom: "16px" }}>
             Use a DEX to swap stablecoins for tokenized Treasury tokens. Start with a small amount to test the process. Verify you're using the correct contract address (check official sources, not random websites). Confirm gas fees before submitting.
           </p>

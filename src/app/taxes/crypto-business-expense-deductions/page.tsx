@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/taxes/crypto-business-expense-deductions'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Business Expense Deductions 2026 | Mining Equipment, Software | degen0x',

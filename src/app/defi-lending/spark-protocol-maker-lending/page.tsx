@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete Spark Protocol guide. Learn about Spark Lend, DAI Savings Rate, sDAI yield token, and MakerDAO integration.',
     image: 'https://degen0x.com/og-defi-lending.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/spark-protocol-maker-lending',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

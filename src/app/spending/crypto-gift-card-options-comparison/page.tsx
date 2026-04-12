@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     title: 'Crypto Gift Card Comparison 2026',
     description: 'Bitrefill, CoinGate, Fold, Purse.io and more.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/spending/crypto-gift-card-options-comparison',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

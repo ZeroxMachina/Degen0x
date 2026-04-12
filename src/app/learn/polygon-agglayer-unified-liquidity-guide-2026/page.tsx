@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/polygon-agglayer-unified-liquidity-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Polygon AggLayer: Unified Liquidity & Interoperability',

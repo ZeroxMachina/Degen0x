@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Crypto Merchant Acceptance Guide',
     description: 'Find 10000+ merchants accepting crypto payments.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/spending/crypto-merchant-acceptance-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

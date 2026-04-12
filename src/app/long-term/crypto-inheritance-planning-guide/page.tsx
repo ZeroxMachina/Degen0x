@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     title: 'Crypto Inheritance Planning Guide 2026',
     description: 'Seed phrases, multi-sig, Casa, Unchained Capital, digital asset trusts.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/long-term/crypto-inheritance-planning-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

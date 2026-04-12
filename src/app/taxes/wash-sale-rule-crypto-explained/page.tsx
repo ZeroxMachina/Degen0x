@@ -19,11 +19,9 @@ export const metadata: Metadata = {
     title: 'Wash Sale Rules for Crypto 2026',
     description: 'Exploit tax-loss harvesting advantage while crypto wash sale exemption lasts.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/taxes/wash-sale-rule-crypto-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

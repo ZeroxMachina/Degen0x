@@ -25,11 +25,9 @@ export const metadata: Metadata = {
     title: 'Solana Blinks & Actions Guide 2026 | Blockchain Links',
     description: 'Turn any Solana transaction into a shareable link. Learn Actions, Blinks, technical specs, and real-world use cases from DeFi to NFTs.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/solana-blinks-actions-blockchain-links-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

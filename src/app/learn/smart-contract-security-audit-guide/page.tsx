@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'OpenZeppelin, Trail of Bits, CertiK, Spearbit comparison. Learn costs, timelines, and security evaluation.',
     image: 'https://degen0x.com/og-audit.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/smart-contract-security-audit-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

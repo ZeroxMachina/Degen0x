@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Slippage in Crypto Explained: Price Impact & MEV',
     description: 'Learn about slippage, price impact, and MEV sandwich attacks in DEX trading.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/slippage-crypto-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master crypto technical analysis. Learn RSI, MACD, Bollinger Bands, OBV, Fibonacci retracement & Volume Profile. TradingView setup included.',
     image: 'https://degen0x.com/og-trading.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/best-crypto-technical-indicators',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

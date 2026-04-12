@@ -51,11 +51,9 @@ export const metadata: Metadata = {
     description: 'Master Web3 identity: verifiable credentials, World ID, Polygon ID, soulbound tokens, and zero-knowledge proofs for self-sovereign identity in 2026.',
     images: ['https://degen0x.com/og-decentralized-identity-did-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/decentralized-identity-did-verifiable-credentials-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

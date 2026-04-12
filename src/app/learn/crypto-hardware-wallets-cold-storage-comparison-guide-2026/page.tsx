@@ -32,11 +32,9 @@ export const metadata: Metadata = {
     description:
       "Compare Ledger, Trezor, Keystone. Cold storage security and DeFi integration.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-hardware-wallets-cold-storage-comparison-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

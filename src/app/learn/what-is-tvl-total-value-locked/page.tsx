@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-tvl-total-value-locked'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'TVL (Total Value Locked): DeFi Metrics & Analysis 2026',

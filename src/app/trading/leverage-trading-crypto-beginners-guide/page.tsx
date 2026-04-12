@@ -25,11 +25,9 @@ export const metadata: Metadata = {
     description: 'Margin mechanics, liquidation, and position sizing explained.',
     image: 'https://degen0x.com/og-trading.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/leverage-trading-crypto-beginners-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

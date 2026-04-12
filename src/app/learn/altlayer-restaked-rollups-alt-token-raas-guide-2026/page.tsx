@@ -29,11 +29,9 @@ export const metadata: Metadata = {
     title: "AltLayer Restaked Rollups Guide 2026 | degen0x",
     description: "RaaS platform with restaked security. ALT token, shared sequencers.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

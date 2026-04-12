@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to DeFi insurance. Learn smart contract cover, stablecoin depeg cover, bridge hacks, claim assessment, pricing models, and comparison of Nexus Mutual, InsurAce, Neptune Mutual.',
     image: 'https://degen0x.com/og-defi-insurance.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/defi-insurance-how-it-works',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

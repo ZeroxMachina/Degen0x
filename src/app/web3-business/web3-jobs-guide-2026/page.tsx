@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/web3-business/web3-jobs-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Web3 Jobs Guide 2026: Careers, Salaries, Skills Required',
@@ -173,7 +173,7 @@ export default function Web3JobsGuide() {
         <section style={{ marginBottom: '48px', padding: '24px', backgroundColor: '#161b22', borderLeft: '4px solid #06b6d4', borderRadius: '8px' }}>
           <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '16px', color: '#58a6ff' }}>2. Skills Required by Role</h2>
 
-          <div style={{ backgroundColor: '#0d1117', padding: '16px', borderRadius: '6px', marginbottom: '16px', borderLeft: '3px solid #06b6d4' }}>
+          <div style={{ backgroundColor: '#0d1117', padding: '16px', borderRadius: '6px', marginBottom: '16px', borderLeft: '3px solid #06b6d4' }}>
             <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '12px', color: '#06b6d4' }}>Developer Skills</h3>
             <ul style={{ fontSize: '15px', lineHeight: '1.8', paddingLeft: '20px' }}>
               <li>Solidity (smart contracts), TypeScript/JavaScript (tooling)</li>
@@ -184,7 +184,7 @@ export default function Web3JobsGuide() {
             </ul>
           </div>
 
-          <div style={{ backgroundColor: '#0d1117', padding: '16px', borderRadius: '6px', marginbottom: '16px', borderLeft: '3px solid #06b6d4' }}>
+          <div style={{ backgroundColor: '#0d1117', padding: '16px', borderRadius: '6px', marginBottom: '16px', borderLeft: '3px solid #06b6d4' }}>
             <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '12px', color: '#06b6d4' }}>Community Manager Skills</h3>
             <ul style={{ fontSize: '15px', lineHeight: '1.8', paddingLeft: '20px' }}>
               <li>Discord moderation & community strategy</li>
@@ -196,11 +196,11 @@ export default function Web3JobsGuide() {
           </div>
         </section>
 
-        <section style={{ marginbottom: '48px', padding: '24px', backgroundColor: '#161b22', borderLeft: '4px solid #6366f1', borderRadius: '8px' }}>
-          <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginbottom: '16px', color: '#58a6ff' }}>3. How to Land Your First Web3 Job</h2>
+        <section style={{ marginBottom: '48px', padding: '24px', backgroundColor: '#161b22', borderLeft: '4px solid #6366f1', borderRadius: '8px' }}>
+          <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '16px', color: '#58a6ff' }}>3. How to Land Your First Web3 Job</h2>
 
-          <div style={{ backgroundColor: '#0d1117', padding: '16px', borderRadius: '6px', marginbottom: '16px', borderLeft: '3px solid #06b6d4' }}>
-            <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginbottom: '12px', color: '#06b6d4' }}>Strategy</h3>
+          <div style={{ backgroundColor: '#0d1117', padding: '16px', borderRadius: '6px', marginBottom: '16px', borderLeft: '3px solid #06b6d4' }}>
+            <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '12px', color: '#06b6d4' }}>Strategy</h3>
             <ul style={{ fontSize: '15px', lineHeight: '1.8', paddingLeft: '20px' }}>
               <li><strong>Build Portfolio:</strong> GitHub with Solidity projects, deployed testnet contracts, contributions to open-source</li>
               <li><strong>Network:</strong> Attend conferences (Devcon, EthDenver), join Discord communities, follow founders/engineers on Twitter</li>

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Top RWA tokens covering tokenized treasuries, real estate, and credit markets.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-rwa-crypto-tokens-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

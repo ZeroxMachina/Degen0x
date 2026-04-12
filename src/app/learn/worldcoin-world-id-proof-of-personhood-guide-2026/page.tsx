@@ -43,11 +43,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to Worldcoin, World ID verification, WLD tokenomics, and decentralized identity.',
     images: ['https://degen0x.com/og-worldcoin-world-id-proof-of-personhood-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/worldcoin-world-id-proof-of-personhood-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

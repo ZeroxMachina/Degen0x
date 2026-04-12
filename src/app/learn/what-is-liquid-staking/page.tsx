@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Lido, Rocket Pool, Jito, Marinade. Earn 3.5-4.2% APY on ETH, SOL. Use LSTs as DeFi collateral.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-liquid-staking',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks, regulations (MiCA).',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/stablecoin-types-comparison',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -282,7 +280,7 @@ export default function StablecoinTypesComparison() {
             DAI is Maker DAO&apos;s decentralized stablecoin. Lock ETH/USDC in Maker vaults, mint DAI. Minimum collateral ratio: 150% (mint $1 DAI for $1.50 ETH). If ETH crashes below 150% ratio, the vault is liquidated. Stability fee (interest): 3-5% APY depending on governance. Maker DAO governance: MKR token holders vote on collateral types, collateral ratios, and stability fees. Fully decentralized (no CEO, no bank risk).
           </p>
           <h3 style={h3Style}>LUSD (Liquity) - $850M Locked</h3>
-          <p style={{ marginbottom: 16, lineHeight: 1.8 }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
             LUSD is similar to DAI but with lower collateral requirements (110% minimum). Mint $1 LUSD for $1.10 ETH. Liquidation penalty: 10% (more aggressive than Maker). LUSD is immutable (no governance), which is a feature (no governance risk) and bug (can&apos;t upgrade). TVL lower than DAI due to higher risk.
           </p>
         </section>

@@ -49,11 +49,9 @@ export const metadata: Metadata = {
       'Complete guide to crypto ETFs: Bitcoin, Ethereum, Solana, XRP, staking yields, and institutional adoption in 2026.',
     images: ['https://degen0x.com/og-crypto-etfs-guide-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-etfs-complete-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

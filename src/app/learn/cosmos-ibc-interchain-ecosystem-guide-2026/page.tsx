@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/cosmos-ibc-interchain-ecosystem-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Cosmos IBC: Interchain Communication & Liquidity 2026',

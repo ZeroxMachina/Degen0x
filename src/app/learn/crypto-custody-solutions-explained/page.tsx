@@ -20,11 +20,9 @@ export const metadata: Metadata = {
     description: 'Self vs institutional custody: Coinbase ($320B+), Fireblocks MPC, BitGo, Safe contracts',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-custody-solutions-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

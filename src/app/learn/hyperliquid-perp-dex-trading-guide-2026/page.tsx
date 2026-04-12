@@ -49,11 +49,9 @@ export const metadata: Metadata = {
       'Trade perpetuals on Hyperliquid: 150+ markets, 50x leverage, zero-fee spot, sub-second finality, and HYPE token staking.',
     images: ['https://degen0x.com/og-hyperliquid-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/hyperliquid-perp-dex-trading-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

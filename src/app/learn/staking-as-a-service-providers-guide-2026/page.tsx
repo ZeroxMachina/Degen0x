@@ -436,7 +436,7 @@ export default function StakingServiceProvidersGuide() {
             <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
               <strong>Supported chains:</strong> 50+ PoS networks including Ethereum, Solana, Cosmos, Polkadot, Avalanche, Near, Fantom, Celo, and many others. P2P's chain diversity is unparalleled.
             </p>
-            <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginbottom: '16px' }}>
+            <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
               <strong>Custody model:</strong> Non-custodial. You control your private keys and assets at all times. P2P operates the validator infrastructure but cannot access your funds. This is the highest security model for paranoid users or institutions with strict custody requirements.
             </p>
             <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
@@ -701,7 +701,7 @@ export default function StakingServiceProvidersGuide() {
             Lido's 24.2% market share creates significant centralization risk. If Lido validators misbehaved—due to a coordinated attack, governance compromise, or client bug affecting all Lido validators—nearly 1/4 of Ethereum could be at risk. The Ethereum community has called for Lido to reduce its market share, but adoption of competitors is slow. This is one of the major risks facing Ethereum's long-term decentralization.
           </p>
 
-          <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#e6edf3', marginbottom: '12px', marginTop: '24px' }}>Regulatory Risk</h3>
+          <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#e6edf3', marginBottom: '12px', marginTop: '24px' }}>Regulatory Risk</h3>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Regulatory frameworks for staking are still evolving. In some jurisdictions, staking rewards might be taxed as income (vs. capital gains). Custodial staking providers might face restrictions on who can stake and what disclosures are required. Tax treatment of liquid staking tokens varies by jurisdiction. Regulatory changes could reduce the appeal of staking services or increase compliance costs for providers.
           </p>

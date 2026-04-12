@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to perpetual DEX trading in 2026. $26B+ daily volume, up to 50x leverage, zero gas fees.',
     image: 'https://degen0x.com/og-perpetual-dex-guide.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/perpetual-dex-trading-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

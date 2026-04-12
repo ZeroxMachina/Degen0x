@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare stablecoin lending rates across platforms: USDC 4-8%, DAI 5-9%, USDT rates, and risk analysis.',
     image: 'https://degen0x.com/og-defi-lending.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/best-stablecoin-lending-rates-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -36,11 +36,9 @@ export const metadata: Metadata = {
     description: "MPC wallet guide comparing Fireblocks, ZenGo, Coinbase WaaS, Lit Protocol, Dfns. Learn how MPC differs from multisig, threshold signing, and no-seed-phrase benefits.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-mpc-security',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

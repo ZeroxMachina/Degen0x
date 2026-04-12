@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Best Infrastructure Crypto Tokens 2026',
     description: 'LINK, FIL, GRT, AR, RNDR, POKT infrastructure investments',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-infrastructure-crypto-tokens',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

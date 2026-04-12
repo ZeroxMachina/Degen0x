@@ -46,11 +46,9 @@ export const metadata: Metadata = {
     description: 'Master Babylon Protocol: native Bitcoin staking with zero slashing, BABY dual staking, Babylon Genesis L1, and trustless vaults in 2026.',
     images: ['https://degen0x.com/og-babylon-protocol-bitcoin-staking-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/babylon-protocol-bitcoin-staking-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

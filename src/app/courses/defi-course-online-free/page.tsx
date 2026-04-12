@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'DeFi education: protocols, yield farming, risks, strategies.',
     image: 'https://degen0x.com/og-courses.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/courses/defi-course-online-free',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

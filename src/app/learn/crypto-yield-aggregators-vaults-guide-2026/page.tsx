@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Crypto Yield Aggregators & DeFi Vaults 2026',
     description: 'Earn yields on crypto with vaults. Yearn V3, Beefy, Convex, Sommelier, AI strategies, and how to deposit your first vault.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-yield-aggregators-vaults-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

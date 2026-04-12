@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare blue chip tokens: market cap, yield, institutional adoption, and portfolio allocation models for 60/30/10 strategy.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/blue-chip-crypto-tokens-list',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

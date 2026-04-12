@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Crypto Options Strategies | degen0x',
     description: 'Master call/put, straddles, iron condors on Deribit, Lyra, Premia.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/crypto-options-trading-strategies',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'DCA Bot Strategy Comparison',
     description: 'Compare DCA bots: 3Commas, Pionex, Bitsgap for passive crypto investing.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/dca-bot-strategy-comparison',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

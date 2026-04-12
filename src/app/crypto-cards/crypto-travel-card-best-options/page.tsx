@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare Crypto.com, Coinbase, Binance, and travel benefits.',
     image: 'https://degen0x.com/og-crypto-cards.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/crypto-cards/crypto-travel-card-best-options',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

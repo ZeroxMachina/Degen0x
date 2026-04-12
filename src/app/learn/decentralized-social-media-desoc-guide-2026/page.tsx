@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete DeSoc/SocialFi guide. Explore Farcaster, Lens Protocol, data ownership, and the booming creator economy on-chain.',
     image: 'https://degen0x.com/og-desoc-guide.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/decentralized-social-media-desoc-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

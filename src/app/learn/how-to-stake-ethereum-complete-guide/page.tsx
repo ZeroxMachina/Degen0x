@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Solo staking vs liquid staking. APY, fees, lock-up periods. Earn 3.5-4.2% on ETH.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/how-to-stake-ethereum-complete-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

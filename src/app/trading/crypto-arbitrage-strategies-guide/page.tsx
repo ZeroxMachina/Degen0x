@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Crypto Arbitrage | degen0x',
     description: 'CEX-CEX, triangular, cross-chain, and flash loan arbitrage strategies.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/crypto-arbitrage-strategies-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

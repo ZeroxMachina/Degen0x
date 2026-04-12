@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'ETH Burn Tracker',
     description: 'Track ETH burns and deflationary supply dynamics live.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/eth-burn-tracker-live',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

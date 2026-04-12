@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-governance-tokens-explained'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Crypto Governance Tokens: Voting Rights & Protocol Economics',
@@ -115,7 +115,7 @@ const page = () => {
           <p style={{ color: "#e6edf3", lineHeight: "1.8", marginBottom: "12px" }}>
             Governance tokens represent voting rights in decentralized protocols. Instead of centralized companies making decisions, token holders vote on protocol parameters. Examples: Uniswap fee tiers (UNI holders vote 0.01% vs 0.05% fees), Compound interest rates (COMP holders vote protocol parameters), Aave collateral assets (AAVE holders vote which tokens to support).
           </p>
-          <p style={{ color: "#e6edf3", lineHeight: "1.8", marginbottom: "12px" }}>
+          <p style={{ color: "#e6edf3", lineHeight: "1.8", marginBottom: "12px" }}>
             Philosophical motivation: true decentralization. Bitcoin is decentralized consensus + monetary policy. Ethereum used to have benevolent dictator (Vitalik). Modern protocols democratize: governance tokens distribute voting power widely, preventing single entity control. Ideal: 1M token holders, no individual &gt;1%. Reality: whales often control 30-50%, making effective governance difficult.
           </p>
           <p style={{ color: "#e6edf3", lineHeight: "1.8" }}>

@@ -18,11 +18,9 @@ export const metadata: Metadata = {
     title: 'Crypto Payroll Services Guide',
     description: 'Compare crypto payroll platforms for employers and contractors.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/spending/crypto-payroll-services-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

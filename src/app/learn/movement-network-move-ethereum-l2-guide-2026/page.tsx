@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Move language on Ethereum: 10K+ TPS, scandal, Move Industries rebrand.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/movement-network-move-ethereum-l2-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

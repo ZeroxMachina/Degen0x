@@ -18,11 +18,10 @@ export const metadata: Metadata = {
     title: 'Coinbase vs Kraken vs Gemini',
     description: 'Exchange comparison: fees, coins, security, and advanced features.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/compare/coinbase-vs-kraken-vs-gemini',
-  }};
-
+  };
+},
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

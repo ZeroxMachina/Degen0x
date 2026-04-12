@@ -23,11 +23,9 @@ export const metadata: Metadata = {
     description: 'MEXC 0% maker, OKX 0.08%, Binance 0.1%. Complete fee breakdown & withdrawal optimization.',
     image: 'https://degen0x.com/og-lowest-fee-2026.png',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/exchanges/lowest-fee-crypto-exchange-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

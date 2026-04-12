@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Uniswap, PancakeSwap, Curve, dYdX, Jupiter, Raydium, GMX ranking and comparison.',
     image: 'https://degen0x.com/og-exchanges.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/exchanges/decentralized-exchange-dex-ranking',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

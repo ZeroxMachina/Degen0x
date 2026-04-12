@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Solidity: fundamentals to security auditing. Job-ready path.',
     image: 'https://degen0x.com/og-courses.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/courses/solidity-smart-contract-course',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

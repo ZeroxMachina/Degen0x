@@ -20,11 +20,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to deploying custom rollups with RaaS providers.',
     images: ['https://degen0x.com/og-raas-custom-chains-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/rollup-as-a-service-raas-launch-custom-chains-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

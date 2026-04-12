@@ -38,11 +38,9 @@ export const metadata: Metadata = {
     description: "Backpack wallet complete guide: xNFTs (executable NFTs), Solana+Ethereum, built-in DEX, Mad Lads, Coral ecosystem, Armani Ferrante. Pros, cons, comparison vs Phantom.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/backpack-wallet-complete-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

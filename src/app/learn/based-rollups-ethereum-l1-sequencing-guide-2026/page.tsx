@@ -40,11 +40,9 @@ export const metadata: Metadata = {
       "Master based rollups with L1 sequencing, preconfirmations, and synchronous composability.",
     images: ["https://degen0x.com/og-based-rollups-l1-sequencing.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/based-rollups-ethereum-l1-sequencing-guide-2026',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Article", "FAQPage"],

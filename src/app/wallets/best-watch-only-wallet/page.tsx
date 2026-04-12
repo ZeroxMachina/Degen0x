@@ -36,11 +36,9 @@ export const metadata: Metadata = {
     description: "Best watch-only wallets: Zerion (multi-chain), DeBank (DeFi tracking), Zapper (yield), Step Finance (Solana), Nansen (whale watching). Track coldware securely.",
     image: "https://degen0x.com/og-wallets.svg",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-watch-only-wallet',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

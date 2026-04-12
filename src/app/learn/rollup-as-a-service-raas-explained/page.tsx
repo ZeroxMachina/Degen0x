@@ -20,11 +20,9 @@ export const metadata: Metadata = {
     description: 'Deploy custom rollups in minutes. RaaS providers manage infrastructure so you focus on app logic.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/rollup-as-a-service-raas-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Explore $9-10B DePIN market: Helium wireless, Filecoin storage, Render GPU compute, and 650+ projects.',
     image: 'https://degen0x.com/og-depin-guide.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/depin-decentralized-physical-infrastructure-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

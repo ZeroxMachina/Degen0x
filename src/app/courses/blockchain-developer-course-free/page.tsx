@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Free web3 courses: CryptoZombies, Alchemy, Buildspace. Land web3 jobs with portfolio projects.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/courses/blockchain-developer-course-free',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

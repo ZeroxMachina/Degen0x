@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare top yield optimizers: Yearn Finance, Beefy Finance, Convex, Pendle, Sommelier. Auto-compound strategies, multi-chain yields, TVL data, governance tokens & fees.',
     image: 'https://degen0x.com/og-tools-defi-yield.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/tools/defi-yield-optimizer',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

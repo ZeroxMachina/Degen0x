@@ -47,11 +47,9 @@ export const metadata: Metadata = {
       'Master FHE in 2026: Zama, Fhenix, Inco—enable confidential DeFi and encrypted smart contracts.',
     images: ['https://degen0x.com/og-fhe-crypto-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/fhe-fully-homomorphic-encryption-crypto-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

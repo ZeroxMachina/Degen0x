@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'BNB Chain L1: PancakeSwap DEX, Venus lending, Alpaca leverage farming, Thena. High yields, $10B ecosystem, opBNB L2 scaling.',
     image: 'https://degen0x.com/og-ecosystem.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/best-projects-on-bnb-chain',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -374,7 +372,7 @@ export default function BestProjectsOnBNBChain2026() {
           <h2 style={h2Style}>Frequently Asked Questions</h2>
 
           <div style={infoBoxStyle}>
-            <h3 style={{ fontSize: 16, fontWeight: 700, marginbottom: 12, color: '#58a6ff' }}>What is BNB Chain TVL and major protocols in 2026?</h3>
+            <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 12, color: '#58a6ff' }}>What is BNB Chain TVL and major protocols in 2026?</h3>
             <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
               BNB Chain: $10-12B TVL across 200+ DeFi protocols. PancakeSwap dominates 50-60% of volume ($2B+ TVL). Venus ($3B TVL): largest lending. Alpaca Finance, Thena, BiSwap, Ellipsis also major. Transaction cost: $0.10-$1.00 (higher than Polygon/Optimism). 20 validators: centralization risk vs Ethereum 800K+. Growth: +35% YoY, driven by high yields and Binance ecosystem lock-in.
             </p>
@@ -395,14 +393,14 @@ export default function BestProjectsOnBNBChain2026() {
           </div>
 
           <div style={infoBoxStyle}>
-            <h3 style={{ fontSize: 16, fontWeight: 700, marginbottom: 12, color: '#58a6ff' }}>What is Alpaca Finance and how does leverage farming work?</h3>
+            <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 12, color: '#58a6ff' }}>What is Alpaca Finance and how does leverage farming work?</h3>
             <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
               Alpaca Finance: leverage farming protocol, $1.5B+ TVL. Mechanism: borrow BUSD at 5-7%, deploy into PancakeSwap (20-30% APY), pocket net 15-25% yield. Leverage: up to 2-3x, liquidation if collateral drops 20%. ALPACA token: governance + yield sharing. Risk: leverage liquidation (if BNB falls 20%, positions close, loss realized), borrowing rate changes (rates rise in bull markets, reducing profitability). Advanced strategy only (requires monitoring, rebalancing).
             </p>
           </div>
 
           <div style={infoBoxStyle}>
-            <h3 style={{ fontSize: 16, fontWeight: 700, marginbottom: 12, color: '#58a6ff' }}>What is opBNB L2 and how does it scale BNB Chain?</h3>
+            <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 12, color: '#58a6ff' }}>What is opBNB L2 and how does it scale BNB Chain?</h3>
             <p style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
               opBNB: Layer 2 built on OP Stack for BNB Chain. Features: &lt;100ms finality, 100x cheaper gas than BNB Chain mainnet, compatible with BNB dApps. Launch: 2023, growth: $500M+ TVL (2026). Positioning: mainnet for core DeFi (Venus, PancakeSwap), opBNB for gaming/scaling. AggLayer enables opBNB ↔ BNB mainnet atomic swaps (2026). Use cases: NFT gaming (lower gas enables affordable minting), micro-transactions, payment channels.
             </p>

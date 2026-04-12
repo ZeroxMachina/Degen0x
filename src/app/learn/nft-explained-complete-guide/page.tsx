@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Learn about NFTs: ERC-721, ERC-1155, use cases (art, gaming, music), OpenSea vs Blur vs Magic Eden, blue chip collections, rarity evaluation, and utility NFTs 2026.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/nft-explained-complete-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -46,11 +46,9 @@ export const metadata: Metadata = {
     description:
       "NFTfi, Blend, BendDAO, and Drops explained. How to borrow against your NFTs, liquidation risks, and the future of NFT finance.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/nft-lending-nftfi-guide-2026',
-  }};
-
+  };
 // ─── Structured Data ─────────────────────────────────────────────────────────
 const articleSchema = {
   "@context": "https://schema.org",

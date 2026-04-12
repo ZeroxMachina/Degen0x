@@ -34,11 +34,9 @@ export const metadata: Metadata = {
     description: "Master US crypto taxation in 2026. IRS rules, Form 1099-DA, DeFi taxes, staking rewards, NFT 28% trap, and tax-loss harvesting strategies.",
     images: ["https://degen0x.com/og-crypto-tax-guide.svg"],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-tax-guide-2026',
-  }};
-
+  };
 export default function CryptoTaxGuide2026() {
   const structuredData = {
     "@context": "https://schema.org",

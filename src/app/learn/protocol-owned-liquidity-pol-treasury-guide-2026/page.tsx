@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     title: 'Protocol-Owned Liquidity Guide 2026 | DeFi Treasuries',
     description: 'Learn POL, bonding, OlympusDAO, Frax PCV, Tokemak, and Berachain Proof of Liquidity. How protocols own their own LP positions.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/protocol-owned-liquidity-pol-treasury-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

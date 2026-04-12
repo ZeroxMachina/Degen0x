@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Crypto Custody Insurance Guide 2026",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/insurance/crypto-custody-insurance-guide',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

@@ -30,11 +30,9 @@ export const metadata: Metadata = {
     title: 'Mantle Network Guide 2026 — MNT Token & L2 Ecosystem',
     description: 'Comprehensive guide to Mantle Network: $2.8B TVL, ZK rollup migration, MNT tokenomics, mETH/cmETH staking, DeFi ecosystem & institutional partnerships.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [

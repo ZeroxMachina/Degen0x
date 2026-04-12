@@ -97,7 +97,7 @@ export default function BestProjectsOnSolana() {
 
         <section id="marinade">
           <h2 style={h2Style}>Marinade: Liquid Staking Leader</h2>
-          <p style={{ fontSize: 15, lineHeight: 1.8, marginbottom: 16, color: '#8b949e' }}>Marinade: $10B TVL (50% of Solana staking). mSOL token: stake SOL, receive mSOL (liquid, tradeable). APY: 5.5%. Features: auto-compounding, delegation, DeFi integration. Safest staking option (decentralized validators, low slashing risk).</p>
+          <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: 16, color: '#8b949e' }}>Marinade: $10B TVL (50% of Solana staking). mSOL token: stake SOL, receive mSOL (liquid, tradeable). APY: 5.5%. Features: auto-compounding, delegation, DeFi integration. Safest staking option (decentralized validators, low slashing risk).</p>
         </section>
 
         <section id="raydium">

@@ -9,11 +9,9 @@ export const metadata: Metadata = {
   keywords: ['crypto insurance 2026', 'nexus mutual', 'insurace', 'smart contract insurance', 'defi insurance', 'exchange insurance', 'crypto protection'],
   openGraph: { type: 'article', title: 'Best Crypto Insurance 2026: Nexus Mutual, InsurAce, Bridge Mutual', description: 'Crypto insurance guide: Nexus Mutual, InsurAce, Bridge Mutual, Coincover. Coverage, premiums, claims comparison table 2026.', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/insurance/best-crypto-insurance-2026', images: [{ url: 'https://degen0x.com/og-insurance.svg', width: 1200, height: 630 }] },
   twitter: { card: 'summary_large_image', title: 'Best Crypto Insurance 2026', description: 'Crypto insurance: Nexus Mutual, InsurAce, Bridge Mutual, Coincover. Compare coverage, premiums, claims.', image: 'https://degen0x.com/og-insurance.svg' },
-,
   alternates: {
     canonical: 'https://degen0x.com/insurance/best-crypto-insurance-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

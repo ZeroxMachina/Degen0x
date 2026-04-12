@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/usual-protocol-usd0-rwa-stablecoin-guide-2026'
-  }},
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Usual Protocol USD0 RWA Stablecoin Guide 2026',

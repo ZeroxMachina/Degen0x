@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/depin-decentralized-physical-infrastructure-networks-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'DePIN Networks: Decentralized Physical Infrastructure 2026',

@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Polygon L2: QuickSwap DEX, Aave V3 lending, Uniswap V3, yield farming. Polygon 2.0 shift to zkEVM, POL token, AggLayer.',
     image: 'https://degen0x.com/og-ecosystem.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/ecosystem/best-projects-on-polygon',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

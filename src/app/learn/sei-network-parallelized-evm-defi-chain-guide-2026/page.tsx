@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     title: 'Sei Network Guide 2026 | Parallelized EVM',
     description: 'First parallelized EVM, 400ms finality, 32M+ daily txs. Explore Yei Finance, DeFi ecosystem, and institutional adoption in 2026.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/sei-network-parallelized-evm-defi-chain-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

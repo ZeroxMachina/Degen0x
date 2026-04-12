@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     title: 'Bitcoin Mining & Proof of Work Economics Guide 2026',
     description: 'PoW economics, mining hardware, 2024 halving, MARA/RIOT/CLSK comparison, AI pivot to HPC contracts, and future outlook.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bitcoin-mining-proof-of-work-economics-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -684,7 +682,7 @@ export default function BitcoinMiningGuide() {
           </p>
 
           <div style={infoBoxStyle}>
-            <h3 style={{ fontSize: 15, fontWeight: 700, color: '#f7931a', marginbottom: 10 }}>Mining Pool Trade-Offs</h3>
+            <h3 style={{ fontSize: 15, fontWeight: 700, color: '#f7931a', marginBottom: 10 }}>Mining Pool Trade-Offs</h3>
             <div style={{ color: '#c9d1d9', fontSize: 14, lineHeight: 1.8 }}>
               <p style={{ marginBottom: 8 }}><strong>Advantages:</strong> Stable, predictable payouts; reduced variance; lower entry barriers; access to network/upgrades.</p>
               <p style={{ marginBottom: 8 }}><strong>Disadvantages:</strong> Pool fees (0.5-4%); centralization risk; potential transaction censorship; less transparency in some pools.</p>

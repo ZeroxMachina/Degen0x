@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://degen0x.com/learn/raydium-solana-amm-dex-trading-guide-2026'
-  }},
+  },
   openGraph: {
     type: 'article',
     title: 'Raydium Solana AMM: Automated Market Maker & Liquidity Guide',

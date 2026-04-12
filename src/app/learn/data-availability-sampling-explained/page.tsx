@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Data Availability Sampling Explained: Light Nodes & DA Layers',
     description: 'Learn how DAS enables light nodes and scales blockchains with dedicated DA layers.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/data-availability-sampling-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

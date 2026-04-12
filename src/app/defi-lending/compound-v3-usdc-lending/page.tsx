@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete Compound V3 (Comet) guide for USDC lending. Learn about single-asset model, collateral assets, and cross-chain deployment.',
     image: 'https://degen0x.com/og-defi-lending.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/compound-v3-usdc-lending',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

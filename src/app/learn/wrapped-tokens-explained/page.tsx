@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master wrapped tokens with real TVL data and risk comparison.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/wrapped-tokens-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

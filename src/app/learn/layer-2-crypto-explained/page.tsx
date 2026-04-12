@@ -9,11 +9,9 @@ export const metadata: Metadata = {
   keywords: ['layer 2', 'rollups', 'arbitrum', 'optimism', 'zksync', 'scaling', 'crypto layer 2'],
   openGraph: { type: 'article', title: 'Layer 2 Crypto Explained 2026 | degen0x', description: 'Layer 2 scaling explained: optimistic rollups, ZK rollups, fraud proofs, TPS comparison, TVL, finality times.', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/learn/layer-2-crypto-explained', images: [{ url: 'https://degen0x.com/og-learn.svg', width: 1200, height: 630, alt: 'Layer 2 Explained' }] },
   twitter: { card: 'summary_large_image', title: 'Layer 2 Crypto Explained 2026 | degen0x', description: 'Layer 2 scaling explained: optimistic rollups, ZK rollups, fraud proofs, TPS comparison, TVL, finality times.', image: 'https://degen0x.com/og-learn.svg' },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/layer-2-crypto-explained',
-  }};
-
+  };
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Layer 2 Crypto Explained: Rollups & Scaling', description: 'Layer 2 scaling explained: optimistic rollups, ZK rollups, fraud proofs, validity proofs, TPS, TVL, finality times.', image: 'https://degen0x.com/og-learn.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [
   { '@type': 'Question', name: 'What are Layer 2s and why do we need them?', acceptedAnswer: { '@type': 'Answer', text: 'Layer 2s are scaling solutions built on top of Layer 1 blockchains (Ethereum, Bitcoin). They process transactions off-chain and periodically settle to L1, combining L1 security with L2 speed. Ethereum L1: ~15-30 TPS, $1-50 fees. Arbitrum (L2): 4,000+ TPS, <$0.01 fees. L2s solve scalability without requiring L1 protocol changes.' } },
   { '@type': 'Question', name: 'What is the difference between optimistic and ZK rollups?', acceptedAnswer: { '@type': 'Answer', text: 'Optimistic rollups (Arbitrum, Optimism, Base): assume transactions are valid by default; challengers can submit fraud proofs if dishonest. Finality: 7 days. ZK rollups (zkSync, StarkNet, Scroll): batch transactions and prove correctness with zero-knowledge proofs. Finality: minutes. Optimistic rollups are simpler, faster to deploy, less proven. ZK rollups are more complex but offer instant finality.' } },

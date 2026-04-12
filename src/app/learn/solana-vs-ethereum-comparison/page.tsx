@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Solana vs Ethereum: TPS, fees, consensus, TVL, ecosystem, Rust vs Solidity, decentralization, and uptime comparison.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/solana-vs-ethereum-comparison',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

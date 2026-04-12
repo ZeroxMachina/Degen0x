@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to DIDs, ENS, Lens Protocol, verifiable credentials, and soulbound tokens.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/decentralized-identity-did-explained',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Compare Ledger, Trust Wallet, Phantom, Exodus, Keplr for staking. Hardware wallet guides, APY ranges, liquid staking.',
     image: 'https://degen0x.com/og-wallets-staking.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/wallets/best-wallet-for-staking',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',

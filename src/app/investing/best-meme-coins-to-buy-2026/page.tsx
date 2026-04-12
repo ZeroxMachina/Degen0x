@@ -9,11 +9,9 @@ export const metadata: Metadata = {
   keywords: ['meme coins 2026', 'best meme coins', 'DOGE', 'SHIB', 'PEPE', 'meme coin opportunities', 'crypto memes'],
   openGraph: { type: 'article', title: 'Best Meme Coins to Buy 2026 | degen0x', description: 'Meme coin guide 2026: DOGE, SHIB, PEPE, WIF, BONK. Market analysis, community size, utility, pump dynamics, rug pull checklist.', publishedTime: '2026-04-10T00:00:00Z', modifiedTime: '2026-04-10T00:00:00Z', url: 'https://degen0x.com/investing/best-meme-coins-to-buy-2026', images: [{ url: 'https://degen0x.com/og-investing.svg', width: 1200, height: 630, alt: 'Best Meme Coins 2026' }] },
   twitter: { card: 'summary_large_image', title: 'Best Meme Coins to Buy 2026 | degen0x', description: 'Meme coin guide 2026: DOGE, SHIB, PEPE, WIF. Market analysis, community, utility, rug pull checklist.', image: 'https://degen0x.com/og-investing.svg' },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/best-meme-coins-to-buy-2026',
-  }};
-
+  };
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Meme Coins to Buy 2026', description: 'Meme coin guide: DOGE, SHIB, PEPE, WIF, BONK, FLOKI. Market cap, community, utility, risks, rug pull detection.', image: 'https://degen0x.com/og-investing.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [
   { '@type': 'Question', name: 'What makes a good meme coin investment?', acceptedAnswer: { '@type': 'Answer', text: 'Established brand (DOGE, SHIB), strong community (100K+ Discord), exchange listings (Binance, Kraken), real utility (staking, governance), low supply concentration (no founder whale), and long-term roadmap. Avoid: anonymous teams, 90%+ founder holdings, zero utility, <1K Discord, <$10M market cap. Most meme coins are 99% speculation with 1% utility.' } },
   { '@type': 'Question', name: 'Is DOGE or SHIB a better investment?', acceptedAnswer: { '@type': 'Answer', text: 'DOGE ($0.25, $37B market cap, April 2026): older, more stable, Elon Musk association, zero utility. SHIB ($0.000015, $7B market cap): younger, ShibSwap (DEX) + rewards, faster gains/losses. DOGE = safer, SHIB = higher risk/reward. Both outperformed Bitcoin 2020-2021, underperformed 2022-2025. Choose: DOGE for stability, SHIB for growth.' } },

@@ -39,11 +39,9 @@ export const metadata: Metadata = {
       'Learn how Bitcoin ETFs work and how to invest in them in 2026. Compare spot Bitcoin ETFs and fees.',
     images: ['https://degen0x.com/og-bitcoin-etf.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bitcoin-etf-explained-how-to-invest',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

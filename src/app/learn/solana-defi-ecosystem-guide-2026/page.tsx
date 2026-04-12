@@ -29,11 +29,9 @@ export const metadata: Metadata = {
     title: "Solana DeFi Ecosystem Guide 2026 | degen0x",
     description: "Jupiter, Raydium, Magic Eden. Solana DeFi protocols and trading.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/solana-defi-ecosystem-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Type 2 zkEVM with $2B TVL, MetaMask native integration, and Uniswap v4. Learn how Linea scales Ethereum with zero-knowledge tech.',
     images: ['https://degen0x.com/og-linea-zkevm.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/linea-zkevm-consensys-layer-2-guide-2026',
-  }};
-
+  };
 const breadcrumbData = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',

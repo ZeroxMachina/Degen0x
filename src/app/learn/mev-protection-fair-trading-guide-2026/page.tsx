@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to MEV protection. Learn sandwich attacks, Flashbots, MEV-Share, and how to protect your trades from validator extraction.',
     image: 'https://degen0x.com/og-mev-protection.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/mev-protection-fair-trading-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

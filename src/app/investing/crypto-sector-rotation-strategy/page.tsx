@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Master BTC → ETH → L1s → DeFi rotation with dominance tracking and cycle timing.',
     image: 'https://degen0x.com/og-investing.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/investing/crypto-sector-rotation-strategy',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

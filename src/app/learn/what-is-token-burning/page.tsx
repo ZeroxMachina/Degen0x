@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Token Burning Explained: Deflation in Cryptocurrency',
     description: 'Learn how token burning creates deflation and impacts cryptocurrency prices.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/what-is-token-burning',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

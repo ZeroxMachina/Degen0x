@@ -28,11 +28,9 @@ export const metadata: Metadata = {
     description: 'Complete guide to intent-based DEX trading in 2026. Learn how CoW Protocol, UniswapX, and 1inch Fusion eliminate MEV, compare solver models, and start trading with intents.',
     image: 'https://degen0x.com/og-intent-based-trading.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/intent-based-trading-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Undercollateralized lending: Maple (institutional), Goldfinch (emerging markets), TrueFi. Higher yields, real default risk.',
     image: 'https://degen0x.com/og-undercollateralized-loans.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/defi-lending/undercollateralized-defi-loans',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

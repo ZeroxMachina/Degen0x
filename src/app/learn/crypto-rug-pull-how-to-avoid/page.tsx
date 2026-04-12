@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: 'Crypto Rug Pulls: How to Identify and Avoid Them',
     description: 'Learn how to spot rug pull scams and protect your investments.',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-rug-pull-how-to-avoid',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

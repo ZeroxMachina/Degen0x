@@ -304,7 +304,7 @@ export default function CongressionalTokenizationHearingPage() {
         {/* ── Section 5: Nasdaq Filing & SEC Innovation Exemption ── */}
         <section id="nasdaq-innovation-exemption" style={{ marginBottom: 48 }}>
           <h2 style={{ fontSize: "1.5rem", fontWeight: 800, marginBottom: 16 }}>5. Nasdaq Filing & SEC Innovation Exemption</h2>
-          <p style={{ color: S.text2, lineHeight: 1.8, marginbottom: 20 }}>
+          <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
             On January 30, 2026, Nasdaq filed a proposed rule change with the SEC to enable trading of tokenized securities on its exchange. This was a watershed moment — the world&apos;s largest stock exchange applying for permission to list blockchain-based securities.
           </p>
 

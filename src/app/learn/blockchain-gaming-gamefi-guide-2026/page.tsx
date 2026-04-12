@@ -48,11 +48,9 @@ export const metadata: Metadata = {
       'Complete guide to GameFi in 2026. Explore AAA blockchain games, play-to-own mechanics, gaming chains, and how to earn through engaging gameplay.',
     images: ['https://degen0x.com/og-blockchain-gaming-gamefi-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/blockchain-gaming-gamefi-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

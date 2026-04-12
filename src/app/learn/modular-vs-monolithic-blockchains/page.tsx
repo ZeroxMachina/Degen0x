@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Compare modular (execution + DA layers) vs monolithic (Solana) architectures. Learn Celestia, EigenDA, sovereign rollups.',
     image: 'https://degen0x.com/og-modular.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/modular-vs-monolithic-blockchains',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

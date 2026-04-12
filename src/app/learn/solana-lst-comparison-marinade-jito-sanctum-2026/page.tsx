@@ -385,7 +385,7 @@ export default function LSTComparison() {
               </ul>
             </div>
           </div>
-          <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginbottom: '16px' }}>
+          <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             <strong>Use Case:</strong> Sanctum is for yield hunters comfortable with volatility and willing to tolerate depeg risk. If you're staking 5-20 SOL and want exposure to experimental mechanics with high upside, INF can be part of your portfolio. However, Sanctum should not be your entire LST position; treat it as a ~20-30% allocation alongside mSOL or JitoSOL.
           </p>
         </section>

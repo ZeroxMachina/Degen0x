@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     description: 'Which is better: Bitcoin or gold? Compare supply, returns, volatility, Sharpe ratio.',
     image: 'https://degen0x.com/og-learn.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/bitcoin-vs-gold-comparison-guide',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

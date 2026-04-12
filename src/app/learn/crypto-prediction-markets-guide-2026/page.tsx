@@ -27,11 +27,11 @@ export const metadata: Metadata = {
         url: 'https://degen0x.com/og-prediction-markets-guide.svg',
         width: 1200,
         height: 630,
-        alt: 'Crypto Prediction Markets Guide 2026'
-      }
+        alt: 'Crypto Prediction Markets Guide 2026',
+      },
     ],
     publishedTime: '2026-04-01T00:00:00Z',
-    authors: ['degen0x']
+    authors: ['degen0x'],
   },
   twitter: {
     card: 'summary_large_image',
@@ -42,8 +42,7 @@ export const metadata: Metadata = {
 ,
   alternates: {
     canonical: 'https://degen0x.com/learn/crypto-prediction-markets-guide-2026',
-  }};
-
+  };
 const schemaData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],

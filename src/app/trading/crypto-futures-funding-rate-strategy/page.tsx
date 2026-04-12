@@ -27,11 +27,9 @@ export const metadata: Metadata = {
     description: 'Master perpetual funding mechanics, cash-and-carry arbitrage, and delta-neutral strategies with real APY calculations.',
     image: 'https://degen0x.com/og-trading.svg',
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/trading/crypto-futures-funding-rate-strategy',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',

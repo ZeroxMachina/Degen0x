@@ -17,11 +17,9 @@ export const metadata: Metadata = {
     title: "How Blockchain Works: Simple Explanation",
     description: "Learn how blockchain technology works in simple terms for beginners.",
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/how-blockchain-works-simple-explanation',
-  }};
-
+  };
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",

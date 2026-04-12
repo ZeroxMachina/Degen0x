@@ -39,11 +39,9 @@ export const metadata: Metadata = {
     description: 'Compare EigenLayer, Symbiotic, and Karak: TVL, features, tokenomics, and strategy. Which restaking protocol fits your yield farming goals?',
     images: ['https://degen0x.com/og-restaking-wars-2026.svg'],
   },
-,
   alternates: {
     canonical: 'https://degen0x.com/learn/restaking-wars-eigenlayer-symbiotic-karak-guide-2026',
-  }};
-
+  };
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],
