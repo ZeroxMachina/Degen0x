@@ -175,14 +175,12 @@ export default function GermanLandingPage() {
           Deutschland, Österreich und der Schweiz.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Link
-            href="/exchanges/best"
+          <Link href="/exchanges/best"
             className="affiliate-cta px-7 py-3 rounded-xl text-white font-bold text-base"
           >
             Exchanges vergleichen
           </Link>
-          <Link
-            href="/learn"
+          <Link href="/exchanges/best"
             className="glass px-7 py-3 rounded-xl font-bold text-base text-[var(--color-text)]"
           >
             📚 Krypto lernen
@@ -223,8 +221,7 @@ export default function GermanLandingPage() {
                 <span className="text-sm font-bold" style={{ color: "#3fb950" }}>
                   {ex.rating}
                 </span>
-                <Link
-                  href="/de/exchanges"
+                <Link href="/exchanges/best"
                   className="text-xs px-3 py-1 rounded-lg font-bold text-[var(--color-text)]"
                   style={{ background: "var(--color-primary)" }}
                 >
@@ -246,9 +243,8 @@ export default function GermanLandingPage() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {KATEGORIEN.map((kat) => (
-            <Link
+            <Link href={kat.href}
               key={kat.href}
-              href={kat.href}
               className="rounded-2xl border border-[var(--color-border)] p-5 hover:border-[var(--color-primary)] transition-all group"
               style={{ background: "var(--color-surface)" }}
             >
@@ -303,8 +299,7 @@ export default function GermanLandingPage() {
             <p className="text-xs text-[var(--color-text-secondary)]">
               ⚠️ Diese Informationen dienen ausschließlich als allgemeine Orientierung. Für Ihre individuelle steuerliche Situation wenden Sie sich bitte an einen Steuerberater.
             </p>
-            <Link
-              href="/taxes/learn/crypto-tax-guide"
+            <Link href="/exchanges/best"
               className="inline-flex items-center gap-2 mt-3 text-sm font-bold text-[var(--color-primary)]"
             >
               Vollständiger Steuer-Guide →
@@ -323,9 +318,8 @@ export default function GermanLandingPage() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {DACH_TOOLS.map((tool) => (
-            <Link
+            <Link href={kat.href}
               key={tool.href}
-              href={tool.href}
               className="flex items-start gap-4 rounded-2xl border border-[var(--color-border)] p-5 hover:border-[var(--color-primary)] transition-all group"
               style={{ background: "var(--color-surface)" }}
             >
@@ -349,9 +343,8 @@ export default function GermanLandingPage() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {BELIEBTE_GUIDES.map((guide) => (
-            <Link
+            <Link href={guide.href}
               key={guide.href}
-              href={guide.href}
               className="flex items-center gap-3 rounded-xl border border-[var(--color-border)] px-4 py-3 hover:border-[var(--color-primary)] transition-all group"
               style={{ background: "var(--color-surface)" }}
             >

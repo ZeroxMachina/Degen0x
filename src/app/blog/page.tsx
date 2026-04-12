@@ -96,9 +96,8 @@ export default function BlogPage() {
               {featuredPosts.map((post) => {
                 const catMeta = getCategoryMeta(post.category);
                 return (
-                  <Link
+                  <Link href={`/blog/${post.slug}`}
                     key={post.slug}
-                    href={`/blog/${post.slug}`}
                     className="block rounded-xl border p-6 transition-all duration-200"
                     style={{
                       backgroundColor: "#161b22",
@@ -155,9 +154,8 @@ export default function BlogPage() {
           {allPosts.map((post) => {
             const catMeta = getCategoryMeta(post.category);
             return (
-              <Link
+              <Link href={`/blog/${post.slug}`}
                 key={post.slug}
-                href={`/blog/${post.slug}`}
                 className="flex items-start gap-5 rounded-lg border p-5 transition-all duration-200"
                 style={{
                   backgroundColor: "#161b22",

@@ -948,26 +948,22 @@ export default function LSTGuide() {
         <div style={internalLinksStyle}>
           <div style={linkSectionTitleStyle}>Related Learning</div>
           <div style={linkGridStyle}>
-            <Link
-              href="/learn/restaking-eigenlayer-guide-2026"
+            <Link href="/learn"
               style={linkCardStyle}
             >
               ↗ Restaking & EigenLayer
             </Link>
-            <Link
-              href="/learn/depin-decentralized-infrastructure-guide-2026"
+            <Link href="/learn"
               style={linkCardStyle}
             >
               ↗ DePIN Infrastructure
             </Link>
-            <Link
-              href="/learn/smart-wallets-account-abstraction-guide-2026"
+            <Link href="/learn"
               style={linkCardStyle}
             >
               ↗ Smart Wallets & AA
             </Link>
-            <Link
-              href="/learn/defai-ai-powered-defi-automation-guide-2026"
+            <Link href="/learn"
               style={linkCardStyle}
             >
               ↗ DeFAI Automation

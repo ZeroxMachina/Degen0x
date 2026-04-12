@@ -251,7 +251,6 @@ export default function OnchainAnalysisGuide() {
             ].map((item, idx) => (
               <li key={idx} style={{ marginBottom: '8px' }}>
                 <a
-                  href={`#section-${idx + 1}`}
                   style={{
                     color: '#58a6ff',
                     textDecoration: 'none',

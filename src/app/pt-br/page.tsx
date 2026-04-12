@@ -133,14 +133,12 @@ export default function PortuguesLandingPage() {
               ferramentas interativas e guias completos para tomar melhores decisões no mercado cripto.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/exchanges/best"
+              <Link href="/exchanges/best"
                 className="affiliate-cta px-8 py-3 rounded-xl text-white font-semibold text-lg"
               >
                 Comparar Exchanges
               </Link>
-              <Link
-                href="/tools"
+              <Link href="/tools"
                 className="glass px-8 py-3 rounded-xl font-semibold text-lg"
                 style={{ color: "var(--color-text)" }}
               >
@@ -221,9 +219,8 @@ export default function PortuguesLandingPage() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {GUIAS_POPULARES.map((guia) => (
-            <Link
+            <Link href={guia.href}
               key={guia.href}
-              href={guia.href}
               className="glass-subtle p-4 card-hover text-center rounded-xl"
             >
               <span
@@ -332,8 +329,7 @@ export default function PortuguesLandingPage() {
           <p className="mb-6" style={{ color: "var(--color-text-secondary)" }}>
             Receba análises semanais, alertas de mercado e as melhores oportunidades DeFi direto no seu email.
           </p>
-          <Link
-            href="/community"
+          <Link href="/exchanges/best"
             className="affiliate-cta px-8 py-3 rounded-xl text-white font-semibold inline-block"
           >
             Assinar Newsletter Gratuita

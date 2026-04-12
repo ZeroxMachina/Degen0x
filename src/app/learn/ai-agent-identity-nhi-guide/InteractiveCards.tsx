@@ -19,7 +19,7 @@ export default function InteractiveCards({ items, surface, border, cyan }: Inter
   return (
     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
       {items.map((item, i) => (
-        <Link
+        <Link href={item.href}
           key={i}
           href={item.href}
           style={{

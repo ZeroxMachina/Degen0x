@@ -134,7 +134,6 @@ export default function BestAccountantsPage() {
         />
 
                 <a
-                  href={cpa.url}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   className="affiliate-cta px-4 py-2 rounded-lg text-white text-sm font-medium whitespace-nowrap"
@@ -175,14 +174,12 @@ export default function BestAccountantsPage() {
             your transactions, then have a crypto-savvy CPA review the output and file your return.
           </p>
           <div className="flex flex-wrap gap-4 mt-4">
-            <Link
-              href="/taxes/best/software"
+            <Link href="/taxes/best/software"
               className="text-sm text-[var(--color-primary)] hover:underline"
             >
               Compare Tax Software &#8594;
             </Link>
-            <Link
-              href="/taxes/learn/how-to-file"
+            <Link href={cpa.url}
             >
               How to File Crypto Taxes &#8594;
             </Link>

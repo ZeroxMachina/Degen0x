@@ -93,9 +93,8 @@ export default function WalletsHubPage() {
           { label: "Compare", href: "#comparisons", icon: "&#8596;" },
           { label: "Learn", href: "#guides", icon: "&#128218;" },
         ].map((item) => (
-          <Link
+          <Link href={item.href}
             key={item.href}
-            href={item.href}
             className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover text-center"
           >
             <span className="text-2xl mb-2 block" dangerouslySetInnerHTML={{ __html: item.icon }} />
@@ -109,9 +108,8 @@ export default function WalletsHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Crypto Wallets by Category</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {BEST_OF_LINKS.map((link) => (
-            <Link
+            <Link href={item.href}
               key={link.href}
-              href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
               <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
@@ -126,9 +124,8 @@ export default function WalletsHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Reviews</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {REVIEW_LINKS.map((link) => (
-            <Link
+            <Link href={item.href}
               key={link.href}
-              href={link.href}
             >
               <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
@@ -142,9 +139,8 @@ export default function WalletsHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Comparisons</h2>
         <div className="grid md:grid-cols-2 gap-4">
           {COMPARISON_LINKS.map((link) => (
-            <Link
+            <Link href={item.href}
               key={link.href}
-              href={link.href}
             >
               <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
@@ -158,9 +154,8 @@ export default function WalletsHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Guides & Education</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {LEARN_LINKS.map((link) => (
-            <Link
+            <Link href={item.href}
               key={link.href}
-              href={link.href}
             >
               <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
@@ -174,9 +169,8 @@ export default function WalletsHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Tools</h2>
         <div className="grid md:grid-cols-2 gap-4">
           {TOOL_LINKS.map((link) => (
-            <Link
+            <Link href={item.href}
               key={link.href}
-              href={link.href}
             >
               <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>

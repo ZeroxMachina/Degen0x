@@ -252,7 +252,6 @@ export default function BitcoinSafeHavenGuidePage() {
           ].map((item) => (
             <a
               key={item.href}
-              href={item.href}
               className="block hover:underline"
               style={{ color: "#58a6ff" }}
             >
@@ -733,9 +732,8 @@ export default function BitcoinSafeHavenGuidePage() {
             { href: "/learn/crypto-risk-management-guide-2026", label: "Crypto Risk Management Guide" },
             { href: "/learn/btc-yield-earning-strategies-guide-2026", label: "BTC Yield & BTCFi Earning Strategies 2026" },
           ].map((link) => (
-            <Link
+            <Link href={item.href}
               key={link.href}
-              href={link.href}
               style={{ color: "#58a6ff" }}
             >
               {link.label}

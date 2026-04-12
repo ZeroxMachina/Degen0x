@@ -1080,16 +1080,14 @@ export default function BTCFiGuide() {
               </Link>
             </li>
             <li style={{ marginBottom: '10px' }}>
-              <Link
-                href="/learn/restaking-eigenlayer-guide-2026"
+              <Link href="/learn"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 EigenLayer Restaking Guide 2026 — Multiply Validator Yields
               </Link>
             </li>
             <li style={{ marginBottom: '10px' }}>
-              <Link
-                href="/learn/cross-chain-bridges-interoperability-guide-2026"
+              <Link href="/learn"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 Cross-Chain Bridges & Interoperability Guide 2026

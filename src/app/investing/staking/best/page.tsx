@@ -212,7 +212,6 @@ export default function BestStakingPage() {
 
                 <div className="mt-4 flex gap-3">
                   <a
-                    href={platform.affiliateUrl}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     className="affiliate-cta px-4 py-2 rounded-lg text-white text-sm font-medium"
@@ -220,7 +219,6 @@ export default function BestStakingPage() {
                     Visit {platform.name}
                   </a>
                   <a
-                    href={`/investing/staking/reviews/${platform.slug}`}
                     className="px-4 py-2 rounded-lg border border-[var(--color-border)] text-[var(--color-text)] text-sm font-medium hover:bg-[var(--color-bg)]/50 transition-colors"
                   >
                     Read Full Review

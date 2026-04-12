@@ -481,7 +481,6 @@ export default function GrassProtocolGuide() {
             ].map((link) => (
               <a
                 key={link.href}
-                href={link.href}
                 className="related-link"
                 style={{
                   display: "inline-block", padding: "8px 16px", background: "#161b22",

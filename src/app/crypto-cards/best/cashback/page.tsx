@@ -212,9 +212,8 @@ export default function BestCashbackCardsPage() {
             { title: "How Crypto Cards Work", href: "/crypto-cards/learn/how-crypto-cards-work" },
             { title: "Tax Implications of Crypto Rewards", href: "/crypto-cards/learn/tax-implications" },
           ].map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
               <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

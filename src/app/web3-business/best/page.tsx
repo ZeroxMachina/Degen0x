@@ -146,9 +146,8 @@ export default function BestWeb3BusinessPage() {
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">All Categories</h2>
           <div className="space-y-6">
             {categories.map((category) => (
-              <Link
+              <Link href={category.href}
                 key={category.href}
-                href={category.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover block"
               >
                 <h3 className="text-xl font-bold text-[var(--color-text)] mb-2">{category.title}</h3>

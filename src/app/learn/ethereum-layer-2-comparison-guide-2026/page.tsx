@@ -256,7 +256,6 @@ export default function EthereumL2ComparisonGuidePage() {
           ].map((item) => (
             <a
               key={item.href}
-              href={item.href}
               className="block hover:underline"
               style={{ color: "#58a6ff" }}
             >
@@ -880,9 +879,8 @@ export default function EthereumL2ComparisonGuidePage() {
             { href: "/tools/gas-tracker", label: "Gas Tracker Tool" },
             { href: "/tools/bridge-aggregator", label: "Bridge Aggregator Tool" },
           ].map((link) => (
-            <Link
+            <Link href={item.href}
               key={link.href}
-              href={link.href}
               style={{ color: "#58a6ff" }}
             >
               {link.label}

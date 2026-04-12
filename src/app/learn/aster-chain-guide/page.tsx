@@ -556,9 +556,8 @@ export default function AsterChainGuidePage() {
               { href: "/learn/defi-options-trading-guide-2026", label: "DeFi Options Trading Guide" },
               { href: "/tools/screener", label: "degen0x Crypto Screener" },
             ].map(({ href, label }) => (
-              <Link
+              <Link href={href}
                 key={href}
-                href={href}
                 style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 10, padding: "14px 16px", color: "#58a6ff", textDecoration: "none", fontSize: 14, fontWeight: 500, display: "block", transition: "border-color 0.2s" }}
               >
                 {label} →

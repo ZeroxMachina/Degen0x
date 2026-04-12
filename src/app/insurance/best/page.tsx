@@ -196,9 +196,8 @@ export default function BestInsurancePage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Browse by Coverage Type</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {subCategories.map((cat) => (
-            <Link
+            <Link href={cat.href}
               key={cat.href}
-              href={cat.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-1">{cat.title}</h3>

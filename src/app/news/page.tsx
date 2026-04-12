@@ -91,16 +91,14 @@ export default function NewsPage() {
 
         {/* Category Filters */}
         <div className="flex flex-wrap gap-2 mb-10">
-          <Link
-            href="/news"
+          <Link href="/news"
             className="px-4 py-1.5 rounded-full text-sm font-medium bg-[var(--color-primary)] text-[var(--color-text)]"
           >
             All
           </Link>
           {NEWS_CATEGORIES.map((cat) => (
-            <Link
+            <Link href={`/news/category/${cat.slug}`}
               key={cat.slug}
-              href={`/news/category/${cat.slug}`}
               className="px-4 py-1.5 rounded-full text-sm font-medium glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
             >
               {cat.icon} {cat.label}
@@ -111,8 +109,7 @@ export default function NewsPage() {
         {/* Hero Feature */}
         {mainFeatured && (
           <section className="mb-10">
-            <Link
-              href={`/news/${mainFeatured.slug}`}
+            <Link href="/news"
               className="block rounded-2xl overflow-hidden glass card-hover group"
             >
               <div className="p-8 md:p-12">
@@ -152,9 +149,8 @@ export default function NewsPage() {
         {secondaryFeatured.length > 0 && (
           <section className="grid md:grid-cols-2 gap-6 mb-12">
             {secondaryFeatured.map((article) => (
-              <Link
+              <Link href={`/news/${article.slug}`}
                 key={article.slug}
-                href={`/news/${article.slug}`}
                 className="block rounded-xl glass p-6 card-hover group"
               >
                 <span
@@ -200,9 +196,8 @@ export default function NewsPage() {
                 {NEWS_CATEGORIES.map((cat) => {
                   const count = newsArticles.filter((a) => a.category === cat.slug).length;
                   return (
-                    <Link
+                    <Link href="/news"
                       key={cat.slug}
-                      href={`/news/category/${cat.slug}`}
                       className="flex items-center justify-between p-2.5 rounded-lg hover:bg-[var(--glass-bg)] transition-colors group"
                     >
                       <div className="flex items-center gap-2.5">
@@ -244,8 +239,7 @@ export default function NewsPage() {
               <p className="text-sm text-[var(--color-text-secondary)] mb-4">
                 Get the top 5 crypto stories delivered to your inbox every morning. No spam, ever.
               </p>
-              <Link
-                href="/#newsletter"
+              <Link href="/news"
                 className="affiliate-cta block text-center py-2.5 px-4 rounded-lg text-white text-sm font-semibold"
               >
                 Subscribe Free →

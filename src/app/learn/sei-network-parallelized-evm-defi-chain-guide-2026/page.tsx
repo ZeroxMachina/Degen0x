@@ -885,9 +885,8 @@ export default function SeiNetworkGuide() {
               { href: '/learn/chain-abstraction-multichain-ux-guide-2026', title: 'Chain Abstraction Guide' },
               { href: '/learn/crypto-lending-borrowing-defi-guide-2026', title: 'DeFi Lending Guide' },
             ].map((link) => (
-              <Link
+              <Link href="#"
                 key={link.href}
-                href={link.href}
                 style={{
                   display: 'block',
                   padding: '12px 16px',

@@ -502,7 +502,6 @@ export default function SymbioticProtocolRestakingGuidePage() {
             ].map((item, i) => (
               <a
                 key={i}
-                href={item.href}
                 style={{
                   display: "block",
                   background: "#161b22",

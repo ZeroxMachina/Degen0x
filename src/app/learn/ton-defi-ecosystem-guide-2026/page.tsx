@@ -745,8 +745,7 @@ export default function TONDeFiGuide() {
           Related Guides
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Link
-            href="/learn/defi-for-beginners"
+          <Link href="/learn/defi-for-beginners"
             className="p-6 glass rounded-xl hover:border-[#0088CC] transition-all"
             style={{ background: 'var(--glass-bg)', border: '1px solid var(--color-border)' }}
           >
@@ -758,8 +757,7 @@ export default function TONDeFiGuide() {
             </p>
           </Link>
 
-          <Link
-            href="/learn/stablecoin-yield-strategies-2026"
+          <Link href="/learn/defi-for-beginners"
             style={{ background: 'var(--glass-bg)', border: '1px solid var(--color-border)' }}
           >
             <h3 className="font-semibold mb-2" style={{ color: '#0088CC' }}>
@@ -770,8 +768,7 @@ export default function TONDeFiGuide() {
             </p>
           </Link>
 
-          <Link
-            href="/tools/defi-yields"
+          <Link href="/learn/defi-for-beginners"
             style={{ background: 'var(--glass-bg)', border: '1px solid var(--color-border)' }}
           >
             <h3 className="font-semibold mb-2" style={{ color: '#0088CC' }}>
@@ -782,8 +779,7 @@ export default function TONDeFiGuide() {
             </p>
           </Link>
 
-          <Link
-            href="/learn"
+          <Link href="/learn/defi-for-beginners"
             style={{ background: 'var(--glass-bg)', border: '1px solid var(--color-border)' }}
           >
             <h3 className="font-semibold mb-2" style={{ color: '#0088CC' }}>
@@ -805,21 +801,18 @@ export default function TONDeFiGuide() {
           Track yields, monitor prices, and find the best DeFi opportunities on TON with degen0x tools.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Link
-            href="/tools/defi-yields"
+          <Link href="/learn/stablecoin-yield-strategies-2026"
             className="affiliate-cta px-6 py-3 rounded-lg font-semibold transition-all"
             style={{ background: '#0088CC', color: 'white' }}
           >
             DeFi Yields Dashboard
           </Link>
-          <Link
-            href="/prices"
+          <Link href="/learn/stablecoin-yield-strategies-2026"
             style={{ background: 'transparent', border: '2px solid #0088CC', color: '#0088CC' }}
           >
             Monitor Prices
           </Link>
-          <Link
-            href="/tools/bridge-aggregator"
+          <Link href="/learn/defi-for-beginners"
             style={{ background: 'transparent', border: '2px solid #0088CC', color: '#0088CC' }}
           >
             Bridge Tokens

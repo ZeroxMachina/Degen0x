@@ -388,9 +388,8 @@ export default function RoboAdvisorPage() {
                   { name: "Binance", desc: "Lowest fees", href: "/go/binance", color: "#F3BA2F" },
                   { name: "Bybit", desc: "$30K bonus", href: "/go/bybit", color: "#F7A600" },
                 ].map(ex => (
-                  <Link
+                  <Link href={ex.href}
                     key={ex.name}
-                    href={ex.href}
                     className="rounded-xl p-3 text-center block"
                     style={{ background: `${ex.color}15`, border: `1px solid ${ex.color}40` }}
                   >

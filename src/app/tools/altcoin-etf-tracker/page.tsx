@@ -542,8 +542,7 @@ export default function AltcoinETFTrackerPage() {
                                     Staking yield net of fee: ~{(row.stakingYield - row.fee).toFixed(1)}% effective APY
                                   </div>
                                 )}
-                                <Link
-                                  href="/learn/altcoin-etf-guide-2026"
+                                <Link href="/learn/altcoin-etf-guide-2026"
                                   style={{
                                     padding: '6px 14px', borderRadius: 8, fontSize: 12, fontWeight: 700,
                                     background: '#6366f120', border: '1px solid #6366f140', color: '#818cf8',
@@ -623,9 +622,8 @@ export default function AltcoinETFTrackerPage() {
               { href: '/learn/liquid-staking-derivatives', label: '⚡ Liquid Staking Guide' },
               { href: '/tools/staking-rewards', label: '🏦 Staking Rewards Calculator' },
             ].map(link => (
-              <Link
+              <Link href="/learn/altcoin-etf-guide-2026"
                 key={link.href}
-                href={link.href}
                 style={{
                   padding: '7px 14px', borderRadius: 8, fontSize: 13, fontWeight: 600,
                   background: 'var(--glass-bg)', border: '1px solid var(--color-border)',

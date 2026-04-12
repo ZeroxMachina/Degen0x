@@ -779,7 +779,6 @@ export default function ScrollGuide() {
           <h3 className="text-xl font-bold text-[#e6edf3] mb-4">Related Learning Resources</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a
-              href="/learn/layer-2-scaling-guide"
               className="p-4 rounded-lg border border-[#30363d] hover:border-[#fbbf24]/50 hover:bg-[#0d1117] transition-colors"
             >
               <h4 className="font-bold text-[#58a6ff] mb-2">Layer 2 Scaling Guide</h4>
@@ -787,21 +786,18 @@ export default function ScrollGuide() {
             </a>
 
             <a
-              href="/learn/zero-knowledge-proofs"
             >
               <h4 className="font-bold text-[#58a6ff] mb-2">Zero-Knowledge Proofs Explained</h4>
               <p className="text-sm text-[#8b949e]">Deep dive into ZK tech and why it matters</p>
             </a>
 
             <a
-              href="/learn/zksync-era-guide"
             >
               <h4 className="font-bold text-[#58a6ff] mb-2">zkSync Era Comparison</h4>
               <p className="text-sm text-[#8b949e]">How zkSync compares to Scroll</p>
             </a>
 
             <a
-              href="/learn/cross-chain-bridges-guide"
             >
               <h4 className="font-bold text-[#58a6ff] mb-2">Cross-Chain Bridges Guide</h4>
               <p className="text-sm text-[#8b949e]">Bridge security and best practices</p>
@@ -852,7 +848,6 @@ export default function ScrollGuide() {
             Start with the official Scroll bridge, test with small amounts, and explore the ecosystem. Follow Scroll's official channels for security updates and new protocol deployments.
           </p>
           <a
-            href="https://scroll.io"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-2 rounded-lg bg-[#fbbf24] text-[#0d1117] font-bold hover:bg-[#f97316] transition-colors"

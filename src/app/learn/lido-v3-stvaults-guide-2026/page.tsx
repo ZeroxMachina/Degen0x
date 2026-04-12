@@ -230,7 +230,6 @@ export default function LidoV3stVaultsGuide() {
             ].map((item, i) => (
               <li key={i} style={{ marginBottom: 8 }}>
                 <a
-                  href={item.id}
                   style={{
                     color: S.blue,
                     textDecoration: 'none',

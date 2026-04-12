@@ -406,7 +406,6 @@ export default function CryptoSavingsAccountsPage() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8, minWidth: 140 }}>
                   <a
-                    href={platform.affiliateUrl}
                     className="affiliate-cta"
                     style={{
                       display: "block", padding: "10px 20px", borderRadius: 10,
@@ -450,9 +449,8 @@ export default function CryptoSavingsAccountsPage() {
               { href: "/wallets/best", label: "Best Crypto Wallets" },
               { href: "/learn/crypto-for-beginners", label: "Crypto for Beginners" },
             ].map((link) => (
-              <Link
+              <Link href={link.href}
                 key={link.href}
-                href={link.href}
                 className="glass-subtle p-3 rounded-xl text-sm font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text)] card-hover"
               >
                 {link.label} →

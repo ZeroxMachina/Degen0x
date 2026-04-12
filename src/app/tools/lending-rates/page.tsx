@@ -513,7 +513,6 @@ export default function LendingRatesPage() {
             ].map((item) => (
               <a
                 key={item.href}
-                href={item.href}
                 className="bg-[#0d1117] border border-[#30363d] rounded-xl p-5 hover:border-[#58a6ff] transition-colors block"
               >
                 <span className="inline-block text-[#58a6ff] text-xs font-medium px-3 py-1 mb-3 rounded-full border border-[#58a6ff]">

@@ -65,7 +65,6 @@ export default function KoinlyReviewPage() {
           </p>
           <div className="mt-4">
             <a
-              href="https://degen0x.com/go/koinly"
               target="_blank"
               rel="noopener noreferrer sponsored"
               className="affiliate-cta inline-block px-6 py-3 rounded-lg text-white font-medium"

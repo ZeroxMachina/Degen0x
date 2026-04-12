@@ -547,7 +547,6 @@ localStorage.setItem('gameSessionKey', sessionKey);`}</div>
             Start integrating AA into your dApp today. Use Alchemy, Biconomy, or Safe to enable gas sponsorship, social recovery, and session keys.
           </p>
           <a
-            href="/tools"
             style={{
               display: "inline-block",
               padding: "12px 28px",

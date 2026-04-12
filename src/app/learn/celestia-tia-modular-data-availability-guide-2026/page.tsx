@@ -1211,7 +1211,6 @@ export default function CelestiaGuide() {
         {/* Back to Top */}
         <div style={{ textAlign: 'center' as const, marginTop: 48, paddingTop: 24, borderTop: '1px solid #30363d' }}>
           <a
-            href="#top"
             style={{
               display: 'inline-block',
               background: "linear-gradient(135deg, #7B3FE4, #E15BF6)",

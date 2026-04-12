@@ -174,7 +174,6 @@ export default function TokenizedTreasuryBillsGuide() {
           <ul style={{ listStyle: "none", padding: "0", margin: "0" }}>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#what-are"
                 style={{
                   color: "#58a6ff",
                   textDecoration: "none",
@@ -187,7 +186,6 @@ export default function TokenizedTreasuryBillsGuide() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#why-tokenize"
                 style={{
                   color: "#58a6ff",
                   textDecoration: "none",
@@ -200,7 +198,6 @@ export default function TokenizedTreasuryBillsGuide() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#market-overview"
                 style={{
                   color: "#58a6ff",
                   textDecoration: "none",
@@ -213,7 +210,6 @@ export default function TokenizedTreasuryBillsGuide() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#blackrock-buidl"
                 style={{
                   color: "#58a6ff",
                   textDecoration: "none",
@@ -226,7 +222,6 @@ export default function TokenizedTreasuryBillsGuide() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#ondo-finance"
                 style={{
                   color: "#58a6ff",
                   textDecoration: "none",
@@ -239,7 +234,6 @@ export default function TokenizedTreasuryBillsGuide() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#franklin-templeton"
                 style={{
                   color: "#58a6ff",
                   textDecoration: "none",
@@ -252,7 +246,6 @@ export default function TokenizedTreasuryBillsGuide() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#defi-foundation"
                 style={{
                   color: "#58a6ff",
                   textDecoration: "none",
@@ -265,7 +258,6 @@ export default function TokenizedTreasuryBillsGuide() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#risks"
                 style={{
                   color: "#58a6ff",
                   textDecoration: "none",
@@ -278,7 +270,6 @@ export default function TokenizedTreasuryBillsGuide() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#getting-started"
                 style={{
                   color: "#58a6ff",
                   textDecoration: "none",
@@ -291,7 +282,6 @@ export default function TokenizedTreasuryBillsGuide() {
             </li>
             <li>
               <a
-                href="#faq"
                 style={{
                   color: "#58a6ff",
                   textDecoration: "none",

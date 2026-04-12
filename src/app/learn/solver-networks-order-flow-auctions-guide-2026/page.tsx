@@ -216,7 +216,6 @@ export default function SolverNetworksGuide() {
             >
               <li>
                 <a
-                  href="#what-are-solver-networks"
                   style={{ color: S.blue, textDecoration: "none" }}
                 >
                   What Are Solver Networks?
@@ -224,7 +223,6 @@ export default function SolverNetworksGuide() {
               </li>
               <li>
                 <a
-                  href="#why-solver-based-trading-matters"
                   style={{ color: S.blue, textDecoration: "none" }}
                 >
                   Why It Matters in 2026
@@ -232,7 +230,6 @@ export default function SolverNetworksGuide() {
               </li>
               <li>
                 <a
-                  href="#top-protocols-compared"
                   style={{ color: S.blue, textDecoration: "none" }}
                 >
                   Top Protocols Compared
@@ -240,7 +237,6 @@ export default function SolverNetworksGuide() {
               </li>
               <li>
                 <a
-                  href="#how-ofa-works"
                   style={{ color: S.blue, textDecoration: "none" }}
                 >
                   How OFAs Work
@@ -248,7 +244,6 @@ export default function SolverNetworksGuide() {
               </li>
               <li>
                 <a
-                  href="#cow-protocol-deep-dive"
                   style={{ color: S.blue, textDecoration: "none" }}
                 >
                   CoW Protocol Deep Dive
@@ -256,7 +251,6 @@ export default function SolverNetworksGuide() {
               </li>
               <li>
                 <a
-                  href="#dutch-auction-models"
                   style={{ color: S.blue, textDecoration: "none" }}
                 >
                   Dutch Auction Models
@@ -264,7 +258,6 @@ export default function SolverNetworksGuide() {
               </li>
               <li>
                 <a
-                  href="#mev-protection-quality"
                   style={{ color: S.blue, textDecoration: "none" }}
                 >
                   MEV Protection & Quality
@@ -272,7 +265,6 @@ export default function SolverNetworksGuide() {
               </li>
               <li>
                 <a
-                  href="#risks-limitations"
                   style={{ color: S.blue, textDecoration: "none" }}
                 >
                   Risks & Limitations
@@ -1075,8 +1067,7 @@ export default function SolverNetworksGuide() {
               }}
             >
               <li>
-                <Link
-                  href="/learn/mev-guide-2026"
+                <Link href="#what-are-solver-networks"
                   style={{
                     color: S.blue,
                     textDecoration: "none",
@@ -1089,8 +1080,7 @@ export default function SolverNetworksGuide() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/learn/mev-protection-guide"
+                <Link href="#what-are-solver-networks"
                   style={{
                     color: S.blue,
                     textDecoration: "none",
@@ -1103,8 +1093,7 @@ export default function SolverNetworksGuide() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/learn/intent-based-dex-trading-guide"
+                <Link href="#what-are-solver-networks"
                   style={{
                     color: S.blue,
                     textDecoration: "none",
@@ -1117,8 +1106,7 @@ export default function SolverNetworksGuide() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/learn/chain-abstraction-guide-2026"
+                <Link href="#what-are-solver-networks"
                   style={{
                     color: S.blue,
                     textDecoration: "none",
@@ -1131,8 +1119,7 @@ export default function SolverNetworksGuide() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/tools/dex-aggregator"
+                <Link href="#what-are-solver-networks"
                   style={{
                     color: S.blue,
                     textDecoration: "none",
@@ -1145,8 +1132,7 @@ export default function SolverNetworksGuide() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/tools/gas-tracker"
+                <Link href="#what-are-solver-networks"
                   style={{
                     color: S.blue,
                     textDecoration: "none",

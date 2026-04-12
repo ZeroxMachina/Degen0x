@@ -581,9 +581,8 @@ export default function BitcoinSupplyShockGuidePage() {
                 { title: "Sentiment Dashboard", href: "/tools/sentiment-dashboard", emoji: "🧠" },
                 { title: "Advanced Charting", href: "/tools/advanced-charting", emoji: "📉" },
               ].map((link) => (
-                <Link
+                <Link href="#price-implications"
                   key={link.href}
-                  href={link.href}
                   className="glass rounded-lg p-4 hover:opacity-80 transition-opacity"
                   style={{
                     display: "flex",

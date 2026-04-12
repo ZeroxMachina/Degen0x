@@ -130,7 +130,6 @@ export default function TaxLossHarvestingPage() {
           <ul style={{ listStyle: "none", padding: "0", margin: "0" }}>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#what-is-tlh"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",
@@ -142,7 +141,6 @@ export default function TaxLossHarvestingPage() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#how-it-works"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",
@@ -154,7 +152,6 @@ export default function TaxLossHarvestingPage() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#wash-sale-rule"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",
@@ -166,7 +163,6 @@ export default function TaxLossHarvestingPage() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#step-by-step"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",
@@ -178,7 +174,6 @@ export default function TaxLossHarvestingPage() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#short-vs-long"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",
@@ -190,7 +185,6 @@ export default function TaxLossHarvestingPage() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#common-mistakes"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",
@@ -202,7 +196,6 @@ export default function TaxLossHarvestingPage() {
             </li>
             <li style={{ marginBottom: "12px" }}>
               <a
-                href="#tools"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",
@@ -214,7 +207,6 @@ export default function TaxLossHarvestingPage() {
             </li>
             <li>
               <a
-                href="#faqs"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",
@@ -577,7 +569,6 @@ export default function TaxLossHarvestingPage() {
             }}
           >
             <a
-              href="/tools/portfolio-tracker"
               style={{
                 color: darkTheme.accent,
                 textDecoration: "none",
@@ -696,7 +687,6 @@ export default function TaxLossHarvestingPage() {
           >
             <li>
               <a
-                href="/taxes"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",
@@ -719,7 +709,6 @@ export default function TaxLossHarvestingPage() {
             </li>
             <li>
               <a
-                href="/investing/best/staking"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",

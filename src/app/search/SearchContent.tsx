@@ -233,7 +233,7 @@ export default function SearchContent() {
       {results.length > 0 ? (
         <div className="space-y-4 mb-12">
           {results.map((result) => (
-            <Link
+            <Link href={result.url}
               key={result.id}
               href={result.url}
               className="glass rounded-xl p-5 hover:bg-[var(--color-bg-card)] transition-all group block"

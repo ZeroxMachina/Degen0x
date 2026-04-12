@@ -548,8 +548,7 @@ export default function CryptoQuizPage() {
               >
                 Play Again
               </button>
-              <Link
-                href="/learn"
+              <Link href="/learn"
                 className="glass px-8 py-3 text-[var(--color-text)] font-semibold hover:bg-[var(--glass-bg)] rounded-xl"
               >
                 Explore Guides

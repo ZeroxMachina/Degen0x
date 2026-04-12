@@ -507,9 +507,8 @@ export default function CryptoJobsPage() {
               </h3>
               <div className="space-y-3">
                 {JOB_RESOURCES.map((r) => (
-                  <Link
+                  <Link href={r.href}
                     key={r.href}
-                    href={r.href}
                     className="flex items-start gap-3 p-2 rounded-lg card-hover"
                     style={{
                       background: "var(--glass-bg)",

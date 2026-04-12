@@ -186,9 +186,8 @@ export default function BestBusinessCardsPage() {
             { title: "Web3 Business Tools", href: "/web3-business/best/dao-tools" },
             { title: "Crypto-Friendly Business Banking", href: "/web3-business/best/business-banking" },
           ].map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
               <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

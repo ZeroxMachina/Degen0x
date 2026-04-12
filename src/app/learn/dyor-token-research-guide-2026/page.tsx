@@ -756,8 +756,7 @@ export default function DYORTokenResearchGuidePage() {
             </h2>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
-              <Link
-                href="/learn/common-crypto-scams"
+              <Link href="/learn/common-crypto-scams"
                 style={{
                   padding: '16px',
                   backgroundColor: '#161b22',
@@ -784,8 +783,7 @@ export default function DYORTokenResearchGuidePage() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/how-to-read-crypto-whitepaper"
+              <Link href="/learn/common-crypto-scams"
                 style={{
                   padding: '16px',
                   backgroundColor: '#161b22',
@@ -812,8 +810,7 @@ export default function DYORTokenResearchGuidePage() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/tokenomics-protocol-revenue-guide"
+              <Link href="/learn/common-crypto-scams"
                 style={{
                   padding: '16px',
                   backgroundColor: '#161b22',
@@ -840,8 +837,7 @@ export default function DYORTokenResearchGuidePage() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/onchain-analytics-guide-2026"
+              <Link href="/learn/common-crypto-scams"
                 style={{
                   padding: '16px',
                   backgroundColor: '#161b22',
@@ -868,8 +864,7 @@ export default function DYORTokenResearchGuidePage() {
                 </p>
               </Link>
 
-              <Link
-                href="/tools/token-screener"
+              <Link href="/learn/common-crypto-scams"
                 style={{
                   padding: '16px',
                   backgroundColor: '#161b22',
@@ -896,8 +891,7 @@ export default function DYORTokenResearchGuidePage() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/crypto-security-masterclass-2026"
+              <Link href="/learn/common-crypto-scams"
                 style={{
                   padding: '16px',
                   backgroundColor: '#161b22',

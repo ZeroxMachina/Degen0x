@@ -402,7 +402,6 @@ export default function TokenSecurityScannerPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
             {/* Related Tool 1 */}
             <a
-              href="/tools/wallet-security-audit"
               className="glass p-4 rounded-lg border border-[var(--glass-border)] hover:border-[var(--color-primary)] transition-colors group"
               style={{
                 background: "var(--glass-bg)",
@@ -420,7 +419,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* Related Tool 2 */}
             <a
-              href="/tools/defi-risk-scanner"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -437,7 +435,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* Related Tool 3 */}
             <a
-              href="/tools/smart-money-tracker"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -454,7 +451,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* Related Tool 4 */}
             <a
-              href="/tools/token-screener"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -471,7 +467,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* Related Tool 5 */}
             <a
-              href="/learn/common-crypto-scams"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",

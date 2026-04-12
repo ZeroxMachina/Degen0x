@@ -216,7 +216,6 @@ export default function HowToReadCryptoChartsPage() {
             ].map((item, idx) => (
               <li key={idx} style={{ marginBottom: "8px" }}>
                 <a
-                  href={`#section-${idx}`}
                   style={{
                     color: "#58a6ff",
                     textDecoration: "none",
@@ -915,9 +914,8 @@ export default function HowToReadCryptoChartsPage() {
                 desc: "Advanced strategies for active crypto day traders.",
               },
             ].map((article, idx) => (
-              <Link
+              <Link href="#"
                 key={idx}
-                href={article.href}
                 style={{ textDecoration: "none" }}
               >
                 <div

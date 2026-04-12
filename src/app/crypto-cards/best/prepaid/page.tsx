@@ -229,9 +229,8 @@ export default function BestPrepaidCardsPage() {
             { title: "Best Crypto Cards for Beginners", href: "/crypto-cards/best/beginners" },
             { title: "Credit vs Debit vs Prepaid Crypto Cards", href: "/crypto-cards/learn/credit-vs-debit-vs-prepaid" },
           ].map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
               <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

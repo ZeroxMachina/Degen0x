@@ -302,14 +302,12 @@ export default function AltLayerGuide() {
           </div>
 
           <div className="flex gap-4 mt-12">
-            <Link
-              href="/learn"
+            <Link href="#"
               className="flex-1 bg-[#1f6feb] hover:bg-[#388bfd] text-center py-3 rounded-lg font-bold transition"
             >
               Back to Learn
             </Link>
-            <Link
-              href="/learn/polygon-agglayer-unified-liquidity-guide-2026"
+            <Link href="#"
               className="flex-1 bg-[#161b22] hover:bg-[#30363d] border border-[#30363d] text-center py-3 rounded-lg font-bold transition"
             >
               Next: Polygon AggLayer

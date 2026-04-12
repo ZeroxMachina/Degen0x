@@ -768,7 +768,6 @@ export default function StoryProtocolGuide() {
           ].map((link) => (
             <a
               key={link.href}
-              href={link.href}
               className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#FF6B6B]/50 transition-colors min-h-[44px]"
             >
               <p className="text-[#FF6B6B] font-medium mb-1">{link.title}</p>

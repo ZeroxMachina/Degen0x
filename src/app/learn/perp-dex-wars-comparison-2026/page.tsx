@@ -1014,7 +1014,6 @@ export default function PerpDEXWarsComparison2026() {
             ].map((link) => (
               <a
                 key={link.href}
-                href={link.href}
                 style={{
                   display: "inline-block",
                   padding: "8px 16px",

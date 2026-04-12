@@ -772,9 +772,8 @@ export default function CryptoMarketCyclesPage() {
               { href: "/tools/dominance-tracker", title: "Bitcoin Dominance Tracker", desc: "Track BTC dominance for alt season timing." },
               { href: "/learn", title: "All Learn Guides", desc: "Browse all crypto education resources." },
             ].map(link => (
-              <Link
+              <Link href={href}
                 key={link.href}
-                href={link.href}
                 style={{
                   backgroundColor: S.surface,
                   border: `1px solid ${S.border}`,

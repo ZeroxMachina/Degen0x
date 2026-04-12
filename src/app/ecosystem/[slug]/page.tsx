@@ -272,7 +272,6 @@ export default async function DAppPage({
             {/* CTA */}
             <div className="bg-[#1c1c1e] rounded-2xl p-5 border border-[#2c2c2e]">
               <a
-                href={dapp.website}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center font-bold py-3 px-4 rounded-xl text-white transition-all hover:opacity-90 active:scale-95"
@@ -327,8 +326,7 @@ export default async function DAppPage({
               <p className="text-[#8e8e93] text-xs mb-3">
                 Understand the fundamentals behind {CATEGORIES_META[dapp.category].label} with our free guides and earn XP.
               </p>
-              <Link
-                href="/courses"
+              <Link href="/"
                 className="block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2 rounded-lg transition-colors"
               >
                 Start Learning →
@@ -343,9 +341,8 @@ export default async function DAppPage({
                 </h3>
                 <div className="space-y-3">
                   {related.map((r) => (
-                    <Link
+                    <Link href="/ecosystem"
                       key={r.slug}
-                      href={`/ecosystem/${r.slug}`}
                       className="flex items-center gap-3 group"
                     >
                       <div

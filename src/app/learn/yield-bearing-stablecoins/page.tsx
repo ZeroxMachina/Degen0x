@@ -754,7 +754,6 @@ export default function YieldBearingStablecoinsPage() {
             The yield-bearing stablecoin market is accelerating. Earn 3-13% APY on stablecoins with minimal risk. Choose from 6+ protocols, each with unique risk/reward profiles.
           </p>
           <a
-            href="/tools/defi-yields"
             style={{
               display: "inline-block",
               padding: "12px 28px",

@@ -155,15 +155,13 @@ export default function BestFreeToolsPage() {
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Other Free Resources</h2>
         <div className="grid sm:grid-cols-2 gap-4">
-          <Link
-            href="/taxes/calculators/tax-calculator"
+          <Link href="/taxes/calculators/tax-calculator"
             className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
           >
             <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">Free Tax Calculator</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Estimate your crypto tax liability for free</p>
           </Link>
-          <Link
-            href="/taxes/calculators/capital-gains-calculator"
+          <Link href="/taxes/calculators/tax-calculator"
           >
             <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">Capital Gains Calculator</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Calculate capital gains on crypto trades</p>

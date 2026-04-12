@@ -515,9 +515,8 @@ export default function CommunityPage() {
                   { label: "Staking Rewards", href: "/tools/staking-rewards" },
                   { label: "Tax Calculator", href: "/tools/tax-calculator" },
                 ].map((l) => (
-                  <Link
+                  <Link href={l.href}
                     key={l.href}
-                    href={l.href}
                     className="flex items-center gap-2 text-xs py-1.5 px-2 rounded-lg card-hover"
                     style={{
                       color: "var(--color-primary)",

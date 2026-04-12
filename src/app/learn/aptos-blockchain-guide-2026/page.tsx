@@ -903,9 +903,8 @@ export default function AptosBlockchainGuidePage() {
                   label: "Chain Comparison Tool",
                 },
               ].map((link) => (
-                <Link
+                <Link href={link.href}
                   key={link.href}
-                  href={link.href}
                   style={{
                     backgroundColor: `${S.primary}15`,
                     border: `1px solid ${S.border}`,

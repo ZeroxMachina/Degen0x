@@ -33,7 +33,6 @@ export default function OfflinePage() {
           <ul className="text-left space-y-2">
             <li>
               <a
-                href="/"
                 className="inline-flex items-center text-orange-500 hover:text-orange-400 transition-colors"
               >
                 <span className="mr-2">→</span>

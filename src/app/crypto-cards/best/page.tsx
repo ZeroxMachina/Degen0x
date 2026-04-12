@@ -171,7 +171,6 @@ export default function BestCryptoCardsPage() {
 
                 <div className="mt-4 flex gap-3">
                   <a
-                    href={card.affiliateUrl}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     className="affiliate-cta px-4 py-2 rounded-lg text-white text-sm font-medium"
@@ -179,7 +178,6 @@ export default function BestCryptoCardsPage() {
                     Visit {card.name}
                   </a>
                   <a
-                    href={`/crypto-cards/reviews/${card.slug}`}
                     className="px-4 py-2 rounded-lg border border-[var(--color-border)] text-[var(--color-text)] text-sm font-medium hover:bg-[var(--color-bg)]/50 transition-colors"
                   >
                     Read Full Review
@@ -236,9 +234,8 @@ export default function BestCryptoCardsPage() {
               { title: "Best for Beginners", href: "/crypto-cards/best/beginners" },
               { title: "Best Debit Cards", href: "/crypto-cards/best/debit" },
             ].map((link) => (
-              <Link
+              <Link href={card.affiliateUrl}
                 key={link.href}
-                href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >
                 <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

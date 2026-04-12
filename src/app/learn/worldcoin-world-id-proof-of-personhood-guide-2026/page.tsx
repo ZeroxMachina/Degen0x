@@ -1152,8 +1152,7 @@ export default function WorldIDProofOfPersonhoodGuide() {
         <section style={{ marginBottom: '3rem' }}>
           <h2 style={{ fontSize: '2rem', fontWeight: '700', marginBottom: '1.5rem', color: '#58a6ff' }}>Related Learning Guides</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
-            <Link
-              href="/learn/zero-knowledge-proofs-zkp-complete-guide-2026"
+            <Link href="#"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -1168,8 +1167,7 @@ export default function WorldIDProofOfPersonhoodGuide() {
                 Deep dive into ZK proofs, implementations, and cryptographic privacy
               </p>
             </Link>
-            <Link
-              href="/learn/decentralized-identity-did-verifiable-credentials-guide-2026"
+            <Link href="#"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -1184,8 +1182,7 @@ export default function WorldIDProofOfPersonhoodGuide() {
                 DIDs, verifiable credentials, and self-sovereign identity protocols
               </p>
             </Link>
-            <Link
-              href="/learn/x402-protocol-ai-agent-payments-guide-2026"
+            <Link href="#"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -1200,8 +1197,7 @@ export default function WorldIDProofOfPersonhoodGuide() {
                 AI agent micropayments and stablecoin integration protocols
               </p>
             </Link>
-            <Link
-              href="/learn/ai-agents-decentralized-ai-crypto-guide-2026"
+            <Link href="#"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -1216,8 +1212,7 @@ export default function WorldIDProofOfPersonhoodGuide() {
                 Autonomous agents, human backing, and trustworthy AI systems
               </p>
             </Link>
-            <Link
-              href="/learn/ethereum-layer-2-ecosystem-guide-2026"
+            <Link href="#"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',

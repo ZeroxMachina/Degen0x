@@ -655,7 +655,6 @@ export default function SmartWalletsPage() {
             <h2 className="text-3xl font-bold text-[#e6edf3] mb-6">Related Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a
-                href="/learn/crypto-wallets-guide"
                 className="bg-[#0d1117] border border-[#30363d] rounded-lg p-6 hover:border-[#58a6ff] transition-colors group min-h-[44px]"
               >
                 <h3 className="text-[#58a6ff] font-semibold text-lg mb-2 group-hover:text-[#79c0ff]">
@@ -665,7 +664,6 @@ export default function SmartWalletsPage() {
               </a>
 
               <a
-                href="/learn/best-crypto-wallets"
               >
                 <h3 className="text-[#58a6ff] font-semibold text-lg mb-2 group-hover:text-[#79c0ff]">
                   Best Crypto Wallets
@@ -674,7 +672,6 @@ export default function SmartWalletsPage() {
               </a>
 
               <a
-                href="/learn/ethereum-pectra-guide"
               >
                 <h3 className="text-[#58a6ff] font-semibold text-lg mb-2 group-hover:text-[#79c0ff]">
                   Ethereum Pectra Upgrade Guide
@@ -683,7 +680,6 @@ export default function SmartWalletsPage() {
               </a>
 
               <a
-                href="/learn/defi-safety-guide"
               >
                 <h3 className="text-[#58a6ff] font-semibold text-lg mb-2 group-hover:text-[#79c0ff]">
                   DeFi Safety Guide

@@ -227,9 +227,8 @@ export default function HyperLiquidGuidePage() {
             { label: "Perpetual Futures Explained", href: "/learn/perpetual-futures" },
             { label: "Degen Score Calculator", href: "/tools/degen-score" },
           ].map((l) => (
-            <Link
+            <Link href={l.href}
               key={l.href}
-              href={l.href}
               className="glass p-3 rounded-xl text-sm card-hover"
               style={{ color: "var(--color-primary)" }}
             >

@@ -581,9 +581,8 @@ export default function BitcoinTreasuryCompaniesGuidePage() {
             { href: "/tools/portfolio-tracker", label: "Portfolio Tracker — Track Your BTC & Crypto" },
             { href: "/tools/dca-calculator", label: "DCA Calculator — Model Long-Term BTC Accumulation" },
           ].map(({ href, label }) => (
-            <Link
+            <Link href="/learn/bitcoin-etf-guide-2026"
               key={href}
-              href={href}
               className="flex items-center gap-2 text-sm hover:underline"
               style={{ color: "#f7931a" }}
             >

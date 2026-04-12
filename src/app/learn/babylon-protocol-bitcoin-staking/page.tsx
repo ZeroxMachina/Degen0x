@@ -365,7 +365,6 @@ export default function BabylonProtocolGuidePage() {
             {tableOfContents.map((item) => (
               <li key={item.id} style={{ marginBottom: 6 }}>
                 <a
-                  href={`#${item.id}`}
                   style={{ color: "#8b949e", textDecoration: "none", fontSize: 14, lineHeight: 1.6 }}
                 >
                   {item.label}
@@ -970,7 +969,6 @@ export default function BabylonProtocolGuidePage() {
             ].map((link) => (
               <a
                 key={link.href}
-                href={link.href}
                 style={{
                   display: "flex",
                   alignItems: "center",

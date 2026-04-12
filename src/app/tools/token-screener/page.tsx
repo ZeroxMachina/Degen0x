@@ -449,8 +449,7 @@ export default function TokenScreenerPage() {
                     </td>
                     {/* Token */}
                     <td style={{ padding: "14px 16px" }}>
-                      <Link
-                        href={`/token/${token.slug}`}
+                      <Link href={`/token/${token.slug}`}
                         style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}
                       >
                         <div style={{

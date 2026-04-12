@@ -55,9 +55,8 @@ export default function WalletComparisonsHub() {
 
         <div style={styles.grid}>
           {comparisons.map((comparison) => (
-            <Link
+            <Link href={`/compare/wallets/${comparison.id}`}
               key={comparison.id}
-              href={`/compare/wallets/${comparison.id}`}
               style={styles.cardLink}
             >
               <div style={styles.card}>

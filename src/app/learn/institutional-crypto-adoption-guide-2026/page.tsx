@@ -262,7 +262,6 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
               ].map(([href, label]) => (
                 <li key={href} style={{ marginBottom: 4 }}>
                   <a
-                    href={href}
                     style={{
                       display: "block",
                       color: S.primary,
@@ -1413,7 +1412,6 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
             ].map((item) => (
               <a
                 key={item.href}
-                href={item.href}
                 style={{
                   background: S.surface,
                   border: `1px solid ${S.border}`,

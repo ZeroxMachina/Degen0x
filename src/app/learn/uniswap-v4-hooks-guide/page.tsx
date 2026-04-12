@@ -671,9 +671,8 @@ export default function UniswapV4HooksGuidePage() {
               { label: "Best Perpetual DEX Guide", href: "/learn/best-perpetual-dex-guide" },
               { label: "DeFi Safety: Avoid Getting Rekt", href: "/learn/defi-safety-guide-2026" },
             ].map((l) => (
-              <Link
+              <Link href="#risks"
                 key={l.href}
-                href={l.href}
                 style={{
                   display: "block",
                   padding: "12px 14px",

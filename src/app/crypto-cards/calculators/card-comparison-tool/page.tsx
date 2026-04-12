@@ -337,7 +337,6 @@ export default function CardComparisonToolPage() {
                 {selectedCards.map((card) => (
                   <td key={card.slug} className="px-6 py-4 text-center">
                     <a
-                      href={`https://degen0x.com/go/${card.slug}`}
                       target="_blank"
                       rel="noopener noreferrer sponsored"
                       className="affiliate-cta inline-block px-4 py-2 rounded-lg text-white text-sm font-medium"

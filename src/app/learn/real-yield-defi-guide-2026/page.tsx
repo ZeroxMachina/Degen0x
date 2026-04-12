@@ -214,7 +214,6 @@ const RealYieldGuide = () => {
             ].map((item) => (
               <li key={item.href}>
                 <a
-                  href={item.href}
                   style={{
                     color: "#58a6ff",
                     textDecoration: "none",

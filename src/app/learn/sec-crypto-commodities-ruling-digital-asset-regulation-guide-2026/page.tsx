@@ -877,8 +877,7 @@ export default function SECCFTCRulingGuide() {
           <section id="related-resources" className="space-y-4 mt-8 pt-8 border-t border-[#30363d]">
             <h2 className="text-lg font-bold text-[#e6edf3]">Related Resources</h2>
             <div className="space-y-3">
-              <Link
-                href="/learn/solana-etf-spot-funds-staking-guide-2026"
+              <Link href="#"
                 className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
@@ -889,8 +888,7 @@ export default function SECCFTCRulingGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/crypto-etfs-complete-guide-2026"
+              <Link href="#"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Complete Crypto ETF Guide 2026
@@ -900,8 +898,7 @@ export default function SECCFTCRulingGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/crypto-staking-guide-2026"
+              <Link href="#"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Crypto Staking Guide 2026
@@ -911,8 +908,7 @@ export default function SECCFTCRulingGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/clarity-act-stablecoin-yield-regulation-guide-2026"
+              <Link href="#"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   CLARITY Act & Stablecoin Regulation Guide
@@ -922,8 +918,7 @@ export default function SECCFTCRulingGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/mica-regulation-eu-crypto-compliance-guide-2026"
+              <Link href="#"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   MiCA EU Crypto Regulation Compliance Guide
@@ -973,7 +968,6 @@ export default function SECCFTCRulingGuide() {
                 ].map((item) => (
                   <a
                     key={item.id}
-                    href={`#${item.id}`}
                     className="block px-3 py-1 text-[#8b949e] hover:text-[#58a6ff] transition-colors rounded hover:bg-[#0d1117]"
                   >
                     {item.label}
@@ -1045,7 +1039,6 @@ export default function SECCFTCRulingGuide() {
                 Monitor CLARITY Act progress for permanent statutory law.
               </p>
               <a
-                href="#clarity-act"
                 className="inline-block px-3 py-2 bg-white text-[#6366f1] rounded font-semibold text-xs hover:bg-gray-100 transition-colors"
               >
                 Learn About CLARITY

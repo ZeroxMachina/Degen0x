@@ -252,7 +252,6 @@ export default function BTCYieldStrategiesGuidePage() {
           ].map((item) => (
             <a
               key={item.href}
-              href={item.href}
               className="block hover:underline"
               style={{ color: "#58a6ff" }}
             >
@@ -842,9 +841,8 @@ export default function BTCYieldStrategiesGuidePage() {
             { href: "/learn/stablecoin-yield-strategies-2026", label: "Stablecoin Yield Strategies 2026" },
             { href: "/learn/bitcoin-safe-haven-guide-2026", label: "Bitcoin as a Safe Haven: Geopolitical Hedge Guide" },
           ].map((link) => (
-            <Link
+            <Link href={item.href}
               key={link.href}
-              href={link.href}
               style={{ color: "#58a6ff" }}
             >
               {link.label}

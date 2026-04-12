@@ -626,9 +626,8 @@ export default function JupiterSolanaGuidePage() {
             { label: "Advanced DeFi Strategies", href: "/learn/advanced-defi-strategies" },
             { label: "DEX Screener Tool", href: "/tools/dex-screener" },
           ].map((l) => (
-            <Link
+            <Link href={l.href}
               key={l.href}
-              href={l.href}
               className="glass p-3 rounded-xl text-sm card-hover"
               style={{ color: "var(--color-primary)" }}
             >

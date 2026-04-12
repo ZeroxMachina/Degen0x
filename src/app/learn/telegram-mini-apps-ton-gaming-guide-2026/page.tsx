@@ -364,9 +364,8 @@ export default function TelegramMiniAppsTonGamingGuidePage() {
                 { title: "Common Crypto Scams", href: "/learn/common-crypto-scams" },
                 { title: "Crypto Airdrops 2026", href: "/learn/crypto-airdrops-2026" },
               ].map((link) => (
-                <Link
+                <Link href="#risks"
                   key={link.href}
-                  href={link.href}
                   style={{ display: "block", padding: 16, background: "#161b22", border: "1px solid #30363d", borderRadius: 8, textDecoration: "none", color: "#58a6ff", fontSize: 14, fontWeight: 600 }}
                 >
                   {link.title} →

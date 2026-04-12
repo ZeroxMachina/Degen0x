@@ -210,7 +210,6 @@ export default function OnchaincreditScoringGuide() {
               ].map((item) => (
                 <li key={item.id} style={{ marginBottom: "0.5rem" }}>
                   <a
-                    href={`#${item.id}`}
                     style={{ color: S.blue, textDecoration: "none" }}
                   >
                     {item.text}
@@ -635,7 +634,6 @@ export default function OnchaincreditScoringGuide() {
               ].map((link, idx) => (
                 <li key={idx} style={{ marginBottom: "0.5rem" }}>
                   <a
-                    href={link.href}
                     style={{ color: S.blue, textDecoration: "none" }}
                   >
                     → {link.text}

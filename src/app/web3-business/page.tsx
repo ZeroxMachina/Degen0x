@@ -97,8 +97,7 @@ export default function Web3BusinessPage() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-[var(--color-text)]">Find the Best Web3 Business Tools</h2>
-            <Link
-              href="/web3-business/best"
+            <Link href="/web3-business/best"
               className="text-[var(--color-primary)] hover:underline text-sm font-medium"
             >
               View all rankings &rarr;
@@ -106,9 +105,8 @@ export default function Web3BusinessPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {bestOfLinks.map((link) => (
-              <Link
+              <Link href="/web3-business/best"
                 key={link.href}
-                href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
                 <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
@@ -125,9 +123,8 @@ export default function Web3BusinessPage() {
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn: Build Your Web3 Business</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {learnLinks.map((link) => (
-              <Link
+              <Link href="/web3-business/best"
                 key={link.href}
-                href={link.href}
               >
                 <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">

@@ -824,7 +824,6 @@ export default function PasskeyEmbeddedWalletsPage() {
             Passkey wallets represent the future of crypto UX. Start with Coinbase Smart Wallet for retail, or integrate Privy into your app for embedded wallet support.
           </p>
           <a
-            href="https://wallet.coinbase.com"
             style={{
               display: "inline-block",
               padding: "12px 28px",
@@ -840,7 +839,6 @@ export default function PasskeyEmbeddedWalletsPage() {
             Create a Passkey Wallet
           </a>
           <a
-            href="https://privy.io/developers"
             style={{
               display: "inline-block",
               padding: "12px 28px",

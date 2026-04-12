@@ -185,7 +185,6 @@ export default function ERC7683GuidePage() {
             {tableOfContents.map((item, index) => (
               <li key={item.id} style={{ marginBottom: '8px' }}>
                 <a
-                  href={`#${item.id}`}
                   className="erc-toc-link"
                   style={{
                     color: '#58a6ff',
@@ -917,8 +916,7 @@ export default function ERC7683GuidePage() {
               gap: '16px',
             }}
           >
-            <Link
-              href="/learn/chain-abstraction-guide-2026"
+            <Link href="/learn/chain-abstraction-guide-2026"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -937,8 +935,7 @@ export default function ERC7683GuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/intent-based-trading"
+            <Link href="/learn/chain-abstraction-guide-2026"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -956,8 +953,7 @@ export default function ERC7683GuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/bridge-aggregator"
+            <Link href="/learn/chain-abstraction-guide-2026"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -975,8 +971,7 @@ export default function ERC7683GuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/advanced-defi-strategies"
+            <Link href="/learn/chain-abstraction-guide-2026"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -994,8 +989,7 @@ export default function ERC7683GuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/dex-aggregator"
+            <Link href="/learn/chain-abstraction-guide-2026"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',

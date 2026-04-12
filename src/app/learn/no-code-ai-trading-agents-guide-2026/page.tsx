@@ -915,9 +915,8 @@ export default function NoCodeAITradingAgentsPage() {
               desc: "Technical deep-dive into ElizaOS, Virtuals, and other agent frameworks.",
             },
           ].map((rel) => (
-            <Link
+            <Link href={rel.href}
               key={rel.href}
-              href={rel.href}
               className="glass rounded-xl p-4 block hover:border-[#f59e0b] transition-colors"
               style={{ border: "1px solid var(--color-border)" }}
             >
@@ -948,21 +947,18 @@ export default function NoCodeAITradingAgentsPage() {
           monitor market volatility before deploying capital.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
-          <Link
-            href="/tools/token-screener"
+          <Link href="/tools/token-screener"
             className="affiliate-cta px-5 py-2 rounded-lg text-white font-semibold text-sm"
           >
             Token Screener
           </Link>
-          <Link
-            href="/tools/narrative-tracker"
+          <Link href="/tools/narrative-tracker"
             className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             Narrative Tracker
           </Link>
-          <Link
-            href="/defi-yields"
+          <Link href={rel.href}
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             Market Data

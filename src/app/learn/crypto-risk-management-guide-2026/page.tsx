@@ -224,7 +224,6 @@ export default function CryptoRiskManagementGuide2026() {
               ].map((item, i) => (
                 <a
                   key={i}
-                  href={`#section-${i + 1}`}
                   style={{ fontSize: 13, color: "#58a6ff", textDecoration: "none", padding: "4px 0" }}
                 >
                   {i + 1}. {item}
@@ -821,7 +820,6 @@ export default function CryptoRiskManagementGuide2026() {
               ].map((tool) => (
                 <a
                   key={tool.name}
-                  href={tool.href}
                   style={{
                     display: "block",
                     background: "#161b22",
@@ -926,7 +924,6 @@ export default function CryptoRiskManagementGuide2026() {
               ].map((link) => (
                 <a
                   key={link.title}
-                  href={link.href}
                   style={{
                     display: "block",
                     background: "#161b22",

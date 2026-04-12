@@ -1093,26 +1093,22 @@ export default function CryptoCardsGuide() {
         <div style={internalLinksStyle}>
           <div style={linkSectionTitleStyle}>Related Learning</div>
           <div style={linkGridStyle}>
-            <Link
-              href="/learn/crypto-tax-guide-2026"
+            <Link href="#"
               style={linkCardStyle}
             >
               ↗ Crypto Tax Guide
             </Link>
-            <Link
-              href="/learn/smart-wallets-account-abstraction-guide-2026"
+            <Link href="#"
               style={linkCardStyle}
             >
               ↗ Smart Wallets & AA
             </Link>
-            <Link
-              href="/learn/liquid-staking-tokens-guide-2026"
+            <Link href="#"
               style={linkCardStyle}
             >
               ↗ Liquid Staking Tokens
             </Link>
-            <Link
-              href="/learn/clarity-act-stablecoin-yield-regulation-guide-2026"
+            <Link href="#"
               style={linkCardStyle}
             >
               ↗ Stablecoin Regulation

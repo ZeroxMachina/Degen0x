@@ -290,7 +290,6 @@ export default function DVTGuidePage() {
             {toc.map((item) => (
               <li key={item.id} style={{ ...liStyle }}>
                 <a
-                  href={`#${item.id}`}
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
                   className="hover-underline"
                 >

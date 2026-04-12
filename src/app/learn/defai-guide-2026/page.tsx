@@ -665,8 +665,7 @@ export default function DeFAIGuidePage() {
                   {opt.desc}
                 </p>
                 {opt.link && (
-                  <Link
-                    href={opt.link.href}
+                  <Link href={opt.link.href}
                     className="text-xs font-bold"
                     style={{ color: opt.color }}
                   >
@@ -846,9 +845,8 @@ export default function DeFAIGuidePage() {
               desc: "The broader shift from DeFi to professional on-chain finance.",
             },
           ].map((rel) => (
-            <Link
+            <Link href={rel.href}
               key={rel.href}
-              href={rel.href}
               className="glass rounded-xl p-4 block hover:border-[#8b5cf6] transition-colors"
               style={{ border: "1px solid var(--color-border)" }}
             >
@@ -885,21 +883,18 @@ export default function DeFAIGuidePage() {
           yields across protocols.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
-          <Link
-            href="/tools/token-screener"
+          <Link href="/tools/token-screener"
             className="affiliate-cta px-5 py-2 rounded-lg text-white font-semibold text-sm"
           >
             Token Screener
           </Link>
-          <Link
-            href="/tools/narrative-tracker"
+          <Link href="/tools/narrative-tracker"
             className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             Narrative Tracker
           </Link>
-          <Link
-            href="/defi-yields"
+          <Link href={opt.link.href}
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             DeFi Yields

@@ -291,8 +291,7 @@ export default function DegenScorePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link
-                href={level.ctaLink}
+              <Link href={level.ctaLink}
                 className="affiliate-cta px-6 py-2.5 rounded-xl text-white font-semibold text-sm"
               >
                 {level.cta} →

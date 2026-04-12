@@ -188,9 +188,8 @@ export default function BestHighSpendersCardsPage() {
             { title: "Best Crypto Business Cards", href: "/crypto-cards/best/business" },
             { title: "Best Crypto Cashback Cards", href: "/crypto-cards/best/cashback" },
           ].map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
               <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

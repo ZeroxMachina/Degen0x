@@ -53,9 +53,8 @@ export default function BestTaxSolutionsPage() {
 
       <div className="grid sm:grid-cols-2 gap-6">
         {subcategories.map((cat) => (
-          <Link
+          <Link href={cat.href}
             key={cat.href}
-            href={cat.href}
             className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 card-hover"
           >
             <h2 className="text-xl font-semibold text-[var(--color-text)] mb-3">{cat.name}</h2>

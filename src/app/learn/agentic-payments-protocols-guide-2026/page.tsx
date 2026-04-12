@@ -844,8 +844,7 @@ export default function AgenticPaymentsProtocolsGuide() {
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-[#e6edf3]">Related Articles</h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              <Link
-                href="/learn/ai-agent-payments-x402-guide"
+              <Link href="/learn/ai-agent-payments-x402-guide"
                 className="rounded-lg bg-[#161b22] p-4 border border-[#30363d] hover:border-[#58a6ff] transition-colors"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">x402: HTTP 402 Revival</h3>
@@ -853,40 +852,35 @@ export default function AgenticPaymentsProtocolsGuide() {
                   Deep dive into Coinbase's x402 protocol for instant USDC payments over HTTP.
                 </p>
               </Link>
-              <Link
-                href="/learn/ai-crypto-agents-guide"
+              <Link href="/learn/ai-agent-payments-x402-guide"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">AI Agents in Crypto</h3>
                 <p className="text-[#8b949e] text-sm">
                   How autonomous agents operate in DeFi, NFTs, and onchain markets.
                 </p>
               </Link>
-              <Link
-                href="/learn/ai-agent-wallets-autonomous-payments-guide-2026"
+              <Link href="/learn/ai-agent-payments-x402-guide"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">Agent Wallets & Key Management</h3>
                 <p className="text-[#8b949e] text-sm">
                   Secure wallet architecture for autonomous AI agent payments in 2026.
                 </p>
               </Link>
-              <Link
-                href="/learn/defai-guide-2026"
+              <Link href="/learn/ai-agent-payments-x402-guide"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">DeFAI Guide 2026</h3>
                 <p className="text-[#8b949e] text-sm">
                   AI agents managing DeFi positions, arbitrage, and yield farming.
                 </p>
               </Link>
-              <Link
-                href="/learn/ai-agent-identity-nhi-guide"
+              <Link href="/learn/ai-agent-payments-x402-guide"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">Agent Identity & NHI</h3>
                 <p className="text-[#8b949e] text-sm">
                   How agents establish cryptographic identity and reputation on-chain.
                 </p>
               </Link>
-              <Link
-                href="/learn/solana-developer-platform-sdp-guide"
+              <Link href="/learn/ai-agent-payments-x402-guide"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">Solana Developer Platform (SDP)</h3>
                 <p className="text-[#8b949e] text-sm">

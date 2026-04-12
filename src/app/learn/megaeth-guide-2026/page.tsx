@@ -827,7 +827,6 @@ export default function MegaETHGuide() {
           ].map((item) => (
             <a
               key={item.title}
-              href={item.href}
               className="bg-[#161b22] border border-[#30363d] rounded-lg p-5 hover:border-[#58a6ff] transition-colors"
             >
               <h4 className="text-[#58a6ff] font-semibold mb-2 hover:underline">

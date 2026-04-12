@@ -521,8 +521,7 @@ export default function MorphoProtocolGuidePage() {
         <section className="mt-16 pt-12 border-t" style={{ borderColor: '#30363d' }}>
           <h2 className="text-2xl font-bold mb-6">Related Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link
-              href="/learn/aave-v4-guide"
+            <Link href="/learn/aave-v4-guide"
               className="p-4 rounded-lg border transition-colors"
               style={{
                 backgroundColor: '#161b22',
@@ -538,8 +537,7 @@ export default function MorphoProtocolGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/defi-yields"
+            <Link href="/learn/aave-v4-guide"
               style={{
                 backgroundColor: '#161b22',
                 borderColor: '#30363d',
@@ -554,8 +552,7 @@ export default function MorphoProtocolGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/lending-comparison"
+            <Link href="/learn/aave-v4-guide"
               style={{
                 backgroundColor: '#161b22',
                 borderColor: '#30363d',
@@ -570,8 +567,7 @@ export default function MorphoProtocolGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/advanced-defi-strategies"
+            <Link href="/learn/aave-v4-guide"
               style={{
                 backgroundColor: '#161b22',
                 borderColor: '#30363d',

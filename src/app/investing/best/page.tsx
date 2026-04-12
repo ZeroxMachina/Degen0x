@@ -65,9 +65,8 @@ export default function BestInvestingOverviewPage() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {tokenCategories.map((cat) => (
-            <Link
+            <Link href={`/investing/best/${cat.slug}`}
               key={cat.slug}
-              href={`/investing/best/${cat.slug}`}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover"
             >
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.name}</h3>
@@ -86,9 +85,8 @@ export default function BestInvestingOverviewPage() {
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {platformCategories.map((cat) => (
-            <Link
+            <Link href={`/investing/best/${cat.slug}`}
               key={cat.slug}
-              href={`/investing/best/${cat.slug}`}
             >
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)] mb-3">{cat.description}</p>
@@ -106,9 +104,8 @@ export default function BestInvestingOverviewPage() {
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {yieldCategories.map((cat) => (
-            <Link
+            <Link href={`/investing/best/${cat.slug}`}
               key={cat.slug}
-              href={`/investing/best/${cat.slug}`}
             >
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)] mb-3">{cat.description}</p>

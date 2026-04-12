@@ -57,9 +57,8 @@ export default function InvestingHubPage() {
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {BEST_OF_CATEGORIES.map((cat) => (
-            <Link
+            <Link href={`/investing/best/${cat.slug}`}
               key={cat.slug}
-              href={`/investing/best/${cat.slug}`}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
               <h3 className="text-base font-semibold text-[var(--color-text)] mb-1">{cat.name}</h3>
@@ -77,9 +76,8 @@ export default function InvestingHubPage() {
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
           {CRYPTO_TOKENS.map((token) => (
-            <Link
+            <Link href={`/investing/best/${token.slug}`}
               key={token.slug}
-              href={`/investing/crypto/${token.slug}`}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover text-center"
             >
               <div className="text-2xl font-bold gradient-text mb-1">{token.ticker}</div>
@@ -100,9 +98,8 @@ export default function InvestingHubPage() {
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {LEARN_ARTICLES.map((article) => (
-            <Link
+            <Link href={`/investing/best/${article.slug}`}
               key={article.slug}
-              href={`/investing/learn/${article.slug}`}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover flex items-center justify-between"
             >
               <h3 className="text-sm font-semibold text-[var(--color-text)]">{article.title}</h3>
@@ -120,9 +117,8 @@ export default function InvestingHubPage() {
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {CALCULATORS.map((calc) => (
-            <Link
+            <Link href={`/investing/best/${calc.slug}`}
               key={calc.slug}
-              href={`/investing/calculators/${calc.slug}`}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover text-center"
             >
               <div className="w-12 h-12 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center mx-auto mb-3">

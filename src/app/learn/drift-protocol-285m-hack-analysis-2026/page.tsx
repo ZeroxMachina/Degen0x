@@ -184,7 +184,6 @@ export default function DriftProtocolHackAnalysis() {
             ].map((item) => (
               <li key={item.id} style={{ marginBottom: '10px' }}>
                 <a
-                  href={`#${item.id}`}
                   style={{
                     color: S.primary,
                     textDecoration: 'none',
@@ -878,8 +877,7 @@ export default function DriftProtocolHackAnalysis() {
             Related Reading
           </h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
-            <Link
-              href="/learn/smart-contract-security-guide"
+            <Link href="/learn/smart-contract-security-guide"
               style={{
                 backgroundColor: S.surface,
                 border: `1px solid ${S.border}`,
@@ -907,8 +905,7 @@ export default function DriftProtocolHackAnalysis() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/crypto-oracles-guide-2026"
+            <Link href="/learn/smart-contract-security-guide"
               style={{
                 backgroundColor: S.surface,
                 border: `1px solid ${S.border}`,
@@ -936,8 +933,7 @@ export default function DriftProtocolHackAnalysis() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/defi-insurance-protocols-guide-2026"
+            <Link href="/learn/smart-contract-security-guide"
               style={{
                 backgroundColor: S.surface,
                 border: `1px solid ${S.border}`,
@@ -965,8 +961,7 @@ export default function DriftProtocolHackAnalysis() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/crypto-security-masterclass-2026"
+            <Link href="/learn/smart-contract-security-guide"
               style={{
                 backgroundColor: S.surface,
                 border: `1px solid ${S.border}`,

@@ -783,7 +783,6 @@ export default function MonadBlockchainGuide() {
           ].map((link) => (
             <a
               key={link.href}
-              href={link.href}
               className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#836EF9]/50 transition-colors min-h-[44px]"
             >
               <p className="text-[#836EF9] font-medium mb-1">{link.title}</p>

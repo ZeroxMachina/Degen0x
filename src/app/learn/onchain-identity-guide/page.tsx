@@ -474,9 +474,8 @@ export default function OnchainIdentityGuide() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {relatedArticles.map((article, idx) => (
-              <Link
+              <Link href={article.href}
                 key={idx}
-                href={article.href}
                 className="p-4 rounded-lg border transition hover:border-opacity-100"
                 style={{
                   backgroundColor: '#161b22',

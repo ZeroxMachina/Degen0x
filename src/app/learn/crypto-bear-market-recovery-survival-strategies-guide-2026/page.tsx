@@ -214,7 +214,6 @@ export default function BearMarketGuide() {
               ].map((item) => (
                 <li key={item.id} style={{ marginBottom: '0.5rem' }}>
                   <a
-                    href={`#${item.id}`}
                     style={{
                       color: '#58a6ff',
                       textDecoration: 'none',

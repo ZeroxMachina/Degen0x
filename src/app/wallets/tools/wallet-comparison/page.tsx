@@ -349,7 +349,6 @@ export default function WalletComparisonToolPage() {
                 {selectedWallets.map((wallet) => (
                   <td key={wallet.slug} className="px-4 py-4 text-center">
                     <a
-                      href={wallet.affiliateUrl}
                       target="_blank"
                       rel="noopener noreferrer sponsored"
                       className="affiliate-cta inline-block px-4 py-2 rounded-lg text-white text-sm font-medium"

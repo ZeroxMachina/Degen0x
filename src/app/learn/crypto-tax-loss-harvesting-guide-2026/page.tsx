@@ -944,8 +944,7 @@ export default function CryptoTaxLossHarvestingGuide() {
           </h2>
 
           <div className="grid gap-4 md:grid-cols-2">
-            <Link
-              href="/tools/tax-calculator"
+            <Link href="/tools/tax-calculator"
               className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
@@ -956,8 +955,7 @@ export default function CryptoTaxLossHarvestingGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/pnl-calculator"
+            <Link href="/tools/tax-calculator"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 P&L Calculator
@@ -967,8 +965,7 @@ export default function CryptoTaxLossHarvestingGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/crypto-regulations-2026"
+            <Link href="/tools/tax-calculator"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Crypto Regulations Guide 2026
@@ -978,8 +975,7 @@ export default function CryptoTaxLossHarvestingGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/taxes"
+            <Link href="/tools/tax-calculator"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Crypto Taxes Hub
@@ -989,8 +985,7 @@ export default function CryptoTaxLossHarvestingGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/portfolio-tracker"
+            <Link href="/tools/tax-calculator"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Portfolio Tracker
@@ -1000,8 +995,7 @@ export default function CryptoTaxLossHarvestingGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/common-crypto-scams"
+            <Link href="/tools/tax-calculator"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Common Crypto Scams

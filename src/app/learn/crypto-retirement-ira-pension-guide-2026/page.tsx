@@ -192,7 +192,6 @@ export default function CryptoRetirementIRAGuidePage() {
             {tableOfContents.map((item, index) => (
               <li key={item.id} style={{ marginBottom: '8px' }}>
                 <a
-                  href={`#${item.id}`}
                   className="crypto-toc-link"
                   style={{
                     color: '#58a6ff',
@@ -911,8 +910,7 @@ export default function CryptoRetirementIRAGuidePage() {
               gap: '16px',
             }}
           >
-            <Link
-              href="/learn/crypto-tax-guide-2026"
+            <Link href="/learn/crypto-tax-guide-2026"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -931,8 +929,7 @@ export default function CryptoRetirementIRAGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/crypto-tax-loss-harvesting-guide-2026"
+            <Link href="/learn/crypto-tax-guide-2026"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -950,8 +947,7 @@ export default function CryptoRetirementIRAGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/crypto-dca-strategy-guide-2026"
+            <Link href="/learn/crypto-tax-guide-2026"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -969,8 +965,7 @@ export default function CryptoRetirementIRAGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/crypto-portfolio-rebalancing-guide-2026"
+            <Link href="/learn/crypto-tax-guide-2026"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',

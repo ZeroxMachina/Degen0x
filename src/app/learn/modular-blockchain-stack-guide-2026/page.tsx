@@ -518,7 +518,6 @@ export default function ModularBlockchainStackGuidePage() {
             ].map((item, i) => (
               <a
                 key={i}
-                href={item.href}
                 style={{
                   display: "block",
                   background: "#161b22",

@@ -80,8 +80,7 @@ export default function TaxesHubPage() {
           ))}
         </div>
         <div className="mt-6 text-center">
-          <Link
-            href="/taxes/best/software"
+          <Link href="/taxes/best/software"
             className="inline-block px-6 py-3 rounded-lg border border-[var(--color-primary)] text-[var(--color-primary)] font-medium hover:bg-[var(--color-primary)]/10 transition-colors"
           >
             View All Tax Software
@@ -94,9 +93,8 @@ export default function TaxesHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Browse by Category</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {subcategories.map((cat) => (
-            <Link
+            <Link href="/taxes/best/software"
               key={cat.href}
-              href={cat.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover"
             >
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.name}</h3>
@@ -111,9 +109,8 @@ export default function TaxesHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Tax Guides & Education</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {guides.map((guide) => (
-            <Link
+            <Link href="/taxes/best/software"
               key={guide.href}
-              href={guide.href}
               className="flex items-center gap-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
             >
               <span className="text-[var(--color-primary)]">&#8594;</span>
@@ -128,9 +125,8 @@ export default function TaxesHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Tax Calculators</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {calculators.map((calc) => (
-            <Link
+            <Link href="/taxes/best/software"
               key={calc.href}
-              href={calc.href}
             >
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{calc.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{calc.description}</p>
@@ -144,9 +140,8 @@ export default function TaxesHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Software Reviews</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {TAX_PRODUCTS.map((product) => (
-            <Link
+            <Link href="/taxes/best/software"
               key={product.slug}
-              href={`/taxes/reviews/${product.slug}`}
               className="flex items-center justify-between rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
             >
               <span className="text-sm font-medium text-[var(--color-text)]">{product.name} Review</span>
@@ -160,19 +155,16 @@ export default function TaxesHubPage() {
       <section className="mb-16">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Head-to-Head Comparisons</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Link
-            href="/taxes/compare/koinly-vs-cointracker"
+          <Link href="/taxes/best/software"
             className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
           >
             <span className="text-sm font-medium text-[var(--color-text)]">Koinly vs CoinTracker</span>
           </Link>
-          <Link
-            href="/taxes/compare/taxbit-vs-cointracker"
+          <Link href="/taxes/best/software"
           >
             <span className="text-sm font-medium text-[var(--color-text)]">TaxBit vs CoinTracker</span>
           </Link>
-          <Link
-            href="/taxes/compare/koinly-vs-cryptotaxcalculator"
+          <Link href="/taxes/best/software"
           >
             <span className="text-sm font-medium text-[var(--color-text)]">Koinly vs CryptoTaxCalculator</span>
           </Link>

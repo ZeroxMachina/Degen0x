@@ -576,9 +576,8 @@ export default function SECDigitalCommoditiesPage() {
                 { title: "Crypto Tax Guide 2026", href: "/learn/crypto-tax-guide-2026" },
                 { title: "Stablecoin Guide", href: "/learn/stablecoin-guide" },
               ].map(article => (
-                <Link
+                <Link href={href}
                   key={article.href}
-                  href={article.href}
                   style={{
                     background: S.surface,
                     border: `1px solid ${S.border}`,

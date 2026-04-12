@@ -705,7 +705,6 @@ export default function CryptoOnRampsGuide() {
             ].map((link) => (
               <a
                 key={link.href}
-                href={link.href}
                 style={{
                   display: "block",
                   padding: "12px 16px",

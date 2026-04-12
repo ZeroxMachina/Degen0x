@@ -140,7 +140,6 @@ export default function TokenPage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
-              href="#"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-[var(--color-text)] rounded-2xl font-bold text-lg shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-[1.02] transition-all duration-300"
             >
               <span className="text-2xl">🚀</span>
@@ -340,7 +339,6 @@ export default function TokenPage() {
               🚀 Buy {TOKEN_NAME}
             </a>
             <a
-              href="/"
               className="inline-flex items-center gap-2 px-8 py-4 glass glass-hover rounded-2xl font-semibold text-[var(--color-text)]"
             >
               Explore the Platform →

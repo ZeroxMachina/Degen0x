@@ -335,7 +335,6 @@ export default function PolymarketGuidePage() {
             {tableOfContents.map((item, idx) => (
               <li key={idx}>
                 <a
-                  href={`#${item.id}`}
                   className="text-[#58a6ff] hover:underline flex items-center gap-2"
                 >
                   <span className="text-[#8b949e]">{idx + 1}.</span>
@@ -705,26 +704,22 @@ export default function PolymarketGuidePage() {
           <h2 className="text-2xl font-bold mb-6 text-[#e6edf3]">Related Reading</h2>
           <div className="grid grid-cols-2 gap-4">
             <a
-              href="/learn/crypto-prediction-markets-guide-2026"
               className="p-4 bg-[#161b22] border border-[#30363d] rounded hover:border-[#58a6ff] transition-colors"
             >
               <div className="font-bold text-[#58a6ff] mb-2">Crypto Prediction Markets Guide 2026</div>
               <div className="text-sm text-[#8b949e]">Overview of all major prediction market platforms</div>
             </a>
             <a
-              href="/learn/defi-points-airdrop-farming-guide-2026"
             >
               <div className="font-bold text-[#58a6ff] mb-2">DeFi Points & Airdrop Farming Guide</div>
               <div className="text-sm text-[#8b949e]">How to position for airdrops and token distributions</div>
             </a>
             <a
-              href="/learn/crypto-risk-management-guide-2026"
             >
               <div className="font-bold text-[#58a6ff] mb-2">Crypto Risk Management Guide 2026</div>
               <div className="text-sm text-[#8b949e]">Essential strategies for protecting your capital</div>
             </a>
             <a
-              href="/learn/stablecoin-comparison"
             >
               <div className="font-bold text-[#58a6ff] mb-2">Stablecoin Comparison Guide</div>
               <div className="text-sm text-[#8b949e]">Understanding USDC, USDT, DAI, and alternatives</div>
@@ -750,7 +745,6 @@ export default function PolymarketGuidePage() {
         </div>
           <div className="flex gap-4">
             <a
-              href="https://polymarket.com"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-[#a78bfa] text-[#0d1117] font-bold rounded hover:bg-[#9d7ff5] transition-colors"
@@ -758,7 +752,6 @@ export default function PolymarketGuidePage() {
               Go to Polymarket
             </a>
             <a
-              href="/tools/portfolio-tracker"
               className="px-6 py-3 border border-[#58a6ff] text-[#58a6ff] font-bold rounded hover:bg-[#58a6ff]/10 transition-colors"
             >
               Track Your Portfolio

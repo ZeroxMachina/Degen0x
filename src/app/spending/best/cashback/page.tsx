@@ -188,7 +188,6 @@ export default function BestCashbackCardsPage() {
 
                 </div>
                 <a
-                  href={card.affiliateUrl}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   className="affiliate-cta px-4 py-2 rounded-lg text-white text-sm font-medium whitespace-nowrap"

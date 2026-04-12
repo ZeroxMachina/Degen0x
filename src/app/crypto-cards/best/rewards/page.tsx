@@ -206,9 +206,8 @@ export default function BestRewardsCardsPage() {
             { title: "Best Crypto Cards for Beginners", href: "/crypto-cards/best/beginners" },
             { title: "How Crypto Cards Work", href: "/crypto-cards/learn/how-crypto-cards-work" },
           ].map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
               <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

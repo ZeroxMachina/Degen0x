@@ -177,56 +177,49 @@ export default function CryptoInheritancePlanningPage() {
           </h2>
           <ul style={{ margin: 0, paddingLeft: 24, color: '#c9d1d9' }}>
             <li style={{ marginBottom: 8 }}>
-              <Link
-                href="#why-inheritance-matters"
+              <Link href="#why-inheritance-matters"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
               >
                 Why Crypto Inheritance Planning Matters
               </Link>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <Link
-                href="#unique-challenges"
+              <Link href="#why-inheritance-matters"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
               >
                 The Unique Challenges of Crypto Inheritance
               </Link>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <Link
-                href="#step-by-step"
+              <Link href="#why-inheritance-matters"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
               >
                 Step-by-Step Inheritance Plan
               </Link>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <Link
-                href="#solutions-2026"
+              <Link href="#why-inheritance-matters"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
               >
                 Crypto Inheritance Solutions in 2026
               </Link>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <Link
-                href="#tax-implications"
+              <Link href="#why-inheritance-matters"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
               >
                 Tax Implications for Crypto Inheritance
               </Link>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <Link
-                href="#custody-comparison"
+              <Link href="#why-inheritance-matters"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
               >
                 Self-Custody vs Exchange: Inheritance Comparison
               </Link>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <Link
-                href="#common-mistakes"
+              <Link href="#why-inheritance-matters"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
               >
                 Common Mistakes to Avoid

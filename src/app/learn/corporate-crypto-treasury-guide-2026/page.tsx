@@ -193,8 +193,7 @@ export default function CorporatoCryptoTreasuryGuide() {
                 { href: '#faq', text: 'Frequently Asked Questions' },
               ].map((item, idx) => (
                 <li key={idx} style={{ marginBottom: '0.75rem' }}>
-                  <Link
-                    href={item.href}
+                  <Link href={item.href}
                     style={{
                       color: '#58a6ff',
                       textDecoration: 'none',
@@ -1312,8 +1311,7 @@ export default function CorporatoCryptoTreasuryGuide() {
                 gap: '1.5rem',
               }}
             >
-              <Link
-                href="/learn/bitcoin-treasury-companies-guide"
+              <Link href="/learn/bitcoin-treasury-companies-guide"
                 style={{
                   backgroundColor: '#161b22',
                   border: '1px solid #30363d',
@@ -1346,8 +1344,7 @@ export default function CorporatoCryptoTreasuryGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/bitcoin-etf-guide-2026"
+              <Link href="/learn/bitcoin-treasury-companies-guide"
                 style={{
                   backgroundColor: '#161b22',
                   border: '1px solid #30363d',
@@ -1380,8 +1377,7 @@ export default function CorporatoCryptoTreasuryGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/investing/best/crypto-ira"
+              <Link href="/learn/bitcoin-treasury-companies-guide"
                 style={{
                   backgroundColor: '#161b22',
                   border: '1px solid #30363d',
@@ -1414,8 +1410,7 @@ export default function CorporatoCryptoTreasuryGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/tools/portfolio-tracker"
+              <Link href="/learn/bitcoin-treasury-companies-guide"
                 style={{
                   backgroundColor: '#161b22',
                   border: '1px solid #30363d',

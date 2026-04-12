@@ -156,8 +156,7 @@ export default function LearnHubPage() {
       </div>
 
       {/* Featured Start Here Card */}
-      <Link
-        href="/learn/crypto-for-beginners"
+      <Link href="/learn/crypto-for-beginners"
         className="block mb-10 rounded-xl border-2 border-[var(--color-primary)] bg-[var(--color-bg-card)] p-6 md:p-8 hover:bg-[var(--color-bg-card-hover)] transition-colors"
       >
         <div className="flex items-start gap-4">
@@ -183,9 +182,8 @@ export default function LearnHubPage() {
         {guides
           .filter((g) => g.href !== "/learn/crypto-for-beginners")
           .map((guide) => (
-            <Link
+            <Link href="/learn/crypto-for-beginners"
               key={guide.href}
-              href={guide.href}
               className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 hover:bg-[var(--color-bg-card-hover)] hover:border-[var(--color-primary)]/50 transition-colors"
             >
               <span className="text-2xl mb-3 block">{guide.icon}</span>
@@ -205,34 +203,28 @@ export default function LearnHubPage() {
           Explore More {SITE_NAME} Resources
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-          <Link
-            href="/exchanges"
+          <Link href="/learn/crypto-for-beginners"
             className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Compare Crypto Exchanges &rarr;
           </Link>
-          <Link
-            href="/wallets"
+          <Link href="/learn/crypto-for-beginners"
           >
             Find the Best Wallets &rarr;
           </Link>
-          <Link
-            href="/defi-lending"
+          <Link href="/learn/crypto-for-beginners"
           >
             Explore DeFi Lending &rarr;
           </Link>
-          <Link
-            href="/investing"
+          <Link href="/learn/crypto-for-beginners"
           >
             Crypto Investing Guides &rarr;
           </Link>
-          <Link
-            href="/taxes"
+          <Link href="/learn/crypto-for-beginners"
           >
             Crypto Tax Help &rarr;
           </Link>
-          <Link
-            href="/spending"
+          <Link href="/learn/crypto-for-beginners"
           >
             Spend Your Crypto &rarr;
           </Link>

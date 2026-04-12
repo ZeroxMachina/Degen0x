@@ -1032,8 +1032,7 @@ export default function CryptoTaxGuide2026() {
               gap: "20px",
             }}
     >
-            <Link
-              href="/learn/restaking-eigenlayer-guide-2026"
+            <Link href="#tax-forms"
               style={{
                 backgroundColor: "#161b22",
                 border: "1px solid #30363d",
@@ -1049,8 +1048,7 @@ export default function CryptoTaxGuide2026() {
                 Learn about liquid restaking, validator economics, and how to maximize yield safely.
               </p>
             </Link>
-            <Link
-              href="/learn/perpetual-dex-trading-guide-2026"
+            <Link href="#tax-forms"
               style={{
                 backgroundColor: "#161b22",
                 border: "1px solid #30363d",
@@ -1066,8 +1064,7 @@ export default function CryptoTaxGuide2026() {
                 Master leverage trading on decentralized exchanges with risk management strategies.
               </p>
             </Link>
-            <Link
-              href="/learn/rwa-tokenization-real-world-assets-guide-2026"
+            <Link href="#tax-forms"
               style={{
                 backgroundColor: "#161b22",
                 border: "1px solid #30363d",
@@ -1083,8 +1080,7 @@ export default function CryptoTaxGuide2026() {
                 Understand real-world asset tokenization and emerging opportunities in traditional finance integration.
               </p>
             </Link>
-            <Link
-              href="/learn/defai-ai-powered-defi-automation-guide-2026"
+            <Link href="#tax-forms"
               style={{
                 backgroundColor: "#161b22",
                 border: "1px solid #30363d",
@@ -1100,8 +1096,7 @@ export default function CryptoTaxGuide2026() {
                 Explore AI-powered DeFi automation and algorithmic trading strategies.
               </p>
             </Link>
-            <Link
-              href="/learn/depin-decentralized-infrastructure-guide-2026"
+            <Link href="#tax-forms"
               style={{
                 backgroundColor: "#161b22",
                 border: "1px solid #30363d",

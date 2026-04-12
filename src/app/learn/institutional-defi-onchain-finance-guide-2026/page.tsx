@@ -1091,26 +1091,22 @@ export default function InstitutionalDeFiGuide() {
         <div style={internalLinksStyle}>
           <div style={linkSectionTitleStyle}>Related Learning</div>
           <div style={linkGridStyle}>
-            <Link
-              href="/learn/restaking-eigenlayer-guide-2026"
+            <Link href="#"
               style={linkCardStyle}
             >
               ↗ Restaking & EigenLayer
             </Link>
-            <Link
-              href="/learn/liquid-staking-tokens-guide-2026"
+            <Link href="#"
               style={linkCardStyle}
             >
               ↗ Liquid Staking Tokens
             </Link>
-            <Link
-              href="/learn/rwa-tokenization-real-world-assets-guide-2026"
+            <Link href="#"
               style={linkCardStyle}
             >
               ↗ RWA Tokenization
             </Link>
-            <Link
-              href="/learn/clarity-act-stablecoin-yield-regulation-guide-2026"
+            <Link href="#"
               style={linkCardStyle}
             >
               ↗ Stablecoin Regulation

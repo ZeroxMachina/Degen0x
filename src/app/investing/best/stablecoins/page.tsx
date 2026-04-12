@@ -406,7 +406,6 @@ export default function BestStablecoinsPage() {
                       <span className="font-semibold text-[var(--color-text)]">Best for:</span> {coin.bestFor}
                     </span>
                     <a
-                      href={coin.website}
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       className="affiliate-cta px-4 py-2 rounded-lg text-sm font-semibold text-white"

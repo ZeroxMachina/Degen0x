@@ -126,7 +126,6 @@ export default function LeveragedTokensGuide() {
             </li>
             <li>
               <a
-                href="#comparison"
                 className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1] rounded-sm"
               >
                 5. Leveraged Tokens vs Perpetual Futures vs Margin
@@ -134,7 +133,6 @@ export default function LeveragedTokensGuide() {
             </li>
             <li>
               <a
-                href="#platforms"
               >
                 6. Top Leveraged Token Platforms 2026
               </a>
@@ -850,7 +848,6 @@ export default function LeveragedTokensGuide() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a
-              href="/learn/perpetual-futures-guide"
               className="block p-4 bg-[#0d1117] border border-[#30363d] rounded hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="text-[#58a6ff] font-semibold mb-2">
@@ -861,7 +858,6 @@ export default function LeveragedTokensGuide() {
               </p>
             </a>
             <a
-              href="/learn/crypto-trading-bots-guide-2026"
             >
               <h3 className="text-[#58a6ff] font-semibold mb-2">
                 Crypto Trading Bots Guide 2026
@@ -871,7 +867,6 @@ export default function LeveragedTokensGuide() {
               </p>
             </a>
             <a
-              href="/tools/pnl-calculator"
             >
               <h3 className="text-[#58a6ff] font-semibold mb-2">
                 P&L Calculator
@@ -881,7 +876,6 @@ export default function LeveragedTokensGuide() {
               </p>
             </a>
             <a
-              href="/tools/options-calculator"
             >
               <h3 className="text-[#58a6ff] font-semibold mb-2">
                 Options Calculator

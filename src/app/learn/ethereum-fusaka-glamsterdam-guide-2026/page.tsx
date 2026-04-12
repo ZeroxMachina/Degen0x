@@ -590,7 +590,6 @@ export default function FusakaGlamsterdamGuide() {
                 ].map((link) => (
                   <a
                     key={link.href}
-                    href={link.href}
                     className="block p-4 rounded-lg border border-[#30363d] hover:border-[#58a6ff] bg-[#0d1117] hover:bg-[#161b22] transition-all duration-200 group"
                   >
                     <span className="text-[#58a6ff] group-hover:text-[#79c0ff] font-medium text-sm">{link.title}</span>

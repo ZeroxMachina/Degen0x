@@ -146,8 +146,7 @@ export default function BitcoinETFPage() {
             Home
           </Link>
           {' > '}
-          <Link
-            href="/learn"
+          <Link href="#"
             style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
             Learn
@@ -244,80 +243,70 @@ export default function BitcoinETFPage() {
           </h2>
           <ul style={{ margin: 0, paddingLeft: 20, lineHeight: 2 }}>
             <li>
-              <Link
-                href="#what-is-bitcoin-etf"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 What Is a Bitcoin ETF?
               </Link>
             </li>
             <li>
-              <Link
-                href="#how-spot-bitcoin-etfs-work"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 How Spot Bitcoin ETFs Work
               </Link>
             </li>
             <li>
-              <Link
-                href="#major-bitcoin-etfs-compared"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 Major Bitcoin ETFs Compared
               </Link>
             </li>
             <li>
-              <Link
-                href="#how-to-buy-bitcoin-etf"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 How to Buy a Bitcoin ETF Step by Step
               </Link>
             </li>
             <li>
-              <Link
-                href="#bitcoin-etf-vs-direct"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 Bitcoin ETF vs Buying Bitcoin Directly
               </Link>
             </li>
             <li>
-              <Link
-                href="#fees-and-costs"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 Bitcoin ETF Fees & Costs
               </Link>
             </li>
             <li>
-              <Link
-                href="#ethereum-etfs-whats-next"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 Ethereum ETFs & What&apos;s Next
               </Link>
             </li>
             <li>
-              <Link
-                href="#risks"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 Risks of Bitcoin ETFs
               </Link>
             </li>
             <li>
-              <Link
-                href="#who-should-invest"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 Who Should Invest in Bitcoin ETFs?
               </Link>
             </li>
             <li>
-              <Link
-                href="#faq"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 FAQ
@@ -2265,40 +2254,35 @@ export default function BitcoinETFPage() {
               }}
     >
               <li>
-                <Link
-                  href="/investing/bitcoin-etf-comparison-guide"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Bitcoin ETF Comparison Guide
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/exchanges"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Crypto Exchanges
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/learn/bitcoin-halving-explained-history"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Bitcoin Halving Explained
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/tools/dca-calculator"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   DCA Calculator
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/wallets"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Bitcoin Wallets

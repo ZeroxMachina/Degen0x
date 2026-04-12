@@ -423,7 +423,6 @@ export default function YieldAggregatorsPage() {
                       <span className="text-sm font-bold text-[var(--color-text)]">{p.rating.toFixed(1)}/10</span>
                     </div>
                     <a
-                      href={p.url}
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       className="affiliate-cta px-5 py-2 rounded-xl text-white text-sm font-semibold"
@@ -577,9 +576,8 @@ export default function YieldAggregatorsPage() {
               { title: "Best Stablecoin Yields", href: "/defi-lending/best/stablecoin-yield", desc: "Earn on USDC, USDT, and DAI" },
               { title: "What Is DeFi Lending?", href: "/defi-lending/learn/what-is-defi-lending", desc: "Complete beginner's guide to DeFi" },
             ].map((link) => (
-              <Link
+              <Link href={p.url}
                 key={link.href}
-                href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
                 <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>

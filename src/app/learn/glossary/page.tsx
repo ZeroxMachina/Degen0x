@@ -151,7 +151,6 @@ export default function GlossaryPage() {
           {LETTERS.filter(l => /[A-Z]/.test(l)).map(letter => (
             <a
               key={letter}
-              href={grouped[letter] ? `#letter-${letter}` : undefined}
               className={`w-8 h-8 flex items-center justify-center rounded text-xs font-bold transition-all ${grouped[letter] ? "glass text-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-[var(--color-text)] cursor-pointer" : "text-[var(--color-text-secondary)]/30 cursor-default"}`}
             >
               {letter}

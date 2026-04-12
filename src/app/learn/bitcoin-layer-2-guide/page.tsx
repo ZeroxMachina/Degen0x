@@ -506,7 +506,6 @@ export default function BitcoinLayer2Guide() {
         <h3 className="text-xl font-bold text-[#e6edf3] mb-6">Related Articles</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <a
-            href="/learn/real-world-assets-rwa-guide"
             className="p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors"
           >
             <h4 className="text-[#58a6ff] font-semibold mb-2">Real World Assets Guide</h4>
@@ -515,7 +514,6 @@ export default function BitcoinLayer2Guide() {
             </p>
           </a>
           <a
-            href="/learn/memecoin-trading-strategy"
           >
             <h4 className="text-[#58a6ff] font-semibold mb-2">Memecoin Trading Strategy</h4>
             <p className="text-[#8b949e] text-sm">

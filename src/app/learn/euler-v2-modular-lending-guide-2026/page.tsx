@@ -184,7 +184,6 @@ export default function EulerV2Guide() {
             ].map((item) => (
               <li key={item.href}>
                 <a
-                  href={item.href}
                   style={{
                     color: '#58a6ff',
                     textDecoration: 'none',
@@ -1186,9 +1185,8 @@ export default function EulerV2Guide() {
               { href: '/learn/rwa-tokenization-real-world-assets-guide-2026', label: 'RWA Tokenization Guide 2026' },
               { href: '/tools/dca-calculator', label: 'DCA Calculator Tool' },
             ].map((item) => (
-              <Link
+              <Link href={item.href}
                 key={item.href}
-                href={item.href}
                 style={{
                   backgroundColor: '#161b22',
                   border: '1px solid #30363d',

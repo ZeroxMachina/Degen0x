@@ -188,7 +188,6 @@ export default function HyperlaneGuide() {
             ].map((item) => (
               <li key={item.href}>
                 <a
-                  href={item.href}
                   style={{
                     color: '#58a6ff',
                     textDecoration: 'none',
@@ -809,9 +808,8 @@ export default function HyperlaneGuide() {
               { href: '/learn/chain-abstraction-guide-2026', title: 'Chain Abstraction Guide 2026', desc: 'How chain abstraction hides blockchain complexity from users and enables seamless interchain UX.' },
               { href: '/tools/dca-calculator', title: 'DCA Calculator', desc: 'Dollar-cost averaging calculator to plan your crypto investment strategy.' },
             ].map((item) => (
-              <Link
+              <Link href={item.href}
                 key={item.href}
-                href={item.href}
                 style={{
                   backgroundColor: '#161b22',
                   border: '1px solid #30363d',

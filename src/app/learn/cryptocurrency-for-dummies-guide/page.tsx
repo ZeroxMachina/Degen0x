@@ -415,8 +415,7 @@ export default function CryptocurrencyForDummiesGuide() {
 
         <p style={{ fontSize: 16, lineHeight: 1.7, marginBottom: 16, color: darkColors.text }}>
           For a deeper dive into how blockchain technology works, check out our{" "}
-          <Link
-            href="/learn/how-blockchain-works-simple-explanation"
+          <Link href="#"
             style={{ color: darkColors.link, textDecoration: "underline" }}
           >
             blockchain explained guide
@@ -506,8 +505,7 @@ export default function CryptocurrencyForDummiesGuide() {
 
         <p style={{ fontSize: 16, lineHeight: 1.7, marginBottom: 28, color: darkColors.text }}>
           Want to learn more? Check out our complete{" "}
-          <Link
-            href="/learn/what-is-bitcoin"
+          <Link href="#"
             style={{ color: darkColors.link, textDecoration: "underline" }}
           >
             Bitcoin guide
@@ -584,8 +582,7 @@ export default function CryptocurrencyForDummiesGuide() {
 
         <p style={{ fontSize: 16, lineHeight: 1.7, marginBottom: 28, color: darkColors.text }}>
           For more on Ethereum specifically, see our{" "}
-          <Link
-            href="/learn/what-is-ethereum"
+          <Link href="#"
             style={{ color: darkColors.link, textDecoration: "underline" }}
           >
             Ethereum explained guide
@@ -827,8 +824,7 @@ export default function CryptocurrencyForDummiesGuide() {
 
         <p style={{ fontSize: 16, lineHeight: 1.7, marginBottom: 28, color: darkColors.text }}>
           For more on wallet types and security, see our{" "}
-          <Link
-            href="/learn/crypto-wallet-types-explained"
+          <Link href="#"
             style={{ color: darkColors.link, textDecoration: "underline" }}
           >
             crypto wallets guide
@@ -1239,8 +1235,7 @@ export default function CryptocurrencyForDummiesGuide() {
             }}
           >
             <li style={{ marginBottom: 12 }}>
-              <Link
-                href="/tools/dca-calculator"
+              <Link href="#"
                 style={{ color: darkColors.link, textDecoration: "underline" }}
               >
                 DCA Calculator
@@ -1248,8 +1243,7 @@ export default function CryptocurrencyForDummiesGuide() {
               — Plan your dollar-cost averaging strategy
             </li>
             <li style={{ marginBottom: 12 }}>
-              <Link
-                href="/learn/how-to-buy-bitcoin-step-by-step"
+              <Link href="#"
                 style={{ color: darkColors.link, textDecoration: "underline" }}
               >
                 How to Buy Bitcoin Step-by-Step
@@ -1257,8 +1251,7 @@ export default function CryptocurrencyForDummiesGuide() {
               — A more detailed buying guide
             </li>
             <li>
-              <Link
-                href="/learn/how-blockchain-works"
+              <Link href="#"
                 style={{ color: darkColors.link, textDecoration: "underline" }}
               >
                 How Blockchain Works
@@ -1322,8 +1315,7 @@ export default function CryptocurrencyForDummiesGuide() {
             marginBottom: 40,
           }}
         >
-          <Link
-            href="/learn/what-is-bitcoin"
+          <Link href="#"
             style={{
               ...infoBoxStyle,
               textDecoration: "none",
@@ -1347,8 +1339,7 @@ export default function CryptocurrencyForDummiesGuide() {
             </p>
           </Link>
 
-          <Link
-            href="/learn/what-is-ethereum"
+          <Link href="#"
             style={{
               ...infoBoxStyle,
               textDecoration: "none",
@@ -1372,8 +1363,7 @@ export default function CryptocurrencyForDummiesGuide() {
             </p>
           </Link>
 
-          <Link
-            href="/learn/wallet-types-explained"
+          <Link href="#"
             style={{
               ...infoBoxStyle,
               textDecoration: "none",

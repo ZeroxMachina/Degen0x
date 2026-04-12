@@ -255,7 +255,6 @@ export default function OnchainCLOBDexGuidePage() {
           ].map((item) => (
             <a
               key={item.href}
-              href={item.href}
               className="block hover:underline"
               style={{ color: "#58a6ff" }}
             >
@@ -774,9 +773,8 @@ export default function OnchainCLOBDexGuidePage() {
             { href: "/tools/dex-screener", label: "DEX Screener Tool" },
             { href: "/tools/funding-rates", label: "Funding Rates Tracker" },
           ].map((link) => (
-            <Link
+            <Link href={item.href}
               key={link.href}
-              href={link.href}
               style={{ color: "#58a6ff" }}
             >
               {link.label}

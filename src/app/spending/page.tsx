@@ -112,9 +112,8 @@ export default function SpendingPage() {
           <AffiliateDisclosure />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {bestOfLinks.map((link) => (
-              <Link
+              <Link href={link.href}
                 key={link.href}
-                href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
                 <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
@@ -163,9 +162,8 @@ export default function SpendingPage() {
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn About Spending Crypto</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {learnLinks.map((link) => (
-              <Link
+              <Link href={link.href}
                 key={link.href}
-                href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >
                 <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

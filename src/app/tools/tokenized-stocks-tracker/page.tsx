@@ -667,7 +667,6 @@ export default function TokenizedStocksTrackerPage() {
               </p>
             </div>
             <a
-              href={selectedAsset.protocolUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-xs px-3 py-1.5 rounded-lg font-bold"
@@ -769,8 +768,7 @@ export default function TokenizedStocksTrackerPage() {
           Read our complete guide to understand how on-chain equities work, the risks to know, and how to
           earn yield on tokenized stocks in DeFi.
         </p>
-        <Link
-          href="/learn/tokenized-stocks-guide-2026"
+        <Link href="/learn/tokenized-stocks-guide-2026"
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold"
           style={{ background: '#6366f1', color: '#fff' }}
         >

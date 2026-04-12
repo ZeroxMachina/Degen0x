@@ -732,8 +732,7 @@ export default function AvalancheEcosystemPage() {
             }}
     >
             <li>
-              <Link
-                href="/learn/ethereum-layer-2-ecosystem-guide-2026"
+              <Link href="#"
                 style={{
                   ...infoBoxStyle,
                   display: 'block',
@@ -750,8 +749,7 @@ export default function AvalancheEcosystemPage() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/learn/cross-chain-bridges-interoperability-guide-2026"
+              <Link href="#"
                 style={{
                   ...infoBoxStyle,
                   display: 'block',
@@ -768,8 +766,7 @@ export default function AvalancheEcosystemPage() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/learn/blockchain-gaming-gamefi-guide-2026"
+              <Link href="#"
                 style={{
                   ...infoBoxStyle,
                   display: 'block',
@@ -786,8 +783,7 @@ export default function AvalancheEcosystemPage() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/learn/chain-abstraction-multichain-ux-guide-2026"
+              <Link href="#"
                 style={{
                   ...infoBoxStyle,
                   display: 'block',
@@ -804,8 +800,7 @@ export default function AvalancheEcosystemPage() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/learn/berachain-proof-of-liquidity-guide-2026"
+              <Link href="#"
                 style={{
                   ...infoBoxStyle,
                   display: 'block',

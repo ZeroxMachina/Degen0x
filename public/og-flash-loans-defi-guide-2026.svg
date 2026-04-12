@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1629;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e6ed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="4" fill="url(#accentGradient)"/>
+  <circle cx="140" cy="110" r="75" fill="#fbbf24" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="1040" cy="530" r="115" fill="#f59e0b" opacity="0.06" filter="url(#glow)"/>
+  <rect x="60" y="60" width="140" height="40" rx="20" fill="#fbbf24" opacity="0.15" stroke="#fbbf24" stroke-width="2"/>
+  <text x="130" y="87" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#fbbf24" text-anchor="middle">DEFI</text>
+  <text x="60" y="160" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="url(#titleGradient)">Flash Loans in DeFi</text>
+  <text x="60" y="210" font-family="system-ui, sans-serif" font-size="20" fill="#8b949e">Understanding zero-collateral instant loans</text>
+  <g>
+    <rect x="750" y="80" width="400" height="400" rx="12" fill="#0a1427" opacity="0.5" stroke="#1e293b" stroke-width="1"/>
+    <path d="M 900 150 L 900 280" stroke="#fbbf24" stroke-width="4" opacity="0.9"/>
+    <path d="M 870 170 L 930 170" stroke="#fbbf24" stroke-width="3" opacity="0.8"/>
+    <path d="M 860 210 L 940 210" stroke="#fbbf24" stroke-width="3" opacity="0.8"/>
+    <path d="M 870 250 L 930 250" stroke="#fbbf24" stroke-width="3" opacity="0.8"/>
+    <polygon points="900,150 890,170 910,170" fill="#fbbf24" opacity="0.9"/>
+    <circle cx="900" cy="320" r="30" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.7"/>
+    <path d="M 880 320 L 920 320 M 900 300 L 900 340" stroke="#fbbf24" stroke-width="2" opacity="0.8"/>
+    <g opacity="0.6">
+      <path d="M 950 200 L 1000 160" stroke="#f59e0b" stroke-width="2"/>
+      <path d="M 960 240 L 1010 200" stroke="#f59e0b" stroke-width="2"/>
+      <path d="M 950 280 L 1000 240" stroke="#f59e0b" stroke-width="2"/>
+    </g>
+    <text x="900" y="410" font-family="system-ui, sans-serif" font-size="14" fill="#fbbf24" text-anchor="middle">Lightning Speed</text>
+  </g>
+  <rect y="600" width="1200" height="30" fill="#0a1427" opacity="0.6"/>
+  <circle cx="60" cy="615" r="10" fill="#6366f1"/>
+  <text x="75" y="621" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">degen0x.com</text>
+</svg>

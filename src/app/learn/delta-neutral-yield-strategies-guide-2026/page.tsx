@@ -233,7 +233,6 @@ const DeltaNeutralGuide = () => {
             ].map((item) => (
               <li key={item.href}>
                 <a
-                  href={item.href}
                   style={{
                     color: "#58a6ff",
                     textDecoration: "none",
@@ -1542,8 +1541,7 @@ const DeltaNeutralGuide = () => {
               { href: "/tools/defi-yields", label: "DeFi Yields Tool" },
             ].map((link, i) => (
               <li key={i}>
-                <Link
-                  href={link.href}
+                <Link href={item.href}
                   style={{
                     color: "#58a6ff",
                     textDecoration: "none",

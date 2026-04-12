@@ -188,8 +188,7 @@ export default function ExchangeComparePage() {
                 <div style={{ fontWeight: 800, fontSize: 16, color: "var(--color-text)", marginBottom: 4 }}>{e.name}</div>
                 <Stars rating={e.rating} />
                 <div style={{ fontSize: 11, color: "var(--color-text-secondary)", marginTop: 4 }}>{det.hq}</div>
-                <Link
-                  href={e.affiliateUrl}
+                <Link href={e.affiliateUrl}
                   style={{
                     display: "block", marginTop: 10, padding: "7px 12px",
                     background: `${det.color}20`, border: `1px solid ${det.color}50`,
@@ -431,8 +430,7 @@ export default function ExchangeComparePage() {
                 </div>
                 <div style={{ fontSize: 12, color: "var(--color-text-secondary)", marginBottom: 12 }}><strong>Best for:</strong> {e.bestFor}</div>
                 <div style={{ fontSize: 12, color: "var(--color-text-secondary)", marginBottom: 14 }}><strong>Fees:</strong> {e.fees}</div>
-                <Link
-                  href={e.affiliateUrl}
+                <Link href={e.affiliateUrl}
                   style={{ display: "block", padding: "10px 0", background: `linear-gradient(135deg, ${det.color}, ${det.color}cc)`, color: "#fff", borderRadius: 10, textAlign: "center", fontWeight: 700, fontSize: 14, textDecoration: "none" }}
                 >
                   Open Account at {e.name}

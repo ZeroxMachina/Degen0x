@@ -779,9 +779,8 @@ export default function CitreaGuidePage() {
               desc: "Browse all degen0x guides and educational content.",
             },
           ].map((rel) => (
-            <Link
+            <Link href="/learn"
               key={rel.href}
-              href={rel.href}
               className="glass rounded-xl p-4 block hover:border-[#f97316] transition-colors"
               style={{ border: "1px solid var(--color-border)" }}
             >
@@ -808,21 +807,18 @@ export default function CitreaGuidePage() {
           Track Citrea TVL, dApp activity, and Bitcoin DeFi yields on degen0x in real time.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
-          <Link
-            href="/defi-yields"
+          <Link href="/learn"
             className="affiliate-cta px-5 py-2 rounded-lg text-white font-semibold text-sm"
           >
             DeFi Yields
           </Link>
-          <Link
-            href="/tools/bridge-aggregator"
+          <Link href="/learn"
             className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             Bridge Aggregator
           </Link>
-          <Link
-            href="/prices"
+          <Link href="/learn"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             Live Prices

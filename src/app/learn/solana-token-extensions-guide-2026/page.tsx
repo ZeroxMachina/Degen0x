@@ -199,7 +199,6 @@ export default function SolanaTokenExtensionsGuide() {
             {tableOfContents.map((item) => (
               <li key={item.id}>
                 <a
-                  href={`#${item.id}`}
                   style={{
                     color: '#58a6ff',
                     textDecoration: 'none',
@@ -1259,8 +1258,7 @@ export default function SolanaTokenExtensionsGuide() {
             }}
           >
             <li>
-              <Link
-                href="/learn/solana-defi-ecosystem-guide-2026"
+              <Link href={`#${item.id}`}
                 style={{
                   color: '#58a6ff',
                   textDecoration: 'none',
@@ -1272,8 +1270,7 @@ export default function SolanaTokenExtensionsGuide() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/learn/privacy-coins-guide-2026"
+              <Link href={`#${item.id}`}
                 style={{
                   color: '#58a6ff',
                   textDecoration: 'none',
@@ -1285,8 +1282,7 @@ export default function SolanaTokenExtensionsGuide() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/learn/fhe-crypto-guide-2026"
+              <Link href={`#${item.id}`}
                 style={{
                   color: '#58a6ff',
                   textDecoration: 'none',
@@ -1298,8 +1294,7 @@ export default function SolanaTokenExtensionsGuide() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/learn/smart-contract-security-guide"
+              <Link href={`#${item.id}`}
                 style={{
                   color: '#58a6ff',
                   textDecoration: 'none',
@@ -1311,8 +1306,7 @@ export default function SolanaTokenExtensionsGuide() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/tools/token-screener"
+              <Link href={`#${item.id}`}
                 style={{
                   color: '#58a6ff',
                   textDecoration: 'none',

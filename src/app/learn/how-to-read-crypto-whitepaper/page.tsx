@@ -221,9 +221,8 @@ export default function HowToReadWhitepaperPage() {
             { href: "/learn/tokenomics-guide", title: "Tokenomics Explained", tag: "Education" },
             { href: "/tools/token-screener", title: "Token Screener Tool", tag: "Tool" },
           ].map((item) => (
-            <Link
+            <Link href={item.href}
               key={item.href}
-              href={item.href}
               className="p-4 rounded-lg transition"
               style={{ background: "var(--glass-bg)", border: "1px solid var(--color-border)", textDecoration: "none" }}
             >

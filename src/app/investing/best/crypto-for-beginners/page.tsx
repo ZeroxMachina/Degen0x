@@ -608,8 +608,7 @@ export default function BestCryptoForBeginnersPage() {
                 </div>
               </div>
 
-              <Link
-                href={p.affiliateHref}
+              <Link href={p.whereHref}
                 style={{
                   display: "inline-block",
                   background: "linear-gradient(135deg, #6366f1, #06b6d4)",
@@ -751,9 +750,8 @@ export default function BestCryptoForBeginnersPage() {
             { label: "Staking APY Leaderboard", href: "/tools/staking-apy" },
             { label: "Token Screener", href: "/tools/token-screener" },
           ].map((link) => (
-            <Link
+            <Link href={p.whereHref}
               key={link.href}
-              href={link.href}
               style={{
                 background: "rgba(99,102,241,0.12)",
                 border: "1px solid rgba(99,102,241,0.25)",

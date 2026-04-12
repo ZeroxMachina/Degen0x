@@ -98,8 +98,7 @@ export default function CryptoCardsPage() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-[var(--color-text)]">Top-Rated Crypto Cards</h2>
-            <Link
-              href="/crypto-cards/best"
+            <Link href="/crypto-cards/best"
               className="text-[var(--color-primary)] hover:underline text-sm font-medium"
             >
               View all rankings &rarr;
@@ -123,9 +122,8 @@ export default function CryptoCardsPage() {
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Find the Best Crypto Card For You</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {bestOfLinks.map((link) => (
-              <Link
+              <Link href="/crypto-cards/best"
                 key={link.href}
-                href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
                 <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
@@ -142,9 +140,8 @@ export default function CryptoCardsPage() {
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn About Crypto Cards</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {learnLinks.map((link) => (
-              <Link
+              <Link href="/crypto-cards/best"
                 key={link.href}
-                href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >
                 <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

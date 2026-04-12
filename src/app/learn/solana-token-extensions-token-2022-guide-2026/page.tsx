@@ -912,7 +912,6 @@ await initializeTransferHook(
       {/* Back to Top */}
       <div style={{ marginTop: 48, textAlign: 'center' as const, paddingTop: 32, borderTop: '1px solid #30363d' }}>
         <a
-          href="#"
           style={{
             display: 'inline-block',
             background: 'linear-gradient(135deg, #6366f1, #06b6d4)',

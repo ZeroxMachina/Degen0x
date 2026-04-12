@@ -194,7 +194,6 @@ export default function HashiBitcoinDefiGuide() {
               ].map((item) => (
                 <li key={item.href} style={{ marginBottom: '12px' }}>
                   <a
-                    href={item.href}
                     style={{
                       color: '#58a6ff',
                       textDecoration: 'none',
@@ -998,9 +997,8 @@ export default function HashiBitcoinDefiGuide() {
                   description: 'Compare yields across protocols and strategies',
                 },
               ].map((resource) => (
-                <Link
+                <Link href={resource.href}
                   key={resource.href}
-                  href={resource.href}
                   style={{
                     background: '#161b22',
                     border: '1px solid #30363d',

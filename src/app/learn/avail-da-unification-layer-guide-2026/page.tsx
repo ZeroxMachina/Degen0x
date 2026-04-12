@@ -199,7 +199,6 @@ const AvailGuide = () => {
             ].map((item) => (
               <a
                 key={item.id}
-                href={`#${item.id}`}
                 className="rounded bg-[#161b22] px-3 py-1 text-sm text-[#58a6ff] hover:bg-[#30363d] transition"
               >
                 {item.label}
@@ -1077,8 +1076,7 @@ const AvailGuide = () => {
           </p>
         </div>
             <div className="grid gap-4 sm:grid-cols-2">
-              <Link
-                href="/learn/celestia-tia-modular-data-availability-guide-2026"
+              <Link href="#"
                 className="block rounded bg-[#0d1117] p-4 border border-[#30363d] hover:border-[#58a6ff] transition"
               >
                 <h3 className="font-semibold text-[#58a6ff] mb-2">
@@ -1088,8 +1086,7 @@ const AvailGuide = () => {
                   Compare Celestia&apos;s pioneering DA approach with Avail&apos;s integrated stack.
                 </p>
               </Link>
-              <Link
-                href="/learn/data-availability-modular-blockchains-guide-2026"
+              <Link href="#"
               >
                 <h3 className="font-semibold text-[#58a6ff] mb-2">
                   Data Availability & Modular Blockchains
@@ -1098,8 +1095,7 @@ const AvailGuide = () => {
                   Understand the fundamental DA problem and modular blockchain architecture.
                 </p>
               </Link>
-              <Link
-                href="/learn/restaking-eigenlayer-guide-2026"
+              <Link href="#"
               >
                 <h3 className="font-semibold text-[#58a6ff] mb-2">
                   Restaking & EigenLayer Security
@@ -1108,8 +1104,7 @@ const AvailGuide = () => {
                   Learn about restaking mechanisms that power Avail Fusion.
                 </p>
               </Link>
-              <Link
-                href="/learn/chain-abstraction-multichain-ux-guide-2026"
+              <Link href="#"
               >
                 <h3 className="font-semibold text-[#58a6ff] mb-2">
                   Chain Abstraction & Multichain UX

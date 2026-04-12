@@ -192,7 +192,6 @@ export default function ERC8183GuidePage() {
             {tableOfContents.map((item, index) => (
               <li key={item.id} style={{ marginBottom: '8px' }}>
                 <a
-                  href={`#${item.id}`}
                   className="erc-toc-link"
                   style={{
                     color: '#58a6ff',
@@ -926,8 +925,7 @@ export default function ERC8183GuidePage() {
               gap: '16px',
             }}
           >
-            <Link
-              href="/learn/ai-crypto-agents-guide"
+            <Link href="/learn/ai-crypto-agents-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -946,8 +944,7 @@ export default function ERC8183GuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/ai-agent-payments-x402-guide"
+            <Link href="/learn/ai-crypto-agents-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -965,8 +962,7 @@ export default function ERC8183GuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/ai-agent-identity-nhi-guide"
+            <Link href="/learn/ai-crypto-agents-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -984,8 +980,7 @@ export default function ERC8183GuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/agentic-payments-protocols-guide-2026"
+            <Link href="/learn/ai-crypto-agents-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -1003,8 +998,7 @@ export default function ERC8183GuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/ai-crypto-agents-guide"
+            <Link href="/learn/ai-crypto-agents-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -1022,8 +1016,7 @@ export default function ERC8183GuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/ai-agent-identity-guide"
+            <Link href="/learn/ai-crypto-agents-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',

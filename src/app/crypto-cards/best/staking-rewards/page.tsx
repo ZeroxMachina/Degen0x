@@ -197,9 +197,8 @@ export default function BestStakingRewardsCardsPage() {
             { title: "Best Cards for High Spenders", href: "/crypto-cards/best/high-spenders" },
             { title: "Best Exchanges for Staking", href: "/exchanges/best/staking-rewards" },
           ].map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
               <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

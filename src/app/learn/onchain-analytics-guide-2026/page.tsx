@@ -923,8 +923,7 @@ export default function OnChainAnalyticsGuide() {
           </h2>
 
           <div className="grid gap-4 md:grid-cols-2">
-            <Link
-              href="/tools/whale-alerts"
+            <Link href="/tools/whale-alerts"
               className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
@@ -935,8 +934,7 @@ export default function OnChainAnalyticsGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/defi-safety-guide-2026"
+            <Link href="/tools/whale-alerts"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 DeFi Safety Guide
@@ -946,8 +944,7 @@ export default function OnChainAnalyticsGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/mev-guide-2026"
+            <Link href="/tools/whale-alerts"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 MEV Guide 2026
@@ -957,8 +954,7 @@ export default function OnChainAnalyticsGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/defi-yields"
+            <Link href="/tools/whale-alerts"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 DeFi Yields Tracker
@@ -968,8 +964,7 @@ export default function OnChainAnalyticsGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/crypto-market-cycles-guide-2026"
+            <Link href="/tools/whale-alerts"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Crypto Market Cycles Guide
@@ -979,8 +974,7 @@ export default function OnChainAnalyticsGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/technical-analysis-guide-2026"
+            <Link href="/tools/whale-alerts"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Technical Analysis Guide
@@ -990,8 +984,7 @@ export default function OnChainAnalyticsGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/crypto-arbitrage-strategies-guide-2026"
+            <Link href="/tools/whale-alerts"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Crypto Arbitrage Strategies 2026

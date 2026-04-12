@@ -848,7 +848,6 @@ export default function AerodromeFinanceGuide() {
           ].map((article) => (
             <a
               key={article.href}
-              href={article.href}
               className="bg-[#161b22] border border-[#30363d] rounded-lg p-5 hover:border-[#58a6ff]/50 transition-colors"
             >
               <p className="text-[#58a6ff] font-semibold mb-1">{article.title}</p>

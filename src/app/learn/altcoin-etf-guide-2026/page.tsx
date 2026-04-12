@@ -241,7 +241,6 @@ export default function AltcoinETFGuidePage() {
           ].map(([id, label]) => (
             <li key={id}>
               <a
-                href={`#${id}`}
                 style={{ color: "#58a6ff", textDecoration: "none" }}
                 onMouseEnter={e => { (e.target as HTMLElement).style.textDecoration = 'underline'; }}
                 onMouseLeave={e => { (e.target as HTMLElement).style.textDecoration = 'none'; }}
@@ -1117,9 +1116,8 @@ export default function AltcoinETFGuidePage() {
                 desc: "Double your yield with EigenLayer and Symbiotic restaking protocols.",
               },
             ].map((link) => (
-              <Link
+              <Link href={link.href}
                 key={link.href}
-                href={link.href}
                 className="block p-4 rounded-xl transition-colors"
                 style={{
                   background: "#161b22",

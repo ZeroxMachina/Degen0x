@@ -565,8 +565,7 @@ export default function BitcoinStrategicReserveGuidePage() {
             highlights just how close we are to the 21M hard cap. With ~1M BTC left to mine over
             ~120 years and governments competing to accumulate, the supply crunch narrative has
             never had more structural support. See our{" "}
-            <Link
-              href="/learn/bitcoin-20-million-supply-milestone"
+            <Link href="/learn/bitcoin-20-million-supply-milestone"
               style={{ color: "#6366f1" }}
             >
               Bitcoin 20 Million Supply Milestone guide

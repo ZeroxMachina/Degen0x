@@ -286,7 +286,6 @@ export default function MorphoProtocolPage() {
               ].map((item) => (
                 <a
                   key={item.id}
-                  href={`#${item.id}`}
                   style={{
                     color: colors.accent,
                     textDecoration: 'none',
@@ -937,8 +936,7 @@ export default function MorphoProtocolPage() {
               Related Learn Articles
             </h3>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-              <Link
-                href="/learn/defi-yields-comprehensive-guide"
+              <Link href="#"
                 style={{
                   color: colors.accent,
                   textDecoration: 'none',
@@ -949,8 +947,7 @@ export default function MorphoProtocolPage() {
     >
                 → DeFi Yields Comprehensive Guide
               </Link>
-              <Link
-                href="/learn/aave-protocol-guide"
+              <Link href="#"
                 style={{
                   color: colors.accent,
                   textDecoration: 'none',
@@ -961,8 +958,7 @@ export default function MorphoProtocolPage() {
     >
                 → Aave Protocol Deep Dive
               </Link>
-              <Link
-                href="/learn/ethereum-liquid-staking"
+              <Link href="#"
                 style={{
                   color: colors.accent,
                   textDecoration: 'none',
@@ -973,8 +969,7 @@ export default function MorphoProtocolPage() {
     >
                 → Ethereum Liquid Staking Guide
               </Link>
-              <Link
-                href="/learn/erc4626-vaults-explained"
+              <Link href="#"
                 style={{
                   color: colors.accent,
                   textDecoration: 'none',

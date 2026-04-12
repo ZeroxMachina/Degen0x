@@ -710,7 +710,6 @@ export default function AbstractChainGuide() {
           ].map((link) => (
             <a
               key={link.href}
-              href={link.href}
               className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff]/50 transition-colors"
             >
               <p className="text-[#58a6ff] font-medium mb-1">{link.title}</p>

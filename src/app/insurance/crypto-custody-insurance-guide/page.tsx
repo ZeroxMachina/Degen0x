@@ -205,8 +205,7 @@ export default function CryptoCustodyInsuranceGuide() {
             Home
           </Link>
           <span style={{ margin: "0 6px" }}>›</span>
-          <Link
-            href="/insurance"
+          <Link href="#"
             style={{ color: "#8b949e", textDecoration: "none" }}
     >
             Insurance

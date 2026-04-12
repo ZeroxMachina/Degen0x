@@ -176,7 +176,6 @@ export default function BestPaymentAppsPage() {
 
               </div>
               <a
-                href={app.affiliateUrl}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="affiliate-cta px-4 py-2 rounded-lg text-white text-sm font-medium whitespace-nowrap"

@@ -192,7 +192,6 @@ export default function BestSpendingPage() {
 
                   </div>
                   <a
-                    href={product.affiliateUrl}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     className="affiliate-cta px-4 py-2 rounded-lg text-white text-sm font-medium whitespace-nowrap"
@@ -245,9 +244,8 @@ export default function BestSpendingPage() {
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Browse by Category</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {categoryLinks.map((link) => (
-              <Link
+              <Link href={product.affiliateUrl}
                 key={link.href}
-                href={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
                 <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>

@@ -913,7 +913,6 @@ export default function FlashLoansGuidePage() {
             ].map((guide) => (
               <a
                 key={guide.href}
-                href={guide.href}
                 style={{
                   display: 'block',
                   background: '#161b22',

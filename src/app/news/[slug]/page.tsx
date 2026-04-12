@@ -272,9 +272,8 @@ export default async function ArticlePage({ params }: Props) {
               </h3>
               <div className="space-y-4">
                 {related.map((a) => (
-                  <Link
+                  <Link href={`/news/${a.slug}`}
                     key={a.slug}
-                    href={`/news/${a.slug}`}
                     className="block group"
                   >
                     <span
@@ -292,8 +291,7 @@ export default async function ArticlePage({ params }: Props) {
                   </Link>
                 ))}
               </div>
-              <Link
-                href="/news"
+              <Link href="/news"
                 className="block mt-4 text-center text-sm text-[var(--color-primary)] hover:underline"
               >
                 View all news →
@@ -313,9 +311,8 @@ export default async function ArticlePage({ params }: Props) {
                   { label: "DeFi Yield Compare", href: "/defi-lending/best/yield-aggregators" },
                   { label: "Tax Calculator", href: "/taxes/calculators/tax-calculator" },
                 ].map((tool) => (
-                  <Link
+                  <Link href={tool.href}
                     key={tool.href}
-                    href={tool.href}
                     className="flex items-center justify-between py-2 text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors group"
                   >
                     <span>{tool.label}</span>
@@ -334,8 +331,7 @@ export default async function ArticlePage({ params }: Props) {
               <p className="text-xs text-[var(--color-text-secondary)] mb-3">
                 Top 5 crypto stories every morning. Free.
               </p>
-              <Link
-                href="/#newsletter"
+              <Link href="#"
                 className="affiliate-cta block text-center py-2 px-4 rounded-lg text-white text-sm font-semibold"
               >
                 Subscribe →

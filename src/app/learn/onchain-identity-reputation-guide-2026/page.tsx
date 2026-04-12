@@ -738,7 +738,6 @@ export default function OnchainIdentityReputationGuide() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <a
-              href="/learn/account-abstraction"
               className="bg-[#161b22] border rounded-lg p-6 hover:border-[#58a6ff] transition"
               style={{ borderColor: "#30363d" }}
             >
@@ -750,7 +749,6 @@ export default function OnchainIdentityReputationGuide() {
               </p>
             </a>
             <a
-              href="/learn/zero-knowledge-proofs"
               style={{ borderColor: "#30363d" }}
             >
               <h3 className="font-semibold mb-2 text-lg" style={{ color: "#58a6ff" }}>
@@ -761,7 +759,6 @@ export default function OnchainIdentityReputationGuide() {
               </p>
             </a>
             <a
-              href="/tools/degen-score"
               style={{ borderColor: "#30363d" }}
             >
               <h3 className="font-semibold mb-2 text-lg" style={{ color: "#58a6ff" }}>
@@ -801,7 +798,6 @@ export default function OnchainIdentityReputationGuide() {
         {/* Back to Top */}
         <div className="mt-8 text-center">
           <a
-            href="#"
             className="inline-block text-sm text-[#58a6ff] hover:underline transition-colors"
             aria-label="Back to top"
           >

@@ -202,7 +202,6 @@ export default function GovernanceMarketsPage() {
             ].map((item) => (
               <li key={item.id}>
                 <a
-                  href={`#${item.id}`}
                   className="hover:opacity-80 transition-opacity"
                   style={{ color: '#58a6ff' }}
     >
@@ -685,9 +684,8 @@ export default function GovernanceMarketsPage() {
                 description: 'Strategic treasury management through POL',
               },
             ].map((item, idx) => (
-              <Link
+              <Link href="#"
                 key={idx}
-                href={`/learn/${item.slug}`}
                 className="rounded-lg border p-4 transition-colors hover:opacity-80"
                 style={{ borderColor: '#30363d', backgroundColor: '#161b22' }}
     >

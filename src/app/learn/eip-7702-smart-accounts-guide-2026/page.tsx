@@ -674,7 +674,6 @@ export default function EIP7702SmartAccountsPage() {
             Update your wallet today and unlock gasless transactions, session keys, passkey authentication, and advanced security. EIP-7702 is live on mainnet now.
           </p>
           <a
-            href="/learn/account-abstraction-explained"
             style={{
               display: "inline-block",
               padding: "12px 28px",
@@ -690,7 +689,6 @@ export default function EIP7702SmartAccountsPage() {
             Learn More About Account Abstraction
           </a>
           <a
-            href="/learn/ethereum-pectra-upgrade-guide"
             style={{
               display: "inline-block",
               padding: "12px 28px",

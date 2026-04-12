@@ -245,7 +245,6 @@ export default function ZKMLGuide2026Page() {
             ].map(([href, label]) => (
               <div key={href as string}>
                 <a
-                  href={href as string}
                   style={{
                     display: "block",
                     color: S.primary,

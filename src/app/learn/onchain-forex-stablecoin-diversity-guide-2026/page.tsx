@@ -414,9 +414,8 @@ export default function OnchainForexStablecoinDiversityGuidePage() {
                 { title: "DeFi Lending Guide", href: "/learn/amm-liquidity-pools-guide-2026" },
                 { title: "Stablecoin Yield Strategies 2026", href: "/learn/stablecoin-yield-strategies-2026" },
               ].map((link) => (
-                <Link
+                <Link href="#regulation"
                   key={link.href}
-                  href={link.href}
                   style={{ display: "block", padding: 16, background: "#161b22", border: "1px solid #30363d", borderRadius: 8, textDecoration: "none", color: "#58a6ff", fontSize: 14, fontWeight: 600 }}
                 >
                   {link.title} →

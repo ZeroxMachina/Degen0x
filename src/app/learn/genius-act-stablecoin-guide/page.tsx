@@ -539,7 +539,6 @@ export default function GeniusActStablecoinGuide() {
           ].map((article) => (
             <a
               key={article.href}
-              href={article.href}
               className="block bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors"
             >
               <h4 className="text-[#e6edf3] font-semibold text-sm mb-1">{article.title}</h4>

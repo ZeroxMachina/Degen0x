@@ -152,8 +152,7 @@ export default function BitcoinMiningGuide() {
               Home
             </Link>
             {' > '}
-            <Link
-              href="/learn"
+            <Link href="#"
               style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
               Learn
@@ -239,80 +238,70 @@ export default function BitcoinMiningGuide() {
             </h3>
             <ul style={{ marginBottom: 0, paddingLeft: 20 }}>
               <li>
-                <Link
-                  href="#profitability-2026"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Is Bitcoin Mining Still Profitable in 2026?
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#how-mining-works"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   How Bitcoin Mining Works
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#asic-comparison"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Mining Hardware: ASIC Comparison 2026
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#pools-solo"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Mining Pools vs Solo Mining
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#electricity-costs"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Electricity Costs & Location Strategy
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#profitability-calc"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Calculating Mining Profitability
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#setup"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Setting Up Your Mining Operation
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#cloud-mining"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Cloud Mining & Alternatives
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#environmental"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Environmental Impact & Sustainability
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#faq"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Frequently Asked Questions
@@ -1312,8 +1301,7 @@ export default function BitcoinMiningGuide() {
               }}
     >
               Use online calculators like our{' '}
-              <Link
-                href="/tools/dca-calculator"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 DCA Calculator
@@ -1634,15 +1622,13 @@ export default function BitcoinMiningGuide() {
               }}
     >
               For most individuals, buying Bitcoin through platforms like {' '}
-              <Link
-                href="/exchanges"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 regulated exchanges
               </Link>{' '}
               or using{' '}
-              <Link
-                href="/learn/dollar-cost-averaging"
+              <Link href="#"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 dollar-cost averaging
@@ -2083,32 +2069,28 @@ export default function BitcoinMiningGuide() {
             </h2>
             <ul style={{ paddingLeft: 20 }}>
               <li>
-                <Link
-                  href="/learn/bitcoin-halving-explained-history"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Bitcoin Halving Explained: History & Impact on Mining
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/tools/dca-calculator"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Dollar-Cost Averaging (DCA) Calculator
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/learn/how-to-buy-bitcoin"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Buying Bitcoin: Exchanges & Platforms
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/investing"
+                <Link href="#"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Bitcoin Investing Guides

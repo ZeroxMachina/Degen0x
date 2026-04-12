@@ -272,9 +272,8 @@ export default async function BlogPostPage({ params }: Props) {
               {related.map((r) => {
                 const rCatMeta = getCategoryMeta(r.category);
                 return (
-                  <Link
+                  <Link href={`/blog/${r.slug}`}
                     key={r.slug}
-                    href={`/blog/${r.slug}`}
                     className="block rounded-lg border p-5 transition-all"
                     style={{
                       backgroundColor: "#161b22",

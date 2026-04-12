@@ -556,7 +556,6 @@ export default function Bitcoin20MillionGuide() {
         <h3 className="text-xl font-bold text-[#e6edf3] mb-6">Keep Learning</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <a
-            href="/learn/bitcoin-etf-guide-2026"
             className="p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors"
           >
             <h4 className="text-[#58a6ff] font-semibold mb-2">Bitcoin ETF Guide 2026</h4>
@@ -565,7 +564,6 @@ export default function Bitcoin20MillionGuide() {
             </p>
           </a>
           <a
-            href="/learn/bitcoin-layer-2-guide"
           >
             <h4 className="text-[#58a6ff] font-semibold mb-2">Bitcoin Layer 2 Guide</h4>
             <p className="text-[#8b949e] text-sm">
@@ -573,7 +571,6 @@ export default function Bitcoin20MillionGuide() {
             </p>
           </a>
           <a
-            href="/tools/dca-calculator"
           >
             <h4 className="text-[#58a6ff] font-semibold mb-2">DCA Calculator</h4>
             <p className="text-[#8b949e] text-sm">
@@ -581,7 +578,6 @@ export default function Bitcoin20MillionGuide() {
             </p>
           </a>
           <a
-            href="/learn/tokenomics-protocol-revenue-guide"
           >
             <h4 className="text-[#58a6ff] font-semibold mb-2">Tokenomics 2.0 Guide</h4>
             <p className="text-[#8b949e] text-sm">

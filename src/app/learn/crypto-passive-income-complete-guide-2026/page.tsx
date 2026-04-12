@@ -183,7 +183,6 @@ const TableOfContents = () => {
         {sections.map((section) => (
           <li key={section.id} style={{ marginBottom: 12, color: '#8b949e' }}>
             <a
-              href={`#${section.id}`}
               style={{
                 color: '#58a6ff',
                 textDecoration: 'none',

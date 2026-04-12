@@ -628,8 +628,7 @@ export default function CryptoScreener() {
                       <Sparkline data={protocol.tvlTrend} />
                     </td>
                     <td style={{ padding: '1rem', textAlign: 'center' }}>
-                      <Link
-                        href={`/ecosystem/${protocol.slug}`}
+                      <Link href={`/ecosystem/${protocol.slug}`}
                         style={{
                           display: 'inline-block',
                           padding: '0.5rem 1rem',

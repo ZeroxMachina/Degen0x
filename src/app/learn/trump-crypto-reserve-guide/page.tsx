@@ -198,9 +198,8 @@ export default function TrumpCryptoReserveGuidePage() {
             { label: "How to Invest in Bitcoin", href: "/investing/learn/how-to-invest-in-bitcoin" },
             { label: "AML/KYC Crypto Guide", href: "/learn/aml-kyc-crypto-guide" },
           ].map((l) => (
-            <Link
+            <Link href={l.href}
               key={l.href}
-              href={l.href}
               className="glass p-3 rounded-xl text-sm card-hover"
               style={{ color: "var(--color-primary)" }}
             >

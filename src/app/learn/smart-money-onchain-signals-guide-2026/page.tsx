@@ -658,7 +658,6 @@ export default function SmartMoneyOnchainSignalsGuide2026() {
             ].map((item, i) => (
               <a
                 key={i}
-                href={item.href}
                 className="related-link"
                 style={{
                   display: "block",

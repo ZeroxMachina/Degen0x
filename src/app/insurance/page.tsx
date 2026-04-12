@@ -68,9 +68,8 @@ export default function InsuranceHubPage() {
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {bestOfLinks.map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
@@ -85,9 +84,8 @@ export default function InsuranceHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Insurance Protocol Reviews</h2>
         <div className="grid md:grid-cols-3 gap-4">
           {reviewLinks.map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
             >
               <span className="inline-block rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-medium px-2 py-0.5 mb-2">
                 Review
@@ -104,9 +102,8 @@ export default function InsuranceHubPage() {
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Learn About Crypto Insurance</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {learnLinks.map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
             >
               <span className="inline-block rounded-full bg-[var(--color-secondary)]/10 text-[var(--color-secondary)] text-xs font-medium px-2 py-0.5 mb-2">
                 Guide

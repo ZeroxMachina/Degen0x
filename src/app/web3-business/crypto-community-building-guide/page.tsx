@@ -206,8 +206,7 @@ export default function CryptoCommunityBuildingGuide() {
             Home
           </Link>
           <span style={{ margin: "0 6px" }}>›</span>
-          <Link
-            href="/web3-business"
+          <Link href="#"
             style={{ color: "#8b949e", textDecoration: "none" }}
     >
             Web3 Business

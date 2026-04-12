@@ -664,8 +664,7 @@ export default function SmartContractSecurityAuditPage() {
         <section style={{ marginBottom: '50px' }}>
           <h3 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '20px', color: '#e6edf3' }}>📚 Related Articles</h3>
           <div style={{ display: 'grid', gap: '16px' }}>
-            <Link
-              href="/learn/common-crypto-scams"
+            <Link href="#faqs"
               style={{
                 display: 'block',
                 padding: '16px',
@@ -687,8 +686,7 @@ export default function SmartContractSecurityAuditPage() {
             >
               → Common Crypto Scams & How to Avoid Them
             </Link>
-            <Link
-              href="/learn/flash-loans-guide-2026"
+            <Link href="#faqs"
               style={{
                 display: 'block',
                 padding: '16px',
@@ -709,8 +707,7 @@ export default function SmartContractSecurityAuditPage() {
             >
               → Flash Loans: Complete Guide 2026
             </Link>
-            <Link
-              href="/learn/defi-liquidation-protection-guide-2026"
+            <Link href="#faqs"
               style={{
                 display: 'block',
                 padding: '16px',
@@ -731,8 +728,7 @@ export default function SmartContractSecurityAuditPage() {
             >
               → DeFi Liquidation Protection Guide 2026
             </Link>
-            <Link
-              href="/learn/mev-protection-guide"
+            <Link href="#faqs"
               style={{
                 display: 'block',
                 padding: '16px',
@@ -753,8 +749,7 @@ export default function SmartContractSecurityAuditPage() {
             >
               → MEV Protection Guide
             </Link>
-            <Link
-              href="/learn/zero-knowledge-proofs-guide"
+            <Link href="#faqs"
               style={{
                 display: 'block',
                 padding: '16px',

@@ -678,7 +678,6 @@ export default function CryptoBearMarketInvestingGuide2026() {
             ].map((item, i) => (
               <a
                 key={i}
-                href={item.href}
                 className="related-link"
                 style={{
                   display: "block",

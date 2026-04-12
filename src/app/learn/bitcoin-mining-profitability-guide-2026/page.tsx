@@ -861,8 +861,7 @@ export default function MiningProfitabilityPage() {
             Related Tools & Resources
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
-            <Link
-              href="/tools/dca-calculator"
+            <Link href="/tools/dca-calculator"
               className="group rounded-lg p-4 transition-all hover:scale-105"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
@@ -880,8 +879,7 @@ export default function MiningProfitabilityPage() {
               </div>
             </Link>
 
-            <Link
-              href="/learn/bitcoin-layer-2-guide"
+            <Link href="/tools/dca-calculator"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">
@@ -898,8 +896,7 @@ export default function MiningProfitabilityPage() {
               </div>
             </Link>
 
-            <Link
-              href="/learn/bitcoin-supply-shock-guide-2026"
+            <Link href="/tools/dca-calculator"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">
@@ -916,8 +913,7 @@ export default function MiningProfitabilityPage() {
               </div>
             </Link>
 
-            <Link
-              href="/learn/advanced-defi-strategies"
+            <Link href="/tools/dca-calculator"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">

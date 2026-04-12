@@ -462,7 +462,6 @@ export default function FluidProtocolGuidePage() {
             ].map(([href, label]) => (
               <a
                 key={href}
-                href={href}
                 style={{ display: "block", background: "#161b22", border: `1px solid ${S.border}`, borderRadius: 10, padding: "14px 16px", color: S.primary, fontSize: 14, textDecoration: "none" }}
               >
                 {label} →

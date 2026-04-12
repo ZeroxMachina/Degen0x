@@ -1045,8 +1045,7 @@ export default function SolanaETFGuide() {
           <section id="related-resources" className="space-y-4 mt-8 pt-8 border-t border-[#30363d]">
             <h2 className="text-lg font-bold text-[#e6edf3]">Related Resources</h2>
             <div className="space-y-3">
-              <Link
-                href="/learn/crypto-etfs-complete-guide-2026"
+              <Link href="#"
                 className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
@@ -1057,8 +1056,7 @@ export default function SolanaETFGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/bitcoin-etf-institutional-guide-2026"
+              <Link href="#"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Bitcoin ETF Institutional Guide
@@ -1068,8 +1066,7 @@ export default function SolanaETFGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/crypto-staking-guide-2026"
+              <Link href="#"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Crypto Staking Guide 2026
@@ -1079,8 +1076,7 @@ export default function SolanaETFGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/solana-defi-ecosystem-guide-2026"
+              <Link href="#"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Solana DeFi Ecosystem Guide
@@ -1090,8 +1086,7 @@ export default function SolanaETFGuide() {
                 </p>
               </Link>
 
-              <Link
-                href="/learn/crypto-passive-income-complete-guide-2026"
+              <Link href="#"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Crypto Passive Income Guide
@@ -1140,7 +1135,6 @@ export default function SolanaETFGuide() {
                 ].map((item) => (
                   <a
                     key={item.id}
-                    href={`#${item.id}`}
                     className="block px-3 py-1 text-[#8b949e] hover:text-[#58a6ff] transition-colors rounded hover:bg-[#0d1117]"
                   >
                     {item.label}
@@ -1198,7 +1192,6 @@ export default function SolanaETFGuide() {
                 Open a brokerage account and search for Solana ETF tickers.
               </p>
               <a
-                href="#how-to-choose"
                 className="inline-block px-3 py-2 bg-white text-[#6366f1] rounded font-semibold text-xs hover:bg-gray-100 transition-colors"
               >
                 View ETF Comparison

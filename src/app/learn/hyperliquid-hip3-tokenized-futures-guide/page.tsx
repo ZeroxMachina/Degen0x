@@ -486,9 +486,8 @@ export default function HyperliquidHip3TokenizedFuturesGuidePage() {
               { href: "/learn/restaking-eigenlayer-guide", label: "Restaking & EigenLayer Guide" },
               { href: "/learn/real-world-assets-rwa-guide", label: "Real World Assets (RWA) Guide" },
             ].map((link) => (
-              <Link
+              <Link href="#risks"
                 key={link.href}
-                href={link.href}
                 style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 8, padding: "12px 16px", color: "#58a6ff", textDecoration: "none", fontSize: 14, display: "block", lineHeight: 1.4 }}
               >
                 {link.label} →

@@ -1370,7 +1370,6 @@ export default function BasedRollupsGuide() {
         {/* Back to Top */}
         <div style={{ textAlign: 'center' as const, marginTop: 48, paddingTop: 24, borderTop: '1px solid #30363d' }}>
           <a
-            href="#"
             style={{
               display: 'inline-block',
               background: 'linear-gradient(135deg, #6366f1, #06b6d4)',

@@ -1063,8 +1063,7 @@ export default function CryptoMarketMakingGuide() {
           </h2>
 
           <div className="grid gap-4 md:grid-cols-2">
-            <Link
-              href="/learn/amm-liquidity-pools-guide-2026"
+            <Link href="/learn/amm-liquidity-pools-guide-2026"
               className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
@@ -1075,8 +1074,7 @@ export default function CryptoMarketMakingGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/defi-composability"
+            <Link href="/learn/amm-liquidity-pools-guide-2026"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 DeFi Composability
@@ -1087,8 +1085,7 @@ export default function CryptoMarketMakingGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/impermanent-loss"
+            <Link href="/learn/amm-liquidity-pools-guide-2026"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Impermanent Loss Calculator
@@ -1098,8 +1095,7 @@ export default function CryptoMarketMakingGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/defi-yields"
+            <Link href="/learn/amm-liquidity-pools-guide-2026"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 DeFi Yields Tracker
@@ -1109,8 +1105,7 @@ export default function CryptoMarketMakingGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/dex-aggregator"
+            <Link href="/learn/amm-liquidity-pools-guide-2026"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 DEX Aggregator

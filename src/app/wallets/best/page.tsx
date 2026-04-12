@@ -209,9 +209,8 @@ export default function BestWalletsPage() {
             { label: "For Beginners", href: "/wallets/best/beginners" },
             { label: "For Security", href: "/wallets/best/security" },
           ].map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-3 text-center card-hover text-sm font-medium text-[var(--color-text)]"
             >
               {link.label}

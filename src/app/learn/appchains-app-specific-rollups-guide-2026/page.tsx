@@ -166,7 +166,6 @@ export default function AppChainsGuide() {
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
             <li style={{ marginBottom: '8px' }}>
               <a
-                href="#what-are-appchains"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
@@ -178,7 +177,6 @@ export default function AppChainsGuide() {
             </li>
             <li style={{ marginBottom: '8px' }}>
               <a
-                href="#why-protocols-launching"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
@@ -190,7 +188,6 @@ export default function AppChainsGuide() {
             </li>
             <li style={{ marginBottom: '8px' }}>
               <a
-                href="#appchain-frameworks"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
@@ -202,7 +199,6 @@ export default function AppChainsGuide() {
             </li>
             <li style={{ marginBottom: '8px' }}>
               <a
-                href="#major-case-studies"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
@@ -214,7 +210,6 @@ export default function AppChainsGuide() {
             </li>
             <li style={{ marginBottom: '8px' }}>
               <a
-                href="#raas-platforms"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
@@ -226,7 +221,6 @@ export default function AppChainsGuide() {
             </li>
             <li style={{ marginBottom: '8px' }}>
               <a
-                href="#appchains-vs-shared"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
@@ -238,7 +232,6 @@ export default function AppChainsGuide() {
             </li>
             <li style={{ marginBottom: '8px' }}>
               <a
-                href="#interoperability-challenge"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
@@ -250,7 +243,6 @@ export default function AppChainsGuide() {
             </li>
             <li style={{ marginBottom: '8px' }}>
               <a
-                href="#future-2026"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
@@ -262,7 +254,6 @@ export default function AppChainsGuide() {
             </li>
             <li style={{ marginBottom: '0px' }}>
               <a
-                href="#faq-section"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
@@ -790,7 +781,6 @@ export default function AppChainsGuide() {
           >
             <li>
               <a
-                href="/learn/unichain-guide-2026"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
@@ -800,7 +790,6 @@ export default function AppChainsGuide() {
             </li>
             <li>
               <a
-                href="/learn/base-chain-guide"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
@@ -810,7 +799,6 @@ export default function AppChainsGuide() {
             </li>
             <li>
               <a
-                href="/learn/modular-blockchains-guide"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
@@ -820,7 +808,6 @@ export default function AppChainsGuide() {
             </li>
             <li>
               <a
-                href="/learn/cross-chain-interoperability-guide-2026"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
@@ -830,7 +817,6 @@ export default function AppChainsGuide() {
             </li>
             <li>
               <a
-                href="/learn/l3-networks-guide"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
@@ -840,7 +826,6 @@ export default function AppChainsGuide() {
             </li>
             <li>
               <a
-                href="/tools/chain-comparison"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
                 onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}

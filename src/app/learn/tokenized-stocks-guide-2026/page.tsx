@@ -744,9 +744,8 @@ export default function TokenizedStocksGuidePage() {
               { href: "/learn/crypto-tax-guide-2026", label: "Crypto Tax Guide 2026" },
               { href: "/learn/defi-safety-guide-2026", label: "DeFi Safety & Risk Guide" },
             ].map((link) => (
-              <Link
+              <Link href={link.href}
                 key={link.href}
-                href={link.href}
                 className="rounded-lg px-4 py-3 text-sm font-medium transition-colors"
                 style={{
                   background: "var(--glass-bg)",

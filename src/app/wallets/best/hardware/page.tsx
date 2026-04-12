@@ -87,7 +87,6 @@ export default function BestHardwareWalletsPage() {
           ].map((pick) => (
             <a
               key={pick.name}
-              href={pick.href}
               className="flex items-center gap-2 px-3 py-2 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] hover:border-[var(--color-primary)]/60 transition-colors text-sm"
             >
               <span className="text-[var(--color-text-secondary)] text-xs">{pick.label}</span>

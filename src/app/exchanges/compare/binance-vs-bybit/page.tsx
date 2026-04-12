@@ -117,7 +117,6 @@ export default function BinanceVsBybitPage() {
               </li>
             </ul>
             <a
-              href={binance.affiliateUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
               className="inline-block mt-6 affiliate-cta px-6 py-2 rounded-lg text-white font-semibold transition-all duration-300"
@@ -150,7 +149,6 @@ export default function BinanceVsBybitPage() {
               </li>
             </ul>
             <a
-              href={bybit.affiliateUrl}
             >
               Visit Bybit
             </a>
@@ -472,7 +470,6 @@ export default function BinanceVsBybitPage() {
         {/* Call to Action */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
           <a
-            href={binance.affiliateUrl}
             className="glass rounded-xl p-8 border border-orange-400 border-opacity-50 text-center hover:border-opacity-100 transition-all duration-300 group"
           >
             <h3 className="text-2xl font-bold text-orange-400 mb-2 group-hover:text-[var(--color-text)] transition-colors">
@@ -487,7 +484,6 @@ export default function BinanceVsBybitPage() {
           </a>
 
           <a
-            href={bybit.affiliateUrl}
             className="glass rounded-xl p-8 border border-cyan-400 border-opacity-50 text-center hover:border-opacity-100 transition-all duration-300 group"
           >
             <h3 className="text-2xl font-bold text-cyan-400 mb-2 group-hover:text-[var(--color-text)] transition-colors">

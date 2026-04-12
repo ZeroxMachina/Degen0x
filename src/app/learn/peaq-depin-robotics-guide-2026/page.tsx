@@ -202,7 +202,6 @@ export default function PeaqDeginRoboticsGuidePage() {
             ].map(([href, label]) => (
               <div key={href as string}>
                 <a
-                  href={href as string}
                   style={{
                     display: "block",
                     color: "#58a6ff",
@@ -682,9 +681,8 @@ export default function PeaqDeginRoboticsGuidePage() {
               { title: "Staking APY Calculator", href: "/tools/staking-apy" },
               { title: "What Is TVL?", href: "/learn/what-is-tvl" },
             ].map((item) => (
-              <Link
+              <Link href={href as string}
                 key={item.href}
-                href={item.href}
                 style={{
                   fontSize: "16.5px",
                   color: "#58a6ff",
@@ -702,7 +700,6 @@ export default function PeaqDeginRoboticsGuidePage() {
         {/* Back to Top */}
         <div style={{ textAlign: "center", paddingTop: 24 }}>
           <a
-            href="#"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });

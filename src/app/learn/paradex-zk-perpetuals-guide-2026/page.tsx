@@ -527,7 +527,6 @@ export default function ParadexZKPerpetualsGuide() {
             ].map((link) => (
               <a
                 key={link.href}
-                href={link.href}
                 style={{
                   display: "inline-block", padding: "8px 16px", background: "#161b22",
                   border: "1px solid #30363d", borderRadius: 8, color: "#58a6ff",

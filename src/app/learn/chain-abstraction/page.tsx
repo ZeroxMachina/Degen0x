@@ -605,7 +605,6 @@ await particle.sendTransaction(callData, txOptions);`}</div>
             Start integrating chain abstraction into your dApp today. Use Particle Network for fast deployment, or Okto for full customization.
           </p>
           <a
-            href="/tools/bridge-aggregator"
             style={{
               display: "inline-block",
               padding: "12px 28px",

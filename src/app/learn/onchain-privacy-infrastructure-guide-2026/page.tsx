@@ -150,7 +150,6 @@ export default function OnchainPrivacyInfrastructureGuidePage() {
             ].map(([href, label]) => (
               <div key={href}>
                 <a
-                  href={href}
                   style={{
                     display: "block",
                     color: S.primary,
@@ -1020,9 +1019,8 @@ export default function OnchainPrivacyInfrastructureGuidePage() {
                 desc: "Wallet security, seed phrases, and key management.",
               },
             ].map((article) => (
-              <Link
+              <Link href={href}
                 key={article.href}
-                href={article.href}
                 style={{ textDecoration: "none" }}
               >
                 <div

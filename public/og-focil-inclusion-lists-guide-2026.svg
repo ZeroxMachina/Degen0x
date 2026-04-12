@@ -1,0 +1,50 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1629;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e6ed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="4" fill="url(#accentGradient)"/>
+  <circle cx="160" cy="130" r="80" fill="#8b5cf6" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="1050" cy="500" r="105" fill="#3b82f6" opacity="0.06" filter="url(#glow)"/>
+  <rect x="60" y="60" width="170" height="40" rx="20" fill="#8b5cf6" opacity="0.15" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="145" y="87" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#8b5cf6" text-anchor="middle">ETHEREUM</text>
+  <text x="60" y="160" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="url(#titleGradient)">FOCIL Inclusion Lists</text>
+  <text x="60" y="210" font-family="system-ui, sans-serif" font-size="20" fill="#8b949e">How forced inclusion improves censorship resistance</text>
+  <g>
+    <rect x="750" y="80" width="400" height="400" rx="12" fill="#0a1427" opacity="0.5" stroke="#1e293b" stroke-width="1"/>
+    <rect x="780" y="120" width="140" height="28" rx="4" fill="#8b5cf6" opacity="0.3" stroke="#8b5cf6" stroke-width="1"/>
+    <circle cx="795" cy="134" r="4" fill="#8b5cf6" opacity="0.8"/>
+    <text x="815" y="140" font-family="system-ui, sans-serif" font-size="12" fill="#8b5cf6">Transaction 1</text>
+    <rect x="780" y="165" width="140" height="28" rx="4" fill="#8b5cf6" opacity="0.3" stroke="#8b5cf6" stroke-width="1"/>
+    <circle cx="795" cy="179" r="4" fill="#8b5cf6" opacity="0.8"/>
+    <text x="815" y="185" font-family="system-ui, sans-serif" font-size="12" fill="#8b5cf6">Transaction 2</text>
+    <rect x="780" y="210" width="140" height="28" rx="4" fill="#8b5cf6" opacity="0.3" stroke="#8b5cf6" stroke-width="1"/>
+    <circle cx="795" cy="224" r="4" fill="#8b5cf6" opacity="0.8"/>
+    <text x="815" y="230" font-family="system-ui, sans-serif" font-size="12" fill="#8b5cf6">Transaction 3</text>
+    <rect x="780" y="255" width="140" height="28" rx="4" fill="#8b5cf6" opacity="0.3" stroke="#8b5cf6" stroke-width="1"/>
+    <circle cx="795" cy="269" r="4" fill="#8b5cf6" opacity="0.8"/>
+    <text x="815" y="275" font-family="system-ui, sans-serif" font-size="12" fill="#8b5cf6">Transaction 4</text>
+    <path d="M 950 130 L 1000 130 L 1010 140 L 1000 150 L 950 150" fill="#06b6d4" opacity="0.7"/>
+    <path d="M 950 200 L 1000 200 L 1010 210 L 1000 220 L 950 220" fill="#06b6d4" opacity="0.7"/>
+    <text x="900" y="410" font-family="system-ui, sans-serif" font-size="14" fill="#8b5cf6" text-anchor="middle">Forced Inclusion</text>
+  </g>
+  <rect y="600" width="1200" height="30" fill="#0a1427" opacity="0.6"/>
+  <circle cx="60" cy="615" r="10" fill="#6366f1"/>
+  <text x="75" y="621" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">degen0x.com</text>
+</svg>

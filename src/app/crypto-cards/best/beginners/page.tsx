@@ -194,9 +194,8 @@ export default function BestBeginnersCardsPage() {
             { title: "Credit vs Debit vs Prepaid", href: "/crypto-cards/learn/credit-vs-debit-vs-prepaid" },
             { title: "Best Exchanges for Beginners", href: "/exchanges/best/beginners" },
           ].map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
               <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

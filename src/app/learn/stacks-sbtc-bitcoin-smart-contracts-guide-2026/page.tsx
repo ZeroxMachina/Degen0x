@@ -800,9 +800,8 @@ export default function StacksSBTCGuidePage() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 12 }}>
             {RESOURCES.map((resource) => (
-              <Link
+              <Link href={href as string}
                 key={resource.href}
-                href={resource.href}
                 style={{
                   background: S.surface,
                   border: `1px solid ${S.border}`,

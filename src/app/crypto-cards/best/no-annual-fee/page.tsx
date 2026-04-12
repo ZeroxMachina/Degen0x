@@ -182,9 +182,8 @@ export default function BestNoAnnualFeeCardsPage() {
             { title: "Crypto Card Fees Explained", href: "/crypto-cards/learn/crypto-card-fees" },
             { title: "Best Crypto Debit Cards", href: "/crypto-cards/best/debit" },
           ].map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
             >
               <span className="text-[var(--color-text)] font-semibold">{link.title}</span>

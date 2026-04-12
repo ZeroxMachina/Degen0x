@@ -196,7 +196,6 @@ export default function Page() {
               {tableOfContents.map((item) => (
                 <a
                   key={item.id}
-                  href={`#${item.id}`}
                   className="block text-[#58a6ff] hover:text-white transition-colors pl-4 border-l border-[#30363d] hover:border-[#58a6ff] focus:outline-none focus:ring-2 focus:ring-[#6366f1] focus:ring-offset-2 focus:ring-offset-[#161b22] rounded"
                 >
                   {item.title}

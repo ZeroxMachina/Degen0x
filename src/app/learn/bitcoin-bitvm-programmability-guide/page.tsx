@@ -768,8 +768,7 @@ export default function BitVMProgrammabilityGuide() {
           <h2 className="text-3xl font-bold mb-6 text-[#e6edf3]">Related Articles</h2>
 
           <div className="grid gap-4">
-            <Link
-              href="/learn/bitcoin-layer-2-guide"
+            <Link href="/learn/bitcoin-layer-2-guide"
               className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 hover:border-[#58a6ff] transition-colors group"
             >
               <h3 className="text-[#58a6ff] font-semibold group-hover:text-[#06b6d4] transition-colors">
@@ -780,8 +779,7 @@ export default function BitVMProgrammabilityGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/btcfi-bitcoin-defi-guide-2026"
+            <Link href="/learn/bitcoin-layer-2-guide"
             >
               <h3 className="text-[#58a6ff] font-semibold group-hover:text-[#06b6d4] transition-colors">
                 BTCFi: Bitcoin DeFi Guide 2026 →
@@ -791,8 +789,7 @@ export default function BitVMProgrammabilityGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/zero-knowledge-proofs"
+            <Link href="/learn/bitcoin-layer-2-guide"
             >
               <h3 className="text-[#58a6ff] font-semibold group-hover:text-[#06b6d4] transition-colors">
                 Zero-Knowledge Proofs Guide →
@@ -802,8 +799,7 @@ export default function BitVMProgrammabilityGuide() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/bridge-aggregator"
+            <Link href="/learn/bitcoin-layer-2-guide"
             >
               <h3 className="text-[#58a6ff] font-semibold group-hover:text-[#06b6d4] transition-colors">
                 Bridge Aggregator Tool →

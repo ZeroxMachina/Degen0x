@@ -445,7 +445,6 @@ export default function BitcoinLSTGuidePage() {
             {tableOfContents.map((item) => (
               <li key={item.id} style={{ marginBottom: 6 }}>
                 <a
-                  href={`#${item.id}`}
                   style={{ color: "#8b949e", textDecoration: "none", fontSize: 14, lineHeight: 1.6 }}
                 >
                   {item.label}
@@ -621,7 +620,6 @@ export default function BitcoinLSTGuidePage() {
             Here&apos;s how the leading Bitcoin LST protocols stack up as of March 2026. Data is approximate
             and changes frequently — verify on{" "}
             <a
-              href="https://defillama.com"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#58a6ff" }}
@@ -1323,7 +1321,6 @@ export default function BitcoinLSTGuidePage() {
               ].map((link) => (
                 <a
                   key={link.href}
-                  href={link.href}
                   style={{ color: "#8b949e", textDecoration: "none", fontSize: 14, lineHeight: 1.6 }}
                 >
                   → {link.label}

@@ -158,7 +158,6 @@ export default function WorldChainProofOfPersonhoodGuidePage() {
             {tableOfContents.map((item, index) => (
               <li key={item.id} style={{ marginBottom: '8px' }}>
                 <a
-                  href={`#${item.id}`}
                   style={{
                     color: S.blue,
                     textDecoration: 'none',

@@ -173,7 +173,6 @@ export default function UniChainGuidePage() {
             {tableOfContents.map((item, index) => (
               <li key={item.id} style={{ marginBottom: '8px' }}>
                 <a
-                  href={`#${item.id}`}
                   style={{
                     color: '#58a6ff',
                     textDecoration: 'none',
@@ -739,8 +738,7 @@ export default function UniChainGuidePage() {
               gap: '16px',
             }}
           >
-            <Link
-              href="/learn/layer-2-scaling-guide"
+            <Link href="/learn/layer-2-scaling-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -766,8 +764,7 @@ export default function UniChainGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/uniswap-v4-hooks-guide"
+            <Link href="/learn/layer-2-scaling-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -793,8 +790,7 @@ export default function UniChainGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/mev-protection-guide"
+            <Link href="/learn/layer-2-scaling-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -820,8 +816,7 @@ export default function UniChainGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/bridge-aggregator"
+            <Link href="/learn/layer-2-scaling-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -847,8 +842,7 @@ export default function UniChainGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/dex-screener"
+            <Link href="/learn/layer-2-scaling-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -874,8 +868,7 @@ export default function UniChainGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/learn/intent-based-dex-trading-guide"
+            <Link href="/learn/layer-2-scaling-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -901,8 +894,7 @@ export default function UniChainGuidePage() {
               </p>
             </Link>
 
-            <Link
-              href="/tools/gas-tracker"
+            <Link href="/learn/layer-2-scaling-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',

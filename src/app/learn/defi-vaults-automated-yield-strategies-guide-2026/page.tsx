@@ -829,7 +829,6 @@ export default function DeFiVaultsPage() {
 
       {/* Back to Top */}
       <a
-        href="#top"
         aria-label="Back to top"
         style={{
           position: 'fixed',

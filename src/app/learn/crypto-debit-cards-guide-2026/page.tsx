@@ -594,9 +594,8 @@ export default function CryptoDebitCardsGuide2026Page() {
             { href: "/learn/stablecoin-comparison", label: "Stablecoin Comparison — USDC vs. USDT vs. DAI" },
             { href: "/exchanges", label: "Best Crypto Exchanges — Find Your Platform" },
           ].map(({ href, label }) => (
-            <Link
+            <Link href="/tools/tax-calculator"
               key={href}
-              href={href}
               className="flex items-center gap-2 text-sm hover:underline"
               style={{ color: "#22c55e" }}
             >

@@ -411,8 +411,7 @@ export default function FeeCalculatorPage() {
               <strong className="text-emerald-400">{fmt(savingsIfSwitched)}/year</strong> on your current trading volume.
             </div>
           </div>
-          <Link
-            href={cheapest?.url ?? "/exchanges"}
+          <Link href={cheapest?.url ?? "/exchanges"}
             className="text-xs font-bold px-4 py-2 rounded-lg bg-emerald-500 text-[var(--color-text)] hover:bg-emerald-400 transition-colors whitespace-nowrap"
           >
             View {cheapest?.name} →
@@ -533,8 +532,7 @@ export default function FeeCalculatorPage() {
                       <span className="text-xs text-[var(--color-text-secondary)]">{ex.bestFor}</span>
                     </td>
                     <td className="px-4 py-4 text-right">
-                      <Link
-                        href={ex.url}
+                      <Link href={cheapest?.url ?? "/exchanges"}
                         onClick={(e) => e.stopPropagation()}
                         className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-[var(--color-border)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-[var(--color-text)] transition-colors"
                       >
@@ -617,8 +615,7 @@ export default function FeeCalculatorPage() {
               </div>
             </div>
             <div className="mt-4">
-              <Link
-                href={ex.url}
+              <Link href={cheapest?.url ?? "/exchanges"}
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[var(--color-primary)] text-[var(--color-text)] font-semibold text-sm hover:opacity-90 transition-opacity"
               >
                 Full {ex.name} Review →
@@ -776,9 +773,8 @@ export default function FeeCalculatorPage() {
             { label: "Token Screener", href: "/tools/token-screener" },
             { label: "Crypto Tax Calculator", href: "/tools/tax-calculator" },
           ].map((link) => (
-            <Link
+            <Link href={link.href}
               key={link.href}
-              href={link.href}
               className="text-sm px-4 py-2 rounded-lg border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)]/40 transition-colors"
             >
               {link.label} →

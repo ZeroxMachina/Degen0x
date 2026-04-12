@@ -93,9 +93,8 @@ export default function PricesPage() {
             </h3>
             <div className="space-y-3">
               {topGainers.map((token) => (
-                <Link
+                <Link href={`/prices/${token.slug}`}
                   key={token.slug}
-                  href={`/prices/${token.slug}`}
                   className="flex items-center justify-between py-1.5 hover:opacity-80 transition-opacity group"
                 >
                   <div className="flex items-center gap-3">
@@ -119,9 +118,8 @@ export default function PricesPage() {
             </h3>
             <div className="space-y-3">
               {topLosers.map((token) => (
-                <Link
+                <Link href={`/prices/${token.slug}`}
                   key={token.slug}
-                  href={`/prices/${token.slug}`}
                 >
                   <div className="flex items-center gap-3">
                     <span className="text-xs text-[var(--color-text-secondary)] w-5">{token.rank}</span>
@@ -191,8 +189,7 @@ export default function PricesPage() {
                           {token.symbol.slice(0, 2)}
                         </div>
                         <div>
-                          <Link
-                            href={`/prices/${token.slug}`}
+                          <Link href={`/prices/${token.slug}`}
                             className="font-semibold text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors block leading-tight"
                           >
                             {token.name}

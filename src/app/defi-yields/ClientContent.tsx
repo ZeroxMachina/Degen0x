@@ -559,7 +559,7 @@ export default function ClientContent() {
                 tag: 'Security',
               },
             ].map((guide) => (
-              <Link
+              <Link href={guide.href}
                 key={guide.href}
                 href={guide.href}
                 className="glass rounded-xl p-5 border border-[var(--color-border)] hover:border-[var(--color-primary)] transition-colors card-hover"

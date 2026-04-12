@@ -830,7 +830,6 @@ export default function CryptoDCAStrategyGuide2026() {
             Model any DCA strategy with live prices for 50+ tokens.
           </p>
           <a
-            href="/tools/dca-calculator"
             className="cta-btn"
             style={{
               display: "inline-block",

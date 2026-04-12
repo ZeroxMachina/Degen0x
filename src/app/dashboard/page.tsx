@@ -45,8 +45,7 @@ export default function DashboardPage() {
               Your real-time crypto command center
             </p>
           </div>
-          <Link
-            href="/tools"
+          <Link href="/tools"
             className="glass px-4 py-2 text-sm font-semibold text-[var(--color-primary)] card-hover rounded-xl"
           >
             All 92+ Tools →
@@ -69,9 +68,8 @@ export default function DashboardPage() {
         <h2 className="text-lg font-bold text-[var(--color-text)] mb-4">Quick Tools</h2>
         <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
           {TOOL_SHORTCUTS.map((tool) => (
-            <Link
+            <Link href="/tools"
               key={tool.href}
-              href={tool.href}
               className="glass flex-shrink-0 px-4 py-3 rounded-xl card-hover flex items-center gap-2 min-w-fit"
             >
               <span className="text-lg">{tool.icon}</span>

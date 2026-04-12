@@ -627,9 +627,8 @@ export default function DAOGovernanceVotingGuide() {
               { title: 'Token Vesting Explained', href: '/learn/token-vesting-explained', icon: '⏱️' },
               { title: 'Tokenomics & Protocol Revenue', href: '/learn/tokenomics-protocol-revenue-guide', icon: '📈' }
             ].map((article, idx) => (
-              <Link
+              <Link href="/tools/governance-tracker"
                 key={idx}
-                href={article.href}
                 style={{
                   display: 'block',
                   backgroundColor: S.bg,

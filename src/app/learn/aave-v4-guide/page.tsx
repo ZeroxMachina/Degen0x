@@ -560,9 +560,8 @@ export default function AaveV4GuidePage() {
               { href: "/learn/advanced-defi-strategies", label: "Advanced DeFi Strategies" },
               { href: "/learn/stablecoin-comparison", label: "Stablecoin Comparison 2026" },
             ].map(({ href, label }) => (
-              <Link
+              <Link href={href}
                 key={href}
-                href={href}
                 style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 10, padding: "14px 16px", color: "#58a6ff", textDecoration: "none", fontSize: 14, fontWeight: 500, display: "block", transition: "border-color 0.2s" }}
               >
                 {label} →

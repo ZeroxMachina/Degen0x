@@ -485,7 +485,6 @@ export default function FundingRateArbitrageGuide() {
             </p>
             <div style={{ marginTop: 16, display: "flex", gap: 12, flexWrap: "wrap" }}>
               <a
-                href="/learn/perpetual-futures-guide"
                 style={{
                   color: S.blue,
                   textDecoration: "none",
@@ -496,7 +495,6 @@ export default function FundingRateArbitrageGuide() {
                 → Read: Perpetual Futures Guide
               </a>
               <a
-                href="/tools/perp-funding"
                 style={{
                   color: S.blue,
                   textDecoration: "none",

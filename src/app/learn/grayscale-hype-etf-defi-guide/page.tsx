@@ -689,7 +689,6 @@ export default function GrayscaleHYPEETFGuide() {
           </h3>
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 12 }}>
             <a
-              href="/learn/hyperliquid-guide"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -711,7 +710,6 @@ export default function GrayscaleHYPEETFGuide() {
               <span>Hyperliquid Protocol Deep Dive</span>
             </a>
             <a
-              href="/learn/staked-crypto-etfs-guide-2026"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -732,7 +730,6 @@ export default function GrayscaleHYPEETFGuide() {
               <span>Staked Crypto ETFs: The 2026 Guide</span>
             </a>
             <a
-              href="/learn/altcoin-etf-guide-2026"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -753,7 +750,6 @@ export default function GrayscaleHYPEETFGuide() {
               <span>Altcoin ETF Guide 2026</span>
             </a>
             <a
-              href="/learn/institutional-crypto-adoption-guide-2026"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -790,7 +786,6 @@ export default function GrayscaleHYPEETFGuide() {
             Interested in Hyperliquid itself? Explore the protocol directly.
           </p>
           <a
-            href="/ecosystem/hyperliquid"
             style={{
               display: "inline-block",
               padding: "12px 24px",
