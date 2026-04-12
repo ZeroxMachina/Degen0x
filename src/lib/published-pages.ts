@@ -1,10 +1,10 @@
 export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
-  // ── Site Pages (3 pages) ───────────────────────────────────────
+  // ââ Site Pages (3 pages) âââââââââââââââââââââââââââââââââââââââ
   "/",
   "/about",
   "/methodology",
 
-  // ── Compare (11 pages) ─────────────────────────────────────────
+  // ââ Compare (11 pages) âââââââââââââââââââââââââââââââââââââââââ
   "/compare/aave-vs-maker-vs-compound",
   "/compare/arbitrum-vs-optimism-comparison",
   "/compare/bitcoin-vs-ethereum-investment",
@@ -17,7 +17,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/compare/solana-vs-avalanche-comparison",
   "/compare/uniswap-vs-sushiswap-vs-curve",
 
-  // ── Courses (8 pages) ──────────────────────────────────────────
+  // ââ Courses (8 pages) ââââââââââââââââââââââââââââââââââââââââââ
   "/courses/best-crypto-trading-course-online",
   "/courses/blockchain-developer-course-free",
   "/courses/crypto-security-certification-course",
@@ -27,7 +27,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/courses/solidity-smart-contract-course",
   "/courses/web3-product-management-course",
 
-  // ── Crypto Cards (14 pages) ────────────────────────────────────
+  // ââ Crypto Cards (14 pages) ââââââââââââââââââââââââââââââââââââ
   "/crypto-cards/best-card-for-bitcoin-cashback",
   "/crypto-cards/best-card-for-crypto-rewards-stacking",
   "/crypto-cards/best-crypto-debit-card-2026",
@@ -43,7 +43,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/crypto-cards/prepaid-crypto-card-no-kyc",
   "/crypto-cards/stablecoin-spending-card-guide",
 
-  // ── Crypto Loans (12 pages) ────────────────────────────────────
+  // ââ Crypto Loans (12 pages) ââââââââââââââââââââââââââââââââââââ
   "/crypto-loans/best-crypto-backed-loan-2026",
   "/crypto-loans/best-stablecoin-borrowing-rates",
   "/crypto-loans/bitcoin-collateral-loan-guide",
@@ -57,7 +57,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/crypto-loans/nexo-crypto-loan-review",
   "/crypto-loans/no-kyc-crypto-loan-platforms",
 
-  // ── Defi Lending (22 pages) ────────────────────────────────────
+  // ââ Defi Lending (22 pages) ââââââââââââââââââââââââââââââââââââ
   "/defi-lending/aave-v3-complete-guide",
   "/defi-lending/aave-vs-compound-comparison",
   "/defi-lending/benqi-avalanche-lending-guide",
@@ -81,7 +81,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/defi-lending/undercollateralized-defi-loans",
   "/defi-lending/venus-protocol-bsc-lending",
 
-  // ── Ecosystem (22 pages) ───────────────────────────────────────
+  // ââ Ecosystem (22 pages) âââââââââââââââââââââââââââââââââââââââ
   "/ecosystem/best-projects-on-aptos",
   "/ecosystem/best-projects-on-arbitrum",
   "/ecosystem/best-projects-on-avalanche",
@@ -105,7 +105,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/ecosystem/polkadot-ecosystem-projects",
   "/ecosystem/ton-blockchain-ecosystem-guide",
 
-  // ── Exchanges (33 pages) ───────────────────────────────────────
+  // ââ Exchanges (33 pages) âââââââââââââââââââââââââââââââââââââââ
   "/exchanges/best-crypto-exchange-for-altcoins",
   "/exchanges/best-crypto-exchange-for-api-trading",
   "/exchanges/best-crypto-exchange-for-beginners-usa",
@@ -140,14 +140,14 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/exchanges/no-kyc-crypto-exchange",
   "/exchanges/perpetual-dex-comparison-2026",
 
-  // ── Insurance (5 pages) ────────────────────────────────────────
+  // ââ Insurance (5 pages) ââââââââââââââââââââââââââââââââââââââââ
   "/insurance/best-crypto-insurance-2026",
   "/insurance/crypto-custody-insurance-guide",
   "/insurance/defi-hack-insurance-comparison",
   "/insurance/defi-insurance-protocols-comparison",
   "/insurance/smart-contract-cover-nexus-mutual",
 
-  // ── Investing (34 pages) ───────────────────────────────────────
+  // ââ Investing (34 pages) âââââââââââââââââââââââââââââââââââââââ
   "/investing/best-ai-crypto-projects-2026",
   "/investing/best-altcoins-to-buy-2026",
   "/investing/best-crypto-savings-accounts-2026",
@@ -183,7 +183,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/investing/undervalued-crypto-tokens-2026",
   "/investing/when-to-take-profits-crypto",
 
-  // ── Learn (283 pages) ──────────────────────────────────────────
+  // ââ Learn (283 pages) ââââââââââââââââââââââââââââââââââââââââââ
   "/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026",
   "/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026",
   "/learn/account-abstraction-erc-4337-guide",
@@ -468,7 +468,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/learn/zk-rollups-vs-optimistic-rollups",
   "/learn/zksync-era-elastic-chain-ecosystem-guide-2026",
 
-  // ── Long Term (10 pages) ───────────────────────────────────────
+  // ââ Long Term (10 pages) âââââââââââââââââââââââââââââââââââââââ
   "/long-term/best-crypto-for-long-term-hold-2026",
   "/long-term/bitcoin-accumulation-strategy-guide",
   "/long-term/bitcoin-ira-guide-2026",
@@ -480,7 +480,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/long-term/ethereum-price-prediction-2030",
   "/long-term/stablecoin-yield-long-term-strategy",
 
-  // ── Nfts (17 pages) ────────────────────────────────────────────
+  // ââ Nfts (17 pages) ââââââââââââââââââââââââââââââââââââââââââââ
   "/nfts/ai-generated-nft-guide",
   "/nfts/best-nft-marketplace-comparison-2026",
   "/nfts/best-nft-projects-blue-chip",
@@ -499,7 +499,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/nfts/nft-ticketing-events-guide",
   "/nfts/nft-utility-beyond-art-guide",
 
-  // ── Spending (7 pages) ─────────────────────────────────────────
+  // ââ Spending (7 pages) âââââââââââââââââââââââââââââââââââââââââ
   "/spending/bitcoin-lightning-payments-guide",
   "/spending/bitcoin-travel-booking-guide",
   "/spending/crypto-gift-card-options-comparison",
@@ -508,7 +508,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/spending/crypto-payroll-services-guide",
   "/spending/where-to-spend-bitcoin-2026",
 
-  // ── Taxes (17 pages) ───────────────────────────────────────────
+  // ââ Taxes (17 pages) âââââââââââââââââââââââââââââââââââââââââââ
   "/taxes/crypto-airdrop-tax-treatment",
   "/taxes/crypto-business-expense-deductions",
   "/taxes/crypto-day-trading-tax-implications",
@@ -527,7 +527,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/taxes/nft-tax-guide-2026",
   "/taxes/wash-sale-rule-crypto-explained",
 
-  // ── Tools (34 pages) ───────────────────────────────────────────
+  // ââ Tools (34 pages) âââââââââââââââââââââââââââââââââââââââââââ
   "/tools/altcoin-season-index",
   "/tools/bitcoin-dominance-chart-live",
   "/tools/bitcoin-halving-countdown",
@@ -563,7 +563,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/tools/token-vesting-schedule-tracker",
   "/tools/whale-wallet-tracker",
 
-  // ── Trading (18 pages) ─────────────────────────────────────────
+  // ââ Trading (18 pages) âââââââââââââââââââââââââââââââââââââââââ
   "/trading/algorithmic-crypto-trading-guide",
   "/trading/best-crypto-technical-indicators",
   "/trading/best-crypto-trading-platform-2026",
@@ -583,7 +583,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/trading/order-flow-trading-crypto-guide",
   "/trading/volume-profile-trading-crypto",
 
-  // ── Wallets (34 pages) ─────────────────────────────────────────
+  // ââ Wallets (34 pages) âââââââââââââââââââââââââââââââââââââââââ
   "/wallets/account-abstraction-wallet-guide",
   "/wallets/backpack-wallet-complete-guide",
   "/wallets/best-bitcoin-only-wallet",
@@ -619,7 +619,7 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/wallets/rabby-wallet-review-guide",
   "/wallets/tangem-wallet-review-guide",
 
-  // ── Web3 Business (14 pages) ───────────────────────────────────
+  // ââ Web3 Business (14 pages) âââââââââââââââââââââââââââââââââââ
   "/web3-business/crypto-community-building-guide",
   "/web3-business/crypto-compliance-guide-business",
   "/web3-business/crypto-project-tokenomics-design",
@@ -636,3 +636,13 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
   "/web3-business/web3-marketing-strategies",
 
 ]);
+
+/**
+ * Check if a given pathname is in the published pages set.
+ * Used by proxy.ts and middleware to determine indexing behavior.
+ */
+export function isPublished(pathname: string): boolean {
+  const normalized = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
+  return PUBLISHED_PAGES.has(normalized);
+}
+
